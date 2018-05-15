@@ -1,0 +1,34 @@
+.img--contain {
+    @include object-fit(cover);
+    width: 100%;
+    height: 100%;
+}
+
+.img--responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img--lazy {
+    transition: opacity 0.5s $defaultEasing;
+
+    &.img--loading {
+        opacity: 0;
+    }
+}
+
+.cms-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.cms-image__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

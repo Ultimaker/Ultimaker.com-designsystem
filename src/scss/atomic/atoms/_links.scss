@@ -1,0 +1,184 @@
+a {
+    font-size: inherit;
+
+    color: $colorMain;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+
+    @include micro-animate(color, background);
+
+    &:hover {
+        color: lighten($colorMain, $tintHoverFocus*2);
+    }
+
+    &:not(.hit-area) {
+        &:focus:not(:hover),
+        &:focus:not(:active) {
+            @extend %focus;
+        }
+    }
+
+    p &,
+    small &,
+    .content--rich li & {
+        font-weight: 400;
+
+        &:focus:not(:hover),
+        &:focus:not(:active) {
+            @extend %focus-outline;
+        }
+    }
+}
+
+.link {
+    @extend .copy--small;
+
+    display: inline-block;
+    margin-right: $buildingUnit;
+    vertical-align: top;
+
+    user-select: none;
+    cursor: pointer;
+
+    color: $colorBlack;
+
+    &:hover,
+    &:active,
+    &:visited {
+        color: $colorBlack;
+    }
+
+    &.link--small {
+        @extend small;
+    }
+
+    &:focus:not(:hover),
+    &:focus:not(:active) {
+        @extend %focus-outline;
+    }
+}
+
+.link--large {
+    display: inline-block;
+    @extend %fontSecondary;
+    @include font-ratio-rhythm(sec-xs);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-s);
+    }
+
+    :not(.link--large) + & {
+        display: table;
+        transform: translateY($buildingUnit * -0.5);
+    }
+
+    .button + &,
+    .button--primary + & {
+        display: inline;
+
+        @include max-mobile() {
+            display: table;
+        }
+    }
+}
+
+.link__underline {
+    .link &,
+    .link--large & {
+        width: calc(100% - 0.1px); // solves IE11 issue
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+
+        @include micro-animate(background-size);
+    }
+    .link--reversed & {
+        background-size: 0% 100%;
+    }
+    .link & {
+        background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px);
+    }
+    .link--large & {
+        background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px);
+    }
+
+    .link:hover &,
+    .link:active &,
+    .link:visited & {
+        background-size: 0% 100%;
+    }
+
+    .link--reversed:hover &,
+    .link--reversed:active &,
+    .link--reversed:visited & {
+        background-size: 100% 100%;
+    }
+
+    .link:focus &,
+    .link--reversed:focus & {
+        background-size: 0% 0%;
+    }
+}
+
+.link-list {
+    @include font-rhythm(prim-s);
+    @extend %reset-list;
+    word-wrap: break-word;
+    hyphens: auto;
+
+    &--2-columns {
+        @include min-desktop() {
+            @include columns(2);
+        }
+    }
+    &--3-columns {
+        @include min-desktop() {
+            @include columns(3);
+        }
+    }
+}
+
+.link-list__headline {
+    @extend h5;
+    margin-bottom: 8px;
+}
+
+.link-list__item {
+    @include font-line-ratio(prim-s);
+    @extend %reset-list-item;
+    position: relative;
+    transform: translateY(2px);
+
+    & > *,
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.link--icon,
+.link--icon .link--reversed {
+    padding-left: $iconSize * 1.333333;
+    display: inline-block;
+
+    .icon {
+        font-size: $iconSize;
+        position: absolute;
+        transform: translateX($buildingUnit * -2);
+    }
+
+    &.link--large {
+        padding-left: $iconSizeLarge * 1.333333;
+
+        .icon {
+            font-size: $iconSizeLarge;
+            transform: translateX($buildingUnit * -2.75);
+        }
+    }
+
+}
+
+.link-list .list--icon {
+    margin-bottom: 0;
+}

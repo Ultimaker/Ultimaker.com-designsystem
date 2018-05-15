@@ -1,0 +1,14 @@
+.toggle {
+    @extend .link;
+
+    color: $colorMain;
+    font-weight: 400;
+
+    &:hover {
+        color: $colorMain;
+    }
+
+    &--icon {
+        @extend .link--icon;
+    }
+}

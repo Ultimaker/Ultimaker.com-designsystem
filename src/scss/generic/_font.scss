@@ -1,0 +1,22 @@
+// Fonts
+
+//@include font-face('woff/woff2 only', 'family_name', 'sub_folder', 'filename_no_ext', 'font_weight', 'font_style');
+
+// Viewcounter for myfonts.
+// Should only be implemented for production
+//
+//npm i@import url("//hello.myfonts.net/count/321a0b");
+
+
+@include font-face('fugue-init', 'fugue', 'fugue-ultimaker-regular');
+@include font-face('univers-init', 'univers', 'univers-light', 100);
+
+@include font-face('fugue', 'fugue', 'fugue-ultimaker-regular');
+@include font-face('univers', 'univers', 'univers-light', 100);
+@include font-face('univers', 'univers', 'univers-light-italic', 100, italic);
+@include font-face('univers', 'univers', 'univers-regular', 400);
+@include font-face('univers', 'univers', 'univers-regular-italic', 400, italic);
+@include font-face('univers', 'univers', 'univers-bold', 700);
+@include font-face('univers', 'univers', 'univers-bold-italic', 700, italic);
+@include font-face('univers', 'univers', 'univers-black', 900);
+@include font-face('univers', 'univers', 'univers-black-italic', 900, italic);

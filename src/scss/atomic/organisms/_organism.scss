@@ -1,0 +1,5 @@
+.organism {
+    main &:nth-child(even) {
+        background-color: $colorBgGray;
+    }
+}

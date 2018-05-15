@@ -1,0 +1,53 @@
+@keyframes lineAnimate {
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(0);
+    }
+}
+
+@keyframes lineAnimateReverse {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes xLineAnimate-4 {
+    from {
+        transform: rotate(-45deg) scaleX(1);
+    }
+    to {
+        transform: rotate(-45deg) scaleX(0);
+    }
+}
+
+@keyframes xLineAnimateReverse-4 {
+    from {
+        transform: rotate(-45deg) scaleX(0);
+    }
+    to {
+        transform: rotate(-45deg) scaleX(1);
+    }
+}
+
+@keyframes xLineAnimate-5 {
+    from {
+        transform: rotate(-45deg) scaleY(1);
+    }
+    to {
+        transform: rotate(-45deg) scaleY(0);
+    }
+}
+
+@keyframes xLineAnimateReverse-5 {
+    from {
+        transform: rotate(-45deg) scaleY(0);
+    }
+    to {
+        transform: rotate(-45deg) scaleY(1);
+    }
+}

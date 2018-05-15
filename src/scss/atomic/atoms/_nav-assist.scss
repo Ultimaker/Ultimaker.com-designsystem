@@ -1,0 +1,125 @@
+@import "nav-assist-animation";
+
+.nav-assist {
+    width: $navHeight;
+    height: $navHeight;
+    padding: ($navHeight - ($buildingUnit * 2)) / 2;
+    margin: 0;
+    border-radius: 0;
+
+    cursor: pointer;
+
+    background-color: $colorNavInit;
+    transition: background $defaultDuration ease(easeOutQuint);
+
+    &:hover {
+        background-color: lighten($colorNavInit, $tintHoverFocus*3);
+    }
+}
+
+.nav-assist__line {
+    fill: white;
+    transform-origin: 50% 50%;
+    transition: fill $defaultDuration ease(easeOutQuint);
+
+    /* Animate Menu icon to visible position */
+    &-1 {
+        transform: scaleX(0);
+        animation: lineAnimateReverse $defaultDuration ($defaultDuration / 3) ease(easeOutQuint) forwards;
+    }
+
+    &-2 {
+        transform: scaleX(0);
+        animation: lineAnimateReverse $defaultDuration ($defaultDuration / 2) ease(easeOutQuint) forwards;
+    }
+
+    &-3 {
+        transform: scaleX(0);
+        animation: lineAnimateReverse $defaultDuration (($defaultDuration / 3) * 2) ease(easeOutQuint) forwards;
+    }
+
+    /* Animate 'X' icon to hidden position */
+    &-4 {
+        //transform: rotate(45deg) translate(5.5px, 5.5px) scaleX(1.3);
+        transform: rotate(-45deg) scaleX(1);
+        animation: xLineAnimate-4 $defaultDuration 0s ease(easeOutQuint) forwards;
+    }
+
+    &-5 {
+        //transform: rotate(-45deg) translate(5.5px, -5.5px) scaleX(1.3);
+        transform: rotate(-45deg) scaleY(1);
+        animation: xLineAnimate-5 $defaultDuration ($defaultDuration / 6) ease(easeOutQuint) forwards;
+    }
+}
+
+
+
+/* Hide X icon while initializing */
+.nav-assist--initial-state {
+    & .nav-assist__line-4,
+    & .nav-assist__line-5 {
+        display: none;
+    }
+}
+
+
+.nav-assist--close {
+    background-color: white;
+    transition: background $defaultDuration ease(easeOutQuint);
+
+    &:hover {
+        background-color: darken($colorWhite, $tintHoverFocus);
+    }
+
+    .nav-assist__line {
+        fill: $colorBlack;
+
+        /* Animate Menu icon to hidden position */
+        &-1 {
+            transform: scaleX(1);
+            animation: lineAnimate $defaultDuration 0s ease(easeOutQuint) forwards;
+        }
+
+        &-2 {
+            transform: scaleX(1);
+            animation: lineAnimate $defaultDuration ($defaultDuration / 6) ease(easeOutQuint) forwards;
+        }
+
+        &-3 {
+            transform: scaleX(1);
+            animation: lineAnimate $defaultDuration ($defaultDuration / 3) ease(easeOutQuint) forwards;
+        }
+
+        /* Animate 'X' icon to visible position */
+        &-4 {
+            transform: rotate(45deg) scaleX(0);
+            animation: xLineAnimateReverse-4 $defaultDuration ($defaultDuration / 2) ease(easeOutQuint) forwards;
+        }
+        &-5 {
+            transform: rotate(-45deg) scaleX(0);
+            animation: xLineAnimateReverse-5 $defaultDuration (($defaultDuration / 3) * 2) ease(easeOutQuint) forwards;
+        }
+    }
+}
+
+.nav-assist,
+.nav-assist--close {
+    &:focus:not(:hover) {
+        @extend %focus;
+
+        .nav-assist__line {
+            fill: $colorWhite;
+        }
+    }
+}
+
+ //Used by VUE transition
+.show-assist {
+    &-enter, &-leave-to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    &-enter-active, &-leave-active {
+        transition: transform $defaultDuration, opacity $defaultDuration;
+    }
+}

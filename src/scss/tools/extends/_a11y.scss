@@ -1,0 +1,11 @@
+$focusBorderSize: 2px;
+$colorMainAccessible: #007faa; /* Picked an accessible color from colorsafe.co to try out some time */
+
+%focus {
+        color: $colorWhite;
+        background-color: lighten($colorMain, $tintHoverFocus);
+}
+
+%focus-outline {
+        outline: $focusBorderSize solid lighten($colorMain, $tintHoverFocus);
+}

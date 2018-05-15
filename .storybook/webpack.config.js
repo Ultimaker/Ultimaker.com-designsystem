@@ -9,6 +9,21 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
         enforce: 'pre',
     });
 
+    defaultConfig.module.rules = defaultConfig.module.rules.concat([
+        {
+            test: /\.(png|jpg|gif|ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+            loader: 'file-loader?name=[path][name].[ext]'
+        },
+        {
+            test: /\.(sass|scss)$/,
+            use: [
+                { loader: "style-loader" }, 
+                { loader: "css-loader", options: { sourceMap: true } }, 
+                { loader: "sass-loader", options: { sourceMap: true } }
+            ]
+        }
+    ]);
+
     defaultConfig.plugins.push(
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',

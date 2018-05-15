@@ -1,0 +1,50 @@
+$triangleSize: $buildingUnit;
+
+.tooltip {
+    background: $colorBlack;
+    color: $colorWhite;
+    padding: $buildingUnit;
+    min-width: $buildingUnit * 8;
+    max-width: 150px;
+    min-height: $buildingUnit * 3;
+
+    @extend %reset-last-margin;
+    z-index: 200;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+
+        border-top: $triangleSize solid $colorBlack;
+        border-left: $triangleSize solid transparent;
+        border-right: $triangleSize solid transparent;
+        border-bottom: $triangleSize solid transparent;
+
+        left:calc(50% - 12px);
+        bottom: $triangleSize * -2;
+    }
+}
+
+.tooltip__list-item.tooltip__label {
+    @extend small;
+    display: block;
+    margin-bottom: 0;
+}
+
+.tooltip__list {
+    @extend %reset-list;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    @extend %reset-last-margin;
+}
+
+.tooltip__list-item {
+    @extend %reset-list-item;
+    width: 120px;
+    margin: 0 0 $buildingUnit 0;
+    padding-left: 0;
+}

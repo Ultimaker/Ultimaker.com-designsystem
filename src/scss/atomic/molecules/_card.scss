@@ -1,0 +1,40 @@
+.card {
+    @extend %reset-last-margin;
+    max-width: 600px;
+
+    @include max-tablet() {
+        margin-bottom: $buildingUnit * 4;
+    }
+}
+
+.card__visual {
+    margin: 0 auto ($buildingUnit * 1.5);
+    overflow: hidden;
+
+    @include min-mobile-xl {
+        margin: 0 auto ($buildingUnit * 2);
+    }
+}
+
+.card__icon,
+.card__image{
+    width: 100%;
+}
+
+.card__icon {
+    height: 100%;
+}
+
+.card__content {
+    @extend %reset-last-margin;
+    width:100%;
+}
+
+.card__headline {
+}
+
+.card__description {
+}
+
+.card__link {
+}

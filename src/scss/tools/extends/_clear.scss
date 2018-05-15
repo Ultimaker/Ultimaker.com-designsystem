@@ -1,0 +1,26 @@
+// Clearfix, For clearing floats like a boss h5bp.com/q
+%clearfix {
+	*zoom: 1;
+
+	&:before,
+	&:after {
+		display: table;
+		content: '';
+		line-height: 0;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+// Clear element
+.clear {
+	@extend %ir;
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

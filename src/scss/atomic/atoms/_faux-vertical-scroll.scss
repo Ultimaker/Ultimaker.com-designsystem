@@ -1,0 +1,23 @@
+.faux-vertical-scroll {
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    .faux-vertical-scroll__bar {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 1px;
+        background-color: $colorMain;
+
+        transition: opacity 1s;
+    }
+}
+
+.faux-vertical-scroll__content {
+    transform: translateX(0);
+}
+

@@ -1,0 +1,11 @@
+.newsletter {
+    @include min-mobile-xl {
+        margin-right: $buildingUnit * 2;
+    }
+}
+
+.newsletter__link {
+    cursor: pointer;
+    margin-right: 0;
+}
+

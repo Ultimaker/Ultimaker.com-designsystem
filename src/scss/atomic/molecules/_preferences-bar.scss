@@ -1,0 +1,130 @@
+.preferences-bar {
+    @extend .notification;
+    transform: translateY(0);
+    &__content {
+        @extend .notification__content;
+    }
+
+    &__button {
+        @extend .notification__button;
+    }
+
+    .auto-complete.auto-complete--small {
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 0;
+        width: $mobileWidth - ($buildingUnit * 5);
+
+        .auto-complete__input {
+            border-color: $colorGrayLinesNotification;
+        }
+        @media (min-width: $mobileLWidth) {
+            margin-top: 0;
+        }
+    }
+}
+
+.settings {
+    width: 100%;
+    margin-bottom: $buildingUnit * 2.5;
+
+    border: 2px solid $colorGrayLinesNotification;
+    border-left: none;
+    border-right: none;
+
+    @media (min-width: $mobileLWidth) {
+        margin-bottom: $buildingUnit * 3;
+    }
+
+    .notification__content--centered & {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.settings-selector {
+    display: flex;
+    flex-direction: column;
+
+    padding: $buildingUnit 0;
+
+    border-bottom: 1px solid $colorGrayLinesNotification;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media (min-width: $mobileLWidth) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__label {
+        @extend small;
+        margin-bottom: 0;
+        margin-left: $buildingUnit;
+        margin-right: $buildingUnit;
+
+        color: $colorGrayTextNotification;
+
+        @media (min-width: $mobileLWidth) {
+            flex-direction: row;
+            align-items: center;
+
+            margin-top: 5px;
+        }
+    }
+
+    &__edit-button {
+        @extend .preferences-bar__button;
+        font-weight: 400;
+        margin-top: 5px;
+        color: $colorMain;
+
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $colorMain;
+        }
+
+        @media (min-width: $mobileLWidth) {
+            margin-top: 0;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+        border: none;
+    }
+}
+
+
+.settings-panel {
+    text-align: left;
+
+    margin-top: $buildingUnit;
+    padding: $buildingUnit;
+}
+
+.setting {
+    &:not(:last-child){
+        margin-bottom: $buildingUnit * 1.5;
+    }
+
+    &__description {
+        padding-left: $buildingUnit * 2.5;
+        margin-top: -6px;
+        color: $colorGrayTextNotification;
+    }
+}
+
+.selector-group {
+    display: flex;
+    flex-direction: row;
+    @media (min-width: $mobileLWidth) {
+        margin-left: auto;
+    }
+}

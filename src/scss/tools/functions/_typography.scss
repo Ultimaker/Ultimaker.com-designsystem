@@ -1,0 +1,10 @@
+// Get the right size according to demanded font-size
+@function get-font-specs($sizeName) {
+    $returnSize: map-get($fontSizes, $sizeName);
+    $returnLineHeight: map-get($lineHeights, $sizeName);
+    $returnOffsetTop: map-get($offsetTop, $sizeName);
+    $returnOffsetBottom: map-get($offsetBottom, $sizeName);
+
+    @return (size: $returnSize, height: $returnLineHeight, top: $returnOffsetTop, bottom: $returnOffsetBottom);
+}
+

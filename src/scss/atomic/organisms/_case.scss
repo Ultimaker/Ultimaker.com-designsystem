@@ -1,0 +1,100 @@
+.case {
+    @extend .organism;
+
+    @include min-tablet {
+        text-align: center;
+        color: $colorWhite;
+    }
+}
+
+//.case__container {
+//    @include min-tablet {
+//        padding: 0;
+//    }
+//}
+
+.case__description {
+    position: absolute;
+    margin: 0 auto;
+
+    @include min-tablet {
+        position: relative;
+    }
+}
+
+.case__media {
+    margin: 0;
+
+    &-placeholder {
+        position: relative;
+        padding-bottom: 56.25%;
+        margin-bottom: $buildingUnit * 3;
+
+        @include min-tablet {
+            z-index: 1;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.case__image {
+    top: 0;
+
+    &--full {
+        @include object-fit(cover);
+        z-index: 1;
+    }
+    &-overlay {
+        z-index: 2;
+        background-color: $colorOverlayImage;
+        width: 100%;
+        height: 100%;
+    }
+    &--full,
+    &-overlay {
+        position: absolute;
+    }
+}
+
+.case__link {
+    z-index: 3;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $colorWhite;
+
+    &:hover {
+        color: $colorWhite;
+    }
+
+    @include min-tablet {
+        z-index: unset;
+        top: unset;
+        left: unset;
+        position: relative;
+        transform: none;
+        margin: 0 auto;
+    }
+}
+
+.case__paragraph {
+    position: relative;
+
+    &--last {
+        margin-bottom: 0;
+    }
+}
+
+.case__flex-grid--center {
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include min-tablet {
+        z-index: 3;
+    }
+}

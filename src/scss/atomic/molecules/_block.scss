@@ -1,0 +1,6 @@
+.block {
+    @extend %reset-last-margin;
+
+    flex: 1;
+    margin-bottom: $buildingUnit;
+}

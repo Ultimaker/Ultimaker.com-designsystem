@@ -1,0 +1,37 @@
+// SETTINGS
+// Font, colors definitions, etc
+@import 'settings/all';
+
+// TOOLS
+// Globally used mixins and functions.
+@import 'tools/all';
+
+/******************************************************************************
+
+REMARK: Do not to output any CSS in the first 2 layers  (TOOLS/SETTINGS). This
+        will destroy the specificity concept from ITCSS.
+
+******************************************************************************/
+
+// GENERIC
+// Reset and/or normalize styles, box-sizing definition, etc.
+@import 'generic/all';
+
+// ELEMENTS (ATOMS)
+// styling for bare HTML elements (like H1, A, etc.). These come with default
+// styling from the browser so we can redefine them here.
+@import 'atomic/atoms/all';
+
+// OBJECTS (MOLECULES)
+// Class-based selectors which define undecorated design patterns
+@import 'atomic/molecules/all';
+
+// COMPONENTS (ORGANISMS)
+// Specific UI components. UI components are often composed
+// of Objects and Components
+@import 'atomic/organisms/all';
+
+// UTILITIES
+// Utilities and helper classes with ability to override anything which goes
+// before in the triangle, eg. states like hidden
+@import 'ultilities/all';

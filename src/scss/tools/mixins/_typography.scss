@@ -1,0 +1,23 @@
+// Get the 'font-size/line-height' ratio according to demanded font-size
+@mixin font-line-ratio($sizeName) {
+    $sizeValue: map-get( get-font-specs($sizeName), size );
+    $lineValue: map-get( get-font-specs($sizeName), height );
+
+    font-size: $sizeValue + px;
+    line-height: $lineValue + px;
+}
+
+// Create vertical rhythm without the 'font-size/line-height' ratio
+@mixin font-rhythm($sizeName) {
+    $offsetTopValue: map-get( get-font-specs($sizeName), top);
+    $offsetBottomValue: map-get( get-font-specs($sizeName), bottom);
+
+    margin-top: $offsetTopValue + px;
+    margin-bottom: $offsetBottomValue + px;
+}
+
+//Combine the 'font-size/line-height' ratio with the offsets to create a vertical rhythm
+@mixin font-ratio-rhythm($sizeName) {
+    @include font-line-ratio($sizeName);
+    @include font-rhythm($sizeName);
+}

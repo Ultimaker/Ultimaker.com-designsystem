@@ -1,2 +1,2 @@
-import '../scss/index.scss';
+import '../scss/ultimaker.scss';
 import './atoms/button/button';

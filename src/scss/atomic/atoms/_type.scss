@@ -1,0 +1,148 @@
+// Root element
+html {
+    @include font-line-ratio(prim-s);
+    font-weight: 100;
+    font-family: $fontPrimary;
+
+    &.fonts--stage-one {
+        font-family: $fontPrimaryStageOne;
+    }
+
+    &.fonts--stage-one {
+        font-family: $fontPrimaryStageTwo;
+    }
+
+    color: $colorBlack;
+    background: $colorWhite;
+
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include min-tablet() {
+        @include font-line-ratio(prim-m);
+    }
+}
+
+// Body
+.copy--intro {
+    @include font-ratio-rhythm(prim-m);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(prim-l);
+    }
+}
+
+p {
+    @include font-rhythm(prim-s);
+
+    @include min-tablet() {
+        @include font-rhythm(prim-m);
+    }
+}
+
+strong {
+    display: block;
+    @extend p;
+
+    p & {
+        display: inline;
+    }
+}
+
+q {
+    @extend h3;
+    display: block;
+    text-align: center;
+    color: $colorGrayDark;
+}
+
+.copy--small {
+    @include font-ratio-rhythm(prim-s);
+}
+
+small {
+    @include font-line-ratio(prim-xs);
+    display: block;
+
+    font-weight: 500;
+    color: inherit;
+
+    @include min-tablet() {
+        @include font-line-ratio(prim-xs);
+    }
+}
+
+// Headlines
+h1,
+h2,
+h3 {
+    @extend %fontSecondary;
+    font-weight: 400;
+}
+
+// Vertical rhythm
+h1,
+.headline--primary {
+    @include font-ratio-rhythm(sec-l);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-xxl);
+    }
+}
+
+h2,
+.headline--secondary {
+    @include font-ratio-rhythm(sec-m);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-l);
+    }
+}
+
+h3,
+.headline--tertiary {
+    @include font-ratio-rhythm(sec-xs);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-s);
+    }
+}
+
+h4,
+h5,
+h6,
+.headline--quaternary,
+.headline--quinary,
+.headline--senary,
+strong {
+    @extend %fontPrimary;
+    font-weight: 600;
+}
+
+h4, strong {
+    @include font-line-ratio(prim-s);
+
+    margin-top: -2px;
+    margin-bottom: 2px;
+
+    @include min-tablet() {
+        @include font-line-ratio(prim-m);
+
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+}
+
+h5 {
+    @extend .copy--small;
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+
+h6 {
+    @extend small;
+    margin-top: 0;
+    margin-bottom: 0;
+}

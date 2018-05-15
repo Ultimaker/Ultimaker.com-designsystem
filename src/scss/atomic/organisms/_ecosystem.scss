@@ -1,0 +1,69 @@
+.ecosystem {
+    @extend .organism;
+}
+
+.ecosystem__items {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ecosystem__card {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin: 0 $buildingUnit $buildingUnit * 4 $buildingUnit;
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    .card__visual{
+        flex: 1 1 60px;
+        width: 60px;
+        height: 60px;
+        min-width: 60px; // IE FIX
+        max-height: 60px; // FF FIX
+        margin: 0 ($buildingUnit * 2) 0 0;
+    }
+}
+
+
+@include min-mobile-xl {
+    .ecosystem__items {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .ecosystem__card {
+        flex: 1 1 240px;
+        max-width: 240px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .card__visual{
+            margin: 0 0 $buildingUnit * 1.5 0;
+        }
+        &:last-child,
+        &:nth-last-child(2){
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include min-tablet {
+    .ecosystem__items {
+        flex-flow: row wrap;
+    }
+
+    .ecosystem__card {
+        flex: 1 1 42%;
+        max-width: 42%;
+    }
+}
+
+@include min-desktop {
+    .ecosystem__card {
+        flex: 1 1 20%;
+        max-width: 20%;
+        margin-bottom: 0;
+    }
+}

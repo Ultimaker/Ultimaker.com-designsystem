@@ -1,0 +1,157 @@
+/**
+ * Font Face
+ * @param {string} $fontName - Name of the font
+ * @param {string} $folderName - Subfolder inside the fonts folder
+ * @param {string} $fileName - Name of the font-file
+ * @param {string} $fontWeight (normal) - Font weight value
+ * @param {string} $fontStyle (normal) - Font style value
+ */
+@mixin font-face($fontName, $folderName, $fileName, $fontWeight: normal, $fontStyle: normal){
+    @font-face {
+        font-family: $fontName;
+        src: url('#{$pathFont}#{$folderName}/#{$fileName}.woff2') format('woff2'),
+            url('#{$pathFont}#{$folderName}/#{$fileName}.woff') format('woff');
+        font-weight: $fontWeight;
+        font-style: $fontStyle;
+    }
+}
+
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+@mixin background($name: '', $repeat: no-repeat, $left: 0, $top: 0, $color: transparent, $attachment: scroll){
+	background: $color url('#{$pathImage}#{$name}') $repeat $left $top $attachment;
+}
+
+// Text overflow, Requires inline-block or block for proper styling
+@mixin text-overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// Disable the use of Ligatures in browsers
+@mixin no-ligatures {
+	font-variant-ligatures: no-common-ligatures;
+	font-feature-settings: "liga" 0;
+}
+
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+@mixin arrow($direction: up, $color: #000, $size: 10px, $stretch: 1, $excludeBase: false) {
+
+	@if $excludeBase == false {
+		display: inline-block;
+		vertical-align: middle;
+		width: 0;
+		height: 0;
+		font: 0/0 serif;
+	}
+
+	$size: round($size / 2);
+	$longSize: $size * $stretch;
+
+	@if $direction == down {
+		border-top: $longSize solid #{$color};
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-bottom: 0;
+	} @else if $direction == left {
+		border-top: $size solid transparent;
+		border-left: 0;
+		border-right: $longSize solid #{$color};
+		border-bottom: $size solid transparent;
+	} @else if $direction == right {
+		border-top: $size solid transparent;
+		border-left: $longSize solid #{$color};
+		border-right: 0;
+		border-bottom: $size solid transparent;
+	} @else {
+		border-top: 0;
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-bottom: $longSize solid #{$color};
+	}
+
+}
+
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+@mixin ratioHolder($width, $height, $type: before, $firstDescendant: true){
+	@if $type == before {
+		@if $firstDescendant == true {
+			&:before {
+				content: '';
+				display: block;
+				padding-top: percentage($height / $width);
+			}
+		}
+		@else{
+			content: '';
+			display: block;
+			padding-top: percentage($height / $width);
+		}
+	}
+	@else if $type == after {
+		@if $firstDescendant == true {
+			&:after {
+				content: '';
+				display: block;
+				padding-top: percentage($height / $width);
+			}
+		}
+		@else {
+			content: '';
+			display: block;
+			padding-top: percentage($height / $width);
+		}
+	}
+}
+
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+@mixin object-fit($fit: fill, $position: null){
+	object-fit: $fit;
+	@if $position {
+		object-position: $position;
+		font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+	} @else {
+		font-family: 'object-fit: #{$fit}';
+	}
+}
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+@mixin reset-visually-hidden {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: initial;
+    clip: initial;
+}

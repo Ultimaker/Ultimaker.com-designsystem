@@ -1,0 +1,87 @@
+.colors {
+    @extend .organism;
+
+    .colors__list {
+        display: flex;
+        flex-wrap: wrap;
+        @extend %reset-list;
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: $buildingUnit * 1.5;
+
+        @include min-tablet {
+            margin-bottom: ($buildingUnit * 2) - 1px;
+        }
+
+    }
+
+    .colors__list-item {
+        position: relative;
+        @extend %reset-list-item;
+        margin: 0 $buildingUnit $buildingUnit 0;
+        padding-left: 0;
+    }
+
+
+    .colors__swatches {
+        @extend %reset-last-margin
+    }
+
+    .colors__image {
+        @include micro-animate(opacity);
+        @include max-mobile-xl {
+            margin-bottom: $buildingUnit * 3;
+        }
+
+        &--loading {
+            opacity: 0;
+        }
+    }
+
+    .colors__tooltip {
+        position: absolute;
+        display: block;
+        opacity: 0;
+        left: -1000vw;
+        transform: translate(calc((50% - #{$colorSize / 2}) * -1), calc(-100% - #{$buildingUnit * 1.25}));
+        transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultDuration $defaultEasing;
+    }
+
+
+    .hit-area:hover,
+    .hit-area:active,
+    .hit-area:focus {
+        .colors__tooltip {
+            opacity: 1;
+            left: 0;
+            transform: translate(calc((50% - #{$colorSize / 2}) * -1), calc(-100% - #{$buildingUnit * 0.75}));
+            transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultEasing;
+
+        }
+
+        .push--left {
+            left: $colorSize * -1;
+
+            &:after {
+                left: calc(100% - #{$buildingUnit * 3});
+            }
+        }
+
+        .push--right{
+            left: $colorSize;
+
+            &:after {
+                left:$buildingUnit;
+            }
+        }
+    }
+
+    .hit-area:focus {
+        outline: none;
+    }
+
+    .colors__link--large {
+        @extend %reset-last-link-large-margin;
+    }
+}

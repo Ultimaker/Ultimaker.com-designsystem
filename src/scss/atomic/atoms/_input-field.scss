@@ -1,0 +1,42 @@
+$inputBorder: 1px solid $colorGray;
+$inputBorderFocus: 2px solid $colorMain;
+$colorPlaceholder: $colorGrayDark;
+
+input[type="text"] {
+    position: relative;
+    padding: $buildingUnit + 0.5;
+
+    border: $inputBorder;
+    border-radius: 0;
+
+    outline: 0;
+
+    &:focus:not(:hover),
+    &:focus:not(:active) {
+        @extend %focus-outline;
+    }
+
+    border: $inputBorder;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="text"]:not(.search__input) {
+    background: $colorGrayExtraLight;
+    @include font-line-ratio(prim-s);
+}
+
+.required:after {
+    @include font-line-ratio(prim-s);
+    content: "*";
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    color: $colorPlaceholder;
+}
+
+::placeholder {
+    color: $colorPlaceholder;
+}

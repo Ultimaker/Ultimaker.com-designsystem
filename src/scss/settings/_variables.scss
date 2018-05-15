@@ -1,0 +1,100 @@
+// Building unit
+$buildingUnit:                  12px;
+
+// Source Paths
+$pathFont: 						'../../static/fonts/';
+$pathImage: 					'../../static/media/images/';
+$fontLineHeight:                1.5rem;
+
+
+// Fonts
+$fontArial: 					Arial, "Helvetica Neue", Helvetica, sans-serif;
+$fontPrimary: 					$fontArial;
+$fontSecondary: 		        $fontArial;
+
+$fontPrimaryStageOne:           'univers-init', $fontArial;
+$fontSecondaryStageOne: 		'fugue-init', $fontArial;
+
+$fontPrimaryStageTwo:           'univers', $fontArial;
+$fontSecondaryStageTwo: 		'fugue', $fontArial;
+
+// Font weights
+$fontWeights: (
+    thin:  						100,
+    ultralight:  				200,
+    light:  					300,
+    regular:  					400,
+    medium:  					500,
+    semibold:  					600,
+    extrabold:  				800,
+    black:  					900
+);
+
+// Font sizes
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+$fontSizes: (prim-xxs: 10, prim-xs:12, prim-s:14, prim-m:16, prim-l:18, sec-xxs: 16, sec-xs: 18, sec-s:20, sec-m: 24, sec-l: 30, sec-xl: 48, sec-xxl: 60);
+$lineHeights: (prim-xxs: 15, prim-xs:18, prim-s:21, prim-m:24, prim-l:30, sec-xxs:24, sec-xs:24, sec-s:24, sec-m: 30, sec-l: 36, sec-xl: 48, sec-xxl: 60);
+
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+$offsetTop: (prim-xxs: -8, prim-xs:-10, prim-s:-2, prim-m:-5, prim-l: -8, sec-xxs:6, sec-xs:6, sec-s:5, sec-m: 1, sec-l: -5, sec-xl: -5, sec-xxl: -4);
+$offsetBottom: (prim-xxs: 0, prim-xs:18, prim-s:23, prim-m:29, prim-l: 38, sec-xxs:24, sec-xs:24, sec-s:31, sec-m: 53, sec-l: 59, sec-xl: 23, sec-xxl: 64);
+
+// Icon sizes
+$iconSize: $buildingUnit * 1.5;
+$iconSizeLarge: $buildingUnit * 2;
+
+// Tints
+$tintHoverFocus:                8%; // This is the equivalent of the grayscale of $colorGrayLight (which is: 8% black)
+$tintActive:                    4%; // This is the equivalent of the grayscale of $colorGrayLightExtra (which is: 4% black)
+$tintInactive:                  50%;
+
+// Colors
+$colorMain:                     #0CA9E3;
+$colorError:					#EA5354;
+$colorLike:						#EA5354;
+$colorOnline: 					#87D128;
+$colorNotification: 			#CC001A;
+
+// Grayscales
+$colorBlack: 					#000000;
+$colorGrayDark:					#7F7F7F;
+$colorGrayMedium:               #B2B2B2;
+$colorGray:				        #E3E3E3;
+$colorGrayLight:				#EAEAEA;
+$colorGrayExtraLight:		    #F5F5F5;
+$colorWhite: 					#FFFFFF;
+
+// Social Media Colors
+$colorFacebook:					#3b5998;
+$colorTwitter:					#00b6f1;
+$colorGooglePlus:				#df4a32;
+$colorLinkedIn:					#007bb6;
+$colorWhatsapp:					#43d854;
+
+// Color applications
+$colorButton:                   $colorMain;
+$colorButtonHover:              lighten($colorButton, $tintHoverFocus);
+$colorIconButton:               $colorWhite;
+$colorNavInit:                  $colorBlack;
+$colorBgGray:                   darken($colorWhite, 2%);
+
+
+// Colors accessibility
+
+// Overlays
+$colorOverlayImage:           rgba($colorBlack, 0.3);
+
+//Animations
+$defaultDuration: .3s;
+$defaultEasing: cubic-bezier(.23,1,.32,1);
+
+//Icons
+$defaultIconSize: 1em;
+
+//Header
+$headerHeight: $buildingUnit * 5;

@@ -1,0 +1,17 @@
+$colGapMob: $gridGutterSizeMobile * 2;
+$colGap: $gridGutterSize * 2;
+
+@mixin columns($count) {
+
+    column-count: $count;
+    column-gap: $colGapMob;
+
+    @include min-tablet{
+        column-gap: $colGap;
+    }
+
+    & > li {
+        // As it shifts off at 0px we use 2px to correct this
+        transform: translate3d(0, 2px, 0);
+    }
+}

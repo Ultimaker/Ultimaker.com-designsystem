@@ -1,0 +1,68 @@
+/**
+ * Position X,Y,Z (Fallback Top, Left IE)
+ * @param {number} $x - X Position
+ * @param {number} $y - Y Position
+ * @param {number} $z - Z Position
+ */
+@mixin position($x:0, $y:0, $z:0) {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	@include translate3d($x, $y, $z);
+
+	.oldie & {
+		left: $x * 1px;
+		top: $y * 1px;
+	}
+}
+
+/**
+ * Position
+ * @param {number} $top (0) - Top Position
+ * @param {number} $right (auto) - Right Position
+ * @param {number} $bottom (auto) - Bottom Position
+ * @param {number} $left (0) - Left Position
+ */
+@mixin pos($top: 0, $right: auto, $bottom: auto, $left: 0) {
+	top: $top;
+	bottom: $bottom;
+	left: $left;
+	right: $right;
+}
+
+/**
+ * Offset
+ * @param {number} $top (0) - Top Offset
+ * @param {number} $left (0) - Left Offset
+ */
+@mixin offset($x: 0, $y: 0) {
+	top: $y;
+	left: $x;
+}
+
+/**
+ * Positioning an element absolute in the center
+ */
+@mixin abs-center(){
+	position: absolute;
+	@include pos(50%, auto, auto, 50%);
+	transform: translate(-50%, -50%);
+}
+
+/**
+ * Places an element absolute on top of the entire wrapper
+ */
+@mixin coverer {
+	position: absolute;
+	@include pos(0, 0, 0, 0);
+}
+
+/**
+ * Set an element to display block and center margin
+ */
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

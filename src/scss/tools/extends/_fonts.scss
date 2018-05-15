@@ -1,0 +1,21 @@
+%fontPrimary {
+    font-family: $fontPrimary;
+    .fonts--stage-one & {
+        font-family: $fontPrimaryStageOne;
+    }
+
+    .fonts--stage-two & {
+        font-family: $fontPrimaryStageTwo;
+    }
+}
+
+%fontSecondary {
+    font-family: $fontSecondary;
+    .fonts--stage-one & {
+        font-family: $fontSecondaryStageOne;
+    }
+
+    .fonts--stage-two & {
+        font-family: $fontSecondaryStageTwo;
+    }
+}

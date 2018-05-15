@@ -1,0 +1,78 @@
+.tablist__section {
+    .tablist {
+        $tabBorderSize: 1px;
+        @extend small;
+
+        display: inline-block;
+        max-width: 100%;
+
+        padding: 0;
+        margin-bottom: 0;
+
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+
+        border: $tabBorderSize solid $colorGray;
+
+        &__headline {
+            @extend small;
+            position: relative;
+
+            margin-bottom: 8px;
+
+            @include min-tablet {
+                margin-bottom: 11px;
+            }
+        }
+        &__item {
+            @extend .price-table__item;
+            @extend strong;
+            white-space: nowrap;
+
+            outline: none;
+            cursor: pointer;
+            display: table-cell;
+
+            padding-left: $buildingUnit;
+            padding-right: $buildingUnit;
+            padding-top: ($buildingUnit / 2) + 2px;
+            padding-bottom: ($buildingUnit / 2) - 1px;
+
+            @include min-desktop {
+                padding-top: $buildingUnit / 2;
+                padding-bottom: ($buildingUnit / 2) - 2px;
+            }
+
+            @include micro-animate(color, background, border-color);
+
+            &:hover {
+                color: $colorBlack;
+                background-color: darken($colorWhite, $tintHoverFocus);
+            }
+            &:focus:not(:hover) {
+                @extend %focus;
+            }
+
+            &:hover,
+            &--active {
+                @extend .price-table__item--active;
+            }
+            &--inactive {
+                @extend .price-table__item--inactive;
+            }
+        }
+        &__scroll-hint {
+            color: $colorGrayDark;
+            @extend .scroll-hint;
+
+            //For patternlab only (should only be visible when tabbar is wider than viewport)
+            @media screen and (min-width: 642px) {
+                display: none;
+            }
+
+            position: absolute;
+            right: 0;
+        }
+    }
+}

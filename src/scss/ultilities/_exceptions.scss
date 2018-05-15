@@ -1,0 +1,9 @@
+.disable-focus {
+    &:focus,
+    &:active {
+        color: inherit !important;
+        background: inherit !important;
+        outline: inherit !important;
+        border: inherit !important;
+    }
+}

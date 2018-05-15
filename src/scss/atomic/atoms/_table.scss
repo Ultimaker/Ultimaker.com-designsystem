@@ -1,0 +1,45 @@
+$tableBorderWidth: 1px;
+
+table {
+    @include font-rhythm(prim-s);
+
+    @include min-tablet() {
+        @include font-rhythm(prim-m);
+    }
+
+    height: auto;
+    width: 100%;
+
+    text-align: left;
+
+    border-collapse: collapse;
+    border: $tableBorderWidth solid $colorBlack;
+}
+
+table tbody tr,
+table thead tr {
+    border-bottom: $tableBorderWidth solid $colorBlack;
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+table td,
+table th {
+    height: auto;
+    width: 25%;
+    padding: $buildingUnit;
+    padding-top: $buildingUnit - $tableBorderWidth;
+    vertical-align: top;
+}
+
+table td small,
+table th small {
+    display: block;
+    color: $colorGrayDark;
+}
+
+table tfoot {
+    @include font-line-ratio(prim-xs);
+}

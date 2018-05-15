@@ -1,0 +1,70 @@
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+
+@mixin min-mobile {
+    @media (min-width: $mobileWidth) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: $mobileWidth) and (max-width: $tabletWidth - 1) {
+        @content;
+    }
+}
+
+@mixin max-mobile {
+    @media (max-width: $mobileXlWidth - 1) {
+        @content;
+    }
+}
+
+@mixin min-mobile-xl {
+    @media (min-width: $mobileXlWidth) {
+        @content;
+    }
+}
+
+@mixin max-mobile-xl {
+    @media (max-width: $tabletWidth - 1) {
+        @content;
+    }
+}
+
+@mixin min-tablet {
+    @media (min-width: $tabletWidth) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tabletWidth) and (max-width: $desktopWidth - 1px) {
+        @content;
+    }
+}
+
+@mixin max-tablet {
+    @media (max-width: $desktopWidth - 1) {
+        @content;
+    }
+}
+
+@mixin min-desktop {
+    @media (min-width: $desktopWidth) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktopWidth) and (max-width: $desktopHdWidth - 1px) {
+        @content;
+    }
+}
+
+@mixin min-desktop-hd {
+    @media (min-width: $desktopHdWidth) {
+        @content;
+    }
+}

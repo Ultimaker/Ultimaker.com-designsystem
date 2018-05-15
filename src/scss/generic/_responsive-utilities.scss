@@ -1,0 +1,11 @@
+@each $label, $map in $gridBreakpoints {
+    $selector: map-get($map, selector);
+    $minWidth: map-get($map, minWidth);
+    $maxWidth: map-get($map, maxWidth);
+
+    @media (min-width: #{$minWidth}) and (max-width: #{$maxWidth}) {
+        .hidden--#{$selector} {
+            display: none;
+        }
+    }
+}

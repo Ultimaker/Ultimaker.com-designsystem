@@ -1,0 +1,14 @@
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+
+@mixin micro-animate($animateProp...) {
+    $transition: '';
+
+    @each $prop in $animateProp {
+        $transition: $transition + ' ' + $prop + ' ' + $defaultDuration + ' ' + $defaultEasing + ', ';
+    }
+
+    $transition: str-slice($transition, 1, -3);
+    transition: #{$transition};
+}

@@ -1,0 +1,261 @@
+$colorNavItemActive: darken($colorWhite, $tintActive);
+$mainNavBorder: 1px solid $colorGray;
+
+.main-nav {
+    position: relative;
+
+    &--small {
+        flex: 0 1 auto;
+        order: 30;
+        z-index: 0;
+
+        &:before {
+            transform: translateX(-100vw);
+            content: '';
+            height: calc(100vh - #{$navHeight});
+
+            position: absolute;
+            top: $navHeight;
+            left: 0;
+            right: 0;
+
+            opacity: 0;
+            background-color: $colorBlack;
+
+            transition: opacity 0.5s ease(easeOutQuint), transform 0s 0.5s ease(easeOutQuint);
+        }
+    }
+
+    &--large {
+        order: 20;
+        flex: 1 1 auto;
+        margin-right: $navHeight;
+
+        &:before {
+            content: none;
+            display: none;
+        }
+
+
+    }
+}
+
+.main-nav--large,
+.main-nav--large .main-nav__list,
+.main-nav--large .main-nav__item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.main-nav__nav-assist {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .main-nav--large & {
+        @include min-desktop{
+            display: none;
+        }
+    }
+}
+
+.main-nav__list {
+    @extend %reset-list;
+
+    .main-nav--small & {
+        top: 100%;
+        left: 0;
+        max-height: calc(100vh - #{ $navHeight });
+
+        border-right: $mainNavBorder;
+        border-bottom: $mainNavBorder;
+
+        width: calc(100% - #{ $navHeight });
+        overflow-y: scroll;
+
+        background-color: $colorWhite;
+    }
+
+    .main-nav--large & {
+        position: static;
+        margin-top: ($buildingUnit / 2) +1;
+        border-right: 0;
+
+        width: auto;
+        overflow-y: unset;
+
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+
+.main-nav__item {
+    .main-nav--small & {
+        padding: 0;
+        margin-bottom: 0;
+
+        border-bottom: $mainNavBorder;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .main-nav--large & {
+        display: flex;
+        flex-direction: row;
+
+        padding: 0 ($buildingUnit / 2);
+        margin-bottom: 6px;
+
+        border-right: 0;
+        border-bottom: 0;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        @include min-desktop-hd {
+            padding: 0 ($buildingUnit * 1.25);
+        }
+    }
+}
+
+.main-nav__link {
+    display: block;
+
+    z-index:2;
+    cursor: pointer;
+
+    padding: 19px $buildingUnit 17px;
+    position: relative;
+
+    color: $colorBlack;
+
+    @extend %fontSecondary;
+    @include font-line-ratio(sec-xxs);
+    @include micro-animate(background-color);
+
+
+    &:hover{
+        color: $colorBlack;
+    }
+
+    &:focus:not(:hover),
+    &:focus:not(:active) {
+        @extend %focus-outline;
+    }
+
+    .main-nav--large & {
+        padding: 0;
+
+        &:after {
+            content: '';
+            display: inline;
+            height: 3px;
+            width: 0;
+            background: $colorBlack;
+            position: absolute;
+            left: 50%;
+            bottom: ($buildingUnit * -0.5);
+            transform: translateX(-50%);
+            @include micro-animate(width);
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+        &:focus:after {
+            width: 0;
+        }
+
+        @include min-desktop-hd {
+            @include font-line-ratio(sec-xs);
+        }
+    }
+}
+
+.main-nav__item--active {
+    background-color: $colorNavItemActive;
+
+    .main-nav--large & {
+        background-color: transparent;
+
+        .main-nav__link:after {
+            width: 100%;
+        }
+    }
+
+    .flyout__toggle {
+        color: mix-blend-multiply($colorMain, $colorNavItemActive);
+    }
+}
+
+.main-nav--open {
+    &:before {
+        transform: translateX(0vw);
+        opacity: 0.8;
+        @include micro-animate(opacity);
+    }
+
+    .main-nav__item {
+        display: block;
+
+        .main-nav--large & {
+            display: inline-block;
+        }
+    }
+}
+
+.main-nav__flyout {
+    z-index: 1;
+    @extend .flyout;
+
+    @include min-desktop {
+        .main-nav & {
+            top: $navHeight;
+        }
+    }
+}
+
+.main-nav__toggle {
+    position: relative;
+    z-index: 10;
+    display: none;
+    margin-left: 3px;
+    background-color: transparent;
+
+    .main-nav--large & {
+        display: initial;
+    }
+}
+
+// Used by VUE transition
+.menu-open {
+    &-enter, &-leave-to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    &-enter-active, &-leave-active {
+        transition: transform $defaultDuration, opacity $defaultDuration;
+    }
+}
+
+.menu-switch {
+    &-enter, &-leave-to {
+        opacity: 0;
+    }
+    &-enter-active, &-leave-active {
+        transition: opacity $defaultDuration;
+    }
+}
+
+.flyout-open {
+    &-enter, &-leave-to {
+        opacity: 0;
+    }
+    &-enter-active, &-leave-active {
+        transition: opacity $defaultDuration;
+    }
+}

@@ -32,7 +32,11 @@ module.exports = {
             },
             {
                 test: /\.(sass|scss)$/,
-                loader: ExtractTextPlugin.extract(['css-loader', 'postcss-loader', 'sass-loader'])
+                use: [
+                    { loader: "style-loader" }, 
+                    { loader: "css-loader", options: { sourceMap: true } }, 
+                    { loader: "sass-loader", options: { sourceMap: true } }
+                ]
             }
         ]
     },

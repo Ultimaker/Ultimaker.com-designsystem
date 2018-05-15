@@ -1,0 +1,17 @@
+.social-nav__list {
+    @extend %reset-list;
+}
+
+.social-nav__item {
+    @extend %reset-list-item;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.social-nav__link {
+    @extend .icon-button--small;
+}
+
+.social-nav__icon {
+    @extend .icon-button__icon;
+}

@@ -1,0 +1,124 @@
+%disable-flex-grow {
+    [class*="flexgrid__cell"] {
+        flex-grow: 0;
+    }
+}
+
+.container {
+    max-width: $desktopHdWidth;
+    margin: 0 auto;
+    padding: ($buildingUnit * 5) $buildingUnit;
+
+    @include min-tablet {
+        padding: ($buildingUnit * 5) $buildingUnit * 2;
+    }
+
+    @include min-desktop {
+        padding: ($buildingUnit * 5) $buildingUnit * 4;
+    }
+
+    @include min-desktop-hd {
+        padding: ($buildingUnit * 5) $buildingUnit * 5;
+    }
+}
+
+.flexgrid {
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: column wrap;
+    flex: 1 0 auto;
+    width: 100%;
+
+    @include min-mobile {
+        flex-direction: row;
+    }
+}
+
+.flexgrid__cell, 
+[class*="flexgrid__cell"] {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/*
+ *  Responsive flexgrid
+ *  Generate columns for each of the defined breakpoints
+ */
+
+@each $label, $map in $gridBreakpoints {
+    $selector: map-get($map, selector);
+    $minWidth: map-get($map, minWidth);
+
+    @media (min-width: #{$minWidth}) {
+        [class*="flexgrid__cell--#{$selector}"] {
+            //display: flex; /* enables flexgrid cells to have equal heights */
+            flex-basis: auto;
+            max-width: 100%;
+            flex-grow: 1;
+        }
+
+        @for $i from 1 through $gridNumberOfCols {
+            $divider: 100 / ($gridNumberOfCols / $i);
+
+            .flexgrid__cell--#{$selector}-#{$i} {
+                flex-basis: $divider#{'%'};
+                max-width: $divider#{'%'};
+            }
+        }
+    }
+}
+
+.flexgrid--gutter {
+    margin: 0 $gridGutterSizeMobile / -2;
+
+    [class*="flexgrid__cell"] {
+        padding: 0 $gridGutterSizeMobile / 2;
+    }
+
+    @include min-tablet {
+        margin: 0 $gridGutterSize / -2;
+
+        [class*="flexgrid__cell"] {
+            padding: 0 $gridGutterSize / 2;
+        }
+    }
+}
+
+.flexgrid--column-reversed {
+    flex-direction: column-reverse;
+    flex-flow: column-reverse;
+}
+
+.flexgrid--row-reversed {
+    flex-direction: row-reverse;
+}
+
+.flexgrid--mobile-xl-row {
+    @include min-mobile-xl {
+        flex-direction: row;
+    }
+}
+
+.flexgrid--justify-space-between {
+    @extend %disable-flex-grow;
+    justify-content: space-between;
+}
+
+.flexgrid--justify-space-around {
+    @extend %disable-flex-grow;
+    justify-content: space-around;
+}
+
+.flexgrid--justify-space-evenly {
+    @extend %disable-flex-grow;
+    justify-content: space-evenly;
+}
+
+.flexgrid--justify-right {
+    @extend %disable-flex-grow;
+    justify-content: flex-end;
+}

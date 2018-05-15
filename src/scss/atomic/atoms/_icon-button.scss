@@ -1,0 +1,132 @@
+.icon-button {
+    @include micro-animate(background-color);
+    @include font-line-ratio(prim-s);
+
+    display: inline-flex;
+    justify-content: flex-end;
+
+    padding: $buildingUnit;
+    height: $buildingUnit * 4;
+
+    color: $colorBlack;
+    background-color: $colorWhite;
+
+    cursor: pointer;
+
+    &:hover {
+        color: $colorBlack;
+        background-color: $colorGrayLight;
+    }
+
+    &--light {
+        &,
+        &:hover {
+            color: $colorWhite;
+            background: rgba($colorWhite, 0.08);
+        }
+    }
+}
+
+.icon-button__icon {
+    font-size: $buildingUnit * 2;
+}
+
+.icon-button__label {
+    margin: 4px ($buildingUnit / 2) 0 $buildingUnit;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.icon-button--small {
+    padding: $buildingUnit / 2;
+    height: $buildingUnit * 3;
+}
+
+.icon-button--large {
+    padding: ($navHeight - 24px) / 2;
+    width: $navHeight;
+    height: $navHeight;
+}
+
+.icon-button--round {
+    border-radius: 50% 50%;
+    height: $buildingUnit * 4;
+    width: $buildingUnit * 4;
+}
+
+.icon-button--drop-shadow{
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.3);
+}
+
+.icon-button--reversed {
+    display: inline-flex;
+    flex-direction: row-reverse;
+
+    .icon-button__label {
+        margin-left: $buildingUnit / 2;
+        margin-right: $buildingUnit;
+    }
+    .icon-button__icon {
+        margin-left: auto;
+    }
+}
+
+.icon-button--underline {
+    @extend %fontSecondary;
+    @include font-ratio-rhythm(sec-xxs);
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-xs);
+    }
+
+    display: inline;
+    position: relative;
+    padding-left: $iconSize * (5 / 3);
+    color: $colorBlack;
+
+    &, &:hover {
+        background-color: transparent;
+    }
+
+    .icon-button__icon {
+        position: absolute;
+        top: $buildingUnit;
+        left: $iconSize * (1 / 3);
+        font-size: $iconSize;
+    }
+
+    .icon-button__label {
+        @include micro-animate(background-size);
+
+        margin: 0;
+        width: calc(100% - 0.1px); // solves IE11 issue
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px);
+    }
+    
+    &:hover, &:active, &:visited {
+        .icon-button__label {
+            background-size: 0% 100%;
+        }
+    }
+}
+
+.icon-button--underline-large {
+    @extend .icon-button--underline;
+    @include font-ratio-rhythm(sec-xs);
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-s);
+    }
+
+    padding-left: $iconSizeLarge *  (5 / 3);
+
+    .icon-button__icon {
+        left: $iconSizeLarge * (1 / 3);
+        font-size: $iconSizeLarge;
+    }
+
+    .icon-button__label {
+        background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px);
+    }
+}

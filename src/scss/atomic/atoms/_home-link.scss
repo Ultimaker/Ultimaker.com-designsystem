@@ -1,0 +1,28 @@
+.home-link {
+    display: flex;
+    flex: 0 1 auto;
+    z-index: 1;
+    align-items: stretch;
+    margin: 0 $buildingUnit 4px 0;
+
+    color: currentColor;
+
+    &:hover {
+        color: currentColor;
+    }
+
+    &:focus:not(:hover),
+    &:focus:not(:active) {
+        @extend %focus-outline;
+    }
+}
+
+.home-link__logo {
+    height: $buildingUnit * 1.5;
+    width: $homeLinkWidth;
+
+    @include min-desktop-hd {
+            height: $buildingUnit * 2;
+            width: $homeLinkDesktopHdWidth;
+    }
+}
