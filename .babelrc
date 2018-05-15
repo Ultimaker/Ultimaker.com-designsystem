@@ -1,12 +1,25 @@
 {
-  "presets": [
-    ["env", { "modules": false }],
-    "vue"
-  ],
-  "env": {
-    "test": {
-      "presets": ["env"]
+    "presets": [
+        ["env", {
+            "modules": false,
+            "uglify": true,
+            "debug": false,
+            "useBuiltIns": true
+        }]
+    ],
+    "plugins": [
+        "syntax-dynamic-import",
+        "transform-es2015-destructuring",
+        "transform-es2015-parameters",
+        "transform-es2015-template-literals",
+        "transform-object-rest-spread",
+        ["transform-runtime", {
+            "helpers": false,
+            "polyfill": false,
+            "regenerator": true
+        }]
+    ],
+    "comments": false,
+    "env": {
     }
-  }
 }
-
