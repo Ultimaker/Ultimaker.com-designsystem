@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "esnext",
+        "module": "es6",
+        "baseUrl": "./src",
+        "paths": {
+            "vue": ["../node_modules/vue/dist/vue.esm.js"],
+            "src/*": ["."],
+            "js/*": ["./js"],
+            "adapters/*": ["./src/js/adapters"],
+            "components/*": ["./src/js/components"],
+            "constants/*": ["./src/js/constants"],
+            "definitions/*": ["./src/js/definitions"],
+            "mixins/*": ["./src/js/mixins"],
+            "router/*": ["./src/js/router"],
+            "services/*": ["./src/js/services"],
+            "utils/*": ["./js/utils"]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build"
+    ]
+}
