@@ -1,2 +1,12 @@
 import '../scss/ultimaker.scss';
-import './atoms/button/button';
+import './directives';
+import './components';
+
+// import all icons from src/icons/.. as svg sprite
+/* eslint-disable no-unused-vars */
+const __svg__ = {
+    path: '../icons/**/*.svg',
+    name: 'icons/iconset.svg'
+};
+
+

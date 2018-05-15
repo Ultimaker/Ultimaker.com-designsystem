@@ -1,0 +1,123 @@
+{
+    "properties": {
+        "type": "color-picker",
+        "title": "Ultimaker PLA available colors",
+        "links": {
+            "materials": [
+                {
+                    "title": "Polylactic Acid (PLA)",
+                    "short_title": "PLA",
+                    "weight": {
+                        "value": 750,
+                        "unit": "g"
+                    },
+                    "price": {
+                        "value": 33,
+                        "currency": "EUR"
+                    },
+                    "slug": "pla",
+                    "image": [
+                        {
+                            "title": "Ultimaker Pla 3 D Print",
+                            "alt_text": "Ultimaker PLA example print",
+                            "mime_type": "image/png",
+                            "links": {
+                                "self": {
+                                    "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/images/Ultimaker-PLA-3D-print.png",
+                                    "templated": false
+                                }
+                            }
+                        }
+                    ],
+                    "material_colors": [
+                        {
+                            "title": "PLA Blue",
+                            "is_transparent": false,
+                            "rgb_hex_code": "#00387b",
+                            "system_code": "RAL 5002",
+                            "image": [
+                                {
+                                    "title": "Ultimaker Pla Blue",
+                                    "mime_type": "image/png",
+                                    "links": {
+                                        "self": {
+                                            "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/images/Ultimaker-PLA-Blue.png",
+                                            "templated": false
+                                        },
+                                        "landscape_desktop": [
+                                            {
+                                                "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/images/_1200x720_crop_center-center_100/Ultimaker-PLA-Blue.png",
+                                                "templated": false
+                                            }
+                                        ],
+                                        "landscape_mobile": [
+                                            {
+                                                "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/images/_600x360_crop_center-center_100/Ultimaker-PLA-Blue.png",
+                                                "templated": false
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "PLA Transparent",
+                            "is_transparent": true,
+                            "rgb_hex_code": "#000000",
+                            "image": [
+                                {
+                                    "title": "Ultimaker Pla Transparent",
+                                    "mime_type": "image/png",
+                                    "links": {
+                                        "self": {
+                                            "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/images/Ultimaker-PLA-Transparent.png",
+                                            "templated": false
+                                        },
+                                        "landscape_desktop": [
+                                            {
+                                                "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/images/_1200x720_crop_center-center_100/Ultimaker-PLA-Transparent.png",
+                                                "templated": false
+                                            }
+                                        ],
+                                        "landscape_mobile": [
+                                            {
+                                                "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/images/_600x360_crop_center-center_100/Ultimaker-PLA-Transparent.png",
+                                                "templated": false
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "documents": [
+                        {
+                            "title": "Sds Pc V3 004",
+                            "links": {
+                                "self": {
+                                    "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/resources/SDS-PC-v3.004.pdf",
+                                    "templated": false
+                                }
+                            }
+                        },
+                        {
+                            "title": "Sds Pla V3 004",
+                            "links": {
+                                "self": {
+                                    "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/resources/SDS-PLA-v3.004.pdf",
+                                    "templated": false
+                                }
+                            }
+                        }
+                    ],
+                    "links": {
+                        "self": {
+                            "href": "#material/000000002b0ad5f50000000078cbb548",
+                            "templated": false
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

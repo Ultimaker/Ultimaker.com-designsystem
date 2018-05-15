@@ -1,0 +1,15 @@
+<form action="" id="search" class="search" @submit.prevent="doSearch">
+    <div role="search">
+        <div class="search__inputholder">
+            <label for="search__input" class="search__label">Search</label>
+            <input id="search__input" type="text" name="search" placeholder="How can we help?" class="search__input"
+                   @blur="onBlur" @keyup.esc="close"
+                   v-model="searchValue"
+                   ref="search__input">
+        </div>
+        <icon-button button-class="icon-button icon-button--large search__button" button-aria-label="Search"
+                     icon-name="search" @click="doSearch"></icon-button>
+        <icon-button button-class="icon-button icon-button--large search__close-button" button-aria-label="Close search"
+                     icon-name="close" @click="close"></icon-button>
+    </div>
+</form>

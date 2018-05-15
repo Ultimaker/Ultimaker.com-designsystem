@@ -1,0 +1,7 @@
+<article class="hero hero--text" v-if="this.contents && contents.length" >
+    <div class="container">
+        <h1 v-if="title && title.length">{{ title }}</h1>
+        <div class="hero__content content--rich" v-html="contents" />
+    </div>
+</article>
+

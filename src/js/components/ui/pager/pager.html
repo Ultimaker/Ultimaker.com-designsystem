@@ -1,0 +1,16 @@
+<nav class="pager" aria-label="pagination">
+    <ul class="pager__list">
+        <li ref="indicator" class="pager__active-page" aria-hidden="true">
+            <icon class="pager__active-page-indicator" icon-name="hexagon-fill"></icon>
+        </li>
+        <li ref="page" v-for="(page, index) in pages" 
+            class="pager__page" >
+            <a class="pager__page-indicator" @click="changeIndex(index)"
+                aria-role="button" 
+                :aria-label="getAriaLabel(index)" 
+                :aria-current='index === activeIndex'>
+                <icon icon-name="hexagon"></icon>
+            </a>
+        </li>
+    </ul>
+</nav>

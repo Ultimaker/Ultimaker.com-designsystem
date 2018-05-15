@@ -1,0 +1,123 @@
+{
+    "title": "a title",
+    "links": [
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        }
+    ],
+    "bottomLinks": [{
+        "title": "bottomlink",
+        "href:": "/another/link"
+    }],
+    "linksOneColumn": [
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        }
+    ],
+    "linksTwoColumns": [
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        }
+    ],
+    "linksThreeColumns": [
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        },
+        {
+            "title": "another link",
+            "href:": "/another/link"
+        },
+        {
+            "title": "a link",
+            "href:": "/a/link"
+        }
+    ]
+}

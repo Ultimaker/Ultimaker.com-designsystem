@@ -1,0 +1,25 @@
+<article class="slider-reveal" v-bind:class="styleModifiers">
+    <section class="container slider-reveal__container">
+        <div class="flexgrid flexgrid--gutter">
+            <div class="flexgrid__cell--xs-6 slider-reveal__grid-cell">
+                <h2 class="slider-reveal__title"> {{ title }}</h2>
+                <p v-if="!isMobile" class="slider-reveal__body" v-for="content in contents">{{ content }}</p>
+                <content-link v-if="!isMobile && hasLink" v-bind="link" class="link--icon link--large">{{ link.text }}</content-link>
+            </div>
+            <div class="flexgrid__cell--xs-6 slider-reveal__grid-cell">
+                <div ref="image-wrapper" class="slider-reveal__image-wrapper">
+                    <div class="slider-reveal__image-aspect">
+                        <div class="slider-reveal__mask"
+                            ref="image-mask"
+                            v-for="image in imageSlider.images"
+                        >
+                            <responsive-picture v-bind="image" img-class="slider-reveal__image"></responsive-picture>
+                        </div>
+                    </div>
+                </div>
+                <p v-if="isMobile" class="slider-reveal__body" v-for="content in contents">{{ content }}</p>
+                <content-link v-if="isMobile && hasLink" v-bind="link" class="link--icon link--large">{{ link.text }}</content-link>
+            </div>
+        </div>
+    </section>
+</article>

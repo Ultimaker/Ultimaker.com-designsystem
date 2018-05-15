@@ -1,0 +1,64 @@
+<article class="hero hero--products">
+    <section class="container hero__container">
+        <div class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row">
+
+            <div class="flexgrid__cell--xs-6">
+                <div class="hero__description">
+                    <!--Intro-->
+                    <h1>{{ page.title }}</h1>
+                    <p class="copy--intro">{{ description }}</p>
+                    <!--End intro-->
+
+                    <!--Price table-->
+                    <div class="price-table hero__price-table" v-if="links.materials">
+                        <ul class="price-table__list" role="tablist">
+                            <li class="price-table__item" v-for="material in materials" role="tab">
+                                <icon icon-name="material" class="price-table__icon"></icon>
+                                <span class="price-table__info">
+                                    <small class="price-table__tagline">
+                                        {{ material['short_title'] }},
+                                        {{ material.weight.value }}{{ material.weight.unit }}
+                                        from
+                                    </small>
+                                    <currency :currency-type="material.price.currency" :amount="material.price.value" :decimals="0"></currency>
+                                </span>
+                            </li>
+                        </ul>
+                        <small class="price-table__disclaimer"><page-label name="excludingVat" /></small>
+                    </div>
+                    <!--End price table-->
+
+                    <!--Button-->
+                    <a href="" class="button button--primary" v-if="materials && materials.length"><page-label name="buyCta" /> {{ materials[0].short_title }}</a>
+                    <!--End button-->
+
+                    <!--Link list icons-->
+                    <ul class="link-list link-list--icon hero__link-list">
+                        <template v-if="documents">
+                            <li class="link-list__item" v-for="link in this.link">
+                                <content-link :href="link.uri" icon="info">{{ link.title }}</content-link>
+                            </li>
+                        </template>
+                        <template v-if="this.documents">
+                            <li class="link-list__item" v-for="document in documents" v-if="document.links">
+                                <content-link :href="document.links.self.href" icon="download"><page-label name="download" /> {{ document.title }}</content-link>
+                            </li>
+                        </template>
+                    </ul>
+                    <!--End link list-->
+                </div>
+            </div>
+
+            <!--Image -->
+            <div class="flexgrid__cell--xs-6">
+                <div class="hero__image--product">
+                    <template v-if="this.image && this.image.length">
+                        <cms-image :image="image[0]" :orientation="'square'"></cms-image>
+                    </template>
+                </div>
+            </div>
+            <!--End image-->
+
+        </div>
+    </section>
+</article>

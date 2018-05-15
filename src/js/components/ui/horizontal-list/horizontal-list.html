@@ -1,0 +1,11 @@
+<section v-bind:class="styleModifier">
+    <strong class="caption-list__headline">
+        {{ label }}
+    </strong>
+    <ul class="caption-list">
+        <li class="caption-list__list-item" v-for="item in listItems">
+            {{ item.additionalContent }}
+            <a :href="item.url">{{ item.text }}</a>
+        </li>
+    </ul>
+</section>

@@ -1,5 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
+const merge = require("webpack-merge");
+const projectConfig = require('../webpack.config');
+
 
 module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     defaultConfig.module.rules.push({
@@ -8,21 +11,6 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
         include: [path.resolve(__dirname, '../src/js')],
         enforce: 'pre',
     });
-
-    defaultConfig.module.rules = defaultConfig.module.rules.concat([
-        {
-            test: /\.(png|jpg|gif|ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
-            loader: 'file-loader?name=[path][name].[ext]'
-        },
-        {
-            test: /\.(sass|scss)$/,
-            use: [
-                { loader: "style-loader" }, 
-                { loader: "css-loader", options: { sourceMap: true } }, 
-                { loader: "sass-loader", options: { sourceMap: true } }
-            ]
-        }
-    ]);
 
     defaultConfig.plugins.push(
         new webpack.optimize.CommonsChunkPlugin({
@@ -35,5 +23,9 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
         })
     );
 
-    return defaultConfig;
+    const config = merge(defaultConfig, projectConfig);
+
+    console.log(require('util').inspect(config, false, null, true));
+
+    return config;
 };

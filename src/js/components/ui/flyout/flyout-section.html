@@ -1,0 +1,41 @@
+<li class="flyout__section" :class="sectionClass">
+    <strong class="flyout__title" :id="itemId">{{ title }}</strong>
+    <ul class="flyout__list"
+        :aria-labelledby="itemId"
+        :aria-haspopup="links.length > maxVisible"
+        :aria-expanded="isExpanded"
+        v-if="isCompact">
+
+        <template v-for="(link, index) in links">
+            <li class="flyout__list-item"  v-if="index <= maxVisible - 1">
+                <content-link @click.native="$emit('close')" :href="link.href" class="flyout__link">{{ link.title }}</content-link>
+            </li>
+            <li class="flyout__list-item" v-else>
+                <template v-if="isExpanded">
+                    <content-link @click.native="$emit('close')" :href="link.href" class="flyout__link">{{ link.title }}</content-link>
+                </template>
+            </li>
+        </template>
+
+        <li class="flyout__list-item" v-if="links.length > maxVisible">
+            <content-toggle class="flyout__toggle"
+                            aria-hidden="true"
+                            @toggle="isExpanded = !isExpanded">
+            </content-toggle>
+        </li>
+    </ul>
+
+    <ul class="flyout__list"
+        :aria-labelledby="itemId"
+        v-else-if="!isCompact">
+        <template v-for="link in links">
+            <li class="flyout__list-item">
+                <content-link @click.native="$emit('close')" :href="link.href" class="flyout__link">{{ link.title }}</content-link>
+            </li>
+        </template>
+    </ul>
+
+    <template v-if="bottomLinks" v-for="bottomLink in bottomLinks">
+        <content-link @click.native="$emit('close')" :href="bottomLink.href" class="flyout__link--cta-mini" >{{ bottomLink.title }}</content-link>
+    </template>
+</li>

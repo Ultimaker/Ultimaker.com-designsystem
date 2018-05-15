@@ -1,0 +1,12 @@
+<router-link :to="href" class="link" :class="classObject" v-if="href.match && href.match(/^\//i)">
+    <icon v-if="this.icon" :icon-name="icon"></icon>
+    <span class="link__underline">
+        <slot></slot>
+    </span>
+</router-link>
+<a :href="href" :to="href" class="link" :class="classObject" v-else>
+    <icon v-if="this.icon" :icon-name="icon"></icon>
+    <span class="link__underline">
+        <slot></slot>
+    </span>
+</a>

@@ -1,0 +1,8 @@
+<article class="ecosystem">
+    <section class="container">
+      <h2 class="ecosystem__title" v-if="title">{{ title }}</h2>
+      <div class="ecosystem__items">
+          <card v-for="(item, index) in items" :key="index" :card="item" :block="'ecosystem'"></card>
+      </div>
+    </section>
+</article>

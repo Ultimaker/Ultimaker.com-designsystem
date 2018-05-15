@@ -1,0 +1,11 @@
+<div class="brand-card">
+    <div class="brand-card__image-wrapper">
+        <responsive-picture v-bind="image"></responsive-picture>
+    </div>
+    <template v-if="body && type === 'text'">
+        <p class="brand-card__quote">{{body}}</p>
+    </template>
+    <template v-else-if="body">
+        <q class="brand-card__quote">{{body}}</q>
+    </template>
+</div>

@@ -1,0 +1,38 @@
+{
+    "properties": {
+        "description": "bla bla",
+        "links": {
+            "materials": {
+                "title": "Polylactic Acid",
+                "short_title": "PLA",
+                "weight": {
+                    "value": 750,
+                    "unit": "g"
+                },
+                "price": {
+                    "value": 33,
+                    "currency": "EUR"
+                },
+                "slug": "pp"
+            }
+        },
+        "documents": [
+            {
+                "title": "Sds Pla V3 004",
+                "links": {
+                    "self": {
+                        "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/resources/SDS-PLA-v3.004.pdf"
+                    }
+                }
+            },
+            {
+                "title": "Tds Pla V3 011",
+                "links": {
+                    "self": {
+                        "href": "http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/resources/TDS-PLA-v3.011.pdf"
+                    }
+                }
+            }
+        ]
+    }
+}

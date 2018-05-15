@@ -1,0 +1,15 @@
+<article class="card" :class="classObject">
+    <div class="card__visual">
+        <template v-if="card.image && card.image.length">
+          <div class="card__image">
+            <cms-image class="img--responsive" :image="card.image[0]" :orientation="'square'"></cms-image>
+          </div>
+        </template>
+        <icon v-if="card.icon" :icon-name="card.icon.iconName" class="card__icon"></icon>
+    </div>
+    <div class="card__content">
+        <h3 class="card__headline">{{ card.title }}</h3>
+        <p class="card__description">{{ card.description }}</p>
+        <content-link  v-if="card.contentLink" :block="'card'" :href="card.contentLink.href">{{ card.contentLink.text }}</content-link>
+    </div>
+</article>

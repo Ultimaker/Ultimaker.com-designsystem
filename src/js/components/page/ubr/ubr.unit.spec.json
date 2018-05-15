@@ -1,0 +1,17 @@
+{
+    "properties": {
+        "title": "Reasons to choose  Ultimaker PLA",
+        "description": "PLA is the preferred choice for primary and secondary schools because it’s safe and easy to print with.\r\n\r\n",
+        "reasons": [
+            "Good tensile strength",
+            "Good surface quality",
+            "Easy to work with at high print speeds",
+            "User-friendly for both home and office environments",
+            "Allows the creation of high-resolution parts",
+            "Ideal for models and prototypes that require aesthetic detail",
+            "Great for lost casting methods to create metal parts",
+            "A wide range of color options available",
+            "Prints in dual extrusion with PVA on Ultimaker 3"
+        ]
+    }
+}

@@ -1,0 +1,83 @@
+<div class="auto-complete"
+     role="combobox"
+     aria-haspopup="listbox"
+
+     v-if="hasItems"
+
+     :class="{required: required}"
+     :aria-owns="listId"
+     :aria-expanded="isOpen"
+
+     @keydown.up.prevent="selectPrevious"
+     @keydown.shift.tab.prevent="selectPrevious"
+     @keydown.down.prevent="selectCurrent"
+     @keydown.tab.exact.prevent="selectCurrent">
+
+
+    <input ref="autoComplete"
+           class="auto-complete__input"
+           type="text"
+           autofocus="true"
+           autocomplete="off"
+           aria-autocomplete="list"
+
+           :id="inputId"
+           :aria-controls="listId"
+           :placeholder="placeholder"
+           :required="required"
+
+           v-model.trim="input"
+
+           @keyup.esc="resetInput"
+           @keydown="forceOpen = true"
+           @keydown.enter.prevent="selectItemByInput">
+
+    <div :id="listId" class="auto-complete__dropdown" role="listbox"
+         v-if="isOpen"
+         @keyup.esc="closeList"
+         @keydown.backspace.prevent
+         @keydown.down.prevent="selectNext"
+         @keydown.tab.exact.prevent="selectNext">
+
+        <template v-if="storedItems && storedItems.length">
+            <h4 class="auto-complete__label" id="storedLabel">
+                {{ storedLabel }}
+            </h4>
+            <ul class="auto-complete__list" aria-labelledby="storedLabel">
+                <li class="auto-complete__list-item" role="option" tabindex="0"
+                    v-for="item in storedItems"
+                    @click="selectItem(item)"
+                    @keyup.enter.prevent="selectItem(item)"
+                    @keyup.esc="closeList">
+                    {{ item[titleField] }}
+                </li>
+            </ul>
+        </template>
+
+        <template v-if="suggestedItems && suggestedItems.length">
+            <h4 class="auto-complete__label" id="suggestedLabel">
+                {{ suggestionsLabel }}
+            </h4>
+            <ul class="auto-complete__list" aria-labelledby="suggestedLabel">
+                <template v-if="matchValue">
+                    <li class="auto-complete__list-item" role="option" tabindex="0"
+                        v-for="item in suggestedItems"
+                        @click="selectItem(item)"
+                        @keyup.enter.prevent="selectItem(item)">
+                        {{ item[titleField] }}
+                    </li>
+                </template>
+                <template v-else>
+                    <li class="auto-complete__list-item" role="option" tabindex="0"
+                        v-for="item in suggestedItems"
+                        v-html="highlightString(item[titleField])"
+                        @click="selectItem(item)"
+                        @keyup.enter.prevent="selectItem(item)"
+                        >
+                    </li>
+                </template>
+            </ul>
+        </template>
+    </div>
+
+</div>

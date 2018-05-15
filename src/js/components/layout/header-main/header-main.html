@@ -1,0 +1,64 @@
+<header class="header" :class="headerClasses" role="banner" v-size-emitter="'header'">
+    <div class="header__top" :class="{'header--mobile-inverted': mainNavOpen}">
+        <router-link to="/" class="home-link" aria-label="Ultimaker homepage">
+            <icon class="home-link__logo" icon-name="logo-ultimaker"></icon>
+        </router-link>
+
+        <transition name="menu-switch" mode="out-in">
+            <nav key="small-menu" class="main-nav main-nav--small" :class="{'main-nav--open': mainNavOpen && showCompactMenu}"
+                 aria-label="site" v-if="showCompactMenu">
+                <transition name="menu-open">
+                    <ul class="main-nav__list" role="presentation" v-if="mainNavOpen">
+                        <template v-for="item in mainNav" v-if="mainNav !== null">
+                            <main-nav-item :is-compact="true" v-bind="item"></main-nav-item>
+                        </template>
+                    </ul>
+                </transition>
+            </nav>
+        </transition>
+
+        <nav key="large-menu" class="main-nav main-nav--large" aria-label="site" v-if="!showCompactMenu">
+            <ul class="main-nav__list" role="presentation">
+                <template v-for="(item, index) in mainNav" v-if="mainNav !== null">
+                    <main-nav-item @tab="focusNextMainNavItem(index)"
+                                   @shifttab="focusPrevMainNavItem(index)"
+                                   v-bind="item">
+                    </main-nav-item>
+                </template>
+            </ul>
+        </nav>
+
+
+        <nav class="sys-nav" aria-label="quick access">
+            <ul class="sys-nav__list" role="presentation">
+                <li class="sys-nav__item">
+                    <a class="sys-nav__link" data-popup="/shop/" href="/shop/">
+                        <icon class="sys-nav__icon" icon-name="store"></icon>
+                        <span class="sys-nav__label sys-nav__label--hidden-sm">Order now</span>
+                    </a>
+                </li>
+                <li class="sys-nav__item">
+                    <a class="sys-nav__link"
+                       @click="openSearch"
+                       @keyup.enter="openSearch"
+                       role="button" tabindex="0">
+                        <icon class="sys-nav__icon" icon-name="search"></icon>
+                        <span class="sys-nav__label sys-nav__label--hidden-sm">Search</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <transition name="show-assist">
+            <nav-assist class="main-nav__nav-assist" :open-state="mainNavOpen"
+                        @toggle="navAssistToggle" v-show="showCompactMenu"></nav-assist>
+        </transition>
+
+        <transition name="search" @after-enter="handleFocus" @leave="handleFocus">
+            <search-bar class="header__search" ref="search" :open-state="searchOpen" @close="closeSearch"
+                        v-if="searchOpen"></search-bar>
+        </transition>
+    </div>
+
+    <sub-nav></sub-nav>
+</header>

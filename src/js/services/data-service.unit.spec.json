@@ -1,0 +1,32 @@
+{
+    "headers": {
+        "Content-Type": "applications/hal+json"
+    },
+    "serviceDiscoveryResponse": {
+        "href": "/api/some/api"
+    },
+    "dataServiceResponse": {
+        "_links": {
+            "self": {
+                "href": "/api/some/api"
+            }
+        },
+        "testObject": true
+    },
+    "serviceDiscoveryTemplatedResponse": {
+        "href": "/api/some/api/{param}",
+        "templated": true
+    },
+    "dataServiceTemplatedResponse": {
+        "_links": {
+            "self": {
+                "href": "/api/some/api"
+            }
+        },
+        "_embedded": {
+            "testObject": {
+                "testProperty": true
+            }
+        }
+    }
+}

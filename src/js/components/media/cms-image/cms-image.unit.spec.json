@@ -1,0 +1,31 @@
+{
+    "image": {
+        "title":"Ultimaker Pla 3 D Print",
+        "alt_text":"Ultimaker PLA example print",
+        "mime_type":"image/png",
+        "links":{
+            "self":{
+                "href":"http://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/images/Ultimaker-PLA-3D-print.png",
+                "templated":false
+            },
+            "square_mobile":[
+                {
+                    "href":"http://mobile/image",
+                    "templated":false
+                }
+            ],
+            "square_desktop":[
+                {
+                    "href":"http://desktop/image",
+                    "templated":false
+                }
+            ],
+            "portrait_mobile":[
+                {
+                    "href":"http://mobile/image",
+                    "templated":false
+                }
+            ]
+        }
+    }
+}

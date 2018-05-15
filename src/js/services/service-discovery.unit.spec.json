@@ -1,0 +1,16 @@
+{
+    "headers": {
+        "Content-Type": "applications/hal+json"
+    },
+    "globalResponse": {
+        "_links": {
+            "mockedService": {
+                "href": "/api/navigation/minor"
+            },
+            "mockedTemplatedService": {
+                "href": "/api/pages/{templated-param}",
+                "templated": true
+            }
+        }
+    }
+}
