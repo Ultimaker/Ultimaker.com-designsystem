@@ -1,28 +1,21 @@
 import { storiesOf } from '@storybook/vue';
-import {
-    withKnobs,
-    text,
-    number,
-    boolean,
-    array,
-    select,
-    color,
-    date,
-    button,
-} from '@storybook/addon-knobs/vue';
+import { withKnobs, text, object} from '@storybook/addon-knobs/vue';
 
 import * as KnobVue from '@storybook/addon-knobs/vue';
 
 storiesOf('atoms|button', module)
     .addDecorator(withKnobs)
     .add('Regular', () => {
-        const icon = text('Icon', null);
-        const objProperty = text('objProperty', 'test'),
-            obj = {
-                objProperty
-            };
+        const icon = text('Icon', 'null');
+        const data = { lala: 'hihi' };
+        const objProperty = object('data', data);
 
         return {
-            template: `<btn icon="${ icon }" obj="${ JSON.toString(obj) }">slot</btn>`
+            data: () => {
+                return {
+                    data: data
+                }
+            },
+            template: `<btn icon="${ icon }" :obj="data">slot</btn>`
         }
     });

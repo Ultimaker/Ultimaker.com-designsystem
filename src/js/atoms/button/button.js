@@ -11,7 +11,5 @@ export default Vue.component('btn', {
             type: Object
         }
     },
-    beforeMount() {
-        console.log(this.obj);
-    }
+    beforeMount() {}
 })
