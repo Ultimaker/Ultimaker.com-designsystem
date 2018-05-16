@@ -13,6 +13,12 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     });
 
     defaultConfig.plugins.push(
+        new webpack.DefinePlugin({
+            'process.BROWSER': true,
+            'process.env': {
+                NODE_ENV: '"production"'
+            }
+        }),
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
             chunks: ['preview'],

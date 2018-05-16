@@ -1,43 +1,12 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs, text, object} from '@storybook/addon-knobs/vue';
+import data from './brands.data';
 
 storiesOf('organisms|brands', module)
     .addDecorator(withKnobs)
     .add('Brands', () => {
-        const title = text('Title', 'Lorem ipsum dolor sit amet');
-        const brands = [
-                {                    
-                    image: {
-                        alt: "Lorem Ipsum",
-                        styleModifier : "brand-card__image",
-                        mobileWidth: {
-                            url: "http://placekitten.com/240/240"
-                        }
-                    },
-                    body : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quis vitae, esse sunt libero inventore."
-                },
-                {
-                    image: {
-                        alt: "Lorem Ipsum",
-                        styleModifier : "brand-card__image",
-                        mobileWidth: {
-                            url: "http://placekitten.com/240/240"
-                        }
-                    },
-                    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ullam eligendi voluptatum iste ducimus illum."
-                },
-                {
-                    image: {
-                        alt: "Lorem Ipsum",
-                        styleModifier: "brand-card__image",
-                        mobileWidth: {
-                            url: "http://placekitten.com/240/240"
-                        }
-                    },
-                    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis, in illum aut atque unde."
-                }
-            ];
-        const objProperty = object('brands', brands);
+        const title = text('Title', data.title);
+        const brands = object('Brands', data.items);
 
         return {
             data: () => ({

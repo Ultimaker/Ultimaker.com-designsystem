@@ -78,6 +78,7 @@ if (process.env.NODE_ENV === 'production') {
     // http://vue-loader.vuejs.org/en/workflow/production.html
     webpackConfig.plugins = (module.exports.plugins || []).concat([
         new webpack.DefinePlugin({
+            'process.BROWSER': true,
             'process.env': {
                 NODE_ENV: '"production"'
             }
