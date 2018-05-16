@@ -6,13 +6,7 @@ function resolve(dir) {
     return path.join(__dirname, dir);
 }
 
-module.exports = {
-    entry: './src/js/index.js',
-    output: {
-        path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
-        filename: 'build.js'
-    },
+const webpackConfig = {
     module: {
         rules: [
             {
@@ -80,9 +74,9 @@ module.exports = {
 };
 
 if (process.env.NODE_ENV === 'production') {
-    module.exports.devtool = '#source-map';
+    webpackConfig.devtool = '#source-map';
     // http://vue-loader.vuejs.org/en/workflow/production.html
-    module.exports.plugins = (module.exports.plugins || []).concat([
+    webpackConfig.plugins = (module.exports.plugins || []).concat([
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: '"production"'
@@ -103,3 +97,5 @@ if (process.env.NODE_ENV === 'production') {
         }),
     ]);
 }
+ 
+module.exports = webpackConfig;
