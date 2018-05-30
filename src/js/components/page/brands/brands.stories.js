@@ -6,7 +6,7 @@ storiesOf('organisms|brands', module)
     .addDecorator(withKnobs)
     .add('Brands', () => {
         const title = text('Title', data.title);
-        const brands = object('Brands', data.items);
+        const brands = object('Brands', data.brands);
 
         return {
             data: () => ({

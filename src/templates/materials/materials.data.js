@@ -1,6 +1,6 @@
 export default {
-    'title' : 'Lorem ipsum dolor sit amet',
-    "brands" : [
+    'title' : 'Material title',
+    "items" : [
         {                    
             "image": {
                 "alt": "Lorem Ipsum",
