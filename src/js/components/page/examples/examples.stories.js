@@ -14,11 +14,10 @@ storiesOf('organisms|examples', module)
 			data: () => ({
 				examples: {
 					title,
-					tablist,
 					cards,
-					callToAction
+                    tablist
 				}
 			}),
-			template: `<examples v-bind="examples"></examples>`
+			template: `<examples :title="examples.title" :horizontal-list="examples.tablist" :cards="examples.cards"></examples>`
 		}
 	});
