@@ -1,92 +1,103 @@
 .footer {
     border-top: 1px solid $colorGrayExtraLight;
     width: 100%;
+}
 
-    .container {
-        padding-bottom: $buildingUnit * 2.5;
+.footer__container {
+    @extend .container;
+    padding-bottom: $buildingUnit * 2.5;
+}
+
+.footer__primary {
+    display: flex;
+    flex-direction: column-reverse;
+
+    flex-basis: 100%;
+    min-width: 100%;
+    margin-bottom: $buildingUnit * 5;
+
+    @include min-mobile-xl {
+        margin-bottom: $buildingUnit * 4.25;
+        flex-direction: row;
     }
-
-    .footer__primary {
-        display: flex;
-        flex-direction: column-reverse;
-
-        flex-basis: 100%;
-        min-width: 100%;
-        margin-bottom: $buildingUnit * 5;
-
-        @include min-mobile-xl {
-            margin-bottom: $buildingUnit * 4.25;
-            flex-direction: row;
-        }
-        @include min-tablet {
-        }
-    }
-
-    .footer__branded-logo {
-        @include min-mobile-xl {
-            align-self: flex-start;
-            align-items: flex-start;
-        }
-
-        @include min-desktop {
-            flex-flow: row wrap;
-            align-self: flex-start;
-            align-items: center;
-        }
-    }
-
-    .footer__nav {
-        text-align: left;
-
-        display: flex;
-        width: 100%;
-
-        margin-left: auto;
-        margin-bottom: $buildingUnit * 2.5;
-
-        @include min-mobile-xl {
-            margin-bottom: 0;
-        }
-        @include min-mobile-xl {
-            width: 75%;
-        }
-        @include min-tablet {
-            width: 80%;
-            max-width: 600px;
-        }
-    }
-
-    .footer__secondary {
-        display: flex;
-        flex: 1 0 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        margin-bottom: $buildingUnit * 2.5;
-
-        @include min-mobile-xl {
-            flex-direction: row-reverse;
-            align-items: flex-start;
-            justify-content: space-between;
-            height: $buildingUnit * 3;
-        }
-    }
-
-    .footer__social-nav {
-        margin-bottom: $buildingUnit * 1.5;
-    }
-
-    .footer__tertiary {
-        width: 100%;
-    }
-
-    .footer__legal {
-        text-align: center;
-
-        @include min-mobile-xl {
-            text-align: left;
-        }
+    @include min-tablet {
     }
 }
+
+.footer__branded-logo {
+    @include min-mobile-xl {
+        align-self: flex-start;
+        align-items: flex-start;
+    }
+
+    @include min-desktop {
+        flex-flow: row wrap;
+        align-self: flex-start;
+        align-items: center;
+    }
+}
+
+.footer__nav {
+    text-align: left;
+
+    display: flex;
+    width: 100%;
+
+    margin-left: auto;
+    margin-bottom: $buildingUnit * 2.5;
+
+    @include min-mobile-xl {
+        margin-bottom: 0;
+    }
+    @include min-mobile-xl {
+        width: 75%;
+    }
+    @include min-tablet {
+        width: 80%;
+        max-width: 600px;
+    }
+}
+
+.footer__secondary {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: $buildingUnit * 2.5;
+
+    @include min-mobile-xl {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: $buildingUnit * 3;
+    }
+}
+
+.footer__social-nav {
+    margin-bottom: $buildingUnit * 1.5;
+}
+
+.footer__tertiary {
+    width: 100%;
+}
+
+.footer__legal {
+    text-align: center;
+
+    @include min-mobile-xl {
+        text-align: left;
+    }
+}
+
+.footer__locale-selector {
+    display: flex;
+    flex-direction: row;
+}
+.footer__country-selector {
+    width: 320px;
+    max-width: 100%;
+}
+
 
 //TODO: fix huge gap between footer-nav columns and logo underneath it at 320px device-width

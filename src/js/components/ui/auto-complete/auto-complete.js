@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import _filter from 'lodash/filter';
 import _find from 'lodash/find';
+import ViewportUtil from 'utils/viewport';
 
 export default Vue.component('auto-complete', {
     name: 'auto-complete',
@@ -10,9 +11,11 @@ export default Vue.component('auto-complete', {
     data: () => {
         return {
             input: '',
-            forceOpen: false,
             selectedItem: null,
-            selectedIndex: 0
+            selectedIndex: 0,
+            reversed: false,
+            forceOpen: false,
+            viewportUtil: new ViewportUtil()
         };
     },
     props: {
@@ -23,6 +26,10 @@ export default Vue.component('auto-complete', {
         value: {
             type: Object,
             default: null
+        },
+        defaultOpen: {
+            type: Boolean,
+            default: false
         },
         placeholder: {
             type: String,
@@ -62,6 +69,12 @@ export default Vue.component('auto-complete', {
         }
     },
     computed: {
+        classObject() {
+            return {
+                'required': this.required,
+                'auto-complete--reversed': this.reversed
+            };
+        },
         listId() {
             return `${ this.inputId }__dropdown`;
         },
@@ -111,6 +124,26 @@ export default Vue.component('auto-complete', {
         }
     },
     methods: {
+        init() {
+            this.forceOpen = this.defaultOpen;
+            this.viewportUtil.addScrollHandler(this.calculateDirection);
+            this.viewportUtil.addResizeHandler(this.calculateDirection);
+            if (this.value && this.value[this.titleField]) {
+                this.input = this.value[this.titleField];
+            }
+
+            Vue.nextTick(this.calculateDirection);
+        },
+        calculateDirection() {
+            if (!this.$refs.autoComplete) { return; }
+            const windowTop = this.viewportUtil.scrollY,
+                windowBottom = windowTop + (this.viewportUtil.screenHeight * (2 / 3)),
+                inputBounds = this.$refs.autoComplete.getBoundingClientRect(),
+                inputTop = this.viewportUtil.scrollY + inputBounds.top,
+                inputBottom = inputTop + inputBounds.height;
+
+            this.reversed = windowBottom < inputBottom;
+        },
         highlightString(data) {
             const stringToReplace = new RegExp(this.input, 'i'),
                 matches = data.match(stringToReplace);
@@ -163,7 +196,7 @@ export default Vue.component('auto-complete', {
 
             if (!listItems.length) {
                 if (!this.input.length) {
-                    this.$emit('fauxBlurInput');
+                    this.$emit('changeFocus');
                 }
 
                 return;
@@ -218,8 +251,6 @@ export default Vue.component('auto-complete', {
         }
     },
     beforeMount() {
-        if (this.value && this.value[this.titleField]) {
-            this.input = this.value[this.titleField];
-        }
+        this.init();
     }
 });

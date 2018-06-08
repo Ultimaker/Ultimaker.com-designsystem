@@ -19,7 +19,7 @@
     &__dropdown,
     &__list,
     &__list-item,
-    &_label {
+    &___label {
         @extend %reset-list;
         user-select: none;
     }

@@ -1,0 +1,18 @@
+<div class="country-selector" v-if="initialized">
+    <auto-complete class="country-selector__auto-complete auto-complete--small" ref="autocomplete"
+        :placeholder="placeholder"
+        title-field="name" value-field="code"
+        v-model="country"
+        @input="countryChanged"
+        @close="close"
+        @changeFocus="focusClose"
+        :items="countries.country"
+        :stored-items="detectedCountries"
+        default-open>
+    </auto-complete>
+    <!-- TODO: refactor out settings-selector__edit-button (see: https://jira.ultimaker.com:8443/browse/UWEB-4969)-->
+    <icon-button icon-name="close" button-aria-label="Cancel" ref="closeCountryPanel"
+        button-class="country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed"
+        @click="close">
+    </icon-button>
+</div>

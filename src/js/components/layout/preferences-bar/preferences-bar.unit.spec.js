@@ -8,8 +8,8 @@ import halParser from 'utils/hal-parser';
 describe('components', () => {
     describe('ui', () => {
         describe('preferences-bar', () => {
-            const preferenceBarContent = require('../../../../../server/mock/data/globals/preferences-bar.json'),
-                countriesContent = halParser(require('../../../../../server/mock/data/globals/countries.json'));
+            const preferenceBarContent = require('@root/server/mock/data/globals/preferences-bar.json'),
+                countriesContent = halParser(require('@root/server/mock/data/globals/countries.json'));
 
             const mount = build(PreferencesBar, {
                 props: {
@@ -30,43 +30,26 @@ describe('components', () => {
             });
 
             it('should initialize and set defaults', (done) => {
-                let countriesFetched = 0,
-                    countryFetched = 0;
-
                 const vm = mount({
                     props: {
                         delay: 0,
                         enableCountry: true
                     },
                     store: {
-                        actions: {
-                            FETCH_COUNTRIES: () => {
-                                countriesFetched++;
-                            },
-                            FETCH_COUNTRY: () => {
-                                countryFetched++;
-                            }
-                        },
                         getters: {
                             $settings: () => ({
                                 consentLevel: '1111',
                                 consentLevelSet: false
-                            }),
-                            countries: () => countriesContent,
-                            detectedCountry: () => 'NL'
+                            })
                         }
                     }
                 });
 
                 vm.show().then(() => {
-                    expect(countriesFetched).toEqual(1);
-                    expect(countryFetched).toEqual(1);
-                    expect(vm.country.code).toEqual('NL');
                     expect(vm.visible).toBeTruthy();
 
                     vm.init().then(() => {
-                        expect(countriesFetched).toEqual(1);
-                        expect(countryFetched).toEqual(1);
+                        expect(DataService.getData).toHaveBeenCalled();
                         vm.$destroy();
                         done();
                     });
@@ -178,10 +161,25 @@ describe('components', () => {
                         getters: {
                             $settings: () => ({
                                 consentLevel: '1111',
-                                consentLevelSet: false
+                                consentLevelSet: false,
+                                country: {
+                                    'name': 'Germany',
+                                    'code': 'DE',
+                                    'currency': {
+                                        'code': 'EUR',
+                                        'symbol': '\u20ac'
+                                    }
+                                }
                             }),
                             countries: () => countriesContent,
-                            detectedCountry: () => 'NL'
+                            detectedCountry: () => ({
+                                'name': 'Netherlands',
+                                'code': 'NL',
+                                'currency': {
+                                    'code': 'EUR',
+                                    'symbol': '\u20ac'
+                                }
+                            })
                         },
                         actions: {
                             PUSH_SETTING: (state, {key, value}) => {
@@ -200,8 +198,7 @@ describe('components', () => {
                     }
                 });
 
-                vm.setDetectedCountry();
-                expect(vm.country.code).toEqual(vm.detectedCountry);
+                expect(vm.country.code).toEqual('DE');
                 vm.validateAndSubmit();
                 expect(country.code).toEqual(vm.country.code);
                 expect(consentLevelUpdated && constentLevelSetUpdated).toBeTruthy();
@@ -237,25 +234,25 @@ describe('components', () => {
             it('should focus on the correct element when the edit country panel is toggled', (done) => {
                 const vm = mount({});
 
-                vm.$refs.editCountry = jasmine.createSpyObj('countrySelector', [focus]);
-                vm.$refs.countrySelector = jasmine.createSpyObj('countrySelector', [focus]);
+                vm.$refs.editCountry = jasmine.createSpyObj('editCountry', {
+                    focus: jasmine.createSpy()
+                });
+                vm.$refs.countrySelector = jasmine.createSpyObj('countrySelector', {
+                    focus: jasmine.createSpy()
+                });
 
                 vm.editCountry();
-                // expect(vm.$refs.countrySelector.focus).toHaveBeenCalled();
                 expect(vm.countryPanelOpen).toBeTruthy();
 
-                vm.country = null;
-                vm.countryChanged(null);
-                expect(vm.countryPanelOpen).toBeTruthy();
+                vm.closeEditCountry();
 
-                vm.countryChanged({});
-
-                setTimeout(() => {
-                    // Remark: see comment @ preferences-bar:countryChanged
+                Vue.nextTick(() => {
                     expect(vm.countryPanelOpen).toBeFalsy();
+                    expect(vm.$refs.editCountry.focus).toHaveBeenCalled();
+                    expect(vm.$refs.countrySelector.focus).toHaveBeenCalled();
                     vm.$destroy();
                     done();
-                }, 150);
+                });
             });
         });
     });

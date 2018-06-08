@@ -10,36 +10,31 @@
                 <p id="preferences-bar__copy" v-html="content.attributes.localeIntro"></p>
 
                 <div class="settings">
-                    <div class="settings-selector settings-selector--country" v-if="enableCountry && countries !== null">
+                    <div class="settings-selector settings-selector--country" v-if="enableCountry">
                         <div class="form-group">
                             <label class="settings-selector__label" for="country-selector-01">Your country</label>
                             <div class="selector-group" v-show="!countryPanelOpen" :aria-hidden="countryPanelOpen">
                                 <icon-button ref="editCountry" icon-name="edit"
-                                             :button-aria-label="'Change your country, currently: ' + this.country ? this.country.name : 'your country'"
+                                             :button-aria-label="'Change your country, currently: ' + this.countryValid ? this.country.name : 'your country'"
                                              button-class="icon-button settings-selector__edit-button icon-button--small icon-button--reversed"
                                              @click="editCountry">
                                     <!-- TODO: aria button label should come from CMS-->
                                     <!-- TODO: button label should come from CMS-->
-                                    <span class="icon-button__label" v-if="this.country && this.country.name">{{ this.country.name }}</span>
-                                    <span class="icon-button__label" v-else>Please select your country</span>
+                                    <template v-if="this.countryValid">{{ this.country.name }}</template>
+                                    <template v-else>Please select your country</template>
                                 </icon-button>
                             </div>
                             <div class="selector-group" v-show="countryPanelOpen" aria-hidden="!countryPanelOpen">
-                                <!-- TODO: placeholder should come from CMS-->
-                                <auto-complete input-id="country-selector-01" class="auto-complete--small" ref="countrySelector"
-                                               placeholder="Type country code or name"
-                                               title-field="name" value-field="code"
-                                               v-model="country"
-                                               @input="countryChanged"
-                                               @close="closeEditCountry"
-                                               @fauxBlurInput="focusCloseCountryPanel"
-                                               :items="countries.country"
-                                               :stored-items="detectedCountries">
-                                </auto-complete>
-                                <icon-button icon-name="close" button-aria-label="Cancel" ref="closeCountryPanel"
-                                             button-class="icon-button settings-selector__edit-button icon-button--small icon-button--reversed"
-                                             @click="closeEditCountry">
-                                </icon-button>
+                                <!-- TODO:
+                                    - placeholder should come from CMS
+                                    - implement input id
+                                -->
+                                <country-selector ref="countrySelector"
+                                    placeholder="Type country code or name"
+                                    @close="closeEditCountry"
+                                    @input="closeEditCountry"
+                                    v-model="country">
+                                </country-selector>
                             </div>
                         </div>
                     </div>
@@ -57,7 +52,7 @@
                                                  :button-aria-label="'Change your privacy settings, currently: ' + experienceLabel"
                                                  button-class="icon-button settings-selector__edit-button icon-button--small icon-button--reversed"
                                                  @click="editCookies">
-                                        <span class="icon-button__label ">{{ experienceLabel }}</span>
+                                        {{ experienceLabel }}
                                     </icon-button>
                                 </div>
                             </template>
@@ -66,7 +61,7 @@
                                     <icon-button icon-name="close" button-aria-label="close"
                                                  button-class="icon-button settings-selector__edit-button icon-button--small icon-button--reversed"
                                                  @click="cancelEditCookies">
-                                        <span class="icon-button__label ">{{ experienceLabel }}</span>
+                                        {{ experienceLabel }}
                                     </icon-button>
                                 </div>
                             </template>
@@ -94,7 +89,7 @@
                             </div>
 
                             <div class="setting">
-                                <input type="checkbox" id="personalization" name="personalization"
+                                <input ref="firstEditableCookieCheckbox" type="checkbox" id="personalization" name="personalization"
                                        v-model="personalization" class="setting__checkbox"/>
                                 <label for="personalization" class="checkbox__label">
                                     {{ content.attributes.personalCookieLabel }}

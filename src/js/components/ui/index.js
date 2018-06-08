@@ -6,6 +6,7 @@ import './content-link/content-link';
 import './content-link-list/content-link-list';
 import './content-toggle/content-toggle';
 import './currency/currency';
+import './country-selector/country-selector';
 import './faux-vertical-scroll/faux-vertical-scroll';
 import './flyout/flyout';
 import './flyout/flyout-section';

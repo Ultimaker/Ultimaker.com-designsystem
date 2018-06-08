@@ -1,10 +1,9 @@
 <div class="auto-complete"
+    :class="classObject"
      role="combobox"
      aria-haspopup="listbox"
 
      v-if="hasItems"
-
-     :class="{required: required}"
      :aria-owns="listId"
      :aria-expanded="isOpen"
 
@@ -27,6 +26,7 @@
            :required="required"
 
            v-model.trim="input"
+           @input="input = $event.target.value"
 
            @keyup.esc="resetInput"
            @keydown="forceOpen = true"

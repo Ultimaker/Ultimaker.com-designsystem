@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import {mapGetters} from 'vuex';
-import _find from 'lodash/find';
 import DataService from 'services/data-service';
 import Logger from 'utils/logger';
 import PublicEventService from 'services/public-event-service';
@@ -27,13 +26,13 @@ export default Vue.component('preferences-bar', {
         initializing: null,
         countryPanelOpen: false,
         cookiePanelOpen: false,
-        country: null,
+        country: {},
         content: {},
         consentLevel: null,
         viewport: new ViewportUtil()
     }),
     computed: {
-        ...mapGetters(['$settings', 'countries', 'detectedCountry']),
+        ...mapGetters(['$settings']),
         bitmask() {
             return this.consentLevel.level();
         },
@@ -73,20 +72,8 @@ export default Vue.component('preferences-bar', {
                 'preferences-bar--visible': this.visible
             };
         },
-        detectedCountries() {
-            const detectedCountries = [];
-
-            try {
-                const detectedCountryByIp = _find(this.countries.country, {'code': this.detectedCountry});
-
-                if (detectedCountryByIp) {
-                    detectedCountries.push(detectedCountryByIp);
-                }
-            } catch (ex) {
-                Logger.logException('PreferencesBar', ex, Logger.Levels.info);
-            }
-
-            return detectedCountries;
+        countryValid() {
+            return this.country && this.country !== null && this.country.hasOwnProperty('name');
         }
     },
     methods: {
@@ -99,9 +86,9 @@ export default Vue.component('preferences-bar', {
             this.visible = false;
         },
         validateAndSubmit() {
-            if (this.enableCountry && this.countries !== null) {
+            if (this.enableCountry) {
                 this.closeEditCountry();
-                if (!this.country) {
+                if (!this.countryValid) {
                     if (this.$refs.editCountry) {
                         this.$refs.editCountry.$el.classList.add('validation', 'validation--required');
                     }
@@ -132,18 +119,6 @@ export default Vue.component('preferences-bar', {
                 }
             });
         },
-        countryChanged(country) {
-            if (country !== null) {
-                setTimeout(() => {
-                    /*
-                     This works around an issue where the keydown.enter event in the autocomplete -> input is also
-                     applied on the editCountry button.  This causes to close and immediately reopen the edit country
-                     panel. Suspecting a virtual dom issue. Should recheck with newer version of Vue.
-                      */
-                    this.closeEditCountry();
-                }, 100);
-            }
-        },
         closeEditCountry() {
             this.countryPanelOpen = false;
             Vue.nextTick(() => {
@@ -154,12 +129,9 @@ export default Vue.component('preferences-bar', {
         },
         editCookies() {
             this.cookiePanelOpen = true;
-
             Vue.nextTick(() => {
-                const checkBoxes = this.$el.querySelectorAll('.settings-selector--cookies .settings-panel--expanded .setting__checkbox');
-
-                if (checkBoxes[2]) {
-                    checkBoxes[2].focus();
+                if (this.$refs.firstEditableCookieCheckbox) {
+                    this.$refs.firstEditableCookieCheckbox.focus();
                 }
             });
         },
@@ -170,14 +142,6 @@ export default Vue.component('preferences-bar', {
                     this.$refs.editCookies.focus();
                 }
             });
-        },
-        focusCloseCountryPanel() {
-            this.$refs.closeCountryPanel.focus();
-        },
-        setDetectedCountry() {
-            if (!this.country && this.countries && Array.isArray(this.countries.country) && this.detectedCountry) {
-                this.country = _find(this.countries.country, {'code': this.detectedCountry});
-            }
         },
         init() {
             if (this.initialized) {
@@ -190,15 +154,6 @@ export default Vue.component('preferences-bar', {
 
             const dataPromises = [];
 
-            if (this.enableCountry) {
-                const countryPromises = [
-                    this.$store.dispatch('FETCH_COUNTRIES'),
-                    this.$store.dispatch('FETCH_COUNTRY')
-                ];
-
-                dataPromises.push(...countryPromises);
-                Promise.all(countryPromises).then(this.setDetectedCountry);
-            }
             dataPromises.push(this.getData());
             this.initializing = Promise.all(dataPromises)
                 .then(() => {
@@ -225,9 +180,12 @@ export default Vue.component('preferences-bar', {
             this.emitSize();
         }
     },
-    created() {
+    beforeMount() {
         this.consentLevel = new ConsentLevel(this.$settings.consentLevel || Defaults.suggestedConsentLevel);
-        this.country = this.$settings.country;
+
+        if (this.$settings.country !== null) {
+            this.country = this.$settings.country;
+        }
     },
     mounted() {
         /* istanbul ignore next */

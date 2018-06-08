@@ -1,14 +1,13 @@
 .country-selector {
-    //position: relative;
-    //margin-bottom: 23px;
-    //* {
-    //    margin:0;
-    //}
-	//
-    //&__result-list {
-    //    @extend .auto-complete__dropdown;
-	//
-    //    position: absolute;
-    //    width: 100%;
-    //}
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row nowrap;
+}
+
+.country-selector__auto-complete {
+    flex-grow: 1;
+}
+
+.country-selector__icon-button {
+    margin-top: 0;
 }

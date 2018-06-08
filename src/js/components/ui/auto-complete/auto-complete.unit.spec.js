@@ -175,7 +175,7 @@ describe('components', () => {
                     vm.input = '';
                     spyOn(vm, '$emit');
                     vm.selectCurrent();
-                    expect(vm.$emit).toHaveBeenCalledWith('fauxBlurInput');
+                    expect(vm.$emit).toHaveBeenCalledWith('changeFocus');
                 });
             });
         });

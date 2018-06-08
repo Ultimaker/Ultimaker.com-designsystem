@@ -13,8 +13,7 @@ export default Vue.component('examples', {
             required: true
         },
         horizontalList: {
-            type: Object,
-            required: true
+            type: Object
         }
     }
 });
