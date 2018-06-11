@@ -29,12 +29,16 @@ const webpackConfig = {
                 }
             },
             {
-                test: /\.(ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
-                loader: 'file-loader',
-                options: {
-                    name: '[name].[ext]?[hash]'
-                }
+                test: /\.(png|jpg|gif|ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+                loader: 'file-loader?name=[path][name].[ext]'
             },
+            // {
+            //     test: /\.(ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+            //     loader: 'file-loader',
+            //     options: {
+            //         name: '[name].[ext]?[hash]'
+            //     }
+            // },
             {
                 test: /\.(sass|scss)$/,
                 use: [

@@ -1,13 +1,17 @@
-import {configure} from '@storybook/vue';
+import {configure, addDecorator} from '@storybook/vue';
 import {setOptions} from '@storybook/addon-options';
+import {withNotes} from '@storybook/addon-notes';
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-Vue.use(Vuex);
-
+// addDecorator(withNotes);
 setOptions({
     hierarchyRootSeparator: /\|/,
 });
+
+addDecorator(withNotes);
+
+Vue.use(Vuex);
 
 function loadStories() {
     require('../src/js');
