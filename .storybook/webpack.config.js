@@ -21,15 +21,6 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
         })
     );
 
-    // defaultConfig.module.rules.map(el => {
-    //     // Storybook has a seperate index loader.
-    //     // This check will check for index.js and then add babel-loader
-    //     if(Array.isArray(el.test) && el.test.some(el => el.test('index.js'))){
-    //         el.loaders.unshift('babel-loader')
-    //     }
-    //     return el;
-    // });
-
     const config = merge(projectConfig, defaultConfig);
 
     // console.log(require('util').inspect(config, false, null, true));
