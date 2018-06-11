@@ -7,7 +7,7 @@ function resolve(dir) {
 }
 
 const webpackConfig = {
-    entry: './src/index.js',
+    entry: './src/js/index.js',
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
@@ -26,38 +26,7 @@ const webpackConfig = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
-            },
-            // {
-            //     test: /\.(png|jpg|gif|svg)$/,
-            //     loader: 'file-loader',
-            //     options: {
-            //         name: '[name].[ext]?[hash]'
-            //     }
-            // },
-            // {
-            //     test: /\.(png|jpg|gif|ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
-            //     loader: 'file-loader?name=[path][name].[ext]'
-            // },
-            // {
-            //     test: /\.(ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
-            //     loader: 'file-loader',
-            //     options: {
-            //         name: '[name].[ext]?[hash]'
-            //     }
-            // },
-            {
-                test: /\.(sass|scss)$/,
-                use: [
-                    { loader: "style-loader" }, 
-                    { loader: "css-loader", options: { sourceMap: true } }, 
-                    { loader: "sass-loader", options: { sourceMap: true } }
-                ]
-            },
-            // HTML loader already defined in default config
-            // {
-            //     test: /\.html$/,
-            //     loader: 'html-loader'
-            // },
+            }
         ]
     },
     resolve: {
@@ -85,19 +54,21 @@ const webpackConfig = {
 };
 
 if (process.env.NODE_ENV === 'production') {
+    webpackConfig.optimization = { minimize: true };
     webpackConfig.devtool = '#source-map';
-    // http://vue-loader.vuejs.org/en/workflow/production.html
+    webpackConfig.module.rules.push({
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract(
+            {
+                fallback: 'style-loader',
+                use: ['css-loader', 'sass-loader']
+            })
+    });
     webpackConfig.plugins = (module.exports.plugins || []).concat([
         new webpack.DefinePlugin({
             'process.BROWSER': true,
             'process.env': {
                 NODE_ENV: '"production"'
-            }
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: {
-                warnings: false
             }
         }),
         new webpack.LoaderOptionsPlugin({
@@ -108,6 +79,15 @@ if (process.env.NODE_ENV === 'production') {
             allChunks: true
         }),
     ]);
+} else {
+    webpackConfig.module.rules.push({
+        test: /\.(sass|scss)$/,
+        use: [
+            { loader: "style-loader" },
+            { loader: "css-loader", options: { sourceMap: true } },
+            { loader: "sass-loader", options: { sourceMap: true } }
+        ]
+    });
 }
  
 module.exports = webpackConfig;
