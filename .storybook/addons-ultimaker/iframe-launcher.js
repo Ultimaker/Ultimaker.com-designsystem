@@ -5,7 +5,7 @@ class IframeLauncher {
     }
 
     initialize() {
-        this.keyCodes = { i: 73 }
+        this.keyCodes = { i: 73, d: 68 }
         this.addEventListener();
     }
 
@@ -19,7 +19,10 @@ class IframeLauncher {
     }
 
     handleKeyDown(e) {
-        if(e.keyCode === this.keyCodes.i && e.shiftKey && e.metaKey) this.openIframeInNewWindow();
+        if(e.keyCode === this.keyCodes.d && e.shiftKey && e.metaKey) {
+            e.preventDefault();
+            this.openIframeInNewWindow();
+        }
     }
 }
 
