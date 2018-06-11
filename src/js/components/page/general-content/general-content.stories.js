@@ -1,5 +1,5 @@
 import {storiesOf} from '@storybook/vue';
-import {withKnobs, text, object} from '@storybook/addon-knobs/vue';
+import {withKnobs, text, object} from '@storybook/addon-knobs';
 import data from './general-content.data';
 
 storiesOf('organisms|general-content', module)

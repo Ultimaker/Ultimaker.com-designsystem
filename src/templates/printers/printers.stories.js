@@ -1,5 +1,5 @@
 import {storiesOf} from '@storybook/vue';
-import {withKnobs, text, object} from '@storybook/addon-knobs/vue';
+import {withKnobs, text, object} from '@storybook/addon-knobs';
 import brandsData from 'src/js/components/page/brands/brands.data';
 import sliderRevealData from 'src/js/components/page/slider-reveal/slider-reveal.data';
 import examplesData from 'src/js/components/page/examples/examples.data';

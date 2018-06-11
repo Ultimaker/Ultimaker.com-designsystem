@@ -2,7 +2,7 @@
     <div class="card__visual">
         <template v-if="card.image && card.image.length">
           <div class="card__image">
-            <cms-image class="img--responsive" :image="card.image[0]" :orientation="'square'"></cms-image>
+            <responsive-picture class="img--responsive" :image="card.image[0]" :orientation="'square'"></responsive-picture>
           </div>
         </template>
         <icon v-if="card.icon" :icon-name="card.icon.iconName" class="card__icon"></icon>

@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue';
-import { withKnobs, text, select } from '@storybook/addon-knobs/vue';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 storiesOf('atoms|content-link', module)
     .addDecorator(withKnobs)
