@@ -13,6 +13,7 @@ addDecorator(withNotes);
 Vue.use(Vuex);
 
 function loadStories() {
+    require('../src/js/components/generic/faux-router-link/faux-router-link');
     require('../src/js');
 
     const req = require.context('../src', true, /\.stories\.js$/);
