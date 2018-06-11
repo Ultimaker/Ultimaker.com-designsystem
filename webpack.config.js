@@ -26,6 +26,10 @@ const webpackConfig = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
+            },
+            {
+                test: /\.html$/,
+                use: 'html-loader'
             }
         ]
     },
