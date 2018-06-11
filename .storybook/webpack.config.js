@@ -30,9 +30,9 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     //     return el;
     // });
 
-    const config = merge(defaultConfig, projectConfig);
+    const config = merge(projectConfig, defaultConfig);
 
-    console.log(require('util').inspect(config, false, null, true));
+    // console.log(require('util').inspect(config, false, null, true));
     // process.exit();
     return config;
 };

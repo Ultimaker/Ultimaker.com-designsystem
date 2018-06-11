@@ -4,7 +4,6 @@ import {withNotes} from '@storybook/addon-notes';
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-// addDecorator(withNotes);
 setOptions({
     hierarchyRootSeparator: /\|/,
 });
