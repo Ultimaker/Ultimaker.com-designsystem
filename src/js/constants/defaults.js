@@ -9,7 +9,14 @@ export default {
         minimal: 0b0011,
         all: 0b1111
     },
-    country: 'US',
+    country: {
+        name: 'United States of America',
+        code: 'US',
+        currency: {
+            code: 'USD',
+            symbol: '$'
+        }
+    },
     language: 'en',
     breakpoints: {
         mobile: {

@@ -41,17 +41,23 @@ const webpackConfig = {
         ]
     },
     resolve: {
+        extensions: ['.js', '.vue', '.json'],
+        modules: [
+            resolve('src'),
+            resolve('node_modules')
+        ],
         alias: {
-            vue$: 'vue/dist/vue.esm.js',
-            src: resolve('src'),
-            adapters: resolve('src/js/adapters'),
-            components: resolve('src/js/components'),
-            constants: resolve('src/js/constants'),
-            definitions: resolve('src/js/definitions'),
-            mixins: resolve('src/js/mixins'),
-            router: resolve('src/js/router'),
-            services: resolve('src/js/services'),
-            utils: resolve('src/js/utils')
+            '@root': resolve('.'),
+            'vue$': 'vue/dist/vue.esm.js',
+            'src': resolve('src'),
+            'adapters': resolve('src/js/adapters'),
+            'components': resolve('src/js/components'),
+            'constants': resolve('src/js/constants'),
+            'definitions': resolve('src/js/definitions'),
+            'mixins': resolve('src/js/mixins'),
+            'router': resolve('src/js/router'),
+            'services': resolve('src/js/services'),
+            'utils': resolve('src/js/utils')
         }
     },
     devServer: {

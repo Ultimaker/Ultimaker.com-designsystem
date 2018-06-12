@@ -4,7 +4,7 @@ import CountrySelector from './country-selector';
 import {build} from 'vuenit';
 import halParser from 'utils/hal-parser';
 
-const countriesContent = halParser(require('@root/server/mock/data/globals/countries.json'));
+const countriesContent = halParser(require('@root/test/mock/countries.json'));
 
 describe('components', () => {
     describe('ui', () => {

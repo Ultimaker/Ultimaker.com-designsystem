@@ -8,8 +8,8 @@ import halParser from 'utils/hal-parser';
 describe('components', () => {
     describe('ui', () => {
         describe('preferences-bar', () => {
-            const preferenceBarContent = require('@root/server/mock/data/globals/preferences-bar.json'),
-                countriesContent = halParser(require('@root/server/mock/data/globals/countries.json'));
+            const preferenceBarContent = require('@root/test/mock/preferences-bar.json'),
+                countriesContent = halParser(require('@root/test/mock/countries.json'));
 
             const mount = build(PreferencesBar, {
                 props: {

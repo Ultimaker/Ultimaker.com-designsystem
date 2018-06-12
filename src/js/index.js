@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import '../scss/ultimaker.scss';
 import './directives';
 import './components';

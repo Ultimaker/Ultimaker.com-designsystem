@@ -1,0 +1,31 @@
+{
+    "title": "Your preferences",
+    "slug": "preferences-bar",
+    "attributes": {
+        "analyticsCookieLabel": "Analytical cookies",
+        "analyticsCookieDesc": "Cookies that anonymously measure how the website is used. The data collected is used for analysis to keep improving the website.",
+        "closeButton": "",
+        "customExperienceLabel": "Custom Experience",
+        "fullExperienceLabel": "Full Experience",
+        "functionalCookieLabel": "Functional cookies",
+        "functionalCookieDesc": "Cookies that ensure this website works properly. E.g. remembering these language, country and cookie preferences.",
+        "localeIntro": "<p>Ultimaker.com wants to deliver the best experience to you. We detected your browser preferences and want to place tracking cookies. By clicking 'I agree' you agree to the <a href=\"{entry:242:url}\">terms of use</a>, <a href=\"{entry:242:url}\">privacy and cookie policy</a> and settings below.</p>",
+        "personalCookieDesc": "Cookies that optimize the content on ultimaker.com presents to you based on your earlier behavior.",
+        "personalCookieLabel": "Personalisation cookies",
+        "saveButton": "I agree, continue",
+        "trackingCookieDesc": "Cookies of external services like Google and Facebook that enable Ultimaker to reach out to you on their platforms. By accepting these cookies, your browsing behavior on this website can be monitored by ad networks.",
+        "trackingCookieLabel": "Tracking cookies",
+        "yourCountryLabel": "Your country",
+        "yourLanguageLabel": "Your language",
+        "yourPrivacySettingsLabel": "Your privacy settings"
+    },
+    "_meta": {
+        "query_count": 2,
+        "locale": "en_GB"
+    },
+    "_links": {
+        "self": {
+            "href": "/api/globals/preferences-bar"
+        }
+    }
+}
