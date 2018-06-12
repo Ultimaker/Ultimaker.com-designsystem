@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 function resolve(dir) {
     return path.join(__dirname, dir);
@@ -9,8 +8,8 @@ function resolve(dir) {
 const webpackConfig = {
     entry: './src/js/index.js',
     output: {
-        path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
+        path: path.resolve(__dirname, './static'),
+        publicPath: '/static/',
         filename: 'build.js',
     },
     module: {
@@ -30,6 +29,14 @@ const webpackConfig = {
             {
                 test: /\.html$/,
                 use: 'html-loader'
+            },
+            {
+                test: /\.(sass|scss)$/,
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader', options: { sourceMap: true } },
+                    { loader: 'sass-loader', options: { sourceMap: true } }
+                ]
             }
         ]
     },
@@ -56,42 +63,5 @@ const webpackConfig = {
     },
     devtool: '#eval-source-map'
 };
-
-if (process.env.NODE_ENV === 'production') {
-    webpackConfig.optimization = { minimize: true };
-    webpackConfig.devtool = '#source-map';
-    webpackConfig.module.rules.push({
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract(
-            {
-                fallback: 'style-loader',
-                use: ['css-loader', 'sass-loader']
-            })
-    });
-    webpackConfig.plugins = (module.exports.plugins || []).concat([
-        new webpack.DefinePlugin({
-            'process.BROWSER': true,
-            'process.env': {
-                NODE_ENV: '"production"'
-            }
-        }),
-        new webpack.LoaderOptionsPlugin({
-            minimize: true
-        }),
-        new ExtractTextPlugin({
-            filename: '[name].css',
-            allChunks: true
-        }),
-    ]);
-} else {
-    webpackConfig.module.rules.push({
-        test: /\.(sass|scss)$/,
-        use: [
-            { loader: "style-loader" },
-            { loader: "css-loader", options: { sourceMap: true } },
-            { loader: "sass-loader", options: { sourceMap: true } }
-        ]
-    });
-}
  
 module.exports = webpackConfig;

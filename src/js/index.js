@@ -5,8 +5,6 @@ import './components';
 // import all icons from src/icons/.. as svg sprite
 /* eslint-disable no-unused-vars */
 const __svg__ = {
-    path: '../icons/**/*.svg',
-    name: 'icons/iconset.svg'
+    path: '../assets/icons/**/*.svg',
+    name: 'static/icons/iconset.svg'
 };
-
-

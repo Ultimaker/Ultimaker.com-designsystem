@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import FetchHelper from 'utils/fetch-helper';
 
-const defaultIconUrl = '/dist/icons/iconset.svg';
+const defaultIconUrl = '/static/icons/iconset.svg';
 
 export default Vue.component('icon', {
     name: 'icon',
