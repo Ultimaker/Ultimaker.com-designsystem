@@ -48,6 +48,7 @@
     "vue-template-compiler": "2.5.16",
     "webpack": "^4.10.2",
     "webpack-dev-server": "^3.1.4",
-    "webpack-merge": "^4.1.2"
+    "webpack-merge": "^4.1.2",
+    "webpack-svgstore-plugin": "^4.0.3"
   }
 }
