@@ -1,0 +1,16 @@
+.demo-main-nav.main-nav {
+    &--small {
+        .main-nav__list {
+            @include min-desktop {
+                display: none !important;
+            }
+        }
+    }
+    &--large {
+        .main-nav__list {
+            @include max-tablet {
+                display: none !important;
+            }
+        }
+    }
+}

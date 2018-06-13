@@ -9,27 +9,27 @@ import casesData from 'src/js/components/page/cases/cases.data';
 import generalContentData from 'src/js/components/page/general-content/general-content.data';
 
 storiesOf('templates|printers', module)
-	.addDecorator(withKnobs)
-	.add('Printers', () => {
-		const brands = object('Brands', brandsData),
-			sliderReveal = object('Slider', sliderRevealData),
-			examples = object('Examples', examplesData),
-			explore = object('Explore', exploreData),
-			ecosystem = object('Ecosystem', ecosystemData),
-			cases = object('Cases', casesData),
-			generalContent = object('General Content', generalContentData);
+    .addDecorator(withKnobs)
+    .add('Printers', () => {
+        const brands = object('Brands', brandsData),
+            sliderReveal = object('Slider', sliderRevealData),
+            examples = object('Examples', examplesData),
+            explore = object('Explore', exploreData),
+            ecosystem = object('Ecosystem', ecosystemData),
+            cases = object('Cases', casesData),
+            generalContent = object('General Content', generalContentData);
 
-		return {
-			data: () => ({
-				brands,
-				sliderReveal,
-				examples,
-				explore,
-				ecosystem,
-				cases,
-				generalContent
-			}),
-			template: `
+        return {
+            data: () => ({
+                brands,
+                sliderReveal,
+                examples,
+                explore,
+                ecosystem,
+                cases,
+                generalContent
+            }),
+            template: `
                 <div>
                     <header-main></header-main>
                     <main>
@@ -44,5 +44,5 @@ storiesOf('templates|printers', module)
                     <footer></footer>
                 </div>
             `
-		}
-	});
+        };
+    });

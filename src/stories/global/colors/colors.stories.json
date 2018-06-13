@@ -1,0 +1,50 @@
+{
+    "brandColors": [
+        {
+            "color": "#0CA9E3",
+            "text" : "$colorMain"
+        },
+        {
+            "color": "#EA5354",
+            "text" : "$colorError"
+        },
+        {
+            "color": "#EA5354",
+            "text" : "$colorLike"
+        },
+        {
+            "color": "#87D128",
+            "text" : "$colorOnline"
+        },
+        {
+            "color": "#CC001A",
+            "text" : "$colorNotification"
+        }
+    ],
+    "grayscaleColors": [
+        {
+            "color": "#000000",
+            "text": "$colorBlack"
+        },
+        {
+            "color": "#7F7F7F",
+            "text": "$colorGrayDark"
+        },
+        {
+            "color": "#E3E3E3",
+            "text": "$colorGray"
+        },
+        {
+            "color": "#EAEAEA",
+            "text": "$colorGrayLight"
+        },
+        {
+            "color": "#F5F5F5",
+            "text": "$colorGrayExtraLight"
+        },
+        {
+            "color": "#FFFFFF",
+            "text": "$colorWhite"
+        }
+    ]
+}

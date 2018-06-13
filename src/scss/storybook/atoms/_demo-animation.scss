@@ -1,0 +1,23 @@
+.demo-panel--micro-animate p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.demo-panel__label {
+    @extend .demo-label;
+}
+.demo-panel--micro-animate .demo-panel__animate-me {
+    display: block;
+    background-color: $colorBlack;
+    transform: scaleX(0);
+    height: $buildingUnit * 4;
+    transform-origin: 50% 50%;
+    @include micro-animate(transform);
+    z-index: 100;
+}
+
+.demo-panel--micro-animate:hover .demo-panel__animate-me {
+    transform: scaleX(1);
+}
+

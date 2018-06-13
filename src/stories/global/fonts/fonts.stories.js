@@ -1,4 +1,4 @@
-import { storiesOf } from '@storybook/vue';
+import {storiesOf} from '@storybook/vue';
 import notes from './fonts.stories.md';
 
 storiesOf('global', module)
@@ -11,6 +11,6 @@ storiesOf('global', module)
             </div>`
         }),
         {
-            notes
+            notes: {markdown: notes}
         }
     );

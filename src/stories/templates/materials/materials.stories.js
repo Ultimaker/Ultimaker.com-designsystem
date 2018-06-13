@@ -1,5 +1,5 @@
-import { storiesOf } from '@storybook/vue';
-import { withKnobs, text, object} from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {withKnobs, text, object} from '@storybook/addon-knobs';
 
 storiesOf('templates|materials', module)
     .addDecorator(withKnobs)
@@ -19,5 +19,5 @@ storiesOf('templates|materials', module)
                     <footer></footer>
                 </div>  
             `
-        }
-});
+        };
+    });

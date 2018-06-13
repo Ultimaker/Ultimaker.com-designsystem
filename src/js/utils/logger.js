@@ -50,7 +50,7 @@ class Logger {
      * @param {string} caller - Source of the message
      * @param {string} message - Message to log
      * @param {string} level - Verbosity level of the message
-     * @returns {null} Nothing
+     * @returns Nothing
      */
     static logMessage(caller, message, level = levels.info) {
         _reporter(level, `${ caller }: ${ message }`);
@@ -61,7 +61,7 @@ class Logger {
      * @param {string} caller - Source of the message
      * @param {Object} exception - Exception to log
      * @param {string} level - Verbosity level of the message
-     * @returns {null} Nothing
+     * @returns Nothing
      */
     static logException(caller, exception, level = levels.info) {
         Logger.logMessage(caller, exception.message, level);
@@ -70,7 +70,7 @@ class Logger {
     /**
      * Overwrites the report function to inject your own
      * @param {function} reporter - Function to use for reporting
-     * @returns {null} Nothing
+     * @returns Nothing
      */
     static setReporter(reporter) {
         _reporter = reporter;
