@@ -36,7 +36,7 @@
     "@storybook/addons": "4.0.0-alpha.9",
     "@storybook/vue": "4.0.0-alpha.9",
     "babel-core": "^6.26.3",
-    "babel-eslint": "^8.0.1",
+    "babel-eslint": "8.0.1",
     "babel-loader": "^7.1.4",
     "babel-plugin-istanbul": "^4.1.6",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
@@ -49,6 +49,12 @@
     "babel-preset-vue": "^2.0.2",
     "core-js": "^2.5.7",
     "cross-env": "^5.1.6",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-promise": "3.8.0",
+    "eslint-plugin-vue": "^4.5.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "fetch-mock": "^6.4.4",
     "file-loader": "^1.1.11",
@@ -80,5 +86,6 @@
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2",
     "webpack-svgstore-plugin": "^4.0.3"
-  }
+  },
+  "browserslist": "> 0.25%, not ie <= 10, not ie_mob < 100"
 }

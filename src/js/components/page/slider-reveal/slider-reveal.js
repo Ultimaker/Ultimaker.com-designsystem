@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import ViewportUtil from 'utils/viewport';
-import {TweenLite, TimelineLite} from 'gsap';
+import {TweenLite, TimelineLite, Power2} from 'gsap';
 
 export default Vue.component('slider-reveal', {
     name: 'slider-reveal',

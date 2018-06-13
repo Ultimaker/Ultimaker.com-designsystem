@@ -1,5 +1,5 @@
-import { storiesOf } from '@storybook/vue';
-import { withKnobs, text, object} from '@storybook/addon-knobs';
+import {storiesOf} from '@storybook/vue';
+import {withKnobs, text, object} from '@storybook/addon-knobs';
 import data from './brands.data';
 
 storiesOf('organisms|brands', module)
@@ -14,5 +14,5 @@ storiesOf('organisms|brands', module)
                 brands
             }),
             template: `<brands :title="title" :brands="brands">slot</brands>`
-        }
-});
+        };
+    });

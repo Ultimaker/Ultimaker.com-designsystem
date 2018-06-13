@@ -11,7 +11,7 @@ export default Vue.component('general-content', {
         text: {
             type: Array,
             required: true,
-            default: []
+            default: () => []
         },
         reversed: {
             type: Boolean,

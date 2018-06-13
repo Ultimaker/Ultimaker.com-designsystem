@@ -3,22 +3,22 @@ import {withKnobs, text, object} from '@storybook/addon-knobs';
 import data from './general-content.data';
 
 storiesOf('organisms|general-content', module)
-	.addDecorator(withKnobs)
-	.add('General content', () => {
-		const title = text('Title', data.title),
-		text = text('Text', data.text),
-		link = text('Link', data.contentLink.text),
-		image = object('Image', data.image);
+    .addDecorator(withKnobs)
+    .add('General content', () => {
+        const title = text('Title', data.title),
+            text = text('Text', data.text),
+            link = text('Link', data.contentLink.text),
+            image = object('Image', data.image);
 
-		return {
-			data: () => ({
-				generalContent: {
-					title,
-					text,
-					link,
-					image
-				}
-			}),
-			template: `<examples v-bind="generalContent"></examples>`
-		}
-	});
+        return {
+            data: () => ({
+                generalContent: {
+                    title,
+                    text,
+                    link,
+                    image
+                }
+            }),
+            template: `<examples v-bind="generalContent"></examples>`
+        };
+    });

@@ -16,7 +16,7 @@ class PageService {
             pageApi = await ServiceDiscovery.getService('pages');
 
         if (!pageApi || !pageApi.href) {
-            throw new Error(`Page service not found: ${ serviceName }`);
+            throw new Error(`Page service not found: 'pages'`);
         }
 
         const requestUrl = pageApi.templated ?
