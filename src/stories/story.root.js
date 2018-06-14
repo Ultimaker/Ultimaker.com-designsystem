@@ -1,13 +1,10 @@
 import Vue from 'vue';
-
-const data = require('./data/data.json'),
-    listitems = require('./data/listitems.json');
+import data from './data/data.json';
 
 export default Vue.component('story-root', {
     name: 'story-root',
     provide: {
-        data,
-        listitems
+        data
     },
     template: '<section class="story"><slot /></section>'
 });

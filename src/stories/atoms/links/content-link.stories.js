@@ -13,8 +13,6 @@ storiesOf('Atoms|links',  module)
                 selectedSize = data.sizes.find(s => s.title === size),
                 mod = `${selectedSize.modifier} ${reversed ? 'reversed' : ''}`.trim();
 
-            console.log(mod);
-
             return {
                 data: () => ({
                     mod: mod,
