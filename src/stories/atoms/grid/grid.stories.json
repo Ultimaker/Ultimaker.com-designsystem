@@ -1,0 +1,17 @@
+{
+    "defaultBreakpoint": "mobile",
+    "columns": 12,
+    "breakpoints": [
+        {"title": "mobile", "selector": "xxs"},
+        {"title": "mobile-xl", "selector": "xs"},
+        {"title": "tablet", "selector": "sm"},
+        {"title": "desktop", "selector": "md"},
+        {"title": "desktop-hd", "selector": "lg"}
+    ],
+    "justifications": [
+        {"title": "Space around", "modifier": "flexgrid--justify-space-around"},
+        {"title": "Space between", "modifier": "flexgrid--justify-space-between"},
+        {"title": "Space evenly", "modifier": "flexgrid--justify-space-evenly"},
+        {"title": "Justify right", "modifier": "flexgrid--justify-right"}
+    ]
+}

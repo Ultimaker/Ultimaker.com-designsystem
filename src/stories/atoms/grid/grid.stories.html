@@ -1,0 +1,18 @@
+<section>
+    <template v-for="breakpoint in breakpoints" v-if="active === null || breakpoint.title === active">
+        <h3>{{breakpoint.title}} grid</h3>
+        <div class="flexgrid flexgrid--demo" :class="{'flexgrid--gutter': gutters}">
+            <template v-for="i in columns / 2">
+                <div :class="'flexgrid__cell--' + breakpoint.selector + '-' + i">
+                    <div class="demo-panel--grid"><span class="demo-panel__label">{{ breakpoint.selector }}--{{ i }}</span></div>
+                </div>
+                <div :class="'flexgrid__cell--' + breakpoint.selector + '-' + (12 - i)">
+                    <div class="demo-panel--grid"><span class="demo-panel__label">{{ breakpoint.selector }}--{{ 12 - i }}</span></div>
+                </div>
+            </template>
+            <div :class="'flexgrid__cell--' + breakpoint.selector + '-12'">
+                <div class="demo-panel--grid"><span class="demo-panel__label">{{ breakpoint.selector }}--12</span></div></div>
+            </div>
+        </div>
+    </template>
+</section>
