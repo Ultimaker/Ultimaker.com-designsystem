@@ -6,6 +6,7 @@ import Vuex from 'vuex';
 import 'src/js';
 import 'src/scss/storybook.scss';
 import 'components/generic/faux-router-link/faux-router-link';
+import storyRoot from 'src/stories/story.root.js';
 
 setOptions({
     hierarchyRootSeparator: /\|/,
@@ -15,6 +16,22 @@ setOptions({
 });
 
 addDecorator(withNotes);
+
+console.log(storyRoot);
+
+addDecorator((story) => ({
+    components: {
+        wrappedStory: story(),
+        storyRoot: storyRoot
+    },
+    template: `
+        <section class="story">
+            <story-root>
+                <wrapped-story />
+            </story-root>
+        </section>
+    `
+}))
 
 Vue.use(Vuex);
 
