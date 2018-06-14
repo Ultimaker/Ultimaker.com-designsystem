@@ -1,0 +1,8 @@
+{
+    "defaultSize": "regular",
+    "defaultIcon": "edit",
+    "sizes": [
+        {"title": "regular", "modifier": ""},
+        {"title": "large", "modifier": "large"}
+    ]
+}

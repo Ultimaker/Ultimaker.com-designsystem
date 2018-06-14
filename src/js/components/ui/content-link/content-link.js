@@ -30,8 +30,10 @@ export default Vue.component('content-link', {
             if (this.block !== '') {
                 classes[`${ this.block }__link`] = true;
             }
-            if (this.mod !== '') {
-                classes[`link--${ this.mod }`] = true;
+            if (this.mod !== '' && typeof this.mod === 'string') {
+                this.mod.split(' ').forEach((mod) => {
+                    classes[`link--${ mod }`] = true;
+                });
             }
             if (this.icon !== '') {
                 classes[`link--icon`] = true;
