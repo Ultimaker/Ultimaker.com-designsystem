@@ -1,4 +1,4 @@
-<section>
+<section class="story__atom">
     <template v-for="breakpoint in breakpoints" v-if="active === null || breakpoint.title === active">
         <h3>{{breakpoint.title}} grid</h3>
         <div class="flexgrid flexgrid--demo" :class="{'flexgrid--gutter': gutters}">
