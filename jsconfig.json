@@ -4,6 +4,7 @@
         "allowSyntheticDefaultImports": true,
         "target": "esnext",
         "module": "es6",
+        "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
             "vue": ["/node_modules/vue/dist/vue.esm.js"],
@@ -22,7 +23,6 @@
     },
     "exclude": [
         "node_modules",
-        "dist",
-        "build"
+        "storybook-static"
     ]
 }
