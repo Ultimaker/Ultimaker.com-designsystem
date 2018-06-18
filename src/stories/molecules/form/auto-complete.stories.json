@@ -1,0 +1,24 @@
+{
+    "defaultOpen": true,
+    "items": [
+        {
+            "title": "Item 1",
+            "value": "item_1"
+        },
+        {
+            "title": "Item 2",
+            "value": "item_2"
+        },
+        {
+            "title": "Item 3",
+            "value": "item_3"
+        }
+    ],
+    "storedLabel": "Last used",
+    "storedItems": [
+        {
+            "title": "Item 2",
+            "value": "item_2"
+        }
+    ]
+}

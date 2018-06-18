@@ -9,9 +9,7 @@ storiesOf('Molecules|search', module)
                 openState: true
             }),
             methods: {
-                close() {
-                    action('close');
-                }
+                close: action('close')
             },
             template: require('./search-bar.stories.html')
         }),

@@ -11,11 +11,11 @@ storiesOf('Molecules|navigation', module)
                 }),
                 methods: {
                     toggle() {
-                        action('toggle');
+                        action('toggle')();
                         this.isOpen = !this.isOpen;
                     },
                     used() {
-                        action('used');
+                        action('used')();
                     }
                 },
                 template: require('./nav-assist.stories.html')
