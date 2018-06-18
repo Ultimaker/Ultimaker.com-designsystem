@@ -1,0 +1,17 @@
+{{#mainNav}}
+    <nav class="main-nav demo-main-nav {{ mainNav.styleModifier }}" aria-label="site">
+        {{>molecules-nav-assist}}
+        <ul class="main-nav__list" role="presentation">
+            {{#navItems}}
+                <li class="main-nav__item {{#isCurrentPage}}main-nav__item--active{{/isCurrentPage}}">
+                    <a href="{{{href}}}" class="main-nav__link" {{#isCurrentPage}}
+                       aria-current="page"{{/isCurrentPage}}>{{text}}</a>
+                    {{#isTouch}}
+                        {{>atoms-icon-button}}
+                    {{/isTouch}}
+                    {{>molecules-flyout}}
+                </li>
+            {{/navItems}}
+        </ul>
+    </nav>
+{{/mainNav}}
