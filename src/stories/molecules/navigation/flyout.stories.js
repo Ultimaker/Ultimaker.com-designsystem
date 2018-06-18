@@ -3,7 +3,7 @@ import {withKnobs, boolean} from '@storybook/addon-knobs';
 import flyoutData from './flyout.stories.json';
 
 
-storiesOf('Molecules|navigation')
+storiesOf('Molecules|navigation', module)
     .addDecorator(withKnobs)
     .add(
         'Flyout',
