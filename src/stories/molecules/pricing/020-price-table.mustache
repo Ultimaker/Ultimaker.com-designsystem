@@ -1,0 +1,17 @@
+{{#priceTable}}
+    <div class="price-table">
+        <div class="price-table__item">
+            {{#price}}
+                {{>atoms-icon:price-table__icon}}
+                <span class="price-table__info">
+                    <small class="price-table__tagline">{{ text }}</small>
+                    <span class="currency {{ styleModifier }}">
+                        <span class="currency__type">{{ currency }}</span>
+                            {{ value }}
+                    </span>
+                </span>
+            {{/price}}
+        </div>
+        <small class="price-table__disclaimer">*excl. VAT</small>
+    </div>
+{{/priceTable}}
