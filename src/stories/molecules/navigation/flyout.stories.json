@@ -1,0 +1,104 @@
+{
+    "sections": [
+        {
+            "title": "Flyout title one",
+            "itemId": "main_1-section_0",
+            "href": null,
+            "links": [
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_1",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_2",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_3",
+                    "href": "#"
+                }
+            ],
+            "bottomLinks": []
+        },
+        {
+            "title": "Flyout title two",
+            "itemId": "main_1-section_0",
+            "href": null,
+            "links": [
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_1",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_2",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_3",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_4",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_5",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_6",
+                    "href": "#"
+                }
+            ],
+            "bottomLinks": [
+                {
+                    "title": "Compare items",
+                    "itemId": "main_1-section_0-item_0",
+                    "href": "/printers"
+                }
+            ]
+        },
+        {
+            "title": "Flyout title three",
+            "itemId": "main_1-section_0",
+            "href": null,
+            "links": [
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_1",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_2",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_3",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_4",
+                    "href": "#"
+                },
+                {
+                    "title": "Flyout item",
+                    "itemId": "main_1-section_1-item_5",
+                    "href": "#"
+                }
+            ],
+            "bottomLinks": []
+        }
+    ]
+}

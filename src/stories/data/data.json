@@ -46,6 +46,68 @@
             "description": "Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur."
         }
     ],
+    "icons": {
+        "brandIcons": [
+            "logo-ultimaker",
+            "robot-ultimaker"
+        ],
+        "productIcons": [
+            "material",
+            "um2",
+            "um2ext",
+            "ums5",
+            "service",
+            "volume",
+            "resolution",
+            "support",
+            "print-head",
+            "cura",
+            "connect" 
+        ],
+        "functionalIcons": [
+            "menu",
+            "download",
+            "upload",
+            "arrow-up",
+            "arrow-down",
+            "arrow-right",
+            "arrow-left",
+            "fullscreen",
+            "angle-up",
+            "angle-down",
+            "angle-right",
+            "angle-left",
+            "refresh",
+            "checkmark",
+            "close",
+            "plus",
+            "settings",
+            "geo",
+            "cloud",
+            "like",
+            "chat",
+            "rate",
+            "typing",
+            "show",
+            "notify",
+            "location",
+            "mail",
+            "account",
+            "file",
+            "edit",
+            "store",
+            "mobile",
+            "more",
+            "play-video",
+            "info"
+        ],
+        "socialIcons": [
+            "facebook",
+            "twitter",
+            "instagram",
+            "youtube"
+        ]
+    },
     "contentLink": {
         "text": "Content-link"
     },
