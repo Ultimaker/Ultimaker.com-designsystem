@@ -1,8 +1,6 @@
 import {storiesOf} from '@storybook/vue';
-import notes from './grid.stories.md';
-import notesJustification from './grid.justification.stories.md';
-import data from './grid.stories.json';
 import {withKnobs, text, object, select, boolean} from '@storybook/addon-knobs';
+import data from './grid.stories.json';
 
 storiesOf('Atoms|grid', module)
     .addDecorator(withKnobs)
@@ -23,7 +21,7 @@ storiesOf('Atoms|grid', module)
             };
         },
         {
-            notes: {markdown: notes}
+            notes: {markdown: require('./grid.stories.md')}
         }
     )
     .add(
@@ -37,6 +35,6 @@ storiesOf('Atoms|grid', module)
             };
         },
         {
-            notes: {markdown: notesJustification}
+            notes: {markdown: require('./grid.justification.stories.md')}
         }
     );
