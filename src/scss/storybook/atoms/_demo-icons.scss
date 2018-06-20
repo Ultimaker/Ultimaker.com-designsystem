@@ -32,3 +32,10 @@
         font-size: $buildingUnit * 6;
     }
 }
+
+.demo-panel--animated-icons {
+    .demo-panel__icon, svg {
+        width: $buildingUnit * 10;
+        height: $buildingUnit * 10;
+    }
+}
