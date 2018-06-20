@@ -1,22 +1,27 @@
 import {storiesOf} from '@storybook/vue';
-import {withKnobs, text, object} from '@storybook/addon-knobs';
-import data from './slider-reveal.data';
+// import {withKnobs, text, object} from '@storybook/addon-knobs';
+import data from './slider-reveal.stories.json';
 
 storiesOf('organisms|slider-reveal', module)
-    .addDecorator(withKnobs)
+    // .addDecorator(withKnobs)
     .add('Slider reveal', () => {
-        const title = text('Title', data.title),
-            contents = text('Contents', data.contents),
-            imageSlider = object('Images', data.imageSlider.images);
+        // Remark: slider-reveal doesn't initialize properly when
+        // using knobs.
+        //
+        // const title = text('Title', data.title),
+        //     contents = object('Contents', data.contents),
+        //     imageSlider = object('Images', data.imageSlider),
+        //     link = object('Link', data.link);
 
         return {
             data: () => ({
                 slider: {
-                    title,
-                    contents,
-                    imageSlider
+                    title: data.title,
+                    contents: data.contents,
+                    imageSlider: data.imageSlider,
+                    link: data.link
                 }
             }),
-            template: `<div><h1>blabla</h1><slider-reveal v-bind="slider"></slider-reveal></div>`
+            template: require('./slider-reveal.stories.html')
         };
     });
