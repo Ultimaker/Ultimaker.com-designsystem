@@ -3,7 +3,7 @@ import data from './card.stories.json';
 
 storiesOf('Molecules|layout', module)
     .add(
-        'card',
+        'Card',
         () => {
             return {
                 data: () => ({

@@ -1,0 +1,17 @@
+{
+    "defaultDirection": "left",
+    "directions": [
+        {
+            "title": "right",
+            "modifierClass": "scroll-hint__icon--right"
+        },
+        {
+            "title": "bottom",
+            "modifierClass": "scroll-hint__icon--bottom"
+        },
+        {
+            "title": "left",
+            "modifierClass": "scroll-hint__icon--left"
+        }
+    ]
+}
