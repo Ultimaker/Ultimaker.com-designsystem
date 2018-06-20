@@ -1,0 +1,106 @@
+{
+    "type": "color-picker",
+    "title": "Ultimaker UMM available colors",
+    "material": {
+        "title": "Ultimaker Material (UMM)",
+        "short_title": "UMM",
+        "weight": {
+            "value": 750,
+            "unit": "g"
+        },
+        "price": {
+            "value": 33,
+            "currency": "EUR"
+        },
+        "slug": "pla",
+        "_links": {
+            "self": {
+                "href": "#materials/00000000648b07cf00000000114976fb"
+            }
+        },
+        "image": {
+            "title": "Ultimaker material print",
+            "alt_text": "Ultimaker material print",
+            "mime_type": "image/png",
+            "links": {
+                "self": {
+                    "href": "/generator/svg/1800/1080/CCCCCC"
+                }
+            }
+        },
+        "material_colors": [
+            {
+                "title": "Ultimaker material",
+                "is_transparent": false,
+                "rgb_hex_code": "#00387B",
+                "system_code": "RAL 1234",
+                "image": {
+                    "title": "Ultimaker Pla Blue",
+                    "mime_type": "image/png",
+                    "links": {
+                        "landscape_desktop": [{
+                            "href": "/generator/svg/1800/1080/CCCCCC"
+                        }],
+                        "landscape_mobile": [{
+                            "href": "/generator/svg/900/540"
+                        }]
+                    }
+                }
+            },
+            {
+                "title": "Ultimaker material",
+                "is_transparent": false,
+                "rgb_hex_code": "#BC4077",
+                "system_code": "RAL 1234",
+                "image": {
+                    "title": "Ultimaker material",
+                    "mime_type": "image/png",
+                    "links": {
+                        "landscape_desktop": [{
+                            "href": "/generator/svg/1800/1080"
+                        }],
+                        "landscape_mobile": [{
+                            "href": "/generator/svg/900/540"
+                        }]
+                    }
+                }
+            },
+            {
+                "title": "Ultimaker material",
+                "is_transparent": false,
+                "rgb_hex_code": "#BB1E10",
+                "system_code": "RAL 1234",
+                "image": {
+                    "title": "Ultimaker material",
+                    "mime_type": "image/png",
+                    "links": {
+                        "landscape_desktop": [{
+                            "href": "/generator/svg/1800/1080"
+                        }],
+                        "landscape_mobile": [{
+                            "href": "/generator/svg/900/540"
+                        }]
+                    }
+                }
+            },
+            {
+                "title": "Ultimaker transparent",
+                "is_transparent": true,
+                "rgb_hex_code": "#000000",
+                "system_code": "RAL 1234",
+                "image": {
+                    "title": "Ultimaker material",
+                    "mime_type": "image/png",
+                    "links": {
+                        "landscape_desktop": [{
+                            "href": "/generator/svg/1800/1080"
+                        }],
+                        "landscape_mobile": [{
+                            "href": "/generator/svg/900/540"
+                        }]
+                    }
+                }
+            }
+        ]
+    }
+}

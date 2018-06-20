@@ -4,7 +4,6 @@ import linkedProperty from 'mixins/linked-property';
 export default Vue.component('colors', {
     name: 'colors',
     template: require('./colors.html'),
-    mixins: [linkedProperty('materials')],
     data: () => ({
         activeColor: null,
         imageLoaded: false
@@ -14,28 +13,28 @@ export default Vue.component('colors', {
             type: String,
             require: true
         },
-        links: {
+        material: {
             type: Object,
             required: true
         }
     },
     computed: {
         shouldRender() {
-            return this.materials !== null;
+            return this.material !== null;
         },
         colors() {
-            if (!this.materials || !this.materials.length) {
+            if (!this.material) {
                 return null;
             }
 
-            return this.materials[0].material_colors;
+            return this.material.material_colors;
         },
         image() {
             if (this.activeColor) {
-                return this.activeColor.image[0];
+                return this.activeColor.image;
             }
             if (this.colors && this.colors.length) {
-                return this.colors[0].image[0];
+                return this.colors[0].image;
             }
 
             return null;
