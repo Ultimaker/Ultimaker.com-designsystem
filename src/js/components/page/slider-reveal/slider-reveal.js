@@ -73,7 +73,7 @@ export default Vue.component('slider-reveal', {
         },
 
         calculateOffsets() {
-            if (this.$refs['image-mask'][0]) {
+            if (this.$refs['image-mask'] && this.$refs['image-mask'][0]) {
                 this.itemOffsetY = this.getOffsetForElement(this.$refs['image-mask'][0]);
                 this.itemHeight = this.$refs['image-wrapper'].getBoundingClientRect().height;
                 this.screenCenterY = window.innerHeight * 0.5;
