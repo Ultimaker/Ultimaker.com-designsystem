@@ -4,7 +4,7 @@ import data from './hero-product.data';
 
 storiesOf('organisms|hero-product', module)
     .addDecorator(withKnobs)
-    .add('General content', () => {
+    .add('Hero product', () => {
         const title = text('Title', data.title),
             text = text('Text', data.text),
             link = text('Link', data.contentLink.text),
