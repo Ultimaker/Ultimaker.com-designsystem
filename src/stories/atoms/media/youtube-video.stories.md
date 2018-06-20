@@ -13,4 +13,4 @@ This component embeds a youtube video into the site and takes account of the pre
 Aspect ratio can be modified with the following classes:
 - youtube-video--four-three
 - youtube-video--eighteen-nine
-- youtube-v
+- youtube-video--square
