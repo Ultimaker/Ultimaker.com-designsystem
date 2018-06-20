@@ -6,10 +6,10 @@ const stories = storiesOf('Atoms|media')
         () => {
             return {
                 data: () => ({
-                    videoId: "w5Fgp-KihIA"
+                    videoId: 'w5Fgp-KihIA'
                 }),
                 template: require('./youtube-video.stories.html')
-            }
+            };
         },
         {
             notes: {markdown: require('./youtube-video.stories.md')}
