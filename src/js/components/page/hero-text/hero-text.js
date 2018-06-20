@@ -1,8 +1,8 @@
 import Vue from 'vue';
 
-export default Vue.component('rich-text', {
-    name: 'rich-text',
-    template: require('./rich-text.html'),
+export default Vue.component('hero-text', {
+    name: 'hero-text',
+    template: require('./hero-text.html'),
     props: {
         title: {
             type: String,

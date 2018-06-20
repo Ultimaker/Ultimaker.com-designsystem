@@ -1,14 +1,14 @@
 /* eslint-disable max-nested-callbacks */
-import RichText from './rich-text';
+import RichText from './hero-text';
 import {build} from 'vuenit';
 
 describe('components', () => {
     describe('page', () => {
-        const fixture = require('./rich-text.unit.spec.json');
+        const fixture = require('./hero-text.unit.spec.json');
         const mount = build(RichText, {});
 
-        describe('rich-text', () => {
-            it('should render the "rich-text" organism', () => {
+        describe('hero-text', () => {
+            it('should render the "hero-text" organism', () => {
                 const buildOptions = {
                         props: {...fixture.properties}
                     },
