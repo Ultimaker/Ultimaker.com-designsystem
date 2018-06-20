@@ -4,7 +4,7 @@ function getImage(image, orientation, device) {
     const format = `${ orientation }_${ device }`;
 
     if (image.links && image.links[format] && image.links[format][0]) {
-        return image.links[format][0].href;
+        return {url: image.links[format][0].href};
     }
 
     return '';
