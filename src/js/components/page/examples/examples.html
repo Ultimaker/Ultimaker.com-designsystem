@@ -3,7 +3,7 @@
         <header>
             <h2 class="examples__headline">{{ title }}</h2>
         </header>
-        <horizontal-list v-bind="horizontalList" v-if="horizontalList"></horizontal-list>
+        <horizontal-list class="examples__caption" v-bind="horizontalList" v-if="horizontalList"></horizontal-list>
         <div class="cards">
             <div class="flexgrid flexgrid--gutter">
                 <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6" v-for="card in this.cards">
