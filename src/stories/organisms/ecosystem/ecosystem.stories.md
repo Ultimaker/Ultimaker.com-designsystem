@@ -1,3 +1,3 @@
-The ecosystem organism should be used to display the entire range of products and service that Ultimaker offers.
+The ecosystem organism should be used to display the integration and added value between the different products and services Ultimaker offers.
 
-Should contain at least 3 items.
+The organism is build to contain at least 3 items.

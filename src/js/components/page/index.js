@@ -1,4 +1,4 @@
-import './rich-text/rich-text';
+import './hero-text/hero-text';
 import './slider-reveal/slider-reveal';
 import './hero-product/hero-product';
 import './ubr/ubr';
