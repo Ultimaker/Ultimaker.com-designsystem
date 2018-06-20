@@ -39,13 +39,15 @@ function loadStories() {
     const globals = require.context('../src/stories/global', true, /\.stories\.js$/),
         atoms = require.context('../src/stories/atoms', true, /\.stories\.js$/),
         molecules = require.context('../src/stories/molecules', true, /\.stories\.js$/),
-        templates = require.context('../src/stories/templates', true, /\.stories\.js$/);
+        organisms = require.context('../src/stories/organisms', true, /\.stories\.js$/);
+        // templates = require.context('../src/stories/templates', true, /\.stories\.js$/);
 
     require('src/stories/welcome.stories');
     globals.keys().forEach(filename => globals(filename));
     atoms.keys().forEach(filename => atoms(filename));
     molecules.keys().forEach(filename => molecules(filename));
-    templates.keys().forEach(filename => templates(filename));
+    organisms.keys().forEach(filename => organisms(filename));
+    // templates.keys().forEach(filename => templates(filename));
 }
 
 configure(loadStories, module);

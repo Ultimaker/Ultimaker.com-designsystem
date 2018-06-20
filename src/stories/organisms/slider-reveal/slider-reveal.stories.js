@@ -17,6 +17,6 @@ storiesOf('organisms|slider-reveal', module)
                     imageSlider
                 }
             }),
-            template: `<slider-reveal v-bind="slider"></slider-reveal>`
+            template: `<div><h1>blabla</h1><slider-reveal v-bind="slider"></slider-reveal></div>`
         };
     });
