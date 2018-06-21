@@ -1,5 +1,4 @@
 import Vue from 'vue';
-import linkedProperty from 'mixins/linked-property';
 
 export default Vue.component('colors', {
     name: 'colors',
