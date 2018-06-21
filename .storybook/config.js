@@ -31,7 +31,7 @@ addDecorator((story) => ({
             </story-root>
         </section>
     `
-}))
+}));
 
 Vue.use(Vuex);
 
@@ -40,14 +40,14 @@ function loadStories() {
         atoms = require.context('../src/stories/atoms', true, /\.stories\.js$/),
         molecules = require.context('../src/stories/molecules', true, /\.stories\.js$/),
         organisms = require.context('../src/stories/organisms', true, /\.stories\.js$/);
-        // templates = require.context('../src/stories/templates', true, /\.stories\.js$/);
+        templates = require.context('../src/stories/templates', true, /\.stories\.js$/);
 
     require('src/stories/welcome.stories');
     globals.keys().forEach(filename => globals(filename));
     atoms.keys().forEach(filename => atoms(filename));
     molecules.keys().forEach(filename => molecules(filename));
     organisms.keys().forEach(filename => organisms(filename));
-    // templates.keys().forEach(filename => templates(filename));
+    templates.keys().forEach(filename => templates(filename));
 }
 
 configure(loadStories, module);
