@@ -1,5 +1,15 @@
 {
-    "styleModifiers": ["slider-reveal--dissolve"],
+    "defaultModifier": "none",
+    "modifiers": [
+        {
+            "title": "none",
+            "modifierClass": ""
+        },
+        {
+            "title": "dissolve",
+            "modifierClass": "slider-reveal--dissolve"
+        }
+    ],
     "title": "Lorem ipsum dolor sit amet",
     "contents": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eius culpa", "asperiores expedita consequatur nostrum quia, doloremque reprehenderit. Sequi, unde ipsa dolores dolorum earum qui obcaecati architecto officiis voluptates vero."],
     "link": {
