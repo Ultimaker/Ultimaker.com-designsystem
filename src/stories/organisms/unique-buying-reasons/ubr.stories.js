@@ -1,26 +1,25 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
-import data from './ubr.stories.json';
+import ubrData from './ubr.stories.json';
 
 storiesOf('organisms|ubr', module)
     .addDecorator(withKnobs)
     .add(
         'Unique buying reasons',
         () => {
-            const title = text('Title', data.title),
-                description = text('Description', data.description),
-                image = object('Image', data.image),
-                reasons = object('Reasons', data.reasons);
+            const title = text('Title', ubrData.title),
+                description = text('Description', ubrData.description),
+                image = object('Image', ubrData.image),
+                reasons = object('Reasons', ubrData.reasons);
 
             return {
                 data: () => ({
-                    ubr: {
-                        title,
-                        description,
-                        image,
-                        reasons
-                    }
+                    title,
+                    description,
+                    image,
+                    reasons
                 }),
+                inject: ['data'],
                 template: require('./ubr.stories.html')
             };
         },
