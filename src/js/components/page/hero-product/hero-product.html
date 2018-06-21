@@ -5,12 +5,12 @@
             <div class="flexgrid__cell--xs-6">
                 <div class="hero__description">
                     <!--Intro-->
-                    <h1>{{ page.title }}</h1>
+                    <h1>{{ title }}</h1>
                     <p class="copy--intro">{{ description }}</p>
                     <!--End intro-->
 
                     <!--Price table-->
-                    <div class="price-table hero__price-table" v-if="links.materials">
+                    <div class="price-table hero__price-table">
                         <ul class="price-table__list" role="tablist">
                             <li class="price-table__item" v-for="material in materials" role="tab">
                                 <icon icon-name="material" class="price-table__icon"></icon>
@@ -24,12 +24,12 @@
                                 </span>
                             </li>
                         </ul>
-                        <small class="price-table__disclaimer"><page-label name="excludingVat" /></small>
+                        <small class="price-table__disclaimer">{{ labels.excludingVat }}</small>
                     </div>
                     <!--End price table-->
 
                     <!--Button-->
-                    <a href="" class="button button--primary" v-if="materials && materials.length"><page-label name="buyCta" /> {{ materials[0].short_title }}</a>
+                    <a href="" class="button button--primary" v-if="materials && materials.length">{{ labels.buyCTA }}</a>
                     <!--End button-->
 
                     <!--Link list icons-->
@@ -41,7 +41,7 @@
                         </template>
                         <template v-if="this.documents">
                             <li class="link-list__item" v-for="document in documents" v-if="document.links">
-                                <content-link :href="document.links.self.href" icon="download"><page-label name="download" /> {{ document.title }}</content-link>
+                                <content-link :href="document.links.self.href" icon="download">{{ labels.download}} {{ document.title }}</content-link>
                             </li>
                         </template>
                     </ul>

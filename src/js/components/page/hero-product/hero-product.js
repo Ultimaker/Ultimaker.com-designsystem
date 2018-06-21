@@ -1,34 +1,36 @@
 import Vue from 'vue';
-import linkedProperty from 'mixins/linked-property';
-import {mapGetters} from 'vuex';
 
 export default Vue.component('hero-product', {
     name: 'hero-product',
     template: require('./hero-product.html'),
-    mixins: [linkedProperty('materials')],
     props: {
+        title: {
+            type: String,
+            required: true
+        },
         description: {
             type: String,
+            required: true
+        },
+        link: {
+            type: Array,
+            required: false
+        },
+        image: {
+            type: Array,
+            required: true
+        },
+        materials: {
+            type: Array,
             required: true
         },
         documents: {
             type: Array,
             required: false
         },
-        link: {
-            type: Array,
-            required: false
-        },
-        links: {
+        labels: {
             type: Object,
             required: true
-        },
-        image: {
-            type: Array,
-            required: true
         }
-    },
-    computed: {
-        ...mapGetters('page', ['page'])
     }
 });
