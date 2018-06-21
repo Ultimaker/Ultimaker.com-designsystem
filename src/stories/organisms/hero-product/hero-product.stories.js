@@ -25,6 +25,9 @@ storiesOf('organisms|hero-product', module)
                     labels
                 }
             }),
-            template: `<hero-product v-bind="heroProduct"></hero-product>`
+            template: require('./hero-product.stories.html')
         };
+    },
+    {
+        notes: {markdown: require('./hero-product.stories.md')}
     });
