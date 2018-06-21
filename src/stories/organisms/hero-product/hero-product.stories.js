@@ -1,24 +1,30 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
-import data from './hero-product.data';
+import data from './hero-product.stories.json';
 
 storiesOf('organisms|hero-product', module)
     .addDecorator(withKnobs)
     .add('Hero product', () => {
         const title = text('Title', data.title),
-            text = text('Text', data.text),
-            link = text('Link', data.contentLink.text),
-            image = object('Image', data.image);
+            description = text('Link', data.description),
+            materials = object('Materials', data.materials),
+            image = object('Materials', data.image),
+            link = object('Links', data.links),
+            documents = object('Documents', data.documents),
+            labels = object('Materials', data.labels);
 
         return {
             data: () => ({
-                generalContent: {
+                heroProduct: {
                     title,
-                    text,
+                    description,
+                    materials,
+                    image,
                     link,
-                    image
+                    documents,
+                    labels
                 }
             }),
-            template: `<examples v-bind="generalContent"></examples>`
+            template: `<hero-product v-bind="heroProduct"></hero-product>`
         };
     });
