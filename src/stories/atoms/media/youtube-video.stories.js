@@ -1,6 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 
-const stories = storiesOf('Atoms|media')
+const stories = storiesOf('Atoms|media', module)
     .add(
         'Youtube Video',
         () => {
