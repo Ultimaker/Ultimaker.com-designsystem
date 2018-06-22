@@ -2,7 +2,7 @@ import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
 import data from './hero-product.stories.json';
 
-storiesOf('organisms|hero-product', module)
+storiesOf('organisms|hero', module)
     .addDecorator(withKnobs)
     .add('Hero product', () => {
         const title = text('Title', data.title),
