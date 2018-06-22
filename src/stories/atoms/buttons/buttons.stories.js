@@ -29,8 +29,6 @@ storiesOf('Atoms|buttons', module)
             const modifier = select('Modifier', data.iconButtonModifiers.map((b) => b.title), data.defaultIconButtonModifier),
                 selectedModifier = data.iconButtonModifiers.find((m) => m.title === modifier);
 
-            console.log(modifier, selectedModifier);
-
             return {
                 data: () => ({
                     modifier: selectedModifier.modifier,
