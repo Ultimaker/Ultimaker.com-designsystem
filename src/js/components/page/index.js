@@ -1,6 +1,7 @@
 import './hero-text/hero-text';
 import './slider-reveal/slider-reveal';
 import './hero-product/hero-product';
+import './hero-products-application/hero-products-application';
 import './ubr/ubr';
 import './brands/brands';
 import './brands/brands-large';
