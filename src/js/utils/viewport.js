@@ -128,7 +128,7 @@ class ViewportUtility {
     }
 
     updateScreenDimensions() {
-        const currentWindow = window.parent ? window.parent : window;
+        const currentWindow = window;
 
         /* istanbul ignore next */
         this.screenWidth = currentWindow.innerWidth ||
@@ -170,6 +170,10 @@ class ViewportUtility {
 
     removeResizeHandler(handler) {
         _resizeHandlers.filter(h => h !== handler);
+    }
+
+    triggerResize() {
+        resizeHandler.apply(this);
     }
 
     addScrollHandler(handler) {
