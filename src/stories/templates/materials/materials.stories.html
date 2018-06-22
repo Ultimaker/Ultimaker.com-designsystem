@@ -1,8 +1,6 @@
-<section class="story__template">
-    <main>
-        <!--<hero-products></hero-products>-->
-        <!--<ubr></ubr>-->
-        <examples></examples>
-        <colors></colors>
-    </main>
-</section>
+<main class="story__template">
+    <hero-product v-bind="heroProduct"></hero-product>
+    <ubr v-bind="ubr"></ubr>
+    <examples v-bind="examples"></examples>
+    <colors v-bind="colors"></colors>
+</main>
