@@ -7,6 +7,7 @@ import 'src/js';
 import 'src/scss/storybook.scss';
 import 'components/generic/faux-router-link/faux-router-link';
 import storyRoot from 'src/stories/story.root.js';
+import viewPort from "src/js/utils/viewport";
 
 setOptions({
     hierarchyRootSeparator: /\|/,
@@ -16,8 +17,6 @@ setOptions({
 });
 
 addDecorator(withNotes);
-
-console.log(storyRoot);
 
 addDecorator((story) => ({
     components: {
@@ -30,7 +29,19 @@ addDecorator((story) => ({
                 <wrapped-story />
             </story-root>
         </section>
-    `
+    `,
+    data: () => ({
+        viewPort: new viewPort()
+    }),
+    mounted() {
+        // This is a workaround to handle the creation of the storybook, the viewport doesn't have the proper dimensions 
+        // when the iframe is just created. But there is no event to connect to to be notified when the viewport is OK.
+        Vue.nextTick().then(() => {
+            setTimeout(() => {
+                this.viewPort.triggerResize();
+            }, 500);
+        });
+    }
 }));
 
 Vue.use(Vuex);
