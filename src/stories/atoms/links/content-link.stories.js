@@ -1,5 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object, select, boolean} from '@storybook/addon-knobs';
+import ContentLink from 'atoms/content-link';
 import data from './content-link.stories.json';
 
 storiesOf('Atoms|links',  module)
@@ -14,6 +15,9 @@ storiesOf('Atoms|links',  module)
                 mod = `${selectedSize.modifier} ${reversed ? 'reversed' : ''}`.trim();
 
             return {
+                components: {
+                    ContentLink
+                },
                 data: () => ({
                     mod: mod,
                     icon: icon ? data.defaultIcon : undefined

@@ -1,5 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
+import Examples from 'organisms-page/examples';
 import data from './examples.stories.json';
 
 storiesOf('organisms|examples', module)
@@ -12,6 +13,9 @@ storiesOf('organisms|examples', module)
                 cards = object('Cards', data.cards);
 
             return {
+                components: {
+                    Examples
+                },
                 data: () => ({
                     examples: {
                         title,

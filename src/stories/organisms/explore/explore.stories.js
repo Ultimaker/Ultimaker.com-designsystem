@@ -1,5 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
+import Explore from 'organisms-page/explore';
 import data from './explore.stories.json';
 
 storiesOf('organisms|explore', module)
@@ -10,6 +11,9 @@ storiesOf('organisms|explore', module)
                 items = object('Items', data.items);
 
             return {
+                components: {
+                    Explore
+                },
                 data: () => ({
                     explore: {
                         title,

@@ -1,11 +1,15 @@
 import {storiesOf} from '@storybook/vue';
 import {action} from '@storybook/addon-actions';
+import NavAssist from 'atoms/nav-assist';
 
 storiesOf('Molecules|navigation', module)
     .add(
         'Nav assist',
         () => {
             return {
+                components: {
+                    NavAssist
+                },
                 data: () => ({
                     isOpen: false
                 }),
