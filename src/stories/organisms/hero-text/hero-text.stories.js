@@ -1,5 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
+import HeroText from 'organisms-page/hero-text';
 import heroData from './hero-text.stories.json';
 import TextUtils from 'utils/text-utils';
 
@@ -12,6 +13,9 @@ storiesOf('organisms|hero', module)
                 contents = object('Content', heroData.contents);
 
             return {
+                components: {
+                    HeroText
+                },
                 data: () => ({
                     contents: TextUtils.htmlDecode(contents)
                 }),

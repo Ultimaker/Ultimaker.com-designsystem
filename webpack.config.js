@@ -42,9 +42,9 @@ const webpackConfig = {
             {
                 test: /\.(sass|scss)$/,
                 use: [
-                    { loader: 'style-loader' },
-                    { loader: 'css-loader', options: { sourceMap: true } },
-                    { loader: 'sass-loader', options: { sourceMap: true } }
+                    {loader: 'style-loader'},
+                    {loader: 'css-loader', options: {sourceMap: true}},
+                    {loader: 'sass-loader', options: {sourceMap: true}}
                 ]
             }
         ]
@@ -61,6 +61,10 @@ const webpackConfig = {
             'src': resolve('src'),
             'adapters': resolve('src/js/adapters'),
             'components': resolve('src/js/components'),
+            'atoms': resolve('src/js/components/atoms'),
+            'molecules': resolve('src/js/components/molecules'),
+            'organisms': resolve('src/js/components/organisms'),
+            'organisms-page': resolve('src/js/components/organisms-page'),
             'constants': resolve('src/js/constants'),
             'definitions': resolve('src/js/definitions'),
             'mixins': resolve('src/js/mixins'),
@@ -78,5 +82,5 @@ const webpackConfig = {
     },
     devtool: '#eval-source-map'
 };
- 
+
 module.exports = webpackConfig;

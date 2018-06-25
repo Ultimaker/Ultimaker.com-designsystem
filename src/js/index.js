@@ -1,7 +1,8 @@
 import 'babel-polyfill';
+import 'components/generic/placeholder';
 import '../scss/ultimaker.scss';
 import './directives';
-import './components';
+import './components/generic';
 
 // import all icons from src/icons/.. as svg sprite
 /* eslint-disable no-unused-vars */

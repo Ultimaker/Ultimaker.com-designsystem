@@ -1,6 +1,6 @@
 {
     "card": {
-        "image": [{
+        "image": {
             "mobileWidth": {
                 "url": "/generator/svg/400/400"
             },
@@ -10,7 +10,7 @@
                     "url": "/generator/svg/800/800"
                 }
             }
-        }],
+        },
         "body": "Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
     }
 }

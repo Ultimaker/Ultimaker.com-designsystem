@@ -1,5 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
+import Ubr from 'organisms-page/ubr';
 import ubrData from './ubr.stories.json';
 
 storiesOf('organisms|ubr', module)
@@ -13,6 +14,9 @@ storiesOf('organisms|ubr', module)
                 reasons = object('Reasons', ubrData.reasons);
 
             return {
+                components: {
+                    Ubr
+                },
                 data: () => ({
                     title,
                     description,

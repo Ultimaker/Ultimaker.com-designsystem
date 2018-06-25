@@ -1,5 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, select, text, object} from '@storybook/addon-knobs';
+import SliderReveal from 'organisms-page/slider-reveal';
 import data from './slider-reveal.stories.json';
 
 storiesOf('organisms|slider-reveal', module)
@@ -16,6 +17,9 @@ storiesOf('organisms|slider-reveal', module)
             link = object('Link', data.link);
 
         return {
+            components: {
+                SliderReveal
+            },
             data: () => ({
                 slider: {
                     title: data.title,

@@ -1,10 +1,14 @@
 import {storiesOf} from '@storybook/vue';
+import Pager from 'molecules/pager';
 
 storiesOf('Molecules|navigation', module)
     .add(
         'Pager',
         () => {
             return {
+                components: {
+                    Pager
+                },
                 data: () => ({
                     pages: 10,
                     activePage: 4

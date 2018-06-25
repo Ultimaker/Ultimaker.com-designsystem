@@ -1,1 +1,1 @@
-import './faux-store-commit/faux-store-commit';
+import './faux-store-commit';

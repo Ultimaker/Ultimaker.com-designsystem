@@ -1,5 +1,9 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
+import HeroProduct from 'organisms-page/hero-product';
+import Ubr from 'organisms-page/ubr';
+import Examples from 'organisms-page/examples';
+import Colors from 'organisms-page/colors';
 import data from './materials.stories.data';
 
 storiesOf('templates|materials', module)
@@ -8,6 +12,12 @@ storiesOf('templates|materials', module)
         'Materials',
         () => {
             return {
+                components: {
+                    HeroProduct,
+                    Ubr,
+                    Examples,
+                    Colors
+                },
                 data: () => ({
                     ...data
                 }),

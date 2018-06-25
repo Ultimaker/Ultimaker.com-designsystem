@@ -1,5 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
+import Cases from 'organisms-page/cases';
 import data from './cases.stories.json';
 
 storiesOf('organisms|cases', module)
@@ -11,16 +12,21 @@ storiesOf('organisms|cases', module)
                 description = text('Description', data.description),
                 buttonIcon = text('Button icon', data.buttonIcon),
                 buttonLabel = text('Button label', data.buttonLabel),
-                image = object('Image', data.image);
+                image = object('Image', data.image),
+                videoId = text('Description', data.videoId);
 
             return {
+                components: {
+                    Cases
+                },
                 data: () => ({
                     cases: {
                         title,
                         description,
                         buttonIcon,
                         buttonLabel,
-                        image
+                        image,
+                        videoId
                     }
                 }),
                 template: require('./cases.stories.html')
