@@ -24,9 +24,9 @@ describe('components', () => {
                 const vm = mount(buildOptions);
 
                 expect(vm.$el).toBeDefined();
-                expect(vm.$el.querySelector('h1').innerText).toEqual('page title');
+                expect(vm.$el.querySelector('h1').innerText).toEqual(fixture.properties.title);
                 expect(vm.$el.querySelector('.copy--intro').innerText)
-                    .toEqual(buildOptions.props.description);
+                    .toEqual(fixture.properties.description);
                 expect(vm.$el.querySelectorAll('.hero__link-list li').length).toEqual(2);
                 expect(vm.$el.querySelectorAll('.price-table__item').length).toEqual(1);
                 vm.$destroy();
