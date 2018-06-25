@@ -15,8 +15,8 @@ describe('components', () => {
                 }).$mount();
 
                 expect(vm.$el).toBeDefined();
-                expect(vm.desktopImage).toEqual('http://desktop/image');
-                expect(vm.mobileImage).toEqual('http://mobile/image');
+                expect(vm.desktopImage.url).toEqual('http://desktop/image');
+                expect(vm.mobileImage.url).toEqual('http://mobile/image');
                 vm.$destroy();
             });
 
@@ -29,7 +29,7 @@ describe('components', () => {
                 }).$mount();
 
                 expect(vm.$el).toBeDefined();
-                expect(vm.mobileImage).toEqual('http://mobile/image');
+                expect(vm.mobileImage.url).toEqual('http://mobile/image');
                 expect(vm.desktopImage).toEqual('');
                 vm.$destroy();
             });
