@@ -1,5 +1,3 @@
-import Vue from 'vue';
-
 export default {
     name: 'horizontal-list',
     template: require('./horizontal-list.html'),

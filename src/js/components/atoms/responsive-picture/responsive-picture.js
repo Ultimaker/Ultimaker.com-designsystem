@@ -90,7 +90,7 @@ export default {
             this.loaded = true;
         });
     },
-    destroyed() {
+    beforeDestroy() {
         if (this.lazy) {
             this.viewportUtil.removeResizeHandler(this.calculateInView);
             this.viewportUtil.removeScrollHandler(this.calculateInView);
