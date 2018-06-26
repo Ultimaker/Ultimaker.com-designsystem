@@ -9,7 +9,11 @@ import {build} from 'vuenit';
 describe('components', () => {
     describe('page', () => {
         const fixture = require('./colors.unit.spec.json');
-        const mount = build(Colors, {});
+        const mount = build(Colors, {
+            components: {
+                'hit-area': `<div class="hit-area"><slot></slot></div>`
+            }
+        });
 
         describe('colors', () => {
             it('should render the "colors" organism', () => {
@@ -57,7 +61,7 @@ describe('components', () => {
                     },
                     vm = mount(buildOptions);
 
-                const currentTarget = vm.$el.querySelectorAll('hit-area')[1];
+                const currentTarget = vm.$el.querySelectorAll('.hit-area')[1];
                 let classes = '',
                     currentX = -36;
 

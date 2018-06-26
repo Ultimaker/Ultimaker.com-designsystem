@@ -6,7 +6,11 @@ describe('components', () => {
     describe('molecules', () => {
         describe('flyout-section', () => {
             const fixture = require('./flyout-section.unit.spec.json'),
-                mount = build(FlyoutSection, {});
+                mount = build(FlyoutSection, {
+                    components: {
+                        'content-link': `<div><slot></slot></div>`
+                    }
+                });
 
             it('should render a "flyout-section"', () => {
                 const vm = mount({});

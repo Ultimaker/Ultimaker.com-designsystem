@@ -33,7 +33,7 @@ describe('components', () => {
                     content = card.querySelector('.card__content'),
                     title = card.querySelector('.card__headline'),
                     description = card.querySelector('.card__description'),
-                    link = card.querySelector('content-link');
+                    link = card.querySelector('.card__link');
 
                 it('should render a "card" molecule', () => {
                     expect(card).toBeDefined();
