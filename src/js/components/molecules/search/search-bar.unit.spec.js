@@ -1,16 +1,21 @@
 /* eslint-disable max-nested-callbacks */
 import {build} from 'vuenit';
 import SearchBar from './search-bar';
+import IconButton from 'molecules/icon-button';
 
 describe('components', () => {
     describe('molecules', () => {
         describe('search-bar', () => {
-            const mount = build(SearchBar);
+            const mount = build(SearchBar, {
+                components: {
+                    'icon-button': IconButton
+                }
+            });
 
             it('should render a search bar', () => {
                 const vm = mount();
 
-                const searchButton = vm.$el.querySelectorAll('[button-class*="search__button"]');
+                const searchButton = vm.$el.querySelectorAll('.search__button');
 
                 expect(vm.$refs.search__input.nodeName).toEqual('INPUT');
                 expect(vm.searchValue).toEqual('');
@@ -25,7 +30,7 @@ describe('components', () => {
                 vm.$mount();
 
                 const clickEvent = new window.Event('click'),
-                    searchButton = vm.$el.querySelector('[button-class*="search__button"]');
+                    searchButton = vm.$el.querySelector('.search__button');
 
                 vm.searchValue = 'something';
                 searchButton.dispatchEvent(clickEvent);
@@ -41,7 +46,7 @@ describe('components', () => {
                 vm.$mount();
 
                 const clickEvent = new window.Event('click'),
-                    searchButton = vm.$el.querySelector('[button-class*="search__button"]');
+                    searchButton = vm.$el.querySelector('.search__button');
 
                 searchButton.dispatchEvent(clickEvent);
                 expect(vm.doSearch).toHaveBeenCalledTimes(1);
