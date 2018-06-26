@@ -194,7 +194,7 @@ export default Vue.component('tabbable-definition-list', {
         this.updateElementPositions();
         this.viewport.addResizeHandler(this.updateElementPositions);
     },
-    destroyed() {
+    beforeDestroy() {
         this.viewport.removeResizeHandler(this.updateElementPositions);
     }
 });

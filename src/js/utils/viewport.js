@@ -169,7 +169,11 @@ class ViewportUtility {
     }
 
     removeResizeHandler(handler) {
-        _resizeHandlers.filter(h => h !== handler);
+        // not using filter because _resizeHandler is a constant
+        const index = _resizeHandlers.indexOf(handler);
+
+        if (index < 0) { return; }
+        _resizeHandlers.splice(index, 1);
     }
 
     triggerResize() {
@@ -181,7 +185,11 @@ class ViewportUtility {
     }
 
     removeScrollHandler(handler) {
-        _scrollHandlers.filter(h => h !== handler);
+        // not using filter because _scrollHandlers is a constant
+        const index = _scrollHandlers.indexOf(handler);
+
+        if (index < 0) { return; }
+        _scrollHandlers.splice(index, 1);
     }
 
     addOrientationChangeHandler(handler) {
@@ -189,7 +197,11 @@ class ViewportUtility {
     }
 
     removeOrientationChangeHandler(handler) {
-        _orientationChangeHandlers.filter(h => h !== handler);
+        // not using filter because _scrollHandlers is a constant
+        const index = _orientationChangeHandlers.indexOf(handler);
+
+        if (index < 0) { return; }
+        _orientationChangeHandlers.splice(index, 1);
     }
 }
 

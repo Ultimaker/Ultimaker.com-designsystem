@@ -74,7 +74,7 @@ export default {
         this.moveToCurrentPosition();
         this.viewport.addResizeHandler(this.resizeHandler);
     },
-    destroyed() {
+    beforeDestroy() {
         this.viewport.removeResizeHandler(this.resizeHandler);
     }
 };
