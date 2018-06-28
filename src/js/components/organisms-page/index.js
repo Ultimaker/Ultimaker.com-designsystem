@@ -1,11 +1,25 @@
-import './brands';
-import './brands-large';
-import './cases';
-import './colors';
-import './ecosystem';
-import './general-content';
-import './hero-product';
-import './hero-products-application';
-import './hero-text';
-import './slider-reveal';
-import './ubr';
+import Brands from './brands';
+import BrandsLarge from './brands-large';
+import Cases from './cases';
+import Colors from './colors';
+import Ecosystem from './ecosystem';
+import GeneralContent from './general-content';
+import HeroProduct from './hero-product';
+import HeroProductsApplication from './hero-products-application';
+import HeroText from './hero-text';
+import SliderReveal from './slider-reveal';
+import Ubr from './ubr';
+
+export {
+    Brands,
+    BrandsLarge,
+    Cases,
+    Colors,
+    Ecosystem,
+    GeneralContent,
+    HeroProduct,
+    HeroProductsApplication,
+    HeroText,
+    SliderReveal,
+    Ubr
+};

@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('faux-store-commit', {
+export default {
     name: 'faux-store-commit',
     render: () => ({}),
     props: {
@@ -15,4 +13,4 @@ export default Vue.component('faux-store-commit', {
     created() {
         this.$store.commit(this.mutation, this.data);
     }
-});
+};

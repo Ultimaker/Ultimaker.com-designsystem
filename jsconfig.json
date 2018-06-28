@@ -12,6 +12,7 @@
             "src/*": ["./src/*"],
             "js/*": ["./src/js/*"],
             "adapters/*": ["./src/js/adapters/*"],
+            "components": ["./src/js/components"],
             "components/*": ["./src/js/components/*"],
             "atoms/*": ["./src/js/components/atoms/*"],
             "molecules/*": ["./src/js/components/molecules/*"],
