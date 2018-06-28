@@ -1,5 +1,4 @@
 import '../scss/ultimaker.scss';
-import './directives';
 import * as components from './components';
 // import all icons from src/icons/.. as svg sprite
 /* eslint-disable no-unused-vars */
