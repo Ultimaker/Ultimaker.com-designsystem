@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "description": "Ultimaker.com design system for vue components",
   "license": "UNLICENSED",
-  "main": "src/js/index.js",
-  "entry": "src/js/index.js",
+  "main": "dist/components.js",
+  "sideEffects": false,
   "files": [
-    "src"
+    "src", "dist"
   ],
   "private": true,
   "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config webpack.commonjs.config.js --progress --hide-modules",
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.commonjs.config.js --progress --hide-modules",
     "build-storybook": "build-storybook -s public",
     "storybook": "start-storybook -p 9090 -s public",
     "test": "npm run unit",
@@ -83,9 +85,12 @@
     "vue-template-compiler": "2.5.16",
     "vuenit": "^1.2.0",
     "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2",
-    "webpack-svgstore-plugin": "^4.0.3"
+    "webpack-node-externals": "^1.7.2",
+    "webpack-svgstore-plugin": "^4.0.3",
+    "webpack-visualizer-plugin": "^0.1.11"
   },
   "browserslist": "> 0.25%, not ie <= 10, not ie_mob < 100"
 }

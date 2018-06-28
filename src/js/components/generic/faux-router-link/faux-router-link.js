@@ -1,14 +1,10 @@
-import Vue from 'vue';
-
-const toTypes = [String, Object];
-
-export default Vue.component('router-link', {
+export default {
     name: 'router-link',
     template: `<a :href="href"><slot></slot></a>`,
     props: {
         to: {
             required: true,
-            type: toTypes
+            type: [String, Object]
         }
     },
     computed: {
@@ -20,4 +16,4 @@ export default Vue.component('router-link', {
             return this.to;
         }
     }
-});
+};

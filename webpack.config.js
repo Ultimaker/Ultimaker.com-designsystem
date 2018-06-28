@@ -10,7 +10,7 @@ const webpackConfig = {
     output: {
         path: path.resolve(__dirname, './static'),
         publicPath: '/static/',
-        filename: 'build.js',
+        filename: 'build.js'
     },
     module: {
         rules: [
@@ -38,14 +38,6 @@ const webpackConfig = {
             {
                 test: /\.html$/,
                 use: 'html-loader'
-            },
-            {
-                test: /\.(sass|scss)$/,
-                use: [
-                    {loader: 'style-loader'},
-                    {loader: 'css-loader', options: {sourceMap: true}},
-                    {loader: 'sass-loader', options: {sourceMap: true}}
-                ]
             }
         ]
     },

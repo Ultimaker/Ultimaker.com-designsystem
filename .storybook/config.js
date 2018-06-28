@@ -5,9 +5,14 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import 'src/js';
 import 'src/scss/storybook.scss';
-import 'components/generic/faux-router-link/faux-router-link';
+import Placeholder from 'components/generic/placeholder';
+import FauxRouterLink from 'components/generic/faux-router-link/faux-router-link';
 import storyRoot from 'src/stories/story.root.js';
 import viewPort from "src/js/utils/viewport";
+
+
+Vue.component('router-link', FauxRouterLink);
+Vue.component('placeholder', Placeholder);
 
 setOptions({
     hierarchyRootSeparator: /\|/,
