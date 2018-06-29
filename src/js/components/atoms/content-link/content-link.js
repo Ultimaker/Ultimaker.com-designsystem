@@ -1,11 +1,8 @@
-import Icon from 'atoms/icon';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('content-link', {
     name: 'content-link',
     template: require('./content-link.html'),
-    components: {
-        Icon
-    },
     props: {
         block: {
             type: String,
@@ -45,4 +42,4 @@ export default {
             return classes;
         }
     }
-};
+});

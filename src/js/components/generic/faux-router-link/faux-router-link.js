@@ -1,4 +1,6 @@
-export default {
+import Vue from 'vue';
+
+export default Vue.component('router-link', {
     name: 'router-link',
     template: `<a :href="href"><slot></slot></a>`,
     props: {
@@ -16,4 +18,4 @@ export default {
             return this.to;
         }
     }
-};
+});

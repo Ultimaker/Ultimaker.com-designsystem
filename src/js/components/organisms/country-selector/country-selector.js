@@ -1,7 +1,8 @@
 import {mapGetters} from 'vuex';
 import _find from 'lodash/find';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('country-selector', {
     name: 'country-selector',
     template: require('./country-selector.html'),
     data: () => ({
@@ -95,4 +96,4 @@ export default {
     beforeMount() {
         this.init();
     }
-};
+});

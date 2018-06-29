@@ -1,11 +1,8 @@
-import Icon from 'atoms/icon';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('content-toggle', {
     name: 'content-toggle',
     template: require('./content-toggle.html'),
-    components: {
-        Icon
-    },
     props: {
         toggleState: {
             type: Boolean,
@@ -42,4 +39,4 @@ export default {
             this.$emit('toggle');
         }
     }
-};
+});

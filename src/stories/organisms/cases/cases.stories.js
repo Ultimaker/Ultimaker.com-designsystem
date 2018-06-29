@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
-import Cases from 'organisms-page/cases';
 import data from './cases.stories.json';
 
 storiesOf('organisms|cases', module)
@@ -16,9 +15,6 @@ storiesOf('organisms|cases', module)
                 videoId = text('Description', data.videoId);
 
             return {
-                components: {
-                    Cases
-                },
                 data: () => ({
                     cases: {
                         title,

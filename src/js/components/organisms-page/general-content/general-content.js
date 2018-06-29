@@ -1,13 +1,8 @@
-import ResponsivePicture from 'atoms/responsive-picture';
-import ContentLink from 'atoms/content-link';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('general-content', {
     name: 'general-content',
     template: require('./general-content.html'),
-    components: {
-        ContentLink,
-        ResponsivePicture
-    },
     props: {
         title: {
             type: String,
@@ -29,4 +24,4 @@ export default {
             type: Object
         }
     }
-};
+});

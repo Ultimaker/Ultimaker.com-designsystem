@@ -1,13 +1,11 @@
+import Vue from 'vue';
 import {TimelineLite, TweenLite, Power3} from 'gsap';
 import ViewportUtil from 'utils/viewport';
-import Icon from 'atoms/icon';
 
-export default {
+
+export default Vue.component('pager', {
     name: 'pager',
     template: require('./pager.html'),
-    components: {
-        Icon
-    },
     data: () => ({
         indicatorActive: false,
         viewport: new ViewportUtil()
@@ -77,4 +75,4 @@ export default {
     beforeDestroy() {
         this.viewport.removeResizeHandler(this.resizeHandler);
     }
-};
+});

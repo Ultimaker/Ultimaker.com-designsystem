@@ -1,6 +1,7 @@
+import Vue from 'vue';
 import Arithmetic from 'utils/arithmetic';
 
-export default {
+export default Vue.component('currency', {
     name: 'currency',
     template: require('./currency.html'),
     props: {
@@ -22,4 +23,4 @@ export default {
             return Arithmetic.fixedNumber(this.amount, this.decimals);
         }
     }
-};
+});

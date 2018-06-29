@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text} from '@storybook/addon-knobs';
-import Icon from 'atoms/icon';
 import data from './images.stories.json';
 
 const stories = storiesOf('Atoms|media/icons', module)
@@ -9,9 +8,6 @@ const stories = storiesOf('Atoms|media/icons', module)
         'Icon',
         () => {
             return {
-                components: {
-                    Icon
-                },
                 data: () => ({
                     iconName: text('Icon name', 'menu')
                 }),
@@ -59,9 +55,6 @@ iconTypes.forEach((iconType) => {
         iconType.title,
         () => {
             return {
-                components: {
-                    Icon
-                },
                 inject: ['data'],
                 data: () => ({
                     iconModifierPrefix: iconType.iconModifierPrefix,

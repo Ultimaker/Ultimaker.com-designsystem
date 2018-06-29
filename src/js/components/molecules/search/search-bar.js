@@ -1,11 +1,8 @@
-import IconButton from 'molecules/icon-button';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('search-bar', {
     name: 'search-bar',
     template: require('./search-bar.html'),
-    components: {
-        IconButton
-    },
     data: () => ({
         searchValue: ''
     }),
@@ -37,4 +34,4 @@ export default {
             this.$refs.search__input.focus();
         }
     }
-};
+});

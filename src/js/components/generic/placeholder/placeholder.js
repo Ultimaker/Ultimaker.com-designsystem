@@ -1,6 +1,7 @@
 import Arithmetic from 'utils/arithmetic';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('placeholder', {
     name: 'placeholder',
     template: require('./placeholder.html'),
     props: {
@@ -22,4 +23,4 @@ export default {
             return `${ ratioWidth }:${ ratioHeight }`;
         }
     }
-};
+});

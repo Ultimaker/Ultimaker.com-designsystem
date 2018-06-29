@@ -1,20 +1,14 @@
 import {mapGetters} from 'vuex';
 import {TweenLite} from 'gsap';
 import {Power0} from 'gsap';
-import IconButton from 'molecules/icon-button';
-import Pager from 'molecules/pager';
-import TabbableDefinitionList from 'atoms/tabbable-definition-list';
+import Vue from 'vue';
+
 
 const defaultAnimationDuration = 1;
 
-export default {
+export default Vue.component('explore', {
     name: 'explore',
     template: require('./explore.html'),
-    components: {
-        Pager,
-        TabbableDefinitionList,
-        IconButton
-    },
     data: () => ({
         activeSlide: 0
     }),
@@ -71,4 +65,4 @@ export default {
             );
         }
     }
-};
+});

@@ -1,13 +1,9 @@
-import ContentLink from 'atoms/content-link';
-import ContentToggle from 'molecules/content-toggle';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('flyout-section', {
     name: 'flyout-section',
     template: require('./flyout-section.html'),
-    components: {
-        ContentLink,
-        ContentToggle
-    },
+
     data() {
         return {
             columnClassDouble: 'flyout__section--2-columns',
@@ -69,4 +65,4 @@ export default {
             return '';
         }
     }
-};
+});

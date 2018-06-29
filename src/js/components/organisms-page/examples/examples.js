@@ -1,13 +1,8 @@
-import HorizontalList from 'atoms/horizontal-list';
-import Card from 'molecules/card';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('examples', {
     name: 'examples',
     template: require('./examples.html'),
-    components: {
-        HorizontalList,
-        Card
-    },
     props: {
         title: {
             type: String,
@@ -21,4 +16,4 @@ export default {
             type: Object
         }
     }
-};
+});

@@ -1,18 +1,7 @@
-import HitArea from 'atoms/hit-area';
-import Tooltip from 'atoms/tooltip';
-import ContentLink from 'atoms/content-link';
-import Color from 'molecules/color';
-import CmsImage from 'organisms/cms-image';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('colors', {
     name: 'colors',
-    components: {
-        ContentLink,
-        Color,
-        HitArea,
-        Tooltip,
-        CmsImage
-    },
     template: require('./colors.html'),
     data: () => ({
         activeColor: null,
@@ -96,4 +85,4 @@ export default {
             });
         }
     }
-};
+});

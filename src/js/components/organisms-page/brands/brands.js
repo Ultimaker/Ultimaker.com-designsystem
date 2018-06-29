@@ -1,10 +1,7 @@
-import BrandCard from 'molecules/brand-card';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('brands', {
     name: 'brands',
-    components: {
-        BrandCard
-    },
     template: require('./brands.html'),
     props: {
         title: {
@@ -19,4 +16,4 @@ export default {
             type: Object
         }
     }
-};
+});

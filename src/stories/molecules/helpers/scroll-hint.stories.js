@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, select} from '@storybook/addon-knobs';
-import {AnimatedArrow} from 'components';
 import data from './scroll-hint.stories.json';
 
 storiesOf('Molecules|helpers', module)
@@ -8,9 +7,6 @@ storiesOf('Molecules|helpers', module)
     .add(
         'Scroll hint',
         () => ({
-            components: {
-                AnimatedArrow
-            },
             data: () => ({
                 direction: select('Direction', data.directions.map(t => t.title), data.defaultDirection),
                 directions: data.directions
