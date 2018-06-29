@@ -73,26 +73,8 @@ const webpackConfig = {
     ])
 };
 
-// if (production) {
-//     webpackConfig.plugins.push(
-//         new webpack.LoaderOptionsPlugin({
-//             minimize: true
-//         }),
-//         new Visualizer({
-//             filename: resolve('dist') + 'statistics.html'
-//         })
-//     );
-// }
-
 const mergedConfig = merge(base, webpackConfig);
 
-// replace all vue defined loaders with one that uses ExtractTextPlugin
-// const loadersToAdd = loaders.styleLoaders({sourceMap: true, extract: true, namespace: '.um-components'});
-
-// webpackConfig.module.rules = webpackConfig.module.rules.filter(rule => !(Array.isArray(rule.use) && rule.use[0] === 'vue-style-loader'));
-// webpackConfig.module.rules = webpackConfig.module.rules.filter(rule => !(Array.isArray(rule.use) && rule.use[1].loader === 'vue-style-loader'));
-// webpackConfig.module.rules = webpackConfig.module.rules.concat(loadersToAdd);
-
-console.log(require('util').inspect(mergedConfig.module.rules, false, null));
+// console.log(require('util').inspect(mergedConfig.module.rules, false, null));
 // process.exit(1);
 module.exports = mergedConfig;
