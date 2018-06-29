@@ -1,4 +1,4 @@
-import ResponsivePicture from 'atoms/responsive-picture';
+import Vue from 'vue';
 
 function getImage(image, orientation, device) {
     const format = `${ orientation }_${ device }`;
@@ -10,11 +10,8 @@ function getImage(image, orientation, device) {
     return '';
 }
 
-export default {
+export default Vue.component('cms-image', {
     name: 'cms-image',
-    components: {
-        ResponsivePicture
-    },
     template: require('./cms-image.html'),
     props: {
         image: {
@@ -52,4 +49,4 @@ export default {
             }
         }
     }
-};
+});

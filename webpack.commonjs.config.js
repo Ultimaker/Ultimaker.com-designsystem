@@ -21,20 +21,38 @@ const webpackConfig = {
         path: resolve('dist'),
         publicPath: '/dist',
         library: 'components',
-        libraryTarget: 'commonjs',
+        libraryTarget: 'commonjs2',
         filename: `[name].js`,
         chunkFilename: `[name].bundle.js`
     },
     optimization: {
         minimize: false
     },
-    externals: [
-        'gsap',
-        'vue',
-        'vuex',
-        /^lodash\/.+$/,
-        'core-js'
-    ],
+    externals: {
+        'gsap': {
+            root: 'GreenSockGlobals'
+        },
+        'vue': {
+            amd: 'vue',
+            commonjs: 'vue',
+            commonjs2: 'vue'
+        },
+        'vuex': {
+            amd: 'vuex',
+            commonjs: 'vuex',
+            commonjs2: 'vuex'
+        },
+        '/^lodash\/.+$/': {
+            amd: 'lodash',
+            commonjs: 'lodash',
+            commonjs2: 'lodash'
+        },
+        'core-js': {
+            amd: 'core-js',
+            commonjs: 'core-js',
+            commonjs2: 'core-js'
+        }
+    },
     module: {
         rules: [
             {

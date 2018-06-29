@@ -1,11 +1,8 @@
-import Card from 'molecules/card';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('ecosystem', {
     name: 'ecosystem',
     template: require('./ecosystem.html'),
-    components: {
-        Card
-    },
     props: {
         title: {
             type: String,
@@ -16,4 +13,4 @@ export default {
             required: true
         }
     }
-};
+});

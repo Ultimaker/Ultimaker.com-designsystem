@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object, boolean} from '@storybook/addon-knobs';
-import GeneralContent from 'organisms-page/general-content';
 import data from './general-content.stories.json';
 
 storiesOf('organisms|general-content', module)
@@ -15,9 +14,6 @@ storiesOf('organisms|general-content', module)
                 image = object('Image', data.image);
 
             return {
-                components: {
-                    GeneralContent
-                },
                 data: () => ({
                     generalContent: {
                         title,

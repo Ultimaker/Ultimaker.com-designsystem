@@ -1,11 +1,8 @@
-import FlyoutSection from 'molecules/flyout-section';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('flyout', {
     name: 'flyout',
     template: require('./flyout.html'),
-    components: {
-        FlyoutSection
-    },
     data() {
         return {
             linkIndex: 0,
@@ -146,4 +143,4 @@ export default {
             flyoutSections[this.sectionIndex].querySelector('a').focus();
         }
     }
-};
+});

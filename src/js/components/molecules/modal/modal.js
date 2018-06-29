@@ -1,15 +1,12 @@
 import {TweenLite, TimelineLite} from 'gsap';
 import {Power2} from 'gsap';
-import IconButton from 'molecules/icon-button';
+import Vue from 'vue';
+
 
 /* eslint-disable no-invalid-this */
-
-export default {
+export default Vue.component('modal', {
     name: 'modal',
     template: require('./modal.html'),
-    components: {
-        IconButton
-    },
     data: () => ({
         iframeLoaded: false
     }),
@@ -65,4 +62,4 @@ export default {
             timeLine.call(done);
         }
     }
-};
+});

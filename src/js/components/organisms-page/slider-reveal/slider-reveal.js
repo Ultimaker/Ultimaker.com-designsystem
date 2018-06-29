@@ -1,15 +1,10 @@
 import ViewportUtil from 'utils/viewport';
 import {TweenLite, TimelineLite, Power2} from 'gsap';
-import ContentLink from 'atoms/content-link';
-import ResponsivePicture from 'atoms/responsive-picture';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('slider-reveal', {
     name: 'slider-reveal',
     template: require('./slider-reveal.html'),
-    components: {
-        ContentLink,
-        ResponsivePicture
-    },
     props: {
         styleModifiers: {
             type: Array,
@@ -118,4 +113,4 @@ export default {
             this.scroll();
         }
     }
-};
+});

@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
-import Brands from 'organisms-page/brands';
 import data from './brands.stories.json';
 
 storiesOf('organisms|brands', module)
@@ -12,9 +11,6 @@ storiesOf('organisms|brands', module)
             const brands = object('Brands', data.brands);
 
             return {
-                components: {
-                    Brands
-                },
                 data: () => ({
                     title,
                     brands

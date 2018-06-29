@@ -1,10 +1,7 @@
-import ResponsivePicture from 'atoms/responsive-picture';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('brand-card', {
     name: 'brand-card',
-    components: {
-        ResponsivePicture
-    },
     template: require('./brand-card.html'),
     props: {
         body: {
@@ -20,4 +17,4 @@ export default {
             default: () => ({})
         }
     }
-};
+});

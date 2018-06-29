@@ -1,4 +1,6 @@
-export default {
+import Vue from 'vue';
+
+export default Vue.component('hero-text', {
     name: 'hero-text',
     template: require('./hero-text.html'),
     props: {
@@ -11,4 +13,4 @@ export default {
             required: true
         }
     }
-};
+});

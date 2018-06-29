@@ -1,15 +1,8 @@
-import ContentLink from 'atoms/content-link';
-import ResponsivePicture from 'atoms/responsive-picture';
-import Icon from 'atoms/icon';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('card', {
     name: 'card',
     template: require('./card.html'),
-    components: {
-        ContentLink,
-        Icon,
-        ResponsivePicture
-    },
     props: {
         block: {
             type: String,
@@ -31,4 +24,4 @@ export default {
             return classes;
         }
     }
-};
+});

@@ -1,12 +1,8 @@
 import Vue from 'vue';
-import ResponsivePicture from 'atoms/responsive-picture';
 
-export default {
+export default Vue.component('ubr', {
     name: 'ubr',
     template: require('./ubr.html'),
-    components: {
-        ResponsivePicture
-    },
     props: {
         title: {
             type: String,
@@ -25,4 +21,4 @@ export default {
             required: true
         }
     }
-};
+});

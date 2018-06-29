@@ -1,16 +1,8 @@
-import Icon from 'atoms/icon';
-import ContentLink from 'atoms/content-link';
-import Currency from 'molecules/currency';
-import CmsImage from 'organisms/cms-image';
-export default {
+import Vue from 'vue';
+
+export default Vue.component('hero-product', {
     name: 'hero-product',
     template: require('./hero-product.html'),
-    components: {
-        Currency,
-        CmsImage,
-        ContentLink,
-        Icon
-    },
     props: {
         title: {
             type: String,
@@ -41,4 +33,4 @@ export default {
             required: true
         }
     }
-};
+});

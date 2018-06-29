@@ -1,17 +1,8 @@
 import Viewport from 'utils/viewport';
-import ResponsivePicture from 'atoms/responsive-picture';
-import YoutubeVideo from 'atoms/youtube-video';
-import Modal from 'molecules/modal';
-import IconButton from 'molecules/icon-button';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('cases', {
     name: 'cases',
-    components: {
-        IconButton,
-        ResponsivePicture,
-        YoutubeVideo,
-        Modal
-    },
     template: require('./cases.html'),
     data: () => ({
         viewport: new Viewport(),
@@ -53,4 +44,4 @@ export default {
             this.showVideo = !this.showVideo;
         }
     }
-};
+});

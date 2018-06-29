@@ -1,8 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, select} from '@storybook/addon-knobs';
 import {action} from '@storybook/addon-actions';
-import IconButton from 'molecules/icon-button';
-import ContentToggle from 'molecules/content-toggle';
 import data from './buttons.stories.json';
 
 storiesOf('Atoms|buttons', module)
@@ -32,9 +30,6 @@ storiesOf('Atoms|buttons', module)
                 selectedModifier = data.iconButtonModifiers.find((m) => m.title === modifier);
 
             return {
-                components: {
-                    IconButton
-                },
                 data: () => ({
                     modifier: selectedModifier.modifier,
                     showLabel: selectedModifier.showLabel
@@ -51,9 +46,6 @@ storiesOf('Atoms|buttons', module)
         'Content toggle',
         () => {
             return {
-                components: {
-                    ContentToggle
-                },
                 methods: {
                     toggle: action('toggle')
                 },

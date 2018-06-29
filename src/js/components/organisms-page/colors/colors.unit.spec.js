@@ -1,10 +1,9 @@
 /* eslint-disable max-nested-callbacks */
 import Colors from './colors';
+import {build} from 'vuenit';
 import 'organisms/cms-image';
 import 'atoms/responsive-picture';
 import 'atoms/tooltip';
-
-import {build} from 'vuenit';
 
 describe('components', () => {
     describe('page', () => {

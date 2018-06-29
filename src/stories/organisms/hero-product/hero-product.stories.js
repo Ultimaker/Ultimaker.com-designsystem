@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
-import HeroProduct from 'organisms-page/hero-product';
 import data from './hero-product.stories.json';
 
 storiesOf('organisms|hero', module)
@@ -15,9 +14,6 @@ storiesOf('organisms|hero', module)
             labels = object('Materials', data.labels);
 
         return {
-            components: {
-                HeroProduct
-            },
             data: () => ({
                 heroProduct: {
                     title,

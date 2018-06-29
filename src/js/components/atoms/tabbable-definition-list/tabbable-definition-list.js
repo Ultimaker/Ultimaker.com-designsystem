@@ -4,14 +4,10 @@ import {Power3} from 'gsap';
 import {Power0} from 'gsap';
 import Viewport from 'utils/viewport';
 import Defaults from 'constants/defaults';
-import Icon from 'atoms/icon';
 
 export default Vue.component('tabbable-definition-list', {
     name: 'tabbable-definition-list',
     template: require('./tabbable-definition-list.html'),
-    components: {
-        Icon
-    },
     data: () => ({
         viewport: new Viewport(),
         heights: []

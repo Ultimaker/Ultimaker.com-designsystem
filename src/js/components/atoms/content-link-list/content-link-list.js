@@ -1,9 +1,7 @@
 import Vue from 'vue';
-import contentLink from  'atoms/content-link';
 
-export default {
+export default Vue.component('content-link-list', {
     name: 'content-link-list',
-    components: {contentLink},
     template: require('./content-link-list.html'),
     props: {
         block: {
@@ -15,4 +13,4 @@ export default {
             default: () => []
         }
     }
-};
+});

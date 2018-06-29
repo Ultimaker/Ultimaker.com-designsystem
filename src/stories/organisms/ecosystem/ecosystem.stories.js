@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text, object} from '@storybook/addon-knobs';
-import Ecosystem from 'organisms-page/ecosystem';
 import data from './ecosystem.stories.json';
 
 storiesOf('organisms|ecosystem', module)
@@ -12,9 +11,6 @@ storiesOf('organisms|ecosystem', module)
                 items = object('Items', data.items);
 
             return {
-                components: {
-                    Ecosystem
-                },
                 data: () => ({
                     ecosystem: {
                         title,

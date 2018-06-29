@@ -12,7 +12,10 @@ describe('components', () => {
         describe('examples', () => {
             it('should render the "examples" organism', () => {
                 const buildOptions = {
-                        props: {...fixture.properties}
+                        props: {...fixture.properties},
+                        components: {
+                            card: `<div class="card"></div>`
+                        }
                     },
                     vm = mount(buildOptions),
                     examples = vm.$el,

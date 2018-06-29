@@ -1,11 +1,9 @@
-import Icon from 'atoms/icon';
+import Vue from 'vue';
 
-export default {
+
+export default Vue.component('color', {
     name: 'color',
     template: require('./color.html'),
-    components: {
-        Icon
-    },
     props: {
         background: {
             type: String,
@@ -48,5 +46,5 @@ export default {
             return styles;
         }
     }
-};
+});
 

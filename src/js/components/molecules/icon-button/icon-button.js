@@ -1,11 +1,8 @@
-import Icon from 'atoms/icon';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('icon-button', {
     name: 'icon-button',
     template: require('./icon-button.html'),
-    components: {
-        Icon
-    },
     props: {
         buttonClass: {
             type: String
@@ -26,4 +23,4 @@ export default {
             this.$el.focus();
         }
     }
-};
+});

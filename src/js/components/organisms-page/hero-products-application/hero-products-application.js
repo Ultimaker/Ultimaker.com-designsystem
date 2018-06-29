@@ -1,15 +1,8 @@
-import ResponsivePicture from 'atoms/responsive-picture';
-import ContentLink from 'atoms/content-link';
-import Icon from 'atoms/icon';
+import Vue from 'vue';
 
-export default {
+export default Vue.component('hero-products-application', {
     name: 'hero-products-application',
     template: require('./hero-products-application.html'),
-    components: {
-        ContentLink,
-        Icon,
-        ResponsivePicture
-    },
     props: {
         title: {
             required: true,
@@ -48,4 +41,4 @@ export default {
             type: Array
         }
     }
-};
+});
