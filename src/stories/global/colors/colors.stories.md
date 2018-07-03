@@ -1,3 +1,5 @@
+# Colors
+
 ## Brand colors
 
 The brand colors make the content being part of the Ultimaker brand. These colors are used to
