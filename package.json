@@ -6,7 +6,8 @@
   "main": "dist/components.js",
   "sideEffects": false,
   "files": [
-    "src", "dist"
+    "src",
+    "dist"
   ],
   "private": true,
   "scripts": {
