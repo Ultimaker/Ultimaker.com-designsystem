@@ -1,3 +1,5 @@
+## Image
+
 It's possible to serve images for several breakpoints, which means different crops if intended.
 
 The strategy is to deliver non-retina images for small screens (devices that might not be connected to a fast network and need mobile data) and retina for larger screens (device are most likely connected to a LAN or WLAN).
