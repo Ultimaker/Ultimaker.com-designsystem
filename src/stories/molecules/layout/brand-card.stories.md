@@ -1,6 +1,4 @@
----
-title: Card
----
+# Brand card
 
-A default *'card'* groups related information in a flexible-size container visually resembling a playing card.
-The card should at least contain an image, heading and a short description. It might also have a content link.
+A *'brand card'* groups a company logo and quote.
+The card should contain a logo and a short quote.

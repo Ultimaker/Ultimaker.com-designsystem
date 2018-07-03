@@ -1,3 +1,5 @@
+# Tooltip
+
 The *Tooltip* is a helper pattern for small explanations or information about the item the tooltip is used with in combination.
 
 Currently only used for specifications.

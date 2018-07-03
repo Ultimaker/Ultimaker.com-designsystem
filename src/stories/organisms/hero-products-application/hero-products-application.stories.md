@@ -1,3 +1,5 @@
+# Hero products (With application area)
+
 This hero is similar to the *'Product hero'* organism, which provides generic info and a call-to-action to sell the product.
 Additionally a section is added to showcase the application area of the specific product.
 If used, it should always be positioned as the first organism of the main content. As an introduction of the page.

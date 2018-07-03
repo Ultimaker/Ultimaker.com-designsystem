@@ -1,4 +1,4 @@
-## Image
+# Image
 
 It's possible to serve images for several breakpoints, which means different crops if intended.
 

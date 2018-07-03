@@ -1,7 +1,8 @@
-## YouTube Video
+# YouTube Video
+This component embeds a youtube video into the site and takes account of the preferences stored in the cookiebar. When user hasn't given consent to place cookies its loads the youtube-nocookie.com variant.
 
-This component embeds a youtube video into the site and takes account of the preferences stored in the cookiebar. When user hasn't given consent to place cookies its loads the youtube-nocookie.com variant. This component supports the following properties:
-
+## Properties
+This component supports the following properties:
 - *autoplay:* autoplay video, *default: false*
 - *modestbranding:* show limited youtube branding, like small logo, *default: true*
 - *controls:* show controls, *default: true*
@@ -12,6 +13,7 @@ This component embeds a youtube video into the site and takes account of the pre
 - *start:* start time of the video
 - *end:* end after x seconds
 
+## Modifiers
 Aspect ratio can be modified with the following classes:
 - *youtube-video--four-three*
 - *youtube-video--eighteen-nine*

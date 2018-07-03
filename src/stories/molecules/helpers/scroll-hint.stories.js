@@ -17,5 +17,8 @@ storiesOf('Molecules|helpers', module)
                 }
             },
             template: require('./scroll-hint.stories.html')
-        })
+        }),
+        {
+            notes: {markdown: require('./scroll-hint.stories.md')}
+        }
     );

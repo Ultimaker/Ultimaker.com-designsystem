@@ -1,3 +1,5 @@
+# General content
+
 Used to display short copy and an image to highlight a specific topic.
 It's possible to flip the layout on larger screens.
 
