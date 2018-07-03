@@ -1,0 +1,13 @@
+.reseller-card {
+    display: flex;
+    flex-direction: column;
+    background: $colorWhite;
+    padding: $buildingUnit;
+    color: $colorBlack;
+
+    @include  micro-animate(color, background);
+
+    &:hover {
+        background: darken($colorWhite, $tintHoverFocus);
+    }
+}
