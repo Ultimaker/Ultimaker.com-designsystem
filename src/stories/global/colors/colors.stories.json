@@ -3,22 +3,6 @@
         {
             "color": "#0CA9E3",
             "text" : "$colorMain"
-        },
-        {
-            "color": "#EA5354",
-            "text" : "$colorError"
-        },
-        {
-            "color": "#EA5354",
-            "text" : "$colorLike"
-        },
-        {
-            "color": "#87D128",
-            "text" : "$colorOnline"
-        },
-        {
-            "color": "#CC001A",
-            "text" : "$colorNotification"
         }
     ],
     "grayscaleColors": [

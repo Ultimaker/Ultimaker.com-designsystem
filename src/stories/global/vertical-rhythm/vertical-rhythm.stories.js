@@ -1,4 +1,5 @@
 import {storiesOf} from '@storybook/vue';
+import notes from './vertical-rhythm.stories.md';
 
 storiesOf('global', module)
     .add(
@@ -14,5 +15,8 @@ storiesOf('global', module)
                 <p>It's not necessary to be on the baseline in every line of text, but in order to feel the balance it should be on
                     the grid within a couple of lines.</p>
             </div>`
-        })
+        }),
+        {
+            notes: {markdown: notes}
+        }
     );
