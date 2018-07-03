@@ -1,13 +1,98 @@
+.resellers {
+    @extend .organism;
+    @extend %reset-last-margin;
+}
+
+.reseller-section:not(:last-child) {
+    margin-bottom: 53px;
+}
+
+.reseller-section__header {
+    @include font-ratio-rhythm(sec-xs);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-s);
+    }
+
+    .reseller-section__info-link {
+        margin: 10px 0 0 0;
+    }
+
+    @include min-mobile-xl {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        .reseller-section__info-link {
+            margin-left: $buildingUnit * 2;
+            margin-top: 0;
+            margin-bottom: -4px; //reset wrong offset
+        }
+    }
+}
+
+.reseller-section__title,
+.reseller-section__info-link {
+    margin: 0;
+}
+
+.reseller-list {
+    @extend %reset-list;
+}
+
 .reseller-card {
+    $resellerCardBorderSize: 1px;
+
     display: flex;
     flex-direction: column;
-    background: $colorWhite;
-    padding: $buildingUnit;
+
+    max-width: 400px;
+
+    padding: ($buildingUnit * 1.5) - $resellerCardBorderSize;
+    margin-bottom: $buildingUnit;
+
     color: $colorBlack;
+    background: $colorWhite;
+
+    border: $resellerCardBorderSize solid $colorGrayLight;
+    box-sizing: border-box;
 
     @include  micro-animate(color, background);
 
     &:hover {
+        color: $colorBlack;
         background: darken($colorWhite, $tintHoverFocus);
+    }
+
+    &:focus {
+        border-color: lighten($colorMain, $tintHoverFocus);
+        & > *,
+        & > * > * {
+            color: $colorWhite;
+        }
+    }
+
+    &__info {
+        color: $colorGrayDark;
+    }
+}
+
+.reseller-badge {
+    color: $colorMain;
+    @include micro-animate(color);
+
+    &__icon {
+        color: inherit;
+
+        font-size: 1em;
+        transform: translateY(0.1em);
+    }
+
+    &__label {
+        font-weight: bold;
+    }
+
+    &--inline {
+        display: inline;
     }
 }

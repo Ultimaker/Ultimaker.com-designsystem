@@ -1,5 +1,9 @@
-<a class="reseller-card">
-    <h3 class="reseller-card__title">Reseller name</h3>
-    <small>3 showrooms</small>
-    <small>min. 5,4 km</small>
-</a>
+<router-link class="reseller-card" tabindex="0">
+    <h4 class="reseller-card__title">
+        {{name}}
+        <small class="reseller-badge reseller-badge--inline" v-if="preferred">
+            <icon :icon-name="'rate-solid'" class="reseller-badge__icon"></icon>
+        </small>
+    </h4>
+    <!--<small class="reseller-card__info" v-if="showrooms">{{showrooms.length}}</small>-->
+</router-link>
