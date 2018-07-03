@@ -1,2 +1,2 @@
-import ResellerCard from './reseller-card.html';
+import ResellerCard from './reseller-card';
 export default ResellerCard;
