@@ -1,1 +1,1 @@
-Ordered lists are used to summarize items in a specific order.
+To summarize items in a specific order ordered lists are used.

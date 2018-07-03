@@ -1,1 +1,3 @@
-Unordered lists are used to summarize items in any order.
+## Unordered list
+
+To summarize items in any order unordered lists are used.

@@ -7,7 +7,6 @@ focus on e.g. call-to-actions or notifications.
 
 ## Grayscale colors
 
-
 The grayscale colors give contrast within a section or page of content.
 
 **Be aware of accessibility and always check
