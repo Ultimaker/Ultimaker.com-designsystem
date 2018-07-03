@@ -1,3 +1,5 @@
+# Colors
+
 The *'Colors'* organism displays all colors available for a material or material family. It also has a call-to-action to sell the product.
 This organism should at least contain a title, color, image per color and a link to the resellers.
 
