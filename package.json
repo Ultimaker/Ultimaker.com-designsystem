@@ -10,8 +10,8 @@
   ],
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config webpack.commonjs.config.js --progress --hide-modules",
-    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.commonjs.config.js --progress --hide-modules",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.amd.config.js --progress --hide-modules",
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.amd.config.js --progress --hide-modules",
     "build-storybook": "build-storybook -s public",
     "storybook": "start-storybook -p 9090 -s public",
     "test": "npm run unit",
