@@ -27,4 +27,7 @@ storiesOf('organisms|slider-reveal', module)
             }),
             template: require('./slider-reveal.stories.html')
         };
+    },
+    {
+        notes: {markdown: require('./slider-reveal.stories.md')}
     });

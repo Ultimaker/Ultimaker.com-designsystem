@@ -1,6 +1,6 @@
 {
     "type": "general-content",
-    "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "title": "Lorem ipsum dolor sit amet",
     "text": [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?"
     ],
@@ -16,9 +16,8 @@
         },
         "tabletWidth": {
             "url": "/generator/svg/400/400",
-            "retina": {
-                "url": "/generator/svg/800/800"
-            }
+            "retinaUrl": "/generator/svg/800/800"
+
         }
     }
 }

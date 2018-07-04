@@ -1,5 +1,5 @@
 {
-    "title": "Printed on the Ultimaker model",
+    "title": "Lorem ipsum dolor sit amet",
     "horizontalList": {
         "label": "Optimized for:",
         "listItems": [
@@ -43,46 +43,46 @@
                 },
                 "tabletWidth": {
                     "url": "/generator/svg/400/400",
-                    "retina": {
-                        "url": "/generator/svg/800/800"
-                    }
-                }
-            },
-            "title": "Lorum ipsum",
-            "description": "Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
-            "contentLink": false
-        },
-        {
-            "image": {
-                "mobileWidth": {
-                    "url": "/generator/svg/400/400"
-                },
-                "tabletWidth": {
-                    "url": "/generator/svg/400/400",
-                    "retina": {
-                        "url": "/generator/svg/800/800"
-                    }
-                }
-            },
-            "title": "Dolor sit amet",
-            "description": "Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-            "contentLink": false
-        },
-        {
-            "image": {
-                "mobileWidth": {
-                    "url": "/generator/svg/400/400"
-                },
-                "tabletWidth": {
-                    "url": "/generator/svg/400/400",
-                    "retina": {
-                        "url": "/generator/svg/800/800"
-                    }
+                    "retinaUrl": "/generator/svg/800/800"
                 }
             },
             "title": "Apendiscing consectetuer",
             "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
-            "contentLink": false
+            "contentLink": {
+                "text": "Content-link"
+            }
+        },
+        {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/400/400"
+                },
+                "tabletWidth": {
+                    "url": "/generator/svg/400/400",
+                    "retinaUrl": "/generator/svg/800/800"
+                }
+            },
+            "title": "Apendiscing consectetuer",
+            "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+            "contentLink": {
+                "text": "Content-link"
+            }
+        },
+        {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/400/400"
+                },
+                "tabletWidth": {
+                    "url": "/generator/svg/400/400",
+                    "retinaUrl": "/generator/svg/800/800"
+                }
+            },
+            "title": "Apendiscing consectetuer",
+            "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+            "contentLink": {
+                "text": "Content-link"
+            }
         }
     ]
 }

@@ -1,4 +1,4 @@
-#Examples
+# Explore
 
 To explain the features of a product in a visual-dominant way, this organism can be used.
 
