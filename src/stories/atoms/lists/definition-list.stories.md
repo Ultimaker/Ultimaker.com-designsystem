@@ -1,1 +1,3 @@
-A list of titles and descriptions
+# Definition list
+
+A list of definitions described by titles and descriptions.

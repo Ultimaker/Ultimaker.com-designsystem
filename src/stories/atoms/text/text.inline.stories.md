@@ -1,3 +1,5 @@
+# Inline elements
+
 Certain content might need to be semantically declared with html tags.
 
 It's not necessary to specify with classes so it will always be styled correctly.

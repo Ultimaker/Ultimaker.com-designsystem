@@ -1,3 +1,5 @@
+# Justification
+
 Default columns or grid cells are placed next to each other.
 
 It's possible to have a specific spacing between the columns.

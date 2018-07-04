@@ -1,3 +1,5 @@
+#Examples
+
 To explain the features of a product in a visual-dominant way, this organism can be used.
 
 It will consist of a minimum of 3 and maximum of 5 features.

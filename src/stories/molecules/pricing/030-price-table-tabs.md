@@ -1,6 +1,4 @@
----
-title: Price Table Tabs
----
+# Price Table (With tabs)
 
 Displays more than 1 products with their prices. A tax disclaimer is added.
 
