@@ -2,12 +2,12 @@
     "card": {
         "image": [{
             "mobileWidth": {
-                "url": "/generator/svg/400/400"
+                "url": "/generator/svg/600/600"
             },
             "tabletWidth": {
-                "url": "/generator/svg/400/400",
+                "url": "/generator/svg/600/600",
                 "retina": {
-                    "url": "/generator/svg/800/800"
+                    "url": "/generator/svg/1200/1200"
                 }
             }
         }],
