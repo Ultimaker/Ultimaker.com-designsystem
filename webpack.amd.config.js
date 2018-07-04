@@ -21,7 +21,7 @@ const webpackConfig = {
         path: resolve('dist'),
         publicPath: '/dist',
         library: 'components',
-        libraryTarget: 'commonjs2',
+        libraryTarget: 'amd',
         filename: `[name].js`,
         chunkFilename: `[name].bundle.js`
     },
