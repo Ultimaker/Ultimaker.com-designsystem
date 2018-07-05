@@ -1,9 +1,7 @@
-import Vue from 'vue';
 import {TimelineLite, TweenLite, Power3} from 'gsap';
 import ViewportUtil from 'utils/viewport';
 
-
-export default Vue.component('pager', {
+export default {
     name: 'pager',
     template: require('./pager.html'),
     data: () => ({
@@ -75,4 +73,4 @@ export default Vue.component('pager', {
     beforeDestroy() {
         this.viewport.removeResizeHandler(this.resizeHandler);
     }
-});
+};

@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('flyout', {
+export default {
     name: 'flyout',
     template: require('./flyout.html'),
     data() {
@@ -143,4 +141,4 @@ export default Vue.component('flyout', {
             flyoutSections[this.sectionIndex].querySelector('a').focus();
         }
     }
-});
+};

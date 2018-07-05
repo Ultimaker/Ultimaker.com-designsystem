@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('hit-area', {
+export default {
     name: 'hit-area',
     template: require('./hit-area.html')
-});
+};

@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('hero-products-application', {
+export default {
     name: 'hero-products-application',
     template: require('./hero-products-application.html'),
     props: {
@@ -41,4 +39,4 @@ export default Vue.component('hero-products-application', {
             type: Array
         }
     }
-});
+};

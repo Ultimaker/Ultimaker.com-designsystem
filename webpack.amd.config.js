@@ -13,7 +13,8 @@ function resolve(dir) {
 }
 
 const webpackConfig = {
-    mode: 'development',
+    mode: 'production',
+    devtool: '#nosources-source-map',
     entry: {
         'components': './src/js/index.js'
     },
@@ -29,29 +30,10 @@ const webpackConfig = {
         minimize: false
     },
     externals: {
-        'gsap': {
-            root: 'GreenSockGlobals'
-        },
-        'vue': {
-            amd: 'vue',
-            commonjs: 'vue',
-            commonjs2: 'vue'
-        },
-        'vuex': {
-            amd: 'vuex',
-            commonjs: 'vuex',
-            commonjs2: 'vuex'
-        },
-        '/^lodash\/.+$/': {
-            amd: 'lodash',
-            commonjs: 'lodash',
-            commonjs2: 'lodash'
-        },
-        'core-js': {
-            amd: 'core-js',
-            commonjs: 'core-js',
-            commonjs2: 'core-js'
-        }
+        'gsap': 'gsap', // {root: 'GreenSockGlobals'},
+        'vuex': 'vuex',
+        '/^lodash\/.+$/': 'lodash',
+        'core-js': 'core-js'
     },
     module: {
         rules: [
@@ -66,10 +48,6 @@ const webpackConfig = {
         ]
     },
     plugins: (base.plugins || []).concat([
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
-            'process.BROWSER': true
-        }),
         new ExtractTextPlugin({
             filename: 'components.css',
             allChunks: true

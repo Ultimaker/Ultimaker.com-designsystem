@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('examples', {
+export default {
     name: 'examples',
     template: require('./examples.html'),
     props: {
@@ -16,4 +14,4 @@ export default Vue.component('examples', {
             type: Object
         }
     }
-});
+};

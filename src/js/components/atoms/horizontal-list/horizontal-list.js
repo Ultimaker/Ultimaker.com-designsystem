@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('horizontal-list', {
+export default {
     name: 'horizontal-list',
     template: require('./horizontal-list.html'),
     props: {
@@ -16,4 +14,4 @@ export default Vue.component('horizontal-list', {
             required: true
         }
     }
-});
+};

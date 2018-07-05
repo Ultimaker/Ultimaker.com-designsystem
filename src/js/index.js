@@ -1,6 +1,6 @@
-import Defaults from 'constants/defaults';
+import ComponentRegistry from 'utils/component-registry';
+import Components from './components';
 import '../scss/ultimaker.scss';
-
 // import all icons from src/icons/.. as svg sprite
 /* eslint-disable no-unused-vars */
 const __svg__ = {
@@ -8,13 +8,16 @@ const __svg__ = {
     name: 'static/icons/iconset.svg'
 };
 
-const components = require.context('./components', true, /\/index\.js$/);
+const registry = new ComponentRegistry();
 
-components.keys().forEach(c => components(c));
+Object.keys(Components).forEach(c => {
+    registry.registerComponent(Components[c]);
+});
 
-export {Defaults};
-export * from 'utils/arithmetic';
-export * from 'utils/browser-capabilities';
-// export * from 'utils/poly-loader';
-export * from 'utils/text-utils';
-export * from 'utils/viewport';
+export {default as Defaults} from 'constants/defaults';
+export {default as Arithmetic} from 'utils/arithmetic';
+export {default as BrowserCapabilities} from 'utils/browser-capabilities';
+// export {default as PolyLoader} from 'utils/poly-loader';
+export {default as TextUtils} from 'utils/text-utils';
+export {default as ViewportUtility} from 'utils/viewport';
+export {registry};

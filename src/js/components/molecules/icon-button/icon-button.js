@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-export default Vue.component('icon-button', {
+export default {
     name: 'icon-button',
     template: require('./icon-button.html'),
     props: {
@@ -23,4 +23,4 @@ export default Vue.component('icon-button', {
             this.$el.focus();
         }
     }
-});
+};

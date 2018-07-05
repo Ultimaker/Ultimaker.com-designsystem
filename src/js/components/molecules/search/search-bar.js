@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('search-bar', {
+export default {
     name: 'search-bar',
     template: require('./search-bar.html'),
     data: () => ({
@@ -34,4 +32,4 @@ export default Vue.component('search-bar', {
             this.$refs.search__input.focus();
         }
     }
-});
+};

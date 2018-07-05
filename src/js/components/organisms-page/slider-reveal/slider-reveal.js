@@ -1,8 +1,7 @@
 import ViewportUtil from 'utils/viewport';
 import {TweenLite, TimelineLite, Power2} from 'gsap';
-import Vue from 'vue';
 
-export default Vue.component('slider-reveal', {
+export default {
     name: 'slider-reveal',
     template: require('./slider-reveal.html'),
     props: {
@@ -113,4 +112,4 @@ export default Vue.component('slider-reveal', {
             this.scroll();
         }
     }
-});
+};

@@ -1,10 +1,8 @@
 import {TweenLite, TimelineLite} from 'gsap';
 import {Power2} from 'gsap';
-import Vue from 'vue';
-
 
 /* eslint-disable no-invalid-this */
-export default Vue.component('modal', {
+export default {
     name: 'modal',
     template: require('./modal.html'),
     data: () => ({
@@ -62,4 +60,4 @@ export default Vue.component('modal', {
             timeLine.call(done);
         }
     }
-});
+};

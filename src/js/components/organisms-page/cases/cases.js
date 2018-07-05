@@ -1,7 +1,6 @@
 import Viewport from 'utils/viewport';
-import Vue from 'vue';
 
-export default Vue.component('cases', {
+export default {
     name: 'cases',
     template: require('./cases.html'),
     data: () => ({
@@ -44,4 +43,4 @@ export default Vue.component('cases', {
             this.showVideo = !this.showVideo;
         }
     }
-});
+};

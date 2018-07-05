@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('content-link-list', {
+export default {
     name: 'content-link-list',
     template: require('./content-link-list.html'),
     props: {
@@ -13,4 +11,4 @@ export default Vue.component('content-link-list', {
             default: () => []
         }
     }
-});
+};

@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('content-link', {
+export default {
     name: 'content-link',
     template: require('./content-link.html'),
     props: {
@@ -42,4 +40,4 @@ export default Vue.component('content-link', {
             return classes;
         }
     }
-});
+};

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Ultimaker.com design system for vue components",
   "license": "UNLICENSED",
-  "main": "dist/components.js",
+  "module": "dist/components.js",
   "sideEffects": false,
   "files": [
     "src",
@@ -48,6 +48,7 @@
     "babel-plugin-transform-es2015-template-literals": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-vue": "^2.0.2",
     "core-js": "^2.5.7",

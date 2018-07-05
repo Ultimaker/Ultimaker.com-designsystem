@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('nav-assist', {
+export default {
     name: 'nav-assist',
     template: require('./nav-assist.html'),
     data: () => {
@@ -31,4 +29,4 @@ export default Vue.component('nav-assist', {
             this.$emit('used');
         }
     }
-});
+};

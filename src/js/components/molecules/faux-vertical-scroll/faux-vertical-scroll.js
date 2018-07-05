@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('faux-scroll', {
+export default {
     name: 'faux-scroll',
     template: require('./faux-vertical-scroll.html'),
     data: () => ({
@@ -104,4 +102,4 @@ export default Vue.component('faux-scroll', {
             this.drag.lastOffset = totalOffset;
         }
     }
-});
+};

@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('content-toggle', {
+export default {
     name: 'content-toggle',
     template: require('./content-toggle.html'),
     props: {
@@ -39,4 +37,4 @@ export default Vue.component('content-toggle', {
             this.$emit('toggle');
         }
     }
-});
+};

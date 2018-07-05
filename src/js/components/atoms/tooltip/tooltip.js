@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('tooltip', {
+export default {
     name: 'tooltip',
     template: require('./tooltip.html'),
     props: {
@@ -20,4 +18,4 @@ export default Vue.component('tooltip', {
             return classes;
         }
     }
-});
+};

@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('card', {
+export default {
     name: 'card',
     template: require('./card.html'),
     props: {
@@ -24,4 +22,4 @@ export default Vue.component('card', {
             return classes;
         }
     }
-});
+};

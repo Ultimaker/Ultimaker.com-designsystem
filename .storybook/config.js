@@ -3,7 +3,10 @@ import {setOptions} from '@storybook/addon-options';
 import {withNotes} from '@storybook/addon-notes';
 import Vue from 'vue';
 import Vuex from 'vuex';
-import 'src/js';
+import 'babel-core/register';
+import 'babel-polyfill';
+
+import {registry} from 'src/js';
 import 'src/scss/storybook.scss';
 import 'components/generic/faux-router-link/faux-router-link';
 import storyRoot from 'src/stories/story.root.js';
@@ -15,6 +18,8 @@ setOptions({
     showSearchBox: false,
     sortStoriesByKind: false
 });
+
+Vue.use(registry);
 
 addDecorator(withNotes);
 

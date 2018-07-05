@@ -1,12 +1,10 @@
 import {mapGetters} from 'vuex';
 import {TweenLite} from 'gsap';
 import {Power0} from 'gsap';
-import Vue from 'vue';
-
 
 const defaultAnimationDuration = 1;
 
-export default Vue.component('explore', {
+export default {
     name: 'explore',
     template: require('./explore.html'),
     data: () => ({
@@ -65,4 +63,4 @@ export default Vue.component('explore', {
             );
         }
     }
-});
+};

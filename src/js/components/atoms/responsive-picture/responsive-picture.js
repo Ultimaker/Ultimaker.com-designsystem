@@ -1,8 +1,7 @@
-import Vue from 'vue';
 import ViewportUtil from 'utils/viewport';
 import ResponsivePictureSource from './responsive-picture-source';
 
-export default Vue.component('responsive-picture', {
+export default {
     name: 'responsive-picture',
     components: {
         ResponsivePictureSource
@@ -96,4 +95,4 @@ export default Vue.component('responsive-picture', {
             this.viewportUtil.removeScrollHandler(this.calculateInView);
         }
     }
-});
+};
