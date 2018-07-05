@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('flyout-section', {
+export default {
     name: 'flyout-section',
     template: require('./flyout-section.html'),
 
@@ -65,4 +63,4 @@ export default Vue.component('flyout-section', {
             return '';
         }
     }
-});
+};

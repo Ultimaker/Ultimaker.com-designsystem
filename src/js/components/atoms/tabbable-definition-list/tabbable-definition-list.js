@@ -1,11 +1,10 @@
-import Vue from 'vue';
 import {TweenLite} from 'gsap';
 import {Power3} from 'gsap';
 import {Power0} from 'gsap';
 import Viewport from 'utils/viewport';
 import Defaults from 'constants/defaults';
 
-export default Vue.component('tabbable-definition-list', {
+export default {
     name: 'tabbable-definition-list',
     template: require('./tabbable-definition-list.html'),
     data: () => ({
@@ -193,4 +192,4 @@ export default Vue.component('tabbable-definition-list', {
     beforeDestroy() {
         this.viewport.removeResizeHandler(this.updateElementPositions);
     }
-});
+};

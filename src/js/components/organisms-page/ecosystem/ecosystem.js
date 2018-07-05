@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('ecosystem', {
+export default {
     name: 'ecosystem',
     template: require('./ecosystem.html'),
     props: {
@@ -13,4 +11,4 @@ export default Vue.component('ecosystem', {
             required: true
         }
     }
-});
+};

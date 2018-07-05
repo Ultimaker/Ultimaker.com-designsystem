@@ -1,5 +1,3 @@
-import Vue from 'vue';
-
 const embedProps = {
     modestbranding: {
         type: Boolean,
@@ -33,7 +31,7 @@ const embedProps = {
     }
 };
 
-export default Vue.component('youtube-video', {
+export default {
     name: 'youtube-video',
     template: require('./youtube-video.html'),
     data: () => ({
@@ -70,4 +68,4 @@ export default Vue.component('youtube-video', {
     beforeMount() {
         this.loadVideo = process.BROWSER;
     }
-});
+};

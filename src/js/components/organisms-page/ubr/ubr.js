@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('ubr', {
+export default {
     name: 'ubr',
     template: require('./ubr.html'),
     props: {
@@ -21,4 +19,4 @@ export default Vue.component('ubr', {
             required: true
         }
     }
-});
+};

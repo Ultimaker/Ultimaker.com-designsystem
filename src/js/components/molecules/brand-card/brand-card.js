@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('brand-card', {
+export default {
     name: 'brand-card',
     template: require('./brand-card.html'),
     props: {
@@ -17,4 +15,4 @@ export default Vue.component('brand-card', {
             default: () => ({})
         }
     }
-});
+};

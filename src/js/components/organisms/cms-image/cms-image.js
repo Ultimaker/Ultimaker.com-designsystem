@@ -1,5 +1,3 @@
-import Vue from 'vue';
-
 function getImage(image, orientation, device) {
     const format = `${ orientation }_${ device }`;
 
@@ -10,7 +8,7 @@ function getImage(image, orientation, device) {
     return '';
 }
 
-export default Vue.component('cms-image', {
+export default {
     name: 'cms-image',
     template: require('./cms-image.html'),
     props: {
@@ -49,4 +47,4 @@ export default Vue.component('cms-image', {
             }
         }
     }
-});
+};

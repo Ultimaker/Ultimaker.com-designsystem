@@ -1,8 +1,6 @@
-import Vue from 'vue';
-
 const defaultIconUrl = '/static/icons/iconset.svg';
 
-export default Vue.component('icon', {
+export default {
     name: 'icon',
     data: () => ({
         symbolData: null,
@@ -67,4 +65,4 @@ export default Vue.component('icon', {
         }
     },
     template: require('./icon.html')
-});
+};

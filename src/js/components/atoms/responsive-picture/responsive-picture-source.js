@@ -1,5 +1,3 @@
-import Vue from 'vue';
-
 export default {
     name: 'responsive-picture-source',
     template: `<source :media="media" :srcset="srcset">`,

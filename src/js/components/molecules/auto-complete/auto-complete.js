@@ -4,7 +4,7 @@ import _filter from 'lodash/filter';
 import _find from 'lodash/find';
 import ViewportUtil from 'utils/viewport';
 
-export default Vue.component('auto-complete', {
+export default {
     name: 'auto-complete',
     template: require('./auto-complete.html'),
     data: () => {
@@ -252,4 +252,4 @@ export default Vue.component('auto-complete', {
     beforeMount() {
         this.init();
     }
-});
+};

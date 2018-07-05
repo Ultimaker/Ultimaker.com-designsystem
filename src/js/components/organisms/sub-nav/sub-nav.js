@@ -2,7 +2,7 @@ import Vue from 'vue';
 import ViewportUtil from 'utils/viewport';
 import {mapGetters} from 'vuex';
 
-export default Vue.component('sub-nav', {
+export default {
     name: 'sub-nav',
     template: require('./sub-nav.html'),
     data: () => ({
@@ -24,5 +24,5 @@ export default Vue.component('sub-nav', {
     methods: {
         mapLink: (link) => link.replace(/^\/api\/pages/, '')
     }
-});
+};
 

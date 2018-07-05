@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('general-content', {
+export default {
     name: 'general-content',
     template: require('./general-content.html'),
     props: {
@@ -24,4 +22,4 @@ export default Vue.component('general-content', {
             type: Object
         }
     }
-});
+};

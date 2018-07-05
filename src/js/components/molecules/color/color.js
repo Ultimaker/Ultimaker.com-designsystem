@@ -1,7 +1,4 @@
-import Vue from 'vue';
-
-
-export default Vue.component('color', {
+export default {
     name: 'color',
     template: require('./color.html'),
     props: {
@@ -46,5 +43,5 @@ export default Vue.component('color', {
             return styles;
         }
     }
-});
+};
 
