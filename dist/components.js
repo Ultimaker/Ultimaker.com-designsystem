@@ -1,4 +1,4 @@
-define("components", ["gsap","vuex"], function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__6__) { return /******/ (function(modules) { // webpackBootstrap
+define("components", ["gsap","vuex"], function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__4__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -81,7 +81,7 @@ define("components", ["gsap","vuex"], function(__WEBPACK_EXTERNAL_MODULE__0__, _
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 51);
+/******/ 	return __webpack_require__(__webpack_require__.s = 45);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -92,313 +92,9 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__0__;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
-/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_debounce__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var utils_browser_capabilities__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
-/* harmony import */ var constants_defaults__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-
-
-
-
-var instance = null,
-    _scrollAnimationPending = false,
-    _resizeAnimationPending = false;
-var _resizeHandlers = [],
-    _scrollHandlers = [],
-    _orientationChangeHandlers = [];
-
-function scrollHandler(e) {
-    var _this = this;
-
-    if (!_scrollAnimationPending) {
-        _scrollAnimationPending = true;
-        window.requestAnimationFrame(function () {
-            _this.updateScrollState();
-            _scrollHandlers.forEach(function (h) {
-                return h();
-            });
-            _scrollAnimationPending = false;
-        });
-    }
-}
-
-function resizeHandler(e) {
-    var _this2 = this;
-
-    if (!_resizeAnimationPending) {
-        _resizeAnimationPending = true;
-        window.requestAnimationFrame(function () {
-            _this2.updateScreenDimensions();
-            _resizeHandlers.forEach(function (h) {
-                return h();
-            });
-            _resizeAnimationPending = false;
-        });
-    }
-}
-
-function orientationChangeHandler(e) {
-    window.requestAnimationFrame(function () {
-        _orientationChangeHandlers.forEach(function (h) {
-            return h();
-        });
-    });
-}
-
-function documentLoadedHandler() {
-    this.updateScrollState();
-    this.updateScreenDimensions();
-}
-
-var ViewportUtility = function () {
-    function ViewportUtility() {
-        _classCallCheck(this, ViewportUtility);
-
-        if (instance !== null) {
-            return instance;
-        }
-        instance = this;
-
-        this.screenWidth = 0;
-        this.screenHeight = 0;
-
-        this.scrollDirection = null;
-        this.scrollOffsetStart = 0;
-        this.scrollOffset = 0;
-
-        this.scrollX = 0;
-        this.scrollY = 0;
-
-        if (!process.BROWSER) {
-            return this.instance;
-        }
-
-        this._attachEventListeners();
-        this.updateScrollState();
-        this.updateScreenDimensions();
-
-        return instance;
-    }
-
-    _createClass(ViewportUtility, [{
-        key: '_attachEventListeners',
-        value: function _attachEventListeners() {
-            var _this3 = this;
-
-            var minWait = 1000 / 60,
-                maxWait = 1000 / 30;
-
-            document.addEventListener('scroll', lodash_debounce__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-                scrollHandler.apply(_this3);
-            }, minWait, { maxWait: maxWait }));
-
-            if (utils_browser_capabilities__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"].supportsTouch) {
-                document.addEventListener('touchmove', lodash_debounce__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-                    scrollHandler.apply(_this3);
-                }, minWait, { maxWait: maxWait }));
-            }
-
-            document.addEventListener('DOMContentLoaded', function () {
-                documentLoadedHandler.apply(_this3);
-            });
-
-            window.addEventListener('resize', lodash_debounce__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-                resizeHandler.apply(_this3);
-            }, minWait, { maxWait: maxWait }));
-
-            window.addEventListener('orientationchange', function () {
-                orientationChangeHandler.apply(_this3);
-            });
-        }
-    }, {
-        key: 'updateScrollState',
-        value: function updateScrollState() {
-            var y = window.pageYOffset;
-            var x = window.pageXOffset,
-                maxScrollY = this.documentHeight - this.screenHeight;
-            var direction = this.scrollDirection;
-
-            if (y > maxScrollY) {
-                y = maxScrollY;
-            }
-            if (y > this.scrollY) {
-                direction = 'down';
-            } else if (y < this.scrollY) {
-                direction = 'up';
-            }
-
-            if (this.scrollDirection !== direction) {
-                this.scrollOffsetStart = y;
-            }
-            this.scrollOffset = y - this.scrollOffsetStart;
-            this.scrollDirection = direction;
-
-            this.scrollX = x;
-            this.scrollY = y;
-        }
-    }, {
-        key: 'calculateResize',
-        value: function calculateResize() {
-            scrollHandler.apply(this);
-        }
-    }, {
-        key: 'updateScreenDimensions',
-        value: function updateScreenDimensions() {
-            var currentWindow = window;
-
-            this.screenWidth = currentWindow.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-            this.screenHeight = currentWindow.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-        }
-    }, {
-        key: 'addResizeHandler',
-        value: function addResizeHandler(handler) {
-            _resizeHandlers.push(handler);
-        }
-    }, {
-        key: 'removeResizeHandler',
-        value: function removeResizeHandler(handler) {
-            var index = _resizeHandlers.indexOf(handler);
-
-            if (index < 0) {
-                return;
-            }
-            _resizeHandlers.splice(index, 1);
-        }
-    }, {
-        key: 'triggerResize',
-        value: function triggerResize() {
-            resizeHandler.apply(this);
-        }
-    }, {
-        key: 'addScrollHandler',
-        value: function addScrollHandler(handler) {
-            _scrollHandlers.push(handler);
-        }
-    }, {
-        key: 'removeScrollHandler',
-        value: function removeScrollHandler(handler) {
-            var index = _scrollHandlers.indexOf(handler);
-
-            if (index < 0) {
-                return;
-            }
-            _scrollHandlers.splice(index, 1);
-        }
-    }, {
-        key: 'addOrientationChangeHandler',
-        value: function addOrientationChangeHandler(handler) {
-            _orientationChangeHandlers.push(handler);
-        }
-    }, {
-        key: 'removeOrientationChangeHandler',
-        value: function removeOrientationChangeHandler(handler) {
-            var index = _orientationChangeHandlers.indexOf(handler);
-
-            if (index < 0) {
-                return;
-            }
-            _orientationChangeHandlers.splice(index, 1);
-        }
-    }, {
-        key: 'top',
-        get: function get() {
-            return this.scrollY <= 0;
-        }
-    }, {
-        key: 'documentHeight',
-        get: function get() {
-            if (process.BROWSER) {
-                return Math.max(document.body.scrollHeight, document.body.offsetHeight);
-            }
-
-            return 0;
-        }
-    }, {
-        key: 'isMobile',
-        get: function get() {
-            return this.screenWidth <= constants_defaults__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"].breakpoints.mobile.max;
-        }
-    }, {
-        key: 'isMobileXl',
-        get: function get() {
-            return this.screenWidth <= constants_defaults__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"].breakpoints.mobileXl.max;
-        }
-    }, {
-        key: 'isTablet',
-        get: function get() {
-            return this.screenWidth <= constants_defaults__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"].breakpoints.tablet.max;
-        }
-    }]);
-
-    return ViewportUtility;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (ViewportUtility);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(21)))
-
-/***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({
-    consentLevel: 3,
-    suggestedConsentLevel: 15,
-    consentLevels: {
-        functional: 1,
-        analytics: 2,
-        personalization: 4,
-        tracking: 8,
-        minimal: 3,
-        all: 15
-    },
-    country: {
-        name: 'United States of America',
-        code: 'US',
-        currency: {
-            code: 'USD',
-            symbol: '$'
-        }
-    },
-    language: 'en',
-    breakpoints: {
-        mobile: {
-            min: 0,
-            max: 568
-        },
-        mobileXl: {
-            min: 569,
-            max: 767
-        },
-        tablet: {
-            min: 768,
-            max: 1024
-        },
-        desktop: {
-            min: 1025,
-            max: 1200
-        },
-        desktopHd: {
-            min: 1201,
-            max: Infinity
-        }
-    },
-    buildingUnit: 12
-});
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var freeGlobal = __webpack_require__(48);
+var freeGlobal = __webpack_require__(44);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -410,7 +106,7 @@ module.exports = root;
 
 
 /***/ }),
-/* 4 */
+/* 2 */
 /***/ (function(module, exports) {
 
 /**
@@ -442,11 +138,11 @@ module.exports = isArray;
 
 
 /***/ }),
-/* 5 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsNative = __webpack_require__(138),
-    getValue = __webpack_require__(135);
+var baseIsNative = __webpack_require__(132),
+    getValue = __webpack_require__(129);
 
 /**
  * Gets the native function at `key` of `object`.
@@ -465,17 +161,17 @@ module.exports = getNative;
 
 
 /***/ }),
-/* 6 */
+/* 4 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__6__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__4__;
 
 /***/ }),
-/* 7 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createFind = __webpack_require__(85),
-    findIndex = __webpack_require__(84);
+var createFind = __webpack_require__(79),
+    findIndex = __webpack_require__(78);
 
 /**
  * Iterates over elements of `collection`, returning the first element
@@ -519,7 +215,7 @@ module.exports = find;
 
 
 /***/ }),
-/* 8 */
+/* 6 */
 /***/ (function(module, exports) {
 
 /**
@@ -554,12 +250,12 @@ module.exports = isObjectLike;
 
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(18),
-    getRawTag = __webpack_require__(175),
-    objectToString = __webpack_require__(174);
+var Symbol = __webpack_require__(16),
+    getRawTag = __webpack_require__(169),
+    objectToString = __webpack_require__(168);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -588,7 +284,7 @@ module.exports = baseGetTag;
 
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, exports) {
 
 /**
@@ -625,7 +321,7 @@ module.exports = isObject;
 
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8117,13 +7813,13 @@ if (inBrowser) {
 
 /* harmony default export */ __webpack_exports__["a"] = (Vue);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(20), __webpack_require__(169).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18), __webpack_require__(164).setImmediate))
 
 /***/ }),
-/* 12 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isSymbol = __webpack_require__(19);
+var isSymbol = __webpack_require__(17);
 
 /** Used as references for various `Number` constants. */
 var INFINITY = 1 / 0;
@@ -8147,10 +7843,10 @@ module.exports = toKey;
 
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isKeyable = __webpack_require__(126);
+var isKeyable = __webpack_require__(120);
 
 /**
  * Gets the data for `map`.
@@ -8171,10 +7867,10 @@ module.exports = getMapData;
 
 
 /***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getNative = __webpack_require__(5);
+var getNative = __webpack_require__(3);
 
 /* Built-in method references that are verified to be native. */
 var nativeCreate = getNative(Object, 'create');
@@ -8183,10 +7879,10 @@ module.exports = nativeCreate;
 
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var eq = __webpack_require__(38);
+var eq = __webpack_require__(34);
 
 /**
  * Gets the index at which the `key` is found in `array` of key-value pairs.
@@ -8210,14 +7906,14 @@ module.exports = assocIndexOf;
 
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var listCacheClear = __webpack_require__(148),
-    listCacheDelete = __webpack_require__(147),
-    listCacheGet = __webpack_require__(146),
-    listCacheHas = __webpack_require__(145),
-    listCacheSet = __webpack_require__(144);
+var listCacheClear = __webpack_require__(142),
+    listCacheDelete = __webpack_require__(141),
+    listCacheGet = __webpack_require__(140),
+    listCacheHas = __webpack_require__(139),
+    listCacheSet = __webpack_require__(138);
 
 /**
  * Creates an list cache object.
@@ -8248,12 +7944,12 @@ module.exports = ListCache;
 
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeKeys = __webpack_require__(162),
-    baseKeys = __webpack_require__(155),
-    isArrayLike = __webpack_require__(29);
+var arrayLikeKeys = __webpack_require__(156),
+    baseKeys = __webpack_require__(149),
+    isArrayLike = __webpack_require__(25);
 
 /**
  * Creates an array of the own enumerable property names of `object`.
@@ -8291,10 +7987,10 @@ module.exports = keys;
 
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(3);
+var root = __webpack_require__(1);
 
 /** Built-in value references. */
 var Symbol = root.Symbol;
@@ -8303,11 +7999,11 @@ module.exports = Symbol;
 
 
 /***/ }),
-/* 19 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(9),
-    isObjectLike = __webpack_require__(8);
+var baseGetTag = __webpack_require__(7),
+    isObjectLike = __webpack_require__(6);
 
 /** `Object#toString` result references. */
 var symbolTag = '[object Symbol]';
@@ -8338,7 +8034,7 @@ module.exports = isSymbol;
 
 
 /***/ }),
-/* 20 */
+/* 18 */
 /***/ (function(module, exports) {
 
 var g;
@@ -8364,265 +8060,13 @@ module.exports = g;
 
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports) {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
-
-/***/ }),
-/* 22 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var instance = null;
-
-var BrowserCapabilities = function () {
-    function BrowserCapabilities() {
-        _classCallCheck(this, BrowserCapabilities);
-
-        if (instance !== null) {
-            return instance;
-        }
-        instance = this;
-
-        return instance;
-    }
-
-    _createClass(BrowserCapabilities, null, [{
-        key: 'supportsTouch',
-        get: function get() {
-            return 'ontouchstart' in document.documentElement;
-        }
-    }, {
-        key: 'supportsFontLoadingApi',
-        get: function get() {
-            return 'fonts' in document;
-        }
-    }, {
-        key: 'supportsIntl',
-        get: function get() {
-            return 'Intl' in window;
-        }
-    }, {
-        key: 'supportsObjectFit',
-        get: function get() {
-            var edgeVersion = window.navigator.userAgent.match(/Edge\/(\d{2})\./);
-            var edgePartialSupport = edgeVersion ? parseInt(edgeVersion[1], 10) >= 16 : false;
-
-            if (edgePartialSupport) {
-                return false;
-            }
-
-            return 'objectFit' in document.documentElement.style;
-        }
-    }, {
-        key: 'supportsPictureElement',
-        get: function get() {
-            return 'HTMLPictureElement' in window;
-        }
-    }]);
-
-    return BrowserCapabilities;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (BrowserCapabilities);
-
-/***/ }),
-/* 23 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayFilter = __webpack_require__(46),
-    baseFilter = __webpack_require__(167),
-    baseIteratee = __webpack_require__(28),
-    isArray = __webpack_require__(4);
+var arrayFilter = __webpack_require__(42),
+    baseFilter = __webpack_require__(161),
+    baseIteratee = __webpack_require__(24),
+    isArray = __webpack_require__(2);
 
 /**
  * Iterates over elements of `collection`, returning an array of all elements
@@ -8670,12 +8114,12 @@ module.exports = filter;
 
 
 /***/ }),
-/* 24 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(10),
-    now = __webpack_require__(176),
-    toNumber = __webpack_require__(47);
+var isObject = __webpack_require__(8),
+    now = __webpack_require__(170),
+    toNumber = __webpack_require__(43);
 
 /** Error message constants. */
 var FUNC_ERROR_TEXT = 'Expected a function';
@@ -8866,11 +8310,11 @@ module.exports = debounce;
 
 
 /***/ }),
-/* 25 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isArray = __webpack_require__(4),
-    isSymbol = __webpack_require__(19);
+var isArray = __webpack_require__(2),
+    isSymbol = __webpack_require__(17);
 
 /** Used to match property names within property paths. */
 var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
@@ -8901,14 +8345,14 @@ module.exports = isKey;
 
 
 /***/ }),
-/* 26 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var mapCacheClear = __webpack_require__(134),
-    mapCacheDelete = __webpack_require__(127),
-    mapCacheGet = __webpack_require__(125),
-    mapCacheHas = __webpack_require__(124),
-    mapCacheSet = __webpack_require__(123);
+var mapCacheClear = __webpack_require__(128),
+    mapCacheDelete = __webpack_require__(121),
+    mapCacheGet = __webpack_require__(119),
+    mapCacheHas = __webpack_require__(118),
+    mapCacheSet = __webpack_require__(117);
 
 /**
  * Creates a map cache object to store key-value pairs.
@@ -8939,11 +8383,11 @@ module.exports = MapCache;
 
 
 /***/ }),
-/* 27 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getNative = __webpack_require__(5),
-    root = __webpack_require__(3);
+var getNative = __webpack_require__(3),
+    root = __webpack_require__(1);
 
 /* Built-in method references that are verified to be native. */
 var Map = getNative(root, 'Map');
@@ -8952,14 +8396,14 @@ module.exports = Map;
 
 
 /***/ }),
-/* 28 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseMatches = __webpack_require__(150),
-    baseMatchesProperty = __webpack_require__(100),
-    identity = __webpack_require__(89),
-    isArray = __webpack_require__(4),
-    property = __webpack_require__(88);
+var baseMatches = __webpack_require__(144),
+    baseMatchesProperty = __webpack_require__(94),
+    identity = __webpack_require__(83),
+    isArray = __webpack_require__(2),
+    property = __webpack_require__(82);
 
 /**
  * The base implementation of `_.iteratee`.
@@ -8989,11 +8433,11 @@ module.exports = baseIteratee;
 
 
 /***/ }),
-/* 29 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isFunction = __webpack_require__(40),
-    isLength = __webpack_require__(30);
+var isFunction = __webpack_require__(36),
+    isLength = __webpack_require__(26);
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -9028,7 +8472,7 @@ module.exports = isArrayLike;
 
 
 /***/ }),
-/* 30 */
+/* 26 */
 /***/ (function(module, exports) {
 
 /** Used as references for various `Number` constants. */
@@ -9069,13 +8513,13 @@ module.exports = isLength;
 
 
 /***/ }),
-/* 31 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isArray = __webpack_require__(4),
-    isKey = __webpack_require__(25),
-    stringToPath = __webpack_require__(98),
-    toString = __webpack_require__(95);
+var isArray = __webpack_require__(2),
+    isKey = __webpack_require__(21),
+    stringToPath = __webpack_require__(92),
+    toString = __webpack_require__(89);
 
 /**
  * Casts `value` to a path array if it's not one.
@@ -9096,11 +8540,11 @@ module.exports = castPath;
 
 
 /***/ }),
-/* 32 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var castPath = __webpack_require__(31),
-    toKey = __webpack_require__(12);
+var castPath = __webpack_require__(27),
+    toKey = __webpack_require__(10);
 
 /**
  * The base implementation of `_.get` without support for default values.
@@ -9126,7 +8570,7 @@ module.exports = baseGet;
 
 
 /***/ }),
-/* 33 */
+/* 29 */
 /***/ (function(module, exports) {
 
 /**
@@ -9152,10 +8596,10 @@ module.exports = matchesStrictComparable;
 
 
 /***/ }),
-/* 34 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(10);
+var isObject = __webpack_require__(8);
 
 /**
  * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
@@ -9173,12 +8617,12 @@ module.exports = isStrictComparable;
 
 
 /***/ }),
-/* 35 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SetCache = __webpack_require__(121),
-    arraySome = __webpack_require__(118),
-    cacheHas = __webpack_require__(117);
+var SetCache = __webpack_require__(115),
+    arraySome = __webpack_require__(112),
+    cacheHas = __webpack_require__(111);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -9262,11 +8706,11 @@ module.exports = equalArrays;
 
 
 /***/ }),
-/* 36 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqualDeep = __webpack_require__(122),
-    isObjectLike = __webpack_require__(8);
+var baseIsEqualDeep = __webpack_require__(116),
+    isObjectLike = __webpack_require__(6);
 
 /**
  * The base implementation of `_.isEqual` which supports partial comparisons
@@ -9296,7 +8740,7 @@ module.exports = baseIsEqual;
 
 
 /***/ }),
-/* 37 */
+/* 33 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -9328,7 +8772,7 @@ module.exports = toSource;
 
 
 /***/ }),
-/* 38 */
+/* 34 */
 /***/ (function(module, exports) {
 
 /**
@@ -9371,15 +8815,15 @@ module.exports = eq;
 
 
 /***/ }),
-/* 39 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ListCache = __webpack_require__(16),
-    stackClear = __webpack_require__(143),
-    stackDelete = __webpack_require__(142),
-    stackGet = __webpack_require__(141),
-    stackHas = __webpack_require__(140),
-    stackSet = __webpack_require__(139);
+var ListCache = __webpack_require__(14),
+    stackClear = __webpack_require__(137),
+    stackDelete = __webpack_require__(136),
+    stackGet = __webpack_require__(135),
+    stackHas = __webpack_require__(134),
+    stackSet = __webpack_require__(133);
 
 /**
  * Creates a stack cache object to store key-value pairs.
@@ -9404,11 +8848,11 @@ module.exports = Stack;
 
 
 /***/ }),
-/* 40 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(9),
-    isObject = __webpack_require__(10);
+var baseGetTag = __webpack_require__(7),
+    isObject = __webpack_require__(8);
 
 /** `Object#toString` result references. */
 var asyncTag = '[object AsyncFunction]',
@@ -9447,12 +8891,12 @@ module.exports = isFunction;
 
 
 /***/ }),
-/* 41 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsTypedArray = __webpack_require__(158),
-    baseUnary = __webpack_require__(157),
-    nodeUtil = __webpack_require__(156);
+var baseIsTypedArray = __webpack_require__(152),
+    baseUnary = __webpack_require__(151),
+    nodeUtil = __webpack_require__(150);
 
 /* Node.js helper references. */
 var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -9480,7 +8924,7 @@ module.exports = isTypedArray;
 
 
 /***/ }),
-/* 42 */
+/* 38 */
 /***/ (function(module, exports) {
 
 /** Used as references for various `Number` constants. */
@@ -9511,7 +8955,7 @@ module.exports = isIndex;
 
 
 /***/ }),
-/* 43 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -9539,11 +8983,11 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 44 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(3),
-    stubFalse = __webpack_require__(159);
+/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(1),
+    stubFalse = __webpack_require__(153);
 
 /** Detect free variable `exports`. */
 var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
@@ -9581,14 +9025,14 @@ var isBuffer = nativeIsBuffer || stubFalse;
 
 module.exports = isBuffer;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(43)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(39)(module)))
 
 /***/ }),
-/* 45 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsArguments = __webpack_require__(160),
-    isObjectLike = __webpack_require__(8);
+var baseIsArguments = __webpack_require__(154),
+    isObjectLike = __webpack_require__(6);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -9626,7 +9070,7 @@ module.exports = isArguments;
 
 
 /***/ }),
-/* 46 */
+/* 42 */
 /***/ (function(module, exports) {
 
 /**
@@ -9657,11 +9101,11 @@ module.exports = arrayFilter;
 
 
 /***/ }),
-/* 47 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(10),
-    isSymbol = __webpack_require__(19);
+var isObject = __webpack_require__(8),
+    isSymbol = __webpack_require__(17);
 
 /** Used as references for various `Number` constants. */
 var NAN = 0 / 0;
@@ -9729,7 +9173,7 @@ module.exports = toNumber;
 
 
 /***/ }),
-/* 48 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -9737,173 +9181,10 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 module.exports = freeGlobal;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(20)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18)))
 
 /***/ }),
-/* 49 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var embedProps = {
-    modestbranding: {
-        type: Boolean,
-        default: true
-    },
-    controls: {
-        type: Boolean,
-        default: true
-    },
-    jsapi: {
-        type: Boolean,
-        default: true
-    },
-    fullscreen: {
-        type: Boolean,
-        default: true
-    },
-    rel: {
-        type: Boolean,
-        default: false
-    },
-    playsinline: {
-        type: Boolean,
-        default: true
-    },
-    start: {
-        type: Number
-    },
-    end: {
-        type: Number
-    }
-};
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    name: 'youtube-video',
-    template: __webpack_require__(170),
-    data: function data() {
-        return {
-            loadVideo: false
-        };
-    },
-    props: _extends({
-        videoId: {
-            type: String,
-            required: true
-        }
-    }, embedProps),
-    computed: {
-        videoQuery: function videoQuery() {
-            var _this = this;
-
-            var options = [];
-
-            Object.keys(embedProps).forEach(function (key) {
-                var value = _this[key],
-                    valueType = typeof value === 'undefined' ? 'undefined' : _typeof(value);
-
-                if (valueType === 'boolean') {
-                    options.push(key + '=' + ~~_this[key]);
-                } else if (valueType !== 'undefined') {
-                    options.push(key + '=' + _this[key]);
-                }
-            });
-
-            return 'autoplay=1&' + options.join('&');
-        },
-        videoUrl: function videoUrl() {
-            return 'https://www.youtube-nocookie.com/embed/' + this.videoId + '?' + this.videoQuery;
-        }
-    },
-    beforeMount: function beforeMount() {
-        this.loadVideo = process.BROWSER;
-    }
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(21)))
-
-/***/ }),
-/* 50 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {var defaultIconUrl = '/static/icons/iconset.svg';
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    name: 'icon',
-    data: function data() {
-        return {
-            symbolData: null,
-            viewBox: null
-        };
-    },
-    props: {
-        iconName: {
-            type: String,
-            required: true
-        }
-    },
-    computed: {
-        iconId: function iconId() {
-            return 'icon-' + this.iconName;
-        },
-        iconClass: function iconClass() {
-            return 'icon--' + this.iconName;
-        },
-        iconUrl: function iconUrl() {
-            var iconUrl = defaultIconUrl;
-
-            if (process.BROWSER && window.svgIconMap) {
-                iconUrl = window.svgIconMap;
-            }
-
-            return iconUrl;
-        },
-        iconRef: function iconRef() {
-            return this.iconUrl + '#icon-' + this.iconName;
-        }
-    },
-    mounted: function mounted() {
-        var _this = this;
-
-        if (/Trident\//.test(window.navigator.userAgent)) {
-            var requestOptions = {
-                cache: 'cache',
-                headers: new Headers()
-            },
-                request = new Request(this.iconUrl, requestOptions);
-
-            fetch(request).then(function (result) {
-                var parser = new DOMParser(),
-                    doc = parser.parseFromString(result.data, 'image/svg+xml'),
-                    symbol = doc.querySelector('#icon-' + _this.iconName);
-
-                if (symbol !== null) {
-                    var symbolContainer = _this.$el.querySelector('#symbol-container'),
-                        clone = symbol.cloneNode(true);
-
-                    if (symbol.viewBox && symbol.viewBox.baseVal) {
-                        var box = symbol.viewBox.baseVal;
-
-                        _this.viewBox = box.x + ' ' + box.y + ' ' + box.width + ' ' + box.height;
-                    }
-
-                    while (clone.childNodes.length) {
-                        symbolContainer.appendChild(clone.firstChild);
-                    }
-                }
-            });
-        }
-    },
-
-    template: __webpack_require__(178)
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(21)))
-
-/***/ }),
-/* 51 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9999,7 +9280,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/animated-arrow/animated-arrow.js
 /* harmony default export */ var animated_arrow = ({
     name: 'animated-arrow',
-    template: __webpack_require__(183)
+    template: __webpack_require__(178)
 });
 // CONCATENATED MODULE: ./src/js/components/atoms/animated-arrow/index.js
 
@@ -10007,7 +9288,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/content-link/content-link.js
 /* harmony default export */ var content_link = ({
     name: 'content-link',
-    template: __webpack_require__(182),
+    template: __webpack_require__(177),
     props: {
         block: {
             type: String,
@@ -10053,7 +9334,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/content-link-list/content-link-list.js
 /* harmony default export */ var content_link_list = ({
     name: 'content-link-list',
-    template: __webpack_require__(181),
+    template: __webpack_require__(176),
     props: {
         block: {
             type: String,
@@ -10073,7 +9354,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/hit-area/hit-area.js
 /* harmony default export */ var hit_area = ({
     name: 'hit-area',
-    template: __webpack_require__(180)
+    template: __webpack_require__(175)
 });
 // CONCATENATED MODULE: ./src/js/components/atoms/hit-area/index.js
 
@@ -10081,7 +9362,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/horizontal-list/horizontal-list.js
 /* harmony default export */ var horizontal_list = ({
     name: 'horizontal-list',
-    template: __webpack_require__(179),
+    template: __webpack_require__(174),
     props: {
         styleModifier: {
             type: String
@@ -10099,16 +9380,82 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/horizontal-list/index.js
 
 /* harmony default export */ var atoms_horizontal_list = (horizontal_list);
-// EXTERNAL MODULE: ./src/js/components/atoms/icon/icon.js
-var icon = __webpack_require__(50);
+// CONCATENATED MODULE: ./src/js/components/atoms/icon/icon.js
+var defaultIconUrl = '/static/icons/iconset.svg';
 
+/* harmony default export */ var icon = ({
+    name: 'icon',
+    data: function data() {
+        return {
+            ready: false,
+            symbolData: null,
+            viewBox: null
+        };
+    },
+    props: {
+        iconName: {
+            type: String,
+            required: true
+        }
+    },
+    computed: {
+        iconId: function iconId() {
+            return 'icon-' + this.iconName;
+        },
+        iconClass: function iconClass() {
+            return 'icon--' + this.iconName;
+        },
+        iconUrl: function iconUrl() {
+            return window.svgIconMap || defaultIconUrl;
+        },
+        iconRef: function iconRef() {
+            return this.iconUrl + '#icon-' + this.iconName;
+        }
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        this.ready = true;
+
+        if (/Trident\//.test(window.navigator.userAgent)) {
+            var requestOptions = {
+                cache: 'cache',
+                headers: new Headers()
+            },
+                request = new Request(this.iconUrl, requestOptions);
+
+            fetch(request).then(function (result) {
+                var parser = new DOMParser(),
+                    doc = parser.parseFromString(result.data, 'image/svg+xml'),
+                    symbol = doc.querySelector('#icon-' + _this.iconName);
+
+                if (symbol !== null) {
+                    var symbolContainer = _this.$el.querySelector('#symbol-container'),
+                        clone = symbol.cloneNode(true);
+
+                    if (symbol.viewBox && symbol.viewBox.baseVal) {
+                        var box = symbol.viewBox.baseVal;
+
+                        _this.viewBox = box.x + ' ' + box.y + ' ' + box.width + ' ' + box.height;
+                    }
+
+                    while (clone.childNodes.length) {
+                        symbolContainer.appendChild(clone.firstChild);
+                    }
+                }
+            });
+        }
+    },
+
+    template: __webpack_require__(173)
+});
 // CONCATENATED MODULE: ./src/js/components/atoms/icon/index.js
 
-/* harmony default export */ var atoms_icon = (icon["a" /* default */]);
+/* harmony default export */ var atoms_icon = (icon);
 // CONCATENATED MODULE: ./src/js/components/atoms/nav-assist/nav-assist.js
 /* harmony default export */ var nav_assist = ({
     name: 'nav-assist',
-    template: __webpack_require__(177),
+    template: __webpack_require__(172),
     data: function data() {
         return {
             used: false
@@ -10141,9 +9488,358 @@ var icon = __webpack_require__(50);
 // CONCATENATED MODULE: ./src/js/components/atoms/nav-assist/index.js
 
 /* harmony default export */ var atoms_nav_assist = (nav_assist);
-// EXTERNAL MODULE: ./src/js/utils/viewport.js
-var viewport = __webpack_require__(1);
+// EXTERNAL MODULE: ./node_modules/lodash/debounce.js
+var debounce = __webpack_require__(20);
+var debounce_default = /*#__PURE__*/__webpack_require__.n(debounce);
 
+// CONCATENATED MODULE: ./src/js/utils/browser-capabilities.js
+var browser_capabilities_createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function browser_capabilities_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var instance = null;
+
+var BrowserCapabilities = function () {
+    function BrowserCapabilities() {
+        browser_capabilities_classCallCheck(this, BrowserCapabilities);
+
+        if (instance !== null) {
+            return instance;
+        }
+        instance = this;
+
+        return instance;
+    }
+
+    browser_capabilities_createClass(BrowserCapabilities, null, [{
+        key: 'supportsTouch',
+        get: function get() {
+            return 'ontouchstart' in document.documentElement;
+        }
+    }, {
+        key: 'supportsFontLoadingApi',
+        get: function get() {
+            return 'fonts' in document;
+        }
+    }, {
+        key: 'supportsIntl',
+        get: function get() {
+            return 'Intl' in window;
+        }
+    }, {
+        key: 'supportsObjectFit',
+        get: function get() {
+            var edgeVersion = window.navigator.userAgent.match(/Edge\/(\d{2})\./);
+            var edgePartialSupport = edgeVersion ? parseInt(edgeVersion[1], 10) >= 16 : false;
+
+            if (edgePartialSupport) {
+                return false;
+            }
+
+            return 'objectFit' in document.documentElement.style;
+        }
+    }, {
+        key: 'supportsPictureElement',
+        get: function get() {
+            return 'HTMLPictureElement' in window;
+        }
+    }]);
+
+    return BrowserCapabilities;
+}();
+
+/* harmony default export */ var browser_capabilities = (BrowserCapabilities);
+// CONCATENATED MODULE: ./src/js/constants/defaults.js
+/* harmony default export */ var defaults = ({
+    consentLevel: 3,
+    suggestedConsentLevel: 15,
+    consentLevels: {
+        functional: 1,
+        analytics: 2,
+        personalization: 4,
+        tracking: 8,
+        minimal: 3,
+        all: 15
+    },
+    country: {
+        name: 'United States of America',
+        code: 'US',
+        currency: {
+            code: 'USD',
+            symbol: '$'
+        }
+    },
+    language: 'en',
+    breakpoints: {
+        mobile: {
+            min: 0,
+            max: 568
+        },
+        mobileXl: {
+            min: 569,
+            max: 767
+        },
+        tablet: {
+            min: 768,
+            max: 1024
+        },
+        desktop: {
+            min: 1025,
+            max: 1200
+        },
+        desktopHd: {
+            min: 1201,
+            max: Infinity
+        }
+    },
+    buildingUnit: 12
+});
+// CONCATENATED MODULE: ./src/js/utils/viewport.js
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var viewport_createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function viewport_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+
+
+var viewport_instance = null,
+    _scrollAnimationPending = false,
+    _resizeAnimationPending = false;
+var _resizeHandlers = [],
+    _scrollHandlers = [],
+    _orientationChangeHandlers = [];
+
+function scrollHandler(e) {
+    var _this = this;
+
+    if (!_scrollAnimationPending) {
+        _scrollAnimationPending = true;
+        window.requestAnimationFrame(function () {
+            _this.updateScrollState();
+            _scrollHandlers.forEach(function (h) {
+                return h();
+            });
+            _scrollAnimationPending = false;
+        });
+    }
+}
+
+function resizeHandler(e) {
+    var _this2 = this;
+
+    if (!_resizeAnimationPending) {
+        _resizeAnimationPending = true;
+        window.requestAnimationFrame(function () {
+            _this2.updateScreenDimensions();
+            _resizeHandlers.forEach(function (h) {
+                return h();
+            });
+            _resizeAnimationPending = false;
+        });
+    }
+}
+
+function orientationChangeHandler(e) {
+    window.requestAnimationFrame(function () {
+        _orientationChangeHandlers.forEach(function (h) {
+            return h();
+        });
+    });
+}
+
+function documentLoadedHandler() {
+    this.updateScrollState();
+    this.updateScreenDimensions();
+}
+
+var viewport_ViewportUtility = function () {
+    function ViewportUtility() {
+        viewport_classCallCheck(this, ViewportUtility);
+
+        if (viewport_instance !== null) {
+            return viewport_instance;
+        }
+        viewport_instance = this;
+
+        this.screenWidth = 0;
+        this.screenHeight = 0;
+
+        this.scrollDirection = null;
+        this.scrollOffsetStart = 0;
+        this.scrollOffset = 0;
+
+        this.scrollX = 0;
+        this.scrollY = 0;
+
+        if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) !== 'object') {
+            return this.instance;
+        }
+
+        this._attachEventListeners();
+        this.updateScrollState();
+        this.updateScreenDimensions();
+
+        return viewport_instance;
+    }
+
+    viewport_createClass(ViewportUtility, [{
+        key: '_attachEventListeners',
+        value: function _attachEventListeners() {
+            var _this3 = this;
+
+            var minWait = 1000 / 60,
+                maxWait = 1000 / 30;
+
+            document.addEventListener('scroll', debounce_default()(function () {
+                scrollHandler.apply(_this3);
+            }, minWait, { maxWait: maxWait }));
+
+            if (browser_capabilities.supportsTouch) {
+                document.addEventListener('touchmove', debounce_default()(function () {
+                    scrollHandler.apply(_this3);
+                }, minWait, { maxWait: maxWait }));
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                documentLoadedHandler.apply(_this3);
+            });
+
+            window.addEventListener('resize', debounce_default()(function () {
+                resizeHandler.apply(_this3);
+            }, minWait, { maxWait: maxWait }));
+
+            window.addEventListener('orientationchange', function () {
+                orientationChangeHandler.apply(_this3);
+            });
+        }
+    }, {
+        key: 'updateScrollState',
+        value: function updateScrollState() {
+            var y = window.pageYOffset;
+            var x = window.pageXOffset,
+                maxScrollY = this.documentHeight - this.screenHeight;
+            var direction = this.scrollDirection;
+
+            if (y > maxScrollY) {
+                y = maxScrollY;
+            }
+            if (y > this.scrollY) {
+                direction = 'down';
+            } else if (y < this.scrollY) {
+                direction = 'up';
+            }
+
+            if (this.scrollDirection !== direction) {
+                this.scrollOffsetStart = y;
+            }
+            this.scrollOffset = y - this.scrollOffsetStart;
+            this.scrollDirection = direction;
+
+            this.scrollX = x;
+            this.scrollY = y;
+        }
+    }, {
+        key: 'calculateResize',
+        value: function calculateResize() {
+            scrollHandler.apply(this);
+        }
+    }, {
+        key: 'updateScreenDimensions',
+        value: function updateScreenDimensions() {
+            var currentWindow = window;
+
+            this.screenWidth = currentWindow.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            this.screenHeight = currentWindow.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        }
+    }, {
+        key: 'addResizeHandler',
+        value: function addResizeHandler(handler) {
+            _resizeHandlers.push(handler);
+        }
+    }, {
+        key: 'removeResizeHandler',
+        value: function removeResizeHandler(handler) {
+            var index = _resizeHandlers.indexOf(handler);
+
+            if (index < 0) {
+                return;
+            }
+            _resizeHandlers.splice(index, 1);
+        }
+    }, {
+        key: 'triggerResize',
+        value: function triggerResize() {
+            resizeHandler.apply(this);
+        }
+    }, {
+        key: 'addScrollHandler',
+        value: function addScrollHandler(handler) {
+            _scrollHandlers.push(handler);
+        }
+    }, {
+        key: 'removeScrollHandler',
+        value: function removeScrollHandler(handler) {
+            var index = _scrollHandlers.indexOf(handler);
+
+            if (index < 0) {
+                return;
+            }
+            _scrollHandlers.splice(index, 1);
+        }
+    }, {
+        key: 'addOrientationChangeHandler',
+        value: function addOrientationChangeHandler(handler) {
+            _orientationChangeHandlers.push(handler);
+        }
+    }, {
+        key: 'removeOrientationChangeHandler',
+        value: function removeOrientationChangeHandler(handler) {
+            var index = _orientationChangeHandlers.indexOf(handler);
+
+            if (index < 0) {
+                return;
+            }
+            _orientationChangeHandlers.splice(index, 1);
+        }
+    }, {
+        key: 'top',
+        get: function get() {
+            return this.scrollY <= 0;
+        }
+    }, {
+        key: 'documentHeight',
+        get: function get() {
+            if (typeof window !== 'undefined') {
+                return Math.max(document.body.scrollHeight, document.body.offsetHeight);
+            }
+
+            return 0;
+        }
+    }, {
+        key: 'isMobile',
+        get: function get() {
+            return this.screenWidth <= defaults.breakpoints.mobile.max;
+        }
+    }, {
+        key: 'isMobileXl',
+        get: function get() {
+            return this.screenWidth <= defaults.breakpoints.mobileXl.max;
+        }
+    }, {
+        key: 'isTablet',
+        get: function get() {
+            return this.screenWidth <= defaults.breakpoints.tablet.max;
+        }
+    }]);
+
+    return ViewportUtility;
+}();
+
+/* harmony default export */ var viewport = (viewport_ViewportUtility);
 // CONCATENATED MODULE: ./src/js/components/atoms/responsive-picture/responsive-picture-source.js
 /* harmony default export */ var responsive_picture_source = ({
     name: 'responsive-picture-source',
@@ -10178,10 +9874,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     components: {
         ResponsivePictureSource: responsive_picture_source
     },
-    template: __webpack_require__(173),
+    template: __webpack_require__(171),
     data: function data() {
         return {
-            viewportUtil: new viewport["a" /* default */](),
+            viewportUtil: new viewport(),
             ready: false,
             inView: false,
             loaded: false
@@ -10277,9 +9973,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 // EXTERNAL MODULE: external "gsap"
 var external_gsap_ = __webpack_require__(0);
 
-// EXTERNAL MODULE: ./src/js/constants/defaults.js
-var defaults = __webpack_require__(2);
-
 // CONCATENATED MODULE: ./src/js/components/atoms/tabbable-definition-list/tabbable-definition-list.js
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
@@ -10291,10 +9984,10 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 /* harmony default export */ var tabbable_definition_list = ({
     name: 'tabbable-definition-list',
-    template: __webpack_require__(172),
+    template: __webpack_require__(167),
     data: function data() {
         return {
-            viewport: new viewport["a" /* default */](),
+            viewport: new viewport(),
             heights: []
         };
     },
@@ -10322,7 +10015,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 direction = this.getDirection(oldValue, newValue),
                 height = this.heights[newValue],
                 delay = this.viewport.isMobile ? duration * 0.6 : 0,
-                descriptionHeight = (this.viewport.isMobile ? height.dt : 0) + height.dd + defaults["a" /* default */].buildingUnit * 2.5,
+                descriptionHeight = (this.viewport.isMobile ? height.dt : 0) + height.dd + defaults.buildingUnit * 2.5,
                 elementsToHide = !this.viewport.isMobile ? this.$refs.descriptions[oldValue] : [this.$refs.terms[oldValue], this.$refs.descriptions[oldValue]];
 
             external_gsap_["TweenLite"].to(elementsToHide, duration, { height: 0, y: 20 * direction, ease: external_gsap_["Power3"].easeOut });
@@ -10438,15 +10131,15 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
                 height = this.heights[this.activeIndex];
 
             this.$refs.descriptions.forEach(function (element, index) {
-                element.style.top = isMobile ? _this2.heights[index].dt + defaults["a" /* default */].buildingUnit * 2.5 + 'px' : 0;
+                element.style.top = isMobile ? _this2.heights[index].dt + defaults.buildingUnit * 2.5 + 'px' : 0;
             });
 
             if (isMobile) {
-                currentElement.style.height = height.dt + height.dd + defaults["a" /* default */].buildingUnit * 2.5 + 'px';
+                currentElement.style.height = height.dt + height.dd + defaults.buildingUnit * 2.5 + 'px';
             } else {
-                currentElement.style.height = height.dd + defaults["a" /* default */].buildingUnit * 2.5 + 'px';
+                currentElement.style.height = height.dd + defaults.buildingUnit * 2.5 + 'px';
             }
-            this.$el.style.height = maxElementHeight + defaults["a" /* default */].buildingUnit * 0.5 + 'px';
+            this.$el.style.height = maxElementHeight + defaults.buildingUnit * 0.5 + 'px';
         }
     },
     computed: {
@@ -10456,7 +10149,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
             }
             if (this.viewport.isMobile) {
                 return Math.max.apply(Math, _toConsumableArray(this.heights.map(function (i) {
-                    return i.dt + defaults["a" /* default */].buildingUnit * 2.5 + i.dd;
+                    return i.dt + defaults.buildingUnit * 2.5 + i.dd;
                 })));
             }
 
@@ -10479,7 +10172,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // CONCATENATED MODULE: ./src/js/components/atoms/tooltip/tooltip.js
 /* harmony default export */ var tooltip = ({
     name: 'tooltip',
-    template: __webpack_require__(171),
+    template: __webpack_require__(166),
     props: {
         block: {
             type: String,
@@ -10501,12 +10194,88 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // CONCATENATED MODULE: ./src/js/components/atoms/tooltip/index.js
 
 /* harmony default export */ var atoms_tooltip = (tooltip);
-// EXTERNAL MODULE: ./src/js/components/atoms/youtube-video/youtube-video.js
-var youtube_video = __webpack_require__(49);
+// CONCATENATED MODULE: ./src/js/components/atoms/youtube-video/youtube-video.js
+var youtube_video_typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var embedProps = {
+    modestbranding: {
+        type: Boolean,
+        default: true
+    },
+    controls: {
+        type: Boolean,
+        default: true
+    },
+    jsapi: {
+        type: Boolean,
+        default: true
+    },
+    fullscreen: {
+        type: Boolean,
+        default: true
+    },
+    rel: {
+        type: Boolean,
+        default: false
+    },
+    playsinline: {
+        type: Boolean,
+        default: true
+    },
+    start: {
+        type: Number
+    },
+    end: {
+        type: Number
+    }
+};
+
+/* harmony default export */ var youtube_video = ({
+    name: 'youtube-video',
+    template: __webpack_require__(165),
+    data: function data() {
+        return {
+            loadVideo: false
+        };
+    },
+    props: _extends({
+        videoId: {
+            type: String,
+            required: true
+        }
+    }, embedProps),
+    computed: {
+        videoQuery: function videoQuery() {
+            var _this = this;
+
+            var options = [];
+
+            Object.keys(embedProps).forEach(function (key) {
+                var value = _this[key],
+                    valueType = typeof value === 'undefined' ? 'undefined' : youtube_video_typeof(value);
+
+                if (valueType === 'boolean') {
+                    options.push(key + '=' + ~~_this[key]);
+                } else if (valueType !== 'undefined') {
+                    options.push(key + '=' + _this[key]);
+                }
+            });
+
+            return 'autoplay=1&' + options.join('&');
+        },
+        videoUrl: function videoUrl() {
+            return 'https://www.youtube-nocookie.com/embed/' + this.videoId + '?' + this.videoQuery;
+        }
+    },
+    mounted: function mounted() {
+        this.loadVideo = true;
+    }
+});
 // CONCATENATED MODULE: ./src/js/components/atoms/youtube-video/index.js
 
-/* harmony default export */ var atoms_youtube_video = (youtube_video["a" /* default */]);
+/* harmony default export */ var atoms_youtube_video = (youtube_video);
 // CONCATENATED MODULE: ./src/js/components/atoms/index.js
 
 
@@ -10520,14 +10289,14 @@ var youtube_video = __webpack_require__(49);
 
 
 // EXTERNAL MODULE: ./node_modules/vue/dist/vue.runtime.esm.js
-var vue_runtime_esm = __webpack_require__(11);
+var vue_runtime_esm = __webpack_require__(9);
 
 // EXTERNAL MODULE: ./node_modules/lodash/filter.js
-var filter = __webpack_require__(23);
+var filter = __webpack_require__(19);
 var filter_default = /*#__PURE__*/__webpack_require__.n(filter);
 
 // EXTERNAL MODULE: ./node_modules/lodash/find.js
-var find = __webpack_require__(7);
+var find = __webpack_require__(5);
 var find_default = /*#__PURE__*/__webpack_require__.n(find);
 
 // CONCATENATED MODULE: ./src/js/components/molecules/auto-complete/auto-complete.js
@@ -10539,7 +10308,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 
 /* harmony default export */ var auto_complete = ({
     name: 'auto-complete',
-    template: __webpack_require__(80),
+    template: __webpack_require__(74),
     data: function data() {
         return {
             input: '',
@@ -10547,7 +10316,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
             selectedIndex: 0,
             reversed: false,
             forceOpen: false,
-            viewportUtil: new viewport["a" /* default */]()
+            viewportUtil: new viewport()
         };
     },
     props: {
@@ -10820,7 +10589,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 // CONCATENATED MODULE: ./src/js/components/molecules/brand-card/brand-card.js
 /* harmony default export */ var brand_card = ({
     name: 'brand-card',
-    template: __webpack_require__(79),
+    template: __webpack_require__(73),
     props: {
         body: {
             type: String,
@@ -10844,7 +10613,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 // CONCATENATED MODULE: ./src/js/components/molecules/card/card.js
 /* harmony default export */ var card = ({
     name: 'card',
-    template: __webpack_require__(78),
+    template: __webpack_require__(72),
     props: {
         block: {
             type: String,
@@ -10875,7 +10644,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 // CONCATENATED MODULE: ./src/js/components/molecules/color/color.js
 /* harmony default export */ var color = ({
     name: 'color',
-    template: __webpack_require__(77),
+    template: __webpack_require__(71),
     props: {
         background: {
             type: String,
@@ -10925,7 +10694,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 // CONCATENATED MODULE: ./src/js/components/molecules/content-toggle/content-toggle.js
 /* harmony default export */ var content_toggle = ({
     name: 'content-toggle',
-    template: __webpack_require__(76),
+    template: __webpack_require__(70),
     props: {
         toggleState: {
             type: Boolean,
@@ -11006,7 +10775,7 @@ var Arithmetic = function () {
 
 /* harmony default export */ var currency = ({
     name: 'currency',
-    template: __webpack_require__(75),
+    template: __webpack_require__(69),
     props: {
         amount: {
             type: Number,
@@ -11033,7 +10802,7 @@ var Arithmetic = function () {
 // CONCATENATED MODULE: ./src/js/components/molecules/faux-vertical-scroll/faux-vertical-scroll.js
 /* harmony default export */ var faux_vertical_scroll = ({
     name: 'faux-scroll',
-    template: __webpack_require__(74),
+    template: __webpack_require__(68),
     data: function data() {
         return {
             drag: {
@@ -11144,7 +10913,7 @@ var Arithmetic = function () {
 // CONCATENATED MODULE: ./src/js/components/molecules/flyout/flyout.js
 /* harmony default export */ var flyout = ({
     name: 'flyout',
-    template: __webpack_require__(73),
+    template: __webpack_require__(67),
     data: function data() {
         return {
             linkIndex: 0,
@@ -11289,7 +11058,7 @@ var Arithmetic = function () {
 // CONCATENATED MODULE: ./src/js/components/molecules/flyout-section/flyout-section.js
 /* harmony default export */ var flyout_section = ({
     name: 'flyout-section',
-    template: __webpack_require__(72),
+    template: __webpack_require__(66),
 
     data: function data() {
         return {
@@ -11364,7 +11133,7 @@ var Arithmetic = function () {
 
 /* harmony default export */ var icon_button = ({
     name: 'icon-button',
-    template: __webpack_require__(71),
+    template: __webpack_require__(65),
     props: {
         buttonClass: {
             type: String
@@ -11395,7 +11164,7 @@ var Arithmetic = function () {
 
 /* harmony default export */ var modal = ({
     name: 'modal',
-    template: __webpack_require__(70),
+    template: __webpack_require__(64),
     data: function data() {
         return {
             iframeLoaded: false
@@ -11466,11 +11235,11 @@ var Arithmetic = function () {
 
 /* harmony default export */ var pager = ({
     name: 'pager',
-    template: __webpack_require__(69),
+    template: __webpack_require__(63),
     data: function data() {
         return {
             indicatorActive: false,
-            viewport: new viewport["a" /* default */]()
+            viewport: new viewport()
         };
     },
     props: {
@@ -11545,7 +11314,7 @@ var Arithmetic = function () {
 // CONCATENATED MODULE: ./src/js/components/molecules/search/search-bar.js
 /* harmony default export */ var search_bar = ({
     name: 'search-bar',
-    template: __webpack_require__(68),
+    template: __webpack_require__(62),
     data: function data() {
         return {
             searchValue: ''
@@ -11609,7 +11378,7 @@ function getImage(image, orientation, device) {
 
 /* harmony default export */ var cms_image = ({
     name: 'cms-image',
-    template: __webpack_require__(67),
+    template: __webpack_require__(61),
     props: {
         image: {
             type: Object,
@@ -11651,10 +11420,10 @@ function getImage(image, orientation, device) {
 
 /* harmony default export */ var organisms_cms_image = (cms_image);
 // EXTERNAL MODULE: external "vuex"
-var external_vuex_ = __webpack_require__(6);
+var external_vuex_ = __webpack_require__(4);
 
 // CONCATENATED MODULE: ./src/js/components/organisms/country-selector/country-selector.js
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var country_selector_extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
@@ -11663,7 +11432,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 /* harmony default export */ var country_selector = ({
     name: 'country-selector',
-    template: __webpack_require__(66),
+    template: __webpack_require__(60),
     data: function data() {
         return {
             initialized: false,
@@ -11682,7 +11451,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             default: null
         }
     },
-    computed: _extends({}, Object(external_vuex_["mapGetters"])(['countries', 'detectedCountry']), {
+    computed: country_selector_extends({}, Object(external_vuex_["mapGetters"])(['countries', 'detectedCountry']), {
         detectedCountries: function detectedCountries() {
             var detectedCountries = [];
 
@@ -11789,10 +11558,10 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 
 /* harmony default export */ var sub_nav = ({
     name: 'sub-nav',
-    template: __webpack_require__(65),
+    template: __webpack_require__(59),
     data: function data() {
         return {
-            viewport: new viewport["a" /* default */]()
+            viewport: new viewport()
         };
     },
     computed: sub_nav_extends({
@@ -11820,7 +11589,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/brands/brands.js
 /* harmony default export */ var brands = ({
     name: 'brands',
-    template: __webpack_require__(64),
+    template: __webpack_require__(58),
     props: {
         title: {
             type: String,
@@ -11841,7 +11610,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/brands-large/brands-large.js
 /* harmony default export */ var brands_large = ({
     name: 'brands-large',
-    template: __webpack_require__(63),
+    template: __webpack_require__(57),
     props: {
         title: {
             type: String,
@@ -11867,10 +11636,10 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 
 /* harmony default export */ var cases = ({
     name: 'cases',
-    template: __webpack_require__(62),
+    template: __webpack_require__(56),
     data: function data() {
         return {
-            viewport: new viewport["a" /* default */](),
+            viewport: new viewport(),
             showVideo: false
         };
     },
@@ -11917,7 +11686,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/colors/colors.js
 /* harmony default export */ var colors = ({
     name: 'colors',
-    template: __webpack_require__(61),
+    template: __webpack_require__(55),
     data: function data() {
         return {
             activeColor: null,
@@ -12013,7 +11782,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/ecosystem/ecosystem.js
 /* harmony default export */ var ecosystem = ({
     name: 'ecosystem',
-    template: __webpack_require__(60),
+    template: __webpack_require__(54),
     props: {
         title: {
             type: String,
@@ -12031,7 +11800,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/examples/examples.js
 /* harmony default export */ var examples = ({
     name: 'examples',
-    template: __webpack_require__(59),
+    template: __webpack_require__(53),
     props: {
         title: {
             type: String,
@@ -12060,7 +11829,7 @@ var defaultAnimationDuration = 1;
 
 /* harmony default export */ var explore = ({
     name: 'explore',
-    template: __webpack_require__(58),
+    template: __webpack_require__(52),
     data: function data() {
         return {
             activeSlide: 0
@@ -12120,7 +11889,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/general-content/general-content.js
 /* harmony default export */ var general_content = ({
     name: 'general-content',
-    template: __webpack_require__(57),
+    template: __webpack_require__(51),
     props: {
         title: {
             type: String,
@@ -12151,7 +11920,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/hero-product/hero-product.js
 /* harmony default export */ var hero_product = ({
     name: 'hero-product',
-    template: __webpack_require__(56),
+    template: __webpack_require__(50),
     props: {
         title: {
             type: String,
@@ -12189,7 +11958,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/hero-products-application/hero-products-application.js
 /* harmony default export */ var hero_products_application = ({
     name: 'hero-products-application',
-    template: __webpack_require__(55),
+    template: __webpack_require__(49),
     props: {
         title: {
             required: true,
@@ -12235,7 +12004,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/hero-text/hero-text.js
 /* harmony default export */ var hero_text = ({
     name: 'hero-text',
-    template: __webpack_require__(54),
+    template: __webpack_require__(48),
     props: {
         title: {
             type: String,
@@ -12256,7 +12025,7 @@ var defaultAnimationDuration = 1;
 
 /* harmony default export */ var slider_reveal = ({
     name: 'slider-reveal',
-    template: __webpack_require__(53),
+    template: __webpack_require__(47),
     props: {
         styleModifiers: {
             type: Array,
@@ -12292,7 +12061,7 @@ var defaultAnimationDuration = 1;
             prevItemHeight: 0,
             screenCenterY: 0,
             timeLine: null,
-            viewportUtil: new viewport["a" /* default */]()
+            viewportUtil: new viewport()
         };
     },
     mounted: function mounted() {
@@ -12375,7 +12144,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/ubr/ubr.js
 /* harmony default export */ var ubr = ({
     name: 'ubr',
-    template: __webpack_require__(52),
+    template: __webpack_require__(46),
     props: {
         title: {
             type: String,
@@ -12421,9 +12190,6 @@ var components_extends = Object.assign || function (target) { for (var i = 1; i 
 
 
 /* harmony default export */ var components = (components_extends({}, atoms_namespaceObject, molecules_namespaceObject, organisms_namespaceObject, organisms_page_namespaceObject));
-// EXTERNAL MODULE: ./src/js/utils/browser-capabilities.js
-var browser_capabilities = __webpack_require__(22);
-
 // CONCATENATED MODULE: ./src/js/utils/text-utils.js
 var text_utils_createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -12451,11 +12217,11 @@ var TextUtils = function () {
 /* harmony default export */ var text_utils = (TextUtils);
 // CONCATENATED MODULE: ./src/js/index.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "registry", function() { return registry; });
-/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "Defaults", function() { return defaults["a" /* default */]; });
+/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "Defaults", function() { return defaults; });
 /* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "Arithmetic", function() { return arithmetic; });
-/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "BrowserCapabilities", function() { return browser_capabilities["a" /* default */]; });
+/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "BrowserCapabilities", function() { return browser_capabilities; });
 /* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "TextUtils", function() { return text_utils; });
-/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "ViewportUtility", function() { return viewport["a" /* default */]; });
+/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "ViewportUtility", function() { return viewport; });
 
 
 
@@ -12477,184 +12243,184 @@ Object.keys(components).forEach(function (c) {
 
 
 /***/ }),
-/* 52 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"ubr\">\n    <section class=\"container\">\n        <h2>{{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"ubr__description\">\n                    <p>{{ description }}</p>\n                    <ul class=\"list ubr__list\">\n                        <li class=\"list__item\" v-for=\"reason of reasons\">{{ reason }}</li>\n                    </ul>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--xs-6\">\n                <template v-if=\"image && image.length\">\n                    <div class=\"ubr__image \">\n                        <responsive-picture class=\"img--responsive\" v-bind=\"image\" :orientation=\"'landscape'\"></responsive-picture>\n                    </div>\n                </template>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 53 */
+/* 47 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"slider-reveal\" v-bind:class=\"styleModifiers\">\n    <section class=\"container slider-reveal__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <h2 class=\"slider-reveal__title\"> {{ title }}</h2>\n                <p v-if=\"!isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"!isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <div ref=\"image-wrapper\" class=\"slider-reveal__image-wrapper\">\n                    <div class=\"slider-reveal__image-aspect\">\n                        <div class=\"slider-reveal__mask\"\n                            ref=\"image-mask\"\n                            v-for=\"image in imageSlider.images\"\n                        >\n                            <responsive-picture v-bind=\"image\" img-class=\"slider-reveal__image\"></responsive-picture>\n                        </div>\n                    </div>\n                </div>\n                <p v-if=\"isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n        </div>\n    </section>\n</article>";
 
 /***/ }),
-/* 54 */
+/* 48 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--text\" v-if=\"this.contents && contents.length\" >\n    <div class=\"container\">\n        <h1 v-if=\"title && title.length\">{{ title }}</h1>\n        <div class=\"hero__content content--rich\" v-html=\"contents\" />\n    </div>\n</article>\n\n";
 
 /***/ }),
-/* 55 */
+/* 49 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--products-application\">\n    <div class=\"hero__container--top\">\n            <responsive-picture v-bind=\"heroImage\" imgClass=\"hero__image--full\"></responsive-picture>\n            <div class=\"hero__image-overlay\"></div>\n        <div class=\"container\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__headline\">\n                        <h1>{{ title }}</h1>\n                    </div>\n                </div>\n\n                <div class=\"flexgrid__cell\" style=\"position:relative;\">\n                    <p class=\"hero__subtitle\">{{ subtitle }}</p>\n                    <responsive-picture v-bind=\"productImage\" imgClass=\"hero__image--product\"></responsive-picture>\n                </div>\n\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__usp-container\">\n                        <div class=\"hero__usp usp--icon\" v-for=\"icon in uspIcons\">\n                            <icon :icon-name=\"icon.iconName\" class=\"usp__icon\"></icon>\n                            <small class=\"usp__label\">{{ icon.text }}</small>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!-- {{> molecules-price-table}} -->\n                    <!-- {{> molecules-price-table-tabs}} -->\n                    <!-- {{> atoms-anchor-button:button--primary|hero__button}} -->\n                    <p>TODO: Pricetable</p>\n                    <router-link :to=\"ctaLink.href\" class=\"button button--primary\">{{  ctaLink.text }}</router-link>\n                    <ul class=\"link-list link-list--icon hero__link-list\" v-if=\"links && links.length\">\n                        <li class=\"link-list__item\" v-for=\"link in links\">\n                            <content-link :href=\"link.href\" :icon=\"link.icon\">{{ link.text }}</content-link>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>";
 
 /***/ }),
-/* 56 */
+/* 50 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--products\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <!--Price table-->\n                    <div class=\"price-table hero__price-table\">\n                        <ul class=\"price-table__list\" role=\"tablist\">\n                            <li class=\"price-table__item\" v-for=\"material in materials\" role=\"tab\">\n                                <icon icon-name=\"material\" class=\"price-table__icon\"></icon>\n                                <span class=\"price-table__info\">\n                                    <small class=\"price-table__tagline\">\n                                        {{ material['short_title'] }},\n                                        {{ material.weight.value }}{{ material.weight.unit }}\n                                        from\n                                    </small>\n                                    <currency :currency-type=\"material.price.currency\" :amount=\"material.price.value\" :decimals=\"0\"></currency>\n                                </span>\n                            </li>\n                        </ul>\n                        <small class=\"price-table__disclaimer\">{{ labels.excludingVat }}</small>\n                    </div>\n                    <!--End price table-->\n\n                    <!--Button-->\n                    <a href=\"\" class=\"button button--primary\" v-if=\"materials && materials.length\">{{ labels.buyCTA }}</a>\n                    <!--End button-->\n\n                    <!--Link list icons-->\n                    <ul class=\"link-list link-list--icon hero__link-list\">\n                        <template v-if=\"documents\">\n                            <li class=\"link-list__item\" v-for=\"link in this.link\">\n                                <content-link :href=\"link.uri\" icon=\"info\">{{ link.title }}</content-link>\n                            </li>\n                        </template>\n                        <template v-if=\"this.documents\">\n                            <li class=\"link-list__item\" v-for=\"document in documents\" v-if=\"document.links\">\n                                <content-link :href=\"document.links.self.href\" icon=\"download\">{{ labels.download}} {{ document.title }}</content-link>\n                            </li>\n                        </template>\n                    </ul>\n                    <!--End link list-->\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--product\">\n                    <template v-if=\"this.image && this.image.length\">\n                        <cms-image :image=\"image[0]\" :orientation=\"'square'\"></cms-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 57 */
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"general-content\">\n    <section class=\"container general-content__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell\">\n                <h2 class=\"general-content__title\"> {{ title }}</h2>\n                <p class=\"general-content__body\" v-for=\"p in text\">{{ p }}</p>\n                <content-link  v-if=\"contentLink\" :block=\"'general-content'\" :href=\"contentLink.href\">{{ contentLink.text }}</content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell\">\n                <div class=\"general-content__image-wrapper\">\n                    <responsive-picture v-if=\"image\" v-bind=\"image\"></responsive-picture>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>";
 
 /***/ }),
-/* 58 */
+/* 52 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"explore\">\n    <section class=\"container explore__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <h2 class=\"explore__title\">{{ title }}</h2>\n            </div>\n        </div>\n        <div class=\"explore__image-placeholder\">\n            <template v-for=\"(item, index) in items\">\n                <transition @enter=\"imageEnter\" @leave=\"imageLeave\">\n                    <picture ref=\"image\" v-show=\"index === activeSlide\">\n                        <source media=\"(min-width: 569px)\" :srcset=\"item.image.mobileXlWidth.url + ', ' + item.image.mobileXlWidth.retina.url + ' 2x'\">\n                        <img class=\"img--responsive explore__image img--contain\" :src=\"item.image.mobileWidth.url\" :alt=\"item.image.alt\">\n                    </picture>\n                </transition>\n            </template>\n            <pager name=\"explore-pager\" class=\"explore__pager\" :pages=\"items.length\"\n                   :active-index=\"activeSlide\" @index-changed=\"indexChanged\"></pager>\n        </div>\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"explore__description\">\n                    <tabbable-definition-list\n                        :items=\"items\"\n                        :active-index=\"activeSlide\"\n                        @index-changed=\"indexChanged\"\n                    ></tabbable-definition-list>\n                </div>\n                <div class=\"explore__navigation\">\n                    <icon-button class=\"explore__nav\"\n                                 v-if=\"buttons && buttons.previous\"\n                                 :icon-name=\"buttons.previous.iconName\"\n                                 @click=\"navClicked('previous')\">\n                        <span class=\"icon-button__label\">{{ buttons.previous.label }}</span>\n                    </icon-button>\n                    <icon-button class=\"explore__nav icon-button--reversed\"\n                                 v-if=\"buttons && buttons.next\"\n                                 :icon-name=\"buttons.next.iconName\"\n                                 @click=\"navClicked('next')\">\n                        <span class=\"icon-button__label\">{{ buttons.next.label }}</span>\n                    </icon-button>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 59 */
+/* 53 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"examples\">\n    <div class=\"container\">\n        <header>\n            <h2 class=\"examples__headline\">{{ title }}</h2>\n        </header>\n        <horizontal-list class=\"examples__caption\" v-bind=\"horizontalList\" v-if=\"horizontalList\"></horizontal-list>\n        <div class=\"cards\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\" v-for=\"card in this.cards\">\n                    <card :block=\"'examples'\" :card=\"card\"></card>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n";
 
 /***/ }),
-/* 60 */
+/* 54 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"ecosystem\">\n    <section class=\"container\">\n      <h2 class=\"ecosystem__title\" v-if=\"title\">{{ title }}</h2>\n      <div class=\"ecosystem__items\">\n          <card v-for=\"(item, index) in items\" :key=\"index\" :card=\"item\" :block=\"'ecosystem'\"></card>\n      </div>\n    </section>\n</article>";
 
 /***/ }),
-/* 61 */
+/* 55 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"colors\" v-if=\"shouldRender\">\n    <div class=\"container\">\n        <header>\n            <h2>{{ title }}</h2>\n        </header>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--sm-4\">\n                <div class=\"colors__swatches\">\n                    <ul class=\"list colors__list\" v-if=\"colors\">\n                        <li class=\"list__item colors__list-item\" :class=\"{'color--selected': color === activeColor }\"\n                            v-for=\"color in colors\">\n                            <hit-area @mouseover.native=\"checkTooltipPos\" @focus.native=\"checkTooltipPos\"\n                                      @click.native=\"setSelected(color)\" @keyup.enter.native=\"setSelected(color)\">\n                                <tooltip block=\"colors\">\n                                    <dl class=\"list tooltip__list\">\n                                        <dt class=\"list__item tooltip__list-item tooltip__label\">Material:</dt>\n                                        <dd class=\"list__item tooltip__list-item\">{{ color.title }}</dd>\n                                        <template v-if=\"!color.is_transparent\">\n                                            <dt class=\"list__item tooltip__list-item tooltip__label\">Color:</dt>\n                                            <dd class=\"list__item tooltip__list-item\">{{ color. system_code }}</dd>\n                                        </template>\n                                        <dt class=\"list__item tooltip__list-item tooltip__label\">Weight:</dt>\n                                        <dd class=\"list__item tooltip__list-item\"><span class=\"hardcoded\">750 g</span>\n                                        </dd>\n                                    </dl>\n                                </tooltip>\n                                <color v-if=\"color.is_transparent\"></color>\n                                <color :background=\"color.rgb_hex_code\" v-else></color>\n                            </hit-area>\n                        </li>\n                    </ul>\n                    <content-link mod=\"large\"><span class=\"hardcoded\">Where to buy</span></content-link>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--sm-8 flexgrid__cell--xs-6\">\n                <div class=\"colors__image\" ref=\"image\" :class=\"imageClass\">\n                    <cms-image :image=\"image\" orientation=\"landscape\"></cms-image>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n\n";
 
 /***/ }),
-/* 62 */
+/* 56 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"case\">\n    <section class=\"container case__container\">\n        <figure class=\"case__media\" v-show=\"this.isMobileXl\">\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <h2 class=\"case__title\">{{ title }}</h2>\n            </figcaption>\n\n            <div class=\"case__media-placeholder\">\n                <figcaption>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <p class=\"case__paragraph case__paragraph--last\">{{ description }}</p>\n            </figcaption>\n        </figure>\n\n        <figure class=\"case__media\" v-show=\"!this.isMobileXl\">\n            <div class=\"case__media-placeholder\">\n                <figcaption class=\"flex-grid flexgrid__cell--xs-6 case__flex-grid--center\">\n                    <h2 class=\"case__title\">{{ title }}</h2>\n                    <p class=\"case__paragraph\">{{ description }}</p>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n        </figure>\n    </section>\n    <modal class=\"modal--video\" v-if=\"showVideo\" @close=\"toggleVideo\">\n        <youtube-video :video-id=\"videoId\"></youtube-video>\n    </modal>\n</article>\n";
 
 /***/ }),
-/* 63 */
+/* 57 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"brands brands--large\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\">{{ title }}</h2>\n        <p class=\"brands__body\" v-if=\"text\">{{ text }}</p>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :href=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>";
 
 /***/ }),
-/* 64 */
+/* 58 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"brands\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\"> {{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :href=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>";
 
 /***/ }),
-/* 65 */
+/* 59 */
 /***/ (function(module, exports) {
 
 module.exports = "<nav aria-label=\"sub items\" class=\"sub-nav sub-nav--fixed\" :class=\"classObject\" v-if=\"page\">\n    <faux-scroll>\n        <ul class=\"sub-nav__list\" role=\"presentation\"  v-if=\"page.links && page.links.siblings && page.links.siblings.length\">\n            <li class=\"sub-nav__item\" v-for=\"sibling in page.links.siblings\">\n                <router-link class=\"sub-nav__link\" :to=\"mapLink(sibling.href)\" active-class=\"sub-nav__link--active\">\n                    <responsive-picture class=\"sub-nav__image\" v-if=\"sibling.icon\"\n                        :desktop-width=\"sibling.icon.thumbsquare_desktop\"\n                        :mobile-width=\"sibling.icon.thumbsquare_mobile\">\n                    </responsive-picture>\n                    <p class=\"sub-nav__label\">{{ sibling.title }}</p>\n                </router-link>\n            </li>\n        </ul>\n    </faux-scroll>\n\n</nav>\n";
 
 /***/ }),
-/* 66 */
+/* 60 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"country-selector\" v-if=\"initialized\">\n    <auto-complete class=\"country-selector__auto-complete auto-complete--small\" ref=\"autocomplete\"\n        :placeholder=\"placeholder\"\n        title-field=\"name\" value-field=\"code\"\n        v-model=\"country\"\n        @input=\"countryChanged\"\n        @close=\"close\"\n        @changeFocus=\"focusClose\"\n        :items=\"countries.country\"\n        :stored-items=\"detectedCountries\"\n        default-open>\n    </auto-complete>\n    <!-- TODO: refactor out settings-selector__edit-button (see: https://jira.ultimaker.com:8443/browse/UWEB-4969)-->\n    <icon-button icon-name=\"close\" button-aria-label=\"Cancel\" ref=\"closeCountryPanel\"\n        button-class=\"country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed\"\n        @click=\"close\">\n    </icon-button>\n</div>";
 
 /***/ }),
-/* 67 */
+/* 61 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"cms-image\" :style=\"styles\">\n    <responsive-picture class=\"cms-image__image\"\n        :desktop-hd-width=\"desktopRetinaImage\"\n        :desktop-width=\"desktopImage\"\n        :mobile-width=\"mobileImage\"\n        :alt=\"image.alt_text\">\n    </responsive-picture>\n</div>\n";
 
 /***/ }),
-/* 68 */
+/* 62 */
 /***/ (function(module, exports) {
 
 module.exports = "<form action=\"\" id=\"search\" class=\"search\" @submit.prevent=\"doSearch\">\n    <div role=\"search\">\n        <div class=\"search__inputholder\">\n            <label for=\"search__input\" class=\"search__label\">Search</label>\n            <input id=\"search__input\" type=\"text\" name=\"search\" placeholder=\"How can we help?\" class=\"search__input\"\n                   @blur=\"onBlur\" @keyup.esc=\"close\"\n                   v-model=\"searchValue\"\n                   ref=\"search__input\">\n        </div>\n        <icon-button button-class=\"icon-button icon-button--large search__button\" button-aria-label=\"Search\"\n                     icon-name=\"search\" @click=\"doSearch\"></icon-button>\n        <icon-button button-class=\"icon-button icon-button--large search__close-button\" button-aria-label=\"Close search\"\n                     icon-name=\"close\" @click=\"close\"></icon-button>\n    </div>\n</form>\n";
 
 /***/ }),
-/* 69 */
+/* 63 */
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"pager\" aria-label=\"pagination\">\n    <ul class=\"pager__list\">\n        <li ref=\"indicator\" class=\"pager__active-page\" aria-hidden=\"true\">\n            <icon class=\"pager__active-page-indicator\" icon-name=\"hexagon-fill\"></icon>\n        </li>\n        <li ref=\"page\" v-for=\"(page, index) in pages\" \n            class=\"pager__page\" >\n            <a class=\"pager__page-indicator\" @click=\"changeIndex(index)\"\n                aria-role=\"button\" \n                :aria-label=\"getAriaLabel(index)\" \n                :aria-current='index === activeIndex'>\n                <icon icon-name=\"hexagon\"></icon>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
-/* 70 */
+/* 64 */
 /***/ (function(module, exports) {
 
 module.exports = "<transition name=\"modal\" @enter=\"enter\" @leave=\"leave\">\n    <div class=\"modal\" @click=\"closeModal\">\n        <div ref=\"overlay\" class=\"modal__overlay\"></div>\n        <icon-button ref=\"close\" icon-name=\"close\" class=\"modal__close\"/>\n        <div ref=\"modal\" class=\"modal__content\" @click.stop>\n            <div class=\"modal__header\">\n                <slot name=\"header\" />\n            </div>\n            <slot />\n        </div>\n    </div>\n</transition>\n";
 
 /***/ }),
-/* 71 */
+/* 65 */
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"icon-button\" :class=\"buttonClass\" :aria-label=\"buttonAriaLabel\" role=\"button\" tabindex=\"0\" @click=\"$emit('click')\" @keyup.enter=\"$emit('click')\">\n    <icon class=\"icon-button__icon\" :icon-name=\"iconName\"></icon>\n    <span class=\"icon-button__label\" v-if=\"hasDefaultSlot\">\n        <slot></slot>\n    </span>\n</a>\n";
 
 /***/ }),
-/* 72 */
+/* 66 */
 /***/ (function(module, exports) {
 
 module.exports = "<li class=\"flyout__section\" :class=\"sectionClass\">\n    <strong class=\"flyout__title\" :id=\"itemId\">{{ title }}</strong>\n    <ul class=\"flyout__list\"\n        :aria-labelledby=\"itemId\"\n        :aria-haspopup=\"links.length > maxVisible\"\n        :aria-expanded=\"isExpanded\"\n        v-if=\"isCompact\">\n\n        <template v-for=\"(link, index) in links\">\n            <li class=\"flyout__list-item\"  v-if=\"index <= maxVisible - 1\">\n                <content-link @click.native=\"$emit('close')\" :href=\"link.href\" class=\"flyout__link\">{{ link.title }}</content-link>\n            </li>\n            <li class=\"flyout__list-item\" v-else>\n                <template v-if=\"isExpanded\">\n                    <content-link @click.native=\"$emit('close')\" :href=\"link.href\" class=\"flyout__link\">{{ link.title }}</content-link>\n                </template>\n            </li>\n        </template>\n\n        <li class=\"flyout__list-item\" v-if=\"links.length > maxVisible\">\n            <content-toggle class=\"flyout__toggle\"\n                            aria-hidden=\"true\"\n                            @toggle=\"isExpanded = !isExpanded\">\n            </content-toggle>\n        </li>\n    </ul>\n\n    <ul class=\"flyout__list\"\n        :aria-labelledby=\"itemId\"\n        v-else-if=\"!isCompact\">\n        <template v-for=\"link in links\">\n            <li class=\"flyout__list-item\">\n                <content-link @click.native=\"$emit('close')\" :href=\"link.href\" class=\"flyout__link\">{{ link.title }}</content-link>\n            </li>\n        </template>\n    </ul>\n\n    <template v-if=\"bottomLinks\" v-for=\"bottomLink in bottomLinks\">\n        <content-link @click.native=\"$emit('close')\" :href=\"bottomLink.href\" class=\"flyout__link--cta-mini\" >{{ bottomLink.title }}</content-link>\n    </template>\n</li>\n";
 
 /***/ }),
-/* 73 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = "<ul class=\"main-nav__flyout\"\n     v-if=\"sections && sections.length > 0\"\n    @keydown.down=\"selectNextFlyoutLink\"\n    @keydown.tab.exact=\"selectNextFlyoutLink\"\n    @keydown.up=\"selectPrevFlyoutLink\"\n    @keydown.tab.shift.exact=\"selectPrevFlyoutLink\"\n    @keydown.right=\"selectNextFlyoutSection\"\n    @keydown.left=\"selectPrevFlyoutSection\"\n    @mouseenter.stop=\"open\">\n    <template v-for=\"section in sections\">\n        <flyout-section @close=\"$emit('close')\" :is-compact=\"isCompact\" v-bind=\"section\">\n        </flyout-section>\n    </template>\n</ul>\n";
 
 /***/ }),
-/* 74 */
+/* 68 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"faux-vertical-scroll\" ref=\"container\"\n     @touchstart=\"touchstart\"\n     @touchmove=\"touchmove\"\n     @touchend=\"touchend\"\n     @mousedown=\"mousedown\"\n     @mouseup=\"mouseup\"\n     @click=\"click\"\n     @mousemove=\"mousemove\"\n>\n    <div class=\"faux-vertical-scroll__content\" ref=\"content\">\n        <slot></slot>\n    </div>\n    <div class=\"faux-vertical-scroll__bar\" ref=\"bar\" :style=\"barStyle\"></div>\n</div>\n";
 
 /***/ }),
-/* 75 */
+/* 69 */
 /***/ (function(module, exports) {
 
 module.exports = "<span class=\"currency\">\n    <span class=\"currency__type\">{{ currencyType }}</span>\n    {{ formattedAmount }}\n</span>\n";
 
 /***/ }),
-/* 76 */
+/* 70 */
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"toggle toggle--icon\" role=\"button\" tabindex=\"0\" @click=\"toggle\"\n       @keyup.enter=\"toggle\">\n    <icon :icon-name=\"toggleIcon\"></icon>\n    <span>{{ toggleText }}</span>\n</a>\n";
 
 /***/ }),
-/* 77 */
+/* 71 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"color\">\n    <div class=\"color__spec color__spec--show\">\n        <icon icon-name=\"show\" :style=\"styleIcon\"></icon>\n    </div>\n    <div class=\"color__spec color__spec--swatch\" :style=\"styleBackground\"></div>\n</div>\n";
 
 /***/ }),
-/* 78 */
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"card\" :class=\"classObject\">\n    <div class=\"card__visual\">\n        <template v-if=\"card.image\">\n          <div class=\"card__image\">\n            <responsive-picture v-if=\"card.image\" class=\"img--responsive\" v-bind=\"card.image\"></responsive-picture>\n          </div>\n        </template>\n        <icon v-if=\"card.icon\" :icon-name=\"card.icon.iconName\" class=\"card__icon\"></icon>\n    </div>\n    <div class=\"card__content\">\n        <h3 class=\"card__headline\">{{ card.title }}</h3>\n        <p class=\"card__description\">{{ card.description }}</p>\n        <content-link class=\"card__link\" v-if=\"card.contentLink\" :block=\"'card'\" :href=\"card.contentLink.href\">{{ card.contentLink.text }}</content-link>\n    </div>\n</article>\n";
 
 /***/ }),
-/* 79 */
+/* 73 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"brand-card\">\n    <div class=\"brand-card__image-wrapper\">\n        <responsive-picture v-bind=\"image\"></responsive-picture>\n    </div>\n    <template v-if=\"body && type === 'text'\">\n        <p class=\"brand-card__quote\">{{body}}</p>\n    </template>\n    <template v-else-if=\"body\">\n        <q class=\"brand-card__quote\">{{body}}</q>\n    </template>\n</div>";
 
 /***/ }),
-/* 80 */
+/* 74 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"auto-complete\"\n    :class=\"classObject\"\n     role=\"combobox\"\n     aria-haspopup=\"listbox\"\n\n     v-if=\"hasItems\"\n     :aria-owns=\"listId\"\n     :aria-expanded=\"isOpen\"\n\n     @keydown.up.prevent=\"selectPrevious\"\n     @keydown.shift.tab.prevent=\"selectPrevious\"\n     @keydown.down.prevent=\"selectCurrent\"\n     @keydown.tab.exact.prevent=\"selectCurrent\">\n\n\n    <input ref=\"autoComplete\"\n           class=\"auto-complete__input\"\n           type=\"text\"\n           autofocus=\"true\"\n           autocomplete=\"off\"\n           aria-autocomplete=\"list\"\n\n           :id=\"inputId\"\n           :aria-controls=\"listId\"\n           :placeholder=\"placeholder\"\n           :required=\"required\"\n\n           v-model.trim=\"input\"\n           @input=\"input = $event.target.value\"\n\n           @keyup.esc=\"resetInput\"\n           @keydown=\"forceOpen = true\"\n           @keydown.enter.prevent=\"selectItemByInput\">\n\n    <div :id=\"listId\" class=\"auto-complete__dropdown\" role=\"listbox\"\n         v-if=\"isOpen\"\n         @keyup.esc=\"closeList\"\n         @keydown.backspace.prevent\n         @keydown.down.prevent=\"selectNext\"\n         @keydown.tab.exact.prevent=\"selectNext\">\n\n        <template v-if=\"storedItems && storedItems.length\">\n            <h4 class=\"auto-complete__label\" id=\"storedLabel\">\n                {{ storedLabel }}\n            </h4>\n            <ul class=\"auto-complete__list\" aria-labelledby=\"storedLabel\">\n                <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                    v-for=\"item in storedItems\"\n                    @click=\"selectItem(item)\"\n                    @keyup.enter.prevent=\"selectItem(item)\"\n                    @keyup.esc=\"closeList\">\n                    {{ item[titleField] }}\n                </li>\n            </ul>\n        </template>\n\n        <template v-if=\"suggestedItems && suggestedItems.length\">\n            <h4 class=\"auto-complete__label\" id=\"suggestedLabel\">\n                {{ suggestionsLabel }}\n            </h4>\n            <ul class=\"auto-complete__list\" aria-labelledby=\"suggestedLabel\">\n                <template v-if=\"matchValue\">\n                    <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                        v-for=\"item in suggestedItems\"\n                        @click=\"selectItem(item)\"\n                        @keyup.enter.prevent=\"selectItem(item)\">\n                        {{ item[titleField] }}\n                    </li>\n                </template>\n                <template v-else>\n                    <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                        v-for=\"item in suggestedItems\"\n                        v-html=\"highlightString(item[titleField])\"\n                        @click=\"selectItem(item)\"\n                        @keyup.enter.prevent=\"selectItem(item)\"\n                        >\n                    </li>\n                </template>\n            </ul>\n        </template>\n    </div>\n\n</div>\n";
 
 /***/ }),
-/* 81 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toNumber = __webpack_require__(47);
+var toNumber = __webpack_require__(43);
 
 /** Used as references for various `Number` constants. */
 var INFINITY = 1 / 0,
@@ -12699,10 +12465,10 @@ module.exports = toFinite;
 
 
 /***/ }),
-/* 82 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toFinite = __webpack_require__(81);
+var toFinite = __webpack_require__(75);
 
 /**
  * Converts `value` to an integer.
@@ -12741,7 +12507,7 @@ module.exports = toInteger;
 
 
 /***/ }),
-/* 83 */
+/* 77 */
 /***/ (function(module, exports) {
 
 /**
@@ -12771,12 +12537,12 @@ module.exports = baseFindIndex;
 
 
 /***/ }),
-/* 84 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(83),
-    baseIteratee = __webpack_require__(28),
-    toInteger = __webpack_require__(82);
+var baseFindIndex = __webpack_require__(77),
+    baseIteratee = __webpack_require__(24),
+    toInteger = __webpack_require__(76);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
@@ -12832,12 +12598,12 @@ module.exports = findIndex;
 
 
 /***/ }),
-/* 85 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIteratee = __webpack_require__(28),
-    isArrayLike = __webpack_require__(29),
-    keys = __webpack_require__(17);
+var baseIteratee = __webpack_require__(24),
+    isArrayLike = __webpack_require__(25),
+    keys = __webpack_require__(15);
 
 /**
  * Creates a `_.find` or `_.findLast` function.
@@ -12863,10 +12629,10 @@ module.exports = createFind;
 
 
 /***/ }),
-/* 86 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGet = __webpack_require__(32);
+var baseGet = __webpack_require__(28);
 
 /**
  * A specialized version of `baseProperty` which supports deep paths.
@@ -12885,7 +12651,7 @@ module.exports = basePropertyDeep;
 
 
 /***/ }),
-/* 87 */
+/* 81 */
 /***/ (function(module, exports) {
 
 /**
@@ -12905,13 +12671,13 @@ module.exports = baseProperty;
 
 
 /***/ }),
-/* 88 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseProperty = __webpack_require__(87),
-    basePropertyDeep = __webpack_require__(86),
-    isKey = __webpack_require__(25),
-    toKey = __webpack_require__(12);
+var baseProperty = __webpack_require__(81),
+    basePropertyDeep = __webpack_require__(80),
+    isKey = __webpack_require__(21),
+    toKey = __webpack_require__(10);
 
 /**
  * Creates a function that returns the value at `path` of a given object.
@@ -12943,7 +12709,7 @@ module.exports = property;
 
 
 /***/ }),
-/* 89 */
+/* 83 */
 /***/ (function(module, exports) {
 
 /**
@@ -12970,15 +12736,15 @@ module.exports = identity;
 
 
 /***/ }),
-/* 90 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var castPath = __webpack_require__(31),
-    isArguments = __webpack_require__(45),
-    isArray = __webpack_require__(4),
-    isIndex = __webpack_require__(42),
-    isLength = __webpack_require__(30),
-    toKey = __webpack_require__(12);
+var castPath = __webpack_require__(27),
+    isArguments = __webpack_require__(41),
+    isArray = __webpack_require__(2),
+    isIndex = __webpack_require__(38),
+    isLength = __webpack_require__(26),
+    toKey = __webpack_require__(10);
 
 /**
  * Checks if `path` exists on `object`.
@@ -13015,7 +12781,7 @@ module.exports = hasPath;
 
 
 /***/ }),
-/* 91 */
+/* 85 */
 /***/ (function(module, exports) {
 
 /**
@@ -13034,11 +12800,11 @@ module.exports = baseHasIn;
 
 
 /***/ }),
-/* 92 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseHasIn = __webpack_require__(91),
-    hasPath = __webpack_require__(90);
+var baseHasIn = __webpack_require__(85),
+    hasPath = __webpack_require__(84);
 
 /**
  * Checks if `path` is a direct or inherited property of `object`.
@@ -13074,7 +12840,7 @@ module.exports = hasIn;
 
 
 /***/ }),
-/* 93 */
+/* 87 */
 /***/ (function(module, exports) {
 
 /**
@@ -13101,13 +12867,13 @@ module.exports = arrayMap;
 
 
 /***/ }),
-/* 94 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(18),
-    arrayMap = __webpack_require__(93),
-    isArray = __webpack_require__(4),
-    isSymbol = __webpack_require__(19);
+var Symbol = __webpack_require__(16),
+    arrayMap = __webpack_require__(87),
+    isArray = __webpack_require__(2),
+    isSymbol = __webpack_require__(17);
 
 /** Used as references for various `Number` constants. */
 var INFINITY = 1 / 0;
@@ -13144,10 +12910,10 @@ module.exports = baseToString;
 
 
 /***/ }),
-/* 95 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseToString = __webpack_require__(94);
+var baseToString = __webpack_require__(88);
 
 /**
  * Converts `value` to a string. An empty string is returned for `null`
@@ -13178,10 +12944,10 @@ module.exports = toString;
 
 
 /***/ }),
-/* 96 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MapCache = __webpack_require__(26);
+var MapCache = __webpack_require__(22);
 
 /** Error message constants. */
 var FUNC_ERROR_TEXT = 'Expected a function';
@@ -13257,10 +13023,10 @@ module.exports = memoize;
 
 
 /***/ }),
-/* 97 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var memoize = __webpack_require__(96);
+var memoize = __webpack_require__(90);
 
 /** Used as the maximum memoize cache size. */
 var MAX_MEMOIZE_SIZE = 500;
@@ -13289,10 +13055,10 @@ module.exports = memoizeCapped;
 
 
 /***/ }),
-/* 98 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var memoizeCapped = __webpack_require__(97);
+var memoizeCapped = __webpack_require__(91);
 
 /** Used to match property names within property paths. */
 var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
@@ -13322,10 +13088,10 @@ module.exports = stringToPath;
 
 
 /***/ }),
-/* 99 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGet = __webpack_require__(32);
+var baseGet = __webpack_require__(28);
 
 /**
  * Gets the value at `path` of `object`. If the resolved value is
@@ -13361,16 +13127,16 @@ module.exports = get;
 
 
 /***/ }),
-/* 100 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqual = __webpack_require__(36),
-    get = __webpack_require__(99),
-    hasIn = __webpack_require__(92),
-    isKey = __webpack_require__(25),
-    isStrictComparable = __webpack_require__(34),
-    matchesStrictComparable = __webpack_require__(33),
-    toKey = __webpack_require__(12);
+var baseIsEqual = __webpack_require__(32),
+    get = __webpack_require__(93),
+    hasIn = __webpack_require__(86),
+    isKey = __webpack_require__(21),
+    isStrictComparable = __webpack_require__(30),
+    matchesStrictComparable = __webpack_require__(29),
+    toKey = __webpack_require__(10);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -13400,11 +13166,11 @@ module.exports = baseMatchesProperty;
 
 
 /***/ }),
-/* 101 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isStrictComparable = __webpack_require__(34),
-    keys = __webpack_require__(17);
+var isStrictComparable = __webpack_require__(30),
+    keys = __webpack_require__(15);
 
 /**
  * Gets the property names, values, and compare flags of `object`.
@@ -13430,11 +13196,11 @@ module.exports = getMatchData;
 
 
 /***/ }),
-/* 102 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getNative = __webpack_require__(5),
-    root = __webpack_require__(3);
+var getNative = __webpack_require__(3),
+    root = __webpack_require__(1);
 
 /* Built-in method references that are verified to be native. */
 var WeakMap = getNative(root, 'WeakMap');
@@ -13443,11 +13209,11 @@ module.exports = WeakMap;
 
 
 /***/ }),
-/* 103 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getNative = __webpack_require__(5),
-    root = __webpack_require__(3);
+var getNative = __webpack_require__(3),
+    root = __webpack_require__(1);
 
 /* Built-in method references that are verified to be native. */
 var Set = getNative(root, 'Set');
@@ -13456,11 +13222,11 @@ module.exports = Set;
 
 
 /***/ }),
-/* 104 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getNative = __webpack_require__(5),
-    root = __webpack_require__(3);
+var getNative = __webpack_require__(3),
+    root = __webpack_require__(1);
 
 /* Built-in method references that are verified to be native. */
 var Promise = getNative(root, 'Promise');
@@ -13469,11 +13235,11 @@ module.exports = Promise;
 
 
 /***/ }),
-/* 105 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getNative = __webpack_require__(5),
-    root = __webpack_require__(3);
+var getNative = __webpack_require__(3),
+    root = __webpack_require__(1);
 
 /* Built-in method references that are verified to be native. */
 var DataView = getNative(root, 'DataView');
@@ -13482,16 +13248,16 @@ module.exports = DataView;
 
 
 /***/ }),
-/* 106 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var DataView = __webpack_require__(105),
-    Map = __webpack_require__(27),
-    Promise = __webpack_require__(104),
-    Set = __webpack_require__(103),
-    WeakMap = __webpack_require__(102),
-    baseGetTag = __webpack_require__(9),
-    toSource = __webpack_require__(37);
+var DataView = __webpack_require__(99),
+    Map = __webpack_require__(23),
+    Promise = __webpack_require__(98),
+    Set = __webpack_require__(97),
+    WeakMap = __webpack_require__(96),
+    baseGetTag = __webpack_require__(7),
+    toSource = __webpack_require__(33);
 
 /** `Object#toString` result references. */
 var mapTag = '[object Map]',
@@ -13546,7 +13312,7 @@ module.exports = getTag;
 
 
 /***/ }),
-/* 107 */
+/* 101 */
 /***/ (function(module, exports) {
 
 /**
@@ -13575,11 +13341,11 @@ module.exports = stubArray;
 
 
 /***/ }),
-/* 108 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayFilter = __webpack_require__(46),
-    stubArray = __webpack_require__(107);
+var arrayFilter = __webpack_require__(42),
+    stubArray = __webpack_require__(101);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -13611,7 +13377,7 @@ module.exports = getSymbols;
 
 
 /***/ }),
-/* 109 */
+/* 103 */
 /***/ (function(module, exports) {
 
 /**
@@ -13637,11 +13403,11 @@ module.exports = arrayPush;
 
 
 /***/ }),
-/* 110 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayPush = __webpack_require__(109),
-    isArray = __webpack_require__(4);
+var arrayPush = __webpack_require__(103),
+    isArray = __webpack_require__(2);
 
 /**
  * The base implementation of `getAllKeys` and `getAllKeysIn` which uses
@@ -13663,12 +13429,12 @@ module.exports = baseGetAllKeys;
 
 
 /***/ }),
-/* 111 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetAllKeys = __webpack_require__(110),
-    getSymbols = __webpack_require__(108),
-    keys = __webpack_require__(17);
+var baseGetAllKeys = __webpack_require__(104),
+    getSymbols = __webpack_require__(102),
+    keys = __webpack_require__(15);
 
 /**
  * Creates an array of own enumerable property names and symbols of `object`.
@@ -13685,10 +13451,10 @@ module.exports = getAllKeys;
 
 
 /***/ }),
-/* 112 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getAllKeys = __webpack_require__(111);
+var getAllKeys = __webpack_require__(105);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -13780,7 +13546,7 @@ module.exports = equalObjects;
 
 
 /***/ }),
-/* 113 */
+/* 107 */
 /***/ (function(module, exports) {
 
 /**
@@ -13804,7 +13570,7 @@ module.exports = setToArray;
 
 
 /***/ }),
-/* 114 */
+/* 108 */
 /***/ (function(module, exports) {
 
 /**
@@ -13828,10 +13594,10 @@ module.exports = mapToArray;
 
 
 /***/ }),
-/* 115 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(3);
+var root = __webpack_require__(1);
 
 /** Built-in value references. */
 var Uint8Array = root.Uint8Array;
@@ -13840,15 +13606,15 @@ module.exports = Uint8Array;
 
 
 /***/ }),
-/* 116 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(18),
-    Uint8Array = __webpack_require__(115),
-    eq = __webpack_require__(38),
-    equalArrays = __webpack_require__(35),
-    mapToArray = __webpack_require__(114),
-    setToArray = __webpack_require__(113);
+var Symbol = __webpack_require__(16),
+    Uint8Array = __webpack_require__(109),
+    eq = __webpack_require__(34),
+    equalArrays = __webpack_require__(31),
+    mapToArray = __webpack_require__(108),
+    setToArray = __webpack_require__(107);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -13958,7 +13724,7 @@ module.exports = equalByTag;
 
 
 /***/ }),
-/* 117 */
+/* 111 */
 /***/ (function(module, exports) {
 
 /**
@@ -13977,7 +13743,7 @@ module.exports = cacheHas;
 
 
 /***/ }),
-/* 118 */
+/* 112 */
 /***/ (function(module, exports) {
 
 /**
@@ -14006,7 +13772,7 @@ module.exports = arraySome;
 
 
 /***/ }),
-/* 119 */
+/* 113 */
 /***/ (function(module, exports) {
 
 /**
@@ -14026,7 +13792,7 @@ module.exports = setCacheHas;
 
 
 /***/ }),
-/* 120 */
+/* 114 */
 /***/ (function(module, exports) {
 
 /** Used to stand-in for `undefined` hash values. */
@@ -14051,12 +13817,12 @@ module.exports = setCacheAdd;
 
 
 /***/ }),
-/* 121 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MapCache = __webpack_require__(26),
-    setCacheAdd = __webpack_require__(120),
-    setCacheHas = __webpack_require__(119);
+var MapCache = __webpack_require__(22),
+    setCacheAdd = __webpack_require__(114),
+    setCacheHas = __webpack_require__(113);
 
 /**
  *
@@ -14084,17 +13850,17 @@ module.exports = SetCache;
 
 
 /***/ }),
-/* 122 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(39),
-    equalArrays = __webpack_require__(35),
-    equalByTag = __webpack_require__(116),
-    equalObjects = __webpack_require__(112),
-    getTag = __webpack_require__(106),
-    isArray = __webpack_require__(4),
-    isBuffer = __webpack_require__(44),
-    isTypedArray = __webpack_require__(41);
+var Stack = __webpack_require__(35),
+    equalArrays = __webpack_require__(31),
+    equalByTag = __webpack_require__(110),
+    equalObjects = __webpack_require__(106),
+    getTag = __webpack_require__(100),
+    isArray = __webpack_require__(2),
+    isBuffer = __webpack_require__(40),
+    isTypedArray = __webpack_require__(37);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -14173,10 +13939,10 @@ module.exports = baseIsEqualDeep;
 
 
 /***/ }),
-/* 123 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(13);
+var getMapData = __webpack_require__(11);
 
 /**
  * Sets the map `key` to `value`.
@@ -14201,10 +13967,10 @@ module.exports = mapCacheSet;
 
 
 /***/ }),
-/* 124 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(13);
+var getMapData = __webpack_require__(11);
 
 /**
  * Checks if a map value for `key` exists.
@@ -14223,10 +13989,10 @@ module.exports = mapCacheHas;
 
 
 /***/ }),
-/* 125 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(13);
+var getMapData = __webpack_require__(11);
 
 /**
  * Gets the map value for `key`.
@@ -14245,7 +14011,7 @@ module.exports = mapCacheGet;
 
 
 /***/ }),
-/* 126 */
+/* 120 */
 /***/ (function(module, exports) {
 
 /**
@@ -14266,10 +14032,10 @@ module.exports = isKeyable;
 
 
 /***/ }),
-/* 127 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(13);
+var getMapData = __webpack_require__(11);
 
 /**
  * Removes `key` and its value from the map.
@@ -14290,10 +14056,10 @@ module.exports = mapCacheDelete;
 
 
 /***/ }),
-/* 128 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(14);
+var nativeCreate = __webpack_require__(12);
 
 /** Used to stand-in for `undefined` hash values. */
 var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -14319,10 +14085,10 @@ module.exports = hashSet;
 
 
 /***/ }),
-/* 129 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(14);
+var nativeCreate = __webpack_require__(12);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -14348,10 +14114,10 @@ module.exports = hashHas;
 
 
 /***/ }),
-/* 130 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(14);
+var nativeCreate = __webpack_require__(12);
 
 /** Used to stand-in for `undefined` hash values. */
 var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -14384,7 +14150,7 @@ module.exports = hashGet;
 
 
 /***/ }),
-/* 131 */
+/* 125 */
 /***/ (function(module, exports) {
 
 /**
@@ -14407,10 +14173,10 @@ module.exports = hashDelete;
 
 
 /***/ }),
-/* 132 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(14);
+var nativeCreate = __webpack_require__(12);
 
 /**
  * Removes all key-value entries from the hash.
@@ -14428,14 +14194,14 @@ module.exports = hashClear;
 
 
 /***/ }),
-/* 133 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hashClear = __webpack_require__(132),
-    hashDelete = __webpack_require__(131),
-    hashGet = __webpack_require__(130),
-    hashHas = __webpack_require__(129),
-    hashSet = __webpack_require__(128);
+var hashClear = __webpack_require__(126),
+    hashDelete = __webpack_require__(125),
+    hashGet = __webpack_require__(124),
+    hashHas = __webpack_require__(123),
+    hashSet = __webpack_require__(122);
 
 /**
  * Creates a hash object.
@@ -14466,12 +14232,12 @@ module.exports = Hash;
 
 
 /***/ }),
-/* 134 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Hash = __webpack_require__(133),
-    ListCache = __webpack_require__(16),
-    Map = __webpack_require__(27);
+var Hash = __webpack_require__(127),
+    ListCache = __webpack_require__(14),
+    Map = __webpack_require__(23);
 
 /**
  * Removes all key-value entries from the map.
@@ -14493,7 +14259,7 @@ module.exports = mapCacheClear;
 
 
 /***/ }),
-/* 135 */
+/* 129 */
 /***/ (function(module, exports) {
 
 /**
@@ -14512,10 +14278,10 @@ module.exports = getValue;
 
 
 /***/ }),
-/* 136 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(3);
+var root = __webpack_require__(1);
 
 /** Used to detect overreaching core-js shims. */
 var coreJsData = root['__core-js_shared__'];
@@ -14524,10 +14290,10 @@ module.exports = coreJsData;
 
 
 /***/ }),
-/* 137 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var coreJsData = __webpack_require__(136);
+var coreJsData = __webpack_require__(130);
 
 /** Used to detect methods masquerading as native. */
 var maskSrcKey = (function() {
@@ -14550,13 +14316,13 @@ module.exports = isMasked;
 
 
 /***/ }),
-/* 138 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isFunction = __webpack_require__(40),
-    isMasked = __webpack_require__(137),
-    isObject = __webpack_require__(10),
-    toSource = __webpack_require__(37);
+var isFunction = __webpack_require__(36),
+    isMasked = __webpack_require__(131),
+    isObject = __webpack_require__(8),
+    toSource = __webpack_require__(33);
 
 /**
  * Used to match `RegExp`
@@ -14603,12 +14369,12 @@ module.exports = baseIsNative;
 
 
 /***/ }),
-/* 139 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ListCache = __webpack_require__(16),
-    Map = __webpack_require__(27),
-    MapCache = __webpack_require__(26);
+var ListCache = __webpack_require__(14),
+    Map = __webpack_require__(23),
+    MapCache = __webpack_require__(22);
 
 /** Used as the size to enable large array optimizations. */
 var LARGE_ARRAY_SIZE = 200;
@@ -14643,7 +14409,7 @@ module.exports = stackSet;
 
 
 /***/ }),
-/* 140 */
+/* 134 */
 /***/ (function(module, exports) {
 
 /**
@@ -14663,7 +14429,7 @@ module.exports = stackHas;
 
 
 /***/ }),
-/* 141 */
+/* 135 */
 /***/ (function(module, exports) {
 
 /**
@@ -14683,7 +14449,7 @@ module.exports = stackGet;
 
 
 /***/ }),
-/* 142 */
+/* 136 */
 /***/ (function(module, exports) {
 
 /**
@@ -14707,10 +14473,10 @@ module.exports = stackDelete;
 
 
 /***/ }),
-/* 143 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ListCache = __webpack_require__(16);
+var ListCache = __webpack_require__(14);
 
 /**
  * Removes all key-value entries from the stack.
@@ -14728,10 +14494,10 @@ module.exports = stackClear;
 
 
 /***/ }),
-/* 144 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(15);
+var assocIndexOf = __webpack_require__(13);
 
 /**
  * Sets the list cache `key` to `value`.
@@ -14760,10 +14526,10 @@ module.exports = listCacheSet;
 
 
 /***/ }),
-/* 145 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(15);
+var assocIndexOf = __webpack_require__(13);
 
 /**
  * Checks if a list cache value for `key` exists.
@@ -14782,10 +14548,10 @@ module.exports = listCacheHas;
 
 
 /***/ }),
-/* 146 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(15);
+var assocIndexOf = __webpack_require__(13);
 
 /**
  * Gets the list cache value for `key`.
@@ -14807,10 +14573,10 @@ module.exports = listCacheGet;
 
 
 /***/ }),
-/* 147 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(15);
+var assocIndexOf = __webpack_require__(13);
 
 /** Used for built-in method references. */
 var arrayProto = Array.prototype;
@@ -14848,7 +14614,7 @@ module.exports = listCacheDelete;
 
 
 /***/ }),
-/* 148 */
+/* 142 */
 /***/ (function(module, exports) {
 
 /**
@@ -14867,11 +14633,11 @@ module.exports = listCacheClear;
 
 
 /***/ }),
-/* 149 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(39),
-    baseIsEqual = __webpack_require__(36);
+var Stack = __webpack_require__(35),
+    baseIsEqual = __webpack_require__(32);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -14935,12 +14701,12 @@ module.exports = baseIsMatch;
 
 
 /***/ }),
-/* 150 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsMatch = __webpack_require__(149),
-    getMatchData = __webpack_require__(101),
-    matchesStrictComparable = __webpack_require__(33);
+var baseIsMatch = __webpack_require__(143),
+    getMatchData = __webpack_require__(95),
+    matchesStrictComparable = __webpack_require__(29);
 
 /**
  * The base implementation of `_.matches` which doesn't clone `source`.
@@ -14963,10 +14729,10 @@ module.exports = baseMatches;
 
 
 /***/ }),
-/* 151 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isArrayLike = __webpack_require__(29);
+var isArrayLike = __webpack_require__(25);
 
 /**
  * Creates a `baseEach` or `baseEachRight` function.
@@ -15001,7 +14767,7 @@ module.exports = createBaseEach;
 
 
 /***/ }),
-/* 152 */
+/* 146 */
 /***/ (function(module, exports) {
 
 /**
@@ -15022,10 +14788,10 @@ module.exports = overArg;
 
 
 /***/ }),
-/* 153 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(152);
+var overArg = __webpack_require__(146);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeKeys = overArg(Object.keys, Object);
@@ -15034,7 +14800,7 @@ module.exports = nativeKeys;
 
 
 /***/ }),
-/* 154 */
+/* 148 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -15058,11 +14824,11 @@ module.exports = isPrototype;
 
 
 /***/ }),
-/* 155 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isPrototype = __webpack_require__(154),
-    nativeKeys = __webpack_require__(153);
+var isPrototype = __webpack_require__(148),
+    nativeKeys = __webpack_require__(147);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -15094,10 +14860,10 @@ module.exports = baseKeys;
 
 
 /***/ }),
-/* 156 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(48);
+/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(44);
 
 /** Detect free variable `exports`. */
 var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
@@ -15128,10 +14894,10 @@ var nodeUtil = (function() {
 
 module.exports = nodeUtil;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(43)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(39)(module)))
 
 /***/ }),
-/* 157 */
+/* 151 */
 /***/ (function(module, exports) {
 
 /**
@@ -15151,12 +14917,12 @@ module.exports = baseUnary;
 
 
 /***/ }),
-/* 158 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(9),
-    isLength = __webpack_require__(30),
-    isObjectLike = __webpack_require__(8);
+var baseGetTag = __webpack_require__(7),
+    isLength = __webpack_require__(26),
+    isObjectLike = __webpack_require__(6);
 
 /** `Object#toString` result references. */
 var argsTag = '[object Arguments]',
@@ -15217,7 +14983,7 @@ module.exports = baseIsTypedArray;
 
 
 /***/ }),
-/* 159 */
+/* 153 */
 /***/ (function(module, exports) {
 
 /**
@@ -15241,11 +15007,11 @@ module.exports = stubFalse;
 
 
 /***/ }),
-/* 160 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(9),
-    isObjectLike = __webpack_require__(8);
+var baseGetTag = __webpack_require__(7),
+    isObjectLike = __webpack_require__(6);
 
 /** `Object#toString` result references. */
 var argsTag = '[object Arguments]';
@@ -15265,7 +15031,7 @@ module.exports = baseIsArguments;
 
 
 /***/ }),
-/* 161 */
+/* 155 */
 /***/ (function(module, exports) {
 
 /**
@@ -15291,15 +15057,15 @@ module.exports = baseTimes;
 
 
 /***/ }),
-/* 162 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseTimes = __webpack_require__(161),
-    isArguments = __webpack_require__(45),
-    isArray = __webpack_require__(4),
-    isBuffer = __webpack_require__(44),
-    isIndex = __webpack_require__(42),
-    isTypedArray = __webpack_require__(41);
+var baseTimes = __webpack_require__(155),
+    isArguments = __webpack_require__(41),
+    isArray = __webpack_require__(2),
+    isBuffer = __webpack_require__(40),
+    isIndex = __webpack_require__(38),
+    isTypedArray = __webpack_require__(37);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -15346,7 +15112,7 @@ module.exports = arrayLikeKeys;
 
 
 /***/ }),
-/* 163 */
+/* 157 */
 /***/ (function(module, exports) {
 
 /**
@@ -15377,10 +15143,10 @@ module.exports = createBaseFor;
 
 
 /***/ }),
-/* 164 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createBaseFor = __webpack_require__(163);
+var createBaseFor = __webpack_require__(157);
 
 /**
  * The base implementation of `baseForOwn` which iterates over `object`
@@ -15399,11 +15165,11 @@ module.exports = baseFor;
 
 
 /***/ }),
-/* 165 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFor = __webpack_require__(164),
-    keys = __webpack_require__(17);
+var baseFor = __webpack_require__(158),
+    keys = __webpack_require__(15);
 
 /**
  * The base implementation of `_.forOwn` without support for iteratee shorthands.
@@ -15421,11 +15187,11 @@ module.exports = baseForOwn;
 
 
 /***/ }),
-/* 166 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseForOwn = __webpack_require__(165),
-    createBaseEach = __webpack_require__(151);
+var baseForOwn = __webpack_require__(159),
+    createBaseEach = __webpack_require__(145);
 
 /**
  * The base implementation of `_.forEach` without support for iteratee shorthands.
@@ -15441,10 +15207,10 @@ module.exports = baseEach;
 
 
 /***/ }),
-/* 167 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseEach = __webpack_require__(166);
+var baseEach = __webpack_require__(160);
 
 /**
  * The base implementation of `_.filter` without support for iteratee shorthands.
@@ -15468,7 +15234,197 @@ module.exports = baseFilter;
 
 
 /***/ }),
-/* 168 */
+/* 162 */
+/***/ (function(module, exports) {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
+
+/***/ }),
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -15658,10 +15614,10 @@ module.exports = baseFilter;
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(20), __webpack_require__(21)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18), __webpack_require__(162)))
 
 /***/ }),
-/* 169 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -15717,7 +15673,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(168);
+__webpack_require__(163);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -15728,34 +15684,28 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (typeof global !== "undefined" && global.clearImmediate) ||
                          (this && this.clearImmediate);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(20)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18)))
 
 /***/ }),
-/* 170 */
+/* 165 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"youtube-video\">\n    <iframe v-if=\"loadVideo\" :src=\"videoUrl\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" class=\"youtube-video__frame\"></iframe>\n</div>\n";
 
 /***/ }),
-/* 171 */
+/* 166 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"tooltip\" :class=\"classObject\">\n    <slot></slot>\n</div>\n";
 
 /***/ }),
-/* 172 */
+/* 167 */
 /***/ (function(module, exports) {
 
 module.exports = "<dl class=\"tabbable-dl\">\n    <template v-for=\"(item, index) in items\">\n        <dt class=\"tabbable-dl__term tabbable-dl__term--vue\" ref=\"terms\">\n            <a class=\"tabbable-dl__link\" @click.prevent=\"changeIndex(index)\" @keyup.enter=\"changeIndex(index)\" role=\"button\" tabindex=\"0\">\n                <h3 class=\"tabbable-dl__title\">\n                    <icon class=\"tabbable-dl__icon\" icon-name=\"angle-right\"></icon>\n                    {{ item.title }}\n                </h3>\n            </a>\n        </dt>\n        <dd class=\"tabbable-dl__desc tabbable-dl__desc--vue\" ref=\"descriptions\">{{ item.description }}</dd>\n    </template>\n</dl>\n";
 
 /***/ }),
-/* 173 */
-/***/ (function(module, exports) {
-
-module.exports = "<picture>\n    <template>\n        <responsive-picture-source v-if=\"desktopHdWidth\" media=\"(min-width: 1201px)\" :image=\"lazyLoading ? '' : desktopHdWidth\" />\n        <responsive-picture-source v-if=\"desktopWidth\" media=\"(min-width: 1025px)\" :image=\"lazyLoading ? '' : desktopWidth\" />\n        <responsive-picture-source v-if=\"tabletWidth\" media=\"(min-width: 768px)\" :image=\"lazyLoading ? '' : tabletWidth\" />\n        <responsive-picture-source v-if=\"mobileXlWidth\" media=\"(min-width: 569px)\" :image=\"lazyLoading ? '' : mobileXlWidth\" />\n        <responsive-picture-source v-if=\"mobileLWidth\" media=\"(min-width: 481px)\" :image=\"lazyLoading ? '' : mobileLWidth\" />\n        <responsive-picture-source media=\"(max-width: 480px)\" :image=\"mobileWidth\" />\n    </template>\n    <img :src=\"lazyLoading ? '' : mobileWidth.url ? mobileWidth.url : mobileWidth\" :alt=\"description\" class=\"img--responsive\" :class=\"classes\"/>\n</picture>\n";
-
-/***/ }),
-/* 174 */
+/* 168 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -15783,10 +15733,10 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 175 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Symbol = __webpack_require__(18);
+var Symbol = __webpack_require__(16);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -15835,10 +15785,10 @@ module.exports = getRawTag;
 
 
 /***/ }),
-/* 176 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(3);
+var root = __webpack_require__(1);
 
 /**
  * Gets the timestamp of the number of milliseconds that have elapsed since
@@ -15864,43 +15814,49 @@ module.exports = now;
 
 
 /***/ }),
-/* 177 */
+/* 171 */
+/***/ (function(module, exports) {
+
+module.exports = "<picture>\n    <template>\n        <responsive-picture-source v-if=\"desktopHdWidth\" media=\"(min-width: 1201px)\" :image=\"lazyLoading ? '' : desktopHdWidth\" />\n        <responsive-picture-source v-if=\"desktopWidth\" media=\"(min-width: 1025px)\" :image=\"lazyLoading ? '' : desktopWidth\" />\n        <responsive-picture-source v-if=\"tabletWidth\" media=\"(min-width: 768px)\" :image=\"lazyLoading ? '' : tabletWidth\" />\n        <responsive-picture-source v-if=\"mobileXlWidth\" media=\"(min-width: 569px)\" :image=\"lazyLoading ? '' : mobileXlWidth\" />\n        <responsive-picture-source v-if=\"mobileLWidth\" media=\"(min-width: 481px)\" :image=\"lazyLoading ? '' : mobileLWidth\" />\n        <responsive-picture-source media=\"(max-width: 480px)\" :image=\"mobileWidth\" />\n    </template>\n    <img :src=\"lazyLoading ? '' : mobileWidth.url ? mobileWidth.url : mobileWidth\" :alt=\"description\" class=\"img--responsive\" :class=\"classes\"/>\n</picture>\n";
+
+/***/ }),
+/* 172 */
 /***/ (function(module, exports) {
 
 module.exports = "<button type=\"button\" @click=\"toggleState()\" @keyup.esc=\"close\" class=\"nav-assist\"\n        :class=\"{'nav-assist--close': this.openState, 'nav-assist--initial-state': !this.used}\" aria-label=\"menu\"\n        :aria-expanded=\"this.openState.toString()\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <rect class=\"nav-assist__line nav-assist__line-2\" x=\"2\" y=\"11\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-1\" x=\"2\" y=\"4.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-3\" x=\"2\" y=\"17.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-4\" x=\"-1.3\" y=\"11\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"26.6\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-5\" x=\"11\" y=\"-1.3\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"2\" height=\"26.6\"/>\n    </svg>\n</button>\n";
 
 /***/ }),
-/* 178 */
+/* 173 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg class=\"icon\" :class=\"iconClass\" :viewBox=\"viewBox\">\n    <use :xlink:href=\"iconRef\" v-if=\"!symbolData\"></use>\n    <g id=\"symbol-container\"></g>\n</svg>\n\n";
+module.exports = "<svg class=\"icon\" :class=\"iconClass\" :viewBox=\"viewBox\" v-if=\"ready\">\n    <use :xlink:href=\"iconRef\" v-if=\"!symbolData\"></use>\n    <g id=\"symbol-container\"></g>\n</svg>\n\n";
 
 /***/ }),
-/* 179 */
+/* 174 */
 /***/ (function(module, exports) {
 
 module.exports = "<section v-bind:class=\"styleModifier\">\n    <strong class=\"caption-list__headline\">\n        {{ label }}\n    </strong>\n    <ul class=\"caption-list\">\n        <li class=\"caption-list__list-item\" v-for=\"item in listItems\">\n            {{ item.additionalContent }}\n            <a :href=\"item.url\">{{ item.text }}</a>\n        </li>\n    </ul>\n</section>";
 
 /***/ }),
-/* 180 */
+/* 175 */
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"hit-area\" role=\"button\" tabindex=\"0\">\n    <slot></slot>\n</a>\n";
 
 /***/ }),
-/* 181 */
+/* 176 */
 /***/ (function(module, exports) {
 
 module.exports = "<ul :class=\"block + '__list'\">\n    <li v-for=\"link in links\" :class=\"block + '__item'\">\n        <content-link :class=\"link.class\" :block='block' :icon=\"link.icon\" :href=\"link.href\">{{ link.title }}</content-link>\n    </li>\n</ul>\n";
 
 /***/ }),
-/* 182 */
+/* 177 */
 /***/ (function(module, exports) {
 
 module.exports = "<router-link :to=\"href\" class=\"link\" :class=\"classObject\" v-if=\"href.match && href.match(/^\\//i)\">\n    <icon v-if=\"this.icon\" :icon-name=\"icon\"></icon>\n    <span class=\"link__underline\">\n        <slot></slot>\n    </span>\n</router-link>\n<a :href=\"href\" :to=\"href\" class=\"link\" :class=\"classObject\" v-else>\n    <icon v-if=\"this.icon\" :icon-name=\"icon\"></icon>\n    <span class=\"link__underline\">\n        <slot></slot>\n    </span>\n</a>\n";
 
 /***/ }),
-/* 183 */
+/* 178 */
 /***/ (function(module, exports) {
 
 module.exports = "<svg class=\"arrow--animated\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\">\n    <defs>\n        <clipPath id=\"mask\" class=\"arrow__mask\">\n            <rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" rotate=\"45deg\"/>\n        </clipPath>\n    </defs>\n    <g clip-path=\"url(#mask)\">\n        <path class=\"arrow__line arrow__line-1\" d=\"M15.3 55h94.8v10.1H15.3z\" clip-path=\"url(#mask)\" />\n        <path class=\"arrow__line arrow__line-2\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n        <path class=\"arrow__line arrow__line-3\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n    </g>\n</svg>";
