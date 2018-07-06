@@ -60,7 +60,7 @@ class ViewportUtility {
         this.scrollX = 0;
         this.scrollY = 0;
 
-        if (!process.BROWSER) {
+        if (typeof window !== 'object') {
             return this.instance;
         }
 
@@ -145,7 +145,7 @@ class ViewportUtility {
     }
 
     get documentHeight() {
-        if (process.BROWSER) {
+        if (typeof window !== 'undefined') {
             return Math.max(document.body.scrollHeight, document.body.offsetHeight);
         }
 
