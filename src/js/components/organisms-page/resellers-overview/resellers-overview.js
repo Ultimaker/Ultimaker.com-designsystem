@@ -26,6 +26,10 @@ export default Vue.component('resellers-overview', {
         showAllAuthorizedResellers: {
             type: Boolean,
             default: false
+        },
+        showTooltipPreferred: {
+            type: Boolean,
+            default: false
         }
     },
     computed: {

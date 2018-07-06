@@ -16,9 +16,23 @@ $resellerCardMarginBottom: $buildingUnit;
     font-weight: 100;
     font-family: $fontPrimary;
 
-    position: static;
+    max-width: 296px;
+    position: absolute;
+    opacity: 1;
     transform: translateY(calc(-100% - 36px));
-    transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultDuration $defaultEasing;
+
+    &:after {
+        left: $buildingUnit;
+    }
+}
+
+.tooltip-enter, .tooltip-leave-to {
+    opacity: 0;
+    transform: translateY(calc(-100% - 42px));
+}
+
+.tooltip-enter-active, .tooltip-leave-active {
+    transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultEasing;
 }
 
 .reseller-section {
@@ -82,7 +96,7 @@ $resellerCardMarginBottom: $buildingUnit;
     display: flex;
     flex-direction: column;
 
-    max-width: 400px;
+    max-width: $mobileXlWidth;
 
     padding: ($buildingUnit * 1.5) - $resellerCardBorderSize;
     margin-bottom: $resellerCardMarginBottom;
@@ -94,6 +108,11 @@ $resellerCardMarginBottom: $buildingUnit;
     box-sizing: border-box;
 
     @include micro-animate(color, background);
+    @extend %reset-last-margin;
+
+    & > * {
+        width: auto;
+    }
 
     &:hover {
         color: $colorBlack;
@@ -108,12 +127,16 @@ $resellerCardMarginBottom: $buildingUnit;
         }
     }
 
-    &__info {
-        color: $colorGrayDark;
+    &:hover,
+    &:focus {
+        .reseller-link .link__underline {
+            background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px);
+            background-size: 0% 100%;
+        }
     }
 
-    &__title {
-        margin-bottom: -6px; //reset wrong offset
+    &__info {
+        color: $colorGrayDark;
     }
 }
 

@@ -11,6 +11,10 @@ export default Vue.component('reseller-card', {
         preferred: {
             type: Boolean,
             default: false
+        },
+        href: {
+            type: String,
+            required: true
         }
     }
 });

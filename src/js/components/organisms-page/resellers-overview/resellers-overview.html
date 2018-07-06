@@ -4,11 +4,21 @@
         <section class="reseller-section" v-if="resellers">
             <header class="reseller-section__header">
                 <h3 class="reseller-section__title">Preferred resellers <span class="reseller-section__count">({{resellersPreferred.length}})</span>
-                    <tooltip block="resellers">
-                        {{tooltip}}
-                    </tooltip>
+                    <transition name="tooltip" >
+                        <tooltip block="resellers" v-if="showTooltipPreferred">
+                            {{tooltip}}
+                        </tooltip>
+                    </transition>
                 </h3>
-                <content-link class="reseller-section__info-link" :icon="'info'" mod="reversed">More info
+                <content-link
+                    class="reseller-section__info-link"
+                    :icon="'info'"
+                    mod="reversed"
+                    @click.native.prevent="showTooltipPreferred = true"
+                    @focus.native.prevent="showTooltipPreferred = true"
+                    @blur.native.prevent="showTooltipPreferred = false"
+                    role="button">
+                    More info
                 </content-link>
             </header>
 
@@ -16,14 +26,14 @@
                 <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
                     <template v-for="(reseller, index) in resellersPreferred">
                         <template v-if="index < showMax">
-                            <div class="flexgrid__cell--xs-4">
+                            <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
                                 <li class="reseller-list__item">
                                     <reseller-card v-bind="reseller"></reseller-card>
                                 </li>
                             </div>
                         </template>
                         <template v-if="index >= showMax && showAllPreferredResellers">
-                            <div class="flexgrid__cell--xs-4">
+                            <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
                                 <li class="reseller-list__item">
                                     <reseller-card v-bind="reseller"></reseller-card>
                                 </li>
@@ -51,7 +61,7 @@
                 <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
                     <template v-for="(reseller, index) in resellersAuthorized">
                         <template v-if="index < showMax">
-                            <div class="flexgrid__cell--xs-4">
+                            <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
                                 <li class="reseller-list__item">
                                     <!--<reseller-card v-bind="reseller" class="demo-rhythm"></reseller-card>-->
                                     <reseller-card v-bind="reseller"></reseller-card>
@@ -59,7 +69,7 @@
                             </div>
                         </template>
                         <template v-if="index >= showMax && showAllAuthorizedResellers">
-                            <div class="flexgrid__cell--xs-4">
+                            <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
                                 <li class="reseller-list__item">
                                     <reseller-card v-bind="reseller"></reseller-card>
                                 </li>
