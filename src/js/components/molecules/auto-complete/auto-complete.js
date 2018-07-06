@@ -1,4 +1,5 @@
 /* eslint-disable complexity */
+import 'babel-polyfill';
 import Vue from 'vue';
 import _filter from 'lodash/filter';
 import _find from 'lodash/find';
