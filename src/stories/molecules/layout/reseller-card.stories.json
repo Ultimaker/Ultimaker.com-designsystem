@@ -1,6 +1,7 @@
 {
     "card": {
         "name": "Reseller name",
-        "preferred": false
+        "preferred": false,
+        "href": "https://www.ultimaker.com"
     }
 }

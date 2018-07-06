@@ -1,9 +1,14 @@
-<router-link class="reseller-card" tabindex="0">
+<router-link class="reseller-card" tabindex="0" :to="href">
     <h4 class="reseller-card__title">
         {{name}}
         <small class="reseller-badge reseller-badge--inline" v-if="preferred">
             <icon :icon-name="'rate-solid'" class="reseller-badge__icon"></icon>
         </small>
     </h4>
-    <!--<small class="reseller-card__info" v-if="showrooms">{{showrooms.length}}</small>-->
+    <!--<content-link class="reseller-link" tabindex="-1" @click.native.prevent>Visit website</content-link>-->
+    <span class="link faux-content-link reseller-link">
+        <span class="link__underline">
+            Visit website
+        </span>
+    </span>
 </router-link>
