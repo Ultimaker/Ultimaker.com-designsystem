@@ -1,12 +1,17 @@
 /* eslint-disable max-nested-callbacks */
 import ResponsivePicture from './responsive-picture';
+import ResponsivePictureSource from './responsive-picture-source';
 import {build} from 'vuenit';
 import ViewportUtil from 'utils/viewport';
 
 describe('components', () => {
     describe('atoms', () => {
         describe('responsive-picture', () => {
-            const mount = build(ResponsivePicture);
+            const mount = build(ResponsivePicture, {
+                components: {
+                    'responsive-picture-source': ResponsivePictureSource
+                }
+            });
 
             it('should render a picture element with metadata', () => {
                 const vm = mount({

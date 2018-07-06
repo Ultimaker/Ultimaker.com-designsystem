@@ -10,7 +10,8 @@ describe('components', () => {
         const fixture = require('./colors.unit.spec.json');
         const mount = build(Colors, {
             components: {
-                'hit-area': `<div class="hit-area"><slot></slot></div>`
+                'hit-area': `<div class="hit-area"><slot></slot></div>`,
+                'cms-image': `<img></img>`
             }
         });
 

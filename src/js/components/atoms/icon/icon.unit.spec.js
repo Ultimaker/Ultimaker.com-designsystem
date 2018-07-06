@@ -30,11 +30,13 @@ describe('components', () => {
 
                 it('should render with a customized iconset', () => {
                     const vm = mount({
-                            props: {
-                                iconName: 'search'
-                            }
-                        }),
-                        svgUse = vm.$el.querySelector('use');
+                        props: {
+                            iconName: 'search'
+                        }
+                    });
+
+                    vm.ready = true;
+                    const svgUse = vm.$el.querySelector('use');
 
                     expect(vm.iconUrl).toEqual(iconUrl);
                     expect(svgUse.getAttribute('xlink:href')).toContain(iconUrl);

@@ -27,8 +27,10 @@ export default {
             return `${ this.iconUrl }#icon-${ this.iconName }`;
         }
     },
+    beforeMount() {
+        this.ready = typeof window !== 'undefined';
+    },
     mounted() {
-        this.ready = true;
         /* istanbul ignore next */ /* not testing IE polyfill 8-) */
         if ((/Trident\//).test(window.navigator.userAgent)) {
             const requestOptions =  {

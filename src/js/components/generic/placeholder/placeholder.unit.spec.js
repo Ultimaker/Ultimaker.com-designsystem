@@ -1,16 +1,19 @@
 /* eslint-disable max-nested-callbacks */
 import Placeholder from './placeholder';
+import {build} from 'vuenit';
 
 describe('components', () => {
     describe('generic', () => {
         describe('placeholder', () => {
+            const mount = build(Placeholder);
+
             it('should render a image placeholder', () => {
-                const vm = new Placeholder({
-                        propsData: {
+                const vm = mount({
+                        props: {
                             width: '300',
                             height: '600'
                         }
-                    }).$mount(),
+                    }),
                     tspan = vm.$el.querySelectorAll('tspan');
 
                 expect(tspan.length).toEqual(2);
