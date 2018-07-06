@@ -1,6 +1,7 @@
 $triangleSize: $buildingUnit;
 
 .tooltip {
+    position: absolute;
     background: $colorBlack;
     color: $colorWhite;
     padding: $buildingUnit;

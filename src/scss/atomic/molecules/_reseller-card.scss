@@ -1,10 +1,33 @@
+$resellerCardMarginBottom: $buildingUnit;
+
 .resellers {
     @extend .organism;
     @extend %reset-last-margin;
 }
 
-.reseller-section:not(:last-child) {
-    margin-bottom: 53px;
+.resellers__title {
+    text-align: center;
+    position: relative;
+}
+
+
+.resellers__tooltip {
+    @include font-line-ratio(prim-s);
+    font-weight: 100;
+    font-family: $fontPrimary;
+
+    position: static;
+    transform: translateY(calc(-100% - 36px));
+    transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultDuration $defaultEasing;
+}
+
+.reseller-section {
+    &:not(:last-child) {
+        margin-bottom: 53px;
+    }
+    &:last-child {
+        margin-bottom: $resellerCardMarginBottom * -1; //reset margins
+    }
 }
 
 .reseller-section__header {
@@ -36,8 +59,21 @@
     margin: 0;
 }
 
+.reseller-section__count {
+    color: $colorGrayDark;
+    font-size: .75em;
+}
+
 .reseller-list {
     @extend %reset-list;
+}
+
+.flexgrid__cell--reseller-list__button--center {
+    text-align: center;
+}
+
+.reseller-list__button {
+    margin: 24px 0 12px 0;
 }
 
 .reseller-card {
@@ -49,7 +85,7 @@
     max-width: 400px;
 
     padding: ($buildingUnit * 1.5) - $resellerCardBorderSize;
-    margin-bottom: $buildingUnit;
+    margin-bottom: $resellerCardMarginBottom;
 
     color: $colorBlack;
     background: $colorWhite;
@@ -57,7 +93,7 @@
     border: $resellerCardBorderSize solid $colorGrayLight;
     box-sizing: border-box;
 
-    @include  micro-animate(color, background);
+    @include micro-animate(color, background);
 
     &:hover {
         color: $colorBlack;
@@ -75,6 +111,10 @@
     &__info {
         color: $colorGrayDark;
     }
+
+    &__title {
+        margin-bottom: -6px; //reset wrong offset
+    }
 }
 
 .reseller-badge {
@@ -84,7 +124,7 @@
     &__icon {
         color: inherit;
 
-        font-size: 1em;
+        font-size: initial;
         transform: translateY(0.1em);
     }
 
@@ -96,3 +136,5 @@
         display: inline;
     }
 }
+
+

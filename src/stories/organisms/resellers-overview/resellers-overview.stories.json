@@ -1,8 +1,70 @@
 {
     "title": "Find yourself a reseller",
+    "tooltip": "Blalala.",
     "resellers": [
         {
-            "name": "test name"
+            "name": "Test reseller 1",
+            "preferred": true
+        },
+        {
+            "name": "Test reseller 2",
+            "preferred": true
+        },
+        {
+            "name": "Test reseller 3",
+            "preferred": true
+        },
+        {
+            "name": "Test reseller 4",
+            "preferred": true
+        },
+        {
+            "name": "Test reseller 5",
+            "preferred": true
+        },
+        {
+            "name": "Test reseller 6",
+            "preferred": true
+        },
+        {
+            "name": "Test reseller 7",
+            "preferred": true
+        },
+        {
+            "name": "Test reseller 8",
+            "preferred": true
+        },
+        {
+            "name": "Test reseller 9",
+            "preferred": true
+        },
+        {
+            "name": "Test reseller 10",
+            "preferred": false
+        },
+        {
+            "name": "Test reseller 11",
+            "preferred": false
+        },
+        {
+            "name": "Test reseller 12",
+            "preferred": false
+        },
+        {
+            "name": "Test reseller 13",
+            "preferred": false
+        },
+        {
+            "name": "Test reseller 14",
+            "preferred": false
+        },
+        {
+            "name": "Test reseller 15",
+            "preferred": false
+        },
+        {
+            "name": "Test reseller 16",
+            "preferred": false
         }
     ]
 }
