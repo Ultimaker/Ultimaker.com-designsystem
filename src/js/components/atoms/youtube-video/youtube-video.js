@@ -65,7 +65,7 @@ export default {
             return `https://www.youtube-nocookie.com/embed/${ this.videoId }?${ this.videoQuery }`;
         }
     },
-    beforeMount() {
-        this.loadVideo = process.BROWSER;
+    mounted() {
+        this.loadVideo = true;
     }
 };

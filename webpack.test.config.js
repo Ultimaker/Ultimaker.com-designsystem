@@ -6,8 +6,7 @@ const webpackConfig = Object.assign({}, base, {
     devtool: '#inline-source-map',
     plugins: (base.plugins || []).concat([
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
-            'process.BROWSER': true
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
         }),
         new webpack.NoEmitOnErrorsPlugin()
     ])
