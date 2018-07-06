@@ -1,51 +1,80 @@
 <article class="resellers">
     <section class="container">
-        <h2>{{title}}</h2>
+        <h2 class="resellers__title">{{title}}</h2>
         <section class="reseller-section" v-if="resellers">
-            CARDS!
+            <header class="reseller-section__header">
+                <h3 class="reseller-section__title">Preferred resellers <span class="reseller-section__count">({{resellersPreferred.length}})</span>
+                    <tooltip block="resellers">
+                        {{tooltip}}
+                    </tooltip>
+                </h3>
+                <content-link class="reseller-section__info-link" :icon="'info'" mod="reversed">More info
+                </content-link>
+            </header>
 
-            <!--<header class="reseller-section__header">-->
-                <!--<h3 class="reseller-section__title">Preferred resellers</h3>-->
-                <!--<content-link class="reseller-section__info-link" :icon="'info'" mod="reversed">More info</content-link>-->
-            <!--</header>-->
+            <ul class="reseller-list" v-if="resellersPreferred.length > 0">
+                <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
+                    <template v-for="(reseller, index) in resellersPreferred">
+                        <template v-if="index < showMax">
+                            <div class="flexgrid__cell--xs-4">
+                                <li class="reseller-list__item">
+                                    <reseller-card v-bind="reseller"></reseller-card>
+                                </li>
+                            </div>
+                        </template>
+                        <template v-if="index >= showMax && showAllPreferredResellers">
+                            <div class="flexgrid__cell--xs-4">
+                                <li class="reseller-list__item">
+                                    <reseller-card v-bind="reseller"></reseller-card>
+                                </li>
+                            </div>
+                        </template>
+                    </template>
 
-            <!--<ul class="reseller-list">-->
-                <!--<div class="flexgrid flexgrid&#45;&#45;gutter flexgrid&#45;&#45;mobile-xl-row">-->
-                    <!--<div class="flexgrid__cell&#45;&#45;xs-4">-->
-                        <!--<li class="reseller-list__item">-->
-                            <!--<reseller-card :preferred="true"></reseller-card>-->
-                        <!--</li>-->
-                    <!--</div>-->
-                    <!--<div class="flexgrid__cell&#45;&#45;xs-4">-->
-                        <!--<li class="reseller-list__item">-->
-                            <!--<reseller-card :preferred="true"></reseller-card>-->
-                        <!--</li>-->
-                    <!--</div>-->
-                    <!--<div class="flexgrid__cell&#45;&#45;xs-4">-->
-                        <!--<li class="reseller-list__item">-->
-                            <!--<reseller-card :preferred="true"></reseller-card>-->
-                        <!--</li>-->
-                    <!--</div>-->
+                    <template v-if="resellersPreferred.length > showMax && !showAllPreferredResellers">
+                        <div class="flexgrid__cell flexgrid__cell--reseller-list__button--center">
+                            <button class="button--secondary reseller-list__button"
+                                    @click="showAllPreferredResellers = true">Show all
+                            </button>
+                        </div>
+                    </template>
+                </div>
+            </ul>
+        </section>
 
-
-                <!--</div>-->
-            <!--</ul>-->
-        <!--</section>-->
-
-
-        <!--<section class="reseller-section">-->
-            <!--<header class="reseller-section__header">-->
-                <!--<h3 class="reseller-section__title">Authorized resellers</h3>-->
-            <!--</header>-->
-            <!--<ul class="reseller-list">-->
-                <!--<div class="flexgrid flexgrid&#45;&#45;gutter flexgrid&#45;&#45;mobile-xl-row">-->
-                    <!--<div class="flexgrid__cell&#45;&#45;xs-4">-->
-                        <!--<li class="reseller-list__item">-->
-                            <!--<reseller-card></reseller-card>-->
-                        <!--</li>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</ul>-->
+        <section class="reseller-section" v-if="resellers">
+            <header class="reseller-section__header">
+                <h3 class="reseller-section__title">Authorized resellers <span class="reseller-section__count">({{resellersAuthorized.length}})</span>
+                </h3>
+            </header>
+            <ul class="reseller-list" v-if="resellersAuthorized.length > 0">
+                <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
+                    <template v-for="(reseller, index) in resellersAuthorized">
+                        <template v-if="index < showMax">
+                            <div class="flexgrid__cell--xs-4">
+                                <li class="reseller-list__item">
+                                    <!--<reseller-card v-bind="reseller" class="demo-rhythm"></reseller-card>-->
+                                    <reseller-card v-bind="reseller"></reseller-card>
+                                </li>
+                            </div>
+                        </template>
+                        <template v-if="index >= showMax && showAllAuthorizedResellers">
+                            <div class="flexgrid__cell--xs-4">
+                                <li class="reseller-list__item">
+                                    <reseller-card v-bind="reseller"></reseller-card>
+                                </li>
+                            </div>
+                        </template>
+                    </template>
+                    <template v-if="resellersAuthorized.length > showMax && !showAllAuthorizedResellers">
+                        <div class="flexgrid__cell flexgrid__cell--reseller-list__button--center">
+                            <button class="button--secondary reseller-list__button"
+                                    @click="showAllAuthorizedResellers = true">Show all
+                            </button>
+                        </div>
+                    </template>
+                </div>
+            </ul>
         </section>
     </section>
 </article>

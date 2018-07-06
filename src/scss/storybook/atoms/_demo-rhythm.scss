@@ -2,20 +2,20 @@ $gridColorNew: rgba($colorOnline, 0.5);
 $gridColorNewFaded: rgba($colorOnline, 0.2);
 
 .demo-rhythm {
-    position: relative;
-    background: linear-gradient($gridColorNew, $gridColorNew 1px, transparent 1px);
-    background-size: 1px 12px;
-    background-color: rgba($colorOnline, 0.1);
+    position: relative !important;
+    background: linear-gradient($gridColorNew, $gridColorNew 1px, transparent 1px) !important;
+    background-size: 1px 12px !important;
+    background-color: rgba($colorOnline, 0.1) !important;
 
     &:after {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: $buildingUnit/2;
-        bottom: 0;
-        content: '';
-        background: linear-gradient($gridColorNewFaded, $gridColorNewFaded 1px, transparent 1px);
-        background-size: 1px 12px;
-        z-index: -1;
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: $buildingUnit/2 !important;
+        bottom: 0 !important;
+        content: '' !important;
+        background: linear-gradient($gridColorNewFaded, $gridColorNewFaded 1px, transparent 1px) !important;
+        background-size: 1px 12px !important;
+        z-index: -1 !important;
     }
 }
