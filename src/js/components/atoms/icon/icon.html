@@ -1,4 +1,4 @@
-<svg class="icon" :class="iconClass" :viewBox="viewBox">
+<svg class="icon" :class="iconClass" :viewBox="viewBox" v-if="ready">
     <use :xlink:href="iconRef" v-if="!symbolData"></use>
     <g id="symbol-container"></g>
 </svg>

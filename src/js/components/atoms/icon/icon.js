@@ -3,6 +3,7 @@ const defaultIconUrl = '/static/icons/iconset.svg';
 export default {
     name: 'icon',
     data: () => ({
+        ready: false,
         symbolData: null,
         viewBox: null
     }),
@@ -13,26 +14,21 @@ export default {
         }
     },
     computed: {
-        iconId: function() {
+        iconId() {
             return `icon-${ this.iconName }`;
         },
-        iconClass: function() {
+        iconClass() {
             return `icon--${ this.iconName }`;
         },
-        iconUrl: function() {
-            let iconUrl = defaultIconUrl;
-
-            if (process.BROWSER && window.svgIconMap) {
-                iconUrl = window.svgIconMap;
-            }
-
-            return iconUrl;
+        iconUrl() {
+            return window.svgIconMap || defaultIconUrl;
         },
-        iconRef: function() {
+        iconRef() {
             return `${ this.iconUrl }#icon-${ this.iconName }`;
         }
     },
     mounted() {
+        this.ready = true;
         /* istanbul ignore next */ /* not testing IE polyfill 8-) */
         if ((/Trident\//).test(window.navigator.userAgent)) {
             const requestOptions =  {
