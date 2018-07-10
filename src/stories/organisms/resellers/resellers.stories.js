@@ -1,8 +1,8 @@
 import {storiesOf} from '@storybook/vue';
 // import {withKnobs, text} from '@storybook/addon-knobs';
-import data from './resellers-overview.stories.json';
+import data from './resellers.stories.json';
 
-storiesOf('organisms|resellers-overview', module)
+storiesOf('organisms|resellers', module)
     // .addDecorator(withKnobs)
     .add(
         'Resellers overview',
@@ -13,7 +13,7 @@ storiesOf('organisms|resellers-overview', module)
                 data: () => ({
                     resellers: data
                 }),
-                template: require('./resellers-overview.stories.html')
+                template: require('./resellers.stories.html')
             };
         }
     );
