@@ -7,18 +7,22 @@ describe('components', () => {
         describe('icon', () => {
             const mount = build(Icon);
 
-            it('should render an icon', () => {
+            it('should render an icon', (done) => {
                 const vm = mount({
-                        props: {
-                            iconName: 'search'
-                        }
-                    }),
-                    svgUse = vm.$el.querySelector('use');
+                    props: {
+                        iconName: 'search'
+                    }
+                });
 
-                expect(svgUse.getAttribute('xlink:href')).toContain('iconset.svg#icon-search');
-                expect(vm.iconId).toEqual('icon-search');
-                expect(vm.iconClass).toEqual('icon--search');
-                vm.$destroy();
+                vm.$nextTick(() => {
+                    const svgUse = vm.$el.querySelector('use');
+
+                    expect(svgUse.getAttribute('xlink:href')).toContain('iconset.svg#icon-search');
+                    expect(vm.iconId).toEqual('icon-search');
+                    expect(vm.iconClass).toEqual('icon--search');
+                    vm.$destroy();
+                    done();
+                });
             });
 
             describe('customized icon', () => {
@@ -28,19 +32,21 @@ describe('components', () => {
                     window.svgIconMap = iconUrl;
                 });
 
-                it('should render with a customized iconset', () => {
+                it('should render with a customized iconset', (done) => {
                     const vm = mount({
                         props: {
                             iconName: 'search'
                         }
                     });
 
-                    vm.ready = true;
-                    const svgUse = vm.$el.querySelector('use');
+                    vm.$nextTick(() => {
+                        const svgUse = vm.$el.querySelector('use');
 
-                    expect(vm.iconUrl).toEqual(iconUrl);
-                    expect(svgUse.getAttribute('xlink:href')).toContain(iconUrl);
-                    vm.$destroy();
+                        expect(vm.iconUrl).toEqual(iconUrl);
+                        expect(svgUse.getAttribute('xlink:href')).toContain(iconUrl);
+                        vm.$destroy();
+                        done();
+                    });
                 });
             });
         });
