@@ -55,7 +55,7 @@
         }
     ],
     "labels": {
-        "buyCTA": "Buying options",
+        "buyCta": "Buying options",
         "excludingVat": "*excl. VAT",
         "download": "Download"
     }
