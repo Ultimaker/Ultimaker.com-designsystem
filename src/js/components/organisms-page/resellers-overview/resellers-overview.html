@@ -4,8 +4,8 @@
         <section class="reseller-section" v-if="resellers">
             <header class="reseller-section__header">
                 <h3 class="reseller-section__title">Preferred resellers <span class="reseller-section__count">({{resellersPreferred.length}})</span>
-                    <transition name="tooltip" >
-                        <tooltip block="resellers" v-if="showTooltipPreferred">
+                    <transition name="tooltip">
+                        <tooltip id="tooltip-preferred" block="resellers" v-show="showTooltipPreferred">
                             {{tooltip}}
                         </tooltip>
                     </transition>
@@ -14,10 +14,11 @@
                     class="reseller-section__info-link"
                     :icon="'info'"
                     mod="reversed"
-                    @click.native.prevent="showTooltipPreferred = true"
+                    @click.native.prevent="showTooltipPreferred = !showTooltipPreferred"
                     @focus.native.prevent="showTooltipPreferred = true"
                     @blur.native.prevent="showTooltipPreferred = false"
-                    role="button">
+                    role="button"
+                    aria-describedby="tooltip-preferred">
                     More info
                 </content-link>
             </header>
@@ -63,7 +64,6 @@
                         <template v-if="index < showMax">
                             <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
                                 <li class="reseller-list__item">
-                                    <!--<reseller-card v-bind="reseller" class="demo-rhythm"></reseller-card>-->
                                     <reseller-card v-bind="reseller"></reseller-card>
                                 </li>
                             </div>

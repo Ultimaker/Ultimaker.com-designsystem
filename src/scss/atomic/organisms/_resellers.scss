@@ -1,0 +1,96 @@
+.resellers {
+    @extend .organism;
+    @extend %reset-last-margin;
+}
+
+.resellers__title {
+    text-align: center;
+    position: relative;
+}
+
+.resellers__tooltip {
+    @include font-line-ratio(prim-s);
+    font-weight: 100;
+    font-family: $fontPrimary;
+
+    max-width: 296px;
+    position: absolute;
+    opacity: 1;
+    transform: translateY(calc(-100% - 36px));
+
+    &:after {
+        left: $buildingUnit;
+    }
+}
+
+.tooltip-enter, .tooltip-leave-to {
+    opacity: 0;
+    transform: translateY(calc(-100% - 42px));
+}
+
+.tooltip-enter-active, .tooltip-leave-active {
+    transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultEasing;
+}
+
+.reseller-section {
+    &:not(:last-child) {
+        margin-bottom: 53px;
+    }
+    &:last-child {
+        margin-bottom: $resellerCardMobileMarginBottom * -1; //reset margins
+
+        @include min-tablet {
+            margin-bottom: $resellerCardTabletMarginBottom * -1; //reset margins
+        }
+    }
+}
+
+.reseller-section__header {
+    @include font-ratio-rhythm(sec-xs);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-s);
+    }
+
+    .reseller-section__info-link {
+        margin: 10px 0 0 0;
+    }
+
+    @include min-mobile-xl {
+        flex-direction: row;
+        display: flex;
+        align-items: baseline;
+
+        .reseller-section__info-link {
+            margin-left: $buildingUnit * 2;
+            margin-top: 0;
+            margin-bottom: -4px; //reset wrong offset
+        }
+    }
+}
+
+.reseller-section__title,
+.reseller-section__info-link {
+    margin: 0;
+}
+
+.reseller-section__count {
+    color: $colorGrayDark;
+    font-size: .75em;
+}
+
+.reseller-list {
+    @extend %reset-list;
+}
+
+.reseller-list__button {
+    margin: ($buildingUnit * 2) 0 $resellerCardMobileMarginBottom 0;
+
+    @include min-tablet {
+        margin: ($buildingUnit * 2) 0 $resellerCardTabletMarginBottom 0;
+    }
+}
+
+.flexgrid__cell--reseller-list__button--center {
+    text-align: center;
+}
