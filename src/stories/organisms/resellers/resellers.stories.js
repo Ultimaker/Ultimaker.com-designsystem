@@ -5,7 +5,7 @@ import data from './resellers.stories.json';
 storiesOf('organisms|resellers', module)
     // .addDecorator(withKnobs)
     .add(
-        'Resellers overview',
+        'Resellers',
         () => {
             // const title = text('Title', data.title);
 

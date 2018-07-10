@@ -1,8 +1,8 @@
 import Vue from 'vue';
 
-export default Vue.component('resellers-overview', {
-    name: 'resellers-overview',
-    template: require('./resellers-overview.html'),
+export default Vue.component('resellers', {
+    name: 'resellers',
+    template: require('./resellers.html'),
     props: {
         title: {
             type: String,
