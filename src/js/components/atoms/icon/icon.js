@@ -1,3 +1,5 @@
+import BrowserCapabilities from 'utils/browser-capabilities';
+
 const defaultIconUrl = '/static/icons/iconset.svg';
 
 export default {
@@ -27,10 +29,10 @@ export default {
             return `${ this.iconUrl }#icon-${ this.iconName }`;
         }
     },
-    beforeMount() {
-        this.ready = typeof window !== 'undefined';
-    },
     mounted() {
+        // Only render in browser
+        this.ready = true;
+
         /* istanbul ignore next */ /* not testing IE polyfill 8-) */
         if ((/Trident\//).test(window.navigator.userAgent)) {
             const requestOptions =  {
