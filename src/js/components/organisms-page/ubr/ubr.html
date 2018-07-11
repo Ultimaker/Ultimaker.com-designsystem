@@ -13,7 +13,7 @@
             <div class="flexgrid__cell--xs-6">
                 <template v-if="image && image.length">
                     <div class="ubr__image ">
-                        <responsive-picture class="img--responsive" v-bind="image" :orientation="'landscape'"></responsive-picture>
+                        <cms-image class="img--responsive" :image="image[0]" :orientation="'landscape'"></cms-image>
                     </div>
                 </template>
             </div>

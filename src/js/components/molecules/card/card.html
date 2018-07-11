@@ -2,7 +2,8 @@
     <div class="card__visual">
         <template v-if="card.image">
           <div class="card__image">
-            <responsive-picture v-if="card.image" class="img--responsive" v-bind="card.image"></responsive-picture>
+            <responsive-picture v-if="card.image && card.image.mobileWidth" class="img--responsive" v-bind="card.image"></responsive-picture>
+            <cms-image v-else class="img--responsive" :image="card.image[0]" :orientation="'square'"></cms-image>
           </div>
         </template>
         <icon v-if="card.icon" :icon-name="card.icon.iconName" class="card__icon"></icon>

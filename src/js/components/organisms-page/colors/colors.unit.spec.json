@@ -35,10 +35,10 @@
                     "is_transparent": false,
                     "rgb_hex_code": "#00387B",
                     "system_code": "RAL 1234",
-                    "image": {
+                    "image": [{
                         "title": "Ultimaker Pla Blue",
                         "mime_type": "image/png",
-                        "links": {
+                        "links": [{
                             "landscape_desktop": [
                                 {
                                     "href": "/generator/svg/1800/1080/CCCCCC"
@@ -49,18 +49,18 @@
                                     "href": "/generator/svg/900/540"
                                 }
                             ]
-                        }
-                    }
+                        }]
+                    }]
                 },
                 {
                     "title": "Ultimaker material",
                     "is_transparent": false,
                     "rgb_hex_code": "#BC4077",
                     "system_code": "RAL 1234",
-                    "image": {
+                    "image": [{
                         "title": "Ultimaker material",
                         "mime_type": "image/png",
-                        "links": {
+                        "links": [{
                             "landscape_desktop": [
                                 {
                                     "href": "/generator/svg/1800/1080"
@@ -71,18 +71,18 @@
                                     "href": "/generator/svg/900/540"
                                 }
                             ]
-                        }
-                    }
+                        }]
+                    }]
                 },
                 {
                     "title": "Ultimaker material",
                     "is_transparent": false,
                     "rgb_hex_code": "#BB1E10",
                     "system_code": "RAL 1234",
-                    "image": {
+                    "image": [{
                         "title": "Ultimaker material",
                         "mime_type": "image/png",
-                        "links": {
+                        "links": [{
                             "landscape_desktop": [
                                 {
                                     "href": "/generator/svg/1800/1080"
@@ -93,15 +93,15 @@
                                     "href": "/generator/svg/900/540"
                                 }
                             ]
-                        }
-                    }
+                        }]
+                    }]
                 },
                 {
                     "title": "Ultimaker transparent",
                     "is_transparent": true,
                     "rgb_hex_code": "#000000",
                     "system_code": "RAL 1234",
-                    "image": {
+                    "image": [{
                         "title": "Ultimaker material",
                         "mime_type": "image/png",
                         "links": {
@@ -116,7 +116,7 @@
                                 }
                             ]
                         }
-                    }
+                    }]
                 }
             ]
         }
