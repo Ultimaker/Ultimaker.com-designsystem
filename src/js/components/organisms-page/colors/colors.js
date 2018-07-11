@@ -28,10 +28,10 @@ export default {
         },
         image() {
             if (this.activeColor) {
-                return this.activeColor.image;
+                return this.activeColor.image[0];
             }
             if (this.colors && this.colors.length) {
-                return this.colors[0].image;
+                return this.colors[0].image[0];
             }
 
             return null;

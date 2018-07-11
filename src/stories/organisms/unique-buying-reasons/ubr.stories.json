@@ -15,15 +15,17 @@
     ],
     "image": [
         {
-            "alt": "image landscape alt text empty",
-            "mobileWidth": {
-                "url": "/generator/svg/600/360"
-            },
-            "tabletWidth": {
-                "url": "/generator/svg/1200/720",
-                "retina": {
-                    "url": "/generator/svg/2400/1440"
-                }
+            "title": "image landscape alt text empty",
+            "links": {
+                "self": [{
+                    "href": "/generator/svg/1200/720"
+                }],
+                "landscape_desktop": [{
+                    "href": "/generator/svg/1200/720"
+                }],
+                "landscape_mobile": [{
+                    "href": "/generator/svg/600/360"
+                }]
             }
         }
     ]

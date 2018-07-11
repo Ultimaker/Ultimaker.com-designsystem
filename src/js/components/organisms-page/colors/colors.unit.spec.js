@@ -42,7 +42,7 @@ describe('components', () => {
                 vm.setSelected(activeColor);
                 expect(vm.imageLoaded).toEqual(false);
                 expect(vm.activeColor).toEqual(activeColor);
-                expect(vm.image).toEqual(activeColor.image);
+                expect(vm.image).toEqual(activeColor.image[0]);
 
                 vm.$refs.image.querySelector('img').dispatchEvent(loadEvent);
                 expect(vm.imageLoaded).toEqual(true);

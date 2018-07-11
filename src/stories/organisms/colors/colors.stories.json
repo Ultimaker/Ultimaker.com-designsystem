@@ -34,61 +34,61 @@
                 "is_transparent": false,
                 "rgb_hex_code": "#00387B",
                 "system_code": "RAL 1234",
-                "image": {
+                "image": [{
                     "title": "Ultimaker Pla Blue",
                     "mime_type": "image/png",
                     "links": {
                         "landscape_desktop": [{
-                            "href": "/generator/svg/1800/1080/CCCCCC"
+                            "href": "/generator/svg/1800/1080/00387B/FFFFFF"
                         }],
                         "landscape_mobile": [{
-                            "href": "/generator/svg/900/540"
+                            "href": "/generator/svg/900/540/00387B/FFFFFF"
                         }]
                     }
-                }
+                }]
             },
             {
                 "title": "Ultimaker material",
                 "is_transparent": false,
                 "rgb_hex_code": "#BC4077",
                 "system_code": "RAL 1234",
-                "image": {
+                "image": [{
                     "title": "Ultimaker material",
                     "mime_type": "image/png",
                     "links": {
                         "landscape_desktop": [{
-                            "href": "/generator/svg/1800/1080"
+                            "href": "/generator/svg/1800/1080/BC4077/FFFFFF"
                         }],
                         "landscape_mobile": [{
-                            "href": "/generator/svg/900/540"
+                            "href": "/generator/svg/900/540/BC4077/FFFFFF"
                         }]
                     }
-                }
+                }]
             },
             {
                 "title": "Ultimaker material",
                 "is_transparent": false,
                 "rgb_hex_code": "#BB1E10",
                 "system_code": "RAL 1234",
-                "image": {
+                "image": [{
                     "title": "Ultimaker material",
                     "mime_type": "image/png",
                     "links": {
                         "landscape_desktop": [{
-                            "href": "/generator/svg/1800/1080"
+                            "href": "/generator/svg/1800/1080/BB1E10/FFFFFF"
                         }],
                         "landscape_mobile": [{
-                            "href": "/generator/svg/900/540"
+                            "href": "/generator/svg/900/540/BB1E10/FFFFFF"
                         }]
                     }
-                }
+                }]
             },
             {
                 "title": "Ultimaker transparent",
                 "is_transparent": true,
                 "rgb_hex_code": "#000000",
                 "system_code": "RAL 1234",
-                "image": {
+                "image": [{
                     "title": "Ultimaker material",
                     "mime_type": "image/png",
                     "links": {
@@ -99,7 +99,7 @@
                             "href": "/generator/svg/900/540"
                         }]
                     }
-                }
+                }]
             }
         ]
     }
