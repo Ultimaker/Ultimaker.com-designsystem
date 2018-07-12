@@ -3,7 +3,7 @@
         <h2 class="resellers__title">{{title}}</h2>
         <section class="reseller-section reseller-section--preferred" v-if="resellers">
             <header class="reseller-section__header">
-                <h3 class="reseller-section__title">Preferred resellers <span class="reseller-section__count">({{resellersPreferred.length}})</span>
+                <h3 class="reseller-section__title">{{ labels.preferredResellers }} <span class="reseller-section__count">({{resellersPreferred.length}})</span>
                     <template v-if="tooltip">
                         <transition name="tooltip">
                             <tooltip id="tooltip-preferred" block="resellers" v-show="showTooltipPreferred">
@@ -22,7 +22,7 @@
                     role="button"
                     aria-describedby="tooltip-preferred"
                     v-if="tooltip">
-                    More info
+                    {{ labels.moreInfo }}
                 </content-link>
             </header>
 
@@ -32,14 +32,14 @@
                         <template v-if="index < showMax">
                             <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
                                 <li class="reseller-list__item">
-                                    <reseller-card v-bind="reseller"></reseller-card>
+                                    <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
                                 </li>
                             </div>
                         </template>
                         <template v-if="index >= showMax && showAllPreferredResellers">
                             <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
                                 <li class="reseller-list__item">
-                                    <reseller-card v-bind="reseller"></reseller-card>
+                                    <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
                                 </li>
                             </div>
                         </template>
@@ -48,7 +48,7 @@
                     <template v-if="resellersPreferred.length > showMax && !showAllPreferredResellers">
                         <div class="flexgrid__cell flexgrid__cell--reseller-list__button--center">
                             <button class="button--secondary reseller-list__button"
-                                    @click="showAllPreferredResellers = true">Show all
+                                    @click="showAllPreferredResellers = true">{{ labels.showAll }}
                             </button>
                         </div>
                     </template>
@@ -58,7 +58,7 @@
 
         <section class="reseller-section reseller-section--authorized" v-if="resellers">
             <header class="reseller-section__header">
-                <h3 class="reseller-section__title">Authorized resellers <span class="reseller-section__count">({{resellersAuthorized.length}})</span>
+                <h3 class="reseller-section__title">{{ labels.authorizedResellers }} <span class="reseller-section__count">({{resellersAuthorized.length}})</span>
                 </h3>
             </header>
             <ul class="reseller-list" v-if="resellersAuthorized.length > 0">
@@ -67,14 +67,14 @@
                         <template v-if="index < showMax">
                             <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
                                 <li class="reseller-list__item">
-                                    <reseller-card v-bind="reseller"></reseller-card>
+                                    <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
                                 </li>
                             </div>
                         </template>
                         <template v-if="index >= showMax && showAllAuthorizedResellers">
                             <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
                                 <li class="reseller-list__item">
-                                    <reseller-card v-bind="reseller"></reseller-card>
+                                    <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
                                 </li>
                             </div>
                         </template>
@@ -82,7 +82,7 @@
                     <template v-if="resellersAuthorized.length > showMax && !showAllAuthorizedResellers">
                         <div class="flexgrid__cell flexgrid__cell--reseller-list__button--center">
                             <button class="button--secondary reseller-list__button"
-                                    @click="showAllAuthorizedResellers = true">Show all
+                                    @click="showAllAuthorizedResellers = true">{{ labels.showAll }}
                             </button>
                         </div>
                     </template>
