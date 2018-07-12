@@ -1,0 +1,23 @@
+{
+    "label": "Some label:",
+    "listItems": [
+        {
+            "text": "Default list-item"
+        },
+        {
+            "text": "Default list-item"
+        },
+        {
+            "text": "Default list-item"
+        },
+        {
+            "text": "Default list-item"
+        },
+        {
+            "text": "Default list-item"
+        },
+        {
+            "text": "Default list-item"
+        }
+    ]
+}

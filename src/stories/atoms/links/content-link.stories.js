@@ -14,6 +14,7 @@ storiesOf('Atoms|links',  module)
                 mod = `${selectedSize.modifier} ${reversed ? 'reversed' : ''}`.trim();
 
             return {
+                inject: ['data'],
                 data: () => ({
                     mod: mod,
                     icon: icon ? data.defaultIcon : undefined

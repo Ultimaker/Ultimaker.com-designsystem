@@ -2,6 +2,7 @@
     "defaultSize": "regular",
     "defaultIcon": "edit",
     "sizes": [
+        {"title": "small", "modifier": "small"},
         {"title": "regular", "modifier": ""},
         {"title": "large", "modifier": "large"}
     ]

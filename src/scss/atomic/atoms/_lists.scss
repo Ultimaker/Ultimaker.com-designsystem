@@ -43,6 +43,9 @@ ul,
         }
     }
     &__list-item:last-child {
+        &:before {
+            content: " and"
+        }
         &:after {
             content: "."
         }
