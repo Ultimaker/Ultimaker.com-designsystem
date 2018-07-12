@@ -4,7 +4,7 @@
   "description": "Ultimaker.com design system for vue components",
   "license": "UNLICENSED",
   "module": "dist/components.js",
-  "sideEffects": false,
+  "sideEffects": true,
   "files": [
     "src",
     "dist"
@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack.amd.config.js --progress --hide-modules",
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.amd.config.js --progress --hide-modules",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "cross-env NODE_ENV=production build-storybook -s public",
     "storybook": "start-storybook -p 9090 -s public",
     "test": "npm run unit",
     "unit": "cross-env BABEL_ENV=test karma start test/karma.conf.js --single-run",
@@ -62,7 +62,6 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-promise": "3.8.0",
     "eslint-plugin-vue": "^4.5.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "fetch-mock": "^6.4.4",
     "file-loader": "^1.1.11",
     "halfred": "^1.0.0",
@@ -80,6 +79,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "^0.0.32",
     "karma-webpack": "^2.0.13",
+    "mini-css-extract-plugin": "^0.4.1",
     "moment": "^2.22.2",
     "node-sass": "^4.9.0",
     "object-fit-images": "^3.2.3",
@@ -94,7 +94,6 @@
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2",
-    "webpack-node-externals": "^1.7.2",
     "webpack-svgstore-plugin": "^4.0.3",
     "webpack-visualizer-plugin": "^0.1.11",
     "whatwg-fetch": "^2.0.4"

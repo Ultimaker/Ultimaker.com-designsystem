@@ -11,7 +11,7 @@ import {registry} from 'src/js';
 import 'src/scss/storybook.scss';
 import 'components/generic/faux-router-link/faux-router-link';
 import storyRoot from 'src/stories/story.root.js';
-import viewPort from "src/js/utils/viewport";
+import viewPort from "utils/viewport";
 
 setOptions({
     hierarchyRootSeparator: /\|/,
@@ -40,7 +40,7 @@ addDecorator((story) => ({
         viewPort: new viewPort()
     }),
     mounted() {
-        // This is a workaround to handle the creation of the storybook, the viewport doesn't have the proper dimensions 
+        // This is a workaround to handle the creation of the storybook, the viewport doesn't have the proper dimensions
         // when the iframe is just created. But there is no event to connect to to be notified when the viewport is OK.
         Vue.nextTick().then(() => {
             setTimeout(() => {
@@ -53,11 +53,11 @@ addDecorator((story) => ({
 Vue.use(Vuex);
 
 function loadStories() {
-    const globals = require.context('../src/stories/global', true, /\.stories\.js$/),
-        atoms = require.context('../src/stories/atoms', true, /\.stories\.js$/),
-        molecules = require.context('../src/stories/molecules', true, /\.stories\.js$/),
-        organisms = require.context('../src/stories/organisms', true, /\.stories\.js$/),
-        templates = require.context('../src/stories/templates', true, /\.stories\.js$/);
+    const globals = require.context('src/stories/global', true, /\.stories\.js$/),
+        atoms = require.context('src/stories/atoms', true, /\.stories\.js$/),
+        molecules = require.context('src/stories/molecules', true, /\.stories\.js$/),
+        organisms = require.context('src/stories/organisms', true, /\.stories\.js$/),
+        templates = require.context('src/stories/templates', true, /\.stories\.js$/);
 
     require('src/stories/welcome.stories');
     globals.keys().forEach(filename => globals(filename));

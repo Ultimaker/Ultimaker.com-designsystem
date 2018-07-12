@@ -1,9 +1,7 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const SvgStore = require('webpack-svgstore-plugin');
-const nodeExternals = require('webpack-node-externals');
 const Visualizer = require('webpack-visualizer-plugin');
 const production = process.env.NODE_ENV === 'production';
 const base = require('./webpack.config');
@@ -40,18 +38,10 @@ const webpackConfig = {
             {
                 test: /\.(png|jpg|gif|ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
                 loader: 'file-loader?name=[path][name].[ext]'
-            },
-            {
-                test: /\.(sass|scss)$/,
-                loader: ExtractTextPlugin.extract(['css-loader', 'postcss-loader', 'sass-loader'])
             }
         ]
     },
     plugins: (base.plugins || []).concat([
-        new ExtractTextPlugin({
-            filename: 'components.css',
-            allChunks: true
-        }),
         new SvgStore({
             svgoOptions: {
                 plugins: [
