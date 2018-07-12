@@ -10,7 +10,8 @@ describe('components', () => {
             it('should render a reseller card component with a title if "name" is provided', () => {
                 const vm = mount({
                         props: {
-                            name: 'Reseller name'
+                            name: 'Reseller name',
+                            labels: {visitWebsite: 'Visit website'}
                         }
                     }),
                     objAttributes = vm.$el.attributes,
@@ -26,7 +27,8 @@ describe('components', () => {
                 const vm = mount({
                         props: {
                             name: 'Reseller name',
-                            preferred: false
+                            preferred: false,
+                            labels: {visitWebsite: 'Visit website'}
                         }
                     }),
                     badge = vm.$el.querySelector('.reseller-badge');
@@ -39,7 +41,8 @@ describe('components', () => {
                 const vm = mount({
                         props: {
                             name: 'Reseller name',
-                            preferred: true
+                            preferred: true,
+                            labels: {visitWebsite: 'Visit website'}
                         }
                     }),
                     badge = vm.$el.querySelector('.reseller-badge');
@@ -52,7 +55,8 @@ describe('components', () => {
                 const vm = mount({
                         props: {
                             name: 'Reseller name',
-                            href: 'http://link-to-somewhere.com'
+                            href: 'http://link-to-somewhere.com',
+                            labels: {visitWebsite: 'Visit website'}
                         }
                     }),
                     objAttributes = vm.$el.attributes;

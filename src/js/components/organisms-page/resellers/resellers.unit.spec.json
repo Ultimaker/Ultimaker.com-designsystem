@@ -82,5 +82,12 @@
             "preferred": false,
             "href": "#"
         }
-    ]
+    ],
+    "labels": {
+        "showAll": "Show all",
+        "moreInfo": "More info",
+        "visitWebsite": "Visit website",
+        "preferredResellers": "Preferred resellers",
+        "authorizedResellers": "Authorized resellers"
+    }
 }
