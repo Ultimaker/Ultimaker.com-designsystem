@@ -66,10 +66,10 @@ describe('components', () => {
                         vm.$refs.closeCountryPanel = jasmine.createSpyObj('closeCountryPanel', {
                             focus: jasmine.createSpy()
                         });
-                        vm.focus();
+
                         vm.focusClose();
 
-                        return vm.initPromise;
+                        return vm.focus();
                     })
                     .then(() => {
                         expect(vm.$refs.autocomplete.focus).toHaveBeenCalled();

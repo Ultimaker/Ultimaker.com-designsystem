@@ -18,7 +18,9 @@
     "test": "npm run unit",
     "unit": "cross-env BABEL_ENV=test karma start test/karma.conf.js --single-run",
     "unit:chrome": "cross-env BABEL_ENV=test karma start test/karma.conf.js --single-run --chrome",
-    "unit:debug": "cross-env BABEL_ENV=test karma start test/karma.conf.js --debug"
+    "unit:debug": "cross-env BABEL_ENV=test karma start test/karma.conf.js --debug",
+    "lint": "eslint './src/js/**/*.js'",
+    "lint:debug": "eslint './src/js/**/*.js' --debug"
   },
   "repository": "github:Ultimaker/Ultimaker.com-designsystem",
   "dependencies": {

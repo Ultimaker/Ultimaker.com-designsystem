@@ -12,7 +12,7 @@ const getBrowsers = () => {
         return ['ChromeHeadless'];
     }
 
-    return ['bs_chrome_mac'];
+    return ['bs_chrome_win'];
 };
 
 function getKarmaConfig() {
@@ -41,12 +41,12 @@ module.exports = function(config) {
     config.set({
         // logLevel: config.LOG_DEBUG,
         customLaunchers: {
-            'bs_chrome_mac': {
+            'bs_chrome_win': {
                 'base': 'BrowserStack',
                 'browser': 'Chrome',
-                'browser_version': '61',
-                'os': 'OS X',
-                'os_version': 'High Sierra'
+                'browser_version': '67',
+                'os': 'Windows',
+                'os_version': '10'
             }
         },
         browsers: getBrowsers(),
