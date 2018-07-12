@@ -13,7 +13,6 @@ module.exports = {
         jasmine: true,
         amd: true
     },
-    // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
     extends: [
         'eslint:recommended',
         'plugin:vue/essential'
