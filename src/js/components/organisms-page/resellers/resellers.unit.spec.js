@@ -51,22 +51,22 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should render a tooltip if link is focussed', (done) => {
+            it('should render a tooltip if link is focussed', async(done) => {
                 const vm = mount(buildOptions),
-                    infoLink = vm.$el.querySelector('.reseller-section__info-link'),
                     tooltip = vm.$el.querySelector('#tooltip-preferred');
 
                 expect(tooltip).toBeDefined();
                 expect(tooltip.innerText).toContain(buildOptions.props.tooltip);
                 expect(tooltip.style.display).toBe('none');
 
-                vm.showTooltipPreferred = true;
+                vm.showTooltipPreferred();
+                await vm.$nextTick();
+                expect(tooltip.style.display).not.toBe('none');
 
-                vm.$nextTick(() => {
-                    expect(tooltip.style.display).not.toBe('none');
-                    vm.$destroy();
-                    done();
-                });
+                vm.hideTooltipPreferred();
+                expect(vm.visibleTooltipPreferred).toBe(false);
+                done();
+                vm.$destroy();
             });
 
             it('should render a max amount of cards set', () => {
@@ -91,8 +91,8 @@ describe('components', () => {
 
                 resellerSections.forEach(
                     (element) => {
-                        vm.showAllAuthorizedResellers = true;
-                        vm.showAllPreferredResellers = true;
+                        vm.showAllAuthorizedResellers();
+                        vm.showAllPreferredResellers();
 
                         vm.$nextTick(() => {
                             let resellerItems = element.querySelectorAll('.reseller-list__item'),
