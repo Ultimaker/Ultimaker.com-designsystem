@@ -1,9 +1,9 @@
 <section class="story__atom">
-    <strong class="caption-list__headline">
-        {{ data.title }}
-    </strong>
-    <ul class="caption-list">
-        <li class="caption-list__list-item" v-for="item in data.listItems">{{ item.text }}</li>
-    </ul>
+    <!--<strong class="caption-list__headline">-->
+        <!--{{ data.title }}:-->
+    <!--</strong>-->
+    <!--<ul class="caption-list">-->
+        <!--<li class="caption-list__list-item" v-for="item in data.listItems"><a href="">{{ item.text }}</a></li>-->
+    <!--</ul>-->
+    <horizontal-list v-bind="list"></horizontal-list>
 </section>
-    

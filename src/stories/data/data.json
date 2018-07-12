@@ -6,7 +6,7 @@
         "article": "Article text, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p><p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p><p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
         "aside": "Aside text, a pharetra augue. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
         "sub": "Sub text amet ridiculus ornare",
-        "quote": "Inspiration quote Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        "quote": "Quote text ipsum dolor sit amet, consectetur adipisicing elit."
     },
     "title": "Lorem ipsum dolor sit amet",
     "href": "#",
@@ -16,34 +16,31 @@
     "value": "1234",
     "listItems": [
         {
-            "text": "Gumbo beet greens corn soko endive gumbo gourd"
+            "text": "Default list-item"
         },
         {
-            "text": "Parsley shallot courgette tatsoi pea sprouts"
+            "text": "Default list-item"
         },
         {
-            "text": "Turnip greens yarrow ricebean rutabaga endive cauliflower"
-        },
-        {
-            "text": "Corn amaranth salsify bunya nuts nori azuki bean chickweed"
+            "text": "Default list-item"
         }
     ],
     "definitionItems": [
         {
-            "title": "Ligula Consectetur Mollis",
-            "description": "Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+            "title": "Term Consectetur Mollis",
+            "description": "Description sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
         },
         {
-            "title": "Porta Fringilla",
-            "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+            "title": "Another Term Fringilla",
+            "description": "And descriprion commodo cursus magna, vel scelerisque nisl consectetur et."
         },
         {
-            "title": "Elit Inceptos Etiam",
-            "description": "Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+            "title": "Term Inceptos Etiam",
+            "description": "Description mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit."
         },
         {
-            "title": "Etiam Fermentum",
-            "description": "Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur."
+            "title": "And Another Term Etiam Fermentum",
+            "description": "And description mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur."
         }
     ],
     "icons": {
@@ -62,7 +59,7 @@
             "support",
             "print-head",
             "cura",
-            "connect" 
+            "connect"
         ],
         "functionalIcons": [
             "menu",

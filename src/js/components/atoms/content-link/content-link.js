@@ -33,7 +33,7 @@ export default {
                     classes[`link--${ mod }`] = true;
                 });
             }
-            if (this.icon !== '') {
+            if (this.icon !== '' && this.mod.indexOf('small') === -1) {
                 classes[`link--icon`] = true;
             }
 
