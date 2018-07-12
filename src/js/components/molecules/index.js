@@ -10,4 +10,5 @@ export {default as FlyoutSection} from 'molecules/flyout-section';
 export {default as IconButton} from 'molecules/icon-button';
 export {default as Modal} from 'molecules/modal';
 export {default as Pager} from 'molecules/pager';
+export {default as ResellerCard} from 'molecules/reseller-card';
 export {default as Search} from 'molecules/search';

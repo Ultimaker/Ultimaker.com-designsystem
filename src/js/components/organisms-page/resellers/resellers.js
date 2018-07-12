@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('resellers', {
+export default {
     name: 'resellers',
     template: require('./resellers.html'),
     data: () => ({
@@ -20,6 +18,10 @@ export default Vue.component('resellers', {
         resellers: {
             type: Array,
             required: true
+        },
+        labels: {
+            type: Object,
+            required: true
         }
     },
     computed: {
@@ -30,4 +32,4 @@ export default Vue.component('resellers', {
             return this.resellers.filter(reseller => reseller.preferred === false);
         }
     }
-});
+};

@@ -1,6 +1,4 @@
-import Vue from 'vue';
-
-export default Vue.component('reseller-card', {
+export default {
     name: 'reseller-card',
     template: require('./reseller-card.html'),
     props: {
@@ -15,6 +13,10 @@ export default Vue.component('reseller-card', {
         href: {
             type: String,
             required: true
+        },
+        labels: {
+            type: Object,
+            required: true
         }
     }
-});
+};
