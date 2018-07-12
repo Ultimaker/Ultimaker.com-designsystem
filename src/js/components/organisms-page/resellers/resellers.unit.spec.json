@@ -1,3 +1,86 @@
 {
-
+    "title": "Find yourself a reseller",
+    "tooltip": "Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "resellers": [
+        {
+            "name": "Test reseller 1",
+            "preferred": true,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 2",
+            "preferred": true,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 3",
+            "preferred": true,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 4",
+            "preferred": true,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 5",
+            "preferred": true,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 6",
+            "preferred": true,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 7",
+            "preferred": true,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 8",
+            "preferred": true,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 9",
+            "preferred": true,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 10",
+            "preferred": false,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 11",
+            "preferred": false,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 12",
+            "preferred": false,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 13",
+            "preferred": false,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 14",
+            "preferred": false,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 15",
+            "preferred": false,
+            "href": "#"
+        },
+        {
+            "name": "Test reseller 16",
+            "preferred": false,
+            "href": "#"
+        }
+    ]
 }

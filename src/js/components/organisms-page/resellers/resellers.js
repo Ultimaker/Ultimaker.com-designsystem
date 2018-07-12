@@ -3,6 +3,12 @@ import Vue from 'vue';
 export default Vue.component('resellers', {
     name: 'resellers',
     template: require('./resellers.html'),
+    data: () => ({
+        showAllPreferredResellers: false,
+        showAllAuthorizedResellers: false,
+        showTooltipPreferred: false,
+        showMax: 6
+    }),
     props: {
         title: {
             type: String,
@@ -14,22 +20,6 @@ export default Vue.component('resellers', {
         resellers: {
             type: Array,
             required: true
-        },
-        showMax: {
-            type: Number,
-            default: 6
-        },
-        showAllPreferredResellers: {
-            type: Boolean,
-            default: false
-        },
-        showAllAuthorizedResellers: {
-            type: Boolean,
-            default: false
-        },
-        showTooltipPreferred: {
-            type: Boolean,
-            default: false
         }
     },
     computed: {

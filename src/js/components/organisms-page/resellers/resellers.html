@@ -1,14 +1,16 @@
 <article class="resellers">
     <section class="container">
         <h2 class="resellers__title">{{title}}</h2>
-        <section class="reseller-section" v-if="resellers">
+        <section class="reseller-section reseller-section--preferred" v-if="resellers">
             <header class="reseller-section__header">
                 <h3 class="reseller-section__title">Preferred resellers <span class="reseller-section__count">({{resellersPreferred.length}})</span>
-                    <transition name="tooltip">
-                        <tooltip id="tooltip-preferred" block="resellers" v-show="showTooltipPreferred">
-                            {{tooltip}}
-                        </tooltip>
-                    </transition>
+                    <template v-if="tooltip">
+                        <transition name="tooltip">
+                            <tooltip id="tooltip-preferred" block="resellers" v-show="showTooltipPreferred">
+                                {{tooltip}}
+                            </tooltip>
+                        </transition>
+                    </template>
                 </h3>
                 <content-link
                     class="reseller-section__info-link"
@@ -18,7 +20,8 @@
                     @focus.native.prevent="showTooltipPreferred = true"
                     @blur.native.prevent="showTooltipPreferred = false"
                     role="button"
-                    aria-describedby="tooltip-preferred">
+                    aria-describedby="tooltip-preferred"
+                    v-if="tooltip">
                     More info
                 </content-link>
             </header>
@@ -53,7 +56,7 @@
             </ul>
         </section>
 
-        <section class="reseller-section" v-if="resellers">
+        <section class="reseller-section reseller-section--authorized" v-if="resellers">
             <header class="reseller-section__header">
                 <h3 class="reseller-section__title">Authorized resellers <span class="reseller-section__count">({{resellersAuthorized.length}})</span>
                 </h3>
