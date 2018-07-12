@@ -12,15 +12,6 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     //     enforce: 'pre',
     // });
 
-    defaultConfig.module.rules.push({
-        test: /\.(sass|scss)$/,
-        use: [
-            {loader: 'style-loader'},
-            {loader: 'css-loader', options: {sourceMap: true}},
-            {loader: 'sass-loader', options: {sourceMap: true}}
-        ]
-    })
-
     defaultConfig.plugins.push(
         new webpack.DefinePlugin({
             'process.env': {

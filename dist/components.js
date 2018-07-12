@@ -141,8 +141,8 @@ module.exports = isArray;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsNative = __webpack_require__(134),
-    getValue = __webpack_require__(131);
+var baseIsNative = __webpack_require__(136),
+    getValue = __webpack_require__(133);
 
 /**
  * Gets the native function at `key` of `object`.
@@ -170,8 +170,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__4__;
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createFind = __webpack_require__(81),
-    findIndex = __webpack_require__(80);
+var createFind = __webpack_require__(83),
+    findIndex = __webpack_require__(82);
 
 /**
  * Iterates over elements of `collection`, returning the first element
@@ -254,8 +254,8 @@ module.exports = isObjectLike;
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(16),
-    getRawTag = __webpack_require__(171),
-    objectToString = __webpack_require__(170);
+    getRawTag = __webpack_require__(174),
+    objectToString = __webpack_require__(173);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -7813,7 +7813,7 @@ if (inBrowser) {
 
 /* harmony default export */ __webpack_exports__["a"] = (Vue);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18), __webpack_require__(166).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18), __webpack_require__(168).setImmediate))
 
 /***/ }),
 /* 10 */
@@ -7846,7 +7846,7 @@ module.exports = toKey;
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isKeyable = __webpack_require__(122);
+var isKeyable = __webpack_require__(124);
 
 /**
  * Gets the data for `map`.
@@ -7909,11 +7909,11 @@ module.exports = assocIndexOf;
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var listCacheClear = __webpack_require__(144),
-    listCacheDelete = __webpack_require__(143),
-    listCacheGet = __webpack_require__(142),
-    listCacheHas = __webpack_require__(141),
-    listCacheSet = __webpack_require__(140);
+var listCacheClear = __webpack_require__(146),
+    listCacheDelete = __webpack_require__(145),
+    listCacheGet = __webpack_require__(144),
+    listCacheHas = __webpack_require__(143),
+    listCacheSet = __webpack_require__(142);
 
 /**
  * Creates an list cache object.
@@ -7947,8 +7947,8 @@ module.exports = ListCache;
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeKeys = __webpack_require__(158),
-    baseKeys = __webpack_require__(151),
+var arrayLikeKeys = __webpack_require__(160),
+    baseKeys = __webpack_require__(153),
     isArrayLike = __webpack_require__(25);
 
 /**
@@ -8064,7 +8064,7 @@ module.exports = g;
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayFilter = __webpack_require__(42),
-    baseFilter = __webpack_require__(163),
+    baseFilter = __webpack_require__(165),
     baseIteratee = __webpack_require__(24),
     isArray = __webpack_require__(2);
 
@@ -8118,7 +8118,7 @@ module.exports = filter;
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(8),
-    now = __webpack_require__(172),
+    now = __webpack_require__(175),
     toNumber = __webpack_require__(43);
 
 /** Error message constants. */
@@ -8348,11 +8348,11 @@ module.exports = isKey;
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var mapCacheClear = __webpack_require__(130),
-    mapCacheDelete = __webpack_require__(123),
-    mapCacheGet = __webpack_require__(121),
-    mapCacheHas = __webpack_require__(120),
-    mapCacheSet = __webpack_require__(119);
+var mapCacheClear = __webpack_require__(132),
+    mapCacheDelete = __webpack_require__(125),
+    mapCacheGet = __webpack_require__(123),
+    mapCacheHas = __webpack_require__(122),
+    mapCacheSet = __webpack_require__(121);
 
 /**
  * Creates a map cache object to store key-value pairs.
@@ -8399,11 +8399,11 @@ module.exports = Map;
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseMatches = __webpack_require__(146),
-    baseMatchesProperty = __webpack_require__(96),
-    identity = __webpack_require__(85),
+var baseMatches = __webpack_require__(148),
+    baseMatchesProperty = __webpack_require__(98),
+    identity = __webpack_require__(87),
     isArray = __webpack_require__(2),
-    property = __webpack_require__(84);
+    property = __webpack_require__(86);
 
 /**
  * The base implementation of `_.iteratee`.
@@ -8518,8 +8518,8 @@ module.exports = isLength;
 
 var isArray = __webpack_require__(2),
     isKey = __webpack_require__(21),
-    stringToPath = __webpack_require__(94),
-    toString = __webpack_require__(91);
+    stringToPath = __webpack_require__(96),
+    toString = __webpack_require__(93);
 
 /**
  * Casts `value` to a path array if it's not one.
@@ -8620,9 +8620,9 @@ module.exports = isStrictComparable;
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SetCache = __webpack_require__(117),
-    arraySome = __webpack_require__(114),
-    cacheHas = __webpack_require__(113);
+var SetCache = __webpack_require__(119),
+    arraySome = __webpack_require__(116),
+    cacheHas = __webpack_require__(115);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -8709,7 +8709,7 @@ module.exports = equalArrays;
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqualDeep = __webpack_require__(118),
+var baseIsEqualDeep = __webpack_require__(120),
     isObjectLike = __webpack_require__(6);
 
 /**
@@ -8819,11 +8819,11 @@ module.exports = eq;
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(14),
-    stackClear = __webpack_require__(139),
-    stackDelete = __webpack_require__(138),
-    stackGet = __webpack_require__(137),
-    stackHas = __webpack_require__(136),
-    stackSet = __webpack_require__(135);
+    stackClear = __webpack_require__(141),
+    stackDelete = __webpack_require__(140),
+    stackGet = __webpack_require__(139),
+    stackHas = __webpack_require__(138),
+    stackSet = __webpack_require__(137);
 
 /**
  * Creates a stack cache object to store key-value pairs.
@@ -8894,9 +8894,9 @@ module.exports = isFunction;
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsTypedArray = __webpack_require__(154),
-    baseUnary = __webpack_require__(153),
-    nodeUtil = __webpack_require__(152);
+var baseIsTypedArray = __webpack_require__(156),
+    baseUnary = __webpack_require__(155),
+    nodeUtil = __webpack_require__(154);
 
 /* Node.js helper references. */
 var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
@@ -8987,7 +8987,7 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(1),
-    stubFalse = __webpack_require__(155);
+    stubFalse = __webpack_require__(157);
 
 /** Detect free variable `exports`. */
 var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
@@ -9031,7 +9031,7 @@ module.exports = isBuffer;
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsArguments = __webpack_require__(156),
+var baseIsArguments = __webpack_require__(158),
     isObjectLike = __webpack_require__(6);
 
 /** Used for built-in method references. */
@@ -9282,7 +9282,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/animated-arrow/animated-arrow.js
 /* harmony default export */ var animated_arrow = ({
     name: 'animated-arrow',
-    template: __webpack_require__(180)
+    template: __webpack_require__(182)
 });
 // CONCATENATED MODULE: ./src/js/components/atoms/animated-arrow/index.js
 
@@ -9290,7 +9290,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/content-link/content-link.js
 /* harmony default export */ var content_link = ({
     name: 'content-link',
-    template: __webpack_require__(179),
+    template: __webpack_require__(181),
     props: {
         block: {
             type: String,
@@ -9336,7 +9336,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/content-link-list/content-link-list.js
 /* harmony default export */ var content_link_list = ({
     name: 'content-link-list',
-    template: __webpack_require__(178),
+    template: __webpack_require__(180),
     props: {
         block: {
             type: String,
@@ -9356,7 +9356,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/hit-area/hit-area.js
 /* harmony default export */ var hit_area = ({
     name: 'hit-area',
-    template: __webpack_require__(177)
+    template: __webpack_require__(179)
 });
 // CONCATENATED MODULE: ./src/js/components/atoms/hit-area/index.js
 
@@ -9364,7 +9364,7 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/horizontal-list/horizontal-list.js
 /* harmony default export */ var horizontal_list = ({
     name: 'horizontal-list',
-    template: __webpack_require__(176),
+    template: __webpack_require__(178),
     props: {
         styleModifier: {
             type: String
@@ -9382,6 +9382,63 @@ var ComponentRegistry = function () {
 // CONCATENATED MODULE: ./src/js/components/atoms/horizontal-list/index.js
 
 /* harmony default export */ var atoms_horizontal_list = (horizontal_list);
+// CONCATENATED MODULE: ./src/js/utils/browser-capabilities.js
+var browser_capabilities_createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function browser_capabilities_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var instance = null;
+
+var BrowserCapabilities = function () {
+    function BrowserCapabilities() {
+        browser_capabilities_classCallCheck(this, BrowserCapabilities);
+
+        if (instance !== null) {
+            return instance;
+        }
+        instance = this;
+
+        return instance;
+    }
+
+    browser_capabilities_createClass(BrowserCapabilities, null, [{
+        key: 'supportsTouch',
+        get: function get() {
+            return 'ontouchstart' in document.documentElement;
+        }
+    }, {
+        key: 'supportsFontLoadingApi',
+        get: function get() {
+            return 'fonts' in document;
+        }
+    }, {
+        key: 'supportsIntl',
+        get: function get() {
+            return 'Intl' in window;
+        }
+    }, {
+        key: 'supportsObjectFit',
+        get: function get() {
+            var edgeVersion = window.navigator.userAgent.match(/Edge\/(\d{2})\./);
+            var edgePartialSupport = edgeVersion ? parseInt(edgeVersion[1], 10) >= 16 : false;
+
+            if (edgePartialSupport) {
+                return false;
+            }
+
+            return 'objectFit' in document.documentElement.style;
+        }
+    }, {
+        key: 'supportsPictureElement',
+        get: function get() {
+            return 'HTMLPictureElement' in window;
+        }
+    }]);
+
+    return BrowserCapabilities;
+}();
+
+/* harmony default export */ var browser_capabilities = (BrowserCapabilities);
 // CONCATENATED MODULE: ./src/js/components/atoms/icon/icon.js
 
 
@@ -9451,7 +9508,7 @@ var defaultIconUrl = '/static/icons/iconset.svg';
         }
     },
 
-    template: __webpack_require__(175)
+    template: __webpack_require__(177)
 });
 // CONCATENATED MODULE: ./src/js/components/atoms/icon/index.js
 
@@ -9459,7 +9516,7 @@ var defaultIconUrl = '/static/icons/iconset.svg';
 // CONCATENATED MODULE: ./src/js/components/atoms/nav-assist/nav-assist.js
 /* harmony default export */ var nav_assist = ({
     name: 'nav-assist',
-    template: __webpack_require__(174),
+    template: __webpack_require__(176),
     data: function data() {
         return {
             used: false
@@ -9496,63 +9553,6 @@ var defaultIconUrl = '/static/icons/iconset.svg';
 var debounce = __webpack_require__(20);
 var debounce_default = /*#__PURE__*/__webpack_require__.n(debounce);
 
-// CONCATENATED MODULE: ./src/js/utils/browser-capabilities.js
-var browser_capabilities_createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function browser_capabilities_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var instance = null;
-
-var BrowserCapabilities = function () {
-    function BrowserCapabilities() {
-        browser_capabilities_classCallCheck(this, BrowserCapabilities);
-
-        if (instance !== null) {
-            return instance;
-        }
-        instance = this;
-
-        return instance;
-    }
-
-    browser_capabilities_createClass(BrowserCapabilities, null, [{
-        key: 'supportsTouch',
-        get: function get() {
-            return 'ontouchstart' in document.documentElement;
-        }
-    }, {
-        key: 'supportsFontLoadingApi',
-        get: function get() {
-            return 'fonts' in document;
-        }
-    }, {
-        key: 'supportsIntl',
-        get: function get() {
-            return 'Intl' in window;
-        }
-    }, {
-        key: 'supportsObjectFit',
-        get: function get() {
-            var edgeVersion = window.navigator.userAgent.match(/Edge\/(\d{2})\./);
-            var edgePartialSupport = edgeVersion ? parseInt(edgeVersion[1], 10) >= 16 : false;
-
-            if (edgePartialSupport) {
-                return false;
-            }
-
-            return 'objectFit' in document.documentElement.style;
-        }
-    }, {
-        key: 'supportsPictureElement',
-        get: function get() {
-            return 'HTMLPictureElement' in window;
-        }
-    }]);
-
-    return BrowserCapabilities;
-}();
-
-/* harmony default export */ var browser_capabilities = (BrowserCapabilities);
 // CONCATENATED MODULE: ./src/js/constants/defaults.js
 /* harmony default export */ var defaults = ({
     consentLevel: 3,
@@ -9878,7 +9878,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     components: {
         ResponsivePictureSource: responsive_picture_source
     },
-    template: __webpack_require__(173),
+    template: __webpack_require__(172),
     data: function data() {
         return {
             viewportUtil: new viewport(),
@@ -9988,7 +9988,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 /* harmony default export */ var tabbable_definition_list = ({
     name: 'tabbable-definition-list',
-    template: __webpack_require__(169),
+    template: __webpack_require__(171),
     data: function data() {
         return {
             viewport: new viewport(),
@@ -10176,7 +10176,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // CONCATENATED MODULE: ./src/js/components/atoms/tooltip/tooltip.js
 /* harmony default export */ var tooltip = ({
     name: 'tooltip',
-    template: __webpack_require__(168),
+    template: __webpack_require__(170),
     props: {
         block: {
             type: String,
@@ -10238,7 +10238,7 @@ var embedProps = {
 
 /* harmony default export */ var youtube_video = ({
     name: 'youtube-video',
-    template: __webpack_require__(167),
+    template: __webpack_require__(169),
     data: function data() {
         return {
             loadVideo: false
@@ -10312,7 +10312,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 
 /* harmony default export */ var auto_complete = ({
     name: 'auto-complete',
-    template: __webpack_require__(76),
+    template: __webpack_require__(78),
     data: function data() {
         return {
             input: '',
@@ -10593,7 +10593,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 // CONCATENATED MODULE: ./src/js/components/molecules/brand-card/brand-card.js
 /* harmony default export */ var brand_card = ({
     name: 'brand-card',
-    template: __webpack_require__(75),
+    template: __webpack_require__(77),
     props: {
         body: {
             type: String,
@@ -10617,7 +10617,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 // CONCATENATED MODULE: ./src/js/components/molecules/card/card.js
 /* harmony default export */ var card = ({
     name: 'card',
-    template: __webpack_require__(74),
+    template: __webpack_require__(76),
     props: {
         block: {
             type: String,
@@ -10648,7 +10648,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 // CONCATENATED MODULE: ./src/js/components/molecules/color/color.js
 /* harmony default export */ var color = ({
     name: 'color',
-    template: __webpack_require__(73),
+    template: __webpack_require__(75),
     props: {
         background: {
             type: String,
@@ -10698,7 +10698,7 @@ var find_default = /*#__PURE__*/__webpack_require__.n(find);
 // CONCATENATED MODULE: ./src/js/components/molecules/content-toggle/content-toggle.js
 /* harmony default export */ var content_toggle = ({
     name: 'content-toggle',
-    template: __webpack_require__(72),
+    template: __webpack_require__(74),
     props: {
         toggleState: {
             type: Boolean,
@@ -10779,7 +10779,7 @@ var Arithmetic = function () {
 
 /* harmony default export */ var currency = ({
     name: 'currency',
-    template: __webpack_require__(71),
+    template: __webpack_require__(73),
     props: {
         amount: {
             type: Number,
@@ -10806,7 +10806,7 @@ var Arithmetic = function () {
 // CONCATENATED MODULE: ./src/js/components/molecules/faux-vertical-scroll/faux-vertical-scroll.js
 /* harmony default export */ var faux_vertical_scroll = ({
     name: 'faux-scroll',
-    template: __webpack_require__(70),
+    template: __webpack_require__(72),
     data: function data() {
         return {
             drag: {
@@ -10917,7 +10917,7 @@ var Arithmetic = function () {
 // CONCATENATED MODULE: ./src/js/components/molecules/flyout/flyout.js
 /* harmony default export */ var flyout = ({
     name: 'flyout',
-    template: __webpack_require__(69),
+    template: __webpack_require__(71),
     data: function data() {
         return {
             linkIndex: 0,
@@ -11062,7 +11062,7 @@ var Arithmetic = function () {
 // CONCATENATED MODULE: ./src/js/components/molecules/flyout-section/flyout-section.js
 /* harmony default export */ var flyout_section = ({
     name: 'flyout-section',
-    template: __webpack_require__(68),
+    template: __webpack_require__(70),
 
     data: function data() {
         return {
@@ -11137,7 +11137,7 @@ var Arithmetic = function () {
 
 /* harmony default export */ var icon_button = ({
     name: 'icon-button',
-    template: __webpack_require__(67),
+    template: __webpack_require__(69),
     props: {
         buttonClass: {
             type: String
@@ -11168,7 +11168,7 @@ var Arithmetic = function () {
 
 /* harmony default export */ var modal = ({
     name: 'modal',
-    template: __webpack_require__(66),
+    template: __webpack_require__(68),
     data: function data() {
         return {
             iframeLoaded: false
@@ -11239,7 +11239,7 @@ var Arithmetic = function () {
 
 /* harmony default export */ var pager = ({
     name: 'pager',
-    template: __webpack_require__(65),
+    template: __webpack_require__(67),
     data: function data() {
         return {
             indicatorActive: false,
@@ -11318,7 +11318,7 @@ var Arithmetic = function () {
 // CONCATENATED MODULE: ./src/js/components/molecules/reseller-card/reseller-card.js
 /* harmony default export */ var reseller_card = ({
     name: 'reseller-card',
-    template: __webpack_require__(64),
+    template: __webpack_require__(66),
     props: {
         name: {
             type: String,
@@ -11344,7 +11344,7 @@ var Arithmetic = function () {
 // CONCATENATED MODULE: ./src/js/components/molecules/search/search-bar.js
 /* harmony default export */ var search_bar = ({
     name: 'search-bar',
-    template: __webpack_require__(63),
+    template: __webpack_require__(65),
     data: function data() {
         return {
             searchValue: ''
@@ -11409,7 +11409,7 @@ function getImage(image, orientation, device) {
 
 /* harmony default export */ var cms_image = ({
     name: 'cms-image',
-    template: __webpack_require__(62),
+    template: __webpack_require__(64),
     props: {
         image: {
             type: Object,
@@ -11463,7 +11463,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 /* harmony default export */ var country_selector = ({
     name: 'country-selector',
-    template: __webpack_require__(61),
+    template: __webpack_require__(63),
     data: function data() {
         return {
             initialized: false,
@@ -11589,7 +11589,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 
 /* harmony default export */ var sub_nav = ({
     name: 'sub-nav',
-    template: __webpack_require__(60),
+    template: __webpack_require__(62),
     data: function data() {
         return {
             viewport: new viewport()
@@ -11620,7 +11620,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/brands/brands.js
 /* harmony default export */ var brands = ({
     name: 'brands',
-    template: __webpack_require__(59),
+    template: __webpack_require__(61),
     props: {
         title: {
             type: String,
@@ -11641,7 +11641,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/brands-large/brands-large.js
 /* harmony default export */ var brands_large = ({
     name: 'brands-large',
-    template: __webpack_require__(58),
+    template: __webpack_require__(60),
     props: {
         title: {
             type: String,
@@ -11667,7 +11667,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 
 /* harmony default export */ var cases = ({
     name: 'cases',
-    template: __webpack_require__(57),
+    template: __webpack_require__(59),
     data: function data() {
         return {
             viewport: new viewport(),
@@ -11717,7 +11717,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/colors/colors.js
 /* harmony default export */ var colors = ({
     name: 'colors',
-    template: __webpack_require__(56),
+    template: __webpack_require__(58),
     data: function data() {
         return {
             activeColor: null,
@@ -11813,7 +11813,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/ecosystem/ecosystem.js
 /* harmony default export */ var ecosystem = ({
     name: 'ecosystem',
-    template: __webpack_require__(55),
+    template: __webpack_require__(57),
     props: {
         title: {
             type: String,
@@ -11831,7 +11831,7 @@ var sub_nav_extends = Object.assign || function (target) { for (var i = 1; i < a
 // CONCATENATED MODULE: ./src/js/components/organisms-page/examples/examples.js
 /* harmony default export */ var examples = ({
     name: 'examples',
-    template: __webpack_require__(54),
+    template: __webpack_require__(56),
     props: {
         title: {
             type: String,
@@ -11860,7 +11860,7 @@ var defaultAnimationDuration = 1;
 
 /* harmony default export */ var explore = ({
     name: 'explore',
-    template: __webpack_require__(53),
+    template: __webpack_require__(55),
     data: function data() {
         return {
             activeSlide: 0
@@ -11920,7 +11920,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/general-content/general-content.js
 /* harmony default export */ var general_content = ({
     name: 'general-content',
-    template: __webpack_require__(52),
+    template: __webpack_require__(54),
     props: {
         title: {
             type: String,
@@ -11951,7 +11951,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/hero-product/hero-product.js
 /* harmony default export */ var hero_product = ({
     name: 'hero-product',
-    template: __webpack_require__(51),
+    template: __webpack_require__(53),
     props: {
         title: {
             type: String,
@@ -11989,7 +11989,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/hero-products-application/hero-products-application.js
 /* harmony default export */ var hero_products_application = ({
     name: 'hero-products-application',
-    template: __webpack_require__(50),
+    template: __webpack_require__(52),
     props: {
         title: {
             required: true,
@@ -12035,7 +12035,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/hero-text/hero-text.js
 /* harmony default export */ var hero_text = ({
     name: 'hero-text',
-    template: __webpack_require__(49),
+    template: __webpack_require__(51),
     props: {
         title: {
             type: String,
@@ -12053,12 +12053,12 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/resellers/resellers.js
 /* harmony default export */ var resellers = ({
     name: 'resellers',
-    template: __webpack_require__(48),
+    template: __webpack_require__(50),
     data: function data() {
         return {
-            showAllPreferredResellers: false,
-            showAllAuthorizedResellers: false,
-            showTooltipPreferred: false,
+            visibleAllPreferredResellers: false,
+            visibleAllAuthorizedResellers: false,
+            visibleTooltipPreferred: false,
             showMax: 6
         };
     },
@@ -12077,6 +12077,20 @@ var defaultAnimationDuration = 1;
         labels: {
             type: Object,
             required: true
+        }
+    },
+    methods: {
+        showTooltipPreferred: function showTooltipPreferred() {
+            this.visibleTooltipPreferred = true;
+        },
+        hideTooltipPreferred: function hideTooltipPreferred() {
+            this.visibleTooltipPreferred = false;
+        },
+        showAllPreferredResellers: function showAllPreferredResellers() {
+            this.visibleAllPreferredResellers = true;
+        },
+        showAllAuthorizedResellers: function showAllAuthorizedResellers() {
+            this.visibleAllAuthorizedResellers = true;
         }
     },
     computed: {
@@ -12101,7 +12115,7 @@ var defaultAnimationDuration = 1;
 
 /* harmony default export */ var slider_reveal = ({
     name: 'slider-reveal',
-    template: __webpack_require__(47),
+    template: __webpack_require__(49),
     props: {
         styleModifiers: {
             type: Array,
@@ -12220,7 +12234,7 @@ var defaultAnimationDuration = 1;
 // CONCATENATED MODULE: ./src/js/components/organisms-page/ubr/ubr.js
 /* harmony default export */ var ubr = ({
     name: 'ubr',
-    template: __webpack_require__(46),
+    template: __webpack_require__(48),
     props: {
         title: {
             type: String,
@@ -12267,6 +12281,9 @@ var components_extends = Object.assign || function (target) { for (var i = 1; i 
 
 
 /* harmony default export */ var components = (components_extends({}, atoms_namespaceObject, molecules_namespaceObject, organisms_namespaceObject, organisms_page_namespaceObject));
+// EXTERNAL MODULE: ./src/scss/ultimaker.scss
+var ultimaker = __webpack_require__(47);
+
 // CONCATENATED MODULE: ./src/js/utils/text-utils.js
 var text_utils_createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -12320,193 +12337,200 @@ Object.keys(components).forEach(function (c) {
 
 
 /***/ }),
-/* 46 */
-/***/ (function(module, exports) {
-
-module.exports = "<article class=\"ubr\">\n    <section class=\"container\">\n        <h2>{{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"ubr__description\">\n                    <p>{{ description }}</p>\n                    <ul class=\"list ubr__list\">\n                        <li class=\"list__item\" v-for=\"reason of reasons\">{{ reason }}</li>\n                    </ul>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--xs-6\">\n                <template v-if=\"image && image.length\">\n                    <div class=\"ubr__image \">\n                        <cms-image class=\"img--responsive\" :image=\"image[0]\" :orientation=\"'landscape'\"></cms-image>\n                    </div>\n                </template>\n            </div>\n        </div>\n    </section>\n</article>\n";
-
-/***/ }),
+/* 46 */,
 /* 47 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<article class=\"slider-reveal\" v-bind:class=\"styleModifiers\">\n    <section class=\"container slider-reveal__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <h2 class=\"slider-reveal__title\"> {{ title }}</h2>\n                <p v-if=\"!isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"!isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <div ref=\"image-wrapper\" class=\"slider-reveal__image-wrapper\">\n                    <div class=\"slider-reveal__image-aspect\">\n                        <div class=\"slider-reveal__mask\"\n                            ref=\"image-mask\"\n                            v-for=\"image in imageSlider.images\"\n                        >\n                            <responsive-picture v-bind=\"image\" img-class=\"slider-reveal__image\"></responsive-picture>\n                        </div>\n                    </div>\n                </div>\n                <p v-if=\"isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n        </div>\n    </section>\n</article>";
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 /* 48 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"resellers\">\n    <section class=\"container\">\n        <h2 class=\"resellers__title\">{{title}}</h2>\n        <section class=\"reseller-section reseller-section--preferred\" v-if=\"resellers\">\n            <header class=\"reseller-section__header\">\n                <h3 class=\"reseller-section__title\">{{ labels.preferredResellers }} <span class=\"reseller-section__count\">({{resellersPreferred.length}})</span>\n                    <template v-if=\"tooltip\">\n                        <transition name=\"tooltip\">\n                            <tooltip id=\"tooltip-preferred\" block=\"resellers\" v-show=\"showTooltipPreferred\">\n                                {{tooltip}}\n                            </tooltip>\n                        </transition>\n                    </template>\n                </h3>\n                <content-link\n                    class=\"reseller-section__info-link\"\n                    :icon=\"'info'\"\n                    mod=\"reversed\"\n                    @click.native.prevent\n                    @focus.native.prevent=\"showTooltipPreferred = true\"\n                    @blur.native.prevent=\"showTooltipPreferred = false\"\n                    role=\"button\"\n                    aria-describedby=\"tooltip-preferred\"\n                    v-if=\"tooltip\">\n                    {{ labels.moreInfo }}\n                </content-link>\n            </header>\n\n            <ul class=\"reseller-list\" v-if=\"resellersPreferred.length > 0\">\n                <div class=\"flexgrid flexgrid--gutter flexgrid--mobile-xl-row\">\n                    <template v-for=\"(reseller, index) in resellersPreferred\">\n                        <template v-if=\"index < showMax\">\n                            <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\">\n                                <li class=\"reseller-list__item\">\n                                    <reseller-card v-bind=\"reseller\" :labels=\"labels\"></reseller-card>\n                                </li>\n                            </div>\n                        </template>\n                        <template v-if=\"index >= showMax && showAllPreferredResellers\">\n                            <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\">\n                                <li class=\"reseller-list__item\">\n                                    <reseller-card v-bind=\"reseller\" :labels=\"labels\"></reseller-card>\n                                </li>\n                            </div>\n                        </template>\n                    </template>\n\n                    <template v-if=\"resellersPreferred.length > showMax && !showAllPreferredResellers\">\n                        <div class=\"flexgrid__cell flexgrid__cell--reseller-list__button--center\">\n                            <button class=\"button--secondary reseller-list__button\"\n                                    @click=\"showAllPreferredResellers = true\">{{ labels.showAll }}\n                            </button>\n                        </div>\n                    </template>\n                </div>\n            </ul>\n        </section>\n\n        <section class=\"reseller-section reseller-section--authorized\" v-if=\"resellers\">\n            <header class=\"reseller-section__header\">\n                <h3 class=\"reseller-section__title\">{{ labels.authorizedResellers }} <span class=\"reseller-section__count\">({{resellersAuthorized.length}})</span>\n                </h3>\n            </header>\n            <ul class=\"reseller-list\" v-if=\"resellersAuthorized.length > 0\">\n                <div class=\"flexgrid flexgrid--gutter flexgrid--mobile-xl-row\">\n                    <template v-for=\"(reseller, index) in resellersAuthorized\">\n                        <template v-if=\"index < showMax\">\n                            <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\">\n                                <li class=\"reseller-list__item\">\n                                    <reseller-card v-bind=\"reseller\" :labels=\"labels\"></reseller-card>\n                                </li>\n                            </div>\n                        </template>\n                        <template v-if=\"index >= showMax && showAllAuthorizedResellers\">\n                            <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\">\n                                <li class=\"reseller-list__item\">\n                                    <reseller-card v-bind=\"reseller\" :labels=\"labels\"></reseller-card>\n                                </li>\n                            </div>\n                        </template>\n                    </template>\n                    <template v-if=\"resellersAuthorized.length > showMax && !showAllAuthorizedResellers\">\n                        <div class=\"flexgrid__cell flexgrid__cell--reseller-list__button--center\">\n                            <button class=\"button--secondary reseller-list__button\"\n                                    @click=\"showAllAuthorizedResellers = true\">{{ labels.showAll }}\n                            </button>\n                        </div>\n                    </template>\n                </div>\n            </ul>\n        </section>\n    </section>\n</article>\n";
+module.exports = "<article class=\"ubr\">\n    <section class=\"container\">\n        <h2>{{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"ubr__description\">\n                    <p>{{ description }}</p>\n                    <ul class=\"list ubr__list\">\n                        <li class=\"list__item\" v-for=\"reason of reasons\">{{ reason }}</li>\n                    </ul>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--xs-6\">\n                <template v-if=\"image && image.length\">\n                    <div class=\"ubr__image \">\n                        <cms-image class=\"img--responsive\" :image=\"image[0]\" :orientation=\"'landscape'\"></cms-image>\n                    </div>\n                </template>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 49 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"hero hero--text\" v-if=\"this.contents && contents.length\" >\n    <div class=\"container\">\n        <h1 v-if=\"title && title.length\">{{ title }}</h1>\n        <div class=\"hero__content content--rich\" v-html=\"contents\" />\n    </div>\n</article>\n\n";
+module.exports = "<article class=\"slider-reveal\" v-bind:class=\"styleModifiers\">\n    <section class=\"container slider-reveal__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <h2 class=\"slider-reveal__title\"> {{ title }}</h2>\n                <p v-if=\"!isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"!isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <div ref=\"image-wrapper\" class=\"slider-reveal__image-wrapper\">\n                    <div class=\"slider-reveal__image-aspect\">\n                        <div class=\"slider-reveal__mask\"\n                            ref=\"image-mask\"\n                            v-for=\"image in imageSlider.images\"\n                        >\n                            <responsive-picture v-bind=\"image\" img-class=\"slider-reveal__image\"></responsive-picture>\n                        </div>\n                    </div>\n                </div>\n                <p v-if=\"isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n        </div>\n    </section>\n</article>";
 
 /***/ }),
 /* 50 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"hero hero--products-application\">\n    <div class=\"hero__container--top\">\n            <responsive-picture v-bind=\"heroImage\" imgClass=\"hero__image--full\"></responsive-picture>\n            <div class=\"hero__image-overlay\"></div>\n        <div class=\"container\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__headline\">\n                        <h1>{{ title }}</h1>\n                    </div>\n                </div>\n\n                <div class=\"flexgrid__cell\" style=\"position:relative;\">\n                    <p class=\"hero__subtitle\">{{ subtitle }}</p>\n                    <responsive-picture v-bind=\"productImage\" imgClass=\"hero__image--product\"></responsive-picture>\n                </div>\n\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__usp-container\">\n                        <div class=\"hero__usp usp--icon\" v-for=\"icon in uspIcons\">\n                            <icon :icon-name=\"icon.iconName\" class=\"usp__icon\"></icon>\n                            <small class=\"usp__label\">{{ icon.text }}</small>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!-- {{> molecules-price-table}} -->\n                    <!-- {{> molecules-price-table-tabs}} -->\n                    <!-- {{> atoms-anchor-button:button--primary|hero__button}} -->\n                    <p>TODO: Pricetable</p>\n                    <router-link :to=\"ctaLink.href\" class=\"button button--primary\">{{  ctaLink.text }}</router-link>\n                    <ul class=\"link-list link-list--icon hero__link-list\" v-if=\"links && links.length\">\n                        <li class=\"link-list__item\" v-for=\"link in links\">\n                            <content-link :href=\"link.href\" :icon=\"link.icon\">{{ link.text }}</content-link>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>";
+module.exports = "<article class=\"resellers\">\n    <section class=\"container\">\n        <h2 class=\"resellers__title\">{{title}}</h2>\n        <section class=\"reseller-section reseller-section--preferred\" v-if=\"resellers\">\n            <header class=\"reseller-section__header\">\n                <h3 class=\"reseller-section__title\">{{ labels.preferredResellers }} <span class=\"reseller-section__count\">({{resellersPreferred.length}})</span>\n                    <template v-if=\"tooltip\">\n                        <transition name=\"tooltip\">\n                            <tooltip id=\"tooltip-preferred\" block=\"resellers\" v-show=\"visibleTooltipPreferred\">\n                                {{tooltip}}\n                            </tooltip>\n                        </transition>\n                    </template>\n                </h3>\n                <content-link\n                    class=\"reseller-section__info-link\"\n                    :icon=\"'info'\"\n                    mod=\"reversed\"\n                    @click.native.prevent\n                    @focus.native.prevent=\"showTooltipPreferred\"\n                    @blur.native.prevent=\"hideTooltipPreferred\"\n                    role=\"button\"\n                    aria-describedby=\"tooltip-preferred\"\n                    v-if=\"tooltip\">\n                    {{ labels.moreInfo }}\n                </content-link>\n            </header>\n\n            <ul class=\"reseller-list\" v-if=\"resellersPreferred.length > 0\">\n                <div class=\"flexgrid flexgrid--gutter flexgrid--mobile-xl-row\">\n                    <template v-for=\"(reseller, index) in resellersPreferred\">\n                        <template v-if=\"index < showMax\">\n                            <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\">\n                                <li class=\"reseller-list__item\">\n                                    <reseller-card v-bind=\"reseller\" :labels=\"labels\"></reseller-card>\n                                </li>\n                            </div>\n                        </template>\n                        <template v-if=\"index >= showMax && visibleAllPreferredResellers\">\n                            <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\">\n                                <li class=\"reseller-list__item\">\n                                    <reseller-card v-bind=\"reseller\" :labels=\"labels\"></reseller-card>\n                                </li>\n                            </div>\n                        </template>\n                    </template>\n\n                    <template v-if=\"resellersPreferred.length > showMax && !visibleAllPreferredResellers\">\n                        <div class=\"flexgrid__cell flexgrid__cell--reseller-list__button--center\">\n                            <button class=\"button--secondary reseller-list__button\"\n                                    @click=\"showAllPreferredResellers\">{{ labels.showAll }}\n                            </button>\n                        </div>\n                    </template>\n                </div>\n            </ul>\n        </section>\n\n        <section class=\"reseller-section reseller-section--authorized\" v-if=\"resellers\">\n            <header class=\"reseller-section__header\">\n                <h3 class=\"reseller-section__title\">{{ labels.authorizedResellers }} <span class=\"reseller-section__count\">({{resellersAuthorized.length}})</span>\n                </h3>\n            </header>\n            <ul class=\"reseller-list\" v-if=\"resellersAuthorized.length > 0\">\n                <div class=\"flexgrid flexgrid--gutter flexgrid--mobile-xl-row\">\n                    <template v-for=\"(reseller, index) in resellersAuthorized\">\n                        <template v-if=\"index < showMax\">\n                            <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\">\n                                <li class=\"reseller-list__item\">\n                                    <reseller-card v-bind=\"reseller\" :labels=\"labels\"></reseller-card>\n                                </li>\n                            </div>\n                        </template>\n                        <template v-if=\"index >= showMax && visibleAllAuthorizedResellers\">\n                            <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\">\n                                <li class=\"reseller-list__item\">\n                                    <reseller-card v-bind=\"reseller\" :labels=\"labels\"></reseller-card>\n                                </li>\n                            </div>\n                        </template>\n                    </template>\n                    <template v-if=\"resellersAuthorized.length > showMax && !visibleAllAuthorizedResellers\">\n                        <div class=\"flexgrid__cell flexgrid__cell--reseller-list__button--center\">\n                            <button class=\"button--secondary reseller-list__button\"\n                                    @click=\"showAllAuthorizedResellers\">{{ labels.showAll }}\n                            </button>\n                        </div>\n                    </template>\n                </div>\n            </ul>\n        </section>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 51 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"hero hero--products\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <!--Price table-->\n                    <div class=\"price-table hero__price-table\">\n                        <ul class=\"price-table__list\" role=\"tablist\">\n                            <li class=\"price-table__item\" v-for=\"material in materials\" role=\"tab\">\n                                <icon icon-name=\"material\" class=\"price-table__icon\"></icon>\n                                <span class=\"price-table__info\">\n                                    <small class=\"price-table__tagline\">\n                                        {{ material['short_title'] }},\n                                        {{ material.weight.value }}{{ material.weight.unit }}\n                                        from\n                                    </small>\n                                    <currency :currency-type=\"material.price.currency\" :amount=\"material.price.value\" :decimals=\"0\"></currency>\n                                </span>\n                            </li>\n                        </ul>\n                        <small class=\"price-table__disclaimer\">{{ labels.excludingVat }}</small>\n                    </div>\n                    <!--End price table-->\n\n                    <!--Button-->\n                    <a href=\"\" class=\"button button--primary\" v-if=\"materials && materials.length\">{{ labels.buyCta }}</a>\n                    <!--End button-->\n\n                    <!--Link list icons-->\n                    <ul class=\"link-list link-list--icon hero__link-list\">\n                        <template v-if=\"documents\">\n                            <li class=\"link-list__item\" v-for=\"link in this.link\">\n                                <content-link :href=\"link.uri\" icon=\"info\">{{ link.title }}</content-link>\n                            </li>\n                        </template>\n                        <template v-if=\"this.documents\">\n                            <li class=\"link-list__item\" v-for=\"document in documents\" v-if=\"document.links\">\n                                <content-link :href=\"document.links.self.href\" icon=\"download\">{{ labels.download}} {{ document.title }}</content-link>\n                            </li>\n                        </template>\n                    </ul>\n                    <!--End link list-->\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--product\">\n                    <template v-if=\"this.image && this.image.length\">\n                        <cms-image :image=\"image[0]\" :orientation=\"'square'\"></cms-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n\n        </div>\n    </section>\n</article>\n";
+module.exports = "<article class=\"hero hero--text\" v-if=\"this.contents && contents.length\" >\n    <div class=\"container\">\n        <h1 v-if=\"title && title.length\">{{ title }}</h1>\n        <div class=\"hero__content content--rich\" v-html=\"contents\" />\n    </div>\n</article>\n\n";
 
 /***/ }),
 /* 52 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"general-content\">\n    <section class=\"container general-content__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell\">\n                <h2 class=\"general-content__title\"> {{ title }}</h2>\n                <p class=\"general-content__body\" v-for=\"p in text\">{{ p }}</p>\n                <content-link  v-if=\"contentLink\" :block=\"'general-content'\" :href=\"contentLink.href\">{{ contentLink.text }}</content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell\">\n                <div class=\"general-content__image-wrapper\">\n                    <responsive-picture v-if=\"image\" v-bind=\"image\"></responsive-picture>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>";
+module.exports = "<article class=\"hero hero--products-application\">\n    <div class=\"hero__container--top\">\n            <responsive-picture v-bind=\"heroImage\" imgClass=\"hero__image--full\"></responsive-picture>\n            <div class=\"hero__image-overlay\"></div>\n        <div class=\"container\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__headline\">\n                        <h1>{{ title }}</h1>\n                    </div>\n                </div>\n\n                <div class=\"flexgrid__cell\" style=\"position:relative;\">\n                    <p class=\"hero__subtitle\">{{ subtitle }}</p>\n                    <responsive-picture v-bind=\"productImage\" imgClass=\"hero__image--product\"></responsive-picture>\n                </div>\n\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__usp-container\">\n                        <div class=\"hero__usp usp--icon\" v-for=\"icon in uspIcons\">\n                            <icon :icon-name=\"icon.iconName\" class=\"usp__icon\"></icon>\n                            <small class=\"usp__label\">{{ icon.text }}</small>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!-- {{> molecules-price-table}} -->\n                    <!-- {{> molecules-price-table-tabs}} -->\n                    <!-- {{> atoms-anchor-button:button--primary|hero__button}} -->\n                    <p>TODO: Pricetable</p>\n                    <router-link :to=\"ctaLink.href\" class=\"button button--primary\">{{  ctaLink.text }}</router-link>\n                    <ul class=\"link-list link-list--icon hero__link-list\" v-if=\"links && links.length\">\n                        <li class=\"link-list__item\" v-for=\"link in links\">\n                            <content-link :href=\"link.href\" :icon=\"link.icon\">{{ link.text }}</content-link>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>";
 
 /***/ }),
 /* 53 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"explore\">\n    <section class=\"container explore__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <h2 class=\"explore__title\">{{ title }}</h2>\n            </div>\n        </div>\n        <div class=\"explore__image-placeholder\">\n            <template v-for=\"(item, index) in items\">\n                <transition @enter=\"imageEnter\" @leave=\"imageLeave\">\n                    <picture ref=\"image\" v-show=\"index === activeSlide\">\n                        <source media=\"(min-width: 569px)\" :srcset=\"item.image.mobileXlWidth.url + ', ' + item.image.mobileXlWidth.retina.url + ' 2x'\">\n                        <img class=\"img--responsive explore__image img--contain\" :src=\"item.image.mobileWidth.url\" :alt=\"item.image.alt\">\n                    </picture>\n                </transition>\n            </template>\n            <pager name=\"explore-pager\" class=\"explore__pager\" :pages=\"items.length\"\n                   :active-index=\"activeSlide\" @index-changed=\"indexChanged\"></pager>\n        </div>\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"explore__description\">\n                    <tabbable-definition-list\n                        :items=\"items\"\n                        :active-index=\"activeSlide\"\n                        @index-changed=\"indexChanged\"\n                    ></tabbable-definition-list>\n                </div>\n                <div class=\"explore__navigation\">\n                    <icon-button class=\"explore__nav\"\n                                 v-if=\"buttons && buttons.previous\"\n                                 :icon-name=\"buttons.previous.iconName\"\n                                 @click=\"navClicked('previous')\">\n                        <span class=\"icon-button__label\">{{ buttons.previous.label }}</span>\n                    </icon-button>\n                    <icon-button class=\"explore__nav icon-button--reversed\"\n                                 v-if=\"buttons && buttons.next\"\n                                 :icon-name=\"buttons.next.iconName\"\n                                 @click=\"navClicked('next')\">\n                        <span class=\"icon-button__label\">{{ buttons.next.label }}</span>\n                    </icon-button>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
+module.exports = "<article class=\"hero hero--products\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <!--Price table-->\n                    <div class=\"price-table hero__price-table\">\n                        <ul class=\"price-table__list\" role=\"tablist\">\n                            <li class=\"price-table__item\" v-for=\"material in materials\" role=\"tab\">\n                                <icon icon-name=\"material\" class=\"price-table__icon\"></icon>\n                                <span class=\"price-table__info\">\n                                    <small class=\"price-table__tagline\">\n                                        {{ material['short_title'] }},\n                                        {{ material.weight.value }}{{ material.weight.unit }}\n                                        from\n                                    </small>\n                                    <currency :currency-type=\"material.price.currency\" :amount=\"material.price.value\" :decimals=\"0\"></currency>\n                                </span>\n                            </li>\n                        </ul>\n                        <small class=\"price-table__disclaimer\">{{ labels.excludingVat }}</small>\n                    </div>\n                    <!--End price table-->\n\n                    <!--Button-->\n                    <a href=\"\" class=\"button button--primary\" v-if=\"materials && materials.length\">{{ labels.buyCta }}</a>\n                    <!--End button-->\n\n                    <!--Link list icons-->\n                    <ul class=\"link-list link-list--icon hero__link-list\">\n                        <template v-if=\"documents\">\n                            <li class=\"link-list__item\" v-for=\"link in this.link\">\n                                <content-link :href=\"link.uri\" icon=\"info\">{{ link.title }}</content-link>\n                            </li>\n                        </template>\n                        <template v-if=\"this.documents\">\n                            <li class=\"link-list__item\" v-for=\"document in documents\" v-if=\"document.links\">\n                                <content-link :href=\"document.links.self.href\" icon=\"download\">{{ labels.download}} {{ document.title }}</content-link>\n                            </li>\n                        </template>\n                    </ul>\n                    <!--End link list-->\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--product\">\n                    <template v-if=\"this.image && this.image.length\">\n                        <cms-image :image=\"image[0]\" :orientation=\"'square'\"></cms-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 54 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"examples\">\n    <div class=\"container\">\n        <header>\n            <h2 class=\"examples__headline\">{{ title }}</h2>\n        </header>\n        <horizontal-list class=\"examples__caption\" v-bind=\"horizontalList\" v-if=\"horizontalList\"></horizontal-list>\n        <div class=\"cards\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\" v-for=\"card in this.cards\">\n                    <card :block=\"'examples'\" :card=\"card\"></card>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n";
+module.exports = "<article class=\"general-content\">\n    <section class=\"container general-content__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell\">\n                <h2 class=\"general-content__title\"> {{ title }}</h2>\n                <p class=\"general-content__body\" v-for=\"p in text\">{{ p }}</p>\n                <content-link  v-if=\"contentLink\" :block=\"'general-content'\" :href=\"contentLink.href\">{{ contentLink.text }}</content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell\">\n                <div class=\"general-content__image-wrapper\">\n                    <responsive-picture v-if=\"image\" v-bind=\"image\"></responsive-picture>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>";
 
 /***/ }),
 /* 55 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"ecosystem\">\n    <section class=\"container\">\n      <h2 class=\"ecosystem__title\" v-if=\"title\">{{ title }}</h2>\n      <div class=\"ecosystem__items\">\n          <card v-for=\"(item, index) in items\" :key=\"index\" :card=\"item\" :block=\"'ecosystem'\"></card>\n      </div>\n    </section>\n</article>";
+module.exports = "<article class=\"explore\">\n    <section class=\"container explore__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <h2 class=\"explore__title\">{{ title }}</h2>\n            </div>\n        </div>\n        <div class=\"explore__image-placeholder\">\n            <template v-for=\"(item, index) in items\">\n                <transition @enter=\"imageEnter\" @leave=\"imageLeave\">\n                    <picture ref=\"image\" v-show=\"index === activeSlide\">\n                        <source media=\"(min-width: 569px)\" :srcset=\"item.image.mobileXlWidth.url + ', ' + item.image.mobileXlWidth.retina.url + ' 2x'\">\n                        <img class=\"img--responsive explore__image img--contain\" :src=\"item.image.mobileWidth.url\" :alt=\"item.image.alt\">\n                    </picture>\n                </transition>\n            </template>\n            <pager name=\"explore-pager\" class=\"explore__pager\" :pages=\"items.length\"\n                   :active-index=\"activeSlide\" @index-changed=\"indexChanged\"></pager>\n        </div>\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"explore__description\">\n                    <tabbable-definition-list\n                        :items=\"items\"\n                        :active-index=\"activeSlide\"\n                        @index-changed=\"indexChanged\"\n                    ></tabbable-definition-list>\n                </div>\n                <div class=\"explore__navigation\">\n                    <icon-button class=\"explore__nav\"\n                                 v-if=\"buttons && buttons.previous\"\n                                 :icon-name=\"buttons.previous.iconName\"\n                                 @click=\"navClicked('previous')\">\n                        <span class=\"icon-button__label\">{{ buttons.previous.label }}</span>\n                    </icon-button>\n                    <icon-button class=\"explore__nav icon-button--reversed\"\n                                 v-if=\"buttons && buttons.next\"\n                                 :icon-name=\"buttons.next.iconName\"\n                                 @click=\"navClicked('next')\">\n                        <span class=\"icon-button__label\">{{ buttons.next.label }}</span>\n                    </icon-button>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"colors\" v-if=\"shouldRender\">\n    <div class=\"container\">\n        <header>\n            <h2>{{ title }}</h2>\n        </header>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--sm-4\">\n                <div class=\"colors__swatches\">\n                    <ul class=\"list colors__list\" v-if=\"colors\">\n                        <li class=\"list__item colors__list-item\" :class=\"{'color--selected': color === activeColor }\"\n                            v-for=\"color in colors\">\n                            <hit-area @mouseover.native=\"checkTooltipPos\" @focus.native=\"checkTooltipPos\"\n                                      @click.native=\"setSelected(color)\" @keyup.enter.native=\"setSelected(color)\">\n                                <tooltip block=\"colors\">\n                                    <dl class=\"list tooltip__list\">\n                                        <dt class=\"list__item tooltip__list-item tooltip__label\">Material:</dt>\n                                        <dd class=\"list__item tooltip__list-item\">{{ color.title }}</dd>\n                                        <template v-if=\"!color.is_transparent\">\n                                            <dt class=\"list__item tooltip__list-item tooltip__label\">Color:</dt>\n                                            <dd class=\"list__item tooltip__list-item\">{{ color. system_code }}</dd>\n                                        </template>\n                                        <dt class=\"list__item tooltip__list-item tooltip__label\">Weight:</dt>\n                                        <dd class=\"list__item tooltip__list-item\"><span class=\"hardcoded\">750 g</span>\n                                        </dd>\n                                    </dl>\n                                </tooltip>\n                                <color v-if=\"color.is_transparent\"></color>\n                                <color :background=\"color.rgb_hex_code\" v-else></color>\n                            </hit-area>\n                        </li>\n                    </ul>\n                    <content-link mod=\"large\"><span class=\"hardcoded\">Where to buy</span></content-link>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--sm-8 flexgrid__cell--xs-6\">\n                <div class=\"colors__image\" ref=\"image\" :class=\"imageClass\">\n                    <cms-image :image=\"image\" orientation=\"landscape\"></cms-image>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n\n";
+module.exports = "<article class=\"examples\">\n    <div class=\"container\">\n        <header>\n            <h2 class=\"examples__headline\">{{ title }}</h2>\n        </header>\n        <horizontal-list class=\"examples__caption\" v-bind=\"horizontalList\" v-if=\"horizontalList\"></horizontal-list>\n        <div class=\"cards\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\" v-for=\"card in this.cards\">\n                    <card :block=\"'examples'\" :card=\"card\"></card>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n";
 
 /***/ }),
 /* 57 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"case\">\n    <section class=\"container case__container\">\n        <figure class=\"case__media\" v-show=\"this.isMobileXl\">\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <h2 class=\"case__title\">{{ title }}</h2>\n            </figcaption>\n\n            <div class=\"case__media-placeholder\">\n                <figcaption>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <p class=\"case__paragraph case__paragraph--last\">{{ description }}</p>\n            </figcaption>\n        </figure>\n\n        <figure class=\"case__media\" v-show=\"!this.isMobileXl\">\n            <div class=\"case__media-placeholder\">\n                <figcaption class=\"flex-grid flexgrid__cell--xs-6 case__flex-grid--center\">\n                    <h2 class=\"case__title\">{{ title }}</h2>\n                    <p class=\"case__paragraph\">{{ description }}</p>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n        </figure>\n    </section>\n    <modal class=\"modal--video\" v-if=\"showVideo\" @close=\"toggleVideo\">\n        <youtube-video :video-id=\"videoId\"></youtube-video>\n    </modal>\n</article>\n";
+module.exports = "<article class=\"ecosystem\">\n    <section class=\"container\">\n      <h2 class=\"ecosystem__title\" v-if=\"title\">{{ title }}</h2>\n      <div class=\"ecosystem__items\">\n          <card v-for=\"(item, index) in items\" :key=\"index\" :card=\"item\" :block=\"'ecosystem'\"></card>\n      </div>\n    </section>\n</article>";
 
 /***/ }),
 /* 58 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"brands brands--large\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\">{{ title }}</h2>\n        <p class=\"brands__body\" v-if=\"text\">{{ text }}</p>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :href=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>";
+module.exports = "<article class=\"colors\" v-if=\"shouldRender\">\n    <div class=\"container\">\n        <header>\n            <h2>{{ title }}</h2>\n        </header>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--sm-4\">\n                <div class=\"colors__swatches\">\n                    <ul class=\"list colors__list\" v-if=\"colors\">\n                        <li class=\"list__item colors__list-item\" :class=\"{'color--selected': color === activeColor }\"\n                            v-for=\"color in colors\">\n                            <hit-area @mouseover.native=\"checkTooltipPos\" @focus.native=\"checkTooltipPos\"\n                                      @click.native=\"setSelected(color)\" @keyup.enter.native=\"setSelected(color)\">\n                                <tooltip block=\"colors\">\n                                    <dl class=\"list tooltip__list\">\n                                        <dt class=\"list__item tooltip__list-item tooltip__label\">Material:</dt>\n                                        <dd class=\"list__item tooltip__list-item\">{{ color.title }}</dd>\n                                        <template v-if=\"!color.is_transparent\">\n                                            <dt class=\"list__item tooltip__list-item tooltip__label\">Color:</dt>\n                                            <dd class=\"list__item tooltip__list-item\">{{ color. system_code }}</dd>\n                                        </template>\n                                        <dt class=\"list__item tooltip__list-item tooltip__label\">Weight:</dt>\n                                        <dd class=\"list__item tooltip__list-item\"><span class=\"hardcoded\">750 g</span>\n                                        </dd>\n                                    </dl>\n                                </tooltip>\n                                <color v-if=\"color.is_transparent\"></color>\n                                <color :background=\"color.rgb_hex_code\" v-else></color>\n                            </hit-area>\n                        </li>\n                    </ul>\n                    <content-link mod=\"large\"><span class=\"hardcoded\">Where to buy</span></content-link>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--sm-8 flexgrid__cell--xs-6\">\n                <div class=\"colors__image\" ref=\"image\" :class=\"imageClass\">\n                    <cms-image :image=\"image\" orientation=\"landscape\"></cms-image>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n\n";
 
 /***/ }),
 /* 59 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"brands\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\"> {{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :href=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>";
+module.exports = "<article class=\"case\">\n    <section class=\"container case__container\">\n        <figure class=\"case__media\" v-show=\"this.isMobileXl\">\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <h2 class=\"case__title\">{{ title }}</h2>\n            </figcaption>\n\n            <div class=\"case__media-placeholder\">\n                <figcaption>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <p class=\"case__paragraph case__paragraph--last\">{{ description }}</p>\n            </figcaption>\n        </figure>\n\n        <figure class=\"case__media\" v-show=\"!this.isMobileXl\">\n            <div class=\"case__media-placeholder\">\n                <figcaption class=\"flex-grid flexgrid__cell--xs-6 case__flex-grid--center\">\n                    <h2 class=\"case__title\">{{ title }}</h2>\n                    <p class=\"case__paragraph\">{{ description }}</p>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n        </figure>\n    </section>\n    <modal class=\"modal--video\" v-if=\"showVideo\" @close=\"toggleVideo\">\n        <youtube-video :video-id=\"videoId\"></youtube-video>\n    </modal>\n</article>\n";
 
 /***/ }),
 /* 60 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav aria-label=\"sub items\" class=\"sub-nav sub-nav--fixed\" :class=\"classObject\" v-if=\"page\">\n    <faux-scroll>\n        <ul class=\"sub-nav__list\" role=\"presentation\"  v-if=\"page.links && page.links.siblings && page.links.siblings.length\">\n            <li class=\"sub-nav__item\" v-for=\"sibling in page.links.siblings\">\n                <router-link class=\"sub-nav__link\" :to=\"mapLink(sibling.href)\" active-class=\"sub-nav__link--active\">\n                    <responsive-picture class=\"sub-nav__image\" v-if=\"sibling.icon\"\n                        :desktop-width=\"sibling.icon.thumbsquare_desktop\"\n                        :mobile-width=\"sibling.icon.thumbsquare_mobile\">\n                    </responsive-picture>\n                    <p class=\"sub-nav__label\">{{ sibling.title }}</p>\n                </router-link>\n            </li>\n        </ul>\n    </faux-scroll>\n\n</nav>\n";
+module.exports = "<article class=\"brands brands--large\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\">{{ title }}</h2>\n        <p class=\"brands__body\" v-if=\"text\">{{ text }}</p>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :href=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>";
 
 /***/ }),
 /* 61 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"country-selector\" v-if=\"initialized\">\n    <auto-complete class=\"country-selector__auto-complete auto-complete--small\" ref=\"autocomplete\"\n        :placeholder=\"placeholder\"\n        title-field=\"name\" value-field=\"code\"\n        v-model=\"country\"\n        @input=\"countryChanged\"\n        @close=\"close\"\n        @changeFocus=\"focusClose\"\n        :items=\"countries.country\"\n        :stored-items=\"detectedCountries\"\n        default-open>\n    </auto-complete>\n    <!-- TODO: refactor out settings-selector__edit-button (see: https://jira.ultimaker.com:8443/browse/UWEB-4969)-->\n    <icon-button icon-name=\"close\" button-aria-label=\"Cancel\" ref=\"closeCountryPanel\"\n        button-class=\"country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed\"\n        @click=\"close\">\n    </icon-button>\n</div>";
+module.exports = "<article class=\"brands\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\"> {{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :href=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>";
 
 /***/ }),
 /* 62 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"cms-image\" :style=\"styles\">\n    <responsive-picture class=\"cms-image__image\"\n        :desktop-hd-width=\"desktopRetinaImage\"\n        :desktop-width=\"desktopImage\"\n        :mobile-width=\"mobileImage\"\n        :alt=\"image.alt_text\">\n    </responsive-picture>\n</div>\n";
+module.exports = "<nav aria-label=\"sub items\" class=\"sub-nav sub-nav--fixed\" :class=\"classObject\" v-if=\"page\">\n    <faux-scroll>\n        <ul class=\"sub-nav__list\" role=\"presentation\"  v-if=\"page.links && page.links.siblings && page.links.siblings.length\">\n            <li class=\"sub-nav__item\" v-for=\"sibling in page.links.siblings\">\n                <router-link class=\"sub-nav__link\" :to=\"mapLink(sibling.href)\" active-class=\"sub-nav__link--active\">\n                    <responsive-picture class=\"sub-nav__image\" v-if=\"sibling.icon\"\n                        :desktop-width=\"sibling.icon.thumbsquare_desktop\"\n                        :mobile-width=\"sibling.icon.thumbsquare_mobile\">\n                    </responsive-picture>\n                    <p class=\"sub-nav__label\">{{ sibling.title }}</p>\n                </router-link>\n            </li>\n        </ul>\n    </faux-scroll>\n\n</nav>\n";
 
 /***/ }),
 /* 63 */
 /***/ (function(module, exports) {
 
-module.exports = "<form action=\"\" id=\"search\" class=\"search\" @submit.prevent=\"doSearch\">\n    <div role=\"search\">\n        <div class=\"search__inputholder\">\n            <label for=\"search__input\" class=\"search__label\">Search</label>\n            <input id=\"search__input\" type=\"text\" name=\"search\" placeholder=\"How can we help?\" class=\"search__input\"\n                   @blur=\"onBlur\" @keyup.esc=\"close\"\n                   v-model=\"searchValue\"\n                   ref=\"search__input\">\n        </div>\n        <icon-button button-class=\"icon-button icon-button--large search__button\" button-aria-label=\"Search\"\n                     icon-name=\"search\" @click=\"doSearch\"></icon-button>\n        <icon-button button-class=\"icon-button icon-button--large search__close-button\" button-aria-label=\"Close search\"\n                     icon-name=\"close\" @click=\"close\"></icon-button>\n    </div>\n</form>\n";
+module.exports = "<div class=\"country-selector\" v-if=\"initialized\">\n    <auto-complete class=\"country-selector__auto-complete auto-complete--small\" ref=\"autocomplete\"\n        :placeholder=\"placeholder\"\n        title-field=\"name\" value-field=\"code\"\n        v-model=\"country\"\n        @input=\"countryChanged\"\n        @close=\"close\"\n        @changeFocus=\"focusClose\"\n        :items=\"countries.country\"\n        :stored-items=\"detectedCountries\"\n        default-open>\n    </auto-complete>\n    <!-- TODO: refactor out settings-selector__edit-button (see: https://jira.ultimaker.com:8443/browse/UWEB-4969)-->\n    <icon-button icon-name=\"close\" button-aria-label=\"Cancel\" ref=\"closeCountryPanel\"\n        button-class=\"country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed\"\n        @click=\"close\">\n    </icon-button>\n</div>";
 
 /***/ }),
 /* 64 */
 /***/ (function(module, exports) {
 
-module.exports = "<router-link class=\"reseller-card\" tabindex=\"0\" :to=\"href\">\n    <h4 class=\"reseller-card__title\">\n        {{name}}\n        <small class=\"reseller-badge reseller-badge--inline\" v-if=\"preferred\">\n            <icon :icon-name=\"'rate-solid'\" class=\"reseller-badge__icon\"></icon>\n        </small>\n    </h4>\n    <span class=\"link faux-content-link reseller-link\">\n        <span class=\"link__underline\">\n            {{ labels.visitWebsite }}\n        </span>\n    </span>\n</router-link>\n";
+module.exports = "<div class=\"cms-image\" :style=\"styles\">\n    <responsive-picture class=\"cms-image__image\"\n        :desktop-hd-width=\"desktopRetinaImage\"\n        :desktop-width=\"desktopImage\"\n        :mobile-width=\"mobileImage\"\n        :alt=\"image.alt_text\">\n    </responsive-picture>\n</div>\n";
 
 /***/ }),
 /* 65 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"pager\" aria-label=\"pagination\">\n    <ul class=\"pager__list\">\n        <li ref=\"indicator\" class=\"pager__active-page\" aria-hidden=\"true\">\n            <icon class=\"pager__active-page-indicator\" icon-name=\"hexagon-fill\"></icon>\n        </li>\n        <li ref=\"page\" v-for=\"(page, index) in pages\" \n            class=\"pager__page\" >\n            <a class=\"pager__page-indicator\" @click=\"changeIndex(index)\"\n                aria-role=\"button\" \n                :aria-label=\"getAriaLabel(index)\" \n                :aria-current='index === activeIndex'>\n                <icon icon-name=\"hexagon\"></icon>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
+module.exports = "<form action=\"\" id=\"search\" class=\"search\" @submit.prevent=\"doSearch\">\n    <div role=\"search\">\n        <div class=\"search__inputholder\">\n            <label for=\"search__input\" class=\"search__label\">Search</label>\n            <input id=\"search__input\" type=\"text\" name=\"search\" placeholder=\"How can we help?\" class=\"search__input\"\n                   @blur=\"onBlur\" @keyup.esc=\"close\"\n                   v-model=\"searchValue\"\n                   ref=\"search__input\">\n        </div>\n        <icon-button button-class=\"icon-button icon-button--large search__button\" button-aria-label=\"Search\"\n                     icon-name=\"search\" @click=\"doSearch\"></icon-button>\n        <icon-button button-class=\"icon-button icon-button--large search__close-button\" button-aria-label=\"Close search\"\n                     icon-name=\"close\" @click=\"close\"></icon-button>\n    </div>\n</form>\n";
 
 /***/ }),
 /* 66 */
 /***/ (function(module, exports) {
 
-module.exports = "<transition name=\"modal\" @enter=\"enter\" @leave=\"leave\">\n    <div class=\"modal\" @click=\"closeModal\">\n        <div ref=\"overlay\" class=\"modal__overlay\"></div>\n        <icon-button ref=\"close\" icon-name=\"close\" class=\"modal__close\"/>\n        <div ref=\"modal\" class=\"modal__content\" @click.stop>\n            <div class=\"modal__header\">\n                <slot name=\"header\" />\n            </div>\n            <slot />\n        </div>\n    </div>\n</transition>\n";
+module.exports = "<router-link class=\"reseller-card\" tabindex=\"0\" :to=\"href\">\n    <h4 class=\"reseller-card__title\">\n        {{name}}\n        <small class=\"reseller-badge reseller-badge--inline\" v-if=\"preferred\">\n            <icon :icon-name=\"'rate-solid'\" class=\"reseller-badge__icon\"></icon>\n        </small>\n    </h4>\n    <span class=\"link faux-content-link reseller-link\">\n        <span class=\"link__underline\">\n            {{ labels.visitWebsite }}\n        </span>\n    </span>\n</router-link>\n";
 
 /***/ }),
 /* 67 */
 /***/ (function(module, exports) {
 
-module.exports = "<a class=\"icon-button\" :class=\"buttonClass\" :aria-label=\"buttonAriaLabel\" role=\"button\" tabindex=\"0\" @click=\"$emit('click')\" @keyup.enter=\"$emit('click')\">\n    <icon class=\"icon-button__icon\" :icon-name=\"iconName\"></icon>\n    <span class=\"icon-button__label\" v-if=\"hasDefaultSlot\">\n        <slot></slot>\n    </span>\n</a>\n";
+module.exports = "<nav class=\"pager\" aria-label=\"pagination\">\n    <ul class=\"pager__list\">\n        <li ref=\"indicator\" class=\"pager__active-page\" aria-hidden=\"true\">\n            <icon class=\"pager__active-page-indicator\" icon-name=\"hexagon-fill\"></icon>\n        </li>\n        <li ref=\"page\" v-for=\"(page, index) in pages\" \n            class=\"pager__page\" >\n            <a class=\"pager__page-indicator\" @click=\"changeIndex(index)\"\n                aria-role=\"button\" \n                :aria-label=\"getAriaLabel(index)\" \n                :aria-current='index === activeIndex'>\n                <icon icon-name=\"hexagon\"></icon>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
 /* 68 */
 /***/ (function(module, exports) {
 
-module.exports = "<li class=\"flyout__section\" :class=\"sectionClass\">\n    <strong class=\"flyout__title\" :id=\"itemId\">{{ title }}</strong>\n    <ul class=\"flyout__list\"\n        :aria-labelledby=\"itemId\"\n        :aria-haspopup=\"links.length > maxVisible\"\n        :aria-expanded=\"isExpanded\"\n        v-if=\"isCompact\">\n\n        <template v-for=\"(link, index) in links\">\n            <li class=\"flyout__list-item\"  v-if=\"index <= maxVisible - 1\">\n                <content-link @click.native=\"$emit('close')\" :href=\"link.href\" class=\"flyout__link\">{{ link.title }}</content-link>\n            </li>\n            <li class=\"flyout__list-item\" v-else>\n                <template v-if=\"isExpanded\">\n                    <content-link @click.native=\"$emit('close')\" :href=\"link.href\" class=\"flyout__link\">{{ link.title }}</content-link>\n                </template>\n            </li>\n        </template>\n\n        <li class=\"flyout__list-item\" v-if=\"links.length > maxVisible\">\n            <content-toggle class=\"flyout__toggle\"\n                            aria-hidden=\"true\"\n                            @toggle=\"isExpanded = !isExpanded\">\n            </content-toggle>\n        </li>\n    </ul>\n\n    <ul class=\"flyout__list\"\n        :aria-labelledby=\"itemId\"\n        v-else-if=\"!isCompact\">\n        <template v-for=\"link in links\">\n            <li class=\"flyout__list-item\">\n                <content-link @click.native=\"$emit('close')\" :href=\"link.href\" class=\"flyout__link\">{{ link.title }}</content-link>\n            </li>\n        </template>\n    </ul>\n\n    <template v-if=\"bottomLinks\" v-for=\"bottomLink in bottomLinks\">\n        <content-link @click.native=\"$emit('close')\" :href=\"bottomLink.href\" class=\"flyout__link--cta-mini\" >{{ bottomLink.title }}</content-link>\n    </template>\n</li>\n";
+module.exports = "<transition name=\"modal\" @enter=\"enter\" @leave=\"leave\">\n    <div class=\"modal\" @click=\"closeModal\">\n        <div ref=\"overlay\" class=\"modal__overlay\"></div>\n        <icon-button ref=\"close\" icon-name=\"close\" class=\"modal__close\"/>\n        <div ref=\"modal\" class=\"modal__content\" @click.stop>\n            <div class=\"modal__header\">\n                <slot name=\"header\" />\n            </div>\n            <slot />\n        </div>\n    </div>\n</transition>\n";
 
 /***/ }),
 /* 69 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"main-nav__flyout\"\n     v-if=\"sections && sections.length > 0\"\n    @keydown.down=\"selectNextFlyoutLink\"\n    @keydown.tab.exact=\"selectNextFlyoutLink\"\n    @keydown.up=\"selectPrevFlyoutLink\"\n    @keydown.tab.shift.exact=\"selectPrevFlyoutLink\"\n    @keydown.right=\"selectNextFlyoutSection\"\n    @keydown.left=\"selectPrevFlyoutSection\"\n    @mouseenter.stop=\"open\">\n    <template v-for=\"section in sections\">\n        <flyout-section @close=\"$emit('close')\" :is-compact=\"isCompact\" v-bind=\"section\">\n        </flyout-section>\n    </template>\n</ul>\n";
+module.exports = "<a class=\"icon-button\" :class=\"buttonClass\" :aria-label=\"buttonAriaLabel\" role=\"button\" tabindex=\"0\" @click=\"$emit('click')\" @keyup.enter=\"$emit('click')\">\n    <icon class=\"icon-button__icon\" :icon-name=\"iconName\"></icon>\n    <span class=\"icon-button__label\" v-if=\"hasDefaultSlot\">\n        <slot></slot>\n    </span>\n</a>\n";
 
 /***/ }),
 /* 70 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"faux-vertical-scroll\" ref=\"container\"\n     @touchstart=\"touchstart\"\n     @touchmove=\"touchmove\"\n     @touchend=\"touchend\"\n     @mousedown=\"mousedown\"\n     @mouseup=\"mouseup\"\n     @click=\"click\"\n     @mousemove=\"mousemove\"\n>\n    <div class=\"faux-vertical-scroll__content\" ref=\"content\">\n        <slot></slot>\n    </div>\n    <div class=\"faux-vertical-scroll__bar\" ref=\"bar\" :style=\"barStyle\"></div>\n</div>\n";
+module.exports = "<li class=\"flyout__section\" :class=\"sectionClass\">\n    <strong class=\"flyout__title\" :id=\"itemId\">{{ title }}</strong>\n    <ul class=\"flyout__list\"\n        :aria-labelledby=\"itemId\"\n        :aria-haspopup=\"links.length > maxVisible\"\n        :aria-expanded=\"isExpanded\"\n        v-if=\"isCompact\">\n\n        <template v-for=\"(link, index) in links\">\n            <li class=\"flyout__list-item\"  v-if=\"index <= maxVisible - 1\">\n                <content-link @click.native=\"$emit('close')\" :href=\"link.href\" class=\"flyout__link\">{{ link.title }}</content-link>\n            </li>\n            <li class=\"flyout__list-item\" v-else>\n                <template v-if=\"isExpanded\">\n                    <content-link @click.native=\"$emit('close')\" :href=\"link.href\" class=\"flyout__link\">{{ link.title }}</content-link>\n                </template>\n            </li>\n        </template>\n\n        <li class=\"flyout__list-item\" v-if=\"links.length > maxVisible\">\n            <content-toggle class=\"flyout__toggle\"\n                            aria-hidden=\"true\"\n                            @toggle=\"isExpanded = !isExpanded\">\n            </content-toggle>\n        </li>\n    </ul>\n\n    <ul class=\"flyout__list\"\n        :aria-labelledby=\"itemId\"\n        v-else-if=\"!isCompact\">\n        <template v-for=\"link in links\">\n            <li class=\"flyout__list-item\">\n                <content-link @click.native=\"$emit('close')\" :href=\"link.href\" class=\"flyout__link\">{{ link.title }}</content-link>\n            </li>\n        </template>\n    </ul>\n\n    <template v-if=\"bottomLinks\" v-for=\"bottomLink in bottomLinks\">\n        <content-link @click.native=\"$emit('close')\" :href=\"bottomLink.href\" class=\"flyout__link--cta-mini\" >{{ bottomLink.title }}</content-link>\n    </template>\n</li>\n";
 
 /***/ }),
 /* 71 */
 /***/ (function(module, exports) {
 
-module.exports = "<span class=\"currency\">\n    <span class=\"currency__type\">{{ currencyType }}</span>\n    {{ formattedAmount }}\n</span>\n";
+module.exports = "<ul class=\"main-nav__flyout\"\n     v-if=\"sections && sections.length > 0\"\n    @keydown.down=\"selectNextFlyoutLink\"\n    @keydown.tab.exact=\"selectNextFlyoutLink\"\n    @keydown.up=\"selectPrevFlyoutLink\"\n    @keydown.tab.shift.exact=\"selectPrevFlyoutLink\"\n    @keydown.right=\"selectNextFlyoutSection\"\n    @keydown.left=\"selectPrevFlyoutSection\"\n    @mouseenter.stop=\"open\">\n    <template v-for=\"section in sections\">\n        <flyout-section @close=\"$emit('close')\" :is-compact=\"isCompact\" v-bind=\"section\">\n        </flyout-section>\n    </template>\n</ul>\n";
 
 /***/ }),
 /* 72 */
 /***/ (function(module, exports) {
 
-module.exports = "<a class=\"toggle toggle--icon\" role=\"button\" tabindex=\"0\" @click=\"toggle\"\n       @keyup.enter=\"toggle\">\n    <icon :icon-name=\"toggleIcon\"></icon>\n    <span>{{ toggleText }}</span>\n</a>\n";
+module.exports = "<div class=\"faux-vertical-scroll\" ref=\"container\"\n     @touchstart=\"touchstart\"\n     @touchmove=\"touchmove\"\n     @touchend=\"touchend\"\n     @mousedown=\"mousedown\"\n     @mouseup=\"mouseup\"\n     @click=\"click\"\n     @mousemove=\"mousemove\"\n>\n    <div class=\"faux-vertical-scroll__content\" ref=\"content\">\n        <slot></slot>\n    </div>\n    <div class=\"faux-vertical-scroll__bar\" ref=\"bar\" :style=\"barStyle\"></div>\n</div>\n";
 
 /***/ }),
 /* 73 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"color\">\n    <div class=\"color__spec color__spec--show\">\n        <icon icon-name=\"show\" :style=\"styleIcon\"></icon>\n    </div>\n    <div class=\"color__spec color__spec--swatch\" :style=\"styleBackground\"></div>\n</div>\n";
+module.exports = "<span class=\"currency\">\n    <span class=\"currency__type\">{{ currencyType }}</span>\n    {{ formattedAmount }}\n</span>\n";
 
 /***/ }),
 /* 74 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"card\" :class=\"classObject\">\n    <div class=\"card__visual\">\n        <template v-if=\"card.image\">\n          <div class=\"card__image\">\n            <responsive-picture v-if=\"card.image && card.image.mobileWidth\" class=\"img--responsive\" v-bind=\"card.image\"></responsive-picture>\n            <cms-image v-else class=\"img--responsive\" :image=\"card.image[0]\" :orientation=\"'square'\"></cms-image>\n          </div>\n        </template>\n        <icon v-if=\"card.icon\" :icon-name=\"card.icon.iconName\" class=\"card__icon\"></icon>\n    </div>\n    <div class=\"card__content\">\n        <h3 class=\"card__headline\">{{ card.title }}</h3>\n        <p class=\"card__description\">{{ card.description }}</p>\n        <content-link class=\"card__link\" v-if=\"card.contentLink\" :block=\"'card'\" :href=\"card.contentLink.href\">{{ card.contentLink.text }}</content-link>\n    </div>\n</article>\n";
+module.exports = "<a class=\"toggle toggle--icon\" role=\"button\" tabindex=\"0\" @click=\"toggle\"\n       @keyup.enter=\"toggle\">\n    <icon :icon-name=\"toggleIcon\"></icon>\n    <span>{{ toggleText }}</span>\n</a>\n";
 
 /***/ }),
 /* 75 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"brand-card\">\n    <div class=\"brand-card__image-wrapper\">\n        <responsive-picture v-bind=\"image\"></responsive-picture>\n    </div>\n    <template v-if=\"body && type === 'text'\">\n        <p class=\"brand-card__quote\">{{body}}</p>\n    </template>\n    <template v-else-if=\"body\">\n        <q class=\"brand-card__quote\">{{body}}</q>\n    </template>\n</div>";
+module.exports = "<div class=\"color\">\n    <div class=\"color__spec color__spec--show\">\n        <icon icon-name=\"show\" :style=\"styleIcon\"></icon>\n    </div>\n    <div class=\"color__spec color__spec--swatch\" :style=\"styleBackground\"></div>\n</div>\n";
 
 /***/ }),
 /* 76 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"auto-complete\"\n    :class=\"classObject\"\n     role=\"combobox\"\n     aria-haspopup=\"listbox\"\n\n     v-if=\"hasItems\"\n     :aria-owns=\"listId\"\n     :aria-expanded=\"isOpen\"\n\n     @keydown.up.prevent=\"selectPrevious\"\n     @keydown.shift.tab.prevent=\"selectPrevious\"\n     @keydown.down.prevent=\"selectCurrent\"\n     @keydown.tab.exact.prevent=\"selectCurrent\">\n\n\n    <input ref=\"autoComplete\"\n           class=\"auto-complete__input\"\n           type=\"text\"\n           autofocus=\"true\"\n           autocomplete=\"off\"\n           aria-autocomplete=\"list\"\n\n           :id=\"inputId\"\n           :aria-controls=\"listId\"\n           :placeholder=\"placeholder\"\n           :required=\"required\"\n\n           v-model.trim=\"input\"\n           @input=\"input = $event.target.value\"\n\n           @keyup.esc=\"resetInput\"\n           @keydown=\"forceOpen = true\"\n           @keydown.enter.prevent=\"selectItemByInput\">\n\n    <div :id=\"listId\" class=\"auto-complete__dropdown\" role=\"listbox\"\n         v-if=\"isOpen\"\n         @keyup.esc=\"closeList\"\n         @keydown.backspace.prevent\n         @keydown.down.prevent=\"selectNext\"\n         @keydown.tab.exact.prevent=\"selectNext\">\n\n        <template v-if=\"storedItems && storedItems.length\">\n            <h4 class=\"auto-complete__label\" id=\"storedLabel\">\n                {{ storedLabel }}\n            </h4>\n            <ul class=\"auto-complete__list\" aria-labelledby=\"storedLabel\">\n                <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                    v-for=\"item in storedItems\"\n                    @click=\"selectItem(item)\"\n                    @keyup.enter.prevent=\"selectItem(item)\"\n                    @keyup.esc=\"closeList\">\n                    {{ item[titleField] }}\n                </li>\n            </ul>\n        </template>\n\n        <template v-if=\"suggestedItems && suggestedItems.length\">\n            <h4 class=\"auto-complete__label\" id=\"suggestedLabel\">\n                {{ suggestionsLabel }}\n            </h4>\n            <ul class=\"auto-complete__list\" aria-labelledby=\"suggestedLabel\">\n                <template v-if=\"matchValue\">\n                    <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                        v-for=\"item in suggestedItems\"\n                        @click=\"selectItem(item)\"\n                        @keyup.enter.prevent=\"selectItem(item)\">\n                        {{ item[titleField] }}\n                    </li>\n                </template>\n                <template v-else>\n                    <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                        v-for=\"item in suggestedItems\"\n                        v-html=\"highlightString(item[titleField])\"\n                        @click=\"selectItem(item)\"\n                        @keyup.enter.prevent=\"selectItem(item)\"\n                        >\n                    </li>\n                </template>\n            </ul>\n        </template>\n    </div>\n\n</div>\n";
+module.exports = "<article class=\"card\" :class=\"classObject\">\n    <div class=\"card__visual\">\n        <template v-if=\"card.image\">\n          <div class=\"card__image\">\n            <responsive-picture v-if=\"card.image && card.image.mobileWidth\" class=\"img--responsive\" v-bind=\"card.image\"></responsive-picture>\n            <cms-image v-else class=\"img--responsive\" :image=\"card.image[0]\" :orientation=\"'square'\"></cms-image>\n          </div>\n        </template>\n        <icon v-if=\"card.icon\" :icon-name=\"card.icon.iconName\" class=\"card__icon\"></icon>\n    </div>\n    <div class=\"card__content\">\n        <h3 class=\"card__headline\">{{ card.title }}</h3>\n        <p class=\"card__description\">{{ card.description }}</p>\n        <content-link class=\"card__link\" v-if=\"card.contentLink\" :block=\"'card'\" :href=\"card.contentLink.href\">{{ card.contentLink.text }}</content-link>\n    </div>\n</article>\n";
 
 /***/ }),
 /* 77 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"brand-card\">\n    <div class=\"brand-card__image-wrapper\">\n        <responsive-picture v-bind=\"image\"></responsive-picture>\n    </div>\n    <template v-if=\"body && type === 'text'\">\n        <p class=\"brand-card__quote\">{{body}}</p>\n    </template>\n    <template v-else-if=\"body\">\n        <q class=\"brand-card__quote\">{{body}}</q>\n    </template>\n</div>";
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"auto-complete\"\n    :class=\"classObject\"\n     role=\"combobox\"\n     aria-haspopup=\"listbox\"\n\n     v-if=\"hasItems\"\n     :aria-owns=\"listId\"\n     :aria-expanded=\"isOpen\"\n\n     @keydown.up.prevent=\"selectPrevious\"\n     @keydown.shift.tab.prevent=\"selectPrevious\"\n     @keydown.down.prevent=\"selectCurrent\"\n     @keydown.tab.exact.prevent=\"selectCurrent\">\n\n\n    <input ref=\"autoComplete\"\n           class=\"auto-complete__input\"\n           type=\"text\"\n           autofocus=\"true\"\n           autocomplete=\"off\"\n           aria-autocomplete=\"list\"\n\n           :id=\"inputId\"\n           :aria-controls=\"listId\"\n           :placeholder=\"placeholder\"\n           :required=\"required\"\n\n           v-model.trim=\"input\"\n           @input=\"input = $event.target.value\"\n\n           @keyup.esc=\"resetInput\"\n           @keydown=\"forceOpen = true\"\n           @keydown.enter.prevent=\"selectItemByInput\">\n\n    <div :id=\"listId\" class=\"auto-complete__dropdown\" role=\"listbox\"\n         v-if=\"isOpen\"\n         @keyup.esc=\"closeList\"\n         @keydown.backspace.prevent\n         @keydown.down.prevent=\"selectNext\"\n         @keydown.tab.exact.prevent=\"selectNext\">\n\n        <template v-if=\"storedItems && storedItems.length\">\n            <h4 class=\"auto-complete__label\" id=\"storedLabel\">\n                {{ storedLabel }}\n            </h4>\n            <ul class=\"auto-complete__list\" aria-labelledby=\"storedLabel\">\n                <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                    v-for=\"item in storedItems\"\n                    @click=\"selectItem(item)\"\n                    @keyup.enter.prevent=\"selectItem(item)\"\n                    @keyup.esc=\"closeList\">\n                    {{ item[titleField] }}\n                </li>\n            </ul>\n        </template>\n\n        <template v-if=\"suggestedItems && suggestedItems.length\">\n            <h4 class=\"auto-complete__label\" id=\"suggestedLabel\">\n                {{ suggestionsLabel }}\n            </h4>\n            <ul class=\"auto-complete__list\" aria-labelledby=\"suggestedLabel\">\n                <template v-if=\"matchValue\">\n                    <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                        v-for=\"item in suggestedItems\"\n                        @click=\"selectItem(item)\"\n                        @keyup.enter.prevent=\"selectItem(item)\">\n                        {{ item[titleField] }}\n                    </li>\n                </template>\n                <template v-else>\n                    <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                        v-for=\"item in suggestedItems\"\n                        v-html=\"highlightString(item[titleField])\"\n                        @click=\"selectItem(item)\"\n                        @keyup.enter.prevent=\"selectItem(item)\"\n                        >\n                    </li>\n                </template>\n            </ul>\n        </template>\n    </div>\n\n</div>\n";
+
+/***/ }),
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var toNumber = __webpack_require__(43);
@@ -12554,10 +12578,10 @@ module.exports = toFinite;
 
 
 /***/ }),
-/* 78 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toFinite = __webpack_require__(77);
+var toFinite = __webpack_require__(79);
 
 /**
  * Converts `value` to an integer.
@@ -12596,7 +12620,7 @@ module.exports = toInteger;
 
 
 /***/ }),
-/* 79 */
+/* 81 */
 /***/ (function(module, exports) {
 
 /**
@@ -12626,12 +12650,12 @@ module.exports = baseFindIndex;
 
 
 /***/ }),
-/* 80 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(79),
+var baseFindIndex = __webpack_require__(81),
     baseIteratee = __webpack_require__(24),
-    toInteger = __webpack_require__(78);
+    toInteger = __webpack_require__(80);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
@@ -12687,7 +12711,7 @@ module.exports = findIndex;
 
 
 /***/ }),
-/* 81 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIteratee = __webpack_require__(24),
@@ -12718,7 +12742,7 @@ module.exports = createFind;
 
 
 /***/ }),
-/* 82 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(28);
@@ -12740,7 +12764,7 @@ module.exports = basePropertyDeep;
 
 
 /***/ }),
-/* 83 */
+/* 85 */
 /***/ (function(module, exports) {
 
 /**
@@ -12760,11 +12784,11 @@ module.exports = baseProperty;
 
 
 /***/ }),
-/* 84 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseProperty = __webpack_require__(83),
-    basePropertyDeep = __webpack_require__(82),
+var baseProperty = __webpack_require__(85),
+    basePropertyDeep = __webpack_require__(84),
     isKey = __webpack_require__(21),
     toKey = __webpack_require__(10);
 
@@ -12798,7 +12822,7 @@ module.exports = property;
 
 
 /***/ }),
-/* 85 */
+/* 87 */
 /***/ (function(module, exports) {
 
 /**
@@ -12825,7 +12849,7 @@ module.exports = identity;
 
 
 /***/ }),
-/* 86 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var castPath = __webpack_require__(27),
@@ -12870,7 +12894,7 @@ module.exports = hasPath;
 
 
 /***/ }),
-/* 87 */
+/* 89 */
 /***/ (function(module, exports) {
 
 /**
@@ -12889,11 +12913,11 @@ module.exports = baseHasIn;
 
 
 /***/ }),
-/* 88 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseHasIn = __webpack_require__(87),
-    hasPath = __webpack_require__(86);
+var baseHasIn = __webpack_require__(89),
+    hasPath = __webpack_require__(88);
 
 /**
  * Checks if `path` is a direct or inherited property of `object`.
@@ -12929,7 +12953,7 @@ module.exports = hasIn;
 
 
 /***/ }),
-/* 89 */
+/* 91 */
 /***/ (function(module, exports) {
 
 /**
@@ -12956,11 +12980,11 @@ module.exports = arrayMap;
 
 
 /***/ }),
-/* 90 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(16),
-    arrayMap = __webpack_require__(89),
+    arrayMap = __webpack_require__(91),
     isArray = __webpack_require__(2),
     isSymbol = __webpack_require__(17);
 
@@ -12999,10 +13023,10 @@ module.exports = baseToString;
 
 
 /***/ }),
-/* 91 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseToString = __webpack_require__(90);
+var baseToString = __webpack_require__(92);
 
 /**
  * Converts `value` to a string. An empty string is returned for `null`
@@ -13033,7 +13057,7 @@ module.exports = toString;
 
 
 /***/ }),
-/* 92 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MapCache = __webpack_require__(22);
@@ -13112,10 +13136,10 @@ module.exports = memoize;
 
 
 /***/ }),
-/* 93 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var memoize = __webpack_require__(92);
+var memoize = __webpack_require__(94);
 
 /** Used as the maximum memoize cache size. */
 var MAX_MEMOIZE_SIZE = 500;
@@ -13144,10 +13168,10 @@ module.exports = memoizeCapped;
 
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var memoizeCapped = __webpack_require__(93);
+var memoizeCapped = __webpack_require__(95);
 
 /** Used to match property names within property paths. */
 var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
@@ -13177,7 +13201,7 @@ module.exports = stringToPath;
 
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(28);
@@ -13216,12 +13240,12 @@ module.exports = get;
 
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsEqual = __webpack_require__(32),
-    get = __webpack_require__(95),
-    hasIn = __webpack_require__(88),
+    get = __webpack_require__(97),
+    hasIn = __webpack_require__(90),
     isKey = __webpack_require__(21),
     isStrictComparable = __webpack_require__(30),
     matchesStrictComparable = __webpack_require__(29),
@@ -13255,7 +13279,7 @@ module.exports = baseMatchesProperty;
 
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isStrictComparable = __webpack_require__(30),
@@ -13285,7 +13309,7 @@ module.exports = getMatchData;
 
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(3),
@@ -13298,7 +13322,7 @@ module.exports = WeakMap;
 
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(3),
@@ -13311,7 +13335,7 @@ module.exports = Set;
 
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(3),
@@ -13324,7 +13348,7 @@ module.exports = Promise;
 
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(3),
@@ -13337,14 +13361,14 @@ module.exports = DataView;
 
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var DataView = __webpack_require__(101),
+var DataView = __webpack_require__(103),
     Map = __webpack_require__(23),
-    Promise = __webpack_require__(100),
-    Set = __webpack_require__(99),
-    WeakMap = __webpack_require__(98),
+    Promise = __webpack_require__(102),
+    Set = __webpack_require__(101),
+    WeakMap = __webpack_require__(100),
     baseGetTag = __webpack_require__(7),
     toSource = __webpack_require__(33);
 
@@ -13401,7 +13425,7 @@ module.exports = getTag;
 
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports) {
 
 /**
@@ -13430,11 +13454,11 @@ module.exports = stubArray;
 
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayFilter = __webpack_require__(42),
-    stubArray = __webpack_require__(103);
+    stubArray = __webpack_require__(105);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -13466,7 +13490,7 @@ module.exports = getSymbols;
 
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports) {
 
 /**
@@ -13492,10 +13516,10 @@ module.exports = arrayPush;
 
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayPush = __webpack_require__(105),
+var arrayPush = __webpack_require__(107),
     isArray = __webpack_require__(2);
 
 /**
@@ -13518,11 +13542,11 @@ module.exports = baseGetAllKeys;
 
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetAllKeys = __webpack_require__(106),
-    getSymbols = __webpack_require__(104),
+var baseGetAllKeys = __webpack_require__(108),
+    getSymbols = __webpack_require__(106),
     keys = __webpack_require__(15);
 
 /**
@@ -13540,10 +13564,10 @@ module.exports = getAllKeys;
 
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getAllKeys = __webpack_require__(107);
+var getAllKeys = __webpack_require__(109);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -13635,7 +13659,7 @@ module.exports = equalObjects;
 
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports) {
 
 /**
@@ -13659,7 +13683,7 @@ module.exports = setToArray;
 
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports) {
 
 /**
@@ -13683,7 +13707,7 @@ module.exports = mapToArray;
 
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(1);
@@ -13695,15 +13719,15 @@ module.exports = Uint8Array;
 
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(16),
-    Uint8Array = __webpack_require__(111),
+    Uint8Array = __webpack_require__(113),
     eq = __webpack_require__(34),
     equalArrays = __webpack_require__(31),
-    mapToArray = __webpack_require__(110),
-    setToArray = __webpack_require__(109);
+    mapToArray = __webpack_require__(112),
+    setToArray = __webpack_require__(111);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -13813,7 +13837,7 @@ module.exports = equalByTag;
 
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports) {
 
 /**
@@ -13832,7 +13856,7 @@ module.exports = cacheHas;
 
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports) {
 
 /**
@@ -13861,7 +13885,7 @@ module.exports = arraySome;
 
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports) {
 
 /**
@@ -13881,7 +13905,7 @@ module.exports = setCacheHas;
 
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports) {
 
 /** Used to stand-in for `undefined` hash values. */
@@ -13906,12 +13930,12 @@ module.exports = setCacheAdd;
 
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MapCache = __webpack_require__(22),
-    setCacheAdd = __webpack_require__(116),
-    setCacheHas = __webpack_require__(115);
+    setCacheAdd = __webpack_require__(118),
+    setCacheHas = __webpack_require__(117);
 
 /**
  *
@@ -13939,14 +13963,14 @@ module.exports = SetCache;
 
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Stack = __webpack_require__(35),
     equalArrays = __webpack_require__(31),
-    equalByTag = __webpack_require__(112),
-    equalObjects = __webpack_require__(108),
-    getTag = __webpack_require__(102),
+    equalByTag = __webpack_require__(114),
+    equalObjects = __webpack_require__(110),
+    getTag = __webpack_require__(104),
     isArray = __webpack_require__(2),
     isBuffer = __webpack_require__(40),
     isTypedArray = __webpack_require__(37);
@@ -14028,7 +14052,7 @@ module.exports = baseIsEqualDeep;
 
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(11);
@@ -14056,7 +14080,7 @@ module.exports = mapCacheSet;
 
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(11);
@@ -14078,7 +14102,7 @@ module.exports = mapCacheHas;
 
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(11);
@@ -14100,7 +14124,7 @@ module.exports = mapCacheGet;
 
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports) {
 
 /**
@@ -14121,7 +14145,7 @@ module.exports = isKeyable;
 
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(11);
@@ -14145,7 +14169,7 @@ module.exports = mapCacheDelete;
 
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(12);
@@ -14174,7 +14198,7 @@ module.exports = hashSet;
 
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(12);
@@ -14203,7 +14227,7 @@ module.exports = hashHas;
 
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(12);
@@ -14239,7 +14263,7 @@ module.exports = hashGet;
 
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, exports) {
 
 /**
@@ -14262,7 +14286,7 @@ module.exports = hashDelete;
 
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(12);
@@ -14283,14 +14307,14 @@ module.exports = hashClear;
 
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hashClear = __webpack_require__(128),
-    hashDelete = __webpack_require__(127),
-    hashGet = __webpack_require__(126),
-    hashHas = __webpack_require__(125),
-    hashSet = __webpack_require__(124);
+var hashClear = __webpack_require__(130),
+    hashDelete = __webpack_require__(129),
+    hashGet = __webpack_require__(128),
+    hashHas = __webpack_require__(127),
+    hashSet = __webpack_require__(126);
 
 /**
  * Creates a hash object.
@@ -14321,10 +14345,10 @@ module.exports = Hash;
 
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Hash = __webpack_require__(129),
+var Hash = __webpack_require__(131),
     ListCache = __webpack_require__(14),
     Map = __webpack_require__(23);
 
@@ -14348,7 +14372,7 @@ module.exports = mapCacheClear;
 
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, exports) {
 
 /**
@@ -14367,7 +14391,7 @@ module.exports = getValue;
 
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(1);
@@ -14379,10 +14403,10 @@ module.exports = coreJsData;
 
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var coreJsData = __webpack_require__(132);
+var coreJsData = __webpack_require__(134);
 
 /** Used to detect methods masquerading as native. */
 var maskSrcKey = (function() {
@@ -14405,11 +14429,11 @@ module.exports = isMasked;
 
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(36),
-    isMasked = __webpack_require__(133),
+    isMasked = __webpack_require__(135),
     isObject = __webpack_require__(8),
     toSource = __webpack_require__(33);
 
@@ -14458,7 +14482,7 @@ module.exports = baseIsNative;
 
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(14),
@@ -14498,7 +14522,7 @@ module.exports = stackSet;
 
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports) {
 
 /**
@@ -14518,7 +14542,7 @@ module.exports = stackHas;
 
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, exports) {
 
 /**
@@ -14538,7 +14562,7 @@ module.exports = stackGet;
 
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports) {
 
 /**
@@ -14562,7 +14586,7 @@ module.exports = stackDelete;
 
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(14);
@@ -14583,7 +14607,7 @@ module.exports = stackClear;
 
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(13);
@@ -14615,7 +14639,7 @@ module.exports = listCacheSet;
 
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(13);
@@ -14637,7 +14661,7 @@ module.exports = listCacheHas;
 
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(13);
@@ -14662,7 +14686,7 @@ module.exports = listCacheGet;
 
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(13);
@@ -14703,7 +14727,7 @@ module.exports = listCacheDelete;
 
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, exports) {
 
 /**
@@ -14722,7 +14746,7 @@ module.exports = listCacheClear;
 
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Stack = __webpack_require__(35),
@@ -14790,11 +14814,11 @@ module.exports = baseIsMatch;
 
 
 /***/ }),
-/* 146 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsMatch = __webpack_require__(145),
-    getMatchData = __webpack_require__(97),
+var baseIsMatch = __webpack_require__(147),
+    getMatchData = __webpack_require__(99),
     matchesStrictComparable = __webpack_require__(29);
 
 /**
@@ -14818,7 +14842,7 @@ module.exports = baseMatches;
 
 
 /***/ }),
-/* 147 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArrayLike = __webpack_require__(25);
@@ -14856,7 +14880,7 @@ module.exports = createBaseEach;
 
 
 /***/ }),
-/* 148 */
+/* 150 */
 /***/ (function(module, exports) {
 
 /**
@@ -14877,10 +14901,10 @@ module.exports = overArg;
 
 
 /***/ }),
-/* 149 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(148);
+var overArg = __webpack_require__(150);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeKeys = overArg(Object.keys, Object);
@@ -14889,7 +14913,7 @@ module.exports = nativeKeys;
 
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -14913,11 +14937,11 @@ module.exports = isPrototype;
 
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isPrototype = __webpack_require__(150),
-    nativeKeys = __webpack_require__(149);
+var isPrototype = __webpack_require__(152),
+    nativeKeys = __webpack_require__(151);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -14949,7 +14973,7 @@ module.exports = baseKeys;
 
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(44);
@@ -14986,7 +15010,7 @@ module.exports = nodeUtil;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(39)(module)))
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, exports) {
 
 /**
@@ -15006,7 +15030,7 @@ module.exports = baseUnary;
 
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(7),
@@ -15072,7 +15096,7 @@ module.exports = baseIsTypedArray;
 
 
 /***/ }),
-/* 155 */
+/* 157 */
 /***/ (function(module, exports) {
 
 /**
@@ -15096,7 +15120,7 @@ module.exports = stubFalse;
 
 
 /***/ }),
-/* 156 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(7),
@@ -15120,7 +15144,7 @@ module.exports = baseIsArguments;
 
 
 /***/ }),
-/* 157 */
+/* 159 */
 /***/ (function(module, exports) {
 
 /**
@@ -15146,10 +15170,10 @@ module.exports = baseTimes;
 
 
 /***/ }),
-/* 158 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseTimes = __webpack_require__(157),
+var baseTimes = __webpack_require__(159),
     isArguments = __webpack_require__(41),
     isArray = __webpack_require__(2),
     isBuffer = __webpack_require__(40),
@@ -15201,7 +15225,7 @@ module.exports = arrayLikeKeys;
 
 
 /***/ }),
-/* 159 */
+/* 161 */
 /***/ (function(module, exports) {
 
 /**
@@ -15232,10 +15256,10 @@ module.exports = createBaseFor;
 
 
 /***/ }),
-/* 160 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createBaseFor = __webpack_require__(159);
+var createBaseFor = __webpack_require__(161);
 
 /**
  * The base implementation of `baseForOwn` which iterates over `object`
@@ -15254,10 +15278,10 @@ module.exports = baseFor;
 
 
 /***/ }),
-/* 161 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFor = __webpack_require__(160),
+var baseFor = __webpack_require__(162),
     keys = __webpack_require__(15);
 
 /**
@@ -15276,11 +15300,11 @@ module.exports = baseForOwn;
 
 
 /***/ }),
-/* 162 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseForOwn = __webpack_require__(161),
-    createBaseEach = __webpack_require__(147);
+var baseForOwn = __webpack_require__(163),
+    createBaseEach = __webpack_require__(149);
 
 /**
  * The base implementation of `_.forEach` without support for iteratee shorthands.
@@ -15296,10 +15320,10 @@ module.exports = baseEach;
 
 
 /***/ }),
-/* 163 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseEach = __webpack_require__(162);
+var baseEach = __webpack_require__(164);
 
 /**
  * The base implementation of `_.filter` without support for iteratee shorthands.
@@ -15323,7 +15347,7 @@ module.exports = baseFilter;
 
 
 /***/ }),
-/* 164 */
+/* 166 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -15513,7 +15537,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 165 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -15703,10 +15727,10 @@ process.umask = function() { return 0; };
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18), __webpack_require__(164)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18), __webpack_require__(166)))
 
 /***/ }),
-/* 166 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -15762,7 +15786,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(165);
+__webpack_require__(167);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -15776,25 +15800,31 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(18)))
 
 /***/ }),
-/* 167 */
+/* 169 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"youtube-video\">\n    <iframe v-if=\"loadVideo\" :src=\"videoUrl\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" class=\"youtube-video__frame\"></iframe>\n</div>\n";
 
 /***/ }),
-/* 168 */
+/* 170 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"tooltip\" :class=\"classObject\">\n    <slot></slot>\n</div>\n";
 
 /***/ }),
-/* 169 */
+/* 171 */
 /***/ (function(module, exports) {
 
 module.exports = "<dl class=\"tabbable-dl\">\n    <template v-for=\"(item, index) in items\">\n        <dt class=\"tabbable-dl__term tabbable-dl__term--vue\" ref=\"terms\">\n            <a class=\"tabbable-dl__link\" @click.prevent=\"changeIndex(index)\" @keyup.enter=\"changeIndex(index)\" role=\"button\" tabindex=\"0\">\n                <h3 class=\"tabbable-dl__title\">\n                    <icon class=\"tabbable-dl__icon\" icon-name=\"angle-right\"></icon>\n                    {{ item.title }}\n                </h3>\n            </a>\n        </dt>\n        <dd class=\"tabbable-dl__desc tabbable-dl__desc--vue\" ref=\"descriptions\">{{ item.description }}</dd>\n    </template>\n</dl>\n";
 
 /***/ }),
-/* 170 */
+/* 172 */
+/***/ (function(module, exports) {
+
+module.exports = "<picture>\n    <template>\n        <responsive-picture-source v-if=\"desktopHdWidth\" media=\"(min-width: 1201px)\" :image=\"lazyLoading ? '' : desktopHdWidth\" />\n        <responsive-picture-source v-if=\"desktopWidth\" media=\"(min-width: 1025px)\" :image=\"lazyLoading ? '' : desktopWidth\" />\n        <responsive-picture-source v-if=\"tabletWidth\" media=\"(min-width: 768px)\" :image=\"lazyLoading ? '' : tabletWidth\" />\n        <responsive-picture-source v-if=\"mobileXlWidth\" media=\"(min-width: 569px)\" :image=\"lazyLoading ? '' : mobileXlWidth\" />\n        <responsive-picture-source v-if=\"mobileLWidth\" media=\"(min-width: 481px)\" :image=\"lazyLoading ? '' : mobileLWidth\" />\n        <responsive-picture-source media=\"(max-width: 480px)\" :image=\"mobileWidth\" />\n    </template>\n    <img :src=\"lazyLoading ? '' : mobileWidth.url ? mobileWidth.url : mobileWidth\" :alt=\"description\" class=\"img--responsive\" :class=\"classes\"/>\n</picture>\n";
+
+/***/ }),
+/* 173 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -15822,7 +15852,7 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 171 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(16);
@@ -15874,7 +15904,7 @@ module.exports = getRawTag;
 
 
 /***/ }),
-/* 172 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(1);
@@ -15903,49 +15933,43 @@ module.exports = now;
 
 
 /***/ }),
-/* 173 */
-/***/ (function(module, exports) {
-
-module.exports = "<picture>\n    <template>\n        <responsive-picture-source v-if=\"desktopHdWidth\" media=\"(min-width: 1201px)\" :image=\"lazyLoading ? '' : desktopHdWidth\" />\n        <responsive-picture-source v-if=\"desktopWidth\" media=\"(min-width: 1025px)\" :image=\"lazyLoading ? '' : desktopWidth\" />\n        <responsive-picture-source v-if=\"tabletWidth\" media=\"(min-width: 768px)\" :image=\"lazyLoading ? '' : tabletWidth\" />\n        <responsive-picture-source v-if=\"mobileXlWidth\" media=\"(min-width: 569px)\" :image=\"lazyLoading ? '' : mobileXlWidth\" />\n        <responsive-picture-source v-if=\"mobileLWidth\" media=\"(min-width: 481px)\" :image=\"lazyLoading ? '' : mobileLWidth\" />\n        <responsive-picture-source media=\"(max-width: 480px)\" :image=\"mobileWidth\" />\n    </template>\n    <img :src=\"lazyLoading ? '' : mobileWidth.url ? mobileWidth.url : mobileWidth\" :alt=\"description\" class=\"img--responsive\" :class=\"classes\"/>\n</picture>\n";
-
-/***/ }),
-/* 174 */
+/* 176 */
 /***/ (function(module, exports) {
 
 module.exports = "<button type=\"button\" @click=\"toggleState()\" @keyup.esc=\"close\" class=\"nav-assist\"\n        :class=\"{'nav-assist--close': this.openState, 'nav-assist--initial-state': !this.used}\" aria-label=\"menu\"\n        :aria-expanded=\"this.openState.toString()\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <rect class=\"nav-assist__line nav-assist__line-2\" x=\"2\" y=\"11\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-1\" x=\"2\" y=\"4.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-3\" x=\"2\" y=\"17.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-4\" x=\"-1.3\" y=\"11\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"26.6\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-5\" x=\"11\" y=\"-1.3\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"2\" height=\"26.6\"/>\n    </svg>\n</button>\n";
 
 /***/ }),
-/* 175 */
+/* 177 */
 /***/ (function(module, exports) {
 
 module.exports = "<svg class=\"icon\" :class=\"iconClass\" :viewBox=\"viewBox\" v-if=\"ready\">\n    <use :xlink:href=\"iconRef\" v-if=\"!symbolData\"></use>\n    <g id=\"symbol-container\"></g>\n</svg>\n\n";
 
 /***/ }),
-/* 176 */
+/* 178 */
 /***/ (function(module, exports) {
 
 module.exports = "<section v-bind:class=\"styleModifier\">\n    <strong class=\"caption-list__headline\">\n        {{ label }}\n    </strong>\n    <ul class=\"caption-list\">\n        <li class=\"caption-list__list-item\" v-for=\"item in listItems\">\n            {{ item.additionalContent }}\n            <a :href=\"item.url\">{{ item.text }}</a>\n        </li>\n    </ul>\n</section>";
 
 /***/ }),
-/* 177 */
+/* 179 */
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"hit-area\" role=\"button\" tabindex=\"0\">\n    <slot></slot>\n</a>\n";
 
 /***/ }),
-/* 178 */
+/* 180 */
 /***/ (function(module, exports) {
 
 module.exports = "<ul :class=\"block + '__list'\">\n    <li v-for=\"link in links\" :class=\"block + '__item'\">\n        <content-link :class=\"link.class\" :block='block' :icon=\"link.icon\" :href=\"link.href\">{{ link.title }}</content-link>\n    </li>\n</ul>\n";
 
 /***/ }),
-/* 179 */
+/* 181 */
 /***/ (function(module, exports) {
 
 module.exports = "<router-link :to=\"href\" class=\"link\" :class=\"classObject\" v-if=\"href.match && href.match(/^\\//i)\">\n    <icon v-if=\"this.icon\" :icon-name=\"icon\"></icon>\n    <span class=\"link__underline\">\n        <slot></slot>\n    </span>\n</router-link>\n<a :href=\"href\" :to=\"href\" class=\"link\" :class=\"classObject\" v-else>\n    <icon v-if=\"this.icon\" :icon-name=\"icon\"></icon>\n    <span class=\"link__underline\">\n        <slot></slot>\n    </span>\n</a>\n";
 
 /***/ }),
-/* 180 */
+/* 182 */
 /***/ (function(module, exports) {
 
 module.exports = "<svg class=\"arrow--animated\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\">\n    <defs>\n        <clipPath id=\"mask\" class=\"arrow__mask\">\n            <rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" rotate=\"45deg\"/>\n        </clipPath>\n    </defs>\n    <g clip-path=\"url(#mask)\">\n        <path class=\"arrow__line arrow__line-1\" d=\"M15.3 55h94.8v10.1H15.3z\" clip-path=\"url(#mask)\" />\n        <path class=\"arrow__line arrow__line-2\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n        <path class=\"arrow__line arrow__line-3\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n    </g>\n</svg>";
