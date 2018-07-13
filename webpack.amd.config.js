@@ -27,12 +27,14 @@ const webpackConfig = {
     optimization: {
         minimize: false
     },
-    externals: {
-        'gsap': 'gsap', // {root: 'GreenSockGlobals'},
-        'vuex': 'vuex',
-        '/^lodash\/.+$/': 'lodash',
-        'core-js': 'core-js'
-    },
+    externals: [
+        'gsap',
+        'vue',
+        'vuex',
+        'lodash',
+        /^lodash\/.+$/,
+        'core-js'
+    ],
     module: {
         rules: [
             {
@@ -61,6 +63,6 @@ const webpackConfig = {
 
 const mergedConfig = merge(base, webpackConfig);
 
-// console.log(require('util').inspect(mergedConfig.module.rules, false, null));
+// console.log(require('util').inspect(mergedConfig, false, null, true));
 // process.exit(1);
 module.exports = mergedConfig;
