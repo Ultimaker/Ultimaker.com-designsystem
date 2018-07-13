@@ -1,6 +1,5 @@
 {
     "type": "ubr",
-    "title": "Lorum ipsum dolor sit amet",
     "description": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.",
     "reasons": [
         "Egestas Condimentum Malesuada",
@@ -10,8 +9,7 @@
         "Nullam id dolor id nibh ultricies vehicula ut id elit",
         "Donec ullamcorper nulla non metus auctor fringilla",
         "Cum sociis natoque penatibus et magnis dis parturient montes",
-        "Nulla vitae elit libero, a pharetra augue",
-        "Morbi leo risus, porta ac consectetur ac vestibulum at eros"
+        "Nulla vitae elit libero, a pharetra augue"
     ],
     "image": [
         {

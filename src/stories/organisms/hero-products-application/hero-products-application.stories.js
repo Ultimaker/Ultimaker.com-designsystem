@@ -9,6 +9,7 @@ storiesOf('organisms|hero', module)
             data: () => ({
                 heroProductsApplication: data
             }),
+            inject: ['data'],
             template: require('./hero-products-application.stories.html')
         };
     },
