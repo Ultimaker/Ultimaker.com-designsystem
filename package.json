@@ -4,14 +4,18 @@
   "description": "Ultimaker.com design system for vue components",
   "license": "UNLICENSED",
   "module": "dist/components.js",
-  "sideEffects": true,
+  "sideEffects": [
+    "*.css",
+    "*.scss"
+  ],
   "files": [
     "src",
     "dist"
   ],
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config webpack.amd.config.js --progress --hide-modules",
+    "clean": "rimraf dist/**",
+    "build": "npm run clean && cross-env NODE_ENV=production webpack --config webpack.amd.config.js --progress --hide-modules",
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.amd.config.js --progress --hide-modules",
     "build-storybook": "cross-env NODE_ENV=production build-storybook -s public",
     "storybook": "start-storybook -p 9090 -s public",
@@ -84,6 +88,7 @@
     "node-sass": "^4.9.0",
     "object-fit-images": "^3.2.3",
     "picturefill": "^3.0.2",
+    "rimraf": "^2.6.2",
     "sass-loader": "^7.0.1",
     "sass-mix": "^0.1.2",
     "style-loader": "^0.21.0",
