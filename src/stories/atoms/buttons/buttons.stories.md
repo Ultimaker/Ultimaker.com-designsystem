@@ -9,3 +9,5 @@ There are 3 different appearances, default, primary and secondary.
 - The default button can be used multiple times on a page standalone or combined with a secondary button.
 - The primary button only once on a page as a standalone cta.
 - The secondary button can be used multiple times on a page standalone or combined with a default button.
+
+The input and input submit button will always have the default appearance.
