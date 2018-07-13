@@ -25,6 +25,7 @@ storiesOf('organisms|hero', module)
                     labels
                 }
             }),
+            inject: ['data'],
             template: require('./hero-product.stories.html')
         };
     },
