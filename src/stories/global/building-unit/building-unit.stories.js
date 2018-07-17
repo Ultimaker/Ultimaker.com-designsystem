@@ -11,7 +11,7 @@ storiesOf('global', module)
                 <div class="building-unit building-unit--vertical"></div>
                 <div class="building-unit building-unit--vertical building-unit--hidden-sm"></div>
                 <div class="building-unit building-unit--half building-unit--vertical building-unit--hidden-md"></div>
-                <button class="button--secondary">Example pattern</button>
+                <button class="button button--secondary">Example pattern</button>
             </div>`
         }),
         {
