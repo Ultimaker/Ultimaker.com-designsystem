@@ -9,7 +9,7 @@ storiesOf('organisms|general-content', module)
         () => {
             const title = text('Title', data.title),
                 content = object('Text', data.text),
-                link = text('Link', data.contentLink.text),
+                contentLink = object('Link', data.contentLink),
                 reversed = boolean('Reversed', data.reversed),
                 image = object('Image', data.image);
 
@@ -19,7 +19,7 @@ storiesOf('organisms|general-content', module)
                         title,
                         text: content,
                         reversed,
-                        link,
+                        contentLink,
                         image
                     }
                 }),
