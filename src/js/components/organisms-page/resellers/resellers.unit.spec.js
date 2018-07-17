@@ -69,42 +69,33 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should render a max amount of cards set', () => {
+            it('should render a max amount of cards set at authorized section', () => {
                 const vm = mount(buildOptions),
-                    resellerSections = vm.$el.querySelectorAll('.reseller-section');
+                    resellerSectionAuthorized = vm.$el.querySelector('.reseller-section--authorized'),
+                    resellerItems = resellerSectionAuthorized.querySelectorAll('.reseller-list__item'),
+                    showAllButton = resellerSectionAuthorized.querySelectorAll('.reseller-list__button');
 
-                resellerSections.forEach(
-                    (element) => {
-                        let resellerItems = element.querySelectorAll('.reseller-list__item'),
-                            showAllButton = element.querySelectorAll('.reseller-list__button');
+                expect(resellerItems.length).toBeLessThanOrEqual(vm.showMax);
+                expect(showAllButton.length).toBe(1);
 
-                        expect(resellerItems.length).toBeLessThanOrEqual(vm.showMax);
-                        expect(showAllButton.length).toBe(1);
-                    }
-                );
                 vm.$destroy();
             });
 
             it('should render all cards if "Show all" button is clicked', (done) => {
                 const vm = mount(buildOptions),
-                    resellerSections = vm.$el.querySelectorAll('.reseller-section');
+                    resellerSectionAuthorized = vm.$el.querySelector('.reseller-section--authorized');
 
-                resellerSections.forEach(
-                    (element) => {
-                        vm.showAllAuthorizedResellers();
-                        vm.showAllPreferredResellers();
+                vm.showAllAuthorizedResellers();
 
-                        vm.$nextTick(() => {
-                            let resellerItems = element.querySelectorAll('.reseller-list__item'),
-                                showAllButton = element.querySelectorAll('.reseller-list__button');
+                vm.$nextTick(() => {
+                    let resellerItems = resellerSectionAuthorized.querySelectorAll('.reseller-list__item'),
+                        showAllButton = resellerSectionAuthorized.querySelectorAll('.reseller-list__button');
 
-                            expect(resellerItems.length).toBeGreaterThan(vm.showMax);
-                            expect(showAllButton.length).toBe(0);
-                            done();
-                            vm.$destroy();
-                        });
-                    }
-                );
+                    expect(resellerItems.length).toBeGreaterThan(vm.showMax);
+                    expect(showAllButton.length).toBe(0);
+                    done();
+                    vm.$destroy();
+                });
             });
         });
     });
