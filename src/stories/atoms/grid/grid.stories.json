@@ -2,16 +2,63 @@
     "defaultBreakpoint": "mobile",
     "columns": 12,
     "breakpoints": [
-        {"title": "mobile", "selector": "xxs"},
-        {"title": "mobile-xl", "selector": "xs"},
-        {"title": "tablet", "selector": "sm"},
-        {"title": "desktop", "selector": "md"},
-        {"title": "desktop-hd", "selector": "lg"}
+        {
+            "title": "mobile",
+            "selector": "xxs"
+        },
+        {
+            "title": "mobile-xl",
+            "selector": "xs"
+        },
+        {
+            "title": "tablet",
+            "selector": "sm"
+        },
+        {
+            "title": "desktop",
+            "selector": "md"
+        },
+        {
+            "title": "desktop-hd",
+            "selector": "lg"
+        }
     ],
     "justifications": [
-        {"title": "Space around", "modifier": "flexgrid--justify-space-around"},
-        {"title": "Space between", "modifier": "flexgrid--justify-space-between"},
-        {"title": "Space evenly", "modifier": "flexgrid--justify-space-evenly"},
-        {"title": "Justify right", "modifier": "flexgrid--justify-right"}
+        {
+            "title": "Space around",
+            "modifier": "flexgrid--justify-space-around",
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/100/100"
+                }
+            }
+        },
+        {
+            "title": "Space between",
+            "modifier": "flexgrid--justify-space-between",
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/100/100"
+                }
+            }
+        },
+        {
+            "title": "Space evenly",
+            "modifier": "flexgrid--justify-space-evenly",
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/100/100"
+                }
+            }
+        },
+        {
+            "title": "Justify right",
+            "modifier": "flexgrid--justify-right",
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/100/100"
+                }
+            }
+        }
     ]
 }
