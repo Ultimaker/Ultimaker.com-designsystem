@@ -2,6 +2,9 @@
     "card": {
         "name": "Reseller name",
         "preferred": false,
-        "href": "https://www.ultimaker.com"
+        "href": "https://www.ultimaker.com",
+        "labels": {
+            "visitWebsite": "Visit website"
+        }
     }
 }

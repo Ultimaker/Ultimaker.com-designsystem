@@ -15,7 +15,8 @@ storiesOf('Molecules|layout/cards', module)
                 data: () => ({
                     card: {
                         name,
-                        preferred
+                        preferred,
+                        labels: data.card.labels
                     }
                 }),
                 template: require('./reseller-card.stories.html')
