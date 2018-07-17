@@ -71,16 +71,16 @@
     }
 }
 
-.icon-button--underline {
+.icon-button--underline-large {
     @extend %fontSecondary;
-    @include font-ratio-rhythm(sec-xxs);
+    @include font-ratio-rhythm(sec-xs);
     @include min-tablet() {
-        @include font-ratio-rhythm(sec-xs);
+        @include font-ratio-rhythm(sec-s);
     }
 
     display: inline;
     position: relative;
-    padding-left: $iconSize * (5 / 3);
+    padding-left: $iconSizeLarge *  (5 / 3);
     color: $colorBlack;
 
     &, &:hover {
@@ -90,8 +90,8 @@
     .icon-button__icon {
         position: absolute;
         top: $buildingUnit;
-        left: $iconSize * (1 / 3);
-        font-size: $iconSize;
+        left: $iconSizeLarge * (1 / 3);
+        font-size: $iconSizeLarge;
     }
 
     .icon-button__label {
@@ -102,31 +102,12 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center bottom;
-        background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px);
+        background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px);
     }
-    
+
     &:hover, &:active, &:visited {
         .icon-button__label {
-            background-size: 0% 100%;
+            background-size: 0 100%;
         }
-    }
-}
-
-.icon-button--underline-large {
-    @extend .icon-button--underline;
-    @include font-ratio-rhythm(sec-xs);
-    @include min-tablet() {
-        @include font-ratio-rhythm(sec-s);
-    }
-
-    padding-left: $iconSizeLarge *  (5 / 3);
-
-    .icon-button__icon {
-        left: $iconSizeLarge * (1 / 3);
-        font-size: $iconSizeLarge;
-    }
-
-    .icon-button__label {
-        background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px);
     }
 }

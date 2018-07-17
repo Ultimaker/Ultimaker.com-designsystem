@@ -11,7 +11,6 @@
         {"title": "Default no label", "modifier": "", "showLabel": false},
         {"title": "Large no label", "modifier": "icon-button--large", "showLabel": false},
         {"title": "Small no label", "modifier": "icon-button--small", "showLabel": false},
-        {"title": "Underline", "modifier": "icon-button--underline", "showLabel": true},
         {"title": "Underline large", "modifier": "icon-button--underline-large", "showLabel": true}
     ]
 }
