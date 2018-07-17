@@ -2,7 +2,6 @@ export default {
     name: 'resellers',
     template: require('./resellers.html'),
     data: () => ({
-        visibleAllPreferredResellers: false,
         visibleAllAuthorizedResellers: false,
         visibleTooltipPreferred: false,
         showMax: 6
@@ -30,9 +29,6 @@ export default {
         },
         hideTooltipPreferred() {
             this.visibleTooltipPreferred = false;
-        },
-        showAllPreferredResellers() {
-            this.visibleAllPreferredResellers = true;
         },
         showAllAuthorizedResellers() {
             this.visibleAllAuthorizedResellers = true;
