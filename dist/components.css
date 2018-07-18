@@ -156,15 +156,15 @@ strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__it
 
 button, .button, input[type="button"], input[type="submit"], h1,
 h2,
-h3, q, .hero--products-application .hero__subtitle, .icon-button--underline, .icon-button--underline-large, .link--large, .currency, .main-nav__link, .search__input {
+h3, q, .hero--products-application .hero__subtitle, .icon-button--underline-large, .link--large, .currency, .main-nav__link, .search__input {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .fonts--stage-one button, .fonts--stage-one .button, .fonts--stage-one input[type="button"], .fonts--stage-one input[type="submit"], .fonts--stage-one h1,
   .fonts--stage-one h2,
-  .fonts--stage-one h3, .fonts--stage-one q, .fonts--stage-one .hero--products-application .hero__subtitle, .hero--products-application .fonts--stage-one .hero__subtitle, .fonts--stage-one .icon-button--underline, .fonts--stage-one .icon-button--underline-large, .fonts--stage-one .link--large, .fonts--stage-one .currency, .fonts--stage-one .main-nav__link, .fonts--stage-one .search__input {
+  .fonts--stage-one h3, .fonts--stage-one q, .fonts--stage-one .hero--products-application .hero__subtitle, .hero--products-application .fonts--stage-one .hero__subtitle, .fonts--stage-one .icon-button--underline-large, .fonts--stage-one .link--large, .fonts--stage-one .currency, .fonts--stage-one .main-nav__link, .fonts--stage-one .search__input {
     font-family: "fugue-init", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .fonts--stage-two button, .fonts--stage-two .button, .fonts--stage-two input[type="button"], .fonts--stage-two input[type="submit"], .fonts--stage-two h1,
   .fonts--stage-two h2,
-  .fonts--stage-two h3, .fonts--stage-two q, .fonts--stage-two .hero--products-application .hero__subtitle, .hero--products-application .fonts--stage-two .hero__subtitle, .fonts--stage-two .icon-button--underline, .fonts--stage-two .icon-button--underline-large, .fonts--stage-two .link--large, .fonts--stage-two .currency, .fonts--stage-two .main-nav__link, .fonts--stage-two .search__input {
+  .fonts--stage-two h3, .fonts--stage-two q, .fonts--stage-two .hero--products-application .hero__subtitle, .hero--products-application .fonts--stage-two .hero__subtitle, .fonts--stage-two .icon-button--underline-large, .fonts--stage-two .link--large, .fonts--stage-two .currency, .fonts--stage-two .main-nav__link, .fonts--stage-two .search__input {
     font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
@@ -1101,56 +1101,38 @@ h6 {
   .icon-button--reversed .icon-button__icon, .icon-button--reversed .sys-nav__icon, .icon-button--reversed .social-nav__icon {
     margin-left: auto; }
 
-.icon-button--underline, .icon-button--underline-large {
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 6px;
-  margin-bottom: 24px;
-  display: inline;
-  position: relative;
-  padding-left: 30px;
-  color: #000000; }
-  @media (min-width: 768px) {
-    .icon-button--underline, .icon-button--underline-large {
-      font-size: 18px;
-      line-height: 24px;
-      margin-top: 6px;
-      margin-bottom: 24px; } }
-  .icon-button--underline, .icon-button--underline-large, .icon-button--underline:hover, .icon-button--underline-large:hover {
-    background-color: transparent; }
-  .icon-button--underline .icon-button__icon, .icon-button--underline-large .icon-button__icon, .icon-button--underline .sys-nav__icon, .icon-button--underline-large .sys-nav__icon, .icon-button--underline .social-nav__icon, .icon-button--underline-large .social-nav__icon {
-    position: absolute;
-    top: 12px;
-    left: 6px;
-    font-size: 18px; }
-  .icon-button--underline .icon-button__label, .icon-button--underline-large .icon-button__label, .icon-button--underline .sys-nav__label, .icon-button--underline-large .sys-nav__label {
-    transition:  background-size 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-    margin: 0;
-    width: calc(100% - 0.1px);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px); }
-  .icon-button--underline:hover .icon-button__label, .icon-button--underline-large:hover .icon-button__label, .icon-button--underline:hover .sys-nav__label, .icon-button--underline-large:hover .sys-nav__label, .icon-button--underline:active .icon-button__label, .icon-button--underline-large:active .icon-button__label, .icon-button--underline:active .sys-nav__label, .icon-button--underline-large:active .sys-nav__label, .icon-button--underline:visited .icon-button__label, .icon-button--underline-large:visited .icon-button__label, .icon-button--underline:visited .sys-nav__label, .icon-button--underline-large:visited .sys-nav__label {
-    background-size: 0% 100%; }
-
 .icon-button--underline-large {
   font-size: 18px;
   line-height: 24px;
   margin-top: 6px;
   margin-bottom: 24px;
-  padding-left: 40px; }
+  display: inline;
+  position: relative;
+  padding-left: 40px;
+  color: #000000; }
   @media (min-width: 768px) {
     .icon-button--underline-large {
       font-size: 20px;
       line-height: 24px;
       margin-top: 5px;
       margin-bottom: 31px; } }
+  .icon-button--underline-large, .icon-button--underline-large:hover {
+    background-color: transparent; }
   .icon-button--underline-large .icon-button__icon, .icon-button--underline-large .sys-nav__icon, .icon-button--underline-large .social-nav__icon {
+    position: absolute;
+    top: 12px;
     left: 8px;
     font-size: 24px; }
   .icon-button--underline-large .icon-button__label, .icon-button--underline-large .sys-nav__label {
+    transition:  background-size 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    margin: 0;
+    width: calc(100% - 0.1px);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
+  .icon-button--underline-large:hover .icon-button__label, .icon-button--underline-large:hover .sys-nav__label, .icon-button--underline-large:active .icon-button__label, .icon-button--underline-large:active .sys-nav__label, .icon-button--underline-large:visited .icon-button__label, .icon-button--underline-large:visited .sys-nav__label {
+    background-size: 0 100%; }
 
 ul, .hero--text .content--rich ul,
 .list {
@@ -1186,6 +1168,8 @@ ul, .hero--text .content--rich ul,
     display: inline; }
     .caption-list__list-item:after {
       content: ","; }
+  .caption-list__list-item:last-child:before {
+    content: " and"; }
   .caption-list__list-item:last-child:after {
     content: "."; }
 

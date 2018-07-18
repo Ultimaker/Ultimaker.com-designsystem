@@ -85,9 +85,10 @@
     ],
     "labels": {
         "showAll": "Show all",
-        "moreInfo": "More info",
         "visitWebsite": "Visit website",
         "preferredResellers": "Preferred resellers",
+        "preferredResellersInfoLabel": "More info",
+        "preferredResellersInfoText": "Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
         "authorizedResellers": "Authorized resellers"
     }
 }

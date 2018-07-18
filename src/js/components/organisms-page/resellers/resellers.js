@@ -35,11 +35,18 @@ export default {
         }
     },
     computed: {
+        preferredResellersTooltipVisible() {
+            return this.labels.preferredResellersInfoText && this.labels.preferredResellersInfoLabel;
+        },
         resellersPreferred() {
             return this.resellers.filter(reseller => reseller.preferred === true);
         },
         resellersAuthorized() {
             return this.resellers.filter(reseller => reseller.preferred === false);
+        },
+        pagedResellersAuthorized() {
+            return this.visibleAllAuthorizedResellers ?
+                this.resellersAuthorized : this.resellersAuthorized.slice(0, this.showMax);
         }
     }
 };
