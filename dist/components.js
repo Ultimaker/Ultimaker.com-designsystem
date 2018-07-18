@@ -2425,7 +2425,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             var detectedCountries = [];
 
             try {
-                var detectedCountryByIp = find_default()(this.countries.country, { 'code': this.detectedCountry.code });
+                var detectedCountryByIp = find_default()(this.countries, { 'code': this.detectedCountry.code });
 
                 if (detectedCountryByIp) {
                     detectedCountries.push(detectedCountryByIp);
@@ -2455,7 +2455,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
             this.initPromise = Promise.all(countryPromises).then(function () {
                 _this.initialized = true;
                 if (_this.value && !_this.value.code && _this.selectedCountry && !_this.selectedCountry.code) {
-                    _this.selectedCountry = find_default()(_this.countries.country, { 'code': _this.detectedCountry.code });
+                    _this.selectedCountry = find_default()(_this.countries, { 'code': _this.detectedCountry.code });
                 }
             });
 
@@ -3370,7 +3370,7 @@ module.exports = "<nav aria-label=\"sub items\" class=\"sub-nav sub-nav--fixed\"
 /* 22 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"country-selector\" v-if=\"initialized\">\n    <auto-complete class=\"country-selector__auto-complete auto-complete--small\" ref=\"autocomplete\"\n        :placeholder=\"placeholder\"\n        title-field=\"name\" value-field=\"code\"\n        v-model=\"country\"\n        @input=\"countryChanged\"\n        @close=\"close\"\n        @changeFocus=\"focusClose\"\n        :items=\"countries.country\"\n        :stored-items=\"detectedCountries\"\n        default-open>\n    </auto-complete>\n    <!-- TODO: refactor out settings-selector__edit-button (see: https://jira.ultimaker.com:8443/browse/UWEB-4969)-->\n    <icon-button icon-name=\"close\" button-aria-label=\"Cancel\" ref=\"closeCountryPanel\"\n        button-class=\"country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed\"\n        @click=\"close\">\n    </icon-button>\n</div>";
+module.exports = "<div class=\"country-selector\" v-if=\"initialized\">\n    <auto-complete class=\"country-selector__auto-complete auto-complete--small\" ref=\"autocomplete\"\n        :placeholder=\"placeholder\"\n        title-field=\"name\" value-field=\"code\"\n        v-model=\"country\"\n        @input=\"countryChanged\"\n        @close=\"close\"\n        @changeFocus=\"focusClose\"\n        :items=\"countries\"\n        :stored-items=\"detectedCountries\"\n        default-open>\n    </auto-complete>\n    <!-- TODO: refactor out settings-selector__edit-button (see: https://jira.ultimaker.com:8443/browse/UWEB-4969)-->\n    <icon-button icon-name=\"close\" button-aria-label=\"Cancel\" ref=\"closeCountryPanel\"\n        button-class=\"country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed\"\n        @click=\"close\">\n    </icon-button>\n</div>";
 
 /***/ }),
 /* 23 */
