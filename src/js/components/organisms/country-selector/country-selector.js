@@ -26,7 +26,7 @@ export default {
             const detectedCountries = [];
 
             try {
-                const detectedCountryByIp = _find(this.countries.country, {'code': this.detectedCountry.code});
+                const detectedCountryByIp = _find(this.countries, {'code': this.detectedCountry.code});
 
                 if (detectedCountryByIp) {
                     detectedCountries.push(detectedCountryByIp);
@@ -58,7 +58,7 @@ export default {
             this.initPromise = Promise.all(countryPromises).then(() => {
                 this.initialized = true;
                 if ((this.value && !this.value.code) && (this.selectedCountry && !this.selectedCountry.code)) {
-                    this.selectedCountry = _find(this.countries.country, {'code': this.detectedCountry.code});
+                    this.selectedCountry = _find(this.countries, {'code': this.detectedCountry.code});
                 }
             });
 
