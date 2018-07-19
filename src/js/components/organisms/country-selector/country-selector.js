@@ -25,6 +25,10 @@ export default {
         detectedCountries() {
             const detectedCountries = [];
 
+            if (!this.detectedCountry || !this.detectedCountry.code) {
+                return detectedCountries;
+            }
+
             try {
                 const detectedCountryByIp = _find(this.countries, {'code': this.detectedCountry.code});
 
