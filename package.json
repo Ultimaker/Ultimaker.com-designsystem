@@ -1,7 +1,8 @@
 {
-  "name": "ultimaker.com-designsystem",
+  "name": "@ultimaker/ultimaker.com-designsystem",
   "version": "0.0.1",
   "description": "Ultimaker.com design system for vue components",
+  "repository": "github:Ultimaker/Ultimaker.com-designsystem",
   "license": "UNLICENSED",
   "module": "dist/components.js",
   "sideEffects": [
@@ -12,7 +13,6 @@
     "src",
     "dist"
   ],
-  "private": true,
   "scripts": {
     "clean": "rimraf dist/**",
     "build": "npm run clean && cross-env NODE_ENV=production webpack --config webpack.amd.config.js --progress --hide-modules",
@@ -26,7 +26,6 @@
     "lint": "eslint './src/js/**/*.js'",
     "lint:debug": "eslint './src/js/**/*.js' --debug"
   },
-  "repository": "github:Ultimaker/Ultimaker.com-designsystem",
   "dependencies": {
     "gsap": "^1.20.4",
     "vue": "^2.5.16",
