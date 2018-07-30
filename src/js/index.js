@@ -1,3 +1,6 @@
+import 'babel-polyfill';
+import 'whatwg-fetch';
+
 import ComponentRegistry from 'utils/component-registry';
 import Components from './components';
 import '../scss/ultimaker.scss';

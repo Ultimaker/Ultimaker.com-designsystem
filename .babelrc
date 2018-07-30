@@ -2,18 +2,10 @@
     "presets": [
         ["env", {
             "modules": false,
-            "uglify": true,
             "debug": false,
             "useBuiltIns": true
-        }]
-    ],
-    "plugins": [
-        "transform-object-rest-spread",
-        ["transform-runtime", {
-            "helpers": false,
-            "polyfill": false,
-            "regenerator": false
-        }]
+        }],
+        "stage-2"
     ],
     "comments": false,
     "env": {

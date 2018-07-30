@@ -57,7 +57,6 @@ module.exports = function(config) {
             suppressSkipped: true
         },
         files: [
-            '../node_modules/babel/browser-polyfill.js',
             '../src/js/**/*.unit.spec.js'
         ],
         preprocessors: {
