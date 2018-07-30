@@ -32,8 +32,10 @@ const webpackConfig = {
         'vue',
         'vuex',
         'lodash',
+        'whatwg-fetch',
         /^lodash\/.+$/,
-        'core-js'
+        'core-js',
+        /^core-js\/.+$/,
     ],
     module: {
         rules: [
