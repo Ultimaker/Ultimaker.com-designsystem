@@ -37,14 +37,23 @@ export default {
         if ((/Trident\//).test(window.navigator.userAgent)) {
             const requestOptions =  {
                     cache: 'cache',
-                    headers: new Headers()
+                    headers: new Headers({
+                        'Content-Type': 'image/svg+xml'
+                    })
                 },
                 request = new Request(this.iconUrl, requestOptions);
 
             fetch(request)
-                .then((result) => {
-                    const parser = new DOMParser(),
-                        doc = parser.parseFromString(result.data, 'image/svg+xml'),
+                .then(async(result) => {
+                    if (result.status < 200 || result.status >= 300) {
+                        console.log(`icon.js(fetch-icon): ${ result.statusText }`);
+
+                        return;
+                    }
+
+                    const data = await result.text(),
+                        parser = new DOMParser(),
+                        doc = parser.parseFromString(data, 'image/svg+xml'),
                         symbol = doc.querySelector(`#icon-${ this.iconName }`);
 
                     if (symbol !== null) {
@@ -61,6 +70,9 @@ export default {
                             symbolContainer.appendChild(clone.firstChild);
                         }
                     }
+                })
+                .catch((ex) => {
+                    console.log(`failed to fetch icon: ${ ex.message }`);
                 });
         }
     },
