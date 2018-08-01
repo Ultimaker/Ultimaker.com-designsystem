@@ -19,8 +19,9 @@
 
         <li class="flyout__list-item" v-if="links.length > maxVisible">
             <content-toggle class="flyout__toggle"
+                            :toggle-state="isExpanded"
                             aria-hidden="true"
-                            @toggle="isExpanded = !isExpanded">
+                            @toggle="toggleExpanded">
             </content-toggle>
         </li>
     </ul>
