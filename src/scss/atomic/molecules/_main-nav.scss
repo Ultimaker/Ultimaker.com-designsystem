@@ -64,6 +64,7 @@ $mainNavBorder: 1px solid $colorGray;
     @extend %reset-list;
 
     .main-nav--small & {
+        position: relative;
         top: 100%;
         left: 0;
         max-height: calc(100vh - #{ $navHeight });
