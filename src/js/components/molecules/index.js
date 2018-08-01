@@ -8,6 +8,8 @@ export {default as FauxVerticalScroll} from 'molecules/faux-vertical-scroll';
 export {default as Flyout} from 'molecules/flyout';
 export {default as FlyoutSection} from 'molecules/flyout-section';
 export {default as IconButton} from 'molecules/icon-button';
+export {default as MainNav} from 'molecules/main-nav';
+export {default as MainNavItem} from 'molecules/main-nav-item';
 export {default as Modal} from 'molecules/modal';
 export {default as Pager} from 'molecules/pager';
 export {default as ResellerCard} from 'molecules/reseller-card';
