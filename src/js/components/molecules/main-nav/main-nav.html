@@ -1,0 +1,16 @@
+<transition name="menu-switch" mode="out-in">
+    <nav key="large-menu" class="main-nav" :class="classList" aria-label="site">
+        <transition name="menu-open">
+            <ul class="main-nav__list" role="presentation">
+                <template v-for="(item, index) in items" v-if="items !== null">
+                    <main-nav-item
+                        :is-compact="showCompactMenu"
+                        @tab="focusNextMainNavItem(index)"
+                        @shifttab="focusPrevMainNavItem(index)"
+                        v-bind="item">
+                    </main-nav-item>
+                </template>
+            </ul>
+        </transition>
+    </nav>
+</transition>

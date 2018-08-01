@@ -1,0 +1,46 @@
+<li class="main-nav__item" role="menuitem" :class="{ 'main-nav__item--active': active }"
+    @mouseleave="delayHideFlyout" @mouseenter="showFlyout">
+
+    <template v-if="isCompact">
+        <router-link @click="$emit('closeMainNav')" :to="href" class="main-nav__link" :aria-current="isActive">{{ title }}</router-link>
+        <flyout v-if="sections" @close="$emit('closeMainNav')" :sections="sections" :is-compact="true" :disable-keyboard-events="true"></flyout>
+    </template>
+
+    <template v-else-if="!isCompact && sections">
+        <router-link :to="href" ref="parent"
+           class="main-nav__link"
+           @keydown.down.self.prevent="selectFirstFlyoutItem"
+           @keydown.tab.self.exact.prevent="selectNextNavItem"
+           @keydown.tab.shift.self.exact.prevent="selectPrevNavItem"
+           @focus="showFlyout"
+           @click.native="hideFlyout"
+           aria-haspopup="true"
+           :aria-controls="itemId"
+           :aria-current="isActive"
+           :aria-expanded="flyoutIsOpen">
+            {{ title }}
+        </router-link>
+
+        <icon-button class="icon-button--small main-nav__toggle disable-focus" icon-name="angle-up"
+                     @click="hideFlyout" v-if="!isCompact && isTouch && flyoutIsOpen" tabindex="-1"></icon-button>
+        <icon-button class="icon-button--small main-nav__toggle disable-focus" icon-name="angle-down"
+                     @click="showFlyout" v-if="!isCompact && isTouch && !flyoutIsOpen" tabindex="-1"></icon-button>
+
+
+        <transition name="flyout-open">
+            <flyout :id="itemId"
+                    @keydown.esc.native="selectParent"
+                    @open="showFlyout"
+                    @close="hideFlyout"
+                    @main="selectParent"
+                    class="flyout--large"
+                    v-if="flyoutIsOpen"
+                    :sections="sections">
+            </flyout>
+        </transition>
+    </template>
+
+    <template v-else>
+        <router-link :to="href" class="main-nav__link" :aria-current="isActive">{{ title }}</router-link>
+    </template>
+</li>
