@@ -4,6 +4,7 @@ export default {
 
     data() {
         return {
+            isExpanded: false,
             columnClassDouble: 'flyout__section--2-columns',
             columnClassTriple: 'flyout__section--3-columns'
         };
@@ -11,10 +12,6 @@ export default {
     props: {
         isCompact: {
             type: Boolean
-        },
-        isExpanded: {
-            type: Boolean,
-            default: false
         },
         maxVisible: {
             type: Number,
@@ -61,6 +58,11 @@ export default {
             }
 
             return '';
+        }
+    },
+    methods: {
+        toggleExpanded() {
+            this.isExpanded = !this.isExpanded;
         }
     }
 };

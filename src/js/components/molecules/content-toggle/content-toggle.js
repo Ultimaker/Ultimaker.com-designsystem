@@ -33,7 +33,6 @@ export default {
     },
     methods: {
         toggle() {
-            this.toggleState = !this.toggleState;
             this.$emit('toggle');
         }
     }
