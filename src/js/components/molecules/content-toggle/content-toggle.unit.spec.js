@@ -22,7 +22,6 @@ describe('components', () => {
                 spyOn(vm, '$emit');
                 vm.$el.dispatchEvent(click);
                 expect(vm.$emit).toHaveBeenCalledWith('toggle');
-                expect(vm.toggleState).toBe(true);
                 vm.$destroy();
             });
 
@@ -36,11 +35,9 @@ describe('components', () => {
                     }
                 });
 
-                expect(vm.toggleState).toBe(false);
                 expect(vm.toggleIcon).toBe(vm.collapsedIcon);
                 expect(vm.toggleText).toBe(vm.collapsedText);
-                vm.$el.dispatchEvent(click);
-                expect(vm.toggleState).toBe(true);
+                vm.toggleState = true;
                 expect(vm.toggleIcon).toBe(vm.expandedIcon);
                 expect(vm.toggleText).toBe(vm.expandedText);
                 vm.$destroy();
