@@ -4,6 +4,7 @@ import 'whatwg-fetch';
 import ComponentRegistry from 'utils/component-registry';
 import Components from './components';
 import '../scss/ultimaker.scss';
+
 // import all icons from src/icons/.. as svg sprite
 /* eslint-disable no-unused-vars */
 const __svg__ = {
