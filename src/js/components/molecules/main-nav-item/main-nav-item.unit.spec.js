@@ -2,7 +2,7 @@
 import {build} from 'vuenit';
 import MainNavItem from './main-nav-item';
 
-fdescribe('components', () => {
+describe('components', () => {
     describe('molecules', () => {
         describe('main-nav-item', () => {
             const fixture = require('./main-nav-item.unit.spec.json'),
