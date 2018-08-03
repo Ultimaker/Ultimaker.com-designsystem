@@ -1,4 +1,3 @@
-import Defaults from 'constants/defaults';
 import ViewportUtil from 'utils/viewport';
 
 export default {
@@ -15,8 +14,7 @@ export default {
         }
     },
     data: () => ({
-        viewportUtil: new ViewportUtil(),
-        maxMobileRes: Defaults.breakpoints.tablet.max + 1
+        viewportUtil: new ViewportUtil()
     }),
     computed: {
         classList() {
@@ -27,12 +25,12 @@ export default {
             };
         },
         showCompactMenu() {
-            return this.viewportUtil.screenWidth < this.maxMobileRes;
+            return this.viewportUtil.isTablet;
         }
     },
     methods: {
         focusNextMainNavItem(index) {
-            const nextMainNavItem = this.$el.querySelectorAll('.main-nav__link')[index + 1];
+            const nextMainNavItem = this.$refs.navItem[index + 1];
 
             if (nextMainNavItem) {
                 nextMainNavItem.focus();
@@ -41,7 +39,7 @@ export default {
             }
         },
         focusPrevMainNavItem(index) {
-            const prevMainNavItem = this.$el.querySelectorAll('.main-nav__link')[index - 1];
+            const prevMainNavItem = this.$refs.navItem[index - 1];
 
             if (prevMainNavItem) {
                 prevMainNavItem.focus();
