@@ -42,6 +42,13 @@ export default {
         }
     },
     methods: {
+        focus() {
+            const navLink = this.$refs.parent;
+
+            if (navLink && navLink.$el) {
+                navLink.$el.focus();
+            }
+        },
         async showFlyout() {
             await this.$nextTick();
 
