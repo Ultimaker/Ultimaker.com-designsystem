@@ -9,7 +9,6 @@ import 'whatwg-fetch';
 
 import {registry} from 'src/js';
 import 'src/scss/storybook.scss';
-import 'components/generic/faux-router-link/faux-router-link';
 import storyRoot from 'src/stories/story.root.js';
 import viewPort from "utils/viewport";
 
