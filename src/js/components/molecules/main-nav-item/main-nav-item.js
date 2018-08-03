@@ -1,7 +1,6 @@
-import Vue from 'vue';
 import BrowserCapabilities from 'utils/browser-capabilities';
 
-export default Vue.component('main-nav-item', {
+export default {
     name: 'main-nav-item',
     template: require('./main-nav-item.html'),
     data() {
@@ -37,10 +36,15 @@ export default Vue.component('main-nav-item', {
     computed: {
         isActive() {
             return this.active ? 'page' : false;
+        },
+        angleDirection() {
+            return this.flyoutIsOpen ? 'angle-up' : 'angle-down';
         }
     },
     methods: {
-        showFlyout() {
+        async showFlyout() {
+            await this.$nextTick();
+
             if (this.hideTimeout) {
                 clearTimeout(this.hideTimeout);
                 this.hideTimeout = null;
@@ -50,23 +54,29 @@ export default Vue.component('main-nav-item', {
         hideFlyout() {
             this.flyoutIsOpen = false;
         },
-        delayHideFlyout() {
-            if (this.hideTimeout === null) {
-                this.hideTimeout = setTimeout(() => {
-                    this.hideTimeout = null;
-                    this.hideFlyout();
-                }, 100);
-            }
+        toggleFlyout() {
+            this.flyoutIsOpen = !this.flyoutIsOpen;
         },
-        selectFirstFlyoutItem() {
-            this.showFlyout();
-            Vue.nextTick(() => {
-                const firstFlyoutItem = this.$el.querySelector('.flyout__link');
-
-                if (firstFlyoutItem) {
-                    firstFlyoutItem.focus();
+        delayHideFlyout() {
+            return new Promise(resolve => {
+                if (this.hideTimeout === null) {
+                    this.hideTimeout = setTimeout(() => {
+                        this.hideTimeout = null;
+                        this.hideFlyout();
+                        resolve();
+                    }, 100);
                 }
             });
+        },
+        async selectFirstFlyoutItem() {
+            this.showFlyout();
+            await this.$nextTick();
+
+            const firstFlyoutItem = this.$el.querySelector('.flyout__link');
+
+            if (firstFlyoutItem) {
+                firstFlyoutItem.focus();
+            }
         },
         selectNextNavItem() {
             this.hideFlyout();
@@ -77,9 +87,10 @@ export default Vue.component('main-nav-item', {
             this.$emit('shifttab');
         },
         selectParent() {
-            this.$refs.parent.focus();
+            if (this.isCompact) { return; }
+
+            this.$refs.parent.$el.focus();
             this.hideFlyout();
         }
     }
-});
-
+};
