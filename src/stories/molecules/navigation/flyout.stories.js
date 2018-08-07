@@ -22,4 +22,3 @@ storiesOf('Molecules|navigation', module)
             notes: {markdown: require('./flyout.stories.md')}
         }
     );
-
