@@ -1,6 +1,7 @@
 import {configure, addDecorator} from '@storybook/vue';
 import {setOptions} from '@storybook/addon-options';
 import {withNotes} from '@storybook/addon-notes';
+import storyRouter from 'storybook-vue-router';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import 'babel-core/register';
@@ -22,6 +23,7 @@ setOptions({
 Vue.use(registry);
 
 addDecorator(withNotes);
+addDecorator(storyRouter());
 
 addDecorator((story) => ({
     components: {
