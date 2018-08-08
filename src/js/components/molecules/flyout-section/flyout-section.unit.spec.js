@@ -22,7 +22,8 @@ describe('components', () => {
             it('should render a title', () => {
                 const vm = mount({
                         props: {
-                            title: fixture.title
+                            title: fixture.title,
+                            links: fixture.links
                         }
                     }),
                     title = vm.$el.querySelector('.flyout__title');
@@ -42,7 +43,7 @@ describe('components', () => {
                     links = vm.$el.querySelectorAll('.flyout__link'),
                     bottomLinks = vm.$el.querySelectorAll('.flyout__link--cta-mini');
 
-                expect(links.length).toBe(fixture.links.length);
+                expect(links.length).toBe(fixture.links.length * 2);
                 expect(bottomLinks.length).toBe(fixture.bottomLinks.length);
                 expect(links[0].textContent).toEqual(fixture.links[0].title);
                 vm.$destroy();
