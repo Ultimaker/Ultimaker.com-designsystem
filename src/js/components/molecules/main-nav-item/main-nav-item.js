@@ -39,6 +39,9 @@ export default {
         },
         angleDirection() {
             return this.flyoutIsOpen ? 'angle-up' : 'angle-down';
+        },
+        flyoutTransitionName() {
+            return this.isCompact ? '' : 'flyout-open';
         }
     },
     methods: {
@@ -59,6 +62,7 @@ export default {
             this.flyoutIsOpen = true;
         },
         hideFlyout() {
+            this.$emit('closeMainNav');
             this.flyoutIsOpen = false;
         },
         toggleFlyout() {
