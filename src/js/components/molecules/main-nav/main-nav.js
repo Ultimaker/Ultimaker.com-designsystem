@@ -14,7 +14,9 @@ export default {
         }
     },
     data: () => ({
-        viewportUtil: new ViewportUtil()
+        viewportUtil: new ViewportUtil(),
+        showCompactMenu: null,
+        ready: false
     }),
     computed: {
         classList() {
@@ -24,11 +26,19 @@ export default {
                 'main-nav--open': this.mainNavOpen && this.showCompactMenu
             };
         },
-        showCompactMenu() {
-            return this.viewportUtil.isTablet;
+        transitionName() {
+            if (this.ready && this.isCompact) {
+                return 'menu-open';
+            }
+
+            return '';
         }
     },
     methods: {
+        handleResize() {
+            this.showCompactMenu = this.viewportUtil.isTablet;
+            this.ready = true;
+        },
         focusNextMainNavItem(index) {
             const nextMainNavItem = this.$refs.navItem[index + 1];
 
@@ -47,5 +57,19 @@ export default {
                 this.$emit('focusNext');
             }
         }
+    },
+    beforeMount() {
+        this.viewportUtil.addResizeHandler(this.handleResize);
+        this.ready = false;
+
+        // trigger resize sets ready to true, so component doesn't animate when dehydrating/instantiating
+        this.viewportUtil.triggerResize();
+        // timeout when trigger resize doesn't fire
+        setTimeout(() => {
+            this.ready = true;
+        }, 100);
+    },
+    beforeDestroy() {
+        this.viewportUtil.removeResizeHandler(this.handleResize);
     }
 };

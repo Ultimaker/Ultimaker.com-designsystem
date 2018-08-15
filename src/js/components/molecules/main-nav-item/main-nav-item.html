@@ -1,48 +1,36 @@
 <li class="main-nav__item" role="menuitem" :class="{ 'main-nav__item--active': active }"
     @mouseleave="delayHideFlyout" @mouseenter="showFlyout">
 
-    <template v-if="isCompact">
-        <router-link @click="$emit('closeMainNav')" :to="href" class="main-nav__link" :aria-current="isActive">{{ title
-            }}
+    <div @keydown.down.prevent="selectFirstFlyoutItem"
+         @keydown.tab.exact.prevent="selectNextNavItem"
+         @keydown.tab.shift.exact.prevent="selectPrevNavItem"
+         @keydown.esc.prevent="hideFlyout">
+        <router-link :to="href" ref="parent"
+                     class="main-nav__link"
+                     @focus="showFlyout"
+                     @click.native="hideFlyout"
+                     aria-haspopup="true"
+                     :aria-controls="itemId"
+                     :aria-current="isActive"
+                     :aria-expanded="!isCompact && flyoutIsOpen">
+            {{ title }}
         </router-link>
-        <flyout v-if="sections" @close="$emit('closeMainNav')" :sections="sections" :is-compact="true"
-                :disable-keyboard-events="true"></flyout>
-    </template>
+    </div>
 
-    <template v-else-if="!isCompact && sections">
-        <div @keydown.down.prevent="selectFirstFlyoutItem"
-             @keydown.tab.exact.prevent="selectNextNavItem"
-             @keydown.tab.shift.exact.prevent="selectPrevNavItem">
-            <router-link :to="href" ref="parent"
-                         class="main-nav__link"
-                         @focus="showFlyout"
-                         @click.native="hideFlyout"
-                         aria-haspopup="true"
-                         :aria-controls="itemId"
-                         :aria-current="isActive"
-                         :aria-expanded="flyoutIsOpen">
-                {{ title }}
-            </router-link>
-        </div>
-
-        <icon-button class="icon-button--small main-nav__toggle disable-focus" :icon-name="angleDirection"
-                     @click="toggleFlyout" v-if="!isCompact && isTouch" tabindex="-1"></icon-button>
+    <icon-button class="icon-button--small main-nav__toggle disable-focus" :icon-name="angleDirection"
+                 @click="toggleFlyout" v-show="!isCompact && isTouch" tabindex="-1"></icon-button>
 
 
-        <transition name="flyout-open">
-            <flyout :id="itemId"
-                    @keydown.esc.native="selectParent"
-                    @open="showFlyout"
-                    @close="hideFlyout"
-                    @main="selectParent"
-                    class="flyout--large"
-                    v-if="flyoutIsOpen"
-                    :sections="sections">
-            </flyout>
-        </transition>
-    </template>
-
-    <template v-else>
-        <router-link :to="href" class="main-nav__link" :aria-current="isActive">{{ title }}</router-link>
-    </template>
+    <transition :name="flyoutTransitionName">
+        <flyout :id="itemId" v-if="sections"
+                @keydown.esc.native="selectParent"
+                @open="showFlyout"
+                @close="hideFlyout"
+                @main="selectParent"
+                class="flyout--large"
+                v-show="isCompact || flyoutIsOpen"
+                :sections="sections"
+                :is-compact="isCompact">
+        </flyout>
+    </transition>
 </li>
