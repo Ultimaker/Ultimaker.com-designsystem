@@ -38,24 +38,6 @@ export default {
         handleResize() {
             this.showCompactMenu = this.viewportUtil.isTablet;
             this.ready = true;
-        },
-        focusNextMainNavItem(index) {
-            const nextMainNavItem = this.$refs.navItem[index + 1];
-
-            if (nextMainNavItem) {
-                nextMainNavItem.focus();
-            } else {
-                this.$emit('focusPrev');
-            }
-        },
-        focusPrevMainNavItem(index) {
-            const prevMainNavItem = this.$refs.navItem[index - 1];
-
-            if (prevMainNavItem) {
-                prevMainNavItem.focus();
-            } else {
-                this.$emit('focusNext');
-            }
         }
     },
     beforeMount() {

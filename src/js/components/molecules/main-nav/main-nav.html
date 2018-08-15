@@ -5,8 +5,6 @@
                 <main-nav-item v-if="items !== null" ref="navItem"
                     v-for="(item, index) in items" :key="index"
                     :is-compact="showCompactMenu"
-                    @tab="focusNextMainNavItem(index)"
-                    @shifttab="focusPrevMainNavItem(index)"
                     v-bind="item">
                 </main-nav-item>
             </ul>
