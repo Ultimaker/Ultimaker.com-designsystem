@@ -2,8 +2,7 @@
     @mouseleave="delayHideFlyout" @mouseenter="showFlyout">
 
     <div @keydown.down.prevent="selectFirstFlyoutItem"
-         @keydown.tab.exact.prevent="selectNextNavItem"
-         @keydown.tab.shift.exact.prevent="selectPrevNavItem"
+         @keydown.tab.shift.exact="hideFlyout"
          @keydown.esc.prevent="hideFlyout">
         <router-link :to="href" ref="parent"
                      class="main-nav__link"

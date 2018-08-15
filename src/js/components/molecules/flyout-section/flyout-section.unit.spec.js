@@ -43,7 +43,7 @@ describe('components', () => {
                     links = vm.$el.querySelectorAll('.flyout__link'),
                     bottomLinks = vm.$el.querySelectorAll('.flyout__link--cta-mini');
 
-                expect(links.length).toBe(fixture.links.length * 2);
+                expect(links.length).toBe(fixture.links.length);
                 expect(bottomLinks.length).toBe(fixture.bottomLinks.length);
                 expect(links[0].textContent).toEqual(fixture.links[0].title);
                 vm.$destroy();
