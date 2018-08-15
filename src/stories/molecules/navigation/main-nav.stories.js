@@ -8,7 +8,10 @@ storiesOf('Molecules|navigation', module)
         () => ({
             template: require('./main-nav.stories.html'),
             data: () => ({
-                mainNavData
+                mainNavData: {
+                    ...mainNavData,
+                    mainNavOpen: true
+                }
             })
         }),
         {

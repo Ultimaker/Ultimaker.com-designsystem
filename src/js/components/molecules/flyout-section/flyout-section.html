@@ -11,7 +11,7 @@
             </li>
         </template>
 
-        <li class="flyout__list-item" v-if="isCompact && links.length > maxVisible">
+        <li class="flyout__list-item" v-if="flyoutToggleIsVisible">
             <content-toggle class="flyout__toggle"
                             ref="focusable"
                             :toggle-state="isExpanded"

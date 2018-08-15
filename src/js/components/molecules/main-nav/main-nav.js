@@ -25,13 +25,6 @@ export default {
                 'main-nav--large': !this.showCompactMenu,
                 'main-nav--open': this.mainNavOpen && this.showCompactMenu
             };
-        },
-        transitionName() {
-            if (this.ready && this.isCompact) {
-                return 'menu-open';
-            }
-
-            return '';
         }
     },
     methods: {

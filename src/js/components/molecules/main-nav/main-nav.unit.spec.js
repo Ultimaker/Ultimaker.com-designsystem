@@ -8,7 +8,7 @@ describe('components', () => {
     describe('molecules', () => {
         describe('main-nav', () => {
             const fixture = require('./main-nav.unit.spec.json'),
-                mount = build(MainNav, fixture);
+                mount = build(MainNav, {props: fixture});
 
             it('should detect the mobile device type', () => {
                 const viewportUtil = new ViewportUtil(),
