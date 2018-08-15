@@ -1,7 +1,9 @@
 {
-    "itemId": "nav-one",
-    "href": "#nav-one",
-    "title": "Nav section one",
-    "sections": [],
-    "active": false
+    "props": {
+        "itemId": "nav-one",
+        "href": "#nav-one",
+        "title": "Nav section one",
+        "sections": [],
+        "active": false
+    }
 }

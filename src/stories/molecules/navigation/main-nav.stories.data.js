@@ -29,6 +29,5 @@ export default {
             sections: flyoutData.sections,
             active: false
         }
-    ],
-    mainNavOpen: true
+    ]
 };

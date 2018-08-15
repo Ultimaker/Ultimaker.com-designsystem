@@ -1,12 +1,13 @@
 /* eslint-disable max-nested-callbacks */
 import {build} from 'vuenit';
 import MainNavItem from './main-nav-item';
+import BrowserCapabilities from 'utils/browser-capabilities';
 
 describe('components', () => {
     describe('molecules', () => {
         describe('main-nav-item', () => {
             const fixture = require('./main-nav-item.unit.spec.json'),
-                mount = build(MainNavItem, fixture);
+                mount = build(MainNavItem, {props: fixture});
 
             it('should be in a closed state by default', () => {
                 const vm = mount();
@@ -98,6 +99,23 @@ describe('components', () => {
                 vm.selectParent();
                 expect(vm.$refs.parent.$el.focus).toHaveBeenCalled();
                 expect(vm.flyoutIsOpen).toEqual(false);
+
+                vm.$destroy();
+            });
+
+            it('should display a toggle for touch desktop devices', () => {
+                spyOnProperty(BrowserCapabilities, 'supportsTouch', 'get').and.returnValue(true);
+
+                const vm = mount({
+                    props: {
+                        sections: [],
+                        isCompact: false
+                    }
+                });
+
+                expect(vm.toggleIsVisible).toBeTruthy();
+
+                vm.$destroy();
             });
         });
     });

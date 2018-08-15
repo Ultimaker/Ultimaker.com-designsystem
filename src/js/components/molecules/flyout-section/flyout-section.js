@@ -58,6 +58,9 @@ export default {
             }
 
             return '';
+        },
+        flyoutToggleIsVisible() {
+            return this.isCompact && this.links.length > this.maxVisible;
         }
     },
     methods: {

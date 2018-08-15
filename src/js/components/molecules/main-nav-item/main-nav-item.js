@@ -42,6 +42,9 @@ export default {
         },
         flyoutTransitionName() {
             return this.isCompact ? '' : 'flyout-open';
+        },
+        toggleIsVisible() {
+            return !!this.sections && !this.isCompact && this.isTouch;
         }
     },
     methods: {

@@ -16,8 +16,11 @@
         </router-link>
     </div>
 
-    <icon-button class="icon-button--small main-nav__toggle disable-focus" :icon-name="angleDirection"
-                 @click="toggleFlyout" v-show="!isCompact && isTouch" tabindex="-1"></icon-button>
+    <icon-button class="icon-button--small main-nav__toggle disable-focus"
+                 :icon-name="angleDirection"
+                 v-if="toggleIsVisible"
+                 @click="toggleFlyout" tabindex="-1">
+    </icon-button>
 
 
     <transition :name="flyoutTransitionName">
