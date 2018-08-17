@@ -1,15 +1,17 @@
 $resellerCardTabletMarginBottom: $buildingUnit * 2;
 $resellerCardMobileMarginBottom: $buildingUnit;
 
+$resellerCardBorderSize: 1px;
+$resellerCardPadding: $buildingUnit * 1.5;
+$resellerLinkCorrection: 2px;
+
 .reseller-card {
-    $resellerCardBorderSize: 1px;
 
     display: flex;
     flex-direction: column;
 
     max-width: $mobileXlWidth;
 
-    padding: ($buildingUnit * 1.5) - $resellerCardBorderSize;
     margin-bottom: $resellerCardMobileMarginBottom;
     @include min-tablet {
         margin-bottom: $resellerCardTabletMarginBottom;
@@ -22,59 +24,65 @@ $resellerCardMobileMarginBottom: $buildingUnit;
     box-sizing: border-box;
 
     @include micro-animate(color, background);
-    @extend %reset-last-margin;
 
-    & > * {
-        width: auto;
+    &:hover {
+        color: inherit;
+        background: $colorGrayLight;
     }
 
     &:focus,
     &:hover:focus,
-    &:focus:active{
+    &:focus:active {
         border-color: lighten($colorMain, $tintHoverFocus);
         @extend %focus;
 
-        & > *,
-        & > * > * {
+        & * {
             color: $colorWhite;
         }
     }
 
-    &:hover {
-        color: $colorBlack;
-        background: darken($colorWhite, $tintHoverFocus);
-        border: $resellerCardBorderSize solid $colorGrayLight;
-    }
-
     &:hover,
     &:focus {
-        .reseller-link .link__underline {
+        //simulate hover or focus on content-link
+        .faux-content-link .link__underline {
             background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px);
             background-size: 0% 100%;
         }
     }
+}
 
-    &__info {
-        color: $colorGrayDark;
+.reseller-card__header {
+    display: flex;
+    flex-direction: row;
+    padding: $resellerCardPadding;
+    padding-bottom: 0;
+}
+
+.reseller-card__image-wrapper {
+    width: $buildingUnit * 5;
+    margin-right: $resellerCardPadding;
+}
+
+.reseller-card__description {
+    display: flex;
+    flex-direction: column;
+    @extend %reset-last-margin;
+}
+
+.reseller-card__showroom-count {
+    @extend .copy--small;
+    color: $colorGrayDark;
+}
+
+.reseller-card__footer {
+    text-align: right;
+    padding: ($buildingUnit + $resellerLinkCorrection) $resellerCardPadding $buildingUnit $resellerCardPadding;
+
+    @include min-tablet {
+        padding-bottom: ($buildingUnit - $resellerLinkCorrection);
     }
 }
 
-.reseller-badge {
-    color: $colorMain;
-    @include micro-animate(color);
-
-    &__icon {
-        color: inherit;
-
-        font-size: initial;
-        transform: translateY(0.1em);
-    }
-
-    &__label {
-        font-weight: bold;
-    }
-
-    &--inline {
-        display: inline;
-    }
+.reseller-card__link {
+    margin: 0;
 }

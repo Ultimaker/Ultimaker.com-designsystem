@@ -3,7 +3,7 @@
         <h2 class="resellers__title">{{title}}</h2>
         <section class="reseller-section reseller-section--preferred" v-if="resellers">
             <header class="reseller-section__header">
-                <h3 class="reseller-section__title">{{ labels.preferredResellers }} 
+                <h3 class="reseller-section__title">{{ labels.preferredResellers }}
                     <span class="reseller-section__count">({{resellersPreferred.length}})</span>
                     <template v-if="preferredResellersTooltipVisible">
                         <transition name="tooltip">
@@ -30,7 +30,7 @@
             <ul class="reseller-list" v-if="resellersPreferred.length > 0">
                 <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
                     <template v-for="reseller in resellersPreferred">
-                        <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6">
+                        <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6">
                             <li class="reseller-list__item">
                                 <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
                             </li>
@@ -48,7 +48,7 @@
             </header>
             <ul class="reseller-list" v-if="resellersAuthorized.length > 0">
                 <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
-                    <div class="flexgrid__cell--sm-4 flexgrid__cell--xs-6" v-for="(reseller, index) in pagedResellersAuthorized">
+                    <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6" v-for="(reseller, index) in pagedResellersAuthorized">
                         <li class="reseller-list__item">
                             <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
                         </li>
