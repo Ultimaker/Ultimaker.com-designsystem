@@ -6,11 +6,13 @@
             }
         },
         "name": "Reseller name",
-        "preferred": false,
+        "preferred": true,
         "showroomCount": 2,
         "href": "https://www.ultimaker.com",
         "labels": {
-            "visitWebsite": "Visit website"
+            "visitWebsite": "Visit website",
+            "multiShowroomLabel": "showrooms",
+            "singleShowroomLabel": "showroom"
         }
     }
 }
