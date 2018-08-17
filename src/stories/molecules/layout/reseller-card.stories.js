@@ -1,6 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import data from './reseller-card.stories.json';
-import {withKnobs, text, boolean} from '@storybook/addon-knobs';
+import {withKnobs, text, object, boolean} from '@storybook/addon-knobs';
 
 
 storiesOf('Molecules|layout/cards', module)
@@ -9,13 +9,15 @@ storiesOf('Molecules|layout/cards', module)
         'Reseller card',
         () => {
             const name = text('Name', data.card.name),
-                preferred = boolean('Preferred', data.card.preferred);
+                image = object('Image', data.card.image);
 
             return {
                 data: () => ({
                     card: {
                         name,
-                        preferred,
+                        image,
+                        showroomCount: data.card.showroomCount,
+                        href: '/reseller',
                         labels: data.card.labels
                     }
                 }),

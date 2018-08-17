@@ -2,81 +2,170 @@
     "title": "Find yourself a reseller",
     "resellers": [
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 1",
             "preferred": true,
+            "showroomCount": 1,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 2",
             "preferred": true,
+            "showroomCount": 2,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 3",
             "preferred": true,
+            "showroomCount": 1,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 4",
             "preferred": true,
+            "showroomCount": 1,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 5",
             "preferred": true,
+            "showroomCount": 3,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 6",
             "preferred": true,
+            "showroomCount": 1,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 7",
             "preferred": true,
+            "showroomCount": 1,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 8",
             "preferred": true,
+            "showroomCount": 1,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 9",
             "preferred": true,
+            "showroomCount": 1,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 10",
             "preferred": false,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 11",
             "preferred": false,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 12",
             "preferred": false,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 13",
             "preferred": false,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 14",
             "preferred": false,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 15",
             "preferred": false,
             "href": "#"
         },
         {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
             "name": "Test reseller 16",
             "preferred": false,
             "href": "#"

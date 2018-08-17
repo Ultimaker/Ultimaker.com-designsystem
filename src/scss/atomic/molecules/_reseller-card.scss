@@ -1,15 +1,17 @@
 $resellerCardTabletMarginBottom: $buildingUnit * 2;
 $resellerCardMobileMarginBottom: $buildingUnit;
 
+$resellerCardBorderSize: 1px;
+$resellerCardPadding: $buildingUnit * 1.5;
+
 .reseller-card {
-    $resellerCardBorderSize: 1px;
 
     display: flex;
     flex-direction: column;
 
     max-width: $mobileXlWidth;
 
-    padding: ($buildingUnit * 1.5) - $resellerCardBorderSize;
+    padding: ($resellerCardPadding) - $resellerCardBorderSize;
     margin-bottom: $resellerCardMobileMarginBottom;
     @include min-tablet {
         margin-bottom: $resellerCardTabletMarginBottom;
@@ -57,6 +59,34 @@ $resellerCardMobileMarginBottom: $buildingUnit;
     &__info {
         color: $colorGrayDark;
     }
+}
+
+.reseller-card__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.reseller-card__image-wrapper {
+    width: $buildingUnit * 5;
+    margin: 0 $resellerCardPadding $resellerCardPadding 0;
+}
+
+.reseller-card__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.reseller-card__showroom-count {
+    @extend .copy--small;
+    color: $colorGrayDark;
+}
+
+.reseller-card__footer {
+    text-align: right;
+}
+
+.reseller-link {
+    margin: 0;
 }
 
 .reseller-badge {

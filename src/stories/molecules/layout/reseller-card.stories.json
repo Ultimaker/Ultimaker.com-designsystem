@@ -1,7 +1,13 @@
 {
     "card": {
+        "image": {
+            "mobileWidth": {
+                "url": "/generator/svg/120/120"
+            }
+        },
         "name": "Reseller name",
         "preferred": false,
+        "showroomCount": 2,
         "href": "https://www.ultimaker.com",
         "labels": {
             "visitWebsite": "Visit website"
