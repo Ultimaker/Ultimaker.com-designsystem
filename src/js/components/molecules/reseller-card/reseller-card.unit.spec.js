@@ -2,7 +2,7 @@
 import ResellerCard from './reseller-card';
 import {build} from 'vuenit';
 
-describe('components', () => {
+fdescribe('components', () => {
     describe('molecules', () => {
         describe('reseller-card', () => {
             const mount = build(ResellerCard, {});
@@ -23,31 +23,14 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should render a badge if "preferred" is true', () => {
+            it('should NOT render a reseller card component if "name" is not provided', () => {
                 const vm = mount({
-                        props: {
-                            name: 'Reseller name',
-                            preferred: false,
-                            labels: {visitWebsite: 'Visit website'}
-                        }
-                    }),
-                    badge = vm.$el.querySelector('.reseller-badge');
+                    props: {
+                        name: null
+                    }
+                });
 
-                expect(badge).toEqual(null);
-                vm.$destroy();
-            });
-
-            it('should not render a badge if "preferred" is false', () => {
-                const vm = mount({
-                        props: {
-                            name: 'Reseller name',
-                            preferred: true,
-                            labels: {visitWebsite: 'Visit website'}
-                        }
-                    }),
-                    badge = vm.$el.querySelector('.reseller-badge');
-
-                expect(badge).not.toEqual(null);
+                expect(vm.$el.length).toBe(0);
                 vm.$destroy();
             });
 
@@ -62,6 +45,37 @@ describe('components', () => {
                     objAttributes = vm.$el.attributes;
 
                 expect(objAttributes['to'].value).toEqual('http://link-to-somewhere.com');
+                vm.$destroy();
+            });
+
+            it('should render a showroom label if provided', () => {
+                const vm = mount({
+                        props: {
+                            name: 'Reseller name',
+                            href: 'http://link-to-somewhere.com',
+                            labels: {visitWebsite: 'Visit website'},
+                            showroomCount: 1
+                        }
+                    }),
+                    showroomLabel = vm.$el.querySelectorAll('.reseller-card__showroom-count');
+
+                expect(showroomLabel).toBeDefined();
+                expect(showroomLabel[0].textContent).toContain('1');
+                vm.$destroy();
+            });
+
+            it('should NOT render a showroom label if not provided', () => {
+                const vm = mount({
+                        props: {
+                            name: 'Reseller name',
+                            href: 'http://link-to-somewhere.com',
+                            labels: {visitWebsite: 'Visit website'},
+                            showroomCount: null
+                        }
+                    }),
+                    showroomLabel = vm.$el.querySelectorAll('.reseller-card__showroom-count');
+
+                expect(showroomLabel.length).toBe(0);
                 vm.$destroy();
             });
         });
