@@ -2,7 +2,7 @@
 import ResellerCard from './reseller-card';
 import {build} from 'vuenit';
 
-fdescribe('components', () => {
+describe('components', () => {
     describe('molecules', () => {
         describe('reseller-card', () => {
             const mount = build(ResellerCard, {});
