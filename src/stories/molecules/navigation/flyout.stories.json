@@ -7,21 +7,10 @@
             "links": [
                 {
                     "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_1",
-                    "href": "#"
-                },
-                {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_2",
-                    "href": "#"
-                },
-                {
-                    "title": "Flyout item",
                     "itemId": "main_1-section_1-item_3",
                     "href": "#"
                 }
-            ],
-            "bottomLinks": []
+            ]
         },
         {
             "title": "Flyout title two",

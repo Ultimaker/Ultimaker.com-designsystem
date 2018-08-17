@@ -1,7 +1,7 @@
 <li class="main-nav__item" role="menuitem" :class="{ 'main-nav__item--active': active }"
     @mouseleave="delayHideFlyout" @mouseenter="showFlyout">
 
-    <div @keydown.down.prevent="selectFirstFlyoutItem"
+    <div @keydown.down.prevent="selectFlyoutFirstLink"
          @keydown.tab.shift.exact="hideFlyout"
          @keydown.esc.prevent="hideFlyout">
         <router-link :to="href" ref="parent"
@@ -24,7 +24,7 @@
 
 
     <transition :name="flyoutTransitionName">
-        <flyout :id="itemId" v-if="sections"
+        <flyout :id="itemId" v-if="sections" ref="flyout"
                 @keydown.esc.native="selectParent"
                 @open="showFlyout"
                 @close="hideFlyout"

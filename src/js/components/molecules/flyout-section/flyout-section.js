@@ -5,6 +5,7 @@ export default {
     data() {
         return {
             isExpanded: false,
+            focusIndex: null,
             columnClassDouble: 'flyout__section--2-columns',
             columnClassTriple: 'flyout__section--3-columns'
         };
@@ -41,6 +42,9 @@ export default {
         hasItems() {
             return this.links;
         },
+        focusableItems() {
+            return Array.isArray(this.$refs.focusable) ? this.$refs.focusable : [this.$refs.focusable];
+        },
         moreThanMaxItems() {
             return this.links.length > this.maxItemsCol;
         },
@@ -66,6 +70,57 @@ export default {
     methods: {
         toggleExpanded() {
             this.isExpanded = !this.isExpanded;
+        },
+        selectFirstLink() {
+            this.focusIndex = 0;
+        },
+        selectLastLink() {
+            this.focusIndex = this.focusableItems.length - 1;
+        },
+        selectNextLink() {
+            if (this.focusIndex >= this.focusableItems.length - 1) {
+                return false;
+            }
+
+            this.focusIndex++;
+
+            return true;
+        },
+        selectPrevLink() {
+            if (this.focusIndex <= 0) {
+                return false;
+            }
+
+            this.focusIndex--;
+
+            return true;
+        },
+        setFocusIndex(index) {
+            if (index <= 0) {
+                this.focusIndex = 0;
+            } else if (index >= this.focusableItems.length) {
+                this.focusIndex = this.focusableItems.length - 1;
+            } else {
+                this.focusIndex = index;
+            }
+        },
+        reset() {
+            this.focusIndex = null;
+        }
+    },
+    watch: {
+        focusIndex(newVal) {
+            const focusComponent = this.focusableItems[newVal];
+
+            if (typeof focusComponent === 'undefined') {
+                return;
+            }
+
+            const focusElement = focusComponent.$el || focusComponent;
+
+            if (focusElement.focus) {
+                focusElement.focus();
+            }
         }
     }
 };

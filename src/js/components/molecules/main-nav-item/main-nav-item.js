@@ -82,14 +82,12 @@ export default {
                 }
             });
         },
-        async selectFirstFlyoutItem() {
+        async selectFlyoutFirstLink() {
             this.showFlyout();
             await this.$nextTick();
 
-            const firstFlyoutItem = this.$el.querySelector('.flyout__link');
-
-            if (firstFlyoutItem) {
-                firstFlyoutItem.focus();
+            if (this.$refs.flyout && this.$refs.flyout.selectFirstLink) {
+                this.$refs.flyout.selectFirstLink();
             }
         },
         selectNextNavItem() {
