@@ -3,13 +3,12 @@ export default {
     template: require('./flyout.html'),
     data() {
         return {
-            linkIndex: 0,
-            sectionIndex: 0,
-            calc: 0
+            sectionIndex: 0
         };
     },
     props: {
         sections: {
+            required: true,
             type: Array
         },
         isCompact: {
@@ -20,125 +19,108 @@ export default {
             default: false
         }
     },
+    computed: {
+        flyoutSections() {
+            return Array.isArray(this.$refs.sections) ? this.$refs.sections : [this.$refs.sections];
+        }
+    },
     methods: {
-        clearIndexes() {
-            this.linkIndex = 0;
-            this.calc = 0;
-            this.sectionIndex = 0;
-        },
-        checkIndexes(links, sections) {
-            if (this.sectionIndex === 0) {
-                this.clearIndexes();
-            } else if (this.sectionIndex === sections.length - 1) {
-                this.calc = links.length - sections[this.sectionIndex].querySelectorAll('a').length;
-            }
-            this.linkIndex = this.calc;
-        },
         open() {
             this.$emit('open');
         },
         close() {
-            this.clearIndexes();
+            this.reset();
             this.$emit('close');
         },
         backToParent() {
             this.$emit('main');
             this.close();
         },
-        selectNextFlyoutLink(e) {
+        reset() {
+            this.sectionIndex = 0;
+            this.flyoutSections.forEach(s => s && s.reset && s.reset());
+        },
+        async selectFirstLink() {
+            this.reset();
+            await this.$nextTick();
+            this.flyoutSections[this.sectionIndex].selectFirstLink();
+        },
+        selectNextLink(e) {
             if (this.disableKeyboardEvents) {
                 return;
             }
-
-            const flyoutLinks = this.$el.querySelectorAll('a'),
-                flyoutSections = this.$el.querySelectorAll('.flyout__section'),
-                sectionLength = flyoutSections[this.sectionIndex].querySelectorAll('a').length;
-
             e.preventDefault();
-            this.linkIndex++;
 
-            if (flyoutLinks[this.linkIndex]) {
-                flyoutLinks[this.linkIndex].focus();
-            } else {
-                this.backToParent();
-            }
+            const hasNext = this.flyoutSections[this.sectionIndex].selectNextLink();
 
-            if (this.linkIndex === sectionLength + this.calc) {
-                this.sectionIndex++;
-                this.calc += sectionLength;
+            if (!hasNext) {
+                this.selectNextSection();
             }
         },
-        selectPrevFlyoutLink(e) {
+        selectPrevLink(e) {
             if (this.disableKeyboardEvents) {
                 return;
             }
 
-            const flyoutLinks = this.$el.querySelectorAll('a'),
-                flyoutSections = this.$el.querySelectorAll('.flyout__section');
-
-            e.preventDefault();
-            this.linkIndex--;
-
-            if (flyoutLinks[this.linkIndex]) {
-                flyoutLinks[this.linkIndex].focus();
-            } else {
-                this.backToParent();
+            if (typeof e !== 'undefined') {
+                e.preventDefault();
             }
 
-            if (this.linkIndex === this.calc - 1) {
-                this.sectionIndex--;
-                this.calc -= flyoutSections[this.sectionIndex].querySelectorAll('a').length;
+            const hasPrev = this.flyoutSections[this.sectionIndex].selectPrevLink();
+
+            if (!hasPrev) {
+                this.selectPrevSection();
             }
         },
-        selectNextFlyoutSection(e) {
+        selectNextSection(e, keepIndex) {
             if (this.disableKeyboardEvents) {
                 return;
             }
 
-            e.preventDefault();
+            if (typeof e !== 'undefined') {
+                e.preventDefault();
+            }
 
-            const flyoutLinks = this.$el.querySelectorAll('a'),
-                flyoutSections = this.$el.querySelectorAll('.flyout__section');
+            if (this.sectionIndex >= this.flyoutSections.length - 1) {
+                return this.backToParent();
+            }
 
-            // Set sectionIndex
-            if (this.sectionIndex < flyoutSections.length - 1) {
-                this.sectionIndex++;
+            const currentSection = this.sectionIndex,
+                currentLinkIndex = this.flyoutSections[this.sectionIndex].focusIndex;
+
+            this.sectionIndex++;
+            if (keepIndex) {
+                this.flyoutSections[this.sectionIndex].setFocusIndex(currentLinkIndex);
             } else {
-                this.sectionIndex = 0;
+                this.flyoutSections[this.sectionIndex].selectFirstLink();
             }
 
-            // Set calc
-            if (this.sectionIndex < flyoutSections.length && this.sectionIndex > 0) {
-                this.calc += flyoutSections[this.sectionIndex - 1].querySelectorAll('a').length;
-            }
-
-            this.checkIndexes(flyoutLinks, flyoutSections);
-            flyoutSections[this.sectionIndex].querySelector('a').focus();
+            this.flyoutSections[currentSection].reset();
         },
-        selectPrevFlyoutSection(e) {
+        selectPrevSection(e, keepIndex) {
             if (this.disableKeyboardEvents) {
                 return;
             }
 
-            e.preventDefault();
+            if (typeof e !== 'undefined') {
+                e.preventDefault();
+            }
 
-            const flyoutLinks = this.$el.querySelectorAll('a'),
-                flyoutSections = this.$el.querySelectorAll('.flyout__section');
+            if (this.sectionIndex <= 0) {
+                return this.backToParent();
+            }
 
-            // Set sectionIndex
-            if (this.sectionIndex > 0) {
-                this.sectionIndex--;
+            const currentSection = this.sectionIndex,
+                currentLinkIndex = this.flyoutSections[this.sectionIndex].focusIndex;
+
+            this.sectionIndex--;
+            if (keepIndex) {
+                this.flyoutSections[this.sectionIndex].setFocusIndex(currentLinkIndex);
             } else {
-                this.sectionIndex = flyoutSections.length - 1;
+                this.flyoutSections[this.sectionIndex].selectLastLink();
             }
 
-            // Set calc
-            if (this.sectionIndex < flyoutSections.length && this.sectionIndex > 0) {
-                this.calc -= flyoutSections[this.sectionIndex].querySelectorAll('a').length;
-            }
-
-            this.checkIndexes(flyoutLinks, flyoutSections);
-            flyoutSections[this.sectionIndex].querySelector('a').focus();
+            this.flyoutSections[currentSection].reset();
         }
     }
 };

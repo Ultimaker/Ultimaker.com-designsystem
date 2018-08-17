@@ -62,17 +62,6 @@ describe('components', () => {
                 done();
             });
 
-            it('should focus on the first flyout link when opened', async(done) => {
-                const vm = mount();
-
-                spyOn(vm.$el, 'querySelector').and.returnValue({focus: () => {
-                    expect(vm.flyoutIsOpen).toEqual(true);
-                    vm.$destroy();
-                    done();
-                }});
-                vm.selectFirstFlyoutItem();
-            });
-
             it('should emit a tab events when next or previous should be selected', () => {
                 const vm = mount();
 

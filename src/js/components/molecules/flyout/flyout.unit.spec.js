@@ -33,9 +33,7 @@ describe('components', () => {
 
                 expect(vm.$emit).toHaveBeenCalledTimes(1);
                 expect(vm.$emit).toHaveBeenCalledWith('close');
-                expect(vm.linkIndex).toBe(0);
                 expect(vm.sectionIndex).toBe(0);
-                expect(vm.calc).toBe(0);
                 vm.$destroy();
             });
         });

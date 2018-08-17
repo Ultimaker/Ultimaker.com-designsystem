@@ -1,18 +1,21 @@
 <ul class="main-nav__flyout"
     v-if="sections && sections.length > 0"
-    @keydown.down="selectNextFlyoutLink"
-    @keydown.tab.exact="selectNextFlyoutLink"
-    @keydown.up="selectPrevFlyoutLink"
-    @keydown.tab.shift.exact="selectPrevFlyoutLink"
-    @keydown.right="selectNextFlyoutSection"
-    @keydown.left="selectPrevFlyoutSection"
+    @keydown.down="selectNextLink"
+    @keydown.tab.exact="selectNextLink"
+    @keydown.up="selectPrevLink"
+    @keydown.tab.shift.exact="selectPrevLink"
+    @keydown.right="selectNextSection($event, true)"
+    @keydown.left="selectPrevSection($event, true)"
     @mouseenter.stop="open">
-    <flyout-section
-        @close="$emit('close')"
-        v-bind="section"
+    <flyout-section ref="sections"
         v-for="(section, key) in sections"
+        v-if="section.links && section.links.length"
+        v-bind="section"
+
         :is-compact="isCompact"
         :key="key"
+
+        @close="$emit('close')"
         >
     </flyout-section>
 </ul>
