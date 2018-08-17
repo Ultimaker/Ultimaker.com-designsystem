@@ -148,6 +148,7 @@
             },
             "name": "Test reseller 14",
             "preferred": false,
+            "showroomCount": 1,
             "href": "#"
         },
         {
@@ -188,6 +189,7 @@
             },
             "name": "Test reseller 18",
             "preferred": false,
+            "showroomCount": 1,
             "href": "#"
         },
         {
