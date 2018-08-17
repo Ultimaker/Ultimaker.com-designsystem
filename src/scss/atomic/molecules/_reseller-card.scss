@@ -3,6 +3,7 @@ $resellerCardMobileMarginBottom: $buildingUnit;
 
 $resellerCardBorderSize: 1px;
 $resellerCardPadding: $buildingUnit * 1.5;
+$resellerLinkCorrection: 2px;
 
 .reseller-card {
 
@@ -11,7 +12,6 @@ $resellerCardPadding: $buildingUnit * 1.5;
 
     max-width: $mobileXlWidth;
 
-    padding: ($resellerCardPadding) - $resellerCardBorderSize;
     margin-bottom: $resellerCardMobileMarginBottom;
     @include min-tablet {
         margin-bottom: $resellerCardTabletMarginBottom;
@@ -24,56 +24,49 @@ $resellerCardPadding: $buildingUnit * 1.5;
     box-sizing: border-box;
 
     @include micro-animate(color, background);
-    @extend %reset-last-margin;
 
-    & > * {
-        width: auto;
+    &:hover {
+        color: inherit;
+        background: $colorGrayLight;
     }
 
     &:focus,
     &:hover:focus,
-    &:focus:active{
+    &:focus:active {
         border-color: lighten($colorMain, $tintHoverFocus);
         @extend %focus;
 
-        & > *,
-        & > * > * {
+        & * {
             color: $colorWhite;
         }
     }
 
-    &:hover {
-        color: $colorBlack;
-        background: darken($colorWhite, $tintHoverFocus);
-        border: $resellerCardBorderSize solid $colorGrayLight;
-    }
-
     &:hover,
     &:focus {
-        .reseller-link .link__underline {
+        //simulate hover or focus on content-link
+        .faux-content-link .link__underline {
             background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px);
             background-size: 0% 100%;
         }
-    }
-
-    &__info {
-        color: $colorGrayDark;
     }
 }
 
 .reseller-card__header {
     display: flex;
     flex-direction: row;
+    padding: $resellerCardPadding;
+    padding-bottom: 0;
 }
 
 .reseller-card__image-wrapper {
     width: $buildingUnit * 5;
-    margin: 0 $resellerCardPadding $resellerCardPadding 0;
+    margin-right: $resellerCardPadding;
 }
 
 .reseller-card__description {
     display: flex;
     flex-direction: column;
+    @extend %reset-last-margin;
 }
 
 .reseller-card__showroom-count {
@@ -83,28 +76,13 @@ $resellerCardPadding: $buildingUnit * 1.5;
 
 .reseller-card__footer {
     text-align: right;
+    padding: ($buildingUnit + $resellerLinkCorrection) $resellerCardPadding $buildingUnit $resellerCardPadding;
+
+    @include min-tablet {
+        padding-bottom: ($buildingUnit - $resellerLinkCorrection);
+    }
 }
 
-.reseller-link {
+.reseller-card__link {
     margin: 0;
-}
-
-.reseller-badge {
-    color: $colorMain;
-    @include micro-animate(color);
-
-    &__icon {
-        color: inherit;
-
-        font-size: initial;
-        transform: translateY(0.1em);
-    }
-
-    &__label {
-        font-weight: bold;
-    }
-
-    &--inline {
-        display: inline;
-    }
 }

@@ -25,5 +25,10 @@ export default {
             type: Object,
             required: true
         }
+    },
+    methods: {
+        getShowroomLabel(amount) {
+            return amount > 1 ? this.labels.multiShowroomLabel : this.labels.singleShowroomLabel;
+        }
     }
 };

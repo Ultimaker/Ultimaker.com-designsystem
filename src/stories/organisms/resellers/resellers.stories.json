@@ -169,6 +169,36 @@
             "name": "Test reseller 16",
             "preferred": false,
             "href": "#"
+        },
+        {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
+            "name": "Test reseller 17",
+            "preferred": false,
+            "href": "#"
+        },
+        {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
+            "name": "Test reseller 18",
+            "preferred": false,
+            "href": "#"
+        },
+        {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
+            "name": "Test reseller 19",
+            "preferred": false,
+            "href": "#"
         }
     ],
     "labels": {
@@ -177,6 +207,8 @@
         "preferredResellers": "Preferred resellers",
         "preferredResellersInfoLabel": "More info",
         "preferredResellersInfoText": "Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-        "authorizedResellers": "Authorized resellers"
+        "authorizedResellers": "Authorized resellers",
+        "multiShowroomLabel": "showrooms",
+        "singleShowroomLabel": "showroom"
     }
 }
