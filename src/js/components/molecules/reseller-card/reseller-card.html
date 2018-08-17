@@ -1,23 +1,22 @@
-<!--<router-link class="reseller-card demo-rhythm" tabindex="0" :to="href">-->
 <router-link class="reseller-card" tabindex="0" :to="href">
-    <header class="reseller-card__header">
+    <div class="reseller-card__header">
         <div class="reseller-card__image-wrapper">
-            <responsive-picture v-bind="image"></responsive-picture>
+            <responsive-picture v-bind="image"/>
         </div>
         <div class="reseller-card__description">
             <h4 class="reseller-card__title">
                 {{ name }}
             </h4>
             <p class="reseller-card__showroom-count" v-if="showroomCount">
-                {{ showroomCount }} {{ showroomCount > 1 ? 'showrooms' : 'showroom'}}
+                {{ showroomCount }} {{ getShowroomLabel(showroomCount) }}
             </p>
         </div>
-    </header>
-    <footer class="reseller-card__footer">
-        <span class="link faux-content-link reseller-link">
+    </div>
+    <div class="reseller-card__footer">
+        <span class="link faux-content-link reseller-card__link">
             <span class="link__underline">
                 {{ labels.visitWebsite }}
             </span>
         </span>
-    </footer>
+    </div>
 </router-link>
