@@ -9,9 +9,9 @@
 }
 
 .resellers__tooltip {
+    @extend %fontPrimary;
     @include font-line-ratio(prim-s);
     font-weight: 100;
-    font-family: $fontPrimary;
 
     max-width: 296px;
     position: absolute;
