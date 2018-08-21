@@ -17,8 +17,7 @@
                     class="reseller-section__info-link"
                     :icon="'info'"
                     mod="reversed"
-                    @click.native.prevent
-                    @focus.native.prevent="showTooltipPreferred"
+                    @click.native.prevent="toggleTooltipPreferred"
                     @blur.native.prevent="hideTooltipPreferred"
                     role="button"
                     aria-describedby="tooltip-preferred"

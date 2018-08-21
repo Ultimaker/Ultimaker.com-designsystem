@@ -24,11 +24,11 @@ export default {
         }
     },
     methods: {
-        showTooltipPreferred() {
-            this.visibleTooltipPreferred = true;
-        },
         hideTooltipPreferred() {
             this.visibleTooltipPreferred = false;
+        },
+        toggleTooltipPreferred() {
+            this.visibleTooltipPreferred = !this.visibleTooltipPreferred;
         },
         showAllAuthorizedResellers() {
             this.visibleAllAuthorizedResellers = true;
