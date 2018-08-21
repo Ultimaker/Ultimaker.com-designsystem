@@ -51,7 +51,7 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should render a tooltip if link is focussed', async(done) => {
+            it('should render a tooltip if link is triggered', async(done) => {
                 const vm = mount(buildOptions),
                     tooltip = vm.$el.querySelector('#tooltip-preferred');
 
@@ -59,7 +59,7 @@ describe('components', () => {
                 expect(tooltip.innerText).toContain(buildOptions.props.tooltip);
                 expect(tooltip.style.display).toBe('none');
 
-                vm.showTooltipPreferred();
+                vm.toggleTooltipPreferred();
                 await vm.$nextTick();
                 expect(tooltip.style.display).not.toBe('none');
 
