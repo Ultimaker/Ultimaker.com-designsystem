@@ -1,4 +1,5 @@
 import ViewportUtil from 'utils/viewport';
+import BrowserCapabilities from 'utils/browser-capabilities';
 
 export default {
     name: 'main-nav',
@@ -34,8 +35,11 @@ export default {
         }
     },
     beforeMount() {
-        this.viewportUtil.addResizeHandler(this.handleResize);
         this.ready = false;
+        this.viewportUtil.addResizeHandler(this.handleResize);
+        if (BrowserCapabilities.isBrowser) {
+            this.showCompactMenu = this.viewportUtil.isTablet;
+        }
 
         // trigger resize sets ready to true, so component doesn't animate when dehydrating/instantiating
         this.viewportUtil.triggerResize();
