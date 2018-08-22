@@ -60,6 +60,7 @@ $resellerLinkCorrection: 2px;
 
 .reseller-card__image-wrapper {
     width: $buildingUnit * 5;
+    min-width: $buildingUnit * 5;
     margin-right: $resellerCardPadding;
 }
 

@@ -1,9 +1,7 @@
 import {storiesOf} from '@storybook/vue';
-import {withKnobs, text, object} from '@storybook/addon-knobs';
 import data from './materials.stories.data';
 
 storiesOf('templates|materials', module)
-    .addDecorator(withKnobs)
     .add(
         'Materials',
         () => {
