@@ -10,7 +10,7 @@ storiesOf('Molecules|navigation', module)
             data: () => ({
                 mainNavData: {
                     ...mainNavData,
-                    mainNavOpen: true
+                    mainNavOpen: false
                 }
             })
         }),
