@@ -100,6 +100,87 @@ describe('components', () => {
                 expect(vm.sectionClass).toContain(vm.columnClassTriple);
                 vm.$destroy();
             });
+
+            it('should expand when expand is toggled', async(done) => {
+                const vm = mount({
+                    props: {
+                        isCompact: true,
+                        links: fixture.linksTwoColumns
+                    }
+                });
+
+                expect(vm.$el.querySelectorAll('.flyout__list-item[style*="display: none"]').length).toEqual(5);
+                vm.toggleExpanded();
+                await vm.$nextTick();
+                expect(vm.$el.querySelectorAll('.flyout__list-item[style*="display: none"]').length).toEqual(0);
+
+                vm.$destroy();
+                done();
+            });
+
+            it('should be able change the focus', async(done) => {
+                const vm = mount({
+                    props: {
+                        links: fixture.linksTwoColumns
+                    }
+                });
+                let operationResult;
+
+                vm.selectLastLink();
+                expect(vm.focusIndex).toEqual(7);
+
+                operationResult = vm.selectNextLink();
+                await vm.$nextTick();
+                expect(operationResult).toEqual(false);
+                expect(vm.focusIndex).toEqual(7);
+
+                vm.selectPrevLink();
+                await vm.$nextTick();
+                expect(vm.focusIndex).toEqual(6);
+
+                vm.selectFirstLink();
+                await vm.$nextTick();
+                expect(vm.focusIndex).toEqual(0);
+
+                operationResult= vm.selectPrevLink();
+                await vm.$nextTick();
+                expect(operationResult).toEqual(false);
+                expect(vm.focusIndex).toEqual(0);
+
+                vm.selectNextLink();
+                await vm.$nextTick();
+                expect(vm.focusIndex).toEqual(1);
+
+                vm.$destroy();
+                done();
+            });
+
+            it('should be able to focus on a specified link', async(done) => {
+                const vm = mount({
+                    props: {
+                        links: fixture.linksTwoColumns
+                    }
+                });
+
+                vm.setFocusIndex(-100);
+                await vm.$nextTick();
+                expect(vm.focusIndex).toEqual(0);
+
+                vm.setFocusIndex(100);
+                await vm.$nextTick();
+                expect(vm.focusIndex).toEqual(7);
+
+                vm.setFocusIndex(1);
+                await vm.$nextTick();
+                expect(vm.focusIndex).toEqual(1);
+
+                vm.reset();
+                await vm.$nextTick();
+                expect(vm.focusIndex).toEqual(null);
+
+                vm.$destroy();
+                done();
+            });
         });
     });
 });
