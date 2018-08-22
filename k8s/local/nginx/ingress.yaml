@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: storybook-nginx
+  namespace: dev
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    ingress.kubernetes.io/rule-type: PathPrefix
+spec:
+  rules:
+  - host: storybook.k8s.local
+    http:
+      paths:
+      - backend:
+          serviceName: storybook-nginx
+          servicePort: 80

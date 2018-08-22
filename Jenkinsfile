@@ -1,6 +1,18 @@
 #!/usr/bin/groovy
 @Library('k8s-jenkins-tools') _
+import com.ultimaker.Slug
 import com.ultimaker.Random
+
+def credentialsFile = 'gcloud-jenkins-service-account'
+def projectName = 'um-website-193311'
+def clusterName = 'ultimaker-dev'
+def deploymentName = 'development'
+def zone = 'europe-west4-b'
+
+def validFor = '4 days'
+
+def slugify = new Slug()
+def branchSlug = slugify.slug(env.BRANCH_NAME)
 
 def random = new Random()
 def podLabel = random.string(32)
@@ -42,8 +54,89 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
           container('node') {
             sh 'npm run build'
           }
+        },
+        "build storybook": {
+          container('node') {
+            sh 'npm run build-storybook'
+          }
         }
       )
+    }
+
+    stage('build images') {
+      parallel(
+        "build node image": {
+          container('jnlp') {
+            sh "docker build -f docker/nodejs/Dockerfile -t eu.gcr.io/um-website-193311/storybook/node:${branchSlug} ."
+            sh "docker tag eu.gcr.io/um-website-193311/storybook/node:${branchSlug} eu.gcr.io/um-website-193311/storybook/node:${commitHash}"
+          }
+        },
+        "build nginx image": {
+          container('jnlp') {
+            sh "docker build -f docker/nginx/Dockerfile -t eu.gcr.io/um-website-193311/storybook/nginx:${branchSlug} ."
+            sh "docker tag eu.gcr.io/um-website-193311/storybook/nginx:${branchSlug} eu.gcr.io/um-website-193311/storybook/nginx:${commitHash}"
+          }
+        }
+      )
+    }
+
+    if (env.BRANCH_NAME.startsWith("PR-") == true) {
+        currentBuild.result = "SUCCESS"
+        return
+    }
+
+    stage('authenticate gcloud') {
+      container('jnlp') {
+        withCredentials([file(credentialsId: credentialsFile, variable: 'GCLOUD_KEY_FILE')]) {
+          sh "gcloud auth activate-service-account --key-file=${GCLOUD_KEY_FILE}"
+          sh "gcloud config set project ${projectName}"
+          sh "gcloud container clusters get-credentials ${clusterName} --zone ${zone} --project ${projectName}"
+        }
+      }
+    }
+
+    stage('push images') {
+      parallel(
+        "push node image": {
+          container('jnlp') {
+            sh "gcloud docker -- push eu.gcr.io/um-website-193311/storybook/node:${branchSlug}"
+            sh "gcloud docker -- push eu.gcr.io/um-website-193311/storybook/node:${commitHash}"
+          }
+        },
+        "push nginx image": {
+          container('jnlp') {
+            sh "gcloud docker -- push eu.gcr.io/um-website-193311/storybook/nginx:${branchSlug}"
+            sh "gcloud docker -- push eu.gcr.io/um-website-193311/storybook/nginx:${commitHash}"
+          }
+        }
+      )
+    }
+
+    stage('deploy') {
+      container('jnlp') {
+        sh "sed -i s#_BRANCH_SLUG_#${branchSlug}# `find k8s/${deploymentName} -type f -name '*.yaml'`"
+        sh "sed -i s#_GIT_COMMIT_#${commitHash}# `find k8s/${deploymentName} -type f -name '*.yaml'`"
+        sh "sed -i s#_IMAGE_TAG_#${commitHash}# `find k8s/${deploymentName} -type f -name '*.yaml'`"
+        sh "sed -i s#_UPDATED_AT_#`date +%Y%m%dT%H%M%S`# `find k8s/${deploymentName} -type f -name '*.yaml'`"
+        sh "sed -i s#_EXPIRES_AT_#`date -d '+${validFor}' +%Y%m%dT%H%M%S`# `find k8s/${deploymentName} -type f -name '*.yaml'`"
+
+        sh "kubectl apply -f k8s/${deploymentName}/namespace.yaml || true"
+        sh "kubectl apply --recursive=true -f k8s/${deploymentName}/"
+      }
+    }
+
+    stage('notify') {
+        def ingress = readYaml file: "k8s/${deploymentName}/nginx/ingress.yaml"
+        def hostname = ingress.spec.rules[0].host
+
+        slackSend color: 'good',
+            channel: "#um_com_deployments",
+            message: """
+Gentlemen, m'ladies, I have deployed your Ultimaker.com-designsystem:${env.BRANCH_NAME} branch on:
+https://${hostname}
+
+It will automagically be removed when this branch is deleted on remote.
+  """
     }
   }
 }
