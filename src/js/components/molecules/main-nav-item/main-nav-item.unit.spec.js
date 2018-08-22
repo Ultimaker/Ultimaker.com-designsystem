@@ -106,6 +106,20 @@ describe('components', () => {
 
                 vm.$destroy();
             });
+
+            it('should focus on first link when opened', async(done) => {
+                const vm = mount();
+
+                vm.$refs.flyout = jasmine.createSpyObj('autocomplete', {
+                    selectFirstLink: jasmine.createSpy()
+                });
+
+                await vm.selectFlyoutFirstLink();
+
+                expect(vm.$refs.flyout.selectFirstLink).toHaveBeenCalled();
+                vm.$destroy();
+                done();
+            });
         });
     });
 });
