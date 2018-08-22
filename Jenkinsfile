@@ -27,6 +27,12 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
     def scmVars = checkout scm
     def commitHash = scmVars.GIT_COMMIT
 
+    if (env.BRANCH_NAME == "master") {
+      clusterName = 'ultimaker-prod'
+      deploymentName = 'canary'
+      zone = 'europe-west3-b'
+    }
+
     stage('install dependencies') {
       container('node') {
         sh 'npm install'
