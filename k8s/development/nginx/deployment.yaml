@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: storybook-nginx
-  namespace: fe-dev-_BRANCH_SLUG_
+  namespace: sb-dev-_BRANCH_SLUG_
   labels:
     app: storybook-nginx
     commit: _GIT_COMMIT_
@@ -24,6 +24,3 @@ spec:
           ports:
             - containerPort: 8080
               protocol: TCP
-          env:
-            - name: NODEJS_SERVER
-              value: web-ultimaker-com-node
