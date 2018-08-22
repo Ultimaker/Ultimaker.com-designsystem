@@ -8,7 +8,7 @@
         "name": "Reseller name",
         "preferred": true,
         "showroomCount": 2,
-        "href": "https://www.ultimaker.com",
+        "href": "#",
         "labels": {
             "visitWebsite": "Visit website",
             "multiShowroomLabel": "showrooms",
