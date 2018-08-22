@@ -2,12 +2,10 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: storybook-nginx
-  namespace: fe-dev-_BRANCH_SLUG_
+  namespace: sb-dev-_BRANCH_SLUG_
   annotations:
     kubernetes.io/ingress.class: traefik
     ingress.kubernetes.io/rule-type: PathPrefix
-    ingress.kubernetes.io/auth-type: basic
-    ingress.kubernetes.io/auth-secret: traefik-auth
     traefik.ingress.kubernetes.io/redirect-entry-point: https
     traefik.ingress.kubernetes.io/redirect-permanent: "true"
 spec:
@@ -17,4 +15,4 @@ spec:
       paths:
       - backend:
           serviceName: storybook-nginx
-          servicePort: 80
+          servicePort: 8080
