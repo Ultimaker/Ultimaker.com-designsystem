@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: storybook-nginx
+  namespace: fe-dev-_BRANCH_SLUG_
+  labels:
+    app: storybook-nginx
+    commit: _GIT_COMMIT_
+spec:
+  selector:
+    matchLabels:
+      app: storybook-nginx
+  template:
+    metadata:
+      name: storybook-nginx
+      labels:
+        app: storybook-nginx
+        commit: _GIT_COMMIT_
+    spec:
+      containers:
+        - name: storybook-nginx
+          image: eu.gcr.io/um-website-193311/storybook/nginx:_IMAGE_TAG_
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          env:
+            - name: NODEJS_SERVER
+              value: web-ultimaker-com-node

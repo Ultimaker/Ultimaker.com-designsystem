@@ -1,0 +1,39 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: storybook-nginx
+  namespace: production
+  labels:
+    app: storybook-nginx
+    channel: stable
+    commit: _GIT_COMMIT_
+spec:
+  selector:
+    matchLabels:
+      app: storybook-nginx
+      channel: stable
+  template:
+    metadata:
+      name: storybook-nginx
+      labels:
+        app: storybook-nginx
+        channel: stable
+        commit: _GIT_COMMIT_
+    spec:
+      containers:
+      - name: storybook-nginx
+        image: eu.gcr.io/um-website-193311/storybook/nginx:_IMAGE_TAG_
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        resources:
+          requests:
+            cpu: 100m
+            memory: 50Mi
+          limits:
+            cpu: 150m
+            memory: 100Mi
+        env:
+        - name: NODEJS_SERVER
+          value: web-ultimaker-com-node
