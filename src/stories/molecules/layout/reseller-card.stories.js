@@ -1,6 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import data from './reseller-card.stories.json';
-import {withKnobs, text, files, object, number} from '@storybook/addon-knobs';
+import {withKnobs, text, files, number} from '@storybook/addon-knobs';
 
 
 storiesOf('Molecules|layout/cards', module)
