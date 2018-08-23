@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: storybook-node
+  namespace: production
+  labels:
+    app: storybook-node
+    channel: stable
+spec:
+  selector:
+    app: storybook-node
+    channel: stable
+  ports:
+    - name: node
+      protocol: TCP
+      port: 3000

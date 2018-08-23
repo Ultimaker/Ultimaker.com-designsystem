@@ -76,6 +76,12 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
             sh "docker build -f docker/nginx/Dockerfile -t eu.gcr.io/um-website-193311/storybook/nginx:${branchSlug} ."
             sh "docker tag eu.gcr.io/um-website-193311/storybook/nginx:${branchSlug} eu.gcr.io/um-website-193311/storybook/nginx:${commitHash}"
           }
+        },
+        "build node image": {
+          container('jnlp') {
+            sh "docker build -f docker/nginx/Dockerfile -t eu.gcr.io/um-website-193311/storybook/node:${branchSlug} ."
+            sh "docker tag eu.gcr.io/um-website-193311/storybook/nginx:${branchSlug} eu.gcr.io/um-website-193311/storybook/node:${commitHash}"
+          }
         }
       )
     }
@@ -101,6 +107,12 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
           container('jnlp') {
             sh "gcloud docker -- push eu.gcr.io/um-website-193311/storybook/nginx:${branchSlug}"
             sh "gcloud docker -- push eu.gcr.io/um-website-193311/storybook/nginx:${commitHash}"
+          }
+        },
+        "push node image": {
+          container('jnlp') {
+            sh "gcloud docker -- push eu.gcr.io/um-website-193311/storybook/node:${branchSlug}"
+            sh "gcloud docker -- push eu.gcr.io/um-website-193311/storybook/node:${commitHash}"
           }
         }
       )

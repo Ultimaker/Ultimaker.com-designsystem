@@ -13,8 +13,9 @@ RUN rm /etc/nginx/conf.d/default.conf \
  && mkdir -p /var/www/html
 
 COPY storybook-static /var/www/html
+COPY docker/nginx/entrypoint.sh /etc/nginx/entrypoint.sh
 
 WORKDIR /var/www/html
 
-ENTRYPOINT ["/sbin/tini", "-g"]
+ENTRYPOINT ["/sbin/tini", "-g", "--", "/etc/nginx/entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
