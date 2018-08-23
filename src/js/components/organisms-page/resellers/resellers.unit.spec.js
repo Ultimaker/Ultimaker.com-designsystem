@@ -71,11 +71,10 @@ describe('components', () => {
 
             it('should render a max amount of cards set at authorized section', () => {
                 const vm = mount(buildOptions),
-                    resellerSectionAuthorized = vm.$el.querySelector('.reseller-section--authorized'),
-                    resellerItems = resellerSectionAuthorized.querySelectorAll('.reseller-list__item'),
-                    showAllButton = resellerSectionAuthorized.querySelectorAll('.reseller-list__button');
+                    visibleAuthorizedResellerItems = vm.$refs.visible,
+                    showAllButton = vm.$el.querySelectorAll('.reseller-list__button');
 
-                expect(resellerItems.length).toBeLessThanOrEqual(vm.showMax);
+                expect(visibleAuthorizedResellerItems.length).toBeLessThanOrEqual(vm.showMax);
                 expect(showAllButton.length).toBe(1);
 
                 vm.$destroy();
