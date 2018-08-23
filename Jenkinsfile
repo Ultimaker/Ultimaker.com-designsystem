@@ -80,7 +80,7 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
         "build node image": {
           container('jnlp') {
             sh "docker build -f docker/nodejs/Dockerfile -t eu.gcr.io/um-website-193311/storybook/node:${branchSlug} ."
-            sh "docker tag eu.gcr.io/um-website-193311/storybook/nginx:${branchSlug} eu.gcr.io/um-website-193311/storybook/node:${commitHash}"
+            sh "docker tag eu.gcr.io/um-website-193311/storybook/node:${branchSlug} eu.gcr.io/um-website-193311/storybook/node:${commitHash}"
           }
         }
       )

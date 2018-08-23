@@ -5,6 +5,8 @@ if [ -z "$NODEJS_SERVER" ]; then
     exit 1
 fi
 
+echo "set nodejs_server to ${NODEJS_SERVER}"
+
 sed -e "s/{nodejs_server}/${NODEJS_SERVER}/" \
     /etc/nginx/nginx.conf.dist | \
     tee /etc/nginx/nginx.conf
