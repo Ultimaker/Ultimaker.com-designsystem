@@ -18,4 +18,4 @@ spec:
       paths:
       - backend:
           serviceName: storybook-nginx-canary
-          servicePort: 80
+          servicePort: 8080
