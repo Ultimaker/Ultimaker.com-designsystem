@@ -28,5 +28,5 @@ spec:
             - containerPort: 8080
               protocol: TCP
           env:
-            - name: NODEJS_SERVER
-              value: web-ultimaker-com-node
+          - name: NODEJS_SERVER
+            value: storybook-node
