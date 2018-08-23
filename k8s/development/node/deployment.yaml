@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: storybook-node
-  namespace: fe-dev-_BRANCH_SLUG_
+  namespace: sb-dev-_BRANCH_SLUG_
   labels:
     app: storybook-node
     commit: _GIT_COMMIT_
