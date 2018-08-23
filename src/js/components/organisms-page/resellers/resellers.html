@@ -51,7 +51,7 @@
                          v-for="(reseller, index) in resellersAuthorized"
                          v-if="index < showMax">
                         <li class="reseller-list__item">
-                            <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
+                            <reseller-card v-bind="reseller" ref="visible" :labels="labels"></reseller-card>
                         </li>
                     </div>
                     <template v-if="resellersAuthorized.length > showMax && !visibleAllAuthorizedResellers">
