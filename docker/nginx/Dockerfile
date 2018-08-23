@@ -14,7 +14,8 @@ RUN rm /etc/nginx/conf.d/default.conf \
 
 COPY storybook-static /var/www/html
 COPY docker/nginx/entrypoint.sh /etc/nginx/entrypoint.sh
-RUN chown 777 /etc/nginx/entrypoint.sh
+RUN chown 777 /etc/nginx/entrypoint.sh \
+ && chmod +x /etc/nginx/entrypoint.sh
 
 WORKDIR /var/www/html
 

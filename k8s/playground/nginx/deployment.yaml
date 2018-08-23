@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: storybook-nginx
-          image: eu.gcr.io/um-website-193311/ultimaker-com/nginx:_BRANCH_SLUG_
+          image: eu.gcr.io/um-website-193311/storybook/nginx:_BRANCH_SLUG_
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
