@@ -3,7 +3,7 @@ import {withKnobs, text, object} from '@storybook/addon-knobs';
 import Ubr from 'organisms-page/ubr';
 import ubrData from './ubr.stories.json';
 
-storiesOf('organisms|ubr', module)
+storiesOf('organisms|unique-buying-reasons', module)
     .addDecorator(withKnobs)
     .add(
         'Unique buying reasons',
