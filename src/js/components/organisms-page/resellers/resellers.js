@@ -43,10 +43,6 @@ export default {
         },
         resellersAuthorized() {
             return this.resellers.filter(reseller => reseller.preferred === false);
-        },
-        pagedResellersAuthorized() {
-            return this.visibleAllAuthorizedResellers ?
-                this.resellersAuthorized : this.resellersAuthorized.slice(0, this.showMax);
         }
     }
 };

@@ -47,7 +47,9 @@
             </header>
             <ul class="reseller-list" v-if="resellersAuthorized.length > 0">
                 <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
-                    <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6" v-for="(reseller, index) in pagedResellersAuthorized">
+                    <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                         v-for="(reseller, index) in resellersAuthorized"
+                         v-if="index < showMax">
                         <li class="reseller-list__item">
                             <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
                         </li>
@@ -59,6 +61,14 @@
                             </button>
                         </div>
                     </template>
+                    <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                         v-for="(reseller, index) in resellersAuthorized"
+                         v-if="index >= showMax"
+                         v-show="visibleAllAuthorizedResellers">
+                        <li class="reseller-list__item">
+                            <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
+                        </li>
+                    </div>
                 </div>
             </ul>
         </section>
