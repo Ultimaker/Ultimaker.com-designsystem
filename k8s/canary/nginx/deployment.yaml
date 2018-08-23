@@ -29,4 +29,4 @@ spec:
               protocol: TCP
           env:
           - name: NODEJS_SERVER
-            value: storybook-node
+            value: storybook-node-canary
