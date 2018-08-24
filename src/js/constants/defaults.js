@@ -40,5 +40,7 @@ export default {
             max: Infinity
         }
     },
-    buildingUnit: 12
+    buildingUnit: 12,
+    defaultDuration: .3,
+    defaultEase: '.23, 1, .32, 1'
 };
