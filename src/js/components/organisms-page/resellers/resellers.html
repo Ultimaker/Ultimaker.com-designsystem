@@ -37,6 +37,7 @@
                     </template>
                 </div>
             </ul>
+
         </section>
 
         <section class="reseller-section reseller-section--authorized" v-if="resellers">
@@ -61,15 +62,23 @@
                             </button>
                         </div>
                     </template>
+                </div>
+                <transition-group @before-enter="beforeEnter"
+                                  @enter="enter"
+                                  tag="div"
+                                  :css="false"
+                                  class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row" id="newSection">
                     <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                          v-for="(reseller, index) in resellersAuthorized"
                          v-if="index >= showMax"
-                         v-show="visibleAllAuthorizedResellers">
+                         v-show="visibleAllAuthorizedResellers"
+                         :key="`reseller${index}`"
+                         :data-index="index">
                         <li class="reseller-list__item">
                             <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
                         </li>
                     </div>
-                </div>
+                </transition-group>
             </ul>
         </section>
     </section>
