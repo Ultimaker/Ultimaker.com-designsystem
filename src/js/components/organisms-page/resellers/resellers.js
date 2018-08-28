@@ -61,20 +61,23 @@ export default {
                 rowIndex++;
             }
 
-            return rowIndex * delay;
+            return rowIndex * delay / 1000;
         },
         beforeEnter(el) {
             TweenLite.set(el, {opacity: 0, y: resellerCardOffset});
         },
         enter(el, done) {
-            setTimeout(function() {
-                TweenLite.fromTo(el, resellerCardTransitionDuration, {opacity: 0, y: resellerCardOffset}, {
-                    opacity: 1,
-                    y: 0,
-                    ease: Power3.easeOut,
-                    onComplete: done
-                });
-            }, this.setDelay(el));
+            const transition = TweenLite.fromTo(el, resellerCardTransitionDuration, {
+                opacity: 0,
+                y: resellerCardOffset
+            }, {
+                opacity: 1,
+                y: 0,
+                ease: Power3.easeOut,
+                onComplete: done
+            });
+
+            transition.delay(this.setDelay(el));
         }
     },
     computed: {
