@@ -4,8 +4,8 @@ import Defaults from 'constants/defaults';
 
 const resellerCardTransitionDuration = Defaults.defaultDuration,
     resellerCardOffset = Defaults.buildingUnit * 5,
-    cardsYPos = [],
-    delay = 100;
+    lastTopValue = 0,
+    delay = 0.1;
 
 let rowIndex = 0;
 
@@ -45,39 +45,37 @@ export default {
             this.visibleAllAuthorizedResellers = true;
         },
         newRow(el) {
-            const rect = el.getBoundingClientRect(),
-                index = el.dataset.index - this.showMax;
+            const newTopValue = el.getBoundingClientRect().top;
 
-            cardsYPos.push(rect.top);
+            if (this.lastTopValue !== newTopValue) {
+                this.lastTopValue = newTopValue;
 
-            if (cardsYPos.length > 1) {
-                return cardsYPos[index - 1] !== cardsYPos[index];
+                return true;
             }
 
             return false;
         },
-        setDelay(el) {
+        calculateAnimationDelay(el) {
             if (this.newRow(el)) {
                 rowIndex++;
             }
 
-            return rowIndex * delay / 1000;
+            return rowIndex * delay;
         },
         beforeEnter(el) {
             TweenLite.set(el, {opacity: 0, y: resellerCardOffset});
         },
         enter(el, done) {
-            const transition = TweenLite.fromTo(el, resellerCardTransitionDuration, {
+            TweenLite.fromTo(el, resellerCardTransitionDuration, {
                 opacity: 0,
                 y: resellerCardOffset
             }, {
                 opacity: 1,
                 y: 0,
                 ease: Power3.easeOut,
-                onComplete: done
+                onComplete: done,
+                delay: this.calculateAnimationDelay(el)
             });
-
-            transition.delay(this.setDelay(el));
         }
     },
     computed: {
