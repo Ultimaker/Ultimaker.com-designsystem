@@ -201,6 +201,37 @@
             "name": "Test reseller 19",
             "preferred": false,
             "href": "#"
+        },
+        {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
+            "name": "Test reseller 20",
+            "preferred": false,
+            "href": "#"
+        },
+        {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
+            "name": "Test reseller 21",
+            "preferred": false,
+            "showroomCount": 1,
+            "href": "#"
+        },
+        {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/120/120"
+                }
+            },
+            "name": "Test reseller 22",
+            "preferred": false,
+            "href": "#"
         }
     ],
     "labels": {
