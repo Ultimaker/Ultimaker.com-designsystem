@@ -96,6 +96,39 @@ describe('components', () => {
                     vm.$destroy();
                 });
             });
+
+            it('should detect a new row', () => {
+                const vm = mount(buildOptions),
+                    topValue = 100;
+
+                vm.isNewRow(topValue);
+                expect(vm.isNewRow()).toBe(true);
+
+                vm.$destroy();
+            });
+
+            it('should add a row', () => {
+                const vm = mount(buildOptions),
+                    topValue = 100;
+
+                vm.rowIndex = 3;
+                vm.addRow(topValue);
+                expect(vm.rowIndex).toBe(4);
+
+                vm.$destroy();
+            });
+
+            it('should detect a cards\' y coordinate and update row accordingly', () => {
+                const vm = mount(buildOptions),
+                    card = vm.$refs.visible[0];
+
+                spyOn(card, 'getBoundingClientRect').and.returnValue({top: 100});
+                vm.enter(card);
+                expect(vm.rowIndex).toBe(1);
+                expect(vm.lastTopValue).toBe(100);
+
+                vm.$destroy();
+            });
         });
     });
 });
