@@ -3,11 +3,7 @@ import {Power3} from 'gsap';
 import Defaults from 'constants/defaults';
 
 const resellerCardTransitionDuration = Defaults.defaultDuration,
-    resellerCardOffset = Defaults.buildingUnit * 5,
-    lastTopValue = 0,
-    delay = 0.1;
-
-let rowIndex = 0;
+    resellerCardOffset = Defaults.buildingUnit * 5;
 
 export default {
     name: 'resellers',
@@ -15,7 +11,10 @@ export default {
     data: () => ({
         visibleAllAuthorizedResellers: false,
         visibleTooltipPreferred: false,
-        showMax: 6
+        showMax: 6,
+        lastTopValue: 0,
+        delayIncrement: 0.1,
+        rowIndex: 0
     }),
     props: {
         title: {
@@ -44,28 +43,23 @@ export default {
         showAllAuthorizedResellers() {
             this.visibleAllAuthorizedResellers = true;
         },
-        newRow(el) {
-            const newTopValue = el.getBoundingClientRect().top;
-
-            if (this.lastTopValue !== newTopValue) {
-                this.lastTopValue = newTopValue;
-
-                return true;
-            }
-
-            return false;
+        isNewRow(topValue) {
+            return this.lastTopValue !== topValue;
         },
-        calculateAnimationDelay(el) {
-            if (this.newRow(el)) {
-                rowIndex++;
-            }
-
-            return rowIndex * delay;
+        addRow(topValue) {
+            this.rowIndex++;
+            this.lastTopValue = topValue;
         },
         beforeEnter(el) {
             TweenLite.set(el, {opacity: 0, y: resellerCardOffset});
         },
         enter(el, done) {
+            const elTopValue = el.getBoundingClientRect().top;
+
+            if (this.isNewRow(elTopValue)) {
+                this.addRow(elTopValue);
+            }
+
             TweenLite.fromTo(el, resellerCardTransitionDuration, {
                 opacity: 0,
                 y: resellerCardOffset
@@ -74,7 +68,7 @@ export default {
                 y: 0,
                 ease: Power3.easeOut,
                 onComplete: done,
-                delay: this.calculateAnimationDelay(el)
+                delay: this.rowIndex * this.delayIncrement
             });
         }
     },
