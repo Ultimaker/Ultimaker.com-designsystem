@@ -2,7 +2,7 @@
     <div role="search">
         <div class="search__inputholder">
             <label for="search__input" class="search__label">Search</label>
-            <input id="search__input" type="text" name="search" placeholder="How can we help?" class="search__input"
+            <input id="search__input" type="text" name="search" :placeholder="placeholder" class="search__input"
                    @blur="onBlur" @keyup.esc="close"
                    v-model="searchValue"
                    ref="search__input">
