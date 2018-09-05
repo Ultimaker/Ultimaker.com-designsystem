@@ -18,6 +18,10 @@ export default {
         value: {
             type: Object,
             default: null
+        },
+        countryDetected: {
+            type: String,
+            default: ''
         }
     },
     computed: {
