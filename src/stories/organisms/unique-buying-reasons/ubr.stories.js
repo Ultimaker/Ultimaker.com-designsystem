@@ -1,7 +1,6 @@
 import {storiesOf} from '@storybook/vue';
-import {withKnobs, text, object} from '@storybook/addon-knobs';
+import {withKnobs} from '@storybook/addon-knobs';
 import Ubr from 'organisms-page/ubr';
-import ubrData from './ubr.stories.json';
 import knobs from './ubr.knobs.stories.js';
 
 storiesOf('organisms|unique-buying-reasons', module)

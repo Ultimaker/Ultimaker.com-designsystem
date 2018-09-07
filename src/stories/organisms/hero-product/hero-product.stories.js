@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
-import {withKnobs, text, object} from '@storybook/addon-knobs';
-import data from './hero-product.stories.json';
+import {withKnobs} from '@storybook/addon-knobs';
 import knobs from './hero-product.knobs.stories.js';
 
 storiesOf('organisms|hero', module)

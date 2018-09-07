@@ -4,6 +4,7 @@
     "materials": [
         {
             "short_title": "Product",
+            "iconName": "material",
             "weight": {
                 "value": 300,
                 "unit": "g"

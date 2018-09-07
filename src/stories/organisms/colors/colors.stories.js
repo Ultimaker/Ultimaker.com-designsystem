@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs} from '@storybook/addon-knobs';
-import data from './colors.stories.json';
 import knobs from './colors.knobs.stories.js';
 
 storiesOf('organisms|colors', module)
@@ -10,7 +9,6 @@ storiesOf('organisms|colors', module)
             data: () => ({
                 colors: knobs()
             }),
-            inject: ['data'],
             template: require('./colors.stories.html')
         };
     },

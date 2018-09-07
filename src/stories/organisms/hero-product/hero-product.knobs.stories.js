@@ -1,4 +1,4 @@
-import {text, number, object} from '@storybook/addon-knobs';
+import {text, object} from '@storybook/addon-knobs';
 import data from './hero-product.stories.json';
 
 export default () => ({
