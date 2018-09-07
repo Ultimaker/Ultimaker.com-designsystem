@@ -57,7 +57,8 @@
             "volume",
             "resolution",
             "support",
-            "print-head",
+            "single-extrusion",
+            "dual-extrusion",
             "cura",
             "connect"
         ],
