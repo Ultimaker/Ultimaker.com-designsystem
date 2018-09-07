@@ -1,13 +1,15 @@
 import {storiesOf} from '@storybook/vue';
-import data from './card.stories.json';
+import {withKnobs} from '@storybook/addon-knobs';
+import knobs from './card.knobs.stories.js';
 
 storiesOf('Molecules|layout/cards', module)
+    .addDecorator(withKnobs)
     .add(
         'Card',
         () => {
             return {
                 data: () => ({
-                    card: data.card
+                    card: knobs()
                 }),
                 template: require('./card.stories.html')
             };
