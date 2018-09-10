@@ -4,7 +4,8 @@
     <div @keydown.down.prevent="selectFlyoutFirstLink"
          @keydown.tab.shift.exact="hideFlyout"
          @keydown.esc.prevent="hideFlyout">
-        <router-link :to="href" ref="parent"
+        <a :to="href" :href="href"
+                     ref="parent"
                      class="main-nav__link"
                      @focus="showFlyout"
                      @click.native="hideFlyout"
@@ -13,7 +14,7 @@
                      :aria-current="isActive"
                      :aria-expanded="!isCompact && flyoutIsOpen">
             {{ title }}
-        </router-link>
+        </a>
     </div>
 
     <icon-button class="icon-button--small main-nav__toggle disable-focus"
