@@ -1,6 +1,6 @@
 {
     "card": {
-        "image": [{
+        "image": {
             "mobileWidth": {
                 "url": "/generator/svg/600/600"
             },
@@ -10,7 +10,7 @@
                     "url": "/generator/svg/1200/1200"
                 }
             }
-        }],
+        },
         "title": "Lorum ipsum",
         "description": "Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
         "contentLink": {
