@@ -22,6 +22,10 @@ export default {
         countryDetected: {
             type: String,
             default: ''
+        },
+        countrySuggestions: {
+            type: String,
+            default: ''
         }
     },
     computed: {

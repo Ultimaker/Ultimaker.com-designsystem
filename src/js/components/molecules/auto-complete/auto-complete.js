@@ -44,11 +44,11 @@ export default {
         },
         titleField: {
             type: String,
-            default: 'title'
+            default: ''
         },
         valueField: {
             type: String,
-            default: 'value'
+            default: ''
         },
         storedItems: {
             type: Array,
@@ -56,11 +56,11 @@ export default {
         },
         storedLabel: {
             type: String,
-            default: 'Detected'
+            default: ''
         },
         suggestionsLabel: {
             type: String,
-            default: 'Suggestions'
+            default: ''
         },
         required: {
             type: Boolean,
