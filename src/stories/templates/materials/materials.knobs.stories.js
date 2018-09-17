@@ -4,8 +4,8 @@ import examplesKnobs from '../../organisms/examples/examples.knobs.stories.js';
 import colorsKnobs from '../../organisms/colors/colors.knobs.stories.js';
 
 export default () => ({
-    heroProduct: heroProductKnobs(),
-    ubr: ubrKnobs(),
-    examples: examplesKnobs(),
-    colors: colorsKnobs()
+    ...heroProductKnobs(),
+    ...ubrKnobs(),
+    ...examplesKnobs(),
+    ...colorsKnobs()
 });
