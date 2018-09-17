@@ -1,9 +1,10 @@
-import {text, object} from '@storybook/addon-knobs';
+import {text, array, files} from '@storybook/addon-knobs';
 import data from './ubr.stories.json';
+import {deprecatedImages} from '../../helpers/images';
 
 export default () => ({
     title: text('UBR - title', data.title),
     description: text('UBR - description', data.description),
-    image: object('UBR - image', data.image),
-    reasons: object('UBR - reasons', data.reasons)
+    reasons: array('UBR - reasons', data.reasons),
+    image: deprecatedImages('UBR - image', data.image)
 });
