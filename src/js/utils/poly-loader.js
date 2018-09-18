@@ -1,6 +1,6 @@
 import BrowserCompatibilities from 'utils/browser-capabilities';
 
-class loader {
+class PolyLoader {
     static loadPolyfills() {
         const polyfillIntl = new Promise((resolve) => {
             if (BrowserCompatibilities.supportsIntl) {
@@ -48,4 +48,4 @@ class loader {
     }
 }
 
-export default loader;
+export default PolyLoader;

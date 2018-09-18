@@ -1,5 +1,5 @@
 import {storiesOf} from '@storybook/vue';
-import {withKnobs, text, object, select, boolean} from '@storybook/addon-knobs';
+import {withKnobs, select, boolean} from '@storybook/addon-knobs';
 import data from './grid.stories.json';
 
 storiesOf('Atoms|grid', module)

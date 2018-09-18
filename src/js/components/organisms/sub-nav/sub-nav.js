@@ -1,4 +1,3 @@
-import Vue from 'vue';
 import ViewportUtil from 'utils/viewport';
 import {mapGetters} from 'vuex';
 
@@ -10,11 +9,9 @@ export default {
     }),
     computed: {
         classObject() {
-            const classes = {
+            return {
                 'sub-nav--collapsed': this.viewport.scrollY > 75 && this.viewport.scrollOffset > -75
             };
-
-            return classes;
         },
         ...mapGetters('page', [
             'page',

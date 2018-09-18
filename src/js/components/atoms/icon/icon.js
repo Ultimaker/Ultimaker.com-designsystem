@@ -1,5 +1,3 @@
-import BrowserCapabilities from 'utils/browser-capabilities';
-
 const defaultIconUrl = '/static/icons/iconset.svg';
 
 export default {

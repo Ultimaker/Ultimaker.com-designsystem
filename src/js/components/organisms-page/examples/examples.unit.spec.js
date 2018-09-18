@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 import Examples from './examples';
-import {build, component} from 'vuenit';
+import {build} from 'vuenit';
 
 describe('components', () => {
     describe('page', () => {

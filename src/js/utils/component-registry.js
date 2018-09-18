@@ -7,7 +7,7 @@ class ComponentRegistry {
         this.components.push(component);
     }
 
-    install(Vue, options) {
+    install(Vue) {
         this.components
             .filter(c => typeof c.name === 'string')
             .forEach(c => Vue.component(c.name, c));

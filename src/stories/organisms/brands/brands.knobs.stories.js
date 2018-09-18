@@ -1,4 +1,4 @@
-import {text, files, select} from '@storybook/addon-knobs';
+import {text, files} from '@storybook/addon-knobs';
 import data from './brands.stories.json';
 
 const createBrandsImages = () => (

@@ -24,7 +24,7 @@ export default {
         }
     },
     watch: {
-        openState(value) {
+        openState() {
             this.used = true;
             this.$emit('used');
         }

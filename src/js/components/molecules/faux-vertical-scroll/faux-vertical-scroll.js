@@ -39,7 +39,7 @@ export default {
             this.drag.startX = e.clientX;
             this.setActive();
         },
-        mouseup(e) {
+        mouseup() {
             this.setInactive();
         },
         mousemove(e) {
@@ -55,7 +55,7 @@ export default {
             this.drag.startX = e.changedTouches[0].pageX;
             this.setActive();
         },
-        touchend(e) {
+        touchend() {
             this.setInactive();
         },
         touchmove(e) {
