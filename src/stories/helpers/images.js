@@ -1,7 +1,5 @@
 import {files} from '@storybook/addon-knobs';
-
-const responsiveImageKeys = ['mobileWidth', 'mobileLWidth', 'mobileXlWidth', 'tabletWidth', 'desktopWidth', 'desktopHdWidth'];
-const allowedMimeTypes = ['image/png', 'image/jpg', 'image/svg+xml'];
+import {responsiveImageKeys, allowedMimeTypes} from '../constants';
 
 export const responsiveImage =  (name = '', image = {}, listKey = '') => Object.keys(image).reduce((acc, key) => {
     if (responsiveImageKeys.indexOf(key) > -1) {
