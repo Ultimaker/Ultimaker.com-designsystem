@@ -40,6 +40,16 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
           sh 'sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.github.repository=Ultimaker/Ultimaker.com-designsystem -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src'
         }
       }
+    } else if (env.BRANCH_NAME.startsWith("PR-") == true) {
+      def prNumber = env.BRANCH_NAME.replace("PR-", "")
+      stage('static code analysis') {
+        container('sonar-scanner') {
+          sh "sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.github.repository=Ultimaker/Ultimaker.com-designsystem -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src -Dsonar.analysis.mode=preview -Dsonar.github.pullRequest=${prNumber}"
+        }
+      }
+
+      currentBuild.result = "SUCCESS"
+      return
     }
 
     stage('install dependencies') {
@@ -93,11 +103,6 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
           }
         }
       )
-    }
-
-    if (env.BRANCH_NAME.startsWith("PR-") == true) {
-        currentBuild.result = "SUCCESS"
-        return
     }
 
     stage('authenticate gcloud') {
