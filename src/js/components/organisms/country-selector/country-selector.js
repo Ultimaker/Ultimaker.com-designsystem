@@ -89,7 +89,7 @@ export default {
             this.$emit('close');
         },
         countryChanged(country) {
-            return new Promise((resolve, reject) => {
+            return new Promise((resolve) => {
                 if (country !== null) {
                     setTimeout(() => {
                         /*

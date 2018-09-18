@@ -1,5 +1,5 @@
 /* eslint camelcase: ["error", {properties: "never"}] */
-import {text, files} from '@storybook/addon-knobs';
+import {text} from '@storybook/addon-knobs';
 import data from './colors.stories.json';
 import {deprecatedImages} from '../../helpers/images';
 

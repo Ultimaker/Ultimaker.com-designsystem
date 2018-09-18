@@ -28,7 +28,12 @@ module.exports = {
     },
     rules: {
         'no-console': 0,
-        'no-unused-vars': 0,
+        'no-unused-vars': [2, {
+            "args": "all",
+            "argsIgnorePattern": "^_",
+            "vars": "all",
+            "varsIgnorePattern": "^_$"
+        }],
 
          // CODE STYLE //
          'array-bracket-spacing': [2, 'never'], // http://eslint.org/docs/rules/array-bracket-spacing

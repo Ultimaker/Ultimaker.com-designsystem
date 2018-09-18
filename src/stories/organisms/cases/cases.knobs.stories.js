@@ -1,4 +1,4 @@
-import {text, object, select} from '@storybook/addon-knobs';
+import {text, select} from '@storybook/addon-knobs';
 import data from './cases.stories.json';
 import {iconList} from '../../helpers/icons';
 import {responsiveImage} from '../../helpers/images';

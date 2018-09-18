@@ -26,7 +26,7 @@ export default {
             TweenLite.to(this.$refs.modal, 0.1, {opacity: 1, ease: Power2.easeOut});
             TweenLite.to(this.$refs.modal, 0.3, {scale: 1, ease: Power2.easeOut});
         },
-        enter(el, done) {
+        enter(_el, done) {
             const iframe = this.$refs.modal.querySelector('iframe'),
                 timeLine = new TimelineLite();
 
@@ -52,7 +52,7 @@ export default {
 
             timeLine.call(done);
         },
-        leave(el, done) {
+        leave(_el, done) {
             const timeLine = new TimelineLite();
 
             timeLine.to(this.$refs.modal, 0.2, {opacity: 0, scale: 0.6, ease: Power2.easeIn});

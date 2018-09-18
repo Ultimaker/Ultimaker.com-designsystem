@@ -1,5 +1,3 @@
-import Vue from 'vue';
-
 export default {
     name: 'icon-button',
     template: require('./icon-button.html'),

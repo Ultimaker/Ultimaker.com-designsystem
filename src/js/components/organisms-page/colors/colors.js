@@ -67,7 +67,7 @@ export default {
                 tooltip.classList.add(classPushLeft);
             }
         },
-        setSelected(color, e) {
+        setSelected(color) {
             this.activeColor = color;
         }
     },

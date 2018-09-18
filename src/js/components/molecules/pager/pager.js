@@ -55,7 +55,7 @@ export default {
         }
     },
     watch: {
-        activeIndex(newValue, oldValue) {
+        activeIndex() {
             const tl = new TimelineLite(),
                 offsets = this.getChangeOffset();
 

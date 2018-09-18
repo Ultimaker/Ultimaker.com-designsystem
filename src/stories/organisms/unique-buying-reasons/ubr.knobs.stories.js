@@ -1,4 +1,4 @@
-import {text, array, files} from '@storybook/addon-knobs';
+import {text, array} from '@storybook/addon-knobs';
 import data from './ubr.stories.json';
 import {deprecatedImages} from '../../helpers/images';
 import TextUtils from '../../../js/utils/text-utils';

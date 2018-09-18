@@ -3,7 +3,6 @@ import {text, select, files} from '@storybook/addon-knobs';
 import data from './hero-product.stories.json';
 import {iconList} from '../../helpers/icons';
 
-
 export default () => ({
     heroProduct: {
         title: text('Hero - title', data.title),

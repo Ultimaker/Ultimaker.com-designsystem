@@ -115,7 +115,7 @@ export default {
             });
 
             // 2. read values (measure heights)
-            this.$refs.descriptions.map((element, index) => {
+            this.$refs.descriptions.map((element) => {
                 const currentHeight = {
                     dt: element.previousElementSibling.getBoundingClientRect().height,
                     dd: element.getBoundingClientRect().height

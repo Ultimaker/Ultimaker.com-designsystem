@@ -9,7 +9,7 @@ const _resizeHandlers = [],
     _scrollHandlers = [],
     _orientationChangeHandlers = [];
 
-function scrollHandler(e) {
+function scrollHandler() {
     if (!_scrollAnimationPending) {
         _scrollAnimationPending = true;
         window.requestAnimationFrame(() => {
@@ -20,7 +20,7 @@ function scrollHandler(e) {
     }
 }
 
-function resizeHandler(e) {
+function resizeHandler() {
     if (!_resizeAnimationPending) {
         _resizeAnimationPending = true;
         window.requestAnimationFrame(() => {
@@ -31,7 +31,7 @@ function resizeHandler(e) {
     }
 }
 
-function orientationChangeHandler(e) {
+function orientationChangeHandler() {
     window.requestAnimationFrame(() => {
         _orientationChangeHandlers.forEach(h => h());
     });

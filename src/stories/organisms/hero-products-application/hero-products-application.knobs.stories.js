@@ -1,4 +1,4 @@
-import {select, text, object} from '@storybook/addon-knobs';
+import {select, text} from '@storybook/addon-knobs';
 import data from './hero-products-application.stories.json';
 import {responsiveImage} from '../../helpers/images';
 import {iconList} from '../../helpers/icons';

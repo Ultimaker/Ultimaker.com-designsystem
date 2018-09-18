@@ -1,6 +1,5 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs, text} from '@storybook/addon-knobs';
-import data from './images.stories.json';
 
 const stories = storiesOf('Atoms|media/icons', module)
     .addDecorator(withKnobs)
