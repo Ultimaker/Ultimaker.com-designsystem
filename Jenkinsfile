@@ -29,6 +29,7 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
   node("${podLabel}") {
     def scmVars = checkout scm
     def commitHash = scmVars.GIT_COMMIT
+    def repo = scmVars.GIT_URL.replaceAll('https://github.com/', '').replaceAll('.git', '')
 
     if (env.BRANCH_NAME == "master") {
       clusterName = 'ultimaker-prod'
@@ -37,14 +38,14 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
 
       stage('static code analysis') {
         container('sonar-scanner') {
-          sh 'sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.github.repository=Ultimaker/Ultimaker.com-designsystem -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src'
+          sh "sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.projectName=${repo} -Dsonar.github.repository=${repo} -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src"
         }
       }
     } else if (env.BRANCH_NAME.startsWith("PR-") == true) {
       def prNumber = env.BRANCH_NAME.replace("PR-", "")
       stage('static code analysis') {
         container('sonar-scanner') {
-          sh "sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.github.repository=Ultimaker/Ultimaker.com-designsystem -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src -Dsonar.analysis.mode=preview -Dsonar.github.pullRequest=${prNumber}"
+          sh "sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.projectName=${repo} -Dsonar.github.repository=${repo} -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src -Dsonar.analysis.mode=preview -Dsonar.github.pullRequest=${prNumber}"
         }
       }
 
