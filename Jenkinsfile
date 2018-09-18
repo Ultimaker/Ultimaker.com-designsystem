@@ -21,7 +21,10 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
   containerTemplate(name: 'node', image: 'node:8.11.3', ttyEnabled: true, command: 'cat', envVars: [
       secretEnvVar(key: 'BROWSERSTACK_USER', secretName: 'browserstack-credentials', secretKey: 'username'),
       secretEnvVar(key: 'BROWSERSTACK_ACCESS_KEY', secretName: 'browserstack-credentials', secretKey: 'access-key')
-  ])
+  ]),
+  containerTemplate(name: 'sonar-scanner', image: 'newtmitch/sonar-scanner', ttyEnabled: true, command: 'cat')
+], volumes: [
+  secretVolume(mountPath: '/var/secrets', secretName: 'sonarqube-config')
 ]) {
   node("${podLabel}") {
     def scmVars = checkout scm
@@ -31,6 +34,12 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
       clusterName = 'ultimaker-prod'
       deploymentName = 'canary'
       zone = 'europe-west3-b'
+
+      stage('static code analysis') {
+        container('sonar-scanner') {
+          sh 'sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.github.repository=Ultimaker/Ultimaker.com-designsystem -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src'
+        }
+      }
     }
 
     stage('install dependencies') {
