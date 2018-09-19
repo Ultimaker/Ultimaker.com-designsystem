@@ -17,7 +17,7 @@ export default () => ({
             contentLink: {
                 text: text(`Examples - cards ${i+1} content link`, card.contentLink.text)
             },
-            image: responsiveImage(`Examples - cards ${i+1} image`, card.image)
+            image: responsiveImage(`Examples - cards ${i+1}`, card.image)
         }))
     }
 });

@@ -8,6 +8,7 @@ export default () => ({
         ... data,
         title: text('Cases - title', data.title),
         description: text('Cases - description', data.description),
+        videoId: text('Cases - youtube id', data.videoId),
         buttonIcon: select('Cases - button icon', iconList, data.buttonIcon),
         buttonLabel: text('Cases - button label', data.buttonLabel),
         image: responsiveImage('Cases - image', data.image)

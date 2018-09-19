@@ -1,6 +1,9 @@
 {
     "type": "color-picker",
     "title": "Lorem ipsum dolor sit amet",
+    "labels": {
+        "whereToBuy": "Where to buy!"
+    },
     "material": {
         "title": "Ultimaker Material (UMM)",
         "short_title": "UMM",
@@ -61,24 +64,6 @@
                         }],
                         "landscape_mobile": [{
                             "href": "/generator/svg/900/540/BC4077/FFFFFF"
-                        }]
-                    }
-                }]
-            },
-            {
-                "title": "Ultimaker material",
-                "is_transparent": false,
-                "rgb_hex_code": "#BB1E10",
-                "system_code": "RAL 1234",
-                "image": [{
-                    "title": "Ultimaker material",
-                    "mime_type": "image/png",
-                    "links": {
-                        "landscape_desktop": [{
-                            "href": "/generator/svg/1800/1080/BB1E10/FFFFFF"
-                        }],
-                        "landscape_mobile": [{
-                            "href": "/generator/svg/900/540/BB1E10/FFFFFF"
                         }]
                     }
                 }]
