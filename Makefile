@@ -21,3 +21,11 @@ run:
 
 unit:
 	$(call docker-node-run, npm run unit)
+
+k8s-local:
+	kubectl config use-context docker-for-desktop || exit 1
+	docker build -f docker/nginx/Dockerfile -t registry.k8s.local/storybook/nginx:dev .
+	docker push registry.k8s.local/storybook/nginx:dev
+	docker build -f docker/nodejs/Dockerfile -t registry.k8s.local/storybook/node:dev .
+	docker push registry.k8s.local/storybook/node:dev
+	kubectl apply -R -f k8s/local
