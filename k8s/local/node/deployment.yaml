@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: storybook-node
-          image: registry.k8s.local/ultimaker-com/node:dev
+          image: registry.k8s.local/storybook/node:dev
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
