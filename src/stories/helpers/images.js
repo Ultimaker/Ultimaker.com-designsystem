@@ -10,13 +10,13 @@ export const responsiveImage =  (name = '', image = {}, listKey = '') => Object.
 
         if (acc[key] && acc[key].retinaUrl) {
             acc[key]['retinaUrl'] = files(
-                `${name} - ${listKey} image ${imageKnobLabels[key]}`,
+                `${name}  - ${listKey} image ${imageKnobLabels[key]} retina`,
                 allowedMimeTypes,
                 image[key].retinaUrl);
         }
         if (acc[key] && acc[key].retina && acc[key].retina.url) {
             acc[key]['retina']['url'] = files(
-                `${name} - ${listKey} image ${imageKnobLabels[key]}`,
+                `${name} - ${listKey} image ${imageKnobLabels[key]} retina`,
                 allowedMimeTypes,
                 image[key].retina.url);
         }
@@ -25,9 +25,9 @@ export const responsiveImage =  (name = '', image = {}, listKey = '') => Object.
     return {...acc};
 }, {...image});
 
-export const responsiveImages = (name = '', listKeys = [], images = []) => images.map((image, i) => (
-    responsiveImage(name, image, listKeys[i]))
-);
+export const responsiveImages = (name = '', listKeys = [], images = []) => images.map((image, i) => {
+    return responsiveImage(`${name} ${i+1}`, image, listKeys[i]);
+});
 
 export const deprecatedImages = (name = '', images = []) => (
     images.map((image) => ({
