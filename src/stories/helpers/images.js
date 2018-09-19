@@ -1,18 +1,24 @@
 import {files} from '@storybook/addon-knobs';
-import {responsiveImageKeys, allowedMimeTypes} from '../constants';
+import {responsiveImageKeys, allowedMimeTypes, imageKnobLabels} from '../constants';
 
 export const responsiveImage =  (name = '', image = {}, listKey = '') => Object.keys(image).reduce((acc, key) => {
     if (responsiveImageKeys.indexOf(key) > -1) {
         acc[key] = {
             ... image[key],
-            url: files(`${name} - ${listKey} image ${key}`, allowedMimeTypes, image[key].url)
+            url: files(`${name} - ${listKey} image ${imageKnobLabels[key]}`, allowedMimeTypes, image[key].url)
         };
 
         if (acc[key] && acc[key].retinaUrl) {
             acc[key]['retinaUrl'] = files(
-                `${name} - ${listKey} image ${key} retina`,
+                `${name} - ${listKey} image ${imageKnobLabels[key]}`,
                 allowedMimeTypes,
                 image[key].retinaUrl);
+        }
+        if (acc[key] && acc[key].retina && acc[key].retina.url) {
+            acc[key]['retina']['url'] = files(
+                `${name} - ${listKey} image ${imageKnobLabels[key]}`,
+                allowedMimeTypes,
+                image[key].retina.url);
         }
     }
 
@@ -29,10 +35,10 @@ export const deprecatedImages = (name = '', images = []) => (
         links: {
             ...image.links,
             'landscape_desktop': [{
-                href: files(`${name} mobile`, allowedMimeTypes, image.links.landscape_desktop[0].href)
+                href: files(`${name} small screen`, allowedMimeTypes, image.links.landscape_desktop[0].href)
             }],
             'landscape_mobile': [{
-                href: files(`${name} desktop`, allowedMimeTypes, image.links.landscape_mobile[0].href)
+                href: files(`${name} large screen`, allowedMimeTypes, image.links.landscape_mobile[0].href)
             }]
         }
     }))

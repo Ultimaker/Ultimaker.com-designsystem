@@ -6,8 +6,18 @@ import {deprecatedImages} from '../../helpers/images';
 export default () => ({
     colors: {
         title: text('Colors - Main title', data.title),
+        labels: {
+            whereToBuy: text('Colors - label where to buy:', data.labels.whereToBuy)
+        },
         material: {
             ... data.material,
+            title: text('Colors - material title', data.material.title),
+            short_title: text('Colors - material title', data.material.short_title),
+            weight: {
+                ...data.material.weight,
+                unit: text('Colors - material weight unit', data.material.weight.unit),
+                value: text('Colors - material weight', data.material.weight.value)
+            },
             material_colors: data.material.material_colors.map((color, i) => ({
                 ...color,
                 title: text(`Colors - material ${i+1} color title`, color.title),

@@ -13,6 +13,10 @@ export default {
         material: {
             type: Object,
             required: true
+        },
+        labels: {
+            type: Object,
+            required: false
         }
     },
     computed: {

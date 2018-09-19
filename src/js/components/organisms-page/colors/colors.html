@@ -21,7 +21,7 @@
                                             <dd class="list__item tooltip__list-item">{{ color. system_code }}</dd>
                                         </template>
                                         <dt class="list__item tooltip__list-item tooltip__label">Weight:</dt>
-                                        <dd class="list__item tooltip__list-item"><span class="hardcoded">750 g</span>
+                                        <dd class="list__item tooltip__list-item"><span>{{material.weight.value}} {{material.weight.unit}}</span>
                                         </dd>
                                     </dl>
                                 </tooltip>
@@ -30,7 +30,7 @@
                             </hit-area>
                         </li>
                     </ul>
-                    <content-link mod="large"><span class="hardcoded">Where to buy</span></content-link>
+                    <content-link mod="large"><span >{{ labels.whereToBuy }}</span></content-link>
                 </div>
             </div>
             <div class="flexgrid__cell--sm-8 flexgrid__cell--xs-6">
