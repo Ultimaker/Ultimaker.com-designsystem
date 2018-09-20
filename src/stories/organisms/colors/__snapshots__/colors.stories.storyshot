@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|colors Colors 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <article
+        class="colors"
+      >
+        <div
+          class="container"
+        >
+          <header>
+            <h2>
+              Lorem ipsum dolor sit amet
+            </h2>
+          </header>
+           
+          <div
+            class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"
+          >
+            <div
+              class="flexgrid__cell--xs-6 flexgrid__cell--sm-4"
+            >
+              <div
+                class="colors__swatches"
+              >
+                <ul
+                  class="list colors__list"
+                >
+                  <li
+                    class="list__item colors__list-item"
+                  >
+                    <a
+                      class="hit-area"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="tooltip colors__tooltip"
+                      >
+                        <dl
+                          class="list tooltip__list"
+                        >
+                          <dt
+                            class="list__item tooltip__list-item tooltip__label"
+                          >
+                            Material:
+                          </dt>
+                           
+                          <dd
+                            class="list__item tooltip__list-item"
+                          >
+                            Ultimaker material
+                          </dd>
+                           
+                          <dt
+                            class="list__item tooltip__list-item tooltip__label"
+                          >
+                            Color:
+                          </dt>
+                           
+                          <dd
+                            class="list__item tooltip__list-item"
+                          >
+                            RAL 1234
+                          </dd>
+                           
+                          <dt
+                            class="list__item tooltip__list-item tooltip__label"
+                          >
+                            Weight:
+                          </dt>
+                           
+                          <dd
+                            class="list__item tooltip__list-item"
+                          >
+                            <span>
+                              750 g
+                            </span>
+                          </dd>
+                        </dl>
+                      </div>
+                       
+                      <div
+                        class="color"
+                      >
+                        <div
+                          class="color__spec color__spec--show"
+                        >
+                          <!---->
+                        </div>
+                         
+                        <div
+                          class="color__spec color__spec--swatch"
+                          style="background: rgb(0, 56, 123);"
+                        />
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="list__item colors__list-item"
+                  >
+                    <a
+                      class="hit-area"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="tooltip colors__tooltip"
+                      >
+                        <dl
+                          class="list tooltip__list"
+                        >
+                          <dt
+                            class="list__item tooltip__list-item tooltip__label"
+                          >
+                            Material:
+                          </dt>
+                           
+                          <dd
+                            class="list__item tooltip__list-item"
+                          >
+                            Ultimaker material
+                          </dd>
+                           
+                          <dt
+                            class="list__item tooltip__list-item tooltip__label"
+                          >
+                            Color:
+                          </dt>
+                           
+                          <dd
+                            class="list__item tooltip__list-item"
+                          >
+                            RAL 1234
+                          </dd>
+                           
+                          <dt
+                            class="list__item tooltip__list-item tooltip__label"
+                          >
+                            Weight:
+                          </dt>
+                           
+                          <dd
+                            class="list__item tooltip__list-item"
+                          >
+                            <span>
+                              750 g
+                            </span>
+                          </dd>
+                        </dl>
+                      </div>
+                       
+                      <div
+                        class="color"
+                      >
+                        <div
+                          class="color__spec color__spec--show"
+                        >
+                          <!---->
+                        </div>
+                         
+                        <div
+                          class="color__spec color__spec--swatch"
+                          style="background: rgb(188, 64, 119);"
+                        />
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="list__item colors__list-item"
+                  >
+                    <a
+                      class="hit-area"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="tooltip colors__tooltip"
+                      >
+                        <dl
+                          class="list tooltip__list"
+                        >
+                          <dt
+                            class="list__item tooltip__list-item tooltip__label"
+                          >
+                            Material:
+                          </dt>
+                           
+                          <dd
+                            class="list__item tooltip__list-item"
+                          >
+                            Ultimaker transparent
+                          </dd>
+                           
+                          <!---->
+                           
+                          <dt
+                            class="list__item tooltip__list-item tooltip__label"
+                          >
+                            Weight:
+                          </dt>
+                           
+                          <dd
+                            class="list__item tooltip__list-item"
+                          >
+                            <span>
+                              750 g
+                            </span>
+                          </dd>
+                        </dl>
+                      </div>
+                       
+                      <div
+                        class="color"
+                      >
+                        <div
+                          class="color__spec color__spec--show"
+                        >
+                          <!---->
+                        </div>
+                         
+                        <div
+                          class="color__spec color__spec--swatch"
+                        />
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                 
+                <a
+                  class="link link--large"
+                  href=""
+                  to=""
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    <span>
+                      Where to buy!
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+             
+            <div
+              class="flexgrid__cell--sm-8 flexgrid__cell--xs-6"
+            >
+              <div
+                class="colors__image colors__image--loading"
+              >
+                <div
+                  class="cms-image"
+                  style="padding-top: 60%;"
+                >
+                  <picture
+                    class="cms-image__image"
+                  >
+                    <source
+                      media="(min-width: 1201px)"
+                      srcset=""
+                    />
+                     
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset=""
+                    />
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="/generator/svg/900/540/00387B/FFFFFF"
+                    />
+                     
+                    <img
+                      alt=""
+                      class="img--responsive img--lazy"
+                      src=""
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </section>
+</section>
+`;

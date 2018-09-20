@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|text Copy 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <p
+        class="copy--intro"
+      >
+        Intro text, nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisierat porttitor ligula, eget lacinia odio sem nec elit.
+      </p>
+       
+      <p>
+        Paragraph text, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+      </p>
+       
+      <q>
+        Quote text ipsum dolor sit amet, consectetur adipisicing elit.
+      </q>
+       
+      <aside
+        class="copy--small"
+      >
+        Aside text, a pharetra augue. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+      </aside>
+       
+      <small>
+        Sub text amet ridiculus ornare
+      </small>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text Headings 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <h1>
+        H1 Primary headline
+      </h1>
+       
+      <h2>
+        H2 Secondary headline
+      </h2>
+       
+      <h3>
+        H3 Tertiary headline
+      </h3>
+       
+      <h4>
+        H4 Quaternary headline
+      </h4>
+       
+      <h5>
+        H5 Quinary headline
+      </h5>
+       
+      <h6>
+        H6 Senary headline
+      </h6>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text Inline elements 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <p>
+        This is an 
+        <a
+          href=""
+        >
+          inline link
+        </a>
+         inside a paragraph text.
+      </p>
+       
+      <p>
+        Other inline elements that can be used are 
+        <strong>
+          strong
+        </strong>
+         and 
+        <em>
+          em
+        </em>
+        , 
+        <sub>
+          sub
+        </sub>
+         and 
+        <sup>
+          sup
+        </sup>
+        .
+      </p>
+       
+      <p>
+        We might need to provide styling for 
+        <cite>
+          cite
+        </cite>
+         and 
+        <code>
+          code
+        </code>
+         aswell.
+    Those will be defined later on when used in practice.
+      </p>
+    </section>
+  </section>
+</section>
+`;

@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|unique-buying-reasons Unique buying reasons 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <article
+        class="ubr"
+      >
+        <section
+          class="container"
+        >
+          <h2>
+            Lorem ipsum dolor sit amet
+          </h2>
+           
+          <div
+            class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"
+          >
+            <div
+              class="flexgrid__cell--xs-6"
+            >
+              <div
+                class="ubr__description"
+              >
+                <p>
+                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+                </p>
+                 
+                <ul
+                  class="list ubr__list"
+                >
+                  <li
+                    class="list__item"
+                  >
+                    Egestas Condimentum Malesuada
+                  </li>
+                  <li
+                    class="list__item"
+                  >
+                    Fermentum Ligula Ipsum
+                  </li>
+                  <li
+                    class="list__item"
+                  >
+                    Nullam quis risus eget urna mollis ornare vel eu leo
+                  </li>
+                  <li
+                    class="list__item"
+                  >
+                    Sed posuere consectetur est at lobortis
+                  </li>
+                  <li
+                    class="list__item"
+                  >
+                    Nullam id dolor id nibh ultricies vehicula ut id elit
+                  </li>
+                  <li
+                    class="list__item"
+                  >
+                    Donec ullamcorper nulla non metus auctor fringilla
+                  </li>
+                  <li
+                    class="list__item"
+                  >
+                    Cum sociis natoque penatibus et magnis dis parturient montes
+                  </li>
+                  <li
+                    class="list__item"
+                  >
+                    Nulla vitae elit libero, a pharetra augue
+                  </li>
+                </ul>
+              </div>
+            </div>
+             
+            <div
+              class="flexgrid__cell--xs-6"
+            >
+              <div
+                class="ubr__image "
+              >
+                <div
+                  class="cms-image img--responsive"
+                  style="padding-top: 60%;"
+                >
+                  <picture
+                    class="cms-image__image"
+                  >
+                    <source
+                      media="(min-width: 1201px)"
+                      srcset=""
+                    />
+                     
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset=""
+                    />
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="/generator/svg/600/360"
+                    />
+                     
+                    <img
+                      alt=""
+                      class="img--responsive img--lazy"
+                      src=""
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+  </section>
+</section>
+`;

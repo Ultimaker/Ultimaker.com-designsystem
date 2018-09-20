@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|examples Examples 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <article
+        class="examples"
+      >
+        <div
+          class="container"
+        >
+          <header>
+            <h2
+              class="examples__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h2>
+          </header>
+           
+          <section
+            class="examples__caption"
+          >
+            <strong
+              class="caption-list__headline"
+            >
+              
+        Optimized for:
+    
+            </strong>
+             
+            <ul
+              class="caption-list"
+            >
+              <li
+                class="caption-list__list-item"
+              >
+                
+            
+            
+                <a>
+                  Material
+                </a>
+              </li>
+              <li
+                class="caption-list__list-item"
+              >
+                
+            
+            
+                <a>
+                  Material
+                </a>
+              </li>
+              <li
+                class="caption-list__list-item"
+              >
+                
+            
+            
+                <a>
+                  Material
+                </a>
+              </li>
+              <li
+                class="caption-list__list-item"
+              >
+                
+            
+            
+                <a>
+                  Material
+                </a>
+              </li>
+              <li
+                class="caption-list__list-item"
+              >
+                
+            
+            
+                <a>
+                  Material
+                </a>
+              </li>
+              <li
+                class="caption-list__list-item"
+              >
+                
+            
+            
+                <a>
+                  Material
+                </a>
+              </li>
+              <li
+                class="caption-list__list-item"
+              >
+                
+            
+            
+                <a>
+                  Material
+                </a>
+              </li>
+            </ul>
+          </section>
+           
+          <div
+            class="cards"
+          >
+            <div
+              class="flexgrid flexgrid--gutter"
+            >
+              <div
+                class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
+              >
+                <article
+                  class="card examples__card"
+                >
+                  <div
+                    class="card__visual"
+                  >
+                    <div
+                      class="card__image"
+                    >
+                      <picture
+                        class="img--responsive"
+                      >
+                        <!---->
+                         
+                        <!---->
+                         
+                        <source
+                          media="(min-width: 768px)"
+                          srcset=""
+                        />
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <source
+                          media="(max-width: 480px)"
+                          srcset="/generator/svg/400/400"
+                        />
+                         
+                        <img
+                          alt=""
+                          class="img--responsive img--lazy"
+                          src=""
+                        />
+                      </picture>
+                    </div>
+                     
+                    <!---->
+                  </div>
+                   
+                  <div
+                    class="card__content"
+                  >
+                    <h3
+                      class="card__headline"
+                    >
+                      Apendiscing consectetuer
+                    </h3>
+                     
+                    <p
+                      class="card__description"
+                    >
+                      Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                    </p>
+                     
+                    <a
+                      class="link card__link card__link"
+                      href=""
+                      to=""
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Content-link
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
+              >
+                <article
+                  class="card examples__card"
+                >
+                  <div
+                    class="card__visual"
+                  >
+                    <div
+                      class="card__image"
+                    >
+                      <picture
+                        class="img--responsive"
+                      >
+                        <!---->
+                         
+                        <!---->
+                         
+                        <source
+                          media="(min-width: 768px)"
+                          srcset=""
+                        />
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <source
+                          media="(max-width: 480px)"
+                          srcset="/generator/svg/400/400"
+                        />
+                         
+                        <img
+                          alt=""
+                          class="img--responsive img--lazy"
+                          src=""
+                        />
+                      </picture>
+                    </div>
+                     
+                    <!---->
+                  </div>
+                   
+                  <div
+                    class="card__content"
+                  >
+                    <h3
+                      class="card__headline"
+                    >
+                      Apendiscing consectetuer
+                    </h3>
+                     
+                    <p
+                      class="card__description"
+                    >
+                      Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                    </p>
+                     
+                    <a
+                      class="link card__link card__link"
+                      href=""
+                      to=""
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Content-link
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
+              >
+                <article
+                  class="card examples__card"
+                >
+                  <div
+                    class="card__visual"
+                  >
+                    <div
+                      class="card__image"
+                    >
+                      <picture
+                        class="img--responsive"
+                      >
+                        <!---->
+                         
+                        <!---->
+                         
+                        <source
+                          media="(min-width: 768px)"
+                          srcset=""
+                        />
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <source
+                          media="(max-width: 480px)"
+                          srcset="/generator/svg/400/400"
+                        />
+                         
+                        <img
+                          alt=""
+                          class="img--responsive img--lazy"
+                          src=""
+                        />
+                      </picture>
+                    </div>
+                     
+                    <!---->
+                  </div>
+                   
+                  <div
+                    class="card__content"
+                  >
+                    <h3
+                      class="card__headline"
+                    >
+                      Apendiscing consectetuer
+                    </h3>
+                     
+                    <p
+                      class="card__description"
+                    >
+                      Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                    </p>
+                     
+                    <a
+                      class="link card__link card__link"
+                      href=""
+                      to=""
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Content-link
+                      </span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </section>
+</section>
+`;

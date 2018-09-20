@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|forms Checkbox 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <input
+        checked="checked"
+        class="checkbox"
+        id="checkbox"
+        name="checkbox"
+        type="checkbox"
+        value="true"
+      />
+       
+      <label
+        class="checkbox__label"
+        for="checkbox"
+      >
+        Some text
+      </label>
+    </section>
+  </section>
+</section>
+`;

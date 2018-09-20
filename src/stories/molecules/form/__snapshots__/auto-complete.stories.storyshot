@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules|forms Auto complete 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__molecule"
+    >
+      <div
+        aria-expanded="true"
+        aria-haspopup="listbox"
+        aria-owns="autocomplete-story__dropdown"
+        class="auto-complete"
+        role="combobox"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-controls="autocomplete-story__dropdown"
+          autocomplete="off"
+          autofocus="autofocus"
+          class="auto-complete__input"
+          id="autocomplete-story"
+          type="text"
+        />
+         
+        <div
+          class="auto-complete__dropdown"
+          id="autocomplete-story__dropdown"
+          role="listbox"
+        >
+          <h4
+            class="auto-complete__label"
+            id="storedLabel"
+          >
+            
+                Last used
+            
+          </h4>
+           
+          <ul
+            aria-labelledby="storedLabel"
+            class="auto-complete__list"
+          >
+            <li
+              class="auto-complete__list-item"
+              role="option"
+              tabindex="0"
+            >
+              
+                    
+                
+            </li>
+          </ul>
+           
+          <!---->
+        </div>
+      </div>
+    </section>
+  </section>
+</section>
+`;

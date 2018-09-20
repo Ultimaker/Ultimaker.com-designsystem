@@ -62,6 +62,11 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
           container('node') {
             sh 'npm run unit'
           }
+        },
+        "snapshot tests": {
+          container('node') {
+            sh 'npm run snapshots'
+          }
         }
       )
     }

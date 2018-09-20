@@ -6,7 +6,7 @@ endef
 
 install:
 	$(call docker-node-run, npm install)
-	
+
 rebuild:
 	$(call docker-node-run, npm rebuild)
 
@@ -21,6 +21,9 @@ run:
 
 unit:
 	$(call docker-node-run, npm run unit)
+
+snapshots:
+	$(call docker-node-run, npm run snapshots)
 
 k8s-local:
 	kubectl config use-context docker-for-desktop || exit 1
