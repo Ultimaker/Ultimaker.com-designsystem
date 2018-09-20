@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|general-content General content 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <article
+        class="general-content"
+      >
+        <section
+          class="container general-content__container"
+        >
+          <div
+            class="flexgrid flexgrid--gutter"
+          >
+            <div
+              class="flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell"
+            >
+              <h2
+                class="general-content__title"
+              >
+                 Lorem ipsum dolor sit amet
+              </h2>
+               
+              <p
+                class="general-content__body"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?
+              </p>
+               
+              <a
+                class="link general-content__link"
+                href=""
+                to=""
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  Learn More
+                </span>
+              </a>
+            </div>
+             
+            <div
+              class="flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell"
+            >
+              <div
+                class="general-content__image-wrapper"
+              >
+                <picture>
+                  <!---->
+                   
+                  <!---->
+                   
+                  <source
+                    media="(min-width: 768px)"
+                    srcset=""
+                  />
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <source
+                    media="(max-width: 480px)"
+                    srcset="/generator/svg/400/400"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="img--responsive img--lazy"
+                    src=""
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+  </section>
+</section>
+`;

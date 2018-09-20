@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|buttons Button 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <h3>
+        Button
+      </h3>
+       
+      <a
+        class="button"
+        href=""
+      >
+        Some text
+      </a>
+       
+      <h3>
+        Anchor button
+      </h3>
+       
+      <button
+        class="button"
+      >
+        Some text
+      </button>
+       
+      <h3>
+        Input button
+      </h3>
+       
+      <input
+        class="button"
+        type="button"
+        value="Some text"
+      />
+       
+      <h3>
+        Input submit
+      </h3>
+       
+      <input
+        class="button"
+        type="submit"
+        value="Some text"
+      />
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons Content toggle 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      class="toggle toggle--icon"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <span>
+        More
+      </span>
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons Icon button 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <a
+        aria-label=""
+        class="icon-button"
+        role="button"
+        tabindex="0"
+      >
+        <!---->
+         
+        <span
+          class="icon-button__label"
+        >
+          Some text
+        </span>
+      </a>
+    </section>
+  </section>
+</section>
+`;

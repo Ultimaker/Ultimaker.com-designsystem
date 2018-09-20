@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|links Content link 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <a
+        class="link"
+        href=""
+        to=""
+      >
+        <!---->
+         
+        <span
+          class="link__underline"
+        >
+          Content-link
+        </span>
+      </a>
+    </section>
+  </section>
+</section>
+`;

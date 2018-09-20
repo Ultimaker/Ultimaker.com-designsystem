@@ -1,0 +1,336 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots global Animations 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div
+      class="demo-panel demo-panel--micro-animate"
+    >
+      <p
+        class="demo-panel__label demo-panel__label--centered"
+      >
+        Hover over me
+      </p>
+       
+      <div
+        class="demo-panel__animate-me"
+      />
+    </div>
+  </section>
+</section>
+`;
+
+exports[`Storyshots global Building units 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div
+      class="demo-building-unit"
+    >
+      <div
+        class="building-unit building-unit--vertical"
+      />
+       
+      <div
+        class="building-unit building-unit--vertical"
+      />
+       
+      <div
+        class="building-unit building-unit--vertical"
+      />
+       
+      <div
+        class="building-unit building-unit--vertical building-unit--hidden-sm"
+      />
+       
+      <div
+        class="building-unit building-unit--half building-unit--vertical building-unit--hidden-md"
+      />
+       
+      <button
+        class="button button--secondary"
+      >
+        Example pattern
+      </button>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`Storyshots global Colors 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div
+      class="flexgrid"
+    >
+      <div
+        class="flexgrid__cell--xs-6"
+      >
+        <h2>
+          Brand colors
+        </h2>
+         
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(12, 169, 227);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorMain 
+              <br />
+              
+                                #0CA9E3
+                            
+            </span>
+          </li>
+        </ul>
+      </div>
+       
+      <div
+        class="flexgrid__cell--xs-6"
+      >
+        <h2>
+          Grayscale colors
+        </h2>
+         
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(0, 0, 0);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorBlack 
+              <br />
+              
+                                #000000
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(127, 127, 127);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorGrayDark 
+              <br />
+              
+                                #7F7F7F
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(227, 227, 227);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorGray 
+              <br />
+              
+                                #E3E3E3
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(234, 234, 234);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorGrayLight 
+              <br />
+              
+                                #EAEAEA
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(245, 245, 245);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorGrayExtraLight 
+              <br />
+              
+                                #F5F5F5
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(255, 255, 255);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorWhite 
+              <br />
+              
+                                #FFFFFF
+                            
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`Storyshots global Fonts 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div>
+      <p
+        style="font-family: 'univers';"
+      >
+        Primary font: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      </p>
+       
+      <p
+        style="font-family: 'fugue';"
+      >
+        Secondary font: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      </p>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`Storyshots global Vertical rhythm 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div
+      class="demo-panel demo-rhythm"
+    >
+      <h3>
+        Why vertical rhythm?
+      </h3>
+       
+      <p>
+        To ensure a good reading experience and guide the reader through our content we design every pattern based on
+                    vertical rhythm. The rhythm is based on multiples or divisions of our building unit.
+      </p>
+       
+      <p>
+        Ensure that the content is balanced on the baseline grid which you can use to test. Add
+                    
+        <em>
+          'demo-rhythm'
+        </em>
+         to
+                    check the rhythm of your pattern in Patternlab. Most patterns are on rhyhtm by default.
+      </p>
+       
+      <p>
+        It's not necessary to be on the baseline in every line of text, but in order to feel the balance it should be on
+                    the grid within a couple of lines.
+      </p>
+    </div>
+  </section>
+</section>
+`;
+
+exports[`Storyshots global Welcome 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div>
+      <h1>
+        User Interface Patterns
+      </h1>
+      <h2>
+        Designed for Ultimaker.com
+      </h2>
+      <p
+        class="copy--intro"
+      >
+        The patterns designed within this library are composed using the 
+        <a
+          href="http://atomicdesign.bradfrost.com"
+        >
+          Atomic Design
+        </a>
+         System principles created by Brad Frost.
+      </p>
+    </div>
+  </section>
+</section>
+`;

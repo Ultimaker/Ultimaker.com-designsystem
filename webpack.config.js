@@ -15,6 +15,9 @@ const webpackConfig = {
         historyApiFallback: true,
         noInfo: true
     },
+    node: {
+        fs: 'empty'
+    },
     output: {
         path: path.resolve(__dirname, './static'),
         publicPath: '/static/',

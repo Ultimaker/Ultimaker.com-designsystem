@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|tables responsive-table 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <table>
+        <thead>
+          <tr>
+            <th
+              scope="col"
+            >
+              Some header text
+            </th>
+             
+            <th
+              scope="col"
+            >
+              Another header text
+            </th>
+          </tr>
+        </thead>
+         
+        <tbody>
+          <tr>
+            <th
+              scope="row"
+            >
+              A header text
+            </th>
+             
+            <td>
+              Some text id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                    et.
+            </td>
+          </tr>
+           
+          <tr>
+            <th
+              scope="row"
+            >
+              Another header text
+            </th>
+             
+            <td>
+              Another text id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                    et.
+            </td>
+          </tr>
+           
+          <tr>
+            <th
+              scope="row"
+            >
+              Even another header text
+            </th>
+             
+            <td>
+              Even another id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur
+                    et.
+            </td>
+          </tr>
+        </tbody>
+         
+        <tfoot>
+          <tr>
+            <td>
+              Some footer text
+            </td>
+             
+            <td>
+              Another footer text
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </section>
+</section>
+`;

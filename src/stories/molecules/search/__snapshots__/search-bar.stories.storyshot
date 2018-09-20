@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules|search Searchbar 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="stories__molecules"
+    >
+      <form
+        action=""
+        class="search"
+        id="search"
+      >
+        <div
+          role="search"
+        >
+          <div
+            class="search__inputholder"
+          >
+            <label
+              class="search__label"
+              for="search__input"
+            >
+              Search
+            </label>
+             
+            <input
+              class="search__input"
+              id="search__input"
+              name="search"
+              placeholder=""
+              type="text"
+            />
+          </div>
+           
+          <a
+            aria-label="Search"
+            class="icon-button icon-button icon-button--large search__button"
+            role="button"
+            tabindex="0"
+          >
+            <!---->
+             
+            <!---->
+          </a>
+           
+          <a
+            aria-label="Close search"
+            class="icon-button icon-button icon-button--large search__close-button"
+            role="button"
+            tabindex="0"
+          >
+            <!---->
+             
+            <!---->
+          </a>
+        </div>
+      </form>
+    </section>
+  </section>
+</section>
+`;
