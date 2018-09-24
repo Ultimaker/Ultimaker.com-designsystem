@@ -1,18 +1,13 @@
 import {storiesOf} from '@storybook/vue';
-import data from './resellers.stories.data';
+import {withKnobs} from '@storybook/addon-knobs';
+import knobs from './resellers.knobs.stories.js';
 
 storiesOf('templates|resellers', module)
-    .add(
-        'Resellers',
-        () => {
-            return {
-                data: () => ({
-                    ...data
-                }),
-                template: require('./resellers.stories.html')
-            };
-        },
-        {
-            notes: {markdown: require('./resellers.stories.md')}
-        }
-    );
+    .addDecorator(withKnobs)
+    .add('Resellers', () => ({
+        data: () => knobs(),
+        template: require('./resellers.stories.html')
+    }),
+    {
+        notes: {markdown: require('./resellers.stories.md')}
+    });

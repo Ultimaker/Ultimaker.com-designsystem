@@ -6,6 +6,7 @@ export {default as Ecosystem} from 'organisms-page/ecosystem';
 export {default as Examples} from 'organisms-page/examples';
 export {default as Explore} from 'organisms-page/explore';
 export {default as GeneralContent} from 'organisms-page/general-content';
+export {default as HeroBasic} from 'organisms-page/hero-basic';
 export {default as HeroProduct} from 'organisms-page/hero-product';
 export {default as HeroProductsApplication} from 'organisms-page/hero-products-application';
 export {default as HeroText} from 'organisms-page/hero-text';

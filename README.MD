@@ -23,6 +23,9 @@ NPM Commands
 - `unit:chrome`: Execute all unit tests in headless chrome
 - `unit:debug`: Execute all test continuously, attach your own browser
 
+- `snapshots`: Execute jest snapshot testing for the storybook components
+- `snapshots:update`: Execute jest snapshot testing and update them instantly 
+
 - `build`: Build amd module
 - `build:dev`: Builds an amd module for local testing
 
