@@ -7,7 +7,7 @@ storiesOf('organisms|hero', module)
     .add('Hero text', () => ({
         data: () => knobs(),
         template: require('./hero-text.stories.html')
-    }),{
+    }), {
         notes: {markdown: require('./hero-text.stories.md')}
     });
 

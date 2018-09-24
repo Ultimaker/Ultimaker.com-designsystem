@@ -16,12 +16,6 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
         <section
           class="container"
         >
-          <h2
-            class="resellers__title"
-          >
-            Find yourself a reseller
-          </h2>
-           
           <section
             class="reseller-section reseller-section--preferred"
           >
