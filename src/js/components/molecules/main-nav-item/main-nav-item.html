@@ -19,7 +19,7 @@
 
     <icon-button class="icon-button--small main-nav__toggle disable-focus"
                  :icon-name="angleDirection"
-                 v-if="toggleIsVisible"
+                 v-show="toggleIsVisible"
                  @click="toggleFlyout" tabindex="-1">
     </icon-button>
 
