@@ -3,8 +3,7 @@ export default {
     template: require('./reseller-card.html'),
     props: {
         image: {
-            type: Object,
-            default: () => ({})
+            type: Object
         },
         name: {
             type: String,
