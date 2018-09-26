@@ -1,6 +1,7 @@
 $imageLinkSizeMobile: $buildingUnit * 7;
 $imageLinkSizeDesktop: $buildingUnit * 10;
 
+.hero--basic,
 .hero--products {
     @extend .organism;
     @extend %reset-last-margin;
@@ -11,7 +12,8 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
         }
     }
 
-    .hero__image--product {
+    .hero__image--basic,
+    .hero__image--product{
         position: relative;
         width: 75%;
 

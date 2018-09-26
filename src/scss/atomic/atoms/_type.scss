@@ -146,3 +146,16 @@ h6 {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+// Exceptions
+h1 + h2 {
+    $resetHeadlineBottomMarginMobile: -89px;
+    $resetHeadlineBottomMarginTablet: -101px;
+
+    color: $colorGrayDark;
+    margin-top: $resetHeadlineBottomMarginMobile + ($buildingUnit * 3);
+
+    @include min-tablet {
+        margin-top: $resetHeadlineBottomMarginTablet + ($buildingUnit * 5);
+    }
+}

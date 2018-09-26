@@ -17,6 +17,10 @@ export default {
         rowIndex: 0
     }),
     props: {
+        title: {
+            type: String,
+            required: true
+        },
         tooltip: {
             type: String
         },

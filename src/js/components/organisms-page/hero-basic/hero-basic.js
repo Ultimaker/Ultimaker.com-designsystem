@@ -14,10 +14,6 @@ export default {
             type: String,
             required: true
         },
-        links: {
-            type: Array,
-            required: false
-        },
         image: {
             type: Array,
             required: true
