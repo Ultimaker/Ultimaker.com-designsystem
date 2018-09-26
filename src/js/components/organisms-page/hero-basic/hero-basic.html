@@ -1,4 +1,4 @@
-<article class="hero hero--products">
+<article class="hero hero--basic">
     <section class="container hero__container">
         <div class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row">
 
@@ -6,29 +6,17 @@
                 <div class="hero__description">
                     <!--Intro-->
                     <h1>{{ title }}</h1>
-                    <h2>{{ subtitle }}</h2>
+                    <h2 v-if="subtitle">{{ subtitle }}</h2>
                     <p class="copy--intro">{{ description }}</p>
                     <!--End intro-->
 
-                    <!--Button-->
-                    <a :href="links[0].uri" class="button hero__button" v-if="links && links[0]">{{ links[0].title }}</a>
-                    <!--End button-->
-
-                    <!--Link -->
-                    <ul class="link-list link-list--icon hero__link-list">
-                        <li class="link-list__item">
-                            <content-link :href="links[1].uri" v-if="links && links[1]">{{ links[1].title}}</content-link>
-                        </li>
-                    </ul>
-
-                    <!-- End link -->
-
+                    <!--<cta-block v-bind="links"></cta-block>-->
                 </div>
             </div>
 
             <!--Image -->
             <div class="flexgrid__cell--xs-6">
-                <div class="hero__image--product">
+                <div class="hero__image--basic">
                     <template v-if="this.image && this.image.length">
                         <cms-image :image="image[0]" :orientation="'square'"></cms-image>
                     </template>

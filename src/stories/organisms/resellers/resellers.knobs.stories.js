@@ -4,6 +4,7 @@ import {responsiveImage} from '../../helpers/images';
 
 export default () => ({
     resellers: {
+        title: text('Reseller - title', data.title),
         resellers: data.resellers.map((reseller, i) => ({
             name: text(`Reseller - reseller ${i+1} name`, reseller.name),
             preferred: boolean(`Reseller - reseller ${i+1} preferred`, reseller.preferred),

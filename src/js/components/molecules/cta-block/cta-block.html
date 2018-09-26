@@ -1,0 +1,6 @@
+<div class="cta__block">
+    <a :href="links[0].uri" class="button button--primary hero__button" v-if="links && links[0]">{{
+        links[0].title }}</a>
+    <content-link class="link--large" :href="links[1].uri" v-if="links && links[1]">{{ links[1].title}}
+    </content-link>
+</div>
