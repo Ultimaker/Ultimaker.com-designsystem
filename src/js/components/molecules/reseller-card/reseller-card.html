@@ -1,7 +1,7 @@
 <a class="reseller-card" :href="href" :to="href" tabindex="0" v-if="name">
     <div class="reseller-card__header">
         <div class="reseller-card__image-wrapper">
-            <responsive-picture v-bind="image"/>
+            <responsive-picture v-bind="image" v-if="image"/>
         </div>
         <div class="reseller-card__description">
             <h4 class="reseller-card__title">
