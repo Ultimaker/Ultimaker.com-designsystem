@@ -2,7 +2,7 @@ import {storiesOf} from '@storybook/vue';
 import {withKnobs, select} from '@storybook/addon-knobs';
 import data from './images.stories.json';
 
-const stories = storiesOf('Atoms|media', module)
+storiesOf('Atoms|media', module)
     .addDecorator(withKnobs)
     .add(
         'Image',
