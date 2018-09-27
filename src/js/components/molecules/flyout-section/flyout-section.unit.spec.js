@@ -49,22 +49,6 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should not have a toggle btn if amount of items is less or equal to max items', () => {
-                const vm = mount({
-                        props: {
-                            links: [
-                                {
-                                    text: 'a link'
-                                }
-                            ]
-                        }
-                    }),
-                    toggleBtn = vm.$el.querySelector('.flyout__toggle');
-
-                expect(toggleBtn).toBeFalsy();
-                vm.$destroy();
-            });
-
             it('should render 1 column if amount of items is less or equal than max column items', () => {
                 const vm = mount({
                     props: {
@@ -109,10 +93,10 @@ describe('components', () => {
                     }
                 });
 
-                expect(vm.$el.querySelectorAll('.flyout__list-item[style*="display: none"]').length).toEqual(5);
+                expect(vm.isExpanded).toBeFalsy();
                 vm.toggleExpanded();
                 await vm.$nextTick();
-                expect(vm.$el.querySelectorAll('.flyout__list-item[style*="display: none"]').length).toEqual(0);
+                expect(vm.isExpanded).toBeTruthy();
 
                 vm.$destroy();
                 done();
