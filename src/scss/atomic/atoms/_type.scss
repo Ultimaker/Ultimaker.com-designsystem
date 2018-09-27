@@ -149,13 +149,15 @@ h6 {
 
 // Exceptions
 h1 + h2 {
-    $resetHeadlineBottomMarginMobile: -89px;
+    $resetHeadlineBottomMarginMobile: -84px;
     $resetHeadlineBottomMarginTablet: -101px;
 
     color: $colorGrayDark;
     margin-top: $resetHeadlineBottomMarginMobile + ($buildingUnit * 3);
+    @extend h3;
 
     @include min-tablet {
+        @include font-ratio-rhythm(sec-l);
         margin-top: $resetHeadlineBottomMarginTablet + ($buildingUnit * 5);
     }
 }
