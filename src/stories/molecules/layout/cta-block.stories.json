@@ -1,0 +1,12 @@
+{
+    "ctas": {
+        "button": {
+            "uri": "#",
+            "title": "Order now"
+        },
+        "link":{
+            "uri": "#",
+            "title": "Content link"
+        }
+    }
+}

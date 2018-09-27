@@ -17,6 +17,9 @@ export default {
         image: {
             type: Array,
             required: true
+        },
+        ctas: {
+            type: Object
         }
     }
 };
