@@ -9,9 +9,9 @@
             <content-link ref="focusable" @click.native="$emit('close')" :href="link.href" class="flyout__link">{{ link.title }}</content-link>
         </li>
 
-§        <li class="flyout__list-item" v-show="flyoutToggleIsVisible && ! isExpanded">
+        <li class="flyout__list-item" v-show="flyoutToggleIsVisible && ! isExpanded">
             <content-toggle class="flyout__toggle"
-                            ref="focusable"
+                            :ref="flyoutToggleIsVisible && ! isExpanded ? 'focusable' : ''"
                             :toggle-state="false"
                             aria-hidden="true"
                             @toggle="toggleExpanded">
@@ -25,7 +25,7 @@
 
         <li class="flyout__list-item" v-show="flyoutToggleIsVisible && isExpanded">
             <content-toggle class="flyout__toggle"
-                            ref="focusable"
+                            ref="flyoutToggleIsVisible && isExpanded ? 'focusable' : ''"
                             :toggle-state="true"
                             aria-hidden="true"
                             @toggle="toggleExpanded">

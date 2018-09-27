@@ -101,7 +101,14 @@ export default {
         selectParent() {
             if (this.isCompact) { return; }
 
-            this.$refs.parent.$el.focus();
+            const parent =  this.$refs.parent;
+
+            if (parent.$el) {
+                parent.$el.focus();
+            } else if (parent.focus) {
+                parent.focus();
+            }
+
             this.hideFlyout();
         }
     }
