@@ -1,5 +1,5 @@
 /* eslint-disable */
-import {text, select, files} from '@storybook/addon-knobs';
+import {text, files} from '@storybook/addon-knobs';
 import data from './hero-basic.stories.json';
 
 export default () => ({
@@ -19,9 +19,15 @@ export default () => ({
                 }]
             }
         })),
-        links: data.links.map((link, i) => ({
-            ...link,
-            title: text(`Hero - link ${i+1} title`, link.title)
-        }))
+        ctas: {
+            button: {
+                uri: text('Hero CTA-block - button url', data.ctas.button.uri),
+                title: text('Hero CTA-block - button title', data.ctas.button.title)
+            },
+            link: {
+                uri: text('Hero CTA-block - link url', data.ctas.link.uri),
+                title: text('Hero CTA-block - link title', data.ctas.link.title)
+            }
+        }
     }
 });

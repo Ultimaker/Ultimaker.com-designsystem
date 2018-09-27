@@ -4,6 +4,7 @@ export {default as Card} from 'molecules/card';
 export {default as Color} from 'molecules/color';
 export {default as ContentToggle} from 'molecules/content-toggle';
 export {default as Currency} from 'molecules/currency';
+export {default as CtaBlock} from 'molecules/cta-block';
 export {default as FauxVerticalScroll} from 'molecules/faux-vertical-scroll';
 export {default as Flyout} from 'molecules/flyout';
 export {default as FlyoutSection} from 'molecules/flyout-section';

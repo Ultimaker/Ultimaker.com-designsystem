@@ -18,11 +18,14 @@
             }]
         }
     }],
-    "links": [{
-        "title": "Some text",
-        "uri": "#"
-        }, {
-        "title": "Content-link",
-        "uri": "#"
-    }]
+    "ctas": {
+        "button": {
+            "title": "Request a quote",
+            "uri": "/en/quote"
+        },
+        "link": {
+            "title": "Content link",
+            "uri": "/en/link"
+        }
+    }
 }

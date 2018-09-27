@@ -1,10 +1,9 @@
 export default {
     name: 'cta-block',
-    template: require('./cta-block'),
+    template: require('./cta-block.html'),
     props: {
-        links: {
-            type: Array
+        ctas: {
+            type: Object
         }
     }
 };
-

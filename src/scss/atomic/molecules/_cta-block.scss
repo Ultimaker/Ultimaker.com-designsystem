@@ -1,0 +1,15 @@
+.cta__block{
+    .button.button--primary + .link.link--large{
+        transform: none;
+        margin-top: $buildingUnit * 2;
+    }
+
+    @include min-mobile-xl {
+        .button.button--primary{
+            margin-right: $buildingUnit * 4;
+        }
+        .button.button--primary + .link.link--large{
+            margin-top: 0;
+        }
+    }
+}

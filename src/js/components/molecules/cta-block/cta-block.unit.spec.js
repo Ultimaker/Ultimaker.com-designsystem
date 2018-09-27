@@ -8,8 +8,9 @@ describe('components', () => {
             const mount = build(CtaBlock);
 
             it('should render a "cta-block"', () => {
-                const vm = mount();
-                console.log(vm);
+                const ctas = {button: {uri: '#', title: 'Narwals rule!'}};
+                const vm = mount({ctas});
+
                 expect(vm.$el).toBeDefined();
                 vm.$destroy();
             });
