@@ -45,11 +45,43 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               </a>
             </li>
              
-            <!---->
+            <li
+              class="flyout__list-item"
+              style="display: none;"
+            >
+              <a
+                aria-hidden="true"
+                class="toggle toggle--icon flyout__toggle"
+                role="button"
+                tabindex="0"
+              >
+                <!---->
+                 
+                <span>
+                  More
+                </span>
+              </a>
+            </li>
              
             <!---->
              
-            <!---->
+            <li
+              class="flyout__list-item"
+              style="display: none;"
+            >
+              <a
+                aria-hidden="true"
+                class="toggle toggle--icon flyout__toggle"
+                role="button"
+                tabindex="0"
+              >
+                <!---->
+                 
+                <span>
+                  Less
+                </span>
+              </a>
+            </li>
           </ul>
            
         </li>
@@ -198,7 +230,23 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               </a>
             </li>
              
-            <!---->
+            <li
+              class="flyout__list-item"
+              style="display: none;"
+            >
+              <a
+                aria-hidden="true"
+                class="toggle toggle--icon flyout__toggle"
+                role="button"
+                tabindex="0"
+              >
+                <!---->
+                 
+                <span>
+                  Less
+                </span>
+              </a>
+            </li>
           </ul>
            
           <a
@@ -341,7 +389,23 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               </a>
             </li>
              
-            <!---->
+            <li
+              class="flyout__list-item"
+              style="display: none;"
+            >
+              <a
+                aria-hidden="true"
+                class="toggle toggle--icon flyout__toggle"
+                role="button"
+                tabindex="0"
+              >
+                <!---->
+                 
+                <span>
+                  Less
+                </span>
+              </a>
+            </li>
           </ul>
            
         </li>
@@ -388,7 +452,17 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               </a>
             </div>
              
-            <!---->
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
              
             <ul
               class="main-nav__flyout flyout--large"
@@ -426,11 +500,43 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     </a>
                   </li>
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        More
+                      </span>
+                    </a>
+                  </li>
                    
                   <!---->
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                  
               </li>
@@ -579,7 +685,23 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     </a>
                   </li>
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                  
                 <a
@@ -722,7 +844,23 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     </a>
                   </li>
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                  
               </li>
@@ -746,7 +884,17 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               </a>
             </div>
              
-            <!---->
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
              
             <ul
               class="main-nav__flyout flyout--large"
@@ -784,11 +932,43 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     </a>
                   </li>
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        More
+                      </span>
+                    </a>
+                  </li>
                    
                   <!---->
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                  
               </li>
@@ -937,7 +1117,23 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     </a>
                   </li>
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                  
                 <a
@@ -1080,7 +1276,23 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     </a>
                   </li>
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                  
               </li>
@@ -1104,7 +1316,17 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               </a>
             </div>
              
-            <!---->
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
              
             <!---->
           </li>
@@ -1126,7 +1348,17 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               </a>
             </div>
              
-            <!---->
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
              
             <ul
               class="main-nav__flyout flyout--large"
@@ -1164,11 +1396,43 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     </a>
                   </li>
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        More
+                      </span>
+                    </a>
+                  </li>
                    
                   <!---->
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                  
               </li>
@@ -1317,7 +1581,23 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     </a>
                   </li>
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                  
                 <a
@@ -1460,7 +1740,23 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     </a>
                   </li>
                    
-                  <!---->
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
                 </ul>
                  
               </li>
