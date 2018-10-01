@@ -23,7 +23,7 @@
         "unit": "cross-env BABEL_ENV=test karma start test/karma.conf.js --single-run",
         "unit:chrome": "cross-env BABEL_ENV=test karma start test/karma.conf.js --single-run --chrome",
         "unit:debug": "cross-env BABEL_ENV=test karma start test/karma.conf.js --debug",
-        "snapshots": "cross-env BABEL_ENV=jest jest --silent --updateSnapshot --config=jest.config.js",
+        "snapshots": "cross-env BABEL_ENV=jest jest --silent --config=jest.config.js",
         "snapshots:update": "cross-env BABEL_ENV=jest jest --silent -u --config=jest.config.js",
         "lint": "eslint './src/js/**/*.js'",
         "lint:debug": "eslint './src/js/**/*.js' --debug"

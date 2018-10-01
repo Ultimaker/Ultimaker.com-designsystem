@@ -27,7 +27,7 @@ export default {
     },
     methods: {
         getShowroomLabel(amount) {
-            return amount > 1 ? this.labels.multiShowroomLabel : this.labels.singleShowroomLabel;
+            return amount > 1 ? this.labels.showroomPlural : this.labels.showroom;
         }
     }
 };

@@ -202,7 +202,7 @@ exports[`Storyshots Molecules|layout/cards Reseller card 1`] = `
               class="reseller-card__showroom-count"
             >
               
-                2 showrooms
+                2 
             
             </p>
           </div>
