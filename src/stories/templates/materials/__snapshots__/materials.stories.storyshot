@@ -100,7 +100,6 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     <a
                       class="link link--icon"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -118,7 +117,6 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     <a
                       class="link link--icon"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -135,7 +133,6 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     <a
                       class="link link--icon"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -482,9 +479,8 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     </p>
                      
                     <a
-                      class="link card__link card__link"
+                      class="link card__link router-link-exact-active router-link-active card__link"
                       href=""
-                      to=""
                     >
                       <!---->
                        
@@ -557,9 +553,8 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     </p>
                      
                     <a
-                      class="link card__link card__link"
+                      class="link card__link router-link-exact-active router-link-active card__link"
                       href=""
-                      to=""
                     >
                       <!---->
                        
@@ -632,9 +627,8 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     </p>
                      
                     <a
-                      class="link card__link card__link"
+                      class="link card__link router-link-exact-active router-link-active card__link"
                       href=""
-                      to=""
                     >
                       <!---->
                        
@@ -878,9 +872,8 @@ exports[`Storyshots templates|materials Materials 1`] = `
                 </ul>
                  
                 <a
-                  class="link link--large"
+                  class="link router-link-exact-active router-link-active link--large"
                   href=""
-                  to=""
                 >
                   <!---->
                    

@@ -52,7 +52,6 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                   <a
                     class="link link--large"
                     href="/en/link"
-                    to="/en/link"
                   >
                     <!---->
                      
@@ -219,7 +218,6 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     <a
                       class="link link--icon"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -237,7 +235,6 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     <a
                       class="link link--icon"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -254,7 +251,6 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     <a
                       class="link link--icon"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -508,7 +504,6 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     <a
                       class="link link--icon"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -525,7 +520,6 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     <a
                       class="link link--icon"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -542,7 +536,6 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     <a
                       class="link link--icon"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        

@@ -53,7 +53,6 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                     <a
                       class="link link--large"
                       href="/en/link"
-                      to="/en/link"
                     >
                       <!---->
                        
@@ -158,10 +157,9 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                  
                 <a
                   aria-describedby="tooltip-preferred"
-                  class="link reseller-section__info-link link--reversed link--icon"
+                  class="link reseller-section__info-link router-link-exact-active router-link-active link--reversed link--icon"
                   href=""
                   role="button"
-                  to=""
                 >
                   <!---->
                    
@@ -238,7 +236,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>
@@ -319,7 +317,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                2 showrooms
+                2 
             
                             </p>
                           </div>
@@ -400,7 +398,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>
@@ -481,7 +479,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>
@@ -562,7 +560,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                3 showrooms
+                3 
             
                             </p>
                           </div>
@@ -643,7 +641,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>
@@ -724,7 +722,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>
@@ -805,7 +803,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>
@@ -886,7 +884,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>
@@ -1295,7 +1293,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>
@@ -1631,7 +1629,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>
@@ -1868,7 +1866,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__showroom-count"
                             >
                               
-                1 showroom
+                1 
             
                             </p>
                           </div>

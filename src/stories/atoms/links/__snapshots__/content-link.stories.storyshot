@@ -11,9 +11,8 @@ exports[`Storyshots Atoms|links Content link 1`] = `
       class="story__atom"
     >
       <a
-        class="link"
+        class="link router-link-exact-active router-link-active"
         href=""
-        to=""
       >
         <!---->
          

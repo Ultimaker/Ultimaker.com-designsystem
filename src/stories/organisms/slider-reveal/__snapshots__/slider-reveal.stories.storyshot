@@ -50,7 +50,6 @@ exports[`Storyshots organisms|slider-reveal Slider reveal 1`] = `
                 class="link link--icon link--large link--icon"
                 href="#"
                 text="Large content-link with icon"
-                to="#"
               >
                 <!---->
                  

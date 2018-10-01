@@ -123,7 +123,6 @@ exports[`Storyshots Molecules|layout/cards Card 1`] = `
           <a
             class="link card__link card__link"
             href="#"
-            to="#"
           >
             <!---->
              

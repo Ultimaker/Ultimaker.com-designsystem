@@ -153,9 +153,8 @@ exports[`Storyshots Atoms|lists Link list 1`] = `
           class="link-list__item"
         >
           <a
-            class="link"
+            class="link router-link-exact-active router-link-active"
             href=""
-            to=""
           >
             <!---->
              
@@ -170,9 +169,8 @@ exports[`Storyshots Atoms|lists Link list 1`] = `
           class="link-list__item"
         >
           <a
-            class="link"
+            class="link router-link-exact-active router-link-active"
             href=""
-            to=""
           >
             <!---->
              
@@ -187,9 +185,8 @@ exports[`Storyshots Atoms|lists Link list 1`] = `
           class="link-list__item"
         >
           <a
-            class="link"
+            class="link router-link-exact-active router-link-active"
             href=""
-            to=""
           >
             <!---->
              
