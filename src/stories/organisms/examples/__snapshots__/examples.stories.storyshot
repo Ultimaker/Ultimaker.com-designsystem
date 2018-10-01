@@ -177,9 +177,8 @@ exports[`Storyshots organisms|examples Examples 1`] = `
                     </p>
                      
                     <a
-                      class="link card__link card__link"
+                      class="link card__link router-link-exact-active router-link-active card__link"
                       href=""
-                      to=""
                     >
                       <!---->
                        
@@ -252,9 +251,8 @@ exports[`Storyshots organisms|examples Examples 1`] = `
                     </p>
                      
                     <a
-                      class="link card__link card__link"
+                      class="link card__link router-link-exact-active router-link-active card__link"
                       href=""
-                      to=""
                     >
                       <!---->
                        
@@ -327,9 +325,8 @@ exports[`Storyshots organisms|examples Examples 1`] = `
                     </p>
                      
                     <a
-                      class="link card__link card__link"
+                      class="link card__link router-link-exact-active router-link-active card__link"
                       href=""
-                      to=""
                     >
                       <!---->
                        

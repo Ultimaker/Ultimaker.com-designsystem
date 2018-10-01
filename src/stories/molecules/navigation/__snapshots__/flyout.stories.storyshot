@@ -33,7 +33,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -106,7 +105,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -123,7 +121,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -140,7 +137,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -182,7 +178,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -200,7 +195,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -218,7 +212,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -252,7 +245,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <a
             class="link flyout__link--cta-mini"
             href="/printers"
-            to="/printers"
           >
             <!---->
              
@@ -284,7 +276,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -301,7 +292,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -318,7 +308,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -359,7 +348,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -377,7 +365,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               <a
                 class="link flyout__link"
                 href="#"
-                to="#"
               >
                 <!---->
                  
@@ -444,7 +431,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                 aria-haspopup="true"
                 class="main-nav__link"
                 href="#nav-one"
-                to="#nav-one"
               >
                 
             Nav section one
@@ -488,7 +474,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -561,7 +546,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -578,7 +562,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -595,7 +578,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -637,7 +619,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -655,7 +636,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -673,7 +653,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -707,7 +686,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                 <a
                   class="link flyout__link--cta-mini"
                   href="/printers"
-                  to="/printers"
                 >
                   <!---->
                    
@@ -739,7 +717,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -756,7 +733,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -773,7 +749,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -814,7 +789,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -832,7 +806,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -876,7 +849,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                 aria-haspopup="true"
                 class="main-nav__link"
                 href="#nav-two"
-                to="#nav-two"
               >
                 
             Nav section two
@@ -920,7 +892,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -993,7 +964,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1010,7 +980,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1027,7 +996,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1069,7 +1037,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1087,7 +1054,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1105,7 +1071,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1139,7 +1104,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                 <a
                   class="link flyout__link--cta-mini"
                   href="/printers"
-                  to="/printers"
                 >
                   <!---->
                    
@@ -1171,7 +1135,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1188,7 +1151,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1205,7 +1167,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1246,7 +1207,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1264,7 +1224,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1308,7 +1267,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                 aria-haspopup="true"
                 class="main-nav__link"
                 href="#nav-three"
-                to="#nav-three"
               >
                 
             Nav section three
@@ -1340,7 +1298,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                 aria-haspopup="true"
                 class="main-nav__link"
                 href="#nav-four"
-                to="#nav-four"
               >
                 
             Nav section four
@@ -1384,7 +1341,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1457,7 +1413,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1474,7 +1429,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1491,7 +1445,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1533,7 +1486,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1551,7 +1503,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1569,7 +1520,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1603,7 +1553,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                 <a
                   class="link flyout__link--cta-mini"
                   href="/printers"
-                  to="/printers"
                 >
                   <!---->
                    
@@ -1635,7 +1584,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1652,7 +1600,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1669,7 +1616,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1710,7 +1656,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
@@ -1728,7 +1673,6 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
                     <a
                       class="link flyout__link"
                       href="#"
-                      to="#"
                     >
                       <!---->
                        
