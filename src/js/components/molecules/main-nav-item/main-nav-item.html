@@ -4,7 +4,7 @@
     <div @keydown.down.prevent="selectFlyoutFirstLink"
          @keydown.tab.shift.exact="hideFlyout"
          @keydown.esc.prevent="hideFlyout">
-        <router-link :to="href" :href="href"
+        <router-link :to="href"
                      ref="parent"
                      class="main-nav__link"
                      @focus="showFlyout"
