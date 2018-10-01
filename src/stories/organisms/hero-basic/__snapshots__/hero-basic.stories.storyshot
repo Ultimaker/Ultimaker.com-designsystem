@@ -51,7 +51,7 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                    
                   <a
                     class="link link--large"
-                    href="/en/link"
+                    href="#/en/link"
                   >
                     <!---->
                      
@@ -217,7 +217,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                   >
                     <a
                       class="link link--icon"
-                      href="#"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -234,7 +234,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                   >
                     <a
                       class="link link--icon"
-                      href="#"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -250,7 +250,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                   >
                     <a
                       class="link link--icon"
-                      href="#"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -503,7 +503,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                   >
                     <a
                       class="link link--icon"
-                      href="#"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -519,7 +519,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                   >
                     <a
                       class="link link--icon"
-                      href="#"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -535,7 +535,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                   >
                     <a
                       class="link link--icon"
-                      href="#"
+                      href="#/#"
                     >
                       <!---->
                        

@@ -158,7 +158,7 @@ exports[`Storyshots organisms|brands Brands 1`] = `
            
           <a
             class="link brands__link link--large"
-            href="#"
+            href="#/#"
           >
             <!---->
              

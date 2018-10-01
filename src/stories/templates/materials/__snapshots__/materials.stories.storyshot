@@ -99,7 +99,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <a
                       class="link link--icon"
-                      href="#"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -116,7 +116,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <a
                       class="link link--icon"
-                      href="#"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -132,7 +132,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <a
                       class="link link--icon"
-                      href="#"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -480,7 +480,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                      
                     <a
                       class="link card__link router-link-exact-active router-link-active card__link"
-                      href=""
+                      href="#/"
                     >
                       <!---->
                        
@@ -554,7 +554,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                      
                     <a
                       class="link card__link router-link-exact-active router-link-active card__link"
-                      href=""
+                      href="#/"
                     >
                       <!---->
                        
@@ -628,7 +628,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                      
                     <a
                       class="link card__link router-link-exact-active router-link-active card__link"
-                      href=""
+                      href="#/"
                     >
                       <!---->
                        
@@ -873,7 +873,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                  
                 <a
                   class="link router-link-exact-active router-link-active link--large"
-                  href=""
+                  href="#/"
                 >
                   <!---->
                    

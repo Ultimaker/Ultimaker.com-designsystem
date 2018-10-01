@@ -187,7 +187,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     >
                       <a
                         class="link link--icon"
-                        href="#"
+                        href="#/#"
                       >
                         <!---->
                          
@@ -203,7 +203,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     >
                       <a
                         class="link link--icon"
-                        href="#"
+                        href="#/#"
                       >
                         <!---->
                          
@@ -219,7 +219,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     >
                       <a
                         class="link link--icon"
-                        href="#"
+                        href="#/#"
                       >
                         <!---->
                          
@@ -385,7 +385,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
              
             <a
               class="link brands__link link--large"
-              href="#"
+              href="#/#"
             >
               <!---->
                
@@ -430,7 +430,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                  
                 <a
                   class="link link--icon link--large link--icon"
-                  href="#"
+                  href="#/#"
                   text="Large content-link with icon"
                 >
                   <!---->
@@ -690,7 +690,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                        
                       <a
                         class="link card__link router-link-exact-active router-link-active card__link"
-                        href=""
+                        href="#/"
                       >
                         <!---->
                          
@@ -764,7 +764,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                        
                       <a
                         class="link card__link router-link-exact-active router-link-active card__link"
-                        href=""
+                        href="#/"
                       >
                         <!---->
                          
@@ -838,7 +838,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                        
                       <a
                         class="link card__link router-link-exact-active router-link-active card__link"
-                        href=""
+                        href="#/"
                       >
                         <!---->
                          
@@ -1207,7 +1207,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                    
                   <a
                     class="link card__link router-link-exact-active router-link-active card__link"
-                    href=""
+                    href="#/"
                   >
                     <!---->
                      
@@ -1247,7 +1247,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                    
                   <a
                     class="link card__link router-link-exact-active router-link-active card__link"
-                    href=""
+                    href="#/"
                   >
                     <!---->
                      
@@ -1287,7 +1287,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                    
                   <a
                     class="link card__link router-link-exact-active router-link-active card__link"
-                    href=""
+                    href="#/"
                   >
                     <!---->
                      
@@ -1327,7 +1327,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                    
                   <a
                     class="link card__link router-link-exact-active router-link-active card__link"
-                    href=""
+                    href="#/"
                   >
                     <!---->
                      
@@ -1552,7 +1552,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                  
                 <a
                   class="link router-link-exact-active router-link-active general-content__link"
-                  href=""
+                  href="#/"
                 >
                   <!---->
                    

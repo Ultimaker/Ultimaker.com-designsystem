@@ -53,7 +53,7 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
               <a
                 aria-describedby="tooltip-preferred"
                 class="link reseller-section__info-link router-link-exact-active router-link-active link--reversed link--icon"
-                href=""
+                href="#/"
                 role="button"
               >
                 <!---->

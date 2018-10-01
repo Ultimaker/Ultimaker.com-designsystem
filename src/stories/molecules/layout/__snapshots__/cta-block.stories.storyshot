@@ -22,7 +22,7 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
          
         <a
           class="link link--large"
-          href="#"
+          href="#/#"
         >
           <!---->
            

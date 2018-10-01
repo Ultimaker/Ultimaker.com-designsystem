@@ -12,7 +12,7 @@ exports[`Storyshots Atoms|links Content link 1`] = `
     >
       <a
         class="link router-link-exact-active router-link-active"
-        href=""
+        href="#/"
       >
         <!---->
          
