@@ -17,8 +17,8 @@ export default () => ({
             authorizedResellers: text('Authorized', data.labels.authorizedResellers),
             preferredResellersInfoLabel: text('More info', data.labels.preferredResellersInfoLabel),
             preferredResellersInfoText: text('Tooltip', data.labels.preferredResellersInfoText),
-            singleShowroomLabel: text('Labels (single)', data.labels.singleShowroomLabel),
-            multiShowroomLabel: text('Labels (multiple)', data.labels.multiShowroomLabel),
+            showroom: text('Labels (single)', data.labels.showroom),
+            showroomPlural: text('Labels (multiple)', data.labels.showroomPlural),
             visitWebsite: text('Call to actions', data.labels.visitWebsite),
             showAll: text('Button', data.labels.showAll)
         }
