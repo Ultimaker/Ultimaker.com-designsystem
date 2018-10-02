@@ -65,6 +65,8 @@ $resellerLinkCorrection: 2px;
     min-height: $buildingUnit * 5;
     overflow: hidden;
     margin-right: $resellerCardPadding;
+    align-items: center;
+    display: flex;
 }
 
 .reseller-card__title {

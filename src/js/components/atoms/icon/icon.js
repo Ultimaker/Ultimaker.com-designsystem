@@ -44,7 +44,7 @@ export default {
             fetch(request)
                 .then(async(result) => {
                     if (result.status < 200 || result.status >= 300) {
-                        console.log(`icon.js(fetch-icon): ${ result.statusText }`);
+                        console.warn(`icon.js(fetch-icon): ${ result.statusText }`);
 
                         return;
                     }
@@ -70,7 +70,7 @@ export default {
                     }
                 })
                 .catch((ex) => {
-                    console.log(`failed to fetch icon: ${ ex.message }`);
+                    console.error(`failed to fetch icon: ${ ex.message }`);
                 });
         }
     },

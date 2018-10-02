@@ -27,7 +27,7 @@ module.exports = {
         'exports': true
     },
     rules: {
-        'no-console': 0,
+        'no-console': ["error", { allow: ["warn", "info", "error"] }],
         'no-unused-vars': [2, {
             "args": "all",
             "argsIgnorePattern": "^_",

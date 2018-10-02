@@ -567,7 +567,23 @@ exports[`Storyshots organisms|hero Hero text 1`] = `
     <section
       class="story__organism"
     >
-      <!---->
+      <article
+        class="hero hero--text"
+      >
+        <div
+          class="container"
+        >
+          <h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+          </h1>
+           
+          <div
+            class="hero__content content--rich"
+          >
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, beatae blanditiis, consequuntur corporis delectus dolore excepturi illo ipsa nulla, pariatur perspiciatis provident quae ratione unde veritatis! Atque enim est ratione!&lt;/p&gt;&lt;h2&gt;Lorem ipsum dolor sit amet&lt;/h2&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at atque autem beatae blanditiis consequatur cum deleniti eaque earum error et, exercitationem fuga hic laudantium magnam minima nam nihil nobis perspiciatis quo rem repellat reprehenderit sed sint soluta tempora voluptatem! A animi deserunt earum explicabo modi quo rem voluptatem. Facere!&lt;/p&gt;&lt;h2&gt;Lorem ipsum dolor sit amet&lt;/h2&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at deserunt dignissimos dolor exercitationem itaque iure, iusto laboriosam laudantium magnam nobis odio officia placeat, porro &lt;a href='#'&gt;quos rem repellat&lt;/a&gt; repellendus sint!&lt;/p&gt;&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ratione, soluta. A aut commodi cum, deserunt illum magnam nisi perspiciatis quis vero voluptas! Cumque eum iure neque omnis veritatis. Aut beatae consectetur culpa dolorem eius, exercitationem fuga harum ipsa ipsam laborum necessitatibus nemo non officiis perspiciatis placeat praesentium provident quaerat quisquam quod sapiente sit tempore tenetur veniam! At, cupiditate temporibus.&lt;/p&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ratione, soluta. A aut commodi cum, deserunt illum magnam nisi perspiciatis quis vero voluptas! Cumque eum iure neque omnis veritatis. Aut beatae consectetur culpa dolorem eius, exercitationem fuga harum ipsa ipsam laborum necessitatibus nemo non officiis perspiciatis placeat praesentium provident quaerat quisquam quod sapiente sit tempore tenetur veniam! At, cupiditate temporibus.&lt;/p&gt;&lt;h3&gt;Lorem ipsum dolor&lt;/h3&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quod tempore vitae voluptatum. Doloribus ducimus enim, eum explicabo illum nemo nulla omnis quae quam quia rem ut, velit voluptate voluptates.&lt;/p&gt;&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th scope='col'&gt;Some label&lt;/th&gt; &lt;th scope='col'&gt;Some label&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;th scope='row'&gt;Some label&lt;/th&gt; &lt;td&gt;Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;th scope='row'&gt;Some label&lt;/th&gt; &lt;td&gt;Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. &lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt;&lt;/table&gt;&lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ratione, soluta. A aut commodi cum, deserunt illum magnam nisi perspiciatis quis vero voluptas! Cumque eum iure neque omnis veritatis. Aut beatae consectetur culpa dolorem eius, exercitationem fuga harum ipsa ipsam laborum necessitatibus nemo non officiis perspiciatis placeat praesentium provident quaerat quisquam quod sapiente sit tempore tenetur veniam! At, cupiditate temporibus.&lt;/p&gt;&lt;ul&gt; &lt;li&gt;Purus Bibendum Commodo Risus Quam&lt;/li&gt; &lt;li&gt;Purus Risus Quam&lt;/li&gt; &lt;li&gt;Commodo Risus Quam&lt;/li&gt; &lt;li&gt;Purus Bibendum Commodo&lt;/li&gt; &lt;li&gt;Risus Quam&lt;/li&gt;&lt;/ul&gt;
+          </div>
+        </div>
+      </article>
     </section>
   </section>
 </section>
