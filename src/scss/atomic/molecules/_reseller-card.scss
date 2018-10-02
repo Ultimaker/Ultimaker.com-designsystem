@@ -60,13 +60,22 @@ $resellerLinkCorrection: 2px;
 
 .reseller-card__image-wrapper {
     width: $buildingUnit * 5;
+    height: $buildingUnit * 5;
     min-width: $buildingUnit * 5;
+    min-height: $buildingUnit * 5;
+    overflow: hidden;
     margin-right: $resellerCardPadding;
+}
+
+.reseller-card__title {
+    @include text-overflow;
+    width: 100%;
 }
 
 .reseller-card__description {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     @extend %reset-last-margin;
 }
 

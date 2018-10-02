@@ -26,10 +26,10 @@
         {
             "image": {
                 "mobileWidth": {
-                    "url": "/generator/svg/120/120"
+                    "url": "/generator/svg/120/60"
                 }
             },
-            "name": "Test reseller 3",
+            "name": "Test reseller 3, with a very long name of the business, OMG!!",
             "preferred": true,
             "showroomCount": 1,
             "href": "#"
@@ -133,7 +133,7 @@
         {
             "image": {
                 "mobileWidth": {
-                    "url": "/generator/svg/120/120"
+                    "url": "/generator/svg/120/60"
                 }
             },
             "name": "Test reseller 13",
@@ -164,7 +164,7 @@
         {
             "image": {
                 "mobileWidth": {
-                    "url": "/generator/svg/120/120"
+                    "url": "/generator/svg/120/60"
                 }
             },
             "name": "Test reseller 16",
@@ -174,7 +174,7 @@
         {
             "image": {
                 "mobileWidth": {
-                    "url": "/generator/svg/120/120"
+                    "url": "/generator/svg/120/60"
                 }
             },
             "name": "Test reseller 17",
