@@ -27,8 +27,6 @@ export default {
     },
     methods: {
         getShowroomLabel(amount) {
-            console.log(this.labels);
-
             return amount > 1 ? this.labels.showroomPlural : this.labels.showroom;
         }
     }

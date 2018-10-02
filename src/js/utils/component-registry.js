@@ -14,7 +14,7 @@ class ComponentRegistry {
     }
 
     listComponents() {
-        this.components.forEach(c => console.log(c.name));
+        this.components.forEach(c => console.info(c.name));
     }
 }
 
