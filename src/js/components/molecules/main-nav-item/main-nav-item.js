@@ -98,7 +98,7 @@ export default {
             this.hideFlyout();
             this.$emit('shifttab');
         },
-        selectParent() {
+        async selectParent() {
             if (this.isCompact) { return; }
 
             const parent =  this.$refs.parent;
@@ -108,6 +108,8 @@ export default {
             } else if (parent.focus) {
                 parent.focus();
             }
+
+            await this.$nextTick();
 
             this.hideFlyout();
         }

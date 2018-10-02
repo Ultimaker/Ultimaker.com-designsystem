@@ -76,7 +76,7 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should be able to focus on parent element', () => {
+            it('should be able to focus on parent element', async(done) => {
                 const vm = mount();
 
                 vm.flyoutIsOpen = true;
@@ -86,9 +86,11 @@ describe('components', () => {
                     })
                 };
                 vm.selectParent();
+                await vm.$nextTick();
                 expect(vm.$refs.parent.$el.focus).toHaveBeenCalled();
                 expect(vm.flyoutIsOpen).toEqual(false);
 
+                done();
                 vm.$destroy();
             });
 
