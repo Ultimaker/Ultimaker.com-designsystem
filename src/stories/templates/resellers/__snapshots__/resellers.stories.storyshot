@@ -372,7 +372,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                                
                               <source
                                 media="(max-width: 480px)"
-                                srcset="/generator/svg/120/120"
+                                srcset="/generator/svg/120/60"
                               />
                                
                               <img
@@ -390,7 +390,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="reseller-card__title"
                             >
                               
-                Test reseller 3
+                Test reseller 3, with a very long name of the business, OMG!!
             
                             </h4>
                              
@@ -1192,7 +1192,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                                
                               <source
                                 media="(max-width: 480px)"
-                                srcset="/generator/svg/120/120"
+                                srcset="/generator/svg/120/60"
                               />
                                
                               <img
@@ -1449,7 +1449,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                                
                               <source
                                 media="(max-width: 480px)"
-                                srcset="/generator/svg/120/120"
+                                srcset="/generator/svg/120/60"
                               />
                                
                               <img
@@ -1526,7 +1526,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                                
                               <source
                                 media="(max-width: 480px)"
-                                srcset="/generator/svg/120/120"
+                                srcset="/generator/svg/120/60"
                               />
                                
                               <img
