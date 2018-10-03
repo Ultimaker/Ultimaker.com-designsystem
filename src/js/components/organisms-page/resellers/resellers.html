@@ -27,7 +27,7 @@
             </header>
 
             <ul class="reseller-list" v-if="resellersPreferred.length > 0">
-                <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
+                <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
                     <template v-for="reseller in resellersPreferred">
                         <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6">
                             <li class="reseller-list__item">
@@ -47,7 +47,7 @@
                 </h3>
             </header>
             <ul class="reseller-list" v-if="resellersAuthorized.length > 0">
-                <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
+                <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
                     <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                          v-for="(reseller, index) in resellersAuthorized"
                          v-if="index < showMax">
@@ -67,7 +67,7 @@
                                   @enter="enter"
                                   tag="div"
                                   :css="false"
-                                  class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row" id="newSection">
+                                  class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row" id="newSection">
                     <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                          v-for="(reseller, index) in resellersAuthorized"
                          v-if="index >= showMax"

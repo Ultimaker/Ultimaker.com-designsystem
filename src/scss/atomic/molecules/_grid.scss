@@ -34,7 +34,7 @@
     }
 }
 
-.flexgrid__cell, 
+.flexgrid__cell,
 [class*="flexgrid__cell"] {
     position: relative;
     display: block;
@@ -62,11 +62,26 @@
         }
 
         @for $i from 1 through $gridNumberOfCols {
+            $gutterDivider: $gridNumberOfCols / $i;
             $divider: 100 / ($gridNumberOfCols / $i);
 
             .flexgrid__cell--#{$selector}-#{$i} {
                 flex-basis: $divider#{'%'};
                 max-width: $divider#{'%'};
+
+                .flexgrid--justify-space-between & {
+                    $spaceWithGrid: $divider#{'% - '}($gridGutterSizeMobile / ($gutterDivider / 2));
+
+                    flex-basis: calc(#{$spaceWithGrid});
+                    max-width: calc(#{$spaceWithGrid});
+
+                    @include min-desktop {
+                        $spaceWithGrid: $divider#{'% - '}($gridGutterSize / ($gutterDivider / 2));
+
+                        flex-basis: calc(#{$spaceWithGrid});
+                        max-width: calc(#{$spaceWithGrid});
+                    }
+                }
             }
         }
     }
