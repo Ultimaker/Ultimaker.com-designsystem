@@ -29,7 +29,9 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                   Lorem ipsum dolor sit amet
                 </h1>
                  
-                <h2>
+                <h2
+                  class="hero__subtitle--default"
+                >
                   Maecenas faucibus mollis interdum nulla vitae elit libero a pharetra augue
                 </h2>
                  

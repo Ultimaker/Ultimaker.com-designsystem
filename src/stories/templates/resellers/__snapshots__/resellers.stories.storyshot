@@ -30,7 +30,9 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                     Lorem ipsum dolor sit amet
                   </h1>
                    
-                  <h2>
+                  <h2
+                    class="hero__subtitle--default"
+                  >
                     Maecenas faucibus mollis interdum nulla vitae elit libero a pharetra augue
                   </h2>
                    
@@ -177,7 +179,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                 class="reseller-list"
               >
                 <div
-                  class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
+                  class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
                 >
                   <div
                     class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
@@ -934,7 +936,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                 class="reseller-list"
               >
                 <div
-                  class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
+                  class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
                 >
                   <div
                     class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
@@ -1413,7 +1415,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                 </div>
                  
                 <div
-                  class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
+                  class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
                   id="newSection"
                 >
                   <div

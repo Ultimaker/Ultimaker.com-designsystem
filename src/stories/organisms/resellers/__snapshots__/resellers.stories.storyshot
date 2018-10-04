@@ -72,7 +72,7 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
               class="reseller-list"
             >
               <div
-                class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
+                class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
               >
                 <div
                   class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
@@ -829,7 +829,7 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
               class="reseller-list"
             >
               <div
-                class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
+                class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
               >
                 <div
                   class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
@@ -1308,7 +1308,7 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
               </div>
                
               <div
-                class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
+                class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
                 id="newSection"
               >
                 <div
