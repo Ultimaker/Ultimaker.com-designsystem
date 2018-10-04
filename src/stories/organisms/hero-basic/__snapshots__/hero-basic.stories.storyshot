@@ -30,7 +30,7 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                 </h1>
                  
                 <h2
-                  class="hero__subtitle--default"
+                  class="hero__subtitle"
                 >
                   Maecenas faucibus mollis interdum nulla vitae elit libero a pharetra augue
                 </h2>

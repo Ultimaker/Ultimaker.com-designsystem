@@ -29,6 +29,8 @@
         @include min-tablet {
             @include font-ratio-rhythm(sec-l);
         }
+
+        color: $colorWhite;
     }
 
     .hero__usp-container {
