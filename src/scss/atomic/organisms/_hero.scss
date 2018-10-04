@@ -12,6 +12,20 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
         }
     }
 
+    .hero__subtitle {
+        $resetHeadlineBottomMarginMobile: -84px;
+        $resetHeadlineBottomMarginTablet: -101px;
+
+        color: $colorGrayDark;
+        margin-top: $resetHeadlineBottomMarginMobile + ($buildingUnit * 3);
+        @extend h3;
+
+        @include min-tablet {
+            @include font-ratio-rhythm(sec-l);
+            margin-top: $resetHeadlineBottomMarginTablet + ($buildingUnit * 5);
+        }
+    }
+
     .hero__image--basic,
     .hero__image--product{
         position: relative;
