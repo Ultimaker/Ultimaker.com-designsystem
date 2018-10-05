@@ -22,7 +22,7 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
       secretEnvVar(key: 'BROWSERSTACK_USER', secretName: 'browserstack-credentials', secretKey: 'username'),
       secretEnvVar(key: 'BROWSERSTACK_ACCESS_KEY', secretName: 'browserstack-credentials', secretKey: 'access-key')
   ]),
-  containerTemplate(name: 'sonar-scanner', image: 'newtmitch/sonar-scanner', ttyEnabled: true, command: 'cat')
+  containerTemplate(name: 'sonar-scanner', image: 'newtmitch/sonar-scanner:3.2.0-alpine', ttyEnabled: true, command: 'cat')
 ], volumes: [
   secretVolume(mountPath: '/var/secrets', secretName: 'sonarqube-config')
 ]) {
