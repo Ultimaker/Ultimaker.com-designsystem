@@ -1,0 +1,134 @@
+<footer class="footer">
+    <div class="footer__container">
+        <!--Footer upper part-->
+        <div class="footer__primary">
+            <!--Footer logo-->
+            <router-link to="/" class="branded-logo footer__branded-logo" aria-label="Ultimaker homepage">
+                <icon class="branded-logo__robot" icon-name="robot-ultimaker"></icon>
+                <icon class="branded-logo__logo" icon-name="logo-ultimaker"></icon>
+            </router-link>
+
+            <!--End footer logo-->
+
+            <!--Footer nav -->
+            <nav class="footer__nav" v-if="minorNav && minorNav.children && minorNav.children.length">
+                <div class="flexgrid">
+                    <div class="flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6">
+                        <div class="flexgrid">
+                            <div class="flexgrid__cell--xs-6" v-if="minorNav.children.length > 0">
+                                <div class="footer-nav__column">
+                                    <h3 id="footer-nav__title-01" class="footer-nav__title">{{ minorNav.children[0].title }}</h3>
+                                    <template v-if="minorNav.children[0].children">
+                                        <content-link-list :links="mapLinks(minorNav.children[0].children)"
+                                                           block="footer-nav" aria-labelledby="footer-nav__title-01"></content-link-list>
+                                    </template>
+                                </div>
+                            </div>
+                            <div class="flexgrid__cell--xs-6" v-if="minorNav.children.length > 1">
+                                <div class="footer-nav__column">
+                                    <h3 id="footer-nav__title-02" class="footer-nav__title">{{ minorNav.children[1].title }}</h3>
+                                    <template v-if="minorNav.children[1].children">
+                                        <content-link-list :links="mapLinks(minorNav.children[1].children)"
+                                                           block="footer-nav" aria-labelledby="footer-nav__title-02"></content-link-list>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexgrid__cell--xxs-6 flexgrid__cell--xs-4 flexgrid__cell--sm-6"
+                         v-if="minorNav.children.length > 2">
+                        <div class="footer-nav__column footer-nav__column--last footer-nav__column--double">
+                            <h3 id="footer-nav__title-03" class="footer-nav__title">{{ minorNav.children[2].title }}</h3>
+                            <template v-if="minorNav.children[2].children">
+                                <content-link-list :links="mapLinks(minorNav.children[2].children)"
+                                                   block="footer-nav" aria-labelledby="footer-nav__title-03"></content-link-list>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--End footer nav-->
+        </div>
+        <!--End footer upper part-->
+
+        <!--Footer secondary part-->
+        <div class="footer__secondary">
+            <!--Footer follow stuff-->
+            <nav class="social-nav footer__social-nav">
+                <ul class="social-nav__list" aria-label="follow Ultimaker">
+                    <li class="social-nav__item footer__social-item">
+                        <a class="social-nav__link icon-button icon-button--small"
+                           href="https://nl.linkedin.com/company/ultimaker" aria-label="LinkedIn">
+                            <icon class="social-nav__icon" icon-name="linkedin"></icon>
+                        </a>
+                    </li>
+                    <li class="social-nav__item footer__social-item">
+                        <a class="social-nav__link icon-button icon-button--small"
+                           href="https://twitter.com/Ultimaker" aria-label="Twitter">
+                            <icon class="social-nav__icon" icon-name="twitter"></icon>
+                        </a>
+                    </li>
+                    <li class="social-nav__item footer__social-item">
+                        <a class="social-nav__link icon-button icon-button--small"
+                           href="https://www.youtube.com/user/Ultimaker3D" aria-label="YouTube">
+                            <icon class="social-nav__icon" icon-name="youtube"></icon>
+                        </a>
+                    </li>
+                    <li class="social-nav__item footer__social-item">
+                        <a class="social-nav__link icon-button icon-button--small"
+                           href="https://www.facebook.com/Ultimaker" aria-label="Facebook">
+                            <icon class="social-nav__icon" icon-name="facebook"></icon>
+                        </a>
+                    </li>
+                    <li class="social-nav__item footer__social-item">
+                        <a class="social-nav__link icon-button icon-button--small"
+                           href="http://instagram.com/ultimaker" aria-label="Instagram">
+                            <icon class="social-nav__icon" icon-name="instagram"></icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End footer follow stuff-->
+
+            <!--Footer locale-->
+            <div class="footer__locale-selector">
+                <icon-button @click="toggleCountrySelector" v-show="!countrySelectorOpen"
+                             icon-name="geo"
+                             class="icon-button--small locale-selector__edit--buton"
+                             :aria-label="currentCountryAriaLabel">
+                    {{ currentCountryLabel }}
+                </icon-button>
+
+                <icon-button v-show="countrySelectorOpen"
+                             icon-name="geo"
+                             class="icon-button--small locale-selector__edit--buton"
+                             aria-label="change your country">
+                </icon-button>
+                <country-selector class="footer__country-selector" ref="countryselector" v-if="countrySelectorOpen"
+                                  :placeholder="globalLabels.countryInputPlaceholder"
+                                  :countryDetected="globalLabels.countryDetected"
+                                  :countrySuggestions="globalLabels.countrySuggestions"
+                                  @close="toggleCountrySelector"
+                                  @input="setCountry"
+                                  v-model="country">
+                </country-selector>
+            </div>
+            <!--End footer locale-->
+        </div>
+
+        <!--End footer lower part -->
+        <div class="footer__tertiary">
+            <div class="legal footer__legal">
+                <p class="legal__copyright-label">
+                    <small v-html="globalLabels.copyright"></small>
+                </p>
+
+                <template v-if="legalNav && legalNav.children">
+                    <nav class="legal__nav">
+                        <content-link-list :links="mapLinks(legalNav.children)" block="legal"></content-link-list>
+                    </nav>
+                </template>
+            </div>
+        </div>
+    </div>
+</footer>
