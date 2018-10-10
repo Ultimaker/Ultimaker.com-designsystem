@@ -1,5 +1,3 @@
-import Defaults from 'constants/defaults';
-
 const noCountrySettings = {
     store: {
         modules: {
@@ -11,10 +9,6 @@ const noCountrySettings = {
                     legalNav: () => true
                 }
             }
-        },
-        getters: {
-            'detectedCountry': () => Defaults.country,
-            'globalLabels': () => ({})
         }
     }
 };
@@ -30,18 +24,6 @@ const countrySettings = {
                     legalNav: () => true
                 }
             }
-        },
-        getters: {
-            '$settings': () => ({country: {
-                'name': 'Netherlands',
-                'code': 'NL',
-                'currency': {
-                    'code': 'EUR',
-                    'symbol': '\u20ac'
-                }
-            }}),
-            'detectedCountry': () => Defaults.country,
-            'globalLabels': () => ({})
         },
         actions: {
             'PUSH_SETTINGS': () => Promise.resolve()

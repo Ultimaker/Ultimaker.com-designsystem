@@ -1,93 +1,132 @@
 {
-    "properties": {
-        "minorNav": {
-            "title": "Footer",
-            "children": [
+  "properties": {
+      "minorNav": {
+          "children": [
               {
-                "title": "Products",
-                "children": [
-                  {
-                    "title": "Printers"
-                  },
-                  {
-                    "title": "Materials"
-                  },
-                  {
-                    "title": "Software"
-                  }
-                ]
+                  "title": "Products",
+                  "children": [
+                      {
+                      "title": "Printers"
+                      },
+                      {
+                      "title": "Materials"
+                      },
+                      {
+                      "title": "Ultimaker Cura"
+                      }
+                  ]
               },
               {
-                "title": "Resources",
-                "children": [
-                  {
-                    "title": "Manuals",
-                    "render_hint": "special",
-                    "links": {
-                      "item": [
-                        {
-                          "href": "/api/pages/materials/ultimaker-cpe",
-                          "templated": false
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Tips & Tricks",
-                    "render_hint": "bottom",
-                    "links": {
-                      "item": [
-                        {
-                          "href": "/api/pages/materials/ultimaker-pla",
-                          "templated": false
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Troubleshooting"
-                  },
-                  {
-                    "title": "Education"
-                  }
-                ]
+                  "title": "Resources",
+                  "children": [
+                      {
+                          "title": "Manuals",
+                          "render_hint": "special",
+                          "links": {
+                              "item": [
+                                  {
+                                      "href": "/api/pages/materials/ultimaker-cpe",
+                                      "templated": false
+                                  }
+                              ]
+                          }
+                      },
+                      {
+                      "title": "Tips & Tricks",
+                      "render_hint": "bottom",
+                      "links": {
+                          "item": [
+                              {
+                                  "href": "/api/pages/materials/ultimaker-pla",
+                                  "templated": false
+                              }
+                          ]
+                      }
+                      },
+                      {
+                      "title": "Troubleshooting"
+                      },
+                      {
+                      "title": "Education"
+                      }
+                  ]
               },
               {
-                "title": "Company",
-                "children": [
-                  {
-                    "title": "About Ultimaker"
-                  },
-                  {
-                    "title": "Careers"
-                  },
-                  {
-                    "title": "Blog"
-                  },
-                  {
-                    "title": "Press Room"
-                  },
-                  {
-                    "title": "Events"
-                  },
-                  {
-                    "title": "Resellers"
-                  },
-                  {
-                    "title": "Request support"
-                  },
-                  {
-                    "title": "Contact"
-                  }
-                ]
+                  "title": "Company",
+                  "children": [
+                      {
+                      "title": "About Ultimaker"
+                      },
+                      {
+                      "title": "Careers"
+                      },
+                      {
+                      "title": "Blog"
+                      },
+                      {
+                      "title": "Press Room"
+                      },
+                      {
+                      "title": "Events"
+                      },
+                      {
+                      "title": "Resellers"
+                      },
+                      {
+                      "title": "Request support"
+                      },
+                      {
+                      "title": "Contact"
+                      }
+                  ]
               }
-            ]
-        },
-        "globalLabels": {
-            "countryInputPlaceholder": "countryInputPlaceholder",
-            "countryDetected": "countryDetected",
-            "countrySuggestions": "countrySuggestions",
-            "copyright":  "copyright"
-        }
-    }
+          ]
+      },
+      "globalLabels": {
+          "countryInputPlaceholder": "countryInputPlaceholder",
+          "countryDetected": "countryDetected",
+          "countrySuggestions": "countrySuggestions",
+          "copyright":  "Copyright"
+      },
+      "legalNav" : {
+          "children": [
+              {
+              "title": "Terms of Use",
+              "links": {
+                  "item": {
+                  "href": "https://ultimaker.com/en/terms-of-use"
+                  }
+              }
+              },
+              {
+              "title": "Privacy and Cookie Policy",
+              "links": {
+                  "item": {
+                  "href": "https://ultimaker.com/en/privacy-and-cookie-policy"
+                  }
+              }
+              }
+          ]
+      },
+      "settings": {
+          "country": {
+              "name": "Netherlands",
+              "code": "NL",
+              "currency": {
+              "code": "EUR",
+              "symbol": "€"
+              }
+          },
+          "consentLevel": 15,
+          "consentLevelSet": true 
+      },
+      "detectedCountry": {
+          "name": "United States of America",
+          "code": "US",
+          "currency": {
+              "code": "USD",
+              "symbol": "$"
+          }
+      }
+  }
 }

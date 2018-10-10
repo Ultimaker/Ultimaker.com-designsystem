@@ -4,24 +4,34 @@ import {build} from 'vuenit';
 
 describe('components', () => {
     describe('layout', () => {
-        describe('footer', () => {
-            const fixture = require('./footer-main.unit.fixture'),
-                mount = build(FooterMain, {});
+        describe('footer-main', () => {
+            const data = require('./footer-main.unit.spec.json'),
+                fixture = require('./footer-main.unit.fixture'),
+                buildOptions = {props: {...data.properties}},
+                mount = build(FooterMain, {buildOptions});
 
             it('should render a footer-main element', () => {
-                const vm = mount(fixture.noCountrySettings);
+                const vm = mount(buildOptions),
+                    objAttributes = vm.$el.attributes;
 
-                expect(vm.$el.querySelectorAll('.footer__container').length).toEqual(1);
-                expect(vm.currentCountryLabel).toEqual('United States of America - $');
-                expect(vm.currentCountryAriaLabel).toEqual('Change your country, currently: United States of America');
+                expect(vm.$el).toBeDefined();
+                expect(objAttributes['class'].value).toContain('footer');
                 vm.$destroy();
             });
 
             it('should display the current selected country', () => {
-                const vm = mount(fixture.countrySettings);
+                const vm = mount(buildOptions);
 
                 expect(vm.currentCountryLabel).toEqual('Netherlands - €');
                 expect(vm.currentCountryAriaLabel).toEqual('Change your country, currently: Netherlands');
+                vm.$destroy();
+            });
+
+            it('should render component with properties', () => {
+                const vm = mount(buildOptions);
+
+                expect(vm.$el.querySelectorAll('.footer-nav__column').length).toBeGreaterThanOrEqual(1);
+                expect(Object.keys(data.properties).length).toEqual(Object.keys(vm._props).length);
                 vm.$destroy();
             });
 

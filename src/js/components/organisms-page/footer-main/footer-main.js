@@ -1,5 +1,4 @@
 import Vue from 'vue';
-import {mapGetters} from 'vuex';
 
 const getLink = (links) => {
     if (!links || !links.item || !links.item.length) {
@@ -9,21 +8,41 @@ const getLink = (links) => {
     return links.item[0].href;
 };
 
-export default {
+export default Vue.component('footer-main', {
     name: 'footer-main',
     template: require('./footer-main.html'),
     data: () => ({
         countrySelectorOpen: false,
         country: null
     }),
+    props: {
+        minorNav: {
+            type: Object,
+            required: true
+        },
+        globalLabels: {
+            type: Object,
+            required: true
+        },
+        legalNav: {
+            type: Object,
+            required: true
+        },
+        settings: {
+            type: Object,
+            required: true
+        },
+        detectedCountry: {
+            type: Object,
+            required: true
+        }
+    },
     computed: {
-        ...mapGetters(['$settings', 'detectedCountry', 'globalLabels']),
-        ...mapGetters('navigation', ['minorNav', 'legalNav']),
         currentCountry() {
             let country = null;
 
-            if (this.$settings && this.$settings.country) {
-                country = this.$settings.country;
+            if (this.settings && this.settings.country) {
+                country = this.settings.country;
             } else if (this.detectedCountry) {
                 country = this.detectedCountry;
             }
@@ -67,4 +86,4 @@ export default {
             href: getLink(link.links) || '#'
         }))
     }
-};
+});
