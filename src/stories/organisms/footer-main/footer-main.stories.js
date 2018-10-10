@@ -5,9 +5,7 @@ import knobs from './footer-main.knobs.stories.js';
 storiesOf('organisms|footer-main', module)
     .addDecorator(withKnobs)
     .add('Footer', () => ({
-        data: () => ({
-            footer: knobs()
-        }),
+        data: () => knobs(),
         template: require('./footer-main.stories.html')
     }),
     {

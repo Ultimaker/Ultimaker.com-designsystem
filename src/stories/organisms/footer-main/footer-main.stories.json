@@ -85,51 +85,9 @@
         "countryInputPlaceholder": "countryInputPlaceholder",
         "countryDetected": "countryDetected",
         "countrySuggestions": "countrySuggestions",
-        "copyright":  "copyright"
+        "copyright":  "Copyright"
     },
-    "socialMedia": [
-      {
-          "image": {
-              "alt": "Linkedin",
-              "mobileWidth": {
-                  "url": "/generator/svg/240/240"
-              }
-          }
-      },
-      {
-          "image": {
-              "alt": "Facebook",
-              "mobileWidth": {
-                  "url": "/generator/svg/240/240"
-              }
-          }
-      },
-      {
-          "image": {
-              "alt": "Twitter",
-              "mobileWidth": {
-                  "url": "/generator/svg/240/240"
-              }
-          }
-      },
-      {
-        "image": {
-            "alt": "Youtube",
-            "mobileWidth": {
-                "url": "/generator/svg/240/240"
-            }
-        }
-      },
-      {
-        "image": {
-            "alt": "Instagram",
-            "mobileWidth": {
-                "url": "/generator/svg/240/240"
-            }
-        }
-      }
-    ],
-    "legal" : {
+    "legalNav" : {
       "children": [
         {
           "title": "Terms of Use",
@@ -148,5 +106,25 @@
           }
         }
       ]
+    },
+    "$settings": {
+      "country": {
+        "name": "Netherlands",
+        "code": "NL",
+        "currency": {
+          "code": "EUR",
+          "symbol": "€"
+        }
+      },
+      "consentLevel": 15,
+      "consentLevelSet": true
+    },
+    "detectedCountry": {
+      "name": "Netherlands",
+      "code": "NL",
+      "currency": {
+        "code": "EUR",
+        "symbol": "€"
+      }
     }
 }
