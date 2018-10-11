@@ -83,9 +83,9 @@
           ]
       },
       "globalLabels": {
-          "countryInputPlaceholder": "countryInputPlaceholder",
-          "countryDetected": "countryDetected",
-          "countrySuggestions": "countrySuggestions",
+          "countryInputPlaceholder": "Type country code or name",
+          "countryDetected": "Detected",
+          "countrySuggestions": "Suggestions",
           "copyright":  "Copyright"
       },
       "legalNav" : {
