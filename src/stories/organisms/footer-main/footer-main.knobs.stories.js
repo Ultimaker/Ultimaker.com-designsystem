@@ -4,11 +4,14 @@ import data from './footer-main.stories.json';
 export default () => ({
     ... data,
     minorNav: {
+        ... data.minorNav,
         children: data.minorNav.children.map((item, i) => ({
+            ... item,
             title: text(`Category ${i+1} title`, item.title),
-            children: object(`Links for Category ${i+1}`, item.children.map(index => ({
-                title: index.title
-            })))
+            children: item.children.map((child,x) =>({
+                ... child,
+                title: text(`Links - Category ${item.title} link ${x+1}`, child.title)
+            }))
         }))
     },
     globalLabels: {
