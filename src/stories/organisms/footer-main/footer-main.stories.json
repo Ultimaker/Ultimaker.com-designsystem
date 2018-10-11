@@ -107,7 +107,7 @@
         }
       ]
     },
-    "$settings": {
+    "settings": {
       "country": {
         "name": "Netherlands",
         "code": "NL",
