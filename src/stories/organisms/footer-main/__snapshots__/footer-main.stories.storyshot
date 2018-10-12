@@ -132,7 +132,7 @@ exports[`Storyshots organisms|footer-main Footer 1`] = `
                           >
                             <a
                               class="link footer-nav__link"
-                              href="#/#"
+                              href="#/api/pages/materials/ultimaker-cpe"
                             >
                               <!---->
                                
@@ -148,7 +148,7 @@ exports[`Storyshots organisms|footer-main Footer 1`] = `
                           >
                             <a
                               class="link footer-nav__link"
-                              href="#/#"
+                              href="#/api/pages/materials/ultimaker-pla"
                             >
                               <!---->
                                

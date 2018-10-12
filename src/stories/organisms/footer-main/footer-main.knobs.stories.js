@@ -1,4 +1,4 @@
-import {text, object} from '@storybook/addon-knobs';
+import {text} from '@storybook/addon-knobs';
 import data from './footer-main.stories.json';
 
 export default () => ({
