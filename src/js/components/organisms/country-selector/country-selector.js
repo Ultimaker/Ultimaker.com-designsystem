@@ -7,7 +7,7 @@ export default {
     data: () => ({
         initialized: false,
         initPromise: null,
-        country: {},
+        countryInput: {},
         selectedCountry: {}
     }),
     props: {
@@ -29,16 +29,16 @@ export default {
         }
     },
     computed: {
-        ...mapGetters(['countries', 'detectedCountry']),
+        ...mapGetters(['countries', 'country']),
         detectedCountries() {
             const detectedCountries = [];
 
-            if (!this.detectedCountry || !this.detectedCountry.code) {
+            if (!this.country || !this.country.code) {
                 return detectedCountries;
             }
 
             try {
-                const detectedCountryByIp = _find(this.countries, {'code': this.detectedCountry.code});
+                const detectedCountryByIp = _find(this.countries, {'code': this.country.code});
 
                 if (detectedCountryByIp) {
                     detectedCountries.push(detectedCountryByIp);
@@ -70,7 +70,7 @@ export default {
             this.initPromise = Promise.all(countryPromises).then(() => {
                 this.initialized = true;
                 if ((this.value && !this.value.code) && (this.selectedCountry && !this.selectedCountry.code)) {
-                    this.selectedCountry = _find(this.countries, {'code': this.detectedCountry.code});
+                    this.selectedCountry = _find(this.countries, {'code': this.country.code});
                 }
             });
 

@@ -10,7 +10,7 @@
 
             <!--End footer logo-->
 
-            <!--Footer nav -->
+            <!--Footer nav-->
             <nav class="footer__nav" v-if="minorNav && minorNav.children && minorNav.children.length">
                 <div class="flexgrid">
                     <div class="flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6">
@@ -110,13 +110,13 @@
                                   :countrySuggestions="globalLabels.countrySuggestions"
                                   @close="toggleCountrySelector"
                                   @input="setCountry"
-                                  v-model="country">
+                                  v-model="countryInput">
                 </country-selector>
             </div>
             <!--End footer locale-->
         </div>
 
-        <!--End footer lower part -->
+        <!--End footer lower part-->
         <div class="footer__tertiary">
             <div class="legal footer__legal">
                 <p class="legal__copyright-label">

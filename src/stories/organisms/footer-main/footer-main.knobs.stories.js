@@ -24,5 +24,6 @@ export default () => ({
         children: data.legalNav.children.map((leg, i)  => ({
             title: text(`Legal title ${i+1}`, leg.title)
         }))
-    }
+    },
+    country: data.country
 });
