@@ -107,19 +107,7 @@
         }
       ]
     },
-    "settings": {
-      "country": {
-        "name": "Netherlands",
-        "code": "NL",
-        "currency": {
-          "code": "EUR",
-          "symbol": "€"
-        }
-      },
-      "consentLevel": 15,
-      "consentLevelSet": true
-    },
-    "detectedCountry": {
+    "country": {
       "name": "Netherlands",
       "code": "NL",
       "currency": {

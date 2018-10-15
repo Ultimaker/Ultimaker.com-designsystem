@@ -13,7 +13,7 @@ export default Vue.component('footer-main', {
     template: require('./footer-main.html'),
     data: () => ({
         countrySelectorOpen: false,
-        country: null
+        countryInput: null
     }),
     props: {
         minorNav: {
@@ -28,47 +28,29 @@ export default Vue.component('footer-main', {
             type: Object,
             required: true
         },
-        settings: {
-            type: Object,
-            required: true
-        },
-        detectedCountry: {
+        country: {
             type: Object,
             required: true
         }
     },
     computed: {
-        currentCountry() {
-            let country = null;
-
-            if (this.settings && this.settings.country) {
-                country = this.settings.country;
-            } else if (this.detectedCountry) {
-                country = this.detectedCountry;
-            }
-
-            return country;
-        },
         currentCountryLabel() {
-            if (this.currentCountry && this.currentCountry.currency && this.currentCountry.currency.symbol) {
-                return `${ this.currentCountry.name } - ${ this.currentCountry.currency.symbol }`;
-            } else if (this.currentCountry) {
-                return `${ this.currentCountry.name }`;
+            if (this.country && this.country.currency && this.country.currency.symbol) {
+                return `${ this.country.name } - ${ this.country.currency.symbol }`;
+            } else if (this.country) {
+                return `${ this.country.name }`;
             }
 
             return `Please select your country`;
         },
         currentCountryAriaLabel() {
-            let label = 'Change your country';
-
-            if (this.currentCountry) {
-                label += `, currently: ${ this.currentCountry.name }`;
-            }
-
-            return label;
+            return `Change your country, currently: ${ this.country.name }`;
         }
     },
     methods: {
+        init() {
+            this.countryInput = this.country;
+        },
         toggleCountrySelector() {
             this.countrySelectorOpen = !this.countrySelectorOpen;
             if (this.countrySelectorOpen) {
@@ -78,12 +60,15 @@ export default Vue.component('footer-main', {
             }
         },
         setCountry() {
-            this.$store.dispatch('PUSH_COUNTRY', this.country);
+            this.$store.dispatch('PUSH_COUNTRY', this.countryInput);
             this.toggleCountrySelector();
         },
         mapLinks: (linkList) => linkList.map(link => ({
             title: link.title,
             href: getLink(link.links) || '#'
         }))
+    },
+    beforeMount() {
+        this.init();
     }
 });

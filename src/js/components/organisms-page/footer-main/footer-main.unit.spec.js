@@ -1,6 +1,7 @@
 /* eslint-disable max-nested-callbacks */
 import FooterMain from './footer-main';
 import {build} from 'vuenit';
+import Defaults from 'constants/defaults';
 
 describe('components', () => {
     describe('layout', () => {
@@ -45,12 +46,13 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should dispatch PUSH_SETTINGS to store the selected country', () => {
+            it('should dispatch PUSH_SETTINGS to store the selected country', async(done) => {
                 const vm = mount(fixture.countrySettings);
 
-                spyOn(vm.$store, 'dispatch').and.returnValue(true);
-                vm.setCountry({});
+                spyOn(vm.$store, 'dispatch').and.callThrough();
+                vm.setCountry(Defaults.country);
                 expect(vm.$store.dispatch).toHaveBeenCalled();
+                done();
             });
         });
     });
