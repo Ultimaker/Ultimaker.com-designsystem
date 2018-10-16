@@ -36,18 +36,18 @@ podTemplate(label: "${podLabel}", inheritFrom: 'default', containers: [
       deploymentName = 'canary'
       zone = 'europe-west3-b'
 
-      stage('static code analysis') {
-        container('sonar-scanner') {
-          sh "sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.projectName=${repo} -Dsonar.github.repository=${repo} -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src"
-        }
-      }
+      //stage('static code analysis') {
+      //  container('sonar-scanner') {
+      //    sh "sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.projectName=${repo} -Dsonar.github.repository=${repo} -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src"
+      //  }
+      //}
     } else if (env.BRANCH_NAME.startsWith("PR-") == true) {
       def prNumber = env.BRANCH_NAME.replace("PR-", "")
-      stage('static code analysis') {
-        container('sonar-scanner') {
-          sh "sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.projectName=${repo} -Dsonar.github.repository=${repo} -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src -Dsonar.analysis.mode=preview -Dsonar.github.pullRequest=${prNumber}"
-        }
-      }
+      //stage('static code analysis') {
+      //  container('sonar-scanner') {
+      //    sh "sonar-scanner -Dproject.settings=/var/secrets/config.properties -Dsonar.projectKey=design-system -Dsonar.projectName=${repo} -Dsonar.github.repository=${repo} -Dsonar.projectBaseDir=`pwd` -Dsonar.sources=src -Dsonar.analysis.mode=preview -Dsonar.github.pullRequest=${prNumber}"
+      //  }
+      //}
 
       currentBuild.result = "SUCCESS"
       return
