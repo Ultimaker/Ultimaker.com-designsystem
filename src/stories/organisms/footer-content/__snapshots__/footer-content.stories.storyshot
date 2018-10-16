@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots organisms|footer-main Footer 1`] = `
+exports[`Storyshots organisms|footer-content Footer 1`] = `
 <section
   class="story"
 >

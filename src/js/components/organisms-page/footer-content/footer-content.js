@@ -8,9 +8,9 @@ const getLink = (links) => {
     return links.item[0].href;
 };
 
-export default Vue.component('footer-main', {
-    name: 'footer-main',
-    template: require('./footer-main.html'),
+export default Vue.component('footer-content', {
+    name: 'footer-content',
+    template: require('./footer-content.html'),
     data: () => ({
         countrySelectorOpen: false,
         countryInput: null
@@ -60,7 +60,7 @@ export default Vue.component('footer-main', {
             }
         },
         setCountry() {
-            this.$store.dispatch('PUSH_COUNTRY', this.countryInput);
+            this.$emit('country-changed', {country: this.countryInput});
             this.toggleCountrySelector();
         },
         mapLinks: (linkList) => linkList.map(link => ({

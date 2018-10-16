@@ -1,17 +1,17 @@
 /* eslint-disable max-nested-callbacks */
-import FooterMain from './footer-main';
+import FooterMain from './footer-content';
 import {build} from 'vuenit';
 import Defaults from 'constants/defaults';
 
 describe('components', () => {
     describe('layout', () => {
-        describe('footer-main', () => {
-            const data = require('./footer-main.unit.spec.json'),
-                fixture = require('./footer-main.unit.fixture'),
+        describe('footer-content', () => {
+            const data = require('./footer-content.unit.spec.json'),
+                fixture = require('./footer-content.unit.fixture'),
                 buildOptions = {props: {...data.properties}},
                 mount = build(FooterMain, {buildOptions});
 
-            it('should render a footer-main element', () => {
+            it('should render a footer-content element', () => {
                 const vm = mount(buildOptions),
                     objAttributes = vm.$el.attributes;
 
@@ -46,12 +46,13 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should dispatch PUSH_SETTINGS to store the selected country', async(done) => {
+            it('should $emit the selected country', async(done) => {
                 const vm = mount(fixture.countrySettings);
 
-                spyOn(vm.$store, 'dispatch').and.callThrough();
-                vm.setCountry(Defaults.country);
-                expect(vm.$store.dispatch).toHaveBeenCalled();
+                spyOn(vm, '$emit').and.callThrough();
+                vm.countryInput = Defaults.country;
+                vm.setCountry();
+                expect(vm.$emit).toHaveBeenCalledWith('country-changed', {country: Defaults.country});
                 done();
             });
         });
