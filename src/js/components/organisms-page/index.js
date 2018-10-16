@@ -13,4 +13,4 @@ export {default as HeroText} from 'organisms-page/hero-text';
 export {default as Resellers} from 'organisms-page/resellers';
 export {default as SliderReveal} from 'organisms-page/slider-reveal';
 export {default as Ubr} from 'organisms-page/ubr';
-export {default as FooterMain} from 'organisms-page/footer-main';
+export {default as FooterMain} from 'organisms-page/footer-content';
