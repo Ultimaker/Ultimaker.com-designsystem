@@ -7,22 +7,22 @@ export default () => ({
         ... data.minorNav,
         children: data.minorNav.children.map((item, i) => ({
             ... item,
-            title: text(`Category ${i+1} title`, item.title),
+            title: text(`Footer - category ${i+1} title`, item.title),
             children: item.children.map((child,x) =>({
                 ... child,
-                title: text(`Links - Category ${item.title} link ${x+1}`, child.title)
+                title: text(`Footer - Links category ${item.title.toLowerCase()} link ${x+1}`, child.title)
             }))
         }))
     },
     globalLabels: {
-        countryInputPlaceholder: text(`CountryInputPlaceholder`, data.globalLabels.countryInputPlaceholder),
-        countryDetected: text(`CountryDetected`, data.globalLabels.countryDetected),
-        countrySuggestions: text(`CountrySuggestions`, data.globalLabels.countrySuggestions),
-        copyright: text(`Copyright`, data.globalLabels.copyright)
+        countryInputPlaceholder: text(`Footer - countryInputPlaceholder`, data.globalLabels.countryInputPlaceholder),
+        countryDetected: text(`Footer - countryDetected`, data.globalLabels.countryDetected),
+        countrySuggestions: text(`Footer - countrySuggestions`, data.globalLabels.countrySuggestions),
+        copyright: text(`Footer -  copyright`, data.globalLabels.copyright)
     },
     legalNav: {
         children: data.legalNav.children.map((leg, i)  => ({
-            title: text(`Legal title ${i+1}`, leg.title)
+            title: text(`Footer - legal title ${i+1}`, leg.title)
         }))
     },
     country: data.country
