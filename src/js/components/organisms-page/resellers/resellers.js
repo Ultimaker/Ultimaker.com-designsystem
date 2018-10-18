@@ -18,8 +18,7 @@ export default {
     }),
     props: {
         title: {
-            type: String,
-            required: true
+            type: String
         },
         tooltip: {
             type: String
