@@ -10,7 +10,7 @@ describe('components', () => {
                 buildOptions = {props: {...fixture}};
 
             it('should render a resellers component', () => {
-                const vm = mount(),
+                const vm = mount(buildOptions),
                     objAttributes = vm.$el.attributes;
 
                 expect(vm.$el).toBeDefined();
