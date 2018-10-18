@@ -38,6 +38,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
         @include min-mobile-xl {
             width: 100%;
+            margin: 0 auto 0 ($buildingUnit * 2.5);
         }
     }
 

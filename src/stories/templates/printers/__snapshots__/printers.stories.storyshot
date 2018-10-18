@@ -1600,6 +1600,512 @@ exports[`Storyshots templates|printers Printers 1`] = `
             </div>
           </section>
         </article>
+         
+        <footer
+          class="footer"
+        >
+          <div
+            class="footer__container"
+          >
+            <div
+              class="footer__primary"
+            >
+              <a
+                aria-label="Ultimaker homepage"
+                class="branded-logo footer__branded-logo router-link-exact-active router-link-active"
+                href="#/"
+              >
+                <!---->
+                 
+                <!---->
+              </a>
+               
+              <nav
+                class="footer__nav"
+              >
+                <div
+                  class="flexgrid"
+                >
+                  <div
+                    class="flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6"
+                  >
+                    <div
+                      class="flexgrid"
+                    >
+                      <div
+                        class="flexgrid__cell--xs-6"
+                      >
+                        <div
+                          class="footer-nav__column"
+                        >
+                          <h3
+                            class="footer-nav__title"
+                            id="footer-nav__title-01"
+                          >
+                            Products
+                          </h3>
+                           
+                          <ul
+                            aria-labelledby="footer-nav__title-01"
+                            class="footer-nav__list"
+                          >
+                            <li
+                              class="footer-nav__item"
+                            >
+                              <a
+                                class="link footer-nav__link"
+                                href="#/#"
+                              >
+                                <!---->
+                                 
+                                <span
+                                  class="link__underline"
+                                >
+                                  Printers
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="footer-nav__item"
+                            >
+                              <a
+                                class="link footer-nav__link"
+                                href="#/#"
+                              >
+                                <!---->
+                                 
+                                <span
+                                  class="link__underline"
+                                >
+                                  Materials
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="footer-nav__item"
+                            >
+                              <a
+                                class="link footer-nav__link"
+                                href="#/#"
+                              >
+                                <!---->
+                                 
+                                <span
+                                  class="link__underline"
+                                >
+                                  Ultimaker Cura
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                       
+                      <div
+                        class="flexgrid__cell--xs-6"
+                      >
+                        <div
+                          class="footer-nav__column"
+                        >
+                          <h3
+                            class="footer-nav__title"
+                            id="footer-nav__title-02"
+                          >
+                            Resources
+                          </h3>
+                           
+                          <ul
+                            aria-labelledby="footer-nav__title-02"
+                            class="footer-nav__list"
+                          >
+                            <li
+                              class="footer-nav__item"
+                            >
+                              <a
+                                class="link footer-nav__link"
+                                href="#/api/pages/materials/ultimaker-cpe"
+                              >
+                                <!---->
+                                 
+                                <span
+                                  class="link__underline"
+                                >
+                                  Manuals
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="footer-nav__item"
+                            >
+                              <a
+                                class="link footer-nav__link"
+                                href="#/api/pages/materials/ultimaker-pla"
+                              >
+                                <!---->
+                                 
+                                <span
+                                  class="link__underline"
+                                >
+                                  Tips and Tricks
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="footer-nav__item"
+                            >
+                              <a
+                                class="link footer-nav__link"
+                                href="#/#"
+                              >
+                                <!---->
+                                 
+                                <span
+                                  class="link__underline"
+                                >
+                                  Troubleshooting
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="footer-nav__item"
+                            >
+                              <a
+                                class="link footer-nav__link"
+                                href="#/#"
+                              >
+                                <!---->
+                                 
+                                <span
+                                  class="link__underline"
+                                >
+                                  Education
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="flexgrid__cell--xxs-6 flexgrid__cell--xs-4 flexgrid__cell--sm-6"
+                  >
+                    <div
+                      class="footer-nav__column footer-nav__column--last footer-nav__column--double"
+                    >
+                      <h3
+                        class="footer-nav__title"
+                        id="footer-nav__title-03"
+                      >
+                        Company
+                      </h3>
+                       
+                      <ul
+                        aria-labelledby="footer-nav__title-03"
+                        class="footer-nav__list"
+                      >
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="link footer-nav__link"
+                            href="#/#"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              About Ultimaker
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="link footer-nav__link"
+                            href="#/#"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              Careers
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="link footer-nav__link"
+                            href="#/#"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              Blog
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="link footer-nav__link"
+                            href="#/#"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              Press Room
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="link footer-nav__link"
+                            href="#/#"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              Events
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="link footer-nav__link"
+                            href="#/#"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              Resellers
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="link footer-nav__link"
+                            href="#/#"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              Request support
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="link footer-nav__link"
+                            href="#/#"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              Contact
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+             
+            <div
+              class="footer__secondary"
+            >
+              <nav
+                class="social-nav footer__social-nav"
+              >
+                <ul
+                  aria-label="follow Ultimaker"
+                  class="social-nav__list"
+                >
+                  <li
+                    class="social-nav__item footer__social-item"
+                  >
+                    <a
+                      aria-label="LinkedIn"
+                      class="social-nav__link icon-button icon-button--small"
+                      href="https://nl.linkedin.com/company/ultimaker"
+                    >
+                      <!---->
+                    </a>
+                  </li>
+                   
+                  <li
+                    class="social-nav__item footer__social-item"
+                  >
+                    <a
+                      aria-label="Twitter"
+                      class="social-nav__link icon-button icon-button--small"
+                      href="https://twitter.com/Ultimaker"
+                    >
+                      <!---->
+                    </a>
+                  </li>
+                   
+                  <li
+                    class="social-nav__item footer__social-item"
+                  >
+                    <a
+                      aria-label="YouTube"
+                      class="social-nav__link icon-button icon-button--small"
+                      href="https://www.youtube.com/user/Ultimaker3D"
+                    >
+                      <!---->
+                    </a>
+                  </li>
+                   
+                  <li
+                    class="social-nav__item footer__social-item"
+                  >
+                    <a
+                      aria-label="Facebook"
+                      class="social-nav__link icon-button icon-button--small"
+                      href="https://www.facebook.com/Ultimaker"
+                    >
+                      <!---->
+                    </a>
+                  </li>
+                   
+                  <li
+                    class="social-nav__item footer__social-item"
+                  >
+                    <a
+                      aria-label="Instagram"
+                      class="social-nav__link icon-button icon-button--small"
+                      href="http://instagram.com/ultimaker"
+                    >
+                      <!---->
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+               
+              <div
+                class="footer__locale-selector"
+              >
+                <a
+                  aria-label="Change your country, currently: Netherlands"
+                  class="icon-button icon-button--small locale-selector__edit--buton"
+                  role="button"
+                  tabindex="0"
+                >
+                  <!---->
+                   
+                  <span
+                    class="icon-button__label"
+                  >
+                    
+                    Netherlands - €
+                
+                  </span>
+                </a>
+                 
+                <a
+                  aria-label="change your country"
+                  class="icon-button icon-button--small locale-selector__edit--buton"
+                  role="button"
+                  style="display: none;"
+                  tabindex="0"
+                >
+                  <!---->
+                   
+                  <!---->
+                </a>
+                 
+                <!---->
+              </div>
+            </div>
+             
+            <div
+              class="footer__tertiary"
+            >
+              <div
+                class="legal footer__legal"
+              >
+                <p
+                  class="legal__copyright-label"
+                >
+                  <small>
+                    Copyright
+                  </small>
+                </p>
+                 
+                <nav
+                  class="legal__nav"
+                >
+                  <ul
+                    class="legal__list"
+                  >
+                    <li
+                      class="legal__item"
+                    >
+                      <a
+                        class="link legal__link"
+                        href="#/#"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          Terms of Use
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="legal__item"
+                    >
+                      <a
+                        class="link legal__link"
+                        href="#/#"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          Privacy and Cookie Policy
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </section>
   </section>
