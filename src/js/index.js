@@ -3,6 +3,8 @@ import 'whatwg-fetch';
 
 import ComponentRegistry from 'utils/component-registry';
 import Components from './components';
+import * as Directives from './directives';
+
 import '../scss/ultimaker.scss';
 
 // import all icons from src/icons/.. as svg sprite
@@ -16,6 +18,10 @@ const registry = new ComponentRegistry();
 
 Object.keys(Components).forEach(c => {
     registry.registerComponent(Components[c]);
+});
+
+Object.keys(Directives).forEach(d => {
+    registry.registerDirective(Directives[d]);
 });
 
 export {default as Defaults} from 'constants/defaults';
