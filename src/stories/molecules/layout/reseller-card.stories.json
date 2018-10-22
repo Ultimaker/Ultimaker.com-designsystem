@@ -8,7 +8,7 @@
         "name": "Reseller name",
         "preferred": true,
         "showroomCount": 2,
-        "href": "#",
+        "href": "https://lipsum.com",
         "labels": {
             "visitWebsite": "Visit website",
             "multiShowroomLabel": "showrooms",

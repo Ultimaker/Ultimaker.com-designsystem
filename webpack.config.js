@@ -46,7 +46,8 @@ const webpackConfig = {
             'mixins': resolve('src/js/mixins'),
             'router': resolve('src/js/router'),
             'services': resolve('src/js/services'),
-            'utils': resolve('src/js/utils')
+            'utils': resolve('src/js/utils'),
+            'plugins': resolve('src/js/plugins')
         }
     },
     module: {

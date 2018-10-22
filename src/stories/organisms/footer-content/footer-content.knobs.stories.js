@@ -8,7 +8,7 @@ export default () => ({
         children: data.minorNav.children.map((item, i) => ({
             ... item,
             title: text(`Footer - category ${i+1} title`, item.title),
-            children: item.children.map((child,x) =>({
+            children: item.children.map((child, x) =>({
                 ... child,
                 title: text(`Footer - Links category ${item.title.toLowerCase()} link ${x+1}`, child.title)
             }))
