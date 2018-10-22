@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import 'whatwg-fetch';
 
-import ComponentRegistry from 'utils/component-registry';
+import ComponentRegistry from 'plugins/component-registry';
 import Components from './components';
 import * as Directives from './directives';
 
@@ -30,4 +30,5 @@ export {default as BrowserCapabilities} from 'utils/browser-capabilities';
 // export {default as PolyLoader} from 'utils/poly-loader';
 export {default as TextUtils} from 'utils/text-utils';
 export {default as ViewportUtility} from 'utils/viewport';
+export {default as PublicEventService} from 'plugins/public-event-service';
 export {registry};

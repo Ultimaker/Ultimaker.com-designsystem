@@ -9,6 +9,7 @@ import 'babel-polyfill';
 import 'whatwg-fetch';
 
 import {registry} from 'src/js';
+import {PublicEventService} from 'src/js';
 import 'src/scss/storybook.scss';
 import storyRoot from 'src/stories/story.root.js';
 import viewPort from "utils/viewport";
@@ -27,6 +28,12 @@ setOptions({
 });
 
 Vue.use(registry);
+Vue.use(PublicEventService);
+Vue.use(Vuex);
+
+window.$u = {
+    events: PublicEventService
+};
 
 addDecorator(withNotes);
 addDecorator(storyRouter());
@@ -57,7 +64,6 @@ addDecorator((story) => ({
     }
 }));
 
-Vue.use(Vuex);
 
 function loadStories() {
     const globals = require.context('../src/stories/global', true, /\.stories\.js$/),

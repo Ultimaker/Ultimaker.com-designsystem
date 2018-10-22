@@ -28,10 +28,10 @@
 
             <ul class="reseller-list" v-if="resellersPreferred.length > 0">
                 <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
-                    <template v-for="reseller in resellersPreferred">
+                    <template v-for="(reseller, index) in resellersPreferred">
                         <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6">
                             <li class="reseller-list__item">
-                                <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
+                                <reseller-card v-bind="reseller" :labels="labels" :position="index + 1"></reseller-card>
                             </li>
                         </div>
                     </template>
@@ -52,7 +52,7 @@
                          v-for="(reseller, index) in resellersAuthorized"
                          v-if="index < showMax">
                         <li class="reseller-list__item">
-                            <reseller-card v-bind="reseller" ref="visible" :labels="labels"></reseller-card>
+                            <reseller-card v-bind="reseller" ref="visible" :labels="labels" :position="index + 1"></reseller-card>
                         </li>
                     </div>
                     <template v-if="resellersAuthorized.length > showMax && !visibleAllAuthorizedResellers">

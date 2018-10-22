@@ -23,11 +23,31 @@ export default {
         labels: {
             type: Object,
             required: true
+        },
+        position: {
+            type: Number,
+            default: -1
         }
     },
     methods: {
         getShowroomLabel(amount) {
             return amount > 1 ? this.labels.showroomPlural : this.labels.showroom;
+        }
+    },
+    computed: {
+        gtmEventInfo()  {
+            return {
+                dataType: 'reseller',
+                data: {
+                    name: this.name,
+                    fullPath: this.$route ? this.$route.fullPath : '',
+                    hasLogo: !!this.image,
+                    isPreferred: this.preferred,
+                    position: this.position,
+                    amountShowrooms: this.showrooms,
+                    outboundUrl: this.href
+                }
+            };
         }
     }
 };
