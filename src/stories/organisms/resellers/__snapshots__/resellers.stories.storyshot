@@ -83,7 +83,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -164,7 +166,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -245,7 +249,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -326,7 +332,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -407,7 +415,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -488,7 +498,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -569,7 +581,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -650,7 +664,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -731,7 +747,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -840,7 +858,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -915,7 +935,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -990,7 +1012,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1065,7 +1089,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1140,7 +1166,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1221,7 +1249,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1322,7 +1352,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1399,7 +1431,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1476,7 +1510,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1559,7 +1595,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1636,7 +1674,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1713,7 +1753,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
@@ -1796,7 +1838,9 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                     <a
                       class="reseller-card"
                       href="#"
+                      rel="noopener"
                       tabindex="0"
+                      target="_blank"
                       to="#"
                     >
                       <div
