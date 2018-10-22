@@ -36,6 +36,7 @@ module.exports = {
         '^mixins/(.*)$': '<rootDir>/src/js/mixins/$1',
         '^router/(.*)$': '<rootDir>/src/js/router/$1',
         '^services/(.*)$': '<rootDir>/src/js/services/$1',
-        '^utils/(.*)$': '<rootDir>/src/js/utils/$1'
+        '^utils/(.*)$': '<rootDir>/src/js/utils/$1',
+        '^plugins/(.*)$': '<rootDir>/src/js/plugins/$1'
     }
 };

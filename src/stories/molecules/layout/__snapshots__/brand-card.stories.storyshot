@@ -152,9 +152,11 @@ exports[`Storyshots Molecules|layout/cards Reseller card 1`] = `
       <a
         class="reseller-card"
         fileinput="/generator/svg/120/120"
-        href="#"
+        href="https://lipsum.com"
+        rel="noopener"
         tabindex="0"
-        to="#"
+        target="_blank"
+        to="https://lipsum.com"
       >
         <div
           class="reseller-card__header"

@@ -15,7 +15,7 @@ import storyRoot from 'src/stories/story.root.js';
 import viewPort from "utils/viewport";
 
 
-if(process.env.BABEL_ENV === 'jest'){
+if(process.env.BABEL_ENV === 'jest') {
     const registerRequireContextHook = require('babel-plugin-require-context-hook/register');
     registerRequireContextHook();
 }
