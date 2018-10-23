@@ -44,7 +44,7 @@ export default {
                     hasLogo: !!this.image,
                     isPreferred: this.preferred,
                     position: this.position,
-                    amountShowrooms: this.showrooms,
+                    amountShowrooms: this.showroomCount,
                     outboundUrl: this.href
                 }
             };
