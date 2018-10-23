@@ -20,6 +20,28 @@ describe('components', () => {
                 vm.$destroy();
             });
 
+            it('should render a router-link when undefined', () => {
+                const vm = mount({
+                        props: {
+                            to: undefined
+                        }
+                    }),
+                    objAttributes = vm.$el.attributes;
+
+                expect(objAttributes.to).toBe(undefined);
+
+                vm.$destroy();
+            });
+
+            it('should render a router-link when undefined', () => {
+                const vm = mount(),
+                    objAttributes = vm.$el.attributes;
+
+                expect(objAttributes.to).toBe(undefined);
+
+                vm.$destroy();
+            });
+
             it('should render a href specified by it\'s parent', () => {
                 const vm = mount({
                         props: {
