@@ -9,7 +9,7 @@ export default {
     },
     methods: {
         linkProps(url) {
-            if (url.match(/^(http(s)?):\/\//)) {
+            if (url && url.match(/^(http(s)?):\/\//)) {
                 return {
                     is: 'a',
                     href: url,
