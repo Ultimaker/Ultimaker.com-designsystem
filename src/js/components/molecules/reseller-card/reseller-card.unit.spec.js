@@ -1,4 +1,7 @@
 /* eslint-disable max-nested-callbacks */
+import PublicEventService from 'plugins/public-event-service';
+import Events from 'constants/events';
+
 import ResellerCard from './reseller-card';
 import {build} from 'vuenit';
 
@@ -77,6 +80,33 @@ describe('components', () => {
 
                 expect(showroomLabel.length).toBe(0);
                 vm.$destroy();
+            });
+
+            it('should emit a reseller event when a reseller card has been clicked', (done) => {
+                const props = {
+                        name: 'Reseller name',
+                        href: 'http://link-to-somewhere.com',
+                        labels: {},
+                        position: 22
+                    },
+                    vm = mount({
+                        inject: {
+                            '$emitPublic': () => PublicEventService.emit
+                        },
+                        props
+                    });
+
+                PublicEventService.on(Events.gtmClick, (event) => {
+                    expect(event.dataType).toEqual('resellerCard');
+                    expect(event.data.name).toEqual(props.name);
+                    expect(event.data.outboundUrl).toEqual(props.href);
+                    expect(event.data.position).toEqual(props.position);
+
+                    done();
+                    vm.$destroy();
+                });
+
+                vm.$el.dispatchEvent(new window.Event('click'));
             });
         });
     });
