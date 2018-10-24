@@ -1,3 +1,5 @@
+import Events from 'constants/events';
+
 export default {
     name: 'reseller-card',
     template: require('./reseller-card.html'),
@@ -35,9 +37,12 @@ export default {
         }
     },
     computed: {
+        gtmClickEvent() {
+            return Events.gtmClick;
+        },
         gtmEventInfo()  {
             return {
-                dataType: 'reseller',
+                dataType: 'resellerCard',
                 data: {
                     name: this.name,
                     fullPath: this.$route ? this.$route.fullPath : '',
