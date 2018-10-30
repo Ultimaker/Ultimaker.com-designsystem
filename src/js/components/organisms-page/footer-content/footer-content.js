@@ -8,7 +8,7 @@ const getLink = (links) => {
     return links.item[0].href;
 };
 
-export default Vue.component('footer-content', {
+export default {
     name: 'footer-content',
     template: require('./footer-content.html'),
     data: () => ({
@@ -71,4 +71,4 @@ export default Vue.component('footer-content', {
     beforeMount() {
         this.init();
     }
-});
+};
