@@ -3,7 +3,7 @@
     "items": [
         {
             "icon": {
-                "iconName": "print-head"
+                "iconName": "dual-extrusion"
             },
             "title": "Lorem ipsum dolor sit amet",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.",
