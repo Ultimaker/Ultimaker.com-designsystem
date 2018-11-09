@@ -9,6 +9,8 @@ $triangleSize: $buildingUnit;
     max-width: 150px;
     min-height: $buildingUnit * 3;
 
+    font-weight: 400;
+
     @extend %reset-last-margin;
     z-index: 200;
 
