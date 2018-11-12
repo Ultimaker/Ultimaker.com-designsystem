@@ -46,9 +46,11 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                 >
                   <a
                     class="button button--primary hero__button"
-                    href="/en/quote"
+                    href="#/en/quote"
                   >
-                    Request a quote
+                    
+        Request a quote
+    
                   </a>
                    
                   <a

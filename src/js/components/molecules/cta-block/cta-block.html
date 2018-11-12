@@ -1,6 +1,7 @@
 <div class="cta__block">
-    <a :href="ctas.button.uri" class="button button--primary hero__button" v-if="ctas && ctas.button">{{
-        ctas.button.title }}</a>
+    <app-link :to="ctas.button.uri" class="button button--primary hero__button" v-if="ctas && ctas.button">
+        {{ ctas.button.title }}
+    </app-link>
     <content-link class="link--large" :href="ctas.link.uri" v-if="ctas && ctas.link">{{ ctas.link.title }}
     </content-link>
 </div>
