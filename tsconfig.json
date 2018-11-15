@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": false,
+        "strict": true,
+        "target": "esnext",
+        "module": "es6",
+        "lib": [
+            "es2016",
+            "dom"
+        ],
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitReturns": true,
+        "noImplicitAny": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@root/*": ["."],
+            "vue": ["../node_modules/vue/dist/vue.esm.js"],
+            "src/*": ["./src/*"],
+            "js/*": ["./src/js/*"],
+            "components/*": ["./src/js/components/*"],
+            "constants/*": ["./src/js/constants/*"],
+            "directives/*": ["./src/js/directives/*"],
+            "plugins/*": ["./src/js/plugins/*"],
+            "utils/*": ["./src/js/utils/*"]
+        },
+        "types": [
+            "reflect-metadata",
+            "jasmine",
+            "requirejs",
+            "node"
+        ]
+    },
+    "include": [
+        "src/js/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build",
+        "public"
+    ]
+}

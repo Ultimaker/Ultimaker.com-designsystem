@@ -14,7 +14,7 @@ const webpackConfig = {
     mode: 'production',
     devtool: '#nosources-source-map',
     entry: {
-        'components': './src/js/index.js'
+        'components': './src/js/index.ts'
     },
     output: {
         path: resolve('dist'),

@@ -9,7 +9,7 @@ function resolve(dir) {
 }
 
 const webpackConfig = {
-    entry: './src/js/index.js',
+    entry: './src/js/index.ts',
     devtool: '#eval-source-map',
     devServer: {
         historyApiFallback: true,
@@ -27,7 +27,7 @@ const webpackConfig = {
         hints: false
     },
     resolve: {
-        extensions: ['.js', '.vue', '.json'],
+        extensions: ['.ts', '.tsx', '.js', '.vue', '.json'],
         modules: [
             resolve('src'),
             resolve('node_modules')
@@ -72,6 +72,21 @@ const webpackConfig = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
+            },
+            {
+                test: /\.tsx?$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader'
+                    },
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            appendTsSuffixTo: [/\.vue$/]
+                        }
+                    }
+                ]
             },
             {
                 test: /\.html$/,
