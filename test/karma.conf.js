@@ -57,10 +57,13 @@ module.exports = function(config) {
             suppressSkipped: true
         },
         files: [
-            '../src/js/**/*.unit.spec.js'
+            {pattern: '../src/js/**/*.spec.+(js|ts)'}
         ],
         preprocessors: {
-            '../src/js/**/*.js': ['webpack', 'sourcemap']
+            '../src/js/**/*.+(js|ts)': ['webpack', 'sourcemap']
+        },
+        mime: {
+            'text/x-typescript': ['ts', 'tsx']
         },
         webpack: webpackConfig,
         webpackMiddleware: {
