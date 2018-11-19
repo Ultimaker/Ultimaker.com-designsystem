@@ -1,0 +1,30 @@
+<article class="hero hero--video">
+    <div class="hero__container--top">
+            <responsive-picture v-bind="heroImage" imgClass="hero__image--full"></responsive-picture>
+            <div class="hero__image-overlay"></div>
+        <section class="container">
+            <div class="flexgrid flexgrid--gutter">
+                <div class="flexgrid__cell--xs-6">
+                    <div class="hero__headline">
+                        <h1>{{ title }}</h1>
+                    </div>
+                </div>
+
+                <div class="flexgrid__cell">
+                    <div class="hero__description">
+                        <p class="copy--intro">{{ description }}</p>
+                    </div>
+                </div>
+
+                <div class="flexgrid__cell--xs-6">
+                    <figcaption>
+                        <icon-button @click="toggleVideo" class="case__link icon-button--underline-large alex" :icon-name="buttonIcon">{{ buttonLabel }}</icon-button>
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+    </div>
+    <modal class="modal--video" v-if="showVideo" @close="toggleVideo">
+        <youtube-video :video-id="videoId"></youtube-video>
+    </modal>
+</article>
