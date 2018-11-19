@@ -6,17 +6,17 @@ module.exports = {
     transform: {
         '^.+\\.html?$': 'html-loader-jest',
         '^.+\\.md?$': 'markdown-loader-jest',
+        '^.+\\.ts$': "ts-jest",
         '^.+\\.js?$': '<rootDir>/node_modules/jest-vue-preprocessor',
-        '^.+\\.js?$': 'babel-jest',
-        "^.+\\.ts$": "ts-jest"
+        '^.+\\.js?$': 'babel-jest'
     },
     transformIgnorePatterns: [
         '/node_modules/(?!(@storybook/.*\\.vue$))'
     ],
     testMatch: [
-        '**/test/?(*.)+(snapshots.spec).js?(x)'
+        '**/test/?(*.)+(snapshots.spec).(ts|js)?(x)'
     ],
-    moduleFileExtensions: ['vue', 'ts', 'js', 'jsx', 'json', 'node'],
+    moduleFileExtensions: ['vue', 'ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     moduleDirectories: [
         'src',
         'node_modules'

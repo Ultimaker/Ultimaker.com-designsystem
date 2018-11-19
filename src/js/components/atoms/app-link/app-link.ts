@@ -1,5 +1,4 @@
-import Vue from 'vue';
-import { Component, Prop } from 'vue-property-decorator';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 
 @Component({
     name: 'app-link',
@@ -7,8 +6,7 @@ import { Component, Prop } from 'vue-property-decorator';
 })
 
 export default class AppLink extends Vue {
-    @Prop({ type: String, required: true })
-    to?: string;
+    @Prop({ type: String, required: true }) to?: string;
 
     public linkProps(url:string):Object {
         if (url && url.match(/^(http(s)?):\/\//)) {
