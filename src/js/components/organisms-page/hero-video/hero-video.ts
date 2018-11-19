@@ -8,7 +8,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 export default class HeroVideo extends Vue {
     @Prop({ type: String, required: true }) title?: string;
     @Prop({ type: String, required: true }) description?: string;
-    @Prop({ type: Object, required: true }) heroImage?: Object;
+    @Prop({ type: Object, required: true }) heroImage?: object;
     @Prop({ type: String, required: true }) videoId?: string;
     @Prop({ type: String, required: true }) buttonLabel?: string;
     @Prop({ type: String, required: true }) buttonIcon?: string;
