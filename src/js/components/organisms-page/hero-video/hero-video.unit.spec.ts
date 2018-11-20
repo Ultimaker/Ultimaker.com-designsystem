@@ -1,3 +1,4 @@
+import Vue from 'vue';
 import HeroVideo from './hero-video';
 import { build } from 'vuenit';
 
@@ -19,12 +20,15 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should display the modal after clicking the link', () => {
+            it('should display the modal after clicking the icon button', () => {
                 const vm = mount(buildOptions);
 
                 vm.toggleVideo();
                 expect(vm.showVideo).toBeTruthy();
-                vm.$destroy();
+
+                Vue.nextTick(() => {
+                    expect(vm.$el.lastChild.attributes['class'].value).toContain('modal--video');
+                });
             });
 
         });

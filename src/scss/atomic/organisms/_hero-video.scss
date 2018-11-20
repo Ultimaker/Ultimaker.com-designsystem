@@ -1,12 +1,8 @@
 .hero--video {
-    $bottomMarginCorrHero: 40px;
 
     .hero__headline {
         h1 {
-            margin-bottom: $bottomMarginCorrHero;
-            @include min-tablet {
-                margin-bottom: 50px;
-            }
+            margin-bottom: $buildingUnit * 5;
         }
     }
 
@@ -29,7 +25,7 @@
 
         .copy--intro {
             color: $colorWhite;
-            margin-bottom: 20px;
+            margin-bottom: $buildingUnit * 3;
         }
     }
 
