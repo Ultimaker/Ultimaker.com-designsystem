@@ -15,3 +15,5 @@ export {default as Modal} from 'molecules/modal';
 export {default as Pager} from 'molecules/pager';
 export {default as ResellerCard} from 'molecules/reseller-card';
 export {default as Search} from 'molecules/search';
+export {default as Tab} from 'molecules/tab';
+export {default as Tabs} from 'molecules/tabs';
