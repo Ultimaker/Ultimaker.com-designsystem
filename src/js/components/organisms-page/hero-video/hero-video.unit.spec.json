@@ -22,6 +22,7 @@
         },
         "videoId": "w5Fgp-KihIA",
         "buttonLabel": "Sit amet",
-        "buttonIcon": "play-video"
+        "buttonIcon": "play-video",
+        "videoExist": true
     }
 }
