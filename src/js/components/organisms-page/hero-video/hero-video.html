@@ -5,9 +5,11 @@
         <div class="flexgrid__cell--xs-6">
             <h1 class="hero__headline">{{ title }}</h1>
             <p class="copy--intro">{{ description }}</p>
-            <figcaption>
-                <icon-button @click="toggleVideo" button-class="case__link icon-button--underline-large" :icon-name="buttonIcon">{{ buttonLabel }}</icon-button>
-            </figcaption>
+            <template v-if="videoExist">
+                <figcaption>
+                    <icon-button @click="toggleVideo" button-class="case__link icon-button--underline-large" :icon-name="buttonIcon">{{ buttonLabel }}</icon-button>
+                </figcaption>
+            </template>
         </div>
     </section>
     <modal class="modal--video" v-if="showVideo" @close="toggleVideo">

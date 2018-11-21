@@ -13,6 +13,7 @@ export default class HeroVideo extends Vue implements IHeroVideoProps {
     @Prop({ type: String, required: true, default: '' }) videoId!: string;
     @Prop({ type: String, required: true, default: '' }) buttonLabel!: string;
     @Prop({ type: String, required: true, default: '' }) buttonIcon!: string;
+    @Prop({ type: Boolean, default: false }) videoExist?: boolean;
 
     showVideo: boolean = false;
 

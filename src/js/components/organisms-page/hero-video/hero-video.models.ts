@@ -5,4 +5,5 @@ export interface IHeroVideoProps {
     videoId: string;
     buttonLabel: string;
     buttonIcon: string;
+    videoExist?: boolean;
 }

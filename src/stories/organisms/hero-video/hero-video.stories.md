@@ -4,7 +4,8 @@ The *'Video hero'* organism provides generic info and a call-to-action to see a 
 
 If used, it should always be positioned as the first organism of the main content. As an introduction of the page.
 
-The hero video should at least contain a title, subtitle, description, image and video.
+The hero video should at least contain a title, description and image.
+The video is optional.
 
 ## Photography guidelines
 
