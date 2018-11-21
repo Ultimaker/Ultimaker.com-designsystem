@@ -1,0 +1,77 @@
+$materialCardTabletMarginBottom: $buildingUnit * 2;
+$materialCardMobileMarginBottom: $buildingUnit;
+
+.materials {
+    @extend .organism;
+    @extend %reset-last-margin;
+}
+
+.materials__title {
+    text-align: center;
+    position: relative;
+}
+
+.material-section {
+    &:not(:last-child) {
+        margin-bottom: 53px;
+    }
+    &:last-child {
+        margin-bottom: $materialCardMobileMarginBottom * -1; //reset margins
+
+        @include min-tablet {
+            margin-bottom: $materialCardTabletMarginBottom * -1; //reset margins
+        }
+    }
+}
+
+.material-section__header {
+    @include font-ratio-rhythm(sec-xs);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-s);
+    }
+}
+
+.material-section__title{
+    margin: 0;
+}
+
+.material-section__count {
+    color: $colorGrayDark;
+    font-size: .75em;
+}
+
+.material-list {
+    @extend %reset-list;
+}
+
+.materials__card {
+    border: 1px solid $colorGrayLight;
+    .card__headline {
+        margin-bottom: $buildingUnit;
+    }
+
+    .card__visual {
+        margin: 0 auto;
+
+        @include min-mobile-xl {
+            margin: 0 auto;
+        }
+    }
+
+    .card__content {
+       padding: $buildingUnit;
+    }
+}
+
+.material-list__button {
+    margin: ($buildingUnit * 2) 0 $materialCardMobileMarginBottom 0;
+
+    @include min-tablet {
+        margin: ($buildingUnit * 2) 0 $materialCardTabletMarginBottom 0;
+    }
+}
+
+.flexgrid__cell--material-list__button--center {
+    text-align: center;
+}

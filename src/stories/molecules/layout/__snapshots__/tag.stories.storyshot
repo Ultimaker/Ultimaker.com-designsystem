@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules|tags/tag tag 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="stories__molecules"
+    >
+      <label
+        class="tag"
+      >
+        One tag
+      </label>
+    </section>
+  </section>
+</section>
+`;

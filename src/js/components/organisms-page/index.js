@@ -10,6 +10,7 @@ export {default as HeroBasic} from 'organisms-page/hero-basic';
 export {default as HeroProduct} from 'organisms-page/hero-product';
 export {default as HeroProductsApplication} from 'organisms-page/hero-products-application';
 export {default as HeroText} from 'organisms-page/hero-text';
+export {default as Materials} from 'organisms-page/materials';
 export {default as Resellers} from 'organisms-page/resellers';
 export {default as SliderReveal} from 'organisms-page/slider-reveal';
 export {default as Ubr} from 'organisms-page/ubr';

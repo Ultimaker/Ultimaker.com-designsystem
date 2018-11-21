@@ -700,6 +700,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                           Content-link
                         </span>
                       </a>
+                       
+                      <!---->
                     </div>
                   </article>
                 </div>
@@ -774,6 +776,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                           Content-link
                         </span>
                       </a>
+                       
+                      <!---->
                     </div>
                   </article>
                 </div>
@@ -848,6 +852,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                           Content-link
                         </span>
                       </a>
+                       
+                      <!---->
                     </div>
                   </article>
                 </div>
@@ -1217,6 +1223,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       Learn more
                     </span>
                   </a>
+                   
+                  <!---->
                 </div>
               </article>
               <article
@@ -1257,6 +1265,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       Learn more
                     </span>
                   </a>
+                   
+                  <!---->
                 </div>
               </article>
               <article
@@ -1297,6 +1307,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       Learn more
                     </span>
                   </a>
+                   
+                  <!---->
                 </div>
               </article>
               <article
@@ -1337,6 +1349,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       Learn more
                     </span>
                   </a>
+                   
+                  <!---->
                 </div>
               </article>
             </div>

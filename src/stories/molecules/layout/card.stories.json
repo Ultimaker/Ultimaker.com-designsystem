@@ -16,6 +16,7 @@
         "contentLink": {
             "href": "#",
             "text": "content link"
-        }
+        },
+        "labels": ["Label one", "Label two"]
     }
 }
