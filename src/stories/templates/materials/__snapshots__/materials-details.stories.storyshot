@@ -1456,7 +1456,7 @@ exports[`Storyshots templates|materials Materials-overview 1`] = `
       class="story__template"
     >
       <article
-        class="hero hero--video"
+        class="hero hero__video"
       >
         <picture>
           <source
@@ -1495,7 +1495,7 @@ exports[`Storyshots templates|materials Materials-overview 1`] = `
           class="container"
         >
           <div
-            class="flexgrid__cell--xs-6"
+            class="flexgrid__cell--xs-6 hero__video--reset"
           >
             <h1
               class="hero__headline"
@@ -1521,7 +1521,7 @@ exports[`Storyshots templates|materials Materials-overview 1`] = `
                 <span
                   class="icon-button__label"
                 >
-                  Sit amet
+                  Play video
                 </span>
               </a>
             </figcaption>
