@@ -3,7 +3,4 @@ export interface IHeroVideoProps {
     description: string;
     heroImage: object;
     videoId: string;
-    buttonLabel: string;
-    buttonIcon: string;
-    videoExist?: boolean;
 }

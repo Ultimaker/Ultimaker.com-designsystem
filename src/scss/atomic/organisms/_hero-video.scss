@@ -1,15 +1,15 @@
-.hero--video {
+.hero__video {
     @extend .organism;
     @extend %reset-last-margin;
-
     position: relative;
 
-    .hero__headline {
-       color: $colorWhite;
+    &--reset p:last-child {
+        margin-bottom: 0;
     }
 
+    .hero__headline,
     .copy--intro {
-        color: $colorWhite;
+       color: $colorWhite;
     }
 
     .hero__image {

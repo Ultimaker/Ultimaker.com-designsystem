@@ -1,6 +1,6 @@
-# Hero products
+# Hero Video
 
-The *'Video hero'* organism provides generic info and a call-to-action to see a youtube video.
+The *'Video hero'* organism provides generic info and contains a CTA with 'play video' ability.
 
 If used, it should always be positioned as the first organism of the main content. As an introduction of the page.
 
