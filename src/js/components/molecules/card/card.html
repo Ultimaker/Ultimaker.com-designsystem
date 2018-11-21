@@ -10,7 +10,8 @@
     </div>
     <div class="card__content">
         <h3 class="card__headline">{{ card.title }}</h3>
-        <p class="card__description">{{ card.description }}</p>
+        <p class="card__description" v-if="card.description">{{ card.description }}</p>
         <content-link class="card__link" v-if="card.contentLink" :block="'card'" :href="card.contentLink.href">{{ card.contentLink.text }}</content-link>
+        <tag-list class="card__taglist" v-if="card.tags" :tags="card.tags" />
     </div>
 </article>

@@ -17,3 +17,5 @@ export {default as ResellerCard} from 'molecules/reseller-card';
 export {default as Search} from 'molecules/search';
 export {default as Tab} from 'molecules/tab';
 export {default as Tabs} from 'molecules/tabs';
+export {default as Tag} from 'molecules/tag';
+export {default as TagList} from 'molecules/tag-list';

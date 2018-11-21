@@ -1,12 +1,12 @@
 /* eslint-disable max-nested-callbacks */
 import Card from './card';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
-describe('components', () => {
-    describe('molecules', () => {
-        describe('card', () => {
-            const fixture = require('./card.unit.spec.json'),
-                mount = build(Card, {});
+describe('components', (): void => {
+    describe('molecules', (): void => {
+        describe('card', (): void => {
+            const fixture = require('./card.unit.spec.json');
+            const mount = build(Card, {});
 
             describe('defaults', () => {
                 it('should have empty properties by default', () => {
@@ -21,19 +21,21 @@ describe('components', () => {
 
             describe('should render', () => {
                 const buildOptions = {
-                        props: {
-                            block: 'test',
-                            card: fixture.card
-                        }
+                    props: {
+                        block: 'test',
+                        card: fixture.card,
                     },
-                    vm = mount(buildOptions),
-                    card = vm.$el,
-                    blockClass = card.attributes['class'],
-                    img = card.querySelector('.card__image'),
-                    content = card.querySelector('.card__content'),
-                    title = card.querySelector('.card__headline'),
-                    description = card.querySelector('.card__description'),
-                    link = card.querySelector('.card__link');
+                };
+
+                const vm = mount(buildOptions);
+                const    card = vm.$el;
+                const blockClass = card.attributes['class'];
+                const img = card.querySelector('.card__image');
+                const content = card.querySelector('.card__content');
+                const title = card.querySelector('.card__headline');
+                const description = card.querySelector('.card__description');
+                const link = card.querySelector('.card__link');
+                const taglist = card.querySelector('.card__taglist');
 
                 it('should render a "card" molecule', () => {
                     expect(card).toBeDefined();
@@ -55,6 +57,9 @@ describe('components', () => {
                 });
                 it('should render a link if specified', () => {
                     expect(link).toBeTruthy();
+                });
+                it('should render a tag list if specified', () => {
+                    expect(taglist).toBeTruthy();
                 });
                 vm.$destroy();
             });

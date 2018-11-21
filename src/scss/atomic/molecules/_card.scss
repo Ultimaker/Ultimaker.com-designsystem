@@ -1,9 +1,17 @@
+$cardTabletMarginBottom: $buildingUnit * 2;
+$cardMobileMarginBottom: $buildingUnit;
+
 .card {
     @extend %reset-last-margin;
     max-width: 600px;
 
     @include max-tablet() {
         margin-bottom: $buildingUnit * 4;
+    }
+
+    margin-bottom: $cardMobileMarginBottom;
+    @include min-tablet {
+        margin-bottom: $cardTabletMarginBottom;
     }
 }
 

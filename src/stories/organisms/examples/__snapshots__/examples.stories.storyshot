@@ -188,6 +188,8 @@ exports[`Storyshots organisms|examples Examples 1`] = `
                         Content-link
                       </span>
                     </a>
+                     
+                    <!---->
                   </div>
                 </article>
               </div>
@@ -262,6 +264,8 @@ exports[`Storyshots organisms|examples Examples 1`] = `
                         Content-link
                       </span>
                     </a>
+                     
+                    <!---->
                   </div>
                 </article>
               </div>
@@ -336,6 +340,8 @@ exports[`Storyshots organisms|examples Examples 1`] = `
                         Content-link
                       </span>
                     </a>
+                     
+                    <!---->
                   </div>
                 </article>
               </div>

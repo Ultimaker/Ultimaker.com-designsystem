@@ -1,0 +1,848 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|materials Materials 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <article
+        class="materials"
+      >
+        <section
+          class="container"
+        >
+          <h2
+            class="materials__title"
+          >
+            Find yourself a material
+          </h2>
+           
+          <section
+            class="materials-section"
+          >
+            <ul
+              class="material-list"
+            >
+              <div
+                class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+              >
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                >
+                  <li
+                    class="material-list__item"
+                  >
+                    <article
+                      class="card materials__card"
+                      position="1"
+                    >
+                      <div
+                        class="card__visual"
+                      >
+                        <div
+                          class="card__image"
+                        >
+                          <picture
+                            class="img--responsive"
+                          >
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(min-width: 768px)"
+                              srcset=""
+                            />
+                             
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(max-width: 480px)"
+                              srcset="/generator/svg/600/300"
+                            />
+                             
+                            <img
+                              alt=""
+                              class="img--responsive img--lazy"
+                              src=""
+                            />
+                          </picture>
+                        </div>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="card__content"
+                      >
+                        <h3
+                          class="card__headline"
+                        >
+                          Lorum ipsum
+                        </h3>
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <ul
+                          class="tag-list__list list card__taglist"
+                        >
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label one
+                            </label>
+                          </li>
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label two
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                >
+                  <li
+                    class="material-list__item"
+                  >
+                    <article
+                      class="card materials__card"
+                      position="2"
+                    >
+                      <div
+                        class="card__visual"
+                      >
+                        <div
+                          class="card__image"
+                        >
+                          <picture
+                            class="img--responsive"
+                          >
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(min-width: 768px)"
+                              srcset=""
+                            />
+                             
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(max-width: 480px)"
+                              srcset="/generator/svg/600/300"
+                            />
+                             
+                            <img
+                              alt=""
+                              class="img--responsive img--lazy"
+                              src=""
+                            />
+                          </picture>
+                        </div>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="card__content"
+                      >
+                        <h3
+                          class="card__headline"
+                        >
+                          Lorum ipsum
+                        </h3>
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <ul
+                          class="tag-list__list list card__taglist"
+                        >
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label one
+                            </label>
+                          </li>
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label two
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                >
+                  <li
+                    class="material-list__item"
+                  >
+                    <article
+                      class="card materials__card"
+                      position="3"
+                    >
+                      <div
+                        class="card__visual"
+                      >
+                        <div
+                          class="card__image"
+                        >
+                          <picture
+                            class="img--responsive"
+                          >
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(min-width: 768px)"
+                              srcset=""
+                            />
+                             
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(max-width: 480px)"
+                              srcset="/generator/svg/600/300"
+                            />
+                             
+                            <img
+                              alt=""
+                              class="img--responsive img--lazy"
+                              src=""
+                            />
+                          </picture>
+                        </div>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="card__content"
+                      >
+                        <h3
+                          class="card__headline"
+                        >
+                          Lorum ipsum
+                        </h3>
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <ul
+                          class="tag-list__list list card__taglist"
+                        >
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label one
+                            </label>
+                          </li>
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label two
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                >
+                  <li
+                    class="material-list__item"
+                  >
+                    <article
+                      class="card materials__card"
+                      position="4"
+                    >
+                      <div
+                        class="card__visual"
+                      >
+                        <div
+                          class="card__image"
+                        >
+                          <picture
+                            class="img--responsive"
+                          >
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(min-width: 768px)"
+                              srcset=""
+                            />
+                             
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(max-width: 480px)"
+                              srcset="/generator/svg/600/300"
+                            />
+                             
+                            <img
+                              alt=""
+                              class="img--responsive img--lazy"
+                              src=""
+                            />
+                          </picture>
+                        </div>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="card__content"
+                      >
+                        <h3
+                          class="card__headline"
+                        >
+                          Lorum ipsum
+                        </h3>
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <ul
+                          class="tag-list__list list card__taglist"
+                        >
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label one
+                            </label>
+                          </li>
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label two
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                >
+                  <li
+                    class="material-list__item"
+                  >
+                    <article
+                      class="card materials__card"
+                      position="5"
+                    >
+                      <div
+                        class="card__visual"
+                      >
+                        <div
+                          class="card__image"
+                        >
+                          <picture
+                            class="img--responsive"
+                          >
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(min-width: 768px)"
+                              srcset=""
+                            />
+                             
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(max-width: 480px)"
+                              srcset="/generator/svg/600/300"
+                            />
+                             
+                            <img
+                              alt=""
+                              class="img--responsive img--lazy"
+                              src=""
+                            />
+                          </picture>
+                        </div>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="card__content"
+                      >
+                        <h3
+                          class="card__headline"
+                        >
+                          Lorum ipsum
+                        </h3>
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <ul
+                          class="tag-list__list list card__taglist"
+                        >
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label one
+                            </label>
+                          </li>
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label two
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                >
+                  <li
+                    class="material-list__item"
+                  >
+                    <article
+                      class="card materials__card"
+                      position="6"
+                    >
+                      <div
+                        class="card__visual"
+                      >
+                        <div
+                          class="card__image"
+                        >
+                          <picture
+                            class="img--responsive"
+                          >
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(min-width: 768px)"
+                              srcset=""
+                            />
+                             
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(max-width: 480px)"
+                              srcset="/generator/svg/600/300"
+                            />
+                             
+                            <img
+                              alt=""
+                              class="img--responsive img--lazy"
+                              src=""
+                            />
+                          </picture>
+                        </div>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="card__content"
+                      >
+                        <h3
+                          class="card__headline"
+                        >
+                          Lorum ipsum
+                        </h3>
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <ul
+                          class="tag-list__list list card__taglist"
+                        >
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label one
+                            </label>
+                          </li>
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label two
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <!---->
+                <!---->
+                <!---->
+                 
+                <div
+                  class="flexgrid__cell flexgrid__cell--material-list__button--center"
+                >
+                  <button
+                    class="button--secondary material-list__button"
+                  >
+                    Show all (9)
+                            
+                  </button>
+                </div>
+              </div>
+               
+              <div
+                class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+                id="newSection"
+              >
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                  data-index="6"
+                  style="display: none;"
+                >
+                  <li
+                    class="material-list__item"
+                  >
+                    <article
+                      class="card materials__card"
+                    >
+                      <div
+                        class="card__visual"
+                      >
+                        <div
+                          class="card__image"
+                        >
+                          <picture
+                            class="img--responsive"
+                          >
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(min-width: 768px)"
+                              srcset=""
+                            />
+                             
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(max-width: 480px)"
+                              srcset="/generator/svg/600/300"
+                            />
+                             
+                            <img
+                              alt=""
+                              class="img--responsive img--lazy"
+                              src=""
+                            />
+                          </picture>
+                        </div>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="card__content"
+                      >
+                        <h3
+                          class="card__headline"
+                        >
+                          Lorum ipsum
+                        </h3>
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <ul
+                          class="tag-list__list list card__taglist"
+                        >
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label one
+                            </label>
+                          </li>
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label two
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                  data-index="7"
+                  style="display: none;"
+                >
+                  <li
+                    class="material-list__item"
+                  >
+                    <article
+                      class="card materials__card"
+                    >
+                      <div
+                        class="card__visual"
+                      >
+                        <div
+                          class="card__image"
+                        >
+                          <picture
+                            class="img--responsive"
+                          >
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(min-width: 768px)"
+                              srcset=""
+                            />
+                             
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(max-width: 480px)"
+                              srcset="/generator/svg/600/300"
+                            />
+                             
+                            <img
+                              alt=""
+                              class="img--responsive img--lazy"
+                              src=""
+                            />
+                          </picture>
+                        </div>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="card__content"
+                      >
+                        <h3
+                          class="card__headline"
+                        >
+                          Lorum ipsum
+                        </h3>
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <ul
+                          class="tag-list__list list card__taglist"
+                        >
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label one
+                            </label>
+                          </li>
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label two
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                  data-index="8"
+                  style="display: none;"
+                >
+                  <li
+                    class="material-list__item"
+                  >
+                    <article
+                      class="card materials__card"
+                    >
+                      <div
+                        class="card__visual"
+                      >
+                        <div
+                          class="card__image"
+                        >
+                          <picture
+                            class="img--responsive"
+                          >
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(min-width: 768px)"
+                              srcset=""
+                            />
+                             
+                            <!---->
+                             
+                            <!---->
+                             
+                            <source
+                              media="(max-width: 480px)"
+                              srcset="/generator/svg/600/300"
+                            />
+                             
+                            <img
+                              alt=""
+                              class="img--responsive img--lazy"
+                              src=""
+                            />
+                          </picture>
+                        </div>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="card__content"
+                      >
+                        <h3
+                          class="card__headline"
+                        >
+                          Lorum ipsum
+                        </h3>
+                         
+                        <!---->
+                         
+                        <!---->
+                         
+                        <ul
+                          class="tag-list__list list card__taglist"
+                        >
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label one
+                            </label>
+                          </li>
+                          <li
+                            class="tag-list__item list_item"
+                          >
+                            <label
+                              class="tag"
+                            >
+                              Label two
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </section>
+  </section>
+</section>
+`;
