@@ -592,3 +592,93 @@ exports[`Storyshots organisms|hero Hero text 1`] = `
   </section>
 </section>
 `;
+
+exports[`Storyshots organisms|hero Hero video 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <article
+        class="hero hero--video"
+      >
+        <picture>
+          <source
+            media="(min-width: 1201px)"
+            srcset=""
+          />
+           
+          <!---->
+           
+          <source
+            media="(min-width: 768px)"
+            srcset=""
+          />
+           
+          <!---->
+           
+          <!---->
+           
+          <source
+            media="(max-width: 480px)"
+            srcset="/generator/svg/1000/500"
+          />
+           
+          <img
+            alt=""
+            class="img--responsive hero__image--full img--lazy"
+            src=""
+          />
+        </picture>
+         
+        <div
+          class="hero__image-overlay"
+        />
+         
+        <section
+          class="container"
+        >
+          <div
+            class="flexgrid__cell--xs-6"
+          >
+            <h1
+              class="hero__headline"
+            >
+              Endless options with any material you want
+            </h1>
+             
+            <p
+              class="copy--intro"
+            >
+              Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit.
+            </p>
+             
+            <figcaption>
+              <a
+                aria-label=""
+                class="icon-button case__link icon-button--underline-large"
+                role="button"
+                tabindex="0"
+              >
+                <!---->
+                 
+                <span
+                  class="icon-button__label"
+                >
+                  Sit amet
+                </span>
+              </a>
+            </figcaption>
+          </div>
+        </section>
+         
+        <!---->
+      </article>
+    </section>
+  </section>
+</section>
+`;
