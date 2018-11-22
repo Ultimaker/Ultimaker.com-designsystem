@@ -2,9 +2,9 @@ import {storiesOf} from '@storybook/vue';
 import {withKnobs} from '@storybook/addon-knobs';
 import knobs from './materials.knobs.stories.js';
 
-storiesOf('organisms|materials', module)
+storiesOf('organisms|materials/grid', module)
     .addDecorator(withKnobs)
-    .add('Materials', () => ({
+    .add('Grid', () => ({
         data: () => knobs(),
         template: require('./materials.stories.html')
     }),

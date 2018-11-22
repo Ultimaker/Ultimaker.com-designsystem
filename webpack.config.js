@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const production = process.env.NODE_ENV === 'production';
 
-
 function resolve(dir) {
     return path.join(__dirname, dir);
 }
