@@ -1,5 +1,5 @@
 {
-    "title": "Find yourself a material",
+    "title": "Lorum ipsum dolor sit amet dolor sit amet consectetue",
     "materials": [
         {
             "image": {
@@ -13,7 +13,22 @@
                     }
                 }
             },
-            "title": "Lorum ipsum",
+            "title": "Lorum ipsum dolor sit amet",
+            "tags": ["Label one", "Label two", "Label one", "Label two", "Label one", "Label two", "Label one", "Label two"]
+        },
+        {
+            "image": {
+                "mobileWidth": {
+                    "url": "/generator/svg/600/300"
+                },
+                "tabletWidth": {
+                    "url": "/generator/svg/600/300",
+                    "retina": {
+                        "url": "/generator/svg/1200/600"
+                    }
+                }
+            },
+            "title": "Lorum ipsum dolor sit amet",
             "tags": ["Label one", "Label two"]
         },
         {
@@ -28,7 +43,7 @@
                     }
                 }
             },
-            "title": "Lorum ipsum",
+            "title": "Lorum ipsum dolor sit amet",
             "tags": ["Label one", "Label two"]
         },
         {
@@ -43,7 +58,7 @@
                     }
                 }
             },
-            "title": "Lorum ipsum",
+            "title": "Lorum ipsum dolor sit amet",
             "tags": ["Label one", "Label two"]
         },
         {
@@ -58,7 +73,7 @@
                     }
                 }
             },
-            "title": "Lorum ipsum",
+            "title": "Lorum ipsum dolor sit amet",
             "tags": ["Label one", "Label two"]
         },
         {
@@ -73,7 +88,7 @@
                     }
                 }
             },
-            "title": "Lorum ipsum",
+            "title": "Lorum ipsum dolor sit amet",
             "tags": ["Label one", "Label two"]
         },
         {
@@ -88,7 +103,7 @@
                     }
                 }
             },
-            "title": "Lorum ipsum",
+            "title": "Lorum ipsum dolor sit amet",
             "tags": ["Label one", "Label two"]
         },
         {
@@ -103,37 +118,7 @@
                     }
                 }
             },
-            "title": "Lorum ipsum",
-            "tags": ["Label one", "Label two"]
-        },
-        {
-            "image": {
-                "mobileWidth": {
-                    "url": "/generator/svg/600/300"
-                },
-                "tabletWidth": {
-                    "url": "/generator/svg/600/300",
-                    "retina": {
-                        "url": "/generator/svg/1200/600"
-                    }
-                }
-            },
-            "title": "Lorum ipsum",
-            "tags": ["Label one", "Label two"]
-        },
-        {
-            "image": {
-                "mobileWidth": {
-                    "url": "/generator/svg/600/300"
-                },
-                "tabletWidth": {
-                    "url": "/generator/svg/600/300",
-                    "retina": {
-                        "url": "/generator/svg/1200/600"
-                    }
-                }
-            },
-            "title": "Lorum ipsum",
+            "title": "Lorum ipsum dolor sit amet",
             "tags": ["Label one", "Label two"]
         }
     ],

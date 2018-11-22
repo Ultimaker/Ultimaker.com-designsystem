@@ -66,6 +66,7 @@ exports[`Storyshots Molecules|layout/cards Card 1`] = `
     >
       <article
         class="card"
+        tabindex="0"
       >
         <div
           class="card__visual"
@@ -132,8 +133,6 @@ exports[`Storyshots Molecules|layout/cards Card 1`] = `
               content link
             </span>
           </a>
-           
-          <!---->
         </div>
       </article>
     </section>

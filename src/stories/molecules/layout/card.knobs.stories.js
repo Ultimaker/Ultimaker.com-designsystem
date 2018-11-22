@@ -7,5 +7,5 @@ export default () => ({
     title: text('Card - Title', data.card.title),
     description: text('Card - Description', data.card.description),
     contentLink: object('Card - Link', data.card.contentLink),
-    labels: data.card.labels.map((label, i) => text(`Card - Label ${i}`, label))
+    tags: data.card.tags.map((tag, i) => text(`Card - tag ${i}`, tag))
 });

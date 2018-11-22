@@ -45,23 +45,10 @@ $materialCardMobileMarginBottom: $buildingUnit;
     @extend %reset-list;
 }
 
-.materials__card {
-    border: 1px solid $colorGrayLight;
-    .card__headline {
-        margin-bottom: $buildingUnit;
-    }
+.material-list__item {
+    height: 100%;
+    display: flex;
 
-    .card__visual {
-        margin: 0 auto;
-
-        @include min-mobile-xl {
-            margin: 0 auto;
-        }
-    }
-
-    .card__content {
-       padding: $buildingUnit;
-    }
 }
 
 .material-list__button {

@@ -8,7 +8,7 @@
                          v-for="(material, index) in materials"
                          v-if="index < showMax">
                         <li class="material-list__item">
-                            <card :card="material" block="materials" ref="visible" :position="index + 1"></card>
+                            <material-card :card="material" block="materials" ref="visible" :position="index + 1"></material-card>
                         </li>
                     </div>
                     <template v-if="materials.length > showMax && !showHiddenItems">
@@ -31,7 +31,7 @@
                          :key="index"
                          :data-index="index">
                         <li class="material-list__item">
-                            <card :card="material" block="materials"></card>
+                            <material-card :card="material" block="materials"></material-card>
                         </li>
                     </div>
                 </transition-group>
