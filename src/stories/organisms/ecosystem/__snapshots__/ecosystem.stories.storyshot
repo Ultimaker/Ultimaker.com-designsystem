@@ -27,6 +27,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
           >
             <article
               class="card ecosystem__card"
+              tabindex="0"
             >
               <div
                 class="card__visual"
@@ -63,12 +64,11 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                     Learn more
                   </span>
                 </a>
-                 
-                <!---->
               </div>
             </article>
             <article
               class="card ecosystem__card"
+              tabindex="0"
             >
               <div
                 class="card__visual"
@@ -105,12 +105,11 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                     Learn more
                   </span>
                 </a>
-                 
-                <!---->
               </div>
             </article>
             <article
               class="card ecosystem__card"
+              tabindex="0"
             >
               <div
                 class="card__visual"
@@ -147,12 +146,11 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                     Learn more
                   </span>
                 </a>
-                 
-                <!---->
               </div>
             </article>
             <article
               class="card ecosystem__card"
+              tabindex="0"
             >
               <div
                 class="card__visual"
@@ -189,8 +187,6 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                     Learn more
                   </span>
                 </a>
-                 
-                <!---->
               </div>
             </article>
           </div>

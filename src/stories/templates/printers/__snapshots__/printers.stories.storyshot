@@ -634,6 +634,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 >
                   <article
                     class="card examples__card"
+                    tabindex="0"
                   >
                     <div
                       class="card__visual"
@@ -700,8 +701,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                           Content-link
                         </span>
                       </a>
-                       
-                      <!---->
                     </div>
                   </article>
                 </div>
@@ -710,6 +709,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 >
                   <article
                     class="card examples__card"
+                    tabindex="0"
                   >
                     <div
                       class="card__visual"
@@ -776,8 +776,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                           Content-link
                         </span>
                       </a>
-                       
-                      <!---->
                     </div>
                   </article>
                 </div>
@@ -786,6 +784,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 >
                   <article
                     class="card examples__card"
+                    tabindex="0"
                   >
                     <div
                       class="card__visual"
@@ -852,8 +851,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                           Content-link
                         </span>
                       </a>
-                       
-                      <!---->
                     </div>
                   </article>
                 </div>
@@ -1187,6 +1184,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
             >
               <article
                 class="card ecosystem__card"
+                tabindex="0"
               >
                 <div
                   class="card__visual"
@@ -1223,12 +1221,11 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       Learn more
                     </span>
                   </a>
-                   
-                  <!---->
                 </div>
               </article>
               <article
                 class="card ecosystem__card"
+                tabindex="0"
               >
                 <div
                   class="card__visual"
@@ -1265,12 +1262,11 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       Learn more
                     </span>
                   </a>
-                   
-                  <!---->
                 </div>
               </article>
               <article
                 class="card ecosystem__card"
+                tabindex="0"
               >
                 <div
                   class="card__visual"
@@ -1307,12 +1303,11 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       Learn more
                     </span>
                   </a>
-                   
-                  <!---->
                 </div>
               </article>
               <article
                 class="card ecosystem__card"
+                tabindex="0"
               >
                 <div
                   class="card__visual"
@@ -1349,8 +1344,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       Learn more
                     </span>
                   </a>
-                   
-                  <!---->
                 </div>
               </article>
             </div>

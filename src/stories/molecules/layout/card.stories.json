@@ -17,6 +17,6 @@
             "href": "#",
             "text": "content link"
         },
-        "labels": ["Label one", "Label two"]
+        "tags": ["Label one", "Label two"]
     }
 }

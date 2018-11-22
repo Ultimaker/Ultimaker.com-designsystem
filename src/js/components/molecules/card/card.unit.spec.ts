@@ -58,9 +58,7 @@ describe('components', (): void => {
                 it('should render a link if specified', () => {
                     expect(link).toBeTruthy();
                 });
-                it('should render a tag list if specified', () => {
-                    expect(taglist).toBeTruthy();
-                });
+
                 vm.$destroy();
             });
         });
