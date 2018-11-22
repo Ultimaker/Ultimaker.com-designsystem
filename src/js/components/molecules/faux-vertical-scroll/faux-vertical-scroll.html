@@ -1,14 +1,6 @@
-<div class="faux-vertical-scroll" ref="container"
-     @touchstart="touchstart"
-     @touchmove="touchmove"
-     @touchend="touchend"
-     @mousedown="mousedown"
-     @mouseup="mouseup"
-     @click="click"
-     @mousemove="mousemove"
->
+<div class="faux-vertical-scroll" ref="container">
     <div class="faux-vertical-scroll__content" ref="content">
         <slot></slot>
     </div>
-    <div class="faux-vertical-scroll__bar" ref="bar" :style="barStyle"></div>
+    <div class="faux-vertical-scroll__bar" ref="bar" :style="barStyle()"></div>
 </div>

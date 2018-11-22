@@ -1,9 +1,9 @@
-<nav aria-label="sub items" class="sub-nav sub-nav--fixed" :class="classObject" v-if="page">
-    <faux-scroll>
+<nav aria-label="sub items" class="sub-nav sub-nav--fixed" ref="subNav" v-if="page">
+    <faux-vertical-scroll>
         <ul class="sub-nav__list" role="presentation"  v-if="page.links && page.links.siblings && page.links.siblings.length">
-            <li class="sub-nav__item" v-for="sibling in page.links.siblings">
-                <router-link class="sub-nav__link" :to="mapLink(sibling.href)" active-class="sub-nav__link--active">
-                    <responsive-picture class="sub-nav__image" v-if="sibling.icon"
+            <li class="sub-nav__item" v-for="sibling in page.links.siblings" ref="listItems">
+                <router-link class="sub-nav__link" :to="mapLink(sibling.href)" ref="links" active-class="sub-nav__link--active">
+                    <responsive-picture class="sub-nav__image" v-if="sibling.icon" ref="images"
                         :desktop-width="sibling.icon.thumbsquare_desktop"
                         :mobile-width="sibling.icon.thumbsquare_mobile">
                     </responsive-picture>
@@ -11,5 +11,5 @@
                 </router-link>
             </li>
         </ul>
-    </faux-scroll>
+    </faux-vertical-scroll>
 </nav>
