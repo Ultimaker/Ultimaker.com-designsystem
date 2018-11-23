@@ -47,7 +47,7 @@ describe('components', () => {
                     }),
                     objAttributes = vm.$el.attributes;
 
-                expect(objAttributes['to'].value).toEqual('http://link-to-somewhere.com');
+                expect(objAttributes['href'].value).toMatch(/http/);
                 vm.$destroy();
             });
 
