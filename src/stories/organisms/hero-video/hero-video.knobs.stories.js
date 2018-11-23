@@ -5,9 +5,9 @@ import {responsiveImage} from '../../helpers/images';
 
 export default () => ({
     heroVideo: {
-        title: text('Hero - title', data.title),
-        description: text('Hero - description', data.description),
-        heroImage: responsiveImage('Hero - image', data.heroImage),
-        videoId: text('Hero - youtube id', data.videoId)
+        title: text('Hero-video - title', data.title),
+        description: text('Hero-video - description', data.description),
+        heroImage: responsiveImage('Hero-video - image', data.heroImage),
+        videoId: text('Hero-video - youtube id', data.videoId)
     }
 });

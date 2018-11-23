@@ -1,47 +1,45 @@
-.hero__video {
+.hero--video {
     @extend .organism;
     @extend %reset-last-margin;
     position: relative;
 
-    &--reset p:last-child {
+    &-reset p:last-child {
         margin-bottom: 0;
     }
 
-    .hero__headline,
-    .copy--intro {
-       color: $colorWhite;
+    .copy--intro,
+    .link--large {
+        color: $colorWhite;
     }
 
-    .hero__image {
-        &--full {
-            @include object-fit(cover);
-        }
-        &-overlay {
-            background-color: $colorOverlayImage;
-        }
-        &--full,
-        &-overlay {
-            display: block;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            min-height: 320px;
-
-            @include min-mobile-xl {
-                height: 100%;
-            }
-        }
+    .link--large {
+        margin: 0;
     }
 
-    .case__link {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
+}
 
-        .icon.icon-button__icon.icon--play-video {
-            left: 0;
-        };
+.hero-video__headline {
+    color: $colorWhite;
+}
+
+.hero-video__image--full {
+    @include object-fit(cover);   
+}
+
+.hero-video__image--overlay {
+    background-color: $colorOverlayImage;
+}
+
+.hero-video__image--full,
+.hero-video__image-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+
+    @include min-mobile-xl {
+        height: 100%;
     }
 }

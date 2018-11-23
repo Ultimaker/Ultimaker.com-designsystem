@@ -1,15 +1,11 @@
-<article class="hero hero__video">
-    <responsive-picture v-bind="heroImage" imgClass="hero__image--full"></responsive-picture>
-    <div class="hero__image-overlay"></div>
+<article class="hero hero--video">
+    <responsive-picture v-bind="heroImage" imgClass="hero-video__image--full"></responsive-picture>
+    <div class="hero-video__image--overlay"></div>
     <section class="container">
-        <div class="flexgrid__cell--xs-6 hero__video--reset">
-            <h1 class="hero__headline">{{ title }}</h1>
+        <div class="flexgrid__cell--xs-6 hero--video-reset">
+            <h1 class="hero-video__headline">{{ title }}</h1>
             <p class="copy--intro">{{ description }}</p>
-            <template v-if="videoId != '' ">
-                <figcaption>
-                    <icon-button @click="toggleVideo" button-class="case__link icon-button--underline-large" icon-name="play-video">Play video</icon-button>
-                </figcaption>
-            </template>
+            <content-link v-if="videoId != '' " icon="play-video" class="link--large" @click.native="toggleVideo">Play Video</content-link>
         </div>
     </section>
     <modal class="modal--video" v-if="showVideo" @close="toggleVideo">

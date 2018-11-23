@@ -7,10 +7,10 @@ import { IHeroVideoProps } from './hero-video.models';
 })
 
 export default class HeroVideo extends Vue implements IHeroVideoProps {
-    @Prop({ type: String, required: true, default: '' }) title!: string;
-    @Prop({ type: String, required: true, default: '' }) description!: string;
-    @Prop({ type: Object, required: true, default: {} }) heroImage!: object;
-    @Prop({ type: String, required: true, default: '' }) videoId!: string;
+    @Prop({ type: String, required: true }) title!: string;
+    @Prop({ type: String, required: true }) description!: string;
+    @Prop({ type: Object, required: true }) heroImage!: object;
+    @Prop({ type: String, required: true }) videoId!: string;
 
     showVideo: boolean = false;
 
