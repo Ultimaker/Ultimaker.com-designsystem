@@ -1,4 +1,3 @@
-<div>
-    <h2>this is a tab</h2>
+<div :id="id" class="tabs__content" v-show="visible" role="tabpanel" :aria-hidden="!visible" :aria-label="title">
     <slot></slot>
 </div>
