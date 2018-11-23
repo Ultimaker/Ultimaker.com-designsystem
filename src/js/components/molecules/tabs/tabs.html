@@ -1,4 +1,18 @@
-<div>
-    <h2>tabs</h2>
-    <slot></slot>
+<div class="tabs">
+    <div class="tabs__nav">
+        <faux-scroll>
+            <ul class="tabs__list" role="tablist">
+                <li  class="tabs__list_item" v-for="(tab, index) in tabs" role="presentation">
+                    <a class="tabs__list_link"  @click="activeTab = index" :href="'#' + tab.id"
+                       role="tab" aria-controls="tab.id" aria-selected="activeTab === index">
+                        {{ tab.title }}
+                    </a>
+                </li>
+            </ul>
+        </faux-scroll>
+    </div>
+
+    <div class="tabs__contents">
+        <slot></slot>
+    </div>
 </div>
