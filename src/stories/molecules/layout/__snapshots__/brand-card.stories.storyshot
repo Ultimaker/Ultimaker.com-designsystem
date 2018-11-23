@@ -157,7 +157,6 @@ exports[`Storyshots Molecules|layout/cards Reseller card 1`] = `
         rel="noopener"
         tabindex="0"
         target="_blank"
-        to="https://lipsum.com"
       >
         <div
           class="reseller-card__header"
