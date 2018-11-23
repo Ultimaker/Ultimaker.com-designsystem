@@ -1,0 +1,22 @@
+{
+    "title": "Lorum ipsum dolor sit amet consectetuer",
+    "description": "Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.",
+    "heroImage": {
+        "mobileWidth": {
+            "url": "/generator/svg/1000/500"
+        },
+        "tabletWidth": {
+            "url": "/generator/svg/1200/400",
+            "retina": {
+                "url": "/generator/svg/2400/800"
+            }
+        },
+        "desktopHdWidth": {
+            "url": "/generator/svg/1500/400",
+            "retina": {
+                "url": "/generator/svg/3000/800"
+            }
+        }
+    },
+    "videoId": "w5Fgp-KihIA"
+}
