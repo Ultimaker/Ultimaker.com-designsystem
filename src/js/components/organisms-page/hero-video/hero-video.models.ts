@@ -1,6 +1,6 @@
 export interface IHeroVideoProps {
     title: string;
-    description: string;
+    description?: string;
     heroImage: object;
-    videoId: string;
+    videoId?: string;
 }
