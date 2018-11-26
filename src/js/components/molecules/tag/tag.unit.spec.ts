@@ -8,7 +8,7 @@ describe('components', () => {
             const mount = build(Tag);
 
             it('should load template and render default contents', (): void => {
-                const vm = mount({ props: { tag: {title: 'Narwals'} } });
+                const vm = mount({ props: { tag: { title: 'Narwals' } } });
                 const tag: HTMLElement = vm.$el;
 
                 expect(tag.nodeName).toEqual('LABEL');
