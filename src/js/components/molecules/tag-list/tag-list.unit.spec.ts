@@ -8,7 +8,7 @@ describe('components', () => {
             const mount = build(TagList);
 
             it('should load template and render default contents', () => {
-                const tags: object[] = [{title: 'Narwals'}];
+                const tags: object[] = [{ title: 'Narwals' }];
 
                 const vm = mount({ props: { tags } });
                 const taglist: HTMLElement = vm.$el;

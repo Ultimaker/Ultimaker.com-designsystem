@@ -13,11 +13,11 @@ import { IMaterialProps, IMaterials, IMaterialTranslations } from './material.mo
 })
 
 export default class Materials extends Vue implements IMaterialProps {
-    @Prop({ type: String, required: true, default: '' })
+    @Prop({ type: String, required: true })
         title!: string;
-    @Prop({ type: Array, required: true, default: [] })
+    @Prop({ type: Array, required: true })
         materials!:  IMaterials;
-    @Prop({ type: Object, required: true, default: { showAll: '' } })
+    @Prop({ type: Object, required: true })
         labels!: IMaterialTranslations;
 
     cardTransitionDuration: number = Defaults.defaultDuration;
