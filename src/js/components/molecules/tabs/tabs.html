@@ -2,12 +2,13 @@
     <div class="tabs__nav">
         <faux-scroll>
             <ul class="tabs__list" role="tablist">
-                <li  class="tabs__list_item" v-for="(tab, index) in tabs" role="presentation">
-                    <a class="tabs__list_link"  @click="activeTab = index" :href="'#' + tab.id"
-                       role="tab" aria-controls="tab.id" aria-selected="activeTab === index">
+                <li class="tabs__list_item" v-for="(tab, index) in tabs" role="presentation" ref="tab">
+                    <a class="tabs__list_link" :class="getLinkClassList(index)" @click.prevent="activeTab = index" :href="'#' + tab.id"
+                       role="tab" :aria-controls="tab.id" :aria-selected="activeTab === index">
                         {{ tab.title }}
                     </a>
                 </li>
+                <li class="tabs__indicator" aria-hidden="true" role="none" ref="indicator"></li>
             </ul>
         </faux-scroll>
     </div>
