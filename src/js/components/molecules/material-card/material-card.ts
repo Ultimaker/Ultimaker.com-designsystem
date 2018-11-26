@@ -8,6 +8,6 @@ import { IMaterialCardProps, IMaterialCard } from './material-card.models';
 })
 
 export default class MaterialCard extends Vue implements IMaterialCardProps{
-    @Prop({ type: Object, required: true, default: {} })
+    @Prop({ type: Object, required: true })
         card!: IMaterialCard;
 }

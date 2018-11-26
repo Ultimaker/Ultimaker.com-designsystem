@@ -1,12 +1,11 @@
 {
     "card": {
         "title": "Title",
-        "contentLink": {
-            "styleModifier": "",
-            "text": "Learn More",
-            "href": "/test"
-        },
+        "slug":  "/test",
         "image": "jadajada",
-        "tags": ["Tag one", "Tag Narwal"]
+        "tags": [
+            {"title": "Tag one"},
+            {"title": "Tag Narwal"}
+        ]
     }
 }

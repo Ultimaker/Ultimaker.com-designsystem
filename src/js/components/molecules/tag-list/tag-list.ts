@@ -8,6 +8,6 @@ import { ITags, ITaglistProps } from './tag-list.models';
 })
 
 export default class TagList extends Vue implements ITaglistProps {
-    @Prop({ type: Array, required: true, default: [] })
+    @Prop({ type: Array, required: true })
         tags!: ITags;
 }

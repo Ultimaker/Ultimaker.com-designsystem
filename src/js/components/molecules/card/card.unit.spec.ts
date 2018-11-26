@@ -2,18 +2,17 @@
 import Card from './card';
 import { build } from 'vuenit';
 
-describe('components', (): void => {
-    describe('molecules', (): void => {
-        describe('card', (): void => {
+describe('components', () => {
+    describe('molecules', () => {
+        describe('card', () => {
             const fixture = require('./card.unit.spec.json');
             const mount = build(Card, {});
 
             describe('defaults', () => {
-                it('should have empty properties by default', () => {
+                it('should have no empty properties by default', () => {
                     const vm = mount({});
 
-                    expect(vm.card).toEqual({});
-                    expect(vm.block).toBeDefined();
+                    expect(vm.card).toBeUndefined();
 
                     vm.$destroy();
                 });

@@ -2,19 +2,17 @@
 import MaterialCard from './material-card';
 import { build } from 'vuenit';
 
-describe('components', (): void => {
-    describe('molecules', (): void => {
-        describe('material-card', (): void => {
+describe('components', () => {
+    describe('molecules', () => {
+        describe('material-card', () => {
             const fixture = require('./material-card.unit.spec.json');
             const mount = build(MaterialCard, {});
 
             describe('defaults', () => {
-                it('should have empty properties by default', () => {
+                it('should have no empty properties by default', () => {
                     const vm = mount({});
 
-                    console.log(vm);
-
-                    expect(vm.card).toEqual({});
+                    expect(vm.card).toBeUndefined();
 
                     vm.$destroy();
                 });
@@ -34,7 +32,6 @@ describe('components', (): void => {
                 const content = card.querySelector('.materials-card__content');
                 const title = card.querySelector('.materials-card__headline');
                 const description = card.querySelector('.materials-card__description');
-                const link = card.querySelector('.materials-card__link');
                 const taglist = card.querySelector('.materials-card__taglist');
 
                 it('should render a "card" molecule', () => {

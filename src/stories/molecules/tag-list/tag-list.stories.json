@@ -1,3 +1,7 @@
 {
-    "tags": ["Label one", "Label two", "Label extra long"]
+    "tags": [
+        {"title": "Label one"},
+        {"title": "Label two"},
+        {"title": "Label extra long"}
+    ]
 }

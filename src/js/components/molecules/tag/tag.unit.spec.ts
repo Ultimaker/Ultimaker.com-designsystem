@@ -2,13 +2,13 @@
 import Tag from './tag';
 import { build } from 'vuenit';
 
-describe('components', (): void => {
-    describe('molecules', (): void => {
-        describe('tag', (): void => {
+describe('components', () => {
+    describe('molecules', () => {
+        describe('tag', () => {
             const mount = build(Tag);
 
             it('should load template and render default contents', (): void => {
-                const vm = mount({ props: { tag: 'Narwals' } });
+                const vm = mount({ props: { tag: {title: 'Narwals'} } });
                 const tag: HTMLElement = vm.$el;
 
                 expect(tag.nodeName).toEqual('LABEL');

@@ -65,7 +65,7 @@ exports[`Storyshots Molecules|layout/cards Card 1`] = `
       class="story__molecule"
     >
       <article
-        class="card"
+        class="card undefined__card"
         tabindex="0"
       >
         <div

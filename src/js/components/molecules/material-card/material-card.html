@@ -1,9 +1,9 @@
- <content-link :href="card.href" :to="card.href"
-   class="materials-card"
-   tabindex="0"
-   mod="reversed"
-   role="link"
-   aria-describedby="material">
+ <content-link :href="card.slug"
+               class="materials-card"
+               tabindex="0"
+               mod="reversed"
+               role="link"
+               aria-describedby="material">
         <article class="materials-card__article">
             <div class="materials-card__visual">
                 <template v-if="card.image">

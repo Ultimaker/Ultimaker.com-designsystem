@@ -7,6 +7,6 @@ import { ITagProps, ITag } from './tag.models';
 })
 
 export default class Tag extends Vue implements ITagProps {
-    @Prop({ type: String, required: true, default: '' })
+    @Prop({ type: Object, required: true })
         tag!: ITag['tag'];
 }
