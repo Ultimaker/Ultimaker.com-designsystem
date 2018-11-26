@@ -1,3 +1,3 @@
-export interface ITabs {
-    defaultTab: Number;
-};
+import Tabs from './tabs';
+
+export default Tabs;

@@ -21,6 +21,7 @@
 
         display: flex;
         padding: ($buildingUnit * 2) 0 1px;
+        border-bottom: 2px solid $colorGrayLight;
     }
 
     &__list_item {
@@ -72,5 +73,16 @@
         &:focus:not(:active) {
             @extend %focus-outline;
         }
+    }
+
+    &__indicator {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        left: 0; right: 0;
+        bottom: 0;
+
+        height: 2px; width: 100%;
+        background-color: $colorBlack;
     }
 }
