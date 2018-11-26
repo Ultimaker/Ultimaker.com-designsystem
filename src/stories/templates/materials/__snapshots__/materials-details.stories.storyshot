@@ -424,6 +424,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
               >
                 <article
                   class="card examples__card"
+                  tabindex="0"
                 >
                   <div
                     class="card__visual"
@@ -498,6 +499,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
               >
                 <article
                   class="card examples__card"
+                  tabindex="0"
                 >
                   <div
                     class="card__visual"
@@ -572,6 +574,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
               >
                 <article
                   class="card examples__card"
+                  tabindex="0"
                 >
                   <div
                     class="card__visual"
