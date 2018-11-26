@@ -11,6 +11,14 @@ describe('components', () => {
 
                 expect(vm).toBeDefined();
             });
+
+            it('should be able to change the visibility', () => {
+                const vm = mount();
+
+                expect(vm.visible).toBeTruthy();
+                vm.setVisible(false);
+                expect(vm.visible).not.toBeTruthy();
+            });
         });
     });
 });
