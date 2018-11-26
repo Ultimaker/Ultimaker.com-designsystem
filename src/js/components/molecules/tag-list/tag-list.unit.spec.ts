@@ -2,13 +2,13 @@
 import TagList from './tag-list';
 import { build } from 'vuenit';
 
-describe('components', (): void => {
-    describe('molecules', (): void => {
-        describe('tag-list', (): void => {
+describe('components', () => {
+    describe('molecules', () => {
+        describe('tag-list', () => {
             const mount = build(TagList);
 
-            it('should load template and render default contents', (): void => {
-                const tags: string[] = ['Narwals'];
+            it('should load template and render default contents', () => {
+                const tags: object[] = [{title: 'Narwals'}];
 
                 const vm = mount({ props: { tags } });
                 const taglist: HTMLElement = vm.$el;

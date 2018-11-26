@@ -1,5 +1,9 @@
+export interface ITagTitle extends Object {
+    title: string;
+}
+
 export interface ITag {
-    tag: string;
+    tag: ITagTitle;
 }
 
 export interface ITagProps extends ITag {}

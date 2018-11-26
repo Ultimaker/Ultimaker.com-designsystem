@@ -1,5 +1,8 @@
 {
-    "title": "Lorum ipsum dolor sit amet dolor sit amet consectetue",
+
+ "link": {
+    "href": "/material/pla"
+ }  , "title": "Lorum ipsum dolor sit amet dolor sit amet consectetue",
     "materials": [
         {
             "image": {
@@ -13,8 +16,11 @@
                     }
                 }
             },
+            "slug": "ultimaker-pla",
             "title": "Lorum ipsum dolor sit amet",
-            "tags": ["Label one", "Label two", "Label one", "Label two", "Label one", "Label two", "Label one", "Label two"]
+            "tags": [{
+                "title": "Tag one"
+            }]
         },
         {
             "image": {
@@ -28,8 +34,13 @@
                     }
                 }
             },
+            "slug": "ultimaker-pla",
             "title": "Lorum ipsum dolor sit amet",
-            "tags": ["Label one", "Label two"]
+            "tags": [{
+                "title": "Tag one"
+            }, {
+                "title": "Tag two"
+            }]
         },
         {
             "image": {
@@ -43,8 +54,13 @@
                     }
                 }
             },
+            "slug": "ultimaker-pla",
             "title": "Lorum ipsum dolor sit amet",
-            "tags": ["Label one", "Label two"]
+            "tags": [{
+                "title": "Tag one"
+            }, {
+                "title": "Tag two"
+            }]
         },
         {
             "image": {
@@ -58,8 +74,13 @@
                     }
                 }
             },
+            "slug": "ultimaker-pla",
             "title": "Lorum ipsum dolor sit amet",
-            "tags": ["Label one", "Label two"]
+            "tags": [{
+                "title": "Tag one"
+            }, {
+                "title": "Tag two"
+            }]
         },
         {
             "image": {
@@ -73,8 +94,13 @@
                     }
                 }
             },
+            "slug": "ultimaker-pla",
             "title": "Lorum ipsum dolor sit amet",
-            "tags": ["Label one", "Label two"]
+            "tags": [{
+                "title": "Tag one"
+            }, {
+                "title": "Tag two"
+            }]
         },
         {
             "image": {
@@ -88,8 +114,13 @@
                     }
                 }
             },
+            "slug": "ultimaker-pla",
             "title": "Lorum ipsum dolor sit amet",
-            "tags": ["Label one", "Label two"]
+            "tags": [{
+                "title": "Tag one"
+            }, {
+                "title": "Tag two"
+            }]
         },
         {
             "image": {
@@ -103,8 +134,13 @@
                     }
                 }
             },
+            "slug": "ultimaker-pla",
             "title": "Lorum ipsum dolor sit amet",
-            "tags": ["Label one", "Label two"]
+            "tags": [{
+                "title": "Tag one"
+            }, {
+                "title": "Tag two"
+            }]
         },
         {
             "image": {
@@ -118,8 +154,13 @@
                     }
                 }
             },
+            "slug": "ultimaker-pla",
             "title": "Lorum ipsum dolor sit amet",
-            "tags": ["Label one", "Label two"]
+            "tags": [{
+                "title": "Tag one"
+            }, {
+                "title": "Tag two"
+            }]
         }
     ],
     "labels": {

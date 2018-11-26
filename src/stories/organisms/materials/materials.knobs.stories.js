@@ -11,7 +11,11 @@ export default () => ({
         materials: data.materials.map((material, i) => ({
             image: responsiveImage(`Material card - image ${i+1}`, material.image),
             title: text(`Material card - Title ${i+1}`, material.title),
-            tags: material.tags.map((tag, index) => text(`Material card - tag ${i+1}-${index+1}`, tag))
+            tags: material.tags.map((tag, index) => {
+                return {
+                    title: text(`Material card - tag ${i+1}-${index+1}`, tag.title)
+                };
+            })
         }))
     }
 });
