@@ -1,10 +1,31 @@
 .ecosystem {
     @extend .organism;
+    @extend %reset-last-margin;
 }
 
 .ecosystem__items {
     display: flex;
     flex-flow: column nowrap;
+    margin-bottom: $buildingUnit * 5;
+}
+
+.ecosystem__title,
+.ecosystem__video {
+    text-align: left;
+
+    @include min-mobile-xl() {
+        text-align: center;
+    }
+}
+
+.ecosystem__video {
+    .link--large {
+        margin-bottom: 0;
+    }
+}
+
+.ecosystem--reset div:last-child {
+    margin-bottom: 0;
 }
 
 .ecosystem__card {

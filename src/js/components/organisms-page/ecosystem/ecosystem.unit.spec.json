@@ -1,0 +1,52 @@
+{
+    "properties" : {
+        "title": "Lorem ipsum dolor sit amet",
+        "items": [
+            {
+                "icon": {
+                    "iconName": "dual-extrusion"
+                },
+                "title": "Lorem ipsum dolor sit amet",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.",
+                "contentLink": {
+                    "text": "Learn More",
+                    "href": "#"
+                }
+            },
+            {
+                "icon": {
+                    "iconName": "cura"
+                },
+                "title": "Lorem ipsum dolor sit amet",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.",
+                "contentLink": {
+                    "text": "Learn More",
+                    "href": "/#"
+                }
+            },
+            {
+                "icon": {
+                    "iconName": "material"
+                },
+                "title": "Lorem ipsum dolor sit amet",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.",
+                "contentLink": {
+                    "text": "Learn More",
+                    "href": "/#"
+                }
+            },
+            {
+                "icon": {
+                    "iconName": "support"
+                },
+                "title": "Lorem ipsum dolor sit amet",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.",
+                "contentLink": {
+                    "text": "Learn More",
+                    "href": "/#"
+                }
+            }
+        ],
+        "videoId": "w5Fgp-KihIA"
+    }
+}
