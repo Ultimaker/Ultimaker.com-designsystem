@@ -8,7 +8,8 @@
             "title": "Lorem ipsum dolor sit amet",
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.",
             "contentLink": {
-                "text": "Learn more"
+                "text": "Learn more",
+                "href": "#"
             }
         },
         {
@@ -16,9 +17,10 @@
                 "iconName": "cura"
             },
             "title": "Lorem ipsum dolor sit amet",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt error, aut velit sequi nemo aspernatur libero perferendis magni",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.",
             "contentLink": {
-                "text": "Learn more"
+                "text": "Learn more",
+                "href": "#"
             }
         },
         {
@@ -26,9 +28,10 @@
                 "iconName": "material"
             },
             "title": "Lorem ipsum dolor sit amet",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque repellat in fugit eum minus dolorum deleniti,",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.",
             "contentLink": {
-                "text": "Learn more"
+                "text": "Learn more",
+                "href": "#"
             }
         },
         {
@@ -36,10 +39,12 @@
                 "iconName": "support"
             },
             "title": "Lorem ipsum dolor sit amet",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum aliquid fugit assumenda, sit rem recusandae illum dicta",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.",
             "contentLink": {
-                "text": "Learn more"
+                "text": "Learn more",
+                "href": "#"
             }
         }
-    ]
+    ],
+    "videoId": "w5Fgp-KihIA"
 }

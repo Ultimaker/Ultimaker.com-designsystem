@@ -15,7 +15,8 @@ export default () => ({
             title: text(`Examples - cards ${i+1} title`, card.title),
             description: text(`Examples - cards ${i+1} description`, card.description),
             contentLink: {
-                text: text(`Examples - cards ${i+1} content link`, card.contentLink.text)
+                text: text(`Examples - cards ${i+1} content link text`, card.contentLink.text),
+                href: text(`Examples - cards ${i+1} content link href`, card.contentLink.href)
             },
             image: responsiveImage(`Examples - cards ${i+1}`, card.image)
         }))

@@ -690,8 +690,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       </p>
                        
                       <a
-                        class="link card__link router-link-exact-active router-link-active card__link"
-                        href="#/"
+                        class="link card__link card__link"
+                        href="#/#"
                       >
                         <!---->
                          
@@ -765,8 +765,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       </p>
                        
                       <a
-                        class="link card__link router-link-exact-active router-link-active card__link"
-                        href="#/"
+                        class="link card__link card__link"
+                        href="#/#"
                       >
                         <!---->
                          
@@ -840,8 +840,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       </p>
                        
                       <a
-                        class="link card__link router-link-exact-active router-link-active card__link"
-                        href="#/"
+                        class="link card__link card__link"
+                        href="#/#"
                       >
                         <!---->
                          
@@ -1171,7 +1171,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
           class="ecosystem"
         >
           <section
-            class="container"
+            class="container ecosystem--reset"
           >
             <h2
               class="ecosystem__title"
@@ -1210,8 +1210,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   </p>
                    
                   <a
-                    class="link card__link router-link-exact-active router-link-active card__link"
-                    href="#/"
+                    class="link card__link card__link"
+                    href="#/#"
                   >
                     <!---->
                      
@@ -1247,12 +1247,12 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   <p
                     class="card__description"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt error, aut velit sequi nemo aspernatur libero perferendis magni
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
                   </p>
                    
                   <a
-                    class="link card__link router-link-exact-active router-link-active card__link"
-                    href="#/"
+                    class="link card__link card__link"
+                    href="#/#"
                   >
                     <!---->
                      
@@ -1288,12 +1288,12 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   <p
                     class="card__description"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque repellat in fugit eum minus dolorum deleniti,
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
                   </p>
                    
                   <a
-                    class="link card__link router-link-exact-active router-link-active card__link"
-                    href="#/"
+                    class="link card__link card__link"
+                    href="#/#"
                   >
                     <!---->
                      
@@ -1329,12 +1329,12 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   <p
                     class="card__description"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum aliquid fugit assumenda, sit rem recusandae illum dicta
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
                   </p>
                    
                   <a
-                    class="link card__link router-link-exact-active router-link-active card__link"
-                    href="#/"
+                    class="link card__link card__link"
+                    href="#/#"
                   >
                     <!---->
                      
@@ -1347,7 +1347,26 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 </div>
               </article>
             </div>
+             
+            <div
+              class="ecosystem__video"
+            >
+              <a
+                class="link link--large router-link-exact-active router-link-active link--icon"
+                href="#/"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  Play video
+                </span>
+              </a>
+            </div>
           </section>
+           
+          <!---->
         </article>
          
         <article
