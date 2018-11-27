@@ -5,7 +5,7 @@
             <card v-for="(item, index) in items" :key="index" :card="item" :block="'ecosystem'"></card>
         </div>
         <div class="ecosystem__video" v-if="videoId">
-            <content-link icon="play-video" class="link--large" @click.native="toggleVideo">Play Video</content-link>
+            <content-link icon="play-video" class="link--large" @click.native="toggleVideo">Play video</content-link>
         </div>
     </section>
     <modal class="modal--video" v-if="showVideo" @close="toggleVideo">

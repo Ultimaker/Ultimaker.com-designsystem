@@ -61,7 +61,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                   <span
                     class="link__underline"
                   >
-                    Learn More
+                    Learn more
                   </span>
                 </a>
               </div>
@@ -102,7 +102,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                   <span
                     class="link__underline"
                   >
-                    Learn More
+                    Learn more
                   </span>
                 </a>
               </div>
@@ -143,7 +143,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                   <span
                     class="link__underline"
                   >
-                    Learn More
+                    Learn more
                   </span>
                 </a>
               </div>
@@ -184,7 +184,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                   <span
                     class="link__underline"
                   >
-                    Learn More
+                    Learn more
                   </span>
                 </a>
               </div>
@@ -203,7 +203,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
               <span
                 class="link__underline"
               >
-                Play Video
+                Play video
               </span>
             </a>
           </div>
