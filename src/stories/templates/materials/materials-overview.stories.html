@@ -1,8 +1,6 @@
 <main class="story__template">
-    <hero-product v-bind="heroProduct"></hero-product>
-    <ubr v-bind="ubr"></ubr>
-    <examples v-bind="examples"></examples>
-    <colors v-bind="colors"></colors>
+    <sub-nav v-bind="page"></sub-nav>
+    <hero-video v-bind="heroVideo"></hero-video>
     <footer-content :minorNav="minorNav"
                     :globalLabels="globalLabels"
                     :legalNav="legalNav"
