@@ -34,7 +34,13 @@ export default class FauxVerticalScroll extends Vue {
     }
 
     calculateOffset() {
-        return  (<any>this.$refs.content).scrollWidth - (<any>this.$refs.container).clientWidth;
+        if(this.isMounted &&
+          (<any>this.$refs.content) &&
+          (<any>this.$refs.container)) {
+            return  (<any>this.$refs.content).scrollWidth - (<any>this.$refs.container).clientWidth;
+        }
+
+        return 0
     }
 
     createDraggable () {
