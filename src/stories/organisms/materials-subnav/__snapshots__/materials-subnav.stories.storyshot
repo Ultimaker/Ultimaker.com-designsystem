@@ -238,6 +238,216 @@ exports[`Storyshots organisms|materials/materials-subnav subnav 1`] = `
                   </p>
                 </a>
               </li>
+              <li
+                class="sub-nav__item"
+              >
+                <a
+                  class="sub-nav__link"
+                  href="#/materials/ultimaker-pla"
+                >
+                  <picture
+                    class="sub-nav__image"
+                  >
+                    <!---->
+                     
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset=""
+                    />
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="/generator/svg/60/60"
+                    />
+                     
+                    <img
+                      alt=""
+                      class="img--responsive img--lazy"
+                      src=""
+                    />
+                  </picture>
+                   
+                  <p
+                    class="sub-nav__label"
+                  >
+                    PLA
+                  </p>
+                </a>
+              </li>
+              <li
+                class="sub-nav__item"
+              >
+                <a
+                  class="sub-nav__link"
+                  href="#/materials/ultimaker-abs"
+                >
+                  <picture
+                    class="sub-nav__image"
+                  >
+                    <!---->
+                     
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset=""
+                    />
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="/generator/svg/60/60"
+                    />
+                     
+                    <img
+                      alt=""
+                      class="img--responsive img--lazy"
+                      src=""
+                    />
+                  </picture>
+                   
+                  <p
+                    class="sub-nav__label"
+                  >
+                    ABS
+                  </p>
+                </a>
+              </li>
+              <li
+                class="sub-nav__item"
+              >
+                <a
+                  class="sub-nav__link"
+                  href="#/materials/ultimaker-nylon"
+                >
+                  <picture
+                    class="sub-nav__image"
+                  >
+                    <!---->
+                     
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset=""
+                    />
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="/generator/svg/60/60"
+                    />
+                     
+                    <img
+                      alt=""
+                      class="img--responsive img--lazy"
+                      src=""
+                    />
+                  </picture>
+                   
+                  <p
+                    class="sub-nav__label"
+                  >
+                    Nylon NA
+                  </p>
+                </a>
+              </li>
+              <li
+                class="sub-nav__item"
+              >
+                <a
+                  class="sub-nav__link"
+                  href="#/materials/ultimaker-cpe"
+                >
+                  <picture
+                    class="sub-nav__image"
+                  >
+                    <!---->
+                     
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset=""
+                    />
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="/generator/svg/60/60"
+                    />
+                     
+                    <img
+                      alt=""
+                      class="img--responsive img--lazy"
+                      src=""
+                    />
+                  </picture>
+                   
+                  <p
+                    class="sub-nav__label"
+                  >
+                    CPE NA
+                  </p>
+                </a>
+              </li>
+              <li
+                class="sub-nav__item"
+              >
+                <a
+                  class="sub-nav__link"
+                  href="#/materials/ultimaker-cpe"
+                >
+                  <picture
+                    class="sub-nav__image"
+                  >
+                    <!---->
+                     
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset=""
+                    />
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <!---->
+                     
+                    <source
+                      media="(max-width: 480px)"
+                      srcset="/generator/svg/60/60"
+                    />
+                     
+                    <img
+                      alt=""
+                      class="img--responsive img--lazy"
+                      src=""
+                    />
+                  </picture>
+                   
+                  <p
+                    class="sub-nav__label"
+                  >
+                    CPE+ NA
+                  </p>
+                </a>
+              </li>
             </ul>
           </div>
            
