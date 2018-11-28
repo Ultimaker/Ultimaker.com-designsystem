@@ -3,7 +3,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import { TweenLite, Power3 } from 'gsap';
 import Draggable from 'gsap/Draggable';
-import * as ThrowProps from 'utils/throw-props-plugin';
+import 'utils/throw-props-plugin';
 
 import Defaults from 'constants/defaults';
 import ViewportUtil from 'utils/viewport';
@@ -43,6 +43,20 @@ export default class FauxVerticalScroll extends Vue {
         return 0;
     }
 
+    tweenBar() {
+        const offSet = (<any>this.$refs.container).clientWidth - (<any>this.$refs.content)._gsTransform.x;
+        const contentWidth = (<any>this.$refs.content).scrollWidth;
+        const clientWidth =  (<any>this.$refs.container).clientWidth;
+
+        const percentage = (100 - ((contentWidth - offSet) / contentWidth * 100));
+        const width = percentage * (clientWidth / 100);
+
+        TweenLite.to((<any>this.$refs.bar), this.transitionDuration / 2, {
+            left: offSet === clientWidth ? 0 : (width - this.scale),
+            ease: Power3.easeOut,
+        });
+    }
+
     createDraggable () {
         const { content } = this.$refs;
 
@@ -57,20 +71,9 @@ export default class FauxVerticalScroll extends Vue {
                     min: -this.calculateOffset(),
                 },
             },
-            onThrowComplete: () => {
-
-                const offSet = (<any>this.$refs.container).clientWidth - (<any>this.$refs.content)._gsTransform.x;
-                const contentWidth = (<any>this.$refs.content).scrollWidth;
-                const clientWidth =  (<any>this.$refs.container).clientWidth;
-
-                const percentage = (100 - ((contentWidth - offSet) / contentWidth * 100));
-                const width = percentage * (clientWidth / 100);
-
-                TweenLite.to((<any>this.$refs.bar), this.transitionDuration / 2, {
-                    left: offSet === clientWidth ? 0 : (width - this.scale),
-                    ease: Power3.easeOut,
-                });
-            },
+            onThrowUpdate:() => {
+                this.tweenBar();
+            }
         });
     }
 
