@@ -3,7 +3,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import { TweenLite, Power3 } from 'gsap';
 import Draggable from 'gsap/Draggable';
-import 'utils/throw-props-plugin';
+import * as ThrowProps from 'utils/throw-props-plugin';
 
 import Defaults from 'constants/defaults';
 import ViewportUtil from 'utils/viewport';
@@ -34,13 +34,13 @@ export default class FauxVerticalScroll extends Vue {
     }
 
     calculateOffset() {
-        if(this.isMounted &&
+        if (this.isMounted &&
           (<any>this.$refs.content) &&
           (<any>this.$refs.container)) {
             return  (<any>this.$refs.content).scrollWidth - (<any>this.$refs.container).clientWidth;
         }
 
-        return 0
+        return 0;
     }
 
     createDraggable () {

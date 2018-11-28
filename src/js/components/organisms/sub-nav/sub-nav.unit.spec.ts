@@ -12,19 +12,19 @@ describe('components', () => {
                 links: {
                     siblings: [
                         {
-                            href: "/api/pages/materials/ultimaker-pla",
-                            title: "PLA",
+                            href: '/api/pages/materials/ultimaker-pla',
+                            title: 'PLA',
                             icon: {
-                                thumbsquare_mobile: "/generator/svg/60/60",
-                                thumbsquare_desktop: "/generator/svg/120/120"
-                            }
-                        }
-                    ]
-                }
+                                thumbsquare_mobile: '/generator/svg/60/60',
+                                thumbsquare_desktop: '/generator/svg/120/120',
+                            },
+                        },
+                    ],
+                },
             };
 
             it('should render a subnavigation', async () => {
-                const vm = mount({props: {page: page}});
+                const vm = mount({ props: { page } });
 
                 await vm.$nextTick();
 
@@ -34,7 +34,7 @@ describe('components', () => {
             });
 
             it('should have a method mapLink which cl class when scrolled upwards', () => {
-                const vm = mount({props: {page: page}});
+                const vm = mount({ props: { page } });
 
                 expect(vm.mapLink).toEqual(jasmine.any(Function));
                 expect(vm.mapLink('/api/pages/somepage')).toEqual('/somepage');
