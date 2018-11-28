@@ -1,5 +1,5 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
-import { TweenLite, Power4 } from 'gsap';
+import { TweenLite, Back, Power4 } from 'gsap';
 
 import Defaults from 'constants/defaults';
 
@@ -30,11 +30,16 @@ export default class SubNav extends Vue {
         return link.replace(/^\/api\/pages/, '');
     }
 
-    toggleImages(scale: number): void {
+    toggleImages(amount: number, animation: any): void {
         (<any>this.$refs.images).forEach((image) => {
-            TweenLite.to(image.$el, this.transitionDuration / 2, {
-                scale,
-                ease: Power4.easeOut,
+            TweenLite.to(image.$el, this.transitionDuration , {
+                opacity: amount,
+                ease: animation,
+            });
+
+            TweenLite.to(image.$el, this.transitionDuration * 2 , {
+                height: amount,
+                ease: animation,
             });
         });
     }
@@ -42,20 +47,20 @@ export default class SubNav extends Vue {
     toggleLinks(height: number): void {
         (<any>this.$refs.links).forEach((link) => {
             TweenLite.to(link.$el, this.transitionDuration, {
-                height,
-                delay: 0.2,
+                height
             });
         });
     }
 
     collapseNav(): void {
 
-        TweenLite.to((<any>this.$refs.subNav), this.transitionDuration / 2, {
+        TweenLite.to((<any>this.$refs.subNav), 0.1, {
             top: 0,
             position: 'fixed',
+            ease: Power4.easeOut,
         });
 
-        this.toggleImages(0);
+        this.toggleImages(0, Back.easeOut);
         this.toggleLinks(this.linkHeightMin);
 
         this.collapsed = true;
@@ -64,9 +69,9 @@ export default class SubNav extends Vue {
     showNav(): void {
 
         this.toggleLinks(this.linkHeightMax);
-        this.toggleImages(1);
+        this.toggleImages(1, Power4.easeOut);
 
-        TweenLite.to((<any>this.$refs.subNav), this.transitionDuration / 2, {
+        TweenLite.to((<any>this.$refs.subNav), this.transitionDuration * 2, {
             top: this.positionTop,
             position: 'relative',
         });
