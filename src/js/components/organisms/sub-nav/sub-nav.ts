@@ -52,7 +52,7 @@ export default class SubNav extends Vue {
 
         TweenLite.to((<any>this.$refs.subNav), this.transitionDuration / 2, {
             top: 0,
-            position: 'fixed'
+            position: 'fixed',
         });
 
         this.toggleImages(0);
@@ -68,7 +68,7 @@ export default class SubNav extends Vue {
 
         TweenLite.to((<any>this.$refs.subNav), this.transitionDuration / 2, {
             top: this.positionTop,
-            position: 'relative'
+            position: 'relative',
         });
 
         this.collapsed = false;

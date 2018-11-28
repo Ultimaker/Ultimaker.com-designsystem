@@ -16,30 +16,19 @@ exports[`Storyshots Molecules|tabs Tabs 1`] = `
         <div
           class="tabs__nav"
         >
-          <div
-            class="faux-vertical-scroll"
-          >
-            <div
-              class="faux-vertical-scroll__content"
+          <faux-scroll>
+            <ul
+              class="tabs__list"
+              role="tablist"
             >
-              <ul
-                class="tabs__list"
-                role="tablist"
-              >
-                 
-                <li
-                  aria-hidden="true"
-                  class="tabs__indicator"
-                  role="none"
-                />
-              </ul>
-            </div>
-             
-            <div
-              class="faux-vertical-scroll__bar"
-              style="display: none; opacity: 0; width: 100%;"
-            />
-          </div>
+               
+              <li
+                aria-hidden="true"
+                class="tabs__indicator"
+                role="none"
+              />
+            </ul>
+          </faux-scroll>
         </div>
          
         <div
