@@ -44,15 +44,16 @@ export default class FauxVerticalScroll extends Vue {
     }
 
     tweenBar() {
-        const offSet = (<any>this.$refs.container).clientWidth - (<any>this.$refs.content)._gsTransform.x;
+        const correction = ((<any>this.$refs.container).clientWidth / 100) * 0.5;
+        const offSet = ((<any>this.$refs.container).clientWidth - (<any>this.$refs.content)._gsTransform.x * correction);
         const contentWidth = (<any>this.$refs.content).scrollWidth;
         const clientWidth =  (<any>this.$refs.container).clientWidth;
 
-        const percentage = (100 - ((contentWidth - offSet) / contentWidth * 100));
+        const percentage = (100 - ((contentWidth - (offSet - clientWidth)) / contentWidth * 100));
         const width = percentage * (clientWidth / 100);
 
         TweenLite.to((<any>this.$refs.bar), this.transitionDuration / 2, {
-            left: offSet === clientWidth ? 0 : (width - this.scale),
+            left: offSet === clientWidth ? 0 : percentage > 100 ? (clientWidth - this.scale) : (width - this.scale),
             ease: Power3.easeOut,
         });
     }
@@ -73,7 +74,7 @@ export default class FauxVerticalScroll extends Vue {
             },
             onThrowUpdate:() => {
                 this.tweenBar();
-            }
+            },
         });
     }
 
