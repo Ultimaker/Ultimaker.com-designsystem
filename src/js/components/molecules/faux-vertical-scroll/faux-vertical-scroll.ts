@@ -44,10 +44,11 @@ export default class FauxVerticalScroll extends Vue {
     }
 
     tweenBar() {
-        const correction = ((<any>this.$refs.container).clientWidth / 100) * 0.5;
-        const offSet = ((<any>this.$refs.container).clientWidth - (<any>this.$refs.content)._gsTransform.x * correction);
         const contentWidth = (<any>this.$refs.content).scrollWidth;
         const clientWidth =  (<any>this.$refs.container).clientWidth;
+
+        const correction = ((clientWidth / 100) * 0.51);
+        const offSet = (clientWidth - (<any>this.$refs.content)._gsTransform.x * correction) + this.scale;
 
         const percentage = (100 - ((contentWidth - (offSet - clientWidth)) / contentWidth * 100));
         const width = percentage * (clientWidth / 100);
@@ -59,18 +60,23 @@ export default class FauxVerticalScroll extends Vue {
     }
 
     createDraggable () {
-        const { content } = this.$refs;
+        const { content, } = this.$refs;
+        const clientWidth =  (<any>this.$refs.container).clientWidth;
 
         this.draggableElement = Draggable.create(content, {
             type: 'x',
             lockAxis: 'x',
             edgeResistance: 0.65,
+            overshootTolerance: ((clientWidth / 100) * 5),
             throwProps:{
                 x: {
                     velocity: 'auto',
                     max: 0,
                     min: -this.calculateOffset(),
                 },
+            },
+            onDrag: () => {
+                this.tweenBar();
             },
             onThrowUpdate:() => {
                 this.tweenBar();
@@ -79,8 +85,10 @@ export default class FauxVerticalScroll extends Vue {
     }
 
     calculateBarScale() {
-        const clientWidth =  (<any>this.$refs.container).clientWidth;
-        this.scale = (clientWidth / 100) * 10;
+        const contentWidth = (<any>this.$refs.content).scrollWidth;
+        const clientWidth = (<any>this.$refs.container).clientWidth;
+
+        this.scale = (contentWidth / clientWidth) * 100;
         this.barStyle();
     }
 

@@ -2,7 +2,6 @@ import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import { TweenLite, Back, Power4 } from 'gsap';
 
 import Defaults from 'constants/defaults';
-
 import ViewportUtil from 'utils/viewport';
 import BrowserCapabilities from 'utils/browser-capabilities';
 
@@ -32,14 +31,12 @@ export default class SubNav extends Vue {
 
     toggleImages(amount: number, animation: any): void {
         (<any>this.$refs.images).forEach((image) => {
-            TweenLite.to(image.$el, this.transitionDuration , {
-                opacity: amount,
+            TweenLite.to(image.$el, this.transitionDuration, {
                 ease: animation,
-            });
-
-            TweenLite.to(image.$el, this.transitionDuration * 2 , {
-                height: amount,
-                ease: animation,
+                css: {
+                    opacity: amount,
+                    height: amount
+                }
             });
         });
     }
@@ -53,33 +50,39 @@ export default class SubNav extends Vue {
     }
 
     collapseNav(): void {
-        this.toggleLinks(this.linkHeightMin);
-        this.toggleImages(0, Back.easeOut);
-
-        TweenLite.to((<any>this.$refs.subNav), 0.6, {
+        TweenLite.to((<any>this.$refs.subNav), this.transitionDuration, {
             top: 0,
             position: 'fixed',
-            ease: Back.easeOut,
+            ease: Power4.easeOut,
+            onStart: () => {
+                this.toggleLinks(this.linkHeightMin);
+                this.toggleImages(0, Power4.easeOut);
+            }
         });
 
         this.collapsed = true;
     }
 
     showNav(): void {
-
-        this.toggleLinks(this.linkHeightMax);
-        this.toggleImages(1, Back.easeIn);
-
-        TweenLite.to((<any>this.$refs.subNav), this.transitionDuration * 2, {
+        TweenLite.to((<any>this.$refs.subNav), 0.1, {
             top: this.positionTop,
-            position: 'relative',
+            ease: Power4.easeIn,
+            onStart: () => {
+                this.toggleLinks(this.linkHeightMax);
+            },
+            onComplete: () => {
+                this.toggleImages(1, Power4.easeIn);
+                TweenLite.to((<any>this.$refs.subNav), this.transitionDuration / 2, {
+                    position: 'relative',
+                });
+            }
         });
 
         this.collapsed = false;
     }
 
     handleScroll(): void {
-        const correction = (10 * this.positionTop / 100);
+        const correction = (20 * this.positionTop / 100);
 
         if ((this.viewportUtil.scrollY > -(this.positionTop - correction) || this.viewportUtil.scrollY === 0)
             && this.collapsed) {
