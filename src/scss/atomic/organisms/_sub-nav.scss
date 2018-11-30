@@ -35,9 +35,6 @@
 
     @extend %reset-list;
 
-    @include min-tablet() {
-        // flex-wrap: wrap;
-    }
 }
 
 .sub-nav__item {

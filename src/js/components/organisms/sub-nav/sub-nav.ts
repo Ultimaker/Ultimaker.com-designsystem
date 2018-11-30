@@ -16,14 +16,14 @@ export default class SubNav extends Vue {
     @Prop({ type: Object, required: true })
         page!: ISubNavProps;
 
-    viewportUtil: ViewportUtil = new ViewportUtil();
-    collapsed: boolean = false;
+    private viewportUtil: ViewportUtil = new ViewportUtil();
+    private collapsed: boolean = false;
 
-    transitionDuration: number = Defaults.defaultDuration;
+    private transitionDuration: number = Defaults.defaultDuration;
 
-    positionTop: number = 0;
-    linkHeightMax: number = 96;
-    linkHeightMin: number = 18;
+    private positionTop: number = 0;
+    private linkHeightMax: number = 96;
+    private linkHeightMin: number = 18;
 
     mapLink(link): string {
         return link.replace(/^\/api\/pages/, '');
