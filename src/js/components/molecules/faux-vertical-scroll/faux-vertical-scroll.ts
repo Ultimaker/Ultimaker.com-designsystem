@@ -16,16 +16,16 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 
 export default class FauxVerticalScroll extends Vue {
 
-    viewportUtil: ViewportUtil = new ViewportUtil();
-    transitionDuration: number = Defaults.defaultDuration;
+    private viewportUtil: ViewportUtil = new ViewportUtil();
+    private transitionDuration: number = Defaults.defaultDuration;
 
-    draggableElement: any =  undefined;
+    private draggableElement: any =  undefined;
 
-    scale: number = 0;
-    canDrag: boolean = false;
-    isMounted: boolean = false;
+    private scale: number = 0;
+    private canDrag: boolean = false;
+    private isMounted: boolean = false;
 
-    barStyle() {
+    barStyle(): object {
         return {
             display: this.canDrag ? 'block' : 'hidden',
             opacity: this.canDrag ? 1 : 0,
@@ -33,7 +33,7 @@ export default class FauxVerticalScroll extends Vue {
         };
     }
 
-    calculateOffset() {
+    calculateOffset(): number {
         if (this.isMounted &&
           (<any>this.$refs.content) &&
           (<any>this.$refs.container)) {
@@ -43,7 +43,7 @@ export default class FauxVerticalScroll extends Vue {
         return 0;
     }
 
-    tweenBar() {
+    tweenBar(): void {
         const contentWidth = (<any>this.$refs.content).scrollWidth;
         const clientWidth =  (<any>this.$refs.container).clientWidth;
 
@@ -59,7 +59,7 @@ export default class FauxVerticalScroll extends Vue {
         });
     }
 
-    createDraggable () {
+    createDraggable(): void {
         const { content, } = this.$refs;
         const clientWidth =  (<any>this.$refs.container).clientWidth;
 
@@ -84,7 +84,7 @@ export default class FauxVerticalScroll extends Vue {
         });
     }
 
-    calculateBarScale() {
+    calculateBarScale(): void {
         const contentWidth = (<any>this.$refs.content).scrollWidth;
         const clientWidth = (<any>this.$refs.container).clientWidth;
 
@@ -92,7 +92,7 @@ export default class FauxVerticalScroll extends Vue {
         this.barStyle();
     }
 
-    mounted() {
+    mounted() :void {
 
         this.canDrag = this.calculateOffset() > 0;
         this.isMounted = true;
