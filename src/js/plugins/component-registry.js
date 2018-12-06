@@ -17,8 +17,8 @@ class ComponentRegistry {
             .filter(d => typeof d.name === 'string')
             .forEach(d => Vue.directive(d.name, d));
         this.components
-            .filter(c => typeof c.name === 'string')
-            .forEach(c => Vue.component(c.name, c));
+            .filter((c => typeof c.name === 'string' || (c.extendOptions && typeof c.extendOptions.name === 'string')))
+            .forEach(c => Vue.component(c.extendOptions ? c.extendOptions.name : c.name, c));
     }
 
     listComponents() {
