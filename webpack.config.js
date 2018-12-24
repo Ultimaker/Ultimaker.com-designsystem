@@ -106,7 +106,7 @@ const webpackConfig = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'components.css',
-            chunkFilename: "[id].css"
+            chunkFilename: '[id].css'
         })
     ]
 };
