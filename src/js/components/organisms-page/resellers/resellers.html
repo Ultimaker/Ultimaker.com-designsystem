@@ -72,7 +72,7 @@
                          v-for="(reseller, index) in resellersAuthorized"
                          v-if="index >= showMax"
                          v-show="visibleAllAuthorizedResellers"
-                         :key="index"
+                         :key="index + 1"
                          :data-index="index">
                         <li class="reseller-list__item">
                             <reseller-card v-bind="reseller" :labels="labels"></reseller-card>
