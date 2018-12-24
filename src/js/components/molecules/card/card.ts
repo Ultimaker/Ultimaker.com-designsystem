@@ -9,9 +9,9 @@ import { ICardProps, ICard } from './card.models';
 
 export default class Card extends Vue implements ICardProps{
     @Prop({ type: String })
-        block!: string;
+    block!: string;
     @Prop({ type: Object, required: true })
-        card!: ICard;
+    card!: ICard;
 
     get classObject ()  {
         const classes: Object = {};
