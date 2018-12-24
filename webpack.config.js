@@ -33,6 +33,7 @@ const webpackConfig = {
             resolve('node_modules')
         ],
         alias: {
+            'vue': 'vue/dist/vue.js',
             '@root': resolve('.'),
             'src': resolve('src'),
             'adapters': resolve('src/js/adapters'),
