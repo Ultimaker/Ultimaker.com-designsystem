@@ -1,5 +1,5 @@
 import {configure, addDecorator} from '@storybook/vue';
-import {setOptions} from '@storybook/addon-options';
+import {withOptions} from '@storybook/addon-options';
 import {withNotes} from '@storybook/addon-notes';
 import storyRouter from 'storybook-vue-router';
 import Vue from 'vue';
@@ -14,18 +14,19 @@ import 'src/scss/storybook.scss';
 import storyRoot from 'src/stories/story.root.js';
 import viewPort from "utils/viewport";
 
-
 if(process.env.BABEL_ENV === 'jest') {
     const registerRequireContextHook = require('babel-plugin-require-context-hook/register');
     registerRequireContextHook();
 }
 
-setOptions({
-    hierarchyRootSeparator: /\|/,
-    hierarchySeparator: /\//,
-    showSearchBox: false,
-    sortStoriesByKind: false
-});
+addDecorator(
+    withOptions({
+        hierarchyRootSeparator: /\|/,
+        hierarchySeparator: /\//,
+        showSearchBox: false,
+        sortStoriesByKind: false
+    })
+);
 
 Vue.use(registry);
 Vue.use(PublicEventService);
@@ -63,7 +64,6 @@ addDecorator((story) => ({
         });
     }
 }));
-
 
 function loadStories() {
     const globals = require.context('../src/stories/global', true, /\.stories\.js$/),
