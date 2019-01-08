@@ -1,5 +1,7 @@
 export interface IContentLink {
-    text: string;
+    block: string;
+    mod: string;
+    icon: string;
     href: string;
 }
 

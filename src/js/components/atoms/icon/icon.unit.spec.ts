@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 import Icon from './icon';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('atoms', () => {
@@ -10,8 +10,8 @@ describe('components', () => {
             it('should render an icon', (done) => {
                 const vm = mount({
                     props: {
-                        iconName: 'search'
-                    }
+                        iconName: 'search',
+                    },
                 });
 
                 vm.$nextTick(() => {
@@ -29,14 +29,14 @@ describe('components', () => {
                 const iconUrl = '/custom/iconset.svg';
 
                 beforeEach(() => {
-                    window.svgIconMap = iconUrl;
+                    window['svgIconMap'] = iconUrl;
                 });
 
                 it('should render with a customized iconset', (done) => {
                     const vm = mount({
                         props: {
-                            iconName: 'search'
-                        }
+                            iconName: 'search',
+                        },
                     });
 
                     vm.$nextTick(() => {
