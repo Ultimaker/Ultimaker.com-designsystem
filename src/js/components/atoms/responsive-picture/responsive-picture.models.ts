@@ -2,8 +2,8 @@ interface IImageUrl {
     url: string;
 }
 
-interface IImageVariant {
-    retina?: IImageUrl;
+export interface IImageVariant {
+    retinaUrl?: IImageUrl;
     url: string;
 }
 

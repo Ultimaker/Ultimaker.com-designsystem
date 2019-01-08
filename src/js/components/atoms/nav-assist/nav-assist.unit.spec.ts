@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 import NavAssist from './nav-assist';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('atoms', () => {
@@ -8,8 +8,8 @@ describe('components', () => {
             const mount = build(NavAssist);
 
             it('should render a navigation assistance button', () => {
-                const vm = mount(),
-                    svg = vm.$el.querySelectorAll('svg');
+                const vm = mount();
+                const svg = vm.$el.querySelectorAll('svg');
 
                 expect(svg.length).toEqual(1);
 
@@ -19,8 +19,8 @@ describe('components', () => {
             it('should change button state on click', () => {
                 const vm = mount({
                     props: {
-                        openState: false
-                    }
+                        openState: false,
+                    },
                 }).$mount();
 
                 vm.$on('toggle', () => { vm.openState = true; });
@@ -36,8 +36,8 @@ describe('components', () => {
             it('should change used value when openState is modified', (done) => {
                 const vm = mount({
                     props: {
-                        openState: false
-                    }
+                        openState: false,
+                    },
                 }).$mount();
 
                 expect(vm.used).toBeFalsy();
@@ -54,8 +54,8 @@ describe('components', () => {
             it('should emit a toggle event on close', () => {
                 const vm = mount({
                     props: {
-                        openState: false
-                    }
+                        openState: false,
+                    },
                 }).$mount();
 
                 spyOn(vm, '$emit');

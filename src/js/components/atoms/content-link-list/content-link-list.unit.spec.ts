@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 import ContentLinkList from './content-link-list';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('atoms', () => {
@@ -21,9 +21,9 @@ describe('components', () => {
                         block: 'test',
                         links: [{
                             title: 'test',
-                            href: '#'
-                        }]
-                    }
+                            href: '#',
+                        }],
+                    },
                 });
 
                 expect(vm.$el.querySelectorAll('li').length).toEqual(1);
