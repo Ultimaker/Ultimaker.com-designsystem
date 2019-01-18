@@ -1,15 +1,17 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { IContentLinkProps } from './content-link.models';
+import { ContentLinkModel } from './content-link.models';
+
 @Component({
     name: 'content-link',
     template: require('./content-link.html'),
 })
 
-export default class ContentLink extends Vue implements IContentLinkProps {
-    @Prop({ type: String, default: '' }) block!: string;
-    @Prop({ type: String, default: '' }) mod!: string;
-    @Prop({ type: String, default: '' }) icon!: string;
-    @Prop({ type: String, default: '' }) href!: string;
+export default class ContentLink extends Vue implements ContentLinkModel {
+    @Prop() block!: ContentLinkModel['block'];
+    @Prop() mod!: ContentLinkModel['mod'];
+    @Prop() icon!: ContentLinkModel['icon'];
+    @Prop() url!: ContentLinkModel['url'];
+    @Prop() label!: ContentLinkModel['label'];
 
     get classObject() {
         const classes = {};
