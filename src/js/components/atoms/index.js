@@ -5,6 +5,7 @@ export {default as ContentLinkList} from 'atoms/content-link-list';
 export {default as HitArea} from 'atoms/hit-area';
 export {default as HorizontalList} from 'atoms/horizontal-list';
 export {default as Icon} from 'atoms/icon';
+export {default as Image} from 'atoms/image';
 export {default as NavAssist} from 'atoms/nav-assist';
 export {default as ResponsivePicture} from 'atoms/responsive-picture';
 export {default as TabbableDefinitionList} from 'atoms/tabbable-definition-list';
