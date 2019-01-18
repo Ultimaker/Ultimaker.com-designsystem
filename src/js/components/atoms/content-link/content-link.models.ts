@@ -1,8 +1,6 @@
-export interface IContentLink {
+import { ContentLink } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/ContentLink';
+
+export interface ContentLinkModel extends ContentLink {
     block: string;
     mod: string;
-    icon: string;
-    href: string;
 }
-
-export interface IContentLinkProps extends IContentLink {}
