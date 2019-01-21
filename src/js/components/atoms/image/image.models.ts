@@ -1,4 +1,5 @@
 export enum ImageFormat {
+    default = '',
     jpg = 'jpg',
     pjpg = 'pjpg',
     png = 'png',
@@ -7,6 +8,7 @@ export enum ImageFormat {
 }
 
 export enum ResizeBehavior {
+    default = '',
     pad = 'pad',
     fill = 'fill',
     scale = 'scale',
@@ -15,7 +17,7 @@ export enum ResizeBehavior {
 }
 
 export enum FocusArea {
-    center = 'center',
+    center = '', // default, no need to specify
     top = 'top',
     right = 'right',
     bottom = 'bottom',
