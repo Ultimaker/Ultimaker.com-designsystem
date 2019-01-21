@@ -5,7 +5,7 @@ import data from './images.stories.json';
 storiesOf('Atoms|media', module)
     .addDecorator(withKnobs)
     .add(
-        'Image',
+        'Images',
         () => {
             const ratio = select('Aspect ratio', data.aspectRatios.map(s => s.title), data.defaultAspectRatio),
                 currentRatio = data.aspectRatios.find(a => a.title === ratio);
