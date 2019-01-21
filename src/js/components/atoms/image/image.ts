@@ -2,7 +2,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 import { FocusArea, IImageProps, ImageFormat, ResizeBehavior } from 'components/atoms/image/image.models';
 
 @Component({
-    name: 'image',
+    name: 'c-image',
     template: require('./image.html'),
 })
 
@@ -13,10 +13,10 @@ export default class Image extends Vue implements IImageProps {
     @Prop({ type: String, default: '' })
     description!: string;
 
-    @Prop({ type: String, default: ImageFormat.jpg })
+    @Prop({ type: String, default: ImageFormat.default })
     imageFormat!: ImageFormat;
 
-    @Prop({ type: String, default: ResizeBehavior.fill })
+    @Prop({ type: String, default: ResizeBehavior.default })
     resizeBehavior!: ResizeBehavior;
 
     @Prop({ type: String, default: FocusArea.center })
@@ -49,52 +49,53 @@ export default class Image extends Vue implements IImageProps {
     }
 
     get params() {
-        const params = {
-            w: this.width,
-            h: this.height,
-            fit: this.resizeBehavior,
-            f: this.focusArea,
-        };
-
-        if (this.radius < 0) {
-            params['r'] = this.radius;
-        }
+        const paramMap = new Map<string, any>([
+            ['w', this.width],
+            ['h', this.height],
+            ['fit', this.resizeBehavior],
+            ['f', this.focusArea],
+            ['r', this.radius],
+        ]);
 
         if (this.imageFormat === ImageFormat.jpg || this.imageFormat === ImageFormat.pjpg) {
-            params['q'] = this.quality;
+            paramMap.set('q', this.quality);
         }
 
         if (this.backgroundColor) {
-            params['bg'] = `rgb:${ this.backgroundColor }`;
+            paramMap.set('bg', `rgb:${this.backgroundColor}`);
         }
 
         switch (this.imageFormat) {
             case ImageFormat.pjpg:
-                params['fm'] = ImageFormat.jpg;
-                params['fl'] = 'progressive';
+                paramMap.set('fm', ImageFormat.jpg);
+                paramMap.set('fl', 'progressive');
                 break;
             case ImageFormat.png8:
-                params['fm'] = ImageFormat.png;
-                params['fl'] = 'png8';
+                paramMap.set('fm', ImageFormat.png);
+                paramMap.set('fl', 'png8');
                 break;
             default:
-                params['fm'] = this.imageFormat;
+                if (this.imageFormat !== ImageFormat.default) {
+                    paramMap.set('fm', this.imageFormat);
+                }
         }
 
-        return Object.keys(params).reduce(
+        return Array.from(paramMap.keys()).reduce(
             (accumulator, current, index, src) => {
-                return `${ accumulator }${ index === 0 ? '?' : '&'}${ current }=${ src[current] }`;
+                const value = paramMap.get(current);
+
+                if (!value) return accumulator;
+
+                return `${ accumulator }${ accumulator === '' ? '?' : '&'}${ current }=${ value }`;
             },
+            '',
         );
     }
 
-    beforeMount() {
+    mounted() {
         this.$el.addEventListener('load', () => {
             this.loaded = true;
         });
-    }
-
-    mounted() {
         this.ready = true;
     }
 }
