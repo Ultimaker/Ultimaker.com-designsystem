@@ -16,6 +16,7 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "moduleResolution": "node",
+        "resolveJsonModule": true,
         "baseUrl": ".",
         "paths": {
             "@root/*": ["."],
