@@ -1,5 +1,7 @@
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 import { FocusArea, IImageProps, ImageFormat, ResizeBehavior } from 'components/atoms/image/image.models';
+import BrowserCapabilities from 'utils/browser-capabilities';
+import ViewportUtil from 'utils/viewport';
 
 @Component({
     name: 'c-image',
@@ -12,6 +14,9 @@ export default class Image extends Vue implements IImageProps {
 
     @Prop({ type: String, default: '' })
     description!: string;
+
+    @Prop({ type: Boolean, default: false })
+    keepInView!: boolean;
 
     @Prop({ type: String, default: ImageFormat.default })
     imageFormat!: ImageFormat;
@@ -31,26 +36,35 @@ export default class Image extends Vue implements IImageProps {
     @Prop({ type: String })
     backgroundColor: string | null = null;
 
-    ready: boolean = false;
-    loaded: boolean = false;
+    viewportUtil = new ViewportUtil();
+    thumbnailLoaded: boolean = false;
+    imageLoaded: boolean = false;
+    inView: boolean = false;
+
     width: number = 0;
     height: number = 0;
 
-    get src() {
-        if (this.ready && this.loaded) {
-            return `${ this.imageSrc }${ this.params }`;
-        }
-
-        if (this.ready) {
-            return 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
-        }
-
-        return '';
+    get classList() {
+        return {
+            'img--loading': !this.inView || !this.imageLoaded,
+        };
     }
 
-    get params() {
+    get src() {
+        return this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl;
+    }
+
+    get imageUrl() {
+        return `${ this.imageSrc }${ this.getParams({}) }`;
+    }
+
+    get thumbUrl() {
+        return `${ this.imageSrc }${ this.getParams({ width: 20 }) }`;
+    }
+
+    getParams(options?: {width?: number}) {
         const paramMap = new Map<string, any>([
-            ['w', this.width],
+            ['w', options && options.width ? options.width : this.width],
             ['h', this.height],
             ['fit', this.resizeBehavior],
             ['f', this.focusArea],
@@ -92,10 +106,73 @@ export default class Image extends Vue implements IImageProps {
         );
     }
 
-    mounted() {
-        this.$el.addEventListener('load', () => {
-            this.loaded = true;
+    calculateInView() {
+        if (this.inView && this.keepInView) { return; }
+        const windowBottom = this.viewportUtil.scrollY + this.viewportUtil.screenHeight;
+        const pictureBounds = this.$el.getBoundingClientRect();
+        const pictureTop = this.viewportUtil.scrollY + pictureBounds.top;
+        const pictureBottom = pictureTop + pictureBounds.height;
+
+        this.inView = this.viewportUtil.scrollY <= pictureBottom && windowBottom >= pictureTop;
+    }
+
+    calculateDimensions() {
+        if (!BrowserCapabilities.isBrowser) return Promise.resolve();
+        if (!this.inView) return Promise.resolve();
+
+        return new Promise((resolve) => {
+            window.requestAnimationFrame(() => {
+                const rect = this.$el.getBoundingClientRect();
+
+                this.width = rect.width;
+                resolve();
+            });
         });
-        this.ready = true;
+    }
+
+    @Watch('inView')
+    async onInView(val:boolean) {
+        if (! val) {
+            return;
+        }
+
+        await this.calculateDimensions();
+        const imageToLoad = document.createElement('img');
+        imageToLoad.src = this.imageUrl;
+        imageToLoad.addEventListener('load', this.onImageLoad);
+    }
+
+    resizeHandler() {
+        this.calculateInView();
+        this.calculateDimensions();
+    }
+
+    scrollHandler() {
+        this.calculateInView();
+    }
+
+    async onThumbnailLoad(e) {
+        this.thumbnailLoaded = true;
+    }
+
+    async onImageLoad(e) {
+        this.imageLoaded = true;
+    }
+
+    mounted() {
+        if (!BrowserCapabilities.isBrowser) return;
+
+        window.requestAnimationFrame(() => {
+            this.calculateInView();
+            this.viewportUtil.addResizeHandler(this.resizeHandler);
+            this.viewportUtil.addScrollHandler(this.scrollHandler);
+        });
+
+        this.$el.addEventListener('load', this.onThumbnailLoad);
+    }
+
+    beforeDestroy() {
+        this.viewportUtil.removeResizeHandler(this.resizeHandler);
+        this.viewportUtil.removeScrollHandler(this.resizeHandler);
     }
 }

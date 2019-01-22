@@ -33,6 +33,7 @@ export enum FocusArea {
 export interface IImageProps {
     imageSrc: string;
     description: string;
+    keepInView: boolean;
     quality: number;
     radius: number;
     imageFormat: ImageFormat;
