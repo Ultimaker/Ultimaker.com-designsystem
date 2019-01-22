@@ -1,5 +1,5 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { IContentLink } from 'components/atoms/content-link/content-link.models';
+// import { IContentLink } from 'components/atoms/content-link/content-link.models';
 import { IContentLinkListProps } from 'components/atoms/content-link-list/content-link-list.models';
 
 @Component({
@@ -9,5 +9,5 @@ import { IContentLinkListProps } from 'components/atoms/content-link-list/conten
 
 export default class ContentLinkList extends Vue implements IContentLinkListProps {
     @Prop({ type: String, required: true }) block!: string;
-    @Prop({ type: Array, default: [] }) links!: IContentLink[];
+    @Prop({ type: Array, default: [] }) links!: [];
 }
