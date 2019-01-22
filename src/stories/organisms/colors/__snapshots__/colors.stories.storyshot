@@ -258,41 +258,10 @@ exports[`Storyshots organisms|colors Colors 1`] = `
               <div
                 class="colors__image colors__image--loading"
               >
-                <div
-                  class="cms-image"
-                  style="padding-top: 60%;"
-                >
-                  <picture
-                    class="cms-image__image"
-                  >
-                    <source
-                      media="(min-width: 1201px)"
-                      srcset=""
-                    />
-                     
-                    <source
-                      media="(min-width: 1025px)"
-                      srcset=""
-                    />
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/900/540/00387B/FFFFFF"
-                    />
-                     
-                    <img
-                      alt=""
-                      class="img--responsive img--lazy"
-                      src=""
-                    />
-                  </picture>
-                </div>
+                <cms-image
+                  image="[object Object]"
+                  orientation="landscape"
+                />
               </div>
             </div>
           </div>
