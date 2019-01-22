@@ -37,7 +37,8 @@
         ]
     },
     "include": [
-        "src/js/**/*"
+        "src/js/**/*",
+        "src/stories/**/*"
     ],
     "exclude": [
         "node_modules",

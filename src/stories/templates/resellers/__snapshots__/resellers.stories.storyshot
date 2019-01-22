@@ -77,42 +77,10 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                 <div
                   class="hero__image--basic"
                 >
-                  <div
-                    class="cms-image"
-                    style="padding-top: 100%;"
-                  >
-                    <picture
-                      alt="Some alt text"
-                      class="cms-image__image"
-                    >
-                      <source
-                        media="(min-width: 1201px)"
-                        srcset=""
-                      />
-                       
-                      <source
-                        media="(min-width: 1025px)"
-                        srcset=""
-                      />
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <source
-                        media="(max-width: 480px)"
-                        srcset="/generator/svg/600/600"
-                      />
-                       
-                      <img
-                        alt=""
-                        class="img--responsive img--lazy"
-                        src=""
-                      />
-                    </picture>
-                  </div>
+                  <cms-image
+                    image="[object Object]"
+                    orientation="square"
+                  />
                 </div>
               </div>
             </div>
