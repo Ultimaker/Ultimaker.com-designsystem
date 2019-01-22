@@ -30,7 +30,7 @@ export enum FocusArea {
     faces = 'faces',
 }
 
-export interface IImageProps {
+export interface ICImageProps {
     imageSrc: string;
     description: string;
     keepInView: boolean;
