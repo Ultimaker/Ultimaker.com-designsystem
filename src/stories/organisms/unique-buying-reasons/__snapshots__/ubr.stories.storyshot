@@ -86,41 +86,11 @@ exports[`Storyshots organisms|unique-buying-reasons Unique buying reasons 1`] = 
               <div
                 class="ubr__image "
               >
-                <div
-                  class="cms-image img--responsive"
-                  style="padding-top: 60%;"
-                >
-                  <picture
-                    class="cms-image__image"
-                  >
-                    <source
-                      media="(min-width: 1201px)"
-                      srcset=""
-                    />
-                     
-                    <source
-                      media="(min-width: 1025px)"
-                      srcset=""
-                    />
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/600/360"
-                    />
-                     
-                    <img
-                      alt=""
-                      class="img--responsive img--lazy"
-                      src=""
-                    />
-                  </picture>
-                </div>
+                <cms-image
+                  class="img--responsive"
+                  image="[object Object]"
+                  orientation="landscape"
+                />
               </div>
             </div>
           </div>
