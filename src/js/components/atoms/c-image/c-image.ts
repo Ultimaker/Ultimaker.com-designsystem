@@ -1,21 +1,21 @@
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
-import { FocusArea, IImageProps, ImageFormat, ResizeBehavior } from 'components/atoms/image/image.models';
+import { FocusArea, ICImageProps, ImageFormat, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
 
 @Component({
     name: 'c-image',
-    template: require('./image.html'),
+    template: require('./c-image.html'),
 })
 
-export default class Image extends Vue implements IImageProps {
+export default class CImage extends Vue implements ICImageProps {
     @Prop({ type: String, required: true })
     imageSrc!: string;
 
     @Prop({ type: String, default: '' })
     description!: string;
 
-    @Prop({ type: Boolean, default: false })
+    @Prop({ type: Boolean, default: true })
     keepInView!: boolean;
 
     @Prop({ type: String, default: ImageFormat.default })
