@@ -1,11 +1,11 @@
-import {storiesOf} from '@storybook/vue';
-import {withKnobs} from '@storybook/addon-knobs';
-import data from './image.stories.json';
+import { storiesOf } from '@storybook/vue';
+import { withKnobs } from '@storybook/addon-knobs';
+import data from './c-image.stories.json';
 
 storiesOf('Atoms|media', module)
     .addDecorator(withKnobs)
     .add(
-        'Image',
+        'Contentful Image',
         () => {
             // const ratio = select('Aspect ratio', data.aspectRatios.map(s => s.title), data.defaultAspectRatio),
             //     currentRatio = data.aspectRatios.find(a => a.title === ratio);
@@ -17,18 +17,16 @@ storiesOf('Atoms|media', module)
                 radius: data.radius,
                 imageFormat: data.imageFormat,
                 resizeBehavior: data.resizeBehavior,
-                forcusArea: data.focusArea,
-                backgroundColor: data.backgroundColor
+                focusArea: data.focusArea,
+                backgroundColor: data.backgroundColor,
             };
 
             return {
                 data: () => ({
-                    props
+                    props,
                 }),
-                template: require('./image.stories.html')
+                template: require('./c-image.stories.html'),
             };
         },
-        {
-            notes: {markdown: require('./image.stories.md')}
-        }
+        { notes: { markdown: require('./c-image.stories.md') } },
     );
