@@ -1,8 +1,8 @@
 <div class="cta__block">
-    <app-link :to="button.url" class="button button--primary hero__button" v-for="button in isButton" :key="button.label">
+    <app-link :to="button.url" class="button button--primary hero__button" v-for="button in buttons" :key="button.label">
         {{ button.label }}
     </app-link>
 
-    <content-link class="link--large" :href="contentLink.url" v-for="contentLink in isContentLink" :key="contentLink.label">{{ contentLink.label }}
+    <content-link class="link--large" :href="contentLink.url" v-for="contentLink in contentLinks" :key="contentLink.label">{{ contentLink.label }}
     </content-link>
 </div>
