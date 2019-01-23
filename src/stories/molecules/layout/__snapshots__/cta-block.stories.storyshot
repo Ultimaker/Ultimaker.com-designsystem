@@ -10,32 +10,7 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
     <section
       class="story__molecule"
     >
-      <div
-        class="cta__block"
-      >
-        <a
-          class="button button--primary hero__button"
-          href="#/#"
-        >
-          
-        Order now
-    
-        </a>
-         
-        <a
-          class="link link--large"
-          href="#/#"
-        >
-          <!---->
-           
-          <span
-            class="link__underline"
-          >
-            Content link
-    
-          </span>
-        </a>
-      </div>
+      <!---->
     </section>
   </section>
 </section>
