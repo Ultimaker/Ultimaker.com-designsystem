@@ -1,4 +1,4 @@
-import { Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/image';
+import { Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
 
 export enum ImageFormat {
     default = '',
