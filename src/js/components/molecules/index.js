@@ -1,6 +1,5 @@
 export {default as AutoComplete} from 'molecules/auto-complete';
 export {default as BrandCard} from 'molecules/brand-card';
-// export {default as Card} from 'molecules/card';
 export {default as Color} from 'molecules/color';
 export {default as ContentToggle} from 'molecules/content-toggle';
 export {default as Currency} from 'molecules/currency';
