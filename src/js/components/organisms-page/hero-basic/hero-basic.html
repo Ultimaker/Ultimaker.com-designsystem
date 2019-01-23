@@ -17,8 +17,8 @@
             <!--Image -->
             <div class="flexgrid__cell--xs-6">
                 <div class="hero__image--basic">
-                    <template v-if="this.image && this.image.length">
-                        <cms-image :image="image[0]" :orientation="'square'"></cms-image>
+                    <template v-if="this.image">
+                        <c-image :imageSrc="image.imageSrc" :alt="image.description" keep-in-view></c-image>
                     </template>
                 </div>
             </div>
