@@ -11,13 +11,13 @@ import { ContentLink } from '@ultimaker/ultimaker.com-model-definitions/dist/ato
 export default class CtaBlock extends Vue implements ICtaBlock {
     @Prop({ type: Array, required: true }) ctas!: ICtaBlock['ctas'];
 
-    get isButton ()  {
+    get buttons ()  {
         return this.ctas.filter(elem => {
             return elem instanceof Button;
         })
     }
 
-    get isContentLink ()  {
+    get contentLinks ()  {
         return this.ctas.filter(elem => {
             return elem instanceof ContentLink;
         })
