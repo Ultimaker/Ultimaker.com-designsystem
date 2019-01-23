@@ -12,13 +12,13 @@ export default class CtaBlock extends Vue implements ICtaBlock {
     @Prop({ type: Array, required: true }) ctas!: ICtaBlock['ctas'];
 
     get buttons ()  {
-        return this.ctas.filter(elem => {
+        return this.ctas.filter((elem) => {
             return elem instanceof Button;
         });
     }
 
     get contentLinks ()  {
-        return this.ctas.filter(elem => {
+        return this.ctas.filter((elem) => {
             return elem instanceof ContentLink;
         });
     }
