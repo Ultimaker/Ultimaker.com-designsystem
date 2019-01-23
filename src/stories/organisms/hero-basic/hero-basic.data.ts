@@ -19,6 +19,4 @@ const props = Object.assign(new HeroBasic(), {
     ]
 });
 
-export default {
-    ...props
-};
+export default props
