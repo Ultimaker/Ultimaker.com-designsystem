@@ -1,5 +1,4 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-// import { IContentLink } from 'components/atoms/content-link/content-link.models';
 import { IContentLinkListProps } from 'components/atoms/content-link-list/content-link-list.models';
 
 @Component({
