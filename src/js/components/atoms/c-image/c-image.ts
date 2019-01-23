@@ -2,6 +2,7 @@ import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 import { FocusArea, ICImageProps, ImageFormat, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
+import { imageConstants } from './c-image.constants';
 
 @Component({
     name: 'c-image',
@@ -59,7 +60,7 @@ export default class CImage extends Vue implements ICImageProps {
     }
 
     get thumbUrl() {
-        return `${ this.imageSrc }${ this.getParams({ width: 20 }) }`;
+        return `${ this.imageSrc }${ this.getParams({ width: imageConstants.initialWidth }) }`;
     }
 
     getParams(options?: {width?: number}) {
@@ -95,7 +96,7 @@ export default class CImage extends Vue implements ICImageProps {
         }
 
         return Array.from(paramMap.keys()).reduce(
-            (accumulator, current, index, src) => {
+            (accumulator, current) => {
                 const value = paramMap.get(current);
 
                 if (!value) return accumulator;
@@ -123,8 +124,9 @@ export default class CImage extends Vue implements ICImageProps {
         return new Promise((resolve) => {
             window.requestAnimationFrame(() => {
                 const rect = this.$el.getBoundingClientRect();
+                const desiredWidth = rect.width * (window.devicePixelRatio || 1);
 
-                this.width = rect.width;
+                this.width = desiredWidth > imageConstants.maxWidth ? imageConstants.maxWidth : Math.floor(desiredWidth);
                 resolve();
             });
         });
