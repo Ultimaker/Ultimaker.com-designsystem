@@ -11,10 +11,10 @@ import { imageConstants } from './c-image.constants';
 
 export default class CImage extends Vue implements ICImageProps {
     @Prop({ type: String, required: true })
-    imageSrc!: string;
+    url!: string;
 
     @Prop({ type: String, default: '' })
-    description!: string;
+    alt!: string;
 
     @Prop({ type: Boolean, default: true })
     keepInView!: boolean;
@@ -56,11 +56,11 @@ export default class CImage extends Vue implements ICImageProps {
     }
 
     get imageUrl() {
-        return `${ this.imageSrc }${ this.getParams({}) }`;
+        return `${ this.url }${ this.getParams({}) }`;
     }
 
     get thumbUrl() {
-        return `${ this.imageSrc }${ this.getParams({ width: imageConstants.initialWidth }) }`;
+        return `${ this.url }${ this.getParams({ width: imageConstants.initialWidth }) }`;
     }
 
     getParams(options?: {width?: number}) {

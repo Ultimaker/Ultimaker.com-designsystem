@@ -1,3 +1,5 @@
+import { Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/image';
+
 export enum ImageFormat {
     default = '',
     jpg = 'jpg',
@@ -30,9 +32,7 @@ export enum FocusArea {
     faces = 'faces',
 }
 
-export interface ICImageProps {
-    imageSrc: string;
-    description: string;
+export interface ICImageProps extends Image {
     keepInView: boolean;
     quality: number;
     radius: number;
