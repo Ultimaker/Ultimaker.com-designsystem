@@ -11,8 +11,8 @@ storiesOf('Atoms|media', module)
             //     currentRatio = data.aspectRatios.find(a => a.title === ratio);
 
             const props = {
-                imageSrc: data.imageSrc,
-                description: data.description,
+                url: data.url,
+                alt: data.alt,
                 quality: data.quality,
                 radius: data.radius,
                 imageFormat: data.imageFormat,
