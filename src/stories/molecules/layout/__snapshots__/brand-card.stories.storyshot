@@ -64,77 +64,9 @@ exports[`Storyshots Molecules|layout/cards Card 1`] = `
     <section
       class="story__molecule"
     >
-      <article
-        class="card undefined__card"
-        tabindex="0"
-      >
-        <div
-          class="card__visual"
-        >
-          <div
-            class="card__image"
-          >
-            <picture
-              class="img--responsive"
-            >
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(min-width: 768px)"
-                srcset=""
-              />
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/600/600"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <!---->
-        </div>
-         
-        <div
-          class="card__content"
-        >
-          <h3
-            class="card__headline"
-          >
-            Lorum ipsum
-          </h3>
-           
-          <p
-            class="card__description"
-          >
-            Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
-           
-          <a
-            class="link card__link card__link"
-            href="#/#"
-          >
-            <!---->
-             
-            <span
-              class="link__underline"
-            >
-              content link
-            </span>
-          </a>
-        </div>
-      </article>
+      <card
+        card="[object Object]"
+      />
     </section>
   </section>
 </section>

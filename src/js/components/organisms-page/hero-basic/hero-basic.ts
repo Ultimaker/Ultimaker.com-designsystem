@@ -11,5 +11,5 @@ export default class HeroBasic extends Vue implements IHeroBasic {
     @Prop({ type: String, required: false }) subtitle!: IHeroBasic['subtitle'];
     @Prop({ type: String, required: true }) description!: IHeroBasic['description'];
     @Prop({ type: Object, required: true }) image!: IHeroBasic['image'];
-    @Prop({ type: Array}) ctas!: IHeroBasic['ctas'];
+    @Prop({ type: Array }) ctas!: IHeroBasic['ctas'];
 }

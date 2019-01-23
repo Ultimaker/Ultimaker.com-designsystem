@@ -54,8 +54,8 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                   </a>
                    
                   <a
-                    class="link link--large"
-                    href="#/en/link"
+                    class="link link--large router-link-exact-active router-link-active"
+                    href="/en/link"
                   >
                     <!---->
                      
@@ -76,9 +76,10 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
               <div
                 class="hero__image--basic"
               >
-                <cms-image
-                  image="[object Object]"
-                  orientation="square"
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20"
                 />
               </div>
             </div>
@@ -188,8 +189,8 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="link link--icon"
-                      href="#/#"
+                      class="link router-link-exact-active router-link-active link--icon"
+                      href="#"
                     >
                       <!---->
                        
@@ -205,8 +206,8 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="link link--icon"
-                      href="#/#"
+                      class="link router-link-exact-active router-link-active link--icon"
+                      href="#"
                     >
                       <!---->
                        
@@ -221,8 +222,8 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="link link--icon"
-                      href="#/#"
+                      class="link router-link-exact-active router-link-active link--icon"
+                      href="#"
                     >
                       <!---->
                        
@@ -442,8 +443,8 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="link link--icon"
-                      href="#/#"
+                      class="link router-link-exact-active router-link-active link--icon"
+                      href="#"
                     >
                       <!---->
                        
@@ -458,8 +459,8 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="link link--icon"
-                      href="#/#"
+                      class="link router-link-exact-active router-link-active link--icon"
+                      href="#"
                     >
                       <!---->
                        
@@ -474,8 +475,8 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="link link--icon"
-                      href="#/#"
+                      class="link router-link-exact-active router-link-active link--icon"
+                      href="#"
                     >
                       <!---->
                        

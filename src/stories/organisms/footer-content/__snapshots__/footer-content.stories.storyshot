@@ -54,59 +54,11 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                           Products
                         </h3>
                          
-                        <ul
+                        <content-link-list
                           aria-labelledby="footer-nav__title-01"
-                          class="footer-nav__list"
-                        >
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="link footer-nav__link"
-                              href="#/#"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Printers
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="link footer-nav__link"
-                              href="#/#"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Materials
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="link footer-nav__link"
-                              href="#/#"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Ultimaker Cura
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
+                          block="footer-nav"
+                          links="[object Object],[object Object],[object Object]"
+                        />
                       </div>
                     </div>
                      
@@ -123,75 +75,11 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                           Resources
                         </h3>
                          
-                        <ul
+                        <content-link-list
                           aria-labelledby="footer-nav__title-02"
-                          class="footer-nav__list"
-                        >
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="link footer-nav__link"
-                              href="#/api/pages/materials/ultimaker-cpe"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Manuals
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="link footer-nav__link"
-                              href="#/api/pages/materials/ultimaker-pla"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Tips and Tricks
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="link footer-nav__link"
-                              href="#/#"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Troubleshooting
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="link footer-nav__link"
-                              href="#/#"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Education
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
+                          block="footer-nav"
+                          links="[object Object],[object Object],[object Object],[object Object]"
+                        />
                       </div>
                     </div>
                   </div>
@@ -210,139 +98,11 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                       Company
                     </h3>
                      
-                    <ul
+                    <content-link-list
                       aria-labelledby="footer-nav__title-03"
-                      class="footer-nav__list"
-                    >
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="link footer-nav__link"
-                          href="#/#"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            About Ultimaker
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="link footer-nav__link"
-                          href="#/#"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Careers
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="link footer-nav__link"
-                          href="#/#"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Blog
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="link footer-nav__link"
-                          href="#/#"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Press Room
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="link footer-nav__link"
-                          href="#/#"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Events
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="link footer-nav__link"
-                          href="#/#"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Resellers
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="link footer-nav__link"
-                          href="#/#"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Request support
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="link footer-nav__link"
-                          href="#/#"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Contact
-                          </span>
-                        </a>
-                      </li>
-                    </ul>
+                      block="footer-nav"
+                      links="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+                    />
                   </div>
                 </div>
               </div>
@@ -474,42 +234,10 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
               <nav
                 class="legal__nav"
               >
-                <ul
-                  class="legal__list"
-                >
-                  <li
-                    class="legal__item"
-                  >
-                    <a
-                      class="link legal__link"
-                      href="#/#"
-                    >
-                      <!---->
-                       
-                      <span
-                        class="link__underline"
-                      >
-                        Terms of Use
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="legal__item"
-                  >
-                    <a
-                      class="link legal__link"
-                      href="#/#"
-                    >
-                      <!---->
-                       
-                      <span
-                        class="link__underline"
-                      >
-                        Privacy and Cookie Policy
-                      </span>
-                    </a>
-                  </li>
-                </ul>
+                <content-link-list
+                  block="legal"
+                  links="[object Object],[object Object]"
+                />
               </nav>
             </div>
           </div>

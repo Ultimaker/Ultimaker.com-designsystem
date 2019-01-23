@@ -186,8 +186,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="link-list__item"
                     >
                       <a
-                        class="link link--icon"
-                        href="#/#"
+                        class="link router-link-exact-active router-link-active link--icon"
+                        href="#"
                       >
                         <!---->
                          
@@ -202,8 +202,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="link-list__item"
                     >
                       <a
-                        class="link link--icon"
-                        href="#/#"
+                        class="link router-link-exact-active router-link-active link--icon"
+                        href="#"
                       >
                         <!---->
                          
@@ -218,8 +218,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="link-list__item"
                     >
                       <a
-                        class="link link--icon"
-                        href="#/#"
+                        class="link router-link-exact-active router-link-active link--icon"
+                        href="#"
                       >
                         <!---->
                          
@@ -384,8 +384,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
             </div>
              
             <a
-              class="link brands__link link--large"
-              href="#/#"
+              class="link router-link-exact-active router-link-active brands__link link--large"
+              href="#"
             >
               <!---->
                
@@ -429,8 +429,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 </p>
                  
                 <a
-                  class="link link--icon link--large link--icon"
-                  href="#/#"
+                  class="link link--icon link--large router-link-exact-active router-link-active link--icon"
+                  href="#"
                   text="Large content-link with icon"
                 >
                   <!---->
@@ -885,170 +885,22 @@ exports[`Storyshots templates|printers Printers 1`] = `
             <div
               class="ecosystem__items"
             >
-              <article
-                class="card ecosystem__card"
-                tabindex="0"
-              >
-                <div
-                  class="card__visual"
-                >
-                  <!---->
-                   
-                  <!---->
-                </div>
-                 
-                <div
-                  class="card__content"
-                >
-                  <h3
-                    class="card__headline"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </h3>
-                   
-                  <p
-                    class="card__description"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-                  </p>
-                   
-                  <a
-                    class="link card__link router-link-exact-active router-link-active card__link"
-                    href="#/"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      Learn more
-                    </span>
-                  </a>
-                </div>
-              </article>
-              <article
-                class="card ecosystem__card"
-                tabindex="0"
-              >
-                <div
-                  class="card__visual"
-                >
-                  <!---->
-                   
-                  <!---->
-                </div>
-                 
-                <div
-                  class="card__content"
-                >
-                  <h3
-                    class="card__headline"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </h3>
-                   
-                  <p
-                    class="card__description"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt error, aut velit sequi nemo aspernatur libero perferendis magni
-                  </p>
-                   
-                  <a
-                    class="link card__link router-link-exact-active router-link-active card__link"
-                    href="#/"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      Learn more
-                    </span>
-                  </a>
-                </div>
-              </article>
-              <article
-                class="card ecosystem__card"
-                tabindex="0"
-              >
-                <div
-                  class="card__visual"
-                >
-                  <!---->
-                   
-                  <!---->
-                </div>
-                 
-                <div
-                  class="card__content"
-                >
-                  <h3
-                    class="card__headline"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </h3>
-                   
-                  <p
-                    class="card__description"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque repellat in fugit eum minus dolorum deleniti,
-                  </p>
-                   
-                  <a
-                    class="link card__link router-link-exact-active router-link-active card__link"
-                    href="#/"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      Learn more
-                    </span>
-                  </a>
-                </div>
-              </article>
-              <article
-                class="card ecosystem__card"
-                tabindex="0"
-              >
-                <div
-                  class="card__visual"
-                >
-                  <!---->
-                   
-                  <!---->
-                </div>
-                 
-                <div
-                  class="card__content"
-                >
-                  <h3
-                    class="card__headline"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </h3>
-                   
-                  <p
-                    class="card__description"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum aliquid fugit assumenda, sit rem recusandae illum dicta
-                  </p>
-                   
-                  <a
-                    class="link card__link router-link-exact-active router-link-active card__link"
-                    href="#/"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      Learn more
-                    </span>
-                  </a>
-                </div>
-              </article>
+              <card
+                block="ecosystem"
+                card="[object Object]"
+              />
+              <card
+                block="ecosystem"
+                card="[object Object]"
+              />
+              <card
+                block="ecosystem"
+                card="[object Object]"
+              />
+              <card
+                block="ecosystem"
+                card="[object Object]"
+              />
             </div>
           </section>
         </article>
@@ -1355,59 +1207,11 @@ exports[`Storyshots templates|printers Printers 1`] = `
                             Products
                           </h3>
                            
-                          <ul
+                          <content-link-list
                             aria-labelledby="footer-nav__title-01"
-                            class="footer-nav__list"
-                          >
-                            <li
-                              class="footer-nav__item"
-                            >
-                              <a
-                                class="link footer-nav__link"
-                                href="#/#"
-                              >
-                                <!---->
-                                 
-                                <span
-                                  class="link__underline"
-                                >
-                                  Printers
-                                </span>
-                              </a>
-                            </li>
-                            <li
-                              class="footer-nav__item"
-                            >
-                              <a
-                                class="link footer-nav__link"
-                                href="#/#"
-                              >
-                                <!---->
-                                 
-                                <span
-                                  class="link__underline"
-                                >
-                                  Materials
-                                </span>
-                              </a>
-                            </li>
-                            <li
-                              class="footer-nav__item"
-                            >
-                              <a
-                                class="link footer-nav__link"
-                                href="#/#"
-                              >
-                                <!---->
-                                 
-                                <span
-                                  class="link__underline"
-                                >
-                                  Ultimaker Cura
-                                </span>
-                              </a>
-                            </li>
-                          </ul>
+                            block="footer-nav"
+                            links="[object Object],[object Object],[object Object]"
+                          />
                         </div>
                       </div>
                        
@@ -1424,75 +1228,11 @@ exports[`Storyshots templates|printers Printers 1`] = `
                             Resources
                           </h3>
                            
-                          <ul
+                          <content-link-list
                             aria-labelledby="footer-nav__title-02"
-                            class="footer-nav__list"
-                          >
-                            <li
-                              class="footer-nav__item"
-                            >
-                              <a
-                                class="link footer-nav__link"
-                                href="#/api/pages/materials/ultimaker-cpe"
-                              >
-                                <!---->
-                                 
-                                <span
-                                  class="link__underline"
-                                >
-                                  Manuals
-                                </span>
-                              </a>
-                            </li>
-                            <li
-                              class="footer-nav__item"
-                            >
-                              <a
-                                class="link footer-nav__link"
-                                href="#/api/pages/materials/ultimaker-pla"
-                              >
-                                <!---->
-                                 
-                                <span
-                                  class="link__underline"
-                                >
-                                  Tips and Tricks
-                                </span>
-                              </a>
-                            </li>
-                            <li
-                              class="footer-nav__item"
-                            >
-                              <a
-                                class="link footer-nav__link"
-                                href="#/#"
-                              >
-                                <!---->
-                                 
-                                <span
-                                  class="link__underline"
-                                >
-                                  Troubleshooting
-                                </span>
-                              </a>
-                            </li>
-                            <li
-                              class="footer-nav__item"
-                            >
-                              <a
-                                class="link footer-nav__link"
-                                href="#/#"
-                              >
-                                <!---->
-                                 
-                                <span
-                                  class="link__underline"
-                                >
-                                  Education
-                                </span>
-                              </a>
-                            </li>
-                          </ul>
+                            block="footer-nav"
+                            links="[object Object],[object Object],[object Object],[object Object]"
+                          />
                         </div>
                       </div>
                     </div>
@@ -1511,139 +1251,11 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         Company
                       </h3>
                        
-                      <ul
+                      <content-link-list
                         aria-labelledby="footer-nav__title-03"
-                        class="footer-nav__list"
-                      >
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="link footer-nav__link"
-                            href="#/#"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              About Ultimaker
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="link footer-nav__link"
-                            href="#/#"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              Careers
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="link footer-nav__link"
-                            href="#/#"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              Blog
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="link footer-nav__link"
-                            href="#/#"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              Press Room
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="link footer-nav__link"
-                            href="#/#"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              Events
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="link footer-nav__link"
-                            href="#/#"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              Resellers
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="link footer-nav__link"
-                            href="#/#"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              Request support
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="link footer-nav__link"
-                            href="#/#"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              Contact
-                            </span>
-                          </a>
-                        </li>
-                      </ul>
+                        block="footer-nav"
+                        links="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1775,42 +1387,10 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 <nav
                   class="legal__nav"
                 >
-                  <ul
-                    class="legal__list"
-                  >
-                    <li
-                      class="legal__item"
-                    >
-                      <a
-                        class="link legal__link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          Terms of Use
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="legal__item"
-                    >
-                      <a
-                        class="link legal__link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          Privacy and Cookie Policy
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
+                  <content-link-list
+                    block="legal"
+                    links="[object Object],[object Object]"
+                  />
                 </nav>
               </div>
             </div>
