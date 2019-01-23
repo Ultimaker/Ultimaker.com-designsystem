@@ -34,8 +34,8 @@ export default class CImage extends Vue implements ICImageProps {
     @Prop({ type: Number, default: 65 })
     quality!: number;
 
-    @Prop({ type: String })
-    backgroundColor: string | null = null;
+    @Prop({ type: String, default: null })
+    backgroundColor!: string | null ;
 
     viewportUtil = new ViewportUtil();
     thumbnailLoaded: boolean = false;
