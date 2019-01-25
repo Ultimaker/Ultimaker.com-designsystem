@@ -50,12 +50,11 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                       href="#/en/quote"
                     >
                       
-        Request a quote
-    
+            Request a quote
+        
                     </a>
-                     
                     <a
-                      class="link link--large router-link-exact-active router-link-active"
+                      class="link router-link-exact-active router-link-active link--large"
                       href="/en/link"
                     >
                       <!---->
@@ -63,8 +62,9 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                       <span
                         class="link__underline"
                       >
-                        Content link
-    
+                        
+            Content link
+        
                       </span>
                     </a>
                   </div>

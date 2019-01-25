@@ -10,7 +10,38 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
     <section
       class="story__molecule"
     >
-      <!---->
+      <div
+        class="cta__block"
+      >
+        <a
+          class="link router-link-exact-active router-link-active link--large"
+          href="#/"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+            
+        
+          </span>
+        </a>
+        <a
+          class="link router-link-exact-active router-link-active link--large"
+          href="#/"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+            
+        
+          </span>
+        </a>
+      </div>
     </section>
   </section>
 </section>
