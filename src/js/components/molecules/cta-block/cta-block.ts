@@ -28,12 +28,11 @@ export default class CtaBlock extends Vue implements ICtaBlock {
                 class: 'button button--primary hero__button',
                 to: cta.url,
             };
-        } else {
-            return {
-                class: 'link--large',
-                href: cta.url,
-                icon: cta.icon,
-            };
         }
+        return {
+            class: 'link--large',
+            href: cta.url,
+            icon: cta.icon,
+        };
     }
 }
