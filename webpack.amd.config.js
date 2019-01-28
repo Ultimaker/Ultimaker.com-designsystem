@@ -36,6 +36,11 @@ const webpackConfig = {
         /^lodash\/.+$/,
         'core-js',
         /^core-js\/.+$/,
+        'vue-property-decorator',
+        'vue-class-component',
+        'vue-template-compiler',
+        'vue-loader',
+        'vue-router'
     ],
     module: {
         rules: [

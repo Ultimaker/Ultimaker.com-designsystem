@@ -1,6 +1,6 @@
 {
     "name": "@ultimaker/ultimaker.com-designsystem",
-    "version": "0.1.13",
+    "version": "2.0.0",
     "description": "Ultimaker.com design system for vue components",
     "repository": "github:Ultimaker/Ultimaker.com-designsystem",
     "license": "UNLICENSED",
@@ -39,6 +39,9 @@
         "vue": "^2.5.21",
         "vue-class-component": "^6.3.2",
         "vue-property-decorator": "^7.2.0",
+        "vue-router": "^3.0.2",
+        "vue-template-compiler": "2.5.21",
+        "vue-loader": "^15.4.2",
         "vuex": "^3.0.1",
         "whatwg-fetch": "^2.0.4"
     },
@@ -112,9 +115,12 @@
         "tslint-config-airbnb": "^5.11.1",
         "typescript": "^3.3.3",
         "vue-jest": "^2.6.0",
+<<<<<<< HEAD
         "vue-loader": "^15.6.2",
         "vue-router": "^3.0.2",
         "vue-template-compiler": "2.5.21",
+=======
+>>>>>>> fix(ssr) fix ssr rendering
         "vuenit": "^1.2.0",
         "webpack": "^4.29.3",
         "webpack-cli": "^3.2.3",
