@@ -43,30 +43,7 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                  
                 <div
                   class="cta__block"
-                >
-                  <a
-                    class="button button--primary hero__button"
-                    href="#/en/quote"
-                  >
-                    
-            Request a quote
-        
-                  </a>
-                  <a
-                    class="link router-link-exact-active router-link-active link--large"
-                    href="/en/link"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      
-            Content link
-        
-                    </span>
-                  </a>
-                </div>
+                />
               </div>
             </div>
              
