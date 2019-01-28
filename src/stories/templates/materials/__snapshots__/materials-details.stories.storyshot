@@ -592,11 +592,59 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                           Products
                         </h3>
                          
-                        <content-link-list
+                        <ul
                           aria-labelledby="footer-nav__title-01"
-                          block="footer-nav"
-                          links="[object Object],[object Object],[object Object]"
-                        />
+                          class="footer-nav__list"
+                        >
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Printers
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Materials
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Ultimaker Cura
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                      
@@ -613,11 +661,75 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                           Resources
                         </h3>
                          
-                        <content-link-list
+                        <ul
                           aria-labelledby="footer-nav__title-02"
-                          block="footer-nav"
-                          links="[object Object],[object Object],[object Object],[object Object]"
-                        />
+                          class="footer-nav__list"
+                        >
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="/api/pages/materials/ultimaker-cpe"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Manuals
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="/api/pages/materials/ultimaker-pla"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Tips and Tricks
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Troubleshooting
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Education
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -636,11 +748,139 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                       Company
                     </h3>
                      
-                    <content-link-list
+                    <ul
                       aria-labelledby="footer-nav__title-03"
-                      block="footer-nav"
-                      links="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
-                    />
+                      class="footer-nav__list"
+                    >
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            About Ultimaker
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Careers
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Blog
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Press Room
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Events
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Resellers
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Request support
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Contact
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -772,10 +1012,42 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
               <nav
                 class="legal__nav"
               >
-                <content-link-list
-                  block="legal"
-                  links="[object Object],[object Object]"
-                />
+                <ul
+                  class="legal__list"
+                >
+                  <li
+                    class="legal__item"
+                  >
+                    <a
+                      class="link router-link-exact-active router-link-active legal__link"
+                      href="#"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Terms of Use
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="legal__item"
+                  >
+                    <a
+                      class="link router-link-exact-active router-link-active legal__link"
+                      href="#"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Privacy and Cookie Policy
+                      </span>
+                    </a>
+                  </li>
+                </ul>
               </nav>
             </div>
           </div>
@@ -912,11 +1184,59 @@ exports[`Storyshots templates|materials Materials-overview 1`] = `
                           Products
                         </h3>
                          
-                        <content-link-list
+                        <ul
                           aria-labelledby="footer-nav__title-01"
-                          block="footer-nav"
-                          links="[object Object],[object Object],[object Object]"
-                        />
+                          class="footer-nav__list"
+                        >
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Printers
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Materials
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Ultimaker Cura
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                      
@@ -933,11 +1253,75 @@ exports[`Storyshots templates|materials Materials-overview 1`] = `
                           Resources
                         </h3>
                          
-                        <content-link-list
+                        <ul
                           aria-labelledby="footer-nav__title-02"
-                          block="footer-nav"
-                          links="[object Object],[object Object],[object Object],[object Object]"
-                        />
+                          class="footer-nav__list"
+                        >
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="/api/pages/materials/ultimaker-cpe"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Manuals
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="/api/pages/materials/ultimaker-pla"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Tips and Tricks
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Troubleshooting
+                              </span>
+                            </a>
+                          </li>
+                          <li
+                            class="footer-nav__item"
+                          >
+                            <a
+                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              href="#"
+                            >
+                              <!---->
+                               
+                              <span
+                                class="link__underline"
+                              >
+                                Education
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -956,11 +1340,139 @@ exports[`Storyshots templates|materials Materials-overview 1`] = `
                       Company
                     </h3>
                      
-                    <content-link-list
+                    <ul
                       aria-labelledby="footer-nav__title-03"
-                      block="footer-nav"
-                      links="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
-                    />
+                      class="footer-nav__list"
+                    >
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            About Ultimaker
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Careers
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Blog
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Press Room
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Events
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Resellers
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Request support
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="footer-nav__item"
+                      >
+                        <a
+                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          href="#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            Contact
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -1092,10 +1604,42 @@ exports[`Storyshots templates|materials Materials-overview 1`] = `
               <nav
                 class="legal__nav"
               >
-                <content-link-list
-                  block="legal"
-                  links="[object Object],[object Object]"
-                />
+                <ul
+                  class="legal__list"
+                >
+                  <li
+                    class="legal__item"
+                  >
+                    <a
+                      class="link router-link-exact-active router-link-active legal__link"
+                      href="#"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Terms of Use
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="legal__item"
+                  >
+                    <a
+                      class="link router-link-exact-active router-link-active legal__link"
+                      href="#"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Privacy and Cookie Policy
+                      </span>
+                    </a>
+                  </li>
+                </ul>
               </nav>
             </div>
           </div>
