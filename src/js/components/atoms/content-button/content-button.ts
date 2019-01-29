@@ -2,7 +2,7 @@ import { Component } from 'vue-property-decorator';
 import BaseLink from '../BaseLink';
 
 @Component({
-    name: 'ContentLink',
+    name: 'ContentButton',
 })
 
-export default class ContentLink extends BaseLink {}
+export default class ContentButton extends BaseLink {}

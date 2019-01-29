@@ -1,6 +1,7 @@
 export {default as AnimatedArrow} from 'atoms/animated-arrow';
 export {default as AppLink} from 'atoms/app-link';
 export {default as ContentLink} from 'atoms/content-link';
+export {default as ContentButton} from 'atoms/content-button';
 export {default as ContentLinkList} from 'atoms/content-link-list';
 export {default as HitArea} from 'atoms/hit-area';
 export {default as HorizontalList} from 'atoms/horizontal-list';

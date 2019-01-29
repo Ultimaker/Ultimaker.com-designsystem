@@ -44,7 +44,38 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                    
                   <div
                     class="cta__block"
-                  />
+                  >
+                    <a
+                      class="router-link-exact-active router-link-active hero__link link--button button button--primary hero__button"
+                      ctas="[object Object],[object Object]"
+                      href="#/"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+            Find a reseller
+        
+                      </span>
+                    </a>
+                    <a
+                      class="router-link-exact-active router-link-active hero__link link--large link link--large"
+                      ctas="[object Object],[object Object]"
+                      href="#/"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+            Get a quote
+        
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
                
@@ -107,7 +138,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                  
                 <a
                   aria-describedby="tooltip-preferred"
-                  class="link reseller-section__info-link router-link-exact-active router-link-active link--reversed link--icon"
+                  class="reseller-section__info-link router-link-exact-active router-link-active link--reversed link--icon"
                   href="#/"
                   role="button"
                 >
@@ -1833,7 +1864,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="footer-nav__item"
                             >
                               <a
-                                class="link router-link-exact-active router-link-active footer-nav__link"
+                                class="router-link-exact-active router-link-active footer-nav__link"
                                 href="#"
                               >
                                 <!---->
@@ -1849,7 +1880,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="footer-nav__item"
                             >
                               <a
-                                class="link router-link-exact-active router-link-active footer-nav__link"
+                                class="router-link-exact-active router-link-active footer-nav__link"
                                 href="#"
                               >
                                 <!---->
@@ -1865,7 +1896,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="footer-nav__item"
                             >
                               <a
-                                class="link router-link-exact-active router-link-active footer-nav__link"
+                                class="router-link-exact-active router-link-active footer-nav__link"
                                 href="#"
                               >
                                 <!---->
@@ -1902,7 +1933,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="footer-nav__item"
                             >
                               <a
-                                class="link router-link-exact-active router-link-active footer-nav__link"
+                                class="router-link-exact-active router-link-active footer-nav__link"
                                 href="/api/pages/materials/ultimaker-cpe"
                               >
                                 <!---->
@@ -1918,7 +1949,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="footer-nav__item"
                             >
                               <a
-                                class="link router-link-exact-active router-link-active footer-nav__link"
+                                class="router-link-exact-active router-link-active footer-nav__link"
                                 href="/api/pages/materials/ultimaker-pla"
                               >
                                 <!---->
@@ -1934,7 +1965,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="footer-nav__item"
                             >
                               <a
-                                class="link router-link-exact-active router-link-active footer-nav__link"
+                                class="router-link-exact-active router-link-active footer-nav__link"
                                 href="#"
                               >
                                 <!---->
@@ -1950,7 +1981,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                               class="footer-nav__item"
                             >
                               <a
-                                class="link router-link-exact-active router-link-active footer-nav__link"
+                                class="router-link-exact-active router-link-active footer-nav__link"
                                 href="#"
                               >
                                 <!---->
@@ -1989,7 +2020,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                           class="footer-nav__item"
                         >
                           <a
-                            class="link router-link-exact-active router-link-active footer-nav__link"
+                            class="router-link-exact-active router-link-active footer-nav__link"
                             href="#"
                           >
                             <!---->
@@ -2005,7 +2036,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                           class="footer-nav__item"
                         >
                           <a
-                            class="link router-link-exact-active router-link-active footer-nav__link"
+                            class="router-link-exact-active router-link-active footer-nav__link"
                             href="#"
                           >
                             <!---->
@@ -2021,7 +2052,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                           class="footer-nav__item"
                         >
                           <a
-                            class="link router-link-exact-active router-link-active footer-nav__link"
+                            class="router-link-exact-active router-link-active footer-nav__link"
                             href="#"
                           >
                             <!---->
@@ -2037,7 +2068,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                           class="footer-nav__item"
                         >
                           <a
-                            class="link router-link-exact-active router-link-active footer-nav__link"
+                            class="router-link-exact-active router-link-active footer-nav__link"
                             href="#"
                           >
                             <!---->
@@ -2053,7 +2084,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                           class="footer-nav__item"
                         >
                           <a
-                            class="link router-link-exact-active router-link-active footer-nav__link"
+                            class="router-link-exact-active router-link-active footer-nav__link"
                             href="#"
                           >
                             <!---->
@@ -2069,7 +2100,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                           class="footer-nav__item"
                         >
                           <a
-                            class="link router-link-exact-active router-link-active footer-nav__link"
+                            class="router-link-exact-active router-link-active footer-nav__link"
                             href="#"
                           >
                             <!---->
@@ -2085,7 +2116,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                           class="footer-nav__item"
                         >
                           <a
-                            class="link router-link-exact-active router-link-active footer-nav__link"
+                            class="router-link-exact-active router-link-active footer-nav__link"
                             href="#"
                           >
                             <!---->
@@ -2101,7 +2132,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                           class="footer-nav__item"
                         >
                           <a
-                            class="link router-link-exact-active router-link-active footer-nav__link"
+                            class="router-link-exact-active router-link-active footer-nav__link"
                             href="#"
                           >
                             <!---->
@@ -2252,7 +2283,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                       class="legal__item"
                     >
                       <a
-                        class="link router-link-exact-active router-link-active legal__link"
+                        class="router-link-exact-active router-link-active legal__link"
                         href="#"
                       >
                         <!---->
@@ -2268,7 +2299,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                       class="legal__item"
                     >
                       <a
-                        class="link router-link-exact-active router-link-active legal__link"
+                        class="router-link-exact-active router-link-active legal__link"
                         href="#"
                       >
                         <!---->

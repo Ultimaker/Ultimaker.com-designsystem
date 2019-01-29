@@ -62,7 +62,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                             class="footer-nav__item"
                           >
                             <a
-                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              class="router-link-exact-active router-link-active footer-nav__link"
                               href="#"
                             >
                               <!---->
@@ -78,7 +78,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                             class="footer-nav__item"
                           >
                             <a
-                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              class="router-link-exact-active router-link-active footer-nav__link"
                               href="#"
                             >
                               <!---->
@@ -94,7 +94,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                             class="footer-nav__item"
                           >
                             <a
-                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              class="router-link-exact-active router-link-active footer-nav__link"
                               href="#"
                             >
                               <!---->
@@ -131,7 +131,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                             class="footer-nav__item"
                           >
                             <a
-                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              class="router-link-exact-active router-link-active footer-nav__link"
                               href="/api/pages/materials/ultimaker-cpe"
                             >
                               <!---->
@@ -147,7 +147,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                             class="footer-nav__item"
                           >
                             <a
-                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              class="router-link-exact-active router-link-active footer-nav__link"
                               href="/api/pages/materials/ultimaker-pla"
                             >
                               <!---->
@@ -163,7 +163,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                             class="footer-nav__item"
                           >
                             <a
-                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              class="router-link-exact-active router-link-active footer-nav__link"
                               href="#"
                             >
                               <!---->
@@ -179,7 +179,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                             class="footer-nav__item"
                           >
                             <a
-                              class="link router-link-exact-active router-link-active footer-nav__link"
+                              class="router-link-exact-active router-link-active footer-nav__link"
                               href="#"
                             >
                               <!---->
@@ -218,7 +218,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                         class="footer-nav__item"
                       >
                         <a
-                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          class="router-link-exact-active router-link-active footer-nav__link"
                           href="#"
                         >
                           <!---->
@@ -234,7 +234,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                         class="footer-nav__item"
                       >
                         <a
-                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          class="router-link-exact-active router-link-active footer-nav__link"
                           href="#"
                         >
                           <!---->
@@ -250,7 +250,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                         class="footer-nav__item"
                       >
                         <a
-                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          class="router-link-exact-active router-link-active footer-nav__link"
                           href="#"
                         >
                           <!---->
@@ -266,7 +266,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                         class="footer-nav__item"
                       >
                         <a
-                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          class="router-link-exact-active router-link-active footer-nav__link"
                           href="#"
                         >
                           <!---->
@@ -282,7 +282,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                         class="footer-nav__item"
                       >
                         <a
-                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          class="router-link-exact-active router-link-active footer-nav__link"
                           href="#"
                         >
                           <!---->
@@ -298,7 +298,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                         class="footer-nav__item"
                       >
                         <a
-                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          class="router-link-exact-active router-link-active footer-nav__link"
                           href="#"
                         >
                           <!---->
@@ -314,7 +314,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                         class="footer-nav__item"
                       >
                         <a
-                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          class="router-link-exact-active router-link-active footer-nav__link"
                           href="#"
                         >
                           <!---->
@@ -330,7 +330,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                         class="footer-nav__item"
                       >
                         <a
-                          class="link router-link-exact-active router-link-active footer-nav__link"
+                          class="router-link-exact-active router-link-active footer-nav__link"
                           href="#"
                         >
                           <!---->
@@ -481,7 +481,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                     class="legal__item"
                   >
                     <a
-                      class="link router-link-exact-active router-link-active legal__link"
+                      class="router-link-exact-active router-link-active legal__link"
                       href="#"
                     >
                       <!---->
@@ -497,7 +497,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                     class="legal__item"
                   >
                     <a
-                      class="link router-link-exact-active router-link-active legal__link"
+                      class="router-link-exact-active router-link-active legal__link"
                       href="#"
                     >
                       <!---->

@@ -1,4 +1,4 @@
-import {Button} from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/Button';
+import {ContentButton} from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/ContentButton';
 import {ContentLink} from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/ContentLink';
 import {HeroBasic} from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/hero/HeroBasic';
 
@@ -17,7 +17,7 @@ const props = Object.assign(new HeroBasic(), {
         backgroundColor: null,
     },
     ctas: [
-        Object.assign(new Button(), {
+        Object.assign(new ContentButton(), {
             label: 'Request a quote',
             url: '/en/quote'
         }),

@@ -40,7 +40,7 @@ exports[`Storyshots organisms|materials Materials 1`] = `
                     <a
                       aria-describedby="material"
                       block="materials"
-                      class="link materials-card router-link-exact-active router-link-active link--reversed"
+                      class="materials-card router-link-exact-active router-link-active link--reversed"
                       href="#/"
                       position="1"
                       role="link"
@@ -127,7 +127,7 @@ exports[`Storyshots organisms|materials Materials 1`] = `
                     <a
                       aria-describedby="material"
                       block="materials"
-                      class="link materials-card router-link-exact-active router-link-active link--reversed"
+                      class="materials-card router-link-exact-active router-link-active link--reversed"
                       href="#/"
                       position="2"
                       role="link"
@@ -223,7 +223,7 @@ exports[`Storyshots organisms|materials Materials 1`] = `
                     <a
                       aria-describedby="material"
                       block="materials"
-                      class="link materials-card router-link-exact-active router-link-active link--reversed"
+                      class="materials-card router-link-exact-active router-link-active link--reversed"
                       href="#/"
                       position="3"
                       role="link"
@@ -319,7 +319,7 @@ exports[`Storyshots organisms|materials Materials 1`] = `
                     <a
                       aria-describedby="material"
                       block="materials"
-                      class="link materials-card router-link-exact-active router-link-active link--reversed"
+                      class="materials-card router-link-exact-active router-link-active link--reversed"
                       href="#/"
                       position="4"
                       role="link"
@@ -415,7 +415,7 @@ exports[`Storyshots organisms|materials Materials 1`] = `
                     <a
                       aria-describedby="material"
                       block="materials"
-                      class="link materials-card router-link-exact-active router-link-active link--reversed"
+                      class="materials-card router-link-exact-active router-link-active link--reversed"
                       href="#/"
                       position="5"
                       role="link"
@@ -511,7 +511,7 @@ exports[`Storyshots organisms|materials Materials 1`] = `
                     <a
                       aria-describedby="material"
                       block="materials"
-                      class="link materials-card router-link-exact-active router-link-active link--reversed"
+                      class="materials-card router-link-exact-active router-link-active link--reversed"
                       href="#/"
                       position="6"
                       role="link"
@@ -628,7 +628,7 @@ exports[`Storyshots organisms|materials Materials 1`] = `
                     <a
                       aria-describedby="material"
                       block="materials"
-                      class="link materials-card router-link-exact-active router-link-active link--reversed"
+                      class="materials-card router-link-exact-active router-link-active link--reversed"
                       href="#/"
                       role="link"
                       tabindex="0"
@@ -725,7 +725,7 @@ exports[`Storyshots organisms|materials Materials 1`] = `
                     <a
                       aria-describedby="material"
                       block="materials"
-                      class="link materials-card router-link-exact-active router-link-active link--reversed"
+                      class="materials-card router-link-exact-active router-link-active link--reversed"
                       href="#/"
                       role="link"
                       tabindex="0"

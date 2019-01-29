@@ -47,7 +47,7 @@ exports[`Storyshots organisms|slider-reveal Slider reveal 1`] = `
               </p>
                
               <a
-                class="link link--icon link--large router-link-exact-active router-link-active link--icon"
+                class="link--icon link--large router-link-exact-active router-link-active link--icon"
                 href="#"
                 text="Large content-link with icon"
               >

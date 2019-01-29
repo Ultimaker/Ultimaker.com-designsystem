@@ -1,0 +1,8 @@
+<component :to="url"
+           :class="classObject"
+           v-bind="linkProps()">
+    <icon v-if="this.icon" :icon-name="icon" />
+    <span class="link__underline">
+        <slot></slot>
+    </span>
+</component>

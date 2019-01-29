@@ -1,38 +1,33 @@
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import { CtaBlock as ICtaBlock } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cta/CtaBlock';
-import { Button } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/Button';
 
 import AppLink from 'src/js/components/atoms/app-link';
-import ContentLink from 'src/js/components/atoms/content-link';
 
 @Component({
     name: 'cta-block',
     template: require('./cta-block.html'),
-    components: {
-        AppLink,
-        ContentLink,
-    },
 })
 
 export default class CtaBlock extends Vue implements ICtaBlock {
     @Prop({ type: Array, required: true }) ctas!: ICtaBlock['ctas'];
+    @Prop({ type: String, required: false }) block?: string;
 
-    componentMapper(cta) {
-        const mapCta = (cta instanceof Button) ? AppLink : ContentLink;
-        return mapCta;
+    modifiers: object = {
+        ContentButton: 'button',
+        ContentLink: 'large',
+    };
+
+    classes: object = {
+        ContentButton: 'button button--primary hero__button',
+        ContentLink: 'link link--large',
+
+    };
+
+    modifier(type: string) {
+        return this.modifiers[type];
     }
 
-    ctaProps(cta) {
-        if (cta instanceof Button) {
-            return {
-                class: 'button button--primary hero__button',
-                to: cta.url,
-            };
-        }
-        return {
-            class: 'link--large',
-            href: cta.url,
-            icon: cta.icon,
-        };
+    classObject(type: string) {
+        return this.classes[type];
     }
 }

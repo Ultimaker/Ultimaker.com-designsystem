@@ -9,7 +9,7 @@
         .button.button--primary{
             margin-right: $buildingUnit * 4;
         }
-        .button.button--primary + .link.link--large{
+        .button.button--primary ~ .link.link--large{
             display: inline-block;
             margin-top: $buildingUnit;
         }

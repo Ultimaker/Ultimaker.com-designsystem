@@ -1,6 +1,7 @@
 /* eslint-disable */
 import {text, files} from '@storybook/addon-knobs';
 import data from './hero-basic.data';
+import ctaBlockKnobs from '../../molecules/layout/cta-block.knobs.stories';
 
 export default () => ({
     heroBasic: {
@@ -11,10 +12,6 @@ export default () => ({
             url: text('Hero - image', data.image.url),
             alt: text('Hero - image', data.image.alt)
         },
-        ctas: data.ctas.map((cta, i) => ({
-            label: text(`Hero CTA-block title ${ i + 1 }`, cta.label),
-            url: text(`Hero CTA-block url ${ i + 1 }`, cta.url),
-        })),
-        ... data,
+        ctas: ctaBlockKnobs(),
     },
 });
