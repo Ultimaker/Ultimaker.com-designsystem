@@ -115,12 +115,6 @@
         "tslint-config-airbnb": "^5.11.1",
         "typescript": "^3.3.3",
         "vue-jest": "^2.6.0",
-<<<<<<< HEAD
-        "vue-loader": "^15.6.2",
-        "vue-router": "^3.0.2",
-        "vue-template-compiler": "2.5.21",
-=======
->>>>>>> fix(ssr) fix ssr rendering
         "vuenit": "^1.2.0",
         "webpack": "^4.29.3",
         "webpack-cli": "^3.2.3",

@@ -1,12 +1,12 @@
 {
-    "ctas": {
-        "button": {
-            "uri": "#",
-            "title": "Order now"
-        },
-        "link":{
-            "uri": "#",
-            "title": "Content link"
-        }
-    }
+    "ctas": [{
+        "type": "ContentButton",
+        "label": "Find a reseller",
+        "url": "https://www.ultimaker.com/resellers"
+
+    }, {
+        "type": "ContentLink",
+        "label": "Get a quote",
+        "url": "https://3d.ultimaker.com/requestquote"
+    }]
 }
