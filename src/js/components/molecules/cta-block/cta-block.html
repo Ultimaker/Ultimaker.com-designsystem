@@ -1,6 +1,10 @@
 <div class="cta__block">
     <template v-for="(cta, index) in ctas">
-        <component :is="componentMapper(cta)" v-bind="ctaProps(cta)" :key="index">
+        <component :is="cta.type"
+                   v-bind="$props"
+                   :key="index"
+                   :class="classObject(cta.type)"
+                   :mod="modifier(cta.type)">
             {{cta.label}}
         </component>
     </template>
