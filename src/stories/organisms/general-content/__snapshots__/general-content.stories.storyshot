@@ -35,7 +35,7 @@ exports[`Storyshots organisms|general-content General content 1`] = `
               </p>
                
               <a
-                class="link router-link-exact-active router-link-active general-content__link"
+                class="router-link-exact-active router-link-active general-content__link"
                 href="#/"
               >
                 <!---->
