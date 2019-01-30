@@ -1,7 +1,7 @@
 <div class="cta__block">
     <template v-for="(cta, index) in ctas">
         <component :is="cta.type"
-                   v-bind="$props"
+                   v-bind="cta"
                    :key="index"
                    :class="classObject(cta.type)"
                    :mod="modifier(cta.type)">
