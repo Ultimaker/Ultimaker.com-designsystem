@@ -45,9 +45,12 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                   class="cta__block"
                 >
                   <a
-                    class="router-link-exact-active router-link-active hero__link link--button button button--primary hero__button"
-                    ctas="[object Object],[object Object]"
-                    href="#/"
+                    class="link--button button button--primary hero__button"
+                    href="https://www.ultimaker.com/resellers"
+                    rel="noopener"
+                    target="_blank"
+                    to="https://www.ultimaker.com/resellers"
+                    type="ContentButton"
                   >
                     <!---->
                      
@@ -60,9 +63,12 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                     </span>
                   </a>
                   <a
-                    class="router-link-exact-active router-link-active hero__link link--large link link--large"
-                    ctas="[object Object],[object Object]"
-                    href="#/"
+                    class="link--large link link--large"
+                    href="https://3d.ultimaker.com/requestquote"
+                    rel="noopener"
+                    target="_blank"
+                    to="https://3d.ultimaker.com/requestquote"
+                    type="ContentLink"
                   >
                     <!---->
                      
