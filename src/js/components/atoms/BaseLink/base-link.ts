@@ -32,7 +32,6 @@ export default class BaseLink extends Vue implements IBaseLink {
     }
 
     get linkProps(): object {
-        console.log(this);
         if (this.url.match(/^(http(s)?):\/\//)) {
             return {
                 is: 'a',
