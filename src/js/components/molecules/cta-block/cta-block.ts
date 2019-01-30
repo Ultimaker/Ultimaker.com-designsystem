@@ -20,7 +20,6 @@ export default class CtaBlock extends Vue implements ICtaBlock {
     classes: object = {
         ContentButton: 'button button--primary hero__button',
         ContentLink: 'link link--large',
-
     };
 
     modifier(type: string) {
