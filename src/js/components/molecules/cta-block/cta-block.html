@@ -1,4 +1,4 @@
-<div class="cta__block">
+<div class="cta__block" v-if="ctas.length > 0">
     <template v-for="(cta, index) in ctas">
         <component :is="cta.type"
                    v-bind="cta"
