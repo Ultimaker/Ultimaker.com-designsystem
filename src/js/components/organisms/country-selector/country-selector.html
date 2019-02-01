@@ -7,9 +7,9 @@
         @close="close"
         @changeFocus="focusClose"
         :items="countries"
-        :storedLabel="countryDetected"
+        :storedLabel="highlightedLabel"
         :stored-items="detectedCountries"
-        :suggestionsLabel="countrySuggestions"
+        :suggestionsLabel="suggestionsLabel"
         default-open>
     </auto-complete>
     <!-- TODO: refactor out settings-selector__edit-button (see: https://jira.ultimaker.com:8443/browse/UWEB-4969)-->

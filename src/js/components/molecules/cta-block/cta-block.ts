@@ -1,7 +1,5 @@
-import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 import { CtaBlock as ICtaBlock } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cta/CtaBlock';
-
-import AppLink from 'src/js/components/atoms/app-link';
 
 @Component({
     name: 'cta-block',
