@@ -50,7 +50,6 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                       href="https://www.ultimaker.com/resellers"
                       rel="noopener"
                       target="_blank"
-                      to="https://www.ultimaker.com/resellers"
                       type="ContentButton"
                     >
                       <!---->
@@ -68,7 +67,6 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                       href="https://3d.ultimaker.com/requestquote"
                       rel="noopener"
                       target="_blank"
-                      to="https://3d.ultimaker.com/requestquote"
                       type="ContentLink"
                     >
                       <!---->
