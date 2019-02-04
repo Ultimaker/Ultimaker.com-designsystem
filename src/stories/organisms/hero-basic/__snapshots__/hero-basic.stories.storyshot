@@ -45,7 +45,7 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                   class="cta__block"
                 >
                   <a
-                    class="link--button button button--primary hero__button"
+                    class="link--button button button--primary"
                     href="https://www.ultimaker.com/resellers"
                     rel="noopener"
                     target="_self"
@@ -289,14 +289,14 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
           <picture>
             <source
               media="(min-width: 1201px)"
-              srcset=""
+              srcset="/generator/svg/1500/400"
             />
              
             <!---->
              
             <source
               media="(min-width: 768px)"
-              srcset=""
+              srcset="/generator/svg/1200/400"
             />
              
             <!---->
@@ -354,7 +354,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                    
                   <source
                     media="(min-width: 768px)"
-                    srcset=""
+                    srcset="/generator/svg/600/600/cccccc"
                   />
                    
                   <!---->
@@ -558,14 +558,14 @@ exports[`Storyshots organisms|hero Hero video 1`] = `
         <picture>
           <source
             media="(min-width: 1201px)"
-            srcset=""
+            srcset="/generator/svg/1500/400"
           />
            
           <!---->
            
           <source
             media="(min-width: 768px)"
-            srcset=""
+            srcset="/generator/svg/1200/400"
           />
            
           <!---->

@@ -11,7 +11,7 @@ exports[`Storyshots Molecules|helpers Tooltip 1`] = `
       class="story__molecule"
     >
       <div
-        class="tooltip"
+        class="tooltip undefined__tooltip"
       >
         
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.

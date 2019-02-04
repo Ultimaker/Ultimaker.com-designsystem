@@ -1,0 +1,275 @@
+{
+    "overview": {
+        "type": "Overview",
+        "title": "Find your reseller in the Netherlands",
+        "subtitle": "Or just get a subtitle",
+        "ctas": {
+            "type": "CtaBlock",
+            "ctas": [
+                {
+                    "type": "ContentButton",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
+                },
+                {
+                    "type": "ContentLink",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
+                }
+            ]
+        },
+        "sections": [
+            {
+                "type": "ListSection",
+                "title": "Title",
+                "limit": {
+                    "largeScreen": 6
+                },
+                "showAllLabel": "Show all",
+                "cards": [
+                    {
+                        "type": "BusinessCard",
+                        "title": "Ultimaker",
+                        "image": {
+                            "type": "CraftImage",
+                            "desktopUrl": "/generator/svg/120/120",
+                            "mobileUrl": "/generator/svg/120/120",
+                            "originalUrl": "/generator/svg/120/120",
+                            "aspectRatio": "1:1"
+                        },
+                        "contentLink": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        },
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "label": "Showrooms",
+                                 "value": "5"
+
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BusinessCard",
+                        "title": "Ultimaker",
+                        "image": {
+                            "type": "CraftImage",
+                            "desktopUrl": "/generator/svg/120/120",
+                            "mobileUrl": "/generator/svg/120/120",
+                            "originalUrl": "/generator/svg/120/120",
+                            "aspectRatio": "1:1"
+                        },
+                        "contentLink": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        },
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "label": "Showrooms",
+                                 "value": "5"
+
+                            }
+                        ]
+                    }
+                ],
+                "tooltip": {
+                    "type": "Tooltip",
+                    "label": "More info",
+                    "icon": "info",
+                    "description": "Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
+                }
+            },
+            {
+                "type": "ListSection",
+                "title": "Title",
+                "limit": {
+                    "smallScreen": 3
+                },
+                "showAllLabel": "Show all",
+                "cards": [
+                    {
+                        "type": "BusinessCard",
+                        "title": "Ultimaker1",
+                        "image": {
+                            "type": "CraftImage",
+                            "desktopUrl": "/generator/svg/120/120",
+                            "mobileUrl": "/generator/svg/120/120",
+                            "originalUrl": "/generator/svg/120/120",
+                            "aspectRatio": "1:1"
+                        },
+                        "contentLink": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        },
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "label": "Showrooms",
+                                 "value": "5"
+
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BusinessCard",
+                        "title": "Ultimaker2",
+                        "image": {
+                            "type": "CraftImage",
+                            "desktopUrl": "/generator/svg/120/120",
+                            "mobileUrl": "/generator/svg/120/120",
+                            "originalUrl": "/generator/svg/120/120",
+                            "aspectRatio": "1:1"
+                        },
+                        "contentLink": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        },
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "label": "Showrooms",
+                                 "value": "5"
+
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BusinessCard",
+                        "title": "Ultimaker3",
+                        "image": {
+                            "type": "CraftImage",
+                            "desktopUrl": "/generator/svg/120/120",
+                            "mobileUrl": "/generator/svg/120/120",
+                            "originalUrl": "/generator/svg/120/120",
+                            "aspectRatio": "1:1"
+                        },
+                        "contentLink": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        },
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "label": "Showrooms",
+                                 "value": "5"
+
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BusinessCard",
+                        "title": "Ultimaker4",
+                        "image": {
+                            "type": "CraftImage",
+                            "desktopUrl": "/generator/svg/120/120",
+                            "mobileUrl": "/generator/svg/120/120",
+                            "originalUrl": "/generator/svg/120/120",
+                            "aspectRatio": "1:1"
+                        },
+                        "contentLink": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        },
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "label": "Showrooms",
+                                 "value": "5"
+
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BusinessCard",
+                        "title": "Ultimaker5",
+                        "image": {
+                            "type": "CraftImage",
+                            "desktopUrl": "/generator/svg/120/120",
+                            "mobileUrl": "/generator/svg/120/120",
+                            "originalUrl": "/generator/svg/120/120",
+                            "aspectRatio": "1:1"
+                        },
+                        "contentLink": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        },
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "label": "Showrooms",
+                                 "value": "5"
+
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BusinessCard",
+                        "title": "Ultimaker6",
+                        "image": {
+                            "type": "CraftImage",
+                            "desktopUrl": "/generator/svg/120/120",
+                            "mobileUrl": "/generator/svg/120/120",
+                            "originalUrl": "/generator/svg/120/120",
+                            "aspectRatio": "1:1"
+                        },
+                        "contentLink": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        },
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "label": "Showrooms",
+                                 "value": "5"
+
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BusinessCard",
+                        "title": "Ultimaker7",
+                        "image": {
+                            "type": "CraftImage",
+                            "desktopUrl": "/generator/svg/120/120",
+                            "mobileUrl": "/generator/svg/120/120",
+                            "originalUrl": "/generator/svg/120/120",
+                            "aspectRatio": "1:1"
+                        },
+                        "contentLink": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        },
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "label": "Showrooms",
+                                 "value": "5"
+
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

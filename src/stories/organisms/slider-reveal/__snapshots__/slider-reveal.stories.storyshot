@@ -80,7 +80,7 @@ exports[`Storyshots organisms|slider-reveal Slider reveal 1`] = `
                        
                       <source
                         media="(min-width: 768px)"
-                        srcset=""
+                        srcset="/generator/svg/400/400/333333/999999, /generator/svg/800/800/333333/999999 2x"
                       />
                        
                       <!---->
@@ -109,7 +109,7 @@ exports[`Storyshots organisms|slider-reveal Slider reveal 1`] = `
                        
                       <source
                         media="(min-width: 768px)"
-                        srcset=""
+                        srcset="/generator/svg/400/400/999999/333333, /generator/svg/800/800/999999/333333 2x"
                       />
                        
                       <!---->
