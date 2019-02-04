@@ -9,9 +9,9 @@ storiesOf('Molecules|forms', module)
             return {
                 data: () => ({
                     defaultOpen: data.defaultOpen,
-                    items: data.items,
                     storedItems: data.storedItems,
-                    storedLabel: data.storedLabel
+                    storedLabel: data.storedLabel,
+                    datasource: data.datasource
                 }),
                 methods: {
                     input: action('input'),
