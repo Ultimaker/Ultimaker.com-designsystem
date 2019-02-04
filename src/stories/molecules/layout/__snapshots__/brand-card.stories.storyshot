@@ -23,7 +23,7 @@ exports[`Storyshots Molecules|layout/cards Brand card 1`] = `
              
             <source
               media="(min-width: 768px)"
-              srcset=""
+              srcset="/generator/svg/400/400"
             />
              
             <!---->
@@ -82,81 +82,14 @@ exports[`Storyshots Molecules|layout/cards Reseller card 1`] = `
     <section
       class="story__molecule"
     >
-      <a
-        class="reseller-card"
+      <reseller-card
         fileinput="/generator/svg/120/120"
         href="https://lipsum.com"
-        rel="noopener"
-        tabindex="0"
-        target="_blank"
-      >
-        <div
-          class="reseller-card__header"
-        >
-          <div
-            class="reseller-card__image-wrapper"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/120/120"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <div
-            class="reseller-card__description"
-          >
-            <h4
-              class="reseller-card__title"
-            >
-              
-                Reseller name
-            
-            </h4>
-             
-            <p
-              class="reseller-card__showroom-count"
-            >
-              
-                2 
-            
-            </p>
-          </div>
-        </div>
-         
-        <div
-          class="reseller-card__footer"
-        >
-          <span
-            class="link faux-content-link reseller-card__link"
-          >
-            <span
-              class="link__underline"
-            >
-              
-                Visit website
-            
-            </span>
-          </span>
-        </div>
-      </a>
+        image="[object Object]"
+        labels="[object Object]"
+        name="Reseller name"
+        showroomcount="2"
+      />
     </section>
   </section>
 </section>
