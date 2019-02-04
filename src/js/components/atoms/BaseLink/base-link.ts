@@ -13,6 +13,9 @@ export default class BaseLink extends Vue implements IBaseLink {
     @Prop({ type: String, default: '' }) url!: IBaseLink['url'];
     @Prop({ type: String, default: '' }) label!: IBaseLink['label'];
 
+    absoluteUrlRegex: RegExp = /^(http(s)?):\/\//;
+    domainRegex: RegExp = /(http(s)?):\/\/(www.)?ultimaker\.com/;
+
     get classObject() {
         const classes = {};
 
@@ -32,11 +35,11 @@ export default class BaseLink extends Vue implements IBaseLink {
     }
 
     get linkProps(): object {
-        if (this.url.match(/^(http(s)?):\/\//)) {
+        if (this.url.match(this.absoluteUrlRegex)) {
             return {
                 is: 'a',
                 href: this.url,
-                target: '_blank',
+                target: this.url.match(this.domainRegex) ? '_self' : '_blank',
                 rel: 'noopener',
             };
         }
