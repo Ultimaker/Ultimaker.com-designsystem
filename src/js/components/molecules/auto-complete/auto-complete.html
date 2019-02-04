@@ -49,7 +49,7 @@
                     @click="selectItem(item)"
                     @keyup.enter.prevent="selectItem(item)"
                     @keyup.esc="closeList">
-                    {{ item[titleField] }}
+                    {{ item.title }}
                 </li>
             </ul>
         </template>
@@ -64,13 +64,13 @@
                         v-for="item in suggestedItems"
                         @click="selectItem(item)"
                         @keyup.enter.prevent="selectItem(item)">
-                        {{ item[titleField] }}
+                        {{ item.title }}
                     </li>
                 </template>
                 <template v-else>
                     <li class="auto-complete__list-item" role="option" tabindex="0"
                         v-for="item in suggestedItems"
-                        v-html="highlightString(item[titleField])"
+                        v-html="highlightString(item.title)"
                         @click="selectItem(item)"
                         @keyup.enter.prevent="selectItem(item)"
                         >

@@ -1,10 +1,8 @@
 /* eslint-disable complexity */
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
-import _filter from 'lodash/filter';
-import _find from 'lodash/find';
 import ViewportUtil from 'utils/viewport';
-
 import { AutoCompleteField } from "@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/AutoCompleteField";
+import { AutoCompleteItem } from './auto-complete.models';
 
 @Component({
     name: 'auto-complete',
@@ -13,13 +11,10 @@ import { AutoCompleteField } from "@ultimaker/ultimaker.com-model-definitions/di
 
 export default class AutoComplete extends Vue implements AutoCompleteField {
     @Prop({ type: String, default: () => `autocomplete${ ~~(Math.random() * 10000) }` }) inputId!: string;
-    @Prop({ type: Object, default: null }) value!: object;
+    @Prop({ type: Object, default: null }) value!: AutoCompleteItem;
     @Prop({ type: Boolean, default: null }) defaultOpen!: boolean;
-    @Prop({ type: Array, default: () => [] }) items!: [];
     @Prop({ type: Number, default: 3 }) minChar!: number;
-    @Prop({ type: String, default: '' }) titleField!: string;
-    @Prop({ type: String, default: '' }) valueField!: string;
-    @Prop({ type: Array, default: () => [] }) storedItems!: [];
+    @Prop({ type: Array, default: () => [] }) storedItems!: AutoCompleteItem[];
     @Prop({ type: String, default: '' }) storedLabel!: string;
     @Prop({ type: Boolean, default: false }) required!: boolean;
 
@@ -28,15 +23,32 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
     @Prop({ type: String, default: null }) placeholder!: AutoCompleteField['placeholder'];
     @Prop({ type: String, default: null }) highlightedLabel!: AutoCompleteField['highlightedLabel'];
     @Prop({ type: String, default: '' }) suggestionsLabel!: AutoCompleteField['suggestionsLabel'];
-    @Prop({ type: String, default: '' }) datasource!: AutoCompleteField['datasource'];
+    @Prop({ type: Object, required: true }) datasource!: AutoCompleteField['datasource'];
 
     input: string =  '';
-    selectedItem: boolean | null = null;
+    selectedItem: AutoCompleteItem | null = null;
     selectedIndex: number = 0;
     reversed: boolean = false;
     forceOpen: boolean = false;
     viewportUtil =  new ViewportUtil();
 
+    get items():AutoCompleteItem[] {
+        const items: AutoCompleteItem[] = [];
+
+        if (!this.datasource) {
+            return items;
+        }
+
+        Object.keys(this.datasource)
+            .forEach((key) => {
+                items.push({
+                    title: this.datasource[key],
+                    value: key,
+                });
+            });
+
+        return items;
+    }
     get classObject(): object {
         return {
             required: this.required,
@@ -60,7 +72,7 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
         return Array.isArray(this.items) && this.items.length > 0;
     }
     get isValid(): boolean {
-        return !(this.selectedItem === null || this.input !== this.selectedItem[this.titleField]);
+        return !(this.selectedItem === null || this.input !== this.selectedItem.title);
     }
     get isOpen(): boolean {
         if (!(this.storedItems && this.storedItems.length) && !(this.suggestedItems && this.suggestedItems.length)) {
@@ -78,28 +90,33 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
         return this.hasInput && this.hasItems && !this.isValid;
     }
 
-    get suggestedItems(): [] | null {
+    get suggestedItems(): AutoCompleteItem[] {
         const filterMatch = new RegExp(this.input, 'i');
-        // @ts-ignore
-        const filteredItems = _filter(this.items, item => !this.storedItems || !this.storedItems.includes(item));
-        const allSuggestedTitles = _filter(filteredItems, item => filterMatch.test(item[this.titleField]));
-        const allSuggestedValues = _filter(filteredItems, item => filterMatch.test(item[this.valueField]));
+        let filteredItems:AutoCompleteItem[] = [];
+
+        if (this.storedItems) {
+            filteredItems = this.items.filter(item => !this.storedItems.find(i => i.value === item.value));
+        }
+        const allSuggestedTitles = filteredItems.filter(item => filterMatch.test(item.title));
+        const allSuggestedValues = filteredItems.filter(item => filterMatch.test(item.value));
 
         if (this.matchValue) {
             return allSuggestedValues;
-        } else if (this.matchTitle) {
+        }
+
+        if (this.matchTitle) {
             return allSuggestedTitles;
         }
 
-        return null;
+        return [];
     }
 
     init(): void {
         this.forceOpen = this.defaultOpen;
         this.viewportUtil.addScrollHandler(this.calculateDirection);
         this.viewportUtil.addResizeHandler(this.calculateDirection);
-        if (this.value && this.value[this.titleField]) {
-            this.input = this.value[this.titleField];
+        if (this.value && this.value.title) {
+            this.input = this.value.title;
         }
 
         Vue.nextTick(this.calculateDirection);
@@ -148,7 +165,7 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
     }
 
     selectItem(item): void {
-        this.input = item[this.titleField] || '';
+        this.input = item.title || '';
         this.selectedItem = item;
         this.forceOpen = false;
         this.resetIndex();
@@ -158,12 +175,12 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
 
     selectItemByInput(): void {
         const matcher = new RegExp(`^${ this.input }$`, 'i');
-        let item = null;
+        let item:AutoCompleteItem | undefined;
 
         if (this.input.length >= this.minChar) {
-            item = _find(this.items, i => matcher.test(i[this.titleField]));
+            item = this.items.find(i => matcher.test(i.title));
         } else if (this.input.length === this.minChar - 1) {
-            item = _find(this.items, i => matcher.test(i[this.valueField]));
+            item = this.items.find(i => matcher.test(i.value));
         }
 
         if (item) {
@@ -206,14 +223,14 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
     @Watch('value')
     onValue(newValue): void {
         if (newValue !== null) {
-            this.input = newValue[this.titleField];
+            this.input = newValue.title;
         }
         this.selectedItem = newValue;
     }
 
     @Watch('input')
     onInput(newValue): void {
-        if (this.selectedItem !== null && newValue !== this.selectedItem[this.titleField]) {
+        if (this.selectedItem !== null && newValue !== this.selectedItem.title) {
             this.selectedItem = null;
         }
         this.resetIndex();

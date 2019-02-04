@@ -1,24 +1,16 @@
 {
     "defaultOpen": true,
-    "items": [
-        {
-            "title": "Item 1",
-            "value": "item_1"
-        },
-        {
-            "title": "Item 2",
-            "value": "item_2"
-        },
-        {
-            "title": "Item 3",
-            "value": "item_3"
-        }
-    ],
     "storedLabel": "Last used",
     "storedItems": [
         {
-            "title": "Item 2",
-            "value": "item_2"
+            "item_1": "Item 1"
         }
-    ]
+    ],
+    "datasource": {
+        "item_1": "Item 1",
+        "item_2": "Item 2",
+        "item_3": "Item 3",
+        "item_4": "Item 4"
+
+    }
 }
