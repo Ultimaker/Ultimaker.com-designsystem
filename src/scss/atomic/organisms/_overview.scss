@@ -1,0 +1,43 @@
+.overview {
+    @extend .organism;
+    @extend %reset-last-margin;
+}
+
+.overview__title {
+    text-align: center;
+    position: relative;
+    margin-bottom: $buildingUnit * 2;
+}
+
+.overview__subtitle {
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+    line-height: 30px;
+    color: #7F7F7F;
+
+    font-family: "Fugue Ultimaker";
+}
+
+.overview__tooltip {
+    @extend %fontPrimary;
+    @include font-line-ratio(prim-s);
+
+    max-width: 296px;
+    position: absolute;
+    opacity: 1;
+    transform: translateY(calc(-100% - 36px));
+
+    &:after {
+        left: $buildingUnit;
+    }
+}
+
+.tooltip-enter, .tooltip-leave-to {
+    opacity: 0;
+    transform: translateY(calc(-100% - 42px));
+}
+
+.tooltip-enter-active, .tooltip-leave-active {
+    transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultEasing;
+}

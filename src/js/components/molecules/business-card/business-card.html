@@ -1,0 +1,23 @@
+<a class="business-card" :href="contentLink.url" rel="noopener" target="_blank" tabindex="0" v-if="title">
+    <div class="business-card__header">
+        <div class="business-card__image-wrapper">
+            <responsive-picture v-bind="mapImage(image)" v-if="image" :lazy="false"/>
+        </div>
+        <div class="business-card__description">
+            <h4 class="business-card__title">
+                {{ title }}
+            </h4>
+
+            <p class="business-card__property"  v-for="(property) in properties">
+                {{ property.label }} {{ property.value }}
+            </p>
+        </div>
+    </div>
+    <div class="business-card__footer">
+        <span class="link faux-content-link business-card__link">
+            <span class="link__underline">
+                {{ contentLink.label }}
+            </span>
+        </span>
+    </div>
+</a>

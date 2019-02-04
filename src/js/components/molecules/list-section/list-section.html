@@ -1,0 +1,71 @@
+<section class="list-section" v-if="cards && cards.length > 0">
+     <header class="list-section__header">
+           <h3 class="list-section__title">{{ title }}
+               <span class="list-section__count">({{cards.length}})</span>
+               <template v-if="tooltipVisible">
+                   <transition name="tooltip">
+                       <tooltip id="tooltip" block="list-section" v-show="visibleTooltip" v-bind="tooltip">
+                           {{ tooltip.description }}
+                       </tooltip>
+                   </transition>
+               </template>
+           </h3>
+           <content-link
+               class="link list-section__info-link"
+               :icon="tooltip ? tooltip.icon.toLowerCase() : 'info'"
+               mod="reversed"
+               @click.native.prevent="toggleTooltip"
+               @blur.native.prevent="hideTooltip"
+               role="button"
+               aria-describedby="tooltip"
+               v-if="tooltipVisible">
+               {{ tooltip.label }}
+           </content-link>
+       </header>
+     <ul class="list-section-list">
+          <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
+               <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                 v-for="(card, index) in cards"
+                 v-if="index < limit">
+                    <li :key="index" class="list-section-list__item">
+
+                        <component :is="card.type"
+                                   v-bind="card"
+                                   >
+                        </component>
+
+
+                    </li>
+               </div>
+               <template v-if="cards.length > limit && !showHiddenItems">
+                    <div class="flexgrid__cell flexgrid__cell--material-list__button--center">
+                         <button class="button--secondary list-section-list__button"
+                                 @click="showHidden">{{ showCount() }}
+                         </button>
+                    </div>
+               </template>
+          </div>
+          <transition-group @before-enter="beforeEnter"
+                          @enter="enter"
+                          tag="div"
+                          :css="false"
+                          class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row" id="newSection">
+               <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                    v-for="(card, index) in cards"
+                    v-if="index >= limit"
+                    v-show="showHiddenItems"
+                    :key="index"
+                    :data-index="index">
+                    <li class="list-section-list__item">
+
+                        <component :is="card.type"
+                                   v-bind="card">
+                        </component>
+                         <!-- CARD LOOP 2 -->
+
+
+                    </li>
+               </div>
+          </transition-group>
+     </ul>
+</section>

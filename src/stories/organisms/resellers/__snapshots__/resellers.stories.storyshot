@@ -80,80 +80,15 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 1
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                1 showroom
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 1"
+                      position="1"
+                      preferred="true"
+                      showroomcount="1"
+                    />
                   </li>
                 </div>
                 <div
@@ -162,80 +97,15 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 2
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                2 showrooms
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 2"
+                      position="2"
+                      preferred="true"
+                      showroomcount="2"
+                    />
                   </li>
                 </div>
                 <div
@@ -244,80 +114,15 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 3, with a very long name of the business, OMG!!
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                1 showroom
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 3, with a very long name of the business, OMG!!"
+                      position="3"
+                      preferred="true"
+                      showroomcount="1"
+                    />
                   </li>
                 </div>
                 <div
@@ -326,80 +131,15 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 4
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                1 showroom
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 4"
+                      position="4"
+                      preferred="true"
+                      showroomcount="1"
+                    />
                   </li>
                 </div>
                 <div
@@ -408,80 +148,15 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 5
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                3 showrooms
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 5"
+                      position="5"
+                      preferred="true"
+                      showroomcount="3"
+                    />
                   </li>
                 </div>
                 <div
@@ -490,80 +165,15 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 6
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                1 showroom
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 6"
+                      position="6"
+                      preferred="true"
+                      showroomcount="1"
+                    />
                   </li>
                 </div>
                 <div
@@ -572,80 +182,15 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 7
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                1 showroom
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 7"
+                      position="7"
+                      preferred="true"
+                      showroomcount="1"
+                    />
                   </li>
                 </div>
                 <div
@@ -654,80 +199,15 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 8
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                1 showroom
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 8"
+                      position="8"
+                      preferred="true"
+                      showroomcount="1"
+                    />
                   </li>
                 </div>
                 <div
@@ -736,80 +216,15 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 9
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                1 showroom
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 9"
+                      position="9"
+                      preferred="true"
+                      showroomcount="1"
+                    />
                   </li>
                 </div>
               </div>
@@ -846,74 +261,13 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 10
-            
-                          </h4>
-                           
-                          <!---->
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 10"
+                      position="1"
+                    />
                   </li>
                 </div>
                 <div
@@ -922,74 +276,13 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 11
-            
-                          </h4>
-                           
-                          <!---->
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 11"
+                      position="2"
+                    />
                   </li>
                 </div>
                 <div
@@ -998,74 +291,13 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 12
-            
-                          </h4>
-                           
-                          <!---->
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 12"
+                      position="3"
+                    />
                   </li>
                 </div>
                 <div
@@ -1074,74 +306,13 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 13
-            
-                          </h4>
-                           
-                          <!---->
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 13"
+                      position="4"
+                    />
                   </li>
                 </div>
                 <div
@@ -1150,80 +321,14 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 14
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                1 showroom
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 14"
+                      position="5"
+                      showroomcount="1"
+                    />
                   </li>
                 </div>
                 <div
@@ -1232,74 +337,13 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 15
-            
-                          </h4>
-                           
-                          <!---->
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 15"
+                      position="6"
+                    />
                   </li>
                 </div>
                 <!---->
@@ -1332,74 +376,12 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 16
-            
-                          </h4>
-                           
-                          <!---->
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 16"
+                    />
                   </li>
                 </div>
                 <div
@@ -1410,74 +392,12 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 17
-            
-                          </h4>
-                           
-                          <!---->
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 17"
+                    />
                   </li>
                 </div>
                 <div
@@ -1488,80 +408,13 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 18
-            
-                          </h4>
-                           
-                          <p
-                            class="reseller-card__showroom-count"
-                          >
-                            
-                1 showroom
-            
-                          </p>
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 18"
+                      showroomcount="1"
+                    />
                   </li>
                 </div>
                 <div
@@ -1572,74 +425,12 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 19
-            
-                          </h4>
-                           
-                          <!---->
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 19"
+                    />
                   </li>
                 </div>
                 <div
@@ -1650,74 +441,12 @@ exports[`Storyshots organisms|resellers Resellers 1`] = `
                   <li
                     class="reseller-list__item"
                   >
-                    <a
-                      class="reseller-card"
+                    <reseller-card
                       href="#"
-                      rel="noopener"
-                      tabindex="0"
-                      target="_blank"
-                    >
-                      <div
-                        class="reseller-card__header"
-                      >
-                        <div
-                          class="reseller-card__image-wrapper"
-                        >
-                          <picture>
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <!---->
-                             
-                            <source
-                              media="(max-width: 480px)"
-                              srcset="/generator/svg/120/120"
-                            />
-                             
-                            <img
-                              alt=""
-                              class="img--responsive img--lazy"
-                              src=""
-                            />
-                          </picture>
-                        </div>
-                         
-                        <div
-                          class="reseller-card__description"
-                        >
-                          <h4
-                            class="reseller-card__title"
-                          >
-                            
-                Test reseller 20
-            
-                          </h4>
-                           
-                          <!---->
-                        </div>
-                      </div>
-                       
-                      <div
-                        class="reseller-card__footer"
-                      >
-                        <span
-                          class="link faux-content-link reseller-card__link"
-                        >
-                          <span
-                            class="link__underline"
-                          >
-                            
-                Visit website
-            
-                          </span>
-                        </span>
-                      </div>
-                    </a>
+                      image="[object Object]"
+                      labels="[object Object]"
+                      name="Test reseller 20"
+                    />
                   </li>
                 </div>
               </div>

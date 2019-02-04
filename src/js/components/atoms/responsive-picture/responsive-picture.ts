@@ -10,12 +10,12 @@ import ResponsivePictureSource from './responsive-picture-source';
     },
 })
 export default class ResponsivePicture extends Vue {
-    @Prop({ type: [String, Object], required : false }) desktopHdWidth!:boolean;
-    @Prop({ type: [String, Object], required : false }) desktopWidth!:boolean;
-    @Prop({ type: [String, Object], required : false }) tabletWidth!:boolean;
-    @Prop({ type: [String, Object], required : false }) mobileXlWidth!:boolean;
-    @Prop({ type: [String, Object], required : false }) mobileLWidth!:boolean;
-    @Prop({ type: [String, Object], required : false }) mobileWidth!:boolean;
+    @Prop({ type: [String, Object], required : false }) desktopHdWidth!: string|object;
+    @Prop({ type: [String, Object], required : false }) desktopWidth!: string|object;
+    @Prop({ type: [String, Object], required : false }) tabletWidth!: string|object;
+    @Prop({ type: [String, Object], required : false }) mobileXlWidth!: string|object;
+    @Prop({ type: [String, Object], required : false }) mobileLWidth!: string|object;
+    @Prop({ type: [String, Object], required : false }) mobileWidth!: string|object;
     @Prop({ type: Boolean, required : false, default: true }) lazy!:boolean;
     @Prop({ type: String, required : false, default: '' }) description!:string;
     @Prop({ type: String, required : false, default: '' }) imgClass!:string;
@@ -26,7 +26,7 @@ export default class ResponsivePicture extends Vue {
     loaded:boolean = false;
 
     get lazyLoading() {
-        return (this.lazy && !this.inView) || (!this.lazy && this.ready);
+        return (this.lazy && !this.inView) || (!this.lazy && this.ready) || (!this.lazy);
     }
 
     get classes() {
@@ -49,6 +49,7 @@ export default class ResponsivePicture extends Vue {
     }
 
     mounted() {
+
         window.requestAnimationFrame(() => {
             this.ready = true;
         });

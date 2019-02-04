@@ -61,7 +61,7 @@ exports[`Storyshots organisms|general-content General content 1`] = `
                    
                   <source
                     media="(min-width: 768px)"
-                    srcset=""
+                    srcset="/generator/svg/400/400, /generator/svg/800/800 2x"
                   />
                    
                   <!---->

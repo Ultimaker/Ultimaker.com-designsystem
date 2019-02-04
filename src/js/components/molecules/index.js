@@ -13,9 +13,11 @@ export {default as MainNavItem} from 'molecules/main-nav-item';
 export {default as MaterialCard} from 'molecules/material-card';
 export {default as Modal} from 'molecules/modal';
 export {default as Pager} from 'molecules/pager';
-export {default as ResellerCard} from 'molecules/reseller-card';
 export {default as Search} from 'molecules/search';
 export {default as Tab} from 'molecules/tab';
 export {default as Tabs} from 'molecules/tabs';
 export {default as Tag} from 'molecules/tag';
 export {default as TagList} from 'molecules/tag-list';
+
+export {default as ListSection} from 'molecules/list-section';
+export {default as BusinessCard} from 'molecules/business-card';

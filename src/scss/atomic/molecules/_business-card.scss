@@ -1,26 +1,26 @@
-$resellerCardTabletMarginBottom: $buildingUnit * 2;
-$resellerCardMobileMarginBottom: $buildingUnit;
+$businessCardTabletMarginBottom: $buildingUnit * 2;
+$businessCardMobileMarginBottom: $buildingUnit;
 
-$resellerCardBorderSize: 1px;
-$resellerCardPadding: $buildingUnit * 1.5;
-$resellerLinkCorrection: 2px;
+$businessCardBorderSize: 1px;
+$businessCardPadding: $buildingUnit * 1.5;
+$businessLinkCorrection: 2px;
 
-.reseller-card {
+.business-card {
 
     display: flex;
     flex-direction: column;
 
     max-width: $mobileXlWidth;
 
-    margin-bottom: $resellerCardMobileMarginBottom;
+    margin-bottom: $businessCardMobileMarginBottom;
     @include min-tablet {
-        margin-bottom: $resellerCardTabletMarginBottom;
+        margin-bottom: $businessCardTabletMarginBottom;
     }
 
     color: $colorBlack;
     background: $colorWhite;
 
-    border: $resellerCardBorderSize solid $colorGrayLight;
+    border: $businessCardBorderSize solid $colorGrayLight;
     box-sizing: border-box;
 
     @include micro-animate(color, background);
@@ -51,50 +51,50 @@ $resellerLinkCorrection: 2px;
     }
 }
 
-.reseller-card__header {
+.business-card__header {
     display: flex;
     flex-direction: row;
-    padding: $resellerCardPadding;
+    padding: $businessCardPadding;
     padding-bottom: 0;
 }
 
-.reseller-card__image-wrapper {
+.business-card__image-wrapper {
     width: $buildingUnit * 5;
     height: $buildingUnit * 5;
     min-width: $buildingUnit * 5;
     min-height: $buildingUnit * 5;
     overflow: hidden;
-    margin-right: $resellerCardPadding;
+    margin-right: $businessCardPadding;
     align-items: center;
     display: flex;
 }
 
-.reseller-card__title {
+.business-card__title {
     @include text-overflow;
     width: 100%;
 }
 
-.reseller-card__description {
+.business-card__description {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     @extend %reset-last-margin;
 }
 
-.reseller-card__showroom-count {
+.business-card__property {
     @extend .copy--small;
     color: $colorGrayDark;
 }
 
-.reseller-card__footer {
+.business-card__footer {
     text-align: right;
-    padding: ($buildingUnit + $resellerLinkCorrection) $resellerCardPadding $buildingUnit $resellerCardPadding;
+    padding: ($buildingUnit + $businessLinkCorrection) $businessCardPadding $buildingUnit $businessCardPadding;
 
     @include min-tablet {
-        padding-bottom: ($buildingUnit - $resellerLinkCorrection);
+        padding-bottom: ($buildingUnit - $businessLinkCorrection);
     }
 }
 
-.reseller-card__link {
+.business-card__link {
     margin: 0;
 }
