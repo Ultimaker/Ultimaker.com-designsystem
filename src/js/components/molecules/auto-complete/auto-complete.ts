@@ -1,7 +1,7 @@
 /* eslint-disable complexity */
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import ViewportUtil from 'utils/viewport';
-import { AutoCompleteField } from "@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/AutoCompleteField";
+import { AutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/AutoCompleteField';
 import { AutoCompleteItem } from './auto-complete.models';
 
 @Component({
