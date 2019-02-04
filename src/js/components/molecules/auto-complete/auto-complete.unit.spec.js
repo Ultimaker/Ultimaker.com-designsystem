@@ -62,10 +62,11 @@ describe('components', () => {
                 const data = require('./auto-complete.unit.spec.json');
                 const vm = mount({
                     props: {
-                        items: data.countries,
-                        storedItems: [data.countries[0]],
-                        titleField: 'name',
-                        valueField: 'code'
+                        datasource: data.countries,
+                        storedItems: [{
+                            title: 'Maroc',
+                            value: 'MA'
+                        }]
                     }
                 });
 
@@ -82,7 +83,7 @@ describe('components', () => {
 
                     expect(vm.isOpen).toBeTruthy();
                     expect(vm.matchValue).toBeTruthy();
-                    expect(vm.suggestedItems[0].code).toEqual('MH');
+                    expect(vm.suggestedItems[0].value).toEqual('MH');
                 });
 
                 it('should display suggestions based on title, but not the stored item', () => {
@@ -124,21 +125,21 @@ describe('components', () => {
                     vm.selectItem(vm.items[0]);
                     await Vue.nextTick();
                     expect(vm.$emit).toHaveBeenCalled();
-                    expect(vm.selectedItem.code).toEqual(vm.items[0].code);
+                    expect(vm.selectedItem.value).toEqual(vm.items[0].value);
 
-                    vm.input = vm.items[1].name;
+                    vm.input = vm.items[1].title;
                     await Vue.nextTick();
                     expect(vm.selectedItem).toEqual(null);
 
                     vm.selectItemByInput();
                     await Vue.nextTick();
-                    expect(vm.selectedItem.code).toEqual(vm.items[1].code);
+                    expect(vm.selectedItem.value).toEqual(vm.items[1].value);
 
 
-                    vm.input = vm.items[0].code;
+                    vm.input = vm.items[0].value;
                     vm.selectItemByInput();
                     await Vue.nextTick();
-                    expect(vm.selectedItem.code).toEqual(vm.items[0].code);
+                    expect(vm.selectedItem.value).toEqual(vm.items[0].value);
 
                     done();
                 });
@@ -146,7 +147,7 @@ describe('components', () => {
                 it('should be able have a selectedItem by default', async(done) => {
                     vm.value = vm.items[1];
                     await Vue.nextTick();
-                    expect(vm.selectedItem.code).toEqual(vm.items[1].code);
+                    expect(vm.selectedItem.value).toEqual(vm.items[1].value);
                     done();
                 });
 

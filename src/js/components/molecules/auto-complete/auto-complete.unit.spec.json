@@ -1,32 +1,11 @@
 {
-    "countries": [
-        {
-            "name": "Maroc",
-            "code": "MA"
-        },
-        {
-            "name": "Monaco",
-            "code": "MC"
-        },
-        {
-            "name": "Moldova",
-            "code": "MD"
-        },
-        {
-            "name": "Crna Gora",
-            "code": "ME"
-        },
-        {
-            "name": "Saint Martin",
-            "code": "MF"
-        },
-        {
-            "name": "Madagascar",
-            "code": "MG"
-        },
-        {
-            "name": "Marshall Islands",
-            "code": "MH"
-        }
-    ]
+    "countries": {
+        "MA": "Maroc",
+        "MC": "Monaco",
+        "MD": "Moldova",
+        "ME": "Crna Gora",
+        "MF": "Saint Martin",
+        "MG": "Madagascar",
+        "MH": "Marshall Islands"
+    }
 }
