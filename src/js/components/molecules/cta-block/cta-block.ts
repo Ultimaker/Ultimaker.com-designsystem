@@ -9,6 +9,7 @@ import { CtaBlock as ICtaBlock } from '@ultimaker/ultimaker.com-model-definition
 export default class CtaBlock extends Vue implements ICtaBlock {
     @Prop({ type: Array, required: true }) ctas!: ICtaBlock['ctas'];
     @Prop({ type: String, required: false }) block?: string;
+    @Prop({ type: String, required: true }) styleContentButton!: string;
 
     modifiers: object = {
         ContentButton: 'button',
@@ -16,7 +17,7 @@ export default class CtaBlock extends Vue implements ICtaBlock {
     };
 
     classes: object = {
-        ContentButton: 'button button--primary hero__button',
+        ContentButton: this.styleContentButton,
         ContentLink: 'link link--large',
     };
 
