@@ -49,7 +49,7 @@ exports[`Storyshots templates|resellers Resellers 1`] = `
                       class="link--button button button--primary hero__button"
                       href="https://www.ultimaker.com/resellers"
                       rel="noopener"
-                      target="_blank"
+                      target="_self"
                       type="ContentButton"
                     >
                       <!---->
