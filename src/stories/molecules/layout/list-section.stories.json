@@ -1,0 +1,69 @@
+{
+    "listSection": {
+        "type": "ListSection",
+        "title": "Title",
+        "limit": 6,
+        "showAllLabel": "Show all",
+        "cards": [
+            {
+                "type": "BusinessCard",
+                "title": "Ultimaker",
+                "image": {
+                    "type": "CraftImage",
+                    "desktopUrl": "/generator/svg/120/120",
+                    "mobileUrl": "/generator/svg/120/120",
+                    "originalUrl": "/generator/svg/120/120",
+                    "aspectRatio": "1:1"
+                },
+                "contentLink": {
+                    "type": "ContentLink",
+                    "label": "Visit website",
+                    "url": "https://ultimaker.com"
+
+                },
+                "properties": [
+                    {
+                        "type": "Property",
+                        "label": "Showrooms",
+                         "value": "5"
+
+                    }
+                ]
+            },
+            {
+                "type": "BusinessCard",
+                "title": "Ultimaker",
+                "image": {
+                    "type": "CraftImage",
+                    "desktopUrl": "/generator/svg/120/120",
+                    "mobileUrl": "/generator/svg/120/120",
+                    "originalUrl": "/generator/svg/120/120",
+                    "aspectRatio": "1:1"
+                },
+                "contentLink": {
+                    "type": "ContentLink",
+                    "label": "Visit website",
+                    "url": "https://ultimaker.com"
+
+                },
+                "properties": [
+                    {
+                        "type": "Property",
+                        "label": "Showrooms",
+                         "value": "5"
+
+                    }
+                ]
+            }
+        ],
+        "tooltip": {
+            "type": "Tooltip",
+            "label": "More info",
+            "icon": "info",
+            "description": "Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
+        }
+    }
+}
+
+
+
