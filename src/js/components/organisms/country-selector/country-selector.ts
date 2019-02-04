@@ -1,7 +1,7 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import { mapGetters } from 'vuex';
 
-import { CountryAutoCompleteField } from "@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField";
+import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 
 import _find from 'lodash/find';
 
@@ -27,7 +27,7 @@ interface ISelectedCountry {
 export default class CountrySelector extends Vue implements CountryAutoCompleteField {
     @Prop({ type: Object, default: null }) value!: IValue;
 
-    //Model Definition
+    // Model Definition
     @Prop({ type: String, default: null }) label!: CountryAutoCompleteField['label'];
     @Prop({ type: String, default: '' }) placeholder!: CountryAutoCompleteField['placeholder'];
     @Prop({ type: String, default: null }) highlightedLabel!: CountryAutoCompleteField['highlightedLabel'];
