@@ -31,7 +31,7 @@ $cardMobileMarginBottom: $buildingUnit;
         align-items: baseline;
 
         .list-section__info-link {
-            margin-left: $buildingUnit * 2;
+            margin-left: $cardMobileMarginBottom * 2;
             margin-top: 0;
             margin-bottom: -4px; //reset wrong offset
         }
@@ -48,18 +48,49 @@ $cardMobileMarginBottom: $buildingUnit;
     font-size: .75em;
 }
 
+.list-section__tooltip {
+    @extend %fontPrimary;
+    @include font-line-ratio(prim-s);
+
+    max-width: 296px;
+    position: absolute;
+    opacity: 1;
+    transform: translateY(calc(-100% - 36px));
+
+    &:after {
+        left: $buildingUnit;
+    }
+}
+
+.tooltip-enter, .tooltip-leave-to {
+    opacity: 0;
+    transform: translateY(calc(-100% - 42px));
+}
+
+.tooltip-enter-active, .tooltip-leave-active {
+    transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultEasing;
+}
+
+
 .list-section-list {
     @extend %reset-list;
 }
 
 .list-section__button {
-    margin: ($buildingUnit * 2) 0 $cardMobileMarginBottom 0;
+    margin: ($cardMobileMarginBottom * 2) 0 $cardMobileMarginBottom 0;
 
     @include min-tablet {
-        margin: ($buildingUnit * 2) 0 $cardTabletMarginBottom 0;
+        margin: ($cardMobileMarginBottom * 2) 0 $cardTabletMarginBottom 0;
     }
 }
 
 .flexgrid__cell--list-section__button--center {
     text-align: center;
+}
+
+.list-section-list__button {
+    margin: 24px 0 0 0;
+    @include min-mobile-xl {
+        margin: 24px 0 0 0;
+    }
 }
