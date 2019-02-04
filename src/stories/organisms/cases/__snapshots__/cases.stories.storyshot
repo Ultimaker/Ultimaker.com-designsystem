@@ -59,27 +59,27 @@ exports[`Storyshots organisms|cases Cases 1`] = `
               >
                 <source
                   media="(min-width: 1201px)"
-                  srcset=""
+                  srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
                 />
                  
                 <source
                   media="(min-width: 1025px)"
-                  srcset=""
+                  srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
                 />
                  
                 <source
                   media="(min-width: 768px)"
-                  srcset=""
+                  srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
                 />
                  
                 <source
                   media="(min-width: 569px)"
-                  srcset=""
+                  srcset="/generator/svg/800/450"
                 />
                  
                 <source
                   media="(min-width: 481px)"
-                  srcset=""
+                  srcset="/generator/svg/800/450"
                 />
                  
                 <source
@@ -152,27 +152,27 @@ exports[`Storyshots organisms|cases Cases 1`] = `
               >
                 <source
                   media="(min-width: 1201px)"
-                  srcset=""
+                  srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
                 />
                  
                 <source
                   media="(min-width: 1025px)"
-                  srcset=""
+                  srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
                 />
                  
                 <source
                   media="(min-width: 768px)"
-                  srcset=""
+                  srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
                 />
                  
                 <source
                   media="(min-width: 569px)"
-                  srcset=""
+                  srcset="/generator/svg/800/450"
                 />
                  
                 <source
                   media="(min-width: 481px)"
-                  srcset=""
+                  srcset="/generator/svg/800/450"
                 />
                  
                 <source

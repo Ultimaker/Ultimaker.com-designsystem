@@ -7,6 +7,11 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 
 import { ListSection as IListSection } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/sections/ListSection';
 
+interface ShowItemsInterface {
+    smallScreen: number;
+    largeScreen: number;
+}
+
 @Component({
     name: 'ListSection',
     template: require('./list-section.html'),
@@ -16,17 +21,21 @@ export default class ListSection extends Vue implements IListSection {
     @Prop({ type: String, required: false }) title?: IListSection['title'];
     @Prop({ type: Array, required: true }) cards!: IListSection['cards'];
     @Prop({ type: Object, required: false }) tooltip?: IListSection['tooltip'];
-    @Prop({ type: Number, required: false }) limit?: IListSection['limit'];
+    @Prop({ type: Object, required: false }) limit?: IListSection['limit'];
     @Prop({ type: String, required: false }) showAllLabel?: IListSection['showAllLabel'];
 
     cardTransitionDuration: number = Defaults.defaultDuration;
     cardOffset: number = Defaults.buildingUnit * 5;
 
     showHiddenItems: boolean = false;
-
     visibleTooltip: boolean = false;
 
-    showMax: number = 6;
+    showMax: number | undefined = 6;
+
+    showItems: ShowItemsInterface = {
+        smallScreen: 3,
+        largeScreen: 6,
+    };
 
     lastTopValue: number = 0;
     delayIncrement: number = 0.1;
@@ -36,7 +45,7 @@ export default class ListSection extends Vue implements IListSection {
     viewportUtil: ViewportUtil = new ViewportUtil();
 
     tooltipVisible() {
-        return this.tooltip;
+        return this.visibleTooltip;
     }
 
     hideTooltip() {
@@ -92,9 +101,13 @@ export default class ListSection extends Vue implements IListSection {
 
     handleResize(): void {
         if (!this.showHiddenItems && this.viewportUtil.isMobile) {
-            this.showMax = 3;
+            this.showMax = (
+                this.limit && this.limit.smallScreen ? this.limit.smallScreen : this.showItems.smallScreen
+            );
         } else {
-            this.showMax = 6;
+            this.showMax = (
+                this.limit && this.limit.largeScreen ? this.limit.largeScreen : this.showItems.largeScreen
+            );
         }
     }
 
