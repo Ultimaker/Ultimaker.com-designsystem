@@ -1,0 +1,15 @@
+<article class="organism overview">
+    <section class="container">
+        <h2 class="overview__title">{{ title }}</h2>
+        <p class="overview__subtitle">{{ subtitle }}</p>
+        <template v-for="(section, index) in sections">
+            <component :is="section.type"
+                   v-bind="section"
+                   :key="index">
+            </component>
+        </template>
+
+        <cta-block :ctas="ctas.ctas"
+                   block="overview" />
+    </section>
+</article>
