@@ -57,7 +57,7 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
         }
 
         try {
-            const detectedCountryByIp = _find(this.countries, { code: this.country.code });
+            const detectedCountryByIp = this.datasource[this.country.code];
 
             if (detectedCountryByIp) {
                 // @ts-ignore
