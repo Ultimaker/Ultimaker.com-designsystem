@@ -2,7 +2,6 @@ import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 import { AutoCompleteItem } from 'components/molecules/auto-complete/auto-complete.models';
 
-
 @Component({
     name: 'country-selector',
     template: require('./country-selector.html'),
