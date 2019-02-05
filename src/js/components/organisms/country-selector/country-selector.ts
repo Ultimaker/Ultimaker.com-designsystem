@@ -19,6 +19,7 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
 
     country!: any;
     initPromise: Promise<any> | null = null;
+    countryInput: AutoCompleteItem | null = null;
     selectedCountry: AutoCompleteItem | null = null;
 
     @Watch('selectedCountry')
