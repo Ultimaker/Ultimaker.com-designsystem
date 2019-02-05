@@ -1,31 +1,15 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
-import { mapGetters } from 'vuex';
-
 import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
+import { AutoCompleteItem } from 'components/molecules/auto-complete/auto-complete.models';
 
-import _find from 'lodash/find';
-
-interface IValue {
-    code: string;
-}
-
-interface ISelectedCountry {
-    code: string;
-}
 
 @Component({
     name: 'country-selector',
     template: require('./country-selector.html'),
-    computed: {
-        ...mapGetters('countries', {
-            country: 'country',
-            countries: 'countries',
-        }),
-    },
 })
 
 export default class CountrySelector extends Vue implements CountryAutoCompleteField {
-    @Prop({ type: Object, default: null }) value!: IValue;
+    @Prop({ type: Object, default: null }) value!: AutoCompleteItem;
 
     // Model Definition
     @Prop({ type: String, default: null }) label!: CountryAutoCompleteField['label'];
@@ -35,14 +19,8 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
     @Prop({ type: Object, required: true }) datasource!: CountryAutoCompleteField['datasource'];
 
     country!: any;
-    countries!: any;
-
-    initialized: boolean = false;
     initPromise: Promise<any> | null = null;
-    countryInput: object = {};
-    selectedCountry: ISelectedCountry = {
-        code: '',
-    };
+    selectedCountry: AutoCompleteItem | null = null;
 
     @Watch('selectedCountry')
     onSelectedCountry(): void {
@@ -61,7 +39,10 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
 
             if (detectedCountryByIp) {
                 // @ts-ignore
-                detectedCountries.push(detectedCountryByIp);
+                detectedCountries.push({
+                    title: detectedCountryByIp,
+                    value: this.country.code,
+                } as AutoCompleteItem);
             }
         } catch (ex) {
             // parent scope should do error handling
@@ -69,26 +50,6 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
         }
 
         return detectedCountries;
-    }
-
-    init(): Promise<any> {
-        if (this.initPromise !== null) {
-            return this.initPromise;
-        }
-
-        const countryPromises = [
-            this.$store.dispatch('FETCH_COUNTRIES'),
-            this.$store.dispatch('FETCH_COUNTRY'),
-        ];
-
-        this.initPromise = Promise.all(countryPromises).then(() => {
-            this.initialized = true;
-            if ((this.value && !this.value.code) && (this.selectedCountry && !this.selectedCountry.code)) {
-                this.selectedCountry = _find(this.countries, { code: this.country.code });
-            }
-        });
-
-        return this.initPromise;
     }
 
     async focus(): Promise<any> {
@@ -120,9 +81,4 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
             }
         });
     }
-
-    beforeMount(): void {
-        this.init();
-    }
-
 }
