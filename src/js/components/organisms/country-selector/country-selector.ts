@@ -16,8 +16,8 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
     @Prop({ type: String, default: null }) highlightedLabel!: CountryAutoCompleteField['highlightedLabel'];
     @Prop({ type: String, default: '' }) suggestionsLabel!: CountryAutoCompleteField['suggestionsLabel'];
     @Prop({ type: Object, required: true }) datasource!: CountryAutoCompleteField['datasource'];
+    @Prop({ type: Object, default: null }) country!: any;
 
-    country!: any;
     initPromise: Promise<any> | null = null;
     countryInput: AutoCompleteItem | null = null;
     selectedCountry: AutoCompleteItem | null = null;
