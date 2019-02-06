@@ -5,9 +5,10 @@
     height: 100%;
 
     will-change: filter;
-    transition: filter 2s $defaultEasing;
+    transition: filter ($defaultDuration * 2) $defaultEasing;
     transform: translateZ(0);
-    filter: blur(0px);
+    filter: blur(0.01px);
+
     &.img--loading {
         filter: blur(50px);
     }
