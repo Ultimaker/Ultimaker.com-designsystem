@@ -1,6 +1,6 @@
 .cta__block{
     .button.button--primary + .link.link--large{
-        margin-top: $buildingUnit * 2;
+        margin: $buildingUnit * 2 0 0 0;
         transform: none;
 
     }
@@ -11,7 +11,7 @@
         }
         .button.button--primary ~ .link.link--large{
             display: inline-block;
-            margin-top: $buildingUnit;
+            margin: $buildingUnit 0 0 0;
         }
     }
 }
