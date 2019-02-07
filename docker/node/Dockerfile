@@ -1,12 +1,11 @@
-FROM node:8.11.3-alpine
+FROM node:10.15-jessie
+
 LABEL maintainer="Ultimaker - Team Web <webdevelopment@ultimaker.com>"
 
 EXPOSE 8080
 
-RUN echo "http://mirror.leaseweb.com/alpine/v3.6/main" >> /etc/apk/repositories \
- && echo "http://mirror.leaseweb.com/alpine/v3.6/community" >> /etc/apk/repositories \
- && apk add --no-cache tini \
- && apk add --no-cache --virtual .build-deps bash git openssh-client
+RUN apk add --update --no-cache tini \
+ && apk add --update --no-cache --virtual .build-deps bash git openssh-client
 
 WORKDIR /var/www/html
 
