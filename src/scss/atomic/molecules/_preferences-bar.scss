@@ -18,9 +18,6 @@
         .auto-complete__input {
             border-color: $colorGrayLinesNotification;
         }
-        @media (min-width: $mobileLWidth) {
-            margin-top: 0;
-        }
     }
 
     .settings-selector__edit-button {
