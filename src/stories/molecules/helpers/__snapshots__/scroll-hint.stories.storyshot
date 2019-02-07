@@ -1,19 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Molecules|helpers Scroll hint 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <h1>
-      TODO: should display arrow with text in several versions (check Patternlab)
-    </h1>
-  </section>
-</section>
-`;
-
 exports[`Storyshots Molecules|helpers Tooltip 1`] = `
 <section
   class="story"

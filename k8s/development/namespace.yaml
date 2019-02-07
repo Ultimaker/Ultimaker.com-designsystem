@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: sb-dev-_BRANCH_SLUG_
-  labels:
-    expiresAt: _EXPIRES_AT_
