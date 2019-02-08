@@ -5,7 +5,7 @@ define docker-node-run
     --user `id -u`:`id -g` \
     --volume `pwd`:/app \
     --workdir /app \
-    node:10.15-jessie $1
+    node:10.15-alpine $1
 endef
 
 install:
@@ -34,4 +34,4 @@ shell:
 		--user `id -u`:`id -g` \
 		--volume `pwd`:/app \
 		--workdir /app \
-		node:10.15-jessie sh
+		node:10.15-alpine sh
