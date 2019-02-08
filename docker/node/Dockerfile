@@ -1,4 +1,4 @@
-FROM node:10.15-jessie
+FROM node:10.15-alpine
 
 LABEL maintainer="Ultimaker - Team Web <webdevelopment@ultimaker.com>"
 

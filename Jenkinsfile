@@ -80,12 +80,12 @@ podTemplate(
     def branch = slugify.slug(env.BRANCH_NAME)
     def commit = scmVariables.GIT_COMMIT
 
-    stage('build images') {
+    stage('build containers') {
       parallel(
-        'build nginx image': {
+        'nginx': {
           sh "docker build --file docker/nginx/Dockerfile --tag ${nginxContainer}:${branch} --tag ${nginxContainer}:${commit} ."
         },
-        'build node image': {
+        'node': {
           sh "docker build --file docker/node/Dockerfile --tag ${nodeContainer}:${branch} --tag ${nodeContainer}:${commit} ."
         }
       )
@@ -103,16 +103,22 @@ podTemplate(
       }
     }
 
-    stage('push container') {
-      sh "docker push ${nginxContainer}:${branch}"
-      sh "docker push ${nginxContainer}:${commit}"
-      sh "docker push ${nodeContainer}:${branch}"
-      sh "docker push ${nodeContainer}:${commit}"
+    stage('push containers') {
+      parallel(
+        'nginx': {
+          sh "docker push ${nginxContainer}:${branch}"
+          sh "docker push ${nginxContainer}:${commit}"
+        },
+        'node': {
+          sh "docker push ${nodeContainer}:${branch}"
+          sh "docker push ${nodeContainer}:${commit}"
+        }
+      )
     }
 
-    stage('update deployment') {
-      sh "kubectl set image --namespace storybook deployment/storybook--nginx nginx=${nginxContainer}:${commit}"
+    stage('update deployments') {
       sh "kubectl set image --namespace storybook deployment/storybook--node node=${nodeContainer}:${commit}"
+      sh "kubectl set image --namespace storybook deployment/storybook--nginx nginx=${nginxContainer}:${commit}"
     }
   }
 }
