@@ -1074,14 +1074,14 @@ exports[`Storyshots templates|materials Materials-overview 1`] = `
         <picture>
           <source
             media="(min-width: 1201px)"
-            srcset="/generator/svg/1500/400"
+            srcset=""
           />
            
           <!---->
            
           <source
             media="(min-width: 768px)"
-            srcset="/generator/svg/1200/400"
+            srcset=""
           />
            
           <!---->

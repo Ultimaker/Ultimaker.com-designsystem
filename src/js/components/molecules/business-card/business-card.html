@@ -1,7 +1,7 @@
 <a class="business-card" :href="contentLink.url" rel="noopener" target="_blank" tabindex="0" v-if="title">
     <div class="business-card__header">
         <div class="business-card__image-wrapper">
-            <responsive-picture v-bind="mapImage(image)" v-if="image" :lazy="false"/>
+            <responsive-picture v-bind="mapImage(image)" v-if="image" />
         </div>
         <div class="business-card__description">
             <h4 class="business-card__title">
