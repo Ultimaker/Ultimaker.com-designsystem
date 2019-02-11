@@ -15,10 +15,9 @@ export default class BusinessCard extends Vue implements IBusinessCard {
     @Prop({ type: Array, required: false }) properties?: IBusinessCard['properties'];
 
     mapImage(image) {
-        const img = {};
-
-        img['desktopWidth'] = {
-            url: image.desktopUrl,
+        const img = {
+            mobileWidth: image.mobileUrl,
+            desktopWidth: image.desktopUrl,
         };
 
         return img;
