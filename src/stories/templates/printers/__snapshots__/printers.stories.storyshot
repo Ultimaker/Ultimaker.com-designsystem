@@ -20,14 +20,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
             <picture>
               <source
                 media="(min-width: 1201px)"
-                srcset="/generator/svg/1500/400"
+                srcset=""
               />
                
               <!---->
                
               <source
                 media="(min-width: 768px)"
-                srcset="/generator/svg/1200/400"
+                srcset=""
               />
                
               <!---->
@@ -85,7 +85,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                      
                     <source
                       media="(min-width: 768px)"
-                      srcset="/generator/svg/600/600/cccccc"
+                      srcset=""
                     />
                      
                     <!---->
@@ -462,7 +462,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                          
                         <source
                           media="(min-width: 768px)"
-                          srcset="/generator/svg/400/400/333333/999999, /generator/svg/800/800/333333/999999 2x"
+                          srcset=""
                         />
                          
                         <!---->
@@ -491,7 +491,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                          
                         <source
                           media="(min-width: 768px)"
-                          srcset="/generator/svg/400/400/999999/333333, /generator/svg/800/800/999999/333333 2x"
+                          srcset=""
                         />
                          
                         <!---->
@@ -954,27 +954,27 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 >
                   <source
                     media="(min-width: 1201px)"
-                    srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
+                    srcset=""
                   />
                    
                   <source
                     media="(min-width: 1025px)"
-                    srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
+                    srcset=""
                   />
                    
                   <source
                     media="(min-width: 768px)"
-                    srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
+                    srcset=""
                   />
                    
                   <source
                     media="(min-width: 569px)"
-                    srcset="/generator/svg/800/450"
+                    srcset=""
                   />
                    
                   <source
                     media="(min-width: 481px)"
-                    srcset="/generator/svg/800/450"
+                    srcset=""
                   />
                    
                   <source
@@ -1047,27 +1047,27 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 >
                   <source
                     media="(min-width: 1201px)"
-                    srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
+                    srcset=""
                   />
                    
                   <source
                     media="(min-width: 1025px)"
-                    srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
+                    srcset=""
                   />
                    
                   <source
                     media="(min-width: 768px)"
-                    srcset="/generator/svg/1200/675, /generator/svg/2400/1350 2x"
+                    srcset=""
                   />
                    
                   <source
                     media="(min-width: 569px)"
-                    srcset="/generator/svg/800/450"
+                    srcset=""
                   />
                    
                   <source
                     media="(min-width: 481px)"
-                    srcset="/generator/svg/800/450"
+                    srcset=""
                   />
                    
                   <source
@@ -1139,7 +1139,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                      
                     <source
                       media="(min-width: 768px)"
-                      srcset="/generator/svg/400/400, /generator/svg/800/800 2x"
+                      srcset=""
                     />
                      
                     <!---->
