@@ -40,7 +40,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 class="list-section__title"
               >
                 Title
-               
+            
                 <span
                   class="list-section__count"
                 >
@@ -62,8 +62,8 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   class="link__underline"
                 >
                   
-               More info
-           
+            More info
+        
                 </span>
               </a>
             </header>
@@ -95,30 +95,18 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           class="business-card__image-wrapper"
                         >
                           <picture>
-                            <source
-                              media="(min-width: 1201px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(min-width: 1025px)"
-                              srcset="/generator/svg/120/120"
+                              srcset=""
                             />
                              
-                            <source
-                              media="(min-width: 768px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 569px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 481px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(max-width: 480px)"
@@ -127,7 +115,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                              
                             <img
                               alt=""
-                              class="img--responsive"
+                              class="img--responsive img--lazy"
                               src=""
                             />
                           </picture>
@@ -193,30 +181,18 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           class="business-card__image-wrapper"
                         >
                           <picture>
-                            <source
-                              media="(min-width: 1201px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(min-width: 1025px)"
-                              srcset="/generator/svg/120/120"
+                              srcset=""
                             />
                              
-                            <source
-                              media="(min-width: 768px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 569px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 481px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(max-width: 480px)"
@@ -225,7 +201,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                              
                             <img
                               alt=""
-                              class="img--responsive"
+                              class="img--responsive img--lazy"
                               src=""
                             />
                           </picture>
@@ -290,7 +266,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 class="list-section__title"
               >
                 Title
-               
+            
                 <span
                   class="list-section__count"
                 >
@@ -330,30 +306,18 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           class="business-card__image-wrapper"
                         >
                           <picture>
-                            <source
-                              media="(min-width: 1201px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(min-width: 1025px)"
-                              srcset="/generator/svg/120/120"
+                              srcset=""
                             />
                              
-                            <source
-                              media="(min-width: 768px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 569px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 481px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(max-width: 480px)"
@@ -362,7 +326,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                              
                             <img
                               alt=""
-                              class="img--responsive"
+                              class="img--responsive img--lazy"
                               src=""
                             />
                           </picture>
@@ -375,7 +339,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             class="business-card__title"
                           >
                             
-                Ultimaker
+                Ultimaker1
             
                           </h4>
                            
@@ -428,30 +392,18 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           class="business-card__image-wrapper"
                         >
                           <picture>
-                            <source
-                              media="(min-width: 1201px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(min-width: 1025px)"
-                              srcset="/generator/svg/120/120"
+                              srcset=""
                             />
                              
-                            <source
-                              media="(min-width: 768px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 569px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 481px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(max-width: 480px)"
@@ -460,7 +412,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                              
                             <img
                               alt=""
-                              class="img--responsive"
+                              class="img--responsive img--lazy"
                               src=""
                             />
                           </picture>
@@ -473,7 +425,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             class="business-card__title"
                           >
                             
-                Ultimaker
+                Ultimaker2
             
                           </h4>
                            
@@ -526,30 +478,18 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           class="business-card__image-wrapper"
                         >
                           <picture>
-                            <source
-                              media="(min-width: 1201px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(min-width: 1025px)"
-                              srcset="/generator/svg/120/120"
+                              srcset=""
                             />
                              
-                            <source
-                              media="(min-width: 768px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 569px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 481px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(max-width: 480px)"
@@ -558,7 +498,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                              
                             <img
                               alt=""
-                              class="img--responsive"
+                              class="img--responsive img--lazy"
                               src=""
                             />
                           </picture>
@@ -571,7 +511,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             class="business-card__title"
                           >
                             
-                Ultimaker
+                Ultimaker3
             
                           </h4>
                            
@@ -624,30 +564,18 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           class="business-card__image-wrapper"
                         >
                           <picture>
-                            <source
-                              media="(min-width: 1201px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(min-width: 1025px)"
-                              srcset="/generator/svg/120/120"
+                              srcset=""
                             />
                              
-                            <source
-                              media="(min-width: 768px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 569px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 481px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(max-width: 480px)"
@@ -656,7 +584,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                              
                             <img
                               alt=""
-                              class="img--responsive"
+                              class="img--responsive img--lazy"
                               src=""
                             />
                           </picture>
@@ -669,7 +597,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             class="business-card__title"
                           >
                             
-                Ultimaker
+                Ultimaker4
             
                           </h4>
                            
@@ -722,30 +650,18 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           class="business-card__image-wrapper"
                         >
                           <picture>
-                            <source
-                              media="(min-width: 1201px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(min-width: 1025px)"
-                              srcset="/generator/svg/120/120"
+                              srcset=""
                             />
                              
-                            <source
-                              media="(min-width: 768px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 569px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 481px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(max-width: 480px)"
@@ -754,7 +670,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                              
                             <img
                               alt=""
-                              class="img--responsive"
+                              class="img--responsive img--lazy"
                               src=""
                             />
                           </picture>
@@ -767,7 +683,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             class="business-card__title"
                           >
                             
-                Ultimaker
+                Ultimaker5
             
                           </h4>
                            
@@ -820,30 +736,18 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           class="business-card__image-wrapper"
                         >
                           <picture>
-                            <source
-                              media="(min-width: 1201px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(min-width: 1025px)"
-                              srcset="/generator/svg/120/120"
+                              srcset=""
                             />
                              
-                            <source
-                              media="(min-width: 768px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 569px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 481px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(max-width: 480px)"
@@ -852,7 +756,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                              
                             <img
                               alt=""
-                              class="img--responsive"
+                              class="img--responsive img--lazy"
                               src=""
                             />
                           </picture>
@@ -865,7 +769,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             class="business-card__title"
                           >
                             
-                Ultimaker
+                Ultimaker6
             
                           </h4>
                            
@@ -906,7 +810,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                     class="button--secondary list-section-list__button"
                   >
                     Show all (7)
-                         
+                    
                   </button>
                 </div>
               </div>
@@ -937,30 +841,18 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           class="business-card__image-wrapper"
                         >
                           <picture>
-                            <source
-                              media="(min-width: 1201px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(min-width: 1025px)"
-                              srcset="/generator/svg/120/120"
+                              srcset=""
                             />
                              
-                            <source
-                              media="(min-width: 768px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 569px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
-                            <source
-                              media="(min-width: 481px)"
-                              srcset="/generator/svg/120/120"
-                            />
+                            <!---->
                              
                             <source
                               media="(max-width: 480px)"
@@ -969,7 +861,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                              
                             <img
                               alt=""
-                              class="img--responsive"
+                              class="img--responsive img--lazy"
                               src=""
                             />
                           </picture>
@@ -982,7 +874,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             class="business-card__title"
                           >
                             
-                Ultimaker
+                Ultimaker7
             
                           </h4>
                            
