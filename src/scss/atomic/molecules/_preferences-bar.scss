@@ -23,6 +23,7 @@
     .settings-selector__edit-button {
         @extend .preferences-bar__button;
         color: $colorMain;
+        margin-top: 5px;
 
         &:hover,
         &:focus,
