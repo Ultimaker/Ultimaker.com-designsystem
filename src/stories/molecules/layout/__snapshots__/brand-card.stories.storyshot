@@ -23,7 +23,7 @@ exports[`Storyshots Molecules|layout/cards Brand card 1`] = `
              
             <source
               media="(min-width: 768px)"
-              srcset="/generator/svg/400/400"
+              srcset=""
             />
              
             <!---->
@@ -79,30 +79,18 @@ exports[`Storyshots Molecules|layout/cards Business Card 1`] = `
             class="business-card__image-wrapper"
           >
             <picture>
-              <source
-                media="(min-width: 1201px)"
-                srcset="/generator/svg/120/120"
-              />
+              <!---->
                
               <source
                 media="(min-width: 1025px)"
-                srcset="/generator/svg/120/120"
+                srcset=""
               />
                
-              <source
-                media="(min-width: 768px)"
-                srcset="/generator/svg/120/120"
-              />
+              <!---->
                
-              <source
-                media="(min-width: 569px)"
-                srcset="/generator/svg/120/120"
-              />
+              <!---->
                
-              <source
-                media="(min-width: 481px)"
-                srcset="/generator/svg/120/120"
-              />
+              <!---->
                
               <source
                 media="(max-width: 480px)"
@@ -111,7 +99,7 @@ exports[`Storyshots Molecules|layout/cards Business Card 1`] = `
                
               <img
                 alt=""
-                class="img--responsive"
+                class="img--responsive img--lazy"
                 src=""
               />
             </picture>
