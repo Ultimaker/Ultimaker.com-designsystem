@@ -15,7 +15,7 @@ export default class ResponsivePicture extends Vue {
     @Prop({ type: [String, Object], required : false }) tabletWidth!: string|object;
     @Prop({ type: [String, Object], required : false }) mobileXlWidth!: string|object;
     @Prop({ type: [String, Object], required : false }) mobileLWidth!: string|object;
-    @Prop({ type: [String, Object], required : false }) mobileWidth!: string|object;
+    @Prop({ type: [String, Object], required : true }) mobileWidth!: string|object;
     @Prop({ type: Boolean, required : false, default: true }) lazy!:boolean;
     @Prop({ type: String, required : false, default: '' }) description!:string;
     @Prop({ type: String, required : false, default: '' }) imgClass!:string;

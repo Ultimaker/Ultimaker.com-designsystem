@@ -1,113 +1,65 @@
 <section class="list-section" v-if="cards && cards.length > 0">
-     <header class="list-section__header">
-<<<<<<< HEAD
-           <h3 class="list-section__title">{{ title }}
-               <span class="list-section__count">({{cards.length}})</span>
-               <template v-if="tooltipVisible">
-                   <transition name="tooltip">
-                       <tooltip id="tooltip" block="list-section" v-show="visibleTooltip" v-bind="tooltip">
-                           {{ tooltip.description }}
-                       </tooltip>
-=======
-           <h3 class="list-section__title" v-if="title">{{ title }}
-               <span class="list-section__count">({{cards.length}})</span>
-               <template v-if="tooltip">
-                   <transition name="tooltip">
-                       <Tooltip class="section-tooltip" block="list-section" v-if="visibleTooltip" v-bind="tooltip">
-                           {{ tooltip.description }}
-                       </Tooltip>
->>>>>>> 76e1b16... feat(resellers):
-                   </transition>
-               </template>
-           </h3>
-           <content-link
-               class="link list-section__info-link"
-<<<<<<< HEAD
-               :icon="tooltip ? tooltip.icon.toLowerCase() : 'info'"
-=======
-               :icon="tooltip.icon"
->>>>>>> 76e1b16... feat(resellers):
-               mod="reversed"
-               @click.native.prevent="toggleTooltip"
-               @blur.native.prevent="hideTooltip"
-               role="button"
-               aria-describedby="tooltip"
-<<<<<<< HEAD
-               v-if="tooltipVisible">
-=======
-               v-if="tooltip">
->>>>>>> 76e1b16... feat(resellers):
-               {{ tooltip.label }}
-           </content-link>
-       </header>
-     <ul class="list-section-list">
-          <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
-               <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+    <header class="list-section__header">
+        <h3 class="list-section__title" v-if="title">{{ title }}
+            <span class="list-section__count">({{cards.length}})</span>
+            <template v-if="tooltip">
+                <transition name="tooltip">
+                    <Tooltip class="section-tooltip" block="list-section" v-if="visibleTooltip" v-bind="tooltip">
+                        {{ tooltip.description }}
+                    </Tooltip>
+                </transition>
+            </template>
+        </h3>
+        <content-link
+            class="link list-section__info-link"
+            :icon="tooltip.icon"
+            mod="reversed"
+            @click.native.prevent="toggleTooltip"
+            @blur.native.prevent="hideTooltip"
+            role="button"
+            aria-describedby="tooltip"
+            v-if="tooltip">
+            {{ tooltip.label }}
+        </content-link>
+    </header>
+    <ul class="list-section-list">
+        <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
+            <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                  v-for="(card, index) in cards"
-<<<<<<< HEAD
-                 v-if="index < limit">
-                    <li :key="index" class="list-section-list__item">
-
-                        <component :is="card.type"
-                                   v-bind="card"
-                                   >
-                        </component>
-
-
-                    </li>
-               </div>
-               <template v-if="cards.length > limit && !showHiddenItems">
-                    <div class="flexgrid__cell flexgrid__cell--material-list__button--center">
-=======
                  v-if="index < showMax">
-                    <li :key="index" ref="visible" class="list-section-list__item">
-                        <component :is="card.type"
-                                   v-bind="card">
-                        </component>
-                    </li>
-               </div>
-               <template v-if="cards.length > showMax && !showHiddenItems">
-                    <div class="flexgrid__cell flexgrid__cell--list-section__button--center">
->>>>>>> 76e1b16... feat(resellers):
-                         <button class="button--secondary list-section-list__button"
-                                 @click="showHidden">{{ showCount() }}
-                         </button>
-                    </div>
-               </template>
-          </div>
-          <transition-group @before-enter="beforeEnter"
+                <li :key="index" ref="visible" class="list-section-list__item">
+                    <component :is="card.type"
+                               v-bind="card">
+                    </component>
+                </li>
+            </div>
+            <template v-if="cards.length > showMax && !showHiddenItems">
+                <div class="flexgrid__cell flexgrid__cell--list-section__button--center">
+                    <button class="button--secondary list-section-list__button"
+                            @click="showHidden">{{ showCount() }}
+                    </button>
+                </div>
+            </template>
+        </div>
+        <transition-group @before-enter="beforeEnter"
                           @enter="enter"
                           tag="div"
                           :css="false"
-<<<<<<< HEAD
-                          class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row" id="newSection">
-               <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                    v-for="(card, index) in cards"
-                    v-if="index >= limit"
-                    v-show="showHiddenItems"
-                    :key="index"
-=======
                           class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden">
-               <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                    v-for="(card, index) in cards"
-                    v-if="index >= showMax"
-                    v-show="showHiddenItems"
-                    :key="card.title + index"
->>>>>>> 76e1b16... feat(resellers):
-                    :data-index="index">
-                    <li class="list-section-list__item">
+            <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                 v-for="(card, index) in cards"
+                 v-if="index >= showMax"
+                 v-show="showHiddenItems"
+                 :key="card.title + index"
+                 :data-index="index">
+                <li class="list-section-list__item">
 
-                        <component :is="card.type"
-                                   v-bind="card">
-                        </component>
-<<<<<<< HEAD
-                         <!-- CARD LOOP 2 -->
+                    <component :is="card.type"
+                               v-bind="card">
+                    </component>
 
-=======
->>>>>>> 76e1b16... feat(resellers):
-
-                    </li>
-               </div>
-          </transition-group>
-     </ul>
+                </li>
+            </div>
+        </transition-group>
+    </ul>
 </section>
