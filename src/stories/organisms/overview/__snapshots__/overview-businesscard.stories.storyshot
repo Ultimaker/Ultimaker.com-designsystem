@@ -11,7 +11,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
       class="story__organism"
     >
       <article
-        class="organism overview"
+        class="organism overview demo-rhythm-single"
         overview="[object Object]"
       >
         <section
@@ -24,7 +24,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
           </h2>
            
           <p
-            class="overview__subtitle"
+            class="subtitle overview__subtitle"
           >
             Or just get a subtitle
           </p>

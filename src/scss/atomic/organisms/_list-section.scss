@@ -15,10 +15,12 @@ $cardMobileMarginBottom: $buildingUnit;
 }
 
 .list-section__header {
-    @include font-ratio-rhythm(sec-xs);
+    @include font-line-ratio(sec-xs);
+    margin-bottom: $buildingUnit * 1.5;
 
     @include min-tablet() {
-        @include font-ratio-rhythm(sec-s);
+        @include font-line-ratio(sec-s);
+        margin-bottom: $buildingUnit * 2.5;
     }
 
     .list-section__info-link {
