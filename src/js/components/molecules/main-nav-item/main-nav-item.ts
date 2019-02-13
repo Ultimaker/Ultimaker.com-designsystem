@@ -1,7 +1,5 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
-import ViewportUtility from 'utils/viewport';
-
 import { LinkList as LinkListInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/link-list/LinkList';
 import BrowserCapabilities from 'utils/browser-capabilities';
 
