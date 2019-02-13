@@ -1,7 +1,7 @@
-<article class="organism overview">
+<article class="organism overview demo-rhythm-single">
     <section class="container">
         <h2 class="overview__title">{{ title }}</h2>
-        <p class="overview__subtitle" v-if="subtitle">{{ subtitle }}</p>
+        <p class="subtitle overview__subtitle" v-if="subtitle">{{ subtitle }}</p>
 
         <template v-for="(section, index) in sections">
             <component :is="section.type"
