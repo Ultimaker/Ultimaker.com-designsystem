@@ -6,10 +6,11 @@ import { LinkList as LinkListInterface } from '@ultimaker/ultimaker.com-model-de
 import BrowserCapabilities from 'utils/browser-capabilities';
 
 @Component({
-    name: 'main-nav',
-    template: require('./main-nav.html'),
+    name: 'main-nav-item',
+    template: require('./main-nav-item.html'),
 })
 
-export default class MainNav extends Vue  {
+export default class MainNavItem extends Vue  {
     @Prop({ type: Object, required: true }) linkList!: LinkListInterface;
     @Prop({ type: Boolean, required: false }) mainNavOpen?: boolean;
+}
