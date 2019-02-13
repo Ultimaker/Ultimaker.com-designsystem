@@ -1,6 +1,5 @@
-import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 import { TweenLite, Power3 } from 'gsap';
-import Defaults from 'constants/defaults';
 
 import { Overview as OverviewInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/overview/Overview';
 
