@@ -1,0 +1,46 @@
+<header class="header" :class="headerClasses" role="banner" v-size-emitter="'header'">
+    <div class="header__top" :class="{'header--mobile-inverted': mainNavOpen}">
+        <router-link to="/" class="home-link" aria-label="Ultimaker homepage">
+            <icon class="home-link__logo" icon-name="logo-ultimaker"></icon>
+        </router-link>
+
+        <main-nav v-if="navigation" :link-list="navigation" :main-nav-open="mainNavOpen"></main-nav>
+
+        <nav class="sys-nav" aria-label="quick access">
+            <ul class="sys-nav__list" role="presentation">
+                <li class="sys-nav__item">
+                    <router-link to="/resellers" class="sys-nav__link">
+                        <icon class="sys-nav__icon" icon-name="store"></icon>
+                        <span class="sys-nav__label sys-nav__label--hidden-sm">{{labels.orderNow}}</span>
+                    </router-link>
+                </li>
+                <li class="sys-nav__item">
+                    <a class="sys-nav__link"
+                       @click="openSearch"
+                       @keyup.enter="openSearch"
+                       role="button" tabindex="0">
+                        <icon class="sys-nav__icon" icon-name="search"></icon>
+                        <span class="sys-nav__label sys-nav__label--hidden-sm">{{labels.search}}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <transition name="show-assist">
+            <nav-assist class="main-nav__nav-assist" :open-state="mainNavOpen"
+                        @toggle="navAssistToggle" v-show="showCompactMenu"></nav-assist>
+        </transition>
+
+        <transition name="search" @after-enter="handleFocus" @leave="handleFocus">
+            <search-bar class="header__search"
+                        ref="search"
+                        :placeholder="labels.searchPlaceholder"
+                        :open-state="searchOpen"
+                        @close="closeSearch"
+                        v-if="searchOpen">
+            </search-bar>
+        </transition>
+    </div>
+
+    <sub-nav></sub-nav>
+</header>
