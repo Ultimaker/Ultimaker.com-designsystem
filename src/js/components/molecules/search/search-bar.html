@@ -1,7 +1,7 @@
 <form action="" id="search" class="search" @submit.prevent="doSearch">
     <div role="search">
         <div class="search__inputholder">
-            <label for="search__input" class="search__label">Search</label>
+            <label for="search__input" class="search__label">{{label}}</label>
             <input id="search__input" type="text" name="search" :placeholder="placeholder" class="search__input"
                    @blur="onBlur" @keyup.esc="close"
                    v-model="searchValue"
