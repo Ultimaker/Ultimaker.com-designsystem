@@ -20,6 +20,9 @@ export default {
     },
     methods: {
         mapLink: (link) => link.replace(/^\/api\/pages/, '')
+    },
+    created() {
+        throw 'Yo Bobby is in the house';
     }
 };
 
