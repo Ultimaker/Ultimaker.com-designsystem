@@ -14,4 +14,43 @@
             margin: $buildingUnit 0 0 0;
         }
     }
+
+    .container > &  {
+        @extend  %reset-last-margin;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: $buildingUnit * 5;
+
+        @include min-mobile-xl {
+            text-align: center;
+            display: block;
+        }
+
+        .link--large {
+            vertical-align: baseline;
+        }
+
+        > a  {
+            margin-bottom: $buildingUnit * 2.5;
+            margin-right: 0;
+
+            @include min-tablet() {
+
+                margin-right: $buildingUnit * 2.5;
+                margin-bottom: 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            @include min-tablet() {
+                &.link--large {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
