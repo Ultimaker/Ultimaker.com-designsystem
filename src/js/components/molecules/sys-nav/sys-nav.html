@@ -1,0 +1,19 @@
+<nav class="sys-nav" aria-label="quick access">
+    <ul class="sys-nav__list" role="presentation">
+        <li class="sys-nav__item">
+            <router-link to="/resellers" class="sys-nav__link">
+                <icon class="sys-nav__icon" icon-name="store"></icon>
+                <span class="sys-nav__label sys-nav__label--hidden-sm">{{ orderNowLabel }}</span>
+            </router-link>
+        </li>
+        <li class="sys-nav__item">
+            <a class="sys-nav__link"
+               @click="openSearch"
+               @keyup.enter="openSearch"
+               role="button" tabindex="0">
+                <icon class="sys-nav__icon" icon-name="search"></icon>
+                <span class="sys-nav__label sys-nav__label--hidden-sm">{{ searchLabel }}</span>
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -18,6 +18,7 @@ export {default as Modal} from 'molecules/modal';
 export {default as Pager} from 'molecules/pager';
 export {default as Search} from 'molecules/search';
 export {default as SocialNav} from 'molecules/social-nav';
+export {default as SysNav} from 'molecules/sys-nav';
 export {default as Tab} from 'molecules/tab';
 export {default as Tabs} from 'molecules/tabs';
 export {default as Tag} from 'molecules/tag';
