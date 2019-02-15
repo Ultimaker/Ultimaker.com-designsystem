@@ -1,5 +1,5 @@
 import LocaleSelector from './locale-selector';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 import Defaults from 'constants/defaults';
 
 describe('components', () => {
@@ -23,7 +23,6 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-
             it('should display the countrySelector after toggle', () => {
                 const vm = mount(buildOptions);
 
@@ -40,7 +39,7 @@ describe('components', () => {
                 spyOn(vm, '$emit').and.callThrough();
                 vm.countryInput = Defaults.country;
                 vm.setCountry();
-                expect(vm.$emit).toHaveBeenCalledWith('country-changed', {country: Defaults.country});
+                expect(vm.$emit).toHaveBeenCalledWith('country-changed', { country: Defaults.country });
                 vm.$destroy();
                 done();
             });

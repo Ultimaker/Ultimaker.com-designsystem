@@ -1,5 +1,5 @@
 import LegalNav from './legal-nav';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('molecules', () => {
