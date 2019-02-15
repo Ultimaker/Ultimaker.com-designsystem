@@ -1,0 +1,18 @@
+{
+    "props": {
+        "datasource": {
+            "nl": "Netherlands"
+        },
+        "country": {
+            "name": "Netherlands",
+            "code": "NL",
+            "currency": {
+                "code": "EUR",
+                "symbol": "€"
+            }
+        },
+        "countryInputPlaceholderLabel": "countryInputPlaceholder",
+        "countryDetectedLabel": "countryDetected",
+        "countrySuggestionsLabel": "countrySuggestions"
+    }
+}
