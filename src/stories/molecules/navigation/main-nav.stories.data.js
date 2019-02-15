@@ -1,33 +1,33 @@
 import flyoutData from './flyout.stories.json';
 
 export default {
-    items: [
+    linkList: [
         {
-            itemId: 'nav-one',
-            href: '#nav-one',
-            title: 'Nav section one',
-            sections: flyoutData.sections,
-            active: false
+            lists: flyoutData.lists,
+            listHeading: {
+                label: 'Nav section one',
+                url: '#nav-one'
+            }
         },
         {
-            itemId: 'nav-two',
-            href: '#nav-two',
-            title: 'Nav section two',
-            sections: flyoutData.sections,
-            active: false
+            lists: flyoutData.lists,
+            listHeading: {
+                label: 'Nav section two',
+                url: '#nav-two'
+            }
         },
         {
-            itemId: 'nav-three',
-            href: '#nav-three',
-            title: 'Nav section three',
-            active: false
+            listHeading: {
+                label: 'Nav section three',
+                url: '#nav-three'
+            }
         },
         {
-            itemId: 'nav-four',
-            href: '#nav-four',
-            title: 'Nav section four',
-            sections: flyoutData.sections,
-            active: false
+            lists: flyoutData.lists,
+            listHeading: {
+                label: 'Nav section four',
+                url: '#nav-four'
+            }
         }
     ]
 };

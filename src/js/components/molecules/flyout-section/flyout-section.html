@@ -1,12 +1,12 @@
 <li class="flyout__section" :class="sectionClass">
-    <strong v-if="title" class="flyout__title" :id="itemId">{{ title }}</strong>
+    <strong v-if="listHeading" class="flyout__title" :id="itemId">{{ listHeading.label }}</strong>
     <ul class="flyout__list"
         :aria-labelledby="itemId"
         :aria-haspopup="links.length > maxVisible"
         :aria-expanded="!isCompact || isExpanded">
 
         <li class="flyout__list-item"  v-for="(link, index) in links" v-if="index < maxVisible">
-            <content-link ref="focusable" @click.native="$emit('close')" :href="link.href" class="flyout__link">{{ link.title }}</content-link>
+            <content-link ref="focusable" @click.native="$emit('close')" :href="link.url" class="flyout__link">{{ link.label }}</content-link>
         </li>
 
         <li class="flyout__list-item" v-show="flyoutToggleIsVisible && ! isExpanded">
@@ -20,7 +20,7 @@
 
         <!-- items using v-show so spiders can index the entire menu -->
         <li class="flyout__list-item" v-for="(link, index) in links" v-if="index >= maxVisible" v-show="!isCompact || isExpanded">
-            <content-link ref="focusable"  @click.native="$emit('close')" :href="link.href" class="flyout__link" >{{ link.title }}</content-link>
+            <content-link ref="focusable"  @click.native="$emit('close')" :href="link.url" class="flyout__link" >{{ link.label }}</content-link>
         </li>
 
         <li class="flyout__list-item" v-show="flyoutToggleIsVisible && isExpanded">
@@ -33,7 +33,7 @@
         </li>
     </ul>
 
-    <template v-if="bottomLinks" v-for="bottomLink in bottomLinks">
-        <content-link ref="focusable" @click.native="$emit('close')" :href="bottomLink.href" class="flyout__link--cta-mini" >{{ bottomLink.title }}</content-link>
+    <template v-if="bottomLink">
+        <content-link ref="focusable" @click.native="$emit('close')" :href="bottomLink.url" class="link flyout__link--cta-mini" >{{ bottomLink.label }}</content-link>
     </template>
 </li>

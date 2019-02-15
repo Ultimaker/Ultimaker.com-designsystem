@@ -11,12 +11,12 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 })
 
 export default class MainNav extends Vue  {
-    @Prop({ type: Object, required: true }) linkList!: LinkListInterface;
+    @Prop({ type: Array, required: true }) linkList!: LinkListInterface;
     @Prop({ type: Boolean, required: false }) mainNavOpen?: boolean;
 
     viewportUtil: any = new ViewportUtility();
     showCompactMenu: any  = null;
-    ready: boolean =  false;
+    ready: boolean = false;
     timeout: number = 100;
 
     get classList() {
@@ -33,7 +33,6 @@ export default class MainNav extends Vue  {
     }
 
     beforeMount() {
-        this.ready = false;
         this.viewportUtil.addResizeHandler(this.handleResize);
         if (BrowserCapabilities.isBrowser) {
             this.showCompactMenu = this.viewportUtil.isTablet;
