@@ -1,20 +1,20 @@
-import Vue from 'vue';
-
-const getLink = (links) => {
-    if (!links || !links.item || !links.item.length) {
-        return null;
-    }
-
-    return links.item[0].href;
-};
-
 export default {
     name: 'footer-content',
     template: require('./footer-content.html'),
-    data: () => ({
-        countrySelectorOpen: false,
-        countryInput: null
-    }),
+    data() {
+        return {
+            localeSelector: {
+                country: this.country,
+                datasource: {
+                    nl: 'Netherlands',
+                    be: 'Belgium'
+                },
+                countryInputPlaceholderLabel: this.globalLabels.countryInputPlaceholder,
+                countryDetectedLabel: this.globalLabels.countryDetected,
+                countrySuggestionsLabel: this.globalLabels.countrySuggestions
+            }
+        };
+    },
     props: {
         minorNav: {
             type: Object,
@@ -32,43 +32,5 @@ export default {
             type: Object,
             required: true
         }
-    },
-    computed: {
-        currentCountryLabel() {
-            if (this.country && this.country.currency && this.country.currency.symbol) {
-                return `${ this.country.name } - ${ this.country.currency.symbol }`;
-            } else if (this.country) {
-                return `${ this.country.name }`;
-            }
-
-            return `Please select your country`;
-        },
-        currentCountryAriaLabel() {
-            return `Change your country, currently: ${ this.country.name }`;
-        }
-    },
-    methods: {
-        init() {
-            this.countryInput = this.country;
-        },
-        toggleCountrySelector() {
-            this.countrySelectorOpen = !this.countrySelectorOpen;
-            if (this.countrySelectorOpen) {
-                Vue.nextTick(() => {
-                    this.$refs.countryselector.focus();
-                });
-            }
-        },
-        setCountry() {
-            this.$emit('country-changed', {country: this.countryInput});
-            this.toggleCountrySelector();
-        },
-        mapLinks: (linkList) => linkList.map(link => ({
-            title: link.title,
-            href: getLink(link.links) || '#'
-        }))
-    },
-    beforeMount() {
-        this.init();
     }
 };
