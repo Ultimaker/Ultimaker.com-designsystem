@@ -1,0 +1,24 @@
+<div class="locale-selector">
+    <icon-button @click="toggleCountrySelector" v-show="!countrySelectorOpen"
+                 icon-name="geo"
+                 class="icon-button--small locale-selector__edit--buton"
+                 :aria-label="currentCountryAriaLabel">
+        {{ currentCountryLabel }}
+    </icon-button>
+
+    <icon-button v-show="countrySelectorOpen"
+                 icon-name="geo"
+                 class="icon-button--small locale-selector__edit--buton"
+                 aria-label="change your country">
+    </icon-button>
+
+    <country-selector class="footer__country-selector" ref="countrySelector" v-if="countrySelectorOpen"
+                      :placeholder="countryInputPlaceholderLabel"
+                      :countryDetected="countryDetectedLabel"
+                      :countrySuggestions="countrySuggestionsLabel"
+                      :datasource="datasource"
+                      @close="toggleCountrySelector"
+                      @input="setCountry"
+                      v-model="countryInput">
+    </country-selector>
+</div>

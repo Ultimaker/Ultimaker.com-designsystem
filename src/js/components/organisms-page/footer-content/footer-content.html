@@ -1,50 +1,19 @@
 <footer class="footer">
     <div class="footer__container">
-        <!--Footer upper part-->
         <div class="footer__primary">
-            <!--Footer logo-->
             <router-link to="/" class="branded-logo footer__branded-logo" aria-label="Ultimaker homepage">
                 <icon class="branded-logo__robot" icon-name="robot-ultimaker"></icon>
                 <icon class="branded-logo__logo" icon-name="logo-ultimaker"></icon>
             </router-link>
 
-            <!--End footer logo-->
-
             <footer-nav :minor-nav="minorNav"></footer-nav>
         </div>
-        <!--End footer upper part-->
 
-        <!--Footer secondary part-->
         <div class="footer__secondary">
             <social-nav></social-nav>
-
-            <!--Footer locale-->
-            <div class="footer__locale-selector">
-                <icon-button @click="toggleCountrySelector" v-show="!countrySelectorOpen"
-                             icon-name="geo"
-                             class="icon-button--small locale-selector__edit--buton"
-                             :aria-label="currentCountryAriaLabel">
-                    {{ currentCountryLabel }}
-                </icon-button>
-
-                <icon-button v-show="countrySelectorOpen"
-                             icon-name="geo"
-                             class="icon-button--small locale-selector__edit--buton"
-                             aria-label="change your country">
-                </icon-button>
-                <country-selector class="footer__country-selector" ref="countryselector" v-if="countrySelectorOpen"
-                                  :placeholder="globalLabels.countryInputPlaceholder"
-                                  :countryDetected="globalLabels.countryDetected"
-                                  :countrySuggestions="globalLabels.countrySuggestions"
-                                  @close="toggleCountrySelector"
-                                  @input="setCountry"
-                                  v-model="countryInput">
-                </country-selector>
-            </div>
-            <!--End footer locale-->
+            <locale-selector class="footer__locale-selector" v-bind="localeSelector"></locale-selector>
         </div>
 
-        <!--End footer lower part-->
         <div class="footer__tertiary">
             <legal-nav class="footer__legal" :legal-nav="legalNav" :copyright-label="globalLabels.copyright"></legal-nav>
         </div>
