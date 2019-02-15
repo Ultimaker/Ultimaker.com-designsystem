@@ -46,17 +46,7 @@
 
         <!--End footer lower part-->
         <div class="footer__tertiary">
-            <div class="legal footer__legal">
-                <p class="legal__copyright-label">
-                    <small v-html="globalLabels.copyright"></small>
-                </p>
-
-                <template v-if="legalNav && legalNav.children">
-                    <nav class="legal__nav">
-                        <content-link-list :links="mapLinks(legalNav.children)" block="legal"></content-link-list>
-                    </nav>
-                </template>
-            </div>
+            <legal-nav class="footer__legal" :legal-nav="legalNav" :copyright-label="globalLabels.copyright"></legal-nav>
         </div>
     </div>
 </footer>
