@@ -28,14 +28,6 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should render component with properties', () => {
-                const vm = mount(buildOptions);
-
-                expect(vm.$el.querySelectorAll('.footer-nav__column').length).toBeGreaterThanOrEqual(1);
-                expect(Object.keys(data.properties).length).toEqual(Object.keys(vm._props).length);
-                vm.$destroy();
-            });
-
             it('should display the countrySelector after toggle', () => {
                 const vm = mount(fixture.countrySettings);
 
