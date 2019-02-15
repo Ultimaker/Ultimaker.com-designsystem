@@ -1216,7 +1216,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                             >
                               <a
                                 class="router-link-exact-active router-link-active footer-nav__link"
-                                href="#"
+                                href="#/"
                               >
                                 <!---->
                                  
@@ -1232,7 +1232,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                             >
                               <a
                                 class="router-link-exact-active router-link-active footer-nav__link"
-                                href="#"
+                                href="#/"
                               >
                                 <!---->
                                  
@@ -1248,7 +1248,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                             >
                               <a
                                 class="router-link-exact-active router-link-active footer-nav__link"
-                                href="#"
+                                href="#/"
                               >
                                 <!---->
                                  
@@ -1285,7 +1285,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                             >
                               <a
                                 class="router-link-exact-active router-link-active footer-nav__link"
-                                href="/api/pages/materials/ultimaker-cpe"
+                                href="#/"
                               >
                                 <!---->
                                  
@@ -1301,7 +1301,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                             >
                               <a
                                 class="router-link-exact-active router-link-active footer-nav__link"
-                                href="/api/pages/materials/ultimaker-pla"
+                                href="#/"
                               >
                                 <!---->
                                  
@@ -1317,7 +1317,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                             >
                               <a
                                 class="router-link-exact-active router-link-active footer-nav__link"
-                                href="#"
+                                href="#/"
                               >
                                 <!---->
                                  
@@ -1333,7 +1333,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                             >
                               <a
                                 class="router-link-exact-active router-link-active footer-nav__link"
-                                href="#"
+                                href="#/"
                               >
                                 <!---->
                                  
@@ -1372,7 +1372,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         >
                           <a
                             class="router-link-exact-active router-link-active footer-nav__link"
-                            href="#"
+                            href="#/"
                           >
                             <!---->
                              
@@ -1388,7 +1388,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         >
                           <a
                             class="router-link-exact-active router-link-active footer-nav__link"
-                            href="#"
+                            href="#/"
                           >
                             <!---->
                              
@@ -1404,7 +1404,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         >
                           <a
                             class="router-link-exact-active router-link-active footer-nav__link"
-                            href="#"
+                            href="#/"
                           >
                             <!---->
                              
@@ -1420,7 +1420,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         >
                           <a
                             class="router-link-exact-active router-link-active footer-nav__link"
-                            href="#"
+                            href="#/"
                           >
                             <!---->
                              
@@ -1436,7 +1436,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         >
                           <a
                             class="router-link-exact-active router-link-active footer-nav__link"
-                            href="#"
+                            href="#/"
                           >
                             <!---->
                              
@@ -1452,7 +1452,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         >
                           <a
                             class="router-link-exact-active router-link-active footer-nav__link"
-                            href="#"
+                            href="#/"
                           >
                             <!---->
                              
@@ -1468,7 +1468,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         >
                           <a
                             class="router-link-exact-active router-link-active footer-nav__link"
-                            href="#"
+                            href="#/"
                           >
                             <!---->
                              
@@ -1484,7 +1484,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         >
                           <a
                             class="router-link-exact-active router-link-active footer-nav__link"
-                            href="#"
+                            href="#/"
                           >
                             <!---->
                              
@@ -1575,7 +1575,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
               </nav>
                
               <div
-                class="footer__locale-selector"
+                class="locale-selector footer__locale-selector"
               >
                 <a
                   aria-label="Change your country, currently: Netherlands"
@@ -1589,8 +1589,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     class="icon-button__label"
                   >
                     
-                    Netherlands - €
-                
+        Netherlands - €
+    
                   </span>
                 </a>
                  
@@ -1635,7 +1635,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     >
                       <a
                         class="router-link-exact-active router-link-active legal__link"
-                        href="#"
+                        href="#/"
                       >
                         <!---->
                          
@@ -1651,7 +1651,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     >
                       <a
                         class="router-link-exact-active router-link-active legal__link"
-                        href="#"
+                        href="#/"
                       >
                         <!---->
                          

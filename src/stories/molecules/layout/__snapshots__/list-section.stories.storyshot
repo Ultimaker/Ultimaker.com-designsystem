@@ -117,7 +117,7 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
                         class="business-card__property"
                       >
                         
-                5  Showrooms
+                5 Showrooms
             
                       </p>
                     </div>
@@ -203,7 +203,7 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
                         class="business-card__property"
                       >
                         
-                5  Showrooms
+                5 Showrooms
             
                       </p>
                     </div>
