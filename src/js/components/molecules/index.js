@@ -7,6 +7,7 @@ export {default as CtaBlock} from 'molecules/cta-block';
 export {default as FauxVerticalScroll} from 'molecules/faux-vertical-scroll';
 export {default as Flyout} from 'molecules/flyout';
 export {default as FlyoutSection} from 'molecules/flyout-section';
+export {default as FooterNav} from 'molecules/footer-nav';
 export {default as IconButton} from 'molecules/icon-button';
 export {default as MainNav} from 'molecules/main-nav';
 export {default as MainNavItem} from 'molecules/main-nav-item';
