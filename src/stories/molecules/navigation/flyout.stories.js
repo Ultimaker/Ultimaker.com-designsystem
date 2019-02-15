@@ -13,7 +13,7 @@ storiesOf('Molecules|navigation', module)
             return {
                 data: () => ({
                     isCompact,
-                    sections: flyoutData.sections
+                    lists: flyoutData.lists
                 }),
                 template: require('./flyout.stories.html')
             };
