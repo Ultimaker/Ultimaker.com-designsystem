@@ -1,123 +1,125 @@
 {
-    "title": "a title",
+    "listHeading": {
+        "label": "a title"
+    },
     "links": [
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         }
     ],
-    "bottomLinks": [{
-        "title": "bottomlink",
-        "href:": "/another/link"
-    }],
+    "bottomLink": {
+        "label": "Compate Items",
+        "url": "/printers"
+    },
     "linksOneColumn": [
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         }
     ],
     "linksTwoColumns": [
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         }
     ],
     "linksThreeColumns": [
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         },
         {
-            "title": "another link",
-            "href:": "/another/link"
+            "label": "another link",
+            "url:": "/another/link"
         },
         {
-            "title": "a link",
-            "href:": "/a/link"
+            "label": "a link",
+            "url:": "/a/link"
         }
     ]
 }

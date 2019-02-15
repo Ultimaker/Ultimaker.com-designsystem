@@ -1,14 +1,14 @@
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 import SysNav from './sys-nav';
 
-fdescribe('components', () => {
+describe('components', () => {
     describe('molecules', () => {
         describe('sys-nav', () => {
             const mount = build(SysNav, {
                 props: {
                     searchLabel: 'Search',
                     orderNowLabel: 'Order now',
-                }
+                },
             });
 
             it('should render a system navigation', () => {

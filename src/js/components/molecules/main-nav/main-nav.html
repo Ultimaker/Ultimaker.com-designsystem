@@ -2,9 +2,11 @@
     <nav key="large-menu" class="main-nav" :class="classList" aria-label="site" v-if="ready">
         <transition name="menu-open">
             <ul class="main-nav__list" role="presentation" v-show="(!showCompactMenu || mainNavOpen)">
-                <main-nav-item v-if="linkList && linkList.lists.length" ref="navItem"
-                    v-for="(list, index) in linkList.lists" :key="index"
+                <main-nav-item v-if="linkList" ref="navItem"
+                    v-for="(list, index) in linkList" :key="index"
                     :is-compact="showCompactMenu"
+                    :active="false"
+                    :itemId="'nav-' + index"
                     v-bind="list">
                 </main-nav-item>
             </ul>

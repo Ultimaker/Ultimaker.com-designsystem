@@ -99,7 +99,7 @@ describe('components', () => {
 
                 const vm = mount({
                     props: {
-                        sections: [],
+                        lists: [],
                         isCompact: false
                     }
                 });
