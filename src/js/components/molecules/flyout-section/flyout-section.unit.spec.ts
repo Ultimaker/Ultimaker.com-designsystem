@@ -1,16 +1,16 @@
 /* eslint-disable max-nested-callbacks */
 import FlyoutSection from './flyout-section';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('molecules', () => {
         describe('flyout-section', () => {
-            const fixture = require('./flyout-section.unit.spec.json'),
-                mount = build(FlyoutSection, {
-                    components: {
-                        'content-link': `<div><slot></slot></div>`
-                    }
-                });
+            const fixture = require('./flyout-section.unit.spec.json');
+            const mount = build(FlyoutSection, {
+                components: {
+                    'content-link': '<div><slot></slot></div>',
+                },
+            });
 
             it('should render a "flyout-section"', () => {
                 const vm = mount({});
@@ -21,39 +21,49 @@ describe('components', () => {
 
             it('should render a title', () => {
                 const vm = mount({
-                        props: {
-                            title: fixture.title,
-                            links: fixture.links
-                        }
-                    }),
-                    title = vm.$el.querySelector('.flyout__title');
+                    props: {
+                        listHeading: fixture.listHeading,
+                        links: fixture.links,
+                    },
+                });
+
+                const title = vm.$el.querySelector('.flyout__title');
 
                 expect(title).toBeTruthy();
-                expect(title.textContent).toEqual(vm.title);
+                expect(title.textContent).toEqual(vm.listHeading.label);
                 vm.$destroy();
             });
 
             it('should render a list of links', () => {
                 const vm = mount({
-                        props: {
-                            links: fixture.links,
-                            bottomLinks: fixture.bottomLinks
-                        }
-                    }),
-                    links = vm.$el.querySelectorAll('.flyout__link'),
-                    bottomLinks = vm.$el.querySelectorAll('.flyout__link--cta-mini');
+                    props: {
+                        links: fixture.links,
+                    },
+                });
+                const links = vm.$el.querySelectorAll('.flyout__link');
 
                 expect(links.length).toBe(fixture.links.length);
-                expect(bottomLinks.length).toBe(fixture.bottomLinks.length);
-                expect(links[0].textContent).toEqual(fixture.links[0].title);
+                expect(links[0].textContent).toEqual(fixture.links[0].label);
                 vm.$destroy();
+            });
+
+            it('should not render a bottomLink if not provided', () => {
+                const vm = mount({
+                    props: {
+                        links: fixture.links,
+                    },
+                });
+
+                const bottomLink = vm.$el.querySelectorAll('.flyout__link--cta-mini');
+
+                expect(bottomLink.length).toBe(0);
             });
 
             it('should render 1 column if amount of items is less or equal than max column items', () => {
                 const vm = mount({
                     props: {
-                        links: fixture.linksOneColumn
-                    }
+                        links: fixture.linksOneColumn,
+                    },
                 });
 
                 expect(vm.sectionClass).not.toContain(vm.columnClassDouble);
@@ -64,8 +74,8 @@ describe('components', () => {
             it('should render 2 columns if amount of items is more than and less than double the amount of max column items', () => {
                 const vm = mount({
                     props: {
-                        links: fixture.linksTwoColumns
-                    }
+                        links: fixture.linksTwoColumns,
+                    },
                 });
 
                 expect(vm.sectionClass).toContain(vm.columnClassDouble);
@@ -76,8 +86,8 @@ describe('components', () => {
             it('should render 3 columns if amount of items is more than double the amount of max column items', () => {
                 const vm = mount({
                     props: {
-                        links: fixture.linksThreeColumns
-                    }
+                        links: fixture.linksThreeColumns,
+                    },
                 });
 
                 expect(vm.sectionClass).not.toContain(vm.columnClassDouble);
@@ -89,8 +99,8 @@ describe('components', () => {
                 const vm = mount({
                     props: {
                         isCompact: true,
-                        links: fixture.linksTwoColumns
-                    }
+                        links: fixture.linksTwoColumns,
+                    },
                 });
 
                 expect(vm.isExpanded).toBeFalsy();
@@ -105,8 +115,8 @@ describe('components', () => {
             it('should be able change the focus', async(done) => {
                 const vm = mount({
                     props: {
-                        links: fixture.linksTwoColumns
-                    }
+                        links: fixture.linksTwoColumns,
+                    },
                 });
                 let operationResult;
 
@@ -126,7 +136,7 @@ describe('components', () => {
                 await vm.$nextTick();
                 expect(vm.focusIndex).toEqual(0);
 
-                operationResult= vm.selectPrevLink();
+                operationResult = vm.selectPrevLink();
                 await vm.$nextTick();
                 expect(operationResult).toEqual(false);
                 expect(vm.focusIndex).toEqual(0);
@@ -142,8 +152,8 @@ describe('components', () => {
             it('should be able to focus on a specified link', async(done) => {
                 const vm = mount({
                     props: {
-                        links: fixture.linksTwoColumns
-                    }
+                        links: fixture.linksTwoColumns,
+                    },
                 });
 
                 vm.setFocusIndex(-100);

@@ -1,93 +1,77 @@
 {
-    "sections": [
+    "lists": [
         {
-            "title": "Flyout title one",
-            "itemId": "main_1-section_0",
-            "href": null,
+            "listHeading": {
+                "label": "Flyout title one"
+            },
             "links": [
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_3",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 }
             ]
         },
         {
-            "title": "Flyout title two",
-            "itemId": "main_1-section_0",
-            "href": null,
+            "listHeading": {
+                "label": "Flyout title two"
+            },
             "links": [
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_1",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 },
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_2",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 },
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_3",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 },
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_4",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 },
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_5",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 },
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_6",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 }
             ],
-            "bottomLinks": [
-                {
-                    "title": "Compare items",
-                    "itemId": "main_1-section_0-item_0",
-                    "href": "/printers"
-                }
-            ]
+            "bottomLink": {
+                "label": "Compate Items",
+                "url": "/printers"
+            }
         },
         {
-            "title": "Flyout title three",
-            "itemId": "main_1-section_0",
-            "href": null,
+            "listHeading": {
+                "label": "Flyout title three"
+            },
             "links": [
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_1",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 },
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_2",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 },
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_3",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 },
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_4",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 },
                 {
-                    "title": "Flyout item",
-                    "itemId": "main_1-section_1-item_5",
-                    "href": "#"
+                    "label": "Flyout item",
+                    "url": "#"
                 }
-            ],
-            "bottomLinks": []
+            ]
         }
     ]
 }
