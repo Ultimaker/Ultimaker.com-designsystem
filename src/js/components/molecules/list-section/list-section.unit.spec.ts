@@ -5,7 +5,10 @@ import { build } from 'vuenit';
 const baseProps = {
     type: 'ListSection',
     title: 'Title',
-    limit: 6,
+    limit: {
+        smallScreen: 3,
+        largeScreen: 6,
+    },
     showAllLabel: 'Show all',
 };
 
@@ -75,19 +78,6 @@ describe('components', () => {
 
                 expect(title).toBeDefined();
                 expect(title.innerText).toContain(baseProps.title);
-                vm.$destroy();
-            });
-
-            it('should NOT render a list-section component if "cards" are not provided', () => {
-                const vm = mount({
-                    props: {
-                        ... baseProps,
-                        cards: [],
-                        tooltip: tooltipProps,
-                    },
-                });
-
-                expect(vm.$el.length).toBe(0);
                 vm.$destroy();
             });
 

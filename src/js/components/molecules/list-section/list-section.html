@@ -1,4 +1,4 @@
-<section class="list-section" v-if="cards && cards.length > 0">
+<section class="list-section">
     <header class="list-section__header">
         <h3 class="list-section__title" v-if="title">{{ title }}
             <span class="list-section__count">({{cards.length}})</span>
@@ -22,18 +22,18 @@
             {{ tooltip.label }}
         </content-link>
     </header>
-    <ul class="list-section-list">
+    <ul class="list-section-list" v-if="cards && cards.length > 0">
         <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
             <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                  v-for="(card, index) in cards"
-                 v-if="index < showMax">
+                 v-if="showMax ? index < showMax : true">
                 <li :key="index" ref="visible" class="list-section-list__item">
                     <component :is="card.type"
                                v-bind="card">
                     </component>
                 </li>
             </div>
-            <template v-if="cards.length > showMax && !showHiddenItems">
+            <template v-if="(cards.length > showMax) && showMax && !showHiddenItems">
                 <div class="flexgrid__cell flexgrid__cell--list-section__button--center">
                     <button class="button--secondary list-section-list__button"
                             @click="showHidden">{{ showCount() }}
@@ -48,12 +48,11 @@
                           class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden">
             <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                  v-for="(card, index) in cards"
-                 v-if="index >= showMax"
+                 v-if="showMax ? index >= showMax : false"
                  v-show="showHiddenItems"
                  :key="card.title + index"
                  :data-index="index">
                 <li class="list-section-list__item">
-
                     <component :is="card.type"
                                v-bind="card">
                     </component>
