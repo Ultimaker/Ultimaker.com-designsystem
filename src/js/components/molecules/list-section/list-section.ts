@@ -7,11 +7,6 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 
 import { ListSection as IListSection } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/sections/ListSection';
 
-interface ShowItemsInterface {
-    smallScreen: number;
-    largeScreen: number;
-}
-
 @Component({
     name: 'ListSection',
     template: require('./list-section.html'),
@@ -30,12 +25,7 @@ export default class ListSection extends Vue implements IListSection {
     showHiddenItems: boolean = false;
     visibleTooltip: boolean = false;
 
-    showMax: number | undefined = 6;
-
-    showItems: ShowItemsInterface = {
-        smallScreen: 3,
-        largeScreen: 6,
-    };
+    showMax: number | undefined = undefined;
 
     lastTopValue: number = 0;
     delayIncrement: number = 0.1;
@@ -58,7 +48,7 @@ export default class ListSection extends Vue implements IListSection {
 
     showCount (): string {
         if (!this.showHiddenItems) {
-            return `${this.showAllLabel} (${this.cards.length})`;
+            return `${this.showAllLabel ? this.showAllLabel : ''} (${this.cards.length})`;
         }
         return this.showAllLabel || '';
     }
@@ -102,13 +92,14 @@ export default class ListSection extends Vue implements IListSection {
     handleResize(): void {
         if (!this.showHiddenItems && this.viewportUtil.isMobile) {
             this.showMax = (
-                this.limit && this.limit.smallScreen ? this.limit.smallScreen : this.showItems.smallScreen
+                this.limit && this.limit.smallScreen ? this.limit.smallScreen : undefined
             );
         } else {
             this.showMax = (
-                this.limit && this.limit.largeScreen ? this.limit.largeScreen : this.showItems.largeScreen
+                this.limit && this.limit.largeScreen ? this.limit.largeScreen : undefined
             );
         }
+
     }
 
     beforeMount(): void {
