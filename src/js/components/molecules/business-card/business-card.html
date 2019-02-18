@@ -8,7 +8,7 @@
                 {{ title }}
             </h4>
 
-            <p class="business-card__property"  v-for="(property) in properties">
+            <p class="business-card__property" v-if="properties" v-for="(property) in properties">
                 {{ property.value }} {{ property.label }}
             </p>
         </div>
