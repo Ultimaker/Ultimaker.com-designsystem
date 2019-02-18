@@ -1,4 +1,4 @@
-import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import ViewportUtility from 'utils/viewport';
 import PublicEventService from 'src/js/plugins/public-event-service';
@@ -14,8 +14,9 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
     @Prop({ type: Array, required: true }) navigation!: PageHeaderInterface['navigation'];
     @Prop({ type: Object, required: true }) cta!: PageHeaderInterface['cta'];
     @Prop({ type: Object, required: true }) search!: PageHeaderInterface['search'];
+    @Prop({ type: Object, required: true }) labels!: object;
     @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
-    @Prop({ type: Function, required: true }) setMainNavOpen!: any;
+    // @Prop({ type: Function, required: true }) setMainNavOpen!: any;
 
     assistUsed: boolean =  false;
     viewportUtil: any =  new ViewportUtility();
@@ -45,9 +46,10 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
     navAssistToggle() {
         if (this.searchOpen || this.mainNavOpen) {
             this.searchOpen = false;
-            this.setMainNavOpen(false);
+            this.$emit('toggle-nav', false);
         } else {
-            this.setMainNavOpen(true);
+            // this.setMainNavOpen(true);
+            this.$emit('toggle-nav', true);
             this.searchOpen = false;
         }
     }

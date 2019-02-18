@@ -4,8 +4,9 @@
             <icon class="home-link__logo" icon-name="logo-ultimaker"></icon>
         </router-link>
 
-        <main-nav v-if="navigation" :link-list="navigation" :main-nav-open="mainNavOpen"></main-nav>
+        <main-nav v-if="navigation" :link-list="navigation[0].linkList" :main-nav-open="mainNavOpen"></main-nav>
 
+        <!-- <sys-nav @open-search="openSearch" :order-now-label="labels.orderNow" :search-label="labels.search"></sys-nav> -->
         <nav class="sys-nav" aria-label="quick access">
             <ul class="sys-nav__list" role="presentation">
                 <li class="sys-nav__item">
