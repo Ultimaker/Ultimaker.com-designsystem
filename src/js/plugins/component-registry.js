@@ -1,3 +1,5 @@
+import {UniqId} from './uniq-id';
+
 class ComponentRegistry {
     constructor() {
         this.components = [];
@@ -12,13 +14,14 @@ class ComponentRegistry {
         this.directives.push(directive);
     }
 
-    install(Vue) {
+    install(vue) {
+        vue.use(UniqId);
+
         this.directives
-            .filter(d => typeof d.name === 'string')
-            .forEach(d => Vue.directive(d.name, d));
+            .forEach(d => vue.directive(d.name, d));
         this.components
             .filter((c => typeof c.name === 'string' || (c.extendOptions && typeof c.extendOptions.name === 'string')))
-            .forEach(c => Vue.component(c.extendOptions ? c.extendOptions.name : c.name, c));
+            .forEach(c => vue.component(c.extendOptions ? c.extendOptions.name : c.name, c));
     }
 
     listComponents() {
