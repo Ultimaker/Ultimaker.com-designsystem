@@ -1,5 +1,5 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
-import { Link } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/Link';
+import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 
 @Component({
     name: 'flyout-section',
@@ -7,22 +7,23 @@ import { Link } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/
 })
 
 export default class Flyout extends Vue  {
+    @Prop({ type: String, required: true }) label!: string;
+    @Prop({ type: Array, required: false }) items?: NavigationItem[];
+
+    @Prop({ type: Object, required: false }) bottomLink?: object;
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Number, required: false, default: 3 }) maxVisible?: number;
     @Prop({ type: Number, required: false, default: 6 }) maxItemsCol?: number;
 
-    @Prop({ type: Object, required: true }) listHeading!: object;
-    @Prop({ type: Object, required: false }) bottomLink?: object;
     @Prop({ type: String, required: false, default: () => `flyout_title_${ ~~(Math.random() * 10000) }` }) itemId?: string;
-    @Prop({ type: Array, required: true }) links!: Link[];
 
     isExpanded: boolean =  false;
     focusIndex: null | number = null;
     columnClassDouble: string = 'flyout__section--2-columns';
     columnClassTriple: string = 'flyout__section--3-columns';
 
-    get hasItems(): Link[] {
-        return this.links;
+    get hasItems(): NavigationItem[] | undefined {
+        return this.items;
     }
 
     get focusableItems() {
@@ -31,17 +32,17 @@ export default class Flyout extends Vue  {
 
     get moreThanMaxItems(): boolean {
         // @ts-ignore
-        return this.links.length > this.maxItemsCol;
+        return this.items.length > this.maxItemsCol;
     }
 
     get lessThanDoubleMaxItems(): boolean {
         // @ts-ignore
-        return this.links.length <= this.maxItemsCol * 2;
+        return this.items.length <= this.maxItemsCol * 2;
     }
 
     get moreThanDoubleMaxItems(): boolean {
         // @ts-ignore
-        return this.links.length > this.maxItemsCol * 2;
+        return this.items.length > this.maxItemsCol * 2;
     }
 
     get sectionClass(): string {
@@ -58,7 +59,7 @@ export default class Flyout extends Vue  {
 
     get flyoutToggleIsVisible()  {
         // @ts-ignore
-        return this.isCompact && this.links.length > this.maxVisible;
+        return this.isCompact && this.items.length > this.maxVisible;
     }
 
     toggleExpanded(): void {

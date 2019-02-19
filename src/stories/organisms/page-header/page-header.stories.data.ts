@@ -1,11 +1,9 @@
-import linkList from '../../molecules/navigation/main-nav.stories.data';
+import items from '../../molecules/navigation/main-nav.stories.data';
 
 export default {
-    navigation: [
-        {
-            linkList: linkList.linkList
-        }
-    ],
+    navigation: [{
+        items: items.items
+    }],
     cta: {
         label: 'Order Now',
         url: 'en/explore',

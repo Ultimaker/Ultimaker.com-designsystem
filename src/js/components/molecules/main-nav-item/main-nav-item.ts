@@ -1,8 +1,7 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
-import { LinkList as LinkListInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/link-list/LinkList';
+import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 import BrowserCapabilities from 'utils/browser-capabilities';
-import { Link } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/Link';
 
 @Component({
     name: 'main-nav-item',
@@ -10,14 +9,13 @@ import { Link } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/
 })
 
 export default class MainNavItem extends Vue  {
-    // @Prop({ type: Object, required: true }) list!: LinkListInterface;
     @Prop({ type: Boolean, required: false }) mainNavOpen?: boolean;
 
-    @Prop({ type: Object, required: true }) listHeading!: object;
-    @Prop({ type: Object, required: false }) bottomLink?: object;
-    @Prop({ type: Array, required: false }) links?: Link[];
-    @Prop({ type: Array, required: false }) lists?: LinkListInterface[];
+    @Prop({ type: String, required: true }) label!: string;
+    @Prop({ type: String, required: false }) url?: string;
+    @Prop({ type: Array, required: false }) items?: NavigationItem[];
 
+    @Prop({ type: Object, required: false }) bottomLink?: object;
     @Prop({ type: String, required: true }) itemId!: string;
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Boolean, required: true }) active!: boolean;
@@ -39,7 +37,7 @@ export default class MainNavItem extends Vue  {
     }
 
     get toggleIsVisible(): boolean {
-        return !!this.lists && !this.isCompact && this.isTouch;
+        return !!this.items && !this.isCompact && this.isTouch;
     }
 
     focus(): void {

@@ -4,7 +4,7 @@
     <div @keydown.down.prevent="selectFlyoutFirstLink"
          @keydown.tab.shift.exact="hideFlyout"
          @keydown.esc.prevent="hideFlyout">
-        <app-link :to="listHeading.url"
+        <app-link :to="url"
                      ref="parent"
                      class="main-nav__link"
                      @focus="showFlyout"
@@ -13,7 +13,7 @@
                      :aria-controls="itemId"
                      :aria-current="isActive"
                      :aria-expanded="!isCompact && flyoutIsOpen">
-            {{ listHeading.label }}
+            {{ label }}
         </app-link>
     </div>
 
@@ -25,13 +25,13 @@
 
 
     <transition :name="flyoutTransitionName">
-        <flyout :id="itemId" v-if="lists && (isCompact || flyoutIsOpen)" ref="flyout"
+        <flyout :id="itemId" v-if="items && (isCompact || flyoutIsOpen)" ref="flyout"
                 @keydown.esc.native="selectParent"
                 @open="showFlyout"
                 @close="hideFlyout"
                 @main="selectParent"
                 class="flyout--large"
-                :lists="lists"
+                :items="items"
                 :is-compact="isCompact">
         </flyout>
     </transition>

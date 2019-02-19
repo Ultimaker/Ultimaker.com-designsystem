@@ -1,33 +1,25 @@
 import flyoutData from './flyout.stories.json';
 
 export default {
-    linkList: [
+    items: [
         {
-            lists: flyoutData.lists,
-            listHeading: {
-                label: 'Nav section one',
-                url: '#nav-one'
-            }
+            items: flyoutData.items,
+            label: 'Nav section one',
+            url: '#nav-one'
         },
         {
-            lists: flyoutData.lists,
-            listHeading: {
-                label: 'Nav section two',
-                url: '#nav-two'
-            }
+            items: flyoutData.items,
+            label: 'Nav section two',
+            url: '#nav-two'
         },
         {
-            listHeading: {
-                label: 'Nav section three',
-                url: '#nav-three'
-            }
+            label: 'Nav section three',
+            url: '#nav-three'
         },
         {
-            lists: flyoutData.lists,
-            listHeading: {
-                label: 'Nav section four',
-                url: '#nav-four'
-            }
+            items: flyoutData.items,
+            label: 'Nav section four',
+            url: '#nav-four'
         }
     ]
 };

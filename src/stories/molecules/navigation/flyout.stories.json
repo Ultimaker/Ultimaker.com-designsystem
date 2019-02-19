@@ -1,10 +1,8 @@
 {
-    "lists": [
+    "items": [
         {
-            "listHeading": {
-                "label": "Flyout title one"
-            },
-            "links": [
+            "label": "Flyout title one",
+            "items": [
                 {
                     "label": "Flyout item",
                     "url": "#"
@@ -12,10 +10,8 @@
             ]
         },
         {
-            "listHeading": {
-                "label": "Flyout title two"
-            },
-            "links": [
+            "label": "Flyout title two",
+            "items": [
                 {
                     "label": "Flyout item",
                     "url": "#"
@@ -40,17 +36,11 @@
                     "label": "Flyout item",
                     "url": "#"
                 }
-            ],
-            "bottomLink": {
-                "label": "Compate Items",
-                "url": "/printers"
-            }
+            ]
         },
         {
-            "listHeading": {
-                "label": "Flyout title three"
-            },
-            "links": [
+            "label": "Flyout title three",
+            "items": [
                 {
                     "label": "Flyout item",
                     "url": "#"

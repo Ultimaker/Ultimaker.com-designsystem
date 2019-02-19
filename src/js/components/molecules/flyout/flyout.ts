@@ -1,19 +1,19 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { LinkList as LinkListInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/link-list/LinkList';
+import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 @Component({
     name: 'flyout',
     template: require('./flyout.html'),
 })
 
 export default class Flyout extends Vue  {
-    @Prop({ type: Array, required: true }) lists!: LinkListInterface[];
+    @Prop({ type: Array, required: true }) items!: NavigationItem[];
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Boolean, required: false, default: false }) disableKeyboardEvents?: boolean;
 
     sectionIndex: number = 0;
 
     get flyoutSections() {
-        return Array.isArray(this.$refs.lists) ? this.$refs.lists : [this.$refs.lists];
+        return Array.isArray(this.$refs.items) ? this.$refs.items : [this.$refs.items];
     }
 
     open(): void {
