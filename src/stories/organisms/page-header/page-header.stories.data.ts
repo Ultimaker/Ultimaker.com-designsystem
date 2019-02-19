@@ -6,17 +6,13 @@ export default {
             linkList: linkList.linkList
         }
     ],
-    labels: {
-        search: "Search",
-        orderNow: "Order Now",
-        searchPlaceholder: ""
-    },
     cta: {
-        label: 'i am a label',
-        url: 'en/explore'
+        label: 'Order Now',
+        url: 'en/explore',
+        icon: 'icon--store'
     },
     search: {
-        label: 'I am a label',
+        label: 'Search',
         placeholder: 'I am a pleceholder'
     }
 };
