@@ -2,7 +2,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import ViewportUtility from 'utils/viewport';
 
-import { LinkList as LinkListInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/link-list/LinkList';
+import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 import BrowserCapabilities from 'utils/browser-capabilities';
 
 @Component({
@@ -11,7 +11,7 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 })
 
 export default class MainNav extends Vue  {
-    @Prop({ type: Array, required: true }) linkList!: LinkListInterface;
+    @Prop({ type: Array, required: false }) items?: NavigationItem[];
     @Prop({ type: Boolean, required: false }) mainNavOpen?: boolean;
 
     viewportUtil: any = new ViewportUtility();
