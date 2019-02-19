@@ -25,7 +25,7 @@ export default class ListSection extends Vue implements IListSection {
     showHiddenItems: boolean = false;
     visibleTooltip: boolean = false;
 
-    showMax: number | null = null;
+    showMax: number = Number.MAX_SAFE_INTEGER;
 
     lastTopValue: number = 0;
     delayIncrement: number = 0.1;
@@ -92,22 +92,22 @@ export default class ListSection extends Vue implements IListSection {
     handleResize(): void {
         if (!this.showHiddenItems && this.viewportUtil.isMobile) {
             this.showMax = (
-                this.limit && this.limit.smallScreen ? this.limit.smallScreen : null
+                this.limit && typeof this.limit.smallScreen === 'number' ? this.limit.smallScreen : Number.MAX_SAFE_INTEGER
             );
         } else {
             this.showMax = (
-                this.limit && this.limit.largeScreen ? this.limit.largeScreen : null
+                this.limit && typeof this.limit.largeScreen  === 'number' ? this.limit.largeScreen : Number.MAX_SAFE_INTEGER
             );
         }
     }
 
-    beforeMount(): void {
-        this.viewportUtil.addResizeHandler(this.handleResize);
-
-        if (BrowserCapabilities.isBrowser) {
-            this.handleResize();
+    mounted(): void {
+        if (!BrowserCapabilities.isBrowser) {
+            return;
         }
 
+        this.viewportUtil.addResizeHandler(this.handleResize);
+        this.handleResize();
         this.viewportUtil.triggerResize();
 
         setTimeout(() => {
