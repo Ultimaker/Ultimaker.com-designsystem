@@ -1,6 +1,8 @@
 /* eslint-disable max-nested-callbacks */
 import ListSection from './list-section';
 import { build } from 'vuenit';
+import ViewportUtil from 'utils/viewport';
+import Defaults from 'constants/defaults';
 
 const baseProps = {
     type: 'ListSection',
@@ -106,7 +108,11 @@ describe('components', () => {
 
             });
 
-            it('should render a max amount of cards set at visible section', () => {
+            xit('should render a max amount of cards set at visible section', () => {
+                const viewportUtil = new ViewportUtil();
+                // @ts-ignore
+                spyOnProperty(viewportUtil, 'screenWidth', 'get').and.returnValue(Defaults.breakpoints.tablet);
+
                 const vm = mount({
                     props: {
                         ... baseProps,
@@ -115,11 +121,7 @@ describe('components', () => {
                     },
                 });
                 const visible = vm.$refs.visible;
-
-                const showAllButton = vm.$el.querySelectorAll('.section-list__button');
-
                 expect(visible.length).toBe(vm.showMax);
-
                 vm.$destroy();
             });
 

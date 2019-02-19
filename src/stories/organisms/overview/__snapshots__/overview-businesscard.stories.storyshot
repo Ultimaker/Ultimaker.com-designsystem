@@ -47,11 +47,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   (2)
                 </span>
                  
-                <!---->
+                <div
+                  class="tooltip section-tooltip list-section__tooltip"
+                  description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
+                  icon="info"
+                  id="tooltip_636"
+                  label="More info"
+                  style="display: none;"
+                  type="Tooltip"
+                >
+                  
+                        Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed.
+                    
+                </div>
               </h3>
                
               <a
-                aria-describedby="tooltip"
+                aria-describedby="tooltip_636"
                 class="link list-section__info-link router-link-exact-active router-link-active link--reversed link--icon"
                 href="#/"
                 role="button"
@@ -69,6 +81,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
             </header>
              
             <ul
+              aria-label="Title"
               class="list-section-list"
             >
               <div
@@ -280,6 +293,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
             </header>
              
             <ul
+              aria-label="Title"
               class="list-section-list"
             >
               <div
