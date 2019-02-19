@@ -6,11 +6,7 @@ $cardMobileMarginBottom: $buildingUnit;
         margin-bottom: 53px;
     }
     &:last-child {
-        margin-bottom: $cardMobileMarginBottom * -1; //reset margins
-
-        @include min-tablet {
-            margin-bottom: $cardTabletMarginBottom * -1; //reset margins
-        }
+        margin-bottom: 0;
     }
 }
 
