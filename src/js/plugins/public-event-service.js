@@ -26,18 +26,21 @@ class PublicEventService {
 
     static install(Vue) {
         Object.defineProperty(Vue.prototype, '$emitPublic', {
+            configurable: true,
             get() {
                 return PublicEventService.emit;
             }
         });
 
         Object.defineProperty(Vue.prototype, '$onPublic', {
+            configurable: true,
             get() {
                 return PublicEventService.on;
             }
         });
 
         Object.defineProperty(Vue.prototype, '$offPublic', {
+            configurable: true,
             get() {
                 return PublicEventService.off;
             }
