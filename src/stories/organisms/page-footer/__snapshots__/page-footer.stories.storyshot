@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots organisms|footer-content Footer 1`] = `
+exports[`Storyshots organisms|page-footer Footer 1`] = `
 <section
   class="story"
 >
@@ -51,7 +51,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                           class="footer-nav__title"
                           id="footer-nav__title-01"
                         >
-                          Products
+                          Item one
                         </h3>
                          
                         <ul
@@ -63,46 +63,14 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                           >
                             <a
                               class="router-link-exact-active router-link-active footer-nav__link"
-                              href="#/"
+                              href="http://nu.nl"
                             >
                               <!---->
                                
                               <span
                                 class="link__underline"
                               >
-                                Printers
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="router-link-exact-active router-link-active footer-nav__link"
-                              href="#/"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Materials
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="router-link-exact-active router-link-active footer-nav__link"
-                              href="#/"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Ultimaker Cura
+                                Sub item 1
                               </span>
                             </a>
                           </li>
@@ -120,7 +88,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                           class="footer-nav__title"
                           id="footer-nav__title-02"
                         >
-                          Resources
+                          Item one
                         </h3>
                          
                         <ul
@@ -132,62 +100,14 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                           >
                             <a
                               class="router-link-exact-active router-link-active footer-nav__link"
-                              href="#/"
+                              href="http://nu.nl"
                             >
                               <!---->
                                
                               <span
                                 class="link__underline"
                               >
-                                Manuals
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="router-link-exact-active router-link-active footer-nav__link"
-                              href="#/"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Tips and Tricks
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="router-link-exact-active router-link-active footer-nav__link"
-                              href="#/"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Troubleshooting
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="router-link-exact-active router-link-active footer-nav__link"
-                              href="#/"
-                            >
-                              <!---->
-                               
-                              <span
-                                class="link__underline"
-                              >
-                                Education
+                                Sub item 1
                               </span>
                             </a>
                           </li>
@@ -207,7 +127,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                       class="footer-nav__title"
                       id="footer-nav__title-03"
                     >
-                      Company
+                      Item one
                     </h3>
                      
                     <ul
@@ -219,126 +139,14 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                       >
                         <a
                           class="router-link-exact-active router-link-active footer-nav__link"
-                          href="#/"
+                          href="http://nu.nl"
                         >
                           <!---->
                            
                           <span
                             class="link__underline"
                           >
-                            About Ultimaker
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="router-link-exact-active router-link-active footer-nav__link"
-                          href="#/"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Careers
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="router-link-exact-active router-link-active footer-nav__link"
-                          href="#/"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Blog
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="router-link-exact-active router-link-active footer-nav__link"
-                          href="#/"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Press Room
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="router-link-exact-active router-link-active footer-nav__link"
-                          href="#/"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Events
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="router-link-exact-active router-link-active footer-nav__link"
-                          href="#/"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Resellers
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="router-link-exact-active router-link-active footer-nav__link"
-                          href="#/"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Request support
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="router-link-exact-active router-link-active footer-nav__link"
-                          href="#/"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            Contact
+                            Sub item 1
                           </span>
                         </a>
                       </li>
@@ -436,7 +244,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                   class="icon-button__label"
                 >
                   
-        Netherlands - €
+        Netherlands
     
                 </span>
               </a>
@@ -467,7 +275,7 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                 class="legal__copyright-label"
               >
                 <small>
-                  Copyright
+                  Copyright Ultimaker
                 </small>
               </p>
                
@@ -482,30 +290,14 @@ exports[`Storyshots organisms|footer-content Footer 1`] = `
                   >
                     <a
                       class="router-link-exact-active router-link-active legal__link"
-                      href="#/"
+                      href="http://nu.nl"
                     >
                       <!---->
                        
                       <span
                         class="link__underline"
                       >
-                        Terms of Use
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="legal__item"
-                  >
-                    <a
-                      class="router-link-exact-active router-link-active legal__link"
-                      href="#/"
-                    >
-                      <!---->
-                       
-                      <span
-                        class="link__underline"
-                      >
-                        Privacy and Cookie Policy
+                        Item legal
                       </span>
                     </a>
                   </li>

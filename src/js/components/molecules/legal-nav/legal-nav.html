@@ -1,11 +1,11 @@
 <div class="legal">
     <p class="legal__copyright-label">
-        <small v-html="copyrightLabel"></small>
+        <small v-html="label"></small>
     </p>
 
-    <template v-if="legalNav && legalNav.children">
+    <template v-if="navigation && navigation.length">
         <nav class="legal__nav">
-            <content-link-list :links="legalNav.children" block="legal"></content-link-list>
+            <content-link-list :links="navigation" block="legal"></content-link-list>
         </nav>
     </template>
 </div>

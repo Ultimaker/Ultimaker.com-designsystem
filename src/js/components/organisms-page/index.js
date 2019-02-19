@@ -13,6 +13,6 @@ export {default as HeroText} from 'organisms-page/hero-text';
 export {default as HeroVideo} from 'organisms-page/hero-video';
 export {default as SliderReveal} from 'organisms-page/slider-reveal';
 export {default as Ubr} from 'organisms-page/ubr';
-export {default as FooterContent} from 'organisms-page/footer-content';
+export {default as PageFooter} from 'organisms-page/page-footer';
 
 export {default as Overview} from 'organisms-page/overview';
