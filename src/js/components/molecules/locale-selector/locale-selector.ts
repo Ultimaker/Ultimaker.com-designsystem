@@ -6,20 +6,11 @@ import CountrySelector from 'components/organisms/country-selector';
     template: require('./locale-selector.html'),
 })
 export default class LocaleSelector extends Vue {
-    @Prop({ type: Object, required: true })
-    country!:any;
-
-    @Prop({ type: Object, required: true })
-    datasource!:any;
-
-    @Prop({ type: String, required: true })
-    countryInputPlaceholderLabel!:string;
-
-    @Prop({ type: String, required: true })
-    countryDetectedLabel!:string;
-
-    @Prop({ type: String, required: true })
-    countrySuggestionsLabel!:string;
+    @Prop({ type: Object, required: true }) country!:any;
+    @Prop({ type: Object, required: true }) datasource!:any;
+    @Prop({ type: String, required: true }) countryInputPlaceholderLabel!:string;
+    @Prop({ type: String, required: true }) countryDetectedLabel!:string;
+    @Prop({ type: String, required: true }) countrySuggestionsLabel!:string;
 
     countrySelectorOpen: boolean = false;
     countryInput:any = null;

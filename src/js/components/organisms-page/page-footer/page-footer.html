@@ -1,0 +1,28 @@
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__primary">
+            <router-link to="/" class="branded-logo footer__branded-logo" aria-label="Ultimaker homepage">
+                <icon class="branded-logo__robot" icon-name="robot-ultimaker"></icon>
+                <icon class="branded-logo__logo" icon-name="logo-ultimaker"></icon>
+            </router-link>
+
+            <footer-nav :navigation="navigation"></footer-nav>
+        </div>
+
+        <div class="footer__secondary">
+            <social-nav></social-nav>
+            <locale-selector class="footer__locale-selector"
+                             :datasource="localeSelector.datasource"
+                             :country="country"
+                             :countryDetectedLabel="localeSelector.highlightedLabel"
+                             :countryInputPlaceholderLabel="localeSelector.placeholder"
+                             :countrySuggestionsLabel="localeSelector.suggestionsLabel">
+
+            </locale-selector>
+        </div>
+
+        <div class="footer__tertiary">
+            <legal-nav class="footer__legal" :navigation="legalNavigation.navigation" :label="legalNavigation.label"></legal-nav>
+        </div>
+    </div>
+</footer>
