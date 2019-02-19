@@ -26,14 +26,15 @@
         <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
             <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                  v-for="(card, index) in cards"
-                 v-if="showMax && showMax !== null ? index < showMax : true">
-                <li :key="index" ref="visible" class="list-section-list__item">
+                 :key="index"
+                 v-if="showMax ? index < showMax : true">
+                <li ref="visible" class="list-section-list__item">
                     <component :is="card.type"
                                v-bind="card">
                     </component>
                 </li>
             </div>
-            <template v-if="cards.length > showMax && showMax && showMax !== null && !showHiddenItems">
+            <template v-if="cards.length > showMax && showMax && !showHiddenItems">
                 <div class="flexgrid__cell flexgrid__cell--list-section__button--center">
                     <button class="button--secondary list-section-list__button"
                             @click="showHidden">{{ showCount() }}
@@ -48,7 +49,7 @@
                           class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden">
             <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                  v-for="(card, index) in cards"
-                 v-if="showMax && showMax !== null ? index >= showMax : false"
+                 v-if="showMax ? index >= showMax : false"
                  v-show="showHiddenItems"
                  :key="card.title + index"
                  :data-index="index">
