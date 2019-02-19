@@ -1,21 +1,21 @@
-<nav class="footer__nav" v-if="minorNav && minorNav.children && minorNav.children.length">
+<nav class="footer__nav" v-if="navigation && navigation.length">
     <div class="flexgrid">
         <div class="flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6">
             <div class="flexgrid">
-                <div class="flexgrid__cell--xs-6" v-if="minorNav.children.length > 0">
+                <div class="flexgrid__cell--xs-6" v-if="navigation.length > 0">
                     <div class="footer-nav__column">
-                        <h3 id="footer-nav__title-01" class="footer-nav__title">{{ minorNav.children[0].title }}</h3>
-                        <template v-if="minorNav.children[0].children">
-                            <content-link-list :links="minorNav.children[0].children"
+                        <h3 id="footer-nav__title-01" class="footer-nav__title">{{ navigation[0].label }}</h3>
+                        <template v-if="navigation[0].items.length">
+                            <content-link-list :links="navigation[0].items"
                                                block="footer-nav" aria-labelledby="footer-nav__title-01"></content-link-list>
                         </template>
                     </div>
                 </div>
-                <div class="flexgrid__cell--xs-6" v-if="minorNav.children.length > 1">
+                <div class="flexgrid__cell--xs-6" v-if="navigation.length > 1">
                     <div class="footer-nav__column">
-                        <h3 id="footer-nav__title-02" class="footer-nav__title">{{ minorNav.children[1].title }}</h3>
-                        <template v-if="minorNav.children[1].children">
-                            <content-link-list :links="minorNav.children[1].children"
+                        <h3 id="footer-nav__title-02" class="footer-nav__title">{{ navigation[1].label }}</h3>
+                        <template v-if="navigation[1].items.length">
+                            <content-link-list :links="navigation[1].items"
                                                block="footer-nav" aria-labelledby="footer-nav__title-02"></content-link-list>
                         </template>
                     </div>
@@ -23,11 +23,11 @@
             </div>
         </div>
         <div class="flexgrid__cell--xxs-6 flexgrid__cell--xs-4 flexgrid__cell--sm-6"
-             v-if="minorNav.children.length > 2">
+             v-if="navigation.length > 2">
             <div class="footer-nav__column footer-nav__column--last footer-nav__column--double">
-                <h3 id="footer-nav__title-03" class="footer-nav__title">{{ minorNav.children[2].title }}</h3>
-                <template v-if="minorNav.children[2].children">
-                    <content-link-list :links="minorNav.children[2].children"
+                <h3 id="footer-nav__title-03" class="footer-nav__title">{{ navigation[2].label }}</h3>
+                <template v-if="navigation[2].items.length">
+                    <content-link-list :links="navigation[2].items"
                                        block="footer-nav" aria-labelledby="footer-nav__title-03"></content-link-list>
                 </template>
             </div>
