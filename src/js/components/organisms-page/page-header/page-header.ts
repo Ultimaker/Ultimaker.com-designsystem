@@ -14,7 +14,7 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
     @Prop({ type: Array, required: true }) navigation!: PageHeaderInterface['navigation'];
     @Prop({ type: Object, required: true }) cta!: PageHeaderInterface['cta'];
     @Prop({ type: Object, required: true }) search!: PageHeaderInterface['search'];
-    @Prop({ type: Object, required: true }) labels!: object;
+    // @Prop({ type: Object, required: true }) labels!: object;
     @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
     // @Prop({ type: Function, required: true }) setMainNavOpen!: any;
 
