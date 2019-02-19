@@ -6,8 +6,8 @@
 
         <main-nav v-if="navigation" :link-list="navigation[0].linkList" :main-nav-open="mainNavOpen"></main-nav>
 
-        <!-- <sys-nav @open-search="openSearch" :order-now-label="labels.orderNow" :search-label="labels.search"></sys-nav> -->
-        <nav class="sys-nav" aria-label="quick access">
+        <sys-nav @open-search="openSearch" :order-now-label="cta.label" :search-label="search.label"></sys-nav>
+        <!-- <nav class="sys-nav" aria-label="quick access">
             <ul class="sys-nav__list" role="presentation">
                 <li class="sys-nav__item">
                     <router-link to="/resellers" class="sys-nav__link">
@@ -25,7 +25,7 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
 
         <transition name="show-assist">
             <nav-assist class="main-nav__nav-assist" :open-state="mainNavOpen"
@@ -35,7 +35,7 @@
         <transition name="search" @after-enter="handleFocus" @leave="handleFocus">
             <search-bar class="header__search"
                         ref="search"
-                        :placeholder="labels.searchPlaceholder"
+                        :placeholder="search.searchPlaceholder"
                         :open-state="searchOpen"
                         @close="closeSearch"
                         v-if="searchOpen">
