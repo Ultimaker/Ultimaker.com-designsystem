@@ -48,6 +48,7 @@ $legalColor: $colorGrayDark;
 }
 
 .legal__link {
+    @extend .link;
     @extend .link--small;
     @extend .link--reversed;
     margin-right: 0;
