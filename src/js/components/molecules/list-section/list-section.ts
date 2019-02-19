@@ -1,4 +1,4 @@
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import { TweenLite, Power3 } from 'gsap';
 import Defaults from 'constants/defaults';
 
@@ -99,7 +99,6 @@ export default class ListSection extends Vue implements IListSection {
                 this.limit && this.limit.largeScreen ? this.limit.largeScreen : null
             );
         }
-
     }
 
     beforeMount(): void {
