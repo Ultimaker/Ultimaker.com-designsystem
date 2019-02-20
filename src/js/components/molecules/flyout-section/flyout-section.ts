@@ -71,8 +71,8 @@ export default class Flyout extends Vue  {
     }
 
     selectLastLink(): void {
-        //@ts-ignore
-        this.focusIndex--;
+        // @ts-ignore
+        this.focusIndex = this.focusIndex - 1;
     }
 
     selectNextLink(): boolean {
@@ -82,7 +82,7 @@ export default class Flyout extends Vue  {
         }
 
         // @ts-ignore
-        this.focusIndex++;
+        this.focusIndex = this.focusIndex + 1;
 
         return true;
     }
@@ -93,7 +93,7 @@ export default class Flyout extends Vue  {
             return false;
         }
         // @ts-ignore
-        this.focusIndex--;
+        this.focusIndex = this.focusIndex - 1;
 
         return true;
     }
