@@ -1,8 +1,6 @@
 {
-    "listHeading": {
-        "label": "a title"
-    },
-    "links": [
+    "label": "a title",
+    "items": [
         {
             "label": "a link",
             "url:": "/a/link"

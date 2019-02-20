@@ -13,7 +13,7 @@
         v-bind="item"
         :is-compact="isCompact"
         :key="key"
-        :itemId="`flyout_title_${ uniqId }`"
+        :itemId="`flyout_title_${ uniqId }_${ key }`"
 
         @close="$emit('close')"
         >

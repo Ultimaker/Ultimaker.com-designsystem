@@ -31,17 +31,17 @@ export default class Flyout extends Vue  {
     }
 
     get moreThanMaxItems(): boolean {
-        // @ts-ignore
+        if (!this.items || !this.maxItemsCol) return false;
         return this.items.length > this.maxItemsCol;
     }
 
     get lessThanDoubleMaxItems(): boolean {
-        // @ts-ignore
+        if (!this.items || !this.maxItemsCol) return false;
         return this.items.length <= this.maxItemsCol * 2;
     }
 
     get moreThanDoubleMaxItems(): boolean {
-        // @ts-ignore
+        if (!this.items || !this.maxItemsCol) return false;
         return this.items.length > this.maxItemsCol * 2;
     }
 
@@ -58,7 +58,7 @@ export default class Flyout extends Vue  {
     }
 
     get flyoutToggleIsVisible()  {
-        // @ts-ignore
+        if (!this.items || !this.maxVisible) return false;
         return this.isCompact && this.items.length > this.maxVisible;
     }
 
@@ -71,28 +71,25 @@ export default class Flyout extends Vue  {
     }
 
     selectLastLink(): void {
-        // @ts-ignore
+        if (this.focusIndex === null) return;
         this.focusIndex = this.focusIndex - 1;
     }
 
     selectNextLink(): boolean {
-        // @ts-ignore
+        if (this.focusIndex === null) return false;
         if (this.focusIndex >= this.focusableItems.length - 1) {
             return false;
         }
-
-        // @ts-ignore
         this.focusIndex = this.focusIndex + 1;
 
         return true;
     }
 
     selectPrevLink(): boolean {
-        // @ts-ignore
+        if (this.focusIndex === null) return false;
         if (this.focusIndex <= 0) {
             return false;
         }
-        // @ts-ignore
         this.focusIndex = this.focusIndex - 1;
 
         return true;
@@ -119,6 +116,7 @@ export default class Flyout extends Vue  {
         if (typeof focusComponent === 'undefined') {
             return;
         }
+
         // @ts-ignore
         const focusElement = focusComponent.$el || focusComponent;
 
