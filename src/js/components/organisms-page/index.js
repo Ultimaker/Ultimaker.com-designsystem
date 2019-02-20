@@ -14,7 +14,6 @@ export {default as HeroVideo} from 'organisms-page/hero-video';
 export {default as SliderReveal} from 'organisms-page/slider-reveal';
 export {default as Ubr} from 'organisms-page/ubr';
 export {default as PageFooter} from 'organisms-page/page-footer';
-export {default as FooterContent} from 'organisms-page/footer-content';
 export {default as PageHeader} from 'organisms-page/page-header';
 
 export {default as Overview} from 'organisms-page/overview';
