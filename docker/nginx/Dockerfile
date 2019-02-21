@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-RUN apk add --update --no-cache nginx tini
+RUN apk add --no-cache nginx tini
 
 RUN rm -rf /etc/nginx/conf.d
 
