@@ -77,7 +77,7 @@ podTemplate(
         )
       }
 
-      if ('master' != env.BRANCH_NAME) {
+      if (env.BRANCH_NAME.startsWith('PR-')) {
         currentBuild.result = 'SUCCESS'
         return
       }
@@ -125,9 +125,20 @@ podTemplate(
         )
       }
 
+      if ('master' != env.BRANCH_NAME) {
+        currentBuild.result = 'SUCCESS'
+        return
+      }
+
       stage('update deployments') {
-        sh "kubectl set image --namespace storybook deployment/storybook--node node=${nodeContainer}:${commit}"
-        sh "kubectl set image --namespace storybook deployment/storybook--nginx nginx=${nginxContainer}:${commit}"
+        sh """
+        kubectl --namespace storybook set image deployment/storybook--node node=${nodeContainer}:${commit}
+        kubectl --namespace storybook set image deployment/storybook--nginx nginx=${nginxContainer}:${commit}
+        cat EOF | kubectl --namespace storybook rollout status
+        deployment/storybook--node
+        deployment/storybook--nginx
+        EOF
+        """.stripIndent()
       }
 
     } catch (e) {
@@ -156,7 +167,7 @@ podTemplate(
       if (currentResult == 'SUCCESS') {
         // This will run only if the run was marked as success
         slackSend color: 'good', channel: '#um_com_deployments', message: """
-Deployment updated: https://storybook.k8s-dev.ultimaker.works/ (<${env.BUILD_URL}}Job>)
+Deployment updated: https://storybook.k8s-dev.ultimaker.works/ (<${env.BUILD_URL}|Job>)
 """
       }
 
