@@ -1,23 +1,18 @@
 FROM alpine:3.9
 
-LABEL maintainer="Ultimaker - Team Web <webdevelopment@ultimaker.com>"
+RUN apk add --update --no-cache nginx tini
+
+RUN rm -rf /etc/nginx/conf.d
+
+COPY /docker/nginx/nginx.conf /etc/nginx/nginx.conf.dist
+COPY /docker/nginx/entrypoint.sh /etc/nginx/entrypoint.sh
+COPY /storybook-static/ /var/www/html/
+
+WORKDIR /var/www/html
 
 EXPOSE 8080
 
-RUN apk add --update --no-cache nginx tini
-
-COPY docker/nginx/nginx.conf /etc/nginx/nginx.conf.dist
-
-RUN rm -rf /etc/nginx/conf.d \
- && mkdir -p /var/www/html
-
-COPY storybook-static /var/www/html
-COPY docker/nginx/entrypoint.sh /etc/nginx/entrypoint.sh
-
-RUN chown 777 /etc/nginx/entrypoint.sh \
- && chmod +x /etc/nginx/entrypoint.sh
-
-WORKDIR /var/www/html
+STOPSIGNAL SIGQUIT
 
 ENTRYPOINT ["/sbin/tini", "-g", "--", "/etc/nginx/entrypoint.sh"]
 
