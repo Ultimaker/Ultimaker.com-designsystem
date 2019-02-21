@@ -14,6 +14,7 @@
             <locale-selector class="footer__locale-selector"
                              :datasource="localeSelector.datasource"
                              :country="country"
+                             v-on="$listeners"
                              :countryDetectedLabel="localeSelector.highlightedLabel"
                              :countryInputPlaceholderLabel="localeSelector.placeholder"
                              :countrySuggestionsLabel="localeSelector.suggestionsLabel">

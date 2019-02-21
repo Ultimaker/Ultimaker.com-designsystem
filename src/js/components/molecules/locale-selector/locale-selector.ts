@@ -1,5 +1,6 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import CountrySelector from 'components/organisms/country-selector';
+import any = jasmine.any;
 
 @Component({
     name: 'locale-selector',
@@ -7,7 +8,7 @@ import CountrySelector from 'components/organisms/country-selector';
 })
 export default class LocaleSelector extends Vue {
     @Prop({ type: Object, required: true }) country!:any;
-    @Prop({ type: Object, required: true }) datasource!:any;
+    @Prop({ required: true }) datasource!:any;
     @Prop({ type: String, required: true }) countryInputPlaceholderLabel!:string;
     @Prop({ type: String, required: true }) countryDetectedLabel!:string;
     @Prop({ type: String, required: true }) countrySuggestionsLabel!:string;
