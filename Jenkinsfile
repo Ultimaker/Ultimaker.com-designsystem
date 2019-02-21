@@ -141,17 +141,21 @@ podTemplate(
         """.stripIndent()
       }
 
+      slackSend color: 'good',
+        channel: '#um_com_deployments',
+        message: "Deployment updated: https://storybook.k8s-dev.ultimaker.works/ (<${env.BUILD_URL}|Job>)"
+
     } catch (e) {
+
       // This will run if something goes wrong
+
       currentBuild.result = 'FAILURE'
 
       throw e
-    } finally {
-      // This will always run
 
-      if ('master' != env.BRANCH_NAME) {
-        return
-      }
+    } finally {
+
+      // This will always run
 
       String currentResult = currentBuild.result ?: 'SUCCESS'
       String previousResult = currentBuild.previousBuild?.result
@@ -166,9 +170,6 @@ podTemplate(
 
       if (currentResult == 'SUCCESS') {
         // This will run only if the run was marked as success
-        slackSend color: 'good', channel: '#um_com_deployments', message: """
-Deployment updated: https://storybook.k8s-dev.ultimaker.works/ (<${env.BUILD_URL}|Job>)
-"""
       }
 
       if (previousResult != null && previousResult != currentResult) {
