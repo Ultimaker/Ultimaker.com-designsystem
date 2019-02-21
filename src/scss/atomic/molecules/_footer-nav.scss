@@ -48,6 +48,7 @@
 }
 
 .footer-nav__link {
+    @extend .link;
     @extend .link--reversed;
     margin-right: 0;
 }
