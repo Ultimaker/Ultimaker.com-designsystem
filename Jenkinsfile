@@ -103,7 +103,6 @@ podTemplate(
       stage('authenticate gcloud') {
         withCredentials([file(credentialsId: 'gcloud-jenkins-service-account', variable: 'GCLOUD_KEY_FILE')]) {
           sh """
-          gcloud --quiet components update
           gcloud --quiet auth configure-docker
           gcloud auth activate-service-account --key-file ${GCLOUD_KEY_FILE}
           gcloud config set project um-website-193311
