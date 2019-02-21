@@ -133,7 +133,7 @@ podTemplate(
         sh """
         kubectl --namespace storybook set image deployment/storybook--node node=${nodeContainer}:${commit}
         kubectl --namespace storybook set image deployment/storybook--nginx nginx=${nginxContainer}:${commit}
-        cat <<EOF | kubectl --namespace storybook rollout status
+        cat <<EOF | parallel --jobs 2 kubectl --namespace storybook rollout status
         deployment/storybook--node
         deployment/storybook--nginx
         EOF
