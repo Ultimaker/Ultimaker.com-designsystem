@@ -1,67 +1,70 @@
 {
-    "items": [
-        {
-            "label": "Flyout title one",
-            "items": [
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "label": "Flyout title two",
-            "items": [
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                },
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                },
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                },
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                },
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                },
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                }
-            ]
-        },
-        {
-            "label": "Flyout title three",
-            "items": [
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                },
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                },
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                },
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                },
-                {
-                    "label": "Flyout item",
-                    "url": "#"
-                }
-            ]
-        }
-    ]
+    "flyout": {
+        "items": [
+            {
+                "label": "Flyout title one",
+                "items": [
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "label": "Flyout title two",
+                "items": [
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    }
+                ]
+            },
+            {
+                "label": "Flyout title three",
+                "items": [
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Flyout item",
+                        "url": "#"
+                    }
+                ]
+            }
+        ]
+    }
+
 }

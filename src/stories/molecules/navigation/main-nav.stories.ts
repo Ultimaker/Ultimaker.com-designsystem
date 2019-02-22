@@ -1,16 +1,12 @@
 import {storiesOf} from '@storybook/vue';
-
-import mainNavData from './main-nav.stories.data.js';
+import {withKnobs} from '@storybook/addon-knobs';
+import knobs from './main-nav.knobs.stories';
 
 storiesOf('Molecules|navigation', module)
+    .addDecorator(withKnobs)
     .add('Main navigation', () => ({
+        data: () => knobs(),
         template: require('./main-nav.stories.html'),
-        data: () => ({
-            mainNavData: {
-                ...mainNavData,
-                mainNavOpen: true
-            }
-        })
     }),
     {
         notes: {markdown: require('./main-nav.stories.md')}
