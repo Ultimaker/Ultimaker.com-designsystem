@@ -16,7 +16,6 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
     @Prop({ type: Object, required: true }) search!: PageHeaderInterface['search'];
     // @Prop({ type: Object, required: true }) labels!: object;
     @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
-    // @Prop({ type: Function, required: true }) setMainNavOpen!: any;
 
     assistUsed: boolean =  false;
     viewportUtil: any =  new ViewportUtility();
@@ -48,7 +47,6 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
             this.searchOpen = false;
             this.$emit('toggle-nav', false);
         } else {
-            // this.setMainNavOpen(true);
             this.$emit('toggle-nav', true);
             this.searchOpen = false;
         }

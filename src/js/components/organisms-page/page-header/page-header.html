@@ -16,7 +16,8 @@
         <transition name="search" @after-enter="handleFocus" @leave="handleFocus">
             <search-bar class="header__search"
                         ref="search"
-                        :placeholder="search.searchPlaceholder"
+                        :label="search.label"
+                        :placeholder="search.placeholder"
                         :open-state="searchOpen"
                         @close="closeSearch"
                         v-if="searchOpen">
