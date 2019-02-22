@@ -12,6 +12,6 @@ export default class SysNav extends Vue {
     searchLabel!: string;
 
     openSearch() {
-        this.$emit('openSearch');
+        this.$emit('open-search');
     }
 }
