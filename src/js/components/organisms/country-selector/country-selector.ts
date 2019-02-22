@@ -1,6 +1,7 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 import { AutoCompleteItem } from 'components/molecules/auto-complete/auto-complete.models';
+import AutoComplete from 'components/molecules/auto-complete/auto-complete';
 
 @Component({
     name: 'country-selector',
@@ -21,6 +22,10 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
     initPromise: Promise<any> | null = null;
     countryInput: AutoCompleteItem | null = null;
     selectedCountry: AutoCompleteItem | null = null;
+
+    $refs!: {
+        autocomplete: AutoComplete;
+    };
 
     @Watch('selectedCountry')
     onSelectedCountry(): void {
@@ -55,8 +60,9 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
     async focus(): Promise<any> {
         await this.initPromise;
         await this.$nextTick();
-        // @ts-ignore
+
         this.$refs.autocomplete.focus();
+        this.$refs.autocomplete.calculateDirection();
     }
 
     focusClose(): void {

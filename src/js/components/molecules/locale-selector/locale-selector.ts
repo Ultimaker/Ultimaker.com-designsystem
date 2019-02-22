@@ -1,12 +1,12 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import CountrySelector from 'components/organisms/country-selector';
-import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 
 @Component({
     name: 'locale-selector',
     template: require('./locale-selector.html'),
 })
 export default class LocaleSelector extends CountrySelector {
+    ready:boolean = false;
     countrySelectorOpen: boolean = false;
     countryInput:any = null;
 
@@ -33,12 +33,16 @@ export default class LocaleSelector extends CountrySelector {
         this.countryInput = this.country;
     }
 
-    toggleCountrySelector() {
+    mounted() {
+        // Remark: $ref doesn't work with v-if, but we don't want this component
+        //         to render on the server. This prevents SSR and enables the $ref.
+        this.ready = true;
+    }
+
+    async toggleCountrySelector() {
         this.countrySelectorOpen = !this.countrySelectorOpen;
         if (this.countrySelectorOpen && this.$refs.countrySelector) {
-            Vue.nextTick(async () => {
-                await this.$refs.countrySelector.focus();
-            });
+            await this.$refs.countrySelector.focus();
         }
     }
 
