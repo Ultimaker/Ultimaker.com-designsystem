@@ -21,7 +21,7 @@ export default class MainNavItem extends Vue  {
     @Prop({ type: Boolean, required: true }) active!: boolean;
 
     flyoutIsOpen: boolean =  false;
-    hideTimeout: null = null;
+    hideTimeout: any = null;
     isTouch: boolean = BrowserCapabilities.supportsTouch;
 
     get isActive(): string | boolean {
@@ -41,10 +41,8 @@ export default class MainNavItem extends Vue  {
     }
 
     focus(): void {
-        const navLink = this.$refs.parent;
-        // @ts-ignore
+        const navLink: any = this.$refs.parent;
         if (navLink && navLink.$el) {
-            // @ts-ignore
             navLink.$el.focus();
         }
     }
@@ -53,7 +51,6 @@ export default class MainNavItem extends Vue  {
         await this.$nextTick();
 
         if (this.hideTimeout) {
-            // @ts-ignore
             clearTimeout(this.hideTimeout);
             this.hideTimeout = null;
         }
@@ -72,7 +69,6 @@ export default class MainNavItem extends Vue  {
     delayHideFlyout(): Promise<any> {
         return new Promise((resolve) => {
             if (this.hideTimeout === null) {
-                // @ts-ignore
                 this.hideTimeout = setTimeout(() => {
                     this.hideTimeout = null;
                     this.hideFlyout();
@@ -86,10 +82,9 @@ export default class MainNavItem extends Vue  {
         this.showFlyout();
         await this.$nextTick();
 
-        // @ts-ignore
-        if (this.$refs.flyout && this.$refs.flyout.selectFirstLink) {
-            // @ts-ignore
-            this.$refs.flyout.selectFirstLink();
+        const refs: any =  this.$refs;
+        if (refs.flyout && refs.flyout.selectFirstLink) {
+            refs.flyout.selectFirstLink();
         }
     }
 
@@ -106,14 +101,10 @@ export default class MainNavItem extends Vue  {
     async selectParent(): Promise<any> {
         if (this.isCompact) { return; }
 
-        const parent =  this.$refs.parent;
-        // @ts-ignore
+        const parent: any =  this.$refs.parent;
         if (parent.$el) {
-            // @ts-ignore
             parent.$el.focus();
-            // @ts-ignore
         } else if (parent.focus) {
-            // @ts-ignore
             parent.focus();
         }
 

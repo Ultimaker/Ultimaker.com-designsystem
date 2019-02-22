@@ -4,7 +4,7 @@
             <icon class="home-link__logo" icon-name="logo-ultimaker"></icon>
         </router-link>
 
-        <main-nav v-if="navigation" :items="navigation" :main-nav-open="mainNavOpen"></main-nav>
+        <main-nav v-if="navigation" :items="navigation" :main-nav-open="mainNavOpen" v-on="$listeners"></main-nav>
 
         <sys-nav @open-search="openSearch" :order-now-label="cta.label" :search-label="search.label"></sys-nav>
         <!-- <nav class="sys-nav" aria-label="quick access">
