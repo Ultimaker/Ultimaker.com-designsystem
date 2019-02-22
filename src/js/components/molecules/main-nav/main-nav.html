@@ -1,7 +1,8 @@
 <transition name="menu-switch" mode="out-in">
     <nav key="large-menu" class="main-nav" :class="classList" aria-label="site" v-show="ready">
         <transition name="menu-open">
-            <ul class="main-nav__list" role="presentation" v-show="(!showCompactMenu || mainNavOpen)">
+            <ul class="main-nav__list" role="presentation" v-show="(!showCompactMenu || mainNavOpen)"
+            :class="{'main-nav__list-visible': mainNavOpen && showCompactMenu}">
                 <main-nav-item v-if="items" ref="navItem"
                     v-for="(item, index) in items" :key="index"
                     :is-compact="showCompactMenu"
