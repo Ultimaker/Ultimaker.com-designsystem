@@ -13,10 +13,7 @@
     </icon-button>
 
     <country-selector class="footer__country-selector" ref="countrySelector" v-if="countrySelectorOpen"
-                      :placeholder="countryInputPlaceholderLabel"
-                      :countryDetected="countryDetectedLabel"
-                      :countrySuggestions="countrySuggestionsLabel"
-                      :datasource="datasource"
+                      v-bind="$props"
                       @close="toggleCountrySelector"
                       @input="setCountry"
                       v-model="countryInput">

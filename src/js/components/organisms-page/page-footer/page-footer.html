@@ -12,13 +12,9 @@
         <div class="footer__secondary">
             <social-nav></social-nav>
             <locale-selector class="footer__locale-selector"
-                             :datasource="localeSelector.datasource"
+                             v-bind="localeSelector"
                              :country="country"
-                             v-on="$listeners"
-                             :countryDetectedLabel="localeSelector.highlightedLabel"
-                             :countryInputPlaceholderLabel="localeSelector.placeholder"
-                             :countrySuggestionsLabel="localeSelector.suggestionsLabel">
-
+                             v-on="$listeners">
             </locale-selector>
         </div>
 

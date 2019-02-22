@@ -1,18 +1,12 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import CountrySelector from 'components/organisms/country-selector';
-import any = jasmine.any;
+import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 
 @Component({
     name: 'locale-selector',
     template: require('./locale-selector.html'),
 })
-export default class LocaleSelector extends Vue {
-    @Prop({ type: Object, required: true }) country!:any;
-    @Prop({ required: true }) datasource!:any;
-    @Prop({ type: String, required: true }) countryInputPlaceholderLabel!:string;
-    @Prop({ type: String, required: true }) countryDetectedLabel!:string;
-    @Prop({ type: String, required: true }) countrySuggestionsLabel!:string;
-
+export default class LocaleSelector extends CountrySelector {
     countrySelectorOpen: boolean = false;
     countryInput:any = null;
 
