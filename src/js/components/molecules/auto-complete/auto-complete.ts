@@ -23,7 +23,7 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
     @Prop({ type: String, default: null }) placeholder!: AutoCompleteField['placeholder'];
     @Prop({ type: String, default: null }) highlightedLabel!: AutoCompleteField['highlightedLabel'];
     @Prop({ type: String, default: '' }) suggestionsLabel!: AutoCompleteField['suggestionsLabel'];
-    @Prop({ type: Object, required: true }) datasource!: AutoCompleteField['datasource'];
+    @Prop({ required: true }) datasource!: AutoCompleteField['datasource'];
 
     input: string =  '';
     selectedItem: AutoCompleteItem | null = null;
@@ -122,8 +122,11 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
         Vue.nextTick(this.calculateDirection);
     }
 
-    calculateDirection(): any | void {
-        if (!this.$refs.autoComplete) { return; }
+    @Watch('isOpen')
+    calculateDirection():undefined {
+        if (!this.$refs.autoComplete) {
+            return;
+        }
         const windowTop = this.viewportUtil.scrollY;
         const windowBottom = windowTop + (this.viewportUtil.screenHeight * (2 / 3));
         // @ts-ignore
@@ -131,7 +134,11 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
         const inputTop = this.viewportUtil.scrollY + inputBounds.top;
         const inputBottom = inputTop + inputBounds.height;
 
+        console.info(`calc element direction: windowTop: ${ windowTop }, windowBottom: ${ windowBottom }`);
+        console.info(`calc element direction: inputTop: ${ inputTop }, inputBottom: ${ inputBottom }`);
+
         this.reversed = windowBottom < inputBottom;
+        return;
     }
 
     highlightString(data): string {
