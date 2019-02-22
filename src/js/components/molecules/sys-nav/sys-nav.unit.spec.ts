@@ -27,7 +27,7 @@ describe('components', () => {
                 const searchButton = vm.$el.querySelector('[role=button]');
 
                 searchButton.dispatchEvent(clickEvent);
-                expect(vm.$emit).toHaveBeenCalledWith('openSearch');
+                expect(vm.$emit).toHaveBeenCalledWith('open-search');
                 vm.$destroy();
             });
         });
