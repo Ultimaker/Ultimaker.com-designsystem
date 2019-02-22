@@ -32,6 +32,10 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
     forceOpen: boolean = false;
     viewportUtil =  new ViewportUtil();
 
+    $refs!: {
+        autoComplete: AutoComplete,
+    };
+
     get items():AutoCompleteItem[] {
         const items: AutoCompleteItem[] = [];
 
@@ -129,13 +133,10 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
         }
         const windowTop = this.viewportUtil.scrollY;
         const windowBottom = windowTop + (this.viewportUtil.screenHeight * (2 / 3));
-        // @ts-ignore
+        // @ts-ignore, exist  by default on html elements
         const inputBounds = this.$refs.autoComplete.getBoundingClientRect();
         const inputTop = this.viewportUtil.scrollY + inputBounds.top;
         const inputBottom = inputTop + inputBounds.height;
-
-        console.info(`calc element direction: windowTop: ${ windowTop }, windowBottom: ${ windowBottom }`);
-        console.info(`calc element direction: inputTop: ${ inputTop }, inputBottom: ${ inputBottom }`);
 
         this.reversed = windowBottom < inputBottom;
         return;
@@ -166,7 +167,6 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
 
     focus(): void {
         if (this.hasItems) {
-            // @ts-ignore
             this.$refs.autoComplete.focus();
         }
     }
@@ -196,7 +196,7 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
     }
 
     selectCurrent(): void | any {
-        const listItems = this.$el.querySelectorAll('.auto-complete__list-item');
+        const listItems = this.$el.querySelectorAll('.auto-complete__list-item') as NodeListOf<HTMLElement>;
 
         if (!listItems.length) {
             if (!this.input.length) {
@@ -207,7 +207,6 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
         }
 
         if (listItems.length > this.selectedIndex) {
-            // @ts-ignore
             listItems[this.selectedIndex].focus();
         }
     }
@@ -245,7 +244,7 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
 
     @Watch('selectedIndex')
     onSelectedIndex(): void {
-        const listItems = this.$el.querySelectorAll('.auto-complete__list-item');
+        const listItems = this.$el.querySelectorAll('.auto-complete__list-item') as NodeListOf<HTMLElement>;
 
         if (!listItems) { return; }
 
@@ -258,7 +257,6 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
         }
 
         if (listItems.length > this.selectedIndex) {
-            // @ts-ignore
             listItems[this.selectedIndex].focus();
         }
     }

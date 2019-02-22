@@ -2,13 +2,14 @@ import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 import { AutoCompleteItem } from 'components/molecules/auto-complete/auto-complete.models';
 import AutoComplete from 'components/molecules/auto-complete/auto-complete';
+import IconButton from 'components/molecules/icon-button';
+import { CountrySelectorInterface } from './country-selector-models';
 
 @Component({
     name: 'country-selector',
     template: require('./country-selector.html'),
 })
-
-export default class CountrySelector extends Vue implements CountryAutoCompleteField {
+export default class CountrySelector extends Vue implements CountrySelectorInterface {
     @Prop({ type: Object, default: null }) value!: AutoCompleteItem;
 
     // Model Definition
@@ -25,6 +26,7 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
 
     $refs!: {
         autocomplete: AutoComplete;
+        closeCountryPanel: IconButton;
     };
 
     @Watch('selectedCountry')
@@ -33,7 +35,7 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
     }
 
     get detectedCountries() {
-        const detectedCountries = [];
+        const detectedCountries: AutoCompleteItem[] = [];
 
         if (!this.country || !this.country.code) {
             return detectedCountries;
@@ -43,7 +45,6 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
             const detectedCountryByIp = this.datasource[this.country.code];
 
             if (detectedCountryByIp) {
-                // @ts-ignore
                 detectedCountries.push({
                     title: detectedCountryByIp,
                     value: this.country.code,
@@ -66,7 +67,6 @@ export default class CountrySelector extends Vue implements CountryAutoCompleteF
     }
 
     focusClose(): void {
-        // @ts-ignore
         this.$refs.closeCountryPanel.focus();
     }
     close(): void {

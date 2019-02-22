@@ -231,6 +231,7 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
              
             <div
               class="locale-selector footer__locale-selector"
+              type="CountryAutoCompleteField"
             >
               <a
                 aria-label="Change your country, currently: Netherlands"

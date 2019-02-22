@@ -1,5 +1,5 @@
 /* eslint-disable max-nested-callbacks */
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 import IconButton from './icon-button';
 
 describe('components', () => {
@@ -12,8 +12,8 @@ describe('components', () => {
                     props: {
                         buttonClass: 'icon-button',
                         buttonAriaLabel: 'Search',
-                        iconName: 'search'
-                    }
+                        iconName: 'search',
+                    },
                 });
                 const buttonAttributes = vm.$el.attributes;
 
@@ -28,8 +28,8 @@ describe('components', () => {
                     prop: {
                         buttonClass: 'icon-button',
                         buttonAriaLabel: 'Search',
-                        iconName: 'search'
-                    }
+                        iconName: 'search',
+                    },
                 });
                 // @ts-ignore
                 const clickEvent = new window.Event('click');

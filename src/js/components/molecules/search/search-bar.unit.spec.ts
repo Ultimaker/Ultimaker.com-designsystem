@@ -1,15 +1,16 @@
 /* eslint-disable max-nested-callbacks */
-import {build} from 'vuenit';
+import Vue from 'vue';
+import { build } from 'vuenit';
 import SearchBar from './search-bar';
-import IconButton from 'molecules/icon-button';
+import IconButton from '../icon-button';
 
 describe('components', () => {
     describe('molecules', () => {
         describe('search-bar', () => {
-            const mount = build(SearchBar, {
-                components: {
-                    'icon-button': IconButton
-                }
+            const mount = build(SearchBar, {});
+
+            beforeEach(() => {
+                Vue.component('icon-button', IconButton);
             });
 
             it('should render a search bar', () => {
@@ -29,8 +30,9 @@ describe('components', () => {
                 spyOn(vm, 'doSearch');
                 vm.$mount();
 
-                const clickEvent = new window.Event('click'),
-                    searchButton = vm.$el.querySelector('.search__button');
+                // @ts-ignore
+                const clickEvent = new window.Event('click');
+                const searchButton = vm.$el.querySelector('.search__button');
 
                 vm.searchValue = 'something';
                 searchButton.dispatchEvent(clickEvent);
@@ -45,8 +47,9 @@ describe('components', () => {
                 spyOn(vm, 'doSearch');
                 vm.$mount();
 
-                const clickEvent = new window.Event('click'),
-                    searchButton = vm.$el.querySelector('.search__button');
+                // @ts-ignore
+                const clickEvent = new window.Event('click');
+                const searchButton = vm.$el.querySelector('.search__button');
 
                 searchButton.dispatchEvent(clickEvent);
                 expect(vm.doSearch).toHaveBeenCalledTimes(1);
@@ -64,7 +67,6 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-
             it('should not focus on search input when focus has not been called', () => {
                 const vm = mount();
 
@@ -77,8 +79,8 @@ describe('components', () => {
             it('should emit close when called if the openstate is true', () => {
                 const vm = mount({
                     props: {
-                        openState: true
-                    }
+                        openState: true,
+                    },
                 });
 
                 spyOn(vm, '$emit');
@@ -92,8 +94,8 @@ describe('components', () => {
             it('should not emit close when called if the openstate is false', () => {
                 const vm = mount({
                     props: {
-                        openState: false
-                    }
+                        openState: false,
+                    },
                 });
 
                 spyOn(vm, '$emit');
