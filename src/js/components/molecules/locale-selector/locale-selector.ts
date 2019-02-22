@@ -1,16 +1,25 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import CountrySelector from 'components/organisms/country-selector';
+import { CountrySelectorInterface } from 'components/organisms/country-selector/country-selector-models';
+import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 
 @Component({
     name: 'locale-selector',
     template: require('./locale-selector.html'),
 })
-export default class LocaleSelector extends CountrySelector {
+export default class LocaleSelector extends Vue implements CountrySelectorInterface {
+    @Prop({ type: String, default: null }) label!: CountryAutoCompleteField['label'];
+    @Prop({ type: String, default: '' }) placeholder!: CountryAutoCompleteField['placeholder'];
+    @Prop({ type: String, default: null }) highlightedLabel!: CountryAutoCompleteField['highlightedLabel'];
+    @Prop({ type: String, default: '' }) suggestionsLabel!: CountryAutoCompleteField['suggestionsLabel'];
+    @Prop({ required: true }) datasource!: CountryAutoCompleteField['datasource'];
+    @Prop({ type: Object, default: null }) country!: any;
+
     ready:boolean = false;
     countrySelectorOpen: boolean = false;
     countryInput:any = null;
 
-    public $refs!: {
+    $refs!: {
         countrySelector: CountrySelector,
     };
 
@@ -46,8 +55,8 @@ export default class LocaleSelector extends CountrySelector {
         }
     }
 
-    setCountry() {
+    async setCountry() {
         this.$emit('country-changed', { country: this.countryInput });
-        this.toggleCountrySelector();
+        await this.toggleCountrySelector();
     }
 }
