@@ -90,6 +90,10 @@ $mainNavBorder: 1px solid $colorGray;
         opacity: 1;
         background-color: transparent;
     }
+
+    &.main-nav__list-visible {
+        left: 0;
+    }
 }
 
 .main-nav__item {
