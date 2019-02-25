@@ -47,17 +47,17 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            // it('should not render a bottomLink if not provided', () => {
-            //     const vm = mount({
-            //         props: {
-            //             items: fixture.items,
-            //         },
-            //     });
+            it('should not render a bottomLink if not provided', () => {
+                const vm = mount({
+                    props: {
+                        items: fixture.items,
+                    },
+                });
 
-            //     const bottomLink = vm.$el.querySelectorAll('.flyout__link--cta-mini');
+                const bottomLink = vm.$el.querySelectorAll('.flyout__link--cta-mini');
 
-            //     expect(bottomLink.length).toBe(0);
-            // });
+                expect(bottomLink.length).toBe(0);
+            });
 
             it('should render 1 column if amount of items is less or equal than max column items', () => {
                 const vm = mount({

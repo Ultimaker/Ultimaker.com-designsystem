@@ -15,7 +15,6 @@ export default class MainNavItem extends Vue  {
     @Prop({ type: String, required: false }) url?: string;
     @Prop({ type: Array, required: false }) items?: NavigationItem[];
 
-    @Prop({ type: Object, required: false }) bottomLink?: object;
     @Prop({ type: String, required: true }) itemId!: string;
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Boolean, required: true }) active!: boolean;

@@ -8,7 +8,11 @@ export default () => ({
             items: item.items.map(({label, url}, i) => ({
                 label: text(`Flyout items ${i+1} - label`, label),
                 url: text(`Flyout items  ${i+1} - url`, url)
-            }))
+            })),
+            bottomItem: {
+                label: text(`Flyout title ${index+1}`, item.bottomItem.label),
+                url: text(`Flyout title ${index+1}`, item.bottomItem.url)
+            }
         })),
         isCompact: boolean('Compact', true)
     }
