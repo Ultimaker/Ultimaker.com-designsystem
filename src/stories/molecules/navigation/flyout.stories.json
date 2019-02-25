@@ -8,7 +8,11 @@
                         "label": "Flyout item",
                         "url": "#"
                     }
-                ]
+                ],
+                "bottomItem": {
+                    "label": "Compare Items",
+                    "url": "/explore"
+                }
             },
             {
                 "label": "Flyout title two",
@@ -37,7 +41,11 @@
                         "label": "Flyout item",
                         "url": "#"
                     }
-                ]
+                ],
+                "bottomItem": {
+                    "label": "Compare Items",
+                    "url": "/explore"
+                }
             },
             {
                 "label": "Flyout title three",
@@ -62,7 +70,11 @@
                         "label": "Flyout item",
                         "url": "#"
                     }
-                ]
+                ],
+                "bottomItem": {
+                    "label": "Compare Items",
+                    "url": "/explore"
+                }
             }
         ]
     }

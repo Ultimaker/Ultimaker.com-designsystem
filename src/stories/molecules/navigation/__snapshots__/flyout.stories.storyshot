@@ -83,7 +83,18 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
             </li>
           </ul>
            
-          <!---->
+          <a
+            class="link flyout__link--cta-mini router-link-exact-active router-link-active"
+            href="/explore"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              Compare Items
+            </span>
+          </a>
         </li>
         <li
           class="flyout__section"
@@ -243,7 +254,18 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
             </li>
           </ul>
            
-          <!---->
+          <a
+            class="link flyout__link--cta-mini router-link-exact-active router-link-active"
+            href="/explore"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              Compare Items
+            </span>
+          </a>
         </li>
         <li
           class="flyout__section"
@@ -385,7 +407,18 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
             </li>
           </ul>
            
-          <!---->
+          <a
+            class="link flyout__link--cta-mini router-link-exact-active router-link-active"
+            href="/explore"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              Compare Items
+            </span>
+          </a>
         </li>
       </ul>
     </section>

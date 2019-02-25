@@ -33,7 +33,7 @@
         </li>
     </ul>
 
-    <template v-if="bottomLink">
-        <content-link ref="focusable" @click.native="$emit('close')" :href="bottomLink.url" class="link flyout__link--cta-mini" >{{ bottomLink.label }}</content-link>
+    <template v-if="bottomItem">
+        <content-link ref="focusable" @click.native="$emit('close')" :href="bottomItem.url" class="link flyout__link--cta-mini" >{{ bottomItem.label }}</content-link>
     </template>
 </li>

@@ -10,7 +10,7 @@ export default class Flyout extends Vue  {
     @Prop({ type: String, required: true }) label!: string;
     @Prop({ type: Array, required: false }) items?: NavigationItem[];
 
-    @Prop({ type: Object, required: false }) bottomLink?: object;
+    @Prop({ type: Object, required: false }) bottomItem?: object;
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Number, required: false, default: 3 }) maxVisible?: number;
     @Prop({ type: Number, required: false, default: 6 }) maxItemsCol?: number;
