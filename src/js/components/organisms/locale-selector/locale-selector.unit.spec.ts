@@ -1,6 +1,6 @@
 import LocaleSelector from './locale-selector';
 import { build } from 'vuenit';
-import Defaults from 'constants/defaults';
+import Defaults from 'src/js/constants/defaults';
 
 describe('components', () => {
     describe('molecules', () => {
