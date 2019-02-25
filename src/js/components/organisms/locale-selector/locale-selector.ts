@@ -1,5 +1,6 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import CountrySelector from 'src/js/components/organisms/country-selector';
+import CountrySelector from 'components/organisms/country-selector';
+import  IconButton from 'components/molecules/icon-button';
 import { CountrySelectorInterface } from 'components/organisms/country-selector/country-selector-models';
 import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 
@@ -21,6 +22,7 @@ export default class LocaleSelector extends Vue implements CountrySelectorInterf
 
     $refs!: {
         countrySelector: CountrySelector,
+        countrySelectorToggle: IconButton,
     };
 
     get currentCountryLabel() {
@@ -52,6 +54,9 @@ export default class LocaleSelector extends Vue implements CountrySelectorInterf
         this.countrySelectorOpen = !this.countrySelectorOpen;
         if (this.countrySelectorOpen && this.$refs.countrySelector) {
             await this.$refs.countrySelector.focus();
+        } else if (!this.countrySelectorOpen  && this.$refs.countrySelectorToggle) {
+            await this.$nextTick();
+            this.$refs.countrySelectorToggle.focus();
         }
     }
 

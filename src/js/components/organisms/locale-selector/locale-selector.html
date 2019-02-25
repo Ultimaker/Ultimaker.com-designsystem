@@ -1,5 +1,6 @@
 <div class="locale-selector">
     <icon-button @click="toggleCountrySelector" v-show="!countrySelectorOpen"
+                 ref="countrySelectorToggle"
                  icon-name="geo"
                  class="icon-button--small locale-selector__edit--buton"
                  :aria-label="currentCountryAriaLabel">
