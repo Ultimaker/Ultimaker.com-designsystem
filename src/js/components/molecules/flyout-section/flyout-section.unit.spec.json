@@ -10,8 +10,8 @@
             "url:": "/another/link"
         }
     ],
-    "bottomLink": {
-        "label": "Compate Items",
+    "bottomItem": {
+        "label": "Compare Items",
         "url": "/printers"
     },
     "linksOneColumn": [

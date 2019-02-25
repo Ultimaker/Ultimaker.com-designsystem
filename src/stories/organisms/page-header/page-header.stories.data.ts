@@ -10,7 +10,11 @@ export default {
                                 "label": "Flyout item",
                                 "url": "#"
                             }
-                        ]
+                        ],
+                        "bottomItem": {
+                            "label": "Compare Items",
+                            "url": "/explore"
+                        }
                     },
                     {
                         "label": "Flyout title two",
@@ -39,7 +43,11 @@ export default {
                                 "label": "Flyout item",
                                 "url": "#"
                             }
-                        ]
+                        ],
+                        "bottomItem": {
+                            "label": "Compare Items",
+                            "url": "/explore"
+                        }
                     },
                     {
                         "label": "Flyout title three",
@@ -64,7 +72,11 @@ export default {
                                 "label": "Flyout item",
                                 "url": "#"
                             }
-                        ]
+                        ],
+                        "bottomItem": {
+                            "label": "Compare Items",
+                            "url": "/explore"
+                        }
                     }
                 ],
                 label: 'Nav section one',

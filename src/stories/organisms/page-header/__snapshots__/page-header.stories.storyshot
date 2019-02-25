@@ -73,13 +73,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_709_0"
+                      id="flyout_title_715_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_709_0"
+                      aria-labelledby="flyout_title_715_0"
                       class="flyout__list"
                     >
                       <li
@@ -138,21 +138,32 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       </li>
                     </ul>
                      
-                    <!---->
+                    <a
+                      class="link flyout__link--cta-mini router-link-exact-active router-link-active"
+                      href="/explore"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Compare Items
+                      </span>
+                    </a>
                   </li>
                   <li
                     class="flyout__section"
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_709_1"
+                      id="flyout_title_715_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_709_1"
+                      aria-labelledby="flyout_title_715_1"
                       class="flyout__list"
                     >
                       <li
@@ -298,21 +309,32 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       </li>
                     </ul>
                      
-                    <!---->
+                    <a
+                      class="link flyout__link--cta-mini router-link-exact-active router-link-active"
+                      href="/explore"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Compare Items
+                      </span>
+                    </a>
                   </li>
                   <li
                     class="flyout__section"
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_709_2"
+                      id="flyout_title_715_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_709_2"
+                      aria-labelledby="flyout_title_715_2"
                       class="flyout__list"
                     >
                       <li
@@ -440,7 +462,18 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       </li>
                     </ul>
                      
-                    <!---->
+                    <a
+                      class="link flyout__link--cta-mini router-link-exact-active router-link-active"
+                      href="/explore"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        Compare Items
+                      </span>
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -482,13 +515,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_755_0"
+                      id="flyout_title_767_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_755_0"
+                      aria-labelledby="flyout_title_767_0"
                       class="flyout__list"
                     >
                       <li
@@ -554,14 +587,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_755_1"
+                      id="flyout_title_767_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_755_1"
+                      aria-labelledby="flyout_title_767_1"
                       class="flyout__list"
                     >
                       <li
@@ -714,14 +747,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_755_2"
+                      id="flyout_title_767_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_755_2"
+                      aria-labelledby="flyout_title_767_2"
                       class="flyout__list"
                     >
                       <li
@@ -922,13 +955,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_807_0"
+                      id="flyout_title_819_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_807_0"
+                      aria-labelledby="flyout_title_819_0"
                       class="flyout__list"
                     >
                       <li
@@ -994,14 +1027,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_807_1"
+                      id="flyout_title_819_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_807_1"
+                      aria-labelledby="flyout_title_819_1"
                       class="flyout__list"
                     >
                       <li
@@ -1154,14 +1187,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_807_2"
+                      id="flyout_title_819_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_807_2"
+                      aria-labelledby="flyout_title_819_2"
                       class="flyout__list"
                     >
                       <li
