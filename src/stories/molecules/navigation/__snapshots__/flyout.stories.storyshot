@@ -31,7 +31,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -104,7 +104,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -120,7 +120,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -136,7 +136,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -177,7 +177,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -194,7 +194,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -211,7 +211,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -264,7 +264,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -280,7 +280,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -296,7 +296,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -336,7 +336,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
@@ -353,7 +353,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link router-link-exact-active router-link-active"
+                class="flyout__link link router-link-exact-active router-link-active"
                 href="#"
               >
                 <!---->
