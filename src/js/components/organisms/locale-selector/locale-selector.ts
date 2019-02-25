@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import CountrySelector from 'components/organisms/country-selector';
+import CountrySelector from 'src/js/components/organisms/country-selector';
 import { CountrySelectorInterface } from 'components/organisms/country-selector/country-selector-models';
 import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 

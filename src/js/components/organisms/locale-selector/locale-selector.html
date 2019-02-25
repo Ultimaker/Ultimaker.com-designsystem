@@ -12,7 +12,7 @@
                  aria-label="change your country">
     </icon-button>
 
-    <country-selector class="footer__country-selector" ref="countrySelector" v-if="countrySelectorOpen"
+    <country-selector class="footer__country-selector" ref="countrySelector" v-if="ready" v-show="countrySelectorOpen"
                       v-bind="$props"
                       @close="toggleCountrySelector"
                       @input="setCountry"
