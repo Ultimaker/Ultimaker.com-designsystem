@@ -1,1 +1,1 @@
-export default {};
+export {SizeEmitter} from './size-emitter';
