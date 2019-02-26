@@ -18,7 +18,7 @@ export default class Flyout extends Vue  {
     @Prop({ type: String, required: false, default: () => `flyout_title_${ ~~(Math.random() * 10000) }` }) itemId?: string;
 
     isExpanded: boolean =  false;
-    focusIndex: null | number = null;
+    focusIndex: null | number = 0;
     columnClassDouble: string = 'flyout__section--2-columns';
     columnClassTriple: string = 'flyout__section--3-columns';
 
@@ -71,8 +71,7 @@ export default class Flyout extends Vue  {
     }
 
     selectLastLink(): void {
-        if (this.focusIndex === null) return;
-        this.focusIndex = this.focusIndex - 1;
+        this.focusIndex = this.focusIndex === null ? this.focusableItems.length - 1 : this.focusIndex - 1;
     }
 
     selectNextLink(): boolean {
