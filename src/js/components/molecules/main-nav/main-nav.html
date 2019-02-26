@@ -6,6 +6,7 @@
                 <main-nav-item v-if="items" ref="navItem"
                     v-for="(item, index) in items" :key="index"
                     :is-compact="showCompactMenu"
+                    :main-nav-open="mainNavOpen"
                     :active="false"
                     :itemId="'nav-' + index"
                     v-bind="item">
