@@ -18,7 +18,7 @@ export default class Flyout extends Vue  {
     @Prop({ type: String, required: false, default: () => `flyout_title_${ ~~(Math.random() * 10000) }` }) itemId?: string;
 
     isExpanded: boolean =  false;
-    focusIndex: null | number = 0;
+    focusIndex: null | number = null;
     columnClassDouble: string = 'flyout__section--2-columns';
     columnClassTriple: string = 'flyout__section--3-columns';
 
