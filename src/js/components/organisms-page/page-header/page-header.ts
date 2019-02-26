@@ -1,7 +1,7 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import ViewportUtility from 'utils/viewport';
-import PublicEventService from 'src/js/plugins/public-event-service';
+import PublicEventService from 'plugins/public-event-service';
 
 import { PageHeader as PageHeaderInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/page-header/PageHeader';
 
