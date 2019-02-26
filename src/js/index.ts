@@ -21,7 +21,7 @@ Object.keys(Components).forEach((c) => {
 });
 
 Object.keys(Directives).forEach((d) => {
-    registry.registerDirective(Directives[d]);
+    registry.registerDirective(new Directives[d]);
 });
 
 export { default as Defaults } from 'constants/defaults';

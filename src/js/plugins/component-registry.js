@@ -18,7 +18,9 @@ class ComponentRegistry {
         vue.use(UniqId);
 
         this.directives
+            .filter(d => typeof d.name === 'string')
             .forEach(d => vue.directive(d.name, d));
+
         this.components
             .filter((c => typeof c.name === 'string' || (c.extendOptions && typeof c.extendOptions.name === 'string')))
             .forEach(c => vue.component(c.extendOptions ? c.extendOptions.name : c.name, c));
