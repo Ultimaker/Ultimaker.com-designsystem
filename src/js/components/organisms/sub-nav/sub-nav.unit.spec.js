@@ -28,14 +28,6 @@ describe('components', () => {
                 expect(vm.classObject['sub-nav--collapsed']).toBeTruthy();
                 vm.$destroy();
             });
-
-            it('should have a method mapLink which cl class when scrolled upwards', () => {
-                const vm = mount(fixture.buildOptions);
-
-                expect(vm.mapLink).toEqual(jasmine.any(Function));
-                expect(vm.mapLink('/api/pages/somepage')).toEqual('/somepage');
-                vm.$destroy();
-            });
         });
     });
 });
