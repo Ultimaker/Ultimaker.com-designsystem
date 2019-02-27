@@ -7,7 +7,7 @@
         <main-nav v-if="navigation" :items="navigation" :main-nav-open="mainNavOpen" v-on="$listeners"></main-nav>
 
         <sys-nav @open-search="openSearch"
-                 :order-now-icon="cta.icon" :order-now-label="cta.label"
+                 :order-now-icon="cta.icon" :order-now-label="cta.label" :order-now-link:="cta.url"
                  :search-icon="search.icon" :search-label="search.label">
         </sys-nav>
 
