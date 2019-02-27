@@ -2,6 +2,6 @@
            v-bind="linkProps">
     <icon v-if="this.icon" :icon-name="icon" />
     <span class="link__underline">
-        <slot></slot>
+        <slot>{{label}}</slot>
     </span>
 </component>

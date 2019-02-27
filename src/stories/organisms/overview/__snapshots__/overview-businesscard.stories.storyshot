@@ -51,7 +51,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   class="tooltip section-tooltip list-section__tooltip"
                   description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
                   icon="info"
-                  id="tooltip_610"
+                  id="tooltip_614"
                   label="More info"
                   style="display: none;"
                   type="Tooltip"
@@ -63,8 +63,8 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               </h3>
                
               <a
-                aria-describedby="tooltip_610"
-                class="link list-section__info-link router-link-exact-active router-link-active link--reversed link--icon"
+                aria-describedby="tooltip_614"
+                class="link list-section__info-link router-link-exact-active router-link-active undefined__link link--reversed link--icon"
                 href="#/"
                 role="button"
               >
@@ -915,7 +915,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
             class="cta__block"
           >
             <a
-              class="link--button button"
+              class="undefined__link link--button link--icon button"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -932,7 +932,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               </span>
             </a>
             <a
-              class="link--large link link--large"
+              class="undefined__link link--large link--icon link link--large"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"

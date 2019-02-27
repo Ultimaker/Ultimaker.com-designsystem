@@ -1,5 +1,5 @@
 export {default as AnimatedArrow} from 'atoms/animated-arrow';
-export {default as AppLink} from 'atoms/app-link';
+export {default as BaseLink} from 'atoms/BaseLink';
 export {default as ContentLink} from 'atoms/content-link';
 export {default as ContentButton} from 'atoms/content-button';
 export {default as ContentLinkList} from 'atoms/content-link-list';
