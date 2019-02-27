@@ -1,7 +1,7 @@
 <nav class="sys-nav" aria-label="quick access">
     <ul class="sys-nav__list" role="presentation">
         <li class="sys-nav__item">
-            <router-link to="/resellers" class="sys-nav__link">
+            <router-link :to="orderNowLink" class="sys-nav__link">
                 <icon class="sys-nav__icon" :icon-name="orderNowIcon"></icon>
                 <span class="sys-nav__label sys-nav__label--hidden-sm">{{ orderNowLabel }}</span>
             </router-link>

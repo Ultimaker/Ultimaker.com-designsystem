@@ -9,6 +9,9 @@ export default class SysNav extends Vue {
     orderNowIcon!: string;
 
     @Prop({ type: String, required: true })
+    orderNowLink!: string;
+
+    @Prop({ type: String, required: true })
     orderNowLabel!: string;
 
     @Prop({ type: String, default: 'search' })
