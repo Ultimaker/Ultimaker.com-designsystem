@@ -2,7 +2,7 @@
     <ul class="sys-nav__list" role="presentation">
         <li class="sys-nav__item">
             <router-link to="/resellers" class="sys-nav__link">
-                <icon class="sys-nav__icon" icon-name="store"></icon>
+                <icon class="sys-nav__icon" :icon-name="orderNowIcon"></icon>
                 <span class="sys-nav__label sys-nav__label--hidden-sm">{{ orderNowLabel }}</span>
             </router-link>
         </li>
@@ -11,7 +11,7 @@
                @click="openSearch"
                @keyup.enter="openSearch"
                role="button" tabindex="0">
-                <icon class="sys-nav__icon" icon-name="search"></icon>
+                <icon class="sys-nav__icon" :icon-name="searchIcon"></icon>
                 <span class="sys-nav__label sys-nav__label--hidden-sm">{{ searchLabel }}</span>
             </a>
         </li>

@@ -6,7 +6,10 @@
 
         <main-nav v-if="navigation" :items="navigation" :main-nav-open="mainNavOpen" v-on="$listeners"></main-nav>
 
-        <sys-nav @open-search="openSearch" :order-now-label="cta.label" :search-label="search.label"></sys-nav>
+        <sys-nav @open-search="openSearch"
+                 :order-now-icon="cta.icon" :order-now-label="cta.label"
+                 :search-icon="search.icon" :search-label="search.label">
+        </sys-nav>
 
         <transition name="show-assist">
             <nav-assist class="main-nav__nav-assist" :open-state="mainNavOpen"
