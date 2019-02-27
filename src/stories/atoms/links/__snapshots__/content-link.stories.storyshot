@@ -11,7 +11,7 @@ exports[`Storyshots Atoms|links Content link 1`] = `
       class="story__atom"
     >
       <a
-        class="router-link-exact-active router-link-active"
+        class="router-link-exact-active router-link-active undefined__link"
         href="#/"
       >
         <!---->

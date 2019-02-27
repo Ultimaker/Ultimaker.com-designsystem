@@ -45,7 +45,7 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                   class="cta__block"
                 >
                   <a
-                    class="link--button button button--primary"
+                    class="undefined__link link--button link--icon button button--primary"
                     href="https://www.ultimaker.com/resellers"
                     rel="noopener"
                     target="_self"
@@ -62,7 +62,7 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                     </span>
                   </a>
                   <a
-                    class="link--large link link--large"
+                    class="undefined__link link--large link--icon link link--large"
                     href="https://3d.ultimaker.com/requestquote"
                     rel="noopener"
                     target="_blank"
@@ -201,8 +201,8 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="router-link-exact-active router-link-active link--icon"
-                      href="#"
+                      class="undefined__link"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -218,8 +218,8 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="router-link-exact-active router-link-active link--icon"
-                      href="#"
+                      class="undefined__link"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -234,8 +234,8 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="router-link-exact-active router-link-active link--icon"
-                      href="#"
+                      class="undefined__link"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -455,8 +455,8 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="router-link-exact-active router-link-active link--icon"
-                      href="#"
+                      class="undefined__link"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -471,8 +471,8 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="router-link-exact-active router-link-active link--icon"
-                      href="#"
+                      class="undefined__link"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -487,8 +487,8 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class="router-link-exact-active router-link-active link--icon"
-                      href="#"
+                      class="undefined__link"
+                      href="#/#"
                     >
                       <!---->
                        
@@ -607,7 +607,7 @@ exports[`Storyshots organisms|hero Hero video 1`] = `
             </p>
              
             <a
-              class="link--large router-link-exact-active router-link-active link--icon"
+              class="link--large router-link-exact-active router-link-active undefined__link"
               href="#/"
             >
               <!---->

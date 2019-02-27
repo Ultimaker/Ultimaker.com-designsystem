@@ -45,7 +45,7 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
            
           <a
             aria-describedby="tooltip_274"
-            class="link list-section__info-link router-link-exact-active router-link-active link--reversed link--icon"
+            class="link list-section__info-link router-link-exact-active router-link-active undefined__link link--reversed link--icon"
             href="#/"
             role="button"
           >

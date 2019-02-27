@@ -62,8 +62,10 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                             class="footer-nav__item"
                           >
                             <a
-                              class="router-link-exact-active router-link-active footer-nav__link"
+                              class="footer-nav__link"
                               href="http://nu.nl"
+                              rel="noopener"
+                              target="_blank"
                             >
                               <!---->
                                
@@ -99,8 +101,10 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                             class="footer-nav__item"
                           >
                             <a
-                              class="router-link-exact-active router-link-active footer-nav__link"
+                              class="footer-nav__link"
                               href="http://nu.nl"
+                              rel="noopener"
+                              target="_blank"
                             >
                               <!---->
                                
@@ -138,8 +142,10 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                         class="footer-nav__item"
                       >
                         <a
-                          class="router-link-exact-active router-link-active footer-nav__link"
+                          class="footer-nav__link"
                           href="http://nu.nl"
+                          rel="noopener"
+                          target="_blank"
                         >
                           <!---->
                            
@@ -290,8 +296,10 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                     class="legal__item"
                   >
                     <a
-                      class="router-link-exact-active router-link-active legal__link"
+                      class="legal__link"
                       href="http://nu.nl"
+                      rel="noopener"
+                      target="_blank"
                     >
                       <!---->
                        

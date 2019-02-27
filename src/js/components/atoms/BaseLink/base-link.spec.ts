@@ -11,8 +11,10 @@ describe('components', () => {
                 const vm = mount({
                     props: {
                         url: '/resellers/narwals',
+                        label: 'narwal',
                     },
                 });
+
                 const objAttributes = vm.$el.attributes;
 
                 expect(objAttributes.to.value).toBe('/resellers/narwals');
@@ -24,6 +26,7 @@ describe('components', () => {
                 const vm = mount({
                     props: {
                         url: 'http://narwals.com',
+                        label: 'narwal',
                     },
                 });
                 const objAttributes = vm.$el.attributes;
@@ -38,6 +41,7 @@ describe('components', () => {
                     props: {
                         url: 'http://narwals.com',
                         mod: 'narwal',
+                        label: 'narwal',
                     },
                 });
 
@@ -54,6 +58,7 @@ describe('components', () => {
                     props: {
                         url: 'http://narwals.com',
                         block: 'narwal',
+                        label: 'narwal',
                     },
                 });
 
