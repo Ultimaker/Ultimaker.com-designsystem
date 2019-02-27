@@ -18,18 +18,7 @@ exports[`Storyshots Molecules|sys-nav SysNav 1`] = `
         <li
           class="sys-nav__item"
         >
-          <a
-            class="sys-nav__link"
-            href="#/resellers"
-          >
-            <!---->
-             
-            <span
-              class="sys-nav__label sys-nav__label--hidden-sm"
-            >
-              Buying options
-            </span>
-          </a>
+          <!---->
         </li>
          
         <li
