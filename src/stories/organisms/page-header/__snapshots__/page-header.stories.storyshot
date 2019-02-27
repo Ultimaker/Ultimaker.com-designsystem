@@ -44,7 +44,9 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     aria-controls="nav-0"
                     aria-haspopup="true"
                     class="main-nav__link"
-                    href="#/#nav-one"
+                    href="#nav-one"
+                    rel="noopener"
+                    target="_blank"
                   >
                     
             Nav section one
@@ -75,7 +77,9 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     aria-controls="nav-1"
                     aria-haspopup="true"
                     class="main-nav__link"
-                    href="#/#nav-two"
+                    href="#nav-two"
+                    rel="noopener"
+                    target="_blank"
                   >
                     
             Nav section two
@@ -106,7 +110,9 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     aria-controls="nav-2"
                     aria-haspopup="true"
                     class="main-nav__link"
-                    href="#/#nav-three"
+                    href="#nav-three"
+                    rel="noopener"
+                    target="_blank"
                   >
                     
             Nav section three
@@ -137,7 +143,9 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     aria-controls="nav-3"
                     aria-haspopup="true"
                     class="main-nav__link"
-                    href="#/#nav-four"
+                    href="#nav-four"
+                    rel="noopener"
+                    target="_blank"
                   >
                     
             Nav section four
