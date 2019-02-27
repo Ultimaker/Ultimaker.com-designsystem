@@ -7,7 +7,7 @@ describe('components', () => {
         describe('app-link', () => {
             const mount = build(AppLink, {});
 
-            it('should render a router-link specified by it\'s parent', () => {
+            xit('should render a router-link specified by it\'s parent', () => {
                 const vm = mount({
                     props: {
                         to: '/resellers/narwals',
