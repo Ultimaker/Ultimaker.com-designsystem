@@ -186,8 +186,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="link-list__item"
                     >
                       <a
-                        class="router-link-exact-active router-link-active link--icon"
-                        href="#"
+                        class="undefined__link"
+                        href="#/#"
                       >
                         <!---->
                          
@@ -202,8 +202,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="link-list__item"
                     >
                       <a
-                        class="router-link-exact-active router-link-active link--icon"
-                        href="#"
+                        class="undefined__link"
+                        href="#/#"
                       >
                         <!---->
                          
@@ -218,8 +218,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="link-list__item"
                     >
                       <a
-                        class="router-link-exact-active router-link-active link--icon"
-                        href="#"
+                        class="undefined__link"
+                        href="#/#"
                       >
                         <!---->
                          
@@ -384,8 +384,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
             </div>
              
             <a
-              class="router-link-exact-active router-link-active brands__link link--large"
-              href="#"
+              class="brands__link link--large link--icon"
+              href="#/#"
             >
               <!---->
                
@@ -429,8 +429,8 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 </p>
                  
                 <a
-                  class="link--icon link--large router-link-exact-active router-link-active link--icon"
-                  href="#"
+                  class="link--icon link--large undefined__link"
+                  href="#/#"
                   text="Large content-link with icon"
                 >
                   <!---->

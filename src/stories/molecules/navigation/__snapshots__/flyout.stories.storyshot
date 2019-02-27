@@ -31,8 +31,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -84,8 +84,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           </ul>
            
           <a
-            class="link flyout__link--cta-mini router-link-exact-active router-link-active"
-            href="/explore"
+            class="link flyout__link--cta-mini undefined__link"
+            href="#/explore"
           >
             <!---->
              
@@ -115,8 +115,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -131,8 +131,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -147,8 +147,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -188,8 +188,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -205,8 +205,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -222,8 +222,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -255,8 +255,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           </ul>
            
           <a
-            class="link flyout__link--cta-mini router-link-exact-active router-link-active"
-            href="/explore"
+            class="link flyout__link--cta-mini undefined__link"
+            href="#/explore"
           >
             <!---->
              
@@ -286,8 +286,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -302,8 +302,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -318,8 +318,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -358,8 +358,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -375,8 +375,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               style="display: none;"
             >
               <a
-                class="flyout__link link router-link-exact-active router-link-active"
-                href="#"
+                class="flyout__link link undefined__link"
+                href="#/#"
               >
                 <!---->
                  
@@ -408,8 +408,8 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           </ul>
            
           <a
-            class="link flyout__link--cta-mini router-link-exact-active router-link-active"
-            href="/explore"
+            class="link flyout__link--cta-mini undefined__link"
+            href="#/explore"
           >
             <!---->
              
@@ -454,14 +454,18 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               <a
                 aria-controls="nav-0"
                 aria-haspopup="true"
-                class="main-nav__link"
-                href="#nav-one"
-                rel="noopener"
-                target="_blank"
+                class="main-nav__link undefined__link"
+                href="#/#nav-one"
               >
-                
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
             Nav section one
         
+                </span>
               </a>
             </div>
              
@@ -487,14 +491,18 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               <a
                 aria-controls="nav-1"
                 aria-haspopup="true"
-                class="main-nav__link"
-                href="#nav-two"
-                rel="noopener"
-                target="_blank"
+                class="main-nav__link undefined__link"
+                href="#/#nav-two"
               >
-                
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
             Nav section two
         
+                </span>
               </a>
             </div>
              
@@ -520,14 +528,18 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               <a
                 aria-controls="nav-2"
                 aria-haspopup="true"
-                class="main-nav__link"
-                href="#nav-three"
-                rel="noopener"
-                target="_blank"
+                class="main-nav__link undefined__link"
+                href="#/#nav-three"
               >
-                
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
             Nav section three
         
+                </span>
               </a>
             </div>
              
@@ -553,14 +565,18 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               <a
                 aria-controls="nav-3"
                 aria-haspopup="true"
-                class="main-nav__link"
-                href="#nav-four"
-                rel="noopener"
-                target="_blank"
+                class="main-nav__link undefined__link"
+                href="#/#nav-four"
               >
-                
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
             Nav section four
         
+                </span>
               </a>
             </div>
              

@@ -43,14 +43,18 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   <a
                     aria-controls="nav-0"
                     aria-haspopup="true"
-                    class="main-nav__link"
-                    href="#nav-one"
-                    rel="noopener"
-                    target="_blank"
+                    class="main-nav__link undefined__link"
+                    href="#/#nav-one"
                   >
-                    
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
             Nav section one
         
+                    </span>
                   </a>
                 </div>
                  
@@ -76,14 +80,18 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   <a
                     aria-controls="nav-1"
                     aria-haspopup="true"
-                    class="main-nav__link"
-                    href="#nav-two"
-                    rel="noopener"
-                    target="_blank"
+                    class="main-nav__link undefined__link"
+                    href="#/#nav-two"
                   >
-                    
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
             Nav section two
         
+                    </span>
                   </a>
                 </div>
                  
@@ -109,14 +117,18 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   <a
                     aria-controls="nav-2"
                     aria-haspopup="true"
-                    class="main-nav__link"
-                    href="#nav-three"
-                    rel="noopener"
-                    target="_blank"
+                    class="main-nav__link undefined__link"
+                    href="#/#nav-three"
                   >
-                    
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
             Nav section three
         
+                    </span>
                   </a>
                 </div>
                  
@@ -142,14 +154,18 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   <a
                     aria-controls="nav-3"
                     aria-haspopup="true"
-                    class="main-nav__link"
-                    href="#nav-four"
-                    rel="noopener"
-                    target="_blank"
+                    class="main-nav__link undefined__link"
+                    href="#/#nav-four"
                   >
-                    
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
             Nav section four
         
+                    </span>
                   </a>
                 </div>
                  
