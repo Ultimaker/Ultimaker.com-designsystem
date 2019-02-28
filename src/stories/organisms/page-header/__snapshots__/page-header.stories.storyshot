@@ -189,7 +189,6 @@ exports[`Storyshots organisms|page-header Header 1`] = `
           <nav
             aria-label="quick access"
             class="sys-nav"
-            order-now-link:="en/explore"
           >
             <ul
               class="sys-nav__list"
@@ -198,7 +197,18 @@ exports[`Storyshots organisms|page-header Header 1`] = `
               <li
                 class="sys-nav__item"
               >
-                <!---->
+                <a
+                  class="sys-nav__link"
+                  href="#/en/explore"
+                >
+                  <!---->
+                   
+                  <span
+                    class="sys-nav__label sys-nav__label--hidden-sm"
+                  >
+                    Order Now
+                  </span>
+                </a>
               </li>
                
               <li
