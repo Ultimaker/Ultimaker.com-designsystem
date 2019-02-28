@@ -92,11 +92,11 @@ export default class ListSection extends Vue implements IListSection {
     handleResize(): void {
         if (!this.showHiddenItems && this.viewportUtil.isMobile) {
             this.showMax = (
-                this.limit && typeof this.limit.smallScreen === 'number' ? this.limit.smallScreen : Number.MAX_SAFE_INTEGER
+               3 // this.limit && typeof this.limit.smallScreen === 'number' ? this.limit.smallScreen : Number.MAX_SAFE_INTEGER
             );
         } else {
             this.showMax = (
-                this.limit && typeof this.limit.largeScreen  === 'number' ? this.limit.largeScreen : Number.MAX_SAFE_INTEGER
+                3 // this.limit && typeof this.limit.largeScreen  === 'number' ? this.limit.largeScreen : Number.MAX_SAFE_INTEGER
             );
         }
     }

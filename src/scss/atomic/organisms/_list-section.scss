@@ -6,7 +6,11 @@ $cardMobileMarginBottom: $buildingUnit;
         margin-bottom: 53px;
     }
     &:last-child {
-        margin-bottom: 0;
+        margin-bottom: -$buildingUnit * 2;
+
+        .list-section-list__button {
+            margin-bottom: $buildingUnit * 2;
+        }
     }
 }
 
@@ -76,6 +80,7 @@ $cardMobileMarginBottom: $buildingUnit;
 
 .list-section__button {
     margin: ($cardMobileMarginBottom * 2) 0 $cardMobileMarginBottom 0;
+
 
     @include min-tablet {
         margin: ($cardMobileMarginBottom * 2) 0 $cardTabletMarginBottom 0;
