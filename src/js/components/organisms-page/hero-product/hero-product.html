@@ -36,12 +36,12 @@
                     <ul class="link-list link-list--icon hero__link-list">
                         <template v-if="documents">
                             <li class="link-list__item" v-for="link in this.link">
-                                <content-link :href="link.uri" icon="info">{{ link.title }}</content-link>
+                                <content-link :url="link.uri" icon="info">{{ link.title }}</content-link>
                             </li>
                         </template>
                         <template v-if="this.documents">
                             <li class="link-list__item" v-for="document in documents" v-if="document.links">
-                                <content-link :href="document.links.self.href" icon="download">{{ labels.download}} {{ document.title }}</content-link>
+                                <content-link :url="document.links.self.href" icon="download">{{ labels.download}} {{ document.title }}</content-link>
                             </li>
                         </template>
                     </ul>
