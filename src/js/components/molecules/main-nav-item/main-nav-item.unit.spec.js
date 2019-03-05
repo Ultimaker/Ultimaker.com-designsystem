@@ -16,15 +16,6 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should change its icon direction according to the openState', () => {
-                const vm = mount();
-
-                expect(vm.angleDirection).toEqual('angle-down');
-                vm.flyoutIsOpen = true;
-                expect(vm.angleDirection).toEqual('angle-up');
-                vm.$destroy();
-            });
-
             it('should be able to toggle the openState', async(done) => {
                 const vm = mount();
 

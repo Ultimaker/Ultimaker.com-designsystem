@@ -19,16 +19,20 @@ export default class MainNavItem extends Vue  {
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Boolean, required: true }) active!: boolean;
 
-    flyoutIsOpen: boolean =  false;
+    flyoutIsOpen: boolean = false;
     hideTimeout: any = null;
+    angleDirection: string = 'angle-down';
     isTouch: boolean = BrowserCapabilities.supportsTouch;
 
     get isActive(): string | boolean {
         return this.active ? 'page' : false;
     }
 
-    get angleDirection(): string {
-        return this.flyoutIsOpen ? 'angle-up' : 'angle-down';
+    @Watch('flyoutIsOpen')
+    async function(newVal) {
+        await this.$nextTick();
+        await new Promise(resolve => setTimeout(resolve, 10));
+        this.angleDirection = newVal ? 'angle-up' : 'angle-down';
     }
 
     get flyoutTransitionName(): string {
