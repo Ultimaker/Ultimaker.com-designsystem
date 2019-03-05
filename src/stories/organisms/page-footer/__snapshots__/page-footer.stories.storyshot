@@ -72,7 +72,9 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                               <span
                                 class="link__underline"
                               >
-                                Sub item 1
+                                
+        Sub item 1
+    
                               </span>
                             </a>
                           </li>
@@ -111,7 +113,9 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                               <span
                                 class="link__underline"
                               >
-                                Sub item 1
+                                
+        Sub item 1
+    
                               </span>
                             </a>
                           </li>
@@ -152,7 +156,9 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                           <span
                             class="link__underline"
                           >
-                            Sub item 1
+                            
+        Sub item 1
+    
                           </span>
                         </a>
                       </li>
@@ -306,7 +312,9 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                       <span
                         class="link__underline"
                       >
-                        Item legal
+                        
+        Item legal
+    
                       </span>
                     </a>
                   </li>

@@ -16,6 +16,10 @@ export default class BaseLink extends Vue implements IBaseLink {
     absoluteUrlRegex: RegExp = /^(http(s)?):\/\//;
     domainRegex: RegExp = /(http(s)?):\/\/(www.)?ultimaker\.com/;
 
+    get slots() {
+        return this.$slots && this.$slots.default && this.$slots.default.length;
+    }
+
     get classObject() {
         const classes = {};
 

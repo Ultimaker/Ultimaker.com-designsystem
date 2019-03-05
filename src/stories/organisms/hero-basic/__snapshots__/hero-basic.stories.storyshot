@@ -57,8 +57,8 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                       class="link__underline"
                     >
                       
-            Find a reseller
-        
+        Find a reseller
+    
                     </span>
                   </a>
                   <a
@@ -74,8 +74,8 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                       class="link__underline"
                     >
                       
-            Get a quote
-        
+        Get a quote
+    
                     </span>
                   </a>
                 </div>
@@ -205,12 +205,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                       href="#/#"
                     >
                       <!---->
-                       
-                      <span
-                        class="link__underline"
-                      >
-                        Content-link
-                      </span>
+                       Content-link
                     </a>
                   </li>
                    
@@ -222,12 +217,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                       href="#/#"
                     >
                       <!---->
-                       
-                      <span
-                        class="link__underline"
-                      >
-                        Download link
-                      </span>
+                       Download link
                     </a>
                   </li>
                   <li
@@ -238,12 +228,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                       href="#/#"
                     >
                       <!---->
-                       
-                      <span
-                        class="link__underline"
-                      >
-                        Download link
-                      </span>
+                       Download link
                     </a>
                   </li>
                 </ul>
@@ -459,12 +444,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                       href="#/#"
                     >
                       <!---->
-                       
-                      <span
-                        class="link__underline"
-                      >
-                        Content-link
-                      </span>
+                       Content-link
                     </a>
                   </li>
                   <li
@@ -475,12 +455,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                       href="#/#"
                     >
                       <!---->
-                       
-                      <span
-                        class="link__underline"
-                      >
-                        Content-link
-                      </span>
+                       Content-link
                     </a>
                   </li>
                   <li
@@ -491,12 +466,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                       href="#/#"
                     >
                       <!---->
-                       
-                      <span
-                        class="link__underline"
-                      >
-                        Content-link
-                      </span>
+                       Content-link
                     </a>
                   </li>
                 </ul>
@@ -611,12 +581,7 @@ exports[`Storyshots organisms|hero Hero video 1`] = `
               href="#/"
             >
               <!---->
-               
-              <span
-                class="link__underline"
-              >
-                Play Video
-              </span>
+               Play Video
             </a>
           </div>
         </section>
