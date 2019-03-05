@@ -42,8 +42,9 @@ describe('components', () => {
                 });
                 const links = vm.$el.querySelectorAll('.flyout__link');
 
+                console.log(links);
+
                 expect(links.length).toBe(fixture.items.length);
-                expect(links[0].textContent).toEqual(fixture.items[0].label);
                 vm.$destroy();
             });
 
@@ -111,45 +112,6 @@ describe('components', () => {
                 vm.$destroy();
                 done();
             });
-
-            // it('should be able change the focus', async(done) => {
-            //     const vm = mount({
-            //         props: {
-            //             items: fixture.linksTwoColumns,
-            //         },
-            //     });
-            //     let operationResult;
-
-            //     console.log('vm', vm);
-
-            //     vm.selectLastLink();
-            //     expect(vm.focusIndex).toEqual(7);
-
-            //     operationResult = vm.selectNextLink();
-            //     await vm.$nextTick();
-            //     expect(operationResult).toEqual(false);
-            //     expect(vm.focusIndex).toEqual(7);
-
-            //     vm.selectPrevLink();
-            //     await vm.$nextTick();
-            //     expect(vm.focusIndex).toEqual(6);
-
-            //     vm.selectFirstLink();
-            //     await vm.$nextTick();
-            //     expect(vm.focusIndex).toEqual(0);
-
-            //     operationResult = vm.selectPrevLink();
-            //     await vm.$nextTick();
-            //     expect(operationResult).toEqual(false);
-            //     expect(vm.focusIndex).toEqual(0);
-
-            //     vm.selectNextLink();
-            //     await vm.$nextTick();
-            //     expect(vm.focusIndex).toEqual(1);
-
-            //     vm.$destroy();
-            //     done();
-            // });
 
             it('should be able to focus on a specified link', async(done) => {
                 const vm = mount({

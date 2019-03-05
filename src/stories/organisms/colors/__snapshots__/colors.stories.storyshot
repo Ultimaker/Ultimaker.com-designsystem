@@ -241,12 +241,8 @@ exports[`Storyshots organisms|colors Colors 1`] = `
                 >
                   <!---->
                    
-                  <span
-                    class="link__underline"
-                  >
-                    <span>
-                      Where to buy!
-                    </span>
+                  <span>
+                    Where to buy!
                   </span>
                 </a>
               </div>

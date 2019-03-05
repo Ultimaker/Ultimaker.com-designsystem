@@ -4,8 +4,8 @@
                    v-bind="cta"
                    :key="index"
                    :class="classObject(cta.type)"
+                   :label="cta.label"
                    :mod="modifier(cta.type)">
-            {{cta.label}}
         </component>
     </template>
 </div>

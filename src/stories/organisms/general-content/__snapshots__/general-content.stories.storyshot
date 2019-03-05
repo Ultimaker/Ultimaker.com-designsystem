@@ -39,12 +39,7 @@ exports[`Storyshots organisms|general-content General content 1`] = `
                 href="#/"
               >
                 <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  Learn More
-                </span>
+                 Learn More
               </a>
             </div>
              

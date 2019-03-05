@@ -52,12 +52,7 @@ exports[`Storyshots organisms|slider-reveal Slider reveal 1`] = `
                 text="Large content-link with icon"
               >
                 <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  Large content-link with icon
-                </span>
+                 Large content-link with icon
               </a>
             </div>
              

@@ -161,12 +161,7 @@ exports[`Storyshots organisms|brands Brands 1`] = `
             href="#/#"
           >
             <!---->
-             
-            <span
-              class="link__underline"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </span>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </a>
         </section>
       </article>

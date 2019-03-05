@@ -70,13 +70,8 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               >
                 <!---->
                  
-                <span
-                  class="link__underline"
-                >
-                  
             More info
         
-                </span>
               </a>
             </header>
              
@@ -927,8 +922,8 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 class="link__underline"
               >
                 
-            Call me back
-        
+        Call me back
+    
               </span>
             </a>
             <a
@@ -944,8 +939,8 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 class="link__underline"
               >
                 
-            Call me back
-        
+        Call me back
+    
               </span>
             </a>
           </div>
