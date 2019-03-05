@@ -26,8 +26,8 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
             class="link__underline"
           >
             
-            Find a reseller
-        
+        Find a reseller
+    
           </span>
         </a>
         <a
@@ -43,8 +43,8 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
             class="link__underline"
           >
             
-            Get a quote
-        
+        Get a quote
+    
           </span>
         </a>
       </div>

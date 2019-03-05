@@ -52,8 +52,8 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       class="link__underline"
                     >
                       
-            Nav section one
-        
+        Nav section one
+    
                     </span>
                   </a>
                 </div>
@@ -89,8 +89,8 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       class="link__underline"
                     >
                       
-            Nav section two
-        
+        Nav section two
+    
                     </span>
                   </a>
                 </div>
@@ -126,8 +126,8 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       class="link__underline"
                     >
                       
-            Nav section three
-        
+        Nav section three
+    
                     </span>
                   </a>
                 </div>
@@ -163,8 +163,8 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       class="link__underline"
                     >
                       
-            Nav section four
-        
+        Nav section four
+    
                     </span>
                   </a>
                 </div>
@@ -198,9 +198,11 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                 class="sys-nav__item"
               >
                 <a
-                  class="sys-nav__link"
+                  class="sys-nav__link undefined__link"
                   href="#/en/explore"
                 >
+                  <!---->
+                   
                   <!---->
                    
                   <span

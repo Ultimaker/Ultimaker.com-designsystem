@@ -9,8 +9,7 @@ export default {
             required: true
         },
         currencyType: {
-            type: String,
-            default: '$'
+            type: String
         },
         decimals: {
             type: Number,

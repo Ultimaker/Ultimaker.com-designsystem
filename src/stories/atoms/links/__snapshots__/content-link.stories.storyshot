@@ -15,12 +15,7 @@ exports[`Storyshots Atoms|links Content link 1`] = `
         href="#/"
       >
         <!---->
-         
-        <span
-          class="link__underline"
-        >
-          Content-link
-        </span>
+         Content-link
       </a>
     </section>
   </section>

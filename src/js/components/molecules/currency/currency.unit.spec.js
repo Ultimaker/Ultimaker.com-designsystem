@@ -13,7 +13,7 @@ describe('components', () => {
                     currencyType = vm.$el.querySelector('.currency__type');
 
                 expect(currencyType.nodeName).toEqual('SPAN');
-                expect(currencyType.innerText).toEqual('$');
+                expect(currencyType.innerText).toEqual('');
                 vm.$destroy();
             });
 

@@ -190,12 +190,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         href="#/#"
                       >
                         <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          Content-link
-                        </span>
+                         Content-link
                       </a>
                     </li>
                     <li
@@ -206,12 +201,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         href="#/#"
                       >
                         <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          Content-link
-                        </span>
+                         Content-link
                       </a>
                     </li>
                     <li
@@ -222,12 +212,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         href="#/#"
                       >
                         <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          Content-link
-                        </span>
+                         Content-link
                       </a>
                     </li>
                   </ul>
@@ -388,12 +373,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
               href="#/#"
             >
               <!---->
-               
-              <span
-                class="link__underline"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              </span>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </a>
           </section>
         </article>
@@ -434,12 +414,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   text="Large content-link with icon"
                 >
                   <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    Large content-link with icon
-                  </span>
+                   Large content-link with icon
                 </a>
               </div>
                
@@ -1117,12 +1092,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   href="#/"
                 >
                   <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    Learn More
-                  </span>
+                   Learn More
                 </a>
               </div>
                

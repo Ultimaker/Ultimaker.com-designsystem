@@ -157,12 +157,7 @@ exports[`Storyshots Atoms|lists Link list 1`] = `
             href="#/"
           >
             <!---->
-             
-            <span
-              class="link__underline"
-            >
-              Content-link
-            </span>
+             Content-link
           </a>
         </li>
         <li
@@ -173,12 +168,7 @@ exports[`Storyshots Atoms|lists Link list 1`] = `
             href="#/"
           >
             <!---->
-             
-            <span
-              class="link__underline"
-            >
-              Content-link
-            </span>
+             Content-link
           </a>
         </li>
         <li
@@ -189,12 +179,7 @@ exports[`Storyshots Atoms|lists Link list 1`] = `
             href="#/"
           >
             <!---->
-             
-            <span
-              class="link__underline"
-            >
-              Content-link
-            </span>
+             Content-link
           </a>
         </li>
       </ul>
