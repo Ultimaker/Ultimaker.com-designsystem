@@ -1,4 +1,4 @@
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 
 import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 import BrowserCapabilities from 'utils/browser-capabilities';
@@ -48,6 +48,7 @@ export default class MainNavItem extends Vue  {
 
     async showFlyout(): Promise<any> {
         await this.$nextTick();
+        await new Promise(resolve => setTimeout(resolve, 10));
 
         if (this.hideTimeout) {
             clearTimeout(this.hideTimeout);
@@ -78,12 +79,12 @@ export default class MainNavItem extends Vue  {
     }
 
     async selectFlyoutFirstLink(): Promise<any> {
-        this.showFlyout();
+        await this.showFlyout();
         await this.$nextTick();
 
         const refs: any =  this.$refs;
         if (refs.flyout && refs.flyout.selectFirstLink) {
-            refs.flyout.selectFirstLink();
+            await refs.flyout.selectFirstLink();
         }
     }
 
