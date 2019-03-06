@@ -15,7 +15,7 @@ export default class MainNav extends Vue  {
     @Prop({ type: Boolean, required: false }) mainNavOpen?: boolean;
 
     viewportUtil: any = new ViewportUtility();
-    showCompactMenu: any  = null;
+    showCompactMenu: any  = true;
     ready: boolean = false;
     timeout: number = 100;
 
@@ -32,7 +32,7 @@ export default class MainNav extends Vue  {
         this.ready = true;
     }
 
-    beforeMount() {
+    mounted() {
         this.viewportUtil.addResizeHandler(this.handleResize);
         if (BrowserCapabilities.isBrowser) {
             this.showCompactMenu = this.viewportUtil.isTablet;
