@@ -63,6 +63,12 @@ export default class CountrySelector extends Vue implements CountrySelectorInter
         await this.$nextTick();
 
         this.$refs.autocomplete.focus();
+
+        if (this.$refs.autocomplete.input) {
+            await this.$refs.autocomplete.init();
+            this.$refs.autocomplete.resetInput();
+        }
+
         this.$refs.autocomplete.calculateDirection();
     }
 
