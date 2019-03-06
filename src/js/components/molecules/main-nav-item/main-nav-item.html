@@ -25,27 +25,16 @@
 
 
     <transition :name="flyoutTransitionName">
-        <template v-if="isCompact && mainNavOpen">
             <flyout :id="itemId" v-if="items" ref="flyout"
                 @keydown.esc.native="selectParent"
                 @open="showFlyout"
                 @close="hideFlyout"
                 @main="selectParent"
                 class="flyout--large"
+                v-show="isCompact || flyoutIsOpen"
                 :items="items"
                 :is-compact="isCompact">
             </flyout>
-        </template>
-        <template v-else>
-            <flyout :id="itemId" v-if="(items && flyoutIsOpen)" ref="flyout"
-                @keydown.esc.native="selectParent"
-                @open="showFlyout"
-                @close="hideFlyout"
-                @main="selectParent"
-                class="flyout--large"
-                :items="items"
-                :is-compact="isCompact">
-            </flyout>
-        </template>
+
     </transition>
 </li>
