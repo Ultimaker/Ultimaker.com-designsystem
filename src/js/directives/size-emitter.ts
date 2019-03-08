@@ -39,12 +39,17 @@ export class SizeEmitter implements DirectiveOptions {
         vnode.context['sizeHandler']();
     }
 
-    update(el, binding, vnode) {
+    static inserted(el, binding, vnode) {
         if (!vnode.context) { return; }
         debounce(vnode.context['sizeHandler'], 50);
     }
 
-    componentUpdated(el, binding, vnode) {
+    static update(el, binding, vnode) {
+        if (!vnode.context) { return; }
+        debounce(vnode.context['sizeHandler'], 50);
+    }
+
+    static componentUpdated(el, binding, vnode) {
         if (!vnode.context) { return; }
         debounce(vnode.context['sizeHandler'], 50);
     }
