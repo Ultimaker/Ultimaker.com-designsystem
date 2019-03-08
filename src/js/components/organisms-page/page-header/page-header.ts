@@ -11,9 +11,9 @@ import { PageHeader as PageHeaderInterface } from '@ultimaker/ultimaker.com-mode
 })
 
 export default class PageHeader extends Vue implements PageHeaderInterface {
-    @Prop({ type: Array, required: true }) navigation!: PageHeaderInterface['navigation'];
-    @Prop({ type: Object, required: true }) cta!: PageHeaderInterface['cta'];
-    @Prop({ type: Object, required: true }) search!: PageHeaderInterface['search'];
+    @Prop({ type: Array, required: false }) navigation!: PageHeaderInterface['navigation'];
+    @Prop({ type: Object, required: false }) cta!: PageHeaderInterface['cta'];
+    @Prop({ type: Object, required: false }) search!: PageHeaderInterface['search'];
     @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
 
     assistUsed: boolean =  false;
@@ -87,11 +87,20 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
     }
 
     beforeMount() {
+        const loggedEvents = PublicEventService.log('size').filter(e => e.element === 'drawer');
+
         PublicEventService.on('size', ({ element, size }) => {
             if (element === 'drawer') {
                 this.offsetTopHeader = size;
             }
         });
+
+        if (loggedEvents.length > 0) {
+            console.log('found drawer size event: ', loggedEvents);
+            const lastEvent = loggedEvents[loggedEvents.length - 1];
+
+            this.offsetTopHeader = lastEvent.size || 0;
+        }
     }
 
     mounted() {
