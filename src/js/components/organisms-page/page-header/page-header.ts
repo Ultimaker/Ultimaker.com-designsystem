@@ -87,20 +87,11 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
     }
 
     beforeMount() {
-        const loggedEvents = PublicEventService.log('size').filter(e => e.element === 'drawer');
-
         PublicEventService.on('size', ({ element, size }) => {
             if (element === 'drawer') {
                 this.offsetTopHeader = size;
             }
         });
-
-        if (loggedEvents.length > 0) {
-            console.log('found drawer size event: ', loggedEvents);
-            const lastEvent = loggedEvents[loggedEvents.length - 1];
-
-            this.offsetTopHeader = lastEvent.size || 0;
-        }
     }
 
     mounted() {
