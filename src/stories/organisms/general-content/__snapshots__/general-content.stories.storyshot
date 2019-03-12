@@ -35,11 +35,18 @@ exports[`Storyshots organisms|general-content General content 1`] = `
               </p>
                
               <a
-                class="router-link-exact-active router-link-active general-content__link"
+                class="link router-link-exact-active router-link-active general-content__link"
                 href="#/"
               >
                 <!---->
-                 Learn More
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Learn More
+    
+                </span>
               </a>
             </div>
              
