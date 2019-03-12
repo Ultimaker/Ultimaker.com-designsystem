@@ -36,10 +36,6 @@ export default class MainNavItem extends Vue  {
         this.angleDirection = newVal ? 'angle-up' : 'angle-down';
     }
 
-    get flyoutTransitionName(): string {
-        return this.isCompact ? '' : 'flyout-open';
-    }
-
     get toggleIsVisible(): boolean {
         return !!this.items && !this.isCompact && this.isTouch;
     }
