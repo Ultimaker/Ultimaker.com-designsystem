@@ -23,18 +23,14 @@
                  @click="toggleFlyout" tabindex="-1">
     </icon-button>
 
-
-    <transition :name="flyoutTransitionName">
-            <flyout :id="itemId" v-if="items" ref="flyout"
-                @keydown.esc.native="selectParent"
-                @open="showFlyout"
-                @close="hideFlyout"
-                @main="selectParent"
-                class="flyout--large"
-                v-show="isCompact || flyoutIsOpen"
-                :items="items"
-                :is-compact="isCompact">
-            </flyout>
-
-    </transition>
+    <flyout :id="itemId" v-if="items" ref="flyout"
+        @keydown.esc.native="selectParent"
+        @open="showFlyout"
+        @close="hideFlyout"
+        @main="selectParent"
+        class="flyout--large"
+        :items="items"
+        :is-compact="isCompact"
+        :class="{ 'flyout--is-active': navLinkIsActive}">
+    </flyout>
 </li>
