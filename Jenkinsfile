@@ -131,9 +131,9 @@ podTemplate(
 
       stage('update deployments') {
         sh """
-        kubectl --namespace storybook set image deployment/storybook--node node=${nodeContainer}:${commit}
-        kubectl --namespace storybook set image deployment/storybook--nginx nginx=${nginxContainer}:${commit}
-        cat <<EOF | parallel --jobs 2 kubectl --namespace storybook rollout status
+        kubectl --namespace acceptance set image deployment/storybook--node node=${nodeContainer}:${commit}
+        kubectl --namespace acceptance set image deployment/storybook--nginx nginx=${nginxContainer}:${commit}
+        cat <<EOF | parallel --jobs 2 kubectl --namespace acceptance rollout status
         deployment/storybook--node
         deployment/storybook--nginx
         EOF
