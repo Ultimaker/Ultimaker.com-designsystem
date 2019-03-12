@@ -268,12 +268,3 @@ $mainNavBorder: 1px solid $colorGray;
         transition: opacity $defaultDuration;
     }
 }
-
-.flyout-open {
-    &-enter, &-leave-to {
-        opacity: 0;
-    }
-    &-enter-active, &-leave-active {
-        transition: opacity $defaultDuration;
-    }
-}
