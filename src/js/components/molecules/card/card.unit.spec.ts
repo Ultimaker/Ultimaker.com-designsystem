@@ -33,7 +33,7 @@ describe('components', () => {
                 const content = card.querySelector('.card__content');
                 const title = card.querySelector('.card__headline');
                 const description = card.querySelector('.card__description');
-                const link = card.querySelector('.card__link');
+                const link = card.querySelector('.link');
                 const taglist = card.querySelector('.card__taglist');
 
                 it('should render a "card" molecule', () => {

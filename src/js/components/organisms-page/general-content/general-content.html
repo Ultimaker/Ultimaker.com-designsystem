@@ -4,7 +4,8 @@
             <div class="flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell">
                 <h2 class="general-content__title"> {{ title }}</h2>
                 <p class="general-content__body" v-for="p in text">{{ p }}</p>
-                <content-link  v-if="contentLink" :block="'general-content'" :url="contentLink.href">{{ contentLink.text }}</content-link>
+                <content-link class="link" v-if="contentLink" :block="'general-content'" :url="contentLink.href" :label="contentLink.text">
+                </content-link>
             </div>
             <div class="flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell">
                 <div class="general-content__image-wrapper">
