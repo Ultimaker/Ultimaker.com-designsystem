@@ -112,14 +112,3 @@
         }
     }
 }
-
- //Used by VUE transition
-.show-assist {
-    &-enter, &-leave-to {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    &-enter-active, &-leave-active {
-        transition: transform $defaultDuration, opacity $defaultDuration;
-    }
-}

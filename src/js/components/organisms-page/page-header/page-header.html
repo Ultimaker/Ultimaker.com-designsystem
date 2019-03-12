@@ -11,10 +11,7 @@
                  :search-icon="search.icon" :search-label="search.label">
         </sys-nav>
 
-        <transition name="show-assist">
-            <nav-assist class="main-nav__nav-assist" :open-state="mainNavOpen"
-                        @toggle="navAssistToggle" v-show="showCompactMenu"></nav-assist>
-        </transition>
+        <nav-assist class="main-nav__nav-assist" :open-state="mainNavOpen" @toggle="navAssistToggle"></nav-assist>
 
         <transition name="search" @after-enter="handleFocus" @leave="handleFocus">
             <search-bar class="header__search"
