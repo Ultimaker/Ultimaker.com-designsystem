@@ -63,6 +63,14 @@ $mainNavBorder: 1px solid $colorGray;
 .main-nav__list {
     @extend %reset-list;
 
+    transform: translateX(-100%);
+    transition: transform $defaultDuration ;
+
+    @include min-desktop {
+        transform: none;
+        transition: none;
+    }
+
     .main-nav--small & {
         position: relative;
         top: 100%;
@@ -93,6 +101,7 @@ $mainNavBorder: 1px solid $colorGray;
 
     &.main-nav__list-visible {
         left: 0;
+        transform: translateX(0);
     }
 }
 
@@ -228,9 +237,7 @@ $mainNavBorder: 1px solid $colorGray;
             visibility: visible;
             opacity: 1;
         }
-    }
 
-    @include min-desktop {
         .main-nav & {
             top: $navHeight;
         }
@@ -246,25 +253,5 @@ $mainNavBorder: 1px solid $colorGray;
 
     .main-nav--large & {
         display: initial;
-    }
-}
-
-// Used by VUE transition
-.menu-open {
-    &-enter, &-leave-to {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    &-enter-active, &-leave-active {
-        transition: transform $defaultDuration, opacity $defaultDuration;
-    }
-}
-
-.menu-switch {
-    &-enter, &-leave-to {
-        opacity: 0;
-    }
-    &-enter-active, &-leave-active {
-        transition: opacity $defaultDuration;
     }
 }
