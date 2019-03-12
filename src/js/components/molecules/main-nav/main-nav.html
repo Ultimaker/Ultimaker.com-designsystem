@@ -1,17 +1,12 @@
-<transition name="menu-switch" mode="out-in">
-    <nav key="large-menu" class="main-nav" :class="classList" aria-label="site" v-show="ready">
-        <transition name="menu-open">
-            <ul class="main-nav__list" role="presentation" v-show="(!showCompactMenu || mainNavOpen)"
-            :class="{'main-nav__list-visible': mainNavOpen && showCompactMenu}">
-                <main-nav-item v-if="items" ref="navItem"
-                    v-for="(item, index) in items" :key="index"
-                    :is-compact="showCompactMenu"
-                    :main-nav-open="mainNavOpen"
-                    :active="false"
-                    :itemId="'nav-' + index"
-                    v-bind="item">
-                </main-nav-item>
-            </ul>
-        </transition>
-    </nav>
-</transition>
+<nav key="large-menu" class="main-nav" :class="classList" aria-label="site" v-show="ready">
+    <ul class="main-nav__list" role="presentation" :class="{'main-nav__list-visible': mainNavOpen && showCompactMenu}">
+        <main-nav-item v-if="items" ref="navItem"
+            v-for="(item, index) in items" :key="index"
+            :is-compact="showCompactMenu"
+            :main-nav-open="mainNavOpen"
+            :active="false"
+            :itemId="'nav-' + index"
+            v-bind="item">
+        </main-nav-item>
+    </ul>
+</nav>
