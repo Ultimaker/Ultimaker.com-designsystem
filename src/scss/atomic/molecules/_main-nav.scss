@@ -216,7 +216,17 @@ $mainNavBorder: 1px solid $colorGray;
 
 .main-nav__flyout {
     z-index: 1;
+
     @extend .flyout;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity $defaultDuration;
+
+    &.flyout--is-active {
+        visibility: visible;
+        opacity: 1;
+    }
 
     @include min-desktop {
         .main-nav & {
