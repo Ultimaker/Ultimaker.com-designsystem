@@ -72,11 +72,17 @@ const webpackConfig = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/
+                include: [
+                    resolve('src'),
+                    resolve('node_modules/@ultimaker')
+                ]
             },
             {
                 test: /\.tsx?$/,
-                exclude: /node_modules/,
+                include: [
+                    resolve('src'),
+                    resolve('node_modules/@ultimaker')
+                ],
                 use: [
                     {
                         loader: 'babel-loader'
