@@ -11,6 +11,9 @@ import { imageConstants } from './c-image.constants';
 
 export default class CImage extends Vue implements ICImageProps {
     @Prop({ type: String, required: true })
+    mimeType!: string;
+
+    @Prop({ type: String, required: true })
     url!: string;
 
     @Prop({ type: String, default: '' })
