@@ -33,7 +33,6 @@ exports[`Storyshots organisms|page-header Header 1`] = `
             <ul
               class="main-nav__list"
               role="presentation"
-              style="display: none;"
             >
               <li
                 class="main-nav__item"
@@ -79,13 +78,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_749_0"
+                      id="flyout_title_740_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_749_0"
+                      aria-labelledby="flyout_title_740_0"
                       class="flyout__list"
                     >
                       <li
@@ -166,14 +165,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_749_1"
+                      id="flyout_title_740_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_749_1"
+                      aria-labelledby="flyout_title_740_1"
                       class="flyout__list"
                     >
                       <li
@@ -351,14 +350,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_749_2"
+                      id="flyout_title_740_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_749_2"
+                      aria-labelledby="flyout_title_740_2"
                       class="flyout__list"
                     >
                       <li
@@ -557,13 +556,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_801_0"
+                      id="flyout_title_791_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_801_0"
+                      aria-labelledby="flyout_title_791_0"
                       class="flyout__list"
                     >
                       <li
@@ -631,14 +630,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_801_1"
+                      id="flyout_title_791_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_801_1"
+                      aria-labelledby="flyout_title_791_1"
                       class="flyout__list"
                     >
                       <li
@@ -803,14 +802,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_801_2"
+                      id="flyout_title_791_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_801_2"
+                      aria-labelledby="flyout_title_791_2"
                       class="flyout__list"
                     >
                       <li
@@ -1033,13 +1032,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_853_0"
+                      id="flyout_title_841_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_853_0"
+                      aria-labelledby="flyout_title_841_0"
                       class="flyout__list"
                     >
                       <li
@@ -1107,14 +1106,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_853_1"
+                      id="flyout_title_841_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_853_1"
+                      aria-labelledby="flyout_title_841_1"
                       class="flyout__list"
                     >
                       <li
@@ -1279,14 +1278,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_853_2"
+                      id="flyout_title_841_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_853_2"
+                      aria-labelledby="flyout_title_841_2"
                       class="flyout__list"
                     >
                       <li
