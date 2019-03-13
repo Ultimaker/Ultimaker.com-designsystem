@@ -19,7 +19,6 @@ export default class MainNavItem extends Vue  {
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Boolean, required: true }) active!: boolean;
 
-    navLinkIsActive: boolean = false;
     flyoutIsOpen: boolean = false;
     hideTimeout: any = null;
     angleDirection: string = 'angle-down';
@@ -48,8 +47,6 @@ export default class MainNavItem extends Vue  {
     }
 
     async showFlyout(): Promise<any> {
-        this.navLinkIsActive = true;
-
         await this.$nextTick();
         await new Promise(resolve => setTimeout(resolve, 10));
 
@@ -62,7 +59,6 @@ export default class MainNavItem extends Vue  {
     }
 
     hideFlyout(): void {
-        this.navLinkIsActive = false;
         this.$emit('closeMainNav');
         this.flyoutIsOpen = false;
     }
