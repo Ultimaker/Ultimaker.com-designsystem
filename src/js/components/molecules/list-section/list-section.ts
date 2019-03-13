@@ -6,6 +6,7 @@ import ViewportUtil from 'utils/viewport';
 import BrowserCapabilities from 'utils/browser-capabilities';
 
 import { ListSection as IListSection } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/sections/ListSection';
+import Events from 'constants/events';
 
 @Component({
     name: 'ListSection',
@@ -17,7 +18,7 @@ export default class ListSection extends Vue implements IListSection {
     @Prop({ type: Array, required: true }) cards!: IListSection['cards'];
     @Prop({ type: Object, required: false }) tooltip?: IListSection['tooltip'];
     @Prop({ type: Object, required: false }) limit?: IListSection['limit'];
-    @Prop({ type: String, required: false }) showAllLabel?: IListSection['showAllLabel'];
+    @Prop({ type: Object, required: false }) expand?: IListSection['expand'];
 
     cardTransitionDuration: number = Defaults.defaultDuration;
     cardOffset: number = Defaults.buildingUnit * 5;
@@ -32,7 +33,24 @@ export default class ListSection extends Vue implements IListSection {
     rowIndex: number = 0;
     incement: number = 1;
 
+    $emitPublic;
     viewportUtil: ViewportUtil = new ViewportUtil();
+
+    get clickEventType() {
+        return Events.click;
+    }
+
+    get clickEventData() {
+        if (this.expand && this.expand.clickEvent) {
+            const { clickEvent } = this.expand;
+
+            return {
+                dataType: clickEvent.name,
+                data: clickEvent.data,
+            };
+        }
+        return null;
+    }
 
     tooltipVisible() {
         return this.visibleTooltip;
@@ -48,12 +66,19 @@ export default class ListSection extends Vue implements IListSection {
 
     showCount (): string {
         if (!this.showHiddenItems) {
-            return `${this.showAllLabel ? this.showAllLabel : ''} (${this.cards.length})`;
+            return `${this.expand && this.expand.label ? this.expand.label : ''} (${this.cards.length})`;
         }
-        return this.showAllLabel || '';
+        return this.expand && this.expand.label || '';
+    }
+
+    triggerEventClick (): void {
+        if (this.expand && this.expand.clickEvent) {
+            this.$emitPublic(this.clickEventType, this.clickEventData);
+        }
     }
 
     showHidden(): void {
+        this.triggerEventClick();
         this.showHiddenItems = true;
     }
 
