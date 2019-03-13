@@ -232,7 +232,7 @@ $mainNavBorder: 1px solid $colorGray;
         opacity: 0;
         transition: opacity $defaultDuration;
 
-        &.flyout--is-active {
+        &.flyout--is-open {
             visibility: visible;
             opacity: 1;
         }
