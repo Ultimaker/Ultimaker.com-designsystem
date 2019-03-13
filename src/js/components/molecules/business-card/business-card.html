@@ -1,4 +1,11 @@
-<a class="business-card" :href="contentLink.url" rel="noopener" target="_blank" tabindex="0" v-if="title">
+<a class="business-card"
+   :href="contentLink.url"
+   rel="noopener"
+   target="_blank"
+   tabindex="0"
+   v-if="title"
+   @click="clickEvent ? $emitPublic(clickEventType, clickEventData) : ''"
+>
     <div class="business-card__header">
         <div class="business-card__image-wrapper">
             <responsive-picture v-bind="mapImage(image)" v-if="image" />
