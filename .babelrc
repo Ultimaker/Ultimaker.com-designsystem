@@ -1,7 +1,6 @@
 {
     "presets": [
         ["env", {
-            "modules": false,
             "debug": false,
             "useBuiltIns": true
         }],
