@@ -32,7 +32,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
           >
             <ul
               class="main-nav__list"
-              role="presentation"
+              role="menu"
             >
               <li
                 class="main-nav__item"
