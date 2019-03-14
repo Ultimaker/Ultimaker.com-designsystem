@@ -576,13 +576,7 @@ exports[`Storyshots organisms|hero Hero video 1`] = `
               Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.
             </p>
              
-            <a
-              class="link--large router-link-exact-active router-link-active undefined__link"
-              href="#/"
-            >
-              <!---->
-               Play Video
-            </a>
+            <!---->
           </div>
         </section>
          
