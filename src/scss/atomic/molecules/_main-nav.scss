@@ -53,10 +53,10 @@ $mainNavBorder: 1px solid $colorGray;
     top: 0;
     right: 0;
 
-    .main-nav--large & {
-        @include min-desktop{
-            display: none;
-        }
+    transition: right $defaultDuration;
+
+    @include min-desktop{
+        right: -60px;
     }
 }
 

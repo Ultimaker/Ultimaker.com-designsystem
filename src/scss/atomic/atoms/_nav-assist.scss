@@ -15,10 +15,6 @@
     &:hover {
         background-color: lighten($colorNavInit, $tintHoverFocus*3);
     }
-
-    @include min-desktop {
-        display: none;
-    }
 }
 
 .nav-assist__line {
