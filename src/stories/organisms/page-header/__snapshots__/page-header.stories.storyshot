@@ -41,7 +41,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   <a
                     aria-controls="nav-0"
                     aria-haspopup="true"
-                    class="main-nav__link undefined__link"
+                    class="main-nav__link"
                     href="#/#nav-one"
                   >
                     <!---->
@@ -90,7 +90,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -145,7 +145,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     </ul>
                      
                     <a
-                      class="link flyout__link--cta-mini undefined__link"
+                      class="link flyout__link--cta-mini"
                       href="#/explore"
                     >
                       <!---->
@@ -178,7 +178,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -196,7 +196,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -214,7 +214,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -269,7 +269,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -288,7 +288,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -307,7 +307,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -570,7 +570,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     </ul>
                      
                     <a
-                      class="link flyout__link--cta-mini undefined__link"
+                      class="link flyout__link--cta-mini"
                       href="#/explore"
                     >
                       <!---->
@@ -603,7 +603,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -621,7 +621,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -639,7 +639,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -683,7 +683,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -702,7 +702,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -775,7 +775,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     </ul>
                      
                     <a
-                      class="link flyout__link--cta-mini undefined__link"
+                      class="link flyout__link--cta-mini"
                       href="#/explore"
                     >
                       <!---->
@@ -799,7 +799,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   <a
                     aria-controls="nav-1"
                     aria-haspopup="true"
-                    class="main-nav__link undefined__link"
+                    class="main-nav__link"
                     href="#/#nav-two"
                   >
                     <!---->
@@ -848,7 +848,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -923,7 +923,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -941,7 +941,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -959,7 +959,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1002,7 +1002,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1021,7 +1021,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1040,7 +1040,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1095,7 +1095,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1113,7 +1113,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1131,7 +1131,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1173,7 +1173,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1192,7 +1192,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1238,7 +1238,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   <a
                     aria-controls="nav-2"
                     aria-haspopup="true"
-                    class="main-nav__link undefined__link"
+                    class="main-nav__link"
                     href="#/#nav-three"
                   >
                     <!---->
@@ -1275,7 +1275,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   <a
                     aria-controls="nav-3"
                     aria-haspopup="true"
-                    class="main-nav__link undefined__link"
+                    class="main-nav__link"
                     href="#/#nav-four"
                   >
                     <!---->
@@ -1324,7 +1324,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1399,7 +1399,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1417,7 +1417,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1435,7 +1435,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1478,7 +1478,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1497,7 +1497,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1516,7 +1516,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1571,7 +1571,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1589,7 +1589,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1607,7 +1607,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         class="flyout__list-item"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1649,7 +1649,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1668,7 +1668,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                         style="display: none;"
                       >
                         <a
-                          class="flyout__link link undefined__link"
+                          class="flyout__link link"
                           href="#/#"
                         >
                           <!---->
@@ -1832,7 +1832,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                 class="sys-nav__item"
               >
                 <a
-                  class="sys-nav__link undefined__link"
+                  class="sys-nav__link"
                   href="#/en/explore"
                 >
                   <!---->

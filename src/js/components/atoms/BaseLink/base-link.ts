@@ -25,7 +25,7 @@ export default class BaseLink extends Vue {
     get classObject() {
         const classes = {};
 
-        if (this.block !== '') {
+        if (this.block !== '' && typeof this.block === 'string') {
             classes[`${ this.block }__link`] = true;
         }
         if (this.mod !== '' && typeof this.mod === 'string') {

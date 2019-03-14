@@ -10,7 +10,7 @@
                 </transition>
             </template>
         </h3>
-        <content-link
+        <action-button
             class="link list-section__info-link"
             :icon="tooltip.icon"
             mod="reversed"
@@ -20,7 +20,7 @@
             :aria-describedby="`tooltip_${ uniqId }`"
             v-if="tooltip">
             {{ tooltip.label }}
-        </content-link>
+        </action-button>
     </header>
     <ul class="list-section-list" v-if="cards && cards.length > 0" :aria-label="title">
         <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
