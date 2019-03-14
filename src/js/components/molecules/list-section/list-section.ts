@@ -46,7 +46,10 @@ export default class ListSection extends Vue implements IListSection {
 
             return {
                 dataType: clickEvent.name,
-                data: clickEvent.data,
+                data: {
+                    ... clickEvent.data,
+                    pageSlug: window.location.pathname,
+                },
             };
         }
         return null;

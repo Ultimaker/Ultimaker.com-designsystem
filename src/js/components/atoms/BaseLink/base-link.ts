@@ -1,4 +1,5 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import Events from 'constants/events';
 
 @Component({
     name: 'base-link',
@@ -15,6 +16,14 @@ export default class BaseLink extends Vue {
 
     absoluteUrlRegex: RegExp = /^(http(s)?):\/\//;
     domainRegex: RegExp = /(http(s)?):\/\/(www.)?ultimaker\.com/;
+    $emitPublic;
+
+    get urlTarget() {
+        if (this.url) {
+            return this.url.match(this.domainRegex) ? '_self' : '_blank';
+        }
+        return '';
+    }
 
     get slots() {
         return this.$slots &&
@@ -45,7 +54,7 @@ export default class BaseLink extends Vue {
             return {
                 is: 'a',
                 href: this.url,
-                target: this.url.match(this.domainRegex) ? '_self' : '_blank',
+                target: this.urlTarget,
                 rel: 'noopener',
             };
         }
@@ -53,5 +62,29 @@ export default class BaseLink extends Vue {
             is: 'router-link',
             to: this.url,
         };
+    }
+
+    get clickEventType() {
+        return Events.click;
+    }
+
+    get clickEventData() {
+        if (this.clickEvent) {
+            return {
+                dataType: this.clickEvent.name,
+                data: {
+                    ... this.clickEvent.data,
+                    pageSlug: window.location.pathname,
+                    ctaUrlTarget: this.urlTarget,
+                },
+            };
+        }
+        return null;
+    }
+
+    triggerEventClick (): void {
+        if (this.clickEvent) {
+            this.$emitPublic(this.clickEventType, this.clickEventData);
+        }
     }
 }
