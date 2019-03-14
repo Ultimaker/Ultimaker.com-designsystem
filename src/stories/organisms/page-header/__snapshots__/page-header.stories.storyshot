@@ -51,7 +51,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       class="link__underline"
                     >
                       
-        Nav section one
+        Explore
     
                     </span>
                   </a>
@@ -80,7 +80,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       class="flyout__title"
                       id="flyout_title_740_0"
                     >
-                      Flyout title one
+                      What is 3D printing?
                     </strong>
                      
                     <ul
@@ -100,7 +100,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Find out here
     
                           </span>
                         </a>
@@ -161,13 +161,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     </a>
                   </li>
                   <li
-                    class="flyout__section"
+                    class="flyout__section flyout__section--3-columns"
                   >
                     <strong
                       class="flyout__title"
                       id="flyout_title_740_1"
                     >
-                      Flyout title two
+                      Where is 3D printing used?
                     </strong>
                      
                     <ul
@@ -188,7 +188,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Architecture
     
                           </span>
                         </a>
@@ -206,7 +206,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Aerospace
     
                           </span>
                         </a>
@@ -224,11 +224,23 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Art
     
                           </span>
                         </a>
                       </li>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
                       <!---->
                       <!---->
                       <!---->
@@ -267,7 +279,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Automotive
     
                           </span>
                         </a>
@@ -286,7 +298,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Engineering
     
                           </span>
                         </a>
@@ -305,7 +317,235 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Fablabs
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Fashion
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Humanitarian aid
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Jewelry
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Manufacturing
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Medicine
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Product design
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Research
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Education
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Primary education
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Secondary Education
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        University
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        DIY, hobbies, and home
     
                           </span>
                         </a>
@@ -346,13 +586,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     </a>
                   </li>
                   <li
-                    class="flyout__section"
+                    class="flyout__section flyout__section--2-columns"
                   >
                     <strong
                       class="flyout__title"
                       id="flyout_title_740_2"
                     >
-                      Flyout title three
+                      How is 3D printing used?
                     </strong>
                      
                     <ul
@@ -373,7 +613,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Concept models
     
                           </span>
                         </a>
@@ -391,7 +631,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Functional prototypes
     
                           </span>
                         </a>
@@ -409,11 +649,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        End-use parts
     
                           </span>
                         </a>
                       </li>
+                      <!---->
+                      <!---->
                       <!---->
                       <!---->
                        
@@ -451,7 +693,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Tools, jigs, and fixtures
     
                           </span>
                         </a>
@@ -470,7 +712,45 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                             class="link__underline"
                           >
                             
-        Flyout item
+        Molds and casting
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Visualization aids
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="flyout__list-item"
+                        style="display: none;"
+                      >
+                        <a
+                          class="flyout__link link undefined__link"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Lessons
     
                           </span>
                         </a>
@@ -529,7 +809,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       class="link__underline"
                     >
                       
-        Nav section two
+        Products
     
                     </span>
                   </a>
@@ -556,13 +836,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_791_0"
+                      id="flyout_title_819_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_791_0"
+                      aria-labelledby="flyout_title_819_0"
                       class="flyout__list"
                     >
                       <li
@@ -630,14 +910,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_791_1"
+                      id="flyout_title_819_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_791_1"
+                      aria-labelledby="flyout_title_819_1"
                       class="flyout__list"
                     >
                       <li
@@ -802,14 +1082,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_791_2"
+                      id="flyout_title_819_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_791_2"
+                      aria-labelledby="flyout_title_819_2"
                       class="flyout__list"
                     >
                       <li
@@ -968,7 +1248,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       class="link__underline"
                     >
                       
-        Nav section three
+        Stories
     
                     </span>
                   </a>
@@ -1005,7 +1285,7 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                       class="link__underline"
                     >
                       
-        Nav section four
+        Resources
     
                     </span>
                   </a>
@@ -1032,13 +1312,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_841_0"
+                      id="flyout_title_869_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_841_0"
+                      aria-labelledby="flyout_title_869_0"
                       class="flyout__list"
                     >
                       <li
@@ -1106,14 +1386,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_841_1"
+                      id="flyout_title_869_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_841_1"
+                      aria-labelledby="flyout_title_869_1"
                       class="flyout__list"
                     >
                       <li
@@ -1278,14 +1558,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_841_2"
+                      id="flyout_title_869_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_841_2"
+                      aria-labelledby="flyout_title_869_2"
                       class="flyout__list"
                     >
                       <li
@@ -1426,6 +1706,117 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <!---->
                   </li>
                 </ul>
+              </li>
+              <li
+                class="main-nav__item"
+                role="menuitem"
+              >
+                <div>
+                  <a
+                    aria-controls="nav-4"
+                    aria-haspopup="true"
+                    class="main-nav__link undefined__link"
+                    href="#/#nav-five"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Knowledge
+    
+                    </span>
+                  </a>
+                </div>
+                 
+                <a
+                  aria-label=""
+                  class="icon-button icon-button--small main-nav__toggle disable-focus"
+                  role="button"
+                  style="display: none;"
+                  tabindex="-1"
+                >
+                  <!---->
+                   
+                  <!---->
+                </a>
+                 
+                <!---->
+              </li>
+              <li
+                class="main-nav__item"
+                role="menuitem"
+              >
+                <div>
+                  <a
+                    aria-controls="nav-5"
+                    aria-haspopup="true"
+                    class="main-nav__link undefined__link"
+                    href="#/#nav-six"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Community
+    
+                    </span>
+                  </a>
+                </div>
+                 
+                <a
+                  aria-label=""
+                  class="icon-button icon-button--small main-nav__toggle disable-focus"
+                  role="button"
+                  style="display: none;"
+                  tabindex="-1"
+                >
+                  <!---->
+                   
+                  <!---->
+                </a>
+                 
+                <!---->
+              </li>
+              <li
+                class="main-nav__item"
+                role="menuitem"
+              >
+                <div>
+                  <a
+                    aria-controls="nav-6"
+                    aria-haspopup="true"
+                    class="main-nav__link undefined__link"
+                    href="#/#nav-seven"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Company
+    
+                    </span>
+                  </a>
+                </div>
+                 
+                <a
+                  aria-label=""
+                  class="icon-button icon-button--small main-nav__toggle disable-focus"
+                  role="button"
+                  style="display: none;"
+                  tabindex="-1"
+                >
+                  <!---->
+                   
+                  <!---->
+                </a>
+                 
+                <!---->
               </li>
             </ul>
           </nav>
