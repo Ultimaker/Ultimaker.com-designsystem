@@ -131,18 +131,22 @@ podTemplate(
 
       stage('update deployments') {
         sh """
-        kubectl --namespace acceptance set image deployment/storybook--node node=${nodeContainer}:${commit}
         kubectl --namespace acceptance set image deployment/storybook--nginx nginx=${nginxContainer}:${commit}
+        kubectl --namespace acceptance set image deployment/storybook--node node=${nodeContainer}:${commit}
         cat <<EOF | parallel --jobs 2 kubectl --namespace acceptance rollout status
-        deployment/storybook--node
         deployment/storybook--nginx
+        deployment/storybook--node
         EOF
         """.stripIndent()
       }
 
       slackSend color: 'good',
         channel: '#um_com_deployments',
-        message: "Deployment updated: https://storybook.k8s-dev.ultimaker.works/ (<${env.BUILD_URL}|Job>)"
+        message: """
+          Deployment updated: https://storybook.k8s-dev.ultimaker.works (<${env.BUILD_URL}|Job>)
+          Components: storybook--nginx, storybook--node
+          Version: ${commit}
+          """.stripIndent()
 
     } catch (e) {
 
