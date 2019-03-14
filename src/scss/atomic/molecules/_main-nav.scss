@@ -63,14 +63,6 @@ $mainNavBorder: 1px solid $colorGray;
 .main-nav__list {
     @extend %reset-list;
 
-    transform: translateX(-100%);
-    transition: transform $defaultDuration ;
-
-    @include min-desktop {
-        transform: none;
-        transition: none;
-    }
-
     .main-nav--small & {
         position: relative;
         top: 100%;
@@ -101,7 +93,6 @@ $mainNavBorder: 1px solid $colorGray;
 
     &.main-nav__list-visible {
         left: 0;
-        transform: translateX(0);
     }
 }
 
