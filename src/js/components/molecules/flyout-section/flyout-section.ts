@@ -18,10 +18,10 @@ export default class Flyout extends Vue  {
     @Prop({ type: String, required: false, default: () => `flyout_title_${ ~~(Math.random() * 10000) }` }) itemId?: string;
 
     $refs!: {
-        focusable: HTMLElement;
+        firstFocusableLinks: HTMLElement|HTMLElement[];
+        focusable: HTMLElement|HTMLElement[];
         bottomLink: HTMLElement;
     };
-
     isExpanded: boolean =  false;
     focusIndex: null | number = null;
     columnClassDouble: string = 'flyout__section--2-columns';
@@ -32,7 +32,17 @@ export default class Flyout extends Vue  {
     }
 
     get focusableItems() {
-        const links = Array.isArray(this.$refs.focusable) ? this.$refs.focusable : [this.$refs.focusable];
+        const links = Array.isArray(this.$refs.firstFocusableLinks) ? this.$refs.firstFocusableLinks : [this.$refs.firstFocusableLinks];
+        const otherFocusable = this.$refs.focusable;
+
+        if (otherFocusable) {
+            if (Array.isArray(otherFocusable)) {
+                links.push(...otherFocusable);
+            } else {
+                links.push(otherFocusable);
+            }
+        }
+
         if (this.$refs.bottomLink) {
             links.push(this.$refs.bottomLink);
         }
