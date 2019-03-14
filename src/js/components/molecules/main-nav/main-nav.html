@@ -1,4 +1,4 @@
-<nav key="large-menu" class="main-nav" :class="classList" aria-label="site" v-show="ready">
+<nav key="large-menu" class="main-nav" :class="classList" aria-label="site">
     <ul class="main-nav__list" role="menu" :class="{'main-nav__list-visible': mainNavOpen && showCompactMenu}">
         <main-nav-item v-if="items" ref="navItem"
             v-for="(item, index) in items" :key="index"

@@ -16,8 +16,6 @@ export default class MainNav extends Vue  {
 
     viewportUtil: any = new ViewportUtility();
     showCompactMenu: any  = true;
-    ready: boolean = false;
-    timeout: number = 100;
 
     get classList() {
         return {
@@ -29,19 +27,14 @@ export default class MainNav extends Vue  {
 
     handleResize() {
         this.showCompactMenu = this.viewportUtil.isTablet;
-        this.ready = true;
     }
 
     mounted() {
         this.viewportUtil.addResizeHandler(this.handleResize);
+
         if (BrowserCapabilities.isBrowser) {
             this.showCompactMenu = this.viewportUtil.isTablet;
         }
-
-        // trigger resize sets ready to true, so component doesn't animate when dehydrating/instantiating
-        this.viewportUtil.triggerResize();
-        // timeout when trigger resize doesn't fire
-        setTimeout(() => { this.ready = true; }, this.timeout);
     }
 
     beforeDestroy() {

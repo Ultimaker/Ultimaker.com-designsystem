@@ -28,7 +28,6 @@ exports[`Storyshots organisms|page-header Header 1`] = `
           <nav
             aria-label="site"
             class="main-nav main-nav--small"
-            style="display: none;"
           >
             <ul
               class="main-nav__list"
