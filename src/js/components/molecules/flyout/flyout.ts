@@ -1,5 +1,6 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
+
 @Component({
     name: 'flyout',
     template: require('./flyout.html'),
@@ -10,6 +11,8 @@ export default class Flyout extends Vue  {
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Boolean, required: false, default: false }) disableKeyboardEvents?: boolean;
 
+    resizing: boolean = false;
+    resizeTimer: any = 0;
     sectionIndex: number = 0;
 
     get flyoutSections() {
@@ -28,6 +31,14 @@ export default class Flyout extends Vue  {
     backToParent(): void {
         this.$emit('main');
         this.close();
+    }
+
+    mounted() {
+        window.addEventListener('resize', () => {
+            this.resizing = true;
+            clearTimeout(this.resizeTimer);
+            this.resizeTimer = setTimeout(() => this.resizing = false, 250);
+        });
     }
 
     reset(): void {
