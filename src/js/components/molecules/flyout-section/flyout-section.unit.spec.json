@@ -8,6 +8,14 @@
         {
             "label": "another link",
             "url:": "/another/link"
+        },
+        {
+            "label": "a link",
+            "url:": "/a/link"
+        },
+        {
+            "label": "another link",
+            "url:": "/another/link"
         }
     ],
     "bottomItem": {

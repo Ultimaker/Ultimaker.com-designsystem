@@ -38,12 +38,12 @@ describe('components', () => {
                 const vm = mount({
                     props: {
                         items: fixture.items,
+                        bottomItem: fixture.bottomItem,
                     },
                 });
                 const links = vm.$el.querySelectorAll('.flyout__link');
 
-                console.log(links);
-
+                expect(vm.focusableItems.length).toEqual(fixture.items.length + 1);
                 expect(links.length).toBe(fixture.items.length);
                 vm.$destroy();
             });
@@ -57,6 +57,8 @@ describe('components', () => {
 
                 const bottomLink = vm.$el.querySelectorAll('.flyout__link--cta-mini');
 
+                expect(vm.focusableItems.length).toEqual(4);
+                expect(vm.$refs.bottomLink).toBeUndefined();
                 expect(bottomLink.length).toBe(0);
             });
 
