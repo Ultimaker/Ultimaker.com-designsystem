@@ -1,19 +1,19 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
+import { NavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
+import ViewportUtility from 'utils/viewport';
 
 @Component({
     name: 'flyout',
     template: require('./flyout.html'),
 })
 
-export default class Flyout extends Vue  {
+export default class Flyout extends Vue {
     @Prop({ type: Array, required: true }) items!: NavigationItem[];
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Boolean, required: false, default: false }) disableKeyboardEvents?: boolean;
 
-    resizing: boolean = false;
-    resizeTimer: any = 0;
     sectionIndex: number = 0;
+    viewportUtil: any = new ViewportUtility();
 
     get flyoutSections() {
         return Array.isArray(this.$refs.items) ? this.$refs.items : [this.$refs.items];
@@ -33,14 +33,6 @@ export default class Flyout extends Vue  {
         this.close();
     }
 
-    mounted() {
-        window.addEventListener('resize', () => {
-            this.resizing = true;
-            clearTimeout(this.resizeTimer);
-            this.resizeTimer = setTimeout(() => this.resizing = false, 250);
-        });
-    }
-
     reset(): void {
         this.sectionIndex = 0;
         // @ts-ignore
@@ -58,6 +50,7 @@ export default class Flyout extends Vue  {
         if (this.disableKeyboardEvents) {
             return;
         }
+
         e.preventDefault();
         // @ts-ignore
         const hasNext = this.flyoutSections[this.sectionIndex].selectNextLink();
@@ -76,6 +69,7 @@ export default class Flyout extends Vue  {
         if (typeof e !== 'undefined') {
             e.preventDefault();
         }
+
         // @ts-ignore
         const hasPrev = this.flyoutSections[this.sectionIndex].selectPrevLink();
 
@@ -103,6 +97,7 @@ export default class Flyout extends Vue  {
         const currentLinkIndex = this.flyoutSections[this.sectionIndex].focusIndex;
 
         this.sectionIndex = this.sectionIndex + 1;
+
         if (keepIndex) {
             // @ts-ignore
             this.flyoutSections[this.sectionIndex].setFocusIndex(currentLinkIndex);
@@ -133,6 +128,7 @@ export default class Flyout extends Vue  {
         const currentLinkIndex = this.flyoutSections[this.sectionIndex].focusIndex;
 
         this.sectionIndex = this.sectionIndex - 1;
+
         if (keepIndex) {
             // @ts-ignore
             this.flyoutSections[this.sectionIndex].setFocusIndex(currentLinkIndex);
@@ -140,6 +136,7 @@ export default class Flyout extends Vue  {
             // @ts-ignore
             this.flyoutSections[this.sectionIndex].selectLastLink();
         }
+
         // @ts-ignore
         this.flyoutSections[currentSection].reset();
     }

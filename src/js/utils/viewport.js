@@ -48,7 +48,10 @@ class ViewportUtility {
         if (instance !== null) {
             return instance;
         }
+
         instance = this;
+
+        this.resizing = false;
 
         this.screenWidth = 0;
         this.screenHeight = 0;
@@ -89,7 +92,12 @@ class ViewportUtility {
             documentLoadedHandler.apply(this);
         });
 
+        window.addEventListener('resize', () => {
+            this.resizing = true;
+        });
+
         window.addEventListener('resize', debounce(() => {
+            this.resizing = false;
             resizeHandler.apply(this);
         }, minWait, {maxWait: maxWait}));
 
@@ -140,6 +148,10 @@ class ViewportUtility {
             document.body.clientHeight;
     }
 
+    get isResizing() {
+        return this.resizing;
+    }
+
     get top() {
         return this.scrollY <= 0;
     }
@@ -172,7 +184,9 @@ class ViewportUtility {
         // not using filter because _resizeHandler is a constant
         const index = _resizeHandlers.indexOf(handler);
 
-        if (index < 0) { return; }
+        if (index < 0) {
+            return;
+        }
         _resizeHandlers.splice(index, 1);
     }
 
@@ -188,7 +202,9 @@ class ViewportUtility {
         // not using filter because _scrollHandlers is a constant
         const index = _scrollHandlers.indexOf(handler);
 
-        if (index < 0) { return; }
+        if (index < 0) {
+            return;
+        }
         _scrollHandlers.splice(index, 1);
     }
 
@@ -200,7 +216,9 @@ class ViewportUtility {
         // not using filter because _scrollHandlers is a constant
         const index = _orientationChangeHandlers.indexOf(handler);
 
-        if (index < 0) { return; }
+        if (index < 0) {
+            return;
+        }
         _orientationChangeHandlers.splice(index, 1);
     }
 }
