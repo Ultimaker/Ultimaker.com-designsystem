@@ -1,5 +1,5 @@
 <component :class="classObject"
-           @click="clickEvent ? $emitPublic(clickEventType, clickEventData) : ''"
+           @click="triggerEventClick"
            v-bind="linkProps">
     <icon v-if="this.icon" :icon-name="icon" />
     <span v-if="!slots" class="link__underline">
