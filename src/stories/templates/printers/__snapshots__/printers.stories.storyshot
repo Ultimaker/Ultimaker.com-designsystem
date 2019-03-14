@@ -186,7 +186,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="link-list__item"
                     >
                       <a
-                        class="undefined__link"
+                        class=""
                         href="#/#"
                       >
                         <!---->
@@ -197,7 +197,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="link-list__item"
                     >
                       <a
-                        class="undefined__link"
+                        class=""
                         href="#/#"
                       >
                         <!---->
@@ -208,7 +208,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="link-list__item"
                     >
                       <a
-                        class="undefined__link"
+                        class=""
                         href="#/#"
                       >
                         <!---->
