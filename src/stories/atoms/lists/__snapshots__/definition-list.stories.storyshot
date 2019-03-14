@@ -152,35 +152,17 @@ exports[`Storyshots Atoms|lists Link list 1`] = `
         <li
           class="link-list__item"
         >
-          <a
-            class="router-link-exact-active router-link-active undefined__link"
-            href="#/"
-          >
-            <!---->
-             Content-link
-          </a>
+          <!---->
         </li>
         <li
           class="link-list__item"
         >
-          <a
-            class="router-link-exact-active router-link-active undefined__link"
-            href="#/"
-          >
-            <!---->
-             Content-link
-          </a>
+          <!---->
         </li>
         <li
           class="link-list__item"
         >
-          <a
-            class="router-link-exact-active router-link-active undefined__link"
-            href="#/"
-          >
-            <!---->
-             Content-link
-          </a>
+          <!---->
         </li>
       </ul>
     </section>

@@ -1,18 +1,17 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { IBaseLink } from './base-link.models';
 
 @Component({
     name: 'base-link',
     template: require('./base-link.html'),
 })
 
-export default class BaseLink extends Vue implements IBaseLink {
-    @Prop({ type: String }) block?: IBaseLink['block'];
-    @Prop({ type: String }) mod?: IBaseLink['mod'];
-    @Prop({ type: String }) icon?: IBaseLink['icon'];
-    @Prop({ type: String, default: '' }) url!: IBaseLink['url'];
-    @Prop({ type: String, default: '' }) label!: IBaseLink['label'];
-    @Prop({ type: Object, required: false }) clickEvent?: IBaseLink['clickEvent'];
+export default class BaseLink extends Vue {
+    @Prop({ type: String, required: false }) block?: string;
+    @Prop({ type: String, required: false }) mod?: string;
+    @Prop({ type: String, required: false }) icon?: string;
+    @Prop({ type: String, required: false }) url?: string;
+    @Prop({ type: String, required: false }) label?: string;
+    @Prop({ type: Object, required: false }) clickEvent?: any;
 
     absoluteUrlRegex: RegExp = /^(http(s)?):\/\//;
     domainRegex: RegExp = /(http(s)?):\/\/(www.)?ultimaker\.com/;
@@ -42,7 +41,7 @@ export default class BaseLink extends Vue implements IBaseLink {
     }
 
     get linkProps(): object {
-        if (this.url.match(this.absoluteUrlRegex)) {
+        if (this.url && this.url.match(this.absoluteUrlRegex)) {
             return {
                 is: 'a',
                 href: this.url,

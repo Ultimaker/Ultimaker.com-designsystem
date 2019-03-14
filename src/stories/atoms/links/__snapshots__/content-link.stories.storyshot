@@ -10,13 +10,7 @@ exports[`Storyshots Atoms|links Content link 1`] = `
     <section
       class="story__atom"
     >
-      <a
-        class="router-link-exact-active router-link-active undefined__link"
-        href="#/"
-      >
-        <!---->
-         Content-link
-      </a>
+      <!---->
     </section>
   </section>
 </section>

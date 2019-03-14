@@ -235,16 +235,7 @@ exports[`Storyshots organisms|colors Colors 1`] = `
                   </li>
                 </ul>
                  
-                <a
-                  class="router-link-exact-active router-link-active undefined__link link--large link--icon"
-                  href="#/"
-                >
-                  <!---->
-                   
-                  <span>
-                    Where to buy!
-                  </span>
-                </a>
+                <!---->
               </div>
             </div>
              
