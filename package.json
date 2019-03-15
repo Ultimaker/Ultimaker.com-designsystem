@@ -1,6 +1,6 @@
 {
     "name": "@ultimaker/ultimaker.com-designsystem",
-    "version": "2.0.42",
+    "version": "2.0.43",
     "description": "Ultimaker.com design system for vue components",
     "repository": "github:Ultimaker/Ultimaker.com-designsystem",
     "license": "UNLICENSED",
@@ -123,5 +123,8 @@
         "webpack-svgstore-plugin": "^4.1.0",
         "webpack-visualizer-plugin": "^0.1.11"
     },
-    "browserslist": ["> 0.25%", "chrome 41"]
+    "browserslist": [
+        "> 0.25%",
+        "chrome 41"
+    ]
 }
