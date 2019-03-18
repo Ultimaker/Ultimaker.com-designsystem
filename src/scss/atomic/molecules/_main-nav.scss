@@ -29,14 +29,11 @@ $mainNavBorder: 1px solid $colorGray;
     &--large {
         order: 20;
         flex: 1 1 auto;
-        margin-right: $navHeight;
 
         &:before {
             content: none;
             display: none;
         }
-
-
     }
 }
 
@@ -50,13 +47,15 @@ $mainNavBorder: 1px solid $colorGray;
 
 .main-nav__nav-assist {
     position: absolute;
+    display: inline-block;
     top: 0;
     right: 0;
 
     transition: right $defaultDuration;
 
-    @include min-desktop{
-        right: -60px;
+    @include min-desktop {
+        display: none;
+        right: -$navHeight;
     }
 }
 
