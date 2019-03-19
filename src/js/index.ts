@@ -1,5 +1,4 @@
 import 'babel-polyfill';
-import 'whatwg-fetch';
 
 import ComponentRegistry from 'plugins/component-registry';
 import Components from './components';
