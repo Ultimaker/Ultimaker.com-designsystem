@@ -60,7 +60,7 @@ export default class FauxVerticalScroll extends Vue {
     }
 
     createDraggable(): void {
-        const { content, } = this.$refs;
+        const { content } = this.$refs;
         const clientWidth =  (<any>this.$refs.container).clientWidth;
 
         this.draggableElement = Draggable.create(content, {

@@ -1,12 +1,9 @@
-<main class="story__template">
-    <hero-product v-bind="heroProduct"></hero-product>
-    <ubr v-bind="ubr"></ubr>
-    <examples v-bind="examples"></examples>
-    <colors v-bind="colors"></colors>
-    <footer-content :minorNav="minorNav"
-                    :globalLabels="globalLabels"
-                    :legalNav="legalNav"
-                    :country="country">
-
-    </footer-content>
-</main>
+<section class="story__template">
+    <main>
+        <hero-product v-bind="heroProduct"></hero-product>
+        <ubr v-bind="ubr"></ubr>
+        <examples v-bind="examples"></examples>
+        <colors v-bind="colors"></colors>
+    </main>
+    <page-footer  v-bind="footer" :country="country" @country-changed="updateCountry"></page-footer>
+</section>

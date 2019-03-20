@@ -35,8 +35,8 @@ export default class SubNav extends Vue {
                 ease: animation,
                 css: {
                     opacity: amount,
-                    height: amount
-                }
+                    height: amount,
+                },
             });
         });
     }
@@ -57,7 +57,7 @@ export default class SubNav extends Vue {
             onStart: () => {
                 this.toggleLinks(this.linkHeightMin);
                 this.toggleImages(0, Power4.easeOut);
-            }
+            },
         });
 
         this.collapsed = true;
@@ -75,7 +75,7 @@ export default class SubNav extends Vue {
                 TweenLite.to((<any>this.$refs.subNav), this.transitionDuration / 2, {
                     position: 'relative',
                 });
-            }
+            },
         });
 
         this.collapsed = false;
