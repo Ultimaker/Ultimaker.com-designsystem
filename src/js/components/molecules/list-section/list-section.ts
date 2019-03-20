@@ -1,5 +1,5 @@
-import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
-import { TweenLite, Power3 } from 'gsap';
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Power3, TweenLite } from 'gsap';
 import Defaults from 'constants/defaults';
 
 import ViewportUtil from 'utils/viewport';
@@ -31,9 +31,10 @@ export default class ListSection extends Vue implements IListSection {
     lastTopValue: number = 0;
     delayIncrement: number = 0.1;
     rowIndex: number = 0;
-    incement: number = 1;
+    increment: number = 1;
 
     $emitPublic;
+    $route;
     viewportUtil: ViewportUtil = new ViewportUtil();
 
     get clickEventType() {
@@ -48,7 +49,7 @@ export default class ListSection extends Vue implements IListSection {
                 dataType: clickEvent.name,
                 data: {
                     ... clickEvent.data,
-                    pageSlug: window.location.pathname,
+                    pageSlug: this.$route.fullPath,
                 },
             };
         }
@@ -90,7 +91,7 @@ export default class ListSection extends Vue implements IListSection {
     }
 
     addRow(topValue: number): void {
-        this.rowIndex = this.rowIndex + this.incement;
+        this.rowIndex = this.rowIndex + this.increment;
         this.lastTopValue = topValue;
     }
 
