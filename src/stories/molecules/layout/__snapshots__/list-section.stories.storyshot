@@ -12,6 +12,7 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
     >
       <section
         class="list-section"
+        showalllabel="Show all"
         type="ListSection"
       >
         <header
@@ -45,8 +46,8 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
            
           <a
             aria-describedby="tooltip_280"
-            class="link list-section__info-link router-link-exact-active router-link-active undefined__link link--reversed link--icon"
-            href="#/"
+            class="link list-section__info-link link--reversed link--icon"
+            href="#"
             role="button"
           >
             <!---->

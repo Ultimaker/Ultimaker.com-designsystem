@@ -408,14 +408,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   asperiores expedita consequatur nostrum quia, doloremque reprehenderit. Sequi, unde ipsa dolores dolorum earum qui obcaecati architecto officiis voluptates vero.
                 </p>
                  
-                <a
-                  class="link--icon link--large router-link-exact-active router-link-active undefined__link"
-                  href="#"
-                  text="Large content-link with icon"
-                >
-                  <!---->
-                   Large content-link with icon
-                </a>
+                <!---->
               </div>
                
               <div
@@ -887,20 +880,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
                   </p>
                    
-                  <a
-                    class="link router-link-exact-active router-link-active card__link"
-                    href="#/"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      
-        Learn more
-    
-                    </span>
-                  </a>
+                  <!---->
                 </div>
               </article>
               <article
@@ -930,20 +910,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt error, aut velit sequi nemo aspernatur libero perferendis magni
                   </p>
                    
-                  <a
-                    class="link router-link-exact-active router-link-active card__link"
-                    href="#/"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      
-        Learn more
-    
-                    </span>
-                  </a>
+                  <!---->
                 </div>
               </article>
               <article
@@ -973,20 +940,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque repellat in fugit eum minus dolorum deleniti,
                   </p>
                    
-                  <a
-                    class="link router-link-exact-active router-link-active card__link"
-                    href="#/"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      
-        Learn more
-    
-                    </span>
-                  </a>
+                  <!---->
                 </div>
               </article>
               <article
@@ -1016,20 +970,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum aliquid fugit assumenda, sit rem recusandae illum dicta
                   </p>
                    
-                  <a
-                    class="link router-link-exact-active router-link-active card__link"
-                    href="#/"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      
-        Learn more
-    
-                    </span>
-                  </a>
+                  <!---->
                 </div>
               </article>
             </div>
@@ -1243,20 +1184,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?
                 </p>
                  
-                <a
-                  class="link router-link-exact-active router-link-active general-content__link"
-                  href="#/"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Learn More
-    
-                  </span>
-                </a>
+                <!---->
               </div>
                
               <div
