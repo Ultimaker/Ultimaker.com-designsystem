@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots templates|printers Printers 1`] = `
+exports[`Storyshots templates|materials Materials 1`] = `
 <section
   class="story"
 >
@@ -77,13 +77,13 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1240_0"
+                      id="flyout_title_1002_0"
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_1240_0"
+                      aria-labelledby="flyout_title_1002_0"
                       class="flyout__list"
                     >
                       <li
@@ -164,14 +164,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1240_1"
+                      id="flyout_title_1002_1"
                     >
                       Where is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1240_1"
+                      aria-labelledby="flyout_title_1002_1"
                       class="flyout__list"
                     >
                       <li
@@ -589,14 +589,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1240_2"
+                      id="flyout_title_1002_2"
                     >
                       How is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1240_2"
+                      aria-labelledby="flyout_title_1002_2"
                       class="flyout__list"
                     >
                       <li
@@ -835,13 +835,13 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1319_0"
+                      id="flyout_title_1081_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_1319_0"
+                      aria-labelledby="flyout_title_1081_0"
                       class="flyout__list"
                     >
                       <li
@@ -909,14 +909,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1319_1"
+                      id="flyout_title_1081_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1319_1"
+                      aria-labelledby="flyout_title_1081_1"
                       class="flyout__list"
                     >
                       <li
@@ -1081,14 +1081,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1319_2"
+                      id="flyout_title_1081_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1319_2"
+                      aria-labelledby="flyout_title_1081_2"
                       class="flyout__list"
                     >
                       <li
@@ -1311,13 +1311,13 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1369_0"
+                      id="flyout_title_1131_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_1369_0"
+                      aria-labelledby="flyout_title_1131_0"
                       class="flyout__list"
                     >
                       <li
@@ -1385,14 +1385,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1369_1"
+                      id="flyout_title_1131_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1369_1"
+                      aria-labelledby="flyout_title_1131_1"
                       class="flyout__list"
                     >
                       <li
@@ -1557,14 +1557,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1369_2"
+                      id="flyout_title_1131_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1369_2"
+                      aria-labelledby="flyout_title_1131_2"
                       class="flyout__list"
                     >
                       <li
@@ -1931,1216 +1931,71 @@ exports[`Storyshots templates|printers Printers 1`] = `
         style="padding-top: 60px;"
       >
         <article
-          class="hero hero--products-application"
+          class="hero hero--video"
         >
-          <div
-            class="hero__container--top"
-          >
-            <picture>
-              <source
-                media="(min-width: 1201px)"
-                srcset=""
-              />
-               
-              <!---->
-               
-              <source
-                media="(min-width: 768px)"
-                srcset=""
-              />
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/1000/500"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive hero__image--full img--lazy"
-                src=""
-              />
-            </picture>
-             
-            <div
-              class="hero__image-overlay"
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset=""
             />
              
-            <div
-              class="container"
-            >
-              <div
-                class="flexgrid flexgrid--gutter"
-              >
-                <div
-                  class="flexgrid__cell--xs-6"
-                >
-                  <div
-                    class="hero__headline"
-                  >
-                    <h1>
-                      Lorem ipsum
-                    </h1>
-                  </div>
-                </div>
-                 
-                <div
-                  class="flexgrid__cell"
-                  style="position: relative;"
-                >
-                  <p
-                    class="hero__subtitle"
-                  >
-                    Donec ullamcorper nulla non metus auctor fringilla
-                  </p>
-                   
-                  <picture>
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(min-width: 768px)"
-                      srcset=""
-                    />
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/600/600/cccccc"
-                    />
-                     
-                    <img
-                      alt=""
-                      class="img--responsive hero__image--product img--lazy"
-                      src=""
-                    />
-                  </picture>
-                </div>
-                 
-                <div
-                  class="flexgrid__cell--xs-6"
-                >
-                  <div
-                    class="hero__usp-container"
-                  >
-                    <div
-                      class="hero__usp usp--icon"
-                    >
-                      <!---->
-                       
-                      <small
-                        class="usp__label"
-                      >
-                        123 x 123 x 123mm
-                      </small>
-                    </div>
-                    <div
-                      class="hero__usp usp--icon"
-                    >
-                      <!---->
-                       
-                      <small
-                        class="usp__label"
-                      >
-                        Down to 34 microns
-                      </small>
-                    </div>
-                    <div
-                      class="hero__usp usp--icon"
-                    >
-                      <!---->
-                       
-                      <small
-                        class="usp__label"
-                      >
-                        Some text
-                      </small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <!---->
+             
+            <source
+              media="(min-width: 768px)"
+              srcset=""
+            />
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/1000/500"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive hero-video__image--full img--lazy"
+              src=""
+            />
+          </picture>
            
           <div
-            class="container"
-          >
-            <div
-              class="flexgrid flexgrid--gutter"
-            >
-              <div
-                class="flexgrid__cell--xs-6"
-              >
-                <div
-                  class="hero__description"
-                >
-                  <p
-                    class="copy--intro"
-                  >
-                    Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
-                  </p>
-                   
-                  <p>
-                    TODO: Pricetable
-                  </p>
-                   
-                  <a
-                    class="button button--primary hero__button"
-                    href="#/#"
-                  >
-                    Some label
-                  </a>
-                   
-                  <ul
-                    class="link-list link-list--icon hero__link-list"
-                  >
-                    <li
-                      class="link-list__item"
-                    >
-                      <a
-                        class=""
-                        href="#/#"
-                      >
-                        <!---->
-                         Content-link
-                      </a>
-                    </li>
-                    <li
-                      class="link-list__item"
-                    >
-                      <a
-                        class=""
-                        href="#/#"
-                      >
-                        <!---->
-                         Content-link
-                      </a>
-                    </li>
-                    <li
-                      class="link-list__item"
-                    >
-                      <a
-                        class=""
-                        href="#/#"
-                      >
-                        <!---->
-                         Content-link
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-         
-        <article
-          class="brands"
-        >
-          <section
-            class="container brands__container"
-          >
-            <h2
-              class="brands__title"
-            >
-               Lorem ipsum dolor sit amet
-            </h2>
-             
-            <div
-              class="flexgrid flexgrid--gutter brands__grid"
-            >
-              <div
-                class="flexgrid__cell--sm-4 brands__grid-cell"
-              >
-                <div
-                  class="brand-card"
-                >
-                  <div
-                    class="brand-card__image-wrapper"
-                  >
-                    <picture
-                      alt="Lorem Ipsum"
-                      stylemodifier="brand-card__image"
-                    >
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <source
-                        media="(max-width: 480px)"
-                        srcset="/generator/svg/240/240"
-                      />
-                       
-                      <img
-                        alt=""
-                        class="img--responsive img--lazy"
-                        src=""
-                      />
-                    </picture>
-                  </div>
-                   
-                  <q
-                    class="brand-card__quote"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quis vitae, esse sunt libero inventore.
-                  </q>
-                </div>
-              </div>
-              <div
-                class="flexgrid__cell--sm-4 brands__grid-cell"
-              >
-                <div
-                  class="brand-card"
-                >
-                  <div
-                    class="brand-card__image-wrapper"
-                  >
-                    <picture
-                      alt="Lorem Ipsum"
-                      stylemodifier="brand-card__image"
-                    >
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <source
-                        media="(max-width: 480px)"
-                        srcset="/generator/svg/240/240"
-                      />
-                       
-                      <img
-                        alt=""
-                        class="img--responsive img--lazy"
-                        src=""
-                      />
-                    </picture>
-                  </div>
-                   
-                  <q
-                    class="brand-card__quote"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ullam eligendi voluptatum iste ducimus illum.
-                  </q>
-                </div>
-              </div>
-              <div
-                class="flexgrid__cell--sm-4 brands__grid-cell"
-              >
-                <div
-                  class="brand-card"
-                >
-                  <div
-                    class="brand-card__image-wrapper"
-                  >
-                    <picture
-                      alt="Lorem Ipsum"
-                      stylemodifier="brand-card__image"
-                    >
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <source
-                        media="(max-width: 480px)"
-                        srcset="/generator/svg/240/240"
-                      />
-                       
-                      <img
-                        alt=""
-                        class="img--responsive img--lazy"
-                        src=""
-                      />
-                    </picture>
-                  </div>
-                   
-                  <q
-                    class="brand-card__quote"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis, in illum aut atque unde.
-                  </q>
-                </div>
-              </div>
-            </div>
-             
-            <a
-              class="brands__link link--large link--icon"
-              href="#/#"
-            >
-              <!---->
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </a>
-          </section>
-        </article>
-         
-        <article
-          class="slider-reveal"
-          modifier=""
-        >
-          <section
-            class="container slider-reveal__container"
-          >
-            <div
-              class="flexgrid flexgrid--gutter"
-            >
-              <div
-                class="flexgrid__cell--xs-6 slider-reveal__grid-cell"
-              >
-                <h2
-                  class="slider-reveal__title"
-                >
-                   Lorem ipsum dolor sit amet
-                </h2>
-                 
-                <p
-                  class="slider-reveal__body"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eius culpa
-                </p>
-                <p
-                  class="slider-reveal__body"
-                >
-                  asperiores expedita consequatur nostrum quia, doloremque reprehenderit. Sequi, unde ipsa dolores dolorum earum qui obcaecati architecto officiis voluptates vero.
-                </p>
-                 
-                <!---->
-              </div>
-               
-              <div
-                class="flexgrid__cell--xs-6 slider-reveal__grid-cell"
-              >
-                <div
-                  class="slider-reveal__image-wrapper"
-                >
-                  <div
-                    class="slider-reveal__image-aspect"
-                  >
-                    <div
-                      class="slider-reveal__mask"
-                    >
-                      <picture>
-                        <!---->
-                         
-                        <!---->
-                         
-                        <source
-                          media="(min-width: 768px)"
-                          srcset=""
-                        />
-                         
-                        <!---->
-                         
-                        <!---->
-                         
-                        <source
-                          media="(max-width: 480px)"
-                          srcset="/generator/svg/400/400/333333/999999"
-                        />
-                         
-                        <img
-                          alt="Lorem Ipsum"
-                          class="img--responsive slider-reveal__image img--lazy"
-                          src=""
-                        />
-                      </picture>
-                    </div>
-                    <div
-                      class="slider-reveal__mask"
-                    >
-                      <picture>
-                        <!---->
-                         
-                        <!---->
-                         
-                        <source
-                          media="(min-width: 768px)"
-                          srcset=""
-                        />
-                         
-                        <!---->
-                         
-                        <!---->
-                         
-                        <source
-                          media="(max-width: 480px)"
-                          srcset="/generator/svg/400/400/999999/333333"
-                        />
-                         
-                        <img
-                          alt="Lorem Ipsum"
-                          class="img--responsive slider-reveal__image img--lazy"
-                          src=""
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-                 
-                <!---->
-                <!---->
-                 
-                <!---->
-              </div>
-            </div>
-          </section>
-        </article>
-         
-        <article
-          class="examples"
-        >
-          <div
-            class="container"
-          >
-            <header>
-              <h2
-                class="examples__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h2>
-            </header>
-             
-            <div
-              class="cards"
-            >
-              <div
-                class="flexgrid flexgrid--gutter"
-              >
-                <div
-                  class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
-                >
-                  <!---->
-                </div>
-                <div
-                  class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
-                >
-                  <!---->
-                </div>
-                <div
-                  class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
-                >
-                  <!---->
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-         
-        <article
-          class="explore"
-        >
-          <section
-            class="container explore__container"
-          >
-            <div
-              class="flexgrid flexgrid--gutter"
-            >
-              <div
-                class="flexgrid__cell--xs-6"
-              >
-                <h2
-                  class="explore__title"
-                >
-                  Lorem ipsum dolor sit amet
-                </h2>
-              </div>
-            </div>
-             
-            <div
-              class="explore__image-placeholder"
-            >
-              <picture>
-                <source
-                  media="(min-width: 569px)"
-                  srcset="/generator/svg/600/600/999999/ffffff, /generator/svg/1200/1200/999999/ffffff 2x"
-                />
-                 
-                <img
-                  alt="lorem ipsum"
-                  class="img--responsive explore__image img--contain"
-                  src="/generator/svg/600/360/999999/ffffff"
-                />
-              </picture>
-              <picture
-                style="display: none;"
-              >
-                <source
-                  media="(min-width: 569px)"
-                  srcset="/generator/svg/600/600/777777/ffffff, /generator/svg/1200/1200/777777/ffffff 2x"
-                />
-                 
-                <img
-                  alt="lorem ipsum"
-                  class="img--responsive explore__image img--contain"
-                  src="/generator/svg/600/360/777777/ffffff"
-                />
-              </picture>
-              <picture
-                style="display: none;"
-              >
-                <source
-                  media="(min-width: 569px)"
-                  srcset="/generator/svg/600/600/555555/ffffff, /generator/svg/1200/1200/555555/ffffff 2x"
-                />
-                 
-                <img
-                  alt="lorem ipsum"
-                  class="img--responsive explore__image img--contain"
-                  src="/generator/svg/600/360/555555/ffffff"
-                />
-              </picture>
-              <picture
-                style="display: none;"
-              >
-                <source
-                  media="(min-width: 569px)"
-                  srcset="/generator/svg/600/600/333333/ffffff, /generator/svg/1200/1200/333333/ffffff 2x"
-                />
-                 
-                <img
-                  alt="lorem ipsum"
-                  class="img--responsive explore__image img--contain"
-                  src="/generator/svg/600/360/333333/ffffff"
-                />
-              </picture>
-               
-              <nav
-                aria-label="pagination"
-                class="pager explore__pager"
-                name="explore-pager"
-              >
-                <ul
-                  class="pager__list"
-                >
-                  <li
-                    aria-hidden="true"
-                    class="pager__active-page"
-                  >
-                    <!---->
-                  </li>
-                   
-                  <li
-                    class="pager__page"
-                  >
-                    <a
-                      aria-current="true"
-                      aria-label="\\"current page, page 1"
-                      aria-role="button"
-                      class="pager__page-indicator"
-                    >
-                      <!---->
-                    </a>
-                  </li>
-                  <li
-                    class="pager__page"
-                  >
-                    <a
-                      aria-label="page 2"
-                      aria-role="button"
-                      class="pager__page-indicator"
-                    >
-                      <!---->
-                    </a>
-                  </li>
-                  <li
-                    class="pager__page"
-                  >
-                    <a
-                      aria-label="page 3"
-                      aria-role="button"
-                      class="pager__page-indicator"
-                    >
-                      <!---->
-                    </a>
-                  </li>
-                  <li
-                    class="pager__page"
-                  >
-                    <a
-                      aria-label="page 4"
-                      aria-role="button"
-                      class="pager__page-indicator"
-                    >
-                      <!---->
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-             
-            <div
-              class="flexgrid flexgrid--gutter"
-            >
-              <div
-                class="flexgrid__cell--xs-6"
-              >
-                <div
-                  class="explore__description"
-                >
-                  <dl
-                    class="tabbable-dl"
-                    style="height: 6px;"
-                  >
-                    <dt
-                      class="tabbable-dl__term tabbable-dl__term--vue"
-                      style="height: auto; opacity: 1; visibility: visible;"
-                    >
-                      <a
-                        class="tabbable-dl__link"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <h3
-                          class="tabbable-dl__title"
-                        >
-                          <!---->
-                          
-                    Ligula Consectetur Mollis
-                
-                        </h3>
-                      </a>
-                    </dt>
-                     
-                    <dd
-                      class="tabbable-dl__desc tabbable-dl__desc--vue"
-                      style="margin-bottom: 0px; height: 30px; top: 0px;"
-                    >
-                      Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-                    </dd>
-                    <dt
-                      class="tabbable-dl__term tabbable-dl__term--vue"
-                      style="height: auto; opacity: 1; visibility: visible;"
-                    >
-                      <a
-                        class="tabbable-dl__link"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <h3
-                          class="tabbable-dl__title"
-                        >
-                          <!---->
-                          
-                    Porta Fringilla
-                
-                        </h3>
-                      </a>
-                    </dt>
-                     
-                    <dd
-                      class="tabbable-dl__desc tabbable-dl__desc--vue"
-                      style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
-                    >
-                      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                    </dd>
-                    <dt
-                      class="tabbable-dl__term tabbable-dl__term--vue"
-                      style="height: auto; opacity: 1; visibility: visible;"
-                    >
-                      <a
-                        class="tabbable-dl__link"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <h3
-                          class="tabbable-dl__title"
-                        >
-                          <!---->
-                          
-                    Elit Inceptos Etiam
-                
-                        </h3>
-                      </a>
-                    </dt>
-                     
-                    <dd
-                      class="tabbable-dl__desc tabbable-dl__desc--vue"
-                      style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
-                    >
-                      Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                    </dd>
-                    <dt
-                      class="tabbable-dl__term tabbable-dl__term--vue"
-                      style="height: auto; opacity: 1; visibility: visible;"
-                    >
-                      <a
-                        class="tabbable-dl__link"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <h3
-                          class="tabbable-dl__title"
-                        >
-                          <!---->
-                          
-                    Etiam Fermentum
-                
-                        </h3>
-                      </a>
-                    </dt>
-                     
-                    <dd
-                      class="tabbable-dl__desc tabbable-dl__desc--vue"
-                      style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
-                    >
-                      Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-                    </dd>
-                  </dl>
-                </div>
-                 
-                <div
-                  class="explore__navigation"
-                >
-                  <a
-                    aria-label=""
-                    class="icon-button explore__nav"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="icon-button__label"
-                    >
-                      <span
-                        class="icon-button__label"
-                      >
-                        previous
-                      </span>
-                    </span>
-                  </a>
-                   
-                  <a
-                    aria-label=""
-                    class="icon-button explore__nav icon-button--reversed"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="icon-button__label"
-                    >
-                      <span
-                        class="icon-button__label"
-                      >
-                        next
-                      </span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-        </article>
-         
-        <article
-          class="ecosystem"
-        >
+            class="hero-video__image--overlay"
+          />
+           
           <section
             class="container"
           >
-            <h2
-              class="ecosystem__title"
-            >
-              Lorem ipsum dolor sit amet
-            </h2>
-             
             <div
-              class="ecosystem__items"
+              class="flexgrid__cell--xs-6 hero--video-reset"
             >
-              <article
-                class="card ecosystem__card"
-                tabindex="0"
+              <h1
+                class="hero-video__headline"
               >
-                <div
-                  class="card__visual"
-                >
-                  <!---->
-                   
-                  <!---->
-                </div>
-                 
-                <div
-                  class="card__content"
-                >
-                  <h3
-                    class="card__headline"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </h3>
-                   
-                  <p
-                    class="card__description"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-                  </p>
-                   
-                  <!---->
-                </div>
-              </article>
-              <article
-                class="card ecosystem__card"
-                tabindex="0"
+                Lorum ipsum dolor sit amet consectetuer
+              </h1>
+               
+              <p
+                class="copy--intro"
               >
-                <div
-                  class="card__visual"
-                >
-                  <!---->
-                   
-                  <!---->
-                </div>
-                 
-                <div
-                  class="card__content"
-                >
-                  <h3
-                    class="card__headline"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </h3>
-                   
-                  <p
-                    class="card__description"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt error, aut velit sequi nemo aspernatur libero perferendis magni
-                  </p>
-                   
-                  <!---->
-                </div>
-              </article>
-              <article
-                class="card ecosystem__card"
-                tabindex="0"
+                Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.
+              </p>
+               
+              <button
+                class="link--large"
+                icon="play-video"
+                style="background-color: red;"
+                type="button"
               >
-                <div
-                  class="card__visual"
-                >
-                  <!---->
-                   
-                  <!---->
-                </div>
-                 
-                <div
-                  class="card__content"
-                >
-                  <h3
-                    class="card__headline"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </h3>
-                   
-                  <p
-                    class="card__description"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque repellat in fugit eum minus dolorum deleniti,
-                  </p>
-                   
-                  <!---->
-                </div>
-              </article>
-              <article
-                class="card ecosystem__card"
-                tabindex="0"
-              >
-                <div
-                  class="card__visual"
-                >
-                  <!---->
-                   
-                  <!---->
-                </div>
-                 
-                <div
-                  class="card__content"
-                >
-                  <h3
-                    class="card__headline"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </h3>
-                   
-                  <p
-                    class="card__description"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum aliquid fugit assumenda, sit rem recusandae illum dicta
-                  </p>
-                   
-                  <!---->
-                </div>
-              </article>
+                Play Video
+              </button>
             </div>
-          </section>
-        </article>
-         
-        <article
-          class="case"
-        >
-          <section
-            class="container case__container"
-          >
-            <figure
-              class="case__media"
-              style="display: none;"
-            >
-              <figcaption
-                class="flex-grid flexgrid__cell--xs-6"
-              >
-                <h2
-                  class="case__title"
-                >
-                  Lorem ipsum dolor sit amet
-                </h2>
-              </figcaption>
-               
-              <div
-                class="case__media-placeholder"
-              >
-                <figcaption>
-                  <a
-                    aria-label=""
-                    class="icon-button case__link icon-button--underline-large"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="icon-button__label"
-                    >
-                      Sit amet
-                    </span>
-                  </a>
-                </figcaption>
-                 
-                <div
-                  class="case__image-overlay"
-                />
-                 
-                <picture
-                  alt="image landscape full width alt text empty"
-                >
-                  <source
-                    media="(min-width: 1201px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(min-width: 1025px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(min-width: 768px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(min-width: 569px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(min-width: 481px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(max-width: 480px)"
-                    srcset="/generator/svg/800/450"
-                  />
-                   
-                  <img
-                    alt=""
-                    class="img--responsive case__image--full img--lazy"
-                    src=""
-                  />
-                </picture>
-              </div>
-               
-              <figcaption
-                class="flex-grid flexgrid__cell--xs-6"
-              >
-                <p
-                  class="case__paragraph case__paragraph--last"
-                >
-                  Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                </p>
-              </figcaption>
-            </figure>
-             
-            <figure
-              class="case__media"
-            >
-              <div
-                class="case__media-placeholder"
-              >
-                <figcaption
-                  class="flex-grid flexgrid__cell--xs-6 case__flex-grid--center"
-                >
-                  <h2
-                    class="case__title"
-                  >
-                    Lorem ipsum dolor sit amet
-                  </h2>
-                   
-                  <p
-                    class="case__paragraph"
-                  >
-                    Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                  </p>
-                   
-                  <a
-                    aria-label=""
-                    class="icon-button case__link icon-button--underline-large"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="icon-button__label"
-                    >
-                      Sit amet
-                    </span>
-                  </a>
-                </figcaption>
-                 
-                <div
-                  class="case__image-overlay"
-                />
-                 
-                <picture
-                  alt="image landscape full width alt text empty"
-                >
-                  <source
-                    media="(min-width: 1201px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(min-width: 1025px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(min-width: 768px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(min-width: 569px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(min-width: 481px)"
-                    srcset=""
-                  />
-                   
-                  <source
-                    media="(max-width: 480px)"
-                    srcset="/generator/svg/800/450"
-                  />
-                   
-                  <img
-                    alt=""
-                    class="img--responsive case__image--full img--lazy"
-                    src=""
-                  />
-                </picture>
-              </div>
-            </figure>
           </section>
            
           <!---->
-        </article>
-         
-        <article
-          class="general-content"
-        >
-          <section
-            class="container general-content__container"
-          >
-            <div
-              class="flexgrid flexgrid--gutter"
-            >
-              <div
-                class="flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell"
-              >
-                <h2
-                  class="general-content__title"
-                >
-                   Lorem ipsum dolor sit amet
-                </h2>
-                 
-                <p
-                  class="general-content__body"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?
-                </p>
-                 
-                <!---->
-              </div>
-               
-              <div
-                class="flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell"
-              >
-                <div
-                  class="general-content__image-wrapper"
-                >
-                  <picture>
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(min-width: 768px)"
-                      srcset=""
-                    />
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/400/400"
-                    />
-                     
-                    <img
-                      alt=""
-                      class="img--responsive img--lazy"
-                      src=""
-                    />
-                  </picture>
-                </div>
-              </div>
-            </div>
-          </section>
         </article>
       </main>
        

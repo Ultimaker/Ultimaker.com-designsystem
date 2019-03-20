@@ -4,6 +4,7 @@ import ViewportUtility from 'utils/viewport';
 import PublicEventService from 'plugins/public-event-service';
 
 import { PageHeader as PageHeaderInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/page-header/PageHeader';
+import { ISubNavProps } from 'components/organisms/sub-nav/sub-nav.models';
 
 @Component({
     name: 'page-header',
@@ -14,6 +15,7 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
     @Prop({ type: Array, required: false }) navigation!: PageHeaderInterface['navigation'];
     @Prop({ type: Object, required: false }) cta!: PageHeaderInterface['cta'];
     @Prop({ type: Object, required: false }) search!: PageHeaderInterface['search'];
+    @Prop({ type: Object, required: false }) subNav!: ISubNavProps;
     @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
 
     assistUsed: boolean =  false;

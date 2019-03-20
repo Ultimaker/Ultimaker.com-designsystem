@@ -5,7 +5,7 @@
         <div class="flexgrid__cell--xs-6 hero--video-reset">
             <h1 class="hero-video__headline">{{ title }}</h1>
             <p class="copy--intro" v-if="description">{{ description }}</p>
-            <content-link v-if="videoId" icon="play-video" class="link--large" @click.native="toggleVideo">Play Video</content-link>
+            <button type="button" v-if="videoId" icon="play-video" class="link--large" @click="toggleVideo" style="background-color: red">Play Video</button>
         </div>
     </section>
     <modal class="modal--video" v-if="showVideo" @close="toggleVideo">

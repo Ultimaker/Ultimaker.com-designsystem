@@ -1,5 +1,6 @@
 <section class="story__template">
-    <main>
+    <page-header v-bind="header" :main-nav-open="mainNavOpen" @toggle-nav="mainNavOpen = !mainNavOpen"></page-header>
+    <main style="padding-top: 60px">
         <hero-products-application v-bind="heroProductsApplication"></hero-products-application>
         <brands v-bind="brands"></brands>
         <slider-reveal v-bind="slider"></slider-reveal>
@@ -8,11 +9,6 @@
         <ecosystem v-bind="ecosystem"></ecosystem>
         <cases v-bind="cases"></cases>
         <general-content v-bind="generalContent"></general-content>
-        <footer-content :minorNav="minorNav"
-                        :globalLabels="globalLabels"
-                        :legalNav="legalNav"
-                        :country="country">
-
-        </footer-content>
     </main>
+    <page-footer  v-bind="footer" :country="country" @country-changed="updateCountry"></page-footer>
 </section>

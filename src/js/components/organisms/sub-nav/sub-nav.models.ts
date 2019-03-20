@@ -4,7 +4,7 @@ interface ISiblings {
 }
 
 interface ILinks {
-    siblings: ISiblings[];
+    subNav: ISiblings[];
 }
 
 interface IPage {

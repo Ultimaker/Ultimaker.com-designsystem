@@ -1,3 +1,5 @@
+import headerKnobs from '../../organisms/page-header/page-header.knobs.stories';
+import footerKnobs from '../../organisms/page-footer/page-footer.knobs.stories';
 import heroProductsApplicationKnobs from '../../organisms/hero-products-application/hero-products-application.knobs.stories.js';
 import sliderRevealKnobs from '../../organisms/slider-reveal/slider-reveal.knobs.stories.js';
 import brandsKnobs from '../../organisms/brands/brands.knobs.stories.js';
@@ -6,9 +8,10 @@ import exploreKnobs from '../../organisms/explore/explore.knobs.stories.js';
 import ecosystemKnobs from '../../organisms/ecosystem/ecosystem.knobs.stories.js';
 import casesKnobs from '../../organisms/cases/cases.knobs.stories.js';
 import generalContentKnobs from '../../organisms/general-content/general-content.knobs.stories.js';
-import footerKnobs from '../../organisms/page-footer/page-footer.knobs.stories.js';
 
 export default () => ({
+    ... headerKnobs(),
+    ... footerKnobs(),
     ... heroProductsApplicationKnobs(),
     ... brandsKnobs(),
     ... sliderRevealKnobs(),
@@ -16,6 +19,5 @@ export default () => ({
     ... exploreKnobs(),
     ... ecosystemKnobs(),
     ... casesKnobs(),
-    ... generalContentKnobs(),
-    ... footerKnobs()
+    ... generalContentKnobs()
 });
