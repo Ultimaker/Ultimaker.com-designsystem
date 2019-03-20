@@ -31,6 +31,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
            
           <section
             class="list-section"
+            showalllabel="Show all"
             type="ListSection"
           >
             <header
@@ -51,7 +52,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   class="tooltip section-tooltip list-section__tooltip"
                   description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
                   icon="info"
-                  id="tooltip_646"
+                  id="tooltip_644"
                   label="More info"
                   style="display: none;"
                   type="Tooltip"
@@ -63,9 +64,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               </h3>
                
               <a
-                aria-describedby="tooltip_646"
-                class="link list-section__info-link router-link-exact-active router-link-active undefined__link link--reversed link--icon"
-                href="#/"
+                aria-describedby="tooltip_644"
+                class="link list-section__info-link link--reversed link--icon"
+                href="#"
                 role="button"
               >
                 <!---->
@@ -265,6 +266,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
           </section>
           <section
             class="list-section"
+            showalllabel="Show all"
             type="ListSection"
           >
             <header
@@ -910,7 +912,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
             class="cta__block"
           >
             <a
-              class="undefined__link link--button link--icon button"
+              class="link--button link--icon button"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -927,7 +929,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               </span>
             </a>
             <a
-              class="undefined__link link--large link--icon link link--large"
+              class="link--large link--icon link link--large"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"

@@ -34,20 +34,7 @@ exports[`Storyshots organisms|general-content General content 1`] = `
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?
               </p>
                
-              <a
-                class="link router-link-exact-active router-link-active general-content__link"
-                href="#/"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Learn More
-    
-                </span>
-              </a>
+              <!---->
             </div>
              
             <div

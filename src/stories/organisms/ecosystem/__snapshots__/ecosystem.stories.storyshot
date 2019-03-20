@@ -52,20 +52,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
                 </p>
                  
-                <a
-                  class="link router-link-exact-active router-link-active card__link"
-                  href="#/"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Learn more
-    
-                  </span>
-                </a>
+                <!---->
               </div>
             </article>
             <article
@@ -95,20 +82,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt error, aut velit sequi nemo aspernatur libero perferendis magni
                 </p>
                  
-                <a
-                  class="link router-link-exact-active router-link-active card__link"
-                  href="#/"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Learn more
-    
-                  </span>
-                </a>
+                <!---->
               </div>
             </article>
             <article
@@ -138,20 +112,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque repellat in fugit eum minus dolorum deleniti,
                 </p>
                  
-                <a
-                  class="link router-link-exact-active router-link-active card__link"
-                  href="#/"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Learn more
-    
-                  </span>
-                </a>
+                <!---->
               </div>
             </article>
             <article
@@ -181,20 +142,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum aliquid fugit assumenda, sit rem recusandae illum dicta
                 </p>
                  
-                <a
-                  class="link router-link-exact-active router-link-active card__link"
-                  href="#/"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Learn more
-    
-                  </span>
-                </a>
+                <!---->
               </div>
             </article>
           </div>
