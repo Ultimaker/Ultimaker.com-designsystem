@@ -4324,10 +4324,7 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
   will-change: transform;
   transform: translateX(0);
   background-color: white;
-  z-index: 1500; }
-  @media (min-width: 768px) {
-    .sub-nav {
-      justify-content: center; } }
+  justify-content: center; }
   .sub-nav:after {
     content: '';
     display: block;
@@ -4344,7 +4341,16 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
 
 .sub-nav__list {
   display: flex;
-  padding: 24px 0 1px; }
+  padding: 24px 0 1px;
+  overflow-x: scroll;
+  overflow-scrolling: touch; }
+  .sub-nav__list::-webkit-scrollbar-track {
+    background-color: transparent; }
+  .sub-nav__list::-webkit-scrollbar {
+    height: 2px;
+    background-color: #FFFFFF; }
+  .sub-nav__list::-webkit-scrollbar-thumb {
+    background-color: #24bcf3; }
 
 .sub-nav__item {
   flex: 0 1 auto;
@@ -4373,24 +4379,27 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
   transition: height 0.1s cubic-bezier(0.23, 1, 0.32, 1);
   margin-bottom: 6px;
   color: #000000; }
-  .sub-nav__link:hover, .sub-nav__link--active {
+  .sub-nav__link:hover, .sub-nav__link.exact-active, .sub-nav__link.active {
     color: #000000; }
-    .sub-nav__link:hover .sub-nav__label:after, .sub-nav__link--active .sub-nav__label:after {
+    .sub-nav__link:hover .sub-nav__label:after, .sub-nav__link.exact-active .sub-nav__label:after, .sub-nav__link.active .sub-nav__label:after {
       width: 100%; }
 
-.sub-nav__image {
+.sub-nav__image-container {
+  width: 60px;
+  height: 60px;
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  margin: 0 auto 14px;
-  width: 60px;
-  height: 60px;
-  transition: transform 0.1s 0.1s cubic-bezier(0.23, 1, 0.32, 1); }
+  margin: 0 auto 14px; }
   @media (min-width: 768px) {
-    .sub-nav__image {
+    .sub-nav__image-container {
       margin: 0 auto 12px; } }
+
+.sub-nav__image {
+  width: 60px;
+  height: 60px; }
 
 .sub-nav__label {
   display: inline-block;
@@ -4409,6 +4418,8 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
     bottom: -2px;
     transform: translateX(-50%);
     transition:  width 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+  .sub-nav__link:focus .sub-nav__label:after {
+    display: none; }
 
 svg text {
   font-size: 16px;

@@ -509,6 +509,7 @@ _gsScope._gsDefine("plugins.ThrowPropsPlugin", ["utils.VelocityTracker", "plugin
  * VelocityTracker
  * ----------------------------------------------------------------
  */
+
 	_gsScope._gsDefine("utils.VelocityTracker", ["TweenLite"], function() {
 
 		var _first,	_initted, _time1, _time2,
@@ -516,7 +517,7 @@ _gsScope._gsDefine("plugins.ThrowPropsPlugin", ["utils.VelocityTracker", "plugin
 			_empty = {},
 			_doc = _gsScope.document,
 			_transforms = {x:1,y:1,z:2,scale:1,scaleX:1,scaleY:1,rotation:1,rotationZ:1,rotationX:2,rotationY:2,skewX:1,skewY:1,xPercent:1,yPercent:1},
-			_getComputedStyle = _doc.defaultView ? _doc.defaultView.getComputedStyle : function() {},
+			_getComputedStyle = _doc && _doc.defaultView ? _doc.defaultView.getComputedStyle : function() {},
 			_getStyle = function(t, p, cs) {
 				var rv = (t._gsTransform || _empty)[p];
 				if (rv || rv === 0) {

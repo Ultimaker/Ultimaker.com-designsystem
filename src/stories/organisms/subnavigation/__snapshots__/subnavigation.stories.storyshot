@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <nav
+        aria-label="sub items"
+        class="sub-nav sub-nav--fixed"
+        role="menubar"
+        type="Subnavigation"
+      >
+        <ul
+          class="sub-nav__list"
+          role="presentation"
+        >
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://localhost:9090"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="#"
+            />
+          </li>
+          <li
+            class="sub-nav__item"
+            role="menuitem"
+          >
+            <subnavigationitem
+              image="[object Object]"
+              label="Ultimaker PLA"
+              type="SubnavigationItem"
+              url="http://nu.nl"
+            />
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </section>
+</section>
+`;

@@ -6,11 +6,9 @@
     will-change: transform;
     transform: translateX(0);
     background-color: white;
-    z-index: 1500;
 
-    @include min-tablet() {
-        justify-content: center;
-    }
+    justify-content: center;
+
 
     &:after {
         content: '';
@@ -33,7 +31,24 @@
     display: flex;
     padding: ($buildingUnit * 2) 0 1px;
 
+
     @extend %reset-list;
+
+    overflow-x: scroll;
+    overflow-scrolling: touch;
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar {
+        height: 2px;
+        background-color: $colorWhite;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $colorButtonHover;
+    }
 
 }
 
@@ -75,7 +90,8 @@
     color: $colorBlack;
 
     &:hover,
-    &--active {
+    &.exact-active,
+    &.active {
         color: $colorBlack;
 
         .sub-nav__label:after {
@@ -89,8 +105,10 @@
         @extend %focus-outline;
     }
 }
+.sub-nav__image-container {
+    width: $buildingUnit * 5;
+    height: $buildingUnit * 5;
 
-.sub-nav__image {
     display: block;
     position: absolute;
 
@@ -99,14 +117,15 @@
     right: 0;
 
     margin: 0 auto ($buildingUnit+2);
-    width: $buildingUnit * 5;
-    height: $buildingUnit * 5;
-
-    transition: transform 0.1s 0.1s $defaultEasing;
 
     @include min-tablet() {
         margin: 0 auto $buildingUnit;
     }
+}
+
+.sub-nav__image {
+    width: $buildingUnit * 5;
+    height: $buildingUnit * 5;
 }
 
 .sub-nav__label {
@@ -133,6 +152,12 @@
         transform: translateX(-50%);
 
         @include micro-animate(width);
+    }
+
+    .sub-nav__link:focus & {
+        &:after {
+            display: none;
+        }
     }
 }
 
