@@ -1,4 +1,4 @@
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 import Events from 'constants/events';
 
 @Component({
@@ -62,6 +62,7 @@ export default class BaseLink extends Vue {
         return {
             is: 'router-link',
             to: this.url,
+            ref: 'link',
         };
     }
 

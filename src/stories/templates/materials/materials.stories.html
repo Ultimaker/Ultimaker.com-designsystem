@@ -1,6 +1,7 @@
 <section class="story__template">
     <page-header v-bind="header" :sub-nav="subNav" :main-nav-open="mainNavOpen" @toggle-nav="mainNavOpen = !mainNavOpen"></page-header>
     <main style="padding-top: 60px">
+        <subnavigation v-bind="subnavigation"></subnavigation>
         <hero-video v-bind="heroVideo"></hero-video>
     </main>
     <page-footer  v-bind="footer" :country="country" @country-changed="updateCountry"></page-footer>
