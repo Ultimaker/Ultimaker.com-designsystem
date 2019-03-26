@@ -10,7 +10,7 @@ export {default as HeroBasic} from 'organisms-page/hero-basic';
 export {default as HeroProduct} from 'organisms-page/hero-product';
 export {default as HeroProductsApplication} from 'organisms-page/hero-products-application';
 export {default as HeroText} from 'organisms-page/hero-text';
-export {default as HeroBackground} from 'organisms-page/hero-background';
+export {default as HeroCover} from 'organisms-page/hero-cover';
 export {default as SliderReveal} from 'organisms-page/slider-reveal';
 export {default as Ubr} from 'organisms-page/ubr';
 export {default as PageDrawer} from 'organisms-page/page-drawer';

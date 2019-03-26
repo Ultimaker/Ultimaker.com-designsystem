@@ -1,9 +1,9 @@
 <article class="hero hero--video">
-    <responsive-picture v-bind="heroImage" imgClass="hero-background__image--full"></responsive-picture>
-    <div class="hero-background__image--overlay"></div>
+    <responsive-picture v-bind="heroImage" imgClass="hero-cover__image--full"></responsive-picture>
+    <div class="hero-cover__image--overlay"></div>
     <section class="container">
         <div class="flexgrid__cell--xs-6 hero--video-reset">
-            <h1 class="hero-background__headline">{{ title }}</h1>
+            <h1 class="hero-cover__headline">{{ title }}</h1>
             <p class="copy--intro" v-if="description">{{ description }}</p>
             <button type="button" v-if="videoId" icon="play-video" class="link--large" @click="toggleVideo" style="background-color: red">Play Video</button>
         </div>
