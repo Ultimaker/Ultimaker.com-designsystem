@@ -1957,13 +1957,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
 
             <img
               alt=""
-              class="img--responsive hero-background__image--full img--lazy"
+              class="img--responsive hero-cover__image--full img--lazy"
               src=""
             />
           </picture>
 
           <div
-            class="hero-background__image--overlay"
+            class="hero-cover__image--overlay"
           />
 
           <section
@@ -1973,7 +1973,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
               class="flexgrid__cell--xs-6 hero--video-reset"
             >
               <h1
-                class="hero-background__headline"
+                class="hero-cover__headline"
               >
                 Lorum ipsum dolor sit amet consectetuer
               </h1>

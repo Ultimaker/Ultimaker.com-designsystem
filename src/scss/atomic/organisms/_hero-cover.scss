@@ -18,20 +18,20 @@
 
 }
 
-.hero-background__headline {
+.hero-cover__headline {
     color: $colorWhite;
 }
 
-.hero-background__image--full {
+.hero-cover__image--full {
     @include object-fit(cover);
 }
 
-.hero-background__image--overlay {
+.hero-cover__image--overlay {
     background-color: $colorOverlayImage;
 }
 
-.hero-background__image--full,
-.hero-background__image--overlay {
+.hero-cover__image--full,
+.hero-cover__image--overlay {
     display: block;
     position: absolute;
     top: 0;

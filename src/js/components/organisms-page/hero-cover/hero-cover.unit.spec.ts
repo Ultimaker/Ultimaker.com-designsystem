@@ -1,12 +1,12 @@
 import Vue from 'vue';
-import HeroBackground from './hero-background';
+import heroCover from './hero-cover';
 import { build } from 'vuenit';
 
 describe('components', () => {
     describe('page', () => {
-        describe('hero-background', () => {
-            const fixture = require('./hero-background.unit.spec.json');
-            const mount = build(HeroBackground, {});
+        describe('hero-cover', () => {
+            const fixture = require('./hero-cover.unit.spec.json');
+            const mount = build(heroCover, {});
             const buildOptions = {
                 props: { ...fixture.properties },
             };

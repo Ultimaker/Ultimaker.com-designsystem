@@ -1,6 +1,6 @@
-# Hero Video
+# Hero Cover
 
-The 'Video hero’-organism introduces the topic of a page and gives the option to create a link to play video content. If used, this organism should always be positioned as the first organism in a page. The ‘hero video’-organism should at least contain a title, description and background-image. If no video is available, the link to the video will not be displayed.
+The 'Video cover’-organism introduces the topic of a page and gives the option to create a link to play video content. If used, this organism should always be positioned as the first organism in a page. The ‘hero video’-organism should at least contain a title, description and background-image. If no video is available, the link to the video will not be displayed.
 
 ## Photography guidelines
 Storytelling
