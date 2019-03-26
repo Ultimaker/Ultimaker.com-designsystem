@@ -119,13 +119,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
              
             <img
               alt=""
-              class="img--responsive hero-video__image--full img--lazy"
+              class="img--responsive hero-background__image--full img--lazy"
               src=""
             />
           </picture>
            
           <div
-            class="hero-video__image--overlay"
+            class="hero-background__image--overlay"
           />
            
           <section
@@ -135,7 +135,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
               class="flexgrid__cell--xs-6 hero--video-reset"
             >
               <h1
-                class="hero-video__headline"
+                class="hero-background__headline"
               >
                 Lorum ipsum dolor sit amet consectetuer
               </h1>

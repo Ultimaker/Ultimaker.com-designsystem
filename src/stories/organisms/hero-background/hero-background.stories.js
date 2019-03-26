@@ -1,17 +1,17 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs} from '@storybook/addon-knobs';
-import knobs from './hero-video.knobs.stories.js';
+import knobs from './hero-background.knobs.stories.js';
 
 storiesOf('organisms|hero', module)
     .addDecorator(withKnobs)
     .add('Hero video', () => ({
         props: {
-            heroVideo: {
+            heroBackground: {
                 default: knobs().heroVideo
             }
         },
-        template: require('./hero-video.stories.html')
+        template: require('./hero-background.stories.html')
     }),
     {
-        notes: {markdown: require('./hero-video.stories.md')}
+        notes: {markdown: require('./hero-background.stories.md')}
     });

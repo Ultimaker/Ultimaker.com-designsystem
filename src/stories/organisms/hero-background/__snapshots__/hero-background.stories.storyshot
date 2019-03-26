@@ -28,19 +28,19 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                 <h1>
                   Lorem ipsum dolor sit amet
                 </h1>
-
+                 
                 <h2
                   class="hero__subtitle"
                 >
                   Maecenas faucibus mollis interdum nulla vitae elit libero a pharetra augue
                 </h2>
-
+                 
                 <p
                   class="copy--intro"
                 >
                   Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
                 </p>
-
+                 
                 <div
                   class="cta__block"
                 >
@@ -52,13 +52,13 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                     type="ContentButton"
                   >
                     <!---->
-
+                     
                     <span
                       class="link__underline"
                     >
-
+                      
         Find a reseller
-
+    
                     </span>
                   </a>
                   <a
@@ -69,19 +69,19 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                     type="ContentLink"
                   >
                     <!---->
-
+                     
                     <span
                       class="link__underline"
                     >
-
+                      
         Get a quote
-
+    
                     </span>
                   </a>
                 </div>
               </div>
             </div>
-
+             
             <div
               class="flexgrid__cell--xs-6"
             >
@@ -131,13 +131,13 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                 <h1>
                   Lorem ipsum dolor sit amet
                 </h1>
-
+                 
                 <p
                   class="copy--intro"
                 >
                   Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
                 </p>
-
+                 
                 <div
                   class="price-table hero__price-table"
                 >
@@ -150,20 +150,20 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                       role="tab"
                     >
                       <!---->
-
+                       
                       <span
                         class="price-table__info"
                       >
                         <small
                           class="price-table__tagline"
                         >
-
+                          
                                         Product,
                                         300g
                                         from
-
+                                    
                         </small>
-
+                         
                         <span
                           class="currency"
                         >
@@ -172,28 +172,28 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                           >
                             EUR
                           </span>
-
+                          
     33
 
                         </span>
                       </span>
                     </li>
                   </ul>
-
+                   
                   <small
                     class="price-table__disclaimer"
                   >
                     *excl. VAT
                   </small>
                 </div>
-
+                 
                 <a
                   class="button button--primary hero__button"
                   href=""
                 >
                   Some label
                 </a>
-
+                 
                 <ul
                   class="link-list link-list--icon hero__link-list"
                 >
@@ -208,7 +208,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                        Content-link
                     </a>
                   </li>
-
+                   
                   <li
                     class="link-list__item"
                   >
@@ -234,7 +234,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                 </ul>
               </div>
             </div>
-
+             
             <div
               class="flexgrid__cell--xs-6"
             >
@@ -276,34 +276,34 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
               media="(min-width: 1201px)"
               srcset=""
             />
-
+             
             <!---->
-
+             
             <source
               media="(min-width: 768px)"
               srcset=""
             />
-
+             
             <!---->
-
+             
             <!---->
-
+             
             <source
               media="(max-width: 480px)"
               srcset="/generator/svg/1000/500"
             />
-
+             
             <img
               alt=""
               class="img--responsive hero__image--full img--lazy"
               src=""
             />
           </picture>
-
+           
           <div
             class="hero__image-overlay"
           />
-
+           
           <div
             class="container"
           >
@@ -321,7 +321,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                   </h1>
                 </div>
               </div>
-
+               
               <div
                 class="flexgrid__cell"
                 style="position: relative;"
@@ -331,26 +331,26 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                 >
                   Donec ullamcorper nulla non metus auctor fringilla
                 </p>
-
+                 
                 <picture>
                   <!---->
-
+                   
                   <!---->
-
+                   
                   <source
                     media="(min-width: 768px)"
                     srcset=""
                   />
-
+                   
                   <!---->
-
+                   
                   <!---->
-
+                   
                   <source
                     media="(max-width: 480px)"
                     srcset="/generator/svg/600/600/cccccc"
                   />
-
+                   
                   <img
                     alt=""
                     class="img--responsive hero__image--product img--lazy"
@@ -358,7 +358,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                   />
                 </picture>
               </div>
-
+               
               <div
                 class="flexgrid__cell--xs-6"
               >
@@ -369,7 +369,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="hero__usp usp--icon"
                   >
                     <!---->
-
+                     
                     <small
                       class="usp__label"
                     >
@@ -380,7 +380,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="hero__usp usp--icon"
                   >
                     <!---->
-
+                     
                     <small
                       class="usp__label"
                     >
@@ -391,7 +391,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="hero__usp usp--icon"
                   >
                     <!---->
-
+                     
                     <small
                       class="usp__label"
                     >
@@ -403,7 +403,7 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
             </div>
           </div>
         </div>
-
+         
         <div
           class="container"
         >
@@ -421,18 +421,18 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                 >
                   Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
                 </p>
-
+                 
                 <p>
                   TODO: Pricetable
                 </p>
-
+                 
                 <a
                   class="button button--primary hero__button"
                   href="#/#"
                 >
                   Some label
                 </a>
-
+                 
                 <ul
                   class="link-list link-list--icon hero__link-list"
                 >
@@ -499,7 +499,7 @@ exports[`Storyshots organisms|hero Hero text 1`] = `
           <h1>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit
           </h1>
-
+           
           <div
             class="hero__content content--rich"
           >
@@ -530,34 +530,34 @@ exports[`Storyshots organisms|hero Hero video 1`] = `
             media="(min-width: 1201px)"
             srcset=""
           />
-
+           
           <!---->
-
+           
           <source
             media="(min-width: 768px)"
             srcset=""
           />
-
+           
           <!---->
-
+           
           <!---->
-
+           
           <source
             media="(max-width: 480px)"
             srcset="/generator/svg/1000/500"
           />
-
+           
           <img
             alt=""
             class="img--responsive hero-background__image--full img--lazy"
             src=""
           />
         </picture>
-
+         
         <div
           class="hero-background__image--overlay"
         />
-
+         
         <section
           class="container"
         >
@@ -569,13 +569,13 @@ exports[`Storyshots organisms|hero Hero video 1`] = `
             >
               Lorum ipsum dolor sit amet consectetuer
             </h1>
-
+             
             <p
               class="copy--intro"
             >
               Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.
             </p>
-
+             
             <button
               class="link--large"
               icon="play-video"
@@ -586,7 +586,7 @@ exports[`Storyshots organisms|hero Hero video 1`] = `
             </button>
           </div>
         </section>
-
+         
         <!---->
       </article>
     </section>
