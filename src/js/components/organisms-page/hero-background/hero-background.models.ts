@@ -1,4 +1,4 @@
-export interface IHeroVideoProps {
+export interface IHeroBackgroundProps {
     title: string;
     description?: string;
     heroImage: object;

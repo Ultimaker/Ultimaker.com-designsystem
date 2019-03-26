@@ -1,12 +1,12 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { IHeroVideoProps } from './hero-video.models';
+import { IHeroBackgroundProps } from './hero-background.models';
 
 @Component({
-    name: 'hero-video',
-    template: require('./hero-video.html'),
+    name: 'hero-background',
+    template: require('./hero-background.html'),
 })
 
-export default class HeroVideo extends Vue implements IHeroVideoProps {
+export default class HeroBackground extends Vue implements IHeroBackgroundProps {
     @Prop({ type: String, required: true }) title!: string;
     @Prop({ type: String, default: undefined }) description?: string;
     @Prop({ type: Object, required: true }) heroImage!: object;

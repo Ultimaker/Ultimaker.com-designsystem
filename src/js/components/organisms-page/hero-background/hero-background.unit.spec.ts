@@ -1,12 +1,12 @@
 import Vue from 'vue';
-import HeroVideo from './hero-video';
+import HeroBackground from './hero-background';
 import { build } from 'vuenit';
 
 describe('components', () => {
     describe('page', () => {
-        describe('hero-video', () => {
-            const fixture = require('./hero-video.unit.spec.json');
-            const mount = build(HeroVideo, {});
+        describe('hero-background', () => {
+            const fixture = require('./hero-background.unit.spec.json');
+            const mount = build(HeroBackground, {});
             const buildOptions = {
                 props: { ...fixture.properties },
             };
