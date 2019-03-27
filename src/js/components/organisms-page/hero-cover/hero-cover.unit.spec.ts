@@ -20,17 +20,13 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should display the modal after clicking the icon button', () => {
+            it('should be able to toggle the modal', () => {
                 const vm = mount(buildOptions);
 
                 vm.toggleVideo();
                 expect(vm.showVideo).toBeTruthy();
-
-                Vue.nextTick(() => {
-                    expect(vm.$el.lastChild.attributes['class'].value).toContain('modal--video');
-                });
+                vm.$destroy();
             });
-
         });
     });
 });

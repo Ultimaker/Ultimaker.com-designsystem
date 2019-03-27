@@ -1,25 +1,28 @@
 {
     "properties": {
-        "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        "description":
-        "Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.",
-        "heroImage": {
-            "mobileWidth": {
-                "url": "/generator/svg/1000/500"
+        "title": "Lorum ipsum dolor sit amet consectetuer",
+        "description": "Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.",
+        "image": {
+            "imageSmall": {
+                "alt": "bla bla",
+                "url": "/generator/svg/1000/500",
+                "mimeType": "image/svg+xml"
             },
-            "tabletWidth": {
+            "imageMedium": {
+                "alt": "bla bla",
                 "url": "/generator/svg/1200/400",
-                "retina": {
-                    "url": "/generator/svg/2400/800"
-                }
+                "mimeType": "image/svg+xml"
             },
-            "desktopHdWidth": {
+            "imageLarge": {
+                "alt": "bla bla",
                 "url": "/generator/svg/1500/400",
-                "retina": {
-                    "url": "/generator/svg/3000/800"
-                }
+                "mimeType": "image/svg+xml"
             }
         },
-        "videoId": "w5Fgp-KihIA"
+        "ctas": [{
+            "type": "YoutubeLink",
+            "label": "Watch video",
+            "youtubeId": "hwhvByj8YG8"
+        }]
     }
 }
