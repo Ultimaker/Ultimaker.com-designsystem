@@ -12,4 +12,5 @@ export {default as NavAssist} from 'atoms/nav-assist';
 export {default as ResponsivePicture} from 'atoms/responsive-picture';
 export {default as TabbableDefinitionList} from 'atoms/tabbable-definition-list';
 export {default as Tooltip} from 'atoms/tooltip';
+export {default as YoutubeLink} from 'atoms/youtube-link';
 export {default as YoutubeVideo} from 'atoms/youtube-video';
