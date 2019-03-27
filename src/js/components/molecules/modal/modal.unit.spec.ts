@@ -1,12 +1,12 @@
 /* eslint-disable max-nested-callbacks */
 import Vue from 'vue';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 import Modal from './modal';
 
 describe('components', () => {
     describe('molecules', () => {
         describe('modal', () => {
-            let vm = null;
+            let vm;
             const mount = build(Modal);
 
             beforeEach(() => {
@@ -34,14 +34,14 @@ describe('components', () => {
             });
 
             it('should $emit a close event on keyup event', (done) => {
-                let keyEvent = null;
+                let keyEvent;
 
                 try {
                     // Chrome
                     keyEvent = new KeyboardEvent('keyup', {
                         bubbles: true,
                         cancelable: true,
-                        key: 'Escape'
+                        key: 'Escape',
                     });
                 } catch (e) {
                     // Phantom 2
