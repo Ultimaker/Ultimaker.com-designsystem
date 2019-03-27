@@ -1,20 +1,22 @@
 {
     "title": "Lorum ipsum dolor sit amet consectetuer",
     "description": "Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.",
-    "imageSmall": {
-        "alt": "bla bla",
-        "url": "/generator/svg/1000/500",
-        "mimeType": "image/svg+xml"
-    },
-    "imageMedium": {
-        "alt": "bla bla",
-        "url": "/generator/svg/1200/400",
-        "mimeType": "image/svg+xml"
-    },
-    "imageLarge": {
-        "alt": "bla bla",
-        "url": "/generator/svg/1500/400",
-        "mimeType": "image/svg+xml"
+    "image": {
+        "imageSmall": {
+            "alt": "bla bla",
+            "url": "/generator/svg/1000/500",
+            "mimeType": "image/svg+xml"
+        },
+        "imageMedium": {
+            "alt": "bla bla",
+            "url": "/generator/svg/1200/400",
+            "mimeType": "image/svg+xml"
+        },
+        "imageLarge": {
+            "alt": "bla bla",
+            "url": "/generator/svg/1500/400",
+            "mimeType": "image/svg+xml"
+        }
     },
     "ctas": [{
         "type": "YoutubeLink",

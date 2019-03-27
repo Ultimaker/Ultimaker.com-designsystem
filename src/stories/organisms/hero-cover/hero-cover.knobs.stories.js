@@ -7,9 +7,11 @@ export default () => ({
     heroCover: {
         title: text('hero-cover - title', data.title),
         description: text('hero-cover - description', data.description),
-        imageSmall: contentfulImage('hero-cover - image small', data.imageSmall),
-        imageMedium: contentfulImage('hero-cover - image medium', data.imageMedium),
-        imageLarge: contentfulImage('hero-cover - image large', data.imageLarge),
+        image: {
+            imageSmall: contentfulImage('hero-cover - image small', data.image.imageSmall),
+            imageMedium: contentfulImage('hero-cover - image medium', data.image.imageMedium),
+            imageLarge: contentfulImage('hero-cover - image large', data.image.imageLarge),
+        },
         ctas: object('hero-cover - ctas', data.ctas),
     }
 });
