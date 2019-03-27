@@ -7,6 +7,7 @@ import Events from 'constants/events';
 })
 
 export default class BaseLink extends Vue {
+    @Prop({ type: String, required: false }) type?: string;
     @Prop({ type: String, required: false }) block?: string;
     @Prop({ type: String, required: false }) mod?: string;
     @Prop({ type: String, required: false }) icon?: string;
