@@ -1,6 +1,11 @@
 import {files} from '@storybook/addon-knobs';
 import {responsiveImageKeys, allowedMimeTypes, imageKnobLabels} from '../constants';
 
+export const contentfulImage = (name = '', image = {}) => ({
+    ...image,
+    url: files(name, allowedMimeTypes, image.url)
+});
+
 export const responsiveImage =  (name = '', image = {}, listKey = '') => Object.keys(image).reduce((acc, key) => {
     if (responsiveImageKeys.indexOf(key) > -1) {
         acc[key] = {
