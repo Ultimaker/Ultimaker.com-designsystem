@@ -1,3 +1,5 @@
+import YoutubeConstants from 'constants/youtube';
+
 const embedProps = {
     modestbranding: {
         type: Boolean,
@@ -62,7 +64,7 @@ export default {
             return `autoplay=1&${ options.join('&') }`;
         },
         videoUrl() {
-            return `https://www.youtube-nocookie.com/embed/${ this.videoId }?${ this.videoQuery }`;
+            return `${ YoutubeConstants.embedUrl }${ this.videoId }?${ this.videoQuery }`;
         }
     },
     mounted() {
