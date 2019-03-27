@@ -916,7 +916,6 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
-              type="ContentButton"
             >
               <!---->
                
@@ -933,7 +932,6 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
-              type="ContentLink"
             >
               <!---->
                
