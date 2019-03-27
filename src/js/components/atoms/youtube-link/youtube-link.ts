@@ -25,7 +25,5 @@ export default class YoutubeLink extends BaseLink implements YoutubeLinkInterfac
 
     triggerClick(): void {
         this.toggleVideoVisible();
-        console.log('extended event click', super.triggerEventClick);
-        // super.triggerEventClick();
     }
 }
