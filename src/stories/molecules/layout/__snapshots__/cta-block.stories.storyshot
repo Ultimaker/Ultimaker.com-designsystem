@@ -18,7 +18,6 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
           href="https://www.ultimaker.com/resellers"
           rel="noopener"
           target="_self"
-          type="ContentButton"
         >
           <!---->
            
@@ -35,7 +34,6 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
           href="https://3d.ultimaker.com/requestquote"
           rel="noopener"
           target="_blank"
-          type="ContentLink"
         >
           <!---->
            
