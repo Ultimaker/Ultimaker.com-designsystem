@@ -2,11 +2,6 @@
     @extend .organism;
 }
 
-.general-content__image-wrapper{
-    max-width: 400px;
-    margin: $buildingUnit * 3 auto $buildingUnit * -5 auto;
-}
-
 .general-content__image{
     width: 75%;
     margin: 0 auto;
@@ -18,10 +13,9 @@
     }
 }
 
-@include min-mobile-xl() { 
-
+@include max-mobile-xl() {
     .general-content__image-wrapper{
-        position: absolute;
+        position: relative;
         left: $buildingUnit * 0.5;
         right: $buildingUnit;
         bottom: $buildingUnit * -5;

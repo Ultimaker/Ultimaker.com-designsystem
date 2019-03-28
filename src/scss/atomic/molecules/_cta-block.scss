@@ -2,7 +2,12 @@
     .button.button--primary + .link.link--large{
         margin: $buildingUnit * 2 0 0 0;
         transform: none;
+    }
 
+    .button .link__underline,
+    .button .link__underline:hover {
+        transform: none;
+        background: none;
     }
 
     @include min-mobile-xl {
@@ -15,6 +20,8 @@
         }
     }
 
+
+    .general-content &,
     .container > &  {
         @extend  %reset-last-margin;
 
@@ -25,10 +32,10 @@
         margin-top: $buildingUnit * 5;
 
         @include min-mobile-xl {
-            text-align: center;
             display: block;
         }
 
+        .link--medium,
         .link--large {
             vertical-align: baseline;
         }
@@ -51,6 +58,18 @@
                     margin-bottom: 0;
                 }
             }
+        }
+    }
+
+    .container > &  {
+        @include min-mobile-xl {
+            text-align: center;
+        }
+    }
+
+    .general-content & {
+        > a {
+            margin-bottom: $buildingUnit *2;
         }
     }
 }

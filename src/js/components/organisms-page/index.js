@@ -13,6 +13,7 @@ export {default as HeroText} from 'organisms-page/hero-text';
 export {default as HeroCover} from 'organisms-page/hero-cover';
 export {default as SliderReveal} from 'organisms-page/slider-reveal';
 export {default as Subnavigation} from 'organisms-page/subnavigation';
+export {default as Tabbedcontent} from 'organisms-page/tabbed-content';
 export {default as Ubr} from 'organisms-page/ubr';
 export {default as PageDrawer} from 'organisms-page/page-drawer';
 export {default as PageFooter} from 'organisms-page/page-footer';

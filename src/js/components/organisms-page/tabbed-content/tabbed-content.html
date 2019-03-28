@@ -1,7 +1,15 @@
-<div>
-    <h2>Tabbed content organism</h2>
-    <tabs>
-        <tab><p>tab content</p></tab>
-        <tab><p>tab content 2</p></tab>
-    </tabs>
-</div>
+<article class="organism tabbed-content">
+    <section class="container">
+        <div class="tabbed-content__header flexgrid__cell--md-8">
+            <h2 class="tabbed-content__title">{{ title }}</h2>
+            <p class="subtitle tabbed-content__subtitle" v-if="subtitle">{{ subtitle }}</p>
+        </div>
+        <Tabs v-if="tabs && tabs.length" :tabs="tabs" />
+
+        <cta-block :ctas="ctas.ctas"
+                   styleContentButton="button"
+                   v-if="ctas"
+                   block="tabbed-content" />
+    </section>
+</article>
+

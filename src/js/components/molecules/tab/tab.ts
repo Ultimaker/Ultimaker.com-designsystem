@@ -1,20 +1,20 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { ITab } from './tab-models';
+
+import { Tab as TabInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/tab/Tab';
+
+interface TabImplementationInterface extends TabInterface {
+    id: any;
+    active: boolean;
+}
 
 @Component({
-    name: 'tab',
+    name: 'Tab',
     template: require('./tab.html'),
 })
 
-export default class Tab extends Vue implements ITab {
-    @Prop({ type: String, required: true })
-    public id!:string;
-    @Prop({ type: String, required: true })
-    public title!:string;
-
-    private visible:boolean = true;
-
-    setVisible(val):void {
-        this.visible = val;
-    }
+export default class Tab extends Vue implements TabImplementationInterface {
+    @Prop({ type: String, required: true }) public id!:TabImplementationInterface['id'];
+    @Prop({ type: String, required: true }) label!: TabImplementationInterface['label'];
+    @Prop({ type: Object, required: true }) content!: TabImplementationInterface['content'];
+    @Prop({ type: Boolean, required: true }) active!: TabImplementationInterface['active'];
 }
