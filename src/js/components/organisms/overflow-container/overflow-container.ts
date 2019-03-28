@@ -9,14 +9,12 @@ export default class OverflowContainer extends Vue {
     @Prop({ type: Array, required: true }) items!: object[];
 
     $nextTick;
-    $refs: any = {
-        subNav: HTMLElement,
-    };
+    $refs: any;
 
     activeSelector: string = '.active';
 
     mounted() {
-        const subnav: Element = this.$refs.subNav;
+        const subnav  = this.$refs.subNav;
         if (subnav) {
             const activeItem = subnav.querySelector(this.activeSelector);
 
