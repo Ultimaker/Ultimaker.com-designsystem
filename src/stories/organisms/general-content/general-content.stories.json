@@ -1,20 +1,27 @@
 {
-    "type": "general-content",
-    "title": "Lorem ipsum dolor sit amet",
-    "text": [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?"
-    ],
-    "reversed": false,
-    "contentLink": {
-        "text": "Learn More"
-    },
+    "type": "ContentGeneral",
+    "title": "Content general title",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus",
     "image": {
-        "mobileWidth": {
-            "url": "/generator/svg/400/400"
-        },
-        "tabletWidth": {
-            "url": "/generator/svg/400/400",
-            "retinaUrl": "/generator/svg/800/800"
-        }
-    }
+        "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+        "alt": "An example image",
+        "quality": 65,
+        "radius": 0,
+        "imageFormat": "png",
+        "resizeBehavior": "fill",
+        "focusArea": "center",
+        "backgroundColor": null,
+        "mimeType": "png"
+    },
+    "ctas": {
+        "type": "CtaBlock",
+        "ctas": [
+            {
+                "type": "ContentButton",
+                "label": "Call me back",
+                "url": "https://ultimaker.com"
+            }
+        ]
+    },
+    "reversed": true
 }

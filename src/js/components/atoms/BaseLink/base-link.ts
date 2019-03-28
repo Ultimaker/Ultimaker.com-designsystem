@@ -44,7 +44,7 @@ export default class BaseLink extends Vue {
                 classes[`link--${mod}`] = true;
             });
         }
-        if (this.icon !== '' && this.mod && this.mod.indexOf('small') === -1) {
+        if (this.icon !== '' && this.mod === 'string' && this.mod && this.mod.indexOf('small') === -1) {
             classes['link--icon'] = true;
         }
 

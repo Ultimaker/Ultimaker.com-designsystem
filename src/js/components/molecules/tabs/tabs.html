@@ -1,19 +1,23 @@
-<div class="tabs">
+<div class="tabs" v-if="tabs">
     <div class="tabs__nav">
-        <faux-scroll>
-            <ul class="tabs__list" role="tablist">
-                <li class="tabs__list_item" v-for="(tab, index) in tabs" role="presentation" ref="tab">
-                    <a class="tabs__list_link" :class="getLinkClassList(index)" @click.prevent="activeTab = index" :href="'#' + tab.id"
-                       role="tab" :aria-controls="tab.id" :aria-selected="activeTab === index">
-                        {{ tab.title }}
-                    </a>
-                </li>
-                <li class="tabs__indicator" aria-hidden="true" role="none" ref="indicator"></li>
-            </ul>
-        </faux-scroll>
+        <ul class="tabs__list" role="tablist">
+            <li class="tabs__list_item" v-for="(tab, index) in tabs" role="presentation" ref="tab">
+                <a class="tabs__list_link" :class="getLinkClassList(index)" @click.prevent="activeTab = index" :href="'#' + tab.id"
+                   role="tab" :aria-controls="tab.id" :aria-selected="activeTab === index">
+                    {{ tab.label }}
+                </a>
+            </li>
+            <li class="tabs__indicator" aria-hidden="true" role="none" ref="indicator"></li>
+        </ul>
     </div>
-
-    <div class="tabs__contents">
-        <slot></slot>
+    <div class="tabs__contents"  v-for="(tab, index) in tabs">
+        <template>
+            <component :is="tab.type"
+                       v-bind="tab"
+                       :id="tab.label+index"
+                       :active="activeTab === index"
+                       :key="index">
+            </component>
+        </template>
     </div>
 </div>

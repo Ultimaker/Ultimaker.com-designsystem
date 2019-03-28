@@ -4,50 +4,39 @@
         display: flex;
         width: 100%;
 
+        justify-content: center;
+
         user-select: none;
         will-change: transform;
 
-        @include min-tablet() {
-            justify-content: center;
-        }
     }
 
     &__list {
         @extend %reset-list;
 
-        @include min-tablet() {
-            flex-wrap: wrap;
+        display: flex;
+        padding: 0;
+        border-bottom: 2px solid $colorGrayLight;
+
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
         }
 
-        display: flex;
-        padding: ($buildingUnit * 2) 0 1px;
-        border-bottom: 2px solid $colorGrayLight;
+        &::-webkit-scrollbar {
+            height: 0px;
+            background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+        }
     }
 
     &__list_item {
         flex: 0 1 auto;
         text-align: center;
-
-        padding: 0 $buildingUnit 0;
-        margin: 0 0 $buildingUnit 0;
-
-        &:first-child {
-            padding-left: $buildingUnit * 2;
-        }
-        &:last-child {
-            padding-right: $buildingUnit * 2;
-        }
-
-        @include min-tablet() {
-            display: inline-block;
-
-            &:first-child {
-                padding-left: $buildingUnit * 1.5;
-            }
-            &:last-child {
-                padding-right: $buildingUnit * 1.5;
-            }
-        }
     }
 
     &__list_link {
@@ -56,8 +45,18 @@
         justify-content: center;
         position: relative;
         min-width: $buildingUnit * 5;
-        margin-bottom: $buildingUnit / 2;
+        margin-bottom: 0;
         color: $colorBlack;
+
+        padding-left: $buildingUnit;
+        padding-right: $buildingUnit;
+
+        @include font-line-ratio(prim-s);
+
+        @include min-desktop {
+            padding-top: ($buildingUnit - 1.5px);
+            padding-bottom: ($buildingUnit - 1.5px);
+        }
 
         &:hover,
         &--active {
@@ -68,10 +67,10 @@
             }
         }
 
-
-        &:focus:not(:hover),
-        &:focus:not(:active) {
-            @extend %focus-outline;
+        &:not(.hit-area):focus:not(:hover),
+        &:not(.hit-area):focus:not(:active) {
+            background-color: transparent;
+            color: $colorBlack;
         }
     }
 
