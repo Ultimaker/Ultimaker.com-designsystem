@@ -6,8 +6,8 @@ function greatestCommonDivisor(a, b) {
 }
 
 router.get('/svg/:width/:height/:background?/:foreground?', (req, res) => {
-    const width = parseInt(req.params.width, 10),
-        height = parseInt(req.params.height, 10),
+    const width = parseInt(req.query.w || req.params.width, 10),
+        height = parseInt(req.query.h || req.params.height, 10),
         background = req.params.background,
         foreground = req.params.foreground,
 
