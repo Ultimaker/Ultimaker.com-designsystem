@@ -19,7 +19,7 @@
             <div class="flexgrid__cell--xs-6">
                 <div class="hero__image--basic">
                     <template v-if="image">
-                        <c-image :url="image.url" :alt="image.alt" keep-in-view></c-image>
+                        <c-image v-bind="image" keep-in-view></c-image>
                     </template>
                 </div>
             </div>
