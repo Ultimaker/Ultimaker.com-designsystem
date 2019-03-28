@@ -11792,9 +11792,6 @@ var OverflowContainer = function (_Vue) {
 
         var _this = _possibleConstructorReturn(this, (OverflowContainer.__proto__ || Object.getPrototypeOf(OverflowContainer)).apply(this, arguments));
 
-        _this.$refs = {
-            subNav: HTMLElement
-        };
         _this.activeSelector = '.active';
         return _this;
     }
