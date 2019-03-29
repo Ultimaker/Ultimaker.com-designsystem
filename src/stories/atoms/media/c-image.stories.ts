@@ -13,6 +13,7 @@ storiesOf('Atoms|media', module)
             const props = {
                 url: data.url,
                 alt: data.alt,
+                mimeType: data.mimeType,
                 quality: data.quality,
                 radius: data.radius,
                 imageFormat: data.imageFormat,
