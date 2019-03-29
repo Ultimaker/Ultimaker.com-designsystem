@@ -89,7 +89,7 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 />
               </div>
             </div>
@@ -112,7 +112,7 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
       class="story__organism"
     >
       <article
-        class="hero hero--video"
+        class="hero hero--cover"
       >
         <div
           class="hero-cover__image--full"
@@ -120,7 +120,7 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
           <img
             alt="bla bla"
             class="img--contain img--loading"
-            src="/generator/svg/1000/500?w=20"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           />
         </div>
          
@@ -132,7 +132,7 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
           class="container"
         >
           <div
-            class="flexgrid__cell--xs-6 hero--video-reset"
+            class="flexgrid__cell--xs-6 hero--cover-reset"
           >
             <h1
               class="hero-cover__headline"
