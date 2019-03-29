@@ -1,4 +1,4 @@
-import { FocusArea as FocusArea, Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
+import { FocusArea, Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
 export { FocusArea } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
 
 export enum ImageFormat {
