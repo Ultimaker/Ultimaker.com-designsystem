@@ -523,7 +523,7 @@ exports[`Storyshots organisms|hero Hero video 1`] = `
       class="story__organism"
     >
       <article
-        class="hero hero--video"
+        class="hero hero--cover"
       >
         <picture>
           <source
@@ -562,7 +562,7 @@ exports[`Storyshots organisms|hero Hero video 1`] = `
           class="container"
         >
           <div
-            class="flexgrid__cell--xs-6 hero--video-reset"
+            class="flexgrid__cell--xs-6 hero--cover-reset"
           >
             <h1
               class="hero-cover__headline"
