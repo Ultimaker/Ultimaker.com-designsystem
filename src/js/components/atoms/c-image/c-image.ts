@@ -187,17 +187,15 @@ export default class CImage extends Vue implements ICImageProps {
         this.imageLoaded = true;
     }
 
-    mounted() {
+    async mounted() {
         if (!BrowserCapabilities.isBrowser) return;
 
-        window.requestAnimationFrame(async () => {
-            this.viewportUtil.addResizeHandler(this.resizeHandler);
-            this.viewportUtil.addScrollHandler(this.scrollHandler);
+        this.viewportUtil.addResizeHandler(this.resizeHandler);
+        this.viewportUtil.addScrollHandler(this.scrollHandler);
 
-            await this.calculateDimensions(true);
-            this.calculateInView();
-            this.ready = true;
-        });
+        await this.calculateDimensions(true);
+        this.calculateInView();
+        this.ready = true;
 
         this.$el.addEventListener('load', this.onThumbnailLoad);
     }
