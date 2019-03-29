@@ -22,6 +22,9 @@ export default class CImage extends Vue implements ICImageProps {
     @Prop({ type: Boolean, default: true })
     keepInView!: boolean;
 
+    @Prop({ type: Boolean, default: false })
+    crop!: boolean;
+
     @Prop({ type: String, default: ImageFormat.default })
     imageFormat!: ImageFormat;
 
@@ -38,13 +41,13 @@ export default class CImage extends Vue implements ICImageProps {
     quality!: number;
 
     @Prop({ type: String, default: null })
-    backgroundColor!: string | null ;
+    backgroundColor!: string | null;
 
     viewportUtil = new ViewportUtil();
     thumbnailLoaded: boolean = false;
     imageLoaded: boolean = false;
     inView: boolean = false;
-
+    ready:boolean = false;
     width: number = 0;
     height: number = 0;
 
@@ -55,6 +58,10 @@ export default class CImage extends Vue implements ICImageProps {
     }
 
     get src() {
+        if (!this.ready) {
+            return imageConstants.tinyGif;
+        }
+
         return this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl;
     }
 
@@ -63,13 +70,21 @@ export default class CImage extends Vue implements ICImageProps {
     }
 
     get thumbUrl() {
-        return `${ this.url }${ this.getParams({ width: imageConstants.initialWidth }) }`;
+        if (this.crop) {
+            const cropFactor = this.width > this.height ? this.width / imageConstants.initialSize : this.height / imageConstants.initialSize;
+            const height = Math.round(this.height / cropFactor);
+            const width = Math.round(this.width / cropFactor);
+
+            return `${ this.url }${ this.getParams({ width, height  }) }`;
+        }
+
+        return `${ this.url }${ this.getParams({ width: imageConstants.initialSize }) }`;
     }
 
-    getParams(options?: {width?: number}) {
+    getParams(options?: {width?: number, height?: number}) {
         const paramMap = new Map<string, any>([
             ['w', options && options.width ? options.width : this.width],
-            ['h', this.height],
+            ['h', options && options.height ? options.height : this.height],
             ['fit', this.resizeBehavior],
             ['f', this.focusArea],
             ['r', this.radius],
@@ -120,16 +135,23 @@ export default class CImage extends Vue implements ICImageProps {
         this.inView = this.viewportUtil.scrollY <= pictureBottom && windowBottom >= pictureTop;
     }
 
-    calculateDimensions() {
+    calculateDimensions(forceUpdate = false) {
         if (!BrowserCapabilities.isBrowser) return Promise.resolve();
-        if (!this.inView) return Promise.resolve();
+        if (!this.inView && !forceUpdate) return Promise.resolve();
 
         return new Promise((resolve) => {
             window.requestAnimationFrame(() => {
                 const rect = this.$el.getBoundingClientRect();
-                const desiredWidth = rect.width * (window.devicePixelRatio || 1);
+                const desiredWidth = Math.floor(rect.width * (window.devicePixelRatio || 1));
+                const desiredHeight = Math.floor(rect.height * (window.devicePixelRatio || 1));
 
-                this.width = desiredWidth > imageConstants.maxWidth ? imageConstants.maxWidth : Math.floor(desiredWidth);
+                if (this.crop) {
+                    this.width = desiredWidth > imageConstants.maxWidth ? imageConstants.maxWidth : desiredWidth;
+                    this.height = desiredHeight > imageConstants.maxHeight ? imageConstants.maxHeight : desiredHeight;
+                } else {
+                    this.width = desiredWidth > imageConstants.maxWidth ? imageConstants.maxWidth : desiredWidth;
+                }
+
                 resolve();
             });
         });
@@ -156,21 +178,25 @@ export default class CImage extends Vue implements ICImageProps {
         this.calculateInView();
     }
 
-    async onThumbnailLoad(e) {
+    onThumbnailLoad() {
+        this.$el.removeEventListener('load', this.onThumbnailLoad);
         this.thumbnailLoaded = true;
     }
 
-    async onImageLoad(e) {
+    onImageLoad() {
         this.imageLoaded = true;
     }
 
     mounted() {
         if (!BrowserCapabilities.isBrowser) return;
 
-        window.requestAnimationFrame(() => {
-            this.calculateInView();
+        window.requestAnimationFrame(async () => {
             this.viewportUtil.addResizeHandler(this.resizeHandler);
             this.viewportUtil.addScrollHandler(this.scrollHandler);
+
+            await this.calculateDimensions(true);
+            this.calculateInView();
+            this.ready = true;
         });
 
         this.$el.addEventListener('load', this.onThumbnailLoad);
