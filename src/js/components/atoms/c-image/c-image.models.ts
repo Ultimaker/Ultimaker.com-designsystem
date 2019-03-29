@@ -1,4 +1,5 @@
-import { Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
+import { FocusArea as FocusArea, Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
+export { FocusArea } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
 
 export enum ImageFormat {
     default = '',
@@ -16,20 +17,6 @@ export enum ResizeBehavior {
     scale = 'scale',
     crop = 'crop',
     thumb = 'thumb',
-}
-
-export enum FocusArea {
-    center = '', // default, no need to specify
-    top = 'top',
-    right = 'right',
-    bottom = 'bottom',
-    left = 'left',
-    topRight = 'top_right',
-    topLeft = 'top_left',
-    bottomRight = 'bottom_right',
-    bottomLeft = 'bottom_left',
-    faceLargest = 'face',
-    faces = 'faces',
 }
 
 export interface ICImageProps extends Image {
