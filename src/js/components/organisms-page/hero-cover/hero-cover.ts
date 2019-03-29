@@ -1,5 +1,6 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { HeroCover as IHeroCover } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/hero/HeroCover';
+import ViewportUtility from 'utils/viewport';
 
 @Component({
     name: 'hero-cover',

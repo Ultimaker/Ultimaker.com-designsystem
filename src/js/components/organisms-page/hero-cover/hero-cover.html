@@ -1,7 +1,7 @@
 <article class="hero hero--video">
     <div class="hero-cover__image--full">
         <!-- TODO: add responsive image here -->
-        <c-image v-bind="image.imageSmall"></c-image>
+        <c-image v-if="this.image" v-bind="this.image" resize-behavior="crop"></c-image>
     </div>
 
     <div class="hero-cover__image--overlay"></div>

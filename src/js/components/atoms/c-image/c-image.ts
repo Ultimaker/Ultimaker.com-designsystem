@@ -70,7 +70,7 @@ export default class CImage extends Vue implements ICImageProps {
     }
 
     get thumbUrl() {
-        if (this.crop) {
+        if (this.resizeBehavior !== ResizeBehavior.default) {
             const cropFactor = this.width > this.height ? this.width / imageConstants.initialSize : this.height / imageConstants.initialSize;
             const height = Math.round(this.height / cropFactor);
             const width = Math.round(this.width / cropFactor);
@@ -145,7 +145,7 @@ export default class CImage extends Vue implements ICImageProps {
                 const desiredWidth = Math.floor(rect.width * (window.devicePixelRatio || 1));
                 const desiredHeight = Math.floor(rect.height * (window.devicePixelRatio || 1));
 
-                if (this.crop) {
+                if (this.resizeBehavior !== ResizeBehavior.default) {
                     this.width = desiredWidth > imageConstants.maxWidth ? imageConstants.maxWidth : desiredWidth;
                     this.height = desiredHeight > imageConstants.maxHeight ? imageConstants.maxHeight : desiredHeight;
                 } else {
