@@ -9,7 +9,12 @@
     "comments": false,
     "env": {
         "test": {
-            "presets": ["env"],
+            "presets": [
+                ["env", {
+                    "debug": false,
+                    "useBuiltIns": true
+                }]
+            ],
             "plugins": [
                 [
                     "istanbul",
