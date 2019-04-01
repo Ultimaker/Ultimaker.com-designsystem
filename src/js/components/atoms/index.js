@@ -1,3 +1,4 @@
+export {default as AnchorOverlay} from 'atoms/anchor-overlay';
 export {default as AnimatedArrow} from 'atoms/animated-arrow';
 export {default as BaseLink} from 'atoms/BaseLink';
 export {default as ContentLink} from 'atoms/content-link';
