@@ -32,6 +32,10 @@ class BrowserCapabilities {
         return !this.isBrowser || 'HTMLPictureElement' in window;
     }
 
+    static get supportsIntersectionObserver() {
+        return !this.isBrowser || 'IntersectionObserver' in window;
+    }
+
     static get supportsObjectFit() {
         if (!this.isBrowser) { return true; }
 
