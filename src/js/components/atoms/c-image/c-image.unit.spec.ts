@@ -59,7 +59,7 @@ describe('components', () => {
                         width: desiredWidth,
                         height: desiredHeight,
                     });
-                    vm.calculateInView();
+                    vm.inView = true;
                     await vm.calculateDimensions();
                     await vm.$nextTick();
                     expect(vm.ready).toBeTruthy();

@@ -5610,7 +5610,7 @@ var CImage = function (_Vue) {
             });
         }
     }, {
-        key: "onInView",
+        key: "inViewWatcher",
         value: function () {
             var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(val) {
                 var imageToLoad;
@@ -5633,7 +5633,7 @@ var CImage = function (_Vue) {
                                 imageToLoad = document.createElement('img');
 
                                 imageToLoad.src = this.imageUrl;
-                                imageToLoad.addEventListener('load', this.onImageLoad);
+                                imageToLoad.addEventListener('load', this.imageLoadHandler);
 
                             case 7:
                             case "end":
@@ -5661,13 +5661,13 @@ var CImage = function (_Vue) {
             this.calculateInView();
         }
     }, {
-        key: "onThumbnailLoad",
+        key: "thumbnailLoadHandler",
         value: function onThumbnailLoad() {
-            this.$el.removeEventListener('load', this.onThumbnailLoad);
+            this.$el.removeEventListener('load', this.thumbnailLoadHandler);
             this.thumbnailLoaded = true;
         }
     }, {
-        key: "onImageLoad",
+        key: "imageLoadHandler",
         value: function onImageLoad() {
             this.imageLoaded = true;
         }
@@ -5695,7 +5695,7 @@ var CImage = function (_Vue) {
                             case 6:
                                 this.calculateInView();
                                 this.ready = true;
-                                this.$el.addEventListener('load', this.onThumbnailLoad);
+                                this.$el.addEventListener('load', this.thumbnailLoadHandler);
 
                             case 9:
                             case "end":
@@ -5763,7 +5763,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: _cImage.Foc
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Number)], CImage.prototype, "radius", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 65 }), __metadata("design:type", Number)], CImage.prototype, "quality", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: null }), __metadata("design:type", Object)], CImage.prototype, "backgroundColor", void 0);
-__decorate([(0, _vuePropertyDecorator.Watch)('inView'), __metadata("design:type", Function), __metadata("design:paramtypes", [Boolean]), __metadata("design:returntype", Promise)], CImage.prototype, "onInView", null);
+__decorate([(0, _vuePropertyDecorator.Watch)('inView'), __metadata("design:type", Function), __metadata("design:paramtypes", [Boolean]), __metadata("design:returntype", Promise)], CImage.prototype, "inViewWatcher", null);
 CImage = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'c-image',
     template: __webpack_require__(145)
@@ -13972,7 +13972,7 @@ var TweenLite = __webpack_require__(0);
  * @license Copyright (c) 2008-2018, GreenSock. All rights reserved.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
- * 
+ *
  * @author: Jack Doyle, jack@greensock.com
  */
 

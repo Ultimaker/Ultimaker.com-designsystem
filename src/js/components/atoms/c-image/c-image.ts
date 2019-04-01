@@ -51,6 +51,22 @@ export default class CImage extends Vue implements ICImageProps {
     width: number = 0;
     height: number = 0;
 
+    async mounted() {
+        if (!BrowserCapabilities.isBrowser) return;
+
+        this.viewportUtil.addResizeHandler(this.resizeHandler);
+
+        await this.calculateDimensions(true);
+        this.ready = true;
+
+        this.$el.addEventListener('load', this.thumbnailLoadHandler);
+    }
+
+    beforeDestroy() {
+        this.viewportUtil.removeResizeHandler(this.resizeHandler);
+        this.viewportUtil.removeScrollHandler(this.resizeHandler);
+    }
+
     get classList() {
         return {
             'img--loading': !this.inView || !this.imageLoaded,
@@ -125,16 +141,6 @@ export default class CImage extends Vue implements ICImageProps {
         );
     }
 
-    calculateInView() {
-        if (this.inView && this.keepInView) { return; }
-        const windowBottom = this.viewportUtil.scrollY + this.viewportUtil.screenHeight;
-        const pictureBounds = this.$el.getBoundingClientRect();
-        const pictureTop = this.viewportUtil.scrollY + pictureBounds.top;
-        const pictureBottom = pictureTop + pictureBounds.height;
-
-        this.inView = this.viewportUtil.scrollY <= pictureBottom && windowBottom >= pictureTop;
-    }
-
     calculateDimensions(forceUpdate = false) {
         if (!BrowserCapabilities.isBrowser) return Promise.resolve();
         if (!this.inView && !forceUpdate) return Promise.resolve();
@@ -158,50 +164,31 @@ export default class CImage extends Vue implements ICImageProps {
     }
 
     @Watch('inView')
-    async onInView(val:boolean) {
-        if (! val) {
-            return;
-        }
+    async inViewWatcher(val:boolean) {
+        if (! val || this.imageLoaded) { return; }
 
         await this.calculateDimensions();
+
         const imageToLoad = document.createElement('img');
         imageToLoad.src = this.imageUrl;
-        imageToLoad.addEventListener('load', this.onImageLoad);
+        imageToLoad.addEventListener('load', this.imageLoadHandler);
+    }
+
+    inViewHandler(inView) {
+        if (this.inView && this.keepInView) { return; }
+        this.inView = inView;
     }
 
     resizeHandler() {
-        this.calculateInView();
         this.calculateDimensions();
     }
 
-    scrollHandler() {
-        this.calculateInView();
-    }
-
-    onThumbnailLoad() {
-        this.$el.removeEventListener('load', this.onThumbnailLoad);
+    thumbnailLoadHandler() {
+        this.$el.removeEventListener('load', this.thumbnailLoadHandler);
         this.thumbnailLoaded = true;
     }
 
-    onImageLoad() {
+    imageLoadHandler() {
         this.imageLoaded = true;
-    }
-
-    async mounted() {
-        if (!BrowserCapabilities.isBrowser) return;
-
-        this.viewportUtil.addResizeHandler(this.resizeHandler);
-        this.viewportUtil.addScrollHandler(this.scrollHandler);
-
-        await this.calculateDimensions(true);
-        this.calculateInView();
-        this.ready = true;
-
-        this.$el.addEventListener('load', this.onThumbnailLoad);
-    }
-
-    beforeDestroy() {
-        this.viewportUtil.removeResizeHandler(this.resizeHandler);
-        this.viewportUtil.removeScrollHandler(this.resizeHandler);
     }
 }
