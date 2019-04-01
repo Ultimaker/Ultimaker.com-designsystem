@@ -1,0 +1,22 @@
+@import "~src/scss/settings/_all";
+
+.li-inline-label {
+    display: inline-block;
+    list-style: none;
+
+    margin-right: $buildingUnit / 4;
+    margin-bottom: $buildingUnit / 2;
+    margin-left: $buildingUnit / 4;
+
+    padding-left: $buildingUnit / 2;
+    padding-right: $buildingUnit / 2;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+
+    color: $colorGrayDark;
+    background-color: $colorGrayExtraLight;
+
+    border-radius: 2px;
+}
