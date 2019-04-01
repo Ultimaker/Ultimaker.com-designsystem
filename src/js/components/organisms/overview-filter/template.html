@@ -1,8 +1,4 @@
 <section class="overview-filter">
     <h2 class="overview-filter__title" v-if="title">{{ title }}</h2>
-    <section class="overview-filter__items">
-        <template v-for="(item, index) in list.items">
-            <component :is="list.type" v-bind="item" :key="index" />
-        </template>
-    </section>
+    <list-unordered class="overview-filter__list" :list="list"/>
 </section>

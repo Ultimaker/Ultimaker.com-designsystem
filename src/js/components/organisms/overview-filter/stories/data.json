@@ -3,9 +3,10 @@
         "type": "OverviewFilter",
         "title": "Explore the benefits of each material",
         "list": {
-            "type": "CardProduct",
+            "type": "LiContentBlock",
             "items": [
                 {
+                    "type": "CardProduct",
                     "clickEvent": {
                         "data": {
                             "test": true
@@ -29,10 +30,10 @@
                         "type": "LiInlineLabel"
                     },
                     "title": "Ultimaker Nylon",
-                    "type": "CardProduct",
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 },
                 {
+                    "type": "CardProduct",
                     "clickEvent": {
                         "data": {
                             "test": true
@@ -50,10 +51,10 @@
                         "type": "LiInlineLabel"
                     },
                     "title": "Ultimaker Nylon",
-                    "type": "CardProduct",
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 },
                 {
+                    "type": "CardProduct",
                     "clickEvent": {
                         "data": {
                             "test": true
@@ -72,10 +73,10 @@
                         "type": "LiInlineLabels"
                     },
                     "title": "Ultimaker Nylon",
-                    "type": "CardProduct",
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 },
                 {
+                    "type": "CardProduct",
                     "clickEvent": {
                         "data": {
                             "test": true
@@ -88,7 +89,6 @@
                         "type": "LiInlineLabel"
                     },
                     "title": "Ultimaker Nylon",
-                    "type": "CardProduct",
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 }
             ]

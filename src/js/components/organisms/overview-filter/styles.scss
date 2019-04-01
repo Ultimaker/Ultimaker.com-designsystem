@@ -3,12 +3,21 @@
 .overview-filter {
     margin-top: $buildingUnit * 4;
 
-    &__items {
-        display: flex;
+    &__list {
+        justify-content: center;
     }
 
     &__title {
         text-align: center;
         margin-bottom: $buildingUnit * 4;
+    }
+
+    .li-content-block {
+        margin-right: $buildingUnit / 4;
+        margin-bottom: $buildingUnit;
+        margin-left: $buildingUnit / 4;
+
+        padding-left: $buildingUnit / 2;
+        padding-right: $buildingUnit / 2;
     }
 }
