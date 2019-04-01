@@ -7,13 +7,13 @@ import Events from 'constants/events';
 })
 
 export default class BaseLink extends Vue {
-    @Prop({ type: String, required: false }) type?: string;
-    @Prop({ type: String, required: false }) block?: string;
-    @Prop({ type: String, required: false }) mod?: string;
-    @Prop({ type: String, required: false }) icon?: string;
-    @Prop({ type: String, required: false }) url?: string;
-    @Prop({ type: String, required: false }) label?: string;
-    @Prop({ type: Object, required: false }) clickEvent?: any;
+    @Prop({ type: String }) type?: string;
+    @Prop({ type: String }) block?: string;
+    @Prop({ type: String }) mod?: string;
+    @Prop({ type: String }) icon?: string;
+    @Prop({ type: String }) url?: string;
+    @Prop({ type: String }) label?: string;
+    @Prop({ type: Object }) clickEvent?: any;
 
     absoluteUrlRegex: RegExp = /^(http(s)?):\/\//;
     domainRegex: RegExp = /(http(s)?):\/\/(www.)?ultimaker\.com/;
