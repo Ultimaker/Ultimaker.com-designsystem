@@ -146,9 +146,9 @@ podTemplate(
       slackSend color: 'good',
         channel: '#um_com_deployments',
         message: """
-          Deployment updated: https://storybook.k8s-dev.ultimaker.works (<${env.BUILD_URL}|Job>)
+          Deployment updated: <https://storybook.k8s-dev.ultimaker.works|Storybook> (<${env.BUILD_URL}|Job>)
           Components: storybook--nginx, storybook--node
-          Version: ${commit}
+          Version: <https://github.com/Ultimaker/Ultimaker.com-designsystem/commit/${commit}|${commit}>
           """.stripIndent()
 
     } catch (e) {
