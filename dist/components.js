@@ -1,4 +1,4 @@
-define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","vuex"], function(__WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__3__, __WEBPACK_EXTERNAL_MODULE__10__, __WEBPACK_EXTERNAL_MODULE__14__, __WEBPACK_EXTERNAL_MODULE__15__, __WEBPACK_EXTERNAL_MODULE__16__, __WEBPACK_EXTERNAL_MODULE__17__, __WEBPACK_EXTERNAL_MODULE__18__, __WEBPACK_EXTERNAL_MODULE__19__, __WEBPACK_EXTERNAL_MODULE__20__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__110__, __WEBPACK_EXTERNAL_MODULE__286__) { return /******/ (function(modules) { // webpackBootstrap
+define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","vuex"], function(__WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__10__, __WEBPACK_EXTERNAL_MODULE__14__, __WEBPACK_EXTERNAL_MODULE__15__, __WEBPACK_EXTERNAL_MODULE__16__, __WEBPACK_EXTERNAL_MODULE__17__, __WEBPACK_EXTERNAL_MODULE__18__, __WEBPACK_EXTERNAL_MODULE__19__, __WEBPACK_EXTERNAL_MODULE__20__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__110__, __WEBPACK_EXTERNAL_MODULE__286__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -2110,7 +2110,7 @@ var _debounce = __webpack_require__(10);
 
 var _debounce2 = _interopRequireDefault(_debounce);
 
-var _browserCapabilities = __webpack_require__(4);
+var _browserCapabilities = __webpack_require__(3);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
@@ -2373,12 +2373,6 @@ exports.default = ViewportUtility;
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__3__;
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2433,6 +2427,11 @@ var BrowserCapabilities = function () {
             return !this.isBrowser || 'HTMLPictureElement' in window;
         }
     }, {
+        key: 'supportsIntersectionObserver',
+        get: function get() {
+            return !this.isBrowser || 'IntersectionObserver' in window;
+        }
+    }, {
         key: 'supportsObjectFit',
         get: function get() {
             if (!this.isBrowser) {
@@ -2454,6 +2453,12 @@ var BrowserCapabilities = function () {
 }();
 
 exports.default = BrowserCapabilities;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__4__;
 
 /***/ }),
 /* 5 */
@@ -2730,7 +2735,7 @@ Object.defineProperty(exports, 'Arithmetic', {
     }
 });
 
-var _browserCapabilities = __webpack_require__(4);
+var _browserCapabilities = __webpack_require__(3);
 
 Object.defineProperty(exports, 'BrowserCapabilities', {
     enumerable: true,
@@ -2972,7 +2977,7 @@ var _directives = __webpack_require__(323);
 
 var Directives = _interopRequireWildcard(_directives);
 
-__webpack_require__(325);
+__webpack_require__(326);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -4842,13 +4847,13 @@ var BaseLink = function (_Vue) {
 
     return BaseLink;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], BaseLink.prototype, "type", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], BaseLink.prototype, "block", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], BaseLink.prototype, "mod", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], BaseLink.prototype, "icon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], BaseLink.prototype, "url", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], BaseLink.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], BaseLink.prototype, "clickEvent", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "type", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "block", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "mod", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "icon", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "url", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "label", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], BaseLink.prototype, "clickEvent", void 0);
 BaseLink = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'base-link',
     template: __webpack_require__(120)
@@ -5493,7 +5498,7 @@ var _vuePropertyDecorator = __webpack_require__(1);
 
 var _cImage = __webpack_require__(142);
 
-var _browserCapabilities = __webpack_require__(4);
+var _browserCapabilities = __webpack_require__(3);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
@@ -5544,6 +5549,50 @@ var CImage = function (_Vue) {
     }
 
     _createClass(CImage, [{
+        key: "mounted",
+        value: function () {
+            var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
+                return regeneratorRuntime.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                if (_browserCapabilities2.default.isBrowser) {
+                                    _context.next = 2;
+                                    break;
+                                }
+
+                                return _context.abrupt("return");
+
+                            case 2:
+                                this.viewportUtil.addResizeHandler(this.resizeHandler);
+                                _context.next = 5;
+                                return this.calculateDimensions(true);
+
+                            case 5:
+                                this.ready = true;
+                                this.$el.addEventListener('load', this.thumbnailLoadHandler);
+
+                            case 7:
+                            case "end":
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function mounted() {
+                return _ref.apply(this, arguments);
+            }
+
+            return mounted;
+        }()
+    }, {
+        key: "beforeDestroy",
+        value: function beforeDestroy() {
+            this.viewportUtil.removeResizeHandler(this.resizeHandler);
+            this.viewportUtil.removeScrollHandler(this.resizeHandler);
+        }
+    }, {
         key: "getParams",
         value: function getParams(options) {
             var paramMap = new Map([['w', options && options.width ? options.width : this.width], ['h', options && options.height ? options.height : this.height], ['fit', this.resizeBehavior], ['f', this.focusArea], ['r', this.radius]]);
@@ -5574,18 +5623,6 @@ var CImage = function (_Vue) {
             }, '');
         }
     }, {
-        key: "calculateInView",
-        value: function calculateInView() {
-            if (this.inView && this.keepInView) {
-                return;
-            }
-            var windowBottom = this.viewportUtil.scrollY + this.viewportUtil.screenHeight;
-            var pictureBounds = this.$el.getBoundingClientRect();
-            var pictureTop = this.viewportUtil.scrollY + pictureBounds.top;
-            var pictureBottom = pictureTop + pictureBounds.height;
-            this.inView = this.viewportUtil.scrollY <= pictureBottom && windowBottom >= pictureTop;
-        }
-    }, {
         key: "calculateDimensions",
         value: function calculateDimensions() {
             var _this2 = this;
@@ -5612,21 +5649,21 @@ var CImage = function (_Vue) {
     }, {
         key: "inViewWatcher",
         value: function () {
-            var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee(val) {
+            var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(val) {
                 var imageToLoad;
-                return regeneratorRuntime.wrap(function _callee$(_context) {
+                return regeneratorRuntime.wrap(function _callee2$(_context2) {
                     while (1) {
-                        switch (_context.prev = _context.next) {
+                        switch (_context2.prev = _context2.next) {
                             case 0:
-                                if (val) {
-                                    _context.next = 2;
+                                if (!(!val || this.imageLoaded)) {
+                                    _context2.next = 2;
                                     break;
                                 }
 
-                                return _context.abrupt("return");
+                                return _context2.abrupt("return");
 
                             case 2:
-                                _context.next = 4;
+                                _context2.next = 4;
                                 return this.calculateDimensions();
 
                             case 4:
@@ -5637,85 +5674,41 @@ var CImage = function (_Vue) {
 
                             case 7:
                             case "end":
-                                return _context.stop();
-                        }
-                    }
-                }, _callee, this);
-            }));
-
-            function onInView(_x2) {
-                return _ref.apply(this, arguments);
-            }
-
-            return onInView;
-        }()
-    }, {
-        key: "resizeHandler",
-        value: function resizeHandler() {
-            this.calculateInView();
-            this.calculateDimensions();
-        }
-    }, {
-        key: "scrollHandler",
-        value: function scrollHandler() {
-            this.calculateInView();
-        }
-    }, {
-        key: "thumbnailLoadHandler",
-        value: function onThumbnailLoad() {
-            this.$el.removeEventListener('load', this.thumbnailLoadHandler);
-            this.thumbnailLoaded = true;
-        }
-    }, {
-        key: "imageLoadHandler",
-        value: function onImageLoad() {
-            this.imageLoaded = true;
-        }
-    }, {
-        key: "mounted",
-        value: function () {
-            var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2() {
-                return regeneratorRuntime.wrap(function _callee2$(_context2) {
-                    while (1) {
-                        switch (_context2.prev = _context2.next) {
-                            case 0:
-                                if (_browserCapabilities2.default.isBrowser) {
-                                    _context2.next = 2;
-                                    break;
-                                }
-
-                                return _context2.abrupt("return");
-
-                            case 2:
-                                this.viewportUtil.addResizeHandler(this.resizeHandler);
-                                this.viewportUtil.addScrollHandler(this.scrollHandler);
-                                _context2.next = 6;
-                                return this.calculateDimensions(true);
-
-                            case 6:
-                                this.calculateInView();
-                                this.ready = true;
-                                this.$el.addEventListener('load', this.thumbnailLoadHandler);
-
-                            case 9:
-                            case "end":
                                 return _context2.stop();
                         }
                     }
                 }, _callee2, this);
             }));
 
-            function mounted() {
+            function inViewWatcher(_x2) {
                 return _ref2.apply(this, arguments);
             }
 
-            return mounted;
+            return inViewWatcher;
         }()
     }, {
-        key: "beforeDestroy",
-        value: function beforeDestroy() {
-            this.viewportUtil.removeResizeHandler(this.resizeHandler);
-            this.viewportUtil.removeScrollHandler(this.resizeHandler);
+        key: "inViewHandler",
+        value: function inViewHandler(inView) {
+            if (this.inView && this.keepInView) {
+                return;
+            }
+            this.inView = inView;
+        }
+    }, {
+        key: "resizeHandler",
+        value: function resizeHandler() {
+            this.calculateDimensions();
+        }
+    }, {
+        key: "thumbnailLoadHandler",
+        value: function thumbnailLoadHandler() {
+            this.$el.removeEventListener('load', this.thumbnailLoadHandler);
+            this.thumbnailLoaded = true;
+        }
+    }, {
+        key: "imageLoadHandler",
+        value: function imageLoadHandler() {
+            this.imageLoaded = true;
         }
     }, {
         key: "classList",
@@ -5814,6 +5807,9 @@ var ResizeBehavior = exports.ResizeBehavior = undefined;
 
 "use strict";
 
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 Object.defineProperty(exports, "__esModule", { value: true });
 var FocusArea;
 (function (FocusArea) {
@@ -5829,10 +5825,12 @@ var FocusArea;
     FocusArea["faceLargest"] = "face";
     FocusArea["faces"] = "faces";
 })(FocusArea = exports.FocusArea || (exports.FocusArea = {}));
-class Image {
-}
+
+var Image = function Image() {
+    _classCallCheck(this, Image);
+};
+
 exports.Image = Image;
-//# sourceMappingURL=Image.js.map
 
 /***/ }),
 /* 144 */
@@ -5855,7 +5853,7 @@ var imageConstants = exports.imageConstants = {
 /* 145 */
 /***/ (function(module, exports) {
 
-module.exports = "<img :alt=\"alt\" :src=\"src\" class=\"img--contain\" :class=\"classList\" />\n";
+module.exports = "<img :alt=\"alt\" :src=\"src\" class=\"img--contain\" :class=\"classList\" v-in-view=\"inViewHandler\" />\n";
 
 /***/ }),
 /* 146 */
@@ -6219,7 +6217,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _gsap = __webpack_require__(3);
+var _gsap = __webpack_require__(4);
 
 var _viewport = __webpack_require__(2);
 
@@ -7868,9 +7866,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
-var _gsap = __webpack_require__(3);
+var _gsap = __webpack_require__(4);
 
-var _Draggable = __webpack_require__(326);
+var _Draggable = __webpack_require__(327);
 
 var _Draggable2 = _interopRequireDefault(_Draggable);
 
@@ -7884,7 +7882,7 @@ var _viewport = __webpack_require__(2);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _browserCapabilities = __webpack_require__(4);
+var _browserCapabilities = __webpack_require__(3);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
@@ -9597,7 +9595,7 @@ var _viewport = __webpack_require__(2);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _browserCapabilities = __webpack_require__(4);
+var _browserCapabilities = __webpack_require__(3);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
@@ -9715,7 +9713,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
-var _browserCapabilities = __webpack_require__(4);
+var _browserCapabilities = __webpack_require__(3);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
@@ -10105,7 +10103,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
-var _gsap = __webpack_require__(3);
+var _gsap = __webpack_require__(4);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -10239,7 +10237,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _gsap = __webpack_require__(3);
+var _gsap = __webpack_require__(4);
 
 var _viewport = __webpack_require__(2);
 
@@ -10809,7 +10807,7 @@ var _viewport = __webpack_require__(2);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _gsap = __webpack_require__(3);
+var _gsap = __webpack_require__(4);
 
 var _defaults = __webpack_require__(5);
 
@@ -11114,7 +11112,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
-var _gsap = __webpack_require__(3);
+var _gsap = __webpack_require__(4);
 
 var _defaults = __webpack_require__(5);
 
@@ -11124,7 +11122,7 @@ var _viewport = __webpack_require__(2);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _browserCapabilities = __webpack_require__(4);
+var _browserCapabilities = __webpack_require__(3);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
@@ -12677,7 +12675,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _vuex = __webpack_require__(286);
 
-var _gsap = __webpack_require__(3);
+var _gsap = __webpack_require__(4);
 
 var defaultAnimationDuration = 1;
 
@@ -13217,7 +13215,7 @@ var _viewport = __webpack_require__(2);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _gsap = __webpack_require__(3);
+var _gsap = __webpack_require__(4);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13837,6 +13835,15 @@ Object.defineProperty(exports, 'SizeEmitter', {
   }
 });
 
+var _inView = __webpack_require__(325);
+
+Object.defineProperty(exports, 'InView', {
+  enumerable: true,
+  get: function get() {
+    return _inView.InView;
+  }
+});
+
 /***/ }),
 /* 324 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -13951,10 +13958,107 @@ var SizeEmitter = exports.SizeEmitter = function () {
 /* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.InView = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _viewport = __webpack_require__(2);
+
+var _viewport2 = _interopRequireDefault(_viewport);
+
+var _browserCapabilities = __webpack_require__(3);
+
+var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var InView = exports.InView = function () {
+    function InView() {
+        _classCallCheck(this, InView);
+
+        this.name = 'InView';
+    }
+
+    _createClass(InView, [{
+        key: 'bind',
+        value: function bind(el, binding, vnode) {
+            if (!vnode || !vnode.context) {
+                return;
+            }
+            if (!_browserCapabilities2.default.supportsIntersectionObserver) {
+                var viewportUtil = new _viewport2.default();
+                var intersectionPolyHandler = function intersectionPolyHandler() {
+                    return InView.polyHandler(el, binding, viewportUtil);
+                };
+                viewportUtil.addResizeHandler(intersectionPolyHandler);
+                viewportUtil.addScrollHandler(intersectionPolyHandler);
+                vnode.context.__intersectionPolyHandler = intersectionPolyHandler;
+                return;
+            }
+            var observer = new IntersectionObserver(function (entries) {
+                return InView.intersectionHandler(el, binding, entries);
+            });
+            observer.observe(el);
+            vnode.context.__intersectionObserver = observer;
+        }
+    }], [{
+        key: 'unbind',
+        value: function unbind(el, binding, vnode) {
+            if (!vnode || !vnode.context) {
+                return;
+            }
+            if (!_browserCapabilities2.default.supportsIntersectionObserver) {
+                var viewportUtil = new _viewport2.default();
+                viewportUtil.removeResizeHandler(vnode.context.__intersectionPolyHandler);
+                viewportUtil.removeScrollHandler(vnode.context.__intersectionPolyHandler);
+                return;
+            }
+            vnode.context.__intersectionObserver.unobserve(el);
+        }
+    }, {
+        key: 'polyHandler',
+        value: function polyHandler(el, binding, viewportUtil) {
+            var windowBottom = viewportUtil.scrollY + viewportUtil.screenHeight;
+            var pictureBounds = el.getBoundingClientRect();
+            var pictureTop = viewportUtil.scrollY + pictureBounds.top;
+            var pictureBottom = pictureTop + pictureBounds.height;
+            var inView = viewportUtil.scrollY <= pictureBottom && windowBottom >= pictureTop;
+            InView.setInView(binding, inView);
+        }
+    }, {
+        key: 'intersectionHandler',
+        value: function intersectionHandler(el, binding, entries) {
+            var entry = entries.slice(-1)[0];
+            InView.setInView(binding, entry.isIntersecting);
+        }
+    }, {
+        key: 'setInView',
+        value: function setInView(binding, inView) {
+            if (typeof binding.value === 'function') {
+                binding.value(inView);
+            }
+        }
+    }]);
+
+    return InView;
+}();
 
 /***/ }),
 /* 326 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 327 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13972,7 +14076,7 @@ var TweenLite = __webpack_require__(0);
  * @license Copyright (c) 2008-2018, GreenSock. All rights reserved.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
- *
+ * 
  * @author: Jack Doyle, jack@greensock.com
  */
 
