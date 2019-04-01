@@ -1,7 +1,14 @@
 @import "~src/scss/settings/_all";
 
 .overview-filter {
+    margin-top: $buildingUnit * 4;
+
     &__items {
         display: flex;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: $buildingUnit * 4;
     }
 }
