@@ -18,9 +18,11 @@
     }
 
     &__image {
-        display: block;
-        width: 296px;
-        height: 148px;
+        &.img--contain {
+            display: block;
+            width: 296px;
+            height: 148px;
+        }
     }
 
     &__list {
