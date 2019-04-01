@@ -7,9 +7,13 @@
         "mimeType": "image/svg+xml",
         "focusArea": "center"
     },
-    "ctas": [{
-        "type": "YoutubeLink",
-        "label": "Watch video",
-        "youtubeId": "hwhvByj8YG8"
-    }]
+    "ctas": {
+        "ctas": [
+            {
+                "type": "YoutubeLink",
+                "label": "Watch video",
+                "youtubeId": "hwhvByj8YG8"
+            }
+        ]
+    }
 }

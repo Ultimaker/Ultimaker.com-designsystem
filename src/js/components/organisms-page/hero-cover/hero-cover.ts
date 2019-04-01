@@ -11,7 +11,7 @@ export default class HeroCover extends Vue implements IHeroCover {
     @Prop({ type: String, required: true }) title!:  IHeroCover['title'];
     @Prop({ type: String, required: true }) description!:  IHeroCover['description'];
     @Prop({ type: String }) subtitle?:  IHeroCover['subtitle'] | undefined;
-    @Prop({ type: Array }) ctas?: IHeroCover['ctas'] | undefined;
+    @Prop({ type: Object }) ctas?: IHeroCover['ctas'] | undefined;
     @Prop({ type: Object }) image?: IHeroCover['image'] | undefined;
 
     showVideo: boolean = false;
