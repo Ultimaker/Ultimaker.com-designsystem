@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules|navigation Main navigation 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="stories__molecules"
+    >
+      <nav
+        aria-label="site"
+        class="main-nav main-nav--small"
+      >
+        <ul
+          class="main-nav__list"
+          role="menu"
+        >
+          <li
+            class="main-nav__item"
+            role="menuitem"
+          >
+            <div>
+              <a
+                aria-controls="nav-0"
+                aria-haspopup="true"
+                class="main-nav__link"
+                href="#/#nav-one"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Nav section one
+    
+                </span>
+              </a>
+            </div>
+             
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
+             
+            <!---->
+          </li>
+          <li
+            class="main-nav__item"
+            role="menuitem"
+          >
+            <div>
+              <a
+                aria-controls="nav-1"
+                aria-haspopup="true"
+                class="main-nav__link"
+                href="#/#nav-two"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Nav section two
+    
+                </span>
+              </a>
+            </div>
+             
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
+             
+            <!---->
+          </li>
+          <li
+            class="main-nav__item"
+            role="menuitem"
+          >
+            <div>
+              <a
+                aria-controls="nav-2"
+                aria-haspopup="true"
+                class="main-nav__link"
+                href="#/#nav-three"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Nav section three
+    
+                </span>
+              </a>
+            </div>
+             
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
+             
+            <!---->
+          </li>
+          <li
+            class="main-nav__item"
+            role="menuitem"
+          >
+            <div>
+              <a
+                aria-controls="nav-3"
+                aria-haspopup="true"
+                class="main-nav__link"
+                href="#/#nav-four"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Nav section four
+    
+                </span>
+              </a>
+            </div>
+             
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
+             
+            <!---->
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </section>
+</section>
+`;
