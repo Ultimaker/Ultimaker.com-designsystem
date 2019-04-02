@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules|layout/cards Business Card 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__molecule"
+    >
+      <a
+        businesscard="[object Object]"
+        class="business-card"
+        href="https://ultimaker.com"
+        rel="noopener"
+        tabindex="0"
+        target="_blank"
+      >
+        <div
+          class="business-card__header"
+        >
+          <div
+            class="business-card__image-wrapper"
+          >
+            <picture>
+              <!---->
+               
+              <source
+                media="(min-width: 1025px)"
+                srcset=""
+              />
+               
+              <!---->
+               
+              <!---->
+               
+              <!---->
+               
+              <source
+                media="(max-width: 480px)"
+                srcset="/generator/svg/120/120"
+              />
+               
+              <img
+                alt=""
+                class="img--responsive img--lazy"
+                src=""
+              />
+            </picture>
+          </div>
+           
+          <div
+            class="business-card__description"
+          >
+            <h4
+              class="business-card__title"
+            >
+              
+                Ultimaker
+            
+            </h4>
+             
+            <p
+              class="business-card__property"
+            >
+              
+                5 Showrooms
+            
+            </p>
+          </div>
+        </div>
+         
+        <div
+          class="business-card__footer"
+        >
+          <span
+            class="link faux-content-link business-card__link"
+          >
+            <span
+              class="link__underline"
+            >
+              
+                Visit website
+            
+            </span>
+          </span>
+        </div>
+      </a>
+    </section>
+  </section>
+</section>
+`;

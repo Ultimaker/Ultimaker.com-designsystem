@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|hero Hero products application 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <article
+        class="hero hero--products-application"
+      >
+        <div
+          class="hero__container--top"
+        >
+          <picture>
+            <source
+              media="(min-width: 1201px)"
+              srcset=""
+            />
+             
+            <!---->
+             
+            <source
+              media="(min-width: 768px)"
+              srcset=""
+            />
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/1000/500"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive hero__image--full img--lazy"
+              src=""
+            />
+          </picture>
+           
+          <div
+            class="hero__image-overlay"
+          />
+           
+          <div
+            class="container"
+          >
+            <div
+              class="flexgrid flexgrid--gutter"
+            >
+              <div
+                class="flexgrid__cell--xs-6"
+              >
+                <div
+                  class="hero__headline"
+                >
+                  <h1>
+                    Lorem ipsum
+                  </h1>
+                </div>
+              </div>
+               
+              <div
+                class="flexgrid__cell"
+                style="position: relative;"
+              >
+                <p
+                  class="hero__subtitle"
+                >
+                  Donec ullamcorper nulla non metus auctor fringilla
+                </p>
+                 
+                <picture>
+                  <!---->
+                   
+                  <!---->
+                   
+                  <source
+                    media="(min-width: 768px)"
+                    srcset=""
+                  />
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <source
+                    media="(max-width: 480px)"
+                    srcset="/generator/svg/600/600/cccccc"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="img--responsive hero__image--product img--lazy"
+                    src=""
+                  />
+                </picture>
+              </div>
+               
+              <div
+                class="flexgrid__cell--xs-6"
+              >
+                <div
+                  class="hero__usp-container"
+                >
+                  <div
+                    class="hero__usp usp--icon"
+                  >
+                    <!---->
+                     
+                    <small
+                      class="usp__label"
+                    >
+                      123 x 123 x 123mm
+                    </small>
+                  </div>
+                  <div
+                    class="hero__usp usp--icon"
+                  >
+                    <!---->
+                     
+                    <small
+                      class="usp__label"
+                    >
+                      Down to 34 microns
+                    </small>
+                  </div>
+                  <div
+                    class="hero__usp usp--icon"
+                  >
+                    <!---->
+                     
+                    <small
+                      class="usp__label"
+                    >
+                      Some text
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="container"
+        >
+          <div
+            class="flexgrid flexgrid--gutter"
+          >
+            <div
+              class="flexgrid__cell--xs-6"
+            >
+              <div
+                class="hero__description"
+              >
+                <p
+                  class="copy--intro"
+                >
+                  Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
+                </p>
+                 
+                <p>
+                  TODO: Pricetable
+                </p>
+                 
+                <a
+                  class="button button--primary hero__button"
+                  href="#/#"
+                >
+                  Some label
+                </a>
+                 
+                <ul
+                  class="link-list link-list--icon hero__link-list"
+                >
+                  <li
+                    class="link-list__item"
+                  >
+                    <a
+                      class=""
+                      href="#/#"
+                    >
+                      <!---->
+                       Content-link
+                    </a>
+                  </li>
+                  <li
+                    class="link-list__item"
+                  >
+                    <a
+                      class=""
+                      href="#/#"
+                    >
+                      <!---->
+                       Content-link
+                    </a>
+                  </li>
+                  <li
+                    class="link-list__item"
+                  >
+                    <a
+                      class=""
+                      href="#/#"
+                    >
+                      <!---->
+                       Content-link
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </section>
+</section>
+`;

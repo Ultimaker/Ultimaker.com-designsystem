@@ -45,7 +45,6 @@
         "vuex": "^3.1.0"
     },
     "devDependencies": {
-        "@ultimaker/ultimaker.com-model-definitions": "0.2.3",
         "@storybook/addon-actions": "5.0.6",
         "@storybook/addon-backgrounds": "5.0.6",
         "@storybook/addon-centered": "5.0.6",
@@ -62,6 +61,7 @@
         "@types/jest": "^23.3.14",
         "@types/node": "^10.12.23",
         "@types/requirejs": "^2.1.31",
+        "@ultimaker/ultimaker.com-model-definitions": "0.2.3",
         "babel-core": "^6.26.3",
         "babel-eslint": "8.0.1",
         "babel-jest": "^23.6.0",
@@ -97,6 +97,7 @@
         "karma-spec-reporter": "^0.0.32",
         "karma-webpack": "^2.0.13",
         "markdown-loader-jest": "^0.1.1",
+        "marked": "^0.6.1",
         "mini-css-extract-plugin": "^0.4.5",
         "moment": "^2.24.0",
         "node-sass": "^4.11.0",

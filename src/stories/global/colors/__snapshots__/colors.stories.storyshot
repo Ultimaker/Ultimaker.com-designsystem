@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots global Colors 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div
+      class="flexgrid"
+    >
+      <div
+        class="flexgrid__cell--xs-6"
+      >
+        <h2>
+          Brand colors
+        </h2>
+         
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(12, 169, 227);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorMain 
+              <br />
+              
+                                #0CA9E3
+                            
+            </span>
+          </li>
+        </ul>
+      </div>
+       
+      <div
+        class="flexgrid__cell--xs-6"
+      >
+        <h2>
+          Grayscale colors
+        </h2>
+         
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(0, 0, 0);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorBlack 
+              <br />
+              
+                                #000000
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(127, 127, 127);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorGrayDark 
+              <br />
+              
+                                #7F7F7F
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(227, 227, 227);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorGray 
+              <br />
+              
+                                #E3E3E3
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(234, 234, 234);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorGrayLight 
+              <br />
+              
+                                #EAEAEA
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(245, 245, 245);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorGrayExtraLight 
+              <br />
+              
+                                #F5F5F5
+                            
+            </span>
+          </li>
+        </ul>
+        <ul
+          class="demo-colors"
+        >
+          <li>
+            <span
+              class="demo-swatch"
+              style="background-color: rgb(255, 255, 255);"
+            />
+             
+            <span
+              class="demo-label"
+            >
+              
+                                $colorWhite 
+              <br />
+              
+                                #FFFFFF
+                            
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules|layout/cards Reseller card 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__molecule"
+    >
+      <reseller-card
+        fileinput="/generator/svg/120/120"
+        href="https://lipsum.com"
+        image="[object Object]"
+        labels="[object Object]"
+        name="Reseller name"
+        showroomcount="2"
+      />
+    </section>
+  </section>
+</section>
+`;

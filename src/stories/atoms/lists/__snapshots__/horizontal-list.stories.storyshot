@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|lists Horizontal list 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <section>
+        <strong
+          class="caption-list__headline"
+        >
+          
+        Some label:
+    
+        </strong>
+         
+        <ul
+          class="caption-list"
+        >
+          <li
+            class="caption-list__list-item"
+          >
+            
+            
+            
+            <a>
+              Default list-item
+            </a>
+          </li>
+          <li
+            class="caption-list__list-item"
+          >
+            
+            
+            
+            <a>
+              Default list-item
+            </a>
+          </li>
+          <li
+            class="caption-list__list-item"
+          >
+            
+            
+            
+            <a>
+              Default list-item
+            </a>
+          </li>
+          <li
+            class="caption-list__list-item"
+          >
+            
+            
+            
+            <a>
+              Default list-item
+            </a>
+          </li>
+          <li
+            class="caption-list__list-item"
+          >
+            
+            
+            
+            <a>
+              Default list-item
+            </a>
+          </li>
+          <li
+            class="caption-list__list-item"
+          >
+            
+            
+            
+            <a>
+              Default list-item
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </section>
+</section>
+`;

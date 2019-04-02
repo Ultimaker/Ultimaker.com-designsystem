@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms|media CImage 1`] = `
+exports[`Storyshots Atoms|media Images 1`] = `
 <section
   class="story"
 >
@@ -15,49 +15,29 @@ exports[`Storyshots Atoms|media CImage 1`] = `
         class="img--responsive"
       >
         <!---->
-
+         
         <!---->
-
+         
         <source
           media="(min-width: 768px)"
           srcset=""
         />
-
+         
         <!---->
-
+         
         <!---->
-
+         
         <source
           media="(max-width: 480px)"
           srcset="/generator/svg/400/400"
         />
-
+         
         <img
           alt=""
           class="img--responsive img--lazy"
           src=""
         />
       </picture>
-    </section>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|media Youtube Video 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <section
-      class="story__atom"
-    >
-      <div
-        class="youtube-video"
-      >
-        <!---->
-      </div>
     </section>
   </section>
 </section>

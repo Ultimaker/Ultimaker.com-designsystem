@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots global Animations 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div
+      class="demo-panel demo-panel--micro-animate"
+    >
+      <p
+        class="demo-panel__label demo-panel__label--centered"
+      >
+        Hover over me
+      </p>
+       
+      <div
+        class="demo-panel__animate-me"
+      />
+    </div>
+  </section>
+</section>
+`;

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|lists Unordered list 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <ul
+        class="list"
+      >
+        <li
+          class="list__item"
+        >
+          Default list-item
+        </li>
+        <li
+          class="list__item"
+        >
+          Default list-item
+        </li>
+        <li
+          class="list__item"
+        >
+          Default list-item
+        </li>
+      </ul>
+    </section>
+  </section>
+</section>
+`;
