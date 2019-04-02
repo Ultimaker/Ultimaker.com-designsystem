@@ -4,7 +4,7 @@ const merge = require("webpack-merge");
 const projectConfig = require('../webpack.config');
 const SvgStore = require('webpack-svgstore-plugin');
 
-module.exports = (storybookBaseConfig, configType, defaultConfig) => {
+module.exports = ({config, mode}) => {
     // defaultConfig.module.rules.push({
     //     test: [/\.stories\.js$/],
     //     loaders: [require.resolve('@storybook/addon-storysource/loader')],
@@ -12,7 +12,7 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
     //     enforce: 'pre',
     // });
 
-    defaultConfig.plugins.push(
+    config.plugins.push(
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: '"production"'
@@ -20,7 +20,7 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
         })
     );
 
-    defaultConfig.plugins.push(
+    config.plugins.push(
         new SvgStore({
             svgoOptions: {
                 plugins: [
@@ -34,9 +34,9 @@ module.exports = (storybookBaseConfig, configType, defaultConfig) => {
         })
     );
 
-    const config = merge(projectConfig, defaultConfig);
+    const newConfig = merge(projectConfig, config);
 
     // console.log(require('util').inspect(config, false, null, true));
     // process.exit();
-    return config;
+    return newConfig;
 };

@@ -1,7 +1,8 @@
-import {configure, addDecorator} from '@storybook/vue';
-import {withOptions} from '@storybook/addon-options';
+import {configure, addDecorator, addParameters} from '@storybook/vue';
 import {withNotes} from '@storybook/addon-notes';
+import {withKnobs} from '@storybook/addon-knobs';
 import storyRouter from 'storybook-vue-router';
+
 import Vue from 'vue';
 import Vuex from 'vuex';
 import 'babel-core/register';
@@ -19,14 +20,14 @@ if(process.env.BABEL_ENV === 'jest') {
     registerRequireContextHook();
 }
 
-addDecorator(
-    withOptions({
+addParameters({
+    options: {
         hierarchyRootSeparator: /\|/,
         hierarchySeparator: /\//,
         showSearchBox: false,
         sortStoriesByKind: false
-    })
-);
+    }
+});
 
 Vue.use(registry);
 Vue.use(PublicEventService);
