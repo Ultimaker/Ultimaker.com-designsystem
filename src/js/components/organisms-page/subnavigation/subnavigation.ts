@@ -1,5 +1,5 @@
 import { Component, Prop } from 'vue-property-decorator';
-import OverflowContainer from '../overflow-container';
+import OverflowContainer from '../../organisms/overflow-container';
 import { SubNavigation as SubnavigationInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/sub-navigation/SubNavigation';
 
 @Component({

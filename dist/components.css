@@ -92,12 +92,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tabs__list, .pager__list, .sub-nav__list, .colors .colors__list, .list-section-list, dl, dt, dd {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tabs__list, .pager__list, .overflow-container__list, .colors .colors__list, .list-section-list, dl, dt, dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tabs__list, .pager__list, .sub-nav__list, .colors .colors__list, .list-section-list {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tabs__list, .pager__list, .overflow-container__list, .colors .colors__list, .list-section-list {
   list-style: none; }
 
 .list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .tooltip__list-item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .colors .colors__list-item {
@@ -187,6 +187,8 @@ h6 a:focus:not(:hover),
 .link--small.toggle a:focus:not(:hover),
 .legal__link a:focus:not(:hover),
 .link--small.footer-nav__link a:focus:not(:hover),
+.link--small.overflow-container__link:hover a:focus:not(:hover),
+.link--small.overflow-container__link.exact-active a:focus:not(:hover),
 .price-table__tagline a:focus:not(:hover),
 .price-table__disclaimer a:focus:not(:hover),
 .tooltip__list-item.tooltip__label a:focus:not(:hover),
@@ -198,7 +200,7 @@ h6 a:focus:not(:hover),
 .tablist__section .tablist__headline a:focus:not(:hover),
 .examples .examples__tabs .tablist__headline a:focus:not(:hover),
 .hero--products-application .usp--icon .usp__label a:focus:not(:hover),
-.sub-nav__label a:focus:not(:hover),
+.overflow-container__label a:focus:not(:hover),
 small a:focus:not(:active),
 h6 a:focus:not(:active),
 .caption-list__headline a:focus:not(:active),
@@ -207,6 +209,8 @@ h6 a:focus:not(:active),
 .link--small.toggle a:focus:not(:active),
 .legal__link a:focus:not(:active),
 .link--small.footer-nav__link a:focus:not(:active),
+.link--small.overflow-container__link:hover a:focus:not(:active),
+.link--small.overflow-container__link.exact-active a:focus:not(:active),
 .price-table__tagline a:focus:not(:active),
 .price-table__disclaimer a:focus:not(:active),
 .tooltip__list-item.tooltip__label a:focus:not(:active),
@@ -218,9 +222,9 @@ h6 a:focus:not(:active),
 .tablist__section .tablist__headline a:focus:not(:active),
 .examples .examples__tabs .tablist__headline a:focus:not(:active),
 .hero--products-application .usp--icon .usp__label a:focus:not(:active),
-.sub-nav__label a:focus:not(:active),
+.overflow-container__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
-.content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .legal__link:focus:not(:hover), .footer-nav__link:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .legal__link:focus:not(:active), .footer-nav__link:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .search__input:focus, .tabs__list_link:focus:not(:hover), .tabs__list_link:focus:not(:active), .sub-nav__link:focus:not(:hover), .sub-nav__link:focus:not(:active) {
+.content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .legal__link:focus:not(:hover), .footer-nav__link:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .legal__link:focus:not(:active), .footer-nav__link:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .search__input:focus, .tabs__list_link:focus:not(:hover), .tabs__list_link:focus:not(:active), .overflow-container__link:focus:not(:hover), .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
 
 .color--selected, .auto-complete__dropdown {
@@ -386,8 +390,8 @@ mark {
  * Add the correct font size in all browsers.
  */
 small,
-h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .toggle.legal__link, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .price-table__tagline,
-.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .settings-selector__label, .auto-complete__label, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .hero--products-application .usp--icon .usp__label, .sub-nav__label {
+h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .toggle.legal__link, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
+.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .settings-selector__label, .auto-complete__label, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .hero--products-application .usp--icon .usp__label, .overflow-container__label {
   font-size: 80%; }
 
 /**
@@ -877,15 +881,15 @@ q {
   color: #7F7F7F; }
 
 .copy--small,
-h5, .link-list__headline, .flyout__title, .footer-nav__title, .notification__title, .link, .toggle, .legal__link, .footer-nav__link, [type="checkbox"] + label, .notification__copy, .auto-complete__list-item, .business-card__property {
+h5, .link-list__headline, .flyout__title, .footer-nav__title, .notification__title, .link, .toggle, .legal__link, .footer-nav__link, .overflow-container__link:hover, .overflow-container__link.exact-active, [type="checkbox"] + label, .notification__copy, .auto-complete__list-item, .business-card__property {
   font-size: 14px;
   line-height: 21px;
   margin-top: -2px;
   margin-bottom: 23px; }
 
 small,
-h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .toggle.legal__link, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .price-table__tagline,
-.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .settings-selector__label, .auto-complete__label, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .hero--products-application .usp--icon .usp__label, .sub-nav__label {
+h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .toggle.legal__link, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
+.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .settings-selector__label, .auto-complete__label, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .hero--products-application .usp--icon .usp__label, .overflow-container__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
@@ -893,8 +897,8 @@ h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .link-
   color: inherit; }
   @media (min-width: 768px) {
     small,
-    h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .toggle.legal__link, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .price-table__tagline,
-    .price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .settings-selector__label, .auto-complete__label, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .hero--products-application .usp--icon .usp__label, .sub-nav__label {
+    h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .toggle.legal__link, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
+    .price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .settings-selector__label, .auto-complete__label, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .hero--products-application .usp--icon .usp__label, .overflow-container__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -1227,6 +1231,10 @@ a {
   .legal__link a,
   .link--small.footer-nav__link a,
   .footer-nav__link.legal__link a,
+  .link--small.overflow-container__link:hover a,
+  .overflow-container__link.legal__link:hover a,
+  .link--small.overflow-container__link.exact-active a,
+  .overflow-container__link.exact-active.legal__link a,
   .price-table__tagline a,
   .price-table__disclaimer a,
   .tooltip__list-item.tooltip__label a,
@@ -1238,18 +1246,18 @@ a {
   .tablist__section .tablist__headline a,
   .examples .examples__tabs .tablist__headline a,
   .hero--products-application .usp--icon .usp__label a,
-  .sub-nav__label a,
+  .overflow-container__label a,
   .content--rich li a {
     font-weight: 400; }
 
-.link, .toggle, .legal__link, .footer-nav__link {
+.link, .toggle, .legal__link, .footer-nav__link, .overflow-container__link:hover, .overflow-container__link.exact-active {
   display: inline-block;
   margin-right: 12px;
   vertical-align: top;
   user-select: none;
   cursor: pointer;
   color: #000000; }
-  .link:hover, .toggle:hover, .legal__link:hover, .footer-nav__link:hover, .link:active, .toggle:active, .legal__link:active, .footer-nav__link:active, .link:visited, .toggle:visited, .legal__link:visited, .footer-nav__link:visited {
+  .link:hover, .toggle:hover, .legal__link:hover, .footer-nav__link:hover, .overflow-container__link:hover, .link:active, .toggle:active, .legal__link:active, .footer-nav__link:active, .overflow-container__link:active:hover, .overflow-container__link.exact-active:active, .link:visited, .toggle:visited, .legal__link:visited, .footer-nav__link:visited, .overflow-container__link:visited:hover, .overflow-container__link.exact-active:visited {
     color: #000000; }
 
 .link--large {
@@ -1275,7 +1283,7 @@ a {
       .button--primary + .link--large {
         display: table; } }
 
-.link .link__underline, .toggle .link__underline, .legal__link .link__underline, .footer-nav__link .link__underline,
+.link .link__underline, .toggle .link__underline, .legal__link .link__underline, .footer-nav__link .link__underline, .overflow-container__link:hover .link__underline, .overflow-container__link.exact-active .link__underline,
 .link--large .link__underline {
   width: calc(100% - 0.1px);
   background-size: 100% 100%;
@@ -1286,21 +1294,25 @@ a {
 .link--reversed .link__underline, .legal__link .link__underline, .flyout__link .link__underline, .footer-nav__link .link__underline {
   background-size: 0% 100%; }
 
-.link .link__underline, .toggle .link__underline, .legal__link .link__underline, .footer-nav__link .link__underline {
+.link .link__underline, .toggle .link__underline, .legal__link .link__underline, .footer-nav__link .link__underline, .overflow-container__link:hover .link__underline, .overflow-container__link.exact-active .link__underline {
   background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px); }
 
 .link--large .link__underline {
   background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
 
-.link:hover .link__underline, .toggle:hover .link__underline, .legal__link:hover .link__underline, .footer-nav__link:hover .link__underline,
+.link:hover .link__underline, .toggle:hover .link__underline, .legal__link:hover .link__underline, .footer-nav__link:hover .link__underline, .overflow-container__link:hover .link__underline,
 .link:active .link__underline,
 .toggle:active .link__underline,
 .legal__link:active .link__underline,
 .footer-nav__link:active .link__underline,
+.overflow-container__link:active:hover .link__underline,
+.overflow-container__link.exact-active:active .link__underline,
 .link:visited .link__underline,
 .toggle:visited .link__underline,
 .legal__link:visited .link__underline,
-.footer-nav__link:visited .link__underline {
+.footer-nav__link:visited .link__underline,
+.overflow-container__link:visited:hover .link__underline,
+.overflow-container__link.exact-active:visited .link__underline {
   background-size: 0% 100%; }
 
 .link--reversed:hover .link__underline, .legal__link:hover .link__underline, .flyout__link:hover .link__underline, .footer-nav__link:hover .link__underline,
@@ -1314,7 +1326,7 @@ a {
 .footer-nav__link:visited .link__underline {
   background-size: 100% 100%; }
 
-.link:focus .link__underline, .toggle:focus .link__underline, .legal__link:focus .link__underline, .footer-nav__link:focus .link__underline,
+.link:focus .link__underline, .toggle:focus .link__underline, .legal__link:focus .link__underline, .footer-nav__link:focus .link__underline, .overflow-container__link:focus:hover .link__underline, .overflow-container__link.exact-active:focus .link__underline,
 .link--reversed:focus .link__underline,
 .legal__link:focus .link__underline,
 .flyout__link:focus .link__underline,
@@ -1753,8 +1765,8 @@ table th {
   vertical-align: top; }
 
 table td small,
-table td h6, table td .caption-list__headline, table td .caption-list__list-item, table td .link.link--small, table td .link--small.toggle, table td .toggle.legal__link, table td .legal__link, table td .link--small.footer-nav__link, table td .footer-nav__link.legal__link, table td .price-table__tagline,
-table td .price-table__disclaimer, table td .tooltip__list-item.tooltip__label, table td .tag, table td .settings-selector__label, table td .auto-complete__label, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .sub-nav__label,
+table td h6, table td .caption-list__headline, table td .caption-list__list-item, table td .link.link--small, table td .link--small.toggle, table td .toggle.legal__link, table td .legal__link, table td .link--small.footer-nav__link, table td .footer-nav__link.legal__link, table td .link--small.overflow-container__link:hover, table td .overflow-container__link.legal__link:hover, table td .link--small.overflow-container__link.exact-active, table td .overflow-container__link.exact-active.legal__link, table td .price-table__tagline,
+table td .price-table__disclaimer, table td .tooltip__list-item.tooltip__label, table td .tag, table td .settings-selector__label, table td .auto-complete__label, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label,
 table th small,
 table th h6,
 table th .caption-list__headline,
@@ -1765,6 +1777,10 @@ table th .toggle.legal__link,
 table th .legal__link,
 table th .link--small.footer-nav__link,
 table th .footer-nav__link.legal__link,
+table th .link--small.overflow-container__link:hover,
+table th .overflow-container__link.legal__link:hover,
+table th .link--small.overflow-container__link.exact-active,
+table th .overflow-container__link.exact-active.legal__link,
 table th .price-table__tagline,
 table th .price-table__disclaimer,
 table th .tooltip__list-item.tooltip__label,
@@ -1781,7 +1797,7 @@ table th .examples .examples__tabs .tablist__headline,
 .examples .examples__tabs table th .tablist__headline,
 table th .hero--products-application .usp--icon .usp__label,
 .hero--products-application .usp--icon table th .usp__label,
-table th .sub-nav__label {
+table th .overflow-container__label {
   display: block;
   color: #7F7F7F; }
 
@@ -2936,14 +2952,14 @@ table tfoot {
     transform: rotate(-90deg);
     left: 50%; }
 
-.cta__block .button.button--primary + .link.link--large, .cta__block .button.button--primary + .link--large.toggle, .cta__block .button.button--primary + .link--large.legal__link, .cta__block .button.button--primary + .link--large.footer-nav__link {
+.cta__block .button.button--primary + .link.link--large, .cta__block .button.button--primary + .link--large.toggle, .cta__block .button.button--primary + .link--large.legal__link, .cta__block .button.button--primary + .link--large.footer-nav__link, .cta__block .button.button--primary + .link--large.overflow-container__link:hover, .cta__block .button.button--primary + .link--large.overflow-container__link.exact-active {
   margin: 24px 0 0 0;
   transform: none; }
 
 @media (min-width: 569px) {
   .cta__block .button.button--primary {
     margin-right: 48px; }
-  .cta__block .button.button--primary ~ .link.link--large, .cta__block .button.button--primary ~ .link--large.toggle, .cta__block .button.button--primary ~ .link--large.legal__link, .cta__block .button.button--primary ~ .link--large.footer-nav__link {
+  .cta__block .button.button--primary ~ .link.link--large, .cta__block .button.button--primary ~ .link--large.toggle, .cta__block .button.button--primary ~ .link--large.legal__link, .cta__block .button.button--primary ~ .link--large.footer-nav__link, .cta__block .button.button--primary ~ .link--large.overflow-container__link:hover, .cta__block .button.button--primary ~ .link--large.overflow-container__link.exact-active {
     display: inline-block;
     margin: 12px 0 0 0; } }
 
@@ -4312,7 +4328,7 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
   width: 320px;
   max-width: 100%; }
 
-.sub-nav {
+.overflow-container {
   position: relative;
   display: flex;
   width: 100%;
@@ -4321,7 +4337,7 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
   transform: translateX(0);
   background-color: white;
   justify-content: center; }
-  .sub-nav:after {
+  .overflow-container:after {
     content: '';
     display: block;
     position: absolute;
@@ -4331,90 +4347,76 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
     height: 1px;
     background-color: #EAEAEA; }
 
-.sub-nav__wrapper {
+.overflow-container__wrapper {
   height: 150px;
   width: 100%; }
 
-.sub-nav__list {
+.overflow-container__list {
   display: flex;
-  padding: 24px 0 1px;
-  overflow-x: scroll;
-  overflow-scrolling: touch; }
-  .sub-nav__list::-webkit-scrollbar-track {
-    background-color: transparent; }
-  .sub-nav__list::-webkit-scrollbar {
-    height: 2px;
-    background-color: #FFFFFF; }
-  .sub-nav__list::-webkit-scrollbar-thumb {
-    background-color: #24bcf3; }
+  padding: 24px 12px 0px 12px;
+  overflow-x: hidden;
+  flex-wrap: wrap; }
+  .overflow-container__list.touch {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-scrolling: touch; }
+    .overflow-container__list.touch::-webkit-scrollbar-track {
+      background-color: transparent; }
+    .overflow-container__list.touch::-webkit-scrollbar {
+      height: 2px;
+      background-color: #FFFFFF; }
+    .overflow-container__list.touch::-webkit-scrollbar-thumb {
+      background-color: #24bcf3; }
 
-.sub-nav__item {
+.overflow-container__item {
   flex: 0 1 auto;
   text-align: center;
+  max-width: 120px;
   padding: 0 12px 0;
   margin: 0 0 12px 0; }
-  .sub-nav__item:first-child {
-    padding-left: 24px; }
-  .sub-nav__item:last-child {
-    padding-right: 24px; }
-  @media (min-width: 768px) {
-    .sub-nav__item {
-      display: inline-block; }
-      .sub-nav__item:first-child {
-        padding-left: 18px; }
-      .sub-nav__item:last-child {
-        padding-right: 18px; } }
 
-.sub-nav__link {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+.overflow-container__link {
   position: relative;
-  height: 96px;
+  min-height: 96px;
   min-width: 60px;
   transition: height 0.1s cubic-bezier(0.23, 1, 0.32, 1);
   margin-bottom: 6px;
-  color: #000000; }
-  .sub-nav__link:hover, .sub-nav__link.exact-active, .sub-nav__link.active {
-    color: #000000; }
-    .sub-nav__link:hover .sub-nav__label:after, .sub-nav__link.exact-active .sub-nav__label:after, .sub-nav__link.active .sub-nav__label:after {
+  color: #000000;
+  display: block; }
+  .overflow-container__link:hover, .overflow-container__link.exact-active {
+    color: #000000;
+    margin-bottom: 6px; }
+    .overflow-container__link:hover .overflow-container__label:after, .overflow-container__link.exact-active .overflow-container__label:after {
       width: 100%; }
 
-.sub-nav__image-container {
+.overflow-container__image-container {
   width: 60px;
   height: 60px;
+  min-height: 60px;
   display: block;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   margin: 0 auto 14px; }
   @media (min-width: 768px) {
-    .sub-nav__image-container {
+    .overflow-container__image-container {
       margin: 0 auto 12px; } }
 
-.sub-nav__image {
+.overflow-container__image {
   width: 60px;
   height: 60px; }
 
-.sub-nav__label {
-  display: inline-block;
+.overflow-container__label {
+  font-size: 14px;
+  line-height: 21px;
+  display: block;
   position: relative;
   bottom: 0;
   margin-bottom: 0;
-  white-space: nowrap; }
-  .sub-nav__label:after {
-    content: '';
-    display: inline;
-    height: 1px;
-    width: 0;
-    background: currentColor;
-    position: absolute;
-    left: 50%;
-    bottom: -2px;
-    transform: translateX(-50%);
-    transition:  width 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  .sub-nav__link:focus .sub-nav__label:after {
+  white-space: wrap; }
+  .overflow-container__label:hover {
+    color: #000000; }
+  .overflow-container__link:focus .overflow-container__label:after {
     display: none; }
 
 svg text {

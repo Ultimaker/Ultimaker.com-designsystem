@@ -2,7 +2,7 @@ export default {
     subnavigation: {
         type: 'Subnavigation',
         items: [{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -18,7 +18,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -34,7 +34,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -50,7 +50,23 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
+            label: 'Ultimaker PLA ik ga over twee regels want ik ben lang. Ultimaker PLA ik ga over twee regels want ik ben lang. Ultimaker PLA ik ga over twee regels want ik ben lang',
+            url: 'http://nu.nl',
+            image: {
+                type: 'Cimage',
+                url: 'https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg',
+                alt: 'An example image',
+                quality: 65,
+                radius: 0,
+                imageFormat: 'png',
+                resizeBehavior: 'fill',
+                focusArea: 'center',
+                backgroundColor: null,
+                mimeType: 'png',
+            },
+        },{
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -66,7 +82,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -82,7 +98,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -98,7 +114,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -114,7 +130,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -130,7 +146,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -146,7 +162,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -162,7 +178,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -178,7 +194,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -194,7 +210,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -210,7 +226,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
@@ -226,24 +242,8 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
-            label: 'Ultimaker PLA',
-            url: 'http://nu.nl',
-            image: {
-                type: 'Cimage',
-                url: 'https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg',
-                alt: 'An example image',
-                quality: 65,
-                radius: 0,
-                imageFormat: 'png',
-                resizeBehavior: 'fill',
-                focusArea: 'center',
-                backgroundColor: null,
-                mimeType: 'png',
-            },
-        },{
-            type: 'SubnavigationItem',
-            label: 'Ultimaker PLA',
+            type: 'SubNavigationItem',
+            label: 'Ultimaker PLA ik ga over twee regels want ik ben lang',
             url: 'http://localhost:9090',
             image: {
                 type: 'Cimage',
@@ -258,7 +258,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: '#',
             image: {
@@ -274,7 +274,7 @@ export default {
                 mimeType: 'png',
             },
         },{
-            type: 'SubnavigationItem',
+            type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {

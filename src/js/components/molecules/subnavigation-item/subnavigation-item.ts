@@ -8,6 +8,6 @@ import { SubNavigationItem as ISubNavigationItem } from '@ultimaker/ultimaker.co
 
 export default class SubNavigationItem extends Vue implements ISubNavigationItem {
     @Prop({ type: String, required: true }) url!: ISubNavigationItem['url'];
-    @Prop({ type: Object, required: true }) image!: ISubNavigationItem['image'];
+    @Prop({ type: Object }) image?: ISubNavigationItem['image'] | undefined;
     @Prop({ type: String, required: true }) label!: ISubNavigationItem['label'];
 }

@@ -1,4 +1,4 @@
-.sub-nav {
+.overflow-container {
     position: relative;
     display: flex;
     width: 100%;
@@ -8,7 +8,6 @@
     background-color: white;
 
     justify-content: center;
-
 
     &:after {
         content: '';
@@ -22,95 +21,80 @@
     }
 }
 
-.sub-nav__wrapper {
+.overflow-container__wrapper {
     height: 150px;
     width: 100%;
 }
 
-.sub-nav__list {
+.overflow-container__list {
     display: flex;
-    padding: ($buildingUnit * 2) 0 1px;
-
+    padding: ($buildingUnit * 2) $buildingUnit 0px $buildingUnit;
 
     @extend %reset-list;
 
-    overflow-x: scroll;
-    overflow-scrolling: touch;
+    overflow-x: hidden;
+    flex-wrap: wrap;
 
-    &::-webkit-scrollbar-track {
-        background-color: transparent;
+    &.touch {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-scrolling: touch;
+
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        &::-webkit-scrollbar {
+            height: 2px;
+            background-color: $colorWhite;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $colorButtonHover;
+        }
     }
-
-    &::-webkit-scrollbar {
-        height: 2px;
-        background-color: $colorWhite;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: $colorButtonHover;
-    }
-
 }
 
-.sub-nav__item {
+.overflow-container__item {
     flex: 0 1 auto;
     text-align: center;
+    max-width: $buildingUnit * 10;
 
     padding: 0 $buildingUnit 0;
     margin: 0 0 $buildingUnit 0;
-
-    &:first-child {
-        padding-left: $buildingUnit * 2;
-    }
-    &:last-child {
-        padding-right: $buildingUnit * 2;
-    }
-
-    @include min-tablet() {
-        display: inline-block;
-
-        &:first-child {
-            padding-left: $buildingUnit * 1.5;
-        }
-        &:last-child {
-            padding-right: $buildingUnit * 1.5;
-        }
-    }
 }
 
-.sub-nav__link {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.overflow-container__link {
     position: relative;
-    height: $buildingUnit * 8;
+    min-height: $buildingUnit * 8;
     min-width: $buildingUnit * 5;
     transition: height 0.1s $defaultEasing;
     margin-bottom: $buildingUnit / 2;
     color: $colorBlack;
+    display: block;
 
     &:hover,
-    &.exact-active,
-    &.active {
+    &.exact-active {
+        @extend .link;
         color: $colorBlack;
+        margin-bottom: $buildingUnit / 2;
 
-        .sub-nav__label:after {
+        .overflow-container__label:after {
             width: 100%;
         }
     }
-
 
     &:focus:not(:hover),
     &:focus:not(:active) {
         @extend %focus-outline;
     }
 }
-.sub-nav__image-container {
+.overflow-container__image-container {
     width: $buildingUnit * 5;
     height: $buildingUnit * 5;
+    min-height: $buildingUnit * 5;
 
     display: block;
-    position: absolute;
 
     top: 0;
     left: 0;
@@ -123,38 +107,26 @@
     }
 }
 
-.sub-nav__image {
+.overflow-container__image {
     width: $buildingUnit * 5;
     height: $buildingUnit * 5;
 }
 
-.sub-nav__label {
+.overflow-container__label {
     @extend small;
+    @include font-line-ratio(prim-s);
 
-    display: inline-block;
+    display: block;
     position: relative;
     bottom: 0;
     margin-bottom: 0;
-    white-space: nowrap;
+    white-space: wrap;
 
-    &:after {
-        content: '';
-        display: inline;
-
-        height: 1px;
-        width: 0;
-
-        background: currentColor;
-
-        position: absolute;
-        left: 50%;
-        bottom: -2px;
-        transform: translateX(-50%);
-
-        @include micro-animate(width);
+    &:hover{
+        color: $colorBlack;
     }
 
-    .sub-nav__link:focus & {
+    .overflow-container__link:focus & {
         &:after {
             display: none;
         }

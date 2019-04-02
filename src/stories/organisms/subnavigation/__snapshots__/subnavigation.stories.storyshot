@@ -12,211 +12,694 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
     >
       <nav
         aria-label="sub items"
-        class="sub-nav sub-nav--fixed"
-        role="menubar"
+        class="overflow-container overflow-container--fixed"
         type="Subnavigation"
       >
         <ul
-          class="sub-nav__list"
+          class="overflow-container__list"
           role="presentation"
         >
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://localhost:9090"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://localhost:9090"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA ik ga over twee regels want ik ben lang"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA ik ga over twee regels want ik ben lang
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="#"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="#/#"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
           <li
-            class="sub-nav__item"
+            class="overflow-container__item"
             role="menuitem"
           >
-            <subnavigationitem
-              image="[object Object]"
-              label="Ultimaker PLA"
-              type="SubnavigationItem"
-              url="http://nu.nl"
-            />
+            <a
+              class="overflow-container__link link link--reversed"
+              href="http://nu.nl"
+              rel="noopener"
+              target="_blank"
+              type="SubNavigationItem"
+            >
+              <!---->
+               
+              <div
+                class="overflow-container__image-container"
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                  type="Cimage"
+                />
+              </div>
+               
+              <a
+                aria-label="Ultimaker PLA"
+                class="overflow-container__label"
+              >
+                <span
+                  class="link__underline"
+                >
+                  
+            Ultimaker PLA
+        
+                </span>
+              </a>
+            </a>
           </li>
         </ul>
       </nav>
