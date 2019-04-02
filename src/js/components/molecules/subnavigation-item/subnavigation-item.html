@@ -1,6 +1,10 @@
-<base-link :url="url" class="sub-nav__link">
-    <div class="sub-nav__image-container">
-        <c-image v-bind="image" keep-in-view></c-image>
+<base-link :url="url" class="overflow-container__link link link--reversed">
+    <div class="overflow-container__image-container">
+        <c-image v-if="image" v-bind="image" keep-in-view></c-image>
     </div>
-    <p class="sub-nav__label" :aria-label="label" > {{label}}</p>
+    <a class="overflow-container__label" :aria-label="label" >
+        <span class="link__underline">
+            {{label}}
+        </span>
+    </a>
 </base-link>

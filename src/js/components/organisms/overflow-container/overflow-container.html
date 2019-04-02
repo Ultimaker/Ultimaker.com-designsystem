@@ -1,6 +1,6 @@
-<nav aria-label="sub items" class="sub-nav sub-nav--fixed" ref="subNav" v-if="items" role="menubar">
-    <ul class="sub-nav__list" role="presentation"  v-if="items">
-        <li class="sub-nav__item" v-for="(item, index) in items" ref="listItems" role="menuitem">
+<nav aria-label="sub items" class="overflow-container overflow-container--fixed" ref="subNav" v-if="items">
+    <ul class="overflow-container__list" :class="isTouch ? 'touch' : ''" role="presentation"  v-if="items">
+        <li class="overflow-container__item" v-for="(item, index) in items" ref="listItems" role="menuitem">
             <component :is="item.type"
                        :key="index"
                        v-bind="item">
