@@ -1,5 +1,5 @@
 import {storiesOf} from '@storybook/vue';
-import {withKnobs, select, boolean} from '@storybook/addon-knobs';
+import {withKnobs, select, boolean, text} from '@storybook/addon-knobs';
 import data from './grid.stories.json';
 
 storiesOf('Atoms|grid', module)
@@ -7,16 +7,17 @@ storiesOf('Atoms|grid', module)
     .add(
         'Breakpoints',
         () => {
-            const active = select('Breakpoint', data.breakpoints.map((b) => b.title), data.defaultBreakpoint),
-                gutters = boolean('Gutters', false);
+            const active = select('Breakpoint', data.breakpoints.map((b) => b.title), data.defaultBreakpoint);
 
             return {
                 data: () => ({
-                    active: active,
-                    gutters: gutters,
                     breakpoints: data.breakpoints,
                     columns: data.columns
                 }),
+                props: {
+                    active: {default: active},
+                    gutters: {default: boolean('Gutters', false)}
+                },
                 template: require('./grid.stories.html')
             };
         },
