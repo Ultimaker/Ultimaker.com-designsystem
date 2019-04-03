@@ -1,35 +1,45 @@
-@import "~src/scss/settings/_all";
+@import "~src/scss/settings/_variables.scss";
 
 .card-product {
-    //position: relative;
-    //width: 296px;
-    //border: 1px solid $colorGrayLight;
-    //overflow: hidden;
-    //
-    //&__heading {
-    //    margin-top: $buildingUnit * 2;
-    //    margin-bottom: $buildingUnit * 1.5;
-    //
-    //    padding-left: $buildingUnit;
-    //    padding-right: $buildingUnit;
-    //
-    //    font-size: 18px;
-    //    line-height: 24px;
-    //}
-    //
-    //&__image {
-    //    &.img--contain {
-    //        display: block;
-    //        width: 296px;
-    //        height: 148px;
-    //    }
-    //}
-    //
-    //&__list {
-    //    &.list-unordered {
-    //        margin-bottom: $buildingUnit / 2;
-    //        padding-left: $buildingUnit;
-    //        padding-right: $buildingUnit;
-    //    }
-    //}
+    position: relative;
+    width: 296px;
+    border: 1px solid $colorGrayLight;
+    overflow: hidden;
+
+    &__heading {
+        margin-top: $buildingUnit * 2;
+        margin-bottom: $buildingUnit * 1.5;
+
+        padding-left: $buildingUnit;
+        padding-right: $buildingUnit;
+
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__image {
+        &.img--contain {
+            display: block;
+            width: 296px;
+            height: 148px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        align-content: space-between;
+
+        &.list {
+            padding-left: $buildingUnit;
+            padding-right: $buildingUnit;
+            margin-bottom: $buildingUnit / 2;
+        }
+
+        .list__item {
+            margin-bottom: $buildingUnit / 2;
+            margin-right: $buildingUnit / 2;
+        }
+    }
 }

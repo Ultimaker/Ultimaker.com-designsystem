@@ -1,7 +1,7 @@
 import {storiesOf} from '@storybook/vue';
-import data from 'molecules/card-product/stories/data.json';
+import data from './data.json';
 
-storiesOf('Molecules|layout/cards/card product', module)
+storiesOf('Molecules|layout/cards/product-card', module)
     .add('default',
         () => {
             return {
@@ -24,7 +24,7 @@ storiesOf('Molecules|layout/cards/card product', module)
             return {
                 data: () => {
                     return {
-                        data: data.noProperties
+                        data: data['no-properties']
                     };
                 },
                 template: require('./template.html')
@@ -41,7 +41,7 @@ storiesOf('Molecules|layout/cards/card product', module)
             return {
                 data: () => {
                     return {
-                        data: data.noImage
+                        data: data['no-image']
                     };
                 },
                 template: require('./template.html')
@@ -58,7 +58,7 @@ storiesOf('Molecules|layout/cards/card product', module)
             return {
                 data: () => {
                     return {
-                        data: data.noImageOrProperties
+                        data: data['no-image-or-properties']
                     };
                 },
                 template: require('./template.html')

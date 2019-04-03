@@ -1,2 +1,2 @@
-import CardProduct from './component';
-export default CardProduct;
+import ProductCard from './component';
+export default ProductCard;

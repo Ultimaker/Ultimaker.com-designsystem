@@ -1,10 +1,11 @@
 {
     "default": {
+        "type": "ProductCard",
         "clickEvent": {
+            "type": "AnalyticalEvent",
             "data": {
                 "test": true
             },
-            "type": "AnalyticalEvent",
             "name": "test"
         },
         "image": {
@@ -14,45 +15,53 @@
             "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
         },
         "list": {
+            "type": "LiInlineLabel",
             "items": [
-                "Abrasion-resistant",
-                "Durable",
-                "High strength-to-weight ratio",
-                "Low friction coefficient"
-            ],
-            "type": "LiInlineLabel"
+                {
+                    "text": "Abrasion-resistant"
+                },
+                {
+                    "text": "Durable"
+                },
+                {
+                    "text": "High strength-to-weight ratio"
+                },
+                {
+                    "text": "Low friction coefficient"
+                }
+            ]
         },
         "title": "Ultimaker Nylon",
-        "type": "CardProduct",
         "url": "https://ultimaker.com/en/products/materials/nylon"
     },
-    "noImage": {
+    "no-image": {
+        "type": "ProductCard",
         "clickEvent": {
+            "type": "AnalyticalEvent",
             "data": {
                 "test": true
             },
-            "type": "AnalyticalEvent",
             "name": "test"
         },
         "list": {
+            "type": "LiInlineLabel",
             "items": [
                 "Abrasion-resistant",
                 "Durable",
                 "High strength-to-weight ratio",
                 "Low friction coefficient"
-            ],
-            "type": "LiInlineLabel"
+            ]
         },
         "title": "Ultimaker Nylon",
-        "type": "CardProduct",
         "url": "https://ultimaker.com/en/products/materials/nylon"
     },
-    "noProperties": {
+    "no-properties": {
+        "type": "ProductCard",
         "clickEvent": {
+            "type": "AnalyticalEvent",
             "data": {
                 "test": true
             },
-            "type": "AnalyticalEvent",
             "name": "test"
         },
         "image": {
@@ -62,27 +71,26 @@
             "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
         },
         "list": {
-            "items": [],
-            "type": "LiInlineLabels"
+            "type": "LiInlineLabels",
+            "items": []
         },
         "title": "Ultimaker Nylon",
-        "type": "CardProduct",
         "url": "https://ultimaker.com/en/products/materials/nylon"
     },
-    "noImageOrProperties": {
+    "no-image-or-properties": {
+        "type": "ProductCard",
         "clickEvent": {
+            "type": "AnalyticalEvent",
             "data": {
                 "test": true
             },
-            "type": "AnalyticalEvent",
             "name": "test"
         },
         "list": {
-            "items": [],
-            "type": "LiInlineLabel"
+            "type": "LiInlineLabel",
+            "items": []
         },
         "title": "Ultimaker Nylon",
-        "type": "CardProduct",
         "url": "https://ultimaker.com/en/products/materials/nylon"
     }
 }

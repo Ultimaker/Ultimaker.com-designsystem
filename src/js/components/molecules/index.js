@@ -1,7 +1,6 @@
 export {default as AutoComplete} from 'molecules/auto-complete';
 export {default as BrandCard} from 'molecules/brand-card';
 export {default as Card} from 'molecules/card';
-export {default as CardProduct} from 'molecules/card-product';
 export {default as Color} from 'molecules/color';
 export {default as ContentToggle} from 'molecules/content-toggle';
 export {default as Currency} from 'molecules/currency';
@@ -18,6 +17,7 @@ export {default as MainNavItem} from 'molecules/main-nav-item';
 export {default as MaterialCard} from 'molecules/material-card';
 export {default as Modal} from 'molecules/modal';
 export {default as Pager} from 'molecules/pager';
+export {default as ProductCard} from 'molecules/product-card';
 export {default as Search} from 'molecules/search';
 export {default as SocialNav} from 'molecules/social-nav';
 export {default as SubNavigationItem} from 'molecules/subnavigation-item';
