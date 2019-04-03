@@ -32,7 +32,7 @@ exports[`Storyshots Molecules|search Searchbar 1`] = `
               class="search__input"
               id="search__input"
               name="search"
-              placeholder=""
+              placeholder="A person often meets his destiny on the road he took to avoid it."
               type="text"
             />
           </div>
