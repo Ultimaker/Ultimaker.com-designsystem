@@ -59,6 +59,7 @@
     flex: 0 1 auto;
     text-align: center;
     max-width: $buildingUnit * 10;
+    min-width: $buildingUnit * 10;
 
     padding: 0 $buildingUnit 0;
     margin: 0 0 $buildingUnit 0;
