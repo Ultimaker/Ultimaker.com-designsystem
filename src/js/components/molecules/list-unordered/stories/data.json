@@ -1,10 +1,10 @@
 {
     "li-content-block": {
-        "list": {
+        "listItems": {
             "type": "LiContentBlock",
             "items": [
                 {
-                    "type": "ProductCard",
+                    "type": "CardProduct",
                     "clickEvent": {
                         "type": "AnalyticalEvent",
                         "data": {
@@ -18,7 +18,7 @@
                         "type": "Image",
                         "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
                     },
-                    "list": {
+                    "listItems": {
                         "type": "LiInlineLabel",
                         "items": [
                             {
@@ -39,7 +39,7 @@
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 },
                 {
-                    "type": "ProductCard",
+                    "type": "CardProduct",
                     "clickEvent": {
                         "type": "AnalyticalEvent",
                         "data": {
@@ -47,7 +47,7 @@
                         },
                         "name": "test"
                     },
-                    "list": {
+                    "listItems": {
                         "type": "LiInlineLabel",
                         "items": [
                             {
@@ -68,7 +68,7 @@
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 },
                 {
-                    "type": "ProductCard",
+                    "type": "CardProduct",
                     "clickEvent": {
                         "type": "AnalyticalEvent",
                         "data": {
@@ -82,7 +82,7 @@
                         "type": "Image",
                         "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
                     },
-                    "list": {
+                    "listItems": {
                         "type": "LiInlineLabels",
                         "items": []
                     },
@@ -90,7 +90,7 @@
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 },
                 {
-                    "type": "ProductCard",
+                    "type": "CardProduct",
                     "clickEvent": {
                         "type": "AnalyticalEvent",
                         "data": {
@@ -98,7 +98,7 @@
                         },
                         "name": "test"
                     },
-                    "list": {
+                    "listItems": {
                         "type": "LiInlineLabel",
                         "items": []
                     },
@@ -109,7 +109,7 @@
         }
     },
     "li-inline-label": {
-        "list": {
+        "listItems": {
             "type": "LiInlineLabel",
             "items": [
                 {
@@ -140,7 +140,7 @@
         }
     },
     "li-item": {
-        "list": {
+        "listItems": {
             "type": "LiItem",
             "items": [
                 {

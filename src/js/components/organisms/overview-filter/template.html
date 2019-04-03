@@ -1,4 +1,14 @@
-<section class="overview-filter">
-    <h2 class="overview-filter__title" v-if="title">{{ title }}</h2>
-    <list-unordered class="overview-filter__list" :list="list"/>
+<section class="overview--filter">
+    <header>
+        <h2 v-if="title" class="overview--filter__title">{{ title }}</h2>
+        <h3 v-if="subtitle">{{ subtitle }}</h3>
+    </header>
+    <main>
+        <template v-for="(section, index) in sections">
+            <component :is="section.type" v-bind="section" :key="index"/>
+        </template>
+    </main>
+    <footer>
+        <cta-block v-if="ctas" :ctas="ctas.ctas" styleContentButton="button" block="overview"/>
+    </footer>
 </section>

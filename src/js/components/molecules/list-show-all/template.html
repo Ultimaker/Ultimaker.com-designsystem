@@ -1,0 +1,7 @@
+<section>
+    <ul class="list">
+        <template v-if="index < limit" v-for="(item, index) in list.listItems.items">
+            <component :is="list.listItems.type" :item="item" :key="index" />
+        </template>
+    </ul>
+</section>

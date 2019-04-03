@@ -1,12 +1,12 @@
 {
     "li-content-block": {
         "item": {
-            "type": "ProductCard",
+            "type": "CardProduct",
             "clickEvent": {
+                "type": "AnalyticalEvent",
                 "data": {
                     "test": true
                 },
-                "type": "AnalyticalEvent",
                 "name": "test"
             },
             "image": {
@@ -15,7 +15,8 @@
                 "type": "Image",
                 "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
             },
-            "list": {
+            "listItems": {
+                "type": "LiInlineLabel",
                 "items": [
                     {
                         "text": "Abrasion-resistant"
@@ -29,8 +30,7 @@
                     {
                         "text": "Low friction coefficient"
                     }
-                ],
-                "type": "LiInlineLabel"
+                ]
             },
             "title": "Ultimaker Nylon",
             "url": "https://ultimaker.com/en/products/materials/nylon"

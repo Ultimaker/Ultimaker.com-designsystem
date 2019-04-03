@@ -1,7 +1,7 @@
 import {storiesOf} from '@storybook/vue';
 import data from './data.json';
 
-storiesOf('Molecules|layout/cards/product-card', module)
+storiesOf('Molecules|layout/cards/card-product', module)
     .add('default',
         () => {
             return {

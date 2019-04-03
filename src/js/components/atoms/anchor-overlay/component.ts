@@ -9,7 +9,7 @@ import './styles.scss';
 })
 
 export default class AnchorOverlay  extends Mixins(ClickEvents) {
-    @Prop({ type: Object, required: false }) clickEvent?: ICardProduct['clickEvent'];
+    @Prop({ type: Object }) clickEvent?: ICardProduct['clickEvent'];
     @Prop({ type: String, required: true }) title!: string;
     @Prop({ type: String, required: true }) url!: string;
 }

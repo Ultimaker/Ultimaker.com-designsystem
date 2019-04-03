@@ -1,5 +1,5 @@
 <ul class="list">
-    <template v-for="(item, index) in list.items">
-        <component :is="list.type" :item="item" :key="index" />
+    <template v-for="(item, index) in listItems.items">
+        <component :is="listItems.type" :item="item" :key="index" />
     </template>
 </ul>

@@ -1,23 +1,41 @@
-@import "~src/scss/settings/_all";
+@import "~src/scss/settings/_variables.scss";
+@import "~src/scss/settings/_grid.scss";
+@import "~src/scss/tools/mixins/_media.scss";
 
-.overview-filter {
-    margin-top: $buildingUnit * 4;
-
+.overview--filter {
     &__list {
-        justify-content: center;
+        margin: 0 auto;
+
+        &.list {
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+    }
+
+    &__list > .list__item {
+        margin-bottom: $buildingUnit;
+
+        @include min-tablet {
+            margin-bottom: $buildingUnit * 2;
+        }
     }
 
     &__title {
-        text-align: center;
+        margin-top: $buildingUnit * 4;
         margin-bottom: $buildingUnit * 4;
+        text-align: center;
     }
 
-    .li-content-block {
-        margin-right: $buildingUnit / 4;
-        margin-bottom: $buildingUnit;
-        margin-left: $buildingUnit / 4;
 
-        padding-left: $buildingUnit / 2;
-        padding-right: $buildingUnit / 2;
-    }
+    //
+    //.li-content-block {
+    //    margin-right: $buildingUnit / 4;
+    //    margin-bottom: $buildingUnit;
+    //    margin-left: $buildingUnit / 4;
+    //
+    //    padding-left: $buildingUnit / 2;
+    //    padding-right: $buildingUnit / 2;
+    //}
 }
+
+

@@ -1,6 +1,6 @@
 {
     "default": {
-        "type": "ProductCard",
+        "type": "CardProduct",
         "clickEvent": {
             "type": "AnalyticalEvent",
             "data": {
@@ -14,7 +14,7 @@
             "type": "Image",
             "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
         },
-        "list": {
+        "listItems": {
             "type": "LiInlineLabel",
             "items": [
                 {
@@ -35,7 +35,7 @@
         "url": "https://ultimaker.com/en/products/materials/nylon"
     },
     "no-image": {
-        "type": "ProductCard",
+        "type": "CardProduct",
         "clickEvent": {
             "type": "AnalyticalEvent",
             "data": {
@@ -43,7 +43,7 @@
             },
             "name": "test"
         },
-        "list": {
+        "listItems": {
             "type": "LiInlineLabel",
             "items": [
                 {
@@ -64,7 +64,7 @@
         "url": "https://ultimaker.com/en/products/materials/nylon"
     },
     "no-properties": {
-        "type": "ProductCard",
+        "type": "CardProduct",
         "clickEvent": {
             "type": "AnalyticalEvent",
             "data": {
@@ -78,7 +78,7 @@
             "type": "Image",
             "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
         },
-        "list": {
+        "listItems": {
             "type": "LiInlineLabels",
             "items": []
         },
@@ -86,7 +86,7 @@
         "url": "https://ultimaker.com/en/products/materials/nylon"
     },
     "no-image-or-properties": {
-        "type": "ProductCard",
+        "type": "CardProduct",
         "clickEvent": {
             "type": "AnalyticalEvent",
             "data": {
@@ -94,7 +94,7 @@
             },
             "name": "test"
         },
-        "list": {
+        "listItems": {
             "type": "LiInlineLabel",
             "items": []
         },

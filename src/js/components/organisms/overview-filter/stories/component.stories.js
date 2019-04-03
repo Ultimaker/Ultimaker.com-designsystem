@@ -2,10 +2,14 @@ import {storiesOf} from '@storybook/vue';
 import data from './data.json';
 
 storiesOf('organisms|overview-filter', module)
-    .add('card-product',
+    .add('product-card',
         () => {
             return {
-                data: () => data,
+                data: () => {
+                    return {
+                        data: data['product-card']
+                    };
+                },
                 template: require('./template.html')
             };
         },
