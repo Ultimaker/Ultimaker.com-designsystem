@@ -11,6 +11,7 @@ export {default as Icon} from 'atoms/icon';
 export {default as Image} from 'atoms/c-image';
 export {default as LiContentBlock} from 'atoms/li-content-block';
 export {default as LiInlineLabel} from 'atoms/li-inline-label';
+export {default as LiItem} from 'atoms/li-item';
 export {default as NavAssist} from 'atoms/nav-assist';
 export {default as ResponsivePicture} from 'atoms/responsive-picture';
 export {default as TabbableDefinitionList} from 'atoms/tabbable-definition-list';
