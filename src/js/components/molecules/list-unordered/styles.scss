@@ -1,14 +1,18 @@
 @import "~src/scss/settings/_all";
 
 .list-unordered {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    align-content: space-between;
+    //display: flex;
+    //align-items: flex-start;
+    //flex-wrap: wrap;
+    //align-content: space-between;
+    //
+    //margin: 0 (-$buildingUnit/4);
+    //padding: 0;
+    //
+    //font-size: initial;
+    //line-height: 100%;
 
-    margin: 0 (-$buildingUnit/4);
-    padding: 0;
-
-    font-size: initial;
-    line-height: 100%;
+    //margin-right: $buildingUnit / 4;
+    //margin-bottom: $buildingUnit / 2;
+    //margin-left: $buildingUnit / 4;
 }

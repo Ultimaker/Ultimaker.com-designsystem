@@ -1,3 +1,2 @@
-import ListInlineLabels from './component';
-
-export default ListInlineLabels;
+import ListUnordered from './component';
+export default ListUnordered;
