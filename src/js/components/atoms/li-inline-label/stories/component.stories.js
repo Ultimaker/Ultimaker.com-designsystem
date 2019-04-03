@@ -1,11 +1,15 @@
 import {storiesOf} from '@storybook/vue';
-import data from 'atoms/li-inline-label/stories/data.json';
+import data from './data.json';
 
 storiesOf('Atoms|list items', module)
     .add('li-inline-label',
         () => {
             return {
-                data: () => data,
+                data: () => {
+                    return {
+                        data: data['li-inline-label']
+                    };
+                },
                 template: require('./template.html')
             };
         },

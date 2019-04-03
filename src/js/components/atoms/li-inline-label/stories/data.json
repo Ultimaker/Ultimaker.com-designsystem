@@ -1,5 +1,7 @@
 {
-    "data": {
-        "item": "Label"
+    "li-inline-label": {
+        "item": {
+            "text": "Label"
+        }
     }
 }

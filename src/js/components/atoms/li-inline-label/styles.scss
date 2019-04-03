@@ -1,22 +1,23 @@
-@import "~src/scss/settings/_all";
+@import "~src/scss/settings/_variables.scss";
 
-.li-inline-label {
-    display: inline-block;
-    list-style: none;
+.list__item {
+    &--label {
+        display: inline-block;
+        list-style: none;
 
-    margin-right: $buildingUnit / 4;
-    margin-bottom: $buildingUnit / 2;
-    margin-left: $buildingUnit / 4;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
 
-    padding-left: $buildingUnit / 2;
-    padding-right: $buildingUnit / 2;
+        color: $colorGrayDark;
+        background-color: $colorGrayExtraLight;
 
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
+        border-radius: 2px;
+    }
 
-    color: $colorGrayDark;
-    background-color: $colorGrayExtraLight;
-
-    border-radius: 2px;
+    &--label.list__item {
+        margin-bottom: 0;
+        padding-left: $buildingUnit / 2;
+        padding-right: $buildingUnit / 2;
+    }
 }
