@@ -76,6 +76,7 @@
     &:hover,
     &.exact-active {
         @extend .link;
+        display: block;
         color: $colorBlack;
         margin-bottom: $buildingUnit / 2;
 
@@ -130,6 +131,10 @@
         &:after {
             display: none;
         }
+    }
+
+    > span {
+        word-break: break-word;
     }
 }
 

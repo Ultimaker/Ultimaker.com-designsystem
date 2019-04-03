@@ -4384,6 +4384,7 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
   color: #000000;
   display: block; }
   .overflow-container__link:hover, .overflow-container__link.exact-active {
+    display: block;
     color: #000000;
     margin-bottom: 6px; }
     .overflow-container__link:hover .overflow-container__label:after, .overflow-container__link.exact-active .overflow-container__label:after {
@@ -4418,6 +4419,8 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
     color: #000000; }
   .overflow-container__link:focus .overflow-container__label:after {
     display: none; }
+  .overflow-container__label > span {
+    word-break: break-word; }
 
 svg text {
   font-size: 16px;
