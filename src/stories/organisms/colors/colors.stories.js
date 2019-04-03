@@ -5,7 +5,9 @@ import knobs from './colors.knobs.stories.js';
 storiesOf('organisms|colors', module)
     .addDecorator(withKnobs)
     .add('Colors', () => ({
-        data: () =>  knobs(),
+        props: {
+            colors: {default: knobs().colors}
+        },
         template: require('./colors.stories.html')
     }),
     {

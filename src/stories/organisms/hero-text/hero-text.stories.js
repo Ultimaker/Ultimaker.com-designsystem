@@ -5,7 +5,9 @@ import knobs from './hero-text.knobs.stories';
 storiesOf('organisms|hero', module)
     .addDecorator(withKnobs)
     .add('Hero text', () => ({
-        data: () => knobs(),
+        props: {
+            heroText: {default: knobs().heroText}
+        },
         template: require('./hero-text.stories.html')
     }), {
         notes: {markdown: require('./hero-text.stories.md')}

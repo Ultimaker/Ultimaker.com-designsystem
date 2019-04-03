@@ -5,7 +5,9 @@ import knobs from './ubr.knobs.stories.js';
 storiesOf('organisms|unique-buying-reasons', module)
     .addDecorator(withKnobs)
     .add('Unique buying reasons', () => ({
-        data: () => knobs(),
+        props: {
+            ubr: {default: knobs().ubr}
+        },
         template: require('./ubr.stories.html')
     }),
     {

@@ -5,7 +5,9 @@ import knobs from './general-content.knobs.stories.js';
 storiesOf('organisms|general-content', module)
     .addDecorator(withKnobs)
     .add('General content', () => ({
-        data: () => knobs(),
+        props: {
+            generalContent: {default: knobs().generalContent}
+        },
         template: require('./general-content.stories.html')
     }),
     {
