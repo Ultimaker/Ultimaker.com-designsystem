@@ -1,7 +1,7 @@
 {
     "li-content-block": {
         "item": {
-            "type": "CardProduct",
+            "type": "ProductCard",
             "clickEvent": {
                 "data": {
                     "test": true

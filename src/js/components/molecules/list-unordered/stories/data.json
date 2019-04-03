@@ -4,7 +4,7 @@
             "type": "LiContentBlock",
             "items": [
                 {
-                    "type": "CardProduct",
+                    "type": "ProductCard",
                     "clickEvent": {
                         "type": "AnalyticalEvent",
                         "data": {
@@ -39,7 +39,7 @@
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 },
                 {
-                    "type": "CardProduct",
+                    "type": "ProductCard",
                     "clickEvent": {
                         "type": "AnalyticalEvent",
                         "data": {
@@ -68,7 +68,7 @@
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 },
                 {
-                    "type": "CardProduct",
+                    "type": "ProductCard",
                     "clickEvent": {
                         "type": "AnalyticalEvent",
                         "data": {
@@ -90,7 +90,7 @@
                     "url": "https://ultimaker.com/en/products/materials/nylon"
                 },
                 {
-                    "type": "CardProduct",
+                    "type": "ProductCard",
                     "clickEvent": {
                         "type": "AnalyticalEvent",
                         "data": {
