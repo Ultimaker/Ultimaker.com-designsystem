@@ -15,10 +15,11 @@ storiesOf('Atoms|links',  module)
 
             return {
                 inject: ['data'],
-                data: () => ({
-                    mod: mod,
-                    icon: icon ? data.defaultIcon : undefined
-                }),
+                props: {
+                    url: {default: '#'},
+                    mod: {default: mod},
+                    icon: {default: icon ? data.defaultIcon : undefined}
+                },
                 template: require('./content-link.stories.html')
             };
         },

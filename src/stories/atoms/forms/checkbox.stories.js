@@ -11,9 +11,11 @@ storiesOf('Atoms|forms', module)
             return {
                 data: () => ({
                     name: 'checkbox',
-                    disabled: disabled,
                     value: true
                 }),
+                props: {
+                    disabled: {default: disabled}
+                },
                 inject: ['data'],
                 template: require('./checkbox.stories.html')
             };
