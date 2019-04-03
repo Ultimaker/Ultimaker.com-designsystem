@@ -12,9 +12,9 @@ storiesOf('Atoms|buttons', module)
                 selectedModifier = data.buttonModifiers.find((m) => m.title === modifier);
 
             return {
-                data: () => ({
-                    modifier: selectedModifier.modifier
-                }),
+                props: {
+                    modifier: {default: selectedModifier.modifier}
+                },
                 inject: ['data'],
                 template: require('./buttons.stories.html')
             };
@@ -30,10 +30,10 @@ storiesOf('Atoms|buttons', module)
                 selectedModifier = data.iconButtonModifiers.find((m) => m.title === modifier);
 
             return {
-                data: () => ({
-                    modifier: selectedModifier.modifier,
-                    showLabel: selectedModifier.showLabel
-                }),
+                props: {
+                    modifier: {default: selectedModifier.modifier},
+                    showLabel: {default: selectedModifier.showLabel}
+                },
                 inject: ['data'],
                 template: require('./icon-button.stories.html')
             };

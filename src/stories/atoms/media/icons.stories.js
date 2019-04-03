@@ -7,9 +7,9 @@ const stories = storiesOf('Atoms|media/icons', module)
         'Icon',
         () => {
             return {
-                data: () => ({
-                    iconName: text('Icon name', 'menu')
-                }),
+                props: {
+                    iconName: {default: text('Icon name', 'menu')}
+                },
                 template: require('./icons.stories.html')
             };
         },
