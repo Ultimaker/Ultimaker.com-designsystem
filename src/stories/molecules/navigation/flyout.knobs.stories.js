@@ -3,6 +3,7 @@ import data from './flyout.stories.json';
 
 export default () => ({
     flyout: {
+        isCompact: boolean('Compact', false),
         items: data.flyout.items.map((item, index) => ({
             label: text(`Flyout title ${index+1}`, item.label),
             items: item.items.map(({label, url}, i) => ({
@@ -13,7 +14,6 @@ export default () => ({
                 label: text(`Flyout title ${index+1}`, item.bottomItem.label),
                 url: text(`Flyout title ${index+1}`, item.bottomItem.url)
             }
-        })),
-        isCompact: boolean('Compact', true)
+        }))
     }
 });

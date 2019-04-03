@@ -9,9 +9,9 @@ storiesOf('Molecules|helpers', module)
             const copy = text('Text', 'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.');
 
             return {
-                data: () => ({
-                    copy: copy
-                }),
+                props: {
+                    copy: {default: copy}
+                },
                 template: require('./tooltip.stories.html')
             };
         },

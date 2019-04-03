@@ -2,7 +2,10 @@
     "listSection": {
         "type": "ListSection",
         "title": "Title",
-        "limit": 6,
+        "limit": {
+            "smallScreen": 3,
+            "largeScreen": 6
+        },
         "showAllLabel": "Show all",
         "cards": [
             {

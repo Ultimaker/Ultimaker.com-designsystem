@@ -5,9 +5,9 @@ import knobs from './cta-block.knobs.stories.js';
 storiesOf('Molecules|layout/cta-block', module)
     .addDecorator(withKnobs)
     .add('cta-block', () => ({
-        data: () => ({
-            ctas: knobs()
-        }),
+        props: {
+            ctas: {default: knobs()}
+        },
         template: require('./cta-block.stories.html')
     }),
     {

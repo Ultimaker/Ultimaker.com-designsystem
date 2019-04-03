@@ -6,9 +6,9 @@ storiesOf('Molecules|layout/cards', module)
     .addDecorator(withKnobs)
     .add('Card', () => {
         return {
-            data: () => ({
-                card: knobs()
-            }),
+            props: {
+                card: {default: knobs()}
+            },
             template: require('./card.stories.html')
         };
     },

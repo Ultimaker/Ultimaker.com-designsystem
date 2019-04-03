@@ -5,9 +5,11 @@ import knobs from './main-nav.knobs.stories';
 storiesOf('Molecules|navigation', module)
     .addDecorator(withKnobs)
     .add('Main navigation', () => ({
-        data: () => knobs(),
+        props: {
+            mainNavData: { default: knobs().mainNavData },
+        },
         template: require('./main-nav.stories.html'),
     }),
     {
-        notes: {markdown: require('./main-nav.stories.md')}
+        notes: { markdown: require('./main-nav.stories.md') },
     });

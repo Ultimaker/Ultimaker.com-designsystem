@@ -8,9 +8,11 @@ storiesOf('Molecules|helpers', module)
         'Scroll hint',
         () => ({
             data: () => ({
-                direction: select('Direction', data.directions.map(t => t.title), data.defaultDirection),
                 directions: data.directions
             }),
+            props: {
+                direction: default: {select('Direction', data.directions.map(t => t.title), data.defaultDirection)}
+            },
             computed: {
                 currentDirection() {
                     return this.directions.find(d => d.title === this.direction);
