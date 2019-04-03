@@ -1,7 +1,7 @@
 <article class="card-product">
     <anchor-overlay :url="url" :title="title" :clickEvent="clickEvent" />
     <c-image class="card-product__image" v-bind="image" v-if="image" keep-in-view/>
-    <img src="//via.placeholder.com/296x148?text=296x148   2:1" class="img--contain card-product__image" alt="generated image" v-if="!image"/>
+    <div class="img--contain card-product__image gray-background" v-if="!image"></div>
     <h3 class="card-product__heading">{{ title }}</h3>
     <list-unordered class="card-product__list" :list="list"/>
 </article>

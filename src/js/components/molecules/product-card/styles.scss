@@ -22,6 +22,10 @@
             width: 296px;
             height: 148px;
         }
+
+        &.gray-background {
+            background-color: $colorGray;
+        }
     }
 
     &__list {
