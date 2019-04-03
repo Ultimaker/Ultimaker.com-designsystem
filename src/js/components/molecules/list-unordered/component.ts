@@ -1,5 +1,4 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import './styles.scss';
 
 @Component({
     name: 'ListUnordered',
