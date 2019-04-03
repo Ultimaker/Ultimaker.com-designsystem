@@ -5,9 +5,11 @@ import knobs from './list-section.knobs.stories';
 storiesOf('Molecules|layout/lists', module)
     .addDecorator(withKnobs)
     .add('List section', () => ({
-        data: () =>  knobs(),
-        template: require('./list-section.stories.html')
+        props: {
+            listSection: { default: knobs().listSection },
+        },
+        template: require('./list-section.stories.html'),
     }),
     {
-        notes: {markdown: require('./list-section.stories.md')}
+        notes: { markdown: require('./list-section.stories.md') },
     });

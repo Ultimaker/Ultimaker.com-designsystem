@@ -3,16 +3,18 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import knobs from './sys-nav.knobs.stories';
 
-/* tslint-ignore */
 storiesOf('Molecules|sys-nav', module)
     .addDecorator(withKnobs)
     .add('SysNav', () => (
         {
-            data: () => knobs(),
+            props: {
+                sysNav: { default: knobs().sysNav },
+            },
             methods: {
-                openSearch: action('openSearch')
+                openSearch: action('openSearch'),
             },
             template: require('./sys-nav.stories.html'),
-        }), {
-             notes: {markdown: require('./sys-nav.stories.md')},
-         });
+        }),
+        {
+            notes: { markdown: require('./sys-nav.stories.md') },
+        });

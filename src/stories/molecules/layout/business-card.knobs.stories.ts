@@ -1,5 +1,4 @@
-/* eslint camelcase: ["error", {properties: "never"}] */
-import {text, files} from '@storybook/addon-knobs';
+import { text, files } from '@storybook/addon-knobs';
 import data from './business-card.stories.json';
 
 export default () => ({
@@ -20,6 +19,6 @@ export default () => ({
             desktopUrl: files('Business-Card image', ['image/png', 'image/svg+xml'], '/generator/svg/120/120'),
             mobileUrl: files('Business-Card image', ['image/png', 'image/svg+xml'], '/generator/svg/120/120'),
             originalUrl: files('Business-Card image', ['image/png', 'image/svg+xml'], '/generator/svg/120/120')
-        }
-    }
+        },
+    },
 });

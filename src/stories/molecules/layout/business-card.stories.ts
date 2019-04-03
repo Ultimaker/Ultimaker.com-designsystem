@@ -5,9 +5,11 @@ import knobs from './business-card.knobs.stories';
 storiesOf('Molecules|layout/cards', module)
     .addDecorator(withKnobs)
     .add('Business Card', () => ({
-        data: () =>  knobs(),
-        template: require('./business-card.stories.html')
+        props: {
+            businessCard: { default: knobs().businessCard },
+        },
+        template: require('./business-card.stories.html'),
     }),
     {
-        notes: {markdown: require('./business-card.stories.md')}
+        notes: { markdown: require('./business-card.stories.md') },
     });

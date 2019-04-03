@@ -6,12 +6,14 @@ import knobs from './search-bar.knobs.stories';
 storiesOf('Molecules|search', module)
     .addDecorator(withKnobs)
     .add('Searchbar', () => ({
-        data: () =>  knobs(),
-        methods: {
-            close: action('close')
+        props: {
+            searchBar: { default: knobs().searchBar }
         },
-        template: require('./search-bar.stories.html')
+        methods: {
+            close: action('close'),
+        },
+        template: require('./search-bar.stories.html'),
     }),
     {
-        notes: {markdown: require('./search-bar.stories.md')}
+        notes: { markdown: require('./search-bar.stories.md') },
     });

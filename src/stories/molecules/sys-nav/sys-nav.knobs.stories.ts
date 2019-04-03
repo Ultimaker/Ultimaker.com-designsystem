@@ -3,7 +3,8 @@ import data from './sys-nav.stories.json';
 
 export default () => ({
     sysNav: {
-        orderNowLabel: text('SysNav - Order now', data.sysNav.orderNowLabel),
+        orderNowLabel: text('SysNav - Order now label', data.sysNav.orderNowLabel),
+        orderNowLink: text('SysNav - Order now link', data.sysNav.orderNowLink),
         searchLabel: text('SysNav - Search', data.sysNav.searchLabel),
     },
 });

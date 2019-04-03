@@ -6,9 +6,9 @@ storiesOf('Molecules|tags/tag', module)
     .addDecorator(withKnobs)
     .add('tag', () => {
         return {
-            data: () => ({
-                tag: knobs()
-            }),
+            props: {
+                tag: {default: knobs()}
+            },
             template: require('./tag.stories.html')
         };
     },
