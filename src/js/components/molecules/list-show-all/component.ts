@@ -18,6 +18,6 @@ export default class ListShowAll extends Vue {
 
     showCount(): string {
         // return this.list.listItems.items.length;
-        return '10';
+        return `${this.label} 10`;
     }
 }
