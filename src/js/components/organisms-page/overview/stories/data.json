@@ -4,118 +4,115 @@
         "title": "Explore the benefits of each material",
         "sections": [
             {
-                "type": "ListUnordered",
+                "type": "ListSection",
                 "limit": {
                     "largeScreen": 2
                 },
                 "showAllLabel": "Show all",
-                "list": {
-                    "type": "LiContentBlock",
-                    "items": [
-                        {
-                            "type": "CardProduct",
-                            "clickEvent": {
-                                "type": "AnalyticalEvent",
-                                "data": {
-                                    "test": true
-                                },
-                                "name": "test"
+                "cards": [
+                    {
+                        "type": "CardProduct",
+                        "clickEvent": {
+                            "type": "AnalyticalEvent",
+                            "data": {
+                                "test": true
                             },
-                            "image": {
-                                "alt": "Nylon 3D printed gears",
-                                "mimeType": "image/jpeg",
-                                "type": "Image",
-                                "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
-                            },
-                            "list": {
-                                "type": "LiInlineLabel",
-                                "items": [
-                                    {
-                                        "text": "Abrasion-resistant"
-                                    },
-                                    {
-                                        "text": "Durable"
-                                    },
-                                    {
-                                        "text": "High strength-to-weight ratio"
-                                    },
-                                    {
-                                        "text": "Low friction coefficient"
-                                    }
-                                ]
-                            },
-                            "title": "Ultimaker Nylon",
-                            "url": "https://ultimaker.com/en/products/materials/nylon"
+                            "name": "test"
                         },
-                        {
-                            "type": "CardProduct",
-                            "clickEvent": {
-                                "type": "AnalyticalEvent",
-                                "data": {
-                                    "test": true
-                                },
-                                "name": "test"
-                            },
-                            "list": {
-                                "type": "LiInlineLabel",
-                                "items": [
-                                    {
-                                        "text": "Abrasion-resistant"
-                                    },
-                                    {
-                                        "text": "Durable"
-                                    },
-                                    {
-                                        "text": "High strength-to-weight ratio"
-                                    },
-                                    {
-                                        "text": "Low friction coefficient"
-                                    }
-                                ]
-                            },
-                            "title": "Ultimaker Nylon",
-                            "url": "https://ultimaker.com/en/products/materials/nylon"
+                        "image": {
+                            "alt": "Nylon 3D printed gears",
+                            "mimeType": "image/jpeg",
+                            "type": "Image",
+                            "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
                         },
-                        {
-                            "type": "CardProduct",
-                            "clickEvent": {
-                                "type": "AnalyticalEvent",
-                                "data": {
-                                    "test": true
+                        "listItems": {
+                            "type": "LiInlineLabel",
+                            "items": [
+                                {
+                                    "text": "Abrasion-resistant"
                                 },
-                                "name": "test"
-                            },
-                            "image": {
-                                "alt": "Nylon 3D printed gears",
-                                "mimeType": "image/jpeg",
-                                "type": "Image",
-                                "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
-                            },
-                            "list": {
-                                "type": "LiInlineLabels",
-                                "items": []
-                            },
-                            "title": "Ultimaker Nylon",
-                            "url": "https://ultimaker.com/en/products/materials/nylon"
+                                {
+                                    "text": "Durable"
+                                },
+                                {
+                                    "text": "High strength-to-weight ratio"
+                                },
+                                {
+                                    "text": "Low friction coefficient"
+                                }
+                            ]
                         },
-                        {
-                            "type": "CardProduct",
-                            "clickEvent": {
-                                "type": "AnalyticalEvent",
-                                "data": {
-                                    "test": true
+                        "title": "Ultimaker Nylon",
+                        "url": "https://ultimaker.com/en/products/materials/nylon"
+                    },
+                    {
+                        "type": "CardProduct",
+                        "clickEvent": {
+                            "type": "AnalyticalEvent",
+                            "data": {
+                                "test": true
+                            },
+                            "name": "test"
+                        },
+                        "listItems": {
+                            "type": "LiInlineLabel",
+                            "items": [
+                                {
+                                    "text": "Abrasion-resistant"
                                 },
-                                "name": "test"
+                                {
+                                    "text": "Durable"
+                                },
+                                {
+                                    "text": "High strength-to-weight ratio"
+                                },
+                                {
+                                    "text": "Low friction coefficient"
+                                }
+                            ]
+                        },
+                        "title": "Ultimaker Nylon",
+                        "url": "https://ultimaker.com/en/products/materials/nylon"
+                    },
+                    {
+                        "type": "CardProduct",
+                        "clickEvent": {
+                            "type": "AnalyticalEvent",
+                            "data": {
+                                "test": true
                             },
-                            "list": {
-                                "type": "LiInlineLabel",
-                                "items": []
+                            "name": "test"
+                        },
+                        "image": {
+                            "alt": "Nylon 3D printed gears",
+                            "mimeType": "image/jpeg",
+                            "type": "Image",
+                            "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
+                        },
+                        "listItems": {
+                            "type": "LiInlineLabels",
+                            "items": []
+                        },
+                        "title": "Ultimaker Nylon",
+                        "url": "https://ultimaker.com/en/products/materials/nylon"
+                    },
+                    {
+                        "type": "CardProduct",
+                        "clickEvent": {
+                            "type": "AnalyticalEvent",
+                            "data": {
+                                "test": true
                             },
-                            "title": "Ultimaker Nylon",
-                            "url": "https://ultimaker.com/en/products/materials/nylon"
-                        }
-                    ]
-                }
+                            "name": "test"
+                        },
+                        "listItems": {
+                            "type": "LiInlineLabel",
+                            "items": []
+                        },
+                        "title": "Ultimaker Nylon",
+                        "url": "https://ultimaker.com/en/products/materials/nylon"
+                    }
+                ]
             }
         ]
     }
