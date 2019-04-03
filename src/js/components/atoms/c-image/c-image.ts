@@ -1,5 +1,6 @@
-import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
+import { Component, Prop, Vue, Watch, Mixins } from 'vue-property-decorator';
 import { FocusArea, ICImageProps, ImageFormat, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
+import { InView } from 'js/mixins/in-view';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
 import { imageConstants } from './c-image.constants';
@@ -9,7 +10,7 @@ import { imageConstants } from './c-image.constants';
     template: require('./c-image.html'),
 })
 
-export default class CImage extends Vue implements ICImageProps {
+export default class CImage extends Mixins(InView) implements ICImageProps {
     @Prop({ type: String, required: true })
     mimeType!: string;
 
@@ -18,9 +19,6 @@ export default class CImage extends Vue implements ICImageProps {
 
     @Prop({ type: String, default: '' })
     alt!: string;
-
-    @Prop({ type: Boolean, default: true })
-    keepInView!: boolean;
 
     @Prop({ type: Boolean, default: false })
     crop!: boolean;
@@ -46,7 +44,6 @@ export default class CImage extends Vue implements ICImageProps {
     viewportUtil = new ViewportUtil();
     thumbnailLoaded: boolean = false;
     imageLoaded: boolean = false;
-    inView: boolean = false;
     ready:boolean = false;
     width: number = 0;
     height: number = 0;
@@ -172,11 +169,6 @@ export default class CImage extends Vue implements ICImageProps {
         const imageToLoad = document.createElement('img');
         imageToLoad.src = this.imageUrl;
         imageToLoad.addEventListener('load', this.imageLoadHandler);
-    }
-
-    inViewHandler(inView) {
-        if (this.inView && this.keepInView) { return; }
-        this.inView = inView;
     }
 
     resizeHandler() {
