@@ -10,7 +10,13 @@ exports[`Storyshots Atoms|links Content link 1`] = `
     <section
       class="story__atom"
     >
-      <!---->
+      <a
+        class=""
+        href="#/#"
+      >
+        <!---->
+         Content-link
+      </a>
     </section>
   </section>
 </section>

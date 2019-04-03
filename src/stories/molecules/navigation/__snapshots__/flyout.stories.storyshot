@@ -8,7 +8,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
     class="story"
   >
     <section
-      class="stories__molecule"
+      class="stories__molecules"
     >
       <ul
         class="main-nav__flyout"
@@ -18,13 +18,14 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-            id="flyout_title_339_0"
+            id="flyout_title_334_0"
           >
             Flyout title one
           </strong>
            
           <ul
-            aria-labelledby="flyout_title_339_0"
+            aria-expanded="true"
+            aria-labelledby="flyout_title_334_0"
             class="flyout__list"
           >
             <li
@@ -105,14 +106,15 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-            id="flyout_title_339_1"
+            id="flyout_title_334_1"
           >
             Flyout title two
           </strong>
            
           <ul
+            aria-expanded="true"
             aria-haspopup="true"
-            aria-labelledby="flyout_title_339_1"
+            aria-labelledby="flyout_title_334_1"
             class="flyout__list"
           >
             <li
@@ -175,6 +177,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
              
             <li
               class="flyout__list-item"
+              style="display: none;"
             >
               <a
                 aria-hidden="true"
@@ -195,7 +198,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
             <!---->
             <li
               class="flyout__list-item"
-              style="display: none;"
             >
               <a
                 class="flyout__link link"
@@ -214,7 +216,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
             </li>
             <li
               class="flyout__list-item"
-              style="display: none;"
             >
               <a
                 class="flyout__link link"
@@ -233,7 +234,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
             </li>
             <li
               class="flyout__list-item"
-              style="display: none;"
             >
               <a
                 class="flyout__link link"
@@ -290,14 +290,15 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-            id="flyout_title_339_2"
+            id="flyout_title_334_2"
           >
             Flyout title three
           </strong>
            
           <ul
+            aria-expanded="true"
             aria-haspopup="true"
-            aria-labelledby="flyout_title_339_2"
+            aria-labelledby="flyout_title_334_2"
             class="flyout__list"
           >
             <li
@@ -359,6 +360,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
              
             <li
               class="flyout__list-item"
+              style="display: none;"
             >
               <a
                 aria-hidden="true"
@@ -379,7 +381,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
             <!---->
             <li
               class="flyout__list-item"
-              style="display: none;"
             >
               <a
                 class="flyout__link link"
@@ -398,7 +399,6 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
             </li>
             <li
               class="flyout__list-item"
-              style="display: none;"
             >
               <a
                 class="flyout__link link"

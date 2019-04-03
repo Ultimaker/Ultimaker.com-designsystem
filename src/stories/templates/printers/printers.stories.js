@@ -1,16 +1,16 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs} from '@storybook/addon-knobs';
-import headerKnobs from '@root/src/stories/organisms/page-header/page-header.knobs.stories';
-import footerKnobs from '@root/src/stories/organisms/page-footer/page-footer.knobs.stories';
+import headerKnobs from 'src/stories/organisms/page-header/page-header.knobs.stories';
+import footerKnobs from 'src/stories/organisms/page-footer/page-footer.knobs.stories';
 import heroProductsApplicationKnobs
-    from '@root/src/stories/organisms/hero-products-application/hero-products-application.knobs.stories';
-import brandsKnobs from '@root/src/stories/organisms/brands/brands.knobs.stories';
-import sliderRevealKnobs from '@root/src/stories/organisms/slider-reveal/slider-reveal.knobs.stories';
-import examplesKnobs from '@root/src/stories/organisms/examples/examples.knobs.stories';
-import exploreKnobs from '@root/src/stories/organisms/explore/explore.knobs.stories';
-import ecosystemKnobs from '@root/src/stories/organisms/ecosystem/ecosystem.knobs.stories';
-import casesKnobs from '@root/src/stories/organisms/cases/cases.knobs.stories';
-import generalContentKnobs from '@root/src/stories/organisms/general-content/general-content.knobs.stories';
+    from 'src/stories/organisms/hero-products-application/hero-products-application.knobs.stories';
+import brandsKnobs from 'src/stories/organisms/brands/brands.knobs.stories';
+import sliderRevealKnobs from 'src/stories/organisms/slider-reveal/slider-reveal.knobs.stories';
+import examplesKnobs from 'src/stories/organisms/examples/examples.knobs.stories';
+import exploreKnobs from 'src/stories/organisms/explore/explore.knobs.stories';
+import ecosystemKnobs from 'src/stories/organisms/ecosystem/ecosystem.knobs.stories';
+import casesKnobs from 'src/stories/organisms/cases/cases.knobs.stories';
+import generalContentKnobs from 'src/stories/organisms/general-content/general-content.knobs.stories';
 
 storiesOf('templates|printers', module)
     .addDecorator(withKnobs)
