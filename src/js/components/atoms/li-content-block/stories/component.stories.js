@@ -1,11 +1,15 @@
 import {storiesOf} from '@storybook/vue';
-import data from 'atoms/li-content-block/stories/data.json';
+import data from './data.json';
 
 storiesOf('Atoms|list items', module)
     .add('li-content-block',
         () => {
             return {
-                data: () => data,
+                data: () => {
+                    return {
+                        data: data['li-content-block']
+                    };
+                },
                 template: require('./template.html')
             };
         },

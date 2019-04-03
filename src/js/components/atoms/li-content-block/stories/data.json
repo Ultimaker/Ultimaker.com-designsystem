@@ -1,5 +1,5 @@
 {
-    "data": {
+    "li-content-block": {
         "item": {
             "type": "CardProduct",
             "clickEvent": {
@@ -17,10 +17,18 @@
             },
             "list": {
                 "items": [
-                    "Abrasion-resistant",
-                    "Durable",
-                    "High strength-to-weight ratio",
-                    "Low friction coefficient"
+                    {
+                        "text": "Abrasion-resistant"
+                    },
+                    {
+                        "text": "Durable"
+                    },
+                    {
+                        "text": "High strength-to-weight ratio"
+                    },
+                    {
+                        "text": "Low friction coefficient"
+                    }
                 ],
                 "type": "LiInlineLabel"
             },

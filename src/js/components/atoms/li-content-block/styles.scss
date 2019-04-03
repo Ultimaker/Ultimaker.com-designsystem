@@ -1,5 +1,10 @@
-@import "~src/scss/settings/_all";
+.list__item {
+    &--content-block {
+        list-style: none;
+    }
 
-.li-content-block {
-    list-style: none;
+    &--content-block.list__item {
+        margin-bottom: 0;
+        padding-left: 0;
+    }
 }
