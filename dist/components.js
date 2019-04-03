@@ -10395,7 +10395,7 @@ exports.default = SubNavigationItem;
 /* 226 */
 /***/ (function(module, exports) {
 
-module.exports = "<base-link :url=\"url\" class=\"overflow-container__link link link--reversed\">\n    <div class=\"overflow-container__image-container\">\n        <c-image v-if=\"image\" v-bind=\"image\" keep-in-view></c-image>\n    </div>\n    <a class=\"overflow-container__label\" :aria-label=\"label\" >\n        <span class=\"link__underline\">\n            {{label}}\n        </span>\n    </a>\n</base-link>\n";
+module.exports = "<base-link :url=\"url\" class=\"overflow-container__link link link--reversed\">\n    <div class=\"overflow-container__image-container\">\n        <c-image v-if=\"image\" v-bind=\"image\" keep-in-view></c-image>\n    </div>\n    <div class=\"overflow-container__label\" :aria-label=\"label\" >\n        <span class=\"link__underline\">\n            {{label}}\n        </span>\n    </div>\n</base-link>\n";
 
 /***/ }),
 /* 227 */
@@ -13123,6 +13123,7 @@ var OverflowContainer = function (_Vue) {
         var _this = _possibleConstructorReturn(this, (OverflowContainer.__proto__ || Object.getPrototypeOf(OverflowContainer)).apply(this, arguments));
 
         _this.activeSelector = '.active';
+        _this.isTouch = false;
         return _this;
     }
 
@@ -13130,17 +13131,13 @@ var OverflowContainer = function (_Vue) {
         key: "mounted",
         value: function mounted() {
             var subnav = this.$refs.subNav;
+            this.isTouch = _browserCapabilities2.default.supportsTouch;
             if (subnav) {
                 var activeItem = subnav.querySelector(this.activeSelector);
                 if (activeItem) {
                     activeItem.scrollIntoView({ inline: 'center' });
                 }
             }
-        }
-    }, {
-        key: "isTouch",
-        get: function get() {
-            return _browserCapabilities2.default.supportsTouch;
         }
     }]);
 
@@ -13157,7 +13154,7 @@ exports.default = OverflowContainer;
 /* 303 */
 /***/ (function(module, exports) {
 
-module.exports = "<nav aria-label=\"sub items\" class=\"overflow-container overflow-container--fixed\" ref=\"subNav\" v-if=\"items\">\n    <ul class=\"overflow-container__list\" :class=\"isTouch ? 'touch' : ''\" role=\"presentation\"  v-if=\"items\">\n        <li class=\"overflow-container__item\" v-for=\"(item, index) in items\" ref=\"listItems\" role=\"menuitem\">\n            <component :is=\"item.type\"\n                       :key=\"index\"\n                       v-bind=\"item\">\n            </component>\n        </li>\n    </ul>\n</nav>\n";
+module.exports = "<nav aria-label=\"sub items\" class=\"overflow-container overflow-container--fixed\" ref=\"subNav\" v-if=\"items\">\n    <ul class=\"overflow-container__list\" :class=\"isTouch ? 'touch' : ''\" role=\"presentation\"  v-if=\"items\">\n        <li class=\"overflow-container__item\" v-for=\"(item, index) in items\" ref=\"listItems\" >\n            <component :is=\"item.type\"\n                       :key=\"index\"\n                       v-bind=\"item\">\n            </component>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
 /* 304 */

@@ -2,9 +2,9 @@
     <div class="overflow-container__image-container">
         <c-image v-if="image" v-bind="image" keep-in-view></c-image>
     </div>
-    <a class="overflow-container__label" :aria-label="label" >
+    <div class="overflow-container__label" :aria-label="label" >
         <span class="link__underline">
             {{label}}
         </span>
-    </a>
+    </div>
 </base-link>

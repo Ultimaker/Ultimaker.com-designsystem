@@ -14,13 +14,12 @@ export default class OverflowContainer extends Vue {
     $refs: any;
 
     activeSelector: string = '.active';
-
-    get isTouch() {
-        return BrowserCapabilities.supportsTouch;
-    }
+    isTouch: boolean = false;
 
     mounted() {
         const subnav  = this.$refs.subNav;
+        this.isTouch = BrowserCapabilities.supportsTouch;
+
         if (subnav) {
             const activeItem = subnav.querySelector(this.activeSelector);
 
