@@ -2157,7 +2157,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
           />
            
           <section
-            class="container"
+            class="hero-cover__container container"
           >
             <div
               class="flexgrid__cell--xs-6 hero--cover-reset"
