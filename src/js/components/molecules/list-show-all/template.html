@@ -4,4 +4,6 @@
             <component :is="list.listItems.type" :item="item" :key="index" />
         </template>
     </ul>
+
+    <button v-if="!allItemsVisible" @click="showAllItems" class="button--secondary list-section-list__button" >{{ showCount() }}</button>
 </section>
