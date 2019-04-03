@@ -5,7 +5,9 @@ import knobs from './examples.knobs.stories.js';
 storiesOf('organisms|examples', module)
     .addDecorator(withKnobs)
     .add('Examples', () => ({
-        data: () => knobs(),
+        props: {
+            examples: {default: knobs().examples}
+        },
         template: require('./examples.stories.html')
     }),
     {

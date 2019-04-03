@@ -5,7 +5,9 @@ import knobs from './explore.knobs.stories.js';
 storiesOf('organisms|explore', module)
     .addDecorator(withKnobs)
     .add('Explore', () => ({
-        data: () => knobs(),
+        props: {
+            explore: {default: knobs().explore}
+        },
         template: require('./explore.stories.html')
     }),
     {

@@ -5,7 +5,9 @@ import knobs from './ecosystem.knobs.stories.js';
 storiesOf('organisms|ecosystem', module)
     .addDecorator(withKnobs)
     .add('Ecosystem', () => ({
-        data: () => knobs(),
+        props: {
+            ecosystem: {default: knobs().ecosystem}
+        },
         template: require('./ecosystem.stories.html')
     }),
     {

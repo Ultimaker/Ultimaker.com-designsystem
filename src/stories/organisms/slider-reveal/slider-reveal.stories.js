@@ -5,7 +5,9 @@ import knobs from './slider-reveal.knobs.stories.js';
 storiesOf('organisms|slider-reveal', module)
     .addDecorator(withKnobs)
     .add('Slider reveal', () => ({
-        data: () => knobs(),
+        props: {
+            slider: {default: knobs().slider}
+        },
         template: require('./slider-reveal.stories.html')
     }),
     {

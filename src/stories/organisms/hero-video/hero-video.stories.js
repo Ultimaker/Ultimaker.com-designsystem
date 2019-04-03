@@ -5,7 +5,11 @@ import knobs from './hero-video.knobs.stories.js';
 storiesOf('organisms|hero', module)
     .addDecorator(withKnobs)
     .add('Hero video', () => ({
-        data: () =>  knobs(),
+        props: {
+            heroVideo: {
+                default: knobs().heroVideo
+            }
+        },
         template: require('./hero-video.stories.html')
     }),
     {
