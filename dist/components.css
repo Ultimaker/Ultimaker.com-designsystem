@@ -4372,6 +4372,7 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
   flex: 0 1 auto;
   text-align: center;
   max-width: 120px;
+  min-width: 120px;
   padding: 0 12px 0;
   margin: 0 0 12px 0; }
 
