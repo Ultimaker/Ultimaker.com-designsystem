@@ -5,7 +5,7 @@
         "sections": [
             {
                 "type": "ListShowAll",
-                "limit": 20,
+                "limit": 2,
                 "label": "Show all",
                 "list": {
                     "listItems": {

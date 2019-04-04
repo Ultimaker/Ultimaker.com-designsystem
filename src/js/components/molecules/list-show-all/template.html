@@ -1,11 +1,18 @@
 <section class="list-show-all">
     <div class="list-show-all__list-container">
         <ul class="list list-show-all__list">
-            <template v-if="index < limit" v-for="(item, index) in list.listItems.items">
-                <component :is="list.listItems.type" :item="item" :key="index"/>
+            <template v-if="!showAllItems">
+                <template v-if="index < limit" v-for="(item, index) in list.listItems.items">
+                    <component :is="list.listItems.type" :item="item" :key="index"/>
+                </template>
+            </template>
+            <template v-else>
+                <template v-for="(item, index) in list.listItems.items">
+                    <component :is="list.listItems.type" :item="item" :key="index"/>
+                </template>
             </template>
         </ul>
     </div>
 
-    <button v-if="!allItemsVisible" @click="showAllItems" class="button--secondary list-show-all__button">{{ showCount() }}</button>
+    <button v-if="!showAllItems" @click="show" class="button--secondary list-show-all__button">{{ showCount() }}</button>
 </section>

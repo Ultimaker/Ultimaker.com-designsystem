@@ -10,10 +10,10 @@ export default class ListShowAll extends Vue {
     @Prop({ type: Number }) limit?: number;
     @Prop({ type: String }) label?: string;
 
-    allItemsVisible: boolean = false;
+    showAllItems: boolean = false;
 
-    showAllItems(evt): void {
-        console.log(evt);
+    show(evt): void {
+        this.showAllItems = true;
     }
 
     showCount(): string {
