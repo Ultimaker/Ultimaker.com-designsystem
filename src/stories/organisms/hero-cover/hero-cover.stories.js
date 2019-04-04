@@ -5,7 +5,9 @@ import knobs from './hero-cover.knobs.stories.js';
 storiesOf('organisms|hero', module)
     .addDecorator(withKnobs)
     .add('Hero cover', () => ({
-        data: () =>  knobs(),
+        props: {
+            heroCover: {default: knobs().heroCover}
+        },
         template: require('./hero-cover.stories.html')
     }),
     {
