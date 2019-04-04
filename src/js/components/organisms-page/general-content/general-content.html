@@ -1,7 +1,7 @@
 <article class="general-content">
     <section class="container general-content__container">
         <div class="flexgrid flexgrid--gutter" :class="{'flexgrid--row-reversed': reversed}">
-            <div class="flexgrid__cell--xs-6 general-content__grid-cell">
+            <div class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content">
                 <h3 class="general-content__title"> {{ title }}</h3>
                 <p class="general-content__body">{{ description }}</p>
                 <cta-block v-if="ctas"
@@ -13,7 +13,7 @@
                            block="'general-content'">
                 </cta-block>
             </div>
-            <div class="flexgrid__cell--xs-6 general-content__grid-cell">
+            <div class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image">
                 <div class="general-content__image-wrapper">
                     <c-image v-if="image" v-bind="image"></c-image>
                 </div>

@@ -13,12 +13,27 @@
     }
 }
 
+.general-content__image {
+    order: 1;
+
+    @include min-tablet () {
+         order: inherit;
+    }
+}
+
+.general-content__content {
+    order: 2;
+
+    @include min-tablet () {
+         order: inherit;
+    }
+}
+
 @include max-mobile-xl() {
     .general-content__image-wrapper{
         position: relative;
         left: $buildingUnit * 0.5;
         right: $buildingUnit;
-        bottom: $buildingUnit * -5;
         margin: auto;
         padding: 0 $buildingUnit * 0.5;
     }
