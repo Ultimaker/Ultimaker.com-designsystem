@@ -13,7 +13,7 @@ export default class OverflowContainer extends Vue {
     $nextTick;
     $refs: any;
 
-    activeSelector: string = '.active';
+    activeSelector: string = '.exact-active';
     isTouch: boolean = false;
 
     mounted() {
@@ -23,7 +23,8 @@ export default class OverflowContainer extends Vue {
         if (subnav) {
             const activeItem = subnav.querySelector(this.activeSelector);
 
-            if (activeItem) {
+            if (activeItem && this.isTouch) {
+                console.log('ACTIVE ITEM', activeItem);
                 activeItem.scrollIntoView({ inline: 'center' });
             }
         }

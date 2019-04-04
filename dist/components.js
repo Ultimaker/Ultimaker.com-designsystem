@@ -13122,7 +13122,7 @@ var OverflowContainer = function (_Vue) {
 
         var _this = _possibleConstructorReturn(this, (OverflowContainer.__proto__ || Object.getPrototypeOf(OverflowContainer)).apply(this, arguments));
 
-        _this.activeSelector = '.active';
+        _this.activeSelector = '.exact-active';
         _this.isTouch = false;
         return _this;
     }
@@ -13134,7 +13134,8 @@ var OverflowContainer = function (_Vue) {
             this.isTouch = _browserCapabilities2.default.supportsTouch;
             if (subnav) {
                 var activeItem = subnav.querySelector(this.activeSelector);
-                if (activeItem) {
+                if (activeItem && this.isTouch) {
+                    console.log('ACTIVE ITEM', activeItem);
                     activeItem.scrollIntoView({ inline: 'center' });
                 }
             }
