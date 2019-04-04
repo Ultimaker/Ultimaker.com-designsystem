@@ -3,6 +3,7 @@
 .card-product {
     position: relative;
     width: 296px;
+    background-color: $colorWhite;
     border: 1px solid $colorGrayLight;
 
     &__heading {
