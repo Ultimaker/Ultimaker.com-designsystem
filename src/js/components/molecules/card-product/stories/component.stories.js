@@ -53,7 +53,7 @@ storiesOf('Molecules|layout/cards/card-product', module)
             }
         }
     )
-    .add('no image or properties',
+    .add('no image, no properties',
         () => {
             return {
                 data: () => {

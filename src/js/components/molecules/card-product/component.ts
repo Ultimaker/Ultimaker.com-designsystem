@@ -11,7 +11,7 @@ import './styles.scss';
 export default class CardProduct extends Vue implements ICardProduct {
     @Prop({ type: Object }) clickEvent?: ICardProduct['clickEvent'];
     @Prop({ type: Object }) image?: ICardProduct['image'] | undefined;
-    @Prop({ type: Object }) listItems?: Object;
+    @Prop({ type: Object }) properties?: ICardProduct['properties'];
     @Prop({ type: String, required: true }) title!: ICardProduct['title'];
     @Prop({ type: String, required: true }) url!: ICardProduct['url'];
 }

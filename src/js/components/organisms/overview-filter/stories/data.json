@@ -26,7 +26,7 @@
                                     "type": "Image",
                                     "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
                                 },
-                                "listItems": {
+                                "properties": {
                                     "type": "LiInlineLabel",
                                     "items": [
                                         "Abrasion-resistant",
@@ -47,7 +47,7 @@
                                     },
                                     "name": "test"
                                 },
-                                "listItems": {
+                                "properties": {
                                     "type": "LiInlineLabel",
                                     "items": [
                                         "Abrasion-resistant",
@@ -74,7 +74,7 @@
                                     "type": "Image",
                                     "url": "https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
                                 },
-                                "listItems": {
+                                "properties": {
                                     "type": "LiInlineLabels",
                                     "items": []
                                 },
@@ -90,7 +90,7 @@
                                     },
                                     "name": "test"
                                 },
-                                "listItems": {
+                                "properties": {
                                     "type": "LiInlineLabel",
                                     "items": []
                                 },
