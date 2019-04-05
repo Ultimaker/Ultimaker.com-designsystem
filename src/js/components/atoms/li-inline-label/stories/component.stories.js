@@ -1,5 +1,4 @@
 import {storiesOf} from '@storybook/vue';
-import data from './data.json';
 
 storiesOf('Atoms|list items', module)
     .add('li-inline-label',
@@ -7,7 +6,7 @@ storiesOf('Atoms|list items', module)
             return {
                 data: () => {
                     return {
-                        data: data['li-inline-label']
+                        data: require('src/data/li-inline-label')
                     };
                 },
                 template: require('./template.html')

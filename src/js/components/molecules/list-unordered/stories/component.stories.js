@@ -1,5 +1,4 @@
 import {storiesOf} from '@storybook/vue';
-import data from './data.json';
 
 storiesOf('Molecules|layout/lists/list-unordered', module)
     .add('li-content-block',
@@ -7,7 +6,7 @@ storiesOf('Molecules|layout/lists/list-unordered', module)
             return {
                 data: () => {
                     return {
-                        data: data['li-content-block']
+                        data: require('src/data/list-unordered-content-block')
                     };
                 },
                 template: require('./template.html')
@@ -24,7 +23,7 @@ storiesOf('Molecules|layout/lists/list-unordered', module)
             return {
                 data: () => {
                     return {
-                        data: data['li-inline-label']
+                        data: require('src/data/list-unordered-inline-labels')
                     };
                 },
                 template: require('./template.html')
@@ -41,7 +40,7 @@ storiesOf('Molecules|layout/lists/list-unordered', module)
             return {
                 data: () => {
                     return {
-                        data: data['li-item']
+                        data: require('src/data/list-unordered-items')
                     };
                 },
                 template: require('./template.html')
