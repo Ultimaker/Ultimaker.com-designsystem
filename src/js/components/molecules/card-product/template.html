@@ -3,5 +3,5 @@
     <c-image class="card-product__image" v-bind="image" v-if="image" keep-in-view/>
     <div class="img--contain card-product__image gray-background" v-if="!image"></div>
     <h3 class="card-product__heading">{{ title }}</h3>
-    <list-unordered class="card-product__list" :listItems="properties"/>
+    <list-unordered class="card-product__list" :listItems="listItems"/>
 </article>
