@@ -7,7 +7,7 @@ import ViewportUtil from 'utils/viewport';
 })
 
 export default class ListShowAll extends Vue {
-    @Prop({ type: Object, required: true}) list!: object;
+    @Prop({ type: Object, required: true }) list!: object;
     @Prop({ type: Number }) limit?: number;
     @Prop({ type: String }) label?: string;
 
