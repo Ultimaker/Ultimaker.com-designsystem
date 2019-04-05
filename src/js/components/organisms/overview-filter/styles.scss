@@ -2,8 +2,6 @@
 @import "~src/scss/settings/_grid.scss";
 @import "~src/scss/tools/mixins/_media.scss";
 
-$itemWith: (296px + 24px); // this is very specific - how can we calculate it depending on actual content items?
-
 .overview--filter {
     &__title {
         margin-top: $buildingUnit * 4;
@@ -13,6 +11,14 @@ $itemWith: (296px + 24px); // this is very specific - how can we calculate it de
 }
 
 .list-show-all {
+    &__button {
+        display: block;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: $buildingUnit * 5;
+        margin-left: auto;
+    }
+
     &__list-container {
         display: flex;
         justify-content: center;
@@ -46,12 +52,4 @@ $itemWith: (296px + 24px); // this is very specific - how can we calculate it de
             }
         }
     }
-}
-
-.list-show-all__button {
-    display: block;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: $buildingUnit * 5;
-    margin-left: auto;
 }
