@@ -7,5 +7,5 @@ import './styles.scss';
 })
 
 export default class LiInlineLabel  extends Vue {
-    @Prop({ type: Object, required: true }) item!: object;
+    @Prop({ type: String, required: true }) item!: string;
 }

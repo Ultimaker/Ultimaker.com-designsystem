@@ -6,5 +6,5 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 })
 
 export default class ListUnordered  extends Vue {
-    @Prop({ type: Object, required: true }) listItems!: Object;
+    @Prop({ type: Object, required: true }) listItems!: Object[];
 }

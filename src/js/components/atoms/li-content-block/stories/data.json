@@ -18,18 +18,10 @@
             "listItems": {
                 "type": "LiInlineLabel",
                 "items": [
-                    {
-                        "text": "Abrasion-resistant"
-                    },
-                    {
-                        "text": "Durable"
-                    },
-                    {
-                        "text": "High strength-to-weight ratio"
-                    },
-                    {
-                        "text": "Low friction coefficient"
-                    }
+                    "Abrasion-resistant",
+                    "Durable",
+                    "High strength-to-weight ratio",
+                    "Low friction coefficient"
                 ]
             },
             "title": "Ultimaker Nylon",

@@ -24,33 +24,22 @@ $itemWith: (296px + 24px); // this is very specific - how can we calculate it de
             display: flex;
             flex-wrap: wrap;
 
-            width: $itemWith * 1; // how many items per container
-
             margin-bottom: 0;
             margin-left: $buildingUnit; // offset item margin-right
             margin-top: (-$buildingUnit); // offset item margin-top
 
             padding-left: 0;
 
-            @media (min-width: $itemWith * 3) {
-                width: $itemWith * 2;
+            @include min-tablet {
                 margin-top: (-$buildingUnit * 2); // offset item margin-top
                 margin-left: $buildingUnit * 2; // offset item margin-right
-            }
-
-            @media (min-width: $itemWith * 4) {
-                width: $itemWith * 3;
-            }
-
-            @media (min-width: $itemWith * 5) {
-                width: $itemWith * 4;
             }
 
             > .list__item {
                 margin-top: $buildingUnit;
                 margin-right: $buildingUnit;
 
-                @media (min-width: $itemWith * 3) {
+                @include min-tablet {
                     margin-top: $buildingUnit * 2;
                     margin-right: $buildingUnit * 2;
                 }

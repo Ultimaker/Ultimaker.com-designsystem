@@ -6,5 +6,5 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 })
 
 export default class LiItem  extends Vue {
-    @Prop({ type: Object, required: true }) item!: object;
+    @Prop({ type: String, required: true }) item!: string;
 }

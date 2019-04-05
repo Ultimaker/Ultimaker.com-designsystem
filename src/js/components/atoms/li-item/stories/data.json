@@ -1,7 +1,5 @@
 {
     "li-item": {
-        "item": {
-            "text": "Default list item"
-        }
+        "item": "Default list item"
     }
 }

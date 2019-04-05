@@ -21,18 +21,10 @@
                     "listItems": {
                         "type": "LiInlineLabel",
                         "items": [
-                            {
-                                "text": "Abrasion-resistant"
-                            },
-                            {
-                                "text": "Durable"
-                            },
-                            {
-                                "text": "High strength-to-weight ratio"
-                            },
-                            {
-                                "text": "Low friction coefficient"
-                            }
+                            "Abrasion-resistant",
+                            "Durable",
+                            "High strength-to-weight ratio",
+                            "Low friction coefficient"
                         ]
                     },
                     "title": "Ultimaker Nylon",
@@ -50,18 +42,10 @@
                     "listItems": {
                         "type": "LiInlineLabel",
                         "items": [
-                            {
-                                "text": "Abrasion-resistant"
-                            },
-                            {
-                                "text": "Durable"
-                            },
-                            {
-                                "text": "High strength-to-weight ratio"
-                            },
-                            {
-                                "text": "Low friction coefficient"
-                            }
+                            "Abrasion-resistant",
+                            "Durable",
+                            "High strength-to-weight ratio",
+                            "Low friction coefficient"
                         ]
                     },
                     "title": "Ultimaker Nylon",
@@ -112,30 +96,14 @@
         "listItems": {
             "type": "LiInlineLabel",
             "items": [
-                {
-                    "text": "Industrial-grade impact and abrasion resistance"
-                },
-                {
-                    "text": "Durable"
-                },
-                {
-                    "text": "High strength-to-weight ratio"
-                },
-                {
-                    "text": "Low friction coefficient"
-                },
-                {
-                    "text": "Good corrosion resistance to alkalis and organic chemicals"
-                },
-                {
-                    "text": "Reduced humidity absorption when compared to other Nylon filaments"
-                },
-                {
-                    "text": "Seamless 3D printing experience"
-                },
-                {
-                    "text": "Prints in dual extrusion with PVA or Breakaway"
-                }
+                "Industrial-grade impact and abrasion resistance",
+                "Durable",
+                "High strength-to-weight ratio",
+                "Low friction coefficient",
+                "Good corrosion resistance to alkalis and organic chemicals",
+                "Reduced humidity absorption when compared to other Nylon filaments",
+                "Seamless 3D printing experience",
+                "Prints in dual extrusion with PVA or Breakaway"
             ]
         }
     },
@@ -143,15 +111,9 @@
         "listItems": {
             "type": "LiItem",
             "items": [
-                {
-                    "text": "Default list item 1"
-                },
-                {
-                    "text": "Default list item 2"
-                },
-                {
-                    "text": "Default list item 3"
-                }
+                "Default list item 1",
+                "Default list item 2",
+                "Default list item 3"
             ]
         }
     }
