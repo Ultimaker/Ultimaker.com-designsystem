@@ -91,6 +91,13 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-bottom: 48px;
   text-align: center; }
 
+.list-show-all__button {
+  display: block;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto; }
+
 .list-show-all__list-container {
   display: flex;
   justify-content: center;
@@ -114,13 +121,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       .list-show-all__list.list > .list__item {
         margin-top: 24px;
         margin-right: 24px; } }
-
-.list-show-all__button {
-  display: block;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 60px;
-  margin-left: auto; }
 
 /*
 * Because we have a primary and secondary font family, we need to define both
