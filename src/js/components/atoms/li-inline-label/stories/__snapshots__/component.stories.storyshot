@@ -10,9 +10,11 @@ exports[`Storyshots Atoms|list items li-inline-label 1`] = `
     <section
       class="story__atom"
     >
-      <li-inline-label
-        item="Label"
-      />
+      <li
+        class="list__item list__item--label"
+      >
+        Label
+      </li>
     </section>
   </section>
 </section>

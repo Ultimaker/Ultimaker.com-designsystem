@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|list items li-content-block 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__atom"
+    >
+      <li
+        class="list__item list__item--content-block"
+      >
+        <article
+          class="card-product"
+          type="CardProduct"
+        >
+          <a
+            aria-label="Ultimaker Nylon"
+            class="anchor-overlay hit-area"
+            href="https://ultimaker.com/en/products/materials/nylon"
+            title="Ultimaker Nylon"
+          />
+           
+          <img
+            alt="Nylon 3D printed gears"
+            class="img--contain card-product__image img--loading"
+            src="https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg?w=20"
+            type="Image"
+          />
+           
+          <!---->
+           
+          <h3
+            class="card-product__heading"
+          >
+            Ultimaker Nylon
+          </h3>
+           
+          <ul
+            class="list card-product__list"
+          >
+            <li
+              class="list__item list__item--label"
+            >
+              Abrasion-resistant
+            </li>
+            <li
+              class="list__item list__item--label"
+            >
+              Durable
+            </li>
+            <li
+              class="list__item list__item--label"
+            >
+              High strength-to-weight ratio
+            </li>
+            <li
+              class="list__item list__item--label"
+            >
+              Low friction coefficient
+            </li>
+          </ul>
+        </article>
+      </li>
+    </section>
+  </section>
+</section>
+`;
