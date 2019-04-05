@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","vuex"], function(__WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__10__, __WEBPACK_EXTERNAL_MODULE__14__, __WEBPACK_EXTERNAL_MODULE__15__, __WEBPACK_EXTERNAL_MODULE__16__, __WEBPACK_EXTERNAL_MODULE__17__, __WEBPACK_EXTERNAL_MODULE__18__, __WEBPACK_EXTERNAL_MODULE__19__, __WEBPACK_EXTERNAL_MODULE__20__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__110__, __WEBPACK_EXTERNAL_MODULE__282__) { return /******/ (function(modules) { // webpackBootstrap
+=======
+define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","vuex"], function(__WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__3__, __WEBPACK_EXTERNAL_MODULE__10__, __WEBPACK_EXTERNAL_MODULE__13__, __WEBPACK_EXTERNAL_MODULE__14__, __WEBPACK_EXTERNAL_MODULE__15__, __WEBPACK_EXTERNAL_MODULE__16__, __WEBPACK_EXTERNAL_MODULE__17__, __WEBPACK_EXTERNAL_MODULE__18__, __WEBPACK_EXTERNAL_MODULE__19__, __WEBPACK_EXTERNAL_MODULE__20__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__311__) { return /******/ (function(modules) { // webpackBootstrap
+>>>>>>> feat(card product): add build
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -2083,7 +2087,11 @@ var Power4 = globals.Power4;
 var TweenPlugin = globals.TweenPlugin;
 var EventDispatcher = nonGlobals.events.EventDispatcher;
 
+<<<<<<< HEAD
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(190)(module), __webpack_require__(191)))
+=======
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(204)(module), __webpack_require__(205)))
+>>>>>>> feat(card product): add build
 
 /***/ }),
 /* 1 */
@@ -2546,6 +2554,20 @@ exports.default = _baseLink2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.default = {
+    click: 'gtm-click'
+};
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -2632,11 +2654,24 @@ exports.default = PublicEventService;
 
 
 Object.defineProperty(exports, "__esModule", {
+<<<<<<< HEAD
     value: true
 });
 exports.default = {
     click: 'gtm-click'
 };
+=======
+  value: true
+});
+
+var _baseLink = __webpack_require__(123);
+
+var _baseLink2 = _interopRequireDefault(_baseLink);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _baseLink2.default;
+>>>>>>> feat(card product): add build
 
 /***/ }),
 /* 9 */
@@ -2973,11 +3008,19 @@ var _components = __webpack_require__(114);
 
 var _components2 = _interopRequireDefault(_components);
 
+<<<<<<< HEAD
 var _directives = __webpack_require__(324);
 
 var Directives = _interopRequireWildcard(_directives);
 
 __webpack_require__(326);
+=======
+var _directives = __webpack_require__(349);
+
+var Directives = _interopRequireWildcard(_directives);
+
+__webpack_require__(351);
+>>>>>>> feat(card product): add build
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -4469,6 +4512,7 @@ var _atoms = __webpack_require__(115);
 
 var Atoms = _interopRequireWildcard(_atoms);
 
+<<<<<<< HEAD
 var _molecules = __webpack_require__(166);
 
 var Molecules = _interopRequireWildcard(_molecules);
@@ -4478,6 +4522,17 @@ var _organisms = __webpack_require__(254);
 var Organisms = _interopRequireWildcard(_organisms);
 
 var _organismsPage = __webpack_require__(261);
+=======
+var _molecules = __webpack_require__(176);
+
+var Molecules = _interopRequireWildcard(_molecules);
+
+var _organisms = __webpack_require__(274);
+
+var Organisms = _interopRequireWildcard(_organisms);
+
+var _organismsPage = __webpack_require__(290);
+>>>>>>> feat(card product): add build
 
 var OrganismsPage = _interopRequireWildcard(_organismsPage);
 
@@ -4496,7 +4551,20 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _animatedArrow = __webpack_require__(116);
+=======
+var _anchorOverlay = __webpack_require__(115);
+
+Object.defineProperty(exports, 'AnchorOverlay', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_anchorOverlay).default;
+  }
+});
+
+var _animatedArrow = __webpack_require__(120);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'AnimatedArrow', {
   enumerable: true,
@@ -4505,7 +4573,11 @@ Object.defineProperty(exports, 'AnimatedArrow', {
   }
 });
 
+<<<<<<< HEAD
 var _BaseLink = __webpack_require__(6);
+=======
+var _BaseLink = __webpack_require__(8);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'BaseLink', {
   enumerable: true,
@@ -4514,7 +4586,11 @@ Object.defineProperty(exports, 'BaseLink', {
   }
 });
 
+<<<<<<< HEAD
 var _contentLink = __webpack_require__(121);
+=======
+var _contentLink = __webpack_require__(125);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'ContentLink', {
   enumerable: true,
@@ -4523,7 +4599,11 @@ Object.defineProperty(exports, 'ContentLink', {
   }
 });
 
+<<<<<<< HEAD
 var _contentButton = __webpack_require__(123);
+=======
+var _contentButton = __webpack_require__(127);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'ContentButton', {
   enumerable: true,
@@ -4532,7 +4612,11 @@ Object.defineProperty(exports, 'ContentButton', {
   }
 });
 
+<<<<<<< HEAD
 var _actionButton = __webpack_require__(125);
+=======
+var _actionButton = __webpack_require__(129);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'ActionButton', {
   enumerable: true,
@@ -4541,7 +4625,11 @@ Object.defineProperty(exports, 'ActionButton', {
   }
 });
 
+<<<<<<< HEAD
 var _contentLinkList = __webpack_require__(128);
+=======
+var _contentLinkList = __webpack_require__(132);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'ContentLinkList', {
   enumerable: true,
@@ -4550,7 +4638,11 @@ Object.defineProperty(exports, 'ContentLinkList', {
   }
 });
 
+<<<<<<< HEAD
 var _hitArea = __webpack_require__(131);
+=======
+var _hitArea = __webpack_require__(135);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'HitArea', {
   enumerable: true,
@@ -4559,7 +4651,11 @@ Object.defineProperty(exports, 'HitArea', {
   }
 });
 
+<<<<<<< HEAD
 var _horizontalList = __webpack_require__(134);
+=======
+var _horizontalList = __webpack_require__(138);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'HorizontalList', {
   enumerable: true,
@@ -4568,7 +4664,11 @@ Object.defineProperty(exports, 'HorizontalList', {
   }
 });
 
+<<<<<<< HEAD
 var _icon = __webpack_require__(137);
+=======
+var _icon = __webpack_require__(141);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Icon', {
   enumerable: true,
@@ -4577,7 +4677,11 @@ Object.defineProperty(exports, 'Icon', {
   }
 });
 
+<<<<<<< HEAD
 var _cImage = __webpack_require__(140);
+=======
+var _cImage = __webpack_require__(144);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Image', {
   enumerable: true,
@@ -4586,7 +4690,38 @@ Object.defineProperty(exports, 'Image', {
   }
 });
 
+<<<<<<< HEAD
 var _navAssist = __webpack_require__(147);
+=======
+var _liContentBlock = __webpack_require__(149);
+
+Object.defineProperty(exports, 'LiContentBlock', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_liContentBlock).default;
+  }
+});
+
+var _liInlineLabel = __webpack_require__(153);
+
+Object.defineProperty(exports, 'LiInlineLabel', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_liInlineLabel).default;
+  }
+});
+
+var _liItem = __webpack_require__(157);
+
+Object.defineProperty(exports, 'LiItem', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_liItem).default;
+  }
+});
+
+var _navAssist = __webpack_require__(160);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'NavAssist', {
   enumerable: true,
@@ -4595,7 +4730,11 @@ Object.defineProperty(exports, 'NavAssist', {
   }
 });
 
+<<<<<<< HEAD
 var _responsivePicture = __webpack_require__(150);
+=======
+var _responsivePicture = __webpack_require__(163);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'ResponsivePicture', {
   enumerable: true,
@@ -4604,7 +4743,11 @@ Object.defineProperty(exports, 'ResponsivePicture', {
   }
 });
 
+<<<<<<< HEAD
 var _tabbableDefinitionList = __webpack_require__(154);
+=======
+var _tabbableDefinitionList = __webpack_require__(167);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'TabbableDefinitionList', {
   enumerable: true,
@@ -4613,7 +4756,11 @@ Object.defineProperty(exports, 'TabbableDefinitionList', {
   }
 });
 
+<<<<<<< HEAD
 var _tooltip = __webpack_require__(157);
+=======
+var _tooltip = __webpack_require__(170);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Tooltip', {
   enumerable: true,
@@ -4622,6 +4769,7 @@ Object.defineProperty(exports, 'Tooltip', {
   }
 });
 
+<<<<<<< HEAD
 var _youtubeLink = __webpack_require__(160);
 
 Object.defineProperty(exports, 'YoutubeLink', {
@@ -4632,6 +4780,9 @@ Object.defineProperty(exports, 'YoutubeLink', {
 });
 
 var _youtubeVideo = __webpack_require__(163);
+=======
+var _youtubeVideo = __webpack_require__(173);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'YoutubeVideo', {
   enumerable: true,
@@ -4653,7 +4804,196 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _animatedArrow = __webpack_require__(117);
+=======
+var _component = __webpack_require__(116);
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _component2.default;
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+var _clickEvents = __webpack_require__(117);
+
+var _clickEvents2 = _interopRequireDefault(_clickEvents);
+
+__webpack_require__(118);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AnchorOverlay = function (_Mixins) {
+    _inherits(AnchorOverlay, _Mixins);
+
+    function AnchorOverlay() {
+        _classCallCheck(this, AnchorOverlay);
+
+        return _possibleConstructorReturn(this, (AnchorOverlay.__proto__ || Object.getPrototypeOf(AnchorOverlay)).apply(this, arguments));
+    }
+
+    return AnchorOverlay;
+}((0, _vuePropertyDecorator.Mixins)(_clickEvents2.default));
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], AnchorOverlay.prototype, "clickEvent", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], AnchorOverlay.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], AnchorOverlay.prototype, "url", void 0);
+AnchorOverlay = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'AnchorOverlay',
+    template: __webpack_require__(119)
+})], AnchorOverlay);
+exports.default = AnchorOverlay;
+
+/***/ }),
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+var _events = __webpack_require__(6);
+
+var _events2 = _interopRequireDefault(_events);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var ClickEvents = function (_Vue) {
+    _inherits(ClickEvents, _Vue);
+
+    function ClickEvents() {
+        _classCallCheck(this, ClickEvents);
+
+        var _this = _possibleConstructorReturn(this, (ClickEvents.__proto__ || Object.getPrototypeOf(ClickEvents)).apply(this, arguments));
+
+        _this.domainRegex = /(http(s)?):\/\/(www.)?ultimaker\.com/;
+        return _this;
+    }
+
+    _createClass(ClickEvents, [{
+        key: "triggerEventClick",
+        value: function triggerEventClick() {
+            if (this.clickEvent) {
+                this.$emitPublic(this.clickEventType, this.clickEventData);
+            }
+        }
+    }, {
+        key: "clickEventData",
+        get: function get() {
+            if (this.clickEvent) {
+                return {
+                    dataType: this.clickEvent.name,
+                    data: _extends({}, this.clickEvent.data, {
+                        pageSlug: this.$route.fullPath,
+                        ctaUrlTarget: this.urlTarget
+                    })
+                };
+            }
+            return null;
+        }
+    }, {
+        key: "urlTarget",
+        get: function get() {
+            if (this.url) {
+                return this.url.match(this.domainRegex) ? '_self' : '_blank';
+            }
+            return '';
+        }
+    }, {
+        key: "clickEventType",
+        get: function get() {
+            return _events2.default.click;
+        }
+    }]);
+
+    return ClickEvents;
+}(_vuePropertyDecorator.Vue);
+ClickEvents = __decorate([_vuePropertyDecorator.Component], ClickEvents);
+exports.default = ClickEvents;
+
+/***/ }),
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 119 */
+/***/ (function(module, exports) {
+
+module.exports = "<a :href=\"url\" class=\"anchor-overlay hit-area\" :title=\"title\" :aria-label=\"title\" @click=\"triggerEventClick\"></a>\n";
+
+/***/ }),
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _animatedArrow = __webpack_require__(121);
+>>>>>>> feat(card product): add build
 
 var _animatedArrow2 = _interopRequireDefault(_animatedArrow);
 
@@ -4662,7 +5002,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _animatedArrow2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 117 */
+=======
+/* 121 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4704,18 +5048,30 @@ var AnimatedArrow = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 AnimatedArrow = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'animated-arrow',
+<<<<<<< HEAD
     template: __webpack_require__(118)
+=======
+    template: __webpack_require__(122)
+>>>>>>> feat(card product): add build
 })], AnimatedArrow);
 exports.default = AnimatedArrow;
 
 /***/ }),
+<<<<<<< HEAD
 /* 118 */
+=======
+/* 122 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<svg class=\"arrow--animated\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\">\n    <defs>\n        <clipPath id=\"mask\" class=\"arrow__mask\">\n            <rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" rotate=\"45deg\"/>\n        </clipPath>\n    </defs>\n    <g clip-path=\"url(#mask)\">\n        <path class=\"arrow__line arrow__line-1\" d=\"M15.3 55h94.8v10.1H15.3z\" clip-path=\"url(#mask)\" />\n        <path class=\"arrow__line arrow__line-2\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n        <path class=\"arrow__line arrow__line-3\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n    </g>\n</svg>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 119 */
+=======
+/* 123 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4733,7 +5089,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
-var _events = __webpack_require__(8);
+var _events = __webpack_require__(6);
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -4856,18 +5212,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], BaseLink.prototype, "clickEvent", void 0);
 BaseLink = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'base-link',
+<<<<<<< HEAD
     template: __webpack_require__(120)
+=======
+    template: __webpack_require__(124)
+>>>>>>> feat(card product): add build
 })], BaseLink);
 exports.default = BaseLink;
 
 /***/ }),
+<<<<<<< HEAD
 /* 120 */
+=======
+/* 124 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<component :class=\"classObject\"\n           @click=\"triggerEventClick\"\n           v-bind=\"linkProps\">\n    <icon v-if=\"this.icon\" :icon-name=\"icon\" />\n    <span v-if=\"!slots\" class=\"link__underline\">\n        {{label}}\n    </span>\n    <slot v-else ></slot>\n</component>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 121 */
+=======
+/* 125 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4877,7 +5245,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _contentLink = __webpack_require__(122);
+=======
+var _contentLink = __webpack_require__(126);
+>>>>>>> feat(card product): add build
 
 var _contentLink2 = _interopRequireDefault(_contentLink);
 
@@ -4886,7 +5258,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentLink2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 122 */
+=======
+/* 126 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4900,7 +5276,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
+<<<<<<< HEAD
 var _BaseLink2 = __webpack_require__(6);
+=======
+var _BaseLink2 = __webpack_require__(8);
+>>>>>>> feat(card product): add build
 
 var _BaseLink3 = _interopRequireDefault(_BaseLink2);
 
@@ -4945,7 +5325,11 @@ ContentLink = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ContentLink;
 
 /***/ }),
+<<<<<<< HEAD
 /* 123 */
+=======
+/* 127 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4955,7 +5339,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _contentButton = __webpack_require__(124);
+=======
+var _contentButton = __webpack_require__(128);
+>>>>>>> feat(card product): add build
 
 var _contentButton2 = _interopRequireDefault(_contentButton);
 
@@ -4964,7 +5352,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentButton2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 124 */
+=======
+/* 128 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4978,7 +5370,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
+<<<<<<< HEAD
 var _BaseLink2 = __webpack_require__(6);
+=======
+var _BaseLink2 = __webpack_require__(8);
+>>>>>>> feat(card product): add build
 
 var _BaseLink3 = _interopRequireDefault(_BaseLink2);
 
@@ -5023,7 +5419,11 @@ ContentButton = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ContentButton;
 
 /***/ }),
+<<<<<<< HEAD
 /* 125 */
+=======
+/* 129 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5033,7 +5433,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _actionButton = __webpack_require__(126);
+=======
+var _actionButton = __webpack_require__(130);
+>>>>>>> feat(card product): add build
 
 var _actionButton2 = _interopRequireDefault(_actionButton);
 
@@ -5042,7 +5446,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _actionButton2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 126 */
+=======
+/* 130 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5112,18 +5520,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], ActionButton.prototype, "label", void 0);
 ActionButton = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'ActionButton',
+<<<<<<< HEAD
     template: __webpack_require__(127)
+=======
+    template: __webpack_require__(131)
+>>>>>>> feat(card product): add build
 })], ActionButton);
 exports.default = ActionButton;
 
 /***/ }),
+<<<<<<< HEAD
 /* 127 */
+=======
+/* 131 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<a href=\"#\" :class=\"classObject\">\n    <icon v-if=\"this.icon\" :icon-name=\"icon\" />\n    <slot ></slot>\n</a>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 128 */
+=======
+/* 132 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5133,7 +5553,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _contentLinkList = __webpack_require__(129);
+=======
+var _contentLinkList = __webpack_require__(133);
+>>>>>>> feat(card product): add build
 
 var _contentLinkList2 = _interopRequireDefault(_contentLinkList);
 
@@ -5142,7 +5566,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentLinkList2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 129 */
+=======
+/* 133 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5189,18 +5617,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, default: [] }), __metadata("design:type", Array)], ContentLinkList.prototype, "links", void 0);
 ContentLinkList = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'content-link-list',
+<<<<<<< HEAD
     template: __webpack_require__(130)
+=======
+    template: __webpack_require__(134)
+>>>>>>> feat(card product): add build
 })], ContentLinkList);
 exports.default = ContentLinkList;
 
 /***/ }),
+<<<<<<< HEAD
 /* 130 */
+=======
+/* 134 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<ul :class=\"block + '__list'\">\n    <li v-for=\"link in links\" :class=\"block + '__item'\">\n        <content-link :class=\"link.class\" :block='block' :icon=\"link.icon\" :url=\"link.url\" :label=\"link.label\"></content-link>\n    </li>\n</ul>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 131 */
+=======
+/* 135 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5210,7 +5650,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _hitArea = __webpack_require__(132);
+=======
+var _hitArea = __webpack_require__(136);
+>>>>>>> feat(card product): add build
 
 var _hitArea2 = _interopRequireDefault(_hitArea);
 
@@ -5219,7 +5663,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _hitArea2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 132 */
+=======
+/* 136 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5261,18 +5709,30 @@ var HitArea = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 HitArea = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'hit-area',
+<<<<<<< HEAD
     template: __webpack_require__(133)
+=======
+    template: __webpack_require__(137)
+>>>>>>> feat(card product): add build
 })], HitArea);
 exports.default = HitArea;
 
 /***/ }),
+<<<<<<< HEAD
 /* 133 */
+=======
+/* 137 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"hit-area\" role=\"button\" tabindex=\"0\">\n    <slot></slot>\n</a>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 134 */
+=======
+/* 138 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5282,7 +5742,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _horizontalList = __webpack_require__(135);
+=======
+var _horizontalList = __webpack_require__(139);
+>>>>>>> feat(card product): add build
 
 var _horizontalList2 = _interopRequireDefault(_horizontalList);
 
@@ -5291,7 +5755,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _horizontalList2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 135 */
+=======
+/* 139 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5339,18 +5807,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], HorizontalList.prototype, "listItems", void 0);
 HorizontalList = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'horizontal-list',
+<<<<<<< HEAD
     template: __webpack_require__(136)
+=======
+    template: __webpack_require__(140)
+>>>>>>> feat(card product): add build
 })], HorizontalList);
 exports.default = HorizontalList;
 
 /***/ }),
+<<<<<<< HEAD
 /* 136 */
+=======
+/* 140 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<section :class=\"styleModifier\">\n    <strong class=\"caption-list__headline\">\n        {{ label }}\n    </strong>\n    <ul class=\"caption-list\">\n        <li class=\"caption-list__list-item\" v-for=\"item in listItems\">\n            {{ item.additionalContent }}\n            <a :href=\"item.url\">{{ item.text }}</a>\n        </li>\n    </ul>\n</section>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 137 */
+=======
+/* 141 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5360,7 +5840,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _icon = __webpack_require__(138);
+=======
+var _icon = __webpack_require__(142);
+>>>>>>> feat(card product): add build
 
 var _icon2 = _interopRequireDefault(_icon);
 
@@ -5369,7 +5853,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _icon2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 138 */
+=======
+/* 142 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5450,18 +5938,30 @@ var Icon = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], Icon.prototype, "iconName", void 0);
 Icon = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'icon',
+<<<<<<< HEAD
     template: __webpack_require__(139)
+=======
+    template: __webpack_require__(143)
+>>>>>>> feat(card product): add build
 })], Icon);
 exports.default = Icon;
 
 /***/ }),
+<<<<<<< HEAD
 /* 139 */
+=======
+/* 143 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<svg class=\"icon\" :class=\"iconClass\" :viewBox=\"viewBox\" v-if=\"ready\">\n    <use :xlink:href=\"iconRef\" v-if=\"!symbolData\"></use>\n</svg>\n\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 140 */
+=======
+/* 144 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5471,7 +5971,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _cImage = __webpack_require__(141);
+=======
+var _cImage = __webpack_require__(145);
+>>>>>>> feat(card product): add build
 
 var _cImage2 = _interopRequireDefault(_cImage);
 
@@ -5480,7 +5984,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _cImage2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 141 */
+=======
+/* 145 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5496,7 +6004,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
+<<<<<<< HEAD
 var _cImage = __webpack_require__(142);
+=======
+var _cImage = __webpack_require__(146);
+>>>>>>> feat(card product): add build
 
 var _inView = __webpack_require__(144);
 
@@ -5508,7 +6020,11 @@ var _viewport = __webpack_require__(2);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
+<<<<<<< HEAD
 var _cImage2 = __webpack_require__(145);
+=======
+var _cImage2 = __webpack_require__(147);
+>>>>>>> feat(card product): add build
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5751,12 +6267,20 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: null }), __
 __decorate([(0, _vuePropertyDecorator.Watch)('inView'), __metadata("design:type", Function), __metadata("design:paramtypes", [Boolean]), __metadata("design:returntype", Promise)], CImage.prototype, "inViewWatcher", null);
 CImage = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'c-image',
+<<<<<<< HEAD
     template: __webpack_require__(146)
+=======
+    template: __webpack_require__(148)
+>>>>>>> feat(card product): add build
 })], CImage);
 exports.default = CImage;
 
 /***/ }),
+<<<<<<< HEAD
 /* 142 */
+=======
+/* 146 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5825,6 +6349,7 @@ var Image = function Image() {
 exports.Image = Image;
 
 /***/ }),
+<<<<<<< HEAD
 /* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5939,6 +6464,9 @@ exports.InView = InView;
 
 /***/ }),
 /* 145 */
+=======
+/* 147 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5955,13 +6483,21 @@ var imageConstants = exports.imageConstants = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 146 */
+=======
+/* 148 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<img :alt=\"alt\" :src=\"src\" class=\"img--contain\" :class=\"classList\" />\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 147 */
+=======
+/* 149 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5971,7 +6507,255 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _navAssist = __webpack_require__(148);
+=======
+var _component = __webpack_require__(150);
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _component2.default;
+
+/***/ }),
+/* 150 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+__webpack_require__(151);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LiContentBlock = function (_Vue) {
+    _inherits(LiContentBlock, _Vue);
+
+    function LiContentBlock() {
+        _classCallCheck(this, LiContentBlock);
+
+        return _possibleConstructorReturn(this, (LiContentBlock.__proto__ || Object.getPrototypeOf(LiContentBlock)).apply(this, arguments));
+    }
+
+    return LiContentBlock;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], LiContentBlock.prototype, "item", void 0);
+LiContentBlock = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'LiContentBlock',
+    template: __webpack_require__(152)
+})], LiContentBlock);
+exports.default = LiContentBlock;
+
+/***/ }),
+/* 151 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 152 */
+/***/ (function(module, exports) {
+
+module.exports = "<li class=\"list__item list__item--content-block\">\n    <component :is=\"item.type\" v-bind=\"item\"/>\n</li>\n";
+
+/***/ }),
+/* 153 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _component = __webpack_require__(154);
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _component2.default;
+
+/***/ }),
+/* 154 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+__webpack_require__(155);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LiInlineLabel = function (_Vue) {
+    _inherits(LiInlineLabel, _Vue);
+
+    function LiInlineLabel() {
+        _classCallCheck(this, LiInlineLabel);
+
+        return _possibleConstructorReturn(this, (LiInlineLabel.__proto__ || Object.getPrototypeOf(LiInlineLabel)).apply(this, arguments));
+    }
+
+    return LiInlineLabel;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], LiInlineLabel.prototype, "item", void 0);
+LiInlineLabel = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'LiInlineLabel',
+    template: __webpack_require__(156)
+})], LiInlineLabel);
+exports.default = LiInlineLabel;
+
+/***/ }),
+/* 155 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 156 */
+/***/ (function(module, exports) {
+
+module.exports = "<li class=\"list__item list__item--label\">{{ item }}</li>\n";
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _component = __webpack_require__(158);
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _component2.default;
+
+/***/ }),
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LiItem = function (_Vue) {
+    _inherits(LiItem, _Vue);
+
+    function LiItem() {
+        _classCallCheck(this, LiItem);
+
+        return _possibleConstructorReturn(this, (LiItem.__proto__ || Object.getPrototypeOf(LiItem)).apply(this, arguments));
+    }
+
+    return LiItem;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], LiItem.prototype, "item", void 0);
+LiItem = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'LiItem',
+    template: __webpack_require__(159)
+})], LiItem);
+exports.default = LiItem;
+
+/***/ }),
+/* 159 */
+/***/ (function(module, exports) {
+
+module.exports = "<li class=\"list__item\">{{ item }}</li>\n";
+
+/***/ }),
+/* 160 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _navAssist = __webpack_require__(161);
+>>>>>>> feat(card product): add build
 
 var _navAssist2 = _interopRequireDefault(_navAssist);
 
@@ -5980,7 +6764,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _navAssist2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 148 */
+=======
+/* 161 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6053,18 +6841,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), 
 __decorate([(0, _vuePropertyDecorator.Watch)('openState'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], NavAssist.prototype, "onOpenStateChange", null);
 NavAssist = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'nav-assist',
+<<<<<<< HEAD
     template: __webpack_require__(149)
+=======
+    template: __webpack_require__(162)
+>>>>>>> feat(card product): add build
 })], NavAssist);
 exports.default = NavAssist;
 
 /***/ }),
+<<<<<<< HEAD
 /* 149 */
+=======
+/* 162 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<button type=\"button\" @click=\"toggleState()\" @keyup.esc=\"close\" class=\"nav-assist\"\n        :class=\"{'nav-assist--close': this.openState, 'nav-assist--initial-state': !this.used}\" aria-label=\"menu\"\n        :aria-expanded=\"this.openState.toString()\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <rect class=\"nav-assist__line nav-assist__line-2\" x=\"2\" y=\"11\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-1\" x=\"2\" y=\"4.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-3\" x=\"2\" y=\"17.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-4\" x=\"-1.3\" y=\"11\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"26.6\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-5\" x=\"11\" y=\"-1.3\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"2\" height=\"26.6\"/>\n    </svg>\n</button>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 150 */
+=======
+/* 163 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6074,7 +6874,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _responsivePicture = __webpack_require__(151);
+=======
+var _responsivePicture = __webpack_require__(164);
+>>>>>>> feat(card product): add build
 
 var _responsivePicture2 = _interopRequireDefault(_responsivePicture);
 
@@ -6083,7 +6887,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _responsivePicture2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 151 */
+=======
+/* 164 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6103,7 +6911,11 @@ var _viewport = __webpack_require__(2);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
+<<<<<<< HEAD
 var _responsivePictureSource = __webpack_require__(152);
+=======
+var _responsivePictureSource = __webpack_require__(165);
+>>>>>>> feat(card product): add build
 
 var _responsivePictureSource2 = _interopRequireDefault(_responsivePictureSource);
 
@@ -6215,7 +7027,11 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, def
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], ResponsivePicture.prototype, "imgClass", void 0);
 ResponsivePicture = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'responsive-picture',
+<<<<<<< HEAD
     template: __webpack_require__(153),
+=======
+    template: __webpack_require__(166),
+>>>>>>> feat(card product): add build
     components: {
         ResponsivePictureSource: _responsivePictureSource2.default
     }
@@ -6223,7 +7039,11 @@ ResponsivePicture = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ResponsivePicture;
 
 /***/ }),
+<<<<<<< HEAD
 /* 152 */
+=======
+/* 165 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6287,13 +7107,21 @@ ResponsivePictureSource = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ResponsivePictureSource;
 
 /***/ }),
+<<<<<<< HEAD
 /* 153 */
+=======
+/* 166 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<picture>\n    <template>\n        <responsive-picture-source v-if=\"desktopHdWidth\" media=\"(min-width: 1201px)\" :image=\"lazyLoading ? '' : desktopHdWidth\" />\n        <responsive-picture-source v-if=\"desktopWidth\" media=\"(min-width: 1025px)\" :image=\"lazyLoading ? '' : desktopWidth\" />\n        <responsive-picture-source v-if=\"tabletWidth\" media=\"(min-width: 768px)\" :image=\"lazyLoading ? '' : tabletWidth\" />\n        <responsive-picture-source v-if=\"mobileXlWidth\" media=\"(min-width: 569px)\" :image=\"lazyLoading ? '' : mobileXlWidth\" />\n        <responsive-picture-source v-if=\"mobileLWidth\" media=\"(min-width: 481px)\" :image=\" lazyLoading ? '' : mobileLWidth\" />\n        <responsive-picture-source media=\"(max-width: 480px)\" :image=\"mobileWidth\" />\n    </template>\n\n    <img :src=\"lazyLoading ? '' : mobileWidth.url ? mobileWidth.url : mobileWidth\" :alt=\"description\" class=\"img--responsive\" :class=\"classes\"/>\n</picture>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 154 */
+=======
+/* 167 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6303,7 +7131,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _tabbableDefinitionList = __webpack_require__(155);
+=======
+var _tabbableDefinitionList = __webpack_require__(168);
+>>>>>>> feat(card product): add build
 
 var _tabbableDefinitionList2 = _interopRequireDefault(_tabbableDefinitionList);
 
@@ -6312,7 +7144,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tabbableDefinitionList2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 155 */
+=======
+/* 168 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6338,7 +7174,11 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 exports.default = {
     name: 'tabbable-definition-list',
+<<<<<<< HEAD
     template: __webpack_require__(156),
+=======
+    template: __webpack_require__(169),
+>>>>>>> feat(card product): add build
     data: function data() {
         return {
             viewport: new _viewport2.default(),
@@ -6522,13 +7362,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 156 */
+=======
+/* 169 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<dl class=\"tabbable-dl\">\n    <template v-for=\"(item, index) in items\">\n        <dt class=\"tabbable-dl__term tabbable-dl__term--vue\" ref=\"terms\">\n            <a class=\"tabbable-dl__link\" @click.prevent=\"changeIndex(index)\" @keyup.enter=\"changeIndex(index)\" role=\"button\" tabindex=\"0\">\n                <h3 class=\"tabbable-dl__title\">\n                    <icon class=\"tabbable-dl__icon\" icon-name=\"angle-right\"></icon>\n                    {{ item.title }}\n                </h3>\n            </a>\n        </dt>\n        <dd class=\"tabbable-dl__desc tabbable-dl__desc--vue\" ref=\"descriptions\">{{ item.description }}</dd>\n    </template>\n</dl>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 157 */
+=======
+/* 170 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6538,7 +7386,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _tooltip = __webpack_require__(158);
+=======
+var _tooltip = __webpack_require__(171);
+>>>>>>> feat(card product): add build
 
 var _tooltip2 = _interopRequireDefault(_tooltip);
 
@@ -6547,7 +7399,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tooltip2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 158 */
+=======
+/* 171 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6606,18 +7462,30 @@ var Tooltip = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], Tooltip.prototype, "block", void 0);
 Tooltip = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'Tooltip',
+<<<<<<< HEAD
     template: __webpack_require__(159)
+=======
+    template: __webpack_require__(172)
+>>>>>>> feat(card product): add build
 })], Tooltip);
 exports.default = Tooltip;
 
 /***/ }),
+<<<<<<< HEAD
 /* 159 */
+=======
+/* 172 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"tooltip\" :class=\"classObject()\">\n    <slot/>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 160 */
+=======
+/* 173 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6627,6 +7495,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _youtubeLink = __webpack_require__(161);
 
 var _youtubeLink2 = _interopRequireDefault(_youtubeLink);
@@ -6739,6 +7608,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var _youtubeVideo = __webpack_require__(164);
+=======
+var _youtubeVideo = __webpack_require__(174);
+>>>>>>> feat(card product): add build
 
 var _youtubeVideo2 = _interopRequireDefault(_youtubeVideo);
 
@@ -6747,7 +7619,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _youtubeVideo2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 164 */
+=======
+/* 174 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6787,8 +7663,28 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+<<<<<<< HEAD
 var YoutubeVideo = function (_Vue) {
     _inherits(YoutubeVideo, _Vue);
+=======
+exports.default = {
+    name: 'youtube-video',
+    template: __webpack_require__(175),
+    data: function data() {
+        return {
+            loadVideo: false
+        };
+    },
+    props: _extends({
+        videoId: {
+            type: String,
+            required: true
+        }
+    }, embedProps),
+    computed: {
+        videoQuery: function videoQuery() {
+            var _this = this;
+>>>>>>> feat(card product): add build
 
     function YoutubeVideo() {
         _classCallCheck(this, YoutubeVideo);
@@ -6826,13 +7722,21 @@ YoutubeVideo = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = YoutubeVideo;
 
 /***/ }),
+<<<<<<< HEAD
 /* 165 */
+=======
+/* 175 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"youtube-video\">\n    <iframe v-if=\"loadVideo\" :src=\"videoUrl\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\" class=\"youtube-video__frame\"></iframe>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 166 */
+=======
+/* 176 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6842,7 +7746,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _autoComplete = __webpack_require__(167);
+=======
+var _autoComplete = __webpack_require__(177);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'AutoComplete', {
   enumerable: true,
@@ -6851,7 +7759,11 @@ Object.defineProperty(exports, 'AutoComplete', {
   }
 });
 
+<<<<<<< HEAD
 var _brandCard = __webpack_require__(170);
+=======
+var _brandCard = __webpack_require__(180);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'BrandCard', {
   enumerable: true,
@@ -6860,7 +7772,11 @@ Object.defineProperty(exports, 'BrandCard', {
   }
 });
 
+<<<<<<< HEAD
 var _card = __webpack_require__(173);
+=======
+var _card = __webpack_require__(183);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Card', {
   enumerable: true,
@@ -6869,7 +7785,20 @@ Object.defineProperty(exports, 'Card', {
   }
 });
 
+<<<<<<< HEAD
 var _color = __webpack_require__(176);
+=======
+var _cardProduct = __webpack_require__(186);
+
+Object.defineProperty(exports, 'CardProduct', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_cardProduct).default;
+  }
+});
+
+var _color = __webpack_require__(190);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Color', {
   enumerable: true,
@@ -6878,7 +7807,11 @@ Object.defineProperty(exports, 'Color', {
   }
 });
 
+<<<<<<< HEAD
 var _contentToggle = __webpack_require__(179);
+=======
+var _contentToggle = __webpack_require__(193);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'ContentToggle', {
   enumerable: true,
@@ -6887,7 +7820,11 @@ Object.defineProperty(exports, 'ContentToggle', {
   }
 });
 
+<<<<<<< HEAD
 var _currency = __webpack_require__(182);
+=======
+var _currency = __webpack_require__(196);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Currency', {
   enumerable: true,
@@ -6896,7 +7833,11 @@ Object.defineProperty(exports, 'Currency', {
   }
 });
 
+<<<<<<< HEAD
 var _ctaBlock = __webpack_require__(185);
+=======
+var _ctaBlock = __webpack_require__(199);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'CtaBlock', {
   enumerable: true,
@@ -6905,7 +7846,11 @@ Object.defineProperty(exports, 'CtaBlock', {
   }
 });
 
+<<<<<<< HEAD
 var _fauxVerticalScroll = __webpack_require__(188);
+=======
+var _fauxVerticalScroll = __webpack_require__(202);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'FauxVerticalScroll', {
   enumerable: true,
@@ -6914,7 +7859,11 @@ Object.defineProperty(exports, 'FauxVerticalScroll', {
   }
 });
 
+<<<<<<< HEAD
 var _flyout = __webpack_require__(194);
+=======
+var _flyout = __webpack_require__(208);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Flyout', {
   enumerable: true,
@@ -6923,7 +7872,11 @@ Object.defineProperty(exports, 'Flyout', {
   }
 });
 
+<<<<<<< HEAD
 var _flyoutSection = __webpack_require__(197);
+=======
+var _flyoutSection = __webpack_require__(211);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'FlyoutSection', {
   enumerable: true,
@@ -6932,7 +7885,11 @@ Object.defineProperty(exports, 'FlyoutSection', {
   }
 });
 
+<<<<<<< HEAD
 var _footerNav = __webpack_require__(200);
+=======
+var _footerNav = __webpack_require__(214);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'FooterNav', {
   enumerable: true,
@@ -6941,7 +7898,11 @@ Object.defineProperty(exports, 'FooterNav', {
   }
 });
 
+<<<<<<< HEAD
 var _iconButton = __webpack_require__(203);
+=======
+var _iconButton = __webpack_require__(217);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'IconButton', {
   enumerable: true,
@@ -6950,7 +7911,11 @@ Object.defineProperty(exports, 'IconButton', {
   }
 });
 
+<<<<<<< HEAD
 var _legalNav = __webpack_require__(206);
+=======
+var _legalNav = __webpack_require__(220);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'LegalNav', {
   enumerable: true,
@@ -6959,7 +7924,29 @@ Object.defineProperty(exports, 'LegalNav', {
   }
 });
 
+<<<<<<< HEAD
 var _mainNav = __webpack_require__(209);
+=======
+var _listShowAll = __webpack_require__(223);
+
+Object.defineProperty(exports, 'ListShowAll', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_listShowAll).default;
+  }
+});
+
+var _listUnordered = __webpack_require__(226);
+
+Object.defineProperty(exports, 'ListUnordered', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_listUnordered).default;
+  }
+});
+
+var _mainNav = __webpack_require__(229);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'MainNav', {
   enumerable: true,
@@ -6968,7 +7955,11 @@ Object.defineProperty(exports, 'MainNav', {
   }
 });
 
+<<<<<<< HEAD
 var _mainNavItem = __webpack_require__(212);
+=======
+var _mainNavItem = __webpack_require__(232);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'MainNavItem', {
   enumerable: true,
@@ -6977,7 +7968,11 @@ Object.defineProperty(exports, 'MainNavItem', {
   }
 });
 
+<<<<<<< HEAD
 var _materialCard = __webpack_require__(215);
+=======
+var _materialCard = __webpack_require__(235);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'MaterialCard', {
   enumerable: true,
@@ -6986,7 +7981,11 @@ Object.defineProperty(exports, 'MaterialCard', {
   }
 });
 
+<<<<<<< HEAD
 var _modal = __webpack_require__(218);
+=======
+var _modal = __webpack_require__(238);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Modal', {
   enumerable: true,
@@ -6995,7 +7994,11 @@ Object.defineProperty(exports, 'Modal', {
   }
 });
 
+<<<<<<< HEAD
 var _pager = __webpack_require__(221);
+=======
+var _pager = __webpack_require__(241);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Pager', {
   enumerable: true,
@@ -7004,7 +8007,11 @@ Object.defineProperty(exports, 'Pager', {
   }
 });
 
+<<<<<<< HEAD
 var _search = __webpack_require__(224);
+=======
+var _search = __webpack_require__(244);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Search', {
   enumerable: true,
@@ -7013,7 +8020,11 @@ Object.defineProperty(exports, 'Search', {
   }
 });
 
+<<<<<<< HEAD
 var _socialNav = __webpack_require__(227);
+=======
+var _socialNav = __webpack_require__(247);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'SocialNav', {
   enumerable: true,
@@ -7022,7 +8033,11 @@ Object.defineProperty(exports, 'SocialNav', {
   }
 });
 
+<<<<<<< HEAD
 var _subnavigationItem = __webpack_require__(230);
+=======
+var _subnavigationItem = __webpack_require__(250);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'SubNavigationItem', {
   enumerable: true,
@@ -7031,7 +8046,11 @@ Object.defineProperty(exports, 'SubNavigationItem', {
   }
 });
 
+<<<<<<< HEAD
 var _sysNav = __webpack_require__(233);
+=======
+var _sysNav = __webpack_require__(253);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'SysNav', {
   enumerable: true,
@@ -7040,7 +8059,11 @@ Object.defineProperty(exports, 'SysNav', {
   }
 });
 
+<<<<<<< HEAD
 var _tab = __webpack_require__(236);
+=======
+var _tab = __webpack_require__(256);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Tab', {
   enumerable: true,
@@ -7049,7 +8072,11 @@ Object.defineProperty(exports, 'Tab', {
   }
 });
 
+<<<<<<< HEAD
 var _tabs = __webpack_require__(239);
+=======
+var _tabs = __webpack_require__(259);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Tabs', {
   enumerable: true,
@@ -7058,7 +8085,11 @@ Object.defineProperty(exports, 'Tabs', {
   }
 });
 
+<<<<<<< HEAD
 var _tag = __webpack_require__(242);
+=======
+var _tag = __webpack_require__(262);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Tag', {
   enumerable: true,
@@ -7067,7 +8098,11 @@ Object.defineProperty(exports, 'Tag', {
   }
 });
 
+<<<<<<< HEAD
 var _tagList = __webpack_require__(245);
+=======
+var _tagList = __webpack_require__(265);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'TagList', {
   enumerable: true,
@@ -7076,7 +8111,11 @@ Object.defineProperty(exports, 'TagList', {
   }
 });
 
+<<<<<<< HEAD
 var _listSection = __webpack_require__(248);
+=======
+var _listSection = __webpack_require__(268);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'ListSection', {
   enumerable: true,
@@ -7085,7 +8124,11 @@ Object.defineProperty(exports, 'ListSection', {
   }
 });
 
+<<<<<<< HEAD
 var _businessCard = __webpack_require__(251);
+=======
+var _businessCard = __webpack_require__(271);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'BusinessCard', {
   enumerable: true,
@@ -7097,7 +8140,11 @@ Object.defineProperty(exports, 'BusinessCard', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
+<<<<<<< HEAD
 /* 167 */
+=======
+/* 177 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7107,7 +8154,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _autoComplete = __webpack_require__(168);
+=======
+var _autoComplete = __webpack_require__(178);
+>>>>>>> feat(card product): add build
 
 var _autoComplete2 = _interopRequireDefault(_autoComplete);
 
@@ -7116,7 +8167,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _autoComplete2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 168 */
+=======
+/* 178 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7455,18 +8510,30 @@ __decorate([(0, _vuePropertyDecorator.Watch)('input'), __metadata("design:type",
 __decorate([(0, _vuePropertyDecorator.Watch)('selectedIndex'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], AutoComplete.prototype, "onSelectedIndex", null);
 AutoComplete = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'auto-complete',
+<<<<<<< HEAD
     template: __webpack_require__(169)
+=======
+    template: __webpack_require__(179)
+>>>>>>> feat(card product): add build
 })], AutoComplete);
 exports.default = AutoComplete;
 
 /***/ }),
+<<<<<<< HEAD
 /* 169 */
+=======
+/* 179 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"auto-complete\"\n    :class=\"classObject\"\n     role=\"combobox\"\n     aria-haspopup=\"listbox\"\n\n     v-if=\"hasItems\"\n     :aria-owns=\"listId\"\n     :aria-expanded=\"isOpen\"\n\n     @keydown.up.prevent=\"selectPrevious\"\n     @keydown.shift.tab.prevent=\"selectPrevious\"\n     @keydown.down.prevent=\"selectCurrent\"\n     @keydown.tab.exact.prevent=\"selectCurrent\">\n\n\n    <input ref=\"autoComplete\"\n           class=\"auto-complete__input\"\n           type=\"text\"\n           autofocus=\"true\"\n           autocomplete=\"off\"\n           aria-autocomplete=\"list\"\n\n           :id=\"inputId\"\n           :aria-controls=\"listId\"\n           :placeholder=\"placeholder\"\n           :required=\"required\"\n\n           v-model.trim=\"input\"\n           @input=\"input = $event.target.value\"\n\n           @keyup.esc=\"resetInput\"\n           @keydown=\"forceOpen = true\"\n           @keydown.enter.prevent=\"selectItemByInput\">\n\n    <div :id=\"listId\" class=\"auto-complete__dropdown\" role=\"listbox\"\n         v-if=\"isOpen\"\n         @keyup.esc=\"closeList\"\n         @keydown.backspace.prevent\n         @keydown.down.prevent=\"selectNext\"\n         @keydown.tab.exact.prevent=\"selectNext\">\n\n        <template v-if=\"storedItems && storedItems.length\">\n            <h4 class=\"auto-complete__label\" id=\"storedLabel\">\n                {{ storedLabel }}\n            </h4>\n            <ul class=\"auto-complete__list\" aria-labelledby=\"storedLabel\">\n                <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                    v-for=\"item in storedItems\"\n                    @click=\"selectItem(item)\"\n                    @keyup.enter.prevent=\"selectItem(item)\"\n                    @keyup.esc=\"closeList\">\n                    {{ item.title }}\n                </li>\n            </ul>\n        </template>\n\n        <template v-if=\"suggestedItems && suggestedItems.length\">\n            <h4 class=\"auto-complete__label\" id=\"suggestedLabel\">\n                {{ suggestionsLabel }}\n            </h4>\n            <ul class=\"auto-complete__list\" aria-labelledby=\"suggestedLabel\">\n                <template v-if=\"matchValue\">\n                    <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                        v-for=\"item in suggestedItems\"\n                        @click=\"selectItem(item)\"\n                        @keyup.enter.prevent=\"selectItem(item)\">\n                        {{ item.title }}\n                    </li>\n                </template>\n                <template v-else>\n                    <li class=\"auto-complete__list-item\" role=\"option\" tabindex=\"0\"\n                        v-for=\"item in suggestedItems\"\n                        v-html=\"highlightString(item.title)\"\n                        @click=\"selectItem(item)\"\n                        @keyup.enter.prevent=\"selectItem(item)\"\n                        >\n                    </li>\n                </template>\n            </ul>\n        </template>\n    </div>\n\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 170 */
+=======
+/* 180 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7476,7 +8543,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _brandCard = __webpack_require__(171);
+=======
+var _brandCard = __webpack_require__(181);
+>>>>>>> feat(card product): add build
 
 var _brandCard2 = _interopRequireDefault(_brandCard);
 
@@ -7485,7 +8556,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _brandCard2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 171 */
+=======
+/* 181 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7496,7 +8571,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'brand-card',
+<<<<<<< HEAD
     template: __webpack_require__(172),
+=======
+    template: __webpack_require__(182),
+>>>>>>> feat(card product): add build
     props: {
         body: {
             type: String,
@@ -7516,13 +8595,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 172 */
+=======
+/* 182 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"brand-card\">\n    <div class=\"brand-card__image-wrapper\">\n        <responsive-picture v-bind=\"image\"></responsive-picture>\n    </div>\n    <template v-if=\"body && type === 'text'\">\n        <p class=\"brand-card__quote\">{{body}}</p>\n    </template>\n    <template v-else-if=\"body\">\n        <q class=\"brand-card__quote\">{{body}}</q>\n    </template>\n</div>";
 
 /***/ }),
+<<<<<<< HEAD
 /* 173 */
+=======
+/* 183 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7532,7 +8619,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _card = __webpack_require__(174);
+=======
+var _card = __webpack_require__(184);
+>>>>>>> feat(card product): add build
 
 var _card2 = _interopRequireDefault(_card);
 
@@ -7541,7 +8632,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _card2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 174 */
+=======
+/* 184 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7601,18 +8696,29 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Card.prototype, "card", void 0);
 Card = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'card',
+<<<<<<< HEAD
     template: __webpack_require__(175)
+=======
+    template: __webpack_require__(185)
+>>>>>>> feat(card product): add build
 })], Card);
 exports.default = Card;
 
 /***/ }),
+<<<<<<< HEAD
 /* 175 */
+=======
+/* 185 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"card\" :class=\"classObject\" tabindex=\"0\">\n    <div class=\"card__visual\">\n        <div class=\"card__image\" v-if=\"card.image\">\n            <responsive-picture class=\"img--responsive\" v-if=\"card.image.mobileWidth\" v-bind=\"card.image\" ></responsive-picture>\n            <cms-image class=\"img--responsive\" v-else :image=\"card.image[0]\" :orientation=\"'square'\"></cms-image>\n        </div>\n        <icon v-if=\"card.icon\" :icon-name=\"card.icon.iconName\" class=\"card__icon\"></icon>\n    </div>\n    <div class=\"card__content\">\n        <h3 class=\"card__headline\">{{ card.title }}</h3>\n        <p class=\"card__description\" v-if=\"card.description\">{{ card.description }}</p>\n        <content-link class=\"link\" v-if=\"card.contentLink\" :block=\"'card'\" :url=\"card.contentLink.href\" :label=\"card.contentLink.text\">\n        </content-link>\n    </div>\n</article>\n\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 176 */
+=======
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7622,7 +8728,112 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _component = __webpack_require__(187);
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _component2.default;
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+__webpack_require__(188);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CardProduct = function (_Vue) {
+    _inherits(CardProduct, _Vue);
+
+    function CardProduct() {
+        _classCallCheck(this, CardProduct);
+
+        return _possibleConstructorReturn(this, (CardProduct.__proto__ || Object.getPrototypeOf(CardProduct)).apply(this, arguments));
+    }
+
+    _createClass(CardProduct, [{
+        key: "listItems",
+        get: function get() {
+            return {
+                items: this.properties,
+                type: 'LiInlineLabel'
+            };
+        }
+    }]);
+
+    return CardProduct;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], CardProduct.prototype, "clickEvent", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], CardProduct.prototype, "image", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array }), __metadata("design:type", Object)], CardProduct.prototype, "properties", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], CardProduct.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], CardProduct.prototype, "url", void 0);
+CardProduct = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'CardProduct',
+    template: __webpack_require__(189)
+})], CardProduct);
+exports.default = CardProduct;
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports) {
+
+module.exports = "<article class=\"card-product\">\n    <anchor-overlay :url=\"url\" :title=\"title\" :clickEvent=\"clickEvent\" />\n    <c-image class=\"card-product__image\" v-bind=\"image\" v-if=\"image\" keep-in-view/>\n    <div class=\"img--contain card-product__image gray-background\" v-if=\"!image\"></div>\n    <h3 class=\"card-product__heading\">{{ title }}</h3>\n    <list-unordered class=\"card-product__list\" :listItems=\"listItems\"/>\n</article>\n";
+
+/***/ }),
+/* 190 */
+>>>>>>> feat(card product): add build
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+<<<<<<< HEAD
 var _color = __webpack_require__(177);
+=======
+var _color = __webpack_require__(191);
+>>>>>>> feat(card product): add build
 
 var _color2 = _interopRequireDefault(_color);
 
@@ -7631,7 +8842,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _color2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 177 */
+=======
+/* 191 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7642,7 +8857,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'color',
+<<<<<<< HEAD
     template: __webpack_require__(178),
+=======
+    template: __webpack_require__(192),
+>>>>>>> feat(card product): add build
     props: {
         background: {
             type: String,
@@ -7688,13 +8907,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 178 */
+=======
+/* 192 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"color\">\n    <div class=\"color__spec color__spec--show\">\n        <icon icon-name=\"show\" :style=\"styleIcon\"></icon>\n    </div>\n    <div class=\"color__spec color__spec--swatch\" :style=\"styleBackground\"></div>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 179 */
+=======
+/* 193 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7704,7 +8931,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _contentToggle = __webpack_require__(180);
+=======
+var _contentToggle = __webpack_require__(194);
+>>>>>>> feat(card product): add build
 
 var _contentToggle2 = _interopRequireDefault(_contentToggle);
 
@@ -7713,7 +8944,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentToggle2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 180 */
+=======
+/* 194 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7724,7 +8959,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'content-toggle',
+<<<<<<< HEAD
     template: __webpack_require__(181),
+=======
+    template: __webpack_require__(195),
+>>>>>>> feat(card product): add build
     props: {
         toggleState: {
             type: Boolean,
@@ -7763,13 +9002,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 181 */
+=======
+/* 195 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"toggle toggle--icon\" role=\"button\" tabindex=\"0\" @click=\"toggle\"\n       @keyup.enter=\"toggle\">\n    <icon :icon-name=\"toggleIcon\"></icon>\n    <span>{{ toggleText }}</span>\n</a>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 182 */
+=======
+/* 196 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7779,7 +9026,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _currency = __webpack_require__(183);
+=======
+var _currency = __webpack_require__(197);
+>>>>>>> feat(card product): add build
 
 var _currency2 = _interopRequireDefault(_currency);
 
@@ -7788,7 +9039,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _currency2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 183 */
+=======
+/* 197 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7806,7 +9061,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'currency',
+<<<<<<< HEAD
     template: __webpack_require__(184),
+=======
+    template: __webpack_require__(198),
+>>>>>>> feat(card product): add build
     props: {
         amount: {
             type: Number,
@@ -7828,13 +9087,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 184 */
+=======
+/* 198 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<span class=\"currency\">\n    <span class=\"currency__type\">{{ currencyType }}</span>\n    {{ formattedAmount }}\n</span>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 185 */
+=======
+/* 199 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7844,7 +9111,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _ctaBlock = __webpack_require__(186);
+=======
+var _ctaBlock = __webpack_require__(200);
+>>>>>>> feat(card product): add build
 
 var _ctaBlock2 = _interopRequireDefault(_ctaBlock);
 
@@ -7853,7 +9124,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _ctaBlock2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 186 */
+=======
+/* 200 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7925,18 +9200,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], CtaBlock.prototype, "styleContentButton", void 0);
 CtaBlock = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'cta-block',
+<<<<<<< HEAD
     template: __webpack_require__(187)
+=======
+    template: __webpack_require__(201)
+>>>>>>> feat(card product): add build
 })], CtaBlock);
 exports.default = CtaBlock;
 
 /***/ }),
+<<<<<<< HEAD
 /* 187 */
+=======
+/* 201 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"cta__block\" v-if=\"ctas.length > 0\">\n    <template v-for=\"(cta, index) in ctas\">\n        <component :is=\"cta.type\"\n                   v-bind=\"cta\"\n                   :key=\"index\"\n                   :class=\"classObject(cta.type)\"\n                   :label=\"cta.label\"\n                   :mod=\"modifier(cta.type)\">\n        </component>\n    </template>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 188 */
+=======
+/* 202 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7946,7 +9233,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _fauxVerticalScroll = __webpack_require__(189);
+=======
+var _fauxVerticalScroll = __webpack_require__(203);
+>>>>>>> feat(card product): add build
 
 var _fauxVerticalScroll2 = _interopRequireDefault(_fauxVerticalScroll);
 
@@ -7955,7 +9246,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _fauxVerticalScroll2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 189 */
+=======
+/* 203 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7973,11 +9268,19 @@ var _vuePropertyDecorator = __webpack_require__(1);
 
 var _gsap = __webpack_require__(4);
 
+<<<<<<< HEAD
 var _Draggable = __webpack_require__(327);
 
 var _Draggable2 = _interopRequireDefault(_Draggable);
 
 __webpack_require__(192);
+=======
+var _Draggable = __webpack_require__(352);
+
+var _Draggable2 = _interopRequireDefault(_Draggable);
+
+__webpack_require__(206);
+>>>>>>> feat(card product): add build
 
 var _defaults = __webpack_require__(5);
 
@@ -8142,12 +9445,20 @@ var FauxVerticalScroll = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 FauxVerticalScroll = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'faux-vertical-scroll',
+<<<<<<< HEAD
     template: __webpack_require__(193)
+=======
+    template: __webpack_require__(207)
+>>>>>>> feat(card product): add build
 })], FauxVerticalScroll);
 exports.default = FauxVerticalScroll;
 
 /***/ }),
+<<<<<<< HEAD
 /* 190 */
+=======
+/* 204 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = function(originalModule) {
@@ -8177,7 +9488,11 @@ module.exports = function(originalModule) {
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 191 */
+=======
+/* 205 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 var g;
@@ -8203,7 +9518,11 @@ module.exports = g;
 
 
 /***/ }),
+<<<<<<< HEAD
 /* 192 */
+=======
+/* 206 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8962,13 +10281,21 @@ exports.default = ThrowPropsPlugin;
 var VelocityTracker = exports.VelocityTracker = _TweenLite.globals.com.greensock.utils.VelocityTracker;
 
 /***/ }),
+<<<<<<< HEAD
 /* 193 */
+=======
+/* 207 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"faux-vertical-scroll\" ref=\"container\">\n    <div class=\"faux-vertical-scroll__content\" ref=\"content\">\n        <slot></slot>\n    </div>\n    <div class=\"faux-vertical-scroll__bar\" ref=\"bar\" :style=\"barStyle()\"></div>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 194 */
+=======
+/* 208 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8978,7 +10305,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _flyout = __webpack_require__(195);
+=======
+var _flyout = __webpack_require__(209);
+>>>>>>> feat(card product): add build
 
 var _flyout2 = _interopRequireDefault(_flyout);
 
@@ -8987,7 +10318,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _flyout2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 195 */
+=======
+/* 209 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9187,18 +10522,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }),
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], Flyout.prototype, "disableKeyboardEvents", void 0);
 Flyout = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'flyout',
+<<<<<<< HEAD
     template: __webpack_require__(196)
+=======
+    template: __webpack_require__(210)
+>>>>>>> feat(card product): add build
 })], Flyout);
 exports.default = Flyout;
 
 /***/ }),
+<<<<<<< HEAD
 /* 196 */
+=======
+/* 210 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<ul class=\"main-nav__flyout\"\n    v-if=\"items && items.length > 0\"\n    @keydown.down=\"selectNextLink\"\n    @keydown.tab.exact=\"selectNextLink\"\n    @keydown.up=\"selectPrevLink\"\n    @keydown.tab.shift.exact=\"selectPrevLink\"\n    @keydown.right=\"selectNextSection($event, true)\"\n    @keydown.left=\"selectPrevSection($event, true)\"\n    @mouseenter.stop=\"open\"\n    v-show=\"isCompact || !viewportUtil.isResizing\">\n    <flyout-section ref=\"items\"\n        v-for=\"(item, key) in items\"\n        v-if=\"item.items && item.items.length\"\n        v-bind=\"item\"\n        :is-compact=\"isCompact\"\n        :key=\"key\"\n        :itemId=\"`flyout_title_${ uniqId }_${ key }`\"\n        @close=\"$emit('close')\"\n        >\n    </flyout-section>\n</ul>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 197 */
+=======
+/* 211 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9208,7 +10555,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _flyoutSection = __webpack_require__(198);
+=======
+var _flyoutSection = __webpack_require__(212);
+>>>>>>> feat(card product): add build
 
 var _flyoutSection2 = _interopRequireDefault(_flyoutSection);
 
@@ -9217,7 +10568,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _flyoutSection2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 198 */
+=======
+/* 212 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9405,18 +10760,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, def
 __decorate([(0, _vuePropertyDecorator.Watch)('focusIndex'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", void 0)], Flyout.prototype, "onFocusIndex", null);
 Flyout = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'flyout-section',
+<<<<<<< HEAD
     template: __webpack_require__(199)
+=======
+    template: __webpack_require__(213)
+>>>>>>> feat(card product): add build
 })], Flyout);
 exports.default = Flyout;
 
 /***/ }),
+<<<<<<< HEAD
 /* 199 */
+=======
+/* 213 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<li class=\"flyout__section\" :class=\"sectionClass\">\n    <strong v-if=\"label\" class=\"flyout__title\" :id=\"itemId\">{{ label }}</strong>\n    <ul class=\"flyout__list\"\n        :aria-labelledby=\"itemId\"\n        :aria-haspopup=\"items.length > maxVisible\"\n        :aria-expanded=\"!isCompact || isExpanded\">\n\n        <li class=\"flyout__list-item\"  v-for=\"(item, index) in items\" v-if=\"index < maxVisible\">\n            <content-link ref=\"firstFocusableLinks\" @click.native=\"$emit('close')\" :url=\"item.url\" class=\"flyout__link link\" :label=\"item.label\"></content-link>\n        </li>\n\n        <li class=\"flyout__list-item\" v-show=\"flyoutToggleIsVisible && ! isExpanded\">\n            <content-toggle class=\"flyout__toggle\"\n                            :ref=\"flyoutToggleIsVisible && ! isExpanded ? 'focusable' : ''\"\n                            :toggle-state=\"false\"\n                            aria-hidden=\"true\"\n                            @toggle=\"toggleExpanded\">\n            </content-toggle>\n        </li>\n\n        <!-- items using v-show so spiders can index the entire menu -->\n        <li class=\"flyout__list-item\" v-for=\"(item, index) in items\" v-if=\"index >= maxVisible\" v-show=\"!isCompact || isExpanded\">\n            <content-link ref=\"focusable\"  @click.native=\"$emit('close')\" :url=\"item.url\" class=\"flyout__link link\" :label=\"item.label\"></content-link>\n        </li>\n\n        <li class=\"flyout__list-item\" v-show=\"flyoutToggleIsVisible && isExpanded\">\n            <content-toggle class=\"flyout__toggle\"\n                            ref=\"flyoutToggleIsVisible && isExpanded ? 'focusable' : ''\"\n                            :toggle-state=\"true\"\n                            aria-hidden=\"true\"\n                            @toggle=\"toggleExpanded\">\n            </content-toggle>\n        </li>\n    </ul>\n\n    <template v-if=\"bottomItem\">\n        <content-link ref=\"bottomLink\" @click.native=\"$emit('close')\" :url=\"bottomItem.url\" class=\"link flyout__link--cta-mini\" :label=\"bottomItem.label\"></content-link>\n    </template>\n</li>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 200 */
+=======
+/* 214 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9426,7 +10793,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _footerNav = __webpack_require__(201);
+=======
+var _footerNav = __webpack_require__(215);
+>>>>>>> feat(card product): add build
 
 var _footerNav2 = _interopRequireDefault(_footerNav);
 
@@ -9435,7 +10806,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _footerNav2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 201 */
+=======
+/* 215 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9481,18 +10856,30 @@ var FooterNav = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], FooterNav.prototype, "navigation", void 0);
 FooterNav = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'footer-nav',
+<<<<<<< HEAD
     template: __webpack_require__(202)
+=======
+    template: __webpack_require__(216)
+>>>>>>> feat(card product): add build
 })], FooterNav);
 exports.default = FooterNav;
 
 /***/ }),
+<<<<<<< HEAD
 /* 202 */
+=======
+/* 216 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"footer__nav\" v-if=\"navigation && navigation.length\">\n    <div class=\"flexgrid\">\n        <div class=\"flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6\">\n            <div class=\"flexgrid\">\n                <div class=\"flexgrid__cell--xs-6\" v-if=\"navigation.length > 0\">\n                    <div class=\"footer-nav__column\">\n                        <h3 id=\"footer-nav__title-01\" class=\"footer-nav__title\">{{ navigation[0].label }}</h3>\n                        <template v-if=\"navigation[0].items.length\">\n                            <content-link-list :links=\"navigation[0].items\"\n                                               block=\"footer-nav\" aria-labelledby=\"footer-nav__title-01\"></content-link-list>\n                        </template>\n                    </div>\n                </div>\n                <div class=\"flexgrid__cell--xs-6\" v-if=\"navigation.length > 1\">\n                    <div class=\"footer-nav__column\">\n                        <h3 id=\"footer-nav__title-02\" class=\"footer-nav__title\">{{ navigation[1].label }}</h3>\n                        <template v-if=\"navigation[1].items.length\">\n                            <content-link-list :links=\"navigation[1].items\"\n                                               block=\"footer-nav\" aria-labelledby=\"footer-nav__title-02\"></content-link-list>\n                        </template>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"flexgrid__cell--xxs-6 flexgrid__cell--xs-4 flexgrid__cell--sm-6\"\n             v-if=\"navigation.length > 2\">\n            <div class=\"footer-nav__column footer-nav__column--last footer-nav__column--double\">\n                <h3 id=\"footer-nav__title-03\" class=\"footer-nav__title\">{{ navigation[2].label }}</h3>\n                <template v-if=\"navigation[2].items.length\">\n                    <content-link-list :links=\"navigation[2].items\"\n                                       block=\"footer-nav\" aria-labelledby=\"footer-nav__title-03\"></content-link-list>\n                </template>\n            </div>\n        </div>\n    </div>\n</nav>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 203 */
+=======
+/* 217 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9502,7 +10889,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _iconButton = __webpack_require__(204);
+=======
+var _iconButton = __webpack_require__(218);
+>>>>>>> feat(card product): add build
 
 var _iconButton2 = _interopRequireDefault(_iconButton);
 
@@ -9511,7 +10902,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _iconButton2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 204 */
+=======
+/* 218 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9573,18 +10968,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __me
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], IconButton.prototype, "iconName", void 0);
 IconButton = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'icon-button',
+<<<<<<< HEAD
     template: __webpack_require__(205)
+=======
+    template: __webpack_require__(219)
+>>>>>>> feat(card product): add build
 })], IconButton);
 exports.default = IconButton;
 
 /***/ }),
+<<<<<<< HEAD
 /* 205 */
+=======
+/* 219 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"icon-button\" :class=\"buttonClass\" :aria-label=\"buttonAriaLabel\" role=\"button\" tabindex=\"0\" @click=\"$emit('click')\" @keyup.enter=\"$emit('click')\">\n    <icon class=\"icon-button__icon\" :icon-name=\"iconName\"></icon>\n    <span class=\"icon-button__label\" v-if=\"hasDefaultSlot\">\n        <slot></slot>\n    </span>\n</a>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 206 */
+=======
+/* 220 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9594,7 +11001,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _legalNav = __webpack_require__(207);
+=======
+var _legalNav = __webpack_require__(221);
+>>>>>>> feat(card product): add build
 
 var _legalNav2 = _interopRequireDefault(_legalNav);
 
@@ -9603,7 +11014,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _legalNav2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 207 */
+=======
+/* 221 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9650,18 +11065,29 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], LegalNav.prototype, "label", void 0);
 LegalNav = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'legal-nav',
+<<<<<<< HEAD
     template: __webpack_require__(208)
+=======
+    template: __webpack_require__(222)
+>>>>>>> feat(card product): add build
 })], LegalNav);
 exports.default = LegalNav;
 
 /***/ }),
+<<<<<<< HEAD
 /* 208 */
+=======
+/* 222 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"legal\">\n    <p class=\"legal__copyright-label\">\n        <small v-html=\"label\"></small>\n    </p>\n\n    <template v-if=\"navigation && navigation.length\">\n        <nav class=\"legal__nav\">\n            <content-link-list :links=\"navigation\" block=\"legal\"></content-link-list>\n        </nav>\n    </template>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 209 */
+=======
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9671,7 +11097,245 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _component = __webpack_require__(224);
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _component2.default;
+
+/***/ }),
+/* 224 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+var _viewport = __webpack_require__(2);
+
+var _viewport2 = _interopRequireDefault(_viewport);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ListShowAll = function (_Vue) {
+    _inherits(ListShowAll, _Vue);
+
+    function ListShowAll() {
+        _classCallCheck(this, ListShowAll);
+
+        var _this = _possibleConstructorReturn(this, (ListShowAll.__proto__ || Object.getPrototypeOf(ListShowAll)).apply(this, arguments));
+
+        _this.showAllItems = false;
+        _this.viewportUtil = new _viewport2.default();
+        return _this;
+    }
+
+    _createClass(ListShowAll, [{
+        key: "beforeDestroy",
+        value: function beforeDestroy() {
+            this.viewportUtil.removeResizeHandler(this.handleResize);
+        }
+    }, {
+        key: "calculateElements",
+        value: function calculateElements() {
+            this.$list = this.$refs.$list;
+            this.$listItems = this.$list.children;
+            this.listLeftRightMargin = this.getElmLeftRightMargin(this.$list);
+            this.listItemWidth = this.getElmWidth([].slice.call(this.$listItems)[0]);
+            this.containerWidth = this.getElmWidth(this.$refs.$container);
+        }
+    }, {
+        key: "getElmWidth",
+        value: function getElmWidth(elm) {
+            var computed = window.getComputedStyle(elm);
+            var marginLeft = computed.marginLeft || '';
+            var marginRight = computed.marginRight || '';
+            var width = computed.width || '';
+            return Math.floor(parseFloat(width) + parseFloat(marginLeft) + parseFloat(marginRight));
+        }
+    }, {
+        key: "getElmLeftRightMargin",
+        value: function getElmLeftRightMargin(elm) {
+            var computed = window.getComputedStyle(elm);
+            var marginLeft = computed.marginLeft || '';
+            var marginRight = computed.marginRight || '';
+            return Math.floor(parseFloat(marginLeft) + parseFloat(marginRight));
+        }
+    }, {
+        key: "handleResize",
+        value: function handleResize() {
+            if (!this.viewportUtil.isResizing) {
+                this.calculateElements();
+                var maxItemsPerRow = Math.floor((this.containerWidth - this.listLeftRightMargin) / this.listItemWidth);
+                if (this.$listItems.length < maxItemsPerRow) {
+                    this.$list.style.width = this.listItemWidth * this.$listItems.length + "px";
+                } else {
+                    this.$list.style.width = this.listItemWidth * maxItemsPerRow + "px";
+                }
+            }
+        }
+    }, {
+        key: "show",
+        value: function show(evt) {
+            var _this2 = this;
+
+            this.showAllItems = true;
+            this.$nextTick(function () {
+                return _this2.handleResize();
+            });
+        }
+    }, {
+        key: "showCount",
+        value: function showCount() {
+            return this.label + " " + this.list.listItems.items.length;
+        }
+    }, {
+        key: "mounted",
+        value: function mounted() {
+            this.calculateElements();
+            this.viewportUtil.addResizeHandler(this.handleResize);
+        }
+    }]);
+
+    return ListShowAll;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], ListShowAll.prototype, "list", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number }), __metadata("design:type", Number)], ListShowAll.prototype, "limit", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], ListShowAll.prototype, "label", void 0);
+ListShowAll = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'ListShowAll',
+    template: __webpack_require__(225)
+})], ListShowAll);
+exports.default = ListShowAll;
+
+/***/ }),
+/* 225 */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=\"list-show-all\">\n    <div class=\"list-show-all__list-container\" ref=\"$container\">\n        <ul class=\"list list-show-all__list\" ref=\"$list\">\n            <template v-if=\"index < limit\" v-for=\"(item, index) in list.listItems.items\">\n                <component :is=\"list.listItems.type\" :item=\"item\" :key=\"index\"/>\n            </template>\n            <template v-if=\"showAllItems && index >= limit\" v-for=\"(item, index) in list.listItems.items\">\n                <component :is=\"list.listItems.type\" :item=\"item\" :key=\"index\"/>\n            </template>\n        </ul>\n    </div>\n\n    <button v-if=\"!showAllItems\" @click=\"show\" class=\"button--secondary list-show-all__button\">{{ showCount() }}</button>\n</section>\n";
+
+/***/ }),
+/* 226 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _component = __webpack_require__(227);
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _component2.default;
+
+/***/ }),
+/* 227 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ListUnordered = function (_Vue) {
+    _inherits(ListUnordered, _Vue);
+
+    function ListUnordered() {
+        _classCallCheck(this, ListUnordered);
+
+        return _possibleConstructorReturn(this, (ListUnordered.__proto__ || Object.getPrototypeOf(ListUnordered)).apply(this, arguments));
+    }
+
+    return ListUnordered;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Array)], ListUnordered.prototype, "listItems", void 0);
+ListUnordered = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'ListUnordered',
+    template: __webpack_require__(228)
+})], ListUnordered);
+exports.default = ListUnordered;
+
+/***/ }),
+/* 228 */
+/***/ (function(module, exports) {
+
+module.exports = "<ul class=\"list\">\n    <template v-for=\"(item, index) in listItems.items\">\n        <component :is=\"listItems.type\" :item=\"item\" :key=\"index\" />\n    </template>\n</ul>\n";
+
+/***/ }),
+/* 229 */
+>>>>>>> feat(card product): add build
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+<<<<<<< HEAD
 var _mainNav = __webpack_require__(210);
+=======
+var _mainNav = __webpack_require__(230);
+>>>>>>> feat(card product): add build
 
 var _mainNav2 = _interopRequireDefault(_mainNav);
 
@@ -9680,7 +11344,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _mainNav2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 210 */
+=======
+/* 230 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9772,18 +11440,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], MainNav.prototype, "mainNavOpen", void 0);
 MainNav = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'main-nav',
+<<<<<<< HEAD
     template: __webpack_require__(211)
+=======
+    template: __webpack_require__(231)
+>>>>>>> feat(card product): add build
 })], MainNav);
 exports.default = MainNav;
 
 /***/ }),
+<<<<<<< HEAD
 /* 211 */
+=======
+/* 231 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<nav key=\"large-menu\" class=\"main-nav\" :class=\"classList\" aria-label=\"site\">\n    <ul class=\"main-nav__list\" role=\"menu\" :class=\"{'main-nav__list-visible': mainNavOpen && showCompactMenu}\">\n        <main-nav-item v-if=\"items\" ref=\"navItem\"\n            v-for=\"(item, index) in items\" :key=\"index\"\n            :is-compact=\"showCompactMenu\"\n            :main-nav-open=\"mainNavOpen\"\n            :active=\"false\"\n            :itemId=\"'nav-' + index\"\n            v-bind=\"item\">\n        </main-nav-item>\n    </ul>\n</nav>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 212 */
+=======
+/* 232 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9793,7 +11473,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _mainNavItem = __webpack_require__(213);
+=======
+var _mainNavItem = __webpack_require__(233);
+>>>>>>> feat(card product): add build
 
 var _mainNavItem2 = _interopRequireDefault(_mainNavItem);
 
@@ -9802,7 +11486,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _mainNavItem2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 213 */
+=======
+/* 233 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10086,18 +11774,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), 
 __decorate([(0, _vuePropertyDecorator.Watch)('flyoutIsOpen'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", Promise)], MainNavItem.prototype, "function", null);
 MainNavItem = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'main-nav-item',
+<<<<<<< HEAD
     template: __webpack_require__(214)
+=======
+    template: __webpack_require__(234)
+>>>>>>> feat(card product): add build
 })], MainNavItem);
 exports.default = MainNavItem;
 
 /***/ }),
+<<<<<<< HEAD
 /* 214 */
+=======
+/* 234 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<li class=\"main-nav__item\" role=\"menuitem\" :class=\"{ 'main-nav__item--active': active }\"\n    @mouseleave=\"delayHideFlyout\" @mouseenter=\"showFlyout\">\n\n    <div @keydown.down.prevent=\"selectFlyoutFirstLink\"\n         @keydown.tab.shift.exact=\"hideFlyout\"\n         @keydown.esc.prevent=\"hideFlyout\">\n        <base-link :url=\"url\"\n                     ref=\"parent\"\n                     class=\"main-nav__link\"\n                     @focus=\"showFlyout\"\n                     @click.native=\"hideFlyout\"\n                     aria-haspopup=\"true\"\n                     :aria-controls=\"itemId\"\n                     :aria-current=\"isActive\"\n                     :label=\"label\"\n                     :aria-expanded=\"!isCompact && flyoutIsOpen\">\n        </base-link>\n    </div>\n\n    <icon-button class=\"icon-button--small main-nav__toggle disable-focus\"\n                 :icon-name=\"angleDirection\"\n                 v-show=\"toggleIsVisible\"\n                 @click=\"toggleFlyout\" tabindex=\"-1\">\n    </icon-button>\n\n    <flyout :id=\"itemId\" v-if=\"items\" ref=\"flyout\"\n        @keydown.esc.native=\"selectParent\"\n        @open=\"showFlyout\"\n        @close=\"hideFlyout\"\n        @main=\"selectParent\"\n        class=\"flyout--large\"\n        :items=\"items\"\n        :is-compact=\"isCompact\"\n        :class=\"{ 'flyout--is-open': flyoutIsOpen }\">\n    </flyout>\n</li>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 215 */
+=======
+/* 235 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10107,7 +11807,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _materialCard = __webpack_require__(216);
+=======
+var _materialCard = __webpack_require__(236);
+>>>>>>> feat(card product): add build
 
 var _materialCard2 = _interopRequireDefault(_materialCard);
 
@@ -10116,7 +11820,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _materialCard2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 216 */
+=======
+/* 236 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10162,18 +11870,30 @@ var MaterialCard = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], MaterialCard.prototype, "card", void 0);
 MaterialCard = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'material-card',
+<<<<<<< HEAD
     template: __webpack_require__(217)
+=======
+    template: __webpack_require__(237)
+>>>>>>> feat(card product): add build
 })], MaterialCard);
 exports.default = MaterialCard;
 
 /***/ }),
+<<<<<<< HEAD
 /* 217 */
+=======
+/* 237 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = " <content-link :url=\"card.slug\"\n               class=\"materials-card\"\n               tabindex=\"0\"\n               mod=\"reversed\"\n               role=\"link\"\n               aria-describedby=\"material\">\n        <article class=\"materials-card__article\">\n            <div class=\"materials-card__visual\">\n                <template v-if=\"card.image\">\n                  <div class=\"materials-card__image\">\n                    <responsive-picture v-if=\"card.image && card.image.mobileWidth\" class=\"img--responsive\" v-bind=\"card.image\"></responsive-picture>\n                    <cms-image v-else class=\"img--responsive\" :image=\"card.image[0]\" :orientation=\"'square'\"></cms-image>\n                  </div>\n                </template>\n            </div>\n            <div class=\"materials-card__content\">\n                <h3 class=\"materials-card__headline\">{{ card.title }}</h3>\n                <tag-list class=\"materials-card__taglist\" v-if=\"card.tags\" :tags=\"card.tags\" />\n            </div>\n        </article>\n</content-link>\n\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 218 */
+=======
+/* 238 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10183,7 +11903,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _modal = __webpack_require__(219);
+=======
+var _modal = __webpack_require__(239);
+>>>>>>> feat(card product): add build
 
 var _modal2 = _interopRequireDefault(_modal);
 
@@ -10192,7 +11916,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _modal2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 219 */
+=======
+/* 239 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10206,7 +11934,24 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
+<<<<<<< HEAD
 var _vuePropertyDecorator = __webpack_require__(1);
+=======
+exports.default = {
+    name: 'modal',
+    template: __webpack_require__(240),
+    data: function data() {
+        return {
+            iframeLoaded: false
+        };
+    },
+    created: function created() {
+        window.addEventListener('keyup', this.closeModal);
+    },
+    beforeDestroy: function beforeDestroy() {
+        window.removeEventListener('keyup', this.closeModal);
+    },
+>>>>>>> feat(card product): add build
 
 var _gsap = __webpack_require__(4);
 
@@ -10307,13 +12052,21 @@ Modal = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = Modal;
 
 /***/ }),
+<<<<<<< HEAD
 /* 220 */
+=======
+/* 240 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<transition name=\"modal\" @enter=\"enter\" @leave=\"leave\">\n    <div class=\"modal\" @click=\"closeModal\">\n        <div ref=\"overlay\" class=\"modal__overlay\"></div>\n        <icon-button ref=\"close\" icon-name=\"close\" class=\"modal__close\"/>\n        <div ref=\"modal\" class=\"modal__content\" @click.stop>\n            <div class=\"modal__header\">\n                <slot name=\"header\" />\n            </div>\n            <slot />\n        </div>\n    </div>\n</transition>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 221 */
+=======
+/* 241 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10323,7 +12076,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _pager = __webpack_require__(222);
+=======
+var _pager = __webpack_require__(242);
+>>>>>>> feat(card product): add build
 
 var _pager2 = _interopRequireDefault(_pager);
 
@@ -10332,7 +12089,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pager2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 222 */
+=======
+/* 242 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10352,7 +12113,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'pager',
+<<<<<<< HEAD
     template: __webpack_require__(223),
+=======
+    template: __webpack_require__(243),
+>>>>>>> feat(card product): add build
     data: function data() {
         return {
             indicatorActive: false,
@@ -10427,13 +12192,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 223 */
+=======
+/* 243 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"pager\" aria-label=\"pagination\">\n    <ul class=\"pager__list\">\n        <li ref=\"indicator\" class=\"pager__active-page\" aria-hidden=\"true\">\n            <icon class=\"pager__active-page-indicator\" icon-name=\"hexagon-fill\"></icon>\n        </li>\n        <li ref=\"page\" v-for=\"(page, index) in pages\" \n            class=\"pager__page\" >\n            <a class=\"pager__page-indicator\" @click=\"changeIndex(index)\"\n                aria-role=\"button\" \n                :aria-label=\"getAriaLabel(index)\" \n                :aria-current='index === activeIndex'>\n                <icon icon-name=\"hexagon\"></icon>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 224 */
+=======
+/* 244 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10443,7 +12216,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _searchBar = __webpack_require__(225);
+=======
+var _searchBar = __webpack_require__(245);
+>>>>>>> feat(card product): add build
 
 var _searchBar2 = _interopRequireDefault(_searchBar);
 
@@ -10452,7 +12229,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _searchBar2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 225 */
+=======
+/* 245 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10534,18 +12315,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], SearchBar.prototype, "openState", void 0);
 SearchBar = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'search-bar',
+<<<<<<< HEAD
     template: __webpack_require__(226)
+=======
+    template: __webpack_require__(246)
+>>>>>>> feat(card product): add build
 })], SearchBar);
 exports.default = SearchBar;
 
 /***/ }),
+<<<<<<< HEAD
 /* 226 */
+=======
+/* 246 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<form action=\"\" id=\"search\" class=\"search\" @submit.prevent=\"doSearch\">\n    <div role=\"search\">\n        <div class=\"search__inputholder\">\n            <label for=\"search__input\" class=\"search__label\">{{label}}</label>\n            <input id=\"search__input\" type=\"text\" name=\"search\" :placeholder=\"placeholder\" class=\"search__input\"\n                   @blur=\"onBlur\" @keyup.esc=\"close\"\n                   v-model=\"searchValue\"\n                   ref=\"search__input\">\n        </div>\n        <icon-button button-class=\"icon-button icon-button--large search__button\" button-aria-label=\"Search\"\n                     icon-name=\"search\" @click=\"doSearch\"></icon-button>\n        <icon-button button-class=\"icon-button icon-button--large search__close-button\" button-aria-label=\"Close search\"\n                     icon-name=\"close\" @click=\"close\"></icon-button>\n    </div>\n</form>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 227 */
+=======
+/* 247 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10555,7 +12348,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _socialNav = __webpack_require__(228);
+=======
+var _socialNav = __webpack_require__(248);
+>>>>>>> feat(card product): add build
 
 var _socialNav2 = _interopRequireDefault(_socialNav);
 
@@ -10564,7 +12361,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _socialNav2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 228 */
+=======
+/* 248 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10606,18 +12407,30 @@ var SocialNav = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 SocialNav = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'social-nav',
+<<<<<<< HEAD
     template: __webpack_require__(229)
+=======
+    template: __webpack_require__(249)
+>>>>>>> feat(card product): add build
 })], SocialNav);
 exports.default = SocialNav;
 
 /***/ }),
+<<<<<<< HEAD
 /* 229 */
+=======
+/* 249 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"social-nav footer__social-nav\">\n    <ul class=\"social-nav__list\" aria-label=\"follow Ultimaker\">\n        <li class=\"social-nav__item footer__social-item\">\n            <a class=\"social-nav__link icon-button icon-button--small\"\n               href=\"https://nl.linkedin.com/company/ultimaker\" aria-label=\"LinkedIn\">\n                <icon class=\"social-nav__icon\" icon-name=\"linkedin\"></icon>\n            </a>\n        </li>\n        <li class=\"social-nav__item footer__social-item\">\n            <a class=\"social-nav__link icon-button icon-button--small\"\n               href=\"https://twitter.com/Ultimaker\" aria-label=\"Twitter\">\n                <icon class=\"social-nav__icon\" icon-name=\"twitter\"></icon>\n            </a>\n        </li>\n        <li class=\"social-nav__item footer__social-item\">\n            <a class=\"social-nav__link icon-button icon-button--small\"\n               href=\"https://www.youtube.com/user/Ultimaker3D\" aria-label=\"YouTube\">\n                <icon class=\"social-nav__icon\" icon-name=\"youtube\"></icon>\n            </a>\n        </li>\n        <li class=\"social-nav__item footer__social-item\">\n            <a class=\"social-nav__link icon-button icon-button--small\"\n               href=\"https://www.facebook.com/Ultimaker\" aria-label=\"Facebook\">\n                <icon class=\"social-nav__icon\" icon-name=\"facebook\"></icon>\n            </a>\n        </li>\n        <li class=\"social-nav__item footer__social-item\">\n            <a class=\"social-nav__link icon-button icon-button--small\"\n               href=\"http://instagram.com/ultimaker\" aria-label=\"Instagram\">\n                <icon class=\"social-nav__icon\" icon-name=\"instagram\"></icon>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 230 */
+=======
+/* 250 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10627,7 +12440,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _subnavigationItem = __webpack_require__(231);
+=======
+var _subnavigationItem = __webpack_require__(251);
+>>>>>>> feat(card product): add build
 
 var _subnavigationItem2 = _interopRequireDefault(_subnavigationItem);
 
@@ -10636,7 +12453,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _subnavigationItem2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 231 */
+=======
+/* 251 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10684,18 +12505,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SubNavigationItem.prototype, "label", void 0);
 SubNavigationItem = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'SubNavigationItem',
+<<<<<<< HEAD
     template: __webpack_require__(232)
+=======
+    template: __webpack_require__(252)
+>>>>>>> feat(card product): add build
 })], SubNavigationItem);
 exports.default = SubNavigationItem;
 
 /***/ }),
+<<<<<<< HEAD
 /* 232 */
+=======
+/* 252 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<base-link :url=\"url\" class=\"overflow-container__link link link--reversed\">\n    <div class=\"overflow-container__image-container\">\n        <c-image v-if=\"image\" v-bind=\"image\" keep-in-view></c-image>\n    </div>\n    <div class=\"overflow-container__label\" :aria-label=\"label\" >\n        <span class=\"link__underline\">\n            {{label}}\n        </span>\n    </div>\n</base-link>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 233 */
+=======
+/* 253 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10705,7 +12538,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _sysNav = __webpack_require__(234);
+=======
+var _sysNav = __webpack_require__(254);
+>>>>>>> feat(card product): add build
 
 var _sysNav2 = _interopRequireDefault(_sysNav);
 
@@ -10714,7 +12551,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _sysNav2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 234 */
+=======
+/* 254 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10773,18 +12614,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'search' })
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SysNav.prototype, "searchLabel", void 0);
 SysNav = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'sys-nav',
+<<<<<<< HEAD
     template: __webpack_require__(235)
+=======
+    template: __webpack_require__(255)
+>>>>>>> feat(card product): add build
 })], SysNav);
 exports.default = SysNav;
 
 /***/ }),
+<<<<<<< HEAD
 /* 235 */
+=======
+/* 255 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"sys-nav\" aria-label=\"quick access\">\n    <ul class=\"sys-nav__list\" role=\"presentation\">\n        <li class=\"sys-nav__item\">\n            <base-link v-if=\"orderNowLink\" :url=\"orderNowLink\" class=\"sys-nav__link\">\n                <icon class=\"sys-nav__icon\" :icon-name=\"orderNowIcon\"></icon>\n                <span class=\"sys-nav__label sys-nav__label--hidden-sm\">{{ orderNowLabel }}</span>\n            </base-link>\n        </li>\n        <li class=\"sys-nav__item\">\n            <a class=\"sys-nav__link\"\n               @click=\"openSearch\"\n               @keyup.enter=\"openSearch\"\n               role=\"button\" tabindex=\"0\">\n                <icon class=\"sys-nav__icon\" :icon-name=\"searchIcon\"></icon>\n                <span class=\"sys-nav__label sys-nav__label--hidden-sm\">{{ searchLabel }}</span>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 236 */
+=======
+/* 256 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10794,7 +12647,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _tab = __webpack_require__(237);
+=======
+var _tab = __webpack_require__(257);
+>>>>>>> feat(card product): add build
 
 var _tab2 = _interopRequireDefault(_tab);
 
@@ -10803,7 +12660,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tab2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 237 */
+=======
+/* 257 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10862,18 +12723,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], Tab.prototype, "title", void 0);
 Tab = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'tab',
+<<<<<<< HEAD
     template: __webpack_require__(238)
+=======
+    template: __webpack_require__(258)
+>>>>>>> feat(card product): add build
 })], Tab);
 exports.default = Tab;
 
 /***/ }),
+<<<<<<< HEAD
 /* 238 */
+=======
+/* 258 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div :id=\"id\" class=\"tabs__content\" v-show=\"visible\" role=\"tabpanel\" :aria-hidden=\"!visible\" :aria-label=\"title\">\n    <slot></slot>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 239 */
+=======
+/* 259 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10883,7 +12756,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _tabs = __webpack_require__(240);
+=======
+var _tabs = __webpack_require__(260);
+>>>>>>> feat(card product): add build
 
 var _tabs2 = _interopRequireDefault(_tabs);
 
@@ -10892,7 +12769,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tabs2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 240 */
+=======
+/* 260 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11017,18 +12898,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __met
 __decorate([(0, _vuePropertyDecorator.Watch)('activeTab'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], Tabs.prototype, "setActiveTab", null);
 Tabs = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'tabs',
+<<<<<<< HEAD
     template: __webpack_require__(241)
+=======
+    template: __webpack_require__(261)
+>>>>>>> feat(card product): add build
 })], Tabs);
 exports.default = Tabs;
 
 /***/ }),
+<<<<<<< HEAD
 /* 241 */
+=======
+/* 261 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"tabs\">\n    <div class=\"tabs__nav\">\n        <faux-scroll>\n            <ul class=\"tabs__list\" role=\"tablist\">\n                <li class=\"tabs__list_item\" v-for=\"(tab, index) in tabs\" role=\"presentation\" ref=\"tab\">\n                    <a class=\"tabs__list_link\" :class=\"getLinkClassList(index)\" @click.prevent=\"activeTab = index\" :href=\"'#' + tab.id\"\n                       role=\"tab\" :aria-controls=\"tab.id\" :aria-selected=\"activeTab === index\">\n                        {{ tab.title }}\n                    </a>\n                </li>\n                <li class=\"tabs__indicator\" aria-hidden=\"true\" role=\"none\" ref=\"indicator\"></li>\n            </ul>\n        </faux-scroll>\n    </div>\n\n    <div class=\"tabs__contents\">\n        <slot></slot>\n    </div>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 242 */
+=======
+/* 262 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11038,7 +12931,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _tag = __webpack_require__(243);
+=======
+var _tag = __webpack_require__(263);
+>>>>>>> feat(card product): add build
 
 var _tag2 = _interopRequireDefault(_tag);
 
@@ -11047,7 +12944,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tag2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 243 */
+=======
+/* 263 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11093,18 +12994,30 @@ var Tag = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Tag.prototype, "tag", void 0);
 Tag = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'tag',
+<<<<<<< HEAD
     template: __webpack_require__(244)
+=======
+    template: __webpack_require__(264)
+>>>>>>> feat(card product): add build
 })], Tag);
 exports.default = Tag;
 
 /***/ }),
+<<<<<<< HEAD
 /* 244 */
+=======
+/* 264 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<label class=\"tag\">{{tag.title}}</label>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 245 */
+=======
+/* 265 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11114,7 +13027,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _tagList = __webpack_require__(246);
+=======
+var _tagList = __webpack_require__(266);
+>>>>>>> feat(card product): add build
 
 var _tagList2 = _interopRequireDefault(_tagList);
 
@@ -11123,7 +13040,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tagList2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 246 */
+=======
+/* 266 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11169,18 +13090,30 @@ var TagList = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], TagList.prototype, "tags", void 0);
 TagList = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'tag-list',
+<<<<<<< HEAD
     template: __webpack_require__(247)
+=======
+    template: __webpack_require__(267)
+>>>>>>> feat(card product): add build
 })], TagList);
 exports.default = TagList;
 
 /***/ }),
+<<<<<<< HEAD
 /* 247 */
+=======
+/* 267 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<ul class=\"tag-list__list list\">\n    <li class=\"tag-list__item list_item\" v-for=\"tag in tags\">\n        <tag :tag=\"tag\" />\n    </li>\n</ul>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 248 */
+=======
+/* 268 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11190,7 +13123,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _listSection = __webpack_require__(249);
+=======
+var _listSection = __webpack_require__(269);
+>>>>>>> feat(card product): add build
 
 var _listSection2 = _interopRequireDefault(_listSection);
 
@@ -11199,7 +13136,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _listSection2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 249 */
+=======
+/* 269 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11231,7 +13172,7 @@ var _browserCapabilities = __webpack_require__(3);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
-var _events = __webpack_require__(8);
+var _events = __webpack_require__(6);
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -11406,18 +13347,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ListSection.prototype, "expand", void 0);
 ListSection = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'ListSection',
+<<<<<<< HEAD
     template: __webpack_require__(250)
+=======
+    template: __webpack_require__(270)
+>>>>>>> feat(card product): add build
 })], ListSection);
 exports.default = ListSection;
 
 /***/ }),
+<<<<<<< HEAD
 /* 250 */
+=======
+/* 270 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<section class=\"list-section\">\n    <header class=\"list-section__header\">\n        <h3 class=\"list-section__title\" v-if=\"title\">{{ title }}\n            <span class=\"list-section__count\">({{cards.length}})</span>\n            <template v-if=\"tooltip\">\n                <transition name=\"tooltip\">\n                    <tooltip class=\"section-tooltip\" block=\"list-section\" v-show=\"visibleTooltip\" v-bind=\"tooltip\" :id=\"`tooltip_${ uniqId }`\">\n                        {{ tooltip.description }}\n                    </tooltip>\n                </transition>\n            </template>\n        </h3>\n        <action-button\n            class=\"link list-section__info-link\"\n            :icon=\"tooltip.icon\"\n            mod=\"reversed\"\n            @click.native.prevent=\"toggleTooltip\"\n            @blur.native.prevent=\"hideTooltip\"\n            role=\"button\"\n            :aria-describedby=\"`tooltip_${ uniqId }`\"\n            v-if=\"tooltip\">\n            {{ tooltip.label }}\n        </action-button>\n    </header>\n    <ul class=\"list-section-list\" v-if=\"cards && cards.length > 0\" :aria-label=\"title\">\n        <div class=\"flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row\">\n            <div class=\"flexgrid__cell--md-4 flexgrid__cell--xs-6\"\n                 v-for=\"(card, index) in cards\"\n                 :key=\"index\"\n                 v-if=\"index < showMax\">\n                <li ref=\"visible\" class=\"list-section-list__item\">\n                    <component :is=\"card.type\"\n                               v-bind=\"card\">\n                    </component>\n                </li>\n            </div>\n            <template v-if=\"cards.length > showMax && showMax && !showHiddenItems\">\n                <div class=\"flexgrid__cell flexgrid__cell--list-section__button--center\">\n                    <button class=\"button--secondary list-section-list__button\"\n                            @click=\"showHidden\">{{ showCount() }}\n                    </button>\n                </div>\n            </template>\n        </div>\n        <transition-group @before-enter=\"beforeEnter\"\n                          @enter=\"enter\"\n                          tag=\"div\"\n                          :css=\"false\"\n                          class=\"flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden\">\n            <div class=\"flexgrid__cell--md-4 flexgrid__cell--xs-6\"\n                 v-for=\"(card, index) in cards\"\n                 v-if=\" index >= showMax\"\n                 v-show=\"showHiddenItems\"\n                 :key=\"card.title + index\"\n                 :data-index=\"index\">\n                <li class=\"list-section-list__item\">\n                    <component :is=\"card.type\"\n                               v-bind=\"card\">\n                    </component>\n\n                </li>\n            </div>\n        </transition-group>\n    </ul>\n</section>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 251 */
+=======
+/* 271 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11427,7 +13380,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _businessCard = __webpack_require__(252);
+=======
+var _businessCard = __webpack_require__(272);
+>>>>>>> feat(card product): add build
 
 var _businessCard2 = _interopRequireDefault(_businessCard);
 
@@ -11436,7 +13393,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _businessCard2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 252 */
+=======
+/* 272 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11452,7 +13413,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
-var _events = __webpack_require__(8);
+var _events = __webpack_require__(6);
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -11521,18 +13482,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], BusinessCard.prototype, "clickEvent", void 0);
 BusinessCard = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'BusinessCard',
+<<<<<<< HEAD
     template: __webpack_require__(253)
+=======
+    template: __webpack_require__(273)
+>>>>>>> feat(card product): add build
 })], BusinessCard);
 exports.default = BusinessCard;
 
 /***/ }),
+<<<<<<< HEAD
 /* 253 */
+=======
+/* 273 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"business-card\"\n   :href=\"contentLink.url\"\n   rel=\"noopener\"\n   target=\"_blank\"\n   tabindex=\"0\"\n   @click=\"clickEvent ? $emitPublic(clickEventType, clickEventData) : ''\"\n>\n    <div class=\"business-card__header\">\n        <div class=\"business-card__image-wrapper\">\n            <responsive-picture v-bind=\"mapImage(image)\" v-if=\"image\" />\n        </div>\n        <div class=\"business-card__description\">\n            <h4 class=\"business-card__title\">\n                {{ title }}\n            </h4>\n\n            <p class=\"business-card__property\" v-if=\"properties\" v-for=\"(property) in properties\">\n                {{ property.value }} {{ property.label }}\n            </p>\n        </div>\n    </div>\n    <div class=\"business-card__footer\">\n        <span class=\"link faux-content-link business-card__link\">\n            <span class=\"link__underline\">\n                {{ contentLink.label }}\n            </span>\n        </span>\n    </div>\n</a>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 254 */
+=======
+/* 274 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11542,7 +13515,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _countrySelector = __webpack_require__(255);
+=======
+var _countrySelector = __webpack_require__(275);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'CountrySelector', {
   enumerable: true,
@@ -11551,7 +13528,11 @@ Object.defineProperty(exports, 'CountrySelector', {
   }
 });
 
+<<<<<<< HEAD
 var _localeSelector = __webpack_require__(258);
+=======
+var _localeSelector = __webpack_require__(278);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'LocaleSelector', {
   enumerable: true,
@@ -11560,10 +13541,35 @@ Object.defineProperty(exports, 'LocaleSelector', {
   }
 });
 
+<<<<<<< HEAD
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
 /* 255 */
+=======
+var _overviewFilter = __webpack_require__(281);
+
+Object.defineProperty(exports, 'OverviewFilter', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_overviewFilter).default;
+  }
+});
+
+var _subnavigation = __webpack_require__(285);
+
+Object.defineProperty(exports, 'Subnavigation', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_subnavigation).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+/* 275 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11573,7 +13579,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _countrySelector = __webpack_require__(256);
+=======
+var _countrySelector = __webpack_require__(276);
+>>>>>>> feat(card product): add build
 
 var _countrySelector2 = _interopRequireDefault(_countrySelector);
 
@@ -11582,7 +13592,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _countrySelector2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 256 */
+=======
+/* 276 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11741,18 +13755,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, default: null }), __
 __decorate([(0, _vuePropertyDecorator.Watch)('selectedCountry'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], CountrySelector.prototype, "onSelectedCountry", null);
 CountrySelector = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'country-selector',
+<<<<<<< HEAD
     template: __webpack_require__(257)
+=======
+    template: __webpack_require__(277)
+>>>>>>> feat(card product): add build
 })], CountrySelector);
 exports.default = CountrySelector;
 
 /***/ }),
+<<<<<<< HEAD
 /* 257 */
+=======
+/* 277 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"country-selector\">\n    <auto-complete class=\"country-selector__auto-complete auto-complete--small\" ref=\"autocomplete\"\n        :placeholder=\"placeholder\"\n        title-field=\"name\" value-field=\"code\"\n        v-model=\"countryInput\"\n        @input=\"countryChanged\"\n        @close=\"close\"\n        @changeFocus=\"focusClose\"\n        :datasource=\"datasource\"\n        :storedLabel=\"highlightedLabel\"\n        :stored-items=\"detectedCountries\"\n        :suggestionsLabel=\"suggestionsLabel\"\n        default-open>\n    </auto-complete>\n    <icon-button icon-name=\"close\" button-aria-label=\"Cancel\" ref=\"closeCountryPanel\"\n        button-class=\"country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed\"\n        @click=\"close\">\n    </icon-button>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 258 */
+=======
+/* 278 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11762,7 +13788,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _localeSelector = __webpack_require__(259);
+=======
+var _localeSelector = __webpack_require__(279);
+>>>>>>> feat(card product): add build
 
 var _localeSelector2 = _interopRequireDefault(_localeSelector);
 
@@ -11771,7 +13801,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _localeSelector2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 259 */
+=======
+/* 279 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11933,18 +13967,29 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ required: true }), __metadata("des
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, default: null }), __metadata("design:type", Object)], LocaleSelector.prototype, "country", void 0);
 LocaleSelector = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'locale-selector',
+<<<<<<< HEAD
     template: __webpack_require__(260)
+=======
+    template: __webpack_require__(280)
+>>>>>>> feat(card product): add build
 })], LocaleSelector);
 exports.default = LocaleSelector;
 
 /***/ }),
+<<<<<<< HEAD
 /* 260 */
+=======
+/* 280 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"locale-selector\">\n    <icon-button @click=\"toggleCountrySelector\" v-show=\"!countrySelectorOpen\"\n                 ref=\"countrySelectorToggle\"\n                 icon-name=\"geo\"\n                 class=\"icon-button--small locale-selector__edit--buton\"\n                 :aria-label=\"currentCountryAriaLabel\">\n        {{ currentCountryLabel }}\n    </icon-button>\n\n    <icon-button v-show=\"countrySelectorOpen\"\n                 icon-name=\"geo\"\n                 class=\"icon-button--small locale-selector__edit--buton\"\n                 aria-label=\"change your country\">\n    </icon-button>\n\n    <country-selector class=\"footer__country-selector\" ref=\"countrySelector\" v-if=\"ready\" v-show=\"countrySelectorOpen\"\n                      v-bind=\"$props\"\n                      @close=\"toggleCountrySelector\"\n                      @input=\"setCountry\"\n                      v-model=\"countryInput\">\n    </country-selector>\n</div>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 261 */
+=======
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11954,7 +13999,268 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _component = __webpack_require__(282);
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _component2.default;
+
+/***/ }),
+/* 282 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+__webpack_require__(283);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var OverviewFilter = function (_Vue) {
+    _inherits(OverviewFilter, _Vue);
+
+    function OverviewFilter() {
+        _classCallCheck(this, OverviewFilter);
+
+        return _possibleConstructorReturn(this, (OverviewFilter.__proto__ || Object.getPrototypeOf(OverviewFilter)).apply(this, arguments));
+    }
+
+    return OverviewFilter;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], OverviewFilter.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], OverviewFilter.prototype, "subtitle", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], OverviewFilter.prototype, "sections", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], OverviewFilter.prototype, "ctas", void 0);
+OverviewFilter = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'OverviewFilter',
+    template: __webpack_require__(284)
+})], OverviewFilter);
+exports.default = OverviewFilter;
+
+/***/ }),
+/* 283 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 284 */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=\"overview--filter\">\n    <header>\n        <h2 v-if=\"title\" class=\"overview--filter__title\">{{ title }}</h2>\n        <h3 v-if=\"subtitle\">{{ subtitle }}</h3>\n    </header>\n    <main>\n        <template v-for=\"(section, index) in sections\">\n            <component :is=\"section.type\" v-bind=\"section\" :key=\"index\"/>\n        </template>\n    </main>\n    <footer>\n        <cta-block v-if=\"ctas\" :ctas=\"ctas.ctas\" styleContentButton=\"button\" block=\"overview\"/>\n    </footer>\n</section>\n";
+
+/***/ }),
+/* 285 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _subnavigation = __webpack_require__(286);
+
+var _subnavigation2 = _interopRequireDefault(_subnavigation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _subnavigation2.default;
+
+/***/ }),
+/* 286 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+var _overflowContainer = __webpack_require__(287);
+
+var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Subnavigation = function (_OverflowContainer) {
+    _inherits(Subnavigation, _OverflowContainer);
+
+    function Subnavigation() {
+        _classCallCheck(this, Subnavigation);
+
+        return _possibleConstructorReturn(this, (Subnavigation.__proto__ || Object.getPrototypeOf(Subnavigation)).apply(this, arguments));
+    }
+
+    return Subnavigation;
+}(_overflowContainer2.default);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Subnavigation.prototype, "items", void 0);
+Subnavigation = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'Subnavigation'
+})], Subnavigation);
+exports.default = Subnavigation;
+
+/***/ }),
+/* 287 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _overflowContainer = __webpack_require__(288);
+
+var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _overflowContainer2.default;
+
+/***/ }),
+/* 288 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var OverflowContainer = function (_Vue) {
+    _inherits(OverflowContainer, _Vue);
+
+    function OverflowContainer() {
+        _classCallCheck(this, OverflowContainer);
+
+        var _this = _possibleConstructorReturn(this, (OverflowContainer.__proto__ || Object.getPrototypeOf(OverflowContainer)).apply(this, arguments));
+
+        _this.activeSelector = '.active';
+        return _this;
+    }
+
+    _createClass(OverflowContainer, [{
+        key: "mounted",
+        value: function mounted() {
+            var subnav = this.$refs.subNav;
+            if (subnav) {
+                var activeItem = subnav.querySelector(this.activeSelector);
+                if (activeItem) {
+                    activeItem.scrollIntoView({ inline: 'center' });
+                }
+            }
+        }
+    }]);
+
+    return OverflowContainer;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], OverflowContainer.prototype, "items", void 0);
+OverflowContainer = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'OverflowContainer',
+    template: __webpack_require__(289)
+})], OverflowContainer);
+exports.default = OverflowContainer;
+
+/***/ }),
+/* 289 */
+/***/ (function(module, exports) {
+
+module.exports = "<nav aria-label=\"sub items\" class=\"sub-nav sub-nav--fixed\" ref=\"subNav\" v-if=\"items\" role=\"menubar\">\n    <ul class=\"sub-nav__list\" role=\"presentation\"  v-if=\"items\">\n        <li class=\"sub-nav__item\" v-for=\"(item, index) in items\" ref=\"listItems\" role=\"menuitem\">\n            <component :is=\"item.type\"\n                       :key=\"index\"\n                       v-bind=\"item\">\n            </component>\n        </li>\n    </ul>\n</nav>\n";
+
+/***/ }),
+/* 290 */
+>>>>>>> feat(card product): add build
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+<<<<<<< HEAD
 var _brands = __webpack_require__(262);
+=======
+var _brands = __webpack_require__(291);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Brands', {
   enumerable: true,
@@ -11963,7 +14269,11 @@ Object.defineProperty(exports, 'Brands', {
   }
 });
 
+<<<<<<< HEAD
 var _brandsLarge = __webpack_require__(265);
+=======
+var _brandsLarge = __webpack_require__(294);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'BrandsLarge', {
   enumerable: true,
@@ -11972,7 +14282,11 @@ Object.defineProperty(exports, 'BrandsLarge', {
   }
 });
 
+<<<<<<< HEAD
 var _cases = __webpack_require__(268);
+=======
+var _cases = __webpack_require__(297);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Cases', {
   enumerable: true,
@@ -11981,7 +14295,11 @@ Object.defineProperty(exports, 'Cases', {
   }
 });
 
+<<<<<<< HEAD
 var _colors = __webpack_require__(271);
+=======
+var _colors = __webpack_require__(300);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Colors', {
   enumerable: true,
@@ -11990,7 +14308,11 @@ Object.defineProperty(exports, 'Colors', {
   }
 });
 
+<<<<<<< HEAD
 var _ecosystem = __webpack_require__(274);
+=======
+var _ecosystem = __webpack_require__(303);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Ecosystem', {
   enumerable: true,
@@ -11999,7 +14321,11 @@ Object.defineProperty(exports, 'Ecosystem', {
   }
 });
 
+<<<<<<< HEAD
 var _examples = __webpack_require__(277);
+=======
+var _examples = __webpack_require__(306);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Examples', {
   enumerable: true,
@@ -12008,7 +14334,11 @@ Object.defineProperty(exports, 'Examples', {
   }
 });
 
+<<<<<<< HEAD
 var _explore = __webpack_require__(280);
+=======
+var _explore = __webpack_require__(309);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Explore', {
   enumerable: true,
@@ -12017,7 +14347,11 @@ Object.defineProperty(exports, 'Explore', {
   }
 });
 
+<<<<<<< HEAD
 var _generalContent = __webpack_require__(284);
+=======
+var _generalContent = __webpack_require__(313);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'GeneralContent', {
   enumerable: true,
@@ -12026,7 +14360,11 @@ Object.defineProperty(exports, 'GeneralContent', {
   }
 });
 
+<<<<<<< HEAD
 var _heroBasic = __webpack_require__(287);
+=======
+var _heroBasic = __webpack_require__(316);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'HeroBasic', {
   enumerable: true,
@@ -12035,7 +14373,11 @@ Object.defineProperty(exports, 'HeroBasic', {
   }
 });
 
+<<<<<<< HEAD
 var _heroProduct = __webpack_require__(290);
+=======
+var _heroProduct = __webpack_require__(319);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'HeroProduct', {
   enumerable: true,
@@ -12044,7 +14386,11 @@ Object.defineProperty(exports, 'HeroProduct', {
   }
 });
 
+<<<<<<< HEAD
 var _heroProductsApplication = __webpack_require__(293);
+=======
+var _heroProductsApplication = __webpack_require__(322);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'HeroProductsApplication', {
   enumerable: true,
@@ -12053,7 +14399,11 @@ Object.defineProperty(exports, 'HeroProductsApplication', {
   }
 });
 
+<<<<<<< HEAD
 var _heroText = __webpack_require__(296);
+=======
+var _heroText = __webpack_require__(325);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'HeroText', {
   enumerable: true,
@@ -12062,7 +14412,11 @@ Object.defineProperty(exports, 'HeroText', {
   }
 });
 
+<<<<<<< HEAD
 var _heroCover = __webpack_require__(299);
+=======
+var _heroVideo = __webpack_require__(328);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'HeroCover', {
   enumerable: true,
@@ -12071,7 +14425,11 @@ Object.defineProperty(exports, 'HeroCover', {
   }
 });
 
+<<<<<<< HEAD
 var _sliderReveal = __webpack_require__(302);
+=======
+var _sliderReveal = __webpack_require__(331);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'SliderReveal', {
   enumerable: true,
@@ -12080,6 +14438,7 @@ Object.defineProperty(exports, 'SliderReveal', {
   }
 });
 
+<<<<<<< HEAD
 var _subnavigation = __webpack_require__(305);
 
 Object.defineProperty(exports, 'Subnavigation', {
@@ -12090,6 +14449,9 @@ Object.defineProperty(exports, 'Subnavigation', {
 });
 
 var _ubr = __webpack_require__(310);
+=======
+var _ubr = __webpack_require__(334);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Ubr', {
   enumerable: true,
@@ -12098,7 +14460,11 @@ Object.defineProperty(exports, 'Ubr', {
   }
 });
 
+<<<<<<< HEAD
 var _pageDrawer = __webpack_require__(313);
+=======
+var _pageDrawer = __webpack_require__(337);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'PageDrawer', {
   enumerable: true,
@@ -12107,7 +14473,11 @@ Object.defineProperty(exports, 'PageDrawer', {
   }
 });
 
+<<<<<<< HEAD
 var _pageFooter = __webpack_require__(315);
+=======
+var _pageFooter = __webpack_require__(339);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'PageFooter', {
   enumerable: true,
@@ -12116,7 +14486,11 @@ Object.defineProperty(exports, 'PageFooter', {
   }
 });
 
+<<<<<<< HEAD
 var _pageHeader = __webpack_require__(318);
+=======
+var _pageHeader = __webpack_require__(342);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'PageHeader', {
   enumerable: true,
@@ -12125,7 +14499,11 @@ Object.defineProperty(exports, 'PageHeader', {
   }
 });
 
+<<<<<<< HEAD
 var _overview = __webpack_require__(321);
+=======
+var _overview = __webpack_require__(345);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'Overview', {
   enumerable: true,
@@ -12137,7 +14515,11 @@ Object.defineProperty(exports, 'Overview', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
+<<<<<<< HEAD
 /* 262 */
+=======
+/* 291 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12147,7 +14529,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _brands = __webpack_require__(263);
+=======
+var _brands = __webpack_require__(292);
+>>>>>>> feat(card product): add build
 
 var _brands2 = _interopRequireDefault(_brands);
 
@@ -12156,7 +14542,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _brands2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 263 */
+=======
+/* 292 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12167,7 +14557,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'brands',
+<<<<<<< HEAD
     template: __webpack_require__(264),
+=======
+    template: __webpack_require__(293),
+>>>>>>> feat(card product): add build
     props: {
         title: {
             type: String,
@@ -12184,13 +14578,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 264 */
+=======
+/* 293 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"brands\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\"> {{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :url=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 265 */
+=======
+/* 294 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12200,7 +14602,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _brandsLarge = __webpack_require__(266);
+=======
+var _brandsLarge = __webpack_require__(295);
+>>>>>>> feat(card product): add build
 
 var _brandsLarge2 = _interopRequireDefault(_brandsLarge);
 
@@ -12209,7 +14615,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _brandsLarge2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 266 */
+=======
+/* 295 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12220,7 +14630,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'brands-large',
+<<<<<<< HEAD
     template: __webpack_require__(267),
+=======
+    template: __webpack_require__(296),
+>>>>>>> feat(card product): add build
     props: {
         title: {
             type: String,
@@ -12240,13 +14654,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 267 */
+=======
+/* 296 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"brands brands--large\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\">{{ title }}</h2>\n        <p class=\"brands__body\" v-if=\"text\">{{ text }}</p>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :url=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 268 */
+=======
+/* 297 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12256,7 +14678,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _cases = __webpack_require__(269);
+=======
+var _cases = __webpack_require__(298);
+>>>>>>> feat(card product): add build
 
 var _cases2 = _interopRequireDefault(_cases);
 
@@ -12265,7 +14691,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _cases2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 269 */
+=======
+/* 298 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12283,7 +14713,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'cases',
+<<<<<<< HEAD
     template: __webpack_require__(270),
+=======
+    template: __webpack_require__(299),
+>>>>>>> feat(card product): add build
     data: function data() {
         return {
             viewport: new _viewport2.default(),
@@ -12329,13 +14763,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 270 */
+=======
+/* 299 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"case\">\n    <section class=\"container case__container\">\n        <figure class=\"case__media\" v-show=\"this.isMobileXl\">\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <h2 class=\"case__title\">{{ title }}</h2>\n            </figcaption>\n\n            <div class=\"case__media-placeholder\">\n                <figcaption>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <p class=\"case__paragraph case__paragraph--last\">{{ description }}</p>\n            </figcaption>\n        </figure>\n\n        <figure class=\"case__media\" v-show=\"!this.isMobileXl\">\n            <div class=\"case__media-placeholder\">\n                <figcaption class=\"flex-grid flexgrid__cell--xs-6 case__flex-grid--center\">\n                    <h2 class=\"case__title\">{{ title }}</h2>\n                    <p class=\"case__paragraph\">{{ description }}</p>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n        </figure>\n    </section>\n    <modal class=\"modal--video\" v-if=\"showVideo\" @close=\"toggleVideo\">\n        <youtube-video :video-id=\"videoId\"></youtube-video>\n    </modal>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 271 */
+=======
+/* 300 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12345,7 +14787,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _colors = __webpack_require__(272);
+=======
+var _colors = __webpack_require__(301);
+>>>>>>> feat(card product): add build
 
 var _colors2 = _interopRequireDefault(_colors);
 
@@ -12354,7 +14800,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _colors2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 272 */
+=======
+/* 301 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12365,7 +14815,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'colors',
+<<<<<<< HEAD
     template: __webpack_require__(273),
+=======
+    template: __webpack_require__(302),
+>>>>>>> feat(card product): add build
     data: function data() {
         return {
             activeColor: null,
@@ -12461,13 +14915,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 273 */
+=======
+/* 302 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"colors\" v-if=\"shouldRender\">\n    <div class=\"container\">\n        <header>\n            <h2>{{ title }}</h2>\n        </header>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--sm-4\">\n                <div class=\"colors__swatches\">\n                    <ul class=\"list colors__list\" v-if=\"colors\">\n                        <li class=\"list__item colors__list-item\" :class=\"{'color--selected': color === activeColor }\"\n                            v-for=\"color in colors\">\n                            <hit-area @mouseover.native=\"checkTooltipPos\" @focus.native=\"checkTooltipPos\"\n                                      @click.native=\"setSelected(color)\" @keyup.enter.native=\"setSelected(color)\">\n                                <tooltip block=\"colors\">\n                                    <dl class=\"list tooltip__list\">\n                                        <dt class=\"list__item tooltip__list-item tooltip__label\">Material:</dt>\n                                        <dd class=\"list__item tooltip__list-item\">{{ color.title }}</dd>\n                                        <template v-if=\"!color.is_transparent\">\n                                            <dt class=\"list__item tooltip__list-item tooltip__label\">Color:</dt>\n                                            <dd class=\"list__item tooltip__list-item\">{{ color. system_code }}</dd>\n                                        </template>\n                                        <dt class=\"list__item tooltip__list-item tooltip__label\">Weight:</dt>\n                                        <dd class=\"list__item tooltip__list-item\"><span>{{material.weight.value}} {{material.weight.unit}}</span>\n                                        </dd>\n                                    </dl>\n                                </tooltip>\n                                <color v-if=\"color.is_transparent\"></color>\n                                <color :background=\"color.rgb_hex_code\" v-else></color>\n                            </hit-area>\n                        </li>\n                    </ul>\n                    <content-link mod=\"large\"><span >{{ labels.whereToBuy }}</span></content-link>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--sm-8 flexgrid__cell--xs-6\">\n                <div class=\"colors__image\" ref=\"image\" :class=\"imageClass\">\n                    <cms-image :image=\"image\" orientation=\"landscape\"></cms-image>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 274 */
+=======
+/* 303 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12477,7 +14939,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _ecosystem = __webpack_require__(275);
+=======
+var _ecosystem = __webpack_require__(304);
+>>>>>>> feat(card product): add build
 
 var _ecosystem2 = _interopRequireDefault(_ecosystem);
 
@@ -12486,7 +14952,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _ecosystem2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 275 */
+=======
+/* 304 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12497,7 +14967,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'ecosystem',
+<<<<<<< HEAD
     template: __webpack_require__(276),
+=======
+    template: __webpack_require__(305),
+>>>>>>> feat(card product): add build
     props: {
         title: {
             type: String,
@@ -12511,13 +14985,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 276 */
+=======
+/* 305 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"ecosystem\">\n    <section class=\"container\">\n      <h2 class=\"ecosystem__title\" v-if=\"title\">{{ title }}</h2>\n      <div class=\"ecosystem__items\">\n          <card v-for=\"(item, index) in items\" :key=\"index\" :card=\"item\" :block=\"'ecosystem'\"></card>\n      </div>\n    </section>\n</article>";
 
 /***/ }),
+<<<<<<< HEAD
 /* 277 */
+=======
+/* 306 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12527,7 +15009,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _examples = __webpack_require__(278);
+=======
+var _examples = __webpack_require__(307);
+>>>>>>> feat(card product): add build
 
 var _examples2 = _interopRequireDefault(_examples);
 
@@ -12536,7 +15022,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _examples2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 278 */
+=======
+/* 307 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12547,7 +15037,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'examples',
+<<<<<<< HEAD
     template: __webpack_require__(279),
+=======
+    template: __webpack_require__(308),
+>>>>>>> feat(card product): add build
     data: function data() {
         return {
             enabled: false
@@ -12572,13 +15066,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 279 */
+=======
+/* 308 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"examples\">\n    <div class=\"container\">\n        <header>\n            <h2 class=\"examples__headline\">{{ title }}</h2>\n        </header>\n\n        <div class=\"cards\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\" v-for=\"(card, key) in cards\">\n                    <card :key=\"key\" :block=\"'examples'\" :card=\"card\" v-if=\"enabled\"></card>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 280 */
+=======
+/* 309 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12588,7 +15090,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _explore = __webpack_require__(281);
+=======
+var _explore = __webpack_require__(310);
+>>>>>>> feat(card product): add build
 
 var _explore2 = _interopRequireDefault(_explore);
 
@@ -12597,7 +15103,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _explore2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 281 */
+=======
+/* 310 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12609,7 +15119,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+<<<<<<< HEAD
 var _vuex = __webpack_require__(282);
+=======
+var _vuex = __webpack_require__(311);
+>>>>>>> feat(card product): add build
 
 var _gsap = __webpack_require__(4);
 
@@ -12617,7 +15131,11 @@ var defaultAnimationDuration = 1;
 
 exports.default = {
     name: 'explore',
+<<<<<<< HEAD
     template: __webpack_require__(283),
+=======
+    template: __webpack_require__(312),
+>>>>>>> feat(card product): add build
     data: function data() {
         return {
             activeSlide: 0
@@ -12673,6 +15191,7 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 282 */
 /***/ (function(module, exports) {
 
@@ -12680,12 +15199,25 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__282__;
 
 /***/ }),
 /* 283 */
+=======
+/* 311 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__311__;
+
+/***/ }),
+/* 312 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"explore\">\n    <section class=\"container explore__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <h2 class=\"explore__title\">{{ title }}</h2>\n            </div>\n        </div>\n        <div class=\"explore__image-placeholder\">\n            <template v-for=\"(item, index) in items\">\n                <transition @enter=\"imageEnter\" @leave=\"imageLeave\">\n                    <picture ref=\"image\" v-show=\"index === activeSlide\">\n                        <source media=\"(min-width: 569px)\" :srcset=\"item.image.mobileXlWidth.url + ', ' + item.image.mobileXlWidth.retina.url + ' 2x'\">\n                        <img class=\"img--responsive explore__image img--contain\" :src=\"item.image.mobileWidth.url\" :alt=\"item.image.alt\">\n                    </picture>\n                </transition>\n            </template>\n            <pager name=\"explore-pager\" class=\"explore__pager\" :pages=\"items.length\"\n                   :active-index=\"activeSlide\" @index-changed=\"indexChanged\"></pager>\n        </div>\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"explore__description\">\n                    <tabbable-definition-list\n                        :items=\"items\"\n                        :active-index=\"activeSlide\"\n                        @index-changed=\"indexChanged\"\n                    ></tabbable-definition-list>\n                </div>\n                <div class=\"explore__navigation\">\n                    <icon-button class=\"explore__nav\"\n                                 v-if=\"buttons && buttons.previous\"\n                                 :icon-name=\"buttons.previous.iconName\"\n                                 @click=\"navClicked('previous')\">\n                        <span class=\"icon-button__label\">{{ buttons.previous.label }}</span>\n                    </icon-button>\n                    <icon-button class=\"explore__nav icon-button--reversed\"\n                                 v-if=\"buttons && buttons.next\"\n                                 :icon-name=\"buttons.next.iconName\"\n                                 @click=\"navClicked('next')\">\n                        <span class=\"icon-button__label\">{{ buttons.next.label }}</span>\n                    </icon-button>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 284 */
+=======
+/* 313 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12695,7 +15227,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _generalContent = __webpack_require__(285);
+=======
+var _generalContent = __webpack_require__(314);
+>>>>>>> feat(card product): add build
 
 var _generalContent2 = _interopRequireDefault(_generalContent);
 
@@ -12704,7 +15240,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _generalContent2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 285 */
+=======
+/* 314 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12715,7 +15255,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'general-content',
+<<<<<<< HEAD
     template: __webpack_require__(286),
+=======
+    template: __webpack_require__(315),
+>>>>>>> feat(card product): add build
     props: {
         title: {
             type: String,
@@ -12742,13 +15286,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 286 */
+=======
+/* 315 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"general-content\">\n    <section class=\"container general-content__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell\">\n                <h2 class=\"general-content__title\"> {{ title }}</h2>\n                <p class=\"general-content__body\" v-for=\"p in text\">{{ p }}</p>\n                <content-link class=\"link\" v-if=\"contentLink\" :block=\"'general-content'\" :url=\"contentLink.href\" :label=\"contentLink.text\">\n                </content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell\">\n                <div class=\"general-content__image-wrapper\">\n                    <responsive-picture v-if=\"image\" v-bind=\"image\"></responsive-picture>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 287 */
+=======
+/* 316 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12758,7 +15310,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _heroBasic = __webpack_require__(288);
+=======
+var _heroBasic = __webpack_require__(317);
+>>>>>>> feat(card product): add build
 
 var _heroBasic2 = _interopRequireDefault(_heroBasic);
 
@@ -12767,7 +15323,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroBasic2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 288 */
+=======
+/* 317 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12817,18 +15377,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "ctas", void 0);
 HeroBasic = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'hero-basic',
+<<<<<<< HEAD
     template: __webpack_require__(289)
+=======
+    template: __webpack_require__(318)
+>>>>>>> feat(card product): add build
 })], HeroBasic);
 exports.default = HeroBasic;
 
 /***/ }),
+<<<<<<< HEAD
 /* 289 */
+=======
+/* 318 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--basic\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <h2 class=\"hero__subtitle\" v-if=\"subtitle\">{{ subtitle }}</h2>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <cta-block :ctas=\"ctas.ctas\" v-if=\"ctas\" styleContentButton=\"button button--primary\"\n                               block=\"hero\" />\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--basic\">\n                    <template v-if=\"image\">\n                        <c-image v-bind=\"image\" keep-in-view></c-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 290 */
+=======
+/* 319 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12838,7 +15410,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _heroProduct = __webpack_require__(291);
+=======
+var _heroProduct = __webpack_require__(320);
+>>>>>>> feat(card product): add build
 
 var _heroProduct2 = _interopRequireDefault(_heroProduct);
 
@@ -12847,7 +15423,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroProduct2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 291 */
+=======
+/* 320 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12858,7 +15438,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'hero-product',
+<<<<<<< HEAD
     template: __webpack_require__(292),
+=======
+    template: __webpack_require__(321),
+>>>>>>> feat(card product): add build
     props: {
         title: {
             type: String,
@@ -12892,13 +15476,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 292 */
+=======
+/* 321 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--products\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <!--Price table-->\n                    <div class=\"price-table hero__price-table\">\n                        <ul class=\"price-table__list\" role=\"tablist\">\n                            <li class=\"price-table__item\" v-for=\"material in materials\" role=\"tab\">\n                                <icon icon-name=\"material\" class=\"price-table__icon\"></icon>\n                                <span class=\"price-table__info\">\n                                    <small class=\"price-table__tagline\">\n                                        {{ material['short_title'] }},\n                                        {{ material.weight.value }}{{ material.weight.unit }}\n                                        from\n                                    </small>\n                                    <currency :currency-type=\"material.price.currency\" :amount=\"material.price.value\" :decimals=\"0\"></currency>\n                                </span>\n                            </li>\n                        </ul>\n                        <small class=\"price-table__disclaimer\">{{ labels.excludingVat }}</small>\n                    </div>\n                    <!--End price table-->\n\n                    <!--Button-->\n                    <a href=\"\" class=\"button button--primary hero__button\" v-if=\"materials && materials.length\">{{ labels.buyCta }}</a>\n                    <!--End button-->\n\n                    <!--Link list icons-->\n                    <ul class=\"link-list link-list--icon hero__link-list\">\n                        <template v-if=\"documents\">\n                            <li class=\"link-list__item\" v-for=\"link in this.link\">\n                                <content-link :url=\"link.uri\" icon=\"info\">{{ link.title }}</content-link>\n                            </li>\n                        </template>\n                        <template v-if=\"this.documents\">\n                            <li class=\"link-list__item\" v-for=\"document in documents\" v-if=\"document.links\">\n                                <content-link :url=\"document.links.self.href\" icon=\"download\">{{ labels.download}} {{ document.title }}</content-link>\n                            </li>\n                        </template>\n                    </ul>\n                    <!--End link list-->\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--product\">\n                    <template v-if=\"this.image && this.image.length\">\n                        <cms-image :image=\"image[0]\" :orientation=\"'square'\"></cms-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 293 */
+=======
+/* 322 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12908,7 +15500,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _heroProductsApplication = __webpack_require__(294);
+=======
+var _heroProductsApplication = __webpack_require__(323);
+>>>>>>> feat(card product): add build
 
 var _heroProductsApplication2 = _interopRequireDefault(_heroProductsApplication);
 
@@ -12917,7 +15513,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroProductsApplication2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 294 */
+=======
+/* 323 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12928,7 +15528,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'hero-products-application',
+<<<<<<< HEAD
     template: __webpack_require__(295),
+=======
+    template: __webpack_require__(324),
+>>>>>>> feat(card product): add build
     props: {
         title: {
             required: true,
@@ -12970,13 +15574,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 295 */
+=======
+/* 324 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--products-application\">\n    <div class=\"hero__container--top\">\n            <responsive-picture v-bind=\"heroImage\" imgClass=\"hero__image--full\"></responsive-picture>\n            <div class=\"hero__image-overlay\"></div>\n        <div class=\"container\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__headline\">\n                        <h1>{{ title }}</h1>\n                    </div>\n                </div>\n\n                <div class=\"flexgrid__cell\" style=\"position:relative;\">\n                    <p class=\"hero__subtitle\">{{ subtitle }}</p>\n                    <responsive-picture v-bind=\"productImage\" imgClass=\"hero__image--product\"></responsive-picture>\n                </div>\n\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__usp-container\">\n                        <div class=\"hero__usp usp--icon\" v-for=\"icon in uspIcons\">\n                            <icon :icon-name=\"icon.iconName\" class=\"usp__icon\"></icon>\n                            <small class=\"usp__label\">{{ icon.text }}</small>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!-- {{> molecules-price-table}} -->\n                    <!-- {{> molecules-price-table-tabs}} -->\n                    <!-- {{> atoms-anchor-button:button--primary|hero__button}} -->\n                    <p>TODO: Pricetable</p>\n                    <router-link :to=\"ctaLink.href\" class=\"button button--primary hero__button\">{{  ctaLink.text }}</router-link>\n                    <ul class=\"link-list link-list--icon hero__link-list\" v-if=\"links && links.length\">\n                        <li class=\"link-list__item\" v-for=\"link in links\">\n                            <content-link :url=\"link.href\" :icon=\"link.icon\">{{ link.text }}</content-link>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 296 */
+=======
+/* 325 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12986,7 +15598,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _heroText = __webpack_require__(297);
+=======
+var _heroText = __webpack_require__(326);
+>>>>>>> feat(card product): add build
 
 var _heroText2 = _interopRequireDefault(_heroText);
 
@@ -12995,7 +15611,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroText2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 297 */
+=======
+/* 326 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13006,7 +15626,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'hero-text',
+<<<<<<< HEAD
     template: __webpack_require__(298),
+=======
+    template: __webpack_require__(327),
+>>>>>>> feat(card product): add build
     props: {
         title: {
             type: String,
@@ -13020,13 +15644,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 298 */
+=======
+/* 327 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--text\" v-if=\"this.contents && contents.length\" >\n    <div class=\"container\">\n        <h1 v-if=\"title && title.length\">{{ title }}</h1>\n        <div class=\"hero__content content--rich\" v-html=\"contents\" />\n    </div>\n</article>\n\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 299 */
+=======
+/* 328 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13036,7 +15668,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _heroCover = __webpack_require__(300);
+=======
+var _heroVideo = __webpack_require__(329);
+>>>>>>> feat(card product): add build
 
 var _heroCover2 = _interopRequireDefault(_heroCover);
 
@@ -13045,7 +15681,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroCover2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 300 */
+=======
+/* 329 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13100,6 +15740,7 @@ var HeroCover = function (_Vue) {
 
     return HeroCover;
 }(_vuePropertyDecorator.Vue);
+<<<<<<< HEAD
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroCover.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroCover.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], HeroCover.prototype, "ctas", void 0);
@@ -13112,12 +15753,30 @@ exports.default = HeroCover;
 
 /***/ }),
 /* 301 */
+=======
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], HeroVideo.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: undefined }), __metadata("design:type", String)], HeroVideo.prototype, "description", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], HeroVideo.prototype, "heroImage", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: undefined }), __metadata("design:type", String)], HeroVideo.prototype, "videoId", void 0);
+HeroVideo = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'hero-video',
+    template: __webpack_require__(330)
+})], HeroVideo);
+exports.default = HeroVideo;
+
+/***/ }),
+/* 330 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--cover\">\n    <div class=\"hero-cover__image--full\">\n        <c-image v-if=\"this.image\" v-bind=\"this.image\" resize-behavior=\"crop\"></c-image>\n    </div>\n\n    <div class=\"hero-cover__image--overlay\"></div>\n    <section class=\"hero-cover__container container\">\n        <div class=\"flexgrid__cell--xs-6 hero--cover-reset\">\n            <h1 class=\"hero-cover__headline\">{{ title }}</h1>\n            <p class=\"copy--intro\" v-if=\"description\">{{ description }}</p>\n            <cta-block :ctas=\"ctas.ctas\" v-if=\"ctas\" styleContentButton=\"\"></cta-block>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 302 */
+=======
+/* 331 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13127,7 +15786,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _sliderReveal = __webpack_require__(303);
+=======
+var _sliderReveal = __webpack_require__(332);
+>>>>>>> feat(card product): add build
 
 var _sliderReveal2 = _interopRequireDefault(_sliderReveal);
 
@@ -13136,7 +15799,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _sliderReveal2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 303 */
+=======
+/* 332 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13156,7 +15823,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'slider-reveal',
+<<<<<<< HEAD
     template: __webpack_require__(304),
+=======
+    template: __webpack_require__(333),
+>>>>>>> feat(card product): add build
     props: {
         styleModifiers: {
             type: Array,
@@ -13271,12 +15942,17 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 304 */
+=======
+/* 333 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"slider-reveal\" v-bind:class=\"styleModifiers\">\n    <section class=\"container slider-reveal__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <h2 class=\"slider-reveal__title\"> {{ title }}</h2>\n                <p v-if=\"!isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"!isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <div ref=\"image-wrapper\" class=\"slider-reveal__image-wrapper\">\n                    <div class=\"slider-reveal__image-aspect\">\n                        <div class=\"slider-reveal__mask\"\n                            ref=\"image-mask\"\n                            v-for=\"image in imageSlider.images\"\n                        >\n                            <responsive-picture v-bind=\"image\" img-class=\"slider-reveal__image\"></responsive-picture>\n                        </div>\n                    </div>\n                </div>\n                <p v-if=\"isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n        </div>\n    </section>\n</article>";
 
 /***/ }),
+<<<<<<< HEAD
 /* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13458,6 +16134,9 @@ module.exports = "<nav aria-label=\"sub items\" class=\"overflow-container overf
 
 /***/ }),
 /* 310 */
+=======
+/* 334 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13467,7 +16146,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _ubr = __webpack_require__(311);
+=======
+var _ubr = __webpack_require__(335);
+>>>>>>> feat(card product): add build
 
 var _ubr2 = _interopRequireDefault(_ubr);
 
@@ -13476,7 +16159,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _ubr2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 311 */
+=======
+/* 335 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13487,7 +16174,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'ubr',
+<<<<<<< HEAD
     template: __webpack_require__(312),
+=======
+    template: __webpack_require__(336),
+>>>>>>> feat(card product): add build
     props: {
         title: {
             type: String,
@@ -13509,13 +16200,21 @@ exports.default = {
 };
 
 /***/ }),
+<<<<<<< HEAD
 /* 312 */
+=======
+/* 336 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"ubr\">\n    <section class=\"container\">\n        <h2>{{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"ubr__description\">\n                    <p>{{ description }}</p>\n                    <ul class=\"list ubr__list\">\n                        <li class=\"list__item\" v-for=\"reason of reasons\">{{ reason }}</li>\n                    </ul>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--xs-6\">\n                <template v-if=\"image && image.length\">\n                    <div class=\"ubr__image \">\n                        <cms-image class=\"img--responsive\" :image=\"image[0]\" :orientation=\"'landscape'\"></cms-image>\n                    </div>\n                </template>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 313 */
+=======
+/* 337 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13525,7 +16224,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _pageDrawer = __webpack_require__(314);
+=======
+var _pageDrawer = __webpack_require__(338);
+>>>>>>> feat(card product): add build
 
 var _pageDrawer2 = _interopRequireDefault(_pageDrawer);
 
@@ -13534,7 +16237,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageDrawer2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 314 */
+=======
+/* 338 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13581,7 +16288,11 @@ PageDrawer = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = PageDrawer;
 
 /***/ }),
+<<<<<<< HEAD
 /* 315 */
+=======
+/* 339 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13591,7 +16302,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _pageFooter = __webpack_require__(316);
+=======
+var _pageFooter = __webpack_require__(340);
+>>>>>>> feat(card product): add build
 
 var _pageFooter2 = _interopRequireDefault(_pageFooter);
 
@@ -13600,7 +16315,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageFooter2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 316 */
+=======
+/* 340 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13649,18 +16368,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], PageFooter.prototype, "country", void 0);
 PageFooter = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'page-footer',
+<<<<<<< HEAD
     template: __webpack_require__(317)
+=======
+    template: __webpack_require__(341)
+>>>>>>> feat(card product): add build
 })], PageFooter);
 exports.default = PageFooter;
 
 /***/ }),
+<<<<<<< HEAD
 /* 317 */
+=======
+/* 341 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<footer class=\"footer\">\n    <div class=\"footer__container\">\n        <div class=\"footer__primary\">\n            <router-link to=\"/\" class=\"branded-logo footer__branded-logo\" aria-label=\"Ultimaker homepage\">\n                <icon class=\"branded-logo__robot\" icon-name=\"robot-ultimaker\"></icon>\n                <icon class=\"branded-logo__logo\" icon-name=\"logo-ultimaker\"></icon>\n            </router-link>\n\n            <footer-nav :navigation=\"navigation\"></footer-nav>\n        </div>\n\n        <div class=\"footer__secondary\">\n            <social-nav></social-nav>\n            <locale-selector class=\"footer__locale-selector\"\n                             v-bind=\"localeSelector\"\n                             :country=\"country\"\n                             v-on=\"$listeners\">\n            </locale-selector>\n        </div>\n\n        <div class=\"footer__tertiary\">\n            <legal-nav class=\"footer__legal\" :navigation=\"legalNavigation.navigation\" :label=\"legalNavigation.label\"></legal-nav>\n        </div>\n    </div>\n</footer>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 318 */
+=======
+/* 342 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13670,7 +16401,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _pageHeader = __webpack_require__(319);
+=======
+var _pageHeader = __webpack_require__(343);
+>>>>>>> feat(card product): add build
 
 var _pageHeader2 = _interopRequireDefault(_pageHeader);
 
@@ -13679,7 +16414,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageHeader2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 319 */
+=======
+/* 343 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13841,18 +16580,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], PageHeader.prototype, "mainNavOpen", void 0);
 PageHeader = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'page-header',
+<<<<<<< HEAD
     template: __webpack_require__(320)
+=======
+    template: __webpack_require__(344)
+>>>>>>> feat(card product): add build
 })], PageHeader);
 exports.default = PageHeader;
 
 /***/ }),
+<<<<<<< HEAD
 /* 320 */
+=======
+/* 344 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<header class=\"header\" :class=\"headerClasses\" role=\"banner\" v-size-emitter=\"'header'\">\n    <div class=\"header__top\" :class=\"{'header--mobile-inverted': mainNavOpen}\">\n        <router-link to=\"/\" class=\"home-link\" aria-label=\"Ultimaker homepage\">\n            <icon class=\"home-link__logo\" icon-name=\"logo-ultimaker\"></icon>\n        </router-link>\n\n        <main-nav v-if=\"navigation\" :items=\"navigation\" :main-nav-open=\"mainNavOpen\" v-on=\"$listeners\"></main-nav>\n\n        <sys-nav v-if=\"cta && search\" @open-search=\"openSearch\"\n                 :order-now-icon=\"cta.icon\" :order-now-label=\"cta.label\" :order-now-link=\"cta.url\"\n                 :search-icon=\"search.icon\" :search-label=\"search.label\">\n        </sys-nav>\n\n        <nav-assist class=\"main-nav__nav-assist\" :open-state=\"mainNavOpen\" @toggle=\"navAssistToggle\"></nav-assist>\n\n        <transition name=\"search\" @after-enter=\"handleFocus\" @leave=\"handleFocus\">\n            <search-bar class=\"header__search\"\n                        ref=\"search\"\n                        :label=\"search.label\"\n                        :placeholder=\"search.placeholder\"\n                        :open-state=\"searchOpen\"\n                        @close=\"closeSearch\"\n                        v-if=\"searchOpen\">\n            </search-bar>\n        </transition>\n    </div>\n</header>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 321 */
+=======
+/* 345 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13862,7 +16613,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _overview = __webpack_require__(322);
+=======
+var _overview = __webpack_require__(346);
+>>>>>>> feat(card product): add build
 
 var _overview2 = _interopRequireDefault(_overview);
 
@@ -13871,7 +16626,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _overview2.default;
 
 /***/ }),
+<<<<<<< HEAD
 /* 322 */
+=======
+/* 346 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13884,6 +16643,8 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(1);
+
+__webpack_require__(347);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -13920,18 +16681,36 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], Overview.prototype, "ctas", void 0);
 Overview = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'overview',
+<<<<<<< HEAD
     template: __webpack_require__(323)
+=======
+    template: __webpack_require__(348)
+>>>>>>> feat(card product): add build
 })], Overview);
 exports.default = Overview;
 
 /***/ }),
+<<<<<<< HEAD
 /* 323 */
+=======
+/* 347 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 348 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"organism overview\">\n    <section class=\"container\">\n        <h2 class=\"overview__title\">{{ title }}</h2>\n        <p class=\"subtitle overview__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n\n        <template v-for=\"(section, index) in sections\">\n            <component :is=\"section.type\"\n                   v-bind=\"section\"\n                   :key=\"index\">\n            </component>\n        </template>\n\n        <cta-block :ctas=\"ctas.ctas\"\n                   styleContentButton=\"button\"\n                   v-if=\"ctas\"\n                   block=\"overview\" />\n    </section>\n</article>\n";
 
 /***/ }),
+<<<<<<< HEAD
 /* 324 */
+=======
+/* 349 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13941,7 +16720,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _sizeEmitter = __webpack_require__(325);
+=======
+var _sizeEmitter = __webpack_require__(350);
+>>>>>>> feat(card product): add build
 
 Object.defineProperty(exports, 'SizeEmitter', {
   enumerable: true,
@@ -13951,7 +16734,11 @@ Object.defineProperty(exports, 'SizeEmitter', {
 });
 
 /***/ }),
+<<<<<<< HEAD
 /* 325 */
+=======
+/* 350 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14061,13 +16848,21 @@ var SizeEmitter = exports.SizeEmitter = function () {
 }();
 
 /***/ }),
+<<<<<<< HEAD
 /* 326 */
+=======
+/* 351 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
+<<<<<<< HEAD
 /* 327 */
+=======
+/* 352 */
+>>>>>>> feat(card product): add build
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
