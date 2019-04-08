@@ -1,7 +1,6 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { Overview as OverviewInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/overview/Overview';
 import { TweenLite, Power3 } from 'gsap';
-import './styles.scss';
 
 @Component({
     name: 'overview',
