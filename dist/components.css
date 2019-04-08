@@ -46,9 +46,10 @@ because both families serve another purpose. Therefore the line-heights will be 
 */
 .card-product {
   position: relative;
-  width: 296px;
+  min-width: 296px;
   background-color: #FFFFFF;
-  border: 1px solid #EAEAEA; }
+  border: 1px solid #EAEAEA;
+  margin-bottom: 24px; }
   .card-product__heading {
     margin-top: 24px;
     margin-bottom: 18px;
@@ -58,7 +59,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     line-height: 24px; }
   .card-product__image.img--contain {
     display: block;
-    width: 296px;
+    min-width: 296px;
     height: 148px; }
   .card-product__image.gray-background {
     background-color: #E3E3E3; }
@@ -109,7 +110,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-bottom: 0;
   margin-left: 12px;
   margin-top: -12px;
-  padding-left: 0; }
+  padding-left: 0;
+  transition: all 700ms ease-in-out; }
   @media (min-width: 768px) {
     .list-show-all__list.list {
       margin-top: -24px;

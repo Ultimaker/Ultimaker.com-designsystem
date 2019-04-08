@@ -2,9 +2,10 @@
 
 .card-product {
     position: relative;
-    width: 296px;
+    min-width: 296px;
     background-color: $colorWhite;
     border: 1px solid $colorGrayLight;
+    margin-bottom: $buildingUnit * 2;
 
     &__heading {
         margin-top: $buildingUnit * 2;
@@ -20,7 +21,7 @@
     &__image {
         &.img--contain {
             display: block;
-            width: 296px;
+            min-width: 296px;
             height: 148px;
         }
 
