@@ -1471,7 +1471,6 @@ a {
 
 .img--contain {
   object-fit: cover;
-  font-family: "object-fit: cover";
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -1827,7 +1826,7 @@ table tfoot {
   right: 0;
   position: fixed;
   will-change: transform;
-  z-index: 1000; }
+  z-index: 1500; }
   .modal .modal__overlay {
     display: block;
     height: 100%;
@@ -3755,7 +3754,6 @@ table tfoot {
 .slider-reveal__image {
   object-fit: cover;
   object-position: center;
-  font-family: "object-fit: cover; object-position: center";
   width: 100%; }
 
 @media (min-width: 569px) {
@@ -4076,8 +4074,7 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
     right: 0; } }
 
 .hero--products-application .hero__image--full {
-  object-fit: cover;
-  font-family: "object-fit: cover"; }
+  object-fit: cover; }
 
 .hero--products-application .hero__image-overlay {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -4124,8 +4121,7 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
   color: #FFFFFF; }
 
 .hero-cover__image--full {
-  object-fit: cover;
-  font-family: "object-fit: cover"; }
+  object-fit: cover; }
 
 .hero-cover__image--overlay {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -4136,12 +4132,12 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; }
+
+.hero-cover__image--full,
+.hero-cover__image--overlay,
+.hero--cover__container {
   min-height: 320px; }
-  @media (min-width: 569px) {
-    .hero-cover__image--full,
-    .hero-cover__image--overlay {
-      height: 100%; } }
 
 .header {
   position: relative;
@@ -4657,7 +4653,6 @@ svg text {
   top: 0; }
   .case__image--full {
     object-fit: cover;
-    font-family: "object-fit: cover";
     z-index: 1; }
   .case__image-overlay {
     z-index: 2;
