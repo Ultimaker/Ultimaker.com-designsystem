@@ -2,7 +2,7 @@
 @import "~src/scss/settings/_grid.scss";
 @import "~src/scss/tools/mixins/_media.scss";
 
-.overview--filter {
+.overview--fixed-width {
     &__title {
         margin-top: $buildingUnit * 4;
         margin-bottom: $buildingUnit * 4;
@@ -30,27 +30,36 @@
             display: flex;
             flex-wrap: wrap;
 
-            margin-bottom: 0;
+            margin-bottom: (-$buildingUnit); // offset item margin-bottom
             margin-left: $buildingUnit; // offset item margin-right
-            margin-top: (-$buildingUnit); // offset item margin-top
 
             padding-left: 0;
 
             transition: all 700ms ease-in-out;
 
             @include min-tablet {
-                margin-top: (-$buildingUnit * 2); // offset item margin-top
                 margin-left: $buildingUnit * 2; // offset item margin-right
+                margin-bottom: (-$buildingUnit * 2); // offset item margin-bottom
             }
 
             > .list__item {
-                margin-top: $buildingUnit;
                 margin-right: $buildingUnit;
 
                 @include min-tablet {
-                    margin-top: $buildingUnit * 2;
                     margin-right: $buildingUnit * 2;
                 }
+            }
+        }
+    }
+}
+
+.list-section-list {
+    &__item {
+        .card-product {
+            margin-bottom: $buildingUnit;
+
+            @include min-tablet {
+                margin-bottom: $buildingUnit * 2;
             }
         }
     }

@@ -1,10 +1,10 @@
 module.exports = {
-    type: 'OverviewFilter',
+    type: 'OverviewFixedWidth',
     title: 'Explore the benefits of each material',
     sections: [
         {
             type: 'ListShowAll',
-            limit: 2,
+            limit: 1,
             label: 'Show all',
             list: {
                 listItems: {

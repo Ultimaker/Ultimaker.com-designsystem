@@ -1,4 +1,4 @@
-## overview-filter
+## overview-fixed-width
 
 * componenet design:
 [compact](https://ultimaker.invisionapp.com/d/main#/console/16058841/333038852/preview)

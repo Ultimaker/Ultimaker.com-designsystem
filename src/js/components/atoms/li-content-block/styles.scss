@@ -1,10 +1,24 @@
-.list__item {
-    &--content-block {
-        list-style: none;
-    }
+@import "~src/scss/settings/_variables.scss";
+@import "~src/scss/settings/_grid.scss";
+@import "~src/scss/tools/mixins/_media.scss";
 
-    &--content-block.list__item {
-        margin-bottom: 0;
-        padding-left: 0;
+.list {
+    &__item {
+        &--content-block {
+            list-style: none;
+        }
+
+        &--content-block.list__item {
+            padding-left: 0;
+            margin-bottom: $buildingUnit;
+
+            @include min-tablet {
+                margin-bottom: $buildingUnit * 2;
+            }
+        }
+
+        .card-product {
+            width: 296px;
+        }
     }
 }
