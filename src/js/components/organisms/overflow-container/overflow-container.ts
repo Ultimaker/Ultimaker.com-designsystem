@@ -14,6 +14,7 @@ export default class OverflowContainer extends Vue {
     $refs: any;
 
     activeSelector: string = '.exact-active';
+    scrollTimeout: number = 300;
     isTouch: boolean = false;
 
     mounted() {
@@ -24,8 +25,9 @@ export default class OverflowContainer extends Vue {
             const activeItem = subnav.querySelector(this.activeSelector);
 
             if (activeItem && this.isTouch) {
-                console.log('ACTIVE ITEM', activeItem);
-                activeItem.scrollIntoView({ inline: 'center' });
+                setTimeout(() => {
+                    activeItem.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+                }, this.scrollTimeout);
             }
         }
     }
