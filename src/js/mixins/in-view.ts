@@ -9,7 +9,7 @@ export class InView extends Vue {
 
     $el!: Element;
     inView: boolean = false;
-    inViewObserver: IntersectionObserver = new IntersectionObserver(this.intersectionHandler);
+    inViewObserver?: IntersectionObserver;
     viewportUtil = new ViewportUtil();
 
     intersectionHandler(entries) {
@@ -41,19 +41,16 @@ export class InView extends Vue {
             return;
         }
 
+        this.inViewObserver = new IntersectionObserver(this.intersectionHandler);
         this.inViewObserver.observe(this.$el);
     }
 
     beforeDestroy() {
-        if (!BrowserCapabilities.supportsIntersectionObserver) {
-            const viewportUtil = new ViewportUtil();
-
-            viewportUtil.removeResizeHandler(this.intersectionPolyHandler);
-            viewportUtil.removeScrollHandler(this.intersectionPolyHandler);
-
-            return;
+        if (this.inViewObserver) {
+            this.inViewObserver.unobserve(this.$el);
+        } else {
+            this.viewportUtil.removeResizeHandler(this.intersectionPolyHandler);
+            this.viewportUtil.removeScrollHandler(this.intersectionPolyHandler);
         }
-
-        this.inViewObserver.unobserve(this.$el);
     }
 }
