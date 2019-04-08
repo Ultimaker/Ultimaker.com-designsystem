@@ -25,9 +25,7 @@ export default class OverflowContainer extends Vue {
             const activeItem = subnav.querySelector(this.activeSelector);
 
             if (activeItem && this.isTouch) {
-                setTimeout(() => {
-                    activeItem.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-                }, this.scrollTimeout);
+                setTimeout(() => activeItem.scrollIntoView({ inline: 'center' }), this.scrollTimeout);
             }
         }
     }

@@ -13137,7 +13137,7 @@ var OverflowContainer = function (_Vue) {
                 var activeItem = subnav.querySelector(this.activeSelector);
                 if (activeItem && this.isTouch) {
                     setTimeout(function () {
-                        activeItem.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+                        return activeItem.scrollIntoView({ inline: 'center' });
                     }, this.scrollTimeout);
                 }
             }
