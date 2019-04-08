@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots organisms|overview-filter card-product 1`] = `
+exports[`Storyshots organisms|overview-fixed-width card-product 1`] = `
 <section
   class="story"
 >
@@ -11,12 +11,12 @@ exports[`Storyshots organisms|overview-filter card-product 1`] = `
       class="story__organism"
     >
       <section
-        class="overview--filter"
-        type="OverviewFilter"
+        class="overview--fixed-width"
+        type="OverviewFixedWidth"
       >
         <header>
           <h2
-            class="overview--filter__title"
+            class="overview--fixed-width__title"
           >
             Explore the benefits of each material
           </h2>
@@ -90,58 +90,7 @@ exports[`Storyshots organisms|overview-filter card-product 1`] = `
                     </ul>
                   </article>
                 </li>
-                <li
-                  class="list__item list__item--content-block"
-                >
-                  <article
-                    class="card-product"
-                    type="CardProduct"
-                  >
-                    <a
-                      aria-label="Ultimaker Nylon"
-                      class="anchor-overlay hit-area"
-                      href="https://ultimaker.com/en/products/materials/nylon"
-                      title="Ultimaker Nylon"
-                    />
-                     
-                    <!---->
-                     
-                    <div
-                      class="img--contain card-product__image gray-background"
-                    />
-                     
-                    <h3
-                      class="card-product__heading"
-                    >
-                      Ultimaker Nylon
-                    </h3>
-                     
-                    <ul
-                      class="list card-product__list"
-                    >
-                      <li
-                        class="list__item list__item--label"
-                      >
-                        Abrasion-resistant
-                      </li>
-                      <li
-                        class="list__item list__item--label"
-                      >
-                        Durable
-                      </li>
-                      <li
-                        class="list__item list__item--label"
-                      >
-                        High strength-to-weight ratio
-                      </li>
-                      <li
-                        class="list__item list__item--label"
-                      >
-                        Low friction coefficient
-                      </li>
-                    </ul>
-                  </article>
-                </li>
+                <!---->
                 <!---->
                 <!---->
                  
