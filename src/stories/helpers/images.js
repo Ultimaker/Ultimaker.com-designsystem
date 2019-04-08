@@ -1,9 +1,9 @@
-import {files} from '@storybook/addon-knobs';
+import {files, text} from '@storybook/addon-knobs';
 import {responsiveImageKeys, allowedMimeTypes, imageKnobLabels} from '../constants';
 
 export const contentfulImage = (name = '', image = {}) => ({
     ...image,
-    url: files(name, allowedMimeTypes, image.url)
+    url: text(name, image.url)
 });
 
 export const responsiveImage =  (name = '', image = {}, listKey = '') => Object.keys(image).reduce((acc, key) => {
