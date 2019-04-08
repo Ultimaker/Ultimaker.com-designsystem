@@ -45,7 +45,7 @@
         "vuex": "^3.1.0"
     },
     "devDependencies": {
-        "@ultimaker/ultimaker.com-model-definitions": "github:Ultimaker/Ultimaker.com-model-definitions#bugfix/image-subnav-item-not-required",
+        "@ultimaker/ultimaker.com-model-definitions": "^0.3.0",
         "@storybook/addon-actions": "5.0.6",
         "@storybook/addon-backgrounds": "5.0.6",
         "@storybook/addon-centered": "5.0.6",
