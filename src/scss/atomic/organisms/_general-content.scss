@@ -1,10 +1,9 @@
 .general-content{
     @extend .organism;
-}
 
-.general-content__image{
-    width: 75%;
-    margin: 0 auto;
+    .flexgrid--gutter{
+        margin: 0;
+    }
 }
 
 .general-content__item{
@@ -15,9 +14,16 @@
 
 .general-content__image {
     order: 1;
+    width: 75%;
+    margin: 0 auto ($buildingUnit * 3) auto;
+
+    position: relative;
+    padding: 0 $buildingUnit * 0.5;
 
     @include min-tablet () {
-         order: inherit;
+        order: inherit;
+        width: 100%;
+        margin: auto;
     }
 }
 
@@ -26,18 +32,5 @@
 
     @include min-tablet () {
          order: inherit;
-    }
-}
-
-@include max-mobile-xl() {
-    .general-content__image-wrapper{
-        position: relative;
-        margin: auto;
-        padding: 0 $buildingUnit * 0.5;
-    }
-
-    .general-content__image{
-        width: 100%;
-        margin: auto;
     }
 }
