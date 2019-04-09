@@ -37,6 +37,7 @@
     &__list_item {
         flex: 0 1 auto;
         text-align: center;
+
     }
 
     &__list_link {
@@ -48,15 +49,14 @@
         margin-bottom: 0;
         color: $colorBlack;
 
-        padding-left: $buildingUnit;
-        padding-right: $buildingUnit;
-
         @include font-line-ratio(prim-s);
 
-        @include min-desktop {
-            padding-top: ($buildingUnit - 1.5px);
-            padding-bottom: ($buildingUnit - 1.5px);
-        }
+        padding-left: $buildingUnit;
+        padding-right: $buildingUnit;
+        padding-top: $buildingUnit;
+        padding-bottom: ($buildingUnit);
+
+        white-space: nowrap;
 
         &:hover,
         &--active {
@@ -67,11 +67,12 @@
             }
         }
 
-        &:not(.hit-area):focus:not(:hover),
-        &:not(.hit-area):focus:not(:active) {
+        &:not():focus:not(:active),
+        &:not():focus:not(:hover){
             background-color: transparent;
             color: $colorBlack;
         }
+
     }
 
     &__indicator {
@@ -83,5 +84,11 @@
 
         height: 2px; width: 100%;
         background-color: $colorBlack;
+    }
+
+    &__contents {
+        .container {
+            padding-bottom: 0;
+        }
     }
 }

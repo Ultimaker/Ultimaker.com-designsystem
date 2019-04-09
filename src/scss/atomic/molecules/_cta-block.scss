@@ -40,7 +40,8 @@
             vertical-align: baseline;
         }
 
-        > a  {
+        > a,
+        > .link  {
             margin-bottom: $buildingUnit * 2.5;
             margin-right: 0;
 
@@ -68,6 +69,9 @@
     }
 
     .general-content & {
+        margin-right: 0;
+        margin-top: $buildingUnit * 3;
+        align-items: flex-start;
         > a {
             margin-bottom: $buildingUnit *2;
         }

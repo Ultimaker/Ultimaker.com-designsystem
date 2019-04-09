@@ -1,6 +1,6 @@
 <div class="tabs" v-if="tabs">
     <div class="tabs__nav">
-        <ul class="tabs__list" role="tablist">
+        <ul class="tabs__list" role="tablist" ref="tabList">
             <li class="tabs__list_item" v-for="(tab, index) in tabs" role="presentation" ref="tab">
                 <a class="tabs__list_link" :class="getLinkClassList(index)" @click.prevent="activeTab = index" :href="'#' + tab.id"
                    role="tab" :aria-controls="tab.id" :aria-selected="activeTab === index">

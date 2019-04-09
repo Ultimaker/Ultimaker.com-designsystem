@@ -75,7 +75,7 @@
             }
         },{
             "type": "Tab",
-            "label": "Label one",
+            "label": "Label one with a lot of text",
             "content": {
                 "type": "ContentGeneral",
                 "title": "Content general title 2",

@@ -32,8 +32,6 @@
 @include max-mobile-xl() {
     .general-content__image-wrapper{
         position: relative;
-        left: $buildingUnit * 0.5;
-        right: $buildingUnit;
         margin: auto;
         padding: 0 $buildingUnit * 0.5;
     }
