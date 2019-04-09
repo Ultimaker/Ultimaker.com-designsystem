@@ -12,62 +12,64 @@ exports[`Storyshots organisms|general-content General content 1`] = `
     >
       <article
         class="general-content"
+        type="ContentGeneral"
       >
         <section
           class="container general-content__container"
         >
           <div
-            class="flexgrid flexgrid--gutter"
+            class="flexgrid flexgrid--gutter flexgrid--row-reversed"
           >
             <div
-              class="flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell"
+              class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content"
             >
-              <h2
+              <h3
                 class="general-content__title"
               >
-                 Lorem ipsum dolor sit amet
-              </h2>
+                 Content general title
+              </h3>
                
               <p
                 class="general-content__body"
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
               </p>
                
-              <!---->
+              <div
+                class="cta__block link"
+                type="CtaBlock"
+              >
+                <a
+                  class="link--primary button"
+                  href="https://ultimaker.com"
+                  rel="noopener"
+                  target="_self"
+                  type="ContentButton"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Call me back
+    
+                  </span>
+                </a>
+              </div>
             </div>
              
             <div
-              class="flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell"
+              class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image"
             >
               <div
                 class="general-content__image-wrapper"
               >
-                <picture>
-                  <!---->
-                   
-                  <!---->
-                   
-                  <source
-                    media="(min-width: 768px)"
-                    srcset=""
-                  />
-                   
-                  <!---->
-                   
-                  <!---->
-                   
-                  <source
-                    media="(max-width: 480px)"
-                    srcset="/generator/svg/400/400"
-                  />
-                   
-                  <img
-                    alt=""
-                    class="img--responsive img--lazy"
-                    src=""
-                  />
-                </picture>
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
+                />
               </div>
             </div>
           </div>

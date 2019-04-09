@@ -1,10 +1,12 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs } from '@storybook/addon-knobs';
-import data from './tabbed-content.stories.json';
+import knobs from './tabbed-content.knobs.stories.js';
 
 storiesOf('organisms|Tabbed Content', module)
     .addDecorator(withKnobs)
     .add('Tabbed Content', () => ({
-        data: () => data,
+        props: {
+            TabbedContent: { default: knobs().TabbedContent },
+        },
         template: require('./tabbed-content.stories.html'),
     }));
