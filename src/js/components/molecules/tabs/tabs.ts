@@ -26,7 +26,13 @@ export default class Tabs extends Vue {
 
     @Watch('activeTab')
     setActiveTab() {
-        this.positionIndicator();
+        const tabs = this.$refs.tab;
+
+        if (!tabs) { return; }
+
+        tabs[this.activeTab].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+
+        setTimeout(() => this.positionIndicator(), 50);
     }
 
     getLinkClassList(index) {
@@ -35,7 +41,7 @@ export default class Tabs extends Vue {
         };
     }
 
-    positionIndicator(): void {
+    async positionIndicator() {
         const tabs = this.$refs.tab;
 
         if (!tabs) { return; }

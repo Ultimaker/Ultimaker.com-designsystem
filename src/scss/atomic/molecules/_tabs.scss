@@ -1,10 +1,14 @@
 .tabs {
+
+    margin-top: -($buildingUnit / 2);
+
     &__nav {
         position: relative;
         display: flex;
         width: 100%;
 
         justify-content: center;
+        overflow: hidden;
 
         user-select: none;
         will-change: transform;

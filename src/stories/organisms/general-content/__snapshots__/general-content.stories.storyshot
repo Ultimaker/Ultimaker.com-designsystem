@@ -15,7 +15,7 @@ exports[`Storyshots organisms|general-content General content 1`] = `
         type="ContentGeneral"
       >
         <section
-          class="container general-content__container"
+          class="general-content__container"
         >
           <div
             class="flexgrid flexgrid--gutter flexgrid--row-reversed"
