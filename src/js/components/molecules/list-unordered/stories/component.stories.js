@@ -18,7 +18,7 @@ storiesOf('Molecules|layout/lists/list-unordered', module)
             }
         }
     )
-    .add('li-inline-label',
+    .add('list-item-inline',
         () => {
             return {
                 data: () => {

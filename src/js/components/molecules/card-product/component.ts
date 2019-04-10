@@ -18,7 +18,7 @@ export default class CardProduct extends Vue implements ICardProduct {
     get listItems(): object {
         return {
             items: this.properties,
-            type: 'LiInlineLabel',
+            type: 'li-item-inline',
         };
     }
 }
