@@ -12,15 +12,10 @@ podTemplate(
   activeDeadlineSeconds: 900,
   containers: [
     containerTemplate(
-      name: 'jnlp',
-      image: 'eu.gcr.io/um-website-193311/jenkins/jnlp-slave',
-      args: '${computer.jnlpmac} ${computer.name}',
-      ttyEnabled: true
-    ),
-    containerTemplate(
       name: 'node',
       image: 'node:10.15-jessie',
       command: 'cat',
+      alwaysPullImage: true,
       envVars: [
         secretEnvVar(key: 'BROWSERSTACK_USER', secretName: 'browserstack-credentials', secretKey: 'username'),
         secretEnvVar(key: 'BROWSERSTACK_ACCESS_KEY', secretName: 'browserstack-credentials', secretKey: 'access-key')
@@ -95,6 +90,9 @@ podTemplate(
             sh "docker build --file docker/nginx/Dockerfile --tag ${nginxContainer}:${branch} --tag ${nginxContainer}:${commit} ."
           },
           'node': {
+            container('node') {
+              sh 'npm install --production'
+            }
             sh "docker build --file docker/node/Dockerfile --tag ${nodeContainer}:${branch} --tag ${nodeContainer}:${commit} ."
           }
         )

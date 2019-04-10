@@ -1,18 +1,8 @@
-FROM alpine:3.9
+FROM eu.gcr.io/um-website-193311/ultimaker.com/nginx:latest
 
-RUN apk add --no-cache nginx tini
-
-RUN rm -rf /etc/nginx/conf.d
-
-COPY /docker/nginx/nginx.conf /etc/nginx/nginx.conf.dist
+COPY /docker/nginx/storybook.conf /etc/nginx/conf.d/storybook.conf.dist
 COPY /docker/nginx/entrypoint.sh /etc/nginx/entrypoint.sh
 COPY /storybook-static/ /var/www/html/
-
-WORKDIR /var/www/html
-
-EXPOSE 8080
-
-STOPSIGNAL SIGQUIT
 
 ENTRYPOINT ["/sbin/tini", "-g", "--", "/etc/nginx/entrypoint.sh"]
 
