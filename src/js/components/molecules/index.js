@@ -12,7 +12,6 @@ export {default as FlyoutSection} from 'molecules/flyout-section';
 export {default as FooterNav} from 'molecules/footer-nav';
 export {default as IconButton} from 'molecules/icon-button';
 export {default as LegalNav} from 'molecules/legal-nav';
-export {default as ListItemInline} from 'molecules/list-item-inline';
 export {default as ListShowAll} from 'molecules/list-show-all';
 export {default as ListUnordered} from 'molecules/list-unordered';
 export {default as MainNav} from 'molecules/main-nav';
