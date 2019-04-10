@@ -32,22 +32,23 @@ const webpackConfig = {
             resolve('node_modules')
         ],
         alias: {
-            'vue': 'vue/dist/vue.js',
             '@root': resolve('.'),
-            'src': resolve('src'),
             'adapters': resolve('src/js/adapters'),
-            'components': resolve('src/js/components'),
             'atoms': resolve('src/js/components/atoms'),
-            'molecules': resolve('src/js/components/molecules'),
-            'organisms': resolve('src/js/components/organisms'),
-            'organisms-page': resolve('src/js/components/organisms-page'),
+            'components': resolve('src/js/components'),
             'constants': resolve('src/js/constants'),
             'definitions': resolve('src/js/definitions'),
             'mixins': resolve('src/js/mixins'),
+            'molecules': resolve('src/js/components/molecules'),
+            'organisms': resolve('src/js/components/organisms'),
+            'organisms-page': resolve('src/js/components/organisms-page'),
+            'plugins': resolve('src/js/plugins'),
             'router': resolve('src/js/router'),
             'services': resolve('src/js/services'),
+            'scss': resolve('src/scss'),
+            'src': resolve('src'),
             'utils': resolve('src/js/utils'),
-            'plugins': resolve('src/js/plugins')
+            'vue': 'vue/dist/vue.js'
         }
     },
     module: {
@@ -101,19 +102,21 @@ const webpackConfig = {
             {
                 test: /\.(sass|scss)$/,
                 use: [
-                    // production ? MiniCssExtractPlugin.loader : 'style-loader',
-                    MiniCssExtractPlugin.loader,
-                    'css-loader', 'sass-loader'
+                    production ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', 'sass-loader'
                 ]
             }
         ]
     },
-    plugins: [
+    plugins: []
+};
+
+if (production) {
+    webpackConfig.plugins.push(
         new MiniCssExtractPlugin({
             filename: 'components.css',
             chunkFilename: '[id].css'
         })
-    ]
-};
+    );
+}
 
 module.exports = webpackConfig;
