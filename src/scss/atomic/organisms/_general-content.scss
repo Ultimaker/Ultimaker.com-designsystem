@@ -1,5 +1,6 @@
 .general-content{
     @extend .organism;
+    margin-top: $buildingUnit*5;
 
     .flexgrid--gutter{
         margin: 0;
@@ -14,21 +15,29 @@
 
 .general-content__image {
     order: 1;
-    width: 75%;
-    margin: 0 auto ($buildingUnit * 3) auto;
+
+    margin: 0 auto ($buildingUnit * 3 - ($buildingUnit / 2)) auto;
 
     position: relative;
     padding: 0 $buildingUnit * 0.5;
 
     @include min-tablet () {
         order: inherit;
-        width: 100%;
         margin: auto;
+    }
+}
+
+.general-content__image-wrapper {
+    width: 75%;
+    margin: 0 auto;
+    @include min-tablet () {
+        width: 100%;
     }
 }
 
 .general-content__content {
     order: 2;
+    margin-bottom: -$buildingUnit;
 
     @include min-tablet () {
          order: inherit;

@@ -12,7 +12,6 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
     >
       <article
         class="organism tabbed-content"
-        type="TabbedContent"
       >
         <section
           class="container"
@@ -152,7 +151,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                   type="ContentGeneral"
                 >
                   <section
-                    class="container general-content__container"
+                    class="general-content__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter"
@@ -265,7 +264,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                   type="ContentGeneral"
                 >
                   <section
-                    class="container general-content__container"
+                    class="general-content__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter flexgrid--row-reversed"
@@ -344,7 +343,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                   type="ContentGeneral"
                 >
                   <section
-                    class="container general-content__container"
+                    class="general-content__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter"
@@ -423,7 +422,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                   type="ContentGeneral"
                 >
                   <section
-                    class="container general-content__container"
+                    class="general-content__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter flexgrid--row-reversed"
@@ -502,7 +501,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                   type="ContentGeneral"
                 >
                   <section
-                    class="container general-content__container"
+                    class="general-content__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter flexgrid--row-reversed"
@@ -581,7 +580,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                   type="ContentGeneral"
                 >
                   <section
-                    class="container general-content__container"
+                    class="general-content__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter flexgrid--row-reversed"
@@ -645,44 +644,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
             </div>
           </div>
            
-          <div
-            class="cta__block"
-          >
-            <a
-              class="link--primary button"
-              href="https://ultimaker.com"
-              rel="noopener"
-              target="_self"
-              type="ContentButton"
-            >
-              <!---->
-               
-              <span
-                class="link__underline"
-              >
-                
-        Call me back
-    
-              </span>
-            </a>
-            <a
-              class="link--large link"
-              href="https://ultimaker.com"
-              rel="noopener"
-              target="_self"
-              type="ContentLink"
-            >
-              <!---->
-               
-              <span
-                class="link__underline"
-              >
-                
-        Call me back
-    
-              </span>
-            </a>
-          </div>
+          <!---->
         </section>
       </article>
     </section>
