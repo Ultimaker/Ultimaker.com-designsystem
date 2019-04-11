@@ -1,0 +1,186 @@
+{
+    "overview": {
+        "type": "Overview",
+        "title": "Find your reseller in the Netherlands",
+        "subtitle": "Or just get a subtitle",
+        "ctas": {
+            "type": "CtaBlock",
+            "ctas": [
+                {
+                    "type": "ContentButton",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
+                },
+                {
+                    "type": "ContentLink",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
+                }
+            ]
+        },
+        "sections": [
+            {
+                "type": "ListSection",
+                "title": "Title",
+                "limit": {
+                    "largeScreen": 6
+                },
+                "showAllLabel": "Show all",
+                "cards": [
+                    {
+                        "type": "ContentBlock",
+                        "title": "Ultimaker",
+                        "image": {
+                            "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                            "alt": "An example image",
+                            "mimeType": "",
+                            "quality": 65,
+                            "radius": 0,
+                            "imageFormat": "png",
+                            "resizeBehavior": "fill",
+                            "focusArea": "center",
+                            "backgroundColor": null
+                        },
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "cta": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        }
+
+                    },
+                    {
+                        "type": "ContentBlock",
+                        "title": "Ultimaker",
+                        "image": {
+                            "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                            "alt": "An example image",
+                            "mimeType": "",
+                            "quality": 65,
+                            "radius": 0,
+                            "imageFormat": "png",
+                            "resizeBehavior": "fill",
+                            "focusArea": "center",
+                            "backgroundColor": null
+                        },
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "cta": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        }
+
+                    },
+                    {
+                        "type": "ContentBlock",
+                        "title": "Ultimaker",
+                        "image": {
+                            "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                            "alt": "An example image",
+                            "mimeType": "",
+                            "quality": 65,
+                            "radius": 0,
+                            "imageFormat": "png",
+                            "resizeBehavior": "fill",
+                            "focusArea": "center",
+                            "backgroundColor": null
+                        },
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "cta": {
+                            "type": "ContentButton",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        }
+                    }
+                ],
+                "tooltip": {
+                    "type": "Tooltip",
+                    "label": "More info",
+                    "icon": "info",
+                    "description": "Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
+                }
+            },
+            {
+                "type": "ListSection",
+                "title": "Title",
+                "limit": {
+                    "smallScreen": 3
+                },
+                "showAllLabel": "Show all",
+                "cards": [
+                    {
+                        "type": "ContentBlock",
+                        "title": "Ultimaker",
+                        "image": {
+                            "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                            "alt": "An example image",
+                            "mimeType": "",
+                            "quality": 65,
+                            "radius": 0,
+                            "imageFormat": "png",
+                            "resizeBehavior": "fill",
+                            "focusArea": "center",
+                            "backgroundColor": null
+                        },
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "cta": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        }
+
+                    },
+                    {
+                        "type": "ContentBlock",
+                        "title": "Ultimaker",
+                        "image": {
+                            "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                            "alt": "An example image",
+                            "mimeType": "",
+                            "quality": 65,
+                            "radius": 0,
+                            "imageFormat": "png",
+                            "resizeBehavior": "fill",
+                            "focusArea": "center",
+                            "backgroundColor": null
+                        },
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "cta": {
+                            "type": "ContentLink",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        }
+
+                    },
+                    {
+                        "type": "ContentBlock",
+                        "title": "Ultimaker",
+                        "image": {
+                            "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                            "alt": "An example image",
+                            "mimeType": "",
+                            "quality": 65,
+                            "radius": 0,
+                            "imageFormat": "png",
+                            "resizeBehavior": "fill",
+                            "focusArea": "center",
+                            "backgroundColor": null
+                        },
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "cta": {
+                            "type": "ContentButton",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

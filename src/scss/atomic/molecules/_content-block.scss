@@ -1,0 +1,34 @@
+$contentBlockTabletMarginBottom: $buildingUnit * 2;
+$contentBlockMobileMarginBottom: $buildingUnit;
+
+.content-block {
+    @extend %reset-last-margin;
+    max-width: 293px;
+
+    @include max-tablet() {
+        margin-bottom: $buildingUnit * 4;
+    }
+
+    margin-bottom: $contentBlockMobileMarginBottom;
+    @include min-tablet {
+        margin-bottom: $contentBlockTabletMarginBottom;
+    }
+}
+
+.content-block-container__image{
+    margin: 0 auto ($buildingUnit * 1.5);
+    overflow: hidden;
+
+    @include min-mobile-xl {
+        margin: 0 auto ($buildingUnit * 2);
+    }
+}
+
+.content-block__image{
+    width: 100%;
+}
+
+.content-block__content {
+    @extend %reset-last-margin;
+    width:100%;
+}

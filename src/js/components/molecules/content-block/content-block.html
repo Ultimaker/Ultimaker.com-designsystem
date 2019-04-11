@@ -1,0 +1,18 @@
+<article class="content-block" tabindex="0">
+    <div class="card__visual">
+        <div class="content-block-container__image" v-if="image">
+            <c-image class="content-block__image" v-if="image" v-bind="image" keep-in-view></c-image>
+        </div>
+    </div>
+    <div class="content-block__content">
+        <h3 class="content-block__headline">{{ title }}</h3>
+        <p class="content-block__description">{{ description }}</p>
+
+        <ContentButton v-bind="cta"
+                       class="button"
+                       v-if="cta.type === 'ContentButton' && cta" />
+        <ContentLink v-bind="cta"
+                     class="link link--medium"
+                     v-if="cta.type === 'ContentLink' && cta" />
+    </div>
+</article>
