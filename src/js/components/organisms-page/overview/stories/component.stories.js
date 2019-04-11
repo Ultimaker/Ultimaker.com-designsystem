@@ -1,4 +1,5 @@
 import {storiesOf} from '@storybook/vue';
+import data from 'organisms-page/overview/data/data';
 
 storiesOf('organisms|overview', module)
     .add('card-product',
@@ -6,7 +7,7 @@ storiesOf('organisms|overview', module)
             return {
                 data: () => {
                     return {
-                        data: require('src/data/overview-card-product')
+                        data: data
                     };
                 },
                 template: require('./template.html')
