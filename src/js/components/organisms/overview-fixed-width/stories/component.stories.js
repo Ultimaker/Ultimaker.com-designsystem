@@ -1,4 +1,5 @@
 import {storiesOf} from '@storybook/vue';
+import data from 'organisms/overview-fixed-width/data/data';
 
 storiesOf('organisms|overview-fixed-width', module)
     .add('card-product',
@@ -6,15 +7,13 @@ storiesOf('organisms|overview-fixed-width', module)
             return {
                 data: () => {
                     return {
-                        data: require('src/data/overview-fixed-width-card-product')
+                        data: data
                     };
                 },
                 template: require('./template.html')
             };
         },
         {
-            notes: {
-                markdown: require('./notes.md')
-            }
+            notes: require('./notes.md')
         }
     );
