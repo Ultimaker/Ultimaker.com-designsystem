@@ -8,11 +8,42 @@
   .anchor-overlay:focus {
     outline: auto 5px -webkit-focus-ring-color; }
 
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
 .list__item--content-block {
   list-style: none; }
 
 .list__item--content-block.list__item {
-  margin-bottom: 0;
+  padding-left: 0;
+  margin-bottom: 12px; }
+  @media (min-width: 768px) {
+    .list__item--content-block.list__item {
+      margin-bottom: 24px; } }
+
+.list__item .card-product {
+  width: 296px; }
+
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.list__item--inline {
+  display: inline-block;
+  list-style: none; }
+
+.list__item.list__item--inline {
   padding-left: 0; }
 
 /*
@@ -22,20 +53,16 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
-.list__item--label {
+.label {
   display: inline-block;
-  list-style: none;
+  padding-left: 6px;
+  padding-right: 6px;
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
   color: #7F7F7F;
   background-color: #F5F5F5;
   border-radius: 2px; }
-
-.list__item--label.list__item {
-  margin-bottom: 0;
-  padding-left: 6px;
-  padding-right: 6px; }
 
 /*
 * Because we have a primary and secondary font family, we need to define both
@@ -46,32 +73,29 @@ because both families serve another purpose. Therefore the line-heights will be 
 */
 .card-product {
   position: relative;
-  min-width: 296px;
   background-color: #FFFFFF;
   border: 1px solid #EAEAEA;
-  margin-bottom: 24px; }
+  overflow: hidden; }
   .card-product__heading {
-    margin-top: 24px;
     margin-bottom: 18px;
     padding-left: 12px;
-    padding-right: 12px;
-    font-size: 18px;
-    line-height: 24px; }
-  .card-product__image.img--contain {
-    display: block;
-    min-width: 296px;
-    height: 148px; }
-  .card-product__image.gray-background {
-    background-color: #E3E3E3; }
+    padding-right: 12px; }
+  .card-product__image {
+    margin-bottom: 24px; }
+    .card-product__image.img--contain {
+      display: block;
+      height: 148px; }
+    .card-product__image.gray-background {
+      background-color: #E3E3E3; }
   .card-product__list {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     align-content: space-between; }
     .card-product__list.list {
+      margin-bottom: 6px;
       padding-left: 12px;
-      padding-right: 12px;
-      margin-bottom: 6px; }
+      padding-right: 12px; }
     .card-product__list .list__item {
       margin-bottom: 6px;
       margin-right: 6px; }
@@ -87,7 +111,7 @@ because both families serve another purpose. Therefore the line-heights will be 
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
  */
-.overview--filter__title {
+.overview--fixed-width__title {
   margin-top: 48px;
   margin-bottom: 48px;
   text-align: center; }
@@ -107,30 +131,25 @@ because both families serve another purpose. Therefore the line-heights will be 
 .list-show-all__list.list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0;
+  margin-bottom: -12px;
   margin-left: 12px;
-  margin-top: -12px;
   padding-left: 0;
   transition: all 700ms ease-in-out; }
   @media (min-width: 768px) {
     .list-show-all__list.list {
-      margin-top: -24px;
-      margin-left: 24px; } }
+      margin-left: 24px;
+      margin-bottom: -24px; } }
   .list-show-all__list.list > .list__item {
-    margin-top: 12px;
     margin-right: 12px; }
     @media (min-width: 768px) {
       .list-show-all__list.list > .list__item {
-        margin-top: 24px;
         margin-right: 24px; } }
 
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
+.list-section-list__item .card-product {
+  margin-bottom: 12px; }
+  @media (min-width: 768px) {
+    .list-section-list__item .card-product {
+      margin-bottom: 24px; } }
 
 /*
 * Because we have a primary and secondary font family, we need to define both

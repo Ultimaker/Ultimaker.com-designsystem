@@ -77,7 +77,7 @@ exports[`Storyshots organisms|overview card-product 1`] = `
                     <img
                       alt="Nylon 3D printed gears"
                       class="img--contain card-product__image img--loading"
-                      src="https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg?w=20"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       type="Image"
                     />
                      
@@ -242,7 +242,7 @@ exports[`Storyshots organisms|overview card-product 1`] = `
                     <img
                       alt="Nylon 3D printed gears"
                       class="img--contain card-product__image img--loading"
-                      src="https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg?w=20"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       type="Image"
                     />
                      
@@ -317,7 +317,7 @@ exports[`Storyshots organisms|overview card-product 1`] = `
                     <img
                       alt="Nylon 3D printed gears"
                       class="img--contain card-product__image img--loading"
-                      src="https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg?w=20"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       type="Image"
                     />
                      
@@ -482,7 +482,7 @@ exports[`Storyshots organisms|overview card-product 1`] = `
                     <img
                       alt="Nylon 3D printed gears"
                       class="img--contain card-product__image img--loading"
-                      src="https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg?w=20"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                       type="Image"
                     />
                      
@@ -555,7 +555,6 @@ exports[`Storyshots organisms|overview card-product 1`] = `
             href="https://ultimaker.com"
             rel="noopener"
             target="_self"
-            type="content-button"
           >
             <!---->
              
@@ -572,7 +571,6 @@ exports[`Storyshots organisms|overview card-product 1`] = `
             href="https://ultimaker.com"
             rel="noopener"
             target="_self"
-            type="content-link"
           >
             <!---->
              

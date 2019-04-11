@@ -10,17 +10,36 @@ import { imageConstants } from './constants';
     template: require('./template.html'),
 })
 
-export default class CImage extends Vue implements ICImageProps {
-    @Prop({ type: String, required: true }) alt!: string;
-    @Prop({ type: String }) backgroundColor?: string;
-    @Prop({ type: String, default: FocusArea.center }) focusArea!: FocusArea;
-    @Prop({ type: String, default: ImageFormat.default }) imageFormat!: ImageFormat;
-    @Prop({ type: Boolean, default: true }) keepInView!: boolean;
-    @Prop({ type: String, required: true }) mimeType!: string;
-    @Prop({ type: Number, default: 65 }) quality!: number;
-    @Prop({ type: Number, default: 0 }) radius!: number;
-    @Prop({ type: String, default: ResizeBehavior.default }) resizeBehavior!: ResizeBehavior;
-    @Prop({ type: String, required: true }) url!: string;
+export default class CImage extends Mixins(InView) implements ICImageProps {
+    @Prop({ type: String, required: true })
+    mimeType!: string;
+
+    @Prop({ type: String, required: true })
+    url!: string;
+
+    @Prop({ type: String, default: '' })
+    alt!: string;
+
+    @Prop({ type: Boolean, default: false })
+    crop!: boolean;
+
+    @Prop({ type: String, default: ImageFormat.default })
+    imageFormat!: ImageFormat;
+
+    @Prop({ type: String, default: ResizeBehavior.default })
+    resizeBehavior!: ResizeBehavior;
+
+    @Prop({ type: String, default: FocusArea.center })
+    focusArea!: FocusArea;
+
+    @Prop({ type: Number, default: 0 })
+    radius!: number;
+
+    @Prop({ type: Number, default: 65 })
+    quality!: number;
+
+    @Prop({ type: String, default: null })
+    backgroundColor!: string | null;
 
     viewportUtil = new ViewportUtil();
     thumbnailLoaded: boolean = false;
@@ -89,7 +108,6 @@ export default class CImage extends Vue implements ICImageProps {
         }
 
         if (this.backgroundColor) {
-            console.log('backgroundColor', this.backgroundColor);
             paramMap.set('bg', `rgb:${this.backgroundColor}`);
         }
 
@@ -153,7 +171,6 @@ export default class CImage extends Vue implements ICImageProps {
         imageToLoad.addEventListener('load', this.imageLoadHandler);
     }
 
-<<<<<<< HEAD:src/js/components/atoms/c-image/c-image.ts
     resizeHandler() {
         this.calculateDimensions();
     }
@@ -164,22 +181,6 @@ export default class CImage extends Vue implements ICImageProps {
     }
 
     imageLoadHandler() {
-=======
-    async resizeHandler() {
-        this.calculateInView();
-        await this.calculateDimensions();
-    }
-
-    scrollHandler() {
-        this.calculateInView();
-    }
-
-    async onThumbnailLoad() {
-        this.thumbnailLoaded = true;
-    }
-
-    async onImageLoad() {
->>>>>>> feat(c-image): refactor data and add image error handling:src/js/components/atoms/c-image/component.ts
         this.imageLoaded = true;
     }
 }

@@ -1,4 +1,4 @@
-import clickEvent from 'events/../../../../atoms/click-event/data/data';
+import clickEvent from 'atoms/click-event/data/data';
 
 export default {
     type: 'card-product',

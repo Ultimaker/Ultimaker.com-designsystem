@@ -1,4 +1,4 @@
-import clickEvent from 'events/../../../../atoms/click-event/data/data';
+import clickEvent from 'atoms/click-event/data/data';
 import image from 'atoms/c-image/data/examples/nylon';
 import properties from 'molecules/list-unordered/data/examples/properties-basic';
 
