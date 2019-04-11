@@ -148,6 +148,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
               >
                 <article
                   class="general-content"
+                  ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
@@ -171,62 +172,25 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                           Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
                         </p>
                          
-                        <div
-                          class="cta__block link"
-                          type="CtaBlock"
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                          type="ContentButton"
                         >
-                          <a
-                            class="link--primary button"
-                            href="https://ultimaker.com"
-                            rel="noopener"
-                            target="_self"
-                            type="ContentButton"
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
                           >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
+                            
         Call me back
     
-                            </span>
-                          </a>
-                          <a
-                            class="link--medium link"
-                            href="https://ultimaker.com"
-                            rel="noopener"
-                            target="_self"
-                            type="ContentLink"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
-        Call me back
-    
-                            </span>
-                          </a>
-                          <a
-                            class="link--primary button"
-                            href="https://ultimaker.com"
-                            rel="noopener"
-                            target="_self"
-                            type="ContentButton"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
-        Call me back
-    
-                            </span>
-                          </a>
-                        </div>
+                          </span>
+                        </a>
+                         
+                        <!---->
                       </div>
                        
                       <div
@@ -261,6 +225,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
               >
                 <article
                   class="general-content"
+                  ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
@@ -284,28 +249,25 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
                          
-                        <div
-                          class="cta__block link"
-                          type="CtaBlock"
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                          type="ContentButton"
                         >
-                          <a
-                            class="link--primary button"
-                            href="https://ultimaker.com"
-                            rel="noopener"
-                            target="_self"
-                            type="ContentButton"
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
                           >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
+                            
         Call me back
     
-                            </span>
-                          </a>
-                        </div>
+                          </span>
+                        </a>
+                         
+                        <!---->
                       </div>
                        
                       <div
@@ -340,6 +302,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
               >
                 <article
                   class="general-content"
+                  ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
@@ -363,28 +326,25 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
                          
-                        <div
-                          class="cta__block link"
-                          type="CtaBlock"
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                          type="ContentButton"
                         >
-                          <a
-                            class="link--primary button"
-                            href="https://ultimaker.com"
-                            rel="noopener"
-                            target="_self"
-                            type="ContentButton"
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
                           >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
+                            
         Call me back
     
-                            </span>
-                          </a>
-                        </div>
+                          </span>
+                        </a>
+                         
+                        <!---->
                       </div>
                        
                       <div
@@ -419,6 +379,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
               >
                 <article
                   class="general-content"
+                  ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
@@ -442,28 +403,25 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
                          
-                        <div
-                          class="cta__block link"
-                          type="CtaBlock"
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                          type="ContentButton"
                         >
-                          <a
-                            class="link--medium link"
-                            href="https://ultimaker.com"
-                            rel="noopener"
-                            target="_self"
-                            type="ContentLink"
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
                           >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
+                            
         Call me back
     
-                            </span>
-                          </a>
-                        </div>
+                          </span>
+                        </a>
+                         
+                        <!---->
                       </div>
                        
                       <div
@@ -498,6 +456,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
               >
                 <article
                   class="general-content"
+                  ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
@@ -521,28 +480,25 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
                          
-                        <div
-                          class="cta__block link"
-                          type="CtaBlock"
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                          type="ContentButton"
                         >
-                          <a
-                            class="link--medium link"
-                            href="https://ultimaker.com"
-                            rel="noopener"
-                            target="_self"
-                            type="ContentLink"
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
                           >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
+                            
         Call me back
     
-                            </span>
-                          </a>
-                        </div>
+                          </span>
+                        </a>
+                         
+                        <!---->
                       </div>
                        
                       <div
@@ -577,6 +533,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
               >
                 <article
                   class="general-content"
+                  ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
@@ -600,28 +557,25 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
                          
-                        <div
-                          class="cta__block link"
-                          type="CtaBlock"
+                        <!---->
+                         
+                        <a
+                          class="link link--medium"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                          type="ContentLink"
                         >
-                          <a
-                            class="link--medium link"
-                            href="https://ultimaker.com"
-                            rel="noopener"
-                            target="_self"
-                            type="ContentLink"
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
                           >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
+                            
         Call me back
     
-                            </span>
-                          </a>
-                        </div>
+                          </span>
+                        </a>
                       </div>
                        
                       <div

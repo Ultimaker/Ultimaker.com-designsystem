@@ -21,25 +21,10 @@
                     "backgroundColor": null,
                     "mimeType": "png"
                 },
-                "ctas": {
-                    "type": "CtaBlock",
-                    "ctas": [
-                        {
-                            "type": "ContentButton",
-                            "label": "Call me back",
-                            "url": "https://ultimaker.com"
-                        },
-                        {
-                            "type": "ContentLink",
-                            "label": "Call me back",
-                            "url": "https://ultimaker.com"
-                        },{
-                            "type": "ContentButton",
-                            "label": "Call me back",
-                            "url": "https://ultimaker.com"
-                        }
-
-                    ]
+                "cta": {
+                    "type": "ContentButton",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
                 },
                 "reversed": false
             }
@@ -61,15 +46,10 @@
                     "backgroundColor": null,
                     "mimeType": "png"
                 },
-                "ctas": {
-                    "type": "CtaBlock",
-                    "ctas": [
-                        {
-                            "type": "ContentButton",
-                            "label": "Call me back",
-                            "url": "https://ultimaker.com"
-                        }
-                    ]
+                "cta": {
+                    "type": "ContentButton",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
                 },
                 "reversed": true
             }
@@ -91,15 +71,10 @@
                     "backgroundColor": null,
                     "mimeType": "png"
                 },
-                "ctas": {
-                    "type": "CtaBlock",
-                    "ctas": [
-                        {
-                            "type": "ContentButton",
-                            "label": "Call me back",
-                            "url": "https://ultimaker.com"
-                        }
-                    ]
+                "cta": {
+                    "type": "ContentButton",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
                 },
                 "reversed": false
             }
@@ -121,15 +96,10 @@
                     "backgroundColor": null,
                     "mimeType": "png"
                 },
-                "ctas": {
-                    "type": "CtaBlock",
-                    "ctas": [
-                        {
-                            "type": "ContentLink",
-                            "label": "Call me back",
-                            "url": "https://ultimaker.com"
-                        }
-                    ]
+                "cta": {
+                    "type": "ContentButton",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
                 },
                 "reversed": true
             }
@@ -152,15 +122,10 @@
                     "backgroundColor": null,
                     "mimeType": "png"
                 },
-                "ctas": {
-                    "type": "CtaBlock",
-                    "ctas": [
-                        {
-                            "type": "ContentLink",
-                            "label": "Call me back",
-                            "url": "https://ultimaker.com"
-                        }
-                    ]
+                "cta": {
+                    "type": "ContentButton",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
                 },
                 "reversed": true
             }
@@ -183,15 +148,10 @@
                     "backgroundColor": null,
                     "mimeType": "png"
                 },
-                "ctas": {
-                    "type": "CtaBlock",
-                    "ctas": [
-                        {
-                            "type": "ContentLink",
-                            "label": "Call me back",
-                            "url": "https://ultimaker.com"
-                        }
-                    ]
+                "cta": {
+                    "type": "ContentLink",
+                    "label": "Call me back",
+                    "url": "https://ultimaker.com"
                 },
                 "reversed": true
             }
