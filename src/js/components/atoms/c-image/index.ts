@@ -1,2 +1,2 @@
-import CImage from './c-image';
+import CImage from './component';
 export default CImage;

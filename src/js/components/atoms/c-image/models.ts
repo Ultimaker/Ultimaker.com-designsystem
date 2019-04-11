@@ -20,11 +20,10 @@ export enum ResizeBehavior {
 }
 
 export interface ICImageProps extends Image {
-    keepInView: boolean;
-    quality: number;
-    radius: number;
-    imageFormat: ImageFormat;
-    resizeBehavior: ResizeBehavior;
     focusArea: FocusArea;
-    backgroundColor: string | null;
+    imageFormat: ImageFormat;
+    keepInView: boolean;
+    radius: number;
+    resizeBehavior: ResizeBehavior;
+    quality: number;
 }
