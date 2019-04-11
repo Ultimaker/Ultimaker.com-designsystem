@@ -8,111 +8,131 @@ exports[`Storyshots organisms|overview-fixed-width card-product 1`] = `
     class="story"
   >
     <section
-      class="story__organism"
+      class="overview--fixed-width"
+      type="overview-fixed-width"
     >
-      <section
-        class="overview--fixed-width"
-        type="OverviewFixedWidth"
-      >
-        <header>
-          <h2
-            class="overview--fixed-width__title"
-          >
-            Explore the benefits of each material
-          </h2>
-           
-          <!---->
-        </header>
+      <header>
+        <h2
+          class="overview--fixed-width__title"
+        >
+          Explore the benefits of each material
+        </h2>
          
-        <main>
-          <section
-            class="list-show-all"
-            type="ListShowAll"
+        <!---->
+      </header>
+       
+      <main>
+        <section
+          class="list-show-all"
+          type="list-show-all"
+        >
+          <div
+            class="list-show-all__list-container"
           >
-            <div
-              class="list-show-all__list-container"
+            <ul
+              class="list list-show-all__list"
             >
-              <ul
-                class="list list-show-all__list"
+              <li
+                class="list__item list__item--content-block"
               >
-                <li
-                  class="list__item list__item--content-block"
+                <article
+                  class="card-product"
+                  type="card-product"
                 >
-                  <article
-                    class="card-product"
-                    type="CardProduct"
+                  <a
+                    aria-label="Ultimaker Nylon"
+                    class="anchor-overlay hit-area"
+                    href="https://ultimaker.com/en/products/materials/nylon"
+                    title="Ultimaker Nylon"
+                  />
+                   
+                  <img
+                    alt="Nylon 3D printed gears"
+                    class="img--contain card-product__image img--loading"
+                    src="https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg?w=20"
+                    type="Image"
+                  />
+                   
+                  <!---->
+                   
+                  <h3
+                    class="card-product__heading"
                   >
-                    <a
-                      aria-label="Ultimaker Nylon"
-                      class="anchor-overlay hit-area"
-                      href="https://ultimaker.com/en/products/materials/nylon"
-                      title="Ultimaker Nylon"
-                    />
-                     
-                    <img
-                      alt="Nylon 3D printed gears"
-                      class="img--contain card-product__image img--loading"
-                      src="https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg?w=20"
-                      type="Image"
-                    />
-                     
-                    <!---->
-                     
-                    <h3
-                      class="card-product__heading"
+                    Ultimaker Nylon
+                  </h3>
+                   
+                  <ul
+                    class="list card-product__list"
+                  >
+                    <li
+                      class="list__item list__item--inline"
+                      type="li-inline"
                     >
-                      Ultimaker Nylon
-                    </h3>
-                     
-                    <ul
-                      class="list card-product__list"
-                    >
-                      <li
-                        class="list__item list__item--label"
+                      <span
+                        class="label"
+                        type="span-label"
                       >
                         Abrasion-resistant
-                      </li>
-                      <li
-                        class="list__item list__item--label"
+                      </span>
+                    </li>
+                    <li
+                      class="list__item list__item--inline"
+                      type="li-inline"
+                    >
+                      <span
+                        class="label"
+                        type="span-label"
                       >
                         Durable
-                      </li>
-                      <li
-                        class="list__item list__item--label"
+                      </span>
+                    </li>
+                    <li
+                      class="list__item list__item--inline"
+                      type="li-inline"
+                    >
+                      <span
+                        class="label"
+                        type="span-label"
                       >
                         High strength-to-weight ratio
-                      </li>
-                      <li
-                        class="list__item list__item--label"
+                      </span>
+                    </li>
+                    <li
+                      class="list__item list__item--inline"
+                      type="li-inline"
+                    >
+                      <span
+                        class="label"
+                        type="span-label"
                       >
                         Low friction coefficient
-                      </li>
-                    </ul>
-                  </article>
-                </li>
-                <!---->
-                <!---->
-                <!---->
-                 
-                <!---->
-                <!---->
-                <!---->
-                <!---->
-              </ul>
-            </div>
-             
-            <button
-              class="button--secondary list-show-all__button"
-            >
-              Show all 4
-            </button>
-          </section>
-        </main>
-         
-        <footer>
-          <!---->
-        </footer>
-      </section>
+                      </span>
+                    </li>
+                  </ul>
+                </article>
+              </li>
+              <!---->
+              <!---->
+              <!---->
+               
+              <!---->
+              <!---->
+              <!---->
+              <!---->
+            </ul>
+          </div>
+           
+          <button
+            class="button--secondary list-show-all__button"
+          >
+            Show all 4
+          </button>
+        </section>
+      </main>
+       
+      <footer>
+        <!---->
+      </footer>
     </section>
   </section>
 </section>
