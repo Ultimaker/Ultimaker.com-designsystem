@@ -1,22 +1,23 @@
 import {storiesOf} from '@storybook/vue';
-import data from './data.json';
+import cardDefault from 'molecules/card-product/data/examples/card-product-default';
+import cardNoImage from 'molecules/card-product/data/examples/card-product-no-image';
+import cardNoProperties from 'molecules/card-product/data/examples/card-product-no-properties';
+import cardNoImageNoProperties from 'molecules/card-product/data/examples/card-product-no-image-no-properties';
 
-storiesOf('Molecules|layout/cards/card-product', module)
+storiesOf('Molecules|cards/card-product', module)
     .add('default',
         () => {
             return {
                 data: () => {
                     return {
-                        data: data.default
+                        data: cardDefault
                     };
                 },
                 template: require('./template.html')
             };
         },
         {
-            notes: {
-                markdown: require('./notes.md')
-            }
+            notes: require('./notes.md')
         }
     )
     .add('no properties',
@@ -24,16 +25,14 @@ storiesOf('Molecules|layout/cards/card-product', module)
             return {
                 data: () => {
                     return {
-                        data: data['no-properties']
+                        data: cardNoProperties
                     };
                 },
                 template: require('./template.html')
             };
         },
         {
-            notes: {
-                markdown: require('./notes.md')
-            }
+            notes: require('./notes.md')
         }
     )
     .add('no image',
@@ -41,16 +40,14 @@ storiesOf('Molecules|layout/cards/card-product', module)
             return {
                 data: () => {
                     return {
-                        data: data['no-image']
+                        data: cardNoImage
                     };
                 },
                 template: require('./template.html')
             };
         },
         {
-            notes: {
-                markdown: require('./notes.md')
-            }
+            notes: require('./notes.md')
         }
     )
     .add('no image, no properties',
@@ -58,15 +55,13 @@ storiesOf('Molecules|layout/cards/card-product', module)
             return {
                 data: () => {
                     return {
-                        data: data['no-image-or-properties']
+                        data: cardNoImageNoProperties
                     };
                 },
                 template: require('./template.html')
             };
         },
         {
-            notes: {
-                markdown: require('./notes.md')
-            }
+            notes: require('./notes.md')
         }
     );

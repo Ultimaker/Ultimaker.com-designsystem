@@ -7,17 +7,14 @@
     overflow: hidden;
 
     &__heading {
-        margin-top: $buildingUnit * 2;
         margin-bottom: $buildingUnit * 1.5;
-
         padding-left: $buildingUnit;
         padding-right: $buildingUnit;
-
-        font-size: 18px;
-        line-height: 24px;
     }
 
     &__image {
+        margin-bottom: $buildingUnit * 2;
+
         &.img--contain {
             display: block;
             height: 148px;
@@ -35,9 +32,9 @@
         align-content: space-between;
 
         &.list {
+            margin-bottom: $buildingUnit / 2;
             padding-left: $buildingUnit;
             padding-right: $buildingUnit;
-            margin-bottom: $buildingUnit / 2;
         }
 
         .list__item {
