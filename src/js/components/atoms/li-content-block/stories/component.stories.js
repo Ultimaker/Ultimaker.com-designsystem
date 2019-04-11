@@ -1,4 +1,5 @@
 import {storiesOf} from '@storybook/vue';
+import data from './data/data';
 
 storiesOf('Atoms|list items', module)
     .add('li-content-block',
@@ -6,15 +7,13 @@ storiesOf('Atoms|list items', module)
             return {
                 data: () => {
                     return {
-                        data: require('src/data/li-content-block')
+                        data: data
                     };
                 },
                 template: require('./template.html')
             };
         },
         {
-            notes: {
-                markdown: require('./notes.md')
-            }
+            notes: require('./notes.md')
         }
     );

@@ -7,5 +7,5 @@ import './styles.scss';
 })
 
 export default class LiContentBlock  extends Vue {
-    @Prop({ type: Object, required: true }) item!: Object;
+    @Prop({ type: Object, required: true }) item!: { item: object, type: string };
 }
