@@ -1,7 +1,6 @@
 <article class="organism overview">
     <section class="container">
-        <h2 class="overview__title">{{ title }}</h2>
-        <p class="subtitle overview__subtitle" v-if="subtitle">{{ subtitle }}</p>
+        <HeaderBlock :title="title" :subtitle="subtitle" />
 
         <template v-for="(section, index) in sections">
             <component :is="section.type"

@@ -261,7 +261,11 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
+<<<<<<< HEAD
 .block > :last-child, .card > :last-child, .card__content > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .general-content .cta__block > :last-child, .container > .cta__block > :last-child, .footer__container > .cta__block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .materials-card > :last-child, .hero--basic > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--basic .hero__description > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--basic .hero__tab-panel > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--basic .hero__link-list > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .tabbed-content > :last-child {
+=======
+.block > :last-child, .card > :last-child, .card__content > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .container > .cta__block > :last-child, .footer__container > .cta__block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .materials-card > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--basic > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--basic .hero__description > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--basic .hero__tab-panel > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--basic .hero__link-list > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .overview > :last-child {
+>>>>>>> fix(build): add build add header-block
   margin-bottom: 0; }
 
 .hero--basic .hero__link--large,
@@ -315,18 +319,15 @@ strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__it
 
 button, .button, input[type="button"], input[type="submit"], h1,
 h2,
-h3, q, .hero--basic .hero__subtitle, .hero--products-application .hero__subtitle,
-p.subtitle, strong.subtitle, .tablist__section .subtitle.tablist__item, .examples .examples__tabs .subtitle.tablist__item, .icon-button--underline-large, .link--large, .currency, .main-nav__link, .search__input {
+h3, q, .hero--basic .hero__subtitle, .hero--products-application .hero__subtitle, .icon-button--underline-large, .link--large, .currency, .main-nav__link, .search__input, .header-block .header-block__subtitle {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .fonts--stage-one button, .fonts--stage-one .button, .fonts--stage-one input[type="button"], .fonts--stage-one input[type="submit"], .fonts--stage-one h1,
   .fonts--stage-one h2,
-  .fonts--stage-one h3, .fonts--stage-one q, .fonts--stage-one .hero--basic .hero__subtitle, .hero--basic .fonts--stage-one .hero__subtitle, .fonts--stage-one .hero--products-application .hero__subtitle, .hero--products-application .fonts--stage-one .hero__subtitle,
-  .fonts--stage-one p.subtitle, .fonts--stage-one strong.subtitle, .fonts--stage-one .tablist__section .subtitle.tablist__item, .tablist__section .fonts--stage-one .subtitle.tablist__item, .fonts--stage-one .examples .examples__tabs .subtitle.tablist__item, .examples .examples__tabs .fonts--stage-one .subtitle.tablist__item, .fonts--stage-one .icon-button--underline-large, .fonts--stage-one .link--large, .fonts--stage-one .currency, .fonts--stage-one .main-nav__link, .fonts--stage-one .search__input {
+  .fonts--stage-one h3, .fonts--stage-one q, .fonts--stage-one .hero--basic .hero__subtitle, .hero--basic .fonts--stage-one .hero__subtitle, .fonts--stage-one .hero--products-application .hero__subtitle, .hero--products-application .fonts--stage-one .hero__subtitle, .fonts--stage-one .icon-button--underline-large, .fonts--stage-one .link--large, .fonts--stage-one .currency, .fonts--stage-one .main-nav__link, .fonts--stage-one .search__input, .fonts--stage-one .header-block .header-block__subtitle, .header-block .fonts--stage-one .header-block__subtitle {
     font-family: "fugue-init", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .fonts--stage-two button, .fonts--stage-two .button, .fonts--stage-two input[type="button"], .fonts--stage-two input[type="submit"], .fonts--stage-two h1,
   .fonts--stage-two h2,
-  .fonts--stage-two h3, .fonts--stage-two q, .fonts--stage-two .hero--basic .hero__subtitle, .hero--basic .fonts--stage-two .hero__subtitle, .fonts--stage-two .hero--products-application .hero__subtitle, .hero--products-application .fonts--stage-two .hero__subtitle,
-  .fonts--stage-two p.subtitle, .fonts--stage-two strong.subtitle, .fonts--stage-two .tablist__section .subtitle.tablist__item, .tablist__section .fonts--stage-two .subtitle.tablist__item, .fonts--stage-two .examples .examples__tabs .subtitle.tablist__item, .examples .examples__tabs .fonts--stage-two .subtitle.tablist__item, .fonts--stage-two .icon-button--underline-large, .fonts--stage-two .link--large, .fonts--stage-two .currency, .fonts--stage-two .main-nav__link, .fonts--stage-two .search__input {
+  .fonts--stage-two h3, .fonts--stage-two q, .fonts--stage-two .hero--basic .hero__subtitle, .hero--basic .fonts--stage-two .hero__subtitle, .fonts--stage-two .hero--products-application .hero__subtitle, .hero--products-application .fonts--stage-two .hero__subtitle, .fonts--stage-two .icon-button--underline-large, .fonts--stage-two .link--large, .fonts--stage-two .currency, .fonts--stage-two .main-nav__link, .fonts--stage-two .search__input, .fonts--stage-two .header-block .header-block__subtitle, .header-block .fonts--stage-two .header-block__subtitle {
     font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
@@ -380,7 +381,7 @@ h6 a:focus:not(:active),
 .hero--products-application .usp--icon .usp__label a:focus:not(:active),
 .overflow-container__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
-.content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .legal__link:focus:not(:hover), .footer-nav__link:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .legal__link:focus:not(:active), .footer-nav__link:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .search__input:focus, .overflow-container__link:focus:not(:hover), .overflow-container__link:focus:not(:active) {
+.content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .legal__link:focus:not(:hover), .footer-nav__link:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .legal__link:focus:not(:active), .footer-nav__link:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .search__input:focus, .tabs__list_link:focus:not(:hover), .tabs__list_link:focus:not(:active), .overflow-container__link:focus:not(:hover), .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
 
 .color--selected, .auto-complete__dropdown {
@@ -1063,11 +1064,7 @@ h2,
 h3,
 q,
 .hero--basic .hero__subtitle,
-.hero--products-application .hero__subtitle,
-p.subtitle,
-strong.subtitle,
-.tablist__section .subtitle.tablist__item,
-.examples .examples__tabs .subtitle.tablist__item {
+.hero--products-application .hero__subtitle {
   font-weight: 400; }
 
 h1,
@@ -1165,18 +1162,6 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0; }
-
-h2 + p.subtitle, h2 + strong.subtitle, .tablist__section h2 + .subtitle.tablist__item, .examples .examples__tabs h2 + .subtitle.tablist__item {
-  font-size: 20px;
-  line-height: 24px;
-  color: #7F7F7F;
-  margin-bottom: 57px;
-  margin-top: -18px; }
-  @media (min-width: 768px) {
-    h2 + p.subtitle, h2 + strong.subtitle, .tablist__section h2 + .subtitle.tablist__item, .examples .examples__tabs h2 + .subtitle.tablist__item {
-      font-size: 24px;
-      line-height: 30px;
-      margin-top: -40px; } }
 
 .icon {
   width: 1em;
@@ -3034,11 +3019,6 @@ table tfoot {
   margin: 24px 0 0 0;
   transform: none; }
 
-.cta__block .button .link__underline,
-.cta__block .button .link__underline:hover {
-  transform: none;
-  background: none; }
-
 @media (min-width: 569px) {
   .cta__block .button.button--primary {
     margin-right: 48px; }
@@ -3046,131 +3026,30 @@ table tfoot {
     display: inline-block;
     margin: 12px 0 0 0; } }
 
-.general-content .cta__block,
-.container > .cta__block,
-.footer__container > .cta__block {
+.container > .cta__block, .footer__container > .cta__block {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 0;
   margin-top: 60px; }
   @media (min-width: 569px) {
-    .general-content .cta__block,
-    .container > .cta__block,
-    .footer__container > .cta__block {
+    .container > .cta__block, .footer__container > .cta__block {
+      text-align: center;
       display: block; } }
-  .general-content .cta__block .link--medium,
-  .general-content .cta__block .link--large,
-  .container > .cta__block .link--medium,
-  .footer__container > .cta__block .link--medium,
-  .container > .cta__block .link--large,
-  .footer__container > .cta__block .link--large {
+  .container > .cta__block .link--large, .footer__container > .cta__block .link--large {
     vertical-align: baseline; }
-  .general-content .cta__block > a,
-  .general-content .cta__block > .link,
-  .general-content .cta__block > .toggle,
-  .general-content .cta__block > .legal__link,
-  .general-content .cta__block > .footer-nav__link,
-  .general-content .cta__block > .overflow-container__link:hover,
-  .general-content .cta__block > .overflow-container__link.exact-active,
-  .container > .cta__block > a,
-  .footer__container > .cta__block > a,
-  .container > .cta__block > .link,
-  .footer__container > .cta__block > .link,
-  .container > .cta__block > .toggle,
-  .footer__container > .cta__block > .toggle,
-  .container > .cta__block > .legal__link,
-  .footer__container > .cta__block > .legal__link,
-  .container > .cta__block > .footer-nav__link,
-  .footer__container > .cta__block > .footer-nav__link,
-  .container > .cta__block > .overflow-container__link:hover,
-  .footer__container > .cta__block > .overflow-container__link:hover,
-  .container > .cta__block > .overflow-container__link.exact-active,
-  .footer__container > .cta__block > .overflow-container__link.exact-active {
+  .container > .cta__block > a, .footer__container > .cta__block > a {
     margin-bottom: 30px;
     margin-right: 0; }
     @media (min-width: 768px) {
-      .general-content .cta__block > a,
-      .general-content .cta__block > .link,
-      .general-content .cta__block > .toggle,
-      .general-content .cta__block > .legal__link,
-      .general-content .cta__block > .footer-nav__link,
-      .general-content .cta__block > .overflow-container__link:hover,
-      .general-content .cta__block > .overflow-container__link.exact-active,
-      .container > .cta__block > a,
-      .footer__container > .cta__block > a,
-      .container > .cta__block > .link,
-      .footer__container > .cta__block > .link,
-      .container > .cta__block > .toggle,
-      .footer__container > .cta__block > .toggle,
-      .container > .cta__block > .legal__link,
-      .footer__container > .cta__block > .legal__link,
-      .container > .cta__block > .footer-nav__link,
-      .footer__container > .cta__block > .footer-nav__link,
-      .container > .cta__block > .overflow-container__link:hover,
-      .footer__container > .cta__block > .overflow-container__link:hover,
-      .container > .cta__block > .overflow-container__link.exact-active,
-      .footer__container > .cta__block > .overflow-container__link.exact-active {
+      .container > .cta__block > a, .footer__container > .cta__block > a {
         margin-right: 30px;
         margin-bottom: 0; }
-        .general-content .cta__block > a:last-child,
-        .general-content .cta__block > .link:last-child,
-        .general-content .cta__block > .toggle:last-child,
-        .general-content .cta__block > .legal__link:last-child,
-        .general-content .cta__block > .footer-nav__link:last-child,
-        .general-content .cta__block > .overflow-container__link:last-child:hover,
-        .general-content .cta__block > .overflow-container__link.exact-active:last-child,
-        .container > .cta__block > a:last-child,
-        .footer__container > .cta__block > a:last-child,
-        .container > .cta__block > .link:last-child,
-        .footer__container > .cta__block > .link:last-child,
-        .container > .cta__block > .toggle:last-child,
-        .footer__container > .cta__block > .toggle:last-child,
-        .container > .cta__block > .legal__link:last-child,
-        .footer__container > .cta__block > .legal__link:last-child,
-        .container > .cta__block > .footer-nav__link:last-child,
-        .footer__container > .cta__block > .footer-nav__link:last-child,
-        .container > .cta__block > .overflow-container__link:last-child:hover,
-        .footer__container > .cta__block > .overflow-container__link:last-child:hover,
-        .container > .cta__block > .overflow-container__link.exact-active:last-child,
-        .footer__container > .cta__block > .overflow-container__link.exact-active:last-child {
+        .container > .cta__block > a:last-child, .footer__container > .cta__block > a:last-child {
           margin-right: 0; } }
     @media (min-width: 768px) {
-      .general-content .cta__block > a.link--large,
-      .general-content .cta__block > .link.link--large,
-      .general-content .cta__block > .link--large.toggle,
-      .general-content .cta__block > .link--large.legal__link,
-      .general-content .cta__block > .link--large.footer-nav__link,
-      .general-content .cta__block > .link--large.overflow-container__link:hover,
-      .general-content .cta__block > .link--large.overflow-container__link.exact-active,
-      .container > .cta__block > a.link--large,
-      .footer__container > .cta__block > a.link--large,
-      .container > .cta__block > .link.link--large,
-      .footer__container > .cta__block > .link.link--large,
-      .container > .cta__block > .link--large.toggle,
-      .footer__container > .cta__block > .link--large.toggle,
-      .container > .cta__block > .link--large.legal__link,
-      .footer__container > .cta__block > .link--large.legal__link,
-      .container > .cta__block > .link--large.footer-nav__link,
-      .footer__container > .cta__block > .link--large.footer-nav__link,
-      .container > .cta__block > .link--large.overflow-container__link:hover,
-      .footer__container > .cta__block > .link--large.overflow-container__link:hover,
-      .container > .cta__block > .link--large.overflow-container__link.exact-active,
-      .footer__container > .cta__block > .link--large.overflow-container__link.exact-active {
+      .container > .cta__block > a.link--large, .footer__container > .cta__block > a.link--large {
         margin-bottom: 0; } }
-
-@media (min-width: 569px) {
-  
-  .container > .cta__block,
-  .footer__container > .cta__block {
-    text-align: center; } }
-
-.general-content .cta__block {
-  margin-right: 0;
-  margin-top: 36px;
-  align-items: flex-start; }
-  .general-content .cta__block > a {
-    margin-bottom: 24px; }
 
 .tag {
   display: flex;
@@ -3802,7 +3681,7 @@ table tfoot {
   max-width: 100%;
   padding: 0;
   margin-bottom: 0;
-  overflow-x: scroll;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   border: 1px solid #E3E3E3; }
@@ -3837,65 +3716,64 @@ table tfoot {
       .tablist__section .tablist__scroll-hint, .examples .examples__tabs .tablist__scroll-hint {
         display: none; } }
 
-.tabs {
-  margin-top: -6px; }
-  .tabs__nav {
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    overflow: hidden;
-    user-select: none;
-    will-change: transform; }
-  .tabs__list {
-    display: flex;
-    padding: 0;
-    border-bottom: 2px solid #EAEAEA;
-    overflow-x: scroll; }
-    .tabs__list::-webkit-scrollbar-track {
-      background-color: transparent; }
-    .tabs__list::-webkit-scrollbar {
-      height: 0px;
-      background-color: transparent; }
-    .tabs__list::-webkit-scrollbar-thumb {
-      background-color: transparent; }
-  .tabs__list_item {
-    flex: 0 1 auto;
-    text-align: center; }
-  .tabs__list_link {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    min-width: 60px;
-    margin-bottom: 0;
-    color: #000000;
-    font-size: 14px;
-    line-height: 21px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    white-space: nowrap; }
-    .tabs__list_link:hover, .tabs__list_link--active {
-      color: #000000; }
-      .tabs__list_link:hover .sub-nav__label:after, .tabs__list_link--active .sub-nav__label:after {
-        width: 100%; }
-    .tabs__list_link:not:focus:not(:active), .tabs__list_link:not:focus:not(:hover) {
-      background-color: transparent;
-      color: #000000; }
-  .tabs__indicator {
-    position: absolute;
-    z-index: 1;
-    display: block;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #000000; }
-  .tabs__contents .container, .tabs__contents .footer__container {
-    padding-bottom: 0; }
+.tabs__nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  user-select: none;
+  will-change: transform; }
+  @media (min-width: 768px) {
+    .tabs__nav {
+      justify-content: center; } }
+
+.tabs__list {
+  display: flex;
+  padding: 24px 0 1px;
+  border-bottom: 2px solid #EAEAEA; }
+  @media (min-width: 768px) {
+    .tabs__list {
+      flex-wrap: wrap; } }
+
+.tabs__list_item {
+  flex: 0 1 auto;
+  text-align: center;
+  padding: 0 12px 0;
+  margin: 0 0 12px 0; }
+  .tabs__list_item:first-child {
+    padding-left: 24px; }
+  .tabs__list_item:last-child {
+    padding-right: 24px; }
+  @media (min-width: 768px) {
+    .tabs__list_item {
+      display: inline-block; }
+      .tabs__list_item:first-child {
+        padding-left: 18px; }
+      .tabs__list_item:last-child {
+        padding-right: 18px; } }
+
+.tabs__list_link {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  min-width: 60px;
+  margin-bottom: 6px;
+  color: #000000; }
+  .tabs__list_link:hover, .tabs__list_link--active {
+    color: #000000; }
+    .tabs__list_link:hover .sub-nav__label:after, .tabs__list_link--active .sub-nav__label:after {
+      width: 100%; }
+
+.tabs__indicator {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000000; }
 
 .pager {
   position: relative;
@@ -4109,6 +3987,7 @@ table tfoot {
 .materials-card__taglist {
   margin-bottom: 0; }
 
+<<<<<<< HEAD
 .card-product {
   position: relative;
   background-color: #FFFFFF;
@@ -4152,6 +4031,45 @@ table tfoot {
 
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--basic:nth-child(even),
 main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .colors:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
+=======
+.content-block-container__image {
+  margin: 0 auto 18px;
+  overflow: hidden; }
+  @media (min-width: 569px) {
+    .content-block-container__image {
+      margin: 0 auto 24px; } }
+
+.content-block__image {
+  width: 100%; }
+
+.content-block__content {
+  width: 100%; }
+
+.header-block .header-block__title {
+  text-align: center;
+  position: relative; }
+
+.header-block .header-block__subtitle {
+  text-align: center;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #7F7F7F; }
+  @media (min-width: 768px) {
+    .header-block .header-block__subtitle {
+      font-size: 24px;
+      line-height: 30px; } }
+
+.header-block.header-block--subtitle .header-block__title {
+  margin-bottom: 24px; }
+
+.header-block.header-block--subtitle .header-block__subtitle {
+  margin-bottom: 54px; }
+
+main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--basic:nth-child(even),
+main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .colors:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .overview:nth-child(even) {
+>>>>>>> fix(build): add build add header-block
   background-color: #fafafa; }
 
 .hero--basic .hero__subtitle {
@@ -4966,38 +4884,6 @@ svg text {
     width: 100%;
     margin: auto; } }
 
-.content-general {
-  margin-top: 60px; }
-  .content-general .flexgrid--gutter {
-    margin: 0; }
-
-.content-general__item:last-child {
-  margin-bottom: 0; }
-
-.content-general__image {
-  order: 1;
-  margin: 0 auto 30px auto;
-  position: relative;
-  padding: 0 6px; }
-  @media (min-width: 768px) {
-    .content-general__image {
-      order: inherit;
-      margin: auto; } }
-
-.content-general__image-wrapper {
-  width: 75%;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .content-general__image-wrapper {
-      width: 100%; } }
-
-.content-general__content {
-  order: 2;
-  margin-bottom: -12px; }
-  @media (min-width: 768px) {
-    .content-general__content {
-      order: inherit; } }
-
 .list-section:not(:last-child) {
   margin-bottom: 53px; }
 
@@ -5062,25 +4948,33 @@ svg text {
 .overview__title, .overview__subtitle {
   text-align: center; }
 
+<<<<<<< HEAD
 .overview .cta__block .link--large {
   padding-left: 0; }
+=======
+.list-section-list__button {
+  margin: 24px 0 0 0; }
+  @media (min-width: 569px) {
+    .list-section-list__button {
+      margin: 24px 0 0 0; } }
 
-@media (min-width: 768px) {
-  .tabbed-content__header {
-    margin: 0 auto; } }
+.overview__tooltip {
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 296px;
+  position: absolute;
+  opacity: 1;
+  transform: translateY(calc(-100% - 36px)); }
+  .overview__tooltip:after {
+    left: 12px; }
 
-.tabbed-content__title {
-  position: relative;
-  margin-bottom: 24px;
-  text-align: center; }
+.tooltip-enter, .tooltip-leave-to {
+  opacity: 0;
+  transform: translateY(calc(-100% - 42px)); }
 
-.tabbed-content__title + .tabbed-content__subtitle {
-  margin-top: 0;
-  margin-bottom: 24px; }
-
-.tabbed-content__subtitle {
-  position: relative;
-  text-align: center; }
+.tooltip-enter-active, .tooltip-leave-active {
+  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s, left 0s cubic-bezier(0.23, 1, 0.32, 1); }
+>>>>>>> fix(build): add build add header-block
 
 /*
 * Because we have a primary and secondary font family, we need to define both
