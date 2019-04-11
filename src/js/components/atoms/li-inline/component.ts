@@ -7,6 +7,5 @@ import './styles.scss';
 })
 
 export default class LiInline  extends Vue {
-    @Prop({ type: String, required: true }) item!: string;
-    @Prop({ type: String, required: true }) type!: string;
+    @Prop({ type: [String, Object], required: true }) item!: string | { item: string, type: string };
 }
