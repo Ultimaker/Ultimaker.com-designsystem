@@ -77,8 +77,7 @@ small {
 // Headlines
 h1,
 h2,
-h3,
-p.subtitle {
+h3{
     @extend %fontSecondary;
     font-weight: 400;
 }
@@ -148,14 +147,3 @@ h6 {
     margin-bottom: 0;
 }
 
-h2 + p.subtitle {
-    @include font-line-ratio(sec-s);
-    color: $colorGrayDark;
-    margin-bottom: $buildingUnit * 4.75;
-    margin-top: - ($buildingUnit * 2) + 6;
-
-    @include min-tablet() {
-        @include font-line-ratio(sec-m);
-        margin-top: - ($buildingUnit * 3.5)+ 2;
-    }
-}

@@ -1,0 +1,32 @@
+.header-block{
+    .header-block__title {
+        text-align: center;
+        position: relative;
+    }
+
+    .header-block__subtitle {
+        text-align: center;
+        position: relative;
+
+        @extend %fontSecondary;
+        font-weight: 400;
+
+        @include font-line-ratio(sec-s);
+        color: $colorGrayDark;
+
+        @include min-tablet() {
+            @include font-line-ratio(sec-m);
+        }
+    }
+
+    &.header-block--subtitle{
+        .header-block__title {
+            margin-bottom: $buildingUnit * 2;
+        }
+
+        .header-block__subtitle {
+            margin-bottom: ($buildingUnit * 5) - ($buildingUnit / 2);
+
+        }
+    }
+}

@@ -1,18 +1,5 @@
-$contentBlockTabletMarginBottom: $buildingUnit * 2;
-$contentBlockMobileMarginBottom: $buildingUnit;
-
 .content-block {
     @extend %reset-last-margin;
-    max-width: 293px;
-
-    @include max-tablet() {
-        margin-bottom: $buildingUnit * 4;
-    }
-
-    margin-bottom: $contentBlockMobileMarginBottom;
-    @include min-tablet {
-        margin-bottom: $contentBlockTabletMarginBottom;
-    }
 }
 
 .content-block-container__image{

@@ -1,6 +1,19 @@
 .overview {
-    &__title, &__subtitle {
-        text-align: center;
+    @extend .organism;
+    @extend %reset-last-margin;
+}
+
+.overview__tooltip {
+    @extend %fontPrimary;
+    @include font-line-ratio(prim-s);
+
+    max-width: 296px;
+    position: absolute;
+    opacity: 1;
+    transform: translateY(calc(-100% - 36px));
+
+    &:after {
+        left: $buildingUnit;
     }
 
     .cta {
