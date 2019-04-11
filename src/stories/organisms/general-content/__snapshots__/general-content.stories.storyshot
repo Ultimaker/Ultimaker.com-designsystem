@@ -10,71 +10,7 @@ exports[`Storyshots organisms|general-content General content 1`] = `
     <section
       class="story__organism"
     >
-      <article
-        class="general-content"
-        type="ContentGeneral"
-      >
-        <section
-          class="general-content__container"
-        >
-          <div
-            class="flexgrid flexgrid--gutter flexgrid--row-reversed"
-          >
-            <div
-              class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content"
-            >
-              <h3
-                class="general-content__title"
-              >
-                 Content general title
-              </h3>
-               
-              <p
-                class="general-content__body"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
-              </p>
-               
-              <div
-                class="cta__block link"
-                type="CtaBlock"
-              >
-                <a
-                  class="link--primary button"
-                  href="https://ultimaker.com"
-                  rel="noopener"
-                  target="_self"
-                  type="ContentButton"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Call me back
-    
-                  </span>
-                </a>
-              </div>
-            </div>
-             
-            <div
-              class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image"
-            >
-              <div
-                class="general-content__image-wrapper"
-              >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center&fm=png"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
+      <!---->
     </section>
   </section>
 </section>

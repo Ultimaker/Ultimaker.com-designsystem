@@ -1,16 +1,16 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 
-import { ContentGeneral  as ContentGeneralInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/contentGeneral/ContentGeneral';
+import { ContentGeneral  as IContentGeneral } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/contentGeneral/ContentGeneral';
 
 @Component({
     name: 'ContentGeneral',
     template: require('./general-content.html'),
 })
 
-export default class GeneralContent extends Vue implements ContentGeneralInterface {
-    @Prop({ type: String, required: true }) title!: ContentGeneralInterface['title'];
-    @Prop({ type: String, required: true }) description!: ContentGeneralInterface['description'];
-    @Prop({ type: Object }) ctas?: ContentGeneralInterface['ctas'] | undefined;
-    @Prop({ type: Object }) image?: ContentGeneralInterface['image'] | undefined;
-    @Prop({ type: Boolean, required: true }) reversed!: ContentGeneralInterface['reversed'];
+export default class GeneralContent extends Vue implements IContentGeneral {
+    @Prop({ type: String, required: true }) title!: IContentGeneral['title'];
+    @Prop({ type: String, required: true }) description!: IContentGeneral['description'];
+    @Prop({ type: Object }) cta?: IContentGeneral['cta'] | undefined;
+    @Prop({ type: Object }) image?: IContentGeneral['image'] | undefined;
+    @Prop({ type: Boolean, required: true }) reversed!: IContentGeneral['reversed'];
 }

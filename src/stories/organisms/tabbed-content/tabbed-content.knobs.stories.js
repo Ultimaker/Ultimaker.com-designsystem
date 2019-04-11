@@ -15,13 +15,8 @@ export default () => ({
                     title: text(`Tab ${i} - content title`, tab.content.title),
                     description: text(`Tab ${i + 1} - content description`, tab.content.description),
                     ctas: {
-                        ... tab.content.ctas,
-                        ctas: tab.content.ctas.ctas.map((cta, index) => {
-                            return {
-                                ... cta,
-                                label: text(`Tab ${i +1} - cta ${index +1} label`, cta.label)
-                            };
-                        })
+                        ... tab.content.cta,
+                        label: text(`Tab ${i +1} - cta label`, tab.content.cta.label)
                     }
                 }
             };
