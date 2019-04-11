@@ -38,6 +38,7 @@ const webpackConfig = {
             'components': resolve('src/js/components'),
             'constants': resolve('src/js/constants'),
             'definitions': resolve('src/js/definitions'),
+            'events': resolve('src/js/events'),
             'mixins': resolve('src/js/mixins'),
             'molecules': resolve('src/js/components/molecules'),
             'organisms': resolve('src/js/components/organisms'),
