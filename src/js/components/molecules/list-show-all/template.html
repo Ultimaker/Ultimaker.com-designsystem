@@ -2,10 +2,10 @@
     <div class="list-show-all__list-container" ref="$container">
         <ul class="list list-show-all__list" ref="$list">
             <template v-if="index < limit" v-for="(item, index) in list.listItems.items">
-                <component :is="list.listItems.type" :item="item" :key="index"/>
+                <component :is="list.listItems.type" :item="item.item" :key="index"/>
             </template>
             <template v-if="showAllItems && index >= limit" v-for="(item, index) in list.listItems.items">
-                <component :is="list.listItems.type" :item="item" :key="index"/>
+                <component :is="list.listItems.type" :item="item.item" :key="index"/>
             </template>
         </ul>
     </div>

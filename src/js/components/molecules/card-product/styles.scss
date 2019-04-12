@@ -43,3 +43,17 @@
         }
     }
 }
+
+.list-show-all {
+    &__list {
+        .list {
+            &__item {
+                list-style: none;
+            }
+        }
+
+        .card-product {
+            width: 296px;
+        }
+    }
+}

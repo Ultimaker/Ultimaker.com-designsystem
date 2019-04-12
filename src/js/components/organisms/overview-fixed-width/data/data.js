@@ -8,17 +8,37 @@ export default {
     title: 'Explore the benefits of each material',
     sections: [
         {
-            type: 'list-show-all',
+            type: 'ListShowAll',
             limit: 1,
             label: 'Show all',
             list: {
                 listItems: {
-                    type: 'li-content-block',
+                    type: 'LiItem',
                     items: [
-                        cardDefault,
-                        cardNoImage,
-                        cardNoProperties,
-                        cardNoImageNoProperties
+                        {
+                            item: {
+                                item: cardDefault,
+                                type: cardDefault.type
+                            }
+                        },
+                        {
+                            item: {
+                                item: cardNoImage,
+                                type: cardNoImage.type
+                            }
+                        },
+                        {
+                            item: {
+                                item: cardNoProperties,
+                                type: cardNoProperties.type
+                            }
+                        },
+                        {
+                            item: {
+                                item: cardNoImageNoProperties,
+                                type: cardNoImageNoProperties.type
+                            }
+                        }
                     ]
                 }
             }
