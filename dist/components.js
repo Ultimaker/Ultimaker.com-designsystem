@@ -106,16 +106,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TweenPlugin", function() { return TweenPlugin; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EventDispatcher", function() { return EventDispatcher; });
 /*!
- * VERSION: 2.0.2
- * DATE: 2018-08-27
+ * VERSION: 2.1.2
+ * DATE: 2019-03-01
  * UPDATES AND DOCS AT: http://greensock.com
  *
- * @license Copyright (c) 2008-2018, GreenSock. All rights reserved.
+ * @license Copyright (c) 2008-2019, GreenSock. All rights reserved.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
  *
  * @author: Jack Doyle, jack@greensock.com
  */
+/* eslint-disable */
 
 /* ES6 changes:
 	- declare and export _gsScope at top.
@@ -127,7 +128,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 var _gsScope = (typeof(window) !== "undefined") ? window : ( true && module.exports && typeof(global) !== "undefined") ? global : undefined || {};
 
-var TweenLite = (function(window, moduleName) {
+var TweenLite = (function(window) {
 
 		"use strict";
 		var _exports = {},
@@ -145,7 +146,7 @@ var TweenLite = (function(window, moduleName) {
 				return p;
 			},
 			gs = _namespace("com.greensock"),
-			_tinyNum = 0.0000000001,
+			_tinyNum = 0.00000001,
 			_slice = function(a) { //don't use Array.prototype.slice.call(target, 0) because that doesn't work in IE8 with a NodeList that's returned by querySelectorAll()
 				var b = [],
 					l = a.length,
@@ -531,9 +532,9 @@ var TweenLite = (function(window, moduleName) {
 				this._duration = this._totalDuration = duration || 0;
 				this._delay = Number(vars.delay) || 0;
 				this._timeScale = 1;
-				this._active = (vars.immediateRender === true);
+				this._active = !!vars.immediateRender;
 				this.data = vars.data;
-				this._reversed = (vars.reversed === true);
+				this._reversed = !!vars.reversed;
 
 				if (!_rootTimeline) {
 					return;
@@ -627,7 +628,7 @@ var TweenLite = (function(window, moduleName) {
 			var tl = this._timeline, //the 2 root timelines won't have a _timeline; they're always active.
 				startTime = this._startTime,
 				rawTime;
-			return (!tl || (!this._gc && !this._paused && tl.isActive() && (rawTime = tl.rawTime(true)) >= startTime && rawTime < startTime + this.totalDuration() / this._timeScale - 0.0000001));
+			return (!tl || (!this._gc && !this._paused && tl.isActive() && (rawTime = tl.rawTime(true)) >= startTime && rawTime < startTime + this.totalDuration() / this._timeScale - _tinyNum));
 		};
 
 		p._enabled = function (enabled, ignoreTimeline) {
@@ -1078,7 +1079,7 @@ var TweenLite = (function(window, moduleName) {
 		p._firstPT = p._targets = p._overwrittenProps = p._startAt = null;
 		p._notifyPluginsOfEnabled = p._lazy = false;
 
-		TweenLite.version = "2.0.2";
+		TweenLite.version = "2.1.2";
 		TweenLite.defaultEase = p._ease = new Ease(null, null, 1, 1);
 		TweenLite.defaultOverwrite = "auto";
 		TweenLite.ticker = _ticker;
@@ -1125,6 +1126,9 @@ var TweenLite = (function(window, moduleName) {
 					pt = pt._next;
 				}
 			},
+			_blobRound = function(v) {
+				return (((v * 1000) | 0) / 1000) + "";
+			},
 			//compares two strings (start/end), finds the numbers that are different and spits back an array representing the whole value but with the changing values isolated as elements. For example, "rgb(0,0,0)" and "rgb(100,50,0)" would become ["rgb(", 0, ",", 50, ",0)"]. Notice it merges the parts that are identical (performance optimization). The array also has a linked list of PropTweens attached starting with _firstPT that contain the tweening data (t, p, s, c, f, etc.). It also stores the starting value as a "start" property so that we can revert to it if/when necessary, like when a tween rewinds fully. If the quantity of numbers differs between the start and end, it will always prioritize the end value(s). The pt parameter is optional - it's for a PropTween that will be appended to the end of the linked list and is typically for actually setting the value after all of the elements have been updated (with array.join("")).
 			_blobDif = function(start, end, filter, pt) {
 				var a = [],
@@ -1169,7 +1173,7 @@ var TweenLite = (function(window, moduleName) {
 						}
 						num = parseFloat(startNums[i]);
 						a.push(num);
-						a._firstPT = {_next: a._firstPT, t:a, p: a.length-1, s:num, c:((currentNum.charAt(1) === "=") ? parseInt(currentNum.charAt(0) + "1", 10) * parseFloat(currentNum.substr(2)) : (parseFloat(currentNum) - num)) || 0, f:0, m:(color && color < 4) ? Math.round : 0};
+						a._firstPT = {_next: a._firstPT, t:a, p: a.length-1, s:num, c:((currentNum.charAt(1) === "=") ? parseInt(currentNum.charAt(0) + "1", 10) * parseFloat(currentNum.substr(2)) : (parseFloat(currentNum) - num)) || 0, f:0, m:(color && color < 4) ? Math.round : _blobRound}; //limiting to 3 decimal places and casting as a string can really help performance when array.join() is called!
 						//note: we don't set _prev because we'll never need to remove individual PropTweens from this list.
 					}
 					charIndex += currentNum.length;
@@ -1221,16 +1225,16 @@ var TweenLite = (function(window, moduleName) {
 			_plugins = TweenLite._plugins = {},
 			_tweenLookup = _internals.tweenLookup = {},
 			_tweenLookupNum = 0,
-			_reservedProps = _internals.reservedProps = {ease:1, delay:1, overwrite:1, onComplete:1, onCompleteParams:1, onCompleteScope:1, useFrames:1, runBackwards:1, startAt:1, onUpdate:1, onUpdateParams:1, onUpdateScope:1, onStart:1, onStartParams:1, onStartScope:1, onReverseComplete:1, onReverseCompleteParams:1, onReverseCompleteScope:1, onRepeat:1, onRepeatParams:1, onRepeatScope:1, easeParams:1, yoyo:1, immediateRender:1, repeat:1, repeatDelay:1, data:1, paused:1, reversed:1, autoCSS:1, lazy:1, onOverwrite:1, callbackScope:1, stringFilter:1, id:1, yoyoEase:1},
+			_reservedProps = _internals.reservedProps = {ease:1, delay:1, overwrite:1, onComplete:1, onCompleteParams:1, onCompleteScope:1, useFrames:1, runBackwards:1, startAt:1, onUpdate:1, onUpdateParams:1, onUpdateScope:1, onStart:1, onStartParams:1, onStartScope:1, onReverseComplete:1, onReverseCompleteParams:1, onReverseCompleteScope:1, onRepeat:1, onRepeatParams:1, onRepeatScope:1, easeParams:1, yoyo:1, immediateRender:1, repeat:1, repeatDelay:1, data:1, paused:1, reversed:1, autoCSS:1, lazy:1, onOverwrite:1, callbackScope:1, stringFilter:1, id:1, yoyoEase:1, stagger:1},
 			_overwriteLookup = {none:0, all:1, auto:2, concurrent:3, allOnStart:4, preexisting:5, "true":1, "false":0},
 			_rootFramesTimeline = Animation._rootFramesTimeline = new SimpleTimeline(),
 			_rootTimeline = Animation._rootTimeline = new SimpleTimeline(),
 			_nextGCFrame = 30,
 			_lazyRender = _internals.lazyRender = function() {
-				var i = _lazyTweens.length,
-					tween;
+				var l = _lazyTweens.length,
+					i, tween;
 				_lazyLookup = {};
-				while (--i > -1) {
+				for (i = 0; i < l; i++) {
 					tween = _lazyTweens[i];
 					if (tween && tween._lazy !== false) {
 						tween.render(tween._lazy[0], tween._lazy[1], true);
@@ -1330,7 +1334,7 @@ var TweenLite = (function(window, moduleName) {
 					}
 					return changed;
 				}
-				//NOTE: Add 0.0000000001 to overcome floating point errors that can cause the startTime to be VERY slightly off (when a tween's time() is set for example)
+				//NOTE: Add tiny amount to overcome floating point errors that can cause the startTime to be VERY slightly off (when a tween's time() is set for example)
 				var startTime = tween._startTime + _tinyNum,
 					overlaps = [],
 					oCount = 0,
@@ -1345,7 +1349,7 @@ var TweenLite = (function(window, moduleName) {
 						if (_checkOverlap(curTween, globalStart, zeroDur) === 0) {
 							overlaps[oCount++] = curTween;
 						}
-					} else if (curTween._startTime <= startTime) if (curTween._startTime + curTween.totalDuration() / curTween._timeScale > startTime) if (!((zeroDur || !curTween._initted) && startTime - curTween._startTime <= 0.0000000002)) {
+					} else if (curTween._startTime <= startTime) if (curTween._startTime + curTween.totalDuration() / curTween._timeScale > startTime) if (!((zeroDur || !curTween._initted) && startTime - curTween._startTime <= _tinyNum * 2)) {
 						overlaps[oCount++] = curTween;
 					}
 				}
@@ -1393,11 +1397,12 @@ var TweenLite = (function(window, moduleName) {
 				dur = this._duration,
 				immediate = !!v.immediateRender,
 				ease = v.ease,
+				startAt = this._startAt,
 				i, initPlugins, pt, p, startVars, l;
 			if (v.startAt) {
-				if (this._startAt) {
-					this._startAt.render(-1, true); //if we've run a startAt previously (when the tween instantiated), we should revert it so that the values re-instantiate correctly particularly for relative tweens. Without this, a TweenLite.fromTo(obj, 1, {x:"+=100"}, {x:"-=100"}), for example, would actually jump to +=200 because the startAt would run twice, doubling the relative change.
-					this._startAt.kill();
+				if (startAt) {
+					startAt.render(-1, true); //if we've run a startAt previously (when the tween instantiated), we should revert it so that the values re-instantiate correctly particularly for relative tweens. Without this, a TweenLite.fromTo(obj, 1, {x:"+=100"}, {x:"-=100"}), for example, would actually jump to +=200 because the startAt would run twice, doubling the relative change.
+					startAt.kill();
 				}
 				startVars = {};
 				for (p in v.startAt) { //copy the properties/values into a new object to avoid collisions, like var to = {x:0}, from = {x:500}; timeline.fromTo(e, 1, from, to).fromTo(e, 1, to, from);
@@ -1421,9 +1426,9 @@ var TweenLite = (function(window, moduleName) {
 				}
 			} else if (v.runBackwards && dur !== 0) {
 				//from() tweens must be handled uniquely: their beginning values must be rendered but we don't want overwriting to occur yet (when time is still 0). Wait until the tween actually begins before doing all the routines like overwriting. At that time, we should render at the END of the tween to ensure that things initialize correctly (remember, from() tweens go backwards)
-				if (this._startAt) {
-					this._startAt.render(-1, true);
-					this._startAt.kill();
+				if (startAt) {
+					startAt.render(-1, true);
+					startAt.kill();
 					this._startAt = null;
 				} else {
 					if (this._time !== 0) { //in rare cases (like if a from() tween runs and then is invalidate()-ed), immediateRender could be true but the initial forced-render gets skipped, so there's no need to force the render in this context when the _time is greater than 0
@@ -1493,7 +1498,6 @@ var TweenLite = (function(window, moduleName) {
 			if (target == null) {
 				return false;
 			}
-
 			if (_lazyLookup[target._gsTweenID]) {
 				_lazyRender(); //if other tweens of the same target have recently initted but haven't rendered yet, we've got to force the render so that the starting values are correct (imagine populating a timeline with a bunch of sequential tweens and then jumping to the end)
 			}
@@ -1553,55 +1557,58 @@ var TweenLite = (function(window, moduleName) {
 		};
 
 		p.render = function(time, suppressEvents, force) {
-			var prevTime = this._time,
-				duration = this._duration,
-				prevRawPrevTime = this._rawPrevTime,
+			var self = this,
+				prevTime = self._time,
+				duration = self._duration,
+				prevRawPrevTime = self._rawPrevTime,
 				isComplete, callback, pt, rawPrevTime;
-			if (time >= duration - 0.0000001 && time >= 0) { //to work around occasional floating point math artifacts.
-				this._totalTime = this._time = duration;
-				this.ratio = this._ease._calcEnd ? this._ease.getRatio(1) : 1;
-				if (!this._reversed ) {
+			if (time >= duration - _tinyNum && time >= 0) { //to work around occasional floating point math artifacts.
+				self._totalTime = self._time = duration;
+				self.ratio = self._ease._calcEnd ? self._ease.getRatio(1) : 1;
+				if (!self._reversed ) {
 					isComplete = true;
 					callback = "onComplete";
-					force = (force || this._timeline.autoRemoveChildren); //otherwise, if the animation is unpaused/activated after it's already finished, it doesn't get removed from the parent timeline.
+					force = (force || self._timeline.autoRemoveChildren); //otherwise, if the animation is unpaused/activated after it's already finished, it doesn't get removed from the parent timeline.
 				}
-				if (duration === 0) if (this._initted || !this.vars.lazy || force) { //zero-duration tweens are tricky because we must discern the momentum/direction of time in order to determine whether the starting values should be rendered or the ending values. If the "playhead" of its timeline goes past the zero-duration tween in the forward direction or lands directly on it, the end values should be rendered, but if the timeline's "playhead" moves past it in the backward direction (from a postitive time to a negative time), the starting values must be rendered.
-					if (this._startTime === this._timeline._duration) { //if a zero-duration tween is at the VERY end of a timeline and that timeline renders at its end, it will typically add a tiny bit of cushion to the render time to prevent rounding errors from getting in the way of tweens rendering their VERY end. If we then reverse() that timeline, the zero-duration tween will trigger its onReverseComplete even though technically the playhead didn't pass over it again. It's a very specific edge case we must accommodate.
+				if (duration === 0) if (self._initted || !self.vars.lazy || force) { //zero-duration tweens are tricky because we must discern the momentum/direction of time in order to determine whether the starting values should be rendered or the ending values. If the "playhead" of its timeline goes past the zero-duration tween in the forward direction or lands directly on it, the end values should be rendered, but if the timeline's "playhead" moves past it in the backward direction (from a postitive time to a negative time), the starting values must be rendered.
+					if (self._startTime === self._timeline._duration) { //if a zero-duration tween is at the VERY end of a timeline and that timeline renders at its end, it will typically add a tiny bit of cushion to the render time to prevent rounding errors from getting in the way of tweens rendering their VERY end. If we then reverse() that timeline, the zero-duration tween will trigger its onReverseComplete even though technically the playhead didn't pass over it again. It's a very specific edge case we must accommodate.
 						time = 0;
 					}
-					if (prevRawPrevTime < 0 || (time <= 0 && time >= -0.0000001) || (prevRawPrevTime === _tinyNum && this.data !== "isPause")) if (prevRawPrevTime !== time) { //note: when this.data is "isPause", it's a callback added by addPause() on a timeline that we should not be triggered when LEAVING its exact start time. In other words, tl.addPause(1).play(1) shouldn't pause.
+					if (prevRawPrevTime < 0 || (time <= 0 && time >= -_tinyNum) || (prevRawPrevTime === _tinyNum && self.data !== "isPause")) if (prevRawPrevTime !== time) { //note: when this.data is "isPause", it's a callback added by addPause() on a timeline that we should not be triggered when LEAVING its exact start time. In other words, tl.addPause(1).play(1) shouldn't pause.
 						force = true;
 						if (prevRawPrevTime > _tinyNum) {
 							callback = "onReverseComplete";
 						}
 					}
-					this._rawPrevTime = rawPrevTime = (!suppressEvents || time || prevRawPrevTime === time) ? time : _tinyNum; //when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration tween, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect. We set the _rawPrevTime to be a precise tiny number to indicate this scenario rather than using another property/variable which would increase memory usage. This technique is less readable, but more efficient.
+					self._rawPrevTime = rawPrevTime = (!suppressEvents || time || prevRawPrevTime === time) ? time : _tinyNum; //when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration tween, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect. We set the _rawPrevTime to be a precise tiny number to indicate this scenario rather than using another property/variable which would increase memory usage. This technique is less readable, but more efficient.
 				}
 
-			} else if (time < 0.0000001) { //to work around occasional floating point math artifacts, round super small values to 0.
-				this._totalTime = this._time = 0;
-				this.ratio = this._ease._calcEnd ? this._ease.getRatio(0) : 0;
+			} else if (time < _tinyNum) { //to work around occasional floating point math artifacts, round super small values to 0.
+				self._totalTime = self._time = 0;
+				self.ratio = self._ease._calcEnd ? self._ease.getRatio(0) : 0;
 				if (prevTime !== 0 || (duration === 0 && prevRawPrevTime > 0)) {
 					callback = "onReverseComplete";
-					isComplete = this._reversed;
+					isComplete = self._reversed;
 				}
-				if (time < 0) {
-					this._active = false;
-					if (duration === 0) if (this._initted || !this.vars.lazy || force) { //zero-duration tweens are tricky because we must discern the momentum/direction of time in order to determine whether the starting values should be rendered or the ending values. If the "playhead" of its timeline goes past the zero-duration tween in the forward direction or lands directly on it, the end values should be rendered, but if the timeline's "playhead" moves past it in the backward direction (from a postitive time to a negative time), the starting values must be rendered.
-						if (prevRawPrevTime >= 0 && !(prevRawPrevTime === _tinyNum && this.data === "isPause")) {
+				if (time > -_tinyNum) {
+					time = 0;
+				} else if (time < 0) {
+					self._active = false;
+					if (duration === 0) if (self._initted || !self.vars.lazy || force) { //zero-duration tweens are tricky because we must discern the momentum/direction of time in order to determine whether the starting values should be rendered or the ending values. If the "playhead" of its timeline goes past the zero-duration tween in the forward direction or lands directly on it, the end values should be rendered, but if the timeline's "playhead" moves past it in the backward direction (from a postitive time to a negative time), the starting values must be rendered.
+						if (prevRawPrevTime >= 0 && !(prevRawPrevTime === _tinyNum && self.data === "isPause")) {
 							force = true;
 						}
-						this._rawPrevTime = rawPrevTime = (!suppressEvents || time || prevRawPrevTime === time) ? time : _tinyNum; //when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration tween, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect. We set the _rawPrevTime to be a precise tiny number to indicate this scenario rather than using another property/variable which would increase memory usage. This technique is less readable, but more efficient.
+						self._rawPrevTime = rawPrevTime = (!suppressEvents || time || prevRawPrevTime === time) ? time : _tinyNum; //when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration tween, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect. We set the _rawPrevTime to be a precise tiny number to indicate this scenario rather than using another property/variable which would increase memory usage. This technique is less readable, but more efficient.
 					}
 				}
-				if (!this._initted || (this._startAt && this._startAt.progress())) { //if we render the very beginning (time == 0) of a fromTo(), we must force the render (normal tweens wouldn't need to render at a time of 0 when the prevTime was also 0). This is also mandatory to make sure overwriting kicks in immediately. Also, we check progress() because if startAt has already rendered at its end, we should force a render at its beginning. Otherwise, if you put the playhead directly on top of where a fromTo({immediateRender:false}) starts, and then move it backwards, the from() won't revert its values.
+				if (!self._initted || (self._startAt && self._startAt.progress())) { //if we render the very beginning (time == 0) of a fromTo(), we must force the render (normal tweens wouldn't need to render at a time of 0 when the prevTime was also 0). This is also mandatory to make sure overwriting kicks in immediately. Also, we check progress() because if startAt has already rendered at its end, we should force a render at its beginning. Otherwise, if you put the playhead directly on top of where a fromTo({immediateRender:false}) starts, and then move it backwards, the from() won't revert its values.
 					force = true;
 				}
 			} else {
-				this._totalTime = this._time = time;
+				self._totalTime = self._time = time;
 
-				if (this._easeType) {
-					var r = time / duration, type = this._easeType, pow = this._easePower;
+				if (self._easeType) {
+					var r = time / duration, type = self._easeType, pow = self._easePower;
 					if (type === 1 || (type === 3 && r >= 0.5)) {
 						r = 1 - r;
 					}
@@ -1617,93 +1624,83 @@ var TweenLite = (function(window, moduleName) {
 					} else if (pow === 4) {
 						r *= r * r * r * r;
 					}
-
-					if (type === 1) {
-						this.ratio = 1 - r;
-					} else if (type === 2) {
-						this.ratio = r;
-					} else if (time / duration < 0.5) {
-						this.ratio = r / 2;
-					} else {
-						this.ratio = 1 - (r / 2);
-					}
-
+					self.ratio = (type === 1) ? 1 - r : (type === 2) ? r : (time / duration < 0.5) ? r / 2 : 1 - (r / 2);
 				} else {
-					this.ratio = this._ease.getRatio(time / duration);
+					self.ratio = self._ease.getRatio(time / duration);
 				}
 			}
 
-			if (this._time === prevTime && !force) {
+			if (self._time === prevTime && !force) {
 				return;
-			} else if (!this._initted) {
-				this._init();
-				if (!this._initted || this._gc) { //immediateRender tweens typically won't initialize until the playhead advances (_time is greater than 0) in order to ensure that overwriting occurs properly. Also, if all of the tweening properties have been overwritten (which would cause _gc to be true, as set in _init()), we shouldn't continue otherwise an onStart callback could be called for example.
+			} else if (!self._initted) {
+				self._init();
+				if (!self._initted || self._gc) { //immediateRender tweens typically won't initialize until the playhead advances (_time is greater than 0) in order to ensure that overwriting occurs properly. Also, if all of the tweening properties have been overwritten (which would cause _gc to be true, as set in _init()), we shouldn't continue otherwise an onStart callback could be called for example.
 					return;
-				} else if (!force && this._firstPT && ((this.vars.lazy !== false && this._duration) || (this.vars.lazy && !this._duration))) {
-					this._time = this._totalTime = prevTime;
-					this._rawPrevTime = prevRawPrevTime;
-					_lazyTweens.push(this);
-					this._lazy = [time, suppressEvents];
+				} else if (!force && self._firstPT && ((self.vars.lazy !== false && self._duration) || (self.vars.lazy && !self._duration))) {
+					self._time = self._totalTime = prevTime;
+					self._rawPrevTime = prevRawPrevTime;
+					_lazyTweens.push(self);
+					self._lazy = [time, suppressEvents];
 					return;
 				}
 				//_ease is initially set to defaultEase, so now that init() has run, _ease is set properly and we need to recalculate the ratio. Overall this is faster than using conditional logic earlier in the method to avoid having to set ratio twice because we only init() once but renderTime() gets called VERY frequently.
-				if (this._time && !isComplete) {
-					this.ratio = this._ease.getRatio(this._time / duration);
-				} else if (isComplete && this._ease._calcEnd) {
-					this.ratio = this._ease.getRatio((this._time === 0) ? 0 : 1);
+				if (self._time && !isComplete) {
+					self.ratio = self._ease.getRatio(self._time / duration);
+				} else if (isComplete && self._ease._calcEnd) {
+					self.ratio = self._ease.getRatio((self._time === 0) ? 0 : 1);
 				}
 			}
-			if (this._lazy !== false) { //in case a lazy render is pending, we should flush it because the new render is occurring now (imagine a lazy tween instantiating and then immediately the user calls tween.seek(tween.duration()), skipping to the end - the end render would be forced, and then if we didn't flush the lazy render, it'd fire AFTER the seek(), rendering it at the wrong time.
-				this._lazy = false;
+			if (self._lazy !== false) { //in case a lazy render is pending, we should flush it because the new render is occurring now (imagine a lazy tween instantiating and then immediately the user calls tween.seek(tween.duration()), skipping to the end - the end render would be forced, and then if we didn't flush the lazy render, it'd fire AFTER the seek(), rendering it at the wrong time.
+				self._lazy = false;
 			}
-			if (!this._active) if (!this._paused && this._time !== prevTime && time >= 0) {
-				this._active = true;  //so that if the user renders a tween (as opposed to the timeline rendering it), the timeline is forced to re-render and align it with the proper time/frame on the next rendering cycle. Maybe the tween already finished but the user manually re-renders it as halfway done.
+			if (!self._active) if (!self._paused && self._time !== prevTime && time >= 0) {
+				self._active = true;  //so that if the user renders a tween (as opposed to the timeline rendering it), the timeline is forced to re-render and align it with the proper time/frame on the next rendering cycle. Maybe the tween already finished but the user manually re-renders it as halfway done.
 			}
 			if (prevTime === 0) {
-				if (this._startAt) {
+				if (self._startAt) {
 					if (time >= 0) {
-						this._startAt.render(time, true, force);
+						self._startAt.render(time, true, force);
 					} else if (!callback) {
 						callback = "_dummyGS"; //if no callback is defined, use a dummy value just so that the condition at the end evaluates as true because _startAt should render AFTER the normal render loop when the time is negative. We could handle this in a more intuitive way, of course, but the render loop is the MOST important thing to optimize, so this technique allows us to avoid adding extra conditional logic in a high-frequency area.
 					}
 				}
-				if (this.vars.onStart) if (this._time !== 0 || duration === 0) if (!suppressEvents) {
-					this._callback("onStart");
+				if (self.vars.onStart) if (self._time !== 0 || duration === 0) if (!suppressEvents) {
+					self._callback("onStart");
 				}
 			}
-			pt = this._firstPT;
+			pt = self._firstPT;
 			while (pt) {
 				if (pt.f) {
-					pt.t[pt.p](pt.c * this.ratio + pt.s);
+					pt.t[pt.p](pt.c * self.ratio + pt.s);
 				} else {
-					pt.t[pt.p] = pt.c * this.ratio + pt.s;
+					pt.t[pt.p] = pt.c * self.ratio + pt.s;
 				}
 				pt = pt._next;
 			}
 
-			if (this._onUpdate) {
-				if (time < 0) if (this._startAt && time !== -0.0001) { //if the tween is positioned at the VERY beginning (_startTime 0) of its parent timeline, it's illegal for the playhead to go back further, so we should not render the recorded startAt values.
-					this._startAt.render(time, true, force); //note: for performance reasons, we tuck this conditional logic inside less traveled areas (most tweens don't have an onUpdate). We'd just have it at the end before the onComplete, but the values should be updated before any onUpdate is called, so we ALSO put it here and then if it's not called, we do so later near the onComplete.
+			if (self._onUpdate) {
+				if (time < 0) if (self._startAt && time !== -0.0001) { //if the tween is positioned at the VERY beginning (_startTime 0) of its parent timeline, it's illegal for the playhead to go back further, so we should not render the recorded startAt values.
+					self._startAt.render(time, true, force); //note: for performance reasons, we tuck this conditional logic inside less traveled areas (most tweens don't have an onUpdate). We'd just have it at the end before the onComplete, but the values should be updated before any onUpdate is called, so we ALSO put it here and then if it's not called, we do so later near the onComplete.
 				}
-				if (!suppressEvents) if (this._time !== prevTime || isComplete || force) {
-					this._callback("onUpdate");
+				if (!suppressEvents) if (self._time !== prevTime || isComplete || force) {
+					self._callback("onUpdate");
 				}
 			}
-			if (callback) if (!this._gc || force) { //check _gc because there's a chance that kill() could be called in an onUpdate
-				if (time < 0 && this._startAt && !this._onUpdate && time !== -0.0001) { //-0.0001 is a special value that we use when looping back to the beginning of a repeated TimelineMax, in which case we shouldn't render the _startAt values.
-					this._startAt.render(time, true, force);
+			if (callback) if (!self._gc || force) { //check _gc because there's a chance that kill() could be called in an onUpdate
+				if (time < 0 && self._startAt && !self._onUpdate && time !== -0.0001) { //-0.0001 is a special value that we use when looping back to the beginning of a repeated TimelineMax, in which case we shouldn't render the _startAt values.
+					self._startAt.render(time, true, force);
 				}
 				if (isComplete) {
-					if (this._timeline.autoRemoveChildren) {
-						this._enabled(false, false);
+					if (self._timeline.autoRemoveChildren) {
+						self._enabled(false, false);
 					}
-					this._active = false;
+					self._active = false;
 				}
-				if (!suppressEvents && this.vars[callback]) {
-					this._callback(callback);
+				if (!suppressEvents && self.vars[callback]) {
+					self._callback(callback);
 				}
-				if (duration === 0 && this._rawPrevTime === _tinyNum && rawPrevTime !== _tinyNum) { //the onComplete or onReverseComplete could trigger movement of the playhead and for zero-duration tweens (which must discern direction) that land directly back on their start time, we don't want to fire again on the next render. Think of several addPause()'s in a timeline that forces the playhead to a certain spot, but what if it's already paused and another tween is tweening the "time" of the timeline? Each time it moves [forward] past that spot, it would move back, and since suppressEvents is true, it'd reset _rawPrevTime to _tinyNum so that when it begins again, the callback would fire (so ultimately it could bounce back and forth during that tween). Again, this is a very uncommon scenario, but possible nonetheless.
-					this._rawPrevTime = 0;
+				if (duration === 0 && self._rawPrevTime === _tinyNum && rawPrevTime !== _tinyNum) { //the onComplete or onReverseComplete could trigger movement of the playhead and for zero-duration tweens (which must discern direction) that land directly back on their start time, we don't want to fire again on the next render. Think of several addPause()'s in a timeline that forces the playhead to a certain spot, but what if it's already paused and another tween is tweening the "time" of the timeline? Each time it moves [forward] past that spot, it would move back, and since suppressEvents is true, it'd reset _rawPrevTime to _tinyNum so that when it begins again, the callback would fire (so ultimately it could bounce back and forth during that tween). Again, this is a very uncommon scenario, but possible nonetheless.
+					self._rawPrevTime = 0;
 				}
 			}
 		};
@@ -1804,13 +1801,14 @@ var TweenLite = (function(window, moduleName) {
 			if (this._notifyPluginsOfEnabled) {
 				TweenLite._onPluginEvent("_onDisable", this);
 			}
+			var t = this._time;
 			this._firstPT = this._overwrittenProps = this._startAt = this._onUpdate = null;
 			this._notifyPluginsOfEnabled = this._active = this._lazy = false;
 			this._propLookup = (this._targets) ? {} : [];
 			Animation.prototype.invalidate.call(this);
 			if (this.vars.immediateRender) {
 				this._time = -_tinyNum; //forces a render without having to set the render() "force" parameter to true because we want to allow lazying by default (using the "force" parameter always forces an immediate full render)
-				this.render(Math.min(0, -this._delay)); //in case delay is negative.
+				this.render(t, false, this.vars.lazy !== false);
 			}
 			return this;
 		};
@@ -2973,11 +2971,11 @@ var _components = __webpack_require__(114);
 
 var _components2 = _interopRequireDefault(_components);
 
-var _directives = __webpack_require__(324);
+var _directives = __webpack_require__(327);
 
 var Directives = _interopRequireWildcard(_directives);
 
-__webpack_require__(326);
+__webpack_require__(329);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -3613,7 +3611,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
 
 /***/ }),
 /* 111 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
@@ -3622,7 +3620,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
  * LICENSE file in the root directory of this source tree.
  */
 
-!(function(global) {
+var runtime = (function (exports) {
   "use strict";
 
   var Op = Object.prototype;
@@ -3632,23 +3630,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
   var iteratorSymbol = $Symbol.iterator || "@@iterator";
   var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
   var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
-
-  var inModule = typeof module === "object";
-  var runtime = global.regeneratorRuntime;
-  if (runtime) {
-    if (inModule) {
-      // If regeneratorRuntime is defined globally and we're in a module,
-      // make the exports object identical to regeneratorRuntime.
-      module.exports = runtime;
-    }
-    // Don't bother evaluating the rest of this file if the runtime was
-    // already defined globally.
-    return;
-  }
-
-  // Define the runtime globally (as expected by generated code) as either
-  // module.exports (if we're in a module) or a new, empty object.
-  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
 
   function wrap(innerFn, outerFn, self, tryLocsList) {
     // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
@@ -3662,7 +3643,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
 
     return generator;
   }
-  runtime.wrap = wrap;
+  exports.wrap = wrap;
 
   // Try/catch helper to minimize deoptimizations. Returns a completion
   // record like context.tryEntries[i].completion. This interface could
@@ -3733,7 +3714,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
     });
   }
 
-  runtime.isGeneratorFunction = function(genFun) {
+  exports.isGeneratorFunction = function(genFun) {
     var ctor = typeof genFun === "function" && genFun.constructor;
     return ctor
       ? ctor === GeneratorFunction ||
@@ -3743,7 +3724,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
       : false;
   };
 
-  runtime.mark = function(genFun) {
+  exports.mark = function(genFun) {
     if (Object.setPrototypeOf) {
       Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
     } else {
@@ -3760,7 +3741,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
   // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
   // `hasOwn.call(value, "__await")` to determine if the yielded value is
   // meant to be awaited.
-  runtime.awrap = function(arg) {
+  exports.awrap = function(arg) {
     return { __await: arg };
   };
 
@@ -3785,22 +3766,14 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
         return Promise.resolve(value).then(function(unwrapped) {
           // When a yielded Promise is resolved, its final value becomes
           // the .value of the Promise<{value,done}> result for the
-          // current iteration. If the Promise is rejected, however, the
-          // result for this iteration will be rejected with the same
-          // reason. Note that rejections of yielded Promises are not
-          // thrown back into the generator function, as is the case
-          // when an awaited Promise is rejected. This difference in
-          // behavior between yield and await is important, because it
-          // allows the consumer to decide what to do with the yielded
-          // rejection (swallow it and continue, manually .throw it back
-          // into the generator, abandon iteration, whatever). With
-          // await, by contrast, there is no opportunity to examine the
-          // rejection reason outside the generator function, so the
-          // only option is to throw it from the await expression, and
-          // let the generator function handle the exception.
+          // current iteration.
           result.value = unwrapped;
           resolve(result);
-        }, reject);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
       }
     }
 
@@ -3843,17 +3816,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
   AsyncIterator.prototype[asyncIteratorSymbol] = function () {
     return this;
   };
-  runtime.AsyncIterator = AsyncIterator;
+  exports.AsyncIterator = AsyncIterator;
 
   // Note that simple async functions are implemented on top of
   // AsyncIterator objects; they just return a Promise for the value of
   // the final result produced by the iterator.
-  runtime.async = function(innerFn, outerFn, self, tryLocsList) {
+  exports.async = function(innerFn, outerFn, self, tryLocsList) {
     var iter = new AsyncIterator(
       wrap(innerFn, outerFn, self, tryLocsList)
     );
 
-    return runtime.isGeneratorFunction(outerFn)
+    return exports.isGeneratorFunction(outerFn)
       ? iter // If outerFn is a generator, return the full iterator.
       : iter.next().then(function(result) {
           return result.done ? result.value : iter.next();
@@ -3950,7 +3923,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
       context.delegate = null;
 
       if (context.method === "throw") {
-        if (delegate.iterator.return) {
+        // Note: ["return"] must be used for ES3 parsing compatibility.
+        if (delegate.iterator["return"]) {
           // If the delegate iterator has a return method, give it a
           // chance to clean up.
           context.method = "return";
@@ -4070,7 +4044,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
     this.reset(true);
   }
 
-  runtime.keys = function(object) {
+  exports.keys = function(object) {
     var keys = [];
     for (var key in object) {
       keys.push(key);
@@ -4131,7 +4105,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
     // Return an iterator with no values.
     return { next: doneResult };
   }
-  runtime.values = values;
+  exports.values = values;
 
   function doneResult() {
     return { value: undefined, done: true };
@@ -4336,12 +4310,35 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
       return ContinueSentinel;
     }
   };
-})(
-  // In sloppy mode, unbound `this` refers to the global object, fallback to
-  // Function constructor if we're in global strict mode. That is sadly a form
-  // of indirect eval which violates Content Security Policy.
-  (function() { return this })() || Function("return this")()
-);
+
+  // Regardless of whether this script is executing as a CommonJS module
+  // or not, return the runtime object so that we can declare the variable
+  // regeneratorRuntime in the outer scope, which allows this module to be
+  // injected easily by `bin/regenerator --include-runtime script.js`.
+  return exports;
+
+}(
+  // If this script is executing as a CommonJS module, use module.exports
+  // as the regeneratorRuntime namespace. Otherwise create a new empty
+  // object. Either way, the resulting object will be used to initialize
+  // the regeneratorRuntime variable at the top of this file.
+   true ? module.exports : undefined
+));
+
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  // This module should not be running in strict mode, so the above
+  // assignment should always work unless something is misconfigured. Just
+  // in case runtime.js accidentally runs in strict mode, we can escape
+  // strict mode using a global Function call. This could conceivably fail
+  // if a Content Security Policy forbids using Function, but in that case
+  // the proper solution is to fix the accidental strict mode problem. If
+  // you've misconfigured your bundler to force strict mode and applied a
+  // CSP to forbid Function, and you're not willing to fix either of those
+  // problems, please detail your unique predicament in a GitHub issue.
+  Function("r", "regeneratorRuntime = r")(runtime);
+}
 
 
 /***/ }),
@@ -4802,7 +4799,7 @@ var BaseLink = function (_Vue) {
                     classes["link--" + mod] = true;
                 });
             }
-            if (this.icon !== '' && this.mod && this.mod.indexOf('small') === -1) {
+            if (this.icon !== '' && this.mod === 'string' && this.mod && this.mod.indexOf('small') === -1) {
                 classes['link--icon'] = true;
             }
             return classes;
@@ -7896,12 +7893,12 @@ var CtaBlock = function (_Vue) {
         var _this = _possibleConstructorReturn(this, (CtaBlock.__proto__ || Object.getPrototypeOf(CtaBlock)).apply(this, arguments));
 
         _this.modifiers = {
-            ContentButton: 'button',
-            ContentLink: 'large'
+            ContentButton: _this.modContentButton || 'primary',
+            ContentLink: _this.modContentLink || 'large'
         };
         _this.classes = {
-            ContentButton: _this.styleContentButton,
-            ContentLink: 'link link--large'
+            ContentButton: _this.styleContentButton || 'button',
+            ContentLink: _this.styleContentLink || 'link'
         };
         return _this;
     }
@@ -7921,8 +7918,11 @@ var CtaBlock = function (_Vue) {
     return CtaBlock;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], CtaBlock.prototype, "ctas", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], CtaBlock.prototype, "block", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], CtaBlock.prototype, "styleContentButton", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], CtaBlock.prototype, "block", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], CtaBlock.prototype, "styleContentButton", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], CtaBlock.prototype, "styleContentLink", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], CtaBlock.prototype, "modContentLink", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], CtaBlock.prototype, "modContentButton", void 0);
 CtaBlock = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'cta-block',
     template: __webpack_require__(187)
@@ -7973,7 +7973,7 @@ var _vuePropertyDecorator = __webpack_require__(1);
 
 var _gsap = __webpack_require__(4);
 
-var _Draggable = __webpack_require__(327);
+var _Draggable = __webpack_require__(330);
 
 var _Draggable2 = _interopRequireDefault(_Draggable);
 
@@ -10813,8 +10813,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(1);
@@ -10843,25 +10841,17 @@ var Tab = function (_Vue) {
     function Tab() {
         _classCallCheck(this, Tab);
 
-        var _this = _possibleConstructorReturn(this, (Tab.__proto__ || Object.getPrototypeOf(Tab)).apply(this, arguments));
-
-        _this.visible = true;
-        return _this;
+        return _possibleConstructorReturn(this, (Tab.__proto__ || Object.getPrototypeOf(Tab)).apply(this, arguments));
     }
-
-    _createClass(Tab, [{
-        key: "setVisible",
-        value: function setVisible(val) {
-            this.visible = val;
-        }
-    }]);
 
     return Tab;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], Tab.prototype, "id", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], Tab.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Tab.prototype, "id", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Tab.prototype, "label", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Tab.prototype, "content", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tab.prototype, "active", void 0);
 Tab = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'tab',
+    name: 'Tab',
     template: __webpack_require__(238)
 })], Tab);
 exports.default = Tab;
@@ -10870,7 +10860,7 @@ exports.default = Tab;
 /* 238 */
 /***/ (function(module, exports) {
 
-module.exports = "<div :id=\"id\" class=\"tabs__content\" v-show=\"visible\" role=\"tabpanel\" :aria-hidden=\"!visible\" :aria-label=\"title\">\n    <slot></slot>\n</div>\n";
+module.exports = "<div :id=\"id\" class=\"tabs__content\" v-show=\"active\" role=\"tabpanel\" :aria-hidden=\"!active\" :aria-label=\"label\">\n    <template v-show=\"content\">\n        <component :is=\"content.type\"\n                   v-bind=\"content\">\n        </component>\n    </template>\n</div>\n";
 
 /***/ }),
 /* 239 */
@@ -10908,6 +10898,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
+var _browserCapabilities = __webpack_require__(3);
+
+var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
+
 var _viewport = __webpack_require__(2);
 
 var _viewport2 = _interopRequireDefault(_viewport);
@@ -10919,6 +10913,8 @@ var _defaults = __webpack_require__(5);
 var _defaults2 = _interopRequireDefault(_defaults);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -10946,9 +10942,9 @@ var Tabs = function (_Vue) {
 
         var _this = _possibleConstructorReturn(this, (Tabs.__proto__ || Object.getPrototypeOf(Tabs)).apply(this, arguments));
 
-        _this.tabs = [];
         _this.activeTab = 0;
         _this.viewportUtil = new _viewport2.default();
+        _this.correction = 0;
         return _this;
     }
 
@@ -10957,10 +10953,14 @@ var Tabs = function (_Vue) {
         value: function setActiveTab() {
             var _this2 = this;
 
-            this.tabs.forEach(function (tab, index) {
-                tab.setVisible(_this2.activeTab === index);
-            });
-            this.positionIndicator();
+            var tabs = this.$refs.tab;
+            if (!tabs) {
+                return;
+            }
+            tabs[this.activeTab].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            setTimeout(function () {
+                return _this2.positionIndicator();
+            }, 50);
         }
     }, {
         key: "getLinkClassList",
@@ -10971,52 +10971,96 @@ var Tabs = function (_Vue) {
         }
     }, {
         key: "positionIndicator",
-        value: function positionIndicator() {
+        value: function () {
+            var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
+                var tabs, _tabs$activeTab, offsetLeft, offsetWidth;
+
+                return regeneratorRuntime.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                tabs = this.$refs.tab;
+
+                                if (tabs) {
+                                    _context.next = 3;
+                                    break;
+                                }
+
+                                return _context.abrupt("return");
+
+                            case 3:
+                                _tabs$activeTab = tabs[this.activeTab], offsetLeft = _tabs$activeTab.offsetLeft, offsetWidth = _tabs$activeTab.offsetWidth;
+
+                                _gsap.TweenLite.to(this.$refs.indicator, _defaults2.default.defaultDuration, {
+                                    x: offsetLeft - this.correction,
+                                    width: offsetWidth,
+                                    ease: _gsap.Power3.easeOut
+                                });
+
+                            case 5:
+                            case "end":
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function positionIndicator() {
+                return _ref.apply(this, arguments);
+            }
+
+            return positionIndicator;
+        }()
+    }, {
+        key: "scrollCorrection",
+        value: function scrollCorrection() {
+            var tabList = this.$refs.tabList;
             var tabs = this.$refs.tab;
+            this.correction = tabList.scrollLeft;
             if (!tabs) {
                 return;
             }
-            var _tabs$activeTab = tabs[this.activeTab],
-                offsetLeft = _tabs$activeTab.offsetLeft,
-                offsetWidth = _tabs$activeTab.offsetWidth;
+            var _tabs$activeTab2 = tabs[this.activeTab],
+                offsetLeft = _tabs$activeTab2.offsetLeft,
+                offsetWidth = _tabs$activeTab2.offsetWidth;
 
-            _gsap.TweenLite.to(this.$refs.indicator, _defaults2.default.defaultDuration, {
-                x: offsetLeft,
+            _gsap.TweenLite.to(this.$refs.indicator, 0, {
+                x: offsetLeft - this.correction,
                 width: offsetWidth,
-                ease: _gsap.Power3.easeOut
+                ease: _gsap.Power2.easeOut
             });
-        }
-    }, {
-        key: "populateTabs",
-        value: function populateTabs() {
-            this.tabs = this.$children.reduce(function (acc, child) {
-                if (child && child.$options && child.$options.propsData) {
-                    acc.push(child);
-                }
-                return acc;
-            }, []);
         }
     }, {
         key: "mounted",
         value: function mounted() {
-            this.populateTabs();
             this.activeTab = this.defaultTab;
             this.setActiveTab();
             this.viewportUtil.addResizeHandler(this.positionIndicator);
+            this.$refs.tabList.addEventListener('scroll', this.scrollCorrection);
+            if (_browserCapabilities2.default.supportsTouch) {
+                this.$refs.tabList.addEventListener('touchmove', this.scrollCorrection);
+            }
         }
     }, {
         key: "beforeDestroy",
         value: function beforeDestroy() {
             this.viewportUtil.removeResizeHandler(this.positionIndicator);
+            var tabsList = this.$refs.tabsList;
+
+            tabsList.removeEventListener('scroll', this.scrollCorrection());
+            if (_browserCapabilities2.default.supportsTouch) {
+                tabsList.removeEventListener('scroll', this.scrollCorrection());
+            }
         }
     }]);
 
     return Tabs;
 }(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], Tabs.prototype, "tabs", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Number)], Tabs.prototype, "defaultTab", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('activeTab'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], Tabs.prototype, "setActiveTab", null);
 Tabs = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'tabs',
+    name: 'Tabs',
     template: __webpack_require__(241)
 })], Tabs);
 exports.default = Tabs;
@@ -11025,7 +11069,7 @@ exports.default = Tabs;
 /* 241 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"tabs\">\n    <div class=\"tabs__nav\">\n        <faux-scroll>\n            <ul class=\"tabs__list\" role=\"tablist\">\n                <li class=\"tabs__list_item\" v-for=\"(tab, index) in tabs\" role=\"presentation\" ref=\"tab\">\n                    <a class=\"tabs__list_link\" :class=\"getLinkClassList(index)\" @click.prevent=\"activeTab = index\" :href=\"'#' + tab.id\"\n                       role=\"tab\" :aria-controls=\"tab.id\" :aria-selected=\"activeTab === index\">\n                        {{ tab.title }}\n                    </a>\n                </li>\n                <li class=\"tabs__indicator\" aria-hidden=\"true\" role=\"none\" ref=\"indicator\"></li>\n            </ul>\n        </faux-scroll>\n    </div>\n\n    <div class=\"tabs__contents\">\n        <slot></slot>\n    </div>\n</div>\n";
+module.exports = "<div class=\"tabs\" v-if=\"tabs\">\n    <div class=\"tabs__nav\">\n        <ul class=\"tabs__list\" role=\"tablist\" ref=\"tabList\">\n            <li class=\"tabs__list_item\" v-for=\"(tab, index) in tabs\" role=\"presentation\" ref=\"tab\">\n                <a class=\"tabs__list_link\" :class=\"getLinkClassList(index)\" @click.prevent=\"activeTab = index\" :href=\"'#' + tab.id\"\n                   role=\"tab\" :aria-controls=\"tab.id\" :aria-selected=\"activeTab === index\">\n                    {{ tab.label }}\n                </a>\n            </li>\n            <li class=\"tabs__indicator\" aria-hidden=\"true\" role=\"none\" ref=\"indicator\"></li>\n        </ul>\n    </div>\n    <div class=\"tabs__contents\"  v-for=\"(tab, index) in tabs\">\n        <template>\n            <component :is=\"tab.type\"\n                       v-bind=\"tab\"\n                       :id=\"tab.label+index\"\n                       :active=\"activeTab === index\"\n                       :key=\"index\">\n            </component>\n        </template>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 242 */
@@ -12089,7 +12133,16 @@ Object.defineProperty(exports, 'Subnavigation', {
   }
 });
 
-var _ubr = __webpack_require__(310);
+var _tabbedContent = __webpack_require__(310);
+
+Object.defineProperty(exports, 'Tabbedcontent', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_tabbedContent).default;
+  }
+});
+
+var _ubr = __webpack_require__(313);
 
 Object.defineProperty(exports, 'Ubr', {
   enumerable: true,
@@ -12098,7 +12151,7 @@ Object.defineProperty(exports, 'Ubr', {
   }
 });
 
-var _pageDrawer = __webpack_require__(313);
+var _pageDrawer = __webpack_require__(316);
 
 Object.defineProperty(exports, 'PageDrawer', {
   enumerable: true,
@@ -12107,7 +12160,7 @@ Object.defineProperty(exports, 'PageDrawer', {
   }
 });
 
-var _pageFooter = __webpack_require__(315);
+var _pageFooter = __webpack_require__(318);
 
 Object.defineProperty(exports, 'PageFooter', {
   enumerable: true,
@@ -12116,7 +12169,7 @@ Object.defineProperty(exports, 'PageFooter', {
   }
 });
 
-var _pageHeader = __webpack_require__(318);
+var _pageHeader = __webpack_require__(321);
 
 Object.defineProperty(exports, 'PageHeader', {
   enumerable: true,
@@ -12125,7 +12178,7 @@ Object.defineProperty(exports, 'PageHeader', {
   }
 });
 
-var _overview = __webpack_require__(321);
+var _overview = __webpack_require__(324);
 
 Object.defineProperty(exports, 'Overview', {
   enumerable: true,
@@ -12713,39 +12766,56 @@ exports.default = _generalContent2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = {
-    name: 'general-content',
-    template: __webpack_require__(286),
-    props: {
-        title: {
-            type: String,
-            required: true
-        },
-        text: {
-            type: Array,
-            required: true,
-            default: function _default() {
-                return [];
-            }
-        },
-        reversed: {
-            type: Boolean,
-            default: false
-        },
-        contentLink: {
-            type: Object
-        },
-        image: {
-            type: Object
-        }
-    }
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GeneralContent = function (_Vue) {
+    _inherits(GeneralContent, _Vue);
+
+    function GeneralContent() {
+        _classCallCheck(this, GeneralContent);
+
+        return _possibleConstructorReturn(this, (GeneralContent.__proto__ || Object.getPrototypeOf(GeneralContent)).apply(this, arguments));
+    }
+
+    return GeneralContent;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "description", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "cta", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "image", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "reversed", void 0);
+GeneralContent = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'ContentGeneral',
+    template: __webpack_require__(286)
+})], GeneralContent);
+exports.default = GeneralContent;
 
 /***/ }),
 /* 286 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"general-content\">\n    <section class=\"container general-content__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell\">\n                <h2 class=\"general-content__title\"> {{ title }}</h2>\n                <p class=\"general-content__body\" v-for=\"p in text\">{{ p }}</p>\n                <content-link class=\"link\" v-if=\"contentLink\" :block=\"'general-content'\" :url=\"contentLink.href\" :label=\"contentLink.text\">\n                </content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell\">\n                <div class=\"general-content__image-wrapper\">\n                    <responsive-picture v-if=\"image\" v-bind=\"image\"></responsive-picture>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
+module.exports = "<article class=\"general-content\">\n    <section class=\"general-content__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 general-content__grid-cell general-content__content\">\n                <h3 class=\"general-content__title\"> {{ title }}</h3>\n                <p class=\"general-content__body\">{{ description }}</p>\n\n                <ContentButton v-bind=\"cta\"\n                       class=\"button\"\n                       v-if=\"cta.type === 'ContentButton' && cta\" />\n\n                <ContentLink v-bind=\"cta\"\n                             class=\"link link--medium\"\n                             v-if=\"cta.type === 'ContentLink' && cta\" />\n            </div>\n            <div class=\"flexgrid__cell--xs-6 general-content__grid-cell general-content__image\">\n                <div class=\"general-content__image-wrapper\">\n                    <c-image v-if=\"image\" v-bind=\"image\"></c-image>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 287 */
@@ -13467,13 +13537,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ubr = __webpack_require__(311);
+var _tabbedContent = __webpack_require__(311);
 
-var _ubr2 = _interopRequireDefault(_ubr);
+var _tabbedContent2 = _interopRequireDefault(_tabbedContent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = _ubr2.default;
+exports.default = _tabbedContent2.default;
 
 /***/ }),
 /* 311 */
@@ -13485,9 +13555,88 @@ exports.default = _ubr2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TabbedContent = function (_Vue) {
+    _inherits(TabbedContent, _Vue);
+
+    function TabbedContent() {
+        _classCallCheck(this, TabbedContent);
+
+        return _possibleConstructorReturn(this, (TabbedContent.__proto__ || Object.getPrototypeOf(TabbedContent)).apply(this, arguments));
+    }
+
+    return TabbedContent;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], TabbedContent.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], TabbedContent.prototype, "tabs", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], TabbedContent.prototype, "ctas", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], TabbedContent.prototype, "subtitle", void 0);
+TabbedContent = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'TabbedContent',
+    template: __webpack_require__(312)
+})], TabbedContent);
+exports.default = TabbedContent;
+
+/***/ }),
+/* 312 */
+/***/ (function(module, exports) {
+
+module.exports = "<article class=\"organism tabbed-content\">\n    <section class=\"container\">\n        <div class=\"tabbed-content__header flexgrid__cell--md-8\">\n            <h2 class=\"tabbed-content__title\">{{ title }}</h2>\n            <p class=\"subtitle tabbed-content__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n        </div>\n        <Tabs v-if=\"tabs && tabs.length\" :tabs=\"tabs\" />\n\n        <cta-block :ctas=\"ctas.ctas\"\n                   styleContentButton=\"button\"\n                   v-if=\"ctas\"\n                   block=\"tabbed-content\" />\n    </section>\n</article>\n\n";
+
+/***/ }),
+/* 313 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _ubr = __webpack_require__(314);
+
+var _ubr2 = _interopRequireDefault(_ubr);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _ubr2.default;
+
+/***/ }),
+/* 314 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.default = {
     name: 'ubr',
-    template: __webpack_require__(312),
+    template: __webpack_require__(315),
     props: {
         title: {
             type: String,
@@ -13509,13 +13658,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 312 */
+/* 315 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"ubr\">\n    <section class=\"container\">\n        <h2>{{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"ubr__description\">\n                    <p>{{ description }}</p>\n                    <ul class=\"list ubr__list\">\n                        <li class=\"list__item\" v-for=\"reason of reasons\">{{ reason }}</li>\n                    </ul>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--xs-6\">\n                <template v-if=\"image && image.length\">\n                    <div class=\"ubr__image \">\n                        <cms-image class=\"img--responsive\" :image=\"image[0]\" :orientation=\"'landscape'\"></cms-image>\n                    </div>\n                </template>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 313 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13525,7 +13674,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageDrawer = __webpack_require__(314);
+var _pageDrawer = __webpack_require__(317);
 
 var _pageDrawer2 = _interopRequireDefault(_pageDrawer);
 
@@ -13534,7 +13683,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageDrawer2.default;
 
 /***/ }),
-/* 314 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13581,7 +13730,7 @@ PageDrawer = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = PageDrawer;
 
 /***/ }),
-/* 315 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13591,7 +13740,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageFooter = __webpack_require__(316);
+var _pageFooter = __webpack_require__(319);
 
 var _pageFooter2 = _interopRequireDefault(_pageFooter);
 
@@ -13600,7 +13749,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageFooter2.default;
 
 /***/ }),
-/* 316 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13649,18 +13798,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], PageFooter.prototype, "country", void 0);
 PageFooter = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'page-footer',
-    template: __webpack_require__(317)
+    template: __webpack_require__(320)
 })], PageFooter);
 exports.default = PageFooter;
 
 /***/ }),
-/* 317 */
+/* 320 */
 /***/ (function(module, exports) {
 
 module.exports = "<footer class=\"footer\">\n    <div class=\"footer__container\">\n        <div class=\"footer__primary\">\n            <router-link to=\"/\" class=\"branded-logo footer__branded-logo\" aria-label=\"Ultimaker homepage\">\n                <icon class=\"branded-logo__robot\" icon-name=\"robot-ultimaker\"></icon>\n                <icon class=\"branded-logo__logo\" icon-name=\"logo-ultimaker\"></icon>\n            </router-link>\n\n            <footer-nav :navigation=\"navigation\"></footer-nav>\n        </div>\n\n        <div class=\"footer__secondary\">\n            <social-nav></social-nav>\n            <locale-selector class=\"footer__locale-selector\"\n                             v-bind=\"localeSelector\"\n                             :country=\"country\"\n                             v-on=\"$listeners\">\n            </locale-selector>\n        </div>\n\n        <div class=\"footer__tertiary\">\n            <legal-nav class=\"footer__legal\" :navigation=\"legalNavigation.navigation\" :label=\"legalNavigation.label\"></legal-nav>\n        </div>\n    </div>\n</footer>\n";
 
 /***/ }),
-/* 318 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13670,7 +13819,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageHeader = __webpack_require__(319);
+var _pageHeader = __webpack_require__(322);
 
 var _pageHeader2 = _interopRequireDefault(_pageHeader);
 
@@ -13679,7 +13828,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageHeader2.default;
 
 /***/ }),
-/* 319 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13841,18 +13990,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], PageHeader.prototype, "mainNavOpen", void 0);
 PageHeader = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'page-header',
-    template: __webpack_require__(320)
+    template: __webpack_require__(323)
 })], PageHeader);
 exports.default = PageHeader;
 
 /***/ }),
-/* 320 */
+/* 323 */
 /***/ (function(module, exports) {
 
 module.exports = "<header class=\"header\" :class=\"headerClasses\" role=\"banner\" v-size-emitter=\"'header'\">\n    <div class=\"header__top\" :class=\"{'header--mobile-inverted': mainNavOpen}\">\n        <router-link to=\"/\" class=\"home-link\" aria-label=\"Ultimaker homepage\">\n            <icon class=\"home-link__logo\" icon-name=\"logo-ultimaker\"></icon>\n        </router-link>\n\n        <main-nav v-if=\"navigation\" :items=\"navigation\" :main-nav-open=\"mainNavOpen\" v-on=\"$listeners\"></main-nav>\n\n        <sys-nav v-if=\"cta && search\" @open-search=\"openSearch\"\n                 :order-now-icon=\"cta.icon\" :order-now-label=\"cta.label\" :order-now-link=\"cta.url\"\n                 :search-icon=\"search.icon\" :search-label=\"search.label\">\n        </sys-nav>\n\n        <nav-assist class=\"main-nav__nav-assist\" :open-state=\"mainNavOpen\" @toggle=\"navAssistToggle\"></nav-assist>\n\n        <transition name=\"search\" @after-enter=\"handleFocus\" @leave=\"handleFocus\">\n            <search-bar class=\"header__search\"\n                        ref=\"search\"\n                        :label=\"search.label\"\n                        :placeholder=\"search.placeholder\"\n                        :open-state=\"searchOpen\"\n                        @close=\"closeSearch\"\n                        v-if=\"searchOpen\">\n            </search-bar>\n        </transition>\n    </div>\n</header>\n";
 
 /***/ }),
-/* 321 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13862,7 +14011,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _overview = __webpack_require__(322);
+var _overview = __webpack_require__(325);
 
 var _overview2 = _interopRequireDefault(_overview);
 
@@ -13871,7 +14020,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _overview2.default;
 
 /***/ }),
-/* 322 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13920,18 +14069,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], Overview.prototype, "ctas", void 0);
 Overview = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'overview',
-    template: __webpack_require__(323)
+    template: __webpack_require__(326)
 })], Overview);
 exports.default = Overview;
 
 /***/ }),
-/* 323 */
+/* 326 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"organism overview\">\n    <section class=\"container\">\n        <h2 class=\"overview__title\">{{ title }}</h2>\n        <p class=\"subtitle overview__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n\n        <template v-for=\"(section, index) in sections\">\n            <component :is=\"section.type\"\n                   v-bind=\"section\"\n                   :key=\"index\">\n            </component>\n        </template>\n\n        <cta-block :ctas=\"ctas.ctas\"\n                   styleContentButton=\"button\"\n                   v-if=\"ctas\"\n                   block=\"overview\" />\n    </section>\n</article>\n";
 
 /***/ }),
-/* 324 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13941,7 +14090,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _sizeEmitter = __webpack_require__(325);
+var _sizeEmitter = __webpack_require__(328);
 
 Object.defineProperty(exports, 'SizeEmitter', {
   enumerable: true,
@@ -13951,7 +14100,7 @@ Object.defineProperty(exports, 'SizeEmitter', {
 });
 
 /***/ }),
-/* 325 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14061,13 +14210,13 @@ var SizeEmitter = exports.SizeEmitter = function () {
 }();
 
 /***/ }),
-/* 326 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
-/* 327 */
+/* 330 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14078,16 +14227,18 @@ var TweenLite = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./node_modules/gsap/CSSPlugin.js
 /*!
- * VERSION: 2.0.2
- * DATE: 2018-08-27
+ * VERSION: 2.1.0
+ * DATE: 2019-02-15
  * UPDATES AND DOCS AT: http://greensock.com
  *
- * @license Copyright (c) 2008-2018, GreenSock. All rights reserved.
+ * @license Copyright (c) 2008-2019, GreenSock. All rights reserved.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
  * 
  * @author: Jack Doyle, jack@greensock.com
  */
+/* eslint-disable */
+
 
 
 	TweenLite["_gsScope"]._gsDefine("plugins.CSSPlugin", ["plugins.TweenPlugin","TweenLite"], function() {
@@ -14107,7 +14258,7 @@ var TweenLite = __webpack_require__(0);
 			p = CSSPlugin.prototype = new TweenLite["TweenPlugin"]("css");
 
 		p.constructor = CSSPlugin;
-		CSSPlugin.version = "2.0.2";
+		CSSPlugin.version = "2.1.0";
 		CSSPlugin.API = 2;
 		CSSPlugin.defaultTransformPerspective = 0;
 		CSSPlugin.defaultSkewType = "compensated";
@@ -14140,7 +14291,7 @@ var TweenLite = __webpack_require__(0);
 			_dummyElement = {style:{}},
 			_doc = TweenLite["_gsScope"].document || {createElement: function() {return _dummyElement;}},
 			_createElement = function(type, ns) {
-				return _doc.createElementNS ? _doc.createElementNS(ns || "http://www.w3.org/1999/xhtml", type) : _doc.createElement(type);
+				return (ns && _doc.createElementNS) ? _doc.createElementNS(ns, type) : _doc.createElement(type);
 			},
 			_tempDiv = _createElement("div"),
 			_tempImg = _createElement("img"),
@@ -14202,7 +14353,10 @@ var TweenLite = __webpack_require__(0);
 				return null;
 			},
 
-			_getComputedStyle = (typeof(window) !== "undefined" ? window : _doc.defaultView || {getComputedStyle:function() {}}).getComputedStyle,
+			_computedStyleScope = (typeof(window) !== "undefined" ? window : _doc.defaultView || {getComputedStyle:function() {}}),
+			_getComputedStyle = function(e) {
+				return _computedStyleScope.getComputedStyle(e); //to avoid errors in Microsoft Edge, we need to call getComputedStyle() from a specific scope, typically window.
+			},
 
 			/**
 			 * @private Returns the css style for a particular property of an element. For example, to get whatever the current "left" css value for an element with an ID of "myElement", you could do:
@@ -15137,6 +15291,7 @@ var TweenLite = __webpack_require__(0);
 				this.multi = options.multi;
 				this.keyword = options.keyword;
 				this.dflt = options.defaultValue;
+				this.allowFunc = options.allowFunc;
 				this.pr = options.priority || 0;
 			},
 
@@ -15415,7 +15570,7 @@ var TweenLite = __webpack_require__(0);
 				var tm = e._gsTransform || new Transform(),
 					rnd = 100000,
 					style = e.style,
-					isDefault, s, m, n, dec, none;
+					isDefault, s, m, n, dec, nextSibling, parent;
 				if (_transformProp) {
 					s = _getStyle(e, _transformPropCSS, null, true);
 				} else if (e.currentStyle) {
@@ -15424,24 +15579,31 @@ var TweenLite = __webpack_require__(0);
 					s = (s && s.length === 4) ? [s[0].substr(4), Number(s[2].substr(4)), Number(s[1].substr(4)), s[3].substr(4), (tm.x || 0), (tm.y || 0)].join(",") : "";
 				}
 				isDefault = (!s || s === "none" || s === "matrix(1, 0, 0, 1, 0, 0)");
-				if (_transformProp && ((none = (!_getComputedStyle(e) || _getComputedStyle(e).display === "none")) || !e.parentNode)) { //note: Firefox returns null for getComputedStyle() if the element is in an iframe that has display:none. https://bugzilla.mozilla.org/show_bug.cgi?id=548397
-					if (none) { //browsers don't report transforms accurately unless the element is in the DOM and has a display value that's not "none". Firefox and Microsoft browsers have a partial bug where they'll report transforms even if display:none BUT not any percentage-based values like translate(-50%, 8px) will be reported as if it's translate(0, 8px).
-						n = style.display;
-						style.display = "block";
-					}
-					if (!e.parentNode) {
+				if (_transformProp && isDefault && !e.offsetParent) { //note: if offsetParent is null, that means the element isn't in the normal document flow, like if it has display:none or one of its ancestors has display:none). Firefox returns null for getComputedStyle() if the element is in an iframe that has display:none. https://bugzilla.mozilla.org/show_bug.cgi?id=548397
+					//browsers don't report transforms accurately unless the element is in the DOM and has a display value that's not "none". Firefox and Microsoft browsers have a partial bug where they'll report transforms even if display:none BUT not any percentage-based values like translate(-50%, 8px) will be reported as if it's translate(0, 8px).
+					n = style.display;
+					style.display = "block";
+					parent = e.parentNode;
+					if (!parent || !e.offsetParent) {
 						dec = 1; //flag
-						_docElement.appendChild(e);
+						nextSibling = e.nextSibling;
+						_docElement.appendChild(e); //we must add it to the DOM in order to get values properly
 					}
 					s = _getStyle(e, _transformPropCSS, null, true);
 					isDefault = (!s || s === "none" || s === "matrix(1, 0, 0, 1, 0, 0)");
 					if (n) {
 						style.display = n;
-					} else if (none) {
+					} else {
 						_removeProp(style, "display");
 					}
 					if (dec) {
-						_docElement.removeChild(e);
+						if (nextSibling) {
+							parent.insertBefore(e, nextSibling);
+						} else if (parent) {
+							parent.appendChild(e);
+						} else {
+							_docElement.removeChild(e);
+						}
 					}
 				}
 				if (tm.svg || (e.getCTM && _isSVG(e))) {
@@ -16003,12 +16165,7 @@ var TweenLite = __webpack_require__(0);
 		_registerComplexSpecialProp("transform,scale,scaleX,scaleY,scaleZ,x,y,z,rotation,rotationX,rotationY,rotationZ,skewX,skewY,shortRotation,shortRotationX,shortRotationY,shortRotationZ,transformOrigin,svgOrigin,transformPerspective,directionalRotation,parseTransform,force3D,skewType,xPercent,yPercent,smoothOrigin", {parser:function(t, e, parsingProp, cssp, pt, plugin, vars) {
 			if (cssp._lastParsedTransform === vars) { return pt; } //only need to parse the transform once, and only if the browser supports it.
 			cssp._lastParsedTransform = vars;
-			var scaleFunc = (vars.scale && typeof(vars.scale) === "function") ? vars.scale : 0, //if there's a function-based "scale" value, swap in the resulting numeric value temporarily. Otherwise, if it's called for both scaleX and scaleY independently, they may not match (like if the function uses Math.random()).
-				swapFunc;
-			if (typeof(vars[parsingProp]) === "function") { //whatever property triggers the initial parsing might be a function-based value in which case it already got called in parse(), thus we don't want to call it again in here. The most efficient way to avoid this is to temporarily swap the value directly into the vars object, and then after we do all our parsing in this function, we'll swap it back again.
-				swapFunc = vars[parsingProp];
-				vars[parsingProp] = e;
-			}
+			var scaleFunc = (vars.scale && typeof(vars.scale) === "function") ? vars.scale : 0; //if there's a function-based "scale" value, swap in the resulting numeric value temporarily. Otherwise, if it's called for both scaleX and scaleY independently, they may not match (like if the function uses Math.random()).
 			if (scaleFunc) {
 				vars.scale = scaleFunc(_index, t);
 			}
@@ -16132,7 +16289,7 @@ var TweenLite = __webpack_require__(0);
 				}
 			}
 
-			orig = v.transformOrigin;
+			orig = (typeof(v.transformOrigin) === "function") ? v.transformOrigin(_index, _target) : v.transformOrigin;
 			if (m1.svg && (orig || v.svgOrigin)) {
 				x = m1.xOffset; //when we change the origin, in order to prevent things from jumping we adjust the x/y so we must record those here so that we can create PropTweens for them and flip them at the same time as the origin
 				y = m1.yOffset;
@@ -16149,14 +16306,18 @@ var TweenLite = __webpack_require__(0);
 				if (_transformProp) {
 					hasChange = true;
 					p = _transformOriginProp;
-					orig = (orig || _getStyle(t, p, _cs, false, "50% 50%")) + ""; //cast as string to avoid errors
+					if (!orig) {
+						orig = (_getStyle(t, p, _cs, false, "50% 50%") + "").split(" ");
+						orig = orig[0] + " " + orig[1] + " " + m1.zOrigin + "px";
+					}
+					orig += "";
 					pt = new CSSPropTween(style, p, 0, 0, pt, -1, transformOriginString);
 					pt.b = style[p];
 					pt.plugin = plugin;
 					if (_supports3D) {
 						copy = m1.zOrigin;
 						orig = orig.split(" ");
-						m1.zOrigin = ((orig.length > 2 && !(copy !== 0 && orig[2] === "0px")) ? parseFloat(orig[2]) : copy) || 0; //Safari doesn't handle the z part of transformOrigin correctly, so we'll manually handle it in the _set3DTransformRatio() method.
+						m1.zOrigin = ((orig.length > 2) ? parseFloat(orig[2]) : copy) || 0; //Safari doesn't handle the z part of transformOrigin correctly, so we'll manually handle it in the _set3DTransformRatio() method.
 						pt.xs0 = pt.e = orig[0] + " " + (orig[1] || "50%") + " 0px"; //we must define a z value of 0px specifically otherwise iOS 5 Safari will stick with the old one (if one was defined)!
 						pt = new CSSPropTween(m1, "zOrigin", 0, 0, pt, -1, pt.n); //we must create a CSSPropTween for the _gsTransform.zOrigin so that it gets reset properly at the beginning if the tween runs backward (as opposed to just setting m1.zOrigin here)
 						pt.b = copy;
@@ -16173,16 +16334,14 @@ var TweenLite = __webpack_require__(0);
 			if (hasChange) {
 				cssp._transformType = (!(m1.svg && _useSVGTransformAttr) && (has3D || this._transformType === 3)) ? 3 : 2; //quicker than calling cssp._enableTransforms();
 			}
-			if (swapFunc) {
-				vars[parsingProp] = swapFunc;
-			}
 			if (scaleFunc) {
 				vars.scale = scaleFunc;
 			}
 			return pt;
-		}, prefix:true});
+		}, allowFunc:true, prefix:true});
 
 		_registerComplexSpecialProp("boxShadow", {defaultValue:"0px 0px 0px 0px #999", prefix:true, color:true, multi:true, keyword:"inset"});
+		_registerComplexSpecialProp("clipPath", {defaultValue:"inset(0px)", prefix:true, multi:true, formatter:_getFormatter("inset(0px 0px 0px 0px)", false, true)});
 
 		_registerComplexSpecialProp("borderRadius", {defaultValue:"0px", parser:function(t, e, p, cssp, pt, plugin) {
 			e = this.format(e);
@@ -16613,10 +16772,10 @@ var TweenLite = __webpack_require__(0);
 				p, sp, bn, en, bs, es, bsfx, esfx, isStr, rel;
 			for (p in vars) {
 				es = vars[p]; //ending value string
-				if (typeof(es) === "function") {
+				sp = _specialProps[p]; //SpecialProp lookup.
+				if (typeof(es) === "function" && !(sp && sp.allowFunc)) {
 					es = es(_index, _target);
 				}
-				sp = _specialProps[p]; //SpecialProp lookup.
 				if (sp) {
 					pt = sp.parse(target, es, p, this, pt, plugin, vars);
 				} else if (p.substr(0,2) === "--") { //for tweening CSS variables (which always start with "--"). To maximize performance and simplicity, we bypass CSSPlugin altogether and just add a normal property tween to the tween instance itself.
@@ -16988,18 +17147,19 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Draggable", function() { return Draggable_Draggable; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Draggable_Draggable; });
 /*!
- * VERSION: 0.16.5
- * DATE: 2018-08-27
+ * VERSION: 0.17.1
+ * DATE: 2019-02-28
  * UPDATES AND DOCS AT: http://greensock.com
  *
  * Requires TweenLite and CSSPlugin version 1.17.0 or later (TweenMax contains both TweenLite and CSSPlugin). ThrowPropsPlugin is required for momentum-based continuation of movement after the mouse/touch is released (ThrowPropsPlugin is a membership benefit of Club GreenSock - http://greensock.com/club/).
  *
- * @license Copyright (c) 2008-2018, GreenSock. All rights reserved.
+ * @license Copyright (c) 2008-2019, GreenSock. All rights reserved.
  * This work is subject to the terms at http://greensock.com/standard-license or for
  * Club GreenSock members, the software agreement that was issued with your membership.
  *
  * @author: Jack Doyle, jack@greensock.com
  */
+/* eslint-disable */
 
 
 
@@ -17037,6 +17197,7 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 			_lastDragTime = 0,
 			_temp1 = {}, // a simple object we reuse and populate (usually x/y properties) to conserve memory and improve performance.
 			_windowProxy = {}, //memory/performance optimization - we reuse this object during autoScroll to store window-related bounds/offsets.
+			_supportsPassive,
 			_slice = function(a) { //don't use Array.prototype.slice.call(target, 0) because that doesn't work in IE8 with a NodeList that's returned by querySelectorAll()
 				if (typeof(a) === "string") {
 					a = TweenLite["default"].selector(a);
@@ -17205,9 +17366,9 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 				}
 			},
 
-			_getCSFunc = (typeof(window) !== "undefined" ? window : _doc.defaultView || {getComputedStyle:function() {}}).getComputedStyle,
+			_computedStyleScope = (typeof(window) !== "undefined" ? window : _doc.defaultView || {getComputedStyle:function() {}}),
 			_getComputedStyle = function(e, s) {
-				return _getCSFunc((e instanceof Element) ? e : e.host || (e.parentNode || {}).host || e, s); //the "host" stuff helps to accommodate ShadowDom objects.
+				return _computedStyleScope.getComputedStyle((e instanceof Element) ? e : e.host || (e.parentNode || {}).host || e, s); //the "host" stuff helps to accommodate ShadowDom objects.
 			},
 			_horizExp = /(?:Left|Right|Width)/i,
 			_suffixExp = /(?:\d|\-|\+|=|#|\.)*/g,
@@ -17414,15 +17575,12 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 				}
 				//walk up the ancestors and record any non-identity transforms (and reset them to "none") until we reach the offsetParent. We must do this so that the getBoundingClientRect() is accurate for measuring the offsetTop/offsetLeft. We'll revert the values later...
 				_tempElements.length = _tempTransforms.length = 0;
-				while (curElement) {
+				while (curElement && curElement.parentNode) {
 					m = _getStyle(curElement, _transformProp, true);
 					if (m !== "matrix(1, 0, 0, 1, 0, 0)" && m !== "none" && m !== "translate3d(0px, 0px, 0px)") {
 						_tempElements.push(curElement);
 						_tempTransforms.push(curElement.style[_transformProp]);
 						curElement.style[_transformProp] = "none";
-					}
-					if (curElement === offsetParent) {
-						break;
 					}
 					curElement = curElement.parentNode;
 				}
@@ -17602,11 +17760,16 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 					isRoot = (parent === _docElement || parent === _doc.body);
 					m[4] = Number(m[4]) + offsetOrigin.x + (offsets.offsetLeft || 0) - parentOffsetOrigin.x - (isRoot ? 0 : parent.scrollLeft || 0);
 					m[5] = Number(m[5]) + offsetOrigin.y + (offsets.offsetTop || 0) - parentOffsetOrigin.y - (isRoot ? 0 : parent.scrollTop || 0);
-					if (parent && _getStyle(e, "position", cs) === "fixed") { //fixed position elements should factor in the scroll position of the document.
+					if (parent && _getStyle(e, "position", true) === "fixed") { //fixed position elements should factor in the scroll position of the document.
 						m[4] += _getDocScrollLeft();
 						m[5] += _getDocScrollTop();
-					}
-					if (parent && parent !== _docElement && parentOffsetParent === offsets.offsetParent && !parentCache.isSVG && (!_hasReparentBug || _getOffset2DMatrix(parent).join("") === "100100")) {
+						parent = parent.offsetParent;
+						while (parent) {
+							m[4] -= parent.offsetLeft;
+							m[5] -= parent.offsetTop;
+							parent = parent.offsetParent;
+						}
+					} else if (parent && parent !== _docElement && parentOffsetParent === offsets.offsetParent && !parentCache.isSVG && (!_hasReparentBug || _getOffset2DMatrix(parent).join("") === "100100")) {
 						offsets = (parentCache.isSVGRoot) ? _getSVGOffsets(parent) : parent;
 						m[4] -= offsets.offsetLeft || 0;
 						m[5] -= offsets.offsetTop || 0;
@@ -17661,9 +17824,9 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 				}
 				return m;
 			},
-			_localToGlobal = function(e, p, fromTopLeft, decoratee, zeroOrigin) {
+			_localToGlobal = function(e, p, fromTopLeft, decoratee) {
 				e = _unwrapElement(e);
-				var m = _getConcatenatedMatrix(e, false, zeroOrigin),
+				var m = _getConcatenatedMatrix(e, false),
 					x = p.x,
 					y = p.y;
 				if (fromTopLeft) {
@@ -17724,8 +17887,10 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 						viewBoxY = parseFloat(viewBox[1]);
 						borderLeft = parseFloat(cs.borderLeftWidth) || 0;
 						borderTop = parseFloat(cs.borderTopWidth) || 0;
-						right -= width - ((width - borderLeft) / cache.scaleX) - viewBoxX;
-						bottom -= height - ((height - borderTop) / cache.scaleY) - viewBoxY;
+						left /= cache.scaleX;
+						top /= cache.scaleY;
+						right = left + width - (width - ((width - borderLeft) / cache.scaleX) - viewBoxX);
+						bottom = top + height - (height - ((height - borderTop) / cache.scaleY) - viewBoxY);
 						left -= borderLeft / cache.scaleX - viewBoxX;
 						top -= borderTop / cache.scaleY - viewBoxY;
 						if (computedDimensions) { //when we had to use computed styles, factor in the border now.
@@ -17787,13 +17952,21 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 					obj[standard[i]] = converted[i];
 					obj[converted[i]] = standard[i];
 				}
+				//to avoid problems in iOS 9, test to see if the browser supports the "passive" option on addEventListener().
+				try {
+					_docElement.addEventListener("test", null, Object.defineProperty({}, "passive", {
+						get: function () {
+							_supportsPassive = 1;
+						}
+					}));
+				} catch (e) {}
 				return obj;
 			}("touchstart,touchmove,touchend,touchcancel")),
 
 			_addListener = function(element, type, func, capture) {
 				if (element.addEventListener) {
 					var touchType = _touchEventLookup[type];
-					capture = capture || {passive:false};
+					capture = capture || (_supportsPassive ? {passive:false} : null);
 					element.addEventListener(touchType || type, func, capture);
 					if (touchType && type !== touchType) { //some browsers actually support both, so must we.
 						element.addEventListener(type, func, capture);
@@ -18560,6 +18733,12 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 					},
 
 					buildSnapFunc = function(snap, min, max, factor) {
+						if (min == null) {
+							min = -_max;
+						}
+						if (max == null) {
+							max = _max;
+						}
 						if (typeof(snap) === "function") {
 							return function(n) {
 								var edgeTolerance = !self.isPressed ? 1 : 1 - self.edgeResistance; //if we're tweening, disable the edgeTolerance because it's already factored into the tweening values (we don't want to apply it multiple times)
@@ -18664,7 +18843,7 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 						if (e && e.target) {
 							_addListener(e.target, "mouseup", onRelease); //we also have to listen directly on the element because some browsers don't bubble up the event to the _doc on elements with contentEditable="true"
 						}
-						isClicking = (isClickable.call(self, e.target) && !vars.dragClickables && !force);
+						isClicking = (isClickable.call(self, e.target) && vars.dragClickables === false && !force);
 						if (isClicking) {
 							_addListener(e.target, "change", onRelease); //in some browsers, when you mousedown on a <select> element, no mouseup gets dispatched! So we listen for a "change" event instead.
 							_dispatchEvent(self, "pressInit", "onPressInit");
@@ -18716,10 +18895,10 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 						}
 						self.isPressed = true;
 						hasDragCallback = !!(vars.onDrag || self._listeners.drag);
-						if (!rotationMode) {
+						if (!rotationMode && (vars.cursor !== false || vars.activeCursor)) {
 							i = triggers.length;
 							while (--i > -1) {
-								_setStyle(triggers[i], "cursor", vars.cursor || "move");
+								_setStyle(triggers[i], "cursor", vars.activeCursor || vars.cursor || "move");
 							}
 						}
 						_dispatchEvent(self, "press", "onPress");
@@ -18934,7 +19113,7 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 						if (!rotationMode) {
 							i = triggers.length;
 							while (--i > -1) {
-								_setStyle(triggers[i], "cursor", vars.cursor || "move");
+								_setStyle(triggers[i], "cursor", vars.cursor || (vars.cursor !== false ? "move" : null));
 							}
 						}
 						if (wasDragging) {
@@ -18996,7 +19175,7 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 							}
 						} else {
 							animate(vars.throwProps); //will skip if throwProps isn't defined or ThrowPropsPlugin isn't loaded.
-							if (!_isOldIE && !self.allowEventDefault && originalEvent && (vars.dragClickables || !isClickable.call(self, originalEvent.target)) && wasDragging && (!allowNativeTouchScrolling || (touchDragAxis && allowNativeTouchScrolling === touchDragAxis)) && originalEvent.cancelable !== false) {
+							if (!_isOldIE && !self.allowEventDefault && originalEvent && (vars.dragClickables !== false || !isClickable.call(self, originalEvent.target)) && wasDragging && (!allowNativeTouchScrolling || (touchDragAxis && allowNativeTouchScrolling === touchDragAxis)) && originalEvent.cancelable !== false) {
 								originalEvent.preventDefault();
 								if (originalEvent.preventManipulation) {
 									originalEvent.preventManipulation();  //for some Microsoft browsers
@@ -19229,7 +19408,7 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 							_addListener(trigger, "mousedown", onPress);
 							_addListener(trigger, "touchstart", onPress);
 							_addListener(trigger, "click", onClick, true); //note: used to pass true for capture but it prevented click-to-play-video functionality in Firefox.
-							if (!rotationMode) {
+							if (!rotationMode && vars.cursor !== false) {
 								_setStyle(trigger, "cursor", vars.cursor || "move");
 							}
 							_setStyle(trigger, "touchCallout", "none");
@@ -19367,7 +19546,7 @@ var CSSPlugin_CSSPlugin = TweenLite["globals"].CSSPlugin;
 		p.constructor = Draggable;
 		p.pointerX = p.pointerY = p.startX = p.startY = p.deltaX = p.deltaY = 0;
 		p.isDragging = p.isPressed = false;
-		Draggable.version = "0.16.5";
+		Draggable.version = "0.17.1";
 		Draggable.zIndex = 1000;
 
 		_addListener(_doc, "touchcancel", function() {
