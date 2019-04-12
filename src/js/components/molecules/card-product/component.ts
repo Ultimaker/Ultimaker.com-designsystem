@@ -19,7 +19,6 @@ export default class CardProduct extends Vue implements ICardProduct {
 
     get listItems(): object {
         let properties:any = [];
-        const items:any = [];
 
         if (this.properties) {
             properties = this.properties.map(
@@ -27,7 +26,7 @@ export default class CardProduct extends Vue implements ICardProduct {
                     return {
                         item: {
                             item: {
-                                item: property
+                                item: property,
                             },
                             type: 'SpanLabel',
                         },
@@ -37,7 +36,6 @@ export default class CardProduct extends Vue implements ICardProduct {
             );
         }
 
-        // return properties;
         return {
             items: properties,
             type: 'LiInline',
