@@ -35,7 +35,7 @@ export default class ClickEvents extends Vue {
         return Events.click;
     }
 
-    triggerEventClick(): void {
+    triggerEventClick(evt): void {
         if (this.clickEvent) {
             this.$emitPublic(this.clickEventType, this.clickEventData);
         }

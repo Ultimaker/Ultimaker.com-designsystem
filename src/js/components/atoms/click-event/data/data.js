@@ -1,7 +1,9 @@
 export default {
     data: {
-        test: true
+        ctaLabel: 'testCtaLabel',
+        ctaType: 'testCtaType',
+        type: 'AnalyticalEventData'
     },
-    name: 'test',
+    name: 'testName',
     type: 'AnalyticalEvent'
 };

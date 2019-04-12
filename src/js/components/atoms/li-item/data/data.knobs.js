@@ -4,7 +4,9 @@ import {text} from '@storybook/addon-knobs';
 export default (obj) => {
     if (obj) {
         return {
-            item: text('item', data.item),
+            item: {
+                item: text('item', data.item)
+            },
             type: data.type
         };
     }

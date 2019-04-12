@@ -1,9 +1,9 @@
 import data from './data';
 import {text} from '@storybook/addon-knobs';
-import getKnobs from 'atoms/click-event/data/data.knobs';
+import clickEvent from 'atoms/click-event/data/data';
 
 export default () => ({
-    clickEvent: getKnobs(),
+    clickEvent,
     title: text('title', data.title),
     url: text('url', data.url)
 });

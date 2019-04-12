@@ -26,10 +26,12 @@ export default class CardProduct extends Vue implements ICardProduct {
                 (property) => {
                     return {
                         item: {
-                            item: property,
-                            type: 'span-label',
+                            item: {
+                                item: property
+                            },
+                            type: 'SpanLabel',
                         },
-                        type: 'li-inline',
+                        type: 'LiInline',
                     };
                 },
             );
@@ -38,7 +40,7 @@ export default class CardProduct extends Vue implements ICardProduct {
         // return properties;
         return {
             items: properties,
-            type: 'li-inline',
+            type: 'LiInline',
         };
     }
 }

@@ -2,7 +2,7 @@ import {itemLabels} from 'molecules/list-unordered/data/examples/properties-exte
 
 export default {
     listItems: {
-        type: 'li-inline',
+        type: 'LiInline',
         items: itemLabels
     }
 };

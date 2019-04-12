@@ -13,8 +13,10 @@ export const itemLabels = items.map(
     (item) => {
         return {
             item: {
-                item,
-                type: 'span-label'
+                item: {
+                    item
+                },
+                type: 'SpanLabel'
             }
         };
     }

@@ -1,15 +1,15 @@
 import {storiesOf} from '@storybook/vue';
-import contentBlock from 'molecules/list-unordered/data/examples/list-unordered-content-block';
+import cardProduct from 'molecules/list-unordered/data/examples/list-unordered-card-product';
 import inlineLabels from 'molecules/list-unordered/data/examples/list-unordered-inline-labels';
 import liItems from 'molecules/list-unordered/data/examples/list-unordered-items';
 
 storiesOf('Molecules|lists/list-unordered', module)
-    .add('li-content-block',
+    .add('li-item',
         () => {
             return {
                 data: () => {
                     return {
-                        data: contentBlock
+                        data: liItems
                     };
                 },
                 template: require('./template.html')
@@ -34,12 +34,12 @@ storiesOf('Molecules|lists/list-unordered', module)
             notes: require('./notes.md')
         }
     )
-    .add('li-item',
+    .add('li-item-card-product',
         () => {
             return {
                 data: () => {
                     return {
-                        data: liItems
+                        data: cardProduct
                     };
                 },
                 template: require('./template.html')
