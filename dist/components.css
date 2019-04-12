@@ -638,67 +638,67 @@ template {
 
 @font-face {
   font-family: "fugue-init";
-  src: url(/diststatic/fonts/fugue/fugue-ultimaker-regular.woff2) format("woff2"), url(/diststatic/fonts/fugue/fugue-ultimaker-regular.woff) format("woff");
+  src: url(/dist/static/fonts/fugue/fugue-ultimaker-regular.woff2) format("woff2"), url(/dist/static/fonts/fugue/fugue-ultimaker-regular.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "univers-init";
-  src: url(/diststatic/fonts/univers/univers-light.woff2) format("woff2"), url(/diststatic/fonts/univers/univers-light.woff) format("woff");
+  src: url(/dist/static/fonts/univers/univers-light.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-light.woff) format("woff");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: "fugue";
-  src: url(/diststatic/fonts/fugue/fugue-ultimaker-regular.woff2) format("woff2"), url(/diststatic/fonts/fugue/fugue-ultimaker-regular.woff) format("woff");
+  src: url(/dist/static/fonts/fugue/fugue-ultimaker-regular.woff2) format("woff2"), url(/dist/static/fonts/fugue/fugue-ultimaker-regular.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "univers";
-  src: url(/diststatic/fonts/univers/univers-light.woff2) format("woff2"), url(/diststatic/fonts/univers/univers-light.woff) format("woff");
+  src: url(/dist/static/fonts/univers/univers-light.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-light.woff) format("woff");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: "univers";
-  src: url(/diststatic/fonts/univers/univers-light-italic.woff2) format("woff2"), url(/diststatic/fonts/univers/univers-light-italic.woff) format("woff");
+  src: url(/dist/static/fonts/univers/univers-light-italic.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-light-italic.woff) format("woff");
   font-weight: 100;
   font-style: italic; }
 
 @font-face {
   font-family: "univers";
-  src: url(/diststatic/fonts/univers/univers-regular.woff2) format("woff2"), url(/diststatic/fonts/univers/univers-regular.woff) format("woff");
+  src: url(/dist/static/fonts/univers/univers-regular.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-regular.woff) format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "univers";
-  src: url(/diststatic/fonts/univers/univers-regular-italic.woff2) format("woff2"), url(/diststatic/fonts/univers/univers-regular-italic.woff) format("woff");
+  src: url(/dist/static/fonts/univers/univers-regular-italic.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-regular-italic.woff) format("woff");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: "univers";
-  src: url(/diststatic/fonts/univers/univers-bold.woff2) format("woff2"), url(/diststatic/fonts/univers/univers-bold.woff) format("woff");
+  src: url(/dist/static/fonts/univers/univers-bold.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-bold.woff) format("woff");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "univers";
-  src: url(/diststatic/fonts/univers/univers-bold-italic.woff2) format("woff2"), url(/diststatic/fonts/univers/univers-bold-italic.woff) format("woff");
+  src: url(/dist/static/fonts/univers/univers-bold-italic.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-bold-italic.woff) format("woff");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: "univers";
-  src: url(/diststatic/fonts/univers/univers-black.woff2) format("woff2"), url(/diststatic/fonts/univers/univers-black.woff) format("woff");
+  src: url(/dist/static/fonts/univers/univers-black.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-black.woff) format("woff");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: "univers";
-  src: url(/diststatic/fonts/univers/univers-black-italic.woff2) format("woff2"), url(/diststatic/fonts/univers/univers-black-italic.woff) format("woff");
+  src: url(/dist/static/fonts/univers/univers-black-italic.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-black-italic.woff) format("woff");
   font-weight: 900;
   font-style: italic; }
 
@@ -953,7 +953,7 @@ q,
   margin-top: 6px;
   margin-bottom: 24px; }
   @media (min-width: 768px) {
-    
+
     h3,
     q,
     .hero--basic .hero__subtitle,
@@ -3082,7 +3082,7 @@ table tfoot {
         margin-bottom: 0; } }
 
 @media (min-width: 569px) {
-  
+
   .container > .cta__block,
   .footer__container > .cta__block {
     text-align: center; } }
