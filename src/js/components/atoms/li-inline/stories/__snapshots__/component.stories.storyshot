@@ -12,7 +12,6 @@ exports[`Storyshots Atoms|list items/li-inline span-label 1`] = `
     >
       <span
         class="label"
-        type="span-label"
       >
         High strength-to-weight ratio
       </span>

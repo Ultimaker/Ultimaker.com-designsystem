@@ -9,7 +9,7 @@ exports[`Storyshots Molecules|cards/card-product default 1`] = `
   >
     <article
       class="card-product"
-      type="card-product"
+      type="CardProduct"
     >
       <a
         aria-label="Ultimaker Nylon"
@@ -38,44 +38,40 @@ exports[`Storyshots Molecules|cards/card-product default 1`] = `
       >
         <li
           class="list__item list__item--inline"
-          type="li-inline"
+          type="LiInline"
         >
           <span
             class="label"
-            type="span-label"
           >
             Abrasion-resistant
           </span>
         </li>
         <li
           class="list__item list__item--inline"
-          type="li-inline"
+          type="LiInline"
         >
           <span
             class="label"
-            type="span-label"
           >
             Durable
           </span>
         </li>
         <li
           class="list__item list__item--inline"
-          type="li-inline"
+          type="LiInline"
         >
           <span
             class="label"
-            type="span-label"
           >
             High strength-to-weight ratio
           </span>
         </li>
         <li
           class="list__item list__item--inline"
-          type="li-inline"
+          type="LiInline"
         >
           <span
             class="label"
-            type="span-label"
           >
             Low friction coefficient
           </span>
@@ -95,7 +91,7 @@ exports[`Storyshots Molecules|cards/card-product no image 1`] = `
   >
     <article
       class="card-product"
-      type="card-product"
+      type="CardProduct"
     >
       <a
         aria-label="Ultimaker Nylon"
@@ -123,44 +119,40 @@ exports[`Storyshots Molecules|cards/card-product no image 1`] = `
       >
         <li
           class="list__item list__item--inline"
-          type="li-inline"
+          type="LiInline"
         >
           <span
             class="label"
-            type="span-label"
           >
             Abrasion-resistant
           </span>
         </li>
         <li
           class="list__item list__item--inline"
-          type="li-inline"
+          type="LiInline"
         >
           <span
             class="label"
-            type="span-label"
           >
             Durable
           </span>
         </li>
         <li
           class="list__item list__item--inline"
-          type="li-inline"
+          type="LiInline"
         >
           <span
             class="label"
-            type="span-label"
           >
             High strength-to-weight ratio
           </span>
         </li>
         <li
           class="list__item list__item--inline"
-          type="li-inline"
+          type="LiInline"
         >
           <span
             class="label"
-            type="span-label"
           >
             Low friction coefficient
           </span>
@@ -180,7 +172,7 @@ exports[`Storyshots Molecules|cards/card-product no image, no properties 1`] = `
   >
     <article
       class="card-product"
-      type="card-product"
+      type="CardProduct"
     >
       <a
         aria-label="Ultimaker Nylon"
@@ -220,7 +212,7 @@ exports[`Storyshots Molecules|cards/card-product no properties 1`] = `
   >
     <article
       class="card-product"
-      type="card-product"
+      type="CardProduct"
     >
       <a
         aria-label="Ultimaker Nylon"

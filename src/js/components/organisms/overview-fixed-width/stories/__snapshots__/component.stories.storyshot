@@ -24,7 +24,7 @@ exports[`Storyshots organisms|overview-fixed-width card-product 1`] = `
       <main>
         <section
           class="list-show-all"
-          type="list-show-all"
+          type="ListShowAll"
         >
           <div
             class="list-show-all__list-container"
@@ -33,11 +33,11 @@ exports[`Storyshots organisms|overview-fixed-width card-product 1`] = `
               class="list list-show-all__list"
             >
               <li
-                class="list__item list__item--content-block"
+                class="list__item"
               >
                 <article
                   class="card-product"
-                  type="card-product"
+                  type="CardProduct"
                 >
                   <a
                     aria-label="Ultimaker Nylon"
@@ -66,44 +66,40 @@ exports[`Storyshots organisms|overview-fixed-width card-product 1`] = `
                   >
                     <li
                       class="list__item list__item--inline"
-                      type="li-inline"
+                      type="LiInline"
                     >
                       <span
                         class="label"
-                        type="span-label"
                       >
                         Abrasion-resistant
                       </span>
                     </li>
                     <li
                       class="list__item list__item--inline"
-                      type="li-inline"
+                      type="LiInline"
                     >
                       <span
                         class="label"
-                        type="span-label"
                       >
                         Durable
                       </span>
                     </li>
                     <li
                       class="list__item list__item--inline"
-                      type="li-inline"
+                      type="LiInline"
                     >
                       <span
                         class="label"
-                        type="span-label"
                       >
                         High strength-to-weight ratio
                       </span>
                     </li>
                     <li
                       class="list__item list__item--inline"
-                      type="li-inline"
+                      type="LiInline"
                     >
                       <span
                         class="label"
-                        type="span-label"
                       >
                         Low friction coefficient
                       </span>
