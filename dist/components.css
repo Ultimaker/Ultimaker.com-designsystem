@@ -15,30 +15,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
-/*
- *  Mixins to support media queries
- *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
- */
-.list__item--content-block {
-  list-style: none; }
-
-.list__item--content-block.list__item {
-  padding-left: 0;
-  margin-bottom: 12px; }
-  @media (min-width: 768px) {
-    .list__item--content-block.list__item {
-      margin-bottom: 24px; } }
-
-.list__item .card-product {
-  width: 296px; }
-
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
 .list__item--inline {
   display: inline-block;
   list-style: none; }
@@ -99,6 +75,12 @@ because both families serve another purpose. Therefore the line-heights will be 
     .card-product__list .list__item {
       margin-bottom: 6px;
       margin-right: 6px; }
+
+.list-show-all__list .list__item {
+  list-style: none; }
+
+.list-show-all__list .card-product {
+  width: 296px; }
 
 /*
 * Because we have a primary and secondary font family, we need to define both
