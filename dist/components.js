@@ -8175,7 +8175,6 @@ var CardProduct = function (_Vue) {
         key: "listItems",
         get: function get() {
             var properties = [];
-            var items = [];
             if (this.properties) {
                 properties = this.properties.map(function (property) {
                     return {
@@ -8189,7 +8188,6 @@ var CardProduct = function (_Vue) {
                     };
                 });
             }
-
             return {
                 items: properties,
                 type: 'LiInline'
