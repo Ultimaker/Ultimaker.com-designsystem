@@ -1,0 +1,10 @@
+.list__item {
+    &--inline {
+        display: inline-block;
+        list-style: none;
+    }
+}
+
+.list__item.list__item--inline  {
+    padding-left: 0;
+}
