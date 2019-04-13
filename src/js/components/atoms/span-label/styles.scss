@@ -1,0 +1,15 @@
+.label {
+    display: inline-block;
+
+    padding-left: $buildingUnit / 2;
+    padding-right: $buildingUnit / 2;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+
+    color: $colorGrayDark;
+    background-color: $colorGrayExtraLight;
+
+    border-radius: 2px;
+}
