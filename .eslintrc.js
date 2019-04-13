@@ -8,10 +8,11 @@ module.exports = {
         sourceType: 'module'
     },
     env: {
-        es6: true,
+        amd: true,
         browser: true,
+        es6: true,
         jasmine: true,
-        amd: true
+        node: true
     },
     extends: [
         'eslint:recommended',
