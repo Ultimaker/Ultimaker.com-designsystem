@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|text span-label 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <span
+      class="label"
+    >
+      High strength-to-weight ratio
+    </span>
+  </section>
+</section>
+`;
