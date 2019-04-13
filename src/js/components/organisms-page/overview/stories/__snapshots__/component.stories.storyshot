@@ -1,0 +1,574 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|overview card-product 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="organism overview"
+      type="overview"
+    >
+      <section
+        class="container"
+      >
+        <h2
+          class="overview__title"
+        >
+          Explore the benefits of each material
+        </h2>
+         
+        <p
+          class="subtitle overview__subtitle"
+        >
+          Or just get a subtitle
+        </p>
+         
+        <section
+          class="list-section"
+          type="list-section"
+        >
+          <header
+            class="list-section__header"
+          >
+            <h3
+              class="list-section__title"
+            >
+              This is a title for section
+            
+              <span
+                class="list-section__count"
+              >
+                (8)
+              </span>
+               
+              <!---->
+            </h3>
+             
+            <!---->
+          </header>
+           
+          <ul
+            aria-label="This is a title for section"
+            class="list-section-list"
+          >
+            <div
+              class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+            >
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="card-product"
+                    type="CardProduct"
+                  >
+                    <a
+                      aria-label="Ultimaker Nylon"
+                      class="anchor-overlay hit-area"
+                      href="https://ultimaker.com/en/products/materials/nylon"
+                      title="Ultimaker Nylon"
+                    />
+                     
+                    <img
+                      alt="Nylon 3D printed gears"
+                      class="img--contain card-product__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      type="Image"
+                    />
+                     
+                    <!---->
+                     
+                    <h3
+                      class="card-product__heading"
+                    >
+                      Ultimaker Nylon
+                    </h3>
+                     
+                    <ul
+                      class="list card-product__list"
+                    >
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Abrasion-resistant
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Durable
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          High strength-to-weight ratio
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Low friction coefficient
+                        </span>
+                      </li>
+                    </ul>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="card-product"
+                    type="CardProduct"
+                  >
+                    <a
+                      aria-label="Ultimaker Nylon"
+                      class="anchor-overlay hit-area"
+                      href="https://ultimaker.com/en/products/materials/nylon"
+                      title="Ultimaker Nylon"
+                    />
+                     
+                    <!---->
+                     
+                    <div
+                      class="img--contain card-product__image gray-background"
+                    >
+                      Ultimaker Nylon
+                    </div>
+                     
+                    <h3
+                      class="card-product__heading"
+                    >
+                      Ultimaker Nylon
+                    </h3>
+                     
+                    <ul
+                      class="list card-product__list"
+                    >
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Abrasion-resistant
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Durable
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          High strength-to-weight ratio
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Low friction coefficient
+                        </span>
+                      </li>
+                    </ul>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="card-product"
+                    type="CardProduct"
+                  >
+                    <a
+                      aria-label="Ultimaker Nylon"
+                      class="anchor-overlay hit-area"
+                      href="https://ultimaker.com/en/products/materials/nylon"
+                      title="Ultimaker Nylon"
+                    />
+                     
+                    <img
+                      alt="Nylon 3D printed gears"
+                      class="img--contain card-product__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      type="Image"
+                    />
+                     
+                    <!---->
+                     
+                    <h3
+                      class="card-product__heading"
+                    >
+                      Ultimaker Nylon
+                    </h3>
+                     
+                    <ul
+                      class="list card-product__list"
+                    />
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="card-product"
+                    type="CardProduct"
+                  >
+                    <a
+                      aria-label="Ultimaker Nylon"
+                      class="anchor-overlay hit-area"
+                      href="https://ultimaker.com/en/products/materials/nylon"
+                      title="Ultimaker Nylon"
+                    />
+                     
+                    <!---->
+                     
+                    <div
+                      class="img--contain card-product__image gray-background"
+                    >
+                      Ultimaker Nylon
+                    </div>
+                     
+                    <h3
+                      class="card-product__heading"
+                    >
+                      Ultimaker Nylon
+                    </h3>
+                     
+                    <ul
+                      class="list card-product__list"
+                    />
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="card-product"
+                    type="CardProduct"
+                  >
+                    <a
+                      aria-label="Ultimaker Nylon"
+                      class="anchor-overlay hit-area"
+                      href="https://ultimaker.com/en/products/materials/nylon"
+                      title="Ultimaker Nylon"
+                    />
+                     
+                    <img
+                      alt="Nylon 3D printed gears"
+                      class="img--contain card-product__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      type="Image"
+                    />
+                     
+                    <!---->
+                     
+                    <h3
+                      class="card-product__heading"
+                    >
+                      Ultimaker Nylon
+                    </h3>
+                     
+                    <ul
+                      class="list card-product__list"
+                    >
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Abrasion-resistant
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Durable
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          High strength-to-weight ratio
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Low friction coefficient
+                        </span>
+                      </li>
+                    </ul>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="card-product"
+                    type="CardProduct"
+                  >
+                    <a
+                      aria-label="Ultimaker Nylon"
+                      class="anchor-overlay hit-area"
+                      href="https://ultimaker.com/en/products/materials/nylon"
+                      title="Ultimaker Nylon"
+                    />
+                     
+                    <!---->
+                     
+                    <div
+                      class="img--contain card-product__image gray-background"
+                    >
+                      Ultimaker Nylon
+                    </div>
+                     
+                    <h3
+                      class="card-product__heading"
+                    >
+                      Ultimaker Nylon
+                    </h3>
+                     
+                    <ul
+                      class="list card-product__list"
+                    >
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Abrasion-resistant
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Durable
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          High strength-to-weight ratio
+                        </span>
+                      </li>
+                      <li
+                        class="list__item list__item--inline"
+                        type="LiInline"
+                      >
+                        <span
+                          class="label"
+                        >
+                          Low friction coefficient
+                        </span>
+                      </li>
+                    </ul>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="card-product"
+                    type="CardProduct"
+                  >
+                    <a
+                      aria-label="Ultimaker Nylon"
+                      class="anchor-overlay hit-area"
+                      href="https://ultimaker.com/en/products/materials/nylon"
+                      title="Ultimaker Nylon"
+                    />
+                     
+                    <img
+                      alt="Nylon 3D printed gears"
+                      class="img--contain card-product__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      type="Image"
+                    />
+                     
+                    <!---->
+                     
+                    <h3
+                      class="card-product__heading"
+                    >
+                      Ultimaker Nylon
+                    </h3>
+                     
+                    <ul
+                      class="list card-product__list"
+                    />
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="card-product"
+                    type="CardProduct"
+                  >
+                    <a
+                      aria-label="Ultimaker Nylon"
+                      class="anchor-overlay hit-area"
+                      href="https://ultimaker.com/en/products/materials/nylon"
+                      title="Ultimaker Nylon"
+                    />
+                     
+                    <!---->
+                     
+                    <div
+                      class="img--contain card-product__image gray-background"
+                    >
+                      Ultimaker Nylon
+                    </div>
+                     
+                    <h3
+                      class="card-product__heading"
+                    >
+                      Ultimaker Nylon
+                    </h3>
+                     
+                    <ul
+                      class="list card-product__list"
+                    />
+                  </article>
+                </li>
+              </div>
+               
+              <!---->
+            </div>
+             
+            <div
+              class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden"
+            />
+          </ul>
+        </section>
+         
+        <div
+          class="cta__block"
+        >
+          <a
+            class=""
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+          <a
+            class=""
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+        </div>
+      </section>
+    </article>
+  </section>
+</section>
+`;
