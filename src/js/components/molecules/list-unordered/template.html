@@ -1,0 +1,6 @@
+<ul class="list">
+    <template v-for="(item, index) in listItems.items">
+        <template v-if="!item.item"><component :is="listItems.type" :item="item" :key="index"/></template>
+        <template v-else><component :is="listItems.type" v-bind="item" :key="index"/></template>
+    </template>
+</ul>

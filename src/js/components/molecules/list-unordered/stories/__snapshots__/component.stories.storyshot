@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules|lists/list-unordered li-item 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <ul
+      class="list"
+    >
+      <li
+        class="list__item"
+      >
+        Abrasion-resistant
+      </li>
+      <li
+        class="list__item"
+      >
+        Durable
+      </li>
+      <li
+        class="list__item"
+      >
+        High strength-to-weight ratio
+      </li>
+      <li
+        class="list__item"
+      >
+        Low friction coefficient
+      </li>
+    </ul>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|lists/list-unordered list-item-inline-labels 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <ul
+      class="list"
+    >
+      <li
+        class="list__item list__item--inline"
+      >
+        <span
+          class="label"
+        >
+          Industrial-grade impact and abrasion resistance
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+      >
+        <span
+          class="label"
+        >
+          Durable
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+      >
+        <span
+          class="label"
+        >
+          High strength-to-weight ratio
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+      >
+        <span
+          class="label"
+        >
+          Low friction coefficient
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+      >
+        <span
+          class="label"
+        >
+          Good corrosion resistance to alkalis and organic chemicals
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+      >
+        <span
+          class="label"
+        >
+          Reduced humidity absorption when compared to other Nylon filaments
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+      >
+        <span
+          class="label"
+        >
+          Seamless 3D printing experience
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+      >
+        <span
+          class="label"
+        >
+          Prints in dual extrusion with PVA or Breakaway
+        </span>
+      </li>
+    </ul>
+  </section>
+</section>
+`;
