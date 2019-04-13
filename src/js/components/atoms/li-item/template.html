@@ -1,0 +1,4 @@
+<li class="list__item">
+    <template v-if="!item.item">{{ item }}</template>
+    <template v-else><component :is="item.type" v-bind="item.item"/></template>
+</li>

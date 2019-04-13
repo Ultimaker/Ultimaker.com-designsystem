@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|list items/li-item span-label 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <li
+      class="list__item"
+    >
+      <span
+        class="label"
+      >
+        High strength-to-weight ratio
+      </span>
+    </li>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|list items/li-item text 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <li
+      class="list__item"
+    >
+      High strength-to-weight ratio
+    </li>
+  </section>
+</section>
+`;
