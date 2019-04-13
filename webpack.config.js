@@ -32,22 +32,24 @@ const webpackConfig = {
             resolve('node_modules')
         ],
         alias: {
-            'vue': 'vue/dist/vue.js',
             '@root': resolve('.'),
-            'src': resolve('src'),
             'adapters': resolve('src/js/adapters'),
-            'components': resolve('src/js/components'),
             'atoms': resolve('src/js/components/atoms'),
+            'components': resolve('src/js/components'),
+            'constants': resolve('src/js/constants'),
+            'definitions': resolve('src/js/definitions'),
+            'events': resolve('src/js/events'),
+            'mixins': resolve('src/js/mixins'),
             'molecules': resolve('src/js/components/molecules'),
             'organisms': resolve('src/js/components/organisms'),
             'organisms-page': resolve('src/js/components/organisms-page'),
-            'constants': resolve('src/js/constants'),
-            'definitions': resolve('src/js/definitions'),
-            'mixins': resolve('src/js/mixins'),
+            'plugins': resolve('src/js/plugins'),
             'router': resolve('src/js/router'),
             'services': resolve('src/js/services'),
+            'scss': resolve('src/scss'),
+            'src': resolve('src'),
             'utils': resolve('src/js/utils'),
-            'plugins': resolve('src/js/plugins')
+            'vue': 'vue/dist/vue.js'
         }
     },
     module: {
