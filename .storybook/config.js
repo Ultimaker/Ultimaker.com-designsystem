@@ -67,15 +67,18 @@ addDecorator((story) => ({
 }));
 
 function loadStories() {
-    const globals = require.context('../src/stories/global', true, /\.stories\.[jt]s$/),
-        atoms = require.context('../src/stories/atoms', true, /\.stories\.[jt]s$/),
-        molecules = require.context('../src/stories/molecules', true, /\.stories\.[jt]s$/),
-        organisms = require.context('../src/stories/organisms', true, /\.stories\.[jt]s$/),
-        templates = require.context('../src/stories/templates', true, /\.stories\.[jt]s$/);
+    const atoms = require.context('../src/stories/atoms', true, /\.stories\.[jt]s$/);
+    const components = require.context('../src/js/components', true, /\.stories\.js$/);
+    const globals = require.context('../src/stories/global', true, /\.stories\.[jt]s$/);
+    const molecules = require.context('../src/stories/molecules', true, /\.stories\.[jt]s$/);
+    const organisms = require.context('../src/stories/organisms', true, /\.stories\.[jt]s$/);
+    const templates = require.context('../src/stories/templates', true, /\.stories\.[jt]s$/);
 
     require('../src/stories/welcome.stories');
-    globals.keys().forEach(filename => globals(filename));
+
     atoms.keys().forEach(filename => atoms(filename));
+    components.keys().forEach(filename => components(filename));
+    globals.keys().forEach(filename => globals(filename));
     molecules.keys().forEach(filename => molecules(filename));
     organisms.keys().forEach(filename => organisms(filename));
     templates.keys().forEach(filename => templates(filename));
