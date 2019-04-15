@@ -6,28 +6,12 @@ import cardNoImageNoProperties from 'molecules/card-product/data/examples/card-p
 export default {
     type: 'overview',
     title: 'Explore the benefits of each material',
-    subtitle: 'Or just get a subtitle',
-    ctas: {
-        type: 'cta-block',
-        ctas: [
-            {
-                type: 'content-button',
-                label: 'Call me back',
-                url: 'https://ultimaker.com'
-            },
-            {
-                type: 'content-link',
-                label: 'Call me back',
-                url: 'https://ultimaker.com'
-            }
-        ]
-    },
     sections: [
         {
             type: 'list-section',
-            title: 'This is a title for section',
             limit: {
-                largeScreen: 6
+                largeScreen: 3,
+                smallScreen: 3
             },
             expand: {
                 label: 'Show all'

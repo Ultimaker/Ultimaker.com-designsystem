@@ -1,4 +1,4 @@
-## overview-fixed-width
+## overview
 
 * dsm: [organisms](https://ultimaker.invisionapp.com/dsm/ultimaker/ultimaker-com/folder/components/5c68faf9fb26bb001856a580)
 | [atmos](https://ultimaker.invisionapp.com/dsm/ultimaker/ultimaker-com/folder/components/5c68faf9fb26bb001856a57e)
