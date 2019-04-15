@@ -2,7 +2,6 @@
     position: relative;
     background-color: $colorWhite;
     border: 1px solid $colorGrayLight;
-    overflow: hidden;
 
     &__heading {
         margin-bottom: 19px;
@@ -19,6 +18,7 @@
 
         &-container {
             position: relative;
+            overflow: hidden;
             padding-top: 50%;
             margin-bottom: $buildingUnit * 2;
         }
@@ -34,16 +34,18 @@
         flex-wrap: wrap;
         align-content: space-between;
 
-        margin-top: -$buildingUnit / 2;
+        padding-right: 4px;
         margin-bottom: $buildingUnit / 2;
 
-        &.list {
-            padding-left: $buildingUnit;
-            padding-right: $buildingUnit;
-        }
+        // offset margin-bottom on the list items in the last row of the flexbox
+        margin-top: -$buildingUnit / 2;
+
+        // offset margin-right on the list items in the last column of the flexbox
+        margin-left: -$buildingUnit / 2;
 
         .list__item {
             line-height: 15px;
+            margin-right: $buildingUnit / 2;
         }
     }
 }

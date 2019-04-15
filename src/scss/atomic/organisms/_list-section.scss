@@ -62,8 +62,7 @@
 .list-section-list {
     @extend %reset-list;
 
-    // offset margin-top on the first row
-    // handles margins issues before and after the flexbox
+    // offset margin-top on the first row of the items in the flexbox
     margin-top: -$buildingUnit;
 
     @include min-mobile-xl {
