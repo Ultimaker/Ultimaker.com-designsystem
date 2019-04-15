@@ -1,6 +1,9 @@
 <article class="card-product">
-    <anchor-overlay :url="url" :title="title" :clickEvent="clickEvent" />
-    <c-image class="card-product__image" v-bind="image" v-if="image && !imageError" @error="imageError = true" keep-in-view/>
+    <anchor-overlay :url="url" :title="title" :clickEvent="clickEvent"/>
+    <div class="card-product__image-container">
+        <c-image class="card-product__image" v-bind="image" v-if="image && !imageError" @error="imageError = true"
+                 resize-behavior="crop"/>
+    </div>
     <div class="img--contain card-product__image gray-background" v-if="!image || imageError">{{ title }}</div>
     <h3 class="card-product__heading">{{ title }}</h3>
     <list-unordered class="card-product__list" :listItems="listItems"/>

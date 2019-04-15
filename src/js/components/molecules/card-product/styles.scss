@@ -11,7 +11,17 @@
     }
 
     &__image {
-        margin-bottom: $buildingUnit * 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        &-container {
+            position: relative;
+            padding-top: 50%;
+            margin-bottom: $buildingUnit * 2;
+        }
 
         &.gray-background {
             background-color: $colorGray;
