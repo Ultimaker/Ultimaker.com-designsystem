@@ -84,6 +84,17 @@ podTemplate(
       String branch = slugify.slug(env.BRANCH_NAME)
       String commit = scmVariables.GIT_COMMIT
 
+      stage('authenticate gcloud') {
+        withCredentials([file(credentialsId: 'gcloud-jenkins-service-account', variable: 'GCLOUD_KEY_FILE')]) {
+          sh """
+          gcloud --quiet auth configure-docker
+          gcloud auth activate-service-account --key-file ${GCLOUD_KEY_FILE}
+          gcloud config set project um-website-193311
+          gcloud container clusters get-credentials development --region europe-west4
+          """
+        }
+      }
+
       stage('build containers') {
         parallel(
           'nginx': {
@@ -96,17 +107,6 @@ podTemplate(
             sh "docker build --file docker/node/Dockerfile --tag ${nodeContainer}:${branch} --tag ${nodeContainer}:${commit} ."
           }
         )
-      }
-
-      stage('authenticate gcloud') {
-        withCredentials([file(credentialsId: 'gcloud-jenkins-service-account', variable: 'GCLOUD_KEY_FILE')]) {
-          sh """
-          gcloud --quiet auth configure-docker
-          gcloud auth activate-service-account --key-file ${GCLOUD_KEY_FILE}
-          gcloud config set project um-website-193311
-          gcloud container clusters get-credentials development --region europe-west4
-          """
-        }
       }
 
       stage('push containers') {
