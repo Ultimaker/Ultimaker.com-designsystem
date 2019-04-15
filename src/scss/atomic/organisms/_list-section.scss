@@ -1,66 +1,81 @@
-$cardTabletMarginBottom: $buildingUnit * 2;
-$cardMobileMarginBottom: $buildingUnit;
-
 .list-section {
     &:not(:last-child) {
         margin-bottom: 53px;
     }
-    &:last-child {
-        margin-bottom: -$buildingUnit * 2;
 
-        .list-section-list__button {
-            margin-bottom: $buildingUnit * 2;
+    &__count {
+        color: $colorGrayDark;
+        font-size: .75em;
+    }
+
+    &__footer {
+        text-align: center;
+
+        &__button {
+            margin-top: $buildingUnit * 3;
+
+            @include min-mobile-xl {
+                margin-top: $buildingUnit * 4;
+            }
+        }
+    }
+
+    &__header {
+        margin-bottom: 26px;
+
+        @include min-mobile-xl {
+            flex-direction: row;
+            display: flex;
+            align-items: baseline;
+
+            margin-bottom: 17px;
+        }
+    }
+
+    &__info-link {
+        margin-bottom: 0;
+
+        @include min-mobile-xl {
+            margin-left: $buildingUnit * 2;
+        }
+    }
+
+    &__title {
+        margin-bottom: 12px;
+    }
+
+    &__tooltip {
+        @extend %fontPrimary;
+        @include font-line-ratio(prim-s);
+
+        max-width: 296px;
+        position: absolute;
+        opacity: 1;
+        transform: translateY(calc(-100% - 36px));
+
+        &:after {
+            left: $buildingUnit;
         }
     }
 }
 
-.list-section__header {
-    @include font-line-ratio(sec-xs);
-    margin-bottom: $buildingUnit * 1.5;
+.list-section-list {
+    @extend %reset-list;
 
-    @include min-tablet() {
-        @include font-line-ratio(sec-s);
-        margin-bottom: $buildingUnit * 2.5;
-    }
-
-    .list-section__info-link {
-        margin: 10px 0 0 0;
-    }
+    // offset margin-top on the first row
+    // handles margins issues before and after the flexbox
+    margin-top: -$buildingUnit;
 
     @include min-mobile-xl {
-        flex-direction: row;
-        display: flex;
-        align-items: baseline;
-
-        .list-section__info-link {
-            margin-left: $cardMobileMarginBottom * 2;
-            margin-top: 0;
-            margin-bottom: -4px; //reset wrong offset
-        }
+        margin-top: -$buildingUnit * 2;
     }
-}
 
-.list-section__title,
-.list-section__info-link {
-    margin: 0;
-}
+    &__item {
+        margin-top: $buildingUnit;
 
-.list-section__count {
-    color: $colorGrayDark;
-    font-size: .75em;
-}
-
-.list-section__tooltip {
-    @extend %fontPrimary;
-    @include font-line-ratio(prim-s);
-
-    max-width: 296px;
-    position: absolute;
-    opacity: 1;
-    transform: translateY(calc(-100% - 36px));
-
-    &:after {
-        left: $buildingUnit;
+        @include min-mobile-xl {
+            margin-top: $buildingUnit * 2;
+        }
     }
 }
 
@@ -71,29 +86,4 @@ $cardMobileMarginBottom: $buildingUnit;
 
 .tooltip-enter-active, .tooltip-leave-active {
     transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultEasing;
-}
-
-
-.list-section-list {
-    @extend %reset-list;
-}
-
-.list-section__button {
-    margin: ($cardMobileMarginBottom * 2) 0 $cardMobileMarginBottom 0;
-
-
-    @include min-tablet {
-        margin: ($cardMobileMarginBottom * 2) 0 $cardTabletMarginBottom 0;
-    }
-}
-
-.flexgrid__cell--list-section__button--center {
-    text-align: center;
-}
-
-.list-section-list__button {
-    margin: 24px 0 0 0;
-    @include min-mobile-xl {
-        margin: 24px 0 0 0;
-    }
 }
