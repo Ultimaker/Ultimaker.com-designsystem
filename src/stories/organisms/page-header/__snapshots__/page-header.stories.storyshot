@@ -78,20 +78,28 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1122_0"
 =======
                       id="flyout_title_835_0"
 >>>>>>> No focus state on content block
+=======
+                      id="flyout_title_830_0"
+>>>>>>> fix(list-section): correct margin with content-blocks
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1122_0"
 =======
                       aria-labelledby="flyout_title_835_0"
 >>>>>>> No focus state on content block
+=======
+                      aria-labelledby="flyout_title_830_0"
+>>>>>>> fix(list-section): correct margin with content-blocks
                       class="flyout__list"
                     >
                       <li
@@ -173,10 +181,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1122_1"
 =======
                       id="flyout_title_835_1"
 >>>>>>> No focus state on content block
+=======
+                      id="flyout_title_830_1"
+>>>>>>> fix(list-section): correct margin with content-blocks
                     >
                       Where is 3D printing used?
                     </strong>
@@ -184,10 +196,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1122_1"
 =======
                       aria-labelledby="flyout_title_835_1"
 >>>>>>> No focus state on content block
+=======
+                      aria-labelledby="flyout_title_830_1"
+>>>>>>> fix(list-section): correct margin with content-blocks
                       class="flyout__list"
                     >
                       <li
@@ -606,10 +622,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1122_2"
 =======
                       id="flyout_title_835_2"
 >>>>>>> No focus state on content block
+=======
+                      id="flyout_title_830_2"
+>>>>>>> fix(list-section): correct margin with content-blocks
                     >
                       How is 3D printing used?
                     </strong>
@@ -617,10 +637,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1122_2"
 =======
                       aria-labelledby="flyout_title_835_2"
 >>>>>>> No focus state on content block
+=======
+                      aria-labelledby="flyout_title_830_2"
+>>>>>>> fix(list-section): correct margin with content-blocks
                       class="flyout__list"
                     >
                       <li
@@ -860,20 +884,28 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1201_0"
 =======
                       id="flyout_title_914_0"
 >>>>>>> No focus state on content block
+=======
+                      id="flyout_title_909_0"
+>>>>>>> fix(list-section): correct margin with content-blocks
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1201_0"
 =======
                       aria-labelledby="flyout_title_914_0"
 >>>>>>> No focus state on content block
+=======
+                      aria-labelledby="flyout_title_909_0"
+>>>>>>> fix(list-section): correct margin with content-blocks
                       class="flyout__list"
                     >
                       <li
@@ -942,10 +974,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1201_1"
 =======
                       id="flyout_title_914_1"
 >>>>>>> No focus state on content block
+=======
+                      id="flyout_title_909_1"
+>>>>>>> fix(list-section): correct margin with content-blocks
                     >
                       Flyout title two
                     </strong>
@@ -953,10 +989,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1201_1"
 =======
                       aria-labelledby="flyout_title_914_1"
 >>>>>>> No focus state on content block
+=======
+                      aria-labelledby="flyout_title_909_1"
+>>>>>>> fix(list-section): correct margin with content-blocks
                       class="flyout__list"
                     >
                       <li
@@ -1122,10 +1162,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1201_2"
 =======
                       id="flyout_title_914_2"
 >>>>>>> No focus state on content block
+=======
+                      id="flyout_title_909_2"
+>>>>>>> fix(list-section): correct margin with content-blocks
                     >
                       Flyout title three
                     </strong>
@@ -1133,10 +1177,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1201_2"
 =======
                       aria-labelledby="flyout_title_914_2"
 >>>>>>> No focus state on content block
+=======
+                      aria-labelledby="flyout_title_909_2"
+>>>>>>> fix(list-section): correct margin with content-blocks
                       class="flyout__list"
                     >
                       <li
@@ -1360,20 +1408,28 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1251_0"
 =======
                       id="flyout_title_964_0"
 >>>>>>> No focus state on content block
+=======
+                      id="flyout_title_959_0"
+>>>>>>> fix(list-section): correct margin with content-blocks
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1251_0"
 =======
                       aria-labelledby="flyout_title_964_0"
 >>>>>>> No focus state on content block
+=======
+                      aria-labelledby="flyout_title_959_0"
+>>>>>>> fix(list-section): correct margin with content-blocks
                       class="flyout__list"
                     >
                       <li
@@ -1442,10 +1498,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1251_1"
 =======
                       id="flyout_title_964_1"
 >>>>>>> No focus state on content block
+=======
+                      id="flyout_title_959_1"
+>>>>>>> fix(list-section): correct margin with content-blocks
                     >
                       Flyout title two
                     </strong>
@@ -1453,10 +1513,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1251_1"
 =======
                       aria-labelledby="flyout_title_964_1"
 >>>>>>> No focus state on content block
+=======
+                      aria-labelledby="flyout_title_959_1"
+>>>>>>> fix(list-section): correct margin with content-blocks
                       class="flyout__list"
                     >
                       <li
@@ -1622,10 +1686,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1251_2"
 =======
                       id="flyout_title_964_2"
 >>>>>>> No focus state on content block
+=======
+                      id="flyout_title_959_2"
+>>>>>>> fix(list-section): correct margin with content-blocks
                     >
                       Flyout title three
                     </strong>
@@ -1633,10 +1701,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1251_2"
 =======
                       aria-labelledby="flyout_title_964_2"
 >>>>>>> No focus state on content block
+=======
+                      aria-labelledby="flyout_title_959_2"
+>>>>>>> fix(list-section): correct margin with content-blocks
                       class="flyout__list"
                     >
                       <li

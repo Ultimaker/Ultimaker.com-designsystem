@@ -4035,7 +4035,7 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
 =======
 =======
 .content-block {
-  margin-bottom: 24px; }
+  margin-bottom: 54px; }
 
 >>>>>>> fix(content-block): margin to next organism
 .content-block-container__image {
@@ -4893,6 +4893,7 @@ svg text {
 .list-section:not(:last-child) {
   margin-bottom: 53px; }
 
+<<<<<<< HEAD
 .list-section__count {
   color: #7F7F7F;
   font-size: .75em; }
@@ -4904,6 +4905,14 @@ svg text {
     @media (min-width: 569px) {
       .list-section__footer__button {
         margin-top: 48px; } }
+=======
+.list-section:last-child {
+  margin-bottom: -24px; }
+  .list-section:last-child .list-section-list__button {
+    margin-bottom: 24px; }
+  .list-section:last-child.contentblock {
+    margin-bottom: -54px; }
+>>>>>>> fix(list-section): correct margin with content-blocks
 
 .list-section__header {
   margin-bottom: 26px; }

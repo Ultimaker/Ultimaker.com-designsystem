@@ -3,6 +3,7 @@ import { Power3, TweenLite } from 'gsap';
 import Defaults from 'constants/defaults';
 
 import ViewportUtil from 'utils/viewport';
+import { unique } from 'utils/functions';
 import BrowserCapabilities from 'utils/browser-capabilities';
 
 import { ListSection as IListSection } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/sections/ListSection';
@@ -36,6 +37,14 @@ export default class ListSection extends Vue implements IListSection {
     $emitPublic;
     $route;
     viewportUtil: ViewportUtil = new ViewportUtil();
+
+    defineCardTypesClass () {
+        if (this.cards && this.cards.length) {
+            // @ts-ignore
+            return unique(this.cards.map((card:any) => card.type.toLowerCase()));
+        }
+        return '';
+    }
 
     get clickEventType() {
         return Events.click;
