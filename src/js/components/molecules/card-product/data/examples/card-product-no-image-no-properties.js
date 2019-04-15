@@ -1,7 +1,4 @@
-import clickEvent from 'atoms/click-event/data/data';
-
 export default {
-    clickEvent,
     properties: [],
     title: 'Ultimaker Nylon',
     type: 'CardProduct',

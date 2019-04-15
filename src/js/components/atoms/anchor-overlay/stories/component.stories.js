@@ -10,9 +10,6 @@ storiesOf('Atoms|anchors', module)
 
             return {
                 props: {
-                    clickEvent: {
-                        default: knobs.clickEvent
-                    },
                     title: {
                         default: knobs.title
                     },

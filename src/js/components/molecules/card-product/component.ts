@@ -7,7 +7,6 @@ import { CardProduct as ICardProduct } from '@ultimaker/ultimaker.com-model-defi
 })
 
 export default class CardProduct extends Vue implements ICardProduct {
-    @Prop({ type: Object }) clickEvent?: ICardProduct['clickEvent'];
     @Prop({ type: Object }) image?: ICardProduct['image'] | undefined;
     @Prop({ type: Array }) properties?: ICardProduct['properties'];
     @Prop({ type: String, required: true }) title!: ICardProduct['title'];
