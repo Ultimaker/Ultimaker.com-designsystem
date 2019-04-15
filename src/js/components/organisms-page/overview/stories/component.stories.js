@@ -1,6 +1,6 @@
 import {storiesOf} from '@storybook/vue';
 import cardProductData from 'organisms-page/overview/data/examples/card-product';
-import businessCardData from 'organisms-page/overview/data/examples/business-card';
+import businessCardData from 'organisms-page/overview/data/examples/business-cards';
 
 storiesOf('organisms|overview', module)
     .add('Overview businesscard',

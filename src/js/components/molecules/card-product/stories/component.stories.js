@@ -1,5 +1,5 @@
 import {storiesOf} from '@storybook/vue';
-import cardDefault from 'molecules/card-product/data/examples/card-product-default';
+import cardDefault from 'molecules/card-product/data/examples/card-product-nylon';
 import cardNoImage from 'molecules/card-product/data/examples/card-product-no-image';
 import cardNoProperties from 'molecules/card-product/data/examples/card-product-no-properties';
 import cardNoImageNoProperties from 'molecules/card-product/data/examples/card-product-no-image-no-properties';

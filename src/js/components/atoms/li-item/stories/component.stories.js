@@ -1,7 +1,7 @@
 import {storiesOf} from '@storybook/vue';
 import {withKnobs} from '@storybook/addon-knobs';
 import getKnobs from 'atoms/li-item/data/data.knobs';
-import cardProductDefault from 'molecules/card-product/data/examples/card-product-default';
+import cardProductDefault from 'molecules/card-product/data/examples/card-product-nylon';
 
 storiesOf('Atoms|list items/li-item', module)
     .addDecorator(withKnobs)
