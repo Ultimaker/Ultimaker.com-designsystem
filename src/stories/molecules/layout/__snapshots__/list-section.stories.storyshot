@@ -11,7 +11,7 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
       class="story__molecule"
     >
       <section
-        class="list-section"
+        class="list-section businesscard"
         showalllabel="Show all"
         type="ListSection"
       >
@@ -238,9 +238,7 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
             </div>
           </div>
            
-          <div
-            class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden"
-          />
+          <!---->
         </ul>
          
         <footer

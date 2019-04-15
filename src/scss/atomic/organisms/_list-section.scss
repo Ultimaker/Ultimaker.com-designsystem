@@ -6,6 +6,14 @@
     &__count {
         color: $colorGrayDark;
         font-size: .75em;
+
+        .list-section-list__button {
+            margin-bottom: $buildingUnit * 2;
+        }
+    }
+
+    &.contentblock {
+        margin-bottom: -$buildingUnit*4.5;
     }
 
     &__footer {

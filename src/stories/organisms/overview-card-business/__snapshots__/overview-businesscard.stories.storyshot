@@ -34,7 +34,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
           </header>
            
           <section
-            class="list-section"
+            class="list-section businesscard"
             showalllabel="Show all"
             type="ListSection"
           >
@@ -56,7 +56,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   class="tooltip section-tooltip list-section__tooltip"
                   description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
                   icon="info"
-                  id="tooltip_704"
+                  id="tooltip_703"
                   label="More info"
                   style="display: none;"
                   type="Tooltip"
@@ -68,7 +68,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               </h3>
                
               <a
-                aria-describedby="tooltip_704"
+                aria-describedby="tooltip_703"
                 class="link list-section__info-link link--reversed link--icon"
                 href="#"
                 role="button"
@@ -263,13 +263,11 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 <!---->
               </div>
                
-              <div
-                class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden"
-              />
+              <!---->
             </ul>
           </section>
           <section
-            class="list-section"
+            class="list-section businesscard"
             showalllabel="Show all"
             type="ListSection"
           >
@@ -906,9 +904,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 <!---->
               </div>
                
-              <div
-                class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden"
-              />
+              <!---->
             </ul>
           </section>
            

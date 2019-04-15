@@ -18,14 +18,22 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
+<<<<<<< HEAD
             id="flyout_title_721_0"
+=======
+            id="flyout_title_333_0"
+>>>>>>> fix(list-section): correct margin with content-blocks
           >
             Flyout title one
           </strong>
            
           <ul
             aria-expanded="true"
+<<<<<<< HEAD
             aria-labelledby="flyout_title_721_0"
+=======
+            aria-labelledby="flyout_title_333_0"
+>>>>>>> fix(list-section): correct margin with content-blocks
             class="flyout__list"
           >
             <li
@@ -106,7 +114,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
+<<<<<<< HEAD
             id="flyout_title_721_1"
+=======
+            id="flyout_title_333_1"
+>>>>>>> fix(list-section): correct margin with content-blocks
           >
             Flyout title two
           </strong>
@@ -114,7 +126,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
+<<<<<<< HEAD
             aria-labelledby="flyout_title_721_1"
+=======
+            aria-labelledby="flyout_title_333_1"
+>>>>>>> fix(list-section): correct margin with content-blocks
             class="flyout__list"
           >
             <li
@@ -290,7 +306,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
+<<<<<<< HEAD
             id="flyout_title_721_2"
+=======
+            id="flyout_title_333_2"
+>>>>>>> fix(list-section): correct margin with content-blocks
           >
             Flyout title three
           </strong>
@@ -298,7 +318,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
+<<<<<<< HEAD
             aria-labelledby="flyout_title_721_2"
+=======
+            aria-labelledby="flyout_title_333_2"
+>>>>>>> fix(list-section): correct margin with content-blocks
             class="flyout__list"
           >
             <li
