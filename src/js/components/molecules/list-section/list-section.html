@@ -47,7 +47,7 @@
                           @enter="enter"
                           tag="div"
                           :css="false"
-                          v-if="index >= showMax"
+                          v-if="cards.length > showMax"
                           class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden">
             <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                  v-for="(card, index) in cards"
