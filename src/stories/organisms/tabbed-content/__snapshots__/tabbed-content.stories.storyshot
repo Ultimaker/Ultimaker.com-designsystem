@@ -147,27 +147,27 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                 type="Tab"
               >
                 <article
-                  class="general-content"
+                  class="content-general"
                   ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
-                    class="general-content__container"
+                    class="content-general__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter"
                     >
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
                       >
                         <h3
-                          class="general-content__title"
+                          class="content-general__title"
                         >
                            Content general title 1
                         </h3>
                          
                         <p
-                          class="general-content__body"
+                          class="content-general__body"
                         >
                           Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
                         </p>
@@ -193,10 +193,10 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       </div>
                        
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
                       >
                         <div
-                          class="general-content__image-wrapper"
+                          class="content-general__image-wrapper"
                         >
                           <img
                             alt="An example image"
@@ -223,27 +223,27 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                 type="Tab"
               >
                 <article
-                  class="general-content"
+                  class="content-general"
                   ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
-                    class="general-content__container"
+                    class="content-general__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter flexgrid--row-reversed"
                     >
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
                       >
                         <h3
-                          class="general-content__title"
+                          class="content-general__title"
                         >
                            Content general title 2
                         </h3>
                          
                         <p
-                          class="general-content__body"
+                          class="content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
@@ -269,10 +269,10 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       </div>
                        
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
                       >
                         <div
-                          class="general-content__image-wrapper"
+                          class="content-general__image-wrapper"
                         >
                           <img
                             alt="An example image"
@@ -299,27 +299,27 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                 type="Tab"
               >
                 <article
-                  class="general-content"
+                  class="content-general"
                   ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
-                    class="general-content__container"
+                    class="content-general__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter"
                     >
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
                       >
                         <h3
-                          class="general-content__title"
+                          class="content-general__title"
                         >
                            Content general title 2
                         </h3>
                          
                         <p
-                          class="general-content__body"
+                          class="content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
@@ -345,10 +345,10 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       </div>
                        
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
                       >
                         <div
-                          class="general-content__image-wrapper"
+                          class="content-general__image-wrapper"
                         >
                           <img
                             alt="An example image"
@@ -375,27 +375,27 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                 type="Tab"
               >
                 <article
-                  class="general-content"
+                  class="content-general"
                   ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
-                    class="general-content__container"
+                    class="content-general__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter flexgrid--row-reversed"
                     >
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
                       >
                         <h3
-                          class="general-content__title"
+                          class="content-general__title"
                         >
                            Content general title 2
                         </h3>
                          
                         <p
-                          class="general-content__body"
+                          class="content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
@@ -421,10 +421,10 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       </div>
                        
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
                       >
                         <div
-                          class="general-content__image-wrapper"
+                          class="content-general__image-wrapper"
                         >
                           <img
                             alt="An example image"
@@ -451,27 +451,27 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                 type="Tab"
               >
                 <article
-                  class="general-content"
+                  class="content-general"
                   ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
-                    class="general-content__container"
+                    class="content-general__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter flexgrid--row-reversed"
                     >
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
                       >
                         <h3
-                          class="general-content__title"
+                          class="content-general__title"
                         >
                            Content general title 2
                         </h3>
                          
                         <p
-                          class="general-content__body"
+                          class="content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
@@ -497,10 +497,10 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       </div>
                        
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
                       >
                         <div
-                          class="general-content__image-wrapper"
+                          class="content-general__image-wrapper"
                         >
                           <img
                             alt="An example image"
@@ -527,27 +527,27 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                 type="Tab"
               >
                 <article
-                  class="general-content"
+                  class="content-general"
                   ctas="[object Object]"
                   type="ContentGeneral"
                 >
                   <section
-                    class="general-content__container"
+                    class="content-general__container"
                   >
                     <div
                       class="flexgrid flexgrid--gutter flexgrid--row-reversed"
                     >
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
                       >
                         <h3
-                          class="general-content__title"
+                          class="content-general__title"
                         >
                            Content general title 2
                         </h3>
                          
                         <p
-                          class="general-content__body"
+                          class="content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                         </p>
@@ -573,10 +573,10 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       </div>
                        
                       <div
-                        class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image"
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
                       >
                         <div
-                          class="general-content__image-wrapper"
+                          class="content-general__image-wrapper"
                         >
                           <img
                             alt="An example image"

@@ -1,10 +1,15 @@
 .general-content{
     @extend .organism;
-    margin-top: $buildingUnit*5;
+}
 
-    .flexgrid--gutter{
-        margin: 0;
-    }
+.general-content__image-wrapper{
+    max-width: 400px;
+    margin: $buildingUnit * 3 auto $buildingUnit * -5 auto;
+}
+
+.general-content__image{
+    width: 75%;
+    margin: 0 auto;
 }
 
 .general-content__item{
@@ -13,33 +18,19 @@
     }
 }
 
-.general-content__image {
-    order: 1;
+@include min-mobile-xl() {
 
-    margin: 0 auto ($buildingUnit * 3 - ($buildingUnit / 2)) auto;
-
-    position: relative;
-    padding: 0 $buildingUnit * 0.5;
-
-    @include min-tablet () {
-        order: inherit;
+    .general-content__image-wrapper{
+        position: absolute;
+        left: $buildingUnit * 0.5;
+        right: $buildingUnit;
+        bottom: $buildingUnit * -5;
         margin: auto;
+        padding: 0 $buildingUnit * 0.5;
     }
-}
 
-.general-content__image-wrapper {
-    width: 75%;
-    margin: 0 auto;
-    @include min-tablet () {
+    .general-content__image{
         width: 100%;
-    }
-}
-
-.general-content__content {
-    order: 2;
-    margin-bottom: -$buildingUnit;
-
-    @include min-tablet () {
-         order: inherit;
+        margin: auto;
     }
 }
