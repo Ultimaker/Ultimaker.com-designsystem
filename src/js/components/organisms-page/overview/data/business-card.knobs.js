@@ -1,5 +1,5 @@
 import {text, files, number, select} from '@storybook/addon-knobs';
-import data from 'organisms-page/overview/data/examples/business-card.js';
+import data from 'organisms-page/overview/data/examples/business-cards.js';
 import {unique, keyValueMap} from 'stories/helpers/functions';
 
 const availableTypes = unique(data.overview.ctas.ctas.map(({type}) => type));
