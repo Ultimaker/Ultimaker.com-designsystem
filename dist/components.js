@@ -2971,11 +2971,11 @@ var _components = __webpack_require__(114);
 
 var _components2 = _interopRequireDefault(_components);
 
-var _directives = __webpack_require__(327);
+var _directives = __webpack_require__(330);
 
 var Directives = _interopRequireWildcard(_directives);
 
-__webpack_require__(329);
+__webpack_require__(332);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -7973,7 +7973,7 @@ var _vuePropertyDecorator = __webpack_require__(1);
 
 var _gsap = __webpack_require__(4);
 
-var _Draggable = __webpack_require__(330);
+var _Draggable = __webpack_require__(333);
 
 var _Draggable2 = _interopRequireDefault(_Draggable);
 
@@ -12061,16 +12061,7 @@ Object.defineProperty(exports, 'Explore', {
   }
 });
 
-var _generalContent = __webpack_require__(284);
-
-Object.defineProperty(exports, 'GeneralContent', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_generalContent).default;
-  }
-});
-
-var _heroBasic = __webpack_require__(287);
+var _heroBasic = __webpack_require__(284);
 
 Object.defineProperty(exports, 'HeroBasic', {
   enumerable: true,
@@ -12079,7 +12070,7 @@ Object.defineProperty(exports, 'HeroBasic', {
   }
 });
 
-var _heroProduct = __webpack_require__(290);
+var _heroProduct = __webpack_require__(287);
 
 Object.defineProperty(exports, 'HeroProduct', {
   enumerable: true,
@@ -12088,7 +12079,7 @@ Object.defineProperty(exports, 'HeroProduct', {
   }
 });
 
-var _heroProductsApplication = __webpack_require__(293);
+var _heroProductsApplication = __webpack_require__(290);
 
 Object.defineProperty(exports, 'HeroProductsApplication', {
   enumerable: true,
@@ -12097,7 +12088,7 @@ Object.defineProperty(exports, 'HeroProductsApplication', {
   }
 });
 
-var _heroText = __webpack_require__(296);
+var _heroText = __webpack_require__(293);
 
 Object.defineProperty(exports, 'HeroText', {
   enumerable: true,
@@ -12106,7 +12097,7 @@ Object.defineProperty(exports, 'HeroText', {
   }
 });
 
-var _heroCover = __webpack_require__(299);
+var _heroCover = __webpack_require__(296);
 
 Object.defineProperty(exports, 'HeroCover', {
   enumerable: true,
@@ -12115,7 +12106,7 @@ Object.defineProperty(exports, 'HeroCover', {
   }
 });
 
-var _sliderReveal = __webpack_require__(302);
+var _sliderReveal = __webpack_require__(299);
 
 Object.defineProperty(exports, 'SliderReveal', {
   enumerable: true,
@@ -12124,7 +12115,7 @@ Object.defineProperty(exports, 'SliderReveal', {
   }
 });
 
-var _subnavigation = __webpack_require__(305);
+var _subnavigation = __webpack_require__(302);
 
 Object.defineProperty(exports, 'Subnavigation', {
   enumerable: true,
@@ -12133,7 +12124,7 @@ Object.defineProperty(exports, 'Subnavigation', {
   }
 });
 
-var _tabbedContent = __webpack_require__(310);
+var _tabbedContent = __webpack_require__(307);
 
 Object.defineProperty(exports, 'Tabbedcontent', {
   enumerable: true,
@@ -12142,7 +12133,7 @@ Object.defineProperty(exports, 'Tabbedcontent', {
   }
 });
 
-var _ubr = __webpack_require__(313);
+var _ubr = __webpack_require__(310);
 
 Object.defineProperty(exports, 'Ubr', {
   enumerable: true,
@@ -12151,7 +12142,7 @@ Object.defineProperty(exports, 'Ubr', {
   }
 });
 
-var _pageDrawer = __webpack_require__(316);
+var _pageDrawer = __webpack_require__(313);
 
 Object.defineProperty(exports, 'PageDrawer', {
   enumerable: true,
@@ -12160,7 +12151,7 @@ Object.defineProperty(exports, 'PageDrawer', {
   }
 });
 
-var _pageFooter = __webpack_require__(318);
+var _pageFooter = __webpack_require__(315);
 
 Object.defineProperty(exports, 'PageFooter', {
   enumerable: true,
@@ -12169,7 +12160,7 @@ Object.defineProperty(exports, 'PageFooter', {
   }
 });
 
-var _pageHeader = __webpack_require__(321);
+var _pageHeader = __webpack_require__(318);
 
 Object.defineProperty(exports, 'PageHeader', {
   enumerable: true,
@@ -12178,12 +12169,30 @@ Object.defineProperty(exports, 'PageHeader', {
   }
 });
 
-var _overview = __webpack_require__(324);
+var _overview = __webpack_require__(321);
 
 Object.defineProperty(exports, 'Overview', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_overview).default;
+  }
+});
+
+var _contentGeneral = __webpack_require__(324);
+
+Object.defineProperty(exports, 'ContentGeneral', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_contentGeneral).default;
+  }
+});
+
+var _LEGACY__generalContent = __webpack_require__(327);
+
+Object.defineProperty(exports, 'GeneralContent', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_LEGACY__generalContent).default;
   }
 });
 
@@ -12748,87 +12757,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _generalContent = __webpack_require__(285);
-
-var _generalContent2 = _interopRequireDefault(_generalContent);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _generalContent2.default;
-
-/***/ }),
-/* 285 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(1);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var GeneralContent = function (_Vue) {
-    _inherits(GeneralContent, _Vue);
-
-    function GeneralContent() {
-        _classCallCheck(this, GeneralContent);
-
-        return _possibleConstructorReturn(this, (GeneralContent.__proto__ || Object.getPrototypeOf(GeneralContent)).apply(this, arguments));
-    }
-
-    return GeneralContent;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "cta", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "reversed", void 0);
-GeneralContent = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'ContentGeneral',
-    template: __webpack_require__(286)
-})], GeneralContent);
-exports.default = GeneralContent;
-
-/***/ }),
-/* 286 */
-/***/ (function(module, exports) {
-
-module.exports = "<article class=\"general-content\">\n    <section class=\"general-content__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 general-content__grid-cell general-content__content\">\n                <h3 class=\"general-content__title\"> {{ title }}</h3>\n                <p class=\"general-content__body\">{{ description }}</p>\n\n                <ContentButton v-bind=\"cta\"\n                       class=\"button\"\n                       v-if=\"cta.type === 'ContentButton' && cta\" />\n\n                <ContentLink v-bind=\"cta\"\n                             class=\"link link--medium\"\n                             v-if=\"cta.type === 'ContentLink' && cta\" />\n            </div>\n            <div class=\"flexgrid__cell--xs-6 general-content__grid-cell general-content__image\">\n                <div class=\"general-content__image-wrapper\">\n                    <c-image v-if=\"image\" v-bind=\"image\"></c-image>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
-
-/***/ }),
-/* 287 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _heroBasic = __webpack_require__(288);
+var _heroBasic = __webpack_require__(285);
 
 var _heroBasic2 = _interopRequireDefault(_heroBasic);
 
@@ -12837,7 +12766,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroBasic2.default;
 
 /***/ }),
-/* 288 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12887,18 +12816,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "ctas", void 0);
 HeroBasic = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'hero-basic',
-    template: __webpack_require__(289)
+    template: __webpack_require__(286)
 })], HeroBasic);
 exports.default = HeroBasic;
 
 /***/ }),
-/* 289 */
+/* 286 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--basic\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <h2 class=\"hero__subtitle\" v-if=\"subtitle\">{{ subtitle }}</h2>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <cta-block :ctas=\"ctas.ctas\" v-if=\"ctas\" styleContentButton=\"button button--primary\"\n                               block=\"hero\" />\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--basic\">\n                    <template v-if=\"image\">\n                        <c-image v-bind=\"image\" keep-in-view></c-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 290 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12908,7 +12837,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroProduct = __webpack_require__(291);
+var _heroProduct = __webpack_require__(288);
 
 var _heroProduct2 = _interopRequireDefault(_heroProduct);
 
@@ -12917,7 +12846,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroProduct2.default;
 
 /***/ }),
-/* 291 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12928,7 +12857,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'hero-product',
-    template: __webpack_require__(292),
+    template: __webpack_require__(289),
     props: {
         title: {
             type: String,
@@ -12962,13 +12891,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 292 */
+/* 289 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--products\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <!--Price table-->\n                    <div class=\"price-table hero__price-table\">\n                        <ul class=\"price-table__list\" role=\"tablist\">\n                            <li class=\"price-table__item\" v-for=\"material in materials\" role=\"tab\">\n                                <icon icon-name=\"material\" class=\"price-table__icon\"></icon>\n                                <span class=\"price-table__info\">\n                                    <small class=\"price-table__tagline\">\n                                        {{ material['short_title'] }},\n                                        {{ material.weight.value }}{{ material.weight.unit }}\n                                        from\n                                    </small>\n                                    <currency :currency-type=\"material.price.currency\" :amount=\"material.price.value\" :decimals=\"0\"></currency>\n                                </span>\n                            </li>\n                        </ul>\n                        <small class=\"price-table__disclaimer\">{{ labels.excludingVat }}</small>\n                    </div>\n                    <!--End price table-->\n\n                    <!--Button-->\n                    <a href=\"\" class=\"button button--primary hero__button\" v-if=\"materials && materials.length\">{{ labels.buyCta }}</a>\n                    <!--End button-->\n\n                    <!--Link list icons-->\n                    <ul class=\"link-list link-list--icon hero__link-list\">\n                        <template v-if=\"documents\">\n                            <li class=\"link-list__item\" v-for=\"link in this.link\">\n                                <content-link :url=\"link.uri\" icon=\"info\">{{ link.title }}</content-link>\n                            </li>\n                        </template>\n                        <template v-if=\"this.documents\">\n                            <li class=\"link-list__item\" v-for=\"document in documents\" v-if=\"document.links\">\n                                <content-link :url=\"document.links.self.href\" icon=\"download\">{{ labels.download}} {{ document.title }}</content-link>\n                            </li>\n                        </template>\n                    </ul>\n                    <!--End link list-->\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--product\">\n                    <template v-if=\"this.image && this.image.length\">\n                        <cms-image :image=\"image[0]\" :orientation=\"'square'\"></cms-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 293 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12978,7 +12907,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroProductsApplication = __webpack_require__(294);
+var _heroProductsApplication = __webpack_require__(291);
 
 var _heroProductsApplication2 = _interopRequireDefault(_heroProductsApplication);
 
@@ -12987,7 +12916,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroProductsApplication2.default;
 
 /***/ }),
-/* 294 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12998,7 +12927,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'hero-products-application',
-    template: __webpack_require__(295),
+    template: __webpack_require__(292),
     props: {
         title: {
             required: true,
@@ -13040,13 +12969,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 295 */
+/* 292 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--products-application\">\n    <div class=\"hero__container--top\">\n            <responsive-picture v-bind=\"heroImage\" imgClass=\"hero__image--full\"></responsive-picture>\n            <div class=\"hero__image-overlay\"></div>\n        <div class=\"container\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__headline\">\n                        <h1>{{ title }}</h1>\n                    </div>\n                </div>\n\n                <div class=\"flexgrid__cell\" style=\"position:relative;\">\n                    <p class=\"hero__subtitle\">{{ subtitle }}</p>\n                    <responsive-picture v-bind=\"productImage\" imgClass=\"hero__image--product\"></responsive-picture>\n                </div>\n\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__usp-container\">\n                        <div class=\"hero__usp usp--icon\" v-for=\"icon in uspIcons\">\n                            <icon :icon-name=\"icon.iconName\" class=\"usp__icon\"></icon>\n                            <small class=\"usp__label\">{{ icon.text }}</small>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!-- {{> molecules-price-table}} -->\n                    <!-- {{> molecules-price-table-tabs}} -->\n                    <!-- {{> atoms-anchor-button:button--primary|hero__button}} -->\n                    <p>TODO: Pricetable</p>\n                    <router-link :to=\"ctaLink.href\" class=\"button button--primary hero__button\">{{  ctaLink.text }}</router-link>\n                    <ul class=\"link-list link-list--icon hero__link-list\" v-if=\"links && links.length\">\n                        <li class=\"link-list__item\" v-for=\"link in links\">\n                            <content-link :url=\"link.href\" :icon=\"link.icon\">{{ link.text }}</content-link>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n";
 
 /***/ }),
-/* 296 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13056,7 +12985,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroText = __webpack_require__(297);
+var _heroText = __webpack_require__(294);
 
 var _heroText2 = _interopRequireDefault(_heroText);
 
@@ -13065,7 +12994,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroText2.default;
 
 /***/ }),
-/* 297 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13076,7 +13005,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'hero-text',
-    template: __webpack_require__(298),
+    template: __webpack_require__(295),
     props: {
         title: {
             type: String,
@@ -13090,13 +13019,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 298 */
+/* 295 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--text\" v-if=\"this.contents && contents.length\" >\n    <div class=\"container\">\n        <h1 v-if=\"title && title.length\">{{ title }}</h1>\n        <div class=\"hero__content content--rich\" v-html=\"contents\" />\n    </div>\n</article>\n\n";
 
 /***/ }),
-/* 299 */
+/* 296 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13106,7 +13035,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroCover = __webpack_require__(300);
+var _heroCover = __webpack_require__(297);
 
 var _heroCover2 = _interopRequireDefault(_heroCover);
 
@@ -13115,7 +13044,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroCover2.default;
 
 /***/ }),
-/* 300 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13176,18 +13105,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], HeroCover.prototype, "image", void 0);
 HeroCover = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'hero-cover',
-    template: __webpack_require__(301)
+    template: __webpack_require__(298)
 })], HeroCover);
 exports.default = HeroCover;
 
 /***/ }),
-/* 301 */
+/* 298 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--cover\">\n    <div class=\"hero-cover__image--full\">\n        <c-image v-if=\"this.image\" v-bind=\"this.image\" resize-behavior=\"crop\"></c-image>\n    </div>\n\n    <div class=\"hero-cover__image--overlay\"></div>\n    <section class=\"hero-cover__container container\">\n        <div class=\"flexgrid__cell--xs-6 hero--cover-reset\">\n            <h1 class=\"hero-cover__headline\">{{ title }}</h1>\n            <p class=\"copy--intro\" v-if=\"description\">{{ description }}</p>\n            <cta-block :ctas=\"ctas.ctas\" v-if=\"ctas\" styleContentButton=\"\"></cta-block>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 302 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13197,7 +13126,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _sliderReveal = __webpack_require__(303);
+var _sliderReveal = __webpack_require__(300);
 
 var _sliderReveal2 = _interopRequireDefault(_sliderReveal);
 
@@ -13206,7 +13135,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _sliderReveal2.default;
 
 /***/ }),
-/* 303 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13226,7 +13155,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'slider-reveal',
-    template: __webpack_require__(304),
+    template: __webpack_require__(301),
     props: {
         styleModifiers: {
             type: Array,
@@ -13341,13 +13270,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 304 */
+/* 301 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"slider-reveal\" v-bind:class=\"styleModifiers\">\n    <section class=\"container slider-reveal__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <h2 class=\"slider-reveal__title\"> {{ title }}</h2>\n                <p v-if=\"!isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"!isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <div ref=\"image-wrapper\" class=\"slider-reveal__image-wrapper\">\n                    <div class=\"slider-reveal__image-aspect\">\n                        <div class=\"slider-reveal__mask\"\n                            ref=\"image-mask\"\n                            v-for=\"image in imageSlider.images\"\n                        >\n                            <responsive-picture v-bind=\"image\" img-class=\"slider-reveal__image\"></responsive-picture>\n                        </div>\n                    </div>\n                </div>\n                <p v-if=\"isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"isMobile && hasLink\" v-bind=\"link\" class=\"link--icon link--large\">{{ link.text }}</content-link>\n            </div>\n        </div>\n    </section>\n</article>";
 
 /***/ }),
-/* 305 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13357,7 +13286,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _subnavigation = __webpack_require__(306);
+var _subnavigation = __webpack_require__(303);
 
 var _subnavigation2 = _interopRequireDefault(_subnavigation);
 
@@ -13366,7 +13295,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _subnavigation2.default;
 
 /***/ }),
-/* 306 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13380,7 +13309,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(1);
 
-var _overflowContainer = __webpack_require__(307);
+var _overflowContainer = __webpack_require__(304);
 
 var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
 
@@ -13422,7 +13351,7 @@ Subnavigation = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = Subnavigation;
 
 /***/ }),
-/* 307 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13432,7 +13361,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _overflowContainer = __webpack_require__(308);
+var _overflowContainer = __webpack_require__(305);
 
 var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
 
@@ -13441,7 +13370,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _overflowContainer2.default;
 
 /***/ }),
-/* 308 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13516,18 +13445,18 @@ var OverflowContainer = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], OverflowContainer.prototype, "items", void 0);
 OverflowContainer = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'OverflowContainer',
-    template: __webpack_require__(309)
+    template: __webpack_require__(306)
 })], OverflowContainer);
 exports.default = OverflowContainer;
 
 /***/ }),
-/* 309 */
+/* 306 */
 /***/ (function(module, exports) {
 
 module.exports = "<nav aria-label=\"sub items\" class=\"overflow-container overflow-container--fixed\" ref=\"subNav\" v-if=\"items\">\n    <ul class=\"overflow-container__list\" :class=\"isTouch ? 'touch' : ''\" role=\"presentation\"  v-if=\"items\">\n        <li class=\"overflow-container__item\" v-for=\"(item, index) in items\" ref=\"listItems\" >\n            <component :is=\"item.type\"\n                       :key=\"index\"\n                       v-bind=\"item\">\n            </component>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
-/* 310 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13537,7 +13466,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tabbedContent = __webpack_require__(311);
+var _tabbedContent = __webpack_require__(308);
 
 var _tabbedContent2 = _interopRequireDefault(_tabbedContent);
 
@@ -13546,7 +13475,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tabbedContent2.default;
 
 /***/ }),
-/* 311 */
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13595,18 +13524,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], TabbedContent.prototype, "subtitle", void 0);
 TabbedContent = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'TabbedContent',
-    template: __webpack_require__(312)
+    template: __webpack_require__(309)
 })], TabbedContent);
 exports.default = TabbedContent;
 
 /***/ }),
-/* 312 */
+/* 309 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"organism tabbed-content\">\n    <section class=\"container\">\n        <div class=\"tabbed-content__header flexgrid__cell--md-8\">\n            <h2 class=\"tabbed-content__title\">{{ title }}</h2>\n            <p class=\"subtitle tabbed-content__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n        </div>\n        <Tabs v-if=\"tabs && tabs.length\" :tabs=\"tabs\" />\n\n        <cta-block :ctas=\"ctas.ctas\"\n                   styleContentButton=\"button\"\n                   v-if=\"ctas\"\n                   block=\"tabbed-content\" />\n    </section>\n</article>\n\n";
 
 /***/ }),
-/* 313 */
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13616,7 +13545,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ubr = __webpack_require__(314);
+var _ubr = __webpack_require__(311);
 
 var _ubr2 = _interopRequireDefault(_ubr);
 
@@ -13625,7 +13554,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _ubr2.default;
 
 /***/ }),
-/* 314 */
+/* 311 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13636,7 +13565,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'ubr',
-    template: __webpack_require__(315),
+    template: __webpack_require__(312),
     props: {
         title: {
             type: String,
@@ -13658,13 +13587,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 315 */
+/* 312 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"ubr\">\n    <section class=\"container\">\n        <h2>{{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"ubr__description\">\n                    <p>{{ description }}</p>\n                    <ul class=\"list ubr__list\">\n                        <li class=\"list__item\" v-for=\"reason of reasons\">{{ reason }}</li>\n                    </ul>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--xs-6\">\n                <template v-if=\"image && image.length\">\n                    <div class=\"ubr__image \">\n                        <cms-image class=\"img--responsive\" :image=\"image[0]\" :orientation=\"'landscape'\"></cms-image>\n                    </div>\n                </template>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 316 */
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13674,7 +13603,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageDrawer = __webpack_require__(317);
+var _pageDrawer = __webpack_require__(314);
 
 var _pageDrawer2 = _interopRequireDefault(_pageDrawer);
 
@@ -13683,7 +13612,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageDrawer2.default;
 
 /***/ }),
-/* 317 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13730,7 +13659,7 @@ PageDrawer = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = PageDrawer;
 
 /***/ }),
-/* 318 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13740,7 +13669,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageFooter = __webpack_require__(319);
+var _pageFooter = __webpack_require__(316);
 
 var _pageFooter2 = _interopRequireDefault(_pageFooter);
 
@@ -13749,7 +13678,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageFooter2.default;
 
 /***/ }),
-/* 319 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13798,18 +13727,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], PageFooter.prototype, "country", void 0);
 PageFooter = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'page-footer',
-    template: __webpack_require__(320)
+    template: __webpack_require__(317)
 })], PageFooter);
 exports.default = PageFooter;
 
 /***/ }),
-/* 320 */
+/* 317 */
 /***/ (function(module, exports) {
 
 module.exports = "<footer class=\"footer\">\n    <div class=\"footer__container\">\n        <div class=\"footer__primary\">\n            <router-link to=\"/\" class=\"branded-logo footer__branded-logo\" aria-label=\"Ultimaker homepage\">\n                <icon class=\"branded-logo__robot\" icon-name=\"robot-ultimaker\"></icon>\n                <icon class=\"branded-logo__logo\" icon-name=\"logo-ultimaker\"></icon>\n            </router-link>\n\n            <footer-nav :navigation=\"navigation\"></footer-nav>\n        </div>\n\n        <div class=\"footer__secondary\">\n            <social-nav></social-nav>\n            <locale-selector class=\"footer__locale-selector\"\n                             v-bind=\"localeSelector\"\n                             :country=\"country\"\n                             v-on=\"$listeners\">\n            </locale-selector>\n        </div>\n\n        <div class=\"footer__tertiary\">\n            <legal-nav class=\"footer__legal\" :navigation=\"legalNavigation.navigation\" :label=\"legalNavigation.label\"></legal-nav>\n        </div>\n    </div>\n</footer>\n";
 
 /***/ }),
-/* 321 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13819,7 +13748,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageHeader = __webpack_require__(322);
+var _pageHeader = __webpack_require__(319);
 
 var _pageHeader2 = _interopRequireDefault(_pageHeader);
 
@@ -13828,7 +13757,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageHeader2.default;
 
 /***/ }),
-/* 322 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13990,18 +13919,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], PageHeader.prototype, "mainNavOpen", void 0);
 PageHeader = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'page-header',
-    template: __webpack_require__(323)
+    template: __webpack_require__(320)
 })], PageHeader);
 exports.default = PageHeader;
 
 /***/ }),
-/* 323 */
+/* 320 */
 /***/ (function(module, exports) {
 
 module.exports = "<header class=\"header\" :class=\"headerClasses\" role=\"banner\" v-size-emitter=\"'header'\">\n    <div class=\"header__top\" :class=\"{'header--mobile-inverted': mainNavOpen}\">\n        <router-link to=\"/\" class=\"home-link\" aria-label=\"Ultimaker homepage\">\n            <icon class=\"home-link__logo\" icon-name=\"logo-ultimaker\"></icon>\n        </router-link>\n\n        <main-nav v-if=\"navigation\" :items=\"navigation\" :main-nav-open=\"mainNavOpen\" v-on=\"$listeners\"></main-nav>\n\n        <sys-nav v-if=\"cta && search\" @open-search=\"openSearch\"\n                 :order-now-icon=\"cta.icon\" :order-now-label=\"cta.label\" :order-now-link=\"cta.url\"\n                 :search-icon=\"search.icon\" :search-label=\"search.label\">\n        </sys-nav>\n\n        <nav-assist class=\"main-nav__nav-assist\" :open-state=\"mainNavOpen\" @toggle=\"navAssistToggle\"></nav-assist>\n\n        <transition name=\"search\" @after-enter=\"handleFocus\" @leave=\"handleFocus\">\n            <search-bar class=\"header__search\"\n                        ref=\"search\"\n                        :label=\"search.label\"\n                        :placeholder=\"search.placeholder\"\n                        :open-state=\"searchOpen\"\n                        @close=\"closeSearch\"\n                        v-if=\"searchOpen\">\n            </search-bar>\n        </transition>\n    </div>\n</header>\n";
 
 /***/ }),
-/* 324 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14011,7 +13940,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _overview = __webpack_require__(325);
+var _overview = __webpack_require__(322);
 
 var _overview2 = _interopRequireDefault(_overview);
 
@@ -14020,7 +13949,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _overview2.default;
 
 /***/ }),
-/* 325 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14069,15 +13998,95 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], Overview.prototype, "ctas", void 0);
 Overview = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'overview',
-    template: __webpack_require__(326)
+    template: __webpack_require__(323)
 })], Overview);
 exports.default = Overview;
+
+/***/ }),
+/* 323 */
+/***/ (function(module, exports) {
+
+module.exports = "<article class=\"organism overview\">\n    <section class=\"container\">\n        <h2 class=\"overview__title\">{{ title }}</h2>\n        <p class=\"subtitle overview__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n\n        <template v-for=\"(section, index) in sections\">\n            <component :is=\"section.type\"\n                   v-bind=\"section\"\n                   :key=\"index\">\n            </component>\n        </template>\n\n        <cta-block :ctas=\"ctas.ctas\"\n                   styleContentButton=\"button\"\n                   v-if=\"ctas\"\n                   block=\"overview\" />\n    </section>\n</article>\n";
+
+/***/ }),
+/* 324 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _contentGeneral = __webpack_require__(325);
+
+var _contentGeneral2 = _interopRequireDefault(_contentGeneral);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _contentGeneral2.default;
+
+/***/ }),
+/* 325 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(1);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GeneralContent = function (_Vue) {
+    _inherits(GeneralContent, _Vue);
+
+    function GeneralContent() {
+        _classCallCheck(this, GeneralContent);
+
+        return _possibleConstructorReturn(this, (GeneralContent.__proto__ || Object.getPrototypeOf(GeneralContent)).apply(this, arguments));
+    }
+
+    return GeneralContent;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "description", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "cta", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "image", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "reversed", void 0);
+GeneralContent = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'ContentGeneral',
+    template: __webpack_require__(326)
+})], GeneralContent);
+exports.default = GeneralContent;
 
 /***/ }),
 /* 326 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"organism overview\">\n    <section class=\"container\">\n        <h2 class=\"overview__title\">{{ title }}</h2>\n        <p class=\"subtitle overview__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n\n        <template v-for=\"(section, index) in sections\">\n            <component :is=\"section.type\"\n                   v-bind=\"section\"\n                   :key=\"index\">\n            </component>\n        </template>\n\n        <cta-block :ctas=\"ctas.ctas\"\n                   styleContentButton=\"button\"\n                   v-if=\"ctas\"\n                   block=\"overview\" />\n    </section>\n</article>\n";
+module.exports = "<article class=\"content-general\">\n    <section class=\"content-general__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 content-general__grid-cell content-general__content\">\n                <h3 class=\"content-general__title\"> {{ title }}</h3>\n                <p class=\"content-general__body\">{{ description }}</p>\n\n                <ContentButton v-bind=\"cta\"\n                       class=\"button\"\n                       v-if=\"cta.type === 'ContentButton' && cta\" />\n\n                <ContentLink v-bind=\"cta\"\n                             class=\"link link--medium\"\n                             v-if=\"cta.type === 'ContentLink' && cta\" />\n            </div>\n            <div class=\"flexgrid__cell--xs-6 content-general__grid-cell content-general__image\">\n                <div class=\"content-general__image-wrapper\">\n                    <c-image v-if=\"image\" v-bind=\"image\"></c-image>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 327 */
@@ -14090,7 +14099,70 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _sizeEmitter = __webpack_require__(328);
+var _generalContent = __webpack_require__(328);
+
+var _generalContent2 = _interopRequireDefault(_generalContent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _generalContent2.default;
+
+/***/ }),
+/* 328 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    name: 'general-content',
+    template: __webpack_require__(329),
+    props: {
+        title: {
+            type: String,
+            required: true
+        },
+        text: {
+            type: Array,
+            required: true,
+            default: function _default() {
+                return [];
+            }
+        },
+        reversed: {
+            type: Boolean,
+            default: false
+        },
+        contentLink: {
+            type: Object
+        },
+        image: {
+            type: Object
+        }
+    }
+};
+
+/***/ }),
+/* 329 */
+/***/ (function(module, exports) {
+
+module.exports = "<article class=\"general-content\">\n    <section class=\"container general-content__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell\">\n                <h2 class=\"general-content__title\"> {{ title }}</h2>\n                <p class=\"general-content__body\" v-for=\"p in text\">{{ p }}</p>\n                <content-link class=\"link\" v-if=\"contentLink\" :block=\"'general-content'\" :url=\"contentLink.href\" :label=\"contentLink.text\">\n                </content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell\">\n                <div class=\"general-content__image-wrapper\">\n                    <responsive-picture v-if=\"image\" v-bind=\"image\"></responsive-picture>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
+
+/***/ }),
+/* 330 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _sizeEmitter = __webpack_require__(331);
 
 Object.defineProperty(exports, 'SizeEmitter', {
   enumerable: true,
@@ -14100,7 +14172,7 @@ Object.defineProperty(exports, 'SizeEmitter', {
 });
 
 /***/ }),
-/* 328 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14210,13 +14282,13 @@ var SizeEmitter = exports.SizeEmitter = function () {
 }();
 
 /***/ }),
-/* 329 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
-/* 330 */
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

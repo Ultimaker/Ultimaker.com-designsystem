@@ -1,9 +1,9 @@
-<article class="general-content">
-    <section class="general-content__container">
+<article class="content-general">
+    <section class="content-general__container">
         <div class="flexgrid flexgrid--gutter" :class="{'flexgrid--row-reversed': reversed}">
-            <div class="flexgrid__cell--xs-6 general-content__grid-cell general-content__content">
-                <h3 class="general-content__title"> {{ title }}</h3>
-                <p class="general-content__body">{{ description }}</p>
+            <div class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content">
+                <h3 class="content-general__title"> {{ title }}</h3>
+                <p class="content-general__body">{{ description }}</p>
 
                 <ContentButton v-bind="cta"
                        class="button"
@@ -13,8 +13,8 @@
                              class="link link--medium"
                              v-if="cta.type === 'ContentLink' && cta" />
             </div>
-            <div class="flexgrid__cell--xs-6 general-content__grid-cell general-content__image">
-                <div class="general-content__image-wrapper">
+            <div class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image">
+                <div class="content-general__image-wrapper">
                     <c-image v-if="image" v-bind="image"></c-image>
                 </div>
             </div>
