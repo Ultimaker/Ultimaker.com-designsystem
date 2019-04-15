@@ -56,7 +56,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                   class="tooltip section-tooltip list-section__tooltip"
                   description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
                   icon="info"
-                  id="tooltip_755"
+                  id="tooltip_745"
                   label="More info"
                   style="display: none;"
                   type="Tooltip"
@@ -68,7 +68,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
               </h3>
                
               <a
-                aria-describedby="tooltip_755"
+                aria-describedby="tooltip_745"
                 class="link list-section__info-link link--reversed link--icon"
                 href="#"
                 role="button"
@@ -486,7 +486,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
             class="cta__block"
           >
             <a
-              class="link--button link--icon button"
+              class="link--primary button"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -502,7 +502,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
               </span>
             </a>
             <a
-              class="link--large link--icon link link--large"
+              class="link--large link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
