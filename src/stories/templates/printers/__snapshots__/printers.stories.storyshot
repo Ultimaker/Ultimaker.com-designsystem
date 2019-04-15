@@ -79,6 +79,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="flyout__title"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1433_0"
 =======
                       id="flyout_title_1115_0"
@@ -86,11 +87,15 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       id="flyout_title_1110_0"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      id="flyout_title_1131_0"
+>>>>>>> fix(general): update snapshotns
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       aria-labelledby="flyout_title_1433_0"
@@ -100,6 +105,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       aria-labelledby="flyout_title_1110_0"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      aria-labelledby="flyout_title_1131_0"
+>>>>>>> fix(general): update snapshotns
                       class="flyout__list"
                     >
                       <li
@@ -182,6 +190,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="flyout__title"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1433_1"
 =======
                       id="flyout_title_1115_1"
@@ -189,12 +198,16 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       id="flyout_title_1110_1"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      id="flyout_title_1131_1"
+>>>>>>> fix(general): update snapshotns
                     >
                       Where is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       aria-labelledby="flyout_title_1433_1"
@@ -204,6 +217,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       aria-labelledby="flyout_title_1110_1"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      aria-labelledby="flyout_title_1131_1"
+>>>>>>> fix(general): update snapshotns
                       class="flyout__list"
                     >
                       <li
@@ -623,6 +639,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="flyout__title"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1433_2"
 =======
                       id="flyout_title_1115_2"
@@ -630,12 +647,16 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       id="flyout_title_1110_2"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      id="flyout_title_1131_2"
+>>>>>>> fix(general): update snapshotns
                     >
                       How is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       aria-labelledby="flyout_title_1433_2"
@@ -645,6 +666,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       aria-labelledby="flyout_title_1110_2"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      aria-labelledby="flyout_title_1131_2"
+>>>>>>> fix(general): update snapshotns
                       class="flyout__list"
                     >
                       <li
@@ -885,6 +909,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="flyout__title"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1512_0"
 =======
                       id="flyout_title_1194_0"
@@ -892,11 +917,15 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       id="flyout_title_1189_0"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      id="flyout_title_1210_0"
+>>>>>>> fix(general): update snapshotns
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       aria-labelledby="flyout_title_1512_0"
@@ -906,6 +935,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       aria-labelledby="flyout_title_1189_0"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      aria-labelledby="flyout_title_1210_0"
+>>>>>>> fix(general): update snapshotns
                       class="flyout__list"
                     >
                       <li
@@ -973,6 +1005,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       id="flyout_title_1512_1"
@@ -982,12 +1015,16 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       id="flyout_title_1189_1"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      id="flyout_title_1210_1"
+>>>>>>> fix(general): update snapshotns
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       aria-labelledby="flyout_title_1512_1"
@@ -997,6 +1034,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       aria-labelledby="flyout_title_1189_1"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      aria-labelledby="flyout_title_1210_1"
+>>>>>>> fix(general): update snapshotns
                       class="flyout__list"
                     >
                       <li
@@ -1163,6 +1203,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="flyout__title"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1512_2"
 =======
                       id="flyout_title_1194_2"
@@ -1170,12 +1211,16 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       id="flyout_title_1189_2"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      id="flyout_title_1210_2"
+>>>>>>> fix(general): update snapshotns
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       aria-labelledby="flyout_title_1512_2"
@@ -1185,6 +1230,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       aria-labelledby="flyout_title_1189_2"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      aria-labelledby="flyout_title_1210_2"
+>>>>>>> fix(general): update snapshotns
                       class="flyout__list"
                     >
                       <li
@@ -1409,6 +1457,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="flyout__title"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1562_0"
 =======
                       id="flyout_title_1244_0"
@@ -1416,11 +1465,15 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       id="flyout_title_1239_0"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      id="flyout_title_1260_0"
+>>>>>>> fix(general): update snapshotns
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       aria-labelledby="flyout_title_1562_0"
@@ -1430,6 +1483,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       aria-labelledby="flyout_title_1239_0"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      aria-labelledby="flyout_title_1260_0"
+>>>>>>> fix(general): update snapshotns
                       class="flyout__list"
                     >
                       <li
@@ -1497,6 +1553,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       id="flyout_title_1562_1"
@@ -1506,12 +1563,16 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       id="flyout_title_1239_1"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      id="flyout_title_1260_1"
+>>>>>>> fix(general): update snapshotns
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       aria-labelledby="flyout_title_1562_1"
@@ -1521,6 +1582,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       aria-labelledby="flyout_title_1239_1"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      aria-labelledby="flyout_title_1260_1"
+>>>>>>> fix(general): update snapshotns
                       class="flyout__list"
                     >
                       <li
@@ -1687,6 +1751,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                       class="flyout__title"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1562_2"
 =======
                       id="flyout_title_1244_2"
@@ -1694,12 +1759,16 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       id="flyout_title_1239_2"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      id="flyout_title_1260_2"
+>>>>>>> fix(general): update snapshotns
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       aria-labelledby="flyout_title_1562_2"
@@ -1709,6 +1778,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
 =======
                       aria-labelledby="flyout_title_1239_2"
 >>>>>>> fix(list-section): correct margin with content-blocks
+=======
+                      aria-labelledby="flyout_title_1260_2"
+>>>>>>> fix(general): update snapshotns
                       class="flyout__list"
                     >
                       <li
@@ -2430,7 +2502,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
             </div>
              
             <a
-              class="brands__link link--large link--icon"
+              class="brands__link link--large"
               href="#/#"
             >
               <!---->
@@ -3223,12 +3295,15 @@ exports[`Storyshots templates|printers Printers 1`] = `
          
         <article
           class="general-content"
+          ctas="[object Object]"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus"
+          type="ContentGeneral"
         >
           <section
             class="container general-content__container"
           >
             <div
-              class="flexgrid flexgrid--gutter"
+              class="flexgrid flexgrid--gutter flexgrid--row-reversed"
             >
               <div
                 class="flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell"
@@ -3236,15 +3311,9 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 <h2
                   class="general-content__title"
                 >
-                   Lorem ipsum dolor sit amet
+                   Content general title
                 </h2>
-                 
-                <p
-                  class="general-content__body"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?
-                </p>
-                 
+                  
                 <!---->
               </div>
                
@@ -3254,24 +3323,27 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 <div
                   class="general-content__image-wrapper"
                 >
-                  <picture>
+                  <picture
+                    alt="An example image"
+                    focusarea="center"
+                    imageformat="png"
+                    mimetype="png"
+                    quality="65"
+                    radius="0"
+                    resizebehavior="fill"
+                    url="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
+                  >
                     <!---->
                      
                     <!---->
                      
-                    <source
-                      media="(min-width: 768px)"
-                      srcset=""
-                    />
-                     
                     <!---->
                      
                     <!---->
                      
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/400/400"
-                    />
+                    <!---->
+                     
+                    <!---->
                      
                     <img
                       alt=""
