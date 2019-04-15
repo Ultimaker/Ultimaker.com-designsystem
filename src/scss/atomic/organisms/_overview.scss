@@ -1,37 +1,13 @@
 .overview {
-    @extend .organism;
-    @extend %reset-last-margin;
-}
-
-.overview__title {
-    text-align: center;
-    position: relative;
-}
-
-.overview__subtitle {
-    text-align: center;
-    position: relative;
-}
-
-.overview__tooltip {
-    @extend %fontPrimary;
-    @include font-line-ratio(prim-s);
-
-    max-width: 296px;
-    position: absolute;
-    opacity: 1;
-    transform: translateY(calc(-100% - 36px));
-
-    &:after {
-        left: $buildingUnit;
+    &__title, &__subtitle {
+        text-align: center;
     }
-}
 
-.tooltip-enter, .tooltip-leave-to {
-    opacity: 0;
-    transform: translateY(calc(-100% - 42px));
-}
-
-.tooltip-enter-active, .tooltip-leave-active {
-    transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultEasing;
+    .cta {
+        &__block {
+            .link--large {
+                padding-left: 0;
+            }
+        }
+    }
 }

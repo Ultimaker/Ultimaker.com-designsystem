@@ -13,11 +13,6 @@
     &__image {
         margin-bottom: $buildingUnit * 2;
 
-        &.img--contain {
-            display: block;
-            height: 148px;
-        }
-
         &.gray-background {
             background-color: $colorGray;
         }
