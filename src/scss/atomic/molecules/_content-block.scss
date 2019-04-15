@@ -1,5 +1,6 @@
 .content-block {
     @extend %reset-last-margin;
+    margin-bottom: $buildingUnit *2;
 }
 
 .content-block-container__image{
