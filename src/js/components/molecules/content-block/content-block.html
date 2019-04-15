@@ -8,9 +8,9 @@
 
         <ContentButton v-bind="cta"
                        class="button"
-                       v-if="cta.type === 'ContentButton' && cta" />
+                       v-if="cta && cta.type === 'ContentButton'" />
         <ContentLink v-bind="cta"
                      class="link link--medium"
-                     v-if="cta.type === 'ContentLink' && cta" />
+                     v-if="cta && cta.type === 'ContentLink'" />
     </div>
 </article>

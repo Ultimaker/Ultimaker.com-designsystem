@@ -45,7 +45,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                 class="list-section__title"
               >
                 Title
-            
+                
                 <span
                   class="list-section__count"
                 >
@@ -62,8 +62,8 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                   type="Tooltip"
                 >
                   
-                        Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed.
-                    
+                            Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed.
+                        
                 </div>
               </h3>
                
@@ -75,8 +75,8 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
               >
                 <!---->
                  
-            More info
-        
+                    More info
+                
               </a>
             </header>
              
@@ -282,7 +282,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                 class="list-section__title"
               >
                 Title
-            
+                
                 <span
                   class="list-section__count"
                 >

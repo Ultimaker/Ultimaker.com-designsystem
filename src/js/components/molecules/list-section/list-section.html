@@ -1,7 +1,16 @@
 <section class="list-section">
-    <header class="list-section__header">
-        <h3 class="list-section__title" v-if="title">{{ title }}
-            <span class="list-section__count">({{cards.length}})</span>
+    <template v-if="title">
+        <header class="list-section__header">
+            <h3 class="list-section__title">{{ title }}
+                <span class="list-section__count">({{cards.length}})</span>
+                <template v-if="tooltip">
+                    <transition name="tooltip">
+                        <tooltip class="section-tooltip" block="list-section" v-show="visibleTooltip" v-bind="tooltip" :id="`tooltip_${ uniqId }`">
+                            {{ tooltip.description }}
+                        </tooltip>
+                    </transition>
+                </template>
+            </h3>
             <template v-if="tooltip">
                 <transition name="tooltip">
                     <tooltip class="section-tooltip" block="list-section" v-show="visibleTooltip" v-bind="tooltip"
@@ -9,20 +18,20 @@
                         {{ tooltip.description }}
                     </tooltip>
                 </transition>
+                <action-button
+                    class="link list-section__info-link"
+                    :icon="tooltip.icon"
+                    mod="reversed"
+                    @click.native.prevent="toggleTooltip"
+                    @blur.native.prevent="hideTooltip"
+                    role="button"
+                    :aria-describedby="`tooltip_${ uniqId }`"
+                    v-if="tooltip">
+                    {{ tooltip.label }}
+                </action-button>
             </template>
-        </h3>
-        <action-button
-            class="link list-section__info-link"
-            :icon="tooltip.icon"
-            mod="reversed"
-            @click.native.prevent="toggleTooltip"
-            @blur.native.prevent="hideTooltip"
-            role="button"
-            :aria-describedby="`tooltip_${ uniqId }`"
-            v-if="tooltip">
-            {{ tooltip.label }}
-        </action-button>
-    </header>
+        </header>
+    </template>
     <ul class="list-section-list" v-if="cards && cards.length > 0" :aria-label="title">
         <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
             <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
