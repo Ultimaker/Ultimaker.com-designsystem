@@ -1,6 +1,6 @@
 {
     "name": "@ultimaker/ultimaker.com-designsystem",
-    "version": "2.2.0",
+    "version": "2.1.0",
     "description": "Ultimaker.com design system for vue components",
     "repository": "github:Ultimaker/Ultimaker.com-designsystem",
     "license": "UNLICENSED",
@@ -45,6 +45,7 @@
         "vuex": "^3.1.0"
     },
     "devDependencies": {
+        "@ultimaker/ultimaker.com-model-definitions": "0.4.0",
         "@storybook/addon-actions": "5.0.6",
         "@storybook/addon-backgrounds": "5.0.6",
         "@storybook/addon-centered": "5.0.6",
@@ -88,7 +89,6 @@
         "jest": "^23.6.0",
         "jest-vue-preprocessor": "^1.4.0",
         "karma": "^1.7.1",
-        "karma-browserstack-launcher": "^1.4.0",
         "karma-chrome-launcher": "^2.2.0",
         "karma-coverage": "^1.1.2",
         "karma-jasmine": "^1.1.2",
@@ -101,6 +101,7 @@
         "mini-css-extract-plugin": "^0.4.5",
         "moment": "^2.24.0",
         "node-sass": "^4.11.0",
+        "puppeteer": "^1.14.0",
         "rimraf": "^2.6.3",
         "sass-loader": "^7.0.1",
         "sass-mix": "^0.1.2",
