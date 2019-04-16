@@ -16,10 +16,13 @@ podTemplate(
       image: 'node:10.15-jessie',
       command: 'cat',
       alwaysPullImage: true,
-      envVars: [
-        secretEnvVar(key: 'BROWSERSTACK_USER', secretName: 'browserstack-credentials', secretKey: 'username'),
-        secretEnvVar(key: 'BROWSERSTACK_ACCESS_KEY', secretName: 'browserstack-credentials', secretKey: 'access-key')
-      ],
+      ttyEnabled: true
+    ),
+    containerTemplate(
+      name: 'puppeteer',
+      image: 'buildkite/puppeteer:1.1.1',
+      command: 'cat',
+      alwaysPullImage: true,
       ttyEnabled: true
     )
   ]
@@ -45,7 +48,7 @@ podTemplate(
             }
           },
           'unit test': {
-            container('node') {
+            container('puppeteer') {
               sh 'npm run unit'
             }
           },
