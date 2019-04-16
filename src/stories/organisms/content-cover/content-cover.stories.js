@@ -11,5 +11,5 @@ storiesOf('organisms|content', module)
         template: require('./content-cover.stories.html')
     }),
     {
-        notes: {markdown: require('./content-cover.stories.md')}
+        notes: require('./content-cover.stories.md')
     });

@@ -16,11 +16,6 @@
                     "url": "/generator/svg/1000/500",
                     "mimeType": "image/svg+xml",
                     "focusArea": "center"
-                },
-                "cta": {
-                    "type": "ContentLink",
-                    "label": "Call me back",
-                    "url": "https://ultimaker.com"
                 }
             }
         },

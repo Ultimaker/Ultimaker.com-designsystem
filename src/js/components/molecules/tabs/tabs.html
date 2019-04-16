@@ -4,9 +4,7 @@
             <li class="tabs__list_item" v-for="(tab, index) in tabs" role="presentation" ref="tab">
                 <a class="tabs__list_link" :class="getLinkClassList(index)" @click.prevent="activeTab = index" :href="'#' + tab.id"
                    role="tab" :aria-controls="tab.id" :aria-selected="activeTab === index">
-                    <span>
-                        {{sequenced ? `${index+1}. ` : ''}}
-                    </span>
+                    <span v-if="sequenced">{{`${index+1}. `}}</span>
                     {{ tab.label }}
                 </a>
             </li>

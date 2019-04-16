@@ -1,24 +1,15 @@
 <article class="content-cover content-cover--cover">
-    <c-image v-if="this.image" v-bind="this.image"></c-image>
+    <c-image v-if="this.image" v-bind="this.image"/>
 
     <div class="content-cover__image--overlay"></div>
 
     <section class="content-cover__container">
         <div class="flexgrid__cell--xs-6 content-cover-content content-cover--cover-reset">
-             <h3 class="content-cover__title">{{ title }}</h3>
-        <p class="content-cover__description" v-if="description">{{ description }}</p>
-        <ContentButton v-bind="cta"
-                   class="content-cover__button button"
-                   v-if="cta.type === 'ContentButton' && cta" />
-
-        <ContentLink v-bind="cta"
-                     class="content-cover__link link link--medium"
-                     v-if="cta.type === 'ContentLink' && cta" />
-
-        <YoutubeLink v-bind="cta"
-                     class="content-cover__link link link--medium"
-                     v-if="cta.type === 'YoutubeLink' && cta" />
+            <h3 class="content-cover__title">{{ title }}</h3>
+            <p class="content-cover__description">{{ description }}</p>
+            <div>
+                <component v-if="cta" v-bind="cta" :is="cta.type" :class="getClassNames(cta.type)"/>
+            </div>
         </div>
     </section>
-
 </article>

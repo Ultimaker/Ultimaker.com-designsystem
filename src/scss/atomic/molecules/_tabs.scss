@@ -1,6 +1,6 @@
 .tabs {
     margin-top: -($buildingUnit / 2);
-    margin-bottom: $buildingUnit * 5;
+    margin-bottom: ($buildingUnit * 5 -($buildingUnit / 2));
 
     &__nav {
         position: relative;
@@ -12,7 +12,6 @@
 
         user-select: none;
         will-change: transform;
-
     }
 
     &__list {
