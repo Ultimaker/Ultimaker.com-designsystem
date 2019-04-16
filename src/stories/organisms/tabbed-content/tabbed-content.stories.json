@@ -22,9 +22,9 @@
                     "mimeType": "png"
                 },
                 "cta": {
-                    "type": "ContentButton",
-                    "label": "Call me back",
-                    "url": "https://ultimaker.com"
+                    "type": "YoutubeLink",
+                    "label": "Watch video",
+                    "youtubeId": "MAovMMKq_ak"
                 },
                 "reversed": false
             }
