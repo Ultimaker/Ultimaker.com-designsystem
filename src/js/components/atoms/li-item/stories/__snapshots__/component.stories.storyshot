@@ -21,14 +21,18 @@ exports[`Storyshots Atoms|list items/li-item card-product 1`] = `
           title="Ultimaker Nylon"
         />
          
-        <img
-          alt="Nylon 3D printed gears"
-          class="img--contain card-product__image img--loading"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          type="Image"
-        />
-         
-        <!---->
+        <div
+          class="card-product__image-container"
+        >
+          <img
+            alt="Nylon 3D printed gears"
+            class="img--contain card-product__image img--loading"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            type="Image"
+          />
+           
+          <!---->
+        </div>
          
         <h3
           class="card-product__heading"

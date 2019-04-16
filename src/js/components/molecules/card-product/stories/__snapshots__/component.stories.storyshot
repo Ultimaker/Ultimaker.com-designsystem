@@ -18,14 +18,18 @@ exports[`Storyshots Molecules|cards/card-product default 1`] = `
         title="Ultimaker Nylon"
       />
        
-      <img
-        alt="Nylon 3D printed gears"
-        class="img--contain card-product__image img--loading"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        type="Image"
-      />
-       
-      <!---->
+      <div
+        class="card-product__image-container"
+      >
+        <img
+          alt="Nylon 3D printed gears"
+          class="img--contain card-product__image img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          type="Image"
+        />
+         
+        <!---->
+      </div>
        
       <h3
         class="card-product__heading"
@@ -100,12 +104,16 @@ exports[`Storyshots Molecules|cards/card-product no image 1`] = `
         title="Ultimaker Nylon"
       />
        
-      <!---->
-       
       <div
-        class="img--contain card-product__image gray-background"
+        class="card-product__image-container"
       >
-        Ultimaker Nylon
+        <!---->
+         
+        <div
+          class="img--contain card-product__image gray-background"
+        >
+          Ultimaker Nylon
+        </div>
       </div>
        
       <h3
@@ -181,12 +189,16 @@ exports[`Storyshots Molecules|cards/card-product no image, no properties 1`] = `
         title="Ultimaker Nylon"
       />
        
-      <!---->
-       
       <div
-        class="img--contain card-product__image gray-background"
+        class="card-product__image-container"
       >
-        Ultimaker Nylon
+        <!---->
+         
+        <div
+          class="img--contain card-product__image gray-background"
+        >
+          Ultimaker Nylon
+        </div>
       </div>
        
       <h3
@@ -221,14 +233,18 @@ exports[`Storyshots Molecules|cards/card-product no properties 1`] = `
         title="Ultimaker Nylon"
       />
        
-      <img
-        alt="Nylon 3D printed gears"
-        class="img--contain card-product__image img--loading"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        type="Image"
-      />
-       
-      <!---->
+      <div
+        class="card-product__image-container"
+      >
+        <img
+          alt="Nylon 3D printed gears"
+          class="img--contain card-product__image img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          type="Image"
+        />
+         
+        <!---->
+      </div>
        
       <h3
         class="card-product__heading"
