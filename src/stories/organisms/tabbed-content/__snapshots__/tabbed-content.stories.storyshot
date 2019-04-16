@@ -175,28 +175,6 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         <!---->
                          
                         <!---->
-                         
-                        <div
-                          class="cta__video link link--medium"
-                        >
-                          <a
-                            class="link link--large link--icon"
-                            href="https://www.youtube.com/watch?v=MAovMMKq_ak"
-                            target="_blank"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
-            Watch video
-        
-                            </span>
-                          </a>
-                           
-                          <!---->
-                        </div>
                       </div>
                        
                       <div
@@ -271,8 +249,6 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
                          
                         <!---->
                       </div>
@@ -351,8 +327,6 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         </a>
                          
                         <!---->
-                         
-                        <!---->
                       </div>
                        
                       <div
@@ -427,8 +401,6 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
                          
                         <!---->
                       </div>
@@ -507,8 +479,6 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         </a>
                          
                         <!---->
-                         
-                        <!---->
                       </div>
                        
                       <div
@@ -585,8 +555,6 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
                       </div>
                        
                       <div
