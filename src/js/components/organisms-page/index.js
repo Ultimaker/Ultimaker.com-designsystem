@@ -20,5 +20,6 @@ export {default as PageHeader} from 'organisms-page/page-header';
 
 export {default as Overview} from 'organisms-page/overview';
 export {default as ContentGeneral} from 'organisms-page/content-general';
-
+export {default as ContentCover} from 'organisms-page/content-cover';
 export {default as GeneralContent} from 'organisms-page/__LEGACY__general-content';
+

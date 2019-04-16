@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|hero Hero cover 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <article
+        class="hero hero--cover"
+      >
+        <div
+          class="hero-cover__image--full"
+        >
+          <img
+            alt="bla bla"
+            class="img--contain img--loading"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          />
+        </div>
+         
+        <div
+          class="hero-cover__image--overlay"
+        />
+         
+        <section
+          class="hero-cover__container container"
+        >
+          <div
+            class="flexgrid__cell--xs-6 hero--cover-reset"
+          >
+            <h1
+              class="hero-cover__headline"
+            >
+              Lorum ipsum dolor sit amet consectetuer
+            </h1>
+             
+            <p
+              class="copy--intro"
+            >
+              Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.
+            </p>
+             
+            <div
+              class="cta__block"
+            >
+              <div
+                class="cta__video"
+              >
+                <a
+                  class="link link--large link--icon"
+                  href="https://www.youtube.com/watch?v=hwhvByj8YG8"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+            Watch video
+        
+                  </span>
+                </a>
+                 
+                <!---->
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+  </section>
+</section>
+`;
