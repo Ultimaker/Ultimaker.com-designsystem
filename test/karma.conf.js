@@ -8,51 +8,17 @@ const getBrowsers = () => {
     if (enableDebug) {
         return [];
     }
-    if (localChrome) {
-        return ['ChromeHeadless'];
-    }
+    process.env.CHROME_BIN = require('puppeteer').executablePath();
 
-    return ['bs_chrome_win'];
+    return ['ChromeHeadless'];
 };
 
-function getKarmaConfig() {
-    if (!localChrome && !enableDebug) {
-        if (process.env.BROWSERSTACK_USER && process.env.BROWSERSTACK_ACCESS_KEY) {
-            return {
-                browserStack: {
-                    username: process.env.BROWSERSTACK_USER,
-                    accessKey: process.env.BROWSERSTACK_ACCESS_KEY
-                }
-            };
-        } else if (fs.existsSync(`${ __dirname }/karma.conf.json`)) {
-            return require('./karma.conf.json');
-        }
-
-        throw new Error('karma.config.json missing and BROWSERSTACK_* environment variables missing');
-    }
-
-    return {};
-}
-
 module.exports = function(config) {
-    const karmaConfig = getKarmaConfig();
-
-    config.set(karmaConfig);
     config.set({
-        // logLevel: config.LOG_DEBUG,
-        customLaunchers: {
-            'bs_chrome_win': {
-                'base': 'BrowserStack',
-                'browser': 'Chrome',
-                'browser_version': '67',
-                'os': 'Windows',
-                'os_version': '10'
-            }
-        },
         browsers: getBrowsers(),
         browserNoActivityTimeout: 30000,
         frameworks: ['jasmine-ajax', 'jasmine'],
-        reporters: (localChrome || enableDebug) ? ['spec', 'coverage'] : ['spec', 'coverage', 'BrowserStack'],
+        reporters: ['spec', 'coverage'],
         specReporter: {
             suppressSkipped: true
         },
