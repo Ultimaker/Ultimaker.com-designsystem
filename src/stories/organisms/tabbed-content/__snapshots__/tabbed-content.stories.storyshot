@@ -172,24 +172,31 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                           Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
                         </p>
                          
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Call me back
-    
-                          </span>
-                        </a>
+                        <!---->
                          
                         <!---->
+                         
+                        <div
+                          class="cta__video link link--medium"
+                        >
+                          <a
+                            class="link link--large link--icon"
+                            href="https://www.youtube.com/watch?v=MAovMMKq_ak"
+                            target="_blank"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+            Watch video
+        
+                            </span>
+                          </a>
+                           
+                          <!---->
+                        </div>
                       </div>
                        
                       <div
@@ -264,6 +271,8 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
     
                           </span>
                         </a>
+                         
+                        <!---->
                          
                         <!---->
                       </div>
@@ -342,6 +351,8 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         </a>
                          
                         <!---->
+                         
+                        <!---->
                       </div>
                        
                       <div
@@ -416,6 +427,8 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
     
                           </span>
                         </a>
+                         
+                        <!---->
                          
                         <!---->
                       </div>
@@ -494,6 +507,8 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         </a>
                          
                         <!---->
+                         
+                        <!---->
                       </div>
                        
                       <div
@@ -570,6 +585,8 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
     
                           </span>
                         </a>
+                         
+                        <!---->
                       </div>
                        
                       <div

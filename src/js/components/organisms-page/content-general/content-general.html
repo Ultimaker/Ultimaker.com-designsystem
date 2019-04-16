@@ -12,6 +12,10 @@
                 <ContentLink v-bind="cta"
                              class="link link--medium"
                              v-if="cta.type === 'ContentLink' && cta" />
+
+                <YoutubeLink v-bind="cta"
+                             class="link link--medium"
+                             v-if="cta.type === 'YoutubeLink' && cta" />
             </div>
             <div class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image">
                 <div class="content-general__image-wrapper">
