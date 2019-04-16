@@ -24,7 +24,8 @@
         }
 
         &.gray-background {
-            background-color: $colorGray;
+            background-color: transparent;
+            padding: $buildingUnit;
         }
     }
 
