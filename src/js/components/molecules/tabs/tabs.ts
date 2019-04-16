@@ -16,6 +16,7 @@ import { Tab as TabInterface } from '@ultimaker/ultimaker.com-model-definitions/
 export default class Tabs extends Vue {
     @Prop({ type: Array, required: true }) tabs!: TabInterface[];
     @Prop({ type: Number, default: 0 }) defaultTab!: number;
+    @Prop({ type: Boolean, required: true }) sequenced!: boolean;
 
     private activeTab: number = 0;
     private viewportUtil = new viewportUtil();

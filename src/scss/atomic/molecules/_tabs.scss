@@ -77,6 +77,10 @@
             color: $colorBlack;
         }
 
+        > span {
+            margin-right: $buildingUnit / 2;
+        }
+
     }
 
     &__indicator {

@@ -1,0 +1,601 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__organism"
+    >
+      <article
+        class="organism tabbed-content"
+      >
+        <section
+          class="container"
+        >
+          <div
+            class="tabbed-content__header flexgrid__cell--md-8"
+          >
+            <h2
+              class="tabbed-content__title"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </h2>
+             
+            <p
+              class="subtitle tabbed-content__subtitle"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit. Vestibulum id ligula porta felis euismod semper.
+            </p>
+          </div>
+           
+          <div
+            class="tabs"
+          >
+            <div
+              class="tabs__nav"
+            >
+              <ul
+                class="tabs__list"
+                role="tablist"
+              >
+                <li
+                  class="tabs__list_item"
+                  role="presentation"
+                >
+                  <a
+                    aria-selected="true"
+                    class="tabs__list_link tabs__list_link--active"
+                    href="#undefined"
+                    role="tab"
+                  >
+                    
+                    Label one
+                
+                  </a>
+                </li>
+                <li
+                  class="tabs__list_item"
+                  role="presentation"
+                >
+                  <a
+                    class="tabs__list_link"
+                    href="#undefined"
+                    role="tab"
+                  >
+                    
+                    Label one
+                
+                  </a>
+                </li>
+                <li
+                  class="tabs__list_item"
+                  role="presentation"
+                >
+                  <a
+                    class="tabs__list_link"
+                    href="#undefined"
+                    role="tab"
+                  >
+                    
+                    Label one with a lot of text
+                
+                  </a>
+                </li>
+                <li
+                  class="tabs__list_item"
+                  role="presentation"
+                >
+                  <a
+                    class="tabs__list_link"
+                    href="#undefined"
+                    role="tab"
+                  >
+                    
+                    Label one
+                
+                  </a>
+                </li>
+                <li
+                  class="tabs__list_item"
+                  role="presentation"
+                >
+                  <a
+                    class="tabs__list_link"
+                    href="#undefined"
+                    role="tab"
+                  >
+                    
+                    Label one
+                
+                  </a>
+                </li>
+                <li
+                  class="tabs__list_item"
+                  role="presentation"
+                >
+                  <a
+                    class="tabs__list_link"
+                    href="#undefined"
+                    role="tab"
+                  >
+                    
+                    Label one
+                
+                  </a>
+                </li>
+                 
+                <li
+                  aria-hidden="true"
+                  class="tabs__indicator"
+                  role="none"
+                />
+              </ul>
+            </div>
+             
+            <div
+              class="tabs__contents"
+            >
+              <div
+                aria-label="Label one"
+                class="tabs__content"
+                id="Label one0"
+                role="tabpanel"
+                type="Tab"
+              >
+                <article
+                  class="content-general"
+                  ctas="[object Object]"
+                  type="ContentGeneral"
+                >
+                  <section
+                    class="content-general__container"
+                  >
+                    <div
+                      class="flexgrid flexgrid--gutter"
+                    >
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                      >
+                        <h3
+                          class="content-general__title"
+                        >
+                           Content general title 1
+                        </h3>
+                         
+                        <p
+                          class="content-general__body"
+                        >
+                          Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                         
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Call me back
+    
+                          </span>
+                        </a>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                      >
+                        <div
+                          class="content-general__image-wrapper"
+                        >
+                          <img
+                            alt="An example image"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+            <div
+              class="tabs__contents"
+            >
+              <div
+                aria-hidden="true"
+                aria-label="Label one"
+                class="tabs__content"
+                id="Label one1"
+                role="tabpanel"
+                style="display: none;"
+                type="Tab"
+              >
+                <article
+                  class="content-general"
+                  ctas="[object Object]"
+                  type="ContentGeneral"
+                >
+                  <section
+                    class="content-general__container"
+                  >
+                    <div
+                      class="flexgrid flexgrid--gutter flexgrid--row-reversed"
+                    >
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                      >
+                        <h3
+                          class="content-general__title"
+                        >
+                           Content general title 2
+                        </h3>
+                         
+                        <p
+                          class="content-general__body"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                        </p>
+                         
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Call me back
+    
+                          </span>
+                        </a>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                      >
+                        <div
+                          class="content-general__image-wrapper"
+                        >
+                          <img
+                            alt="An example image"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+            <div
+              class="tabs__contents"
+            >
+              <div
+                aria-hidden="true"
+                aria-label="Label one with a lot of text"
+                class="tabs__content"
+                id="Label one with a lot of text2"
+                role="tabpanel"
+                style="display: none;"
+                type="Tab"
+              >
+                <article
+                  class="content-general"
+                  ctas="[object Object]"
+                  type="ContentGeneral"
+                >
+                  <section
+                    class="content-general__container"
+                  >
+                    <div
+                      class="flexgrid flexgrid--gutter"
+                    >
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                      >
+                        <h3
+                          class="content-general__title"
+                        >
+                           Content general title 2
+                        </h3>
+                         
+                        <p
+                          class="content-general__body"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                        </p>
+                         
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Call me back
+    
+                          </span>
+                        </a>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                      >
+                        <div
+                          class="content-general__image-wrapper"
+                        >
+                          <img
+                            alt="An example image"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+            <div
+              class="tabs__contents"
+            >
+              <div
+                aria-hidden="true"
+                aria-label="Label one"
+                class="tabs__content"
+                id="Label one3"
+                role="tabpanel"
+                style="display: none;"
+                type="Tab"
+              >
+                <article
+                  class="content-general"
+                  ctas="[object Object]"
+                  type="ContentGeneral"
+                >
+                  <section
+                    class="content-general__container"
+                  >
+                    <div
+                      class="flexgrid flexgrid--gutter flexgrid--row-reversed"
+                    >
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                      >
+                        <h3
+                          class="content-general__title"
+                        >
+                           Content general title 2
+                        </h3>
+                         
+                        <p
+                          class="content-general__body"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                        </p>
+                         
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Call me back
+    
+                          </span>
+                        </a>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                      >
+                        <div
+                          class="content-general__image-wrapper"
+                        >
+                          <img
+                            alt="An example image"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+            <div
+              class="tabs__contents"
+            >
+              <div
+                aria-hidden="true"
+                aria-label="Label one"
+                class="tabs__content"
+                id="Label one4"
+                role="tabpanel"
+                style="display: none;"
+                type="Tab"
+              >
+                <article
+                  class="content-general"
+                  ctas="[object Object]"
+                  type="ContentGeneral"
+                >
+                  <section
+                    class="content-general__container"
+                  >
+                    <div
+                      class="flexgrid flexgrid--gutter flexgrid--row-reversed"
+                    >
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                      >
+                        <h3
+                          class="content-general__title"
+                        >
+                           Content general title 2
+                        </h3>
+                         
+                        <p
+                          class="content-general__body"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                        </p>
+                         
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Call me back
+    
+                          </span>
+                        </a>
+                         
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                      >
+                        <div
+                          class="content-general__image-wrapper"
+                        >
+                          <img
+                            alt="An example image"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+            <div
+              class="tabs__contents"
+            >
+              <div
+                aria-hidden="true"
+                aria-label="Label one"
+                class="tabs__content"
+                id="Label one5"
+                role="tabpanel"
+                style="display: none;"
+                type="Tab"
+              >
+                <article
+                  class="content-general"
+                  ctas="[object Object]"
+                  type="ContentGeneral"
+                >
+                  <section
+                    class="content-general__container"
+                  >
+                    <div
+                      class="flexgrid flexgrid--gutter flexgrid--row-reversed"
+                    >
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                      >
+                        <h3
+                          class="content-general__title"
+                        >
+                           Content general title 2
+                        </h3>
+                         
+                        <p
+                          class="content-general__body"
+                        >
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                        </p>
+                         
+                        <!---->
+                         
+                        <a
+                          class="link link--medium"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Call me back
+    
+                          </span>
+                        </a>
+                      </div>
+                       
+                      <div
+                        class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                      >
+                        <div
+                          class="content-general__image-wrapper"
+                        >
+                          <img
+                            alt="An example image"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+          </div>
+           
+          <!---->
+        </section>
+      </article>
+    </section>
+  </section>
+</section>
+`;
