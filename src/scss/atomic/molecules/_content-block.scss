@@ -4,6 +4,7 @@
 }
 
 .content-block-container__image{
+    background-color: $colorImageFill;
     margin: 0 auto ($buildingUnit * 1.5);
     overflow: hidden;
 
