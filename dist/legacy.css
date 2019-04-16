@@ -261,7 +261,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .materials-card > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--basic > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--basic .hero__description > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--basic .hero__tab-panel > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--basic .hero__link-list > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child {
+.um-components .block > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .materials-card > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--basic > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--basic .hero__description > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--basic .hero__tab-panel > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--basic .hero__link-list > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child {
   margin-bottom: 0; }
 
 .um-components .hero--basic .hero__link--large,
@@ -343,11 +343,11 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .fonts--stage-two .overview__tooltip {
     font-family: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .icon-button--underline-large, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle {
+.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle, .um-components .icon-button--underline-large {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-  .um-components .fonts--stage-one button, .um-components .fonts--stage-one .button, .um-components .fonts--stage-one input[type="button"], .um-components .fonts--stage-one input[type="submit"], .um-components .fonts--stage-one h1, .um-components .fonts--stage-one h2, .um-components .fonts--stage-one h3, .um-components .fonts--stage-one q, .um-components .fonts--stage-one .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .icon-button--underline-large, .um-components .fonts--stage-one .link--large, .um-components .fonts--stage-one .currency, .um-components .fonts--stage-one .main-nav__link, .um-components .fonts--stage-one .search__input, .um-components .fonts--stage-one .header-block__subtitle {
+  .um-components .fonts--stage-one button, .um-components .fonts--stage-one .button, .um-components .fonts--stage-one input[type="button"], .um-components .fonts--stage-one input[type="submit"], .um-components .fonts--stage-one h1, .um-components .fonts--stage-one h2, .um-components .fonts--stage-one h3, .um-components .fonts--stage-one q, .um-components .fonts--stage-one .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .link--large, .um-components .fonts--stage-one .currency, .um-components .fonts--stage-one .main-nav__link, .um-components .fonts--stage-one .search__input, .um-components .fonts--stage-one .header-block__subtitle, .um-components .fonts--stage-one .icon-button--underline-large {
     font-family: "fugue-init", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-  .um-components .fonts--stage-two button, .um-components .fonts--stage-two .button, .um-components .fonts--stage-two input[type="button"], .um-components .fonts--stage-two input[type="submit"], .um-components .fonts--stage-two h1, .um-components .fonts--stage-two h2, .um-components .fonts--stage-two h3, .um-components .fonts--stage-two q, .um-components .fonts--stage-two .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .icon-button--underline-large, .um-components .fonts--stage-two .link--large, .um-components .fonts--stage-two .currency, .um-components .fonts--stage-two .main-nav__link, .um-components .fonts--stage-two .search__input, .um-components .fonts--stage-two .header-block__subtitle {
+  .um-components .fonts--stage-two button, .um-components .fonts--stage-two .button, .um-components .fonts--stage-two input[type="button"], .um-components .fonts--stage-two input[type="submit"], .um-components .fonts--stage-two h1, .um-components .fonts--stage-two h2, .um-components .fonts--stage-two h3, .um-components .fonts--stage-two q, .um-components .fonts--stage-two .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .link--large, .um-components .fonts--stage-two .currency, .um-components .fonts--stage-two .main-nav__link, .um-components .fonts--stage-two .search__input, .um-components .fonts--stage-two .header-block__subtitle, .um-components .fonts--stage-two .icon-button--underline-large {
     font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
@@ -355,7 +355,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #FFFFFF;
   background-color: #24bcf3; }
 
-.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components h6 a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .legal__link a:focus:not(:hover), .um-components .link--small.footer-nav__link a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tooltip__list-item.tooltip__label a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components h6 a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .legal__link a:focus:not(:active), .um-components .link--small.footer-nav__link a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tooltip__list-item.tooltip__label a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .legal__link:focus:not(:hover), .um-components .footer-nav__link:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .legal__link:focus:not(:active), .um-components .footer-nav__link:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .search__input:focus, .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
+.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components h6 a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .legal__link a:focus:not(:hover), .um-components .link--small.footer-nav__link a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tooltip__list-item.tooltip__label a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components h6 a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .legal__link a:focus:not(:active), .um-components .link--small.footer-nav__link a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tooltip__list-item.tooltip__label a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .legal__link:focus:not(:hover), .um-components .footer-nav__link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .legal__link:focus:not(:active), .um-components .footer-nav__link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .search__input:focus, .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
 
 .um-components .color--selected, .um-components .auto-complete__dropdown {
@@ -378,7 +378,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .overview__tooltip {
   font-family: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .icon-button--underline-large, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle {
+.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle, .um-components .icon-button--underline-large {
   font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"] {
@@ -536,9 +536,9 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .footer-nav__title,
 .um-components .notification__title,
 .um-components .link,
-.um-components .toggle,
 .um-components .legal__link,
 .um-components .footer-nav__link,
+.um-components .toggle,
 .um-components .overflow-container__link:hover,
 .um-components .overflow-container__link.exact-active,
 .um-components [type="checkbox"] + label,
@@ -555,11 +555,11 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .caption-list__headline,
 .um-components .caption-list__list-item,
 .um-components .link.link--small,
-.um-components .link--small.toggle,
-.um-components .toggle.legal__link,
 .um-components .legal__link,
 .um-components .link--small.footer-nav__link,
 .um-components .footer-nav__link.legal__link,
+.um-components .link--small.toggle,
+.um-components .toggle.legal__link,
 .um-components .link--small.overflow-container__link:hover,
 .um-components .overflow-container__link.legal__link:hover,
 .um-components .link--small.overflow-container__link.exact-active,
@@ -587,11 +587,11 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .caption-list__headline,
     .um-components .caption-list__list-item,
     .um-components .link.link--small,
-    .um-components .link--small.toggle,
-    .um-components .toggle.legal__link,
     .um-components .legal__link,
     .um-components .link--small.footer-nav__link,
     .um-components .footer-nav__link.legal__link,
+    .um-components .link--small.toggle,
+    .um-components .toggle.legal__link,
     .um-components .link--small.overflow-container__link:hover,
     .um-components .overflow-container__link.legal__link:hover,
     .um-components .link--small.overflow-container__link.exact-active,
@@ -766,91 +766,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   transform-origin: 10px 50%;
   animation: arrowLineAnimateRotated-3 1.2s ease-in-out infinite; }
 
-.um-components .icon-button, .um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button {
-  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-  font-size: 14px;
-  line-height: 21px;
-  display: inline-flex;
-  justify-content: flex-end;
-  padding: 12px;
-  height: 48px;
-  color: #000000;
-  background-color: #FFFFFF;
-  cursor: pointer; }
-  .um-components .icon-button:hover, .um-components .sys-nav__link:hover, .um-components .search__button:hover {
-    color: #000000;
-    background-color: #EAEAEA; }
-  .um-components .icon-button--light, .um-components .modal__close, .um-components .icon-button--light:hover, .um-components .modal__close:hover {
-    color: #FFFFFF;
-    background: rgba(255, 255, 255, 0.08); }
-
-.um-components .icon-button__icon, .um-components .sys-nav__icon, .um-components .social-nav__icon {
-  font-size: 24px; }
-
-.um-components .icon-button__label, .um-components .sys-nav__label {
-  margin: 4px 6px 0 12px;
-  white-space: nowrap;
-  user-select: none; }
-
-.um-components .icon-button--small, .um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button, .um-components .social-nav__link {
-  padding: 6px;
-  height: 36px; }
-
-.um-components .icon-button--large {
-  padding: 18px;
-  width: 60px;
-  height: 60px; }
-
-.um-components .icon-button--round {
-  border-radius: 50% 50%;
-  height: 48px;
-  width: 48px; }
-
-.um-components .icon-button--drop-shadow {
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3); }
-
-.um-components .icon-button--reversed {
-  display: inline-flex;
-  flex-direction: row-reverse; }
-  .um-components .icon-button--reversed .icon-button__label, .um-components .icon-button--reversed .sys-nav__label {
-    margin-left: 6px;
-    margin-right: 12px; }
-  .um-components .icon-button--reversed .icon-button__icon, .um-components .icon-button--reversed .sys-nav__icon, .um-components .icon-button--reversed .social-nav__icon {
-    margin-left: auto; }
-
-.um-components .icon-button--underline-large {
-  font-size: 18px;
-  line-height: 24px;
-  margin-top: 6px;
-  margin-bottom: 24px;
-  display: inline;
-  position: relative;
-  padding-left: 40px;
-  color: #000000; }
-  @media (min-width: 768px) {
-    .um-components .icon-button--underline-large {
-      font-size: 20px;
-      line-height: 24px;
-      margin-top: 5px;
-      margin-bottom: 31px; } }
-  .um-components .icon-button--underline-large, .um-components .icon-button--underline-large:hover {
-    background-color: transparent; }
-  .um-components .icon-button--underline-large .icon-button__icon, .um-components .icon-button--underline-large .sys-nav__icon, .um-components .icon-button--underline-large .social-nav__icon {
-    position: absolute;
-    top: 12px;
-    left: 8px;
-    font-size: 24px; }
-  .um-components .icon-button--underline-large .icon-button__label, .um-components .icon-button--underline-large .sys-nav__label {
-    transition:  background-size 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-    margin: 0;
-    width: calc(100% - 0.1px);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
-  .um-components .icon-button--underline-large:hover .icon-button__label, .um-components .icon-button--underline-large:hover .sys-nav__label, .um-components .icon-button--underline-large:active .icon-button__label, .um-components .icon-button--underline-large:active .sys-nav__label, .um-components .icon-button--underline-large:visited .icon-button__label, .um-components .icon-button--underline-large:visited .sys-nav__label {
-    background-size: 0 100%; }
-
 .um-components ul, .um-components .hero--text .content--rich ul, .um-components .list {
   font-size: 14px;
   line-height: 21px;
@@ -905,17 +820,17 @@ because both families serve another purpose. Therefore the line-heights will be 
   transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
   .um-components a:hover {
     color: #4bc8f5; }
-  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components .examples .examples__tabs .tablist__item a, .um-components small a, .um-components h6 a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .link--small.toggle a, .um-components .toggle.legal__link a, .um-components .legal__link a, .um-components .link--small.footer-nav__link a, .um-components .footer-nav__link.legal__link a, .um-components .link--small.overflow-container__link:hover a, .um-components .overflow-container__link.legal__link:hover a, .um-components .link--small.overflow-container__link.exact-active a, .um-components .overflow-container__link.exact-active.legal__link a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tooltip__list-item.tooltip__label a, .um-components .tag a, .um-components .settings-selector__label a, .um-components .auto-complete__label a, .um-components .tablist__section .tablist a, .um-components .examples .examples__tabs .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .examples .examples__tabs .tablist__headline a, .um-components .hero--products-application .usp--icon .usp__label a, .um-components .overflow-container__label a, .um-components .content--rich li a {
+  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components .examples .examples__tabs .tablist__item a, .um-components small a, .um-components h6 a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .legal__link a, .um-components .link--small.footer-nav__link a, .um-components .footer-nav__link.legal__link a, .um-components .link--small.toggle a, .um-components .toggle.legal__link a, .um-components .link--small.overflow-container__link:hover a, .um-components .overflow-container__link.legal__link:hover a, .um-components .link--small.overflow-container__link.exact-active a, .um-components .overflow-container__link.exact-active.legal__link a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tooltip__list-item.tooltip__label a, .um-components .tag a, .um-components .settings-selector__label a, .um-components .auto-complete__label a, .um-components .tablist__section .tablist a, .um-components .examples .examples__tabs .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .examples .examples__tabs .tablist__headline a, .um-components .hero--products-application .usp--icon .usp__label a, .um-components .overflow-container__label a, .um-components .content--rich li a {
     font-weight: 400; }
 
-.um-components .link, .um-components .toggle, .um-components .legal__link, .um-components .footer-nav__link, .um-components .overflow-container__link:hover, .um-components .overflow-container__link.exact-active {
+.um-components .link, .um-components .legal__link, .um-components .footer-nav__link, .um-components .toggle, .um-components .overflow-container__link:hover, .um-components .overflow-container__link.exact-active {
   display: inline-block;
   margin-right: 12px;
   vertical-align: top;
   user-select: none;
   cursor: pointer;
   color: #000000; }
-  .um-components .link:hover, .um-components .toggle:hover, .um-components .legal__link:hover, .um-components .footer-nav__link:hover, .um-components .overflow-container__link:hover, .um-components .link:active, .um-components .toggle:active, .um-components .legal__link:active, .um-components .footer-nav__link:active, .um-components .overflow-container__link:active:hover, .um-components .overflow-container__link.exact-active:active, .um-components .link:visited, .um-components .toggle:visited, .um-components .legal__link:visited, .um-components .footer-nav__link:visited, .um-components .overflow-container__link:visited:hover, .um-components .overflow-container__link.exact-active:visited {
+  .um-components .link:hover, .um-components .legal__link:hover, .um-components .footer-nav__link:hover, .um-components .toggle:hover, .um-components .overflow-container__link:hover, .um-components .link:active, .um-components .legal__link:active, .um-components .footer-nav__link:active, .um-components .toggle:active, .um-components .overflow-container__link:active:hover, .um-components .overflow-container__link.exact-active:active, .um-components .link:visited, .um-components .legal__link:visited, .um-components .footer-nav__link:visited, .um-components .toggle:visited, .um-components .overflow-container__link:visited:hover, .um-components .overflow-container__link.exact-active:visited {
     color: #000000; }
 
 .um-components .link--large {
@@ -931,7 +846,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-top: 5px;
       margin-bottom: 31px; } }
 
-.um-components .link .link__underline, .um-components .toggle .link__underline, .um-components .legal__link .link__underline, .um-components .footer-nav__link .link__underline, .um-components .overflow-container__link:hover .link__underline, .um-components .overflow-container__link.exact-active .link__underline, .um-components .link--large .link__underline {
+.um-components .link .link__underline, .um-components .legal__link .link__underline, .um-components .footer-nav__link .link__underline, .um-components .toggle .link__underline, .um-components .overflow-container__link:hover .link__underline, .um-components .overflow-container__link.exact-active .link__underline, .um-components .link--large .link__underline {
   width: calc(100% - 0.1px);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -941,19 +856,19 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .link--reversed .link__underline, .um-components .legal__link .link__underline, .um-components .flyout__link .link__underline, .um-components .footer-nav__link .link__underline {
   background-size: 0% 100%; }
 
-.um-components .link .link__underline, .um-components .toggle .link__underline, .um-components .legal__link .link__underline, .um-components .footer-nav__link .link__underline, .um-components .overflow-container__link:hover .link__underline, .um-components .overflow-container__link.exact-active .link__underline {
+.um-components .link .link__underline, .um-components .legal__link .link__underline, .um-components .footer-nav__link .link__underline, .um-components .toggle .link__underline, .um-components .overflow-container__link:hover .link__underline, .um-components .overflow-container__link.exact-active .link__underline {
   background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px); }
 
 .um-components .link--large .link__underline {
   background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
 
-.um-components .link:hover .link__underline, .um-components .toggle:hover .link__underline, .um-components .legal__link:hover .link__underline, .um-components .footer-nav__link:hover .link__underline, .um-components .overflow-container__link:hover .link__underline, .um-components .link:active .link__underline, .um-components .toggle:active .link__underline, .um-components .legal__link:active .link__underline, .um-components .footer-nav__link:active .link__underline, .um-components .overflow-container__link:active:hover .link__underline, .um-components .overflow-container__link.exact-active:active .link__underline, .um-components .link:visited .link__underline, .um-components .toggle:visited .link__underline, .um-components .legal__link:visited .link__underline, .um-components .footer-nav__link:visited .link__underline, .um-components .overflow-container__link:visited:hover .link__underline, .um-components .overflow-container__link.exact-active:visited .link__underline {
+.um-components .link:hover .link__underline, .um-components .legal__link:hover .link__underline, .um-components .footer-nav__link:hover .link__underline, .um-components .toggle:hover .link__underline, .um-components .overflow-container__link:hover .link__underline, .um-components .link:active .link__underline, .um-components .legal__link:active .link__underline, .um-components .footer-nav__link:active .link__underline, .um-components .toggle:active .link__underline, .um-components .overflow-container__link:active:hover .link__underline, .um-components .overflow-container__link.exact-active:active .link__underline, .um-components .link:visited .link__underline, .um-components .legal__link:visited .link__underline, .um-components .footer-nav__link:visited .link__underline, .um-components .toggle:visited .link__underline, .um-components .overflow-container__link:visited:hover .link__underline, .um-components .overflow-container__link.exact-active:visited .link__underline {
   background-size: 0% 100%; }
 
 .um-components .link--reversed:hover .link__underline, .um-components .legal__link:hover .link__underline, .um-components .flyout__link:hover .link__underline, .um-components .footer-nav__link:hover .link__underline, .um-components .link--reversed:active .link__underline, .um-components .legal__link:active .link__underline, .um-components .flyout__link:active .link__underline, .um-components .footer-nav__link:active .link__underline, .um-components .link--reversed:visited .link__underline, .um-components .legal__link:visited .link__underline, .um-components .flyout__link:visited .link__underline, .um-components .footer-nav__link:visited .link__underline {
   background-size: 100% 100%; }
 
-.um-components .link:focus .link__underline, .um-components .toggle:focus .link__underline, .um-components .legal__link:focus .link__underline, .um-components .footer-nav__link:focus .link__underline, .um-components .overflow-container__link:focus:hover .link__underline, .um-components .overflow-container__link.exact-active:focus .link__underline, .um-components .link--reversed:focus .link__underline, .um-components .legal__link:focus .link__underline, .um-components .flyout__link:focus .link__underline, .um-components .footer-nav__link:focus .link__underline {
+.um-components .link:focus .link__underline, .um-components .legal__link:focus .link__underline, .um-components .footer-nav__link:focus .link__underline, .um-components .toggle:focus .link__underline, .um-components .overflow-container__link:focus:hover .link__underline, .um-components .overflow-container__link.exact-active:focus .link__underline, .um-components .link--reversed:focus .link__underline, .um-components .legal__link:focus .link__underline, .um-components .flyout__link:focus .link__underline, .um-components .footer-nav__link:focus .link__underline {
   background-size: 0% 0%; }
 
 .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list {
@@ -1065,12 +980,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .tabbable-dl__desc--vue {
       position: absolute;
       top: 48px; } }
-
-.um-components .toggle {
-  color: #0CA9E3;
-  font-weight: 400; }
-  .um-components .toggle:hover {
-    color: #0CA9E3; }
 
 .um-components .img--contain {
   object-fit: cover;
@@ -1256,11 +1165,11 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components table td .caption-list__headline,
 .um-components table td .caption-list__list-item,
 .um-components table td .link.link--small,
-.um-components table td .link--small.toggle,
-.um-components table td .toggle.legal__link,
 .um-components table td .legal__link,
 .um-components table td .link--small.footer-nav__link,
 .um-components table td .footer-nav__link.legal__link,
+.um-components table td .link--small.toggle,
+.um-components table td .toggle.legal__link,
 .um-components table td .link--small.overflow-container__link:hover,
 .um-components table td .overflow-container__link.legal__link:hover,
 .um-components table td .link--small.overflow-container__link.exact-active,
@@ -1287,11 +1196,11 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components table th .caption-list__headline,
 .um-components table th .caption-list__list-item,
 .um-components table th .link.link--small,
-.um-components table th .link--small.toggle,
-.um-components table th .toggle.legal__link,
 .um-components table th .legal__link,
 .um-components table th .link--small.footer-nav__link,
 .um-components table th .footer-nav__link.legal__link,
+.um-components table th .link--small.toggle,
+.um-components table th .toggle.legal__link,
 .um-components table th .link--small.overflow-container__link:hover,
 .um-components table th .overflow-container__link.legal__link:hover,
 .um-components table th .link--small.overflow-container__link.exact-active,
@@ -3211,7 +3120,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .tabs {
   margin-top: -6px;
-  margin-bottom: 60px; }
+  margin-bottom: 54px; }
   .um-components .tabs__nav {
     position: relative;
     display: flex;
@@ -3257,6 +3166,8 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .tabs__list_link:not:focus:not(:active), .um-components .tabs__list_link:not:focus:not(:hover) {
       background-color: transparent;
       color: #000000; }
+    .um-components .tabs__list_link > span {
+      margin-right: 6px; }
   .um-components .tabs__indicator {
     position: absolute;
     z-index: 1;
@@ -3522,15 +3433,14 @@ because both families serve another purpose. Therefore the line-heights will be 
   width: 296px; }
 
 .um-components .content-block-container__image {
+  width: 75%;
   background-color: transparent;
   margin: 0 auto 18px;
   overflow: hidden; }
-  @media (min-width: 569px) {
+  @media (min-width: 768px) {
     .um-components .content-block-container__image {
-      margin: 0 auto 24px; } }
-
-.um-components .content-block__image {
-  width: 100%; }
+      margin: 0 auto 24px;
+      width: 100%; } }
 
 .um-components .content-block__content {
   width: 100%; }
@@ -3563,7 +3473,98 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .footer-block:not(:empty) {
     padding-bottom: 60px; }
 
-.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--basic:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .colors:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even) {
+.um-components .toggle {
+  color: #0CA9E3;
+  font-weight: 400; }
+  .um-components .toggle:hover {
+    color: #0CA9E3; }
+
+.um-components .icon-button, .um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button {
+  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  font-size: 14px;
+  line-height: 21px;
+  display: inline-flex;
+  justify-content: flex-end;
+  padding: 12px;
+  height: 48px;
+  color: #000000;
+  background-color: #FFFFFF;
+  cursor: pointer; }
+  .um-components .icon-button:hover, .um-components .sys-nav__link:hover, .um-components .search__button:hover {
+    color: #000000;
+    background-color: #EAEAEA; }
+  .um-components .icon-button--light, .um-components .modal__close, .um-components .icon-button--light:hover, .um-components .modal__close:hover {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.08); }
+
+.um-components .icon-button__icon, .um-components .sys-nav__icon, .um-components .social-nav__icon {
+  font-size: 24px; }
+
+.um-components .icon-button__label, .um-components .sys-nav__label {
+  margin: 4px 6px 0 12px;
+  white-space: nowrap;
+  user-select: none; }
+
+.um-components .icon-button--small, .um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button, .um-components .social-nav__link {
+  padding: 6px;
+  height: 36px; }
+
+.um-components .icon-button--large {
+  padding: 18px;
+  width: 60px;
+  height: 60px; }
+
+.um-components .icon-button--round {
+  border-radius: 50% 50%;
+  height: 48px;
+  width: 48px; }
+
+.um-components .icon-button--drop-shadow {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3); }
+
+.um-components .icon-button--reversed {
+  display: inline-flex;
+  flex-direction: row-reverse; }
+  .um-components .icon-button--reversed .icon-button__label, .um-components .icon-button--reversed .sys-nav__label {
+    margin-left: 6px;
+    margin-right: 12px; }
+  .um-components .icon-button--reversed .icon-button__icon, .um-components .icon-button--reversed .sys-nav__icon, .um-components .icon-button--reversed .social-nav__icon {
+    margin-left: auto; }
+
+.um-components .icon-button--underline-large {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 6px;
+  margin-bottom: 24px;
+  display: inline;
+  position: relative;
+  padding-left: 40px;
+  color: #000000; }
+  @media (min-width: 768px) {
+    .um-components .icon-button--underline-large {
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 5px;
+      margin-bottom: 31px; } }
+  .um-components .icon-button--underline-large, .um-components .icon-button--underline-large:hover {
+    background-color: transparent; }
+  .um-components .icon-button--underline-large .icon-button__icon, .um-components .icon-button--underline-large .sys-nav__icon, .um-components .icon-button--underline-large .social-nav__icon {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    font-size: 24px; }
+  .um-components .icon-button--underline-large .icon-button__label, .um-components .icon-button--underline-large .sys-nav__label {
+    transition:  background-size 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    margin: 0;
+    width: calc(100% - 0.1px);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
+  .um-components .icon-button--underline-large:hover .icon-button__label, .um-components .icon-button--underline-large:hover .sys-nav__label, .um-components .icon-button--underline-large:active .icon-button__label, .um-components .icon-button--underline-large:active .sys-nav__label, .um-components .icon-button--underline-large:visited .icon-button__label, .um-components .icon-button--underline-large:visited .sys-nav__label {
+    background-size: 0 100%; }
+
+.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--basic:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .colors:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
 .um-components .hero--basic .hero__subtitle {
@@ -4521,6 +4522,51 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .tabbed-content__subtitle {
   position: relative;
   text-align: center; }
+
+.um-components .content-cover--cover {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px; }
+  .um-components .content-cover--cover-reset p:last-child, .um-components .content-cover--cover-reset strong:last-child, .um-components .content-cover--cover-reset .tablist__section .tablist__item:last-child, .um-components .tablist__section .content-cover--cover-reset .tablist__item:last-child, .um-components .content-cover--cover-reset .examples .examples__tabs .tablist__item:last-child, .um-components .examples .examples__tabs .content-cover--cover-reset .tablist__item:last-child {
+    margin-bottom: 0; }
+
+.um-components .content-cover__image--overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: -6px; }
+  @media (min-width: 768px) {
+    .um-components .content-cover__image--overlay {
+      display: block; } }
+
+.um-components .content-cover-content {
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .um-components .content-cover-content {
+      margin-top: 0;
+      z-index: 40;
+      display: flex;
+      justify-content: center;
+      padding-left: 48px;
+      flex-direction: column;
+      height: 100%;
+      top: 0;
+      position: absolute; } }
+
+@media (min-width: 768px) {
+  .um-components .content-cover__title {
+    color: #FFFFFF; } }
+
+@media (min-width: 768px) {
+  .um-components .content-cover__description {
+    color: #FFFFFF; } }
+
+@media (min-width: 768px) {
+  .um-components .content-cover__link.link, .um-components .content-cover__link.legal__link, .um-components .content-cover__link.footer-nav__link, .um-components .content-cover__link.toggle, .um-components .content-cover__link.overflow-container__link:hover, .um-components .content-cover__link.overflow-container__link.exact-active {
+    color: #FFFFFF; } }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;

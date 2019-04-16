@@ -53,6 +53,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                     href="#undefined"
                     role="tab"
                   >
+                    <!---->
                     
                     Label one
                 
@@ -67,6 +68,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                     href="#undefined"
                     role="tab"
                   >
+                    <!---->
                     
                     Label one
                 
@@ -81,6 +83,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                     href="#undefined"
                     role="tab"
                   >
+                    <!---->
                     
                     Label one with a lot of text
                 
@@ -95,6 +98,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                     href="#undefined"
                     role="tab"
                   >
+                    <!---->
                     
                     Label one
                 
@@ -109,6 +113,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                     href="#undefined"
                     role="tab"
                   >
+                    <!---->
                     
                     Label one
                 
@@ -123,6 +128,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                     href="#undefined"
                     role="tab"
                   >
+                    <!---->
                     
                     Label one
                 

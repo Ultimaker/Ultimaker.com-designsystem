@@ -73,7 +73,6 @@ export default class Tabs extends Vue {
 
     mounted() {
         this.activeTab = this.defaultTab;
-        this.setActiveTab();
         this.viewportUtil.addResizeHandler(this.positionIndicator);
 
         this.$refs.tabList.addEventListener('scroll', this.scrollCorrection);
