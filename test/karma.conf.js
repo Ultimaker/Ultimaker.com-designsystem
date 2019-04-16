@@ -1,4 +1,3 @@
-const fs = require('fs');
 const webpackConfig = require('../webpack.test.config');
 
 const enableDebug = process.argv.indexOf('--debug') > 0,
@@ -8,14 +7,27 @@ const getBrowsers = () => {
     if (enableDebug) {
         return [];
     }
+
+    if (localChrome) {
+        return ['ChromeHeadless'];
+    }
+
     process.env.CHROME_BIN = require('puppeteer').executablePath();
 
-    return ['ChromeHeadless'];
+    return ['ChromeHeadlessNoSandbox'];
 };
 
 module.exports = function(config) {
     config.set({
         browsers: getBrowsers(),
+        logLevel: config.LOG_ERROR,
+        browserConsoleLogOptions: {level: 'feature', format: '%b %T: %m', terminal: true},
+        customLaunchers: {
+            ChromeHeadlessNoSandbox: {
+                base: 'ChromeHeadless',
+                flags: ['--no-sandbox']
+            }
+        },
         browserNoActivityTimeout: 30000,
         frameworks: ['jasmine-ajax', 'jasmine'],
         reporters: ['spec', 'coverage'],
