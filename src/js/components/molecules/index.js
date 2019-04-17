@@ -11,6 +11,7 @@ export {default as Currency} from 'molecules/currency';
 export {default as FauxVerticalScroll} from 'molecules/faux-vertical-scroll';
 export {default as Flyout} from 'molecules/flyout';
 export {default as FlyoutSection} from 'molecules/flyout-section';
+export {default as FooterBlock} from 'molecules/footer-block';
 export {default as FooterNav} from 'molecules/footer-nav';
 export {default as HeaderBlock} from 'molecules/header-block';
 export {default as IconButton} from 'molecules/icon-button';

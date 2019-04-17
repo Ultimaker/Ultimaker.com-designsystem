@@ -12,7 +12,7 @@
                     "url": "https://ultimaker.com"
                 },
                 {
-                    "type": "ContentLink",
+                    "type": "ContentButton",
                     "label": "Call me back",
                     "url": "https://ultimaker.com"
                 }
@@ -23,9 +23,12 @@
                 "type": "ListSection",
                 "title": "Title",
                 "limit": {
-                    "largeScreen": 6
+                    "largeScreen": 3,
+                    "smallScreen": 3
                 },
-                "showAllLabel": "Show all",
+                "expand": {
+                    "label": "Show all"
+                },
                 "cards": [
                     {
                         "type": "ContentBlock",
@@ -41,9 +44,9 @@
                             "focusArea": "center",
                             "backgroundColor": null
                         },
-                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
-                            "type": "ContentLink",
+                            "type": "ContentButton",
                             "label": "Visit website",
                             "url": "https://ultimaker.com"
 
@@ -64,9 +67,9 @@
                             "focusArea": "center",
                             "backgroundColor": null
                         },
-                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
-                            "type": "ContentLink",
+                            "type": "ContentButton",
                             "label": "Visit website",
                             "url": "https://ultimaker.com"
 
@@ -87,7 +90,7 @@
                             "focusArea": "center",
                             "backgroundColor": null
                         },
-                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
                             "type": "ContentButton",
                             "label": "Visit website",
@@ -107,9 +110,12 @@
                 "type": "ListSection",
                 "title": "Title",
                 "limit": {
+                    "largeScreen": 3,
                     "smallScreen": 3
                 },
-                "showAllLabel": "Show all",
+                "expand": {
+                    "label": "Show all"
+                },
                 "cards": [
                     {
                         "type": "ContentBlock",
@@ -125,9 +131,9 @@
                             "focusArea": "center",
                             "backgroundColor": null
                         },
-                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
-                            "type": "ContentLink",
+                            "type": "ContentButton",
                             "label": "Visit website",
                             "url": "https://ultimaker.com"
 
@@ -148,9 +154,9 @@
                             "focusArea": "center",
                             "backgroundColor": null
                         },
-                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
-                            "type": "ContentLink",
+                            "type": "ContentButton",
                             "label": "Visit website",
                             "url": "https://ultimaker.com"
 
@@ -171,7 +177,7 @@
                             "focusArea": "center",
                             "backgroundColor": null
                         },
-                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
                             "type": "ContentButton",
                             "label": "Visit website",
@@ -193,7 +199,7 @@
                             "focusArea": "center",
                             "backgroundColor": null
                         },
-                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
                             "type": "ContentButton",
                             "label": "Visit website",
@@ -214,7 +220,7 @@
                             "focusArea": "center",
                             "backgroundColor": null
                         },
-                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
                             "type": "ContentButton",
                             "label": "Visit website",
@@ -235,9 +241,9 @@
                             "focusArea": "center",
                             "backgroundColor": null
                         },
-                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
-                            "type": "ContentButton",
+                            "type": "YoutubeLink",
                             "label": "Visit website",
                             "url": "https://ultimaker.com"
 

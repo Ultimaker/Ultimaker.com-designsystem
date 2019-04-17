@@ -31,8 +31,6 @@ export default () => ({
         sections: data.overview.sections.map((section, index) => ({
             ... section,
             title: text(`List-section ${index} - title`, section.title),
-            limit: number(`List-section ${index} - limit`, section.limit),
-            showAllLabel: text(`List-section ${index} - label`, section.showAllLabel),
             tooltip: defineTooltip(section.tooltip, index),
         })),
     },
