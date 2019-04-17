@@ -4,6 +4,7 @@ import data from './tabbed-content.stories.json';
 export default () => ({
     ... data,
     TabbedContent: {
+        ... data.TabbedContent,
         title: text('Tabbed-content - title', data.TabbedContent.title),
         subtitle: text('Tabbed-content - subtitle', data.TabbedContent.subtitle),
         tabs: data.TabbedContent.tabs.map((tab, i) => {
