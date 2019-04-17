@@ -12,25 +12,26 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
     >
       <article
         class="organism tabbed-content"
+        type="TabbedContent"
       >
         <section
           class="container"
         >
-          <div
-            class="tabbed-content__header flexgrid__cell--md-8"
+          <header
+            class="header-block header-block--subtitle"
           >
             <h2
-              class="tabbed-content__title"
+              class="header-block__title"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h2>
              
             <p
-              class="subtitle tabbed-content__subtitle"
+              class="header-block__subtitle"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit. Vestibulum id ligula porta felis euismod semper.
             </p>
-          </div>
+          </header>
            
           <div
             class="tabs"
@@ -577,7 +578,46 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
             </div>
           </div>
            
-          <!---->
+          <footer
+            class="footer-block"
+          >
+            <div
+              class="cta__block"
+            >
+              <a
+                class="link--primary button"
+                href="https://ultimaker.com"
+                rel="noopener"
+                target="_self"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Call me back
+    
+                </span>
+              </a>
+              <a
+                class="link--large link"
+                href="https://ultimaker.com"
+                rel="noopener"
+                target="_self"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Call me back
+    
+                </span>
+              </a>
+            </div>
+          </footer>
         </section>
       </article>
     </section>

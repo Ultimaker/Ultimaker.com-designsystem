@@ -34,7 +34,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
           </header>
            
           <section
-            class="list-section businesscard"
+            class="list-section list-section--cards"
             showalllabel="Show all"
             type="ListSection"
           >
@@ -264,14 +264,10 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               <!---->
             </ul>
              
-            <footer
-              class="list-section__footer"
-            >
-              <!---->
-            </footer>
+            <!---->
           </section>
           <section
-            class="list-section businesscard"
+            class="list-section list-section--cards"
             showalllabel="Show all"
             type="ListSection"
           >
@@ -909,49 +905,49 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               <!---->
             </ul>
              
-            <footer
-              class="list-section__footer"
-            >
-              <!---->
-            </footer>
+            <!---->
           </section>
            
-          <div
-            class="cta__block"
+          <footer
+            class="footer-block"
           >
-            <a
-              class="link--primary button"
-              href="https://ultimaker.com"
-              rel="noopener"
-              target="_self"
+            <div
+              class="cta__block"
             >
-              <!---->
-               
-              <span
-                class="link__underline"
+              <a
+                class="link--primary button"
+                href="https://ultimaker.com"
+                rel="noopener"
+                target="_self"
               >
-                
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
         Call me back
     
-              </span>
-            </a>
-            <a
-              class="link--large link"
-              href="https://ultimaker.com"
-              rel="noopener"
-              target="_self"
-            >
-              <!---->
-               
-              <span
-                class="link__underline"
+                </span>
+              </a>
+              <a
+                class="link--large link"
+                href="https://ultimaker.com"
+                rel="noopener"
+                target="_self"
               >
-                
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
         Call me back
     
-              </span>
-            </a>
-          </div>
+                </span>
+              </a>
+            </div>
+          </footer>
         </section>
       </article>
     </section>

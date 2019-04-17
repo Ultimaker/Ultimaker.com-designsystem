@@ -1,6 +1,6 @@
 .tabs {
-
     margin-top: -($buildingUnit / 2);
+    margin-bottom: $buildingUnit * 5;
 
     &__nav {
         position: relative;

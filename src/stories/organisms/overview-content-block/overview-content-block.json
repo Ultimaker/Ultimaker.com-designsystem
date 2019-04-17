@@ -12,7 +12,7 @@
                     "url": "https://ultimaker.com"
                 },
                 {
-                    "type": "ContentButton",
+                    "type": "ContentLink",
                     "label": "Call me back",
                     "url": "https://ultimaker.com"
                 }

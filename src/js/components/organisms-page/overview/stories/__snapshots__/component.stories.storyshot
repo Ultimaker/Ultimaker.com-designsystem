@@ -15,7 +15,7 @@ exports[`Storyshots organisms|overview card-product 1`] = `
         class="container"
       >
         <header
-          class="header-block"
+          class="header-block header-block--subtitle"
         >
           <h2
             class="header-block__title"
@@ -23,11 +23,15 @@ exports[`Storyshots organisms|overview card-product 1`] = `
             Explore the benefits of each material
           </h2>
            
-          <!---->
+          <p
+            class="header-block__subtitle"
+          >
+            Or just get a subtitle
+          </p>
         </header>
          
         <section
-          class="list-section cardproduct"
+          class="list-section list-section--cards"
           type="list-section"
         >
           <!---->
@@ -620,14 +624,49 @@ exports[`Storyshots organisms|overview card-product 1`] = `
             <!---->
           </ul>
            
-          <footer
-            class="list-section__footer"
-          >
-            <!---->
-          </footer>
+          <!---->
         </section>
          
-        <!---->
+        <footer
+          class="footer-block"
+        >
+          <div
+            class="cta__block"
+          >
+            <a
+              class="link--primary button"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+            <a
+              class="link--primary button"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+          </div>
+        </footer>
       </section>
     </article>
   </section>

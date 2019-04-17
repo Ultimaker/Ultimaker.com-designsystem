@@ -57,7 +57,9 @@
         }
 
         .list-section-list + .list-section__footer {
-            margin-top: $buildingUnit;
+            margin-top: $buildingUnit * 2;
+
+            margin-bottom: $buildingUnit * 5;
             @include min-tablet() {
                 margin-top: $buildingUnit * 2;
             }
@@ -86,6 +88,13 @@
 
             @include min-tablet() {
                 margin-bottom: $buildingUnit * 5;
+            }
+        }
+
+        .list-section-list + .list-section__footer {
+            margin-bottom: $buildingUnit * 5;
+            @include min-tablet() {
+                margin-bottom: 0;
             }
         }
 
