@@ -41,7 +41,8 @@ export default class ListSection extends Vue implements IListSection {
     defineCardTypesClass () {
         if (this.cards && this.cards.length) {
             // @ts-ignore
-            return unique(this.cards.map((card:any) => card.type.toLowerCase()));
+            const values = unique(this.cards.map((card:any) => card.type.toLowerCase()));
+            return values.map(val => val.match('card') ? 'list-section--cards' : 'list-section--blocks');
         }
         return '';
     }

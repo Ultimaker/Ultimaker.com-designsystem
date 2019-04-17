@@ -55,8 +55,9 @@
             </div>
         </transition-group>
     </ul>
-    <footer class="list-section__footer">
-        <button v-if="cards.length > showMax && showMax && !showHiddenItems" @click="showHidden"
+    <footer class="list-section__footer"
+            v-if="cards.length > showMax && showMax && !showHiddenItems">
+        <button @click="showHidden"
                 class="button--secondary list-section__footer__button">{{ showCount() }}
         </button>
     </footer>

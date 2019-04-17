@@ -1,35 +1,4 @@
 .list-section {
-
-
-    &__count {
-        color: $colorGrayDark;
-        font-size: .75em;
-
-        .list-section-list__button {
-            margin-bottom: $buildingUnit * 2;
-        }
-    }
-
-    &.contentblock {
-        margin-bottom: -$buildingUnit*2.5;
-    }
-
-    &:not(:last-child) {
-        margin-bottom: 53px;
-    }
-
-    &__footer {
-        text-align: center;
-
-        &__button {
-            margin-top: $buildingUnit * 3;
-
-            @include min-mobile-xl {
-                margin-top: $buildingUnit * 4;
-            }
-        }
-    }
-
     &__header {
         margin-bottom: 26px;
 
@@ -42,16 +11,8 @@
         }
     }
 
-    &__info-link {
-        margin-bottom: 0;
-
-        @include min-mobile-xl {
-            margin-left: $buildingUnit * 2;
-        }
-    }
-
-    &__title {
-        margin-bottom: 12px;
+     &__title {
+        margin-bottom: $buildingUnit;
     }
 
     &__tooltip {
@@ -67,26 +28,48 @@
             left: $buildingUnit;
         }
     }
-}
 
-.list-section-list {
-    @extend %reset-list;
 
-    // offset margin-top on the first row of the items in the flexbox
-    margin-top: -$buildingUnit;
 
-    @include min-mobile-xl {
-        margin-top: -$buildingUnit * 2;
+    &-list {
+        @extend %reset-list;
     }
 
-    &__item {
-        margin-top: $buildingUnit;
+    &--cards {
+
+        .list-section-list {
+
+        }
+    }
+
+    &--blocks {
+        .list-section-list {
+
+        }
+    }
+
+    &__count {
+        color: $colorGrayDark;
+        font-size: .75em;
+
+        .list-section-list__button {
+            margin-bottom: $buildingUnit * 2;
+        }
+    }
+
+    &__footer {
+        text-align: center;
+    }
+
+    &__info-link {
+        margin-bottom: 0;
 
         @include min-mobile-xl {
-            margin-top: $buildingUnit * 2;
+            margin-left: $buildingUnit * 2;
         }
     }
 }
+
 
 .tooltip-enter, .tooltip-leave-to {
     opacity: 0;
