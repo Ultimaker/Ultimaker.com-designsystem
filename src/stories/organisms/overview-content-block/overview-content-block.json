@@ -243,7 +243,7 @@
                         },
                         "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
                         "cta": {
-                            "type": "YoutubeLink",
+                            "type": "ContentLink",
                             "label": "Visit website",
                             "url": "https://ultimaker.com"
 
