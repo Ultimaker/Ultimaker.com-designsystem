@@ -1,7 +1,5 @@
 .list-section {
-    &:not(:last-child) {
-        margin-bottom: 53px;
-    }
+
 
     &__count {
         color: $colorGrayDark;
@@ -14,6 +12,10 @@
 
     &.contentblock {
         margin-bottom: -$buildingUnit*2.5;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 53px;
     }
 
     &__footer {
