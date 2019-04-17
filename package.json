@@ -1,6 +1,6 @@
 {
     "name": "@ultimaker/ultimaker.com-designsystem",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "description": "Ultimaker.com design system for vue components",
     "repository": "github:Ultimaker/Ultimaker.com-designsystem",
     "license": "UNLICENSED",
@@ -61,7 +61,7 @@
         "@types/jest": "^23.3.14",
         "@types/node": "^10.12.23",
         "@types/requirejs": "^2.1.31",
-        "@ultimaker/ultimaker.com-model-definitions": "github:ultimaker/ultimaker.com-model-definitions#feature/UWEB-5225-card-product",
+        "@ultimaker/ultimaker.com-model-definitions": "1.0.0",
         "babel-core": "^6.26.3",
         "babel-eslint": "8.0.1",
         "babel-jest": "^23.6.0",
