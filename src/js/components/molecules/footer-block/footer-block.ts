@@ -6,5 +6,5 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 })
 
 export default class FooterBlock extends Vue {
-    @Prop({ type: String, required: false }) ctas?: object;
+    @Prop({ type: Object, required: false }) ctas?: object;
 }

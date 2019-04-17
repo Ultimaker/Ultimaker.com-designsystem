@@ -7,6 +7,22 @@ import cardNoImageNoProperties from 'molecules/card-product/data/examples/card-p
 export default {
     type: 'overview',
     title: 'Explore the benefits of each material',
+    subtitle: 'Or just get a subtitle',
+    ctas: {
+        type: 'CtaBlock',
+        ctas: [
+            {
+                type: 'ContentButton',
+                label: 'Call me back',
+                url: 'https://ultimaker.com'
+            },
+            {
+                type: 'ContentButton',
+                label: 'Call me back',
+                url: 'https://ultimaker.com'
+            }
+        ]
+    },
     sections: [
         {
             type: 'list-section',
