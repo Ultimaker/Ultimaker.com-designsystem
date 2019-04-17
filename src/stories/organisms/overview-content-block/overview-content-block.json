@@ -178,6 +178,70 @@
                             "url": "https://ultimaker.com"
 
                         }
+                    },
+                    {
+                        "type": "ContentBlock",
+                        "title": "Ultimaker",
+                        "image": {
+                            "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                            "alt": "An example image",
+                            "mimeType": "",
+                            "quality": 65,
+                            "radius": 0,
+                            "imageFormat": "png",
+                            "resizeBehavior": "fill",
+                            "focusArea": "center",
+                            "backgroundColor": null
+                        },
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "cta": {
+                            "type": "ContentButton",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        }
+                    },{
+                        "type": "ContentBlock",
+                        "title": "Ultimaker",
+                        "image": {
+                            "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                            "alt": "An example image",
+                            "mimeType": "",
+                            "quality": 65,
+                            "radius": 0,
+                            "imageFormat": "png",
+                            "resizeBehavior": "fill",
+                            "focusArea": "center",
+                            "backgroundColor": null
+                        },
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "cta": {
+                            "type": "ContentButton",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        }
+                    },{
+                        "type": "ContentBlock",
+                        "title": "Ultimaker",
+                        "image": {
+                            "url": "https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
+                            "alt": "An example image",
+                            "mimeType": "",
+                            "quality": 65,
+                            "radius": 0,
+                            "imageFormat": "png",
+                            "resizeBehavior": "fill",
+                            "focusArea": "center",
+                            "backgroundColor": null
+                        },
+                        "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
+                        "cta": {
+                            "type": "ContentButton",
+                            "label": "Visit website",
+                            "url": "https://ultimaker.com"
+
+                        }
                     }
                 ]
             }
