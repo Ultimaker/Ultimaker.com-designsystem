@@ -77,37 +77,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1122_0"
-=======
-                      id="flyout_title_835_0"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_830_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_820_0"
->>>>>>> fix(general): update snapshotns
+                      id="flyout_title_1133_0"
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1122_0"
-=======
-                      aria-labelledby="flyout_title_835_0"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_830_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_820_0"
->>>>>>> fix(general): update snapshotns
+                      aria-labelledby="flyout_title_1133_0"
                       class="flyout__list"
                     >
                       <li
@@ -188,38 +164,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1122_1"
-=======
-                      id="flyout_title_835_1"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_830_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_820_1"
->>>>>>> fix(general): update snapshotns
+                      id="flyout_title_1133_1"
                     >
                       Where is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1122_1"
-=======
-                      aria-labelledby="flyout_title_835_1"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_830_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_820_1"
->>>>>>> fix(general): update snapshotns
+                      aria-labelledby="flyout_title_1133_1"
                       class="flyout__list"
                     >
                       <li
@@ -637,38 +589,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1122_2"
-=======
-                      id="flyout_title_835_2"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_830_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_820_2"
->>>>>>> fix(general): update snapshotns
+                      id="flyout_title_1133_2"
                     >
                       How is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1122_2"
-=======
-                      aria-labelledby="flyout_title_835_2"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_830_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_820_2"
->>>>>>> fix(general): update snapshotns
+                      aria-labelledby="flyout_title_1133_2"
                       class="flyout__list"
                     >
                       <li
@@ -907,37 +835,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1201_0"
-=======
-                      id="flyout_title_914_0"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_909_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_899_0"
->>>>>>> fix(general): update snapshotns
+                      id="flyout_title_1212_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1201_0"
-=======
-                      aria-labelledby="flyout_title_914_0"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_909_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_899_0"
->>>>>>> fix(general): update snapshotns
+                      aria-labelledby="flyout_title_1212_0"
                       class="flyout__list"
                     >
                       <li
@@ -1005,38 +909,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1201_1"
-=======
-                      id="flyout_title_914_1"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_909_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_899_1"
->>>>>>> fix(general): update snapshotns
+                      id="flyout_title_1212_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1201_1"
-=======
-                      aria-labelledby="flyout_title_914_1"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_909_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_899_1"
->>>>>>> fix(general): update snapshotns
+                      aria-labelledby="flyout_title_1212_1"
                       class="flyout__list"
                     >
                       <li
@@ -1201,38 +1081,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1201_2"
-=======
-                      id="flyout_title_914_2"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_909_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_899_2"
->>>>>>> fix(general): update snapshotns
+                      id="flyout_title_1212_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1201_2"
-=======
-                      aria-labelledby="flyout_title_914_2"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_909_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_899_2"
->>>>>>> fix(general): update snapshotns
+                      aria-labelledby="flyout_title_1212_2"
                       class="flyout__list"
                     >
                       <li
@@ -1455,37 +1311,13 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1251_0"
-=======
-                      id="flyout_title_964_0"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_959_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_949_0"
->>>>>>> fix(general): update snapshotns
+                      id="flyout_title_1262_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1251_0"
-=======
-                      aria-labelledby="flyout_title_964_0"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_959_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_949_0"
->>>>>>> fix(general): update snapshotns
+                      aria-labelledby="flyout_title_1262_0"
                       class="flyout__list"
                     >
                       <li
@@ -1553,38 +1385,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1251_1"
-=======
-                      id="flyout_title_964_1"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_959_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_949_1"
->>>>>>> fix(general): update snapshotns
+                      id="flyout_title_1262_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1251_1"
-=======
-                      aria-labelledby="flyout_title_964_1"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_959_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_949_1"
->>>>>>> fix(general): update snapshotns
+                      aria-labelledby="flyout_title_1262_1"
                       class="flyout__list"
                     >
                       <li
@@ -1749,38 +1557,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1251_2"
-=======
-                      id="flyout_title_964_2"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_959_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_949_2"
->>>>>>> fix(general): update snapshotns
+                      id="flyout_title_1262_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1251_2"
-=======
-                      aria-labelledby="flyout_title_964_2"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_959_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_949_2"
->>>>>>> fix(general): update snapshotns
+                      aria-labelledby="flyout_title_1262_2"
                       class="flyout__list"
                     >
                       <li
