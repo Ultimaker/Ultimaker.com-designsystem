@@ -62,17 +62,10 @@ exports[`Storyshots Atoms|buttons Content toggle 1`] = `
   <section
     class="story"
   >
-    <a
-      class="toggle toggle--icon"
-      role="button"
-      tabindex="0"
-    >
-      <!---->
-       
-      <span>
-        More
-      </span>
-    </a>
+    <content-toggle
+      collapsed-icon="angle-down"
+      expanded-icon="angle-up"
+    />
   </section>
 </section>
 `;

@@ -10,37 +10,9 @@ exports[`Storyshots Molecules|tags/tag-list tag-list 1`] = `
     <section
       class="stories__molecules"
     >
-      <ul
-        class="tag-list__list list"
-      >
-        <li
-          class="tag-list__item list_item"
-        >
-          <label
-            class="tag"
-          >
-            Label one
-          </label>
-        </li>
-        <li
-          class="tag-list__item list_item"
-        >
-          <label
-            class="tag"
-          >
-            Label two
-          </label>
-        </li>
-        <li
-          class="tag-list__item list_item"
-        >
-          <label
-            class="tag"
-          >
-            Label extra long
-          </label>
-        </li>
-      </ul>
+      <tag-list
+        tags="[object Object],[object Object],[object Object]"
+      />
     </section>
   </section>
 </section>

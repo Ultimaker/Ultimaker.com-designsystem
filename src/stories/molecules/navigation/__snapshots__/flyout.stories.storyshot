@@ -18,14 +18,14 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-            id="flyout_title_721_0"
+            id="flyout_title_693_0"
           >
             Flyout title one
           </strong>
            
           <ul
             aria-expanded="true"
-            aria-labelledby="flyout_title_721_0"
+            aria-labelledby="flyout_title_693_0"
             class="flyout__list"
           >
             <li
@@ -51,18 +51,10 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
               style="display: none;"
             >
-              <a
+              <content-toggle
                 aria-hidden="true"
-                class="toggle toggle--icon flyout__toggle"
-                role="button"
-                tabindex="0"
-              >
-                <!---->
-                 
-                <span>
-                  More
-                </span>
-              </a>
+                class="flyout__toggle"
+              />
             </li>
              
             <!---->
@@ -71,18 +63,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
               style="display: none;"
             >
-              <a
+              <content-toggle
                 aria-hidden="true"
-                class="toggle toggle--icon flyout__toggle"
-                role="button"
-                tabindex="0"
-              >
-                <!---->
-                 
-                <span>
-                  Less
-                </span>
-              </a>
+                class="flyout__toggle"
+                toggle-state="true"
+              />
             </li>
           </ul>
            
@@ -106,7 +91,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-            id="flyout_title_721_1"
+            id="flyout_title_693_1"
           >
             Flyout title two
           </strong>
@@ -114,7 +99,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
-            aria-labelledby="flyout_title_721_1"
+            aria-labelledby="flyout_title_693_1"
             class="flyout__list"
           >
             <li
@@ -179,18 +164,10 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
               style="display: none;"
             >
-              <a
+              <content-toggle
                 aria-hidden="true"
-                class="toggle toggle--icon flyout__toggle"
-                role="button"
-                tabindex="0"
-              >
-                <!---->
-                 
-                <span>
-                  More
-                </span>
-              </a>
+                class="flyout__toggle"
+              />
             </li>
              
             <!---->
@@ -255,18 +232,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
               style="display: none;"
             >
-              <a
+              <content-toggle
                 aria-hidden="true"
-                class="toggle toggle--icon flyout__toggle"
-                role="button"
-                tabindex="0"
-              >
-                <!---->
-                 
-                <span>
-                  Less
-                </span>
-              </a>
+                class="flyout__toggle"
+                toggle-state="true"
+              />
             </li>
           </ul>
            
@@ -290,7 +260,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-            id="flyout_title_721_2"
+            id="flyout_title_693_2"
           >
             Flyout title three
           </strong>
@@ -298,7 +268,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
-            aria-labelledby="flyout_title_721_2"
+            aria-labelledby="flyout_title_693_2"
             class="flyout__list"
           >
             <li
@@ -362,18 +332,10 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
               style="display: none;"
             >
-              <a
+              <content-toggle
                 aria-hidden="true"
-                class="toggle toggle--icon flyout__toggle"
-                role="button"
-                tabindex="0"
-              >
-                <!---->
-                 
-                <span>
-                  More
-                </span>
-              </a>
+                class="flyout__toggle"
+              />
             </li>
              
             <!---->
@@ -420,18 +382,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
               class="flyout__list-item"
               style="display: none;"
             >
-              <a
+              <content-toggle
                 aria-hidden="true"
-                class="toggle toggle--icon flyout__toggle"
-                role="button"
-                tabindex="0"
-              >
-                <!---->
-                 
-                <span>
-                  Less
-                </span>
-              </a>
+                class="flyout__toggle"
+                toggle-state="true"
+              />
             </li>
           </ul>
            

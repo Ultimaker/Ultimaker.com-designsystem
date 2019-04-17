@@ -10,11 +10,9 @@ exports[`Storyshots Molecules|tags/tag tag 1`] = `
     <section
       class="stories__molecules"
     >
-      <label
-        class="tag"
-      >
-        Tag one
-      </label>
+      <tag
+        tag="[object Object]"
+      />
     </section>
   </section>
 </section>
