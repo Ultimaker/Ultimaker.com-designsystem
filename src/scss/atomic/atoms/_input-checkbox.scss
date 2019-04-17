@@ -1,6 +1,6 @@
 $checkboxSize: $buildingUnit*2;
 $checkmarkSize: $buildingUnit*1.5;
-
+$inputBorder: 1px solid $colorGray;
 
 [type="checkbox"] + label {
     @extend .copy--small;
