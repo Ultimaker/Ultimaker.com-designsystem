@@ -12,12 +12,6 @@
                 </template>
             </h3>
             <template v-if="tooltip">
-                <transition name="tooltip">
-                    <tooltip class="section-tooltip" block="list-section" v-show="visibleTooltip" v-bind="tooltip"
-                             :id="`tooltip_${ uniqId }`">
-                        {{ tooltip.description }}
-                    </tooltip>
-                </transition>
                 <action-button
                     class="link list-section__info-link"
                     :icon="tooltip.icon"
