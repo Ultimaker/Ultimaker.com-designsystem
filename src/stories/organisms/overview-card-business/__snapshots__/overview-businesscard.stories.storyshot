@@ -67,20 +67,6 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 </div>
               </h3>
                
-              <div
-                class="tooltip section-tooltip list-section__tooltip"
-                description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
-                icon="info"
-                id="tooltip_446"
-                label="More info"
-                style="display: none;"
-                type="Tooltip"
-              >
-                
-                        Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed.
-                    
-              </div>
-               
               <a
                 aria-describedby="tooltip_446"
                 class="link list-section__info-link link--reversed link--icon"

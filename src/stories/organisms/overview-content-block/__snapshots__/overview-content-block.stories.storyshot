@@ -56,7 +56,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                   class="tooltip section-tooltip list-section__tooltip"
                   description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
                   icon="info"
-                  id="tooltip_629"
+                  id="tooltip_627"
                   label="More info"
                   style="display: none;"
                   type="Tooltip"
@@ -67,22 +67,8 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                 </div>
               </h3>
                
-              <div
-                class="tooltip section-tooltip list-section__tooltip"
-                description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
-                icon="info"
-                id="tooltip_629"
-                label="More info"
-                style="display: none;"
-                type="Tooltip"
-              >
-                
-                        Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed.
-                    
-              </div>
-               
               <a
-                aria-describedby="tooltip_629"
+                aria-describedby="tooltip_627"
                 class="link list-section__info-link link--reversed link--icon"
                 href="#"
                 role="button"
@@ -308,7 +294,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                 <span
                   class="list-section__count"
                 >
-                  (3)
+                  (6)
                 </span>
                  
                 <!---->
@@ -438,6 +424,186 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
+                         
+                        <!---->
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                >
+                  <li
+                    class="list-section-list__item"
+                  >
+                    <article
+                      class="content-block disable-focus"
+                      tabindex="-1"
+                      type="ContentBlock"
+                    >
+                      <div
+                        class="content-block-container__image"
+                      >
+                        <img
+                          alt="An example image"
+                          class="img--contain content-block__image img--loading"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        />
+                      </div>
+                       
+                      <div
+                        class="content-block__content"
+                      >
+                        <h3
+                          class="content-block__headline"
+                        >
+                          Ultimaker
+                        </h3>
+                         
+                        <p
+                          class="content-block__description"
+                        >
+                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                        </p>
+                         
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Visit website
+    
+                          </span>
+                        </a>
+                         
+                        <!---->
+                         
+                        <!---->
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                >
+                  <li
+                    class="list-section-list__item"
+                  >
+                    <article
+                      class="content-block disable-focus"
+                      tabindex="-1"
+                      type="ContentBlock"
+                    >
+                      <div
+                        class="content-block-container__image"
+                      >
+                        <img
+                          alt="An example image"
+                          class="img--contain content-block__image img--loading"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        />
+                      </div>
+                       
+                      <div
+                        class="content-block__content"
+                      >
+                        <h3
+                          class="content-block__headline"
+                        >
+                          Ultimaker
+                        </h3>
+                         
+                        <p
+                          class="content-block__description"
+                        >
+                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                        </p>
+                         
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Visit website
+    
+                          </span>
+                        </a>
+                         
+                        <!---->
+                         
+                        <!---->
+                      </div>
+                    </article>
+                  </li>
+                </div>
+                <div
+                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+                >
+                  <li
+                    class="list-section-list__item"
+                  >
+                    <article
+                      class="content-block disable-focus"
+                      tabindex="-1"
+                      type="ContentBlock"
+                    >
+                      <div
+                        class="content-block-container__image"
+                      >
+                        <img
+                          alt="An example image"
+                          class="img--contain content-block__image img--loading"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        />
+                      </div>
+                       
+                      <div
+                        class="content-block__content"
+                      >
+                        <h3
+                          class="content-block__headline"
+                        >
+                          Ultimaker
+                        </h3>
+                         
+                        <p
+                          class="content-block__description"
+                        >
+                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                        </p>
+                         
+                        <a
+                          class="button"
+                          href="https://ultimaker.com"
+                          rel="noopener"
+                          target="_self"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Visit website
+    
+                          </span>
+                        </a>
+                         
+                        <!---->
                          
                         <!---->
                       </div>
