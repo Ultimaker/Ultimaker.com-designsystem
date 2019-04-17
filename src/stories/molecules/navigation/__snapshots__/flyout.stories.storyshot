@@ -18,22 +18,14 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-<<<<<<< HEAD
-            id="flyout_title_721_0"
-=======
-            id="flyout_title_333_0"
->>>>>>> fix(list-section): correct margin with content-blocks
+            id="flyout_title_732_0"
           >
             Flyout title one
           </strong>
            
           <ul
             aria-expanded="true"
-<<<<<<< HEAD
-            aria-labelledby="flyout_title_721_0"
-=======
-            aria-labelledby="flyout_title_333_0"
->>>>>>> fix(list-section): correct margin with content-blocks
+            aria-labelledby="flyout_title_732_0"
             class="flyout__list"
           >
             <li
@@ -114,11 +106,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-<<<<<<< HEAD
-            id="flyout_title_721_1"
-=======
-            id="flyout_title_333_1"
->>>>>>> fix(list-section): correct margin with content-blocks
+            id="flyout_title_732_1"
           >
             Flyout title two
           </strong>
@@ -126,11 +114,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
-<<<<<<< HEAD
-            aria-labelledby="flyout_title_721_1"
-=======
-            aria-labelledby="flyout_title_333_1"
->>>>>>> fix(list-section): correct margin with content-blocks
+            aria-labelledby="flyout_title_732_1"
             class="flyout__list"
           >
             <li
@@ -306,11 +290,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-<<<<<<< HEAD
-            id="flyout_title_721_2"
-=======
-            id="flyout_title_333_2"
->>>>>>> fix(list-section): correct margin with content-blocks
+            id="flyout_title_732_2"
           >
             Flyout title three
           </strong>
@@ -318,11 +298,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
-<<<<<<< HEAD
-            aria-labelledby="flyout_title_721_2"
-=======
-            aria-labelledby="flyout_title_333_2"
->>>>>>> fix(list-section): correct margin with content-blocks
+            aria-labelledby="flyout_title_732_2"
             class="flyout__list"
           >
             <li

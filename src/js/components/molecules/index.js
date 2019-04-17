@@ -12,6 +12,7 @@ export {default as FauxVerticalScroll} from 'molecules/faux-vertical-scroll';
 export {default as Flyout} from 'molecules/flyout';
 export {default as FlyoutSection} from 'molecules/flyout-section';
 export {default as FooterNav} from 'molecules/footer-nav';
+export {default as HeaderBlock} from 'molecules/header-block';
 export {default as IconButton} from 'molecules/icon-button';
 export {default as LegalNav} from 'molecules/legal-nav';
 export {default as ListSection} from 'molecules/list-section';
@@ -30,6 +31,3 @@ export {default as Tabs} from 'molecules/tabs';
 export {default as Tag} from 'molecules/tag';
 export {default as TagList} from 'molecules/tag-list';
 
-export {default as ListSection} from 'molecules/list-section';
-export {default as BusinessCard} from 'molecules/business-card';
-export {default as HeaderBlock} from 'molecules/header-block';

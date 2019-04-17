@@ -77,53 +77,13 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1433_0"
-=======
-                      id="flyout_title_1115_0"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_1110_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_1131_0"
->>>>>>> fix(general): update snapshotns
-=======
-                      id="flyout_title_1132_0"
->>>>>>> Add youtubelink to content block
-=======
-                      id="flyout_title_1130_0"
->>>>>>> Add youtubelink to content block
+                      id="flyout_title_1443_0"
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1433_0"
-=======
-                      aria-labelledby="flyout_title_1115_0"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_1110_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_1131_0"
->>>>>>> fix(general): update snapshotns
-=======
-                      aria-labelledby="flyout_title_1132_0"
->>>>>>> Add youtubelink to content block
-=======
-                      aria-labelledby="flyout_title_1130_0"
->>>>>>> Add youtubelink to content block
+                      aria-labelledby="flyout_title_1443_0"
                       class="flyout__list"
                     >
                       <li
@@ -204,54 +164,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1433_1"
-=======
-                      id="flyout_title_1115_1"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_1110_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_1131_1"
->>>>>>> fix(general): update snapshotns
-=======
-                      id="flyout_title_1132_1"
->>>>>>> Add youtubelink to content block
-=======
-                      id="flyout_title_1130_1"
->>>>>>> Add youtubelink to content block
+                      id="flyout_title_1443_1"
                     >
                       Where is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1433_1"
-=======
-                      aria-labelledby="flyout_title_1115_1"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_1110_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_1131_1"
->>>>>>> fix(general): update snapshotns
-=======
-                      aria-labelledby="flyout_title_1132_1"
->>>>>>> Add youtubelink to content block
-=======
-                      aria-labelledby="flyout_title_1130_1"
->>>>>>> Add youtubelink to content block
+                      aria-labelledby="flyout_title_1443_1"
                       class="flyout__list"
                     >
                       <li
@@ -669,54 +589,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1433_2"
-=======
-                      id="flyout_title_1115_2"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_1110_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_1131_2"
->>>>>>> fix(general): update snapshotns
-=======
-                      id="flyout_title_1132_2"
->>>>>>> Add youtubelink to content block
-=======
-                      id="flyout_title_1130_2"
->>>>>>> Add youtubelink to content block
+                      id="flyout_title_1443_2"
                     >
                       How is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1433_2"
-=======
-                      aria-labelledby="flyout_title_1115_2"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_1110_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_1131_2"
->>>>>>> fix(general): update snapshotns
-=======
-                      aria-labelledby="flyout_title_1132_2"
->>>>>>> Add youtubelink to content block
-=======
-                      aria-labelledby="flyout_title_1130_2"
->>>>>>> Add youtubelink to content block
+                      aria-labelledby="flyout_title_1443_2"
                       class="flyout__list"
                     >
                       <li
@@ -955,53 +835,13 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1512_0"
-=======
-                      id="flyout_title_1194_0"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_1189_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_1210_0"
->>>>>>> fix(general): update snapshotns
-=======
-                      id="flyout_title_1211_0"
->>>>>>> Add youtubelink to content block
-=======
-                      id="flyout_title_1209_0"
->>>>>>> Add youtubelink to content block
+                      id="flyout_title_1522_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1512_0"
-=======
-                      aria-labelledby="flyout_title_1194_0"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_1189_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_1210_0"
->>>>>>> fix(general): update snapshotns
-=======
-                      aria-labelledby="flyout_title_1211_0"
->>>>>>> Add youtubelink to content block
-=======
-                      aria-labelledby="flyout_title_1209_0"
->>>>>>> Add youtubelink to content block
+                      aria-labelledby="flyout_title_1522_0"
                       class="flyout__list"
                     >
                       <li
@@ -1069,54 +909,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1512_1"
-=======
-                      id="flyout_title_1194_1"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_1189_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_1210_1"
->>>>>>> fix(general): update snapshotns
-=======
-                      id="flyout_title_1211_1"
->>>>>>> Add youtubelink to content block
-=======
-                      id="flyout_title_1209_1"
->>>>>>> Add youtubelink to content block
+                      id="flyout_title_1522_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1512_1"
-=======
-                      aria-labelledby="flyout_title_1194_1"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_1189_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_1210_1"
->>>>>>> fix(general): update snapshotns
-=======
-                      aria-labelledby="flyout_title_1211_1"
->>>>>>> Add youtubelink to content block
-=======
-                      aria-labelledby="flyout_title_1209_1"
->>>>>>> Add youtubelink to content block
+                      aria-labelledby="flyout_title_1522_1"
                       class="flyout__list"
                     >
                       <li
@@ -1281,54 +1081,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1512_2"
-=======
-                      id="flyout_title_1194_2"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_1189_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_1210_2"
->>>>>>> fix(general): update snapshotns
-=======
-                      id="flyout_title_1211_2"
->>>>>>> Add youtubelink to content block
-=======
-                      id="flyout_title_1209_2"
->>>>>>> Add youtubelink to content block
+                      id="flyout_title_1522_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1512_2"
-=======
-                      aria-labelledby="flyout_title_1194_2"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_1189_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_1210_2"
->>>>>>> fix(general): update snapshotns
-=======
-                      aria-labelledby="flyout_title_1211_2"
->>>>>>> Add youtubelink to content block
-=======
-                      aria-labelledby="flyout_title_1209_2"
->>>>>>> Add youtubelink to content block
+                      aria-labelledby="flyout_title_1522_2"
                       class="flyout__list"
                     >
                       <li
@@ -1551,53 +1311,13 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1562_0"
-=======
-                      id="flyout_title_1244_0"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_1239_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_1260_0"
->>>>>>> fix(general): update snapshotns
-=======
-                      id="flyout_title_1261_0"
->>>>>>> Add youtubelink to content block
-=======
-                      id="flyout_title_1259_0"
->>>>>>> Add youtubelink to content block
+                      id="flyout_title_1572_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1562_0"
-=======
-                      aria-labelledby="flyout_title_1244_0"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_1239_0"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_1260_0"
->>>>>>> fix(general): update snapshotns
-=======
-                      aria-labelledby="flyout_title_1261_0"
->>>>>>> Add youtubelink to content block
-=======
-                      aria-labelledby="flyout_title_1259_0"
->>>>>>> Add youtubelink to content block
+                      aria-labelledby="flyout_title_1572_0"
                       class="flyout__list"
                     >
                       <li
@@ -1665,54 +1385,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1562_1"
-=======
-                      id="flyout_title_1244_1"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_1239_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_1260_1"
->>>>>>> fix(general): update snapshotns
-=======
-                      id="flyout_title_1261_1"
->>>>>>> Add youtubelink to content block
-=======
-                      id="flyout_title_1259_1"
->>>>>>> Add youtubelink to content block
+                      id="flyout_title_1572_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1562_1"
-=======
-                      aria-labelledby="flyout_title_1244_1"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_1239_1"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_1260_1"
->>>>>>> fix(general): update snapshotns
-=======
-                      aria-labelledby="flyout_title_1261_1"
->>>>>>> Add youtubelink to content block
-=======
-                      aria-labelledby="flyout_title_1259_1"
->>>>>>> Add youtubelink to content block
+                      aria-labelledby="flyout_title_1572_1"
                       class="flyout__list"
                     >
                       <li
@@ -1877,54 +1557,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      id="flyout_title_1562_2"
-=======
-                      id="flyout_title_1244_2"
->>>>>>> No focus state on content block
-=======
-                      id="flyout_title_1239_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      id="flyout_title_1260_2"
->>>>>>> fix(general): update snapshotns
-=======
-                      id="flyout_title_1261_2"
->>>>>>> Add youtubelink to content block
-=======
-                      id="flyout_title_1259_2"
->>>>>>> Add youtubelink to content block
+                      id="flyout_title_1572_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                      aria-labelledby="flyout_title_1562_2"
-=======
-                      aria-labelledby="flyout_title_1244_2"
->>>>>>> No focus state on content block
-=======
-                      aria-labelledby="flyout_title_1239_2"
->>>>>>> fix(list-section): correct margin with content-blocks
-=======
-                      aria-labelledby="flyout_title_1260_2"
->>>>>>> fix(general): update snapshotns
-=======
-                      aria-labelledby="flyout_title_1261_2"
->>>>>>> Add youtubelink to content block
-=======
-                      aria-labelledby="flyout_title_1259_2"
->>>>>>> Add youtubelink to content block
+                      aria-labelledby="flyout_title_1572_2"
                       class="flyout__list"
                     >
                       <li
