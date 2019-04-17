@@ -26,7 +26,15 @@
             }
         }
         &__item {
-            @extend .price-table__item;
+            display: flex;
+            flex: 0 1 auto;
+            flex-direction: row;
+
+            padding: $buildingUnit 0;
+            padding-bottom: 7px;
+
+            background-color: transparent;
+            color: $colorBlack;
             @extend strong;
             white-space: nowrap;
 
@@ -56,10 +64,10 @@
 
             &:hover,
             &--active {
-                @extend .price-table__item--active;
+                background-color: darken($colorWhite, $tintActive);
             }
             &--inactive {
-                @extend .price-table__item--inactive;
+                color: $colorGrayDark;
             }
         }
         &__scroll-hint {
