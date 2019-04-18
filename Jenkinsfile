@@ -13,14 +13,14 @@ podTemplate(
   containers: [
     containerTemplate(
       name: 'node',
-      image: 'node:10.15-jessie',
+      image: 'eu.gcr.io/um-website-193311/ultimaker.com/node:latest',
       command: 'cat',
       alwaysPullImage: true,
       ttyEnabled: true
     ),
     containerTemplate(
-      name: 'puppeteer',
-      image: 'buildkite/puppeteer:1.1.1',
+      name: 'node-chromium',
+      image: 'eu.gcr.io/um-website-193311/ultimaker.com/node-chromium:latest',
       command: 'cat',
       alwaysPullImage: true,
       ttyEnabled: true
@@ -48,7 +48,7 @@ podTemplate(
             }
           },
           'unit test': {
-            container('puppeteer') {
+            container('node-chromium') {
               sh 'npm run unit'
             }
           },
