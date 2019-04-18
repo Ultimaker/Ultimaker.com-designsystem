@@ -3,6 +3,10 @@
     justify-content: center;
     align-items: center;
 
+    &:not(:empty) {
+        padding-bottom: $buildingUnit * 5;
+    }
+
     .cta__block {
         display: flex;
         flex-direction: column;
@@ -20,6 +24,7 @@
 
             > a {
                 margin-right: $buildingUnit * 2.5;
+                margin-bottom: 0;
 
                 &:last-child{
                     margin-right: 0;
