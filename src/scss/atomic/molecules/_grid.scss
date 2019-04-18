@@ -6,18 +6,16 @@
 
 .container {
     max-width: $desktopHdWidth;
-    margin: ($buildingUnit * 5) auto;
+    margin: 0 auto ($buildingUnit * 5);
+    padding-top: $buildingUnit * 5;
 
-    @include min-tablet {
-        margin: ($buildingUnit * 5) auto;
+    .preferences-bar & {
+        margin: 0 auto;
+        padding-bottom: $buildingUnit * 5;
     }
 
-    @include min-desktop {
-        margin: ($buildingUnit * 5) auto;
-    }
-
-    @include min-desktop-hd {
-        margin: ($buildingUnit * 5) auto;
+    &.hero__container {
+        padding-bottom: $buildingUnit * 5;
     }
 }
 

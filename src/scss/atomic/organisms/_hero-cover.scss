@@ -2,6 +2,7 @@
     @extend .organism;
     @extend %reset-last-margin;
     position: relative;
+    padding-bottom: $buildingUnit * 5;
 
     &-reset p:last-child {
         margin-bottom: 0;
@@ -15,7 +16,6 @@
     .link--large {
         margin: 0;
     }
-
 }
 
 .hero-cover__headline {
