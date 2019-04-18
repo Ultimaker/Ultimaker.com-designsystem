@@ -1,11 +1,10 @@
-<div class="cta__video">
-    <a class="link link--large link--icon" :href="youtubeUrl" target="_blank" @click.prevent="triggerClick">
-        <icon :icon-name="icon" />
-        <span class="link__underline">
-            {{label}}
-        </span>
-    </a>
-    <modal class="modal--video" v-if="videoVisible" @close="toggleVideoVisible">
-        <youtube-video :video-id="youtubeId" />
-    </modal>
-</div>
+<a class="link link--large link--icon" :href="youtubeUrl" target="_blank" @click.prevent="triggerClick">
+    <icon :icon-name="icon" />
+    <span class="link__underline">
+        {{label}}
+    </span>
+</a>
+<modal class="modal--video" v-if="videoVisible" @close="toggleVideoVisible">
+    <youtube-video :video-id="youtubeId" />
+</modal>
+
