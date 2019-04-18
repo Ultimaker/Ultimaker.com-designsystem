@@ -12,19 +12,21 @@ const getBrowsers = () => {
         return ['ChromeHeadless'];
     }
 
-    process.env.CHROME_BIN = require('puppeteer').executablePath();
+    if (!process.env.CHROMIUM_BIN) {
+        process.env.CHROMIUM_BIN = require('puppeteer').executablePath();
+    }
 
-    return ['ChromeHeadlessNoSandbox'];
+    return ['ChromiumHeadlessNoSandbox'];
 };
 
 module.exports = function(config) {
     config.set({
         browsers: getBrowsers(),
-        logLevel: config.LOG_ERROR,
-        browserConsoleLogOptions: {level: 'feature', format: '%b %T: %m', terminal: true},
+        logLevel: config.LOG_INFO,
+        browserConsoleLogOptions: {level: 'error', format: '%b %T: %m', terminal: true},
         customLaunchers: {
-            ChromeHeadlessNoSandbox: {
-                base: 'ChromeHeadless',
+            ChromiumHeadlessNoSandbox: {
+                base: 'ChromiumHeadless',
                 flags: ['--no-sandbox']
             }
         },
