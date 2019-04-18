@@ -65,9 +65,6 @@
             }
         }
 
-        + .footer-block {
-
-        }
     }
 
 
@@ -85,21 +82,11 @@
 
         .list-section__footer {
             text-align: center;
+            margin-bottom: $buildingUnit * 5;
 
             @include min-tablet() {
                 margin-bottom: $buildingUnit * 5;
             }
-        }
-
-        .list-section-list + .list-section__footer {
-            margin-bottom: $buildingUnit * 5;
-            @include min-tablet() {
-                margin-bottom: 0;
-            }
-        }
-
-        + .footer-block {
-
         }
     }
 

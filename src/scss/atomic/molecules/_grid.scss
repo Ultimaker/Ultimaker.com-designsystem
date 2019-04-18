@@ -6,19 +6,18 @@
 
 .container {
     max-width: $desktopHdWidth;
-    margin: 0 auto;
-    padding: ($buildingUnit * 5) $buildingUnit;
+    margin: ($buildingUnit * 5) auto;
 
     @include min-tablet {
-        padding: ($buildingUnit * 5) $buildingUnit * 2;
+        margin: ($buildingUnit * 5) auto;
     }
 
     @include min-desktop {
-        padding: ($buildingUnit * 5) $buildingUnit * 4;
+        margin: ($buildingUnit * 5) auto;
     }
 
     @include min-desktop-hd {
-        padding: ($buildingUnit * 5) $buildingUnit * 5;
+        margin: ($buildingUnit * 5) auto;
     }
 }
 
