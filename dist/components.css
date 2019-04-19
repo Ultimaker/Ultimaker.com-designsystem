@@ -173,8 +173,7 @@ p.subtitle, strong.subtitle, .tablist__section .subtitle.tablist__item, .example
     font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
-button:focus, .button:focus, input[type="button"]:focus, input[type="submit"]:focus, a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .nav-assist:focus:not(:hover),
-.nav-assist--close:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .examples .examples__tabs .tablist__item:focus:not(:hover), .business-card:focus, .business-card:hover:focus, .business-card:focus:active, .materials-card:focus .materials-card__content, .materials-card:hover:focus .materials-card__content, .materials-card:focus:active .materials-card__content {
+button:focus, .button:focus, input[type="button"]:focus, input[type="submit"]:focus, a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .examples .examples__tabs .tablist__item:focus:not(:hover), .business-card:focus, .business-card:hover:focus, .business-card:focus:active, .materials-card:focus .materials-card__content, .materials-card:hover:focus .materials-card__content, .materials-card:focus:active .materials-card__content {
   color: #FFFFFF;
   background-color: #24bcf3; }
 
@@ -1533,110 +1532,6 @@ a {
     .home-link__logo {
       height: 24px;
       width: 162px; } }
-
-@keyframes lineAnimate {
-  from {
-    transform: scaleX(1); }
-  to {
-    transform: scaleX(0); } }
-
-@keyframes lineAnimateReverse {
-  from {
-    transform: scaleX(0); }
-  to {
-    transform: scaleX(1); } }
-
-@keyframes xLineAnimate-4 {
-  from {
-    transform: rotate(-45deg) scaleX(1); }
-  to {
-    transform: rotate(-45deg) scaleX(0); } }
-
-@keyframes xLineAnimateReverse-4 {
-  from {
-    transform: rotate(-45deg) scaleX(0); }
-  to {
-    transform: rotate(-45deg) scaleX(1); } }
-
-@keyframes xLineAnimate-5 {
-  from {
-    transform: rotate(-45deg) scaleY(1); }
-  to {
-    transform: rotate(-45deg) scaleY(0); } }
-
-@keyframes xLineAnimateReverse-5 {
-  from {
-    transform: rotate(-45deg) scaleY(0); }
-  to {
-    transform: rotate(-45deg) scaleY(1); } }
-
-.nav-assist {
-  width: 60px;
-  height: 60px;
-  padding: 18px;
-  margin: 0;
-  border-radius: 0;
-  cursor: pointer;
-  background-color: #000000;
-  transition: background 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
-  .nav-assist:hover {
-    background-color: #3d3d3d; }
-
-.nav-assist__line {
-  fill: white;
-  transform-origin: 50% 50%;
-  transition: fill 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
-  /* Animate Menu icon to visible position */
-  /* Animate 'X' icon to hidden position */ }
-  .nav-assist__line-1 {
-    transform: scaleX(0);
-    animation: lineAnimateReverse 0.3s 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-  .nav-assist__line-2 {
-    transform: scaleX(0);
-    animation: lineAnimateReverse 0.3s 0.15s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-  .nav-assist__line-3 {
-    transform: scaleX(0);
-    animation: lineAnimateReverse 0.3s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-  .nav-assist__line-4 {
-    transform: rotate(-45deg) scaleX(1);
-    animation: xLineAnimate-4 0.3s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-  .nav-assist__line-5 {
-    transform: rotate(-45deg) scaleY(1);
-    animation: xLineAnimate-5 0.3s 0.05s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-
-/* Hide X icon while initializing */
-.nav-assist--initial-state .nav-assist__line-4,
-.nav-assist--initial-state .nav-assist__line-5 {
-  display: none; }
-
-.nav-assist--close {
-  background-color: white;
-  transition: background 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
-  .nav-assist--close:hover {
-    background-color: #ebebeb; }
-  .nav-assist--close .nav-assist__line {
-    fill: #000000;
-    /* Animate Menu icon to hidden position */
-    /* Animate 'X' icon to visible position */ }
-    .nav-assist--close .nav-assist__line-1 {
-      transform: scaleX(1);
-      animation: lineAnimate 0.3s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-    .nav-assist--close .nav-assist__line-2 {
-      transform: scaleX(1);
-      animation: lineAnimate 0.3s 0.05s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-    .nav-assist--close .nav-assist__line-3 {
-      transform: scaleX(1);
-      animation: lineAnimate 0.3s 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-    .nav-assist--close .nav-assist__line-4 {
-      transform: rotate(45deg) scaleX(0);
-      animation: xLineAnimateReverse-4 0.3s 0.15s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-    .nav-assist--close .nav-assist__line-5 {
-      transform: rotate(-45deg) scaleX(0);
-      animation: xLineAnimateReverse-5 0.3s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-
-.nav-assist:focus:not(:hover) .nav-assist__line,
-.nav-assist--close:focus:not(:hover) .nav-assist__line {
-  fill: #FFFFFF; }
 
 input[type="text"] {
   position: relative;
@@ -5030,6 +4925,349 @@ svg text {
   position: relative;
   text-align: center; }
 
+/******************************************************************************
+
+REMARK: Do not to output any CSS in the first 2 layers  (TOOLS/SETTINGS). This
+        will destroy the specificity concept from ITCSS.
+
+******************************************************************************/
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/**
+ * easing function
+ * @param {string} $easeName - The name of the easing function.
+ * @returns {string} - Returns a cubic-bezier function with the easing values.
+ */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+/**
+ * Position X,Y,Z (Fallback Top, Left IE)
+ * @param {number} $x - X Position
+ * @param {number} $y - Y Position
+ * @param {number} $z - Z Position
+ */
+/**
+ * Position
+ * @param {number} $top (0) - Top Position
+ * @param {number} $right (auto) - Right Position
+ * @param {number} $bottom (auto) - Bottom Position
+ * @param {number} $left (0) - Left Position
+ */
+/**
+ * Offset
+ * @param {number} $top (0) - Top Offset
+ * @param {number} $left (0) - Left Offset
+ */
+/**
+ * Positioning an element absolute in the center
+ */
+/**
+ * Places an element absolute on top of the entire wrapper
+ */
+/**
+ * Set an element to display block and center margin
+ */
+/**
+ * Size an Element
+ * @param {number} $width (1em) - Width of the element
+ * @param {number} $height ($width) - Height of the element
+ */
+/**
+ * Font Face
+ * @param {string} $fontName - Name of the font
+ * @param {string} $folderName - Subfolder inside the fonts folder
+ * @param {string} $fileName - Name of the font-file
+ * @param {string} $fontWeight (normal) - Font weight value
+ * @param {string} $fontStyle (normal) - Font style value
+ */
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/**
+ * Z-Index function
+ * @param {string} $list (Array) - The list to find the current z-index in
+ * @param {string} $element (String) - The name of the current element, must be in the $list
+ * @returns {number}
+ */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.hidden {
+  display: none; }
+
+.ir,
+.clear {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+/* Picked an accessible color from colorsafe.co to try out some time */
+.nav-assist:focus:not(:hover),
+.nav-assist--close:focus:not(:hover) {
+  color: #FFFFFF;
+  background-color: #24bcf3; }
+
+@keyframes lineAnimate {
+  from {
+    transform: scaleX(1); }
+  to {
+    transform: scaleX(0); } }
+
+@keyframes lineAnimateReverse {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(1); } }
+
+@keyframes xLineAnimate-4 {
+  from {
+    transform: rotate(-45deg) scaleX(1); }
+  to {
+    transform: rotate(-45deg) scaleX(0); } }
+
+@keyframes xLineAnimateReverse-4 {
+  from {
+    transform: rotate(-45deg) scaleX(0); }
+  to {
+    transform: rotate(-45deg) scaleX(1); } }
+
+@keyframes xLineAnimate-5 {
+  from {
+    transform: rotate(-45deg) scaleY(1); }
+  to {
+    transform: rotate(-45deg) scaleY(0); } }
+
+@keyframes xLineAnimateReverse-5 {
+  from {
+    transform: rotate(-45deg) scaleY(0); }
+  to {
+    transform: rotate(-45deg) scaleY(1); } }
+
+.nav-assist {
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  margin: 0;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: #000000;
+  transition: background 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
+  .nav-assist:hover {
+    background-color: #3d3d3d; }
+
+.nav-assist__line {
+  fill: white;
+  transform-origin: 50% 50%;
+  transition: fill 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  /* Animate Menu icon to visible position */
+  /* Animate 'X' icon to hidden position */ }
+  .nav-assist__line-1 {
+    transform: scaleX(0);
+    animation: lineAnimateReverse 0.3s 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+  .nav-assist__line-2 {
+    transform: scaleX(0);
+    animation: lineAnimateReverse 0.3s 0.15s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+  .nav-assist__line-3 {
+    transform: scaleX(0);
+    animation: lineAnimateReverse 0.3s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+  .nav-assist__line-4 {
+    transform: rotate(-45deg) scaleX(1);
+    animation: xLineAnimate-4 0.3s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+  .nav-assist__line-5 {
+    transform: rotate(-45deg) scaleY(1);
+    animation: xLineAnimate-5 0.3s 0.05s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+
+/* Hide X icon while initializing */
+.nav-assist--initial-state .nav-assist__line-4,
+.nav-assist--initial-state .nav-assist__line-5 {
+  display: none; }
+
+.nav-assist--close {
+  background-color: white;
+  transition: background 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
+  .nav-assist--close:hover {
+    background-color: #ebebeb; }
+  .nav-assist--close .nav-assist__line {
+    fill: #000000;
+    /* Animate Menu icon to hidden position */
+    /* Animate 'X' icon to visible position */ }
+    .nav-assist--close .nav-assist__line-1 {
+      transform: scaleX(1);
+      animation: lineAnimate 0.3s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+    .nav-assist--close .nav-assist__line-2 {
+      transform: scaleX(1);
+      animation: lineAnimate 0.3s 0.05s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+    .nav-assist--close .nav-assist__line-3 {
+      transform: scaleX(1);
+      animation: lineAnimate 0.3s 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+    .nav-assist--close .nav-assist__line-4 {
+      transform: rotate(45deg) scaleX(0);
+      animation: xLineAnimateReverse-4 0.3s 0.15s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+    .nav-assist--close .nav-assist__line-5 {
+      transform: rotate(-45deg) scaleX(0);
+      animation: xLineAnimateReverse-5 0.3s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+
+.nav-assist:focus:not(:hover) .nav-assist__line,
+.nav-assist--close:focus:not(:hover) .nav-assist__line {
+  fill: #FFFFFF; }
+
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/**
+ * easing function
+ * @param {string} $easeName - The name of the easing function.
+ * @returns {string} - Returns a cubic-bezier function with the easing values.
+ */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+/**
+ * Position X,Y,Z (Fallback Top, Left IE)
+ * @param {number} $x - X Position
+ * @param {number} $y - Y Position
+ * @param {number} $z - Z Position
+ */
+/**
+ * Position
+ * @param {number} $top (0) - Top Position
+ * @param {number} $right (auto) - Right Position
+ * @param {number} $bottom (auto) - Bottom Position
+ * @param {number} $left (0) - Left Position
+ */
+/**
+ * Offset
+ * @param {number} $top (0) - Top Offset
+ * @param {number} $left (0) - Left Offset
+ */
+/**
+ * Positioning an element absolute in the center
+ */
+/**
+ * Places an element absolute on top of the entire wrapper
+ */
+/**
+ * Set an element to display block and center margin
+ */
+/**
+ * Size an Element
+ * @param {number} $width (1em) - Width of the element
+ * @param {number} $height ($width) - Height of the element
+ */
+/**
+ * Font Face
+ * @param {string} $fontName - Name of the font
+ * @param {string} $folderName - Subfolder inside the fonts folder
+ * @param {string} $fileName - Name of the font-file
+ * @param {string} $fontWeight (normal) - Font weight value
+ * @param {string} $fontStyle (normal) - Font style value
+ */
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/**
+ * Z-Index function
+ * @param {string} $list (Array) - The list to find the current z-index in
+ * @param {string} $element (String) - The name of the current element, must be in the $list
+ * @returns {number}
+ */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.hidden {
+  display: none; }
+
+.ir,
+.clear {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+/* Picked an accessible color from colorsafe.co to try out some time */
 .hardcoded {
   color: red !important; }
 
