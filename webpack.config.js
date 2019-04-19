@@ -113,7 +113,7 @@ const webpackConfig = {
 if (production) {
     webpackConfig.plugins.push(
         new MiniCssExtractPlugin({
-            filename: 'components.css',
+            filename: '[name].css',
             chunkFilename: '[id].css'
         })
     );

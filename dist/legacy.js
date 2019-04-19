@@ -81,7 +81,7 @@ define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","c
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 350);
+/******/ 	return __webpack_require__(__webpack_require__.s = 352);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -12508,7 +12508,9 @@ var SizeEmitter = exports.SizeEmitter = function () {
 // extracted by mini-css-extract-plugin
 
 /***/ }),
-/* 350 */
+/* 350 */,
+/* 351 */,
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12767,7 +12769,7 @@ __webpack_require__(108);
 
 __webpack_require__(109);
 
-__webpack_require__(351);
+__webpack_require__(353);
 
 var _componentRegistry = __webpack_require__(110);
 
@@ -12787,7 +12789,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var __svg__ = { filename: __webpack_require__.p +"static/icons/iconset.svg" };
 var registry = new _componentRegistry2.default();
 Object.keys(_components2.default).forEach(function (c) {
     registry.registerComponent(_components2.default[c]);
@@ -12798,11 +12799,11 @@ Object.keys(Directives).forEach(function (d) {
 exports.registry = registry;
 
 /***/ }),
-/* 351 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ })
 /******/ ])});;
-//# sourceMappingURL=components.js.map
+//# sourceMappingURL=legacy.js.map

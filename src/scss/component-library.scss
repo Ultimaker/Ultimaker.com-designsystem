@@ -14,14 +14,8 @@
 // Reset and/or normalize styles, box-sizing definition, etc.
 // @import 'generic/all';
 
-// ELEMENTS (ATOMS)
-@import 'atomic/atoms/all';
-
-// OBJECTS (MOLECULES)
-@import 'atomic/molecules/all';
-
-// COMPONENTS (ORGANISMS)
-@import 'atomic/organisms/all';
+// ELEMENTS (ATOMS) / OBJECTS (MOLECULES) / COMPONENTS (ORGANISMS)
+@import 'atomic/all';
 
 // UTILITIES
 // @import 'utilities/all';
