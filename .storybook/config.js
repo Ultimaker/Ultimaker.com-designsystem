@@ -68,7 +68,7 @@ addDecorator((story) => ({
 
 function loadStories() {
     const atoms = require.context('../src/stories/atoms', true, /\.stories\.[jt]s$/);
-    const components = require.context('../src/js/components', true, /\.stories\.js$/);
+    const components = require.context('../src/js/components', true, /\.stories\.[jt]s$/);
     const globals = require.context('../src/stories/global', true, /\.stories\.[jt]s$/);
     const molecules = require.context('../src/stories/molecules', true, /\.stories\.[jt]s$/);
     const organisms = require.context('../src/stories/organisms', true, /\.stories\.[jt]s$/);
