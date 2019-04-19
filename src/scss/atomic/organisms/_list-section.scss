@@ -37,7 +37,7 @@
         .list-section-list {
             margin-bottom: $buildingUnit;
             @include min-tablet() {
-                margin-bottom: $buildingUnit * 2;
+                margin-bottom: $buildingUnit * 3;
             }
         }
 
