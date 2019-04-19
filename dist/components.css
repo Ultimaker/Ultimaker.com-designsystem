@@ -4925,12 +4925,6 @@ svg text {
   position: relative;
   text-align: center; }
 
-/******************************************************************************
-
-REMARK: Do not to output any CSS in the first 2 layers  (TOOLS/SETTINGS). This
-        will destroy the specificity concept from ITCSS.
-
-******************************************************************************/
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.

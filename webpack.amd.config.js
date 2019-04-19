@@ -14,7 +14,8 @@ const webpackConfig = {
     mode: 'production',
     devtool: '#nosources-source-map',
     entry: {
-        'components': './src/js/index.ts'
+        'components': './src/js/index.ts',
+        'legacy': './src/js/legacy.ts'
     },
     output: {
         path: resolve('dist'),
@@ -29,6 +30,7 @@ const webpackConfig = {
     },
     externals: [
         'gsap',
+        /^gsap\/.+$/,
         'vue',
         'vuex',
         'lodash',
