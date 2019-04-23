@@ -1,10 +1,10 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs } from '@storybook/addon-knobs';
-import getKnobs from '../data/knobs/button.knobs';
+import getKnobs from '../data/knobs/anchor-button.knobs';
 
 const getNotes = () => {
     return {
-        notes: require('components/atoms/button/stories/button.md'),
+        notes: require('../../button/stories/button.md'),
     };
 };
 
@@ -21,12 +21,12 @@ const getStory = (type) => {
                     default: knobs.text,
                 },
             },
-            template: require('./button.html'),
+            template: require('./anchor-button.html'),
         };
     };
 };
 
-storiesOf('Atoms|buttons/button', module)
+storiesOf('Atoms|buttons/anchor', module)
     .addDecorator(withKnobs)
     .add(
         'default',

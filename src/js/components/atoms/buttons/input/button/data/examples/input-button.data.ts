@@ -9,7 +9,7 @@ const data = {
     },
     secondary: {
         className: 'button--secondary',
-        text: 'input button secondary,',
+        text: 'input button secondary',
     },
 };
 
