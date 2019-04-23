@@ -40,7 +40,9 @@
             "title": "Apendiscing consectetuer",
             "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
             "contentLink": {
-                "text": "Content-link"
+                "text": "Content-link",
+                "href": "#"
+
             }
         },
         {
@@ -56,7 +58,8 @@
             "title": "Apendiscing consectetuer",
             "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
             "contentLink": {
-                "text": "Content-link"
+                "text": "Content-link",
+                "href": "#"
             }
         },
         {
@@ -72,7 +75,8 @@
             "title": "Apendiscing consectetuer",
             "description": "Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.",
             "contentLink": {
-                "text": "Content-link"
+                "text": "Content-link",
+                "href": "#"
             }
         }
     ]

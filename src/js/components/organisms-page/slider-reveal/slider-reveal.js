@@ -28,7 +28,7 @@ export default {
     },
     computed: {
         hasLink() {
-            return this.link && this.link.text;
+            return this.link && this.link.href && this.link.text;
         }
     },
     data() {
