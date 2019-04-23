@@ -102,7 +102,24 @@ const webpackConfig = {
             {
                 test: /\.(sass|scss)$/,
                 use: [
-                    production ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', 'sass-loader'
+                    {
+                        loader: production ? MiniCssExtractPlugin.loader : 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader'
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            config: {
+                                ctx: {},
+                                path: 'postcss.config.js'
+                            }
+                        }
+                    },
+                    {
+                        loader: 'sass-loader'
+                    }
                 ]
             }
         ]

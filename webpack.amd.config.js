@@ -14,8 +14,7 @@ const webpackConfig = {
     mode: 'production',
     devtool: '#nosources-source-map',
     entry: {
-        'components': './src/js/index.ts',
-        'legacy': './src/js/legacy.ts'
+        'components': './src/js/index.ts'
     },
     output: {
         path: resolve('dist'),
