@@ -1,9 +1,12 @@
 import 'babel-polyfill';
+
+// >>> ordering of these imports matters
 import '../scss/component-library.scss';
 import ComponentRegistry from 'plugins/component-registry';
 import Components from './components';
 import * as Directives from './directives';
 import '../scss/utilities/_all.scss';
+// <<< ordering of these imports matters
 
 const registry = new ComponentRegistry();
 
