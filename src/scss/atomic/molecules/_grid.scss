@@ -17,11 +17,6 @@
     &.hero__container {
         padding-bottom: $buildingUnit * 5;
     }
-
-    .um-components & {
-        margin: 0 auto;
-        padding-bottom: $buildingUnit * 5;
-    }
 }
 
 
@@ -73,13 +68,13 @@
                 max-width: $divider#{'%'};
 
                 .flexgrid--justify-space-between & {
-                    $spaceWithGrid: $divider #{'% - '}($gridGutterSizeMobile / ($gutterDivider / 2));
+                    $spaceWithGrid: $divider#{'% - '}($gridGutterSizeMobile / ($gutterDivider / 2));
 
                     flex-basis: calc(#{$spaceWithGrid});
                     max-width: calc(#{$spaceWithGrid});
 
                     @include min-desktop {
-                        $spaceWithGrid: $divider #{'% - '}($gridGutterSize / ($gutterDivider / 2));
+                        $spaceWithGrid: $divider#{'% - '}($gridGutterSize / ($gutterDivider / 2));
 
                         flex-basis: calc(#{$spaceWithGrid});
                         max-width: calc(#{$spaceWithGrid});
