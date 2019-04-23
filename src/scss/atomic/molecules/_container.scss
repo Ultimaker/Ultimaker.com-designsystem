@@ -1,0 +1,35 @@
+.container {
+    max-width: $desktopHdWidth;
+    margin: 0 auto ($buildingUnit * 5);
+    padding-top: $buildingUnit * 5;
+
+    .preferences-bar & {
+        margin: 0 auto;
+        padding-bottom: $buildingUnit * 5;
+    }
+
+    &.hero__container {
+        padding-bottom: $buildingUnit * 5;
+    }
+}
+
+
+// LEGACY HACKS FTW
+.container {
+    &.brands__container,
+    &.examples__container,
+    &.ecosystem__container,
+    &.explore__container,
+    &.case__container,
+    &.general-content__container{
+        margin: 0 auto;
+        padding: $buildingUnit * 5;
+    }
+}
+
+.hero--products-application {
+    .container{
+        margin: 0 auto;
+        padding: $buildingUnit * 5;
+    }
+}

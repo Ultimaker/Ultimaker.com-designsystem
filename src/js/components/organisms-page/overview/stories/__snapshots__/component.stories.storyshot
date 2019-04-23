@@ -631,7 +631,7 @@ exports[`Storyshots organisms|overview card-product 1`] = `
           class="footer-block"
         >
           <div
-            class="cta__block"
+            class="cta__block cta__block--footer"
           >
             <a
               class="link--primary button"

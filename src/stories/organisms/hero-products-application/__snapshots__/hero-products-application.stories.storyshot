@@ -185,33 +185,54 @@ exports[`Storyshots organisms|hero Hero products application 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class=""
+                      class="link--icon"
                       href="#/#"
                     >
                       <!---->
-                       Content-link
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+        Content-link
+    
+                      </span>
                     </a>
                   </li>
                   <li
                     class="link-list__item"
                   >
                     <a
-                      class=""
+                      class="link--icon"
                       href="#/#"
                     >
                       <!---->
-                       Content-link
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+        Content-link
+    
+                      </span>
                     </a>
                   </li>
                   <li
                     class="link-list__item"
                   >
                     <a
-                      class=""
+                      class="link--icon"
                       href="#/#"
                     >
                       <!---->
-                       Content-link
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+        Content-link
+    
+                      </span>
                     </a>
                   </li>
                 </ul>

@@ -156,13 +156,7 @@ exports[`Storyshots organisms|brands Brands 1`] = `
             </div>
           </div>
            
-          <a
-            class="brands__link link--large"
-            href="#/#"
-          >
-            <!---->
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </a>
+          <!---->
         </section>
       </article>
     </section>

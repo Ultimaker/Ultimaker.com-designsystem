@@ -98,7 +98,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class=""
+                      class="link--icon"
                       href="#/#"
                     >
                       <!---->
@@ -110,7 +110,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class=""
+                      class="link--icon"
                       href="#/#"
                     >
                       <!---->
@@ -121,7 +121,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                     class="link-list__item"
                   >
                     <a
-                      class=""
+                      class="link--icon"
                       href="#/#"
                     >
                       <!---->

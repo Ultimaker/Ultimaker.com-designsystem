@@ -46,7 +46,21 @@ exports[`Storyshots organisms|slider-reveal Slider reveal 1`] = `
                 asperiores expedita consequatur nostrum quia, doloremque reprehenderit. Sequi, unde ipsa dolores dolorum earum qui obcaecati architecto officiis voluptates vero.
               </p>
                
-              <!---->
+              <a
+                class="link--icon link--large link--icon"
+                href="#"
+                text="Large content-link with icon"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Large content-link with icon
+    
+                </span>
+              </a>
             </div>
              
             <div
