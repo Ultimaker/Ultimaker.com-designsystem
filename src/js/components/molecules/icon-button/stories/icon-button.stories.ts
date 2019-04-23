@@ -4,7 +4,7 @@ import getKnobs from '../data/knobs/icon-button.knobs';
 
 const getNotes = () => {
     return {
-        notes: require('./icon-button.stories.md'),
+        notes: require('./icon-button.md'),
     };
 };
 
@@ -29,7 +29,7 @@ const getStory = (type) => {
                     default: knobs.iconName,
                 },
             },
-            template: require('./icon-button.stories.html'),
+            template: require('./icon-button.html'),
         };
     };
 };

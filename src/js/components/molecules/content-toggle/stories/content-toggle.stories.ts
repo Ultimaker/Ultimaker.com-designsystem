@@ -5,7 +5,7 @@ import getKnobs from '../data/knobs/content-toggle.knobs';
 
 const getNotes = () => {
     return {
-        notes: require('./content-toggle.stories.md'),
+        notes: require('./content-toggle.md'),
     };
 };
 
@@ -34,7 +34,7 @@ const getStory = (type) => {
                     default: knobs.toggleState,
                 },
             },
-            template: require('./content-toggle.stories.html'),
+            template: require('./content-toggle.html'),
         };
     };
 };
