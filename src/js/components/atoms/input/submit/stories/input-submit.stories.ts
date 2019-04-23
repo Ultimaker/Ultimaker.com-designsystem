@@ -4,7 +4,7 @@ import getKnobs from '../data/knobs/input-submit.knobs';
 
 const getNotes = () => {
     return {
-        notes: require('../../../button/stories/button.stories.md'),
+        notes: require('../../../button/stories/button.md'),
     };
 };
 
@@ -21,7 +21,7 @@ const getStory = (type) => {
                     default: knobs.text,
                 },
             },
-            template: require('./input-submit.stories.html'),
+            template: require('./input-submit.html'),
         };
     };
 };

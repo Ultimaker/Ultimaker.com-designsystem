@@ -4,7 +4,7 @@ import getKnobs from '../data/knobs/anchor-button.knobs';
 
 const getNotes = () => {
     return {
-        notes: require('../../../button/stories/button.stories.md'),
+        notes: require('../../../button/stories/button.md'),
     };
 };
 
@@ -21,7 +21,7 @@ const getStory = (type) => {
                     default: knobs.text,
                 },
             },
-            template: require('./anchor-button.stories.html'),
+            template: require('./anchor-button.html'),
         };
     };
 };

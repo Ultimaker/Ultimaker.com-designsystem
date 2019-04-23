@@ -4,7 +4,7 @@ import getKnobs from '../data/knobs/button.knobs';
 
 const getNotes = () => {
     return {
-        notes: require('../stories/button.stories.md'),
+        notes: require('components/atoms/button/stories/button.md'),
     };
 };
 
@@ -21,7 +21,7 @@ const getStory = (type) => {
                     default: knobs.text,
                 },
             },
-            template: require('./button.stories.html'),
+            template: require('./button.html'),
         };
     };
 };
