@@ -10,7 +10,6 @@
         "*.scss"
     ],
     "files": [
-        "src",
         "dist"
     ],
     "scripts": {
