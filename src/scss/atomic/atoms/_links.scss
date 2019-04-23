@@ -68,20 +68,6 @@ a {
     @include min-tablet() {
         @include font-ratio-rhythm(sec-s);
     }
-
-    :not(.link--large) + & {
-        display: table;
-        transform: translateY($buildingUnit * -0.5);
-    }
-
-    .button + &,
-    .button--primary + & {
-        display: inline;
-
-        @include max-mobile() {
-            display: table;
-        }
-    }
 }
 
 .link__underline {
