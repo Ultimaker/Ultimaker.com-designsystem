@@ -14,7 +14,7 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
         class="ecosystem"
       >
         <section
-          class="container"
+          class="container ecosystem__container"
         >
           <h2
             class="ecosystem__title"

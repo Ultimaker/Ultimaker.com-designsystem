@@ -14,7 +14,7 @@ exports[`Storyshots organisms|examples Examples 1`] = `
         class="examples"
       >
         <div
-          class="container"
+          class="container examples__container"
         >
           <header>
             <h2

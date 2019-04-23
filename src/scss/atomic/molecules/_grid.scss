@@ -4,22 +4,6 @@
     }
 }
 
-.container {
-    max-width: $desktopHdWidth;
-    margin: 0 auto ($buildingUnit * 5);
-    padding-top: $buildingUnit * 5;
-
-    .preferences-bar & {
-        margin: 0 auto;
-        padding-bottom: $buildingUnit * 5;
-    }
-
-    &.hero__container {
-        padding-bottom: $buildingUnit * 5;
-    }
-}
-
-
 .flexgrid {
     display: flex;
     box-sizing: border-box;
