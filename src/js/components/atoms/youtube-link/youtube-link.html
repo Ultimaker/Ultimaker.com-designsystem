@@ -1,10 +1,9 @@
-<a class="link link--large link--icon" :href="youtubeUrl" target="_blank" @click.prevent="triggerClick">
+<a class="link link--icon link--large" :href="youtubeUrl" target="_blank" @click.prevent="triggerClick">
     <icon :icon-name="icon" />
     <span class="link__underline">
         {{label}}
     </span>
+    <modal class="modal--video" v-if="videoVisible" @close="toggleVideoVisible">
+        <youtube-video :video-id="youtubeId" />
+    </modal>
 </a>
-<modal class="modal--video" v-if="videoVisible" @close="toggleVideoVisible">
-    <youtube-video :video-id="youtubeId" />
-</modal>
-

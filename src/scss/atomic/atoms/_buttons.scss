@@ -44,6 +44,7 @@ button, .button, input[type="button"], input[type="submit"] {
 }
 
 .button--primary {
+    margin-right: $triangleWidth;
     &:before {
         content: '';
         position:absolute;
@@ -67,14 +68,6 @@ button, .button, input[type="button"], input[type="submit"] {
 
     padding-right: $buildingUnit * 2.5 - $triangleWidth;
 
-    * + & {
-        margin-right: $triangleWidth + $buildingUnit;
-        margin-bottom: $buildingUnit * 3;
-    }
-
-    @include min-tablet {
-        margin-bottom: $buildingUnit * 4;
-    }
     &:hover, &:focus {
         &:before {
             border-color: transparent transparent lighten($colorButton, $tintHoverFocus) transparent;
