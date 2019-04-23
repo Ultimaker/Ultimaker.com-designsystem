@@ -9,7 +9,7 @@
     <div class="card__content">
         <h3 class="card__headline">{{ card.title }}</h3>
         <p class="card__description" v-if="card.description">{{ card.description }}</p>
-        <content-link class="link" v-if="card.contentLink" :block="'card'" :url="card.contentLink.href" :label="card.contentLink.text">
+        <content-link class="link" v-if="card.contentLink && card.contentLink.href" :block="'card'" :url="card.contentLink.href" :label="card.contentLink.text">
         </content-link>
     </div>
 </article>

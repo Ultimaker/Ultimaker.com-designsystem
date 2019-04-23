@@ -38,7 +38,10 @@
                     <router-link :to="ctaLink.href" class="button button--primary hero__button">{{  ctaLink.text }}</router-link>
                     <ul class="link-list link-list--icon hero__link-list" v-if="links && links.length">
                         <li class="link-list__item" v-for="link in links">
-                            <content-link :url="link.href" :icon="link.icon">{{ link.text }}</content-link>
+                            <content-link  v-if="link.href"
+                                           :url="link.href"
+                                           :icon="link.icon"
+                                           :label="link.text" />
                         </li>
                     </ul>
                 </div>
