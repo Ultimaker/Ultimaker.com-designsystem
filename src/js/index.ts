@@ -1,9 +1,12 @@
 import 'babel-polyfill';
+
+// >>> ordering of this import matters
 import '../scss/ultimaker.scss';
 import ComponentRegistry from 'plugins/component-registry';
 import Components from './components';
 import * as Directives from './directives';
 import '../scss/utilities/_all.scss';
+// <<< ordering of this import matters
 
 // import all icons from src/icons/.. as svg sprite
 // tslint:disable-next-line
