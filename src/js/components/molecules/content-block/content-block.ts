@@ -6,9 +6,17 @@ import { ContentBlock as IContentBlock } from '@ultimaker/ultimaker.com-model-de
     template: require('./content-block.html'),
 })
 
-export default class CtaBlock extends Vue implements IContentBlock {
+export default class ContentBlock extends Vue implements IContentBlock {
     @Prop({ type: String, required: true }) title!: IContentBlock['title'];
     @Prop({ type: String, required: true }) description!: IContentBlock['description'];
     @Prop({ type: Object }) image?: IContentBlock['image'];
     @Prop({ type: Object }) cta?: IContentBlock['cta'];
+
+    getClassNames(type): string {
+        return {
+            ContentButton: 'button',
+            ContentLink: 'link link--medium',
+            YoutubeLink: '',
+        }[type] || '';
+    }
 }
