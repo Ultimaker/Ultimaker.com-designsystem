@@ -15,8 +15,8 @@
     "scripts": {
         "clean": "rimraf dist/**",
         "build": "npm run clean && npm run build:module && npm run build:legacy",
-        "build:module": "npm run clean && cross-env NODE_ENV=production webpack --config webpack.amd.config.js --progress --hide-modules",
-        "build:legacy": "npm run clean && cross-env NODE_ENV=production webpack --config webpack.amd.legacy.config.js --progress --hide-modules",
+        "build:module": "cross-env NODE_ENV=production webpack --config webpack.amd.config.js --progress --hide-modules",
+        "build:legacy": "cross-env NODE_ENV=production webpack --config webpack.amd.legacy.config.js --progress --hide-modules",
         "build:dev": "cross-env NODE_ENV=development webpack --watch --config webpack.amd.config.js --progress --hide-modules",
         "build-storybook": "cross-env NODE_ENV=production build-storybook -s public",
         "storybook": "start-storybook -p 9090 -s public",

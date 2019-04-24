@@ -22,6 +22,8 @@ const webpackConfig = {
     ]
 };
 
+base.entry = {};
+
 const mergedConfig = merge(base, webpackConfig);
 
 const postCssLoader = mergedConfig.module.rules
