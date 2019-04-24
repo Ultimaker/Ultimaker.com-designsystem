@@ -55,7 +55,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                   class="tooltip section-tooltip list-section__tooltip"
                   description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
                   icon="info"
-                  id="tooltip_632"
+                  id="tooltip_637"
                   label="More info"
                   style="display: none;"
                   type="Tooltip"
@@ -67,7 +67,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
               </h3>
                
               <a
-                aria-describedby="tooltip_632"
+                aria-describedby="tooltip_637"
                 class="link list-section__info-link link--reversed link--icon"
                 href="#"
                 role="button"
@@ -138,10 +138,6 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
-                         
-                        <!---->
                       </div>
                     </article>
                   </li>
@@ -198,10 +194,6 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
-                         
-                        <!---->
                       </div>
                     </article>
                   </li>
@@ -258,10 +250,6 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
-                         
-                        <!---->
                       </div>
                     </article>
                   </li>
@@ -356,10 +344,6 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
-                         
-                        <!---->
                       </div>
                     </article>
                   </li>
@@ -416,10 +400,6 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
-                         
-                        <!---->
                       </div>
                     </article>
                   </li>
@@ -476,10 +456,6 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
-                         
-                        <!---->
                       </div>
                     </article>
                   </li>
@@ -536,10 +512,6 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
-                         
-                        <!---->
                       </div>
                     </article>
                   </li>
@@ -596,10 +568,6 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
-                         
-                        <!---->
                       </div>
                     </article>
                   </li>
@@ -640,10 +608,8 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                           Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
                         </p>
                          
-                        <!---->
-                         
                         <a
-                          class="link link--medium"
+                          class="button"
                           href="https://ultimaker.com"
                           rel="noopener"
                           target="_self"
@@ -658,8 +624,6 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
     
                           </span>
                         </a>
-                         
-                        <!---->
                       </div>
                     </article>
                   </li>

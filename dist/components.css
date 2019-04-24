@@ -261,11 +261,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-<<<<<<< HEAD
-.block > :last-child, .card > :last-child, .card__content > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .general-content .cta__block > :last-child, .container > .cta__block > :last-child, .footer__container > .cta__block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .materials-card > :last-child, .hero--basic > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--basic .hero__description > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--basic .hero__tab-panel > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--basic .hero__link-list > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .tabbed-content > :last-child {
-=======
-.block > :last-child, .card > :last-child, .card__content > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .container > .cta__block > :last-child, .footer__container > .cta__block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .materials-card > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--basic > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--basic .hero__description > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--basic .hero__tab-panel > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--basic .hero__link-list > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .overview > :last-child {
->>>>>>> fix(build): add build add header-block
+.block > :last-child, .card > :last-child, .card__content > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .materials-card > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--basic > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--basic .hero__description > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--basic .hero__tab-panel > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--basic .hero__link-list > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .overview > :last-child, .tabbed-content > :last-child {
   margin-bottom: 0; }
 
 .hero--basic .hero__link--large,
@@ -298,7 +294,7 @@ h6,
 .headline--quaternary,
 .headline--quinary,
 .headline--senary,
-strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item, .list-section__tooltip {
+strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item, .list-section__tooltip, .overview__tooltip {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .fonts--stage-one h4,
   .fonts--stage-one h5, .fonts--stage-one .link-list__headline, .fonts--stage-one .flyout__title, .fonts--stage-one .footer-nav__title, .fonts--stage-one .notification__title,
@@ -306,7 +302,7 @@ strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__it
   .fonts--stage-one .headline--quaternary,
   .fonts--stage-one .headline--quinary,
   .fonts--stage-one .headline--senary,
-  .fonts--stage-one strong, .fonts--stage-one .tablist__section .tablist__item, .tablist__section .fonts--stage-one .tablist__item, .fonts--stage-one .examples .examples__tabs .tablist__item, .examples .examples__tabs .fonts--stage-one .tablist__item, .fonts--stage-one .list-section__tooltip {
+  .fonts--stage-one strong, .fonts--stage-one .tablist__section .tablist__item, .tablist__section .fonts--stage-one .tablist__item, .fonts--stage-one .examples .examples__tabs .tablist__item, .examples .examples__tabs .fonts--stage-one .tablist__item, .fonts--stage-one .list-section__tooltip, .fonts--stage-one .overview__tooltip {
     font-family: "univers-init", Arial, "Helvetica Neue", Helvetica, sans-serif; }
   .fonts--stage-two h4,
   .fonts--stage-two h5, .fonts--stage-two .link-list__headline, .fonts--stage-two .flyout__title, .fonts--stage-two .footer-nav__title, .fonts--stage-two .notification__title,
@@ -314,7 +310,7 @@ strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__it
   .fonts--stage-two .headline--quaternary,
   .fonts--stage-two .headline--quinary,
   .fonts--stage-two .headline--senary,
-  .fonts--stage-two strong, .fonts--stage-two .tablist__section .tablist__item, .tablist__section .fonts--stage-two .tablist__item, .fonts--stage-two .examples .examples__tabs .tablist__item, .examples .examples__tabs .fonts--stage-two .tablist__item, .fonts--stage-two .list-section__tooltip {
+  .fonts--stage-two strong, .fonts--stage-two .tablist__section .tablist__item, .tablist__section .fonts--stage-two .tablist__item, .fonts--stage-two .examples .examples__tabs .tablist__item, .examples .examples__tabs .fonts--stage-two .tablist__item, .fonts--stage-two .list-section__tooltip, .fonts--stage-two .overview__tooltip {
     font-family: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 button, .button, input[type="button"], input[type="submit"], h1,
@@ -381,7 +377,7 @@ h6 a:focus:not(:active),
 .hero--products-application .usp--icon .usp__label a:focus:not(:active),
 .overflow-container__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
-.content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .legal__link:focus:not(:hover), .footer-nav__link:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .legal__link:focus:not(:active), .footer-nav__link:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .search__input:focus, .tabs__list_link:focus:not(:hover), .tabs__list_link:focus:not(:active), .overflow-container__link:focus:not(:hover), .overflow-container__link:focus:not(:active) {
+.content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .legal__link:focus:not(:hover), .footer-nav__link:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .legal__link:focus:not(:active), .footer-nav__link:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .search__input:focus, .overflow-container__link:focus:not(:hover), .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
 
 .color--selected, .auto-complete__dropdown {
@@ -915,6 +911,7 @@ button, .button, input[type="button"], input[type="submit"] {
       padding-bottom: 12px; } }
 
 .button--primary {
+  margin-right: 25px;
   padding-right: 5px; }
   .button--primary:before {
     content: '';
@@ -933,12 +930,6 @@ button, .button, input[type="button"], input[type="submit"] {
     bottom: 0;
     width: 25px;
     background-color: inherit; }
-  * + .button--primary {
-    margin-right: 37px;
-    margin-bottom: 36px; }
-  @media (min-width: 768px) {
-    .button--primary {
-      margin-bottom: 48px; } }
   .button--primary:hover:before, .button--primary:focus:before {
     border-color: transparent transparent #24bcf3 transparent; }
 
@@ -1413,16 +1404,6 @@ a {
       line-height: 24px;
       margin-top: 5px;
       margin-bottom: 31px; } }
-  :not(.link--large) + .link--large {
-    display: table;
-    transform: translateY(-6px); }
-  .button + .link--large,
-  .button--primary + .link--large {
-    display: inline; }
-    @media (max-width: 568px) {
-      .button + .link--large,
-      .button--primary + .link--large {
-        display: table; } }
 
 .link .link__underline, .toggle .link__underline, .legal__link .link__underline, .footer-nav__link .link__underline, .overflow-container__link:hover .link__underline, .overflow-container__link.exact-active .link__underline,
 .link--large .link__underline {
@@ -2009,20 +1990,6 @@ table tfoot {
 
 .flexgrid--justify-space-between [class*="flexgrid__cell"], .flexgrid--justify-space-around [class*="flexgrid__cell"], .flexgrid--justify-space-evenly [class*="flexgrid__cell"], .flexgrid--justify-right [class*="flexgrid__cell"] {
   flex-grow: 0; }
-
-.container, .footer__container {
-  max-width: 1201px;
-  margin: 0 auto;
-  padding: 60px 12px; }
-  @media (min-width: 768px) {
-    .container, .footer__container {
-      padding: 60px 24px; } }
-  @media (min-width: 1025px) {
-    .container, .footer__container {
-      padding: 60px 48px; } }
-  @media (min-width: 1201px) {
-    .container, .footer__container {
-      padding: 60px 60px; } }
 
 .flexgrid {
   display: flex;
@@ -3015,41 +2982,38 @@ table tfoot {
     transform: rotate(-90deg);
     left: 50%; }
 
-.cta__block .button.button--primary + .link.link--large, .cta__block .button.button--primary + .link--large.toggle, .cta__block .button.button--primary + .link--large.legal__link, .cta__block .button.button--primary + .link--large.footer-nav__link, .cta__block .button.button--primary + .link--large.overflow-container__link:hover, .cta__block .button.button--primary + .link--large.overflow-container__link.exact-active {
-  margin: 24px 0 0 0;
-  transform: none; }
-
-@media (min-width: 569px) {
-  .cta__block .button.button--primary {
-    margin-right: 48px; }
-  .cta__block .button.button--primary ~ .link.link--large, .cta__block .button.button--primary ~ .link--large.toggle, .cta__block .button.button--primary ~ .link--large.legal__link, .cta__block .button.button--primary ~ .link--large.footer-nav__link, .cta__block .button.button--primary ~ .link--large.overflow-container__link:hover, .cta__block .button.button--primary ~ .link--large.overflow-container__link.exact-active {
-    display: inline-block;
-    margin: 12px 0 0 0; } }
-
-.container > .cta__block, .footer__container > .cta__block {
+.cta__block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0;
-  margin-top: 60px; }
-  @media (min-width: 569px) {
-    .container > .cta__block, .footer__container > .cta__block {
-      text-align: center;
-      display: block; } }
-  .container > .cta__block .link--large, .footer__container > .cta__block .link--large {
-    vertical-align: baseline; }
-  .container > .cta__block > a, .footer__container > .cta__block > a {
-    margin-bottom: 30px;
-    margin-right: 0; }
+  margin-bottom: 0; }
+  .hero .cta__block {
+    align-items: flex-start; }
     @media (min-width: 768px) {
-      .container > .cta__block > a, .footer__container > .cta__block > a {
-        margin-right: 30px;
+      .hero .cta__block {
+        align-items: center; } }
+  .cta__block > a {
+    margin-right: 0;
+    margin-bottom: 24px; }
+    .cta__block > a:last-of-type {
+      margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .cta__block {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      flex-wrap: wrap; }
+      .cta__block > a {
+        margin-bottom: 0;
+        margin-right: 24px; }
+      .cta__block > a:not(.button--primary) {
+        margin-right: 24px; }
+      .cta__block > a.button--primary + a {
+        margin-left: 24px; }
+      .cta__block--footer > a:not(.button--primary) {
         margin-bottom: 0; }
-        .container > .cta__block > a:last-child, .footer__container > .cta__block > a:last-child {
-          margin-right: 0; } }
-    @media (min-width: 768px) {
-      .container > .cta__block > a.link--large, .footer__container > .cta__block > a.link--large {
-        margin-bottom: 0; } }
+      .cta__block--footer > a:last-child {
+        margin-right: 0; } }
 
 .tag {
   display: flex;
@@ -3069,6 +3033,44 @@ table tfoot {
   margin: 0; }
   .tag-list__item .tag {
     margin-left: 0; }
+
+.container, .footer__container {
+  max-width: 1201px;
+  margin: 0 auto 60px;
+  padding: 60px 12px 0 12px; }
+  @media (min-width: 768px) {
+    .container, .footer__container {
+      padding: 60px 24px 0 24px; } }
+  @media (min-width: 1025px) {
+    .container, .footer__container {
+      padding: 60px 60px 0 60px; } }
+  .preferences-bar .container, .preferences-bar .footer__container {
+    margin: 0 auto;
+    padding-bottom: 60px; }
+  .container.hero__container, .hero__container.footer__container {
+    padding-bottom: 60px; }
+  .footer .container, .footer .footer__container {
+    margin-bottom: 0; }
+
+.container.brands__container, .brands__container.footer__container, .container.examples__container, .examples__container.footer__container, .container.ecosystem__container, .ecosystem__container.footer__container, .container.explore__container, .explore__container.footer__container, .container.case__container, .case__container.footer__container, .container.general-content__container, .general-content__container.footer__container, .container.slider-reveal__container, .slider-reveal__container.footer__container {
+  margin: 0 auto;
+  padding: 60px 12px 60px 12px; }
+  @media (min-width: 768px) {
+    .container.brands__container, .brands__container.footer__container, .container.examples__container, .examples__container.footer__container, .container.ecosystem__container, .ecosystem__container.footer__container, .container.explore__container, .explore__container.footer__container, .container.case__container, .case__container.footer__container, .container.general-content__container, .general-content__container.footer__container, .container.slider-reveal__container, .slider-reveal__container.footer__container {
+      padding: 60px 24px 60px 24px; } }
+  @media (min-width: 1025px) {
+    .container.brands__container, .brands__container.footer__container, .container.examples__container, .examples__container.footer__container, .container.ecosystem__container, .ecosystem__container.footer__container, .container.explore__container, .explore__container.footer__container, .container.case__container, .case__container.footer__container, .container.general-content__container, .general-content__container.footer__container, .container.slider-reveal__container, .slider-reveal__container.footer__container {
+      padding: 60px; } }
+
+.hero--products-application .container, .hero--products-application .footer__container {
+  margin: 0 auto;
+  padding: 60px 12px 60px 12px; }
+  @media (min-width: 768px) {
+    .hero--products-application .container, .hero--products-application .footer__container {
+      padding: 60px 24px 60px 24px; } }
+  @media (min-width: 1025px) {
+    .hero--products-application .container, .hero--products-application .footer__container {
+      padding: 60px; } }
 
 .flyout, .main-nav__flyout {
   display: flex;
@@ -3681,7 +3683,7 @@ table tfoot {
   max-width: 100%;
   padding: 0;
   margin-bottom: 0;
-  overflow-x: auto;
+  overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   border: 1px solid #E3E3E3; }
@@ -3716,64 +3718,66 @@ table tfoot {
       .tablist__section .tablist__scroll-hint, .examples .examples__tabs .tablist__scroll-hint {
         display: none; } }
 
-.tabs__nav {
-  position: relative;
-  display: flex;
-  width: 100%;
-  user-select: none;
-  will-change: transform; }
-  @media (min-width: 768px) {
-    .tabs__nav {
-      justify-content: center; } }
-
-.tabs__list {
-  display: flex;
-  padding: 24px 0 1px;
-  border-bottom: 2px solid #EAEAEA; }
-  @media (min-width: 768px) {
-    .tabs__list {
-      flex-wrap: wrap; } }
-
-.tabs__list_item {
-  flex: 0 1 auto;
-  text-align: center;
-  padding: 0 12px 0;
-  margin: 0 0 12px 0; }
-  .tabs__list_item:first-child {
-    padding-left: 24px; }
-  .tabs__list_item:last-child {
-    padding-right: 24px; }
-  @media (min-width: 768px) {
-    .tabs__list_item {
-      display: inline-block; }
-      .tabs__list_item:first-child {
-        padding-left: 18px; }
-      .tabs__list_item:last-child {
-        padding-right: 18px; } }
-
-.tabs__list_link {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
-  min-width: 60px;
-  margin-bottom: 6px;
-  color: #000000; }
-  .tabs__list_link:hover, .tabs__list_link--active {
-    color: #000000; }
-    .tabs__list_link:hover .sub-nav__label:after, .tabs__list_link--active .sub-nav__label:after {
-      width: 100%; }
-
-.tabs__indicator {
-  position: absolute;
-  z-index: 1;
-  display: block;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #000000; }
+.tabs {
+  margin-top: -6px;
+  margin-bottom: 60px; }
+  .tabs__nav {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    user-select: none;
+    will-change: transform; }
+  .tabs__list {
+    display: flex;
+    padding: 0;
+    border-bottom: 2px solid #EAEAEA;
+    overflow-x: scroll; }
+    .tabs__list::-webkit-scrollbar-track {
+      background-color: transparent; }
+    .tabs__list::-webkit-scrollbar {
+      height: 0px;
+      background-color: transparent; }
+    .tabs__list::-webkit-scrollbar-thumb {
+      background-color: transparent; }
+  .tabs__list_item {
+    flex: 0 1 auto;
+    text-align: center; }
+  .tabs__list_link {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    min-width: 60px;
+    margin-bottom: 0;
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    white-space: nowrap; }
+    .tabs__list_link:hover, .tabs__list_link--active {
+      color: #000000; }
+      .tabs__list_link:hover .sub-nav__label:after, .tabs__list_link--active .sub-nav__label:after {
+        width: 100%; }
+    .tabs__list_link:not:focus:not(:active), .tabs__list_link:not:focus:not(:hover) {
+      background-color: transparent;
+      color: #000000; }
+  .tabs__indicator {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #000000; }
+  .tabs__contents .container, .tabs__contents .footer__container {
+    padding-bottom: 0; }
 
 .pager {
   position: relative;
@@ -3987,8 +3991,6 @@ table tfoot {
 .materials-card__taglist {
   margin-bottom: 0; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .card-product {
   position: relative;
   background-color: #FFFFFF;
@@ -4030,15 +4032,8 @@ table tfoot {
 .list-show-all__list .card-product {
   width: 296px; }
 
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--basic:nth-child(even),
-main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .colors:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
-=======
-=======
-.content-block {
-  margin-bottom: 54px; }
-
->>>>>>> fix(content-block): margin to next organism
 .content-block-container__image {
+  background-color: transparent;
   margin: 0 auto 18px;
   overflow: hidden; }
   @media (min-width: 569px) {
@@ -4073,9 +4068,15 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
 .header-block.header-block--subtitle .header-block__subtitle {
   margin-bottom: 54px; }
 
+.footer-block {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer-block:not(:empty) {
+    padding-bottom: 60px; }
+
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--basic:nth-child(even),
-main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .colors:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .overview:nth-child(even) {
->>>>>>> fix(build): add build add header-block
+main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .colors:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even) {
   background-color: #fafafa; }
 
 .hero--basic .hero__subtitle {
@@ -4270,7 +4271,8 @@ main .hero--products:nth-child(even), main .hero--products-application:nth-child
       margin-top: 35px; } }
 
 .hero--cover {
-  position: relative; }
+  position: relative;
+  padding-bottom: 60px; }
   .hero--cover-reset p:last-child, .hero--cover-reset strong:last-child, .hero--cover-reset .tablist__section .tablist__item:last-child, .tablist__section .hero--cover-reset .tablist__item:last-child, .hero--cover-reset .examples .examples__tabs .tablist__item:last-child, .examples .examples__tabs .hero--cover-reset .tablist__item:last-child {
     margin-bottom: 0; }
   .hero--cover .copy--intro,
@@ -4890,29 +4892,40 @@ svg text {
     width: 100%;
     margin: auto; } }
 
-.list-section:not(:last-child) {
-  margin-bottom: 53px; }
+.content-general {
+  margin-top: 60px; }
+  .content-general .flexgrid--gutter {
+    margin: 0; }
 
-<<<<<<< HEAD
-.list-section__count {
-  color: #7F7F7F;
-  font-size: .75em; }
+.content-general__item:last-child {
+  margin-bottom: 0; }
 
-.list-section__footer {
-  text-align: center; }
-  .list-section__footer__button {
-    margin-top: 36px; }
-    @media (min-width: 569px) {
-      .list-section__footer__button {
-        margin-top: 48px; } }
-=======
-.list-section:last-child {
-  margin-bottom: -24px; }
-  .list-section:last-child .list-section-list__button {
-    margin-bottom: 24px; }
-  .list-section:last-child.contentblock {
-    margin-bottom: -54px; }
->>>>>>> fix(list-section): correct margin with content-blocks
+.content-general__image {
+  order: 1;
+  margin: 0 auto 30px auto;
+  position: relative;
+  padding: 0 6px; }
+  @media (min-width: 768px) {
+    .content-general__image {
+      order: inherit;
+      margin: auto; } }
+
+.content-general__image-wrapper {
+  width: 75%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .content-general__image-wrapper {
+      width: 100%; } }
+
+.content-general__content {
+  order: 2;
+  margin-bottom: -12px; }
+  @media (min-width: 768px) {
+    .content-general__content {
+      order: inherit; } }
+
+.list-section + .list-section {
+  margin-top: -12px; }
 
 .list-section__header {
   margin-bottom: 26px; }
@@ -4922,12 +4935,6 @@ svg text {
       display: flex;
       align-items: baseline;
       margin-bottom: 17px; } }
-
-.list-section__info-link {
-  margin-bottom: 0; }
-  @media (min-width: 569px) {
-    .list-section__info-link {
-      margin-left: 24px; } }
 
 .list-section__title {
   margin-bottom: 12px; }
@@ -4942,16 +4949,54 @@ svg text {
   .list-section__tooltip:after {
     left: 12px; }
 
-.list-section-list {
-  margin-top: -12px; }
+.list-section--cards .list-section-list {
+  margin-bottom: 36px; }
+
+.list-section--cards .list-section-list__item {
+  margin-bottom: 12px; }
+  @media (min-width: 768px) {
+    .list-section--cards .list-section-list__item {
+      margin-bottom: 24px; } }
+
+.list-section--cards .list-section__footer {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 60px; }
+  @media (min-width: 768px) {
+    .list-section--cards .list-section__footer {
+      margin-bottom: 60px; } }
+
+.list-section--cards .list-section-list + .list-section__footer {
+  margin-top: -12px;
+  margin-bottom: 36px; }
+  @media (min-width: 768px) {
+    .list-section--cards .list-section-list + .list-section__footer {
+      margin-bottom: 60px; } }
+
+.list-section--blocks .list-section-list__item {
+  margin-bottom: 54px; }
+  @media (min-width: 768px) {
+    .list-section--blocks .list-section-list__item {
+      margin-bottom: 60px; } }
+
+.list-section--blocks .list-section__footer {
+  text-align: center;
+  margin-bottom: 60px; }
+  @media (min-width: 768px) {
+    .list-section--blocks .list-section__footer {
+      margin-bottom: 60px; } }
+
+.list-section__count {
+  color: #7F7F7F;
+  font-size: .75em; }
+  .list-section__count .list-section-list__button {
+    margin-bottom: 24px; }
+
+.list-section__info-link {
+  margin-bottom: 0; }
   @media (min-width: 569px) {
-    .list-section-list {
-      margin-top: -24px; } }
-  .list-section-list__item {
-    margin-top: 12px; }
-    @media (min-width: 569px) {
-      .list-section-list__item {
-        margin-top: 24px; } }
+    .list-section__info-link {
+      margin-left: 24px; } }
 
 .tooltip-enter, .tooltip-leave-to {
   opacity: 0;
@@ -4959,19 +5004,6 @@ svg text {
 
 .tooltip-enter-active, .tooltip-leave-active {
   transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s, left 0s cubic-bezier(0.23, 1, 0.32, 1); }
-
-.overview__title, .overview__subtitle {
-  text-align: center; }
-
-<<<<<<< HEAD
-.overview .cta__block .link--large {
-  padding-left: 0; }
-=======
-.list-section-list__button {
-  margin: 24px 0 0 0; }
-  @media (min-width: 569px) {
-    .list-section-list__button {
-      margin: 24px 0 0 0; } }
 
 .overview__tooltip {
   font-size: 14px;
@@ -4982,14 +5014,25 @@ svg text {
   transform: translateY(calc(-100% - 36px)); }
   .overview__tooltip:after {
     left: 12px; }
+  .overview__tooltip .cta__block .link--large {
+    padding-left: 0; }
 
-.tooltip-enter, .tooltip-leave-to {
-  opacity: 0;
-  transform: translateY(calc(-100% - 42px)); }
+@media (min-width: 768px) {
+  .tabbed-content__header {
+    margin: 0 auto; } }
 
-.tooltip-enter-active, .tooltip-leave-active {
-  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s, left 0s cubic-bezier(0.23, 1, 0.32, 1); }
->>>>>>> fix(build): add build add header-block
+.tabbed-content__title {
+  position: relative;
+  margin-bottom: 24px;
+  text-align: center; }
+
+.tabbed-content__title + .tabbed-content__subtitle {
+  margin-top: 0;
+  margin-bottom: 24px; }
+
+.tabbed-content__subtitle {
+  position: relative;
+  text-align: center; }
 
 /*
 * Because we have a primary and secondary font family, we need to define both

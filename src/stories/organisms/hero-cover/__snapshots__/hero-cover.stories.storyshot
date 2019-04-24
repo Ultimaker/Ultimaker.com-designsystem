@@ -48,27 +48,23 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
             <div
               class="cta__block"
             >
-              <div
-                class="cta__video"
+              <a
+                class="link link--icon link--large undefined"
+                href="https://www.youtube.com/watch?v=hwhvByj8YG8"
+                target="_blank"
               >
-                <a
-                  class="link link--large link--icon"
-                  href="https://www.youtube.com/watch?v=hwhvByj8YG8"
-                  target="_blank"
+                <!---->
+                 
+                <span
+                  class="link__underline"
                 >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-            Watch video
-        
-                  </span>
-                </a>
+                  
+        Watch video
+    
+                </span>
                  
                 <!---->
-              </div>
+              </a>
             </div>
           </div>
         </section>

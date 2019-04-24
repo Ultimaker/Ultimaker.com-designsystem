@@ -1,4 +1,9 @@
 .list-section {
+
+    + .list-section {
+        margin-top: - $buildingUnit;
+    }
+
     &__header {
         margin-bottom: 26px;
 
@@ -35,9 +40,9 @@
 
     &--cards {
         .list-section-list {
-            margin-bottom: $buildingUnit;
+            margin-bottom: $buildingUnit * 3;
             @include min-tablet() {
-                margin-bottom: $buildingUnit * 3;
+
             }
         }
 
@@ -50,18 +55,18 @@
 
         .list-section__footer {
             text-align: center;
-
+            margin-top: $buildingUnit * 2;
+            margin-bottom: $buildingUnit * 5;
             @include min-tablet() {
                 margin-bottom: $buildingUnit * 5;
             }
         }
 
         .list-section-list + .list-section__footer {
-            margin-top: $buildingUnit * 2;
-
-            margin-bottom: $buildingUnit * 5;
+            margin-top: -$buildingUnit;
+            margin-bottom: $buildingUnit * 3;
             @include min-tablet() {
-                margin-top: $buildingUnit * 2;
+                margin-bottom: $buildingUnit * 5;
             }
         }
 

@@ -89,9 +89,13 @@
                 "type": "ListSection",
                 "title": "Title",
                 "limit": {
-                    "smallScreen": 3
+                    "smallScreen": 3,
+                    "largeScreen": 6
                 },
                 "showAllLabel": "Show all",
+                "expand": {
+                    "label": "Show all"
+                },
                 "cards": [
                     {
                         "type": "BusinessCard",
