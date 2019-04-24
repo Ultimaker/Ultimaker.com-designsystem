@@ -31,6 +31,7 @@ export {default as Tab} from 'molecules/tab';
 export {default as Tabs} from 'molecules/tabs';
 export {default as Tag} from 'molecules/tag';
 export {default as TagList} from 'molecules/tag-list';
+export {default as BlockIcon} from 'molecules/block-icon';
 
 export {default as HeroHeading} from 'molecules/hero-heading';
 
