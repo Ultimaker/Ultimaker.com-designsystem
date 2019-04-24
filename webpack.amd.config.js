@@ -18,7 +18,7 @@ const webpackConfig = {
     },
     output: {
         path: resolve('dist'),
-        publicPath: '/dist',
+        publicPath: '/dist/',
         library: 'components',
         libraryTarget: 'amd',
         filename: `[name].js`,
