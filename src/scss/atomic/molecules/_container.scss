@@ -1,8 +1,15 @@
 .container {
     max-width: $desktopHdWidth;
     margin: 0 auto ($buildingUnit * 5);
-    padding: ($buildingUnit * 5) ($buildingUnit * 5) 0 ($buildingUnit * 5);
+    padding: ($buildingUnit * 5) ($buildingUnit * 1) 0 ($buildingUnit * 1);
 
+    @include min-tablet() {
+        padding: ($buildingUnit * 5) ($buildingUnit * 2) 0 ($buildingUnit * 2);
+    }
+
+    @include min-desktop() {
+        padding: ($buildingUnit * 5) ($buildingUnit * 5) 0 ($buildingUnit * 5);
+    }
 
     .preferences-bar & {
         margin: 0 auto;
@@ -11,6 +18,10 @@
 
     &.hero__container {
         padding-bottom: $buildingUnit * 5;
+    }
+
+    .footer & {
+        margin-bottom: 0;
     }
 }
 
@@ -22,15 +33,28 @@
     &.ecosystem__container,
     &.explore__container,
     &.case__container,
-    &.general-content__container{
+    &.general-content__container,
+    &.slider-reveal__container {
         margin: 0 auto;
-        padding: $buildingUnit * 5;
+        padding: ($buildingUnit * 5) ($buildingUnit * 1) ($buildingUnit * 5) ($buildingUnit * 1);
+        @include min-tablet() {
+            padding: ($buildingUnit * 5) ($buildingUnit * 2) ($buildingUnit * 5) ($buildingUnit * 2);
+        }
+        @include min-desktop() {
+            padding: $buildingUnit * 5;
+        }
     }
 }
 
 .hero--products-application {
     .container{
         margin: 0 auto;
-        padding: $buildingUnit * 5;
+        padding: ($buildingUnit * 5) ($buildingUnit * 1) ($buildingUnit * 5) ($buildingUnit * 1);
+        @include min-tablet() {
+            padding: ($buildingUnit * 5) ($buildingUnit * 2) ($buildingUnit * 5) ($buildingUnit * 2);
+        }
+        @include min-desktop() {
+            padding: $buildingUnit * 5;
+        }
     }
 }

@@ -6,13 +6,7 @@
         <h3 class="content-block__headline">{{ title }}</h3>
         <p class="content-block__description">{{ description }}</p>
 
-        <ContentButton v-bind="cta"
-                       class="button"
-                       v-if="cta && cta.type === 'ContentButton'"></ContentButton>
-        <ContentLink v-bind="cta"
-                     class="link link--medium"
-                     v-if="cta && cta.type === 'ContentLink'"></ContentLink>
-        <YoutubeLink v-bind="cta"
-                     v-if="cta.type === 'YoutubeLink' && cta" />
+        <component v-if="cta" v-bind="cta" :is="cta.type" :class="getClassNames(cta.type)"/>
+
     </div>
 </article>

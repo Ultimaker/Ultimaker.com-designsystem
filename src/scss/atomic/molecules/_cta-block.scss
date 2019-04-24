@@ -1,25 +1,51 @@
-.cta__block{
+.cta__block {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
 
-    @include min-tablet(){
+    .hero & {
+        align-items: flex-start;
+        @include min-tablet() {
+            align-items: center;
+        }
+    }
+
+    > a {
+        margin-right: 0;
+        margin-bottom: $buildingUnit * 2;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    @include min-tablet() {
         display: flex;
         flex-direction: row;
         align-items: baseline;
         flex-wrap: wrap;
 
-        > a:not(.button--primary){
+        > a {
+            margin-bottom: 0;
             margin-right: $buildingUnit * 2;
         }
-        > a.button--primary +  a{
+
+        > a:not(.button--primary) {
+            margin-right: $buildingUnit * 2;
+        }
+
+        > a.button--primary + a {
             margin-left: $buildingUnit * 2;
         }
 
         &--footer {
-            > a:not(.button--primary){
+            > a:not(.button--primary) {
                 margin-bottom: 0;
+            }
+
+            > a:last-child {
+                margin-right: 0;
             }
         }
     }
