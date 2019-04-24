@@ -1,0 +1,13 @@
+---
+to: src/js/components/<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/<%= h.changeCase.paramCase(name) %>/<%= h.changeCase.paramCase(name) %>.ts
+---
+import { Vue, Component } from 'vue-property-decorator';
+import { <%= h.changeCase.pascal(name) %>Props } from './<%= h.changeCase.paramCase(name) %>.models';
+import './<%= h.changeCase.paramCase(name) %>.scss';
+
+@Component({
+    name: '<%= h.changeCase.pascal(name) %>',
+    template: require('./<%= h.changeCase.paramCase(name) %>.vue.html'),
+})
+
+export default class <%= h.changeCase.pascal(name) %> extends Vue implements <%= h.changeCase.pascal(name) %>Props {}
