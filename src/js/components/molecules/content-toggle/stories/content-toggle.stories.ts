@@ -1,21 +1,20 @@
-import { storiesOf } from '@storybook/vue';
 import { action } from '@storybook/addon-actions';
-import { withKnobs } from '@storybook/addon-knobs';
-import getKnobs from '../data/knobs/content-toggle.knobs';
-
-const getNotes = () => {
-    return {
-        notes: require('./content-toggle.md'),
-    };
-};
+import { data } from '../data/examples/content-toggle.data';
+import addNotes from 'src/stories/helpers/add-notes';
+import addStories from 'src/stories/helpers/add-stories';
+import getKnobs from 'src/stories/helpers/get-knobs';
+import knobsFormat from '../data/knobs/content-toggle.knobs-format';
 
 const getStory = (type) => {
     return () => {
-        const knobs = getKnobs(type);
+        const knobs = getKnobs(
+            data[type],
+            knobsFormat,
+        );
 
         return {
             methods: {
-                toggle: action('toggle'),
+                toggle: action('toggle emitted'),
             },
             props: {
                 collapsedIcon: {
@@ -39,10 +38,10 @@ const getStory = (type) => {
     };
 };
 
-storiesOf('Molecules|buttons/content-toggle', module)
-    .addDecorator(withKnobs)
-    .add(
-        'default',
-        getStory('default'),
-        getNotes(),
-    );
+addStories({
+    data,
+    getStory,
+    decorators: ['withKnobs'],
+    kind: 'Molecules|buttons/content-toggle',
+    notes: addNotes(require('./content-toggle.md')),
+});

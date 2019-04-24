@@ -1,4 +1,4 @@
-const data = {
+export const data = {
     default: {
         className: '',
         text: 'input submit default',
