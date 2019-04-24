@@ -12,12 +12,6 @@
     margin: 0 auto;
 }
 
-.general-content__item{
-    &:last-child(){
-        margin-bottom: 0;
-    }
-}
-
 @include min-mobile-xl() {
 
     .general-content__image-wrapper{

@@ -1,115 +1,106 @@
-.list-section {
+.list-section +  .list-section {
+    margin-top: - $buildingUnit;
+}
 
-    + .list-section {
-        margin-top: - $buildingUnit;
+.list-section__header {
+    margin-bottom: 26px;
+
+    @include min-mobile-xl {
+        flex-direction: row;
+        display: flex;
+        align-items: baseline;
+
+        margin-bottom: 17px;
     }
+}
 
-    &__header {
-        margin-bottom: 26px;
+.list-section __title {
+    margin-bottom: $buildingUnit;
+}
 
-        @include min-mobile-xl {
-            flex-direction: row;
-            display: flex;
-            align-items: baseline;
+.list-section__tooltip {
+    @extend %fontPrimary;
+    @include font-line-ratio(prim-s);
 
-            margin-bottom: 17px;
+    max-width: 296px;
+    position: absolute;
+    opacity: 1;
+    transform: translateY(calc(-100% - 36px));
+
+    &:after {
+        left: $buildingUnit;
+    }
+}
+
+.list-section-list {
+    @extend %reset-list;
+
+    .list-section--cards & {
+        margin-bottom: $buildingUnit * 3;
+    }
+}
+
+.list-section-list + .list-section__footer {
+
+    .list-section--cards & {
+        margin-top: -$buildingUnit;
+        margin-bottom: $buildingUnit * 3;
+        @include min-tablet() {
+            margin-bottom: $buildingUnit * 5;
         }
     }
+}
 
-     &__title {
+.list-section-list__item{
+    .list-section--cards & {
         margin-bottom: $buildingUnit;
-    }
-
-    &__tooltip {
-        @extend %fontPrimary;
-        @include font-line-ratio(prim-s);
-
-        max-width: 296px;
-        position: absolute;
-        opacity: 1;
-        transform: translateY(calc(-100% - 36px));
-
-        &:after {
-            left: $buildingUnit;
-        }
-    }
-
-    &-list {
-        @extend %reset-list;
-    }
-
-    &--cards {
-        .list-section-list {
-            margin-bottom: $buildingUnit * 3;
-            @include min-tablet() {
-
-            }
-        }
-
-        .list-section-list__item{
-            margin-bottom: $buildingUnit;
-            @include min-tablet() {
-                margin-bottom: $buildingUnit * 2;
-            }
-        }
-
-        .list-section__footer {
-            text-align: center;
-            margin-top: $buildingUnit * 2;
-            margin-bottom: $buildingUnit * 5;
-            @include min-tablet() {
-                margin-bottom: $buildingUnit * 5;
-            }
-        }
-
-        .list-section-list + .list-section__footer {
-            margin-top: -$buildingUnit;
-            margin-bottom: $buildingUnit * 3;
-            @include min-tablet() {
-                margin-bottom: $buildingUnit * 5;
-            }
-        }
-
-    }
-
-
-    &--blocks {
-        .list-section-list {
-
-        }
-
-        .list-section-list__item{
-            margin-bottom: $buildingUnit * 4.5;
-            @include min-tablet() {
-                margin-bottom: $buildingUnit * 5;
-            }
-        }
-
-        .list-section__footer {
-            text-align: center;
-            margin-bottom: $buildingUnit * 5;
-
-            @include min-tablet() {
-                margin-bottom: $buildingUnit * 5;
-            }
-        }
-    }
-
-    &__count {
-        color: $colorGrayDark;
-        font-size: .75em;
-
-        .list-section-list__button {
+        @include min-tablet() {
             margin-bottom: $buildingUnit * 2;
         }
     }
 
-    &__info-link {
-        margin-bottom: 0;
-
-        @include min-mobile-xl {
-            margin-left: $buildingUnit * 2;
+    .list-section--blocks & {
+        margin-bottom: $buildingUnit * 4.5;
+        @include min-tablet() {
+            margin-bottom: $buildingUnit * 5;
         }
+    }
+}
+
+.list-section__footer {
+    .list-section--cards & {
+        text-align: center;
+        margin-top: $buildingUnit * 2;
+        margin-bottom: $buildingUnit * 5;
+        @include min-tablet() {
+            margin-bottom: $buildingUnit * 5;
+        }
+    }
+
+    .list-section--blocks & {
+        text-align: center;
+        margin-bottom: $buildingUnit * 5;
+
+        @include min-tablet() {
+            margin-bottom: $buildingUnit * 5;
+        }
+    }
+}
+
+.list-section__count {
+    color: $colorGrayDark;
+    font-size: .75em;
+}
+
+.list-section-list__button {
+    margin-bottom: $buildingUnit * 2;
+}
+
+.list-section__info-link {
+    margin-bottom: 0;
+
+    @include min-mobile-xl {
+        margin-left: $buildingUnit * 2;
     }
 }
 

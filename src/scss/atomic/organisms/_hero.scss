@@ -18,6 +18,13 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     }
 }
 
+.cta__block--hero {
+    align-items: flex-start;
+    @include min-tablet() {
+        align-items: center;
+    }
+}
+
 .hero--basic,
 .hero--products {
     @extend .organism;
