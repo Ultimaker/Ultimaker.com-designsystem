@@ -1,4 +1,4 @@
-const data = {
+export const data = {
     default: {
         collapsedIcon: 'angle-down',
         collapsedText: 'More',

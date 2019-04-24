@@ -1,16 +1,15 @@
-import { storiesOf } from '@storybook/vue';
-import { withKnobs } from '@storybook/addon-knobs';
-import getKnobs from '../data/knobs/icon-button.knobs';
-
-const getNotes = () => {
-    return {
-        notes: require('./icon-button.md'),
-    };
-};
+import { data } from '../data/examples/icon-button.data';
+import addNotes from 'src/stories/helpers/add-notes';
+import addStories from 'src/stories/helpers/add-stories';
+import getKnobs from 'src/stories/helpers/get-knobs';
+import knobsFormat from '../data/knobs/icon-button.knobs-format';
 
 const getStory = (type) => {
     return () => {
-        const knobs = getKnobs(type);
+        const knobs = getKnobs(
+            data[type],
+            knobsFormat,
+        );
 
         return {
             data() {
@@ -34,45 +33,10 @@ const getStory = (type) => {
     };
 };
 
-storiesOf('Molecules|buttons/icon-button', module)
-    .addDecorator(withKnobs)
-    .add(
-        'default',
-        getStory('default'),
-        getNotes(),
-    )
-    .add(
-        'default, no slot',
-        getStory('defaultNoSlot'),
-        getNotes(),
-    )
-    .add(
-        'large',
-        getStory('large'),
-        getNotes(),
-    )
-    .add(
-        'large, no slot',
-        getStory('largeNoSlot'),
-        getNotes(),
-    )
-    .add(
-        'small',
-        getStory('small'),
-        getNotes(),
-    )
-    .add(
-        'small, no slot',
-        getStory('smallNoSlot'),
-        getNotes(),
-    )
-    .add(
-        'underline',
-        getStory('underline'),
-        getNotes(),
-    )
-    .add(
-        'underline, no slot',
-        getStory('underlineNoSlot'),
-        getNotes(),
-    );
+addStories({
+    data,
+    getStory,
+    decorators: ['withKnobs'],
+    kind: 'Molecules|buttons/icon-button',
+    notes: addNotes(require('./icon-button.md')),
+});

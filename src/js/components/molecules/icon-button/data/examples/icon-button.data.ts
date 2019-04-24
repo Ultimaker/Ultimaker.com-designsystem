@@ -1,4 +1,4 @@
-const data = {
+export const data = {
     default: {
         buttonAriaLabel: 'icon button default',
         buttonClass: '',
