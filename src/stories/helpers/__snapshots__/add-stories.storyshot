@@ -1,0 +1,399 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms|buttons//input/button default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <input
+      class="button"
+      type="button"
+      value="button default"
+    />
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons//input/button primary 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <input
+      class="button button--primary"
+      type="button"
+      value="button primary"
+    />
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons//input/button secondary 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <input
+      class="button button--secondary"
+      type="button"
+      value="button secondary"
+    />
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons//input/submit default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <input
+      class="button"
+      type="submit"
+      value="button default"
+    />
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons//input/submit primary 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <input
+      class="button button--primary"
+      type="submit"
+      value="button primary"
+    />
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons//input/submit secondary 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <input
+      class="button button--secondary"
+      type="submit"
+      value="button secondary"
+    />
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons/anchor default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      class="button"
+    >
+      anchor button default
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons/anchor primary 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      class="button button--primary"
+    >
+      anchor button primary
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons/anchor secondary 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      class="button button--secondary"
+    >
+      anchor button secondary
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons/button default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <button
+      class="button"
+    >
+      button default
+    </button>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons/button primary 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <button
+      class="button button--primary"
+    >
+      button primary
+    </button>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|buttons/button secondary 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <button
+      class="button button--secondary"
+    >
+      button secondary
+    </button>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/content-toggle default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      class="toggle toggle--icon"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <span>
+        More
+      </span>
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="icon button default"
+      class="icon-button"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <span
+        class="icon-button__label"
+      >
+        icon button default
+      </span>
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button defaultNoSlot 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="icon button default, no slot"
+      class="icon-button"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <!---->
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button large 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="icon button large"
+      class="icon-button icon-button--large"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <span
+        class="icon-button__label"
+      >
+        icon button large
+      </span>
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button largeNoSlot 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="icon button large, no slot"
+      class="icon-button icon-button--large"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <!---->
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button small 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="icon button small"
+      class="icon-button icon-button--small"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <span
+        class="icon-button__label"
+      >
+        icon button small
+      </span>
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button smallNoSlot 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="icon button small, no slot"
+      class="icon-button icon-button--small"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <!---->
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button underline 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="icon button underline-large"
+      class="icon-button icon-button--underline-large"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <span
+        class="icon-button__label"
+      >
+        icon button underline
+      </span>
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button underlineNoSlot 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="icon button underline-large, no slot"
+      class="icon-button icon-button--underline-large"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <!---->
+    </a>
+  </section>
+</section>
+`;
