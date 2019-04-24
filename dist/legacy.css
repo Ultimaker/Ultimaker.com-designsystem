@@ -343,11 +343,11 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .fonts--stage-two .overview__tooltip {
     font-family: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .icon-button--underline-large, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block .header-block__subtitle {
+.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .icon-button--underline-large, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-  .um-components .fonts--stage-one button, .um-components .fonts--stage-one .button, .um-components .fonts--stage-one input[type="button"], .um-components .fonts--stage-one input[type="submit"], .um-components .fonts--stage-one h1, .um-components .fonts--stage-one h2, .um-components .fonts--stage-one h3, .um-components .fonts--stage-one q, .um-components .fonts--stage-one .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .icon-button--underline-large, .um-components .fonts--stage-one .link--large, .um-components .fonts--stage-one .currency, .um-components .fonts--stage-one .main-nav__link, .um-components .fonts--stage-one .search__input, .um-components .fonts--stage-one .header-block .header-block__subtitle, .um-components .header-block .fonts--stage-one .header-block__subtitle {
+  .um-components .fonts--stage-one button, .um-components .fonts--stage-one .button, .um-components .fonts--stage-one input[type="button"], .um-components .fonts--stage-one input[type="submit"], .um-components .fonts--stage-one h1, .um-components .fonts--stage-one h2, .um-components .fonts--stage-one h3, .um-components .fonts--stage-one q, .um-components .fonts--stage-one .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .icon-button--underline-large, .um-components .fonts--stage-one .link--large, .um-components .fonts--stage-one .currency, .um-components .fonts--stage-one .main-nav__link, .um-components .fonts--stage-one .search__input, .um-components .fonts--stage-one .header-block__subtitle {
     font-family: "fugue-init", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-  .um-components .fonts--stage-two button, .um-components .fonts--stage-two .button, .um-components .fonts--stage-two input[type="button"], .um-components .fonts--stage-two input[type="submit"], .um-components .fonts--stage-two h1, .um-components .fonts--stage-two h2, .um-components .fonts--stage-two h3, .um-components .fonts--stage-two q, .um-components .fonts--stage-two .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .icon-button--underline-large, .um-components .fonts--stage-two .link--large, .um-components .fonts--stage-two .currency, .um-components .fonts--stage-two .main-nav__link, .um-components .fonts--stage-two .search__input, .um-components .fonts--stage-two .header-block .header-block__subtitle, .um-components .header-block .fonts--stage-two .header-block__subtitle {
+  .um-components .fonts--stage-two button, .um-components .fonts--stage-two .button, .um-components .fonts--stage-two input[type="button"], .um-components .fonts--stage-two input[type="submit"], .um-components .fonts--stage-two h1, .um-components .fonts--stage-two h2, .um-components .fonts--stage-two h3, .um-components .fonts--stage-two q, .um-components .fonts--stage-two .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .icon-button--underline-large, .um-components .fonts--stage-two .link--large, .um-components .fonts--stage-two .currency, .um-components .fonts--stage-two .main-nav__link, .um-components .fonts--stage-two .search__input, .um-components .fonts--stage-two .header-block__subtitle {
     font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
@@ -378,7 +378,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .overview__tooltip {
   font-family: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .icon-button--underline-large, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block .header-block__subtitle {
+.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .icon-button--underline-large, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle {
   font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"] {
@@ -2484,32 +2484,30 @@ because both families serve another purpose. Therefore the line-heights will be 
   flex-direction: column;
   align-items: center;
   margin-bottom: 0; }
-  .um-components .hero .cta__block {
-    align-items: flex-start; }
-    @media (min-width: 768px) {
-      .um-components .hero .cta__block {
-        align-items: center; } }
-  .um-components .cta__block > a {
-    margin-right: 0;
-    margin-bottom: 24px; }
-    .um-components .cta__block > a:last-of-type {
-      margin-bottom: 0; }
   @media (min-width: 768px) {
     .um-components .cta__block {
       display: flex;
       flex-direction: row;
       align-items: baseline;
-      flex-wrap: wrap; }
-      .um-components .cta__block > a {
-        margin-bottom: 0;
+      flex-wrap: wrap; } }
+
+.um-components .cta__link {
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 24px; }
+  .um-components .cta__link:last-of-type {
+    margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .um-components .cta__link {
+      margin-bottom: 0;
+      margin-right: 24px; }
+      .um-components .cta__link:not(.button--primary) {
         margin-right: 24px; }
-      .um-components .cta__block > a:not(.button--primary) {
-        margin-right: 24px; }
-      .um-components .cta__block > a.button--primary + a {
+      .um-components .cta__link.button--primary + .cta__link {
         margin-left: 24px; }
-      .um-components .cta__block--footer > a:not(.button--primary) {
+      .um-components .cta__block--footer .cta__link:not(.button--primary) {
         margin-bottom: 0; }
-      .um-components .cta__block--footer > a:last-child {
+      .um-components .cta__block--footer .cta__link:last-child {
         margin-right: 0; } }
 
 .um-components .tag {
@@ -3537,27 +3535,26 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .content-block__content {
   width: 100%; }
 
-.um-components .header-block .header-block__title {
-  text-align: center;
-  position: relative; }
+.um-components .header-block {
+  margin-bottom: 54px; }
 
-.um-components .header-block .header-block__subtitle {
+.um-components .header-block__title {
   text-align: center;
   position: relative;
+  margin-bottom: 0; }
+
+.um-components .header-block__subtitle {
+  text-align: center;
+  position: relative;
+  margin-top: 18px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #7F7F7F; }
   @media (min-width: 768px) {
-    .um-components .header-block .header-block__subtitle {
+    .um-components .header-block__subtitle {
       font-size: 24px;
       line-height: 30px; } }
-
-.um-components .header-block.header-block--subtitle .header-block__title {
-  margin-bottom: 24px; }
-
-.um-components .header-block.header-block--subtitle .header-block__subtitle {
-  margin-bottom: 54px; }
 
 .um-components .footer-block {
   display: flex;
@@ -3579,6 +3576,12 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-top: -5px;
       margin-bottom: 59px;
       margin-top: -41px; } }
+
+.um-components .cta__block--hero {
+  align-items: flex-start; }
+  @media (min-width: 768px) {
+    .um-components .cta__block--hero {
+      align-items: center; } }
 
 @media (max-width: 568px) {
   .um-components .hero--basic .hero__container,
@@ -3770,8 +3773,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .hero--cover .copy--intro,
   .um-components .hero--cover .link--large {
     color: #FFFFFF; }
-  .um-components .hero--cover .link--large {
-    margin: 0; }
 
 .um-components .hero-cover__headline {
   color: #FFFFFF; }
@@ -4369,9 +4370,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   width: 75%;
   margin: 0 auto; }
 
-.um-components .general-content__item:last-child {
-  margin-bottom: 0; }
-
 @media (min-width: 569px) {
   .um-components .general-content__image-wrapper {
     position: absolute;
@@ -4388,9 +4386,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-top: 60px; }
   .um-components .content-general .flexgrid--gutter {
     margin: 0; }
-
-.um-components .content-general__item:last-child {
-  margin-bottom: 0; }
 
 .um-components .content-general__image {
   order: 1;
@@ -4428,7 +4423,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       align-items: baseline;
       margin-bottom: 17px; } }
 
-.um-components .list-section__title {
+.um-components .list-section __title {
   margin-bottom: 12px; }
 
 .um-components .list-section__tooltip {
@@ -4444,20 +4439,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .list-section--cards .list-section-list {
   margin-bottom: 36px; }
 
-.um-components .list-section--cards .list-section-list__item {
-  margin-bottom: 12px; }
-  @media (min-width: 768px) {
-    .um-components .list-section--cards .list-section-list__item {
-      margin-bottom: 24px; } }
-
-.um-components .list-section--cards .list-section__footer {
-  text-align: center;
-  margin-top: 24px;
-  margin-bottom: 60px; }
-  @media (min-width: 768px) {
-    .um-components .list-section--cards .list-section__footer {
-      margin-bottom: 60px; } }
-
 .um-components .list-section--cards .list-section-list + .list-section__footer {
   margin-top: -12px;
   margin-bottom: 36px; }
@@ -4465,10 +4446,24 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .list-section--cards .list-section-list + .list-section__footer {
       margin-bottom: 60px; } }
 
+.um-components .list-section--cards .list-section-list__item {
+  margin-bottom: 12px; }
+  @media (min-width: 768px) {
+    .um-components .list-section--cards .list-section-list__item {
+      margin-bottom: 24px; } }
+
 .um-components .list-section--blocks .list-section-list__item {
   margin-bottom: 54px; }
   @media (min-width: 768px) {
     .um-components .list-section--blocks .list-section-list__item {
+      margin-bottom: 60px; } }
+
+.um-components .list-section--cards .list-section__footer {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 60px; }
+  @media (min-width: 768px) {
+    .um-components .list-section--cards .list-section__footer {
       margin-bottom: 60px; } }
 
 .um-components .list-section--blocks .list-section__footer {
@@ -4481,8 +4476,9 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .list-section__count {
   color: #7F7F7F;
   font-size: .75em; }
-  .um-components .list-section__count .list-section-list__button {
-    margin-bottom: 24px; }
+
+.um-components .list-section-list__button {
+  margin-bottom: 24px; }
 
 .um-components .list-section__info-link {
   margin-bottom: 0; }

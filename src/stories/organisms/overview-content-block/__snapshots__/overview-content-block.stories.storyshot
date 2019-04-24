@@ -18,7 +18,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
           class="container"
         >
           <header
-            class="header-block header-block--subtitle"
+            class="header-block "
           >
             <h2
               class="header-block__title"
@@ -643,7 +643,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
               class="cta__block cta__block--footer"
             >
               <a
-                class="link--primary button"
+                class="link--primary button cta__link"
                 href="https://ultimaker.com"
                 rel="noopener"
                 target="_self"
@@ -659,7 +659,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                 </span>
               </a>
               <a
-                class="link--large link"
+                class="link--large link cta__link"
                 href="https://ultimaker.com"
                 rel="noopener"
                 target="_self"

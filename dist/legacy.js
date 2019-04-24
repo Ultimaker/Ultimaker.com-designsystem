@@ -6563,7 +6563,7 @@ var CtaBlock = function (_Vue) {
     }, {
         key: "classObject",
         value: function classObject(type) {
-            return "" + this.classes[type];
+            return this.classes[type] + " cta__link";
         }
     }, {
         key: "classMod",
@@ -8327,7 +8327,7 @@ exports.default = HeaderBlock;
 /* 230 */
 /***/ (function(module, exports) {
 
-module.exports = "<header :class=\"subtitle ? 'header-block header-block--subtitle' : 'header-block' \">\n    <h2 class=\"header-block__title\">{{ title }}</h2>\n    <p class=\"header-block__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n</header>\n";
+module.exports = "<header class=\"header-block \">\n    <h2 class=\"header-block__title\">{{ title }}</h2>\n    <p class=\"header-block__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n</header>\n";
 
 /***/ }),
 /* 231 */
@@ -11672,7 +11672,7 @@ exports.default = HeroBasic;
 /* 315 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"hero hero--basic\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <h2 class=\"hero__subtitle\" v-if=\"subtitle\">{{ subtitle }}</h2>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <cta-block :ctas=\"ctas.ctas\" v-if=\"ctas\" styleContentButton=\"button button--primary\"\n                               block=\"hero\" />\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--basic\">\n                    <template v-if=\"image\">\n                        <c-image v-bind=\"image\" keep-in-view></c-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n        </div>\n    </section>\n</article>\n";
+module.exports = "<article class=\"hero hero--basic\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <h2 class=\"hero__subtitle\" v-if=\"subtitle\">{{ subtitle }}</h2>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <cta-block mod=\"hero\" :ctas=\"ctas.ctas\" v-if=\"ctas\" styleContentButton=\"button button--primary\"\n                               block=\"hero\" />\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--basic\">\n                    <template v-if=\"image\">\n                        <c-image v-bind=\"image\" keep-in-view></c-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 316 */
@@ -11961,7 +11961,7 @@ exports.default = HeroCover;
 /* 327 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"hero hero--cover\">\n    <div class=\"hero-cover__image--full\">\n        <c-image v-if=\"this.image\" v-bind=\"this.image\" resize-behavior=\"crop\"></c-image>\n    </div>\n\n    <div class=\"hero-cover__image--overlay\"></div>\n    <section class=\"hero-cover__container container\">\n        <div class=\"flexgrid__cell--xs-6 hero--cover-reset\">\n            <h1 class=\"hero-cover__headline\">{{ title }}</h1>\n            <p class=\"copy--intro\" v-if=\"description\">{{ description }}</p>\n            <cta-block :ctas=\"ctas.ctas\" v-if=\"ctas\" styleContentButton=\"\"></cta-block>\n        </div>\n    </section>\n</article>\n";
+module.exports = "<article class=\"hero hero--cover\">\n    <div class=\"hero-cover__image--full\">\n        <c-image v-if=\"this.image\" v-bind=\"this.image\" resize-behavior=\"crop\"></c-image>\n    </div>\n\n    <div class=\"hero-cover__image--overlay\"></div>\n    <section class=\"hero-cover__container container\">\n        <div class=\"flexgrid__cell--xs-6 hero--cover-reset\">\n            <h1 class=\"hero-cover__headline\">{{ title }}</h1>\n            <p class=\"copy--intro\" v-if=\"description\">{{ description }}</p>\n            <cta-block mod=\"hero\" :ctas=\"ctas.ctas\" v-if=\"ctas\" styleContentButton=\"\"></cta-block>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 328 */
