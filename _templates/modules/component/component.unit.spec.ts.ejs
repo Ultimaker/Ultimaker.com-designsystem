@@ -1,0 +1,22 @@
+---
+to: src/js/components/<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/<%= h.changeCase.paramCase(name) %>/<%= h.changeCase.paramCase(name) %>.unit.spec.ts
+---
+
+import 'babel-polyfill';
+import { build } from 'vuenit';
+import <%= h.changeCase.pascal(name) %> from './<%= h.changeCase.paramCase(name) %>';
+
+describe('components', () => {
+    describe('<%= h.inflection.pluralize(h.changeCase.lower(type)) %>', () => {
+        describe('<%= h.changeCase.paramCase(name) %>', () => {
+
+            const mount = build(<%= h.changeCase.pascal(name) %>, { props: {}});
+
+            it('should render an <%= h.changeCase.pascal(name) %> component', () => {
+                const vm = mount();
+                expect(vm.$el).toBeDefined();
+                vm.$destroy();
+            })
+        });
+    });
+});
