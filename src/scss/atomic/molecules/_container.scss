@@ -1,7 +1,8 @@
 .container {
     max-width: $desktopHdWidth;
     margin: 0 auto ($buildingUnit * 5);
-    padding-top: $buildingUnit * 5;
+    padding: ($buildingUnit * 5) ($buildingUnit * 5) 0 ($buildingUnit * 5);
+
 
     .preferences-bar & {
         margin: 0 auto;
