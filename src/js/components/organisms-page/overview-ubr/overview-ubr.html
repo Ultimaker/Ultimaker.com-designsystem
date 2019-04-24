@@ -1,0 +1,11 @@
+<article class="organism overview-ubr">
+    <section class="container">
+        <HeaderBlock :title="title" :subtitle="subtitle" />
+
+        <template v-for="(blockIcon, index) in items">
+            <block-icon v-bind="blockIcon" :key="index"></block-icon>
+        </template>
+
+        <FooterBlock :ctas="ctas" />
+    </section>
+</article>

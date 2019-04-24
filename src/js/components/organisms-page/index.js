@@ -18,6 +18,7 @@ export {default as PageFooter} from 'organisms-page/page-footer';
 export {default as PageHeader} from 'organisms-page/page-header';
 
 export {default as Overview} from 'organisms-page/overview';
+export {default as OverviewUBR} from 'organisms-page/overview-ubr';
 export {default as ContentGeneral} from 'organisms-page/content-general';
 export {default as ContentCover} from 'organisms-page/content-cover';
 

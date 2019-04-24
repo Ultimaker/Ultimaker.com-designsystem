@@ -1,0 +1,10 @@
+<article class="block-icon" tabindex="0">
+    <div class="block-icon__visual">
+        <icon v-if="icon" :icon-name="icon" class="block-icon__icon"></icon>
+    </div>
+    <div class="block-icon__content">
+        <h3 class="block-icon__headline">{{ title }}</h3>
+        <p class="block-icon__description" v-if="description">{{ description }}</p>
+        <component v-if="cta" v-bind="cta" :is="cta.type" :class="getClassNames(cta.type)"/>
+    </div>
+</article>
