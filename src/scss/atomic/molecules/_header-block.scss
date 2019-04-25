@@ -11,7 +11,10 @@
 .header-block__subtitle {
     text-align: center;
     position: relative;
-    margin-top: $buildingUnit * 1.5;
+    margin-top: $buildingUnit * 1.8;
+    @include min-tablet() {
+        margin-top: $buildingUnit * 1.5;
+    }
 
     @extend %fontSecondary;
     font-weight: 400;

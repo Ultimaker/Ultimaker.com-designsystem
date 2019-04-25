@@ -3626,8 +3626,12 @@ table tfoot {
         display: none; } }
 
 .tabs {
-  margin-top: -6px;
-  margin-bottom: 54px; }
+  margin-top: -36px;
+  margin-bottom: 36px; }
+  @media (min-width: 768px) {
+    .tabs {
+      margin-bottom: 54px;
+      margin-top: -37.2px; } }
   .tabs__nav {
     position: relative;
     display: flex;
@@ -3661,18 +3665,12 @@ table tfoot {
     color: #000000;
     font-size: 14px;
     line-height: 21px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 9.5px 12px;
     white-space: nowrap; }
     .tabs__list_link:hover, .tabs__list_link--active {
       color: #000000; }
       .tabs__list_link:hover .sub-nav__label:after, .tabs__list_link--active .sub-nav__label:after {
         width: 100%; }
-    .tabs__list_link:not:focus:not(:active), .tabs__list_link:not:focus:not(:hover) {
-      background-color: transparent;
-      color: #000000; }
     .tabs__list_link > span {
       margin-right: 6px; }
   .tabs__indicator {
@@ -3965,11 +3963,14 @@ table tfoot {
 .header-block__subtitle {
   text-align: center;
   position: relative;
-  margin-top: 18px;
+  margin-top: 21.6px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #7F7F7F; }
+  @media (min-width: 768px) {
+    .header-block__subtitle {
+      margin-top: 18px; } }
   @media (min-width: 768px) {
     .header-block__subtitle {
       font-size: 24px;
@@ -5051,7 +5052,7 @@ svg text {
       display: block; } }
 
 .content-cover-content {
-  margin-top: 30px; }
+  margin-top: 24px; }
   @media (min-width: 768px) {
     .content-cover-content {
       margin-top: 0;
