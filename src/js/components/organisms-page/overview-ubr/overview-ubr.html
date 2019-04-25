@@ -1,7 +1,9 @@
 <article class="organism overview-ubr">
     <section class="container">
         <HeaderBlock :title="title" :subtitle="subtitle" />
-        <BlockIcon v-for="(blockIcon, index) in items" v-bind="blockIcon" :key="index"></BlockIcon>
+        <div class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row">
+            <BlockIcon v-for="(blockIcon, index) in items" :class="flexgridClasses" v-bind="blockIcon" :key="index"></BlockIcon>
+        </div>
         <FooterBlock :ctas="ctas" />
     </section>
 </article>
