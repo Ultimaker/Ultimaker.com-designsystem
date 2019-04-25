@@ -112,6 +112,11 @@
     }
 }
 
+.flexgrid--justify-center {
+    @extend %disable-flex-grow;
+    justify-content: center;
+}
+
 .flexgrid--justify-space-around {
     @extend %disable-flex-grow;
     justify-content: space-around;
