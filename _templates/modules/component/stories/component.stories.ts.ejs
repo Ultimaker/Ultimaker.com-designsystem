@@ -4,6 +4,7 @@ to: src/js/components/<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/<%
 import addNotes from 'src/stories/helpers/add-notes';
 import addStories from 'src/stories/helpers/add-stories';
 import getKnobs from 'src/stories/helpers/get-knobs';
+
 import { data } from '../data/<%= h.changeCase.paramCase(name) %>.data';
 import knobsFormat from './<%= h.changeCase.paramCase(name) %>.knobs-format';
 
@@ -28,9 +29,9 @@ const getStory = (type) => {
 };
 
 addStories({
-   data,
-   getStory,
-   decorators: ['withKnobs'],
-   kind: 'Molecules|buttons/<%= h.changeCase.paramCase(name) %>',
-   notes: addNotes(require('./<%= h.changeCase.paramCase(name) %>.md')),
+    data,
+    getStory,
+    decorators: ['withKnobs'],
+    kind: '<%= h.inflection.pluralize(h.changeCase.ucFirst(type)) %>/<%= h.changeCase.paramCase(name) %>',
+    notes: addNotes(require('./<%= h.changeCase.paramCase(name) %>.md')),
 });
