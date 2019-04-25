@@ -1998,7 +1998,7 @@ table tfoot {
   display: flex;
   flex-direction: column; }
 
-.flexgrid--justify-space-between [class*="flexgrid__cell"], .flexgrid--justify-space-around [class*="flexgrid__cell"], .flexgrid--justify-space-evenly [class*="flexgrid__cell"], .flexgrid--justify-right [class*="flexgrid__cell"] {
+.flexgrid--justify-space-between [class*="flexgrid__cell"], .flexgrid--justify-center [class*="flexgrid__cell"], .flexgrid--justify-space-around [class*="flexgrid__cell"], .flexgrid--justify-space-evenly [class*="flexgrid__cell"], .flexgrid--justify-right [class*="flexgrid__cell"] {
   flex-grow: 0; }
 
 .flexgrid {
@@ -2790,6 +2790,9 @@ table tfoot {
     .flexgrid--justify-space-between [class*="flexgrid__cell"]:nth-child(3n+1):nth-last-child(-n+2) ~ [class*="flexgrid__cell"] {
       margin-right: auto;
       margin-left: 24px; } }
+
+.flexgrid--justify-center {
+  justify-content: center; }
 
 .flexgrid--justify-space-around {
   justify-content: space-around; }
@@ -4018,6 +4021,39 @@ table tfoot {
     background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
   .icon-button--underline-large:hover .icon-button__label, .icon-button--underline-large:hover .sys-nav__label, .icon-button--underline-large:active .icon-button__label, .icon-button--underline-large:active .sys-nav__label, .icon-button--underline-large:visited .icon-button__label, .icon-button--underline-large:visited .sys-nav__label {
     background-size: 0 100%; }
+
+.block-icon__icon,
+.block-icon__image {
+  width: 100%; }
+
+.block-icon__icon {
+  height: 100%; }
+
+.block-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start; }
+  .block-icon:last-child {
+    margin-bottom: 0; }
+  .block-icon .block-icon__visual {
+    flex: 1 1 60px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    max-height: 60px; }
+
+@media (min-width: 569px) {
+  .block-icon__items {
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .block-icon {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
+
+@media (min-width: 768px) {
+  .block-icon__items {
+    flex-flow: row wrap; } }
 
 .auto-complete {
   position: relative;
