@@ -1,2 +1,2 @@
-import BlockIcon from './component';
+import BlockIcon from './block-icon';
 export default BlockIcon;
