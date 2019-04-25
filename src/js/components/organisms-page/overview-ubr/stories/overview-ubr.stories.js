@@ -1,5 +1,5 @@
 import {storiesOf} from '@storybook/vue';
-import overviewUBRData from 'organisms-page/overview-ubr/data/examples/overview-ubr-default';
+import overviewUBRData from 'organisms-page/overview-ubr/data/overview-ubr.data';
 
 storiesOf('organisms|overview-ubr', module)
     .add('Overview Unique buying reasons',
@@ -10,10 +10,10 @@ storiesOf('organisms|overview-ubr', module)
                         data: overviewUBRData
                     };
                 },
-                template: require('./template.html')
+                template: require('./overview-ubr.html')
             };
         },
         {
-            notes: require('./notes.md')
+            notes: require('./overview-ubr.md')
         }
     );
