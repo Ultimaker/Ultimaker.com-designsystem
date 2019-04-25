@@ -31,3 +31,18 @@ NPM Commands
 
 - `lint`: Lints all javascript
 - `build-storybook`: Generate static storybook environment
+
+
+### Hygen Timesavers
+We’ve added [hygen](http://www.hygen.io/), the scalable code generator that saves you time, to the stack so that you can quickly generate a __new__ component using our component standard, which is reflected in the component structure outputted by the command.
+
+Below is an example of issuing the command to create an `atom` component called `my-component`.
+
+```sh
+npx hygen modules component --name my-component --type atom
+```
+
+#### options - type
+* `atom`
+* `molecule`
+* `organism`
