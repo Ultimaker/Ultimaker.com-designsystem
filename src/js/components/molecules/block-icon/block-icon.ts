@@ -3,7 +3,7 @@ import { BlockIcon as IBlockIcon } from '@ultimaker/ultimaker.com-model-definiti
 
 @Component({
     name: 'BlockIcon',
-    template: require('./template.html'),
+    template: require('./block-icon.html'),
 })
 
 export default class BlockIcon extends Vue implements IBlockIcon {

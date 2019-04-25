@@ -1,5 +1,5 @@
 import {storiesOf} from '@storybook/vue';
-import blockIconDefault from 'molecules/block-icon/data/examples/block-icon-default';
+import blockIconDefault from 'molecules/block-icon/data/block-icon.data';
 
 storiesOf('Molecules|block-icon/block-icon', module)
     .add('default',
@@ -10,10 +10,10 @@ storiesOf('Molecules|block-icon/block-icon', module)
                         data: blockIconDefault
                     };
                 },
-                template: require('./template.html')
+                template: require('./block-icon.html')
             };
         },
         {
-            notes: require('./notes.md')
+            notes: require('./block-icon.md')
         }
     );

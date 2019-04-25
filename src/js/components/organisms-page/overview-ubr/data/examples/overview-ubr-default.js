@@ -1,4 +1,4 @@
-import blockIconMock from 'molecules/block-icon/data/examples/block-icon-default';
+import blockIconMock from 'molecules/block-icon/data/block-icon.data';
 
 export default {
     title: 'Lorem ipsum dolor sit amet',
