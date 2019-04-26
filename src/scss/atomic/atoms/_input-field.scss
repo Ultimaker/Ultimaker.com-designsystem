@@ -1,7 +1,3 @@
-$inputBorder: 1px solid $colorGray;
-$inputBorderFocus: 2px solid $colorMain;
-$colorPlaceholder: $colorGrayDark;
-
 input[type="text"] {
     position: relative;
     padding: $buildingUnit + 0.5;

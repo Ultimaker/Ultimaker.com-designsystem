@@ -22,7 +22,6 @@
 @import 'social-nav';
 @import 'notification';
 @import 'preferences-bar';
-@import 'auto-complete';
 @import 'country-selector';
 @import 'tablist';
 @import 'tabs';
@@ -37,5 +36,6 @@
 @import 'content-block';
 @import 'header-block';
 @import 'footer-block';
-@import '~molecules/content-toggle/content-toggle.scss';
-@import '~molecules/icon-button/icon-button.scss';
+@import '~molecules/content-toggle/content-toggle';
+@import '~molecules/icon-button/icon-button';
+@import '~molecules/auto-complete/auto-complete';

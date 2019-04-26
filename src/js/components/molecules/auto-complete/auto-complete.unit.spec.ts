@@ -1,7 +1,7 @@
 /* eslint-disable max-nested-callbacks */
 import 'babel-polyfill';
 import Vue from 'vue';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 import AutoComplete from './auto-complete';
 
 describe('components', () => {
@@ -65,9 +65,9 @@ describe('components', () => {
                         datasource: data.countries,
                         storedItems: [{
                             title: 'Maroc',
-                            value: 'MA'
-                        }]
-                    }
+                            value: 'MA',
+                        }],
+                    },
                 });
 
                 afterAll(() => {
@@ -134,7 +134,6 @@ describe('components', () => {
                     vm.selectItemByInput();
                     await Vue.nextTick();
                     expect(vm.selectedItem.value).toEqual(vm.items[1].value);
-
 
                     vm.input = vm.items[0].value;
                     vm.selectItemByInput();
