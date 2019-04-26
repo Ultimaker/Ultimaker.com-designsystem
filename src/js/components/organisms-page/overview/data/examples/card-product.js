@@ -1,8 +1,8 @@
-import cardNylon from 'molecules/card-product/data/examples/card-product-nylon';
-import cardToughPla from 'molecules/card-product/data/examples/card-product-tough-pla';
-import cardNoImage from 'molecules/card-product/data/examples/card-product-no-image';
-import cardNoProperties from 'molecules/card-product/data/examples/card-product-no-properties';
-import cardNoImageNoProperties from 'molecules/card-product/data/examples/card-product-no-image-no-properties';
+import cardNylon from 'molecules/cards/card-product/data/examples/card-product-nylon';
+import cardToughPla from 'molecules/cards/card-product/data/examples/card-product-tough-pla';
+import cardNoImage from 'molecules/cards/card-product/data/examples/card-product-no-image';
+import cardNoProperties from 'molecules/cards/card-product/data/examples/card-product-no-properties';
+import cardNoImageNoProperties from 'molecules/cards/card-product/data/examples/card-product-no-image-no-properties';
 
 export default {
     type: 'overview',

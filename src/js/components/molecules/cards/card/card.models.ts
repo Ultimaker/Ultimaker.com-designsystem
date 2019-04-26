@@ -1,6 +1,6 @@
-import { ITags } from '../tag-list/tag-list.models';
-import { IImage } from '../../atoms/responsive-picture/responsive-picture.models';
-import { IIcon } from '../../atoms/icon/icon.models';
+import { ITags } from 'components/molecules/tag-list/tag-list.models';
+import { IImage } from 'components/atoms/responsive-picture/responsive-picture.models';
+import { IIcon } from 'components/atoms/icon/icon.models';
 
 export interface ICard {
     title: string;

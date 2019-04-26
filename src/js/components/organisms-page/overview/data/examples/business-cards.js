@@ -1,5 +1,5 @@
-import businessCardMock from 'molecules/business-card/data/examples/business-card-mock';
-import businessCardMakerPoint from 'molecules/business-card/data/examples/business-card-maker-point';
+import businessCardMock from 'molecules/cards/business-card/data/examples/business-card-mock';
+import businessCardMakerPoint from 'molecules/cards/business-card/data/examples/business-card-maker-point';
 import tooltipDefault from 'atoms/tooltip/data/examples/tooltip-default';
 
 export default {

@@ -3,7 +3,6 @@
 @import "currency";
 @import "price-table";
 @import 'grid';
-@import 'card';
 @import 'tooltip';
 @import 'hit-area';
 @import 'color';
@@ -27,14 +26,14 @@
 
 @import 'pager';
 @import 'slider-reveal';
-@import 'brand-card';
-@import 'business-card';
-@import 'material-card';
-
-@import "card-product.scss";
 @import 'content-block';
 @import 'header-block';
 @import 'footer-block';
+@import '~molecules/cards/brand-card/brand-card';
+@import '~molecules/cards/business-card/business-card';
+@import '~molecules/cards/card/card';
+@import "~molecules/cards/card-product/card-product";
+@import '~molecules/cards/material-card/material-card';
 @import '~molecules/content-toggle/content-toggle';
 @import '~molecules/icon-button/icon-button';
 @import '~molecules/auto-complete/auto-complete';

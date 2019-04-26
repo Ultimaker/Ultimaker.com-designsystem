@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue';
 import { withKnobs } from '@storybook/addon-knobs';
 import knobs from './business-card.knobs.stories';
 
-storiesOf('Molecules|layout/cards', module)
+storiesOf('Molecules|cards', module)
     .addDecorator(withKnobs)
     .add('Business Card', () => ({
         props: {

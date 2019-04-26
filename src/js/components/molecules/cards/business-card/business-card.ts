@@ -1,6 +1,6 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { BusinessCard as IBusinessCard } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cards/BusinessCard';
-import Events from 'constants/events';
+import Events from 'src/js/constants/events';
 
 @Component({
     name: 'BusinessCard',
