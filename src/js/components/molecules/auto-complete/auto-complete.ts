@@ -1,15 +1,14 @@
-/* eslint-disable complexity */
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import ViewportUtil from 'utils/viewport';
-import { AutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/AutoCompleteField';
-import { AutoCompleteItem } from './auto-complete.models';
+
+import { AutoCompleteItem, AutoCompleteProps } from './auto-complete.models';
 
 @Component({
     name: 'auto-complete',
-    template: require('./auto-complete.html'),
+    template: require('./auto-complete.vue.html'),
 })
 
-export default class AutoComplete extends Vue implements AutoCompleteField {
+export default class AutoComplete extends Vue implements AutoCompleteProps {
     @Prop({ type: String, default: () => `autocomplete${ ~~(Math.random() * 10000) }` }) inputId!: string;
     @Prop({ type: Object, default: null }) value!: AutoCompleteItem;
     @Prop({ type: Boolean, default: null }) defaultOpen!: boolean;
@@ -19,11 +18,11 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
     @Prop({ type: Boolean, default: false }) required!: boolean;
 
     // Model Definitions
-    @Prop({ type: String, default: null }) label!: AutoCompleteField['label'];
-    @Prop({ type: String, default: null }) placeholder!: AutoCompleteField['placeholder'];
-    @Prop({ type: String, default: null }) highlightedLabel!: AutoCompleteField['highlightedLabel'];
-    @Prop({ type: String, default: '' }) suggestionsLabel!: AutoCompleteField['suggestionsLabel'];
-    @Prop({ required: true }) datasource!: AutoCompleteField['datasource'];
+    @Prop({ type: String, default: null }) label!: AutoCompleteProps['label'];
+    @Prop({ type: String, default: null }) placeholder!: AutoCompleteProps['placeholder'];
+    @Prop({ type: String, default: null }) highlightedLabel!: AutoCompleteProps['highlightedLabel'];
+    @Prop({ type: String, default: '' }) suggestionsLabel!: AutoCompleteProps['suggestionsLabel'];
+    @Prop({ required: true }) datasource!: AutoCompleteProps['datasource'];
 
     input: string =  '';
     selectedItem: AutoCompleteItem | null = null;
