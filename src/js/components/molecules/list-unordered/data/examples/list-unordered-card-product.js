@@ -1,7 +1,7 @@
-import cardDefault from 'molecules/card-product/data/examples/card-product-nylon';
-import cardNoImage from 'molecules/card-product/data/examples/card-product-no-image';
-import cardNoProperties from 'molecules/card-product/data/examples/card-product-no-properties';
-import cardNoImageNoProperties from 'molecules/card-product/data/examples/card-product-no-image-no-properties';
+import cardDefault from 'molecules/cards/card-product/data/examples/card-product-nylon';
+import cardNoImage from 'molecules/cards/card-product/data/examples/card-product-no-image';
+import cardNoProperties from 'molecules/cards/card-product/data/examples/card-product-no-properties';
+import cardNoImageNoProperties from 'molecules/cards/card-product/data/examples/card-product-no-image-no-properties';
 
 export default {
     listItems: {

@@ -1,7 +1,7 @@
-import properties from 'molecules/list-unordered/data/examples/properties-basic';
+import image from 'src/js/components/atoms/c-image/data/examples/c-image-nylon';
 
 export default {
-    properties,
+    image,
     title: 'Ultimaker Nylon',
     type: 'CardProduct',
     url: 'https://ultimaker.com/en/products/materials/nylon'

@@ -1,8 +1,8 @@
 import {storiesOf} from '@storybook/vue';
-import cardDefault from 'molecules/card-product/data/examples/card-product-nylon';
-import cardNoImage from 'molecules/card-product/data/examples/card-product-no-image';
-import cardNoProperties from 'molecules/card-product/data/examples/card-product-no-properties';
-import cardNoImageNoProperties from 'molecules/card-product/data/examples/card-product-no-image-no-properties';
+import cardDefault from 'src/js/components/molecules/cards/card-product/data/examples/card-product-nylon';
+import cardNoImage from 'src/js/components/molecules/cards/card-product/data/examples/card-product-no-image';
+import cardNoProperties from 'src/js/components/molecules/cards/card-product/data/examples/card-product-no-properties';
+import cardNoImageNoProperties from 'src/js/components/molecules/cards/card-product/data/examples/card-product-no-image-no-properties';
 
 storiesOf('Molecules|cards/card-product', module)
     .add('default',
