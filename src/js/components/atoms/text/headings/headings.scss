@@ -1,0 +1,72 @@
+// copied original scss from src/scss/atomic/atoms/_type.scss to here
+// extracted heading specific scss
+h1,
+h2,
+h3 {
+    @extend %fontSecondary;
+    font-weight: 400;
+}
+
+// Vertical rhythm
+h1,
+.headline--primary {
+    @include font-ratio-rhythm(sec-l);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-xxl);
+    }
+}
+
+h2,
+.headline--secondary {
+    @include font-ratio-rhythm(sec-m);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-l);
+    }
+}
+
+h3,
+.headline--tertiary {
+    @include font-ratio-rhythm(sec-xs);
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(sec-s);
+    }
+}
+
+h4,
+h5,
+h6,
+.headline--quaternary,
+.headline--quinary,
+.headline--senary {
+    @extend %fontPrimary;
+    font-weight: 600;
+}
+
+h4 {
+    @include font-line-ratio(prim-s);
+
+    margin-top: -2px;
+    margin-bottom: 2px;
+
+    @include min-tablet() {
+        @include font-line-ratio(prim-m);
+
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+}
+
+h5 {
+    @extend .copy--small;
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+
+h6 {
+    @extend small;
+    margin-top: 0;
+    margin-bottom: 0;
+}

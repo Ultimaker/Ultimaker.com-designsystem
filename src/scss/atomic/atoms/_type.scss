@@ -1,3 +1,5 @@
+// extracted headings scss and moved it to src/js/components/atoms/text/headings/headings.scss
+
 // Root element
 html {
     @include font-line-ratio(prim-s);
@@ -74,54 +76,12 @@ small {
     }
 }
 
-// Headlines
-h1,
-h2,
-h3{
-    @extend %fontSecondary;
-    font-weight: 400;
-}
-
-// Vertical rhythm
-h1,
-.headline--primary {
-    @include font-ratio-rhythm(sec-l);
-
-    @include min-tablet() {
-        @include font-ratio-rhythm(sec-xxl);
-    }
-}
-
-h2,
-.headline--secondary {
-    @include font-ratio-rhythm(sec-m);
-
-    @include min-tablet() {
-        @include font-ratio-rhythm(sec-l);
-    }
-}
-
-h3,
-.headline--tertiary {
-    @include font-ratio-rhythm(sec-xs);
-
-    @include min-tablet() {
-        @include font-ratio-rhythm(sec-s);
-    }
-}
-
-h4,
-h5,
-h6,
-.headline--quaternary,
-.headline--quinary,
-.headline--senary,
 strong {
     @extend %fontPrimary;
     font-weight: 600;
 }
 
-h4, strong {
+strong {
     @include font-line-ratio(prim-s);
 
     margin-top: -2px;
@@ -134,16 +94,3 @@ h4, strong {
         margin-bottom: 5px;
     }
 }
-
-h5 {
-    @extend .copy--small;
-    margin-top: -2px;
-    margin-bottom: 5px;
-}
-
-h6 {
-    @extend small;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
