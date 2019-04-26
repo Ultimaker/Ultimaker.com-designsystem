@@ -3,15 +3,6 @@ import {storiesOf} from '@storybook/vue';
 storiesOf('Atoms|text', module)
 
     .add(
-        'Headings',
-        () => ({
-            template: require('./text.headings.stories.html')
-        }),
-        {
-            notes: {markdown: require('./text.headings.stories.md')}
-        }
-    )
-    .add(
         'Copy',
         () => ({
             inject: ['data'],
