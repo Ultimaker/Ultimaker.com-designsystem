@@ -4,7 +4,7 @@ import Events from 'src/js/constants/events';
 
 @Component({
     name: 'BusinessCard',
-    template: require('./business-card.html'),
+    template: require('./business-card.vue.html'),
 })
 
 export default class BusinessCard extends Vue implements IBusinessCard {

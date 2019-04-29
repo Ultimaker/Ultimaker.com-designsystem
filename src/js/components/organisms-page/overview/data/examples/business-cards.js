@@ -1,5 +1,4 @@
-import businessCardMock from 'molecules/cards/business-card/data/examples/business-card-mock';
-import businessCardMakerPoint from 'molecules/cards/business-card/data/examples/business-card-maker-point';
+import {data as cards} from 'molecules/cards/business-card/data/business-card.data';
 import tooltipDefault from 'atoms/tooltip/data/examples/tooltip-default';
 
 export default {
@@ -33,10 +32,10 @@ export default {
                 label: 'Show all'
             },
             cards: [
-                businessCardMakerPoint,
-                businessCardMock,
-                businessCardMock,
-                businessCardMock
+                cards.makerPoint,
+                cards.default,
+                cards.default,
+                cards.default
             ],
             tooltip: tooltipDefault
         },
@@ -51,13 +50,13 @@ export default {
                 label: 'Show all'
             },
             cards: [
-                businessCardMakerPoint,
-                businessCardMock,
-                businessCardMock,
-                businessCardMock,
-                businessCardMock,
-                businessCardMock,
-                businessCardMock
+                cards.makerPoint,
+                cards.default,
+                cards.default,
+                cards.default,
+                cards.default,
+                cards.default,
+                cards.default
             ]
         }
     ]
