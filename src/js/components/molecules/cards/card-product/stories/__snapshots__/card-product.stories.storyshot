@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Molecules|cards/card-product default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="card-product"
+      type="CardProduct"
+    >
+      <a
+        aria-label="Ultimaker Nylon"
+        class="anchor-overlay hit-area"
+        href="https://ultimaker.com/en/products/materials/nylon"
+        title="Ultimaker Nylon"
+      />
+       
+      <div
+        class="card-product__image-container"
+      >
+        <img
+          alt="Nylon 3D printed gears"
+          class="img--contain card-product__image img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          type="Image"
+        />
+         
+        <!---->
+      </div>
+       
+      <h3
+        class="card-product__heading"
+      >
+        Ultimaker Nylon
+      </h3>
+       
+      <ul
+        class="list card-product__list"
+      >
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
+        >
+          <span
+            class="label"
+          >
+            Abrasion-resistant
+          </span>
+        </li>
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
+        >
+          <span
+            class="label"
+          >
+            Durable
+          </span>
+        </li>
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
+        >
+          <span
+            class="label"
+          >
+            High strength-to-weight ratio
+          </span>
+        </li>
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
+        >
+          <span
+            class="label"
+          >
+            Low friction coefficient
+          </span>
+        </li>
+      </ul>
+    </article>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|cards/card-product no image 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="card-product"
+      type="CardProduct"
+    >
+      <a
+        aria-label="Ultimaker Nylon"
+        class="anchor-overlay hit-area"
+        href="https://ultimaker.com/en/products/materials/nylon"
+        title="Ultimaker Nylon"
+      />
+       
+      <div
+        class="card-product__image-container"
+      >
+        <!---->
+         
+        <div
+          class="img--contain card-product__image gray-background"
+        >
+          Ultimaker Nylon
+        </div>
+      </div>
+       
+      <h3
+        class="card-product__heading"
+      >
+        Ultimaker Nylon
+      </h3>
+       
+      <ul
+        class="list card-product__list"
+      >
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
+        >
+          <span
+            class="label"
+          >
+            Abrasion-resistant
+          </span>
+        </li>
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
+        >
+          <span
+            class="label"
+          >
+            Durable
+          </span>
+        </li>
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
+        >
+          <span
+            class="label"
+          >
+            High strength-to-weight ratio
+          </span>
+        </li>
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
+        >
+          <span
+            class="label"
+          >
+            Low friction coefficient
+          </span>
+        </li>
+      </ul>
+    </article>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|cards/card-product no image, no properties 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="card-product"
+      type="CardProduct"
+    >
+      <a
+        aria-label="Ultimaker Nylon"
+        class="anchor-overlay hit-area"
+        href="https://ultimaker.com/en/products/materials/nylon"
+        title="Ultimaker Nylon"
+      />
+       
+      <div
+        class="card-product__image-container"
+      >
+        <!---->
+         
+        <div
+          class="img--contain card-product__image gray-background"
+        >
+          Ultimaker Nylon
+        </div>
+      </div>
+       
+      <h3
+        class="card-product__heading"
+      >
+        Ultimaker Nylon
+      </h3>
+       
+      <ul
+        class="list card-product__list"
+      />
+    </article>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|cards/card-product no properties 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="card-product"
+      type="CardProduct"
+    >
+      <a
+        aria-label="Ultimaker Nylon"
+        class="anchor-overlay hit-area"
+        href="https://ultimaker.com/en/products/materials/nylon"
+        title="Ultimaker Nylon"
+      />
+       
+      <div
+        class="card-product__image-container"
+      >
+        <img
+          alt="Nylon 3D printed gears"
+          class="img--contain card-product__image img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          type="Image"
+        />
+         
+        <!---->
+      </div>
+       
+      <h3
+        class="card-product__heading"
+      >
+        Ultimaker Nylon
+      </h3>
+       
+      <ul
+        class="list card-product__list"
+      />
+    </article>
+  </section>
+</section>
+`;
