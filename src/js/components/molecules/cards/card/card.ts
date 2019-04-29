@@ -4,7 +4,7 @@ import { ICardProps, ICard } from './card.models';
 
 @Component({
     name: 'card',
-    template: require('./card.html'),
+    template: require('./card.vue.html'),
 })
 
 export default class Card extends Vue implements ICardProps{
