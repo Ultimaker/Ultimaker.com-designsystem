@@ -38,44 +38,6 @@ exports[`Storyshots Atoms|text Copy 1`] = `
 </section>
 `;
 
-exports[`Storyshots Atoms|text Headings 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <section
-      class="story__atom"
-    >
-      <h1>
-        H1 Primary headline
-      </h1>
-       
-      <h2>
-        H2 Secondary headline
-      </h2>
-       
-      <h3>
-        H3 Tertiary headline
-      </h3>
-       
-      <h4>
-        H4 Quaternary headline
-      </h4>
-       
-      <h5>
-        H5 Quinary headline
-      </h5>
-       
-      <h6>
-        H6 Senary headline
-      </h6>
-    </section>
-  </section>
-</section>
-`;
-
 exports[`Storyshots Atoms|text Inline elements 1`] = `
 <section
   class="story"

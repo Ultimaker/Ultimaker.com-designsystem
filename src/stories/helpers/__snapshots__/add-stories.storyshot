@@ -192,6 +192,90 @@ exports[`Storyshots Atoms|buttons/button secondary 1`] = `
 </section>
 `;
 
+exports[`Storyshots Atoms|text/headings h1 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <h1>
+      A Page Title
+    </h1>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/headings h2 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <h2>
+      A Title for an Organism
+    </h2>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/headings h3 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <h3>
+      A Title for a Molecule within an organism
+    </h3>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/headings h4 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <h4>
+      A title within a paragraph of normal copy
+    </h4>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/headings h5 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <h5>
+      A title within a paragraph of small copy (e.g. image captions)
+    </h5>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/headings h6 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <h6>
+      A title with the smallest appearance on the deepest level (e.g. legal in footer)
+    </h6>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Molecules|buttons/content-toggle default 1`] = `
 <section
   class="story"
