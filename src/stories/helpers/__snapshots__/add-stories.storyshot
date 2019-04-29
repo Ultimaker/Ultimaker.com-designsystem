@@ -192,6 +192,198 @@ exports[`Storyshots Atoms|buttons/button secondary 1`] = `
 </section>
 `;
 
+exports[`Storyshots Atoms|text/copy/aside default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <aside
+      class=""
+    >
+      Aside default, a pharetra augue. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    </aside>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/aside intro 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <aside
+      class="copy--intro"
+    >
+      Aside copy--intro, a pharetra augue. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    </aside>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/aside small 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <aside
+      class="copy--small"
+    >
+      Aside copy--small, a pharetra augue. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    </aside>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/paragraph default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <p
+      class=""
+    >
+      Paragraph default, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+    </p>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/paragraph intro 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <p
+      class="copy--intro"
+    >
+      Paragraph copy--intro, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+    </p>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/paragraph small 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <p
+      class="copy--small"
+    >
+      Paragraph copy--small, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+    </p>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/quote default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <q
+      class=""
+    >
+      Quote default ipsum dolor sit amet, consectetur adipisicing elit.
+    </q>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/quote intro 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <q
+      class="copy--intro"
+    >
+      Quote copy--intro ipsum dolor sit amet, consectetur adipisicing elit.
+    </q>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/quote small 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <q
+      class="copy--small"
+    >
+      Quote copy--small ipsum dolor sit amet, consectetur adipisicing elit.
+    </q>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/small default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <small
+      class=""
+    >
+      Small default amet ridiculus ornare
+    </small>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/small intro 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <small
+      class="copy--intro"
+    >
+      Small copy--intro amet ridiculus ornare
+    </small>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/copy/small small 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <small
+      class="copy--small"
+    >
+      Small copy--small amet ridiculus ornare
+    </small>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Atoms|text/headings h1 1`] = `
 <section
   class="story"
