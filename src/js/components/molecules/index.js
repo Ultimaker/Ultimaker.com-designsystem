@@ -22,6 +22,7 @@ export {default as MainNav} from 'molecules/main-nav';
 export {default as MainNavItem} from 'molecules/main-nav-item';
 export {default as Modal} from 'molecules/modal';
 export {default as Pager} from 'molecules/pager';
+export {default as Product} from 'molecules/product';
 export {default as Search} from 'molecules/search';
 export {default as SocialNav} from 'molecules/social-nav';
 export {default as SubNavigationItem} from 'molecules/subnavigation-item';

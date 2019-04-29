@@ -1,5 +1,5 @@
 export default {
-    name: 'hero-product',
+    name: 'legacy-hero-product',
     template: require('./hero-product.html'),
     props: {
         title: {

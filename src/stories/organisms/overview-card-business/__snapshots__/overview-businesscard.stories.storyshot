@@ -56,7 +56,11 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   class="tooltip section-tooltip list-section__tooltip"
                   description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
                   icon="info"
-                  id="tooltip_636"
+<<<<<<< HEAD
+                  id="tooltip_581"
+=======
+                  id="tooltip_586"
+>>>>>>> feat(hero-product): add hero-product
                   label="More info"
                   style="display: none;"
                   type="Tooltip"
@@ -68,7 +72,11 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
               </h3>
                
               <a
-                aria-describedby="tooltip_636"
+<<<<<<< HEAD
+                aria-describedby="tooltip_581"
+=======
+                aria-describedby="tooltip_586"
+>>>>>>> feat(hero-product): add hero-product
                 class="link list-section__info-link link--reversed link--icon"
                 href="#"
                 role="button"

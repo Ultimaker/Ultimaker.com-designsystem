@@ -1,0 +1,39 @@
+<article class="hero hero--product">
+    <section class="container hero__container">
+        <div class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row">
+
+            <div class="flexgrid__cell--xs-6">
+                <div class="hero__description">
+                    <h1>{{ title }}</h1>
+                    <h2 class="hero__subtitle" v-if="subtitle">{{ subtitle }}</h2>
+                    <p class="copy--intro">{{ description }}</p>
+
+                    <div class="hero__products" v-if="products">
+                        <template v-for="product in products">
+                            <product :class="productsClass" v-bind="product" />
+                        </template>
+                    </div>
+
+                    <cta-block mod="hero" :ctas="ctas.ctas" v-if="ctas" styleContentButton="button button--primary"
+                               block="hero" />
+
+                    <ul class="hero__linklist" >
+                        <template v-for="link in linkList">
+                            <li class="hero__linklist-item">
+                                <ContentLink class="link hero__linklist-link" v-bind="link" :label="link.label" />
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flexgrid__cell--xs-6">
+                <div class="hero__image--product">
+                    <template v-if="image">
+                        <c-image v-bind="image" keep-in-view></c-image>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>
