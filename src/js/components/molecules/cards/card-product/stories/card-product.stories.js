@@ -13,11 +13,11 @@ storiesOf('Molecules|cards/card-product', module)
                         data: cardDefault
                     };
                 },
-                template: require('./template.html')
+                template: require('./card-product.html')
             };
         },
         {
-            notes: require('./notes.md')
+            notes: require('./card-product.md')
         }
     )
     .add('no properties',
@@ -28,11 +28,11 @@ storiesOf('Molecules|cards/card-product', module)
                         data: cardNoProperties
                     };
                 },
-                template: require('./template.html')
+                template: require('./card-product.html')
             };
         },
         {
-            notes: require('./notes.md')
+            notes: require('./card-product.md')
         }
     )
     .add('no image',
@@ -43,11 +43,11 @@ storiesOf('Molecules|cards/card-product', module)
                         data: cardNoImage
                     };
                 },
-                template: require('./template.html')
+                template: require('./card-product.html')
             };
         },
         {
-            notes: require('./notes.md')
+            notes: require('./card-product.md')
         }
     )
     .add('no image, no properties',
@@ -58,10 +58,10 @@ storiesOf('Molecules|cards/card-product', module)
                         data: cardNoImageNoProperties
                     };
                 },
-                template: require('./template.html')
+                template: require('./card-product.html')
             };
         },
         {
-            notes: require('./notes.md')
+            notes: require('./card-product.md')
         }
     );
