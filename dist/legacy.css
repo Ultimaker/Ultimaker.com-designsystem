@@ -451,6 +451,101 @@ because both families serve another purpose. Therefore the line-heights will be 
   top: 0;
   right: 0; }
 
+.um-components h1,
+.um-components h2,
+.um-components h3,
+.um-components q,
+.um-components .hero--basic .hero__subtitle,
+.um-components .hero--products-application .hero__subtitle {
+  font-weight: 400; }
+
+.um-components h1,
+.um-components .headline--primary {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: -5px;
+  margin-bottom: 59px; }
+  @media (min-width: 768px) {
+    .um-components h1,
+    .um-components .headline--primary {
+      font-size: 60px;
+      line-height: 60px;
+      margin-top: -4px;
+      margin-bottom: 64px; } }
+
+.um-components h2,
+.um-components .headline--secondary {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 1px;
+  margin-bottom: 53px; }
+  @media (min-width: 768px) {
+    .um-components h2,
+    .um-components .headline--secondary {
+      font-size: 30px;
+      line-height: 36px;
+      margin-top: -5px;
+      margin-bottom: 59px; } }
+
+
+.um-components h3,
+.um-components q,
+.um-components .hero--basic .hero__subtitle,
+.um-components .hero--products-application .hero__subtitle,
+.um-components .headline--tertiary {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 6px;
+  margin-bottom: 24px; }
+  @media (min-width: 768px) {
+    
+    .um-components h3,
+    .um-components q,
+    .um-components .hero--basic .hero__subtitle,
+    .um-components .hero--products-application .hero__subtitle,
+    .um-components .headline--tertiary {
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 5px;
+      margin-bottom: 31px; } }
+
+.um-components h4,
+.um-components h5,
+.um-components .link-list__headline,
+.um-components .flyout__title,
+.um-components .footer-nav__title,
+.um-components .notification__title,
+.um-components h6,
+.um-components .headline--quaternary,
+.um-components .headline--quinary,
+.um-components .headline--senary {
+  font-weight: 600; }
+
+.um-components h4 {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -2px;
+  margin-bottom: 2px; }
+  @media (min-width: 768px) {
+    .um-components h4 {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: -5px;
+      margin-bottom: 5px; } }
+
+
+.um-components h5,
+.um-components .link-list__headline,
+.um-components .flyout__title,
+.um-components .footer-nav__title,
+.um-components .notification__title {
+  margin-top: -2px;
+  margin-bottom: 5px; }
+
+.um-components h6 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .um-components .drawer {
   position: relative;
   z-index: 1010; }
@@ -505,17 +600,11 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-top: -8px;
       margin-bottom: 38px; } }
 
-.um-components p,
-.um-components strong,
-.um-components .tablist__section .tablist__item,
-.um-components .examples .examples__tabs .tablist__item {
+.um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .um-components p,
-    .um-components strong,
-    .um-components .tablist__section .tablist__item,
-    .um-components .examples .examples__tabs .tablist__item {
+    .um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
       margin-top: -5px;
       margin-bottom: 29px; } }
 
@@ -611,103 +700,20 @@ because both families serve another purpose. Therefore the line-heights will be 
       font-size: 12px;
       line-height: 18px; } }
 
-.um-components h1,
-.um-components h2,
-.um-components h3,
-.um-components q,
-.um-components .hero--basic .hero__subtitle,
-.um-components .hero--products-application .hero__subtitle {
-  font-weight: 400; }
-
-.um-components h1,
-.um-components .headline--primary {
-  font-size: 30px;
-  line-height: 36px;
-  margin-top: -5px;
-  margin-bottom: 59px; }
-  @media (min-width: 768px) {
-    .um-components h1,
-    .um-components .headline--primary {
-      font-size: 60px;
-      line-height: 60px;
-      margin-top: -4px;
-      margin-bottom: 64px; } }
-
-.um-components h2,
-.um-components .headline--secondary {
-  font-size: 24px;
-  line-height: 30px;
-  margin-top: 1px;
-  margin-bottom: 53px; }
-  @media (min-width: 768px) {
-    .um-components h2,
-    .um-components .headline--secondary {
-      font-size: 30px;
-      line-height: 36px;
-      margin-top: -5px;
-      margin-bottom: 59px; } }
-
-
-.um-components h3,
-.um-components q,
-.um-components .hero--basic .hero__subtitle,
-.um-components .hero--products-application .hero__subtitle,
-.um-components .headline--tertiary {
-  font-size: 18px;
-  line-height: 24px;
-  margin-top: 6px;
-  margin-bottom: 24px; }
-  @media (min-width: 768px) {
-    
-    .um-components h3,
-    .um-components q,
-    .um-components .hero--basic .hero__subtitle,
-    .um-components .hero--products-application .hero__subtitle,
-    .um-components .headline--tertiary {
-      font-size: 20px;
-      line-height: 24px;
-      margin-top: 5px;
-      margin-bottom: 31px; } }
-
-.um-components h4,
-.um-components h5,
-.um-components .link-list__headline,
-.um-components .flyout__title,
-.um-components .footer-nav__title,
-.um-components .notification__title,
-.um-components h6,
-.um-components .headline--quaternary,
-.um-components .headline--quinary,
-.um-components .headline--senary,
-.um-components strong,
-.um-components .tablist__section .tablist__item,
-.um-components .examples .examples__tabs .tablist__item {
+.um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
   font-weight: 600; }
 
-.um-components h4, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
+.um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
   font-size: 14px;
   line-height: 21px;
   margin-top: -2px;
   margin-bottom: 2px; }
   @media (min-width: 768px) {
-    .um-components h4, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
+    .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
       font-size: 16px;
       line-height: 24px;
       margin-top: -5px;
       margin-bottom: 5px; } }
-
-
-.um-components h5,
-.um-components .link-list__headline,
-.um-components .flyout__title,
-.um-components .footer-nav__title,
-.um-components .notification__title {
-  margin-top: -2px;
-  margin-bottom: 5px; }
-
-.um-components h6 {
-  margin-top: 0;
-  margin-bottom: 0; }
 
 .um-components .icon {
   width: 1em;
@@ -3743,14 +3749,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .hero--products-application .hero__image--full, .um-components .hero--products-application .hero__image-overlay {
       height: 100%; } }
 
-.um-components .hero--text .content--rich p,
-.um-components .hero--text .content--rich strong,
-.um-components .hero--text .content--rich .tablist__section .tablist__item,
-.um-components .tablist__section .hero--text .content--rich .tablist__item,
-.um-components .hero--text .content--rich .examples .examples__tabs .tablist__item,
-.um-components .examples .examples__tabs .hero--text .content--rich .tablist__item,
-.um-components .hero--text .content--rich ul,
-.um-components .hero--text .content--rich li {
+.um-components .hero--text .content--rich p, .um-components .hero--text .content--rich strong, .um-components .hero--text .content--rich .tablist__section .tablist__item, .um-components .tablist__section .hero--text .content--rich .tablist__item, .um-components .hero--text .content--rich .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .hero--text .content--rich .tablist__item, .um-components .hero--text .content--rich ul, .um-components .hero--text .content--rich li {
   max-width: 768px; }
 
 .um-components .hero--text .content--rich * + h2 {
