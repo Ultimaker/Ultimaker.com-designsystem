@@ -28,51 +28,12 @@ html {
 }
 
 // Body
-.copy--intro {
-    @include font-ratio-rhythm(prim-m);
-
-    @include min-tablet() {
-        @include font-ratio-rhythm(prim-l);
-    }
-}
-
-p {
-    @include font-rhythm(prim-s);
-
-    @include min-tablet() {
-        @include font-rhythm(prim-m);
-    }
-}
-
 strong {
     display: block;
     @extend p;
 
     p & {
         display: inline;
-    }
-}
-
-q {
-    @extend h3;
-    display: block;
-    text-align: center;
-    color: $colorGrayDark;
-}
-
-.copy--small {
-    @include font-ratio-rhythm(prim-s);
-}
-
-small {
-    @include font-line-ratio(prim-xs);
-    display: block;
-
-    font-weight: 500;
-    color: inherit;
-
-    @include min-tablet() {
-        @include font-line-ratio(prim-xs);
     }
 }
 
