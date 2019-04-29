@@ -18,14 +18,22 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-            id="flyout_title_1023_0"
+<<<<<<< HEAD
+            id="flyout_title_885_0"
+=======
+            id="flyout_title_896_0"
+>>>>>>> feat(hero-product): add hero-product
           >
             Flyout title one
           </strong>
            
           <ul
             aria-expanded="true"
-            aria-labelledby="flyout_title_1023_0"
+<<<<<<< HEAD
+            aria-labelledby="flyout_title_885_0"
+=======
+            aria-labelledby="flyout_title_896_0"
+>>>>>>> feat(hero-product): add hero-product
             class="flyout__list"
           >
             <li
@@ -106,7 +114,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-            id="flyout_title_1023_1"
+<<<<<<< HEAD
+            id="flyout_title_885_1"
+=======
+            id="flyout_title_896_1"
+>>>>>>> feat(hero-product): add hero-product
           >
             Flyout title two
           </strong>
@@ -114,7 +126,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
-            aria-labelledby="flyout_title_1023_1"
+<<<<<<< HEAD
+            aria-labelledby="flyout_title_885_1"
+=======
+            aria-labelledby="flyout_title_896_1"
+>>>>>>> feat(hero-product): add hero-product
             class="flyout__list"
           >
             <li
@@ -290,7 +306,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-            id="flyout_title_1023_2"
+<<<<<<< HEAD
+            id="flyout_title_885_2"
+=======
+            id="flyout_title_896_2"
+>>>>>>> feat(hero-product): add hero-product
           >
             Flyout title three
           </strong>
@@ -298,7 +318,11 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
-            aria-labelledby="flyout_title_1023_2"
+<<<<<<< HEAD
+            aria-labelledby="flyout_title_885_2"
+=======
+            aria-labelledby="flyout_title_896_2"
+>>>>>>> feat(hero-product): add hero-product
             class="flyout__list"
           >
             <li

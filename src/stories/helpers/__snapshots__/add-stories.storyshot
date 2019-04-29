@@ -192,205 +192,18 @@ exports[`Storyshots Atoms|buttons/button secondary 1`] = `
 </section>
 `;
 
-exports[`Storyshots Atoms|text/copy/aside default 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <aside
-      class=""
-    >
-      Aside default, a pharetra augue. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-    </aside>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/aside intro 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <aside
-      class="copy--intro"
-    >
-      Aside copy--intro, a pharetra augue. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-    </aside>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/aside small 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <aside
-      class="copy--small"
-    >
-      Aside copy--small, a pharetra augue. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-    </aside>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/paragraph default 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <p
-      class=""
-    >
-      Paragraph default, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-    </p>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/paragraph intro 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <p
-      class="copy--intro"
-    >
-      Paragraph copy--intro, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-    </p>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/paragraph small 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <p
-      class="copy--small"
-    >
-      Paragraph copy--small, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-    </p>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/quote default 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <q
-      class=""
-    >
-      Quote default ipsum dolor sit amet, consectetur adipisicing elit.
-    </q>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/quote intro 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <q
-      class="copy--intro"
-    >
-      Quote copy--intro ipsum dolor sit amet, consectetur adipisicing elit.
-    </q>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/quote small 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <q
-      class="copy--small"
-    >
-      Quote copy--small ipsum dolor sit amet, consectetur adipisicing elit.
-    </q>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/small default 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <small
-      class=""
-    >
-      Small default amet ridiculus ornare
-    </small>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/small intro 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <small
-      class="copy--intro"
-    >
-      Small copy--intro amet ridiculus ornare
-    </small>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Atoms|text/copy/small small 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <small
-      class="copy--small"
-    >
-      Small copy--small amet ridiculus ornare
-    </small>
-  </section>
-</section>
-`;
-
+<<<<<<< HEAD
 exports[`Storyshots Atoms|text/headings h1 1`] = `
+=======
+exports[`Storyshots Molecules/product default 1`] = `
+>>>>>>> feat(hero-product): add hero-product
 <section
   class="story"
 >
   <section
     class="story"
   >
+<<<<<<< HEAD
     <h1>
       A Page Title
     </h1>
@@ -464,152 +277,46 @@ exports[`Storyshots Atoms|text/headings h6 1`] = `
     <h6>
       A title with the smallest appearance on the deepest level (e.g. legal in footer)
     </h6>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules/color default 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <section
-      class="story__molecule"
-      style="margin: 10px; width: 48px;"
+=======
+    <div
+      class="product"
     >
-      <a
-        class="hit-area"
-        role="button"
-        tabindex="0"
-      >
-        <div
-          class="color color--selected"
-        >
-          <div
-            class="color__spec color__spec--show"
-          >
-            <!---->
-          </div>
-           
-          <div
-            class="color__spec color__spec--swatch"
-            style="background: rgb(204, 119, 0);"
-          />
-        </div>
-      </a>
-    </section>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules/color inactive 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <section
-      class="story__molecule"
-      style="margin: 10px; width: 48px;"
-    >
-      <a
-        class="hit-area"
-        role="button"
-        tabindex="0"
-      >
-        <div
-          class="color"
-        >
-          <div
-            class="color__spec color__spec--show"
-          >
-            <!---->
-          </div>
-           
-          <div
-            class="color__spec color__spec--swatch"
-            style="background: rgb(204, 119, 0);"
-          />
-        </div>
-      </a>
-    </section>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules/content-block default 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <section>
       <div
-        class="flexgrid"
+        class="product__icon-container"
       >
-        <div
-          class="flexgrid__cell--xs-4"
-        >
-          <article
-            class="content-block disable-focus"
-            tabindex="-1"
-          >
-            <div
-              class="content-block-container__image"
-            >
-              <img
-                alt="Image generated by svg generator"
-                class="img--contain content-block__image img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                type="Image"
-              />
-            </div>
-             
-            <div
-              class="content-block__content"
-            >
-              <h3
-                class="content-block__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="content-block__description"
-              >
-                Mauris nec urna vitae ipsum volutpat pulvinar. Etiam pretium accumsan interdum. Sed vel pulvinar lectus. Aliquam vel fringilla arcu.
-              </p>
-               
-              <a
-                class="button"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Call me back
-    
-                </span>
-              </a>
-            </div>
-          </article>
-        </div>
+        <!---->
       </div>
-    </section>
+       
+      <div
+        class="product__information"
+      >
+        <p
+          class="product__name"
+        >
+          
+            Pla, 750 gr
+        
+        </p>
+         
+        <p
+          class="product__pricing"
+        >
+          
+            Price on request
+        
+        </p>
+      </div>
+    </div>
+>>>>>>> feat(hero-product): add hero-product
   </section>
 </section>
 `;
 
+<<<<<<< HEAD
 exports[`Storyshots Molecules|auto-complete default 1`] = `
+=======
+exports[`Storyshots Molecules/product printer 1`] = `
+>>>>>>> feat(hero-product): add hero-product
 <section
   class="story"
 >
@@ -617,6 +324,7 @@ exports[`Storyshots Molecules|auto-complete default 1`] = `
     class="story"
   >
     <div
+<<<<<<< HEAD
       aria-expanded="true"
       aria-haspopup="listbox"
       aria-owns="autocomplete-story__dropdown"
@@ -672,6 +380,34 @@ exports[`Storyshots Molecules|auto-complete default 1`] = `
         </ul>
          
         <!---->
+=======
+      class="product"
+    >
+      <div
+        class="product__icon-container"
+      >
+        <!---->
+      </div>
+       
+      <div
+        class="product__information"
+      >
+        <p
+          class="product__name"
+        >
+          
+            Ultimaker S5
+        
+        </p>
+         
+        <p
+          class="product__pricing"
+        >
+          
+            Price on request
+        
+        </p>
+>>>>>>> feat(hero-product): add hero-product
       </div>
     </div>
   </section>
@@ -884,627 +620,201 @@ exports[`Storyshots Molecules|buttons/icon-button underlineNoSlot 1`] = `
 </section>
 `;
 
-exports[`Storyshots Molecules|cards/brand-card default 1`] = `
+exports[`Storyshots Organisms/hero-product default 1`] = `
 <section
   class="story"
 >
   <section
     class="story"
   >
-    <section
-      class="story__molecule"
+    <article
+      class="hero hero--product"
     >
-      <div
-        class="brand-card"
+      <section
+        class="container hero__container"
       >
         <div
-          class="brand-card__image-wrapper"
-        >
-          <picture>
-            <!---->
-             
-            <!---->
-             
-            <source
-              media="(min-width: 768px)"
-              srcset=""
-            />
-             
-            <!---->
-             
-            <!---->
-             
-            <source
-              media="(max-width: 480px)"
-              srcset="/generator/svg/400/400"
-            />
-             
-            <img
-              alt=""
-              class="img--responsive img--lazy"
-              src=""
-            />
-          </picture>
-        </div>
-         
-        <q
-          class="brand-card__quote"
-        >
-          Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        </q>
-      </div>
-    </section>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules|cards/business-card default 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <section
-      class="story__molecule"
-    >
-      <a
-        class="business-card"
-        href="https://ultimaker.com"
-        rel="noopener"
-        tabindex="0"
-        target="_blank"
-        type="BusinessCard"
-      >
-        <div
-          class="business-card__header"
+          class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"
         >
           <div
-            class="business-card__image-wrapper"
+            class="flexgrid__cell--xs-6"
           >
-            <picture>
-              <!---->
+            <div
+              class="hero__description"
+            >
+              <h1>
+                Lorem ipsum dolor sit amet
+              </h1>
                
-              <source
-                media="(min-width: 1025px)"
-                srcset=""
-              />
+              <h2
+                class="hero__subtitle"
+              >
+                Maecenas faucibus mollis interdum nulla vitae elit libero a pharetra augue
+              </h2>
                
-              <!---->
+              <p
+                class="copy--intro"
+              >
+                Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
+              </p>
                
-              <!---->
+              <div
+                class="hero__products"
+              >
+                <div
+                  class="product hero__products-item hero__products-item--multiple"
+                  type="Product"
+                >
+                  <div
+                    class="product__icon-container"
+                  >
+                    <!---->
+                  </div>
+                   
+                  <div
+                    class="product__information"
+                  >
+                    <p
+                      class="product__name"
+                    >
+                      
+            Pla, 750 gr
+        
+                    </p>
+                     
+                    <p
+                      class="product__pricing"
+                    >
+                      
+            Price on request
+        
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="product hero__products-item hero__products-item--multiple"
+                  type="Product"
+                >
+                  <div
+                    class="product__icon-container"
+                  >
+                    <!---->
+                  </div>
+                   
+                  <div
+                    class="product__information"
+                  >
+                    <p
+                      class="product__name"
+                    >
+                      
+            Ultimaker S5
+        
+                    </p>
+                     
+                    <p
+                      class="product__pricing"
+                    >
+                      
+            Price on request
+        
+                    </p>
+                  </div>
+                </div>
+              </div>
                
-              <!---->
+              <div
+                class="cta__block cta__block--hero"
+              >
+                <a
+                  class="link--primary button button--primary cta__link"
+                  href="#/en/quote"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Request a quote
+    
+                  </span>
+                </a>
+                <a
+                  class="link--large link cta__link"
+                  href="#/en/link"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Content link
+    
+                  </span>
+                </a>
+              </div>
                
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/120/120"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
+              <ul
+                class="hero__linklist"
+              >
+                <li
+                  class="hero__linklist-item"
+                >
+                  <a
+                    class="link hero__linklist-link link--icon"
+                    href="#/en/link"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Content link
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="hero__linklist-item"
+                >
+                  <a
+                    class="link hero__linklist-link link--icon"
+                    href="#/en/link"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Content link
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
            
           <div
-            class="business-card__description"
+            class="flexgrid__cell--xs-6"
           >
-            <h4
-              class="business-card__title"
+            <div
+              class="hero__image--product"
             >
-              
-                Ultimaker
-            
-            </h4>
-             
-            <p
-              class="business-card__property"
-            >
-              
-                5 Showrooms
-            
-            </p>
-          </div>
-        </div>
-         
-        <div
-          class="business-card__footer"
-        >
-          <span
-            class="link faux-content-link business-card__link"
-          >
-            <span
-              class="link__underline"
-            >
-              
-                Visit website
-            
-            </span>
-          </span>
-        </div>
-      </a>
-    </section>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules|cards/business-card makerPoint 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <section
-      class="story__molecule"
-    >
-      <a
-        class="business-card"
-        href="https://www.makerpoint.nl/en/3d-printing/3d-printers/ultimaker/"
-        rel="noopener"
-        tabindex="0"
-        target="_blank"
-        type="BusinessCard"
-      >
-        <div
-          class="business-card__header"
-        >
-          <div
-            class="business-card__image-wrapper"
-          >
-            <picture>
-              <!---->
-               
-              <source
-                media="(min-width: 1025px)"
-                srcset=""
-              />
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="https://storage.googleapis.com/ultimaker.com/resellerlogos/_60x60_fit_center-center_100_none/MakerPoint-square-ultimaker-online-purchase.png"
-              />
-               
               <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
+                alt="An example image"
+                class="img--contain img--loading"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                type="Image"
               />
-            </picture>
-          </div>
-           
-          <div
-            class="business-card__description"
-          >
-            <h4
-              class="business-card__title"
-            >
-              
-                Ultimaker
-            
-            </h4>
-             
-            <p
-              class="business-card__property"
-            >
-              
-                5 Showrooms
-            
-            </p>
+            </div>
           </div>
         </div>
-         
-        <div
-          class="business-card__footer"
-        >
-          <span
-            class="link faux-content-link business-card__link"
-          >
-            <span
-              class="link__underline"
-            >
-              
-                Visit website
-            
-            </span>
-          </span>
-        </div>
-      </a>
-    </section>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules|cards/card-product noImage 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <article
-      class="card-product"
-      type="CardProduct"
-    >
-      <a
-        aria-label="Ultimaker Nylon"
-        class="anchor-overlay hit-area"
-        href="https://ultimaker.com/en/products/materials/nylon"
-        title="Ultimaker Nylon"
-      />
-       
-      <div
-        class="card-product__image-container"
-      >
-        <!---->
-         
-        <div
-          class="img--contain card-product__image gray-background"
-        >
-          Ultimaker Nylon
-        </div>
-      </div>
-       
-      <h3
-        class="card-product__heading"
-      >
-        Ultimaker Nylon
-      </h3>
-       
-      <ul
-        class="list card-product__list"
-      >
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Abrasion-resistant
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Durable
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            High strength-to-weight ratio
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Low friction coefficient
-          </span>
-        </li>
-      </ul>
-    </article>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules|cards/card-product noImageNoProperties 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <article
-      class="card-product"
-      type="CardProduct"
-    >
-      <a
-        aria-label="Ultimaker Nylon"
-        class="anchor-overlay hit-area"
-        href="https://ultimaker.com/en/products/materials/nylon"
-        title="Ultimaker Nylon"
-      />
-       
-      <div
-        class="card-product__image-container"
-      >
-        <!---->
-         
-        <div
-          class="img--contain card-product__image gray-background"
-        >
-          Ultimaker Nylon
-        </div>
-      </div>
-       
-      <h3
-        class="card-product__heading"
-      >
-        Ultimaker Nylon
-      </h3>
-       
-      <ul
-        class="list card-product__list"
-      />
-    </article>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules|cards/card-product noProperties 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <article
-      class="card-product"
-      type="CardProduct"
-    >
-      <a
-        aria-label="Ultimaker Nylon"
-        class="anchor-overlay hit-area"
-        href="https://ultimaker.com/en/products/materials/nylon"
-        title="Ultimaker Nylon"
-      />
-       
-      <div
-        class="card-product__image-container"
-      >
-        <img
-          alt="Nylon 3D printed gears"
-          class="img--contain card-product__image img--loading"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          type="Image"
-        />
-         
-        <!---->
-      </div>
-       
-      <h3
-        class="card-product__heading"
-      >
-        Ultimaker Nylon
-      </h3>
-       
-      <ul
-        class="list card-product__list"
-      />
-    </article>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules|cards/card-product nylon 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <article
-      class="card-product"
-      type="CardProduct"
-    >
-      <a
-        aria-label="Ultimaker Nylon"
-        class="anchor-overlay hit-area"
-        href="https://ultimaker.com/en/products/materials/nylon"
-        title="Ultimaker Nylon"
-      />
-       
-      <div
-        class="card-product__image-container"
-      >
-        <img
-          alt="Nylon 3D printed gears"
-          class="img--contain card-product__image img--loading"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          type="Image"
-        />
-         
-        <!---->
-      </div>
-       
-      <h3
-        class="card-product__heading"
-      >
-        Ultimaker Nylon
-      </h3>
-       
-      <ul
-        class="list card-product__list"
-      >
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Abrasion-resistant
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Durable
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            High strength-to-weight ratio
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Low friction coefficient
-          </span>
-        </li>
-      </ul>
-    </article>
-  </section>
-</section>
-`;
-
-exports[`Storyshots Molecules|cards/card-product pla 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <article
-      class="card-product"
-      type="CardProduct"
-    >
-      <a
-        aria-label="Ultimaker Tough PLA"
-        class="anchor-overlay hit-area"
-        href="https://ultimaker.com/en/products/materials/tough-pla"
-        title="Ultimaker Tough PLA"
-      />
-       
-      <div
-        class="card-product__image-container"
-      >
-        <img
-          alt="Ultimaker Tough PLA print"
-          class="img--contain card-product__image img--loading"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          type="Image"
-        />
-         
-        <!---->
-      </div>
-       
-      <h3
-        class="card-product__heading"
-      >
-        Ultimaker Tough PLA
-      </h3>
-       
-      <ul
-        class="list card-product__list"
-      >
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Industrial-grade impact and abrasion resistance
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Durable
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            High strength-to-weight ratio
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Low friction coefficient
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Good corrosion resistance to alkalis and organic chemicals
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Reduced humidity absorption when compared to other Nylon filaments
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Seamless 3D printing experience
-          </span>
-        </li>
-        <li
-          class="list__item list__item--inline"
-          type="LiInline"
-        >
-          <span
-            class="label"
-          >
-            Prints in dual extrusion with PVA or Breakaway
-          </span>
-        </li>
-      </ul>
+      </section>
     </article>
   </section>
 </section>

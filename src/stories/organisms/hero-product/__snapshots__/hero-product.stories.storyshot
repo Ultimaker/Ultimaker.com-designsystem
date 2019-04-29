@@ -11,7 +11,11 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
       class="story__organism"
     >
       <article
-        class="hero hero--products"
+        class="hero hero--product"
+        documents="[object Object],[object Object]"
+        labels="[object Object]"
+        link="[object Object]"
+        materials="[object Object]"
       >
         <section
           class="container hero__container"
@@ -29,106 +33,21 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                   Lorem ipsum dolor sit amet
                 </h1>
                  
+                <!---->
+                 
                 <p
                   class="copy--intro"
                 >
                   Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
                 </p>
                  
-                <div
-                  class="price-table hero__price-table"
-                >
-                  <ul
-                    class="price-table__list"
-                    role="tablist"
-                  >
-                    <li
-                      class="price-table__item"
-                      role="tab"
-                    >
-                      <!---->
-                       
-                      <span
-                        class="price-table__info"
-                      >
-                        <small
-                          class="price-table__tagline"
-                        >
-                          
-                                        Product,
-                                        300g
-                                        from
-                                    
-                        </small>
-                         
-                        <span
-                          class="currency"
-                        >
-                          <span
-                            class="currency__type"
-                          >
-                            EUR
-                          </span>
-                          
-    33
-
-                        </span>
-                      </span>
-                    </li>
-                  </ul>
-                   
-                  <small
-                    class="price-table__disclaimer"
-                  >
-                    *excl. VAT
-                  </small>
-                </div>
+                <!---->
                  
-                <a
-                  class="button button--primary hero__button"
-                  href=""
-                >
-                  Some label
-                </a>
+                <!---->
                  
                 <ul
-                  class="link-list link-list--icon hero__link-list"
-                >
-                  <li
-                    class="link-list__item"
-                  >
-                    <a
-                      class="link--icon"
-                      href="#/#"
-                    >
-                      <!---->
-                       Content-link
-                    </a>
-                  </li>
-                   
-                  <li
-                    class="link-list__item"
-                  >
-                    <a
-                      class="link--icon"
-                      href="#/#"
-                    >
-                      <!---->
-                       Download link
-                    </a>
-                  </li>
-                  <li
-                    class="link-list__item"
-                  >
-                    <a
-                      class="link--icon"
-                      href="#/#"
-                    >
-                      <!---->
-                       Download link
-                    </a>
-                  </li>
-                </ul>
+                  class="hero__linklist"
+                />
               </div>
             </div>
              
@@ -138,9 +57,14 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
               <div
                 class="hero__image--product"
               >
-                <cms-image
-                  image="[object Object]"
-                  orientation="square"
+                <img
+                  alt=""
+                  alt_text="Some alt text"
+                  class="img--contain img--loading"
+                  links="[object Object]"
+                  mime_type="image/png"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  title="Some title"
                 />
               </div>
             </div>

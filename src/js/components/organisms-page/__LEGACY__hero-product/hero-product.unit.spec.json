@@ -1,0 +1,75 @@
+{
+    "properties": {
+        "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        "description":
+            "Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.",
+        "materials": [
+            {
+                "short_title": "PLA",
+                "weight": {
+                    "value": 300,
+                    "unit": "g"
+                },
+                "price": {
+                    "currency": "EUR",
+                    "value": 33
+                }
+            }
+        ],
+        "image": [
+            {
+                "title": "Ultimaker Pla 3 D Print",
+                "alt_text": "Ultimaker PLA example print",
+                "mime_type": "image/png",
+                "links": {
+                    "self": {
+                        "href": "/generator/svg/1200/1200"
+                    },
+                    "square_mobile": [
+                        {
+                            "href": "/generator/svg/600/600"
+                        }
+                    ],
+                    "square_desktop": [
+                        {
+                            "href": "/generator/svg/1200/1200"
+                        }
+                    ]
+                }
+            }
+        ],
+        "links": [
+            {
+                "title": "Compatibility matrix",
+                "uri": "/en/resources/49799-material-compatibility"
+            }
+        ],
+        "documents": [
+            {
+                "title": "Sds Pc V3 004",
+                "type": "technicalDatasheets",
+                "links": {
+                    "self": {
+                        "href":
+                            "https://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/technical-datasheets/SDS-PC-v3.004.pdf"
+                    }
+                }
+            },
+            {
+                "title": "Tds Pla V3 011",
+                "type": "safetyDatasheets",
+                "links": {
+                    "self": {
+                        "href":
+                            "https://s3-eu-west-1.amazonaws.com/craft.ultimaker.com/safety-datasheets/TDS-PLA-v3.011.pdf"
+                    }
+                }
+            }
+        ],
+        "labels": {
+            "buyCta": "Buying options",
+            "excludingVat": "*excl. VAT",
+            "download": "Download"
+        }
+    }
+}
