@@ -3,7 +3,7 @@ import { CardProduct as ICardProduct } from '@ultimaker/ultimaker.com-model-defi
 
 @Component({
     name: 'CardProduct',
-    template: require('./template.html'),
+    template: require('./card-product.vue.html'),
 })
 
 export default class CardProduct extends Vue implements ICardProduct {
