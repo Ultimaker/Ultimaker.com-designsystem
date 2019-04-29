@@ -1,7 +1,4 @@
-import cardDefault from 'molecules/cards/card-product/data/examples/card-product-nylon';
-import cardNoImage from 'molecules/cards/card-product/data/examples/card-product-no-image';
-import cardNoProperties from 'molecules/cards/card-product/data/examples/card-product-no-properties';
-import cardNoImageNoProperties from 'molecules/cards/card-product/data/examples/card-product-no-image-no-properties';
+import {data}  from 'molecules/cards/card-product/data/card-product.data';
 
 export default {
     listItems: {
@@ -9,26 +6,26 @@ export default {
         items: [
             {
                 item: {
-                    item: cardDefault,
-                    type: cardDefault.type
+                    item: data.nylon,
+                    type: 'CardProduct'
                 }
             },
             {
                 item: {
-                    item: cardNoImage,
-                    type: cardNoImage.type
+                    item: data.noImage,
+                    type: 'CardProduct'
                 }
             },
             {
                 item: {
-                    item: cardNoProperties,
-                    type: cardNoProperties.type
+                    item: data.noProperties,
+                    type: 'CardProduct'
                 }
             },
             {
                 item: {
-                    item: cardNoImageNoProperties,
-                    type: cardNoImageNoProperties.type
+                    item: data.noImageNoProperties,
+                    type: 'CardProduct'
                 }
             }
         ]

@@ -1,8 +1,4 @@
-import cardNylon from 'molecules/cards/card-product/data/examples/card-product-nylon';
-import cardToughPla from 'molecules/cards/card-product/data/examples/card-product-tough-pla';
-import cardNoImage from 'molecules/cards/card-product/data/examples/card-product-no-image';
-import cardNoProperties from 'molecules/cards/card-product/data/examples/card-product-no-properties';
-import cardNoImageNoProperties from 'molecules/cards/card-product/data/examples/card-product-no-image-no-properties';
+import {data} from 'molecules/cards/card-product/data/card-product.data';
 
 export default {
     type: 'overview',
@@ -34,13 +30,13 @@ export default {
                 label: 'Show all'
             },
             cards: [
-                cardNylon,
-                cardToughPla,
-                cardNylon,
-                cardToughPla,
-                cardNoImage,
-                cardNoProperties,
-                cardNoImageNoProperties
+                data.nylon,
+                data.pla,
+                data.nylon,
+                data.pla,
+                data.noImage,
+                data.noProperties,
+                data.noImageNoProperties
             ]
         }
     ]

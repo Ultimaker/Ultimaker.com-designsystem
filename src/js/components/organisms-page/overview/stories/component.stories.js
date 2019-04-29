@@ -3,7 +3,7 @@ import cardProductData from 'organisms-page/overview/data/examples/card-product'
 import businessCardData from 'organisms-page/overview/data/examples/business-cards';
 
 storiesOf('organisms|overview', module)
-    .add('Overview businesscard',
+    .add('Overview business card',
         () => {
             return {
                 data: () => {
@@ -18,7 +18,7 @@ storiesOf('organisms|overview', module)
             notes: require('./notes.md')
         }
     )
-    .add('card-product',
+    .add('Overview card product',
         () => {
             return {
                 data: () => {

@@ -19,7 +19,7 @@ export const data = {
             {
                 type: 'Property',
                 label: 'Showrooms',
-                value: '5',
+                value: 5,
 
             },
         ],
@@ -44,7 +44,7 @@ export const data = {
             {
                 type: 'Property',
                 label: 'Showrooms',
-                value: '5',
+                value: 5,
 
             },
         ],
