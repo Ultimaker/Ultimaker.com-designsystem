@@ -468,6 +468,78 @@ exports[`Storyshots Atoms|text/headings h6 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/color default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__molecule"
+      style="margin: 10px; width: 48px;"
+    >
+      <a
+        class="hit-area"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="color color--selected"
+        >
+          <div
+            class="color__spec color__spec--show"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="color__spec color__spec--swatch"
+            style="background: rgb(204, 119, 0);"
+          />
+        </div>
+      </a>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules/color inactive 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__molecule"
+      style="margin: 10px; width: 48px;"
+    >
+      <a
+        class="hit-area"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="color"
+        >
+          <div
+            class="color__spec color__spec--show"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="color__spec color__spec--swatch"
+            style="background: rgb(204, 119, 0);"
+          />
+        </div>
+      </a>
+    </section>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Molecules|auto-complete default 1`] = `
 <section
   class="story"
