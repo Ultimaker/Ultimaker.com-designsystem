@@ -21,7 +21,7 @@ const getStory = (type) => {
                     default: knobs.text,
                 },
             },
-            template: '<a :href="href">{{ text }}</a:href>',
+            template: '<a :href="href">{{ text }}</a>',
         };
     };
 };
