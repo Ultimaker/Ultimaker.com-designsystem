@@ -355,7 +355,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #FFFFFF;
   background-color: #24bcf3; }
 
-.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components h6 a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .legal__link a:focus:not(:hover), .um-components .link--small.footer-nav__link a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tooltip__list-item.tooltip__label a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components h6 a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .legal__link a:focus:not(:active), .um-components .link--small.footer-nav__link a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tooltip__list-item.tooltip__label a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .legal__link:focus:not(:hover), .um-components .footer-nav__link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .legal__link:focus:not(:active), .um-components .footer-nav__link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .search__input:focus, .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
+.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components h6 a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .legal__link a:focus:not(:hover), .um-components .link--small.footer-nav__link a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tooltip__list-item.tooltip__label a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components h6 a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .legal__link a:focus:not(:active), .um-components .link--small.footer-nav__link a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tooltip__list-item.tooltip__label a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .legal__link:focus:not(:hover), .um-components .footer-nav__link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .legal__link:focus:not(:active), .um-components .footer-nav__link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .search__input:focus, .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
 
 .um-components .color--selected, .um-components .auto-complete__dropdown {
@@ -482,12 +482,12 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .price-table__disclaimer,
 .um-components .tooltip__list-item.tooltip__label,
 .um-components .tag,
-.um-components .settings-selector__label,
 .um-components .tablist__section .tablist,
 .um-components .examples .examples__tabs .tablist,
 .um-components .tablist__section .tablist__headline,
 .um-components .examples .examples__tabs .tablist__headline,
 .um-components .auto-complete__label,
+.um-components .settings-selector__label,
 .um-components .hero--products-application .usp--icon .usp__label,
 .um-components .overflow-container__label {
   font-size: 12px;
@@ -514,12 +514,12 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .price-table__disclaimer,
     .um-components .tooltip__list-item.tooltip__label,
     .um-components .tag,
-    .um-components .settings-selector__label,
     .um-components .tablist__section .tablist,
     .um-components .examples .examples__tabs .tablist,
     .um-components .tablist__section .tablist__headline,
     .um-components .examples .examples__tabs .tablist__headline,
     .um-components .auto-complete__label,
+    .um-components .settings-selector__label,
     .um-components .hero--products-application .usp--icon .usp__label,
     .um-components .overflow-container__label {
       font-size: 12px;
@@ -826,7 +826,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
   .um-components a:hover {
     color: #4bc8f5; }
-  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components .examples .examples__tabs .tablist__item a, .um-components small a, .um-components h6 a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .legal__link a, .um-components .link--small.footer-nav__link a, .um-components .footer-nav__link.legal__link a, .um-components .link--small.toggle a, .um-components .toggle.legal__link a, .um-components .link--small.overflow-container__link:hover a, .um-components .overflow-container__link.legal__link:hover a, .um-components .link--small.overflow-container__link.exact-active a, .um-components .overflow-container__link.exact-active.legal__link a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tooltip__list-item.tooltip__label a, .um-components .tag a, .um-components .settings-selector__label a, .um-components .tablist__section .tablist a, .um-components .examples .examples__tabs .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .examples .examples__tabs .tablist__headline a, .um-components .auto-complete__label a, .um-components .hero--products-application .usp--icon .usp__label a, .um-components .overflow-container__label a, .um-components .content--rich li a {
+  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components .examples .examples__tabs .tablist__item a, .um-components small a, .um-components h6 a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .legal__link a, .um-components .link--small.footer-nav__link a, .um-components .footer-nav__link.legal__link a, .um-components .link--small.toggle a, .um-components .toggle.legal__link a, .um-components .link--small.overflow-container__link:hover a, .um-components .overflow-container__link.legal__link:hover a, .um-components .link--small.overflow-container__link.exact-active a, .um-components .overflow-container__link.exact-active.legal__link a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tooltip__list-item.tooltip__label a, .um-components .tag a, .um-components .tablist__section .tablist a, .um-components .examples .examples__tabs .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .examples .examples__tabs .tablist__headline a, .um-components .auto-complete__label a, .um-components .settings-selector__label a, .um-components .hero--products-application .usp--icon .usp__label a, .um-components .overflow-container__label a, .um-components .content--rich li a {
     font-weight: 400; }
 
 .um-components .link, .um-components .legal__link, .um-components .footer-nav__link, .um-components .toggle, .um-components .overflow-container__link:hover, .um-components .overflow-container__link.exact-active {
@@ -1184,7 +1184,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components table td .price-table__disclaimer,
 .um-components table td .tooltip__list-item.tooltip__label,
 .um-components table td .tag,
-.um-components table td .settings-selector__label,
 .um-components table td .tablist__section .tablist,
 .um-components .tablist__section table td .tablist,
 .um-components table td .examples .examples__tabs .tablist,
@@ -1194,6 +1193,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components table td .examples .examples__tabs .tablist__headline,
 .um-components .examples .examples__tabs table td .tablist__headline,
 .um-components table td .auto-complete__label,
+.um-components table td .settings-selector__label,
 .um-components table td .hero--products-application .usp--icon .usp__label,
 .um-components .hero--products-application .usp--icon table td .usp__label,
 .um-components table td .overflow-container__label,
@@ -1215,7 +1215,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components table th .price-table__disclaimer,
 .um-components table th .tooltip__list-item.tooltip__label,
 .um-components table th .tag,
-.um-components table th .settings-selector__label,
 .um-components table th .tablist__section .tablist,
 .um-components .tablist__section table th .tablist,
 .um-components table th .examples .examples__tabs .tablist,
@@ -1225,6 +1224,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components table th .examples .examples__tabs .tablist__headline,
 .um-components .examples .examples__tabs table th .tablist__headline,
 .um-components table th .auto-complete__label,
+.um-components table th .settings-selector__label,
 .um-components table th .hero--products-application .usp--icon .usp__label,
 .um-components .hero--products-application .usp--icon table th .usp__label,
 .um-components table th .overflow-container__label {
@@ -2953,87 +2953,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .notification__content--centered .button {
       margin-bottom: 0; } }
 
-.um-components .preferences-bar {
-  transform: translateY(0); }
-  .um-components .preferences-bar .auto-complete.auto-complete--small {
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: 0;
-    width: 260px; }
-    .um-components .preferences-bar .auto-complete.auto-complete--small .auto-complete__input {
-      border-color: #c6dfe8; }
-  .um-components .preferences-bar .settings-selector__edit-button {
-    color: #0CA9E3;
-    margin-top: 5px; }
-    .um-components .preferences-bar .settings-selector__edit-button:hover, .um-components .preferences-bar .settings-selector__edit-button:focus, .um-components .preferences-bar .settings-selector__edit-button:active {
-      color: #0CA9E3; }
-
-.um-components .settings {
-  width: 100%;
-  margin-bottom: 30px;
-  border: 2px solid #c6dfe8;
-  border-left: none;
-  border-right: none; }
-  @media (min-width: 480px) {
-    .um-components .settings {
-      margin-bottom: 36px; } }
-  .um-components .notification__content--centered .settings {
-    margin-left: auto;
-    margin-right: auto; }
-
-.um-components .settings-selector {
-  display: flex;
-  flex-direction: column;
-  padding: 12px 0;
-  border-bottom: 1px solid #c6dfe8; }
-  .um-components .settings-selector .form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; }
-    @media (min-width: 480px) {
-      .um-components .settings-selector .form-group {
-        flex-direction: row;
-        align-items: center; } }
-  .um-components .settings-selector__label {
-    margin-bottom: 0;
-    margin-left: 12px;
-    margin-right: 12px;
-    color: #6b797e; }
-    @media (min-width: 480px) {
-      .um-components .settings-selector__label {
-        flex-direction: row;
-        align-items: center;
-        margin-top: 5px; } }
-  .um-components .settings-selector__edit-button {
-    font-weight: 400;
-    margin-top: 5px; }
-    @media (min-width: 480px) {
-      .um-components .settings-selector__edit-button {
-        margin-top: 0; } }
-  .um-components .settings-selector:last-child {
-    margin-bottom: 0;
-    border: none; }
-
-.um-components .settings-panel {
-  text-align: left;
-  margin-top: 12px;
-  padding: 12px; }
-
-.um-components .setting:not(:last-child) {
-  margin-bottom: 18px; }
-
-.um-components .setting__description {
-  padding-left: 30px;
-  margin-top: -6px;
-  color: #6b797e; }
-
-.um-components .selector-group {
-  display: flex;
-  flex-direction: row; }
-  @media (min-width: 480px) {
-    .um-components .selector-group {
-      margin-left: auto; } }
-
 .um-components .country-selector {
   display: flex;
   flex: 1 1 auto;
@@ -3889,7 +3808,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #FFFFFF;
   background-color: #24bcf3; }
 
-.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components h6 a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .legal__link a:focus:not(:hover), .um-components .link--small.footer-nav__link a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tooltip__list-item.tooltip__label a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components h6 a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .legal__link a:focus:not(:active), .um-components .link--small.footer-nav__link a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tooltip__list-item.tooltip__label a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .legal__link:focus:not(:hover), .um-components .footer-nav__link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .legal__link:focus:not(:active), .um-components .footer-nav__link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .search__input:focus, .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
+.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components h6 a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .legal__link a:focus:not(:hover), .um-components .link--small.footer-nav__link a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tooltip__list-item.tooltip__label a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components h6 a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .legal__link a:focus:not(:active), .um-components .link--small.footer-nav__link a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tooltip__list-item.tooltip__label a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .legal__link:focus:not(:hover), .um-components .footer-nav__link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .legal__link:focus:not(:active), .um-components .footer-nav__link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .search__input:focus, .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
 
 .um-components .color--selected, .um-components .auto-complete__dropdown {
@@ -3933,6 +3852,89 @@ because both families serve another purpose. Therefore the line-heights will be 
       padding-bottom: 6.5px; }
   .um-components .auto-complete--reversed .auto-complete__dropdown {
     bottom: 100%; }
+
+.um-components .preferences-bar {
+  transform: translateY(0); }
+  .um-components .preferences-bar__button, .um-components .preferences-bar .settings-selector__edit-button {
+    background-color: transparent; }
+  .um-components .preferences-bar .auto-complete.auto-complete--small {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 260px; }
+    .um-components .preferences-bar .auto-complete.auto-complete--small .auto-complete__input {
+      border-color: #c6dfe8; }
+  .um-components .preferences-bar .settings-selector__edit-button {
+    color: #0CA9E3;
+    margin-top: 5px; }
+    .um-components .preferences-bar .settings-selector__edit-button:hover, .um-components .preferences-bar .settings-selector__edit-button:focus, .um-components .preferences-bar .settings-selector__edit-button:active {
+      color: #0CA9E3; }
+
+.um-components .settings {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid #c6dfe8;
+  border-left: none;
+  border-right: none; }
+  @media (min-width: 480px) {
+    .um-components .settings {
+      margin-bottom: 36px; } }
+  .um-components .notification__content--centered .settings {
+    margin-left: auto;
+    margin-right: auto; }
+
+.um-components .settings-selector {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  border-bottom: 1px solid #c6dfe8; }
+  .um-components .settings-selector .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    @media (min-width: 480px) {
+      .um-components .settings-selector .form-group {
+        flex-direction: row;
+        align-items: center; } }
+  .um-components .settings-selector__label {
+    margin-bottom: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #6b797e; }
+    @media (min-width: 480px) {
+      .um-components .settings-selector__label {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 5px; } }
+  .um-components .settings-selector__edit-button {
+    font-weight: 400;
+    margin-top: 5px; }
+    @media (min-width: 480px) {
+      .um-components .settings-selector__edit-button {
+        margin-top: 0; } }
+  .um-components .settings-selector:last-child {
+    margin-bottom: 0;
+    border: none; }
+
+.um-components .settings-panel {
+  text-align: left;
+  margin-top: 12px;
+  padding: 12px; }
+
+.um-components .setting:not(:last-child) {
+  margin-bottom: 18px; }
+
+.um-components .setting__description {
+  padding-left: 30px;
+  margin-top: -6px;
+  color: #6b797e; }
+
+.um-components .selector-group {
+  display: flex;
+  flex-direction: row; }
+  @media (min-width: 480px) {
+    .um-components .selector-group {
+      margin-left: auto; } }
 
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--basic:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .colors:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
