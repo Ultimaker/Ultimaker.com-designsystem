@@ -1,7 +1,7 @@
 export {default as AutoComplete} from 'molecules/auto-complete';
 export {default as BrandCard} from 'molecules/cards/brand-card';
 export {default as BusinessCard} from 'molecules/cards/business-card';
-export {default as Card} from 'molecules/cards/card';
+export {default as Card} from 'molecules/cards/__LEGACY__card';
 export {default as CardProduct} from 'molecules/cards/card-product';
 export {default as Color} from 'molecules/color';
 export {default as ContentBlock} from 'molecules/content-block';
