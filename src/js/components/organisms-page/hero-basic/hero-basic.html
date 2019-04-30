@@ -1,14 +1,16 @@
-<article class="hero hero--basic">
+<article class="hero hero--basic organism">
     <section class="container hero__container">
         <div class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row">
 
             <div class="flexgrid__cell--xs-6">
                 <div class="hero__description">
-                    <!--Intro-->
-                    <h1>{{ title }}</h1>
-                    <h2 class="hero__subtitle" v-if="subtitle">{{ subtitle }}</h2>
-                    <p class="copy--intro">{{ description }}</p>
-                    <!--End intro-->
+
+                    <HeaderBlock class="hero__header header-block--hero">
+                        <h1 class='hero__title header-block__title--hero'>{{ title }}</h1>
+                        <h2 class="hero__subtitle header-block__subtitle--hero" v-if="subtitle">{{ subtitle }}</h2>
+                    </HeaderBlock>
+                  
+                    <p class="hero__intro copy--intro">{{ description }}</p>
 
                     <cta-block mod="hero" :ctas="ctas.ctas" v-if="ctas" styleContentButton="button button--primary"
                                block="hero" />
@@ -17,7 +19,7 @@
 
             <!--Image -->
             <div class="flexgrid__cell--xs-6">
-                <div class="hero__image--basic">
+                <div class="hero__image">
                     <template v-if="image">
                         <c-image v-bind="image" keep-in-view></c-image>
                     </template>

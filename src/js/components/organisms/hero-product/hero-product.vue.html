@@ -1,12 +1,13 @@
-<article class="hero hero--product">
+<article class="hero hero--product organism">
     <section class="container hero__container">
         <div class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row">
 
             <div class="flexgrid__cell--xs-6">
                 <div class="hero__description">
-                    <h1>{{ title }}</h1>
-                    <h2 class="hero__subtitle" v-if="subtitle">{{ subtitle }}</h2>
-                    <p class="copy--intro">{{ description }}</p>
+                    <HeaderBlock class="hero__header header-block--hero">
+                        <HeroHeading :title="title" :subtitle="subtitle" />
+                    </HeaderBlock>
+                    <p class="hero__intro copy--intro">{{ description }}</p>
 
                     <div class="hero__products" v-if="products">
                         <template v-for="product in products">
@@ -28,7 +29,7 @@
             </div>
 
             <div class="flexgrid__cell--xs-6">
-                <div class="hero__image--product">
+                <div class="hero__image">
                     <template v-if="image">
                         <c-image v-bind="image" keep-in-view></c-image>
                     </template>

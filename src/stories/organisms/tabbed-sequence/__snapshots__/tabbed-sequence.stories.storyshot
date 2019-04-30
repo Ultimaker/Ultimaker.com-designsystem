@@ -18,7 +18,7 @@ exports[`Storyshots organisms|Tabbed Sequence Tabbed Sequence 1`] = `
           class="container"
         >
           <header
-            class="header-block "
+            class="header-block"
           >
             <h2
               class="header-block__title"

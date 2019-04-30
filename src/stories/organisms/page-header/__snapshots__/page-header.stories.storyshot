@@ -78,20 +78,28 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1279_0"
 =======
                       id="flyout_title_1280_0"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      id="flyout_title_1297_0"
+>>>>>>> fix(styling): fix styling split up components
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1279_0"
 =======
                       aria-labelledby="flyout_title_1280_0"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      aria-labelledby="flyout_title_1297_0"
+>>>>>>> fix(styling): fix styling split up components
                       class="flyout__list"
                     >
                       <li
@@ -173,10 +181,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1279_1"
 =======
                       id="flyout_title_1280_1"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      id="flyout_title_1297_1"
+>>>>>>> fix(styling): fix styling split up components
                     >
                       Where is 3D printing used?
                     </strong>
@@ -184,10 +196,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1279_1"
 =======
                       aria-labelledby="flyout_title_1280_1"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      aria-labelledby="flyout_title_1297_1"
+>>>>>>> fix(styling): fix styling split up components
                       class="flyout__list"
                     >
                       <li
@@ -606,10 +622,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1279_2"
 =======
                       id="flyout_title_1280_2"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      id="flyout_title_1297_2"
+>>>>>>> fix(styling): fix styling split up components
                     >
                       How is 3D printing used?
                     </strong>
@@ -617,10 +637,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1279_2"
 =======
                       aria-labelledby="flyout_title_1280_2"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      aria-labelledby="flyout_title_1297_2"
+>>>>>>> fix(styling): fix styling split up components
                       class="flyout__list"
                     >
                       <li
@@ -860,20 +884,28 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1358_0"
 =======
                       id="flyout_title_1359_0"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      id="flyout_title_1376_0"
+>>>>>>> fix(styling): fix styling split up components
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1358_0"
 =======
                       aria-labelledby="flyout_title_1359_0"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      aria-labelledby="flyout_title_1376_0"
+>>>>>>> fix(styling): fix styling split up components
                       class="flyout__list"
                     >
                       <li
@@ -942,10 +974,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1358_1"
 =======
                       id="flyout_title_1359_1"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      id="flyout_title_1376_1"
+>>>>>>> fix(styling): fix styling split up components
                     >
                       Flyout title two
                     </strong>
@@ -953,10 +989,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1358_1"
 =======
                       aria-labelledby="flyout_title_1359_1"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      aria-labelledby="flyout_title_1376_1"
+>>>>>>> fix(styling): fix styling split up components
                       class="flyout__list"
                     >
                       <li
@@ -1122,10 +1162,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1358_2"
 =======
                       id="flyout_title_1359_2"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      id="flyout_title_1376_2"
+>>>>>>> fix(styling): fix styling split up components
                     >
                       Flyout title three
                     </strong>
@@ -1133,10 +1177,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1358_2"
 =======
                       aria-labelledby="flyout_title_1359_2"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      aria-labelledby="flyout_title_1376_2"
+>>>>>>> fix(styling): fix styling split up components
                       class="flyout__list"
                     >
                       <li
@@ -1360,20 +1408,28 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1408_0"
 =======
                       id="flyout_title_1409_0"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      id="flyout_title_1426_0"
+>>>>>>> fix(styling): fix styling split up components
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1408_0"
 =======
                       aria-labelledby="flyout_title_1409_0"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      aria-labelledby="flyout_title_1426_0"
+>>>>>>> fix(styling): fix styling split up components
                       class="flyout__list"
                     >
                       <li
@@ -1442,10 +1498,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1408_1"
 =======
                       id="flyout_title_1409_1"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      id="flyout_title_1426_1"
+>>>>>>> fix(styling): fix styling split up components
                     >
                       Flyout title two
                     </strong>
@@ -1453,10 +1513,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1408_1"
 =======
                       aria-labelledby="flyout_title_1409_1"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      aria-labelledby="flyout_title_1426_1"
+>>>>>>> fix(styling): fix styling split up components
                       class="flyout__list"
                     >
                       <li
@@ -1622,10 +1686,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <strong
                       class="flyout__title"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       id="flyout_title_1408_2"
 =======
                       id="flyout_title_1409_2"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      id="flyout_title_1426_2"
+>>>>>>> fix(styling): fix styling split up components
                     >
                       Flyout title three
                     </strong>
@@ -1633,10 +1701,14 @@ exports[`Storyshots organisms|page-header Header 1`] = `
                     <ul
                       aria-haspopup="true"
 <<<<<<< HEAD
+<<<<<<< HEAD
                       aria-labelledby="flyout_title_1408_2"
 =======
                       aria-labelledby="flyout_title_1409_2"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                      aria-labelledby="flyout_title_1426_2"
+>>>>>>> fix(styling): fix styling split up components
                       class="flyout__list"
                     >
                       <li

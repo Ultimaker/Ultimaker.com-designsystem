@@ -193,8 +193,59 @@ exports[`Storyshots Atoms|buttons/button secondary 1`] = `
 `;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 exports[`Storyshots Atoms|text/headings h1 1`] = `
 =======
+=======
+exports[`Storyshots Molecules/hero-heading default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <header>
+      <div>
+        <h1
+          class="hero__title header-block__title--hero"
+        >
+          Lorem ipsum dolor sit amet
+        </h1>
+         
+        <h2
+          class="hero__subtitle header-block__subtitle--hero"
+        >
+          Maecenas faucibus mollis interdum nulla vitae elit libero a pharetra augue
+        </h2>
+      </div>
+    </header>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules/hero-heading title 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <header>
+      <div>
+        <h1
+          class="hero__title header-block__title--hero"
+        >
+          Lorem ipsum dolor sit amet
+        </h1>
+         
+        <!---->
+      </div>
+    </header>
+  </section>
+</section>
+`;
+
+>>>>>>> fix(styling): fix styling split up components
 exports[`Storyshots Molecules/product default 1`] = `
 >>>>>>> feat(hero-product): add hero-product
 <section
@@ -620,7 +671,7 @@ exports[`Storyshots Molecules|buttons/icon-button underlineNoSlot 1`] = `
 </section>
 `;
 
-exports[`Storyshots Organisms/hero-product default 1`] = `
+exports[`Storyshots Organisms|hero/Hero product default 1`] = `
 <section
   class="story"
 >
@@ -628,7 +679,7 @@ exports[`Storyshots Organisms/hero-product default 1`] = `
     class="story"
   >
     <article
-      class="hero hero--product"
+      class="hero hero--product organism"
     >
       <section
         class="container hero__container"
@@ -642,18 +693,26 @@ exports[`Storyshots Organisms/hero-product default 1`] = `
             <div
               class="hero__description"
             >
-              <h1>
-                Lorem ipsum dolor sit amet
-              </h1>
-               
-              <h2
-                class="hero__subtitle"
+              <header
+                class="header-block hero__header header-block--hero"
               >
-                Maecenas faucibus mollis interdum nulla vitae elit libero a pharetra augue
-              </h2>
+                <div>
+                  <h1
+                    class="hero__title header-block__title--hero"
+                  >
+                    Lorem ipsum dolor sit amet
+                  </h1>
+                   
+                  <h2
+                    class="hero__subtitle header-block__subtitle--hero"
+                  >
+                    Maecenas faucibus mollis interdum nulla vitae elit libero a pharetra augue
+                  </h2>
+                </div>
+              </header>
                
               <p
-                class="copy--intro"
+                class="hero__intro copy--intro"
               >
                 Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
               </p>
@@ -803,13 +862,12 @@ exports[`Storyshots Organisms/hero-product default 1`] = `
             class="flexgrid__cell--xs-6"
           >
             <div
-              class="hero__image--product"
+              class="hero__image"
             >
               <img
                 alt="An example image"
                 class="img--contain img--loading"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                type="Image"
               />
             </div>
           </div>

@@ -2,6 +2,26 @@
     margin-bottom: $buildingUnit * 4.5;
 }
 
+.header-block--hero {
+    margin-bottom: $buildingUnit * 5.75;
+}    
+.header-block__title--hero {
+
+}
+
+.header-block__subtitle--hero {
+    $resetHeadlineBottomMarginMobile: -84px;
+    $resetHeadlineBottomMarginTablet: -101px;
+
+    color: $colorGrayDark;
+    margin-top: $resetHeadlineBottomMarginMobile + ($buildingUnit * 3);
+
+    @include min-tablet {
+        @include font-ratio-rhythm(sec-l);
+        margin-top: $resetHeadlineBottomMarginTablet + ($buildingUnit * 5);
+    }
+}
+
 .header-block__title {
     text-align: center;
     position: relative;

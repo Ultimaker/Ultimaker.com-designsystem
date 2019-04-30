@@ -93,7 +93,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
         <!---->
          
         <article
-          class="hero hero--cover"
+          class="hero hero--cover organism"
         >
           <div
             class="hero-cover__image--full"

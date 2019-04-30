@@ -15,7 +15,7 @@ exports[`Storyshots organisms|overview Overview business card 1`] = `
         class="container"
       >
         <header
-          class="header-block "
+          class="header-block"
         >
           <h2
             class="header-block__title"
