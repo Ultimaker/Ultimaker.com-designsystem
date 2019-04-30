@@ -1,19 +1,18 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { CtaBlock as ICtaBlock } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cta/CtaBlock';
+import { CtaBlockProps } from './cta-block.models';
 
 @Component({
     name: 'cta-block',
-    template: require('./cta-block.html'),
+    template: require('./cta-block.vue.html'),
 })
 
-export default class CtaBlock extends Vue implements ICtaBlock {
-    @Prop({ type: Array, required: true }) ctas!: ICtaBlock['ctas'];
-    @Prop({ type: String }) block?: string;
-    @Prop({ type: String }) mod?: string | undefined;
-    @Prop({ type: String }) styleContentButton?: string;
-    @Prop({ type: String }) styleContentLink?: string | undefined;
-    @Prop({ type: String }) modContentLink?: string | undefined;
-    @Prop({ type: String }) modContentButton?: string | undefined;
+export default class CtaBlock extends Vue implements CtaBlockProps {
+    @Prop({ type: Array, required: true }) ctas!: CtaBlockProps['ctas'];
+    @Prop({ type: String }) mod?: CtaBlockProps['mod'];
+    @Prop({ type: String }) styleContentButton?: CtaBlockProps['styleContentButton'];
+    @Prop({ type: String }) styleContentLink?: CtaBlockProps['styleContentLink'];
+    @Prop({ type: String }) modContentLink?: CtaBlockProps['modContentLink'];
+    @Prop({ type: String }) modContentButton?: CtaBlockProps['modContentButton'];
 
     modifiers: object = {
         ContentButton: this.modContentButton || 'primary',
