@@ -1,6 +1,1127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots organisms|overview card-product 1`] = `
+exports[`Storyshots organisms|overview Overview business card 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="organism overview"
+      type="Overview"
+    >
+      <section
+        class="container"
+      >
+        <header
+          class="header-block "
+        >
+          <h2
+            class="header-block__title"
+          >
+            Find your reseller in the Netherlands
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            Or just get a subtitle
+          </p>
+        </header>
+         
+        <section
+          class="list-section list-section--cards"
+          type="ListSection"
+        >
+          <header
+            class="list-section__header"
+          >
+            <h3
+              class="list-section__title"
+            >
+              Preferred Resellers
+                
+              <span
+                class="list-section__count"
+              >
+                (4)
+              </span>
+               
+              <div
+                class="tooltip section-tooltip list-section__tooltip"
+                description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
+                icon="info"
+                id="tooltip_660"
+                label="More info"
+                style="display: none;"
+                type="Tooltip"
+              >
+                
+                            Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed.
+                        
+              </div>
+            </h3>
+             
+            <a
+              aria-describedby="tooltip_660"
+              class="link list-section__info-link link--reversed link--icon"
+              href="#"
+              role="button"
+            >
+              <!---->
+               
+                    More info
+                
+            </a>
+          </header>
+           
+          <ul
+            aria-label="Preferred Resellers"
+            class="list-section-list"
+          >
+            <div
+              class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+            >
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://www.makerpoint.nl/en/3d-printing/3d-printers/ultimaker/"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="https://storage.googleapis.com/ultimaker.com/resellerlogos/_60x60_fit_center-center_100_none/MakerPoint-square-ultimaker-online-purchase.png"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://ultimaker.com"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="/generator/svg/120/120"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://ultimaker.com"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="/generator/svg/120/120"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://ultimaker.com"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="/generator/svg/120/120"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+            </div>
+             
+            <!---->
+          </ul>
+           
+          <!---->
+        </section>
+        <section
+          class="list-section list-section--cards"
+          type="ListSection"
+        >
+          <header
+            class="list-section__header"
+          >
+            <h3
+              class="list-section__title"
+            >
+              Authorized Resellers
+                
+              <span
+                class="list-section__count"
+              >
+                (7)
+              </span>
+               
+              <!---->
+            </h3>
+             
+            <!---->
+          </header>
+           
+          <ul
+            aria-label="Authorized Resellers"
+            class="list-section-list"
+          >
+            <div
+              class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+            >
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://www.makerpoint.nl/en/3d-printing/3d-printers/ultimaker/"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="https://storage.googleapis.com/ultimaker.com/resellerlogos/_60x60_fit_center-center_100_none/MakerPoint-square-ultimaker-online-purchase.png"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://ultimaker.com"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="/generator/svg/120/120"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://ultimaker.com"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="/generator/svg/120/120"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://ultimaker.com"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="/generator/svg/120/120"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://ultimaker.com"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="/generator/svg/120/120"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://ultimaker.com"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="/generator/svg/120/120"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <a
+                    class="business-card"
+                    href="https://ultimaker.com"
+                    rel="noopener"
+                    tabindex="0"
+                    target="_blank"
+                    type="BusinessCard"
+                  >
+                    <div
+                      class="business-card__header"
+                    >
+                      <div
+                        class="business-card__image-wrapper"
+                      >
+                        <picture>
+                          <!---->
+                           
+                          <source
+                            media="(min-width: 1025px)"
+                            srcset=""
+                          />
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <!---->
+                           
+                          <source
+                            media="(max-width: 480px)"
+                            srcset="/generator/svg/120/120"
+                          />
+                           
+                          <img
+                            alt=""
+                            class="img--responsive img--lazy"
+                            src=""
+                          />
+                        </picture>
+                      </div>
+                       
+                      <div
+                        class="business-card__description"
+                      >
+                        <h4
+                          class="business-card__title"
+                        >
+                          
+                Ultimaker
+            
+                        </h4>
+                         
+                        <p
+                          class="business-card__property"
+                        >
+                          
+                5 Showrooms
+            
+                        </p>
+                      </div>
+                    </div>
+                     
+                    <div
+                      class="business-card__footer"
+                    >
+                      <span
+                        class="link faux-content-link business-card__link"
+                      >
+                        <span
+                          class="link__underline"
+                        >
+                          
+                Visit website
+            
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+              </div>
+            </div>
+             
+            <!---->
+          </ul>
+           
+          <!---->
+        </section>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            class="cta__block cta__block--footer"
+          >
+            <a
+              class="link--primary button cta__link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+            <a
+              class="link--large link cta__link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </section>
+    </article>
+  </section>
+</section>
+`;
+
+exports[`Storyshots organisms|overview Overview card product 1`] = `
 <section
   class="story"
 >
