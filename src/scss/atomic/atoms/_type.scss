@@ -26,32 +26,3 @@ html {
         @include font-line-ratio(prim-m);
     }
 }
-
-// Body
-strong {
-    display: block;
-    @extend p;
-
-    p & {
-        display: inline;
-    }
-}
-
-strong {
-    @extend %fontPrimary;
-    font-weight: 600;
-}
-
-strong {
-    @include font-line-ratio(prim-s);
-
-    margin-top: -2px;
-    margin-bottom: 2px;
-
-    @include min-tablet() {
-        @include font-line-ratio(prim-m);
-
-        margin-top: -5px;
-        margin-bottom: 5px;
-    }
-}
