@@ -32,3 +32,27 @@ a {
         }
     }
 }
+
+strong {
+    display: block;
+    @extend p;
+
+    p & {
+        display: inline;
+    }
+
+    @extend %fontPrimary;
+    font-weight: 600;
+
+    @include font-line-ratio(prim-s);
+
+    margin-top: -2px;
+    margin-bottom: 2px;
+
+    @include min-tablet() {
+        @include font-line-ratio(prim-m);
+
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+}
