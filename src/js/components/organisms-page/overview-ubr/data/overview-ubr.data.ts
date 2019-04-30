@@ -26,6 +26,6 @@ export default (amountOfItems: number) => {
                 },
             ],
         },
-        type: 'OverviewUBR',
+        type: 'overview-ubr',
     };
 };

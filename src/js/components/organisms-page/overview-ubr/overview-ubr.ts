@@ -3,7 +3,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 import { OverviewUBR as OverviewUBRInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/overview/OverviewUBR';
 
 @Component({
-    name: 'OverviewUBR',
+    name: 'overview-ubr',
     template: require('./overview-ubr.html'),
 })
 
