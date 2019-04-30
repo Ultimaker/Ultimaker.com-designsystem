@@ -343,12 +343,12 @@ h6 a:focus:not(:hover),
 .price-table__disclaimer a:focus:not(:hover),
 .tooltip__list-item.tooltip__label a:focus:not(:hover),
 .tag a:focus:not(:hover),
-.settings-selector__label a:focus:not(:hover),
 .tablist__section .tablist a:focus:not(:hover),
 .examples .examples__tabs .tablist a:focus:not(:hover),
 .tablist__section .tablist__headline a:focus:not(:hover),
 .examples .examples__tabs .tablist__headline a:focus:not(:hover),
 .auto-complete__label a:focus:not(:hover),
+.settings-selector__label a:focus:not(:hover),
 .hero--products-application .usp--icon .usp__label a:focus:not(:hover),
 .overflow-container__label a:focus:not(:hover),
 small a:focus:not(:active),
@@ -365,12 +365,12 @@ h6 a:focus:not(:active),
 .price-table__disclaimer a:focus:not(:active),
 .tooltip__list-item.tooltip__label a:focus:not(:active),
 .tag a:focus:not(:active),
-.settings-selector__label a:focus:not(:active),
 .tablist__section .tablist a:focus:not(:active),
 .examples .examples__tabs .tablist a:focus:not(:active),
 .tablist__section .tablist__headline a:focus:not(:active),
 .examples .examples__tabs .tablist__headline a:focus:not(:active),
 .auto-complete__label a:focus:not(:active),
+.settings-selector__label a:focus:not(:active),
 .hero--products-application .usp--icon .usp__label a:focus:not(:active),
 .overflow-container__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
@@ -954,7 +954,7 @@ q {
 
 small,
 h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.toggle, .toggle.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
-.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .settings-selector__label, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label {
+.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .settings-selector__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
@@ -963,7 +963,7 @@ h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal
   @media (min-width: 768px) {
     small,
     h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.toggle, .toggle.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
-    .price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .settings-selector__label, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label {
+    .price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .settings-selector__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -1287,12 +1287,12 @@ a {
   .price-table__disclaimer a,
   .tooltip__list-item.tooltip__label a,
   .tag a,
-  .settings-selector__label a,
   .tablist__section .tablist a,
   .examples .examples__tabs .tablist a,
   .tablist__section .tablist__headline a,
   .examples .examples__tabs .tablist__headline a,
   .auto-complete__label a,
+  .settings-selector__label a,
   .hero--products-application .usp--icon .usp__label a,
   .overflow-container__label a,
   .content--rich li a {
@@ -1694,7 +1694,7 @@ table th {
 
 table td small,
 table td h6, table td .caption-list__headline, table td .caption-list__list-item, table td .link.link--small, table td .legal__link, table td .link--small.footer-nav__link, table td .footer-nav__link.legal__link, table td .link--small.toggle, table td .toggle.legal__link, table td .link--small.overflow-container__link:hover, table td .overflow-container__link.legal__link:hover, table td .link--small.overflow-container__link.exact-active, table td .overflow-container__link.exact-active.legal__link, table td .price-table__tagline,
-table td .price-table__disclaimer, table td .tooltip__list-item.tooltip__label, table td .tag, table td .settings-selector__label, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .auto-complete__label, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label,
+table td .price-table__disclaimer, table td .tooltip__list-item.tooltip__label, table td .tag, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .auto-complete__label, table td .settings-selector__label, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label,
 table th small,
 table th h6,
 table th .caption-list__headline,
@@ -1713,7 +1713,6 @@ table th .price-table__tagline,
 table th .price-table__disclaimer,
 table th .tooltip__list-item.tooltip__label,
 table th .tag,
-table th .settings-selector__label,
 table th .tablist__section .tablist,
 .tablist__section table th .tablist,
 table th .examples .examples__tabs .tablist,
@@ -1723,6 +1722,7 @@ table th .tablist__section .tablist__headline,
 table th .examples .examples__tabs .tablist__headline,
 .examples .examples__tabs table th .tablist__headline,
 table th .auto-complete__label,
+table th .settings-selector__label,
 table th .hero--products-application .usp--icon .usp__label,
 .hero--products-application .usp--icon table th .usp__label,
 table th .overflow-container__label {
@@ -3455,87 +3455,6 @@ table tfoot {
     .notification__content--centered .button {
       margin-bottom: 0; } }
 
-.preferences-bar {
-  transform: translateY(0); }
-  .preferences-bar .auto-complete.auto-complete--small {
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: 0;
-    width: 260px; }
-    .preferences-bar .auto-complete.auto-complete--small .auto-complete__input {
-      border-color: #c6dfe8; }
-  .preferences-bar .settings-selector__edit-button {
-    color: #0CA9E3;
-    margin-top: 5px; }
-    .preferences-bar .settings-selector__edit-button:hover, .preferences-bar .settings-selector__edit-button:focus, .preferences-bar .settings-selector__edit-button:active {
-      color: #0CA9E3; }
-
-.settings {
-  width: 100%;
-  margin-bottom: 30px;
-  border: 2px solid #c6dfe8;
-  border-left: none;
-  border-right: none; }
-  @media (min-width: 480px) {
-    .settings {
-      margin-bottom: 36px; } }
-  .notification__content--centered .settings {
-    margin-left: auto;
-    margin-right: auto; }
-
-.settings-selector {
-  display: flex;
-  flex-direction: column;
-  padding: 12px 0;
-  border-bottom: 1px solid #c6dfe8; }
-  .settings-selector .form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; }
-    @media (min-width: 480px) {
-      .settings-selector .form-group {
-        flex-direction: row;
-        align-items: center; } }
-  .settings-selector__label {
-    margin-bottom: 0;
-    margin-left: 12px;
-    margin-right: 12px;
-    color: #6b797e; }
-    @media (min-width: 480px) {
-      .settings-selector__label {
-        flex-direction: row;
-        align-items: center;
-        margin-top: 5px; } }
-  .settings-selector__edit-button {
-    font-weight: 400;
-    margin-top: 5px; }
-    @media (min-width: 480px) {
-      .settings-selector__edit-button {
-        margin-top: 0; } }
-  .settings-selector:last-child {
-    margin-bottom: 0;
-    border: none; }
-
-.settings-panel {
-  text-align: left;
-  margin-top: 12px;
-  padding: 12px; }
-
-.setting:not(:last-child) {
-  margin-bottom: 18px; }
-
-.setting__description {
-  padding-left: 30px;
-  margin-top: -6px;
-  color: #6b797e; }
-
-.selector-group {
-  display: flex;
-  flex-direction: row; }
-  @media (min-width: 480px) {
-    .selector-group {
-      margin-left: auto; } }
-
 .country-selector {
   display: flex;
   flex: 1 1 auto;
@@ -4381,12 +4300,12 @@ h6 a:focus:not(:hover),
 .price-table__disclaimer a:focus:not(:hover),
 .tooltip__list-item.tooltip__label a:focus:not(:hover),
 .tag a:focus:not(:hover),
-.settings-selector__label a:focus:not(:hover),
 .tablist__section .tablist a:focus:not(:hover),
 .examples .examples__tabs .tablist a:focus:not(:hover),
 .tablist__section .tablist__headline a:focus:not(:hover),
 .examples .examples__tabs .tablist__headline a:focus:not(:hover),
 .auto-complete__label a:focus:not(:hover),
+.settings-selector__label a:focus:not(:hover),
 .hero--products-application .usp--icon .usp__label a:focus:not(:hover),
 .overflow-container__label a:focus:not(:hover),
 small a:focus:not(:active),
@@ -4403,12 +4322,12 @@ h6 a:focus:not(:active),
 .price-table__disclaimer a:focus:not(:active),
 .tooltip__list-item.tooltip__label a:focus:not(:active),
 .tag a:focus:not(:active),
-.settings-selector__label a:focus:not(:active),
 .tablist__section .tablist a:focus:not(:active),
 .examples .examples__tabs .tablist a:focus:not(:active),
 .tablist__section .tablist__headline a:focus:not(:active),
 .examples .examples__tabs .tablist__headline a:focus:not(:active),
 .auto-complete__label a:focus:not(:active),
+.settings-selector__label a:focus:not(:active),
 .hero--products-application .usp--icon .usp__label a:focus:not(:active),
 .overflow-container__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
@@ -4456,6 +4375,89 @@ h6 a:focus:not(:active),
       padding-bottom: 6.5px; }
   .auto-complete--reversed .auto-complete__dropdown {
     bottom: 100%; }
+
+.preferences-bar {
+  transform: translateY(0); }
+  .preferences-bar__button, .preferences-bar .settings-selector__edit-button {
+    background-color: transparent; }
+  .preferences-bar .auto-complete.auto-complete--small {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 260px; }
+    .preferences-bar .auto-complete.auto-complete--small .auto-complete__input {
+      border-color: #c6dfe8; }
+  .preferences-bar .settings-selector__edit-button {
+    color: #0CA9E3;
+    margin-top: 5px; }
+    .preferences-bar .settings-selector__edit-button:hover, .preferences-bar .settings-selector__edit-button:focus, .preferences-bar .settings-selector__edit-button:active {
+      color: #0CA9E3; }
+
+.settings {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid #c6dfe8;
+  border-left: none;
+  border-right: none; }
+  @media (min-width: 480px) {
+    .settings {
+      margin-bottom: 36px; } }
+  .notification__content--centered .settings {
+    margin-left: auto;
+    margin-right: auto; }
+
+.settings-selector {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  border-bottom: 1px solid #c6dfe8; }
+  .settings-selector .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    @media (min-width: 480px) {
+      .settings-selector .form-group {
+        flex-direction: row;
+        align-items: center; } }
+  .settings-selector__label {
+    margin-bottom: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #6b797e; }
+    @media (min-width: 480px) {
+      .settings-selector__label {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 5px; } }
+  .settings-selector__edit-button {
+    font-weight: 400;
+    margin-top: 5px; }
+    @media (min-width: 480px) {
+      .settings-selector__edit-button {
+        margin-top: 0; } }
+  .settings-selector:last-child {
+    margin-bottom: 0;
+    border: none; }
+
+.settings-panel {
+  text-align: left;
+  margin-top: 12px;
+  padding: 12px; }
+
+.setting:not(:last-child) {
+  margin-bottom: 18px; }
+
+.setting__description {
+  padding-left: 30px;
+  margin-top: -6px;
+  color: #6b797e; }
+
+.selector-group {
+  display: flex;
+  flex-direction: row; }
+  @media (min-width: 480px) {
+    .selector-group {
+      margin-left: auto; } }
 
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--basic:nth-child(even),
 main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .colors:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {

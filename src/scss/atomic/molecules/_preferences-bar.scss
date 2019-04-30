@@ -6,6 +6,7 @@
     }
 
     &__button {
+        background-color: transparent;
         @extend .notification__button;
     }
 
