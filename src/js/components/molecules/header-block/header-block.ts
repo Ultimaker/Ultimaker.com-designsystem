@@ -6,6 +6,6 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 })
 
 export default class HeaderBlock extends Vue {
-    @Prop({ type: String, required: true }) title!: string;
+    @Prop({ type: String, required: false }) title?: string;
     @Prop({ type: String, required: false }) subtitle?: string;
 }

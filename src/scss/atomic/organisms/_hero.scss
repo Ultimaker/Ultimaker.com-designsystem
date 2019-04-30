@@ -1,31 +1,18 @@
 $imageLinkSizeMobile: $buildingUnit * 7;
 $imageLinkSizeDesktop: $buildingUnit * 10;
 
+.hero__image {
+    position: relative;
+    width: 75%;
 
-.hero--basic {
-    .hero__subtitle {
-        $resetHeadlineBottomMarginMobile: -84px;
-        $resetHeadlineBottomMarginTablet: -101px;
+    margin: 0 auto ($buildingUnit * 2.5);
 
-        color: $colorGrayDark;
-        margin-top: $resetHeadlineBottomMarginMobile + ($buildingUnit * 3);
-        @extend h3;
-
-        @include min-tablet {
-            @include font-ratio-rhythm(sec-l);
-            margin-top: $resetHeadlineBottomMarginTablet + ($buildingUnit * 5);
-        }
+    @include min-mobile-xl {
+        width: 100%;
+        margin: 0 auto 0 ($buildingUnit * 2.5);
     }
 }
 
-.cta__block--hero {
-    align-items: flex-start;
-    @include min-tablet() {
-        align-items: center;
-    }
-}
-
-.hero--basic,
 .hero--products {
     @extend .organism;
     @extend %reset-last-margin;
@@ -112,3 +99,84 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     }
 
 }
+
+
+/*
+
+
+
+$imageLinkSizeMobile: $buildingUnit * 7;
+$imageLinkSizeDesktop: $buildingUnit * 10;
+
+.cta__block--hero {
+    align-items: flex-start;
+    @include min-tablet() {
+        align-items: center;
+    }
+}
+
+
+    @extend %reset-last-margin;
+
+    .hero__container {
+        padding-top: $buildingUnit * 5;            
+    }
+
+    .hero__image--basic,
+    .hero__image--product{
+        position: relative;
+        width: 75%;
+
+        margin: 0 auto ($buildingUnit * 2.5);
+
+        @include min-mobile-xl {
+            width: 100%;
+            margin: 0 auto 0 ($buildingUnit * 2.5);
+        }
+    }
+
+    .hero__image-link {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+
+        cursor: pointer;
+
+        margin: $buildingUnit;
+
+        width: $imageLinkSizeMobile;
+        height: $imageLinkSizeMobile;
+
+        color: $colorBlack;
+        @include micro-animate(color);
+
+        &:hover,
+        &:focus {
+            color: lighten($colorGrayDark, $tintHoverFocus);
+        }
+
+        @include min-desktop {
+            width: $imageLinkSizeDesktop;
+            height: $imageLinkSizeDesktop;
+        }
+    }
+
+    .hero__description {
+        @extend %reset-last-margin;
+    }
+
+    .hero__button {
+        display: table;
+
+        @include min-tablet {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+
+    .hero__link--large {
+        @extend %reset-last-link-large-margin;
+    }
+
+    */

@@ -261,14 +261,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .materials-card > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--basic > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--basic .hero__description > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--basic .hero__tab-panel > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--basic .hero__link-list > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child {
+.um-components .block > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .materials-card > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child {
   margin-bottom: 0; }
 
-.um-components .hero--basic .hero__link--large,
-.um-components .hero--products .hero__link--large,
-.um-components .hero--products-application .hero__link--large,
-.um-components .examples .examples__link--large,
-.um-components .colors .colors__link--large {
+.um-components .hero--products .hero__link--large, .um-components .hero--products-application .hero__link--large, .um-components .examples .examples__link--large, .um-components .colors .colors__link--large {
   margin-bottom: 0; }
 
 .um-components .clear {
@@ -343,11 +339,11 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .fonts--stage-two .overview__tooltip {
     font-family: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle, .um-components .icon-button--underline-large {
+.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--products-application .hero__subtitle, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle, .um-components .icon-button--underline-large {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-  .um-components .fonts--stage-one button, .um-components .fonts--stage-one .button, .um-components .fonts--stage-one input[type="button"], .um-components .fonts--stage-one input[type="submit"], .um-components .fonts--stage-one h1, .um-components .fonts--stage-one h2, .um-components .fonts--stage-one h3, .um-components .fonts--stage-one q, .um-components .fonts--stage-one .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .link--large, .um-components .fonts--stage-one .currency, .um-components .fonts--stage-one .main-nav__link, .um-components .fonts--stage-one .search__input, .um-components .fonts--stage-one .header-block__subtitle, .um-components .fonts--stage-one .icon-button--underline-large {
+  .um-components .fonts--stage-one button, .um-components .fonts--stage-one .button, .um-components .fonts--stage-one input[type="button"], .um-components .fonts--stage-one input[type="submit"], .um-components .fonts--stage-one h1, .um-components .fonts--stage-one h2, .um-components .fonts--stage-one h3, .um-components .fonts--stage-one q, .um-components .fonts--stage-one .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-one .hero__subtitle, .um-components .fonts--stage-one .link--large, .um-components .fonts--stage-one .currency, .um-components .fonts--stage-one .main-nav__link, .um-components .fonts--stage-one .search__input, .um-components .fonts--stage-one .header-block__subtitle, .um-components .fonts--stage-one .icon-button--underline-large {
     font-family: "fugue-init", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-  .um-components .fonts--stage-two button, .um-components .fonts--stage-two .button, .um-components .fonts--stage-two input[type="button"], .um-components .fonts--stage-two input[type="submit"], .um-components .fonts--stage-two h1, .um-components .fonts--stage-two h2, .um-components .fonts--stage-two h3, .um-components .fonts--stage-two q, .um-components .fonts--stage-two .hero--basic .hero__subtitle, .um-components .hero--basic .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .link--large, .um-components .fonts--stage-two .currency, .um-components .fonts--stage-two .main-nav__link, .um-components .fonts--stage-two .search__input, .um-components .fonts--stage-two .header-block__subtitle, .um-components .fonts--stage-two .icon-button--underline-large {
+  .um-components .fonts--stage-two button, .um-components .fonts--stage-two .button, .um-components .fonts--stage-two input[type="button"], .um-components .fonts--stage-two input[type="submit"], .um-components .fonts--stage-two h1, .um-components .fonts--stage-two h2, .um-components .fonts--stage-two h3, .um-components .fonts--stage-two q, .um-components .fonts--stage-two .hero--products-application .hero__subtitle, .um-components .hero--products-application .fonts--stage-two .hero__subtitle, .um-components .fonts--stage-two .link--large, .um-components .fonts--stage-two .currency, .um-components .fonts--stage-two .main-nav__link, .um-components .fonts--stage-two .search__input, .um-components .fonts--stage-two .header-block__subtitle, .um-components .fonts--stage-two .icon-button--underline-large {
     font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
@@ -378,7 +374,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .overview__tooltip {
   font-family: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--basic .hero__subtitle, .um-components .hero--products-application .hero__subtitle, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle, .um-components .icon-button--underline-large {
+.um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"], .um-components h1, .um-components h2, .um-components h3, .um-components q, .um-components .hero--products-application .hero__subtitle, .um-components .link--large, .um-components .currency, .um-components .main-nav__link, .um-components .search__input, .um-components .header-block__subtitle, .um-components .icon-button--underline-large {
   font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .um-components button, .um-components .button, .um-components input[type="button"], .um-components input[type="submit"] {
@@ -700,7 +696,78 @@ because both families serve another purpose. Therefore the line-heights will be 
       font-size: 12px;
       line-height: 18px; } }
 
+<<<<<<< HEAD
 .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
+=======
+.um-components h1,
+.um-components h2,
+.um-components h3,
+.um-components q,
+.um-components .hero--products-application .hero__subtitle {
+  font-weight: 400; }
+
+.um-components h1,
+.um-components .headline--primary {
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: -5px;
+  margin-bottom: 59px; }
+  @media (min-width: 768px) {
+    .um-components h1,
+    .um-components .headline--primary {
+      font-size: 60px;
+      line-height: 60px;
+      margin-top: -4px;
+      margin-bottom: 64px; } }
+
+.um-components h2,
+.um-components .headline--secondary {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 1px;
+  margin-bottom: 53px; }
+  @media (min-width: 768px) {
+    .um-components h2,
+    .um-components .headline--secondary {
+      font-size: 30px;
+      line-height: 36px;
+      margin-top: -5px;
+      margin-bottom: 59px; } }
+
+
+.um-components h3,
+.um-components q,
+.um-components .hero--products-application .hero__subtitle,
+.um-components .headline--tertiary {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 6px;
+  margin-bottom: 24px; }
+  @media (min-width: 768px) {
+    
+    .um-components h3,
+    .um-components q,
+    .um-components .hero--products-application .hero__subtitle,
+    .um-components .headline--tertiary {
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 5px;
+      margin-bottom: 31px; } }
+
+.um-components h4,
+.um-components h5,
+.um-components .link-list__headline,
+.um-components .flyout__title,
+.um-components .footer-nav__title,
+.um-components .notification__title,
+.um-components h6,
+.um-components .headline--quaternary,
+.um-components .headline--quinary,
+.um-components .headline--senary,
+.um-components strong,
+.um-components .tablist__section .tablist__item,
+.um-components .examples .examples__tabs .tablist__item {
+>>>>>>> fix(styling): fix styling split up components
   font-weight: 600; }
 
 .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
@@ -2406,10 +2473,16 @@ because both families serve another purpose. Therefore the line-heights will be 
       align-items: baseline;
       flex-wrap: wrap; } }
 
+.um-components .cta__block--hero {
+  align-items: flex-start; }
+  @media (min-width: 768px) {
+    .um-components .cta__block--hero {
+      align-items: center; } }
+
 .um-components .cta__link {
   text-align: center;
   margin-right: 0;
-  margin-bottom: 24px; }
+  margin-bottom: 12px; }
   .um-components .cta__link:last-of-type {
     margin-bottom: 0; }
   @media (min-width: 768px) {
@@ -3452,6 +3525,20 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .header-block {
   margin-bottom: 54px; }
 
+.um-components .header-block--hero {
+  margin-bottom: 69px; }
+
+.um-components .header-block__subtitle--hero {
+  color: #7F7F7F;
+  margin-top: -48px; }
+  @media (min-width: 768px) {
+    .um-components .header-block__subtitle--hero {
+      font-size: 30px;
+      line-height: 36px;
+      margin-top: -5px;
+      margin-bottom: 59px;
+      margin-top: -41px; } }
+
 .um-components .header-block__title {
   text-align: center;
   position: relative;
@@ -3571,54 +3658,32 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .icon-button--underline-large:hover .icon-button__label, .um-components .icon-button--underline-large:hover .sys-nav__label, .um-components .icon-button--underline-large:active .icon-button__label, .um-components .icon-button--underline-large:active .sys-nav__label, .um-components .icon-button--underline-large:visited .icon-button__label, .um-components .icon-button--underline-large:visited .sys-nav__label {
     background-size: 0 100%; }
 
-.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--basic:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .colors:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
+.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .colors:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
-.um-components .hero--basic .hero__subtitle {
-  color: #7F7F7F;
-  margin-top: -48px; }
-  @media (min-width: 768px) {
-    .um-components .hero--basic .hero__subtitle {
-      font-size: 30px;
-      line-height: 36px;
-      margin-top: -5px;
-      margin-bottom: 59px;
-      margin-top: -41px; } }
-
-.um-components .cta__block--hero {
-  align-items: flex-start; }
-  @media (min-width: 768px) {
-    .um-components .cta__block--hero {
-      align-items: center; } }
-
-@media (max-width: 568px) {
-  .um-components .hero--basic .hero__container,
-  .um-components .hero--products .hero__container,
-  .um-components .hero--products-application .hero__container {
-    padding-top: 12px; } }
-
-.um-components .hero--basic .hero__image--basic,
-.um-components .hero--basic .hero__image--product,
-.um-components .hero--products .hero__image--basic,
-.um-components .hero--products-application .hero__image--basic,
-.um-components .hero--products .hero__image--product,
-.um-components .hero--products-application .hero__image--product {
+.um-components .hero__image {
   position: relative;
   width: 75%;
   margin: 0 auto 30px; }
   @media (min-width: 569px) {
-    .um-components .hero--basic .hero__image--basic,
-    .um-components .hero--basic .hero__image--product,
-    .um-components .hero--products .hero__image--basic,
-    .um-components .hero--products-application .hero__image--basic,
-    .um-components .hero--products .hero__image--product,
-    .um-components .hero--products-application .hero__image--product {
+    .um-components .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
 
-.um-components .hero--basic .hero__image-link,
-.um-components .hero--products .hero__image-link,
-.um-components .hero--products-application .hero__image-link {
+@media (max-width: 568px) {
+  .um-components .hero--products .hero__container, .um-components .hero--products-application .hero__container {
+    padding-top: 12px; } }
+
+.um-components .hero--products .hero__image--basic, .um-components .hero--products-application .hero__image--basic, .um-components .hero--products .hero__image--product, .um-components .hero--products-application .hero__image--product {
+  position: relative;
+  width: 75%;
+  margin: 0 auto 30px; }
+  @media (min-width: 569px) {
+    .um-components .hero--products .hero__image--basic, .um-components .hero--products-application .hero__image--basic, .um-components .hero--products .hero__image--product, .um-components .hero--products-application .hero__image--product {
+      width: 100%;
+      margin: 0 auto 0 30px; } }
+
+.um-components .hero--products .hero__image-link, .um-components .hero--products-application .hero__image-link {
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -3629,43 +3694,110 @@ because both families serve another purpose. Therefore the line-heights will be 
   height: 84px;
   color: #000000;
   transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  .um-components .hero--basic .hero__image-link:hover, .um-components .hero--basic .hero__image-link:focus, .um-components .hero--products .hero__image-link:hover, .um-components .hero--products-application .hero__image-link:hover, .um-components .hero--products .hero__image-link:focus, .um-components .hero--products-application .hero__image-link:focus {
+  .um-components .hero--products .hero__image-link:hover, .um-components .hero--products-application .hero__image-link:hover, .um-components .hero--products .hero__image-link:focus, .um-components .hero--products-application .hero__image-link:focus {
     color: #939393; }
   @media (min-width: 1025px) {
-    .um-components .hero--basic .hero__image-link,
-    .um-components .hero--products .hero__image-link,
-    .um-components .hero--products-application .hero__image-link {
+    .um-components .hero--products .hero__image-link, .um-components .hero--products-application .hero__image-link {
       width: 120px;
       height: 120px; } }
 
-.um-components .hero--basic .hero__image-link--3d-kit,
-.um-components .hero--products .hero__image-link--3d-kit,
-.um-components .hero--products-application .hero__image-link--3d-kit {
+.um-components .hero--products .hero__image-link--3d-kit, .um-components .hero--products-application .hero__image-link--3d-kit {
   width: 100%;
   height: 100%; }
 
-.um-components .hero--basic .hero__button,
-.um-components .hero--products .hero__button,
-.um-components .hero--products-application .hero__button {
+.um-components .hero--products .hero__button, .um-components .hero--products-application .hero__button {
   display: table; }
   @media (min-width: 768px) {
-    .um-components .hero--basic .hero__button,
-    .um-components .hero--products .hero__button,
-    .um-components .hero--products-application .hero__button {
+    .um-components .hero--products .hero__button, .um-components .hero--products-application .hero__button {
       display: inline-block;
       margin-bottom: 0; } }
 
-.um-components .hero--basic .hero__link-list,
-.um-components .hero--products .hero__link-list,
-.um-components .hero--products-application .hero__link-list {
+.um-components .hero--products .hero__link-list, .um-components .hero--products-application .hero__link-list {
   margin-top: 33px;
   margin-bottom: 0; }
   @media (min-width: 768px) {
-    .um-components .hero--basic .hero__link-list,
-    .um-components .hero--products .hero__link-list,
-    .um-components .hero--products-application .hero__link-list {
+    .um-components .hero--products .hero__link-list, .um-components .hero--products-application .hero__link-list {
       margin-top: 46px; } }
 
+/*
+
+
+
+$imageLinkSizeMobile: $buildingUnit * 7;
+$imageLinkSizeDesktop: $buildingUnit * 10;
+
+.cta__block--hero {
+    align-items: flex-start;
+    @include min-tablet() {
+        align-items: center;
+    }
+}
+
+
+    @extend %reset-last-margin;
+
+    .hero__container {
+        padding-top: $buildingUnit * 5;            
+    }
+
+    .hero__image--basic,
+    .hero__image--product{
+        position: relative;
+        width: 75%;
+
+        margin: 0 auto ($buildingUnit * 2.5);
+
+        @include min-mobile-xl {
+            width: 100%;
+            margin: 0 auto 0 ($buildingUnit * 2.5);
+        }
+    }
+
+    .hero__image-link {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+
+        cursor: pointer;
+
+        margin: $buildingUnit;
+
+        width: $imageLinkSizeMobile;
+        height: $imageLinkSizeMobile;
+
+        color: $colorBlack;
+        @include micro-animate(color);
+
+        &:hover,
+        &:focus {
+            color: lighten($colorGrayDark, $tintHoverFocus);
+        }
+
+        @include min-desktop {
+            width: $imageLinkSizeDesktop;
+            height: $imageLinkSizeDesktop;
+        }
+    }
+
+    .hero__description {
+        @extend %reset-last-margin;
+    }
+
+    .hero__button {
+        display: table;
+
+        @include min-tablet {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+
+    .hero__link--large {
+        @extend %reset-last-link-large-margin;
+    }
+
+    */
 .um-components .hero--products-application .hero__container--top {
   position: relative;
   color: #FFFFFF; }
@@ -3760,10 +3892,10 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-top: 36px;
       margin-bottom: 29px; } }
 
-.um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q, .um-components .hero--text .content--rich .hero--basic * + .hero__subtitle, .um-components .hero--basic .hero--text .content--rich * + .hero__subtitle, .um-components .hero--text .content--rich .hero--products-application * + .hero__subtitle, .um-components .hero--products-application .hero--text .content--rich * + .hero__subtitle {
+.um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q, .um-components .hero--text .content--rich .hero--products-application * + .hero__subtitle, .um-components .hero--products-application .hero--text .content--rich * + .hero__subtitle {
   margin-top: 30px; }
   @media (min-width: 768px) {
-    .um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q, .um-components .hero--text .content--rich .hero--basic * + .hero__subtitle, .um-components .hero--basic .hero--text .content--rich * + .hero__subtitle, .um-components .hero--text .content--rich .hero--products-application * + .hero__subtitle, .um-components .hero--products-application .hero--text .content--rich * + .hero__subtitle {
+    .um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q, .um-components .hero--text .content--rich .hero--products-application * + .hero__subtitle, .um-components .hero--products-application .hero--text .content--rich * + .hero__subtitle {
       margin-top: 35px; } }
 
 .um-components .hero--cover {
@@ -5250,19 +5382,292 @@ because both families serve another purpose. Therefore the line-heights will be 
     font-size: 12px;
     line-height: 18px;
     color: #7F7F7F;
-    margin-bottom: 6px; }
+    margin-bottom: 3px; }
     @media (min-width: 768px) {
       .um-components .product__name {
         margin-bottom: 8px; } }
   .um-components .product__pricing {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 500;
     margin-bottom: 0; }
     @media (min-width: 768px) {
       .um-components .product__pricing {
         font-size: 20px;
         line-height: 24px; } }
+
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ * The medium font stack, returns the most appropriate system font.
+ */
+/**
+ * Target High DPI devices
+ *
+ * @include hidpi(1.5) {
+ *   width: 20em;
+ * }
+ *
+ */
+/**
+ * Center transform an element on an axis.
+ *
+ * position: absolute;
+ *
+ * @include mix-center;
+ * @include mix-center(x);
+ * @include mix-center(y);
+ * @include mix-center(xy);
+ */
+/**
+ * Calculates the sRGB luma of a colour.
+ */
+/**
+ * Returns the most visible colour for a given background.
+ *
+ * color: mix-pick-visible-color($background-color, $black-text-color, $white-text-color);
+ */
+/**
+ * Mix a color with white. Alternative to sass lighten.
+ *
+ * background-color: mix-tint(#6ecaa6, 40%);
+ */
+/**
+ * Mix a color with black. Alternative to sass darken.
+ *
+ * background-color: mix-tint(#6ecaa6, 40%);
+ */
+/**
+ * Add a clearfix
+ *
+ * Should be used on the containing element
+ * @include mix-clearfix;
+ */
+/**
+ * Truncate text and add an ellipsis
+ *
+ * @include mix-ellipsis;
+ * @include mix-ellipsis(50%);
+ */
+/**
+ * HSL and HSV
+ *
+ * @see https://gist.github.com/1069204
+ */
+/**
+ * Normal
+ */
+/**
+ * Multiply
+ */
+/**
+ * Lighten
+ */
+/**
+ * Darken
+ */
+/**
+ * Darker Color
+ */
+/**
+ * Lighter Color
+ */
+/**
+ * Linear Dodge
+ */
+/**
+ * Linear Burn
+ */
+/**
+ * Difference
+ */
+/**
+ * Screen
+ */
+/**
+ * Exclusion
+ */
+/**
+ * Overlay
+ */
+/**
+ * Soft Light
+ */
+/**
+ * Hard Light
+ */
+/**
+ * Color Dodge
+ */
+/**
+ * Color Burn
+ */
+/**
+ *  Linear Light
+ */
+/**
+ * Vivid Light
+ */
+/**
+ * Pin Light
+ */
+/**
+ * Hard Mix
+ */
+/**
+ * Color Blend
+ */
+/**
+ * Dissolve
+ */
+/**
+ * Divide
+ */
+/**
+ * Hue
+ */
+/**
+ * Luminosity
+ */
+/**
+ * Saturation
+ */
+/**
+ * Subtract
+ */
+/**
+ * Fix for vw, vh, vmin, vmax on iOS 7.
+ * http://caniuse.com/#feat=viewport-units
+ *
+ * This fix works by replacing viewport units with px values on known screen sizes.
+ *
+ * iPhone 6 and 6 Plus cannot run iOS 7, so are not targeted by this fix.
+ * Target devices running iOS 8+ will incidentally execute the media query,
+ * but this will still produce the expected result; so this is not a problem.
+ *
+ * As an example, replace:
+ *
+ *   height: 50vh;
+ *   font-size: 5vmin;
+ *
+ * with:
+ *
+ *   @include viewport-unit(height, 50vh);
+ *   @include viewport-unit(font-size, 5vmin);
+ */
+/**
+ * easing function
+ * @param {string} $easeName - The name of the easing function.
+ * @returns {string} - Returns a cubic-bezier function with the easing values.
+ */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+/**
+ * Position X,Y,Z (Fallback Top, Left IE)
+ * @param {number} $x - X Position
+ * @param {number} $y - Y Position
+ * @param {number} $z - Z Position
+ */
+/**
+ * Position
+ * @param {number} $top (0) - Top Position
+ * @param {number} $right (auto) - Right Position
+ * @param {number} $bottom (auto) - Bottom Position
+ * @param {number} $left (0) - Left Position
+ */
+/**
+ * Offset
+ * @param {number} $top (0) - Top Offset
+ * @param {number} $left (0) - Left Offset
+ */
+/**
+ * Positioning an element absolute in the center
+ */
+/**
+ * Places an element absolute on top of the entire wrapper
+ */
+/**
+ * Set an element to display block and center margin
+ */
+/**
+ * Size an Element
+ * @param {number} $width (1em) - Width of the element
+ * @param {number} $height ($width) - Height of the element
+ */
+/**
+ * Font Face
+ * @param {string} $fontName - Name of the font
+ * @param {string} $folderName - Subfolder inside the fonts folder
+ * @param {string} $fileName - Name of the font-file
+ * @param {string} $fontWeight (normal) - Font weight value
+ * @param {string} $fontStyle (normal) - Font style value
+ */
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/**
+ * Z-Index function
+ * @param {string} $list (Array) - The list to find the current z-index in
+ * @param {string} $element (String) - The name of the current element, must be in the $list
+ * @returns {number}
+ */
+.um-components .clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.um-components .hidden {
+  display: none; }
+
+.um-components .ir,
+.um-components .clear {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+/* Picked an accessible color from colorsafe.co to try out some time */
 
 /*
 * Because we have a primary and secondary font family, we need to define both
@@ -5523,10 +5928,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .hero--product .hero__linklist {
   list-style: none; }
 
-.um-components .hero--product > :last-child, .um-components .hero--product .hero__description > :last-child, .um-components .hero--product .hero__link-list > :last-child {
-  margin-bottom: 0; }
-
-.um-components .hero--product .hero__link--large {
+.um-components .hero--product .hero__link-list > :last-child {
   margin-bottom: 0; }
 
 .um-components .clear {
@@ -5549,60 +5951,16 @@ because both families serve another purpose. Therefore the line-heights will be 
   border: 0; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
-.um-components .cta__block--hero {
-  align-items: flex-start; }
-  @media (min-width: 768px) {
-    .um-components .cta__block--hero {
-      align-items: center; } }
-
-@media (max-width: 568px) {
-  .um-components .hero--product .hero__container {
-    padding-top: 12px; } }
-
-.um-components .hero--product .hero__image--basic,
-.um-components .hero--product .hero__image--product {
-  position: relative;
-  width: 75%;
-  margin: 0 auto 30px; }
-  @media (min-width: 569px) {
-    .um-components .hero--product .hero__image--basic,
-    .um-components .hero--product .hero__image--product {
-      width: 100%;
-      margin: 0 auto 0 30px; } }
-
-.um-components .hero--product .hero__image-link {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  margin: 12px;
-  width: 84px;
-  height: 84px;
-  color: #000000;
-  transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  .um-components .hero--product .hero__image-link:hover, .um-components .hero--product .hero__image-link:focus {
-    color: #939393; }
-  @media (min-width: 1025px) {
-    .um-components .hero--product .hero__image-link {
-      width: 120px;
-      height: 120px; } }
-
-.um-components .hero--product .hero__image-link--3d-kit {
-  width: 100%;
-  height: 100%; }
-
 .um-components .hero--product .hero__products {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px; }
+  margin-bottom: 24px; }
   @media (min-width: 768px) {
     .um-components .hero--product .hero__products {
-      margin-bottom: 42px;
       flex-direction: row; } }
 
 .um-components .hero--product .hero__products-item {
-  margin-bottom: 24px; }
+  margin-bottom: 18px; }
   .um-components .hero--product .hero__products-item:last-child {
     margin-bottom: 0; }
   @media (min-width: 768px) {
@@ -5610,13 +5968,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-bottom: 0; }
       .um-components .hero--product .hero__products-item--multiple:not(:last-child) {
         border-right: 1px solid #E3E3E3; } }
-
-.um-components .hero--product .hero__button {
-  display: table; }
-  @media (min-width: 768px) {
-    .um-components .hero--product .hero__button {
-      display: inline-block;
-      margin-bottom: 0; } }
 
 .um-components .hero--product .hero__link-list {
   margin-top: 33px;
@@ -5627,6 +5978,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .hero--product .hero__linklist {
   margin-top: 48px; }
+  .um-components .hero--product .hero__linklist .hero__linklist-item:last-child .hero__linklist-link {
+    margin-bottom: 0; }
 
 .um-components .hero--product .hero__linklist-link {
   margin-bottom: 6px; }

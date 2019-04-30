@@ -34,10 +34,14 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
               description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
               icon="info"
 <<<<<<< HEAD
+<<<<<<< HEAD
               id="tooltip_867"
 =======
               id="tooltip_878"
 >>>>>>> feat(hero-product): add hero-product
+=======
+              id="tooltip_892"
+>>>>>>> fix(styling): fix styling split up components
               label="More info"
               style="display: none;"
               type="Tooltip"
@@ -50,10 +54,14 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
            
           <a
 <<<<<<< HEAD
+<<<<<<< HEAD
             aria-describedby="tooltip_867"
 =======
             aria-describedby="tooltip_878"
 >>>>>>> feat(hero-product): add hero-product
+=======
+            aria-describedby="tooltip_892"
+>>>>>>> fix(styling): fix styling split up components
             class="link list-section__info-link link--reversed link--icon"
             href="#"
             role="button"

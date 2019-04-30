@@ -12,10 +12,17 @@
     }
 }
 
+.cta__block--hero {
+    align-items: flex-start;
+    @include min-tablet() {
+        align-items: center;
+    }
+}
+
 .cta__link {
     text-align: center;
     margin-right: 0;
-    margin-bottom: $buildingUnit * 2;
+    margin-bottom: $buildingUnit;
 
     &:last-of-type {
         margin-bottom: 0;

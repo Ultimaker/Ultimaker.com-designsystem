@@ -12,10 +12,6 @@ const getStory = (type) => {
             knobsFormat,
         );
 
-        console.log(knobs);
-
-        console.log(data);
-
         return {
             data() {
                 return {
@@ -54,6 +50,6 @@ addStories({
     data,
     getStory,
     decorators: ['withKnobs'],
-    kind: 'Organisms/hero-product',
+    kind: 'Organisms|hero/Hero product',
     notes: addNotes(require('./hero-product.md')),
 });

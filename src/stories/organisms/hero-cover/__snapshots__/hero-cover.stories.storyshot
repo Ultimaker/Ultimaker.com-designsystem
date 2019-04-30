@@ -11,7 +11,7 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
       class="story__organism"
     >
       <article
-        class="hero hero--cover"
+        class="hero hero--cover organism"
       >
         <div
           class="hero-cover__image--full"

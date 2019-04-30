@@ -18,7 +18,7 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
           class="container"
         >
           <header
-            class="header-block "
+            class="header-block"
           >
             <h2
               class="header-block__title"
@@ -57,10 +57,14 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
                   icon="info"
 <<<<<<< HEAD
+<<<<<<< HEAD
                   id="tooltip_581"
 =======
                   id="tooltip_586"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                  id="tooltip_600"
+>>>>>>> fix(styling): fix styling split up components
                   label="More info"
                   style="display: none;"
                   type="Tooltip"
@@ -73,10 +77,14 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                
               <a
 <<<<<<< HEAD
+<<<<<<< HEAD
                 aria-describedby="tooltip_581"
 =======
                 aria-describedby="tooltip_586"
 >>>>>>> feat(hero-product): add hero-product
+=======
+                aria-describedby="tooltip_600"
+>>>>>>> fix(styling): fix styling split up components
                 class="link list-section__info-link link--reversed link--icon"
                 href="#"
                 role="button"
