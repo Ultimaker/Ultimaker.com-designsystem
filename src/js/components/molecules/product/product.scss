@@ -1,5 +1,3 @@
-@import "~scss/component";
-
 .product {
     display: flex;
     margin-right: $buildingUnit * 2;
@@ -8,7 +6,7 @@
         padding-right: $buildingUnit;
         margin-right: $buildingUnit;
     }
-    
+
     &__icon-container{
         height: $buildingUnit *3;
         width: $buildingUnit * 3;
@@ -19,19 +17,19 @@
         height: $buildingUnit *3;
         width: $buildingUnit * 3;
         margin-right: $buildingUnit * 1;
-    
+
     }
 
     &__information {
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;
     }
 
     &__name{
         @include font-line-ratio(prim-xs);
         color: $colorGrayDark;
         margin-bottom: $buildingUnit  / 4;
-        
+
         @include min-tablet() {
             margin-bottom: $buildingUnit  / 1.5;
         }
@@ -42,10 +40,10 @@
         font-family: $fontSecondaryStageTwo;
         font-weight: 500;
         margin-bottom: 0;
-        
+
         @include min-tablet() {
             @include font-line-ratio(sec-s);
         }
-        
+
     }
 }

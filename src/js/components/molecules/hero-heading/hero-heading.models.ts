@@ -1,1 +1,4 @@
-export interface HeroHeadingProps {}
+export interface HeroHeadingProps {
+    title: string;
+    subtitle?: string;
+}

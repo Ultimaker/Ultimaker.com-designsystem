@@ -22,7 +22,7 @@
 .cta__link {
     text-align: center;
     margin-right: 0;
-    margin-bottom: $buildingUnit;
+    margin-bottom: $buildingUnit * 1.5;
 
     &:last-of-type {
         margin-bottom: 0;

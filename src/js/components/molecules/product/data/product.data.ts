@@ -14,5 +14,5 @@ export const data = {
         pricing: {
             label: 'Price on request',
         },
-    },  
-}
+    },
+};

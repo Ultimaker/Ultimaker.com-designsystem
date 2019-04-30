@@ -7,7 +7,7 @@ describe('components', () => {
     describe('molecules', () => {
         describe('hero-heading', () => {
 
-            const mount = build(HeroHeading, { props: {}});
+            const mount = build(HeroHeading, { props: { } });
 
             it('should render an HeroHeading component', () => {
                 const vm = mount();
