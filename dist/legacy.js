@@ -6444,7 +6444,7 @@ exports.default = ContentBlock;
 /* 200 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"content-block disable-focus\" tabIndex=\"-1\">\n    <div class=\"content-block-container__image\">\n        <c-image class=\"content-block__image\" v-if=\"image\" v-bind=\"image\" keep-in-view></c-image>\n    </div>\n    <div class=\"content-block__content\">\n        <h3 class=\"content-block__headline\">{{ title }}</h3>\n        <p class=\"content-block__description\">{{ description }}</p>\n\n        <component v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n\n    </div>\n</article>\n";
+module.exports = "<article class=\"content-block disable-focus\" tabIndex=\"-1\">\n    <div class=\"content-block-container__image\">\n        <c-image class=\"content-block__image\" v-if=\"image\" v-bind=\"image\" keep-in-view></c-image>\n    </div>\n    <div class=\"content-block__content\">\n        <h3 class=\"content-block__headline\">{{ title }}</h3>\n        <p class=\"content-block__description\">{{ description }}</p>\n\n        <component v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n    </div>\n</article>\n";
 
 /***/ }),
 /* 201 */

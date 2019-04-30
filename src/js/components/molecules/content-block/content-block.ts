@@ -1,16 +1,16 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { ContentBlock as IContentBlock } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/blocks/ContentBlock';
+import { ContentBlockProps } from './content-block.models';
 
 @Component({
     name: 'ContentBlock',
-    template: require('./content-block.html'),
+    template: require('./content-block.vue.html'),
 })
 
-export default class ContentBlock extends Vue implements IContentBlock {
-    @Prop({ type: String, required: true }) title!: IContentBlock['title'];
-    @Prop({ type: String, required: true }) description!: IContentBlock['description'];
-    @Prop({ type: Object }) image?: IContentBlock['image'];
-    @Prop({ type: Object }) cta?: IContentBlock['cta'];
+export default class ContentBlock extends Vue implements ContentBlockProps {
+    @Prop({ type: String, required: true }) title!: ContentBlockProps['title'];
+    @Prop({ type: String, required: true }) description!: ContentBlockProps['description'];
+    @Prop({ type: Object }) image?: ContentBlockProps['image'];
+    @Prop({ type: Object }) cta?: ContentBlockProps['cta'];
 
     getClassNames(type): string {
         return {
