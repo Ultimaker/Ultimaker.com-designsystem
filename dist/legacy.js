@@ -10580,7 +10580,7 @@ exports.default = BlockIcon;
 /* 285 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"block-icon flexgrid\" tabindex=\"0\">\n    <div class=\"block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12\">\n        <icon v-if=\"icon\" :icon-name=\"icon\" class=\"block-icon__icon\"></icon>\n    </div>\n    <div class=\"block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12\">\n        <h3 class=\"block-icon__headline\">{{ title }}</h3>\n        <p class=\"block-icon__description\" v-if=\"description\">{{ description }}</p>\n        <component class=\"block-icon__link\" v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n    </div>\n</article>\n";
+module.exports = "<article class=\"block-icon flexgrid\">\n    <div class=\"block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12\">\n        <icon v-if=\"icon\" :icon-name=\"icon\" class=\"block-icon__icon\"></icon>\n    </div>\n    <div class=\"block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12\">\n        <h3 class=\"block-icon__headline\">{{ title }}</h3>\n        <p class=\"block-icon__description\" v-if=\"description\">{{ description }}</p>\n        <component class=\"block-icon__link\" v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n    </div>\n</article>\n";
 
 /***/ }),
 /* 286 */
