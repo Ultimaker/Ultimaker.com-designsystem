@@ -3522,18 +3522,19 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .block-icon__icon {
   height: 100%; }
 
+.um-components .block-icon__headline {
+  margin-top: 0; }
+
 .um-components .block-icon {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start; }
-  .um-components .block-icon:last-child {
-    margin-bottom: 0; }
+  justify-content: flex-start;
+  padding: 0 12px 48px 12px !important; }
   .um-components .block-icon .block-icon__visual {
     flex: 1 1 60px;
-    width: 60px;
-    height: 60px;
-    min-width: 60px;
-    max-height: 60px; }
+    max-height: 60px;
+    margin: 0;
+    margin-bottom: 24px; }
 
 @media (min-width: 569px) {
   .um-components .block-icon__items {
@@ -3547,6 +3548,9 @@ because both families serve another purpose. Therefore the line-heights will be 
 @media (min-width: 768px) {
   .um-components .block-icon__items {
     flex-flow: row wrap; } }
+
+.um-components .block-icon__link {
+  margin-bottom: 0; }
 
 .um-components .auto-complete {
   position: relative;
