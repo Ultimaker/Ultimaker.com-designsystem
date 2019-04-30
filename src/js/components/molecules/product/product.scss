@@ -30,7 +30,7 @@
     &__name{
         @include font-line-ratio(prim-xs);
         color: $colorGrayDark;
-        margin-bottom: $buildingUnit  / 2.5;
+        margin-bottom: $buildingUnit  / 2;
         
         @include min-tablet() {
             margin-bottom: $buildingUnit  / 1.5;
