@@ -10580,7 +10580,7 @@ exports.default = BlockIcon;
 /* 285 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"block-icon\" tabindex=\"0\">\n    <div class=\"block-icon__visual\">\n        <icon v-if=\"icon\" :icon-name=\"icon\" class=\"block-icon__icon\"></icon>\n    </div>\n    <div class=\"block-icon__content\">\n        <h3 class=\"block-icon__headline\">{{ title }}</h3>\n        <p class=\"block-icon__description\" v-if=\"description\">{{ description }}</p>\n        <component v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n    </div>\n</article>\n";
+module.exports = "<article class=\"block-icon flexgrid\" tabindex=\"0\">\n    <div class=\"block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12\">\n        <icon v-if=\"icon\" :icon-name=\"icon\" class=\"block-icon__icon\"></icon>\n    </div>\n    <div class=\"block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12\">\n        <h3 class=\"block-icon__headline\">{{ title }}</h3>\n        <p class=\"block-icon__description\" v-if=\"description\">{{ description }}</p>\n        <component class=\"block-icon__link\" v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n    </div>\n</article>\n";
 
 /***/ }),
 /* 286 */
@@ -13171,8 +13171,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
@@ -13204,23 +13202,6 @@ var OverviewUBR = function (_Vue) {
         return _possibleConstructorReturn(this, (OverviewUBR.__proto__ || Object.getPrototypeOf(OverviewUBR)).apply(this, arguments));
     }
 
-    _createClass(OverviewUBR, [{
-        key: "flexgridClasses",
-        get: function get() {
-            var amountOfItems = this.items.length;
-            if (amountOfItems === 2) {
-                return 'flexgrid__cell--xs-4 flexgrid__cell--lg-3';
-            }
-            if (amountOfItems === 3) {
-                return 'flexgrid__cell--xs-6 flexgrid__cell--md-4';
-            }
-            if (amountOfItems === 4) {
-                return 'flexgrid__cell--md-6 flexgrid__cell--lg-3';
-            }
-            return 'flexgrid__cell--xs-6 flexgrid__cell--md-4';
-        }
-    }]);
-
     return OverviewUBR;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], OverviewUBR.prototype, "title", void 0);
@@ -13228,7 +13209,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], OverviewUBR.prototype, "items", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], OverviewUBR.prototype, "ctas", void 0);
 OverviewUBR = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'OverviewUBR',
+    name: 'overview-ubr',
     template: __webpack_require__(361)
 })], OverviewUBR);
 exports.default = OverviewUBR;
@@ -13237,7 +13218,7 @@ exports.default = OverviewUBR;
 /* 361 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"organism overview-ubr\">\n    <section class=\"container\">\n        <HeaderBlock :title=\"title\" :subtitle=\"subtitle\" />\n        <div class=\"flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row\">\n            <BlockIcon v-for=\"(blockIcon, index) in items\" :class=\"flexgridClasses\" v-bind=\"blockIcon\" :key=\"index\"></BlockIcon>\n        </div>\n        <FooterBlock :ctas=\"ctas\" />\n    </section>\n</article>\n";
+module.exports = "<article class=\"organism overview-ubr\">\n    <section class=\"container\">\n        <HeaderBlock :title=\"title\" :subtitle=\"subtitle\" />\n\n        <div class=\"flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row\">\n            <BlockIcon v-for=\"(blockIcon, index) in items\" class=\"flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3\" v-bind=\"blockIcon\" :key=\"index\"></BlockIcon>\n        </div>\n\n        <FooterBlock :ctas=\"ctas\" />\n    </section>\n</article>\n";
 
 /***/ }),
 /* 362 */

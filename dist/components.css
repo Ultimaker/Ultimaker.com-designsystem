@@ -4029,18 +4029,19 @@ table tfoot {
 .block-icon__icon {
   height: 100%; }
 
+.block-icon__headline {
+  margin-top: 0; }
+
 .block-icon {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start; }
-  .block-icon:last-child {
-    margin-bottom: 0; }
+  justify-content: flex-start;
+  padding: 0 12px 48px 12px !important; }
   .block-icon .block-icon__visual {
     flex: 1 1 60px;
-    width: 60px;
-    height: 60px;
-    min-width: 60px;
-    max-height: 60px; }
+    max-height: 60px;
+    margin: 0;
+    margin-bottom: 24px; }
 
 @media (min-width: 569px) {
   .block-icon__items {
@@ -4054,6 +4055,9 @@ table tfoot {
 @media (min-width: 768px) {
   .block-icon__items {
     flex-flow: row wrap; } }
+
+.block-icon__link {
+  margin-bottom: 0; }
 
 .auto-complete {
   position: relative;
