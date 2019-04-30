@@ -5759,7 +5759,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     font-size: 12px;
     line-height: 18px;
     color: #7F7F7F;
-    margin-bottom: 4.8px; }
+    margin-bottom: 6px; }
     @media (min-width: 768px) {
       .product__name {
         margin-bottom: 8px; } }
@@ -6117,7 +6117,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   @media (min-width: 768px) {
     .hero--product .hero__products-item {
       margin-bottom: 0; }
-      .hero--product .hero__products-item--multiple {
+      .hero--product .hero__products-item--multiple:not(:last-child) {
         border-right: 1px solid #E3E3E3; } }
 
 .hero--product .hero__button {
@@ -6138,7 +6138,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-top: 48px; }
 
 .hero--product .hero__linklist-link {
-  margin-bottom: 12px; }
+  margin-bottom: 6px; }
 
 /*
 * Because we have a primary and secondary font family, we need to define both

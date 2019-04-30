@@ -89,7 +89,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
         @include min-tablet() {
             margin-bottom: 0;
         
-            &--multiple {
+            &--multiple:not(:last-child) {
                 border-right: 1px solid $colorGray;
             }
         }
@@ -120,9 +120,10 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     .hero__linklist {
         @extend %reset-list;
         margin-top: $buildingUnit * 4;
+
     }
 
     .hero__linklist-link{
-        margin-bottom: $buildingUnit;
+        margin-bottom: $buildingUnit / 2;
     }
 }
