@@ -7,6 +7,5 @@
         <p class="content-block__description">{{ description }}</p>
 
         <component v-if="cta" v-bind="cta" :is="cta.type" :class="getClassNames(cta.type)"/>
-
     </div>
 </article>
