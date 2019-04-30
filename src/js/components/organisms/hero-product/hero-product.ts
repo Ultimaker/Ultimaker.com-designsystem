@@ -1,8 +1,6 @@
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 import { HeroProductProps } from './hero-product.models';
-import './hero-product.scss';
-import productKnobsFormat from '../../molecules/product/stories/product.knobs-format';
 
 @Component({
     name: 'HeroProduct',

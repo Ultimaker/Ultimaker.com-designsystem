@@ -3,8 +3,11 @@
 }
 
 .header-block--hero {
-    margin-bottom: $buildingUnit * 5.75;
-}    
+    margin-bottom: $buildingUnit * 5.4;
+    @include min-tablet {
+        margin-bottom: $buildingUnit * 5.75;
+    }
+}
 .header-block__title--hero {
 
 }

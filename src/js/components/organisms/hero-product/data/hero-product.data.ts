@@ -43,7 +43,7 @@ export const data = {
                 label: 'Content link',
                 url: '/en/link',
                 icon: 'info',
-            }
+            },
         ],
         ctas: {
             type: 'Ctas',
@@ -51,16 +51,16 @@ export const data = {
                 {
                     type: 'ContentButton',
                     label: 'Request a quote',
-                    url: '/en/quote'
+                    url: '/en/quote',
                 },
                 {
                     type: 'ContentLink',
                     label: 'Content link',
-                    url: '/en/link'
-                }
-            ]
-        }
-    }
-}
+                    url: '/en/link',
+                },
+            ],
+        },
+    },
+};
 
 export default type => data[type];

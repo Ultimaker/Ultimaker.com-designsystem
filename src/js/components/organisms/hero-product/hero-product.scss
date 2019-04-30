@@ -1,14 +1,12 @@
-@import "~scss/component";
-
 .hero--product {
-    .hero__products{
+    .hero__products {
         display: flex;
         flex-direction: column;
-        margin-bottom: $buildingUnit * 2;
+        margin-bottom: $buildingUnit * 1.5;
 
-        @include min-tablet() {
-            flex-direction: row;  
-        }  
+        @include min-desktop() {
+            flex-direction: row;
+        }
     }
 
     .hero__products-item {
@@ -18,11 +16,19 @@
             margin-bottom: 0;
         }
 
-        @include min-tablet() {
+        @include min-desktop() {
             margin-bottom: 0;
-        
+
             &--multiple:not(:last-child) {
-                border-right: 1px solid $colorGray;
+
+                &:after{
+                    content: '';
+                    width: 1px;
+                    height: $buildingUnit * 3;
+                    border-right: 1px solid $colorGray;
+                    margin-left: $buildingUnit;
+                    margin-right: -$buildingUnit;
+                }
             }
         }
     }
@@ -38,7 +44,11 @@
 
     .hero__linklist {
         @extend %reset-list;
-        margin-top: $buildingUnit * 4;
+        margin-top: $buildingUnit * 3.5;
+
+        @include min-tablet {
+            margin-top: $buildingUnit * 4;
+        }
 
         .hero__linklist-item:last-child{
             .hero__linklist-link{

@@ -13,11 +13,6 @@ const getStory = (type) => {
         );
 
         return {
-            data() {
-                return {
-                    slot: knobs.slot,
-                };
-            },
             props: {
                 title: {
                     default: knobs.title,

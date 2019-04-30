@@ -18,30 +18,14 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            id="flyout_title_885_0"
-=======
-            id="flyout_title_896_0"
->>>>>>> feat(hero-product): add hero-product
-=======
-            id="flyout_title_910_0"
->>>>>>> fix(styling): fix styling split up components
+            id="flyout_title_1073_0"
           >
             Flyout title one
           </strong>
            
           <ul
             aria-expanded="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            aria-labelledby="flyout_title_885_0"
-=======
-            aria-labelledby="flyout_title_896_0"
->>>>>>> feat(hero-product): add hero-product
-=======
-            aria-labelledby="flyout_title_910_0"
->>>>>>> fix(styling): fix styling split up components
+            aria-labelledby="flyout_title_1073_0"
             class="flyout__list"
           >
             <li
@@ -122,15 +106,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            id="flyout_title_885_1"
-=======
-            id="flyout_title_896_1"
->>>>>>> feat(hero-product): add hero-product
-=======
-            id="flyout_title_910_1"
->>>>>>> fix(styling): fix styling split up components
+            id="flyout_title_1073_1"
           >
             Flyout title two
           </strong>
@@ -138,15 +114,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            aria-labelledby="flyout_title_885_1"
-=======
-            aria-labelledby="flyout_title_896_1"
->>>>>>> feat(hero-product): add hero-product
-=======
-            aria-labelledby="flyout_title_910_1"
->>>>>>> fix(styling): fix styling split up components
+            aria-labelledby="flyout_title_1073_1"
             class="flyout__list"
           >
             <li
@@ -322,15 +290,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
         >
           <strong
             class="flyout__title"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            id="flyout_title_885_2"
-=======
-            id="flyout_title_896_2"
->>>>>>> feat(hero-product): add hero-product
-=======
-            id="flyout_title_910_2"
->>>>>>> fix(styling): fix styling split up components
+            id="flyout_title_1073_2"
           >
             Flyout title three
           </strong>
@@ -338,15 +298,7 @@ exports[`Storyshots Molecules|navigation Flyout 1`] = `
           <ul
             aria-expanded="true"
             aria-haspopup="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            aria-labelledby="flyout_title_885_2"
-=======
-            aria-labelledby="flyout_title_896_2"
->>>>>>> feat(hero-product): add hero-product
-=======
-            aria-labelledby="flyout_title_910_2"
->>>>>>> fix(styling): fix styling split up components
+            aria-labelledby="flyout_title_1073_2"
             class="flyout__list"
           >
             <li

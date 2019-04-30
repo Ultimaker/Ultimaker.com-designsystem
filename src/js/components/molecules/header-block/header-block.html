@@ -1,6 +1,6 @@
 <header class="header-block">
     <slot>
-        <h2 class="header-block__title">{{ title }}</h2>
+        <h2 class="header-block__title" v-if="title">{{ title }}</h2>
         <p class="header-block__subtitle" v-if="subtitle">{{ subtitle }}</p>
-    </slot>   
+    </slot>
 </header>
