@@ -1,37 +1,3 @@
-a {
-    font-size: inherit;
-
-    color: $colorMain;
-    text-decoration: none;
-    outline: none;
-
-    cursor: pointer;
-
-    @include micro-animate(color, background);
-
-    &:hover {
-        color: lighten($colorMain, $tintHoverFocus*2);
-    }
-
-    &:not(.hit-area) {
-        &:focus:not(:hover),
-        &:focus:not(:active) {
-            @extend %focus;
-        }
-    }
-
-    p &,
-    small &,
-    .content--rich li & {
-        font-weight: 400;
-
-        &:focus:not(:hover),
-        &:focus:not(:active) {
-            @extend %focus-outline;
-        }
-    }
-}
-
 .link {
     @extend .copy--small;
 
