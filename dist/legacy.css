@@ -2418,43 +2418,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     transform: rotate(-90deg);
     left: 50%; }
 
-.um-components .cta__block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .um-components .cta__block {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      flex-wrap: wrap; } }
-
-.um-components .cta__block--hero {
-  align-items: flex-start; }
-  @media (min-width: 768px) {
-    .um-components .cta__block--hero {
-      align-items: center; } }
-
-.um-components .cta__link {
-  text-align: center;
-  margin-right: 0;
-  margin-bottom: 18px; }
-  .um-components .cta__link:last-of-type {
-    margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .um-components .cta__link {
-      margin-bottom: 0;
-      margin-right: 24px; }
-      .um-components .cta__link:not(.button--primary) {
-        margin-right: 24px; }
-      .um-components .cta__link.button--primary + .cta__link {
-        margin-left: 24px; }
-      .um-components .cta__block--footer .cta__link:not(.button--primary) {
-        margin-bottom: 0; }
-      .um-components .cta__block--footer .cta__link:last-child {
-        margin-right: 0; } }
-
 .um-components .tag {
   display: flex;
   align-items: center;
@@ -3426,6 +3389,43 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .content-block__content {
   width: 100%; }
+
+.um-components .cta__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .um-components .cta__block {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      flex-wrap: wrap; } }
+
+.um-components .cta__block--hero {
+  align-items: flex-start; }
+  @media (min-width: 768px) {
+    .um-components .cta__block--hero {
+      align-items: center; } }
+
+.um-components .cta__link {
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 18px; }
+  .um-components .cta__link:last-of-type {
+    margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .um-components .cta__link {
+      margin-bottom: 0;
+      margin-right: 24px; }
+      .um-components .cta__link:not(.button--primary) {
+        margin-right: 24px; }
+      .um-components .cta__link.button--primary + .cta__link {
+        margin-left: 24px; }
+      .um-components .cta__block--footer .cta__link:not(.button--primary) {
+        margin-bottom: 0; }
+      .um-components .cta__block--footer .cta__link:last-child {
+        margin-right: 0; } }
 
 .um-components .icon-button, .um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button {
   transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);

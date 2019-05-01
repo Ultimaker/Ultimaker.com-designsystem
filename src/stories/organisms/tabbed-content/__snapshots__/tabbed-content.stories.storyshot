@@ -588,6 +588,7 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
             class="footer-block"
           >
             <div
+              block="overview"
               class="cta__block cta__block--footer"
             >
               <a
