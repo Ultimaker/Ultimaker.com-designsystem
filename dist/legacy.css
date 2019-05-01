@@ -261,7 +261,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .materials-card > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--basic > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--basic .hero__description > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--basic .hero__tab-panel > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--basic .hero__link-list > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child {
+.um-components .block > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .business-card__description > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .hero--basic > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--basic .hero__description > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--basic .hero__tab-panel > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--basic .hero__link-list > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child {
   margin-bottom: 0; }
 
 .um-components .hero--basic .hero__link--large,
@@ -351,7 +351,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
-.um-components button:focus, .um-components .button:focus, .um-components input[type="button"]:focus, .um-components input[type="submit"]:focus, .um-components .nav-assist:focus:not(:hover), .um-components .nav-assist--close:focus:not(:hover), .um-components a:not(.hit-area):focus:not(:hover), .um-components a:not(.hit-area):focus:not(:active), .um-components .price-table--tabs .price-table__item:focus:not(:hover), .um-components .price-table--tabs .price-table__item:focus:not(:active), .um-components .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .um-components .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .um-components .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .um-components .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .um-components .tablist__section .tablist__item:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item:focus:not(:hover), .um-components .business-card:focus, .um-components .business-card:hover:focus, .um-components .business-card:focus:active, .um-components .materials-card:focus .materials-card__content, .um-components .materials-card:hover:focus .materials-card__content, .um-components .materials-card:focus:active .materials-card__content, .um-components .auto-complete__list-item:focus:not(:hover), .um-components .auto-complete__list-item:focus:not(:active) {
+.um-components button:focus, .um-components .button:focus, .um-components input[type="button"]:focus, .um-components input[type="submit"]:focus, .um-components .nav-assist:focus:not(:hover), .um-components .nav-assist--close:focus:not(:hover), .um-components a:not(.hit-area):focus:not(:hover), .um-components a:not(.hit-area):focus:not(:active), .um-components .price-table--tabs .price-table__item:focus:not(:hover), .um-components .price-table--tabs .price-table__item:focus:not(:active), .um-components .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .um-components .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .um-components .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .um-components .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .um-components .tablist__section .tablist__item:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item:focus:not(:hover), .um-components .business-card:focus, .um-components .business-card:hover:focus, .um-components .business-card:focus:active, .um-components .auto-complete__list-item:focus:not(:hover), .um-components .auto-complete__list-item:focus:not(:active) {
   color: #FFFFFF;
   background-color: #24bcf3; }
 
@@ -2306,33 +2306,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .flexgrid--justify-right {
   justify-content: flex-end; }
 
-.um-components .card {
-  max-width: 600px;
-  margin-bottom: 12px; }
-  @media (max-width: 1024px) {
-    .um-components .card {
-      margin-bottom: 48px; } }
-  @media (min-width: 768px) {
-    .um-components .card {
-      margin-bottom: 24px; } }
-
-.um-components .card__visual {
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 569px) {
-    .um-components .card__visual {
-      margin: 0 auto 24px; } }
-
-.um-components .card__icon,
-.um-components .card__image {
-  width: 100%; }
-
-.um-components .card__icon {
-  height: 100%; }
-
-.um-components .card__content {
-  width: 100%; }
-
 .um-components .tooltip {
   position: absolute;
   background: #000000;
@@ -2372,52 +2345,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .hit-area {
   display: block; }
-
-.um-components .color {
-  cursor: pointer;
-  margin: 0;
-  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px);
-  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px); }
-
-.um-components .color__spec {
-  position: relative;
-  margin: 0; }
-
-.um-components .color__spec--swatch {
-  width: 48px;
-  height: 48px; }
-
-.um-components .color__spec--show {
-  opacity: 0;
-  position: absolute;
-  padding: 12px;
-  color: #FFFFFF;
-  font-size: 24px;
-  z-index: 100;
-  transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-
-.um-components .color__spec--title,
-.um-components .color__spec--code,
-.um-components .color__spec--weight,
-.um-components .color__label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
-
-.um-components .color--selected {
-  outline: 2px solid #000000; }
-  .um-components .color--selected .color__spec--show {
-    opacity: 0; }
-
-.um-components .hit-area:hover .color__spec--show,
-.um-components .hit-area:focus .color__spec--show {
-  opacity: 1; }
-
-.um-components .hit-area:hover .color--selected .color__spec--show,
-.um-components .hit-area:focus .color--selected .color__spec--show {
-  opacity: 0; }
 
 .um-components .branded-logo {
   color: #000000;
@@ -3241,6 +3168,50 @@ because both families serve another purpose. Therefore the line-heights will be 
       flex-basis: 66.67%;
       max-width: 66.67%; } }
 
+.um-components .content-block-container__image {
+  width: 75%;
+  background-color: transparent;
+  margin: 0 auto 18px;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .um-components .content-block-container__image {
+      margin: 0 auto 24px;
+      width: 100%; } }
+
+.um-components .content-block__content {
+  width: 100%; }
+
+.um-components .header-block {
+  margin-bottom: 54px; }
+
+.um-components .header-block__title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 0; }
+
+.um-components .header-block__subtitle {
+  text-align: center;
+  position: relative;
+  margin-top: 21.6px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #7F7F7F; }
+  @media (min-width: 768px) {
+    .um-components .header-block__subtitle {
+      margin-top: 18px; } }
+  @media (min-width: 768px) {
+    .um-components .header-block__subtitle {
+      font-size: 24px;
+      line-height: 30px; } }
+
+.um-components .footer-block {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .um-components .footer-block:not(:empty) {
+    padding-bottom: 60px; }
+
 .um-components .brand-card__image-wrapper {
   width: 120px;
   height: 120px;
@@ -3320,64 +3291,32 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .business-card__link {
   margin: 0; }
 
-.um-components .materials-card {
-  margin-right: 0;
+.um-components .card {
   max-width: 600px;
   margin-bottom: 12px; }
   @media (max-width: 1024px) {
-    .um-components .materials-card {
-      margin-bottom: 24px; } }
+    .um-components .card {
+      margin-bottom: 48px; } }
   @media (min-width: 768px) {
-    .um-components .materials-card {
+    .um-components .card {
       margin-bottom: 24px; } }
-  .um-components .materials-card:hover {
-    cursor: pointer;
-    color: inherit;
-    background: #EAEAEA; }
-    .um-components > .materials-card:hover .tag {
-      background-color: rgba(255, 255, 255, 0.4); }
-  .um-components .materials-card:focus, .um-components .materials-card:hover:focus, .um-components .materials-card:focus:active {
-    border-color: #24bcf3;
-    outline: none; }
-    .um-components .materials-card:focus *, .um-components .materials-card:hover:focus *, .um-components .materials-card:focus:active * {
-      color: #FFFFFF; }
-    .um-components .materials-card:focus .tag, .um-components .materials-card:hover:focus .tag, .um-components .materials-card:focus:active .tag {
-      background-color: rgba(255, 255, 255, 0.15);
-      color: #FFFFFF; }
-    .um-components .materials-card:focus .materials-card__visual, .um-components .materials-card:hover:focus .materials-card__visual, .um-components .materials-card:focus:active .materials-card__visual {
-      outline: none; }
-    .um-components .materials-card:focus .materials-card__content, .um-components .materials-card:hover:focus .materials-card__content, .um-components .materials-card:focus:active .materials-card__content {
-      outline: none;
-      border: none; }
-  .um-components .materials-card:focus:not(:hover), .um-components .materials-card:focus:not(:active) {
-    outline: 1px solid transparent; }
 
-.um-components .materials-card__article {
-  display: flex;
-  flex-direction: column;
-  height: 100%; }
-
-.um-components .materials-card__visual {
-  margin: 0 auto; }
+.um-components .card__visual {
+  margin: 0 auto 18px;
+  overflow: hidden; }
   @media (min-width: 569px) {
-    .um-components .materials-card__visual {
-      margin: 0 auto; } }
+    .um-components .card__visual {
+      margin: 0 auto 24px; } }
 
-.um-components .materials-card__image {
+.um-components .card__icon,
+.um-components .card__image {
   width: 100%; }
 
-.um-components .materials-card__content {
-  height: 100%;
-  padding: 12px;
-  border-left: 1px solid #EAEAEA;
-  border-right: 1px solid #EAEAEA;
-  border-bottom: 1px solid #EAEAEA; }
+.um-components .card__icon {
+  height: 100%; }
 
-.um-components .materials-card__headline {
-  margin-bottom: 12px; }
-
-.um-components .materials-card__taglist {
-  margin-bottom: 0; }
+.um-components .card__content {
+  width: 100%; }
 
 .um-components .card-product {
   position: relative;
@@ -3420,49 +3359,51 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .list-show-all__list .card-product {
   width: 296px; }
 
-.um-components .content-block-container__image {
-  width: 75%;
-  background-color: transparent;
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 768px) {
-    .um-components .content-block-container__image {
-      margin: 0 auto 24px;
-      width: 100%; } }
+.um-components .color {
+  cursor: pointer;
+  margin: 0;
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px);
+  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px); }
 
-.um-components .content-block__content {
-  width: 100%; }
-
-.um-components .header-block {
-  margin-bottom: 54px; }
-
-.um-components .header-block__title {
-  text-align: center;
+.um-components .color__spec {
   position: relative;
-  margin-bottom: 0; }
+  margin: 0; }
 
-.um-components .header-block__subtitle {
-  text-align: center;
-  position: relative;
-  margin-top: 21.6px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #7F7F7F; }
-  @media (min-width: 768px) {
-    .um-components .header-block__subtitle {
-      margin-top: 18px; } }
-  @media (min-width: 768px) {
-    .um-components .header-block__subtitle {
-      font-size: 24px;
-      line-height: 30px; } }
+.um-components .color__spec--swatch {
+  width: 48px;
+  height: 48px; }
 
-.um-components .footer-block {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .um-components .footer-block:not(:empty) {
-    padding-bottom: 60px; }
+.um-components .color__spec--show {
+  opacity: 0;
+  position: absolute;
+  padding: 12px;
+  color: #FFFFFF;
+  font-size: 24px;
+  z-index: 100;
+  transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.um-components .color__spec--title,
+.um-components .color__spec--code,
+.um-components .color__spec--weight,
+.um-components .color__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.um-components .color--selected {
+  outline: 2px solid #000000; }
+  .um-components .color--selected .color__spec--show {
+    opacity: 0; }
+
+.um-components .hit-area:hover .color__spec--show,
+.um-components .hit-area:focus .color__spec--show {
+  opacity: 1; }
+
+.um-components .hit-area:hover .color--selected .color__spec--show,
+.um-components .hit-area:focus .color--selected .color__spec--show {
+  opacity: 0; }
 
 .um-components .toggle {
   color: #0CA9E3;
