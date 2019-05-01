@@ -19,7 +19,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  padding: 0 $buildingUnit $buildingUnit * 4 $buildingUnit !important;
+  padding: 0 $buildingUnit $buildingUnit * 4 + 1 $buildingUnit !important;
 
   .block-icon__visual {
     flex: 1 1 60px;
@@ -39,6 +39,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+
+@include mobile {
+  .block-icon {
+    padding-bottom: $buildingUnit * 4 + 4 !important;
   }
 }
 
