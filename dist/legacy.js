@@ -10311,12 +10311,6 @@ var Tabs = function (_Vue) {
         key: "beforeDestroy",
         value: function beforeDestroy() {
             this.viewportUtil.removeResizeHandler(this.positionIndicator);
-            var tabsList = this.$refs.tabsList;
-
-            tabsList.removeEventListener('scroll', this.scrollCorrection());
-            if (_browserCapabilities2.default.supportsTouch) {
-                tabsList.removeEventListener('scroll', this.scrollCorrection());
-            }
         }
     }]);
 

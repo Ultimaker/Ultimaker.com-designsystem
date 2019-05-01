@@ -154,14 +154,14 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
               </div>
                
               <div
-                aria-label="Ultimaker PLA ik ga over twee regels want ik ben lang. Ultimaker PLA ik ga over twee regels want ik ben lang. Ultimaker PLA ik ga over twee regels want ik ben lang"
+                aria-label="Ultimaker PLA"
                 class="overflow-container__label"
               >
                 <span
                   class="link__underline"
                 >
                   
-            Ultimaker PLA ik ga over twee regels want ik ben lang. Ultimaker PLA ik ga over twee regels want ik ben lang. Ultimaker PLA ik ga over twee regels want ik ben lang
+            Ultimaker PLA
         
                 </span>
               </div>
