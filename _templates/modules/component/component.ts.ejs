@@ -4,7 +4,6 @@ to: src/js/components/<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/<%
 import { Vue, Component } from 'vue-property-decorator';
 
 import { <%= h.changeCase.pascal(name) %>Props } from './<%= h.changeCase.paramCase(name) %>.models';
-import './<%= h.changeCase.paramCase(name) %>.scss';
 
 @Component({
     name: '<%= h.changeCase.pascal(name) %>',
