@@ -609,6 +609,70 @@ exports[`Storyshots Molecules/content-block default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/cta-block default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div
+      class="cta__block"
+    >
+      <a
+        class="link--primary button cta__link"
+        href="https://ultimaker.com"
+        rel="noopener"
+        target="_self"
+      >
+        <!---->
+         
+        <span
+          class="link__underline"
+        >
+          
+        Call me back
+    
+        </span>
+      </a>
+      <a
+        class="link link--icon link--large undefined cta__link"
+        href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+        target="_blank"
+      >
+        <!---->
+         
+        <span
+          class="link__underline"
+        >
+          
+        Watch video
+    
+        </span>
+         
+        <!---->
+      </a>
+      <a
+        class="link--large link cta__link"
+        href="https://ultimaker.com"
+        rel="noopener"
+        target="_self"
+      >
+        <!---->
+         
+        <span
+          class="link__underline"
+        >
+          
+        Call me back
+    
+        </span>
+      </a>
+    </div>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Molecules/hero-heading default 1`] = `
 <section
   class="story"
@@ -1750,6 +1814,7 @@ exports[`Storyshots Organisms|hero/Hero product default 1`] = `
               </div>
                
               <div
+                block="hero"
                 class="cta__block cta__block--hero"
               >
                 <a

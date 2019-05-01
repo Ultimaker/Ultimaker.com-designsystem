@@ -2919,43 +2919,6 @@ table tfoot {
     transform: rotate(-90deg);
     left: 50%; }
 
-.cta__block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .cta__block {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      flex-wrap: wrap; } }
-
-.cta__block--hero {
-  align-items: flex-start; }
-  @media (min-width: 768px) {
-    .cta__block--hero {
-      align-items: center; } }
-
-.cta__link {
-  text-align: center;
-  margin-right: 0;
-  margin-bottom: 18px; }
-  .cta__link:last-of-type {
-    margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .cta__link {
-      margin-bottom: 0;
-      margin-right: 24px; }
-      .cta__link:not(.button--primary) {
-        margin-right: 24px; }
-      .cta__link.button--primary + .cta__link {
-        margin-left: 24px; }
-      .cta__block--footer .cta__link:not(.button--primary) {
-        margin-bottom: 0; }
-      .cta__block--footer .cta__link:last-child {
-        margin-right: 0; } }
-
 .tag {
   display: flex;
   align-items: center;
@@ -3933,6 +3896,43 @@ table tfoot {
 
 .content-block__content {
   width: 100%; }
+
+.cta__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .cta__block {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      flex-wrap: wrap; } }
+
+.cta__block--hero {
+  align-items: flex-start; }
+  @media (min-width: 768px) {
+    .cta__block--hero {
+      align-items: center; } }
+
+.cta__link {
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 18px; }
+  .cta__link:last-of-type {
+    margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .cta__link {
+      margin-bottom: 0;
+      margin-right: 24px; }
+      .cta__link:not(.button--primary) {
+        margin-right: 24px; }
+      .cta__link.button--primary + .cta__link {
+        margin-left: 24px; }
+      .cta__block--footer .cta__link:not(.button--primary) {
+        margin-bottom: 0; }
+      .cta__block--footer .cta__link:last-child {
+        margin-right: 0; } }
 
 .icon-button, .sys-nav__link, .search__button, .um-components .search__button {
   transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
