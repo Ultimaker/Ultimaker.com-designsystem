@@ -8,12 +8,12 @@ export const data = {
                 url: 'https://ultimaker.com',
             },
             {
-                type: 'ContentButton',
-                label: 'Call me back',
-                url: 'https://ultimaker.com',
+                type: 'YoutubeLink',
+                label: 'Watch video',
+                youtubeId: 'ksLaBnZVRnM',
             },
             {
-                type: 'ContentButton',
+                type: 'ContentLink',
                 label: 'Call me back',
                 url: 'https://ultimaker.com',
             },

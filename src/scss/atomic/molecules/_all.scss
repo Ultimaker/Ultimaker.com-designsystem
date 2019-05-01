@@ -8,10 +8,8 @@
 @import 'branded-logo';
 @import 'legal';
 @import 'scroll-hint';
-@import 'cta-block';
 @import 'tag';
 @import 'container';
-
 @import "flyout";
 @import 'main-nav';
 @import 'sys-nav';
@@ -22,11 +20,11 @@
 @import 'country-selector';
 @import 'tablist';
 @import 'tabs';
-
 @import 'pager';
 @import 'slider-reveal';
 @import 'header-block';
 @import 'footer-block';
+
 @import '~molecules/cards/brand-card/brand-card';
 @import '~molecules/cards/business-card/business-card';
 @import '~molecules/cards/__LEGACY__card/card';
@@ -34,7 +32,9 @@
 @import '~molecules/color/color';
 @import '~molecules/content-toggle/content-toggle';
 @import '~molecules/content-block/content-block';
+@import '~molecules/cta-block/cta-block';
 @import '~molecules/icon-button/icon-button';
+@import '~molecules/block-icon/block-icon';
 @import '~molecules/auto-complete/auto-complete';
 @import '~molecules/product/product';
 @import 'preferences-bar';

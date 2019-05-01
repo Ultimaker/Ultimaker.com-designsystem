@@ -48,6 +48,7 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                 </p>
                  
                 <div
+                  block="hero"
                   class="cta__block cta__block--hero"
                 >
                   <a

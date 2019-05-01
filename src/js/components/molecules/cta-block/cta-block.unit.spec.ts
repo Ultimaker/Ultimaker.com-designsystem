@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 import CtaBlock from './cta-block';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('molecules', () => {
@@ -10,8 +10,8 @@ describe('components', () => {
             describe('should not render', () => {
                 const buildOptions = {
                     props: {
-                        ctas: []
-                    }
+                        ctas: [],
+                    },
                 };
                 const vm = mount(buildOptions);
 
@@ -28,17 +28,17 @@ describe('components', () => {
                     props: {
                         ctas: [
                             {
-                                'type': 'ContentButton',
-                                'label': 'I am label',
-                                'url': 'https://google.com/'
+                                type: 'ContentButton',
+                                label: 'I am label',
+                                url: 'https://google.com/',
                             },
                             {
-                                'type': 'ContentLink',
-                                'label': 'I am label',
-                                'url': 'https://google.com/'
-                            }
-                        ]
-                    }
+                                type: 'ContentLink',
+                                label: 'I am label',
+                                url: 'https://google.com/',
+                            },
+                        ],
+                    },
                 };
 
                 const vm = mount(buildOptions);
