@@ -11,6 +11,10 @@
   margin-top: 0;
 }
 
+.block-icon__content {
+  flex-basis: auto;
+}
+
 .block-icon {
   display: flex;
   flex-flow: row nowrap;
