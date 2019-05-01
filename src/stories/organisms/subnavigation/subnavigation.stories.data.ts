@@ -51,7 +51,7 @@ export default {
             },
         },{
             type: 'SubNavigationItem',
-            label: 'Ultimaker PLA ik ga over twee regels want ik ben lang. Ultimaker PLA ik ga over twee regels want ik ben lang. Ultimaker PLA ik ga over twee regels want ik ben lang',
+            label: 'Ultimaker PLA',
             url: 'http://nu.nl',
             image: {
                 type: 'Cimage',

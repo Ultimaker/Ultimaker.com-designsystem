@@ -1,8 +1,11 @@
 <section class="story__template">
-    <page-header v-bind="header" :sub-nav="subNav" :main-nav-open="mainNavOpen" @toggle-nav="mainNavOpen = !mainNavOpen"></page-header>
+    <page-header v-bind="header" :main-nav-open="mainNavOpen" @toggle-nav="mainNavOpen = !mainNavOpen"></page-header>
     <main style="padding-top: 60px">
         <subnavigation v-bind="subNavigationKnobs"></subnavigation>
         <hero-cover v-bind="heroCover"></hero-cover>
+        <overview v-bind="overview"/>
+        <tabbed-content v-bind="tabbedContent"></tabbed-content>
+        <tabbed-content v-bind="tabbedSequence"></tabbed-content>
     </main>
     <page-footer  v-bind="footer" :country="country" @country-changed="updateCountry"></page-footer>
 </section>
