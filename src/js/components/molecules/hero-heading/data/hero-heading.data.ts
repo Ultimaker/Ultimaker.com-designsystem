@@ -7,3 +7,5 @@ export const data = {
         title: 'Lorem ipsum dolor sit amet',
     },
 };
+
+export default type => data[type];
