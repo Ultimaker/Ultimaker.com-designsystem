@@ -1,5 +1,5 @@
 .currency {
-    @extend %fontSecondary;
+    @include fontSecondary;
     @include font-line-ratio(sec-xs);
     margin-top: -1px;
     @include min-tablet {

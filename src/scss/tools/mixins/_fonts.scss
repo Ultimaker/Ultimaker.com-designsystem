@@ -1,4 +1,4 @@
-%fontPrimary {
+@mixin fontPrimary {
     font-family: $fontPrimary;
     .fonts--stage-one & {
         font-family: $fontPrimaryStageOne;
@@ -9,7 +9,7 @@
     }
 }
 
-%fontSecondary {
+@mixin fontSecondary {
     font-family: $fontSecondary;
     .fonts--stage-one & {
         font-family: $fontSecondaryStageOne;

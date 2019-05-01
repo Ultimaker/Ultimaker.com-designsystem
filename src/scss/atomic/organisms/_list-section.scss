@@ -19,7 +19,7 @@
 }
 
 .list-section__tooltip {
-    @extend %fontPrimary;
+    @include fontPrimary;
     @include font-line-ratio(prim-s);
 
     max-width: 296px;

@@ -62,7 +62,7 @@ a {
 
 .link--large {
     display: inline-block;
-    @extend %fontSecondary;
+    @include fontSecondary;
     @include font-ratio-rhythm(sec-xs);
 
     @include min-tablet() {

@@ -47,7 +47,7 @@
 
     border-radius: 0;
 
-    @extend %fontSecondary;
+    @include fontSecondary;
     @include font-line-ratio(sec-s);
 
     @include min-mobile-xl() {

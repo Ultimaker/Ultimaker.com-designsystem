@@ -38,7 +38,7 @@ strong {
 }
 
 strong {
-    @extend %fontPrimary;
+    @include fontPrimary;
     font-weight: 600;
 }
 

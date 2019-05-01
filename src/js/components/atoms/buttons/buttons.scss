@@ -20,7 +20,7 @@ button, .button, input[type="button"], input[type="submit"] {
        margin-bottom: $buildingUnit;
    }
 
-    @extend %fontSecondary;
+    @include fontSecondary;
     @include font-line-ratio(sec-xs);
 
     color: $colorWhite;
