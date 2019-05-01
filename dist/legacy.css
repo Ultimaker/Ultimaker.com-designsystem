@@ -351,7 +351,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
-.um-components button:focus, .um-components .button:focus, .um-components input[type="button"]:focus, .um-components input[type="submit"]:focus, .um-components a:not(.hit-area):focus:not(:hover), .um-components a:not(.hit-area):focus:not(:active), .um-components .price-table--tabs .price-table__item:focus:not(:hover), .um-components .price-table--tabs .price-table__item:focus:not(:active), .um-components .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .um-components .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .um-components .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .um-components .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .um-components .tablist__section .tablist__item:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item:focus:not(:hover), .um-components .business-card:focus, .um-components .business-card:hover:focus, .um-components .business-card:focus:active, .um-components .materials-card:focus .materials-card__content, .um-components .materials-card:hover:focus .materials-card__content, .um-components .materials-card:focus:active .materials-card__content, .um-components .auto-complete__list-item:focus:not(:hover), .um-components .auto-complete__list-item:focus:not(:active) {
+.um-components button:focus, .um-components .button:focus, .um-components input[type="button"]:focus, .um-components input[type="submit"]:focus, .um-components .nav-assist:focus:not(:hover), .um-components .nav-assist--close:focus:not(:hover), .um-components a:not(.hit-area):focus:not(:hover), .um-components a:not(.hit-area):focus:not(:active), .um-components .price-table--tabs .price-table__item:focus:not(:hover), .um-components .price-table--tabs .price-table__item:focus:not(:active), .um-components .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .um-components .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .um-components .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .um-components .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .um-components .tablist__section .tablist__item:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item:focus:not(:hover), .um-components .business-card:focus, .um-components .business-card:hover:focus, .um-components .business-card:focus:active, .um-components .materials-card:focus .materials-card__content, .um-components .materials-card:hover:focus .materials-card__content, .um-components .materials-card:focus:active .materials-card__content, .um-components .auto-complete__list-item:focus:not(:hover), .um-components .auto-complete__list-item:focus:not(:active) {
   color: #FFFFFF;
   background-color: #24bcf3; }
 
@@ -652,6 +652,110 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components h6 {
   margin-top: 0;
   margin-bottom: 0; }
+
+@keyframes lineAnimate {
+  from {
+    transform: scaleX(1); }
+  to {
+    transform: scaleX(0); } }
+
+@keyframes lineAnimateReverse {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(1); } }
+
+@keyframes xLineAnimate-4 {
+  from {
+    transform: rotate(-45deg) scaleX(1); }
+  to {
+    transform: rotate(-45deg) scaleX(0); } }
+
+@keyframes xLineAnimateReverse-4 {
+  from {
+    transform: rotate(-45deg) scaleX(0); }
+  to {
+    transform: rotate(-45deg) scaleX(1); } }
+
+@keyframes xLineAnimate-5 {
+  from {
+    transform: rotate(-45deg) scaleY(1); }
+  to {
+    transform: rotate(-45deg) scaleY(0); } }
+
+@keyframes xLineAnimateReverse-5 {
+  from {
+    transform: rotate(-45deg) scaleY(0); }
+  to {
+    transform: rotate(-45deg) scaleY(1); } }
+
+.um-components .nav-assist {
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  margin: 0;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: #000000;
+  transition: background 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
+  .um-components .nav-assist:hover {
+    background-color: #3d3d3d; }
+
+.um-components .nav-assist__line {
+  fill: white;
+  transform-origin: 50% 50%;
+  transition: fill 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  /* Animate Menu icon to visible position */
+  /* Animate 'X' icon to hidden position */ }
+  .um-components .nav-assist__line-1 {
+    transform: scaleX(0);
+    animation: lineAnimateReverse 0.3s 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+  .um-components .nav-assist__line-2 {
+    transform: scaleX(0);
+    animation: lineAnimateReverse 0.3s 0.15s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+  .um-components .nav-assist__line-3 {
+    transform: scaleX(0);
+    animation: lineAnimateReverse 0.3s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+  .um-components .nav-assist__line-4 {
+    transform: rotate(-45deg) scaleX(1);
+    animation: xLineAnimate-4 0.3s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+  .um-components .nav-assist__line-5 {
+    transform: rotate(-45deg) scaleY(1);
+    animation: xLineAnimate-5 0.3s 0.05s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+
+/* Hide X icon while initializing */
+.um-components .nav-assist--initial-state .nav-assist__line-4,
+.um-components .nav-assist--initial-state .nav-assist__line-5 {
+  display: none; }
+
+.um-components .nav-assist--close {
+  background-color: white;
+  transition: background 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
+  .um-components .nav-assist--close:hover {
+    background-color: #ebebeb; }
+  .um-components .nav-assist--close .nav-assist__line {
+    fill: #000000;
+    /* Animate Menu icon to hidden position */
+    /* Animate 'X' icon to visible position */ }
+    .um-components .nav-assist--close .nav-assist__line-1 {
+      transform: scaleX(1);
+      animation: lineAnimate 0.3s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+    .um-components .nav-assist--close .nav-assist__line-2 {
+      transform: scaleX(1);
+      animation: lineAnimate 0.3s 0.05s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+    .um-components .nav-assist--close .nav-assist__line-3 {
+      transform: scaleX(1);
+      animation: lineAnimate 0.3s 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+    .um-components .nav-assist--close .nav-assist__line-4 {
+      transform: rotate(45deg) scaleX(0);
+      animation: xLineAnimateReverse-4 0.3s 0.15s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+    .um-components .nav-assist--close .nav-assist__line-5 {
+      transform: rotate(-45deg) scaleX(0);
+      animation: xLineAnimateReverse-5 0.3s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
+
+.um-components .nav-assist:focus:not(:hover) .nav-assist__line,
+.um-components .nav-assist--close:focus:not(:hover) .nav-assist__line {
+  fill: #FFFFFF; }
 
 .um-components .drawer {
   position: relative;
@@ -4578,386 +4682,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .validation--required {
   color: #EA5354 !important; }
-
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-/*
- * The medium font stack, returns the most appropriate system font.
- */
-/**
- * Target High DPI devices
- *
- * @include hidpi(1.5) {
- *   width: 20em;
- * }
- *
- */
-/**
- * Center transform an element on an axis.
- *
- * position: absolute;
- *
- * @include mix-center;
- * @include mix-center(x);
- * @include mix-center(y);
- * @include mix-center(xy);
- */
-/**
- * Calculates the sRGB luma of a colour.
- */
-/**
- * Returns the most visible colour for a given background.
- *
- * color: mix-pick-visible-color($background-color, $black-text-color, $white-text-color);
- */
-/**
- * Mix a color with white. Alternative to sass lighten.
- *
- * background-color: mix-tint(#6ecaa6, 40%);
- */
-/**
- * Mix a color with black. Alternative to sass darken.
- *
- * background-color: mix-tint(#6ecaa6, 40%);
- */
-/**
- * Add a clearfix
- *
- * Should be used on the containing element
- * @include mix-clearfix;
- */
-/**
- * Truncate text and add an ellipsis
- *
- * @include mix-ellipsis;
- * @include mix-ellipsis(50%);
- */
-/**
- * HSL and HSV
- *
- * @see https://gist.github.com/1069204
- */
-/**
- * Normal
- */
-/**
- * Multiply
- */
-/**
- * Lighten
- */
-/**
- * Darken
- */
-/**
- * Darker Color
- */
-/**
- * Lighter Color
- */
-/**
- * Linear Dodge
- */
-/**
- * Linear Burn
- */
-/**
- * Difference
- */
-/**
- * Screen
- */
-/**
- * Exclusion
- */
-/**
- * Overlay
- */
-/**
- * Soft Light
- */
-/**
- * Hard Light
- */
-/**
- * Color Dodge
- */
-/**
- * Color Burn
- */
-/**
- *  Linear Light
- */
-/**
- * Vivid Light
- */
-/**
- * Pin Light
- */
-/**
- * Hard Mix
- */
-/**
- * Color Blend
- */
-/**
- * Dissolve
- */
-/**
- * Divide
- */
-/**
- * Hue
- */
-/**
- * Luminosity
- */
-/**
- * Saturation
- */
-/**
- * Subtract
- */
-/**
- * Fix for vw, vh, vmin, vmax on iOS 7.
- * http://caniuse.com/#feat=viewport-units
- *
- * This fix works by replacing viewport units with px values on known screen sizes.
- *
- * iPhone 6 and 6 Plus cannot run iOS 7, so are not targeted by this fix.
- * Target devices running iOS 8+ will incidentally execute the media query,
- * but this will still produce the expected result; so this is not a problem.
- *
- * As an example, replace:
- *
- *   height: 50vh;
- *   font-size: 5vmin;
- *
- * with:
- *
- *   @include viewport-unit(height, 50vh);
- *   @include viewport-unit(font-size, 5vmin);
- */
-/**
- * easing function
- * @param {string} $easeName - The name of the easing function.
- * @returns {string} - Returns a cubic-bezier function with the easing values.
- */
-/*
- *  Mixins to support media queries
- *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
- */
-/**
- * Position X,Y,Z (Fallback Top, Left IE)
- * @param {number} $x - X Position
- * @param {number} $y - Y Position
- * @param {number} $z - Z Position
- */
-/**
- * Position
- * @param {number} $top (0) - Top Position
- * @param {number} $right (auto) - Right Position
- * @param {number} $bottom (auto) - Bottom Position
- * @param {number} $left (0) - Left Position
- */
-/**
- * Offset
- * @param {number} $top (0) - Top Offset
- * @param {number} $left (0) - Left Offset
- */
-/**
- * Positioning an element absolute in the center
- */
-/**
- * Places an element absolute on top of the entire wrapper
- */
-/**
- * Set an element to display block and center margin
- */
-/**
- * Size an Element
- * @param {number} $width (1em) - Width of the element
- * @param {number} $height ($width) - Height of the element
- */
-/**
- * Font Face
- * @param {string} $fontName - Name of the font
- * @param {string} $folderName - Subfolder inside the fonts folder
- * @param {string} $fileName - Name of the font-file
- * @param {string} $fontWeight (normal) - Font weight value
- * @param {string} $fontStyle (normal) - Font style value
- */
-/**
- * CSS Background
- * @param {string} $name ($spriteDefault) - Background image, without the image path
- * @param {string} $repeat (no-repeat) - Background repeat
- * @param {position} $left (0) - Background position X
- * @param {position} $top (0) - Background position Y
- * @param {color} $color (transparent) - Background color
- * @param {string} $attachment (scorll) - Background attachment
- */
-/**
- * Creates an arrow
- * @param {string} $direction (up) - Arrow direction: up, down, left or right
- * @param {color} $color (#000) - Arrow color
- * @param {size} $size (10px) - Size of the opposite side of the arrow
- * @param {number} $stretch (1) - Amount of the stretch of the arrow
- * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
- */
-/**
- * Outputs a ratio holder
- * @param {number} $width - the width of the desired (original) size
- * @param {number} $height - the height of the desired (original) size
- * @param {string} $type (before) - type of psuedo element
- * @param {boolean} $firstDescendant (true) - same element or first descendant
- */
-/**
- * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
- * @param {string} $fit - Type of fit cover/contain etc.
- * @param {string} $position - almost the same as background-position
- */
-/*
- * @param {string} $animateProp - Name of the animated property or multiple properties
- */
-/**
- * Z-Index function
- * @param {string} $list (Array) - The list to find the current z-index in
- * @param {string} $element (String) - The name of the current element, must be in the $list
- * @returns {number}
- */
-.um-components .clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0; }
-
-.um-components .hidden {
-  display: none; }
-
-.um-components .ir,
-.um-components .clear {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0; }
-
-/* Picked an accessible color from colorsafe.co to try out some time */
-.um-components .nav-assist:focus:not(:hover),
-.um-components .nav-assist--close:focus:not(:hover) {
-  color: #FFFFFF;
-  background-color: #24bcf3; }
-
-@keyframes lineAnimate {
-  from {
-    transform: scaleX(1); }
-  to {
-    transform: scaleX(0); } }
-
-@keyframes lineAnimateReverse {
-  from {
-    transform: scaleX(0); }
-  to {
-    transform: scaleX(1); } }
-
-@keyframes xLineAnimate-4 {
-  from {
-    transform: rotate(-45deg) scaleX(1); }
-  to {
-    transform: rotate(-45deg) scaleX(0); } }
-
-@keyframes xLineAnimateReverse-4 {
-  from {
-    transform: rotate(-45deg) scaleX(0); }
-  to {
-    transform: rotate(-45deg) scaleX(1); } }
-
-@keyframes xLineAnimate-5 {
-  from {
-    transform: rotate(-45deg) scaleY(1); }
-  to {
-    transform: rotate(-45deg) scaleY(0); } }
-
-@keyframes xLineAnimateReverse-5 {
-  from {
-    transform: rotate(-45deg) scaleY(0); }
-  to {
-    transform: rotate(-45deg) scaleY(1); } }
-
-.um-components .nav-assist {
-  width: 60px;
-  height: 60px;
-  padding: 18px;
-  margin: 0;
-  border-radius: 0;
-  cursor: pointer;
-  background-color: #000000;
-  transition: background 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
-  .um-components .nav-assist:hover {
-    background-color: #3d3d3d; }
-
-.um-components .nav-assist__line {
-  fill: white;
-  transform-origin: 50% 50%;
-  transition: fill 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
-  /* Animate Menu icon to visible position */
-  /* Animate 'X' icon to hidden position */ }
-  .um-components .nav-assist__line-1 {
-    transform: scaleX(0);
-    animation: lineAnimateReverse 0.3s 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-  .um-components .nav-assist__line-2 {
-    transform: scaleX(0);
-    animation: lineAnimateReverse 0.3s 0.15s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-  .um-components .nav-assist__line-3 {
-    transform: scaleX(0);
-    animation: lineAnimateReverse 0.3s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-  .um-components .nav-assist__line-4 {
-    transform: rotate(-45deg) scaleX(1);
-    animation: xLineAnimate-4 0.3s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-  .um-components .nav-assist__line-5 {
-    transform: rotate(-45deg) scaleY(1);
-    animation: xLineAnimate-5 0.3s 0.05s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-
-/* Hide X icon while initializing */
-.um-components .nav-assist--initial-state .nav-assist__line-4,
-.um-components .nav-assist--initial-state .nav-assist__line-5 {
-  display: none; }
-
-.um-components .nav-assist--close {
-  background-color: white;
-  transition: background 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
-  .um-components .nav-assist--close:hover {
-    background-color: #ebebeb; }
-  .um-components .nav-assist--close .nav-assist__line {
-    fill: #000000;
-    /* Animate Menu icon to hidden position */
-    /* Animate 'X' icon to visible position */ }
-    .um-components .nav-assist--close .nav-assist__line-1 {
-      transform: scaleX(1);
-      animation: lineAnimate 0.3s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-    .um-components .nav-assist--close .nav-assist__line-2 {
-      transform: scaleX(1);
-      animation: lineAnimate 0.3s 0.05s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-    .um-components .nav-assist--close .nav-assist__line-3 {
-      transform: scaleX(1);
-      animation: lineAnimate 0.3s 0.1s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-    .um-components .nav-assist--close .nav-assist__line-4 {
-      transform: rotate(45deg) scaleX(0);
-      animation: xLineAnimateReverse-4 0.3s 0.15s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-    .um-components .nav-assist--close .nav-assist__line-5 {
-      transform: rotate(-45deg) scaleX(0);
-      animation: xLineAnimateReverse-5 0.3s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards; }
-
-.um-components .nav-assist:focus:not(:hover) .nav-assist__line,
-.um-components .nav-assist--close:focus:not(:hover) .nav-assist__line {
-  fill: #FFFFFF; }
 
 /*
 * Because we have a primary and secondary font family, we need to define both
