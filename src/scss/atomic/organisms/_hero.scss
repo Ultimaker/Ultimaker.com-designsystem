@@ -116,7 +116,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 }
 
 
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 
     .hero__container {
         padding-top: $buildingUnit * 5;            
@@ -163,7 +163,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     }
 
     .hero__description {
-        @extend %reset-last-margin;
+        @include reset-last-margin;
     }
 
     .hero__button {

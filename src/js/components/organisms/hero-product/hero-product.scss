@@ -34,7 +34,7 @@
     }
 
     .hero__link-list {
-        @extend %reset-last-margin;
+        @include reset-last-margin;
         margin-top: $buildingUnit * 2.75;
         @include min-tablet {
             margin-top: ($buildingUnit * 4) - 2;
@@ -43,7 +43,7 @@
     }
 
     .hero__linklist {
-        @extend %reset-list;
+        @include reset-list;
         margin-top: $buildingUnit * 3.5;
 
         @include min-tablet {
