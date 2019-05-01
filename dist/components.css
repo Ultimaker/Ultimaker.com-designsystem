@@ -261,7 +261,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .card > :last-child, .card__content > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .materials-card > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--basic > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--basic .hero__description > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--basic .hero__tab-panel > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--basic .hero__link-list > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child {
+.block > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .content-block > :last-child, .content-block__content > :last-child, .business-card__description > :last-child, .card > :last-child, .card__content > :last-child, .hero--basic > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--basic .hero__description > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--basic .hero__tab-panel > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--basic .hero__link-list > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child {
   margin-bottom: 0; }
 
 .hero--basic .hero__link--large,
@@ -325,7 +325,7 @@ h3, q, .hero--basic .hero__subtitle, .hero--products-application .hero__subtitle
 
 /* Picked an accessible color from colorsafe.co to try out some time */
 button:focus, .button:focus, input[type="button"]:focus, input[type="submit"]:focus, .nav-assist:focus:not(:hover),
-.nav-assist--close:focus:not(:hover), a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .examples .examples__tabs .tablist__item:focus:not(:hover), .business-card:focus, .business-card:hover:focus, .business-card:focus:active, .materials-card:focus .materials-card__content, .materials-card:hover:focus .materials-card__content, .materials-card:focus:active .materials-card__content, .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active) {
+.nav-assist--close:focus:not(:hover), a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .examples .examples__tabs .tablist__item:focus:not(:hover), .business-card:focus, .business-card:hover:focus, .business-card:focus:active, .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active) {
   color: #FFFFFF;
   background-color: #24bcf3; }
 
@@ -2805,33 +2805,6 @@ table tfoot {
 .flexgrid--justify-right {
   justify-content: flex-end; }
 
-.card {
-  max-width: 600px;
-  margin-bottom: 12px; }
-  @media (max-width: 1024px) {
-    .card {
-      margin-bottom: 48px; } }
-  @media (min-width: 768px) {
-    .card {
-      margin-bottom: 24px; } }
-
-.card__visual {
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 569px) {
-    .card__visual {
-      margin: 0 auto 24px; } }
-
-.card__icon,
-.card__image {
-  width: 100%; }
-
-.card__icon {
-  height: 100%; }
-
-.card__content {
-  width: 100%; }
-
 .tooltip {
   position: absolute;
   background: #000000;
@@ -2871,52 +2844,6 @@ table tfoot {
 
 .hit-area {
   display: block; }
-
-.color {
-  cursor: pointer;
-  margin: 0;
-  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px);
-  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px); }
-
-.color__spec {
-  position: relative;
-  margin: 0; }
-
-.color__spec--swatch {
-  width: 48px;
-  height: 48px; }
-
-.color__spec--show {
-  opacity: 0;
-  position: absolute;
-  padding: 12px;
-  color: #FFFFFF;
-  font-size: 24px;
-  z-index: 100;
-  transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-
-.color__spec--title,
-.color__spec--code,
-.color__spec--weight,
-.color__label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
-
-.color--selected {
-  outline: 2px solid #000000; }
-  .color--selected .color__spec--show {
-    opacity: 0; }
-
-.hit-area:hover .color__spec--show,
-.hit-area:focus .color__spec--show {
-  opacity: 1; }
-
-.hit-area:hover .color--selected .color__spec--show,
-.hit-area:focus .color--selected .color__spec--show {
-  opacity: 0; }
 
 .branded-logo {
   color: #000000;
@@ -3746,6 +3673,50 @@ table tfoot {
       flex-basis: 66.67%;
       max-width: 66.67%; } }
 
+.content-block-container__image {
+  width: 75%;
+  background-color: transparent;
+  margin: 0 auto 18px;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .content-block-container__image {
+      margin: 0 auto 24px;
+      width: 100%; } }
+
+.content-block__content {
+  width: 100%; }
+
+.header-block {
+  margin-bottom: 54px; }
+
+.header-block__title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 0; }
+
+.header-block__subtitle {
+  text-align: center;
+  position: relative;
+  margin-top: 21.6px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #7F7F7F; }
+  @media (min-width: 768px) {
+    .header-block__subtitle {
+      margin-top: 18px; } }
+  @media (min-width: 768px) {
+    .header-block__subtitle {
+      font-size: 24px;
+      line-height: 30px; } }
+
+.footer-block {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer-block:not(:empty) {
+    padding-bottom: 60px; }
+
 .brand-card__image-wrapper {
   width: 120px;
   height: 120px;
@@ -3825,64 +3796,32 @@ table tfoot {
 .business-card__link {
   margin: 0; }
 
-.materials-card {
-  margin-right: 0;
+.card {
   max-width: 600px;
   margin-bottom: 12px; }
   @media (max-width: 1024px) {
-    .materials-card {
-      margin-bottom: 24px; } }
+    .card {
+      margin-bottom: 48px; } }
   @media (min-width: 768px) {
-    .materials-card {
+    .card {
       margin-bottom: 24px; } }
-  .materials-card:hover {
-    cursor: pointer;
-    color: inherit;
-    background: #EAEAEA; }
-    > .materials-card:hover .tag {
-      background-color: rgba(255, 255, 255, 0.4); }
-  .materials-card:focus, .materials-card:hover:focus, .materials-card:focus:active {
-    border-color: #24bcf3;
-    outline: none; }
-    .materials-card:focus *, .materials-card:hover:focus *, .materials-card:focus:active * {
-      color: #FFFFFF; }
-    .materials-card:focus .tag, .materials-card:hover:focus .tag, .materials-card:focus:active .tag {
-      background-color: rgba(255, 255, 255, 0.15);
-      color: #FFFFFF; }
-    .materials-card:focus .materials-card__visual, .materials-card:hover:focus .materials-card__visual, .materials-card:focus:active .materials-card__visual {
-      outline: none; }
-    .materials-card:focus .materials-card__content, .materials-card:hover:focus .materials-card__content, .materials-card:focus:active .materials-card__content {
-      outline: none;
-      border: none; }
-  .materials-card:focus:not(:hover), .materials-card:focus:not(:active) {
-    outline: 1px solid transparent; }
 
-.materials-card__article {
-  display: flex;
-  flex-direction: column;
-  height: 100%; }
-
-.materials-card__visual {
-  margin: 0 auto; }
+.card__visual {
+  margin: 0 auto 18px;
+  overflow: hidden; }
   @media (min-width: 569px) {
-    .materials-card__visual {
-      margin: 0 auto; } }
+    .card__visual {
+      margin: 0 auto 24px; } }
 
-.materials-card__image {
+.card__icon,
+.card__image {
   width: 100%; }
 
-.materials-card__content {
-  height: 100%;
-  padding: 12px;
-  border-left: 1px solid #EAEAEA;
-  border-right: 1px solid #EAEAEA;
-  border-bottom: 1px solid #EAEAEA; }
+.card__icon {
+  height: 100%; }
 
-.materials-card__headline {
-  margin-bottom: 12px; }
-
-.materials-card__taglist {
-  margin-bottom: 0; }
+.card__content {
+  width: 100%; }
 
 .card-product {
   position: relative;
@@ -3925,49 +3864,51 @@ table tfoot {
 .list-show-all__list .card-product {
   width: 296px; }
 
-.content-block-container__image {
-  width: 75%;
-  background-color: transparent;
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 768px) {
-    .content-block-container__image {
-      margin: 0 auto 24px;
-      width: 100%; } }
+.color {
+  cursor: pointer;
+  margin: 0;
+  background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px);
+  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px); }
 
-.content-block__content {
-  width: 100%; }
-
-.header-block {
-  margin-bottom: 54px; }
-
-.header-block__title {
-  text-align: center;
+.color__spec {
   position: relative;
-  margin-bottom: 0; }
+  margin: 0; }
 
-.header-block__subtitle {
-  text-align: center;
-  position: relative;
-  margin-top: 21.6px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #7F7F7F; }
-  @media (min-width: 768px) {
-    .header-block__subtitle {
-      margin-top: 18px; } }
-  @media (min-width: 768px) {
-    .header-block__subtitle {
-      font-size: 24px;
-      line-height: 30px; } }
+.color__spec--swatch {
+  width: 48px;
+  height: 48px; }
 
-.footer-block {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .footer-block:not(:empty) {
-    padding-bottom: 60px; }
+.color__spec--show {
+  opacity: 0;
+  position: absolute;
+  padding: 12px;
+  color: #FFFFFF;
+  font-size: 24px;
+  z-index: 100;
+  transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.color__spec--title,
+.color__spec--code,
+.color__spec--weight,
+.color__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.color--selected {
+  outline: 2px solid #000000; }
+  .color--selected .color__spec--show {
+    opacity: 0; }
+
+.hit-area:hover .color__spec--show,
+.hit-area:focus .color__spec--show {
+  opacity: 1; }
+
+.hit-area:hover .color--selected .color__spec--show,
+.hit-area:focus .color--selected .color__spec--show {
+  opacity: 0; }
 
 .toggle {
   color: #0CA9E3;
