@@ -1,4 +1,13 @@
 # Hero Heading
 
-## DSM
-* [molecules/hero-heading](https://ultimaker.invisionapp.com/dsm/ultimaker/ultimaker-com/asset/components/)
+Hero heading is only used as a development component. This component is applied to the hero's.
+
+```
+<header>
+    <hero-heading :title="title" 
+                  :subtitle="subtitle">
+    </hero-heading>
+</header>
+```
+
+

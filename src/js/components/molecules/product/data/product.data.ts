@@ -16,3 +16,5 @@ export const data = {
         },
     },
 };
+
+export default type => data[type];
