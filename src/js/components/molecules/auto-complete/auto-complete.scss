@@ -13,7 +13,7 @@
         border: $inputBorder;
         z-index: 1000;
 
-        @extend %box-shadow;
+        @include box-shadow;
     }
 
     &__dropdown,
