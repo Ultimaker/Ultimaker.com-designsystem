@@ -47,7 +47,7 @@
 
         &:focus:not(:hover),
         &:focus:not(:active) {
-            @extend %focus;
+            @include focus;
         }
 
         .auto-complete__value {

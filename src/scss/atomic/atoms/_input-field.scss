@@ -9,7 +9,7 @@ input[type="text"] {
 
     &:focus:not(:hover),
     &:focus:not(:active) {
-        @extend %focus-outline;
+        @include focus-outline;
     }
 
     border: $inputBorder;

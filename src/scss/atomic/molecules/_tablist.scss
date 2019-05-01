@@ -51,7 +51,7 @@
                 background-color: darken($colorWhite, $tintHoverFocus);
             }
             &:focus:not(:hover) {
-                @extend %focus;
+                @include focus;
             }
 
             &:hover,

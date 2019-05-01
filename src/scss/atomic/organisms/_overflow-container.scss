@@ -88,7 +88,7 @@
 
     &:focus:not(:hover),
     &:focus:not(:active) {
-        @extend %focus-outline;
+        @include focus-outline;
     }
 }
 .overflow-container__image-container {

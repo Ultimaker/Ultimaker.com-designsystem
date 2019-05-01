@@ -16,7 +16,7 @@ a {
     &:not(.hit-area) {
         &:focus:not(:hover),
         &:focus:not(:active) {
-            @extend %focus;
+            @include focus;
         }
     }
 
@@ -27,7 +27,7 @@ a {
 
         &:focus:not(:hover),
         &:focus:not(:active) {
-            @extend %focus-outline;
+            @include focus-outline;
         }
     }
 }
@@ -56,7 +56,7 @@ a {
 
     &:focus:not(:hover),
     &:focus:not(:active) {
-        @extend %focus-outline;
+        @include focus-outline;
     }
 }
 

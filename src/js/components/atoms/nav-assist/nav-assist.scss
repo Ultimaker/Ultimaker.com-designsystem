@@ -105,7 +105,7 @@
 .nav-assist,
 .nav-assist--close {
     &:focus:not(:hover) {
-        @extend %focus;
+        @include focus;
 
         .nav-assist__line {
             fill: $colorWhite;

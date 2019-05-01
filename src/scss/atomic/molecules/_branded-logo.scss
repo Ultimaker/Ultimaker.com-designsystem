@@ -11,7 +11,7 @@
     }
 
     &:focus {
-        @extend %focus-outline;
+        @include focus-outline;
     }
 }
 

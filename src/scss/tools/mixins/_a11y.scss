@@ -1,0 +1,11 @@
+// try colorsafe.co for picking accessible colors
+$focusBorderSize: 2px;
+
+@mixin focus {
+    color: $colorWhite;
+    background-color: lighten($colorMain, $tintHoverFocus);
+}
+
+@mixin focus-outline {
+    outline: $focusBorderSize solid lighten($colorMain, $tintHoverFocus);
+}
