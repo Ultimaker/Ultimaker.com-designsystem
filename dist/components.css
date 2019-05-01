@@ -261,7 +261,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .content-block > :last-child, .content-block__content > :last-child, .business-card__description > :last-child, .card > :last-child, .card__content > :last-child, .hero--basic > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--basic .hero__description > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--basic .hero__tab-panel > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--basic .hero__link-list > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child {
+.block > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .card > :last-child, .card__content > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--basic > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--basic .hero__description > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--basic .hero__tab-panel > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--basic .hero__link-list > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child {
   margin-bottom: 0; }
 
 .hero--basic .hero__link--large,
@@ -3673,19 +3673,6 @@ table tfoot {
       flex-basis: 66.67%;
       max-width: 66.67%; } }
 
-.content-block-container__image {
-  width: 75%;
-  background-color: transparent;
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 768px) {
-    .content-block-container__image {
-      margin: 0 auto 24px;
-      width: 100%; } }
-
-.content-block__content {
-  width: 100%; }
-
 .header-block {
   margin-bottom: 54px; }
 
@@ -3915,6 +3902,19 @@ table tfoot {
   font-weight: 400; }
   .toggle:hover {
     color: #0CA9E3; }
+
+.content-block-container__image {
+  width: 75%;
+  background-color: transparent;
+  margin: 0 auto 18px;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .content-block-container__image {
+      margin: 0 auto 24px;
+      width: 100%; } }
+
+.content-block__content {
+  width: 100%; }
 
 .icon-button, .sys-nav__link, .search__button, .um-components .search__button {
   transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
