@@ -35,7 +35,8 @@
 }
 
 .price-table__list {
-    @extend %reset-list;
+    @include reset-list;
+    @include reset-list;
     display: flex;
 }
 

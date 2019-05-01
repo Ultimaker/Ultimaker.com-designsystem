@@ -60,7 +60,7 @@ $mainNavBorder: 1px solid $colorGray;
 }
 
 .main-nav__list {
-    @extend %reset-list;
+    @include reset-list;
 
     .main-nav--small & {
         position: relative;

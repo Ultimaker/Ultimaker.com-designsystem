@@ -110,7 +110,7 @@ a {
 
 .link-list {
     @include font-rhythm(prim-s);
-    @extend %reset-list;
+    @include reset-list;
     word-wrap: break-word;
     hyphens: auto;
 
@@ -133,7 +133,7 @@ a {
 
 .link-list__item {
     @include font-line-ratio(prim-s);
-    @extend %reset-list-item;
+    @include reset-list-item;
     position: relative;
     transform: translateY(2px);
 

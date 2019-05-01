@@ -1,6 +1,6 @@
 .overview {
     @extend .organism;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 }
 
 .overview__tooltip {

@@ -10,7 +10,7 @@ ul,
 }
 
 .list__item {
-        @extend %reset-list-item;
+        @include reset-list-item;
         padding-left: ($buildingUnit - 2px);
 
     @include min-tablet() {
@@ -35,7 +35,7 @@ ul,
     }
     &__list-item {
         display: inline;
-        @extend %reset-list;
+        @include reset-list;
         @extend small;
 
         &:after {
@@ -53,7 +53,7 @@ ul,
 }
 
 dl, dt ,dd {
-    @extend %reset-bmp;
+    @include reset-bmp;
 }
 
 dt {

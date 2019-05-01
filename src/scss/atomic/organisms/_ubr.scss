@@ -1,13 +1,13 @@
 .ubr {
     @extend .organism;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 
     .ubr__description {
-        @extend %reset-last-margin;
+        @include reset-last-margin;
     }
 
     .ubr__list {
-        @extend %reset-last-margin;
+        @include reset-last-margin;
     }
 
     .ubr__image {

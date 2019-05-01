@@ -1,5 +1,5 @@
 .tabbable-dl {
-    @extend %reset-list;
+    @include reset-list;
     overflow: hidden;
     position: relative;
 }

@@ -2,7 +2,7 @@ $cardTabletMarginBottom: $buildingUnit * 2;
 $cardMobileMarginBottom: $buildingUnit;
 
 .card {
-    @extend %reset-last-margin;
+    @include reset-last-margin;
     max-width: 600px;
 
     @include max-tablet() {
@@ -34,7 +34,7 @@ $cardMobileMarginBottom: $buildingUnit;
 }
 
 .card__content {
-    @extend %reset-last-margin;
+    @include reset-last-margin;
     width:100%;
 }
 

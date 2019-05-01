@@ -33,7 +33,7 @@
 }
 
 .list-section-list {
-    @extend %reset-list;
+    @include reset-list;
 
     .list-section--cards & {
         margin-bottom: $buildingUnit * 3;

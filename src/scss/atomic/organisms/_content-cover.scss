@@ -1,6 +1,6 @@
 .content-cover--cover {
     @extend .organism;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
     position: relative;
     overflow: hidden;
 

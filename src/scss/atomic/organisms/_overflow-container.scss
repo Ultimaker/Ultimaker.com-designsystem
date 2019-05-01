@@ -30,7 +30,7 @@
     display: flex;
     padding: ($buildingUnit * 2) $buildingUnit 0px $buildingUnit;
 
-    @extend %reset-list;
+    @include reset-list;
 
     overflow-x: hidden;
     flex-wrap: wrap;

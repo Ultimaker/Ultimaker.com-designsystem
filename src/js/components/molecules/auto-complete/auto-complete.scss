@@ -20,7 +20,7 @@
     &__list,
     &__list-item,
     &___label {
-        @extend %reset-list;
+        @include reset-list;
         user-select: none;
     }
 

@@ -5,11 +5,11 @@
 }
 
 .pager__list {
-    @extend %reset-list;
+    @include reset-list;
 }
 
 .pager__page {
-    @extend %reset-list-item;
+    @include reset-list-item;
     font-size: $buildingUnit;
     cursor: pointer;
     line-height: $buildingUnit;

@@ -1,6 +1,6 @@
 .hero--cover {
     @extend .organism;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
     position: relative;
     padding-bottom: $buildingUnit * 5;
 

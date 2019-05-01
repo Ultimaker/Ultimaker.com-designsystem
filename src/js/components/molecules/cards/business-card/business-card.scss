@@ -70,7 +70,7 @@ $businessLinkCorrection: 2px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 }
 
 .business-card__property {

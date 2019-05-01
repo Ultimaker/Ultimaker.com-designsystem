@@ -54,7 +54,7 @@ $sizeCloseButton: $buildingUnit * 4;
     }
 
     .notification__content {
-        @extend %reset-last-margin;
+        @include reset-last-margin;
         max-width: 1200px;
 
         @include min-desktop() {
@@ -72,7 +72,7 @@ $sizeCloseButton: $buildingUnit * 4;
 }
 
 .notification__content {
-    @extend %reset-last-margin;
+    @include reset-last-margin;
     max-width: 568px;
 
     &--centered {

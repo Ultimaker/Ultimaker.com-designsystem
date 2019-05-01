@@ -15,12 +15,12 @@
 
 
 .tag-list__list {
-    @extend %reset-list;
+    @include reset-list;
     padding-left: 0;
 }
 
 .tag-list__item {
-    @extend %reset-list-item;
+    @include reset-list-item;
     display: inline-block;
     margin: 0;
 

@@ -4,7 +4,7 @@
     .colors__list {
         display: flex;
         flex-wrap: wrap;
-        @extend %reset-list;
+        @include reset-list;
         margin-top: 0;
         margin-left: 0;
         padding-left: 0;
@@ -18,14 +18,14 @@
 
     .colors__list-item {
         position: relative;
-        @extend %reset-list-item;
+        @include reset-list-item;
         margin: 0 $buildingUnit $buildingUnit 0;
         padding-left: 0;
     }
 
 
     .colors__swatches {
-        @extend %reset-last-margin
+        @include reset-last-margin;
     }
 
     .colors__image {
@@ -82,6 +82,6 @@
     }
 
     .colors__link--large {
-        @extend %reset-last-link-large-margin;
+        @include reset-last-link-large-margin;
     }
 }

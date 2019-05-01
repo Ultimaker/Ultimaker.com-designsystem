@@ -26,7 +26,7 @@ $legalColor: $colorGrayDark;
 }
 
 .legal__list {
-    @extend %reset-list;
+    @include reset-list;
     margin-top: $buildingUnit / 2;
 
     @include max-mobile-xl {
@@ -39,7 +39,7 @@ $legalColor: $colorGrayDark;
 }
 
 .legal__item {
-    @extend %reset-list-item;
+    @include reset-list-item;
     display: inline-block;
 
     &:not(:last-child) {

@@ -12,7 +12,7 @@
     background-color: $colorGrayExtraLight;
     margin: $buildingUnit 0;
     padding: $buildingUnit;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 }
 
 .demo-colors {

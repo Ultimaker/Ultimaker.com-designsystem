@@ -11,7 +11,7 @@ $triangleSize: $buildingUnit;
 
     font-weight: 400;
 
-    @extend %reset-last-margin;
+    @include reset-last-margin;
     z-index: 200;
 
     &:after {
@@ -38,15 +38,15 @@ $triangleSize: $buildingUnit;
 }
 
 .tooltip__list {
-    @extend %reset-list;
+    @include reset-list;
     margin-top: 0;
     margin-left: 0;
     padding-left: 0;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 }
 
 .tooltip__list-item {
-    @extend %reset-list-item;
+    @include reset-list-item;
     width: 120px;
     margin: 0 0 $buildingUnit 0;
     padding-left: 0;

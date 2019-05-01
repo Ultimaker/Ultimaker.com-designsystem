@@ -1,9 +1,9 @@
 .social-nav__list {
-    @extend %reset-list;
+    @include reset-list;
 }
 
 .social-nav__item {
-    @extend %reset-list-item;
+    @include reset-list-item;
     display: inline-block;
     margin-bottom: 0;
 }

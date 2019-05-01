@@ -63,7 +63,7 @@
     .examples__link--large {
         margin-top: 47px;
 
-        @extend %reset-last-link-large-margin;
+        @include reset-last-link-large-margin;
     }
 }
 

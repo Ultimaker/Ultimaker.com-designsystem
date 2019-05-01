@@ -1,5 +1,5 @@
 .content-block {
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 }
 
 .content-block-container__image{
@@ -16,6 +16,6 @@
 
 
 .content-block__content {
-    @extend %reset-last-margin;
+    @include reset-last-margin;
     width:100%;
 }

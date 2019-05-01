@@ -15,7 +15,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
 .hero--products {
     @extend .organism;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 
     .hero__container {
         @include max-mobile() {
@@ -69,11 +69,11 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     }
 
     .hero__description {
-        @extend %reset-last-margin;
+        @include reset-last-margin;
     }
 
     .hero__tab-panel {
-        @extend %reset-last-margin;
+        @include reset-last-margin;
     }
 
     .hero__button {
@@ -86,11 +86,11 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     }
 
     .hero__link--large {
-        @extend %reset-last-link-large-margin;
+        @include reset-last-link-large-margin;
     }
 
     .hero__link-list {
-        @extend %reset-last-margin;
+        @include reset-last-margin;
         margin-top: $buildingUnit * 2.75;
         @include min-tablet {
             margin-top: ($buildingUnit * 4) - 2;

@@ -7,7 +7,7 @@ $gutter: $gridGutterSize * #{$maxColCount - 1};
 $pad: $gridGutterSize;
 
 .flyout {
-    @extend %reset-list;
+    @include reset-list;
     display: flex;
     flex-direction: column;
 
@@ -45,8 +45,8 @@ $pad: $gridGutterSize;
 }
 
 .flyout__section {
-    @extend %reset-list-item;
-    @extend %reset-last-margin;
+    @include reset-list-item;
+    @include reset-last-margin;
     background: transparent;
     margin-bottom: 23px;
 
@@ -123,7 +123,7 @@ $pad: $gridGutterSize;
 .flyout__list-item {
     background: transparent;
     @extend .link-list__item;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 
     &--collapsed-sm {
         @include visually-hidden;

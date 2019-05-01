@@ -1,6 +1,6 @@
 .tabbed-content {
     @extend .organism;
-    @extend %reset-last-margin;
+    @include reset-last-margin;
 }
 
 .tabbed-content__header {

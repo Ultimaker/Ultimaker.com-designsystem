@@ -1,0 +1,30 @@
+// Reset Border Padding Margin
+@mixin reset-bmp {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+// Lists without the list item styles
+@mixin reset-list {
+    @include reset-bmp;
+    list-style: none;
+}
+
+// List items
+@mixin reset-list-item {
+    margin: 0 0 $buildingUnit * 0.5 0;
+    padding:0;
+}
+
+// Reset margins of last atom in a molecule or an organism
+@mixin reset-last-margin {
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+// If a large link is used as a last element in any organism
+@mixin reset-last-link-large-margin {
+    margin-bottom:0;
+}
