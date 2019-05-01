@@ -1,0 +1,8 @@
+---
+to: src/scss/atomic/<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/_all.scss
+inject: true
+skip_if: <%= h.changeCase.paramCase(name) %>
+append: true
+---
+
+@import '~<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/<%= h.changeCase.paramCase(name) %>/<%= h.changeCase.paramCase(name) %>';
