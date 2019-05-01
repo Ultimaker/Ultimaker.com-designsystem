@@ -1,5 +1,4 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
-import debounce from 'lodash/debounce';
 
 import BrowserCapabilities from 'utils/browser-capabilities';
 import viewportUtil from 'utils/viewport';
@@ -84,13 +83,5 @@ export default class Tabs extends Vue {
 
     beforeDestroy() {
         this.viewportUtil.removeResizeHandler(this.positionIndicator);
-
-        const { tabsList } = this.$refs;
-
-        tabsList.removeEventListener('scroll', this.scrollCorrection());
-
-        if (BrowserCapabilities.supportsTouch) {
-            tabsList.removeEventListener('scroll', this.scrollCorrection());
-        }
     }
 }
