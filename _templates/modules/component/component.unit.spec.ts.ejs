@@ -4,6 +4,8 @@ to: src/js/components/<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/<%
 import 'babel-polyfill';
 import { build } from 'vuenit';
 
+import { data } from '../data/<%= h.inflection.pluralize(h.changeCase.lower(type)) %>.data.ts';
+
 import <%= h.changeCase.pascal(name) %> from './<%= h.changeCase.paramCase(name) %>';
 
 describe('components', () => {
@@ -18,5 +20,21 @@ describe('components', () => {
                 vm.$destroy();
             });
         });
+
+        Object.keys(data).map((key) => {
+           
+            describe(`<%= h.changeCase.paramCase(name) %> ${key} props`, () => {
+                
+                const props = data[key];
+                const mount = build(<%= h.changeCase.pascal(name) %>, { props: defaultProps});
+
+                it(`should render an <%= h.changeCase.pascal(name) %> component with ${key} props`, () => {
+                    const vm = mount();
+                    expect(vm.$el).toBeDefined();
+                    vm.$destroy();
+                });
+            });
+        });
+        
     });
 });
