@@ -5,13 +5,7 @@
                 <h3 class="content-general__title"> {{ title }}</h3>
                 <p class="content-general__body">{{ description }}</p>
 
-                <ContentButton v-bind="cta"
-                       class="button"
-                       v-if="cta.type === 'ContentButton' && cta" />
-
-                <ContentLink v-bind="cta"
-                             class="link link--medium"
-                             v-if="cta.type === 'ContentLink' && cta" />
+                <component v-if="cta" v-bind="cta" :is="cta.type" :class="getClassNames(cta.type)"/>
             </div>
             <div class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image">
                 <div class="content-general__image-wrapper">

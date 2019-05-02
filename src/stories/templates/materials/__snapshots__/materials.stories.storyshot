@@ -77,13 +77,13 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1919_0"
+                      id="flyout_title_1921_0"
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_1919_0"
+                      aria-labelledby="flyout_title_1921_0"
                       class="flyout__list"
                     >
                       <li
@@ -164,14 +164,14 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1919_1"
+                      id="flyout_title_1921_1"
                     >
                       Where is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1919_1"
+                      aria-labelledby="flyout_title_1921_1"
                       class="flyout__list"
                     >
                       <li
@@ -589,14 +589,14 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1919_2"
+                      id="flyout_title_1921_2"
                     >
                       How is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1919_2"
+                      aria-labelledby="flyout_title_1921_2"
                       class="flyout__list"
                     >
                       <li
@@ -835,13 +835,13 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1998_0"
+                      id="flyout_title_2000_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_1998_0"
+                      aria-labelledby="flyout_title_2000_0"
                       class="flyout__list"
                     >
                       <li
@@ -909,14 +909,14 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1998_1"
+                      id="flyout_title_2000_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1998_1"
+                      aria-labelledby="flyout_title_2000_1"
                       class="flyout__list"
                     >
                       <li
@@ -1081,14 +1081,14 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1998_2"
+                      id="flyout_title_2000_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1998_2"
+                      aria-labelledby="flyout_title_2000_2"
                       class="flyout__list"
                     >
                       <li
@@ -1311,13 +1311,13 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2048_0"
+                      id="flyout_title_2050_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_2048_0"
+                      aria-labelledby="flyout_title_2050_0"
                       class="flyout__list"
                     >
                       <li
@@ -1385,14 +1385,14 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2048_1"
+                      id="flyout_title_2050_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2048_1"
+                      aria-labelledby="flyout_title_2050_1"
                       class="flyout__list"
                     >
                       <li
@@ -1557,14 +1557,14 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2048_2"
+                      id="flyout_title_2050_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2048_2"
+                      aria-labelledby="flyout_title_2050_2"
                       class="flyout__list"
                     >
                       <li
@@ -3277,9 +3277,23 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                             Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
                           </p>
                            
-                          <!---->
-                           
-                          <!---->
+                          <a
+                            class="link link--icon link--large content-general__link link link--medium"
+                            href="https://www.youtube.com/watch?v=MAovMMKq_ak"
+                            target="_blank"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Watch video
+    
+                            </span>
+                             
+                            <!---->
+                          </a>
                         </div>
                          
                         <div
@@ -3339,7 +3353,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           </p>
                            
                           <a
-                            class="button"
+                            class="content-general__button button"
                             href="https://ultimaker.com"
                             rel="noopener"
                             target="_self"
@@ -3354,8 +3368,6 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
     
                             </span>
                           </a>
-                           
-                          <!---->
                         </div>
                          
                         <div
@@ -3415,7 +3427,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           </p>
                            
                           <a
-                            class="button"
+                            class="content-general__button button"
                             href="https://ultimaker.com"
                             rel="noopener"
                             target="_self"
@@ -3430,8 +3442,6 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
     
                             </span>
                           </a>
-                           
-                          <!---->
                         </div>
                          
                         <div
@@ -3491,7 +3501,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           </p>
                            
                           <a
-                            class="button"
+                            class="content-general__button button"
                             href="https://ultimaker.com"
                             rel="noopener"
                             target="_self"
@@ -3506,8 +3516,6 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
     
                             </span>
                           </a>
-                           
-                          <!---->
                         </div>
                          
                         <div
@@ -3567,7 +3575,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           </p>
                            
                           <a
-                            class="button"
+                            class="content-general__button button"
                             href="https://ultimaker.com"
                             rel="noopener"
                             target="_self"
@@ -3582,8 +3590,6 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
     
                             </span>
                           </a>
-                           
-                          <!---->
                         </div>
                          
                         <div
@@ -3642,10 +3648,8 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
                           </p>
                            
-                          <!---->
-                           
                           <a
-                            class="link link--medium"
+                            class="content-general__link link link--medium"
                             href="https://ultimaker.com"
                             rel="noopener"
                             target="_self"
