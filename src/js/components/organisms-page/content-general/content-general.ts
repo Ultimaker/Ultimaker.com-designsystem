@@ -13,4 +13,12 @@ export default class GeneralContent extends Vue implements IContentGeneral {
     @Prop({ type: Object }) cta?: IContentGeneral['cta'] | undefined;
     @Prop({ type: Object }) image?: IContentGeneral['image'] | undefined;
     @Prop({ type: Boolean, required: true }) reversed!: IContentGeneral['reversed'];
+
+    getClassNames(type): string {
+        return {
+            ContentButton: 'content-general__button button',
+            ContentLink: 'content-general__link link link--medium',
+            YoutubeLink: 'content-general__link link link--medium',
+        }[type] || '';
+    }
 }

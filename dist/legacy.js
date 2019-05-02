@@ -13244,6 +13244,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
@@ -13275,6 +13277,17 @@ var GeneralContent = function (_Vue) {
         return _possibleConstructorReturn(this, (GeneralContent.__proto__ || Object.getPrototypeOf(GeneralContent)).apply(this, arguments));
     }
 
+    _createClass(GeneralContent, [{
+        key: "getClassNames",
+        value: function getClassNames(type) {
+            return {
+                ContentButton: 'content-general__button button',
+                ContentLink: 'content-general__link link link--medium',
+                YoutubeLink: 'content-general__link link link--medium'
+            }[type] || '';
+        }
+    }]);
+
     return GeneralContent;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "title", void 0);
@@ -13292,7 +13305,7 @@ exports.default = GeneralContent;
 /* 364 */
 /***/ (function(module, exports) {
 
-module.exports = "<article class=\"content-general\">\n    <section class=\"content-general__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 content-general__grid-cell content-general__content\">\n                <h3 class=\"content-general__title\"> {{ title }}</h3>\n                <p class=\"content-general__body\">{{ description }}</p>\n\n                <ContentButton v-bind=\"cta\"\n                       class=\"button\"\n                       v-if=\"cta.type === 'ContentButton' && cta\" />\n\n                <ContentLink v-bind=\"cta\"\n                             class=\"link link--medium\"\n                             v-if=\"cta.type === 'ContentLink' && cta\" />\n            </div>\n            <div class=\"flexgrid__cell--xs-6 content-general__grid-cell content-general__image\">\n                <div class=\"content-general__image-wrapper\">\n                    <c-image v-if=\"image\" v-bind=\"image\"></c-image>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
+module.exports = "<article class=\"content-general\">\n    <section class=\"content-general__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 content-general__grid-cell content-general__content\">\n                <h3 class=\"content-general__title\"> {{ title }}</h3>\n                <p class=\"content-general__body\">{{ description }}</p>\n\n                <component v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 content-general__grid-cell content-general__image\">\n                <div class=\"content-general__image-wrapper\">\n                    <c-image v-if=\"image\" v-bind=\"image\"></c-image>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 365 */
