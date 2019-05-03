@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots templates|materials Materials 1`] = `
+exports[`Storyshots templates|materials Materials details 1`] = `
 <section
   class="story"
 >
@@ -24,7 +24,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
           >
             <!---->
           </a>
-
+           
           <nav
             aria-label="site"
             class="main-nav main-nav--small"
@@ -45,17 +45,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     href="#/#nav-one"
                   >
                     <!---->
-
+                     
                     <span
                       class="link__underline"
                     >
-
+                      
         Explore
-
+    
                     </span>
                   </a>
                 </div>
-
+                 
                 <a
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
@@ -64,10 +64,10 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   tabindex="-1"
                 >
                   <!---->
-
+                   
                   <!---->
                 </a>
-
+                 
                 <ul
                   class="main-nav__flyout flyout--large"
                   id="nav-0"
@@ -77,13 +77,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1082_0"
+                      id="flyout_title_1921_0"
                     >
                       What is 3D printing?
                     </strong>
-
+                     
                     <ul
-                      aria-labelledby="flyout_title_1082_0"
+                      aria-labelledby="flyout_title_1921_0"
                       class="flyout__list"
                     >
                       <li
@@ -94,17 +94,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Find out here
-
+    
                           </span>
                         </a>
                       </li>
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -116,15 +116,15 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             More
                           </span>
                         </a>
                       </li>
-
+                       
                       <!---->
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -136,26 +136,26 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             Less
                           </span>
                         </a>
                       </li>
                     </ul>
-
+                     
                     <a
                       class="link flyout__link--cta-mini"
                       href="#/explore"
                     >
                       <!---->
-
+                       
                       <span
                         class="link__underline"
                       >
-
+                        
         Compare Items
-
+    
                       </span>
                     </a>
                   </li>
@@ -164,14 +164,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1082_1"
+                      id="flyout_title_1921_1"
                     >
                       Where is 3D printing used?
                     </strong>
-
+                     
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1082_1"
+                      aria-labelledby="flyout_title_1921_1"
                       class="flyout__list"
                     >
                       <li
@@ -182,13 +182,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Architecture
-
+    
                           </span>
                         </a>
                       </li>
@@ -200,13 +200,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Aerospace
-
+    
                           </span>
                         </a>
                       </li>
@@ -218,13 +218,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Art
-
+    
                           </span>
                         </a>
                       </li>
@@ -243,7 +243,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                       <!---->
                       <!---->
                       <!---->
-
+                       
                       <li
                         class="flyout__list-item"
                       >
@@ -254,13 +254,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             More
                           </span>
                         </a>
                       </li>
-
+                       
                       <!---->
                       <!---->
                       <!---->
@@ -273,13 +273,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Automotive
-
+    
                           </span>
                         </a>
                       </li>
@@ -292,13 +292,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Engineering
-
+    
                           </span>
                         </a>
                       </li>
@@ -311,13 +311,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Fablabs
-
+    
                           </span>
                         </a>
                       </li>
@@ -330,13 +330,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Fashion
-
+    
                           </span>
                         </a>
                       </li>
@@ -349,13 +349,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Humanitarian aid
-
+    
                           </span>
                         </a>
                       </li>
@@ -368,13 +368,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Jewelry
-
+    
                           </span>
                         </a>
                       </li>
@@ -387,13 +387,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Manufacturing
-
+    
                           </span>
                         </a>
                       </li>
@@ -406,13 +406,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Medicine
-
+    
                           </span>
                         </a>
                       </li>
@@ -425,13 +425,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Product design
-
+    
                           </span>
                         </a>
                       </li>
@@ -444,13 +444,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Research
-
+    
                           </span>
                         </a>
                       </li>
@@ -463,13 +463,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Education
-
+    
                           </span>
                         </a>
                       </li>
@@ -482,13 +482,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Primary education
-
+    
                           </span>
                         </a>
                       </li>
@@ -501,13 +501,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Secondary Education
-
+    
                           </span>
                         </a>
                       </li>
@@ -520,13 +520,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         University
-
+    
                           </span>
                         </a>
                       </li>
@@ -539,17 +539,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         DIY, hobbies, and home
-
+    
                           </span>
                         </a>
                       </li>
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -561,26 +561,26 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             Less
                           </span>
                         </a>
                       </li>
                     </ul>
-
+                     
                     <a
                       class="link flyout__link--cta-mini"
                       href="#/explore"
                     >
                       <!---->
-
+                       
                       <span
                         class="link__underline"
                       >
-
+                        
         Compare Items
-
+    
                       </span>
                     </a>
                   </li>
@@ -589,14 +589,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1082_2"
+                      id="flyout_title_1921_2"
                     >
                       How is 3D printing used?
                     </strong>
-
+                     
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1082_2"
+                      aria-labelledby="flyout_title_1921_2"
                       class="flyout__list"
                     >
                       <li
@@ -607,13 +607,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Concept models
-
+    
                           </span>
                         </a>
                       </li>
@@ -625,13 +625,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Functional prototypes
-
+    
                           </span>
                         </a>
                       </li>
@@ -643,13 +643,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         End-use parts
-
+    
                           </span>
                         </a>
                       </li>
@@ -657,7 +657,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                       <!---->
                       <!---->
                       <!---->
-
+                       
                       <li
                         class="flyout__list-item"
                       >
@@ -668,13 +668,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             More
                           </span>
                         </a>
                       </li>
-
+                       
                       <!---->
                       <!---->
                       <!---->
@@ -687,13 +687,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Tools, jigs, and fixtures
-
+    
                           </span>
                         </a>
                       </li>
@@ -706,13 +706,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Molds and casting
-
+    
                           </span>
                         </a>
                       </li>
@@ -725,13 +725,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Visualization aids
-
+    
                           </span>
                         </a>
                       </li>
@@ -744,17 +744,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Lessons
-
+    
                           </span>
                         </a>
                       </li>
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -766,26 +766,26 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             Less
                           </span>
                         </a>
                       </li>
                     </ul>
-
+                     
                     <a
                       class="link flyout__link--cta-mini"
                       href="#/explore"
                     >
                       <!---->
-
+                       
                       <span
                         class="link__underline"
                       >
-
+                        
         Compare Items
-
+    
                       </span>
                     </a>
                   </li>
@@ -803,17 +803,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     href="#/#nav-two"
                   >
                     <!---->
-
+                     
                     <span
                       class="link__underline"
                     >
-
+                      
         Products
-
+    
                     </span>
                   </a>
                 </div>
-
+                 
                 <a
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
@@ -822,10 +822,10 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   tabindex="-1"
                 >
                   <!---->
-
+                   
                   <!---->
                 </a>
-
+                 
                 <ul
                   class="main-nav__flyout flyout--large"
                   id="nav-1"
@@ -835,13 +835,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1161_0"
+                      id="flyout_title_2000_0"
                     >
                       Flyout title one
                     </strong>
-
+                     
                     <ul
-                      aria-labelledby="flyout_title_1161_0"
+                      aria-labelledby="flyout_title_2000_0"
                       class="flyout__list"
                     >
                       <li
@@ -852,17 +852,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -874,15 +874,15 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             More
                           </span>
                         </a>
                       </li>
-
+                       
                       <!---->
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -894,14 +894,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             Less
                           </span>
                         </a>
                       </li>
                     </ul>
-
+                     
                     <!---->
                   </li>
                   <li
@@ -909,14 +909,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1161_1"
+                      id="flyout_title_2000_1"
                     >
                       Flyout title two
                     </strong>
-
+                     
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1161_1"
+                      aria-labelledby="flyout_title_2000_1"
                       class="flyout__list"
                     >
                       <li
@@ -927,13 +927,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -945,13 +945,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -963,20 +963,20 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
                       <!---->
                       <!---->
                       <!---->
-
+                       
                       <li
                         class="flyout__list-item"
                       >
@@ -987,13 +987,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             More
                           </span>
                         </a>
                       </li>
-
+                       
                       <!---->
                       <!---->
                       <!---->
@@ -1006,13 +1006,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1025,13 +1025,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1044,17 +1044,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -1066,14 +1066,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             Less
                           </span>
                         </a>
                       </li>
                     </ul>
-
+                     
                     <!---->
                   </li>
                   <li
@@ -1081,14 +1081,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1161_2"
+                      id="flyout_title_2000_2"
                     >
                       Flyout title three
                     </strong>
-
+                     
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1161_2"
+                      aria-labelledby="flyout_title_2000_2"
                       class="flyout__list"
                     >
                       <li
@@ -1099,13 +1099,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1117,13 +1117,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1135,19 +1135,19 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
                       <!---->
                       <!---->
-
+                       
                       <li
                         class="flyout__list-item"
                       >
@@ -1158,13 +1158,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             More
                           </span>
                         </a>
                       </li>
-
+                       
                       <!---->
                       <!---->
                       <!---->
@@ -1177,13 +1177,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1196,17 +1196,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -1218,14 +1218,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             Less
                           </span>
                         </a>
                       </li>
                     </ul>
-
+                     
                     <!---->
                   </li>
                 </ul>
@@ -1242,17 +1242,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     href="#/#nav-three"
                   >
                     <!---->
-
+                     
                     <span
                       class="link__underline"
                     >
-
+                      
         Stories
-
+    
                     </span>
                   </a>
                 </div>
-
+                 
                 <a
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
@@ -1261,10 +1261,10 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   tabindex="-1"
                 >
                   <!---->
-
+                   
                   <!---->
                 </a>
-
+                 
                 <!---->
               </li>
               <li
@@ -1279,17 +1279,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     href="#/#nav-four"
                   >
                     <!---->
-
+                     
                     <span
                       class="link__underline"
                     >
-
+                      
         Resources
-
+    
                     </span>
                   </a>
                 </div>
-
+                 
                 <a
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
@@ -1298,10 +1298,10 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   tabindex="-1"
                 >
                   <!---->
-
+                   
                   <!---->
                 </a>
-
+                 
                 <ul
                   class="main-nav__flyout flyout--large"
                   id="nav-3"
@@ -1311,13 +1311,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1211_0"
+                      id="flyout_title_2050_0"
                     >
                       Flyout title one
                     </strong>
-
+                     
                     <ul
-                      aria-labelledby="flyout_title_1211_0"
+                      aria-labelledby="flyout_title_2050_0"
                       class="flyout__list"
                     >
                       <li
@@ -1328,17 +1328,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -1350,15 +1350,15 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             More
                           </span>
                         </a>
                       </li>
-
+                       
                       <!---->
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -1370,14 +1370,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             Less
                           </span>
                         </a>
                       </li>
                     </ul>
-
+                     
                     <!---->
                   </li>
                   <li
@@ -1385,14 +1385,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1211_1"
+                      id="flyout_title_2050_1"
                     >
                       Flyout title two
                     </strong>
-
+                     
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1211_1"
+                      aria-labelledby="flyout_title_2050_1"
                       class="flyout__list"
                     >
                       <li
@@ -1403,13 +1403,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1421,13 +1421,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1439,20 +1439,20 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
                       <!---->
                       <!---->
                       <!---->
-
+                       
                       <li
                         class="flyout__list-item"
                       >
@@ -1463,13 +1463,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             More
                           </span>
                         </a>
                       </li>
-
+                       
                       <!---->
                       <!---->
                       <!---->
@@ -1482,13 +1482,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1501,13 +1501,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1520,17 +1520,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -1542,14 +1542,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             Less
                           </span>
                         </a>
                       </li>
                     </ul>
-
+                     
                     <!---->
                   </li>
                   <li
@@ -1557,14 +1557,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1211_2"
+                      id="flyout_title_2050_2"
                     >
                       Flyout title three
                     </strong>
-
+                     
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1211_2"
+                      aria-labelledby="flyout_title_2050_2"
                       class="flyout__list"
                     >
                       <li
@@ -1575,13 +1575,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1593,13 +1593,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1611,19 +1611,19 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
                       <!---->
                       <!---->
-
+                       
                       <li
                         class="flyout__list-item"
                       >
@@ -1634,13 +1634,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             More
                           </span>
                         </a>
                       </li>
-
+                       
                       <!---->
                       <!---->
                       <!---->
@@ -1653,13 +1653,13 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
@@ -1672,17 +1672,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           href="#/#"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Flyout item
-
+    
                           </span>
                         </a>
                       </li>
-
+                       
                       <li
                         class="flyout__list-item"
                         style="display: none;"
@@ -1694,14 +1694,14 @@ exports[`Storyshots templates|materials Materials 1`] = `
                           tabindex="0"
                         >
                           <!---->
-
+                           
                           <span>
                             Less
                           </span>
                         </a>
                       </li>
                     </ul>
-
+                     
                     <!---->
                   </li>
                 </ul>
@@ -1718,17 +1718,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     href="#/#nav-five"
                   >
                     <!---->
-
+                     
                     <span
                       class="link__underline"
                     >
-
+                      
         Knowledge
-
+    
                     </span>
                   </a>
                 </div>
-
+                 
                 <a
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
@@ -1737,10 +1737,10 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   tabindex="-1"
                 >
                   <!---->
-
+                   
                   <!---->
                 </a>
-
+                 
                 <!---->
               </li>
               <li
@@ -1755,17 +1755,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     href="#/#nav-six"
                   >
                     <!---->
-
+                     
                     <span
                       class="link__underline"
                     >
-
+                      
         Community
-
+    
                     </span>
                   </a>
                 </div>
-
+                 
                 <a
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
@@ -1774,10 +1774,10 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   tabindex="-1"
                 >
                   <!---->
-
+                   
                   <!---->
                 </a>
-
+                 
                 <!---->
               </li>
               <li
@@ -1792,17 +1792,17 @@ exports[`Storyshots templates|materials Materials 1`] = `
                     href="#/#nav-seven"
                   >
                     <!---->
-
+                     
                     <span
                       class="link__underline"
                     >
-
+                      
         Company
-
+    
                     </span>
                   </a>
                 </div>
-
+                 
                 <a
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
@@ -1811,15 +1811,15 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   tabindex="-1"
                 >
                   <!---->
-
+                   
                   <!---->
                 </a>
-
+                 
                 <!---->
               </li>
             </ul>
           </nav>
-
+           
           <nav
             aria-label="quick access"
             class="sys-nav"
@@ -1836,9 +1836,9 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   href="#/en/explore"
                 >
                   <!---->
-
+                   
                   <!---->
-
+                   
                   <span
                     class="sys-nav__label sys-nav__label--hidden-sm"
                   >
@@ -1846,7 +1846,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   </span>
                 </a>
               </li>
-
+               
               <li
                 class="sys-nav__item"
               >
@@ -1856,7 +1856,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                   tabindex="0"
                 >
                   <!---->
-
+                   
                   <span
                     class="sys-nav__label sys-nav__label--hidden-sm"
                   >
@@ -1866,7 +1866,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
               </li>
             </ul>
           </nav>
-
+           
           <button
             aria-expanded="false"
             aria-label="menu"
@@ -1884,7 +1884,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                 x="2"
                 y="11"
               />
-
+               
               <rect
                 class="nav-assist__line nav-assist__line-1"
                 height="2"
@@ -1892,7 +1892,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                 x="2"
                 y="4.5"
               />
-
+               
               <rect
                 class="nav-assist__line nav-assist__line-3"
                 height="2"
@@ -1900,7 +1900,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                 x="2"
                 y="17.5"
               />
-
+               
               <rect
                 class="nav-assist__line nav-assist__line-4"
                 height="2"
@@ -1909,7 +1909,7 @@ exports[`Storyshots templates|materials Materials 1`] = `
                 x="-1.3"
                 y="11"
               />
-
+               
               <rect
                 class="nav-assist__line nav-assist__line-5"
                 height="26.6"
@@ -1920,417 +1920,16 @@ exports[`Storyshots templates|materials Materials 1`] = `
               />
             </svg>
           </button>
-
+           
           <!---->
         </div>
-
-        <!---->
       </header>
-
+       
       <main
         style="padding-top: 60px;"
       >
         <article
-          class="hero hero--cover"
-        >
-          <picture>
-            <source
-              media="(min-width: 1201px)"
-              srcset=""
-            />
-
-            <!---->
-
-            <source
-              media="(min-width: 768px)"
-              srcset=""
-            />
-
-            <!---->
-
-            <!---->
-
-            <source
-              media="(max-width: 480px)"
-              srcset="/generator/svg/1000/500"
-            />
-
-            <img
-              alt=""
-              class="img--responsive hero-cover__image--full img--lazy"
-              src=""
-            />
-          </picture>
-
-          <div
-            class="hero-cover__image--overlay"
-          />
-
-          <section
-            class="container"
-          >
-            <div
-              class="flexgrid__cell--xs-6 hero--cover-reset"
-            >
-              <h1
-                class="hero-cover__headline"
-              >
-                Lorum ipsum dolor sit amet consectetuer
-              </h1>
-
-              <p
-                class="copy--intro"
-              >
-                Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.
-              </p>
-
-              <button
-                class="link--large"
-                icon="play-video"
-                style="background-color: red;"
-                type="button"
-              >
-                Play Video
-              </button>
-            </div>
-          </section>
-
-          <!---->
-        </article>
-      </main>
-
-      <footer
-        class="footer"
-      >
-        <div
-          class="footer__container"
-        >
-          <div
-            class="footer__primary"
-          >
-            <a
-              aria-label="Ultimaker homepage"
-              class="branded-logo footer__branded-logo router-link-exact-active router-link-active"
-              href="#/"
-            >
-              <!---->
-
-              <!---->
-            </a>
-
-            <nav
-              class="footer__nav"
-            >
-              <div
-                class="flexgrid"
-              >
-                <div
-                  class="flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6"
-                >
-                  <div
-                    class="flexgrid"
-                  >
-                    <div
-                      class="flexgrid__cell--xs-6"
-                    >
-                      <div
-                        class="footer-nav__column"
-                      >
-                        <h3
-                          class="footer-nav__title"
-                          id="footer-nav__title-01"
-                        >
-                          Item one
-                        </h3>
-
-                        <ul
-                          aria-labelledby="footer-nav__title-01"
-                          class="footer-nav__list"
-                        >
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="footer-nav__link"
-                              href="http://nu.nl"
-                              rel="noopener"
-                              target="_blank"
-                            >
-                              <!---->
-
-                              <span
-                                class="link__underline"
-                              >
-
-        Sub item 1
-
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div
-                      class="flexgrid__cell--xs-6"
-                    >
-                      <div
-                        class="footer-nav__column"
-                      >
-                        <h3
-                          class="footer-nav__title"
-                          id="footer-nav__title-02"
-                        >
-                          Item one
-                        </h3>
-
-                        <ul
-                          aria-labelledby="footer-nav__title-02"
-                          class="footer-nav__list"
-                        >
-                          <li
-                            class="footer-nav__item"
-                          >
-                            <a
-                              class="footer-nav__link"
-                              href="http://nu.nl"
-                              rel="noopener"
-                              target="_blank"
-                            >
-                              <!---->
-
-                              <span
-                                class="link__underline"
-                              >
-
-        Sub item 1
-
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="flexgrid__cell--xxs-6 flexgrid__cell--xs-4 flexgrid__cell--sm-6"
-                >
-                  <div
-                    class="footer-nav__column footer-nav__column--last footer-nav__column--double"
-                  >
-                    <h3
-                      class="footer-nav__title"
-                      id="footer-nav__title-03"
-                    >
-                      Item one
-                    </h3>
-
-                    <ul
-                      aria-labelledby="footer-nav__title-03"
-                      class="footer-nav__list"
-                    >
-                      <li
-                        class="footer-nav__item"
-                      >
-                        <a
-                          class="footer-nav__link"
-                          href="http://nu.nl"
-                          rel="noopener"
-                          target="_blank"
-                        >
-                          <!---->
-
-                          <span
-                            class="link__underline"
-                          >
-
-        Sub item 1
-
-                          </span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
-
-          <div
-            class="footer__secondary"
-          >
-            <nav
-              class="social-nav footer__social-nav"
-            >
-              <ul
-                aria-label="follow Ultimaker"
-                class="social-nav__list"
-              >
-                <li
-                  class="social-nav__item footer__social-item"
-                >
-                  <a
-                    aria-label="LinkedIn"
-                    class="social-nav__link icon-button icon-button--small"
-                    href="https://nl.linkedin.com/company/ultimaker"
-                  >
-                    <!---->
-                  </a>
-                </li>
-
-                <li
-                  class="social-nav__item footer__social-item"
-                >
-                  <a
-                    aria-label="Twitter"
-                    class="social-nav__link icon-button icon-button--small"
-                    href="https://twitter.com/Ultimaker"
-                  >
-                    <!---->
-                  </a>
-                </li>
-
-                <li
-                  class="social-nav__item footer__social-item"
-                >
-                  <a
-                    aria-label="YouTube"
-                    class="social-nav__link icon-button icon-button--small"
-                    href="https://www.youtube.com/user/Ultimaker3D"
-                  >
-                    <!---->
-                  </a>
-                </li>
-
-                <li
-                  class="social-nav__item footer__social-item"
-                >
-                  <a
-                    aria-label="Facebook"
-                    class="social-nav__link icon-button icon-button--small"
-                    href="https://www.facebook.com/Ultimaker"
-                  >
-                    <!---->
-                  </a>
-                </li>
-
-                <li
-                  class="social-nav__item footer__social-item"
-                >
-                  <a
-                    aria-label="Instagram"
-                    class="social-nav__link icon-button icon-button--small"
-                    href="http://instagram.com/ultimaker"
-                  >
-                    <!---->
-                  </a>
-                </li>
-              </ul>
-            </nav>
-
-            <div
-              class="locale-selector footer__locale-selector"
-              type="CountryAutoCompleteField"
-            >
-              <a
-                aria-label="Change your country, currently: Netherlands"
-                class="icon-button icon-button--small locale-selector__edit--buton"
-                role="button"
-                tabindex="0"
-              >
-                <!---->
-
-                <span
-                  class="icon-button__label"
-                >
-
-        Netherlands
-
-                </span>
-              </a>
-
-              <a
-                aria-label="change your country"
-                class="icon-button icon-button--small locale-selector__edit--buton"
-                role="button"
-                style="display: none;"
-                tabindex="0"
-              >
-                <!---->
-
-                <!---->
-              </a>
-
-              <!---->
-            </div>
-          </div>
-
-          <div
-            class="footer__tertiary"
-          >
-            <div
-              class="legal footer__legal"
-            >
-              <p
-                class="legal__copyright-label"
-              >
-                <small>
-                  Copyright Ultimaker
-                </small>
-              </p>
-
-              <nav
-                class="legal__nav"
-              >
-                <ul
-                  class="legal__list"
-                >
-                  <li
-                    class="legal__item"
-                  >
-                    <a
-                      class="legal__link"
-                      href="http://nu.nl"
-                      rel="noopener"
-                      target="_blank"
-                    >
-                      <!---->
-
-                      <span
-                        class="link__underline"
-                      >
-
-        Item legal
-
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </section>
-  </section>
-</section>
-`;
-
-exports[`Storyshots templates|materials Materials-details 1`] = `
-<section
-  class="story"
->
-  <section
-    class="story"
-  >
-    <section
-      class="story__template"
-    >
-      <main>
-        <article
-          class="hero hero--products"
+          class="hero hero--product organism"
         >
           <section
             class="container hero__container"
@@ -2344,221 +1943,816 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                 <div
                   class="hero__description"
                 >
-                  <h1>
-                    Lorem ipsum dolor sit amet
-                  </h1>
-
+                  <header
+                    class="header-block hero__header header-block--hero"
+                  >
+                    <div>
+                      <h1
+                        class="hero__title header-block__title--hero"
+                      >
+                        Lorem ipsum dolor sit amet
+                      </h1>
+                       
+                      <h2
+                        class="hero__subtitle header-block__subtitle--hero"
+                      >
+                        Maecenas faucibus mollis interdum nulla vitae elit libero a pharetra augue
+                      </h2>
+                    </div>
+                  </header>
+                   
                   <p
-                    class="copy--intro"
+                    class="hero__intro copy--intro"
                   >
                     Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
                   </p>
-
+                   
                   <div
-                    class="price-table hero__price-table"
+                    class="hero__products"
                   >
-                    <ul
-                      class="price-table__list"
-                      role="tablist"
+                    <div
+                      class="product hero__products-item hero__products-item--multiple"
+                      type="Product"
                     >
-                      <li
-                        class="price-table__item"
-                        role="tab"
+                      <div
+                        class="product__icon-container"
                       >
                         <!---->
-
-                        <span
-                          class="price-table__info"
+                      </div>
+                       
+                      <div
+                        class="product__information"
+                      >
+                        <p
+                          class="product__name"
                         >
-                          <small
-                            class="price-table__tagline"
-                          >
-
-                                        Product,
-                                        300g
-                                        from
-
-                          </small>
-
-                          <span
-                            class="currency"
-                          >
-                            <span
-                              class="currency__type"
-                            >
-                              EUR
-                            </span>
-
-    33
-
-                          </span>
-                        </span>
-                      </li>
-                    </ul>
-
-                    <small
-                      class="price-table__disclaimer"
+                          
+            Pla, 750 gr
+        
+                        </p>
+                         
+                        <p
+                          class="product__pricing"
+                        >
+                          
+            Price on request
+        
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="product hero__products-item hero__products-item--multiple"
+                      type="Product"
                     >
-                      *excl. VAT
-                    </small>
+                      <div
+                        class="product__icon-container"
+                      >
+                        <!---->
+                      </div>
+                       
+                      <div
+                        class="product__information"
+                      >
+                        <p
+                          class="product__name"
+                        >
+                          
+            Ultimaker S5
+        
+                        </p>
+                         
+                        <p
+                          class="product__pricing"
+                        >
+                          
+            Price on request
+        
+                        </p>
+                      </div>
+                    </div>
                   </div>
-
-                  <a
-                    class="button button--primary hero__button"
-                    href=""
+                   
+                  <div
+                    block="hero"
+                    class="cta__block cta__block--hero"
                   >
-                    Some label
-                  </a>
-
+                    <a
+                      class="link--primary button button--primary cta__link"
+                      href="#/en/quote"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+        Request a quote
+    
+                      </span>
+                    </a>
+                    <a
+                      class="link--large link cta__link"
+                      href="#/en/link"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+        Content link
+    
+                      </span>
+                    </a>
+                  </div>
+                   
                   <ul
-                    class="link-list link-list--icon hero__link-list"
+                    class="hero__linklist"
                   >
                     <li
-                      class="link-list__item"
+                      class="hero__linklist-item"
                     >
                       <a
-                        class=""
-                        href="#/#"
+                        class="link hero__linklist-link link--icon"
+                        href="#/en/link"
                       >
                         <!---->
-                         Content-link
-                      </a>
-                    </li>
-
-                    <li
-                      class="link-list__item"
-                    >
-                      <a
-                        class=""
-                        href="#/#"
-                      >
-                        <!---->
-                         Download link
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Content link
+    
+                        </span>
                       </a>
                     </li>
                     <li
-                      class="link-list__item"
+                      class="hero__linklist-item"
                     >
                       <a
-                        class=""
-                        href="#/#"
+                        class="link hero__linklist-link link--icon"
+                        href="#/en/link"
                       >
                         <!---->
-                         Download link
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Content link
+    
+                        </span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-
+               
               <div
                 class="flexgrid__cell--xs-6"
               >
                 <div
-                  class="hero__image--product"
+                  class="hero__image"
                 >
-                  <cms-image
-                    image="[object Object]"
-                    orientation="square"
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   />
                 </div>
               </div>
             </div>
           </section>
         </article>
-
+         
         <article
-          class="ubr"
+          class="organism tabbed-content"
+          type="TabbedContent"
         >
           <section
             class="container"
           >
-            <h2>
-              Lorem ipsum dolor sit amet
-            </h2>
-
+            <header
+              class="header-block"
+            >
+              <h2
+                class="header-block__title"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h2>
+               
+              <p
+                class="header-block__subtitle"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit. Vestibulum id ligula porta felis euismod semper.
+              </p>
+            </header>
+             
             <div
-              class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"
+              class="tabs"
             >
               <div
-                class="flexgrid__cell--xs-6"
+                class="tabs__nav"
+              >
+                <ul
+                  class="tabs__list"
+                  role="tablist"
+                >
+                  <li
+                    class="tabs__list_item"
+                    role="presentation"
+                  >
+                    <a
+                      aria-selected="true"
+                      class="tabs__list_link tabs__list_link--active"
+                      href="#undefined"
+                      role="tab"
+                    >
+                      <!---->
+                      
+                    Label one
+                
+                    </a>
+                  </li>
+                  <li
+                    class="tabs__list_item"
+                    role="presentation"
+                  >
+                    <a
+                      class="tabs__list_link"
+                      href="#undefined"
+                      role="tab"
+                    >
+                      <!---->
+                      
+                    Label one
+                
+                    </a>
+                  </li>
+                  <li
+                    class="tabs__list_item"
+                    role="presentation"
+                  >
+                    <a
+                      class="tabs__list_link"
+                      href="#undefined"
+                      role="tab"
+                    >
+                      <!---->
+                      
+                    Label one with a lot of text
+                
+                    </a>
+                  </li>
+                  <li
+                    class="tabs__list_item"
+                    role="presentation"
+                  >
+                    <a
+                      class="tabs__list_link"
+                      href="#undefined"
+                      role="tab"
+                    >
+                      <!---->
+                      
+                    Label one
+                
+                    </a>
+                  </li>
+                  <li
+                    class="tabs__list_item"
+                    role="presentation"
+                  >
+                    <a
+                      class="tabs__list_link"
+                      href="#undefined"
+                      role="tab"
+                    >
+                      <!---->
+                      
+                    Label one
+                
+                    </a>
+                  </li>
+                  <li
+                    class="tabs__list_item"
+                    role="presentation"
+                  >
+                    <a
+                      class="tabs__list_link"
+                      href="#undefined"
+                      role="tab"
+                    >
+                      <!---->
+                      
+                    Label one
+                
+                    </a>
+                  </li>
+                   
+                  <li
+                    aria-hidden="true"
+                    class="tabs__indicator"
+                    role="none"
+                  />
+                </ul>
+              </div>
+               
+              <div
+                class="tabs__contents"
               >
                 <div
-                  class="ubr__description"
+                  aria-label="Label one"
+                  class="tabs__content"
+                  id="Label one0"
+                  role="tabpanel"
+                  type="Tab"
                 >
-                  <p>
-                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.
-                  </p>
-
-                  <ul
-                    class="list ubr__list"
+                  <article
+                    class="content-general"
+                    ctas="[object Object]"
+                    type="ContentGeneral"
                   >
-                    <li
-                      class="list__item"
+                    <section
+                      class="content-general__container"
                     >
-                      Egestas Condimentum Malesuada
-                    </li>
-                    <li
-                      class="list__item"
-                    >
-                      Fermentum Ligula Ipsum
-                    </li>
-                    <li
-                      class="list__item"
-                    >
-                      Nullam quis risus eget urna mollis ornare vel eu leo
-                    </li>
-                    <li
-                      class="list__item"
-                    >
-                      Sed posuere consectetur est at lobortis
-                    </li>
-                    <li
-                      class="list__item"
-                    >
-                      Nullam id dolor id nibh ultricies vehicula ut id elit
-                    </li>
-                    <li
-                      class="list__item"
-                    >
-                      Donec ullamcorper nulla non metus auctor fringilla
-                    </li>
-                    <li
-                      class="list__item"
-                    >
-                      Cum sociis natoque penatibus et magnis dis parturient montes
-                    </li>
-                    <li
-                      class="list__item"
-                    >
-                      Nulla vitae elit libero, a pharetra augue
-                    </li>
-                  </ul>
+                      <div
+                        class="flexgrid flexgrid--gutter"
+                      >
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                        >
+                          <h3
+                            class="content-general__title"
+                          >
+                             Content general title 1
+                          </h3>
+                           
+                          <p
+                            class="content-general__body"
+                          >
+                            Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
+                          </p>
+                           
+                          <a
+                            class="link link--icon link--large content-general__link link link--medium"
+                            href="https://www.youtube.com/watch?v=MAovMMKq_ak"
+                            target="_blank"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Watch video
+    
+                            </span>
+                             
+                            <!---->
+                          </a>
+                        </div>
+                         
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                        >
+                          <div
+                            class="content-general__image-wrapper"
+                          >
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </article>
                 </div>
               </div>
-
               <div
-                class="flexgrid__cell--xs-6"
+                class="tabs__contents"
               >
                 <div
-                  class="ubr__image "
+                  aria-hidden="true"
+                  aria-label="Label one"
+                  class="tabs__content"
+                  id="Label one1"
+                  role="tabpanel"
+                  style="display: none;"
+                  type="Tab"
                 >
-                  <cms-image
-                    class="img--responsive"
-                    image="[object Object]"
-                    orientation="landscape"
-                  />
+                  <article
+                    class="content-general"
+                    ctas="[object Object]"
+                    type="ContentGeneral"
+                  >
+                    <section
+                      class="content-general__container"
+                    >
+                      <div
+                        class="flexgrid flexgrid--gutter flexgrid--row-reversed"
+                      >
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                        >
+                          <h3
+                            class="content-general__title"
+                          >
+                             Content general title 2
+                          </h3>
+                           
+                          <p
+                            class="content-general__body"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                          </p>
+                           
+                          <a
+                            class="content-general__button button"
+                            href="https://ultimaker.com"
+                            rel="noopener"
+                            target="_self"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Call me back
+    
+                            </span>
+                          </a>
+                        </div>
+                         
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                        >
+                          <div
+                            class="content-general__image-wrapper"
+                          >
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </article>
+                </div>
+              </div>
+              <div
+                class="tabs__contents"
+              >
+                <div
+                  aria-hidden="true"
+                  aria-label="Label one with a lot of text"
+                  class="tabs__content"
+                  id="Label one with a lot of text2"
+                  role="tabpanel"
+                  style="display: none;"
+                  type="Tab"
+                >
+                  <article
+                    class="content-general"
+                    ctas="[object Object]"
+                    type="ContentGeneral"
+                  >
+                    <section
+                      class="content-general__container"
+                    >
+                      <div
+                        class="flexgrid flexgrid--gutter"
+                      >
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                        >
+                          <h3
+                            class="content-general__title"
+                          >
+                             Content general title 2
+                          </h3>
+                           
+                          <p
+                            class="content-general__body"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                          </p>
+                           
+                          <a
+                            class="content-general__button button"
+                            href="https://ultimaker.com"
+                            rel="noopener"
+                            target="_self"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Call me back
+    
+                            </span>
+                          </a>
+                        </div>
+                         
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                        >
+                          <div
+                            class="content-general__image-wrapper"
+                          >
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </article>
+                </div>
+              </div>
+              <div
+                class="tabs__contents"
+              >
+                <div
+                  aria-hidden="true"
+                  aria-label="Label one"
+                  class="tabs__content"
+                  id="Label one3"
+                  role="tabpanel"
+                  style="display: none;"
+                  type="Tab"
+                >
+                  <article
+                    class="content-general"
+                    ctas="[object Object]"
+                    type="ContentGeneral"
+                  >
+                    <section
+                      class="content-general__container"
+                    >
+                      <div
+                        class="flexgrid flexgrid--gutter flexgrid--row-reversed"
+                      >
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                        >
+                          <h3
+                            class="content-general__title"
+                          >
+                             Content general title 2
+                          </h3>
+                           
+                          <p
+                            class="content-general__body"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                          </p>
+                           
+                          <a
+                            class="content-general__button button"
+                            href="https://ultimaker.com"
+                            rel="noopener"
+                            target="_self"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Call me back
+    
+                            </span>
+                          </a>
+                        </div>
+                         
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                        >
+                          <div
+                            class="content-general__image-wrapper"
+                          >
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </article>
+                </div>
+              </div>
+              <div
+                class="tabs__contents"
+              >
+                <div
+                  aria-hidden="true"
+                  aria-label="Label one"
+                  class="tabs__content"
+                  id="Label one4"
+                  role="tabpanel"
+                  style="display: none;"
+                  type="Tab"
+                >
+                  <article
+                    class="content-general"
+                    ctas="[object Object]"
+                    type="ContentGeneral"
+                  >
+                    <section
+                      class="content-general__container"
+                    >
+                      <div
+                        class="flexgrid flexgrid--gutter flexgrid--row-reversed"
+                      >
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                        >
+                          <h3
+                            class="content-general__title"
+                          >
+                             Content general title 2
+                          </h3>
+                           
+                          <p
+                            class="content-general__body"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                          </p>
+                           
+                          <a
+                            class="content-general__button button"
+                            href="https://ultimaker.com"
+                            rel="noopener"
+                            target="_self"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Call me back
+    
+                            </span>
+                          </a>
+                        </div>
+                         
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                        >
+                          <div
+                            class="content-general__image-wrapper"
+                          >
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </article>
+                </div>
+              </div>
+              <div
+                class="tabs__contents"
+              >
+                <div
+                  aria-hidden="true"
+                  aria-label="Label one"
+                  class="tabs__content"
+                  id="Label one5"
+                  role="tabpanel"
+                  style="display: none;"
+                  type="Tab"
+                >
+                  <article
+                    class="content-general"
+                    ctas="[object Object]"
+                    type="ContentGeneral"
+                  >
+                    <section
+                      class="content-general__container"
+                    >
+                      <div
+                        class="flexgrid flexgrid--gutter flexgrid--row-reversed"
+                      >
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content"
+                        >
+                          <h3
+                            class="content-general__title"
+                          >
+                             Content general title 2
+                          </h3>
+                           
+                          <p
+                            class="content-general__body"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
+                          </p>
+                           
+                          <a
+                            class="content-general__link link link--medium"
+                            href="https://ultimaker.com"
+                            rel="noopener"
+                            target="_self"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Call me back
+    
+                            </span>
+                          </a>
+                        </div>
+                         
+                        <div
+                          class="flexgrid__cell--xs-6 content-general__grid-cell content-general__image"
+                        >
+                          <div
+                            class="content-general__image-wrapper"
+                          >
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </article>
                 </div>
               </div>
             </div>
+             
+            <footer
+              class="footer-block"
+            >
+              <div
+                block="overview"
+                class="cta__block cta__block--footer"
+              >
+                <a
+                  class="link--primary button cta__link"
+                  href="https://ultimaker.com"
+                  rel="noopener"
+                  target="_self"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Call me back
+    
+                  </span>
+                </a>
+                <a
+                  class="link--large link cta__link"
+                  href="https://ultimaker.com"
+                  rel="noopener"
+                  target="_self"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Call me back
+    
+                  </span>
+                </a>
+              </div>
+            </footer>
           </section>
         </article>
-
+         
         <article
           class="examples"
         >
           <div
-            class="container"
+            class="container examples__container"
           >
             <header>
               <h2
@@ -2567,7 +2761,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                 Lorem ipsum dolor sit amet
               </h2>
             </header>
-
+             
             <div
               class="cards"
             >
@@ -2593,7 +2787,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
             </div>
           </div>
         </article>
-
+         
         <article
           class="colors"
         >
@@ -2605,7 +2799,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                 Lorem ipsum dolor sit amet
               </h2>
             </header>
-
+             
             <div
               class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"
             >
@@ -2637,31 +2831,31 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                             >
                               Material:
                             </dt>
-
+                             
                             <dd
                               class="list__item tooltip__list-item"
                             >
                               Ultimaker material
                             </dd>
-
+                             
                             <dt
                               class="list__item tooltip__list-item tooltip__label"
                             >
                               Color:
                             </dt>
-
+                             
                             <dd
                               class="list__item tooltip__list-item"
                             >
                               RAL 1234
                             </dd>
-
+                             
                             <dt
                               class="list__item tooltip__list-item tooltip__label"
                             >
                               Weight:
                             </dt>
-
+                             
                             <dd
                               class="list__item tooltip__list-item"
                             >
@@ -2671,7 +2865,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                             </dd>
                           </dl>
                         </div>
-
+                         
                         <div
                           class="color"
                         >
@@ -2680,7 +2874,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                           >
                             <!---->
                           </div>
-
+                           
                           <div
                             class="color__spec color__spec--swatch"
                             style="background: rgb(0, 56, 123);"
@@ -2707,31 +2901,31 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                             >
                               Material:
                             </dt>
-
+                             
                             <dd
                               class="list__item tooltip__list-item"
                             >
                               Ultimaker material
                             </dd>
-
+                             
                             <dt
                               class="list__item tooltip__list-item tooltip__label"
                             >
                               Color:
                             </dt>
-
+                             
                             <dd
                               class="list__item tooltip__list-item"
                             >
                               RAL 1234
                             </dd>
-
+                             
                             <dt
                               class="list__item tooltip__list-item tooltip__label"
                             >
                               Weight:
                             </dt>
-
+                             
                             <dd
                               class="list__item tooltip__list-item"
                             >
@@ -2741,7 +2935,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                             </dd>
                           </dl>
                         </div>
-
+                         
                         <div
                           class="color"
                         >
@@ -2750,7 +2944,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                           >
                             <!---->
                           </div>
-
+                           
                           <div
                             class="color__spec color__spec--swatch"
                             style="background: rgb(188, 64, 119);"
@@ -2777,21 +2971,21 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                             >
                               Material:
                             </dt>
-
+                             
                             <dd
                               class="list__item tooltip__list-item"
                             >
                               Ultimaker transparent
                             </dd>
-
+                             
                             <!---->
-
+                             
                             <dt
                               class="list__item tooltip__list-item tooltip__label"
                             >
                               Weight:
                             </dt>
-
+                             
                             <dd
                               class="list__item tooltip__list-item"
                             >
@@ -2801,7 +2995,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                             </dd>
                           </dl>
                         </div>
-
+                         
                         <div
                           class="color"
                         >
@@ -2810,7 +3004,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                           >
                             <!---->
                           </div>
-
+                           
                           <div
                             class="color__spec color__spec--swatch"
                           />
@@ -2818,11 +3012,24 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                       </a>
                     </li>
                   </ul>
-
-                  <!---->
+                   
+                  <a
+                    class="link--large"
+                    href="#/#"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Where to buy!
+    
+                    </span>
+                  </a>
                 </div>
               </div>
-
+               
               <div
                 class="flexgrid__cell--sm-8 flexgrid__cell--xs-6"
               >
@@ -2839,7 +3046,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
           </div>
         </article>
       </main>
-
+       
       <footer
         class="footer"
       >
@@ -2855,10 +3062,10 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
               href="#/"
             >
               <!---->
-
+               
               <!---->
             </a>
-
+             
             <nav
               class="footer__nav"
             >
@@ -2883,7 +3090,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                         >
                           Item one
                         </h3>
-
+                         
                         <ul
                           aria-labelledby="footer-nav__title-01"
                           class="footer-nav__list"
@@ -2898,20 +3105,20 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                               target="_blank"
                             >
                               <!---->
-
+                               
                               <span
                                 class="link__underline"
                               >
-
+                                
         Sub item 1
-
+    
                               </span>
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
-
+                     
                     <div
                       class="flexgrid__cell--xs-6"
                     >
@@ -2924,7 +3131,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                         >
                           Item one
                         </h3>
-
+                         
                         <ul
                           aria-labelledby="footer-nav__title-02"
                           class="footer-nav__list"
@@ -2939,13 +3146,13 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                               target="_blank"
                             >
                               <!---->
-
+                               
                               <span
                                 class="link__underline"
                               >
-
+                                
         Sub item 1
-
+    
                               </span>
                             </a>
                           </li>
@@ -2954,7 +3161,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                     </div>
                   </div>
                 </div>
-
+                 
                 <div
                   class="flexgrid__cell--xxs-6 flexgrid__cell--xs-4 flexgrid__cell--sm-6"
                 >
@@ -2967,7 +3174,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                     >
                       Item one
                     </h3>
-
+                     
                     <ul
                       aria-labelledby="footer-nav__title-03"
                       class="footer-nav__list"
@@ -2982,13 +3189,13 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                           target="_blank"
                         >
                           <!---->
-
+                           
                           <span
                             class="link__underline"
                           >
-
+                            
         Sub item 1
-
+    
                           </span>
                         </a>
                       </li>
@@ -2998,7 +3205,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
               </div>
             </nav>
           </div>
-
+           
           <div
             class="footer__secondary"
           >
@@ -3020,7 +3227,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                     <!---->
                   </a>
                 </li>
-
+                 
                 <li
                   class="social-nav__item footer__social-item"
                 >
@@ -3032,7 +3239,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                     <!---->
                   </a>
                 </li>
-
+                 
                 <li
                   class="social-nav__item footer__social-item"
                 >
@@ -3044,7 +3251,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                     <!---->
                   </a>
                 </li>
-
+                 
                 <li
                   class="social-nav__item footer__social-item"
                 >
@@ -3056,7 +3263,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                     <!---->
                   </a>
                 </li>
-
+                 
                 <li
                   class="social-nav__item footer__social-item"
                 >
@@ -3070,7 +3277,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                 </li>
               </ul>
             </nav>
-
+             
             <div
               class="locale-selector footer__locale-selector"
               type="CountryAutoCompleteField"
@@ -3082,16 +3289,16 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                 tabindex="0"
               >
                 <!---->
-
+                 
                 <span
                   class="icon-button__label"
                 >
-
+                  
         Netherlands
-
+    
                 </span>
               </a>
-
+               
               <a
                 aria-label="change your country"
                 class="icon-button icon-button--small locale-selector__edit--buton"
@@ -3100,14 +3307,14 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                 tabindex="0"
               >
                 <!---->
-
+                 
                 <!---->
               </a>
-
+               
               <!---->
             </div>
           </div>
-
+           
           <div
             class="footer__tertiary"
           >
@@ -3121,7 +3328,7 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                   Copyright Ultimaker
                 </small>
               </p>
-
+               
               <nav
                 class="legal__nav"
               >
@@ -3138,13 +3345,13 @@ exports[`Storyshots templates|materials Materials-details 1`] = `
                       target="_blank"
                     >
                       <!---->
-
+                       
                       <span
                         class="link__underline"
                       >
-
+                        
         Item legal
-
+    
                       </span>
                     </a>
                   </li>
