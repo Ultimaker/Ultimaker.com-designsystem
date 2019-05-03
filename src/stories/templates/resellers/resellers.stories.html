@@ -1,0 +1,8 @@
+<section class="story__template">
+    <page-header v-bind="header" :main-nav-open="mainNavOpen" @toggle-nav="mainNavOpen = !mainNavOpen"></page-header>
+    <main style="padding-top: 60px">
+        <hero-basic v-bind="heroBasic"></hero-basic>
+        <overview v-bind="overviewData"></overview>
+    </main>
+    <page-footer  v-bind="footer" :country="country" @country-changed="updateCountry"></page-footer>
+</section>
