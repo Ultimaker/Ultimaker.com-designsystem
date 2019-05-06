@@ -3,7 +3,7 @@
         <div class="flexgrid flexgrid--gutter" :class="{'flexgrid--row-reversed': reversed}">
             <div class="flexgrid__cell--xs-6 content-general__grid-cell content-general__content">
                 <h3 class="content-general__title"> {{ title }}</h3>
-                <p class="content-general__body">{{ description }}</p>
+                <div class="content-manageble content-general__body" v-html="description"></div>
 
                 <component v-if="cta" v-bind="cta" :is="cta.type" :class="getClassNames(cta.type)"/>
             </div>
