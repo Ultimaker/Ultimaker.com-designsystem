@@ -468,6 +468,154 @@ exports[`Storyshots Atoms|text/headings h6 1`] = `
 </section>
 `;
 
+exports[`Storyshots Atoms|text/inline/a default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      href="https://ultimaker.com/"
+    >
+      Ultimaker
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/inline/cite default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <cite>
+      Nineteen Eighty-Four by George Orwell (Part 1, Chapter 1).
+    </cite>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/inline/code default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <code>
+      alert(”i got your cookie!” + document.cookie);
+    </code>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/inline/em default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <p>
+      Get out of bed 
+      <em>
+        now
+      </em>
+      !
+    </p>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/inline/strong default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <p>
+      ... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs: 
+      <strong>
+        never feed him after midnight
+      </strong>
+      .
+    </p>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/inline/sub default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <p>
+      Almost every developer’s favorite molecule is C
+      <sub>
+        8
+      </sub>
+      H
+      <sub>
+        10
+      </sub>
+      N
+      <sub>
+        4
+      </sub>
+      O
+      <sub>
+        2
+      </sub>
+      , also known as ”caffeine.”
+    </p>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Atoms|text/inline/sup default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <p>
+      The 
+      <b>
+        Pythagorean theorem
+      </b>
+       is often expressed as the following equation: 
+      <var>
+        a
+        <sup>
+          2
+        </sup>
+      </var>
+       + 
+      <var>
+        b
+        <sup>
+          2
+        </sup>
+      </var>
+       = 
+      <var>
+        c
+        <sup>
+          2
+        </sup>
+      </var>
+    </p>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Molecules/color default 1`] = `
 <section
   class="story"
