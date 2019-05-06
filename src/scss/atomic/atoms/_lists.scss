@@ -1,8 +1,9 @@
-ul,
+.list {
+    padding-left: 1em;
+}
+
 .list {
     @include font-ratio-rhythm(prim-s);
-
-    padding-left: 1em;
 
     @include min-tablet() {
         @include font-ratio-rhythm(prim-m);

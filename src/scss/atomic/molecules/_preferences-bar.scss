@@ -116,6 +116,8 @@
     }
 
     &__description {
+        @include font-ratio-rhythm(prim-s);
+
         padding-left: $buildingUnit * 2.5;
         margin-top: -6px;
         color: $colorGrayTextNotification;
