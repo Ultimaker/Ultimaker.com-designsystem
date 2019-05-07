@@ -8703,7 +8703,9 @@ var ListSection = function (_Vue) {
         key: "triggerEventClick",
         value: function triggerEventClick() {
             if (this.expand && this.expand.clickEvent) {
-                this.$emitPublic(this.clickEventType, this.clickEventData);
+                try {
+                    this.$emitPublic(this.clickEventType, this.clickEventData);
+                } catch (e) {}
             }
         }
     }, {
