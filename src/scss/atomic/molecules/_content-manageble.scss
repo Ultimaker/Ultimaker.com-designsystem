@@ -1,8 +1,25 @@
 .content-manageble {
     ul,
     ol {
-        p {
-            margin:0;
+        padding-left: 1em;
+
+        @include font-ratio-rhythm(prim-s);
+
+        @include min-tablet() {
+            @include font-ratio-rhythm(prim-m);
+        }
+
+        li {
+            @extend %reset-list-item;
+            padding-left: ($buildingUnit - 2px);
+
+            @include min-tablet() {
+                padding-left: ($buildingUnit - 4px);
+            }
+
+            p {
+                margin:0;
+            }
         }
     }
 }
