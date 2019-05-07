@@ -11,6 +11,9 @@
     }
 
     &__content-manageble {
+        p {
+            @include font-ratio-rhythm(prim-s);
+        }
         ul,
         ol {
             @include min-tablet() {

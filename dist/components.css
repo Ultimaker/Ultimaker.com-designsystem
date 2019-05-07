@@ -495,26 +495,13 @@ abbr[title] {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-b,
-strong,
-.tablist__section .tablist__item,
-.examples .examples__tabs .tablist__item {
-  font-weight: inherit; }
-
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-b,
-strong,
-.tablist__section .tablist__item,
-.examples .examples__tabs .tablist__item {
-  font-weight: bolder; }
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-code,
 kbd,
 samp {
   font-family: monospace, monospace;
@@ -539,19 +526,6 @@ mark {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sub {
-  bottom: -0.25em; }
-
-sup {
-  top: -0.5em; }
-
 /* Embedded content
    ========================================================================== */
 /**
@@ -1186,6 +1160,74 @@ h6 {
 .nav-assist--close:focus:not(:hover) .nav-assist__line {
   fill: #FFFFFF; }
 
+a {
+  font-size: inherit;
+  color: #0CA9E3;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+  a:hover {
+    color: #4bc8f5; }
+  p a, strong a, .tablist__section .tablist__item a, .examples .examples__tabs .tablist__item a,
+  small a,
+  h6 a,
+  .caption-list__headline a,
+  .caption-list__list-item a,
+  .link.link--small a,
+  .legal__link a,
+  .link--small.footer-nav__link a,
+  .footer-nav__link.legal__link a,
+  .link--small.toggle a,
+  .toggle.legal__link a,
+  .link--small.overflow-container__link:hover a,
+  .overflow-container__link.legal__link:hover a,
+  .link--small.overflow-container__link.exact-active a,
+  .overflow-container__link.exact-active.legal__link a,
+  .price-table__tagline a,
+  .price-table__disclaimer a,
+  .tooltip__list-item.tooltip__label a,
+  .tag a,
+  .tablist__section .tablist a,
+  .examples .examples__tabs .tablist a,
+  .tablist__section .tablist__headline a,
+  .examples .examples__tabs .tablist__headline a,
+  .auto-complete__label a,
+  .hero--products-application .usp--icon .usp__label a,
+  .overflow-container__label a,
+  .settings-selector__label a,
+  .content--rich li a {
+    font-weight: 400; }
+
+strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -2px;
+  margin-bottom: 2px; }
+  p strong, strong strong, .tablist__section .tablist__item strong, .examples .examples__tabs .tablist__item strong, p .tablist__section .tablist__item, .tablist__section p .tablist__item, strong .tablist__section .tablist__item, .tablist__section strong .tablist__item, .tablist__section .tablist__item .tablist__item, p .examples .examples__tabs .tablist__item, .examples .examples__tabs p .tablist__item, strong .examples .examples__tabs .tablist__item, .examples .examples__tabs strong .tablist__item, .examples .examples__tabs .tablist__item .tablist__item {
+    display: inline; }
+  @media (min-width: 768px) {
+    strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: -5px;
+      margin-bottom: 5px; } }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
 .drawer {
   position: relative;
   z-index: 1010; }
@@ -1227,38 +1269,6 @@ html {
     html {
       font-size: 16px;
       line-height: 24px; } }
-
-
-strong,
-.tablist__section .tablist__item,
-.examples .examples__tabs .tablist__item {
-  display: block; }
-  p strong, strong strong, .tablist__section .tablist__item strong, .examples .examples__tabs .tablist__item strong, p .tablist__section .tablist__item, .tablist__section p .tablist__item, strong .tablist__section .tablist__item, .tablist__section strong .tablist__item, .tablist__section .tablist__item .tablist__item, p .examples .examples__tabs .tablist__item, .examples .examples__tabs p .tablist__item, strong .examples .examples__tabs .tablist__item, .examples .examples__tabs strong .tablist__item, .examples .examples__tabs .tablist__item .tablist__item {
-    display: inline; }
-
-
-strong,
-.tablist__section .tablist__item,
-.examples .examples__tabs .tablist__item {
-  font-weight: 600; }
-
-
-strong,
-.tablist__section .tablist__item,
-.examples .examples__tabs .tablist__item {
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
-  margin-bottom: 2px; }
-  @media (min-width: 768px) {
-    
-    strong,
-    .tablist__section .tablist__item,
-    .examples .examples__tabs .tablist__item {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: -5px;
-      margin-bottom: 5px; } }
 
 .icon {
   width: 1em;
@@ -1363,45 +1373,6 @@ dd {
   margin-bottom: 12px; }
   dd:last-of-type {
     margin-bottom: 0; }
-
-a {
-  font-size: inherit;
-  color: #0CA9E3;
-  text-decoration: none;
-  outline: none;
-  cursor: pointer;
-  transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  a:hover {
-    color: #4bc8f5; }
-  p a, strong a, .tablist__section .tablist__item a, .examples .examples__tabs .tablist__item a,
-  small a,
-  h6 a,
-  .caption-list__headline a,
-  .caption-list__list-item a,
-  .link.link--small a,
-  .legal__link a,
-  .link--small.footer-nav__link a,
-  .footer-nav__link.legal__link a,
-  .link--small.toggle a,
-  .toggle.legal__link a,
-  .link--small.overflow-container__link:hover a,
-  .overflow-container__link.legal__link:hover a,
-  .link--small.overflow-container__link.exact-active a,
-  .overflow-container__link.exact-active.legal__link a,
-  .price-table__tagline a,
-  .price-table__disclaimer a,
-  .tooltip__list-item.tooltip__label a,
-  .tag a,
-  .tablist__section .tablist a,
-  .examples .examples__tabs .tablist a,
-  .tablist__section .tablist__headline a,
-  .examples .examples__tabs .tablist__headline a,
-  .auto-complete__label a,
-  .hero--products-application .usp--icon .usp__label a,
-  .overflow-container__label a,
-  .settings-selector__label a,
-  .content--rich li a {
-    font-weight: 400; }
 
 .link, .legal__link, .footer-nav__link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active {
   display: inline-block;
@@ -5268,6 +5239,11 @@ svg text {
   transform: translateY(0); }
   .preferences-bar__button, .preferences-bar .settings-selector__edit-button {
     background-color: transparent; }
+  .preferences-bar__content-manageble p, .preferences-bar__content-manageble strong, .preferences-bar__content-manageble .tablist__section .tablist__item, .tablist__section .preferences-bar__content-manageble .tablist__item, .preferences-bar__content-manageble .examples .examples__tabs .tablist__item, .examples .examples__tabs .preferences-bar__content-manageble .tablist__item {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: -2px;
+    margin-bottom: 23px; }
   @media (min-width: 768px) {
     .preferences-bar__content-manageble ul, .preferences-bar__content-manageble .hero--text .content--rich ul, .hero--text .content--rich .preferences-bar__content-manageble ul,
     .preferences-bar__content-manageble ol {
