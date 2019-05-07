@@ -87,7 +87,11 @@ export default class ListSection extends Vue implements IListSection {
 
     triggerEventClick (): void {
         if (this.expand && this.expand.clickEvent) {
-            this.$emitPublic(this.clickEventType, this.clickEventData);
+            try {
+                this.$emitPublic(this.clickEventType, this.clickEventData);
+            } catch (e) {
+
+            }
         }
     }
 
