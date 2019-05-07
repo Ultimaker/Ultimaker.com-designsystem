@@ -257,7 +257,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 .caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .colors .colors__list, .list-section-list, .hero--product .hero__linklist {
   list-style: none; }
 
-.list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .tooltip__list-item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .colors .colors__list-item {
+.list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .tooltip__list-item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
+.content-manageble ol li, .colors .colors__list-item {
   margin: 0 0 6px 0;
   padding: 0; }
 
@@ -347,9 +348,9 @@ h6 a:focus:not(:hover),
 .tablist__section .tablist__headline a:focus:not(:hover),
 .examples .examples__tabs .tablist__headline a:focus:not(:hover),
 .auto-complete__label a:focus:not(:hover),
-.settings-selector__label a:focus:not(:hover),
 .hero--products-application .usp--icon .usp__label a:focus:not(:hover),
 .overflow-container__label a:focus:not(:hover),
+.settings-selector__label a:focus:not(:hover),
 small a:focus:not(:active),
 h6 a:focus:not(:active),
 .caption-list__headline a:focus:not(:active),
@@ -369,9 +370,9 @@ h6 a:focus:not(:active),
 .tablist__section .tablist__headline a:focus:not(:active),
 .examples .examples__tabs .tablist__headline a:focus:not(:active),
 .auto-complete__label a:focus:not(:active),
-.settings-selector__label a:focus:not(:active),
 .hero--products-application .usp--icon .usp__label a:focus:not(:active),
 .overflow-container__label a:focus:not(:active),
+.settings-selector__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
 .content--rich li a:focus:not(:active), .link:focus:not(:hover), .legal__link:focus:not(:hover), .footer-nav__link:focus:not(:hover), .toggle:focus:not(:hover), .link:focus:not(:active), .legal__link:focus:not(:active), .footer-nav__link:focus:not(:active), .toggle:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .search__input:focus, .overflow-container__link:focus:not(:hover), .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
@@ -494,13 +495,26 @@ abbr[title] {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
+b,
+strong,
+.tablist__section .tablist__item,
+.examples .examples__tabs .tablist__item {
+  font-weight: inherit; }
+
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+b,
+strong,
+.tablist__section .tablist__item,
+.examples .examples__tabs .tablist__item {
+  font-weight: bolder; }
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+code,
 kbd,
 samp {
   font-family: monospace, monospace;
@@ -525,6 +539,19 @@ mark {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
 /* Embedded content
    ========================================================================== */
 /**
@@ -931,7 +958,7 @@ q {
 
 small,
 h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.toggle, .toggle.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
-.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .settings-selector__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label {
+.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
@@ -940,7 +967,7 @@ h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal
   @media (min-width: 768px) {
     small,
     h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.toggle, .toggle.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
-    .price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .settings-selector__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label {
+    .price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -1159,74 +1186,6 @@ h6 {
 .nav-assist--close:focus:not(:hover) .nav-assist__line {
   fill: #FFFFFF; }
 
-a {
-  font-size: inherit;
-  color: #0CA9E3;
-  text-decoration: none;
-  outline: none;
-  cursor: pointer;
-  transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  a:hover {
-    color: #4bc8f5; }
-  p a, strong a, .tablist__section .tablist__item a, .examples .examples__tabs .tablist__item a,
-  small a,
-  h6 a,
-  .caption-list__headline a,
-  .caption-list__list-item a,
-  .link.link--small a,
-  .legal__link a,
-  .link--small.footer-nav__link a,
-  .footer-nav__link.legal__link a,
-  .link--small.toggle a,
-  .toggle.legal__link a,
-  .link--small.overflow-container__link:hover a,
-  .overflow-container__link.legal__link:hover a,
-  .link--small.overflow-container__link.exact-active a,
-  .overflow-container__link.exact-active.legal__link a,
-  .price-table__tagline a,
-  .price-table__disclaimer a,
-  .tooltip__list-item.tooltip__label a,
-  .tag a,
-  .tablist__section .tablist a,
-  .examples .examples__tabs .tablist a,
-  .tablist__section .tablist__headline a,
-  .examples .examples__tabs .tablist__headline a,
-  .auto-complete__label a,
-  .settings-selector__label a,
-  .hero--products-application .usp--icon .usp__label a,
-  .overflow-container__label a,
-  .content--rich li a {
-    font-weight: 400; }
-
-strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item {
-  display: block;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
-  margin-bottom: 2px; }
-  p strong, strong strong, .tablist__section .tablist__item strong, .examples .examples__tabs .tablist__item strong, p .tablist__section .tablist__item, .tablist__section p .tablist__item, strong .tablist__section .tablist__item, .tablist__section strong .tablist__item, .tablist__section .tablist__item .tablist__item, p .examples .examples__tabs .tablist__item, .examples .examples__tabs p .tablist__item, strong .examples .examples__tabs .tablist__item, .examples .examples__tabs strong .tablist__item, .examples .examples__tabs .tablist__item .tablist__item {
-    display: inline; }
-  @media (min-width: 768px) {
-    strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: -5px;
-      margin-bottom: 5px; } }
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sub {
-  bottom: -0.25em; }
-
-sup {
-  top: -0.5em; }
-
 .drawer {
   position: relative;
   z-index: 1010; }
@@ -1268,6 +1227,38 @@ html {
     html {
       font-size: 16px;
       line-height: 24px; } }
+
+
+strong,
+.tablist__section .tablist__item,
+.examples .examples__tabs .tablist__item {
+  display: block; }
+  p strong, strong strong, .tablist__section .tablist__item strong, .examples .examples__tabs .tablist__item strong, p .tablist__section .tablist__item, .tablist__section p .tablist__item, strong .tablist__section .tablist__item, .tablist__section strong .tablist__item, .tablist__section .tablist__item .tablist__item, p .examples .examples__tabs .tablist__item, .examples .examples__tabs p .tablist__item, strong .examples .examples__tabs .tablist__item, .examples .examples__tabs strong .tablist__item, .examples .examples__tabs .tablist__item .tablist__item {
+    display: inline; }
+
+
+strong,
+.tablist__section .tablist__item,
+.examples .examples__tabs .tablist__item {
+  font-weight: 600; }
+
+
+strong,
+.tablist__section .tablist__item,
+.examples .examples__tabs .tablist__item {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -2px;
+  margin-bottom: 2px; }
+  @media (min-width: 768px) {
+    
+    strong,
+    .tablist__section .tablist__item,
+    .examples .examples__tabs .tablist__item {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: -5px;
+      margin-bottom: 5px; } }
 
 .icon {
   width: 1em;
@@ -1372,6 +1363,45 @@ dd {
   margin-bottom: 12px; }
   dd:last-of-type {
     margin-bottom: 0; }
+
+a {
+  font-size: inherit;
+  color: #0CA9E3;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+  a:hover {
+    color: #4bc8f5; }
+  p a, strong a, .tablist__section .tablist__item a, .examples .examples__tabs .tablist__item a,
+  small a,
+  h6 a,
+  .caption-list__headline a,
+  .caption-list__list-item a,
+  .link.link--small a,
+  .legal__link a,
+  .link--small.footer-nav__link a,
+  .footer-nav__link.legal__link a,
+  .link--small.toggle a,
+  .toggle.legal__link a,
+  .link--small.overflow-container__link:hover a,
+  .overflow-container__link.legal__link:hover a,
+  .link--small.overflow-container__link.exact-active a,
+  .overflow-container__link.exact-active.legal__link a,
+  .price-table__tagline a,
+  .price-table__disclaimer a,
+  .tooltip__list-item.tooltip__label a,
+  .tag a,
+  .tablist__section .tablist a,
+  .examples .examples__tabs .tablist a,
+  .tablist__section .tablist__headline a,
+  .examples .examples__tabs .tablist__headline a,
+  .auto-complete__label a,
+  .hero--products-application .usp--icon .usp__label a,
+  .overflow-container__label a,
+  .settings-selector__label a,
+  .content--rich li a {
+    font-weight: 400; }
 
 .link, .legal__link, .footer-nav__link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active {
   display: inline-block;
@@ -1769,7 +1799,7 @@ table th {
 
 table td small,
 table td h6, table td .caption-list__headline, table td .caption-list__list-item, table td .link.link--small, table td .legal__link, table td .link--small.footer-nav__link, table td .footer-nav__link.legal__link, table td .link--small.toggle, table td .toggle.legal__link, table td .link--small.overflow-container__link:hover, table td .overflow-container__link.legal__link:hover, table td .link--small.overflow-container__link.exact-active, table td .overflow-container__link.exact-active.legal__link, table td .price-table__tagline,
-table td .price-table__disclaimer, table td .tooltip__list-item.tooltip__label, table td .tag, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .auto-complete__label, table td .settings-selector__label, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label,
+table td .price-table__disclaimer, table td .tooltip__list-item.tooltip__label, table td .tag, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .auto-complete__label, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label, table td .settings-selector__label,
 table th small,
 table th h6,
 table th .caption-list__headline,
@@ -1797,10 +1827,10 @@ table th .tablist__section .tablist__headline,
 table th .examples .examples__tabs .tablist__headline,
 .examples .examples__tabs table th .tablist__headline,
 table th .auto-complete__label,
-table th .settings-selector__label,
 table th .hero--products-application .usp--icon .usp__label,
 .hero--products-application .usp--icon table th .usp__label,
-table th .overflow-container__label {
+table th .overflow-container__label,
+table th .settings-selector__label {
   display: block;
   color: #7F7F7F; }
 
@@ -4117,101 +4147,35 @@ table tfoot {
         font-size: 20px;
         line-height: 24px; } }
 
-.preferences-bar {
-  transform: translateY(0); }
-  .preferences-bar__button, .preferences-bar .settings-selector__edit-button {
-    background-color: transparent; }
-  .preferences-bar .auto-complete.auto-complete--small {
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: 0;
-    width: 260px; }
-    .preferences-bar .auto-complete.auto-complete--small .auto-complete__input {
-      border-color: #c6dfe8; }
-  .preferences-bar .settings-selector__edit-button {
-    color: #0CA9E3;
-    margin-top: 5px; }
-    .preferences-bar .settings-selector__edit-button:hover, .preferences-bar .settings-selector__edit-button:focus, .preferences-bar .settings-selector__edit-button:active {
-      color: #0CA9E3; }
-
-.settings {
-  width: 100%;
-  margin-bottom: 30px;
-  border: 2px solid #c6dfe8;
-  border-left: none;
-  border-right: none; }
-  @media (min-width: 480px) {
-    .settings {
-      margin-bottom: 36px; } }
-  .notification__content--centered .settings {
-    margin-left: auto;
-    margin-right: auto; }
-
-.settings-selector {
-  display: flex;
-  flex-direction: column;
-  padding: 12px 0;
-  border-bottom: 1px solid #c6dfe8; }
-  .settings-selector .form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; }
-    @media (min-width: 480px) {
-      .settings-selector .form-group {
-        flex-direction: row;
-        align-items: center; } }
-  .settings-selector__label {
-    margin-bottom: 0;
-    margin-left: 12px;
-    margin-right: 12px;
-    color: #6b797e; }
-    @media (min-width: 480px) {
-      .settings-selector__label {
-        flex-direction: row;
-        align-items: center;
-        margin-top: 5px; } }
-  .settings-selector__edit-button {
-    font-weight: 400;
-    margin-top: 5px; }
-    @media (min-width: 480px) {
-      .settings-selector__edit-button {
-        margin-top: 0; } }
-  .settings-selector:last-child {
-    margin-bottom: 0;
-    border: none; }
-
-.settings-panel {
-  text-align: left;
-  margin-top: 12px;
-  padding: 12px; }
-
-.setting:not(:last-child) {
-  margin-bottom: 18px; }
-
-.setting__description {
+.content-manageble ul, .content-manageble .hero--text .content--rich ul, .hero--text .content--rich .content-manageble ul,
+.content-manageble ol {
+  padding-left: 1em;
   font-size: 14px;
   line-height: 21px;
   margin-top: -2px;
-  margin-bottom: 23px;
-  padding-left: 30px;
-  margin-top: -6px;
-  color: #6b797e; }
-
-.selector-group {
-  display: flex;
-  flex-direction: row; }
-  @media (min-width: 480px) {
-    .selector-group {
-      margin-left: auto; } }
-
-.content-manageble ul p, .content-manageble .hero--text .content--rich ul p, .hero--text .content--rich .content-manageble ul p, .content-manageble ul strong, .content-manageble .hero--text .content--rich ul strong, .hero--text .content--rich .content-manageble ul strong, .content-manageble ul .tablist__section .tablist__item, .tablist__section .content-manageble ul .tablist__item, .content-manageble ul .examples .examples__tabs .tablist__item, .examples .examples__tabs .content-manageble ul .tablist__item,
-.content-manageble ol p,
-.content-manageble ol strong,
-.content-manageble ol .tablist__section .tablist__item,
-.tablist__section .content-manageble ol .tablist__item,
-.content-manageble ol .examples .examples__tabs .tablist__item,
-.examples .examples__tabs .content-manageble ol .tablist__item {
-  margin: 0; }
+  margin-bottom: 23px; }
+  @media (min-width: 768px) {
+    .content-manageble ul, .content-manageble .hero--text .content--rich ul, .hero--text .content--rich .content-manageble ul,
+    .content-manageble ol {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: -5px;
+      margin-bottom: 29px; } }
+  .content-manageble ul li, .content-manageble .hero--text .content--rich ul li, .hero--text .content--rich .content-manageble ul li,
+  .content-manageble ol li {
+    padding-left: 10px; }
+    @media (min-width: 768px) {
+      .content-manageble ul li, .content-manageble .hero--text .content--rich ul li, .hero--text .content--rich .content-manageble ul li,
+      .content-manageble ol li {
+        padding-left: 8px; } }
+    .content-manageble ul li p, .content-manageble .hero--text .content--rich ul li p, .hero--text .content--rich .content-manageble ul li p, .content-manageble ul li strong, .content-manageble .hero--text .content--rich ul li strong, .hero--text .content--rich .content-manageble ul li strong, .content-manageble ul li .tablist__section .tablist__item, .tablist__section .content-manageble ul li .tablist__item, .content-manageble ul li .examples .examples__tabs .tablist__item, .examples .examples__tabs .content-manageble ul li .tablist__item,
+    .content-manageble ol li p,
+    .content-manageble ol li strong,
+    .content-manageble ol li .tablist__section .tablist__item,
+    .tablist__section .content-manageble ol li .tablist__item,
+    .content-manageble ol li .examples .examples__tabs .tablist__item,
+    .examples .examples__tabs .content-manageble ol li .tablist__item {
+      margin: 0; }
 
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .colors:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
@@ -5299,6 +5263,100 @@ svg text {
 
 .hero--product .hero__linklist-link {
   margin-bottom: 6px; }
+
+.preferences-bar {
+  transform: translateY(0); }
+  .preferences-bar__button, .preferences-bar .settings-selector__edit-button {
+    background-color: transparent; }
+  @media (min-width: 768px) {
+    .preferences-bar__content-manageble ul, .preferences-bar__content-manageble .hero--text .content--rich ul, .hero--text .content--rich .preferences-bar__content-manageble ul,
+    .preferences-bar__content-manageble ol {
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: -2px;
+      margin-bottom: 23px; } }
+  .preferences-bar .auto-complete.auto-complete--small {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 260px; }
+    .preferences-bar .auto-complete.auto-complete--small .auto-complete__input {
+      border-color: #c6dfe8; }
+  .preferences-bar .settings-selector__edit-button {
+    color: #0CA9E3;
+    margin-top: 5px; }
+    .preferences-bar .settings-selector__edit-button:hover, .preferences-bar .settings-selector__edit-button:focus, .preferences-bar .settings-selector__edit-button:active {
+      color: #0CA9E3; }
+
+.settings {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid #c6dfe8;
+  border-left: none;
+  border-right: none; }
+  @media (min-width: 480px) {
+    .settings {
+      margin-bottom: 36px; } }
+  .notification__content--centered .settings {
+    margin-left: auto;
+    margin-right: auto; }
+
+.settings-selector {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  border-bottom: 1px solid #c6dfe8; }
+  .settings-selector .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    @media (min-width: 480px) {
+      .settings-selector .form-group {
+        flex-direction: row;
+        align-items: center; } }
+  .settings-selector__label {
+    margin-bottom: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #6b797e; }
+    @media (min-width: 480px) {
+      .settings-selector__label {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 5px; } }
+  .settings-selector__edit-button {
+    font-weight: 400;
+    margin-top: 5px; }
+    @media (min-width: 480px) {
+      .settings-selector__edit-button {
+        margin-top: 0; } }
+  .settings-selector:last-child {
+    margin-bottom: 0;
+    border: none; }
+
+.settings-panel {
+  text-align: left;
+  margin-top: 12px;
+  padding: 12px; }
+
+.setting:not(:last-child) {
+  margin-bottom: 18px; }
+
+.setting__description {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -2px;
+  margin-bottom: 23px;
+  padding-left: 30px;
+  margin-top: -6px;
+  color: #6b797e; }
+
+.selector-group {
+  display: flex;
+  flex-direction: row; }
+  @media (min-width: 480px) {
+    .selector-group {
+      margin-left: auto; } }
 
 /*
 * Because we have a primary and secondary font family, we need to define both

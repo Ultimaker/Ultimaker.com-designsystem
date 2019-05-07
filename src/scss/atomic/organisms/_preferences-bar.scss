@@ -10,6 +10,15 @@
         @extend .notification__button;
     }
 
+    &__content-manageble {
+        ul,
+        ol {
+            @include min-tablet() {
+                @include font-ratio-rhythm(prim-s);
+            }
+        }
+    }
+
     .auto-complete.auto-complete--small {
         text-align: left;
         margin-top: 5px;
