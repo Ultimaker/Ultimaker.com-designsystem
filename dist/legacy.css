@@ -750,6 +750,47 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .nav-assist--close:focus:not(:hover) .nav-assist__line {
   fill: #FFFFFF; }
 
+.um-components a {
+  font-size: inherit;
+  color: #0CA9E3;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+  .um-components a:hover {
+    color: #4bc8f5; }
+  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components .examples .examples__tabs .tablist__item a, .um-components small a, .um-components h6 a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .legal__link a, .um-components .link--small.footer-nav__link a, .um-components .footer-nav__link.legal__link a, .um-components .link--small.toggle a, .um-components .toggle.legal__link a, .um-components .link--small.overflow-container__link:hover a, .um-components .overflow-container__link.legal__link:hover a, .um-components .link--small.overflow-container__link.exact-active a, .um-components .overflow-container__link.exact-active.legal__link a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tooltip__list-item.tooltip__label a, .um-components .tag a, .um-components .tablist__section .tablist a, .um-components .examples .examples__tabs .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .examples .examples__tabs .tablist__headline a, .um-components .auto-complete__label a, .um-components .hero--products-application .usp--icon .usp__label a, .um-components .overflow-container__label a, .um-components .settings-selector__label a, .um-components .content--rich li a {
+    font-weight: 400; }
+
+.um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -2px;
+  margin-bottom: 2px; }
+  .um-components p strong, .um-components strong strong, .um-components .tablist__section .tablist__item strong, .um-components .examples .examples__tabs .tablist__item strong, .um-components p .tablist__section .tablist__item, .um-components .tablist__section p .tablist__item, .um-components strong .tablist__section .tablist__item, .um-components .tablist__section strong .tablist__item, .um-components .tablist__section .tablist__item .tablist__item, .um-components p .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs p .tablist__item, .um-components strong .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs strong .tablist__item, .um-components .examples .examples__tabs .tablist__item .tablist__item {
+    display: inline; }
+  @media (min-width: 768px) {
+    .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: -5px;
+      margin-bottom: 5px; } }
+
+.um-components sub,
+.um-components sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+.um-components sub {
+  bottom: -0.25em; }
+
+.um-components sup {
+  top: -0.5em; }
+
 .um-components .drawer {
   position: relative;
   z-index: 1010; }
@@ -791,26 +832,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components html {
       font-size: 16px;
       line-height: 24px; } }
-
-.um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
-  display: block; }
-  .um-components p strong, .um-components strong strong, .um-components .tablist__section .tablist__item strong, .um-components .examples .examples__tabs .tablist__item strong, .um-components p .tablist__section .tablist__item, .um-components .tablist__section p .tablist__item, .um-components strong .tablist__section .tablist__item, .um-components .tablist__section strong .tablist__item, .um-components .tablist__section .tablist__item .tablist__item, .um-components p .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs p .tablist__item, .um-components strong .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs strong .tablist__item, .um-components .examples .examples__tabs .tablist__item .tablist__item {
-    display: inline; }
-
-.um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
-  font-weight: 600; }
-
-.um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
-  margin-bottom: 2px; }
-  @media (min-width: 768px) {
-    .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: -5px;
-      margin-bottom: 5px; } }
 
 .um-components .icon {
   width: 1em;
@@ -915,18 +936,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-bottom: 12px; }
   .um-components dd:last-of-type {
     margin-bottom: 0; }
-
-.um-components a {
-  font-size: inherit;
-  color: #0CA9E3;
-  text-decoration: none;
-  outline: none;
-  cursor: pointer;
-  transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  .um-components a:hover {
-    color: #4bc8f5; }
-  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components .examples .examples__tabs .tablist__item a, .um-components small a, .um-components h6 a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .legal__link a, .um-components .link--small.footer-nav__link a, .um-components .footer-nav__link.legal__link a, .um-components .link--small.toggle a, .um-components .toggle.legal__link a, .um-components .link--small.overflow-container__link:hover a, .um-components .overflow-container__link.legal__link:hover a, .um-components .link--small.overflow-container__link.exact-active a, .um-components .overflow-container__link.exact-active.legal__link a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tooltip__list-item.tooltip__label a, .um-components .tag a, .um-components .tablist__section .tablist a, .um-components .examples .examples__tabs .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .examples .examples__tabs .tablist__headline a, .um-components .auto-complete__label a, .um-components .hero--products-application .usp--icon .usp__label a, .um-components .overflow-container__label a, .um-components .settings-selector__label a, .um-components .content--rich li a {
-    font-weight: 400; }
 
 .um-components .link, .um-components .legal__link, .um-components .footer-nav__link, .um-components .toggle, .um-components .overflow-container__link:hover, .um-components .overflow-container__link.exact-active {
   display: inline-block;
@@ -4744,6 +4753,11 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   transform: translateY(0); }
   .um-components .preferences-bar__button, .um-components .preferences-bar .settings-selector__edit-button {
     background-color: transparent; }
+  .um-components .preferences-bar__content-manageble p, .um-components .preferences-bar__content-manageble strong, .um-components .preferences-bar__content-manageble .tablist__section .tablist__item, .um-components .tablist__section .preferences-bar__content-manageble .tablist__item, .um-components .preferences-bar__content-manageble .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .preferences-bar__content-manageble .tablist__item {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: -2px;
+    margin-bottom: 23px; }
   @media (min-width: 768px) {
     .um-components .preferences-bar__content-manageble ul, .um-components .preferences-bar__content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .preferences-bar__content-manageble ul, .um-components .preferences-bar__content-manageble ol {
       font-size: 14px;

@@ -173,11 +173,11 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                            Content general title 1
                         </h3>
                          
-                        <p
-                          class="content-general__body"
+                        <div
+                          class="content-manageble content-general__body"
                         >
                           Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
-                        </p>
+                        </div>
                          
                         <a
                           class="link link--icon link--large content-general__link link link--medium"
@@ -248,11 +248,11 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                            Content general title 2
                         </h3>
                          
-                        <p
-                          class="content-general__body"
+                        <div
+                          class="content-manageble content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
-                        </p>
+                        </div>
                          
                         <a
                           class="content-general__button button"
@@ -322,11 +322,11 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                            Content general title 2
                         </h3>
                          
-                        <p
-                          class="content-general__body"
+                        <div
+                          class="content-manageble content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
-                        </p>
+                        </div>
                          
                         <a
                           class="content-general__button button"
@@ -396,11 +396,11 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                            Content general title 2
                         </h3>
                          
-                        <p
-                          class="content-general__body"
+                        <div
+                          class="content-manageble content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
-                        </p>
+                        </div>
                          
                         <a
                           class="content-general__button button"
@@ -470,11 +470,11 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                            Content general title 2
                         </h3>
                          
-                        <p
-                          class="content-general__body"
+                        <div
+                          class="content-manageble content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
-                        </p>
+                        </div>
                          
                         <a
                           class="content-general__button button"
@@ -544,11 +544,11 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                            Content general title 2
                         </h3>
                          
-                        <p
-                          class="content-general__body"
+                        <div
+                          class="content-manageble content-general__body"
                         >
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit nibh, cursus in rutrum non, sagittis quis elit. Nullam non vehicula eros. Praesent nec lacinia leo. Nam id elit quam. Integer egestas metus purus, ac tincidunt nibh pellentesque vel. Aenean ipsum enim, malesuada quis congue vel, laoreet sollicitudin metus
-                        </p>
+                        </div>
                          
                         <a
                           class="content-general__link link link--medium"
