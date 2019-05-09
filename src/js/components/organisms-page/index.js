@@ -1,7 +1,7 @@
 export {default as Brands} from 'organisms-page/brands';
 export {default as BrandsLarge} from 'organisms-page/brands-large';
 export {default as Cases} from 'organisms-page/cases';
-export {default as Colors} from 'organisms-page/colors';
+export {default as Colors} from 'organisms-page/../organisms/colors';
 export {default as Ecosystem} from 'organisms-page/ecosystem';
 export {default as Examples} from 'organisms-page/examples';
 export {default as Explore} from 'organisms-page/explore';

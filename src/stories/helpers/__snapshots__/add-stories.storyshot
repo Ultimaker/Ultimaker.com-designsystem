@@ -1850,6 +1850,130 @@ exports[`Storyshots Molecules|cards/card-product pla 1`] = `
 </section>
 `;
 
+exports[`Storyshots Organisms/colors default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="colors"
+    >
+      <div
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Lorem ipsum .. enzo nog veel meer
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            moest er in van Martin
+          </p>
+        </header>
+         
+        <div
+          class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"
+        >
+          <div
+            class="flexgrid__cell--xs-6 flexgrid__cell--sm-4"
+          >
+            <div
+              class="colors__swatches"
+            >
+              <ul
+                class="list colors__list"
+              >
+                <li
+                  class="list__item colors__list-item color--selected"
+                >
+                  <div
+                    class="color"
+                  >
+                    <div
+                      class="color__spec color__spec--show"
+                    >
+                      <!---->
+                    </div>
+                     
+                    <div
+                      class="color__spec color__spec--swatch"
+                      style="background: rgb(255, 20, 147);"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="list__item colors__list-item"
+                >
+                  <div
+                    class="color"
+                  >
+                    <div
+                      class="color__spec color__spec--show"
+                    >
+                      <!---->
+                    </div>
+                     
+                    <div
+                      class="color__spec color__spec--swatch"
+                      style="background: rgb(128, 0, 128);"
+                    />
+                  </div>
+                </li>
+              </ul>
+               
+              <div
+                class="cta__block"
+              >
+                <a
+                  class="link--primary button cta__link"
+                  href="#/en/quote"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Find a reseller
+    
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+           
+          <div
+            class="flexgrid__cell--sm-8 flexgrid__cell--xs-6"
+          >
+            <img
+              alt="Ultimaker Tough PLA print"
+              class="img--contain colors__image img--loading"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              type="Image"
+            />
+          </div>
+        </div>
+         
+        <footer
+          class="footer-block"
+          cta="[object Object]"
+        >
+          <!---->
+        </footer>
+      </div>
+    </article>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Organisms|hero/Hero product default 1`] = `
 <section
   class="story"
