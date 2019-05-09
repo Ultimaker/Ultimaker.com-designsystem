@@ -1,0 +1,28 @@
+<article class="colors">
+    <div class="container">
+        <header-block :title="title" :subtitle="subtitle" />
+
+        <div class="flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row">
+
+            <div class="flexgrid__cell--xs-6 flexgrid__cell--sm-4">
+                <div class="colors__swatches">
+                    <ul class="list colors__list">
+                        <li class="list__item colors__list-item" :class="{'color--selected': color === activeColor }"
+                            v-for="(color, index) in colorList" @click="setActiveColor(index)">
+                                <color v-if="color.isTransparent" />
+                                <color v-else :background="color.rgbHex" />
+                        </li>
+                    </ul>
+
+                    <cta-block :ctas="colorCtas.ctas"></cta-block>
+                </div>
+            </div>
+
+            <div class="flexgrid__cell--sm-8 flexgrid__cell--xs-6" v-if="activeColor.exampleImage">
+                <c-image class="colors__image" v-bind="activeColor.exampleImage" />
+            </div>
+        </div>
+
+        <footer-block :cta="ctas" />
+    </div>
+</article>

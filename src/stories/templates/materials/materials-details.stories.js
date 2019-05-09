@@ -6,7 +6,7 @@ import subNavigationKnobs from '../../organisms/subnavigation/subnavigation.stor
 import {data as heroProduct} from 'organisms/hero-product/data/hero-product.data';
 import tabbedContentKnobs from '../../organisms/tabbed-content/tabbed-content.knobs.stories';
 import examplesKnobs from '../../organisms/examples/examples.knobs.stories';
-import colorsKnobs from '../../organisms/colors/colors.knobs.stories';
+import {data as colors} from 'organisms/colors/data/colors.data';
 
 storiesOf('templates|materials', module)
     .addDecorator(withKnobs)
@@ -22,7 +22,7 @@ storiesOf('templates|materials', module)
                     heroProduct: {default: heroProduct.default},
                     tabbedContent: {default: tabbedContentKnobs().TabbedContent},
                     examples: {default: examplesKnobs().examples},
-                    colors: {default: colorsKnobs().colors}
+                    colors: {default: colors.default}
                 },
                 template: require('./materials-details.stories.html')
             };
