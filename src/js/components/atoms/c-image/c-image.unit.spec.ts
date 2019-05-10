@@ -77,6 +77,15 @@ describe('components', () => {
                     expect(vm.$el.src).toContain(`w=${ desiredWidth }`);
                     done();
                 });
+
+                it('should reset the loading state when the url has changed', async (done) => {
+                    vm.urlChanged();
+                    expect(vm.ready).toBeFalsy();
+                    await vm.$nextTick();
+                    expect(vm.ready).toBeTruthy();
+                    expect(vm.imageLoaded).toBeFalsy();
+                    done();
+                });
             });
         });
     });
