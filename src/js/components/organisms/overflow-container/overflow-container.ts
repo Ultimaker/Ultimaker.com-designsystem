@@ -4,7 +4,7 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 
 @Component({
     name: 'OverflowContainer',
-    template: require('./overflow-container.html'),
+    template: require('./overflow-container.vue.html'),
 })
 
 export default class OverflowContainer extends Vue {

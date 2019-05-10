@@ -2,7 +2,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 
 @Component({
     name: 'Tooltip',
-    template: require('./tooltip.html'),
+    template: require('./tooltip.vue.html'),
 })
 
 export default class Tooltip extends Vue {

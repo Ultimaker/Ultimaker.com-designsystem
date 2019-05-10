@@ -3,7 +3,7 @@ import YoutubeConstants from 'constants/youtube';
 
 @Component({
     name: 'youtube-video',
-    template: require('./youtube-video.html'),
+    template: require('./youtube-video.vue.html'),
 })
 
 export default class YoutubeVideo extends Vue {

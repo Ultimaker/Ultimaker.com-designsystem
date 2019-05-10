@@ -5,7 +5,7 @@ import { Overview as OverviewInterface } from '@ultimaker/ultimaker.com-model-de
 
 @Component({
     name: 'overview',
-    template: require('./overview.html'),
+    template: require('./overview.vue.html'),
 })
 
 export default class Overview extends Vue implements OverviewInterface {

@@ -4,7 +4,7 @@ import { TabbedContent  as TabbedContentInterface } from '@ultimaker/ultimaker.c
 
 @Component({
     name: 'TabbedContent',
-    template: require('./tabbed-content.html'),
+    template: require('./tabbed-content.vue.html'),
 })
 
 export default class TabbedContent extends Vue implements TabbedContentInterface {

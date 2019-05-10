@@ -11,7 +11,7 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 
 @Component({
     name: 'faux-vertical-scroll',
-    template: require('./faux-vertical-scroll.html'),
+    template: require('./faux-vertical-scroll.vue.html'),
 })
 
 export default class FauxVerticalScroll extends Vue {

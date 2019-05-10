@@ -7,7 +7,7 @@ import { PageHeader as PageHeaderInterface } from '@ultimaker/ultimaker.com-mode
 
 @Component({
     name: 'page-header',
-    template: require('./page-header.html'),
+    template: require('./page-header.vue.html'),
 })
 
 export default class PageHeader extends Vue implements PageHeaderInterface {

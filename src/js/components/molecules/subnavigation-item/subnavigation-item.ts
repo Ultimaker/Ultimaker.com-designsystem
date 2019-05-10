@@ -3,7 +3,7 @@ import { SubNavigationItem as ISubNavigationItem } from '@ultimaker/ultimaker.co
 
 @Component({
     name: 'SubNavigationItem',
-    template: require('./subnavigation-item.html'),
+    template: require('./subnavigation-item.vue.html'),
 })
 
 export default class SubNavigationItem extends Vue implements ISubNavigationItem {

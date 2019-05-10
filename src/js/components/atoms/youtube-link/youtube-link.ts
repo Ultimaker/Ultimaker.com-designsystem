@@ -5,7 +5,7 @@ import { YoutubeLink as YoutubeLinkInterface } from '@ultimaker/ultimaker.com-mo
 
 @Component({
     name: 'YoutubeLink',
-    template: require('./youtube-link.html'),
+    template: require('./youtube-link.vue.html'),
 })
 export default class YoutubeLink extends BaseLink implements YoutubeLinkInterface {
     @Prop({ type: String, default: 'play-video' }) icon!: YoutubeLinkInterface['icon'];

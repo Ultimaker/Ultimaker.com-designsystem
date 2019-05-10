@@ -3,7 +3,7 @@ import { ITagProps, ITag } from './tag.models';
 
 @Component({
     name: 'tag',
-    template: require('./tag.html'),
+    template: require('./tag.vue.html'),
 })
 
 export default class Tag extends Vue implements ITagProps {

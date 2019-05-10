@@ -3,7 +3,7 @@ import { HeroCover as IHeroCover } from '@ultimaker/ultimaker.com-model-definiti
 
 @Component({
     name: 'hero-cover',
-    template: require('./hero-cover.html'),
+    template: require('./hero-cover.vue.html'),
 })
 
 export default class HeroCover extends Vue implements IHeroCover {

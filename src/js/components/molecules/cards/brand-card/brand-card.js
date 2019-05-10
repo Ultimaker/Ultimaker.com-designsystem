@@ -1,6 +1,6 @@
 export default {
     name: 'brand-card',
-    template: require('./brand-card.vue.html'),
+    template: require('./brand-card.html'),
     props: {
         body: {
             type: String,

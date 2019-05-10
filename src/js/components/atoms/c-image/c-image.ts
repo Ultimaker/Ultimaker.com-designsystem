@@ -7,7 +7,7 @@ import { imageConstants } from './c-image.constants';
 
 @Component({
     name: 'c-image',
-    template: require('./c-image.html'),
+    template: require('./c-image.vue.html'),
 })
 
 export default class CImage extends Mixins(InView) implements ICImageProps {

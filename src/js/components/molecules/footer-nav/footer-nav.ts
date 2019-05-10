@@ -4,7 +4,7 @@ import { NavigationItem as INavigationItem } from '@ultimaker/ultimaker.com-mode
 
 @Component({
     name: 'footer-nav',
-    template: require('./footer-nav.html'),
+    template: require('./footer-nav.vue.html'),
 })
 export default class FooterNav extends Vue {
     @Prop({ type: Array, required: true }) navigation!: INavigationItem[];
