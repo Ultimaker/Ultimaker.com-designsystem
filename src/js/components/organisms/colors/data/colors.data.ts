@@ -32,6 +32,15 @@ export const data = {
                 },
             ],
         },
-        ctas: {},
+        ctas: {
+            type: 'Ctas',
+            ctas: [
+                {
+                    type: 'ContentButton',
+                    label: 'Do something else',
+                    url: '/en/quote',
+                },
+            ],
+        },
     },
 };
