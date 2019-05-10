@@ -1964,9 +1964,26 @@ exports[`Storyshots Organisms/colors default 1`] = `
          
         <footer
           class="footer-block"
-          cta="[object Object]"
         >
-          <!---->
+          <div
+            block="overview"
+            class="cta__block cta__block--footer"
+          >
+            <a
+              class="link--primary button cta__link"
+              href="#/en/quote"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Do something else
+    
+              </span>
+            </a>
+          </div>
         </footer>
       </div>
     </article>
