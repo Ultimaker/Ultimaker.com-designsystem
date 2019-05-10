@@ -4,7 +4,7 @@ import { OverviewUBR as OverviewUBRInterface } from '@ultimaker/ultimaker.com-mo
 
 @Component({
     name: 'overview-ubr',
-    template: require('./overview-ubr.html'),
+    template: require('./overview-ubr.vue.html'),
 })
 
 export default class OverviewUBR extends Vue implements OverviewUBRInterface {

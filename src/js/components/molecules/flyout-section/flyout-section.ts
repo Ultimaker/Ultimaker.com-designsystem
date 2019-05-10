@@ -3,7 +3,7 @@ import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist
 
 @Component({
     name: 'flyout-section',
-    template: require('./flyout-section.html'),
+    template: require('./flyout-section.vue.html'),
 })
 
 export default class Flyout extends Vue  {

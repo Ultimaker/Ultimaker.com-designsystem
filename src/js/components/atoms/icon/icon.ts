@@ -4,7 +4,7 @@ const defaultIconUrl = '/static/icons/iconset.svg';
 
 @Component({
     name: 'icon',
-    template: require('./icon.html'),
+    template: require('./icon.vue.html'),
 })
 export default class Icon extends Vue {
     @Prop({ type: String, required: true }) iconName!: string;

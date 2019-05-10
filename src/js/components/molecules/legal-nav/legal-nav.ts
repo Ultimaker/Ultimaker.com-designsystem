@@ -3,7 +3,7 @@ import { LegalNavigation as ILegalNavigation } from '@ultimaker/ultimaker.com-mo
 
 @Component({
     name: 'legal-nav',
-    template: require('./legal-nav.html'),
+    template: require('./legal-nav.vue.html'),
 })
 export default class LegalNav extends Vue implements ILegalNavigation {
     @Prop({ type: Array, required: true }) navigation!: ILegalNavigation['navigation'];

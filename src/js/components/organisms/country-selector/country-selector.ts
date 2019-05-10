@@ -7,7 +7,7 @@ import { CountrySelectorInterface } from './country-selector-models';
 
 @Component({
     name: 'country-selector',
-    template: require('./country-selector.html'),
+    template: require('./country-selector.vue.html'),
 })
 export default class CountrySelector extends Vue implements CountrySelectorInterface {
     @Prop({ type: Object, default: null }) value!: AutoCompleteItem;

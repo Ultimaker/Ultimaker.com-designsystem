@@ -2,7 +2,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 
 @Component({
     name: 'LiItem',
-    template: require('./template.html'),
+    template: require('./template.vue.html'),
 })
 
 export default class LiItem extends Vue {

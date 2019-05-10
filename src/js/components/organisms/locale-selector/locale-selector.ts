@@ -6,7 +6,7 @@ import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definit
 
 @Component({
     name: 'locale-selector',
-    template: require('./locale-selector.html'),
+    template: require('./locale-selector.vue.html'),
 })
 export default class LocaleSelector extends Vue implements CountrySelectorInterface {
     @Prop({ type: String, default: null }) label!: CountryAutoCompleteField['label'];

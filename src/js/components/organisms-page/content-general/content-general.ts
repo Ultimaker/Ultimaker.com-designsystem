@@ -4,7 +4,7 @@ import { ContentGeneral  as IContentGeneral } from '@ultimaker/ultimaker.com-mod
 
 @Component({
     name: 'ContentGeneral',
-    template: require('./content-general.html'),
+    template: require('./content-general.vue.html'),
 })
 
 export default class GeneralContent extends Vue implements IContentGeneral {

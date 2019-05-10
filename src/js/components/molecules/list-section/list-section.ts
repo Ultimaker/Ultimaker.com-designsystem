@@ -11,7 +11,7 @@ import Events from 'constants/events';
 
 @Component({
     name: 'ListSection',
-    template: require('./list-section.html'),
+    template: require('./list-section.vue.html'),
 })
 
 export default class ListSection extends Vue implements IListSection {

@@ -3,7 +3,7 @@ import { TweenLite, TimelineLite, Power2 } from 'gsap';
 
 @Component({
     name: 'modal',
-    template: require('./modal.html'),
+    template: require('./modal.vue.html'),
 })
 
 export default class Modal extends Vue {

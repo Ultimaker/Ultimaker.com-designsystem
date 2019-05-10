@@ -3,7 +3,7 @@ import { PageFooter as IPageFooter } from '@ultimaker/ultimaker.com-model-defini
 
 @Component({
     name: 'page-footer',
-    template: require('./page-footer.html'),
+    template: require('./page-footer.vue.html'),
 })
 
 export default class PageFooter extends Vue implements IPageFooter {

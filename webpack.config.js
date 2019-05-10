@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const production = process.env.NODE_ENV === 'production';
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 function resolve(dir) {
     return path.join(__dirname, dir);
@@ -25,7 +26,7 @@ const webpackConfig = {
         hints: false
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.vue', '.json'],
+        extensions: ['.ts', '.tsx', '.js', '.vue', '.json', '.vue.html'],
         modules: [
             resolve('src'),
             resolve('node_modules')
@@ -64,10 +65,11 @@ const webpackConfig = {
             },
             {
                 test: /\.vue$/,
-                loader: 'vue-loader',
-                options: {
-                    loaders: {}
-                }
+                loader: 'vue-loader'
+            },
+            {
+                test: /\.vue\.html$/,
+                loader: ['html-loader', 'vue-loader']
             },
             {
                 test: /\.js$/,
@@ -124,7 +126,9 @@ const webpackConfig = {
             }
         ]
     },
-    plugins: []
+    plugins: [
+        new VueLoaderPlugin()
+    ]
 };
 
 if (production) {

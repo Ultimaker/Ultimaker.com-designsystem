@@ -4,7 +4,7 @@ import ResponsivePictureSource from './responsive-picture-source';
 
 @Component({
     name: 'responsive-picture',
-    template: require('./responsive-picture.html'),
+    template: require('./responsive-picture.vue.html'),
     components: {
         ResponsivePictureSource,
     },

@@ -2,7 +2,7 @@ import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 
 @Component({
     name: 'nav-assist',
-    template: require('./nav-assist.html'),
+    template: require('./nav-assist.vue.html'),
 })
 
 export default class NavAssist extends Vue {

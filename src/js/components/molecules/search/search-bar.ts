@@ -3,7 +3,7 @@ import { Search } from '@ultimaker/ultimaker.com-model-definitions/dist/molecule
 
 @Component({
     name: 'search-bar',
-    template: require('./search-bar.html'),
+    template: require('./search-bar.vue.html'),
 })
 
 export default class SearchBar extends Vue implements Search {

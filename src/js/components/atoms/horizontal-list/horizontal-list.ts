@@ -3,7 +3,7 @@ import { IHorizontalListProps, IHorizontalListItem } from './horizontal-list.mod
 
 @Component({
     name: 'horizontal-list',
-    template: require('./horizontal-list.html'),
+    template: require('./horizontal-list.vue.html'),
 })
 
 export default class HorizontalList  extends Vue implements IHorizontalListProps {

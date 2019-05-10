@@ -9,7 +9,7 @@ interface TabImplementationInterface extends TabInterface {
 
 @Component({
     name: 'Tab',
-    template: require('./tab.html'),
+    template: require('./tab.vue.html'),
 })
 
 export default class Tab extends Vue implements TabImplementationInterface {

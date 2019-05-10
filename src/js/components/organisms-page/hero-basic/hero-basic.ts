@@ -3,7 +3,7 @@ import { HeroBasic as IHeroBasic } from '@ultimaker/ultimaker.com-model-definiti
 
 @Component({
     name: 'hero-basic',
-    template: require('./hero-basic.html'),
+    template: require('./hero-basic.vue.html'),
 })
 
 export default class HeroBasic extends Vue implements IHeroBasic {

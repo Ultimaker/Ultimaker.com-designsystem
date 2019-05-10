@@ -3,7 +3,7 @@ import Events from 'constants/events';
 
 @Component({
     name: 'base-link',
-    template: require('./base-link.html'),
+    template: require('./base-link.vue.html'),
 })
 
 export default class BaseLink extends Vue {

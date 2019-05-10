@@ -9,7 +9,7 @@ import { Tab as TabInterface } from '@ultimaker/ultimaker.com-model-definitions/
 
 @Component({
     name: 'Tabs',
-    template: require('./tabs.html'),
+    template: require('./tabs.vue.html'),
 })
 
 export default class Tabs extends Vue {

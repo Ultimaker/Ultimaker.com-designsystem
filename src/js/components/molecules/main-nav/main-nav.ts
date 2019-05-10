@@ -7,7 +7,7 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 
 @Component({
     name: 'main-nav',
-    template: require('./main-nav.html'),
+    template: require('./main-nav.vue.html'),
 })
 
 export default class MainNav extends Vue  {

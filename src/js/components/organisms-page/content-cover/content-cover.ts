@@ -3,7 +3,7 @@ import { ContentCover  as IContentCover } from '@ultimaker/ultimaker.com-model-d
 
 @Component({
     name: 'ContentCover',
-    template: require('./content-cover.html'),
+    template: require('./content-cover.vue.html'),
 })
 
 export default class GeneralContent extends Vue implements IContentCover {
