@@ -1,4 +1,4 @@
-import { Component, Prop, Vue, Watch, Mixins } from 'vue-property-decorator';
+import { Component, Prop, Watch, Mixins } from 'vue-property-decorator';
 import { FocusArea, ICImageProps, ImageFormat, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
 import { InView } from 'js/mixins/in-view';
 import BrowserCapabilities from 'utils/browser-capabilities';
@@ -43,7 +43,6 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
     backgroundColor!: string | null;
 
     viewportUtil = new ViewportUtil();
-    thumbnailLoaded: boolean = false;
     imageLoaded: boolean = false;
     ready:boolean = false;
     width: number = 0;
@@ -56,13 +55,25 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
 
         await this.calculateDimensions(true);
         this.ready = true;
-
-        this.$el.addEventListener('load', this.thumbnailLoadHandler);
     }
 
     beforeDestroy() {
         this.viewportUtil.removeResizeHandler(this.resizeHandler);
         this.viewportUtil.removeScrollHandler(this.resizeHandler);
+    }
+
+    @Watch('url')
+    async urlChanged() {
+        // replaces previous image with tinyGif
+        this.ready = false;
+        this.$nextTick(() => this.ready = true);
+
+        // reset state
+        this.imageLoaded = false;
+
+        if (this.inView) {
+            await this.inViewWatcher(true);
+        }
     }
 
     get classList() {
@@ -174,11 +185,6 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
 
     resizeHandler() {
         this.calculateDimensions();
-    }
-
-    thumbnailLoadHandler() {
-        this.$el.removeEventListener('load', this.thumbnailLoadHandler);
-        this.thumbnailLoaded = true;
     }
 
     imageLoadHandler() {
