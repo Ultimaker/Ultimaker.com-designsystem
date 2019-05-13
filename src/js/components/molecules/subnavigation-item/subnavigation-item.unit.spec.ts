@@ -31,19 +31,6 @@ describe('components', () => {
                 expect(vm.$el).toBeDefined();
                 vm.$destroy();
             });
-
-            it('should not render the proper items', () => {
-                const vm = mount();
-                expect(vm.$el.childElementCount).toBe(2);
-
-                if (vm.$el.hasChildNodes()) {
-                    vm.$el.childNodes.forEach((child) => {
-                        expect(['DIV', 'P']).toContain(child.nodeName);
-                    });
-                }
-
-                vm.$destroy();
-            });
         });
     });
 });
