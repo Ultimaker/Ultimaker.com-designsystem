@@ -249,23 +249,23 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .colors .colors__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .colors .colors__list, .list-section-list, .hero--product .hero__linklist {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist {
   list-style: none; }
 
 .list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .tooltip__list-item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
-.content-manageble ol li, .colors .colors__list-item {
+.content-manageble ol li {
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .card > :last-child, .card__content > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child {
+.block > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .card > :last-child, .card__content > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child {
   margin-bottom: 0; }
 
-.hero--products .hero__link--large, .hero--products-application .hero__link--large, .examples .examples__link--large, .colors .colors__link--large {
+.hero--products .hero__link--large, .hero--products-application .hero__link--large, .examples .examples__link--large {
   margin-bottom: 0; }
 
 .clear {
@@ -3834,6 +3834,9 @@ table tfoot {
   z-index: 100;
   transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
 
+.color__icon {
+  display: block; }
+
 .color__spec--title,
 .color__spec--code,
 .color__spec--weight,
@@ -4148,7 +4151,7 @@ table tfoot {
     .examples .examples__tabs .content-manageble ol li .tablist__item {
       margin: 0; }
 
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .colors:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
+main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
 .hero__image {
@@ -4742,67 +4745,6 @@ svg text {
 [class^="flexgrid__cell"]:last-child .examples__card {
   margin-bottom: 0; }
 
-.colors .colors__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0;
-  margin-left: 0;
-  padding-left: 0;
-  margin-bottom: 18px; }
-  @media (min-width: 768px) {
-    .colors .colors__list {
-      margin-bottom: 23px; } }
-
-.colors .colors__list-item {
-  position: relative;
-  margin: 0 12px 12px 0;
-  padding-left: 0; }
-
-.colors .colors__image {
-  transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  @media (max-width: 767px) {
-    .colors .colors__image {
-      margin-bottom: 36px; } }
-  .colors .colors__image--loading {
-    opacity: 0; }
-
-.colors .colors__tooltip {
-  position: absolute;
-  display: block;
-  opacity: 0;
-  left: -1000vw;
-  transform: translate(calc((50% - 24px) * -1), calc(-100% - 15px));
-  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s, left 0s 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-
-.colors .hit-area:hover .colors__tooltip,
-.colors .hit-area:active .colors__tooltip,
-.colors .hit-area:focus .colors__tooltip {
-  opacity: 1;
-  left: 0;
-  transform: translate(calc((50% - 24px) * -1), calc(-100% - 9px));
-  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s, left 0s cubic-bezier(0.23, 1, 0.32, 1); }
-
-.colors .hit-area:hover .push--left,
-.colors .hit-area:active .push--left,
-.colors .hit-area:focus .push--left {
-  left: -48px; }
-  .colors .hit-area:hover .push--left:after,
-  .colors .hit-area:active .push--left:after,
-  .colors .hit-area:focus .push--left:after {
-    left: calc(100% - 36px); }
-
-.colors .hit-area:hover .push--right,
-.colors .hit-area:active .push--right,
-.colors .hit-area:focus .push--right {
-  left: 48px; }
-  .colors .hit-area:hover .push--right:after,
-  .colors .hit-area:active .push--right:after,
-  .colors .hit-area:focus .push--right:after {
-    left: 12px; }
-
-.colors .hit-area:focus {
-  outline: none; }
-
 .explore__container {
   position: relative; }
 
@@ -5333,6 +5275,29 @@ svg text {
   @media (min-width: 480px) {
     .selector-group {
       margin-left: auto; } }
+
+.colors .colors__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .colors .colors__list {
+      margin-bottom: 23px; } }
+
+.colors .colors__list-item {
+  position: relative;
+  margin: 0 12px 12px 0;
+  padding-left: 0; }
+
+.colors .colors__image {
+  transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+  @media (max-width: 767px) {
+    .colors .colors__image {
+      margin-bottom: 36px; } }
+  .colors .colors__image--loading {
+    opacity: 0; }
 
 /*
 * Because we have a primary and secondary font family, we need to define both

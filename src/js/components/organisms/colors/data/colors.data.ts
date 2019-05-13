@@ -5,7 +5,7 @@ export const data = {
         colorList: [
             {
                 rgbHex: '#ff1493',
-                transparency: 100,
+                opacity: 100,
                 exampleImage: {
                     alt: 'Ultimaker #ff1493',
                     mimeType: 'image/jpeg',
@@ -15,7 +15,7 @@ export const data = {
             },
             {
                 rgbHex: '#800080',
-                transparency: 100,
+                opacity: 100,
                 exampleImage: {
                     alt: 'Ultimaker #800080',
                     mimeType: 'image/jpeg',
@@ -25,7 +25,7 @@ export const data = {
             },
             {
                 rgbHex: '#000000',
-                transparency: 10,
+                opacity: 10,
                 exampleImage: {
                     alt: 'Ultimaker transparent',
                     mimeType: 'image/jpeg',
@@ -35,7 +35,7 @@ export const data = {
             },
             {
                 rgbHex: '#000000',
-                transparency: 60,
+                opacity: 60,
                 exampleImage: {
                     alt: 'Ultimaker transparent',
                     mimeType: 'image/jpeg',

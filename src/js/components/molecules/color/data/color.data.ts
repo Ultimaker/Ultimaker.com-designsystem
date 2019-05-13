@@ -1,10 +1,14 @@
 export const data = {
     default: {
         rgbHex: '#ff1493',
-        transparency: 100,
+        opacity: 100,
     },
     transparent: {
         rgbHex: '#800080',
-        transparency: 50,
+        opacity: 50,
+    },
+    backend: {
+        rgbHex: 'FF5A5A',
+        opacity: 100,
     },
 };

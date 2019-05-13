@@ -18,7 +18,7 @@ const getStory = (type) => {
             },
             props: {
                 rgbHex: { default: knobs.rgbHex },
-                transparency: { default: knobs.transparency },
+                opacity: { default: knobs.opacity },
             },
             template: require('./color.html'),
         };
