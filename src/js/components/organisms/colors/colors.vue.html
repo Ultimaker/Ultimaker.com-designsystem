@@ -6,8 +6,8 @@
 
             <div class="flexgrid__cell--xs-6 flexgrid__cell--sm-4">
                 <div class="colors__swatches">
-                    <ul class="list colors__list">
-                        <li class="list__item colors__list-item" :class="{'color--selected': color === activeColor }"
+                    <ul class="colors__list">
+                        <li class="colors__list-item" :class="{'color--selected': color === activeColor }"
                             v-for="(color, index) in colorList" @click="setActiveColor(index)" tabindex="0">
                                 <color v-if="color.isTransparent" />
                                 <color v-else :background="color.rgbHex" />
