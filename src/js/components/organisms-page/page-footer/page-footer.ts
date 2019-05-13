@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { PageFooter as IPageFooter } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/page-footer/PageFooter';
+import WithRender from './page-footer.vue.html';
 
+@WithRender
 @Component({
     name: 'page-footer',
-    template: require('./page-footer.vue.html'),
 })
 
 export default class PageFooter extends Vue implements IPageFooter {

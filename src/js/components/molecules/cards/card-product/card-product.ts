@@ -1,9 +1,10 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { CardProduct as ICardProduct } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cards/CardProduct';
+import WithRender from './card-product.vue.html';
 
+@WithRender
 @Component({
     name: 'CardProduct',
-    template: require('./card-product.vue.html'),
 })
 
 export default class CardProduct extends Vue implements ICardProduct {

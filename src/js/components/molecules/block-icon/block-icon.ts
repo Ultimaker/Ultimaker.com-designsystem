@@ -1,9 +1,10 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { BlockIcon as IBlockIcon } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/blocks/BlockIcon';
+import WithRender from './block-icon.vue.html';
 
+@WithRender
 @Component({
     name: 'BlockIcon',
-    template: require('./block-icon.vue.html'),
 })
 
 export default class BlockIcon extends Vue implements IBlockIcon {

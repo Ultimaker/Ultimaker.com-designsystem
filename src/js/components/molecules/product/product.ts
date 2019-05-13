@@ -1,10 +1,11 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import { ProductProps } from './product.models';
+import WithRender from './product.vue.html';
 
+@WithRender
 @Component({
     name: 'Product',
-    template: require('./product.vue.html'),
 })
 
 export default class Product extends Vue implements ProductProps {

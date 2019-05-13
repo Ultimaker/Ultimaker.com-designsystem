@@ -1,9 +1,10 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { SubNavigationItem as ISubNavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/SubNavigationItem';
+import WithRender from './subnavigation-item.vue.html';
 
+@WithRender
 @Component({
     name: 'SubNavigationItem',
-    template: require('./subnavigation-item.vue.html'),
 })
 
 export default class SubNavigationItem extends Vue implements ISubNavigationItem {

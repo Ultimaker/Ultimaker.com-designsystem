@@ -1,8 +1,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import WithRender from './template.vue.html';
 
+@WithRender
 @Component({
     name: 'SpanLabel',
-    template: require('./template.vue.html'),
 })
 
 export default class SpanLabel  extends Vue {

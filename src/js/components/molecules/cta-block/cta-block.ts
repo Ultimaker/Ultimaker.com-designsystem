@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { CtaBlockProps } from './cta-block.models';
+import WithRender from './cta-block.vue.html';
 
+@WithRender
 @Component({
     name: 'cta-block',
-    template: require('./cta-block.vue.html'),
 })
 
 export default class CtaBlock extends Vue implements CtaBlockProps {

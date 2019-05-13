@@ -1,9 +1,10 @@
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 import Events from 'constants/events';
+import WithRender from './base-link.vue.html';
 
+@WithRender
 @Component({
     name: 'base-link',
-    template: require('./base-link.vue.html'),
 })
 
 export default class BaseLink extends Vue {

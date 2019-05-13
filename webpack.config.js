@@ -69,7 +69,7 @@ const webpackConfig = {
             },
             {
                 test: /\.vue\.html$/,
-                loader: ['html-loader', 'vue-loader']
+                loader: 'vue-template-loader'
             },
             {
                 test: /\.js$/,
@@ -99,7 +99,8 @@ const webpackConfig = {
             },
             {
                 test: /\.html$/,
-                use: 'html-loader'
+                use: 'html-loader',
+                exclude: [/\.vue\.html$/]
             },
             {
                 test: /\.(sass|scss)$/,
@@ -127,7 +128,7 @@ const webpackConfig = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin()
+     //   new VueLoaderPlugin()
     ]
 };
 

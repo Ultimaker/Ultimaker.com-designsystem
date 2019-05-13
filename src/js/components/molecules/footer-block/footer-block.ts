@@ -1,8 +1,9 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import WithRender from './footer-block.vue.html';
 
+@WithRender
 @Component({
     name: 'FooterBlock',
-    template: require('./footer-block.vue.html'),
 })
 
 export default class FooterBlock extends Vue {

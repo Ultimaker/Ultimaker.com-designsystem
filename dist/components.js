@@ -1,4 +1,4 @@
-define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","gsap/Draggable","gsap/TweenLite.js","vuex"], function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__3__, __WEBPACK_EXTERNAL_MODULE__9__, __WEBPACK_EXTERNAL_MODULE__13__, __WEBPACK_EXTERNAL_MODULE__14__, __WEBPACK_EXTERNAL_MODULE__15__, __WEBPACK_EXTERNAL_MODULE__16__, __WEBPACK_EXTERNAL_MODULE__17__, __WEBPACK_EXTERNAL_MODULE__18__, __WEBPACK_EXTERNAL_MODULE__19__, __WEBPACK_EXTERNAL_MODULE__20__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__212__, __WEBPACK_EXTERNAL_MODULE__214__, __WEBPACK_EXTERNAL_MODULE__320__) { return /******/ (function(modules) { // webpackBootstrap
+define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","gsap/Draggable","gsap/TweenLite.js","vuex"], function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__3__, __WEBPACK_EXTERNAL_MODULE__9__, __WEBPACK_EXTERNAL_MODULE__16__, __WEBPACK_EXTERNAL_MODULE__17__, __WEBPACK_EXTERNAL_MODULE__18__, __WEBPACK_EXTERNAL_MODULE__19__, __WEBPACK_EXTERNAL_MODULE__20__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__110__, __WEBPACK_EXTERNAL_MODULE__111__, __WEBPACK_EXTERNAL_MODULE__112__, __WEBPACK_EXTERNAL_MODULE__214__, __WEBPACK_EXTERNAL_MODULE__216__, __WEBPACK_EXTERNAL_MODULE__320__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -81,7 +81,7 @@ define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","c
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -527,7 +527,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _baseLink = __webpack_require__(125);
+var _baseLink = __webpack_require__(128);
 
 var _baseLink2 = _interopRequireDefault(_baseLink);
 
@@ -548,7 +548,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _vue = __webpack_require__(13);
+var _vue = __webpack_require__(16);
 
 var _vue2 = _interopRequireDefault(_vue);
 
@@ -706,6 +706,57 @@ exports.default = {
 
 /***/ }),
 /* 11 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"link link--icon link--large",attrs:{"href":_vm.youtubeUrl,"target":"_blank"},on:{"click":function($event){$event.preventDefault();return _vm.triggerClick($event)}}},[_c('icon',{attrs:{"icon-name":_vm.icon}}),_vm._v(" "),_c('span',{staticClass:"link__underline"},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")]),_vm._v(" "),(_vm.videoVisible)?_c('modal',{staticClass:"modal--video",on:{"close":_vm.toggleVideoVisible}},[_c('youtube-video',{attrs:{"video-id":_vm.youtubeId}})],1):_vm._e()],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{staticClass:"tag-list__list list"},_vm._l((_vm.tags),function(tag){return _c('li',{staticClass:"tag-list__item list_item"},[_c('tag',{attrs:{"tag":tag}})],1)}),0)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"locale-selector"},[_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(!_vm.countrySelectorOpen),expression:"!countrySelectorOpen"}],ref:"countrySelectorToggle",staticClass:"icon-button--small locale-selector__edit--buton",attrs:{"icon-name":"geo","aria-label":_vm.currentCountryAriaLabel},on:{"click":_vm.toggleCountrySelector}},[_vm._v("\n        "+_vm._s(_vm.currentCountryLabel)+"\n    ")]),_vm._v(" "),_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(_vm.countrySelectorOpen),expression:"countrySelectorOpen"}],staticClass:"icon-button--small locale-selector__edit--buton",attrs:{"icon-name":"geo","aria-label":"change your country"}}),_vm._v(" "),(_vm.ready)?_c('country-selector',_vm._b({directives:[{name:"show",rawName:"v-show",value:(_vm.countrySelectorOpen),expression:"countrySelectorOpen"}],ref:"countrySelector",staticClass:"footer__country-selector",on:{"close":_vm.toggleCountrySelector,"input":_vm.setCountry},model:{value:(_vm.countryInput),callback:function ($$v) {_vm.countryInput=$$v},expression:"countryInput"}},'country-selector',_vm.$props,false)):_vm._e()],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -743,7 +794,7 @@ Object.defineProperty(exports, 'BrowserCapabilities', {
     }
 });
 
-var _textUtils = __webpack_require__(12);
+var _textUtils = __webpack_require__(15);
 
 Object.defineProperty(exports, 'TextUtils', {
     enumerable: true,
@@ -769,12 +820,6 @@ Object.defineProperty(exports, 'PublicEventService', {
         return _interopRequireDefault(_publicEventService).default;
     }
 });
-
-__webpack_require__(14);
-
-__webpack_require__(15);
-
-__webpack_require__(16);
 
 __webpack_require__(17);
 
@@ -966,11 +1011,17 @@ __webpack_require__(110);
 
 __webpack_require__(111);
 
-var _componentRegistry = __webpack_require__(112);
+__webpack_require__(112);
+
+__webpack_require__(113);
+
+__webpack_require__(114);
+
+var _componentRegistry = __webpack_require__(115);
 
 var _componentRegistry2 = _interopRequireDefault(_componentRegistry);
 
-var _components = __webpack_require__(114);
+var _components = __webpack_require__(117);
 
 var _components2 = _interopRequireDefault(_components);
 
@@ -995,7 +1046,7 @@ Object.keys(Directives).forEach(function (d) {
 exports.registry = registry;
 
 /***/ }),
-/* 12 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1029,24 +1080,6 @@ var TextUtils = function () {
 }();
 
 exports.default = TextUtils;
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__13__;
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__14__;
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__15__;
 
 /***/ }),
 /* 16 */
@@ -1614,6 +1647,24 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__109__;
 
 /***/ }),
 /* 110 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__110__;
+
+/***/ }),
+/* 111 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__111__;
+
+/***/ }),
+/* 112 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__112__;
+
+/***/ }),
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -2345,13 +2396,13 @@ try {
 
 
 /***/ }),
-/* 111 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
-/* 112 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2363,7 +2414,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _uniqId = __webpack_require__(113);
+var _uniqId = __webpack_require__(116);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -2424,7 +2475,7 @@ var ComponentRegistry = function () {
 exports.default = ComponentRegistry;
 
 /***/ }),
-/* 113 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2459,7 +2510,7 @@ var UniqId = exports.UniqId = function () {
 }();
 
 /***/ }),
-/* 114 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2471,15 +2522,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _atoms = __webpack_require__(115);
+var _atoms = __webpack_require__(118);
 
 var Atoms = _interopRequireWildcard(_atoms);
 
-var _molecules = __webpack_require__(178);
+var _molecules = __webpack_require__(180);
 
 var Molecules = _interopRequireWildcard(_molecules);
 
-var _organisms = __webpack_require__(289);
+var _organisms = __webpack_require__(290);
 
 var Organisms = _interopRequireWildcard(_organisms);
 
@@ -2492,7 +2543,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 exports.default = _extends({}, Atoms, Molecules, Organisms, OrganismsPage);
 
 /***/ }),
-/* 115 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2502,7 +2553,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _anchorOverlay = __webpack_require__(116);
+var _anchorOverlay = __webpack_require__(119);
 
 Object.defineProperty(exports, 'AnchorOverlay', {
   enumerable: true,
@@ -2511,7 +2562,7 @@ Object.defineProperty(exports, 'AnchorOverlay', {
   }
 });
 
-var _actionButton = __webpack_require__(119);
+var _actionButton = __webpack_require__(122);
 
 Object.defineProperty(exports, 'ActionButton', {
   enumerable: true,
@@ -2520,7 +2571,7 @@ Object.defineProperty(exports, 'ActionButton', {
   }
 });
 
-var _animatedArrow = __webpack_require__(122);
+var _animatedArrow = __webpack_require__(125);
 
 Object.defineProperty(exports, 'AnimatedArrow', {
   enumerable: true,
@@ -2538,7 +2589,7 @@ Object.defineProperty(exports, 'BaseLink', {
   }
 });
 
-var _contentLink = __webpack_require__(127);
+var _contentLink = __webpack_require__(130);
 
 Object.defineProperty(exports, 'ContentLink', {
   enumerable: true,
@@ -2547,7 +2598,7 @@ Object.defineProperty(exports, 'ContentLink', {
   }
 });
 
-var _contentButton = __webpack_require__(129);
+var _contentButton = __webpack_require__(132);
 
 Object.defineProperty(exports, 'ContentButton', {
   enumerable: true,
@@ -2556,7 +2607,7 @@ Object.defineProperty(exports, 'ContentButton', {
   }
 });
 
-var _contentLinkList = __webpack_require__(131);
+var _contentLinkList = __webpack_require__(134);
 
 Object.defineProperty(exports, 'ContentLinkList', {
   enumerable: true,
@@ -2565,7 +2616,7 @@ Object.defineProperty(exports, 'ContentLinkList', {
   }
 });
 
-var _hitArea = __webpack_require__(134);
+var _hitArea = __webpack_require__(137);
 
 Object.defineProperty(exports, 'HitArea', {
   enumerable: true,
@@ -2574,7 +2625,7 @@ Object.defineProperty(exports, 'HitArea', {
   }
 });
 
-var _horizontalList = __webpack_require__(137);
+var _horizontalList = __webpack_require__(140);
 
 Object.defineProperty(exports, 'HorizontalList', {
   enumerable: true,
@@ -2583,7 +2634,7 @@ Object.defineProperty(exports, 'HorizontalList', {
   }
 });
 
-var _icon = __webpack_require__(140);
+var _icon = __webpack_require__(143);
 
 Object.defineProperty(exports, 'Icon', {
   enumerable: true,
@@ -2592,7 +2643,7 @@ Object.defineProperty(exports, 'Icon', {
   }
 });
 
-var _cImage = __webpack_require__(143);
+var _cImage = __webpack_require__(146);
 
 Object.defineProperty(exports, 'Image', {
   enumerable: true,
@@ -2601,7 +2652,7 @@ Object.defineProperty(exports, 'Image', {
   }
 });
 
-var _liInline = __webpack_require__(150);
+var _liInline = __webpack_require__(153);
 
 Object.defineProperty(exports, 'LiInline', {
   enumerable: true,
@@ -2610,7 +2661,7 @@ Object.defineProperty(exports, 'LiInline', {
   }
 });
 
-var _liItem = __webpack_require__(153);
+var _liItem = __webpack_require__(156);
 
 Object.defineProperty(exports, 'LiItem', {
   enumerable: true,
@@ -2619,7 +2670,7 @@ Object.defineProperty(exports, 'LiItem', {
   }
 });
 
-var _navAssist = __webpack_require__(156);
+var _navAssist = __webpack_require__(159);
 
 Object.defineProperty(exports, 'NavAssist', {
   enumerable: true,
@@ -2628,7 +2679,7 @@ Object.defineProperty(exports, 'NavAssist', {
   }
 });
 
-var _responsivePicture = __webpack_require__(159);
+var _responsivePicture = __webpack_require__(162);
 
 Object.defineProperty(exports, 'ResponsivePicture', {
   enumerable: true,
@@ -2637,7 +2688,7 @@ Object.defineProperty(exports, 'ResponsivePicture', {
   }
 });
 
-var _spanLabel = __webpack_require__(163);
+var _spanLabel = __webpack_require__(166);
 
 Object.defineProperty(exports, 'SpanLabel', {
   enumerable: true,
@@ -2646,7 +2697,7 @@ Object.defineProperty(exports, 'SpanLabel', {
   }
 });
 
-var _tabbableDefinitionList = __webpack_require__(166);
+var _tabbableDefinitionList = __webpack_require__(169);
 
 Object.defineProperty(exports, 'TabbableDefinitionList', {
   enumerable: true,
@@ -2655,7 +2706,7 @@ Object.defineProperty(exports, 'TabbableDefinitionList', {
   }
 });
 
-var _tooltip = __webpack_require__(169);
+var _tooltip = __webpack_require__(172);
 
 Object.defineProperty(exports, 'Tooltip', {
   enumerable: true,
@@ -2664,7 +2715,7 @@ Object.defineProperty(exports, 'Tooltip', {
   }
 });
 
-var _youtubeLink = __webpack_require__(172);
+var _youtubeLink = __webpack_require__(175);
 
 Object.defineProperty(exports, 'YoutubeLink', {
   enumerable: true,
@@ -2673,7 +2724,7 @@ Object.defineProperty(exports, 'YoutubeLink', {
   }
 });
 
-var _youtubeVideo = __webpack_require__(175);
+var _youtubeVideo = __webpack_require__(177);
 
 Object.defineProperty(exports, 'YoutubeVideo', {
   enumerable: true,
@@ -2685,7 +2736,7 @@ Object.defineProperty(exports, 'YoutubeVideo', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 116 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2695,7 +2746,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _component = __webpack_require__(117);
+var _component = __webpack_require__(120);
 
 var _component2 = _interopRequireDefault(_component);
 
@@ -2704,7 +2755,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _component2.default;
 
 /***/ }),
-/* 117 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2717,6 +2768,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _templateVue = __webpack_require__(121);
+
+var _templateVue2 = _interopRequireDefault(_templateVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -2749,20 +2806,30 @@ var AnchorOverlay = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], AnchorOverlay.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], AnchorOverlay.prototype, "url", void 0);
-AnchorOverlay = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'AnchorOverlay',
-    template: __webpack_require__(118)
+AnchorOverlay = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'AnchorOverlay'
 })], AnchorOverlay);
 exports.default = AnchorOverlay;
 
 /***/ }),
-/* 118 */
+/* 121 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"anchor-overlay hit-area",attrs:{"href":_vm.url,"title":_vm.title,"aria-label":_vm.title}})}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 119 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2772,7 +2839,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _actionButton = __webpack_require__(120);
+var _actionButton = __webpack_require__(123);
 
 var _actionButton2 = _interopRequireDefault(_actionButton);
 
@@ -2781,7 +2848,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _actionButton2.default;
 
 /***/ }),
-/* 120 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2796,6 +2863,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _actionButtonVue = __webpack_require__(124);
+
+var _actionButtonVue2 = _interopRequireDefault(_actionButtonVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -2849,20 +2922,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], ActionButton.prototype, "mod", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], ActionButton.prototype, "icon", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], ActionButton.prototype, "label", void 0);
-ActionButton = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'ActionButton',
-    template: __webpack_require__(121)
+ActionButton = __decorate([_actionButtonVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'ActionButton'
 })], ActionButton);
 exports.default = ActionButton;
 
 /***/ }),
-/* 121 */
+/* 124 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./action-button.vue.html?vue&type=custom&index=0&blockType=slot\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{class:_vm.classObject,attrs:{"href":"#"}},[(this.icon)?_c('icon',{attrs:{"icon-name":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 122 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2872,7 +2955,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _animatedArrow = __webpack_require__(123);
+var _animatedArrow = __webpack_require__(126);
 
 var _animatedArrow2 = _interopRequireDefault(_animatedArrow);
 
@@ -2881,7 +2964,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _animatedArrow2.default;
 
 /***/ }),
-/* 123 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2923,18 +3006,18 @@ var AnimatedArrow = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 AnimatedArrow = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'animated-arrow',
-    template: __webpack_require__(124)
+    template: __webpack_require__(127)
 })], AnimatedArrow);
 exports.default = AnimatedArrow;
 
 /***/ }),
-/* 124 */
+/* 127 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./animated-arrow.vue.html?vue&type=custom&index=0&blockType=defs\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+module.exports = "<svg class=\"arrow--animated\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\">\n    <defs>\n        <clipPath id=\"mask\" class=\"arrow__mask\">\n            <rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" rotate=\"45deg\"/>\n        </clipPath>\n    </defs>\n    <g clip-path=\"url(#mask)\">\n        <path class=\"arrow__line arrow__line-1\" d=\"M15.3 55h94.8v10.1H15.3z\" clip-path=\"url(#mask)\" />\n        <path class=\"arrow__line arrow__line-2\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n        <path class=\"arrow__line arrow__line-3\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n    </g>\n</svg>\n";
 
 /***/ }),
-/* 125 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2955,6 +3038,10 @@ var _vuePropertyDecorator = __webpack_require__(0);
 var _events = __webpack_require__(7);
 
 var _events2 = _interopRequireDefault(_events);
+
+var _baseLinkVue = __webpack_require__(129);
+
+var _baseLinkVue2 = _interopRequireDefault(_baseLinkVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3073,20 +3160,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "url", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], BaseLink.prototype, "clickEvent", void 0);
-BaseLink = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'base-link',
-    template: __webpack_require__(126)
+BaseLink = __decorate([_baseLinkVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'base-link'
 })], BaseLink);
 exports.default = BaseLink;
 
 /***/ }),
-/* 126 */
+/* 129 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./base-link.vue.html?vue&type=custom&index=0&blockType=slot&v-else=true\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('component',_vm._b({class:_vm.classObject,on:{"click":_vm.triggerEventClick}},'component',_vm.linkProps,false),[(this.icon)?_c('icon',{attrs:{"icon-name":_vm.icon}}):_vm._e(),_vm._v(" "),(!_vm.slots)?_c('span',{staticClass:"link__underline"},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")]):_vm._t("default")],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 127 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3096,7 +3193,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentLink = __webpack_require__(128);
+var _contentLink = __webpack_require__(131);
 
 var _contentLink2 = _interopRequireDefault(_contentLink);
 
@@ -3105,7 +3202,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentLink2.default;
 
 /***/ }),
-/* 128 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3164,7 +3261,7 @@ ContentLink = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ContentLink;
 
 /***/ }),
-/* 129 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3174,7 +3271,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentButton = __webpack_require__(130);
+var _contentButton = __webpack_require__(133);
 
 var _contentButton2 = _interopRequireDefault(_contentButton);
 
@@ -3183,7 +3280,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentButton2.default;
 
 /***/ }),
-/* 130 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3242,7 +3339,7 @@ ContentButton = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ContentButton;
 
 /***/ }),
-/* 131 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3252,7 +3349,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentLinkList = __webpack_require__(132);
+var _contentLinkList = __webpack_require__(135);
 
 var _contentLinkList2 = _interopRequireDefault(_contentLinkList);
 
@@ -3261,7 +3358,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentLinkList2.default;
 
 /***/ }),
-/* 132 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3274,6 +3371,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _contentLinkListVue = __webpack_require__(136);
+
+var _contentLinkListVue2 = _interopRequireDefault(_contentLinkListVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -3306,20 +3409,30 @@ var ContentLinkList = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], ContentLinkList.prototype, "block", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, default: [] }), __metadata("design:type", Array)], ContentLinkList.prototype, "links", void 0);
-ContentLinkList = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'content-link-list',
-    template: __webpack_require__(133)
+ContentLinkList = __decorate([_contentLinkListVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'content-link-list'
 })], ContentLinkList);
 exports.default = ContentLinkList;
 
 /***/ }),
-/* 133 */
+/* 136 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{class:_vm.block + '__list'},_vm._l((_vm.links),function(link){return _c('li',{class:_vm.block + '__item'},[_c('content-link',{class:link.class,attrs:{"block":_vm.block,"icon":link.icon,"url":link.url,"label":link.label}})],1)}),0)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 134 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3329,7 +3442,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _hitArea = __webpack_require__(135);
+var _hitArea = __webpack_require__(138);
 
 var _hitArea2 = _interopRequireDefault(_hitArea);
 
@@ -3338,7 +3451,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _hitArea2.default;
 
 /***/ }),
-/* 135 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3351,6 +3464,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _hitAreaVue = __webpack_require__(139);
+
+var _hitAreaVue2 = _interopRequireDefault(_hitAreaVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -3378,20 +3497,30 @@ var HitArea = function (_Vue) {
 
     return HitArea;
 }(_vuePropertyDecorator.Vue);
-HitArea = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'hit-area',
-    template: __webpack_require__(136)
+HitArea = __decorate([_hitAreaVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'hit-area'
 })], HitArea);
 exports.default = HitArea;
 
 /***/ }),
-/* 136 */
+/* 139 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./hit-area.vue.html?vue&type=custom&index=0&blockType=slot\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"hit-area",attrs:{"role":"button","tabindex":"0"}},[_vm._t("default")],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 137 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3401,7 +3530,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _horizontalList = __webpack_require__(138);
+var _horizontalList = __webpack_require__(141);
 
 var _horizontalList2 = _interopRequireDefault(_horizontalList);
 
@@ -3410,7 +3539,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _horizontalList2.default;
 
 /***/ }),
-/* 138 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3423,6 +3552,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _horizontalListVue = __webpack_require__(142);
+
+var _horizontalListVue2 = _interopRequireDefault(_horizontalListVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -3456,20 +3591,30 @@ var HorizontalList = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], HorizontalList.prototype, "styleModifier", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], HorizontalList.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], HorizontalList.prototype, "listItems", void 0);
-HorizontalList = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'horizontal-list',
-    template: __webpack_require__(139)
+HorizontalList = __decorate([_horizontalListVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'horizontal-list'
 })], HorizontalList);
 exports.default = HorizontalList;
 
 /***/ }),
-/* 139 */
+/* 142 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{class:_vm.styleModifier},[_c('strong',{staticClass:"caption-list__headline"},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")]),_vm._v(" "),_c('ul',{staticClass:"caption-list"},_vm._l((_vm.listItems),function(item){return _c('li',{staticClass:"caption-list__list-item"},[_vm._v("\n            "+_vm._s(item.additionalContent)+"\n            "),_c('a',{attrs:{"href":item.url}},[_vm._v(_vm._s(item.text))])])}),0)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 140 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3479,7 +3624,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _icon = __webpack_require__(141);
+var _icon = __webpack_require__(144);
 
 var _icon2 = _interopRequireDefault(_icon);
 
@@ -3488,7 +3633,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _icon2.default;
 
 /***/ }),
-/* 141 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3503,6 +3648,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _iconVue = __webpack_require__(145);
+
+var _iconVue2 = _interopRequireDefault(_iconVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -3523,6 +3674,7 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 };
 
 var defaultIconUrl = '/static/icons/iconset.svg';
+
 var Icon = function (_Vue) {
     _inherits(Icon, _Vue);
 
@@ -3567,20 +3719,30 @@ var Icon = function (_Vue) {
     return Icon;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], Icon.prototype, "iconName", void 0);
-Icon = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'icon',
-    template: __webpack_require__(142)
+Icon = __decorate([_iconVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'icon'
 })], Icon);
 exports.default = Icon;
 
 /***/ }),
-/* 142 */
+/* 145 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.ready)?_c('svg',{staticClass:"icon",class:_vm.iconClass,attrs:{"viewBox":_vm.viewBox}},[(!_vm.symbolData)?_c('use',{attrs:{"xlink:href":_vm.iconRef}}):_vm._e()]):_vm._e()}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 143 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3590,7 +3752,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _cImage = __webpack_require__(144);
+var _cImage = __webpack_require__(147);
 
 var _cImage2 = _interopRequireDefault(_cImage);
 
@@ -3599,7 +3761,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _cImage2.default;
 
 /***/ }),
-/* 144 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3615,9 +3777,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _cImage = __webpack_require__(145);
+var _cImage = __webpack_require__(148);
 
-var _inView = __webpack_require__(147);
+var _inView = __webpack_require__(150);
 
 var _browserCapabilities = __webpack_require__(2);
 
@@ -3627,7 +3789,11 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _cImage2 = __webpack_require__(148);
+var _cImage2 = __webpack_require__(151);
+
+var _cImageVue = __webpack_require__(152);
+
+var _cImageVue2 = _interopRequireDefault(_cImageVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3868,14 +4034,13 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __met
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 65 }), __metadata("design:type", Number)], CImage.prototype, "quality", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: null }), __metadata("design:type", Object)], CImage.prototype, "backgroundColor", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('inView'), __metadata("design:type", Function), __metadata("design:paramtypes", [Boolean]), __metadata("design:returntype", Promise)], CImage.prototype, "inViewWatcher", null);
-CImage = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'c-image',
-    template: __webpack_require__(149)
+CImage = __decorate([_cImageVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'c-image'
 })], CImage);
 exports.default = CImage;
 
 /***/ }),
-/* 145 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3885,7 +4050,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Image = __webpack_require__(146);
+var _Image = __webpack_require__(149);
 
 Object.defineProperty(exports, "FocusArea", {
     enumerable: true,
@@ -3913,7 +4078,7 @@ var ResizeBehavior = exports.ResizeBehavior = undefined;
 })(ResizeBehavior || (exports.ResizeBehavior = ResizeBehavior = {}));
 
 /***/ }),
-/* 146 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3944,7 +4109,7 @@ var Image = function Image() {
 exports.Image = Image;
 
 /***/ }),
-/* 147 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4057,7 +4222,7 @@ exports.InView = InView = __decorate([_vuePropertyDecorator.Component], InView);
 exports.InView = InView;
 
 /***/ }),
-/* 148 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4074,86 +4239,21 @@ var imageConstants = exports.imageConstants = {
 };
 
 /***/ }),
-/* 149 */
-/***/ (function(module, exports) {
-
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
-
-/***/ }),
-/* 150 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _component = __webpack_require__(151);
-
-var _component2 = _interopRequireDefault(_component);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _component2.default;
-
-/***/ }),
-/* 151 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var LiInline = function (_Vue) {
-    _inherits(LiInline, _Vue);
-
-    function LiInline() {
-        _classCallCheck(this, LiInline);
-
-        return _possibleConstructorReturn(this, (LiInline.__proto__ || Object.getPrototypeOf(LiInline)).apply(this, arguments));
-    }
-
-    return LiInline;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: true }), __metadata("design:type", Object)], LiInline.prototype, "item", void 0);
-LiInline = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'LiInline',
-    template: __webpack_require__(152)
-})], LiInline);
-exports.default = LiInline;
-
-/***/ }),
 /* 152 */
 /***/ (function(module, exports) {
 
-module.exports = "import { render, staticRenderFns } from \"./template.vue.html?vue&type=template&id=7393dfe0&v-else=true&\"\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('img',{staticClass:"img--contain",class:_vm.classList,attrs:{"alt":_vm.alt,"src":_vm.src},on:{"error":function($event){return _vm.$emit('error')}}})}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 153 */
@@ -4189,6 +4289,104 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _templateVue = __webpack_require__(155);
+
+var _templateVue2 = _interopRequireDefault(_templateVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LiInline = function (_Vue) {
+    _inherits(LiInline, _Vue);
+
+    function LiInline() {
+        _classCallCheck(this, LiInline);
+
+        return _possibleConstructorReturn(this, (LiInline.__proto__ || Object.getPrototypeOf(LiInline)).apply(this, arguments));
+    }
+
+    return LiInline;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: true }), __metadata("design:type", Object)], LiInline.prototype, "item", void 0);
+LiInline = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'LiInline'
+})], LiInline);
+exports.default = LiInline;
+
+/***/ }),
+/* 155 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"list__item list__item--inline"},[(!_vm.item.item)?[_vm._v(_vm._s(_vm.item))]:[_c(_vm.item.type,_vm._b({tag:"component"},'component',_vm.item.item,false))]],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 156 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _component = __webpack_require__(157);
+
+var _component2 = _interopRequireDefault(_component);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _component2.default;
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+var _templateVue = __webpack_require__(158);
+
+var _templateVue2 = _interopRequireDefault(_templateVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -4219,20 +4417,30 @@ var LiItem = function (_Vue) {
     return LiItem;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: true }), __metadata("design:type", Object)], LiItem.prototype, "item", void 0);
-LiItem = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'LiItem',
-    template: __webpack_require__(155)
+LiItem = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'LiItem'
 })], LiItem);
 exports.default = LiItem;
 
 /***/ }),
-/* 155 */
+/* 158 */
 /***/ (function(module, exports) {
 
-module.exports = "import { render, staticRenderFns } from \"./template.vue.html?vue&type=template&id=85374844&v-else=true&\"\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"list__item"},[(!_vm.item.item)?[_vm._v(_vm._s(_vm.item))]:[_c(_vm.item.type,_vm._b({tag:"component"},'component',_vm.item.item,false))]],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 156 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4242,7 +4450,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _navAssist = __webpack_require__(157);
+var _navAssist = __webpack_require__(160);
 
 var _navAssist2 = _interopRequireDefault(_navAssist);
 
@@ -4251,7 +4459,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _navAssist2.default;
 
 /***/ }),
-/* 157 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4324,18 +4532,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), 
 __decorate([(0, _vuePropertyDecorator.Watch)('openState'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], NavAssist.prototype, "onOpenStateChange", null);
 NavAssist = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'nav-assist',
-    template: __webpack_require__(158)
+    template: __webpack_require__(161)
 })], NavAssist);
 exports.default = NavAssist;
 
 /***/ }),
-/* 158 */
+/* 161 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+module.exports = "<button type=\"button\" @click=\"toggleState()\" @keyup.esc=\"close\" class=\"nav-assist\"\n        :class=\"{'nav-assist--close': this.openState, 'nav-assist--initial-state': !this.used}\" aria-label=\"menu\"\n        :aria-expanded=\"this.openState.toString()\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <rect class=\"nav-assist__line nav-assist__line-2\" x=\"2\" y=\"11\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-1\" x=\"2\" y=\"4.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-3\" x=\"2\" y=\"17.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-4\" x=\"-1.3\" y=\"11\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"26.6\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-5\" x=\"11\" y=\"-1.3\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"2\" height=\"26.6\"/>\n    </svg>\n</button>\n";
 
 /***/ }),
-/* 159 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4345,7 +4553,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _responsivePicture = __webpack_require__(160);
+var _responsivePicture = __webpack_require__(163);
 
 var _responsivePicture2 = _interopRequireDefault(_responsivePicture);
 
@@ -4354,7 +4562,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _responsivePicture2.default;
 
 /***/ }),
-/* 160 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4374,7 +4582,7 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _responsivePictureSource = __webpack_require__(161);
+var _responsivePictureSource = __webpack_require__(164);
 
 var _responsivePictureSource2 = _interopRequireDefault(_responsivePictureSource);
 
@@ -4486,7 +4694,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, def
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], ResponsivePicture.prototype, "imgClass", void 0);
 ResponsivePicture = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'responsive-picture',
-    template: __webpack_require__(162),
+    template: __webpack_require__(165),
     components: {
         ResponsivePictureSource: _responsivePictureSource2.default
     }
@@ -4494,7 +4702,7 @@ ResponsivePicture = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ResponsivePicture;
 
 /***/ }),
-/* 161 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4558,13 +4766,13 @@ ResponsivePictureSource = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ResponsivePictureSource;
 
 /***/ }),
-/* 162 */
+/* 165 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./responsive-picture.vue.html?vue&type=custom&index=0&blockType=picture\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+module.exports = "<picture>\n    <template>\n        <responsive-picture-source v-if=\"desktopHdWidth\" media=\"(min-width: 1201px)\" :image=\"lazyLoading ? '' : desktopHdWidth\" />\n        <responsive-picture-source v-if=\"desktopWidth\" media=\"(min-width: 1025px)\" :image=\"lazyLoading ? '' : desktopWidth\" />\n        <responsive-picture-source v-if=\"tabletWidth\" media=\"(min-width: 768px)\" :image=\"lazyLoading ? '' : tabletWidth\" />\n        <responsive-picture-source v-if=\"mobileXlWidth\" media=\"(min-width: 569px)\" :image=\"lazyLoading ? '' : mobileXlWidth\" />\n        <responsive-picture-source v-if=\"mobileLWidth\" media=\"(min-width: 481px)\" :image=\" lazyLoading ? '' : mobileLWidth\" />\n        <responsive-picture-source media=\"(max-width: 480px)\" :image=\"mobileWidth\" />\n    </template>\n\n    <img :src=\"lazyLoading ? '' : mobileWidth.url ? mobileWidth.url : mobileWidth\" :alt=\"description\" class=\"img--responsive\" :class=\"classes\"/>\n</picture>\n";
 
 /***/ }),
-/* 163 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4574,7 +4782,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _component = __webpack_require__(164);
+var _component = __webpack_require__(167);
 
 var _component2 = _interopRequireDefault(_component);
 
@@ -4583,7 +4791,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _component2.default;
 
 /***/ }),
-/* 164 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4596,6 +4804,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _templateVue = __webpack_require__(168);
+
+var _templateVue2 = _interopRequireDefault(_templateVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -4627,20 +4841,30 @@ var SpanLabel = function (_Vue) {
     return SpanLabel;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SpanLabel.prototype, "item", void 0);
-SpanLabel = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'SpanLabel',
-    template: __webpack_require__(165)
+SpanLabel = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'SpanLabel'
 })], SpanLabel);
 exports.default = SpanLabel;
 
 /***/ }),
-/* 165 */
+/* 168 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"label"},[_vm._v(_vm._s(_vm.item))])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 166 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4650,7 +4874,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tabbableDefinitionList = __webpack_require__(167);
+var _tabbableDefinitionList = __webpack_require__(170);
 
 var _tabbableDefinitionList2 = _interopRequireDefault(_tabbableDefinitionList);
 
@@ -4659,7 +4883,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tabbableDefinitionList2.default;
 
 /***/ }),
-/* 167 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4685,7 +4909,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 exports.default = {
     name: 'tabbable-definition-list',
-    template: __webpack_require__(168),
+    template: __webpack_require__(171),
     data: function data() {
         return {
             viewport: new _viewport2.default(),
@@ -4869,13 +5093,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 168 */
+/* 171 */
 /***/ (function(module, exports) {
 
 module.exports = "<dl class=\"tabbable-dl\">\n    <template v-for=\"(item, index) in items\">\n        <dt class=\"tabbable-dl__term tabbable-dl__term--vue\" ref=\"terms\">\n            <a class=\"tabbable-dl__link\" @click.prevent=\"changeIndex(index)\" @keyup.enter=\"changeIndex(index)\" role=\"button\" tabindex=\"0\">\n                <h3 class=\"tabbable-dl__title\">\n                    <icon class=\"tabbable-dl__icon\" icon-name=\"angle-right\"></icon>\n                    {{ item.title }}\n                </h3>\n            </a>\n        </dt>\n        <dd class=\"tabbable-dl__desc tabbable-dl__desc--vue\" ref=\"descriptions\">{{ item.description }}</dd>\n    </template>\n</dl>\n";
 
 /***/ }),
-/* 169 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4885,7 +5109,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tooltip = __webpack_require__(170);
+var _tooltip = __webpack_require__(173);
 
 var _tooltip2 = _interopRequireDefault(_tooltip);
 
@@ -4894,7 +5118,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tooltip2.default;
 
 /***/ }),
-/* 170 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4909,6 +5133,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _tooltipVue = __webpack_require__(174);
+
+var _tooltipVue2 = _interopRequireDefault(_tooltipVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -4951,20 +5181,30 @@ var Tooltip = function (_Vue) {
     return Tooltip;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], Tooltip.prototype, "block", void 0);
-Tooltip = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'Tooltip',
-    template: __webpack_require__(171)
+Tooltip = __decorate([_tooltipVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Tooltip'
 })], Tooltip);
 exports.default = Tooltip;
 
 /***/ }),
-/* 171 */
+/* 174 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./tooltip.vue.html?vue&type=custom&index=0&blockType=slot\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip",class:_vm.classObject()},[_vm._t("default")],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 172 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4974,7 +5214,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _youtubeLink = __webpack_require__(173);
+var _youtubeLink = __webpack_require__(176);
 
 var _youtubeLink2 = _interopRequireDefault(_youtubeLink);
 
@@ -4983,7 +5223,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _youtubeLink2.default;
 
 /***/ }),
-/* 173 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5006,6 +5246,10 @@ var _BaseLink3 = _interopRequireDefault(_BaseLink2);
 var _youtube = __webpack_require__(10);
 
 var _youtube2 = _interopRequireDefault(_youtube);
+
+var _youtubeLinkVue = __webpack_require__(11);
+
+var _youtubeLinkVue2 = _interopRequireDefault(_youtubeLinkVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5062,20 +5306,14 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'play-video
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], YoutubeLink.prototype, "youtubeId", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], YoutubeLink.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], YoutubeLink.prototype, "clickEvent", void 0);
-YoutubeLink = __decorate([(0, _vuePropertyDecorator.Component)({
+YoutubeLink = __decorate([_youtubeLinkVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'YoutubeLink',
-    template: __webpack_require__(174)
+    template: __webpack_require__(11)
 })], YoutubeLink);
 exports.default = YoutubeLink;
 
 /***/ }),
-/* 174 */
-/***/ (function(module, exports) {
-
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
-
-/***/ }),
-/* 175 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5085,7 +5323,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _youtubeVideo = __webpack_require__(176);
+var _youtubeVideo = __webpack_require__(178);
 
 var _youtubeVideo2 = _interopRequireDefault(_youtubeVideo);
 
@@ -5094,7 +5332,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _youtubeVideo2.default;
 
 /***/ }),
-/* 176 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5113,6 +5351,10 @@ var _vuePropertyDecorator = __webpack_require__(0);
 var _youtube = __webpack_require__(10);
 
 var _youtube2 = _interopRequireDefault(_youtube);
+
+var _youtubeVideoVue = __webpack_require__(179);
+
+var _youtubeVideoVue2 = _interopRequireDefault(_youtubeVideoVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5166,20 +5408,30 @@ var YoutubeVideo = function (_Vue) {
     return YoutubeVideo;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], YoutubeVideo.prototype, "videoId", void 0);
-YoutubeVideo = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'youtube-video',
-    template: __webpack_require__(177)
+YoutubeVideo = __decorate([_youtubeVideoVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'youtube-video'
 })], YoutubeVideo);
 exports.default = YoutubeVideo;
 
 /***/ }),
-/* 177 */
+/* 179 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"youtube-video"},[(_vm.loadVideo)?_c('iframe',{staticClass:"youtube-video__frame",attrs:{"src":_vm.videoUrl,"frameborder":"0","allowfullscreen":"allowfullscreen"}}):_vm._e()])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 178 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5189,7 +5441,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _autoComplete = __webpack_require__(179);
+var _autoComplete = __webpack_require__(181);
 
 Object.defineProperty(exports, 'AutoComplete', {
   enumerable: true,
@@ -5198,7 +5450,7 @@ Object.defineProperty(exports, 'AutoComplete', {
   }
 });
 
-var _brandCard = __webpack_require__(182);
+var _brandCard = __webpack_require__(184);
 
 Object.defineProperty(exports, 'BrandCard', {
   enumerable: true,
@@ -5207,7 +5459,7 @@ Object.defineProperty(exports, 'BrandCard', {
   }
 });
 
-var _businessCard = __webpack_require__(185);
+var _businessCard = __webpack_require__(187);
 
 Object.defineProperty(exports, 'BusinessCard', {
   enumerable: true,
@@ -5216,7 +5468,7 @@ Object.defineProperty(exports, 'BusinessCard', {
   }
 });
 
-var _LEGACY__card = __webpack_require__(188);
+var _LEGACY__card = __webpack_require__(190);
 
 Object.defineProperty(exports, 'Card', {
   enumerable: true,
@@ -5225,7 +5477,7 @@ Object.defineProperty(exports, 'Card', {
   }
 });
 
-var _cardProduct = __webpack_require__(191);
+var _cardProduct = __webpack_require__(193);
 
 Object.defineProperty(exports, 'CardProduct', {
   enumerable: true,
@@ -5234,7 +5486,7 @@ Object.defineProperty(exports, 'CardProduct', {
   }
 });
 
-var _color = __webpack_require__(194);
+var _color = __webpack_require__(196);
 
 Object.defineProperty(exports, 'Color', {
   enumerable: true,
@@ -5243,7 +5495,7 @@ Object.defineProperty(exports, 'Color', {
   }
 });
 
-var _contentBlock = __webpack_require__(198);
+var _contentBlock = __webpack_require__(200);
 
 Object.defineProperty(exports, 'ContentBlock', {
   enumerable: true,
@@ -5252,7 +5504,7 @@ Object.defineProperty(exports, 'ContentBlock', {
   }
 });
 
-var _contentToggle = __webpack_require__(201);
+var _contentToggle = __webpack_require__(203);
 
 Object.defineProperty(exports, 'ContentToggle', {
   enumerable: true,
@@ -5261,7 +5513,7 @@ Object.defineProperty(exports, 'ContentToggle', {
   }
 });
 
-var _ctaBlock = __webpack_require__(204);
+var _ctaBlock = __webpack_require__(206);
 
 Object.defineProperty(exports, 'CtaBlock', {
   enumerable: true,
@@ -5270,7 +5522,7 @@ Object.defineProperty(exports, 'CtaBlock', {
   }
 });
 
-var _currency = __webpack_require__(207);
+var _currency = __webpack_require__(209);
 
 Object.defineProperty(exports, 'Currency', {
   enumerable: true,
@@ -5279,7 +5531,7 @@ Object.defineProperty(exports, 'Currency', {
   }
 });
 
-var _fauxVerticalScroll = __webpack_require__(210);
+var _fauxVerticalScroll = __webpack_require__(212);
 
 Object.defineProperty(exports, 'FauxVerticalScroll', {
   enumerable: true,
@@ -5288,7 +5540,7 @@ Object.defineProperty(exports, 'FauxVerticalScroll', {
   }
 });
 
-var _flyout = __webpack_require__(216);
+var _flyout = __webpack_require__(218);
 
 Object.defineProperty(exports, 'Flyout', {
   enumerable: true,
@@ -5297,7 +5549,7 @@ Object.defineProperty(exports, 'Flyout', {
   }
 });
 
-var _flyoutSection = __webpack_require__(219);
+var _flyoutSection = __webpack_require__(221);
 
 Object.defineProperty(exports, 'FlyoutSection', {
   enumerable: true,
@@ -5306,7 +5558,7 @@ Object.defineProperty(exports, 'FlyoutSection', {
   }
 });
 
-var _footerBlock = __webpack_require__(222);
+var _footerBlock = __webpack_require__(224);
 
 Object.defineProperty(exports, 'FooterBlock', {
   enumerable: true,
@@ -5315,7 +5567,7 @@ Object.defineProperty(exports, 'FooterBlock', {
   }
 });
 
-var _footerNav = __webpack_require__(225);
+var _footerNav = __webpack_require__(227);
 
 Object.defineProperty(exports, 'FooterNav', {
   enumerable: true,
@@ -5324,7 +5576,7 @@ Object.defineProperty(exports, 'FooterNav', {
   }
 });
 
-var _headerBlock = __webpack_require__(228);
+var _headerBlock = __webpack_require__(230);
 
 Object.defineProperty(exports, 'HeaderBlock', {
   enumerable: true,
@@ -5333,7 +5585,7 @@ Object.defineProperty(exports, 'HeaderBlock', {
   }
 });
 
-var _iconButton = __webpack_require__(231);
+var _iconButton = __webpack_require__(233);
 
 Object.defineProperty(exports, 'IconButton', {
   enumerable: true,
@@ -5342,7 +5594,7 @@ Object.defineProperty(exports, 'IconButton', {
   }
 });
 
-var _legalNav = __webpack_require__(234);
+var _legalNav = __webpack_require__(236);
 
 Object.defineProperty(exports, 'LegalNav', {
   enumerable: true,
@@ -5351,7 +5603,7 @@ Object.defineProperty(exports, 'LegalNav', {
   }
 });
 
-var _listSection = __webpack_require__(237);
+var _listSection = __webpack_require__(239);
 
 Object.defineProperty(exports, 'ListSection', {
   enumerable: true,
@@ -5360,7 +5612,7 @@ Object.defineProperty(exports, 'ListSection', {
   }
 });
 
-var _listUnordered = __webpack_require__(241);
+var _listUnordered = __webpack_require__(243);
 
 Object.defineProperty(exports, 'ListUnordered', {
   enumerable: true,
@@ -5369,7 +5621,7 @@ Object.defineProperty(exports, 'ListUnordered', {
   }
 });
 
-var _mainNav = __webpack_require__(244);
+var _mainNav = __webpack_require__(246);
 
 Object.defineProperty(exports, 'MainNav', {
   enumerable: true,
@@ -5378,7 +5630,7 @@ Object.defineProperty(exports, 'MainNav', {
   }
 });
 
-var _mainNavItem = __webpack_require__(247);
+var _mainNavItem = __webpack_require__(249);
 
 Object.defineProperty(exports, 'MainNavItem', {
   enumerable: true,
@@ -5387,7 +5639,7 @@ Object.defineProperty(exports, 'MainNavItem', {
   }
 });
 
-var _modal = __webpack_require__(250);
+var _modal = __webpack_require__(252);
 
 Object.defineProperty(exports, 'Modal', {
   enumerable: true,
@@ -5396,7 +5648,7 @@ Object.defineProperty(exports, 'Modal', {
   }
 });
 
-var _pager = __webpack_require__(253);
+var _pager = __webpack_require__(255);
 
 Object.defineProperty(exports, 'Pager', {
   enumerable: true,
@@ -5405,7 +5657,7 @@ Object.defineProperty(exports, 'Pager', {
   }
 });
 
-var _product = __webpack_require__(256);
+var _product = __webpack_require__(258);
 
 Object.defineProperty(exports, 'Product', {
   enumerable: true,
@@ -5414,7 +5666,7 @@ Object.defineProperty(exports, 'Product', {
   }
 });
 
-var _search = __webpack_require__(259);
+var _search = __webpack_require__(261);
 
 Object.defineProperty(exports, 'Search', {
   enumerable: true,
@@ -5423,7 +5675,7 @@ Object.defineProperty(exports, 'Search', {
   }
 });
 
-var _socialNav = __webpack_require__(262);
+var _socialNav = __webpack_require__(264);
 
 Object.defineProperty(exports, 'SocialNav', {
   enumerable: true,
@@ -5432,7 +5684,7 @@ Object.defineProperty(exports, 'SocialNav', {
   }
 });
 
-var _subnavigationItem = __webpack_require__(265);
+var _subnavigationItem = __webpack_require__(267);
 
 Object.defineProperty(exports, 'SubNavigationItem', {
   enumerable: true,
@@ -5441,7 +5693,7 @@ Object.defineProperty(exports, 'SubNavigationItem', {
   }
 });
 
-var _sysNav = __webpack_require__(268);
+var _sysNav = __webpack_require__(270);
 
 Object.defineProperty(exports, 'SysNav', {
   enumerable: true,
@@ -5450,7 +5702,7 @@ Object.defineProperty(exports, 'SysNav', {
   }
 });
 
-var _tab = __webpack_require__(271);
+var _tab = __webpack_require__(273);
 
 Object.defineProperty(exports, 'Tab', {
   enumerable: true,
@@ -5459,7 +5711,7 @@ Object.defineProperty(exports, 'Tab', {
   }
 });
 
-var _tabs = __webpack_require__(274);
+var _tabs = __webpack_require__(276);
 
 Object.defineProperty(exports, 'Tabs', {
   enumerable: true,
@@ -5468,7 +5720,7 @@ Object.defineProperty(exports, 'Tabs', {
   }
 });
 
-var _tag = __webpack_require__(277);
+var _tag = __webpack_require__(279);
 
 Object.defineProperty(exports, 'Tag', {
   enumerable: true,
@@ -5477,7 +5729,7 @@ Object.defineProperty(exports, 'Tag', {
   }
 });
 
-var _tagList = __webpack_require__(280);
+var _tagList = __webpack_require__(282);
 
 Object.defineProperty(exports, 'TagList', {
   enumerable: true,
@@ -5486,7 +5738,7 @@ Object.defineProperty(exports, 'TagList', {
   }
 });
 
-var _blockIcon = __webpack_require__(283);
+var _blockIcon = __webpack_require__(284);
 
 Object.defineProperty(exports, 'BlockIcon', {
   enumerable: true,
@@ -5495,7 +5747,7 @@ Object.defineProperty(exports, 'BlockIcon', {
   }
 });
 
-var _heroHeading = __webpack_require__(286);
+var _heroHeading = __webpack_require__(287);
 
 Object.defineProperty(exports, 'HeroHeading', {
   enumerable: true,
@@ -5507,7 +5759,7 @@ Object.defineProperty(exports, 'HeroHeading', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 179 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5517,7 +5769,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _autoComplete = __webpack_require__(180);
+var _autoComplete = __webpack_require__(182);
 
 var _autoComplete2 = _interopRequireDefault(_autoComplete);
 
@@ -5526,7 +5778,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _autoComplete2.default;
 
 /***/ }),
-/* 180 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5545,6 +5797,10 @@ var _vuePropertyDecorator = __webpack_require__(0);
 var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
+
+var _autoCompleteVue = __webpack_require__(183);
+
+var _autoCompleteVue2 = _interopRequireDefault(_autoCompleteVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5863,20 +6119,30 @@ __decorate([(0, _vuePropertyDecorator.Watch)('isOpen'), __metadata("design:type"
 __decorate([(0, _vuePropertyDecorator.Watch)('value'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", void 0)], AutoComplete.prototype, "onValue", null);
 __decorate([(0, _vuePropertyDecorator.Watch)('input'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", void 0)], AutoComplete.prototype, "onInput", null);
 __decorate([(0, _vuePropertyDecorator.Watch)('selectedIndex'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], AutoComplete.prototype, "onSelectedIndex", null);
-AutoComplete = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'auto-complete',
-    template: __webpack_require__(181)
+AutoComplete = __decorate([_autoCompleteVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'auto-complete'
 })], AutoComplete);
 exports.default = AutoComplete;
 
 /***/ }),
-/* 181 */
+/* 183 */
 /***/ (function(module, exports) {
 
-module.exports = "import { render, staticRenderFns } from \"./auto-complete.vue.html?vue&type=template&id=316b1de8&v-else=true&\"\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.hasItems)?_c('div',{staticClass:"auto-complete",class:_vm.classObject,attrs:{"role":"combobox","aria-haspopup":"listbox","aria-owns":_vm.listId,"aria-expanded":_vm.isOpen},on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"up",38,$event.key,["Up","ArrowUp"])){ return null; }$event.preventDefault();return _vm.selectPrevious($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }$event.preventDefault();return _vm.selectPrevious($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }$event.preventDefault();return _vm.selectCurrent($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if($event.ctrlKey||$event.shiftKey||$event.altKey||$event.metaKey){ return null; }$event.preventDefault();return _vm.selectCurrent($event)}]}},[_c('input',{directives:[{name:"model",rawName:"v-model.trim",value:(_vm.input),expression:"input",modifiers:{"trim":true}}],ref:"autoComplete",staticClass:"auto-complete__input",attrs:{"type":"text","autofocus":"true","autocomplete":"off","aria-autocomplete":"list","id":_vm.inputId,"aria-controls":_vm.listId,"placeholder":_vm.placeholder,"required":_vm.required},domProps:{"value":(_vm.input)},on:{"input":[function($event){if($event.target.composing){ return; }_vm.input=$event.target.value.trim()},function($event){_vm.input = $event.target.value}],"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.resetInput($event)},"keydown":[function($event){_vm.forceOpen = true},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();return _vm.selectItemByInput($event)}],"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),(_vm.isOpen)?_c('div',{staticClass:"auto-complete__dropdown",attrs:{"id":_vm.listId,"role":"listbox"},on:{"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.closeList($event)},"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"backspace",undefined,$event.key,undefined)){ return null; }$event.preventDefault();},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }$event.preventDefault();return _vm.selectNext($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if($event.ctrlKey||$event.shiftKey||$event.altKey||$event.metaKey){ return null; }$event.preventDefault();return _vm.selectNext($event)}]}},[(_vm.storedItems && _vm.storedItems.length)?[_c('h4',{staticClass:"auto-complete__label",attrs:{"id":"storedLabel"}},[_vm._v("\n                "+_vm._s(_vm.storedLabel)+"\n            ")]),_vm._v(" "),_c('ul',{staticClass:"auto-complete__list",attrs:{"aria-labelledby":"storedLabel"}},_vm._l((_vm.storedItems),function(item){return _c('li',{staticClass:"auto-complete__list-item",attrs:{"role":"option","tabindex":"0"},on:{"click":function($event){return _vm.selectItem(item)},"keyup":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();return _vm.selectItem(item)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.closeList($event)}]}},[_vm._v("\n                    "+_vm._s(item.title)+"\n                ")])}),0)]:_vm._e(),_vm._v(" "),(_vm.suggestedItems && _vm.suggestedItems.length)?[_c('h4',{staticClass:"auto-complete__label",attrs:{"id":"suggestedLabel"}},[_vm._v("\n                "+_vm._s(_vm.suggestionsLabel)+"\n            ")]),_vm._v(" "),_c('ul',{staticClass:"auto-complete__list",attrs:{"aria-labelledby":"suggestedLabel"}},[(_vm.matchValue)?_vm._l((_vm.suggestedItems),function(item){return _c('li',{staticClass:"auto-complete__list-item",attrs:{"role":"option","tabindex":"0"},on:{"click":function($event){return _vm.selectItem(item)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();return _vm.selectItem(item)}}},[_vm._v("\n                        "+_vm._s(item.title)+"\n                    ")])}):_vm._l((_vm.suggestedItems),function(item){return _c('li',{staticClass:"auto-complete__list-item",attrs:{"role":"option","tabindex":"0"},domProps:{"innerHTML":_vm._s(_vm.highlightString(item.title))},on:{"click":function($event){return _vm.selectItem(item)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();return _vm.selectItem(item)}}})})],2)]:_vm._e()],2):_vm._e()]):_vm._e()}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 182 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5886,7 +6152,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _brandCard = __webpack_require__(183);
+var _brandCard = __webpack_require__(185);
 
 var _brandCard2 = _interopRequireDefault(_brandCard);
 
@@ -5895,7 +6161,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _brandCard2.default;
 
 /***/ }),
-/* 183 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5906,7 +6172,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'brand-card',
-    template: __webpack_require__(184),
+    template: __webpack_require__(186),
     props: {
         body: {
             type: String,
@@ -5926,13 +6192,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 184 */
+/* 186 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"brand-card\">\n    <div class=\"brand-card__image-wrapper\">\n        <responsive-picture v-bind=\"image\"></responsive-picture>\n    </div>\n    <template v-if=\"body && type === 'text'\">\n        <p class=\"brand-card__quote\">{{body}}</p>\n    </template>\n    <template v-else-if=\"body\">\n        <q class=\"brand-card__quote\">{{body}}</q>\n    </template>\n</div>";
 
 /***/ }),
-/* 185 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5942,7 +6208,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _businessCard = __webpack_require__(186);
+var _businessCard = __webpack_require__(188);
 
 var _businessCard2 = _interopRequireDefault(_businessCard);
 
@@ -5951,7 +6217,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _businessCard2.default;
 
 /***/ }),
-/* 186 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5970,6 +6236,10 @@ var _vuePropertyDecorator = __webpack_require__(0);
 var _events = __webpack_require__(7);
 
 var _events2 = _interopRequireDefault(_events);
+
+var _businessCardVue = __webpack_require__(189);
+
+var _businessCardVue2 = _interopRequireDefault(_businessCardVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -6034,20 +6304,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], BusinessCard.prototype, "contentLink", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Object)], BusinessCard.prototype, "properties", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], BusinessCard.prototype, "clickEvent", void 0);
-BusinessCard = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'BusinessCard',
-    template: __webpack_require__(187)
+BusinessCard = __decorate([_businessCardVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'BusinessCard'
 })], BusinessCard);
 exports.default = BusinessCard;
 
 /***/ }),
-/* 187 */
+/* 189 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./business-card.vue.html?vue&type=custom&index=0&blockType=p\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"business-card",attrs:{"href":_vm.contentLink.url,"rel":"noopener","target":"_blank","tabindex":"0"},on:{"click":function($event){_vm.clickEvent ? _vm.$emitPublic(_vm.clickEventType, _vm.clickEventData) : ''}}},[_c('div',{staticClass:"business-card__header"},[_c('div',{staticClass:"business-card__image-wrapper"},[(_vm.image)?_c('responsive-picture',_vm._b({},'responsive-picture',_vm.mapImage(_vm.image),false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"business-card__description"},[_c('h4',{staticClass:"business-card__title"},[_vm._v("\n                "+_vm._s(_vm.title)+"\n            ")]),_vm._v(" "),_vm._l((_vm.properties),function(property){return (_vm.properties)?_c('p',{staticClass:"business-card__property"},[_vm._v("\n                "+_vm._s(property.value)+" "+_vm._s(property.label)+"\n            ")]):_vm._e()})],2)]),_vm._v(" "),_c('div',{staticClass:"business-card__footer"},[_c('span',{staticClass:"link faux-content-link business-card__link"},[_c('span',{staticClass:"link__underline"},[_vm._v("\n                "+_vm._s(_vm.contentLink.label)+"\n            ")])])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 188 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6057,7 +6337,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _card = __webpack_require__(189);
+var _card = __webpack_require__(191);
 
 var _card2 = _interopRequireDefault(_card);
 
@@ -6066,7 +6346,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _card2.default;
 
 /***/ }),
-/* 189 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6126,18 +6406,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Card.prototype, "card", void 0);
 Card = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'card',
-    template: __webpack_require__(190)
+    template: __webpack_require__(192)
 })], Card);
 exports.default = Card;
 
 /***/ }),
-/* 190 */
+/* 192 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"card\" :class=\"classObject\" tabindex=\"0\">\n    <div class=\"card__visual\">\n        <div class=\"card__image\" v-if=\"card.image\">\n            <responsive-picture class=\"img--responsive\" v-if=\"card.image.mobileWidth\" v-bind=\"card.image\" ></responsive-picture>\n            <cms-image class=\"img--responsive\" v-else :image=\"card.image[0]\" :orientation=\"'square'\"></cms-image>\n        </div>\n        <icon v-if=\"card.icon\" :icon-name=\"card.icon.iconName\" class=\"card__icon\"></icon>\n    </div>\n    <div class=\"card__content\">\n        <h3 class=\"card__headline\">{{ card.title }}</h3>\n        <p class=\"card__description\" v-if=\"card.description\">{{ card.description }}</p>\n        <content-link class=\"link\" v-if=\"card.contentLink && card.contentLink.href\" :block=\"'card'\" :url=\"card.contentLink.href\" :label=\"card.contentLink.text\">\n        </content-link>\n    </div>\n</article>\n\n";
 
 /***/ }),
-/* 191 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6147,7 +6427,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _cardProduct = __webpack_require__(192);
+var _cardProduct = __webpack_require__(194);
 
 var _cardProduct2 = _interopRequireDefault(_cardProduct);
 
@@ -6156,7 +6436,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _cardProduct2.default;
 
 /***/ }),
-/* 192 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6171,6 +6451,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _cardProductVue = __webpack_require__(195);
+
+var _cardProductVue2 = _interopRequireDefault(_cardProductVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -6232,20 +6518,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array }), __metadata("design:type", Object)], CardProduct.prototype, "properties", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], CardProduct.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], CardProduct.prototype, "url", void 0);
-CardProduct = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'CardProduct',
-    template: __webpack_require__(193)
+CardProduct = __decorate([_cardProductVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'CardProduct'
 })], CardProduct);
 exports.default = CardProduct;
 
 /***/ }),
-/* 193 */
+/* 195 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"card-product"},[_c('anchor-overlay',{attrs:{"url":_vm.url,"title":_vm.title}}),_vm._v(" "),_c('div',{staticClass:"card-product__image-container"},[(_vm.image && !_vm.imageError)?_c('c-image',_vm._b({staticClass:"card-product__image",attrs:{"resize-behavior":"crop"},on:{"error":function($event){_vm.imageError = true}}},'c-image',_vm.image,false)):_vm._e(),_vm._v(" "),(!_vm.image || _vm.imageError)?_c('div',{staticClass:"img--contain card-product__image gray-background"},[_vm._v(_vm._s(_vm.title))]):_vm._e()],1),_vm._v(" "),_c('h3',{staticClass:"card-product__heading"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('list-unordered',{staticClass:"card-product__list",attrs:{"listItems":_vm.listItems}})],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 194 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6255,7 +6551,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _color = __webpack_require__(195);
+var _color = __webpack_require__(197);
 
 var _color2 = _interopRequireDefault(_color);
 
@@ -6264,7 +6560,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _color2.default;
 
 /***/ }),
-/* 195 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6280,7 +6576,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _color = __webpack_require__(196);
+var _color = __webpack_require__(198);
+
+var _colorVue = __webpack_require__(199);
+
+var _colorVue2 = _interopRequireDefault(_colorVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -6334,14 +6636,13 @@ var Color = function (_Vue) {
     return Color;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __metadata("design:type", String)], Color.prototype, "background", void 0);
-Color = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'color',
-    template: __webpack_require__(197)
+Color = __decorate([_colorVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'color'
 })], Color);
 exports.default = Color;
 
 /***/ }),
-/* 196 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6377,13 +6678,24 @@ var Color = exports.Color = function () {
 }();
 
 /***/ }),
-/* 197 */
+/* 199 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"color"},[_c('div',{staticClass:"color__spec color__spec--show"},[_c('icon',{style:(_vm.styleIcon),attrs:{"icon-name":"show"}})],1),_vm._v(" "),_c('div',{staticClass:"color__spec color__spec--swatch",style:(_vm.styleBackground)})])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 198 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6393,7 +6705,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentBlock = __webpack_require__(199);
+var _contentBlock = __webpack_require__(201);
 
 var _contentBlock2 = _interopRequireDefault(_contentBlock);
 
@@ -6402,7 +6714,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentBlock2.default;
 
 /***/ }),
-/* 199 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6417,6 +6729,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _contentBlockVue = __webpack_require__(202);
+
+var _contentBlockVue2 = _interopRequireDefault(_contentBlockVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -6462,20 +6780,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentBlock.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentBlock.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentBlock.prototype, "cta", void 0);
-ContentBlock = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'ContentBlock',
-    template: __webpack_require__(200)
+ContentBlock = __decorate([_contentBlockVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'ContentBlock'
 })], ContentBlock);
 exports.default = ContentBlock;
 
 /***/ }),
-/* 200 */
+/* 202 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./content-block.vue.html?vue&type=custom&index=0&blockType=p\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-block disable-focus",attrs:{"tabIndex":"-1"}},[_c('div',{staticClass:"content-block-container__image"},[(_vm.image)?_c('c-image',_vm._b({staticClass:"content-block__image",attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"content-block__content"},[_c('h3',{staticClass:"content-block__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('p',{staticClass:"content-block__description"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 201 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6485,7 +6813,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentToggle = __webpack_require__(202);
+var _contentToggle = __webpack_require__(204);
 
 var _contentToggle2 = _interopRequireDefault(_contentToggle);
 
@@ -6494,7 +6822,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentToggle2.default;
 
 /***/ }),
-/* 202 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6505,7 +6833,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'content-toggle',
-    template: __webpack_require__(203),
+    template: __webpack_require__(205),
     props: {
         toggleState: {
             type: Boolean,
@@ -6544,13 +6872,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 203 */
+/* 205 */
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"toggle toggle--icon\" role=\"button\" tabindex=\"0\" @click=\"toggle\"\n       @keyup.enter=\"toggle\">\n    <icon :icon-name=\"toggleIcon\"></icon>\n    <span>{{ toggleText }}</span>\n</a>\n";
 
 /***/ }),
-/* 204 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6560,7 +6888,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ctaBlock = __webpack_require__(205);
+var _ctaBlock = __webpack_require__(207);
 
 var _ctaBlock2 = _interopRequireDefault(_ctaBlock);
 
@@ -6569,7 +6897,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _ctaBlock2.default;
 
 /***/ }),
-/* 205 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6584,6 +6912,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _ctaBlockVue = __webpack_require__(208);
+
+var _ctaBlockVue2 = _interopRequireDefault(_ctaBlockVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -6653,20 +6987,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], CtaBlock.prototype, "styleContentLink", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], CtaBlock.prototype, "modContentLink", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], CtaBlock.prototype, "modContentButton", void 0);
-CtaBlock = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'cta-block',
-    template: __webpack_require__(206)
+CtaBlock = __decorate([_ctaBlockVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'cta-block'
 })], CtaBlock);
 exports.default = CtaBlock;
 
 /***/ }),
-/* 206 */
+/* 208 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.ctas.length > 0)?_c('div',{staticClass:"cta__block",class:_vm.classMod},[_vm._l((_vm.ctas),function(cta,index){return [_c(cta.type,_vm._b({key:index,tag:"component",class:_vm.classObject(cta.type),attrs:{"label":cta.label,"mod":_vm.modifier(cta.type)}},'component',cta,false))]})],2):_vm._e()}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 207 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6676,7 +7020,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _currency = __webpack_require__(208);
+var _currency = __webpack_require__(210);
 
 var _currency2 = _interopRequireDefault(_currency);
 
@@ -6685,7 +7029,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _currency2.default;
 
 /***/ }),
-/* 208 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6703,7 +7047,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'currency',
-    template: __webpack_require__(209),
+    template: __webpack_require__(211),
     props: {
         amount: {
             type: Number,
@@ -6725,13 +7069,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 209 */
+/* 211 */
 /***/ (function(module, exports) {
 
 module.exports = "<span class=\"currency\">\n    <span class=\"currency__type\">{{ currencyType }}</span>\n    {{ formattedAmount }}\n</span>\n";
 
 /***/ }),
-/* 210 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6741,7 +7085,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _fauxVerticalScroll = __webpack_require__(211);
+var _fauxVerticalScroll = __webpack_require__(213);
 
 var _fauxVerticalScroll2 = _interopRequireDefault(_fauxVerticalScroll);
 
@@ -6750,7 +7094,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _fauxVerticalScroll2.default;
 
 /***/ }),
-/* 211 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6768,11 +7112,11 @@ var _vuePropertyDecorator = __webpack_require__(0);
 
 var _gsap = __webpack_require__(3);
 
-var _Draggable = __webpack_require__(212);
+var _Draggable = __webpack_require__(214);
 
 var _Draggable2 = _interopRequireDefault(_Draggable);
 
-__webpack_require__(213);
+__webpack_require__(215);
 
 var _defaults = __webpack_require__(4);
 
@@ -6785,6 +7129,10 @@ var _viewport2 = _interopRequireDefault(_viewport);
 var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
+
+var _fauxVerticalScrollVue = __webpack_require__(217);
+
+var _fauxVerticalScrollVue2 = _interopRequireDefault(_fauxVerticalScrollVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -6935,20 +7283,19 @@ var FauxVerticalScroll = function (_Vue) {
 
     return FauxVerticalScroll;
 }(_vuePropertyDecorator.Vue);
-FauxVerticalScroll = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'faux-vertical-scroll',
-    template: __webpack_require__(215)
+FauxVerticalScroll = __decorate([_fauxVerticalScrollVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'faux-vertical-scroll'
 })], FauxVerticalScroll);
 exports.default = FauxVerticalScroll;
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__212__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__214__;
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6974,7 +7321,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
  * @author: Jack Doyle, jack@greensock.com
  */
 
-var _TweenLite = __webpack_require__(214);
+var _TweenLite = __webpack_require__(216);
 
 _TweenLite._gsScope._gsDefine("plugins.ThrowPropsPlugin", ["utils.VelocityTracker", "plugins.TweenPlugin", "TweenLite", "easing.Ease"], function (VelocityTracker) {
 
@@ -7707,19 +8054,30 @@ exports.default = ThrowPropsPlugin;
 var VelocityTracker = exports.VelocityTracker = _TweenLite.globals.com.greensock.utils.VelocityTracker;
 
 /***/ }),
-/* 214 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__214__;
-
-/***/ }),
-/* 215 */
-/***/ (function(module, exports) {
-
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./faux-vertical-scroll.vue.html?vue&type=custom&index=0&blockType=slot\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
-
-/***/ }),
 /* 216 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__216__;
+
+/***/ }),
+/* 217 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"container",staticClass:"faux-vertical-scroll"},[_c('div',{ref:"content",staticClass:"faux-vertical-scroll__content"},[_vm._t("default")],2),_vm._v(" "),_c('div',{ref:"bar",staticClass:"faux-vertical-scroll__bar",style:(_vm.barStyle())})])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7729,7 +8087,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _flyout = __webpack_require__(217);
+var _flyout = __webpack_require__(219);
 
 var _flyout2 = _interopRequireDefault(_flyout);
 
@@ -7738,7 +8096,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _flyout2.default;
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7938,18 +8296,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }),
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], Flyout.prototype, "disableKeyboardEvents", void 0);
 Flyout = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'flyout',
-    template: __webpack_require__(218)
+    template: __webpack_require__(220)
 })], Flyout);
 exports.default = Flyout;
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+module.exports = "<ul class=\"main-nav__flyout\"\n    v-if=\"items && items.length > 0\"\n    @keydown.down=\"selectNextLink\"\n    @keydown.tab.exact=\"selectNextLink\"\n    @keydown.up=\"selectPrevLink\"\n    @keydown.tab.shift.exact=\"selectPrevLink\"\n    @keydown.right=\"selectNextSection($event, true)\"\n    @keydown.left=\"selectPrevSection($event, true)\"\n    @mouseenter.stop=\"open\"\n    v-show=\"isCompact || !viewportUtil.isResizing\">\n    <flyout-section ref=\"items\"\n        v-for=\"(item, key) in items\"\n        v-if=\"item.items && item.items.length\"\n        v-bind=\"item\"\n        :is-compact=\"isCompact\"\n        :key=\"key\"\n        :itemId=\"`flyout_title_${ uniqId }_${ key }`\"\n        @close=\"$emit('close')\"\n        >\n    </flyout-section>\n</ul>\n";
 
 /***/ }),
-/* 219 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7959,7 +8317,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _flyoutSection = __webpack_require__(220);
+var _flyoutSection = __webpack_require__(222);
 
 var _flyoutSection2 = _interopRequireDefault(_flyoutSection);
 
@@ -7968,7 +8326,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _flyoutSection2.default;
 
 /***/ }),
-/* 220 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7983,6 +8341,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _flyoutSectionVue = __webpack_require__(223);
+
+var _flyoutSectionVue2 = _interopRequireDefault(_flyoutSectionVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
@@ -8154,20 +8518,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, def
         return "flyout_title_" + ~~(Math.random() * 10000);
     } }), __metadata("design:type", String)], Flyout.prototype, "itemId", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('focusIndex'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", void 0)], Flyout.prototype, "onFocusIndex", null);
-Flyout = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'flyout-section',
-    template: __webpack_require__(221)
+Flyout = __decorate([_flyoutSectionVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'flyout-section'
 })], Flyout);
 exports.default = Flyout;
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"flyout__section",class:_vm.sectionClass},[(_vm.label)?_c('strong',{staticClass:"flyout__title",attrs:{"id":_vm.itemId}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"flyout__list",attrs:{"aria-labelledby":_vm.itemId,"aria-haspopup":_vm.items.length > _vm.maxVisible,"aria-expanded":!_vm.isCompact || _vm.isExpanded}},[_vm._l((_vm.items),function(item,index){return (index < _vm.maxVisible)?_c('li',{staticClass:"flyout__list-item"},[_c('content-link',{ref:"firstFocusableLinks",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && ! _vm.isExpanded),expression:"flyoutToggleIsVisible && ! isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:_vm.flyoutToggleIsVisible && ! _vm.isExpanded ? 'focusable' : '',staticClass:"flyout__toggle",attrs:{"toggle-state":false,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1),_vm._v(" "),_vm._l((_vm.items),function(item,index){return (index >= _vm.maxVisible)?_c('li',{directives:[{name:"show",rawName:"v-show",value:(!_vm.isCompact || _vm.isExpanded),expression:"!isCompact || isExpanded"}],staticClass:"flyout__list-item"},[_c('content-link',{ref:"focusable",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && _vm.isExpanded),expression:"flyoutToggleIsVisible && isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:"flyoutToggleIsVisible && isExpanded ? 'focusable' : ''",staticClass:"flyout__toggle",attrs:{"toggle-state":true,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1)],2),_vm._v(" "),(_vm.bottomItem)?[_c('content-link',{ref:"bottomLink",staticClass:"link flyout__link--cta-mini",attrs:{"url":_vm.bottomItem.url,"label":_vm.bottomItem.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})]:_vm._e()],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8177,7 +8551,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _footerBlock = __webpack_require__(223);
+var _footerBlock = __webpack_require__(225);
 
 var _footerBlock2 = _interopRequireDefault(_footerBlock);
 
@@ -8186,7 +8560,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _footerBlock2.default;
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8199,6 +8573,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _footerBlockVue = __webpack_require__(226);
+
+var _footerBlockVue2 = _interopRequireDefault(_footerBlockVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -8230,20 +8610,30 @@ var FooterBlock = function (_Vue) {
     return FooterBlock;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], FooterBlock.prototype, "ctas", void 0);
-FooterBlock = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'FooterBlock',
-    template: __webpack_require__(224)
+FooterBlock = __decorate([_footerBlockVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'FooterBlock'
 })], FooterBlock);
 exports.default = FooterBlock;
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer-block"},[(_vm.ctas)?_c('cta-block',{attrs:{"ctas":_vm.ctas.ctas,"styleContentButton":"button","mod":"footer","block":"overview"}}):_vm._e()],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 225 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8253,7 +8643,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _footerNav = __webpack_require__(226);
+var _footerNav = __webpack_require__(228);
 
 var _footerNav2 = _interopRequireDefault(_footerNav);
 
@@ -8262,7 +8652,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _footerNav2.default;
 
 /***/ }),
-/* 226 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8275,6 +8665,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _footerNavVue = __webpack_require__(229);
+
+var _footerNavVue2 = _interopRequireDefault(_footerNavVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -8306,20 +8702,30 @@ var FooterNav = function (_Vue) {
     return FooterNav;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], FooterNav.prototype, "navigation", void 0);
-FooterNav = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'footer-nav',
-    template: __webpack_require__(227)
+FooterNav = __decorate([_footerNavVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'footer-nav'
 })], FooterNav);
 exports.default = FooterNav;
 
 /***/ }),
-/* 227 */
+/* 229 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.navigation && _vm.navigation.length)?_c('nav',{staticClass:"footer__nav"},[_c('div',{staticClass:"flexgrid"},[_c('div',{staticClass:"flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6"},[_c('div',{staticClass:"flexgrid"},[(_vm.navigation.length > 0)?_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"footer-nav__column"},[_c('h3',{staticClass:"footer-nav__title",attrs:{"id":"footer-nav__title-01"}},[_vm._v(_vm._s(_vm.navigation[0].label))]),_vm._v(" "),(_vm.navigation[0].items.length)?[_c('content-link-list',{attrs:{"links":_vm.navigation[0].items,"block":"footer-nav","aria-labelledby":"footer-nav__title-01"}})]:_vm._e()],2)]):_vm._e(),_vm._v(" "),(_vm.navigation.length > 1)?_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"footer-nav__column"},[_c('h3',{staticClass:"footer-nav__title",attrs:{"id":"footer-nav__title-02"}},[_vm._v(_vm._s(_vm.navigation[1].label))]),_vm._v(" "),(_vm.navigation[1].items.length)?[_c('content-link-list',{attrs:{"links":_vm.navigation[1].items,"block":"footer-nav","aria-labelledby":"footer-nav__title-02"}})]:_vm._e()],2)]):_vm._e()])]),_vm._v(" "),(_vm.navigation.length > 2)?_c('div',{staticClass:"flexgrid__cell--xxs-6 flexgrid__cell--xs-4 flexgrid__cell--sm-6"},[_c('div',{staticClass:"footer-nav__column footer-nav__column--last footer-nav__column--double"},[_c('h3',{staticClass:"footer-nav__title",attrs:{"id":"footer-nav__title-03"}},[_vm._v(_vm._s(_vm.navigation[2].label))]),_vm._v(" "),(_vm.navigation[2].items.length)?[_c('content-link-list',{attrs:{"links":_vm.navigation[2].items,"block":"footer-nav","aria-labelledby":"footer-nav__title-03"}})]:_vm._e()],2)]):_vm._e()])]):_vm._e()}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8329,7 +8735,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _headerBlock = __webpack_require__(229);
+var _headerBlock = __webpack_require__(231);
 
 var _headerBlock2 = _interopRequireDefault(_headerBlock);
 
@@ -8338,7 +8744,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _headerBlock2.default;
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8385,18 +8791,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeaderBlock.prototype, "subtitle", void 0);
 HeaderBlock = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'HeaderBlock',
-    template: __webpack_require__(230)
+    template: __webpack_require__(232)
 })], HeaderBlock);
 exports.default = HeaderBlock;
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./header-block.vue.html?vue&type=custom&index=0&blockType=slot\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+module.exports = "<header class=\"header-block\">\n    <slot>\n        <h2 class=\"header-block__title\" v-if=\"title\">{{ title }}</h2>\n        <p class=\"header-block__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n    </slot>\n</header>\n";
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8406,7 +8812,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _iconButton = __webpack_require__(232);
+var _iconButton = __webpack_require__(234);
 
 var _iconButton2 = _interopRequireDefault(_iconButton);
 
@@ -8415,7 +8821,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _iconButton2.default;
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8430,6 +8836,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _iconButtonVue = __webpack_require__(235);
+
+var _iconButtonVue2 = _interopRequireDefault(_iconButtonVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -8475,20 +8887,30 @@ var IconButton = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], IconButton.prototype, "buttonClass", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __metadata("design:type", String)], IconButton.prototype, "buttonAriaLabel", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], IconButton.prototype, "iconName", void 0);
-IconButton = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'icon-button',
-    template: __webpack_require__(233)
+IconButton = __decorate([_iconButtonVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'icon-button'
 })], IconButton);
 exports.default = IconButton;
 
 /***/ }),
-/* 233 */
+/* 235 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./icon-button.vue.html?vue&type=custom&index=0&blockType=slot\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"icon-button",class:_vm.buttonClass,attrs:{"aria-label":_vm.buttonAriaLabel,"role":"button","tabindex":"0"},on:{"click":function($event){return _vm.$emit('click')},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.$emit('click')}}},[_c('icon',{staticClass:"icon-button__icon",attrs:{"icon-name":_vm.iconName}}),_vm._v(" "),(_vm.hasDefaultSlot)?_c('span',{staticClass:"icon-button__label"},[_vm._t("default")],2):_vm._e()],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 234 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8498,7 +8920,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _legalNav = __webpack_require__(235);
+var _legalNav = __webpack_require__(237);
 
 var _legalNav2 = _interopRequireDefault(_legalNav);
 
@@ -8507,7 +8929,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _legalNav2.default;
 
 /***/ }),
-/* 235 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8520,6 +8942,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _legalNavVue = __webpack_require__(238);
+
+var _legalNavVue2 = _interopRequireDefault(_legalNavVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -8552,20 +8980,30 @@ var LegalNav = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], LegalNav.prototype, "navigation", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], LegalNav.prototype, "label", void 0);
-LegalNav = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'legal-nav',
-    template: __webpack_require__(236)
+LegalNav = __decorate([_legalNavVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'legal-nav'
 })], LegalNav);
 exports.default = LegalNav;
 
 /***/ }),
-/* 236 */
+/* 238 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./legal-nav.vue.html?vue&type=custom&index=0&blockType=p\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"legal"},[_c('p',{staticClass:"legal__copyright-label"},[_c('small',{domProps:{"innerHTML":_vm._s(_vm.label)}})]),_vm._v(" "),(_vm.navigation && _vm.navigation.length)?[_c('nav',{staticClass:"legal__nav"},[_c('content-link-list',{attrs:{"links":_vm.navigation,"block":"legal"}})],1)]:_vm._e()],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 237 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8575,7 +9013,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _listSection = __webpack_require__(238);
+var _listSection = __webpack_require__(240);
 
 var _listSection2 = _interopRequireDefault(_listSection);
 
@@ -8584,7 +9022,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _listSection2.default;
 
 /***/ }),
-/* 238 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8612,7 +9050,7 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _functions = __webpack_require__(239);
+var _functions = __webpack_require__(241);
 
 var _browserCapabilities = __webpack_require__(2);
 
@@ -8621,6 +9059,10 @@ var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 var _events = __webpack_require__(7);
 
 var _events2 = _interopRequireDefault(_events);
+
+var _listSectionVue = __webpack_require__(242);
+
+var _listSectionVue2 = _interopRequireDefault(_listSectionVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8806,14 +9248,13 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ListSection.prototype, "tooltip", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ListSection.prototype, "limit", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ListSection.prototype, "expand", void 0);
-ListSection = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'ListSection',
-    template: __webpack_require__(240)
+ListSection = __decorate([_listSectionVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'ListSection'
 })], ListSection);
 exports.default = ListSection;
 
 /***/ }),
-/* 239 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8847,13 +9288,24 @@ var keyValueMap = exports.keyValueMap = function keyValueMap(arr) {
 };
 
 /***/ }),
-/* 240 */
+/* 242 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"list-section",class:_vm.defineCardTypesClass()},[(_vm.title)?[_c('header',{staticClass:"list-section__header"},[_c('h3',{staticClass:"list-section__title"},[_vm._v(_vm._s(_vm.title)+"\n                "),_c('span',{staticClass:"list-section__count"},[_vm._v("("+_vm._s(_vm.cards.length)+")")]),_vm._v(" "),(_vm.tooltip)?[_c('transition',{attrs:{"name":"tooltip"}},[_c('tooltip',_vm._b({directives:[{name:"show",rawName:"v-show",value:(_vm.visibleTooltip),expression:"visibleTooltip"}],staticClass:"section-tooltip",attrs:{"block":"list-section","id":("tooltip_" + _vm.uniqId)}},'tooltip',_vm.tooltip,false),[_vm._v("\n                            "+_vm._s(_vm.tooltip.description)+"\n                        ")])],1)]:_vm._e()],2),_vm._v(" "),(_vm.tooltip)?[(_vm.tooltip)?_c('action-button',{staticClass:"link list-section__info-link",attrs:{"icon":_vm.tooltip.icon,"mod":"reversed","role":"button","aria-describedby":("tooltip_" + _vm.uniqId)},nativeOn:{"click":function($event){$event.preventDefault();return _vm.toggleTooltip($event)},"blur":function($event){$event.preventDefault();return _vm.hideTooltip($event)}}},[_vm._v("\n                    "+_vm._s(_vm.tooltip.label)+"\n                ")]):_vm._e()]:_vm._e()],2)]:_vm._e(),_vm._v(" "),(_vm.cards && _vm.cards.length > 0)?_c('ul',{staticClass:"list-section-list",attrs:{"aria-label":_vm.title}},[_c('div',{staticClass:"flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"},_vm._l((_vm.cards),function(card,index){return (index < _vm.showMax)?_c('div',{key:index,staticClass:"flexgrid__cell--md-4 flexgrid__cell--xs-6"},[_c('li',{ref:"visible",refInFor:true,staticClass:"list-section-list__item"},[_c(card.type,_vm._b({tag:"component"},'component',card,false))],1)]):_vm._e()}),0),_vm._v(" "),(_vm.cards.length > _vm.showMax)?_c('transition-group',{staticClass:"flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden",attrs:{"tag":"div","css":false},on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter}},_vm._l((_vm.cards),function(card,index){return (index >= _vm.showMax)?_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.showHiddenItems),expression:"showHiddenItems"}],key:card.title + index,staticClass:"flexgrid__cell--md-4 flexgrid__cell--xs-6",attrs:{"data-index":index}},[_c('li',{staticClass:"list-section-list__item"},[_c(card.type,_vm._b({tag:"component"},'component',card,false))],1)]):_vm._e()}),0):_vm._e()],1):_vm._e(),_vm._v(" "),(_vm.cards.length > _vm.showMax && _vm.showMax && !_vm.showHiddenItems)?_c('footer',{staticClass:"list-section__footer"},[_c('button',{staticClass:"button--secondary list-section__footer__button",on:{"click":_vm.showHidden}},[_vm._v(_vm._s(_vm.showCount())+"\n        ")])]):_vm._e()],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 241 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8863,7 +9315,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _component = __webpack_require__(242);
+var _component = __webpack_require__(244);
 
 var _component2 = _interopRequireDefault(_component);
 
@@ -8872,7 +9324,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _component2.default;
 
 /***/ }),
-/* 242 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8885,6 +9337,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _templateVue = __webpack_require__(245);
+
+var _templateVue2 = _interopRequireDefault(_templateVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -8916,20 +9374,30 @@ var ListUnordered = function (_Vue) {
     return ListUnordered;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], ListUnordered.prototype, "listItems", void 0);
-ListUnordered = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'ListUnordered',
-    template: __webpack_require__(243)
+ListUnordered = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'ListUnordered'
 })], ListUnordered);
 exports.default = ListUnordered;
 
 /***/ }),
-/* 243 */
+/* 245 */
 /***/ (function(module, exports) {
 
-module.exports = "import { render, staticRenderFns } from \"./template.vue.html?vue&type=template&id=102cebf8&v-else=true&\"\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{staticClass:"list"},[_vm._l((_vm.listItems.items),function(item,index){return [(!item.item)?[_c(_vm.listItems.type,{key:index,tag:"component",attrs:{"item":item}})]:[_c(_vm.listItems.type,_vm._b({key:index,tag:"component"},'component',item,false))]]})],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 244 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8939,7 +9407,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _mainNav = __webpack_require__(245);
+var _mainNav = __webpack_require__(247);
 
 var _mainNav2 = _interopRequireDefault(_mainNav);
 
@@ -8948,7 +9416,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _mainNav2.default;
 
 /***/ }),
-/* 245 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8971,6 +9439,10 @@ var _viewport2 = _interopRequireDefault(_viewport);
 var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
+
+var _mainNavVue = __webpack_require__(248);
+
+var _mainNavVue2 = _interopRequireDefault(_mainNavVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9038,20 +9510,30 @@ var MainNav = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Array)], MainNav.prototype, "items", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], MainNav.prototype, "mainNavOpen", void 0);
-MainNav = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'main-nav',
-    template: __webpack_require__(246)
+MainNav = __decorate([_mainNavVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'main-nav'
 })], MainNav);
 exports.default = MainNav;
 
 /***/ }),
-/* 246 */
+/* 248 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{key:"large-menu",staticClass:"main-nav",class:_vm.classList,attrs:{"aria-label":"site"}},[_c('ul',{staticClass:"main-nav__list",class:{'main-nav__list-visible': _vm.mainNavOpen && _vm.showCompactMenu},attrs:{"role":"menu"}},_vm._l((_vm.items),function(item,index){return (_vm.items)?_c('main-nav-item',_vm._b({key:index,ref:"navItem",refInFor:true,attrs:{"is-compact":_vm.showCompactMenu,"main-nav-open":_vm.mainNavOpen,"active":false,"itemId":'nav-' + index}},'main-nav-item',item,false)):_vm._e()}),1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 247 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9061,7 +9543,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _mainNavItem = __webpack_require__(248);
+var _mainNavItem = __webpack_require__(250);
 
 var _mainNavItem2 = _interopRequireDefault(_mainNavItem);
 
@@ -9070,7 +9552,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _mainNavItem2.default;
 
 /***/ }),
-/* 248 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9089,6 +9571,10 @@ var _vuePropertyDecorator = __webpack_require__(0);
 var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
+
+var _mainNavItemVue = __webpack_require__(251);
+
+var _mainNavItemVue2 = _interopRequireDefault(_mainNavItemVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9352,20 +9838,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], MainNavItem.prototype, "isCompact", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], MainNavItem.prototype, "active", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('flyoutIsOpen'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", Promise)], MainNavItem.prototype, "function", null);
-MainNavItem = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'main-nav-item',
-    template: __webpack_require__(249)
+MainNavItem = __decorate([_mainNavItemVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'main-nav-item'
 })], MainNavItem);
 exports.default = MainNavItem;
 
 /***/ }),
-/* 249 */
+/* 251 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"main-nav__item",class:{ 'main-nav__item--active': _vm.active },attrs:{"role":"menuitem"},on:{"mouseleave":_vm.delayHideFlyout,"mouseenter":_vm.showFlyout}},[_c('div',{on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }$event.preventDefault();return _vm.selectFlyoutFirstLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }if($event.ctrlKey||$event.altKey||$event.metaKey){ return null; }return _vm.hideFlyout($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }$event.preventDefault();return _vm.hideFlyout($event)}]}},[_c('base-link',{ref:"parent",staticClass:"main-nav__link",attrs:{"url":_vm.url,"aria-haspopup":"true","aria-controls":_vm.itemId,"aria-current":_vm.isActive,"label":_vm.label,"aria-expanded":!_vm.isCompact && _vm.flyoutIsOpen},on:{"focus":_vm.showFlyout},nativeOn:{"click":function($event){return _vm.hideFlyout($event)}}})],1),_vm._v(" "),_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(_vm.toggleIsVisible),expression:"toggleIsVisible"}],staticClass:"icon-button--small main-nav__toggle disable-focus",attrs:{"icon-name":_vm.angleDirection,"tabindex":"-1"},on:{"click":_vm.toggleFlyout}}),_vm._v(" "),(_vm.items)?_c('flyout',{ref:"flyout",staticClass:"flyout--large",class:{ 'flyout--is-open': _vm.flyoutIsOpen },attrs:{"id":_vm.itemId,"items":_vm.items,"is-compact":_vm.isCompact},on:{"open":_vm.showFlyout,"close":_vm.hideFlyout,"main":_vm.selectParent},nativeOn:{"keydown":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.selectParent($event)}}}):_vm._e()],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 250 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9375,7 +9871,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _modal = __webpack_require__(251);
+var _modal = __webpack_require__(253);
 
 var _modal2 = _interopRequireDefault(_modal);
 
@@ -9384,7 +9880,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _modal2.default;
 
 /***/ }),
-/* 251 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9401,6 +9897,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var _vuePropertyDecorator = __webpack_require__(0);
 
 var _gsap = __webpack_require__(3);
+
+var _modalVue = __webpack_require__(254);
+
+var _modalVue2 = _interopRequireDefault(_modalVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9492,20 +9994,30 @@ var Modal = function (_Vue) {
 
     return Modal;
 }(_vuePropertyDecorator.Vue);
-Modal = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'modal',
-    template: __webpack_require__(252)
+Modal = __decorate([_modalVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'modal'
 })], Modal);
 exports.default = Modal;
 
 /***/ }),
-/* 252 */
+/* 254 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./modal.vue.html?vue&type=custom&index=0&blockType=slot\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"modal"},on:{"enter":_vm.enter,"leave":_vm.leave}},[_c('div',{staticClass:"modal",on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.closeModal($event)}}},[_c('div',{ref:"overlay",staticClass:"modal__overlay"}),_vm._v(" "),_c('icon-button',{ref:"close",staticClass:"modal__close",attrs:{"icon-name":"close"}}),_vm._v(" "),_c('div',{ref:"modal",staticClass:"modal__content",on:{"click":function($event){$event.stopPropagation();}}},[_c('div',{staticClass:"modal__header"},[_vm._t("header")],2),_vm._v(" "),_vm._t("default")],2)],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 253 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9515,7 +10027,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pager = __webpack_require__(254);
+var _pager = __webpack_require__(256);
 
 var _pager2 = _interopRequireDefault(_pager);
 
@@ -9524,7 +10036,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pager2.default;
 
 /***/ }),
-/* 254 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9544,7 +10056,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'pager',
-    template: __webpack_require__(255),
+    template: __webpack_require__(257),
     data: function data() {
         return {
             indicatorActive: false,
@@ -9619,13 +10131,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 255 */
+/* 257 */
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"pager\" aria-label=\"pagination\">\n    <ul class=\"pager__list\">\n        <li ref=\"indicator\" class=\"pager__active-page\" aria-hidden=\"true\">\n            <icon class=\"pager__active-page-indicator\" icon-name=\"hexagon-fill\"></icon>\n        </li>\n        <li ref=\"page\" v-for=\"(page, index) in pages\" \n            class=\"pager__page\" >\n            <a class=\"pager__page-indicator\" @click=\"changeIndex(index)\"\n                aria-role=\"button\" \n                :aria-label=\"getAriaLabel(index)\" \n                :aria-current='index === activeIndex'>\n                <icon icon-name=\"hexagon\"></icon>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
-/* 256 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9635,7 +10147,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _product = __webpack_require__(257);
+var _product = __webpack_require__(259);
 
 var _product2 = _interopRequireDefault(_product);
 
@@ -9644,7 +10156,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _product2.default;
 
 /***/ }),
-/* 257 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9657,6 +10169,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _productVue = __webpack_require__(260);
+
+var _productVue2 = _interopRequireDefault(_productVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9690,20 +10208,30 @@ var Product = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Product.prototype, "icon", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Product.prototype, "name", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Product.prototype, "pricing", void 0);
-Product = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'Product',
-    template: __webpack_require__(258)
+Product = __decorate([_productVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Product'
 })], Product);
 exports.default = Product;
 
 /***/ }),
-/* 258 */
+/* 260 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./product.vue.html?vue&type=custom&index=0&blockType=p\"\nif (typeof block0 === 'function') block0(component)\nimport block1 from \"./product.vue.html?vue&type=custom&index=1&blockType=p\"\nif (typeof block1 === 'function') block1(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"product"},[_c('div',{staticClass:"product__icon-container"},[_c('icon',{staticClass:"product__icon",attrs:{"icon-name":_vm.icon}})],1),_vm._v(" "),_c('div',{staticClass:"product__information"},[_c('p',{staticClass:"product__name"},[_vm._v("\n            "+_vm._s(_vm.name)+"\n        ")]),_vm._v(" "),_c('p',{staticClass:"product__pricing"},[_vm._v("\n            "+_vm._s(_vm.pricing.label)+"\n        ")])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 259 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9713,7 +10241,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _searchBar = __webpack_require__(260);
+var _searchBar = __webpack_require__(262);
 
 var _searchBar2 = _interopRequireDefault(_searchBar);
 
@@ -9722,7 +10250,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _searchBar2.default;
 
 /***/ }),
-/* 260 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9737,6 +10265,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _searchBarVue = __webpack_require__(263);
+
+var _searchBarVue2 = _interopRequireDefault(_searchBarVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9802,20 +10336,30 @@ var SearchBar = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchBar.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchBar.prototype, "placeholder", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], SearchBar.prototype, "openState", void 0);
-SearchBar = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'search-bar',
-    template: __webpack_require__(261)
+SearchBar = __decorate([_searchBarVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'search-bar'
 })], SearchBar);
 exports.default = SearchBar;
 
 /***/ }),
-/* 261 */
+/* 263 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"search",attrs:{"action":"","id":"search"},on:{"submit":function($event){$event.preventDefault();return _vm.doSearch($event)}}},[_c('div',{attrs:{"role":"search"}},[_c('div',{staticClass:"search__inputholder"},[_c('label',{staticClass:"search__label",attrs:{"for":"search__input"}},[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.searchValue),expression:"searchValue"}],ref:"search__input",staticClass:"search__input",attrs:{"id":"search__input","type":"text","name":"search","placeholder":_vm.placeholder},domProps:{"value":(_vm.searchValue)},on:{"blur":_vm.onBlur,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.close($event)},"input":function($event){if($event.target.composing){ return; }_vm.searchValue=$event.target.value}}})]),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search__button","button-aria-label":"Search","icon-name":"search"},on:{"click":_vm.doSearch}}),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search__close-button","button-aria-label":"Close search","icon-name":"close"},on:{"click":_vm.close}})],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 262 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9825,7 +10369,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _socialNav = __webpack_require__(263);
+var _socialNav = __webpack_require__(265);
 
 var _socialNav2 = _interopRequireDefault(_socialNav);
 
@@ -9834,7 +10378,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _socialNav2.default;
 
 /***/ }),
-/* 263 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9847,6 +10391,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _socialNavVue = __webpack_require__(266);
+
+var _socialNavVue2 = _interopRequireDefault(_socialNavVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9874,20 +10424,30 @@ var SocialNav = function (_Vue) {
 
     return SocialNav;
 }(_vuePropertyDecorator.Vue);
-SocialNav = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'social-nav',
-    template: __webpack_require__(264)
+SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'social-nav'
 })], SocialNav);
 exports.default = SocialNav;
 
 /***/ }),
-/* 264 */
+/* 266 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"social-nav footer__social-nav"},[_c('ul',{staticClass:"social-nav__list",attrs:{"aria-label":"follow Ultimaker"}},[_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://nl.linkedin.com/company/ultimaker","aria-label":"LinkedIn"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"linkedin"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://twitter.com/Ultimaker","aria-label":"Twitter"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"twitter"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://www.youtube.com/user/Ultimaker3D","aria-label":"YouTube"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"youtube"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://www.facebook.com/Ultimaker","aria-label":"Facebook"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"facebook"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"http://instagram.com/ultimaker","aria-label":"Instagram"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"instagram"}})],1)])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 265 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9897,7 +10457,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _subnavigationItem = __webpack_require__(266);
+var _subnavigationItem = __webpack_require__(268);
 
 var _subnavigationItem2 = _interopRequireDefault(_subnavigationItem);
 
@@ -9906,7 +10466,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _subnavigationItem2.default;
 
 /***/ }),
-/* 266 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9919,6 +10479,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _subnavigationItemVue = __webpack_require__(269);
+
+var _subnavigationItemVue2 = _interopRequireDefault(_subnavigationItemVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9952,20 +10518,30 @@ var SubNavigationItem = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SubNavigationItem.prototype, "url", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], SubNavigationItem.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SubNavigationItem.prototype, "label", void 0);
-SubNavigationItem = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'SubNavigationItem',
-    template: __webpack_require__(267)
+SubNavigationItem = __decorate([_subnavigationItemVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'SubNavigationItem'
 })], SubNavigationItem);
 exports.default = SubNavigationItem;
 
 /***/ }),
-/* 267 */
+/* 269 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('base-link',{staticClass:"overflow-container__link link link--reversed",attrs:{"url":_vm.url}},[_c('div',{staticClass:"overflow-container__image-container"},[(_vm.image)?_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"overflow-container__label",attrs:{"aria-label":_vm.label}},[_c('span',{staticClass:"link__underline"},[_vm._v("\n            "+_vm._s(_vm.label)+"\n        ")])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 268 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9975,7 +10551,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _sysNav = __webpack_require__(269);
+var _sysNav = __webpack_require__(271);
 
 var _sysNav2 = _interopRequireDefault(_sysNav);
 
@@ -9984,7 +10560,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _sysNav2.default;
 
 /***/ }),
-/* 269 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9999,6 +10575,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _sysNavVue = __webpack_require__(272);
+
+var _sysNavVue2 = _interopRequireDefault(_sysNavVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -10041,20 +10623,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SysNav.prototype, "orderNowLabel", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'search' }), __metadata("design:type", String)], SysNav.prototype, "searchIcon", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SysNav.prototype, "searchLabel", void 0);
-SysNav = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'sys-nav',
-    template: __webpack_require__(270)
+SysNav = __decorate([_sysNavVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'sys-nav'
 })], SysNav);
 exports.default = SysNav;
 
 /***/ }),
-/* 270 */
+/* 272 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"sys-nav",attrs:{"aria-label":"quick access"}},[_c('ul',{staticClass:"sys-nav__list",attrs:{"role":"presentation"}},[_c('li',{staticClass:"sys-nav__item"},[(_vm.orderNowLink)?_c('base-link',{staticClass:"sys-nav__link",attrs:{"url":_vm.orderNowLink}},[_c('icon',{staticClass:"sys-nav__icon",attrs:{"icon-name":_vm.orderNowIcon}}),_vm._v(" "),_c('span',{staticClass:"sys-nav__label sys-nav__label--hidden-sm"},[_vm._v(_vm._s(_vm.orderNowLabel))])],1):_vm._e()],1),_vm._v(" "),_c('li',{staticClass:"sys-nav__item"},[_c('a',{staticClass:"sys-nav__link",attrs:{"role":"button","tabindex":"0"},on:{"click":_vm.openSearch,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.openSearch($event)}}},[_c('icon',{staticClass:"sys-nav__icon",attrs:{"icon-name":_vm.searchIcon}}),_vm._v(" "),_c('span',{staticClass:"sys-nav__label sys-nav__label--hidden-sm"},[_vm._v(_vm._s(_vm.searchLabel))])],1)])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 271 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10064,7 +10656,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tab = __webpack_require__(272);
+var _tab = __webpack_require__(274);
 
 var _tab2 = _interopRequireDefault(_tab);
 
@@ -10073,7 +10665,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tab2.default;
 
 /***/ }),
-/* 272 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10122,18 +10714,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tab.prototype, "active", void 0);
 Tab = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'Tab',
-    template: __webpack_require__(273)
+    template: __webpack_require__(275)
 })], Tab);
 exports.default = Tab;
 
 /***/ }),
-/* 273 */
+/* 275 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+module.exports = "<div :id=\"id\" class=\"tabs__content\" v-show=\"active\" role=\"tabpanel\" :aria-hidden=\"!active\" :aria-label=\"label\">\n    <template v-show=\"content\">\n        <component :is=\"content.type\"\n                   v-bind=\"content\">\n        </component>\n    </template>\n</div>\n";
 
 /***/ }),
-/* 274 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10143,7 +10735,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tabs = __webpack_require__(275);
+var _tabs = __webpack_require__(277);
 
 var _tabs2 = _interopRequireDefault(_tabs);
 
@@ -10152,7 +10744,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tabs2.default;
 
 /***/ }),
-/* 275 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10181,6 +10773,10 @@ var _gsap = __webpack_require__(3);
 var _defaults = __webpack_require__(4);
 
 var _defaults2 = _interopRequireDefault(_defaults);
+
+var _tabsVue = __webpack_require__(278);
+
+var _tabsVue2 = _interopRequireDefault(_tabsVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10323,20 +10919,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Number)], Tabs.prototype, "defaultTab", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], Tabs.prototype, "sequenced", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('activeTab'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], Tabs.prototype, "setActiveTab", null);
-Tabs = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'Tabs',
-    template: __webpack_require__(276)
+Tabs = __decorate([_tabsVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Tabs'
 })], Tabs);
 exports.default = Tabs;
 
 /***/ }),
-/* 276 */
+/* 278 */
 /***/ (function(module, exports) {
 
-module.exports = "import { render, staticRenderFns } from \"./tabs.vue.html?vue&type=template&id=02ac2c80&\"\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.tabs)?_c('div',{staticClass:"tabs"},[_c('div',{staticClass:"tabs__nav"},[_c('ul',{ref:"tabList",staticClass:"tabs__list",attrs:{"role":"tablist"}},[_vm._l((_vm.tabs),function(tab,index){return _c('li',{ref:"tab",refInFor:true,staticClass:"tabs__list_item",attrs:{"role":"presentation"}},[_c('a',{staticClass:"tabs__list_link",class:_vm.getLinkClassList(index),attrs:{"href":'#' + tab.id,"role":"tab","aria-controls":tab.id,"aria-selected":_vm.activeTab === index},on:{"click":function($event){$event.preventDefault();_vm.activeTab = index}}},[(_vm.sequenced)?_c('span',[_vm._v(_vm._s(((index+1) + ". ")))]):_vm._e(),_vm._v("\n                    "+_vm._s(tab.label)+"\n                ")])])}),_vm._v(" "),_c('li',{ref:"indicator",staticClass:"tabs__indicator",attrs:{"aria-hidden":"true","role":"none"}})],2)]),_vm._v(" "),_vm._l((_vm.tabs),function(tab,index){return _c('div',{staticClass:"tabs__contents"},[[_c(tab.type,_vm._b({key:index,tag:"component",attrs:{"id":tab.label+index,"active":_vm.activeTab === index}},'component',tab,false))]],2)})],2):_vm._e()}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 277 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10346,7 +10952,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tag = __webpack_require__(278);
+var _tag = __webpack_require__(280);
 
 var _tag2 = _interopRequireDefault(_tag);
 
@@ -10355,7 +10961,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tag2.default;
 
 /***/ }),
-/* 278 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10368,6 +10974,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _tagVue = __webpack_require__(281);
+
+var _tagVue2 = _interopRequireDefault(_tagVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -10399,20 +11011,30 @@ var Tag = function (_Vue) {
     return Tag;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Tag.prototype, "tag", void 0);
-Tag = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'tag',
-    template: __webpack_require__(279)
+Tag = __decorate([_tagVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'tag'
 })], Tag);
 exports.default = Tag;
 
 /***/ }),
-/* 279 */
+/* 281 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('label',{staticClass:"tag"},[_vm._v(_vm._s(_vm.tag.title))])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 280 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10422,7 +11044,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tagList = __webpack_require__(281);
+var _tagList = __webpack_require__(283);
 
 var _tagList2 = _interopRequireDefault(_tagList);
 
@@ -10431,7 +11053,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tagList2.default;
 
 /***/ }),
-/* 281 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10444,6 +11066,12 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _tagListVue = __webpack_require__(12);
+
+var _tagListVue2 = _interopRequireDefault(_tagListVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -10475,20 +11103,14 @@ var TagList = function (_Vue) {
     return TagList;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], TagList.prototype, "tags", void 0);
-TagList = __decorate([(0, _vuePropertyDecorator.Component)({
+TagList = __decorate([_tagListVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'tag-list',
-    template: __webpack_require__(282)
+    template: __webpack_require__(12)
 })], TagList);
 exports.default = TagList;
 
 /***/ }),
-/* 282 */
-/***/ (function(module, exports) {
-
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
-
-/***/ }),
-/* 283 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10498,7 +11120,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _blockIcon = __webpack_require__(284);
+var _blockIcon = __webpack_require__(285);
 
 var _blockIcon2 = _interopRequireDefault(_blockIcon);
 
@@ -10507,7 +11129,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _blockIcon2.default;
 
 /***/ }),
-/* 284 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10522,6 +11144,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _blockIconVue = __webpack_require__(286);
+
+var _blockIconVue2 = _interopRequireDefault(_blockIconVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -10567,20 +11195,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], BlockIcon.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], BlockIcon.prototype, "icon", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], BlockIcon.prototype, "cta", void 0);
-BlockIcon = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'BlockIcon',
-    template: __webpack_require__(285)
+BlockIcon = __decorate([_blockIconVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'BlockIcon'
 })], BlockIcon);
 exports.default = BlockIcon;
 
 /***/ }),
-/* 285 */
+/* 286 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./block-icon.vue.html?vue&type=custom&index=0&blockType=p\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"block-icon flexgrid"},[_c('div',{staticClass:"block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"},[(_vm.icon)?_c('icon',{staticClass:"block-icon__icon",attrs:{"icon-name":_vm.icon}}):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"},[_c('h3',{staticClass:"block-icon__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"block-icon__description"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",staticClass:"block-icon__link",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 286 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10590,7 +11228,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroHeading = __webpack_require__(287);
+var _heroHeading = __webpack_require__(288);
 
 var _heroHeading2 = _interopRequireDefault(_heroHeading);
 
@@ -10599,7 +11237,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroHeading2.default;
 
 /***/ }),
-/* 287 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10646,18 +11284,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeroHeading.prototype, "subtitle", void 0);
 HeroHeading = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'HeroHeading',
-    template: __webpack_require__(288)
+    template: __webpack_require__(289)
 })], HeroHeading);
 exports.default = HeroHeading;
 
 /***/ }),
-/* 288 */
+/* 289 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./hero-heading.vue.html?vue&type=custom&index=0&blockType=div\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+module.exports = "<div>\n    <h1 class='hero__title header-block__title--hero'>{{ title }}</h1>\n    <h2 class=\"hero__subtitle header-block__subtitle--hero\" v-if=\"subtitle\">{{ subtitle }}</h2>\n</div>\n";
 
 /***/ }),
-/* 289 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10667,7 +11305,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _countrySelector = __webpack_require__(290);
+var _countrySelector = __webpack_require__(291);
 
 Object.defineProperty(exports, 'CountrySelector', {
   enumerable: true,
@@ -10676,7 +11314,7 @@ Object.defineProperty(exports, 'CountrySelector', {
   }
 });
 
-var _localeSelector = __webpack_require__(293);
+var _localeSelector = __webpack_require__(294);
 
 Object.defineProperty(exports, 'LocaleSelector', {
   enumerable: true,
@@ -10697,7 +11335,7 @@ Object.defineProperty(exports, 'HeroProduct', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 290 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10707,7 +11345,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _countrySelector = __webpack_require__(291);
+var _countrySelector = __webpack_require__(292);
 
 var _countrySelector2 = _interopRequireDefault(_countrySelector);
 
@@ -10716,7 +11354,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _countrySelector2.default;
 
 /***/ }),
-/* 291 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10731,6 +11369,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _countrySelectorVue = __webpack_require__(293);
+
+var _countrySelectorVue2 = _interopRequireDefault(_countrySelectorVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
@@ -10873,20 +11517,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __me
 __decorate([(0, _vuePropertyDecorator.Prop)({ required: true }), __metadata("design:type", Object)], CountrySelector.prototype, "datasource", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, default: null }), __metadata("design:type", Object)], CountrySelector.prototype, "country", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('selectedCountry'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], CountrySelector.prototype, "onSelectedCountry", null);
-CountrySelector = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'country-selector',
-    template: __webpack_require__(292)
+CountrySelector = __decorate([_countrySelectorVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'country-selector'
 })], CountrySelector);
 exports.default = CountrySelector;
 
 /***/ }),
-/* 292 */
+/* 293 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"country-selector"},[_c('auto-complete',{ref:"autocomplete",staticClass:"country-selector__auto-complete auto-complete--small",attrs:{"placeholder":_vm.placeholder,"title-field":"name","value-field":"code","datasource":_vm.datasource,"storedLabel":_vm.highlightedLabel,"stored-items":_vm.detectedCountries,"suggestionsLabel":_vm.suggestionsLabel,"default-open":""},on:{"input":_vm.countryChanged,"close":_vm.close,"changeFocus":_vm.focusClose},model:{value:(_vm.countryInput),callback:function ($$v) {_vm.countryInput=$$v},expression:"countryInput"}}),_vm._v(" "),_c('icon-button',{ref:"closeCountryPanel",attrs:{"icon-name":"close","button-aria-label":"Cancel","button-class":"country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed"},on:{"click":_vm.close}})],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 293 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10896,7 +11550,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _localeSelector = __webpack_require__(294);
+var _localeSelector = __webpack_require__(295);
 
 var _localeSelector2 = _interopRequireDefault(_localeSelector);
 
@@ -10905,7 +11559,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _localeSelector2.default;
 
 /***/ }),
-/* 294 */
+/* 295 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10920,6 +11574,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _localeSelectorVue = __webpack_require__(13);
+
+var _localeSelectorVue2 = _interopRequireDefault(_localeSelectorVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
@@ -11065,17 +11725,11 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: null }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __metadata("design:type", Object)], LocaleSelector.prototype, "suggestionsLabel", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ required: true }), __metadata("design:type", Object)], LocaleSelector.prototype, "datasource", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, default: null }), __metadata("design:type", Object)], LocaleSelector.prototype, "country", void 0);
-LocaleSelector = __decorate([(0, _vuePropertyDecorator.Component)({
+LocaleSelector = __decorate([_localeSelectorVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'locale-selector',
-    template: __webpack_require__(295)
+    template: __webpack_require__(13)
 })], LocaleSelector);
 exports.default = LocaleSelector;
-
-/***/ }),
-/* 295 */
-/***/ (function(module, exports) {
-
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
 
 /***/ }),
 /* 296 */
@@ -11112,6 +11766,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _heroProductVue = __webpack_require__(298);
+
+var _heroProductVue2 = _interopRequireDefault(_heroProductVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -11156,9 +11816,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "ctas", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "products", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "linkList", void 0);
-HeroProduct = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'HeroProduct',
-    template: __webpack_require__(298)
+HeroProduct = __decorate([_heroProductVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'HeroProduct'
 })], HeroProduct);
 exports.default = HeroProduct;
 
@@ -11166,7 +11825,18 @@ exports.default = HeroProduct;
 /* 298 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./hero-product.vue.html?vue&type=custom&index=0&blockType=p\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--product organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('HeroHeading',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}})],1),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.products)?_c('div',{staticClass:"hero__products"},[_vm._l((_vm.products),function(product){return [_c('product',_vm._b({class:_vm.productsClass},'product',product,false))]})],2):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"hero__linklist"},[_vm._l((_vm.linkList),function(link){return [_c('li',{staticClass:"hero__linklist-item"},[_c('ContentLink',_vm._b({staticClass:"link hero__linklist-link",attrs:{"label":link.label}},'ContentLink',link,false))],1)]})],2)],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 299 */
@@ -11979,6 +12649,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _heroBasicVue = __webpack_require__(324);
+
+var _heroBasicVue2 = _interopRequireDefault(_heroBasicVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -12013,9 +12689,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroBasic.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "ctas", void 0);
-HeroBasic = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'hero-basic',
-    template: __webpack_require__(324)
+HeroBasic = __decorate([_heroBasicVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'hero-basic'
 })], HeroBasic);
 exports.default = HeroBasic;
 
@@ -12023,7 +12698,18 @@ exports.default = HeroBasic;
 /* 324 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./hero-basic.vue.html?vue&type=custom&index=0&blockType=h1&class=hero__title%20header-block__title--hero\"\nif (typeof block0 === 'function') block0(component)\nimport block1 from \"./hero-basic.vue.html?vue&type=custom&index=1&blockType=p\"\nif (typeof block1 === 'function') block1(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--basic organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('h1',{staticClass:"hero__title header-block__title--hero"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.subtitle)?_c('h2',{staticClass:"hero__subtitle header-block__subtitle--hero"},[_vm._v(_vm._s(_vm.subtitle))]):_vm._e()]),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 325 */
@@ -12189,6 +12875,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _heroCoverVue = __webpack_require__(333);
+
+var _heroCoverVue2 = _interopRequireDefault(_heroCoverVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -12232,9 +12924,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroCover.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], HeroCover.prototype, "ctas", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], HeroCover.prototype, "image", void 0);
-HeroCover = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'hero-cover',
-    template: __webpack_require__(333)
+HeroCover = __decorate([_heroCoverVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'hero-cover'
 })], HeroCover);
 exports.default = HeroCover;
 
@@ -12242,7 +12933,18 @@ exports.default = HeroCover;
 /* 333 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./hero-cover.vue.html?vue&type=custom&index=0&blockType=p\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--cover organism"},[_c('div',{staticClass:"hero-cover__image--full"},[(this.image)?_c('c-image',_vm._b({attrs:{"resize-behavior":"crop"}},'c-image',this.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"hero-cover__image--overlay"}),_vm._v(" "),_c('section',{staticClass:"hero-cover__container container"},[_c('div',{staticClass:"flexgrid__cell--xs-6 hero--cover-reset"},[_c('h1',{staticClass:"hero-cover__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"copy--intro"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary"}}):_vm._e()],1)])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 334 */
@@ -12519,6 +13221,10 @@ var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
+var _overflowContainerVue = __webpack_require__(341);
+
+var _overflowContainerVue2 = _interopRequireDefault(_overflowContainerVue);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12572,9 +13278,8 @@ var OverflowContainer = function (_Vue) {
     return OverflowContainer;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], OverflowContainer.prototype, "items", void 0);
-OverflowContainer = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'OverflowContainer',
-    template: __webpack_require__(341)
+OverflowContainer = __decorate([_overflowContainerVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'OverflowContainer'
 })], OverflowContainer);
 exports.default = OverflowContainer;
 
@@ -12582,7 +13287,18 @@ exports.default = OverflowContainer;
 /* 341 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.items)?_c('nav',{ref:"subNav",staticClass:"overflow-container overflow-container--fixed",attrs:{"aria-label":"sub items"}},[(_vm.items)?_c('ul',{staticClass:"overflow-container__list",class:_vm.isTouch ? 'touch' : '',attrs:{"role":"presentation"}},_vm._l((_vm.items),function(item,index){return _c('li',{ref:"listItems",refInFor:true,staticClass:"overflow-container__item"},[_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false))],1)}),0):_vm._e()]):_vm._e()}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 342 */
@@ -12618,6 +13334,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _tabbedContentVue = __webpack_require__(344);
+
+var _tabbedContentVue2 = _interopRequireDefault(_tabbedContentVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -12652,9 +13374,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], TabbedContent.prototype, "ctas", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], TabbedContent.prototype, "subtitle", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Object)], TabbedContent.prototype, "sequenced", void 0);
-TabbedContent = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'TabbedContent',
-    template: __webpack_require__(344)
+TabbedContent = __decorate([_tabbedContentVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'TabbedContent'
 })], TabbedContent);
 exports.default = TabbedContent;
 
@@ -12662,7 +13383,18 @@ exports.default = TabbedContent;
 /* 344 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism tabbed-content"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),(_vm.tabs && _vm.tabs.length)?_c('Tabs',{attrs:{"tabs":_vm.tabs,"sequenced":_vm.sequenced}}):_vm._e(),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 345 */
@@ -12822,6 +13554,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _pageFooterVue = __webpack_require__(352);
+
+var _pageFooterVue2 = _interopRequireDefault(_pageFooterVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -12855,9 +13593,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], PageFooter.prototype, "localeSelector", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], PageFooter.prototype, "legalNavigation", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], PageFooter.prototype, "country", void 0);
-PageFooter = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'page-footer',
-    template: __webpack_require__(352)
+PageFooter = __decorate([_pageFooterVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'page-footer'
 })], PageFooter);
 exports.default = PageFooter;
 
@@ -12865,7 +13602,18 @@ exports.default = PageFooter;
 /* 352 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./page-footer.vue.html?vue&type=custom&index=0&blockType=social-nav\"\nif (typeof block0 === 'function') block0(component)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer"},[_c('div',{staticClass:"footer__container"},[_c('div',{staticClass:"footer__primary"},[_c('router-link',{staticClass:"branded-logo footer__branded-logo",attrs:{"to":"/","aria-label":"Ultimaker homepage"}},[_c('icon',{staticClass:"branded-logo__robot",attrs:{"icon-name":"robot-ultimaker"}}),_vm._v(" "),_c('icon',{staticClass:"branded-logo__logo",attrs:{"icon-name":"logo-ultimaker"}})],1),_vm._v(" "),_c('footer-nav',{attrs:{"navigation":_vm.navigation}})],1),_vm._v(" "),_c('div',{staticClass:"footer__secondary"},[_c('social-nav'),_vm._v(" "),_c('locale-selector',_vm._g(_vm._b({staticClass:"footer__locale-selector",attrs:{"country":_vm.country}},'locale-selector',_vm.localeSelector,false),_vm.$listeners))],1),_vm._v(" "),_c('div',{staticClass:"footer__tertiary"},[_c('legal-nav',{staticClass:"footer__legal",attrs:{"navigation":_vm.legalNavigation.navigation,"label":_vm.legalNavigation.label}})],1)])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 353 */
@@ -12910,6 +13658,10 @@ var _viewport2 = _interopRequireDefault(_viewport);
 var _publicEventService = __webpack_require__(6);
 
 var _publicEventService2 = _interopRequireDefault(_publicEventService);
+
+var _pageHeaderVue = __webpack_require__(355);
+
+var _pageHeaderVue2 = _interopRequireDefault(_pageHeaderVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13047,9 +13799,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], PageHeader.prototype, "cta", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], PageHeader.prototype, "search", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], PageHeader.prototype, "mainNavOpen", void 0);
-PageHeader = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'page-header',
-    template: __webpack_require__(355)
+PageHeader = __decorate([_pageHeaderVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'page-header'
 })], PageHeader);
 exports.default = PageHeader;
 
@@ -13057,7 +13808,18 @@ exports.default = PageHeader;
 /* 355 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{directives:[{name:"size-emitter",rawName:"v-size-emitter",value:('header'),expression:"'header'"}],staticClass:"header",class:_vm.headerClasses,attrs:{"role":"banner"}},[_c('div',{staticClass:"header__top",class:{'header--mobile-inverted': _vm.mainNavOpen}},[_c('router-link',{staticClass:"home-link",attrs:{"to":"/","aria-label":"Ultimaker homepage"}},[_c('icon',{staticClass:"home-link__logo",attrs:{"icon-name":"logo-ultimaker"}})],1),_vm._v(" "),(_vm.navigation)?_c('main-nav',_vm._g({attrs:{"items":_vm.navigation,"main-nav-open":_vm.mainNavOpen}},_vm.$listeners)):_vm._e(),_vm._v(" "),(_vm.cta && _vm.search)?_c('sys-nav',{attrs:{"order-now-icon":_vm.cta.icon,"order-now-label":_vm.cta.label,"order-now-link":_vm.cta.url,"search-icon":_vm.search.icon,"search-label":_vm.search.label},on:{"open-search":_vm.openSearch}}):_vm._e(),_vm._v(" "),_c('nav-assist',{staticClass:"main-nav__nav-assist",attrs:{"open-state":_vm.mainNavOpen},on:{"toggle":_vm.navAssistToggle}}),_vm._v(" "),_c('transition',{attrs:{"name":"search"},on:{"after-enter":_vm.handleFocus,"leave":_vm.handleFocus}},[(_vm.searchOpen)?_c('search-bar',{ref:"search",staticClass:"header__search",attrs:{"label":_vm.search.label,"placeholder":_vm.search.placeholder,"open-state":_vm.searchOpen},on:{"close":_vm.closeSearch}}):_vm._e()],1)],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 356 */
@@ -13093,6 +13855,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _overviewVue = __webpack_require__(358);
+
+var _overviewVue2 = _interopRequireDefault(_overviewVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -13126,9 +13894,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], Overview.prototype, "subtitle", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Overview.prototype, "sections", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], Overview.prototype, "ctas", void 0);
-Overview = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'overview',
-    template: __webpack_require__(358)
+Overview = __decorate([_overviewVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'overview'
 })], Overview);
 exports.default = Overview;
 
@@ -13136,7 +13903,18 @@ exports.default = Overview;
 /* 358 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism overview"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_vm._l((_vm.sections),function(section,index){return [_c(section.type,_vm._b({key:index,tag:"component"},'component',section,false))]}),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],2)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 359 */
@@ -13172,6 +13950,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _overviewUbrVue = __webpack_require__(361);
+
+var _overviewUbrVue2 = _interopRequireDefault(_overviewUbrVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -13205,9 +13989,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], OverviewUBR.prototype, "subtitle", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], OverviewUBR.prototype, "items", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], OverviewUBR.prototype, "ctas", void 0);
-OverviewUBR = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'overview-ubr',
-    template: __webpack_require__(361)
+OverviewUBR = __decorate([_overviewUbrVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'overview-ubr'
 })], OverviewUBR);
 exports.default = OverviewUBR;
 
@@ -13215,7 +13998,18 @@ exports.default = OverviewUBR;
 /* 361 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism overview-ubr"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"},_vm._l((_vm.items),function(blockIcon,index){return _c('BlockIcon',_vm._b({key:index,staticClass:"flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"},'BlockIcon',blockIcon,false))}),1),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 362 */
@@ -13252,6 +14046,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _contentGeneralVue = __webpack_require__(364);
+
+var _contentGeneralVue2 = _interopRequireDefault(_contentGeneralVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -13298,9 +14098,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "cta", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "reversed", void 0);
-GeneralContent = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'ContentGeneral',
-    template: __webpack_require__(364)
+GeneralContent = __decorate([_contentGeneralVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'ContentGeneral'
 })], GeneralContent);
 exports.default = GeneralContent;
 
@@ -13308,7 +14107,18 @@ exports.default = GeneralContent;
 /* 364 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-general"},[_c('section',{staticClass:"content-general__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter",class:{'flexgrid--row-reversed': _vm.reversed}},[_c('div',{staticClass:"flexgrid__cell--xs-6 content-general__grid-cell content-general__content"},[_c('h3',{staticClass:"content-general__title"},[_vm._v(" "+_vm._s(_vm.title))]),_vm._v(" "),_c('div',{staticClass:"content-manageble content-general__body",domProps:{"innerHTML":_vm._s(_vm.description)}}),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6 content-general__grid-cell content-general__image"},[_c('div',{staticClass:"content-general__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1)])])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 365 */
@@ -13400,7 +14210,7 @@ exports.default = GeneralContent;
 /* 367 */
 /***/ (function(module, exports) {
 
-module.exports = "var render, staticRenderFns\nvar script = {}\n\n\n/* normalize component */\nimport normalizer from \"!../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* custom blocks */\nimport block0 from \"./content-cover.vue.html?vue&type=custom&index=0&blockType=p\"\nif (typeof block0 === 'function') block0(component)\nimport block1 from \"./content-cover.vue.html?vue&type=custom&index=1&blockType=div\"\nif (typeof block1 === 'function') block1(component)\n\nexport default component.exports";
+module.exports = "<article class=\"content-cover content-cover--cover\">\n    <c-image v-if=\"this.image\" v-bind=\"this.image\"/>\n\n    <div class=\"content-cover__image--overlay\"></div>\n\n    <section class=\"content-cover__container\">\n        <div class=\"flexgrid__cell--xs-6 content-cover-content content-cover--cover-reset\">\n            <h3 class=\"content-cover__title\">{{ title }}</h3>\n            <p class=\"content-cover__description\">{{ description }}</p>\n            <div>\n                <component v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 368 */

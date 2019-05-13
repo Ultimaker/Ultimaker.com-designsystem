@@ -2,10 +2,11 @@ import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 
 import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 import BrowserCapabilities from 'utils/browser-capabilities';
+import WithRender from './main-nav-item.vue.html';
 
+@WithRender
 @Component({
     name: 'main-nav-item',
-    template: require('./main-nav-item.vue.html'),
 })
 
 export default class MainNavItem extends Vue  {

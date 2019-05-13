@@ -1,10 +1,11 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { BusinessCard as IBusinessCard } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cards/BusinessCard';
 import Events from 'src/js/constants/events';
+import WithRender from './business-card.vue.html';
 
+@WithRender
 @Component({
     name: 'BusinessCard',
-    template: require('./business-card.vue.html'),
 })
 
 export default class BusinessCard extends Vue implements IBusinessCard {

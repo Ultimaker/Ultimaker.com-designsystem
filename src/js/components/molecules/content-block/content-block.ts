@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { ContentBlockProps } from './content-block.models';
+import WithRender from './content-block.vue.html';
 
+@WithRender
 @Component({
     name: 'ContentBlock',
-    template: require('./content-block.vue.html'),
 })
 
 export default class ContentBlock extends Vue implements ContentBlockProps {

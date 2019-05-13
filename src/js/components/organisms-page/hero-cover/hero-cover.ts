@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { HeroCover as IHeroCover } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/hero/HeroCover';
+import WithRender from './hero-cover.vue.html';
 
+@WithRender
 @Component({
     name: 'hero-cover',
-    template: require('./hero-cover.vue.html'),
 })
 
 export default class HeroCover extends Vue implements IHeroCover {

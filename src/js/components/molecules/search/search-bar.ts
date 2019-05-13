@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { Search } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/search/Search';
+import WithRender from './search-bar.vue.html';
 
+@WithRender
 @Component({
     name: 'search-bar',
-    template: require('./search-bar.vue.html'),
 })
 
 export default class SearchBar extends Vue implements Search {

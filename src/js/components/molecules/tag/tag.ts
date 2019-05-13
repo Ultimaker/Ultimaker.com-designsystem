@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { ITagProps, ITag } from './tag.models';
+import WithRender from './tag.vue.html';
 
+@WithRender
 @Component({
     name: 'tag',
-    template: require('./tag.vue.html'),
 })
 
 export default class Tag extends Vue implements ITagProps {

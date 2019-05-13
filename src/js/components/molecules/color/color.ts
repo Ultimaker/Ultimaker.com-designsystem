@@ -1,10 +1,11 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { ColorProps } from './color.models';
 import { Color as ColorUtil } from 'utils/color';
+import WithRender from './color.vue.html';
 
+@WithRender
 @Component({
     name: 'color',
-    template: require('./color.vue.html'),
 })
 export default class Color extends Vue implements ColorProps {
     @Prop({ type: String, default: '' })

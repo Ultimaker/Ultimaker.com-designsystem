@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { HeroBasic as IHeroBasic } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/hero/HeroBasic';
+import WithRender from './hero-basic.vue.html';
 
+@WithRender
 @Component({
     name: 'hero-basic',
-    template: require('./hero-basic.vue.html'),
 })
 
 export default class HeroBasic extends Vue implements IHeroBasic {

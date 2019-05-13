@@ -4,10 +4,11 @@ import { AutoCompleteItem } from 'components/molecules/auto-complete/auto-comple
 import AutoComplete from 'components/molecules/auto-complete/auto-complete';
 import IconButton from 'components/molecules/icon-button';
 import { CountrySelectorInterface } from './country-selector-models';
+import WithRender from './country-selector.vue.html';
 
+@WithRender
 @Component({
     name: 'country-selector',
-    template: require('./country-selector.vue.html'),
 })
 export default class CountrySelector extends Vue implements CountrySelectorInterface {
     @Prop({ type: Object, default: null }) value!: AutoCompleteItem;

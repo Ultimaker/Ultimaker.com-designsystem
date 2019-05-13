@@ -1,9 +1,10 @@
 import { Vue, Component } from 'vue-property-decorator';
 import { TweenLite, TimelineLite, Power2 } from 'gsap';
+import WithRender from './modal.vue.html';
 
+@WithRender
 @Component({
     name: 'modal',
-    template: require('./modal.vue.html'),
 })
 
 export default class Modal extends Vue {

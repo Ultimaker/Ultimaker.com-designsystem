@@ -2,7 +2,9 @@ import { Component, Prop } from 'vue-property-decorator';
 import BaseLink from '../BaseLink';
 import YoutubeConstants from 'constants/youtube';
 import { YoutubeLink as YoutubeLinkInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/YoutubeLink';
+import WithRender from './youtube-link.vue.html';
 
+@WithRender
 @Component({
     name: 'YoutubeLink',
     template: require('./youtube-link.vue.html'),

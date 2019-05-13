@@ -1,9 +1,10 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import YoutubeConstants from 'constants/youtube';
+import WithRender from './youtube-video.vue.html';
 
+@WithRender
 @Component({
     name: 'youtube-video',
-    template: require('./youtube-video.vue.html'),
 })
 
 export default class YoutubeVideo extends Vue {

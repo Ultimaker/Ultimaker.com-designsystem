@@ -2,10 +2,11 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 import { TweenLite, Power3 } from 'gsap';
 
 import { Overview as OverviewInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/overview/Overview';
+import WithRender from './overview.vue.html';
 
+@WithRender
 @Component({
     name: 'overview',
-    template: require('./overview.vue.html'),
 })
 
 export default class Overview extends Vue implements OverviewInterface {

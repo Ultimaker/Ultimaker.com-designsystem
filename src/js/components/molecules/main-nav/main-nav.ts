@@ -4,10 +4,11 @@ import ViewportUtility from 'utils/viewport';
 
 import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 import BrowserCapabilities from 'utils/browser-capabilities';
+import WithRender from './main-nav.vue.html';
 
+@WithRender
 @Component({
     name: 'main-nav',
-    template: require('./main-nav.vue.html'),
 })
 
 export default class MainNav extends Vue  {
