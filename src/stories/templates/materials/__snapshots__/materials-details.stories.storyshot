@@ -2826,7 +2826,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                       class="colors__list-item"
                     >
                       <div
-                        class="color"
+                        class="color color--selected"
                         tabindex="0"
                       >
                         <div
