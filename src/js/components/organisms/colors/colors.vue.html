@@ -1,4 +1,4 @@
-<div class="colors organism">
+<article class="colors">
     <div class="container">
         <header-block :title="title" :subtitle="subtitle" />
 
@@ -9,8 +9,7 @@
                     <ul class="colors__list">
                         <li class="colors__list-item"
                             v-for="(color, index) in colorList" @click="setActiveColor(index)" @keydown.space.prevent="setActiveColor(index)">
-                                <color v-if="color.isTransparent" :class="{'color--selected': color === activeColor }"/>
-                                <color v-else :background="color.rgbHex" :class="{'color--selected': color === activeColor }" />
+                            <color :rgb-hex="color.rgbHex" :transparency="color.transparency" />
                         </li>
                     </ul>
 

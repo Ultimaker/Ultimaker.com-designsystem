@@ -17,8 +17,8 @@ const getStory = (type) => {
                 return {};
             },
             props: {
-                background: { default: knobs.background },
-                activeColor: { default: knobs.activeColor },
+                rgbHex: { default: knobs.rgbHex },
+                transparency: { default: knobs.transparency },
             },
             template: require('./color.html'),
         };
