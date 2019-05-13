@@ -8,7 +8,7 @@
                 <div class="colors__swatches">
                     <ul class="colors__list">
                         <li class="colors__list-item"
-                            v-for="(color, index) in colorList" @click="setActiveColor(index)">
+                            v-for="(color, index) in colorList" @click="setActiveColor(index)" @keydown.space.prevent="setActiveColor(index)">
                                 <color v-if="color.isTransparent" :class="{'color--selected': color === activeColor }"/>
                                 <color v-else :background="color.rgbHex" :class="{'color--selected': color === activeColor }" />
                         </li>
