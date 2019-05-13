@@ -2,20 +2,25 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 import { ColorProps } from './color.models';
 import { Color as ColorUtil } from 'utils/color';
 import WithRender from './color.vue.html';
+import { TransparencyLevel } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/products/TransparencyLevel';
 
 @WithRender
 @Component({
     name: 'color',
 })
 export default class Color extends Vue implements ColorProps {
-    @Prop({ type: String, default: '' })
-    background!:string;
+    @Prop({ type: String, required: true })
+    rgbHex!:string;
+
+    @Prop({ type: Number, required: true })
+    transparency!: TransparencyLevel;
 
     get styleBackground() {
         const styles = {};
 
-        if (this.background !== '') {
-            styles['background'] = this.background;
+        styles['background'] = this.rgbHex;
+        if (this.transparency < 100) {
+            styles['opacity'] = this.transparency / 100;
         }
 
         return styles;
@@ -24,12 +29,7 @@ export default class Color extends Vue implements ColorProps {
     get styleIcon() {
         const styles = {};
 
-        if (this.background === '') {
-            styles['color'] = 'black';
-
-            return styles;
-        }
-        styles['color'] = ColorUtil.lightness(this.background) >= 0.5 ? 'black' : 'white';
+        styles['color'] = ColorUtil.lightness(this.rgbHex) >= 0.5 ? 'black' : 'white';
 
         return styles;
     }

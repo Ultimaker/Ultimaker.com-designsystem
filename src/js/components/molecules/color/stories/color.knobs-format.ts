@@ -1,4 +1,4 @@
 export default {
-    background: '',
-    activeColor: true,
+    rgbHex: '',
+    transparency: true,
 };

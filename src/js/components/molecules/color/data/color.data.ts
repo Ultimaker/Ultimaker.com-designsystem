@@ -1,10 +1,10 @@
 export const data = {
     default: {
-        activeColor: true,
-        background: '#cc7700',
+        rgbHex: '#ff1493',
+        transparency: 100,
     },
-    inactive: {
-        activeColor: false,
-        background: '#cc7700',
+    transparent: {
+        rgbHex: '#800080',
+        transparency: 50,
     },
 };
