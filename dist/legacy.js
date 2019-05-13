@@ -1035,7 +1035,6 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var __svg__ = { filename: __webpack_require__.p +"static/icons/iconset.svg" };
 var registry = new _componentRegistry2.default();
 Object.keys(_components2.default).forEach(function (c) {
     registry.registerComponent(_components2.default[c]);
@@ -14483,4 +14482,4 @@ var SizeEmitter = exports.SizeEmitter = function () {
 
 /***/ })
 /******/ ])});;
-//# sourceMappingURL=components.js.map
+//# sourceMappingURL=legacy.js.map

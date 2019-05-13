@@ -1,8 +1,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import WithRender from './template.vue.html';
 
+@WithRender
 @Component({
     name: 'ListUnordered',
-    template: require('./template.vue.html'),
 })
 
 export default class ListUnordered extends Vue {

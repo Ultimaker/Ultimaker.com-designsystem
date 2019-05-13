@@ -8,10 +8,11 @@ import 'utils/throw-props-plugin';
 import Defaults from 'constants/defaults';
 import ViewportUtil from 'utils/viewport';
 import BrowserCapabilities from 'utils/browser-capabilities';
+import WithRender from './faux-vertical-scroll.vue.html';
 
+@WithRender
 @Component({
     name: 'faux-vertical-scroll',
-    template: require('./faux-vertical-scroll.vue.html'),
 })
 
 export default class FauxVerticalScroll extends Vue {

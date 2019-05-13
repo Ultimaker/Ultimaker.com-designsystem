@@ -8,10 +8,11 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 
 import { ListSection as IListSection } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/sections/ListSection';
 import Events from 'constants/events';
+import WithRender from './list-section.vue.html';
 
+@WithRender
 @Component({
     name: 'ListSection',
-    template: require('./list-section.vue.html'),
 })
 
 export default class ListSection extends Vue implements IListSection {

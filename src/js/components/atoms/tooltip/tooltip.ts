@@ -1,8 +1,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import WithRender from './tooltip.vue.html';
 
+@WithRender
 @Component({
     name: 'Tooltip',
-    template: require('./tooltip.vue.html'),
 })
 
 export default class Tooltip extends Vue {

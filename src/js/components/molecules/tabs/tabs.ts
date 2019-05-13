@@ -6,10 +6,11 @@ import { TweenLite, Power3, Power2 } from 'gsap';
 import Defaults from 'constants/defaults';
 
 import { Tab as TabInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/tab/Tab';
+import WithRender from './tabs.vue.html';
 
+@WithRender
 @Component({
     name: 'Tabs',
-    template: require('./tabs.vue.html'),
 })
 
 export default class Tabs extends Vue {

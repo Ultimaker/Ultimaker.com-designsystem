@@ -1,10 +1,11 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import { TabbedContent  as TabbedContentInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/tabbedContent/TabbedContent';
+import WithRender from './tabbed-content.vue.html';
 
+@WithRender
 @Component({
     name: 'TabbedContent',
-    template: require('./tabbed-content.vue.html'),
 })
 
 export default class TabbedContent extends Vue implements TabbedContentInterface {

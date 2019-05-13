@@ -4,10 +4,11 @@ import ViewportUtility from 'utils/viewport';
 import PublicEventService from 'plugins/public-event-service';
 
 import { PageHeader as PageHeaderInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/page-header/PageHeader';
+import WithRender from './page-header.vue.html';
 
+@WithRender
 @Component({
     name: 'page-header',
-    template: require('./page-header.vue.html'),
 })
 
 export default class PageHeader extends Vue implements PageHeaderInterface {

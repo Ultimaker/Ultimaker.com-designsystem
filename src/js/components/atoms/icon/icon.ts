@@ -1,10 +1,11 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 const defaultIconUrl = '/static/icons/iconset.svg';
+import WithRender from './icon.vue.html';
 
+@WithRender
 @Component({
     name: 'icon',
-    template: require('./icon.vue.html'),
 })
 export default class Icon extends Vue {
     @Prop({ type: String, required: true }) iconName!: string;

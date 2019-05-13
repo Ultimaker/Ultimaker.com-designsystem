@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { IHorizontalListProps, IHorizontalListItem } from './horizontal-list.models';
+import WithRender from './horizontal-list.vue.html';
 
+@WithRender
 @Component({
     name: 'horizontal-list',
-    template: require('./horizontal-list.vue.html'),
 })
 
 export default class HorizontalList  extends Vue implements IHorizontalListProps {

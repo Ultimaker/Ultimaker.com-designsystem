@@ -30,11 +30,16 @@
             "plugins/*": ["./src/js/plugins/*"],
             "utils/*": ["./src/js/utils/*"]
         },
+        "typeRoots": [
+            "node_modules/@types",
+            "src/typings"
+        ],
         "types": [
             "reflect-metadata",
             "jasmine",
             "requirejs",
-            "node"
+            "node",
+            "vue"
         ]
     },
     "include": [

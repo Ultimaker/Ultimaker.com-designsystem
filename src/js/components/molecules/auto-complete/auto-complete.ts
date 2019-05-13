@@ -2,10 +2,11 @@ import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import ViewportUtil from 'utils/viewport';
 
 import { AutoCompleteItem, AutoCompleteProps } from './auto-complete.models';
+import WithRender from './auto-complete.vue.html';
 
+@WithRender
 @Component({
     name: 'auto-complete',
-    template: require('./auto-complete.vue.html'),
 })
 
 export default class AutoComplete extends Vue implements AutoCompleteProps {

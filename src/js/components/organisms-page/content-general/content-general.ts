@@ -1,10 +1,11 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 
 import { ContentGeneral  as IContentGeneral } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/contentGeneral/ContentGeneral';
+import WithRender from './content-general.vue.html';
 
+@WithRender
 @Component({
     name: 'ContentGeneral',
-    template: require('./content-general.vue.html'),
 })
 
 export default class GeneralContent extends Vue implements IContentGeneral {

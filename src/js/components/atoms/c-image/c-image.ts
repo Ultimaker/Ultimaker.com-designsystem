@@ -4,10 +4,11 @@ import { InView } from 'js/mixins/in-view';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
 import { imageConstants } from './c-image.constants';
+import WithRender from './c-image.vue.html';
 
+@WithRender
 @Component({
     name: 'c-image',
-    template: require('./c-image.vue.html'),
 })
 
 export default class CImage extends Mixins(InView) implements ICImageProps {

@@ -1,9 +1,10 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
+import WithRender from './flyout-section.vue.html';
 
+@WithRender
 @Component({
     name: 'flyout-section',
-    template: require('./flyout-section.vue.html'),
 })
 
 export default class Flyout extends Vue  {

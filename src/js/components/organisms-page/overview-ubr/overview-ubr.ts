@@ -1,10 +1,11 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import { OverviewUBR as OverviewUBRInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/overview/OverviewUBR';
+import WithRender from './overview-ubr.vue.html';
 
+@WithRender
 @Component({
     name: 'overview-ubr',
-    template: require('./overview-ubr.vue.html'),
 })
 
 export default class OverviewUBR extends Vue implements OverviewUBRInterface {

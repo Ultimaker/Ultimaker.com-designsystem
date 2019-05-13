@@ -1,8 +1,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import WithRender from './action-button.vue.html';
 
+@WithRender
 @Component({
     name: 'ActionButton',
-    template: require('./action-button.vue.html'),
 })
 
 export default class ActionButton extends Vue {

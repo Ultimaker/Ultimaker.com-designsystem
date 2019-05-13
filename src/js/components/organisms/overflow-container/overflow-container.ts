@@ -1,10 +1,11 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import BrowserCapabilities from 'utils/browser-capabilities';
+import WithRender from './overflow-container.vue.html';
 
+@WithRender
 @Component({
     name: 'OverflowContainer',
-    template: require('./overflow-container.vue.html'),
 })
 
 export default class OverflowContainer extends Vue {

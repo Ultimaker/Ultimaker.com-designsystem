@@ -3,7 +3,9 @@ import CountrySelector from 'components/organisms/country-selector';
 import  IconButton from 'components/molecules/icon-button';
 import { CountrySelectorInterface } from 'components/organisms/country-selector/country-selector-models';
 import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
+import WithRender from './locale-selector.vue.html';
 
+@WithRender
 @Component({
     name: 'locale-selector',
     template: require('./locale-selector.vue.html'),

@@ -1,8 +1,9 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import WithRender from './sys-nav.vue.html';
 
+@WithRender
 @Component({
     name: 'sys-nav',
-    template: require('./sys-nav.vue.html'),
 })
 export default class SysNav extends Vue {
     @Prop({ type: String, default: 'store' })

@@ -4,7 +4,7 @@ import ViewportUtility from 'utils/viewport';
 
 @Component({
     name: 'flyout',
-    template: require('./flyout.vue.html'),
+    template: require('./flyout.html'),
 })
 
 export default class Flyout extends Vue {

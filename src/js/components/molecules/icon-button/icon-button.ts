@@ -1,8 +1,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import WithRender from './icon-button.vue.html';
 
+@WithRender
 @Component({
     name: 'icon-button',
-    template: require('./icon-button.vue.html'),
 })
 export default class IconButton extends Vue  {
     @Prop({ type: String })
