@@ -27,6 +27,10 @@ $colorSize: $buildingUnit * 4;
     @include micro-animate(opacity);
 }
 
+.color__icon {
+    display: block;
+}
+
 .color__spec--title,
 .color__spec--code,
 .color__spec--weight,
