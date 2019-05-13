@@ -77,13 +77,13 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1950_0"
+                      id="flyout_title_1959_0"
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_1950_0"
+                      aria-labelledby="flyout_title_1959_0"
                       class="flyout__list"
                     >
                       <li
@@ -164,14 +164,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1950_1"
+                      id="flyout_title_1959_1"
                     >
                       Where is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1950_1"
+                      aria-labelledby="flyout_title_1959_1"
                       class="flyout__list"
                     >
                       <li
@@ -589,14 +589,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_1950_2"
+                      id="flyout_title_1959_2"
                     >
                       How is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_1950_2"
+                      aria-labelledby="flyout_title_1959_2"
                       class="flyout__list"
                     >
                       <li
@@ -835,13 +835,13 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2029_0"
+                      id="flyout_title_2038_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_2029_0"
+                      aria-labelledby="flyout_title_2038_0"
                       class="flyout__list"
                     >
                       <li
@@ -909,14 +909,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2029_1"
+                      id="flyout_title_2038_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2029_1"
+                      aria-labelledby="flyout_title_2038_1"
                       class="flyout__list"
                     >
                       <li
@@ -1081,14 +1081,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2029_2"
+                      id="flyout_title_2038_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2029_2"
+                      aria-labelledby="flyout_title_2038_2"
                       class="flyout__list"
                     >
                       <li
@@ -1311,13 +1311,13 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2079_0"
+                      id="flyout_title_2088_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_2079_0"
+                      aria-labelledby="flyout_title_2088_0"
                       class="flyout__list"
                     >
                       <li
@@ -1385,14 +1385,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2079_1"
+                      id="flyout_title_2088_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2079_1"
+                      aria-labelledby="flyout_title_2088_1"
                       class="flyout__list"
                     >
                       <li
@@ -1557,14 +1557,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2079_2"
+                      id="flyout_title_2088_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2079_2"
+                      aria-labelledby="flyout_title_2088_2"
                       class="flyout__list"
                     >
                       <li
@@ -2800,13 +2800,13 @@ exports[`Storyshots templates|materials Materials details 1`] = `
               <h2
                 class="header-block__title"
               >
-                Lorem ipsum .. enzo nog veel meer
+                Lorem ipsum dolor sit amet consectetur
               </h2>
                
               <p
                 class="header-block__subtitle"
               >
-                moest er in van Martin
+                Donec pulvinar arcu lorem, id scelerisque lectus cursus in
               </p>
             </header>
              
@@ -2820,13 +2820,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   class="colors__swatches"
                 >
                   <ul
-                    class="list colors__list"
+                    class="colors__list"
                   >
                     <li
-                      class="list__item colors__list-item color--selected"
+                      class="colors__list-item"
                     >
                       <div
                         class="color"
+                        tabindex="0"
                       >
                         <div
                           class="color__spec color__spec--show"
@@ -2841,10 +2842,11 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                       </div>
                     </li>
                     <li
-                      class="list__item colors__list-item"
+                      class="colors__list-item"
                     >
                       <div
                         class="color"
+                        tabindex="0"
                       >
                         <div
                           class="color__spec color__spec--show"
@@ -2855,6 +2857,44 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         <div
                           class="color__spec color__spec--swatch"
                           style="background: rgb(128, 0, 128);"
+                        />
+                      </div>
+                    </li>
+                    <li
+                      class="colors__list-item"
+                    >
+                      <div
+                        class="color"
+                        tabindex="0"
+                      >
+                        <div
+                          class="color__spec color__spec--show"
+                        >
+                          <!---->
+                        </div>
+                         
+                        <div
+                          class="color__spec color__spec--swatch"
+                          style="background: rgb(0, 0, 0); opacity: 0.1;"
+                        />
+                      </div>
+                    </li>
+                    <li
+                      class="colors__list-item"
+                    >
+                      <div
+                        class="color"
+                        tabindex="0"
+                      >
+                        <div
+                          class="color__spec color__spec--show"
+                        >
+                          <!---->
+                        </div>
+                         
+                        <div
+                          class="color__spec color__spec--swatch"
+                          style="background: rgb(0, 0, 0); opacity: 0.6;"
                         />
                       </div>
                     </li>
@@ -2885,7 +2925,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                 class="flexgrid__cell--sm-8 flexgrid__cell--xs-6"
               >
                 <img
-                  alt="Ultimaker Tough PLA print"
+                  alt="Ultimaker #ff1493"
                   class="img--contain colors__image img--loading"
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                   type="Image"

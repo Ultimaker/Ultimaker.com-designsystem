@@ -1,4 +1,4 @@
 export default {
     rgbHex: '',
-    transparency: true,
+    opacity: 100,
 };

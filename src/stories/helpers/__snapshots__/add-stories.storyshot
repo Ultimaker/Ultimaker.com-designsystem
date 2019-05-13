@@ -616,6 +616,37 @@ exports[`Storyshots Atoms|text/inline/sup default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/color backend 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="story__molecule"
+      style="margin: 10px; width: 48px;"
+    >
+      <div
+        class="color"
+        tabindex="0"
+      >
+        <div
+          class="color__spec color__spec--show"
+        >
+          <!---->
+        </div>
+         
+        <div
+          class="color__spec color__spec--swatch"
+          style="background: rgb(255, 90, 90);"
+        />
+      </div>
+    </section>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Molecules/color default 1`] = `
 <section
   class="story"
@@ -627,32 +658,27 @@ exports[`Storyshots Molecules/color default 1`] = `
       class="story__molecule"
       style="margin: 10px; width: 48px;"
     >
-      <a
-        class="hit-area"
-        role="button"
+      <div
+        class="color"
         tabindex="0"
       >
         <div
-          class="color color--selected"
+          class="color__spec color__spec--show"
         >
-          <div
-            class="color__spec color__spec--show"
-          >
-            <!---->
-          </div>
-           
-          <div
-            class="color__spec color__spec--swatch"
-            style="background: rgb(204, 119, 0);"
-          />
+          <!---->
         </div>
-      </a>
+         
+        <div
+          class="color__spec color__spec--swatch"
+          style="background: rgb(255, 20, 147);"
+        />
+      </div>
     </section>
   </section>
 </section>
 `;
 
-exports[`Storyshots Molecules/color inactive 1`] = `
+exports[`Storyshots Molecules/color transparent 1`] = `
 <section
   class="story"
 >
@@ -663,26 +689,21 @@ exports[`Storyshots Molecules/color inactive 1`] = `
       class="story__molecule"
       style="margin: 10px; width: 48px;"
     >
-      <a
-        class="hit-area"
-        role="button"
+      <div
+        class="color"
         tabindex="0"
       >
         <div
-          class="color"
+          class="color__spec color__spec--show"
         >
-          <div
-            class="color__spec color__spec--show"
-          >
-            <!---->
-          </div>
-           
-          <div
-            class="color__spec color__spec--swatch"
-            style="background: rgb(204, 119, 0);"
-          />
+          <!---->
         </div>
-      </a>
+         
+        <div
+          class="color__spec color__spec--swatch"
+          style="background: rgb(128, 0, 128); opacity: 0.5;"
+        />
+      </div>
     </section>
   </section>
 </section>
@@ -1869,13 +1890,13 @@ exports[`Storyshots Organisms/colors default 1`] = `
           <h2
             class="header-block__title"
           >
-            Lorem ipsum .. enzo nog veel meer
+            Lorem ipsum dolor sit amet consectetur
           </h2>
            
           <p
             class="header-block__subtitle"
           >
-            moest er in van Martin
+            Donec pulvinar arcu lorem, id scelerisque lectus cursus in
           </p>
         </header>
          
@@ -1889,13 +1910,14 @@ exports[`Storyshots Organisms/colors default 1`] = `
               class="colors__swatches"
             >
               <ul
-                class="list colors__list"
+                class="colors__list"
               >
                 <li
-                  class="list__item colors__list-item color--selected"
+                  class="colors__list-item"
                 >
                   <div
                     class="color"
+                    tabindex="0"
                   >
                     <div
                       class="color__spec color__spec--show"
@@ -1910,10 +1932,11 @@ exports[`Storyshots Organisms/colors default 1`] = `
                   </div>
                 </li>
                 <li
-                  class="list__item colors__list-item"
+                  class="colors__list-item"
                 >
                   <div
                     class="color"
+                    tabindex="0"
                   >
                     <div
                       class="color__spec color__spec--show"
@@ -1924,6 +1947,44 @@ exports[`Storyshots Organisms/colors default 1`] = `
                     <div
                       class="color__spec color__spec--swatch"
                       style="background: rgb(128, 0, 128);"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="colors__list-item"
+                >
+                  <div
+                    class="color"
+                    tabindex="0"
+                  >
+                    <div
+                      class="color__spec color__spec--show"
+                    >
+                      <!---->
+                    </div>
+                     
+                    <div
+                      class="color__spec color__spec--swatch"
+                      style="background: rgb(0, 0, 0); opacity: 0.1;"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="colors__list-item"
+                >
+                  <div
+                    class="color"
+                    tabindex="0"
+                  >
+                    <div
+                      class="color__spec color__spec--show"
+                    >
+                      <!---->
+                    </div>
+                     
+                    <div
+                      class="color__spec color__spec--swatch"
+                      style="background: rgb(0, 0, 0); opacity: 0.6;"
                     />
                   </div>
                 </li>
@@ -1954,7 +2015,7 @@ exports[`Storyshots Organisms/colors default 1`] = `
             class="flexgrid__cell--sm-8 flexgrid__cell--xs-6"
           >
             <img
-              alt="Ultimaker Tough PLA print"
+              alt="Ultimaker #ff1493"
               class="img--contain colors__image img--loading"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
               type="Image"

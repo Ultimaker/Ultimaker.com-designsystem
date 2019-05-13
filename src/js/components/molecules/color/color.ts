@@ -10,17 +10,17 @@ import { TransparencyLevel } from '@ultimaker/ultimaker.com-model-definitions/di
 })
 export default class Color extends Vue implements ColorProps {
     @Prop({ type: String, required: true })
-    rgbHex!:string;
+    rgbHex!: ColorProps['rgbHex'];
 
     @Prop({ type: Number, required: true })
-    transparency!: TransparencyLevel;
+    opacity!: ColorProps['opacity'];
 
     get styleBackground() {
         const styles = {};
 
-        styles['background'] = this.rgbHex;
-        if (this.transparency < 100) {
-            styles['opacity'] = this.transparency / 100;
+        styles['background'] = this.color;
+        if (this.opacity < 100) {
+            styles['opacity'] = this.opacity / 100;
         }
 
         return styles;
@@ -29,8 +29,17 @@ export default class Color extends Vue implements ColorProps {
     get styleIcon() {
         const styles = {};
 
-        styles['color'] = ColorUtil.lightness(this.rgbHex) >= 0.5 ? 'black' : 'white';
+        styles['color'] = ColorUtil.lightness(this.color) >= 0.5 ? '#000' : '#FFF';
 
         return styles;
+    }
+
+    get color() {
+        const hexColorNoPrefix = (/^([A-Fa-f0-9]{6})/);
+        if (this.rgbHex && this.rgbHex.match && this.rgbHex.match(hexColorNoPrefix)) {
+            return `#${ this.rgbHex }`;
+        }
+
+        return this.rgbHex;
     }
 }

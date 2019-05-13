@@ -2,5 +2,5 @@ import { ProductColor as ProductColorInterface  } from '@ultimaker/ultimaker.com
 
 export interface ColorProps {
     rgbHex: ProductColorInterface['rgbHex'];
-    transparency: ProductColorInterface['transparency'];
+    opacity: ProductColorInterface['opacity'];
 }

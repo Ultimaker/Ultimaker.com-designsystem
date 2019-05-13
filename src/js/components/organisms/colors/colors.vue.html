@@ -9,7 +9,7 @@
                     <ul class="colors__list">
                         <li class="colors__list-item"
                             v-for="(color, index) in colorList" @click="setActiveColor(index)" @keydown.space.prevent="setActiveColor(index)">
-                            <color :rgb-hex="color.rgbHex" :transparency="color.transparency" />
+                            <color :rgb-hex="color.rgbHex" :opacity="color.opacity" />
                         </li>
                     </ul>
 

@@ -249,22 +249,22 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tooltip__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .colors .colors__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tooltip__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tooltip__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .colors .colors__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tooltip__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist {
   list-style: none; }
 
-.um-components .list__item, .um-components .hero--text .content--rich ul li, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .footer-nav__item, .um-components .tooltip__list-item, .um-components .legal__item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li, .um-components .colors .colors__list-item {
+.um-components .list__item, .um-components .hero--text .content--rich ul li, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .footer-nav__item, .um-components .tooltip__list-item, .um-components .legal__item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child {
+.um-components .block > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child {
   margin-bottom: 0; }
 
-.um-components .hero--products .hero__link--large, .um-components .hero--products-application .hero__link--large, .um-components .examples .examples__link--large, .um-components .colors .colors__link--large {
+.um-components .hero--products .hero__link--large, .um-components .hero--products-application .hero__link--large, .um-components .examples .examples__link--large {
   margin-bottom: 0; }
 
 .um-components .clear {
@@ -3362,6 +3362,9 @@ because both families serve another purpose. Therefore the line-heights will be 
   z-index: 100;
   transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
 
+.um-components .color__icon {
+  display: block; }
+
 .um-components .color__spec--title,
 .um-components .color__spec--code,
 .um-components .color__spec--weight,
@@ -3666,7 +3669,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .content-manageble ul li p, .um-components .content-manageble .hero--text .content--rich ul li p, .um-components .hero--text .content--rich .content-manageble ul li p, .um-components .content-manageble ul li strong, .um-components .content-manageble .hero--text .content--rich ul li strong, .um-components .hero--text .content--rich .content-manageble ul li strong, .um-components .content-manageble ul li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ul li .tablist__item, .um-components .content-manageble ul li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ul li .tablist__item, .um-components .content-manageble ol li p, .um-components .content-manageble ol li strong, .um-components .content-manageble ol li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ol li .tablist__item, .um-components .content-manageble ol li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ol li .tablist__item {
       margin: 0; }
 
-.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .colors:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
+.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
 .um-components .hero__image {
@@ -4256,67 +4259,6 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 .um-components [class^="flexgrid__cell"]:last-child .examples__card {
   margin-bottom: 0; }
 
-.um-components .colors .colors__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0;
-  margin-left: 0;
-  padding-left: 0;
-  margin-bottom: 18px; }
-  @media (min-width: 768px) {
-    .um-components .colors .colors__list {
-      margin-bottom: 23px; } }
-
-.um-components .colors .colors__list-item {
-  position: relative;
-  margin: 0 12px 12px 0;
-  padding-left: 0; }
-
-.um-components .colors .colors__image {
-  transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  @media (max-width: 767px) {
-    .um-components .colors .colors__image {
-      margin-bottom: 36px; } }
-  .um-components .colors .colors__image--loading {
-    opacity: 0; }
-
-.um-components .colors .colors__tooltip {
-  position: absolute;
-  display: block;
-  opacity: 0;
-  left: -1000vw;
-  transform: translate(calc((50% - 24px) * -1), calc(-100% - 15px));
-  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s, left 0s 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-
-.um-components .colors .hit-area:hover .colors__tooltip,
-.um-components .colors .hit-area:active .colors__tooltip,
-.um-components .colors .hit-area:focus .colors__tooltip {
-  opacity: 1;
-  left: 0;
-  transform: translate(calc((50% - 24px) * -1), calc(-100% - 9px));
-  transition: opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 0.3s, left 0s cubic-bezier(0.23, 1, 0.32, 1); }
-
-.um-components .colors .hit-area:hover .push--left,
-.um-components .colors .hit-area:active .push--left,
-.um-components .colors .hit-area:focus .push--left {
-  left: -48px; }
-  .um-components .colors .hit-area:hover .push--left:after,
-  .um-components .colors .hit-area:active .push--left:after,
-  .um-components .colors .hit-area:focus .push--left:after {
-    left: calc(100% - 36px); }
-
-.um-components .colors .hit-area:hover .push--right,
-.um-components .colors .hit-area:active .push--right,
-.um-components .colors .hit-area:focus .push--right {
-  left: 48px; }
-  .um-components .colors .hit-area:hover .push--right:after,
-  .um-components .colors .hit-area:active .push--right:after,
-  .um-components .colors .hit-area:focus .push--right:after {
-    left: 12px; }
-
-.um-components .colors .hit-area:focus {
-  outline: none; }
-
 .um-components .explore__container {
   position: relative; }
 
@@ -4846,6 +4788,29 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   @media (min-width: 480px) {
     .um-components .selector-group {
       margin-left: auto; } }
+
+.um-components .colors .colors__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .um-components .colors .colors__list {
+      margin-bottom: 23px; } }
+
+.um-components .colors .colors__list-item {
+  position: relative;
+  margin: 0 12px 12px 0;
+  padding-left: 0; }
+
+.um-components .colors .colors__image {
+  transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+  @media (max-width: 767px) {
+    .um-components .colors .colors__image {
+      margin-bottom: 36px; } }
+  .um-components .colors .colors__image--loading {
+    opacity: 0; }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
