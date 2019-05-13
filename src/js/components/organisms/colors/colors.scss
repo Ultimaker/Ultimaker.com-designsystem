@@ -3,20 +3,18 @@
     .colors__list {
         display: flex;
         flex-wrap: wrap;
-        @extend %reset-list;
-        margin-top: 0;
-        margin-left: 0;
-        padding-left: 0;
-        margin-bottom: $buildingUnit * 1.5;
+        list-style: none;
+        margin: 0 0 ($buildingUnit * 1.5);
+        padding: 0;
 
         @include min-tablet {
             margin-bottom: ($buildingUnit * 2) - 1px;
         }
+
     }
 
     .colors__list-item {
         position: relative;
-        @extend %reset-list-item;
         margin: 0 $buildingUnit $buildingUnit 0;
         padding-left: 0;
     }
@@ -36,4 +34,5 @@
             opacity: 0;
         }
     }
+
 }
