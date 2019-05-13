@@ -1,7 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const production = process.env.NODE_ENV === 'production';
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const BrotliPlugin = require('brotli-webpack-plugin');
 
 function resolve(dir) {
     return path.join(__dirname, dir);
@@ -9,7 +10,7 @@ function resolve(dir) {
 
 const webpackConfig = {
     entry: './src/js/index.ts',
-    devtool: '#eval-source-map',
+    devtool: '',
     devServer: {
         historyApiFallback: true,
         noInfo: true
@@ -128,7 +129,17 @@ const webpackConfig = {
         ]
     },
     plugins: [
-     //   new VueLoaderPlugin()
+        new BrotliPlugin({
+            asset: '[path].br[query]',
+            test: /\.(js|css|html|svg)$/,
+            threshold: 10240,
+            minRatio: 0.8
+        }),
+        new UglifyJsPlugin({
+            cache: true,
+            parallel: true,
+            sourceMap: false
+        })
     ]
 };
 
