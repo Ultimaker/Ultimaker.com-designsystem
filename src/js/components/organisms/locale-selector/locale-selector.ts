@@ -8,7 +8,6 @@ import WithRender from './locale-selector.vue.html';
 @WithRender
 @Component({
     name: 'locale-selector',
-    template: require('./locale-selector.vue.html'),
 })
 export default class LocaleSelector extends Vue implements CountrySelectorInterface {
     @Prop({ type: String, default: null }) label!: CountryAutoCompleteField['label'];

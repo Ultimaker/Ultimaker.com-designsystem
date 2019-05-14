@@ -4,11 +4,12 @@ module.exports = {
     verbose: true,
     bail: true,
     transform: {
-        '^.+\\.html?$': 'html-loader-jest',
-        '^.+\\.md?$': 'markdown-loader-jest',
-        '^.+\\.ts$': "ts-jest",
-        '^.+\\.js?$': '<rootDir>/node_modules/jest-vue-preprocessor',
-        '^.+\\.js?$': 'babel-jest'
+        '^.+\.md?$': 'markdown-loader-jest',
+        '^.+\.ts$': 'ts-jest',
+        '^.+(?<!\.vue)\.html$': 'html-loader-jest',
+        '^.+\.vue\.html$': 'vue-template-loader-jest',
+        '^.+\.js?$': 'jest-vue',
+        '^.+\.js?$': 'babel-jest'
     },
     transformIgnorePatterns: [
         '/node_modules/(?!(@storybook/.*\\.vue$))'
@@ -23,7 +24,7 @@ module.exports = {
     ],
     moduleNameMapper: {
         '^src/scss/storybook.scss$': '<rootDir>/test/mock/jest.styleMock.js',
-        '\\.(css|less|sass|scss)$': '<rootDir>/test/mock/jest.styleMock.js',
+        '\.(css|less|sass|scss)$': '<rootDir>/test/mock/jest.styleMock.js',
         '^gsap/(.*)$': '<rootDir>/test/mock/jest.moduleMock.js',
         '^utils/throw-props-plugin.*$': '<rootDir>/test/mock/jest.moduleMock.js',
         '^@root$': '<rootDir>',

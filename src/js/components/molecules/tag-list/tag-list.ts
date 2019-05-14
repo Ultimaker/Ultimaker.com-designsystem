@@ -6,7 +6,6 @@ import WithRender from './tag-list.vue.html';
 @WithRender
 @Component({
     name: 'tag-list',
-    template: require('./tag-list.vue.html'),
 })
 
 export default class TagList extends Vue implements ITaglistProps {
