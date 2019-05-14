@@ -9,11 +9,10 @@
     &__dropdown {
         position: absolute;
         background: $colorWhite;
+        box-shadow: $defaultBoxShadow;
         width: 100%;
         border: $inputBorder;
         z-index: 1000;
-
-        @extend %box-shadow;
     }
 
     &__dropdown,
