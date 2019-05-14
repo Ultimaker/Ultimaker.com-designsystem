@@ -58,8 +58,8 @@ export const data = {
             type: 'Ctas',
             ctas: [
                 {
-                    type: 'ContentButton',
-                    label: 'Do something else',
+                    type: 'ContentLink',
+                    label: 'Read more',
                     url: '/en/quote',
                 },
             ],

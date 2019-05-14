@@ -3663,6 +3663,8 @@ table tfoot {
   align-items: center; }
   .footer-block:not(:empty) {
     padding-bottom: 60px; }
+  .footer-block--push-down:not(:empty) {
+    margin-top: 60px; }
 
 .brand-card__image-wrapper {
   width: 120px;
@@ -3879,14 +3881,13 @@ table tfoot {
 .content-block__content {
   width: 100%; }
 
-.cta__block {
+.cta-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 0; }
   @media (min-width: 768px) {
-    .cta__block {
-      display: flex;
+    .cta-block {
       flex-direction: row;
       align-items: baseline;
       flex-wrap: wrap; } }
@@ -3897,23 +3898,23 @@ table tfoot {
     .cta__block--hero {
       align-items: center; } }
 
-.cta__link {
+.cta-link {
   text-align: center;
   margin-right: 0;
   margin-bottom: 18px; }
-  .cta__link:last-of-type {
+  .cta-link:last-of-type {
     margin-bottom: 0; }
   @media (min-width: 768px) {
-    .cta__link {
+    .cta-link {
       margin-bottom: 0;
       margin-right: 24px; }
-      .cta__link:not(.button--primary) {
+      .cta-link:not(.button--primary) {
         margin-right: 24px; }
-      .cta__link.button--primary + .cta__link {
+      .cta-link.button--primary + .cta__link {
         margin-left: 24px; }
-      .cta__block--footer .cta__link:not(.button--primary) {
+      .cta__block--footer .cta-link:not(.button--primary) {
         margin-bottom: 0; }
-      .cta__block--footer .cta__link:last-child {
+      .cta__block--footer .cta-link:last-child {
         margin-right: 0; } }
 
 .icon-button, .sys-nav__link, .search__button, .um-components .search__button {
