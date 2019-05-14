@@ -354,9 +354,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components h6 a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .legal__link a:focus:not(:hover), .um-components .link--small.footer-nav__link a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tooltip__list-item.tooltip__label a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components h6 a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .legal__link a:focus:not(:active), .um-components .link--small.footer-nav__link a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tooltip__list-item.tooltip__label a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .legal__link:focus:not(:hover), .um-components .footer-nav__link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .legal__link:focus:not(:active), .um-components .footer-nav__link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .search__input:focus, .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
 
-.um-components .color--selected, .um-components .auto-complete__dropdown {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23); }
-
 .um-components h4,
 .um-components h5,
 .um-components .link-list__headline,
@@ -3345,7 +3342,12 @@ because both families serve another purpose. Therefore the line-heights will be 
   cursor: pointer;
   margin: 0;
   background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px);
-  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px); }
+  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px);
+  outline: none; }
+  .um-components .color:hover .color__spec--show, .um-components .color:focus .color__spec--show {
+    opacity: 1; }
+  .um-components .color:hover .color--selected .color__spec--show, .um-components .color:focus .color--selected .color__spec--show {
+    opacity: 0; }
 
 .um-components .color__spec {
   position: relative;
@@ -3367,28 +3369,11 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .color__icon {
   display: block; }
 
-.um-components .color__spec--title,
-.um-components .color__spec--code,
-.um-components .color__spec--weight,
-.um-components .color__label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
-
 .um-components .color--selected {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
   outline: 2px solid #000000; }
   .um-components .color--selected .color__spec--show {
     opacity: 0; }
-
-.um-components .hit-area:hover .color__spec--show,
-.um-components .hit-area:focus .color__spec--show {
-  opacity: 1; }
-
-.um-components .hit-area:hover .color--selected .color__spec--show,
-.um-components .hit-area:focus .color--selected .color__spec--show {
-  opacity: 0; }
 
 .um-components .toggle {
   color: #0CA9E3;
@@ -3582,6 +3567,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .auto-complete__dropdown {
     position: absolute;
     background: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
     width: 100%;
     border: 1px solid #E3E3E3;
     z-index: 1000; }
