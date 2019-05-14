@@ -377,9 +377,6 @@ h6 a:focus:not(:active),
 .content--rich li a:focus:not(:active), .link:focus:not(:hover), .legal__link:focus:not(:hover), .footer-nav__link:focus:not(:hover), .toggle:focus:not(:hover), .link:focus:not(:active), .legal__link:focus:not(:active), .footer-nav__link:focus:not(:active), .toggle:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .search__input:focus, .overflow-container__link:focus:not(:hover), .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
 
-.color--selected, .auto-complete__dropdown {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23); }
-
 /******************************************************************************
 
 REMARK: Do not to output any CSS in the first 2 layers  (TOOLS/SETTINGS). This
@@ -3817,7 +3814,12 @@ table tfoot {
   cursor: pointer;
   margin: 0;
   background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px);
-  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px); }
+  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) 5px, transparent 5px, transparent 10px);
+  outline: none; }
+  .color:hover .color__spec--show, .color:focus .color__spec--show {
+    opacity: 1; }
+  .color:hover .color--selected .color__spec--show, .color:focus .color--selected .color__spec--show {
+    opacity: 0; }
 
 .color__spec {
   position: relative;
@@ -3839,28 +3841,11 @@ table tfoot {
 .color__icon {
   display: block; }
 
-.color__spec--title,
-.color__spec--code,
-.color__spec--weight,
-.color__label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
-
 .color--selected {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
   outline: 2px solid #000000; }
   .color--selected .color__spec--show {
     opacity: 0; }
-
-.hit-area:hover .color__spec--show,
-.hit-area:focus .color__spec--show {
-  opacity: 1; }
-
-.hit-area:hover .color--selected .color__spec--show,
-.hit-area:focus .color--selected .color__spec--show {
-  opacity: 0; }
 
 .toggle {
   color: #0CA9E3;
@@ -4054,6 +4039,7 @@ table tfoot {
   .auto-complete__dropdown {
     position: absolute;
     background: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
     width: 100%;
     border: 1px solid #E3E3E3;
     z-index: 1000; }
