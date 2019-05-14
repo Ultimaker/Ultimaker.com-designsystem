@@ -5,6 +5,17 @@ $colorSize: $buildingUnit * 4;
     margin: 0;
     background: repeating-linear-gradient(45deg, rgba($colorBlack, .07), rgba($colorBlack, .07) 5px, transparent 5px, transparent 10px);
     background-image: repeating-linear-gradient(45deg, rgba($colorBlack, 0.07), rgba($colorBlack, 0.07) 5px, transparent 5px, transparent 10px);
+    outline: none;
+
+    &:hover,
+    &:focus {
+        .color__spec--show {
+            opacity: 1;
+        }
+        .color--selected .color__spec--show {
+            opacity: 0;
+        }
+    }
 }
 
 .color__spec {
@@ -31,29 +42,11 @@ $colorSize: $buildingUnit * 4;
     display: block;
 }
 
-.color__spec--title,
-.color__spec--code,
-.color__spec--weight,
-.color__label {
-    @include visually-hidden();
-}
-
 .color--selected {
-    @extend %box-shadow;
-
+    box-shadow: $defaultBoxShadow;
     outline: 2px solid $colorBlack;
 
     .color__spec--show {
-        opacity: 0;
-    }
-}
-
-.hit-area:hover,
-.hit-area:focus {
-    .color__spec--show {
-        opacity: 1;
-    }
-    .color--selected .color__spec--show {
         opacity: 0;
     }
 }
