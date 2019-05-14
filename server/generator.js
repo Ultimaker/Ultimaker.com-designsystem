@@ -6,15 +6,21 @@ function greatestCommonDivisor(a, b) {
 }
 
 router.get('/svg/:width/:height/:background?/:foreground?', (req, res) => {
-    const width = parseInt(req.query.w || req.params.width, 10),
-        height = parseInt(req.query.h || req.params.height, 10),
-        background = req.params.background,
-        foreground = req.params.foreground,
+    const width = parseInt(req.query.w || req.params.width, 10);
+    let height = parseInt(req.query.h || req.params.height, 10);
+    const background = req.params.background;
+    const foreground = req.params.foreground;
 
-        divisor = greatestCommonDivisor(width, height),
-        ratioWidth = width / divisor,
-        ratioHeight = height / divisor,
-        ratio = `${ ratioWidth }:${ ratioHeight }`;
+    if (req.query.w && !req.query.h) {
+        const cropRatio = req.params.width / req.query.w;
+
+        height = parseInt(height / cropRatio, 10);
+    }
+
+    const divisor = greatestCommonDivisor(width, height);
+    const ratioWidth = width / divisor;
+    const ratioHeight = height / divisor;
+    const ratio = `${ ratioWidth }:${ ratioHeight }`;
 
     res.set('Content-Type', 'image/svg+xml');
     res.send(`<svg xmlns="http://www.w3.org/2000/svg"  width="${ width }" height="${ height }" viewBox="0 0 ${ width } ${ height }" style="fill: #${ background || 'c6c6c6' };">
