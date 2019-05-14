@@ -1,11 +1,10 @@
-.cta__block {
+.cta-block {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
 
     @include min-tablet() {
-        display: flex;
         flex-direction: row;
         align-items: baseline;
         flex-wrap: wrap;
@@ -19,7 +18,7 @@
     }
 }
 
-.cta__link {
+.cta-link {
     text-align: center;
     margin-right: 0;
     margin-bottom: $buildingUnit * 1.5;
