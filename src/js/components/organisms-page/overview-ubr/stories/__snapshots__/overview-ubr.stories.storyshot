@@ -126,10 +126,10 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 2 bl
         >
           <div
             block="overview"
-            class="cta__block cta__block--footer"
+            class="cta-block cta-block--footer"
           >
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -145,7 +145,7 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 2 bl
               </span>
             </a>
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -337,10 +337,10 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 3 bl
         >
           <div
             block="overview"
-            class="cta__block cta__block--footer"
+            class="cta-block cta-block--footer"
           >
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -356,7 +356,7 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 3 bl
               </span>
             </a>
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -591,10 +591,10 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 4 bl
         >
           <div
             block="overview"
-            class="cta__block cta__block--footer"
+            class="cta-block cta-block--footer"
           >
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -610,7 +610,7 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 4 bl
               </span>
             </a>
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -888,10 +888,10 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 5 bl
         >
           <div
             block="overview"
-            class="cta__block cta__block--footer"
+            class="cta-block cta-block--footer"
           >
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -907,7 +907,7 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 5 bl
               </span>
             </a>
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -1228,10 +1228,10 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 6 bl
         >
           <div
             block="overview"
-            class="cta__block cta__block--footer"
+            class="cta-block cta-block--footer"
           >
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -1247,7 +1247,7 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 6 bl
               </span>
             </a>
             <a
-              class="link--primary button cta__link"
+              class="link--primary button cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"

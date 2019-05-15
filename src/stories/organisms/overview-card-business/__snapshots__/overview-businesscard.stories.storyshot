@@ -25,14 +25,14 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
             >
               Find your reseller in the Netherlands
             </h2>
-             
+
             <p
               class="header-block__subtitle"
             >
               Or just get a subtitle
             </p>
           </header>
-           
+
           <section
             class="list-section list-section--cards"
             showalllabel="Show all"
@@ -45,13 +45,13 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 class="list-section__title"
               >
                 Title
-                
+
                 <span
                   class="list-section__count"
                 >
                   (2)
                 </span>
-                 
+
                 <div
                   class="tooltip section-tooltip list-section__tooltip"
                   description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
@@ -61,12 +61,12 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   style="display: none;"
                   type="Tooltip"
                 >
-                  
+
                             Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed.
-                        
+
                 </div>
               </h3>
-               
+
               <a
                 aria-describedby="tooltip_686"
                 class="link list-section__info-link link--reversed link--icon"
@@ -74,12 +74,12 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 role="button"
               >
                 <!---->
-                 
+
                     More info
-                
+
               </a>
             </header>
-             
+
             <ul
               aria-label="Title"
               class="list-section-list"
@@ -109,23 +109,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                         >
                           <picture>
                             <!---->
-                             
+
                             <source
                               media="(min-width: 1025px)"
                               srcset=""
                             />
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <source
                               media="(max-width: 480px)"
                               srcset="/generator/svg/120/120"
                             />
-                             
+
                             <img
                               alt=""
                               class="img--responsive img--lazy"
@@ -133,28 +133,28 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             />
                           </picture>
                         </div>
-                         
+
                         <div
                           class="business-card__description"
                         >
                           <h4
                             class="business-card__title"
                           >
-                            
+
                 Ultimaker
-            
+
                           </h4>
-                           
+
                           <p
                             class="business-card__property"
                           >
-                            
+
                 5 Showrooms
-            
+
                           </p>
                         </div>
                       </div>
-                       
+
                       <div
                         class="business-card__footer"
                       >
@@ -164,9 +164,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           <span
                             class="link__underline"
                           >
-                            
+
                 Visit website
-            
+
                           </span>
                         </span>
                       </div>
@@ -195,23 +195,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                         >
                           <picture>
                             <!---->
-                             
+
                             <source
                               media="(min-width: 1025px)"
                               srcset=""
                             />
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <source
                               media="(max-width: 480px)"
                               srcset="/generator/svg/120/120"
                             />
-                             
+
                             <img
                               alt=""
                               class="img--responsive img--lazy"
@@ -219,28 +219,28 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             />
                           </picture>
                         </div>
-                         
+
                         <div
                           class="business-card__description"
                         >
                           <h4
                             class="business-card__title"
                           >
-                            
+
                 Ultimaker
-            
+
                           </h4>
-                           
+
                           <p
                             class="business-card__property"
                           >
-                            
+
                 5 Showrooms
-            
+
                           </p>
                         </div>
                       </div>
-                       
+
                       <div
                         class="business-card__footer"
                       >
@@ -250,9 +250,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           <span
                             class="link__underline"
                           >
-                            
+
                 Visit website
-            
+
                           </span>
                         </span>
                       </div>
@@ -260,10 +260,10 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   </li>
                 </div>
               </div>
-               
+
               <!---->
             </ul>
-             
+
             <!---->
           </section>
           <section
@@ -278,19 +278,19 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                 class="list-section__title"
               >
                 Title
-                
+
                 <span
                   class="list-section__count"
                 >
                   (7)
                 </span>
-                 
+
                 <!---->
               </h3>
-               
+
               <!---->
             </header>
-             
+
             <ul
               aria-label="Title"
               class="list-section-list"
@@ -320,23 +320,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                         >
                           <picture>
                             <!---->
-                             
+
                             <source
                               media="(min-width: 1025px)"
                               srcset=""
                             />
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <source
                               media="(max-width: 480px)"
                               srcset="/generator/svg/120/120"
                             />
-                             
+
                             <img
                               alt=""
                               class="img--responsive img--lazy"
@@ -344,28 +344,28 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             />
                           </picture>
                         </div>
-                         
+
                         <div
                           class="business-card__description"
                         >
                           <h4
                             class="business-card__title"
                           >
-                            
+
                 Ultimaker1
-            
+
                           </h4>
-                           
+
                           <p
                             class="business-card__property"
                           >
-                            
+
                 5 Showrooms
-            
+
                           </p>
                         </div>
                       </div>
-                       
+
                       <div
                         class="business-card__footer"
                       >
@@ -375,9 +375,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           <span
                             class="link__underline"
                           >
-                            
+
                 Visit website
-            
+
                           </span>
                         </span>
                       </div>
@@ -406,23 +406,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                         >
                           <picture>
                             <!---->
-                             
+
                             <source
                               media="(min-width: 1025px)"
                               srcset=""
                             />
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <source
                               media="(max-width: 480px)"
                               srcset="/generator/svg/120/120"
                             />
-                             
+
                             <img
                               alt=""
                               class="img--responsive img--lazy"
@@ -430,28 +430,28 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             />
                           </picture>
                         </div>
-                         
+
                         <div
                           class="business-card__description"
                         >
                           <h4
                             class="business-card__title"
                           >
-                            
+
                 Ultimaker2
-            
+
                           </h4>
-                           
+
                           <p
                             class="business-card__property"
                           >
-                            
+
                 5 Showrooms
-            
+
                           </p>
                         </div>
                       </div>
-                       
+
                       <div
                         class="business-card__footer"
                       >
@@ -461,9 +461,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           <span
                             class="link__underline"
                           >
-                            
+
                 Visit website
-            
+
                           </span>
                         </span>
                       </div>
@@ -492,23 +492,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                         >
                           <picture>
                             <!---->
-                             
+
                             <source
                               media="(min-width: 1025px)"
                               srcset=""
                             />
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <source
                               media="(max-width: 480px)"
                               srcset="/generator/svg/120/120"
                             />
-                             
+
                             <img
                               alt=""
                               class="img--responsive img--lazy"
@@ -516,28 +516,28 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             />
                           </picture>
                         </div>
-                         
+
                         <div
                           class="business-card__description"
                         >
                           <h4
                             class="business-card__title"
                           >
-                            
+
                 Ultimaker3
-            
+
                           </h4>
-                           
+
                           <p
                             class="business-card__property"
                           >
-                            
+
                 5 Showrooms
-            
+
                           </p>
                         </div>
                       </div>
-                       
+
                       <div
                         class="business-card__footer"
                       >
@@ -547,9 +547,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           <span
                             class="link__underline"
                           >
-                            
+
                 Visit website
-            
+
                           </span>
                         </span>
                       </div>
@@ -578,23 +578,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                         >
                           <picture>
                             <!---->
-                             
+
                             <source
                               media="(min-width: 1025px)"
                               srcset=""
                             />
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <source
                               media="(max-width: 480px)"
                               srcset="/generator/svg/120/120"
                             />
-                             
+
                             <img
                               alt=""
                               class="img--responsive img--lazy"
@@ -602,28 +602,28 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             />
                           </picture>
                         </div>
-                         
+
                         <div
                           class="business-card__description"
                         >
                           <h4
                             class="business-card__title"
                           >
-                            
+
                 Ultimaker4
-            
+
                           </h4>
-                           
+
                           <p
                             class="business-card__property"
                           >
-                            
+
                 5 Showrooms
-            
+
                           </p>
                         </div>
                       </div>
-                       
+
                       <div
                         class="business-card__footer"
                       >
@@ -633,9 +633,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           <span
                             class="link__underline"
                           >
-                            
+
                 Visit website
-            
+
                           </span>
                         </span>
                       </div>
@@ -664,23 +664,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                         >
                           <picture>
                             <!---->
-                             
+
                             <source
                               media="(min-width: 1025px)"
                               srcset=""
                             />
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <source
                               media="(max-width: 480px)"
                               srcset="/generator/svg/120/120"
                             />
-                             
+
                             <img
                               alt=""
                               class="img--responsive img--lazy"
@@ -688,28 +688,28 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             />
                           </picture>
                         </div>
-                         
+
                         <div
                           class="business-card__description"
                         >
                           <h4
                             class="business-card__title"
                           >
-                            
+
                 Ultimaker5
-            
+
                           </h4>
-                           
+
                           <p
                             class="business-card__property"
                           >
-                            
+
                 5 Showrooms
-            
+
                           </p>
                         </div>
                       </div>
-                       
+
                       <div
                         class="business-card__footer"
                       >
@@ -719,9 +719,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           <span
                             class="link__underline"
                           >
-                            
+
                 Visit website
-            
+
                           </span>
                         </span>
                       </div>
@@ -750,23 +750,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                         >
                           <picture>
                             <!---->
-                             
+
                             <source
                               media="(min-width: 1025px)"
                               srcset=""
                             />
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <source
                               media="(max-width: 480px)"
                               srcset="/generator/svg/120/120"
                             />
-                             
+
                             <img
                               alt=""
                               class="img--responsive img--lazy"
@@ -774,28 +774,28 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             />
                           </picture>
                         </div>
-                         
+
                         <div
                           class="business-card__description"
                         >
                           <h4
                             class="business-card__title"
                           >
-                            
+
                 Ultimaker6
-            
+
                           </h4>
-                           
+
                           <p
                             class="business-card__property"
                           >
-                            
+
                 5 Showrooms
-            
+
                           </p>
                         </div>
                       </div>
-                       
+
                       <div
                         class="business-card__footer"
                       >
@@ -805,9 +805,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           <span
                             class="link__underline"
                           >
-                            
+
                 Visit website
-            
+
                           </span>
                         </span>
                       </div>
@@ -836,23 +836,23 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                         >
                           <picture>
                             <!---->
-                             
+
                             <source
                               media="(min-width: 1025px)"
                               srcset=""
                             />
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <!---->
-                             
+
                             <source
                               media="(max-width: 480px)"
                               srcset="/generator/svg/120/120"
                             />
-                             
+
                             <img
                               alt=""
                               class="img--responsive img--lazy"
@@ -860,28 +860,28 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                             />
                           </picture>
                         </div>
-                         
+
                         <div
                           class="business-card__description"
                         >
                           <h4
                             class="business-card__title"
                           >
-                            
+
                 Ultimaker7
-            
+
                           </h4>
-                           
+
                           <p
                             class="business-card__property"
                           >
-                            
+
                 5 Showrooms
-            
+
                           </p>
                         </div>
                       </div>
-                       
+
                       <div
                         class="business-card__footer"
                       >
@@ -891,9 +891,9 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                           <span
                             class="link__underline"
                           >
-                            
+
                 Visit website
-            
+
                           </span>
                         </span>
                       </div>
@@ -901,49 +901,49 @@ exports[`Storyshots organisms|overview Overview businesscard 1`] = `
                   </li>
                 </div>
               </div>
-               
+
               <!---->
             </ul>
-             
+
             <!---->
           </section>
-           
+
           <footer
             class="footer-block"
           >
             <div
-              class="cta__block cta__block--footer"
+              class="cta-block cta-block--footer"
             >
               <a
-                class="link--primary button cta__link"
+                class="link--primary button cta-link"
                 href="https://ultimaker.com"
                 rel="noopener"
                 target="_self"
               >
                 <!---->
-                 
+
                 <span
                   class="link__underline"
                 >
-                  
+
         Call me back
-    
+
                 </span>
               </a>
               <a
-                class="link--large link cta__link"
+                class="link--large link cta-link"
                 href="https://ultimaker.com"
                 rel="noopener"
                 target="_self"
               >
                 <!---->
-                 
+
                 <span
                   class="link__underline"
                 >
-                  
+
         Call me back
-    
+
                 </span>
               </a>
             </div>

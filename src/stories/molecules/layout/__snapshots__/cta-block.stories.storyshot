@@ -11,10 +11,10 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
       class="story__molecule"
     >
       <div
-        class="cta__block"
+        class="cta-block"
       >
         <a
-          class="link--primary button cta__link"
+          class="link--primary button cta-link"
           href="https://www.ultimaker.com/resellers"
           rel="noopener"
           target="_self"
@@ -30,7 +30,7 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
           </span>
         </a>
         <a
-          class="link--large link cta__link"
+          class="link--large link cta-link"
           href="https://3d.ultimaker.com/requestquote"
           rel="noopener"
           target="_blank"

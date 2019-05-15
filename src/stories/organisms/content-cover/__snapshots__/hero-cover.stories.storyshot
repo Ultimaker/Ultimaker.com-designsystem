@@ -22,11 +22,11 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           />
         </div>
-         
+
         <div
           class="hero-cover__image--overlay"
         />
-         
+
         <section
           class="hero-cover__container container"
         >
@@ -38,15 +38,15 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
             >
               Lorum ipsum dolor sit amet consectetuer
             </h1>
-             
+
             <p
               class="copy--intro"
             >
               Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.
             </p>
-             
+
             <div
-              class="cta__block"
+              class="cta-block"
             >
               <div
                 class="cta__video"
@@ -57,16 +57,16 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
                   target="_blank"
                 >
                   <!---->
-                   
+
                   <span
                     class="link__underline"
                   >
-                    
+
             Watch video
-        
+
                   </span>
                 </a>
-                 
+
                 <!---->
               </div>
             </div>

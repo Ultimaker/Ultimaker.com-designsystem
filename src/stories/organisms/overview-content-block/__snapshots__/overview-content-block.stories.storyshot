@@ -641,10 +641,10 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
           >
             <div
               block="overview"
-              class="cta__block cta__block--footer"
+              class="cta-block cta-block--footer"
             >
               <a
-                class="link--primary button cta__link"
+                class="link--primary button cta-link"
                 href="https://ultimaker.com"
                 rel="noopener"
                 target="_self"
@@ -660,7 +660,7 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                 </span>
               </a>
               <a
-                class="link--large link cta__link"
+                class="link--large link cta-link"
                 href="https://ultimaker.com"
                 rel="noopener"
                 target="_self"

@@ -786,10 +786,10 @@ exports[`Storyshots Molecules/cta-block default 1`] = `
     class="story"
   >
     <div
-      class="cta__block"
+      class="cta-block"
     >
       <a
-        class="link--primary button cta__link"
+        class="link--primary button cta-link"
         href="https://ultimaker.com"
         rel="noopener"
         target="_self"
@@ -805,7 +805,7 @@ exports[`Storyshots Molecules/cta-block default 1`] = `
         </span>
       </a>
       <a
-        class="link link--icon link--large undefined cta__link"
+        class="link link--icon link--large undefined cta-link"
         href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
         target="_blank"
       >
@@ -822,7 +822,7 @@ exports[`Storyshots Molecules/cta-block default 1`] = `
         <!---->
       </a>
       <a
-        class="link--large link cta__link"
+        class="link--large link cta-link"
         href="https://ultimaker.com"
         rel="noopener"
         target="_self"
@@ -1879,7 +1879,7 @@ exports[`Storyshots Organisms/colors default 1`] = `
     class="story"
   >
     <article
-      class="colors"
+      class="organism colors"
     >
       <div
         class="container"
@@ -1991,10 +1991,10 @@ exports[`Storyshots Organisms/colors default 1`] = `
               </ul>
                
               <div
-                class="cta__block"
+                class="cta-block"
               >
                 <a
-                  class="link--primary button cta__link"
+                  class="link--primary button cta-link"
                   href="#/en/quote"
                 >
                   <!---->
@@ -2024,14 +2024,14 @@ exports[`Storyshots Organisms/colors default 1`] = `
         </div>
          
         <footer
-          class="footer-block"
+          class="footer-block footer-block--push-down"
         >
           <div
             block="overview"
-            class="cta__block cta__block--footer"
+            class="cta-block cta-block--footer"
           >
             <a
-              class="link--primary button cta__link"
+              class="link--large link cta-link"
               href="#/en/quote"
             >
               <!---->
@@ -2040,7 +2040,7 @@ exports[`Storyshots Organisms/colors default 1`] = `
                 class="link__underline"
               >
                 
-        Do something else
+        Read more
     
               </span>
             </a>
@@ -2165,10 +2165,10 @@ exports[`Storyshots Organisms|hero/Hero product default 1`] = `
                
               <div
                 block="hero"
-                class="cta__block cta__block--hero"
+                class="cta-block cta-block--hero"
               >
                 <a
-                  class="link--primary button button--primary cta__link"
+                  class="link--primary button button--primary cta-link"
                   href="#/en/quote"
                 >
                   <!---->
@@ -2182,7 +2182,7 @@ exports[`Storyshots Organisms|hero/Hero product default 1`] = `
                   </span>
                 </a>
                 <a
-                  class="link--large link cta__link"
+                  class="link--large link cta-link"
                   href="#/en/link"
                 >
                   <!---->

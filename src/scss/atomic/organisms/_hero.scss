@@ -108,7 +108,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 $imageLinkSizeMobile: $buildingUnit * 7;
 $imageLinkSizeDesktop: $buildingUnit * 10;
 
-.cta__block--hero {
+.cta-block--hero {
     align-items: flex-start;
     @include min-tablet() {
         align-items: center;
@@ -119,7 +119,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     @extend %reset-last-margin;
 
     .hero__container {
-        padding-top: $buildingUnit * 5;            
+        padding-top: $buildingUnit * 5;
     }
 
     .hero__image--basic,

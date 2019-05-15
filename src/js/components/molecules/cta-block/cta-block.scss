@@ -11,7 +11,7 @@
     }
 }
 
-.cta__block--hero {
+.cta-block--hero {
     align-items: flex-start;
     @include min-tablet() {
         align-items: center;
@@ -35,11 +35,11 @@
             margin-right: $buildingUnit * 2;
         }
 
-        &.button--primary + .cta__link {
+        &.button--primary + .cta-link {
             margin-left: $buildingUnit * 2;
         }
 
-        .cta__block--footer & {
+        .cta-block--footer & {
             &:not(.button--primary) {
                 margin-bottom: 0;
             }
