@@ -63,13 +63,12 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
     }
 
     @Watch('url')
-    async urlChanged() {
-        // replaces previous image with tinyGif
+    async reset() {
         this.ready = false;
-        this.$nextTick(() => this.ready = true);
-
-        // reset state
         this.imageLoaded = false;
+        this.width = 0;
+        this.height = 0;
+        this.$nextTick(() => this.ready = true);
 
         if (this.inView) {
             await this.inViewWatcher(true);
@@ -83,11 +82,15 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
     }
 
     get src() {
+        return this.url;
+    }
+
+    get srcset() {
         if (!this.ready) {
-            return imageConstants.tinyGif;
+            return `${ imageConstants.tinyGif } 1w`;
         }
 
-        return this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl;
+        return `${ this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl } ${ this.width || imageConstants.initialSize }w`;
     }
 
     get imageUrl() {

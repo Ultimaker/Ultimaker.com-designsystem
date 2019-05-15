@@ -3845,7 +3845,7 @@ var CImage = function (_Mixins) {
             this.viewportUtil.removeScrollHandler(this.resizeHandler);
         }
     }, {
-        key: "urlChanged",
+        key: "reset",
         value: function () {
             var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2() {
                 var _this2 = this;
@@ -3855,6 +3855,8 @@ var CImage = function (_Mixins) {
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 this.ready = false;
+                                this.width = 0;
+                                this.height = 0;
                                 this.$nextTick(function () {
                                     return _this2.ready = true;
                                 });
@@ -3862,14 +3864,14 @@ var CImage = function (_Mixins) {
                                 this.imageLoaded = false;
 
                                 if (!this.inView) {
-                                    _context2.next = 6;
+                                    _context2.next = 8;
                                     break;
                                 }
 
-                                _context2.next = 6;
+                                _context2.next = 8;
                                 return this.inViewWatcher(true);
 
-                            case 6:
+                            case 8:
                             case "end":
                                 return _context2.stop();
                         }
@@ -3877,11 +3879,11 @@ var CImage = function (_Mixins) {
                 }, _callee2, this);
             }));
 
-            function urlChanged() {
+            function reset() {
                 return _ref2.apply(this, arguments);
             }
 
-            return urlChanged;
+            return reset;
         }()
     }, {
         key: "getParams",
@@ -3997,10 +3999,15 @@ var CImage = function (_Mixins) {
     }, {
         key: "src",
         get: function get() {
+            return this.url;
+        }
+    }, {
+        key: "srcset",
+        get: function get() {
             if (!this.ready) {
-                return _cImage2.imageConstants.tinyGif;
+                return _cImage2.imageConstants.tinyGif + " 1w";
             }
-            return this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl;
+            return (this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl) + " " + (this.width || _cImage2.imageConstants.initialSize) + "w";
         }
     }, {
         key: "imageUrl",
@@ -4032,7 +4039,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: _cImage.Foc
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Number)], CImage.prototype, "radius", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 65 }), __metadata("design:type", Number)], CImage.prototype, "quality", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: null }), __metadata("design:type", Object)], CImage.prototype, "backgroundColor", void 0);
-__decorate([(0, _vuePropertyDecorator.Watch)('url'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", Promise)], CImage.prototype, "urlChanged", null);
+__decorate([(0, _vuePropertyDecorator.Watch)('url'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", Promise)], CImage.prototype, "reset", null);
 __decorate([(0, _vuePropertyDecorator.Watch)('inView'), __metadata("design:type", Function), __metadata("design:paramtypes", [Boolean]), __metadata("design:returntype", Promise)], CImage.prototype, "inViewWatcher", null);
 CImage = __decorate([_cImageVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'c-image'
@@ -4242,7 +4249,7 @@ var imageConstants = exports.imageConstants = {
 /* 150 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('img',{staticClass:"img--contain",class:_vm.classList,attrs:{"alt":_vm.alt,"src":_vm.src},on:{"error":function($event){return _vm.$emit('error')}}})}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('img',{staticClass:"img--contain",class:_vm.classList,attrs:{"alt":_vm.alt,"src":_vm.src,"srcset":_vm.srcset},on:{"error":function($event){return _vm.$emit('error')}}})}
 var staticRenderFns = []
 
 module.exports = function (_exports) {

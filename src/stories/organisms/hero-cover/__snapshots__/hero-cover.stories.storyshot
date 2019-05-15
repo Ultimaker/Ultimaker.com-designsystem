@@ -19,7 +19,8 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
           <img
             alt="bla bla"
             class="img--contain img--loading"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            src="/generator/svg/1500/400/000022/FFFFFF"
+            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
           />
         </div>
          
