@@ -10,7 +10,6 @@
         @include min-tablet {
             margin-bottom: ($buildingUnit * 2) - 1px;
         }
-
     }
 
     .colors__list-item {
@@ -34,5 +33,4 @@
             opacity: 0;
         }
     }
-
 }
