@@ -2916,7 +2916,7 @@ table tfoot {
 
 .container, .footer__container {
   max-width: 1201px;
-  margin: 0 auto 60px;
+  margin: 0 auto;
   padding: 60px 12px 0 12px; }
   @media (min-width: 768px) {
     .container, .footer__container {
@@ -3661,7 +3661,10 @@ table tfoot {
   .footer-block:not(:empty) {
     padding-bottom: 60px; }
   .footer-block--push-down:not(:empty) {
-    margin-top: 60px; }
+    margin-top: 36px; }
+    @media (min-width: 768px) {
+      .footer-block--push-down:not(:empty) {
+        margin-top: 60px; } }
 
 .brand-card__image-wrapper {
   width: 120px;
@@ -3877,10 +3880,10 @@ table tfoot {
       align-items: baseline;
       flex-wrap: wrap; } }
 
-.cta__block--hero {
+.cta-block--hero {
   align-items: flex-start; }
   @media (min-width: 768px) {
-    .cta__block--hero {
+    .cta-block--hero {
       align-items: center; } }
 
 .cta-link {
@@ -3895,11 +3898,11 @@ table tfoot {
       margin-right: 24px; }
       .cta-link:not(.button--primary) {
         margin-right: 24px; }
-      .cta-link.button--primary + .cta__link {
+      .cta-link.button--primary + .cta-link {
         margin-left: 24px; }
-      .cta__block--footer .cta-link:not(.button--primary) {
+      .cta-block--footer .cta-link:not(.button--primary) {
         margin-bottom: 0; }
-      .cta__block--footer .cta-link:last-child {
+      .cta-block--footer .cta-link:last-child {
         margin-right: 0; } }
 
 .icon-button, .sys-nav__link, .search__button, .um-components .search__button {
@@ -4210,7 +4213,7 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
 $imageLinkSizeMobile: $buildingUnit * 7;
 $imageLinkSizeDesktop: $buildingUnit * 10;
 
-.cta__block--hero {
+.cta-block--hero {
     align-items: flex-start;
     @include min-tablet() {
         align-items: center;
@@ -4221,7 +4224,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     @extend %reset-last-margin;
 
     .hero__container {
-        padding-top: $buildingUnit * 5;            
+        padding-top: $buildingUnit * 5;
     }
 
     .hero__image--basic,
