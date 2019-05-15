@@ -8,6 +8,10 @@
     }
 
     &--push-down:not(:empty) {
-        margin-top: $buildingUnit * 5;
+        margin-top: $buildingUnit * 3;
+
+        @include min-tablet {
+            margin-top: $buildingUnit * 5;
+        }
     }
 }
