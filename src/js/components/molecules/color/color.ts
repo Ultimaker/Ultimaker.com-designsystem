@@ -2,7 +2,6 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 import { ColorProps } from './color.models';
 import { Color as ColorUtil } from 'utils/color';
 import WithRender from './color.vue.html';
-import { TransparencyLevel } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/products/TransparencyLevel';
 
 @WithRender
 @Component({

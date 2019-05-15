@@ -1,9 +1,10 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { ColorsProps } from './colors.models';
+import WithRender from './colors.vue.html';
 
+@WithRender
 @Component({
     name: 'colors',
-    template: require('./colors.vue.html'),
 })
 export class Colors extends Vue implements ColorsProps {
     @Prop({ type: String, required: true }) title!: ColorsProps['title'];
