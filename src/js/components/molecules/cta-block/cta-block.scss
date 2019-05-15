@@ -4,11 +4,15 @@
     align-items: center;
     margin-bottom: 0;
 
-    @include min-tablet() {
+    @include min-tablet {
         flex-direction: row;
         align-items: baseline;
         flex-wrap: wrap;
     }
+}
+
+.cta-block--baseline {
+    align-items: baseline;
 }
 
 .cta-block--hero {
