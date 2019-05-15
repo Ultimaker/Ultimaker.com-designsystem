@@ -2450,7 +2450,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .container, .um-components .footer__container {
   max-width: 1201px;
-  margin: 0 auto 60px;
+  margin: 0 auto;
   padding: 60px 12px 0 12px; }
   @media (min-width: 768px) {
     .um-components .container, .um-components .footer__container {
@@ -3189,7 +3189,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .footer-block:not(:empty) {
     padding-bottom: 60px; }
   .um-components .footer-block--push-down:not(:empty) {
-    margin-top: 60px; }
+    margin-top: 36px; }
+    @media (min-width: 768px) {
+      .um-components .footer-block--push-down:not(:empty) {
+        margin-top: 60px; } }
 
 .um-components .brand-card__image-wrapper {
   width: 120px;
@@ -3405,10 +3408,10 @@ because both families serve another purpose. Therefore the line-heights will be 
       align-items: baseline;
       flex-wrap: wrap; } }
 
-.um-components .cta__block--hero {
+.um-components .cta-block--hero {
   align-items: flex-start; }
   @media (min-width: 768px) {
-    .um-components .cta__block--hero {
+    .um-components .cta-block--hero {
       align-items: center; } }
 
 .um-components .cta-link {
@@ -3423,11 +3426,11 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-right: 24px; }
       .um-components .cta-link:not(.button--primary) {
         margin-right: 24px; }
-      .um-components .cta-link.button--primary + .cta__link {
+      .um-components .cta-link.button--primary + .cta-link {
         margin-left: 24px; }
-      .um-components .cta__block--footer .cta-link:not(.button--primary) {
+      .um-components .cta-block--footer .cta-link:not(.button--primary) {
         margin-bottom: 0; }
-      .um-components .cta__block--footer .cta-link:last-child {
+      .um-components .cta-block--footer .cta-link:last-child {
         margin-right: 0; } }
 
 .um-components .icon-button, .um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button {
@@ -3724,7 +3727,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 $imageLinkSizeMobile: $buildingUnit * 7;
 $imageLinkSizeDesktop: $buildingUnit * 10;
 
-.cta__block--hero {
+.cta-block--hero {
     align-items: flex-start;
     @include min-tablet() {
         align-items: center;
@@ -3735,7 +3738,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     @extend %reset-last-margin;
 
     .hero__container {
-        padding-top: $buildingUnit * 5;            
+        padding-top: $buildingUnit * 5;
     }
 
     .hero__image--basic,
