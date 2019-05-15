@@ -1,6 +1,6 @@
 .container {
     max-width: $desktopHdWidth;
-    margin: 0 auto ($buildingUnit * 5);
+    margin: 0 auto;
     padding: ($buildingUnit * 5) ($buildingUnit * 1) 0 ($buildingUnit * 1);
 
     @include min-tablet() {
