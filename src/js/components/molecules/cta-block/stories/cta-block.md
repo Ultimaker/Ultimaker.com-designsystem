@@ -1,7 +1,7 @@
 # Cta Block
 
 Properties:
-- **mod**: Modifier to apply on the block, will add cta__block--`value-of-mod` to the classList
+- **mod**: Modifier to apply on the block, will add cta-block--`value-of-mod` to the classList
 - **styleContentButton**: Passes a style down, default: button (depends on type)
 - **styleContentLink**  Passes a style down, default: link
 - **modContentLink**: Add's a modifier to all the links

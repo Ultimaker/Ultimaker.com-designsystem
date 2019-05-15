@@ -2420,10 +2420,10 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               </p>
                
               <div
-                class="cta__block cta__block--hero"
+                class="cta-block cta-block--hero"
               >
                 <a
-                  class="link link--icon link--large undefined cta__link"
+                  class="link link--icon link--large undefined cta-link"
                   href="https://www.youtube.com/watch?v=hwhvByj8YG8"
                   target="_blank"
                 >
@@ -3069,10 +3069,10 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             >
               <div
                 block="overview"
-                class="cta__block cta__block--footer"
+                class="cta-block cta-block--footer"
               >
                 <a
-                  class="link--primary button cta__link"
+                  class="link--primary button cta-link"
                   href="https://ultimaker.com"
                   rel="noopener"
                   target="_self"
@@ -3088,7 +3088,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </span>
                 </a>
                 <a
-                  class="link--primary button cta__link"
+                  class="link--primary button cta-link"
                   href="https://ultimaker.com"
                   rel="noopener"
                   target="_self"
@@ -3691,10 +3691,10 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             >
               <div
                 block="overview"
-                class="cta__block cta__block--footer"
+                class="cta-block cta-block--footer"
               >
                 <a
-                  class="link--primary button cta__link"
+                  class="link--primary button cta-link"
                   href="https://ultimaker.com"
                   rel="noopener"
                   target="_self"
@@ -3710,7 +3710,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </span>
                 </a>
                 <a
-                  class="link--large link cta__link"
+                  class="link--large link cta-link"
                   href="https://ultimaker.com"
                   rel="noopener"
                   target="_self"
@@ -4018,10 +4018,10 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             >
               <div
                 block="overview"
-                class="cta__block cta__block--footer"
+                class="cta-block cta-block--footer"
               >
                 <a
-                  class="link--primary button cta__link"
+                  class="link--primary button cta-link"
                   href="https://ultimaker.com"
                   rel="noopener"
                   target="_self"
@@ -4037,7 +4037,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </span>
                 </a>
                 <a
-                  class="link--large link cta__link"
+                  class="link--large link cta-link"
                   href="https://ultimaker.com"
                   rel="noopener"
                   target="_self"
@@ -4262,10 +4262,10 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             >
               <div
                 block="overview"
-                class="cta__block cta__block--footer"
+                class="cta-block cta-block--footer"
               >
                 <a
-                  class="link--primary button cta__link"
+                  class="link--primary button cta-link"
                   href="https://ultimaker.com"
                   rel="noopener"
                   target="_self"
@@ -4281,7 +4281,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </span>
                 </a>
                 <a
-                  class="link--primary button cta__link"
+                  class="link--primary button cta-link"
                   href="https://ultimaker.com"
                   rel="noopener"
                   target="_self"

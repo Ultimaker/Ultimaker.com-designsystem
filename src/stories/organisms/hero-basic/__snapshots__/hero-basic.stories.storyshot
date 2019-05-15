@@ -49,10 +49,10 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                  
                 <div
                   block="hero"
-                  class="cta__block cta__block--hero"
+                  class="cta-block cta-block--hero"
                 >
                   <a
-                    class="link--primary button button--primary cta__link"
+                    class="link--primary button button--primary cta-link"
                     href="https://www.ultimaker.com/resellers"
                     rel="noopener"
                     target="_self"
@@ -68,7 +68,7 @@ exports[`Storyshots organisms|hero Hero basic 1`] = `
                     </span>
                   </a>
                   <a
-                    class="link--large link cta__link"
+                    class="link--large link cta-link"
                     href="https://3d.ultimaker.com/requestquote"
                     rel="noopener"
                     target="_blank"
