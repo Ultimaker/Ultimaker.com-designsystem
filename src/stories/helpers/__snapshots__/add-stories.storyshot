@@ -1991,7 +1991,7 @@ exports[`Storyshots Organisms/colors default 1`] = `
               </ul>
                
               <div
-                class="cta-block"
+                class="cta-block cta-block--baseline"
               >
                 <a
                   class="link--primary button cta-link"

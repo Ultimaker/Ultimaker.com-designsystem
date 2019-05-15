@@ -3880,6 +3880,9 @@ table tfoot {
       align-items: baseline;
       flex-wrap: wrap; } }
 
+.cta-block--baseline {
+  align-items: baseline; }
+
 .cta-block--hero {
   align-items: flex-start; }
   @media (min-width: 768px) {
@@ -5270,7 +5273,7 @@ svg text {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   padding: 0; }
   @media (min-width: 768px) {
     .colors .colors__list {
@@ -5285,7 +5288,7 @@ svg text {
   transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
   @media (max-width: 767px) {
     .colors .colors__image {
-      margin-bottom: 36px; } }
+      margin-bottom: 30px; } }
   .colors .colors__image--loading {
     opacity: 0; }
 
