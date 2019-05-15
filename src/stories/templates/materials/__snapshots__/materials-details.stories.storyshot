@@ -2901,7 +2901,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   </ul>
                    
                   <div
-                    class="cta-block"
+                    class="cta-block cta-block--baseline"
                   >
                     <a
                       class="link--primary button cta-link"

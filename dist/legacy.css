@@ -3408,6 +3408,9 @@ because both families serve another purpose. Therefore the line-heights will be 
       align-items: baseline;
       flex-wrap: wrap; } }
 
+.um-components .cta-block--baseline {
+  align-items: baseline; }
+
 .um-components .cta-block--hero {
   align-items: flex-start; }
   @media (min-width: 768px) {
@@ -4783,7 +4786,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   padding: 0; }
   @media (min-width: 768px) {
     .um-components .colors .colors__list {
@@ -4798,7 +4801,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   transition:  opacity 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
   @media (max-width: 767px) {
     .um-components .colors .colors__image {
-      margin-bottom: 36px; } }
+      margin-bottom: 30px; } }
   .um-components .colors .colors__image--loading {
     opacity: 0; }
 
