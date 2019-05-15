@@ -30,7 +30,8 @@ describe('components', () => {
             it('should not have an element defined', () => {
                 const vm = mount();
                 expect(vm.$el).toBeDefined();
-                expect(vm.$el.src).toEqual(imageConstants.tinyGif);
+                expect(vm.$el.src).toContain('/media/images/starships/enterprise');
+                expect(vm.$el.srcset).toContain(imageConstants.tinyGif);
                 vm.$destroy();
             });
 
@@ -66,7 +67,7 @@ describe('components', () => {
                     expect(vm.inView).toBeTruthy();
                     expect(vm.$el.getBoundingClientRect).toHaveBeenCalled();
                     expect(vm.width).toEqual(desiredWidth);
-                    expect(vm.$el.src).toContain(`w=${ imageConstants.initialSize }`);
+                    expect(vm.$el.srcset).toContain(`w=${ imageConstants.initialSize }`);
                     done();
                 });
 
@@ -74,12 +75,12 @@ describe('components', () => {
                     spyOnProperty(viewportUtil, 'scrollY', 'get').and.returnValue(0);
                     vm.imageLoaded = true;
                     await vm.$nextTick();
-                    expect(vm.$el.src).toContain(`w=${ desiredWidth }`);
+                    expect(vm.$el.srcset).toContain(`w=${ desiredWidth }`);
                     done();
                 });
 
                 it('should reset the loading state when the url has changed', async (done) => {
-                    vm.urlChanged();
+                    vm.reset();
                     expect(vm.ready).toBeFalsy();
                     await vm.$nextTick();
                     expect(vm.ready).toBeTruthy();

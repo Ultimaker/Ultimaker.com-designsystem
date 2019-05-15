@@ -65,7 +65,8 @@ exports[`Storyshots Molecules|lists/list-unordered li-item-card-product 1`] = `
             <img
               alt="Nylon 3D printed gears"
               class="img--contain card-product__image img--loading"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              src="https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
+              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
               type="Image"
             />
              
@@ -222,7 +223,8 @@ exports[`Storyshots Molecules|lists/list-unordered li-item-card-product 1`] = `
             <img
               alt="Nylon 3D printed gears"
               class="img--contain card-product__image img--loading"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              src="https://ultimaker.com/img/materials/carousel/Nylon/Nylon-3D-printed-gears.jpg"
+              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
               type="Image"
             />
              
