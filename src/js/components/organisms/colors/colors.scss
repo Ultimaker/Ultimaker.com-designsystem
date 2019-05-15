@@ -27,7 +27,7 @@
     .colors__image {
         @include micro-animate(opacity);
         @include max-mobile-xl {
-            margin-bottom: $buildingUnit * 3;
+            margin-bottom: $buildingUnit * 2.5;
         }
 
         &--loading {
