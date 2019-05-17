@@ -13,17 +13,17 @@ export const data = {
         content: {
             columns: [
                 {
-                    title: 'Printer One',
+                    title: 'Ultimaker 2+',
                     image: imageData.default,
                     cta: columnCta,
                 },
                 {
-                    title: 'Printer Two',
+                    title: 'Ultimaker 3',
                     image: imageData.default,
                     cta: columnCta,
                 },
                 {
-                    title: 'Printer Three',
+                    title: 'Ultimaker S5',
                     image: imageData.default,
                     cta: columnCta,
                 },
@@ -91,6 +91,50 @@ export const data = {
                         },
                         {
                             checked: false,
+                            label: '',
+                        },
+                    ],
+                },
+                {
+                    label: 'Feature Four',
+                    tooltip: {
+                        label: '',
+                        icon: 'info',
+                        description: 'Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.',
+                    },
+                    cells: [
+                        {
+                            checked: false,
+                            label: '',
+                        },
+                        {
+                            checked: false,
+                            label: '',
+                        },
+                        {
+                            checked: true,
+                            label: '',
+                        },
+                    ],
+                },
+                {
+                    label: 'Feature Five',
+                    tooltip: {
+                        label: '',
+                        icon: 'info',
+                        description: 'Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.',
+                    },
+                    cells: [
+                        {
+                            checked: false,
+                            label: '',
+                        },
+                        {
+                            checked: false,
+                            label: '',
+                        },
+                        {
+                            checked: true,
                             label: '',
                         },
                     ],
