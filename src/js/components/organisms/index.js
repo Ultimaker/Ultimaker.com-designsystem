@@ -4,3 +4,5 @@ export {default as HeroProduct} from 'organisms/hero-product';
 
 export {default as Colors} from 'organisms/colors';
 
+export {default as TableCompare} from 'organisms/table-compare';
+
