@@ -2,7 +2,7 @@
     <div class="container">
         <header-block :title="title" :subtitle="subtitle" />
         <div class="table-compare-scroll-container">
-            <table v-if="content" class="table-compare" :style="`--tableCompareWidth: ${content.columns.length * 100 }%;`">
+            <table v-if="content" class="table-compare" :style="`--numberOfColumns: ${content.columns.length}`">
                 <colgroup>
                     <col>
                     <col v-for="col in content.columns">
