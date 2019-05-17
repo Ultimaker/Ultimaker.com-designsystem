@@ -3856,13 +3856,12 @@ var CImage = function (_Mixins) {
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 this.ready = false;
+                                this.imageLoaded = false;
                                 this.width = 0;
                                 this.height = 0;
                                 this.$nextTick(function () {
                                     return _this2.ready = true;
                                 });
-
-                                this.imageLoaded = false;
 
                                 if (!this.inView) {
                                     _context2.next = 8;
