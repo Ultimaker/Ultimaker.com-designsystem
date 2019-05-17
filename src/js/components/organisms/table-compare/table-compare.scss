@@ -1,2 +1,108 @@
+.table-compare-scroll-container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
 .table-compare {
+    border: initial; // override table atom
+	border-collapse: collapse;
+	position: relative;
+	table-layout: fixed;
+    // --tableCompareWidth is set in the markup
+    width: var(--tableCompareWidth, auto);
+
+    @media (min-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.table-compare col {
+    width: auto;
+
+    @media (min-width: 1024px) {
+        width: 17 * $buildingUnit;
+    }
+
+    @media (min-width: 1440px) {
+        width: 19 * $buildingUnit;
+    }
+}
+
+.table-compare col:first-of-type {
+    width: 0;
+
+    @media (min-width: 1024px) {
+        width: auto;
+    }
+}
+
+.table-compare th,
+.table-compare td {
+    padding: 0;
+}
+
+// Column header cells
+.table-compare thead th[scope="col"] {
+    border-bottom: 2px solid $colorGray;
+    padding: 0 2 * $buildingUnit 2 * $buildingUnit;
+    text-align: center;
+    width: initial; // override table atom
+}
+
+// Row header cells
+.table-compare tbody th[scope="row"] {
+    border-top: 1px solid $colorGray;
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: visible;
+    text-align: left;
+
+    @media (min-width: 1024px) {
+        position: static;
+    }
+}
+
+// Table body cells
+.table-compare tbody td {
+    border-top: 1px solid $colorGray;
+    color: $colorMain;
+    height: 4 * $buildingUnit;
+    padding: 0 0.5 * $buildingUnit;
+    scroll-snap-align: start end;
+    vertical-align: middle;
+}
+
+// Table footer cells
+.table-compare tfoot th,
+.table-compare tfoot td {
+    border-top: 1px solid $colorGray;
+    padding: 1.5 * $buildingUnit;
+    text-align: center;
+}
+
+.table-compare__image {
+    display: block;
+    margin: 0 auto 2 * $buildingUnit;
+    height: 15 * $buildingUnit;
+    width: 15 * $buildingUnit;
+}
+
+.table-compare__feature {
+    background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
+    display: inline-block;
+    padding-right: $buildingUnit;
+    position: relative;
+}
+
+.table-compare__checkmark {
+    display: block;
+    margin: 0 0 0 auto;
+    height: 2 * $buildingUnit;
+    width: 2 * $buildingUnit;
+
+    @media (min-width: 1024px) {
+        margin: 0 auto;
+    }
 }
