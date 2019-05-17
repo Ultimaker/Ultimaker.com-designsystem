@@ -9,8 +9,8 @@
 	border-collapse: collapse;
 	position: relative;
 	table-layout: fixed;
-    // --tableCompareWidth is set in the markup
-    width: var(--tableCompareWidth, auto);
+    // --numberOfColumns is set in the template
+    width: calc(var(--numberOfColumns, 1) * 100%);
 
     @media (min-width: 1024px) {
         width: 100%;
