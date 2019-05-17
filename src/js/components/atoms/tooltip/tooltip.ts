@@ -7,12 +7,12 @@ import WithRender from './tooltip.vue.html';
 })
 
 export default class Tooltip extends Vue {
-    @Prop({ type: String, required: false }) block?: string;
+    @Prop({ type: String, required: false, default: '' }) block?: string;
 
     classObject() {
         const classes = {};
 
-        if (this.block !== '') {
+        if (this.block) {
             classes[`${ this.block }__tooltip`] = true;
         }
 
