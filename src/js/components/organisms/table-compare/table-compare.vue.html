@@ -1,26 +1,47 @@
-<section class="organism table-compare">
+<section class="organism">
     <div class="container">
         <header-block :title="title" :subtitle="subtitle" />
-        <table v-if="content">
-            <thead><tr>
-                <th></th>
-                <th v-for="col in content.columns" scope="col">{{ col.title }}</th>
-            </tr></thead>
-            <tbody>
-                <tr v-for="row in content.rows">
-                    <th scope="row">
-                        <!-- Needs to be wrapped in component that wraps tooltip and button to show tooltip -->
-                        <icon-button :icon-name="row.tooltip.icon"> {{ row.label }}</icon-button>
-                        <tooltip v-if="row.tooltip" v-show="false">
-                            {{ row.tooltip.description }}
-                        </tooltip>
-                    </th>
-                    <td v-for="cell in row.cells">
-                        <icon icon-name="checkmark" v-if="cell.checked" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-compare-scroll-container">
+            <table v-if="content" class="table-compare" :style="`--tableCompareWidth: ${content.columns.length * 100 }%;`">
+                <colgroup>
+                    <col>
+                    <col v-for="col in content.columns">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col" v-for="col in content.columns">
+                            <c-image v-bind="col.image" alt="col.alt" class="table-compare__image" />
+                            {{ col.title }}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="row in content.rows">
+                        <th scope="row">
+                            <div class="table-compare__feature">
+                                <icon-button :icon-name="row.tooltip.icon"> {{ row.label }}</icon-button>
+                                <tooltip v-if="row.tooltip" v-show="false">
+                                    {{ row.tooltip.description }}
+                                </tooltip>
+                            </div>
+                        </th>
+                        <td v-for="cell in row.cells">
+                            <span class="visually-hidden"></span>
+                            <icon icon-name="checkmark" v-if="cell.checked" class="table-compare__checkmark" />
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row"></th>
+                        <td v-for="cell in content.columns">
+                            <a href="#" class="button">Button</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
         <footer-block :ctas="ctas" />
     </div>
 </section>
