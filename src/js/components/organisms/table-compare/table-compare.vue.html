@@ -36,7 +36,7 @@
                     <tr>
                         <th scope="row"></th>
                         <td v-for="cell in content.columns">
-                            <a href="#" class="button">Button</a>
+                            <a :href="cell.cta.url" class="button">{{ cell.cta.label }}</a>
                         </td>
                     </tr>
                 </tfoot>
