@@ -6,3 +6,5 @@ export {default as LocaleSelector} from 'organisms/locale-selector';
 
 export {default as ContentHighlight} from 'organisms/content-highlight';
 
+export {default as TableCompare} from 'organisms/table-compare';
+
