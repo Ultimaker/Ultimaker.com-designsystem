@@ -1,7 +1,26 @@
-<article class="organism table-compare">
+<section class="organism table-compare">
     <div class="container">
         <header-block :title="title" :subtitle="subtitle" />
-
+        <table v-if="content">
+            <thead><tr>
+                <th></th>
+                <th v-for="col in content.columns" scope="col">{{ col.title }}</th>
+            </tr></thead>
+            <tbody>
+                <tr v-for="row in content.rows">
+                    <th scope="row">
+                        <!-- Needs to be wrapped in component that wraps tooltip and button to show tooltip -->
+                        <icon-button :icon-name="row.tooltip.icon"> {{ row.label }}</icon-button>
+                        <tooltip v-if="row.tooltip" v-show="false">
+                            {{ row.tooltip.description }}
+                        </tooltip>
+                    </th>
+                    <td v-for="cell in row.cells">
+                        <icon icon-name="checkmark" v-if="cell.checked" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <footer-block :ctas="ctas" />
     </div>
-</article>
+</section>
