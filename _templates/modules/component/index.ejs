@@ -1,6 +1,4 @@
 ---
 to: src/js/components/<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/<%= h.changeCase.paramCase(name)%>/index.ts
 ---
-import <%= h.changeCase.pascal(name) %> from './<%= h.changeCase.paramCase(name)%>';
-
-export default <%= h.changeCase.pascal(name) %>;
+export { <%= h.changeCase.pascal(name) %> as default } from './<%= h.changeCase.paramCase(name)%>';

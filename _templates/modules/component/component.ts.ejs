@@ -10,4 +10,4 @@ import WithRender from './<%= h.changeCase.paramCase(name) %>.vue.html';
     name: '<%= h.changeCase.pascal(name) %>',
 })
 
-export default class <%= h.changeCase.pascal(name) %> extends Vue implements <%= h.changeCase.pascal(name) %>Props {}
+export class <%= h.changeCase.pascal(name) %> extends Vue implements <%= h.changeCase.pascal(name) %>Props {}
