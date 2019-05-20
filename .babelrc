@@ -20,8 +20,8 @@
                     "istanbul",
                     {
                         "exclude": [
-                            "**/*.spec.js",
-                            "**/*.stories.js"
+                            "**/*.spec.{j,t}s",
+                            "**/*.stories.{j,t}s"
                         ]
                     }
                 ]
