@@ -21,7 +21,7 @@ export const data = {
                     label: 'Test content link',
                     type: 'ContentLink',
                     url: 'https://ultimaker.com',
-                }
+                },
             ],
             type: 'CtaBlock',
         },
