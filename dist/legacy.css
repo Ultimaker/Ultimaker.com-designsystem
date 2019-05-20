@@ -3164,7 +3164,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .header-block__title {
   text-align: center;
   position: relative;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .um-components .header-block__subtitle {
   text-align: center;
@@ -4804,6 +4805,46 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
       margin-bottom: 30px; } }
   .um-components .colors .colors__image--loading {
     opacity: 0; }
+
+.um-components .content-highlight__image-wrapper {
+  display: flex;
+  width: 75%;
+  margin: 0 auto 30px auto; }
+  @media (min-width: 768px) {
+    .um-components .content-highlight__image-wrapper {
+      padding-right: 24px;
+      width: 100%; }
+      .um-components .flexgrid--row-reversed .content-highlight__image-wrapper {
+        padding-left: 24px; } }
+
+.um-components .content-highlight__content {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .um-components .content-highlight__content {
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 24px; }
+      .um-components .flexgrid--row-reversed .content-highlight__content {
+        padding-right: 24px; } }
+
+.um-components .content-highlight-header {
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .um-components .content-highlight-header {
+      margin-bottom: 52px; } }
+
+@media (min-width: 768px) {
+  .um-components .content-highlight-header .header-block__title {
+    text-align: left; } }
+
+.um-components .content-highlight__body {
+  margin-bottom: 18px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .um-components .content-highlight__body {
+      margin-bottom: 21px;
+      text-align: left; } }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
