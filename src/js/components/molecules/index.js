@@ -21,6 +21,7 @@ export {default as IconButton} from 'molecules/icon-button';
 export {default as LegalNav} from 'molecules/legal-nav';
 export {default as ListSection} from 'molecules/list-section';
 export {default as ListUnordered} from 'molecules/list-unordered';
+export {default as ListUnorderedLimit} from 'molecules/list-unordered-limit';
 export {default as MainNav} from 'molecules/main-nav';
 export {default as MainNavItem} from 'molecules/main-nav-item';
 export {default as Modal} from 'molecules/modal';
@@ -34,4 +35,3 @@ export {default as Tab} from 'molecules/tab';
 export {default as Tabs} from 'molecules/tabs';
 export {default as Tag} from 'molecules/tag';
 export {default as TagList} from 'molecules/tag-list';
-
