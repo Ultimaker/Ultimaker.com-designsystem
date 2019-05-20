@@ -11,7 +11,7 @@
                     <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col" v-for="col in content.columns">
+                        <th scope="col" v-for="col in content.columns" ref="columns">
                             <c-image v-bind="col.image" alt="col.alt" class="table-compare__image" />
                             {{ col.title }}
                         </th>
@@ -44,8 +44,8 @@
                 </table>
             </div>
             <div class="table-compare__scroll-buttons">
-                <icon-button icon-name="angle-left" class="table-compare__scroll-button table-compare__scroll-button--left" @click="scroll(true)"/>
-                <icon-button icon-name="angle-right" class="table-compare__scroll-button table-compare__scroll-button--right" @click="scroll(false)"/>
+                <icon-button icon-name="angle-left" class="table-compare__scroll-button table-compare__scroll-button--left" @click="scroll(true)" :disabled="disableLeft" />
+                <icon-button icon-name="angle-right" class="table-compare__scroll-button table-compare__scroll-button--right" @click="scroll(false)" :disabled="disableRight" />
             </div>
         </div>
 
