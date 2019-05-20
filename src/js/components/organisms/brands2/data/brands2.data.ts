@@ -8,7 +8,10 @@ export const data = {
             ctas: [],
             type: 'CtaBlock',
         },
-        expand: {},
+        expand: {
+            type: 'ContentButton',
+            label: 'Show all',
+        },
         items: [
             {
                 type: 'Brand',
@@ -47,7 +50,57 @@ export const data = {
                 image: adLabDecathlonLogo,
             },
         ],
-        limit: {},
+        limit: {
+            largeScreen: 6,
+            smallScreen: 4,
+            type: 'Limit',
+        },
+        subtitle: '',
+        title: '',
+    },
+    noLimit: {
+        ctas: {
+            ctas: [],
+            type: 'CtaBlock',
+        },
+        items: [
+            {
+                type: 'Brand',
+                image: zeissLogo,
+            },
+            {
+                type: 'Brand',
+                image: volkswagenLogo,
+            },
+            {
+                type: 'Brand',
+                image: adLabDecathlonLogo,
+            },
+            {
+                type: 'Brand',
+                image: zeissLogo,
+            },
+            {
+                type: 'Brand',
+                image: volkswagenLogo,
+            },
+            {
+                type: 'Brand',
+                image: adLabDecathlonLogo,
+            },
+            {
+                type: 'Brand',
+                image: zeissLogo,
+            },
+            {
+                type: 'Brand',
+                image: volkswagenLogo,
+            },
+            {
+                type: 'Brand',
+                image: adLabDecathlonLogo,
+            },
+        ],
         subtitle: '',
         title: '',
     },
