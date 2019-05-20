@@ -3636,7 +3636,8 @@ table tfoot {
 .header-block__title {
   text-align: center;
   position: relative;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .header-block__subtitle {
   text-align: center;
@@ -5291,6 +5292,46 @@ svg text {
       margin-bottom: 30px; } }
   .colors .colors__image--loading {
     opacity: 0; }
+
+.content-highlight__image-wrapper {
+  display: flex;
+  width: 75%;
+  margin: 0 auto 30px auto; }
+  @media (min-width: 768px) {
+    .content-highlight__image-wrapper {
+      padding-right: 24px;
+      width: 100%; }
+      .flexgrid--row-reversed .content-highlight__image-wrapper {
+        padding-left: 24px; } }
+
+.content-highlight__content {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .content-highlight__content {
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 24px; }
+      .flexgrid--row-reversed .content-highlight__content {
+        padding-right: 24px; } }
+
+.content-highlight-header {
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .content-highlight-header {
+      margin-bottom: 52px; } }
+
+@media (min-width: 768px) {
+  .content-highlight-header .header-block__title {
+    text-align: left; } }
+
+.content-highlight__body {
+  margin-bottom: 18px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .content-highlight__body {
+      margin-bottom: 21px;
+      text-align: left; } }
 
 /*
 * Because we have a primary and secondary font family, we need to define both
