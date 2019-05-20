@@ -35,8 +35,10 @@ snapshots:
 	$(call docker-node-run,npm run snapshots)
 
 shell:
-	docker run --rm --tty --interactive \
-		--user `id -u`:`id -g` \
-		--volume `pwd`:/app \
-		--workdir /app \
-		node:10.15-alpine sh
+	docker run --rm \
+	  --tty --interactive \
+	  --user $(uid):$(gid) \
+	  --tmpfs /.npm \
+	  --volume $(pwd):/app:delegated \
+	  --workdir /app \
+	  node:10.15-alpine sh
