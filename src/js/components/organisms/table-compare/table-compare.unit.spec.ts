@@ -31,6 +31,33 @@ describe('components', () => {
                 vm.$destroy();
             });
 
+            it('should disable the scroll buttons when they intersect', async () => {
+                const vm = mount({ props: data.default });
+
+                vm.intersectionObserver([{
+                    isIntersecting: true,
+                    target: vm.$refs.columns[0],
+                }]);
+                expect(vm.disableLeft).toBeTruthy();
+                expect(vm.disableRight).toBeFalsy();
+
+                vm.intersectionObserver([{
+                    isIntersecting: true,
+                    target: vm.$refs.columns[1],
+                }]);
+                expect(vm.disableLeft).toBeFalsy();
+                expect(vm.disableRight).toBeFalsy();
+
+                vm.intersectionObserver([{
+                    isIntersecting: true,
+                    target: vm.$refs.columns.slice(-1)[0],
+                }]);
+                expect(vm.disableLeft).toBeFalsy();
+                expect(vm.disableRight).toBeTruthy();
+
+                vm.$destroy();
+            });
+
             it('should reset its scroll position when resized', () => {
                 const vm = mount({ props: data.default });
                 expect(vm.$refs.scrollContainer).toBeDefined();
