@@ -1,14 +1,14 @@
 import 'babel-polyfill';
 import { build } from 'vuenit';
 
-import { Brands2 } from './brands2';
-import { data } from './data/brands2.data';
+import { Brands } from './brands';
+import { data } from './data/brands.data';
 
 describe('components', () => {
     describe('organisms', () => {
-        describe('brands2', () => {
+        describe('brands', () => {
 
-            const mount = build(Brands2, { props: {} });
+            const mount = build(Brands, { props: {} });
 
             it('should render an Brands component', () => {
                 const vm = mount();
@@ -22,7 +22,7 @@ describe('components', () => {
             describe(`brands ${key} props`, () => {
 
                 const props = data[key];
-                const mount = build(Brands2, { props });
+                const mount = build(Brands, { props });
 
                 it(`should render an Brands component with ${key} props`, () => {
                     const vm = mount();
