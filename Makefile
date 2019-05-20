@@ -1,9 +1,14 @@
 .PHONY: test build
 
+uid = $(shell id -u)
+gid = $(shell id -g)
+pwd = $(shell pwd)
+
 define docker-node-run
   docker run --rm \
-    --user `id -u`:`id -g` \
-    --volume `pwd`:/app \
+    --user $(uid):$(gid) \
+    --tmpfs /.npm \
+    --volume $(pwd):/app \
     --workdir /app \
     node:10.15-alpine $1
 endef
