@@ -1,5 +1,5 @@
 import {text, files} from '@storybook/addon-knobs';
-import data from './brands.stories.json';
+import data from './legacy-brands.stories.json';
 
 const createBrandsImages = () => (
     data.brands.map(({image, body}, i) => ({
