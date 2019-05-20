@@ -1,0 +1,16 @@
+  <article class="organism content-highlight">
+    <section class="container content-highlight__container">
+        <div class="flexgrid" :class="{'flexgrid--row-reversed': reversed}">
+            <div class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__image">
+                <div class="content-highlight__image-wrapper">
+                    <c-image v-if="image" v-bind="image"></c-image>
+                </div>
+            </div>
+            <div class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__content">
+                <HeaderBlock class="content-highlight-header" :title="title" :subtitle="subtitle" />
+                <div class="content-manageble content-highlight__body" v-html="description"></div>
+                <FooterBlock :ctas="ctas" />
+            </div>
+        </div>
+    </section>
+</article>

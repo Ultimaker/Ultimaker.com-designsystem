@@ -8,9 +8,6 @@
         margin-bottom: $buildingUnit * 5.75;
     }
 }
-.header-block__title--hero {
-
-}
 
 .header-block__subtitle--hero {
     $resetHeadlineBottomMarginMobile: -84px;
@@ -29,6 +26,7 @@
     text-align: center;
     position: relative;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .header-block__subtitle {
