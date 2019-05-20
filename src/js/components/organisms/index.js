@@ -1,4 +1,4 @@
-export {default as Brands2} from 'organisms/brands';
+export {default as Brands} from 'organisms/brands';
 export {default as Colors} from 'organisms/colors';
 export {default as CountrySelector} from 'organisms/country-selector';
 export {default as HeroProduct} from 'organisms/hero-product';

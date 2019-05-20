@@ -1,2 +1,4 @@
 export default {
+    listItems: {},
+    limit: {},
 };
