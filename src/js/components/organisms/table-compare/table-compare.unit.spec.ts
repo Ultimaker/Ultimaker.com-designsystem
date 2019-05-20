@@ -16,6 +16,29 @@ describe('components', () => {
                 expect(vm.$el).toBeDefined();
                 vm.$destroy();
             });
+
+            it('should be able to scroll to the next column', () => {
+                const vm = mount({ props: data.default });
+                expect(vm.$refs.scrollContainer).toBeDefined();
+                spyOnProperty(vm.$refs.scrollWidthContainer, 'clientWidth', 'get').and.returnValue(300);
+                spyOn(vm.$refs.scrollContainer, 'scrollTo');
+                vm.scroll();
+                expect(vm.$refs.scrollContainer.scrollTo).toHaveBeenCalledWith({ left: 300, behavior: 'smooth' });
+
+                spyOnProperty(vm.$refs.scrollContainer, 'scrollLeft', 'get').and.returnValue(300);
+                vm.scroll(true);
+                expect(vm.$refs.scrollContainer.scrollTo).toHaveBeenCalledWith({ left: 0, behavior: 'smooth' });
+                vm.$destroy();
+            });
+
+            it('should reset its scroll position when resized', () => {
+                const vm = mount({ props: data.default });
+                expect(vm.$refs.scrollContainer).toBeDefined();
+                vm.$refs.scrollContainer.scrollLeft = 200;
+                vm.resetScrollPosition();
+                expect(vm.$refs.scrollContainer.scrollLeft).toEqual(0);
+                vm.$destroy();
+            });
         });
 
         Object.keys(data).map((key) => {
