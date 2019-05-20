@@ -1,19 +1,14 @@
 <section class="list-unordered-limit">
     <main>
         <ul>
-            <template v-for="(item, index) in listItems.items" v-if="showLimit() && index < showLimit()">
+            <template v-for="item in visibleItems">
                 <template v-if="item.type">
-                    <component :is="item.type" v-bind="item" :key="index"/>
-                </template>
-            </template>
-            <template v-for="(item, index) in listItems.items" v-if="!showLimit() && showAll">
-                <template v-if="item.type">
-                    <component :is="item.type" v-bind="item" :key="index"/>
+                    <component :is="item.type" v-bind="item" />
                 </template>
             </template>
         </ul>
     </main>
-    <footer v-if="showLimit()">
+    <footer v-if="hasExpand">
         <button @click="showHidden">{{ showButtonLabel() }}</button>
     </footer>
 </section>

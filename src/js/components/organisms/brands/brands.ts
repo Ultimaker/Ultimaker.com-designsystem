@@ -16,19 +16,19 @@ export class Brands extends Vue implements BrandsProps {
     @Prop({ type: String, required: true }) title!: BrandsProps['title'];
 
     get listItems(): object {
-        if (this.items) {
-            return {
-                items: this.items.map(
-                    (item) => {
-                        return {
-                            item,
-                            type: 'LiItem',
-                        };
-                    },
-                ),
-            };
+        if (!this.items) {
+            return {};
         }
 
-        return {};
+        return {
+            items: this.items.map(
+                (item) => {
+                    return {
+                        item,
+                        type: 'LiItem',
+                    };
+                },
+            ),
+        };
     }
 }

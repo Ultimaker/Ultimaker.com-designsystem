@@ -9775,6 +9775,10 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
+var _browserCapabilities = __webpack_require__(2);
+
+var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9804,6 +9808,7 @@ var ListUnorderedLimit = function (_Vue) {
         var _this = _possibleConstructorReturn(this, (ListUnorderedLimit.__proto__ || Object.getPrototypeOf(ListUnorderedLimit)).apply(this, arguments));
 
         _this.showAll = false;
+        _this.limitField = 'smallScreen';
         _this.viewportUtil = new _viewport2.default();
         return _this;
     }
@@ -9839,15 +9844,74 @@ var ListUnorderedLimit = function (_Vue) {
             this.$emitPublic(_events2.default.click, this.getClickEventData());
         }
     }, {
-        key: "showLimit",
-        value: function showLimit() {
-            if (this.limit === undefined) {
+        key: "mounted",
+        value: function mounted() {
+            if (!_browserCapabilities2.default.isBrowser) {
+                return;
+            }
+            if (this.viewportUtil.isMobile) {
+                this.limitField = 'smallScreen';
+                return;
+            }
+            this.limitField = 'largeScreen';
+            return;
+        }
+    }, {
+        key: "visibleItems",
+        get: function get() {
+            if (!this.activeLimit) {
+                return this.listItems.items;
+            }
+            return this.listItems.items.slice(0, this.activeLimit);
+        }
+    }, {
+        key: "hiddenItems",
+        get: function get() {
+            if (!this.activeLimit) {
+                return [];
+            }
+            return this.listItems.items.slice(this.activeLimit - 1);
+        }
+    }, {
+        key: "hiddenItemsCount",
+        get: function get() {
+            if (!this.hasLimit) {
                 return false;
             }
+            return this.hiddenItems.length;
+        }
+    }, {
+        key: "hasExpand",
+        get: function get() {
+            if (!this.hasLimit) {
+                return false;
+            }
+            if (!this.hiddenItemsCount) {
+                return false;
+            }
+            return this.limit && this.limit.expand;
+        }
+    }, {
+        key: "hasLimit",
+        get: function get() {
             if (this.showAll) {
                 return false;
             }
-            return this.viewportUtil.isMobile ? this.limit.smallScreen : this.limit.largeScreen;
+            if (!this.limit) {
+                return false;
+            }
+            if (!this.limit[this.limitField]) {
+                return false;
+            }
+            return typeof this.limit[this.limitField] === 'number';
+        }
+    }, {
+        key: "activeLimit",
+        get: function get() {
+            if (!this.hasLimit) {
+                return false;
+            }
+            return this.limit && this.limit[this.limitField] ? this.limit[this.limitField] : false;
         }
     }]);
 
@@ -9864,7 +9928,7 @@ exports.ListUnorderedLimit = ListUnorderedLimit;
 /* 256 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"list-unordered-limit"},[_c('main',[_c('ul',[_vm._l((_vm.listItems.items),function(item,index){return (_vm.showLimit() && index < _vm.showLimit())?[(item.type)?[_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false))]:_vm._e()]:_vm._e()}),_vm._v(" "),_vm._l((_vm.listItems.items),function(item,index){return (!_vm.showLimit() && _vm.showAll)?[(item.type)?[_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false))]:_vm._e()]:_vm._e()})],2)]),_vm._v(" "),(_vm.showLimit())?_c('footer',[_c('button',{on:{"click":_vm.showHidden}},[_vm._v(_vm._s(_vm.showButtonLabel()))])]):_vm._e()])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"list-unordered-limit"},[_c('main',[_c('ul',[_vm._l((_vm.visibleItems),function(item){return [(item.type)?[_c(item.type,_vm._b({tag:"component"},'component',item,false))]:_vm._e()]})],2)]),_vm._v(" "),(_vm.hasExpand)?_c('footer',[_c('button',{on:{"click":_vm.showHidden}},[_vm._v(_vm._s(_vm.showButtonLabel()))])]):_vm._e()])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -11738,17 +11802,17 @@ var Brands = function (_Vue) {
     _createClass(Brands, [{
         key: "listItems",
         get: function get() {
-            if (this.items) {
-                return {
-                    items: this.items.map(function (item) {
-                        return {
-                            item: item,
-                            type: 'LiItem'
-                        };
-                    })
-                };
+            if (!this.items) {
+                return {};
             }
-            return {};
+            return {
+                items: this.items.map(function (item) {
+                    return {
+                        item: item,
+                        type: 'LiItem'
+                    };
+                })
+            };
         }
     }]);
 

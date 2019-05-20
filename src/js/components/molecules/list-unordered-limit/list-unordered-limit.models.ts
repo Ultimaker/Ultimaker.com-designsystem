@@ -1,5 +1,5 @@
-import { Limit as LimitIterface } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/limit/Limit';
+import { Limit as LimitInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/limit/Limit';
 
-export interface ListUnorderedLimitProps extends LimitIterface {
-    limit?: LimitIterface;
+export interface ListUnorderedLimitProps extends LimitInterface {
+    limit?: LimitInterface;
 }
