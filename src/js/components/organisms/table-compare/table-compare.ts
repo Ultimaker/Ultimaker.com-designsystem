@@ -1,6 +1,7 @@
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import debounce from 'lodash/debounce';
 import ViewportUtility from 'utils/viewport';
+import BrowserCapabilities from 'utils/browser-capabilities';
 import { TableCompareProps } from './table-compare.models';
 import WithRender from './table-compare.vue.html';
 
@@ -15,6 +16,9 @@ export default class TableCompare extends Vue implements TableCompareProps {
     @Prop({ type: Object, required: true }) content!: TableCompareProps['content'];
     @Prop({ type: Object }) ctas?: TableCompareProps['ctas'];
 
+    observer!: IntersectionObserver;
+    disableLeft: boolean = false;
+    disableRight: boolean = false;
     resizeHandler!: {
         cancel: Function;
     };
@@ -23,11 +27,68 @@ export default class TableCompare extends Vue implements TableCompareProps {
     $refs!: {
         scrollWidthContainer: HTMLElement;
         scrollContainer: HTMLElement;
+        columns: HTMLElement[];
     };
+
+    mounted() {
+        this.resizeHandler = debounce(this.resetScrollPosition, 100);
+        this.viewportUtility.addResizeHandler(this.resizeHandler);
+
+        const options = {
+            root: this.$refs.scrollWidthContainer,
+            threshold: 0.99,
+        };
+
+        if (BrowserCapabilities.supportsIntersectionObserver) {
+            this.observer = new IntersectionObserver(this.intersectionObserver, options);
+            this.observeColumns();
+        }
+    }
+
+    beforeDestroy() {
+        this.resizeHandler.cancel();
+        this.viewportUtility.removeResizeHandler(this.resizeHandler);
+        this.observer.unobserve(this.$refs.scrollContainer);
+    }
+
+    @Watch('content.columns')
+    observeColumns() {
+        this.observer.disconnect();
+
+        if (this.$refs.columns && this.$refs.columns.length) {
+            this.observer.observe(this.$refs.columns[0]);
+            this.observer.observe(this.$refs.columns.slice(-1)[0]);
+        }
+    }
+
+    intersectionObserver(entries) {
+        const firstColumn = this.$refs.columns[0];
+        const lastColumn = this.$refs.columns.slice(-1)[0];
+        this.disableLeft = false;
+        this.disableRight = false;
+
+        entries.some((entry) => {
+            if (entry.isIntersecting) {
+                if (entry.target === firstColumn) {
+                    this.disableLeft = true;
+
+                    return true;
+                }
+                if (entry.target === lastColumn) {
+                    this.disableRight = true;
+
+                    return true;
+                }
+            }
+
+            return false;
+        });
+    }
 
     scroll(reverse: boolean = false): void {
         const scrollWidth = this.$refs.scrollWidthContainer.clientWidth;
         const scrollLeft = this.$refs.scrollContainer.scrollLeft;
+
         this.$refs.scrollContainer.scrollTo({
             left: scrollLeft + (reverse ? -1 : 1) * scrollWidth,
             behavior: 'smooth',
@@ -38,13 +99,4 @@ export default class TableCompare extends Vue implements TableCompareProps {
         this.$refs.scrollContainer.scrollLeft = 0;
     }
 
-    mounted() {
-        this.resizeHandler = debounce(this.resetScrollPosition, 100);
-        this.viewportUtility.addResizeHandler(this.resizeHandler);
-    }
-
-    beforeDestroy() {
-        this.resizeHandler.cancel();
-        this.viewportUtility.removeResizeHandler(this.resizeHandler);
-    }
 }
