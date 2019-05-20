@@ -1,2 +1,24 @@
 .list-unordered-limit {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    li {
+        padding-left: 0;
+        line-height: 0;
+
+        margin-right: $buildingUnit;
+        margin-bottom: $buildingUnit;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
