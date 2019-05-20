@@ -1,4 +1,6 @@
 export {default as AutoComplete} from 'molecules/auto-complete';
+export {default as BlockIcon} from 'molecules/block-icon';
+export {default as Brand} from 'molecules/brand';
 export {default as BrandCard} from 'molecules/cards/brand-card';
 export {default as BusinessCard} from 'molecules/cards/business-card';
 export {default as Card} from 'molecules/cards/__LEGACY__card';
@@ -14,6 +16,7 @@ export {default as FlyoutSection} from 'molecules/flyout-section';
 export {default as FooterBlock} from 'molecules/footer-block';
 export {default as FooterNav} from 'molecules/footer-nav';
 export {default as HeaderBlock} from 'molecules/header-block';
+export {default as HeroHeading} from 'molecules/hero-heading';
 export {default as IconButton} from 'molecules/icon-button';
 export {default as LegalNav} from 'molecules/legal-nav';
 export {default as ListSection} from 'molecules/list-section';
@@ -31,7 +34,4 @@ export {default as Tab} from 'molecules/tab';
 export {default as Tabs} from 'molecules/tabs';
 export {default as Tag} from 'molecules/tag';
 export {default as TagList} from 'molecules/tag-list';
-export {default as BlockIcon} from 'molecules/block-icon';
-
-export {default as HeroHeading} from 'molecules/hero-heading';
 
