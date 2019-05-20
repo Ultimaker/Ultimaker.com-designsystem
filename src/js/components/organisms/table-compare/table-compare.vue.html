@@ -1,13 +1,14 @@
 <section class="organism">
     <div class="container">
         <header-block :title="title" :subtitle="subtitle" />
-        <div class="table-compare-scroll-container">
-            <table v-if="content" class="table-compare" :style="`--numberOfColumns: ${content.columns.length}`">
-                <colgroup>
-                    <col>
-                    <col v-for="col in content.columns">
-                </colgroup>
-                <thead>
+        <div class="table-compare" ref="scrollWidthContainer">
+            <div class="table-compare__scroll-container" ref="scrollContainer">
+                <table v-if="content" class="table-compare__table" :style="`--numberOfColumns: ${content.columns.length}`">
+                    <colgroup>
+                        <col>
+                        <col v-for="col in content.columns">
+                    </colgroup>
+                    <thead>
                     <tr>
                         <th scope="col"></th>
                         <th scope="col" v-for="col in content.columns">
@@ -15,8 +16,8 @@
                             {{ col.title }}
                         </th>
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr v-for="row in content.rows">
                         <th scope="row">
                             <div class="table-compare__feature">
@@ -31,17 +32,23 @@
                             <icon icon-name="checkmark" v-if="cell.checked" class="table-compare__checkmark" />
                         </td>
                     </tr>
-                </tbody>
-                <tfoot>
+                    </tbody>
+                    <tfoot>
                     <tr>
                         <th scope="row"></th>
                         <td v-for="cell in content.columns">
                             <a :href="cell.cta.url" class="button">{{ cell.cta.label }}</a>
                         </td>
                     </tr>
-                </tfoot>
-            </table>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="table-compare__scroll-buttons">
+                <icon-button icon-name="angle-left" class="table-compare__scroll-button table-compare__scroll-button--left" @click="scroll(true)"/>
+                <icon-button icon-name="angle-right" class="table-compare__scroll-button table-compare__scroll-button--right" @click="scroll(false)"/>
+            </div>
         </div>
+
         <footer-block :ctas="ctas" />
     </div>
 </section>
