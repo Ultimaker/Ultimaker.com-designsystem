@@ -1,13 +1,13 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { BrandsProps } from './brands2.models';
-import WithRender from './brands2.vue.html';
+import { BrandsProps } from './brands.models';
+import WithRender from './brands.vue.html';
 
 @WithRender
 @Component({
-    name: 'Brands2',
+    name: 'Brands',
 })
 
-export class Brands2 extends Vue implements BrandsProps {
+export class Brands extends Vue implements BrandsProps {
     @Prop({ type: Object }) ctas?: BrandsProps['ctas'];
     @Prop({ type: Object }) expand?: BrandsProps['expand'];
     @Prop({ type: Array, required: true }) items!: BrandsProps['items'];
