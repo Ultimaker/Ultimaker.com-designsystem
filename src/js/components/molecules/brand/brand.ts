@@ -8,5 +8,5 @@ import WithRender from './brand.vue.html';
 })
 
 export class Brand extends Vue implements BrandProps {
-    @Prop({ type: Object, required: true }) image!: BrandProps['image'];
+    @Prop({ type: Object }) image?: BrandProps['image'];
 }
