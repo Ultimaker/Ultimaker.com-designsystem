@@ -65,8 +65,18 @@ export const data = {
         ],
         limit: {
             expand: {
-                type: 'ContentButton',
+                clickEvent: {
+                    data: {
+                        ctaLabel: 'Show all',
+                        ctaType: 'ContentLink',
+                        sectionName: 'Ultimaker Brands!',
+                        type: 'AnalyticalEventData',
+                    },
+                    name: 'expandListSection',
+                    type: 'AnalyticalEvent',
+                },
                 label: 'Show all',
+                type: 'ContentButton',
             },
             largeScreen: 6,
             smallScreen: 4,
