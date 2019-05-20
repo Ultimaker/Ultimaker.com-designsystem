@@ -14,6 +14,8 @@ const getStory = (type) => {
 
         return {
             props: {
+                listItems: { default: knobs.listItems },
+                limit: { default: knobs.limit },
             },
             template: require('./list-unordered-limit.html'),
         };
