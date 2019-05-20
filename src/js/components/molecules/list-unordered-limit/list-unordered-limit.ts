@@ -10,7 +10,6 @@ import ViewportUtil from 'utils/viewport';
 
 export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
     @Prop({ type: Object, required: true }) listItems!: { items: [string[] | object[]], type: string };
-    @Prop({ type: Object }) expand?: ListUnorderedLimitProps['expand'];
     @Prop({ type: Object }) limit?: ListUnorderedLimitProps['limit'];
 
     showAll: boolean = false;
@@ -19,8 +18,8 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
     showButtonLabel() {
         let label = '';
 
-        if (this.expand !== undefined) {
-            label = this.expand.label;
+        if (this.limit !== undefined && this.limit.expand !== undefined) {
+            label = this.limit.expand.label;
         }
 
         return `${label} (${this.listItems.items.length})`;
