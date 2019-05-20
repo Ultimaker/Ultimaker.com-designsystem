@@ -5,12 +5,25 @@ import { zeissLogo } from 'components/molecules/brand/data/zeiss-logo';
 export const data = {
     default: {
         ctas: {
-            ctas: [],
+            ctas: [
+                {
+                    clickEvent: {
+                        data: {
+                            ctaLabel: 'Test content link',
+                            ctaType: 'ContentLink',
+                            ctaUrl: 'https://ultimaker.com',
+                            type: 'AnalyticalEventData',
+                        },
+                        name: 'cta',
+                        type: 'AnalyticalEvent',
+                    },
+                    icon: 'refresh',
+                    label: 'Test content link',
+                    type: 'ContentLink',
+                    url: 'https://ultimaker.com',
+                }
+            ],
             type: 'CtaBlock',
-        },
-        expand: {
-            type: 'ContentButton',
-            label: 'Show all',
         },
         items: [
             {
@@ -51,12 +64,16 @@ export const data = {
             },
         ],
         limit: {
+            expand: {
+                type: 'ContentButton',
+                label: 'Show all',
+            },
             largeScreen: 6,
             smallScreen: 4,
             type: 'Limit',
         },
-        subtitle: '',
-        title: '',
+        subtitle: 'You could be one too!',
+        title: 'Ultimaker Brands',
     },
     noLimit: {
         ctas: {
