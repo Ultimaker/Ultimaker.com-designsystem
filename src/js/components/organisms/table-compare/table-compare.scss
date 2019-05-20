@@ -1,10 +1,14 @@
-.table-compare-scroll-container {
+.table-compare {
+    position: relative;
+}
+
+.table-compare__scroll-container {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
 }
 
-.table-compare {
+.table-compare__table {
     border: initial; // override table atom
 	border-collapse: collapse;
 	position: relative;
@@ -12,15 +16,15 @@
     // --numberOfColumns is set in the template
     width: calc(var(--numberOfColumns, 1) * 100%);
 
-    @media (min-width: 1024px) {
+    @include min-desktop {
         width: 100%;
     }
 }
 
-.table-compare col {
+.table-compare__table col {
     width: auto;
 
-    @media (min-width: 1024px) {
+    @include min-desktop {
         width: 17 * $buildingUnit;
     }
 
@@ -29,21 +33,21 @@
     }
 }
 
-.table-compare col:first-of-type {
+.table-compare__table col:first-of-type {
     width: 0;
 
-    @media (min-width: 1024px) {
+    @include min-desktop {
         width: auto;
     }
 }
 
-.table-compare th,
-.table-compare td {
+.table-compare__table th,
+.table-compare__table td {
     padding: 0;
 }
 
 // Column header cells
-.table-compare thead th[scope="col"] {
+.table-compare__table thead th[scope="col"] {
     border-bottom: 2px solid $colorGray;
     padding: 0 2 * $buildingUnit 2 * $buildingUnit;
     text-align: center;
@@ -51,7 +55,7 @@
 }
 
 // Row header cells
-.table-compare tbody th[scope="row"] {
+.table-compare__table tbody th[scope="row"] {
     border-top: 1px solid $colorGray;
     left: 0;
     position: -webkit-sticky;
@@ -59,13 +63,13 @@
     overflow: visible;
     text-align: left;
 
-    @media (min-width: 1024px) {
+    @include min-desktop {
         position: static;
     }
 }
 
 // Table body cells
-.table-compare tbody td {
+.table-compare__table tbody td {
     border-top: 1px solid $colorGray;
     color: $colorMain;
     height: 4 * $buildingUnit;
@@ -75,8 +79,8 @@
 }
 
 // Table footer cells
-.table-compare tfoot th,
-.table-compare tfoot td {
+.table-compare__table tfoot th,
+.table-compare__table tfoot td {
     border-top: 1px solid $colorGray;
     padding: 1.5 * $buildingUnit;
     text-align: center;
@@ -102,7 +106,31 @@
     height: 2 * $buildingUnit;
     width: 2 * $buildingUnit;
 
-    @media (min-width: 1024px) {
+    @include min-desktop {
         margin: 0 auto;
+    }
+}
+
+.table-compare__scroll-buttons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.table-compare__scroll-button {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 90px;
+
+    @include min-desktop {
+        display: none;
+    }
+
+    &--left {
+        left: 0;
+    }
+
+    &--right {
+        right: 0;
     }
 }
