@@ -2057,6 +2057,196 @@ exports[`Storyshots Organisms/colors default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Organisms/content-highlight default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="organism content-highlight"
+    >
+      <section
+        class="container content-highlight__container"
+      >
+        <div
+          class="flexgrid"
+        >
+          <div
+            class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__image"
+          >
+            <div
+              class="content-highlight__image-wrapper"
+            >
+              <img
+                alt="An example image"
+                class="img--contain img--loading"
+                src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              />
+            </div>
+          </div>
+           
+          <div
+            class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__content"
+          >
+            <header
+              class="header-block content-highlight-header"
+            >
+              <h2
+                class="header-block__title"
+              >
+                Content hightlight title
+              </h2>
+               
+              <!---->
+            </header>
+             
+            <div
+              class="content-manageble content-highlight__body"
+            >
+              Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
+            </div>
+             
+            <footer
+              class="footer-block"
+            >
+              <div
+                block="overview"
+                class="cta-block cta-block--footer"
+              >
+                <a
+                  class="link--primary button cta-link"
+                  href="https://ultimaker.com"
+                  rel="noopener"
+                  target="_self"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Call me back
+    
+                  </span>
+                </a>
+                <a
+                  class="link--large link cta-link"
+                  href="https://ultimaker.com"
+                  rel="noopener"
+                  target="_self"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Call me back
+    
+                  </span>
+                </a>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </article>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Organisms/content-highlight reversed 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="organism content-highlight"
+    >
+      <section
+        class="container content-highlight__container"
+      >
+        <div
+          class="flexgrid flexgrid--row-reversed"
+        >
+          <div
+            class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__image"
+          >
+            <div
+              class="content-highlight__image-wrapper"
+            >
+              <img
+                alt="An example image"
+                class="img--contain img--loading"
+                src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              />
+            </div>
+          </div>
+           
+          <div
+            class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__content"
+          >
+            <header
+              class="header-block content-highlight-header"
+            >
+              <h2
+                class="header-block__title"
+              >
+                Content highlight title
+              </h2>
+               
+              <p
+                class="header-block__subtitle"
+              >
+                Content highlight optional subtitle
+              </p>
+            </header>
+             
+            <div
+              class="content-manageble content-highlight__body"
+            >
+              Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla.
+            </div>
+             
+            <footer
+              class="footer-block"
+            >
+              <div
+                block="overview"
+                class="cta-block cta-block--footer"
+              >
+                <a
+                  class="link--primary button cta-link"
+                  href="https://ultimaker.com"
+                  rel="noopener"
+                  target="_self"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Call me back
+    
+                  </span>
+                </a>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </article>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Organisms|hero/Hero product default 1`] = `
 <section
   class="story"
