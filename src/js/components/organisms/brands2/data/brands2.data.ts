@@ -22,6 +22,30 @@ export const data = {
                 type: 'Brand',
                 image: adLabDecathlonLogo,
             },
+            {
+                type: 'Brand',
+                image: zeissLogo,
+            },
+            {
+                type: 'Brand',
+                image: volkswagenLogo,
+            },
+            {
+                type: 'Brand',
+                image: adLabDecathlonLogo,
+            },
+            {
+                type: 'Brand',
+                image: zeissLogo,
+            },
+            {
+                type: 'Brand',
+                image: volkswagenLogo,
+            },
+            {
+                type: 'Brand',
+                image: adLabDecathlonLogo,
+            },
         ],
         limit: {},
         subtitle: '',
