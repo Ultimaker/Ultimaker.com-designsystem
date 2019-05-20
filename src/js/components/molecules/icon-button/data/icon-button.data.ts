@@ -47,6 +47,20 @@ export const data = {
         iconName: 'search',
         slot: '',
     },
+    disabled: {
+        buttonAriaLabel: 'angle left',
+        buttonClass: '',
+        iconName: 'angle-left',
+        slot: 'angle left',
+        disabled: true,
+    },
+    disabledNoSlot: {
+        buttonAriaLabel: 'angle left',
+        buttonClass: '',
+        iconName: 'angle-left',
+        slot: '',
+        disabled: true,
+    },
 };
 
 export default type => data[type];

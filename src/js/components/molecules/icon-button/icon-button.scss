@@ -26,6 +26,11 @@
             background: rgba($colorWhite, 0.08);
         }
     }
+
+    &[disabled] {
+        color: $colorGrayDark;
+        pointer-events: none;
+    }
 }
 
 .icon-button__icon {

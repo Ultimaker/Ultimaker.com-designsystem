@@ -27,6 +27,9 @@ const getStory = (type) => {
                 iconName: {
                     default: knobs.iconName,
                 },
+                disabled: {
+                    default: knobs.disabled,
+                },
             },
             template: require('./icon-button.html'),
         };
