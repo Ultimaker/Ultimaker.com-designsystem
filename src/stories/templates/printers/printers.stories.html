@@ -2,7 +2,7 @@
     <page-header v-bind="header" :main-nav-open="mainNavOpen" @toggle-nav="mainNavOpen = !mainNavOpen"></page-header>
     <main style="padding-top: 60px">
         <hero-products-application v-bind="heroProductsApplication"></hero-products-application>
-        <brands v-bind="brands"></brands>
+        <legacy-brands v-bind="brands"/>
         <slider-reveal v-bind="slider"></slider-reveal>
         <examples v-bind="examples"></examples>
         <explore v-bind="explore"></explore>

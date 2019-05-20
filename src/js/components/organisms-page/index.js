@@ -1,4 +1,4 @@
-export {default as Brands} from 'organisms-page/brands';
+export {default as LegacyBrands} from 'organisms-page/__LEGACY__brands';
 export {default as BrandsLarge} from 'organisms-page/brands-large';
 export {default as Cases} from 'organisms-page/cases';
 export {default as Colors} from 'organisms-page/../organisms/colors';
