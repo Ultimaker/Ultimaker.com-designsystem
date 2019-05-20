@@ -8,7 +8,7 @@ define docker-node-run
   docker run --rm \
     --user $(uid):$(gid) \
     --tmpfs /.npm \
-    --volume $(pwd):/app \
+    --volume $(pwd):/app:delegated \
     --workdir /app \
     node:10.15-alpine $1
 endef
