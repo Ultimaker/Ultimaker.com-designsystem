@@ -3749,6 +3749,472 @@ exports[`Storyshots Organisms/content-highlight reversed 1`] = `
 </section>
 `;
 
+exports[`Storyshots Organisms/table-compare default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="organism"
+    >
+      <div
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Lorem ipsum dolor sit amet consectetur
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            Donec pulvinar arcu lorem, id scelerisque lectus cursus in
+          </p>
+        </header>
+         
+        <div
+          class="table-compare"
+        >
+          <div
+            class="table-compare__scroll-container"
+          >
+            <table
+              class="table-compare__table"
+            >
+              <colgroup>
+                <col />
+                 
+                <col />
+                <col />
+                <col />
+              </colgroup>
+               
+              <thead>
+                <tr>
+                  <th
+                    scope="col"
+                  />
+                   
+                  <th
+                    scope="col"
+                  >
+                    <img
+                      alt="col.alt"
+                      class="img--contain table-compare__image img--loading"
+                      src="/generator/svg/200/200"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="Image"
+                    />
+                    
+                            Ultimaker 2+
+                        
+                  </th>
+                  <th
+                    scope="col"
+                  >
+                    <img
+                      alt="col.alt"
+                      class="img--contain table-compare__image img--loading"
+                      src="/generator/svg/200/200"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="Image"
+                    />
+                    
+                            Ultimaker 3
+                        
+                  </th>
+                  <th
+                    scope="col"
+                  >
+                    <img
+                      alt="col.alt"
+                      class="img--contain table-compare__image img--loading"
+                      src="/generator/svg/200/200"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="Image"
+                    />
+                    
+                            Ultimaker S5
+                        
+                  </th>
+                </tr>
+              </thead>
+               
+              <tbody>
+                <tr>
+                  <th
+                    scope="row"
+                  >
+                    <div
+                      class="table-compare__feature"
+                    >
+                      <a
+                        aria-label=""
+                        class="icon-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="icon-button__label"
+                        >
+                           Feature One
+                        </span>
+                      </a>
+                       
+                      <div
+                        class="tooltip undefined__tooltip"
+                        style="display: none;"
+                      >
+                        
+                                    Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+                                
+                      </div>
+                    </div>
+                  </th>
+                   
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                </tr>
+                <tr>
+                  <th
+                    scope="row"
+                  >
+                    <div
+                      class="table-compare__feature"
+                    >
+                      <a
+                        aria-label=""
+                        class="icon-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="icon-button__label"
+                        >
+                           Feature Two
+                        </span>
+                      </a>
+                       
+                      <div
+                        class="tooltip undefined__tooltip"
+                        style="display: none;"
+                      >
+                        
+                                    Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+                                
+                      </div>
+                    </div>
+                  </th>
+                   
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                </tr>
+                <tr>
+                  <th
+                    scope="row"
+                  >
+                    <div
+                      class="table-compare__feature"
+                    >
+                      <a
+                        aria-label=""
+                        class="icon-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="icon-button__label"
+                        >
+                           Feature Three
+                        </span>
+                      </a>
+                       
+                      <div
+                        class="tooltip undefined__tooltip"
+                        style="display: none;"
+                      >
+                        
+                                    Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+                                
+                      </div>
+                    </div>
+                  </th>
+                   
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                </tr>
+                <tr>
+                  <th
+                    scope="row"
+                  >
+                    <div
+                      class="table-compare__feature"
+                    >
+                      <a
+                        aria-label=""
+                        class="icon-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="icon-button__label"
+                        >
+                           Feature Four
+                        </span>
+                      </a>
+                       
+                      <div
+                        class="tooltip undefined__tooltip"
+                        style="display: none;"
+                      >
+                        
+                                    Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+                                
+                      </div>
+                    </div>
+                  </th>
+                   
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                </tr>
+                <tr>
+                  <th
+                    scope="row"
+                  >
+                    <div
+                      class="table-compare__feature"
+                    >
+                      <a
+                        aria-label=""
+                        class="icon-button"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="icon-button__label"
+                        >
+                           Feature Five
+                        </span>
+                      </a>
+                       
+                      <div
+                        class="tooltip undefined__tooltip"
+                        style="display: none;"
+                      >
+                        
+                                    Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+                                
+                      </div>
+                    </div>
+                  </th>
+                   
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                  <td>
+                    <span
+                      class="visually-hidden"
+                    />
+                     
+                    <!---->
+                  </td>
+                </tr>
+              </tbody>
+               
+              <tfoot>
+                <tr>
+                  <th
+                    scope="row"
+                  />
+                   
+                  <td>
+                    <a
+                      class="button"
+                      href="/en/quote"
+                    >
+                      Get a quote
+                    </a>
+                  </td>
+                  <td>
+                    <a
+                      class="button"
+                      href="/en/quote"
+                    >
+                      Get a quote
+                    </a>
+                  </td>
+                  <td>
+                    <a
+                      class="button"
+                      href="/en/quote"
+                    >
+                      Get a quote
+                    </a>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+           
+          <div
+            class="table-compare__scroll-buttons"
+          >
+            <a
+              aria-label=""
+              class="icon-button table-compare__scroll-button table-compare__scroll-button--left"
+              role="button"
+              tabindex="0"
+            >
+              <!---->
+               
+              <!---->
+            </a>
+             
+            <a
+              aria-label=""
+              class="icon-button table-compare__scroll-button table-compare__scroll-button--right"
+              role="button"
+              tabindex="0"
+            >
+              <!---->
+               
+              <!---->
+            </a>
+          </div>
+        </div>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--large link cta-link"
+              href="#/en/quote"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Read more
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Organisms|hero/Hero product default 1`] = `
 <section
   class="story"
