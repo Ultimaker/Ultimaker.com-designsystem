@@ -4,6 +4,7 @@ const path = require('path');
 const SvgStore = require('webpack-svgstore-plugin');
 const Visualizer = require('webpack-visualizer-plugin');
 const production = process.env.NODE_ENV === 'production';
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const base = require('./webpack.config');
 
 function resolve(dir) {
@@ -11,7 +12,7 @@ function resolve(dir) {
 }
 
 const webpackConfig = {
-    mode: 'production',
+    mode: production ? 'production' : 'development',
     devtool: '#nosources-source-map',
     entry: {
         'components': './src/js/index.ts'
@@ -67,6 +68,22 @@ const webpackConfig = {
         })
     ])
 };
+
+// IMPORTANT: We need to remove CSS from JS bundle on dev builds too, otherwise the style-loader
+// will push the CSS to the DOM through the window object (SRR has no such object)!
+if (!production) {
+    const sassLoader = base.module.rules.find(p => p.use && p.use.length && p.use[0].loader === 'style-loader');
+
+    if (sassLoader) {
+        sassLoader.use[0].loader = MiniCssExtractPlugin.loader;
+    }
+    webpackConfig.plugins.push(
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css'
+        })
+    );
+}
 
 const mergedConfig = merge(base, webpackConfig);
 
