@@ -1,7 +1,3 @@
-<icon-button
-    :buttonClass="buttonClass"
-    :icon-name="iconName"
-    :aria-label="buttonAriaLabel"
-    :disabled="disabled">
+<icon-button v-bind="$props">
     <template v-if="slot">{{ slot }}</template>
 </icon-button>
