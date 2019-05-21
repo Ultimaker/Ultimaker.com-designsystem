@@ -14,6 +14,8 @@ export default class IconButton extends Vue  {
     iconName!: string;
     @Prop({ type: Boolean, default: false })
     disabled!: boolean;
+    @Prop({ type: String, default: 'button' })
+    type!: string;
 
     $el!:HTMLElement;
 

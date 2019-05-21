@@ -4,4 +4,5 @@ export default {
     iconName: '',
     slot: '',
     disabled: false,
+    type: 'button',
 };

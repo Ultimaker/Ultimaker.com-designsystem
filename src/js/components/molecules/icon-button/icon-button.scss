@@ -4,6 +4,7 @@
     @include font-line-ratio(prim-s);
 
     display: inline-flex;
+    font-family: inherit;
     justify-content: flex-end;
 
     padding: $buildingUnit;

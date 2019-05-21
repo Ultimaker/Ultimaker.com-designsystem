@@ -20,6 +20,7 @@ describe('components', () => {
                 expect(vm.$el.className).toContain('icon-button');
                 expect(vm.$el.getAttribute('aria-label')).toEqual('Search');
                 expect(vm.$el.hasAttribute('disabled')).toBe(true);
+                expect(vm.$el.type).toBe('button');
                 vm.$destroy();
             });
 
