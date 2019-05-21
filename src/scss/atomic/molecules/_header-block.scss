@@ -1,12 +1,13 @@
 .header-block {
-    margin-bottom: $buildingUnit * 4.5;
+    margin-bottom: $buildingUnit * 4.16;
+
+    @include min-tablet() {
+        margin-bottom: $buildingUnit * 4.33;    
+    }
 }
 
 .header-block--hero {
-    margin-bottom: $buildingUnit * 5.4;
-    @include min-tablet {
-        margin-bottom: $buildingUnit * 5.75;
-    }
+    margin-bottom: $buildingUnit * 4.33;
 }
 
 .header-block__subtitle--hero {
@@ -32,9 +33,10 @@
 .header-block__subtitle {
     text-align: center;
     position: relative;
-    margin-top: $buildingUnit * 1.8;
+    margin-bottom: 0;
+    margin-top: $buildingUnit * 1.5;
     @include min-tablet() {
-        margin-top: $buildingUnit * 1.5;
+        margin-top: $buildingUnit * 2;
     }
 
     @extend %fontSecondary;

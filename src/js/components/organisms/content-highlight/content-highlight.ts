@@ -10,7 +10,7 @@ import WithRender from './content-highlight.vue.html';
 export class ContentHighlight extends Vue implements ContentHighlightProps {
     @Prop({ type: String, required: true }) title!: ContentHighlightProps['title'];
     @Prop({ type: String }) subtitle?: ContentHighlightProps['subtitle'];
-    @Prop({ type: String, required: true }) description!: ContentHighlightProps['description'];
+    @Prop({ type: String }) description?: ContentHighlightProps['description'];
     @Prop({ type: Object }) image?: ContentHighlightProps['image'];
     @Prop({ type: Object }) ctas?: ContentHighlightProps['ctas'];
     @Prop({ type: Boolean, required: true }) reversed!: ContentHighlightProps['reversed'];
