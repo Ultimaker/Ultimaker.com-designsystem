@@ -3,5 +3,5 @@ export default {
     buttonClass: '',
     iconName: '',
     slot: '',
-    disabled: false
+    disabled: false,
 };
