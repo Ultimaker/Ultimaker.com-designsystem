@@ -128,7 +128,7 @@ export const data = {
                 image: adLabDecathlonLogo,
             },
         ],
-        subtitle: '',
-        title: '',
+        subtitle: 'You could be one too!',
+        title: 'Ultimaker Brands',
     },
 };

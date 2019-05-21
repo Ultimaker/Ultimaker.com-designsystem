@@ -51,11 +51,8 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
 
     showLimit() {
         if (this.limit === undefined) {
-            return false;
-        }
-
-        if (this.showAll) {
-            return false;
+            this.showAll = true;
+            return;
         }
 
         return this.viewportUtil.isMobile ? this.limit.smallScreen : this.limit.largeScreen;
