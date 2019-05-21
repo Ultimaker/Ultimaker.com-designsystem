@@ -3,6 +3,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 import { ListUnorderedLimitProps } from './list-unordered-limit.models';
 import WithRender from './list-unordered-limit.vue.html';
 import ViewportUtil from 'utils/viewport';
+import BrowserCapabilities from 'utils/browser-capabilities';
 
 @WithRender
 @Component({
@@ -17,6 +18,7 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
     $route; // requires a global plugin
     showAll: boolean = false;
     viewportUtil: ViewportUtil = new ViewportUtil();
+    limitField: string = 'smallScreen';
 
     getClickEventData() {
         if (!this.limit || !this.limit.expand || !this.limit.expand.clickEvent) {
@@ -44,16 +46,58 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
         return `${label} (${this.listItems.items.length})`;
     }
 
+    get hasExpand() {
+        if (!this.hasLimit) {
+            return false;
+        }
+
+        if (this.listItems.items.length <= this.showLimit) {
+            return false;
+        }
+
+        return this.limit && this.limit.expand;
+    }
+
+    get hasLimit() {
+        if (this.showAll) {
+            return false;
+        }
+
+        if (!this.limit) {
+            return false;
+        }
+
+        if (!this.limit[this.limitField]) {
+            return false;
+        }
+
+        return typeof this.limit[this.limitField] === 'number';
+    }
+
+    get showLimit() {
+        if (!this.hasLimit) {
+            return false;
+        }
+
+        return this.limit && this.limit[this.limitField] ? this.limit[this.limitField] : false;
+    }
+
     showHidden() {
         this.showAll = true;
         this.$emitPublic(Events.click, this.getClickEventData());
     }
 
-    showLimit() {
-        if (this.limit === undefined) {
-            return -1;
+    mounted() {
+        if (!BrowserCapabilities.isBrowser) {
+            return;
         }
 
-        return this.viewportUtil.isMobile ? this.limit.smallScreen : this.limit.largeScreen;
+        if (this.viewportUtil.isMobile) {
+            this.limitField = 'smallScreen';
+            return;
+        }
+
+        this.limitField = 'largeScreen';
+        return;
     }
 }

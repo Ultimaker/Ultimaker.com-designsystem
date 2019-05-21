@@ -995,6 +995,7 @@ exports[`Storyshots Molecules/list-unordered-limit default 1`] = `
           </li>
           <li
             class="list__item"
+            style="display: none;"
             type="LiItem"
           >
             <article
@@ -1012,6 +1013,7 @@ exports[`Storyshots Molecules/list-unordered-limit default 1`] = `
           </li>
           <li
             class="list__item"
+            style="display: none;"
             type="LiItem"
           >
             <article
@@ -1028,7 +1030,8 @@ exports[`Storyshots Molecules/list-unordered-limit default 1`] = `
             </article>
           </li>
           <li
-            class="list__item list__item--is-hidden"
+            class="list__item"
+            style="display: none;"
             type="LiItem"
           >
             <article
@@ -1045,7 +1048,8 @@ exports[`Storyshots Molecules/list-unordered-limit default 1`] = `
             </article>
           </li>
           <li
-            class="list__item list__item--is-hidden"
+            class="list__item"
+            style="display: none;"
             type="LiItem"
           >
             <article
@@ -1062,7 +1066,8 @@ exports[`Storyshots Molecules/list-unordered-limit default 1`] = `
             </article>
           </li>
           <li
-            class="list__item list__item--is-hidden"
+            class="list__item"
+            style="display: none;"
             type="LiItem"
           >
             <article
@@ -2176,6 +2181,7 @@ exports[`Storyshots Organisms/brands default 1`] = `
             </li>
             <li
               class="list__item"
+              style="display: none;"
               type="LiItem"
             >
               <article
@@ -2193,6 +2199,7 @@ exports[`Storyshots Organisms/brands default 1`] = `
             </li>
             <li
               class="list__item"
+              style="display: none;"
               type="LiItem"
             >
               <article
@@ -2209,7 +2216,8 @@ exports[`Storyshots Organisms/brands default 1`] = `
               </article>
             </li>
             <li
-              class="list__item list__item--is-hidden"
+              class="list__item"
+              style="display: none;"
               type="LiItem"
             >
               <article
@@ -2226,7 +2234,8 @@ exports[`Storyshots Organisms/brands default 1`] = `
               </article>
             </li>
             <li
-              class="list__item list__item--is-hidden"
+              class="list__item"
+              style="display: none;"
               type="LiItem"
             >
               <article
@@ -2243,7 +2252,8 @@ exports[`Storyshots Organisms/brands default 1`] = `
               </article>
             </li>
             <li
-              class="list__item list__item--is-hidden"
+              class="list__item"
+              style="display: none;"
               type="LiItem"
             >
               <article

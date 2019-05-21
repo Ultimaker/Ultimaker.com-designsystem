@@ -3,13 +3,12 @@
         <ul>
             <template v-for="(item, index) in listItems.items">
                 <template v-if="item.type">
-                    <component v-if="index < showLimit() || showLimit() === -1 || showAll" :is="item.type" v-bind="item" :key="index"/>
-                    <component v-else :is="item.type" v-bind="item" :key="index" class="list__item--is-hidden"/>
+                    <component v-show="index < showLimit || !hasLimit" :is="item.type" v-bind="item" :key="index"/>
                 </template>
             </template>
         </ul>
     </main>
-    <footer v-if="showLimit() !== -1">
+    <footer v-if="hasExpand">
         <button @click="showHidden">{{ showButtonLabel() }}</button>
     </footer>
 </section>
