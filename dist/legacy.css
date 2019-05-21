@@ -3142,13 +3142,13 @@ because both families serve another purpose. Therefore the line-heights will be 
       max-width: 66.67%; } }
 
 .um-components .header-block {
-  margin-bottom: 54px; }
+  margin-bottom: 49.92px; }
+  @media (min-width: 768px) {
+    .um-components .header-block {
+      margin-bottom: 51.96px; } }
 
 .um-components .header-block--hero {
-  margin-bottom: 64.8px; }
-  @media (min-width: 768px) {
-    .um-components .header-block--hero {
-      margin-bottom: 69px; } }
+  margin-bottom: 51.96px; }
 
 .um-components .header-block__subtitle--hero {
   color: #7F7F7F;
@@ -3170,14 +3170,15 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .header-block__subtitle {
   text-align: center;
   position: relative;
-  margin-top: 21.6px;
+  margin-bottom: 0;
+  margin-top: 18px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #7F7F7F; }
   @media (min-width: 768px) {
     .um-components .header-block__subtitle {
-      margin-top: 18px; } }
+      margin-top: 24px; } }
   @media (min-width: 768px) {
     .um-components .header-block__subtitle {
       font-size: 24px;
@@ -4815,7 +4816,8 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
       padding-right: 24px;
       width: 100%; }
       .um-components .flexgrid--row-reversed .content-highlight__image-wrapper {
-        padding-left: 24px; } }
+        padding-left: 24px;
+        padding-right: 0; } }
 
 .um-components .content-highlight__content {
   display: flex;
@@ -4826,24 +4828,24 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
       align-items: flex-start;
       padding-left: 24px; }
       .um-components .flexgrid--row-reversed .content-highlight__content {
-        padding-right: 24px; } }
+        padding-right: 24px;
+        padding-left: 0; } }
 
-.um-components .content-highlight-header {
-  margin-bottom: 50px; }
-  @media (min-width: 768px) {
-    .um-components .content-highlight-header {
-      margin-bottom: 52px; } }
-
-@media (min-width: 768px) {
-  .um-components .content-highlight-header .header-block__title {
-    text-align: left; } }
-
-.um-components .content-highlight__body {
-  margin-bottom: 18px;
+.um-components .content-highlight-header .header-block__title,
+.um-components .content-highlight-header .header-block__subtitle {
   text-align: center; }
   @media (min-width: 768px) {
+    .um-components .content-highlight-header .header-block__title,
+    .um-components .content-highlight-header .header-block__subtitle {
+      text-align: left; } }
+
+.um-components .content-highlight__body {
+  margin-bottom: 60px;
+  text-align: center; }
+  .um-components .content-highlight__body > * {
+    margin: 0; }
+  @media (min-width: 768px) {
     .um-components .content-highlight__body {
-      margin-bottom: 21px;
       text-align: left; } }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {

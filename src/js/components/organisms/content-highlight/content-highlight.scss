@@ -11,7 +11,7 @@
 
             .flexgrid--row-reversed &{
                 padding-left: $buildingUnit * 2;
-
+                padding-right: 0;
             }
         }
     }
@@ -27,33 +27,29 @@
 
             .flexgrid--row-reversed &{
                 padding-right: $buildingUnit * 2;
-
+                padding-left: 0;
             }
         }
-    } 
-    
-    &-header{
-        margin-bottom: ($buildingUnit * 4) + ($buildingUnit / 6);
-
-        @include min-tablet {
-            margin-bottom: ($buildingUnit * 4) + ($buildingUnit / 3);
-        }
-
     }
-    &-header .header-block__title{
-        @include min-tablet {
-            text-align: left;
+    &-header{
+        .header-block__title,
+        .header-block__subtitle{
+            text-align: center;
+            @include min-tablet {
+                text-align: left;
+            }
         }
     }
 
     &__body{
-        margin-bottom: $buildingUnit * 1.5;
+        margin-bottom: $buildingUnit * 5;
         text-align: center;
-
-        @include min-tablet {
-            margin-bottom: $buildingUnit * 1.75;
-            text-align: left;
+        > * {
+            margin: 0;
         }
 
+        @include min-tablet {
+            text-align: left;
+        }
     }
 }

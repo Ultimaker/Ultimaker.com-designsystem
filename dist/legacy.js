@@ -12085,7 +12085,7 @@ var ContentHighlight = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentHighlight.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], ContentHighlight.prototype, "subtitle", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentHighlight.prototype, "description", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], ContentHighlight.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentHighlight.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentHighlight.prototype, "ctas", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], ContentHighlight.prototype, "reversed", void 0);

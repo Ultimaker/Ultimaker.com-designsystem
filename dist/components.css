@@ -3614,13 +3614,13 @@ table tfoot {
       max-width: 66.67%; } }
 
 .header-block {
-  margin-bottom: 54px; }
+  margin-bottom: 49.92px; }
+  @media (min-width: 768px) {
+    .header-block {
+      margin-bottom: 51.96px; } }
 
 .header-block--hero {
-  margin-bottom: 64.8px; }
-  @media (min-width: 768px) {
-    .header-block--hero {
-      margin-bottom: 69px; } }
+  margin-bottom: 51.96px; }
 
 .header-block__subtitle--hero {
   color: #7F7F7F;
@@ -3642,14 +3642,15 @@ table tfoot {
 .header-block__subtitle {
   text-align: center;
   position: relative;
-  margin-top: 21.6px;
+  margin-bottom: 0;
+  margin-top: 18px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #7F7F7F; }
   @media (min-width: 768px) {
     .header-block__subtitle {
-      margin-top: 18px; } }
+      margin-top: 24px; } }
   @media (min-width: 768px) {
     .header-block__subtitle {
       font-size: 24px;
@@ -5302,7 +5303,8 @@ svg text {
       padding-right: 24px;
       width: 100%; }
       .flexgrid--row-reversed .content-highlight__image-wrapper {
-        padding-left: 24px; } }
+        padding-left: 24px;
+        padding-right: 0; } }
 
 .content-highlight__content {
   display: flex;
@@ -5313,24 +5315,24 @@ svg text {
       align-items: flex-start;
       padding-left: 24px; }
       .flexgrid--row-reversed .content-highlight__content {
-        padding-right: 24px; } }
+        padding-right: 24px;
+        padding-left: 0; } }
 
-.content-highlight-header {
-  margin-bottom: 50px; }
-  @media (min-width: 768px) {
-    .content-highlight-header {
-      margin-bottom: 52px; } }
-
-@media (min-width: 768px) {
-  .content-highlight-header .header-block__title {
-    text-align: left; } }
-
-.content-highlight__body {
-  margin-bottom: 18px;
+.content-highlight-header .header-block__title,
+.content-highlight-header .header-block__subtitle {
   text-align: center; }
   @media (min-width: 768px) {
+    .content-highlight-header .header-block__title,
+    .content-highlight-header .header-block__subtitle {
+      text-align: left; } }
+
+.content-highlight__body {
+  margin-bottom: 60px;
+  text-align: center; }
+  .content-highlight__body > * {
+    margin: 0; }
+  @media (min-width: 768px) {
     .content-highlight__body {
-      margin-bottom: 21px;
       text-align: left; } }
 
 /*
