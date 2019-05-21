@@ -1,1 +1,5 @@
-.list-unordered-limit {}
+.list-unordered-limit {
+    .list__item--is-hidden {
+        display: none;
+    }
+}

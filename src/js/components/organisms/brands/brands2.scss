@@ -1,4 +1,6 @@
 .brands2 {
+    padding-top: $buildingUnit * 4;
+
     .list-unordered-limit {
         ul {
             display: flex;
@@ -26,6 +28,6 @@
     }
 
     .cta-block--footer {
-        margin-top: $buildingUnit * 3;
+        margin-top: $buildingUnit * 5;
     }
 }
