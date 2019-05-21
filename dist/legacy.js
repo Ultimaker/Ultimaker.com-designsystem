@@ -9860,7 +9860,7 @@ exports.ListUnorderedLimit = ListUnorderedLimit;
 /* 256 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"list-unordered-limit"},[_c('main',[_c('ul',[_vm._l((_vm.listItems.items),function(item,index){return [(item.type)?[(_vm.showAll || _vm.showLimit() === -1 || index < _vm.showLimit())?_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false)):_c(item.type,_vm._b({key:index,tag:"component",staticClass:"list__item--is-hidden"},'component',item,false))]:_vm._e()]})],2)]),_vm._v(" "),(_vm.showLimit() !== -1)?_c('footer',[_c('button',{on:{"click":_vm.showHidden}},[_vm._v(_vm._s(_vm.showButtonLabel()))])]):_vm._e()])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"list-unordered-limit"},[_c('main',[_c('ul',[_vm._l((_vm.listItems.items),function(item,index){return [(item.type)?[(index < _vm.showLimit() || _vm.showLimit() === -1 || _vm.showAll)?_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false)):_c(item.type,_vm._b({key:index,tag:"component",staticClass:"list__item--is-hidden"},'component',item,false))]:_vm._e()]})],2)]),_vm._v(" "),(_vm.showLimit() !== -1)?_c('footer',[_c('button',{on:{"click":_vm.showHidden}},[_vm._v(_vm._s(_vm.showButtonLabel()))])]):_vm._e()])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
