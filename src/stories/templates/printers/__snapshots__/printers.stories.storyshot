@@ -56,17 +56,17 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   </a>
                 </div>
                  
-                <a
+                <button
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
-                  role="button"
                   style="display: none;"
                   tabindex="-1"
+                  type="button"
                 >
                   <!---->
                    
                   <!---->
-                </a>
+                </button>
                  
                 <ul
                   class="main-nav__flyout flyout--large"
@@ -77,13 +77,13 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2747_0"
+                      id="flyout_title_2775_0"
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_2747_0"
+                      aria-labelledby="flyout_title_2775_0"
                       class="flyout__list"
                     >
                       <li
@@ -164,14 +164,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2747_1"
+                      id="flyout_title_2775_1"
                     >
                       Where is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2747_1"
+                      aria-labelledby="flyout_title_2775_1"
                       class="flyout__list"
                     >
                       <li
@@ -589,14 +589,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2747_2"
+                      id="flyout_title_2775_2"
                     >
                       How is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2747_2"
+                      aria-labelledby="flyout_title_2775_2"
                       class="flyout__list"
                     >
                       <li
@@ -814,17 +814,17 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   </a>
                 </div>
                  
-                <a
+                <button
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
-                  role="button"
                   style="display: none;"
                   tabindex="-1"
+                  type="button"
                 >
                   <!---->
                    
                   <!---->
-                </a>
+                </button>
                  
                 <ul
                   class="main-nav__flyout flyout--large"
@@ -835,13 +835,13 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2826_0"
+                      id="flyout_title_2854_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_2826_0"
+                      aria-labelledby="flyout_title_2854_0"
                       class="flyout__list"
                     >
                       <li
@@ -909,14 +909,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2826_1"
+                      id="flyout_title_2854_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2826_1"
+                      aria-labelledby="flyout_title_2854_1"
                       class="flyout__list"
                     >
                       <li
@@ -1081,14 +1081,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2826_2"
+                      id="flyout_title_2854_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2826_2"
+                      aria-labelledby="flyout_title_2854_2"
                       class="flyout__list"
                     >
                       <li
@@ -1253,17 +1253,17 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   </a>
                 </div>
                  
-                <a
+                <button
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
-                  role="button"
                   style="display: none;"
                   tabindex="-1"
+                  type="button"
                 >
                   <!---->
                    
                   <!---->
-                </a>
+                </button>
                  
                 <!---->
               </li>
@@ -1290,17 +1290,17 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   </a>
                 </div>
                  
-                <a
+                <button
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
-                  role="button"
                   style="display: none;"
                   tabindex="-1"
+                  type="button"
                 >
                   <!---->
                    
                   <!---->
-                </a>
+                </button>
                  
                 <ul
                   class="main-nav__flyout flyout--large"
@@ -1311,13 +1311,13 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2876_0"
+                      id="flyout_title_2904_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_2876_0"
+                      aria-labelledby="flyout_title_2904_0"
                       class="flyout__list"
                     >
                       <li
@@ -1385,14 +1385,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2876_1"
+                      id="flyout_title_2904_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2876_1"
+                      aria-labelledby="flyout_title_2904_1"
                       class="flyout__list"
                     >
                       <li
@@ -1557,14 +1557,14 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2876_2"
+                      id="flyout_title_2904_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2876_2"
+                      aria-labelledby="flyout_title_2904_2"
                       class="flyout__list"
                     >
                       <li
@@ -1729,17 +1729,17 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   </a>
                 </div>
                  
-                <a
+                <button
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
-                  role="button"
                   style="display: none;"
                   tabindex="-1"
+                  type="button"
                 >
                   <!---->
                    
                   <!---->
-                </a>
+                </button>
                  
                 <!---->
               </li>
@@ -1766,17 +1766,17 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   </a>
                 </div>
                  
-                <a
+                <button
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
-                  role="button"
                   style="display: none;"
                   tabindex="-1"
+                  type="button"
                 >
                   <!---->
                    
                   <!---->
-                </a>
+                </button>
                  
                 <!---->
               </li>
@@ -1803,17 +1803,17 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   </a>
                 </div>
                  
-                <a
+                <button
                   aria-label=""
                   class="icon-button icon-button--small main-nav__toggle disable-focus"
-                  role="button"
                   style="display: none;"
                   tabindex="-1"
+                  type="button"
                 >
                   <!---->
                    
                   <!---->
-                </a>
+                </button>
                  
                 <!---->
               </li>
@@ -2741,11 +2741,10 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 <div
                   class="explore__navigation"
                 >
-                  <a
+                  <button
                     aria-label=""
                     class="icon-button explore__nav"
-                    role="button"
-                    tabindex="0"
+                    type="button"
                   >
                     <!---->
                      
@@ -2758,13 +2757,12 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         previous
                       </span>
                     </span>
-                  </a>
+                  </button>
                    
-                  <a
+                  <button
                     aria-label=""
                     class="icon-button explore__nav icon-button--reversed"
-                    role="button"
-                    tabindex="0"
+                    type="button"
                   >
                     <!---->
                      
@@ -2777,7 +2775,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                         next
                       </span>
                     </span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -2947,11 +2945,10 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 class="case__media-placeholder"
               >
                 <figcaption>
-                  <a
+                  <button
                     aria-label=""
                     class="icon-button case__link icon-button--underline-large"
-                    role="button"
-                    tabindex="0"
+                    type="button"
                   >
                     <!---->
                      
@@ -2960,7 +2957,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     >
                       Sit amet
                     </span>
-                  </a>
+                  </button>
                 </figcaption>
                  
                 <div
@@ -3040,11 +3037,10 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                   </p>
                    
-                  <a
+                  <button
                     aria-label=""
                     class="icon-button case__link icon-button--underline-large"
-                    role="button"
-                    tabindex="0"
+                    type="button"
                   >
                     <!---->
                      
@@ -3053,7 +3049,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     >
                       Sit amet
                     </span>
-                  </a>
+                  </button>
                 </figcaption>
                  
                 <div
@@ -3406,11 +3402,10 @@ exports[`Storyshots templates|printers Printers 1`] = `
               class="locale-selector footer__locale-selector"
               type="CountryAutoCompleteField"
             >
-              <a
+              <button
                 aria-label="Change your country, currently: Netherlands"
                 class="icon-button icon-button--small locale-selector__edit--buton"
-                role="button"
-                tabindex="0"
+                type="button"
               >
                 <!---->
                  
@@ -3421,19 +3416,18 @@ exports[`Storyshots templates|printers Printers 1`] = `
         Netherlands
     
                 </span>
-              </a>
+              </button>
                
-              <a
+              <button
                 aria-label="change your country"
                 class="icon-button icon-button--small locale-selector__edit--buton"
-                role="button"
                 style="display: none;"
-                tabindex="0"
+                type="button"
               >
                 <!---->
                  
                 <!---->
-              </a>
+              </button>
                
               <!---->
             </div>

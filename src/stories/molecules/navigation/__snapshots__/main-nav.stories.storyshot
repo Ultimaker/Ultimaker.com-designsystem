@@ -41,17 +41,17 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               </a>
             </div>
              
-            <a
+            <button
               aria-label=""
               class="icon-button icon-button--small main-nav__toggle disable-focus"
-              role="button"
               style="display: none;"
               tabindex="-1"
+              type="button"
             >
               <!---->
                
               <!---->
-            </a>
+            </button>
              
             <!---->
           </li>
@@ -78,17 +78,17 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               </a>
             </div>
              
-            <a
+            <button
               aria-label=""
               class="icon-button icon-button--small main-nav__toggle disable-focus"
-              role="button"
               style="display: none;"
               tabindex="-1"
+              type="button"
             >
               <!---->
                
               <!---->
-            </a>
+            </button>
              
             <!---->
           </li>
@@ -115,17 +115,17 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               </a>
             </div>
              
-            <a
+            <button
               aria-label=""
               class="icon-button icon-button--small main-nav__toggle disable-focus"
-              role="button"
               style="display: none;"
               tabindex="-1"
+              type="button"
             >
               <!---->
                
               <!---->
-            </a>
+            </button>
              
             <!---->
           </li>
@@ -152,17 +152,17 @@ exports[`Storyshots Molecules|navigation Main navigation 1`] = `
               </a>
             </div>
              
-            <a
+            <button
               aria-label=""
               class="icon-button icon-button--small main-nav__toggle disable-focus"
-              role="button"
               style="display: none;"
               tabindex="-1"
+              type="button"
             >
               <!---->
                
               <!---->
-            </a>
+            </button>
              
             <!---->
           </li>

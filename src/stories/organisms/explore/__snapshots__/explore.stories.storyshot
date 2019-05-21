@@ -275,11 +275,10 @@ exports[`Storyshots organisms|explore Explore 1`] = `
               <div
                 class="explore__navigation"
               >
-                <a
+                <button
                   aria-label=""
                   class="icon-button explore__nav"
-                  role="button"
-                  tabindex="0"
+                  type="button"
                 >
                   <!---->
                    
@@ -292,13 +291,12 @@ exports[`Storyshots organisms|explore Explore 1`] = `
                       previous
                     </span>
                   </span>
-                </a>
+                </button>
                  
-                <a
+                <button
                   aria-label=""
                   class="icon-button explore__nav icon-button--reversed"
-                  role="button"
-                  tabindex="0"
+                  type="button"
                 >
                   <!---->
                    
@@ -311,7 +309,7 @@ exports[`Storyshots organisms|explore Explore 1`] = `
                       next
                     </span>
                   </span>
-                </a>
+                </button>
               </div>
             </div>
           </div>

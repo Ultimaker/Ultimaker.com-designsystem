@@ -1069,11 +1069,10 @@ exports[`Storyshots Molecules|buttons/icon-button default 1`] = `
   <section
     class="story"
   >
-    <a
+    <button
       aria-label="icon button default"
       class="icon-button"
-      role="button"
-      tabindex="0"
+      type="button"
     >
       <!---->
        
@@ -1082,7 +1081,7 @@ exports[`Storyshots Molecules|buttons/icon-button default 1`] = `
       >
         icon button default
       </span>
-    </a>
+    </button>
   </section>
 </section>
 `;
@@ -1094,16 +1093,61 @@ exports[`Storyshots Molecules|buttons/icon-button defaultNoSlot 1`] = `
   <section
     class="story"
   >
-    <a
+    <button
       aria-label="icon button default, no slot"
       class="icon-button"
-      role="button"
-      tabindex="0"
+      type="button"
     >
       <!---->
        
       <!---->
-    </a>
+    </button>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button disabled 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <button
+      aria-label="angle left"
+      class="icon-button"
+      disabled="disabled"
+      type="button"
+    >
+      <!---->
+       
+      <span
+        class="icon-button__label"
+      >
+        angle left
+      </span>
+    </button>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button disabledNoSlot 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <button
+      aria-label="angle left"
+      class="icon-button"
+      disabled="disabled"
+      type="button"
+    >
+      <!---->
+       
+      <!---->
+    </button>
   </section>
 </section>
 `;
@@ -1115,11 +1159,10 @@ exports[`Storyshots Molecules|buttons/icon-button large 1`] = `
   <section
     class="story"
   >
-    <a
+    <button
       aria-label="icon button large"
       class="icon-button icon-button--large"
-      role="button"
-      tabindex="0"
+      type="button"
     >
       <!---->
        
@@ -1128,7 +1171,7 @@ exports[`Storyshots Molecules|buttons/icon-button large 1`] = `
       >
         icon button large
       </span>
-    </a>
+    </button>
   </section>
 </section>
 `;
@@ -1140,16 +1183,15 @@ exports[`Storyshots Molecules|buttons/icon-button largeNoSlot 1`] = `
   <section
     class="story"
   >
-    <a
+    <button
       aria-label="icon button large, no slot"
       class="icon-button icon-button--large"
-      role="button"
-      tabindex="0"
+      type="button"
     >
       <!---->
        
       <!---->
-    </a>
+    </button>
   </section>
 </section>
 `;
@@ -1161,11 +1203,10 @@ exports[`Storyshots Molecules|buttons/icon-button small 1`] = `
   <section
     class="story"
   >
-    <a
+    <button
       aria-label="icon button small"
       class="icon-button icon-button--small"
-      role="button"
-      tabindex="0"
+      type="button"
     >
       <!---->
        
@@ -1174,7 +1215,7 @@ exports[`Storyshots Molecules|buttons/icon-button small 1`] = `
       >
         icon button small
       </span>
-    </a>
+    </button>
   </section>
 </section>
 `;
@@ -1186,16 +1227,59 @@ exports[`Storyshots Molecules|buttons/icon-button smallNoSlot 1`] = `
   <section
     class="story"
   >
-    <a
+    <button
       aria-label="icon button small, no slot"
       class="icon-button icon-button--small"
-      role="button"
-      tabindex="0"
+      type="button"
     >
       <!---->
        
       <!---->
-    </a>
+    </button>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button submitButton 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <button
+      aria-label="submit button"
+      class="icon-button"
+      type="submit"
+    >
+      <!---->
+       
+      <span
+        class="icon-button__label"
+      >
+        submit button
+      </span>
+    </button>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button submitButtonNoSlot 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <button
+      aria-label="submit button"
+      class="icon-button"
+      type="submit"
+    >
+      <!---->
+       
+      <!---->
+    </button>
   </section>
 </section>
 `;
@@ -1207,11 +1291,10 @@ exports[`Storyshots Molecules|buttons/icon-button underline 1`] = `
   <section
     class="story"
   >
-    <a
+    <button
       aria-label="icon button underline-large"
       class="icon-button icon-button--underline-large"
-      role="button"
-      tabindex="0"
+      type="button"
     >
       <!---->
        
@@ -1220,7 +1303,7 @@ exports[`Storyshots Molecules|buttons/icon-button underline 1`] = `
       >
         icon button underline
       </span>
-    </a>
+    </button>
   </section>
 </section>
 `;
@@ -1232,16 +1315,15 @@ exports[`Storyshots Molecules|buttons/icon-button underlineNoSlot 1`] = `
   <section
     class="story"
   >
-    <a
+    <button
       aria-label="icon button underline-large, no slot"
       class="icon-button icon-button--underline-large"
-      role="button"
-      tabindex="0"
+      type="button"
     >
       <!---->
        
       <!---->
-    </a>
+    </button>
   </section>
 </section>
 `;

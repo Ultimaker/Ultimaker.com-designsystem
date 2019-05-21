@@ -245,11 +245,10 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
               class="locale-selector footer__locale-selector"
               type="CountryAutoCompleteField"
             >
-              <a
+              <button
                 aria-label="Change your country, currently: Netherlands"
                 class="icon-button icon-button--small locale-selector__edit--buton"
-                role="button"
-                tabindex="0"
+                type="button"
               >
                 <!---->
                  
@@ -260,19 +259,18 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
         Netherlands
     
                 </span>
-              </a>
+              </button>
                
-              <a
+              <button
                 aria-label="change your country"
                 class="icon-button icon-button--small locale-selector__edit--buton"
-                role="button"
                 style="display: none;"
-                tabindex="0"
+                type="button"
               >
                 <!---->
                  
                 <!---->
-              </a>
+              </button>
                
               <!---->
             </div>

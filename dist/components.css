@@ -3913,6 +3913,7 @@ table tfoot {
   font-size: 14px;
   line-height: 21px;
   display: inline-flex;
+  font-family: inherit;
   justify-content: flex-end;
   padding: 12px;
   height: 48px;
@@ -3925,6 +3926,9 @@ table tfoot {
   .icon-button--light, .modal__close, .icon-button--light:hover, .modal__close:hover {
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.08); }
+  .icon-button[disabled], .sys-nav__link[disabled], .search__button[disabled] {
+    color: #7F7F7F;
+    pointer-events: none; }
 
 .icon-button__icon, .sys-nav__icon, .social-nav__icon {
   font-size: 24px; }

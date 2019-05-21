@@ -8844,11 +8844,14 @@ Object.defineProperty(exports, "__esModule", {
 
 var _iconButton = __webpack_require__(233);
 
-var _iconButton2 = _interopRequireDefault(_iconButton);
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_iconButton).default;
+  }
+});
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _iconButton2.default;
 
 /***/ }),
 /* 233 */
@@ -8917,6 +8920,8 @@ var IconButton = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], IconButton.prototype, "buttonClass", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __metadata("design:type", String)], IconButton.prototype, "buttonAriaLabel", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], IconButton.prototype, "iconName", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), __metadata("design:type", Boolean)], IconButton.prototype, "disabled", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'button' }), __metadata("design:type", String)], IconButton.prototype, "type", void 0);
 IconButton = __decorate([_iconButtonVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'icon-button'
 })], IconButton);
@@ -8926,7 +8931,7 @@ exports.default = IconButton;
 /* 234 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"icon-button",class:_vm.buttonClass,attrs:{"aria-label":_vm.buttonAriaLabel,"role":"button","tabindex":"0"},on:{"click":function($event){return _vm.$emit('click')},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.$emit('click')}}},[_c('icon',{staticClass:"icon-button__icon",attrs:{"icon-name":_vm.iconName}}),_vm._v(" "),(_vm.hasDefaultSlot)?_c('span',{staticClass:"icon-button__label"},[_vm._t("default")],2):_vm._e()],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"icon-button",class:_vm.buttonClass,attrs:{"type":_vm.type,"aria-label":_vm.buttonAriaLabel,"disabled":_vm.disabled},on:{"click":function($event){return _vm.$emit('click')},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.$emit('click')}}},[_c('icon',{staticClass:"icon-button__icon",attrs:{"icon-name":_vm.iconName}}),_vm._v(" "),(_vm.hasDefaultSlot)?_c('span',{staticClass:"icon-button__label"},[_vm._t("default")],2):_vm._e()],1)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
