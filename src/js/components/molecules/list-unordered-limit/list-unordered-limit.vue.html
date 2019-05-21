@@ -1,19 +1,15 @@
 <section class="list-unordered-limit">
     <main>
         <ul>
-            <template v-for="(item, index) in listItems.items" v-if="showLimit() && index < showLimit()">
+            <template v-for="(item, index) in listItems.items">
                 <template v-if="item.type">
-                    <component :is="item.type" v-bind="item" :key="index"/>
-                </template>
-            </template>
-            <template v-for="(item, index) in listItems.items" v-if="!showLimit() && showAll">
-                <template v-if="item.type">
-                    <component :is="item.type" v-bind="item" :key="index"/>
+                    <component v-if="showAll || showLimit() === -1 || index < showLimit()" :is="item.type" v-bind="item" :key="index"/>
+                    <component v-else :is="item.type" v-bind="item" :key="index" class="list__item--is-hidden"/>
                 </template>
             </template>
         </ul>
     </main>
-    <footer v-if="showLimit()">
+    <footer v-if="showLimit() !== -1">
         <button @click="showHidden">{{ showButtonLabel() }}</button>
     </footer>
 </section>
