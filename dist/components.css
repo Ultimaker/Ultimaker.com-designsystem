@@ -249,20 +249,20 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist {
   list-style: none; }
 
-.list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
+.list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .tooltip__list-item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
 .content-manageble ol li {
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child {
+.block > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .card > :last-child, .card__content > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child {
   margin-bottom: 0; }
 
 .hero--products .hero__link--large, .hero--products-application .hero__link--large, .examples .examples__link--large {
@@ -324,7 +324,7 @@ h3, q, .hero--products-application .hero__subtitle, .link--large, .currency, .ma
 
 /* Picked an accessible color from colorsafe.co to try out some time */
 button:focus, .button:focus, input[type="button"]:focus, input[type="submit"]:focus, .nav-assist:focus:not(:hover),
-.nav-assist--close:focus:not(:hover), a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .examples .examples__tabs .tablist__item:focus:not(:hover), .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active), .business-card:focus, .business-card:hover:focus, .business-card:focus:active {
+.nav-assist--close:focus:not(:hover), a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .examples .examples__tabs .tablist__item:focus:not(:hover), .business-card:focus, .business-card:hover:focus, .business-card:focus:active, .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active) {
   color: #FFFFFF;
   background-color: #24bcf3; }
 
@@ -341,6 +341,7 @@ h6 a:focus:not(:hover),
 .link--small.overflow-container__link.exact-active a:focus:not(:hover),
 .price-table__tagline a:focus:not(:hover),
 .price-table__disclaimer a:focus:not(:hover),
+.tooltip__list-item.tooltip__label a:focus:not(:hover),
 .tag a:focus:not(:hover),
 .tablist__section .tablist a:focus:not(:hover),
 .examples .examples__tabs .tablist a:focus:not(:hover),
@@ -362,6 +363,7 @@ h6 a:focus:not(:active),
 .link--small.overflow-container__link.exact-active a:focus:not(:active),
 .price-table__tagline a:focus:not(:active),
 .price-table__disclaimer a:focus:not(:active),
+.tooltip__list-item.tooltip__label a:focus:not(:active),
 .tag a:focus:not(:active),
 .tablist__section .tablist a:focus:not(:active),
 .examples .examples__tabs .tablist a:focus:not(:active),
@@ -927,7 +929,7 @@ q {
 
 small,
 h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.toggle, .toggle.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
-.price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
+.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
@@ -936,7 +938,7 @@ h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal
   @media (min-width: 768px) {
     small,
     h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.toggle, .toggle.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
-    .price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
+    .price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -953,7 +955,7 @@ h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal
       margin-bottom: 38px; } }
 
 .copy--small,
-h5, .link-list__headline, .flyout__title, .footer-nav__title, .notification__title, .link, .legal__link, .footer-nav__link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active, [type="checkbox"] + label, .notification__copy, .auto-complete__list-item, .business-card__property {
+h5, .link-list__headline, .flyout__title, .footer-nav__title, .notification__title, .link, .legal__link, .footer-nav__link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active, [type="checkbox"] + label, .notification__copy, .business-card__property, .auto-complete__list-item {
   font-size: 14px;
   line-height: 21px;
   margin-top: -2px;
@@ -1181,6 +1183,7 @@ a {
   .overflow-container__link.exact-active.legal__link a,
   .price-table__tagline a,
   .price-table__disclaimer a,
+  .tooltip__list-item.tooltip__label a,
   .tag a,
   .tablist__section .tablist a,
   .examples .examples__tabs .tablist a,
@@ -1381,11 +1384,15 @@ dd {
 .link--large {
   display: inline-block;
   font-size: 18px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin-top: 6px;
+  margin-bottom: 24px; }
   @media (min-width: 768px) {
     .link--large {
       font-size: 20px;
-      line-height: 24px; } }
+      line-height: 24px;
+      margin-top: 5px;
+      margin-bottom: 31px; } }
 
 .link .link__underline, .legal__link .link__underline, .footer-nav__link .link__underline, .toggle .link__underline, .overflow-container__link:hover .link__underline, .overflow-container__link.exact-active .link__underline,
 .link--large .link__underline {
@@ -1518,9 +1525,6 @@ dd {
     .toggle--icon .link--large.footer-nav__link .icon {
       font-size: 24px;
       transform: translateX(-33px); }
-
-.link--icon:focus, .toggle--icon:focus {
-  fill: currentColor; }
 
 .link-list .list--icon, .flyout__list .list--icon, .footer-nav__list .list--icon {
   margin-bottom: 0; }
@@ -1763,7 +1767,7 @@ table th {
 
 table td small,
 table td h6, table td .caption-list__headline, table td .caption-list__list-item, table td .link.link--small, table td .legal__link, table td .link--small.footer-nav__link, table td .footer-nav__link.legal__link, table td .link--small.toggle, table td .toggle.legal__link, table td .link--small.overflow-container__link:hover, table td .overflow-container__link.legal__link:hover, table td .link--small.overflow-container__link.exact-active, table td .overflow-container__link.exact-active.legal__link, table td .price-table__tagline,
-table td .price-table__disclaimer, table td .tag, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .auto-complete__label, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label, table td .settings-selector__label,
+table td .price-table__disclaimer, table td .tooltip__list-item.tooltip__label, table td .tag, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .auto-complete__label, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label, table td .settings-selector__label,
 table th small,
 table th h6,
 table th .caption-list__headline,
@@ -1780,6 +1784,7 @@ table th .link--small.overflow-container__link.exact-active,
 table th .overflow-container__link.exact-active.legal__link,
 table th .price-table__tagline,
 table th .price-table__disclaimer,
+table th .tooltip__list-item.tooltip__label,
 table th .tag,
 table th .tablist__section .tablist,
 .tablist__section table th .tablist,
@@ -2772,26 +2777,41 @@ table tfoot {
   justify-content: flex-end; }
 
 .tooltip {
-  background-color: #000000;
+  position: absolute;
+  background: #000000;
   color: #FFFFFF;
-  font-weight: 400;
-  min-height: 36px;
+  padding: 12px;
   min-width: 96px;
   max-width: 150px;
-  padding: 12px;
-  position: absolute;
+  min-height: 36px;
+  font-weight: 400;
   z-index: 200; }
   .tooltip:after {
-    border: 12px solid transparent;
-    border-top-color: #000000;
-    bottom: -24px;
     content: '';
-    left: calc(50% - 12px);
-    position: absolute;
+    display: block;
+    width: 0;
     height: 0;
-    width: 0; }
-  .tooltip > :last-child {
-    margin-bottom: 0; }
+    position: absolute;
+    border-top: 12px solid #000000;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    left: calc(50% - 12px);
+    bottom: -24px; }
+
+.tooltip__list-item.tooltip__label {
+  display: block;
+  margin-bottom: 0; }
+
+.tooltip__list {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0; }
+
+.tooltip__list-item {
+  width: 120px;
+  margin: 0 0 12px 0;
+  padding-left: 0; }
 
 .hit-area {
   display: block; }
@@ -3594,13 +3614,13 @@ table tfoot {
       max-width: 66.67%; } }
 
 .header-block {
-  margin-bottom: 49.92px; }
-  @media (min-width: 768px) {
-    .header-block {
-      margin-bottom: 51.96px; } }
+  margin-bottom: 54px; }
 
 .header-block--hero {
-  margin-bottom: 51.96px; }
+  margin-bottom: 64.8px; }
+  @media (min-width: 768px) {
+    .header-block--hero {
+      margin-bottom: 69px; } }
 
 .header-block__subtitle--hero {
   color: #7F7F7F;
@@ -3616,21 +3636,19 @@ table tfoot {
 .header-block__title {
   text-align: center;
   position: relative;
-  margin-bottom: 0;
-  margin-top: 0; }
+  margin-bottom: 0; }
 
 .header-block__subtitle {
   text-align: center;
   position: relative;
-  margin-bottom: 0;
-  margin-top: 18px;
+  margin-top: 21.6px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #7F7F7F; }
   @media (min-width: 768px) {
     .header-block__subtitle {
-      margin-top: 24px; } }
+      margin-top: 18px; } }
   @media (min-width: 768px) {
     .header-block__subtitle {
       font-size: 24px;
@@ -3647,120 +3665,6 @@ table tfoot {
     @media (min-width: 768px) {
       .footer-block--push-down:not(:empty) {
         margin-top: 60px; } }
-
-.auto-complete {
-  position: relative;
-  margin-bottom: 23px; }
-  .auto-complete * {
-    margin: 0; }
-  .auto-complete__dropdown {
-    position: absolute;
-    background: #FFFFFF;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-    width: 100%;
-    border: 1px solid #E3E3E3;
-    z-index: 1000; }
-  .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label {
-    user-select: none; }
-  .auto-complete__list-item, .auto-complete__label {
-    padding-left: 12px;
-    padding-right: 12px; }
-  .auto-complete__list-item {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    cursor: pointer;
-    outline: none;
-    color: #000000; }
-    .auto-complete__list-item:hover, .auto-complete__list-item:active {
-      background-color: #EAEAEA; }
-    .auto-complete__list-item .auto-complete__value {
-      font-weight: 600; }
-  .auto-complete__label {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    color: #7F7F7F;
-    background-color: #F5F5F5; }
-  .auto-complete__input {
-    width: 100%; }
-    .auto-complete--small .auto-complete__input {
-      padding-top: 6.5px;
-      padding-bottom: 6.5px; }
-  .auto-complete--reversed .auto-complete__dropdown {
-    bottom: 100%; }
-
-.brand__image {
-  width: 120px; }
-
-.block-icon__icon,
-.block-icon__image {
-  width: 100%; }
-
-.block-icon__icon {
-  height: 60px; }
-
-.block-icon__headline {
-  margin-top: 0; }
-
-.block-icon__content {
-  flex-basis: auto; }
-
-.block-icon {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  padding: 0 12px 49px 12px !important; }
-  .block-icon .block-icon__visual {
-    flex: 1 1 60px;
-    max-height: 60px;
-    margin: 0;
-    margin-bottom: 24px; }
-
-@media (min-width: 569px) {
-  .block-icon__items {
-    flex-flow: row wrap;
-    justify-content: space-around; }
-  .block-icon {
-    flex-direction: column;
-    align-items: center;
-    text-align: center; } }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .block-icon {
-    padding-bottom: 52px !important; } }
-
-@media (min-width: 768px) {
-  .block-icon__items {
-    flex-flow: row wrap; } }
-
-.block-icon__link {
-  margin-bottom: 0; }
-
-.card {
-  max-width: 600px;
-  margin-bottom: 12px; }
-  @media (max-width: 1024px) {
-    .card {
-      margin-bottom: 48px; } }
-  @media (min-width: 768px) {
-    .card {
-      margin-bottom: 24px; } }
-
-.card__visual {
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 569px) {
-    .card__visual {
-      margin: 0 auto 24px; } }
-
-.card__icon,
-.card__image {
-  width: 100%; }
-
-.card__icon {
-  height: 100%; }
-
-.card__content {
-  width: 100%; }
 
 .brand-card__image-wrapper {
   width: 120px;
@@ -3841,6 +3745,33 @@ table tfoot {
 .business-card__link {
   margin: 0; }
 
+.card {
+  max-width: 600px;
+  margin-bottom: 12px; }
+  @media (max-width: 1024px) {
+    .card {
+      margin-bottom: 48px; } }
+  @media (min-width: 768px) {
+    .card {
+      margin-bottom: 24px; } }
+
+.card__visual {
+  margin: 0 auto 18px;
+  overflow: hidden; }
+  @media (min-width: 569px) {
+    .card__visual {
+      margin: 0 auto 24px; } }
+
+.card__icon,
+.card__image {
+  width: 100%; }
+
+.card__icon {
+  height: 100%; }
+
+.card__content {
+  width: 100%; }
+
 .card-product {
   position: relative;
   background-color: #FFFFFF;
@@ -3919,6 +3850,12 @@ table tfoot {
   .color--selected .color__spec--show {
     opacity: 0; }
 
+.toggle {
+  color: #0CA9E3;
+  font-weight: 400; }
+  .toggle:hover {
+    color: #0CA9E3; }
+
 .content-block-container__image {
   width: 75%;
   background-color: transparent;
@@ -3932,18 +3869,12 @@ table tfoot {
 .content-block__content {
   width: 100%; }
 
-.toggle {
-  color: #0CA9E3;
-  font-weight: 400; }
-  .toggle:hover {
-    color: #0CA9E3; }
-
 .cta-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 0; }
-  @media (min-width: 569px) {
+  @media (min-width: 768px) {
     .cta-block {
       flex-direction: row;
       align-items: baseline;
@@ -3954,9 +3885,9 @@ table tfoot {
 
 .cta-block--hero {
   align-items: flex-start; }
-  @media (min-width: 569px) {
+  @media (min-width: 768px) {
     .cta-block--hero {
-      align-items: baseline; } }
+      align-items: center; } }
 
 .cta-link {
   text-align: center;
@@ -3964,14 +3895,16 @@ table tfoot {
   margin-bottom: 18px; }
   .cta-link:last-of-type {
     margin-bottom: 0; }
-  @media (min-width: 569px) {
+  @media (min-width: 768px) {
     .cta-link {
-      margin-bottom: 18px;
+      margin-bottom: 0;
       margin-right: 24px; }
       .cta-link:not(.button--primary) {
         margin-right: 24px; }
-      .cta-link.button--primary {
-        margin-right: 48px; }
+      .cta-link.button--primary + .cta-link {
+        margin-left: 24px; }
+      .cta-block--footer .cta-link:not(.button--primary) {
+        margin-bottom: 0; }
       .cta-block--footer .cta-link:last-child {
         margin-right: 0; } }
 
@@ -4059,6 +3992,90 @@ table tfoot {
     background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
   .icon-button--underline-large:hover .icon-button__label, .icon-button--underline-large:hover .sys-nav__label, .icon-button--underline-large:active .icon-button__label, .icon-button--underline-large:active .sys-nav__label, .icon-button--underline-large:visited .icon-button__label, .icon-button--underline-large:visited .sys-nav__label {
     background-size: 0 100%; }
+
+.block-icon__icon,
+.block-icon__image {
+  width: 100%; }
+
+.block-icon__icon {
+  height: 60px; }
+
+.block-icon__headline {
+  margin-top: 0; }
+
+.block-icon__content {
+  flex-basis: auto; }
+
+.block-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding: 0 12px 49px 12px !important; }
+  .block-icon .block-icon__visual {
+    flex: 1 1 60px;
+    max-height: 60px;
+    margin: 0;
+    margin-bottom: 24px; }
+
+@media (min-width: 569px) {
+  .block-icon__items {
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .block-icon {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .block-icon {
+    padding-bottom: 52px !important; } }
+
+@media (min-width: 768px) {
+  .block-icon__items {
+    flex-flow: row wrap; } }
+
+.block-icon__link {
+  margin-bottom: 0; }
+
+.auto-complete {
+  position: relative;
+  margin-bottom: 23px; }
+  .auto-complete * {
+    margin: 0; }
+  .auto-complete__dropdown {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+    width: 100%;
+    border: 1px solid #E3E3E3;
+    z-index: 1000; }
+  .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label {
+    user-select: none; }
+  .auto-complete__list-item, .auto-complete__label {
+    padding-left: 12px;
+    padding-right: 12px; }
+  .auto-complete__list-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    outline: none;
+    color: #000000; }
+    .auto-complete__list-item:hover, .auto-complete__list-item:active {
+      background-color: #EAEAEA; }
+    .auto-complete__list-item .auto-complete__value {
+      font-weight: 600; }
+  .auto-complete__label {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #7F7F7F;
+    background-color: #F5F5F5; }
+  .auto-complete__input {
+    width: 100%; }
+    .auto-complete--small .auto-complete__input {
+      padding-top: 6.5px;
+      padding-bottom: 6.5px; }
+  .auto-complete--reversed .auto-complete__dropdown {
+    bottom: 100%; }
 
 .product {
   display: flex;
@@ -4986,7 +5003,7 @@ svg text {
 
 .list-section--cards .list-section-list + .list-section__footer {
   margin-top: -12px;
-  margin-bottom: 60px; }
+  margin-bottom: 36px; }
   @media (min-width: 768px) {
     .list-section--cards .list-section-list + .list-section__footer {
       margin-bottom: 60px; } }
@@ -5252,34 +5269,6 @@ svg text {
     .selector-group {
       margin-left: auto; } }
 
-.brands2 {
-  padding-top: 48px; }
-  .brands2 .list-unordered-limit ul, .brands2 .list-unordered-limit .hero--text .content--rich ul, .hero--text .content--rich .brands2 .list-unordered-limit ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin-top: -12px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12px;
-    max-width: 804px; }
-  .brands2 .list-unordered-limit li {
-    padding-left: 0;
-    line-height: 0;
-    margin-top: 12px;
-    margin-right: 12px;
-    margin-bottom: 0; }
-  .brands2 .list-unordered-limit footer {
-    margin-top: 36px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .brands2 .list-unordered-limit footer {
-        margin-top: 48px; } }
-  .brands2 .footer-block {
-    margin-top: 60px; }
-
 .colors .colors__list {
   display: flex;
   flex-wrap: wrap;
@@ -5303,53 +5292,111 @@ svg text {
   .colors .colors__image--loading {
     opacity: 0; }
 
-@media (min-width: 569px) {
-  .content-highlight__container {
-    padding-bottom: 60px; } }
+.table-compare {
+  position: relative; }
 
-.content-highlight__image-wrapper {
-  display: flex;
-  width: 75%;
-  margin: 0 auto 30px auto; }
-  @media (min-width: 569px) {
-    .content-highlight__image-wrapper {
-      padding-right: 24px;
-      width: 100%; }
-      .flexgrid--row-reversed .content-highlight__image-wrapper {
-        padding-left: 24px;
-        padding-right: 0; } }
+.table-compare__scroll-container {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; }
 
-.content-highlight__content {
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 569px) {
-    .content-highlight__content {
-      justify-content: center;
-      align-items: flex-start;
-      padding-left: 24px; }
-      .flexgrid--row-reversed .content-highlight__content {
-        padding-right: 24px;
-        padding-left: 0; } }
+.table-compare__table {
+  border: initial;
+  border-collapse: collapse;
+  position: relative;
+  table-layout: fixed;
+  width: calc(var(--numberOfColumns, 1) * 100%); }
+  @media (min-width: 1025px) {
+    .table-compare__table {
+      width: 100%; } }
 
-.content-highlight-header .header-block__title,
-.content-highlight-header .header-block__subtitle {
+.table-compare__table col {
+  width: auto; }
+  @media (min-width: 1025px) {
+    .table-compare__table col {
+      width: 204px; } }
+  @media (min-width: 1440px) {
+    .table-compare__table col {
+      width: 228px; } }
+
+.table-compare__table col:first-of-type {
+  width: 0; }
+  @media (min-width: 1025px) {
+    .table-compare__table col:first-of-type {
+      width: auto; } }
+
+.table-compare__table th,
+.table-compare__table td {
+  padding: 0; }
+
+.table-compare__table thead th[scope="col"] {
+  border-bottom: 2px solid #E3E3E3;
+  padding: 0 24px 24px;
+  text-align: center;
+  width: initial; }
+
+.table-compare__table tbody th[scope="row"] {
+  border-top: 1px solid #E3E3E3;
+  left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: visible;
+  text-align: left; }
+  @media (min-width: 1025px) {
+    .table-compare__table tbody th[scope="row"] {
+      position: static; } }
+
+.table-compare__table tbody td {
+  border-top: 1px solid #E3E3E3;
+  color: #0CA9E3;
+  height: 48px;
+  padding: 0 6px;
+  scroll-snap-align: start end;
+  vertical-align: middle; }
+
+.table-compare__table tfoot th,
+.table-compare__table tfoot td {
+  border-top: 1px solid #E3E3E3;
+  padding: 18px;
   text-align: center; }
-  @media (min-width: 569px) {
-    .content-highlight-header .header-block__title,
-    .content-highlight-header .header-block__subtitle {
-      text-align: left; } }
 
-.content-highlight-footer.footer-block:not(:empty) {
-  padding-bottom: 0; }
+.table-compare__image {
+  display: block;
+  margin: 0 auto 24px;
+  height: 180px;
+  width: 180px; }
 
-.content-highlight__body {
-  margin-bottom: 60px;
-  text-align: center; }
-  .content-highlight__body > * {
-    margin: 0; }
-  @media (min-width: 569px) {
-    .content-highlight__body {
-      text-align: left; } }
+.table-compare__feature {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px);
+  display: inline-block;
+  padding-right: 12px;
+  position: relative; }
+
+.table-compare__checkmark {
+  display: block;
+  margin: 0 0 0 auto;
+  height: 24px;
+  width: 24px; }
+  @media (min-width: 1025px) {
+    .table-compare__checkmark {
+      margin: 0 auto; } }
+
+.table-compare__scroll-buttons {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.table-compare__scroll-button {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 90px; }
+  @media (min-width: 1025px) {
+    .table-compare__scroll-button {
+      display: none; } }
+  .table-compare__scroll-button--left {
+    left: 0; }
+  .table-compare__scroll-button--right {
+    right: 0; }
 
 /*
 * Because we have a primary and secondary font family, we need to define both
