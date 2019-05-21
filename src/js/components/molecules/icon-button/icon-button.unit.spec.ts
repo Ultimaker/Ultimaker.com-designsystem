@@ -13,13 +13,13 @@ describe('components', () => {
                         buttonClass: 'icon-button',
                         buttonAriaLabel: 'Search',
                         iconName: 'search',
+                        disabled: true,
                     },
                 });
-                const buttonAttributes = vm.$el.attributes;
 
-                expect(buttonAttributes['role'].value).toEqual('button');
-                expect(buttonAttributes['class'].value).toContain('icon-button');
-                expect(buttonAttributes['aria-label'].value).toEqual('Search');
+                expect(vm.$el.className).toContain('icon-button');
+                expect(vm.$el.getAttribute('aria-label')).toEqual('Search');
+                expect(vm.$el.hasAttribute('disabled')).toBe(true);
                 vm.$destroy();
             });
 
