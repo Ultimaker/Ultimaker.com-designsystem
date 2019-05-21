@@ -131,6 +131,10 @@
     }
 }
 
+.link--icon:focus {
+    fill: currentColor;
+}
+
 .link-list .list--icon {
     margin-bottom: 0;
 }
