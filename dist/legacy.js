@@ -5177,7 +5177,7 @@ var Tooltip = function (_Vue) {
         key: "classObject",
         value: function classObject() {
             var classes = {};
-            if (this.block !== '') {
+            if (this.block) {
                 classes[this.block + "__tooltip"] = true;
             }
             return classes;
@@ -5186,7 +5186,7 @@ var Tooltip = function (_Vue) {
 
     return Tooltip;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], Tooltip.prototype, "block", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], Tooltip.prototype, "block", void 0);
 Tooltip = __decorate([_tooltipVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'Tooltip'
 })], Tooltip);

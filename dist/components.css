@@ -249,20 +249,20 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .tooltip__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist {
   list-style: none; }
 
-.list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .tooltip__list-item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
+.list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
 .content-manageble ol li {
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .tooltip > :last-child, .tooltip__list > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .card > :last-child, .card__content > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .card > :last-child, .card__content > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child {
   margin-bottom: 0; }
 
 .hero--products .hero__link--large, .hero--products-application .hero__link--large, .examples .examples__link--large {
@@ -341,7 +341,6 @@ h6 a:focus:not(:hover),
 .link--small.overflow-container__link.exact-active a:focus:not(:hover),
 .price-table__tagline a:focus:not(:hover),
 .price-table__disclaimer a:focus:not(:hover),
-.tooltip__list-item.tooltip__label a:focus:not(:hover),
 .tag a:focus:not(:hover),
 .tablist__section .tablist a:focus:not(:hover),
 .examples .examples__tabs .tablist a:focus:not(:hover),
@@ -363,7 +362,6 @@ h6 a:focus:not(:active),
 .link--small.overflow-container__link.exact-active a:focus:not(:active),
 .price-table__tagline a:focus:not(:active),
 .price-table__disclaimer a:focus:not(:active),
-.tooltip__list-item.tooltip__label a:focus:not(:active),
 .tag a:focus:not(:active),
 .tablist__section .tablist a:focus:not(:active),
 .examples .examples__tabs .tablist a:focus:not(:active),
@@ -929,7 +927,7 @@ q {
 
 small,
 h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.toggle, .toggle.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
-.price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
+.price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
@@ -938,7 +936,7 @@ h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal
   @media (min-width: 768px) {
     small,
     h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal__link, .link--small.footer-nav__link, .footer-nav__link.legal__link, .link--small.toggle, .toggle.legal__link, .link--small.overflow-container__link:hover, .overflow-container__link.legal__link:hover, .link--small.overflow-container__link.exact-active, .overflow-container__link.exact-active.legal__link, .price-table__tagline,
-    .price-table__disclaimer, .tooltip__list-item.tooltip__label, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
+    .price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -1183,7 +1181,6 @@ a {
   .overflow-container__link.exact-active.legal__link a,
   .price-table__tagline a,
   .price-table__disclaimer a,
-  .tooltip__list-item.tooltip__label a,
   .tag a,
   .tablist__section .tablist a,
   .examples .examples__tabs .tablist a,
@@ -1763,7 +1760,7 @@ table th {
 
 table td small,
 table td h6, table td .caption-list__headline, table td .caption-list__list-item, table td .link.link--small, table td .legal__link, table td .link--small.footer-nav__link, table td .footer-nav__link.legal__link, table td .link--small.toggle, table td .toggle.legal__link, table td .link--small.overflow-container__link:hover, table td .overflow-container__link.legal__link:hover, table td .link--small.overflow-container__link.exact-active, table td .overflow-container__link.exact-active.legal__link, table td .price-table__tagline,
-table td .price-table__disclaimer, table td .tooltip__list-item.tooltip__label, table td .tag, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .auto-complete__label, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label, table td .settings-selector__label,
+table td .price-table__disclaimer, table td .tag, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .auto-complete__label, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label, table td .settings-selector__label,
 table th small,
 table th h6,
 table th .caption-list__headline,
@@ -1780,7 +1777,6 @@ table th .link--small.overflow-container__link.exact-active,
 table th .overflow-container__link.exact-active.legal__link,
 table th .price-table__tagline,
 table th .price-table__disclaimer,
-table th .tooltip__list-item.tooltip__label,
 table th .tag,
 table th .tablist__section .tablist,
 .tablist__section table th .tablist,
@@ -2773,41 +2769,26 @@ table tfoot {
   justify-content: flex-end; }
 
 .tooltip {
-  position: absolute;
-  background: #000000;
+  background-color: #000000;
   color: #FFFFFF;
-  padding: 12px;
+  font-weight: 400;
+  min-height: 36px;
   min-width: 96px;
   max-width: 150px;
-  min-height: 36px;
-  font-weight: 400;
+  padding: 12px;
+  position: absolute;
   z-index: 200; }
   .tooltip:after {
+    border: 12px solid transparent;
+    border-top-color: #000000;
+    bottom: -24px;
     content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-top: 12px solid #000000;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid transparent;
     left: calc(50% - 12px);
-    bottom: -24px; }
-
-.tooltip__list-item.tooltip__label {
-  display: block;
-  margin-bottom: 0; }
-
-.tooltip__list {
-  margin-top: 0;
-  margin-left: 0;
-  padding-left: 0; }
-
-.tooltip__list-item {
-  width: 120px;
-  margin: 0 0 12px 0;
-  padding-left: 0; }
+    position: absolute;
+    height: 0;
+    width: 0; }
+  .tooltip > :last-child {
+    margin-bottom: 0; }
 
 .hit-area {
   display: block; }

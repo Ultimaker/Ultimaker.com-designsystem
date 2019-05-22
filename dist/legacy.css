@@ -249,19 +249,19 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tooltip__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tooltip__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist {
   list-style: none; }
 
-.um-components .list__item, .um-components .hero--text .content--rich ul li, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .footer-nav__item, .um-components .tooltip__list-item, .um-components .legal__item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
+.um-components .list__item, .um-components .hero--text .content--rich ul li, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .footer-nav__item, .um-components .legal__item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child {
+.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child {
   margin-bottom: 0; }
 
 .um-components .hero--products .hero__link--large, .um-components .hero--products-application .hero__link--large, .um-components .examples .examples__link--large {
@@ -351,7 +351,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #FFFFFF;
   background-color: #24bcf3; }
 
-.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components h6 a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .legal__link a:focus:not(:hover), .um-components .link--small.footer-nav__link a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tooltip__list-item.tooltip__label a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components h6 a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .legal__link a:focus:not(:active), .um-components .link--small.footer-nav__link a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tooltip__list-item.tooltip__label a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .legal__link:focus:not(:hover), .um-components .footer-nav__link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .legal__link:focus:not(:active), .um-components .footer-nav__link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .search__input:focus, .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
+.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components h6 a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .legal__link a:focus:not(:hover), .um-components .link--small.footer-nav__link a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components h6 a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .legal__link a:focus:not(:active), .um-components .link--small.footer-nav__link a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .legal__link:focus:not(:hover), .um-components .footer-nav__link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .legal__link:focus:not(:active), .um-components .footer-nav__link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .search__input:focus, .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
   outline: 2px solid #24bcf3; }
 
 .um-components h4,
@@ -473,7 +473,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .overflow-container__link.exact-active.legal__link,
 .um-components .price-table__tagline,
 .um-components .price-table__disclaimer,
-.um-components .tooltip__list-item.tooltip__label,
 .um-components .tag,
 .um-components .tablist__section .tablist,
 .um-components .examples .examples__tabs .tablist,
@@ -505,7 +504,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .overflow-container__link.exact-active.legal__link,
     .um-components .price-table__tagline,
     .um-components .price-table__disclaimer,
-    .um-components .tooltip__list-item.tooltip__label,
     .um-components .tag,
     .um-components .tablist__section .tablist,
     .um-components .examples .examples__tabs .tablist,
@@ -756,7 +754,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
   .um-components a:hover {
     color: #4bc8f5; }
-  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components .examples .examples__tabs .tablist__item a, .um-components small a, .um-components h6 a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .legal__link a, .um-components .link--small.footer-nav__link a, .um-components .footer-nav__link.legal__link a, .um-components .link--small.toggle a, .um-components .toggle.legal__link a, .um-components .link--small.overflow-container__link:hover a, .um-components .overflow-container__link.legal__link:hover a, .um-components .link--small.overflow-container__link.exact-active a, .um-components .overflow-container__link.exact-active.legal__link a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tooltip__list-item.tooltip__label a, .um-components .tag a, .um-components .tablist__section .tablist a, .um-components .examples .examples__tabs .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .examples .examples__tabs .tablist__headline a, .um-components .auto-complete__label a, .um-components .hero--products-application .usp--icon .usp__label a, .um-components .overflow-container__label a, .um-components .settings-selector__label a, .um-components .content--rich li a {
+  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components .examples .examples__tabs .tablist__item a, .um-components small a, .um-components h6 a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .legal__link a, .um-components .link--small.footer-nav__link a, .um-components .footer-nav__link.legal__link a, .um-components .link--small.toggle a, .um-components .toggle.legal__link a, .um-components .link--small.overflow-container__link:hover a, .um-components .overflow-container__link.legal__link:hover a, .um-components .link--small.overflow-container__link.exact-active a, .um-components .overflow-container__link.exact-active.legal__link a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tag a, .um-components .tablist__section .tablist a, .um-components .examples .examples__tabs .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .examples .examples__tabs .tablist__headline a, .um-components .auto-complete__label a, .um-components .hero--products-application .usp--icon .usp__label a, .um-components .overflow-container__label a, .um-components .settings-selector__label a, .um-components .content--rich li a {
     font-weight: 400; }
 
 .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
@@ -1283,7 +1281,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components table td .overflow-container__link.exact-active.legal__link,
 .um-components table td .price-table__tagline,
 .um-components table td .price-table__disclaimer,
-.um-components table td .tooltip__list-item.tooltip__label,
 .um-components table td .tag,
 .um-components table td .tablist__section .tablist,
 .um-components .tablist__section table td .tablist,
@@ -1314,7 +1311,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components table th .overflow-container__link.exact-active.legal__link,
 .um-components table th .price-table__tagline,
 .um-components table th .price-table__disclaimer,
-.um-components table th .tooltip__list-item.tooltip__label,
 .um-components table th .tag,
 .um-components table th .tablist__section .tablist,
 .um-components .tablist__section table th .tablist,
@@ -2307,41 +2303,26 @@ because both families serve another purpose. Therefore the line-heights will be 
   justify-content: flex-end; }
 
 .um-components .tooltip {
-  position: absolute;
-  background: #000000;
+  background-color: #000000;
   color: #FFFFFF;
-  padding: 12px;
+  font-weight: 400;
+  min-height: 36px;
   min-width: 96px;
   max-width: 150px;
-  min-height: 36px;
-  font-weight: 400;
+  padding: 12px;
+  position: absolute;
   z-index: 200; }
   .um-components .tooltip:after {
+    border: 12px solid transparent;
+    border-top-color: #000000;
+    bottom: -24px;
     content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-top: 12px solid #000000;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid transparent;
     left: calc(50% - 12px);
-    bottom: -24px; }
-
-.um-components .tooltip__list-item.tooltip__label {
-  display: block;
-  margin-bottom: 0; }
-
-.um-components .tooltip__list {
-  margin-top: 0;
-  margin-left: 0;
-  padding-left: 0; }
-
-.um-components .tooltip__list-item {
-  width: 120px;
-  margin: 0 0 12px 0;
-  padding-left: 0; }
+    position: absolute;
+    height: 0;
+    width: 0; }
+  .um-components .tooltip > :last-child {
+    margin-bottom: 0; }
 
 .um-components .hit-area {
   display: block; }
