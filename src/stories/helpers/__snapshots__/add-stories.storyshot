@@ -2112,7 +2112,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       type="Image"
                     />
                     
-                            Ultimaker 2+
+                            Product title 1
                         
                   </th>
                   <th
@@ -2126,7 +2126,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       type="Image"
                     />
                     
-                            Ultimaker 3
+                            Product title 2
                         
                   </th>
                   <th
@@ -2140,7 +2140,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       type="Image"
                     />
                     
-                            Ultimaker S5
+                            Product title 3
                         
                   </th>
                 </tr>
@@ -2181,22 +2181,28 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                    
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      unsupported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      supported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      supported
+                    </span>
                      
                     <!---->
                   </td>
@@ -2235,22 +2241,28 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                    
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      supported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      supported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      supported
+                    </span>
                      
                     <!---->
                   </td>
@@ -2289,22 +2301,28 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                    
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      supported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      supported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      unsupported
+                    </span>
                      
                     <!---->
                   </td>
@@ -2343,22 +2361,28 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                    
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      unsupported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      unsupported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      supported
+                    </span>
                      
                     <!---->
                   </td>
@@ -2397,22 +2421,28 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                    
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      unsupported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      unsupported
+                    </span>
                      
                     <!---->
                   </td>
                   <td>
                     <span
-                      class="visually-hidden"
-                    />
+                      class="table-compare__cell"
+                    >
+                      supported
+                    </span>
                      
                     <!---->
                   </td>
