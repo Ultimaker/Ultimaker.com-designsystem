@@ -62,17 +62,17 @@ module.exports = function(config) {
             ],
             check: {
                 global: {
-                    statements: 70,
+                    statements: 65,
                     branches: 50,
-                    functions: 70,
-                    lines: 70
+                    functions: 65,
+                    lines: 65
                 }
             },
             watermarks: {
-                statements: [70, 80],
-                functions: [70, 80],
+                statements: [65, 80],
+                functions: [65, 80],
                 branches: [50, 75],
-                lines: [70, 80]
+                lines: [65, 80]
             }
         }
     });
