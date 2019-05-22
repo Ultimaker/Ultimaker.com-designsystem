@@ -12,6 +12,8 @@ export default class IconButton extends Vue  {
     buttonAriaLabel!: string;
     @Prop({ type: String })
     iconName!: string;
+    @Prop({ type: Boolean, default: false })
+    disabled!: boolean;
 
     $el!:HTMLElement;
 
