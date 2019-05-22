@@ -13,17 +13,17 @@ export const data = {
         content: {
             columns: [
                 {
-                    title: 'Ultimaker 2+',
+                    title: 'Product title 1',
                     image: imageData.default,
                     cta: columnCta,
                 },
                 {
-                    title: 'Ultimaker 3',
+                    title: 'Product title 2',
                     image: imageData.default,
                     cta: columnCta,
                 },
                 {
-                    title: 'Ultimaker S5',
+                    title: 'Product title 3',
                     image: imageData.default,
                     cta: columnCta,
                 },
@@ -39,15 +39,15 @@ export const data = {
                     cells: [
                         {
                             checked: false,
-                            label: '',
+                            label: 'unsupported',
                         },
                         {
                             checked: true,
-                            label: '',
+                            label: 'supported',
                         },
                         {
                             checked: true,
-                            label: '',
+                            label: 'supported',
                         },
                     ],
                 },
@@ -61,15 +61,15 @@ export const data = {
                     cells: [
                         {
                             checked: true,
-                            label: '',
+                            label: 'supported',
                         },
                         {
                             checked: true,
-                            label: '',
+                            label: 'supported',
                         },
                         {
                             checked: true,
-                            label: '',
+                            label: 'supported',
                         },
                     ],
                 },
@@ -83,15 +83,15 @@ export const data = {
                     cells: [
                         {
                             checked: true,
-                            label: '',
+                            label: 'supported',
                         },
                         {
                             checked: true,
-                            label: '',
+                            label: 'supported',
                         },
                         {
                             checked: false,
-                            label: '',
+                            label: 'unsupported',
                         },
                     ],
                 },
@@ -105,15 +105,15 @@ export const data = {
                     cells: [
                         {
                             checked: false,
-                            label: '',
+                            label: 'unsupported',
                         },
                         {
                             checked: false,
-                            label: '',
+                            label: 'unsupported',
                         },
                         {
                             checked: true,
-                            label: '',
+                            label: 'supported',
                         },
                     ],
                 },
@@ -127,15 +127,15 @@ export const data = {
                     cells: [
                         {
                             checked: false,
-                            label: '',
+                            label: 'unsupported',
                         },
                         {
                             checked: false,
-                            label: '',
+                            label: 'unsupported',
                         },
                         {
                             checked: true,
-                            label: '',
+                            label: 'supported',
                         },
                     ],
                 },
