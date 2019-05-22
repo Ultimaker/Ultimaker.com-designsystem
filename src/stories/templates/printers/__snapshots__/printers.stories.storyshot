@@ -2745,7 +2745,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     aria-label=""
                     class="icon-button explore__nav"
                     role="button"
-                    tabindex="0"
                   >
                     <!---->
                      
@@ -2764,7 +2763,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     aria-label=""
                     class="icon-button explore__nav icon-button--reversed"
                     role="button"
-                    tabindex="0"
                   >
                     <!---->
                      
@@ -2951,7 +2949,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     aria-label=""
                     class="icon-button case__link icon-button--underline-large"
                     role="button"
-                    tabindex="0"
                   >
                     <!---->
                      
@@ -3044,7 +3041,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     aria-label=""
                     class="icon-button case__link icon-button--underline-large"
                     role="button"
-                    tabindex="0"
                   >
                     <!---->
                      
@@ -3410,7 +3406,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 aria-label="Change your country, currently: Netherlands"
                 class="icon-button icon-button--small locale-selector__edit--buton"
                 role="button"
-                tabindex="0"
               >
                 <!---->
                  
@@ -3428,7 +3423,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
                 class="icon-button icon-button--small locale-selector__edit--buton"
                 role="button"
                 style="display: none;"
-                tabindex="0"
               >
                 <!---->
                  
