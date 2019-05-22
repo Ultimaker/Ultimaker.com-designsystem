@@ -3,7 +3,7 @@
         <header-block :title="title" :subtitle="subtitle" />
         <div class="table-compare" ref="scrollWidthContainer">
             <div class="table-compare__scroll-container" ref="scrollContainer">
-                <table v-if="content" class="table-compare__table" :style="`--numberOfColumns: ${content.columns.length}`">
+                <table v-if="content" class="table-compare__table" :style="`--numberOfColumns: ${content.columns.length};`">
                     <colgroup>
                         <col>
                         <col v-for="col in content.columns">
@@ -45,9 +45,9 @@
                     </tfoot>
                 </table>
             </div>
-            <div class="table-compare__scroll-buttons">
-                <icon-button icon-name="angle-left" class="table-compare__scroll-button table-compare__scroll-button--left" @click="scroll(true)" :aria-disabled="disableLeft" />
-                <icon-button icon-name="angle-right" class="table-compare__scroll-button table-compare__scroll-button--right" @click="scroll(false)" :aria-disabled="disableRight" />
+            <div class="table-compare__scroll-buttons" v-if="content.columns.length > 1">
+                <icon-button icon-name="angle-left" class="table-compare__scroll-button table-compare__scroll-button--left" @click="scroll(true)" :disabled="disableLeft" />
+                <icon-button icon-name="angle-right" class="table-compare__scroll-button table-compare__scroll-button--right" @click="scroll(false)" :disabled="disableRight" />
             </div>
         </div>
 
