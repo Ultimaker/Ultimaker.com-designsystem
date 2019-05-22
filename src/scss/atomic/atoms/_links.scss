@@ -29,10 +29,11 @@
 .link--large {
     display: inline-block;
     @extend %fontSecondary;
-    @include font-ratio-rhythm(sec-xs);
+
+    @include font-line-ratio(sec-xs);
 
     @include min-tablet() {
-        @include font-ratio-rhythm(sec-s);
+        @include font-line-ratio(sec-s);
     }
 }
 

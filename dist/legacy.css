@@ -947,15 +947,11 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .link--large {
   display: inline-block;
   font-size: 18px;
-  line-height: 24px;
-  margin-top: 6px;
-  margin-bottom: 24px; }
+  line-height: 24px; }
   @media (min-width: 768px) {
     .um-components .link--large {
       font-size: 20px;
-      line-height: 24px;
-      margin-top: 5px;
-      margin-bottom: 31px; } }
+      line-height: 24px; } }
 
 .um-components .link .link__underline, .um-components .legal__link .link__underline, .um-components .footer-nav__link .link__underline, .um-components .toggle .link__underline, .um-components .overflow-container__link:hover .link__underline, .um-components .overflow-container__link.exact-active .link__underline, .um-components .link--large .link__underline {
   width: calc(100% - 0.1px);
@@ -3404,7 +3400,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   flex-direction: column;
   align-items: center;
   margin-bottom: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .cta-block {
       flex-direction: row;
       align-items: baseline;
@@ -3415,9 +3411,9 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .cta-block--hero {
   align-items: flex-start; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .cta-block--hero {
-      align-items: center; } }
+      align-items: baseline; } }
 
 .um-components .cta-link {
   text-align: center;
@@ -3425,16 +3421,14 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-bottom: 18px; }
   .um-components .cta-link:last-of-type {
     margin-bottom: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .cta-link {
-      margin-bottom: 0;
+      margin-bottom: 18px;
       margin-right: 24px; }
       .um-components .cta-link:not(.button--primary) {
         margin-right: 24px; }
-      .um-components .cta-link.button--primary + .cta-link {
-        margin-left: 24px; }
-      .um-components .cta-block--footer .cta-link:not(.button--primary) {
-        margin-bottom: 0; }
+      .um-components .cta-link.button--primary {
+        margin-right: 48px; }
       .um-components .cta-block--footer .cta-link:last-child {
         margin-right: 0; } }
 
@@ -4519,7 +4513,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
 .um-components .list-section--cards .list-section-list + .list-section__footer {
   margin-top: -12px;
-  margin-bottom: 36px; }
+  margin-bottom: 60px; }
   @media (min-width: 768px) {
     .um-components .list-section--cards .list-section-list + .list-section__footer {
       margin-bottom: 60px; } }
@@ -4807,11 +4801,15 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   .um-components .colors .colors__image--loading {
     opacity: 0; }
 
+@media (min-width: 569px) {
+  .um-components .content-highlight__container {
+    padding-bottom: 60px; } }
+
 .um-components .content-highlight__image-wrapper {
   display: flex;
   width: 75%;
   margin: 0 auto 30px auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .content-highlight__image-wrapper {
       padding-right: 24px;
       width: 100%; }
@@ -4822,7 +4820,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 .um-components .content-highlight__content {
   display: flex;
   flex-direction: column; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .content-highlight__content {
       justify-content: center;
       align-items: flex-start;
@@ -4834,17 +4832,20 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 .um-components .content-highlight-header .header-block__title,
 .um-components .content-highlight-header .header-block__subtitle {
   text-align: center; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .content-highlight-header .header-block__title,
     .um-components .content-highlight-header .header-block__subtitle {
       text-align: left; } }
+
+.um-components .content-highlight-footer.footer-block:not(:empty) {
+  padding-bottom: 0; }
 
 .um-components .content-highlight__body {
   margin-bottom: 60px;
   text-align: center; }
   .um-components .content-highlight__body > * {
     margin: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .content-highlight__body {
       text-align: left; } }
 
