@@ -5,21 +5,19 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/em.data';
 import knobsFormat from './em.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                text: {
-                    default: knobs.text,
-                },
+    return {
+        props: {
+            text: {
+                default: knobs.text,
             },
-            template: '<p>Get out of bed <em>{{ text }}</em>!</p>',
-        };
+        },
+        template: '<p>Get out of bed <em>{{ text }}</em>!</p>',
     };
 };
 

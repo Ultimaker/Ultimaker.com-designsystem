@@ -16,11 +16,11 @@ export default class ActionButton extends Vue {
         const classes = {};
 
         if (this.block !== '' && typeof this.block === 'string') {
-            classes[`${ this.block }__link`] = true;
+            classes[`${this.block}__link`] = true;
         }
         if (this.mod !== '' && typeof this.mod === 'string') {
             this.mod.split(' ').forEach((mod) => {
-                classes[`link--${ mod }`] = true;
+                classes[`link--${mod}`] = true;
             });
         }
         if (this.icon !== '' && this.mod && this.mod.indexOf('small') === -1) {

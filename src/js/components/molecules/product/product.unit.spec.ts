@@ -8,7 +8,6 @@ import data from './data/product.data';
 describe('components', () => {
     describe('molecules', () => {
         describe('product', () => {
-
             const mount = build(Product, { props: {} });
 
             it('should render an Product component', () => {
@@ -19,7 +18,6 @@ describe('components', () => {
         });
 
         describe('product default props', () => {
-
             const defaultProps = data('default');
             const mount = build(Product, { props: defaultProps });
 
@@ -30,12 +28,11 @@ describe('components', () => {
                 const nameElement = vm.$el.querySelector('.product__name');
                 expect(nameElement.innerText.trim()).toBe(defaultProps.name);
 
-                const pricingELement =  vm.$el.querySelector('.product__pricing');
+                const pricingELement = vm.$el.querySelector('.product__pricing');
                 expect(pricingELement.innerText.trim()).toBe(defaultProps.pricing.label);
 
                 vm.$destroy();
             });
-
         });
     });
 });

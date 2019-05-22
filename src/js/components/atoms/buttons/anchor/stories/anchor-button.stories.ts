@@ -4,24 +4,22 @@ import addStories from 'src/stories/helpers/add-stories';
 import getKnobs from 'src/stories/helpers/get-knobs';
 import knobsFormat from 'components/atoms/buttons/button/stories/button.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                className: {
-                    default: knobs.className,
-                },
-                text: {
-                    default: knobs.text,
-                },
+    return {
+        props: {
+            className: {
+                default: knobs.className,
             },
-            template: require('./anchor-button.html'),
-        };
+            text: {
+                default: knobs.text,
+            },
+        },
+        template: require('./anchor-button.html'),
     };
 };
 

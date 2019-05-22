@@ -5,23 +5,21 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import knobsFormat from './business-card.knobs-format';
 import { data } from '../data/business-card.data';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                type: { default: knobs.type },
-                title: { default: knobs.title },
-                image: { default: knobs.image },
-                contentLink: { default: knobs.contentLink },
-                properties: { default: knobs.properties },
-            },
-            template: require('./business-card.html'),
-        };
+    return {
+        props: {
+            type: { default: knobs.type },
+            title: { default: knobs.title },
+            image: { default: knobs.image },
+            contentLink: { default: knobs.contentLink },
+            properties: { default: knobs.properties },
+        },
+        template: require('./business-card.html'),
     };
 };
 

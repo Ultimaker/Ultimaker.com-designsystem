@@ -8,8 +8,8 @@ import WithRender from './hero-cover.vue.html';
 })
 
 export default class HeroCover extends Vue implements IHeroCover {
-    @Prop({ type: String, required: true }) title!:  IHeroCover['title'];
-    @Prop({ type: String, required: true }) description!:  IHeroCover['description'];
+    @Prop({ type: String, required: true }) title!: IHeroCover['title'];
+    @Prop({ type: String, required: true }) description!: IHeroCover['description'];
     @Prop({ type: Object }) ctas?: IHeroCover['ctas'] | undefined;
     @Prop({ type: Object }) image?: IHeroCover['image'] | undefined;
 

@@ -1,7 +1,7 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 
 import BrowserCapabilities from 'utils/browser-capabilities';
-import viewportUtil from 'utils/viewport';
+import ViewportUtil from 'utils/viewport';
 import { TweenLite, Power3, Power2 } from 'gsap';
 import Defaults from 'constants/defaults';
 
@@ -19,7 +19,7 @@ export default class Tabs extends Vue {
     @Prop({ type: Boolean, required: true }) sequenced!: boolean;
 
     private activeTab: number = 0;
-    private viewportUtil = new viewportUtil();
+    private viewportUtil = new ViewportUtil();
 
     private correction: number = 0;
 
@@ -56,7 +56,7 @@ export default class Tabs extends Vue {
     }
 
     scrollCorrection() {
-        const tabList = this.$refs.tabList;
+        const { tabList } = this.$refs;
 
         const tabs = this.$refs.tab;
         this.correction = tabList.scrollLeft;

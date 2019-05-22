@@ -16,7 +16,6 @@ export default class BusinessCard extends Vue implements IBusinessCard {
     @Prop({ type: Object, required: false }) clickEvent?: IBusinessCard['clickEvent'];
 
     mapImage(image) {
-
         const img = {
             mobileWidth: image.mobileUrl,
             desktopWidth: image.desktopUrl,

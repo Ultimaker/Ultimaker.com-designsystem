@@ -1,5 +1,5 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
-import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
+import { NavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 import WithRender from './flyout-section.vue.html';
 
 @WithRender
@@ -7,7 +7,7 @@ import WithRender from './flyout-section.vue.html';
     name: 'flyout-section',
 })
 
-export default class Flyout extends Vue  {
+export default class Flyout extends Vue {
     @Prop({ type: String, required: true }) label!: string;
     @Prop({ type: Array, required: false }) items?: NavigationItem[];
 
@@ -16,14 +16,14 @@ export default class Flyout extends Vue  {
     @Prop({ type: Number, required: false, default: 3 }) maxVisible?: number;
     @Prop({ type: Number, required: false, default: 6 }) maxItemsCol?: number;
 
-    @Prop({ type: String, required: false, default: () => `flyout_title_${ ~~(Math.random() * 10000) }` }) itemId?: string;
+    @Prop({ type: String, required: false, default: () => `flyout_title_${Math.floor((Math.random() * 10000))}` }) itemId?: string;
 
     $refs!: {
         firstFocusableLinks: HTMLElement|HTMLElement[];
         focusable: HTMLElement|HTMLElement[];
         bottomLink: HTMLElement;
     };
-    isExpanded: boolean =  false;
+    isExpanded: boolean = false;
     focusIndex: null | number = null;
     columnClassDouble: string = 'flyout__section--2-columns';
     columnClassTriple: string = 'flyout__section--3-columns';
@@ -78,7 +78,7 @@ export default class Flyout extends Vue  {
         return '';
     }
 
-    get flyoutToggleIsVisible()  {
+    get flyoutToggleIsVisible() {
         if (!this.items || !this.maxVisible) return false;
         return this.isCompact && this.items.length > this.maxVisible;
     }

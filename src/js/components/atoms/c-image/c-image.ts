@@ -68,7 +68,7 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
         this.imageLoaded = false;
         this.width = 0;
         this.height = 0;
-        this.$nextTick(() => this.ready = true);
+        this.$nextTick(() => { this.ready = true; });
 
         if (this.inView) {
             await this.inViewWatcher(true);
@@ -91,14 +91,14 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
 
     get srcset() {
         if (!this.ready) {
-            return `${ imageConstants.tinyGif } 1w`;
+            return `${imageConstants.tinyGif} 1w`;
         }
 
-        return `${ this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl } ${ this.width || imageConstants.initialSize }w`;
+        return `${this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl} ${this.width || imageConstants.initialSize}w`;
     }
 
     get imageUrl() {
-        return `${ this.url }${ this.getParams({}) }`;
+        return `${this.url}${this.getParams({})}`;
     }
 
     get thumbUrl() {
@@ -107,10 +107,10 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
             const height = Math.round(this.height / cropFactor);
             const width = Math.round(this.width / cropFactor);
 
-            return `${ this.url }${ this.getParams({ width, height  }) }`;
+            return `${this.url}${this.getParams({ width, height })}`;
         }
 
-        return `${ this.url }${ this.getParams({ width: imageConstants.initialSize }) }`;
+        return `${this.url}${this.getParams({ width: imageConstants.initialSize })}`;
     }
 
     getParams(options?: {width?: number, height?: number}) {
@@ -153,7 +153,7 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
 
                 if (!value) return accumulator;
 
-                return `${ accumulator }${ accumulator === '' ? '?' : '&'}${ current }=${ value }`;
+                return `${accumulator}${accumulator === '' ? '?' : '&'}${current}=${value}`;
             },
             '',
         );
@@ -183,7 +183,7 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
 
     @Watch('inView')
     async inViewWatcher(val:boolean) {
-        if (! val || this.imageLoaded) { return; }
+        if (!val || this.imageLoaded) { return; }
 
         await this.calculateDimensions();
 

@@ -6,6 +6,6 @@ import WithRender from './template.vue.html';
     name: 'LiInline',
 })
 
-export default class LiInline  extends Vue {
+export default class LiInline extends Vue {
     @Prop({ type: [String, Object], required: true }) item!: string | { item: string, type: string };
 }

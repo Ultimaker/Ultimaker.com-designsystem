@@ -20,17 +20,15 @@ export default class CardProduct extends Vue implements ICardProduct {
 
         if (this.properties) {
             properties = this.properties.map(
-                (property) => {
-                    return {
+                property => ({
+                    item: {
                         item: {
-                            item: {
-                                item: property,
-                            },
-                            type: 'SpanLabel',
+                            item: property,
                         },
-                        type: 'LiInline',
-                    };
-                },
+                        type: 'SpanLabel',
+                    },
+                    type: 'LiInline',
+                }),
             );
         }
 

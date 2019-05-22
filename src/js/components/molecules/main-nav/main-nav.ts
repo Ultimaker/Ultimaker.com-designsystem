@@ -2,7 +2,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import ViewportUtility from 'utils/viewport';
 
-import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
+import { NavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import WithRender from './main-nav.vue.html';
 
@@ -11,12 +11,12 @@ import WithRender from './main-nav.vue.html';
     name: 'main-nav',
 })
 
-export default class MainNav extends Vue  {
+export default class MainNav extends Vue {
     @Prop({ type: Array, required: false }) items?: NavigationItem[];
     @Prop({ type: Boolean, required: false }) mainNavOpen?: boolean;
 
     viewportUtil: any = new ViewportUtility();
-    showCompactMenu: any  = true;
+    showCompactMenu: any = true;
 
     get classList() {
         return {

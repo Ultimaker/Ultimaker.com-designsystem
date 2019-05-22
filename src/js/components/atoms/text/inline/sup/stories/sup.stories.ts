@@ -5,21 +5,19 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/sup.data';
 import knobsFormat from './sup.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                text: {
-                    default: knobs.text,
-                },
+    return {
+        props: {
+            text: {
+                default: knobs.text,
             },
-            template: '<p>The <b>Pythagorean theorem</b> is often expressed as the following equation: <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>{{ text }}</sup></var></p>',
-        };
+        },
+        template: '<p>The <b>Pythagorean theorem</b> is often expressed as the following equation: <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>{{ text }}</sup></var></p>',
     };
 };
 

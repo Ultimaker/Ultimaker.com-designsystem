@@ -5,7 +5,7 @@ import WithRender from './icon-button.vue.html';
 @Component({
     name: 'icon-button',
 })
-export default class IconButton extends Vue  {
+export default class IconButton extends Vue {
     @Prop({ type: String })
     buttonClass!: string;
     @Prop({ type: String, default: '' })

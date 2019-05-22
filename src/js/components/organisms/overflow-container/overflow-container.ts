@@ -19,7 +19,7 @@ export default class OverflowContainer extends Vue {
     isTouch: boolean = false;
 
     mounted() {
-        const subnav  = this.$refs.subNav;
+        const subnav = this.$refs.subNav;
         this.isTouch = BrowserCapabilities.supportsTouch;
 
         if (subnav) {

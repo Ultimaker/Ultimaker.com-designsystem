@@ -17,8 +17,8 @@ describe('components', () => {
                 });
                 const buttonAttributes = vm.$el.attributes;
 
-                expect(buttonAttributes['role'].value).toEqual('button');
-                expect(buttonAttributes['class'].value).toContain('icon-button');
+                expect(buttonAttributes.role.value).toEqual('button');
+                expect(buttonAttributes.class.value).toContain('icon-button');
                 expect(buttonAttributes['aria-label'].value).toEqual('Search');
                 vm.$destroy();
             });

@@ -29,7 +29,7 @@ describe('components', () => {
                 const iconUrl = '/custom/iconset.svg';
 
                 beforeEach(() => {
-                    window['svgIconMap'] = iconUrl;
+                    window.svgIconMap = iconUrl;
                 });
 
                 it('should render with a customized iconset', (done) => {

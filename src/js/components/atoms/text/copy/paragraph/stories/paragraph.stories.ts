@@ -5,24 +5,22 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/paragraph.data';
 import knobsFormat from './paragraph.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                className: {
-                    default: knobs.className,
-                },
-                text: {
-                    default: knobs.text,
-                },
+    return {
+        props: {
+            className: {
+                default: knobs.className,
             },
-            template: '<p :class="className">{{ text }}</p>',
-        };
+            text: {
+                default: knobs.text,
+            },
+        },
+        template: '<p :class="className">{{ text }}</p>',
     };
 };
 

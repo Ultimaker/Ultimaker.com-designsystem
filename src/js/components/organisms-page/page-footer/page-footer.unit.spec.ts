@@ -14,7 +14,7 @@ describe('components', () => {
                 const objAttributes = vm.$el.attributes;
 
                 expect(vm.$el).toBeDefined();
-                expect(objAttributes['class'].value).toContain('footer');
+                expect(objAttributes.class.value).toContain('footer');
                 vm.$destroy();
             });
         });

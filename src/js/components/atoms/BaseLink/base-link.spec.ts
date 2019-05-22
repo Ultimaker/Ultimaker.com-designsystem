@@ -45,7 +45,7 @@ describe('components', () => {
                     },
                 });
 
-                const classList = vm.$el.classList;
+                const { classList } = vm.$el;
                 const classListString = Array(classList).join();
 
                 expect(classListString.includes('narwal')).toBeTruthy();
@@ -62,7 +62,7 @@ describe('components', () => {
                     },
                 });
 
-                const classList = vm.$el.classList;
+                const { classList } = vm.$el;
                 const classListString = Array(classList).join();
 
                 expect(classListString.includes('narwal')).toBeTruthy();

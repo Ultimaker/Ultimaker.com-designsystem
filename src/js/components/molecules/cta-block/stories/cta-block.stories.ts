@@ -5,24 +5,22 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/cta-block.data';
 import knobsFormat from './cta-block.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                ctas: { default: knobs.ctas },
-                mod: { default: knobs.mod },
-                styleContentButton: { default: knobs.styleContentButton },
-                styleContentLink: { default: knobs.styleContentLink },
-                modContentLink: { default: knobs.modContentLink },
-                modContentButton: { default: knobs.modContentButton },
-            },
-            template: require('./cta-block.html'),
-        };
+    return {
+        props: {
+            ctas: { default: knobs.ctas },
+            mod: { default: knobs.mod },
+            styleContentButton: { default: knobs.styleContentButton },
+            styleContentLink: { default: knobs.styleContentLink },
+            modContentLink: { default: knobs.modContentLink },
+            modContentButton: { default: knobs.modContentButton },
+        },
+        template: require('./cta-block.html'),
     };
 };
 

@@ -10,7 +10,7 @@ describe('components', () => {
                 const vm = mount();
                 const objAttributes = vm.$el.attributes;
 
-                expect(objAttributes['class'].value).toContain('color');
+                expect(objAttributes.class.value).toContain('color');
                 vm.$destroy();
             });
 
@@ -36,7 +36,7 @@ describe('components', () => {
                 });
                 const swatchElAttributes = vm.$el.querySelector('.color__spec--swatch').attributes;
 
-                expect(swatchElAttributes['style'].value).toContain('background: rgb(0, 255, 255)');
+                expect(swatchElAttributes.style.value).toContain('background: rgb(0, 255, 255)');
                 vm.$destroy();
             });
 
@@ -49,7 +49,7 @@ describe('components', () => {
                 });
                 const swatchElAttributes = vm.$el.querySelector('.color__spec--swatch').attributes;
 
-                expect(swatchElAttributes['style'].value).toContain('background: rgb(0, 255, 255)');
+                expect(swatchElAttributes.style.value).toContain('background: rgb(0, 255, 255)');
                 vm.$destroy();
             });
 
@@ -61,9 +61,9 @@ describe('components', () => {
                     },
                 });
 
-                expect(vm.styleIcon['color']).toEqual('#000');
+                expect(vm.styleIcon.color).toEqual('#000');
                 vm.rgbHex = '#777777';
-                expect(vm.styleIcon['color']).toEqual('#FFF');
+                expect(vm.styleIcon.color).toEqual('#FFF');
             });
         });
     });

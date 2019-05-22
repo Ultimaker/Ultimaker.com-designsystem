@@ -89,7 +89,8 @@ export default class Flyout extends Vue {
         }
 
         if (this.sectionIndex >= this.flyoutSections.length - 1) {
-            return this.backToParent();
+            this.backToParent();
+            return;
         }
 
         const currentSection = this.sectionIndex;
@@ -120,7 +121,8 @@ export default class Flyout extends Vue {
         }
 
         if (this.sectionIndex <= 0) {
-            return this.backToParent();
+            this.backToParent();
+            return;
         }
 
         const currentSection = this.sectionIndex;

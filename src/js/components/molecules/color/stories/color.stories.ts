@@ -5,23 +5,21 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/color.data';
 import knobsFormat from './color.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            data() {
-                return {};
-            },
-            props: {
-                rgbHex: { default: knobs.rgbHex },
-                opacity: { default: knobs.opacity },
-            },
-            template: require('./color.html'),
-        };
+    return {
+        data() {
+            return {};
+        },
+        props: {
+            rgbHex: { default: knobs.rgbHex },
+            opacity: { default: knobs.opacity },
+        },
+        template: require('./color.html'),
     };
 };
 

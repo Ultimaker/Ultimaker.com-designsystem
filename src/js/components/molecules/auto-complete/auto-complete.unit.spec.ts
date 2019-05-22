@@ -93,7 +93,7 @@ describe('components', () => {
                     expect(vm.suggestedItems.length).toEqual(2);
                 });
 
-                it('should be able to navigate through the suggested items', async(done) => {
+                it('should be able to navigate through the suggested items', async (done) => {
                     vm.input = 'mar';
 
                     vm.selectCurrent();
@@ -119,7 +119,7 @@ describe('components', () => {
                     done();
                 });
 
-                it('should be able to select an item', async(done) => {
+                it('should be able to select an item', async (done) => {
                     spyOn(vm, '$emit');
 
                     vm.selectItem(vm.items[0]);
@@ -143,14 +143,14 @@ describe('components', () => {
                     done();
                 });
 
-                it('should be able have a selectedItem by default', async(done) => {
-                    vm.value = vm.items[1];
+                it('should be able have a selectedItem by default', async (done) => {
+                    [, vm.value] = vm.items;
                     await Vue.nextTick();
                     expect(vm.selectedItem.value).toEqual(vm.items[1].value);
                     done();
                 });
 
-                it('should close the list when closeList is called', async(done) => {
+                it('should close the list when closeList is called', async (done) => {
                     vm.input = 'mar';
 
                     vm.selectPrevious();
@@ -161,7 +161,7 @@ describe('components', () => {
                     done();
                 });
 
-                it('should reset to default state when resetInput is called', async(done) => {
+                it('should reset to default state when resetInput is called', async (done) => {
                     vm.input = 'mar';
 
                     vm.selectPrevious();

@@ -7,7 +7,6 @@ import { data } from './data/colors.data';
 describe('components', () => {
     describe('organisms', () => {
         describe('colors', () => {
-
             const mount = build(Colors, { props: {} });
 
             it('should render an Colors component', () => {
@@ -17,7 +16,7 @@ describe('components', () => {
             });
 
             it('should be possible to change the active color', () => {
-                const vm  = mount({ props: data.default });
+                const vm = mount({ props: data.default });
 
                 expect(vm.activeColorIndex).toEqual(0);
                 vm.setActiveColor(1);
@@ -28,7 +27,7 @@ describe('components', () => {
             });
         });
 
-        Object.keys(data).map((key) => {
+        Object.keys(data).forEach((key) => {
             describe(`colors ${key} props`, () => {
                 const props = data[key];
                 const mount = build(Colors, { props });

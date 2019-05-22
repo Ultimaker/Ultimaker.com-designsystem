@@ -11,13 +11,10 @@ export default class YoutubeVideo extends Vue {
     @Prop({ type: String, required: true }) videoId!:string;
 
     loadVideo: boolean = false;
-
-    get videoQuery() {
-        return 'autoplay=1';
-    }
+    readonly videoQuery: string = 'autoplay=1';
 
     get videoUrl() {
-        return `${ YoutubeConstants.embedUrl }${ this.videoId }?${ this.videoQuery }`;
+        return `${YoutubeConstants.embedUrl}${this.videoId}?${this.videoQuery}`;
     }
 
     mounted() {

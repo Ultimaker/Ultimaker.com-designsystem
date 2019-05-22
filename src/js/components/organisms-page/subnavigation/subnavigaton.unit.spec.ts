@@ -30,7 +30,6 @@ describe('components', () => {
 
             it('it should mount', () => {
                 const vm = mount();
-                console.log(vm.$el);
 
                 expect(vm.$el).toBeDefined();
                 vm.$destroy();

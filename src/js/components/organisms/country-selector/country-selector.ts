@@ -90,7 +90,7 @@ export default class CountrySelector extends Vue implements CountrySelectorInter
                     */
                     this.selectedCountry = country;
                     resolve(country);
-                },         100);
+                }, 100);
             }
         });
     }

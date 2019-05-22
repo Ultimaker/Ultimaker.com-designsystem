@@ -10,15 +10,15 @@ import ResponsivePictureSource from './responsive-picture-source';
     },
 })
 export default class ResponsivePicture extends Vue {
-    @Prop({ type: [String, Object], required : false }) desktopHdWidth!: string|object;
-    @Prop({ type: [String, Object], required : false }) desktopWidth!: string|object;
-    @Prop({ type: [String, Object], required : false }) tabletWidth!: string|object;
-    @Prop({ type: [String, Object], required : false }) mobileXlWidth!: string|object;
-    @Prop({ type: [String, Object], required : false }) mobileLWidth!: string|object;
-    @Prop({ type: [String, Object], required : true }) mobileWidth!: string|object;
-    @Prop({ type: Boolean, required : false, default: true }) lazy!:boolean;
-    @Prop({ type: String, required : false, default: '' }) description!:string;
-    @Prop({ type: String, required : false, default: '' }) imgClass!:string;
+    @Prop({ type: [String, Object], required: false }) desktopHdWidth!: string|object;
+    @Prop({ type: [String, Object], required: false }) desktopWidth!: string|object;
+    @Prop({ type: [String, Object], required: false }) tabletWidth!: string|object;
+    @Prop({ type: [String, Object], required: false }) mobileXlWidth!: string|object;
+    @Prop({ type: [String, Object], required: false }) mobileLWidth!: string|object;
+    @Prop({ type: [String, Object], required: true }) mobileWidth!: string|object;
+    @Prop({ type: Boolean, required: false, default: true }) lazy!:boolean;
+    @Prop({ type: String, required: false, default: '' }) description!:string;
+    @Prop({ type: String, required: false, default: '' }) imgClass!:string;
 
     viewportUtil = new ViewportUtil();
     ready:boolean = false;
@@ -49,7 +49,6 @@ export default class ResponsivePicture extends Vue {
     }
 
     mounted() {
-
         window.requestAnimationFrame(() => {
             this.ready = true;
         });

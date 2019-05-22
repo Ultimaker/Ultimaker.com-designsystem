@@ -24,7 +24,7 @@ export default class SearchBar extends Vue implements Search {
         if (this.searchValue !== '') {
             // temporary solution until search is implemented
             // @ts-ignore
-            window.location = `/search?search=${ encodeURIComponent(this.searchValue) }`;
+            window.location = `/search?search=${encodeURIComponent(this.searchValue)}`;
             this.close();
         }
     }

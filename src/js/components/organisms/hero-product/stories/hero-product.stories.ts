@@ -5,39 +5,37 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/hero-product.data';
 import knobsFormat from './hero-product.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                title: {
-                    default: knobs.title,
-                },
-                subtitle: {
-                    default: knobs.subtitle,
-                },
-                description: {
-                    default: knobs.description,
-                },
-                image: {
-                    default: knobs.image,
-                },
-                ctas: {
-                    default: knobs.ctas,
-                },
-                products: {
-                    default: knobs.products,
-                },
-                linkList: {
-                    default: knobs.linkList,
-                },
+    return {
+        props: {
+            title: {
+                default: knobs.title,
             },
-            template: require('./hero-product.html'),
-        };
+            subtitle: {
+                default: knobs.subtitle,
+            },
+            description: {
+                default: knobs.description,
+            },
+            image: {
+                default: knobs.image,
+            },
+            ctas: {
+                default: knobs.ctas,
+            },
+            products: {
+                default: knobs.products,
+            },
+            linkList: {
+                default: knobs.linkList,
+            },
+        },
+        template: require('./hero-product.html'),
     };
 };
 
