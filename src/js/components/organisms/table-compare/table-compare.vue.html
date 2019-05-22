@@ -30,7 +30,7 @@
                             </div>
                         </th>
                         <td v-for="cell in row.cells">
-                            <span class="visually-hidden"></span>
+                            <span class="table-compare__cell">{{ cell.label }}</span>
                             <icon icon-name="checkmark" v-if="cell.checked" class="table-compare__checkmark" />
                         </td>
                     </tr>
