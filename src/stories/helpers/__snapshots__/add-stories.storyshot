@@ -2110,7 +2110,7 @@ exports[`Storyshots Organisms/content-highlight default 1`] = `
             </div>
              
             <footer
-              class="footer-block"
+              class="footer-block content-highlight-footer"
             >
               <div
                 block="overview"
@@ -2215,7 +2215,7 @@ exports[`Storyshots Organisms/content-highlight reversed 1`] = `
             </div>
              
             <footer
-              class="footer-block"
+              class="footer-block content-highlight-footer"
             >
               <div
                 block="overview"
