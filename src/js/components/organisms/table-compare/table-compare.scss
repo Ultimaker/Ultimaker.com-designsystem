@@ -10,11 +10,12 @@
 
 .table-compare__table {
     border: initial; // override table atom
+    border-bottom: 2px solid $colorGray;
 	border-collapse: collapse;
 	position: relative;
 	table-layout: fixed;
     // --numberOfColumns is set in the template
-    width: calc(var(--numberOfColumns, 1) * 100%);
+    width: calc(var(--numberOfColumns) * 100%);
 
     @include min-desktop {
         width: 100%;
@@ -49,9 +50,16 @@
 // Column header cells
 .table-compare__table thead th[scope="col"] {
     border-bottom: 2px solid $colorGray;
-    padding: 0 2 * $buildingUnit 2 * $buildingUnit;
+    font-weight: normal;
+    font-size: 1.5 * $buildingUnit;
+    padding: 0 $buildingUnit 2 * $buildingUnit;
     text-align: center;
     width: initial; // override table atom
+
+    @media (min-width: 1440px) {
+        padding-left: 2 * $buildingUnit;
+        padding-right: 2 * $buildingUnit;
+    }
 }
 
 // Row header cells
@@ -60,7 +68,6 @@
     left: 0;
     position: -webkit-sticky;
     position: sticky;
-    overflow: visible;
     text-align: left;
 
     @include min-desktop {
@@ -100,6 +107,10 @@
     position: relative;
 }
 
+.table-compare__cell {
+    @include visually-hidden;
+}
+
 .table-compare__checkmark {
     display: block;
     margin: 0 0 0 auto;
@@ -120,7 +131,7 @@
 .table-compare__scroll-button {
     position: absolute;
     transform: translateY(-50%);
-    top: 90px;
+    top: 7.5 * $buildingUnit; // half the height of .table-compare__image
 
     @include min-desktop {
         display: none;
