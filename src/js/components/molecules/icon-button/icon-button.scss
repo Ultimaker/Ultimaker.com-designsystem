@@ -19,6 +19,11 @@
         background-color: $colorGrayLight;
     }
 
+    &[aria-disabled] {
+        color: $colorGrayDark;
+        pointer-events: none;
+    }
+
     &--light {
         &,
         &:hover {
