@@ -1,53 +1,27 @@
-$triangleSize: $buildingUnit;
-
 .tooltip {
-    position: absolute;
-    background: $colorBlack;
+    background-color: $colorBlack;
     color: $colorWhite;
-    padding: $buildingUnit;
+    font-weight: 400;
+    min-height: $buildingUnit * 3;
     min-width: $buildingUnit * 8;
     max-width: 150px;
-    min-height: $buildingUnit * 3;
-
-    font-weight: 400;
-
-    @extend %reset-last-margin;
+    padding: $buildingUnit;
+    position: absolute;
     z-index: 200;
 
     &:after {
+        border: $buildingUnit solid transparent;
+        border-top-color: $colorBlack;
+        bottom: $buildingUnit * -2;
         content: '';
-        display: block;
-        width: 0;
-        height: 0;
+        left: calc(50% - 12px);
         position: absolute;
-
-        border-top: $triangleSize solid $colorBlack;
-        border-left: $triangleSize solid transparent;
-        border-right: $triangleSize solid transparent;
-        border-bottom: $triangleSize solid transparent;
-
-        left:calc(50% - 12px);
-        bottom: $triangleSize * -2;
+        height: 0;
+        width: 0;
     }
-}
 
-.tooltip__list-item.tooltip__label {
-    @extend small;
-    display: block;
-    margin-bottom: 0;
-}
-
-.tooltip__list {
-    @extend %reset-list;
-    margin-top: 0;
-    margin-left: 0;
-    padding-left: 0;
-    @extend %reset-last-margin;
-}
-
-.tooltip__list-item {
-    @extend %reset-list-item;
-    width: 120px;
-    margin: 0 0 $buildingUnit 0;
-    padding-left: 0;
+    // make sure the last child in a tooltip doesn't have its own margin
+    > :last-child {
+        margin-bottom: 0;
+    }
 }
