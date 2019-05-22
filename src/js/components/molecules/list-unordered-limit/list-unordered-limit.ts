@@ -1,8 +1,14 @@
 import Events from 'constants/events';
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { ListUnorderedLimitProps } from './list-unordered-limit.models';
-import WithRender from './list-unordered-limit.vue.html';
 import ViewportUtil from 'utils/viewport';
+import WithRender from './list-unordered-limit.vue.html';
+
+interface RowLimitsInterface {
+    mobile: number;
+    tablet: number;
+    desktop: number;
+}
 
 @WithRender
 @Component({
@@ -10,7 +16,7 @@ import ViewportUtil from 'utils/viewport';
 })
 
 export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
-    @Prop({ type: Object, required: true }) listItems!: { items: [string[] | object[]], type: string };
+    @Prop({ type: Object, required: true }) items!: [];
     @Prop({ type: Object }) limit?: ListUnorderedLimitProps['limit'];
 
     $emitPublic; // requires a global plugin
@@ -18,6 +24,61 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
     componentMounted: boolean = false;
     showAll: boolean = false;
     viewportUtil: ViewportUtil = new ViewportUtil();
+    chunks: any = [];
+
+    chunkSize: number = 2;
+    rowLimits: RowLimitsInterface = {
+        mobile: 2,
+        tablet: 3,
+        desktop: 4,
+    };
+
+    get visibleRows() {
+        if (!this.limitValue) {
+            return Infinity;
+        }
+
+        if (typeof this.limitValue !== 'number') {
+            return Infinity;
+        }
+
+        return Math.ceil(Number(this.limitValue) / this.chunkSize);
+    }
+
+    get limitValue() {
+        if (!this.limit) {
+            return -1;
+        }
+        if (!this.viewportUtil.isMobile) {
+            return this.limit['largeScreen'];
+        }
+
+        return this.limit['smallScreen'];
+    }
+
+    setRowLimit() {
+        if (this.viewportUtil.isMobile) {
+            this.chunkSize = this.rowLimits.mobile;
+        }
+
+        if (this.viewportUtil.isTablet) {
+            this.chunkSize = this.rowLimits.tablet;
+        }
+
+        this.chunkSize = this.rowLimits.desktop;
+    }
+
+    chunkItems() {
+        const items = this.items;
+        const length = items.length;
+
+        for (let i = 0;  i < length;  i += this.chunkSize) {
+            const chunk: string[] | object[] = items.slice(i, i + this.chunkSize);
+            if (chunk) {
+                this.chunks.push(chunk);
+            }
+        }
+    }
 
     getClickEventData() {
         if (!this.limit || !this.limit.expand || !this.limit.expand.clickEvent) {
@@ -35,26 +96,10 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
         };
     }
 
-    /**
-     * -1 means no limit
-     *
-     * @param {number|undefined} limit
-     * @returns {number}
-     */
-    determineLimit(limit): number {
-        if (limit === undefined) {
-            return -1;
-        }
-
-        if (this.listItems.items.length <= limit) {
-            return -1;
-        }
-
-        return limit;
-    }
-
     mounted() {
         this.componentMounted = true;
+        this.setRowLimit();
+        this.chunkItems();
     }
 
     showButtonLabel() {
@@ -64,28 +109,6 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
             label = this.limit.expand.label;
         }
 
-        return `${label} (${this.listItems.items.length})`;
-    }
-
-    showHidden() {
-        this.showAll = true;
-        this.$emitPublic(Events.click, this.getClickEventData());
-    }
-
-    /**
-     * -1 means no limit
-     *
-     * @returns {number}
-     */
-    showLimit(): number {
-        if (this.limit === undefined || !this.componentMounted) {
-            return -1;
-        }
-
-        if (this.viewportUtil.isMobile) {
-            return this.determineLimit(this.limit.smallScreen);
-        }
-
-        return this.determineLimit(this.limit.largeScreen);
+        return `${label} (${this.items.length})`;
     }
 }

@@ -1,15 +1,16 @@
 <section class="list-unordered-limit">
-    <main>
-        <ul>
-            <template v-for="(item, index) in listItems.items">
-                <template v-if="item.type">
-                    <component :is="item.type" v-bind="item" :key="index"
-                               :class="{'list__item--is-hidden': showLimit() !== -1 && index >= showLimit() && !showAll}"/>
-                </template>
-            </template>
-        </ul>
+    <main v-for="(chunk, index) in chunks"
+             v-show="index < visibleRows"
+             
+             class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
+        <section key="index"
+        v-for="(item, i) in chunk">
+            <component :is="item.type"
+                       v-bind="item"
+                       :key="i"/>
+        </section>
     </main>
-    <footer v-if="showLimit() !== -1 && !showAll">
-        <button @click="showHidden" class="button--secondary">{{ showButtonLabel() }}</button>
+    <footer>
+        <button class="button--secondary">{{ showButtonLabel() }}</button>
     </footer>
 </section>
