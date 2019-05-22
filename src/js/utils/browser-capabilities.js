@@ -1,5 +1,5 @@
-let instance = null,
-    isBrowser = typeof window !== 'undefined';
+let instance = null;
+const isBrowser = typeof window !== 'undefined';
 
 /* istanbul ignore next: too browser specific */
 class BrowserCapabilities {

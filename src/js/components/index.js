@@ -7,5 +7,5 @@ export default {
     ...Atoms,
     ...Molecules,
     ...Organisms,
-    ...OrganismsPage
+    ...OrganismsPage,
 };

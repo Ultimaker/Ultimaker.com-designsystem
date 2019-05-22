@@ -1,7 +1,7 @@
 import data from './data';
-import {text} from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 
 export default () => ({
     title: text('title', data.title),
-    url: text('url', data.url)
+    url: text('url', data.url),
 });

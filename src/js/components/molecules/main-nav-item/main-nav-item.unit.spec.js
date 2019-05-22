@@ -1,13 +1,13 @@
 /* eslint-disable max-nested-callbacks */
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 import MainNavItem from './main-nav-item';
 import BrowserCapabilities from 'utils/browser-capabilities';
 
 describe('components', () => {
     describe('molecules', () => {
         describe('main-nav-item', () => {
-            const fixture = require('./main-nav-item.unit.spec.json'),
-                mount = build(MainNavItem, {props: fixture});
+            const fixture = require('./main-nav-item.unit.spec.json');
+            const mount = build(MainNavItem, { props: fixture });
 
             it('should be in a closed state by default', () => {
                 const vm = mount();
@@ -16,7 +16,7 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should be able to toggle the openState', async(done) => {
+            it('should be able to toggle the openState', async (done) => {
                 const vm = mount();
 
                 await vm.showFlyout();
@@ -41,7 +41,7 @@ describe('components', () => {
                 done();
             });
 
-            it('should not close the flyout when reopened within a short period of time', async(done) => {
+            it('should not close the flyout when reopened within a short period of time', async (done) => {
                 const vm = mount();
 
                 await vm.showFlyout();
@@ -67,14 +67,14 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should be able to focus on parent element', async(done) => {
+            it('should be able to focus on parent element', async (done) => {
                 const vm = mount();
 
                 vm.flyoutIsOpen = true;
                 vm.$refs.parent = {
                     $el: jasmine.createSpyObj('parent', {
-                        focus: jasmine.createSpy()
-                    })
+                        focus: jasmine.createSpy(),
+                    }),
                 };
                 vm.selectParent();
                 await vm.$nextTick();
@@ -91,8 +91,8 @@ describe('components', () => {
                 const vm = mount({
                     props: {
                         items: [],
-                        isCompact: false
-                    }
+                        isCompact: false,
+                    },
                 });
 
                 expect(vm.toggleIsVisible).toBeTruthy();
@@ -100,11 +100,11 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should focus on first link when opened', async(done) => {
+            it('should focus on first link when opened', async (done) => {
                 const vm = mount();
 
                 vm.$refs.flyout = jasmine.createSpyObj('autocomplete', {
-                    selectFirstLink: jasmine.createSpy()
+                    selectFirstLink: jasmine.createSpy(),
                 });
 
                 await vm.selectFlyoutFirstLink();

@@ -7,40 +7,40 @@ export default {
         personalization: 0b0100,
         tracking: 0b1000,
         minimal: 0b0011,
-        all: 0b1111
+        all: 0b1111,
     },
     country: {
         name: 'United States of America',
         code: 'US',
         currency: {
             code: 'USD',
-            symbol: '$'
-        }
+            symbol: '$',
+        },
     },
     language: 'en',
     breakpoints: {
         mobile: {
             min: 0,
-            max: 568
+            max: 568,
         },
         mobileXl: {
             min: 569,
-            max: 767
+            max: 767,
         },
         tablet: {
             min: 768,
-            max: 1024
+            max: 1024,
         },
         desktop: {
             min: 1025,
-            max: 1200
+            max: 1200,
         },
         desktopHd: {
             min: 1201,
-            max: Infinity
-        }
+            max: Infinity,
+        },
     },
     buildingUnit: 12,
-    defaultDuration: .3,
-    defaultEase: '.23, 1, .32, 1'
+    defaultDuration: 0.3,
+    defaultEase: '.23, 1, .32, 1',
 };

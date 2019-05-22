@@ -4,24 +4,24 @@ export default {
     props: {
         toggleState: {
             type: Boolean,
-            default: false
+            default: false,
         },
         expandedText: {
             type: String,
-            default: 'Less'
+            default: 'Less',
         },
         collapsedText: {
             type: String,
-            default: 'More'
+            default: 'More',
         },
         expandedIcon: {
             type: String,
-            default: 'angle-up'
+            default: 'angle-up',
         },
         collapsedIcon: {
             type: String,
-            default: 'angle-down'
-        }
+            default: 'angle-down',
+        },
     },
     computed: {
         toggleText() {
@@ -29,11 +29,11 @@ export default {
         },
         toggleIcon() {
             return this.toggleState ? this.expandedIcon : this.collapsedIcon;
-        }
+        },
     },
     methods: {
         toggle() {
             this.$emit('toggle');
-        }
-    }
+        },
+    },
 };

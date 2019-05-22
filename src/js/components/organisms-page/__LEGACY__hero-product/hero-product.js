@@ -4,31 +4,31 @@ export default {
     props: {
         title: {
             type: String,
-            required: true
+            required: true,
         },
         description: {
             type: String,
-            required: true
+            required: true,
         },
         link: {
             type: Array,
-            required: false
+            required: false,
         },
         image: {
             type: Array,
-            required: true
+            required: true,
         },
         materials: {
             type: Array,
-            required: true
+            required: true,
         },
         documents: {
             type: Array,
-            required: false
+            required: false,
         },
         labels: {
             type: Object,
-            required: true
-        }
-    }
+            required: true,
+        },
+    },
 };

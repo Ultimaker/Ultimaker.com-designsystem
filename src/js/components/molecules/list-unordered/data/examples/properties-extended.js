@@ -6,18 +6,16 @@ export const items = [
     'Good corrosion resistance to alkalis and organic chemicals',
     'Reduced humidity absorption when compared to other Nylon filaments',
     'Seamless 3D printing experience',
-    'Prints in dual extrusion with PVA or Breakaway'
+    'Prints in dual extrusion with PVA or Breakaway',
 ];
 
 export const itemLabels = items.map(
-    (item) => {
-        return {
+    item => ({
+        item: {
             item: {
-                item: {
-                    item
-                },
-                type: 'SpanLabel'
-            }
-        };
-    }
+                item,
+            },
+            type: 'SpanLabel',
+        },
+    }),
 );

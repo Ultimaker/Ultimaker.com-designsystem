@@ -4,15 +4,15 @@ export default {
     props: {
         body: {
             type: String,
-            default: ''
+            default: '',
         },
         type: {
             type: String,
-            default: 'quote'
+            default: 'quote',
         },
         image: {
             type: Object,
-            default: () => ({})
-        }
-    }
+            default: () => ({}),
+        },
+    },
 };

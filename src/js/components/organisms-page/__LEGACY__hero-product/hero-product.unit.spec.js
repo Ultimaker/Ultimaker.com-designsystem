@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 import HeroProduct from './hero-product';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('page', () => {
@@ -10,16 +10,16 @@ describe('components', () => {
 
             it('should load render its template', () => {
                 const buildOptions = {
-                    props: {...fixture.properties},
+                    props: { ...fixture.properties },
                     store: {
                         page: {
                             getters: {
                                 page: () => ({
-                                    title: 'page title'
-                                })
-                            }
-                        }
-                    }
+                                    title: 'page title',
+                                }),
+                            },
+                        },
+                    },
                 };
                 const vm = mount(buildOptions);
 

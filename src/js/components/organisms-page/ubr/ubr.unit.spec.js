@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 import Ubr from './ubr';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('page', () => {
@@ -9,10 +9,10 @@ describe('components', () => {
             const mount = build(Ubr, {});
 
             it('should render an \'ubr\' organism', () => {
-                const vm = mount(),
-                    objAttributes = vm.$el.attributes;
+                const vm = mount();
+                const objAttributes = vm.$el.attributes;
 
-                expect(objAttributes['class'].value).toContain('ubr');
+                expect(objAttributes.class.value).toContain('ubr');
                 vm.$destroy();
             });
 
@@ -24,7 +24,7 @@ describe('components', () => {
 
             it('should load render its template', () => {
                 const buildOptions = {
-                    props: {...fixture.properties}
+                    props: { ...fixture.properties },
                 };
                 const vm = mount(buildOptions);
 

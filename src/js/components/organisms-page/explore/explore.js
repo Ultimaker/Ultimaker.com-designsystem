@@ -1,6 +1,6 @@
-import {mapGetters} from 'vuex';
-import {TweenLite} from 'gsap';
-import {Power0} from 'gsap';
+import { mapGetters } from 'vuex';
+import { TweenLite, Power0 } from 'gsap';
+
 
 const defaultAnimationDuration = 1;
 
@@ -8,17 +8,17 @@ export default {
     name: 'explore',
     template: require('./explore.html'),
     data: () => ({
-        activeSlide: 0
+        activeSlide: 0,
     }),
     props: {
         title: {
             type: String,
-            required: true
+            required: true,
         },
         items: {
             type: Array,
-            required: true
-        }
+            required: true,
+        },
     },
     computed: {
         ...mapGetters('page', ['page']),
@@ -29,14 +29,14 @@ export default {
             return {
                 next: {
                     label: 'next',
-                    iconName: 'arrow-down'
+                    iconName: 'arrow-down',
                 },
                 previous: {
                     label: 'previous',
-                    iconName: 'arrow-up'
-                }
+                    iconName: 'arrow-up',
+                },
             };
-        }
+        },
     },
     methods: {
         indexChanged(payload) {
@@ -46,21 +46,22 @@ export default {
             const maxItems = this.items.length;
 
             if (direction === 'previous') {
-                this.activeSlide = (--this.activeSlide < 0 ) ? maxItems -1 : this.activeSlide;
+                this.activeSlide -= 1;
+                this.activeSlide = (this.activeSlide < 0) ? maxItems - 1 : this.activeSlide;
             } else {
-                this.activeSlide = (++this.activeSlide > maxItems-1 ) ? 0 : this.activeSlide;
+                this.activeSlide += 1;
+                this.activeSlide = (this.activeSlide > maxItems - 1) ? 0 : this.activeSlide;
             }
         },
         imageEnter(image, done) {
             TweenLite.fromTo(
                 image, defaultAnimationDuration,
-                {opacity: 0}, {opacity: 1, ease: Power0.easeIn, onComplete: done}
+                { opacity: 0 }, { opacity: 1, ease: Power0.easeIn, onComplete: done },
             );
         },
         imageLeave(image, done) {
             TweenLite.to(image, defaultAnimationDuration,
-                {opacity: 0, ease: Power0.easeOut, onComplete: done}
-            );
-        }
-    }
+                { opacity: 0, ease: Power0.easeOut, onComplete: done });
+        },
+    },
 };

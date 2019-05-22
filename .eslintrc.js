@@ -27,6 +27,7 @@ module.exports = {
         'exports': true
     },
     rules: {
+        'class-methods-use-this': 'off',
         'global-require': 'off',
         'indent': ['error', 4, { 'SwitchCase': 1 }],
         'import/newline-after-import': 'off',
@@ -38,11 +39,12 @@ module.exports = {
         'max-len': 'off',
         'max-line-length': 'off',
         'new-parens': 'off',
+        'no-console': ["error", { allow: ["info", "warn", "error"] }],
         'no-underscore-dangle': 'off',
         'no-unused-vars': 'off',
         'object-curly-newline': 'off',
         'operator-linebreak': 'off',
-        'prefer-default-export': 'off'
+        'prefer-default-export': 'off',
     }
 };
 

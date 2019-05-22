@@ -4,19 +4,19 @@ export default {
     props: {
         title: {
             type: String,
-            required: true
+            required: true,
         },
         description: {
             type: String,
-            required: true
+            required: true,
         },
         image: {
             type: Array,
-            required: true
+            required: true,
         },
         reasons: {
             type: Array,
-            required: true
-        }
-    }
+            required: true,
+        },
+    },
 };

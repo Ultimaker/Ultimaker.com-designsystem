@@ -1,5 +1,5 @@
 import ViewportUtil from 'utils/viewport';
-import {TweenLite, TimelineLite, Power2} from 'gsap';
+import { TweenLite, TimelineLite, Power2 } from 'gsap';
 
 export default {
     name: 'slider-reveal',
@@ -7,29 +7,29 @@ export default {
     props: {
         styleModifiers: {
             type: Array,
-            required: false
+            required: false,
         },
         title: {
             type: String,
-            required: false
+            required: false,
         },
         contents: {
             type: Array,
-            required: true
+            required: true,
         },
         imageSlider: {
             type: Object,
-            required: true
+            required: true,
         },
         link: {
             type: Object,
-            required: false
-        }
+            required: false,
+        },
     },
     computed: {
         hasLink() {
             return this.link && this.link.href && this.link.text;
-        }
+        },
     },
     data() {
         return {
@@ -39,7 +39,7 @@ export default {
             prevItemHeight: 0,
             screenCenterY: 0,
             timeLine: null,
-            viewportUtil: new ViewportUtil()
+            viewportUtil: new ViewportUtil(),
         };
     },
     mounted() {
@@ -68,7 +68,7 @@ export default {
             const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            return {top: rect.top + scrollTop, left: rect.left + scrollLeft};
+            return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
         },
 
         calculateOffsets() {
@@ -84,8 +84,8 @@ export default {
             if (this.itemHeight !== this.prevItemHeight) {
                 this.prevItemHeight = this.itemHeight;
 
-                this.timeLine = new TimelineLite({paused: true});
-                this.timeLine.fromTo(this.$refs['image-mask'][1], 0.2, {height: 0}, {height: this.itemHeight, ease: Power2.easeInOut});
+                this.timeLine = new TimelineLite({ paused: true });
+                this.timeLine.fromTo(this.$refs['image-mask'][1], 0.2, { height: 0 }, { height: this.itemHeight, ease: Power2.easeInOut });
             }
         },
         resize() {
@@ -103,13 +103,13 @@ export default {
             diff = diff > this.itemHeight ? this.itemHeight : diff;
             progress = (diff / this.itemHeight);
 
-            TweenLite.to(this.timeLine, 0.2, {progress: progress});
+            TweenLite.to(this.timeLine, 0.2, { progress });
         },
         resizeHandler() {
             this.resize();
         },
         scrollHandler() {
             this.scroll();
-        }
-    }
+        },
+    },
 };

@@ -2,12 +2,12 @@ import debounce from 'lodash/debounce';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import Defaults from 'constants/defaults';
 
-let instance = null,
-    _scrollAnimationPending = false,
-    _resizeAnimationPending = false;
-const _resizeHandlers = [],
-    _scrollHandlers = [],
-    _orientationChangeHandlers = [];
+let instance = null;
+let _scrollAnimationPending = false;
+let _resizeAnimationPending = false;
+const _resizeHandlers = [];
+const _scrollHandlers = [];
+const _orientationChangeHandlers = [];
 
 function scrollHandler() {
     if (!_scrollAnimationPending) {
@@ -75,17 +75,17 @@ class ViewportUtility {
     }
 
     _attachEventListeners() {
-        const minWait = 1000 / 60, // 60 fps
-            maxWait = 1000 / 30; // 30 fps
+        const minWait = 1000 / 60; // 60 fps
+        const maxWait = 1000 / 30; // 30 fps
 
         document.addEventListener('scroll', debounce(() => {
             scrollHandler.apply(this);
-        }, minWait, {maxWait: maxWait}));
+        }, minWait, { maxWait }));
 
         if (BrowserCapabilities.supportsTouch) {
             document.addEventListener('touchmove', debounce(() => {
                 scrollHandler.apply(this);
-            }, minWait, {maxWait: maxWait}));
+            }, minWait, { maxWait }));
         }
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -99,7 +99,7 @@ class ViewportUtility {
         window.addEventListener('resize', debounce(() => {
             this.resizing = false;
             resizeHandler.apply(this);
-        }, minWait, {maxWait: maxWait}));
+        }, minWait, { maxWait }));
 
         window.addEventListener('orientationchange', () => {
             orientationChangeHandler.apply(this);
@@ -108,8 +108,8 @@ class ViewportUtility {
 
     updateScrollState() {
         let y = window.pageYOffset;
-        const x = window.pageXOffset,
-            maxScrollY = this.documentHeight - this.screenHeight;
+        const x = window.pageXOffset;
+        const maxScrollY = this.documentHeight - this.screenHeight;
         let direction = this.scrollDirection;
 
         if (y > maxScrollY) {
