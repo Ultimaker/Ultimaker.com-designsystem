@@ -1,15 +1,16 @@
-import Events from 'constants/events';
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Component, Mixins, Prop } from 'vue-property-decorator';
+import { default as Events } from 'constants/events';
 import { ListUnorderedLimitProps } from './list-unordered-limit.models';
+import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
+import { default as ViewportUtil } from 'utils/viewport';
 import WithRender from './list-unordered-limit.vue.html';
-import ViewportUtil from 'utils/viewport';
 
 @WithRender
 @Component({
     name: 'ListUnorderedLimit',
 })
 
-export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
+export class ListUnorderedLimit extends Mixins(StepRowAnimation) implements ListUnorderedLimitProps {
     @Prop({ type: Object, required: true }) listItems!: { items: [string[] | object[]], type: string };
     @Prop({ type: Object }) limit?: ListUnorderedLimitProps['limit'];
 
