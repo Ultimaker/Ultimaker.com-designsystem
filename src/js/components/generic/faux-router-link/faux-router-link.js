@@ -2,12 +2,12 @@ import Vue from 'vue';
 
 export default Vue.component('router-link', {
     name: 'router-link',
-    template: `<a :href="href"><slot></slot></a>`,
+    template: '<a :href="href"><slot></slot></a>',
     props: {
         to: {
             required: true,
-            type: [String, Object]
-        }
+            type: [String, Object],
+        },
     },
     computed: {
         href() {
@@ -16,6 +16,6 @@ export default Vue.component('router-link', {
             }
 
             return this.to;
-        }
-    }
+        },
+    },
 });

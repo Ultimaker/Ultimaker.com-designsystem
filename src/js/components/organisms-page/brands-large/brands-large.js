@@ -4,17 +4,17 @@ export default {
     props: {
         title: {
             type: String,
-            required: true
+            required: true,
         },
         text: {
-            type: String
+            type: String,
         },
         brands: {
             type: Array,
-            required: true
+            required: true,
         },
         contentLink: {
-            type: Object
-        }
-    }
+            type: Object,
+        },
+    },
 };

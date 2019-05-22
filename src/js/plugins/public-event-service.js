@@ -1,13 +1,13 @@
 import Vue from 'vue';
 
-const EventScope = new Vue(),
-    EventLog = [],
-    excludedLogEvents = ['size'];
+const EventScope = new Vue();
+const EventLog = [];
+const excludedLogEvents = ['size'];
 
 class PublicEventService {
     static emit(event, args) {
         if (!excludedLogEvents.includes(event)) {
-            EventLog.push({'at': Date.now(), 'event': event, 'args': args});
+            EventLog.push({ at: Date.now(), event, args });
         }
         EventScope.$emit(event, args);
     }
@@ -21,29 +21,30 @@ class PublicEventService {
     }
 
     static log(event, after = 0) {
-        return EventLog.filter((e) => e.event === event && e.at > after);
+        return EventLog.filter(e => e.event === event && e.at > after);
     }
 
+    // eslint-disable-next-line no-shadow
     static install(Vue) {
         Object.defineProperty(Vue.prototype, '$emitPublic', {
             configurable: true,
             get() {
                 return PublicEventService.emit;
-            }
+            },
         });
 
         Object.defineProperty(Vue.prototype, '$onPublic', {
             configurable: true,
             get() {
                 return PublicEventService.on;
-            }
+            },
         });
 
         Object.defineProperty(Vue.prototype, '$offPublic', {
             configurable: true,
             get() {
                 return PublicEventService.off;
-            }
+            },
         });
     }
 }

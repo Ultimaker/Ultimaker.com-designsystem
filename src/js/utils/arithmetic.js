@@ -11,7 +11,7 @@ class Arithmetic {
      * @returns {number} - Result
      */
     static round(number, decimals) {
-        const multiplier = Math.pow(10, decimals);
+        const multiplier = 10 ** decimals;
 
         return decimals > 0 ?
             Math.round(number * multiplier) / multiplier :
@@ -38,7 +38,7 @@ class Arithmetic {
      * @returns {number} - Common divisor
      */
     static greatestCommonDivisor(a, b) {
-        return b === 0 ? a : Arithmetic.greatestCommonDivisor(b, a%b);
+        return b === 0 ? a : Arithmetic.greatestCommonDivisor(b, a % b);
     }
 }
 

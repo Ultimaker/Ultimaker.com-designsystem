@@ -2,24 +2,24 @@ export default {
     name: 'examples',
     template: require('./examples.html'),
     data: () => ({
-        enabled: false
+        enabled: false,
     }),
     props: {
         title: {
             type: String,
-            required: true
+            required: true,
         },
         cards: {
             type: Array,
-            required: true
+            required: true,
         },
         horizontalList: {
-            type: Object
-        }
+            type: Object,
+        },
     },
     mounted() {
         // TODO: Fix weird card problem (breaking render in SSR,
         // see: http://localhost:8080/materials/ultimaker-pla)
         this.enabled = true;
-    }
+    },
 };

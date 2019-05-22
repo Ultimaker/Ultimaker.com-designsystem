@@ -1,3 +1,3 @@
 export default {
-    click: 'gtm-click'
+    click: 'gtm-click',
 };

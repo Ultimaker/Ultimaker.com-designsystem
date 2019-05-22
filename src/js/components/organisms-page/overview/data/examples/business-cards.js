@@ -1,4 +1,4 @@
-import {data as cards} from 'molecules/cards/business-card/data/business-card.data';
+import { data as cards } from 'molecules/cards/business-card/data/business-card.data';
 import tooltipDefault from 'atoms/tooltip/data/examples/tooltip-default';
 
 export default {
@@ -11,14 +11,14 @@ export default {
             {
                 type: 'ContentButton',
                 label: 'Call me back',
-                url: 'https://ultimaker.com'
+                url: 'https://ultimaker.com',
             },
             {
                 type: 'ContentLink',
                 label: 'Call me back',
-                url: 'https://ultimaker.com'
-            }
-        ]
+                url: 'https://ultimaker.com',
+            },
+        ],
     },
     sections: [
         {
@@ -26,28 +26,28 @@ export default {
             title: 'Preferred Resellers',
             limit: {
                 largeScreen: 3,
-                smallScreen: 3
+                smallScreen: 3,
             },
             expand: {
-                label: 'Show all'
+                label: 'Show all',
             },
             cards: [
                 cards.makerPoint,
                 cards.default,
                 cards.default,
-                cards.default
+                cards.default,
             ],
-            tooltip: tooltipDefault
+            tooltip: tooltipDefault,
         },
         {
             type: 'ListSection',
             title: 'Authorized Resellers',
             limit: {
                 largeScreen: 3,
-                smallScreen: 3
+                smallScreen: 3,
             },
             expand: {
-                label: 'Show all'
+                label: 'Show all',
             },
             cards: [
                 cards.makerPoint,
@@ -56,8 +56,8 @@ export default {
                 cards.default,
                 cards.default,
                 cards.default,
-                cards.default
-            ]
-        }
-    ]
+                cards.default,
+            ],
+        },
+    ],
 };

@@ -1,6 +1,5 @@
-import {TweenLite} from 'gsap';
-import {Power3} from 'gsap';
-import {Power0} from 'gsap';
+/* eslint-disable no-param-reassign */
+import { TweenLite, Power3, Power0 } from 'gsap';
 import Viewport from 'utils/viewport';
 import Defaults from 'constants/defaults';
 
@@ -9,17 +8,17 @@ export default {
     template: require('./tabbable-definition-list.html'),
     data: () => ({
         viewport: new Viewport(),
-        heights: []
+        heights: [],
     }),
     props: {
         items: {
             type: Array,
-            default: () => []
+            default: () => [],
         },
         activeIndex: {
             type: Number,
-            default: 0
-        }
+            default: 0,
+        },
     },
     watch: {
         items() {
@@ -29,40 +28,40 @@ export default {
             this.killTweensAndCompleteOf(this.$refs.terms);
             this.killTweensAndCompleteOf(this.$refs.descriptions);
 
-            const duration = 0.4,
-                direction = this.getDirection(oldValue, newValue),
-                height = this.heights[newValue],
-                delay = this.viewport.isMobile ? duration * 0.6 : 0,
-                descriptionHeight = (this.viewport.isMobile ? height.dt : 0) + height.dd + (Defaults.buildingUnit * 2.5),
-                elementsToHide = !this.viewport.isMobile ? this.$refs.descriptions[oldValue] :
-                    [this.$refs.terms[oldValue], this.$refs.descriptions[oldValue]];
+            const duration = 0.4;
+            const direction = this.getDirection(oldValue, newValue);
+            const height = this.heights[newValue];
+            const delay = this.viewport.isMobile ? duration * 0.6 : 0;
+            const descriptionHeight = (this.viewport.isMobile ? height.dt : 0) + height.dd + (Defaults.buildingUnit * 2.5);
+            const elementsToHide = !this.viewport.isMobile ? this.$refs.descriptions[oldValue] :
+                [this.$refs.terms[oldValue], this.$refs.descriptions[oldValue]];
 
             // Animate current text up
             // Open New Item
-            TweenLite.to(elementsToHide, duration, {height: 0, y: 20 * direction, ease: Power3.easeOut});
-            TweenLite.fromTo(elementsToHide, duration * 0.3, {autoAlpha: 1}, {autoAlpha: 0, ease: Power0.easeNone});
+            TweenLite.to(elementsToHide, duration, { height: 0, y: 20 * direction, ease: Power3.easeOut });
+            TweenLite.fromTo(elementsToHide, duration * 0.3, { autoAlpha: 1 }, { autoAlpha: 0, ease: Power0.easeNone });
 
             // Close current item
             // Animate next text up
-            TweenLite.fromTo(this.$refs.descriptions[newValue], duration, {height: 0, y: -20 * direction}, {height: descriptionHeight, y: 0, ease: Power3.easeOut, delay: delay});
-            TweenLite.fromTo(this.$refs.descriptions[newValue], duration * 0.3, {autoAlpha: 0}, {autoAlpha: 1, ease: Power0.easeNone, delay: delay});
+            TweenLite.fromTo(this.$refs.descriptions[newValue], duration, { height: 0, y: -20 * direction }, { height: descriptionHeight, y: 0, ease: Power3.easeOut, delay });
+            TweenLite.fromTo(this.$refs.descriptions[newValue], duration * 0.3, { autoAlpha: 0 }, { autoAlpha: 1, ease: Power0.easeNone, delay });
             if (this.viewport.isMobile) {
-                TweenLite.fromTo(this.$refs.terms[newValue], duration, {height: 0, y: -20 * direction}, {height: height.dt, y: 0, ease: Power3.easeOut, delay: delay});
-                TweenLite.fromTo(this.$refs.terms[newValue], duration * 0.3, {autoAlpha: 0}, {autoAlpha: 1, ease: Power0.easeNone, delay: delay});
+                TweenLite.fromTo(this.$refs.terms[newValue], duration, { height: 0, y: -20 * direction }, { height: height.dt, y: 0, ease: Power3.easeOut, delay });
+                TweenLite.fromTo(this.$refs.terms[newValue], duration * 0.3, { autoAlpha: 0 }, { autoAlpha: 1, ease: Power0.easeNone, delay });
             }
-        }
+        },
     },
     methods: {
         changeIndex(index) {
-            this.$emit('index-changed', {index});
+            this.$emit('index-changed', { index });
         },
         getDirection(oldValue, newValue) {
             if (this.viewport.isMobile) {
                 if (oldValue < newValue) {
-                    return (newValue - (this.$refs.terms.length -1) === oldValue) ? 1 : -1;
+                    return (newValue - (this.$refs.terms.length - 1) === oldValue) ? 1 : -1;
                 }
 
-                return (oldValue - (this.$refs.terms.length -1) === newValue) ? -1 : 1;
+                return (oldValue - (this.$refs.terms.length - 1) === newValue) ? -1 : 1;
             }
 
             return (oldValue < newValue) ? -1 : 1;
@@ -71,7 +70,7 @@ export default {
             const tweens = TweenLite.getTweensOf(elements);
 
             if (tweens) {
-                for (let i = 0, leni = tweens.length; i < leni; i++ ) {
+                for (let i = 0, leni = tweens.length; i < leni; i += 1) {
                     tweens[i].seek(tweens[i].duration());
                 }
                 TweenLite.killTweensOf(tweens);
@@ -115,10 +114,10 @@ export default {
             });
 
             // 2. read values (measure heights)
-            this.$refs.descriptions.map((element) => {
+            this.$refs.descriptions.forEach((element) => {
                 const currentHeight = {
                     dt: element.previousElementSibling.getBoundingClientRect().height,
-                    dd: element.getBoundingClientRect().height
+                    dd: element.getBoundingClientRect().height,
                 };
 
                 this.heights.push(currentHeight);
@@ -152,26 +151,26 @@ export default {
 
             currentElement.style.height = '';
 
-            const currentElementHeight = currentElement.getBoundingClientRect().height,
-                isMobile = this.viewport.isMobile;
+            const currentElementHeight = currentElement.getBoundingClientRect().height;
+            const { isMobile } = this.viewport;
 
             this.$el.style.height = 'auto';
             this.calculateDimensions();
 
-            const maxElementHeight = isMobile ? this.maxHeight : this.$el.getBoundingClientRect().height + this.maxHeight - currentElementHeight,
-                height = this.heights[this.activeIndex];
+            const maxElementHeight = isMobile ? this.maxHeight : this.$el.getBoundingClientRect().height + this.maxHeight - currentElementHeight;
+            const height = this.heights[this.activeIndex];
 
             this.$refs.descriptions.forEach((element, index) => {
-                element.style.top = isMobile ? `${ this.heights[index].dt + (Defaults.buildingUnit * 2.5) }px` : 0;
+                element.style.top = isMobile ? `${this.heights[index].dt + (Defaults.buildingUnit * 2.5)}px` : 0;
             });
 
             if (isMobile) {
-                currentElement.style.height = `${ height.dt + height.dd + (Defaults.buildingUnit * 2.5) }px`;
+                currentElement.style.height = `${height.dt + height.dd + (Defaults.buildingUnit * 2.5)}px`;
             } else {
-                currentElement.style.height = `${ height.dd + (Defaults.buildingUnit * 2.5) }px`;
+                currentElement.style.height = `${height.dd + (Defaults.buildingUnit * 2.5)}px`;
             }
-            this.$el.style.height = `${ maxElementHeight + (Defaults.buildingUnit * 0.5) }px`;
-        }
+            this.$el.style.height = `${maxElementHeight + (Defaults.buildingUnit * 0.5)}px`;
+        },
     },
     computed: {
         maxHeight() {
@@ -183,7 +182,7 @@ export default {
             }
 
             return Math.max(...this.heights.map(i => i.dd));
-        }
+        },
     },
     mounted() {
         this.updateElementPositions();
@@ -191,5 +190,5 @@ export default {
     },
     beforeDestroy() {
         this.viewport.removeResizeHandler(this.updateElementPositions);
-    }
+    },
 };

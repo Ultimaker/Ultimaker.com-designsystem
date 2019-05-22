@@ -5,42 +5,42 @@ export default {
     template: require('./cases.html'),
     data: () => ({
         viewport: new Viewport(),
-        showVideo: false
+        showVideo: false,
     }),
     props: {
         title: {
             type: String,
-            required: true
+            required: true,
         },
         description: {
             type: String,
-            required: true
+            required: true,
         },
         videoId: {
             type: String,
-            required: true
+            required: true,
         },
         buttonLabel: {
             type: String,
-            required: true
+            required: true,
         },
         buttonIcon: {
             type: String,
-            required: true
+            required: true,
         },
         image: {
             type: Object,
-            required: true
-        }
+            required: true,
+        },
     },
     computed: {
         isMobileXl() {
             return this.viewport.isMobileXl;
-        }
+        },
     },
     methods: {
         toggleVideo() {
             this.showVideo = !this.showVideo;
-        }
-    }
+        },
+    },
 };

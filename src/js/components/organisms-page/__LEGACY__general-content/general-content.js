@@ -4,22 +4,22 @@ export default {
     props: {
         title: {
             type: String,
-            required: true
+            required: true,
         },
         text: {
             type: Array,
             required: true,
-            default: () => []
+            default: () => [],
         },
         reversed: {
             type: Boolean,
-            default: false
+            default: false,
         },
         contentLink: {
-            type: Object
+            type: Object,
         },
         image: {
-            type: Object
-        }
-    }
+            type: Object,
+        },
+    },
 };

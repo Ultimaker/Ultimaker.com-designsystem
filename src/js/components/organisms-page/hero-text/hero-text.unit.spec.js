@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
 import RichText from './hero-text';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('page', () => {
@@ -10,11 +10,11 @@ describe('components', () => {
         describe('hero-text', () => {
             it('should render the "hero-text" organism', () => {
                 const buildOptions = {
-                        props: {...fixture.properties}
-                    },
-                    vm = mount(buildOptions),
-                    richText = vm.$el,
-                    div = richText.querySelector('.contentsdiv');
+                    props: { ...fixture.properties },
+                };
+                const vm = mount(buildOptions);
+                const richText = vm.$el;
+                const div = richText.querySelector('.contentsdiv');
 
                 expect(richText).toBeDefined();
                 expect(div.innerText).toEqual('somecontent');

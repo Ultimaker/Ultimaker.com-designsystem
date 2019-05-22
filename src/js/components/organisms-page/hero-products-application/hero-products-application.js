@@ -4,39 +4,39 @@ export default {
     props: {
         title: {
             required: true,
-            type: String
+            type: String,
         },
         subtitle: {
             required: true,
-            type: String
+            type: String,
         },
         heroImage: {
             required: true,
-            type: Object
+            type: Object,
         },
         productImage: {
             required: true,
-            type: Object
+            type: Object,
         },
         uspIcons: {
             required: true,
-            type: Array
+            type: Array,
         },
         description: {
             required: true,
-            type: String
+            type: String,
         },
         ctaLink: {
             required: true,
-            type: Object
+            type: Object,
         },
         product: {
             required: false,
-            type: Object
+            type: Object,
         },
         links: {
             required: false,
-            type: Array
-        }
-    }
+            type: Array,
+        },
+    },
 };

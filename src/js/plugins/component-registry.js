@@ -1,4 +1,4 @@
-import {UniqId} from './uniq-id';
+import { UniqId } from './uniq-id';
 
 class ComponentRegistry {
     constructor() {

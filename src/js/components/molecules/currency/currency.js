@@ -6,19 +6,19 @@ export default {
     props: {
         amount: {
             type: Number,
-            required: true
+            required: true,
         },
         currencyType: {
-            type: String
+            type: String,
         },
         decimals: {
             type: Number,
-            default: 2
-        }
+            default: 2,
+        },
     },
     computed: {
-        formattedAmount: function() {
+        formattedAmount() {
             return Arithmetic.fixedNumber(this.amount, this.decimals);
-        }
-    }
+        },
+    },
 };

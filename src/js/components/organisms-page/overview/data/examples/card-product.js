@@ -1,4 +1,4 @@
-import {data} from 'molecules/cards/card-product/data/card-product.data';
+import { data } from 'molecules/cards/card-product/data/card-product.data';
 
 export default {
     type: 'overview',
@@ -10,24 +10,24 @@ export default {
             {
                 type: 'ContentButton',
                 label: 'Call me back',
-                url: 'https://ultimaker.com'
+                url: 'https://ultimaker.com',
             },
             {
                 type: 'ContentButton',
                 label: 'Call me back',
-                url: 'https://ultimaker.com'
-            }
-        ]
+                url: 'https://ultimaker.com',
+            },
+        ],
     },
     sections: [
         {
             type: 'list-section',
             limit: {
                 largeScreen: 3,
-                smallScreen: 3
+                smallScreen: 3,
             },
             expand: {
-                label: 'Show all'
+                label: 'Show all',
             },
             cards: [
                 data.nylon,
@@ -36,8 +36,8 @@ export default {
                 data.pla,
                 data.noImage,
                 data.noProperties,
-                data.noImageNoProperties
-            ]
-        }
-    ]
+                data.noImageNoProperties,
+            ],
+        },
+    ],
 };

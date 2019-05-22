@@ -6,13 +6,13 @@ export default Vue.component('faux-store-commit', {
     props: {
         mutation: {
             type: String,
-            required: true
+            required: true,
         },
         data: {
-            required: true
-        }
+            required: true,
+        },
     },
     created() {
         this.$store.commit(this.mutation, this.data);
-    }
+    },
 });

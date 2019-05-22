@@ -29,7 +29,8 @@ describe('components', () => {
                 const iconUrl = '/custom/iconset.svg';
 
                 beforeEach(() => {
-                    window.svgIconMap = iconUrl;
+                    // eslint-disable-next-line dot-notation
+                    window['svgIconMap'] = iconUrl;
                 });
 
                 it('should render with a customized iconset', (done) => {

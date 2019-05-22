@@ -1,12 +1,12 @@
 /* eslint-disable max-nested-callbacks */
 import ContentToggle from './content-toggle';
-import {build} from 'vuenit';
+import { build } from 'vuenit';
 
 describe('components', () => {
     describe('molecules', () => {
         describe('content-toggle', () => {
-            const mount = build(ContentToggle, {}),
-                click = new Event('click');
+            const mount = build(ContentToggle, {});
+            const click = new Event('click');
 
             it('should render a "content-toggle"', () => {
                 const vm = mount({});
@@ -31,8 +31,8 @@ describe('components', () => {
                         collapsedIcon: 'a',
                         expandedIcon: 'b',
                         collapsedText: '1',
-                        expandedText: '2'
-                    }
+                        expandedText: '2',
+                    },
                 });
 
                 expect(vm.toggleIcon).toBe(vm.collapsedIcon);

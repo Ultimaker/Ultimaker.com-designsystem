@@ -4,8 +4,8 @@ import BrowserCapabilities from './browser-capabilities';
 describe('utils', () => {
     describe('browser-capabilities', () => {
         it('should be a singleton instance', () => {
-            const instance = new BrowserCapabilities(),
-                instance2 = new BrowserCapabilities();
+            const instance = new BrowserCapabilities();
+            const instance2 = new BrowserCapabilities();
 
             instance.bla = true;
             expect(instance2.bla).toBeTruthy();

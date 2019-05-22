@@ -1,4 +1,4 @@
-import {data}  from 'molecules/cards/card-product/data/card-product.data';
+import { data } from 'molecules/cards/card-product/data/card-product.data';
 
 export default {
     listItems: {
@@ -7,27 +7,27 @@ export default {
             {
                 item: {
                     item: data.nylon,
-                    type: 'CardProduct'
-                }
+                    type: 'CardProduct',
+                },
             },
             {
                 item: {
                     item: data.noImage,
-                    type: 'CardProduct'
-                }
+                    type: 'CardProduct',
+                },
             },
             {
                 item: {
                     item: data.noProperties,
-                    type: 'CardProduct'
-                }
+                    type: 'CardProduct',
+                },
             },
             {
                 item: {
                     item: data.noImageNoProperties,
-                    type: 'CardProduct'
-                }
-            }
-        ]
-    }
+                    type: 'CardProduct',
+                },
+            },
+        ],
+    },
 };

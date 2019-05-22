@@ -5,8 +5,8 @@ export default {
     cta: {
         type: 'ContentLink',
         label: 'Visit website',
-        url: 'https://ultimaker.com'
+        url: 'https://ultimaker.com',
 
     },
-    type: 'BlockIcon'
+    type: 'BlockIcon',
 };

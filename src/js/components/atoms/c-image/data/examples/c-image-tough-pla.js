@@ -6,5 +6,5 @@ export default {
     alt: 'Ultimaker Tough PLA print',
     mimeType: 'image/jpeg',
     type: 'Image',
-    url: 'https://ultimaker.com/img/materials/overview/Ultimaker-Tough-PLA-print.jpg'
+    url: 'https://ultimaker.com/img/materials/overview/Ultimaker-Tough-PLA-print.jpg',
 };

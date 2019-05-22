@@ -1,5 +1,5 @@
-import {storiesOf} from '@storybook/vue';
-import {withKnobs} from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { withKnobs } from '@storybook/addon-knobs';
 import getKnobs from '../data/data.knobs';
 
 storiesOf('Atoms|text', module)
@@ -11,13 +11,12 @@ storiesOf('Atoms|text', module)
             return {
                 props: {
                     item: {
-                        default: knobs.item
-                    }
+                        default: knobs.item,
+                    },
                 },
-                template: require('./template.html')
+                template: require('./template.html'),
             };
         },
         {
-            notes: require('./notes.md')
-        }
-    );
+            notes: require('./notes.md'),
+        });

@@ -13,6 +13,7 @@ export default class BlockIcon extends Vue implements IBlockIcon {
     @Prop({ type: String, required: false }) icon?: IBlockIcon['icon'] | undefined;
     @Prop({ type: Object, required: false }) cta?: IBlockIcon['cta'];
 
+    // eslint-disable-next-line class-methods-use-this
     getClassNames(type): string {
         return {
             ContentButton: 'button',

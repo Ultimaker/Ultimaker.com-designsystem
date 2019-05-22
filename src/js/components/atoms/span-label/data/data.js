@@ -1,3 +1,3 @@
 export default {
-    item: 'High strength-to-weight ratio'
+    item: 'High strength-to-weight ratio',
 };

@@ -14,16 +14,16 @@ describe('utils', () => {
         });
 
         it('should be a singleton instance', () => {
-            const instance = new Viewport(),
-                instance2 = new Viewport();
+            const instance = new Viewport();
+            const instance2 = new Viewport();
 
             instance.bla = true;
             expect(instance2.bla).toBeTruthy();
         });
 
         it('should register and execute an external scroll handler', (done) => {
-            const scrollEvent = new window.Event('scroll'),
-                viewport = new Viewport();
+            const scrollEvent = new window.Event('scroll');
+            const viewport = new Viewport();
 
             viewport.addScrollHandler(() => {
                 expect(true).toBeTruthy();
@@ -33,8 +33,8 @@ describe('utils', () => {
         });
 
         it('should register and execute an external resize handler', (done) => {
-            const resizeEvent = new window.Event('resize'),
-                viewport = new Viewport();
+            const resizeEvent = new window.Event('resize');
+            const viewport = new Viewport();
 
             viewport.addResizeHandler(() => {
                 expect(true).toBeTruthy();

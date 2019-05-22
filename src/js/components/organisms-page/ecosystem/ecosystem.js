@@ -4,11 +4,11 @@ export default {
     props: {
         title: {
             type: String,
-            required: false
+            required: false,
         },
         items: {
             type: Array,
-            required: true
-        }
-    }
+            required: true,
+        },
+    },
 };

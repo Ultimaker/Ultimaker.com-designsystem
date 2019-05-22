@@ -27,8 +27,8 @@
         "snapshots": "cross-env BABEL_ENV=jest jest --silent --no-cache --config=jest.config.js",
         "snapshots:update": "cross-env BABEL_ENV=jest jest --silent -u --config=jest.config.js",
         "lint": "npm run eslint",
-        "lint:fix": "eslint './src/js/**/*.ts' --fix",
-        "eslint": "eslint './src/js/**/*.ts'",
+        "lint:fix": "eslint './src/js/**/*.{t,j}s' --fix",
+        "eslint": "eslint './src/js/**/*.{t,j}s'",
         "eslint:debug": "eslint './src/js/**/*.{t,j}s' --debug",
         "lint:debug": "eslint './src/js/**/*.{t,j}s' --debug"
     },
