@@ -1,15 +1,12 @@
 <section class="list-unordered-limit">
     <main>
-        <ul>
+        <transition-group tag="ul" @before-enter="beforeEnter" @enter="enter">
             <template v-for="(item, index) in listItems.items">
-                <template v-if="item.type">
-                    <component :is="item.type" v-bind="item" :key="index"
-                               :class="{'list__item--is-hidden': showLimit() !== -1 && index >= showLimit() && !showAll}"/>
-                </template>
+                <component :is="item.type" v-bind="item" :key="index" v-show="showLimit() === -1 || index < showLimit() || showAll"/>
             </template>
-        </ul>
+        </transition-group>
     </main>
-    <footer v-if="showLimit() !== -1 && !showAll">
+    <footer v-show="showLimit() !== -1 && !showAll">
         <button @click="showHidden" class="button--secondary">{{ showButtonLabel() }}</button>
     </footer>
 </section>
