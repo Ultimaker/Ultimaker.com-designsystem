@@ -1,7 +1,7 @@
 export default {
     title: '',
     subtitle: '',
-    description:  '',
+    description: '',
     image: {},
     ctas: {},
     products: {},

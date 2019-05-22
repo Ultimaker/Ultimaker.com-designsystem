@@ -68,10 +68,6 @@ export default class BaseLink extends Vue {
         };
     }
 
-    get clickEventType() {
-        return Events.click;
-    }
-
     get clickEventData() {
         if (this.clickEvent) {
             return {
@@ -88,7 +84,7 @@ export default class BaseLink extends Vue {
 
     triggerEventClick(): void {
         if (this.clickEvent) {
-            this.$emitPublic(this.clickEventType, this.clickEventData);
+            this.$emitPublic(Events.click, this.clickEventData);
         }
     }
 }

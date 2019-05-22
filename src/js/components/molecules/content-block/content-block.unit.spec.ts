@@ -7,10 +7,9 @@ import { data } from './data/content-block.data';
 describe('components', () => {
     describe('molecules', () => {
         describe('content-block', () => {
-
             const mount = build(ContentBlock, { props: {
                 ...data.default,
-            }});
+            } });
 
             it('should render an ContentBlock component', () => {
                 const vm = mount();

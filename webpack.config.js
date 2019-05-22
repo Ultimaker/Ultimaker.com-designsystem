@@ -54,7 +54,7 @@ const webpackConfig = {
     module: {
         rules: [
             {
-                test: /\.(js|vue)$/,
+                test: /\.(ts|js|vue)$/,
                 loader: 'eslint-loader',
                 enforce: 'pre',
                 include: [resolve('src')],

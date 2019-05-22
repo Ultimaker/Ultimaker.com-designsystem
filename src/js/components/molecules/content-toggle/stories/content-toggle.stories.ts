@@ -5,36 +5,34 @@ import addStories from 'src/stories/helpers/add-stories';
 import getKnobs from 'src/stories/helpers/get-knobs';
 import knobsFormat from 'components/molecules/content-toggle/stories/content-toggle.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            methods: {
-                toggle: action('toggle emitted'),
+    return {
+        methods: {
+            toggle: action('toggle emitted'),
+        },
+        props: {
+            collapsedIcon: {
+                default: knobs.collapsedIcon,
             },
-            props: {
-                collapsedIcon: {
-                    default: knobs.collapsedIcon,
-                },
-                collapsedText: {
-                    default: knobs.collapsedText,
-                },
-                expandedIcon: {
-                    default: knobs.expandedIcon,
-                },
-                expandedText: {
-                    default: knobs.expandedText,
-                },
-                toggleState: {
-                    default: knobs.toggleState,
-                },
+            collapsedText: {
+                default: knobs.collapsedText,
             },
-            template: require('./content-toggle.html'),
-        };
+            expandedIcon: {
+                default: knobs.expandedIcon,
+            },
+            expandedText: {
+                default: knobs.expandedText,
+            },
+            toggleState: {
+                default: knobs.toggleState,
+            },
+        },
+        template: require('./content-toggle.html'),
     };
 };
 

@@ -5,24 +5,22 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/a.data';
 import knobsFormat from './a.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                href: {
-                    default: knobs.href,
-                },
-                text: {
-                    default: knobs.text,
-                },
+    return {
+        props: {
+            href: {
+                default: knobs.href,
             },
-            template: '<a :href="href">{{ text }}</a>',
-        };
+            text: {
+                default: knobs.text,
+            },
+        },
+        template: '<a :href="href">{{ text }}</a>',
     };
 };
 

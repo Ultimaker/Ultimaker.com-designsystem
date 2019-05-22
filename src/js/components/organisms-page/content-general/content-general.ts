@@ -1,6 +1,6 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 
-import { ContentGeneral  as IContentGeneral } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/contentGeneral/ContentGeneral';
+import { ContentGeneral as IContentGeneral } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/contentGeneral/ContentGeneral';
 import WithRender from './content-general.vue.html';
 
 @WithRender

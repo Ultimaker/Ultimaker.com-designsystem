@@ -15,6 +15,6 @@ export default class ResponsivePictureSource extends Vue {
             return this.image;
         }
 
-        return this.image.retinaUrl ? `${ this.image.url }, ${ this.image.retinaUrl } 2x` : this.image.url;
+        return this.image.retinaUrl ? `${this.image.url}, ${this.image.retinaUrl} 2x` : this.image.url;
     }
 }

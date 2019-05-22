@@ -17,11 +17,11 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
     @Prop({ type: Object, required: false }) search!: PageHeaderInterface['search'];
     @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
 
-    assistUsed: boolean =  false;
-    viewportUtil: any =  new ViewportUtility();
-    offsetTopHeader: number =  0;
-    searchOpen: boolean =  false;
-    showCompactMenu: boolean =  true;
+    assistUsed: boolean = false;
+    viewportUtil: any = new ViewportUtility();
+    offsetTopHeader: number = 0;
+    searchOpen: boolean = false;
+    showCompactMenu: boolean = true;
     maxMobileRes: number = 1025;
     resize: boolean = false;
     $refs!: {
@@ -103,5 +103,4 @@ export default class PageHeader extends Vue implements PageHeaderInterface {
     beforeDestroy() {
         this.viewportUtil.removeResizeHandler(this.handleResize);
     }
-
 }

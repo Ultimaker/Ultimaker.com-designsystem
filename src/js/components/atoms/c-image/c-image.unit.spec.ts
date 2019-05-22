@@ -22,7 +22,7 @@ describe('components', () => {
                 resizeBehavior: 'fill',
                 focusArea: 'center',
                 backgroundColor: null,
-            }});
+            } });
 
             beforeEach(() => {
                 viewportUtil = new ViewportUtil();
@@ -45,10 +45,10 @@ describe('components', () => {
                     },
                 });
                 const requestUrl = vm.getParams({ width: desiredWidth, height: desiredHeight });
-                expect(requestUrl).toContain(`w=${ desiredWidth }`);
-                expect(requestUrl).toContain(`h=${ desiredHeight }`);
-                expect(requestUrl).toContain(`fit=${ ResizeBehavior.crop }`);
-                expect(requestUrl).toContain(`f=${  FocusArea.bottomRight }`);
+                expect(requestUrl).toContain(`w=${desiredWidth}`);
+                expect(requestUrl).toContain(`h=${desiredHeight}`);
+                expect(requestUrl).toContain(`fit=${ResizeBehavior.crop}`);
+                expect(requestUrl).toContain(`f=${FocusArea.bottomRight}`);
                 vm.$destroy();
             });
 
@@ -69,7 +69,7 @@ describe('components', () => {
                     expect(vm.inView).toBeTruthy();
                     expect(vm.$el.getBoundingClientRect).toHaveBeenCalled();
                     expect(vm.width).toEqual(desiredWidth);
-                    expect(vm.$el.srcset).toContain(`w=${ imageConstants.initialSize }`);
+                    expect(vm.$el.srcset).toContain(`w=${imageConstants.initialSize}`);
                     done();
                 });
 
@@ -77,7 +77,7 @@ describe('components', () => {
                     spyOnProperty(viewportUtil, 'scrollY', 'get').and.returnValue(0);
                     vm.imageLoaded = true;
                     await vm.$nextTick();
-                    expect(vm.$el.srcset).toContain(`w=${ desiredWidth }`);
+                    expect(vm.$el.srcset).toContain(`w=${desiredWidth}`);
                     done();
                 });
 

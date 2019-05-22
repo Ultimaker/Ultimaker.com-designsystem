@@ -7,17 +7,17 @@ import { ICardProps, ICard } from './card.models';
     template: require('./card.html'),
 })
 
-export default class Card extends Vue implements ICardProps{
+export default class Card extends Vue implements ICardProps {
     @Prop({ type: String })
     block!: string;
     @Prop({ type: Object, required: true })
     card!: ICard;
 
-    get classObject ()  {
+    get classObject() {
         const classes: Object = {};
 
         if (this.block !== '') {
-            classes[`${ this.block }__card`] = true;
+            classes[`${this.block}__card`] = true;
         }
 
         return classes;

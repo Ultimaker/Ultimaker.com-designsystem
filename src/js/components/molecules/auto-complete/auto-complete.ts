@@ -10,7 +10,7 @@ import WithRender from './auto-complete.vue.html';
 })
 
 export default class AutoComplete extends Vue implements AutoCompleteProps {
-    @Prop({ type: String, default: () => `autocomplete${ ~~(Math.random() * 10000) }` }) inputId!: string;
+    @Prop({ type: String, default: () => `autocomplete${Math.floor(Math.random() * 10000)}` }) inputId!: string;
     @Prop({ type: Object, default: null }) value!: AutoCompleteItem;
     @Prop({ type: Boolean, default: null }) defaultOpen!: boolean;
     @Prop({ type: Number, default: 3 }) minChar!: number;
@@ -25,12 +25,12 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
     @Prop({ type: String, default: '' }) suggestionsLabel!: AutoCompleteProps['suggestionsLabel'];
     @Prop({ required: true }) datasource!: AutoCompleteProps['datasource'];
 
-    input: string =  '';
+    input: string = '';
     selectedItem: AutoCompleteItem | null = null;
     selectedIndex: number = 0;
     reversed: boolean = false;
     forceOpen: boolean = false;
-    viewportUtil =  new ViewportUtil();
+    viewportUtil = new ViewportUtil();
 
     $refs!: {
         autoComplete: AutoComplete,
@@ -61,7 +61,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
     }
 
     get listId(): string {
-        return `${ this.inputId }__dropdown`;
+        return `${this.inputId}__dropdown`;
     }
     get hasInput(): boolean {
         return this.input.length > 0;
@@ -127,7 +127,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
     }
 
     @Watch('isOpen')
-    calculateDirection():undefined {
+    calculateDirection():void {
         if (!this.$refs.autoComplete) {
             return;
         }
@@ -139,7 +139,6 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         const inputBottom = inputTop + inputBounds.height;
 
         this.reversed = windowBottom < inputBottom;
-        return;
     }
 
     highlightString(data): string {
@@ -150,7 +149,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
             return data;
         }
 
-        return data.replace(stringToReplace, `<span class="auto-complete__value">${ matches[0] }</span>`);
+        return data.replace(stringToReplace, `<span class="auto-complete__value">${matches[0]}</span>`);
     }
 
     resetInput(): void {
@@ -181,7 +180,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
     }
 
     selectItemByInput(): void {
-        const matcher = new RegExp(`^${ this.input }$`, 'i');
+        const matcher = new RegExp(`^${this.input}$`, 'i');
         let item:AutoCompleteItem | undefined;
 
         if (this.input.length >= this.minChar) {

@@ -53,7 +53,7 @@ describe('components', () => {
                 const objAttributes = vm.$el.attributes;
 
                 expect(vm.$el).toBeDefined();
-                expect(objAttributes['class'].value).toContain('overview');
+                expect(objAttributes.class.value).toContain('overview');
                 vm.$destroy();
             });
 

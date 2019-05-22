@@ -33,7 +33,7 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should $emit the selected country', async(done) => {
+            it('should $emit the selected country', async (done) => {
                 const vm = mount(buildOptions);
 
                 spyOn(vm, '$emit').and.callThrough();

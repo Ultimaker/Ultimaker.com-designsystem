@@ -1,5 +1,5 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
-import { ContentCover  as IContentCover } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/contentCover/ContentCover';
+import { ContentCover as IContentCover } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/contentCover/ContentCover';
 
 @Component({
     name: 'ContentCover',

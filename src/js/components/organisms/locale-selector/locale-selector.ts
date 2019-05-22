@@ -1,6 +1,6 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import CountrySelector from 'components/organisms/country-selector';
-import  IconButton from 'components/molecules/icon-button';
+import IconButton from 'components/molecules/icon-button';
 import { CountrySelectorInterface } from 'components/organisms/country-selector/country-selector-models';
 import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
 import WithRender from './locale-selector.vue.html';
@@ -28,17 +28,17 @@ export default class LocaleSelector extends Vue implements CountrySelectorInterf
 
     get currentCountryLabel() {
         if (this.country && this.country.currency && this.country.currency.symbol) {
-            return `${ this.country.name } - ${ this.country.currency.symbol }`;
+            return `${this.country.name} - ${this.country.currency.symbol}`;
         }
 
         if (this.country) {
-            return `${ this.country.name }`;
+            return `${this.country.name}`;
         }
 
         return 'Please select your country';
     }
     get currentCountryAriaLabel() {
-        return `Change your country, currently: ${ this.country.name }`;
+        return `Change your country, currently: ${this.country.name}`;
     }
 
     beforeMount() {
@@ -55,7 +55,7 @@ export default class LocaleSelector extends Vue implements CountrySelectorInterf
         this.countrySelectorOpen = !this.countrySelectorOpen;
         if (this.countrySelectorOpen && this.$refs.countrySelector) {
             await this.$refs.countrySelector.focus();
-        } else if (!this.countrySelectorOpen  && this.$refs.countrySelectorToggle) {
+        } else if (!this.countrySelectorOpen && this.$refs.countrySelectorToggle) {
             await this.$nextTick();
             this.$refs.countrySelectorToggle.focus();
         }

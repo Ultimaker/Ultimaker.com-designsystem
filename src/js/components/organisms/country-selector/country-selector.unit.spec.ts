@@ -45,7 +45,7 @@ describe('components', () => {
                 done();
             });
 
-            it('should change countries when auto-complete changes', async(done) => {
+            it('should change countries when auto-complete changes', async (done) => {
                 const vm = mount();
                 const newCountry = { value: 'NL', title: 'Netherlands' };
 

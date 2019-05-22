@@ -20,7 +20,7 @@ describe('components', () => {
             });
         });
 
-        Object.keys(data).map((key) => {
+        Object.keys(data).forEach((key) => {
 
             describe(`<%= h.changeCase.paramCase(name) %> ${key} props`, () => {
 

@@ -17,7 +17,7 @@ export default class YoutubeLink extends BaseLink implements YoutubeLinkInterfac
     videoVisible: boolean = false;
 
     get youtubeUrl(): string {
-        return `${ YoutubeConstants.videoUrl }${ this.youtubeId }`;
+        return `${YoutubeConstants.videoUrl}${this.youtubeId}`;
     }
 
     toggleVideoVisible(): void {

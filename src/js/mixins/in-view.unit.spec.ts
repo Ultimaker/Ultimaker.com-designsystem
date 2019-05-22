@@ -5,9 +5,9 @@ import ViewportUtil from 'utils/viewport';
 
 describe('mixins', () => {
     describe('in-view', () => {
-        const mount = build(InView, {props: {
+        const mount = build(InView, { props: {
             keepInView: true,
-        }});
+        } });
 
         it('should attach an intersection observer when supported', () => {
             spyOnProperty(BrowserCapabilities, 'supportsIntersectionObserver', 'get').and.returnValue(true);

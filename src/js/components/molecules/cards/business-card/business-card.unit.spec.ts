@@ -23,7 +23,7 @@ describe('components', () => {
                 const objAttributes = vm.$el.attributes;
                 const title = vm.$el.querySelector('.business-card__title');
 
-                expect(objAttributes['class'].value).toContain('business-card');
+                expect(objAttributes.class.value).toContain('business-card');
                 expect(title).toBeDefined();
                 expect(title.innerText).toContain('Reseller name');
                 vm.$destroy();
@@ -62,7 +62,7 @@ describe('components', () => {
                 });
                 const objAttributes = vm.$el.attributes;
 
-                expect(objAttributes['href'].value).toMatch(/http/);
+                expect(objAttributes.href.value).toMatch(/http/);
                 vm.$destroy();
             });
 

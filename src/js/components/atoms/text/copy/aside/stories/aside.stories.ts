@@ -5,24 +5,22 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/aside.data';
 import knobsFormat from './aside.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                className: {
-                    default: knobs.className,
-                },
-                text: {
-                    default: knobs.text,
-                },
+    return {
+        props: {
+            className: {
+                default: knobs.className,
             },
-            template: '<aside :class="className">{{ text }}</aside>',
-        };
+            text: {
+                default: knobs.text,
+            },
+        },
+        template: '<aside :class="className">{{ text }}</aside>',
     };
 };
 

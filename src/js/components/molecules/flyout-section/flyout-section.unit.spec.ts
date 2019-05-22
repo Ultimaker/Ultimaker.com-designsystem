@@ -98,7 +98,7 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should expand when expand is toggled', async(done) => {
+            it('should expand when expand is toggled', async (done) => {
                 const vm = mount({
                     props: {
                         isCompact: true,
@@ -115,7 +115,7 @@ describe('components', () => {
                 done();
             });
 
-            it('should be able to focus on a specified link', async(done) => {
+            it('should be able to focus on a specified link', async (done) => {
                 const vm = mount({
                     props: {
                         items: fixture.linksTwoColumns,

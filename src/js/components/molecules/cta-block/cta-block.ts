@@ -30,10 +30,10 @@ export default class CtaBlock extends Vue implements CtaBlockProps {
     }
 
     classObject(type: string) {
-        return  `${this.classes[type]} cta-link`;
+        return `${this.classes[type]} cta-link`;
     }
 
-    get classMod () {
+    get classMod() {
         const classes = {};
 
         if (this.mod !== '' && typeof this.mod === 'string') {

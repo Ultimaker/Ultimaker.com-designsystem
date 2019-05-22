@@ -5,27 +5,25 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/product.data';
 import knobsFormat from './product.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                icon: {
-                    default: knobs.icon,
-                },
-                name: {
-                    default: knobs.name,
-                },
-                pricing: {
-                    default: knobs.pricing,
-                },
+    return {
+        props: {
+            icon: {
+                default: knobs.icon,
             },
-            template: require('./product.html'),
-        };
+            name: {
+                default: knobs.name,
+            },
+            pricing: {
+                default: knobs.pricing,
+            },
+        },
+        template: require('./product.html'),
     };
 };
 

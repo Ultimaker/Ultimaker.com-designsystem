@@ -1,6 +1,6 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 
-import { NavigationItem  } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
+import { NavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import WithRender from './main-nav-item.vue.html';
 
@@ -9,7 +9,7 @@ import WithRender from './main-nav-item.vue.html';
     name: 'main-nav-item',
 })
 
-export default class MainNavItem extends Vue  {
+export default class MainNavItem extends Vue {
     @Prop({ type: Boolean, required: false }) mainNavOpen?: boolean;
 
     @Prop({ type: String, required: true }) label!: string;
@@ -75,7 +75,7 @@ export default class MainNavItem extends Vue  {
                     this.hideTimeout = null;
                     this.hideFlyout();
                     resolve();
-                },                            100);
+                }, 100);
             }
         });
     }
@@ -84,7 +84,7 @@ export default class MainNavItem extends Vue  {
         await this.showFlyout();
         await this.$nextTick();
 
-        const refs: any =  this.$refs;
+        const refs: any = this.$refs;
         if (refs.flyout && refs.flyout.selectFirstLink) {
             await refs.flyout.selectFirstLink();
         }
@@ -103,10 +103,14 @@ export default class MainNavItem extends Vue  {
     async selectParent(): Promise<any> {
         if (this.isCompact) { return; }
 
-        const parent: any =  this.$refs.parent;
+        const { parent } = this.$refs;
+        // @ts-ignore
         if (parent.$el) {
+            // @ts-ignore
             parent.$el.focus();
+            // @ts-ignore
         } else if (parent.focus) {
+            // @ts-ignore
             parent.focus();
         }
 

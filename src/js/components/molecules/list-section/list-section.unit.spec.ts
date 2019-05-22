@@ -43,14 +43,14 @@ const cardProps = [
 ];
 
 const cardCollection = [
-    ... cardProps,
-    ... cardProps,
-    ... cardProps,
-    ... cardProps,
-    ... cardProps,
-    ... cardProps,
-    ... cardProps,
-    ... cardProps,
+    ...cardProps,
+    ...cardProps,
+    ...cardProps,
+    ...cardProps,
+    ...cardProps,
+    ...cardProps,
+    ...cardProps,
+    ...cardProps,
 ];
 
 const tooltipProps = {
@@ -67,7 +67,7 @@ describe('components', () => {
 
             const buildOptions = {
                 props: {
-                    ... baseProps,
+                    ...baseProps,
                     cards: cardProps,
                     tooltip: tooltipProps,
                 },
@@ -97,7 +97,6 @@ describe('components', () => {
                 vm.toggleTooltip();
 
                 vm.$nextTick(() => {
-
                     const tooltip = vm.$el.querySelector('.section-tooltip');
 
                     expect(tooltip.innerText).toContain(tooltipProps.description);
@@ -105,7 +104,6 @@ describe('components', () => {
                     done();
                     vm.$destroy();
                 });
-
             });
 
             xit('should render a max amount of cards set at visible section', () => {
@@ -115,12 +113,12 @@ describe('components', () => {
 
                 const vm = mount({
                     props: {
-                        ... baseProps,
+                        ...baseProps,
                         cards: cardCollection,
                         tooltip: tooltipProps,
                     },
                 });
-                const visible = vm.$refs.visible;
+                const { visible } = vm.$refs;
                 expect(visible.length).toBe(vm.showMax);
                 vm.$destroy();
             });
@@ -128,7 +126,7 @@ describe('components', () => {
             xit('should render all cards if "Show all" button is clicked', (done) => {
                 const vm = mount({
                     props: {
-                        ... baseProps,
+                        ...baseProps,
                         cards: cardCollection,
                         tooltip: tooltipProps,
                     },
@@ -169,7 +167,6 @@ describe('components', () => {
 
                 vm.$destroy();
             });
-
         });
     });
 });

@@ -27,8 +27,8 @@ describe('components', () => {
                 };
 
                 const vm = mount(buildOptions);
-                const    card = vm.$el;
-                const blockClass = card.attributes['class'];
+                const card = vm.$el;
+                const blockClass = card.attributes.class;
                 const img = card.querySelector('.card__image');
                 const content = card.querySelector('.card__content');
                 const title = card.querySelector('.card__headline');

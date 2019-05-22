@@ -39,11 +39,11 @@ export default class ListSection extends Vue implements IListSection {
     $route;
     viewportUtil: ViewportUtil = new ViewportUtil();
 
-    defineCardTypesClass () {
+    defineCardTypesClass() {
         if (this.cards && this.cards.length) {
             // @ts-ignore
             const values = unique(this.cards.map((card:any) => card.type.toLowerCase()));
-            return values.map(val => val.match('card') ? 'list-section--cards' : 'list-section--blocks');
+            return values.map(val => (val.match('card') ? 'list-section--cards' : 'list-section--blocks'));
         }
         return '';
     }
@@ -59,7 +59,7 @@ export default class ListSection extends Vue implements IListSection {
             return {
                 dataType: clickEvent.name,
                 data: {
-                    ... clickEvent.data,
+                    ...clickEvent.data,
                     pageSlug: this.$route.fullPath,
                 },
             };
@@ -79,20 +79,19 @@ export default class ListSection extends Vue implements IListSection {
         this.visibleTooltip = !this.visibleTooltip;
     }
 
-    showCount (): string {
+    showCount(): string {
         if (!this.showHiddenItems) {
             return `${this.expand && this.expand.label ? this.expand.label : ''} (${this.cards.length})`;
         }
-        return this.expand && this.expand.label || '';
+        return (this.expand && this.expand.label) || '';
     }
 
-    triggerEventClick (): void {
+    triggerEventClick(): void {
         if (this.expand && this.expand.clickEvent) {
             try {
                 this.$emitPublic(this.clickEventType, this.clickEventData);
-            } catch (e) {
-
-            }
+                // eslint-disable-next-line no-empty
+            } catch (e) {}
         }
     }
 
@@ -124,7 +123,7 @@ export default class ListSection extends Vue implements IListSection {
         TweenLite.fromTo(el, this.cardTransitionDuration, {
             opacity: 0,
             y: this.cardOffset,
-        },               {
+        }, {
             opacity: 1,
             y: 0,
             ease: Power3.easeOut,
@@ -140,7 +139,7 @@ export default class ListSection extends Vue implements IListSection {
             );
         } else {
             this.showMax = (
-                this.limit && typeof this.limit.largeScreen  === 'number' ? this.limit.largeScreen : Number.MAX_SAFE_INTEGER
+                this.limit && typeof this.limit.largeScreen === 'number' ? this.limit.largeScreen : Number.MAX_SAFE_INTEGER
             );
         }
     }
@@ -156,7 +155,7 @@ export default class ListSection extends Vue implements IListSection {
 
         setTimeout(() => {
             this.handleResize();
-        },         100);
+        }, 100);
     }
 
     beforeDestroy(): void {
