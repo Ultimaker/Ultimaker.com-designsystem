@@ -1,6 +1,6 @@
-import {text, array} from '@storybook/addon-knobs';
+import { text, array } from '@storybook/addon-knobs';
 import data from './ubr.stories.json';
-import {deprecatedImages} from '../../helpers/images';
+import { deprecatedImages } from '../../helpers/images';
 import TextUtils from '../../../js/utils/text-utils';
 
 export default () => ({
@@ -8,6 +8,6 @@ export default () => ({
         title: text('UBR - title', data.title),
         description: text('UBR - description', data.description),
         reasons: array('UBR - reasons', data.reasons.map(reason => TextUtils.htmlDecode(reason))),
-        image: deprecatedImages('UBR - image', data.image)
-    }
+        image: deprecatedImages('UBR - image', data.image),
+    },
 });

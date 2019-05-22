@@ -1,15 +1,15 @@
-import {storiesOf} from '@storybook/vue';
-import {withKnobs} from '@storybook/addon-knobs';
-import knobs from './content-cover.knobs.stories.js';
+import { storiesOf } from '@storybook/vue';
+import { withKnobs } from '@storybook/addon-knobs';
+import knobs from './content-cover.knobs.stories';
 
 storiesOf('organisms|content', module)
     .addDecorator(withKnobs)
     .add('content cover', () => ({
         props: {
-            contentCover: {default: knobs().contentCover}
+            contentCover: { default: knobs().contentCover },
         },
-        template: require('./content-cover.stories.html')
+        template: require('./content-cover.stories.html'),
     }),
     {
-        notes: require('./content-cover.stories.md')
+        notes: require('./content-cover.stories.md'),
     });

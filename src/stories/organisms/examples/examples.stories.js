@@ -1,15 +1,15 @@
-import {storiesOf} from '@storybook/vue';
-import {withKnobs} from '@storybook/addon-knobs';
-import knobs from './examples.knobs.stories.js';
+import { storiesOf } from '@storybook/vue';
+import { withKnobs } from '@storybook/addon-knobs';
+import knobs from './examples.knobs.stories';
 
 storiesOf('organisms|examples', module)
     .addDecorator(withKnobs)
     .add('Examples', () => ({
         props: {
-            examples: {default: knobs().examples}
+            examples: { default: knobs().examples },
         },
-        template: require('./examples.stories.html')
+        template: require('./examples.stories.html'),
     }),
     {
-        notes: {markdown: require('./examples.stories.md')}
+        notes: { markdown: require('./examples.stories.md') },
     });

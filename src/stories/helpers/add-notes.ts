@@ -1,5 +1,3 @@
-export default (notes) => {
-    return {
-        notes,
-    };
-};
+export default notes => ({
+    notes,
+});

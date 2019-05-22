@@ -1,4 +1,4 @@
-import {storiesOf} from '@storybook/vue';
+import { storiesOf } from '@storybook/vue';
 import notes from './building-unit.stories.md';
 
 storiesOf('global', module)
@@ -12,9 +12,9 @@ storiesOf('global', module)
                 <div class="building-unit building-unit--vertical building-unit--hidden-sm"></div>
                 <div class="building-unit building-unit--half building-unit--vertical building-unit--hidden-md"></div>
                 <button class="button button--secondary">Example pattern</button>
-            </div>`
+            </div>`,
         }),
         {
-            notes: {markdown: notes}
-        }
+            notes: { markdown: notes },
+        },
     );

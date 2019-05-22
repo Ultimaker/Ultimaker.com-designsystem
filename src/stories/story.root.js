@@ -4,7 +4,7 @@ import data from './data/data.json';
 export default Vue.component('story-root', {
     name: 'story-root',
     provide: {
-        data
+        data,
     },
-    template: '<section class="story"><slot /></section>'
+    template: '<section class="story"><slot /></section>',
 });

@@ -1,4 +1,4 @@
-import {storiesOf} from '@storybook/vue';
+import { storiesOf } from '@storybook/vue';
 import notes from './fonts.stories.md';
 
 storiesOf('global', module)
@@ -8,9 +8,9 @@ storiesOf('global', module)
             template: `<div>
                 <p style="font-family: 'univers'">Primary font: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif;</p>
                 <p style="font-family: 'fugue'">Secondary font: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif;</p>
-            </div>`
+            </div>`,
         }),
         {
-            notes: {markdown: notes}
-        }
+            notes: { markdown: notes },
+        },
     );

@@ -7,7 +7,7 @@ export default (data, knobsFormat) => {
         (property) => {
             if (typeof data[property] === 'string') {
                 result[property] = text(property, data[property]);
-            } else  if (typeof data[property] === 'boolean') {
+            } else if (typeof data[property] === 'boolean') {
                 result[property] = boolean(property, data[property]);
             } else {
                 result[property] = object(property, data[property]);

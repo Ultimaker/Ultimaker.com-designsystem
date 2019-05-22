@@ -1,6 +1,6 @@
-import {text} from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 import data from './examples.stories.json';
-import {responsiveImage} from '../../helpers/images';
+import { responsiveImage } from '../../helpers/images';
 
 export default () => ({
     examples: {
@@ -8,16 +8,16 @@ export default () => ({
         horizontalList: {
             label: text('Examples - list title', data.horizontalList.label),
             listItems: data.horizontalList.listItems.map((item, i) => ({
-                text: text(`Examples - optimized ${i+1}`, item.text)
-            }))
+                text: text(`Examples - optimized ${i + 1}`, item.text),
+            })),
         },
         cards: data.cards.map((card, i) => ({
-            title: text(`Examples - cards ${i+1} title`, card.title),
-            description: text(`Examples - cards ${i+1} description`, card.description),
+            title: text(`Examples - cards ${i + 1} title`, card.title),
+            description: text(`Examples - cards ${i + 1} description`, card.description),
             contentLink: {
-                text: text(`Examples - cards ${i+1} content link`, card.contentLink.text)
+                text: text(`Examples - cards ${i + 1} content link`, card.contentLink.text),
             },
-            image: responsiveImage(`Examples - cards ${i+1}`, card.image)
-        }))
-    }
+            image: responsiveImage(`Examples - cards ${i + 1}`, card.image),
+        })),
+    },
 });

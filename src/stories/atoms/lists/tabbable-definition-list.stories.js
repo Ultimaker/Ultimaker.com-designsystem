@@ -1,21 +1,21 @@
-import {storiesOf} from '@storybook/vue';
+import { storiesOf } from '@storybook/vue';
 
 storiesOf('Atoms|lists', module)
     .add(
         'Tabbable Definition list',
         () => ({
             data: () => ({
-                activeIndex: 0
+                activeIndex: 0,
             }),
             methods: {
-                indexChanged({index}) {
+                indexChanged({ index }) {
                     this.activeIndex = index;
-                }
+                },
             },
             inject: ['data'],
-            template: require('./tabbable-definition-list.stories.html')
+            template: require('./tabbable-definition-list.stories.html'),
         }),
         {
-            notes: {markdown: require('./tabbable-definition-list.stories.md')}
-        }
+            notes: { markdown: require('./tabbable-definition-list.stories.md') },
+        },
     );
