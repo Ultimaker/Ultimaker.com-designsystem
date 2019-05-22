@@ -4568,7 +4568,6 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 aria-label="Change your country, currently: Netherlands"
                 class="icon-button icon-button--small locale-selector__edit--buton"
                 role="button"
-                tabindex="0"
               >
                 <!---->
                  
@@ -4586,7 +4585,6 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 class="icon-button icon-button--small locale-selector__edit--buton"
                 role="button"
                 style="display: none;"
-                tabindex="0"
               >
                 <!---->
                  

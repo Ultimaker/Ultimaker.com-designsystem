@@ -249,7 +249,6 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                 aria-label="Change your country, currently: Netherlands"
                 class="icon-button icon-button--small locale-selector__edit--buton"
                 role="button"
-                tabindex="0"
               >
                 <!---->
                  
@@ -267,7 +266,6 @@ exports[`Storyshots organisms|page-footer Footer 1`] = `
                 class="icon-button icon-button--small locale-selector__edit--buton"
                 role="button"
                 style="display: none;"
-                tabindex="0"
               >
                 <!---->
                  
