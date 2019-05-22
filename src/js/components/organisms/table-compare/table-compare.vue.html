@@ -12,7 +12,7 @@
                     <tr>
                         <th scope="col"></th>
                         <th scope="col" v-for="col in content.columns" ref="columns">
-                            <c-image v-bind="col.image" alt="col.alt" class="table-compare__image" />
+                            <c-image v-bind="col.image" alt="col.alt" class="table-compare__image" v-if="col.image && col.image.url" />
                             {{ col.title }}
                         </th>
                     </tr>
@@ -21,10 +21,12 @@
                     <tr v-for="row in content.rows">
                         <th scope="row">
                             <div class="table-compare__feature">
-                                <icon-button :icon-name="row.tooltip.icon"> {{ row.label }}</icon-button>
-                                <tooltip v-if="row.tooltip" v-show="false">
-                                    {{ row.tooltip.description }}
-                                </tooltip>
+                                <template v-if="row.tooltip">
+                                    <icon-button :icon-name="row.tooltip.icon"> {{ row.label }}</icon-button>
+                                    <tooltip v-show="false">
+                                        {{ row.tooltip.description }}
+                                    </tooltip>
+                                </template>
                             </div>
                         </th>
                         <td v-for="cell in row.cells">
@@ -37,7 +39,7 @@
                     <tr>
                         <th scope="row"></th>
                         <td v-for="cell in content.columns">
-                            <a :href="cell.cta.url" class="button">{{ cell.cta.label }}</a>
+                            <a :href="cell.cta.url" class="button" v-if="cell.cta">{{ cell.cta.label }}</a>
                         </td>
                     </tr>
                     </tfoot>
