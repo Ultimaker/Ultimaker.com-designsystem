@@ -1238,7 +1238,6 @@ exports[`Storyshots Molecules|buttons/icon-button default 1`] = `
       aria-label="icon button default"
       class="icon-button"
       role="button"
-      tabindex="0"
     >
       <!---->
        
@@ -1263,7 +1262,6 @@ exports[`Storyshots Molecules|buttons/icon-button defaultNoSlot 1`] = `
       aria-label="icon button default, no slot"
       class="icon-button"
       role="button"
-      tabindex="0"
     >
       <!---->
        
@@ -1284,7 +1282,6 @@ exports[`Storyshots Molecules|buttons/icon-button large 1`] = `
       aria-label="icon button large"
       class="icon-button icon-button--large"
       role="button"
-      tabindex="0"
     >
       <!---->
        
@@ -1309,7 +1306,6 @@ exports[`Storyshots Molecules|buttons/icon-button largeNoSlot 1`] = `
       aria-label="icon button large, no slot"
       class="icon-button icon-button--large"
       role="button"
-      tabindex="0"
     >
       <!---->
        
@@ -1330,7 +1326,6 @@ exports[`Storyshots Molecules|buttons/icon-button small 1`] = `
       aria-label="icon button small"
       class="icon-button icon-button--small"
       role="button"
-      tabindex="0"
     >
       <!---->
        
@@ -1355,7 +1350,6 @@ exports[`Storyshots Molecules|buttons/icon-button smallNoSlot 1`] = `
       aria-label="icon button small, no slot"
       class="icon-button icon-button--small"
       role="button"
-      tabindex="0"
     >
       <!---->
        
@@ -1376,7 +1370,6 @@ exports[`Storyshots Molecules|buttons/icon-button underline 1`] = `
       aria-label="icon button underline-large"
       class="icon-button icon-button--underline-large"
       role="button"
-      tabindex="0"
     >
       <!---->
        
@@ -1401,7 +1394,6 @@ exports[`Storyshots Molecules|buttons/icon-button underlineNoSlot 1`] = `
       aria-label="icon button underline-large, no slot"
       class="icon-button icon-button--underline-large"
       role="button"
-      tabindex="0"
     >
       <!---->
        
@@ -3858,7 +3850,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                         aria-label=""
                         class="icon-button"
                         role="button"
-                        tabindex="0"
                       >
                         <!---->
                          
@@ -3913,7 +3904,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                         aria-label=""
                         class="icon-button"
                         role="button"
-                        tabindex="0"
                       >
                         <!---->
                          
@@ -3968,7 +3958,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                         aria-label=""
                         class="icon-button"
                         role="button"
-                        tabindex="0"
                       >
                         <!---->
                          
@@ -4023,7 +4012,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                         aria-label=""
                         class="icon-button"
                         role="button"
-                        tabindex="0"
                       >
                         <!---->
                          
@@ -4078,7 +4066,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                         aria-label=""
                         class="icon-button"
                         role="button"
-                        tabindex="0"
                       >
                         <!---->
                          
@@ -4166,7 +4153,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
               aria-label=""
               class="icon-button table-compare__scroll-button table-compare__scroll-button--left"
               role="button"
-              tabindex="0"
             >
               <!---->
                
@@ -4177,7 +4163,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
               aria-label=""
               class="icon-button table-compare__scroll-button table-compare__scroll-button--right"
               role="button"
-              tabindex="0"
             >
               <!---->
                

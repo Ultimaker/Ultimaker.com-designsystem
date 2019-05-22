@@ -3922,6 +3922,9 @@ table tfoot {
   .icon-button:hover, .sys-nav__link:hover, .search__button:hover {
     color: #000000;
     background-color: #EAEAEA; }
+  .icon-button[aria-disabled], .sys-nav__link[aria-disabled], .search__button[aria-disabled] {
+    color: #7F7F7F;
+    pointer-events: none; }
   .icon-button--light, .modal__close, .icon-button--light:hover, .modal__close:hover {
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.08); }

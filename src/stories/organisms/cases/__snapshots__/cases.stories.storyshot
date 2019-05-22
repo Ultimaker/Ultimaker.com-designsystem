@@ -38,7 +38,6 @@ exports[`Storyshots organisms|cases Cases 1`] = `
                   aria-label=""
                   class="icon-button case__link icon-button--underline-large"
                   role="button"
-                  tabindex="0"
                 >
                   <!---->
                    
@@ -131,7 +130,6 @@ exports[`Storyshots organisms|cases Cases 1`] = `
                   aria-label=""
                   class="icon-button case__link icon-button--underline-large"
                   role="button"
-                  tabindex="0"
                 >
                   <!---->
                    

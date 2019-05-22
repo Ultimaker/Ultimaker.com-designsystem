@@ -3450,6 +3450,9 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .icon-button:hover, .um-components .sys-nav__link:hover, .um-components .search__button:hover {
     color: #000000;
     background-color: #EAEAEA; }
+  .um-components .icon-button[aria-disabled], .um-components .sys-nav__link[aria-disabled], .um-components .search__button[aria-disabled] {
+    color: #7F7F7F;
+    pointer-events: none; }
   .um-components .icon-button--light, .um-components .modal__close, .um-components .icon-button--light:hover, .um-components .modal__close:hover {
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.08); }
