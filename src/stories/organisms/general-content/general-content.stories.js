@@ -1,15 +1,15 @@
-import {storiesOf} from '@storybook/vue';
-import {withKnobs} from '@storybook/addon-knobs';
-import knobs from './general-content.knobs.stories.js';
+import { storiesOf } from '@storybook/vue';
+import { withKnobs } from '@storybook/addon-knobs';
+import knobs from './general-content.knobs.stories';
 
 storiesOf('organisms|general-content', module)
     .addDecorator(withKnobs)
     .add('General content', () => ({
         props: {
-            generalContent: {default: knobs().generalContent}
+            generalContent: { default: knobs().generalContent },
         },
-        template: require('./general-content.stories.html')
+        template: require('./general-content.stories.html'),
     }),
     {
-        notes: {markdown: require('./general-content.stories.md')}
+        notes: { markdown: require('./general-content.stories.md') },
     });

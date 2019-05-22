@@ -1,5 +1,5 @@
-import {storiesOf} from '@storybook/vue';
-import {withKnobs, select} from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { withKnobs, select } from '@storybook/addon-knobs';
 import data from './images.stories.json';
 
 storiesOf('Atoms|media', module)
@@ -7,17 +7,17 @@ storiesOf('Atoms|media', module)
     .add(
         'Images',
         () => {
-            const ratio = select('Aspect ratio', data.aspectRatios.map(s => s.title), data.defaultAspectRatio),
-                currentRatio = data.aspectRatios.find(a => a.title === ratio);
+            const ratio = select('Aspect ratio', data.aspectRatios.map(s => s.title), data.defaultAspectRatio);
+            const currentRatio = data.aspectRatios.find(a => a.title === ratio);
 
             return {
                 data: () => ({
-                    image: currentRatio.image
+                    image: currentRatio.image,
                 }),
-                template: require('./images.stories.html')
+                template: require('./images.stories.html'),
             };
         },
         {
-            notes: {markdown: require('./images.stories.md')}
-        }
+            notes: { markdown: require('./images.stories.md') },
+        },
     );

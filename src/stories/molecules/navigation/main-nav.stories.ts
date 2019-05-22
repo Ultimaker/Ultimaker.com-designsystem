@@ -1,5 +1,5 @@
-import {storiesOf} from '@storybook/vue';
-import {withKnobs} from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { withKnobs } from '@storybook/addon-knobs';
 import knobs from './main-nav.knobs.stories';
 
 storiesOf('Molecules|navigation', module)

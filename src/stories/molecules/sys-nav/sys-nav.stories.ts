@@ -15,6 +15,6 @@ storiesOf('Molecules|sys-nav', module)
             },
             template: require('./sys-nav.stories.html'),
         }),
-        {
-            notes: { markdown: require('./sys-nav.stories.md') },
-        });
+    {
+        notes: { markdown: require('./sys-nav.stories.md') },
+    });

@@ -1,16 +1,16 @@
-import {text, select} from '@storybook/addon-knobs';
+import { text, select } from '@storybook/addon-knobs';
 import data from './cases.stories.json';
-import {iconList} from '../../helpers/icons';
-import {responsiveImage} from '../../helpers/images';
+import { iconList } from '../../helpers/icons';
+import { responsiveImage } from '../../helpers/images';
 
 export default () => ({
     cases: {
-        ... data,
+        ...data,
         title: text('Cases - title', data.title),
         description: text('Cases - description', data.description),
         videoId: text('Cases - youtube id', data.videoId),
         buttonIcon: select('Cases - button icon', iconList, data.buttonIcon),
         buttonLabel: text('Cases - button label', data.buttonLabel),
-        image: responsiveImage('Cases - image', data.image)
-    }
+        image: responsiveImage('Cases - image', data.image),
+    },
 });

@@ -17,7 +17,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -33,7 +33,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -49,7 +49,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -65,7 +65,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -81,7 +81,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -97,7 +97,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -113,7 +113,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -129,7 +129,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -145,7 +145,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -161,7 +161,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -177,7 +177,7 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },{
+        }, {
             type: 'SubNavigationItem',
             label: 'Ultimaker PLA',
             url: 'http://nu.nl',
@@ -193,6 +193,6 @@ export default {
                 backgroundColor: null,
                 mimeType: 'png',
             },
-        },],
+        }],
     },
 };

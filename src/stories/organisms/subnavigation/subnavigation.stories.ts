@@ -12,5 +12,4 @@ storiesOf('organisms|subnavigation', module)
         inject: ['data'],
         template: require('./subnavigation.stories.html'),
     }),
-        { notes:  require('./subnavigation.stories.md') },
-    );
+    { notes: require('./subnavigation.stories.md') });

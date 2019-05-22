@@ -1,4 +1,4 @@
-import {storiesOf} from '@storybook/vue';
+import { storiesOf } from '@storybook/vue';
 import notes from './colors.stories.md';
 import data from './colors.stories.json';
 
@@ -32,9 +32,9 @@ storiesOf('global', module)
                         </li>
                     </ul>
                 </div>
-            </div>`
+            </div>`,
         }),
         {
-            notes: {markdown: notes}
-        }
+            notes: { markdown: notes },
+        },
     );

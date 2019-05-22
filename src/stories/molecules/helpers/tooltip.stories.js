@@ -1,5 +1,5 @@
-import {storiesOf} from '@storybook/vue';
-import {withKnobs, text} from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { withKnobs, text } from '@storybook/addon-knobs';
 
 storiesOf('Molecules|helpers', module)
     .addDecorator(withKnobs)
@@ -10,12 +10,12 @@ storiesOf('Molecules|helpers', module)
 
             return {
                 props: {
-                    copy: {default: copy}
+                    copy: { default: copy },
                 },
-                template: require('./tooltip.stories.html')
+                template: require('./tooltip.stories.html'),
             };
         },
         {
-            notes: {markdown: require('./tooltip.stories.md')}
-        }
+            notes: { markdown: require('./tooltip.stories.md') },
+        },
     );

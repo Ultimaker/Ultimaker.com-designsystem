@@ -1,5 +1,5 @@
-import {storiesOf} from '@storybook/vue';
-import {withKnobs, boolean} from '@storybook/addon-knobs';
+import { storiesOf } from '@storybook/vue';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 storiesOf('Atoms|forms', module)
     .addDecorator(withKnobs)
@@ -11,16 +11,16 @@ storiesOf('Atoms|forms', module)
             return {
                 data: () => ({
                     name: 'checkbox',
-                    value: true
+                    value: true,
                 }),
                 props: {
-                    disabled: {default: disabled}
+                    disabled: { default: disabled },
                 },
                 inject: ['data'],
-                template: require('./checkbox.stories.html')
+                template: require('./checkbox.stories.html'),
             };
         },
         {
-            notes: {markdown: require('./checkbox.stories.md')}
-        }
+            notes: { markdown: require('./checkbox.stories.md') },
+        },
     );

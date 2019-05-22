@@ -1,6 +1,6 @@
-import {text, boolean, array} from '@storybook/addon-knobs';
+import { text, boolean, array } from '@storybook/addon-knobs';
 import data from './general-content.stories.json';
-import {responsiveImage} from '../../helpers/images';
+import { responsiveImage } from '../../helpers/images';
 
 export default () => ({
     generalContent: {
@@ -8,8 +8,8 @@ export default () => ({
         title: text('General-content - title', data.title),
         text: array('General-content - text', data.text),
         contentLink: {
-            text: text('General-content - link', data.contentLink.text)
+            text: text('General-content - link', data.contentLink.text),
         },
-        image: responsiveImage('General-content - image', data.image)
-    }
+        image: responsiveImage('General-content - image', data.image),
+    },
 });

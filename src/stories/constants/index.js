@@ -6,8 +6,7 @@ export const imageKnobLabels = {
     tabletWidth: 'medium screens',
     tabletXWidth: 'medium x screens',
     desktopWidth: 'large screens',
-    desktopHdWidth: 'large hd screens'
+    desktopHdWidth: 'large hd screens',
 };
 
 export const allowedMimeTypes = ['image/png', 'image/jpg', 'image/svg+xml'];
-

@@ -7,7 +7,7 @@ storiesOf('Molecules|search', module)
     .addDecorator(withKnobs)
     .add('Searchbar', () => ({
         props: {
-            searchBar: { default: knobs().searchBar }
+            searchBar: { default: knobs().searchBar },
         },
         methods: {
             close: action('close'),

@@ -8,5 +8,4 @@ storiesOf('organisms|page-header', module)
         data: () => knobs(),
         template: require('./page-header.stories.html'),
     }),
-        { notes: {  markdown: require('./page-header.stories.md') } },
-    );
+    { notes: { markdown: require('./page-header.stories.md') } });

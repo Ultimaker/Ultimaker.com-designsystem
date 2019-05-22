@@ -1,6 +1,6 @@
-import {ContentButton} from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/ContentButton';
-import {ContentLink} from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/ContentLink';
-import {HeroBasic} from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/hero/HeroBasic';
+import { ContentButton } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/ContentButton';
+import { ContentLink } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/cta/ContentLink';
+import { HeroBasic } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/hero/HeroBasic';
 
 const props = Object.assign(new HeroBasic(), {
     title: 'Lorem ipsum dolor sit amet',
@@ -19,13 +19,13 @@ const props = Object.assign(new HeroBasic(), {
     ctas: [
         Object.assign(new ContentButton(), {
             label: 'Request a quote',
-            url: '/en/quote'
+            url: '/en/quote',
         }),
         Object.assign(new ContentLink(), {
             label: 'Content link',
-            url: '/en/link'
-        })
-    ]
+            url: '/en/link',
+        }),
+    ],
 });
 
-export default props
+export default props;
