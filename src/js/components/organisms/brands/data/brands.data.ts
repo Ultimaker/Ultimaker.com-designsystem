@@ -1,133 +1,59 @@
-import { adLabDecathlonLogo } from 'components/molecules/brand/data/ad-lab-decathlon-logo';
-import { volkswagenLogo } from 'components/molecules/brand/data/volkswagen-logo';
-import { zeissLogo } from 'components/molecules/brand/data/zeiss-logo';
+import { ctas } from './examples/1-cta.data';
+import { items3 } from './examples/3-items.data';
+import { items4 } from './examples/4-items.data';
+import { items6 } from './examples/6-items.data';
+import { items9 } from './examples/9-items.data';
+import { limit3Small6Large } from './examples/limit-3small-6large.data';
+import { limit4Small6Large } from './examples/limit-4small-6large.data';
+import { limit4Small } from './examples/limit-4small.data';
+import { limit6Large } from './examples/limit-6large.data';
 
 export const data = {
     default: {
-        ctas: {
-            ctas: [
-                {
-                    clickEvent: {
-                        data: {
-                            ctaLabel: 'Test content link',
-                            ctaType: 'ContentLink',
-                            ctaUrl: 'https://ultimaker.com',
-                            type: 'AnalyticalEventData',
-                        },
-                        name: 'cta',
-                        type: 'AnalyticalEvent',
-                    },
-                    icon: 'refresh',
-                    label: 'Test content link',
-                    type: 'ContentLink',
-                    url: 'https://ultimaker.com',
-                },
-            ],
-            type: 'CtaBlock',
-        },
-        items: [
-            {
-                type: 'Brand',
-                image: zeissLogo,
-            },
-            {
-                type: 'Brand',
-                image: volkswagenLogo,
-            },
-            {
-                type: 'Brand',
-                image: adLabDecathlonLogo,
-            },
-            {
-                type: 'Brand',
-                image: zeissLogo,
-            },
-            {
-                type: 'Brand',
-                image: volkswagenLogo,
-            },
-            {
-                type: 'Brand',
-                image: adLabDecathlonLogo,
-            },
-            {
-                type: 'Brand',
-                image: zeissLogo,
-            },
-            {
-                type: 'Brand',
-                image: volkswagenLogo,
-            },
-            {
-                type: 'Brand',
-                image: adLabDecathlonLogo,
-            },
-        ],
-        limit: {
-            expand: {
-                clickEvent: {
-                    data: {
-                        ctaLabel: 'Show all',
-                        ctaType: 'ContentLink',
-                        sectionName: 'Ultimaker Brands!',
-                        type: 'AnalyticalEventData',
-                    },
-                    name: 'expandListSection',
-                    type: 'AnalyticalEvent',
-                },
-                label: 'Show all',
-                type: 'ContentButton',
-            },
-            largeScreen: 6,
-            smallScreen: 4,
-            type: 'Limit',
-        },
+        ctas,
+        items: items9,
+        limit: limit4Small6Large,
         subtitle: 'You could be one too!',
         title: 'Ultimaker Brands',
     },
-    noLimit: {
-        ctas: {
-            ctas: [],
-            type: 'CtaBlock',
-        },
-        items: [
-            {
-                type: 'Brand',
-                image: zeissLogo,
-            },
-            {
-                type: 'Brand',
-                image: volkswagenLogo,
-            },
-            {
-                type: 'Brand',
-                image: adLabDecathlonLogo,
-            },
-            {
-                type: 'Brand',
-                image: zeissLogo,
-            },
-            {
-                type: 'Brand',
-                image: volkswagenLogo,
-            },
-            {
-                type: 'Brand',
-                image: adLabDecathlonLogo,
-            },
-            {
-                type: 'Brand',
-                image: zeissLogo,
-            },
-            {
-                type: 'Brand',
-                image: volkswagenLogo,
-            },
-            {
-                type: 'Brand',
-                image: adLabDecathlonLogo,
-            },
-        ],
+    items6LimitSmall4Large6: {
+        ctas,
+        items: items6,
+        limit: limit4Small6Large,
+        subtitle: 'You could be one too!',
+        title: 'Ultimaker Brands',
+    },
+    items3LimitSmall4Large6: {
+        ctas,
+        items: items3,
+        limit: limit4Small6Large,
+        subtitle: 'You could be one too!',
+        title: 'Ultimaker Brands',
+    },
+    items4LimitSmall3Large6: {
+        ctas,
+        items: items4,
+        limit: limit3Small6Large,
+        subtitle: 'You could be one too!',
+        title: 'Ultimaker Brands',
+    },
+    items9LimitSmall4: {
+        ctas,
+        items: items9,
+        limit: limit4Small,
+        subtitle: 'You could be one too!',
+        title: 'Ultimaker Brands',
+    },
+    items9LimitLarge6: {
+        ctas,
+        items: items9,
+        limit: limit6Large,
+        subtitle: 'You could be one too!',
+        title: 'Ultimaker Brands',
+    },
+    items9LimitNone: {
+        ctas,
+        items: items9,
         subtitle: 'You could be one too!',
         title: 'Ultimaker Brands',
     },

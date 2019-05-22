@@ -15,6 +15,7 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
 
     $emitPublic; // requires a global plugin
     $route; // requires a global plugin
+    componentMounted: boolean = false;
     showAll: boolean = false;
     viewportUtil: ViewportUtil = new ViewportUtil();
 
@@ -34,6 +35,28 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
         };
     }
 
+    /**
+     * -1 means no limit
+     *
+     * @param {number|undefined} limit
+     * @returns {number}
+     */
+    determineLimit(limit): number {
+        if (limit === undefined) {
+            return -1;
+        }
+
+        if (this.listItems.items.length <= limit) {
+            return -1;
+        }
+
+        return limit;
+    }
+
+    mounted() {
+        this.componentMounted = true;
+    }
+
     showButtonLabel() {
         let label = '';
 
@@ -49,12 +72,20 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
         this.$emitPublic(Events.click, this.getClickEventData());
     }
 
-    showLimit() {
-        if (this.limit === undefined) {
-            this.showAll = true;
-            return;
+    /**
+     * -1 means no limit
+     *
+     * @returns {number}
+     */
+    showLimit(): number {
+        if (this.limit === undefined || !this.componentMounted) {
+            return -1;
         }
 
-        return this.viewportUtil.isMobile ? this.limit.smallScreen : this.limit.largeScreen;
+        if (this.viewportUtil.isMobile) {
+            return this.determineLimit(this.limit.smallScreen);
+        }
+
+        return this.determineLimit(this.limit.largeScreen);
     }
 }
