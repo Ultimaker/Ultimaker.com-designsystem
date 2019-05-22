@@ -4818,10 +4818,11 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
 .um-components .table-compare__table {
   border: initial;
+  border-bottom: 2px solid #E3E3E3;
   border-collapse: collapse;
   position: relative;
   table-layout: fixed;
-  width: calc(var(--numberOfColumns, 1) * 100%); }
+  width: calc(var(--numberOfColumns) * 100%); }
   @media (min-width: 1025px) {
     .um-components .table-compare__table {
       width: 100%; } }
@@ -4847,16 +4848,21 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
 .um-components .table-compare__table thead th[scope="col"] {
   border-bottom: 2px solid #E3E3E3;
-  padding: 0 24px 24px;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 0 12px 24px;
   text-align: center;
   width: initial; }
+  @media (min-width: 1440px) {
+    .um-components .table-compare__table thead th[scope="col"] {
+      padding-left: 24px;
+      padding-right: 24px; } }
 
 .um-components .table-compare__table tbody th[scope="row"] {
   border-top: 1px solid #E3E3E3;
   left: 0;
   position: -webkit-sticky;
   position: sticky;
-  overflow: visible;
   text-align: left; }
   @media (min-width: 1025px) {
     .um-components .table-compare__table tbody th[scope="row"] {
@@ -4887,6 +4893,13 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   display: inline-block;
   padding-right: 12px;
   position: relative; }
+
+.um-components .table-compare__cell {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
 
 .um-components .table-compare__checkmark {
   display: block;
