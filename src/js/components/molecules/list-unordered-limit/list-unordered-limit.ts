@@ -11,7 +11,7 @@ import WithRender from './list-unordered-limit.vue.html';
 })
 
 export class ListUnorderedLimit extends Mixins(StepRowAnimation) implements ListUnorderedLimitProps {
-    @Prop({ type: Object, required: true }) listItems!: { items: [string[] | object[]], type: string };
+    @Prop({ type: Array, required: true }) listItems!: [];
     @Prop({ type: Object }) limit?: ListUnorderedLimitProps['limit'];
 
     $emitPublic; // requires a global plugin
@@ -47,7 +47,7 @@ export class ListUnorderedLimit extends Mixins(StepRowAnimation) implements List
             return -1;
         }
 
-        if (this.listItems.items.length <= limit) {
+        if (this.listItems.length <= limit) {
             return -1;
         }
 
@@ -65,7 +65,7 @@ export class ListUnorderedLimit extends Mixins(StepRowAnimation) implements List
             label = this.limit.expand.label;
         }
 
-        return `${label} (${this.listItems.items.length})`;
+        return `${label} (${this.listItems.length})`;
     }
 
     showHidden() {
