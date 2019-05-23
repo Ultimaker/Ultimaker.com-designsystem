@@ -262,7 +262,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .card > :last-child, .card__content > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child {
   margin-bottom: 0; }
 
 .hero--products .hero__link--large, .hero--products-application .hero__link--large, .examples .examples__link--large {
@@ -324,7 +324,7 @@ h3, q, .hero--products-application .hero__subtitle, .link--large, .currency, .ma
 
 /* Picked an accessible color from colorsafe.co to try out some time */
 button:focus, .button:focus, input[type="button"]:focus, input[type="submit"]:focus, .nav-assist:focus:not(:hover),
-.nav-assist--close:focus:not(:hover), a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .examples .examples__tabs .tablist__item:focus:not(:hover), .business-card:focus, .business-card:hover:focus, .business-card:focus:active, .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active) {
+.nav-assist--close:focus:not(:hover), a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .examples .examples__tabs .tablist__item:focus:not(:hover), .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active), .business-card:focus, .business-card:hover:focus, .business-card:focus:active {
   color: #FFFFFF;
   background-color: #24bcf3; }
 
@@ -953,7 +953,7 @@ h6, .caption-list__headline, .caption-list__list-item, .link.link--small, .legal
       margin-bottom: 38px; } }
 
 .copy--small,
-h5, .link-list__headline, .flyout__title, .footer-nav__title, .notification__title, .link, .legal__link, .footer-nav__link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active, [type="checkbox"] + label, .notification__copy, .business-card__property, .auto-complete__list-item {
+h5, .link-list__headline, .flyout__title, .footer-nav__title, .notification__title, .link, .legal__link, .footer-nav__link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active, [type="checkbox"] + label, .notification__copy, .auto-complete__list-item, .business-card__property {
   font-size: 14px;
   line-height: 21px;
   margin-top: -2px;
@@ -1518,6 +1518,9 @@ dd {
     .toggle--icon .link--large.footer-nav__link .icon {
       font-size: 24px;
       transform: translateX(-33px); }
+
+.link--icon:focus, .toggle--icon:focus {
+  fill: currentColor; }
 
 .link-list .list--icon, .flyout__list .list--icon, .footer-nav__list .list--icon {
   margin-bottom: 0; }
@@ -3645,6 +3648,120 @@ table tfoot {
       .footer-block--push-down:not(:empty) {
         margin-top: 60px; } }
 
+.auto-complete {
+  position: relative;
+  margin-bottom: 23px; }
+  .auto-complete * {
+    margin: 0; }
+  .auto-complete__dropdown {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+    width: 100%;
+    border: 1px solid #E3E3E3;
+    z-index: 1000; }
+  .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label {
+    user-select: none; }
+  .auto-complete__list-item, .auto-complete__label {
+    padding-left: 12px;
+    padding-right: 12px; }
+  .auto-complete__list-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    outline: none;
+    color: #000000; }
+    .auto-complete__list-item:hover, .auto-complete__list-item:active {
+      background-color: #EAEAEA; }
+    .auto-complete__list-item .auto-complete__value {
+      font-weight: 600; }
+  .auto-complete__label {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #7F7F7F;
+    background-color: #F5F5F5; }
+  .auto-complete__input {
+    width: 100%; }
+    .auto-complete--small .auto-complete__input {
+      padding-top: 6.5px;
+      padding-bottom: 6.5px; }
+  .auto-complete--reversed .auto-complete__dropdown {
+    bottom: 100%; }
+
+.brand__image {
+  width: 120px; }
+
+.block-icon__icon,
+.block-icon__image {
+  width: 100%; }
+
+.block-icon__icon {
+  height: 60px; }
+
+.block-icon__headline {
+  margin-top: 0; }
+
+.block-icon__content {
+  flex-basis: auto; }
+
+.block-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding: 0 12px 49px 12px !important; }
+  .block-icon .block-icon__visual {
+    flex: 1 1 60px;
+    max-height: 60px;
+    margin: 0;
+    margin-bottom: 24px; }
+
+@media (min-width: 569px) {
+  .block-icon__items {
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .block-icon {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .block-icon {
+    padding-bottom: 52px !important; } }
+
+@media (min-width: 768px) {
+  .block-icon__items {
+    flex-flow: row wrap; } }
+
+.block-icon__link {
+  margin-bottom: 0; }
+
+.card {
+  max-width: 600px;
+  margin-bottom: 12px; }
+  @media (max-width: 1024px) {
+    .card {
+      margin-bottom: 48px; } }
+  @media (min-width: 768px) {
+    .card {
+      margin-bottom: 24px; } }
+
+.card__visual {
+  margin: 0 auto 18px;
+  overflow: hidden; }
+  @media (min-width: 569px) {
+    .card__visual {
+      margin: 0 auto 24px; } }
+
+.card__icon,
+.card__image {
+  width: 100%; }
+
+.card__icon {
+  height: 100%; }
+
+.card__content {
+  width: 100%; }
+
 .brand-card__image-wrapper {
   width: 120px;
   height: 120px;
@@ -3724,33 +3841,6 @@ table tfoot {
 .business-card__link {
   margin: 0; }
 
-.card {
-  max-width: 600px;
-  margin-bottom: 12px; }
-  @media (max-width: 1024px) {
-    .card {
-      margin-bottom: 48px; } }
-  @media (min-width: 768px) {
-    .card {
-      margin-bottom: 24px; } }
-
-.card__visual {
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 569px) {
-    .card__visual {
-      margin: 0 auto 24px; } }
-
-.card__icon,
-.card__image {
-  width: 100%; }
-
-.card__icon {
-  height: 100%; }
-
-.card__content {
-  width: 100%; }
-
 .card-product {
   position: relative;
   background-color: #FFFFFF;
@@ -3829,12 +3919,6 @@ table tfoot {
   .color--selected .color__spec--show {
     opacity: 0; }
 
-.toggle {
-  color: #0CA9E3;
-  font-weight: 400; }
-  .toggle:hover {
-    color: #0CA9E3; }
-
 .content-block-container__image {
   width: 75%;
   background-color: transparent;
@@ -3847,6 +3931,12 @@ table tfoot {
 
 .content-block__content {
   width: 100%; }
+
+.toggle {
+  color: #0CA9E3;
+  font-weight: 400; }
+  .toggle:hover {
+    color: #0CA9E3; }
 
 .cta-block {
   display: flex;
@@ -3969,90 +4059,6 @@ table tfoot {
     background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
   .icon-button--underline-large:hover .icon-button__label, .icon-button--underline-large:hover .sys-nav__label, .icon-button--underline-large:active .icon-button__label, .icon-button--underline-large:active .sys-nav__label, .icon-button--underline-large:visited .icon-button__label, .icon-button--underline-large:visited .sys-nav__label {
     background-size: 0 100%; }
-
-.block-icon__icon,
-.block-icon__image {
-  width: 100%; }
-
-.block-icon__icon {
-  height: 60px; }
-
-.block-icon__headline {
-  margin-top: 0; }
-
-.block-icon__content {
-  flex-basis: auto; }
-
-.block-icon {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  padding: 0 12px 49px 12px !important; }
-  .block-icon .block-icon__visual {
-    flex: 1 1 60px;
-    max-height: 60px;
-    margin: 0;
-    margin-bottom: 24px; }
-
-@media (min-width: 569px) {
-  .block-icon__items {
-    flex-flow: row wrap;
-    justify-content: space-around; }
-  .block-icon {
-    flex-direction: column;
-    align-items: center;
-    text-align: center; } }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .block-icon {
-    padding-bottom: 52px !important; } }
-
-@media (min-width: 768px) {
-  .block-icon__items {
-    flex-flow: row wrap; } }
-
-.block-icon__link {
-  margin-bottom: 0; }
-
-.auto-complete {
-  position: relative;
-  margin-bottom: 23px; }
-  .auto-complete * {
-    margin: 0; }
-  .auto-complete__dropdown {
-    position: absolute;
-    background: #FFFFFF;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-    width: 100%;
-    border: 1px solid #E3E3E3;
-    z-index: 1000; }
-  .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label {
-    user-select: none; }
-  .auto-complete__list-item, .auto-complete__label {
-    padding-left: 12px;
-    padding-right: 12px; }
-  .auto-complete__list-item {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    cursor: pointer;
-    outline: none;
-    color: #000000; }
-    .auto-complete__list-item:hover, .auto-complete__list-item:active {
-      background-color: #EAEAEA; }
-    .auto-complete__list-item .auto-complete__value {
-      font-weight: 600; }
-  .auto-complete__label {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    color: #7F7F7F;
-    background-color: #F5F5F5; }
-  .auto-complete__input {
-    width: 100%; }
-    .auto-complete--small .auto-complete__input {
-      padding-top: 6.5px;
-      padding-bottom: 6.5px; }
-  .auto-complete--reversed .auto-complete__dropdown {
-    bottom: 100%; }
 
 .product {
   display: flex;
@@ -5245,6 +5251,34 @@ svg text {
   @media (min-width: 480px) {
     .selector-group {
       margin-left: auto; } }
+
+.brands2 {
+  padding-top: 48px; }
+  .brands2 .list-unordered-limit ul, .brands2 .list-unordered-limit .hero--text .content--rich ul, .hero--text .content--rich .brands2 .list-unordered-limit ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-top: -12px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    max-width: 804px; }
+  .brands2 .list-unordered-limit li {
+    padding-left: 0;
+    line-height: 0;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 0; }
+  .brands2 .list-unordered-limit footer {
+    margin-top: 36px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .brands2 .list-unordered-limit footer {
+        margin-top: 48px; } }
+  .brands2 .footer-block {
+    margin-top: 60px; }
 
 .colors .colors__list {
   display: flex;
