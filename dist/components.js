@@ -1,4 +1,4 @@
-define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","gsap/Draggable","gsap/TweenLite.js","vuex"], function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__3__, __WEBPACK_EXTERNAL_MODULE__9__, __WEBPACK_EXTERNAL_MODULE__14__, __WEBPACK_EXTERNAL_MODULE__15__, __WEBPACK_EXTERNAL_MODULE__16__, __WEBPACK_EXTERNAL_MODULE__17__, __WEBPACK_EXTERNAL_MODULE__18__, __WEBPACK_EXTERNAL_MODULE__19__, __WEBPACK_EXTERNAL_MODULE__20__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__110__, __WEBPACK_EXTERNAL_MODULE__213__, __WEBPACK_EXTERNAL_MODULE__215__, __WEBPACK_EXTERNAL_MODULE__323__) { return /******/ (function(modules) { // webpackBootstrap
+define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","gsap/Draggable","gsap/TweenLite.js","vuex"], function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__3__, __WEBPACK_EXTERNAL_MODULE__9__, __WEBPACK_EXTERNAL_MODULE__14__, __WEBPACK_EXTERNAL_MODULE__15__, __WEBPACK_EXTERNAL_MODULE__16__, __WEBPACK_EXTERNAL_MODULE__17__, __WEBPACK_EXTERNAL_MODULE__18__, __WEBPACK_EXTERNAL_MODULE__19__, __WEBPACK_EXTERNAL_MODULE__20__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__110__, __WEBPACK_EXTERNAL_MODULE__219__, __WEBPACK_EXTERNAL_MODULE__221__, __WEBPACK_EXTERNAL_MODULE__333__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -545,6 +545,20 @@ exports.default = _baseLink2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.default = {
+    click: 'gtm-click'
+};
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -624,20 +638,6 @@ var PublicEventService = function () {
 exports.default = PublicEventService;
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    click: 'gtm-click'
-};
-
-/***/ }),
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -715,7 +715,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _colors = __webpack_require__(300);
+var _colors = __webpack_require__(301);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -781,7 +781,7 @@ Object.defineProperty(exports, 'ViewportUtility', {
     }
 });
 
-var _publicEventService = __webpack_require__(6);
+var _publicEventService = __webpack_require__(7);
 
 Object.defineProperty(exports, 'PublicEventService', {
     enumerable: true,
@@ -994,11 +994,11 @@ var _components = __webpack_require__(115);
 
 var _components2 = _interopRequireDefault(_components);
 
-var _directives = __webpack_require__(377);
+var _directives = __webpack_require__(387);
 
 var Directives = _interopRequireWildcard(_directives);
 
-__webpack_require__(379);
+__webpack_require__(389);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -2499,11 +2499,11 @@ var _molecules = __webpack_require__(179);
 
 var Molecules = _interopRequireWildcard(_molecules);
 
-var _organisms = __webpack_require__(290);
+var _organisms = __webpack_require__(297);
 
 var Organisms = _interopRequireWildcard(_organisms);
 
-var _organismsPage = __webpack_require__(305);
+var _organismsPage = __webpack_require__(315);
 
 var OrganismsPage = _interopRequireWildcard(_organismsPage);
 
@@ -3004,7 +3004,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _events = __webpack_require__(7);
+var _events = __webpack_require__(6);
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -4433,7 +4433,7 @@ exports.default = LiItem;
 /* 156 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"list__item"},[(!_vm.item.item)?[_vm._v(_vm._s(_vm.item))]:[_c(_vm.item.type,_vm._b({tag:"component"},'component',_vm.item.item,false))]],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"list__item"},[(_vm.item.item)?[_c(_vm.item.type,_vm._b({tag:"component"},'component',_vm.item.item,false))]:(_vm.item.type)?[_c(_vm.item.type,_vm._b({tag:"component"},'component',_vm.item,false))]:[_vm._v(_vm._s(_vm.item))]],2)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -5473,295 +5473,7 @@ Object.defineProperty(exports, 'AutoComplete', {
   }
 });
 
-var _brandCard = __webpack_require__(183);
-
-Object.defineProperty(exports, 'BrandCard', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_brandCard).default;
-  }
-});
-
-var _businessCard = __webpack_require__(186);
-
-Object.defineProperty(exports, 'BusinessCard', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_businessCard).default;
-  }
-});
-
-var _LEGACY__card = __webpack_require__(189);
-
-Object.defineProperty(exports, 'Card', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_LEGACY__card).default;
-  }
-});
-
-var _cardProduct = __webpack_require__(192);
-
-Object.defineProperty(exports, 'CardProduct', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_cardProduct).default;
-  }
-});
-
-var _color = __webpack_require__(195);
-
-Object.defineProperty(exports, 'Color', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_color).default;
-  }
-});
-
-var _contentBlock = __webpack_require__(199);
-
-Object.defineProperty(exports, 'ContentBlock', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentBlock).default;
-  }
-});
-
-var _contentToggle = __webpack_require__(202);
-
-Object.defineProperty(exports, 'ContentToggle', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentToggle).default;
-  }
-});
-
-var _ctaBlock = __webpack_require__(205);
-
-Object.defineProperty(exports, 'CtaBlock', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_ctaBlock).default;
-  }
-});
-
-var _currency = __webpack_require__(208);
-
-Object.defineProperty(exports, 'Currency', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_currency).default;
-  }
-});
-
-var _fauxVerticalScroll = __webpack_require__(211);
-
-Object.defineProperty(exports, 'FauxVerticalScroll', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_fauxVerticalScroll).default;
-  }
-});
-
-var _flyout = __webpack_require__(217);
-
-Object.defineProperty(exports, 'Flyout', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_flyout).default;
-  }
-});
-
-var _flyoutSection = __webpack_require__(220);
-
-Object.defineProperty(exports, 'FlyoutSection', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_flyoutSection).default;
-  }
-});
-
-var _footerBlock = __webpack_require__(223);
-
-Object.defineProperty(exports, 'FooterBlock', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_footerBlock).default;
-  }
-});
-
-var _footerNav = __webpack_require__(226);
-
-Object.defineProperty(exports, 'FooterNav', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_footerNav).default;
-  }
-});
-
-var _headerBlock = __webpack_require__(229);
-
-Object.defineProperty(exports, 'HeaderBlock', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_headerBlock).default;
-  }
-});
-
-var _iconButton = __webpack_require__(232);
-
-Object.defineProperty(exports, 'IconButton', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_iconButton).default;
-  }
-});
-
-var _legalNav = __webpack_require__(235);
-
-Object.defineProperty(exports, 'LegalNav', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_legalNav).default;
-  }
-});
-
-var _listSection = __webpack_require__(238);
-
-Object.defineProperty(exports, 'ListSection', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_listSection).default;
-  }
-});
-
-var _listUnordered = __webpack_require__(242);
-
-Object.defineProperty(exports, 'ListUnordered', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_listUnordered).default;
-  }
-});
-
-var _mainNav = __webpack_require__(245);
-
-Object.defineProperty(exports, 'MainNav', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_mainNav).default;
-  }
-});
-
-var _mainNavItem = __webpack_require__(248);
-
-Object.defineProperty(exports, 'MainNavItem', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_mainNavItem).default;
-  }
-});
-
-var _modal = __webpack_require__(251);
-
-Object.defineProperty(exports, 'Modal', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_modal).default;
-  }
-});
-
-var _pager = __webpack_require__(254);
-
-Object.defineProperty(exports, 'Pager', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_pager).default;
-  }
-});
-
-var _product = __webpack_require__(257);
-
-Object.defineProperty(exports, 'Product', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_product).default;
-  }
-});
-
-var _search = __webpack_require__(260);
-
-Object.defineProperty(exports, 'Search', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_search).default;
-  }
-});
-
-var _socialNav = __webpack_require__(263);
-
-Object.defineProperty(exports, 'SocialNav', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_socialNav).default;
-  }
-});
-
-var _subnavigationItem = __webpack_require__(266);
-
-Object.defineProperty(exports, 'SubNavigationItem', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_subnavigationItem).default;
-  }
-});
-
-var _sysNav = __webpack_require__(269);
-
-Object.defineProperty(exports, 'SysNav', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_sysNav).default;
-  }
-});
-
-var _tab = __webpack_require__(272);
-
-Object.defineProperty(exports, 'Tab', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_tab).default;
-  }
-});
-
-var _tabs = __webpack_require__(275);
-
-Object.defineProperty(exports, 'Tabs', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_tabs).default;
-  }
-});
-
-var _tag = __webpack_require__(278);
-
-Object.defineProperty(exports, 'Tag', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_tag).default;
-  }
-});
-
-var _tagList = __webpack_require__(281);
-
-Object.defineProperty(exports, 'TagList', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_tagList).default;
-  }
-});
-
-var _blockIcon = __webpack_require__(284);
+var _blockIcon = __webpack_require__(183);
 
 Object.defineProperty(exports, 'BlockIcon', {
   enumerable: true,
@@ -5770,12 +5482,318 @@ Object.defineProperty(exports, 'BlockIcon', {
   }
 });
 
-var _heroHeading = __webpack_require__(287);
+var _brand = __webpack_require__(186);
+
+Object.defineProperty(exports, 'Brand', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_brand).default;
+  }
+});
+
+var _brandCard = __webpack_require__(189);
+
+Object.defineProperty(exports, 'BrandCard', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_brandCard).default;
+  }
+});
+
+var _businessCard = __webpack_require__(192);
+
+Object.defineProperty(exports, 'BusinessCard', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_businessCard).default;
+  }
+});
+
+var _LEGACY__card = __webpack_require__(195);
+
+Object.defineProperty(exports, 'Card', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_LEGACY__card).default;
+  }
+});
+
+var _cardProduct = __webpack_require__(198);
+
+Object.defineProperty(exports, 'CardProduct', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_cardProduct).default;
+  }
+});
+
+var _color = __webpack_require__(201);
+
+Object.defineProperty(exports, 'Color', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_color).default;
+  }
+});
+
+var _contentBlock = __webpack_require__(205);
+
+Object.defineProperty(exports, 'ContentBlock', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_contentBlock).default;
+  }
+});
+
+var _contentToggle = __webpack_require__(208);
+
+Object.defineProperty(exports, 'ContentToggle', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_contentToggle).default;
+  }
+});
+
+var _ctaBlock = __webpack_require__(211);
+
+Object.defineProperty(exports, 'CtaBlock', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_ctaBlock).default;
+  }
+});
+
+var _currency = __webpack_require__(214);
+
+Object.defineProperty(exports, 'Currency', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_currency).default;
+  }
+});
+
+var _fauxVerticalScroll = __webpack_require__(217);
+
+Object.defineProperty(exports, 'FauxVerticalScroll', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_fauxVerticalScroll).default;
+  }
+});
+
+var _flyout = __webpack_require__(223);
+
+Object.defineProperty(exports, 'Flyout', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_flyout).default;
+  }
+});
+
+var _flyoutSection = __webpack_require__(226);
+
+Object.defineProperty(exports, 'FlyoutSection', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_flyoutSection).default;
+  }
+});
+
+var _footerBlock = __webpack_require__(229);
+
+Object.defineProperty(exports, 'FooterBlock', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_footerBlock).default;
+  }
+});
+
+var _footerNav = __webpack_require__(232);
+
+Object.defineProperty(exports, 'FooterNav', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_footerNav).default;
+  }
+});
+
+var _headerBlock = __webpack_require__(235);
+
+Object.defineProperty(exports, 'HeaderBlock', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_headerBlock).default;
+  }
+});
+
+var _heroHeading = __webpack_require__(238);
 
 Object.defineProperty(exports, 'HeroHeading', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_heroHeading).default;
+  }
+});
+
+var _iconButton = __webpack_require__(241);
+
+Object.defineProperty(exports, 'IconButton', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_iconButton).default;
+  }
+});
+
+var _legalNav = __webpack_require__(244);
+
+Object.defineProperty(exports, 'LegalNav', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_legalNav).default;
+  }
+});
+
+var _listSection = __webpack_require__(247);
+
+Object.defineProperty(exports, 'ListSection', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_listSection).default;
+  }
+});
+
+var _listUnordered = __webpack_require__(251);
+
+Object.defineProperty(exports, 'ListUnordered', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_listUnordered).default;
+  }
+});
+
+var _listUnorderedLimit = __webpack_require__(254);
+
+Object.defineProperty(exports, 'ListUnorderedLimit', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_listUnorderedLimit).default;
+  }
+});
+
+var _mainNav = __webpack_require__(258);
+
+Object.defineProperty(exports, 'MainNav', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_mainNav).default;
+  }
+});
+
+var _mainNavItem = __webpack_require__(261);
+
+Object.defineProperty(exports, 'MainNavItem', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_mainNavItem).default;
+  }
+});
+
+var _modal = __webpack_require__(264);
+
+Object.defineProperty(exports, 'Modal', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_modal).default;
+  }
+});
+
+var _pager = __webpack_require__(267);
+
+Object.defineProperty(exports, 'Pager', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_pager).default;
+  }
+});
+
+var _product = __webpack_require__(270);
+
+Object.defineProperty(exports, 'Product', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_product).default;
+  }
+});
+
+var _search = __webpack_require__(273);
+
+Object.defineProperty(exports, 'Search', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_search).default;
+  }
+});
+
+var _socialNav = __webpack_require__(276);
+
+Object.defineProperty(exports, 'SocialNav', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_socialNav).default;
+  }
+});
+
+var _subnavigationItem = __webpack_require__(279);
+
+Object.defineProperty(exports, 'SubNavigationItem', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_subnavigationItem).default;
+  }
+});
+
+var _sysNav = __webpack_require__(282);
+
+Object.defineProperty(exports, 'SysNav', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_sysNav).default;
+  }
+});
+
+var _tab = __webpack_require__(285);
+
+Object.defineProperty(exports, 'Tab', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_tab).default;
+  }
+});
+
+var _tabs = __webpack_require__(288);
+
+Object.defineProperty(exports, 'Tabs', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_tabs).default;
+  }
+});
+
+var _tag = __webpack_require__(291);
+
+Object.defineProperty(exports, 'Tag', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_tag).default;
+  }
+});
+
+var _tagList = __webpack_require__(294);
+
+Object.defineProperty(exports, 'TagList', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_tagList).default;
   }
 });
 
@@ -6175,13 +6193,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _brandCard = __webpack_require__(184);
+var _blockIcon = __webpack_require__(184);
 
-var _brandCard2 = _interopRequireDefault(_brandCard);
+var _blockIcon2 = _interopRequireDefault(_blockIcon);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = _brandCard2.default;
+exports.default = _blockIcon2.default;
 
 /***/ }),
 /* 184 */
@@ -6193,9 +6211,211 @@ exports.default = _brandCard2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+var _blockIconVue = __webpack_require__(185);
+
+var _blockIconVue2 = _interopRequireDefault(_blockIconVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BlockIcon = function (_Vue) {
+    _inherits(BlockIcon, _Vue);
+
+    function BlockIcon() {
+        _classCallCheck(this, BlockIcon);
+
+        return _possibleConstructorReturn(this, (BlockIcon.__proto__ || Object.getPrototypeOf(BlockIcon)).apply(this, arguments));
+    }
+
+    _createClass(BlockIcon, [{
+        key: "getClassNames",
+        value: function getClassNames(type) {
+            return {
+                ContentButton: 'button',
+                ContentLink: 'link link--medium',
+                YoutubeLink: ''
+            }[type] || '';
+        }
+    }]);
+
+    return BlockIcon;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], BlockIcon.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], BlockIcon.prototype, "description", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], BlockIcon.prototype, "icon", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], BlockIcon.prototype, "cta", void 0);
+BlockIcon = __decorate([_blockIconVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'BlockIcon'
+})], BlockIcon);
+exports.default = BlockIcon;
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"block-icon flexgrid"},[_c('div',{staticClass:"block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"},[(_vm.icon)?_c('icon',{staticClass:"block-icon__icon",attrs:{"icon-name":_vm.icon}}):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"},[_c('h3',{staticClass:"block-icon__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"block-icon__description"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",staticClass:"block-icon__link",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _brand = __webpack_require__(187);
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _brand.Brand;
+  }
+});
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Brand = undefined;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+var _brandVue = __webpack_require__(188);
+
+var _brandVue2 = _interopRequireDefault(_brandVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Brand = function (_Vue) {
+    _inherits(Brand, _Vue);
+
+    function Brand() {
+        _classCallCheck(this, Brand);
+
+        return _possibleConstructorReturn(this, (Brand.__proto__ || Object.getPrototypeOf(Brand)).apply(this, arguments));
+    }
+
+    return Brand;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], Brand.prototype, "image", void 0);
+exports.Brand = Brand = __decorate([_brandVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Brand'
+})], Brand);
+exports.Brand = Brand;
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"brand"},[_c('c-image',_vm._b({staticClass:"brand__image"},'c-image',_vm.image,false))],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _brandCard = __webpack_require__(190);
+
+var _brandCard2 = _interopRequireDefault(_brandCard);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _brandCard2.default;
+
+/***/ }),
+/* 190 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.default = {
     name: 'brand-card',
-    template: __webpack_require__(185),
+    template: __webpack_require__(191),
     props: {
         body: {
             type: String,
@@ -6215,13 +6435,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 185 */
+/* 191 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"brand-card\">\n    <div class=\"brand-card__image-wrapper\">\n        <responsive-picture v-bind=\"image\"></responsive-picture>\n    </div>\n    <template v-if=\"body && type === 'text'\">\n        <p class=\"brand-card__quote\">{{body}}</p>\n    </template>\n    <template v-else-if=\"body\">\n        <q class=\"brand-card__quote\">{{body}}</q>\n    </template>\n</div>";
 
 /***/ }),
-/* 186 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6231,7 +6451,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _businessCard = __webpack_require__(187);
+var _businessCard = __webpack_require__(193);
 
 var _businessCard2 = _interopRequireDefault(_businessCard);
 
@@ -6240,7 +6460,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _businessCard2.default;
 
 /***/ }),
-/* 187 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6256,11 +6476,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _events = __webpack_require__(7);
+var _events = __webpack_require__(6);
 
 var _events2 = _interopRequireDefault(_events);
 
-var _businessCardVue = __webpack_require__(188);
+var _businessCardVue = __webpack_require__(194);
 
 var _businessCardVue2 = _interopRequireDefault(_businessCardVue);
 
@@ -6333,7 +6553,7 @@ BusinessCard = __decorate([_businessCardVue2.default, (0, _vuePropertyDecorator.
 exports.default = BusinessCard;
 
 /***/ }),
-/* 188 */
+/* 194 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"business-card",attrs:{"href":_vm.contentLink.url,"rel":"noopener","target":"_blank","tabindex":"0"},on:{"click":function($event){_vm.clickEvent ? _vm.$emitPublic(_vm.clickEventType, _vm.clickEventData) : ''}}},[_c('div',{staticClass:"business-card__header"},[_c('div',{staticClass:"business-card__image-wrapper"},[(_vm.image)?_c('responsive-picture',_vm._b({},'responsive-picture',_vm.mapImage(_vm.image),false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"business-card__description"},[_c('h4',{staticClass:"business-card__title"},[_vm._v("\n                "+_vm._s(_vm.title)+"\n            ")]),_vm._v(" "),_vm._l((_vm.properties),function(property){return (_vm.properties)?_c('p',{staticClass:"business-card__property"},[_vm._v("\n                "+_vm._s(property.value)+" "+_vm._s(property.label)+"\n            ")]):_vm._e()})],2)]),_vm._v(" "),_c('div',{staticClass:"business-card__footer"},[_c('span',{staticClass:"link faux-content-link business-card__link"},[_c('span',{staticClass:"link__underline"},[_vm._v("\n                "+_vm._s(_vm.contentLink.label)+"\n            ")])])])])}
@@ -6350,7 +6570,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 189 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6360,7 +6580,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _card = __webpack_require__(190);
+var _card = __webpack_require__(196);
 
 var _card2 = _interopRequireDefault(_card);
 
@@ -6369,7 +6589,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _card2.default;
 
 /***/ }),
-/* 190 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6429,18 +6649,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Card.prototype, "card", void 0);
 Card = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'card',
-    template: __webpack_require__(191)
+    template: __webpack_require__(197)
 })], Card);
 exports.default = Card;
 
 /***/ }),
-/* 191 */
+/* 197 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"card\" :class=\"classObject\" tabindex=\"0\">\n    <div class=\"card__visual\">\n        <div class=\"card__image\" v-if=\"card.image\">\n            <responsive-picture class=\"img--responsive\" v-if=\"card.image.mobileWidth\" v-bind=\"card.image\" ></responsive-picture>\n            <cms-image class=\"img--responsive\" v-else :image=\"card.image[0]\" :orientation=\"'square'\"></cms-image>\n        </div>\n        <icon v-if=\"card.icon\" :icon-name=\"card.icon.iconName\" class=\"card__icon\"></icon>\n    </div>\n    <div class=\"card__content\">\n        <h3 class=\"card__headline\">{{ card.title }}</h3>\n        <p class=\"card__description\" v-if=\"card.description\">{{ card.description }}</p>\n        <content-link class=\"link\" v-if=\"card.contentLink && card.contentLink.href\" :block=\"'card'\" :url=\"card.contentLink.href\" :label=\"card.contentLink.text\">\n        </content-link>\n    </div>\n</article>\n\n";
 
 /***/ }),
-/* 192 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6450,7 +6670,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _cardProduct = __webpack_require__(193);
+var _cardProduct = __webpack_require__(199);
 
 var _cardProduct2 = _interopRequireDefault(_cardProduct);
 
@@ -6459,7 +6679,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _cardProduct2.default;
 
 /***/ }),
-/* 193 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6475,7 +6695,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _cardProductVue = __webpack_require__(194);
+var _cardProductVue = __webpack_require__(200);
 
 var _cardProductVue2 = _interopRequireDefault(_cardProductVue);
 
@@ -6547,7 +6767,7 @@ CardProduct = __decorate([_cardProductVue2.default, (0, _vuePropertyDecorator.Co
 exports.default = CardProduct;
 
 /***/ }),
-/* 194 */
+/* 200 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"card-product"},[_c('anchor-overlay',{attrs:{"url":_vm.url,"title":_vm.title}}),_vm._v(" "),_c('div',{staticClass:"card-product__image-container"},[(_vm.image && !_vm.imageError)?_c('c-image',_vm._b({staticClass:"card-product__image",attrs:{"resize-behavior":"crop"},on:{"error":function($event){_vm.imageError = true}}},'c-image',_vm.image,false)):_vm._e(),_vm._v(" "),(!_vm.image || _vm.imageError)?_c('div',{staticClass:"img--contain card-product__image gray-background"},[_vm._v(_vm._s(_vm.title))]):_vm._e()],1),_vm._v(" "),_c('h3',{staticClass:"card-product__heading"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('list-unordered',{staticClass:"card-product__list",attrs:{"listItems":_vm.listItems}})],1)}
@@ -6564,7 +6784,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 195 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6574,7 +6794,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _color = __webpack_require__(196);
+var _color = __webpack_require__(202);
 
 var _color2 = _interopRequireDefault(_color);
 
@@ -6583,7 +6803,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _color2.default;
 
 /***/ }),
-/* 196 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6599,9 +6819,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _color = __webpack_require__(197);
+var _color = __webpack_require__(203);
 
-var _colorVue = __webpack_require__(198);
+var _colorVue = __webpack_require__(204);
 
 var _colorVue2 = _interopRequireDefault(_colorVue);
 
@@ -6672,7 +6892,7 @@ Color = __decorate([_colorVue2.default, (0, _vuePropertyDecorator.Component)({
 exports.default = Color;
 
 /***/ }),
-/* 197 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6708,7 +6928,7 @@ var Color = exports.Color = function () {
 }();
 
 /***/ }),
-/* 198 */
+/* 204 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"color",attrs:{"tabindex":"0"}},[_c('div',{staticClass:"color__spec color__spec--show"},[_c('icon',{staticClass:"color__icon",style:(_vm.styleIcon),attrs:{"icon-name":"show"}})],1),_vm._v(" "),_c('div',{staticClass:"color__spec color__spec--swatch",style:(_vm.styleBackground)})])}
@@ -6725,7 +6945,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 199 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6735,7 +6955,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentBlock = __webpack_require__(200);
+var _contentBlock = __webpack_require__(206);
 
 var _contentBlock2 = _interopRequireDefault(_contentBlock);
 
@@ -6744,7 +6964,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentBlock2.default;
 
 /***/ }),
-/* 200 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6760,7 +6980,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _contentBlockVue = __webpack_require__(201);
+var _contentBlockVue = __webpack_require__(207);
 
 var _contentBlockVue2 = _interopRequireDefault(_contentBlockVue);
 
@@ -6816,7 +7036,7 @@ ContentBlock = __decorate([_contentBlockVue2.default, (0, _vuePropertyDecorator.
 exports.default = ContentBlock;
 
 /***/ }),
-/* 201 */
+/* 207 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-block disable-focus",attrs:{"tabIndex":"-1"}},[_c('div',{staticClass:"content-block-container__image"},[(_vm.image)?_c('c-image',_vm._b({staticClass:"content-block__image",attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"content-block__content"},[_c('h3',{staticClass:"content-block__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('p',{staticClass:"content-block__description"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])}
@@ -6833,7 +7053,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 202 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6843,7 +7063,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentToggle = __webpack_require__(203);
+var _contentToggle = __webpack_require__(209);
 
 var _contentToggle2 = _interopRequireDefault(_contentToggle);
 
@@ -6852,7 +7072,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentToggle2.default;
 
 /***/ }),
-/* 203 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6863,7 +7083,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'content-toggle',
-    template: __webpack_require__(204),
+    template: __webpack_require__(210),
     props: {
         toggleState: {
             type: Boolean,
@@ -6902,13 +7122,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 204 */
+/* 210 */
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"toggle toggle--icon\" role=\"button\" tabindex=\"0\" @click=\"toggle\"\n       @keyup.enter=\"toggle\">\n    <icon :icon-name=\"toggleIcon\"></icon>\n    <span>{{ toggleText }}</span>\n</a>\n";
 
 /***/ }),
-/* 205 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6918,7 +7138,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ctaBlock = __webpack_require__(206);
+var _ctaBlock = __webpack_require__(212);
 
 var _ctaBlock2 = _interopRequireDefault(_ctaBlock);
 
@@ -6927,7 +7147,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _ctaBlock2.default;
 
 /***/ }),
-/* 206 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6943,7 +7163,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _ctaBlockVue = __webpack_require__(207);
+var _ctaBlockVue = __webpack_require__(213);
 
 var _ctaBlockVue2 = _interopRequireDefault(_ctaBlockVue);
 
@@ -7023,7 +7243,7 @@ CtaBlock = __decorate([_ctaBlockVue2.default, (0, _vuePropertyDecorator.Componen
 exports.default = CtaBlock;
 
 /***/ }),
-/* 207 */
+/* 213 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.ctas.length > 0)?_c('div',{staticClass:"cta-block",class:_vm.classMod},[_vm._l((_vm.ctas),function(cta,index){return [_c(cta.type,_vm._b({key:index,tag:"component",class:_vm.classObject(cta.type),attrs:{"label":cta.label,"mod":_vm.modifier(cta.type)}},'component',cta,false))]})],2):_vm._e()}
@@ -7040,7 +7260,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 208 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7050,7 +7270,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _currency = __webpack_require__(209);
+var _currency = __webpack_require__(215);
 
 var _currency2 = _interopRequireDefault(_currency);
 
@@ -7059,7 +7279,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _currency2.default;
 
 /***/ }),
-/* 209 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7077,7 +7297,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'currency',
-    template: __webpack_require__(210),
+    template: __webpack_require__(216),
     props: {
         amount: {
             type: Number,
@@ -7099,13 +7319,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 210 */
+/* 216 */
 /***/ (function(module, exports) {
 
 module.exports = "<span class=\"currency\">\n    <span class=\"currency__type\">{{ currencyType }}</span>\n    {{ formattedAmount }}\n</span>\n";
 
 /***/ }),
-/* 211 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7115,7 +7335,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _fauxVerticalScroll = __webpack_require__(212);
+var _fauxVerticalScroll = __webpack_require__(218);
 
 var _fauxVerticalScroll2 = _interopRequireDefault(_fauxVerticalScroll);
 
@@ -7124,7 +7344,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _fauxVerticalScroll2.default;
 
 /***/ }),
-/* 212 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7142,11 +7362,11 @@ var _vuePropertyDecorator = __webpack_require__(0);
 
 var _gsap = __webpack_require__(3);
 
-var _Draggable = __webpack_require__(213);
+var _Draggable = __webpack_require__(219);
 
 var _Draggable2 = _interopRequireDefault(_Draggable);
 
-__webpack_require__(214);
+__webpack_require__(220);
 
 var _defaults = __webpack_require__(4);
 
@@ -7160,7 +7380,7 @@ var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
-var _fauxVerticalScrollVue = __webpack_require__(216);
+var _fauxVerticalScrollVue = __webpack_require__(222);
 
 var _fauxVerticalScrollVue2 = _interopRequireDefault(_fauxVerticalScrollVue);
 
@@ -7319,13 +7539,13 @@ FauxVerticalScroll = __decorate([_fauxVerticalScrollVue2.default, (0, _vueProper
 exports.default = FauxVerticalScroll;
 
 /***/ }),
-/* 213 */
+/* 219 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__213__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__219__;
 
 /***/ }),
-/* 214 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7351,7 +7571,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
  * @author: Jack Doyle, jack@greensock.com
  */
 
-var _TweenLite = __webpack_require__(215);
+var _TweenLite = __webpack_require__(221);
 
 _TweenLite._gsScope._gsDefine("plugins.ThrowPropsPlugin", ["utils.VelocityTracker", "plugins.TweenPlugin", "TweenLite", "easing.Ease"], function (VelocityTracker) {
 
@@ -8084,13 +8304,13 @@ exports.default = ThrowPropsPlugin;
 var VelocityTracker = exports.VelocityTracker = _TweenLite.globals.com.greensock.utils.VelocityTracker;
 
 /***/ }),
-/* 215 */
+/* 221 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__215__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__221__;
 
 /***/ }),
-/* 216 */
+/* 222 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"container",staticClass:"faux-vertical-scroll"},[_c('div',{ref:"content",staticClass:"faux-vertical-scroll__content"},[_vm._t("default")],2),_vm._v(" "),_c('div',{ref:"bar",staticClass:"faux-vertical-scroll__bar",style:(_vm.barStyle())})])}
@@ -8107,7 +8327,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 217 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8117,7 +8337,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _flyout = __webpack_require__(218);
+var _flyout = __webpack_require__(224);
 
 var _flyout2 = _interopRequireDefault(_flyout);
 
@@ -8126,7 +8346,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _flyout2.default;
 
 /***/ }),
-/* 218 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8326,18 +8546,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }),
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], Flyout.prototype, "disableKeyboardEvents", void 0);
 Flyout = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'flyout',
-    template: __webpack_require__(219)
+    template: __webpack_require__(225)
 })], Flyout);
 exports.default = Flyout;
 
 /***/ }),
-/* 219 */
+/* 225 */
 /***/ (function(module, exports) {
 
 module.exports = "<ul class=\"main-nav__flyout\"\n    v-if=\"items && items.length > 0\"\n    @keydown.down=\"selectNextLink\"\n    @keydown.tab.exact=\"selectNextLink\"\n    @keydown.up=\"selectPrevLink\"\n    @keydown.tab.shift.exact=\"selectPrevLink\"\n    @keydown.right=\"selectNextSection($event, true)\"\n    @keydown.left=\"selectPrevSection($event, true)\"\n    @mouseenter.stop=\"open\"\n    v-show=\"isCompact || !viewportUtil.isResizing\">\n    <flyout-section ref=\"items\"\n        v-for=\"(item, key) in items\"\n        v-if=\"item.items && item.items.length\"\n        v-bind=\"item\"\n        :is-compact=\"isCompact\"\n        :key=\"key\"\n        :itemId=\"`flyout_title_${ uniqId }_${ key }`\"\n        @close=\"$emit('close')\"\n        >\n    </flyout-section>\n</ul>\n";
 
 /***/ }),
-/* 220 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8347,7 +8567,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _flyoutSection = __webpack_require__(221);
+var _flyoutSection = __webpack_require__(227);
 
 var _flyoutSection2 = _interopRequireDefault(_flyoutSection);
 
@@ -8356,7 +8576,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _flyoutSection2.default;
 
 /***/ }),
-/* 221 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8372,7 +8592,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _flyoutSectionVue = __webpack_require__(222);
+var _flyoutSectionVue = __webpack_require__(228);
 
 var _flyoutSectionVue2 = _interopRequireDefault(_flyoutSectionVue);
 
@@ -8554,7 +8774,7 @@ Flyout = __decorate([_flyoutSectionVue2.default, (0, _vuePropertyDecorator.Compo
 exports.default = Flyout;
 
 /***/ }),
-/* 222 */
+/* 228 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"flyout__section",class:_vm.sectionClass},[(_vm.label)?_c('strong',{staticClass:"flyout__title",attrs:{"id":_vm.itemId}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"flyout__list",attrs:{"aria-labelledby":_vm.itemId,"aria-haspopup":_vm.items.length > _vm.maxVisible,"aria-expanded":!_vm.isCompact || _vm.isExpanded}},[_vm._l((_vm.items),function(item,index){return (index < _vm.maxVisible)?_c('li',{staticClass:"flyout__list-item"},[_c('content-link',{ref:"firstFocusableLinks",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && ! _vm.isExpanded),expression:"flyoutToggleIsVisible && ! isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:_vm.flyoutToggleIsVisible && ! _vm.isExpanded ? 'focusable' : '',staticClass:"flyout__toggle",attrs:{"toggle-state":false,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1),_vm._v(" "),_vm._l((_vm.items),function(item,index){return (index >= _vm.maxVisible)?_c('li',{directives:[{name:"show",rawName:"v-show",value:(!_vm.isCompact || _vm.isExpanded),expression:"!isCompact || isExpanded"}],staticClass:"flyout__list-item"},[_c('content-link',{ref:"focusable",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && _vm.isExpanded),expression:"flyoutToggleIsVisible && isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:"flyoutToggleIsVisible && isExpanded ? 'focusable' : ''",staticClass:"flyout__toggle",attrs:{"toggle-state":true,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1)],2),_vm._v(" "),(_vm.bottomItem)?[_c('content-link',{ref:"bottomLink",staticClass:"link flyout__link--cta-mini",attrs:{"url":_vm.bottomItem.url,"label":_vm.bottomItem.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})]:_vm._e()],2)}
@@ -8571,7 +8791,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 223 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8581,7 +8801,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _footerBlock = __webpack_require__(224);
+var _footerBlock = __webpack_require__(230);
 
 var _footerBlock2 = _interopRequireDefault(_footerBlock);
 
@@ -8590,7 +8810,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _footerBlock2.default;
 
 /***/ }),
-/* 224 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8604,7 +8824,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _footerBlockVue = __webpack_require__(225);
+var _footerBlockVue = __webpack_require__(231);
 
 var _footerBlockVue2 = _interopRequireDefault(_footerBlockVue);
 
@@ -8646,7 +8866,7 @@ FooterBlock = __decorate([_footerBlockVue2.default, (0, _vuePropertyDecorator.Co
 exports.default = FooterBlock;
 
 /***/ }),
-/* 225 */
+/* 231 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer-block"},[(_vm.ctas)?_c('cta-block',{attrs:{"ctas":_vm.ctas.ctas,"styleContentButton":"button","mod":"footer","block":"overview"}}):_vm._e()],1)}
@@ -8663,7 +8883,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 226 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8673,7 +8893,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _footerNav = __webpack_require__(227);
+var _footerNav = __webpack_require__(233);
 
 var _footerNav2 = _interopRequireDefault(_footerNav);
 
@@ -8682,7 +8902,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _footerNav2.default;
 
 /***/ }),
-/* 227 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8696,7 +8916,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _footerNavVue = __webpack_require__(228);
+var _footerNavVue = __webpack_require__(234);
 
 var _footerNavVue2 = _interopRequireDefault(_footerNavVue);
 
@@ -8738,7 +8958,7 @@ FooterNav = __decorate([_footerNavVue2.default, (0, _vuePropertyDecorator.Compon
 exports.default = FooterNav;
 
 /***/ }),
-/* 228 */
+/* 234 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.navigation && _vm.navigation.length)?_c('nav',{staticClass:"footer__nav"},[_c('div',{staticClass:"flexgrid"},[_c('div',{staticClass:"flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6"},[_c('div',{staticClass:"flexgrid"},[(_vm.navigation.length > 0)?_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"footer-nav__column"},[_c('h3',{staticClass:"footer-nav__title",attrs:{"id":"footer-nav__title-01"}},[_vm._v(_vm._s(_vm.navigation[0].label))]),_vm._v(" "),(_vm.navigation[0].items.length)?[_c('content-link-list',{attrs:{"links":_vm.navigation[0].items,"block":"footer-nav","aria-labelledby":"footer-nav__title-01"}})]:_vm._e()],2)]):_vm._e(),_vm._v(" "),(_vm.navigation.length > 1)?_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"footer-nav__column"},[_c('h3',{staticClass:"footer-nav__title",attrs:{"id":"footer-nav__title-02"}},[_vm._v(_vm._s(_vm.navigation[1].label))]),_vm._v(" "),(_vm.navigation[1].items.length)?[_c('content-link-list',{attrs:{"links":_vm.navigation[1].items,"block":"footer-nav","aria-labelledby":"footer-nav__title-02"}})]:_vm._e()],2)]):_vm._e()])]),_vm._v(" "),(_vm.navigation.length > 2)?_c('div',{staticClass:"flexgrid__cell--xxs-6 flexgrid__cell--xs-4 flexgrid__cell--sm-6"},[_c('div',{staticClass:"footer-nav__column footer-nav__column--last footer-nav__column--double"},[_c('h3',{staticClass:"footer-nav__title",attrs:{"id":"footer-nav__title-03"}},[_vm._v(_vm._s(_vm.navigation[2].label))]),_vm._v(" "),(_vm.navigation[2].items.length)?[_c('content-link-list',{attrs:{"links":_vm.navigation[2].items,"block":"footer-nav","aria-labelledby":"footer-nav__title-03"}})]:_vm._e()],2)]):_vm._e()])]):_vm._e()}
@@ -8755,7 +8975,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 229 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8765,7 +8985,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _headerBlock = __webpack_require__(230);
+var _headerBlock = __webpack_require__(236);
 
 var _headerBlock2 = _interopRequireDefault(_headerBlock);
 
@@ -8774,7 +8994,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _headerBlock2.default;
 
 /***/ }),
-/* 230 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8821,18 +9041,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeaderBlock.prototype, "subtitle", void 0);
 HeaderBlock = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'HeaderBlock',
-    template: __webpack_require__(231)
+    template: __webpack_require__(237)
 })], HeaderBlock);
 exports.default = HeaderBlock;
 
 /***/ }),
-/* 231 */
+/* 237 */
 /***/ (function(module, exports) {
 
 module.exports = "<header class=\"header-block\">\n    <slot>\n        <h2 class=\"header-block__title\" v-if=\"title\">{{ title }}</h2>\n        <p class=\"header-block__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n    </slot>\n</header>\n";
 
 /***/ }),
-/* 232 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8842,7 +9062,84 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _iconButton = __webpack_require__(233);
+var _heroHeading = __webpack_require__(239);
+
+var _heroHeading2 = _interopRequireDefault(_heroHeading);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _heroHeading2.default;
+
+/***/ }),
+/* 239 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HeroHeading = function (_Vue) {
+    _inherits(HeroHeading, _Vue);
+
+    function HeroHeading() {
+        _classCallCheck(this, HeroHeading);
+
+        return _possibleConstructorReturn(this, (HeroHeading.__proto__ || Object.getPrototypeOf(HeroHeading)).apply(this, arguments));
+    }
+
+    return HeroHeading;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], HeroHeading.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeroHeading.prototype, "subtitle", void 0);
+HeroHeading = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'HeroHeading',
+    template: __webpack_require__(240)
+})], HeroHeading);
+exports.default = HeroHeading;
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n    <h1 class='hero__title header-block__title--hero'>{{ title }}</h1>\n    <h2 class=\"hero__subtitle header-block__subtitle--hero\" v-if=\"subtitle\">{{ subtitle }}</h2>\n</div>\n";
+
+/***/ }),
+/* 241 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _iconButton = __webpack_require__(242);
 
 var _iconButton2 = _interopRequireDefault(_iconButton);
 
@@ -8851,7 +9148,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _iconButton2.default;
 
 /***/ }),
-/* 233 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8867,7 +9164,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _iconButtonVue = __webpack_require__(234);
+var _iconButtonVue = __webpack_require__(243);
 
 var _iconButtonVue2 = _interopRequireDefault(_iconButtonVue);
 
@@ -8923,7 +9220,7 @@ IconButton = __decorate([_iconButtonVue2.default, (0, _vuePropertyDecorator.Comp
 exports.default = IconButton;
 
 /***/ }),
-/* 234 */
+/* 243 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"icon-button",class:_vm.buttonClass,attrs:{"aria-label":_vm.buttonAriaLabel,"role":"button","tabindex":"0"},on:{"click":function($event){return _vm.$emit('click')},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.$emit('click')}}},[_c('icon',{staticClass:"icon-button__icon",attrs:{"icon-name":_vm.iconName}}),_vm._v(" "),(_vm.hasDefaultSlot)?_c('span',{staticClass:"icon-button__label"},[_vm._t("default")],2):_vm._e()],1)}
@@ -8940,7 +9237,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 235 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8950,7 +9247,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _legalNav = __webpack_require__(236);
+var _legalNav = __webpack_require__(245);
 
 var _legalNav2 = _interopRequireDefault(_legalNav);
 
@@ -8959,7 +9256,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _legalNav2.default;
 
 /***/ }),
-/* 236 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8973,7 +9270,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _legalNavVue = __webpack_require__(237);
+var _legalNavVue = __webpack_require__(246);
 
 var _legalNavVue2 = _interopRequireDefault(_legalNavVue);
 
@@ -9016,7 +9313,7 @@ LegalNav = __decorate([_legalNavVue2.default, (0, _vuePropertyDecorator.Componen
 exports.default = LegalNav;
 
 /***/ }),
-/* 237 */
+/* 246 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"legal"},[_c('p',{staticClass:"legal__copyright-label"},[_c('small',{domProps:{"innerHTML":_vm._s(_vm.label)}})]),_vm._v(" "),(_vm.navigation && _vm.navigation.length)?[_c('nav',{staticClass:"legal__nav"},[_c('content-link-list',{attrs:{"links":_vm.navigation,"block":"legal"}})],1)]:_vm._e()],2)}
@@ -9033,7 +9330,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 238 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9043,7 +9340,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _listSection = __webpack_require__(239);
+var _listSection = __webpack_require__(248);
 
 var _listSection2 = _interopRequireDefault(_listSection);
 
@@ -9052,7 +9349,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _listSection2.default;
 
 /***/ }),
-/* 239 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9080,17 +9377,17 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _functions = __webpack_require__(240);
+var _functions = __webpack_require__(249);
 
 var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
-var _events = __webpack_require__(7);
+var _events = __webpack_require__(6);
 
 var _events2 = _interopRequireDefault(_events);
 
-var _listSectionVue = __webpack_require__(241);
+var _listSectionVue = __webpack_require__(250);
 
 var _listSectionVue2 = _interopRequireDefault(_listSectionVue);
 
@@ -9284,7 +9581,7 @@ ListSection = __decorate([_listSectionVue2.default, (0, _vuePropertyDecorator.Co
 exports.default = ListSection;
 
 /***/ }),
-/* 240 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9318,7 +9615,7 @@ var keyValueMap = exports.keyValueMap = function keyValueMap(arr) {
 };
 
 /***/ }),
-/* 241 */
+/* 250 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"list-section",class:_vm.defineCardTypesClass()},[(_vm.title)?[_c('header',{staticClass:"list-section__header"},[_c('h3',{staticClass:"list-section__title"},[_vm._v(_vm._s(_vm.title)+"\n                "),_c('span',{staticClass:"list-section__count"},[_vm._v("("+_vm._s(_vm.cards.length)+")")]),_vm._v(" "),(_vm.tooltip)?[_c('transition',{attrs:{"name":"tooltip"}},[_c('tooltip',_vm._b({directives:[{name:"show",rawName:"v-show",value:(_vm.visibleTooltip),expression:"visibleTooltip"}],staticClass:"section-tooltip",attrs:{"block":"list-section","id":("tooltip_" + _vm.uniqId)}},'tooltip',_vm.tooltip,false),[_vm._v("\n                            "+_vm._s(_vm.tooltip.description)+"\n                        ")])],1)]:_vm._e()],2),_vm._v(" "),(_vm.tooltip)?[(_vm.tooltip)?_c('action-button',{staticClass:"link list-section__info-link",attrs:{"icon":_vm.tooltip.icon,"mod":"reversed","role":"button","aria-describedby":("tooltip_" + _vm.uniqId)},nativeOn:{"click":function($event){$event.preventDefault();return _vm.toggleTooltip($event)},"blur":function($event){$event.preventDefault();return _vm.hideTooltip($event)}}},[_vm._v("\n                    "+_vm._s(_vm.tooltip.label)+"\n                ")]):_vm._e()]:_vm._e()],2)]:_vm._e(),_vm._v(" "),(_vm.cards && _vm.cards.length > 0)?_c('ul',{staticClass:"list-section-list",attrs:{"aria-label":_vm.title}},[_c('div',{staticClass:"flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"},_vm._l((_vm.cards),function(card,index){return (index < _vm.showMax)?_c('div',{key:index,staticClass:"flexgrid__cell--md-4 flexgrid__cell--xs-6"},[_c('li',{ref:"visible",refInFor:true,staticClass:"list-section-list__item"},[_c(card.type,_vm._b({tag:"component"},'component',card,false))],1)]):_vm._e()}),0),_vm._v(" "),(_vm.cards.length > _vm.showMax)?_c('transition-group',{staticClass:"flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden",attrs:{"tag":"div","css":false},on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter}},_vm._l((_vm.cards),function(card,index){return (index >= _vm.showMax)?_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.showHiddenItems),expression:"showHiddenItems"}],key:card.title + index,staticClass:"flexgrid__cell--md-4 flexgrid__cell--xs-6",attrs:{"data-index":index}},[_c('li',{staticClass:"list-section-list__item"},[_c(card.type,_vm._b({tag:"component"},'component',card,false))],1)]):_vm._e()}),0):_vm._e()],1):_vm._e(),_vm._v(" "),(_vm.cards.length > _vm.showMax && _vm.showMax && !_vm.showHiddenItems)?_c('footer',{staticClass:"list-section__footer"},[_c('button',{staticClass:"button--secondary list-section__footer__button",on:{"click":_vm.showHidden}},[_vm._v(_vm._s(_vm.showCount())+"\n        ")])]):_vm._e()],2)}
@@ -9335,7 +9632,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 242 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9345,7 +9642,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _component = __webpack_require__(243);
+var _component = __webpack_require__(252);
 
 var _component2 = _interopRequireDefault(_component);
 
@@ -9354,7 +9651,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _component2.default;
 
 /***/ }),
-/* 243 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9368,7 +9665,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _templateVue = __webpack_require__(244);
+var _templateVue = __webpack_require__(253);
 
 var _templateVue2 = _interopRequireDefault(_templateVue);
 
@@ -9410,10 +9707,10 @@ ListUnordered = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Com
 exports.default = ListUnordered;
 
 /***/ }),
-/* 244 */
+/* 253 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{staticClass:"list"},[_vm._l((_vm.listItems.items),function(item,index){return [(!item.item)?[_c(_vm.listItems.type,{key:index,tag:"component",attrs:{"item":item}})]:[_c(_vm.listItems.type,_vm._b({key:index,tag:"component"},'component',item,false))]]})],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{staticClass:"list"},[_vm._l((_vm.listItems.items),function(item,index){return [(!item.item)?[_c(_vm.listItems.type,{key:index,tag:"component",attrs:{"item":item}})]:(_vm.listItems.type)?[_c(_vm.listItems.type,_vm._b({key:index,tag:"component"},'component',item,false))]:(item.type)?[_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false))]:_vm._e()]})],2)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -9427,7 +9724,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 245 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9437,7 +9734,279 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _mainNav = __webpack_require__(246);
+var _listUnorderedLimit = __webpack_require__(255);
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _listUnorderedLimit.ListUnorderedLimit;
+  }
+});
+
+/***/ }),
+/* 255 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.ListUnorderedLimit = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+var _events = __webpack_require__(6);
+
+var _events2 = _interopRequireDefault(_events);
+
+var _stepRowAnimation = __webpack_require__(256);
+
+var _viewport = __webpack_require__(1);
+
+var _viewport2 = _interopRequireDefault(_viewport);
+
+var _listUnorderedLimitVue = __webpack_require__(257);
+
+var _listUnorderedLimitVue2 = _interopRequireDefault(_listUnorderedLimitVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ListUnorderedLimit = function (_Mixins) {
+    _inherits(ListUnorderedLimit, _Mixins);
+
+    function ListUnorderedLimit() {
+        _classCallCheck(this, ListUnorderedLimit);
+
+        var _this = _possibleConstructorReturn(this, (ListUnorderedLimit.__proto__ || Object.getPrototypeOf(ListUnorderedLimit)).apply(this, arguments));
+
+        _this.componentMounted = false;
+        _this.showAll = false;
+        _this.viewportUtil = new _viewport2.default();
+        return _this;
+    }
+
+    _createClass(ListUnorderedLimit, [{
+        key: "getClickEventData",
+        value: function getClickEventData() {
+            if (!this.limit || !this.limit.expand || !this.limit.expand.clickEvent) {
+                return null;
+            }
+            var clickEvent = this.limit.expand.clickEvent;
+
+            return {
+                dataType: clickEvent.name,
+                data: _extends({}, clickEvent.data, {
+                    pageSlug: this.$route.fullPath
+                })
+            };
+        }
+    }, {
+        key: "determineLimit",
+        value: function determineLimit(limit) {
+            if (limit === undefined) {
+                return -1;
+            }
+            if (this.listItems.length <= limit) {
+                return -1;
+            }
+            return limit;
+        }
+    }, {
+        key: "mounted",
+        value: function mounted() {
+            this.componentMounted = true;
+        }
+    }, {
+        key: "showButtonLabel",
+        value: function showButtonLabel() {
+            var label = '';
+            if (this.limit !== undefined && this.limit.expand !== undefined) {
+                label = this.limit.expand.label;
+            }
+            return label + " (" + this.listItems.length + ")";
+        }
+    }, {
+        key: "showHidden",
+        value: function showHidden() {
+            this.showAll = true;
+            this.$emitPublic(_events2.default.click, this.getClickEventData());
+        }
+    }, {
+        key: "showLimit",
+        value: function showLimit() {
+            if (this.limit === undefined || !this.componentMounted) {
+                return -1;
+            }
+            if (this.viewportUtil.isMobile) {
+                return this.determineLimit(this.limit.smallScreen);
+            }
+            return this.determineLimit(this.limit.largeScreen);
+        }
+    }]);
+
+    return ListUnorderedLimit;
+}((0, _vuePropertyDecorator.Mixins)(_stepRowAnimation.StepRowAnimation));
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], ListUnorderedLimit.prototype, "listItems", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ListUnorderedLimit.prototype, "limit", void 0);
+exports.ListUnorderedLimit = ListUnorderedLimit = __decorate([_listUnorderedLimitVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'ListUnorderedLimit'
+})], ListUnorderedLimit);
+exports.ListUnorderedLimit = ListUnorderedLimit;
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.StepRowAnimation = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _defaults = __webpack_require__(4);
+
+var _defaults2 = _interopRequireDefault(_defaults);
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+var _gsap = __webpack_require__(3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var StepRowAnimation = function (_Vue) {
+    _inherits(StepRowAnimation, _Vue);
+
+    function StepRowAnimation() {
+        _classCallCheck(this, StepRowAnimation);
+
+        var _this = _possibleConstructorReturn(this, (StepRowAnimation.__proto__ || Object.getPrototypeOf(StepRowAnimation)).apply(this, arguments));
+
+        _this.lastTopValue = 0;
+        _this.delayIncrement = 0.1;
+        _this.rowIndex = 0;
+        _this.increment = 1;
+        _this.cardTransitionDuration = _defaults2.default.defaultDuration;
+        _this.cardOffset = _defaults2.default.buildingUnit * 5;
+        return _this;
+    }
+
+    _createClass(StepRowAnimation, [{
+        key: "addRow",
+        value: function addRow(topValue) {
+            this.rowIndex = this.rowIndex + this.increment;
+            this.lastTopValue = topValue;
+        }
+    }, {
+        key: "beforeEnter",
+        value: function beforeEnter(el) {
+            _gsap.TweenLite.set(el, { opacity: 0, y: this.cardOffset });
+        }
+    }, {
+        key: "enter",
+        value: function enter(el, done) {
+            var elTopValue = el.getBoundingClientRect().top;
+            if (this.isNewRow(elTopValue)) {
+                this.addRow(elTopValue);
+            }
+            _gsap.TweenLite.fromTo(el, this.cardTransitionDuration, {
+                opacity: 0,
+                y: this.cardOffset
+            }, {
+                opacity: 1,
+                y: 0,
+                ease: _gsap.Power3.easeOut,
+                onComplete: done,
+                delay: this.rowIndex * this.delayIncrement
+            });
+        }
+    }, {
+        key: "isNewRow",
+        value: function isNewRow(topValue) {
+            return this.lastTopValue !== topValue;
+        }
+    }]);
+
+    return StepRowAnimation;
+}(_vuePropertyDecorator.Vue);
+exports.StepRowAnimation = StepRowAnimation = __decorate([_vuePropertyDecorator.Component], StepRowAnimation);
+exports.StepRowAnimation = StepRowAnimation;
+
+/***/ }),
+/* 257 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"list-unordered-limit"},[_c('main',[_c('transition-group',{attrs:{"tag":"ul"},on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter}},[_vm._l((_vm.listItems),function(item,index){return [_c('li-item',{directives:[{name:"show",rawName:"v-show",value:(_vm.showLimit() === -1 || index < _vm.showLimit() || _vm.showAll),expression:"showLimit() === -1 || index < showLimit() || showAll"}],key:index,attrs:{"item":item}})]})],2)],1),_vm._v(" "),_c('footer',{directives:[{name:"show",rawName:"v-show",value:(_vm.showLimit() !== -1 && !_vm.showAll),expression:"showLimit() !== -1 && !showAll"}]},[_c('button',{staticClass:"button--secondary",on:{"click":_vm.showHidden}},[_vm._v(_vm._s(_vm.showButtonLabel()))])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 258 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _mainNav = __webpack_require__(259);
 
 var _mainNav2 = _interopRequireDefault(_mainNav);
 
@@ -9446,7 +10015,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _mainNav2.default;
 
 /***/ }),
-/* 246 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9470,7 +10039,7 @@ var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
-var _mainNavVue = __webpack_require__(247);
+var _mainNavVue = __webpack_require__(260);
 
 var _mainNavVue2 = _interopRequireDefault(_mainNavVue);
 
@@ -9546,7 +10115,7 @@ MainNav = __decorate([_mainNavVue2.default, (0, _vuePropertyDecorator.Component)
 exports.default = MainNav;
 
 /***/ }),
-/* 247 */
+/* 260 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{key:"large-menu",staticClass:"main-nav",class:_vm.classList,attrs:{"aria-label":"site"}},[_c('ul',{staticClass:"main-nav__list",class:{'main-nav__list-visible': _vm.mainNavOpen && _vm.showCompactMenu},attrs:{"role":"menu"}},_vm._l((_vm.items),function(item,index){return (_vm.items)?_c('main-nav-item',_vm._b({key:index,ref:"navItem",refInFor:true,attrs:{"is-compact":_vm.showCompactMenu,"main-nav-open":_vm.mainNavOpen,"active":false,"itemId":'nav-' + index}},'main-nav-item',item,false)):_vm._e()}),1)])}
@@ -9563,7 +10132,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 248 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9573,7 +10142,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _mainNavItem = __webpack_require__(249);
+var _mainNavItem = __webpack_require__(262);
 
 var _mainNavItem2 = _interopRequireDefault(_mainNavItem);
 
@@ -9582,7 +10151,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _mainNavItem2.default;
 
 /***/ }),
-/* 249 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9602,7 +10171,7 @@ var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
-var _mainNavItemVue = __webpack_require__(250);
+var _mainNavItemVue = __webpack_require__(263);
 
 var _mainNavItemVue2 = _interopRequireDefault(_mainNavItemVue);
 
@@ -9874,7 +10443,7 @@ MainNavItem = __decorate([_mainNavItemVue2.default, (0, _vuePropertyDecorator.Co
 exports.default = MainNavItem;
 
 /***/ }),
-/* 250 */
+/* 263 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"main-nav__item",class:{ 'main-nav__item--active': _vm.active },attrs:{"role":"menuitem"},on:{"mouseleave":_vm.delayHideFlyout,"mouseenter":_vm.showFlyout}},[_c('div',{on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }$event.preventDefault();return _vm.selectFlyoutFirstLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }if($event.ctrlKey||$event.altKey||$event.metaKey){ return null; }return _vm.hideFlyout($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }$event.preventDefault();return _vm.hideFlyout($event)}]}},[_c('base-link',{ref:"parent",staticClass:"main-nav__link",attrs:{"url":_vm.url,"aria-haspopup":"true","aria-controls":_vm.itemId,"aria-current":_vm.isActive,"label":_vm.label,"aria-expanded":!_vm.isCompact && _vm.flyoutIsOpen},on:{"focus":_vm.showFlyout},nativeOn:{"click":function($event){return _vm.hideFlyout($event)}}})],1),_vm._v(" "),_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(_vm.toggleIsVisible),expression:"toggleIsVisible"}],staticClass:"icon-button--small main-nav__toggle disable-focus",attrs:{"icon-name":_vm.angleDirection,"tabindex":"-1"},on:{"click":_vm.toggleFlyout}}),_vm._v(" "),(_vm.items)?_c('flyout',{ref:"flyout",staticClass:"flyout--large",class:{ 'flyout--is-open': _vm.flyoutIsOpen },attrs:{"id":_vm.itemId,"items":_vm.items,"is-compact":_vm.isCompact},on:{"open":_vm.showFlyout,"close":_vm.hideFlyout,"main":_vm.selectParent},nativeOn:{"keydown":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.selectParent($event)}}}):_vm._e()],1)}
@@ -9891,7 +10460,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 251 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9901,7 +10470,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _modal = __webpack_require__(252);
+var _modal = __webpack_require__(265);
 
 var _modal2 = _interopRequireDefault(_modal);
 
@@ -9910,7 +10479,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _modal2.default;
 
 /***/ }),
-/* 252 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9928,7 +10497,7 @@ var _vuePropertyDecorator = __webpack_require__(0);
 
 var _gsap = __webpack_require__(3);
 
-var _modalVue = __webpack_require__(253);
+var _modalVue = __webpack_require__(266);
 
 var _modalVue2 = _interopRequireDefault(_modalVue);
 
@@ -10030,7 +10599,7 @@ Modal = __decorate([_modalVue2.default, (0, _vuePropertyDecorator.Component)({
 exports.default = Modal;
 
 /***/ }),
-/* 253 */
+/* 266 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"modal"},on:{"enter":_vm.enter,"leave":_vm.leave}},[_c('div',{staticClass:"modal",on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.closeModal($event)}}},[_c('div',{ref:"overlay",staticClass:"modal__overlay"}),_vm._v(" "),_c('icon-button',{ref:"close",staticClass:"modal__close",attrs:{"icon-name":"close"}}),_vm._v(" "),_c('div',{ref:"modal",staticClass:"modal__content",on:{"click":function($event){$event.stopPropagation();}}},[_c('div',{staticClass:"modal__header"},[_vm._t("header")],2),_vm._v(" "),_vm._t("default")],2)],1)])}
@@ -10047,7 +10616,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 254 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10057,7 +10626,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pager = __webpack_require__(255);
+var _pager = __webpack_require__(268);
 
 var _pager2 = _interopRequireDefault(_pager);
 
@@ -10066,7 +10635,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pager2.default;
 
 /***/ }),
-/* 255 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10086,7 +10655,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'pager',
-    template: __webpack_require__(256),
+    template: __webpack_require__(269),
     data: function data() {
         return {
             indicatorActive: false,
@@ -10161,13 +10730,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 256 */
+/* 269 */
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"pager\" aria-label=\"pagination\">\n    <ul class=\"pager__list\">\n        <li ref=\"indicator\" class=\"pager__active-page\" aria-hidden=\"true\">\n            <icon class=\"pager__active-page-indicator\" icon-name=\"hexagon-fill\"></icon>\n        </li>\n        <li ref=\"page\" v-for=\"(page, index) in pages\" \n            class=\"pager__page\" >\n            <a class=\"pager__page-indicator\" @click=\"changeIndex(index)\"\n                aria-role=\"button\" \n                :aria-label=\"getAriaLabel(index)\" \n                :aria-current='index === activeIndex'>\n                <icon icon-name=\"hexagon\"></icon>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
-/* 257 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10177,7 +10746,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _product = __webpack_require__(258);
+var _product = __webpack_require__(271);
 
 var _product2 = _interopRequireDefault(_product);
 
@@ -10186,7 +10755,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _product2.default;
 
 /***/ }),
-/* 258 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10200,7 +10769,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _productVue = __webpack_require__(259);
+var _productVue = __webpack_require__(272);
 
 var _productVue2 = _interopRequireDefault(_productVue);
 
@@ -10244,7 +10813,7 @@ Product = __decorate([_productVue2.default, (0, _vuePropertyDecorator.Component)
 exports.default = Product;
 
 /***/ }),
-/* 259 */
+/* 272 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"product"},[_c('div',{staticClass:"product__icon-container"},[_c('icon',{staticClass:"product__icon",attrs:{"icon-name":_vm.icon}})],1),_vm._v(" "),_c('div',{staticClass:"product__information"},[_c('p',{staticClass:"product__name"},[_vm._v("\n            "+_vm._s(_vm.name)+"\n        ")]),_vm._v(" "),_c('p',{staticClass:"product__pricing"},[_vm._v("\n            "+_vm._s(_vm.pricing.label)+"\n        ")])])])}
@@ -10261,7 +10830,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 260 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10271,7 +10840,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _searchBar = __webpack_require__(261);
+var _searchBar = __webpack_require__(274);
 
 var _searchBar2 = _interopRequireDefault(_searchBar);
 
@@ -10280,7 +10849,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _searchBar2.default;
 
 /***/ }),
-/* 261 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10296,7 +10865,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _searchBarVue = __webpack_require__(262);
+var _searchBarVue = __webpack_require__(275);
 
 var _searchBarVue2 = _interopRequireDefault(_searchBarVue);
 
@@ -10372,7 +10941,7 @@ SearchBar = __decorate([_searchBarVue2.default, (0, _vuePropertyDecorator.Compon
 exports.default = SearchBar;
 
 /***/ }),
-/* 262 */
+/* 275 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"search",attrs:{"action":"","id":"search"},on:{"submit":function($event){$event.preventDefault();return _vm.doSearch($event)}}},[_c('div',{attrs:{"role":"search"}},[_c('div',{staticClass:"search__inputholder"},[_c('label',{staticClass:"search__label",attrs:{"for":"search__input"}},[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.searchValue),expression:"searchValue"}],ref:"search__input",staticClass:"search__input",attrs:{"id":"search__input","type":"text","name":"search","placeholder":_vm.placeholder},domProps:{"value":(_vm.searchValue)},on:{"blur":_vm.onBlur,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.close($event)},"input":function($event){if($event.target.composing){ return; }_vm.searchValue=$event.target.value}}})]),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search__button","button-aria-label":"Search","icon-name":"search"},on:{"click":_vm.doSearch}}),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search__close-button","button-aria-label":"Close search","icon-name":"close"},on:{"click":_vm.close}})],1)])}
@@ -10389,7 +10958,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 263 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10399,7 +10968,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _socialNav = __webpack_require__(264);
+var _socialNav = __webpack_require__(277);
 
 var _socialNav2 = _interopRequireDefault(_socialNav);
 
@@ -10408,7 +10977,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _socialNav2.default;
 
 /***/ }),
-/* 264 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10422,7 +10991,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _socialNavVue = __webpack_require__(265);
+var _socialNavVue = __webpack_require__(278);
 
 var _socialNavVue2 = _interopRequireDefault(_socialNavVue);
 
@@ -10460,7 +11029,7 @@ SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Compon
 exports.default = SocialNav;
 
 /***/ }),
-/* 265 */
+/* 278 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"social-nav footer__social-nav"},[_c('ul',{staticClass:"social-nav__list",attrs:{"aria-label":"follow Ultimaker"}},[_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://nl.linkedin.com/company/ultimaker","aria-label":"LinkedIn"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"linkedin"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://twitter.com/Ultimaker","aria-label":"Twitter"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"twitter"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://www.youtube.com/user/Ultimaker3D","aria-label":"YouTube"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"youtube"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://www.facebook.com/Ultimaker","aria-label":"Facebook"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"facebook"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"http://instagram.com/ultimaker","aria-label":"Instagram"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"instagram"}})],1)])])])}
@@ -10477,7 +11046,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 266 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10487,7 +11056,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _subnavigationItem = __webpack_require__(267);
+var _subnavigationItem = __webpack_require__(280);
 
 var _subnavigationItem2 = _interopRequireDefault(_subnavigationItem);
 
@@ -10496,7 +11065,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _subnavigationItem2.default;
 
 /***/ }),
-/* 267 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10510,7 +11079,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _subnavigationItemVue = __webpack_require__(268);
+var _subnavigationItemVue = __webpack_require__(281);
 
 var _subnavigationItemVue2 = _interopRequireDefault(_subnavigationItemVue);
 
@@ -10554,7 +11123,7 @@ SubNavigationItem = __decorate([_subnavigationItemVue2.default, (0, _vueProperty
 exports.default = SubNavigationItem;
 
 /***/ }),
-/* 268 */
+/* 281 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('base-link',{staticClass:"overflow-container__link link link--reversed",attrs:{"url":_vm.url}},[_c('div',{staticClass:"overflow-container__image-container"},[(_vm.image)?_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"overflow-container__label",attrs:{"aria-label":_vm.label}},[_c('span',{staticClass:"link__underline"},[_vm._v("\n            "+_vm._s(_vm.label)+"\n        ")])])])}
@@ -10571,7 +11140,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 269 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10581,7 +11150,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _sysNav = __webpack_require__(270);
+var _sysNav = __webpack_require__(283);
 
 var _sysNav2 = _interopRequireDefault(_sysNav);
 
@@ -10590,7 +11159,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _sysNav2.default;
 
 /***/ }),
-/* 270 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10606,7 +11175,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _sysNavVue = __webpack_require__(271);
+var _sysNavVue = __webpack_require__(284);
 
 var _sysNavVue2 = _interopRequireDefault(_sysNavVue);
 
@@ -10659,7 +11228,7 @@ SysNav = __decorate([_sysNavVue2.default, (0, _vuePropertyDecorator.Component)({
 exports.default = SysNav;
 
 /***/ }),
-/* 271 */
+/* 284 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"sys-nav",attrs:{"aria-label":"quick access"}},[_c('ul',{staticClass:"sys-nav__list",attrs:{"role":"presentation"}},[_c('li',{staticClass:"sys-nav__item"},[(_vm.orderNowLink)?_c('base-link',{staticClass:"sys-nav__link",attrs:{"url":_vm.orderNowLink}},[_c('icon',{staticClass:"sys-nav__icon",attrs:{"icon-name":_vm.orderNowIcon}}),_vm._v(" "),_c('span',{staticClass:"sys-nav__label sys-nav__label--hidden-sm"},[_vm._v(_vm._s(_vm.orderNowLabel))])],1):_vm._e()],1),_vm._v(" "),_c('li',{staticClass:"sys-nav__item"},[_c('a',{staticClass:"sys-nav__link",attrs:{"role":"button","tabindex":"0"},on:{"click":_vm.openSearch,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.openSearch($event)}}},[_c('icon',{staticClass:"sys-nav__icon",attrs:{"icon-name":_vm.searchIcon}}),_vm._v(" "),_c('span',{staticClass:"sys-nav__label sys-nav__label--hidden-sm"},[_vm._v(_vm._s(_vm.searchLabel))])],1)])])])}
@@ -10676,7 +11245,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 272 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10686,7 +11255,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tab = __webpack_require__(273);
+var _tab = __webpack_require__(286);
 
 var _tab2 = _interopRequireDefault(_tab);
 
@@ -10695,7 +11264,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tab2.default;
 
 /***/ }),
-/* 273 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10744,18 +11313,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tab.prototype, "active", void 0);
 Tab = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'Tab',
-    template: __webpack_require__(274)
+    template: __webpack_require__(287)
 })], Tab);
 exports.default = Tab;
 
 /***/ }),
-/* 274 */
+/* 287 */
 /***/ (function(module, exports) {
 
 module.exports = "<div :id=\"id\" class=\"tabs__content\" v-show=\"active\" role=\"tabpanel\" :aria-hidden=\"!active\" :aria-label=\"label\">\n    <template v-show=\"content\">\n        <component :is=\"content.type\"\n                   v-bind=\"content\">\n        </component>\n    </template>\n</div>\n";
 
 /***/ }),
-/* 275 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10765,7 +11334,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tabs = __webpack_require__(276);
+var _tabs = __webpack_require__(289);
 
 var _tabs2 = _interopRequireDefault(_tabs);
 
@@ -10774,7 +11343,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tabs2.default;
 
 /***/ }),
-/* 276 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10804,7 +11373,7 @@ var _defaults = __webpack_require__(4);
 
 var _defaults2 = _interopRequireDefault(_defaults);
 
-var _tabsVue = __webpack_require__(277);
+var _tabsVue = __webpack_require__(290);
 
 var _tabsVue2 = _interopRequireDefault(_tabsVue);
 
@@ -10955,7 +11524,7 @@ Tabs = __decorate([_tabsVue2.default, (0, _vuePropertyDecorator.Component)({
 exports.default = Tabs;
 
 /***/ }),
-/* 277 */
+/* 290 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.tabs)?_c('div',{staticClass:"tabs"},[_c('div',{staticClass:"tabs__nav"},[_c('ul',{ref:"tabList",staticClass:"tabs__list",attrs:{"role":"tablist"}},[_vm._l((_vm.tabs),function(tab,index){return _c('li',{ref:"tab",refInFor:true,staticClass:"tabs__list_item",attrs:{"role":"presentation"}},[_c('a',{staticClass:"tabs__list_link",class:_vm.getLinkClassList(index),attrs:{"href":'#' + tab.id,"role":"tab","aria-controls":tab.id,"aria-selected":_vm.activeTab === index},on:{"click":function($event){$event.preventDefault();_vm.activeTab = index}}},[(_vm.sequenced)?_c('span',[_vm._v(_vm._s(((index+1) + ". ")))]):_vm._e(),_vm._v("\n                    "+_vm._s(tab.label)+"\n                ")])])}),_vm._v(" "),_c('li',{ref:"indicator",staticClass:"tabs__indicator",attrs:{"aria-hidden":"true","role":"none"}})],2)]),_vm._v(" "),_vm._l((_vm.tabs),function(tab,index){return _c('div',{staticClass:"tabs__contents"},[[_c(tab.type,_vm._b({key:index,tag:"component",attrs:{"id":tab.label+index,"active":_vm.activeTab === index}},'component',tab,false))]],2)})],2):_vm._e()}
@@ -10972,7 +11541,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 278 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10982,7 +11551,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tag = __webpack_require__(279);
+var _tag = __webpack_require__(292);
 
 var _tag2 = _interopRequireDefault(_tag);
 
@@ -10991,7 +11560,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tag2.default;
 
 /***/ }),
-/* 279 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11005,7 +11574,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _tagVue = __webpack_require__(280);
+var _tagVue = __webpack_require__(293);
 
 var _tagVue2 = _interopRequireDefault(_tagVue);
 
@@ -11047,7 +11616,7 @@ Tag = __decorate([_tagVue2.default, (0, _vuePropertyDecorator.Component)({
 exports.default = Tag;
 
 /***/ }),
-/* 280 */
+/* 293 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('label',{staticClass:"tag"},[_vm._v(_vm._s(_vm.tag.title))])}
@@ -11064,7 +11633,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 281 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11074,7 +11643,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tagList = __webpack_require__(282);
+var _tagList = __webpack_require__(295);
 
 var _tagList2 = _interopRequireDefault(_tagList);
 
@@ -11083,7 +11652,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tagList2.default;
 
 /***/ }),
-/* 282 */
+/* 295 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11097,7 +11666,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _tagListVue = __webpack_require__(283);
+var _tagListVue = __webpack_require__(296);
 
 var _tagListVue2 = _interopRequireDefault(_tagListVue);
 
@@ -11139,7 +11708,7 @@ TagList = __decorate([_tagListVue2.default, (0, _vuePropertyDecorator.Component)
 exports.default = TagList;
 
 /***/ }),
-/* 283 */
+/* 296 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{staticClass:"tag-list__list list"},_vm._l((_vm.tags),function(tag){return _c('li',{staticClass:"tag-list__item list_item"},[_c('tag',{attrs:{"tag":tag}})],1)}),0)}
@@ -11156,7 +11725,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 284 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11166,16 +11735,84 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _blockIcon = __webpack_require__(285);
+var _brands = __webpack_require__(298);
 
-var _blockIcon2 = _interopRequireDefault(_blockIcon);
+Object.defineProperty(exports, 'Brands', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_brands).default;
+  }
+});
+
+var _colors = __webpack_require__(11);
+
+Object.defineProperty(exports, 'Colors', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_colors).default;
+  }
+});
+
+var _countrySelector = __webpack_require__(303);
+
+Object.defineProperty(exports, 'CountrySelector', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_countrySelector).default;
+  }
+});
+
+var _heroProduct = __webpack_require__(306);
+
+Object.defineProperty(exports, 'HeroProduct', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_heroProduct).default;
+  }
+});
+
+var _localeSelector = __webpack_require__(309);
+
+Object.defineProperty(exports, 'LocaleSelector', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_localeSelector).default;
+  }
+});
+
+var _contentHighlight = __webpack_require__(312);
+
+Object.defineProperty(exports, 'ContentHighlight', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_contentHighlight).default;
+  }
+});
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = _blockIcon2.default;
+/***/ }),
+/* 298 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _brands = __webpack_require__(299);
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _brands.Brands;
+  }
+});
 
 /***/ }),
-/* 285 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11184,16 +11821,15 @@ exports.default = _blockIcon2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+exports.Brands = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _blockIconVue = __webpack_require__(286);
+var _brandsVue = __webpack_require__(300);
 
-var _blockIconVue2 = _interopRequireDefault(_blockIconVue);
+var _brandsVue2 = _interopRequireDefault(_brandsVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11215,42 +11851,33 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var BlockIcon = function (_Vue) {
-    _inherits(BlockIcon, _Vue);
+var Brands = function (_Vue) {
+    _inherits(Brands, _Vue);
 
-    function BlockIcon() {
-        _classCallCheck(this, BlockIcon);
+    function Brands() {
+        _classCallCheck(this, Brands);
 
-        return _possibleConstructorReturn(this, (BlockIcon.__proto__ || Object.getPrototypeOf(BlockIcon)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Brands.__proto__ || Object.getPrototypeOf(Brands)).apply(this, arguments));
     }
 
-    _createClass(BlockIcon, [{
-        key: "getClassNames",
-        value: function getClassNames(type) {
-            return {
-                ContentButton: 'button',
-                ContentLink: 'link link--medium',
-                YoutubeLink: ''
-            }[type] || '';
-        }
-    }]);
-
-    return BlockIcon;
+    return Brands;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], BlockIcon.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], BlockIcon.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], BlockIcon.prototype, "icon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], BlockIcon.prototype, "cta", void 0);
-BlockIcon = __decorate([_blockIconVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'BlockIcon'
-})], BlockIcon);
-exports.default = BlockIcon;
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], Brands.prototype, "ctas", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], Brands.prototype, "expand", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Brands.prototype, "items", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], Brands.prototype, "limit", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], Brands.prototype, "subtitle", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Brands.prototype, "title", void 0);
+exports.Brands = Brands = __decorate([_brandsVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Brands'
+})], Brands);
+exports.Brands = Brands;
 
 /***/ }),
-/* 286 */
+/* 300 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"block-icon flexgrid"},[_c('div',{staticClass:"block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"},[(_vm.icon)?_c('icon',{staticClass:"block-icon__icon",attrs:{"icon-name":_vm.icon}}):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"},[_c('h3',{staticClass:"block-icon__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"block-icon__description"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",staticClass:"block-icon__link",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"organism brands2"},[_c('article',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('list-unordered-limit',{attrs:{"limit":_vm.limit,"listItems":_vm.items}}),_vm._v(" "),_c('footer-block',{attrs:{"ctas":_vm.ctas}})],1)])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -11264,26 +11891,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 287 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _heroHeading = __webpack_require__(288);
-
-var _heroHeading2 = _interopRequireDefault(_heroHeading);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _heroHeading2.default;
-
-/***/ }),
-/* 288 */
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11292,10 +11900,19 @@ exports.default = _heroHeading2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Colors = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _colorsVue = __webpack_require__(302);
+
+var _colorsVue2 = _interopRequireDefault(_colorsVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -11315,33 +11932,61 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var HeroHeading = function (_Vue) {
-    _inherits(HeroHeading, _Vue);
+var Colors = function (_Vue) {
+    _inherits(Colors, _Vue);
 
-    function HeroHeading() {
-        _classCallCheck(this, HeroHeading);
+    function Colors() {
+        _classCallCheck(this, Colors);
 
-        return _possibleConstructorReturn(this, (HeroHeading.__proto__ || Object.getPrototypeOf(HeroHeading)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Colors.__proto__ || Object.getPrototypeOf(Colors)).apply(this, arguments));
+
+        _this.activeColorIndex = 0;
+        return _this;
     }
 
-    return HeroHeading;
+    _createClass(Colors, [{
+        key: "setActiveColor",
+        value: function setActiveColor(index) {
+            this.activeColorIndex = index;
+        }
+    }, {
+        key: "activeColor",
+        get: function get() {
+            return this.colorList[this.activeColorIndex];
+        }
+    }]);
+
+    return Colors;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], HeroHeading.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeroHeading.prototype, "subtitle", void 0);
-HeroHeading = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'HeroHeading',
-    template: __webpack_require__(289)
-})], HeroHeading);
-exports.default = HeroHeading;
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Colors.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], Colors.prototype, "subtitle", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Colors.prototype, "colorCtas", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Colors.prototype, "colorList", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], Colors.prototype, "ctas", void 0);
+exports.Colors = Colors = __decorate([_colorsVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'colors'
+})], Colors);
+exports.Colors = Colors;
 
 /***/ }),
-/* 289 */
+/* 302 */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n    <h1 class='hero__title header-block__title--hero'>{{ title }}</h1>\n    <h2 class=\"hero__subtitle header-block__subtitle--hero\" v-if=\"subtitle\">{{ subtitle }}</h2>\n</div>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism colors"},[_c('div',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6 flexgrid__cell--sm-4"},[_c('div',{staticClass:"colors__swatches"},[_c('ul',{staticClass:"colors__list"},_vm._l((_vm.colorList),function(color,index){return _c('li',{staticClass:"colors__list-item",on:{"click":function($event){return _vm.setActiveColor(index)},"keydown":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"space",32,$event.key,[" ","Spacebar"])){ return null; }$event.preventDefault();return _vm.setActiveColor(index)}}},[_c('color',{class:{'color--selected': color === _vm.activeColor },attrs:{"rgb-hex":color.rgbHex,"opacity":color.opacity}})],1)}),0),_vm._v(" "),(_vm.colorCtas.ctas)?_c('cta-block',{attrs:{"ctas":_vm.colorCtas.ctas,"mod":"baseline"}}):_vm._e()],1)]),_vm._v(" "),(_vm.activeColor.exampleImage)?_c('div',{staticClass:"flexgrid__cell--sm-8 flexgrid__cell--xs-6"},[_c('c-image',_vm._b({staticClass:"colors__image"},'c-image',_vm.activeColor.exampleImage,false))],1):_vm._e()]),_vm._v(" "),_c('footer-block',{staticClass:"footer-block--push-down",attrs:{"ctas":_vm.ctas}})],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 290 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11351,65 +11996,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _countrySelector = __webpack_require__(291);
-
-Object.defineProperty(exports, 'CountrySelector', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_countrySelector).default;
-  }
-});
-
-var _localeSelector = __webpack_require__(294);
-
-Object.defineProperty(exports, 'LocaleSelector', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_localeSelector).default;
-  }
-});
-
-var _heroProduct = __webpack_require__(297);
-
-Object.defineProperty(exports, 'HeroProduct', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_heroProduct).default;
-  }
-});
-
-var _colors = __webpack_require__(11);
-
-Object.defineProperty(exports, 'Colors', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_colors).default;
-  }
-});
-
-var _contentHighlight = __webpack_require__(302);
-
-Object.defineProperty(exports, 'ContentHighlight', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentHighlight).default;
-  }
-});
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ }),
-/* 291 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _countrySelector = __webpack_require__(292);
+var _countrySelector = __webpack_require__(304);
 
 var _countrySelector2 = _interopRequireDefault(_countrySelector);
 
@@ -11418,7 +12005,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _countrySelector2.default;
 
 /***/ }),
-/* 292 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11434,7 +12021,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _countrySelectorVue = __webpack_require__(293);
+var _countrySelectorVue = __webpack_require__(305);
 
 var _countrySelectorVue2 = _interopRequireDefault(_countrySelectorVue);
 
@@ -11587,7 +12174,7 @@ CountrySelector = __decorate([_countrySelectorVue2.default, (0, _vuePropertyDeco
 exports.default = CountrySelector;
 
 /***/ }),
-/* 293 */
+/* 305 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"country-selector"},[_c('auto-complete',{ref:"autocomplete",staticClass:"country-selector__auto-complete auto-complete--small",attrs:{"placeholder":_vm.placeholder,"title-field":"name","value-field":"code","datasource":_vm.datasource,"storedLabel":_vm.highlightedLabel,"stored-items":_vm.detectedCountries,"suggestionsLabel":_vm.suggestionsLabel,"default-open":""},on:{"input":_vm.countryChanged,"close":_vm.close,"changeFocus":_vm.focusClose},model:{value:(_vm.countryInput),callback:function ($$v) {_vm.countryInput=$$v},expression:"countryInput"}}),_vm._v(" "),_c('icon-button',{ref:"closeCountryPanel",attrs:{"icon-name":"close","button-aria-label":"Cancel","button-class":"country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed"},on:{"click":_vm.close}})],1)}
@@ -11604,7 +12191,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 294 */
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11614,16 +12201,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _localeSelector = __webpack_require__(295);
+var _heroProduct = __webpack_require__(307);
 
-var _localeSelector2 = _interopRequireDefault(_localeSelector);
+var _heroProduct2 = _interopRequireDefault(_heroProduct);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = _localeSelector2.default;
+exports.default = _heroProduct2.default;
 
 /***/ }),
-/* 295 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11639,7 +12226,114 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _localeSelectorVue = __webpack_require__(296);
+var _heroProductVue = __webpack_require__(308);
+
+var _heroProductVue2 = _interopRequireDefault(_heroProductVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HeroProduct = function (_Vue) {
+    _inherits(HeroProduct, _Vue);
+
+    function HeroProduct() {
+        _classCallCheck(this, HeroProduct);
+
+        return _possibleConstructorReturn(this, (HeroProduct.__proto__ || Object.getPrototypeOf(HeroProduct)).apply(this, arguments));
+    }
+
+    _createClass(HeroProduct, [{
+        key: "productsClass",
+        get: function get() {
+            return "hero__products-item hero__products-item--" + (this.products.length > 1 ? 'multiple' : 'single');
+        }
+    }]);
+
+    return HeroProduct;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "subtitle", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "description", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "image", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "ctas", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "products", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "linkList", void 0);
+HeroProduct = __decorate([_heroProductVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'HeroProduct'
+})], HeroProduct);
+exports.default = HeroProduct;
+
+/***/ }),
+/* 308 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--product organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('HeroHeading',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}})],1),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.products)?_c('div',{staticClass:"hero__products"},[_vm._l((_vm.products),function(product){return [_c('product',_vm._b({class:_vm.productsClass},'product',product,false))]})],2):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"hero__linklist"},[_vm._l((_vm.linkList),function(link){return [_c('li',{staticClass:"hero__linklist-item"},[_c('ContentLink',_vm._b({staticClass:"link hero__linklist-link",attrs:{"label":link.label}},'ContentLink',link,false))],1)]})],2)],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 309 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _localeSelector = __webpack_require__(310);
+
+var _localeSelector2 = _interopRequireDefault(_localeSelector);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _localeSelector2.default;
+
+/***/ }),
+/* 310 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+var _localeSelectorVue = __webpack_require__(311);
 
 var _localeSelectorVue2 = _interopRequireDefault(_localeSelectorVue);
 
@@ -11795,7 +12489,7 @@ LocaleSelector = __decorate([_localeSelectorVue2.default, (0, _vuePropertyDecora
 exports.default = LocaleSelector;
 
 /***/ }),
-/* 296 */
+/* 311 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"locale-selector"},[_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(!_vm.countrySelectorOpen),expression:"!countrySelectorOpen"}],ref:"countrySelectorToggle",staticClass:"icon-button--small locale-selector__edit--buton",attrs:{"icon-name":"geo","aria-label":_vm.currentCountryAriaLabel},on:{"click":_vm.toggleCountrySelector}},[_vm._v("\n        "+_vm._s(_vm.currentCountryLabel)+"\n    ")]),_vm._v(" "),_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(_vm.countrySelectorOpen),expression:"countrySelectorOpen"}],staticClass:"icon-button--small locale-selector__edit--buton",attrs:{"icon-name":"geo","aria-label":"change your country"}}),_vm._v(" "),(_vm.ready)?_c('country-selector',_vm._b({directives:[{name:"show",rawName:"v-show",value:(_vm.countrySelectorOpen),expression:"countrySelectorOpen"}],ref:"countrySelector",staticClass:"footer__country-selector",on:{"close":_vm.toggleCountrySelector,"input":_vm.setCountry},model:{value:(_vm.countryInput),callback:function ($$v) {_vm.countryInput=$$v},expression:"countryInput"}},'country-selector',_vm.$props,false)):_vm._e()],1)}
@@ -11812,7 +12506,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 297 */
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11822,209 +12516,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroProduct = __webpack_require__(298);
-
-var _heroProduct2 = _interopRequireDefault(_heroProduct);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _heroProduct2.default;
-
-/***/ }),
-/* 298 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _heroProductVue = __webpack_require__(299);
-
-var _heroProductVue2 = _interopRequireDefault(_heroProductVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var HeroProduct = function (_Vue) {
-    _inherits(HeroProduct, _Vue);
-
-    function HeroProduct() {
-        _classCallCheck(this, HeroProduct);
-
-        return _possibleConstructorReturn(this, (HeroProduct.__proto__ || Object.getPrototypeOf(HeroProduct)).apply(this, arguments));
-    }
-
-    _createClass(HeroProduct, [{
-        key: "productsClass",
-        get: function get() {
-            return "hero__products-item hero__products-item--" + (this.products.length > 1 ? 'multiple' : 'single');
-        }
-    }]);
-
-    return HeroProduct;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "subtitle", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "ctas", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "products", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "linkList", void 0);
-HeroProduct = __decorate([_heroProductVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'HeroProduct'
-})], HeroProduct);
-exports.default = HeroProduct;
-
-/***/ }),
-/* 299 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--product organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('HeroHeading',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}})],1),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.products)?_c('div',{staticClass:"hero__products"},[_vm._l((_vm.products),function(product){return [_c('product',_vm._b({class:_vm.productsClass},'product',product,false))]})],2):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"hero__linklist"},[_vm._l((_vm.linkList),function(link){return [_c('li',{staticClass:"hero__linklist-item"},[_c('ContentLink',_vm._b({staticClass:"link hero__linklist-link",attrs:{"label":link.label}},'ContentLink',link,false))],1)]})],2)],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 300 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Colors = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _colorsVue = __webpack_require__(301);
-
-var _colorsVue2 = _interopRequireDefault(_colorsVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var Colors = function (_Vue) {
-    _inherits(Colors, _Vue);
-
-    function Colors() {
-        _classCallCheck(this, Colors);
-
-        var _this = _possibleConstructorReturn(this, (Colors.__proto__ || Object.getPrototypeOf(Colors)).apply(this, arguments));
-
-        _this.activeColorIndex = 0;
-        return _this;
-    }
-
-    _createClass(Colors, [{
-        key: "setActiveColor",
-        value: function setActiveColor(index) {
-            this.activeColorIndex = index;
-        }
-    }, {
-        key: "activeColor",
-        get: function get() {
-            return this.colorList[this.activeColorIndex];
-        }
-    }]);
-
-    return Colors;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Colors.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], Colors.prototype, "subtitle", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Colors.prototype, "colorCtas", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Colors.prototype, "colorList", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], Colors.prototype, "ctas", void 0);
-exports.Colors = Colors = __decorate([_colorsVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'colors'
-})], Colors);
-exports.Colors = Colors;
-
-/***/ }),
-/* 301 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism colors"},[_c('div',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6 flexgrid__cell--sm-4"},[_c('div',{staticClass:"colors__swatches"},[_c('ul',{staticClass:"colors__list"},_vm._l((_vm.colorList),function(color,index){return _c('li',{staticClass:"colors__list-item",on:{"click":function($event){return _vm.setActiveColor(index)},"keydown":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"space",32,$event.key,[" ","Spacebar"])){ return null; }$event.preventDefault();return _vm.setActiveColor(index)}}},[_c('color',{class:{'color--selected': color === _vm.activeColor },attrs:{"rgb-hex":color.rgbHex,"opacity":color.opacity}})],1)}),0),_vm._v(" "),(_vm.colorCtas.ctas)?_c('cta-block',{attrs:{"ctas":_vm.colorCtas.ctas,"mod":"baseline"}}):_vm._e()],1)]),_vm._v(" "),(_vm.activeColor.exampleImage)?_c('div',{staticClass:"flexgrid__cell--sm-8 flexgrid__cell--xs-6"},[_c('c-image',_vm._b({staticClass:"colors__image"},'c-image',_vm.activeColor.exampleImage,false))],1):_vm._e()]),_vm._v(" "),_c('footer-block',{staticClass:"footer-block--push-down",attrs:{"ctas":_vm.ctas}})],1)])}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 302 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _contentHighlight = __webpack_require__(303);
+var _contentHighlight = __webpack_require__(313);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -12034,7 +12526,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 303 */
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12049,7 +12541,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _contentHighlightVue = __webpack_require__(304);
+var _contentHighlightVue = __webpack_require__(314);
 
 var _contentHighlightVue2 = _interopRequireDefault(_contentHighlightVue);
 
@@ -12096,7 +12588,7 @@ exports.ContentHighlight = ContentHighlight = __decorate([_contentHighlightVue2.
 exports.ContentHighlight = ContentHighlight;
 
 /***/ }),
-/* 304 */
+/* 314 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism content-highlight"},[_c('section',{staticClass:"container content-highlight__container"},[_c('div',{staticClass:"flexgrid",class:{'flexgrid--row-reversed': _vm.reversed}},[_c('div',{staticClass:"flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__image"},[_c('div',{staticClass:"content-highlight__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__content"},[_c('HeaderBlock',{staticClass:"content-highlight-header",attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"content-manageble content-highlight__body",domProps:{"innerHTML":_vm._s(_vm.description)}}),_vm._v(" "),_c('FooterBlock',{staticClass:"content-highlight-footer",attrs:{"ctas":_vm.ctas}})],1)])])])}
@@ -12113,7 +12605,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 305 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12123,16 +12615,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _brands = __webpack_require__(306);
+var _LEGACY__brands = __webpack_require__(316);
 
-Object.defineProperty(exports, 'Brands', {
+Object.defineProperty(exports, 'LegacyBrands', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_brands).default;
+    return _interopRequireDefault(_LEGACY__brands).default;
   }
 });
 
-var _brandsLarge = __webpack_require__(309);
+var _brandsLarge = __webpack_require__(319);
 
 Object.defineProperty(exports, 'BrandsLarge', {
   enumerable: true,
@@ -12141,7 +12633,7 @@ Object.defineProperty(exports, 'BrandsLarge', {
   }
 });
 
-var _cases = __webpack_require__(312);
+var _cases = __webpack_require__(322);
 
 Object.defineProperty(exports, 'Cases', {
   enumerable: true,
@@ -12159,7 +12651,7 @@ Object.defineProperty(exports, 'Colors', {
   }
 });
 
-var _ecosystem = __webpack_require__(315);
+var _ecosystem = __webpack_require__(325);
 
 Object.defineProperty(exports, 'Ecosystem', {
   enumerable: true,
@@ -12168,7 +12660,7 @@ Object.defineProperty(exports, 'Ecosystem', {
   }
 });
 
-var _examples = __webpack_require__(318);
+var _examples = __webpack_require__(328);
 
 Object.defineProperty(exports, 'Examples', {
   enumerable: true,
@@ -12177,7 +12669,7 @@ Object.defineProperty(exports, 'Examples', {
   }
 });
 
-var _explore = __webpack_require__(321);
+var _explore = __webpack_require__(331);
 
 Object.defineProperty(exports, 'Explore', {
   enumerable: true,
@@ -12186,7 +12678,7 @@ Object.defineProperty(exports, 'Explore', {
   }
 });
 
-var _heroBasic = __webpack_require__(325);
+var _heroBasic = __webpack_require__(335);
 
 Object.defineProperty(exports, 'HeroBasic', {
   enumerable: true,
@@ -12195,7 +12687,7 @@ Object.defineProperty(exports, 'HeroBasic', {
   }
 });
 
-var _heroProductsApplication = __webpack_require__(328);
+var _heroProductsApplication = __webpack_require__(338);
 
 Object.defineProperty(exports, 'HeroProductsApplication', {
   enumerable: true,
@@ -12204,7 +12696,7 @@ Object.defineProperty(exports, 'HeroProductsApplication', {
   }
 });
 
-var _heroText = __webpack_require__(331);
+var _heroText = __webpack_require__(341);
 
 Object.defineProperty(exports, 'HeroText', {
   enumerable: true,
@@ -12213,7 +12705,7 @@ Object.defineProperty(exports, 'HeroText', {
   }
 });
 
-var _heroCover = __webpack_require__(334);
+var _heroCover = __webpack_require__(344);
 
 Object.defineProperty(exports, 'HeroCover', {
   enumerable: true,
@@ -12222,7 +12714,7 @@ Object.defineProperty(exports, 'HeroCover', {
   }
 });
 
-var _sliderReveal = __webpack_require__(337);
+var _sliderReveal = __webpack_require__(347);
 
 Object.defineProperty(exports, 'SliderReveal', {
   enumerable: true,
@@ -12231,7 +12723,7 @@ Object.defineProperty(exports, 'SliderReveal', {
   }
 });
 
-var _subnavigation = __webpack_require__(340);
+var _subnavigation = __webpack_require__(350);
 
 Object.defineProperty(exports, 'Subnavigation', {
   enumerable: true,
@@ -12240,7 +12732,7 @@ Object.defineProperty(exports, 'Subnavigation', {
   }
 });
 
-var _tabbedContent = __webpack_require__(345);
+var _tabbedContent = __webpack_require__(355);
 
 Object.defineProperty(exports, 'Tabbedcontent', {
   enumerable: true,
@@ -12249,7 +12741,7 @@ Object.defineProperty(exports, 'Tabbedcontent', {
   }
 });
 
-var _ubr = __webpack_require__(348);
+var _ubr = __webpack_require__(358);
 
 Object.defineProperty(exports, 'Ubr', {
   enumerable: true,
@@ -12258,7 +12750,7 @@ Object.defineProperty(exports, 'Ubr', {
   }
 });
 
-var _pageDrawer = __webpack_require__(351);
+var _pageDrawer = __webpack_require__(361);
 
 Object.defineProperty(exports, 'PageDrawer', {
   enumerable: true,
@@ -12267,7 +12759,7 @@ Object.defineProperty(exports, 'PageDrawer', {
   }
 });
 
-var _pageFooter = __webpack_require__(353);
+var _pageFooter = __webpack_require__(363);
 
 Object.defineProperty(exports, 'PageFooter', {
   enumerable: true,
@@ -12276,7 +12768,7 @@ Object.defineProperty(exports, 'PageFooter', {
   }
 });
 
-var _pageHeader = __webpack_require__(356);
+var _pageHeader = __webpack_require__(366);
 
 Object.defineProperty(exports, 'PageHeader', {
   enumerable: true,
@@ -12285,7 +12777,7 @@ Object.defineProperty(exports, 'PageHeader', {
   }
 });
 
-var _overview = __webpack_require__(359);
+var _overview = __webpack_require__(369);
 
 Object.defineProperty(exports, 'Overview', {
   enumerable: true,
@@ -12294,7 +12786,7 @@ Object.defineProperty(exports, 'Overview', {
   }
 });
 
-var _overviewUbr = __webpack_require__(362);
+var _overviewUbr = __webpack_require__(372);
 
 Object.defineProperty(exports, 'OverviewUBR', {
   enumerable: true,
@@ -12303,7 +12795,7 @@ Object.defineProperty(exports, 'OverviewUBR', {
   }
 });
 
-var _contentGeneral = __webpack_require__(365);
+var _contentGeneral = __webpack_require__(375);
 
 Object.defineProperty(exports, 'ContentGeneral', {
   enumerable: true,
@@ -12312,7 +12804,7 @@ Object.defineProperty(exports, 'ContentGeneral', {
   }
 });
 
-var _contentCover = __webpack_require__(368);
+var _contentCover = __webpack_require__(378);
 
 Object.defineProperty(exports, 'ContentCover', {
   enumerable: true,
@@ -12321,7 +12813,7 @@ Object.defineProperty(exports, 'ContentCover', {
   }
 });
 
-var _LEGACY__generalContent = __webpack_require__(371);
+var _LEGACY__generalContent = __webpack_require__(381);
 
 Object.defineProperty(exports, 'GeneralContent', {
   enumerable: true,
@@ -12330,7 +12822,7 @@ Object.defineProperty(exports, 'GeneralContent', {
   }
 });
 
-var _LEGACY__heroProduct = __webpack_require__(374);
+var _LEGACY__heroProduct = __webpack_require__(384);
 
 Object.defineProperty(exports, 'LegacyHeroProduct', {
   enumerable: true,
@@ -12342,7 +12834,7 @@ Object.defineProperty(exports, 'LegacyHeroProduct', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 306 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12352,16 +12844,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _brands = __webpack_require__(307);
+var _legacyBrands = __webpack_require__(317);
 
-var _brands2 = _interopRequireDefault(_brands);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _brands2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _legacyBrands.LegacyBrands;
+  }
+});
 
 /***/ }),
-/* 307 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12370,32 +12863,58 @@ exports.default = _brands2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = {
-    name: 'brands',
-    template: __webpack_require__(308),
-    props: {
-        title: {
-            type: String,
-            required: true
-        },
-        brands: {
-            type: Array,
-            required: true
-        },
-        contentLink: {
-            type: Object
-        }
-    }
+exports.LegacyBrands = undefined;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+var LegacyBrands = function (_Vue) {
+    _inherits(LegacyBrands, _Vue);
+
+    function LegacyBrands() {
+        _classCallCheck(this, LegacyBrands);
+
+        return _possibleConstructorReturn(this, (LegacyBrands.__proto__ || Object.getPrototypeOf(LegacyBrands)).apply(this, arguments));
+    }
+
+    return LegacyBrands;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], LegacyBrands.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], LegacyBrands.prototype, "brands", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], LegacyBrands.prototype, "contentLink", void 0);
+exports.LegacyBrands = LegacyBrands = __decorate([(0, _vuePropertyDecorator.Component)({
+    name: 'LegacyBrands',
+    template: __webpack_require__(318)
+})], LegacyBrands);
+exports.LegacyBrands = LegacyBrands;
+
 /***/ }),
-/* 308 */
+/* 318 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"brands\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\"> {{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink && contentLink.href\"\n                      :block=\"'brands'\"\n                      :mod=\"'large'\"\n                      :url=\"contentLink.href\"\n                      :label=\"contentLink.text\" />\n    </section>\n</article>\n";
 
 /***/ }),
-/* 309 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12405,7 +12924,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _brandsLarge = __webpack_require__(310);
+var _brandsLarge = __webpack_require__(320);
 
 var _brandsLarge2 = _interopRequireDefault(_brandsLarge);
 
@@ -12414,7 +12933,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _brandsLarge2.default;
 
 /***/ }),
-/* 310 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12425,7 +12944,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'brands-large',
-    template: __webpack_require__(311),
+    template: __webpack_require__(321),
     props: {
         title: {
             type: String,
@@ -12445,13 +12964,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 311 */
+/* 321 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"brands brands--large\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\">{{ title }}</h2>\n        <p class=\"brands__body\" v-if=\"text\">{{ text }}</p>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :url=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 312 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12461,7 +12980,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _cases = __webpack_require__(313);
+var _cases = __webpack_require__(323);
 
 var _cases2 = _interopRequireDefault(_cases);
 
@@ -12470,7 +12989,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _cases2.default;
 
 /***/ }),
-/* 313 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12488,7 +13007,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'cases',
-    template: __webpack_require__(314),
+    template: __webpack_require__(324),
     data: function data() {
         return {
             viewport: new _viewport2.default(),
@@ -12534,13 +13053,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 314 */
+/* 324 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"case\">\n    <section class=\"container case__container\">\n        <figure class=\"case__media\" v-show=\"this.isMobileXl\">\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <h2 class=\"case__title\">{{ title }}</h2>\n            </figcaption>\n\n            <div class=\"case__media-placeholder\">\n                <figcaption>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n\n            <figcaption class=\"flex-grid flexgrid__cell--xs-6\">\n                <p class=\"case__paragraph case__paragraph--last\">{{ description }}</p>\n            </figcaption>\n        </figure>\n\n        <figure class=\"case__media\" v-show=\"!this.isMobileXl\">\n            <div class=\"case__media-placeholder\">\n                <figcaption class=\"flex-grid flexgrid__cell--xs-6 case__flex-grid--center\">\n                    <h2 class=\"case__title\">{{ title }}</h2>\n                    <p class=\"case__paragraph\">{{ description }}</p>\n                    <icon-button @click=\"toggleVideo\" class=\"case__link icon-button--underline-large\" :icon-name=\"buttonIcon\">{{ buttonLabel }}</icon-button>\n                </figcaption>\n\n                <div class=\"case__image-overlay\"></div>\n                <responsive-picture v-bind=\"image\" img-class=\"case__image--full\"></responsive-picture>\n            </div>\n        </figure>\n    </section>\n    <modal class=\"modal--video\" v-if=\"showVideo\" @close=\"toggleVideo\">\n        <youtube-video :video-id=\"videoId\"></youtube-video>\n    </modal>\n</article>\n";
 
 /***/ }),
-/* 315 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12550,7 +13069,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ecosystem = __webpack_require__(316);
+var _ecosystem = __webpack_require__(326);
 
 var _ecosystem2 = _interopRequireDefault(_ecosystem);
 
@@ -12559,7 +13078,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _ecosystem2.default;
 
 /***/ }),
-/* 316 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12570,7 +13089,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'ecosystem',
-    template: __webpack_require__(317),
+    template: __webpack_require__(327),
     props: {
         title: {
             type: String,
@@ -12584,13 +13103,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 317 */
+/* 327 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"ecosystem\">\n    <section class=\"container ecosystem__container\">\n      <h2 class=\"ecosystem__title\" v-if=\"title\">{{ title }}</h2>\n      <div class=\"ecosystem__items\">\n          <card v-for=\"(item, index) in items\" :key=\"index\" :card=\"item\" :block=\"'ecosystem'\"></card>\n      </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 318 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12600,7 +13119,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _examples = __webpack_require__(319);
+var _examples = __webpack_require__(329);
 
 var _examples2 = _interopRequireDefault(_examples);
 
@@ -12609,7 +13128,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _examples2.default;
 
 /***/ }),
-/* 319 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12620,7 +13139,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'examples',
-    template: __webpack_require__(320),
+    template: __webpack_require__(330),
     data: function data() {
         return {
             enabled: false
@@ -12645,13 +13164,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 320 */
+/* 330 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"examples\">\n    <div class=\"container examples__container\">\n        <header>\n            <h2 class=\"examples__headline\">{{ title }}</h2>\n        </header>\n\n        <div class=\"cards\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--sm-4 flexgrid__cell--xs-6\" v-for=\"(card, key) in cards\">\n                    <card :key=\"key\" :block=\"'examples'\" :card=\"card\" v-if=\"enabled\"></card>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n";
 
 /***/ }),
-/* 321 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12661,7 +13180,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _explore = __webpack_require__(322);
+var _explore = __webpack_require__(332);
 
 var _explore2 = _interopRequireDefault(_explore);
 
@@ -12670,7 +13189,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _explore2.default;
 
 /***/ }),
-/* 322 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12682,7 +13201,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _vuex = __webpack_require__(323);
+var _vuex = __webpack_require__(333);
 
 var _gsap = __webpack_require__(3);
 
@@ -12690,7 +13209,7 @@ var defaultAnimationDuration = 1;
 
 exports.default = {
     name: 'explore',
-    template: __webpack_require__(324),
+    template: __webpack_require__(334),
     data: function data() {
         return {
             activeSlide: 0
@@ -12746,19 +13265,19 @@ exports.default = {
 };
 
 /***/ }),
-/* 323 */
+/* 333 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__323__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__333__;
 
 /***/ }),
-/* 324 */
+/* 334 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"explore\">\n    <section class=\"container explore__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <h2 class=\"explore__title\">{{ title }}</h2>\n            </div>\n        </div>\n        <div class=\"explore__image-placeholder\">\n            <template v-for=\"(item, index) in items\">\n                <transition @enter=\"imageEnter\" @leave=\"imageLeave\">\n                    <picture ref=\"image\" v-show=\"index === activeSlide\">\n                        <source media=\"(min-width: 569px)\" :srcset=\"item.image.mobileXlWidth.url + ', ' + item.image.mobileXlWidth.retina.url + ' 2x'\">\n                        <img class=\"img--responsive explore__image img--contain\" :src=\"item.image.mobileWidth.url\" :alt=\"item.image.alt\">\n                    </picture>\n                </transition>\n            </template>\n            <pager name=\"explore-pager\" class=\"explore__pager\" :pages=\"items.length\"\n                   :active-index=\"activeSlide\" @index-changed=\"indexChanged\"></pager>\n        </div>\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"explore__description\">\n                    <tabbable-definition-list\n                        :items=\"items\"\n                        :active-index=\"activeSlide\"\n                        @index-changed=\"indexChanged\"\n                    ></tabbable-definition-list>\n                </div>\n                <div class=\"explore__navigation\">\n                    <icon-button class=\"explore__nav\"\n                                 v-if=\"buttons && buttons.previous\"\n                                 :icon-name=\"buttons.previous.iconName\"\n                                 @click=\"navClicked('previous')\">\n                        <span class=\"icon-button__label\">{{ buttons.previous.label }}</span>\n                    </icon-button>\n                    <icon-button class=\"explore__nav icon-button--reversed\"\n                                 v-if=\"buttons && buttons.next\"\n                                 :icon-name=\"buttons.next.iconName\"\n                                 @click=\"navClicked('next')\">\n                        <span class=\"icon-button__label\">{{ buttons.next.label }}</span>\n                    </icon-button>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 325 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12768,7 +13287,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroBasic = __webpack_require__(326);
+var _heroBasic = __webpack_require__(336);
 
 var _heroBasic2 = _interopRequireDefault(_heroBasic);
 
@@ -12777,7 +13296,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroBasic2.default;
 
 /***/ }),
-/* 326 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12791,7 +13310,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _heroBasicVue = __webpack_require__(327);
+var _heroBasicVue = __webpack_require__(337);
 
 var _heroBasicVue2 = _interopRequireDefault(_heroBasicVue);
 
@@ -12837,7 +13356,7 @@ HeroBasic = __decorate([_heroBasicVue2.default, (0, _vuePropertyDecorator.Compon
 exports.default = HeroBasic;
 
 /***/ }),
-/* 327 */
+/* 337 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--basic organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('h1',{staticClass:"hero__title header-block__title--hero"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.subtitle)?_c('h2',{staticClass:"hero__subtitle header-block__subtitle--hero"},[_vm._v(_vm._s(_vm.subtitle))]):_vm._e()]),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
@@ -12854,7 +13373,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 328 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12864,7 +13383,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroProductsApplication = __webpack_require__(329);
+var _heroProductsApplication = __webpack_require__(339);
 
 var _heroProductsApplication2 = _interopRequireDefault(_heroProductsApplication);
 
@@ -12873,7 +13392,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroProductsApplication2.default;
 
 /***/ }),
-/* 329 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12884,7 +13403,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'hero-products-application',
-    template: __webpack_require__(330),
+    template: __webpack_require__(340),
     props: {
         title: {
             required: true,
@@ -12926,13 +13445,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 330 */
+/* 340 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--products-application\">\n    <div class=\"hero__container--top\">\n            <responsive-picture v-bind=\"heroImage\" imgClass=\"hero__image--full\"></responsive-picture>\n            <div class=\"hero__image-overlay\"></div>\n        <div class=\"container\">\n            <div class=\"flexgrid flexgrid--gutter\">\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__headline\">\n                        <h1>{{ title }}</h1>\n                    </div>\n                </div>\n\n                <div class=\"flexgrid__cell\" style=\"position:relative;\">\n                    <p class=\"hero__subtitle\">{{ subtitle }}</p>\n                    <responsive-picture v-bind=\"productImage\" imgClass=\"hero__image--product\"></responsive-picture>\n                </div>\n\n                <div class=\"flexgrid__cell--xs-6\">\n                    <div class=\"hero__usp-container\">\n                        <div class=\"hero__usp usp--icon\" v-for=\"icon in uspIcons\">\n                            <icon :icon-name=\"icon.iconName\" class=\"usp__icon\"></icon>\n                            <small class=\"usp__label\">{{ icon.text }}</small>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!-- {{> molecules-price-table}} -->\n                    <!-- {{> molecules-price-table-tabs}} -->\n                    <!-- {{> atoms-anchor-button:button--primary|hero__button}} -->\n                    <p>TODO: Pricetable</p>\n                    <router-link :to=\"ctaLink.href\" class=\"button button--primary hero__button\">{{  ctaLink.text }}</router-link>\n                    <ul class=\"link-list link-list--icon hero__link-list\" v-if=\"links && links.length\">\n                        <li class=\"link-list__item\" v-for=\"link in links\">\n                            <content-link  v-if=\"link.href\"\n                                           :url=\"link.href\"\n                                           :icon=\"link.icon\"\n                                           :label=\"link.text\" />\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</article>\n";
 
 /***/ }),
-/* 331 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12942,7 +13461,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroText = __webpack_require__(332);
+var _heroText = __webpack_require__(342);
 
 var _heroText2 = _interopRequireDefault(_heroText);
 
@@ -12951,7 +13470,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroText2.default;
 
 /***/ }),
-/* 332 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12962,7 +13481,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'hero-text',
-    template: __webpack_require__(333),
+    template: __webpack_require__(343),
     props: {
         title: {
             type: String,
@@ -12976,13 +13495,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 333 */
+/* 343 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--text\" v-if=\"this.contents && contents.length\" >\n    <div class=\"container\">\n        <h1 v-if=\"title && title.length\">{{ title }}</h1>\n        <div class=\"hero__content content--rich\" v-html=\"contents\" />\n    </div>\n</article>\n\n";
 
 /***/ }),
-/* 334 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12992,7 +13511,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroCover = __webpack_require__(335);
+var _heroCover = __webpack_require__(345);
 
 var _heroCover2 = _interopRequireDefault(_heroCover);
 
@@ -13001,7 +13520,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroCover2.default;
 
 /***/ }),
-/* 335 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13017,7 +13536,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _heroCoverVue = __webpack_require__(336);
+var _heroCoverVue = __webpack_require__(346);
 
 var _heroCoverVue2 = _interopRequireDefault(_heroCoverVue);
 
@@ -13072,7 +13591,7 @@ HeroCover = __decorate([_heroCoverVue2.default, (0, _vuePropertyDecorator.Compon
 exports.default = HeroCover;
 
 /***/ }),
-/* 336 */
+/* 346 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--cover organism"},[_c('div',{staticClass:"hero-cover__image--full"},[(this.image)?_c('c-image',_vm._b({attrs:{"resize-behavior":"crop"}},'c-image',this.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"hero-cover__image--overlay"}),_vm._v(" "),_c('section',{staticClass:"hero-cover__container container"},[_c('div',{staticClass:"flexgrid__cell--xs-6 hero--cover-reset"},[_c('h1',{staticClass:"hero-cover__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"copy--intro"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary"}}):_vm._e()],1)])])}
@@ -13089,7 +13608,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 337 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13099,7 +13618,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _sliderReveal = __webpack_require__(338);
+var _sliderReveal = __webpack_require__(348);
 
 var _sliderReveal2 = _interopRequireDefault(_sliderReveal);
 
@@ -13108,7 +13627,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _sliderReveal2.default;
 
 /***/ }),
-/* 338 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13128,7 +13647,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'slider-reveal',
-    template: __webpack_require__(339),
+    template: __webpack_require__(349),
     props: {
         styleModifiers: {
             type: Array,
@@ -13243,13 +13762,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 339 */
+/* 349 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"slider-reveal\" v-bind:class=\"styleModifiers\">\n    <section class=\"container slider-reveal__container\">\n        <div class=\"flexgrid flexgrid--gutter\">\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <h2 class=\"slider-reveal__title\"> {{ title }}</h2>\n                <p v-if=\"!isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"!isMobile && link && link.href\"\n                              v-bind=\"link\"\n                              class=\"link--icon link--large\"\n                              :label=\"link.text\"\n                              :url=\"link.href\" />\n            </div>\n            <div class=\"flexgrid__cell--xs-6 slider-reveal__grid-cell\">\n                <div ref=\"image-wrapper\" class=\"slider-reveal__image-wrapper\">\n                    <div class=\"slider-reveal__image-aspect\">\n                        <div class=\"slider-reveal__mask\"\n                            ref=\"image-mask\"\n                            v-for=\"image in imageSlider.images\"\n                        >\n                            <responsive-picture v-bind=\"image\" img-class=\"slider-reveal__image\"></responsive-picture>\n                        </div>\n                    </div>\n                </div>\n                <p v-if=\"isMobile\" class=\"slider-reveal__body\" v-for=\"content in contents\">{{ content }}</p>\n                <content-link v-if=\"isMobile && link && link.href\"\n                              v-bind=\"link\"\n                              class=\"link--icon link--large\"\n                              :label=\"link.text\"\n                              :url=\"link.href\" />\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 340 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13259,7 +13778,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _subnavigation = __webpack_require__(341);
+var _subnavigation = __webpack_require__(351);
 
 var _subnavigation2 = _interopRequireDefault(_subnavigation);
 
@@ -13268,7 +13787,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _subnavigation2.default;
 
 /***/ }),
-/* 341 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13282,7 +13801,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _overflowContainer = __webpack_require__(342);
+var _overflowContainer = __webpack_require__(352);
 
 var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
 
@@ -13324,7 +13843,7 @@ Subnavigation = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = Subnavigation;
 
 /***/ }),
-/* 342 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13334,7 +13853,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _overflowContainer = __webpack_require__(343);
+var _overflowContainer = __webpack_require__(353);
 
 var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
 
@@ -13343,7 +13862,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _overflowContainer2.default;
 
 /***/ }),
-/* 343 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13363,7 +13882,7 @@ var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
-var _overflowContainerVue = __webpack_require__(344);
+var _overflowContainerVue = __webpack_require__(354);
 
 var _overflowContainerVue2 = _interopRequireDefault(_overflowContainerVue);
 
@@ -13426,7 +13945,7 @@ OverflowContainer = __decorate([_overflowContainerVue2.default, (0, _vueProperty
 exports.default = OverflowContainer;
 
 /***/ }),
-/* 344 */
+/* 354 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.items)?_c('nav',{ref:"subNav",staticClass:"overflow-container overflow-container--fixed",attrs:{"aria-label":"sub items"}},[(_vm.items)?_c('ul',{staticClass:"overflow-container__list",class:_vm.isTouch ? 'touch' : '',attrs:{"role":"presentation"}},_vm._l((_vm.items),function(item,index){return _c('li',{ref:"listItems",refInFor:true,staticClass:"overflow-container__item"},[_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false))],1)}),0):_vm._e()]):_vm._e()}
@@ -13443,7 +13962,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 345 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13453,7 +13972,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tabbedContent = __webpack_require__(346);
+var _tabbedContent = __webpack_require__(356);
 
 var _tabbedContent2 = _interopRequireDefault(_tabbedContent);
 
@@ -13462,7 +13981,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tabbedContent2.default;
 
 /***/ }),
-/* 346 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13476,7 +13995,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _tabbedContentVue = __webpack_require__(347);
+var _tabbedContentVue = __webpack_require__(357);
 
 var _tabbedContentVue2 = _interopRequireDefault(_tabbedContentVue);
 
@@ -13522,7 +14041,7 @@ TabbedContent = __decorate([_tabbedContentVue2.default, (0, _vuePropertyDecorato
 exports.default = TabbedContent;
 
 /***/ }),
-/* 347 */
+/* 357 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism tabbed-content"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),(_vm.tabs && _vm.tabs.length)?_c('Tabs',{attrs:{"tabs":_vm.tabs,"sequenced":_vm.sequenced}}):_vm._e(),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],1)])}
@@ -13539,7 +14058,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 348 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13549,7 +14068,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ubr = __webpack_require__(349);
+var _ubr = __webpack_require__(359);
 
 var _ubr2 = _interopRequireDefault(_ubr);
 
@@ -13558,7 +14077,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _ubr2.default;
 
 /***/ }),
-/* 349 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13569,7 +14088,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'ubr',
-    template: __webpack_require__(350),
+    template: __webpack_require__(360),
     props: {
         title: {
             type: String,
@@ -13591,13 +14110,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 350 */
+/* 360 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"ubr\">\n    <section class=\"container\">\n        <h2>{{ title }}</h2>\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"ubr__description\">\n                    <p>{{ description }}</p>\n                    <ul class=\"list ubr__list\">\n                        <li class=\"list__item\" v-for=\"reason of reasons\">{{ reason }}</li>\n                    </ul>\n                </div>\n            </div>\n            <div class=\"flexgrid__cell--xs-6\">\n                <template v-if=\"image && image.length\">\n                    <div class=\"ubr__image \">\n                        <cms-image class=\"img--responsive\" :image=\"image[0]\" :orientation=\"'landscape'\"></cms-image>\n                    </div>\n                </template>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 351 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13607,7 +14126,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageDrawer = __webpack_require__(352);
+var _pageDrawer = __webpack_require__(362);
 
 var _pageDrawer2 = _interopRequireDefault(_pageDrawer);
 
@@ -13616,7 +14135,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageDrawer2.default;
 
 /***/ }),
-/* 352 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13663,7 +14182,7 @@ PageDrawer = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = PageDrawer;
 
 /***/ }),
-/* 353 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13673,7 +14192,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageFooter = __webpack_require__(354);
+var _pageFooter = __webpack_require__(364);
 
 var _pageFooter2 = _interopRequireDefault(_pageFooter);
 
@@ -13682,7 +14201,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageFooter2.default;
 
 /***/ }),
-/* 354 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13696,7 +14215,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _pageFooterVue = __webpack_require__(355);
+var _pageFooterVue = __webpack_require__(365);
 
 var _pageFooterVue2 = _interopRequireDefault(_pageFooterVue);
 
@@ -13741,7 +14260,7 @@ PageFooter = __decorate([_pageFooterVue2.default, (0, _vuePropertyDecorator.Comp
 exports.default = PageFooter;
 
 /***/ }),
-/* 355 */
+/* 365 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer"},[_c('div',{staticClass:"footer__container"},[_c('div',{staticClass:"footer__primary"},[_c('router-link',{staticClass:"branded-logo footer__branded-logo",attrs:{"to":"/","aria-label":"Ultimaker homepage"}},[_c('icon',{staticClass:"branded-logo__robot",attrs:{"icon-name":"robot-ultimaker"}}),_vm._v(" "),_c('icon',{staticClass:"branded-logo__logo",attrs:{"icon-name":"logo-ultimaker"}})],1),_vm._v(" "),_c('footer-nav',{attrs:{"navigation":_vm.navigation}})],1),_vm._v(" "),_c('div',{staticClass:"footer__secondary"},[_c('social-nav'),_vm._v(" "),_c('locale-selector',_vm._g(_vm._b({staticClass:"footer__locale-selector",attrs:{"country":_vm.country}},'locale-selector',_vm.localeSelector,false),_vm.$listeners))],1),_vm._v(" "),_c('div',{staticClass:"footer__tertiary"},[_c('legal-nav',{staticClass:"footer__legal",attrs:{"navigation":_vm.legalNavigation.navigation,"label":_vm.legalNavigation.label}})],1)])])}
@@ -13758,7 +14277,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 356 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13768,7 +14287,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageHeader = __webpack_require__(357);
+var _pageHeader = __webpack_require__(367);
 
 var _pageHeader2 = _interopRequireDefault(_pageHeader);
 
@@ -13777,7 +14296,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pageHeader2.default;
 
 /***/ }),
-/* 357 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13797,11 +14316,11 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _publicEventService = __webpack_require__(6);
+var _publicEventService = __webpack_require__(7);
 
 var _publicEventService2 = _interopRequireDefault(_publicEventService);
 
-var _pageHeaderVue = __webpack_require__(358);
+var _pageHeaderVue = __webpack_require__(368);
 
 var _pageHeaderVue2 = _interopRequireDefault(_pageHeaderVue);
 
@@ -13947,7 +14466,7 @@ PageHeader = __decorate([_pageHeaderVue2.default, (0, _vuePropertyDecorator.Comp
 exports.default = PageHeader;
 
 /***/ }),
-/* 358 */
+/* 368 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{directives:[{name:"size-emitter",rawName:"v-size-emitter",value:('header'),expression:"'header'"}],staticClass:"header",class:_vm.headerClasses,attrs:{"role":"banner"}},[_c('div',{staticClass:"header__top",class:{'header--mobile-inverted': _vm.mainNavOpen}},[_c('router-link',{staticClass:"home-link",attrs:{"to":"/","aria-label":"Ultimaker homepage"}},[_c('icon',{staticClass:"home-link__logo",attrs:{"icon-name":"logo-ultimaker"}})],1),_vm._v(" "),(_vm.navigation)?_c('main-nav',_vm._g({attrs:{"items":_vm.navigation,"main-nav-open":_vm.mainNavOpen}},_vm.$listeners)):_vm._e(),_vm._v(" "),(_vm.cta && _vm.search)?_c('sys-nav',{attrs:{"order-now-icon":_vm.cta.icon,"order-now-label":_vm.cta.label,"order-now-link":_vm.cta.url,"search-icon":_vm.search.icon,"search-label":_vm.search.label},on:{"open-search":_vm.openSearch}}):_vm._e(),_vm._v(" "),_c('nav-assist',{staticClass:"main-nav__nav-assist",attrs:{"open-state":_vm.mainNavOpen},on:{"toggle":_vm.navAssistToggle}}),_vm._v(" "),_c('transition',{attrs:{"name":"search"},on:{"after-enter":_vm.handleFocus,"leave":_vm.handleFocus}},[(_vm.searchOpen)?_c('search-bar',{ref:"search",staticClass:"header__search",attrs:{"label":_vm.search.label,"placeholder":_vm.search.placeholder,"open-state":_vm.searchOpen},on:{"close":_vm.closeSearch}}):_vm._e()],1)],1)])}
@@ -13964,7 +14483,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 359 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13974,7 +14493,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _overview = __webpack_require__(360);
+var _overview = __webpack_require__(370);
 
 var _overview2 = _interopRequireDefault(_overview);
 
@@ -13983,7 +14502,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _overview2.default;
 
 /***/ }),
-/* 360 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13997,7 +14516,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _overviewVue = __webpack_require__(361);
+var _overviewVue = __webpack_require__(371);
 
 var _overviewVue2 = _interopRequireDefault(_overviewVue);
 
@@ -14042,7 +14561,7 @@ Overview = __decorate([_overviewVue2.default, (0, _vuePropertyDecorator.Componen
 exports.default = Overview;
 
 /***/ }),
-/* 361 */
+/* 371 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism overview"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_vm._l((_vm.sections),function(section,index){return [_c(section.type,_vm._b({key:index,tag:"component"},'component',section,false))]}),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],2)])}
@@ -14059,7 +14578,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 362 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14069,7 +14588,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _overviewUbr = __webpack_require__(363);
+var _overviewUbr = __webpack_require__(373);
 
 var _overviewUbr2 = _interopRequireDefault(_overviewUbr);
 
@@ -14078,7 +14597,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _overviewUbr2.default;
 
 /***/ }),
-/* 363 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14092,7 +14611,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _overviewUbrVue = __webpack_require__(364);
+var _overviewUbrVue = __webpack_require__(374);
 
 var _overviewUbrVue2 = _interopRequireDefault(_overviewUbrVue);
 
@@ -14137,7 +14656,7 @@ OverviewUBR = __decorate([_overviewUbrVue2.default, (0, _vuePropertyDecorator.Co
 exports.default = OverviewUBR;
 
 /***/ }),
-/* 364 */
+/* 374 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism overview-ubr"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"},_vm._l((_vm.items),function(blockIcon,index){return _c('BlockIcon',_vm._b({key:index,staticClass:"flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"},'BlockIcon',blockIcon,false))}),1),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],1)])}
@@ -14154,7 +14673,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 365 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14164,7 +14683,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentGeneral = __webpack_require__(366);
+var _contentGeneral = __webpack_require__(376);
 
 var _contentGeneral2 = _interopRequireDefault(_contentGeneral);
 
@@ -14173,7 +14692,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentGeneral2.default;
 
 /***/ }),
-/* 366 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14189,7 +14708,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _contentGeneralVue = __webpack_require__(367);
+var _contentGeneralVue = __webpack_require__(377);
 
 var _contentGeneralVue2 = _interopRequireDefault(_contentGeneralVue);
 
@@ -14246,7 +14765,7 @@ GeneralContent = __decorate([_contentGeneralVue2.default, (0, _vuePropertyDecora
 exports.default = GeneralContent;
 
 /***/ }),
-/* 367 */
+/* 377 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-general"},[_c('section',{staticClass:"content-general__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter",class:{'flexgrid--row-reversed': _vm.reversed}},[_c('div',{staticClass:"flexgrid__cell--xs-6 content-general__grid-cell content-general__content"},[_c('h3',{staticClass:"content-general__title"},[_vm._v(" "+_vm._s(_vm.title))]),_vm._v(" "),_c('div',{staticClass:"content-manageble content-general__body",domProps:{"innerHTML":_vm._s(_vm.description)}}),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6 content-general__grid-cell content-general__image"},[_c('div',{staticClass:"content-general__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1)])])])])}
@@ -14263,7 +14782,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 368 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14273,7 +14792,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentCover = __webpack_require__(369);
+var _contentCover = __webpack_require__(379);
 
 var _contentCover2 = _interopRequireDefault(_contentCover);
 
@@ -14282,7 +14801,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentCover2.default;
 
 /***/ }),
-/* 369 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14344,18 +14863,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "image", void 0);
 GeneralContent = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'ContentCover',
-    template: __webpack_require__(370)
+    template: __webpack_require__(380)
 })], GeneralContent);
 exports.default = GeneralContent;
 
 /***/ }),
-/* 370 */
+/* 380 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"content-cover content-cover--cover\">\n    <c-image v-if=\"this.image\" v-bind=\"this.image\"/>\n\n    <div class=\"content-cover__image--overlay\"></div>\n\n    <section class=\"content-cover__container\">\n        <div class=\"flexgrid__cell--xs-6 content-cover-content content-cover--cover-reset\">\n            <h3 class=\"content-cover__title\">{{ title }}</h3>\n            <p class=\"content-cover__description\">{{ description }}</p>\n            <div>\n                <component v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 371 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14365,7 +14884,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _generalContent = __webpack_require__(372);
+var _generalContent = __webpack_require__(382);
 
 var _generalContent2 = _interopRequireDefault(_generalContent);
 
@@ -14374,7 +14893,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _generalContent2.default;
 
 /***/ }),
-/* 372 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14385,7 +14904,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'general-content',
-    template: __webpack_require__(373),
+    template: __webpack_require__(383),
     props: {
         title: {
             type: String,
@@ -14412,13 +14931,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 373 */
+/* 383 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"general-content\">\n    <section class=\"container general-content__container\">\n        <div class=\"flexgrid flexgrid--gutter\" :class=\"{'flexgrid--row-reversed': reversed}\">\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell\">\n                <h2 class=\"general-content__title\"> {{ title }}</h2>\n                <p class=\"general-content__body\" v-for=\"p in text\">{{ p }}</p>\n                <content-link class=\"link\" v-if=\"contentLink && contentLink.href\" :block=\"'general-content'\" :url=\"contentLink.href\" :label=\"contentLink.text\">\n                </content-link>\n            </div>\n            <div class=\"flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell\">\n                <div class=\"general-content__image-wrapper\">\n                    <responsive-picture v-if=\"image\" v-bind=\"image\"></responsive-picture>\n                </div>\n            </div>\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 374 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14428,7 +14947,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroProduct = __webpack_require__(375);
+var _heroProduct = __webpack_require__(385);
 
 var _heroProduct2 = _interopRequireDefault(_heroProduct);
 
@@ -14437,7 +14956,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroProduct2.default;
 
 /***/ }),
-/* 375 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14448,7 +14967,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'legacy-hero-product',
-    template: __webpack_require__(376),
+    template: __webpack_require__(386),
     props: {
         title: {
             type: String,
@@ -14482,13 +15001,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 376 */
+/* 386 */
 /***/ (function(module, exports) {
 
 module.exports = "<article class=\"hero hero--products\">\n    <section class=\"container hero__container\">\n        <div class=\"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row\">\n\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__description\">\n                    <!--Intro-->\n                    <h1>{{ title }}</h1>\n                    <p class=\"copy--intro\">{{ description }}</p>\n                    <!--End intro-->\n\n                    <!--Price table-->\n                    <div class=\"price-table hero__price-table\">\n                        <ul class=\"price-table__list\" role=\"tablist\">\n                            <li class=\"price-table__item\" v-for=\"material in materials\" role=\"tab\">\n                                <icon icon-name=\"material\" class=\"price-table__icon\"></icon>\n                                <span class=\"price-table__info\">\n                                    <small class=\"price-table__tagline\">\n                                        {{ material['short_title'] }},\n                                        {{ material.weight.value }}{{ material.weight.unit }}\n                                        from\n                                    </small>\n                                    <currency :currency-type=\"material.price.currency\" :amount=\"material.price.value\" :decimals=\"0\"></currency>\n                                </span>\n                            </li>\n                        </ul>\n                        <small class=\"price-table__disclaimer\">{{ labels.excludingVat }}</small>\n                    </div>\n                    <!--End price table-->\n\n                    <!--Button-->\n                    <a href=\"\" class=\"button button--primary hero__button\" v-if=\"materials && materials.length\">{{ labels.buyCta }}</a>\n                    <!--End button-->\n\n                    <!--Link list icons-->\n                    <ul class=\"link-list link-list--icon hero__link-list\">\n                        <template v-if=\"documents\">\n                            <li class=\"link-list__item\" v-for=\"link in this.link\">\n                                <content-link :url=\"link.uri\" icon=\"info\">{{ link.title }}</content-link>\n                            </li>\n                        </template>\n                        <template v-if=\"this.documents\">\n                            <li class=\"link-list__item\" v-for=\"document in documents\" v-if=\"document.links\">\n                                <content-link :url=\"document.links.self.href\" icon=\"download\">{{ labels.download}} {{ document.title }}</content-link>\n                            </li>\n                        </template>\n                    </ul>\n                    <!--End link list-->\n                </div>\n            </div>\n\n            <!--Image -->\n            <div class=\"flexgrid__cell--xs-6\">\n                <div class=\"hero__image--product\">\n                    <template v-if=\"this.image && this.image.length\">\n                        <cms-image :image=\"image[0]\" :orientation=\"'square'\"></cms-image>\n                    </template>\n                </div>\n            </div>\n            <!--End image-->\n\n        </div>\n    </section>\n</article>\n";
 
 /***/ }),
-/* 377 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14498,7 +15017,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _sizeEmitter = __webpack_require__(378);
+var _sizeEmitter = __webpack_require__(388);
 
 Object.defineProperty(exports, 'SizeEmitter', {
   enumerable: true,
@@ -14508,7 +15027,7 @@ Object.defineProperty(exports, 'SizeEmitter', {
 });
 
 /***/ }),
-/* 378 */
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14529,7 +15048,7 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _publicEventService = __webpack_require__(6);
+var _publicEventService = __webpack_require__(7);
 
 var _publicEventService2 = _interopRequireDefault(_publicEventService);
 
@@ -14618,7 +15137,7 @@ var SizeEmitter = exports.SizeEmitter = function () {
 }();
 
 /***/ }),
-/* 379 */
+/* 389 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
