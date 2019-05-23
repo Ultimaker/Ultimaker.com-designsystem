@@ -616,6 +616,28 @@ exports[`Storyshots Atoms|text/inline/sup default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/brand default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="brand"
+    >
+      <img
+        alt="zeiss"
+        class="img--contain brand__image img--loading"
+        src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+        type="CImage"
+      />
+    </article>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Molecules/color backend 1`] = `
 <section
   class="story"
@@ -887,6 +909,149 @@ exports[`Storyshots Molecules/hero-heading title 1`] = `
         <!---->
       </div>
     </header>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules/list-unordered-limit default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="list-unordered-limit"
+    >
+      <main>
+        <ul>
+          <li
+            class="list__item"
+          >
+            [
+  {
+    "item": {
+      "type": "Brand",
+      "image": {
+        "alt": "zeiss",
+        "mimeType": "image/png",
+        "type": "CImage",
+        "url": "https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+      }
+    },
+    "type": "LiItem"
+  },
+  {
+    "item": {
+      "type": "Brand",
+      "image": {
+        "alt": "volkswagen",
+        "mimeType": "image/png",
+        "type": "CImage",
+        "url": "https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+      }
+    },
+    "type": "LiItem"
+  },
+  {
+    "item": {
+      "type": "Brand",
+      "image": {
+        "alt": "add lab decathlon",
+        "mimeType": "image/png",
+        "type": "CImage",
+        "url": "https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+      }
+    },
+    "type": "LiItem"
+  },
+  {
+    "item": {
+      "type": "Brand",
+      "image": {
+        "alt": "zeiss",
+        "mimeType": "image/png",
+        "type": "CImage",
+        "url": "https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+      }
+    },
+    "type": "LiItem"
+  },
+  {
+    "item": {
+      "type": "Brand",
+      "image": {
+        "alt": "volkswagen",
+        "mimeType": "image/png",
+        "type": "CImage",
+        "url": "https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+      }
+    },
+    "type": "LiItem"
+  },
+  {
+    "item": {
+      "type": "Brand",
+      "image": {
+        "alt": "add lab decathlon",
+        "mimeType": "image/png",
+        "type": "CImage",
+        "url": "https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+      }
+    },
+    "type": "LiItem"
+  },
+  {
+    "item": {
+      "type": "Brand",
+      "image": {
+        "alt": "zeiss",
+        "mimeType": "image/png",
+        "type": "CImage",
+        "url": "https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+      }
+    },
+    "type": "LiItem"
+  },
+  {
+    "item": {
+      "type": "Brand",
+      "image": {
+        "alt": "volkswagen",
+        "mimeType": "image/png",
+        "type": "CImage",
+        "url": "https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+      }
+    },
+    "type": "LiItem"
+  },
+  {
+    "item": {
+      "type": "Brand",
+      "image": {
+        "alt": "add lab decathlon",
+        "mimeType": "image/png",
+        "type": "CImage",
+        "url": "https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+      }
+    },
+    "type": "LiItem"
+  }
+]
+          </li>
+        </ul>
+      </main>
+       
+      <footer
+        style="display: none;"
+      >
+        <button
+          class="button--secondary"
+        >
+          Show all (undefined)
+        </button>
+      </footer>
+    </section>
   </section>
 </section>
 `;
@@ -1871,6 +2036,1343 @@ exports[`Storyshots Molecules|cards/card-product pla 1`] = `
         </li>
       </ul>
     </article>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Organisms/brands default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="organism brands2"
+    >
+      <article
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Ultimaker Brands
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            You could be one too!
+          </p>
+        </header>
+         
+        <section
+          class="list-unordered-limit"
+        >
+          <main>
+            <ul>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+            </ul>
+          </main>
+           
+          <footer
+            style="display: none;"
+          >
+            <button
+              class="button--secondary"
+            >
+              Show all (9)
+            </button>
+          </footer>
+        </section>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--large link--icon link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Test content link
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Organisms/brands items3LimitSmall4Large6 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="organism brands2"
+    >
+      <article
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Ultimaker Brands
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            You could be one too!
+          </p>
+        </header>
+         
+        <section
+          class="list-unordered-limit"
+        >
+          <main>
+            <ul>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+            </ul>
+          </main>
+           
+          <footer
+            style="display: none;"
+          >
+            <button
+              class="button--secondary"
+            >
+              Show all (3)
+            </button>
+          </footer>
+        </section>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--large link--icon link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Test content link
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Organisms/brands items4LimitSmall3Large6 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="organism brands2"
+    >
+      <article
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Ultimaker Brands
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            You could be one too!
+          </p>
+        </header>
+         
+        <section
+          class="list-unordered-limit"
+        >
+          <main>
+            <ul>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="voc"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3acpixrqY6w2oI4bSUWyNS/b740937c01508b1d8f49e94b2c8e0193/M__nze_Niederl__ndische_Ostindien_Companie.jpg"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+            </ul>
+          </main>
+           
+          <footer
+            style="display: none;"
+          >
+            <button
+              class="button--secondary"
+            >
+              Show all (4)
+            </button>
+          </footer>
+        </section>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--large link--icon link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Test content link
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Organisms/brands items6LimitSmall4Large6 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="organism brands2"
+    >
+      <article
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Ultimaker Brands
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            You could be one too!
+          </p>
+        </header>
+         
+        <section
+          class="list-unordered-limit"
+        >
+          <main>
+            <ul>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+            </ul>
+          </main>
+           
+          <footer
+            style="display: none;"
+          >
+            <button
+              class="button--secondary"
+            >
+              Show all (6)
+            </button>
+          </footer>
+        </section>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--large link--icon link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Test content link
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Organisms/brands items9LimitLarge6 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="organism brands2"
+    >
+      <article
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Ultimaker Brands
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            You could be one too!
+          </p>
+        </header>
+         
+        <section
+          class="list-unordered-limit"
+        >
+          <main>
+            <ul>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+            </ul>
+          </main>
+           
+          <footer
+            style="display: none;"
+          >
+            <button
+              class="button--secondary"
+            >
+              Show all (9)
+            </button>
+          </footer>
+        </section>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--large link--icon link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Test content link
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Organisms/brands items9LimitNone 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="organism brands2"
+    >
+      <article
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Ultimaker Brands
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            You could be one too!
+          </p>
+        </header>
+         
+        <section
+          class="list-unordered-limit"
+        >
+          <main>
+            <ul>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+            </ul>
+          </main>
+           
+          <footer
+            style="display: none;"
+          >
+            <button
+              class="button--secondary"
+            >
+               (9)
+            </button>
+          </footer>
+        </section>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--large link--icon link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Test content link
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Organisms/brands items9LimitSmall4 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="organism brands2"
+    >
+      <article
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Ultimaker Brands
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            You could be one too!
+          </p>
+        </header>
+         
+        <section
+          class="list-unordered-limit"
+        >
+          <main>
+            <ul>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="zeiss"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="volkswagen"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+              <li
+                class="list__item"
+              >
+                <article
+                  class="brand"
+                  type="Brand"
+                >
+                  <img
+                    alt="add lab decathlon"
+                    class="img--contain brand__image img--loading"
+                    src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="CImage"
+                  />
+                </article>
+              </li>
+            </ul>
+          </main>
+           
+          <footer
+            style="display: none;"
+          >
+            <button
+              class="button--secondary"
+            >
+              Show all (9)
+            </button>
+          </footer>
+        </section>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--large link--icon link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Test content link
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </article>
+    </section>
   </section>
 </section>
 `;
