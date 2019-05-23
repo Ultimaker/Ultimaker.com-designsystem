@@ -1,8 +1,8 @@
 <section class="list-unordered-limit">
     <main>
         <transition-group tag="ul" @before-enter="beforeEnter" @enter="enter">
-            <template v-for="(item, index) in listItems.items">
-                <component :is="item.type" v-bind="item" :key="index" v-show="showLimit() === -1 || index < showLimit() || showAll"/>
+            <template v-for="(item, index) in listItems">
+                <li-item :item="item" :key="index" v-show="showLimit() === -1 || index < showLimit() || showAll"/>
             </template>
         </transition-group>
     </main>
