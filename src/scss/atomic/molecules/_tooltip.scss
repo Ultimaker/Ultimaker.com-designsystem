@@ -25,3 +25,17 @@
         margin-bottom: 0;
     }
 }
+
+.tooltip--arrow-left {
+    &:after {
+        left: $buildingUnit;
+    }
+}
+
+.tooltip__list {
+    @extend %reset-list;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    @extend %reset-last-margin;
+}

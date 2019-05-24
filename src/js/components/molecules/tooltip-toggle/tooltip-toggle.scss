@@ -1,0 +1,9 @@
+.tooltip-toggle {
+    position: relative;
+}
+
+.tooltip-toggle__tooltip {
+    @extend %fontPrimary;
+    @include font-line-ratio(prim-s);
+    bottom: 60px;
+}
