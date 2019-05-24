@@ -2311,6 +2311,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   justify-content: flex-end; }
 
 .um-components .tooltip {
+  display: block;
   position: absolute;
   background: #000000;
   color: #FFFFFF;
@@ -2318,6 +2319,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   min-width: 96px;
   max-width: 150px;
   min-height: 36px;
+  white-space: normal;
+  word-break: break-word;
   font-weight: 400;
   z-index: 200; }
   .um-components .tooltip:after {
@@ -4867,7 +4870,8 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   font-size: 18px;
   padding: 0 12px 24px;
   text-align: center;
-  width: initial; }
+  width: initial;
+  white-space: nowrap; }
   @media (min-width: 1025px) {
     .um-components .table-compare__table thead th[scope="col"] {
       font-size: 20.0004px;
@@ -4882,7 +4886,8 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   left: 0;
   position: -webkit-sticky;
   position: sticky;
-  text-align: left; }
+  text-align: left;
+  white-space: nowrap; }
   @media (min-width: 1025px) {
     .um-components .table-compare__table tbody th[scope="row"] {
       position: static; } }
@@ -4907,16 +4912,15 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   height: 180px;
   width: 180px; }
 
-.um-components .table-compare__tooltip, .um-components .table-compare__feature {
-  vertical-align: middle; }
-
 .um-components .table-compare__feature {
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px);
   display: inline-block;
-  position: relative; }
+  position: relative;
+  vertical-align: top;
+  padding-top: 12px; }
 
 .um-components .table-compare__tooltip {
-  padding-right: 12px; }
+  width: 150px; }
 
 .um-components .table-compare__cell {
   position: absolute;
@@ -4942,7 +4946,8 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 .um-components .table-compare__scroll-button {
   position: absolute;
   transform: translateY(-50%);
-  top: 90px; }
+  top: 90px;
+  background-color: transparent; }
   @media (min-width: 1025px) {
     .um-components .table-compare__scroll-button {
       display: none; } }

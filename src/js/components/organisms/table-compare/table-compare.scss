@@ -56,6 +56,7 @@
     padding: 0 $buildingUnit 2 * $buildingUnit;
     text-align: center;
     width: initial; // override table atom
+    white-space: nowrap;
 
     @include min-desktop {
         font-size: 1.6667 * $buildingUnit;
@@ -75,6 +76,7 @@
     position: -webkit-sticky;
     position: sticky;
     text-align: left;
+    white-space: nowrap;
 
     @include min-desktop {
         position: static;
@@ -106,18 +108,16 @@
     width: 15 * $buildingUnit;
 }
 
-.table-compare__tooltip, .table-compare__feature {
-    vertical-align: middle;
-}
-
 .table-compare__feature {
     background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
     display: inline-block;
     position: relative;
+    vertical-align:  top;
+    padding-top: $buildingUnit;
 }
 
 .table-compare__tooltip {
-    padding-right: $buildingUnit;
+    width: 150px;
 }
 
 
@@ -146,7 +146,7 @@
     position: absolute;
     transform: translateY(-50%);
     top: 7.5 * $buildingUnit; // half the height of .table-compare__image
-
+    background-color: transparent;
     @include min-desktop {
         display: none;
     }
