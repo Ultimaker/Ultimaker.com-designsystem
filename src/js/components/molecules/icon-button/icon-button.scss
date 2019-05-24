@@ -117,3 +117,9 @@
         }
     }
 }
+
+.icon-button--visually-hidden-label {
+    .icon-button__label {
+        @include visually-hidden;
+    }
+}
