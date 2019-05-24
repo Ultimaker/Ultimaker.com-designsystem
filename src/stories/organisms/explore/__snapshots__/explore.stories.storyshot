@@ -279,6 +279,7 @@ exports[`Storyshots organisms|explore Explore 1`] = `
                   aria-label=""
                   class="icon-button explore__nav"
                   role="button"
+                  tabindex="0"
                 >
                   <!---->
                    
@@ -297,6 +298,7 @@ exports[`Storyshots organisms|explore Explore 1`] = `
                   aria-label=""
                   class="icon-button explore__nav icon-button--reversed"
                   role="button"
+                  tabindex="0"
                 >
                   <!---->
                    

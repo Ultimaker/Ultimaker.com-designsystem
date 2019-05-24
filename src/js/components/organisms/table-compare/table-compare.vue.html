@@ -21,13 +21,9 @@
                     <tr v-for="row in content.rows">
                         <th scope="row">
                             <div class="table-compare__feature">
-                                <template v-if="row.tooltip">
-                                    <icon-button :icon-name="row.tooltip.icon"> {{ row.label }}</icon-button>
-                                    <tooltip v-show="false">
-                                        {{ row.tooltip.description }}
-                                    </tooltip>
-                                </template>
+                                {{ row.label }}
                             </div>
+                            <tooltip-toggle v-bind="row.tooltip" class="table-compare__tooltip" v-if="row.tooltip" />
                         </th>
                         <td v-for="cell in row.cells">
                             <span class="table-compare__cell">{{ cell.label }}</span>

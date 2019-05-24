@@ -77,13 +77,13 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2001_0"
+                      id="flyout_title_2040_0"
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_2001_0"
+                      aria-labelledby="flyout_title_2040_0"
                       class="flyout__list"
                     >
                       <li
@@ -164,14 +164,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2001_1"
+                      id="flyout_title_2040_1"
                     >
                       Where is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2001_1"
+                      aria-labelledby="flyout_title_2040_1"
                       class="flyout__list"
                     >
                       <li
@@ -589,14 +589,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2001_2"
+                      id="flyout_title_2040_2"
                     >
                       How is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2001_2"
+                      aria-labelledby="flyout_title_2040_2"
                       class="flyout__list"
                     >
                       <li
@@ -835,13 +835,13 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2080_0"
+                      id="flyout_title_2119_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_2080_0"
+                      aria-labelledby="flyout_title_2119_0"
                       class="flyout__list"
                     >
                       <li
@@ -909,14 +909,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2080_1"
+                      id="flyout_title_2119_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2080_1"
+                      aria-labelledby="flyout_title_2119_1"
                       class="flyout__list"
                     >
                       <li
@@ -1081,14 +1081,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2080_2"
+                      id="flyout_title_2119_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2080_2"
+                      aria-labelledby="flyout_title_2119_2"
                       class="flyout__list"
                     >
                       <li
@@ -1311,13 +1311,13 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2130_0"
+                      id="flyout_title_2169_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_2130_0"
+                      aria-labelledby="flyout_title_2169_0"
                       class="flyout__list"
                     >
                       <li
@@ -1385,14 +1385,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2130_1"
+                      id="flyout_title_2169_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2130_1"
+                      aria-labelledby="flyout_title_2169_1"
                       class="flyout__list"
                     >
                       <li
@@ -1557,14 +1557,14 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_2130_2"
+                      id="flyout_title_2169_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_2130_2"
+                      aria-labelledby="flyout_title_2169_2"
                       class="flyout__list"
                     >
                       <li
@@ -3207,6 +3207,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                 aria-label="Change your country, currently: Netherlands"
                 class="icon-button icon-button--small locale-selector__edit--buton"
                 role="button"
+                tabindex="0"
               >
                 <!---->
                  
@@ -3224,6 +3225,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                 class="icon-button icon-button--small locale-selector__edit--buton"
                 role="button"
                 style="display: none;"
+                tabindex="0"
               >
                 <!---->
                  
