@@ -35,3 +35,5 @@ export {default as BlockIcon} from 'molecules/block-icon';
 
 export {default as HeroHeading} from 'molecules/hero-heading';
 
+export {default as TooltipToggle} from 'molecules/tooltip-toggle';
+

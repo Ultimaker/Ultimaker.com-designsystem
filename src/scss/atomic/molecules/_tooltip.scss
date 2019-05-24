@@ -31,10 +31,10 @@ $triangleSize: $buildingUnit;
     }
 }
 
-.tooltip__list-item.tooltip__label {
-    @extend small;
-    display: block;
-    margin-bottom: 0;
+.tooltip--arrow-left {
+    &:after {
+        left: $buildingUnit;
+    }
 }
 
 .tooltip__list {
@@ -50,4 +50,13 @@ $triangleSize: $buildingUnit;
     width: 120px;
     margin: 0 0 $buildingUnit 0;
     padding-left: 0;
+}
+
+.tooltip-enter, .tooltip-leave-to {
+    opacity: 0;
+    transform: translateY(calc(-100% - 42px));
+}
+
+.tooltip-enter-active, .tooltip-leave-active {
+    transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultEasing;
 }
