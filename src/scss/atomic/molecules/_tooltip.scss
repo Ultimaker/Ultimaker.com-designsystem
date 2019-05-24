@@ -1,4 +1,5 @@
 .tooltip {
+    display: block;
     background-color: $colorBlack;
     color: $colorWhite;
     font-weight: 400;
@@ -26,16 +27,11 @@
     }
 }
 
-.tooltip--arrow-left {
-    &:after {
-        left: $buildingUnit;
-    }
+.tooltip-enter, .tooltip-leave-to {
+    opacity: 0;
+    transform: translateY(calc(-100% - 42px));
 }
 
-.tooltip__list {
-    @extend %reset-list;
-    margin-top: 0;
-    margin-left: 0;
-    padding-left: 0;
-    @extend %reset-last-margin;
+.tooltip-enter-active, .tooltip-leave-active {
+    transition: opacity $defaultDuration $defaultEasing, transform $defaultDuration, left 0s $defaultEasing;
 }

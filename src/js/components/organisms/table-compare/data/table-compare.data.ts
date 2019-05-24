@@ -30,11 +30,11 @@ export const data = {
             ],
             rows: [
                 {
-                    label: 'Feature One',
+                    label: 'Great Feature One',
                     tooltip: {
                         label: '',
                         icon: 'info',
-                        description: 'Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.',
+                        description: 'Celery quandong swiss chard chicory earthnut pea potato.',
                     },
                     cells: [
                         {
@@ -52,12 +52,7 @@ export const data = {
                     ],
                 },
                 {
-                    label: 'Feature Two',
-                    tooltip: {
-                        label: '',
-                        icon: 'info',
-                        description: 'Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.',
-                    },
+                    label: 'Fantastic Feature Two',
                     cells: [
                         {
                             checked: true,
@@ -78,7 +73,7 @@ export const data = {
                     tooltip: {
                         label: '',
                         icon: 'info',
-                        description: 'Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.',
+                        description: 'Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.',
                     },
                     cells: [
                         {
@@ -100,7 +95,7 @@ export const data = {
                     tooltip: {
                         label: '',
                         icon: 'info',
-                        description: 'Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.',
+                        description: 'Celery quandong swiss chard chicory earthnut pea potato.',
                     },
                     cells: [
                         {
@@ -119,11 +114,6 @@ export const data = {
                 },
                 {
                     label: 'Feature Five',
-                    tooltip: {
-                        label: '',
-                        icon: 'info',
-                        description: 'Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.',
-                    },
                     cells: [
                         {
                             checked: false,
