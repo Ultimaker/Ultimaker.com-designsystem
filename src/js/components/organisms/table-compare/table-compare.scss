@@ -106,12 +106,20 @@
     width: 15 * $buildingUnit;
 }
 
+.table-compare__tooltip, .table-compare__feature {
+    vertical-align: middle;
+}
+
 .table-compare__feature {
     background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
     display: inline-block;
-    padding-right: $buildingUnit;
     position: relative;
 }
+
+.table-compare__tooltip {
+    padding-right: $buildingUnit;
+}
+
 
 .table-compare__cell {
     @include visually-hidden;

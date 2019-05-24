@@ -1136,6 +1136,84 @@ exports[`Storyshots Molecules/product printer 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div
+      style="margin-top: 300px;"
+    >
+      <div
+        class="tooltip-toggle"
+      >
+        <div
+          class="tooltip tooltip-toggle__tooltip"
+          style="display: none;"
+        >
+          
+            Curabitur non ante eget mauris volutpat elementum. Sed vitae condimentum sem.
+        
+        </div>
+         
+        <a
+          aria-label=""
+          class="icon-button icon-button--visually-hidden-label"
+          role="button"
+          tabindex="0"
+        >
+          <!---->
+           
+          <span
+            class="icon-button__label"
+          >
+            
+        Cras eu tincidunt
+    
+          </span>
+        </a>
+      </div>
+       
+      <div
+        style="margin-left: 300px;"
+      >
+        <div
+          class="tooltip-toggle"
+        >
+          <div
+            class="tooltip tooltip-toggle__tooltip"
+            style="display: none;"
+          >
+            
+            Curabitur non ante eget mauris volutpat elementum. Sed vitae condimentum sem.
+        
+          </div>
+           
+          <a
+            aria-label=""
+            class="icon-button icon-button--visually-hidden-label"
+            role="button"
+            tabindex="0"
+          >
+            <!---->
+             
+            <span
+              class="icon-button__label"
+            >
+              
+        Cras eu tincidunt
+    
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Molecules|auto-complete default 1`] = `
 <section
   class="story"
@@ -1238,6 +1316,7 @@ exports[`Storyshots Molecules|buttons/icon-button default 1`] = `
       aria-label="icon button default"
       class="icon-button"
       role="button"
+      tabindex="0"
     >
       <!---->
        
@@ -1262,6 +1341,7 @@ exports[`Storyshots Molecules|buttons/icon-button defaultNoSlot 1`] = `
       aria-label="icon button default, no slot"
       class="icon-button"
       role="button"
+      tabindex="0"
     >
       <!---->
        
@@ -1282,6 +1362,7 @@ exports[`Storyshots Molecules|buttons/icon-button large 1`] = `
       aria-label="icon button large"
       class="icon-button icon-button--large"
       role="button"
+      tabindex="0"
     >
       <!---->
        
@@ -1306,10 +1387,36 @@ exports[`Storyshots Molecules|buttons/icon-button largeNoSlot 1`] = `
       aria-label="icon button large, no slot"
       class="icon-button icon-button--large"
       role="button"
+      tabindex="0"
     >
       <!---->
        
       <!---->
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button reversed 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="if you press this button your life will be better"
+      class="icon-button icon-button--reversed"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <span
+        class="icon-button__label"
+      >
+        icon button default
+      </span>
     </a>
   </section>
 </section>
@@ -1326,6 +1433,7 @@ exports[`Storyshots Molecules|buttons/icon-button small 1`] = `
       aria-label="icon button small"
       class="icon-button icon-button--small"
       role="button"
+      tabindex="0"
     >
       <!---->
        
@@ -1350,6 +1458,7 @@ exports[`Storyshots Molecules|buttons/icon-button smallNoSlot 1`] = `
       aria-label="icon button small, no slot"
       class="icon-button icon-button--small"
       role="button"
+      tabindex="0"
     >
       <!---->
        
@@ -1370,6 +1479,7 @@ exports[`Storyshots Molecules|buttons/icon-button underline 1`] = `
       aria-label="icon button underline-large"
       class="icon-button icon-button--underline-large"
       role="button"
+      tabindex="0"
     >
       <!---->
        
@@ -1394,10 +1504,36 @@ exports[`Storyshots Molecules|buttons/icon-button underlineNoSlot 1`] = `
       aria-label="icon button underline-large, no slot"
       class="icon-button icon-button--underline-large"
       role="button"
+      tabindex="0"
     >
       <!---->
        
       <!---->
+    </a>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|buttons/icon-button visuallyHiddenLabel 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <a
+      aria-label="if you press this button your life will be better"
+      class="icon-button icon-button--visually-hidden-label"
+      role="button"
+      tabindex="0"
+    >
+      <!---->
+       
+      <span
+        class="icon-button__label"
+      >
+        icon button default
+      </span>
     </a>
   </section>
 </section>
@@ -3846,28 +3982,39 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                     <div
                       class="table-compare__feature"
                     >
+                      
+                                Feature One
+                            
+                    </div>
+                     
+                    <div
+                      class="tooltip-toggle table-compare__tooltip"
+                    >
+                      <div
+                        class="tooltip tooltip-toggle__tooltip"
+                        style="display: none;"
+                      >
+                        
+            Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+        
+                      </div>
+                       
                       <a
                         aria-label=""
-                        class="icon-button"
+                        class="icon-button icon-button--visually-hidden-label"
                         role="button"
+                        tabindex="0"
                       >
                         <!---->
                          
                         <span
                           class="icon-button__label"
                         >
-                           Feature One
+                          
+        
+    
                         </span>
                       </a>
-                       
-                      <div
-                        class="tooltip undefined__tooltip"
-                        style="display: none;"
-                      >
-                        
-                                        Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
-                                    
-                      </div>
                     </div>
                   </th>
                    
@@ -3906,28 +4053,39 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                     <div
                       class="table-compare__feature"
                     >
+                      
+                                Feature Two
+                            
+                    </div>
+                     
+                    <div
+                      class="tooltip-toggle table-compare__tooltip"
+                    >
+                      <div
+                        class="tooltip tooltip-toggle__tooltip"
+                        style="display: none;"
+                      >
+                        
+            Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+        
+                      </div>
+                       
                       <a
                         aria-label=""
-                        class="icon-button"
+                        class="icon-button icon-button--visually-hidden-label"
                         role="button"
+                        tabindex="0"
                       >
                         <!---->
                          
                         <span
                           class="icon-button__label"
                         >
-                           Feature Two
+                          
+        
+    
                         </span>
                       </a>
-                       
-                      <div
-                        class="tooltip undefined__tooltip"
-                        style="display: none;"
-                      >
-                        
-                                        Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
-                                    
-                      </div>
                     </div>
                   </th>
                    
@@ -3966,28 +4124,39 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                     <div
                       class="table-compare__feature"
                     >
+                      
+                                Feature Three
+                            
+                    </div>
+                     
+                    <div
+                      class="tooltip-toggle table-compare__tooltip"
+                    >
+                      <div
+                        class="tooltip tooltip-toggle__tooltip"
+                        style="display: none;"
+                      >
+                        
+            Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+        
+                      </div>
+                       
                       <a
                         aria-label=""
-                        class="icon-button"
+                        class="icon-button icon-button--visually-hidden-label"
                         role="button"
+                        tabindex="0"
                       >
                         <!---->
                          
                         <span
                           class="icon-button__label"
                         >
-                           Feature Three
+                          
+        
+    
                         </span>
                       </a>
-                       
-                      <div
-                        class="tooltip undefined__tooltip"
-                        style="display: none;"
-                      >
-                        
-                                        Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
-                                    
-                      </div>
                     </div>
                   </th>
                    
@@ -4026,28 +4195,39 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                     <div
                       class="table-compare__feature"
                     >
+                      
+                                Feature Four
+                            
+                    </div>
+                     
+                    <div
+                      class="tooltip-toggle table-compare__tooltip"
+                    >
+                      <div
+                        class="tooltip tooltip-toggle__tooltip"
+                        style="display: none;"
+                      >
+                        
+            Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+        
+                      </div>
+                       
                       <a
                         aria-label=""
-                        class="icon-button"
+                        class="icon-button icon-button--visually-hidden-label"
                         role="button"
+                        tabindex="0"
                       >
                         <!---->
                          
                         <span
                           class="icon-button__label"
                         >
-                           Feature Four
+                          
+        
+    
                         </span>
                       </a>
-                       
-                      <div
-                        class="tooltip undefined__tooltip"
-                        style="display: none;"
-                      >
-                        
-                                        Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
-                                    
-                      </div>
                     </div>
                   </th>
                    
@@ -4086,28 +4266,39 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                     <div
                       class="table-compare__feature"
                     >
+                      
+                                Feature Five
+                            
+                    </div>
+                     
+                    <div
+                      class="tooltip-toggle table-compare__tooltip"
+                    >
+                      <div
+                        class="tooltip tooltip-toggle__tooltip"
+                        style="display: none;"
+                      >
+                        
+            Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
+        
+                      </div>
+                       
                       <a
                         aria-label=""
-                        class="icon-button"
+                        class="icon-button icon-button--visually-hidden-label"
                         role="button"
+                        tabindex="0"
                       >
                         <!---->
                          
                         <span
                           class="icon-button__label"
                         >
-                           Feature Five
+                          
+        
+    
                         </span>
                       </a>
-                       
-                      <div
-                        class="tooltip undefined__tooltip"
-                        style="display: none;"
-                      >
-                        
-                                        Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
-                                    
-                      </div>
                     </div>
                   </th>
                    
@@ -4183,6 +4374,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
               aria-label=""
               class="icon-button table-compare__scroll-button table-compare__scroll-button--left"
               role="button"
+              tabindex="0"
             >
               <!---->
                
@@ -4193,6 +4385,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
               aria-label=""
               class="icon-button table-compare__scroll-button table-compare__scroll-button--right"
               role="button"
+              tabindex="0"
             >
               <!---->
                
