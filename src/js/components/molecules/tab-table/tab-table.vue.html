@@ -1,0 +1,7 @@
+<div :id="id" class="tab-table__content" v-show="active" role="tabpanel" :aria-hidden="!active" :aria-label="label">
+    <template v-show="rows" v-for="(row, index) in rows">
+        <component :is="row.type"
+                   v-bind="row">
+        </component>
+    </template>
+</div>

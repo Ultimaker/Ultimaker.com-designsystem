@@ -1,0 +1,15 @@
+<section class="tab-table-row">
+    <div  class="tab-table-row__label">
+        {{ label }}
+    </div>
+    <div   class="tab-table-row__content">
+        <div class="content-manageble tab-table-row__value" v-html="value" v-show="value"></div>
+        <ul class="tab-table-row__linklist" v-show="linkList">
+            <template v-for="link in linkList">
+                <li class="tab-table-row__linklist-item">
+                    <ContentLink class="link tab-table-row__linklist-link" v-bind="link" :label="link.label" />
+                </li>
+            </template>
+        </ul>
+    </div>
+</section>

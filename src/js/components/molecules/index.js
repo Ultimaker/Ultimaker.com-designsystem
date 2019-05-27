@@ -36,4 +36,5 @@ export {default as Tabs} from 'molecules/tabs';
 export {default as Tag} from 'molecules/tag';
 export {default as TagList} from 'molecules/tag-list';
 export {default as TooltipToggle} from 'molecules/tooltip-toggle';
-
+export {default as TabTable} from 'molecules/tab-table';
+export {default as TabTableRow} from 'molecules/tab-table-row';
