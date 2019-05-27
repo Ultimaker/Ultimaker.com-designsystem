@@ -4008,6 +4008,11 @@ table tfoot {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px); }
 
+.icon-button--transparent {
+  background-color: transparent; }
+  .icon-button--transparent:hover {
+    background-color: transparent; }
+
 .block-icon__icon,
 .block-icon__image {
   width: 100%; }
@@ -5395,15 +5400,23 @@ svg text {
   height: 180px;
   width: 180px; }
 
+.table-compare__row-header {
+  position: relative;
+  display: block; }
+
 .table-compare__feature {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px);
   display: inline-block;
   position: relative;
   vertical-align: top;
-  padding-top: 12px; }
+  padding: 16px 50px 10px 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px); }
+  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .hero--products:nth-child(even) .table-compare__feature, main .hero--products-application:nth-child(even) .table-compare__feature, main .hero--text:nth-child(even) .table-compare__feature, main .hero--cover:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .overview:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature {
+    background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .table-compare__tooltip {
-  width: 150px; }
+  margin-left: -50px; }
+  .table-compare__tooltip .tooltip {
+    width: 150px; }
 
 .table-compare__cell {
   position: absolute;

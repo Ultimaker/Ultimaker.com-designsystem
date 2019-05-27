@@ -108,18 +108,31 @@
     width: 15 * $buildingUnit;
 }
 
+.table-compare__row-header {
+    position: relative;
+    display: block;
+
+}
+
 .table-compare__feature {
-    background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
     display: inline-block;
     position: relative;
-    vertical-align:  top;
-    padding-top: $buildingUnit;
+    vertical-align: top;
+    padding: 16px 50px 10px 0;
+    background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
+
+    main .organism:nth-child(even) & {
+        background: linear-gradient(to left, transparentize($colorBgGray, 1), $colorBgGray $buildingUnit);
+    }
 }
 
 .table-compare__tooltip {
-    width: 150px;
-}
+    margin-left: -50px;
 
+    .tooltip {
+        width: 150px;
+    }
+}
 
 .table-compare__cell {
     @include visually-hidden;

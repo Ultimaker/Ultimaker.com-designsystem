@@ -3540,6 +3540,11 @@ because both families serve another purpose. Therefore the line-heights will be 
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px); }
 
+.um-components .icon-button--transparent {
+  background-color: transparent; }
+  .um-components .icon-button--transparent:hover {
+    background-color: transparent; }
+
 .um-components .block-icon__icon,
 .um-components .block-icon__image {
   width: 100%; }
@@ -4912,15 +4917,23 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   height: 180px;
   width: 180px; }
 
+.um-components .table-compare__row-header {
+  position: relative;
+  display: block; }
+
 .um-components .table-compare__feature {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px);
   display: inline-block;
   position: relative;
   vertical-align: top;
-  padding-top: 12px; }
+  padding: 16px 50px 10px 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px); }
+  .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .hero--products:nth-child(even) .table-compare__feature, .um-components main .hero--products-application:nth-child(even) .table-compare__feature, .um-components main .hero--text:nth-child(even) .table-compare__feature, .um-components main .hero--cover:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .general-content:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .overview:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature {
+    background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .um-components .table-compare__tooltip {
-  width: 150px; }
+  margin-left: -50px; }
+  .um-components .table-compare__tooltip .tooltip {
+    width: 150px; }
 
 .um-components .table-compare__cell {
   position: absolute;
