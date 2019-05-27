@@ -249,19 +249,19 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tooltip__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tooltip__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist {
   list-style: none; }
 
-.um-components .list__item, .um-components .hero--text .content--rich ul li, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .footer-nav__item, .um-components .tooltip__list-item, .um-components .legal__item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
+.um-components .list__item, .um-components .hero--text .content--rich ul li, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .footer-nav__item, .um-components .legal__item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .tooltip > :last-child, .um-components .tooltip__list > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child {
+.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child {
   margin-bottom: 0; }
 
 .um-components .hero--products .hero__link--large, .um-components .hero--products-application .hero__link--large, .um-components .examples .examples__link--large {
@@ -350,7 +350,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     font-family: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
-.um-components button:focus, .um-components .button:focus, .um-components input[type="button"]:focus, .um-components input[type="submit"]:focus, .um-components .nav-assist:focus:not(:hover), .um-components .nav-assist--close:focus:not(:hover), .um-components a:not(.hit-area):focus:not(:hover), .um-components a:not(.hit-area):focus:not(:active), .um-components .price-table--tabs .price-table__item:focus:not(:hover), .um-components .price-table--tabs .price-table__item:focus:not(:active), .um-components .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .um-components .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .um-components .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .um-components .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .um-components .tablist__section .tablist__item:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item:focus:not(:hover), .um-components .business-card:focus, .um-components .business-card:hover:focus, .um-components .business-card:focus:active, .um-components .auto-complete__list-item:focus:not(:hover), .um-components .auto-complete__list-item:focus:not(:active) {
+.um-components button:focus, .um-components .button:focus, .um-components input[type="button"]:focus, .um-components input[type="submit"]:focus, .um-components .nav-assist:focus:not(:hover), .um-components .nav-assist--close:focus:not(:hover), .um-components a:not(.hit-area):focus:not(:hover), .um-components a:not(.hit-area):focus:not(:active), .um-components .price-table--tabs .price-table__item:focus:not(:hover), .um-components .price-table--tabs .price-table__item:focus:not(:active), .um-components .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .um-components .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .um-components .price-table--tabs .examples .examples__tabs .tablist__item:focus:not(:active), .um-components .examples .examples__tabs .price-table--tabs .tablist__item:focus:not(:active), .um-components .tablist__section .tablist__item:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item:focus:not(:hover), .um-components .auto-complete__list-item:focus:not(:hover), .um-components .auto-complete__list-item:focus:not(:active), .um-components .business-card:focus, .um-components .business-card:hover:focus, .um-components .business-card:focus:active {
   color: #FFFFFF;
   background-color: #24bcf3; }
 
@@ -546,8 +546,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .overflow-container__link.exact-active,
 .um-components [type="checkbox"] + label,
 .um-components .notification__copy,
-.um-components .business-card__property,
-.um-components .auto-complete__list-item {
+.um-components .auto-complete__list-item,
+.um-components .business-card__property {
   font-size: 14px;
   line-height: 21px;
   margin-top: -2px;
@@ -949,15 +949,11 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .link--large {
   display: inline-block;
   font-size: 18px;
-  line-height: 24px;
-  margin-top: 6px;
-  margin-bottom: 24px; }
+  line-height: 24px; }
   @media (min-width: 768px) {
     .um-components .link--large {
       font-size: 20px;
-      line-height: 24px;
-      margin-top: 5px;
-      margin-bottom: 31px; } }
+      line-height: 24px; } }
 
 .um-components .link .link__underline, .um-components .legal__link .link__underline, .um-components .footer-nav__link .link__underline, .um-components .toggle .link__underline, .um-components .overflow-container__link:hover .link__underline, .um-components .overflow-container__link.exact-active .link__underline, .um-components .link--large .link__underline {
   width: calc(100% - 0.1px);
@@ -1033,6 +1029,9 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .link--icon.link--large .icon, .um-components .link--large.toggle--icon .icon, .um-components .link--icon .link--reversed.link--large .icon, .um-components .toggle--icon .link--reversed.link--large .icon, .um-components .link--icon .link--large.legal__link .icon, .um-components .toggle--icon .link--large.legal__link .icon, .um-components .link--icon .link--large.flyout__link .icon, .um-components .toggle--icon .link--large.flyout__link .icon, .um-components .link--icon .link--large.footer-nav__link .icon, .um-components .toggle--icon .link--large.footer-nav__link .icon {
       font-size: 24px;
       transform: translateX(-33px); }
+
+.um-components .link--icon:focus, .um-components .toggle--icon:focus {
+  fill: currentColor; }
 
 .um-components .link-list .list--icon, .um-components .flyout__list .list--icon, .um-components .footer-nav__list .list--icon {
   margin-bottom: 0; }
@@ -2312,42 +2311,27 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .tooltip {
   display: block;
-  position: absolute;
-  background: #000000;
+  background-color: #000000;
   color: #FFFFFF;
-  padding: 12px;
+  font-weight: 400;
+  min-height: 36px;
   min-width: 96px;
   max-width: 150px;
-  min-height: 36px;
+  padding: 12px;
+  position: absolute;
   white-space: normal;
-  word-break: break-word;
-  font-weight: 400;
   z-index: 200; }
   .um-components .tooltip:after {
+    border: 12px solid transparent;
+    border-top-color: #000000;
+    bottom: -24px;
     content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-top: 12px solid #000000;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid transparent;
     left: calc(50% - 12px);
-    bottom: -24px; }
-
-.um-components .tooltip--arrow-left:after {
-  left: 12px; }
-
-.um-components .tooltip__list {
-  margin-top: 0;
-  margin-left: 0;
-  padding-left: 0; }
-
-.um-components .tooltip__list-item {
-  width: 120px;
-  margin: 0 0 12px 0;
-  padding-left: 0; }
+    position: absolute;
+    height: 0;
+    width: 0; }
+  .um-components .tooltip > :last-child {
+    margin-bottom: 0; }
 
 .um-components .tooltip-enter, .um-components .tooltip-leave-to {
   opacity: 0;
@@ -3151,13 +3135,13 @@ because both families serve another purpose. Therefore the line-heights will be 
       max-width: 66.67%; } }
 
 .um-components .header-block {
-  margin-bottom: 54px; }
+  margin-bottom: 49.92px; }
+  @media (min-width: 768px) {
+    .um-components .header-block {
+      margin-bottom: 51.96px; } }
 
 .um-components .header-block--hero {
-  margin-bottom: 64.8px; }
-  @media (min-width: 768px) {
-    .um-components .header-block--hero {
-      margin-bottom: 69px; } }
+  margin-bottom: 51.96px; }
 
 .um-components .header-block__subtitle--hero {
   color: #7F7F7F;
@@ -3173,19 +3157,21 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .header-block__title {
   text-align: center;
   position: relative;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 0; }
 
 .um-components .header-block__subtitle {
   text-align: center;
   position: relative;
-  margin-top: 21.6px;
+  margin-bottom: 0;
+  margin-top: 18px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #7F7F7F; }
   @media (min-width: 768px) {
     .um-components .header-block__subtitle {
-      margin-top: 18px; } }
+      margin-top: 24px; } }
   @media (min-width: 768px) {
     .um-components .header-block__subtitle {
       font-size: 24px;
@@ -3202,6 +3188,120 @@ because both families serve another purpose. Therefore the line-heights will be 
     @media (min-width: 768px) {
       .um-components .footer-block--push-down:not(:empty) {
         margin-top: 60px; } }
+
+.um-components .auto-complete {
+  position: relative;
+  margin-bottom: 23px; }
+  .um-components .auto-complete * {
+    margin: 0; }
+  .um-components .auto-complete__dropdown {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+    width: 100%;
+    border: 1px solid #E3E3E3;
+    z-index: 1000; }
+  .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label {
+    user-select: none; }
+  .um-components .auto-complete__list-item, .um-components .auto-complete__label {
+    padding-left: 12px;
+    padding-right: 12px; }
+  .um-components .auto-complete__list-item {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    outline: none;
+    color: #000000; }
+    .um-components .auto-complete__list-item:hover, .um-components .auto-complete__list-item:active {
+      background-color: #EAEAEA; }
+    .um-components .auto-complete__list-item .auto-complete__value {
+      font-weight: 600; }
+  .um-components .auto-complete__label {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: #7F7F7F;
+    background-color: #F5F5F5; }
+  .um-components .auto-complete__input {
+    width: 100%; }
+    .um-components .auto-complete--small .auto-complete__input {
+      padding-top: 6.5px;
+      padding-bottom: 6.5px; }
+  .um-components .auto-complete--reversed .auto-complete__dropdown {
+    bottom: 100%; }
+
+.um-components .brand__image {
+  width: 120px; }
+
+.um-components .block-icon__icon,
+.um-components .block-icon__image {
+  width: 100%; }
+
+.um-components .block-icon__icon {
+  height: 60px; }
+
+.um-components .block-icon__headline {
+  margin-top: 0; }
+
+.um-components .block-icon__content {
+  flex-basis: auto; }
+
+.um-components .block-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding: 0 12px 49px 12px !important; }
+  .um-components .block-icon .block-icon__visual {
+    flex: 1 1 60px;
+    max-height: 60px;
+    margin: 0;
+    margin-bottom: 24px; }
+
+@media (min-width: 569px) {
+  .um-components .block-icon__items {
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .um-components .block-icon {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .um-components .block-icon {
+    padding-bottom: 52px !important; } }
+
+@media (min-width: 768px) {
+  .um-components .block-icon__items {
+    flex-flow: row wrap; } }
+
+.um-components .block-icon__link {
+  margin-bottom: 0; }
+
+.um-components .card {
+  max-width: 600px;
+  margin-bottom: 12px; }
+  @media (max-width: 1024px) {
+    .um-components .card {
+      margin-bottom: 48px; } }
+  @media (min-width: 768px) {
+    .um-components .card {
+      margin-bottom: 24px; } }
+
+.um-components .card__visual {
+  margin: 0 auto 18px;
+  overflow: hidden; }
+  @media (min-width: 569px) {
+    .um-components .card__visual {
+      margin: 0 auto 24px; } }
+
+.um-components .card__icon,
+.um-components .card__image {
+  width: 100%; }
+
+.um-components .card__icon {
+  height: 100%; }
+
+.um-components .card__content {
+  width: 100%; }
 
 .um-components .brand-card__image-wrapper {
   width: 120px;
@@ -3282,33 +3382,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .business-card__link {
   margin: 0; }
 
-.um-components .card {
-  max-width: 600px;
-  margin-bottom: 12px; }
-  @media (max-width: 1024px) {
-    .um-components .card {
-      margin-bottom: 48px; } }
-  @media (min-width: 768px) {
-    .um-components .card {
-      margin-bottom: 24px; } }
-
-.um-components .card__visual {
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 569px) {
-    .um-components .card__visual {
-      margin: 0 auto 24px; } }
-
-.um-components .card__icon,
-.um-components .card__image {
-  width: 100%; }
-
-.um-components .card__icon {
-  height: 100%; }
-
-.um-components .card__content {
-  width: 100%; }
-
 .um-components .card-product {
   position: relative;
   background-color: #FFFFFF;
@@ -3387,12 +3460,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .color--selected .color__spec--show {
     opacity: 0; }
 
-.um-components .toggle {
-  color: #0CA9E3;
-  font-weight: 400; }
-  .um-components .toggle:hover {
-    color: #0CA9E3; }
-
 .um-components .content-block-container__image {
   width: 75%;
   background-color: transparent;
@@ -3406,12 +3473,18 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .content-block__content {
   width: 100%; }
 
+.um-components .toggle {
+  color: #0CA9E3;
+  font-weight: 400; }
+  .um-components .toggle:hover {
+    color: #0CA9E3; }
+
 .um-components .cta-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .cta-block {
       flex-direction: row;
       align-items: baseline;
@@ -3422,9 +3495,9 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .cta-block--hero {
   align-items: flex-start; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .cta-block--hero {
-      align-items: center; } }
+      align-items: baseline; } }
 
 .um-components .cta-link {
   text-align: center;
@@ -3432,16 +3505,14 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-bottom: 18px; }
   .um-components .cta-link:last-of-type {
     margin-bottom: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 569px) {
     .um-components .cta-link {
-      margin-bottom: 0;
+      margin-bottom: 18px;
       margin-right: 24px; }
       .um-components .cta-link:not(.button--primary) {
         margin-right: 24px; }
-      .um-components .cta-link.button--primary + .cta-link {
-        margin-left: 24px; }
-      .um-components .cta-block--footer .cta-link:not(.button--primary) {
-        margin-bottom: 0; }
+      .um-components .cta-link.button--primary {
+        margin-right: 48px; }
       .um-components .cta-block--footer .cta-link:last-child {
         margin-right: 0; } }
 
@@ -3545,89 +3616,9 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .icon-button--transparent:hover {
     background-color: transparent; }
 
-.um-components .block-icon__icon,
-.um-components .block-icon__image {
-  width: 100%; }
-
-.um-components .block-icon__icon {
-  height: 60px; }
-
-.um-components .block-icon__headline {
-  margin-top: 0; }
-
-.um-components .block-icon__content {
-  flex-basis: auto; }
-
-.um-components .block-icon {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  padding: 0 12px 49px 12px !important; }
-  .um-components .block-icon .block-icon__visual {
-    flex: 1 1 60px;
-    max-height: 60px;
-    margin: 0;
-    margin-bottom: 24px; }
-
-@media (min-width: 569px) {
-  .um-components .block-icon__items {
-    flex-flow: row wrap;
-    justify-content: space-around; }
-  .um-components .block-icon {
-    flex-direction: column;
-    align-items: center;
-    text-align: center; } }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .um-components .block-icon {
-    padding-bottom: 52px !important; } }
-
-@media (min-width: 768px) {
-  .um-components .block-icon__items {
-    flex-flow: row wrap; } }
-
-.um-components .block-icon__link {
-  margin-bottom: 0; }
-
-.um-components .auto-complete {
-  position: relative;
-  margin-bottom: 23px; }
-  .um-components .auto-complete * {
-    margin: 0; }
-  .um-components .auto-complete__dropdown {
-    position: absolute;
-    background: #FFFFFF;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-    width: 100%;
-    border: 1px solid #E3E3E3;
-    z-index: 1000; }
-  .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label {
-    user-select: none; }
-  .um-components .auto-complete__list-item, .um-components .auto-complete__label {
-    padding-left: 12px;
-    padding-right: 12px; }
-  .um-components .auto-complete__list-item {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    cursor: pointer;
-    outline: none;
-    color: #000000; }
-    .um-components .auto-complete__list-item:hover, .um-components .auto-complete__list-item:active {
-      background-color: #EAEAEA; }
-    .um-components .auto-complete__list-item .auto-complete__value {
-      font-weight: 600; }
-  .um-components .auto-complete__label {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    color: #7F7F7F;
-    background-color: #F5F5F5; }
-  .um-components .auto-complete__input {
-    width: 100%; }
-    .um-components .auto-complete--small .auto-complete__input {
-      padding-top: 6.5px;
-      padding-bottom: 6.5px; }
-  .um-components .auto-complete--reversed .auto-complete__dropdown {
-    bottom: 100%; }
+.um-components .icon-button--small-icon .icon {
+  font-size: 18px;
+  margin: 3px; }
 
 .um-components .product {
   display: flex;
@@ -3666,6 +3657,15 @@ because both families serve another purpose. Therefore the line-heights will be 
         font-size: 20px;
         line-height: 24px; } }
 
+.um-components .tooltip-toggle {
+  position: relative;
+  display: inline-block; }
+
+.um-components .tooltip-toggle__tooltip {
+  font-size: 14px;
+  line-height: 21px;
+  bottom: 60px; }
+
 .um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
   padding-left: 1em;
   font-size: 14px;
@@ -3685,15 +3685,6 @@ because both families serve another purpose. Therefore the line-heights will be 
         padding-left: 8px; } }
     .um-components .content-manageble ul li p, .um-components .content-manageble .hero--text .content--rich ul li p, .um-components .hero--text .content--rich .content-manageble ul li p, .um-components .content-manageble ul li strong, .um-components .content-manageble .hero--text .content--rich ul li strong, .um-components .hero--text .content--rich .content-manageble ul li strong, .um-components .content-manageble ul li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ul li .tablist__item, .um-components .content-manageble ul li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ul li .tablist__item, .um-components .content-manageble ol li p, .um-components .content-manageble ol li strong, .um-components .content-manageble ol li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ol li .tablist__item, .um-components .content-manageble ol li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ol li .tablist__item {
       margin: 0; }
-
-.um-components .tooltip-toggle {
-  position: relative;
-  display: inline-block; }
-
-.um-components .tooltip-toggle__tooltip {
-  font-size: 14px;
-  line-height: 21px;
-  bottom: 60px; }
 
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
@@ -4550,7 +4541,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
 .um-components .list-section--cards .list-section-list + .list-section__footer {
   margin-top: -12px;
-  margin-bottom: 36px; }
+  margin-bottom: 60px; }
   @media (min-width: 768px) {
     .um-components .list-section--cards .list-section-list + .list-section__footer {
       margin-bottom: 60px; } }
@@ -4836,6 +4827,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
 .um-components .table-compare__scroll-container {
   overflow: auto;
+  overflow-y: visible;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory; }
 
@@ -4887,6 +4879,10 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
       padding-right: 24px; } }
 
 .um-components .table-compare__table tbody th[scope="row"] {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -2px;
+  margin-bottom: 23px;
   border-top: 1px solid #E3E3E3;
   left: 0;
   position: -webkit-sticky;
@@ -4925,15 +4921,20 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   display: inline-block;
   position: relative;
   vertical-align: top;
-  padding: 16px 50px 10px 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px); }
+  padding: 15px 50px 11px 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 125px;
+  max-width: 70vw; }
   .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .hero--products:nth-child(even) .table-compare__feature, .um-components main .hero--products-application:nth-child(even) .table-compare__feature, .um-components main .hero--text:nth-child(even) .table-compare__feature, .um-components main .hero--cover:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .general-content:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .overview:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .um-components .table-compare__tooltip {
   margin-left: -50px; }
   .um-components .table-compare__tooltip .tooltip {
-    width: 150px; }
+    width: 200px;
+    max-width: 200px; }
 
 .um-components .table-compare__cell {
   position: absolute;
@@ -4968,6 +4969,54 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     left: 0; }
   .um-components .table-compare__scroll-button--right {
     right: 0; }
+
+@media (min-width: 569px) {
+  .um-components .content-highlight__container {
+    padding-bottom: 60px; } }
+
+.um-components .content-highlight__image-wrapper {
+  display: flex;
+  width: 75%;
+  margin: 0 auto 30px auto; }
+  @media (min-width: 569px) {
+    .um-components .content-highlight__image-wrapper {
+      padding-right: 24px;
+      width: 100%; }
+      .um-components .flexgrid--row-reversed .content-highlight__image-wrapper {
+        padding-left: 24px;
+        padding-right: 0; } }
+
+.um-components .content-highlight__content {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 569px) {
+    .um-components .content-highlight__content {
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 24px; }
+      .um-components .flexgrid--row-reversed .content-highlight__content {
+        padding-right: 24px;
+        padding-left: 0; } }
+
+.um-components .content-highlight-header .header-block__title,
+.um-components .content-highlight-header .header-block__subtitle {
+  text-align: center; }
+  @media (min-width: 569px) {
+    .um-components .content-highlight-header .header-block__title,
+    .um-components .content-highlight-header .header-block__subtitle {
+      text-align: left; } }
+
+.um-components .content-highlight-footer.footer-block:not(:empty) {
+  padding-bottom: 0; }
+
+.um-components .content-highlight__body {
+  margin-bottom: 60px;
+  text-align: center; }
+  .um-components .content-highlight__body > * {
+    margin: 0; }
+  @media (min-width: 569px) {
+    .um-components .content-highlight__body {
+      text-align: left; } }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
