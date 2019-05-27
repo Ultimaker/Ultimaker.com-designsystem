@@ -1,6 +1,6 @@
 .tabs {
     margin-top: -($buildingUnit * 3);
-    margin-bottom: $buildingUnit * 3;
+    margin-bottom: $buildingUnit * 5;
 
     @include min-tablet() {
         margin-bottom: $buildingUnit * 4.5;
