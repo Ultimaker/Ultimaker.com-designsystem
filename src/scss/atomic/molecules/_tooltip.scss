@@ -8,6 +8,7 @@
     max-width: 150px;
     padding: $buildingUnit;
     position: absolute;
+    white-space: normal;
     z-index: 200;
 
     &:after {
