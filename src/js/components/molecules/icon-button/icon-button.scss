@@ -123,3 +123,11 @@
         @include visually-hidden;
     }
 }
+
+.icon-button--transparent {
+    background-color: transparent;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
