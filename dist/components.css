@@ -249,12 +249,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tab-table-row__linklist, .overflow-container__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .overflow-container__list, .list-section-list, .hero--product .hero__linklist {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tab-table-row__linklist, .overflow-container__list, .list-section-list, .hero--product .hero__linklist {
   list-style: none; }
 
 .list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
@@ -3469,7 +3469,7 @@ table tfoot {
 
 .tabs {
   margin-top: -36px;
-  margin-bottom: 36px; }
+  margin-bottom: 60px; }
   @media (min-width: 768px) {
     .tabs {
       margin-bottom: 54px;
@@ -4163,6 +4163,46 @@ table tfoot {
     .content-manageble ol li .examples .examples__tabs .tablist__item,
     .examples .examples__tabs .content-manageble ol li .tablist__item {
       margin: 0; }
+
+.tab-table__content {
+  margin-top: 60px; }
+
+.tab-table-row {
+  padding: 12px 0;
+  border-top: 1px solid #EAEAEA;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .tab-table-row {
+      flex-direction: row;
+      padding: 18px 0; } }
+  .tab-table-row:first-of-type {
+    border-top: 2px solid #EAEAEA; }
+  .tab-table-row:last-of-type {
+    border-bottom: 2px solid #EAEAEA; }
+  .tab-table-row__label {
+    flex: 1;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px; }
+  .tab-table-row__value {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 21px; }
+    @media (min-width: 768px) {
+      .tab-table-row__value {
+        margin-top: 0; } }
+  .tab-table-row__content {
+    flex: 1; }
+  .tab-table-row__linklist {
+    margin-top: 12px; }
+    @media (min-width: 768px) {
+      .tab-table-row__linklist {
+        margin-top: 16px; } }
+    .tab-table-row__linklist .tab-table-row__linklist-item .tab-table-row__linklist-link {
+      margin-bottom: 6px; }
+    .tab-table-row__linklist .tab-table-row__linklist-item:last-child .tab-table-row__linklist-link {
+      margin-bottom: 0; }
 
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
