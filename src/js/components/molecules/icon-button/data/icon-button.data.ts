@@ -29,6 +29,12 @@ export const data = {
         iconName: 'search',
         slot: 'icon button small',
     },
+    smallIcon: {
+        buttonAriaLabel: 'icon button small-icon',
+        buttonClass: 'icon-button--small-icon',
+        iconName: 'search',
+        slot: 'icon button small-icon',
+    },
     smallNoSlot: {
         buttonAriaLabel: 'icon button small, no slot',
         buttonClass: 'icon-button--small',

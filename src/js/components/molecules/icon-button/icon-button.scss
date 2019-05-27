@@ -131,3 +131,8 @@
         background-color: transparent;
     }
 }
+
+.icon-button--small-icon .icon {
+    font-size: $buildingUnit * 1.5;
+    margin: $buildingUnit * 0.25;
+}

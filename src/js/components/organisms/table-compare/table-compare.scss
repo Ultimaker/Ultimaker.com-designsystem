@@ -72,6 +72,7 @@
 
 // Row header cells
 .table-compare__table tbody th[scope="row"] {
+    @include font-ratio-rhythm(prim-s);
     border-top: 1px solid $colorGray;
     left: 0;
     position: -webkit-sticky;
@@ -119,7 +120,7 @@
     display: inline-block;
     position: relative;
     vertical-align: top;
-    padding: 13px 50px 10px 0;
+    padding: 15px 50px 11px 0;
     background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
 
     main .organism:nth-child(even) & {
