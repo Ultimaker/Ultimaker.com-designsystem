@@ -1,8 +1,7 @@
 <article class="card-product">
     <anchor-overlay :url="url" :title="title"/>
     <div class="card-product__image-container">
-        <c-image class="card-product__image" v-bind="image" v-if="image && !imageError" @error="imageError = true"
-                 resize-behavior="crop"/>
+        <c-image class="card-product__image" v-bind="image" v-if="image && !imageError" @error="imageError = true" />
         <div class="img--contain card-product__image gray-background" v-if="!image || imageError">{{ title }}</div>
     </div>
     <h3 class="card-product__heading">{{ title }}</h3>
