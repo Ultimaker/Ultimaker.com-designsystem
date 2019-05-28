@@ -15,8 +15,8 @@
 	border-collapse: collapse;
 	position: relative;
 	table-layout: fixed;
-    // --numberOfColumns is set in the template
-    width: calc(var(--numberOfColumns) * 100%);
+    // --number-of-columns is set in the template
+    width: calc(var(--number-of-columns) * 100%);
 
     @include min-desktop {
         width: 100%;
