@@ -3,7 +3,7 @@
         <header-block :title="title" :subtitle="subtitle" />
         <div class="table-compare" ref="scrollWidthContainer">
             <div class="table-compare__scroll-container" ref="scrollContainer">
-                <table v-if="content" class="table-compare__table" :style="`--numberOfColumns: ${content.columns.length};`">
+                <table v-if="content" class="table-compare__table" :style="`--number-of-columns: ${content.columns.length};`">
                     <colgroup>
                         <col>
                         <col v-for="col in content.columns">
