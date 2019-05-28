@@ -14,7 +14,7 @@
     &:after {
         border: $buildingUnit solid transparent;
         border-top-color: $colorBlack;
-        bottom: $buildingUnit * -2;
+        bottom: -(($buildingUnit * 2) - 1);
         content: '';
         left: calc(50% - 12px);
         position: absolute;
