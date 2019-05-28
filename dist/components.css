@@ -5320,7 +5320,7 @@ svg text {
   border-collapse: collapse;
   position: relative;
   table-layout: fixed;
-  width: calc(var(--numberOfColumns) * 100%); }
+  width: calc(var(--number-of-columns) * 100%); }
   @media (min-width: 1025px) {
     .table-compare__table {
       width: 100%; } }
