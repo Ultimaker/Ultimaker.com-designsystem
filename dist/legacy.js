@@ -11871,9 +11871,28 @@ var TooltipToggle = function (_Vue) {
         }
     }, {
         key: "hide",
-        value: function hide() {
-            this.visible = false;
-        }
+        value: function () {
+            var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2() {
+                return regeneratorRuntime.wrap(function _callee2$(_context2) {
+                    while (1) {
+                        switch (_context2.prev = _context2.next) {
+                            case 0:
+                                this.visible = false;
+
+                            case 1:
+                            case "end":
+                                return _context2.stop();
+                        }
+                    }
+                }, _callee2, this);
+            }));
+
+            function hide() {
+                return _ref2.apply(this, arguments);
+            }
+
+            return hide;
+        }()
     }, {
         key: "tooltipEnter",
         value: function tooltipEnter(el, done) {
@@ -11883,8 +11902,8 @@ var TooltipToggle = function (_Vue) {
             var _clickableELement$get = clickableELement.getBoundingClientRect(),
                 elementHeight = _clickableELement$get.height;
 
-            var yAxisCorrection = elementHeight / 2;
-            _gsap.TweenLite.fromTo(tooltipElement, this.duration, { autoAlpha: 0, x: 0, y: this.buildingUnit * 2.5 }, { autoAlpha: 1, x: 0, y: this.buildingUnit * 1.5 - yAxisCorrection, ease: _gsap.Power2.easeOut }).eventCallback('onComplete', done);
+            var yAxisCorrection = this.buildingUnit * 2;
+            _gsap.TweenLite.fromTo(tooltipElement, this.duration, { autoAlpha: 0, x: 0, y: yAxisCorrection }, { autoAlpha: 1, x: 0, y: yAxisCorrection - elementHeight / 2.5, ease: _gsap.Power2.easeOut }).eventCallback('onComplete', done);
         }
     }, {
         key: "tooltipLeave",
