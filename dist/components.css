@@ -4129,10 +4129,18 @@ table tfoot {
   position: relative;
   display: inline-block; }
 
+.tooltip-toggle__link {
+  margin-bottom: 0; }
+
+.tooltip-toggle__icon {
+  margin: 3px 6px; }
+
 .tooltip-toggle__tooltip {
   font-size: 14px;
   line-height: 21px;
   bottom: 60px; }
+  .tooltip-toggle__tooltip:after {
+    left: 10px; }
 
 .content-manageble ul, .content-manageble .hero--text .content--rich ul, .hero--text .content--rich .content-manageble ul,
 .content-manageble ol {
@@ -5454,7 +5462,7 @@ svg text {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .table-compare__tooltip {
-  margin-left: -50px; }
+  padding: 15px 50px 11px 0; }
   .table-compare__tooltip .tooltip {
     width: 200px;
     max-width: 200px; }

@@ -3661,10 +3661,18 @@ because both families serve another purpose. Therefore the line-heights will be 
   position: relative;
   display: inline-block; }
 
+.um-components .tooltip-toggle__link {
+  margin-bottom: 0; }
+
+.um-components .tooltip-toggle__icon {
+  margin: 3px 6px; }
+
 .um-components .tooltip-toggle__tooltip {
   font-size: 14px;
   line-height: 21px;
   bottom: 60px; }
+  .um-components .tooltip-toggle__tooltip:after {
+    left: 10px; }
 
 .um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
   padding-left: 1em;
@@ -4971,7 +4979,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .um-components .table-compare__tooltip {
-  margin-left: -50px; }
+  padding: 15px 50px 11px 0; }
   .um-components .table-compare__tooltip .tooltip {
     width: 200px;
     max-width: 200px; }
