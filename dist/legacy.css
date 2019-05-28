@@ -2324,7 +2324,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .tooltip:after {
     border: 12px solid transparent;
     border-top-color: #000000;
-    bottom: -24px;
+    bottom: -23px;
     content: '';
     left: calc(50% - 12px);
     position: absolute;
@@ -3666,6 +3666,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .tooltip-toggle__icon {
   margin: 3px 6px; }
+  .um-components .link:focus .tooltip-toggle__icon, .um-components .legal__link:focus .tooltip-toggle__icon, .um-components .footer-nav__link:focus .tooltip-toggle__icon, .um-components .toggle:focus .tooltip-toggle__icon, .um-components .overflow-container__link:focus:hover .tooltip-toggle__icon, .um-components .overflow-container__link.exact-active:focus .tooltip-toggle__icon {
+    color: #ffffff; }
 
 .um-components .tooltip-toggle__tooltip {
   font-size: 14px;

@@ -2786,7 +2786,7 @@ table tfoot {
   .tooltip:after {
     border: 12px solid transparent;
     border-top-color: #000000;
-    bottom: -24px;
+    bottom: -23px;
     content: '';
     left: calc(50% - 12px);
     position: absolute;
@@ -4134,6 +4134,8 @@ table tfoot {
 
 .tooltip-toggle__icon {
   margin: 3px 6px; }
+  .link:focus .tooltip-toggle__icon, .legal__link:focus .tooltip-toggle__icon, .footer-nav__link:focus .tooltip-toggle__icon, .toggle:focus .tooltip-toggle__icon, .overflow-container__link:focus:hover .tooltip-toggle__icon, .overflow-container__link.exact-active:focus .tooltip-toggle__icon {
+    color: #ffffff; }
 
 .tooltip-toggle__tooltip {
   font-size: 14px;

@@ -45,7 +45,7 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
         }
     }
 
-    hide():void {
+    async hide():Promise<void> {
         this.visible = false;
     }
 
@@ -56,12 +56,12 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
         // @ts-ignore
         const { height: elementHeight } = <DOMRect> clickableELement.getBoundingClientRect();
 
-        const yAxisCorrection = elementHeight / 2;
+        const yAxisCorrection =  this.buildingUnit * 2;
 
         TweenLite
             .fromTo(tooltipElement, this.duration,
-                    { autoAlpha: 0, x: 0, y: this.buildingUnit * 2.5 },
-                    { autoAlpha: 1, x: 0, y: this.buildingUnit * 1.5 - yAxisCorrection , ease: Power2.easeOut })
+                    { autoAlpha: 0, x: 0, y: yAxisCorrection },
+                    { autoAlpha: 1, x: 0, y: (yAxisCorrection - (elementHeight / 2.5)) , ease: Power2.easeOut })
             .eventCallback('onComplete', done);
     }
 

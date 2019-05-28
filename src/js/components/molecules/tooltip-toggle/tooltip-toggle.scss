@@ -9,6 +9,10 @@
 
 .tooltip-toggle__icon{
     margin: ($buildingUnit / 4) ($buildingUnit / 2);
+
+    .link:focus & {
+        color: #ffffff;
+    }
 }
 
 .tooltip-toggle__tooltip {
