@@ -51,24 +51,17 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
 
     tooltipEnter(el, done) {
         const tooltipElement = <HTMLElement> el;
-        const iconElement = <HTMLElement> this.$refs.button.$el;
-        const { height: tooltipHeight, width: tooltipWidth } = <DOMRect> tooltipElement.getBoundingClientRect();
-        const { x: iconX, width: iconWidth } = <DOMRect> iconElement.getBoundingClientRect();
+        const clickableELement = this.$refs.button;
 
-        const iconCenterOffset = iconWidth / 2;
-        let xAxisCorrection = tooltipWidth / -2 + iconCenterOffset;
+        // @ts-ignore
+        const { height: elementHeight } = <DOMRect> clickableELement.getBoundingClientRect();
 
-        if (iconX + xAxisCorrection < 0) {
-            xAxisCorrection = 0;
-            this.tooltipLeft = true;
-        } else {
-            this.tooltipLeft = false;
-        }
+        const yAxisCorrection = elementHeight / 2;
 
         TweenLite
             .fromTo(tooltipElement, this.duration,
-                { autoAlpha: 0, x: xAxisCorrection, y: this.buildingUnit * -1 },
-                { autoAlpha: 1, x: xAxisCorrection, y: 0, ease: Power2.easeOut })
+                    { autoAlpha: 0, x: 0, y: this.buildingUnit * 2.5 },
+                    { autoAlpha: 1, x: 0, y: this.buildingUnit * 1.5 - yAxisCorrection , ease: Power2.easeOut })
             .eventCallback('onComplete', done);
     }
 

@@ -1,10 +1,22 @@
 .tooltip-toggle {
     position: relative;
-    display: inline-block;
+    display: inline-block; 
+}
+
+.tooltip-toggle__link{
+    margin-bottom: 0;
+}
+
+.tooltip-toggle__icon{
+    margin: ($buildingUnit / 4) ($buildingUnit / 2);
 }
 
 .tooltip-toggle__tooltip {
     @extend %fontPrimary;
     @include font-line-ratio(prim-s);
     bottom: 60px;
+
+    &:after{
+        left: 10px;
+    }
 }
