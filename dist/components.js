@@ -4001,6 +4001,9 @@ var CImage = function (_Mixins) {
     }, {
         key: "src",
         get: function get() {
+            if (_browserCapabilities2.default.isBrowser) {
+                return _cImage2.imageConstants.tinyGif;
+            }
             return this.url;
         }
     }, {

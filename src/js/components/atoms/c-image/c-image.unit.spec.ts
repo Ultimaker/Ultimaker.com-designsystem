@@ -4,6 +4,7 @@ import CImage from './c-image';
 import { imageConstants } from './c-image.constants';
 import ViewportUtil from 'utils/viewport';
 import { FocusArea, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
+import BrowserCapabilities from 'utils/browser-capabilities';
 
 describe('components', () => {
     describe('atoms', () => {
@@ -28,6 +29,7 @@ describe('components', () => {
             });
 
             it('should not have an element defined', () => {
+                spyOnProperty(BrowserCapabilities, 'isBrowser', 'get').and.returnValue(false);
                 const vm = mount();
                 expect(vm.$el).toBeDefined();
                 expect(vm.$el.src).toContain('/media/images/starships/enterprise');
