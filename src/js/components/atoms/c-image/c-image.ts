@@ -82,6 +82,10 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
     }
 
     get src() {
+        if (BrowserCapabilities.isBrowser) {
+            return imageConstants.tinyGif;
+        }
+
         return this.url;
     }
 
@@ -110,7 +114,7 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
     }
 
     getParams(options?: {width?: number, height?: number}) {
-        const elementWidth = this.width  || imageConstants.initialSize;
+        const elementWidth = this.width || imageConstants.initialSize;
         const elementHeight = this.height;
         const paramMap = new Map<string, any>([
             ['w', options && options.width ? options.width : elementWidth],
