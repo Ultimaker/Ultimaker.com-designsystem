@@ -4308,64 +4308,52 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   />
                    
                   <td>
-                    <div
-                      class="cta-block"
+                    <a
+                      class="button"
+                      href="#/en/quote"
                     >
-                      <a
-                        class="link--primary button cta-link"
-                        href="#/en/quote"
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
                       >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
+                        
         Get a quote
     
-                        </span>
-                      </a>
-                    </div>
+                      </span>
+                    </a>
                   </td>
                   <td>
-                    <div
-                      class="cta-block"
+                    <a
+                      class="button"
+                      href="#/en/quote"
                     >
-                      <a
-                        class="link--primary button cta-link"
-                        href="#/en/quote"
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
                       >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
+                        
         Get a quote
     
-                        </span>
-                      </a>
-                    </div>
+                      </span>
+                    </a>
                   </td>
                   <td>
-                    <div
-                      class="cta-block"
+                    <a
+                      class="button"
+                      href="#/en/quote"
                     >
-                      <a
-                        class="link--primary button cta-link"
-                        href="#/en/quote"
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
                       >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
+                        
         Get a quote
     
-                        </span>
-                      </a>
-                    </div>
+                      </span>
+                    </a>
                   </td>
                 </tr>
               </tfoot>
