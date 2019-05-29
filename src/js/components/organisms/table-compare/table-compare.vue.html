@@ -35,7 +35,7 @@
                     <tr>
                         <th scope="row"></th>
                         <td v-for="cell in content.columns">
-                            <cta-block :ctas="[cell.cta]" />
+                            <component v-if="cell.cta" v-bind="cell.cta" :is="cell.cta.type" :class="getClassNames(cell.cta.type)"/>
                         </td>
                     </tr>
                     </tfoot>
