@@ -1192,7 +1192,6 @@ exports[`Storyshots Molecules/tab-table-row default 1`] = `
           </div>
            
           <a
-            aria-disabled="true"
             aria-label="Label tooltip"
             class="link tooltip-toggle__link"
             role="button"
@@ -1269,7 +1268,6 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
         </div>
          
         <a
-          aria-disabled="true"
           aria-label="Cras eu tincidunt"
           class="link tooltip-toggle__link"
           role="button"
@@ -1301,7 +1299,6 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
           </div>
            
           <a
-            aria-disabled="true"
             aria-label="Cras eu tincidunt"
             class="link tooltip-toggle__link"
             role="button"
@@ -4130,7 +4127,6 @@ exports[`Storyshots Organisms/tabbed-table default 1`] = `
                       </div>
                        
                       <a
-                        aria-disabled="true"
                         aria-label="Label tooltip"
                         class="link tooltip-toggle__link"
                         role="button"
@@ -4531,7 +4527,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       </div>
                        
                       <a
-                        aria-disabled="true"
                         aria-label=""
                         class="link tooltip-toggle__link"
                         role="button"
@@ -4638,7 +4633,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       </div>
                        
                       <a
-                        aria-disabled="true"
                         aria-label=""
                         class="link tooltip-toggle__link"
                         role="button"
@@ -4702,7 +4696,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       </div>
                        
                       <a
-                        aria-disabled="true"
                         aria-label=""
                         class="link tooltip-toggle__link"
                         role="button"
@@ -4816,7 +4809,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   </td>
                   <td>
                     <a
-                      class="button"
+                      class="link link--medium"
                       href="#/en/quote"
                     >
                       <!---->

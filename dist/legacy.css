@@ -4883,7 +4883,8 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     opacity: 0; }
 
 .um-components .table-compare {
-  position: relative; }
+  position: relative;
+  margin-bottom: 27.6px; }
 
 .um-components .table-compare__scroll-container {
   overflow: auto;
@@ -4967,6 +4968,11 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   padding: 18px;
   text-align: center; }
 
+.um-components .table-compare__table tfoot td {
+  vertical-align: middle; }
+  .um-components .table-compare__table tfoot td > .link, .um-components .table-compare__table tfoot td > .legal__link, .um-components .table-compare__table tfoot td > .footer-nav__link, .um-components .table-compare__table tfoot td > .toggle, .um-components .table-compare__table tfoot td > .overflow-container__link:hover, .um-components .table-compare__table tfoot td > .overflow-container__link.exact-active {
+    margin: 0; }
+
 .um-components .table-compare__image {
   display: block;
   margin: 0 auto 24px;
@@ -4981,7 +4987,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   display: inline-block;
   position: relative;
   vertical-align: top;
-  padding: 15px 50px 11px 0;
+  padding: 13.5px 50px 13.5px 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4992,7 +4998,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
 .um-components .table-compare__tooltip {
   padding: 0 50px 0 0;
-  margin: 15px 0 11px 0; }
+  margin: 14px 0 12px 0; }
   .um-components .table-compare__tooltip .tooltip {
     width: 200px;
     max-width: 200px; }

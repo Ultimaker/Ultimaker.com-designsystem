@@ -8,12 +8,11 @@
     <a  ref="button"
         class="link tooltip-toggle__link"
         :aria-label="label"
-        aria-disabled="true"
         role="button"
         tabindex="0"
         @click="showTooltip"
         @blur="hideTooltip"
-        @keyup.enter="toggle">
+        @keyup.enter="showTooltip">
         <span class="link__underline">
 
         </span>

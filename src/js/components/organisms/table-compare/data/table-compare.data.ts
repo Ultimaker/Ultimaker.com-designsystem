@@ -6,6 +6,13 @@ const columnCta = {
     url: '/en/quote',
 };
 
+const columnCta2 = {
+    type: 'ContentLink',
+    label: 'Get a quote',
+    url: '/en/quote',
+};
+
+
 export const data = {
     default: {
         title: 'Lorem ipsum dolor sit amet consectetur',
@@ -20,7 +27,7 @@ export const data = {
                 {
                     title: 'Product title 2',
                     image: imageData.default,
-                    cta: columnCta,
+                    cta: columnCta2,
                 },
                 {
                     title: 'Product title 3',
