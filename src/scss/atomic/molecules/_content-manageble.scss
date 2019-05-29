@@ -19,7 +19,22 @@
 
             p {
                 margin:0;
+                word-wrap: break-word;
             }
+        }
+    }
+
+    &--copy-small {
+        p,ul{
+            margin-bottom: 0;
+            @include font-line-ratio(prim-s);
+            word-wrap: break-word;
+        }
+
+        p + ul,
+        ul + p,
+        p + p {
+            margin-top:  $buildingUnit * 1.75;
         }
     }
 }

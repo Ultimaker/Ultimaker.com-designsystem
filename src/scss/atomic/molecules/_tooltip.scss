@@ -3,9 +3,8 @@
     background-color: $colorBlack;
     color: $colorWhite;
     font-weight: 400;
-    min-height: $buildingUnit * 3;
-    min-width: $buildingUnit * 8;
-    max-width: 150px;
+    min-width: $buildingUnit * 15;
+    max-width: 75%;
     padding: $buildingUnit;
     position: absolute;
     white-space: normal;
