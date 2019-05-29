@@ -1,5 +1,6 @@
 .table-compare {
     position: relative;
+    margin-bottom: $buildingUnit * 2.3;
 }
 
 .table-compare__scroll-container {
@@ -103,6 +104,14 @@
     text-align: center;
 }
 
+.table-compare__table tfoot td {
+    vertical-align: middle;
+    > .link {
+        margin: 0;
+    }
+}
+
+
 .table-compare__image {
     display: block;
     margin: 0 auto 2 * $buildingUnit;
@@ -120,13 +129,12 @@
     display: inline-block;
     position: relative;
     vertical-align: top;
-    padding: 15px 50px 11px 0;
+    padding: 13.5px 50px 13.5px 0;
     background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
 
     main .organism:nth-child(even) & {
         background: linear-gradient(to left, transparentize($colorBgGray, 1), $colorBgGray $buildingUnit);
     }
-
 
     overflow: hidden;
     text-overflow: ellipsis;
@@ -135,7 +143,8 @@
 }
 
 .table-compare__tooltip {
-    margin-left: -50px;
+    padding: 0 50px 0 0;
+    margin: 14px 0 12px 0;
 
     .tooltip {
         width: 200px;
