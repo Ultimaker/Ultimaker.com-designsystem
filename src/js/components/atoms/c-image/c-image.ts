@@ -110,9 +110,11 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
     }
 
     getParams(options?: {width?: number, height?: number}) {
+        const elementWidth = this.width  || imageConstants.initialSize;
+        const elementHeight = this.height;
         const paramMap = new Map<string, any>([
-            ['w', options && options.width ? options.width : this.width],
-            ['h', options && options.height ? options.height : this.height],
+            ['w', options && options.width ? options.width : elementWidth],
+            ['h', options && options.height ? options.height :elementHeight],
             ['fit', this.resizeBehavior],
             ['f', this.focusArea],
             ['r', this.radius],
