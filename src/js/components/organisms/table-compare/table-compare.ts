@@ -99,4 +99,12 @@ export default class TableCompare extends Vue implements TableCompareProps {
         this.$refs.scrollContainer.scrollLeft = 0;
     }
 
+    getClassNames(type): string {
+        return {
+            ContentButton: 'button',
+            ContentLink: 'link link--medium',
+            YoutubeLink: '',
+        }[type] || '';
+    }
+
 }
