@@ -4274,6 +4274,9 @@ table tfoot {
     margin-top: 21px;
     font-size: 14px;
     line-height: 21px; }
+    .tab-table-row__value.content-manageble p, .tab-table-row__value.content-manageble strong, .tab-table-row__value.content-manageble .tablist__section .tablist__item, .tablist__section .tab-table-row__value.content-manageble .tablist__item, .tab-table-row__value.content-manageble .examples .examples__tabs .tablist__item, .examples .examples__tabs .tab-table-row__value.content-manageble .tablist__item, .tab-table-row__value.content-manageble ul, .tab-table-row__value.content-manageble .hero--text .content--rich ul, .hero--text .content--rich .tab-table-row__value.content-manageble ul {
+      font-size: 14px;
+      line-height: 21px; }
     @media (min-width: 768px) {
       .tab-table-row__value {
         margin-top: 0; } }
