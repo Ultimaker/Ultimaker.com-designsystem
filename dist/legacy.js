@@ -3887,7 +3887,9 @@ var CImage = function (_Mixins) {
     }, {
         key: "getParams",
         value: function getParams(options) {
-            var paramMap = new Map([['w', options && options.width ? options.width : this.width], ['h', options && options.height ? options.height : this.height], ['fit', this.resizeBehavior], ['f', this.focusArea], ['r', this.radius]]);
+            var elementWidth = this.width || _cImage2.imageConstants.initialSize;
+            var elementHeight = this.height;
+            var paramMap = new Map([['w', options && options.width ? options.width : elementWidth], ['h', options && options.height ? options.height : elementHeight], ['fit', this.resizeBehavior], ['f', this.focusArea], ['r', this.radius]]);
             if (this.imageFormat === _cImage.ImageFormat.jpg || this.imageFormat === _cImage.ImageFormat.pjpg) {
                 paramMap.set('q', this.quality);
             }
