@@ -20,17 +20,16 @@
         flex: 1;
         font-weight: map-get($fontWeights, "semibold");
         @include font-line-ratio(prim-s);
+
+        &-text {
+            margin-top: -2px;
+            margin-bottom: 0;
+        }
     }
 
     &__value{
-        margin-top: $buildingUnit;
+        margin-top: $buildingUnit * 1.75;
         @include font-line-ratio(prim-s);
-
-        &.content-manageble{
-            p,ul{
-                @include font-line-ratio(prim-s);
-            }
-        }
 
         @include min-tablet() {
             margin-top: 0;
@@ -42,13 +41,9 @@
     }
 
     &__linklist {
-        margin-top: $buildingUnit;
+        margin-top: $buildingUnit * 1.75;
      
         @extend %reset-list;
-
-        @include min-tablet {
-            margin-top: $buildingUnit + ($buildingUnit / 3);
-        }
 
         .tab-table-row__linklist-item{
             .tab-table-row__linklist-link{

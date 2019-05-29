@@ -11832,8 +11832,10 @@ var TooltipToggle = function (_Vue) {
 
         _this.buildingUnit = _defaults2.default.buildingUnit;
         _this.duration = _defaults2.default.defaultDuration;
+        _this.ease = _defaults2.default.defaultEase;
         _this.visible = false;
         _this.tooltipLeft = false;
+        _this.yAxisCorrection = 0;
         return _this;
     }
 
@@ -11862,11 +11864,18 @@ var TooltipToggle = function (_Vue) {
             return show;
         }()
     }, {
-        key: "toggle",
-        value: function toggle() {
+        key: "showTooltip",
+        value: function showTooltip() {
             if (!this.visible) {
                 this.show();
             } else {
+                this.hide();
+            }
+        }
+    }, {
+        key: "hideTooltip",
+        value: function hideTooltip() {
+            if (this.visible) {
                 this.hide();
             }
         }
@@ -11903,8 +11912,8 @@ var TooltipToggle = function (_Vue) {
             var _clickableELement$get = clickableELement.getBoundingClientRect(),
                 elementHeight = _clickableELement$get.height;
 
-            var yAxisCorrection = this.buildingUnit * 2;
-            _gsap.TweenLite.fromTo(tooltipElement, this.duration, { autoAlpha: 0, x: 0, y: yAxisCorrection }, { autoAlpha: 1, x: 0, y: yAxisCorrection - elementHeight / 2.5, ease: _gsap.Power2.easeOut }).eventCallback('onComplete', done);
+            this.yAxisCorrection = elementHeight + this.buildingUnit / 2;
+            _gsap.TweenLite.fromTo(tooltipElement, this.duration, { autoAlpha: 0, x: 0, y: this.yAxisCorrection - this.buildingUnit }, { autoAlpha: 1, x: 0, y: this.yAxisCorrection, ease: this.ease }).eventCallback('onComplete', done);
         }
     }, {
         key: "tooltipLeave",
@@ -11912,7 +11921,7 @@ var TooltipToggle = function (_Vue) {
             var _el$getBoundingClient = el.getBoundingClientRect(),
                 height = _el$getBoundingClient.height;
 
-            _gsap.TweenLite.to(el, this.duration, { autoAlpha: 0, y: this.buildingUnit * -1, ease: _gsap.Power2.easeIn }).eventCallback('onComplete', done);
+            _gsap.TweenLite.to(el, this.duration, { autoAlpha: 0, y: this.yAxisCorrection - this.buildingUnit, ease: this.ease }).eventCallback('onComplete', done);
         }
     }, {
         key: "tooltipClass",
@@ -11937,7 +11946,7 @@ exports.TooltipToggle = TooltipToggle;
 /* 299 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip-toggle"},[_c('transition',{on:{"enter":_vm.tooltipEnter,"leave":_vm.tooltipLeave}},[_c('tooltip',{directives:[{name:"show",rawName:"v-show",value:(_vm.visible),expression:"visible"}],ref:"tooltip",class:_vm.tooltipClass,attrs:{"block":"tooltip-toggle"}},[_vm._v("\n            "+_vm._s(_vm.description)+"\n        ")])],1),_vm._v(" "),_c('a',{ref:"button",staticClass:"link tooltip-toggle__link",attrs:{"aria-label":_vm.label,"aria-disabled":"true","role":"button","tabindex":"0"},on:{"click":_vm.toggle,"blur":_vm.toggle,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.toggle($event)}}},[_c('span',{staticClass:"link__underline"}),_vm._v(" "),_vm._t("default"),_vm._v(" "),_c('icon',{staticClass:"link tooltip-toggle__icon",attrs:{"iconName":_vm.icon}})],2)],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip-toggle"},[_c('transition',{on:{"enter":_vm.tooltipEnter,"leave":_vm.tooltipLeave}},[_c('tooltip',{directives:[{name:"show",rawName:"v-show",value:(_vm.visible),expression:"visible"}],ref:"tooltip",class:_vm.tooltipClass,attrs:{"block":"tooltip-toggle"}},[_vm._v("\n            "+_vm._s(_vm.description)+"\n        ")])],1),_vm._v(" "),_c('a',{ref:"button",staticClass:"link tooltip-toggle__link",attrs:{"aria-label":_vm.label,"aria-disabled":"true","role":"button","tabindex":"0"},on:{"click":_vm.showTooltip,"blur":_vm.hideTooltip,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.toggle($event)}}},[_c('span',{staticClass:"link__underline"}),_vm._v(" "),_vm._t("default"),_vm._v(" "),_c('icon',{staticClass:"link tooltip-toggle__icon",attrs:{"iconName":_vm.icon}})],2)],1)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -12034,7 +12043,7 @@ exports.TabTable = TabTable;
 /* 302 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.active),expression:"active"}],staticClass:"tab-table__content",attrs:{"id":_vm.id,"role":"tabpanel","aria-hidden":!_vm.active,"aria-label":_vm.label}},[_vm._l((_vm.rows),function(row,index){return [_c(row.type,_vm._b({tag:"component"},'component',row,false))]})],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"flexgrid flexgrid--mobile-xl-row"},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.active),expression:"active"}],staticClass:"tab-table__content flexgrid__cell--sm-8",attrs:{"id":_vm.id,"role":"tabpanel","aria-hidden":!_vm.active,"aria-label":_vm.label}},[_vm._l((_vm.rows),function(row,index){return [_c(row.type,_vm._b({tag:"component"},'component',row,false))]})],2)])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -12131,7 +12140,7 @@ exports.TabTableRow = TabTableRow;
 /* 305 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"tab-table-row"},[_c('div',{staticClass:"tab-table-row__label"},[_vm._v("\n        "+_vm._s(!_vm.tooltip ? _vm.label : '')+"\n        "),(_vm.tooltip)?_c('tooltip-toggle',_vm._b({staticClass:"tab-table-row__tooltip"},'tooltip-toggle',_vm.tooltip,false),[_vm._v("\n            "+_vm._s(_vm.label)+"\n        ")]):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"tab-table-row__content"},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.value),expression:"value"}],staticClass:"content-manageble tab-table-row__value",domProps:{"innerHTML":_vm._s(_vm.value)}}),_vm._v(" "),_c('ul',{directives:[{name:"show",rawName:"v-show",value:(_vm.linkList),expression:"linkList"}],staticClass:"tab-table-row__linklist"},[_vm._l((_vm.linkList),function(link){return [_c('li',{staticClass:"tab-table-row__linklist-item"},[_c('ContentLink',_vm._b({staticClass:"link tab-table-row__linklist-link",attrs:{"label":link.label}},'ContentLink',link,false))],1)]})],2)])])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"tab-table-row"},[_c('div',{staticClass:"tab-table-row__label"},[_c('p',{directives:[{name:"show",rawName:"v-show",value:(!_vm.tooltip),expression:"!tooltip"}],staticClass:"tab-table-row__label-text"},[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),(_vm.tooltip)?_c('tooltip-toggle',_vm._b({staticClass:"tab-table-row__tooltip"},'tooltip-toggle',_vm.tooltip,false),[_vm._v("\n            "+_vm._s(_vm.label)+"\n        ")]):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"tab-table-row__content"},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.value),expression:"value"}],staticClass:"content-manageble content-manageble--copy-small tab-table-row__value",domProps:{"innerHTML":_vm._s(_vm.value)}}),_vm._v(" "),_c('ul',{directives:[{name:"show",rawName:"v-show",value:(_vm.linkList),expression:"linkList"}],staticClass:"tab-table-row__linklist"},[_vm._l((_vm.linkList),function(link){return [_c('li',{staticClass:"tab-table-row__linklist-item"},[_c('ContentLink',_vm._b({staticClass:"link tab-table-row__linklist-link",attrs:{"label":link.label}},'ContentLink',link,false))],1)]})],2)])])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
