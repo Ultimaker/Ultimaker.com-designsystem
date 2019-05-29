@@ -15,7 +15,7 @@ export const data = {
                             type: 'Tooltip',
                             label: 'Label tooltip',
                             icon: 'info',
-                            description: 'Tooltip description',
+                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar ullamcorper metus, at cursus elit viverra eu. Nam venenatis lorem eget erat tempus, at molestie nibh laoreet. Etiam eleifend, urna vel rutrum feugiat, nunc felis efficitur felis, sit amet fermentum velit nulla ac nisi.',
                         },
                         linkList: [
                             {
@@ -70,12 +70,6 @@ export const data = {
                         type: 'TabTableRow',
                         label: 'Label row one',
                         value: 'Value row one',
-                        tooltip: {
-                            type: 'Tooltip',
-                            label: 'Label tooltip',
-                            icon: 'info',
-                            description: 'Tooltip description',
-                        },
                         linkList: [
                             {
                                 type: 'ContentLink',
