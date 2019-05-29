@@ -1,6 +1,5 @@
 .tooltip-toggle {
     position: relative;
-    display: inline-block; 
 }
 
 .tooltip-toggle__link{
@@ -8,7 +7,9 @@
 }
 
 .tooltip-toggle__icon{
-    margin: ($buildingUnit / 4) ($buildingUnit / 2);
+    margin: ($buildingUnit / 8) 0 0  ($buildingUnit / 2);
+    width: $buildingUnit * 1.5;
+    height: $buildingUnit * 1.5;
 
     .link:focus & {
         color: #ffffff;
