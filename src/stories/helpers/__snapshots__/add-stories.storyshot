@@ -1136,6 +1136,116 @@ exports[`Storyshots Molecules/product printer 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/tab-table default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <div
+      class="flexgrid flexgrid--mobile-xl-row"
+    >
+      <div
+        aria-hidden="true"
+        aria-label="Item one"
+        class="tab-table__content flexgrid__cell--sm-8"
+        role="tabpanel"
+        style="display: none;"
+      />
+    </div>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules/tab-table-row default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="tab-table-row"
+    >
+      <div
+        class="tab-table-row__label"
+      >
+        <p
+          class="tab-table-row__label-text"
+          style="display: none;"
+        >
+          Label row one
+        </p>
+         
+        <div
+          class="tooltip-toggle tab-table-row__tooltip"
+          type="Tooltip"
+        >
+          <div
+            class="tooltip tooltip-toggle__tooltip"
+            style="display: none;"
+          >
+            
+            Tooltip description
+        
+          </div>
+           
+          <a
+            aria-disabled="true"
+            aria-label="Label tooltip"
+            class="link tooltip-toggle__link"
+            role="button"
+            tabindex="0"
+          >
+            <span
+              class="link__underline"
+            />
+             
+            Label row one
+         
+            <!---->
+          </a>
+        </div>
+      </div>
+       
+      <div
+        class="tab-table-row__content"
+      >
+        <div
+          class="content-manageble content-manageble--copy-small tab-table-row__value"
+        >
+          Value row one
+        </div>
+         
+        <ul
+          class="tab-table-row__linklist"
+        >
+          <li
+            class="tab-table-row__linklist-item"
+          >
+            <a
+              class="link tab-table-row__linklist-link link--icon"
+              href="#/#"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Content link label
+    
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
 <section
   class="story"
@@ -1159,20 +1269,19 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
         </div>
          
         <a
-          aria-label=""
-          class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
+          aria-disabled="true"
+          aria-label="Cras eu tincidunt"
+          class="link tooltip-toggle__link"
           role="button"
           tabindex="0"
         >
-          <!---->
-           
           <span
-            class="icon-button__label"
-          >
-            
-        Cras eu tincidunt
-    
-          </span>
+            class="link__underline"
+          />
+           
+        Text for slot
+     
+          <!---->
         </a>
       </div>
        
@@ -1192,20 +1301,19 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
           </div>
            
           <a
-            aria-label=""
-            class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
+            aria-disabled="true"
+            aria-label="Cras eu tincidunt"
+            class="link tooltip-toggle__link"
             role="button"
             tabindex="0"
           >
-            <!---->
-             
             <span
-              class="icon-button__label"
-            >
-              
-        Cras eu tincidunt
-    
-            </span>
+              class="link__underline"
+            />
+             
+            Text for slot
+         
+            <!---->
           </a>
         </div>
       </div>
@@ -3902,6 +4010,410 @@ exports[`Storyshots Organisms/content-highlight reversed 1`] = `
 </section>
 `;
 
+exports[`Storyshots Organisms/tabbed-table default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <article
+      class="organism tabbed-table"
+    >
+      <section
+        class="container"
+      >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Title
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            Subtitle
+          </p>
+        </header>
+         
+        <div
+          class="tabs"
+        >
+          <div
+            class="tabs__nav"
+          >
+            <ul
+              class="tabs__list"
+              role="tablist"
+            >
+              <li
+                class="tabs__list_item"
+                role="presentation"
+              >
+                <a
+                  aria-selected="true"
+                  class="tabs__list_link tabs__list_link--active"
+                  href="#undefined"
+                  role="tab"
+                >
+                  <!---->
+                  
+                    Item one
+                
+                </a>
+              </li>
+              <li
+                class="tabs__list_item"
+                role="presentation"
+              >
+                <a
+                  class="tabs__list_link"
+                  href="#undefined"
+                  role="tab"
+                >
+                  <!---->
+                  
+                    Item two
+                
+                </a>
+              </li>
+               
+              <li
+                aria-hidden="true"
+                class="tabs__indicator"
+                role="none"
+              />
+            </ul>
+          </div>
+           
+          <div
+            class="tabs__contents"
+          >
+            <div
+              class="flexgrid flexgrid--mobile-xl-row"
+              type="TabTable"
+            >
+              <div
+                aria-label="Item one"
+                class="tab-table__content flexgrid__cell--sm-8"
+                id="Item one0"
+                role="tabpanel"
+              >
+                <section
+                  class="tab-table-row"
+                  type="TabTableRow"
+                >
+                  <div
+                    class="tab-table-row__label"
+                  >
+                    <p
+                      class="tab-table-row__label-text"
+                      style="display: none;"
+                    >
+                      Label row one
+                    </p>
+                     
+                    <div
+                      class="tooltip-toggle tab-table-row__tooltip"
+                      type="Tooltip"
+                    >
+                      <div
+                        class="tooltip tooltip-toggle__tooltip"
+                        style="display: none;"
+                      >
+                        
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar ullamcorper metus, at cursus elit viverra eu. Nam venenatis lorem eget erat tempus, at molestie nibh laoreet. Etiam eleifend, urna vel rutrum feugiat, nunc felis efficitur felis, sit amet fermentum velit nulla ac nisi.
+        
+                      </div>
+                       
+                      <a
+                        aria-disabled="true"
+                        aria-label="Label tooltip"
+                        class="link tooltip-toggle__link"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <span
+                          class="link__underline"
+                        />
+                         
+            Label row one
+         
+                        <!---->
+                      </a>
+                    </div>
+                  </div>
+                   
+                  <div
+                    class="tab-table-row__content"
+                  >
+                    <div
+                      class="content-manageble content-manageble--copy-small tab-table-row__value"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ex sed magna blandit tempor. Fusce orci turpis, vehicula bibendum ullamcorper eget, accumsan quis mi. 
+                    </div>
+                     
+                    <ul
+                      class="tab-table-row__linklist"
+                    >
+                      <li
+                        class="tab-table-row__linklist-item"
+                      >
+                        <a
+                          class="link tab-table-row__linklist-link link--icon"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Content link label
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="tab-table-row__linklist-item"
+                      >
+                        <a
+                          class="link tab-table-row__linklist-link link--icon"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Content link label
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="tab-table-row__linklist-item"
+                      >
+                        <a
+                          class="link tab-table-row__linklist-link link--icon"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Content link label
+    
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+                <section
+                  class="tab-table-row"
+                  type="TabTableRow"
+                >
+                  <div
+                    class="tab-table-row__label"
+                  >
+                    <p
+                      class="tab-table-row__label-text"
+                    >
+                      Label row two
+                    </p>
+                     
+                    <!---->
+                  </div>
+                   
+                  <div
+                    class="tab-table-row__content"
+                  >
+                    <div
+                      class="content-manageble content-manageble--copy-small tab-table-row__value"
+                      style="display: none;"
+                    />
+                     
+                    <ul
+                      class="tab-table-row__linklist"
+                      style="display: none;"
+                    />
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tabs__contents"
+          >
+            <div
+              class="flexgrid flexgrid--mobile-xl-row"
+              type="TabTable"
+            >
+              <div
+                aria-hidden="true"
+                aria-label="Item two"
+                class="tab-table__content flexgrid__cell--sm-8"
+                id="Item two1"
+                role="tabpanel"
+                style="display: none;"
+              >
+                <section
+                  class="tab-table-row"
+                  type="TabTableRow"
+                >
+                  <div
+                    class="tab-table-row__label"
+                  >
+                    <p
+                      class="tab-table-row__label-text"
+                    >
+                      Label row one
+                    </p>
+                     
+                    <!---->
+                  </div>
+                   
+                  <div
+                    class="tab-table-row__content"
+                  >
+                    <div
+                      class="content-manageble content-manageble--copy-small tab-table-row__value"
+                    >
+                      Value row one
+                    </div>
+                     
+                    <ul
+                      class="tab-table-row__linklist"
+                    >
+                      <li
+                        class="tab-table-row__linklist-item"
+                      >
+                        <a
+                          class="link tab-table-row__linklist-link link--icon"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Content link label
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="tab-table-row__linklist-item"
+                      >
+                        <a
+                          class="link tab-table-row__linklist-link link--icon"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Content link label
+    
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="tab-table-row__linklist-item"
+                      >
+                        <a
+                          class="link tab-table-row__linklist-link link--icon"
+                          href="#/#"
+                        >
+                          <!---->
+                           
+                          <span
+                            class="link__underline"
+                          >
+                            
+        Content link label
+    
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+                <section
+                  class="tab-table-row"
+                  type="TabTableRow"
+                >
+                  <div
+                    class="tab-table-row__label"
+                  >
+                    <p
+                      class="tab-table-row__label-text"
+                    >
+                      Label row one
+                    </p>
+                     
+                    <!---->
+                  </div>
+                   
+                  <div
+                    class="tab-table-row__content"
+                  >
+                    <div
+                      class="content-manageble content-manageble--copy-small tab-table-row__value"
+                    >
+                      Im a value
+                    </div>
+                     
+                    <ul
+                      class="tab-table-row__linklist"
+                      style="display: none;"
+                    />
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--primary button cta-link"
+              href="#/#"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Content button label
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </section>
+    </article>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Organisms/table-compare default 1`] = `
 <section
   class="story"
@@ -4004,13 +4516,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   <th
                     scope="row"
                   >
-                    <div
-                      class="table-compare__feature"
-                    >
-                      
-                                Great Feature One
-                            
-                    </div>
+                    <!---->
                      
                     <div
                       class="tooltip-toggle table-compare__tooltip"
@@ -4025,20 +4531,19 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       </div>
                        
                       <a
+                        aria-disabled="true"
                         aria-label=""
-                        class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
+                        class="link tooltip-toggle__link"
                         role="button"
                         tabindex="0"
                       >
-                        <!---->
-                         
                         <span
-                          class="icon-button__label"
-                        >
-                          
-        
-    
-                        </span>
+                          class="link__underline"
+                        />
+                         
+                                Great Feature One
+                             
+                        <!---->
                       </a>
                     </div>
                   </th>
@@ -4118,13 +4623,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   <th
                     scope="row"
                   >
-                    <div
-                      class="table-compare__feature"
-                    >
-                      
-                                Feature Three
-                            
-                    </div>
+                    <!---->
                      
                     <div
                       class="tooltip-toggle table-compare__tooltip"
@@ -4139,20 +4638,19 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       </div>
                        
                       <a
+                        aria-disabled="true"
                         aria-label=""
-                        class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
+                        class="link tooltip-toggle__link"
                         role="button"
                         tabindex="0"
                       >
-                        <!---->
-                         
                         <span
-                          class="icon-button__label"
-                        >
-                          
-        
-    
-                        </span>
+                          class="link__underline"
+                        />
+                         
+                                Feature Three
+                             
+                        <!---->
                       </a>
                     </div>
                   </th>
@@ -4189,13 +4687,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   <th
                     scope="row"
                   >
-                    <div
-                      class="table-compare__feature"
-                    >
-                      
-                                Feature Four
-                            
-                    </div>
+                    <!---->
                      
                     <div
                       class="tooltip-toggle table-compare__tooltip"
@@ -4210,20 +4702,19 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       </div>
                        
                       <a
+                        aria-disabled="true"
                         aria-label=""
-                        class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
+                        class="link tooltip-toggle__link"
                         role="button"
                         tabindex="0"
                       >
-                        <!---->
-                         
                         <span
-                          class="icon-button__label"
-                        >
-                          
-        
-    
-                        </span>
+                          class="link__underline"
+                        />
+                         
+                                Feature Four
+                             
+                        <!---->
                       </a>
                     </div>
                   </th>
