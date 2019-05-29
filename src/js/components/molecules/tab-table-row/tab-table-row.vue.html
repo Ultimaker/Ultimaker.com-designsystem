@@ -1,7 +1,9 @@
 <section class="tab-table-row">
     <div  class="tab-table-row__label">
-        {{ label }}
-        <tooltip-toggle v-bind="tooltip" class="tab-table-row__tooltip" v-if="tooltip" />
+        {{!tooltip ? label : ''}}
+        <tooltip-toggle v-bind="tooltip" class="tab-table-row__tooltip" v-if="tooltip">
+            {{label}}
+        </tooltip-toggle>
     </div>
     <div   class="tab-table-row__content">
         <div class="content-manageble tab-table-row__value" v-html="value" v-show="value"></div>

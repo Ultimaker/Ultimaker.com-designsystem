@@ -26,6 +26,12 @@
         margin-top: $buildingUnit;
         @include font-line-ratio(prim-s);
 
+        &.content-manageble{
+            p,ul{
+                @include font-line-ratio(prim-s);
+            }
+        }
+
         @include min-tablet() {
             margin-top: 0;
         }
