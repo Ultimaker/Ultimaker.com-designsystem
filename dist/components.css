@@ -2776,9 +2776,8 @@ table tfoot {
   background-color: #000000;
   color: #FFFFFF;
   font-weight: 400;
-  min-height: 36px;
-  min-width: 96px;
-  max-width: 150px;
+  min-width: 180px;
+  max-width: 75%;
   padding: 12px;
   position: absolute;
   white-space: normal;
@@ -4126,14 +4125,15 @@ table tfoot {
         line-height: 24px; } }
 
 .tooltip-toggle {
-  position: relative;
-  display: inline-block; }
+  position: relative; }
 
 .tooltip-toggle__link {
   margin-bottom: 0; }
 
 .tooltip-toggle__icon {
-  margin: 3px 6px; }
+  margin: 1.5px 0 0 6px;
+  width: 18px;
+  height: 18px; }
   .link:focus .tooltip-toggle__icon, .legal__link:focus .tooltip-toggle__icon, .footer-nav__link:focus .tooltip-toggle__icon, .toggle:focus .tooltip-toggle__icon, .overflow-container__link:focus:hover .tooltip-toggle__icon, .overflow-container__link.exact-active:focus .tooltip-toggle__icon {
     color: #ffffff; }
 
@@ -4172,10 +4172,56 @@ table tfoot {
     .tablist__section .content-manageble ol li .tablist__item,
     .content-manageble ol li .examples .examples__tabs .tablist__item,
     .examples .examples__tabs .content-manageble ol li .tablist__item {
-      margin: 0; }
+      margin: 0;
+      word-wrap: break-word; }
+
+.content-manageble--copy-small p, .content-manageble--copy-small strong, .content-manageble--copy-small .tablist__section .tablist__item, .tablist__section .content-manageble--copy-small .tablist__item, .content-manageble--copy-small .examples .examples__tabs .tablist__item, .examples .examples__tabs .content-manageble--copy-small .tablist__item, .content-manageble--copy-small ul, .content-manageble--copy-small .hero--text .content--rich ul, .hero--text .content--rich .content-manageble--copy-small ul {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 21px;
+  word-wrap: break-word; }
+
+.content-manageble--copy-small p + ul, .content-manageble--copy-small strong + ul, .content-manageble--copy-small .tablist__section .tablist__item + ul, .tablist__section .content-manageble--copy-small .tablist__item + ul, .content-manageble--copy-small .examples .examples__tabs .tablist__item + ul, .examples .examples__tabs .content-manageble--copy-small .tablist__item + ul, .content-manageble--copy-small .hero--text .content--rich p + ul, .hero--text .content--rich .content-manageble--copy-small p + ul, .content-manageble--copy-small .hero--text .content--rich strong + ul, .hero--text .content--rich .content-manageble--copy-small strong + ul, .content-manageble--copy-small .tablist__section .hero--text .content--rich .tablist__item + ul, .tablist__section .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .content-manageble--copy-small .examples .examples__tabs .hero--text .content--rich .tablist__item + ul, .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul,
+.content-manageble--copy-small ul + p,
+.content-manageble--copy-small .hero--text .content--rich ul + p,
+.hero--text .content--rich .content-manageble--copy-small ul + p,
+.content-manageble--copy-small ul + strong,
+.content-manageble--copy-small .hero--text .content--rich ul + strong,
+.hero--text .content--rich .content-manageble--copy-small ul + strong,
+.content-manageble--copy-small .tablist__section ul + .tablist__item,
+.tablist__section .content-manageble--copy-small ul + .tablist__item,
+.tablist__section .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item,
+.content-manageble--copy-small .examples .examples__tabs ul + .tablist__item,
+.examples .examples__tabs .content-manageble--copy-small ul + .tablist__item,
+.examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item,
+.content-manageble--copy-small p + p,
+.content-manageble--copy-small strong + p,
+.content-manageble--copy-small .tablist__section .tablist__item + p,
+.tablist__section .content-manageble--copy-small .tablist__item + p,
+.content-manageble--copy-small .examples .examples__tabs .tablist__item + p,
+.examples .examples__tabs .content-manageble--copy-small .tablist__item + p,
+.content-manageble--copy-small p + strong,
+.content-manageble--copy-small strong + strong,
+.content-manageble--copy-small .tablist__section .tablist__item + strong,
+.tablist__section .content-manageble--copy-small .tablist__item + strong,
+.content-manageble--copy-small .examples .examples__tabs .tablist__item + strong,
+.examples .examples__tabs .content-manageble--copy-small .tablist__item + strong,
+.content-manageble--copy-small .tablist__section p + .tablist__item,
+.tablist__section .content-manageble--copy-small p + .tablist__item,
+.content-manageble--copy-small .tablist__section strong + .tablist__item,
+.tablist__section .content-manageble--copy-small strong + .tablist__item,
+.content-manageble--copy-small .tablist__section .tablist__item + .tablist__item,
+.tablist__section .content-manageble--copy-small .tablist__item + .tablist__item,
+.content-manageble--copy-small .examples .examples__tabs p + .tablist__item,
+.examples .examples__tabs .content-manageble--copy-small p + .tablist__item,
+.content-manageble--copy-small .examples .examples__tabs strong + .tablist__item,
+.examples .examples__tabs .content-manageble--copy-small strong + .tablist__item,
+.content-manageble--copy-small .examples .examples__tabs .tablist__item + .tablist__item,
+.examples .examples__tabs .content-manageble--copy-small .tablist__item + .tablist__item {
+  margin-top: 21px; }
 
 .tab-table__content {
-  margin-top: 60px; }
+  margin: 60px auto 0 auto; }
 
 .tab-table-row {
   padding: 12px 0;
@@ -4195,23 +4241,20 @@ table tfoot {
     font-weight: 600;
     font-size: 14px;
     line-height: 21px; }
+    .tab-table-row__label-text {
+      margin-top: -2px;
+      margin-bottom: 0; }
   .tab-table-row__value {
-    margin-top: 12px;
+    margin-top: 21px;
     font-size: 14px;
     line-height: 21px; }
-    .tab-table-row__value.content-manageble p, .tab-table-row__value.content-manageble strong, .tab-table-row__value.content-manageble .tablist__section .tablist__item, .tablist__section .tab-table-row__value.content-manageble .tablist__item, .tab-table-row__value.content-manageble .examples .examples__tabs .tablist__item, .examples .examples__tabs .tab-table-row__value.content-manageble .tablist__item, .tab-table-row__value.content-manageble ul, .tab-table-row__value.content-manageble .hero--text .content--rich ul, .hero--text .content--rich .tab-table-row__value.content-manageble ul {
-      font-size: 14px;
-      line-height: 21px; }
     @media (min-width: 768px) {
       .tab-table-row__value {
         margin-top: 0; } }
   .tab-table-row__content {
     flex: 1; }
   .tab-table-row__linklist {
-    margin-top: 12px; }
-    @media (min-width: 768px) {
-      .tab-table-row__linklist {
-        margin-top: 16px; } }
+    margin-top: 21px; }
     .tab-table-row__linklist .tab-table-row__linklist-item .tab-table-row__linklist-link {
       margin-bottom: 6px; }
     .tab-table-row__linklist .tab-table-row__linklist-item:last-child .tab-table-row__linklist-link {
