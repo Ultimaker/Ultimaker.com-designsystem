@@ -1,11 +1,12 @@
+/** @format */
 /**
  * This stylesheet is for styles you want to include only when displaying demo
  * styles for flexgrids, animations, color swatches, etc.
  * These styles will not be your production CSS.
  */
 
-@import 'settings/all';
-@import 'tools/all';
+@import "settings/all";
+@import "tools/all";
 
 @import "storybook/canvas";
 @import "storybook/atoms/demo";

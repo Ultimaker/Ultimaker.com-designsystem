@@ -1,5 +1,6 @@
-@import 'settings/all';
-@import 'tools/all';
+/** @format */
+@import "settings/all";
+@import "tools/all";
 
 // Disable font loading for modules
 %fontPrimary {
@@ -15,9 +16,9 @@
 // @import 'generic/all';
 
 // ELEMENTS (ATOMS) / OBJECTS (MOLECULES) / COMPONENTS (ORGANISMS)
-@import 'atomic/all';
+@import "atomic/all";
 
 // UTILITIES
 // @import 'utilities/all';
-@import 'utilities/exceptions';
-@import 'utilities/validation';
+@import "utilities/exceptions";
+@import "utilities/validation";
