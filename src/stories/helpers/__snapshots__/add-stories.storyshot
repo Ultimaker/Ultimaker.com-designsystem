@@ -4011,36 +4011,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                                 Great Feature One
                             
                     </div>
-                     
-                    <div
-                      class="tooltip-toggle table-compare__tooltip"
-                    >
-                      <div
-                        class="tooltip tooltip-toggle__tooltip"
-                        style="display: none;"
-                      >
-                        
-            Celery quandong swiss chard chicory earthnut pea potato. Celery quandong swiss chard chicory earthnut pea potato. Celery quandong swiss chard chicory earthnut pea potato. Celery quandong swiss chard chicory earthnut pea potato. 
-        
-                      </div>
-                       
-                      <a
-                        aria-label=""
-                        class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="icon-button__label"
-                        >
-                          
-        
-    
-                        </span>
-                      </a>
-                    </div>
                   </th>
                    
                   <td>
@@ -4082,8 +4052,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                                 Fantastic Feature Two
                             
                     </div>
-                     
-                    <!---->
                   </th>
                    
                   <td>
@@ -4124,36 +4092,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                       
                                 Feature Three
                             
-                    </div>
-                     
-                    <div
-                      class="tooltip-toggle table-compare__tooltip"
-                    >
-                      <div
-                        class="tooltip tooltip-toggle__tooltip"
-                        style="display: none;"
-                      >
-                        
-            Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori.
-        
-                      </div>
-                       
-                      <a
-                        aria-label=""
-                        class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="icon-button__label"
-                        >
-                          
-        
-    
-                        </span>
-                      </a>
                     </div>
                   </th>
                    
@@ -4196,36 +4134,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                                 Feature Four
                             
                     </div>
-                     
-                    <div
-                      class="tooltip-toggle table-compare__tooltip"
-                    >
-                      <div
-                        class="tooltip tooltip-toggle__tooltip"
-                        style="display: none;"
-                      >
-                        
-            Celery quandong swiss chard chicory earthnut pea potato.
-        
-                      </div>
-                       
-                      <a
-                        aria-label=""
-                        class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="icon-button__label"
-                        >
-                          
-        
-    
-                        </span>
-                      </a>
-                    </div>
                   </th>
                    
                   <td>
@@ -4267,8 +4175,6 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                                 Feature Five
                             
                     </div>
-                     
-                    <!---->
                   </th>
                    
                   <td>
