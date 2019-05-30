@@ -30,7 +30,9 @@
         "lint:fix": "eslint './src/**/*.{t,j}s' --fix",
         "eslint": "eslint './src/**/*.{t,j}s'",
         "eslint:debug": "eslint './src/**/*.{t,j}s' --debug",
-        "lint:debug": "eslint './src/**/*.{t,j}s' --debug"
+        "lint:debug": "eslint './src/**/*.{t,j}s' --debug",
+        "prettier": "npm run prettier:scss",
+        "prettier:scss": "prettier --write '**/*.scss'"
     },
     "dependencies": {
         "core-js": "^2.5.7",
