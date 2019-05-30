@@ -1,6 +1,6 @@
 .table-compare {
     position: relative;
-    margin-bottom: $buildingUnit * 2.3;
+    margin-bottom: $buildingUnit * 2;
 }
 
 .table-compare__scroll-container {
@@ -129,7 +129,7 @@
     display: inline-block;
     position: relative;
     vertical-align: top;
-    padding: 13.5px 50px 13.5px 0;
+    padding: 15px 50px 11px 0;
     background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
 
     main .organism:nth-child(even) & {

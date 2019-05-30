@@ -1,16 +1,13 @@
 <section class="tab-table-row">
-    <div  class="tab-table-row__label">
-        <p class="tab-table-row__label-text" v-show="!tooltip">{{label}}</p>
-        <tooltip-toggle v-bind="tooltip" class="tab-table-row__tooltip" v-if="tooltip">
-            {{label}}
-        </tooltip-toggle>
+    <div class="tab-table-row__label">
+        <p class="tab-table-row__label-text">{{ label }}</p>
     </div>
-    <div   class="tab-table-row__content">
+    <div class="tab-table-row__content">
         <div class="content-manageble content-manageble--copy-small tab-table-row__value" v-html="value" v-show="value"></div>
-        <ul class="tab-table-row__linklist" v-show="linkList">
+        <ul class="tab-table-row__linklist" v-if="linkList">
             <template v-for="link in linkList">
                 <li class="tab-table-row__linklist-item">
-                    <ContentLink class="link tab-table-row__linklist-link" v-bind="link" :label="link.label" />
+                    <content-link class="link tab-table-row__linklist-link" v-bind="link" :label="link.label" />
                 </li>
             </template>
         </ul>

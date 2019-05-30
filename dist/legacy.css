@@ -3657,24 +3657,13 @@ because both families serve another purpose. Therefore the line-heights will be 
         line-height: 24px; } }
 
 .um-components .tooltip-toggle {
-  position: relative; }
-
-.um-components .tooltip-toggle__link {
-  margin-bottom: 0; }
-
-.um-components .tooltip-toggle__icon {
-  margin: 1.5px 0 0 6px;
-  width: 18px;
-  height: 18px; }
-  .um-components .link:focus .tooltip-toggle__icon, .um-components .legal__link:focus .tooltip-toggle__icon, .um-components .footer-nav__link:focus .tooltip-toggle__icon, .um-components .toggle:focus .tooltip-toggle__icon, .um-components .overflow-container__link:focus:hover .tooltip-toggle__icon, .um-components .overflow-container__link.exact-active:focus .tooltip-toggle__icon {
-    color: #ffffff; }
+  position: relative;
+  display: inline-block; }
 
 .um-components .tooltip-toggle__tooltip {
   font-size: 14px;
   line-height: 21px;
   bottom: 60px; }
-  .um-components .tooltip-toggle__tooltip:after {
-    left: 10px; }
 
 .um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
   padding-left: 1em;
@@ -4884,7 +4873,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
 .um-components .table-compare {
   position: relative;
-  margin-bottom: 27.6px; }
+  margin-bottom: 24px; }
 
 .um-components .table-compare__scroll-container {
   overflow: auto;
@@ -4987,7 +4976,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   display: inline-block;
   position: relative;
   vertical-align: top;
-  padding: 13.5px 50px 13.5px 0;
+  padding: 15px 50px 11px 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px);
   overflow: hidden;
   text-overflow: ellipsis;

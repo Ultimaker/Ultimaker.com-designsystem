@@ -4125,24 +4125,13 @@ table tfoot {
         line-height: 24px; } }
 
 .tooltip-toggle {
-  position: relative; }
-
-.tooltip-toggle__link {
-  margin-bottom: 0; }
-
-.tooltip-toggle__icon {
-  margin: 1.5px 0 0 6px;
-  width: 18px;
-  height: 18px; }
-  .link:focus .tooltip-toggle__icon, .legal__link:focus .tooltip-toggle__icon, .footer-nav__link:focus .tooltip-toggle__icon, .toggle:focus .tooltip-toggle__icon, .overflow-container__link:focus:hover .tooltip-toggle__icon, .overflow-container__link.exact-active:focus .tooltip-toggle__icon {
-    color: #ffffff; }
+  position: relative;
+  display: inline-block; }
 
 .tooltip-toggle__tooltip {
   font-size: 14px;
   line-height: 21px;
   bottom: 60px; }
-  .tooltip-toggle__tooltip:after {
-    left: 10px; }
 
 .content-manageble ul, .content-manageble .hero--text .content--rich ul, .hero--text .content--rich .content-manageble ul,
 .content-manageble ol {
@@ -5403,7 +5392,7 @@ svg text {
 
 .table-compare {
   position: relative;
-  margin-bottom: 27.6px; }
+  margin-bottom: 24px; }
 
 .table-compare__scroll-container {
   overflow: auto;
@@ -5506,7 +5495,7 @@ svg text {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  padding: 13.5px 50px 13.5px 0;
+  padding: 15px 50px 11px 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFFFFF 12px);
   overflow: hidden;
   text-overflow: ellipsis;
