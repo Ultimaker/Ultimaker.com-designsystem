@@ -1,36 +1,37 @@
+/** @format */
 // Device breakpoints
 $gridNumberOfCols: 12;
 $gridBreakpoints: (
-    'mobile': (
-        selector: 'xxs',
+    "mobile": (
+        selector: "xxs",
         minWidth: 320px
     ),
-    'mobile-xl': (
-        selector: 'xs',
+    "mobile-xl": (
+        selector: "xs",
         minWidth: 569px,
         maxWidth: 767px
     ),
-    'tablet': (
-        selector: 'sm',
+    "tablet": (
+        selector: "sm",
         minWidth: 768px,
         maxWidth: 1024px
     ),
-    'desktop': (
-        selector: 'md',
+    "desktop": (
+        selector: "md",
         minWidth: 1025px,
         maxWidth: 1200px
     ),
-    'desktop-hd': (
-        selector: 'lg',
+    "desktop-hd": (
+        selector: "lg",
         minWidth: 1201px
     )
 );
 $gridGutterSizeMobile: $buildingUnit;
 $gridGutterSize: $buildingUnit * 2;
 
-$mobileWidth:                   map-get(map-get($gridBreakpoints, mobile), minWidth);
-$mobileLWidth:                  480px;
-$mobileXlWidth:                 map-get(map-get($gridBreakpoints, mobile-xl), minWidth);
-$tabletWidth:                   map-get(map-get($gridBreakpoints, tablet), minWidth);
-$desktopWidth:                  map-get(map-get($gridBreakpoints, desktop), minWidth);
-$desktopHdWidth:                map-get(map-get($gridBreakpoints, desktop-hd), minWidth);
+$mobileWidth: map-get(map-get($gridBreakpoints, mobile), minWidth);
+$mobileLWidth: 480px;
+$mobileXlWidth: map-get(map-get($gridBreakpoints, mobile-xl), minWidth);
+$tabletWidth: map-get(map-get($gridBreakpoints, tablet), minWidth);
+$desktopWidth: map-get(map-get($gridBreakpoints, desktop), minWidth);
+$desktopHdWidth: map-get(map-get($gridBreakpoints, desktop-hd), minWidth);
