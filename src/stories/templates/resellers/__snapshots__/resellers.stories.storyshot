@@ -77,13 +77,13 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_3432_0"
+                      id="flyout_title_3483_0"
                     >
                       What is 3D printing?
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_3432_0"
+                      aria-labelledby="flyout_title_3483_0"
                       class="flyout__list"
                     >
                       <li
@@ -164,14 +164,14 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_3432_1"
+                      id="flyout_title_3483_1"
                     >
                       Where is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_3432_1"
+                      aria-labelledby="flyout_title_3483_1"
                       class="flyout__list"
                     >
                       <li
@@ -589,14 +589,14 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_3432_2"
+                      id="flyout_title_3483_2"
                     >
                       How is 3D printing used?
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_3432_2"
+                      aria-labelledby="flyout_title_3483_2"
                       class="flyout__list"
                     >
                       <li
@@ -835,13 +835,13 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_3511_0"
+                      id="flyout_title_3562_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_3511_0"
+                      aria-labelledby="flyout_title_3562_0"
                       class="flyout__list"
                     >
                       <li
@@ -909,14 +909,14 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_3511_1"
+                      id="flyout_title_3562_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_3511_1"
+                      aria-labelledby="flyout_title_3562_1"
                       class="flyout__list"
                     >
                       <li
@@ -1081,14 +1081,14 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_3511_2"
+                      id="flyout_title_3562_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_3511_2"
+                      aria-labelledby="flyout_title_3562_2"
                       class="flyout__list"
                     >
                       <li
@@ -1311,13 +1311,13 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_3561_0"
+                      id="flyout_title_3612_0"
                     >
                       Flyout title one
                     </strong>
                      
                     <ul
-                      aria-labelledby="flyout_title_3561_0"
+                      aria-labelledby="flyout_title_3612_0"
                       class="flyout__list"
                     >
                       <li
@@ -1385,14 +1385,14 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_3561_1"
+                      id="flyout_title_3612_1"
                     >
                       Flyout title two
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_3561_1"
+                      aria-labelledby="flyout_title_3612_1"
                       class="flyout__list"
                     >
                       <li
@@ -1557,14 +1557,14 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   >
                     <strong
                       class="flyout__title"
-                      id="flyout_title_3561_2"
+                      id="flyout_title_3612_2"
                     >
                       Flyout title three
                     </strong>
                      
                     <ul
                       aria-haspopup="true"
-                      aria-labelledby="flyout_title_3561_2"
+                      aria-labelledby="flyout_title_3612_2"
                       class="flyout__list"
                     >
                       <li
@@ -2068,7 +2068,7 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                     class="tooltip section-tooltip list-section__tooltip"
                     description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
                     icon="info"
-                    id="tooltip_3631"
+                    id="tooltip_3682"
                     label="More info"
                     style="display: none;"
                     type="Tooltip"
@@ -2080,7 +2080,7 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                 </h3>
                  
                 <a
-                  aria-describedby="tooltip_3631"
+                  aria-describedby="tooltip_3682"
                   class="link list-section__info-link link--reversed link--icon"
                   href="#"
                   role="button"

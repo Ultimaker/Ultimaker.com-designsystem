@@ -1,17 +1,16 @@
 import { data as imageData } from 'components/atoms/c-image/data/c-image.data';
 
-const columnCta = {
+const columnCtaButton = {
     type: 'ContentButton',
     label: 'Get a quote',
     url: '/en/quote',
 };
 
-const columnCta2 = {
+const columnCtaLink = {
     type: 'ContentLink',
     label: 'Get a quote',
     url: '/en/quote',
 };
-
 
 export const data = {
     default: {
@@ -22,17 +21,17 @@ export const data = {
                 {
                     title: 'Product title 1',
                     image: imageData.default,
-                    cta: columnCta,
+                    cta: columnCtaButton,
                 },
                 {
                     title: 'Product title 2',
                     image: imageData.default,
-                    cta: columnCta2,
+                    cta: columnCtaLink,
                 },
                 {
                     title: 'Product title 3',
                     image: imageData.default,
-                    cta: columnCta,
+                    cta: columnCtaButton,
                 },
             ],
             rows: [

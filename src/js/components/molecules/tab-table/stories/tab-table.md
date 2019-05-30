@@ -1,4 +1,2 @@
 # Tab Table
-
-## DSM
-* [molecules/tab-table](https://ultimaker.invisionapp.com/dsm/ultimaker/ultimaker-com/asset/components/)
+The `"table"` molecule for the tabbed-table organism. See `tabbed-table`

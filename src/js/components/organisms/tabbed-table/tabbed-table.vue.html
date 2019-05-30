@@ -1,10 +1,8 @@
 <article class="organism tabbed-table">
     <section class="container">
-        <HeaderBlock :title="title" :subtitle="subtitle" />
-
-        <Tabs v-if="tabs && tabs.length" :tabs="tabs" :sequenced="sequenced"/>
-
-        <FooterBlock :ctas="ctas" />
+        <header-block :title="title" :subtitle="subtitle" />
+        <tabs v-if="tabs && tabs.length" :tabs="tabs" :sequenced="false"/>
+        <footer-block :ctas="ctas" />
     </section>
 </article>
 

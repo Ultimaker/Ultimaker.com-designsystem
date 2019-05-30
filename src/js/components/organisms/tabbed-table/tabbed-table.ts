@@ -12,8 +12,4 @@ export class TabbedTable extends Vue implements TabbedTableProps {
     @Prop({ type: String, required: false }) subtitle?: TabbedTableProps['subtitle'];
     @Prop({ type: Array, required: true }) tabs!: TabbedTableProps['tabs'];
     @Prop({ type: Object, required: true }) ctas!: TabbedTableProps['ctas'];
-
-    get sequenced() {
-        return false;
-    }
 }
