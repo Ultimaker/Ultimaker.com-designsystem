@@ -1,3 +1,13 @@
+/** @format */
 module.exports = {
-    singleQuote: true
+    requirePragma: true,
+    singleQuote: true,
+    overrides: [
+        {
+            files: '*.scss',
+            options: {
+                singleQuote: false
+            }
+        }
+    ]
 };
