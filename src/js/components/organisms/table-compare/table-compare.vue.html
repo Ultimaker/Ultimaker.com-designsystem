@@ -23,7 +23,6 @@
                             <div class="table-compare__feature">
                                 {{ row.label }}
                             </div>
-                            <tooltip-toggle v-bind="row.tooltip" class="table-compare__tooltip" v-if="row.tooltip" />
                         </th>
                         <td v-for="cell in row.cells">
                             <span class="table-compare__cell">{{ cell.label }}</span>
