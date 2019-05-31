@@ -3,7 +3,7 @@
         "allowJs": true,
         "checkJs": false,
         "strict": true,
-        "target": "esnext",
+        "target": "ES2015",
         "module": "es6",
         "lib": [
             "es2016",

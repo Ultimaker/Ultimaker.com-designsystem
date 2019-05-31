@@ -1722,11 +1722,7 @@ let base_link_BaseLink = class BaseLink extends external_vue_property_decorator_
         if (this.clickEvent) {
             return {
                 dataType: this.clickEvent.name,
-                data: {
-                    ...this.clickEvent.data,
-                    pageSlug: this.$route.fullPath,
-                    ctaUrlTarget: this.urlTarget,
-                },
+                data: Object.assign({}, this.clickEvent.data, { pageSlug: this.$route.fullPath, ctaUrlTarget: this.urlTarget }),
             };
         }
         return null;
@@ -2413,6 +2409,14 @@ var c_image_decorate = (undefined && undefined.__decorate) || function (decorato
 var c_image_metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 
 
 
@@ -2429,26 +2433,30 @@ let c_image_CImage = class CImage extends Object(external_vue_property_decorator
         this.width = 0;
         this.height = 0;
     }
-    async mounted() {
-        if (!browser_capabilities.isBrowser)
-            return;
-        this.viewportUtil.addResizeHandler(this.resizeHandler);
-        await this.calculateDimensions(true);
-        this.ready = true;
+    mounted() {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (!browser_capabilities.isBrowser)
+                return;
+            this.viewportUtil.addResizeHandler(this.resizeHandler);
+            yield this.calculateDimensions(true);
+            this.ready = true;
+        });
     }
     beforeDestroy() {
         this.viewportUtil.removeResizeHandler(this.resizeHandler);
         this.viewportUtil.removeScrollHandler(this.resizeHandler);
     }
-    async reset() {
-        this.ready = false;
-        this.imageLoaded = false;
-        this.width = 0;
-        this.height = 0;
-        this.$nextTick(() => { this.ready = true; });
-        if (this.inView) {
-            await this.inViewWatcher(true);
-        }
+    reset() {
+        return __awaiter(this, void 0, void 0, function* () {
+            this.ready = false;
+            this.imageLoaded = false;
+            this.width = 0;
+            this.height = 0;
+            this.$nextTick(() => { this.ready = true; });
+            if (this.inView) {
+                yield this.inViewWatcher(true);
+            }
+        });
     }
     get classList() {
         return {
@@ -2537,14 +2545,16 @@ let c_image_CImage = class CImage extends Object(external_vue_property_decorator
             });
         });
     }
-    async inViewWatcher(val) {
-        if (!val || this.imageLoaded) {
-            return;
-        }
-        await this.calculateDimensions();
-        const imageToLoad = document.createElement('img');
-        imageToLoad.src = this.imageUrl;
-        imageToLoad.addEventListener('load', this.imageLoadHandler);
+    inViewWatcher(val) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (!val || this.imageLoaded) {
+                return;
+            }
+            yield this.calculateDimensions();
+            const imageToLoad = document.createElement('img');
+            imageToLoad.src = this.imageUrl;
+            imageToLoad.addEventListener('load', this.imageLoadHandler);
+        });
     }
     resizeHandler() {
         this.calculateDimensions();
@@ -4138,7 +4148,7 @@ class Arithmetic {
      * @returns {number} - Result
      */
     static round(number, decimals) {
-        const multiplier = 10 ** decimals;
+        const multiplier = Math.pow(10, decimals);
         return decimals > 0 ?
             Math.round(number * multiplier) / multiplier :
             Math.round(number);
@@ -4342,6 +4352,14 @@ var flyout_decorate = (undefined && undefined.__decorate) || function (decorator
 var flyout_metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var flyout_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 
 
 let flyout_Flyout = class Flyout extends external_vue_property_decorator_["Vue"] {
@@ -4369,11 +4387,13 @@ let flyout_Flyout = class Flyout extends external_vue_property_decorator_["Vue"]
         // @ts-ignore
         this.flyoutSections.forEach(s => s && s.reset && s.reset());
     }
-    async selectFirstLink() {
-        this.reset();
-        await this.$nextTick();
-        // @ts-ignore
-        this.flyoutSections[this.sectionIndex].selectFirstLink();
+    selectFirstLink() {
+        return flyout_awaiter(this, void 0, void 0, function* () {
+            this.reset();
+            yield this.$nextTick();
+            // @ts-ignore
+            this.flyoutSections[this.sectionIndex].selectFirstLink();
+        });
     }
     selectNextLink(e) {
         if (this.disableKeyboardEvents) {
@@ -4933,10 +4953,7 @@ let list_section_ListSection = class ListSection extends external_vue_property_d
             const { clickEvent } = this.expand;
             return {
                 dataType: clickEvent.name,
-                data: {
-                    ...clickEvent.data,
-                    pageSlug: this.$route.fullPath,
-                },
+                data: Object.assign({}, clickEvent.data, { pageSlug: this.$route.fullPath }),
             };
         }
         return null;
@@ -5169,10 +5186,7 @@ let list_unordered_limit_ListUnorderedLimit = class ListUnorderedLimit extends O
         const { clickEvent } = this.limit.expand;
         return {
             dataType: clickEvent.name,
-            data: {
-                ...clickEvent.data,
-                pageSlug: this.$route.fullPath,
-            },
+            data: Object.assign({}, clickEvent.data, { pageSlug: this.$route.fullPath }),
         };
     }
     /**
@@ -5310,6 +5324,14 @@ var main_nav_item_decorate = (undefined && undefined.__decorate) || function (de
 var main_nav_item_metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var main_nav_item_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 
 
 
@@ -5324,10 +5346,12 @@ let main_nav_item_MainNavItem = class MainNavItem extends external_vue_property_
     get isActive() {
         return this.active ? 'page' : false;
     }
-    async function(newVal) {
-        await this.$nextTick();
-        await new Promise(resolve => setTimeout(resolve, 10));
-        this.angleDirection = newVal ? 'angle-up' : 'angle-down';
+    function(newVal) {
+        return main_nav_item_awaiter(this, void 0, void 0, function* () {
+            yield this.$nextTick();
+            yield new Promise(resolve => setTimeout(resolve, 10));
+            this.angleDirection = newVal ? 'angle-up' : 'angle-down';
+        });
     }
     get toggleIsVisible() {
         return !!this.items && !this.isCompact && this.isTouch;
@@ -5338,14 +5362,16 @@ let main_nav_item_MainNavItem = class MainNavItem extends external_vue_property_
             navLink.$el.focus();
         }
     }
-    async showFlyout() {
-        await this.$nextTick();
-        await new Promise(resolve => setTimeout(resolve, 10));
-        if (this.hideTimeout) {
-            clearTimeout(this.hideTimeout);
-            this.hideTimeout = null;
-        }
-        this.flyoutIsOpen = true;
+    showFlyout() {
+        return main_nav_item_awaiter(this, void 0, void 0, function* () {
+            yield this.$nextTick();
+            yield new Promise(resolve => setTimeout(resolve, 10));
+            if (this.hideTimeout) {
+                clearTimeout(this.hideTimeout);
+                this.hideTimeout = null;
+            }
+            this.flyoutIsOpen = true;
+        });
     }
     hideFlyout() {
         this.$emit('closeMainNav');
@@ -5365,13 +5391,15 @@ let main_nav_item_MainNavItem = class MainNavItem extends external_vue_property_
             }
         });
     }
-    async selectFlyoutFirstLink() {
-        await this.showFlyout();
-        await this.$nextTick();
-        const refs = this.$refs;
-        if (refs.flyout && refs.flyout.selectFirstLink) {
-            await refs.flyout.selectFirstLink();
-        }
+    selectFlyoutFirstLink() {
+        return main_nav_item_awaiter(this, void 0, void 0, function* () {
+            yield this.showFlyout();
+            yield this.$nextTick();
+            const refs = this.$refs;
+            if (refs.flyout && refs.flyout.selectFirstLink) {
+                yield refs.flyout.selectFirstLink();
+            }
+        });
     }
     selectNextNavItem() {
         this.hideFlyout();
@@ -5381,23 +5409,25 @@ let main_nav_item_MainNavItem = class MainNavItem extends external_vue_property_
         this.hideFlyout();
         this.$emit('shifttab');
     }
-    async selectParent() {
-        if (this.isCompact) {
-            return;
-        }
-        const { parent } = this.$refs;
-        // @ts-ignore
-        if (parent.$el) {
+    selectParent() {
+        return main_nav_item_awaiter(this, void 0, void 0, function* () {
+            if (this.isCompact) {
+                return;
+            }
+            const { parent } = this.$refs;
             // @ts-ignore
-            parent.$el.focus();
-            // @ts-ignore
-        }
-        else if (parent.focus) {
-            // @ts-ignore
-            parent.focus();
-        }
-        await this.$nextTick();
-        this.hideFlyout();
+            if (parent.$el) {
+                // @ts-ignore
+                parent.$el.focus();
+                // @ts-ignore
+            }
+            else if (parent.focus) {
+                // @ts-ignore
+                parent.focus();
+            }
+            yield this.$nextTick();
+            this.hideFlyout();
+        });
     }
 };
 main_nav_item_decorate([
@@ -5886,6 +5916,14 @@ var tabs_decorate = (undefined && undefined.__decorate) || function (decorators,
 var tabs_metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var tabs_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 
 
 
@@ -5912,16 +5950,18 @@ let tabs_Tabs = class Tabs extends external_vue_property_decorator_["Vue"] {
             'tabs__list_link--active': index === this.activeTab,
         };
     }
-    async positionIndicator() {
-        const tabs = this.$refs.tab;
-        if (!tabs) {
-            return;
-        }
-        const { offsetLeft, offsetWidth } = tabs[this.activeTab];
-        external_gsap_["TweenLite"].to(this.$refs.indicator, defaults.defaultDuration, {
-            x: offsetLeft - this.correction,
-            width: offsetWidth,
-            ease: external_gsap_["Power3"].easeOut,
+    positionIndicator() {
+        return tabs_awaiter(this, void 0, void 0, function* () {
+            const tabs = this.$refs.tab;
+            if (!tabs) {
+                return;
+            }
+            const { offsetLeft, offsetWidth } = tabs[this.activeTab];
+            external_gsap_["TweenLite"].to(this.$refs.indicator, defaults.defaultDuration, {
+                x: offsetLeft - this.correction,
+                width: offsetWidth,
+                ease: external_gsap_["Power3"].easeOut,
+            });
         });
     }
     scrollCorrection() {
@@ -6062,6 +6102,14 @@ var tooltip_toggle_decorate = (undefined && undefined.__decorate) || function (d
 var tooltip_toggle_metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var tooltip_toggle_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 
 
 
@@ -6079,8 +6127,10 @@ let tooltip_toggle_TooltipToggle = class TooltipToggle extends external_vue_prop
             'tooltip--arrow-left': this.tooltipLeft,
         };
     }
-    async show() {
-        this.visible = true;
+    show() {
+        return tooltip_toggle_awaiter(this, void 0, void 0, function* () {
+            this.visible = true;
+        });
     }
     toggle() {
         if (!this.visible) {
@@ -6384,6 +6434,14 @@ var country_selector_decorate = (undefined && undefined.__decorate) || function 
 var country_selector_metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var country_selector_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 
 
 let country_selector_CountrySelector = class CountrySelector extends external_vue_property_decorator_["Vue"] {
@@ -6416,15 +6474,17 @@ let country_selector_CountrySelector = class CountrySelector extends external_vu
         }
         return detectedCountries;
     }
-    async focus() {
-        await this.initPromise;
-        await this.$nextTick();
-        this.$refs.autocomplete.focus();
-        if (this.$refs.autocomplete.input) {
-            await this.$refs.autocomplete.init();
-            this.$refs.autocomplete.resetInput();
-        }
-        this.$refs.autocomplete.calculateDirection();
+    focus() {
+        return country_selector_awaiter(this, void 0, void 0, function* () {
+            yield this.initPromise;
+            yield this.$nextTick();
+            this.$refs.autocomplete.focus();
+            if (this.$refs.autocomplete.input) {
+                yield this.$refs.autocomplete.init();
+                this.$refs.autocomplete.resetInput();
+            }
+            this.$refs.autocomplete.calculateDirection();
+        });
     }
     focusClose() {
         this.$refs.closeCountryPanel.focus();
@@ -6569,6 +6629,14 @@ var locale_selector_decorate = (undefined && undefined.__decorate) || function (
 var locale_selector_metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var locale_selector_awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 
 
 let locale_selector_LocaleSelector = class LocaleSelector extends external_vue_property_decorator_["Vue"] {
@@ -6598,19 +6666,23 @@ let locale_selector_LocaleSelector = class LocaleSelector extends external_vue_p
         //         to render on the server. This prevents SSR and enables the $ref.
         this.ready = true;
     }
-    async toggleCountrySelector() {
-        this.countrySelectorOpen = !this.countrySelectorOpen;
-        if (this.countrySelectorOpen && this.$refs.countrySelector) {
-            await this.$refs.countrySelector.focus();
-        }
-        else if (!this.countrySelectorOpen && this.$refs.countrySelectorToggle) {
-            await this.$nextTick();
-            this.$refs.countrySelectorToggle.focus();
-        }
+    toggleCountrySelector() {
+        return locale_selector_awaiter(this, void 0, void 0, function* () {
+            this.countrySelectorOpen = !this.countrySelectorOpen;
+            if (this.countrySelectorOpen && this.$refs.countrySelector) {
+                yield this.$refs.countrySelector.focus();
+            }
+            else if (!this.countrySelectorOpen && this.$refs.countrySelectorToggle) {
+                yield this.$nextTick();
+                this.$refs.countrySelectorToggle.focus();
+            }
+        });
     }
-    async setCountry() {
-        this.$emit('country-changed', { country: this.countryInput });
-        await this.toggleCountrySelector();
+    setCountry() {
+        return locale_selector_awaiter(this, void 0, void 0, function* () {
+            this.$emit('country-changed', { country: this.countryInput });
+            yield this.toggleCountrySelector();
+        });
     }
 };
 locale_selector_decorate([
@@ -7057,9 +7129,7 @@ const defaultAnimationDuration = 1;
             required: true,
         },
     },
-    computed: {
-        ...Object(external_vuex_["mapGetters"])('page', ['page']),
-        isMobile() {
+    computed: Object.assign({}, Object(external_vuex_["mapGetters"])('page', ['page']), { isMobile() {
             return false;
         },
         buttons() {
@@ -7073,8 +7143,7 @@ const defaultAnimationDuration = 1;
                     iconName: 'arrow-up',
                 },
             };
-        },
-    },
+        } }),
     methods: {
         indexChanged(payload) {
             this.activeSlide = payload.index;
@@ -8083,12 +8152,7 @@ content_cover_GeneralContent = content_cover_decorate([
 
 
 
-/* harmony default export */ var components = ({
-    ...atoms_namespaceObject,
-    ...molecules_namespaceObject,
-    ...organisms_namespaceObject,
-    ...organisms_page_namespaceObject,
-});
+/* harmony default export */ var components = (Object.assign({}, atoms_namespaceObject, molecules_namespaceObject, organisms_namespaceObject, organisms_page_namespaceObject));
 
 // CONCATENATED MODULE: ./src/js/directives/size-emitter.ts
 
