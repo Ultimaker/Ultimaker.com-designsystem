@@ -6,10 +6,10 @@ const webpackConfig = Object.assign({}, base, {
     devtool: '#inline-source-map',
     plugins: (base.plugins || []).concat([
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
         }),
-        new webpack.NoEmitOnErrorsPlugin()
-    ])
+        new webpack.NoEmitOnErrorsPlugin(),
+    ]),
 });
 
 // no need for app entry during tests
