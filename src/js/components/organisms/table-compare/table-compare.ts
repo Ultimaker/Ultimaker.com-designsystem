@@ -87,7 +87,7 @@ export default class TableCompare extends Vue implements TableCompareProps {
 
     scroll(reverse: boolean = false): void {
         const scrollWidth = this.$refs.scrollWidthContainer.clientWidth;
-        const scrollLeft = this.$refs.scrollContainer.scrollLeft;
+        const { scrollLeft } = this.$refs.scrollContainer;
 
         this.$refs.scrollContainer.scrollTo({
             left: scrollLeft + (reverse ? -1 : 1) * scrollWidth,
@@ -106,5 +106,4 @@ export default class TableCompare extends Vue implements TableCompareProps {
             YoutubeLink: '',
         }[type] || '';
     }
-
 }

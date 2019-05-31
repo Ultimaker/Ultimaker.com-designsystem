@@ -5,20 +5,18 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/list-unordered-limit.data';
 import knobsFormat from './list-unordered-limit.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                listItems: { default: knobs.listItems },
-                limit: { default: knobs.limit },
-            },
-            template: require('./list-unordered-limit.html'),
-        };
+    return {
+        props: {
+            listItems: { default: knobs.listItems },
+            limit: { default: knobs.limit },
+        },
+        template: require('./list-unordered-limit.html'),
     };
 };
 

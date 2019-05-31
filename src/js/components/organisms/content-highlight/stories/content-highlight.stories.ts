@@ -5,24 +5,22 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/content-highlight.data';
 import knobsFormat from './content-highlight.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                title: { default: knobs.title },
-                subtitle: { default: knobs.subtitle },
-                description: { default: knobs.description },
-                image: { default: knobs.image },
-                ctas: { default: knobs.ctas },
-                reversed: { default: knobs.reversed },
-            },
-            template: require('./content-highlight.html'),
-        };
+    return {
+        props: {
+            title: { default: knobs.title },
+            subtitle: { default: knobs.subtitle },
+            description: { default: knobs.description },
+            image: { default: knobs.image },
+            ctas: { default: knobs.ctas },
+            reversed: { default: knobs.reversed },
+        },
+        template: require('./content-highlight.html'),
     };
 };
 

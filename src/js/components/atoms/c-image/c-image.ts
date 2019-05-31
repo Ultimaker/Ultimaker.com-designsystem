@@ -118,7 +118,7 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
         const elementHeight = this.height;
         const paramMap = new Map<string, any>([
             ['w', options && options.width ? options.width : elementWidth],
-            ['h', options && options.height ? options.height :elementHeight],
+            ['h', options && options.height ? options.height : elementHeight],
             ['fit', this.resizeBehavior],
             ['f', this.focusArea],
             ['r', this.radius],

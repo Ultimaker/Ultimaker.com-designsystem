@@ -8,7 +8,6 @@ import TableCompare from './table-compare';
 describe('components', () => {
     describe('organisms', () => {
         describe('table-compare', () => {
-
             const mount = build(TableCompare, { props: {} });
 
             it('should render an TableCompare component', () => {
@@ -68,10 +67,8 @@ describe('components', () => {
             });
         });
 
-        Object.keys(data).map((key) => {
-
+        Object.keys(data).forEach((key) => {
             describe(`table-compare ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(TableCompare, { props });
 
@@ -82,6 +79,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

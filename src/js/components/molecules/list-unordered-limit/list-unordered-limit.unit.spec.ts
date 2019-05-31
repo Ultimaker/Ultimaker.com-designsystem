@@ -7,7 +7,6 @@ import { ListUnorderedLimit } from './list-unordered-limit';
 describe('components', () => {
     describe('molecules', () => {
         describe('list-unordered-limit', () => {
-
             const mount = build(ListUnorderedLimit, { props: {} });
 
             it('should render an ListUnorderedLimit component', () => {
@@ -17,10 +16,8 @@ describe('components', () => {
             });
         });
 
-        Object.keys(data).map((key) => {
-
+        Object.keys(data).forEach((key) => {
             describe(`list-unordered-limit ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(ListUnorderedLimit, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

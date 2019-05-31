@@ -13,7 +13,7 @@ export default class Tooltip extends Vue {
         const classes = {};
 
         if (this.block) {
-            classes[`${ this.block }__tooltip`] = true;
+            classes[`${this.block}__tooltip`] = true;
         }
 
         return classes;

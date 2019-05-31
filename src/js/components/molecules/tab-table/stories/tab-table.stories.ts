@@ -5,20 +5,18 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/tab-table.data';
 import knobsFormat from './tab-table.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                label: { default: knobs.label },
-                rows: { default: knobs.row },
-            },
-            template: require('./tab-table.html'),
-        };
+    return {
+        props: {
+            label: { default: knobs.label },
+            rows: { default: knobs.row },
+        },
+        template: require('./tab-table.html'),
     };
 };
 

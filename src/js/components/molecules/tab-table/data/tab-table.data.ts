@@ -2,7 +2,7 @@ export const data = {
     default: {
         type: 'TabTable',
         label: 'Item one',
-        rows:[
+        rows: [
             {
                 type: 'TabTableRow',
                 label: 'Label row one',

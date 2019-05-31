@@ -7,7 +7,6 @@ import { data } from './data/brands.data';
 describe('components', () => {
     describe('organisms', () => {
         describe('brands', () => {
-
             const mount = build(Brands, { props: {} });
 
             it('should render an Brands component', () => {
@@ -17,10 +16,8 @@ describe('components', () => {
             });
         });
 
-        Object.keys(data).map((key) => {
-
+        Object.keys(data).forEach((key) => {
             describe(`brands ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(Brands, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

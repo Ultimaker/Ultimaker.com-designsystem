@@ -67,8 +67,8 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
 
         TweenLite
             .fromTo(tooltipElement, this.duration,
-                    { autoAlpha: 0, x: xAxisCorrection, y: this.buildingUnit * -1 },
-                    { autoAlpha: 1, x: xAxisCorrection, y: 0, ease: Power2.easeOut })
+                { autoAlpha: 0, x: xAxisCorrection, y: this.buildingUnit * -1 },
+                { autoAlpha: 1, x: xAxisCorrection, y: 0, ease: Power2.easeOut })
             .eventCallback('onComplete', done);
     }
 

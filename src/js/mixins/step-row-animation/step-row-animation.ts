@@ -31,7 +31,7 @@ export class StepRowAnimation extends Vue {
         TweenLite.fromTo(el, this.cardTransitionDuration, {
             opacity: 0,
             y: this.cardOffset,
-        },               {
+        }, {
             opacity: 1,
             y: 0,
             ease: Power3.easeOut,
