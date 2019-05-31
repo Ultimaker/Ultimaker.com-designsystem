@@ -5,8 +5,6 @@ import storyRouter from 'storybook-vue-router';
 
 import Vue from 'vue';
 import Vuex from 'vuex';
-import 'babel-core/register';
-import 'babel-polyfill';
 import 'whatwg-fetch';
 
 import {registry} from 'src/js';

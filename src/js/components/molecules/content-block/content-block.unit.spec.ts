@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import { build } from 'vuenit';
 
 import ContentBlock from './content-block';

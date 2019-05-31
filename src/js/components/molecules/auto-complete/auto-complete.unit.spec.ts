@@ -1,5 +1,4 @@
 /* eslint-disable max-nested-callbacks */
-import 'babel-polyfill';
 import Vue from 'vue';
 import { build } from 'vuenit';
 import AutoComplete from './auto-complete';

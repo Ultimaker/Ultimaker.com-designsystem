@@ -1,5 +1,4 @@
 /* eslint-disable max-nested-callbacks */
-import 'babel-polyfill';
 import Vue from 'vue';
 import CountrySelector from './country-selector';
 import { build } from 'vuenit';

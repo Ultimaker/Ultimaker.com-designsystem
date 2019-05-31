@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import { build } from 'vuenit';
 import CImage from './c-image';
 import { imageConstants } from './c-image.constants';

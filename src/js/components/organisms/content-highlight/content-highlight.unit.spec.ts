@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import { build } from 'vuenit';
 
 import { data } from './data/content-highlight.data';

@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import { build } from 'vuenit';
 
 import { Colors } from './colors';

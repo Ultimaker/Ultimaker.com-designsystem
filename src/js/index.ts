@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+
 
 // >>> ordering of this import matters
 import '../scss/ultimaker.scss';

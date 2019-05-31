@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 
 // >>> ordering of these imports matters
 import '../scss/component-library.scss';
