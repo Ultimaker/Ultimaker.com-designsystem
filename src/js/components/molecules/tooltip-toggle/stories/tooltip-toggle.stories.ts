@@ -5,21 +5,19 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/tooltip-toggle.data';
 import knobsFormat from './tooltip-toggle.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                label: { default: knobs.label },
-                icon: { default: knobs.icon },
-                description: { default: knobs.description },
-            },
-            template: require('./tooltip-toggle.html'),
-        };
+    return {
+        props: {
+            label: { default: knobs.label },
+            icon: { default: knobs.icon },
+            description: { default: knobs.description },
+        },
+        template: require('./tooltip-toggle.html'),
     };
 };
 

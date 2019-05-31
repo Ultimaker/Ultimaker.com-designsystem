@@ -5,22 +5,20 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/table-compare.data';
 import knobsFormat from './table-compare.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                title: { default: knobs.title },
-                subtitle: { default: knobs.subtitle },
-                content: { default: knobs.content },
-                ctas: { default: knobs.ctas },
-            },
-            template: require('./table-compare.html'),
-        };
+    return {
+        props: {
+            title: { default: knobs.title },
+            subtitle: { default: knobs.subtitle },
+            content: { default: knobs.content },
+            ctas: { default: knobs.ctas },
+        },
+        template: require('./table-compare.html'),
     };
 };
 

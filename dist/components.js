@@ -121,12 +121,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var instance = null,
-    _scrollAnimationPending = false,
-    _resizeAnimationPending = false;
-var _resizeHandlers = [],
-    _scrollHandlers = [],
-    _orientationChangeHandlers = [];
+var instance = null;
+var _scrollAnimationPending = false;
+var _resizeAnimationPending = false;
+var _resizeHandlers = [];
+var _scrollHandlers = [];
+var _orientationChangeHandlers = [];
 
 function scrollHandler() {
     var _this = this;
@@ -209,8 +209,8 @@ var ViewportUtility = function () {
         value: function _attachEventListeners() {
             var _this3 = this;
 
-            var minWait = 1000 / 60,
-                maxWait = 1000 / 30;
+            var minWait = 1000 / 60;
+            var maxWait = 1000 / 30;
 
             document.addEventListener('scroll', (0, _debounce2.default)(function () {
                 scrollHandler.apply(_this3);
@@ -243,8 +243,8 @@ var ViewportUtility = function () {
         key: 'updateScrollState',
         value: function updateScrollState() {
             var y = window.pageYOffset;
-            var x = window.pageXOffset,
-                maxScrollY = this.documentHeight - this.screenHeight;
+            var x = window.pageXOffset;
+            var maxScrollY = this.documentHeight - this.screenHeight;
             var direction = this.scrollDirection;
 
             if (y > maxScrollY) {
@@ -385,8 +385,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var instance = null,
-    isBrowser = typeof window !== 'undefined';
+var instance = null;
+var isBrowser = typeof window !== 'undefined';
 
 var BrowserCapabilities = function () {
     function BrowserCapabilities() {
@@ -512,7 +512,7 @@ exports.default = {
         }
     },
     buildingUnit: 12,
-    defaultDuration: .3,
+    defaultDuration: 0.3,
     defaultEase: '.23, 1, .32, 1'
 };
 
@@ -576,9 +576,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var EventScope = new _vue2.default(),
-    EventLog = [],
-    excludedLogEvents = ['size'];
+var EventScope = new _vue2.default();
+var EventLog = [];
+var excludedLogEvents = ['size'];
 
 var PublicEventService = function () {
     function PublicEventService() {
@@ -589,7 +589,7 @@ var PublicEventService = function () {
         key: 'emit',
         value: function emit(event, args) {
             if (!excludedLogEvents.includes(event)) {
-                EventLog.push({ 'at': Date.now(), 'event': event, 'args': args });
+                EventLog.push({ at: Date.now(), event: event, args: args });
             }
             EventScope.$emit(event, args);
         }
@@ -3049,7 +3049,7 @@ var BaseLink = function (_Vue) {
         key: "triggerEventClick",
         value: function triggerEventClick() {
             if (this.clickEvent) {
-                this.$emitPublic(this.clickEventType, this.clickEventData);
+                this.$emitPublic(_events2.default.click, this.clickEventData);
             }
         }
     }, {
@@ -3098,11 +3098,6 @@ var BaseLink = function (_Vue) {
                 to: this.url,
                 ref: 'link'
             };
-        }
-    }, {
-        key: "clickEventType",
-        get: function get() {
-            return _events2.default.click;
         }
     }, {
         key: "clickEventData",
@@ -3643,7 +3638,6 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 };
 
 var defaultIconUrl = '/static/icons/iconset.svg';
-
 var Icon = function (_Vue) {
     _inherits(Icon, _Vue);
 
@@ -3652,6 +3646,7 @@ var Icon = function (_Vue) {
 
         var _this = _possibleConstructorReturn(this, (Icon.__proto__ || Object.getPrototypeOf(Icon)).apply(this, arguments));
 
+        _this.iconUrl = window['svgIconMap'] || defaultIconUrl;
         _this.ready = false;
         _this.symbolData = null;
         _this.viewBox = null;
@@ -3672,11 +3667,6 @@ var Icon = function (_Vue) {
         key: "iconClass",
         get: function get() {
             return "icon--" + this.iconName;
-        }
-    }, {
-        key: "iconUrl",
-        get: function get() {
-            return window['svgIconMap'] || defaultIconUrl;
         }
     }, {
         key: "iconRef",
@@ -3860,7 +3850,7 @@ var CImage = function (_Mixins) {
                                 this.width = 0;
                                 this.height = 0;
                                 this.$nextTick(function () {
-                                    return _this2.ready = true;
+                                    _this2.ready = true;
                                 });
 
                                 if (!this.inView) {
@@ -4948,12 +4938,12 @@ exports.default = {
             this.killTweensAndCompleteOf(this.$refs.terms);
             this.killTweensAndCompleteOf(this.$refs.descriptions);
 
-            var duration = 0.4,
-                direction = this.getDirection(oldValue, newValue),
-                height = this.heights[newValue],
-                delay = this.viewport.isMobile ? duration * 0.6 : 0,
-                descriptionHeight = (this.viewport.isMobile ? height.dt : 0) + height.dd + _defaults2.default.buildingUnit * 2.5,
-                elementsToHide = !this.viewport.isMobile ? this.$refs.descriptions[oldValue] : [this.$refs.terms[oldValue], this.$refs.descriptions[oldValue]];
+            var duration = 0.4;
+            var direction = this.getDirection(oldValue, newValue);
+            var height = this.heights[newValue];
+            var delay = this.viewport.isMobile ? duration * 0.6 : 0;
+            var descriptionHeight = (this.viewport.isMobile ? height.dt : 0) + height.dd + _defaults2.default.buildingUnit * 2.5;
+            var elementsToHide = !this.viewport.isMobile ? this.$refs.descriptions[oldValue] : [this.$refs.terms[oldValue], this.$refs.descriptions[oldValue]];
 
             _gsap.TweenLite.to(elementsToHide, duration, { height: 0, y: 20 * direction, ease: _gsap.Power3.easeOut });
             _gsap.TweenLite.fromTo(elementsToHide, duration * 0.3, { autoAlpha: 1 }, { autoAlpha: 0, ease: _gsap.Power0.easeNone });
@@ -4985,7 +4975,7 @@ exports.default = {
             var tweens = _gsap.TweenLite.getTweensOf(elements);
 
             if (tweens) {
-                for (var i = 0, leni = tweens.length; i < leni; i++) {
+                for (var i = 0, leni = tweens.length; i < leni; i += 1) {
                     tweens[i].seek(tweens[i].duration());
                 }
                 _gsap.TweenLite.killTweensOf(tweens);
@@ -5020,7 +5010,7 @@ exports.default = {
                 _this.renderItemOffscreen(element);
             });
 
-            this.$refs.descriptions.map(function (element) {
+            this.$refs.descriptions.forEach(function (element) {
                 var currentHeight = {
                     dt: element.previousElementSibling.getBoundingClientRect().height,
                     dd: element.getBoundingClientRect().height
@@ -5058,14 +5048,15 @@ exports.default = {
 
             currentElement.style.height = '';
 
-            var currentElementHeight = currentElement.getBoundingClientRect().height,
-                isMobile = this.viewport.isMobile;
+            var currentElementHeight = currentElement.getBoundingClientRect().height;
+            var isMobile = this.viewport.isMobile;
+
 
             this.$el.style.height = 'auto';
             this.calculateDimensions();
 
-            var maxElementHeight = isMobile ? this.maxHeight : this.$el.getBoundingClientRect().height + this.maxHeight - currentElementHeight,
-                height = this.heights[this.activeIndex];
+            var maxElementHeight = isMobile ? this.maxHeight : this.$el.getBoundingClientRect().height + this.maxHeight - currentElementHeight;
+            var height = this.heights[this.activeIndex];
 
             this.$refs.descriptions.forEach(function (element, index) {
                 element.style.top = isMobile ? _this2.heights[index].dt + _defaults2.default.buildingUnit * 2.5 + 'px' : 0;
@@ -5413,6 +5404,7 @@ var YoutubeVideo = function (_Vue) {
         var _this = _possibleConstructorReturn(this, (YoutubeVideo.__proto__ || Object.getPrototypeOf(YoutubeVideo)).apply(this, arguments));
 
         _this.loadVideo = false;
+        _this.videoQuery = 'autoplay=1';
         return _this;
     }
 
@@ -5420,11 +5412,6 @@ var YoutubeVideo = function (_Vue) {
         key: "mounted",
         value: function mounted() {
             this.loadVideo = true;
-        }
-    }, {
-        key: "videoQuery",
-        get: function get() {
-            return 'autoplay=1';
         }
     }, {
         key: "videoUrl",
@@ -5936,7 +5923,6 @@ var AutoComplete = function (_Vue) {
             var inputTop = this.viewportUtil.scrollY + inputBounds.top;
             var inputBottom = inputTop + inputBounds.height;
             this.reversed = windowBottom < inputBottom;
-            return;
         }
     }, {
         key: "highlightString",
@@ -6173,7 +6159,7 @@ var AutoComplete = function (_Vue) {
     return AutoComplete;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: function _default() {
-        return "autocomplete" + ~~(Math.random() * 10000);
+        return "autocomplete" + Math.floor(Math.random() * 10000);
     } }), __metadata("design:type", String)], AutoComplete.prototype, "inputId", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, default: null }), __metadata("design:type", Object)], AutoComplete.prototype, "value", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: null }), __metadata("design:type", Boolean)], AutoComplete.prototype, "defaultOpen", void 0);
@@ -6890,9 +6876,9 @@ var Color = function (_Vue) {
         key: "styleBackground",
         get: function get() {
             var styles = {};
-            styles['background'] = this.color;
+            styles.background = this.color;
             if (this.opacity < 100) {
-                styles['opacity'] = this.opacity / 100;
+                styles.opacity = this.opacity / 100;
             }
             return styles;
         }
@@ -6900,7 +6886,7 @@ var Color = function (_Vue) {
         key: "styleIcon",
         get: function get() {
             var styles = {};
-            styles['color'] = _color.Color.lightness(this.color) >= 0.5 ? '#000' : '#FFF';
+            styles.color = _color.Color.lightness(this.color) >= 0.5 ? '#000' : '#FFF';
             return styles;
         }
     }, {
@@ -8526,7 +8512,8 @@ var Flyout = function (_Vue) {
                 e.preventDefault();
             }
             if (this.sectionIndex >= this.flyoutSections.length - 1) {
-                return this.backToParent();
+                this.backToParent();
+                return;
             }
             var currentSection = this.sectionIndex;
 
@@ -8550,7 +8537,8 @@ var Flyout = function (_Vue) {
                 e.preventDefault();
             }
             if (this.sectionIndex <= 0) {
-                return this.backToParent();
+                this.backToParent();
+                return;
             }
             var currentSection = this.sectionIndex;
 
@@ -8797,7 +8785,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }),
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, required: false, default: 3 }), __metadata("design:type", Number)], Flyout.prototype, "maxVisible", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, required: false, default: 6 }), __metadata("design:type", Number)], Flyout.prototype, "maxItemsCol", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: function _default() {
-        return "flyout_title_" + ~~(Math.random() * 10000);
+        return "flyout_title_" + Math.floor(Math.random() * 10000);
     } }), __metadata("design:type", String)], Flyout.prototype, "itemId", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('focusIndex'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", void 0)], Flyout.prototype, "onFocusIndex", null);
 Flyout = __decorate([_flyoutSectionVue2.default, (0, _vuePropertyDecorator.Component)({
@@ -9634,7 +9622,7 @@ var unique = exports.unique = function unique(values) {
     var fn = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : identity;
     return values.reduce(function (acc, value) {
         return acc.filter(function (v) {
-            return fn(v) == fn(value);
+            return fn(v) === fn(value);
         }).length ? acc : [].concat(_toConsumableArray(acc), [value]);
     }, []);
 };
@@ -9878,10 +9866,9 @@ var ListUnorderedLimit = function (_Mixins) {
     }, {
         key: "showButtonLabel",
         value: function showButtonLabel() {
-            var label = '';
-            if (this.limit !== undefined && this.limit.expand !== undefined) {
-                label = this.limit.expand.label;
-            }
+            var _ref = this.limit && this.limit.expand ? this.limit.expand : { label: '' },
+                label = _ref.label;
+
             return label + " (" + this.listItems.length + ")";
         }
     }, {
@@ -10710,9 +10697,9 @@ exports.default = {
             this.moveToCurrentPosition();
         },
         getChangeOffset: function getChangeOffset() {
-            var indicatorRect = this.$refs.indicator.getBoundingClientRect(),
-                indicatorOffsetRect = this.$refs.indicator.offsetParent.getBoundingClientRect(),
-                currentPageRect = this.$refs.page[this.activeIndex].getBoundingClientRect();
+            var indicatorRect = this.$refs.indicator.getBoundingClientRect();
+            var indicatorOffsetRect = this.$refs.indicator.offsetParent.getBoundingClientRect();
+            var currentPageRect = this.$refs.page[this.activeIndex].getBoundingClientRect();
 
             return {
                 x: currentPageRect.left - indicatorOffsetRect.left,
@@ -10745,8 +10732,8 @@ exports.default = {
     },
     watch: {
         activeIndex: function activeIndex() {
-            var tl = new _gsap.TimelineLite(),
-                offsets = this.getChangeOffset();
+            var tl = new _gsap.TimelineLite();
+            var offsets = this.getChangeOffset();
 
             tl.to(this.$refs.indicator, 0.2, { x: offsets.x - offsets.changeX * 0.2, y: offsets.y - offsets.changeY * 0.2, scaleX: 0.7, scaleY: 1.5 }).to(this.$refs.indicator, 0.2, { x: offsets.x, y: offsets.y, scaleX: 1, scaleY: 1 });
             _gsap.TweenLite.to(tl, tl.duration, { ease: _gsap.Power3.easeOut });
@@ -11513,6 +11500,7 @@ var Tabs = function (_Vue) {
         key: "scrollCorrection",
         value: function scrollCorrection() {
             var tabList = this.$refs.tabList;
+
             var tabs = this.$refs.tab;
             this.correction = tabList.scrollLeft;
             if (!tabs) {
@@ -13186,6 +13174,7 @@ var TableCompare = function (_Vue) {
 
             var scrollWidth = this.$refs.scrollWidthContainer.clientWidth;
             var scrollLeft = this.$refs.scrollContainer.scrollLeft;
+
             this.$refs.scrollContainer.scrollTo({
                 left: scrollLeft + (reverse ? -1 : 1) * scrollWidth,
                 behavior: 'smooth'
@@ -13979,9 +13968,11 @@ exports.default = {
             var maxItems = this.items.length;
 
             if (direction === 'previous') {
-                this.activeSlide = --this.activeSlide < 0 ? maxItems - 1 : this.activeSlide;
+                this.activeSlide -= 1;
+                this.activeSlide = this.activeSlide < 0 ? maxItems - 1 : this.activeSlide;
             } else {
-                this.activeSlide = ++this.activeSlide > maxItems - 1 ? 0 : this.activeSlide;
+                this.activeSlide += 1;
+                this.activeSlide = this.activeSlide > maxItems - 1 ? 0 : this.activeSlide;
             }
         },
         imageEnter: function imageEnter(image, done) {
@@ -14906,7 +14897,7 @@ var PageDrawer = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 PageDrawer = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'page-drawer',
-    template: "<section class=\"drawer\" v-size-emitter=\"'drawer'\"><slot></slot></section>"
+    template: '<section class="drawer" v-size-emitter="\'drawer\'"><slot></slot></section>'
 })], PageDrawer);
 exports.default = PageDrawer;
 
@@ -15786,7 +15777,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var viewportUtil = new _viewport2.default();
-var sizeHandlerFactory = function sizeHandlerFactory(binding, vnode) {
+function SizeHandlerFactory(binding, vnode) {
     return function () {
         if (!vnode || !vnode.context) {
             return;
@@ -15794,10 +15785,11 @@ var sizeHandlerFactory = function sizeHandlerFactory(binding, vnode) {
         var height = vnode.elm.offsetHeight;
         if (vnode.context.__sizeEmitterHeight !== height) {
             _publicEventService2.default.emit('size', { element: binding.value, size: height });
+
             vnode.context.__sizeEmitterHeight = height;
         }
     };
-};
+}
 
 var SizeEmitter = exports.SizeEmitter = function () {
     function SizeEmitter() {
@@ -15812,17 +15804,18 @@ var SizeEmitter = exports.SizeEmitter = function () {
             if (!vnode || !vnode.context) {
                 return;
             }
-            vnode.context['sizeHandler'] = sizeHandlerFactory(binding, vnode);
+
+            vnode.context.sizeHandler = SizeHandlerFactory(binding, vnode);
             vnode.context.$on('emit-size', function () {
                 if (!vnode.context) {
                     return;
                 }
-                vnode.context['sizeHandler']();
+                vnode.context.sizeHandler();
             });
-            viewportUtil.addResizeHandler((0, _debounce2.default)(vnode.context['sizeHandler'], 50));
-            viewportUtil.addScrollHandler((0, _debounce2.default)(vnode.context['sizeHandler'], 50));
-            el.addEventListener('transitionend', (0, _debounce2.default)(vnode.context['sizeHandler'], 50));
-            vnode.context['sizeHandler']();
+            viewportUtil.addResizeHandler((0, _debounce2.default)(vnode.context.sizeHandler, 50));
+            viewportUtil.addScrollHandler((0, _debounce2.default)(vnode.context.sizeHandler, 50));
+            el.addEventListener('transitionend', (0, _debounce2.default)(vnode.context.sizeHandler, 50));
+            vnode.context.sizeHandler();
         }
     }, {
         key: 'unbind',
@@ -15833,8 +15826,8 @@ var SizeEmitter = exports.SizeEmitter = function () {
             if (!vnode.context) {
                 return;
             }
-            viewportUtil.removeResizeHandler(vnode.context['sizeHandler']);
-            viewportUtil.removeScrollHandler(vnode.context['sizeHandler']);
+            viewportUtil.removeResizeHandler(vnode.context.sizeHandler);
+            viewportUtil.removeScrollHandler(vnode.context.sizeHandler);
         }
     }], [{
         key: 'inserted',
@@ -15842,7 +15835,7 @@ var SizeEmitter = exports.SizeEmitter = function () {
             if (!vnode.context) {
                 return;
             }
-            (0, _debounce2.default)(vnode.context['sizeHandler'], 50);
+            (0, _debounce2.default)(vnode.context.sizeHandler, 50);
         }
     }, {
         key: 'update',
@@ -15850,7 +15843,7 @@ var SizeEmitter = exports.SizeEmitter = function () {
             if (!vnode.context) {
                 return;
             }
-            (0, _debounce2.default)(vnode.context['sizeHandler'], 50);
+            (0, _debounce2.default)(vnode.context.sizeHandler, 50);
         }
     }, {
         key: 'componentUpdated',
@@ -15858,7 +15851,7 @@ var SizeEmitter = exports.SizeEmitter = function () {
             if (!vnode.context) {
                 return;
             }
-            (0, _debounce2.default)(vnode.context['sizeHandler'], 50);
+            (0, _debounce2.default)(vnode.context.sizeHandler, 50);
         }
     }]);
 

@@ -6,7 +6,7 @@ export const data = {
             {
                 type: 'TabTable',
                 label: 'Item one',
-                rows:[
+                rows: [
                     {
                         type: 'TabTableRow',
                         label: 'Label row one',
@@ -65,7 +65,7 @@ export const data = {
             {
                 type: 'TabTable',
                 label: 'Item two',
-                rows:[
+                rows: [
                     {
                         type: 'TabTableRow',
                         label: 'Label row one',

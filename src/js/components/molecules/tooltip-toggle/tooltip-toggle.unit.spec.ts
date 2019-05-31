@@ -7,7 +7,6 @@ import { TooltipToggle } from './tooltip-toggle';
 describe('components', () => {
     describe('molecules', () => {
         describe('tooltip-toggle', () => {
-
             const mount = build(TooltipToggle, { props: {} });
 
             it('should render an TooltipToggle component', () => {
@@ -17,10 +16,8 @@ describe('components', () => {
             });
         });
 
-        Object.keys(data).map((key) => {
-
+        Object.keys(data).forEach((key) => {
             describe(`tooltip-toggle ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(TooltipToggle, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

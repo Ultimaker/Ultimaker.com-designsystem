@@ -7,7 +7,6 @@ import { ContentHighlight } from './content-highlight';
 describe('components', () => {
     describe('organisms', () => {
         describe('content-highlight', () => {
-
             const mount = build(ContentHighlight, { props: {} });
 
             it('should render an ContentHighlight component', () => {
@@ -17,10 +16,8 @@ describe('components', () => {
             });
         });
 
-        Object.keys(data).map((key) => {
-
+        Object.keys(data).forEach((key) => {
             describe(`content-highlight ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(ContentHighlight, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

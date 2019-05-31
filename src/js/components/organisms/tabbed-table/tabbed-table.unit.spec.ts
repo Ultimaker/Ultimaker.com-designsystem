@@ -7,7 +7,6 @@ import { TabbedTable } from './tabbed-table';
 describe('components', () => {
     describe('organisms', () => {
         describe('tabbed-table', () => {
-
             const mount = build(TabbedTable, { props: {} });
 
             it('should render an TabbedTable component', () => {
@@ -17,10 +16,8 @@ describe('components', () => {
             });
         });
 
-        Object.keys(data).map((key) => {
-
+        Object.keys(data).forEach((key) => {
             describe(`tabbed-table ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(TabbedTable, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

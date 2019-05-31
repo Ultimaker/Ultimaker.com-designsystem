@@ -1,8 +1,8 @@
 import { Component, Mixins, Prop } from 'vue-property-decorator';
-import { default as Events } from 'constants/events';
+import Events from 'constants/events';
 import { ListUnorderedLimitProps } from './list-unordered-limit.models';
 import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
-import { default as ViewportUtil } from 'utils/viewport';
+import ViewportUtil from 'utils/viewport';
 import WithRender from './list-unordered-limit.vue.html';
 
 @WithRender
@@ -59,11 +59,7 @@ export class ListUnorderedLimit extends Mixins(StepRowAnimation) implements List
     }
 
     showButtonLabel() {
-        let label = '';
-
-        if (this.limit !== undefined && this.limit.expand !== undefined) {
-            label = this.limit.expand.label;
-        }
+        const { label } = this.limit && this.limit.expand ? this.limit.expand : { label: '' };
 
         return `${label} (${this.listItems.length})`;
     }
