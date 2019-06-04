@@ -53,9 +53,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                  
                 <!---->
                  
-                <ul
-                  class="hero__linklist"
-                />
+                <!---->
               </div>
             </div>
              
