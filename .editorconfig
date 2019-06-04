@@ -9,8 +9,22 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
+[Makefile]
+indent_style = tab
+indent_size = 2
+
+[Jenkinsfile]
+indent_size = 2
+
 [*.conf]
 indent_size = 2
 
-[Makefile]
-ident_style = tab
+[*.y{,a}ml]
+indent_size = 2
+
+[*.json]
+indent_size = 2
+
+[*.md]
+# 2 trailing spaces in Markdown are a newline
+trim_trailing_whitespace = false
