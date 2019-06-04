@@ -1,0 +1,15 @@
+<label class="card-download" :class="selectedClass" @click="handleSelect">
+    <input type="radio" :name="name" :checked="selected" :value="file"  class="card-download__radio-element" />
+    <div class="card-download__image-wrapper">
+        <c-image v-bind="image" v-if="image" />
+    </div>
+    <div class="card-download__description">
+        <h4 class="card-download__title">
+            {{ title }}
+        </h4>
+
+        <p class="card-download__description" v-if="description">
+            {{ description }}
+        </p>
+    </div>
+</label>

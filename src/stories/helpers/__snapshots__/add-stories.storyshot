@@ -1056,6 +1056,218 @@ exports[`Storyshots Molecules/list-unordered-limit default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/modal-button default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <button
+      class="button"
+    >
+      
+    Download
+    
+      <!---->
+    </button>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules/modal-wizard default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <section
+      class="modal-wizard"
+    >
+      <div
+        class="modal-wizard__step"
+      >
+        <form
+          action="http://file.exe"
+          class="wizard-step-download-list"
+          method="get"
+          type="WizardStepDownloadList"
+        >
+          <header
+            class="header-block wizard-list-download-list__header"
+          >
+            <h2
+              class="header-block__title"
+            >
+              Download Cura 4.0 now!
+            </h2>
+             
+            <p
+              class="header-block__subtitle"
+            >
+              Subtle subtitle
+            </p>
+          </header>
+           
+          <ul
+            class="wizard-step-download-list__items flexgrid flexgrid--mobile-xl-row"
+          >
+            <li
+              class="wizard-step-download-list__item flexgrid__cell--sm-3"
+            >
+              <label
+                class="card-download card-download--selected"
+              >
+                <input
+                  class="card-download__radio-element"
+                  name="download"
+                  type="radio"
+                  value="http://file.exe"
+                />
+                 
+                <div
+                  class="card-download__image-wrapper"
+                >
+                  <img
+                    alt="Nylon 3D printed gears"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="Image"
+                  />
+                </div>
+                 
+                <div
+                  class="card-download__description"
+                >
+                  <h4
+                    class="card-download__title"
+                  >
+                    
+            Ultimaker Cura 4.0
+        
+                  </h4>
+                   
+                  <p
+                    class="card-download__description"
+                  >
+                    
+            Windows, 64 bit
+        
+                  </p>
+                </div>
+              </label>
+            </li>
+            <li
+              class="wizard-step-download-list__item flexgrid__cell--sm-3"
+            >
+              <label
+                class="card-download"
+              >
+                <input
+                  class="card-download__radio-element"
+                  name="download"
+                  type="radio"
+                  value="http://file.dmg"
+                />
+                 
+                <div
+                  class="card-download__image-wrapper"
+                >
+                  <img
+                    alt="Nylon 3D printed gears"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="Image"
+                  />
+                </div>
+                 
+                <div
+                  class="card-download__description"
+                >
+                  <h4
+                    class="card-download__title"
+                  >
+                    
+            Ultimaker Cura 4.0
+        
+                  </h4>
+                   
+                  <p
+                    class="card-download__description"
+                  >
+                    
+            Mac, 64 bit
+        
+                  </p>
+                </div>
+              </label>
+            </li>
+            <li
+              class="wizard-step-download-list__item flexgrid__cell--sm-3"
+            >
+              <label
+                class="card-download"
+              >
+                <input
+                  class="card-download__radio-element"
+                  name="download"
+                  type="radio"
+                  value="http://file.zip"
+                />
+                 
+                <div
+                  class="card-download__image-wrapper"
+                >
+                  <img
+                    alt="Nylon 3D printed gears"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="Image"
+                  />
+                </div>
+                 
+                <div
+                  class="card-download__description"
+                >
+                  <h4
+                    class="card-download__title"
+                  >
+                    
+            Ultimaker Cura 4.0
+        
+                  </h4>
+                   
+                  <p
+                    class="card-download__description"
+                  >
+                    
+            Linux, 64 bit
+        
+                  </p>
+                </div>
+              </label>
+            </li>
+          </ul>
+           
+          <button
+            class="wizard-step-download-list__button button"
+            type="submit"
+          >
+            
+        Download now
+    
+          </button>
+        </form>
+      </div>
+    </section>
+  </section>
+</section>
+`;
+
 exports[`Storyshots Molecules/product default 1`] = `
 <section
   class="story"
@@ -1289,6 +1501,190 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
         </div>
       </div>
     </div>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <form
+      action="http://file.exe"
+      class="wizard-step-download-list"
+      method="get"
+    >
+      <header
+        class="header-block wizard-list-download-list__header"
+      >
+        <h2
+          class="header-block__title"
+        >
+          Download Cura 4.0 now!
+        </h2>
+         
+        <p
+          class="header-block__subtitle"
+        >
+          Subtle subtitle
+        </p>
+      </header>
+       
+      <ul
+        class="wizard-step-download-list__items flexgrid flexgrid--mobile-xl-row"
+      >
+        <li
+          class="wizard-step-download-list__item flexgrid__cell--sm-3"
+        >
+          <label
+            class="card-download card-download--selected"
+          >
+            <input
+              class="card-download__radio-element"
+              name="download"
+              type="radio"
+              value="http://file.exe"
+            />
+             
+            <div
+              class="card-download__image-wrapper"
+            >
+              <img
+                alt="Nylon 3D printed gears"
+                class="img--contain img--loading"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                type="Image"
+              />
+            </div>
+             
+            <div
+              class="card-download__description"
+            >
+              <h4
+                class="card-download__title"
+              >
+                
+            Ultimaker Cura 4.0
+        
+              </h4>
+               
+              <p
+                class="card-download__description"
+              >
+                
+            Windows, 64 bit
+        
+              </p>
+            </div>
+          </label>
+        </li>
+        <li
+          class="wizard-step-download-list__item flexgrid__cell--sm-3"
+        >
+          <label
+            class="card-download"
+          >
+            <input
+              class="card-download__radio-element"
+              name="download"
+              type="radio"
+              value="http://file.dmg"
+            />
+             
+            <div
+              class="card-download__image-wrapper"
+            >
+              <img
+                alt="Nylon 3D printed gears"
+                class="img--contain img--loading"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                type="Image"
+              />
+            </div>
+             
+            <div
+              class="card-download__description"
+            >
+              <h4
+                class="card-download__title"
+              >
+                
+            Ultimaker Cura 4.0
+        
+              </h4>
+               
+              <p
+                class="card-download__description"
+              >
+                
+            Mac, 64 bit
+        
+              </p>
+            </div>
+          </label>
+        </li>
+        <li
+          class="wizard-step-download-list__item flexgrid__cell--sm-3"
+        >
+          <label
+            class="card-download"
+          >
+            <input
+              class="card-download__radio-element"
+              name="download"
+              type="radio"
+              value="http://file.zip"
+            />
+             
+            <div
+              class="card-download__image-wrapper"
+            >
+              <img
+                alt="Nylon 3D printed gears"
+                class="img--contain img--loading"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                type="Image"
+              />
+            </div>
+             
+            <div
+              class="card-download__description"
+            >
+              <h4
+                class="card-download__title"
+              >
+                
+            Ultimaker Cura 4.0
+        
+              </h4>
+               
+              <p
+                class="card-download__description"
+              >
+                
+            Linux, 64 bit
+        
+              </p>
+            </div>
+          </label>
+        </li>
+      </ul>
+       
+      <button
+        class="wizard-step-download-list__button button"
+        type="submit"
+      >
+        
+        Download now
+    
+      </button>
+    </form>
   </section>
 </section>
 `;
@@ -1879,6 +2275,112 @@ exports[`Storyshots Molecules|cards/business-card makerPoint 1`] = `
         </div>
       </a>
     </section>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|cards/card-download default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <label
+      class="card-download"
+    >
+      <input
+        class="card-download__radio-element"
+        name="download"
+        type="radio"
+        value="http://file.exe"
+      />
+       
+      <div
+        class="card-download__image-wrapper"
+      >
+        <img
+          alt="Nylon 3D printed gears"
+          class="img--contain img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          type="Image"
+        />
+      </div>
+       
+      <div
+        class="card-download__description"
+      >
+        <h4
+          class="card-download__title"
+        >
+          
+            Ultimaker Cura 4.0
+        
+        </h4>
+         
+        <p
+          class="card-download__description"
+        >
+          
+            Windows, 64 bit
+        
+        </p>
+      </div>
+    </label>
+  </section>
+</section>
+`;
+
+exports[`Storyshots Molecules|cards/card-download selected 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story"
+  >
+    <label
+      class="card-download card-download--selected"
+    >
+      <input
+        class="card-download__radio-element"
+        name="download"
+        type="radio"
+        value="http://file.exe"
+      />
+       
+      <div
+        class="card-download__image-wrapper"
+      >
+        <img
+          alt="Nylon 3D printed gears"
+          class="img--contain img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          type="Image"
+        />
+      </div>
+       
+      <div
+        class="card-download__description"
+      >
+        <h4
+          class="card-download__title"
+        >
+          
+            Ultimaker Cura 4.0
+        
+        </h4>
+         
+        <p
+          class="card-download__description"
+        >
+          
+            Windows, 64 bit
+        
+        </p>
+      </div>
+    </label>
   </section>
 </section>
 `;
