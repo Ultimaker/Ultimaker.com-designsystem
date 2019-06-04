@@ -1,0 +1,33 @@
+.card-download {
+    display: flex;
+    padding: $buildingUnit * 1.5;
+    border: 2px solid $colorGrayMedium;
+    width: 100%;
+    
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--selected{
+        border: 2px solid $colorMain;
+    }
+
+    &__radio-element{
+        display: none;
+    }
+
+    &__image-wrapper{
+        width: 60px;
+        height: 60px;
+        margin-right: $buildingUnit * 1.5;
+    }   
+
+    &__title{
+        @include font-line-ratio(prim-m);
+    }
+
+    &__description{
+        @include font-line-ratio(prim-s);
+        margin-bottom: 0;
+    }
+}

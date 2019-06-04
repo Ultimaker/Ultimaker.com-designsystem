@@ -1,0 +1,44 @@
+.wizard-step-download-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__items {
+        @extend %reset-list;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        @include min-tablet() {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: $buildingUnit * 1;
+        margin-left: $buildingUnit;
+        margin-right: $buildingUnit;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include min-tablet() {
+            flex-direction: row;
+            margin-bottom: 0;
+            margin-right: $buildingUnit * 2;
+
+            &:last-of-type {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }  
+    }
+
+    &__button{
+        margin-top: $buildingUnit * 5;
+    }
+}

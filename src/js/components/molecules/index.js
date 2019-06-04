@@ -38,3 +38,8 @@ export { default as TagList } from 'molecules/tag-list';
 export { default as TooltipToggle } from 'molecules/tooltip-toggle';
 export { default as TabTable } from 'molecules/tab-table';
 export { default as TabTableRow } from 'molecules/tab-table-row';
+export { default as CardDownload } from 'molecules/cards/card-download';
+export { default as WizardStepDownloadList } from 'molecules/wizard-step-download-list';
+export { default as ModalButton } from 'molecules/modal-button';
+
+export { default as ModalWizard } from 'molecules/modal-wizard';

@@ -54,15 +54,6 @@ const webpackConfig = {
     module: {
         rules: [
             {
-                test: /\.(ts|js|vue)$/,
-                loader: 'eslint-loader',
-                enforce: 'pre',
-                include: [resolve('src')],
-                options: {
-                    formatter: require('eslint-friendly-formatter')
-                }
-            },
-            {
                 test: /\.vue$/,
                 loader: 'vue-loader'
             },

@@ -1,0 +1,16 @@
+<form class="wizard-step-download-list" method="get" :action="file">
+    <HeaderBlock  class="wizard-list-download-list__header" :title="title" :subtitle="subtitle" />
+    <ul class="wizard-step-download-list__items flexgrid flexgrid--mobile-xl-row">
+        <li class="wizard-step-download-list__item flexgrid__cell--sm-3" v-if="items" v-for="(item, index) in items">
+            <CardDownload key="index"
+                          v-bind="item"
+                          :index="index"
+                          :selected="selectedItem === index"
+                          :name="name"
+                          :setSelectedItem="setSelectedItem" />
+        </li>
+    </ul>
+    <button @click="handleSubmit" type="submit" class="wizard-step-download-list__button button" v-if="submitButton">
+        {{ submitButton.label }}
+    </button>
+</form>
