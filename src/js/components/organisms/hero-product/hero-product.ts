@@ -15,7 +15,7 @@ export default class HeroProduct extends Vue implements HeroProductProps {
     @Prop({ type: Object, required: false }) image?: HeroProductProps['image'] | undefined;
     @Prop({ type: Object, required: false }) ctas?: HeroProductProps['ctas'] | undefined;
     @Prop({ type: Array, required: true }) products!: HeroProductProps['products'];
-    @Prop({ type: Array, required: true }) linkList!: HeroProductProps['linkList'];
+    @Prop({ type: Array, required: false }) linkList?: HeroProductProps['linkList'];
 
     get productsClass() {
         return `hero__products-item hero__products-item--${this.products.length > 1 ? 'multiple' : 'single'}`;
