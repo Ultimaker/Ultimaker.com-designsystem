@@ -1,6 +1,8 @@
-module.exports = ({file, options, env}) => {
+/** @format */
+
+module.exports = ({ file, options, env }) => {
     const config = {
-        plugins: {}
+        plugins: {},
     };
 
     if (options && options.postcsswrap) {
