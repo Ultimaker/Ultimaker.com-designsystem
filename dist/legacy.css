@@ -255,12 +255,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .tab-table-row__linklist, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .tab-table-row__linklist, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .footer-nav__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .legal__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .main-nav__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .overflow-container__list, .um-components .list-section-list, .um-components .hero--product .hero__linklist {
   list-style: none; }
 
 .um-components .list__item, .um-components .hero--text .content--rich ul li, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .footer-nav__item, .um-components .legal__item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
@@ -3740,6 +3740,59 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-bottom: 6px; }
     .um-components .tab-table-row__linklist .tab-table-row__linklist-item:last-child .tab-table-row__linklist-link {
       margin-bottom: 0; }
+
+.um-components .card-download {
+  display: flex;
+  padding: 18px;
+  border: 2px solid #b2b2b2;
+  width: 100%; }
+  .um-components .card-download:hover {
+    cursor: pointer; }
+  .um-components .card-download--selected {
+    border: 2px solid #0ca9e3; }
+  .um-components .card-download__radio-element {
+    display: none; }
+  .um-components .card-download__image-wrapper {
+    width: 60px;
+    height: 60px;
+    margin-right: 18px; }
+  .um-components .card-download__title {
+    font-size: 16px;
+    line-height: 24px; }
+  .um-components .card-download__description {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0; }
+
+.um-components .wizard-step-download-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .um-components .wizard-step-download-list__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .um-components .wizard-step-download-list__items {
+        flex-direction: row; } }
+  .um-components .wizard-step-download-list__item {
+    display: flex;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 12px; }
+    .um-components .wizard-step-download-list__item:last-of-type {
+      margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .um-components .wizard-step-download-list__item {
+        flex-direction: row;
+        margin-bottom: 0;
+        margin-right: 24px; }
+        .um-components .wizard-step-download-list__item:last-of-type {
+          margin-right: 0;
+          margin-bottom: 0; } }
+  .um-components .wizard-step-download-list__button {
+    margin-top: 60px; }
 
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }

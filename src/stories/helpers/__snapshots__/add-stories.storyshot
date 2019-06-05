@@ -1139,7 +1139,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
                 </div>
                  
                 <div
-                  class="card-download__description"
+                  class="card-download__content"
                 >
                   <h4
                     class="card-download__title"
@@ -1185,7 +1185,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
                 </div>
                  
                 <div
-                  class="card-download__description"
+                  class="card-download__content"
                 >
                   <h4
                     class="card-download__title"
@@ -1231,7 +1231,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
                 </div>
                  
                 <div
-                  class="card-download__description"
+                  class="card-download__content"
                 >
                   <h4
                     class="card-download__title"
@@ -1562,7 +1562,7 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
             </div>
              
             <div
-              class="card-download__description"
+              class="card-download__content"
             >
               <h4
                 class="card-download__title"
@@ -1608,7 +1608,7 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
             </div>
              
             <div
-              class="card-download__description"
+              class="card-download__content"
             >
               <h4
                 class="card-download__title"
@@ -1654,7 +1654,7 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
             </div>
              
             <div
-              class="card-download__description"
+              class="card-download__content"
             >
               <h4
                 class="card-download__title"
@@ -2309,7 +2309,7 @@ exports[`Storyshots Molecules|cards/card-download default 1`] = `
       </div>
        
       <div
-        class="card-download__description"
+        class="card-download__content"
       >
         <h4
           class="card-download__title"
@@ -2362,7 +2362,7 @@ exports[`Storyshots Molecules|cards/card-download selected 1`] = `
       </div>
        
       <div
-        class="card-download__description"
+        class="card-download__content"
       >
         <h4
           class="card-download__title"
