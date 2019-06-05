@@ -1063,14 +1063,19 @@ exports[`Storyshots Molecules/modal-button default 1`] = `
   <section
     class="story"
   >
-    <button
-      class="button"
+    <div
+      class="modal-button__container"
     >
-      
-    Download
+      <button
+        class="button"
+      >
+        
+        Download
     
+      </button>
+       
       <!---->
-    </button>
+    </div>
   </section>
 </section>
 `;

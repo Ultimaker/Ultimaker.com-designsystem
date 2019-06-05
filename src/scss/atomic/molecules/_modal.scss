@@ -27,6 +27,20 @@
 
     overflow: hidden;
     overflow-y: auto;
+
+    .modal--wizard & {
+        min-width: 100%;
+        min-height: 100%;
+        padding: $buildingUnit * 5 0;
+
+        @include min-desktop() {
+            min-height: auto;
+            min-width: 85vw;
+            max-width: 85vw;
+            max-height: 75vh;
+            padding: $buildingUnit * 5 0;
+        }
+    }
 }
 
 .modal__close {
@@ -39,6 +53,13 @@
 
     background-color: transparent;
     color: $colorWhite;
+
+    .modal--wizard & {
+        color: $colorBlack;
+        @include min-desktop() {
+            color: $colorWhite;
+        }
+    }
 }
 
 .modal--video {
