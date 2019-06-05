@@ -1,27 +1,10 @@
 .tooltip-toggle {
     position: relative;
-}
-
-.tooltip-toggle__link{
-    margin-bottom: 0;
-}
-
-.tooltip-toggle__icon{
-    margin: ($buildingUnit / 8) 0 0  ($buildingUnit / 2);
-    width: $buildingUnit * 1.5;
-    height: $buildingUnit * 1.5;
-
-    .link:focus & {
-        color: #ffffff;
-    }
+    display: inline-block;
 }
 
 .tooltip-toggle__tooltip {
     @extend %fontPrimary;
     @include font-line-ratio(prim-s);
     bottom: 60px;
-
-    &:after{
-        left: 10px;
-    }
 }

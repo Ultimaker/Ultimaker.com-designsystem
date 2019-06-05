@@ -31,8 +31,9 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
     yAxisCorrection:number = 0;
 
     get tooltipClass() {
+        console.log(this.$slots);
         return {
-            'tooltip--arrow-left': this.tooltipLeft,
+            'tooltip--arrow-left': this.$slots.default || this.tooltipLeft,
         };
     }
 
@@ -40,7 +41,7 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
         this.visible = true;
     }
 
-    showTooltip():void {
+    toggleTooltip():void {
         if (!this.visible) {
             this.show();
         } else {
@@ -49,23 +50,19 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
     }
 
     hideTooltip(): void {
-        if (this.visible) {
-            this.hide();
-        }
+        this.hide();
     }
 
     async hide():Promise<void> {
-        this.visible = false;
+        // this.visible = false;
     }
 
     tooltipEnter(el, done) {
         const tooltipElement = <HTMLElement> el;
-        const clickableELement = this.$refs.button;
+        const clickableElement = this.$refs.button.$el;
+        const { height: elementHeight } = <DOMRect> clickableElement.getBoundingClientRect();
 
-        // @ts-ignore
-        const { height: elementHeight } = <DOMRect> clickableELement.getBoundingClientRect();
-
-        this.yAxisCorrection = elementHeight + (this.buildingUnit / 2);
+        this.yAxisCorrection = 0; // elementHeight + (this.buildingUnit / 2);
 
         TweenLite
             .fromTo(tooltipElement, this.duration,
