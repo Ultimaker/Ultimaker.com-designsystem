@@ -13,6 +13,7 @@
 
         @include min-tablet() {
             flex-direction: row;
+            min-width: 27%;
         }
     }
 
@@ -29,6 +30,7 @@
         @include min-tablet() {
             flex-direction: row;
             margin-bottom: 0;
+            margin-left: 0;
             margin-right: $buildingUnit * 2;
 
             &:last-of-type {

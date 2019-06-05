@@ -1,7 +1,7 @@
 .card-download {
     display: flex;
     padding: $buildingUnit * 1.5;
-    border: 2px solid $colorGrayMedium;
+    border: 2px solid $colorGrayLight;
     width: 100%;
     
     &:hover {
@@ -17,9 +17,14 @@
     }
 
     &__image-wrapper{
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
         margin-right: $buildingUnit * 1.5;
+
+        @include min-tablet() {
+            width: 60px;
+            height: 60px;
+        }
     }   
 
     &__title{

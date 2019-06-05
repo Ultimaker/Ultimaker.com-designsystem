@@ -1,6 +1,8 @@
-<button class="button" @click.prevent="triggerClick">
-    {{label}}
+<div class="modal-button__container">
+    <button class="button" @click.prevent="triggerClick">
+        {{label}}
+    </button>
     <modal class="modal--wizard" v-if="modalVisible" @close="toggleModalVisible">
         <component :is="modal.type" v-bind="modal" />
     </modal>
-</button>
+</div>
