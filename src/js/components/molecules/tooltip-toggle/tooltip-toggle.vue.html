@@ -4,19 +4,14 @@
             {{ description }}
         </tooltip>
     </transition>
-    
-    <a  ref="button"
-        class="link tooltip-toggle__link"
-        :aria-label="label"
-        role="button"
-        tabindex="0"
-        @click="showTooltip"
-        @blur="hideTooltip"
-        @keyup.enter="showTooltip">
-        <span class="link__underline">
 
-        </span>
-        <slot></slot>
-        <icon class="link tooltip-toggle__icon" :iconName="icon" />
-    </a>
+    <slot />
+    <icon-button ref="button" button-class="icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
+                 :icon-name="icon"
+                 @click.native.prevent="toggleTooltip"
+                 @keyup.native.enter="toggleTooltip"
+                 @keyup.native.space="toggleTooltip"
+                 @blur.native.prevent="hideTooltip">
+        {{ label }}
+    </icon-button>
 </div>

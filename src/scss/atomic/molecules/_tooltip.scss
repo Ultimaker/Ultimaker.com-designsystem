@@ -3,8 +3,8 @@
     background-color: $colorBlack;
     color: $colorWhite;
     font-weight: 400;
-    min-width: $buildingUnit * 15;
-    max-width: 75%;
+    min-width: $buildingUnit * 8;
+    max-width: $buildingUnit * 12.5;
     padding: $buildingUnit;
     position: absolute;
     white-space: normal;
@@ -13,17 +13,30 @@
     &:after {
         border: $buildingUnit solid transparent;
         border-top-color: $colorBlack;
-        bottom: -(($buildingUnit * 2) - 1);
+        bottom: $buildingUnit * -2;
         content: '';
         left: calc(50% - 12px);
         position: absolute;
         height: 0;
         width: 0;
     }
-
     // make sure the last child in a tooltip doesn't have its own margin
     > :last-child {
         margin-bottom: 0;
+    }
+}
+
+
+.tooltip--arrow-left {
+    &:after {
+        left: $buildingUnit;
+    }
+}
+
+.tooltip--arrow-right {
+    &:after {
+        left: auto;
+        right: $buildingUnit;
     }
 }
 
