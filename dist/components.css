@@ -255,12 +255,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tab-table-row__linklist, .overflow-container__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tab-table-row__linklist, .wizard-step-download-list__items, .overflow-container__list, .list-section-list, .hero--product .hero__linklist, dl, dt, dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tab-table-row__linklist, .overflow-container__list, .list-section-list, .hero--product .hero__linklist {
+.caption-list__list-item, .link-list, .flyout__list, .footer-nav__list, .tabbable-dl, .price-table__list, .legal__list, .tag-list__list, .flyout, .main-nav__flyout, .main-nav__list, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .tab-table-row__linklist, .wizard-step-download-list__items, .overflow-container__list, .list-section-list, .hero--product .hero__linklist {
   list-style: none; }
 
 .list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .footer-nav__item, .legal__item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
@@ -4254,6 +4254,59 @@ table tfoot {
       margin-bottom: 6px; }
     .tab-table-row__linklist .tab-table-row__linklist-item:last-child .tab-table-row__linklist-link {
       margin-bottom: 0; }
+
+.card-download {
+  display: flex;
+  padding: 18px;
+  border: 2px solid #b2b2b2;
+  width: 100%; }
+  .card-download:hover {
+    cursor: pointer; }
+  .card-download--selected {
+    border: 2px solid #0ca9e3; }
+  .card-download__radio-element {
+    display: none; }
+  .card-download__image-wrapper {
+    width: 60px;
+    height: 60px;
+    margin-right: 18px; }
+  .card-download__title {
+    font-size: 16px;
+    line-height: 24px; }
+  .card-download__description {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 0; }
+
+.wizard-step-download-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .wizard-step-download-list__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .wizard-step-download-list__items {
+        flex-direction: row; } }
+  .wizard-step-download-list__item {
+    display: flex;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 12px; }
+    .wizard-step-download-list__item:last-of-type {
+      margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .wizard-step-download-list__item {
+        flex-direction: row;
+        margin-bottom: 0;
+        margin-right: 24px; }
+        .wizard-step-download-list__item:last-of-type {
+          margin-right: 0;
+          margin-bottom: 0; } }
+  .wizard-step-download-list__button {
+    margin-top: 60px; }
 
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }

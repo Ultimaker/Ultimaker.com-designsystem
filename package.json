@@ -67,7 +67,7 @@
         "@types/requirejs": "^2.1.31",
         "@typescript-eslint/eslint-plugin": "^1.9.0",
         "@typescript-eslint/parser": "^1.9.0",
-        "@ultimaker/ultimaker.com-model-definitions": "github:Ultimaker/Ultimaker.com-model-definitions#feature/UWEB-5980-modal",
+        "@ultimaker/ultimaker.com-model-definitions": "1.9.0",
         "babel-core": "^6.26.3",
         "babel-jest": "^23.6.0",
         "babel-loader": "^7.1.4",
