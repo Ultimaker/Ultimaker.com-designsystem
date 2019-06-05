@@ -15,6 +15,7 @@ const getStory = type => () => {
         props: {
             title: { default: knobs.title },
             subtitle: { default: knobs.subtitle },
+            description: { default: knobs.description },
             items: { default: knobs.items },
             submitButton: { default: knobs.submitButton },
         },

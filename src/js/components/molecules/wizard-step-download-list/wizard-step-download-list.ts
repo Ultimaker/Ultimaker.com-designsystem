@@ -10,6 +10,7 @@ import WithRender from './wizard-step-download-list.vue.html';
 export class WizardStepDownloadList extends Vue implements WizardStepDownloadListProps {
     @Prop({ type: String, required: true }) title!: WizardStepDownloadListProps['title'];
     @Prop({ type: String, required: false }) subtitle?: WizardStepDownloadListProps['subtitle'];
+    @Prop({ type: String, required: false }) description?: WizardStepDownloadListProps['description'];
     @Prop({ type: Array, required: true }) items!: WizardStepDownloadListProps['items'];
     @Prop({ type: Object, required: true }) submitButton!: WizardStepDownloadListProps['submitButton'];
 
@@ -28,6 +29,11 @@ export class WizardStepDownloadList extends Vue implements WizardStepDownloadLis
         this.selected = index;
     }
 
-    handleSubmit(e) {
+    handleSubmit() {
+        // @ts-ignore
+        if (window.$u && window.$u.store && window.$u.store.setSetting) {
+            // @ts-ignore
+            window.$u.store.setSetting('robot', true);
+        }
     }
 }

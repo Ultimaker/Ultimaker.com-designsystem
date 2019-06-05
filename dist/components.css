@@ -1895,6 +1895,17 @@ table tfoot {
   background-color: #f5f5f5;
   overflow: hidden;
   overflow-y: auto; }
+  .modal--wizard .modal__content {
+    min-width: 100%;
+    min-height: 100%;
+    padding: 60px 0; }
+    @media (min-width: 1025px) {
+      .modal--wizard .modal__content {
+        min-height: auto;
+        min-width: 85vw;
+        max-width: 85vw;
+        max-height: 75vh;
+        padding: 60px 0; } }
 
 .modal__close {
   position: absolute;
@@ -1903,6 +1914,11 @@ table tfoot {
   right: 0px;
   background-color: transparent;
   color: #ffffff; }
+  .modal--wizard .modal__close {
+    color: #000000; }
+    @media (min-width: 1025px) {
+      .modal--wizard .modal__close {
+        color: #ffffff; } }
 
 .modal--video .modal__content {
   width: 100%;
@@ -4258,7 +4274,7 @@ table tfoot {
 .card-download {
   display: flex;
   padding: 18px;
-  border: 2px solid #b2b2b2;
+  border: 2px solid #eaeaea;
   width: 100%; }
   .card-download:hover {
     cursor: pointer; }
@@ -4267,9 +4283,13 @@ table tfoot {
   .card-download__radio-element {
     display: none; }
   .card-download__image-wrapper {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     margin-right: 18px; }
+    @media (min-width: 768px) {
+      .card-download__image-wrapper {
+        width: 60px;
+        height: 60px; } }
   .card-download__title {
     font-size: 16px;
     line-height: 24px; }
@@ -4282,6 +4302,13 @@ table tfoot {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .wizard-step-download-list__description {
+    margin-left: 12px;
+    margin-right: 12px; }
+    @media (min-width: 768px) {
+      .wizard-step-download-list__description {
+        margin-left: 0;
+        margin-right: 0; } }
   .wizard-step-download-list__items {
     display: flex;
     flex-direction: column;
@@ -4289,7 +4316,8 @@ table tfoot {
     width: 100%; }
     @media (min-width: 768px) {
       .wizard-step-download-list__items {
-        flex-direction: row; } }
+        flex-direction: row;
+        min-width: 27%; } }
   .wizard-step-download-list__item {
     display: flex;
     margin-bottom: 12px;
@@ -4301,6 +4329,7 @@ table tfoot {
       .wizard-step-download-list__item {
         flex-direction: row;
         margin-bottom: 0;
+        margin-left: 0;
         margin-right: 24px; }
         .wizard-step-download-list__item:last-of-type {
           margin-right: 0;

@@ -26,6 +26,15 @@ describe('components', () => {
                     expect(vm.$el).toBeDefined();
                     vm.$destroy();
                 });
+
+                it('should display a modal', () => {
+                    const vm = mount().$mount();
+
+                    expect(vm.modalVisible).toBeFalsy();
+                    vm.toggleModalVisible();
+                    expect(vm.modalVisible).toBeTruthy();
+                    vm.$destroy();
+                });
             });
         });
     });
