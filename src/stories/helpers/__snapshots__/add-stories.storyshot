@@ -1097,10 +1097,11 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
           action="http://file.exe"
           class="wizard-step-download-list"
           method="get"
+          target="_blank"
           type="WizardStepDownloadList"
         >
           <header
-            class="header-block wizard-list-download-list__header"
+            class="header-block wizard-step-download-list__header"
           >
             <h2
               class="header-block__title"
@@ -1114,6 +1115,8 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
               Subtle subtitle
             </p>
           </header>
+           
+          <!---->
            
           <ul
             class="wizard-step-download-list__items flexgrid flexgrid--mobile-xl-row"
@@ -1260,7 +1263,6 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
            
           <button
             class="wizard-step-download-list__button button"
-            type="submit"
           >
             
         Download now
@@ -1521,9 +1523,10 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
       action="http://file.exe"
       class="wizard-step-download-list"
       method="get"
+      target="_blank"
     >
       <header
-        class="header-block wizard-list-download-list__header"
+        class="header-block wizard-step-download-list__header"
       >
         <h2
           class="header-block__title"
@@ -1537,6 +1540,12 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
           Subtle subtitle
         </p>
       </header>
+       
+      <p
+        class="wizard-step-download-list__description flexgrid__cell--sm-3"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan ut orci ac commodo. Sed rhoncus, urna ut venenatis cursus, nunc turpis suscipit enim, in congue dui dui quis sem.
+      </p>
        
       <ul
         class="wizard-step-download-list__items flexgrid flexgrid--mobile-xl-row"
@@ -1683,7 +1692,6 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
        
       <button
         class="wizard-step-download-list__button button"
-        type="submit"
       >
         
         Download now

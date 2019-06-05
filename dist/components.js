@@ -12363,7 +12363,11 @@ var WizardStepDownloadList = function (_Vue) {
         }
     }, {
         key: "handleSubmit",
-        value: function handleSubmit(e) {}
+        value: function handleSubmit() {
+            if (window.$u && window.$u.store && window.$u.store.setSetting) {
+                window.$u.store.setSetting('robot', true);
+            }
+        }
     }, {
         key: "selectedItem",
         get: function get() {
@@ -12380,6 +12384,7 @@ var WizardStepDownloadList = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], WizardStepDownloadList.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], WizardStepDownloadList.prototype, "subtitle", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], WizardStepDownloadList.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], WizardStepDownloadList.prototype, "items", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], WizardStepDownloadList.prototype, "submitButton", void 0);
 exports.WizardStepDownloadList = WizardStepDownloadList = __decorate([_wizardStepDownloadListVue2.default, (0, _vuePropertyDecorator.Component)({
@@ -12391,7 +12396,7 @@ exports.WizardStepDownloadList = WizardStepDownloadList;
 /* 311 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"wizard-step-download-list",attrs:{"method":"get","action":_vm.file}},[_c('HeaderBlock',{staticClass:"wizard-list-download-list__header",attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('ul',{staticClass:"wizard-step-download-list__items flexgrid flexgrid--mobile-xl-row"},_vm._l((_vm.items),function(item,index){return (_vm.items)?_c('li',{staticClass:"wizard-step-download-list__item flexgrid__cell--sm-3"},[_c('CardDownload',_vm._b({key:"index",attrs:{"index":index,"selected":_vm.selectedItem === index,"name":_vm.name,"setSelectedItem":_vm.setSelectedItem}},'CardDownload',item,false))],1):_vm._e()}),0),_vm._v(" "),(_vm.submitButton)?_c('button',{staticClass:"wizard-step-download-list__button button",attrs:{"type":"submit"},on:{"click":_vm.handleSubmit}},[_vm._v("\n        "+_vm._s(_vm.submitButton.label)+"\n    ")]):_vm._e()],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"wizard-step-download-list",attrs:{"target":"_blank","method":"get","action":_vm.file},on:{"submit":_vm.handleSubmit}},[_c('header-block',{staticClass:"wizard-step-download-list__header",attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"wizard-step-download-list__description flexgrid__cell--sm-3"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"wizard-step-download-list__items flexgrid flexgrid--mobile-xl-row"},_vm._l((_vm.items),function(item,index){return (_vm.items)?_c('li',{staticClass:"wizard-step-download-list__item flexgrid__cell--sm-3"},[_c('card-download',_vm._b({key:"index",attrs:{"index":index,"selected":_vm.selectedItem === index,"name":_vm.name,"setSelectedItem":_vm.setSelectedItem}},'card-download',item,false))],1):_vm._e()}),0),_vm._v(" "),(_vm.submitButton)?_c('button',{staticClass:"wizard-step-download-list__button button"},[_vm._v("\n        "+_vm._s(_vm.submitButton.label)+"\n    ")]):_vm._e()],1)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -12505,7 +12510,7 @@ exports.ModalButton = ModalButton;
 /* 314 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"button",on:{"click":function($event){$event.preventDefault();return _vm.triggerClick($event)}}},[_vm._v("\n    "+_vm._s(_vm.label)+"\n    "),(_vm.modalVisible)?_c('modal',{staticClass:"modal--wizard",on:{"close":_vm.toggleModalVisible}},[_c(_vm.modal.type,_vm._b({tag:"component"},'component',_vm.modal,false))],1):_vm._e()],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"modal-button__container"},[_c('button',{staticClass:"button",on:{"click":function($event){$event.preventDefault();return _vm.triggerClick($event)}}},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")]),_vm._v(" "),(_vm.modalVisible)?_c('modal',{staticClass:"modal--wizard",on:{"close":_vm.toggleModalVisible}},[_c(_vm.modal.type,_vm._b({tag:"component"},'component',_vm.modal,false))],1):_vm._e()],1)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {

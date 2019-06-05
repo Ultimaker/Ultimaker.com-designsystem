@@ -3,6 +3,16 @@
     flex-direction: column;
     align-items: center;
 
+    &__description {
+        margin-left: $buildingUnit;
+        margin-right: $buildingUnit;
+
+        @include min-tablet() {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
     &__items {
         @extend %reset-list;
 

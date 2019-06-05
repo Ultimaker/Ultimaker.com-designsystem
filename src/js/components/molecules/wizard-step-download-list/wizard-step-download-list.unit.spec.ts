@@ -26,6 +26,15 @@ describe('components', () => {
                     expect(vm.$el).toBeDefined();
                     vm.$destroy();
                 });
+
+                it('should change the download url', () => {
+                    const vm = mount().$mount();
+
+                    expect(vm.selected).toBe(0);
+                    vm.setSelectedItem(1);
+                    expect(vm.file).toBe(data[key].items[1].file);
+                    vm.$destroy();
+                });
             });
         });
     });
