@@ -3,6 +3,10 @@ export class UniqId {
         Object.defineProperty(vue.prototype, 'uniqId', {
             configurable: true,
             get: function uniqId() {
+                if (process.env.BABEL_ENV) {
+                    return 'static_id';
+                }
+
                 return this._uid;
             },
         });
