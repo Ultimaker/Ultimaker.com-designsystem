@@ -1,17 +1,22 @@
 <div class="tooltip-toggle">
     <transition @enter="tooltipEnter" @leave="tooltipLeave">
-        <tooltip ref="tooltip" v-show="visible" block="tooltip-toggle" :class="tooltipClass">
+        <tooltip ref="tooltip" v-show="visible" block="tooltip-toggle"
+                 :id="uniqId + '_tooltip'"
+                 :class="tooltipClass">
             {{ description }}
         </tooltip>
     </transition>
 
-    <slot />
-    <icon-button ref="button" button-class="icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
+    <icon-button ref="button"
+                 :aria-expanded="visible.toString()"
+                 :aria-describedby="uniqId + '_tooltip'"
                  :icon-name="icon"
                  @click.native.prevent="toggleTooltip"
                  @keyup.native.enter="toggleTooltip"
                  @keyup.native.space="toggleTooltip"
-                 @blur.native.prevent="hideTooltip">
+                 @keyup.native.esc="hideTooltip"
+                 @blur.native.prevent="hideTooltip"
+                 button-class="icon-button--transparent icon-button--reversed icon-button--small-icon">
         {{ label }}
     </icon-button>
 </div>

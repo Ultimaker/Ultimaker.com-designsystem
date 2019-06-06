@@ -27,17 +27,16 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
     readonly ease: string = defaults.defaultEase;
 
     visible:boolean = false;
-    tooltipLeft:boolean = false;
+    tooltipLeft:boolean = true;
     yAxisCorrection:number = 0;
 
     get tooltipClass() {
-        console.log(this.$slots);
         return {
-            'tooltip--arrow-left': this.$slots.default || this.tooltipLeft,
+            'tooltip--arrow-left': this.tooltipLeft,
         };
     }
 
-    async show():Promise<void> {
+    show():void {
         this.visible = true;
     }
 
@@ -53,8 +52,8 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
         this.hide();
     }
 
-    async hide():Promise<void> {
-        // this.visible = false;
+    hide() {
+        this.visible = false;
     }
 
     tooltipEnter(el, done) {

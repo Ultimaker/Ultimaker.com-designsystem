@@ -57,13 +57,13 @@ export const data = {
         buttonAriaLabel: 'if you press this button your life will be better',
         buttonClass: 'icon-button--reversed',
         iconName: 'search',
-        slot: 'icon button default',
+        slot: 'icon button reversed',
     },
     visuallyHiddenLabel: {
         buttonAriaLabel: 'if you press this button your life will be better',
         buttonClass: 'icon-button--visually-hidden-label',
         iconName: 'search',
-        slot: 'icon button default',
+        slot: 'icon button visually hidden label',
     },
 };
 
