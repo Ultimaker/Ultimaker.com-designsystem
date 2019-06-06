@@ -1461,7 +1461,8 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
       class="tooltip-toggle"
     >
       <div
-        class="tooltip tooltip-toggle__tooltip"
+        class="tooltip tooltip-toggle__tooltip tooltip--arrow-left"
+        id="static_id_tooltip"
         style="display: none;"
       >
         
@@ -1470,8 +1471,10 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
       </div>
        
       <a
+        aria-describedby="static_id_tooltip"
+        aria-expanded="false"
         aria-label=""
-        class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
+        class="icon-button icon-button--transparent icon-button--reversed icon-button--small-icon"
         role="button"
         tabindex="0"
       >
@@ -1494,7 +1497,8 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
         class="tooltip-toggle"
       >
         <div
-          class="tooltip tooltip-toggle__tooltip"
+          class="tooltip tooltip-toggle__tooltip tooltip--arrow-left"
+          id="static_id_tooltip"
           style="display: none;"
         >
           
@@ -1503,8 +1507,10 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
         </div>
          
         <a
+          aria-describedby="static_id_tooltip"
+          aria-expanded="false"
           aria-label=""
-          class="icon-button icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon"
+          class="icon-button icon-button--transparent icon-button--reversed icon-button--small-icon"
           role="button"
           tabindex="0"
         >
@@ -2007,7 +2013,7 @@ exports[`Storyshots Molecules|buttons/icon-button reversed 1`] = `
     <span
       class="icon-button__label"
     >
-      icon button default
+      icon button reversed
     </span>
   </a>
    
@@ -2149,7 +2155,7 @@ exports[`Storyshots Molecules|buttons/icon-button visuallyHiddenLabel 1`] = `
     <span
       class="icon-button__label"
     >
-      icon button default
+      icon button visually hidden label
     </span>
   </a>
    
