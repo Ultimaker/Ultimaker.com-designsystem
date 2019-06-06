@@ -1527,10 +1527,10 @@ exports[`Storyshots Molecules/wizard-step-confirmation default 1`] = `
     class="story"
   >
     <article
-      class="organism content-highlight"
+      class="organism wizard-step-confirmation"
     >
       <section
-        class="container content-highlight__container"
+        class="container wizard-step-confirmation__container"
       >
         <header
           class="header-block"
@@ -1552,10 +1552,10 @@ exports[`Storyshots Molecules/wizard-step-confirmation default 1`] = `
           class="flexgrid"
         >
           <div
-            class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__image"
+            class="flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__image"
           >
             <div
-              class="content-highlight__image-wrapper"
+              class="wizard-step-confirmation__image-wrapper"
             >
               <img
                 alt="An example image"
@@ -1567,20 +1567,20 @@ exports[`Storyshots Molecules/wizard-step-confirmation default 1`] = `
           </div>
            
           <div
-            class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__content"
+            class="flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__content"
           >
             <h2>
               Content title
             </h2>
              
             <div
-              class="content-manageble content-highlight__body"
+              class="content-manageble wizard-step-confirmation__body"
             >
               Content string
             </div>
              
             <footer
-              class="footer-block content-highlight-footer"
+              class="footer-block wizard-step-confirmation-footer"
             >
               <div
                 block="overview"

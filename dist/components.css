@@ -4358,6 +4358,54 @@ table tfoot {
     margin-top: 60px;
     margin-bottom: 0; }
 
+@media (min-width: 569px) {
+  .wizard-step-confirmation__container {
+    padding-bottom: 60px; } }
+
+.wizard-step-confirmation__image-wrapper {
+  display: flex;
+  width: 75%;
+  margin: 0 auto 30px auto; }
+  @media (min-width: 569px) {
+    .wizard-step-confirmation__image-wrapper {
+      padding-right: 24px;
+      width: 100%; }
+      .flexgrid--row-reversed .wizard-step-confirmation__image-wrapper {
+        padding-left: 24px;
+        padding-right: 0; } }
+
+.wizard-step-confirmation__content {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 569px) {
+    .wizard-step-confirmation__content {
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 24px; }
+      .flexgrid--row-reversed .wizard-step-confirmation__content {
+        padding-right: 24px;
+        padding-left: 0; } }
+
+.wizard-step-confirmation-header .header-block__title,
+.wizard-step-confirmation-header .header-block__subtitle {
+  text-align: center; }
+  @media (min-width: 569px) {
+    .wizard-step-confirmation-header .header-block__title,
+    .wizard-step-confirmation-header .header-block__subtitle {
+      text-align: left; } }
+
+.wizard-step-confirmation-footer.footer-block:not(:empty) {
+  padding-bottom: 0; }
+
+.wizard-step-confirmation__body {
+  margin-bottom: 60px;
+  text-align: center; }
+  .wizard-step-confirmation__body > * {
+    margin: 0; }
+  @media (min-width: 569px) {
+    .wizard-step-confirmation__body {
+      text-align: left; } }
+
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
