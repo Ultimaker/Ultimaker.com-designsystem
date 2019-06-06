@@ -3844,6 +3844,54 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-top: 60px;
     margin-bottom: 0; }
 
+@media (min-width: 569px) {
+  .um-components .wizard-step-confirmation__container {
+    padding-bottom: 60px; } }
+
+.um-components .wizard-step-confirmation__image-wrapper {
+  display: flex;
+  width: 75%;
+  margin: 0 auto 30px auto; }
+  @media (min-width: 569px) {
+    .um-components .wizard-step-confirmation__image-wrapper {
+      padding-right: 24px;
+      width: 100%; }
+      .um-components .flexgrid--row-reversed .wizard-step-confirmation__image-wrapper {
+        padding-left: 24px;
+        padding-right: 0; } }
+
+.um-components .wizard-step-confirmation__content {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 569px) {
+    .um-components .wizard-step-confirmation__content {
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 24px; }
+      .um-components .flexgrid--row-reversed .wizard-step-confirmation__content {
+        padding-right: 24px;
+        padding-left: 0; } }
+
+.um-components .wizard-step-confirmation-header .header-block__title,
+.um-components .wizard-step-confirmation-header .header-block__subtitle {
+  text-align: center; }
+  @media (min-width: 569px) {
+    .um-components .wizard-step-confirmation-header .header-block__title,
+    .um-components .wizard-step-confirmation-header .header-block__subtitle {
+      text-align: left; } }
+
+.um-components .wizard-step-confirmation-footer.footer-block:not(:empty) {
+  padding-bottom: 0; }
+
+.um-components .wizard-step-confirmation__body {
+  margin-bottom: 60px;
+  text-align: center; }
+  .um-components .wizard-step-confirmation__body > * {
+    margin: 0; }
+  @media (min-width: 569px) {
+    .um-components .wizard-step-confirmation__body {
+      text-align: left; } }
+
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
