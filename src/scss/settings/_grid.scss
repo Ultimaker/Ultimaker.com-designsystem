@@ -4,27 +4,27 @@ $gridNumberOfCols: 12;
 $gridBreakpoints: (
     "mobile": (
         selector: "xxs",
-        minWidth: 320px
+        minWidth: 320px,
     ),
     "mobile-xl": (
         selector: "xs",
         minWidth: 569px,
-        maxWidth: 767px
+        maxWidth: 767px,
     ),
     "tablet": (
         selector: "sm",
         minWidth: 768px,
-        maxWidth: 1024px
+        maxWidth: 1024px,
     ),
     "desktop": (
         selector: "md",
         minWidth: 1025px,
-        maxWidth: 1200px
+        maxWidth: 1200px,
     ),
     "desktop-hd": (
         selector: "lg",
-        minWidth: 1201px
-    )
+        minWidth: 1201px,
+    ),
 );
 $gridGutterSizeMobile: $buildingUnit;
 $gridGutterSize: $buildingUnit * 2;
