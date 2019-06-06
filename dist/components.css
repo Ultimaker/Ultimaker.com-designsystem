@@ -4799,7 +4799,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 .overflow-container__item {
   flex: 0 1 auto;
   text-align: center;
-  max-width: 120px;
+  max-width: 156px;
   min-width: 120px;
   padding: 0 12px 0;
   margin: 0 0 12px 0; }
@@ -4843,13 +4843,11 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   position: relative;
   bottom: 0;
   margin-bottom: 0;
-  white-space: wrap; }
+  white-space: nowrap; }
   .overflow-container__label:hover {
     color: #000000; }
   .overflow-container__link:focus .overflow-container__label:after {
     display: none; }
-  .overflow-container__label > span {
-    word-break: break-word; }
 
 svg text {
   font-size: 16px;
