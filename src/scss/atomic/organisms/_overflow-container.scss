@@ -58,7 +58,7 @@
 .overflow-container__item {
     flex: 0 1 auto;
     text-align: center;
-    max-width: $buildingUnit * 10;
+    max-width: $buildingUnit * 13;
     min-width: $buildingUnit * 10;
 
     padding: 0 $buildingUnit 0;
@@ -122,7 +122,7 @@
     position: relative;
     bottom: 0;
     margin-bottom: 0;
-    white-space: wrap;
+    white-space: nowrap;
 
     &:hover{
         color: $colorBlack;
@@ -132,10 +132,6 @@
         &:after {
             display: none;
         }
-    }
-
-    > span {
-        word-break: break-word;
     }
 }
 
