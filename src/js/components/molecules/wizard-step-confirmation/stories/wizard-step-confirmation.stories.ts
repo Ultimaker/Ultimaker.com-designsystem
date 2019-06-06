@@ -5,18 +5,22 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/wizard-step-confirmation.data';
 import knobsFormat from './wizard-step-confirmation.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-            },
-            template: require('./wizard-step-confirmation.html'),
-        };
+    return {
+        props: {
+            title: { default: knobs.title },
+            subtitle: { default: knobs.subtitle },
+            contentTitle: { default: knobs.contentTitle },
+            content: { default: knobs.content },
+            image: { default: knobs.image },
+            ctas: { default: knobs.ctas },
+        },
+        template: require('./wizard-step-confirmation.html'),
     };
 };
 
