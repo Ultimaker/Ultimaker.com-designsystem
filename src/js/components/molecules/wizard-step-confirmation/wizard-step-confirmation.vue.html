@@ -1,3 +1,17 @@
-<div>
-    <h2>Generated WizardStepConfirmation component</h2>
-</div>
+<article class="organism content-highlight">
+    <section class="container content-highlight__container">
+        <HeaderBlock :title="title" :subtitle="subtitle" />
+        <div class="flexgrid">
+            <div class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__image">
+                <div class="content-highlight__image-wrapper">
+                    <c-image v-if="image" v-bind="image"></c-image>
+                </div>
+            </div>
+            <div class="flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__content">
+                <h2>{{ contentTitle}}</h2>
+                <div class="content-manageble content-highlight__body" v-html="content" />
+                <FooterBlock class="content-highlight-footer" :ctas="ctas" />
+            </div>
+        </div>
+    </section>
+</article>
