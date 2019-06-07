@@ -5,15 +5,15 @@ exports[`Storyshots Molecules|navigation System navigation 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="stories__molecules"
   >
-    <section
-      class="stories__molecules"
-    >
-      <h2>
-        Should be refactored to vue component
-      </h2>
-    </section>
+    <h2>
+      Should be refactored to vue component
+    </h2>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

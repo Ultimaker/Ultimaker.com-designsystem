@@ -5,43 +5,43 @@ exports[`Storyshots Molecules|tags/tag-list tag-list 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="stories__molecules"
   >
-    <section
-      class="stories__molecules"
+    <ul
+      class="tag-list__list list"
     >
-      <ul
-        class="tag-list__list list"
+      <li
+        class="tag-list__item list_item"
       >
-        <li
-          class="tag-list__item list_item"
+        <label
+          class="tag"
         >
-          <label
-            class="tag"
-          >
-            Label one
-          </label>
-        </li>
-        <li
-          class="tag-list__item list_item"
+          Label one
+        </label>
+      </li>
+      <li
+        class="tag-list__item list_item"
+      >
+        <label
+          class="tag"
         >
-          <label
-            class="tag"
-          >
-            Label two
-          </label>
-        </li>
-        <li
-          class="tag-list__item list_item"
+          Label two
+        </label>
+      </li>
+      <li
+        class="tag-list__item list_item"
+      >
+        <label
+          class="tag"
         >
-          <label
-            class="tag"
-          >
-            Label extra long
-          </label>
-        </li>
-      </ul>
-    </section>
+          Label extra long
+        </label>
+      </li>
+    </ul>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

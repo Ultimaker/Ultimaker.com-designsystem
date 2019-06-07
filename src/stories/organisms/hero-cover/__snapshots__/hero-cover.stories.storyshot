@@ -5,72 +5,72 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__organism"
   >
-    <section
-      class="story__organism"
+    <article
+      class="hero hero--cover organism"
     >
-      <article
-        class="hero hero--cover organism"
+      <div
+        class="hero-cover__image--full"
+      >
+        <img
+          alt="bla bla"
+          class="img--contain img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+        />
+      </div>
+       
+      <div
+        class="hero-cover__image--overlay"
+      />
+       
+      <section
+        class="hero-cover__container container"
       >
         <div
-          class="hero-cover__image--full"
+          class="flexgrid__cell--xs-6 hero--cover-reset"
         >
-          <img
-            alt="bla bla"
-            class="img--contain img--loading"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-          />
-        </div>
-         
-        <div
-          class="hero-cover__image--overlay"
-        />
-         
-        <section
-          class="hero-cover__container container"
-        >
-          <div
-            class="flexgrid__cell--xs-6 hero--cover-reset"
+          <h1
+            class="hero-cover__headline"
           >
-            <h1
-              class="hero-cover__headline"
+            Lorum ipsum dolor sit amet consectetuer
+          </h1>
+           
+          <p
+            class="copy--intro"
+          >
+            Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.
+          </p>
+           
+          <div
+            class="cta-block cta-block--hero"
+          >
+            <a
+              class="link link--icon link--large undefined cta-link"
+              href="https://www.youtube.com/watch?v=hwhvByj8YG8"
+              target="_blank"
             >
-              Lorum ipsum dolor sit amet consectetuer
-            </h1>
-             
-            <p
-              class="copy--intro"
-            >
-              Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida.
-            </p>
-             
-            <div
-              class="cta-block cta-block--hero"
-            >
-              <a
-                class="link link--icon link--large undefined cta-link"
-                href="https://www.youtube.com/watch?v=hwhvByj8YG8"
-                target="_blank"
+              <!---->
+               
+              <span
+                class="link__underline"
               >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
+                
         Watch video
     
-                </span>
-                 
-                <!---->
-              </a>
-            </div>
+              </span>
+               
+              <!---->
+            </a>
           </div>
-        </section>
-      </article>
-    </section>
+        </div>
+      </section>
+    </article>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

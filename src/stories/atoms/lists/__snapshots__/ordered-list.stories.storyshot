@@ -5,31 +5,31 @@ exports[`Storyshots Atoms|lists Ordered list 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <ol
+      class="list"
     >
-      <ol
-        class="list"
+      <li
+        class="list__item"
       >
-        <li
-          class="list__item"
-        >
-          Default list-item
-        </li>
-        <li
-          class="list__item"
-        >
-          Default list-item
-        </li>
-        <li
-          class="list__item"
-        >
-          Default list-item
-        </li>
-      </ol>
-    </section>
+        Default list-item
+      </li>
+      <li
+        class="list__item"
+      >
+        Default list-item
+      </li>
+      <li
+        class="list__item"
+      >
+        Default list-item
+      </li>
+    </ol>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

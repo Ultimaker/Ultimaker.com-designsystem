@@ -5,139 +5,139 @@ exports[`Storyshots Molecules|navigation Pager 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="stories__molecule"
   >
-    <section
-      class="stories__molecule"
+    <nav
+      aria-label="pagination"
+      class="pager"
     >
-      <nav
-        aria-label="pagination"
-        class="pager"
+      <ul
+        class="pager__list"
       >
-        <ul
-          class="pager__list"
+        <li
+          aria-hidden="true"
+          class="pager__active-page"
         >
-          <li
-            aria-hidden="true"
-            class="pager__active-page"
+          <!---->
+        </li>
+         
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-label="page 1"
+            aria-role="button"
+            class="pager__page-indicator"
           >
             <!---->
-          </li>
-           
-          <li
-            class="pager__page"
+          </a>
+        </li>
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-label="page 2"
+            aria-role="button"
+            class="pager__page-indicator"
           >
-            <a
-              aria-label="page 1"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-          <li
-            class="pager__page"
+            <!---->
+          </a>
+        </li>
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-label="page 3"
+            aria-role="button"
+            class="pager__page-indicator"
           >
-            <a
-              aria-label="page 2"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-          <li
-            class="pager__page"
+            <!---->
+          </a>
+        </li>
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-label="page 4"
+            aria-role="button"
+            class="pager__page-indicator"
           >
-            <a
-              aria-label="page 3"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-          <li
-            class="pager__page"
+            <!---->
+          </a>
+        </li>
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-current="true"
+            aria-label="\\"current page, page 5"
+            aria-role="button"
+            class="pager__page-indicator"
           >
-            <a
-              aria-label="page 4"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-          <li
-            class="pager__page"
+            <!---->
+          </a>
+        </li>
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-label="page 6"
+            aria-role="button"
+            class="pager__page-indicator"
           >
-            <a
-              aria-current="true"
-              aria-label="\\"current page, page 5"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-          <li
-            class="pager__page"
+            <!---->
+          </a>
+        </li>
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-label="page 7"
+            aria-role="button"
+            class="pager__page-indicator"
           >
-            <a
-              aria-label="page 6"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-          <li
-            class="pager__page"
+            <!---->
+          </a>
+        </li>
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-label="page 8"
+            aria-role="button"
+            class="pager__page-indicator"
           >
-            <a
-              aria-label="page 7"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-          <li
-            class="pager__page"
+            <!---->
+          </a>
+        </li>
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-label="page 9"
+            aria-role="button"
+            class="pager__page-indicator"
           >
-            <a
-              aria-label="page 8"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-          <li
-            class="pager__page"
+            <!---->
+          </a>
+        </li>
+        <li
+          class="pager__page"
+        >
+          <a
+            aria-label="page 10"
+            aria-role="button"
+            class="pager__page-indicator"
           >
-            <a
-              aria-label="page 9"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-          <li
-            class="pager__page"
-          >
-            <a
-              aria-label="page 10"
-              aria-role="button"
-              class="pager__page-indicator"
-            >
-              <!---->
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
+            <!---->
+          </a>
+        </li>
+      </ul>
+    </nav>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

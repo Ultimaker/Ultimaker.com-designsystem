@@ -4,132 +4,59 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 2 bl
 <section
   class="story"
 >
-  <section
-    class="story"
+  <article
+    class="organism overview-ubr"
+    type="overview-ubr"
   >
-    <article
-      class="organism overview-ubr"
-      type="overview-ubr"
+    <section
+      class="container"
     >
-      <section
-        class="container"
+      <header
+        class="header-block"
       >
-        <header
-          class="header-block"
+        <h2
+          class="header-block__title"
         >
-          <h2
-            class="header-block__title"
-          >
-            Lorem ipsum dolor sit amet
-          </h2>
-           
-          <p
-            class="header-block__subtitle"
-          >
-            Architecto deleniti, et vel eum quam.
-          </p>
-        </header>
+          Lorem ipsum dolor sit amet
+        </h2>
          
-        <div
-          class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+        <p
+          class="header-block__subtitle"
         >
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-        </div>
-         
-        <footer
-          class="footer-block"
+          Architecto deleniti, et vel eum quam.
+        </p>
+      </header>
+       
+      <div
+        class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+      >
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
         >
           <div
-            block="overview"
-            class="cta-block cta-block--footer"
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
           >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
             <a
-              class="link--primary button cta-link"
+              class="block-icon__link link link--medium"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -140,31 +67,104 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 2 bl
                 class="link__underline"
               >
                 
-        Call me back
-    
-              </span>
-            </a>
-            <a
-              class="link--primary button cta-link"
-              href="https://ultimaker.com"
-              rel="noopener"
-              target="_self"
-            >
-              <!---->
-               
-              <span
-                class="link__underline"
-              >
-                
-        Call me back
+        Visit website
     
               </span>
             </a>
           </div>
-        </footer>
-      </section>
-    </article>
-  </section>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+       
+      <footer
+        class="footer-block"
+      >
+        <div
+          block="overview"
+          class="cta-block cta-block--footer"
+        >
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+        </div>
+      </footer>
+    </section>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -172,175 +172,59 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 3 bl
 <section
   class="story"
 >
-  <section
-    class="story"
+  <article
+    class="organism overview-ubr"
+    type="overview-ubr"
   >
-    <article
-      class="organism overview-ubr"
-      type="overview-ubr"
+    <section
+      class="container"
     >
-      <section
-        class="container"
+      <header
+        class="header-block"
       >
-        <header
-          class="header-block"
+        <h2
+          class="header-block__title"
         >
-          <h2
-            class="header-block__title"
-          >
-            Lorem ipsum dolor sit amet
-          </h2>
-           
-          <p
-            class="header-block__subtitle"
-          >
-            Architecto deleniti, et vel eum quam.
-          </p>
-        </header>
+          Lorem ipsum dolor sit amet
+        </h2>
          
-        <div
-          class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+        <p
+          class="header-block__subtitle"
         >
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-        </div>
-         
-        <footer
-          class="footer-block"
+          Architecto deleniti, et vel eum quam.
+        </p>
+      </header>
+       
+      <div
+        class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+      >
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
         >
           <div
-            block="overview"
-            class="cta-block cta-block--footer"
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
           >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
             <a
-              class="link--primary button cta-link"
+              class="block-icon__link link link--medium"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -351,31 +235,147 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 3 bl
                 class="link__underline"
               >
                 
-        Call me back
-    
-              </span>
-            </a>
-            <a
-              class="link--primary button cta-link"
-              href="https://ultimaker.com"
-              rel="noopener"
-              target="_self"
-            >
-              <!---->
-               
-              <span
-                class="link__underline"
-              >
-                
-        Call me back
+        Visit website
     
               </span>
             </a>
           </div>
-        </footer>
-      </section>
-    </article>
-  </section>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+       
+      <footer
+        class="footer-block"
+      >
+        <div
+          block="overview"
+          class="cta-block cta-block--footer"
+        >
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+        </div>
+      </footer>
+    </section>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -383,218 +383,59 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 4 bl
 <section
   class="story"
 >
-  <section
-    class="story"
+  <article
+    class="organism overview-ubr"
+    type="overview-ubr"
   >
-    <article
-      class="organism overview-ubr"
-      type="overview-ubr"
+    <section
+      class="container"
     >
-      <section
-        class="container"
+      <header
+        class="header-block"
       >
-        <header
-          class="header-block"
+        <h2
+          class="header-block__title"
         >
-          <h2
-            class="header-block__title"
-          >
-            Lorem ipsum dolor sit amet
-          </h2>
-           
-          <p
-            class="header-block__subtitle"
-          >
-            Architecto deleniti, et vel eum quam.
-          </p>
-        </header>
+          Lorem ipsum dolor sit amet
+        </h2>
          
-        <div
-          class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+        <p
+          class="header-block__subtitle"
         >
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-        </div>
-         
-        <footer
-          class="footer-block"
+          Architecto deleniti, et vel eum quam.
+        </p>
+      </header>
+       
+      <div
+        class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+      >
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
         >
           <div
-            block="overview"
-            class="cta-block cta-block--footer"
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
           >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
             <a
-              class="link--primary button cta-link"
+              class="block-icon__link link link--medium"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -605,31 +446,190 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 4 bl
                 class="link__underline"
               >
                 
-        Call me back
-    
-              </span>
-            </a>
-            <a
-              class="link--primary button cta-link"
-              href="https://ultimaker.com"
-              rel="noopener"
-              target="_self"
-            >
-              <!---->
-               
-              <span
-                class="link__underline"
-              >
-                
-        Call me back
+        Visit website
     
               </span>
             </a>
           </div>
-        </footer>
-      </section>
-    </article>
-  </section>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+       
+      <footer
+        class="footer-block"
+      >
+        <div
+          block="overview"
+          class="cta-block cta-block--footer"
+        >
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+        </div>
+      </footer>
+    </section>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -637,261 +637,59 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 5 bl
 <section
   class="story"
 >
-  <section
-    class="story"
+  <article
+    class="organism overview-ubr"
+    type="overview-ubr"
   >
-    <article
-      class="organism overview-ubr"
-      type="overview-ubr"
+    <section
+      class="container"
     >
-      <section
-        class="container"
+      <header
+        class="header-block"
       >
-        <header
-          class="header-block"
+        <h2
+          class="header-block__title"
         >
-          <h2
-            class="header-block__title"
-          >
-            Lorem ipsum dolor sit amet
-          </h2>
-           
-          <p
-            class="header-block__subtitle"
-          >
-            Architecto deleniti, et vel eum quam.
-          </p>
-        </header>
+          Lorem ipsum dolor sit amet
+        </h2>
          
-        <div
-          class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+        <p
+          class="header-block__subtitle"
         >
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-        </div>
-         
-        <footer
-          class="footer-block"
+          Architecto deleniti, et vel eum quam.
+        </p>
+      </header>
+       
+      <div
+        class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+      >
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
         >
           <div
-            block="overview"
-            class="cta-block cta-block--footer"
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
           >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
             <a
-              class="link--primary button cta-link"
+              class="block-icon__link link link--medium"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -902,31 +700,233 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 5 bl
                 class="link__underline"
               >
                 
-        Call me back
-    
-              </span>
-            </a>
-            <a
-              class="link--primary button cta-link"
-              href="https://ultimaker.com"
-              rel="noopener"
-              target="_self"
-            >
-              <!---->
-               
-              <span
-                class="link__underline"
-              >
-                
-        Call me back
+        Visit website
     
               </span>
             </a>
           </div>
-        </footer>
-      </section>
-    </article>
-  </section>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+       
+      <footer
+        class="footer-block"
+      >
+        <div
+          block="overview"
+          class="cta-block cta-block--footer"
+        >
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+        </div>
+      </footer>
+    </section>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -934,304 +934,59 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 6 bl
 <section
   class="story"
 >
-  <section
-    class="story"
+  <article
+    class="organism overview-ubr"
+    type="overview-ubr"
   >
-    <article
-      class="organism overview-ubr"
-      type="overview-ubr"
+    <section
+      class="container"
     >
-      <section
-        class="container"
+      <header
+        class="header-block"
       >
-        <header
-          class="header-block"
+        <h2
+          class="header-block__title"
         >
-          <h2
-            class="header-block__title"
-          >
-            Lorem ipsum dolor sit amet
-          </h2>
-           
-          <p
-            class="header-block__subtitle"
-          >
-            Architecto deleniti, et vel eum quam.
-          </p>
-        </header>
+          Lorem ipsum dolor sit amet
+        </h2>
          
-        <div
-          class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+        <p
+          class="header-block__subtitle"
         >
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-          <article
-            class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
-            type="BlockIcon"
-          >
-            <div
-              class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
-            >
-              <!---->
-            </div>
-             
-            <div
-              class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-            >
-              <h3
-                class="block-icon__headline"
-              >
-                Lorem ipsum dolor sit amet
-              </h3>
-               
-              <p
-                class="block-icon__description"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-              </p>
-               
-              <a
-                class="block-icon__link link link--medium"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
-              >
-                <!---->
-                 
-                <span
-                  class="link__underline"
-                >
-                  
-        Visit website
-    
-                </span>
-              </a>
-            </div>
-          </article>
-        </div>
-         
-        <footer
-          class="footer-block"
+          Architecto deleniti, et vel eum quam.
+        </p>
+      </header>
+       
+      <div
+        class="flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"
+      >
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
         >
           <div
-            block="overview"
-            class="cta-block cta-block--footer"
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
           >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
             <a
-              class="link--primary button cta-link"
+              class="block-icon__link link link--medium"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"
@@ -1242,30 +997,275 @@ exports[`Storyshots organisms|overview-ubr Overview Unique buying reasons - 6 bl
                 class="link__underline"
               >
                 
-        Call me back
-    
-              </span>
-            </a>
-            <a
-              class="link--primary button cta-link"
-              href="https://ultimaker.com"
-              rel="noopener"
-              target="_self"
-            >
-              <!---->
-               
-              <span
-                class="link__underline"
-              >
-                
-        Call me back
+        Visit website
     
               </span>
             </a>
           </div>
-        </footer>
-      </section>
-    </article>
-  </section>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+        <article
+          class="block-icon flexgrid flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"
+          type="BlockIcon"
+        >
+          <div
+            class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+          >
+            <!---->
+          </div>
+           
+          <div
+            class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+          >
+            <h3
+              class="block-icon__headline"
+            >
+              Lorem ipsum dolor sit amet
+            </h3>
+             
+            <p
+              class="block-icon__description"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+            </p>
+             
+            <a
+              class="block-icon__link link link--medium"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Visit website
+    
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+       
+      <footer
+        class="footer-block"
+      >
+        <div
+          block="overview"
+          class="cta-block cta-block--footer"
+        >
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+        </div>
+      </footer>
+    </section>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

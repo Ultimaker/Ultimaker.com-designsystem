@@ -4,19 +4,19 @@ exports[`Storyshots Atoms|list items/li-inline span-label 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
+  <li
+    class="list__item list__item--inline"
   >
-    <li
-      class="list__item list__item--inline"
+    <span
+      class="label"
     >
-      <span
-        class="label"
-      >
-        High strength-to-weight ratio
-      </span>
-    </li>
-  </section>
+      High strength-to-weight ratio
+    </span>
+  </li>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -24,14 +24,14 @@ exports[`Storyshots Atoms|list items/li-inline text 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
+  <li
+    class="list__item list__item--inline"
   >
-    <li
-      class="list__item list__item--inline"
-    >
-      High strength-to-weight ratio
-    </li>
-  </section>
+    High strength-to-weight ratio
+  </li>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

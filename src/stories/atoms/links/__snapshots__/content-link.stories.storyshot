@@ -5,19 +5,19 @@ exports[`Storyshots Atoms|links Content link 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <a
+      class=""
+      href="#/#"
     >
-      <a
-        class=""
-        href="#/#"
-      >
-        <!---->
-         Content-link
-      </a>
-    </section>
+      <!---->
+       Content-link
+    </a>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

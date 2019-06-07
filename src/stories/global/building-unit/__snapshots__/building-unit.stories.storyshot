@@ -4,38 +4,38 @@ exports[`Storyshots global Building units 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
+  <div
+    class="demo-building-unit"
   >
     <div
-      class="demo-building-unit"
+      class="building-unit building-unit--vertical"
+    />
+     
+    <div
+      class="building-unit building-unit--vertical"
+    />
+     
+    <div
+      class="building-unit building-unit--vertical"
+    />
+     
+    <div
+      class="building-unit building-unit--vertical building-unit--hidden-sm"
+    />
+     
+    <div
+      class="building-unit building-unit--half building-unit--vertical building-unit--hidden-md"
+    />
+     
+    <button
+      class="button button--secondary"
     >
-      <div
-        class="building-unit building-unit--vertical"
-      />
-       
-      <div
-        class="building-unit building-unit--vertical"
-      />
-       
-      <div
-        class="building-unit building-unit--vertical"
-      />
-       
-      <div
-        class="building-unit building-unit--vertical building-unit--hidden-sm"
-      />
-       
-      <div
-        class="building-unit building-unit--half building-unit--vertical building-unit--hidden-md"
-      />
-       
-      <button
-        class="button button--secondary"
-      >
-        Example pattern
-      </button>
-    </div>
-  </section>
+      Example pattern
+    </button>
+  </div>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

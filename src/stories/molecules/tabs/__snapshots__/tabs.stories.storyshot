@@ -5,13 +5,13 @@ exports[`Storyshots Molecules|tabs Tabs 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="stories__molecules"
   >
-    <section
-      class="stories__molecules"
-    >
-      <!---->
-    </section>
+    <!---->
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

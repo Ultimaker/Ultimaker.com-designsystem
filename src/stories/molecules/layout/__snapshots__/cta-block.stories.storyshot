@@ -5,48 +5,48 @@ exports[`Storyshots Molecules|layout/cta-block cta-block 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__molecule"
   >
-    <section
-      class="story__molecule"
+    <div
+      class="cta-block"
     >
-      <div
-        class="cta-block"
+      <a
+        class="link--primary button cta-link"
+        href="https://www.ultimaker.com/resellers"
+        rel="noopener"
+        target="_self"
       >
-        <a
-          class="link--primary button cta-link"
-          href="https://www.ultimaker.com/resellers"
-          rel="noopener"
-          target="_self"
+        <!---->
+         
+        <span
+          class="link__underline"
         >
-          <!---->
-           
-          <span
-            class="link__underline"
-          >
-            
+          
         Find a reseller
     
-          </span>
-        </a>
-        <a
-          class="link--large link cta-link"
-          href="https://3d.ultimaker.com/requestquote"
-          rel="noopener"
-          target="_blank"
+        </span>
+      </a>
+      <a
+        class="link--large link cta-link"
+        href="https://3d.ultimaker.com/requestquote"
+        rel="noopener"
+        target="_blank"
+      >
+        <!---->
+         
+        <span
+          class="link__underline"
         >
-          <!---->
-           
-          <span
-            class="link__underline"
-          >
-            
+          
         Get a quote
     
-          </span>
-        </a>
-      </div>
-    </section>
+        </span>
+      </a>
+    </div>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
