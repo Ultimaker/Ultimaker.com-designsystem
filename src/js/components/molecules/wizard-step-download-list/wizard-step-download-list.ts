@@ -31,9 +31,9 @@ export class WizardStepDownloadList extends Vue implements WizardStepDownloadLis
 
     handleSubmit() {
         // @ts-ignore
-        if (window.$u && window.$u.store && window.$u.store.setSetting) {
+        if (window.$u && window.$u.store && window.$u.store.pushSetting) {
             // @ts-ignore
-            window.$u.store.setSetting('robot', true);
+            window.$u.store.pushSetting('robot', true);
         }
     }
 }

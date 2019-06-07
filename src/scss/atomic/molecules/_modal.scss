@@ -31,14 +31,14 @@
     .modal--wizard & {
         min-width: 100%;
         min-height: 100%;
-        padding: $buildingUnit * 5 0;
+        padding: ($buildingUnit * 5) $buildingUnit;
 
         @include min-desktop() {
             min-height: auto;
             min-width: 85vw;
             max-width: 85vw;
             max-height: 75vh;
-            padding: $buildingUnit * 5 0;
+            padding: ($buildingUnit * 5) ($buildingUnit * 4);
         }
     }
 }

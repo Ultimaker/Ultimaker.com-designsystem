@@ -1898,14 +1898,14 @@ table tfoot {
   .modal--wizard .modal__content {
     min-width: 100%;
     min-height: 100%;
-    padding: 60px 0; }
+    padding: 60px 12px; }
     @media (min-width: 1025px) {
       .modal--wizard .modal__content {
         min-height: auto;
         min-width: 85vw;
         max-width: 85vw;
         max-height: 75vh;
-        padding: 60px 0; } }
+        padding: 60px 48px; } }
 
 .modal__close {
   position: absolute;
@@ -3666,6 +3666,21 @@ table tfoot {
       font-size: 24px;
       line-height: 30px; } }
 
+.header-block--wizard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .header-block--wizard .header-block__title,
+  .header-block--wizard .header-block__subtitle {
+    flex-basis: 100%;
+    max-width: 100%; }
+    @media (min-width: 768px) {
+      .header-block--wizard .header-block__title,
+      .header-block--wizard .header-block__subtitle {
+        flex-basis: 75%;
+        max-width: 75%; } }
+
 .footer-block {
   display: flex;
   justify-content: center;
@@ -4304,15 +4319,19 @@ table tfoot {
   align-items: center; }
   .wizard-step-download-list__description {
     margin-left: 12px;
-    margin-right: 12px; }
+    margin-right: 12px;
+    margin-bottom: 24px;
+    flex-basis: 50%;
+    max-width: 50%;
+    text-align: center; }
     @media (min-width: 768px) {
       .wizard-step-download-list__description {
         margin-left: 0;
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-bottom: 36px; } }
   .wizard-step-download-list__items {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%; }
     @media (min-width: 768px) {
       .wizard-step-download-list__items {
@@ -4335,7 +4354,8 @@ table tfoot {
           margin-right: 0;
           margin-bottom: 0; } }
   .wizard-step-download-list__button {
-    margin-top: 60px; }
+    margin-top: 60px;
+    margin-bottom: 0; }
 
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
