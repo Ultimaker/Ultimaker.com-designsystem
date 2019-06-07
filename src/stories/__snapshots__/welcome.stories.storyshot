@@ -4,28 +4,28 @@ exports[`Storyshots global Welcome 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
-  >
-    <div>
-      <h1>
-        User Interface Patterns
-      </h1>
-      <h2>
-        Designed for Ultimaker.com
-      </h2>
-      <p
-        class="copy--intro"
+  <div>
+    <h1>
+      User Interface Patterns
+    </h1>
+    <h2>
+      Designed for Ultimaker.com
+    </h2>
+    <p
+      class="copy--intro"
+    >
+      The patterns designed within this library are composed using the 
+      <a
+        href="http://atomicdesign.bradfrost.com"
       >
-        The patterns designed within this library are composed using the 
-        <a
-          href="http://atomicdesign.bradfrost.com"
-        >
-          Atomic Design
-        </a>
-         System principles created by Brad Frost.
-      </p>
-    </div>
-  </section>
+        Atomic Design
+      </a>
+       System principles created by Brad Frost.
+    </p>
+  </div>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

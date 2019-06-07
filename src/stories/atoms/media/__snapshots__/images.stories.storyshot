@@ -5,40 +5,40 @@ exports[`Storyshots Atoms|media Images 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <picture
+      alt="image rectangle alt text empty"
+      class="img--responsive"
     >
-      <picture
-        alt="image rectangle alt text empty"
-        class="img--responsive"
-      >
-        <!---->
-         
-        <!---->
-         
-        <source
-          media="(min-width: 768px)"
-          srcset=""
-        />
-         
-        <!---->
-         
-        <!---->
-         
-        <source
-          media="(max-width: 480px)"
-          srcset="/generator/svg/400/400"
-        />
-         
-        <img
-          alt=""
-          class="img--responsive img--lazy"
-          src=""
-        />
-      </picture>
-    </section>
+      <!---->
+       
+      <!---->
+       
+      <source
+        media="(min-width: 768px)"
+        srcset=""
+      />
+       
+      <!---->
+       
+      <!---->
+       
+      <source
+        media="(max-width: 480px)"
+        srcset="/generator/svg/400/400"
+      />
+       
+      <img
+        alt=""
+        class="img--responsive img--lazy"
+        src=""
+      />
+    </picture>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

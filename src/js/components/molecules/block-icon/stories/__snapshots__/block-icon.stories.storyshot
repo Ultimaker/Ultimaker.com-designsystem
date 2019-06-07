@@ -4,52 +4,52 @@ exports[`Storyshots Molecules|block-icon/block-icon default 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
+  <article
+    class="block-icon flexgrid"
+    type="BlockIcon"
   >
-    <article
-      class="block-icon flexgrid"
-      type="BlockIcon"
+    <div
+      class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
     >
-      <div
-        class="block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"
+      <!---->
+    </div>
+     
+    <div
+      class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
+    >
+      <h3
+        class="block-icon__headline"
+      >
+        Lorem ipsum dolor sit amet
+      </h3>
+       
+      <p
+        class="block-icon__description"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+      </p>
+       
+      <a
+        class="block-icon__link link link--medium"
+        href="https://ultimaker.com"
+        rel="noopener"
+        target="_self"
       >
         <!---->
-      </div>
-       
-      <div
-        class="block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"
-      >
-        <h3
-          class="block-icon__headline"
-        >
-          Lorem ipsum dolor sit amet
-        </h3>
          
-        <p
-          class="block-icon__description"
+        <span
+          class="link__underline"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-        </p>
-         
-        <a
-          class="block-icon__link link link--medium"
-          href="https://ultimaker.com"
-          rel="noopener"
-          target="_self"
-        >
-          <!---->
-           
-          <span
-            class="link__underline"
-          >
-            
+          
         Visit website
     
-          </span>
-        </a>
-      </div>
-    </article>
-  </section>
+        </span>
+      </a>
+    </div>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

@@ -5,55 +5,55 @@ exports[`Storyshots Atoms|media/icons Brand 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <div
+      class="flexgrid flexgrid--gutter"
     >
       <div
-        class="flexgrid flexgrid--gutter"
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
       >
         <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+          class="demo-panel demo-panel--brand-icons"
         >
-          <div
-            class="demo-panel demo-panel--brand-icons"
+          <span
+            class="demo-panel__icon"
           >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              logo-ultimaker
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--brand-icons"
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
           >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              robot-ultimaker
-            </span>
-          </div>
+            logo-ultimaker
+          </span>
         </div>
       </div>
-    </section>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--brand-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            robot-ultimaker
+          </span>
+        </div>
+      </div>
+    </div>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -62,682 +62,682 @@ exports[`Storyshots Atoms|media/icons Functional 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <div
+      class="flexgrid flexgrid--gutter"
     >
       <div
-        class="flexgrid flexgrid--gutter"
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
       >
         <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+          class="demo-panel demo-panel--functional-icons"
         >
-          <div
-            class="demo-panel demo-panel--functional-icons"
+          <span
+            class="demo-panel__icon"
           >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              menu
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
           >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              download
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              upload
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              arrow-up
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              arrow-down
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              arrow-right
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              arrow-left
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              fullscreen
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              angle-up
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              angle-down
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              angle-right
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              angle-left
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              refresh
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              checkmark
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              close
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              plus
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              settings
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              geo
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              cloud
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              like
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              chat
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              rate
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              typing
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              show
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              notify
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              location
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              mail
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              account
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              file
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              edit
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              store
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              mobile
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              more
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              play-video
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--functional-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              info
-            </span>
-          </div>
+            menu
+          </span>
         </div>
       </div>
-    </section>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            download
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            upload
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            arrow-up
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            arrow-down
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            arrow-right
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            arrow-left
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            fullscreen
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            angle-up
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            angle-down
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            angle-right
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            angle-left
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            refresh
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            checkmark
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            close
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            plus
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            settings
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            geo
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            cloud
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            like
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            chat
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            rate
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            typing
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            show
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            notify
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            location
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            mail
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            account
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            file
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            edit
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            store
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            mobile
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            more
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            play-video
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--functional-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            info
+          </span>
+        </div>
+      </div>
+    </div>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -746,14 +746,14 @@ exports[`Storyshots Atoms|media/icons Icon 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
-    >
-      <!---->
-    </section>
+    <!---->
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -762,283 +762,283 @@ exports[`Storyshots Atoms|media/icons Product 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <div
+      class="flexgrid flexgrid--gutter"
     >
       <div
-        class="flexgrid flexgrid--gutter"
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
       >
         <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+          class="demo-panel demo-panel--product-icons"
         >
-          <div
-            class="demo-panel demo-panel--product-icons"
+          <span
+            class="demo-panel__icon"
           >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              material
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
           >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              um2
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              um2ext
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              um3
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              um3ext
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              ums5
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              service
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              volume
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              resolution
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              support
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              single-extrusion
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              dual-extrusion
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              cura
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--product-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              connect
-            </span>
-          </div>
+            material
+          </span>
         </div>
       </div>
-    </section>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            um2
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            um2ext
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            um3
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            um3ext
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            ums5
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            service
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            volume
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            resolution
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            support
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            single-extrusion
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            dual-extrusion
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            cura
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--product-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            connect
+          </span>
+        </div>
+      </div>
+    </div>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -1047,92 +1047,92 @@ exports[`Storyshots Atoms|media/icons Social 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <div
+      class="flexgrid flexgrid--gutter"
     >
       <div
-        class="flexgrid flexgrid--gutter"
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
       >
         <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+          class="demo-panel demo-panel--social-icons"
         >
-          <div
-            class="demo-panel demo-panel--social-icons"
+          <span
+            class="demo-panel__icon"
           >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              facebook
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--social-icons"
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
           >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              twitter
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--social-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              instagram
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
-        >
-          <div
-            class="demo-panel demo-panel--social-icons"
-          >
-            <span
-              class="demo-panel__icon"
-            >
-              <!---->
-            </span>
-             
-            <span
-              class="demo-panel__label"
-            >
-              youtube
-            </span>
-          </div>
+            facebook
+          </span>
         </div>
       </div>
-    </section>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--social-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            twitter
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--social-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            instagram
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xs-4 flexgrid__cell--sm-3 flexgrid__cell--md-2"
+      >
+        <div
+          class="demo-panel demo-panel--social-icons"
+        >
+          <span
+            class="demo-panel__icon"
+          >
+            <!---->
+          </span>
+           
+          <span
+            class="demo-panel__label"
+          >
+            youtube
+          </span>
+        </div>
+      </div>
+    </div>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

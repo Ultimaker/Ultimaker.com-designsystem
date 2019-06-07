@@ -5,15 +5,15 @@ exports[`Storyshots Molecules|pricing Price table 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__molecule"
   >
-    <section
-      class="story__molecule"
-    >
-      <h2>
-        Refactor: needs its own vue component
-      </h2>
-    </section>
+    <h2>
+      Refactor: needs its own vue component
+    </h2>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

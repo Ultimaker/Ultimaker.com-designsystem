@@ -4,22 +4,22 @@ exports[`Storyshots global Fonts 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
-  >
-    <div>
-      <p
-        style="font-family: 'univers';"
-      >
-        Primary font: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif;
-      </p>
-       
-      <p
-        style="font-family: 'fugue';"
-      >
-        Secondary font: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif;
-      </p>
-    </div>
-  </section>
+  <div>
+    <p
+      style="font-family: 'univers';"
+    >
+      Primary font: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    </p>
+     
+    <p
+      style="font-family: 'fugue';"
+    >
+      Secondary font: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    </p>
+  </div>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

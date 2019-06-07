@@ -5,27 +5,27 @@ exports[`Storyshots Atoms|forms Checkbox 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <input
+      checked="checked"
+      class="checkbox"
+      id="checkbox"
+      name="checkbox"
+      type="checkbox"
+      value="true"
+    />
+     
+    <label
+      class="checkbox__label"
+      for="checkbox"
     >
-      <input
-        checked="checked"
-        class="checkbox"
-        id="checkbox"
-        name="checkbox"
-        type="checkbox"
-        value="true"
-      />
-       
-      <label
-        class="checkbox__label"
-        for="checkbox"
-      >
-        Some text
-      </label>
-    </section>
+      Some text
+    </label>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

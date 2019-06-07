@@ -4,90 +4,90 @@ exports[`Storyshots Atoms|list items/li-item card-product 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
+  <li
+    class="list__item"
   >
-    <li
-      class="list__item"
+    <article
+      class="card-product"
+      type="CardProduct"
     >
-      <article
-        class="card-product"
-        type="CardProduct"
+      <a
+        aria-label="Ultimaker Nylon"
+        class="anchor-overlay hit-area"
+        href="https://ultimaker.com/en/products/materials/nylon"
+        title="Ultimaker Nylon"
+      />
+       
+      <div
+        class="card-product__image-container"
       >
-        <a
-          aria-label="Ultimaker Nylon"
-          class="anchor-overlay hit-area"
-          href="https://ultimaker.com/en/products/materials/nylon"
-          title="Ultimaker Nylon"
+        <img
+          alt="Nylon 3D printed gears"
+          class="img--contain card-product__image img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          type="Image"
         />
          
-        <div
-          class="card-product__image-container"
+        <!---->
+      </div>
+       
+      <h3
+        class="card-product__heading"
+      >
+        Ultimaker Nylon
+      </h3>
+       
+      <ul
+        class="list card-product__list"
+      >
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
         >
-          <img
-            alt="Nylon 3D printed gears"
-            class="img--contain card-product__image img--loading"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-            type="Image"
-          />
-           
-          <!---->
-        </div>
-         
-        <h3
-          class="card-product__heading"
+          <span
+            class="label"
+          >
+            Abrasion-resistant
+          </span>
+        </li>
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
         >
-          Ultimaker Nylon
-        </h3>
-         
-        <ul
-          class="list card-product__list"
+          <span
+            class="label"
+          >
+            Durable
+          </span>
+        </li>
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
         >
-          <li
-            class="list__item list__item--inline"
-            type="LiInline"
+          <span
+            class="label"
           >
-            <span
-              class="label"
-            >
-              Abrasion-resistant
-            </span>
-          </li>
-          <li
-            class="list__item list__item--inline"
-            type="LiInline"
+            High strength-to-weight ratio
+          </span>
+        </li>
+        <li
+          class="list__item list__item--inline"
+          type="LiInline"
+        >
+          <span
+            class="label"
           >
-            <span
-              class="label"
-            >
-              Durable
-            </span>
-          </li>
-          <li
-            class="list__item list__item--inline"
-            type="LiInline"
-          >
-            <span
-              class="label"
-            >
-              High strength-to-weight ratio
-            </span>
-          </li>
-          <li
-            class="list__item list__item--inline"
-            type="LiInline"
-          >
-            <span
-              class="label"
-            >
-              Low friction coefficient
-            </span>
-          </li>
-        </ul>
-      </article>
-    </li>
-  </section>
+            Low friction coefficient
+          </span>
+        </li>
+      </ul>
+    </article>
+  </li>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -95,19 +95,19 @@ exports[`Storyshots Atoms|list items/li-item span-label 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
+  <li
+    class="list__item"
   >
-    <li
-      class="list__item"
+    <span
+      class="label"
     >
-      <span
-        class="label"
-      >
-        High strength-to-weight ratio
-      </span>
-    </li>
-  </section>
+      High strength-to-weight ratio
+    </span>
+  </li>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -115,14 +115,14 @@ exports[`Storyshots Atoms|list items/li-item text 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
+  <li
+    class="list__item"
   >
-    <li
-      class="list__item"
-    >
-      High strength-to-weight ratio
-    </li>
-  </section>
+    High strength-to-weight ratio
+  </li>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

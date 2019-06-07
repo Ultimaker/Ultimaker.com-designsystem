@@ -5,31 +5,31 @@ exports[`Storyshots Atoms|lists Unordered list 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <ul
+      class="list"
     >
-      <ul
-        class="list"
+      <li
+        class="list__item"
       >
-        <li
-          class="list__item"
-        >
-          Default list-item
-        </li>
-        <li
-          class="list__item"
-        >
-          Default list-item
-        </li>
-        <li
-          class="list__item"
-        >
-          Default list-item
-        </li>
-      </ul>
-    </section>
+        Default list-item
+      </li>
+      <li
+        class="list__item"
+      >
+        Default list-item
+      </li>
+      <li
+        class="list__item"
+      >
+        Default list-item
+      </li>
+    </ul>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

@@ -5,150 +5,150 @@ exports[`Storyshots organisms|ecosystem Ecosystem 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__organism"
   >
-    <section
-      class="story__organism"
+    <article
+      class="ecosystem"
     >
-      <article
-        class="ecosystem"
+      <section
+        class="container ecosystem__container"
       >
-        <section
-          class="container ecosystem__container"
+        <h2
+          class="ecosystem__title"
         >
-          <h2
-            class="ecosystem__title"
+          Lorem ipsum dolor sit amet
+        </h2>
+         
+        <div
+          class="ecosystem__items"
+        >
+          <article
+            class="card ecosystem__card"
+            tabindex="0"
           >
-            Lorem ipsum dolor sit amet
-          </h2>
-           
-          <div
-            class="ecosystem__items"
+            <div
+              class="card__visual"
+            >
+              <!---->
+               
+              <!---->
+            </div>
+             
+            <div
+              class="card__content"
+            >
+              <h3
+                class="card__headline"
+              >
+                Lorem ipsum dolor sit amet
+              </h3>
+               
+              <p
+                class="card__description"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
+              </p>
+               
+              <!---->
+            </div>
+          </article>
+          <article
+            class="card ecosystem__card"
+            tabindex="0"
           >
-            <article
-              class="card ecosystem__card"
-              tabindex="0"
+            <div
+              class="card__visual"
             >
-              <div
-                class="card__visual"
-              >
-                <!---->
-                 
-                <!---->
-              </div>
+              <!---->
                
-              <div
-                class="card__content"
-              >
-                <h3
-                  class="card__headline"
-                >
-                  Lorem ipsum dolor sit amet
-                </h3>
-                 
-                <p
-                  class="card__description"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-                </p>
-                 
-                <!---->
-              </div>
-            </article>
-            <article
-              class="card ecosystem__card"
-              tabindex="0"
+              <!---->
+            </div>
+             
+            <div
+              class="card__content"
             >
-              <div
-                class="card__visual"
+              <h3
+                class="card__headline"
               >
-                <!---->
-                 
-                <!---->
-              </div>
+                Lorem ipsum dolor sit amet
+              </h3>
                
-              <div
-                class="card__content"
+              <p
+                class="card__description"
               >
-                <h3
-                  class="card__headline"
-                >
-                  Lorem ipsum dolor sit amet
-                </h3>
-                 
-                <p
-                  class="card__description"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt error, aut velit sequi nemo aspernatur libero perferendis magni
-                </p>
-                 
-                <!---->
-              </div>
-            </article>
-            <article
-              class="card ecosystem__card"
-              tabindex="0"
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt error, aut velit sequi nemo aspernatur libero perferendis magni
+              </p>
+               
+              <!---->
+            </div>
+          </article>
+          <article
+            class="card ecosystem__card"
+            tabindex="0"
+          >
+            <div
+              class="card__visual"
             >
-              <div
-                class="card__visual"
-              >
-                <!---->
-                 
-                <!---->
-              </div>
+              <!---->
                
-              <div
-                class="card__content"
-              >
-                <h3
-                  class="card__headline"
-                >
-                  Lorem ipsum dolor sit amet
-                </h3>
-                 
-                <p
-                  class="card__description"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque repellat in fugit eum minus dolorum deleniti,
-                </p>
-                 
-                <!---->
-              </div>
-            </article>
-            <article
-              class="card ecosystem__card"
-              tabindex="0"
+              <!---->
+            </div>
+             
+            <div
+              class="card__content"
             >
-              <div
-                class="card__visual"
+              <h3
+                class="card__headline"
               >
-                <!---->
-                 
-                <!---->
-              </div>
+                Lorem ipsum dolor sit amet
+              </h3>
                
-              <div
-                class="card__content"
+              <p
+                class="card__description"
               >
-                <h3
-                  class="card__headline"
-                >
-                  Lorem ipsum dolor sit amet
-                </h3>
-                 
-                <p
-                  class="card__description"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum aliquid fugit assumenda, sit rem recusandae illum dicta
-                </p>
-                 
-                <!---->
-              </div>
-            </article>
-          </div>
-        </section>
-      </article>
-    </section>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque repellat in fugit eum minus dolorum deleniti,
+              </p>
+               
+              <!---->
+            </div>
+          </article>
+          <article
+            class="card ecosystem__card"
+            tabindex="0"
+          >
+            <div
+              class="card__visual"
+            >
+              <!---->
+               
+              <!---->
+            </div>
+             
+            <div
+              class="card__content"
+            >
+              <h3
+                class="card__headline"
+              >
+                Lorem ipsum dolor sit amet
+              </h3>
+               
+              <p
+                class="card__description"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum aliquid fugit assumenda, sit rem recusandae illum dicta
+              </p>
+               
+              <!---->
+            </div>
+          </article>
+        </div>
+      </section>
+    </article>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

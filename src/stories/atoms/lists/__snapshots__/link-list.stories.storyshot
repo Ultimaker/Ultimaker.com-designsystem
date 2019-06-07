@@ -5,31 +5,31 @@ exports[`Storyshots Atoms|lists Link list 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <ul
+      class="link-list"
     >
-      <ul
-        class="link-list"
+      <li
+        class="link-list__item"
       >
-        <li
-          class="link-list__item"
-        >
-          <!---->
-        </li>
-        <li
-          class="link-list__item"
-        >
-          <!---->
-        </li>
-        <li
-          class="link-list__item"
-        >
-          <!---->
-        </li>
-      </ul>
-    </section>
+        <!---->
+      </li>
+      <li
+        class="link-list__item"
+      >
+        <!---->
+      </li>
+      <li
+        class="link-list__item"
+      >
+        <!---->
+      </li>
+    </ul>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

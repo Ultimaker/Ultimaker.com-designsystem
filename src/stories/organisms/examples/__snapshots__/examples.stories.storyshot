@@ -5,51 +5,51 @@ exports[`Storyshots organisms|examples Examples 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__organism"
   >
-    <section
-      class="story__organism"
+    <article
+      class="examples"
     >
-      <article
-        class="examples"
+      <div
+        class="container examples__container"
       >
+        <header>
+          <h2
+            class="examples__headline"
+          >
+            Lorem ipsum dolor sit amet
+          </h2>
+        </header>
+         
         <div
-          class="container examples__container"
+          class="cards"
         >
-          <header>
-            <h2
-              class="examples__headline"
-            >
-              Lorem ipsum dolor sit amet
-            </h2>
-          </header>
-           
           <div
-            class="cards"
+            class="flexgrid flexgrid--gutter"
           >
             <div
-              class="flexgrid flexgrid--gutter"
+              class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
             >
-              <div
-                class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
-              >
-                <!---->
-              </div>
-              <div
-                class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
-              >
-                <!---->
-              </div>
-              <div
-                class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
-              >
-                <!---->
-              </div>
+              <!---->
+            </div>
+            <div
+              class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
+            >
+              <!---->
+            </div>
+            <div
+              class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
+            >
+              <!---->
             </div>
           </div>
         </div>
-      </article>
-    </section>
+      </div>
+    </article>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

@@ -5,41 +5,41 @@ exports[`Storyshots Atoms|anchors anchor-overlay 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
-    >
-      <a
-        aria-label="Ultimaker.com"
-        class="anchor-overlay hit-area"
-        href="https://ultimaker.com/"
-        title="Ultimaker.com"
-      />
-       
-      <h2>
-        Sample Content
-      </h2>
-       
-      <p>
-        This entire content block is covered by the anchor.
-      </p>
-       
-      <p>
-        There is no requirement on what type of content is covered; only that the 
-        <b>
-          <i>
-            z-index
-          </i>
-        </b>
-         of the content is
+    <a
+      aria-label="Ultimaker.com"
+      class="anchor-overlay hit-area"
+      href="https://ultimaker.com/"
+      title="Ultimaker.com"
+    />
+     
+    <h2>
+      Sample Content
+    </h2>
+     
+    <p>
+      This entire content block is covered by the anchor.
+    </p>
+     
+    <p>
+      There is no requirement on what type of content is covered; only that the 
+      <b>
+        <i>
+          z-index
+        </i>
+      </b>
+       of the content is
         lower than the anchor’s 
-        <code>
-          z-index: 100
-        </code>
-        .
-      </p>
-    </section>
+      <code>
+        z-index: 100
+      </code>
+      .
+    </p>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

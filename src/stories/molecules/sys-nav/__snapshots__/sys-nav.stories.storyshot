@@ -4,55 +4,55 @@ exports[`Storyshots Molecules|sys-nav SysNav 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
+  <nav
+    aria-label="quick access"
+    class="sys-nav"
   >
-    <nav
-      aria-label="quick access"
-      class="sys-nav"
+    <ul
+      class="sys-nav__list"
+      role="presentation"
     >
-      <ul
-        class="sys-nav__list"
-        role="presentation"
+      <li
+        class="sys-nav__item"
       >
-        <li
-          class="sys-nav__item"
+        <a
+          class="sys-nav__link"
+          href="#/take-my-money"
         >
-          <a
-            class="sys-nav__link"
-            href="#/take-my-money"
+          <!---->
+           
+          <!---->
+           
+          <span
+            class="sys-nav__label sys-nav__label--hidden-sm"
           >
-            <!---->
-             
-            <!---->
-             
-            <span
-              class="sys-nav__label sys-nav__label--hidden-sm"
-            >
-              Buying options
-            </span>
-          </a>
-        </li>
-         
-        <li
-          class="sys-nav__item"
+            Buying options
+          </span>
+        </a>
+      </li>
+       
+      <li
+        class="sys-nav__item"
+      >
+        <a
+          class="sys-nav__link"
+          role="button"
+          tabindex="0"
         >
-          <a
-            class="sys-nav__link"
-            role="button"
-            tabindex="0"
+          <!---->
+           
+          <span
+            class="sys-nav__label sys-nav__label--hidden-sm"
           >
-            <!---->
-             
-            <span
-              class="sys-nav__label sys-nav__label--hidden-sm"
-            >
-              Search
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </section>
+            Search
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

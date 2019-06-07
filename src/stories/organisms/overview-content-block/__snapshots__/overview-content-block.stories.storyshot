@@ -5,690 +5,690 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__organism"
   >
-    <section
-      class="story__organism"
+    <article
+      class="organism overview"
+      overview="[object Object]"
     >
-      <article
-        class="organism overview"
-        overview="[object Object]"
+      <section
+        class="container"
       >
+        <header
+          class="header-block"
+        >
+          <h2
+            class="header-block__title"
+          >
+            Find your reseller in the Netherlands
+          </h2>
+           
+          <p
+            class="header-block__subtitle"
+          >
+            Or just get a subtitle
+          </p>
+        </header>
+         
         <section
-          class="container"
+          class="list-section list-section--blocks"
+          type="ListSection"
         >
           <header
-            class="header-block"
+            class="list-section__header"
           >
-            <h2
-              class="header-block__title"
+            <h3
+              class="list-section__title"
             >
-              Find your reseller in the Netherlands
-            </h2>
-             
-            <p
-              class="header-block__subtitle"
-            >
-              Or just get a subtitle
-            </p>
-          </header>
-           
-          <section
-            class="list-section list-section--blocks"
-            type="ListSection"
-          >
-            <header
-              class="list-section__header"
-            >
-              <h3
-                class="list-section__title"
-              >
-                Title
+              Title
                 
-                <span
-                  class="list-section__count"
-                >
-                  (3)
-                </span>
-                 
-                <div
-                  class="tooltip section-tooltip list-section__tooltip"
-                  description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
-                  icon="info"
-                  id="tooltip_static_id"
-                  label="More info"
-                  style="display: none;"
-                  type="Tooltip"
-                >
-                  
+              <span
+                class="list-section__count"
+              >
+                (3)
+              </span>
+               
+              <div
+                class="tooltip section-tooltip list-section__tooltip"
+                description="Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed."
+                icon="info"
+                id="tooltip_static_id"
+                label="More info"
+                style="display: none;"
+                type="Tooltip"
+              >
+                
                             Preferred resellers stock the complete range of Ultimaker products, offer hardware and software expertise, all with excellent customer service – so you can be sure they are the right partner to help your business succeed.
                         
-                </div>
-              </h3>
+              </div>
+            </h3>
+             
+            <a
+              aria-describedby="tooltip_static_id"
+              class="link list-section__info-link link--reversed link--icon"
+              href="#"
+              role="button"
+            >
+              <!---->
                
-              <a
-                aria-describedby="tooltip_static_id"
-                class="link list-section__info-link link--reversed link--icon"
-                href="#"
-                role="button"
-              >
-                <!---->
-                 
                     More info
                 
-              </a>
-            </header>
-             
-            <ul
-              aria-label="Title"
-              class="list-section-list"
-            >
-              <div
-                class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
-              >
-                <div
-                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                >
-                  <li
-                    class="list-section-list__item"
-                  >
-                    <article
-                      class="content-block disable-focus"
-                      tabindex="-1"
-                      type="ContentBlock"
-                    >
-                      <div
-                        class="content-block-container__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain content-block__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                      </div>
-                       
-                      <div
-                        class="content-block__content"
-                      >
-                        <h3
-                          class="content-block__headline"
-                        >
-                          Ultimaker
-                        </h3>
-                         
-                        <p
-                          class="content-block__description"
-                        >
-                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
-                        </p>
-                         
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Visit website
-    
-                          </span>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </div>
-                <div
-                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                >
-                  <li
-                    class="list-section-list__item"
-                  >
-                    <article
-                      class="content-block disable-focus"
-                      tabindex="-1"
-                      type="ContentBlock"
-                    >
-                      <div
-                        class="content-block-container__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain content-block__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                      </div>
-                       
-                      <div
-                        class="content-block__content"
-                      >
-                        <h3
-                          class="content-block__headline"
-                        >
-                          Ultimaker
-                        </h3>
-                         
-                        <p
-                          class="content-block__description"
-                        >
-                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
-                        </p>
-                         
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Visit website
-    
-                          </span>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </div>
-                <div
-                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                >
-                  <li
-                    class="list-section-list__item"
-                  >
-                    <article
-                      class="content-block disable-focus"
-                      tabindex="-1"
-                      type="ContentBlock"
-                    >
-                      <div
-                        class="content-block-container__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain content-block__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                      </div>
-                       
-                      <div
-                        class="content-block__content"
-                      >
-                        <h3
-                          class="content-block__headline"
-                        >
-                          Ultimaker
-                        </h3>
-                         
-                        <p
-                          class="content-block__description"
-                        >
-                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
-                        </p>
-                         
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Visit website
-    
-                          </span>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </div>
-              </div>
-               
-              <!---->
-            </ul>
-             
-            <!---->
-          </section>
-          <section
-            class="list-section list-section--blocks"
-            type="ListSection"
-          >
-            <header
-              class="list-section__header"
-            >
-              <h3
-                class="list-section__title"
-              >
-                Title
-                
-                <span
-                  class="list-section__count"
-                >
-                  (6)
-                </span>
-                 
-                <!---->
-              </h3>
-               
-              <!---->
-            </header>
-             
-            <ul
-              aria-label="Title"
-              class="list-section-list"
-            >
-              <div
-                class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
-              >
-                <div
-                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                >
-                  <li
-                    class="list-section-list__item"
-                  >
-                    <article
-                      class="content-block disable-focus"
-                      tabindex="-1"
-                      type="ContentBlock"
-                    >
-                      <div
-                        class="content-block-container__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain content-block__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                      </div>
-                       
-                      <div
-                        class="content-block__content"
-                      >
-                        <h3
-                          class="content-block__headline"
-                        >
-                          Ultimaker
-                        </h3>
-                         
-                        <p
-                          class="content-block__description"
-                        >
-                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
-                        </p>
-                         
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Visit website
-    
-                          </span>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </div>
-                <div
-                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                >
-                  <li
-                    class="list-section-list__item"
-                  >
-                    <article
-                      class="content-block disable-focus"
-                      tabindex="-1"
-                      type="ContentBlock"
-                    >
-                      <div
-                        class="content-block-container__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain content-block__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                      </div>
-                       
-                      <div
-                        class="content-block__content"
-                      >
-                        <h3
-                          class="content-block__headline"
-                        >
-                          Ultimaker
-                        </h3>
-                         
-                        <p
-                          class="content-block__description"
-                        >
-                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
-                        </p>
-                         
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Visit website
-    
-                          </span>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </div>
-                <div
-                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                >
-                  <li
-                    class="list-section-list__item"
-                  >
-                    <article
-                      class="content-block disable-focus"
-                      tabindex="-1"
-                      type="ContentBlock"
-                    >
-                      <div
-                        class="content-block-container__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain content-block__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                      </div>
-                       
-                      <div
-                        class="content-block__content"
-                      >
-                        <h3
-                          class="content-block__headline"
-                        >
-                          Ultimaker
-                        </h3>
-                         
-                        <p
-                          class="content-block__description"
-                        >
-                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
-                        </p>
-                         
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Visit website
-    
-                          </span>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </div>
-                <div
-                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                >
-                  <li
-                    class="list-section-list__item"
-                  >
-                    <article
-                      class="content-block disable-focus"
-                      tabindex="-1"
-                      type="ContentBlock"
-                    >
-                      <div
-                        class="content-block-container__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain content-block__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                      </div>
-                       
-                      <div
-                        class="content-block__content"
-                      >
-                        <h3
-                          class="content-block__headline"
-                        >
-                          Ultimaker
-                        </h3>
-                         
-                        <p
-                          class="content-block__description"
-                        >
-                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
-                        </p>
-                         
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Visit website
-    
-                          </span>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </div>
-                <div
-                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                >
-                  <li
-                    class="list-section-list__item"
-                  >
-                    <article
-                      class="content-block disable-focus"
-                      tabindex="-1"
-                      type="ContentBlock"
-                    >
-                      <div
-                        class="content-block-container__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain content-block__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                      </div>
-                       
-                      <div
-                        class="content-block__content"
-                      >
-                        <h3
-                          class="content-block__headline"
-                        >
-                          Ultimaker
-                        </h3>
-                         
-                        <p
-                          class="content-block__description"
-                        >
-                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
-                        </p>
-                         
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Visit website
-    
-                          </span>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </div>
-                <div
-                  class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                >
-                  <li
-                    class="list-section-list__item"
-                  >
-                    <article
-                      class="content-block disable-focus"
-                      tabindex="-1"
-                      type="ContentBlock"
-                    >
-                      <div
-                        class="content-block-container__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain content-block__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                      </div>
-                       
-                      <div
-                        class="content-block__content"
-                      >
-                        <h3
-                          class="content-block__headline"
-                        >
-                          Ultimaker
-                        </h3>
-                         
-                        <p
-                          class="content-block__description"
-                        >
-                          Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
-                        </p>
-                         
-                        <a
-                          class="button"
-                          href="https://ultimaker.com"
-                          rel="noopener"
-                          target="_self"
-                        >
-                          <!---->
-                           
-                          <span
-                            class="link__underline"
-                          >
-                            
-        Visit website
-    
-                          </span>
-                        </a>
-                      </div>
-                    </article>
-                  </li>
-                </div>
-              </div>
-               
-              <!---->
-            </ul>
-             
-            <!---->
-          </section>
+            </a>
+          </header>
            
-          <footer
-            class="footer-block"
+          <ul
+            aria-label="Title"
+            class="list-section-list"
           >
             <div
-              block="overview"
-              class="cta-block cta-block--footer"
+              class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
             >
-              <a
-                class="link--primary button cta-link"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
               >
-                <!---->
-                 
-                <span
-                  class="link__underline"
+                <li
+                  class="list-section-list__item"
                 >
-                  
-        Call me back
+                  <article
+                    class="content-block disable-focus"
+                    tabindex="-1"
+                    type="ContentBlock"
+                  >
+                    <div
+                      class="content-block-container__image"
+                    >
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
+                    </div>
+                     
+                    <div
+                      class="content-block__content"
+                    >
+                      <h3
+                        class="content-block__headline"
+                      >
+                        Ultimaker
+                      </h3>
+                       
+                      <p
+                        class="content-block__description"
+                      >
+                        Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                      </p>
+                       
+                      <a
+                        class="button"
+                        href="https://ultimaker.com"
+                        rel="noopener"
+                        target="_self"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Visit website
     
-                </span>
-              </a>
-              <a
-                class="link--large link cta-link"
-                href="https://ultimaker.com"
-                rel="noopener"
-                target="_self"
+                        </span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
               >
-                <!---->
-                 
-                <span
-                  class="link__underline"
+                <li
+                  class="list-section-list__item"
                 >
-                  
-        Call me back
+                  <article
+                    class="content-block disable-focus"
+                    tabindex="-1"
+                    type="ContentBlock"
+                  >
+                    <div
+                      class="content-block-container__image"
+                    >
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
+                    </div>
+                     
+                    <div
+                      class="content-block__content"
+                    >
+                      <h3
+                        class="content-block__headline"
+                      >
+                        Ultimaker
+                      </h3>
+                       
+                      <p
+                        class="content-block__description"
+                      >
+                        Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                      </p>
+                       
+                      <a
+                        class="button"
+                        href="https://ultimaker.com"
+                        rel="noopener"
+                        target="_self"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Visit website
     
-                </span>
-              </a>
+                        </span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="content-block disable-focus"
+                    tabindex="-1"
+                    type="ContentBlock"
+                  >
+                    <div
+                      class="content-block-container__image"
+                    >
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
+                    </div>
+                     
+                    <div
+                      class="content-block__content"
+                    >
+                      <h3
+                        class="content-block__headline"
+                      >
+                        Ultimaker
+                      </h3>
+                       
+                      <p
+                        class="content-block__description"
+                      >
+                        Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                      </p>
+                       
+                      <a
+                        class="button"
+                        href="https://ultimaker.com"
+                        rel="noopener"
+                        target="_self"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Visit website
+    
+                        </span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </div>
             </div>
-          </footer>
+             
+            <!---->
+          </ul>
+           
+          <!---->
         </section>
-      </article>
-    </section>
+        <section
+          class="list-section list-section--blocks"
+          type="ListSection"
+        >
+          <header
+            class="list-section__header"
+          >
+            <h3
+              class="list-section__title"
+            >
+              Title
+                
+              <span
+                class="list-section__count"
+              >
+                (6)
+              </span>
+               
+              <!---->
+            </h3>
+             
+            <!---->
+          </header>
+           
+          <ul
+            aria-label="Title"
+            class="list-section-list"
+          >
+            <div
+              class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+            >
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="content-block disable-focus"
+                    tabindex="-1"
+                    type="ContentBlock"
+                  >
+                    <div
+                      class="content-block-container__image"
+                    >
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
+                    </div>
+                     
+                    <div
+                      class="content-block__content"
+                    >
+                      <h3
+                        class="content-block__headline"
+                      >
+                        Ultimaker
+                      </h3>
+                       
+                      <p
+                        class="content-block__description"
+                      >
+                        Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                      </p>
+                       
+                      <a
+                        class="button"
+                        href="https://ultimaker.com"
+                        rel="noopener"
+                        target="_self"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Visit website
+    
+                        </span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="content-block disable-focus"
+                    tabindex="-1"
+                    type="ContentBlock"
+                  >
+                    <div
+                      class="content-block-container__image"
+                    >
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
+                    </div>
+                     
+                    <div
+                      class="content-block__content"
+                    >
+                      <h3
+                        class="content-block__headline"
+                      >
+                        Ultimaker
+                      </h3>
+                       
+                      <p
+                        class="content-block__description"
+                      >
+                        Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                      </p>
+                       
+                      <a
+                        class="button"
+                        href="https://ultimaker.com"
+                        rel="noopener"
+                        target="_self"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Visit website
+    
+                        </span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="content-block disable-focus"
+                    tabindex="-1"
+                    type="ContentBlock"
+                  >
+                    <div
+                      class="content-block-container__image"
+                    >
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
+                    </div>
+                     
+                    <div
+                      class="content-block__content"
+                    >
+                      <h3
+                        class="content-block__headline"
+                      >
+                        Ultimaker
+                      </h3>
+                       
+                      <p
+                        class="content-block__description"
+                      >
+                        Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                      </p>
+                       
+                      <a
+                        class="button"
+                        href="https://ultimaker.com"
+                        rel="noopener"
+                        target="_self"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Visit website
+    
+                        </span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="content-block disable-focus"
+                    tabindex="-1"
+                    type="ContentBlock"
+                  >
+                    <div
+                      class="content-block-container__image"
+                    >
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
+                    </div>
+                     
+                    <div
+                      class="content-block__content"
+                    >
+                      <h3
+                        class="content-block__headline"
+                      >
+                        Ultimaker
+                      </h3>
+                       
+                      <p
+                        class="content-block__description"
+                      >
+                        Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                      </p>
+                       
+                      <a
+                        class="button"
+                        href="https://ultimaker.com"
+                        rel="noopener"
+                        target="_self"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Visit website
+    
+                        </span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="content-block disable-focus"
+                    tabindex="-1"
+                    type="ContentBlock"
+                  >
+                    <div
+                      class="content-block-container__image"
+                    >
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
+                    </div>
+                     
+                    <div
+                      class="content-block__content"
+                    >
+                      <h3
+                        class="content-block__headline"
+                      >
+                        Ultimaker
+                      </h3>
+                       
+                      <p
+                        class="content-block__description"
+                      >
+                        Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                      </p>
+                       
+                      <a
+                        class="button"
+                        href="https://ultimaker.com"
+                        rel="noopener"
+                        target="_self"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Visit website
+    
+                        </span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </div>
+              <div
+                class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+              >
+                <li
+                  class="list-section-list__item"
+                >
+                  <article
+                    class="content-block disable-focus"
+                    tabindex="-1"
+                    type="ContentBlock"
+                  >
+                    <div
+                      class="content-block-container__image"
+                    >
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
+                    </div>
+                     
+                    <div
+                      class="content-block__content"
+                    >
+                      <h3
+                        class="content-block__headline"
+                      >
+                        Ultimaker
+                      </h3>
+                       
+                      <p
+                        class="content-block__description"
+                      >
+                        Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.
+                      </p>
+                       
+                      <a
+                        class="button"
+                        href="https://ultimaker.com"
+                        rel="noopener"
+                        target="_self"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Visit website
+    
+                        </span>
+                      </a>
+                    </div>
+                  </article>
+                </li>
+              </div>
+            </div>
+             
+            <!---->
+          </ul>
+           
+          <!---->
+        </section>
+         
+        <footer
+          class="footer-block"
+        >
+          <div
+            block="overview"
+            class="cta-block cta-block--footer"
+          >
+            <a
+              class="link--primary button cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+            <a
+              class="link--large link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+          </div>
+        </footer>
+      </section>
+    </article>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

@@ -5,125 +5,125 @@ exports[`Storyshots Atoms|lists Tabbable Definition list 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
     <section
       class="story__atom"
     >
-      <section
-        class="story__atom"
+      <dl
+        class="tabbable-dl"
+        style="height: 6px;"
       >
-        <dl
-          class="tabbable-dl"
-          style="height: 6px;"
+        <dt
+          class="tabbable-dl__term tabbable-dl__term--vue"
+          style="height: auto; opacity: 1; visibility: visible;"
         >
-          <dt
-            class="tabbable-dl__term tabbable-dl__term--vue"
-            style="height: auto; opacity: 1; visibility: visible;"
+          <a
+            class="tabbable-dl__link"
+            role="button"
+            tabindex="0"
           >
-            <a
-              class="tabbable-dl__link"
-              role="button"
-              tabindex="0"
+            <h3
+              class="tabbable-dl__title"
             >
-              <h3
-                class="tabbable-dl__title"
-              >
-                <!---->
-                
+              <!---->
+              
                     Term Consectetur Mollis
                 
-              </h3>
-            </a>
-          </dt>
-           
-          <dd
-            class="tabbable-dl__desc tabbable-dl__desc--vue"
-            style="margin-bottom: 0px; height: 30px; top: 0px;"
+            </h3>
+          </a>
+        </dt>
+         
+        <dd
+          class="tabbable-dl__desc tabbable-dl__desc--vue"
+          style="margin-bottom: 0px; height: 30px; top: 0px;"
+        >
+          Description sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+        </dd>
+        <dt
+          class="tabbable-dl__term tabbable-dl__term--vue"
+          style="height: auto; opacity: 1; visibility: visible;"
+        >
+          <a
+            class="tabbable-dl__link"
+            role="button"
+            tabindex="0"
           >
-            Description sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-          </dd>
-          <dt
-            class="tabbable-dl__term tabbable-dl__term--vue"
-            style="height: auto; opacity: 1; visibility: visible;"
-          >
-            <a
-              class="tabbable-dl__link"
-              role="button"
-              tabindex="0"
+            <h3
+              class="tabbable-dl__title"
             >
-              <h3
-                class="tabbable-dl__title"
-              >
-                <!---->
-                
+              <!---->
+              
                     Another Term Fringilla
                 
-              </h3>
-            </a>
-          </dt>
-           
-          <dd
-            class="tabbable-dl__desc tabbable-dl__desc--vue"
-            style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
+            </h3>
+          </a>
+        </dt>
+         
+        <dd
+          class="tabbable-dl__desc tabbable-dl__desc--vue"
+          style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
+        >
+          And descriprion commodo cursus magna, vel scelerisque nisl consectetur et.
+        </dd>
+        <dt
+          class="tabbable-dl__term tabbable-dl__term--vue"
+          style="height: auto; opacity: 1; visibility: visible;"
+        >
+          <a
+            class="tabbable-dl__link"
+            role="button"
+            tabindex="0"
           >
-            And descriprion commodo cursus magna, vel scelerisque nisl consectetur et.
-          </dd>
-          <dt
-            class="tabbable-dl__term tabbable-dl__term--vue"
-            style="height: auto; opacity: 1; visibility: visible;"
-          >
-            <a
-              class="tabbable-dl__link"
-              role="button"
-              tabindex="0"
+            <h3
+              class="tabbable-dl__title"
             >
-              <h3
-                class="tabbable-dl__title"
-              >
-                <!---->
-                
+              <!---->
+              
                     Term Inceptos Etiam
                 
-              </h3>
-            </a>
-          </dt>
-           
-          <dd
-            class="tabbable-dl__desc tabbable-dl__desc--vue"
-            style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
+            </h3>
+          </a>
+        </dt>
+         
+        <dd
+          class="tabbable-dl__desc tabbable-dl__desc--vue"
+          style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
+        >
+          Description mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </dd>
+        <dt
+          class="tabbable-dl__term tabbable-dl__term--vue"
+          style="height: auto; opacity: 1; visibility: visible;"
+        >
+          <a
+            class="tabbable-dl__link"
+            role="button"
+            tabindex="0"
           >
-            Description mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-          </dd>
-          <dt
-            class="tabbable-dl__term tabbable-dl__term--vue"
-            style="height: auto; opacity: 1; visibility: visible;"
-          >
-            <a
-              class="tabbable-dl__link"
-              role="button"
-              tabindex="0"
+            <h3
+              class="tabbable-dl__title"
             >
-              <h3
-                class="tabbable-dl__title"
-              >
-                <!---->
-                
+              <!---->
+              
                     And Another Term Etiam Fermentum
                 
-              </h3>
-            </a>
-          </dt>
-           
-          <dd
-            class="tabbable-dl__desc tabbable-dl__desc--vue"
-            style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
-          >
-            And description mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-          </dd>
-        </dl>
-      </section>
+            </h3>
+          </a>
+        </dt>
+         
+        <dd
+          class="tabbable-dl__desc tabbable-dl__desc--vue"
+          style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
+        >
+          And description mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+        </dd>
+      </dl>
     </section>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

@@ -5,17 +5,17 @@ exports[`Storyshots Molecules|tags/tag tag 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="stories__molecules"
   >
-    <section
-      class="stories__molecules"
+    <label
+      class="tag"
     >
-      <label
-        class="tag"
-      >
-        Tag one
-      </label>
-    </section>
+      Tag one
+    </label>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

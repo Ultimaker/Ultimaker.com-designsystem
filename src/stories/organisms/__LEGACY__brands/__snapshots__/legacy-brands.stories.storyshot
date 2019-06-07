@@ -5,161 +5,161 @@ exports[`Storyshots organisms|legacy-brands default 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__organism"
   >
-    <section
-      class="story__organism"
+    <article
+      class="brands"
     >
-      <article
-        class="brands"
+      <section
+        class="container brands__container"
       >
-        <section
-          class="container brands__container"
+        <h2
+          class="brands__title"
         >
-          <h2
-            class="brands__title"
-          >
-             Lorem ipsum dolor sit amet
-          </h2>
-           
+           Lorem ipsum dolor sit amet
+        </h2>
+         
+        <div
+          class="flexgrid flexgrid--gutter brands__grid"
+        >
           <div
-            class="flexgrid flexgrid--gutter brands__grid"
+            class="flexgrid__cell--sm-4 brands__grid-cell"
           >
             <div
-              class="flexgrid__cell--sm-4 brands__grid-cell"
+              class="brand-card"
             >
               <div
-                class="brand-card"
+                class="brand-card__image-wrapper"
               >
-                <div
-                  class="brand-card__image-wrapper"
+                <picture
+                  alt="Lorem Ipsum"
+                  stylemodifier="brand-card__image"
                 >
-                  <picture
-                    alt="Lorem Ipsum"
-                    stylemodifier="brand-card__image"
-                  >
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/240/240"
-                    />
-                     
-                    <img
-                      alt=""
-                      class="img--responsive img--lazy"
-                      src=""
-                    />
-                  </picture>
-                </div>
-                 
-                <q
-                  class="brand-card__quote"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quis vitae, esse sunt libero inventore.
-                </q>
+                  <!---->
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <source
+                    media="(max-width: 480px)"
+                    srcset="/generator/svg/240/240"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="img--responsive img--lazy"
+                    src=""
+                  />
+                </picture>
               </div>
-            </div>
-            <div
-              class="flexgrid__cell--sm-4 brands__grid-cell"
-            >
-              <div
-                class="brand-card"
+               
+              <q
+                class="brand-card__quote"
               >
-                <div
-                  class="brand-card__image-wrapper"
-                >
-                  <picture
-                    alt="Lorem Ipsum"
-                    stylemodifier="brand-card__image"
-                  >
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/240/240"
-                    />
-                     
-                    <img
-                      alt=""
-                      class="img--responsive img--lazy"
-                      src=""
-                    />
-                  </picture>
-                </div>
-                 
-                <q
-                  class="brand-card__quote"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ullam eligendi voluptatum iste ducimus illum.
-                </q>
-              </div>
-            </div>
-            <div
-              class="flexgrid__cell--sm-4 brands__grid-cell"
-            >
-              <div
-                class="brand-card"
-              >
-                <div
-                  class="brand-card__image-wrapper"
-                >
-                  <picture
-                    alt="Lorem Ipsum"
-                    stylemodifier="brand-card__image"
-                  >
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/240/240"
-                    />
-                     
-                    <img
-                      alt=""
-                      class="img--responsive img--lazy"
-                      src=""
-                    />
-                  </picture>
-                </div>
-                 
-                <q
-                  class="brand-card__quote"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis, in illum aut atque unde.
-                </q>
-              </div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quis vitae, esse sunt libero inventore.
+              </q>
             </div>
           </div>
-           
-          <!---->
-        </section>
-      </article>
-    </section>
+          <div
+            class="flexgrid__cell--sm-4 brands__grid-cell"
+          >
+            <div
+              class="brand-card"
+            >
+              <div
+                class="brand-card__image-wrapper"
+              >
+                <picture
+                  alt="Lorem Ipsum"
+                  stylemodifier="brand-card__image"
+                >
+                  <!---->
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <source
+                    media="(max-width: 480px)"
+                    srcset="/generator/svg/240/240"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="img--responsive img--lazy"
+                    src=""
+                  />
+                </picture>
+              </div>
+               
+              <q
+                class="brand-card__quote"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ullam eligendi voluptatum iste ducimus illum.
+              </q>
+            </div>
+          </div>
+          <div
+            class="flexgrid__cell--sm-4 brands__grid-cell"
+          >
+            <div
+              class="brand-card"
+            >
+              <div
+                class="brand-card__image-wrapper"
+              >
+                <picture
+                  alt="Lorem Ipsum"
+                  stylemodifier="brand-card__image"
+                >
+                  <!---->
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <!---->
+                   
+                  <source
+                    media="(max-width: 480px)"
+                    srcset="/generator/svg/240/240"
+                  />
+                   
+                  <img
+                    alt=""
+                    class="img--responsive img--lazy"
+                    src=""
+                  />
+                </picture>
+              </div>
+               
+              <q
+                class="brand-card__quote"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis, in illum aut atque unde.
+              </q>
+            </div>
+          </div>
+        </div>
+         
+        <!---->
+      </section>
+    </article>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

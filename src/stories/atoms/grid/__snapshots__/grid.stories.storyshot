@@ -5,201 +5,201 @@ exports[`Storyshots Atoms|grid Breakpoints 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <h3>
+      mobile grid
+    </h3>
+     
+    <div
+      class="flexgrid flexgrid--demo"
     >
-      <h3>
-        mobile grid
-      </h3>
-       
       <div
-        class="flexgrid flexgrid--demo"
+        class="flexgrid__cell--xxs-1"
       >
         <div
-          class="flexgrid__cell--xxs-1"
+          class="demo-panel--grid"
         >
-          <div
-            class="demo-panel--grid"
+          <span
+            class="demo-panel__label"
           >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--1
-            </span>
-          </div>
-        </div>
-         
-        <div
-          class="flexgrid__cell--xxs-11"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--11
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xxs-2"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--2
-            </span>
-          </div>
-        </div>
-         
-        <div
-          class="flexgrid__cell--xxs-10"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--10
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xxs-3"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--3
-            </span>
-          </div>
-        </div>
-         
-        <div
-          class="flexgrid__cell--xxs-9"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--9
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xxs-4"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--4
-            </span>
-          </div>
-        </div>
-         
-        <div
-          class="flexgrid__cell--xxs-8"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--8
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xxs-5"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--5
-            </span>
-          </div>
-        </div>
-         
-        <div
-          class="flexgrid__cell--xxs-7"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--7
-            </span>
-          </div>
-        </div>
-        <div
-          class="flexgrid__cell--xxs-6"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--6
-            </span>
-          </div>
-        </div>
-         
-        <div
-          class="flexgrid__cell--xxs-6"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--6
-            </span>
-          </div>
-        </div>
-         
-        <div
-          class="flexgrid__cell--xxs-12"
-        >
-          <div
-            class="demo-panel--grid"
-          >
-            <span
-              class="demo-panel__label"
-            >
-              xxs--12
-            </span>
-          </div>
+            xxs--1
+          </span>
         </div>
       </div>
-      <!---->
-      <!---->
-      <!---->
-      <!---->
-    </section>
+       
+      <div
+        class="flexgrid__cell--xxs-11"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--11
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xxs-2"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--2
+          </span>
+        </div>
+      </div>
+       
+      <div
+        class="flexgrid__cell--xxs-10"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--10
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xxs-3"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--3
+          </span>
+        </div>
+      </div>
+       
+      <div
+        class="flexgrid__cell--xxs-9"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--9
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xxs-4"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--4
+          </span>
+        </div>
+      </div>
+       
+      <div
+        class="flexgrid__cell--xxs-8"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--8
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xxs-5"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--5
+          </span>
+        </div>
+      </div>
+       
+      <div
+        class="flexgrid__cell--xxs-7"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--7
+          </span>
+        </div>
+      </div>
+      <div
+        class="flexgrid__cell--xxs-6"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--6
+          </span>
+        </div>
+      </div>
+       
+      <div
+        class="flexgrid__cell--xxs-6"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--6
+          </span>
+        </div>
+      </div>
+       
+      <div
+        class="flexgrid__cell--xxs-12"
+      >
+        <div
+          class="demo-panel--grid"
+        >
+          <span
+            class="demo-panel__label"
+          >
+            xxs--12
+          </span>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 
@@ -208,388 +208,388 @@ exports[`Storyshots Atoms|grid Justification 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="story__atom"
   >
-    <section
-      class="story__atom"
+    <div
+      class="demo-panel"
     >
-      <div
-        class="demo-panel"
+      <span
+        class="demo-justify__label"
       >
-        <span
-          class="demo-justify__label"
+        Space around
+      </span>
+       
+      <div
+        class="flexgrid flexgrid--gutter flexgrid--demo flexgrid--justify-space-around"
+      >
+        <div
+          class="flexgrid__cell--xs"
         >
-          Space around
-        </span>
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
+        </div>
          
         <div
-          class="flexgrid flexgrid--gutter flexgrid--demo flexgrid--justify-space-around"
+          class="flexgrid__cell--xs"
         >
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
         </div>
-      </div>
-      <div
-        class="demo-panel"
-      >
-        <span
-          class="demo-justify__label"
-        >
-          Space between
-        </span>
          
         <div
-          class="flexgrid flexgrid--gutter flexgrid--demo flexgrid--justify-space-between"
+          class="flexgrid__cell--xs"
         >
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
         </div>
       </div>
-      <div
-        class="demo-panel"
+    </div>
+    <div
+      class="demo-panel"
+    >
+      <span
+        class="demo-justify__label"
       >
-        <span
-          class="demo-justify__label"
+        Space between
+      </span>
+       
+      <div
+        class="flexgrid flexgrid--gutter flexgrid--demo flexgrid--justify-space-between"
+      >
+        <div
+          class="flexgrid__cell--xs"
         >
-          Space evenly
-        </span>
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
+        </div>
          
         <div
-          class="flexgrid flexgrid--gutter flexgrid--demo flexgrid--justify-space-evenly"
+          class="flexgrid__cell--xs"
         >
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
         </div>
-      </div>
-      <div
-        class="demo-panel"
-      >
-        <span
-          class="demo-justify__label"
-        >
-          Justify right
-        </span>
          
         <div
-          class="flexgrid flexgrid--gutter flexgrid--demo flexgrid--justify-right"
+          class="flexgrid__cell--xs"
         >
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
-           
-          <div
-            class="flexgrid__cell--xs"
-          >
-            <picture>
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <!---->
-               
-              <source
-                media="(max-width: 480px)"
-                srcset="/generator/svg/100/100"
-              />
-               
-              <img
-                alt=""
-                class="img--responsive img--lazy"
-                src=""
-              />
-            </picture>
-          </div>
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
         </div>
       </div>
-    </section>
+    </div>
+    <div
+      class="demo-panel"
+    >
+      <span
+        class="demo-justify__label"
+      >
+        Space evenly
+      </span>
+       
+      <div
+        class="flexgrid flexgrid--gutter flexgrid--demo flexgrid--justify-space-evenly"
+      >
+        <div
+          class="flexgrid__cell--xs"
+        >
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
+        </div>
+         
+        <div
+          class="flexgrid__cell--xs"
+        >
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
+        </div>
+         
+        <div
+          class="flexgrid__cell--xs"
+        >
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div
+      class="demo-panel"
+    >
+      <span
+        class="demo-justify__label"
+      >
+        Justify right
+      </span>
+       
+      <div
+        class="flexgrid flexgrid--gutter flexgrid--demo flexgrid--justify-right"
+      >
+        <div
+          class="flexgrid__cell--xs"
+        >
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
+        </div>
+         
+        <div
+          class="flexgrid__cell--xs"
+        >
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
+        </div>
+         
+        <div
+          class="flexgrid__cell--xs"
+        >
+          <picture>
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <!---->
+             
+            <source
+              media="(max-width: 480px)"
+              srcset="/generator/svg/100/100"
+            />
+             
+            <img
+              alt=""
+              class="img--responsive img--lazy"
+              src=""
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;

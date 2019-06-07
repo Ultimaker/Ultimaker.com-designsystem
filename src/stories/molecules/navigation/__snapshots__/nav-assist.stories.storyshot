@@ -5,65 +5,65 @@ exports[`Storyshots Molecules|navigation Nav assist 1`] = `
   class="story"
 >
   <section
-    class="story"
+    class="stories__molecule"
   >
-    <section
-      class="stories__molecule"
+    <button
+      aria-expanded="false"
+      aria-label="menu"
+      class="nav-assist nav-assist--initial-state"
+      type="button"
     >
-      <button
-        aria-expanded="false"
-        aria-label="menu"
-        class="nav-assist nav-assist--initial-state"
-        type="button"
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            class="nav-assist__line nav-assist__line-2"
-            height="2"
-            width="20"
-            x="2"
-            y="11"
-          />
-           
-          <rect
-            class="nav-assist__line nav-assist__line-1"
-            height="2"
-            width="20"
-            x="2"
-            y="4.5"
-          />
-           
-          <rect
-            class="nav-assist__line nav-assist__line-3"
-            height="2"
-            width="20"
-            x="2"
-            y="17.5"
-          />
-           
-          <rect
-            class="nav-assist__line nav-assist__line-4"
-            height="2"
-            transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)"
-            width="26.6"
-            x="-1.3"
-            y="11"
-          />
-           
-          <rect
-            class="nav-assist__line nav-assist__line-5"
-            height="26.6"
-            transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)"
-            width="2"
-            x="11"
-            y="-1.3"
-          />
-        </svg>
-      </button>
-    </section>
+        <rect
+          class="nav-assist__line nav-assist__line-2"
+          height="2"
+          width="20"
+          x="2"
+          y="11"
+        />
+         
+        <rect
+          class="nav-assist__line nav-assist__line-1"
+          height="2"
+          width="20"
+          x="2"
+          y="4.5"
+        />
+         
+        <rect
+          class="nav-assist__line nav-assist__line-3"
+          height="2"
+          width="20"
+          x="2"
+          y="17.5"
+        />
+         
+        <rect
+          class="nav-assist__line nav-assist__line-4"
+          height="2"
+          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)"
+          width="26.6"
+          x="-1.3"
+          y="11"
+        />
+         
+        <rect
+          class="nav-assist__line nav-assist__line-5"
+          height="26.6"
+          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)"
+          width="2"
+          x="11"
+          y="-1.3"
+        />
+      </svg>
+    </button>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
