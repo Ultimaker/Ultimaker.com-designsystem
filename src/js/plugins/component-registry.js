@@ -1,4 +1,5 @@
 import { UniqId } from './uniq-id';
+import PortalVue from 'portal-vue';
 
 class ComponentRegistry {
     constructor() {
@@ -16,6 +17,7 @@ class ComponentRegistry {
 
     install(vue) {
         vue.use(UniqId);
+        vue.use(PortalVue);
 
         this.directives
             .filter(d => typeof d.name === 'string')

@@ -2,7 +2,9 @@
     <button class="button" @click.prevent="triggerClick">
         {{label}}
     </button>
-    <modal class="modal--wizard" v-if="modalVisible" @close="toggleModalVisible">
-        <component :is="modal.type" v-bind="modal" />
-    </modal>
+    <portal to="modals">
+        <modal class="modal--wizard" v-if="modalVisible" @close="toggleModalVisible">
+            <component :is="modal.type" v-bind="modal" />
+        </modal>
+    </portal>
 </div>
