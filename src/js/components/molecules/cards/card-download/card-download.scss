@@ -3,7 +3,7 @@
     padding: $buildingUnit * 1.5;
     border: 2px solid $colorGrayLight;
     width: 100%;
-    
+
     &:hover {
         cursor: pointer;
     }
@@ -25,14 +25,15 @@
             width: 60px;
             height: 60px;
         }
-    }   
+    }
 
-    &__title{
+    &__title {
         @include font-line-ratio(prim-m);
     }
 
-    &__description{
+    &__description {
         @include font-line-ratio(prim-s);
+        color: #7F7F7F;
         margin-bottom: 0;
     }
 }
