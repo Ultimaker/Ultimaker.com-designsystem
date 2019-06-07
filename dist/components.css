@@ -4311,6 +4311,7 @@ table tfoot {
   .card-download__description {
     font-size: 14px;
     line-height: 21px;
+    color: #7F7F7F;
     margin-bottom: 0; }
 
 .wizard-step-download-list {

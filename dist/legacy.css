@@ -3797,6 +3797,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .card-download__description {
     font-size: 14px;
     line-height: 21px;
+    color: #7F7F7F;
     margin-bottom: 0; }
 
 .um-components .wizard-step-download-list {
