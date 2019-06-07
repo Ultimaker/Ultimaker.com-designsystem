@@ -6,10 +6,15 @@
     &__description {
         margin-left: $buildingUnit;
         margin-right: $buildingUnit;
+        margin-bottom: $buildingUnit * 2;
+        flex-basis: 50%;
+        max-width: 50%;
+        text-align: center;
 
         @include min-tablet() {
             margin-left: 0;
             margin-right: 0;
+            margin-bottom: $buildingUnit * 3;
         }
     }
 
@@ -18,7 +23,6 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
         width: 100%;
 
         @include min-tablet() {
@@ -47,10 +51,11 @@
                 margin-right: 0;
                 margin-bottom: 0;
             }
-        }  
+        }
     }
 
-    &__button{
+    &__button {
         margin-top: $buildingUnit * 5;
+        margin-bottom: 0;
     }
 }

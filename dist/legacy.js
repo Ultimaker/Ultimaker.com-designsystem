@@ -4246,6 +4246,10 @@ var _iconVue = __webpack_require__(144);
 
 var _iconVue2 = _interopRequireDefault(_iconVue);
 
+var _browserCapabilities = __webpack_require__(2);
+
+var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -4275,7 +4279,7 @@ var Icon = function (_Vue) {
 
         var _this = _possibleConstructorReturn(this, (Icon.__proto__ || Object.getPrototypeOf(Icon)).apply(this, arguments));
 
-        _this.iconUrl = window['svgIconMap'] || defaultIconUrl;
+        _this.iconUrl = _browserCapabilities2.default.isBrowser && window['svgIconMap'] ? window['svgIconMap'] : defaultIconUrl;
         _this.ready = false;
         _this.symbolData = null;
         _this.viewBox = null;
@@ -12897,7 +12901,7 @@ exports.CardDownload = CardDownload;
 /* 309 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('label',{staticClass:"card-download",class:_vm.selectedClass,on:{"click":_vm.handleSelect}},[_c('input',{staticClass:"card-download__radio-element",attrs:{"type":"radio","name":_vm.name},domProps:{"checked":_vm.selected,"value":_vm.file}}),_vm._v(" "),_c('div',{staticClass:"card-download__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"card-download__content"},[_c('h4',{staticClass:"card-download__title"},[_vm._v("\n            "+_vm._s(_vm.title)+"\n        ")]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"card-download__description"},[_vm._v("\n            "+_vm._s(_vm.description)+"\n        ")]):_vm._e()])])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('label',{staticClass:"card-download",class:_vm.selectedClass,attrs:{"tabindex":"0"},on:{"click":_vm.handleSelect,"keyup":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"space",32,$event.key,[" ","Spacebar"])){ return null; }return _vm.handleSelect($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.handleSelect($event)}]}},[_c('input',{staticClass:"card-download__radio-element",attrs:{"type":"radio","name":_vm.name},domProps:{"checked":_vm.selected,"value":_vm.file}}),_vm._v(" "),_c('div',{staticClass:"card-download__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"card-download__content"},[_c('h4',{staticClass:"card-download__title"},[_vm._v("\n            "+_vm._s(_vm.title)+"\n        ")]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"card-download__description"},[_vm._v("\n            "+_vm._s(_vm.description)+"\n        ")]):_vm._e()])])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -12993,8 +12997,8 @@ var WizardStepDownloadList = function (_Vue) {
     }, {
         key: "handleSubmit",
         value: function handleSubmit() {
-            if (window.$u && window.$u.store && window.$u.store.setSetting) {
-                window.$u.store.setSetting('robot', true);
+            if (window.$u && window.$u.store && window.$u.store.pushSetting) {
+                window.$u.store.pushSetting('robot', true);
             }
         }
     }, {
@@ -13025,7 +13029,7 @@ exports.WizardStepDownloadList = WizardStepDownloadList;
 /* 312 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"wizard-step-download-list",attrs:{"target":"_blank","method":"get","action":_vm.file},on:{"submit":_vm.handleSubmit}},[_c('header-block',{staticClass:"wizard-step-download-list__header",attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"wizard-step-download-list__description flexgrid__cell--sm-3"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"wizard-step-download-list__items flexgrid flexgrid--mobile-xl-row"},_vm._l((_vm.items),function(item,index){return (_vm.items)?_c('li',{staticClass:"wizard-step-download-list__item flexgrid__cell--sm-3"},[_c('card-download',_vm._b({key:"index",attrs:{"index":index,"selected":_vm.selectedItem === index,"name":_vm.name,"setSelectedItem":_vm.setSelectedItem}},'card-download',item,false))],1):_vm._e()}),0),_vm._v(" "),(_vm.submitButton)?_c('button',{staticClass:"wizard-step-download-list__button button"},[_vm._v("\n        "+_vm._s(_vm.submitButton.label)+"\n    ")]):_vm._e()],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"wizard-step-download-list",attrs:{"target":"_blank","method":"get","action":_vm.file},on:{"submit":_vm.handleSubmit}},[_c('header-block',{staticClass:"header-block--wizard",attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"wizard-step-download-list__description"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"wizard-step-download-list__items flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"},_vm._l((_vm.items),function(item,index){return (_vm.items)?_c('li',{staticClass:"wizard-step-download-list__item flexgrid__cell--sm-4"},[_c('card-download',_vm._b({key:"index",attrs:{"index":index,"selected":_vm.selectedItem === index,"name":_vm.name,"setSelectedItem":_vm.setSelectedItem}},'card-download',item,false))],1):_vm._e()}),0),_vm._v(" "),(_vm.submitButton)?_c('button',{staticClass:"wizard-step-download-list__button button"},[_vm._v("\n        "+_vm._s(_vm.submitButton.label)+"\n    ")]):_vm._e()],1)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {

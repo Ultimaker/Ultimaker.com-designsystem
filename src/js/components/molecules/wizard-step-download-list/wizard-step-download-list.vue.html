@@ -1,8 +1,8 @@
 <form class="wizard-step-download-list" target="_blank" method="get" :action="file" @submit="handleSubmit">
-    <header-block class="wizard-step-download-list__header" :title="title" :subtitle="subtitle" />
-    <p class="wizard-step-download-list__description flexgrid__cell--sm-3" v-if="description">{{ description }}</p>
-    <ul class="wizard-step-download-list__items flexgrid flexgrid--mobile-xl-row">
-        <li class="wizard-step-download-list__item flexgrid__cell--sm-3" v-if="items" v-for="(item, index) in items">
+    <header-block class="header-block--wizard" :title="title" :subtitle="subtitle" />
+    <p class="wizard-step-download-list__description" v-if="description">{{ description }}</p>
+    <ul class="wizard-step-download-list__items flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
+        <li class="wizard-step-download-list__item flexgrid__cell--sm-4" v-if="items" v-for="(item, index) in items">
             <card-download key="index"
                           v-bind="item"
                           :index="index"
