@@ -46,11 +46,10 @@ addDecorator((story) => ({
         storyRoot: storyRoot
     },
     template: `
-        <section class="story">
-            <story-root>
-                <wrapped-story />
-            </story-root>
-        </section>
+        <story-root>
+            <wrapped-story />
+            <portal-target name="modals"></portal-target>
+        </story-root>
     `,
     data: () => ({
         viewPort: new viewPort()
