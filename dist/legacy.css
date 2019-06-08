@@ -3844,9 +3844,8 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-top: 60px;
     margin-bottom: 0; }
 
-@media (min-width: 569px) {
-  .um-components .wizard-step-confirmation__container {
-    padding-bottom: 60px; } }
+.um-components .wizard-step-confirmation__container {
+  padding-bottom: 60px; }
 
 .um-components .wizard-step-confirmation__image-wrapper {
   display: flex;
@@ -3865,7 +3864,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   flex-direction: column; }
   @media (min-width: 569px) {
     .um-components .wizard-step-confirmation__content {
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
       padding-left: 24px; }
       .um-components .flexgrid--row-reversed .wizard-step-confirmation__content {
@@ -3884,8 +3883,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   padding-bottom: 0; }
 
 .um-components .wizard-step-confirmation__body {
-  margin-bottom: 60px;
-  text-align: center; }
+  margin-bottom: 24px; }
   .um-components .wizard-step-confirmation__body > * {
     margin: 0; }
   @media (min-width: 569px) {

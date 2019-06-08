@@ -1095,7 +1095,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
       class="modal-wizard__step"
     >
       <form
-        action="http://file.exe"
+        action="http://speed.transip.nl/1gb.bin?win"
         class="wizard-step-download-list"
         method="get"
         target="_blank"
@@ -1117,7 +1117,11 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
           </p>
         </header>
          
-        <!---->
+        <p
+          class="wizard-step-download-list__description"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan ut orci ac commodo. Sed rhoncus, urna ut venenatis cursus, nunc turpis suscipit enim, in congue dui dui quis sem.
+        </p>
          
         <ul
           class="wizard-step-download-list__items flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
@@ -1133,7 +1137,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
                 class="card-download__radio-element"
                 name="download"
                 type="radio"
-                value="http://file.exe"
+                value="http://speed.transip.nl/1gb.bin?win"
               />
                
               <div
@@ -1180,7 +1184,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
                 class="card-download__radio-element"
                 name="download"
                 type="radio"
-                value="http://file.dmg"
+                value="http://speed.transip.nl/1gb.bin?mac"
               />
                
               <div
@@ -1227,7 +1231,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
                 class="card-download__radio-element"
                 name="download"
                 type="radio"
-                value="http://file.zip"
+                value="http://speed.transip.nl/1gb.bin?linux"
               />
                
               <div
@@ -1273,6 +1277,11 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
     
         </button>
       </form>
+    </div>
+    <div
+      class="modal-wizard__step"
+    >
+      <!---->
     </div>
   </section>
    

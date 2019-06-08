@@ -1,5 +1,6 @@
 export const data = {
     default: {
+        type: 'WizardStepConfirmation',
         title: 'Lorum ipsum dolor sit amet consectetuer apendiscing',
         subtitle: 'Donec id elit non mi porta gravida at eget metus aenean lacinia',
         contentTitle: 'Come Fly with Me',

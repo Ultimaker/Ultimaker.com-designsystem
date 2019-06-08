@@ -35,5 +35,14 @@ export class WizardStepDownloadList extends Vue implements WizardStepDownloadLis
             // @ts-ignore
             window.$u.store.pushSetting('robot', true);
         }
+
+        // REMARK: prevents form submission canceled because the form is not connected
+        setTimeout(() => {
+            this.afterSubmit();
+        });
+    }
+
+    afterSubmit() {
+        this.$emit('step-complete');
     }
 }

@@ -2,6 +2,7 @@ import image from 'components/atoms/c-image/data/examples/c-image-nylon';
 
 export const data = {
     default: {
+        type: 'WizardStepDownloadList',
         title: 'Download Cura 4.0 now!',
         subtitle: 'Subtle subtitle',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan ut orci ac commodo. Sed rhoncus, urna ut venenatis cursus, nunc turpis suscipit enim, in congue dui dui quis sem.',

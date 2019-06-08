@@ -1,38 +1,13 @@
-import image from 'components/atoms/c-image/data/examples/c-image-nylon';
+import { data as wizardStepDownloadList } from 'components/molecules/wizard-step-download-list/data/wizard-step-download-list.data';
+import { data as wizardStepConfirmation } from 'components/molecules/wizard-step-confirmation/data/wizard-step-confirmation.data';
 
 export const data = {
     default: {
         type: 'ModalWizard',
         title: 'This is the wizard title',
-        steps: [{
-            type: 'WizardStepDownloadList',
-            title: 'Download Cura 4.0 now!',
-            subtitle: 'Subtle subtitle',
-            items: [{
-                image,
-                description: 'Windows, 64 bit',
-                file: 'http://file.exe',
-                title: 'Ultimaker Cura 4.0',
-                name: 'download',
-                selected: true,
-            }, {
-                image,
-                description: 'Mac, 64 bit',
-                file: 'http://file.dmg',
-                title: 'Ultimaker Cura 4.0',
-                name: 'download',
-                selected: false,
-            }, {
-                image,
-                description: 'Linux, 64 bit',
-                file: 'http://file.zip',
-                title: 'Ultimaker Cura 4.0',
-                name: 'download',
-                selected: false,
-            }],
-            submitButton: {
-                label: 'Download now',
-            },
-        }],
+        steps: [
+            wizardStepDownloadList.default,
+            wizardStepConfirmation.default,
+        ],
     },
 };
