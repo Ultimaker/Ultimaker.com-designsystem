@@ -1,10 +1,8 @@
 .wizard-step-confirmation {
-    &__container{
-        @include min-mobile-xl {
-            padding-bottom: $buildingUnit * 5;
-        }
+    &__container {
+        padding-bottom: $buildingUnit * 5;
     }
-    
+
     &__image-wrapper {
         display: flex;
         width: 75%;
@@ -26,7 +24,7 @@
         flex-direction: column;
 
         @include min-mobile-xl {
-            justify-content: center;
+            justify-content: flex-start;
             align-items: flex-start;
             padding-left: $buildingUnit * 2;
 
@@ -53,8 +51,8 @@
     }
 
     &__body{
-        margin-bottom: $buildingUnit * 5;
-        text-align: center;
+        margin-bottom: $buildingUnit * 2;
+
         > * {
             margin: 0;
         }
@@ -62,5 +60,5 @@
         @include min-mobile-xl {
             text-align: left;
         }
-    } 
+    }
 }
