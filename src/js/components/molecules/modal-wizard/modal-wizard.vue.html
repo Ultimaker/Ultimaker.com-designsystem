@@ -1,5 +1,7 @@
 <section class="modal-wizard">
-    <div class="modal-wizard__step" v-for="(step, index) in steps">
-        <component :is="step.type" v-bind="step" />
-    </div>
+    <template v-if="steps">
+        <div class="modal-wizard__step" v-for="(step, index) in steps">
+            <component :is="step.type" v-bind="step" v-if="index === activeStep" @step-complete="showNextStep" />
+        </div>
+    </template>
 </section>

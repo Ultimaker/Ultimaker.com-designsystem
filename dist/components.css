@@ -4358,9 +4358,8 @@ table tfoot {
     margin-top: 60px;
     margin-bottom: 0; }
 
-@media (min-width: 569px) {
-  .wizard-step-confirmation__container {
-    padding-bottom: 60px; } }
+.wizard-step-confirmation__container {
+  padding-bottom: 60px; }
 
 .wizard-step-confirmation__image-wrapper {
   display: flex;
@@ -4379,7 +4378,7 @@ table tfoot {
   flex-direction: column; }
   @media (min-width: 569px) {
     .wizard-step-confirmation__content {
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
       padding-left: 24px; }
       .flexgrid--row-reversed .wizard-step-confirmation__content {
@@ -4398,8 +4397,7 @@ table tfoot {
   padding-bottom: 0; }
 
 .wizard-step-confirmation__body {
-  margin-bottom: 60px;
-  text-align: center; }
+  margin-bottom: 24px; }
   .wizard-step-confirmation__body > * {
     margin: 0; }
   @media (min-width: 569px) {
