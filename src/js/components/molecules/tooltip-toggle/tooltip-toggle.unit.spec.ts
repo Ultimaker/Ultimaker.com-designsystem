@@ -14,6 +14,16 @@ describe('components', () => {
                 expect(vm.$el).toBeDefined();
                 vm.$destroy();
             });
+
+            it('should be able to hide and show the tooltip', () => {
+                const vm = mount();
+                expect(vm.visible).toBeFalsy();
+                vm.toggleTooltip();
+                expect(vm.visible).toBeTruthy();
+                vm.toggleTooltip();
+                expect(vm.visible).toBeFalsy();
+                vm.$destroy();
+            });
         });
 
         Object.keys(data).forEach((key) => {

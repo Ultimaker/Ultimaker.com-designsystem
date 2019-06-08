@@ -1484,7 +1484,7 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
           class="icon-button__label"
         >
           
-        Cras eu tincidunt
+        Crag eu tincidunt
     
         </span>
       </a>
@@ -1520,7 +1520,7 @@ exports[`Storyshots Molecules/tooltip-toggle default 1`] = `
             class="icon-button__label"
           >
             
-        Cras eu tincidunt
+        Crag eu tincidunt
     
           </span>
         </a>

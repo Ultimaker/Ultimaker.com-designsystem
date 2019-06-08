@@ -22,7 +22,7 @@
         "storybook": "start-storybook -p 9090 -s public",
         "test": "npm run unit",
         "unit": "cross-env BABEL_ENV=test karma start test/karma.conf.js --single-run",
-        "unit:chrome": "cross-env BABEL_ENV=test karma start test/karma.conf.js --single-run --chrome",
+        "unit:chrome": "cross-env BABEL_ENV=test karma start test/karma.conf.js --chrome",
         "unit:debug": "cross-env BABEL_ENV=test karma start test/karma.conf.js --debug",
         "snapshots": "cross-env BABEL_ENV=jest jest --silent --no-cache --config=jest.config.js",
         "snapshots:update": "cross-env BABEL_ENV=jest jest --silent -u --config=jest.config.js",

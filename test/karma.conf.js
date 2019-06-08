@@ -1,7 +1,7 @@
 const webpackConfig = require('../webpack.test.config');
 
-const enableDebug = process.argv.indexOf('--debug') > 0,
-    localChrome = process.argv.indexOf('--chrome') > 0;
+const enableDebug = process.argv.indexOf('--debug') > 0;
+const localChrome = process.argv.indexOf('--chrome') > 0;
 
 const getBrowsers = () => {
     if (enableDebug) {
@@ -19,61 +19,61 @@ const getBrowsers = () => {
     return ['ChromiumHeadlessNoSandbox'];
 };
 
-module.exports = function(config) {
+module.exports = function (config) {
     config.set({
         browsers: getBrowsers(),
         logLevel: config.LOG_INFO,
-        browserConsoleLogOptions: {level: 'error', format: '%b %T: %m', terminal: true},
+        browserConsoleLogOptions: { level: 'error', format: '%b %T: %m', terminal: true },
         customLaunchers: {
             ChromiumHeadlessNoSandbox: {
                 base: 'ChromiumHeadless',
-                flags: ['--no-sandbox']
-            }
+                flags: ['--no-sandbox'],
+            },
         },
         browserNoActivityTimeout: 30000,
         frameworks: ['jasmine-ajax', 'jasmine'],
         reporters: ['spec', 'coverage'],
         specReporter: {
-            suppressSkipped: true
+            suppressSkipped: true,
         },
         files: [
-            {pattern: '../src/js/**/*.spec.+(js|ts)'}
+            { pattern: '../src/js/**/*.spec.+(js|ts)' },
         ],
         preprocessors: {
-            '../src/js/**/*.+(js|ts)': ['webpack', 'sourcemap']
+            '../src/js/**/*.+(js|ts)': ['webpack', 'sourcemap'],
         },
         mime: {
-            'text/x-typescript': ['ts', 'tsx']
+            'text/x-typescript': ['ts', 'tsx'],
         },
         webpack: webpackConfig,
         webpackMiddleware: {
-            noInfo: true
+            noInfo: true,
         },
         coverageReporter: {
             dir: './coverage',
             reporters: [
                 {
                     type: 'lcov',
-                    subdir: '.'
+                    subdir: '.',
                 },
                 {
-                    type: 'text-summary'
-                }
+                    type: 'text-summary',
+                },
             ],
             check: {
                 global: {
                     statements: 65,
                     branches: 50,
                     functions: 65,
-                    lines: 65
-                }
+                    lines: 65,
+                },
             },
             watermarks: {
                 statements: [65, 80],
                 functions: [65, 80],
                 branches: [50, 75],
-                lines: [65, 80]
-            }
-        }
+                lines: [65, 80],
+            },
+        },
     });
 };
