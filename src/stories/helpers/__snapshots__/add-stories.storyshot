@@ -1523,92 +1523,87 @@ exports[`Storyshots Molecules/wizard-step-confirmation default 1`] = `
 <section
   class="story"
 >
-  <section
-    class="story"
+  <article
+    class="organism wizard-step-confirmation"
   >
-    <article
-      class="organism wizard-step-confirmation"
+    <section
+      class="container wizard-step-confirmation__container"
     >
-      <section
-        class="container wizard-step-confirmation__container"
+      <header
+        class="header-block"
       >
-        <header
-          class="header-block"
+        <h2
+          class="header-block__title"
         >
-          <h2
-            class="header-block__title"
-          >
-            Title
-          </h2>
-           
-          <p
-            class="header-block__subtitle"
-          >
-            Subtitle
-          </p>
-        </header>
+          Lorum ipsum dolor sit amet consectetuer apendiscing
+        </h2>
          
+        <p
+          class="header-block__subtitle"
+        >
+          Donec id elit non mi porta gravida at eget metus aenean lacinia
+        </p>
+      </header>
+       
+      <div
+        class="flexgrid"
+      >
         <div
-          class="flexgrid"
+          class="flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__image"
         >
           <div
-            class="flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__image"
+            class="wizard-step-confirmation__image-wrapper"
           >
-            <div
-              class="wizard-step-confirmation__image-wrapper"
-            >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-              />
-            </div>
-          </div>
-           
-          <div
-            class="flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__content"
-          >
-            <h2>
-              Content title
-            </h2>
-             
-            <div
-              class="content-manageble wizard-step-confirmation__body"
-            >
-              Content string
-            </div>
-             
-            <footer
-              class="footer-block wizard-step-confirmation-footer"
-            >
-              <div
-                block="overview"
-                class="cta-block cta-block--footer"
-              >
-                <a
-                  class="link--primary button cta-link"
-                  href="https://ultimaker.com"
-                  rel="noopener"
-                  target="_self"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Call me back
-    
-                  </span>
-                </a>
-              </div>
-            </footer>
+            <img
+              alt="An example image"
+              class="img--contain img--loading"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+            />
           </div>
         </div>
-      </section>
-    </article>
-  </section>
+         
+        <div
+          class="flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__content"
+        >
+          <h3>
+            Come Fly with Me
+          </h3>
+           
+          <div
+            class="content-manageble wizard-step-confirmation__body"
+          >
+            Come fly with me, let's fly, let's fly away. If you can use some exotic booze. There's a bar in far Bombay. Come fly with me, let's fly, let's fly away. Come fly with me, let's float down to Peru. In llama-land there's a one-man band. And he'll toot his flute for you. Come fly with me, let's take off in the blue
+          </div>
+           
+          <div
+            class="cta-block"
+          >
+            <a
+              class="link--default link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Pack up lets fly away
+    
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
 </section>
 `;
 

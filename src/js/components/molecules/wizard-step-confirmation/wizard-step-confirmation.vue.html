@@ -8,9 +8,9 @@
                 </div>
             </div>
             <div class="flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__content">
-                <h2>{{ contentTitle}}</h2>
+                <h3>{{ contentTitle }}</h3>
                 <div class="content-manageble wizard-step-confirmation__body" v-html="content" />
-                <FooterBlock class="wizard-step-confirmation-footer" :ctas="ctas" />
+                <cta-block mod-content-link="default" :ctas="ctas.ctas" v-if="ctas" />
             </div>
         </div>
     </section>

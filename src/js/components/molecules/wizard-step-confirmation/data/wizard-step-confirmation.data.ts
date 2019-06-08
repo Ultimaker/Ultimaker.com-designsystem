@@ -1,26 +1,20 @@
 export const data = {
     default: {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        contentTitle: 'Content title',
-        content: 'Content string',
+        title: 'Lorum ipsum dolor sit amet consectetuer apendiscing',
+        subtitle: 'Donec id elit non mi porta gravida at eget metus aenean lacinia',
+        contentTitle: 'Come Fly with Me',
+        content: 'Come fly with me, let\'s fly, let\'s fly away. If you can use some exotic booze. There\'s a bar in far Bombay. Come fly with me, let\'s fly, let\'s fly away. Come fly with me, let\'s float down to Peru. In llama-land there\'s a one-man band. And he\'ll toot his flute for you. Come fly with me, let\'s take off in the blue',
         image: {
-            url: 'https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg',
+            url: '/generator/svg/200/200',
             alt: 'An example image',
-            quality: 65,
-            radius: 0,
-            imageFormat: 'png',
-            resizeBehavior: 'fill',
-            focusArea: 'center',
-            backgroundColor: null,
-            mimeType: 'png',
+            mimeType: '',
         },
         ctas: {
             type: 'CtaBlock',
             ctas: [
                 {
-                    type: 'ContentButton',
-                    label: 'Call me back',
+                    type: 'ContentLink',
+                    label: 'Pack up lets fly away',
                     url: 'https://ultimaker.com',
                 },
             ],
