@@ -28,7 +28,7 @@ describe('components', () => {
                 });
 
                 it('should change the download url', () => {
-                    const vm = mount().$mount();
+                    const vm = mount();
 
                     expect(vm.selected).toBe(0);
                     vm.setSelectedItem(1);
