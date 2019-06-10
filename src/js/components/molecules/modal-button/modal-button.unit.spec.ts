@@ -14,6 +14,14 @@ describe('components', () => {
                 expect(vm.$el).toBeDefined();
                 vm.$destroy();
             });
+
+            it('should toggle the visible state', () => {
+                const vm = mount();
+                expect(vm.modalVisible).toBeFalsy();
+                vm.triggerClick();
+                expect(vm.modalVisible).toBeTruthy();
+                vm.$destroy();
+            });
         });
 
         Object.keys(data).forEach((key) => {
