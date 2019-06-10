@@ -2336,8 +2336,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   background-color: #000000;
   color: #ffffff;
   font-weight: 400;
-  min-width: 180px;
-  max-width: 75%;
+  min-width: 96px;
+  max-width: 150px;
   padding: 12px;
   position: absolute;
   white-space: normal;
@@ -2345,7 +2345,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .tooltip:after {
     border: 12px solid transparent;
     border-top-color: #000000;
-    bottom: -23px;
+    bottom: -24px;
     content: '';
     left: calc(50% - 12px);
     position: absolute;
@@ -2353,6 +2353,13 @@ because both families serve another purpose. Therefore the line-heights will be 
     width: 0; }
   .um-components .tooltip > :last-child {
     margin-bottom: 0; }
+
+.um-components .tooltip--arrow-left:after {
+  left: 12px; }
+
+.um-components .tooltip--arrow-right:after {
+  left: auto;
+  right: 12px; }
 
 .um-components .tooltip-enter, .um-components .tooltip-leave-to {
   opacity: 0;
@@ -3760,9 +3767,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-top: 21px;
     font-size: 14px;
     line-height: 21px; }
-    .um-components .tab-table-row__value.content-manageble p, .um-components .tab-table-row__value.content-manageble strong, .um-components .tab-table-row__value.content-manageble .tablist__section .tablist__item, .um-components .tablist__section .tab-table-row__value.content-manageble .tablist__item, .um-components .tab-table-row__value.content-manageble .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .tab-table-row__value.content-manageble .tablist__item, .um-components .tab-table-row__value.content-manageble ul, .um-components .tab-table-row__value.content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .tab-table-row__value.content-manageble ul {
-      font-size: 14px;
-      line-height: 21px; }
     @media (min-width: 768px) {
       .um-components .tab-table-row__value {
         margin-top: 0; } }

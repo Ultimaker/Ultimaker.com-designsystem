@@ -1,4 +1,6 @@
 .tooltip {
+    position: absolute;
+    z-index: 200;
     display: block;
     background-color: $colorBlack;
     color: $colorWhite;
@@ -6,19 +8,17 @@
     min-width: $buildingUnit * 8;
     max-width: $buildingUnit * 12.5;
     padding: $buildingUnit;
-    position: absolute;
     white-space: normal;
-    z-index: 200;
 
     &:after {
+        position: absolute;
+        left: calc(50% - #{ $buildingUnit });
+        height: 0;
+        width: 0;
         border: $buildingUnit solid transparent;
         border-top-color: $colorBlack;
         bottom: $buildingUnit * -2;
         content: '';
-        left: calc(50% - 12px);
-        position: absolute;
-        height: 0;
-        width: 0;
     }
     // make sure the last child in a tooltip doesn't have its own margin
     > :last-child {
@@ -42,7 +42,7 @@
 
 .tooltip-enter, .tooltip-leave-to {
     opacity: 0;
-    transform: translateY(calc(-100% - 42px));
+    transform: translateY(calc(-100% - #{ $buildingUnit * 3.5 }));
 }
 
 .tooltip-enter-active, .tooltip-leave-active {
