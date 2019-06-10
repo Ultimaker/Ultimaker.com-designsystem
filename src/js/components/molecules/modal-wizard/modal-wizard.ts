@@ -14,7 +14,7 @@ export class ModalWizard extends Vue implements ModalWizardProps {
     activeStep: number = 0;
 
     showNextStep() {
-        if (this.steps && this.steps.length + 1 > this.activeStep) {
+        if (this.steps && this.steps.length > this.activeStep + 1) {
             this.activeStep += 1;
         }
     }

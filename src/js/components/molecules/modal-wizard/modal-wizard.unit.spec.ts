@@ -14,6 +14,17 @@ describe('components', () => {
                 expect(vm.$el).toBeDefined();
                 vm.$destroy();
             });
+
+            it('should be able to navigate through the wizard', () => {
+                const vm = mount({ props: data.default });
+                expect(vm.activeStep).toEqual(0);
+                expect(vm.steps.length).toEqual(2);
+                vm.showNextStep();
+                expect(vm.activeStep).toEqual(1);
+                vm.showNextStep();
+                expect(vm.activeStep).toEqual(1);
+                vm.$destroy();
+            });
         });
 
         Object.keys(data).forEach((key) => {
