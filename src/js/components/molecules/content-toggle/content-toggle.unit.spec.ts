@@ -1,4 +1,3 @@
-/* eslint-disable max-nested-callbacks */
 import ContentToggle from './content-toggle';
 import { build } from 'vuenit';
 

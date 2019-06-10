@@ -133,7 +133,7 @@ describe('components', () => {
 
             it('should be able to skip to the next section and keep the index', () => {
                 const vm = mount({});
-                let index = null;
+                let index:number = 0;
 
                 spyOnProperty(vm, 'flyoutSections', 'get').and.returnValue(
                     [

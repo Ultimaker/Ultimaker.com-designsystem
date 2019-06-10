@@ -1,10 +1,11 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { NavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
 import ViewportUtility from 'utils/viewport';
+import WithRender from './flyout.vue.html';
 
+@WithRender
 @Component({
     name: 'flyout',
-    template: require('./flyout.html'),
 })
 
 export default class Flyout extends Vue {
