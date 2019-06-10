@@ -12667,8 +12667,6 @@ var _tooltipToggleVue2 = _interopRequireDefault(_tooltipToggleVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -12697,43 +12695,31 @@ var TooltipToggle = function (_Vue) {
 
         _this.buildingUnit = _defaults2.default.buildingUnit;
         _this.duration = _defaults2.default.defaultDuration;
+        _this.ease = _defaults2.default.defaultEase;
         _this.visible = false;
-        _this.tooltipLeft = false;
+        _this.tooltipLeft = true;
+        _this.yAxisCorrection = 0;
         return _this;
     }
 
     _createClass(TooltipToggle, [{
         key: "show",
-        value: function () {
-            var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
-                return regeneratorRuntime.wrap(function _callee$(_context) {
-                    while (1) {
-                        switch (_context.prev = _context.next) {
-                            case 0:
-                                this.visible = true;
-
-                            case 1:
-                            case "end":
-                                return _context.stop();
-                        }
-                    }
-                }, _callee, this);
-            }));
-
-            function show() {
-                return _ref.apply(this, arguments);
-            }
-
-            return show;
-        }()
+        value: function show() {
+            this.visible = true;
+        }
     }, {
-        key: "toggle",
-        value: function toggle() {
+        key: "toggleTooltip",
+        value: function toggleTooltip() {
             if (!this.visible) {
                 this.show();
             } else {
                 this.hide();
             }
+        }
+    }, {
+        key: "hideTooltip",
+        value: function hideTooltip() {
+            this.hide();
         }
     }, {
         key: "hide",
@@ -12744,33 +12730,12 @@ var TooltipToggle = function (_Vue) {
         key: "tooltipEnter",
         value: function tooltipEnter(el, done) {
             var tooltipElement = el;
-            var iconElement = this.$refs.button.$el;
-
-            var _tooltipElement$getBo = tooltipElement.getBoundingClientRect(),
-                tooltipHeight = _tooltipElement$getBo.height,
-                tooltipWidth = _tooltipElement$getBo.width;
-
-            var _iconElement$getBound = iconElement.getBoundingClientRect(),
-                iconX = _iconElement$getBound.x,
-                iconWidth = _iconElement$getBound.width;
-
-            var iconCenterOffset = iconWidth / 2;
-            var xAxisCorrection = tooltipWidth / -2 + iconCenterOffset;
-            if (iconX + xAxisCorrection < 0) {
-                xAxisCorrection = 0;
-                this.tooltipLeft = true;
-            } else {
-                this.tooltipLeft = false;
-            }
-            _gsap.TweenLite.fromTo(tooltipElement, this.duration, { autoAlpha: 0, x: xAxisCorrection, y: this.buildingUnit * -1 }, { autoAlpha: 1, x: xAxisCorrection, y: 0, ease: _gsap.Power2.easeOut }).eventCallback('onComplete', done);
+            _gsap.TweenLite.fromTo(tooltipElement, this.duration, { autoAlpha: 0, x: 0, y: this.buildingUnit * -1 }, { autoAlpha: 1, x: 0, y: 0, ease: this.ease }).eventCallback('onComplete', done);
         }
     }, {
         key: "tooltipLeave",
         value: function tooltipLeave(el, done) {
-            var _el$getBoundingClient = el.getBoundingClientRect(),
-                height = _el$getBoundingClient.height;
-
-            _gsap.TweenLite.to(el, this.duration, { autoAlpha: 0, y: this.buildingUnit * -1, ease: _gsap.Power2.easeIn }).eventCallback('onComplete', done);
+            _gsap.TweenLite.to(el, this.duration, { autoAlpha: 0, y: this.buildingUnit * -1, ease: this.ease }).eventCallback('onComplete', done);
         }
     }, {
         key: "tooltipClass",
@@ -12795,7 +12760,7 @@ exports.TooltipToggle = TooltipToggle;
 /* 301 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip-toggle"},[_c('transition',{on:{"enter":_vm.tooltipEnter,"leave":_vm.tooltipLeave}},[_c('tooltip',{directives:[{name:"show",rawName:"v-show",value:(_vm.visible),expression:"visible"}],ref:"tooltip",class:_vm.tooltipClass,attrs:{"block":"tooltip-toggle"}},[_vm._v("\n            "+_vm._s(_vm.description)+"\n        ")])],1),_vm._v(" "),_c('icon-button',{ref:"button",attrs:{"button-class":"icon-button--visually-hidden-label icon-button--transparent icon-button--small-icon","icon-name":_vm.icon},nativeOn:{"click":function($event){$event.preventDefault();return _vm.toggle($event)},"keyup":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.toggle($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"space",32,$event.key,[" ","Spacebar"])){ return null; }return _vm.toggle($event)}],"blur":function($event){$event.preventDefault();return _vm.hide($event)}}},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip-toggle"},[_c('transition',{on:{"enter":_vm.tooltipEnter,"leave":_vm.tooltipLeave}},[_c('tooltip',{directives:[{name:"show",rawName:"v-show",value:(_vm.visible),expression:"visible"}],ref:"tooltip",class:_vm.tooltipClass,attrs:{"block":"tooltip-toggle","id":_vm.uniqId + '_tooltip'}},[_vm._v("\n            "+_vm._s(_vm.description)+"\n        ")])],1),_vm._v(" "),_c('icon-button',{ref:"button",attrs:{"aria-expanded":_vm.visible.toString(),"aria-describedby":_vm.uniqId + '_tooltip',"icon-name":_vm.icon,"button-class":"icon-button--transparent icon-button--reversed icon-button--small-icon"},nativeOn:{"click":function($event){$event.preventDefault();return _vm.toggleTooltip($event)},"keyup":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.toggleTooltip($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"space",32,$event.key,[" ","Spacebar"])){ return null; }return _vm.toggleTooltip($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.hideTooltip($event)}],"blur":function($event){$event.preventDefault();return _vm.hideTooltip($event)}}},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])],1)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
