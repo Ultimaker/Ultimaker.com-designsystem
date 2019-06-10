@@ -26,6 +26,7 @@ describe('components', () => {
 
             beforeEach(() => {
                 viewportUtil = new ViewportUtil();
+                spyOnProperty(window, 'devicePixelRatio', 'get').and.returnValue(1);
             });
 
             it('should not have an element defined', () => {
