@@ -1,22 +1,12 @@
 .wizard-step-confirmation {
     &__container {
-        padding: 0 0 ($buildingUnit * 5) 0;
+        padding: 0;
     }
 
     &__image-wrapper {
         display: flex;
         width: 75%;
         margin: 0 auto ($buildingUnit * 2.5) auto;
-
-        @include min-mobile-xl {
-            padding-right: $buildingUnit * 2;
-            width: 100%;
-
-            .flexgrid--row-reversed &{
-                padding-left: $buildingUnit * 2;
-                padding-right: 0;
-            }
-        }
     }
 
     &__content {

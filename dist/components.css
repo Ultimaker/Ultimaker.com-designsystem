@@ -4900,19 +4900,12 @@ table tfoot {
     margin-bottom: 0; }
 
 .wizard-step-confirmation__container {
-  padding: 0 0 60px 0; }
+  padding: 0; }
 
 .wizard-step-confirmation__image-wrapper {
   display: flex;
   width: 75%;
   margin: 0 auto 30px auto; }
-  @media (min-width: 569px) {
-    .wizard-step-confirmation__image-wrapper {
-      padding-right: 24px;
-      width: 100%; }
-      .flexgrid--row-reversed .wizard-step-confirmation__image-wrapper {
-        padding-left: 24px;
-        padding-right: 0; } }
 
 .wizard-step-confirmation__content {
   display: flex;

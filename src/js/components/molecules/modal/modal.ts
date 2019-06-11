@@ -31,17 +31,17 @@ export default class Modal extends Vue {
     }
     showContent() {
         this.iframeLoaded = true;
-        TweenLite.to(this.$refs.modal, 0.1, { opacity: 1, ease: Power2.easeOut });
-        TweenLite.to(this.$refs.modal, 0.3, { scale: 1, ease: Power2.easeOut });
+        TweenLite.to(this.$refs.modal, 0.1, { css: { opacity: 1 }, ease: Power2.easeOut });
+        TweenLite.to(this.$refs.modal, 0.3, { css: { scale: 1 }, ease: Power2.easeOut });
     }
 
     enter(el, done) {
         const iframe = this.$refs.modal.querySelector('iframe');
         const timeLine = new TimelineLite();
 
-        TweenLite.set(this.$refs.modal, { opacity: 0, scale: 0.6 });
-        timeLine.fromTo(this.$refs.overlay, 0.2, { opacity: 0 }, { opacity: 0.8 });
-        timeLine.fromTo(this.$refs.close, 0.2, { opacity: 0 }, { opacity: 1 }, 0);
+        TweenLite.set(this.$refs.modal, { css: { opacity: 0, scale: 0.6 } });
+        timeLine.fromTo(this.$refs.overlay, 0.2, { css: { opacity: 0 } }, { css: { opacity: 0.8 } });
+        timeLine.fromTo(this.$refs.close, 0.2, { css: { opacity: 0 } }, { css: { opacity: 1 } }, 0);
 
         if (iframe) {
             const loadTimeout = setTimeout(
