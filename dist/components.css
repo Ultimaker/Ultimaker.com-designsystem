@@ -797,13 +797,13 @@ template {
 @font-face {
   font-family: "univers";
   src: url(/dist/static/fonts/univers/univers-bold.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-bold.woff) format("woff");
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: "univers";
   src: url(/dist/static/fonts/univers/univers-bold-italic.woff2) format("woff2"), url(/dist/static/fonts/univers/univers-bold-italic.woff) format("woff");
-  font-weight: 700;
+  font-weight: 600;
   font-style: italic; }
 
 @font-face {
@@ -1530,6 +1530,9 @@ dd {
 
 .link-list .list--icon, .flyout__list .list--icon, .footer-nav__list .list--icon {
   margin-bottom: 0; }
+
+.link--wizard-step-confirmation {
+  align-self: flex-start; }
 
 .tabbable-dl {
   overflow: hidden;
@@ -2776,10 +2779,6 @@ table tfoot {
 
 .flexgrid--justify-space-between {
   justify-content: space-between; }
-  @media (min-width: 1025px) {
-    .flexgrid--justify-space-between [class*="flexgrid__cell"]:nth-child(3n+1):nth-last-child(-n+2) ~ [class*="flexgrid__cell"] {
-      margin-right: auto;
-      margin-left: 24px; } }
 
 .flexgrid--justify-center {
   justify-content: center; }
@@ -2794,6 +2793,8 @@ table tfoot {
   justify-content: flex-end; }
 
 .tooltip {
+  position: absolute;
+  z-index: 200;
   display: block;
   background-color: #000000;
   color: #ffffff;
@@ -2801,18 +2802,16 @@ table tfoot {
   min-width: 96px;
   max-width: 150px;
   padding: 12px;
-  position: absolute;
-  white-space: normal;
-  z-index: 200; }
+  white-space: normal; }
   .tooltip:after {
+    position: absolute;
+    left: calc(50% - 12px);
+    height: 0;
+    width: 0;
     border: 12px solid transparent;
     border-top-color: #000000;
     bottom: -24px;
-    content: '';
-    left: calc(50% - 12px);
-    position: absolute;
-    height: 0;
-    width: 0; }
+    content: ''; }
   .tooltip > :last-child {
     margin-bottom: 0; }
 
@@ -4295,9 +4294,12 @@ table tfoot {
 
 .card-download {
   display: flex;
-  padding: 18px;
+  padding: 12px;
   border: 2px solid #eaeaea;
   width: 100%; }
+  @media (min-width: 768px) {
+    .card-download {
+      padding: 18px; } }
   .card-download:hover {
     cursor: pointer; }
   .card-download--selected {
@@ -4313,8 +4315,13 @@ table tfoot {
         width: 60px;
         height: 60px; } }
   .card-download__title {
-    font-size: 16px;
-    line-height: 24px; }
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400; }
+    @media (min-width: 768px) {
+      .card-download__title {
+        font-size: 16px;
+        line-height: 24px; } }
   .card-download__description {
     font-size: 14px;
     line-height: 21px;
@@ -4329,44 +4336,33 @@ table tfoot {
     margin-left: 12px;
     margin-right: 12px;
     margin-bottom: 24px;
-    flex-basis: 50%;
-    max-width: 50%;
+    flex-basis: 100%;
+    max-width: 100%;
     text-align: center; }
     @media (min-width: 768px) {
       .wizard-step-download-list__description {
+        flex-basis: 50%;
+        max-width: 50%;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 36px; } }
-  .wizard-step-download-list__items {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-    @media (min-width: 768px) {
-      .wizard-step-download-list__items {
-        flex-direction: row;
-        min-width: 27%; } }
   .wizard-step-download-list__item {
     display: flex;
-    margin-bottom: 12px;
-    margin-left: 12px;
-    margin-right: 12px; }
+    margin-bottom: 12px; }
     .wizard-step-download-list__item:last-of-type {
       margin-bottom: 0; }
     @media (min-width: 768px) {
       .wizard-step-download-list__item {
         flex-direction: row;
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 24px; }
+        margin-bottom: 0; }
         .wizard-step-download-list__item:last-of-type {
-          margin-right: 0;
           margin-bottom: 0; } }
   .wizard-step-download-list__button {
     margin-top: 60px;
     margin-bottom: 0; }
 
 .wizard-step-confirmation__container {
-  padding-bottom: 60px; }
+  padding: 0 0 60px 0; }
 
 .wizard-step-confirmation__image-wrapper {
   display: flex;

@@ -1,22 +1,26 @@
 .card-download {
     display: flex;
-    padding: $buildingUnit * 1.5;
+    padding: $buildingUnit;
     border: 2px solid $colorGrayLight;
     width: 100%;
+
+    @include min-tablet {
+        padding: $buildingUnit * 1.5;
+    }
 
     &:hover {
         cursor: pointer;
     }
 
-    &--selected{
+    &--selected {
         border: 2px solid $colorMain;
     }
 
-    &__radio-element{
+    &__radio-element {
         display: none;
     }
 
-    &__image-wrapper{
+    &__image-wrapper {
         width: 45px;
         height: 45px;
         margin-right: $buildingUnit * 1.5;
@@ -28,7 +32,12 @@
     }
 
     &__title {
-        @include font-line-ratio(prim-m);
+        @include font-line-ratio(prim-s);
+        font-weight: 400;
+
+        @include min-tablet {
+            @include font-line-ratio(prim-m);
+        }
     }
 
     &__description {

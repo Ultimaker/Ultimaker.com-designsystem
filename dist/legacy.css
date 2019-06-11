@@ -1042,6 +1042,9 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .link-list .list--icon, .um-components .flyout__list .list--icon, .um-components .footer-nav__list .list--icon {
   margin-bottom: 0; }
 
+.um-components .link--wizard-step-confirmation {
+  align-self: flex-start; }
+
 .um-components .tabbable-dl {
   overflow: hidden;
   position: relative; }
@@ -2314,10 +2317,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .flexgrid--justify-space-between {
   justify-content: space-between; }
-  @media (min-width: 1025px) {
-    .um-components .flexgrid--justify-space-between [class*="flexgrid__cell"]:nth-child(3n+1):nth-last-child(-n+2) ~ [class*="flexgrid__cell"] {
-      margin-right: auto;
-      margin-left: 24px; } }
 
 .um-components .flexgrid--justify-center {
   justify-content: center; }
@@ -2332,6 +2331,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   justify-content: flex-end; }
 
 .um-components .tooltip {
+  position: absolute;
+  z-index: 200;
   display: block;
   background-color: #000000;
   color: #ffffff;
@@ -2339,18 +2340,16 @@ because both families serve another purpose. Therefore the line-heights will be 
   min-width: 96px;
   max-width: 150px;
   padding: 12px;
-  position: absolute;
-  white-space: normal;
-  z-index: 200; }
+  white-space: normal; }
   .um-components .tooltip:after {
+    position: absolute;
+    left: calc(50% - 12px);
+    height: 0;
+    width: 0;
     border: 12px solid transparent;
     border-top-color: #000000;
     bottom: -24px;
-    content: '';
-    left: calc(50% - 12px);
-    position: absolute;
-    height: 0;
-    width: 0; }
+    content: ''; }
   .um-components .tooltip > :last-child {
     margin-bottom: 0; }
 
@@ -3781,9 +3780,12 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .card-download {
   display: flex;
-  padding: 18px;
+  padding: 12px;
   border: 2px solid #eaeaea;
   width: 100%; }
+  @media (min-width: 768px) {
+    .um-components .card-download {
+      padding: 18px; } }
   .um-components .card-download:hover {
     cursor: pointer; }
   .um-components .card-download--selected {
@@ -3799,8 +3801,13 @@ because both families serve another purpose. Therefore the line-heights will be 
         width: 60px;
         height: 60px; } }
   .um-components .card-download__title {
-    font-size: 16px;
-    line-height: 24px; }
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400; }
+    @media (min-width: 768px) {
+      .um-components .card-download__title {
+        font-size: 16px;
+        line-height: 24px; } }
   .um-components .card-download__description {
     font-size: 14px;
     line-height: 21px;
@@ -3815,44 +3822,33 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-left: 12px;
     margin-right: 12px;
     margin-bottom: 24px;
-    flex-basis: 50%;
-    max-width: 50%;
+    flex-basis: 100%;
+    max-width: 100%;
     text-align: center; }
     @media (min-width: 768px) {
       .um-components .wizard-step-download-list__description {
+        flex-basis: 50%;
+        max-width: 50%;
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 36px; } }
-  .um-components .wizard-step-download-list__items {
-    display: flex;
-    flex-direction: column;
-    width: 100%; }
-    @media (min-width: 768px) {
-      .um-components .wizard-step-download-list__items {
-        flex-direction: row;
-        min-width: 27%; } }
   .um-components .wizard-step-download-list__item {
     display: flex;
-    margin-bottom: 12px;
-    margin-left: 12px;
-    margin-right: 12px; }
+    margin-bottom: 12px; }
     .um-components .wizard-step-download-list__item:last-of-type {
       margin-bottom: 0; }
     @media (min-width: 768px) {
       .um-components .wizard-step-download-list__item {
         flex-direction: row;
-        margin-bottom: 0;
-        margin-left: 0;
-        margin-right: 24px; }
+        margin-bottom: 0; }
         .um-components .wizard-step-download-list__item:last-of-type {
-          margin-right: 0;
           margin-bottom: 0; } }
   .um-components .wizard-step-download-list__button {
     margin-top: 60px;
     margin-bottom: 0; }
 
 .um-components .wizard-step-confirmation__container {
-  padding-bottom: 60px; }
+  padding: 0 0 60px 0; }
 
 .um-components .wizard-step-confirmation__image-wrapper {
   display: flex;

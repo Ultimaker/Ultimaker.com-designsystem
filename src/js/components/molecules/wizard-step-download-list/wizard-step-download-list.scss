@@ -7,11 +7,13 @@
         margin-left: $buildingUnit;
         margin-right: $buildingUnit;
         margin-bottom: $buildingUnit * 2;
-        flex-basis: 50%;
-        max-width: 50%;
+        flex-basis: 100%;
+        max-width: 100%;
         text-align: center;
 
         @include min-tablet() {
+            flex-basis: 50%;
+            max-width: 50%;
             margin-left: 0;
             margin-right: 0;
             margin-bottom: $buildingUnit * 3;
@@ -20,22 +22,11 @@
 
     &__items {
         @extend %reset-list;
-
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-        @include min-tablet() {
-            flex-direction: row;
-            min-width: 27%;
-        }
     }
 
     &__item {
         display: flex;
         margin-bottom: $buildingUnit * 1;
-        margin-left: $buildingUnit;
-        margin-right: $buildingUnit;
 
         &:last-of-type {
             margin-bottom: 0;
@@ -44,11 +35,8 @@
         @include min-tablet() {
             flex-direction: row;
             margin-bottom: 0;
-            margin-left: 0;
-            margin-right: $buildingUnit * 2;
 
             &:last-of-type {
-                margin-right: 0;
                 margin-bottom: 0;
             }
         }
