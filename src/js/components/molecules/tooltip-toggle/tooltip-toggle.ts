@@ -24,8 +24,11 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
     };
     readonly buildingUnit:number = defaults.buildingUnit;
     readonly duration: number = defaults.defaultDuration;
+    readonly ease: string = defaults.defaultEase;
+
     visible:boolean = false;
-    tooltipLeft:boolean = false;
+    tooltipLeft:boolean = true;
+    yAxisCorrection:number = 0;
 
     get tooltipClass() {
         return {
@@ -33,11 +36,11 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
         };
     }
 
-    async show():Promise<void> {
+    show():void {
         this.visible = true;
     }
 
-    toggle(): void {
+    toggleTooltip():void {
         if (!this.visible) {
             this.show();
         } else {
@@ -45,37 +48,27 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
         }
     }
 
-    hide():void {
+    hideTooltip(): void {
+        this.hide();
+    }
+
+    hide() {
         this.visible = false;
     }
 
     tooltipEnter(el, done) {
         const tooltipElement = <HTMLElement> el;
-        const iconElement = <HTMLElement> this.$refs.button.$el;
-        const { height: tooltipHeight, width: tooltipWidth } = <DOMRect> tooltipElement.getBoundingClientRect();
-        const { x: iconX, width: iconWidth } = <DOMRect> iconElement.getBoundingClientRect();
-
-        const iconCenterOffset = iconWidth / 2;
-        let xAxisCorrection = tooltipWidth / -2 + iconCenterOffset;
-
-        if (iconX + xAxisCorrection < 0) {
-            xAxisCorrection = 0;
-            this.tooltipLeft = true;
-        } else {
-            this.tooltipLeft = false;
-        }
 
         TweenLite
             .fromTo(tooltipElement, this.duration,
-                { autoAlpha: 0, x: xAxisCorrection, y: this.buildingUnit * -1 },
-                { autoAlpha: 1, x: xAxisCorrection, y: 0, ease: Power2.easeOut })
+                { autoAlpha: 0, x: 0, y: this.buildingUnit * -1 },
+                { autoAlpha: 1, x: 0, y: 0, ease: this.ease })
             .eventCallback('onComplete', done);
     }
 
     tooltipLeave(el, done) {
-        const { height } = <DOMRect> el.getBoundingClientRect();
         TweenLite
-            .to(el, this.duration, { autoAlpha: 0, y: this.buildingUnit * -1, ease: Power2.easeIn })
+            .to(el, this.duration, { autoAlpha: 0, y: this.buildingUnit * -1, ease: this.ease })
             .eventCallback('onComplete', done);
     }
 }

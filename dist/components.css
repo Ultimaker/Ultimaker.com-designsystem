@@ -2798,8 +2798,8 @@ table tfoot {
   background-color: #000000;
   color: #ffffff;
   font-weight: 400;
-  min-width: 180px;
-  max-width: 75%;
+  min-width: 96px;
+  max-width: 150px;
   padding: 12px;
   position: absolute;
   white-space: normal;
@@ -2807,7 +2807,7 @@ table tfoot {
   .tooltip:after {
     border: 12px solid transparent;
     border-top-color: #000000;
-    bottom: -23px;
+    bottom: -24px;
     content: '';
     left: calc(50% - 12px);
     position: absolute;
@@ -2815,6 +2815,13 @@ table tfoot {
     width: 0; }
   .tooltip > :last-child {
     margin-bottom: 0; }
+
+.tooltip--arrow-left:after {
+  left: 12px; }
+
+.tooltip--arrow-right:after {
+  left: auto;
+  right: 12px; }
 
 .tooltip-enter, .tooltip-leave-to {
   opacity: 0;
