@@ -103,13 +103,6 @@
 .flexgrid--justify-space-between {
     @extend %disable-flex-grow;
     justify-content: space-between;
-
-    //@include min-desktop {
-    //    [class*="flexgrid__cell"]:nth-child(3n+1):nth-last-child(-n+2) ~ [class*="flexgrid__cell"] {
-    //        margin-right: auto;
-    //        margin-left: $gridGutterSize;
-    //    }
-    //}
 }
 
 .flexgrid--justify-center {
