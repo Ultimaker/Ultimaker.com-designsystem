@@ -4386,19 +4386,12 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-bottom: 0; }
 
 .um-components .wizard-step-confirmation__container {
-  padding: 0 0 60px 0; }
+  padding: 0; }
 
 .um-components .wizard-step-confirmation__image-wrapper {
   display: flex;
   width: 75%;
   margin: 0 auto 30px auto; }
-  @media (min-width: 569px) {
-    .um-components .wizard-step-confirmation__image-wrapper {
-      padding-right: 24px;
-      width: 100%; }
-      .um-components .flexgrid--row-reversed .wizard-step-confirmation__image-wrapper {
-        padding-left: 24px;
-        padding-right: 0; } }
 
 .um-components .wizard-step-confirmation__content {
   display: flex;

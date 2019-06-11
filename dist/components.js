@@ -11515,8 +11515,8 @@ var Modal = function (_Vue) {
         key: "showContent",
         value: function showContent() {
             this.iframeLoaded = true;
-            _gsap.TweenLite.to(this.$refs.modal, 0.1, { opacity: 1, ease: _gsap.Power2.easeOut });
-            _gsap.TweenLite.to(this.$refs.modal, 0.3, { scale: 1, ease: _gsap.Power2.easeOut });
+            _gsap.TweenLite.to(this.$refs.modal, 0.1, { css: { opacity: 1 }, ease: _gsap.Power2.easeOut });
+            _gsap.TweenLite.to(this.$refs.modal, 0.3, { css: { scale: 1 }, ease: _gsap.Power2.easeOut });
         }
     }, {
         key: "enter",
@@ -11525,9 +11525,9 @@ var Modal = function (_Vue) {
 
             var iframe = this.$refs.modal.querySelector('iframe');
             var timeLine = new _gsap.TimelineLite();
-            _gsap.TweenLite.set(this.$refs.modal, { opacity: 0, scale: 0.6 });
-            timeLine.fromTo(this.$refs.overlay, 0.2, { opacity: 0 }, { opacity: 0.8 });
-            timeLine.fromTo(this.$refs.close, 0.2, { opacity: 0 }, { opacity: 1 }, 0);
+            _gsap.TweenLite.set(this.$refs.modal, { css: { opacity: 0, scale: 0.6 } });
+            timeLine.fromTo(this.$refs.overlay, 0.2, { css: { opacity: 0 } }, { css: { opacity: 0.8 } });
+            timeLine.fromTo(this.$refs.close, 0.2, { css: { opacity: 0 } }, { css: { opacity: 1 } }, 0);
             if (iframe) {
                 var loadTimeout = setTimeout(function () {
                     _this2.showContent();
