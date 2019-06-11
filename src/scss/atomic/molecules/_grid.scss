@@ -16,6 +16,28 @@
     }
 }
 
+.flexgrid--gutter {
+    width: calc(100% + #{ $gridGutterSizeMobile });
+    margin: 0 ($gridGutterSizeMobile / -2);
+
+    [class*="flexgrid__cell"] {
+        margin: 0 ($gridGutterSizeMobile / 2);
+        flex-basis: calc(100% - #{$gridGutterSizeMobile});
+        max-width: calc(100% - #{$gridGutterSizeMobile});
+    }
+
+    @include min-tablet {
+        width: calc(100% + #{ $gridGutterSize });
+        margin: 0 ($gridGutterSize / -2);
+
+        [class*="flexgrid__cell"] {
+            margin: 0 ($gridGutterSize / 2);
+            flex-basis: calc(100% - #{$gridGutterSize});
+            max-width: calc(100% - #{$gridGutterSize});
+        }
+    }
+}
+
 .flexgrid__cell,
 [class*="flexgrid__cell"] {
     position: relative;
@@ -64,23 +86,21 @@
                         max-width: calc(#{$spaceWithGrid});
                     }
                 }
+
+                .flexgrid--gutter & {
+                    $spaceWithGrid: $divider#{'% - '}($gridGutterSizeMobile);
+
+                    flex-basis: calc(#{$spaceWithGrid});
+                    max-width: calc(#{$spaceWithGrid});
+
+                    @include min-tablet {
+                        $spaceWithGrid: $divider#{'% - '}($gridGutterSize);
+
+                        flex-basis: calc(#{$spaceWithGrid});
+                        max-width: calc(#{$spaceWithGrid});
+                    }
+                }
             }
-        }
-    }
-}
-
-.flexgrid--gutter {
-    margin: 0 $gridGutterSizeMobile / -2;
-
-    [class*="flexgrid__cell"] {
-        padding: 0 $gridGutterSizeMobile / 2;
-    }
-
-    @include min-tablet {
-        margin: 0 $gridGutterSize / -2;
-
-        [class*="flexgrid__cell"] {
-            padding: 0 $gridGutterSize / 2;
         }
     }
 }

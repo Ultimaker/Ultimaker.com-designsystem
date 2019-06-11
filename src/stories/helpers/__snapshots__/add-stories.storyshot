@@ -1595,7 +1595,7 @@ exports[`Storyshots Molecules/wizard-step-confirmation default 1`] = `
             class="cta-block"
           >
             <a
-              class="link--default link cta-link"
+              class="link--wizard-step-confirmation link cta-link"
               href="https://ultimaker.com"
               rel="noopener"
               target="_self"

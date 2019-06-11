@@ -48,15 +48,3 @@
         margin: 0 auto;
     }
 }
-
-@include min-desktop() {
-
-    .slider-reveal__grid-cell{
-        flex-basis: 33.33%;
-        max-width: 33.33%;
-        &:nth-child(2){
-            flex-basis: 66.67%;
-            max-width: 66.67%;
-        }
-    }
-}
