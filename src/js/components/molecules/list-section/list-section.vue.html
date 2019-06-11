@@ -27,7 +27,7 @@
         </header>
     </template>
     <ul class="list-section-list" v-if="cards && cards.length > 0" :aria-label="title">
-        <div class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row">
+        <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
             <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                  v-for="(card, index) in cards"
                  :key="index"
@@ -42,7 +42,7 @@
                           tag="div"
                           :css="false"
                           v-if="cards.length > showMax"
-                          class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row list-section--hidden">
+                          class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row list-section--hidden">
             <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                  v-for="(card, index) in cards"
                  v-if="index >= showMax"

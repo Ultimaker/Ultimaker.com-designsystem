@@ -78,7 +78,7 @@ exports[`Storyshots organisms|overview Overview business card 1`] = `
           class="list-section-list"
         >
           <div
-            class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+            class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
           >
             <div
               class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
@@ -460,7 +460,7 @@ exports[`Storyshots organisms|overview Overview business card 1`] = `
           class="list-section-list"
         >
           <div
-            class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+            class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
           >
             <div
               class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
@@ -1159,7 +1159,7 @@ exports[`Storyshots organisms|overview Overview card product 1`] = `
           class="list-section-list"
         >
           <div
-            class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+            class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
           >
             <div
               class="flexgrid__cell--md-4 flexgrid__cell--xs-6"

@@ -59,7 +59,7 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
         class="list-section-list"
       >
         <div
-          class="flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+          class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
         >
           <div
             class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
