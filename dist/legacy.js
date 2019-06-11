@@ -5304,6 +5304,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _navAssistVue = __webpack_require__(161);
+
+var _navAssistVue2 = _interopRequireDefault(_navAssistVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -5359,9 +5365,8 @@ var NavAssist = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), __metadata("design:type", Boolean)], NavAssist.prototype, "openState", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('openState'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], NavAssist.prototype, "onOpenStateChange", null);
-NavAssist = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'nav-assist',
-    template: __webpack_require__(161)
+NavAssist = __decorate([_navAssistVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'nav-assist'
 })], NavAssist);
 exports.default = NavAssist;
 
@@ -5369,7 +5374,18 @@ exports.default = NavAssist;
 /* 161 */
 /***/ (function(module, exports) {
 
-module.exports = "<button type=\"button\" @click=\"toggleState()\" @keyup.esc=\"close\" class=\"nav-assist\"\n        :class=\"{'nav-assist--close': this.openState, 'nav-assist--initial-state': !this.used}\" aria-label=\"menu\"\n        :aria-expanded=\"this.openState.toString()\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\">\n        <rect class=\"nav-assist__line nav-assist__line-2\" x=\"2\" y=\"11\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-1\" x=\"2\" y=\"4.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-3\" x=\"2\" y=\"17.5\" width=\"20\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-4\" x=\"-1.3\" y=\"11\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"26.6\" height=\"2\"/>\n        <rect class=\"nav-assist__line nav-assist__line-5\" x=\"11\" y=\"-1.3\" transform=\"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)\" width=\"2\" height=\"26.6\"/>\n    </svg>\n</button>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"nav-assist",class:{'nav-assist--close': this.openState, 'nav-assist--initial-state': !this.used},attrs:{"type":"button","aria-label":"menu","aria-expanded":this.openState.toString()},on:{"click":function($event){return _vm.toggleState()},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.close($event)}}},[_c('svg',{attrs:{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24"}},[_c('rect',{staticClass:"nav-assist__line nav-assist__line-2",attrs:{"x":"2","y":"11","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-1",attrs:{"x":"2","y":"4.5","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-3",attrs:{"x":"2","y":"17.5","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-4",attrs:{"x":"-1.3","y":"11","transform":"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)","width":"26.6","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-5",attrs:{"x":"11","y":"-1.3","transform":"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)","width":"2","height":"26.6"}})])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 162 */
@@ -7971,51 +7987,91 @@ exports.default = _contentToggle2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = {
-    name: 'content-toggle',
-    template: __webpack_require__(212),
-    props: {
-        toggleState: {
-            type: Boolean,
-            default: false
-        },
-        expandedText: {
-            type: String,
-            default: 'Less'
-        },
-        collapsedText: {
-            type: String,
-            default: 'More'
-        },
-        expandedIcon: {
-            type: String,
-            default: 'angle-up'
-        },
-        collapsedIcon: {
-            type: String,
-            default: 'angle-down'
-        }
-    },
-    computed: {
-        toggleText: function toggleText() {
-            return this.toggleState ? this.expandedText : this.collapsedText;
-        },
-        toggleIcon: function toggleIcon() {
-            return this.toggleState ? this.expandedIcon : this.collapsedIcon;
-        }
-    },
-    methods: {
-        toggle: function toggle() {
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+var _contentToggleVue = __webpack_require__(212);
+
+var _contentToggleVue2 = _interopRequireDefault(_contentToggleVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ContentToggle = function (_Vue) {
+    _inherits(ContentToggle, _Vue);
+
+    function ContentToggle() {
+        _classCallCheck(this, ContentToggle);
+
+        return _possibleConstructorReturn(this, (ContentToggle.__proto__ || Object.getPrototypeOf(ContentToggle)).apply(this, arguments));
+    }
+
+    _createClass(ContentToggle, [{
+        key: "toggle",
+        value: function toggle() {
             this.$emit('toggle');
         }
-    }
-};
+    }, {
+        key: "toggleText",
+        get: function get() {
+            return this.toggleState ? this.expandedText : this.collapsedText;
+        }
+    }, {
+        key: "toggleIcon",
+        get: function get() {
+            return this.toggleState ? this.expandedIcon : this.collapsedIcon;
+        }
+    }]);
+
+    return ContentToggle;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), __metadata("design:type", Boolean)], ContentToggle.prototype, "toggleState", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'Less' }), __metadata("design:type", String)], ContentToggle.prototype, "expandedText", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'More' }), __metadata("design:type", String)], ContentToggle.prototype, "collapsedText", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'angle-up' }), __metadata("design:type", String)], ContentToggle.prototype, "expandedIcon", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'angle-down' }), __metadata("design:type", String)], ContentToggle.prototype, "collapsedIcon", void 0);
+ContentToggle = __decorate([_contentToggleVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'content-toggle'
+})], ContentToggle);
+exports.default = ContentToggle;
 
 /***/ }),
 /* 212 */
 /***/ (function(module, exports) {
 
-module.exports = "<a class=\"toggle toggle--icon\" role=\"button\" tabindex=\"0\" @click=\"toggle\"\n       @keyup.enter=\"toggle\">\n    <icon :icon-name=\"toggleIcon\"></icon>\n    <span>{{ toggleText }}</span>\n</a>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"toggle toggle--icon",attrs:{"role":"button","tabindex":"0"},on:{"click":_vm.toggle,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.toggle($event)}}},[_c('icon',{attrs:{"icon-name":_vm.toggleIcon}}),_vm._v(" "),_c('span',[_vm._v(_vm._s(_vm.toggleText))])],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 213 */
@@ -9256,6 +9312,10 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
+var _flyoutVue = __webpack_require__(227);
+
+var _flyoutVue2 = _interopRequireDefault(_flyoutVue);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
@@ -9436,9 +9496,8 @@ var Flyout = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], Flyout.prototype, "items", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], Flyout.prototype, "isCompact", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], Flyout.prototype, "disableKeyboardEvents", void 0);
-Flyout = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'flyout',
-    template: __webpack_require__(227)
+Flyout = __decorate([_flyoutVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'flyout'
 })], Flyout);
 exports.default = Flyout;
 
@@ -9446,7 +9505,18 @@ exports.default = Flyout;
 /* 227 */
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"main-nav__flyout\"\n    v-if=\"items && items.length > 0\"\n    @keydown.down=\"selectNextLink\"\n    @keydown.tab.exact=\"selectNextLink\"\n    @keydown.up=\"selectPrevLink\"\n    @keydown.tab.shift.exact=\"selectPrevLink\"\n    @keydown.right=\"selectNextSection($event, true)\"\n    @keydown.left=\"selectPrevSection($event, true)\"\n    @mouseenter.stop=\"open\"\n    v-show=\"isCompact || !viewportUtil.isResizing\">\n    <flyout-section ref=\"items\"\n        v-for=\"(item, key) in items\"\n        v-if=\"item.items && item.items.length\"\n        v-bind=\"item\"\n        :is-compact=\"isCompact\"\n        :key=\"key\"\n        :itemId=\"`flyout_title_${ uniqId }_${ key }`\"\n        @close=\"$emit('close')\"\n        >\n    </flyout-section>\n</ul>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.items && _vm.items.length > 0)?_c('ul',{directives:[{name:"show",rawName:"v-show",value:(_vm.isCompact || !_vm.viewportUtil.isResizing),expression:"isCompact || !viewportUtil.isResizing"}],staticClass:"main-nav__flyout",on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }return _vm.selectNextLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if($event.ctrlKey||$event.shiftKey||$event.altKey||$event.metaKey){ return null; }return _vm.selectNextLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"up",38,$event.key,["Up","ArrowUp"])){ return null; }return _vm.selectPrevLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }if($event.ctrlKey||$event.altKey||$event.metaKey){ return null; }return _vm.selectPrevLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"right",39,$event.key,["Right","ArrowRight"])){ return null; }if('button' in $event && $event.button !== 2){ return null; }return _vm.selectNextSection($event, true)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"left",37,$event.key,["Left","ArrowLeft"])){ return null; }if('button' in $event && $event.button !== 0){ return null; }return _vm.selectPrevSection($event, true)}],"mouseenter":function($event){$event.stopPropagation();return _vm.open($event)}}},_vm._l((_vm.items),function(item,key){return (item.items && item.items.length)?_c('flyout-section',_vm._b({key:key,ref:"items",refInFor:true,attrs:{"is-compact":_vm.isCompact,"itemId":("flyout_title_" + _vm.uniqId + "_" + key)},on:{"close":function($event){return _vm.$emit('close')}}},'flyout-section',item,false)):_vm._e()}),1):_vm._e()}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 228 */
@@ -13412,7 +13482,7 @@ var ModalWizard = function (_Vue) {
     _createClass(ModalWizard, [{
         key: "showNextStep",
         value: function showNextStep() {
-            if (this.steps && this.steps.length + 1 > this.activeStep) {
+            if (this.steps && this.steps.length > this.activeStep + 1) {
                 this.activeStep += 1;
             }
         }
@@ -13531,7 +13601,7 @@ exports.default = WizardStepConfirmation;
 /* 322 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism wizard-step-confirmation"},[_c('section',{staticClass:"container wizard-step-confirmation__container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid"},[_c('div',{staticClass:"flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__image"},[_c('div',{staticClass:"wizard-step-confirmation__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__content"},[_c('h3',[_vm._v(_vm._s(_vm.contentTitle))]),_vm._v(" "),_c('div',{staticClass:"content-manageble wizard-step-confirmation__body",domProps:{"innerHTML":_vm._s(_vm.content)}}),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod-content-link":"default","ctas":_vm.ctas.ctas}}):_vm._e()],1)])],1)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism wizard-step-confirmation"},[_c('section',{staticClass:"container wizard-step-confirmation__container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid"},[_c('div',{staticClass:"flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__image"},[_c('div',{staticClass:"wizard-step-confirmation__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__content"},[_c('h3',[_vm._v(_vm._s(_vm.contentTitle))]),_vm._v(" "),_c('div',{staticClass:"content-manageble wizard-step-confirmation__body",domProps:{"innerHTML":_vm._s(_vm.content)}}),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod-content-link":"wizard-step-confirmation","ctas":_vm.ctas.ctas}}):_vm._e()],1)])],1)])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
