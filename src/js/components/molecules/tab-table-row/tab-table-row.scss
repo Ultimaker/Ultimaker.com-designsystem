@@ -9,25 +9,29 @@
         padding: ($buildingUnit * 1.5) 0;
     }
 
-    &:first-of-type{
-        border-top: 2px solid $colorGrayLight;    
+    &:first-of-type {
+        border-top: 2px solid $colorGrayLight;
     }
-    &:last-of-type{
+    &:last-of-type {
         border-bottom: 2px solid $colorGrayLight;
     }
 
-    &__label{
+    &__tooltip-label,
+    &__label {
         flex: 1;
         font-weight: map-get($fontWeights, "semibold");
         @include font-line-ratio(prim-s);
 
         &-text {
-            margin-top: -2px;
-            margin-bottom: 0;
+            margin: -2px 0 0 ($buildingUnit * 1.5);
         }
     }
 
-    &__value{
+    &__tooltip-label {
+        margin-top: ($buildingUnit * -1.5);
+    }
+
+    &__value {
         margin-top: $buildingUnit * 1.75;
         @include font-line-ratio(prim-s);
 
@@ -42,7 +46,7 @@
 
     &__linklist {
         margin-top: $buildingUnit * 1.75;
-     
+
         @extend %reset-list;
 
         .tab-table-row__linklist-item{

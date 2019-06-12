@@ -5,8 +5,7 @@
     background-color: $colorBlack;
     color: $colorWhite;
     font-weight: 400;
-    min-width: $buildingUnit * 8;
-    max-width: $buildingUnit * 12.5;
+    width: $buildingUnit * 12.5;
     padding: $buildingUnit;
     white-space: normal;
 
