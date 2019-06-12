@@ -15,7 +15,7 @@ export const data = {
                             type: 'Tooltip',
                             label: 'Label tooltip',
                             icon: 'info',
-                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar ullamcorper metus, at cursus elit viverra eu. Nam venenatis lorem eget erat tempus, at molestie nibh laoreet. Etiam eleifend, urna vel rutrum feugiat, nunc felis efficitur felis, sit amet fermentum velit nulla ac nisi.',
+                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar ullamcorper metus, at cursus elit viverra eu.',
                         },
                         linkList: [
                             {
