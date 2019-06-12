@@ -5,7 +5,7 @@
 import com.ultimaker.Slug
 
 // max length is 64 characters, UUID is 36
-String label = "jenkins-slave-${UUID.randomUUID().toString()}"
+String label = "designsystem-${UUID.randomUUID().toString()}"
 
 podTemplate(
   label: label,
