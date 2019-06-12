@@ -40,7 +40,7 @@ export const data = {
                     tooltip: {
                         label: '',
                         icon: 'info',
-                        description: 'Celery quandong swiss chard chicory earthnut pea potato. Celery quandong swiss chard chicory earthnut pea potato. Celery quandong swiss chard chicory earthnut pea potato. Celery quandong swiss chard chicory earthnut pea potato. ',
+                        description: 'Celery quandong swiss chard chicory earthnut pea potato.',
                     },
                     cells: [
                         {

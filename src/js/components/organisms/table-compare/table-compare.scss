@@ -124,32 +124,25 @@
     display: block;
 
 }
-
+.table-compare__feature-tooltip,
 .table-compare__feature {
     display: inline-block;
     position: relative;
     vertical-align: top;
-    padding: 15px 50px 11px 0;
     background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
 
     main .organism:nth-child(even) & {
         background: linear-gradient(to left, transparentize($colorBgGray, 1), $colorBgGray $buildingUnit);
     }
 
-    overflow: hidden;
-    text-overflow: ellipsis;
     min-width: 125px;
     max-width: 70vw;
 }
 
-.table-compare__tooltip {
-    padding: 0 50px 0 0;
-    margin: 14px 0 12px 0;
-
-    .tooltip {
-        width: 200px;
-        max-width: 200px;
-    }
+.table-compare__feature {
+    padding: 15px 50px 11px ($buildingUnit * 1.5);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .table-compare__cell {
