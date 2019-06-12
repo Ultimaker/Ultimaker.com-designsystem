@@ -20,8 +20,11 @@
                     <tbody>
                     <tr v-for="row in content.rows">
                         <th scope="row">
-                            <div class="table-compare__feature">
-                                {{ row.label }}
+                            <div class="table-compare__feature" v-if="!row.tooltip">
+                                    {{ row.label }}
+                            </div>
+                            <div class="table-compare__feature-tooltip"  v-else>
+                                <tooltip-toggle v-if="row.tooltip" v-bind="row.tooltip" :label="row.tooltip.label || row.label" />
                             </div>
                         </th>
                         <td v-for="cell in row.cells">
