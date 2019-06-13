@@ -1129,143 +1129,140 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
           <li
             class="wizard-step-download-list__item flexgrid__cell--sm-4"
           >
-            <label
-              class="card-download card-download--selected"
-              tabindex="0"
+            <div
+              class="card-download"
             >
               <input
-                class="card-download__radio-element"
+                class="card-download__radio"
                 name="download"
                 type="radio"
                 value="http://speed.transip.nl/1gb.bin?win"
               />
                
-              <div
-                class="card-download__image-wrapper"
+              <label
+                class="card-download__label"
               >
-                <img
-                  alt="Nylon 3D printed gears"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                  type="Image"
-                />
-              </div>
-               
-              <div
-                class="card-download__content"
-              >
-                <h4
-                  class="card-download__title"
+                <div
+                  class="card-download__image-wrapper"
                 >
-                  
-            Ultimaker Cura 4.0
-        
-                </h4>
+                  <img
+                    alt="Nylon 3D printed gears"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="Image"
+                  />
+                </div>
                  
-                <p
-                  class="card-download__description"
+                <div
+                  class="card-download__content"
                 >
-                  
-            Windows, 64 bit
-        
-                </p>
-              </div>
-            </label>
+                  <h4
+                    class="card-download__title"
+                  >
+                    Ultimaker Cura 4.0
+                  </h4>
+                   
+                  <p
+                    class="card-download__desc"
+                  >
+                    Windows, 64 bit
+                  </p>
+                </div>
+              </label>
+            </div>
           </li>
           <li
             class="wizard-step-download-list__item flexgrid__cell--sm-4"
           >
-            <label
+            <div
               class="card-download"
-              tabindex="0"
             >
               <input
-                class="card-download__radio-element"
+                class="card-download__radio"
                 name="download"
                 type="radio"
                 value="http://speed.transip.nl/1gb.bin?mac"
               />
                
-              <div
-                class="card-download__image-wrapper"
+              <label
+                class="card-download__label"
               >
-                <img
-                  alt="Nylon 3D printed gears"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                  type="Image"
-                />
-              </div>
-               
-              <div
-                class="card-download__content"
-              >
-                <h4
-                  class="card-download__title"
+                <div
+                  class="card-download__image-wrapper"
                 >
-                  
-            Ultimaker Cura 4.0
-        
-                </h4>
+                  <img
+                    alt="Nylon 3D printed gears"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="Image"
+                  />
+                </div>
                  
-                <p
-                  class="card-download__description"
+                <div
+                  class="card-download__content"
                 >
-                  
-            Mac, 64 bit
-        
-                </p>
-              </div>
-            </label>
+                  <h4
+                    class="card-download__title"
+                  >
+                    Ultimaker Cura 4.0
+                  </h4>
+                   
+                  <p
+                    class="card-download__desc"
+                  >
+                    Mac, 64 bit
+                  </p>
+                </div>
+              </label>
+            </div>
           </li>
           <li
             class="wizard-step-download-list__item flexgrid__cell--sm-4"
           >
-            <label
+            <div
               class="card-download"
-              tabindex="0"
             >
               <input
-                class="card-download__radio-element"
+                class="card-download__radio"
                 name="download"
                 type="radio"
                 value="http://speed.transip.nl/1gb.bin?linux"
               />
                
-              <div
-                class="card-download__image-wrapper"
+              <label
+                class="card-download__label"
               >
-                <img
-                  alt="Nylon 3D printed gears"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                  type="Image"
-                />
-              </div>
-               
-              <div
-                class="card-download__content"
-              >
-                <h4
-                  class="card-download__title"
+                <div
+                  class="card-download__image-wrapper"
                 >
-                  
-            Ultimaker Cura 4.0
-        
-                </h4>
+                  <img
+                    alt="Nylon 3D printed gears"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    type="Image"
+                  />
+                </div>
                  
-                <p
-                  class="card-download__description"
+                <div
+                  class="card-download__content"
                 >
-                  
-            Linux, 64 bit
-        
-                </p>
-              </div>
-            </label>
+                  <h4
+                    class="card-download__title"
+                  >
+                    Ultimaker Cura 4.0
+                  </h4>
+                   
+                  <p
+                    class="card-download__desc"
+                  >
+                    Linux, 64 bit
+                  </p>
+                </div>
+              </label>
+            </div>
           </li>
         </ul>
          
@@ -1660,143 +1657,140 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
       <li
         class="wizard-step-download-list__item flexgrid__cell--sm-4"
       >
-        <label
-          class="card-download card-download--selected"
-          tabindex="0"
+        <div
+          class="card-download"
         >
           <input
-            class="card-download__radio-element"
+            class="card-download__radio"
             name="download"
             type="radio"
             value="http://speed.transip.nl/1gb.bin?win"
           />
            
-          <div
-            class="card-download__image-wrapper"
+          <label
+            class="card-download__label"
           >
-            <img
-              alt="Nylon 3D printed gears"
-              class="img--contain img--loading"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-              type="Image"
-            />
-          </div>
-           
-          <div
-            class="card-download__content"
-          >
-            <h4
-              class="card-download__title"
+            <div
+              class="card-download__image-wrapper"
             >
-              
-            Ultimaker Cura 4.0
-        
-            </h4>
+              <img
+                alt="Nylon 3D printed gears"
+                class="img--contain img--loading"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                type="Image"
+              />
+            </div>
              
-            <p
-              class="card-download__description"
+            <div
+              class="card-download__content"
             >
-              
-            Windows, 64 bit
-        
-            </p>
-          </div>
-        </label>
+              <h4
+                class="card-download__title"
+              >
+                Ultimaker Cura 4.0
+              </h4>
+               
+              <p
+                class="card-download__desc"
+              >
+                Windows, 64 bit
+              </p>
+            </div>
+          </label>
+        </div>
       </li>
       <li
         class="wizard-step-download-list__item flexgrid__cell--sm-4"
       >
-        <label
+        <div
           class="card-download"
-          tabindex="0"
         >
           <input
-            class="card-download__radio-element"
+            class="card-download__radio"
             name="download"
             type="radio"
             value="http://speed.transip.nl/1gb.bin?mac"
           />
            
-          <div
-            class="card-download__image-wrapper"
+          <label
+            class="card-download__label"
           >
-            <img
-              alt="Nylon 3D printed gears"
-              class="img--contain img--loading"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-              type="Image"
-            />
-          </div>
-           
-          <div
-            class="card-download__content"
-          >
-            <h4
-              class="card-download__title"
+            <div
+              class="card-download__image-wrapper"
             >
-              
-            Ultimaker Cura 4.0
-        
-            </h4>
+              <img
+                alt="Nylon 3D printed gears"
+                class="img--contain img--loading"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                type="Image"
+              />
+            </div>
              
-            <p
-              class="card-download__description"
+            <div
+              class="card-download__content"
             >
-              
-            Mac, 64 bit
-        
-            </p>
-          </div>
-        </label>
+              <h4
+                class="card-download__title"
+              >
+                Ultimaker Cura 4.0
+              </h4>
+               
+              <p
+                class="card-download__desc"
+              >
+                Mac, 64 bit
+              </p>
+            </div>
+          </label>
+        </div>
       </li>
       <li
         class="wizard-step-download-list__item flexgrid__cell--sm-4"
       >
-        <label
+        <div
           class="card-download"
-          tabindex="0"
         >
           <input
-            class="card-download__radio-element"
+            class="card-download__radio"
             name="download"
             type="radio"
             value="http://speed.transip.nl/1gb.bin?linux"
           />
            
-          <div
-            class="card-download__image-wrapper"
+          <label
+            class="card-download__label"
           >
-            <img
-              alt="Nylon 3D printed gears"
-              class="img--contain img--loading"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-              type="Image"
-            />
-          </div>
-           
-          <div
-            class="card-download__content"
-          >
-            <h4
-              class="card-download__title"
+            <div
+              class="card-download__image-wrapper"
             >
-              
-            Ultimaker Cura 4.0
-        
-            </h4>
+              <img
+                alt="Nylon 3D printed gears"
+                class="img--contain img--loading"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                type="Image"
+              />
+            </div>
              
-            <p
-              class="card-download__description"
+            <div
+              class="card-download__content"
             >
-              
-            Linux, 64 bit
-        
-            </p>
-          </div>
-        </label>
+              <h4
+                class="card-download__title"
+              >
+                Ultimaker Cura 4.0
+              </h4>
+               
+              <p
+                class="card-download__desc"
+              >
+                Linux, 64 bit
+              </p>
+            </div>
+          </label>
+        </div>
       </li>
     </ul>
      
@@ -1805,6 +1799,146 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
     >
       
         Download now
+    
+    </button>
+  </form>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/wizard-step-download-list fewer 1`] = `
+<section
+  class="story"
+>
+  <form
+    action="http://speed.transip.nl/1gb.bin?win"
+    class="wizard-step-download-list"
+    method="get"
+    target="_blank"
+  >
+    <header
+      class="header-block header-block--wizard"
+    >
+      <h2
+        class="header-block__title"
+      >
+        Download Firmware
+      </h2>
+       
+      <!---->
+    </header>
+     
+    <p
+      class="wizard-step-download-list__description"
+    >
+      Make sure to download the correct firmware for your printer.
+    </p>
+     
+    <ul
+      class="wizard-step-download-list__items flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
+    >
+      <li
+        class="wizard-step-download-list__item flexgrid__cell--sm-4"
+      >
+        <div
+          class="card-download"
+        >
+          <input
+            class="card-download__radio"
+            name="download"
+            type="radio"
+            value="http://speed.transip.nl/1gb.bin?win"
+          />
+           
+          <label
+            class="card-download__label"
+          >
+            <div
+              class="card-download__image-wrapper"
+            >
+              <img
+                alt="Nylon 3D printed gears"
+                class="img--contain img--loading"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                type="Image"
+              />
+            </div>
+             
+            <div
+              class="card-download__content"
+            >
+              <h4
+                class="card-download__title"
+              >
+                Ultimaker 2+ Firmware v1.0
+              </h4>
+               
+              <p
+                class="card-download__desc"
+              >
+                Ultimaker 2+
+              </p>
+            </div>
+          </label>
+        </div>
+      </li>
+      <li
+        class="wizard-step-download-list__item flexgrid__cell--sm-4"
+      >
+        <div
+          class="card-download"
+        >
+          <input
+            class="card-download__radio"
+            name="download"
+            type="radio"
+            value="http://speed.transip.nl/1gb.bin?mac"
+          />
+           
+          <label
+            class="card-download__label"
+          >
+            <div
+              class="card-download__image-wrapper"
+            >
+              <img
+                alt="Nylon 3D printed gears"
+                class="img--contain img--loading"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                type="Image"
+              />
+            </div>
+             
+            <div
+              class="card-download__content"
+            >
+              <h4
+                class="card-download__title"
+              >
+                Ultimaker S5 Firmware v1.0
+              </h4>
+               
+              <p
+                class="card-download__desc"
+              >
+                Ultimaker S5
+              </p>
+            </div>
+          </label>
+        </div>
+      </li>
+    </ul>
+     
+    <button
+      class="wizard-step-download-list__button button"
+    >
+      
+        Download
     
     </button>
   </form>
@@ -2409,49 +2543,48 @@ exports[`Storyshots Molecules|cards/card-download default 1`] = `
 <section
   class="story"
 >
-  <label
+  <div
     class="card-download"
-    tabindex="0"
   >
     <input
-      class="card-download__radio-element"
+      class="card-download__radio"
       name="download"
       type="radio"
       value="http://file.exe"
     />
      
-    <div
-      class="card-download__image-wrapper"
+    <label
+      class="card-download__label"
     >
-      <img
-        alt="Nylon 3D printed gears"
-        class="img--contain img--loading"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-        type="Image"
-      />
-    </div>
-     
-    <div
-      class="card-download__content"
-    >
-      <h4
-        class="card-download__title"
+      <div
+        class="card-download__image-wrapper"
       >
-        
-            Ultimaker Cura 4.0
-        
-      </h4>
+        <img
+          alt="Nylon 3D printed gears"
+          class="img--contain img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          type="Image"
+        />
+      </div>
        
-      <p
-        class="card-download__description"
+      <div
+        class="card-download__content"
       >
-        
-            Windows, 64 bit
-        
-      </p>
-    </div>
-  </label>
+        <h4
+          class="card-download__title"
+        >
+          Ultimaker Cura 4.0
+        </h4>
+         
+        <p
+          class="card-download__desc"
+        >
+          Windows, 64 bit
+        </p>
+      </div>
+    </label>
+  </div>
    
   <div
     class="vue-portal-target"
@@ -2463,49 +2596,48 @@ exports[`Storyshots Molecules|cards/card-download selected 1`] = `
 <section
   class="story"
 >
-  <label
-    class="card-download card-download--selected"
-    tabindex="0"
+  <div
+    class="card-download"
   >
     <input
-      class="card-download__radio-element"
+      class="card-download__radio"
       name="download"
       type="radio"
       value="http://file.exe"
     />
      
-    <div
-      class="card-download__image-wrapper"
+    <label
+      class="card-download__label"
     >
-      <img
-        alt="Nylon 3D printed gears"
-        class="img--contain img--loading"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-        type="Image"
-      />
-    </div>
-     
-    <div
-      class="card-download__content"
-    >
-      <h4
-        class="card-download__title"
+      <div
+        class="card-download__image-wrapper"
       >
-        
-            Ultimaker Cura 4.0
-        
-      </h4>
+        <img
+          alt="Nylon 3D printed gears"
+          class="img--contain img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          type="Image"
+        />
+      </div>
        
-      <p
-        class="card-download__description"
+      <div
+        class="card-download__content"
       >
-        
-            Windows, 64 bit
-        
-      </p>
-    </div>
-  </label>
+        <h4
+          class="card-download__title"
+        >
+          Ultimaker Cura 4.0
+        </h4>
+         
+        <p
+          class="card-download__desc"
+        >
+          Windows, 64 bit
+        </p>
+      </div>
+    </label>
+  </div>
    
   <div
     class="vue-portal-target"
