@@ -9,7 +9,6 @@ import WithRender from './modal-button.vue.html';
 
 export class ModalButton extends Vue implements ModalButtonProps {
     @Prop({ type: Object, required: false }) clickEvent?: ModalButtonProps['clickEvent'];
-    @Prop({ type: String, required: false }) icon?: ModalButtonProps['icon'];
     @Prop({ type: String, required: true }) label!: ModalButtonProps['label'];
     @Prop({ type: Object, required: true }) modal!: ModalButtonProps['modal'];
 

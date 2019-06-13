@@ -267,7 +267,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child {
+.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--products > :last-child, .um-components .hero--products-application > :last-child, .um-components .hero--products .hero__description > :last-child, .um-components .hero--products-application .hero__description > :last-child, .um-components .hero--products .hero__tab-panel > :last-child, .um-components .hero--products-application .hero__tab-panel > :last-child, .um-components .hero--products .hero__link-list > :last-child, .um-components .hero--products-application .hero__link-list > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .overview > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .hero--article > :last-child {
   margin-bottom: 0; }
 
 .um-components .hero--products .hero__link--large, .um-components .hero--products-application .hero__link--large, .um-components .examples .examples__link--large {
@@ -4440,7 +4440,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .wizard-step-confirmation__body {
       text-align: left; } }
 
-.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
+.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
   background-color: #fafafa; }
 
 .um-components .hero__image {
@@ -5682,7 +5682,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff 12px);
   min-width: 125px;
   max-width: 70vw; }
-  .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .hero--products:nth-child(even) .table-compare__feature, .um-components main .hero--products-application:nth-child(even) .table-compare__feature, .um-components main .hero--text:nth-child(even) .table-compare__feature, .um-components main .hero--cover:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .general-content:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .overview:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature {
+  .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .hero--products:nth-child(even) .table-compare__feature, .um-components main .hero--products-application:nth-child(even) .table-compare__feature, .um-components main .hero--text:nth-child(even) .table-compare__feature, .um-components main .hero--cover:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .general-content:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .overview:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature, .um-components main .hero--article:nth-child(even) .table-compare__feature {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .um-components .table-compare__feature--no-tooltip {
@@ -5799,6 +5799,43 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
         margin-top: 48px; } }
   .um-components .brands2 .footer-block {
     margin-top: 60px; }
+
+.um-components .hero--article {
+  position: relative; }
+  .um-components .hero--article-reset {
+    margin-bottom: 0;
+    padding: 66px 0; }
+  .um-components .hero--article .copy--intro,
+  .um-components .hero--article .link--large {
+    color: #ffffff; }
+
+.um-components .hero-article__container {
+  padding-top: 0; }
+
+.um-components .hero__article-header {
+  color: #ffffff;
+  text-align: left;
+  margin: 0; }
+  @media (min-width: 768px) {
+    .um-components .hero__article-header {
+      text-align: center; } }
+  .um-components .hero__article-header .header-block__subtitle--hero {
+    color: #ffffff;
+    margin-bottom: 0; }
+
+.um-components .hero-article__image--full {
+  object-fit: cover; }
+
+.um-components .hero-article__image--overlay {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.um-components .hero-article__image--full,
+.um-components .hero-article__image--overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;

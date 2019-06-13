@@ -1837,146 +1837,6 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
 </section>
 `;
 
-exports[`Storyshots Molecules/wizard-step-download-list fewer 1`] = `
-<section
-  class="story"
->
-  <form
-    action="http://speed.transip.nl/1gb.bin?win"
-    class="wizard-step-download-list"
-    method="get"
-    target="_blank"
-  >
-    <header
-      class="header-block header-block--wizard"
-    >
-      <h2
-        class="header-block__title"
-      >
-        Download Firmware
-      </h2>
-       
-      <!---->
-    </header>
-     
-    <p
-      class="wizard-step-download-list__description"
-    >
-      Make sure to download the correct firmware for your printer.
-    </p>
-     
-    <ul
-      class="wizard-step-download-list__items flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"
-    >
-      <li
-        class="wizard-step-download-list__item flexgrid__cell--sm-4"
-      >
-        <div
-          class="card-download"
-        >
-          <input
-            class="card-download__radio"
-            name="download"
-            type="radio"
-            value="http://speed.transip.nl/1gb.bin?win"
-          />
-           
-          <label
-            class="card-download__label"
-          >
-            <div
-              class="card-download__image-wrapper"
-            >
-              <img
-                alt="Nylon 3D printed gears"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                type="Image"
-              />
-            </div>
-             
-            <div
-              class="card-download__content"
-            >
-              <h4
-                class="card-download__title"
-              >
-                Ultimaker 2+ Firmware v1.0
-              </h4>
-               
-              <p
-                class="card-download__desc"
-              >
-                Ultimaker 2+
-              </p>
-            </div>
-          </label>
-        </div>
-      </li>
-      <li
-        class="wizard-step-download-list__item flexgrid__cell--sm-4"
-      >
-        <div
-          class="card-download"
-        >
-          <input
-            class="card-download__radio"
-            name="download"
-            type="radio"
-            value="http://speed.transip.nl/1gb.bin?mac"
-          />
-           
-          <label
-            class="card-download__label"
-          >
-            <div
-              class="card-download__image-wrapper"
-            >
-              <img
-                alt="Nylon 3D printed gears"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                type="Image"
-              />
-            </div>
-             
-            <div
-              class="card-download__content"
-            >
-              <h4
-                class="card-download__title"
-              >
-                Ultimaker S5 Firmware v1.0
-              </h4>
-               
-              <p
-                class="card-download__desc"
-              >
-                Ultimaker S5
-              </p>
-            </div>
-          </label>
-        </div>
-      </li>
-    </ul>
-     
-    <button
-      class="wizard-step-download-list__button button"
-    >
-      
-        Download
-    
-    </button>
-  </form>
-   
-  <div
-    class="vue-portal-target"
-  />
-</section>
-`;
-
 exports[`Storyshots Molecules|auto-complete default 1`] = `
 <section
   class="story"
@@ -4761,6 +4621,61 @@ exports[`Storyshots Organisms/content-highlight reversed 1`] = `
             </div>
           </footer>
         </div>
+      </div>
+    </section>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Organisms/hero-article default 1`] = `
+<section
+  class="story"
+>
+  <article
+    class="hero hero--article organism"
+  >
+    <div
+      class="hero-article__image--full"
+    >
+      <img
+        alt="bla bla"
+        class="img--contain img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+      />
+    </div>
+     
+    <div
+      class="hero-article__image--overlay"
+    />
+     
+    <section
+      class="hero-article__container container"
+    >
+      <div
+        class="flexgrid__cell--xs-12 hero--article-reset"
+      >
+        <header
+          class="header-block hero__article-header header-block--hero"
+        >
+          <div>
+            <h1
+              class="hero__title header-block__title--hero"
+            >
+              Im the title of the article
+            </h1>
+             
+            <h2
+              class="hero__subtitle header-block__subtitle--hero"
+            >
+              Im a subtle subtitle
+            </h2>
+          </div>
+        </header>
       </div>
     </section>
   </article>
