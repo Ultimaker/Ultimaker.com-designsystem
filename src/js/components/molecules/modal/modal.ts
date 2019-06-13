@@ -16,10 +16,12 @@ export default class Modal extends Vue {
     };
 
     created() {
+        document.body.classList.add('disable-scroll');
         window.addEventListener('keyup', this.closeModal);
     }
 
     beforeDestroy() {
+        document.body.classList.remove('disable-scroll');
         window.removeEventListener('keyup', this.closeModal);
     }
 
