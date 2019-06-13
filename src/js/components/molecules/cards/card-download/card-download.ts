@@ -17,10 +17,6 @@ export class CardDownload extends Vue implements CardDownloadProps {
     @Prop({ type: String, required: true }) description!: CardDownloadProps['description'];
     @Prop({ type: Object, required: false }) image?: CardDownloadProps['image'];
 
-    get selectedClass() {
-        return this.selected ? 'card-download--selected' : '';
-    }
-
     handleSelect() {
         this.setSelectedItem(this.index);
     }
