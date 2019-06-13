@@ -1,0 +1,51 @@
+.hero--article {
+    @extend .organism;
+    @extend %reset-last-margin;
+    position: relative;
+
+    &-reset {
+        margin-bottom: 0;
+        padding: $buildingUnit * 5.5 0;
+    }
+
+    .copy--intro,
+    .link--large {
+        color: $colorWhite;
+    }
+}
+
+.hero-article__container {
+    padding-top: 0;
+}
+
+.hero__article-header{
+    color: $colorWhite;
+    text-align: left;
+    margin: 0;
+
+    @include min-tablet() {
+        text-align: center;
+    }
+
+    .header-block__subtitle--hero{
+        color: $colorWhite;
+        margin-bottom: 0;
+    }
+}
+
+.hero-article__image--full {
+    @include object-fit(cover);
+}
+
+.hero-article__image--overlay {
+    background-color: $colorOverlayImage;
+}
+
+.hero-article__image--full,
+.hero-article__image--overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
