@@ -86,5 +86,5 @@ label + [type="checkbox"]{
 /* accessibility */
 [type="checkbox"]:checked:focus:not(:hover) + label:before,
 [type="checkbox"]:not(:checked):focus:not(:hover) + label:before {
-    border: 2px solid $colorMain;
+    border: 2px solid $um-blue;
 }

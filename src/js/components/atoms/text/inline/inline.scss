@@ -2,7 +2,7 @@
 a {
     font-size: inherit;
 
-    color: $colorMain;
+    color: $um-blue;
     text-decoration: none;
     outline: none;
 
@@ -11,7 +11,7 @@ a {
     @include micro-animate(color, background);
 
     &:hover {
-        color: lighten($colorMain, $tintHoverFocus*2);
+        color: lighten($um-blue, $tintHoverFocus * 2); // #69a0fb
     }
 
     &:not(.hit-area) {

@@ -43,7 +43,7 @@
     }
     @include min-tablet {
         &:hover {
-            color: lighten($colorGrayDark, $tintHoverFocus);
+            color: lighten($colorGrayDark, $tintHoverFocus); // #939393
         }
     }
 

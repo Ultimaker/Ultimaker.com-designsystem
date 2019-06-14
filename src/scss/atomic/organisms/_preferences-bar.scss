@@ -35,13 +35,13 @@
 
     .settings-selector__edit-button {
         @extend .preferences-bar__button;
-        color: $colorMain;
+        color: $um-blue;
         margin-top: 5px;
 
         &:hover,
         &:focus,
         &:active {
-            color: $colorMain;
+            color: $um-blue;
         }
     }
 }

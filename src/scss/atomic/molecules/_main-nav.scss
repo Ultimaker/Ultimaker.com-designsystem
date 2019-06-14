@@ -193,7 +193,7 @@ $mainNavBorder: 1px solid $colorGray;
     }
 
     .flyout__toggle {
-        color: mix-blend-multiply($colorMain, $colorNavItemActive);
+        color: mix-blend-multiply($um-blue, $colorNavItemActive);
     }
 }
 

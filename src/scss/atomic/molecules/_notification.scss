@@ -1,5 +1,5 @@
-$colorNotification: lighten($colorMain, 45%);
-$colorNoteHover: lighten($colorMain, 40%);
+$colorNotification: lighten($um-blue, 45%);
+$colorNoteHover: lighten($um-blue, 40%);
 $colorNoteDisabled: mix-blend-multiply($colorGrayExtraLight, $colorNotification);
 
 $colorNoteDisabledCheck: mix-blend-multiply($colorGrayMedium, $colorNotification);

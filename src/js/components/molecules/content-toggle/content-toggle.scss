@@ -2,11 +2,11 @@
 .toggle {
     @extend .link;
 
-    color: $colorMain;
+    color: $um-blue;
     font-weight: 400;
 
     &:hover {
-        color: $colorMain;
+        color: $um-blue;
     }
 
     &--icon {

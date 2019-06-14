@@ -1,34 +1,38 @@
 {
-    "brandColors": [
-        {
-            "color": "#0CA9E3",
-            "text" : "$colorMain"
-        }
-    ],
-    "grayscaleColors": [
-        {
-            "color": "#000000",
-            "text": "$colorBlack"
-        },
-        {
-            "color": "#7F7F7F",
-            "text": "$colorGrayDark"
-        },
-        {
-            "color": "#E3E3E3",
-            "text": "$colorGray"
-        },
-        {
-            "color": "#EAEAEA",
-            "text": "$colorGrayLight"
-        },
-        {
-            "color": "#F5F5F5",
-            "text": "$colorGrayExtraLight"
-        },
-        {
-            "color": "#FFFFFF",
-            "text": "$colorWhite"
-        }
-    ]
+  "brandColors": [
+    {
+      "color": "#196ef0",
+      "text": "$colorMain"
+    }
+  ],
+  "grayscaleColors": [
+    {
+      "color": "#000000",
+      "text": "$colorBlack"
+    },
+    {
+      "color": "#7f7f7f",
+      "text": "$colorGrayDark"
+    },
+    {
+      "color": "#e3e3e3",
+      "text": "$colorGray"
+    },
+    {
+      "color": "#eaeaea",
+      "text": "$colorGrayLight"
+    },
+    {
+      "color": "#f5f5f5",
+      "text": "$colorGrayExtraLight"
+    },
+    {
+      "color": "#fafafa",
+      "text": "$colorGraySuperLight"
+    },
+    {
+      "color": "#fff",
+      "text": "$colorWhite"
+    }
+  ]
 }

@@ -23,18 +23,18 @@
 .pager__page-indicator,
 .pager__active-page-indicator {
     display: block;
-    color: $colorMain;
+    color: $um-blue;
 
     @include micro-animate(color);
-    
+
     &:hover, &:active {
-        color: $colorButtonHover;
+        color: lighten($um-blue, $tintHoverFocus); // #3f86f2
     }
 }
 
 .pager__active-page {
     @extend .pager__page;
-    
+
     position: absolute;
     top: 0;
     left: 0;

@@ -13,7 +13,7 @@
 .content-cover__image--overlay {
 
     display: none;
-    background-color: $colorOverlayImage;
+    background-color: rgba($colorBlack, 0.3);
     position: absolute;
     top: 0;
     width: 100%;

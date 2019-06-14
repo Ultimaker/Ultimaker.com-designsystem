@@ -25,7 +25,7 @@ $businessLinkCorrection: 2px;
     &:focus,
     &:hover:focus,
     &:focus:active {
-        border-color: lighten($colorMain, $tintHoverFocus);
+        border-color: lighten($um-blue, $tintHoverFocus); // #3f86f2
         @extend %focus;
 
         & * {

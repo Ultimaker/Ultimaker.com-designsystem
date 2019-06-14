@@ -9,11 +9,11 @@
 
     cursor: pointer;
 
-    background-color: $colorNavInit;
+    background-color: $colorBlack;
     transition: background $defaultDuration ease(easeOutQuint);
 
     &:hover {
-        background-color: lighten($colorNavInit, $tintHoverFocus*3);
+        background-color: lighten($colorBlack, $tintHoverFocus * 3); // #3d3d3d
     }
 }
 
@@ -68,7 +68,7 @@
     transition: background $defaultDuration ease(easeOutQuint);
 
     &:hover {
-        background-color: darken($colorWhite, $tintHoverFocus);
+        background-color: darken($colorWhite, $tintHoverFocus); // #ebebeb
     }
 
     .nav-assist__line {

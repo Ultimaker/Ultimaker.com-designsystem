@@ -89,7 +89,7 @@
 // Table body cells
 .table-compare__table tbody td {
     border-top: 1px solid $colorGray;
-    color: $colorMain;
+    color: $um-blue;
     height: 4 * $buildingUnit;
     padding: 0 0.5 * $buildingUnit;
     scroll-snap-align: start end;
@@ -132,7 +132,7 @@
     background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
 
     main .organism:nth-child(even) & {
-        background: linear-gradient(to left, transparentize($colorBgGray, 1), $colorBgGray $buildingUnit);
+        background: linear-gradient(to left, transparentize($colorGraySuperLight, 1), $colorGraySuperLight $buildingUnit);
     }
 
     min-width: 125px;
