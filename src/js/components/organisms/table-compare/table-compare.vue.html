@@ -24,7 +24,7 @@
                                     {{ row.label }}
                             </div>
                             <div class="table-compare__feature-tooltip"  v-else>
-                                <tooltip-toggle v-bind="row.tooltip" :label="row.tooltip.label || row.label" />
+                                <tooltip-toggle v-bind="row.tooltip" :label="row.label" />
                             </div>
                         </th>
                         <td v-for="cell in row.cells">
