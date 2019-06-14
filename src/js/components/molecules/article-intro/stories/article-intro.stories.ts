@@ -5,19 +5,17 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/article-intro.data';
 import knobsFormat from './article-intro.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                intro: { default: knobs.intro },
-            },
-            template: require('./article-intro.html'),
-        };
+    return {
+        props: {
+            intro: { default: knobs.intro },
+        },
+        template: require('./article-intro.html'),
     };
 };
 

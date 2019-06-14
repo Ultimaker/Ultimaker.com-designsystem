@@ -616,6 +616,24 @@ exports[`Storyshots Atoms|text/inline/sup default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/article-intro default 1`] = `
+<section
+  class="story"
+>
+  <p
+    class="article-intro"
+  >
+    
+    Proin tempor nulla blandit tellus sagittis, in tempor augue malesuada. Sed vel convallis dolor. Nullam iaculis, magna et tristique sagittis, arcu massa hendrerit mi, id dapibus nisi lectus id augue. Aenean nisi ante, tempor et turpis eu, finibus suscipit lacus. Cras venenatis diam vel magna lobortis sollicitudin. Aliquam quis tincidunt mauris. Quisque vehicula vel ante at blandit. Donec quis tempor sapien, ut rutrum quam.
+
+  </p>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/brand default 1`] = `
 <section
   class="story"
@@ -2915,6 +2933,33 @@ exports[`Storyshots Molecules|cards/card-product pla 1`] = `
       </li>
     </ul>
   </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Organisms/article default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="organism article"
+  >
+    <div
+      class="container"
+    >
+      <p
+        class="article-intro"
+        type="ArticleIntro"
+      >
+        
+    Proin tempor nulla blandit tellus sagittis, in tempor augue malesuada. Sed vel convallis dolor. Nullam iaculis, magna et tristique sagittis, arcu massa hendrerit mi, id dapibus nisi lectus id augue. Aenean nisi ante, tempor et turpis eu, finibus suscipit lacus. Cras venenatis diam vel magna lobortis sollicitudin. Aliquam quis tincidunt mauris. Quisque vehicula vel ante at blandit. Donec quis tempor sapien, ut rutrum quam.
+
+      </p>
+    </div>
+  </section>
    
   <div
     class="vue-portal-target"

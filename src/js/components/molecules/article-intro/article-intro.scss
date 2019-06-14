@@ -1,2 +1,9 @@
 .article-intro {
+    @include font-ratio-rhythm(prim-m);
+    margin-bottom: $buildingUnit * 5.25;
+
+    @include min-tablet() {
+        @include font-ratio-rhythm(prim-l);
+        margin-bottom: $buildingUnit * 5;
+    }
 }

@@ -4954,6 +4954,20 @@ table tfoot {
     .wizard-step-confirmation__body {
       text-align: left; } }
 
+.article-intro {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: -5px;
+  margin-bottom: 29px;
+  margin-bottom: 63px; }
+  @media (min-width: 768px) {
+    .article-intro {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: -8px;
+      margin-bottom: 38px;
+      margin-bottom: 60px; } }
+
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .hero--article:nth-child(even) {
   background-color: #fafafa; }
 
