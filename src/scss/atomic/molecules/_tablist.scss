@@ -48,7 +48,7 @@
 
             &:hover {
                 color: $colorBlack;
-                background-color: darken($colorWhite, $tintHoverFocus);
+                background-color: darken($colorWhite, $tintHoverFocus); // #ebebeb
             }
             &:focus:not(:hover) {
                 @extend %focus;

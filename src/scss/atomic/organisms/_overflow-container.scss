@@ -50,7 +50,7 @@
         }
 
         &::-webkit-scrollbar-thumb {
-            background-color: $colorButtonHover;
+            background-color: lighten($um-blue, $tintHoverFocus); // #3f86f2
         }
     }
 }

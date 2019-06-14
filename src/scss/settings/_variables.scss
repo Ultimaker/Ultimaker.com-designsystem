@@ -103,43 +103,25 @@ $iconSizeLarge: $buildingUnit * 2;
 // Tints
 $tintHoverFocus: 8%; // This is the equivalent of the grayscale of $colorGrayLight (which is: 8% black)
 $tintActive: 4%; // This is the equivalent of the grayscale of $colorGrayLightExtra (which is: 4% black)
-$tintInactive: 50%;
 
-// Colors
-$colorMain: #0ca9e3;
+// Primary colors
+$um-blue: #196ef0;
+$um-dark-blue: #061884;
+$um-gray: #b4b4b4;
+
+// Other colors
 $colorError: #ea5354;
-$colorLike: #ea5354;
-$colorOnline: #87d128;
 $colorNotification: #cc001a;
 
 // Grayscales
-$colorBlack: #000000;
-$colorImageFill: #bababa;
+$colorBlack: #000;
 $colorGrayDark: #7f7f7f;
 $colorGrayMedium: #b2b2b2;
 $colorGray: #e3e3e3;
 $colorGrayLight: #eaeaea;
 $colorGrayExtraLight: #f5f5f5;
-$colorWhite: #ffffff;
-
-// Social Media Colors
-$colorFacebook: #3b5998;
-$colorTwitter: #00b6f1;
-$colorGooglePlus: #df4a32;
-$colorLinkedIn: #007bb6;
-$colorWhatsapp: #43d854;
-
-// Color applications
-$colorButton: $colorMain;
-$colorButtonHover: lighten($colorButton, $tintHoverFocus);
-$colorIconButton: $colorWhite;
-$colorNavInit: $colorBlack;
-$colorBgGray: darken($colorWhite, 2%);
-
-// Colors accessibility
-
-// Overlays
-$colorOverlayImage: rgba($colorBlack, 0.3);
+$colorGraySuperLight: #fafafa;
+$colorWhite: #fff;
 
 //Animations
 $defaultDuration: 0.3s;
@@ -151,5 +133,5 @@ $defaultIconSize: 1em;
 //Header
 $headerHeight: $buildingUnit * 5;
 
-$defaultBoxShadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-    0 3px 3px rgba(0, 0, 0, 0.23);
+$defaultBoxShadow: 0 10px 20px rgba($colorBlack, 0.19),
+    0 3px 3px rgba($colorBlack, 0.23);

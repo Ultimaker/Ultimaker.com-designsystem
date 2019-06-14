@@ -95,7 +95,7 @@
             @include object-fit(cover);
         }
         &-overlay {
-            background-color: $colorOverlayImage;
+            background-color: rgba($colorBlack, 0.3);
         }
         &--full,
         &-overlay {

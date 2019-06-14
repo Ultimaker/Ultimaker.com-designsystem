@@ -16,7 +16,7 @@
             color: $colorBlack;
             outline: 0;
 
-            background-color: darken($colorWhite, $tintHoverFocus);
+            background-color: darken($colorWhite, $tintHoverFocus); // #ebebeb
         }
 
         &:focus:not(:hover),

@@ -24,15 +24,15 @@ button, .button, input[type="button"], input[type="submit"] {
     @include font-line-ratio(sec-xs);
 
     color: $colorWhite;
-    background-color: $colorButton;
+    background-color: $um-blue;
     cursor: pointer;
 
     @include micro-animate(color, background-color, border-color);
 
     &:hover {
         color: $colorWhite;
-        background-color: $colorButtonHover;
-        outline:0;
+        background-color: lighten($um-blue, $tintHoverFocus); // #3f86f2
+        outline: 0;
     }
     &:focus {
         @extend %focus;
@@ -53,7 +53,7 @@ button, .button, input[type="button"], input[type="submit"] {
 
         border-style: solid;
         border-width: 0 $triangleWidth $triangleHeight 0;
-        border-color: transparent transparent $colorMain transparent;
+        border-color: transparent transparent $um-blue transparent;
 
         @include micro-animate(border-color);
     }
@@ -71,17 +71,18 @@ button, .button, input[type="button"], input[type="submit"] {
 
     &:hover, &:focus {
         &:before {
-            border-color: transparent transparent lighten($colorButton, $tintHoverFocus) transparent;
+            border-color: transparent transparent
+                lighten($um-blue, $tintHoverFocus) transparent; // #3f86f2
         }
     }
 }
 
 .button--secondary {
     background: transparent;
-    border: 2px solid $colorMain;
-    padding-top:  ($buildingUnit * 0.75) - 2;
-    padding-bottom:  ($buildingUnit * 0.75) - 2;
-    color: $colorMain;
+    border: 2px solid $um-blue;
+    padding-top: ($buildingUnit * 0.75) - 2;
+    padding-bottom: ($buildingUnit * 0.75) - 2;
+    color: $um-blue;
 
     @include min-tablet() {
         padding-top: $buildingUnit - 2; padding-bottom: $buildingUnit - 2;

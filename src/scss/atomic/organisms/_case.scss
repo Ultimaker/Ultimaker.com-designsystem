@@ -46,7 +46,7 @@
     }
     &-overlay {
         z-index: 2;
-        background-color: $colorOverlayImage;
+        background-color: rgba($colorBlack, 0.3);
         width: 100%;
         height: 100%;
     }

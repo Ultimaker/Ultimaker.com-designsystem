@@ -1,11 +1,11 @@
 $focusBorderSize: 2px;
-$colorMainAccessible: #007faa; /* Picked an accessible color from colorsafe.co to try out some time */
+$um-blueAccessible: #007faa; /* Picked an accessible color from colorsafe.co to try out some time */
 
 %focus {
         color: $colorWhite;
-        background-color: lighten($colorMain, $tintHoverFocus);
+        background-color: lighten($um-blue, $tintHoverFocus); // #3f86f2
 }
 
 %focus-outline {
-        outline: $focusBorderSize solid lighten($colorMain, $tintHoverFocus);
+        outline: $focusBorderSize solid lighten($um-blue, $tintHoverFocus); // #3f86f2
 }

@@ -54,7 +54,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
         &:hover,
         &:focus {
-            color: lighten($colorGrayDark, $tintHoverFocus);
+            color: lighten($colorGrayDark, $tintHoverFocus); // #939393
         }
 
         @include min-desktop {
@@ -153,7 +153,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 
         &:hover,
         &:focus {
-            color: lighten($colorGrayDark, $tintHoverFocus);
+            color: lighten($colorGrayDark, $tintHoverFocus); // #939393
         }
 
         @include min-desktop {

@@ -7,7 +7,7 @@
     align-items: center;
 
     &:hover {
-        color: lighten($colorGrayDark, $tintHoverFocus);
+        color: lighten($colorGrayDark, $tintHoverFocus); // #939393
     }
 
     &:focus {
