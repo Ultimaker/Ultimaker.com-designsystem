@@ -2,8 +2,8 @@ import addNotes from 'src/stories/helpers/add-notes';
 import addStories from 'src/stories/helpers/add-stories';
 import getKnobs from 'src/stories/helpers/get-knobs';
 
-import { data } from '../data/article.data';
-import knobsFormat from './article.knobs-format';
+import { data } from '../data/article-content.data';
+import knobsFormat from './article-content.knobs-format';
 
 const getStory = (type) => {
     return () => {
@@ -14,8 +14,9 @@ const getStory = (type) => {
 
         return {
             props: {
+                molecules: { default: knobs.molecules },
             },
-            template: require('./article.html'),
+            template: require('./article-content.html'),
         };
     };
 };
@@ -25,5 +26,5 @@ addStories({
     getStory,
     decorators: ['withKnobs'],
     kind: 'Organisms/article',
-    notes: addNotes(require('./article.md')),
+    notes: addNotes(require('./article-content.md')),
 });
