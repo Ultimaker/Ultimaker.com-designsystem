@@ -28,7 +28,11 @@
     }
 
     &__tooltip-label {
-        margin-top: ($buildingUnit * -1.5);
+        margin-top: $buildingUnit * -1;
+
+        @include min-tablet() {
+            margin-top: $buildingUnit * -1.5;
+        }
     }
 
     &__value {
