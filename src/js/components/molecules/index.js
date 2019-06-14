@@ -45,4 +45,3 @@ export { default as ModalButton } from 'molecules/modal-button';
 export { default as ModalWizard } from 'molecules/modal-wizard';
 export { default as WizardStepConfirmation } from 'molecules/wizard-step-confirmation';
 export { default as ArticleIntro } from 'molecules/article-intro';
-

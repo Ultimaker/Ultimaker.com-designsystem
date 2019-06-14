@@ -4440,6 +4440,20 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .wizard-step-confirmation__body {
       text-align: left; } }
 
+.um-components .article-intro {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: -5px;
+  margin-bottom: 29px;
+  margin-bottom: 63px; }
+  @media (min-width: 768px) {
+    .um-components .article-intro {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: -8px;
+      margin-bottom: 38px;
+      margin-bottom: 60px; } }
+
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
   background-color: #fafafa; }
 

@@ -5,19 +5,17 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/article-content.data';
 import knobsFormat from './article-content.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                molecules: { default: knobs.molecules },
-            },
-            template: require('./article-content.html'),
-        };
+    return {
+        props: {
+            molecules: { default: knobs.molecules },
+        },
+        template: require('./article-content.html'),
     };
 };
 
