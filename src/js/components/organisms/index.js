@@ -8,4 +8,5 @@ export { default as ContentHighlight } from 'organisms/content-highlight';
 
 export { default as TableCompare } from 'organisms/table-compare';
 export { default as TabbedTable } from 'organisms/tabbed-table';
+export { default as Article } from 'organisms/article';
 export { default as HeroArticle } from 'organisms/hero-article';
