@@ -16,27 +16,27 @@
         border-bottom: 2px solid $colorGrayLight;
     }
 
-    &__tooltip-label,
-    &__label {
+    &__label,
+    &__label--tooltip {
         flex: 1;
         font-weight: map-get($fontWeights, "semibold");
         @include font-line-ratio(prim-s);
 
         &-text {
-            margin: -2px ($buildingUnit * 1.5) 0;
+            margin: 0 ($buildingUnit * 1.5) 11px;
         }
     }
 
-    &__tooltip-label {
+    &__label--tooltip {
         margin-top: $buildingUnit * -1;
 
         @include min-tablet() {
-            margin-top: $buildingUnit * -1.5;
+            margin-top: -16px;
         }
     }
 
     &__value {
-        margin: ($buildingUnit * 1.75) ($buildingUnit * 1.5) 0;
+        margin: 0 ($buildingUnit * 1.5);
         @include font-line-ratio(prim-s);
 
         @include min-tablet() {
