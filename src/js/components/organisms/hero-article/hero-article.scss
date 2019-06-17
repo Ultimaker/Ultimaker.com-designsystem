@@ -31,6 +31,17 @@
         color: $colorWhite;
         margin-bottom: 0;
     }
+
+    .header-block__title--hero{
+        margin-bottom: 0;
+    }
+
+    .header-block__title--hero +  .header-block__subtitle--hero {
+        margin-top: $buildingUnit * 1.5;
+        @include min-tablet() {
+            margin-top: $buildingUnit * 2;
+        }
+    }
 }
 
 .hero-article__image--full {
