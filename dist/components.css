@@ -4968,6 +4968,23 @@ table tfoot {
       margin-bottom: 38px;
       margin-bottom: 60px; } }
 
+.article-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+  .article-image__caption {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #7f7f7f; }
+    @media (min-width: 768px) {
+      .article-image__caption {
+        margin-top: 24px; } }
+
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .hero--article:nth-child(even) {
   background-color: #fafafa; }
 

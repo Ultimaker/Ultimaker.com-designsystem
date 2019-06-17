@@ -616,6 +616,33 @@ exports[`Storyshots Atoms|text/inline/sup default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/article-image default 1`] = `
+<section
+  class="story"
+>
+  <figure
+    class="article-image"
+  >
+    <img
+      alt="bla bla"
+      class="img--contain img--loading"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+    />
+     
+    <figcaption
+      class="article-image__caption"
+    >
+      Im the caption of the image
+    </figcaption>
+  </figure>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/article-intro default 1`] = `
 <section
   class="story"

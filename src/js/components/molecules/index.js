@@ -46,3 +46,4 @@ export { default as ModalWizard } from 'molecules/modal-wizard';
 export { default as WizardStepConfirmation } from 'molecules/wizard-step-confirmation';
 export { default as ArticleIntro } from 'molecules/article-intro';
 export { default as ArticleText } from 'molecules/article-text';
+export { default as ArticleImage } from 'molecules/article-image';
