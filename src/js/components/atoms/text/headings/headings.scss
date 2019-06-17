@@ -35,8 +35,6 @@ h3,
 }
 
 h4,
-h5,
-h6,
 .headline--quaternary,
 .headline--quinary,
 .headline--senary {
@@ -55,16 +53,4 @@ h4 {
         margin-top: -5px;
         margin-bottom: 5px;
     }
-}
-
-h5 {
-    @extend .copy--small;
-    margin-top: -2px;
-    margin-bottom: 5px;
-}
-
-h6 {
-    @extend small;
-    margin-top: 0;
-    margin-bottom: 0;
 }

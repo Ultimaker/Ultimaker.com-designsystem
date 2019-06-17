@@ -93,7 +93,7 @@
 }
 
 .link-list__headline {
-    @extend h5;
+    @include font-ratio-rhythm(prim-s)
     margin-bottom: 8px;
 }
 
