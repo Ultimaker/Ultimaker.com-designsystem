@@ -1,5 +1,5 @@
 // moved original scss from src/scss/atomic/atoms/_type.scss to here
-p {
+p, ul, ol {
     @include font-rhythm(prim-s);
 
     @include min-tablet() {
