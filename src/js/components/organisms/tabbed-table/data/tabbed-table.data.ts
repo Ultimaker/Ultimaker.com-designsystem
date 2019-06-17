@@ -58,7 +58,19 @@ export const data = {
                     },
                     {
                         type: 'TabTableRow',
+                        label: 'Label row one',
+                        value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ex sed magna blandit tempor. Fusce orci turpis, vehicula bibendum ullamcorper eget, accumsan quis mi. ',
+                        tooltip: {
+                            type: 'Tooltip',
+                            label: 'Label tooltip',
+                            icon: 'info',
+                            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar ullamcorper metus, at cursus elit viverra eu.',
+                        },
+                    },
+                    {
+                        type: 'TabTableRow',
                         label: 'Label row two',
+                        value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ex sed magna blandit tempor. Fusce orci turpis, vehicula bibendum ullamcorper eget, accumsan quis mi. ',
                     },
                 ],
             },
