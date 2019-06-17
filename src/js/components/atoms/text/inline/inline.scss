@@ -24,7 +24,7 @@ a {
     p &,
     small &,
     .content--rich li & {
-        font-weight: 400;
+        font-weight: normal;
 
         &:focus:not(:hover),
         &:focus:not(:active) {

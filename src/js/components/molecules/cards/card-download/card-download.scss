@@ -34,7 +34,7 @@
 
 .card-download__title {
     @include font-line-ratio(prim-s);
-    font-weight: 400;
+    font-weight: normal;
 
     @include min-tablet {
         @include font-line-ratio(prim-m);

@@ -19,7 +19,7 @@
     &__label,
     &__label--tooltip {
         flex: 1;
-        font-weight: map-get($fontWeights, "semibold");
+        font-weight: 600;
         @include font-line-ratio(prim-s);
 
         &-text {
