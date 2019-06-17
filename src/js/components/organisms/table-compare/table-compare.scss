@@ -124,7 +124,6 @@
     display: block;
 
 }
-.table-compare__feature-tooltip,
 .table-compare__feature {
     display: inline-block;
     position: relative;
@@ -139,7 +138,7 @@
     max-width: 70vw;
 }
 
-.table-compare__feature {
+.table-compare__feature--no-tooltip {
     padding: 15px 50px 11px ($buildingUnit * 1.5);
     overflow: hidden;
     text-overflow: ellipsis;

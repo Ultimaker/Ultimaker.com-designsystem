@@ -5260,7 +5260,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   scope="row"
                 >
                   <div
-                    class="table-compare__feature-tooltip"
+                    class="table-compare__feature"
                   >
                     <div
                       class="tooltip-toggle"
@@ -5330,7 +5330,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   scope="row"
                 >
                   <div
-                    class="table-compare__feature"
+                    class="table-compare__feature--no-tooltip"
                   >
                     
                                     Fantastic Feature Two
@@ -5371,7 +5371,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   scope="row"
                 >
                   <div
-                    class="table-compare__feature-tooltip"
+                    class="table-compare__feature"
                   >
                     <div
                       class="tooltip-toggle"
@@ -5441,7 +5441,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   scope="row"
                 >
                   <div
-                    class="table-compare__feature-tooltip"
+                    class="table-compare__feature"
                   >
                     <div
                       class="tooltip-toggle"
@@ -5511,7 +5511,7 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                   scope="row"
                 >
                   <div
-                    class="table-compare__feature"
+                    class="table-compare__feature--no-tooltip"
                   >
                     
                                     Feature Five
