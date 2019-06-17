@@ -5836,6 +5836,13 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   .um-components .hero__article-header .header-block__subtitle--hero {
     color: #ffffff;
     margin-bottom: 0; }
+  .um-components .hero__article-header .header-block__title--hero {
+    margin-bottom: 0; }
+  .um-components .hero__article-header .header-block__title--hero + .header-block__subtitle--hero {
+    margin-top: 18px; }
+    @media (min-width: 768px) {
+      .um-components .hero__article-header .header-block__title--hero + .header-block__subtitle--hero {
+        margin-top: 24px; } }
 
 .um-components .hero-article__image--full {
   object-fit: cover; }
