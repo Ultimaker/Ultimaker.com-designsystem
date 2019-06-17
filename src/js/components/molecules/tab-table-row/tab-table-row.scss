@@ -23,7 +23,7 @@
         @include font-line-ratio(prim-s);
 
         &-text {
-            margin: -2px 0 0 ($buildingUnit * 1.5);
+            margin: -2px ($buildingUnit * 1.5) 0;
         }
     }
 
@@ -36,11 +36,11 @@
     }
 
     &__value {
-        margin-top: $buildingUnit * 1.75;
+        margin: ($buildingUnit * 1.75) ($buildingUnit * 1.5) 0;
         @include font-line-ratio(prim-s);
 
         @include min-tablet() {
-            margin-top: 0;
+            margin: 0;
         }
     }
 
@@ -49,18 +49,23 @@
     }
 
     &__linklist {
-        margin-top: $buildingUnit * 1.75;
-
         @extend %reset-list;
+        margin: ($buildingUnit * 1.75) ($buildingUnit * 1.5) 0;
 
-        .tab-table-row__linklist-item{
-            .tab-table-row__linklist-link{
+        @include min-tablet() {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+
+        .tab-table-row__linklist-item {
+            .tab-table-row__linklist-link {
                 margin-bottom: $buildingUnit / 2;
             }
         }
 
-        .tab-table-row__linklist-item:last-child{
-            .tab-table-row__linklist-link{
+        .tab-table-row__linklist-item:last-child {
+            .tab-table-row__linklist-link {
                 margin-bottom: 0;
             }
         }
