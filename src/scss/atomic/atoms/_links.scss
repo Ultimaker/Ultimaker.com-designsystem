@@ -28,7 +28,6 @@
 
 .link--large {
     display: inline-block;
-    @extend %fontSecondary;
 
     @include font-line-ratio(sec-xs);
 

@@ -1,22 +1,36 @@
 // Fonts
 
-//@include font-face('woff/woff2 only', 'family_name', 'sub_folder', 'filename_no_ext', 'font_weight', 'font_style');
+@font-face {
+    font-family: 'Noto Sans Init';
+    src: url("#{$fontPath}/noto-sans/NotoSans-Regular.woff2") format("woff2");
+}
 
-// Viewcounter for myfonts.
-// Should only be implemented for production
-//
-//npm i@import url("//hello.myfonts.net/count/321a0b");
+@font-face {
+    font-family: 'Noto Sans';
+    src: url("#{$fontPath}/noto-sans/NotoSans-Regular.woff2") format("woff2");
+}
 
+@font-face {
+    font-family: 'Noto Sans';
+    src: url("#{$fontPath}/noto-sans/NotoSans-Italic.woff2") format("woff2");
+    font-style: italic;
+}
 
-@include font-face('fugue-init', 'fugue', 'fugue-ultimaker-regular');
-@include font-face('univers-init', 'univers', 'univers-light', 100);
+@font-face {
+    font-family: 'Noto Sans';
+    src: url("#{$fontPath}/noto-sans/NotoSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
 
-@include font-face('fugue', 'fugue', 'fugue-ultimaker-regular');
-@include font-face('univers', 'univers', 'univers-light', 100);
-@include font-face('univers', 'univers', 'univers-light-italic', 100, italic);
-@include font-face('univers', 'univers', 'univers-regular', 400);
-@include font-face('univers', 'univers', 'univers-regular-italic', 400, italic);
-@include font-face('univers', 'univers', 'univers-bold', 600);
-@include font-face('univers', 'univers', 'univers-bold-italic', 600, italic);
-@include font-face('univers', 'univers', 'univers-black', 900);
-@include font-face('univers', 'univers', 'univers-black-italic', 900, italic);
+@font-face {
+    font-family: 'Noto Sans';
+    src: url("#{$fontPath}/noto-sans/NotoSans-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url("#{$fontPath}/noto-sans/NotoSans-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+}

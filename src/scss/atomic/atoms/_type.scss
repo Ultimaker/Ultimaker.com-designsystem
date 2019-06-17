@@ -3,15 +3,14 @@
 // Root element
 html {
     @include font-line-ratio(prim-s);
-    font-weight: 100;
-    font-family: $fontPrimary;
+    font-family: $fontStack;
 
     &.fonts--stage-one {
-        font-family: $fontPrimaryStageOne;
+        font-family: $fontStackStageOne;
     }
 
     &.fonts--stage-one {
-        font-family: $fontPrimaryStageTwo;
+        font-family: $fontStackStageTwo;
     }
 
     color: $colorBlack;

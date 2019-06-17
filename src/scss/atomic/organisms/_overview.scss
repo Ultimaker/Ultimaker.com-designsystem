@@ -4,7 +4,6 @@
 }
 
 .overview__tooltip {
-    @extend %fontPrimary;
     @include font-line-ratio(prim-s);
 
     max-width: 296px;

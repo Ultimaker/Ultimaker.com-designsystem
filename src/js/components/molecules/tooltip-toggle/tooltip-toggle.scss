@@ -4,7 +4,6 @@
 }
 
 .tooltip-toggle__tooltip {
-    @extend %fontPrimary;
     @include font-line-ratio(prim-s);
     bottom: $buildingUnit * 5;
 }
