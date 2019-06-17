@@ -12,6 +12,7 @@ export default (providedOptions) => {
         getStory: type => type,
         kind: '',
         notes: {},
+        knobs: {},
     };
 
     const options = {
@@ -29,7 +30,10 @@ export default (providedOptions) => {
         type => stories.add(
             type,
             options.getStory(type),
-            options.notes,
+            {
+                ...options.notes,
+                knobs: options.knobs,
+            },
         ),
     );
 };
