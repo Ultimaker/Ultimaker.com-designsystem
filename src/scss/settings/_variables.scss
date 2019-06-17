@@ -3,20 +3,13 @@
 $buildingUnit: 12px;
 
 // Source Paths
-$pathFont: "../../static/fonts/";
+$fontPath: "../../static/fonts/";
 $pathImage: "../../static/media/images/";
-$fontLineHeight: 1.5rem;
 
 // Fonts
-$fontArial: Arial, "Helvetica Neue", Helvetica, sans-serif;
-$fontPrimary: $fontArial;
-$fontSecondary: $fontArial;
-
-$fontPrimaryStageOne: "univers-init", $fontArial;
-$fontSecondaryStageOne: "fugue-init", $fontArial;
-
-$fontPrimaryStageTwo: "univers", $fontArial;
-$fontSecondaryStageTwo: "fugue", $fontArial;
+$fontStack: sans-serif;
+$fontStackStageOne: "Noto Sans Init", sans-serif;
+$fontStackStageTwo: "Noto Sans", sans-serif;
 
 // Font weights
 $fontWeights: (

@@ -78,13 +78,13 @@
 }
 
 .icon-button--underline-large {
-    @extend %fontSecondary;
     @include font-ratio-rhythm(sec-xs);
     @include min-tablet() {
         @include font-ratio-rhythm(sec-s);
     }
 
     display: inline;
+    font-family: inherit;
     position: relative;
     padding-left: $iconSizeLarge *  (5 / 3);
     color: $colorBlack;

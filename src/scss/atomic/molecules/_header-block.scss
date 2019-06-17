@@ -39,7 +39,6 @@
         margin-top: $buildingUnit * 2;
     }
 
-    @extend %fontSecondary;
     font-weight: 400;
 
     @include font-line-ratio(sec-s);

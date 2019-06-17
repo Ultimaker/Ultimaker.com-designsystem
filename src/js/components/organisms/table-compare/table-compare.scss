@@ -52,7 +52,6 @@
 // Column header cells
 .table-compare__table thead th[scope="col"] {
     border-bottom: 2px solid $colorGray;
-    @extend %fontSecondary;
     font-weight: normal;
     font-size: 1.5 * $buildingUnit;
     padding: 0 $buildingUnit 2 * $buildingUnit;

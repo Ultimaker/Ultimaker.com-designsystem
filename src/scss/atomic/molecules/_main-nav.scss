@@ -138,7 +138,6 @@ $mainNavBorder: 1px solid $colorGray;
 
     color: $colorBlack;
 
-    @extend %fontSecondary;
     @include font-line-ratio(sec-xxs);
     @include micro-animate(background-color);
 

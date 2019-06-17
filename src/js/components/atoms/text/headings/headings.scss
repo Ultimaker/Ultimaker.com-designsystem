@@ -3,7 +3,6 @@
 h1,
 h2,
 h3 {
-    @extend %fontSecondary;
     font-weight: 400;
 }
 
@@ -41,7 +40,6 @@ h6,
 .headline--quaternary,
 .headline--quinary,
 .headline--senary {
-    @extend %fontPrimary;
     font-weight: 600;
 }
 

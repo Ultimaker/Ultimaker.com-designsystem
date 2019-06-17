@@ -25,7 +25,7 @@ input[type="submit"] {
         margin-bottom: $buildingUnit;
     }
 
-    @extend %fontSecondary;
+    font-family: inherit;
     @include font-line-ratio(sec-xs);
 
     color: $colorWhite;

@@ -41,7 +41,6 @@ strong {
         display: inline;
     }
 
-    @extend %fontPrimary;
     font-weight: 600;
 
     @include font-line-ratio(prim-s);
