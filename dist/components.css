@@ -4811,63 +4811,76 @@ table tfoot {
     font-size: 14px;
     line-height: 21px; }
     .tab-table-row__tooltip-label-text, .tab-table-row__label-text {
-      margin: -2px 0 0 18px; }
+      margin: -2px 18px 0; }
   .tab-table-row__tooltip-label {
     margin-top: -12px; }
     @media (min-width: 768px) {
       .tab-table-row__tooltip-label {
         margin-top: -18px; } }
   .tab-table-row__value {
-    margin-top: 21px;
+    margin: 21px 18px 0;
     font-size: 14px;
     line-height: 21px; }
     @media (min-width: 768px) {
       .tab-table-row__value {
-        margin-top: 0; } }
+        margin: 0; } }
   .tab-table-row__content {
     flex: 1; }
   .tab-table-row__linklist {
-    margin-top: 21px; }
+    margin: 21px 18px 0; }
+    @media (min-width: 768px) {
+      .tab-table-row__linklist {
+        margin-right: 0;
+        margin-left: 0; } }
     .tab-table-row__linklist .tab-table-row__linklist-item .tab-table-row__linklist-link {
       margin-bottom: 6px; }
     .tab-table-row__linklist .tab-table-row__linklist-item:last-child .tab-table-row__linklist-link {
       margin-bottom: 0; }
 
 .card-download {
-  display: flex;
-  padding: 12px;
-  border: 2px solid #eaeaea;
   width: 100%; }
+
+.card-download__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.card-download__label {
+  border: 2px solid #eaeaea;
+  cursor: pointer;
+  display: flex;
+  padding: 12px; }
   @media (min-width: 768px) {
-    .card-download {
+    .card-download__label {
       padding: 18px; } }
-  .card-download:hover {
-    cursor: pointer; }
-  .card-download--selected {
-    border: 2px solid #0ca9e3; }
-  .card-download__radio-element {
-    display: none; }
-  .card-download__image-wrapper {
-    width: 45px;
-    height: 45px;
-    margin-right: 18px; }
-    @media (min-width: 768px) {
-      .card-download__image-wrapper {
-        width: 60px;
-        height: 60px; } }
-  .card-download__title {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400; }
-    @media (min-width: 768px) {
-      .card-download__title {
-        font-size: 16px;
-        line-height: 24px; } }
-  .card-download__description {
-    font-size: 14px;
-    line-height: 21px;
-    color: #7F7F7F;
-    margin-bottom: 0; }
+  :checked + .card-download__label {
+    border-color: #0ca9e3; }
+
+.card-download__image-wrapper {
+  width: 45px;
+  height: 45px;
+  margin-right: 18px; }
+  @media (min-width: 768px) {
+    .card-download__image-wrapper {
+      width: 60px;
+      height: 60px; } }
+
+.card-download__title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    .card-download__title {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.card-download__desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #7F7F7F;
+  margin-bottom: 0; }
 
 .wizard-step-download-list {
   display: flex;
@@ -6181,7 +6194,6 @@ svg text {
   position: relative;
   display: block; }
 
-.table-compare__feature-tooltip,
 .table-compare__feature {
   display: inline-block;
   position: relative;
@@ -6189,10 +6201,10 @@ svg text {
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff 12px);
   min-width: 125px;
   max-width: 70vw; }
-  main .organism:nth-child(even) .table-compare__feature-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature-tooltip, main .hero--products:nth-child(even) .table-compare__feature-tooltip, main .hero--products-application:nth-child(even) .table-compare__feature-tooltip, main .hero--text:nth-child(even) .table-compare__feature-tooltip, main .hero--cover:nth-child(even) .table-compare__feature-tooltip, main .ubr:nth-child(even) .table-compare__feature-tooltip, main .examples:nth-child(even) .table-compare__feature-tooltip, main .explore:nth-child(even) .table-compare__feature-tooltip, main .ecosystem:nth-child(even) .table-compare__feature-tooltip, main .case:nth-child(even) .table-compare__feature-tooltip, main .brands:nth-child(even) .table-compare__feature-tooltip, main .general-content:nth-child(even) .table-compare__feature-tooltip, main .content-general:nth-child(even) .table-compare__feature-tooltip, main .overview:nth-child(even) .table-compare__feature-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature-tooltip, main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .hero--products:nth-child(even) .table-compare__feature, main .hero--products-application:nth-child(even) .table-compare__feature, main .hero--text:nth-child(even) .table-compare__feature, main .hero--cover:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .overview:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature {
+  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .hero--products:nth-child(even) .table-compare__feature, main .hero--products-application:nth-child(even) .table-compare__feature, main .hero--text:nth-child(even) .table-compare__feature, main .hero--cover:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .overview:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
-.table-compare__feature {
+.table-compare__feature--no-tooltip {
   padding: 15px 50px 11px 18px;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -6583,17 +6595,20 @@ because both families serve another purpose. Therefore the line-heights will be 
   border: 0; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
-.hardcoded {
-  color: red !important; }
-
-.validation--required {
-  color: #ea5354 !important; }
-
 .disable-focus:focus, .disable-focus:active {
   color: inherit !important;
   background: inherit !important;
   outline: inherit !important;
   border: inherit !important; }
+
+.hardcoded {
+  color: red !important; }
+
+.disable-scroll {
+  overflow: hidden; }
+
+.validation--required {
+  color: #ea5354 !important; }
 
 
 /*# sourceMappingURL=components.css.map*/
