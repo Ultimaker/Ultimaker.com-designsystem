@@ -918,11 +918,11 @@ button, .button, input[type="button"], input[type="submit"] {
   top: 0;
   right: 0; }
 
-p, strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item {
+p, strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item, ul, .hero--text .content--rich ul, ol {
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
-    p, strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item {
+    p, strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item, ul, .hero--text .content--rich ul, ol {
       margin-top: -5px;
       margin-bottom: 29px; } }
 

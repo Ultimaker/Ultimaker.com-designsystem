@@ -454,11 +454,11 @@ because both families serve another purpose. Therefore the line-heights will be 
   top: 0;
   right: 0; }
 
-.um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
+.um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item, .um-components ul, .um-components .hero--text .content--rich ul, .um-components ol {
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
+    .um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item, .um-components ul, .um-components .hero--text .content--rich ul, .um-components ol {
       margin-top: -5px;
       margin-bottom: 29px; } }
 

@@ -1,6 +1,5 @@
 import {configure, addDecorator, addParameters} from '@storybook/vue';
 import {withNotes} from '@storybook/addon-notes';
-import {withKnobs} from '@storybook/addon-knobs';
 import storyRouter from 'storybook-vue-router';
 
 import Vue from 'vue';
