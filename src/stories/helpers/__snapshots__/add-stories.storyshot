@@ -4842,6 +4842,57 @@ exports[`Storyshots Organisms/hero-article default 1`] = `
               Im the title of the article
             </h1>
              
+            <!---->
+          </div>
+        </header>
+      </div>
+    </section>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Organisms/hero-article subtitle 1`] = `
+<section
+  class="story"
+>
+  <article
+    class="hero hero--article organism"
+  >
+    <div
+      class="hero-article__image--full"
+    >
+      <img
+        alt="bla bla"
+        class="img--contain img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+      />
+    </div>
+     
+    <div
+      class="hero-article__image--overlay"
+    />
+     
+    <section
+      class="hero-article__container container"
+    >
+      <div
+        class="flexgrid__cell--xs-12 hero--article-reset"
+      >
+        <header
+          class="header-block hero__article-header header-block--hero"
+        >
+          <div>
+            <h1
+              class="hero__title header-block__title--hero"
+            >
+              Im the title of the article
+            </h1>
+             
             <h2
               class="hero__subtitle header-block__subtitle--hero"
             >
