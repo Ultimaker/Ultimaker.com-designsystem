@@ -1,6 +1,6 @@
 {
     "name": "@ultimaker/ultimaker.com-designsystem",
-    "version": "3.7.4",
+    "version": "3.8.0",
     "description": "Ultimaker.com design system for vue components",
     "repository": "github:Ultimaker/Ultimaker.com-designsystem",
     "license": "UNLICENSED",
