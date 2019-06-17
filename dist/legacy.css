@@ -4297,63 +4297,76 @@ because both families serve another purpose. Therefore the line-heights will be 
     font-size: 14px;
     line-height: 21px; }
     .um-components .tab-table-row__tooltip-label-text, .um-components .tab-table-row__label-text {
-      margin: -2px 0 0 18px; }
+      margin: -2px 18px 0; }
   .um-components .tab-table-row__tooltip-label {
     margin-top: -12px; }
     @media (min-width: 768px) {
       .um-components .tab-table-row__tooltip-label {
         margin-top: -18px; } }
   .um-components .tab-table-row__value {
-    margin-top: 21px;
+    margin: 21px 18px 0;
     font-size: 14px;
     line-height: 21px; }
     @media (min-width: 768px) {
       .um-components .tab-table-row__value {
-        margin-top: 0; } }
+        margin: 0; } }
   .um-components .tab-table-row__content {
     flex: 1; }
   .um-components .tab-table-row__linklist {
-    margin-top: 21px; }
+    margin: 21px 18px 0; }
+    @media (min-width: 768px) {
+      .um-components .tab-table-row__linklist {
+        margin-right: 0;
+        margin-left: 0; } }
     .um-components .tab-table-row__linklist .tab-table-row__linklist-item .tab-table-row__linklist-link {
       margin-bottom: 6px; }
     .um-components .tab-table-row__linklist .tab-table-row__linklist-item:last-child .tab-table-row__linklist-link {
       margin-bottom: 0; }
 
 .um-components .card-download {
-  display: flex;
-  padding: 12px;
-  border: 2px solid #eaeaea;
   width: 100%; }
+
+.um-components .card-download__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.um-components .card-download__label {
+  border: 2px solid #eaeaea;
+  cursor: pointer;
+  display: flex;
+  padding: 12px; }
   @media (min-width: 768px) {
-    .um-components .card-download {
+    .um-components .card-download__label {
       padding: 18px; } }
-  .um-components .card-download:hover {
-    cursor: pointer; }
-  .um-components .card-download--selected {
-    border: 2px solid #0ca9e3; }
-  .um-components .card-download__radio-element {
-    display: none; }
-  .um-components .card-download__image-wrapper {
-    width: 45px;
-    height: 45px;
-    margin-right: 18px; }
-    @media (min-width: 768px) {
-      .um-components .card-download__image-wrapper {
-        width: 60px;
-        height: 60px; } }
-  .um-components .card-download__title {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400; }
-    @media (min-width: 768px) {
-      .um-components .card-download__title {
-        font-size: 16px;
-        line-height: 24px; } }
-  .um-components .card-download__description {
-    font-size: 14px;
-    line-height: 21px;
-    color: #7F7F7F;
-    margin-bottom: 0; }
+  .um-components :checked + .card-download__label {
+    border-color: #0ca9e3; }
+
+.um-components .card-download__image-wrapper {
+  width: 45px;
+  height: 45px;
+  margin-right: 18px; }
+  @media (min-width: 768px) {
+    .um-components .card-download__image-wrapper {
+      width: 60px;
+      height: 60px; } }
+
+.um-components .card-download__title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    .um-components .card-download__title {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.um-components .card-download__desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #7F7F7F;
+  margin-bottom: 0; }
 
 .um-components .wizard-step-download-list {
   display: flex;
@@ -5662,7 +5675,6 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   position: relative;
   display: block; }
 
-.um-components .table-compare__feature-tooltip,
 .um-components .table-compare__feature {
   display: inline-block;
   position: relative;
@@ -5670,10 +5682,10 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff 12px);
   min-width: 125px;
   max-width: 70vw; }
-  .um-components main .organism:nth-child(even) .table-compare__feature-tooltip, .um-components main .slider-reveal:nth-child(even) .table-compare__feature-tooltip, .um-components main .hero--products:nth-child(even) .table-compare__feature-tooltip, .um-components main .hero--products-application:nth-child(even) .table-compare__feature-tooltip, .um-components main .hero--text:nth-child(even) .table-compare__feature-tooltip, .um-components main .hero--cover:nth-child(even) .table-compare__feature-tooltip, .um-components main .ubr:nth-child(even) .table-compare__feature-tooltip, .um-components main .examples:nth-child(even) .table-compare__feature-tooltip, .um-components main .explore:nth-child(even) .table-compare__feature-tooltip, .um-components main .ecosystem:nth-child(even) .table-compare__feature-tooltip, .um-components main .case:nth-child(even) .table-compare__feature-tooltip, .um-components main .brands:nth-child(even) .table-compare__feature-tooltip, .um-components main .general-content:nth-child(even) .table-compare__feature-tooltip, .um-components main .content-general:nth-child(even) .table-compare__feature-tooltip, .um-components main .overview:nth-child(even) .table-compare__feature-tooltip, .um-components main .tabbed-content:nth-child(even) .table-compare__feature-tooltip, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature-tooltip, .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .hero--products:nth-child(even) .table-compare__feature, .um-components main .hero--products-application:nth-child(even) .table-compare__feature, .um-components main .hero--text:nth-child(even) .table-compare__feature, .um-components main .hero--cover:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .general-content:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .overview:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature {
+  .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .hero--products:nth-child(even) .table-compare__feature, .um-components main .hero--products-application:nth-child(even) .table-compare__feature, .um-components main .hero--text:nth-child(even) .table-compare__feature, .um-components main .hero--cover:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .general-content:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .overview:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
-.um-components .table-compare__feature {
+.um-components .table-compare__feature--no-tooltip {
   padding: 15px 50px 11px 18px;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -6073,17 +6085,20 @@ because both families serve another purpose. Therefore the line-heights will be 
   border: 0; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
-.um-components .hardcoded {
-  color: red !important; }
-
-.um-components .validation--required {
-  color: #ea5354 !important; }
-
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
   background: inherit !important;
   outline: inherit !important;
   border: inherit !important; }
+
+.um-components .hardcoded {
+  color: red !important; }
+
+.um-components .disable-scroll {
+  overflow: hidden; }
+
+.um-components .validation--required {
+  color: #ea5354 !important; }
 
 
 /*# sourceMappingURL=legacy.css.map*/
