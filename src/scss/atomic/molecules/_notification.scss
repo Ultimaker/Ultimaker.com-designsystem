@@ -14,9 +14,7 @@ $sizeCloseButton: $buildingUnit * 4;
     position: relative;
     background: $colorNotification;
 
-    &__title {
-        @extend h5;
-    }
+    &__title,
     &__copy {
         @extend .copy--small;
     }
