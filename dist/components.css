@@ -6355,6 +6355,13 @@ svg text {
   .hero__article-header .header-block__subtitle--hero {
     color: #ffffff;
     margin-bottom: 0; }
+  .hero__article-header .header-block__title--hero {
+    margin-bottom: 0; }
+  .hero__article-header .header-block__title--hero + .header-block__subtitle--hero {
+    margin-top: 18px; }
+    @media (min-width: 768px) {
+      .hero__article-header .header-block__title--hero + .header-block__subtitle--hero {
+        margin-top: 24px; } }
 
 .hero-article__image--full {
   object-fit: cover; }

@@ -616,7 +616,6 @@ exports[`Storyshots Atoms|text/inline/sup default 1`] = `
 </section>
 `;
 
-<<<<<<< HEAD
 exports[`Storyshots Molecules/article-intro default 1`] = `
 <section
   class="story"
@@ -628,7 +627,13 @@ exports[`Storyshots Molecules/article-intro default 1`] = `
     Proin tempor nulla blandit tellus sagittis, in tempor augue malesuada. Sed vel convallis dolor. Nullam iaculis, magna et tristique sagittis, arcu massa hendrerit mi, id dapibus nisi lectus id augue. Aenean nisi ante, tempor et turpis eu, finibus suscipit lacus. Cras venenatis diam vel magna lobortis sollicitudin. Aliquam quis tincidunt mauris. Quisque vehicula vel ante at blandit. Donec quis tempor sapien, ut rutrum quam.
 
   </p>
-=======
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/article-text default 1`] = `
 <section
   class="story"
@@ -754,7 +759,6 @@ exports[`Storyshots Molecules/article-text default 1`] = `
             
     </div>
   </section>
->>>>>>> feat(hero-text): hero text
    
   <div
     class="vue-portal-target"
