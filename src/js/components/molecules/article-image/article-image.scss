@@ -1,0 +1,19 @@
+.article-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    &__caption {
+        margin-top: $buildingUnit;
+        @include font-line-ratio(prim-xs);
+        color: $colorGrayDark;
+
+        @include min-tablet() {
+            margin-top: $buildingUnit * 2;
+        }
+    }
+}
