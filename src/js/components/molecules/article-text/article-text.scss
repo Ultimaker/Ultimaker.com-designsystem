@@ -1,2 +1,7 @@
 .article-text {
+
+    @include min-tablet {
+        margin: 0 auto;
+        width: 80%;
+    }
 }
