@@ -124,7 +124,8 @@
     display: block;
 
 }
-.table-compare__feature {
+.table-compare__feature,
+.table-compare__feature--no-tooltip {
     display: inline-block;
     position: relative;
     vertical-align: top;
