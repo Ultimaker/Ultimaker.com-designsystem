@@ -4,7 +4,7 @@ import WithRender from './cta-block.vue.html';
 
 @WithRender
 @Component({
-    name: 'cta-block',
+    name: 'CtaBlock',
 })
 
 export default class CtaBlock extends Vue implements CtaBlockProps {

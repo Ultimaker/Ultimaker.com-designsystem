@@ -1,7 +1,9 @@
 export const type = 'CtaBlock';
 export const data = {
     default: {
+        type: 'CtaBlock',
         ctas: [
+
             {
                 type: 'ContentButton',
                 label: 'Call me back',

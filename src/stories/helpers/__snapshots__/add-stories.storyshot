@@ -3239,6 +3239,60 @@ exports[`Storyshots Organisms/article default 1`] = `
             
         </div>
       </section>
+      <div
+        class="cta-block"
+        type="CtaBlock"
+      >
+        <a
+          class="link--primary button cta-link"
+          href="https://ultimaker.com"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Call me back
+    
+          </span>
+        </a>
+        <a
+          class="link link--icon link--large undefined cta-link"
+          href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+          target="_blank"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Watch video
+    
+          </span>
+           
+          <!---->
+        </a>
+        <a
+          class="link--large link cta-link"
+          href="https://ultimaker.com"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Call me back
+    
+          </span>
+        </a>
+      </div>
       <figure
         class="article-image"
         type="ArticleImage"
@@ -3256,6 +3310,358 @@ exports[`Storyshots Organisms/article default 1`] = `
           Im the caption of the image
         </figcaption>
       </figure>
+      <section
+        class="article-text"
+        type="ArticleText"
+      >
+        <div>
+          
+            
+          <h2>
+            H2 title
+          </h2>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <i>
+              Donec feugiat dui sed sodales consequat
+            </i>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <h3>
+            H3 title
+          </h3>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ol>
+            
+                
+            <li>
+              Ordered list item one
+            </li>
+            
+                
+            <li>
+              Ordered list item two
+            </li>
+            
+                
+            <li>
+              Ordered list item three
+            </li>
+            
+                
+            <li>
+              Ordered list item four
+            </li>
+            
+            
+          </ol>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ul>
+            
+                
+            <li>
+              Unordered list item one
+            </li>
+            
+                
+            <li>
+              Unordered list item two
+            </li>
+            
+                
+            <li>
+              Unordered list item three
+            </li>
+            
+                
+            <li>
+              Unordered list item four
+            </li>
+            
+            
+          </ul>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+        </div>
+      </section>
+      <div
+        class="cta-block"
+        type="CtaBlock"
+      >
+        <a
+          class="link--primary button cta-link"
+          href="https://ultimaker.com"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Call me back
+    
+          </span>
+        </a>
+        <a
+          class="link link--icon link--large undefined cta-link"
+          href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+          target="_blank"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Watch video
+    
+          </span>
+           
+          <!---->
+        </a>
+        <a
+          class="link--large link cta-link"
+          href="https://ultimaker.com"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Call me back
+    
+          </span>
+        </a>
+      </div>
+      <section
+        class="article-text"
+        type="ArticleText"
+      >
+        <div>
+          
+            
+          <h2>
+            H2 title
+          </h2>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <i>
+              Donec feugiat dui sed sodales consequat
+            </i>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <h3>
+            H3 title
+          </h3>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ol>
+            
+                
+            <li>
+              Ordered list item one
+            </li>
+            
+                
+            <li>
+              Ordered list item two
+            </li>
+            
+                
+            <li>
+              Ordered list item three
+            </li>
+            
+                
+            <li>
+              Ordered list item four
+            </li>
+            
+            
+          </ol>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ul>
+            
+                
+            <li>
+              Unordered list item one
+            </li>
+            
+                
+            <li>
+              Unordered list item two
+            </li>
+            
+                
+            <li>
+              Unordered list item three
+            </li>
+            
+                
+            <li>
+              Unordered list item four
+            </li>
+            
+            
+          </ul>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+        </div>
+      </section>
+      <div
+        class="cta-block"
+        type="CtaBlock"
+      >
+        <a
+          class="link--primary button cta-link"
+          href="https://ultimaker.com"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Call me back
+    
+          </span>
+        </a>
+        <a
+          class="link link--icon link--large undefined cta-link"
+          href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+          target="_blank"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Watch video
+    
+          </span>
+           
+          <!---->
+        </a>
+        <a
+          class="link--large link cta-link"
+          href="https://ultimaker.com"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Call me back
+    
+          </span>
+        </a>
+      </div>
       <section
         class="article-text"
         type="ArticleText"
@@ -3536,6 +3942,60 @@ exports[`Storyshots Organisms/article noIntro 1`] = `
           Im the caption of the image
         </figcaption>
       </figure>
+      <div
+        class="cta-block"
+        type="CtaBlock"
+      >
+        <a
+          class="link--primary button cta-link"
+          href="https://ultimaker.com"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Call me back
+    
+          </span>
+        </a>
+        <a
+          class="link link--icon link--large undefined cta-link"
+          href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+          target="_blank"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Watch video
+    
+          </span>
+           
+          <!---->
+        </a>
+        <a
+          class="link--large link cta-link"
+          href="https://ultimaker.com"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Call me back
+    
+          </span>
+        </a>
+      </div>
       <section
         class="article-text"
         type="ArticleText"
@@ -6827,6 +7287,60 @@ exports[`Storyshots templates/article default 1`] = `
             
             </div>
           </section>
+          <div
+            class="cta-block"
+            type="CtaBlock"
+          >
+            <a
+              class="link--primary button cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+            <a
+              class="link link--icon link--large undefined cta-link"
+              href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+              target="_blank"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Watch video
+    
+              </span>
+               
+              <!---->
+            </a>
+            <a
+              class="link--large link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+          </div>
           <figure
             class="article-image"
             type="ArticleImage"
@@ -6844,6 +7358,358 @@ exports[`Storyshots templates/article default 1`] = `
               Im the caption of the image
             </figcaption>
           </figure>
+          <section
+            class="article-text"
+            type="ArticleText"
+          >
+            <div>
+              
+            
+              <h2>
+                H2 title
+              </h2>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <i>
+                  Donec feugiat dui sed sodales consequat
+                </i>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <h3>
+                H3 title
+              </h3>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ol>
+                
+                
+                <li>
+                  Ordered list item one
+                </li>
+                
+                
+                <li>
+                  Ordered list item two
+                </li>
+                
+                
+                <li>
+                  Ordered list item three
+                </li>
+                
+                
+                <li>
+                  Ordered list item four
+                </li>
+                
+            
+              </ol>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ul>
+                
+                
+                <li>
+                  Unordered list item one
+                </li>
+                
+                
+                <li>
+                  Unordered list item two
+                </li>
+                
+                
+                <li>
+                  Unordered list item three
+                </li>
+                
+                
+                <li>
+                  Unordered list item four
+                </li>
+                
+            
+              </ul>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+            </div>
+          </section>
+          <div
+            class="cta-block"
+            type="CtaBlock"
+          >
+            <a
+              class="link--primary button cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+            <a
+              class="link link--icon link--large undefined cta-link"
+              href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+              target="_blank"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Watch video
+    
+              </span>
+               
+              <!---->
+            </a>
+            <a
+              class="link--large link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+          </div>
+          <section
+            class="article-text"
+            type="ArticleText"
+          >
+            <div>
+              
+            
+              <h2>
+                H2 title
+              </h2>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <i>
+                  Donec feugiat dui sed sodales consequat
+                </i>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <h3>
+                H3 title
+              </h3>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ol>
+                
+                
+                <li>
+                  Ordered list item one
+                </li>
+                
+                
+                <li>
+                  Ordered list item two
+                </li>
+                
+                
+                <li>
+                  Ordered list item three
+                </li>
+                
+                
+                <li>
+                  Ordered list item four
+                </li>
+                
+            
+              </ol>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ul>
+                
+                
+                <li>
+                  Unordered list item one
+                </li>
+                
+                
+                <li>
+                  Unordered list item two
+                </li>
+                
+                
+                <li>
+                  Unordered list item three
+                </li>
+                
+                
+                <li>
+                  Unordered list item four
+                </li>
+                
+            
+              </ul>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+            </div>
+          </section>
+          <div
+            class="cta-block"
+            type="CtaBlock"
+          >
+            <a
+              class="link--primary button cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+            <a
+              class="link link--icon link--large undefined cta-link"
+              href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+              target="_blank"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Watch video
+    
+              </span>
+               
+              <!---->
+            </a>
+            <a
+              class="link--large link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+          </div>
           <section
             class="article-text"
             type="ArticleText"
@@ -7171,6 +8037,60 @@ exports[`Storyshots templates/article noIntro 1`] = `
               Im the caption of the image
             </figcaption>
           </figure>
+          <div
+            class="cta-block"
+            type="CtaBlock"
+          >
+            <a
+              class="link--primary button cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+            <a
+              class="link link--icon link--large undefined cta-link"
+              href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+              target="_blank"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Watch video
+    
+              </span>
+               
+              <!---->
+            </a>
+            <a
+              class="link--large link cta-link"
+              href="https://ultimaker.com"
+              rel="noopener"
+              target="_self"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Call me back
+    
+              </span>
+            </a>
+          </div>
           <section
             class="article-text"
             type="ArticleText"
