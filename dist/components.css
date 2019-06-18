@@ -4974,8 +4974,11 @@ table tfoot {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0;
+  margin: 0 0 48px 0;
   padding: 0; }
+  @media (min-width: 768px) {
+    .article-image {
+      margin-bottom: 60px; } }
   .article-image__caption {
     margin-top: 12px;
     font-size: 12px;
