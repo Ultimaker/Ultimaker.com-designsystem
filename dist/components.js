@@ -13719,7 +13719,7 @@ exports.ArticleIntro = ArticleIntro;
 /* 325 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('p',{staticClass:"article-intro"},[_vm._v("\n    "+_vm._s(_vm.intro)+"\n")])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"article-intro",domProps:{"innerHTML":_vm._s(_vm.intro)}})}
 var staticRenderFns = []
 
 module.exports = function (_exports) {

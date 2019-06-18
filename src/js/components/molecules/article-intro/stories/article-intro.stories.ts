@@ -24,4 +24,5 @@ addStories({
     getStory,
     decorators: ['withKnobs'],
     kind: 'Molecules/article-intro',
+    knobs: { escapeHTML: false },
 });
