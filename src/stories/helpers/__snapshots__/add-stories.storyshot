@@ -3117,6 +3117,547 @@ exports[`Storyshots Organisms/article default 1`] = `
     Proin tempor nulla blandit tellus sagittis, in tempor augue malesuada. Sed vel convallis dolor. Nullam iaculis, magna et tristique sagittis, arcu massa hendrerit mi, id dapibus nisi lectus id augue. Aenean nisi ante, tempor et turpis eu, finibus suscipit lacus. Cras venenatis diam vel magna lobortis sollicitudin. Aliquam quis tincidunt mauris. Quisque vehicula vel ante at blandit. Donec quis tempor sapien, ut rutrum quam.
 
       </p>
+      <section
+        class="article-text"
+        type="ArticleText"
+      >
+        <div>
+          
+            
+          <h2>
+            H2 title
+          </h2>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <i>
+              Donec feugiat dui sed sodales consequat
+            </i>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <h3>
+            H3 title
+          </h3>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ol>
+            
+                
+            <li>
+              Ordered list item one
+            </li>
+            
+                
+            <li>
+              Ordered list item two
+            </li>
+            
+                
+            <li>
+              Ordered list item three
+            </li>
+            
+                
+            <li>
+              Ordered list item four
+            </li>
+            
+            
+          </ol>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ul>
+            
+                
+            <li>
+              Unordered list item one
+            </li>
+            
+                
+            <li>
+              Unordered list item two
+            </li>
+            
+                
+            <li>
+              Unordered list item three
+            </li>
+            
+                
+            <li>
+              Unordered list item four
+            </li>
+            
+            
+          </ul>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+        </div>
+      </section>
+      <figure
+        class="article-image"
+        type="ArticleImage"
+      >
+        <img
+          alt="bla bla"
+          class="img--contain img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+        />
+         
+        <figcaption
+          class="article-image__caption"
+        >
+          Im the caption of the image
+        </figcaption>
+      </figure>
+      <section
+        class="article-text"
+        type="ArticleText"
+      >
+        <div>
+          
+            
+          <h2>
+            H2 title
+          </h2>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <i>
+              Donec feugiat dui sed sodales consequat
+            </i>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <h3>
+            H3 title
+          </h3>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ol>
+            
+                
+            <li>
+              Ordered list item one
+            </li>
+            
+                
+            <li>
+              Ordered list item two
+            </li>
+            
+                
+            <li>
+              Ordered list item three
+            </li>
+            
+                
+            <li>
+              Ordered list item four
+            </li>
+            
+            
+          </ol>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ul>
+            
+                
+            <li>
+              Unordered list item one
+            </li>
+            
+                
+            <li>
+              Unordered list item two
+            </li>
+            
+                
+            <li>
+              Unordered list item three
+            </li>
+            
+                
+            <li>
+              Unordered list item four
+            </li>
+            
+            
+          </ul>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+        </div>
+      </section>
+    </div>
+  </section>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Organisms/article noIntro 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="organism article"
+  >
+    <div
+      class="container"
+    >
+      <section
+        class="article-text"
+        type="ArticleText"
+      >
+        <div>
+          
+            
+          <h2>
+            H2 title
+          </h2>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <i>
+              Donec feugiat dui sed sodales consequat
+            </i>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <h3>
+            H3 title
+          </h3>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ol>
+            
+                
+            <li>
+              Ordered list item one
+            </li>
+            
+                
+            <li>
+              Ordered list item two
+            </li>
+            
+                
+            <li>
+              Ordered list item three
+            </li>
+            
+                
+            <li>
+              Ordered list item four
+            </li>
+            
+            
+          </ol>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ul>
+            
+                
+            <li>
+              Unordered list item one
+            </li>
+            
+                
+            <li>
+              Unordered list item two
+            </li>
+            
+                
+            <li>
+              Unordered list item three
+            </li>
+            
+                
+            <li>
+              Unordered list item four
+            </li>
+            
+            
+          </ul>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+        </div>
+      </section>
+      <figure
+        class="article-image"
+        type="ArticleImage"
+      >
+        <img
+          alt="bla bla"
+          class="img--contain img--loading"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+        />
+         
+        <figcaption
+          class="article-image__caption"
+        >
+          Im the caption of the image
+        </figcaption>
+      </figure>
+      <section
+        class="article-text"
+        type="ArticleText"
+      >
+        <div>
+          
+            
+          <h2>
+            H2 title
+          </h2>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <i>
+              Donec feugiat dui sed sodales consequat
+            </i>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <h3>
+            H3 title
+          </h3>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ol>
+            
+                
+            <li>
+              Ordered list item one
+            </li>
+            
+                
+            <li>
+              Ordered list item two
+            </li>
+            
+                
+            <li>
+              Ordered list item three
+            </li>
+            
+                
+            <li>
+              Ordered list item four
+            </li>
+            
+            
+          </ol>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <ul>
+            
+                
+            <li>
+              Unordered list item one
+            </li>
+            
+                
+            <li>
+              Unordered list item two
+            </li>
+            
+                
+            <li>
+              Unordered list item three
+            </li>
+            
+                
+            <li>
+              Unordered list item four
+            </li>
+            
+            
+          </ul>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <a
+              href="#"
+            >
+              feugiat dui sed sodales consequat
+            </a>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+        </div>
+      </section>
     </div>
   </section>
    
@@ -6094,6 +6635,668 @@ exports[`Storyshots Organisms|hero/Hero product default 1`] = `
       </div>
     </section>
   </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots templates/article default 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story__template"
+  >
+    <main>
+      <article
+        class="hero hero--article organism"
+      >
+        <div
+          class="hero-article__image--full"
+        >
+          <img
+            alt="bla bla"
+            class="img--contain img--loading"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          />
+        </div>
+         
+        <div
+          class="hero-article__image--overlay"
+        />
+         
+        <section
+          class="hero-article__container container"
+        >
+          <div
+            class="flexgrid__cell--xs-12 hero--article-reset"
+          >
+            <header
+              class="header-block hero__article-header header-block--hero"
+            >
+              <div>
+                <h1
+                  class="hero__title header-block__title--hero"
+                >
+                  Im the title of the article
+                </h1>
+                 
+                <!---->
+              </div>
+            </header>
+          </div>
+        </section>
+      </article>
+       
+      <section
+        class="organism article"
+      >
+        <div
+          class="container"
+        >
+          <p
+            class="article-intro"
+            type="ArticleIntro"
+          >
+            
+    Proin tempor nulla blandit tellus sagittis, in tempor augue malesuada. Sed vel convallis dolor. Nullam iaculis, magna et tristique sagittis, arcu massa hendrerit mi, id dapibus nisi lectus id augue. Aenean nisi ante, tempor et turpis eu, finibus suscipit lacus. Cras venenatis diam vel magna lobortis sollicitudin. Aliquam quis tincidunt mauris. Quisque vehicula vel ante at blandit. Donec quis tempor sapien, ut rutrum quam.
+
+          </p>
+          <section
+            class="article-text"
+            type="ArticleText"
+          >
+            <div>
+              
+            
+              <h2>
+                H2 title
+              </h2>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <i>
+                  Donec feugiat dui sed sodales consequat
+                </i>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <h3>
+                H3 title
+              </h3>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ol>
+                
+                
+                <li>
+                  Ordered list item one
+                </li>
+                
+                
+                <li>
+                  Ordered list item two
+                </li>
+                
+                
+                <li>
+                  Ordered list item three
+                </li>
+                
+                
+                <li>
+                  Ordered list item four
+                </li>
+                
+            
+              </ol>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ul>
+                
+                
+                <li>
+                  Unordered list item one
+                </li>
+                
+                
+                <li>
+                  Unordered list item two
+                </li>
+                
+                
+                <li>
+                  Unordered list item three
+                </li>
+                
+                
+                <li>
+                  Unordered list item four
+                </li>
+                
+            
+              </ul>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+            </div>
+          </section>
+          <figure
+            class="article-image"
+            type="ArticleImage"
+          >
+            <img
+              alt="bla bla"
+              class="img--contain img--loading"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+            />
+             
+            <figcaption
+              class="article-image__caption"
+            >
+              Im the caption of the image
+            </figcaption>
+          </figure>
+          <section
+            class="article-text"
+            type="ArticleText"
+          >
+            <div>
+              
+            
+              <h2>
+                H2 title
+              </h2>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <i>
+                  Donec feugiat dui sed sodales consequat
+                </i>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <h3>
+                H3 title
+              </h3>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ol>
+                
+                
+                <li>
+                  Ordered list item one
+                </li>
+                
+                
+                <li>
+                  Ordered list item two
+                </li>
+                
+                
+                <li>
+                  Ordered list item three
+                </li>
+                
+                
+                <li>
+                  Ordered list item four
+                </li>
+                
+            
+              </ol>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ul>
+                
+                
+                <li>
+                  Unordered list item one
+                </li>
+                
+                
+                <li>
+                  Unordered list item two
+                </li>
+                
+                
+                <li>
+                  Unordered list item three
+                </li>
+                
+                
+                <li>
+                  Unordered list item four
+                </li>
+                
+            
+              </ul>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </section>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots templates/article noIntro 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="story__template"
+  >
+    <main>
+      <article
+        class="hero hero--article organism"
+      >
+        <div
+          class="hero-article__image--full"
+        >
+          <img
+            alt="bla bla"
+            class="img--contain img--loading"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          />
+        </div>
+         
+        <div
+          class="hero-article__image--overlay"
+        />
+         
+        <section
+          class="hero-article__container container"
+        >
+          <div
+            class="flexgrid__cell--xs-12 hero--article-reset"
+          >
+            <header
+              class="header-block hero__article-header header-block--hero"
+            >
+              <div>
+                <h1
+                  class="hero__title header-block__title--hero"
+                >
+                  Im the title of the article
+                </h1>
+                 
+                <!---->
+              </div>
+            </header>
+          </div>
+        </section>
+      </article>
+       
+      <section
+        class="organism article"
+      >
+        <div
+          class="container"
+        >
+          <section
+            class="article-text"
+            type="ArticleText"
+          >
+            <div>
+              
+            
+              <h2>
+                H2 title
+              </h2>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <i>
+                  Donec feugiat dui sed sodales consequat
+                </i>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <h3>
+                H3 title
+              </h3>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ol>
+                
+                
+                <li>
+                  Ordered list item one
+                </li>
+                
+                
+                <li>
+                  Ordered list item two
+                </li>
+                
+                
+                <li>
+                  Ordered list item three
+                </li>
+                
+                
+                <li>
+                  Ordered list item four
+                </li>
+                
+            
+              </ol>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ul>
+                
+                
+                <li>
+                  Unordered list item one
+                </li>
+                
+                
+                <li>
+                  Unordered list item two
+                </li>
+                
+                
+                <li>
+                  Unordered list item three
+                </li>
+                
+                
+                <li>
+                  Unordered list item four
+                </li>
+                
+            
+              </ul>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+            </div>
+          </section>
+          <figure
+            class="article-image"
+            type="ArticleImage"
+          >
+            <img
+              alt="bla bla"
+              class="img--contain img--loading"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+            />
+             
+            <figcaption
+              class="article-image__caption"
+            >
+              Im the caption of the image
+            </figcaption>
+          </figure>
+          <section
+            class="article-text"
+            type="ArticleText"
+          >
+            <div>
+              
+            
+              <h2>
+                H2 title
+              </h2>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <i>
+                  Donec feugiat dui sed sodales consequat
+                </i>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <h3>
+                H3 title
+              </h3>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ol>
+                
+                
+                <li>
+                  Ordered list item one
+                </li>
+                
+                
+                <li>
+                  Ordered list item two
+                </li>
+                
+                
+                <li>
+                  Ordered list item three
+                </li>
+                
+                
+                <li>
+                  Ordered list item four
+                </li>
+                
+            
+              </ol>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <ul>
+                
+                
+                <li>
+                  Unordered list item one
+                </li>
+                
+                
+                <li>
+                  Unordered list item two
+                </li>
+                
+                
+                <li>
+                  Unordered list item three
+                </li>
+                
+                
+                <li>
+                  Unordered list item four
+                </li>
+                
+            
+              </ul>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <a
+                  href="#"
+                >
+                  feugiat dui sed sodales consequat
+                </a>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </section>
    
   <div
     class="vue-portal-target"

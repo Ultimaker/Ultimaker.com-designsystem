@@ -6,4 +6,8 @@ export const data = {
         heroArticle: HeroArticle.default,
         articleContent: ArticleContent.default,
     },
+    noIntro: {
+        heroArticle: HeroArticle.default,
+        articleContent: ArticleContent.noIntro,
+    },
 };
