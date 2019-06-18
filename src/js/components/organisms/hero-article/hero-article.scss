@@ -23,7 +23,9 @@
     text-align: left;
     margin: 0;
 
-    @include min-tablet() {
+    @include min-tablet {
+        margin: 0 auto;
+        width: 80%;
         text-align: center;
     }
 
