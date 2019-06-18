@@ -4291,20 +4291,20 @@ because both families serve another purpose. Therefore the line-heights will be 
     border-top: 2px solid #eaeaea; }
   .um-components .tab-table-row:last-of-type {
     border-bottom: 2px solid #eaeaea; }
-  .um-components .tab-table-row__tooltip-label, .um-components .tab-table-row__label {
+  .um-components .tab-table-row__label, .um-components .tab-table-row__label--tooltip {
     flex: 1;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px; }
-    .um-components .tab-table-row__tooltip-label-text, .um-components .tab-table-row__label-text {
-      margin: -2px 18px 0; }
-  .um-components .tab-table-row__tooltip-label {
+    .um-components .tab-table-row__label-text, .um-components .tab-table-row__label--tooltip-text {
+      margin: 0 18px 11px; }
+  .um-components .tab-table-row__label--tooltip {
     margin-top: -12px; }
     @media (min-width: 768px) {
-      .um-components .tab-table-row__tooltip-label {
-        margin-top: -18px; } }
+      .um-components .tab-table-row__label--tooltip {
+        margin-top: -16px; } }
   .um-components .tab-table-row__value {
-    margin: 21px 18px 0;
+    margin: 0 18px;
     font-size: 14px;
     line-height: 21px; }
     @media (min-width: 768px) {
@@ -5706,14 +5706,15 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   position: relative;
   display: block; }
 
-.um-components .table-compare__feature {
+.um-components .table-compare__feature,
+.um-components .table-compare__feature--no-tooltip {
   display: inline-block;
   position: relative;
   vertical-align: top;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff 12px);
   min-width: 125px;
   max-width: 70vw; }
-  .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .hero--products:nth-child(even) .table-compare__feature, .um-components main .hero--products-application:nth-child(even) .table-compare__feature, .um-components main .hero--text:nth-child(even) .table-compare__feature, .um-components main .hero--cover:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .general-content:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .overview:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature, .um-components main .hero--article:nth-child(even) .table-compare__feature {
+  .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .hero--products:nth-child(even) .table-compare__feature, .um-components main .hero--products-application:nth-child(even) .table-compare__feature, .um-components main .hero--text:nth-child(even) .table-compare__feature, .um-components main .hero--cover:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .general-content:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .overview:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature, .um-components main .hero--article:nth-child(even) .table-compare__feature, .um-components main .organism:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .hero--products:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .hero--products-application:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .hero--text:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .hero--cover:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .ubr:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .examples:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .explore:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .case:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .brands:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .general-content:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .content-general:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .overview:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .hero--article:nth-child(even) .table-compare__feature--no-tooltip {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .um-components .table-compare__feature--no-tooltip {
