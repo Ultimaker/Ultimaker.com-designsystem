@@ -4967,6 +4967,15 @@ table tfoot {
       margin-top: -8px;
       margin-bottom: 38px;
       margin-bottom: 60px; } }
+  @media (min-width: 768px) {
+    .article-intro {
+      margin: 0 auto;
+      width: 66%; } }
+
+@media (min-width: 768px) {
+  .article-text {
+    margin: 0 auto;
+    width: 66%; } }
 
 .article-image {
   width: 100%;
@@ -6372,6 +6381,8 @@ svg text {
   margin: 0; }
   @media (min-width: 768px) {
     .hero__article-header {
+      margin: 0 auto;
+      width: 80%;
       text-align: center; } }
   .hero__article-header .header-block__subtitle--hero {
     color: #ffffff;
@@ -6397,6 +6408,16 @@ svg text {
   top: 0;
   width: 100%;
   height: 100%; }
+
+.article .cta-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+  margin-bottom: 27px; }
+  @media (min-width: 768px) {
+    .article .cta-block {
+      margin-top: 36px;
+      margin-bottom: 36px; } }
 
 /** @format */
 /** @format */

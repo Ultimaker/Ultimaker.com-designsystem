@@ -4453,6 +4453,15 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-top: -8px;
       margin-bottom: 38px;
       margin-bottom: 60px; } }
+  @media (min-width: 768px) {
+    .um-components .article-intro {
+      margin: 0 auto;
+      width: 66%; } }
+
+@media (min-width: 768px) {
+  .um-components .article-text {
+    margin: 0 auto;
+    width: 66%; } }
 
 .um-components .article-image {
   width: 100%;
@@ -5853,6 +5862,8 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   margin: 0; }
   @media (min-width: 768px) {
     .um-components .hero__article-header {
+      margin: 0 auto;
+      width: 80%;
       text-align: center; } }
   .um-components .hero__article-header .header-block__subtitle--hero {
     color: #ffffff;
@@ -5878,6 +5889,16 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   top: 0;
   width: 100%;
   height: 100%; }
+
+.um-components .article .cta-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+  margin-bottom: 27px; }
+  @media (min-width: 768px) {
+    .um-components .article .cta-block {
+      margin-top: 36px;
+      margin-bottom: 36px; } }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
