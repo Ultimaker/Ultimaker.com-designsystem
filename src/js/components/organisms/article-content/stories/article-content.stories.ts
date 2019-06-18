@@ -25,4 +25,5 @@ addStories({
     decorators: ['withKnobs'],
     kind: 'Organisms/article',
     notes: addNotes(require('./article-content.md')),
+    knobs: { escapeHTML: false },
 });

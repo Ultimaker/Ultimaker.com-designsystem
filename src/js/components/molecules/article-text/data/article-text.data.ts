@@ -1,5 +1,6 @@
 export const data = {
     default: {
+        type: 'ArticleText',
         text: `<div>
             <h2>H2 title</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Donec feugiat dui sed sodales consequat</i>. Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.</p>
