@@ -2447,7 +2447,10 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
     
                 </span>
                  
-                <!---->
+                <div
+                  class="v-portal"
+                  style="display: none;"
+                />
               </a>
             </div>
           </div>
@@ -3307,7 +3310,10 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
     
                           </span>
                            
-                          <!---->
+                          <div
+                            class="v-portal"
+                            style="display: none;"
+                          />
                         </a>
                       </div>
                        

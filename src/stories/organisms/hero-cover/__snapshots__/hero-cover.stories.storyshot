@@ -61,7 +61,10 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
     
               </span>
                
-              <!---->
+              <div
+                class="v-portal"
+                style="display: none;"
+              />
             </a>
           </div>
         </div>
