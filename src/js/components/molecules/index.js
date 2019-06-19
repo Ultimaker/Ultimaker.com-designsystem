@@ -47,5 +47,4 @@ export { default as WizardStepConfirmation } from 'molecules/wizard-step-confirm
 export { default as ArticleIntro } from 'molecules/article-intro';
 export { default as ArticleText } from 'molecules/article-text';
 export { default as ArticleImage } from 'molecules/article-image';
-export {default as ArticleVideo} from 'molecules/article-video';
-
+export { default as ArticleVideo } from 'molecules/article-video';
