@@ -1,15 +1,14 @@
 <article class="hero hero--article organism">
     <div class="hero-article__image--full">
-        <c-image v-if="this.image" v-bind="this.image"></c-image>
+        <c-image v-if="this.image" v-bind="this.image" resize-behavior="crop"/>
     </div>
 
     <div class="hero-article__image--overlay"></div>
     <section class="hero-article__container container">
         <div class="flexgrid__cell--xs-12 hero--article-reset">
             <HeaderBlock class="hero__article-header header-block--hero">
-                <HeroHeading :title="title" :subtitle="subtitle" />
+                <HeroHeading :title="title" :subtitle="subtitle"/>
             </HeaderBlock>
         </div>
     </section>
 </article>
-    
