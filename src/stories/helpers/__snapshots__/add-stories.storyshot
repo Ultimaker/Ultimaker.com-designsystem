@@ -616,6 +616,151 @@ exports[`Storyshots Atoms|text/inline/sup default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/article-author default 1`] = `
+<section
+  class="story"
+>
+  <div
+    class="article-author"
+  >
+    <img
+      alt="bla bla"
+      class="img--contain article-author__image img--loading"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+    />
+     
+    <div
+      class="article-author__meta"
+    >
+      <span
+        class="article-author__name"
+      >
+        Jan de Groot
+      </span>
+       
+      <span
+        class="article-author__published-date"
+      >
+        24-02-2019
+      </span>
+    </div>
+  </div>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/article-ctas default 1`] = `
+<section
+  class="story"
+>
+  <div
+    class="cta-block"
+  >
+    <a
+      class="link--primary button cta-link"
+      href="https://ultimaker.com"
+      rel="noopener"
+      target="_self"
+    >
+      <!---->
+       
+      <span
+        class="link__underline"
+      >
+        
+        Call me back
+    
+      </span>
+    </a>
+    <a
+      class="link link--icon link--large undefined cta-link"
+      href="https://www.youtube.com/watch?v=ksLaBnZVRnM"
+      target="_blank"
+    >
+      <!---->
+       
+      <span
+        class="link__underline"
+      >
+        
+        Watch video
+    
+      </span>
+       
+      <div
+        class="v-portal"
+        style="display: none;"
+      />
+    </a>
+    <a
+      class="link--large link cta-link"
+      href="https://ultimaker.com"
+      rel="noopener"
+      target="_self"
+    >
+      <!---->
+       
+      <span
+        class="link__underline"
+      >
+        
+        Call me back
+    
+      </span>
+    </a>
+  </div>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/article-header default 1`] = `
+<section
+  class="story"
+>
+  <header
+    class="article-header container"
+  >
+    <div
+      class="article-author"
+    >
+      <img
+        alt="bla bla"
+        class="img--contain article-author__image img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+      />
+       
+      <div
+        class="article-author__meta"
+      >
+        <span
+          class="article-author__name"
+        >
+          Jan de Groot
+        </span>
+         
+        <span
+          class="article-author__published-date"
+        >
+          May 31, 2019
+        </span>
+      </div>
+    </div>
+  </header>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/article-image default 1`] = `
 <section
   class="story"
@@ -736,6 +881,20 @@ exports[`Storyshots Molecules/article-text default 1`] = `
         
             
       </ol>
+      
+            
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+        <b>
+          feugiat dui sed sodales consequat
+        </b>
+        . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+      </p>
+      
+            
+      <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </blockquote>
       
             
       <p>
@@ -3283,6 +3442,20 @@ exports[`Storyshots Organisms/article default 1`] = `
           </p>
           
             
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </blockquote>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
           <ul>
             
                 
@@ -3357,7 +3530,7 @@ exports[`Storyshots Organisms/article default 1`] = `
       </div>
       <div
         class="cta-block"
-        type="CtaBlock"
+        type="ArticleCtas"
       >
         <a
           class="link--primary button cta-link"
@@ -3484,6 +3657,20 @@ exports[`Storyshots Organisms/article default 1`] = `
             
             
           </ol>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </blockquote>
           
             
           <p>
@@ -3623,6 +3810,20 @@ exports[`Storyshots Organisms/article default 1`] = `
             
             
           </ol>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </blockquote>
           
             
           <p>
@@ -3775,6 +3976,20 @@ exports[`Storyshots Organisms/article noIntro 1`] = `
           </p>
           
             
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </blockquote>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
           <ul>
             
                 
@@ -3849,7 +4064,7 @@ exports[`Storyshots Organisms/article noIntro 1`] = `
       </div>
       <div
         class="cta-block"
-        type="CtaBlock"
+        type="ArticleCtas"
       >
         <a
           class="link--primary button cta-link"
@@ -3993,6 +4208,20 @@ exports[`Storyshots Organisms/article noIntro 1`] = `
             
             
           </ol>
+          
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <b>
+              feugiat dui sed sodales consequat
+            </b>
+            . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+          </p>
+          
+            
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </blockquote>
           
             
           <p>
@@ -7076,6 +7305,37 @@ exports[`Storyshots templates/article default 1`] = `
         </section>
       </article>
        
+      <header
+        class="article-header container"
+      >
+        <div
+          class="article-author"
+        >
+          <img
+            alt="bla bla"
+            class="img--contain article-author__image img--loading"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          />
+           
+          <div
+            class="article-author__meta"
+          >
+            <span
+              class="article-author__name"
+            >
+              Jan de Groot
+            </span>
+             
+            <span
+              class="article-author__published-date"
+            >
+              May 31, 2019
+            </span>
+          </div>
+        </div>
+      </header>
+       
       <section
         class="organism article"
       >
@@ -7173,6 +7433,20 @@ exports[`Storyshots templates/article default 1`] = `
               </p>
               
             
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </blockquote>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
               <ul>
                 
                 
@@ -7247,7 +7521,7 @@ exports[`Storyshots templates/article default 1`] = `
           </div>
           <div
             class="cta-block"
-            type="CtaBlock"
+            type="ArticleCtas"
           >
             <a
               class="link--primary button cta-link"
@@ -7374,6 +7648,20 @@ exports[`Storyshots templates/article default 1`] = `
                 
             
               </ol>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </blockquote>
               
             
               <p>
@@ -7513,6 +7801,20 @@ exports[`Storyshots templates/article default 1`] = `
                 
             
               </ol>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </blockquote>
               
             
               <p>
@@ -7623,6 +7925,37 @@ exports[`Storyshots templates/article noIntro 1`] = `
         </section>
       </article>
        
+      <header
+        class="article-header container"
+      >
+        <div
+          class="article-author"
+        >
+          <img
+            alt="bla bla"
+            class="img--contain article-author__image img--loading"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          />
+           
+          <div
+            class="article-author__meta"
+          >
+            <span
+              class="article-author__name"
+            >
+              Jan de Groot
+            </span>
+             
+            <span
+              class="article-author__published-date"
+            >
+              May 31, 2019
+            </span>
+          </div>
+        </div>
+      </header>
+       
       <section
         class="organism article"
       >
@@ -7712,6 +8045,20 @@ exports[`Storyshots templates/article noIntro 1`] = `
               </p>
               
             
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </blockquote>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
               <ul>
                 
                 
@@ -7786,7 +8133,7 @@ exports[`Storyshots templates/article noIntro 1`] = `
           </div>
           <div
             class="cta-block"
-            type="CtaBlock"
+            type="ArticleCtas"
           >
             <a
               class="link--primary button cta-link"
@@ -7930,6 +8277,20 @@ exports[`Storyshots templates/article noIntro 1`] = `
                 
             
               </ol>
+              
+            
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                <b>
+                  feugiat dui sed sodales consequat
+                </b>
+                . Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.
+              </p>
+              
+            
+              <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </blockquote>
               
             
               <p>
