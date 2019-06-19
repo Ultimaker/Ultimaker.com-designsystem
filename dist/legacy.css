@@ -4483,6 +4483,31 @@ because both families serve another purpose. Therefore the line-heights will be 
       .um-components .article-image__caption {
         margin-top: 24px; } }
 
+.um-components .article-video {
+  position: relative;
+  background-color: #e3e3e3;
+  padding-top: 50%;
+  margin-bottom: 48px; }
+  @media (min-width: 768px) {
+    .um-components .article-video {
+      margin-bottom: 60px; } }
+
+.um-components .article-video__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.um-components .article-video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff; }
+  .um-components .article-video__button:hover {
+    color: #ffffff; }
+
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
   background-color: #fafafa; }
 

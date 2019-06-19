@@ -7,7 +7,6 @@ import { ArticleVideo } from './article-video';
 describe('components', () => {
     describe('molecules', () => {
         describe('article-video', () => {
-
             const mount = build(ArticleVideo, { props: {} });
 
             it('should render an ArticleVideo component', () => {
@@ -18,9 +17,7 @@ describe('components', () => {
         });
 
         Object.keys(data).forEach((key) => {
-
             describe(`article-video ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(ArticleVideo, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });
