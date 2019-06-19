@@ -49,3 +49,4 @@ export { default as ArticleText } from 'molecules/article-text';
 export { default as ArticleImage } from 'molecules/article-image';
 export { default as ArticleVideo } from 'molecules/article-video';
 export { default as ArticleAuthor } from 'molecules/article-author';
+export { default as ArticleCtas } from 'molecules/article-ctas';

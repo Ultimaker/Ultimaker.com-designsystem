@@ -14,6 +14,8 @@ export const data = {
                 <li>Ordered list item four</li>
             </ol>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec <b>feugiat dui sed sodales consequat</b>. Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.</p>
+            <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec <b>feugiat dui sed sodales consequat</b>. Nunc a ornare urna, nec ultricies mi. Integer bibendum sodales dolor quis elementum. Vestibulum fermentum vehicula ultrices. Morbi maximus, felis in congue hendrerit, mi nulla tristique ex, eget dapibus augue massa a urna. Fusce sodales nibh sit amet eros condimentum, at venenatis quam sodales. Pellentesque a nisl sed magna lacinia euismod id tincidunt dui. Nam in leo vitae purus fermentum tempus in in elit. Integer pretium et nunc in vehicula.</p>
             <ul>
                 <li>Unordered list item one</li>
                 <li>Unordered list item two</li>

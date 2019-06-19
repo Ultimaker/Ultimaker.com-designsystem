@@ -7,6 +7,23 @@ p, ul, ol {
     }
 }
 
+blockquote {
+    @include font-line-ratio(sec-m); 
+    color: $colorGrayDark;
+    text-align: center;
+    font-weight: map-get($fontWeights, 'regular');
+    margin-bottom: $buildingUnit *  2.5;
+
+    &:before {
+        content: '“';
+    }
+
+    &:after {
+        content: '”'
+    }
+}
+
+
 q {
     @extend h3;
     display: block;
