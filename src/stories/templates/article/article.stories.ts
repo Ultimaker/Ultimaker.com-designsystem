@@ -14,6 +14,7 @@ const getStory = type => () => {
     return {
         props: {
             heroArticle: { default: knobs.heroArticle },
+            articleHeader: { default: knobs.articleHeader },
             articleContent: { default: knobs.articleContent },
         },
         template: require('./article.html'),

@@ -1,0 +1,25 @@
+.article-author {
+    display: flex;
+    align-items: center;
+
+    &__meta{
+        display: flex;
+        flex-direction: column;
+    }
+    &__name{
+        @include font-line-ratio(prim-s);
+        font-weight: map-get($fontWeights, 'medium');
+        margin-bottom: ($buildingUnit / 4);
+    }
+    &__published-date{
+        @include font-line-ratio(prim-xs);
+        color: $colorGrayDark;
+    }
+
+    &__image{
+        height: $buildingUnit * 4;
+        width: $buildingUnit * 4;
+        border-radius: 100%;
+        margin: 0  $buildingUnit;
+    }
+}
