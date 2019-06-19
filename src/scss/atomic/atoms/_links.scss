@@ -93,7 +93,8 @@
 }
 
 .link-list__headline {
-    @include font-ratio-rhythm(prim-s)
+    @include font-ratio-rhythm(prim-s);
+    font-weight: bold;
     margin-bottom: 8px;
 }
 

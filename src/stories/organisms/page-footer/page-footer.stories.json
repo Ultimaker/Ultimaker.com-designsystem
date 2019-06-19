@@ -1,70 +1,90 @@
 {
-    "footer": {
-        "navigation": [
-             {
-                "type": "NavigationItem",
-                "label": "Item one",
-                "url": "http://nu.nl",
-                "items": [
-                    {
-                        "type": "NavigationItem",
-                        "label": "Sub item 1",
-                        "url": "http://nu.nl"
-                    }
-                ]
-            },
-            {
-                "type": "NavigationItem",
-                "label": "Item one",
-                "url": "http://nu.nl",
-                "items": [
-                    {
-                        "type": "NavigationItem",
-                        "label": "Sub item 1",
-                        "url": "http://nu.nl"
-                    }
-                ]
-            },
-            {
-                "type": "NavigationItem",
-                "label": "Item one",
-                "url": "http://nu.nl",
-                "items": [
-                    {
-                        "type": "NavigationItem",
-                        "label": "Sub item 1",
-                        "url": "http://nu.nl"
-                    }
-                ]
-            }
-        ],
-        "localeSelector": {
-            "type": "CountryAutoCompleteField",
-            "label": "Type country code or name",
-            "placeholder": "Type your country",
-            "highlightedLabel": "Detected",
-            "suggestionsLabel": "Suggestions",
-            "datasource": {
-                "type": "Map",
-                "AF": "Afghanistan",
-                "AL": "Albania",
-                "DZ": "Algeria",
-                "AS": "American Samoa",
-                "AD": "Andorra",
-                "AO": "Angola",
-                "AI": "Anguilla"
-            }
-        },
-        "legalNavigation": {
-            "type": "LegalNavigation",
-            "navigation": [
-                {
-                    "type": "NavigationItem",
-                    "label": "Item legal",
-                    "url": "http://nu.nl"
-                }
-            ],
-            "label": "Copyright Ultimaker"
+  "footer": {
+    "navigation": [
+      {
+        "type": "NavigationItem",
+        "label": "Item one",
+        "url": "https://example.com",
+        "items": [
+          {
+            "type": "NavigationItem",
+            "label": "Sub item 1",
+            "url": "https://example.com"
+          },
+          {
+            "type": "NavigationItem",
+            "label": "Sub item 2",
+            "url": "https://example.com"
+          },
+          {
+            "type": "NavigationItem",
+            "label": "Sub item 3",
+            "url": "https://example.com"
+          }
+        ]
+      },
+      {
+        "type": "NavigationItem",
+        "label": "Item two",
+        "url": "https://example.com",
+        "items": [
+          {
+            "type": "NavigationItem",
+            "label": "Sub item 1",
+            "url": "https://example.com"
+          },
+          {
+            "type": "NavigationItem",
+            "label": "Sub item 2",
+            "url": "https://example.com"
+          },
+          {
+            "type": "NavigationItem",
+            "label": "Sub item 3",
+            "url": "https://example.com"
+          }
+        ]
+      },
+      {
+        "type": "NavigationItem",
+        "label": "Item three",
+        "url": "https://example.com",
+        "items": [
+          {
+            "type": "NavigationItem",
+            "label": "Sub item 1",
+            "url": "https://example.com"
+          }
+        ]
+      }
+    ],
+    "localeSelector": {
+      "type": "CountryAutoCompleteField",
+      "label": "Type country code or name",
+      "placeholder": "Type your country",
+      "highlightedLabel": "Detected",
+      "suggestionsLabel": "Suggestions",
+      "datasource": {
+        "type": "Map",
+        "AF": "Afghanistan",
+        "AL": "Albania",
+        "DZ": "Algeria",
+        "AS": "American Samoa",
+        "AD": "Andorra",
+        "AO": "Angola",
+        "AI": "Anguilla"
+      }
+    },
+    "legalNavigation": {
+      "type": "LegalNavigation",
+      "navigation": [
+        {
+          "type": "NavigationItem",
+          "label": "Item legal",
+          "url": "https://example.com"
         }
+      ],
+      "label": "Copyright Ultimaker"
     }
+  }
 }
