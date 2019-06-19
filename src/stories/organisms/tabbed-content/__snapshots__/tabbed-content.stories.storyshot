@@ -191,7 +191,10 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
     
                         </span>
                          
-                        <!---->
+                        <div
+                          class="v-portal"
+                          style="display: none;"
+                        />
                       </a>
                     </div>
                      

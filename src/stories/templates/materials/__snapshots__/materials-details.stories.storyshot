@@ -2308,7 +2308,10 @@ exports[`Storyshots templates|materials Materials details 1`] = `
     
                           </span>
                            
-                          <!---->
+                          <div
+                            class="v-portal"
+                            style="display: none;"
+                          />
                         </a>
                       </div>
                        

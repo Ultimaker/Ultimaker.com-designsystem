@@ -3,7 +3,9 @@
     <span class="link__underline">
         {{label}}
     </span>
-    <modal class="modal--video" v-if="videoVisible" @close="toggleVideoVisible">
-        <youtube-video :video-id="youtubeId" />
-    </modal>
+    <portal to="modals">
+        <modal class="modal--video" v-if="videoVisible" @close="toggleVideoVisible">
+            <youtube-video :video-id="youtubeId" />
+        </modal>
+    </portal>
 </a>
