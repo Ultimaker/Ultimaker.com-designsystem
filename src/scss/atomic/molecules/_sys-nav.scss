@@ -50,17 +50,13 @@
 }
 
 .sys-nav__label {
-    @extend .icon-button__label;
+    margin: 0 $buildingUnit / 2 0 $buildingUnit;
+    white-space: nowrap;
+    user-select: none;
 }
 
-.sys-nav__label--hidden-xs, .sys-nav__label--hidden-sm  {
+.sys-nav__label--hidden-sm  {
     @include visually-hidden;
-}
-
-.sys-nav__label--hidden-xs {
-    @include min-desktop {
-       @include reset-visually-hidden;
-    }
 }
 
 .sys-nav__label--hidden-sm {
