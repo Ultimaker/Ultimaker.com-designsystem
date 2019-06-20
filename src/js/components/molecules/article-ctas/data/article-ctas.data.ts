@@ -21,6 +21,6 @@ export const data = {
                     url: 'https://ultimaker.com',
                 },
             ],
-        }
-    }
-}
+        },
+    },
+};

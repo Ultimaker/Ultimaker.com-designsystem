@@ -8,5 +8,5 @@ export const data = {
         },
         name: 'Jan de Groot',
         publishedDate: '24-02-2019',
-    }
-}
+    },
+};

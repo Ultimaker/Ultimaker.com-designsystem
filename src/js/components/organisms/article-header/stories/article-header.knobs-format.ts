@@ -1,4 +1,4 @@
 export default {
     author: {},
-    publishedDate: ''
+    publishedDate: '',
 };
