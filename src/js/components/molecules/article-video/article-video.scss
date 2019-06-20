@@ -9,9 +9,14 @@
     }
 }
 
+.article-video__overlay--overlay,
 .article-video__overlay {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.article-video__overlay--overlay {
+    background-color: $colorOverlayImage;
 }
 
 .article-video__button {

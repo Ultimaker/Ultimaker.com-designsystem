@@ -4,11 +4,8 @@
 
     @include min-tablet() {
         @include font-ratio-rhythm(prim-l);
-        margin-bottom: $buildingUnit * 5;
-    }
-
-    @include min-tablet {
         margin: 0 auto;
+        margin-bottom: $buildingUnit * 5;
         width: 66%;
     }
 }

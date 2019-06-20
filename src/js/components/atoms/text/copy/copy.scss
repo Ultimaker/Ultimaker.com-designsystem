@@ -1,28 +1,11 @@
 // moved original scss from src/scss/atomic/atoms/_type.scss to here
-p, ul, ol {
+p{
     @include font-rhythm(prim-s);
 
     @include min-tablet() {
         @include font-rhythm(prim-m);
     }
 }
-
-blockquote {
-    @include font-line-ratio(sec-m); 
-    color: $colorGrayDark;
-    text-align: center;
-    font-weight: map-get($fontWeights, 'regular');
-    margin-bottom: $buildingUnit *  2.5;
-
-    &:before {
-        content: '“';
-    }
-
-    &:after {
-        content: '”'
-    }
-}
-
 
 q {
     @extend h3;

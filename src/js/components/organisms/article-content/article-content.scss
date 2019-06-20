@@ -1,14 +1,17 @@
 .article {
-    .cta-block{
-        display: flex;
-        justify-content: center;
-
-        margin-top: $buildingUnit * 2 + ($buildingUnit / 4);
-        margin-bottom: $buildingUnit * 2 + ($buildingUnit / 4);
+    .article-ctas + .article-image,
+    .article-text + .article-ctas,
+    .article-ctas + .article-text,
+    .article-text + .article-video,
+    .article-text + .article-image{
+        margin-top: $buildingUnit * 4;
 
         @include min-tablet() {
-            margin-top: $buildingUnit * 3;
-            margin-bottom: $buildingUnit * 3;
+            margin-top: $buildingUnit * 5;
         }
+    }
+
+    &:last-of-type{
+        margin-bottom: 0;
     }
 }
