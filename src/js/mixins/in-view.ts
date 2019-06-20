@@ -10,6 +10,7 @@ export class InView extends Vue {
     $el!: Element;
     inView: boolean = false;
     inViewObserver?: IntersectionObserver;
+    inViewOptions: IntersectionObserverInit = {};
     viewportUtil = new ViewportUtil();
 
     intersectionHandler(entries) {
@@ -33,6 +34,10 @@ export class InView extends Vue {
         this.inView = inView;
     }
 
+    setInViewOptions(options:IntersectionObserverInit):void {
+        this.inViewOptions = options;
+    }
+
     mounted() {
         if (!BrowserCapabilities.supportsIntersectionObserver) {
             this.viewportUtil.addResizeHandler(this.intersectionPolyHandler);
@@ -41,7 +46,7 @@ export class InView extends Vue {
             return;
         }
 
-        this.inViewObserver = new IntersectionObserver(this.intersectionHandler);
+        this.inViewObserver = new IntersectionObserver(this.intersectionHandler, this.inViewOptions);
         this.inViewObserver.observe(this.$el);
     }
 
