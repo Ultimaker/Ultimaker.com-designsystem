@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** @format */
 /** @format */
 /** @format */
@@ -454,11 +455,11 @@ because both families serve another purpose. Therefore the line-heights will be 
   top: 0;
   right: 0; }
 
-.um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item, .um-components ul, .um-components .hero--text .content--rich ul, .um-components ol {
+.um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item, .um-components ul, .um-components .hero--text .content--rich ul, .um-components ol {
+    .um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
       margin-top: -5px;
       margin-bottom: 29px; } }
 
@@ -4452,36 +4453,85 @@ because both families serve another purpose. Therefore the line-heights will be 
       line-height: 30px;
       margin-top: -8px;
       margin-bottom: 38px;
-      margin-bottom: 60px; } }
-  @media (min-width: 768px) {
-    .um-components .article-intro {
       margin: 0 auto;
+      margin-bottom: 60px;
       width: 66%; } }
+
+.um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
+  margin-top: -2px;
+  margin-bottom: 23px; }
+  @media (min-width: 768px) {
+    .um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
+      margin-top: -5px;
+      margin-bottom: 29px; } }
+
+.um-components .article-text ul > li, .um-components .article-text .hero--text .content--rich ul > li, .um-components .hero--text .content--rich .article-text ul > li, .um-components .article-text ol > li {
+  margin-bottom: 6px; }
+
+.um-components .article-text blockquote {
+  font-size: 18px;
+  line-height: 24px;
+  color: #7f7f7f;
+  text-align: center;
+  font-weight: 400;
+  margin: 30px 0; }
+  .um-components .article-text blockquote:before {
+    content: '“'; }
+  .um-components .article-text blockquote:after {
+    content: '”'; }
+  @media (min-width: 768px) {
+    .um-components .article-text blockquote {
+      font-size: 24px;
+      line-height: 30px; } }
 
 @media (min-width: 768px) {
   .um-components .article-text {
     margin: 0 auto;
     width: 66%; } }
 
+.um-components .article-text b {
+  font-weight: 600; }
+
 .um-components .article-image {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin: 0 0 48px 0;
   padding: 0; }
+  @media (min-width: 768px) {
+    .um-components .article-image__container {
+      height: 540px; } }
   @media (min-width: 768px) {
     .um-components .article-image {
       margin-bottom: 60px; } }
   .um-components .article-image__caption {
     margin-top: 12px;
+    text-align: center;
     font-size: 12px;
     line-height: 18px;
-    color: #7f7f7f; }
+    color: #000000; }
     @media (min-width: 768px) {
       .um-components .article-image__caption {
         margin-top: 24px; } }
+
+.um-components .article-author {
+  display: flex;
+  align-items: center; }
+  .um-components .article-author__meta {
+    display: flex;
+    flex-direction: column; }
+  .um-components .article-author__name {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-bottom: 3px; }
+  .um-components .article-author__published-date {
+    font-size: 12px;
+    line-height: 18px;
+    color: #7f7f7f; }
+  .um-components .article-author__image {
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    margin: 0 12px; }
 
 .um-components .article-video {
   position: relative;
@@ -4492,12 +4542,16 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .article-video {
       margin-bottom: 60px; } }
 
+.um-components .article-video__overlay--overlay,
 .um-components .article-video__overlay {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0; }
+
+.um-components .article-video__overlay--overlay {
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .um-components .article-video__button {
   position: absolute;
@@ -4507,6 +4561,16 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #ffffff; }
   .um-components .article-video__button:hover {
     color: #ffffff; }
+
+.um-components .article-ctas {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+  margin-bottom: 28px; }
+  @media (min-width: 768px) {
+    .um-components .article-ctas {
+      margin-top: 36px;
+      margin-bottom: 24px; } }
 
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
   background-color: #fafafa; }
@@ -5915,15 +5979,26 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   width: 100%;
   height: 100%; }
 
-.um-components .article .cta-block {
-  display: flex;
-  justify-content: center;
-  margin-top: 27px;
-  margin-bottom: 27px; }
+.um-components .article .article-ctas + .article-image,
+.um-components .article .article-text + .article-ctas,
+.um-components .article .article-ctas + .article-text,
+.um-components .article .article-text + .article-video,
+.um-components .article .article-text + .article-image {
+  margin-top: 48px; }
   @media (min-width: 768px) {
-    .um-components .article .cta-block {
-      margin-top: 36px;
-      margin-bottom: 36px; } }
+    .um-components .article .article-ctas + .article-image,
+    .um-components .article .article-text + .article-ctas,
+    .um-components .article .article-ctas + .article-text,
+    .um-components .article .article-text + .article-video,
+    .um-components .article .article-text + .article-image {
+      margin-top: 60px; } }
+
+.um-components .article:last-of-type {
+  margin-bottom: 0; }
+
+.um-components .article-header {
+  padding-top: 24px;
+  padding-bottom: 24px; }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;

@@ -1,2 +1,12 @@
-.article-ctas {
+.article-ctas{
+    display: flex;
+    justify-content: center;
+
+    margin-top: $buildingUnit * 2 + ($buildingUnit / 4);
+    margin-bottom: $buildingUnit * 2 + ($buildingUnit / 3);
+
+    @include min-tablet() {
+        margin-top: $buildingUnit * 3;
+        margin-bottom: $buildingUnit * 2;
+    }
 }

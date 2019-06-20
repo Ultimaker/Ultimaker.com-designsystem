@@ -1,6 +1,45 @@
 .article-text {
+
+    p, ul, ol {
+        @include font-rhythm(prim-s);
+    
+        @include min-tablet() {
+            @include font-rhythm(prim-m);
+        }
+    }
+    
+    ul, ol {
+        > li {
+            margin-bottom: $buildingUnit / 2;
+        }
+    }
+    
+    blockquote {
+        @include font-line-ratio(sec-xs); 
+        color: $colorGrayDark;
+        text-align: center;
+        font-weight: map-get($fontWeights, 'regular');
+        margin: $buildingUnit *  2.5 0;
+    
+        &:before {
+            content: '“';
+        }
+    
+        &:after {
+            content: '”'
+        }
+
+        @include min-tablet {
+            @include font-line-ratio(sec-m); 
+        }
+    }
+
     @include min-tablet {
         margin: 0 auto;
         width: 66%;
+    }
+
+    b{
+        font-weight: 600;
     }
 }
