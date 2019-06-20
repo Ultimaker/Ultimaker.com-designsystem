@@ -7,7 +7,6 @@ import { ArticleCtas } from './article-ctas';
 describe('components', () => {
     describe('molecules', () => {
         describe('article-ctas', () => {
-
             const mount = build(ArticleCtas, { props: {} });
 
             it('should render an ArticleCtas component', () => {
@@ -18,9 +17,7 @@ describe('components', () => {
         });
 
         Object.keys(data).forEach((key) => {
-
             describe(`article-ctas ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(ArticleCtas, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

@@ -7,7 +7,6 @@ import { ArticleAuthor } from './article-author';
 describe('components', () => {
     describe('molecules', () => {
         describe('article-author', () => {
-
             const mount = build(ArticleAuthor, { props: {} });
 
             it('should render an ArticleAuthor component', () => {
@@ -18,9 +17,7 @@ describe('components', () => {
         });
 
         Object.keys(data).forEach((key) => {
-
             describe(`article-author ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(ArticleAuthor, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

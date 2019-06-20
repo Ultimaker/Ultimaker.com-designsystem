@@ -5,20 +5,18 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/article-header.data';
 import knobsFormat from './article-header.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                author: { default: knobs.author} ,
-                publishedDate: { default: knobs.publishedDate },
-            },
-            template: require('./article-header.html'),
-        };
+    return {
+        props: {
+            author: { default: knobs.author },
+            publishedDate: { default: knobs.publishedDate },
+        },
+        template: require('./article-header.html'),
     };
 };
 

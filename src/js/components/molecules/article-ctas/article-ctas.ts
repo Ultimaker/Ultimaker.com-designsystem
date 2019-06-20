@@ -9,9 +9,4 @@ import WithRender from './article-ctas.vue.html';
 
 export class ArticleCtas extends Vue implements ArticleCtasProps {
     @Prop({ type: Object, required: false }) ctas?: ArticleCtasProps['ctas'];
-
-    mounted () {
-        console.log(this)
-    }
 }
-
