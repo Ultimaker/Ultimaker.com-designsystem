@@ -48,6 +48,13 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
     width: number = 0;
     height: number = 0;
 
+    beforeMount() {
+        if (BrowserCapabilities.isBrowser) {
+            const height = this.viewportUtil.screenHeight * 1.5;
+            this.setInViewOptions({ rootMargin: `${height}px 0px ${height}px 0px` });
+        }
+    }
+
     async mounted() {
         if (!BrowserCapabilities.isBrowser) return;
 
