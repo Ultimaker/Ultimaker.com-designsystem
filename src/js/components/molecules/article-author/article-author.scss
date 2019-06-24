@@ -12,7 +12,7 @@
         margin-bottom: ($buildingUnit / 4);
     }
     &__published-date{
-        @include font-line-ratio(prim-xs);
+        @include font-line-ratio(prim-s);
         color: $colorGrayDark;
     }
 

@@ -1,6 +1,6 @@
 .article-image {
     width: 100%;
-    margin: 0 0 ($buildingUnit * 4) 0;
+    margin: 0 0 ($buildingUnit * 3) 0;
     padding: 0;
     
     &__container{
@@ -14,12 +14,13 @@
     }
 
     &__caption {
-        margin-top: $buildingUnit;
+        margin: $buildingUnit auto 0 auto;
         text-align: center;
         @include font-line-ratio(prim-xs);
         color: $colorBlack;
 
         @include min-tablet() {
+            width: 66%;
             margin-top: $buildingUnit * 2;
         }
     }
