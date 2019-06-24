@@ -11,6 +11,10 @@
     ul, ol {
         > li {
             margin-bottom: $buildingUnit / 2;
+
+            p{
+                margin: 0;
+            }
         }
     }
 
@@ -29,13 +33,18 @@
             display:inline;
             margin: 0;
         }   
-    
-        &:before {
-            content: '“';
+
+
+        [lang="en"] {
+            quotes: "“" "”";
         }
-    
-        &:after {
-            content: '”'
+          
+        &::before {
+           content: open-quote;
+        }
+          
+        &::after {
+           content: close-quote;
         }
 
         @include min-tablet {
