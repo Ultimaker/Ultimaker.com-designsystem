@@ -8,7 +8,7 @@
     }
     &__name{
         @include font-line-ratio(prim-s);
-        font-weight: map-get($fontWeights, 'medium');
+        font-weight: 500;
         margin-bottom: ($buildingUnit / 4);
     }
     &__published-date{

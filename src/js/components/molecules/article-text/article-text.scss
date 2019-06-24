@@ -2,12 +2,12 @@
 
     p, ul, ol {
         @include font-rhythm(prim-s);
-    
+
         @include min-tablet() {
             @include font-rhythm(prim-m);
         }
     }
-    
+
     ul, ol {
         > li {
             margin-bottom: $buildingUnit / 2;
@@ -23,10 +23,9 @@
     }
     
     blockquote {
-        @include font-line-ratio(sec-xs); 
+        @include font-line-ratio(sec-xs);
         color: $colorGrayDark;
         text-align: center;
-        font-weight: map-get($fontWeights, 'regular');
         margin: $buildingUnit *  2.5 0;
 
         > p {
@@ -48,7 +47,7 @@
         }
 
         @include min-tablet {
-            @include font-line-ratio(sec-m); 
+            @include font-line-ratio(sec-m);
         }
     }
 

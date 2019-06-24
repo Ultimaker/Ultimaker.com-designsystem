@@ -6,15 +6,9 @@ exports[`Storyshots global Fonts 1`] = `
 >
   <div>
     <p
-      style="font-family: 'univers';"
+      style="font-family: Noto Sans;"
     >
-      Primary font: "univers", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    </p>
-     
-    <p
-      style="font-family: 'fugue';"
-    >
-      Secondary font: "fugue", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      Font stack: Noto Sans, sans-serif;
     </p>
   </div>
    
