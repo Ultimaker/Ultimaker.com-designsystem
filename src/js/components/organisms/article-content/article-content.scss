@@ -1,10 +1,21 @@
 .article {
+
+    > .container {
+        padding-top: $buildingUnit * 2;
+
+        @include min-tablet() {
+            padding-top: $buildingUnit * 4;
+        }
+    }
+
+     
+
     .article-ctas + .article-image,
     .article-text + .article-ctas,
     .article-ctas + .article-text,
     .article-text + .article-video,
     .article-text + .article-image{
-        margin-top: $buildingUnit * 4;
+        margin-top: $buildingUnit * 3;
 
         @include min-tablet() {
             margin-top: $buildingUnit * 5;

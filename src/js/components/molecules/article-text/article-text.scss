@@ -13,6 +13,10 @@
             margin-bottom: $buildingUnit / 2;
         }
     }
+
+    p + h2 {
+        margin-top: $buildingUnit * 4;
+    }
     
     blockquote {
         @include font-line-ratio(sec-xs); 
@@ -20,6 +24,11 @@
         text-align: center;
         font-weight: map-get($fontWeights, 'regular');
         margin: $buildingUnit *  2.5 0;
+
+        > p {
+            display:inline;
+            margin: 0;
+        }   
     
         &:before {
             content: '“';
