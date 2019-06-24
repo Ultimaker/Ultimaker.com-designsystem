@@ -4467,6 +4467,11 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .article-text ul > li, .um-components .article-text .hero--text .content--rich ul > li, .um-components .hero--text .content--rich .article-text ul > li, .um-components .article-text ol > li {
   margin-bottom: 6px; }
+  .um-components .article-text ul > li p, .um-components .article-text .hero--text .content--rich ul > li p, .um-components .hero--text .content--rich .article-text ul > li p, .um-components .article-text ul > li strong, .um-components .article-text .hero--text .content--rich ul > li strong, .um-components .hero--text .content--rich .article-text ul > li strong, .um-components .article-text ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ol > li p, .um-components .article-text ol > li strong, .um-components .article-text ol > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ol > li .tablist__item, .um-components .article-text ol > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ol > li .tablist__item {
+    margin: 0; }
+
+.um-components .article-text p + h2, .um-components .article-text strong + h2, .um-components .article-text .tablist__section .tablist__item + h2, .um-components .tablist__section .article-text .tablist__item + h2, .um-components .article-text .examples .examples__tabs .tablist__item + h2, .um-components .examples .examples__tabs .article-text .tablist__item + h2 {
+  margin-top: 48px; }
 
 .um-components .article-text blockquote {
   font-size: 18px;
@@ -4475,10 +4480,15 @@ because both families serve another purpose. Therefore the line-heights will be 
   text-align: center;
   font-weight: 400;
   margin: 30px 0; }
-  .um-components .article-text blockquote:before {
-    content: '“'; }
-  .um-components .article-text blockquote:after {
-    content: '”'; }
+  .um-components .article-text blockquote > p, .um-components .article-text blockquote > strong, .um-components .article-text .tablist__section blockquote > .tablist__item, .um-components .tablist__section .article-text blockquote > .tablist__item, .um-components .article-text .examples .examples__tabs blockquote > .tablist__item, .um-components .examples .examples__tabs .article-text blockquote > .tablist__item {
+    display: inline;
+    margin: 0; }
+  .um-components .article-text blockquote [lang="en"] {
+    quotes: "“" "”"; }
+  .um-components .article-text blockquote::before {
+    content: open-quote; }
+  .um-components .article-text blockquote::after {
+    content: close-quote; }
   @media (min-width: 768px) {
     .um-components .article-text blockquote {
       font-size: 24px;
@@ -4494,22 +4504,25 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .article-image {
   width: 100%;
-  margin: 0 0 48px 0;
+  margin: 0 0 36px 0;
   padding: 0; }
-  @media (min-width: 768px) {
-    .um-components .article-image__container {
-      height: 540px; } }
+  .um-components .article-image__container {
+    height: 233px; }
+    @media (min-width: 768px) {
+      .um-components .article-image__container {
+        height: 540px; } }
   @media (min-width: 768px) {
     .um-components .article-image {
       margin-bottom: 60px; } }
   .um-components .article-image__caption {
-    margin-top: 12px;
+    margin: 12px auto 0 auto;
     text-align: center;
     font-size: 12px;
     line-height: 18px;
     color: #000000; }
     @media (min-width: 768px) {
       .um-components .article-image__caption {
+        width: 66%;
         margin-top: 24px; } }
 
 .um-components .article-author {
@@ -4524,8 +4537,8 @@ because both families serve another purpose. Therefore the line-heights will be 
     font-weight: 500;
     margin-bottom: 3px; }
   .um-components .article-author__published-date {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 21px;
     color: #7f7f7f; }
   .um-components .article-author__image {
     height: 48px;
@@ -5979,12 +5992,18 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   width: 100%;
   height: 100%; }
 
+.um-components .article > .container, .um-components .article > .footer__container {
+  padding-top: 24px; }
+  @media (min-width: 768px) {
+    .um-components .article > .container, .um-components .article > .footer__container {
+      padding-top: 48px; } }
+
 .um-components .article .article-ctas + .article-image,
 .um-components .article .article-text + .article-ctas,
 .um-components .article .article-ctas + .article-text,
 .um-components .article .article-text + .article-video,
 .um-components .article .article-text + .article-image {
-  margin-top: 48px; }
+  margin-top: 36px; }
   @media (min-width: 768px) {
     .um-components .article .article-ctas + .article-image,
     .um-components .article .article-text + .article-ctas,

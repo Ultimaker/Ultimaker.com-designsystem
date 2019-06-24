@@ -620,32 +620,7 @@ exports[`Storyshots Molecules/article-author default 1`] = `
 <section
   class="story"
 >
-  <div
-    class="article-author"
-  >
-    <img
-      alt="bla bla"
-      class="img--contain article-author__image img--loading"
-      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-    />
-     
-    <div
-      class="article-author__meta"
-    >
-      <span
-        class="article-author__name"
-      >
-        Jan de Groot
-      </span>
-       
-      <span
-        class="article-author__published-date"
-      >
-        24-02-2019
-      </span>
-    </div>
-  </div>
+  <!---->
    
   <div
     class="vue-portal-target"
