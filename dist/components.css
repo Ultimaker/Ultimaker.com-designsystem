@@ -4981,6 +4981,11 @@ table tfoot {
 
 .article-text ul > li, .article-text .hero--text .content--rich ul > li, .hero--text .content--rich .article-text ul > li, .article-text ol > li {
   margin-bottom: 6px; }
+  .article-text ul > li p, .article-text .hero--text .content--rich ul > li p, .hero--text .content--rich .article-text ul > li p, .article-text ul > li strong, .article-text .hero--text .content--rich ul > li strong, .hero--text .content--rich .article-text ul > li strong, .article-text ul > li .tablist__section .tablist__item, .tablist__section .article-text ul > li .tablist__item, .article-text .hero--text .content--rich ul > li .tablist__section .tablist__item, .tablist__section .article-text .hero--text .content--rich ul > li .tablist__item, .article-text ul > li .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text ul > li .tablist__item, .article-text .hero--text .content--rich ul > li .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text .hero--text .content--rich ul > li .tablist__item, .article-text ol > li p, .article-text ol > li strong, .article-text ol > li .tablist__section .tablist__item, .tablist__section .article-text ol > li .tablist__item, .article-text ol > li .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text ol > li .tablist__item {
+    margin: 0; }
+
+.article-text p + h2, .article-text strong + h2, .article-text .tablist__section .tablist__item + h2, .tablist__section .article-text .tablist__item + h2, .article-text .examples .examples__tabs .tablist__item + h2, .examples .examples__tabs .article-text .tablist__item + h2 {
+  margin-top: 48px; }
 
 .article-text blockquote {
   font-size: 18px;
@@ -4989,10 +4994,15 @@ table tfoot {
   text-align: center;
   font-weight: 400;
   margin: 30px 0; }
-  .article-text blockquote:before {
-    content: '“'; }
-  .article-text blockquote:after {
-    content: '”'; }
+  .article-text blockquote > p, .article-text blockquote > strong, .article-text .tablist__section blockquote > .tablist__item, .tablist__section .article-text blockquote > .tablist__item, .article-text .examples .examples__tabs blockquote > .tablist__item, .examples .examples__tabs .article-text blockquote > .tablist__item {
+    display: inline;
+    margin: 0; }
+  .article-text blockquote [lang="en"] {
+    quotes: "“" "”"; }
+  .article-text blockquote::before {
+    content: open-quote; }
+  .article-text blockquote::after {
+    content: close-quote; }
   @media (min-width: 768px) {
     .article-text blockquote {
       font-size: 24px;
@@ -5008,22 +5018,25 @@ table tfoot {
 
 .article-image {
   width: 100%;
-  margin: 0 0 48px 0;
+  margin: 0 0 36px 0;
   padding: 0; }
-  @media (min-width: 768px) {
-    .article-image__container {
-      height: 540px; } }
+  .article-image__container {
+    height: 233px; }
+    @media (min-width: 768px) {
+      .article-image__container {
+        height: 540px; } }
   @media (min-width: 768px) {
     .article-image {
       margin-bottom: 60px; } }
   .article-image__caption {
-    margin-top: 12px;
+    margin: 12px auto 0 auto;
     text-align: center;
     font-size: 12px;
     line-height: 18px;
     color: #000000; }
     @media (min-width: 768px) {
       .article-image__caption {
+        width: 66%;
         margin-top: 24px; } }
 
 .article-author {
@@ -5038,8 +5051,8 @@ table tfoot {
     font-weight: 500;
     margin-bottom: 3px; }
   .article-author__published-date {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 21px;
     color: #7f7f7f; }
   .article-author__image {
     height: 48px;
@@ -6498,12 +6511,18 @@ svg text {
   width: 100%;
   height: 100%; }
 
+.article > .container, .article > .footer__container {
+  padding-top: 24px; }
+  @media (min-width: 768px) {
+    .article > .container, .article > .footer__container {
+      padding-top: 48px; } }
+
 .article .article-ctas + .article-image,
 .article .article-text + .article-ctas,
 .article .article-ctas + .article-text,
 .article .article-text + .article-video,
 .article .article-text + .article-image {
-  margin-top: 48px; }
+  margin-top: 36px; }
   @media (min-width: 768px) {
     .article .article-ctas + .article-image,
     .article .article-text + .article-ctas,
