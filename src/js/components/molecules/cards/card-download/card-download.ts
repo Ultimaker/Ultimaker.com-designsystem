@@ -17,7 +17,10 @@ export class CardDownload extends Vue implements CardDownloadProps {
     @Prop({ type: String, required: true }) description!: CardDownloadProps['description'];
     @Prop({ type: Object, required: false }) image?: CardDownloadProps['image'];
 
+    $refs: any;
+
     handleSelect() {
+        this.$refs.input.focus();
         this.setSelectedItem(this.index);
     }
 }

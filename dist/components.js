@@ -13182,6 +13182,7 @@ var CardDownload = function (_Vue) {
     _createClass(CardDownload, [{
         key: "handleSelect",
         value: function handleSelect() {
+            this.$refs.input.focus();
             this.setSelectedItem(this.index);
         }
     }]);
@@ -13205,7 +13206,7 @@ exports.CardDownload = CardDownload;
 /* 310 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-download"},[_c('input',{staticClass:"card-download__radio",attrs:{"type":"radio","name":_vm.name},domProps:{"checked":_vm.selected,"value":_vm.file},on:{"change":_vm.handleSelect}}),_vm._v(" "),_c('label',{staticClass:"card-download__label"},[_c('div',{staticClass:"card-download__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"card-download__content"},[_c('h4',{staticClass:"card-download__title"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"card-download__desc"},[_vm._v(_vm._s(_vm.description))]):_vm._e()])])])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-download",on:{"click":_vm.handleSelect}},[_c('input',{ref:"input",staticClass:"card-download__radio",attrs:{"type":"radio","name":_vm.name},domProps:{"checked":_vm.selected,"value":_vm.file},on:{"change":_vm.handleSelect}}),_vm._v(" "),_c('label',{staticClass:"card-download__label"},[_c('div',{staticClass:"card-download__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"card-download__content"},[_c('h4',{staticClass:"card-download__title"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"card-download__desc"},[_vm._v(_vm._s(_vm.description))]):_vm._e()])])])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
