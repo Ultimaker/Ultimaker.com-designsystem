@@ -1,5 +1,10 @@
 import Default from '../constants/defaults';
 
+// Eventualy the locale will be passed down 
+// eg: publishedDate {
+//      date: '24-05-2019',
+//      locale: 'nl_NL',
+// }
 export class Format {
     static options: object = {
         year: 'numeric',
