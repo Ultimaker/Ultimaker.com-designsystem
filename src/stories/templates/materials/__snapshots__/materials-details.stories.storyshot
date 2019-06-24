@@ -2983,8 +2983,6 @@ exports[`Storyshots templates|materials Materials details 1`] = `
             href="#/"
           >
             <!---->
-             
-            <!---->
           </a>
            
           <nav
@@ -3021,7 +3019,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         >
                           <a
                             class="footer-nav__link"
-                            href="http://nu.nl"
+                            href="https://example.com"
                             rel="noopener"
                             target="_blank"
                           >
@@ -3032,6 +3030,46 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                             >
                               
         Sub item 1
+    
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="footer-nav__link"
+                            href="https://example.com"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Sub item 2
+    
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="footer-nav__link"
+                            href="https://example.com"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Sub item 3
     
                             </span>
                           </a>
@@ -3050,7 +3088,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         class="footer-nav__title"
                         id="footer-nav__title-02"
                       >
-                        Item one
+                        Item two
                       </h3>
                        
                       <ul
@@ -3062,7 +3100,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         >
                           <a
                             class="footer-nav__link"
-                            href="http://nu.nl"
+                            href="https://example.com"
                             rel="noopener"
                             target="_blank"
                           >
@@ -3073,6 +3111,46 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                             >
                               
         Sub item 1
+    
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="footer-nav__link"
+                            href="https://example.com"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Sub item 2
+    
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="footer-nav__item"
+                        >
+                          <a
+                            class="footer-nav__link"
+                            href="https://example.com"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            <!---->
+                             
+                            <span
+                              class="link__underline"
+                            >
+                              
+        Sub item 3
     
                             </span>
                           </a>
@@ -3093,7 +3171,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                     class="footer-nav__title"
                     id="footer-nav__title-03"
                   >
-                    Item one
+                    Item three
                   </h3>
                    
                   <ul
@@ -3105,7 +3183,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                     >
                       <a
                         class="footer-nav__link"
-                        href="http://nu.nl"
+                        href="https://example.com"
                         rel="noopener"
                         target="_blank"
                       >
@@ -3261,7 +3339,7 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                 >
                   <a
                     class="legal__link"
-                    href="http://nu.nl"
+                    href="https://example.com"
                     rel="noopener"
                     target="_blank"
                   >

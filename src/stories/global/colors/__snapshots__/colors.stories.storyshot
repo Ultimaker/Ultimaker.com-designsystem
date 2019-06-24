@@ -20,7 +20,7 @@ exports[`Storyshots global Colors 1`] = `
         <li>
           <span
             class="demo-swatch"
-            style="background-color: rgb(12, 169, 227);"
+            style="background-color: rgb(25, 110, 240);"
           />
            
           <span
@@ -30,7 +30,7 @@ exports[`Storyshots global Colors 1`] = `
                                 $colorMain 
             <br />
             
-                                #0CA9E3
+                                #196ef0
                             
           </span>
         </li>
@@ -81,7 +81,7 @@ exports[`Storyshots global Colors 1`] = `
                                 $colorGrayDark 
             <br />
             
-                                #7F7F7F
+                                #7f7f7f
                             
           </span>
         </li>
@@ -102,7 +102,7 @@ exports[`Storyshots global Colors 1`] = `
                                 $colorGray 
             <br />
             
-                                #E3E3E3
+                                #e3e3e3
                             
           </span>
         </li>
@@ -123,7 +123,7 @@ exports[`Storyshots global Colors 1`] = `
                                 $colorGrayLight 
             <br />
             
-                                #EAEAEA
+                                #eaeaea
                             
           </span>
         </li>
@@ -144,7 +144,28 @@ exports[`Storyshots global Colors 1`] = `
                                 $colorGrayExtraLight 
             <br />
             
-                                #F5F5F5
+                                #f5f5f5
+                            
+          </span>
+        </li>
+      </ul>
+      <ul
+        class="demo-colors"
+      >
+        <li>
+          <span
+            class="demo-swatch"
+            style="background-color: rgb(250, 250, 250);"
+          />
+           
+          <span
+            class="demo-label"
+          >
+            
+                                $colorGraySuperLight 
+            <br />
+            
+                                #fafafa
                             
           </span>
         </li>
@@ -165,7 +186,7 @@ exports[`Storyshots global Colors 1`] = `
                                 $colorWhite 
             <br />
             
-                                #FFFFFF
+                                #fff
                             
           </span>
         </li>
