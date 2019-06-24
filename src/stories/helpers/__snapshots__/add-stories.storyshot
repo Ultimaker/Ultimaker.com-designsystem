@@ -749,6 +749,7 @@ exports[`Storyshots Molecules/article-image default 1`] = `
       <img
         alt="bla bla"
         class="img--contain article-image__image img--loading"
+        resize-behaviour="crop"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
       />
@@ -780,6 +781,7 @@ exports[`Storyshots Molecules/article-image noCaption 1`] = `
       <img
         alt="bla bla"
         class="img--contain article-image__image img--loading"
+        resize-behaviour="crop"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
       />
@@ -4079,6 +4081,7 @@ exports[`Storyshots Organisms/article default 1`] = `
           <img
             alt="bla bla"
             class="img--contain article-image__image img--loading"
+            resize-behaviour="crop"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
           />
@@ -4231,6 +4234,7 @@ exports[`Storyshots Organisms/article default 1`] = `
           <img
             alt="bla bla"
             class="img--contain article-image__image img--loading"
+            resize-behaviour="crop"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
           />
@@ -4252,6 +4256,7 @@ exports[`Storyshots Organisms/article default 1`] = `
           <img
             alt="bla bla"
             class="img--contain article-image__image img--loading"
+            resize-behaviour="crop"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
           />
@@ -4448,6 +4453,7 @@ exports[`Storyshots Organisms/article default 1`] = `
           <img
             alt="bla bla"
             class="img--contain article-image__image img--loading"
+            resize-behaviour="crop"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
           />
@@ -5081,6 +5087,7 @@ exports[`Storyshots Organisms/article noIntro 1`] = `
           <img
             alt="bla bla"
             class="img--contain article-image__image img--loading"
+            resize-behaviour="crop"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
           />
@@ -8739,6 +8746,7 @@ exports[`Storyshots templates/article default 1`] = `
               <img
                 alt="bla bla"
                 class="img--contain article-image__image img--loading"
+                resize-behaviour="crop"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
               />
@@ -8891,6 +8899,7 @@ exports[`Storyshots templates/article default 1`] = `
               <img
                 alt="bla bla"
                 class="img--contain article-image__image img--loading"
+                resize-behaviour="crop"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
               />
@@ -8912,6 +8921,7 @@ exports[`Storyshots templates/article default 1`] = `
               <img
                 alt="bla bla"
                 class="img--contain article-image__image img--loading"
+                resize-behaviour="crop"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
               />
@@ -9108,6 +9118,7 @@ exports[`Storyshots templates/article default 1`] = `
               <img
                 alt="bla bla"
                 class="img--contain article-image__image img--loading"
+                resize-behaviour="crop"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
               />
@@ -9819,6 +9830,7 @@ exports[`Storyshots templates/article noIntro 1`] = `
               <img
                 alt="bla bla"
                 class="img--contain article-image__image img--loading"
+                resize-behaviour="crop"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
               />
