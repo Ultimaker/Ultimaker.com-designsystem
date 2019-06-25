@@ -3,9 +3,9 @@
         <small v-html="label"></small>
     </p>
 
-    <template v-if="navigation && navigation.length">
+    <template v-if="items && items.length">
         <nav class="legal__nav">
-            <content-link-list :links="navigation" block="legal"></content-link-list>
+            <content-link-list :links="items" block="legal"></content-link-list>
         </nav>
     </template>
 </div>
