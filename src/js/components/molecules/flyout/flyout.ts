@@ -1,5 +1,5 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { NavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
+import { NavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation/NavigationItem';
 import ViewportUtility from 'utils/viewport';
 import WithRender from './flyout.vue.html';
 

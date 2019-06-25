@@ -1,5 +1,5 @@
 import { Prop, Component, Vue } from 'vue-property-decorator';
-import { LegalNavigation as ILegalNavigation } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/legal-navigation/LegalNavigation';
+import { LegalNavigationCategory as ILegalNavigation } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation/LegalNavigationCategory';
 import WithRender from './legal-nav.vue.html';
 
 @WithRender
@@ -7,6 +7,6 @@ import WithRender from './legal-nav.vue.html';
     name: 'legal-nav',
 })
 export default class LegalNav extends Vue implements ILegalNavigation {
-    @Prop({ type: Array, required: true }) navigation!: ILegalNavigation['navigation'];
+    @Prop({ type: Array, required: true }) items!: ILegalNavigation['items'];
     @Prop({ type: String, required: true }) label!: ILegalNavigation['label'];
 }

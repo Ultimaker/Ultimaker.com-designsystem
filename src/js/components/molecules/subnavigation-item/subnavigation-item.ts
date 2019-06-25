@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { SubNavigationItem as ISubNavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/SubNavigationItem';
+import { SubNavigationItem as ISubNavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation/SubNavigationItem';
 import WithRender from './subnavigation-item.vue.html';
 
 @WithRender

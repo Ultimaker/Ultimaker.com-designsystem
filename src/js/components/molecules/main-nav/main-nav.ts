@@ -2,7 +2,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator';
 
 import ViewportUtility from 'utils/viewport';
 
-import { NavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation-item/NavigationItem';
+import { NavigationItem } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation/NavigationItem';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import WithRender from './main-nav.vue.html';
 

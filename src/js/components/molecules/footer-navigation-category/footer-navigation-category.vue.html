@@ -1,0 +1,11 @@
+<div class="flexgrid__cell--xs-6" v-if="items.length">
+    <div class="footer-nav__column">
+        <h3 id="footer-nav__title" class="footer-nav__title">{{ label }}</h3>
+        <template v-if="items && items.length">
+            <content-link-list :links="items"
+                                block="footer-nav"
+                                aria-labelledby="footer-nav__title-01">
+            </content-link-list>
+        </template>
+    </div>
+</div>
