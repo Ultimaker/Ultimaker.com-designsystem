@@ -5115,8 +5115,7 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   display: block;
   position: relative;
   bottom: 0;
-  margin-bottom: 0;
-  word-break: break-all; }
+  margin-bottom: 0; }
   .um-components .overflow-container__label:hover {
     color: #000000; }
   .um-components .overflow-container__link:focus .overflow-container__label:after {
