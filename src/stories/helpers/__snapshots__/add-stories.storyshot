@@ -1842,6 +1842,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
             >
               <input
                 class="card-download__radio"
+                id="static"
                 name="download"
                 type="radio"
                 value="http://speed.transip.nl/1gb.bin?win"
@@ -1849,6 +1850,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
                
               <label
                 class="card-download__label"
+                for="static"
               >
                 <div
                   class="card-download__image-wrapper"
@@ -1888,6 +1890,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
             >
               <input
                 class="card-download__radio"
+                id="static"
                 name="download"
                 type="radio"
                 value="http://speed.transip.nl/1gb.bin?mac"
@@ -1895,6 +1898,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
                
               <label
                 class="card-download__label"
+                for="static"
               >
                 <div
                   class="card-download__image-wrapper"
@@ -1934,6 +1938,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
             >
               <input
                 class="card-download__radio"
+                id="static"
                 name="download"
                 type="radio"
                 value="http://speed.transip.nl/1gb.bin?linux"
@@ -1941,6 +1946,7 @@ exports[`Storyshots Molecules/modal-wizard default 1`] = `
                
               <label
                 class="card-download__label"
+                for="static"
               >
                 <div
                   class="card-download__image-wrapper"
@@ -2398,6 +2404,7 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
         >
           <input
             class="card-download__radio"
+            id="static"
             name="download"
             type="radio"
             value="http://speed.transip.nl/1gb.bin?win"
@@ -2405,6 +2412,7 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
            
           <label
             class="card-download__label"
+            for="static"
           >
             <div
               class="card-download__image-wrapper"
@@ -2444,6 +2452,7 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
         >
           <input
             class="card-download__radio"
+            id="static"
             name="download"
             type="radio"
             value="http://speed.transip.nl/1gb.bin?mac"
@@ -2451,6 +2460,7 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
            
           <label
             class="card-download__label"
+            for="static"
           >
             <div
               class="card-download__image-wrapper"
@@ -2490,6 +2500,7 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
         >
           <input
             class="card-download__radio"
+            id="static"
             name="download"
             type="radio"
             value="http://speed.transip.nl/1gb.bin?linux"
@@ -2497,6 +2508,7 @@ exports[`Storyshots Molecules/wizard-step-download-list default 1`] = `
            
           <label
             class="card-download__label"
+            for="static"
           >
             <div
               class="card-download__image-wrapper"
@@ -3144,6 +3156,7 @@ exports[`Storyshots Molecules|cards/card-download default 1`] = `
   >
     <input
       class="card-download__radio"
+      id="static"
       name="download"
       type="radio"
       value="http://file.exe"
@@ -3151,6 +3164,7 @@ exports[`Storyshots Molecules|cards/card-download default 1`] = `
      
     <label
       class="card-download__label"
+      for="static"
     >
       <div
         class="card-download__image-wrapper"
@@ -3197,6 +3211,7 @@ exports[`Storyshots Molecules|cards/card-download selected 1`] = `
   >
     <input
       class="card-download__radio"
+      id="static"
       name="download"
       type="radio"
       value="http://file.exe"
@@ -3204,6 +3219,7 @@ exports[`Storyshots Molecules|cards/card-download selected 1`] = `
      
     <label
       class="card-download__label"
+      for="static"
     >
       <div
         class="card-download__image-wrapper"
