@@ -1,6 +1,12 @@
 <div class="card-download">
-    <input type="radio" :name="name" :checked="selected" :value="file" class="card-download__radio" @change="handleSelect"/>
-    <label class="card-download__label">
+    <input type="radio"
+        :id="id"
+        :name="name"
+        :checked="selected"
+        :value="file"
+        class="card-download__radio"
+        @change="handleSelect" />
+    <label class="card-download__label" :for="id">
         <div class="card-download__image-wrapper">
             <c-image v-bind="image" v-if="image" />
         </div>
