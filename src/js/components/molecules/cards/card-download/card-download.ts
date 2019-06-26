@@ -1,6 +1,7 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { CardDownloadProps } from './card-download.models';
 import WithRender from './card-download.vue.html';
+import v5 from '../../../../utils/uuid';
 
 @WithRender
 @Component({
@@ -16,6 +17,10 @@ export class CardDownload extends Vue implements CardDownloadProps {
     @Prop({ type: String, required: true }) file!: CardDownloadProps['file'];
     @Prop({ type: String, required: true }) description!: CardDownloadProps['description'];
     @Prop({ type: Object, required: false }) image?: CardDownloadProps['image'];
+
+    get id(): string {
+        return v5();
+    }
 
     handleSelect() {
         this.setSelectedItem(this.index);
