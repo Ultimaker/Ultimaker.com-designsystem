@@ -8125,91 +8125,51 @@ exports.default = _contentToggle2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _contentToggleVue = __webpack_require__(214);
-
-var _contentToggleVue2 = _interopRequireDefault(_contentToggleVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var ContentToggle = function (_Vue) {
-    _inherits(ContentToggle, _Vue);
-
-    function ContentToggle() {
-        _classCallCheck(this, ContentToggle);
-
-        return _possibleConstructorReturn(this, (ContentToggle.__proto__ || Object.getPrototypeOf(ContentToggle)).apply(this, arguments));
-    }
-
-    _createClass(ContentToggle, [{
-        key: "toggle",
-        value: function toggle() {
-            this.$emit('toggle');
+exports.default = {
+    name: 'content-toggle',
+    template: __webpack_require__(214),
+    props: {
+        toggleState: {
+            type: Boolean,
+            default: false
+        },
+        expandedText: {
+            type: String,
+            default: 'Less'
+        },
+        collapsedText: {
+            type: String,
+            default: 'More'
+        },
+        expandedIcon: {
+            type: String,
+            default: 'angle-up'
+        },
+        collapsedIcon: {
+            type: String,
+            default: 'angle-down'
         }
-    }, {
-        key: "toggleText",
-        get: function get() {
+    },
+    computed: {
+        toggleText: function toggleText() {
             return this.toggleState ? this.expandedText : this.collapsedText;
-        }
-    }, {
-        key: "toggleIcon",
-        get: function get() {
+        },
+        toggleIcon: function toggleIcon() {
             return this.toggleState ? this.expandedIcon : this.collapsedIcon;
         }
-    }]);
-
-    return ContentToggle;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), __metadata("design:type", Boolean)], ContentToggle.prototype, "toggleState", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'Less' }), __metadata("design:type", String)], ContentToggle.prototype, "expandedText", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'More' }), __metadata("design:type", String)], ContentToggle.prototype, "collapsedText", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'angle-up' }), __metadata("design:type", String)], ContentToggle.prototype, "expandedIcon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'angle-down' }), __metadata("design:type", String)], ContentToggle.prototype, "collapsedIcon", void 0);
-ContentToggle = __decorate([_contentToggleVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'content-toggle'
-})], ContentToggle);
-exports.default = ContentToggle;
+    },
+    methods: {
+        toggle: function toggle() {
+            this.$emit('toggle');
+        }
+    }
+};
 
 /***/ }),
 /* 214 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"toggle toggle--icon",attrs:{"role":"button","tabindex":"0"},on:{"click":_vm.toggle,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.toggle($event)}}},[_c('icon',{attrs:{"icon-name":_vm.toggleIcon}}),_vm._v(" "),_c('span',[_vm._v(_vm._s(_vm.toggleText))])],1)}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
+module.exports = "<a class=\"toggle toggle--icon\" role=\"button\" tabindex=\"0\" @click=\"toggle\"\n       @keyup.enter=\"toggle\">\n    <icon :icon-name=\"toggleIcon\"></icon>\n    <span>{{ toggleText }}</span>\n</a>\n";
 
 /***/ }),
 /* 215 */
