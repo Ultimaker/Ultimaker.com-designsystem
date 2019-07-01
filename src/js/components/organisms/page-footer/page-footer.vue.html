@@ -4,31 +4,24 @@
             <router-link to="/" class="branded-logo footer__branded-logo" aria-label="Ultimaker homepage">
                 <icon class="branded-logo__u" icon-name="ultimaker-u" />
             </router-link>
-
-            <nav class="footer__nav" v-if="navigation && navigation.length">
-                <div class="flexgrid">
-                    <div class="flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6"
-                         v-for="(navigationItem, index) in navigation">
-                        <div :key="index"
-                             class="flexgrid" >
-                            <footer-navigation-category v-bind="navigationItem" />
-                        </div>
-                    </div>
-                </div>  
+            <nav class="footer__navigation" v-if="navigation && navigation.length">
+                <footer-navigation-category :key="index" v-for="(navigationItem, index) in navigation" v-bind="navigationItem" />       
             </nav>
         </div>
 
         <div class="footer__secondary">
             <social-nav></social-nav>
-            <!-- <locale-selector class="footer__locale-selector"
+            <locale-selector class="footer__locale-selector"
                             v-bind="localeSelector"
                             :country="country"
-                            v-on="$listeners"> -->
+                            v-on="$listeners">
             </locale-selector>
         </div>
 
         <div class="footer__tertiary">
-            <legal-nav class="footer__legal" v-bind="legalNavigation"></legal-nav>
-        </div>
+            <nav class="footer__legal-navigation" v-if="legalNavigation && legalNavigation.length">
+                <footer-navigation-category class="footer__legal-navigation__column" :label="copyrightLabel" :items="legalNavigation" />       
+            </nav>
+       </div>
     </div>
 </footer>

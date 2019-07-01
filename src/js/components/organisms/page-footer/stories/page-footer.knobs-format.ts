@@ -1,5 +1,7 @@
 export default {
     navigation: [],
     localeSelector: {},
-    legalNavigation: {},
+    legalNavigation: [],
+    copyrightLabel: '',
+    country: {},
 };

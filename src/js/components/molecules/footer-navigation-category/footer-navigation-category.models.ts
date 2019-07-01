@@ -1,2 +1,2 @@
-import { FooterNavigationCategory } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation/FooterNavigationCategory';
-export interface FooterNavigationCategoryProps extends FooterNavigationCategory {}
+import { NavigationCategory } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/navigation/NavigationCategory';
+export interface FooterNavigationCategoryProps extends NavigationCategory {}
