@@ -10,24 +10,24 @@
 
 .footer__primary {
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: flex-start;
+    flex-direction: column;
 
-    flex-basis: 100%;
-    min-width: 100%;
     margin-bottom: $buildingUnit * 5;
 
     @include min-mobile-xl {
         margin-bottom: $buildingUnit * 4.25;
+        justify-content: space-between;
         flex-direction: row;
-    }
-    @include min-tablet {
     }
 }
 
 .footer__branded-logo {
+    order: 2;
     @include min-mobile-xl {
         align-self: flex-start;
         align-items: flex-start;
+        order: 1;
     }
 
     @include min-desktop {
@@ -37,24 +37,18 @@
     }
 }
 
-.footer__nav {
-    text-align: left;
-
+.footer__navigation {
+    order: 1;
     display: flex;
-    width: 100%;
-
-    margin-left: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-bottom: $buildingUnit * 2.5;
+    max-height: 400px;
 
     @include min-mobile-xl {
-        margin-bottom: 0;
-    }
-    @include min-mobile-xl {
-        width: 75%;
-    }
-    @include min-tablet {
-        width: 80%;
-        max-width: 600px;
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        max-height: auto;
     }
 }
 
@@ -74,22 +68,6 @@
     }
 }
 
-.footer__social-nav {
-    margin-bottom: $buildingUnit * 1.5;
-}
-
-.footer__tertiary {
-    width: 100%;
-}
-
-.footer__legal {
-    text-align: center;
-
-    @include min-mobile-xl {
-        text-align: left;
-    }
-}
-
 .footer__locale-selector {
     display: flex;
     flex-direction: row;
@@ -97,4 +75,25 @@
 .footer__country-selector {
     width: 320px;
     max-width: 100%;
+}
+
+.footer__social-nav {
+    margin-bottom: $buildingUnit * 1.5;
+}
+
+.footer__tertiary {
+    display: flex;
+    justify-content: center;
+
+    @include min-mobile-xl {
+        justify-content: flex-start;
+    }
+}
+
+.footer__legal-navigation {
+    text-align: center;
+    color: $colorGrayDark;
+    @include min-mobile-xl {
+        text-align: left;
+    }
 }
