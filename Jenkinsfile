@@ -158,13 +158,7 @@ podTemplate(
           """.stripIndent()
       }
 
-      slackSend color: 'good',
-        channel: '#ci-deployments',
-        message: """
-          Deployment updated: <https://storybook.k8s-dev.ultimaker.works|Storybook> (<${env.BUILD_URL}|Job>)
-          Components: storybook--nginx, storybook--node
-          Version: <https://github.com/Ultimaker/Ultimaker.com-designsystem/commit/${commit}|${commit}>
-          """.stripIndent()
+      deploymentUpdated('storybook', 'https://storybook.k8s-dev.ultimaker.works', env.BRANCH_NAME, commit)
 
     } catch (e) {
 
@@ -178,4 +172,18 @@ podTemplate(
 
     }
   }
+}
+
+def deploymentUpdated(name, url, branch, commit) {
+  slackSend channel: '#ci-deployments',
+    attachments: [[
+      color: "good",
+      fallback: "Deployment \"${name}\" was updated.",
+      pretext: "Deployment \"*<${url}|${name}>*\" was updated ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).",
+      fields: [
+        [ title: "Component", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem|Designsystem>" ],
+        [ title: "Branch", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem/tree/${branch}|${branch}>" ],
+        [ title: "Commit", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem/commit/${commit}|${commit}>" ],
+      ]
+    ]]
 }
