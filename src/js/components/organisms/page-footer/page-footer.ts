@@ -10,5 +10,7 @@ import WithRender from './page-footer.vue.html';
 export class PageFooter extends Vue implements PageFooterProps {
     @Prop({ type: Array, required: true }) navigation!: PageFooterProps['navigation'];
     @Prop({ type: Object, required: true }) localeSelector!: PageFooterProps['localeSelector'];
-    @Prop({ type: Object, required: true }) legalNavigation!: PageFooterProps['legalNavigation'];
+    @Prop({ type: Array, required: true }) legalNavigation!: PageFooterProps['legalNavigation'];
+    @Prop({ type: String, required: true }) copyrightLabel!: PageFooterProps['copyrightLabel'];
+    @Prop({ type: Object, required: true }) country!: object;
 }

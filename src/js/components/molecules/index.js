@@ -17,7 +17,6 @@ export { default as FooterBlock } from 'molecules/footer-block';
 export { default as HeaderBlock } from 'molecules/header-block';
 export { default as HeroHeading } from 'molecules/hero-heading';
 export { default as IconButton } from 'molecules/icon-button';
-export { default as LegalNav } from 'molecules/legal-nav';
 export { default as ListSection } from 'molecules/list-section';
 export { default as ListUnordered } from 'molecules/list-unordered';
 export { default as ListUnorderedLimit } from 'molecules/list-unordered-limit';

@@ -17,6 +17,8 @@ const getStory = (type) => {
                 navigation: { default: knobs.navigation },
                 localeSelector: { default: knobs.localeSelector },
                 legalNavigation: { default: knobs.legalNavigation },
+                country: { default: knobs.country },
+                copyrightLabel: { default: knobs.copyrightLabel },
             },
             template: require('./page-footer.html'),
         };
