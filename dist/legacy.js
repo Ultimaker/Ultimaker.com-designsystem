@@ -5162,7 +5162,7 @@ var imageConstants = exports.imageConstants = {
 /* 154 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('img',{staticClass:"img--contain",class:_vm.classList,attrs:{"alt":_vm.alt,"src":_vm.src,"srcset":_vm.srcset},on:{"error":_vm.setError}}),_vm._v(" "),(_vm.imageError)?_c('div',{staticClass:"img--contain img--replacement"},[_vm._v(_vm._s(_vm.alt))]):_vm._e()])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('img',{staticClass:"img--contain",class:_vm.classList,attrs:{"alt":_vm.alt,"src":_vm.src,"srcset":_vm.srcset},on:{"error":_vm.setError}})}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
