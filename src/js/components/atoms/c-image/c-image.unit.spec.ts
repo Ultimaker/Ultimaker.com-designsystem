@@ -13,8 +13,8 @@ describe('components', () => {
             const desiredWidth = 300;
             const desiredHeight = 200;
             const mount = build(CImage, { props: {
-                url: '/media/images/starships/enterprise',
-                alt: 'The Enterprise Starship',
+                url: '/media/images/does/not/exist',
+                alt: 'Non existant image',
                 mimeType: '',
                 quality: 65,
                 radius: 0,
@@ -30,11 +30,15 @@ describe('components', () => {
             });
 
             it('should not have an element defined', () => {
-                spyOnProperty(BrowserCapabilities, 'isBrowser', 'get').and.returnValue(false);
                 const vm = mount();
+                const elm = vm.$el.getElementsByTagName('img')[0];
+
+                spyOnProperty(BrowserCapabilities, 'isBrowser', 'get').and.returnValue(false);
+
                 expect(vm.$el).toBeDefined();
-                expect(vm.$el.src).toContain('/media/images/starships/enterprise');
-                expect(vm.$el.srcset).toContain(imageConstants.tinyGif);
+                expect(elm.src).toContain(imageConstants.tinyGif);
+                expect(elm.srcset).toContain(imageConstants.tinyGif);
+
                 vm.$destroy();
             });
 
@@ -55,14 +59,17 @@ describe('components', () => {
 
             describe('image loading strategy', () => {
                 const vm = mount();
+                const elm = vm.$el.getElementsByTagName('img')[0];
 
                 it('should load a thumbnail image when element is in view', async (done) => {
                     spyOnProperty(viewportUtil, 'scrollY', 'get').and.returnValue(0);
+
                     spyOn(vm.$el, 'getBoundingClientRect').and.returnValue({
                         top: 0,
                         width: desiredWidth,
                         height: desiredHeight,
                     });
+
                     vm.inView = true;
                     await vm.calculateDimensions();
                     await vm.$nextTick();
@@ -70,7 +77,7 @@ describe('components', () => {
                     expect(vm.inView).toBeTruthy();
                     expect(vm.$el.getBoundingClientRect).toHaveBeenCalled();
                     expect(vm.width).toEqual(desiredWidth);
-                    expect(vm.$el.srcset).toContain(`w=${imageConstants.initialSize}`);
+                    expect(elm.srcset).toContain(`w=${imageConstants.initialSize}`);
                     done();
                 });
 
@@ -78,7 +85,7 @@ describe('components', () => {
                     spyOnProperty(viewportUtil, 'scrollY', 'get').and.returnValue(0);
                     vm.imageLoaded = true;
                     await vm.$nextTick();
-                    expect(vm.$el.srcset).toContain(`w=${desiredWidth}`);
+                    expect(elm.srcset).toContain(`w=${desiredWidth}`);
                     done();
                 });
 
