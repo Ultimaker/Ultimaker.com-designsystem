@@ -1181,19 +1181,13 @@ exports[`Storyshots organisms|overview Overview card product 1`] = `
                   <div
                     class="card-product__image-container"
                   >
-                    <div
-                      class="card-product__image"
+                    <img
+                      alt="Nylon 3D printed gears"
+                      class="img--contain card-product__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
                       type="Image"
-                    >
-                      <img
-                        alt="Nylon 3D printed gears"
-                        class="img--contain img--loading"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                      />
-                       
-                      <!---->
-                    </div>
+                    />
                      
                     <!---->
                   </div>
@@ -1271,19 +1265,13 @@ exports[`Storyshots organisms|overview Overview card product 1`] = `
                   <div
                     class="card-product__image-container"
                   >
-                    <div
-                      class="card-product__image"
+                    <img
+                      alt="Ultimaker Tough PLA print"
+                      class="img--contain card-product__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
                       type="Image"
-                    >
-                      <img
-                        alt="Ultimaker Tough PLA print"
-                        class="img--contain img--loading"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                      />
-                       
-                      <!---->
-                    </div>
+                    />
                      
                     <!---->
                   </div>
@@ -1401,19 +1389,13 @@ exports[`Storyshots organisms|overview Overview card product 1`] = `
                   <div
                     class="card-product__image-container"
                   >
-                    <div
-                      class="card-product__image"
+                    <img
+                      alt="Nylon 3D printed gears"
+                      class="img--contain card-product__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
                       type="Image"
-                    >
-                      <img
-                        alt="Nylon 3D printed gears"
-                        class="img--contain img--loading"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                      />
-                       
-                      <!---->
-                    </div>
+                    />
                      
                     <!---->
                   </div>
@@ -1491,19 +1473,13 @@ exports[`Storyshots organisms|overview Overview card product 1`] = `
                   <div
                     class="card-product__image-container"
                   >
-                    <div
-                      class="card-product__image"
+                    <img
+                      alt="Ultimaker Tough PLA print"
+                      class="img--contain card-product__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
                       type="Image"
-                    >
-                      <img
-                        alt="Ultimaker Tough PLA print"
-                        class="img--contain img--loading"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                      />
-                       
-                      <!---->
-                    </div>
+                    />
                      
                     <!---->
                   </div>
@@ -1703,19 +1679,13 @@ exports[`Storyshots organisms|overview Overview card product 1`] = `
                   <div
                     class="card-product__image-container"
                   >
-                    <div
-                      class="card-product__image"
+                    <img
+                      alt="Nylon 3D printed gears"
+                      class="img--contain card-product__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
                       type="Image"
-                    >
-                      <img
-                        alt="Nylon 3D printed gears"
-                        class="img--contain img--loading"
-                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                      />
-                       
-                      <!---->
-                    </div>
+                    />
                      
                     <!---->
                   </div>

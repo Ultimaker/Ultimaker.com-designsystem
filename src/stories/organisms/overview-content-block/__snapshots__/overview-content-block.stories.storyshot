@@ -97,18 +97,12 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                     <div
                       class="content-block-container__image"
                     >
-                      <div
-                        class="content-block__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                         
-                        <!---->
-                      </div>
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
                     </div>
                      
                     <div
@@ -160,18 +154,12 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                     <div
                       class="content-block-container__image"
                     >
-                      <div
-                        class="content-block__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                         
-                        <!---->
-                      </div>
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
                     </div>
                      
                     <div
@@ -223,18 +211,12 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                     <div
                       class="content-block-container__image"
                     >
-                      <div
-                        class="content-block__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                         
-                        <!---->
-                      </div>
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
                     </div>
                      
                     <div
@@ -324,18 +306,12 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                     <div
                       class="content-block-container__image"
                     >
-                      <div
-                        class="content-block__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                         
-                        <!---->
-                      </div>
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
                     </div>
                      
                     <div
@@ -387,18 +363,12 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                     <div
                       class="content-block-container__image"
                     >
-                      <div
-                        class="content-block__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                         
-                        <!---->
-                      </div>
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
                     </div>
                      
                     <div
@@ -450,18 +420,12 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                     <div
                       class="content-block-container__image"
                     >
-                      <div
-                        class="content-block__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                         
-                        <!---->
-                      </div>
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
                     </div>
                      
                     <div
@@ -513,18 +477,12 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                     <div
                       class="content-block-container__image"
                     >
-                      <div
-                        class="content-block__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                         
-                        <!---->
-                      </div>
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
                     </div>
                      
                     <div
@@ -576,18 +534,12 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                     <div
                       class="content-block-container__image"
                     >
-                      <div
-                        class="content-block__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                         
-                        <!---->
-                      </div>
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
                     </div>
                      
                     <div
@@ -639,18 +591,12 @@ exports[`Storyshots organisms|overview Overview content-block 1`] = `
                     <div
                       class="content-block-container__image"
                     >
-                      <div
-                        class="content-block__image"
-                      >
-                        <img
-                          alt="An example image"
-                          class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                        />
-                         
-                        <!---->
-                      </div>
+                      <img
+                        alt="An example image"
+                        class="img--contain content-block__image img--loading"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      />
                     </div>
                      
                     <div
