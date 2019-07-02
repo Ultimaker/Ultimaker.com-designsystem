@@ -7,7 +7,6 @@ import { PageFooter } from './page-footer';
 describe('components', () => {
     describe('organisms', () => {
         describe('page-footer', () => {
-
             const mount = build(PageFooter, { props: {} });
 
             it('should render an PageFooter component', () => {
@@ -18,9 +17,7 @@ describe('components', () => {
         });
 
         Object.keys(data).forEach((key) => {
-
             describe(`page-footer ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(PageFooter, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

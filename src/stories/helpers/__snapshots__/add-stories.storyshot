@@ -1801,6 +1801,18 @@ exports[`Storyshots Molecules/cta-block default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/footer-navigation-category default 1`] = `
+<section
+  class="story"
+>
+  <!---->
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/hero-heading default 1`] = `
 <section
   class="story"
@@ -7296,6 +7308,578 @@ exports[`Storyshots Organisms/hero-article subtitle 1`] = `
       </div>
     </section>
   </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Organisms/page-footer default 1`] = `
+<section
+  class="story"
+>
+  <footer
+    class="footer"
+  >
+    <div
+      class="footer__container"
+    >
+      <div
+        class="footer__primary"
+      >
+        <a
+          aria-label="Ultimaker homepage"
+          class="branded-logo footer__branded-logo router-link-exact-active router-link-active"
+          href="#/"
+        >
+          <!---->
+        </a>
+         
+        <nav
+          class="footer__navigation"
+        >
+          <div
+            class="footer-navigation-category__column"
+            type="FooterNavigationCategory"
+          >
+            <h3
+              class="footer-navigation-category__title"
+            >
+              Products
+            </h3>
+             
+            <ul
+              class="footer-navigation-category__list"
+            >
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        3D printers
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Software
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Materials
+    
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="footer-navigation-category__column"
+            type="FooterNavigationCategory"
+          >
+            <h3
+              class="footer-navigation-category__title"
+            >
+              Solution areas
+            </h3>
+             
+            <ul
+              class="footer-navigation-category__list"
+            >
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Product design
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Manufactguring aids
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        End-use parts
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Architecture
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Education
+    
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="footer-navigation-category__column"
+            type="FooterNavigationCategory"
+          >
+            <h3
+              class="footer-navigation-category__title"
+            >
+              Company
+            </h3>
+             
+            <ul
+              class="footer-navigation-category__list footer-navigation-category--columns"
+            >
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        About us
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Careers
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Press
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Contact us
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Find resellers
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Join community
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Visit events
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Subscribe to newsletter
+    
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+       
+      <div
+        class="footer__secondary"
+      >
+        <nav
+          class="social-nav footer__social-nav"
+        >
+          <ul
+            aria-label="follow Ultimaker"
+            class="social-nav__list"
+          >
+            <li
+              class="social-nav__item footer__social-item"
+            >
+              <a
+                aria-label="LinkedIn"
+                class="social-nav__link icon-button icon-button--small"
+                href="https://nl.linkedin.com/company/ultimaker"
+              >
+                <!---->
+              </a>
+            </li>
+             
+            <li
+              class="social-nav__item footer__social-item"
+            >
+              <a
+                aria-label="Twitter"
+                class="social-nav__link icon-button icon-button--small"
+                href="https://twitter.com/Ultimaker"
+              >
+                <!---->
+              </a>
+            </li>
+             
+            <li
+              class="social-nav__item footer__social-item"
+            >
+              <a
+                aria-label="YouTube"
+                class="social-nav__link icon-button icon-button--small"
+                href="https://www.youtube.com/user/Ultimaker3D"
+              >
+                <!---->
+              </a>
+            </li>
+             
+            <li
+              class="social-nav__item footer__social-item"
+            >
+              <a
+                aria-label="Facebook"
+                class="social-nav__link icon-button icon-button--small"
+                href="https://www.facebook.com/Ultimaker"
+              >
+                <!---->
+              </a>
+            </li>
+             
+            <li
+              class="social-nav__item footer__social-item"
+            >
+              <a
+                aria-label="Instagram"
+                class="social-nav__link icon-button icon-button--small"
+                href="http://instagram.com/ultimaker"
+              >
+                <!---->
+              </a>
+            </li>
+          </ul>
+        </nav>
+         
+        <div
+          class="locale-selector footer__locale-selector"
+          type="CountryAutoCompleteField"
+        >
+          <a
+            aria-label="Change your country, currently: Afghanistan"
+            class="icon-button icon-button--small locale-selector__edit--buton"
+            role="button"
+            tabindex="0"
+          >
+            <!---->
+             
+            <span
+              class="icon-button__label"
+            >
+              
+        Afghanistan
+    
+            </span>
+          </a>
+           
+          <a
+            aria-label="change your country"
+            class="icon-button icon-button--small locale-selector__edit--buton"
+            role="button"
+            style="display: none;"
+            tabindex="0"
+          >
+            <!---->
+             
+            <!---->
+          </a>
+           
+          <!---->
+        </div>
+      </div>
+       
+      <div
+        class="footer__tertiary"
+      >
+        <nav
+          class="footer__legal-navigation"
+        >
+          <div
+            class="footer-navigation-category__column footer__legal-navigation__column"
+          >
+            <h3
+              class="footer-navigation-category__title"
+            >
+              2011- 2999 Ultimaker bv.
+            </h3>
+             
+            <ul
+              class="footer-navigation-category__list"
+            >
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Terms of use
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="footer-navigation-category__item'"
+              >
+                <a
+                  class="footer-navigation-category__link link link--reversed"
+                  href="http://example.com"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Privacy and Cookie Policy
+    
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
    
   <div
     class="vue-portal-target"

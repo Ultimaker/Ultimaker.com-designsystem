@@ -4350,221 +4350,195 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
           </a>
            
           <nav
-            class="footer__nav"
+            class="footer__navigation"
           >
             <div
-              class="flexgrid"
+              class="footer-navigation-category__column"
+              type="NavigationItem"
+              url="https://example.com"
             >
-              <div
-                class="flexgrid__cell--xxs-6 flexgrid__cell--xs-8 flexgrid__cell--sm-6"
+              <h3
+                class="footer-navigation-category__title"
               >
-                <div
-                  class="flexgrid"
-                >
-                  <div
-                    class="flexgrid__cell--xs-6"
-                  >
-                    <div
-                      class="footer-nav__column"
-                    >
-                      <h3
-                        class="footer-nav__title"
-                        id="footer-nav__title-01"
-                      >
-                        Item one
-                      </h3>
-                       
-                      <ul
-                        aria-labelledby="footer-nav__title-01"
-                        class="footer-nav__list"
-                      >
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="footer-nav__link"
-                            href="https://example.com"
-                            rel="noopener"
-                            target="_blank"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
-        Sub item 1
-    
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="footer-nav__link"
-                            href="https://example.com"
-                            rel="noopener"
-                            target="_blank"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
-        Sub item 2
-    
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="footer-nav__link"
-                            href="https://example.com"
-                            rel="noopener"
-                            target="_blank"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
-        Sub item 3
-    
-                            </span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                   
-                  <div
-                    class="flexgrid__cell--xs-6"
-                  >
-                    <div
-                      class="footer-nav__column"
-                    >
-                      <h3
-                        class="footer-nav__title"
-                        id="footer-nav__title-02"
-                      >
-                        Item two
-                      </h3>
-                       
-                      <ul
-                        aria-labelledby="footer-nav__title-02"
-                        class="footer-nav__list"
-                      >
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="footer-nav__link"
-                            href="https://example.com"
-                            rel="noopener"
-                            target="_blank"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
-        Sub item 1
-    
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="footer-nav__link"
-                            href="https://example.com"
-                            rel="noopener"
-                            target="_blank"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
-        Sub item 2
-    
-                            </span>
-                          </a>
-                        </li>
-                        <li
-                          class="footer-nav__item"
-                        >
-                          <a
-                            class="footer-nav__link"
-                            href="https://example.com"
-                            rel="noopener"
-                            target="_blank"
-                          >
-                            <!---->
-                             
-                            <span
-                              class="link__underline"
-                            >
-                              
-        Sub item 3
-    
-                            </span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                Item one
+              </h3>
                
-              <div
-                class="flexgrid__cell--xxs-6 flexgrid__cell--xs-4 flexgrid__cell--sm-6"
+              <ul
+                class="footer-navigation-category__list"
               >
-                <div
-                  class="footer-nav__column footer-nav__column--last footer-nav__column--double"
+                <li
+                  class="footer-navigation-category__item'"
                 >
-                  <h3
-                    class="footer-nav__title"
-                    id="footer-nav__title-03"
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="https://example.com"
+                    rel="noopener"
+                    target="_blank"
                   >
-                    Item three
-                  </h3>
-                   
-                  <ul
-                    aria-labelledby="footer-nav__title-03"
-                    class="footer-nav__list"
-                  >
-                    <li
-                      class="footer-nav__item"
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
                     >
-                      <a
-                        class="footer-nav__link"
-                        href="https://example.com"
-                        rel="noopener"
-                        target="_blank"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
+                      
         Sub item 1
     
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="https://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Sub item 2
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="https://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Sub item 3
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="footer-navigation-category__column"
+              type="NavigationItem"
+              url="https://example.com"
+            >
+              <h3
+                class="footer-navigation-category__title"
+              >
+                Item two
+              </h3>
+               
+              <ul
+                class="footer-navigation-category__list"
+              >
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="https://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Sub item 1
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="https://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Sub item 2
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="https://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Sub item 3
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="footer-navigation-category__column"
+              type="NavigationItem"
+              url="https://example.com"
+            >
+              <h3
+                class="footer-navigation-category__title"
+              >
+                Item three
+              </h3>
+               
+              <ul
+                class="footer-navigation-category__list"
+              >
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="https://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Sub item 1
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </nav>
         </div>
@@ -4681,46 +4655,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
         <div
           class="footer__tertiary"
         >
-          <div
-            class="legal footer__legal"
-          >
-            <p
-              class="legal__copyright-label"
-            >
-              <small>
-                Copyright Ultimaker
-              </small>
-            </p>
-             
-            <nav
-              class="legal__nav"
-            >
-              <ul
-                class="legal__list"
-              >
-                <li
-                  class="legal__item"
-                >
-                  <a
-                    class="legal__link"
-                    href="https://example.com"
-                    rel="noopener"
-                    target="_blank"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      
-        Item legal
-    
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <!---->
         </div>
       </div>
     </footer>
