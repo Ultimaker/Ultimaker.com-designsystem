@@ -1949,13 +1949,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -1987,13 +1992,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2025,13 +2035,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2063,13 +2078,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2101,13 +2121,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2139,13 +2164,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2177,13 +2207,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2215,13 +2250,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2253,13 +2293,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2291,13 +2336,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2329,13 +2379,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2367,13 +2422,18 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               <div
                 class="overflow-container__image-container"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                <div
                   type="Cimage"
-                />
+                >
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
                
               <div
@@ -2399,12 +2459,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
         <div
           class="hero-cover__image--full"
         >
-          <img
-            alt="bla bla"
-            class="img--contain img--loading"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-          />
+          <div>
+            <img
+              alt="bla bla"
+              class="img--contain img--loading"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+            />
+             
+            <!---->
+          </div>
         </div>
          
         <div
@@ -2512,13 +2576,19 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       <div
                         class="card-product__image-container"
                       >
-                        <img
-                          alt="Nylon 3D printed gears"
-                          class="img--contain card-product__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        <div
+                          class="card-product__image"
                           type="Image"
-                        />
+                        >
+                          <img
+                            alt="Nylon 3D printed gears"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          />
+                           
+                          <!---->
+                        </div>
                          
                         <!---->
                       </div>
@@ -2596,13 +2666,19 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       <div
                         class="card-product__image-container"
                       >
-                        <img
-                          alt="Ultimaker Tough PLA print"
-                          class="img--contain card-product__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        <div
+                          class="card-product__image"
                           type="Image"
-                        />
+                        >
+                          <img
+                            alt="Ultimaker Tough PLA print"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          />
+                           
+                          <!---->
+                        </div>
                          
                         <!---->
                       </div>
@@ -2720,13 +2796,19 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       <div
                         class="card-product__image-container"
                       >
-                        <img
-                          alt="Nylon 3D printed gears"
-                          class="img--contain card-product__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        <div
+                          class="card-product__image"
                           type="Image"
-                        />
+                        >
+                          <img
+                            alt="Nylon 3D printed gears"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          />
+                           
+                          <!---->
+                        </div>
                          
                         <!---->
                       </div>
@@ -2804,13 +2886,19 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       <div
                         class="card-product__image-container"
                       >
-                        <img
-                          alt="Ultimaker Tough PLA print"
-                          class="img--contain card-product__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        <div
+                          class="card-product__image"
                           type="Image"
-                        />
+                        >
+                          <img
+                            alt="Ultimaker Tough PLA print"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          />
+                           
+                          <!---->
+                        </div>
                          
                         <!---->
                       </div>
@@ -3010,13 +3098,19 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       <div
                         class="card-product__image-container"
                       >
-                        <img
-                          alt="Nylon 3D printed gears"
-                          class="img--contain card-product__image img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        <div
+                          class="card-product__image"
                           type="Image"
-                        />
+                        >
+                          <img
+                            alt="Nylon 3D printed gears"
+                            class="img--contain img--loading"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          />
+                           
+                          <!---->
+                        </div>
                          
                         <!---->
                       </div>
@@ -3323,12 +3417,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -3398,12 +3496,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -3473,12 +3575,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -3548,12 +3654,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -3623,12 +3733,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -3698,12 +3812,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -3866,12 +3984,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   ctas="[object Object]"
                   type="ContentCover"
                 >
-                  <img
-                    alt="bla bla"
-                    class="img--contain img--loading"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                  />
+                  <div>
+                    <img
+                      alt="bla bla"
+                      class="img--contain img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    />
+                     
+                    <!---->
+                  </div>
                    
                   <div
                     class="content-cover__image--overlay"
@@ -3920,12 +4042,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   ctas="[object Object]"
                   type="ContentCover"
                 >
-                  <img
-                    alt="bla bla"
-                    class="img--contain img--loading"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                  />
+                  <div>
+                    <img
+                      alt="bla bla"
+                      class="img--contain img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    />
+                     
+                    <!---->
+                  </div>
                    
                   <div
                     class="content-cover__image--overlay"
@@ -3989,12 +4115,16 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   ctas="[object Object]"
                   type="ContentCover"
                 >
-                  <img
-                    alt="bla bla"
-                    class="img--contain img--loading"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                  />
+                  <div>
+                    <img
+                      alt="bla bla"
+                      class="img--contain img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    />
+                     
+                    <!---->
+                  </div>
                    
                   <div
                     class="content-cover__image--overlay"

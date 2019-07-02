@@ -2008,12 +2008,16 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
               <div
                 class="hero__image"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                />
+                <div>
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
             </div>
           </div>

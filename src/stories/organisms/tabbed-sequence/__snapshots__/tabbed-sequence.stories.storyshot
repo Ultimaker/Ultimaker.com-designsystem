@@ -116,12 +116,16 @@ exports[`Storyshots organisms|Tabbed Sequence Tabbed Sequence 1`] = `
                 ctas="[object Object]"
                 type="ContentCover"
               >
-                <img
-                  alt="bla bla"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                />
+                <div>
+                  <img
+                    alt="bla bla"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
                  
                 <div
                   class="content-cover__image--overlay"
@@ -170,12 +174,16 @@ exports[`Storyshots organisms|Tabbed Sequence Tabbed Sequence 1`] = `
                 ctas="[object Object]"
                 type="ContentCover"
               >
-                <img
-                  alt="bla bla"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                />
+                <div>
+                  <img
+                    alt="bla bla"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
                  
                 <div
                   class="content-cover__image--overlay"
@@ -239,12 +247,16 @@ exports[`Storyshots organisms|Tabbed Sequence Tabbed Sequence 1`] = `
                 ctas="[object Object]"
                 type="ContentCover"
               >
-                <img
-                  alt="bla bla"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                />
+                <div>
+                  <img
+                    alt="bla bla"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
                  
                 <div
                   class="content-cover__image--overlay"

@@ -31,13 +31,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -69,13 +74,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -107,13 +117,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -145,13 +160,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -183,13 +203,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -221,13 +246,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -259,13 +289,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -297,13 +332,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -335,13 +375,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -373,13 +418,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -411,13 +461,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
@@ -449,13 +504,18 @@ exports[`Storyshots organisms|subnavigation Subnavigation 1`] = `
             <div
               class="overflow-container__image-container"
             >
-              <img
-                alt="An example image"
-                class="img--contain img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
                 type="Cimage"
-              />
+              >
+                <img
+                  alt="An example image"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
              
             <div
