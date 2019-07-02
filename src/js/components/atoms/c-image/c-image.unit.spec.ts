@@ -31,13 +31,12 @@ describe('components', () => {
 
             it('should not have an element defined', () => {
                 const vm = mount();
-                const elm = vm.$el.getElementsByTagName('img')[0];
 
                 spyOnProperty(BrowserCapabilities, 'isBrowser', 'get').and.returnValue(false);
 
                 expect(vm.$el).toBeDefined();
-                expect(elm.src).toContain(imageConstants.tinyGif);
-                expect(elm.srcset).toContain(imageConstants.tinyGif);
+                expect(vm.$el.src).toContain(imageConstants.tinyGif);
+                expect(vm.$el.srcset).toContain(imageConstants.tinyGif);
 
                 vm.$destroy();
             });
@@ -59,7 +58,6 @@ describe('components', () => {
 
             describe('image loading strategy', () => {
                 const vm = mount();
-                const elm = vm.$el.getElementsByTagName('img')[0];
 
                 it('should load a thumbnail image when element is in view', async (done) => {
                     spyOnProperty(viewportUtil, 'scrollY', 'get').and.returnValue(0);
@@ -77,7 +75,7 @@ describe('components', () => {
                     expect(vm.inView).toBeTruthy();
                     expect(vm.$el.getBoundingClientRect).toHaveBeenCalled();
                     expect(vm.width).toEqual(desiredWidth);
-                    expect(elm.srcset).toContain(`w=${imageConstants.initialSize}`);
+                    expect(vm.$el.srcset).toContain(`w=${imageConstants.initialSize}`);
                     done();
                 });
 
@@ -85,7 +83,7 @@ describe('components', () => {
                     spyOnProperty(viewportUtil, 'scrollY', 'get').and.returnValue(0);
                     vm.imageLoaded = true;
                     await vm.$nextTick();
-                    expect(elm.srcset).toContain(`w=${desiredWidth}`);
+                    expect(vm.$el.srcset).toContain(`w=${desiredWidth}`);
                     done();
                 });
 
