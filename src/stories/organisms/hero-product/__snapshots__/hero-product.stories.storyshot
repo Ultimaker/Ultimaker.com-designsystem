@@ -60,21 +60,16 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
             <div
               class="hero__image"
             >
-              <div
+              <img
+                alt=""
                 alt_text="Some alt text"
+                class="img--contain img--loading"
                 links="[object Object]"
                 mime_type="image/png"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
                 title="Some title"
-              >
-                <img
-                  alt=""
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                />
-                 
-                <!---->
-              </div>
+              />
             </div>
           </div>
         </div>

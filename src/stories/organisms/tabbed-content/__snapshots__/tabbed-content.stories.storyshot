@@ -204,16 +204,12 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       <div
                         class="content-general__image-wrapper"
                       >
-                        <div>
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
-                           
-                          <!---->
-                        </div>
+                        <img
+                          alt="An example image"
+                          class="img--contain img--loading"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        />
                       </div>
                     </div>
                   </div>
@@ -283,16 +279,12 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       <div
                         class="content-general__image-wrapper"
                       >
-                        <div>
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
-                           
-                          <!---->
-                        </div>
+                        <img
+                          alt="An example image"
+                          class="img--contain img--loading"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        />
                       </div>
                     </div>
                   </div>
@@ -362,16 +354,12 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       <div
                         class="content-general__image-wrapper"
                       >
-                        <div>
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
-                           
-                          <!---->
-                        </div>
+                        <img
+                          alt="An example image"
+                          class="img--contain img--loading"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        />
                       </div>
                     </div>
                   </div>
@@ -441,16 +429,12 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       <div
                         class="content-general__image-wrapper"
                       >
-                        <div>
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
-                           
-                          <!---->
-                        </div>
+                        <img
+                          alt="An example image"
+                          class="img--contain img--loading"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        />
                       </div>
                     </div>
                   </div>
@@ -520,16 +504,12 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       <div
                         class="content-general__image-wrapper"
                       >
-                        <div>
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
-                           
-                          <!---->
-                        </div>
+                        <img
+                          alt="An example image"
+                          class="img--contain img--loading"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        />
                       </div>
                     </div>
                   </div>
@@ -599,16 +579,12 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                       <div
                         class="content-general__image-wrapper"
                       >
-                        <div>
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
-                           
-                          <!---->
-                        </div>
+                        <img
+                          alt="An example image"
+                          class="img--contain img--loading"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                        />
                       </div>
                     </div>
                   </div>
