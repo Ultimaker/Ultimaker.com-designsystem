@@ -2112,12 +2112,16 @@ exports[`Storyshots templates|materials Materials details 1`] = `
               <div
                 class="hero__image"
               >
-                <img
-                  alt="An example image"
-                  class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                />
+                <div>
+                  <img
+                    alt="An example image"
+                    class="img--contain img--loading"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  />
+                   
+                  <!---->
+                </div>
               </div>
             </div>
           </div>
@@ -2321,12 +2325,16 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2396,12 +2404,16 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2471,12 +2483,16 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2546,12 +2562,16 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2621,12 +2641,16 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2696,12 +2720,16 @@ exports[`Storyshots templates|materials Materials details 1`] = `
                         <div
                           class="content-general__image-wrapper"
                         >
-                          <img
-                            alt="An example image"
-                            class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-                          />
+                          <div>
+                            <img
+                              alt="An example image"
+                              class="img--contain img--loading"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            />
+                             
+                            <!---->
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2931,13 +2959,19 @@ exports[`Storyshots templates|materials Materials details 1`] = `
             <div
               class="flexgrid__cell--sm-8 flexgrid__cell--xs-6"
             >
-              <img
-                alt="Ultimaker #ff1493"
-                class="img--contain colors__image img--loading"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+              <div
+                class="colors__image"
                 type="Image"
-              />
+              >
+                <img
+                  alt="Ultimaker #ff1493"
+                  class="img--contain img--loading"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                />
+                 
+                <!---->
+              </div>
             </div>
           </div>
            

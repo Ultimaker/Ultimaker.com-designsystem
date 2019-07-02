@@ -59,13 +59,19 @@ exports[`Storyshots Molecules|lists/list-unordered li-item-card-product 1`] = `
         <div
           class="card-product__image-container"
         >
-          <img
-            alt="Nylon 3D printed gears"
-            class="img--contain card-product__image img--loading"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          <div
+            class="card-product__image"
             type="Image"
-          />
+          >
+            <img
+              alt="Nylon 3D printed gears"
+              class="img--contain img--loading"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+            />
+             
+            <!---->
+          </div>
            
           <!---->
         </div>
@@ -217,13 +223,19 @@ exports[`Storyshots Molecules|lists/list-unordered li-item-card-product 1`] = `
         <div
           class="card-product__image-container"
         >
-          <img
-            alt="Nylon 3D printed gears"
-            class="img--contain card-product__image img--loading"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          <div
+            class="card-product__image"
             type="Image"
-          />
+          >
+            <img
+              alt="Nylon 3D printed gears"
+              class="img--contain img--loading"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+            />
+             
+            <!---->
+          </div>
            
           <!---->
         </div>

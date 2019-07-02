@@ -13,12 +13,16 @@ exports[`Storyshots organisms|hero Hero cover 1`] = `
       <div
         class="hero-cover__image--full"
       >
-        <img
-          alt="bla bla"
-          class="img--contain img--loading"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-        />
+        <div>
+          <img
+            alt="bla bla"
+            class="img--contain img--loading"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+          />
+           
+          <!---->
+        </div>
       </div>
        
       <div
