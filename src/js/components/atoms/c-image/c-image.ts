@@ -12,47 +12,34 @@ import WithRender from './c-image.vue.html';
 })
 
 export default class CImage extends Mixins(InView) implements ICImageProps {
-    @Prop({ type: String, required: true })
-    mimeType!: string;
+    @Prop({ type: String, default: '' }) alt!: string;
+    @Prop({ type: String, default: null }) backgroundColor!: string | null;
+    @Prop({ type: Boolean, default: false }) crop!: boolean;
+    @Prop({ type: String, default: FocusArea.center }) focusArea!: FocusArea;
+    @Prop({ type: String, default: ImageFormat.default }) imageFormat!: ImageFormat;
+    @Prop({ type: String, required: true }) mimeType!: string;
+    @Prop({ type: Number, default: 0 }) radius!: number;
+    @Prop({ type: String, default: ResizeBehavior.default })resizeBehavior!: ResizeBehavior;
+    @Prop({ type: Number, default: 65 }) quality!: number;
+    @Prop({ type: String, required: true }) url!: string;
 
-    @Prop({ type: String, required: true })
-    url!: string;
-
-    @Prop({ type: String, default: '' })
-    alt!: string;
-
-    @Prop({ type: Boolean, default: false })
-    crop!: boolean;
-
-    @Prop({ type: String, default: ImageFormat.default })
-    imageFormat!: ImageFormat;
-
-    @Prop({ type: String, default: ResizeBehavior.default })
-    resizeBehavior!: ResizeBehavior;
-
-    @Prop({ type: String, default: FocusArea.center })
-    focusArea!: FocusArea;
-
-    @Prop({ type: Number, default: 0 })
-    radius!: number;
-
-    @Prop({ type: Number, default: 65 })
-    quality!: number;
-
-    @Prop({ type: String, default: null })
-    backgroundColor!: string | null;
-
-    viewportUtil = new ViewportUtil();
+    height: number = 0;
+    imageError: boolean = false;
     imageLoaded: boolean = false;
     ready:boolean = false;
+    viewportUtil = new ViewportUtil();
     width: number = 0;
-    height: number = 0;
 
     beforeMount() {
         if (BrowserCapabilities.isBrowser) {
             const height = this.viewportUtil.screenHeight * 1.5;
             this.setInViewOptions({ rootMargin: `${height}px 0px ${height}px 0px` });
         }
+    }
+
+    setError() {
+        this.$emit('error');
+        this.imageError = true;
     }
 
     async mounted() {
