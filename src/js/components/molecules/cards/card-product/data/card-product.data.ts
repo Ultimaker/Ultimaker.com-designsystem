@@ -1,7 +1,7 @@
 import properties from 'components/molecules/list-unordered/data/examples/properties-basic';
 import { items as propertiesExtended } from 'components/molecules/list-unordered/data/examples/properties-extended';
-import image from 'components/atoms/c-image/data/examples/c-image-nylon';
-import imagePla from 'components/atoms/c-image/data/examples/c-image-tough-pla';
+import { nylon } from 'components/atoms/c-image/data/examples/c-image-nylon';
+import { toughPLA } from 'components/atoms/c-image/data/examples/c-image-tough-pla';
 
 export const data = {
     noImageNoProperties: {
@@ -17,13 +17,13 @@ export const data = {
         url: 'https://ultimaker.com/en/products/materials/nylon',
     },
     noProperties: {
-        image,
+        image: nylon,
         title: 'Ultimaker Nylon',
         type: 'CardProduct',
         url: 'https://ultimaker.com/en/products/materials/nylon',
     },
     nylon: {
-        image,
+        image: nylon,
         properties,
         title: 'Ultimaker Nylon',
         type: 'CardProduct',
@@ -31,7 +31,7 @@ export const data = {
     },
     pla: {
         properties: propertiesExtended,
-        image: imagePla,
+        image: toughPLA,
         title: 'Ultimaker Tough PLA',
         type: 'CardProduct',
         url: 'https://ultimaker.com/en/products/materials/tough-pla',

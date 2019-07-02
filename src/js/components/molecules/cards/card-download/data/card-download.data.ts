@@ -1,8 +1,8 @@
-import image from 'components/atoms/c-image/data/examples/c-image-nylon';
+import { nylon } from 'components/atoms/c-image/data/examples/c-image-nylon';
 
 export const data = {
     default: {
-        image,
+        image: nylon,
         description: 'Windows, 64 bit',
         file: 'http://file.exe',
         title: 'Ultimaker Cura 4.0',
@@ -10,7 +10,7 @@ export const data = {
         selected: false,
     },
     selected: {
-        image,
+        image: nylon,
         description: 'Windows, 64 bit',
         file: 'http://file.exe',
         title: 'Ultimaker Cura 4.0',

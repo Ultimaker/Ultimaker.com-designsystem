@@ -1,4 +1,4 @@
-import { data as imageData } from 'components/atoms/c-image/data/c-image.data';
+import { svg } from 'components/atoms/c-image/data/examples/c-image-svg';
 
 const columnCtaButton = {
     type: 'ContentButton',
@@ -20,17 +20,17 @@ export const data = {
             columns: [
                 {
                     title: 'Product title 1',
-                    image: imageData.default,
+                    image: svg,
                     cta: columnCtaButton,
                 },
                 {
                     title: 'Product title 2',
-                    image: imageData.default,
+                    image: svg,
                     cta: columnCtaLink,
                 },
                 {
                     title: 'Product title 3',
-                    image: imageData.default,
+                    image: svg,
                     cta: columnCtaButton,
                 },
             ],
