@@ -136,7 +136,7 @@ podTemplate(
 
       slackSend color: 'danger',
         channel: '#ci-builds',
-        message: "Build failed: designsystem ${env.BRANCH_NAME} (<${env.BUILD_URL}|Job>)"
+        message: "Failure while building *designsystem* branch \"${env.BRANCH_NAME}\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> )."
 
       throw e
 
@@ -166,7 +166,7 @@ podTemplate(
 
       slackSend color: 'danger',
         channel: '#ci-deployments',
-        message: "Deployment to storybook failed (<${env.BUILD_URL}|Job>)"
+        message: "Failure while deploying *storybook* to \"development\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> )."
 
       throw e
 
