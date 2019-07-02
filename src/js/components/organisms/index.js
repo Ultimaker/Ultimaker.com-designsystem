@@ -11,5 +11,4 @@ export { default as TabbedTable } from 'organisms/tabbed-table';
 export { default as ArticleContent } from 'organisms/article-content';
 export { default as HeroArticle } from 'organisms/hero-article';
 export { default as ArticleHeader } from 'organisms/article-header';
-export {default as PageFooter} from 'organisms/page-footer';
-
+export { default as PageFooter } from 'organisms/page-footer';
