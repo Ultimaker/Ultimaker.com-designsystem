@@ -966,28 +966,14 @@ because both families serve another purpose. Therefore the line-heights will be 
       position: absolute;
       top: 48px; } }
 
-.um-components .img--contain {
-  object-fit: cover;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  will-change: filter;
-  transition: filter 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  transform: translateZ(0);
-  filter: blur(0.01px); }
-  .um-components .img--contain.img--loading {
-    filter: blur(50px); }
-
-.um-components .img--responsive {
-  max-width: 100%;
-  height: auto;
-  display: block; }
-
-.um-components .img--lazy {
-  transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
-  .um-components .img--lazy.img--loading {
-    opacity: 0; }
-
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 .um-components .cms-image {
   display: block;
   position: relative;
@@ -1000,6 +986,39 @@ because both families serve another purpose. Therefore the line-heights will be 
   left: 0;
   right: 0;
   bottom: 0; }
+
+.um-components .img--contain {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  will-change: filter;
+  transition: filter 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translateZ(0);
+  filter: blur(0.01px); }
+
+.um-components .img--contain.img--loading {
+  filter: blur(50px); }
+
+.um-components .img--responsive {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.um-components .img--replacement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e3e3e3;
+  padding: 12px; }
+
+.um-components .img--lazy {
+  transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.um-components .img--lazy.img--loading {
+  opacity: 0; }
 
 .um-components .home-link {
   display: flex;
