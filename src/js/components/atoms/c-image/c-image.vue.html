@@ -1,1 +1,4 @@
-<img :alt="alt" :src="src" :srcset="srcset" class="img--contain" :class="classList" @error="$emit('error')"/>
+<div>
+    <img :alt="alt" :src="src" :srcset="srcset" class="img--contain" :class="classList" @error="setError"/>
+    <div class="img--contain img--replacement" v-if="imageError">{{ alt }}</div>
+</div>
