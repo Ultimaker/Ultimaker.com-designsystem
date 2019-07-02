@@ -5,23 +5,21 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/page-footer.data';
 import knobsFormat from './page-footer.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                navigation: { default: knobs.navigation },
-                localeSelector: { default: knobs.localeSelector },
-                legalNavigation: { default: knobs.legalNavigation },
-                country: { default: knobs.country },
-                copyrightLabel: { default: knobs.copyrightLabel },
-            },
-            template: require('./page-footer.html'),
-        };
+    return {
+        props: {
+            navigation: { default: knobs.navigation },
+            localeSelector: { default: knobs.localeSelector },
+            legalNavigation: { default: knobs.legalNavigation },
+            country: { default: knobs.country },
+            copyrightLabel: { default: knobs.copyrightLabel },
+        },
+        template: require('./page-footer.html'),
     };
 };
 

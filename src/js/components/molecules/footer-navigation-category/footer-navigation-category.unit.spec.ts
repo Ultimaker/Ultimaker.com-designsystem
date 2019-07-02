@@ -7,7 +7,6 @@ import { FooterNavigationCategory } from './footer-navigation-category';
 describe('components', () => {
     describe('molecules', () => {
         describe('footer-navigation-category', () => {
-
             const mount = build(FooterNavigationCategory, { props: {} });
 
             it('should render an FooterNavigationCategory component', () => {
@@ -18,9 +17,7 @@ describe('components', () => {
         });
 
         Object.keys(data).forEach((key) => {
-
             describe(`footer-navigation-category ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(FooterNavigationCategory, { props });
 
@@ -31,6 +28,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });
