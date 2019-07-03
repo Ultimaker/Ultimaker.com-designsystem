@@ -179,7 +179,7 @@ def deploymentUpdated(name, url, branch, commit) {
     attachments: [[
       color: "good",
       fallback: "Deployment \"${name}\" was updated.",
-      pretext: "Deployment \"*<${url}|${name}>*\" was updated ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).",
+      pretext: "Deployment \"<${url}|${name}>\" was updated ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).",
       fields: [
         [ title: "Component", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem|Designsystem>" ],
         [ title: "Branch", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem/tree/${branch}|${branch}>" ],
