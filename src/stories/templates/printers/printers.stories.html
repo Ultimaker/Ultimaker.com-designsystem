@@ -2,13 +2,8 @@
     <page-header v-bind="header" @toggle-nav="header.mainNavOpen = !header.mainNavOpen"></page-header>
     <main style="padding-top: 60px">
         <hero-products-application v-bind="heroProductsApplication"></hero-products-application>
-        <legacy-brands v-bind="brands"/>
-        <slider-reveal v-bind="slider"></slider-reveal>
-        <examples v-bind="examples"></examples>
-        <explore v-bind="explore"></explore>
-        <ecosystem v-bind="ecosystem"></ecosystem>
-        <cases v-bind="cases"></cases>
+        <brands v-bind="brands"/>
         <general-content v-bind="generalContent"></general-content>
     </main>
-    <page-footer  v-bind="footer"></page-footer>
+    <page-footer v-bind="footer"></page-footer>
 </section>
