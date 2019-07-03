@@ -146,14 +146,9 @@ podTemplate(
 
       stage('update storybook') {
         sh """
-          cat <<EOF | parallel --verbose --jobs 2 --colsep ' ' kubectl --namespace acceptance set image {1} {2}
-          deployment/storybook--nginx nginx=${nginxContainer}:${commit}
-          deployment/storybook--node node=${nodeContainer}:${commit}
-          EOF
-
-          cat <<EOF | parallel --verbose --jobs 2 kubectl --namespace acceptance rollout status
-          deployment/storybook--nginx
-          deployment/storybook--node
+          cat <<EOF | parallel --verbose --jobs 2 --colsep ' ' /update-deployment.sh acceptance {1} {2} {3} {4}
+          deployment/storybook--nginx nginx ${nginxContainer} ${commit}
+          deployment/storybook--node node ${nodeContainer} ${commit}
           EOF
           """.stripIndent()
       }
