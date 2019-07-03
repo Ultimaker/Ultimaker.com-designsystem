@@ -5,6 +5,7 @@ export { default as BrandCard } from 'molecules/cards/brand-card';
 export { default as BusinessCard } from 'molecules/cards/business-card';
 export { default as Card } from 'molecules/cards/__LEGACY__card';
 export { default as CardBase } from 'molecules/cards/card-base';
+export { default as CardArticle } from 'molecules/cards/card-article';
 export { default as CardProduct } from 'molecules/cards/card-product';
 export { default as Color } from 'molecules/color';
 export { default as ContentBlock } from 'molecules/content-block';
