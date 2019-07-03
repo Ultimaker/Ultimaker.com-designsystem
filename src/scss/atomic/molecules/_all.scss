@@ -10,7 +10,6 @@
 @import 'tag';
 @import 'container';
 @import "flyout";
-@import 'main-nav';
 @import 'sys-nav';
 @import 'search';
 @import 'social-nav';
@@ -60,4 +59,10 @@
 
 
 @import '~molecules/footer-navigation-category/footer-navigation-category';
+
+
+@import '~molecules/main-navigation/main-navigation';
+
+
+@import '~molecules/main-navigation-item/main-navigation-item';
 

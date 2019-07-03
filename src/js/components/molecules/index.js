@@ -49,3 +49,7 @@ export { default as ArticleVideo } from 'molecules/article-video';
 export { default as ArticleAuthor } from 'molecules/article-author';
 export { default as ArticleCtas } from 'molecules/article-ctas';
 export { default as FooterNavigationCategory } from 'molecules/footer-navigation-category';
+export {default as MainNavigation} from 'molecules/main-navigation';
+
+export {default as MainNavigationItem} from 'molecules/main-navigation-item';
+
