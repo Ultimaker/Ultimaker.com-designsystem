@@ -39,7 +39,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   aria-controls="nav-0"
                   aria-haspopup="true"
                   class="main-nav__link"
-                  href="#/#nav-one"
+                  href="#/NavigationPageFixture"
                 >
                   <!---->
                    
@@ -47,7 +47,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                     class="link__underline"
                   >
                     
-        Explore
+        Main navigation item
     
                   </span>
                 </a>
@@ -76,7 +76,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                     class="flyout__title"
                     id="flyout_title_static_id_0"
                   >
-                    What is 3D printing?
+                    Main navigation category 1
                   </strong>
                    
                   <ul
@@ -88,7 +88,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                     >
                       <a
                         class="flyout__link link"
-                        href="#/#"
+                        href="#/NavigationPageFixture"
                       >
                         <!---->
                          
@@ -96,7 +96,27 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           class="link__underline"
                         >
                           
-        Find out here
+        Navigation item with internal link
+    
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="https://external.link"
+                        rel="noopener"
+                        target="_blank"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with external link
     
                         </span>
                       </a>
@@ -121,6 +141,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                     </li>
                      
                     <!---->
+                    <!---->
                      
                     <li
                       class="flyout__list-item"
@@ -143,7 +164,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                    
                   <a
                     class="link flyout__link--cta-mini"
-                    href="#/explore"
+                    href="#/NavigationPageFixture"
                   >
                     <!---->
                      
@@ -151,23 +172,22 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       class="link__underline"
                     >
                       
-        Compare Items
+        Navigation item with internal link
     
                     </span>
                   </a>
                 </li>
                 <li
-                  class="flyout__section flyout__section--3-columns"
+                  class="flyout__section"
                 >
                   <strong
                     class="flyout__title"
                     id="flyout_title_static_id_1"
                   >
-                    Where is 3D printing used?
+                    Main navigation category 2
                   </strong>
                    
                   <ul
-                    aria-haspopup="true"
                     aria-labelledby="flyout_title_static_id_1"
                     class="flyout__list"
                   >
@@ -176,7 +196,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                     >
                       <a
                         class="flyout__link link"
-                        href="#/#"
+                        href="https://external.link"
+                        rel="noopener"
+                        target="_blank"
                       >
                         <!---->
                          
@@ -184,7 +206,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           class="link__underline"
                         >
                           
-        Architecture
+        Navigation item with external link
     
                         </span>
                       </a>
@@ -194,7 +216,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                     >
                       <a
                         class="flyout__link link"
-                        href="#/#"
+                        href="#/NavigationPageFixture"
                       >
                         <!---->
                          
@@ -202,47 +224,15 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           class="link__underline"
                         >
                           
-        Aerospace
+        Navigation item with internal link
     
                         </span>
                       </a>
                     </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Art
-    
-                        </span>
-                      </a>
-                    </li>
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
                      
                     <li
                       class="flyout__list-item"
+                      style="display: none;"
                     >
                       <a
                         aria-hidden="true"
@@ -260,292 +250,6 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                      
                     <!---->
                     <!---->
-                    <!---->
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Automotive
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Engineering
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Fablabs
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Fashion
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Humanitarian aid
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Jewelry
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Manufacturing
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Medicine
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Product design
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Research
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Education
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Primary education
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Secondary Education
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        University
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        DIY, hobbies, and home
-    
-                        </span>
-                      </a>
-                    </li>
                      
                     <li
                       class="flyout__list-item"
@@ -568,7 +272,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                    
                   <a
                     class="link flyout__link--cta-mini"
-                    href="#/explore"
+                    href="https://external.link"
+                    rel="noopener"
+                    target="_blank"
                   >
                     <!---->
                      
@@ -576,212 +282,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       class="link__underline"
                     >
                       
-        Compare Items
-    
-                    </span>
-                  </a>
-                </li>
-                <li
-                  class="flyout__section flyout__section--2-columns"
-                >
-                  <strong
-                    class="flyout__title"
-                    id="flyout_title_static_id_2"
-                  >
-                    How is 3D printing used?
-                  </strong>
-                   
-                  <ul
-                    aria-haspopup="true"
-                    aria-labelledby="flyout_title_static_id_2"
-                    class="flyout__list"
-                  >
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Concept models
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Functional prototypes
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        End-use parts
-    
-                        </span>
-                      </a>
-                    </li>
-                    <!---->
-                    <!---->
-                    <!---->
-                    <!---->
-                     
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          More
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <!---->
-                    <!---->
-                    <!---->
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Tools, jigs, and fixtures
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Molds and casting
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Visualization aids
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Lessons
-    
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          Less
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                   
-                  <a
-                    class="link flyout__link--cta-mini"
-                    href="#/explore"
-                  >
-                    <!---->
-                     
-                    <span
-                      class="link__underline"
-                    >
-                      
-        Compare Items
+        Navigation item with external link
     
                     </span>
                   </a>
@@ -797,7 +298,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   aria-controls="nav-1"
                   aria-haspopup="true"
                   class="main-nav__link"
-                  href="#/#nav-two"
+                  href="https://external.link"
+                  rel="noopener"
+                  target="_blank"
                 >
                   <!---->
                    
@@ -805,996 +308,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                     class="link__underline"
                   >
                     
-        Products
-    
-                  </span>
-                </a>
-              </div>
-               
-              <a
-                aria-label=""
-                class="icon-button icon-button--small main-nav__toggle disable-focus"
-                role="button"
-                style="display: none;"
-                tabindex="-1"
-              >
-                <!---->
-                 
-                <!---->
-              </a>
-               
-              <ul
-                class="main-nav__flyout flyout--large"
-                id="nav-1"
-              >
-                <li
-                  class="flyout__section"
-                >
-                  <strong
-                    class="flyout__title"
-                    id="flyout_title_static_id_0"
-                  >
-                    Flyout title one
-                  </strong>
-                   
-                  <ul
-                    aria-labelledby="flyout_title_static_id_0"
-                    class="flyout__list"
-                  >
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          More
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <!---->
-                     
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          Less
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                   
-                  <!---->
-                </li>
-                <li
-                  class="flyout__section"
-                >
-                  <strong
-                    class="flyout__title"
-                    id="flyout_title_static_id_1"
-                  >
-                    Flyout title two
-                  </strong>
-                   
-                  <ul
-                    aria-haspopup="true"
-                    aria-labelledby="flyout_title_static_id_1"
-                    class="flyout__list"
-                  >
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <!---->
-                    <!---->
-                    <!---->
-                     
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          More
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <!---->
-                    <!---->
-                    <!---->
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          Less
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                   
-                  <!---->
-                </li>
-                <li
-                  class="flyout__section"
-                >
-                  <strong
-                    class="flyout__title"
-                    id="flyout_title_static_id_2"
-                  >
-                    Flyout title three
-                  </strong>
-                   
-                  <ul
-                    aria-haspopup="true"
-                    aria-labelledby="flyout_title_static_id_2"
-                    class="flyout__list"
-                  >
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <!---->
-                    <!---->
-                     
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          More
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <!---->
-                    <!---->
-                    <!---->
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          Less
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                   
-                  <!---->
-                </li>
-              </ul>
-            </li>
-            <li
-              class="main-nav__item"
-              role="menuitem"
-            >
-              <div>
-                <a
-                  aria-controls="nav-2"
-                  aria-haspopup="true"
-                  class="main-nav__link"
-                  href="#/#nav-three"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Stories
-    
-                  </span>
-                </a>
-              </div>
-               
-              <a
-                aria-label=""
-                class="icon-button icon-button--small main-nav__toggle disable-focus"
-                role="button"
-                style="display: none;"
-                tabindex="-1"
-              >
-                <!---->
-                 
-                <!---->
-              </a>
-               
-              <!---->
-            </li>
-            <li
-              class="main-nav__item"
-              role="menuitem"
-            >
-              <div>
-                <a
-                  aria-controls="nav-3"
-                  aria-haspopup="true"
-                  class="main-nav__link"
-                  href="#/#nav-four"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Resources
-    
-                  </span>
-                </a>
-              </div>
-               
-              <a
-                aria-label=""
-                class="icon-button icon-button--small main-nav__toggle disable-focus"
-                role="button"
-                style="display: none;"
-                tabindex="-1"
-              >
-                <!---->
-                 
-                <!---->
-              </a>
-               
-              <ul
-                class="main-nav__flyout flyout--large"
-                id="nav-3"
-              >
-                <li
-                  class="flyout__section"
-                >
-                  <strong
-                    class="flyout__title"
-                    id="flyout_title_static_id_0"
-                  >
-                    Flyout title one
-                  </strong>
-                   
-                  <ul
-                    aria-labelledby="flyout_title_static_id_0"
-                    class="flyout__list"
-                  >
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          More
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <!---->
-                     
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          Less
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                   
-                  <!---->
-                </li>
-                <li
-                  class="flyout__section"
-                >
-                  <strong
-                    class="flyout__title"
-                    id="flyout_title_static_id_1"
-                  >
-                    Flyout title two
-                  </strong>
-                   
-                  <ul
-                    aria-haspopup="true"
-                    aria-labelledby="flyout_title_static_id_1"
-                    class="flyout__list"
-                  >
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <!---->
-                    <!---->
-                    <!---->
-                     
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          More
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <!---->
-                    <!---->
-                    <!---->
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          Less
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                   
-                  <!---->
-                </li>
-                <li
-                  class="flyout__section"
-                >
-                  <strong
-                    class="flyout__title"
-                    id="flyout_title_static_id_2"
-                  >
-                    Flyout title three
-                  </strong>
-                   
-                  <ul
-                    aria-haspopup="true"
-                    aria-labelledby="flyout_title_static_id_2"
-                    class="flyout__list"
-                  >
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <!---->
-                    <!---->
-                     
-                    <li
-                      class="flyout__list-item"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          More
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <!---->
-                    <!---->
-                    <!---->
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        class="flyout__link link"
-                        href="#/#"
-                      >
-                        <!---->
-                         
-                        <span
-                          class="link__underline"
-                        >
-                          
-        Flyout item
-    
-                        </span>
-                      </a>
-                    </li>
-                     
-                    <li
-                      class="flyout__list-item"
-                      style="display: none;"
-                    >
-                      <a
-                        aria-hidden="true"
-                        class="toggle toggle--icon flyout__toggle"
-                        role="button"
-                        tabindex="0"
-                      >
-                        <!---->
-                         
-                        <span>
-                          Less
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                   
-                  <!---->
-                </li>
-              </ul>
-            </li>
-            <li
-              class="main-nav__item"
-              role="menuitem"
-            >
-              <div>
-                <a
-                  aria-controls="nav-4"
-                  aria-haspopup="true"
-                  class="main-nav__link"
-                  href="#/#nav-five"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Knowledge
-    
-                  </span>
-                </a>
-              </div>
-               
-              <a
-                aria-label=""
-                class="icon-button icon-button--small main-nav__toggle disable-focus"
-                role="button"
-                style="display: none;"
-                tabindex="-1"
-              >
-                <!---->
-                 
-                <!---->
-              </a>
-               
-              <!---->
-            </li>
-            <li
-              class="main-nav__item"
-              role="menuitem"
-            >
-              <div>
-                <a
-                  aria-controls="nav-5"
-                  aria-haspopup="true"
-                  class="main-nav__link"
-                  href="#/#nav-six"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Community
-    
-                  </span>
-                </a>
-              </div>
-               
-              <a
-                aria-label=""
-                class="icon-button icon-button--small main-nav__toggle disable-focus"
-                role="button"
-                style="display: none;"
-                tabindex="-1"
-              >
-                <!---->
-                 
-                <!---->
-              </a>
-               
-              <!---->
-            </li>
-            <li
-              class="main-nav__item"
-              role="menuitem"
-            >
-              <div>
-                <a
-                  aria-controls="nav-6"
-                  aria-haspopup="true"
-                  class="main-nav__link"
-                  href="#/#nav-seven"
-                >
-                  <!---->
-                   
-                  <span
-                    class="link__underline"
-                  >
-                    
-        Company
+        Main navigation item (link only)
     
                   </span>
                 </a>
@@ -1830,7 +344,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             >
               <a
                 class="sys-nav__link"
-                href="#/en/explore"
+                href="https://link.test"
+                rel="noopener"
+                target="_blank"
               >
                 <!---->
                  
@@ -1839,7 +355,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <span
                   class="sys-nav__label sys-nav__label--hidden-sm"
                 >
-                  Order Now
+                  CTA label
                 </span>
               </a>
             </li>
@@ -1857,7 +373,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <span
                   class="sys-nav__label sys-nav__label--hidden-sm"
                 >
-                  Search
+                  Search label
                 </span>
               </a>
             </li>
@@ -4354,13 +2870,12 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
           >
             <div
               class="footer-navigation-category__column"
-              type="NavigationItem"
-              url="https://example.com"
+              type="FooterNavigationCategory"
             >
               <h3
                 class="footer-navigation-category__title"
               >
-                Item one
+                Products
               </h3>
                
               <ul
@@ -4371,7 +2886,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
-                    href="https://example.com"
+                    href="http://example.com"
                     rel="noopener"
                     target="_blank"
                   >
@@ -4381,7 +2896,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       class="link__underline"
                     >
                       
-        Sub item 1
+        3D printers
     
                     </span>
                   </a>
@@ -4391,7 +2906,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
-                    href="https://example.com"
+                    href="http://example.com"
                     rel="noopener"
                     target="_blank"
                   >
@@ -4401,7 +2916,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       class="link__underline"
                     >
                       
-        Sub item 2
+        Software
     
                     </span>
                   </a>
@@ -4411,7 +2926,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
-                    href="https://example.com"
+                    href="http://example.com"
                     rel="noopener"
                     target="_blank"
                   >
@@ -4421,7 +2936,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       class="link__underline"
                     >
                       
-        Sub item 3
+        Materials
     
                     </span>
                   </a>
@@ -4430,13 +2945,12 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             </div>
             <div
               class="footer-navigation-category__column"
-              type="NavigationItem"
-              url="https://example.com"
+              type="FooterNavigationCategory"
             >
               <h3
                 class="footer-navigation-category__title"
               >
-                Item two
+                Solution areas
               </h3>
                
               <ul
@@ -4447,7 +2961,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
-                    href="https://example.com"
+                    href="http://example.com"
                     rel="noopener"
                     target="_blank"
                   >
@@ -4457,7 +2971,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       class="link__underline"
                     >
                       
-        Sub item 1
+        Product design
     
                     </span>
                   </a>
@@ -4467,7 +2981,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
-                    href="https://example.com"
+                    href="http://example.com"
                     rel="noopener"
                     target="_blank"
                   >
@@ -4477,7 +2991,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       class="link__underline"
                     >
                       
-        Sub item 2
+        Manufactguring aids
     
                     </span>
                   </a>
@@ -4487,7 +3001,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
-                    href="https://example.com"
+                    href="http://example.com"
                     rel="noopener"
                     target="_blank"
                   >
@@ -4497,7 +3011,47 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       class="link__underline"
                     >
                       
-        Sub item 3
+        End-use parts
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Architecture
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Education
     
                     </span>
                   </a>
@@ -4506,24 +3060,23 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             </div>
             <div
               class="footer-navigation-category__column"
-              type="NavigationItem"
-              url="https://example.com"
+              type="FooterNavigationCategory"
             >
               <h3
                 class="footer-navigation-category__title"
               >
-                Item three
+                Company
               </h3>
                
               <ul
-                class="footer-navigation-category__list"
+                class="footer-navigation-category__list footer-navigation-category--columns"
               >
                 <li
                   class="footer-navigation-category__item'"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
-                    href="https://example.com"
+                    href="http://example.com"
                     rel="noopener"
                     target="_blank"
                   >
@@ -4533,7 +3086,147 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       class="link__underline"
                     >
                       
-        Sub item 1
+        About us
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Careers
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Press
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Contact us
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Find resellers
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Join community
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Visit events
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Subscribe to newsletter
     
                     </span>
                   </a>
@@ -4620,7 +3313,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             type="CountryAutoCompleteField"
           >
             <a
-              aria-label="Change your country, currently: Netherlands"
+              aria-label="Change your country, currently: Afghanistan"
               class="icon-button icon-button--small locale-selector__edit--buton"
               role="button"
               tabindex="0"
@@ -4631,7 +3324,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 class="icon-button__label"
               >
                 
-        Netherlands
+        Afghanistan
     
               </span>
             </a>
@@ -4655,7 +3348,64 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
         <div
           class="footer__tertiary"
         >
-          <!---->
+          <nav
+            class="footer__legal-navigation"
+          >
+            <div
+              class="footer-navigation-category__column footer__legal-navigation__column"
+            >
+              <h3
+                class="footer-navigation-category__title"
+              >
+                2011- 2999 Ultimaker bv.
+              </h3>
+               
+              <ul
+                class="footer-navigation-category__list"
+              >
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Terms of use
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Privacy and Cookie Policy
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
     </footer>
