@@ -9,7 +9,6 @@ exports[`Storyshots templates|printers Printers 1`] = `
   >
     <header
       class="header header--fixed"
-      default="default"
       role="banner"
     >
       <div
@@ -23,9 +22,363 @@ exports[`Storyshots templates|printers Printers 1`] = `
           <!---->
         </a>
          
-        <!---->
+        <nav
+          aria-label="site"
+          class="main-nav main-nav--small"
+        >
+          <ul
+            class="main-nav__list"
+            role="menu"
+          >
+            <li
+              class="main-nav__item"
+              role="menuitem"
+            >
+              <div>
+                <a
+                  aria-controls="nav-0"
+                  aria-haspopup="true"
+                  class="main-nav__link"
+                  href="#/NavigationPageFixture"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Main navigation item
+    
+                  </span>
+                </a>
+              </div>
+               
+              <a
+                aria-label=""
+                class="icon-button icon-button--small main-nav__toggle disable-focus"
+                role="button"
+                style="display: none;"
+                tabindex="-1"
+              >
+                <!---->
+                 
+                <!---->
+              </a>
+               
+              <ul
+                class="main-nav__flyout flyout--large"
+                id="nav-0"
+              >
+                <li
+                  class="flyout__section"
+                >
+                  <strong
+                    class="flyout__title"
+                    id="flyout_title_static_id_0"
+                  >
+                    Main navigation category 1
+                  </strong>
+                   
+                  <ul
+                    aria-labelledby="flyout_title_static_id_0"
+                    class="flyout__list"
+                  >
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="#/NavigationPageFixture"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with internal link
+    
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="https://external.link"
+                        rel="noopener"
+                        target="_blank"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with external link
+    
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          More
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <!---->
+                    <!---->
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          Less
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                   
+                  <a
+                    class="link flyout__link--cta-mini"
+                    href="#/NavigationPageFixture"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Navigation item with internal link
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="flyout__section"
+                >
+                  <strong
+                    class="flyout__title"
+                    id="flyout_title_static_id_1"
+                  >
+                    Main navigation category 2
+                  </strong>
+                   
+                  <ul
+                    aria-labelledby="flyout_title_static_id_1"
+                    class="flyout__list"
+                  >
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="https://external.link"
+                        rel="noopener"
+                        target="_blank"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with external link
+    
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="#/NavigationPageFixture"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with internal link
+    
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          More
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <!---->
+                    <!---->
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          Less
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                   
+                  <a
+                    class="link flyout__link--cta-mini"
+                    href="https://external.link"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Navigation item with external link
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="main-nav__item"
+              role="menuitem"
+            >
+              <div>
+                <a
+                  aria-controls="nav-1"
+                  aria-haspopup="true"
+                  class="main-nav__link"
+                  href="https://external.link"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Main navigation item (link only)
+    
+                  </span>
+                </a>
+              </div>
+               
+              <a
+                aria-label=""
+                class="icon-button icon-button--small main-nav__toggle disable-focus"
+                role="button"
+                style="display: none;"
+                tabindex="-1"
+              >
+                <!---->
+                 
+                <!---->
+              </a>
+               
+              <!---->
+            </li>
+          </ul>
+        </nav>
          
-        <!---->
+        <nav
+          aria-label="quick access"
+          class="sys-nav"
+        >
+          <ul
+            class="sys-nav__list"
+            role="presentation"
+          >
+            <li
+              class="sys-nav__item"
+            >
+              <a
+                class="sys-nav__link"
+                href="https://link.test"
+                rel="noopener"
+                target="_blank"
+              >
+                <!---->
+                 
+                <!---->
+                 
+                <span
+                  class="sys-nav__label sys-nav__label--hidden-sm"
+                >
+                  CTA label
+                </span>
+              </a>
+            </li>
+             
+            <li
+              class="sys-nav__item"
+            >
+              <a
+                class="sys-nav__link"
+                role="button"
+                tabindex="0"
+              >
+                <!---->
+                 
+                <span
+                  class="sys-nav__label sys-nav__label--hidden-sm"
+                >
+                  Search label
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
          
         <button
           aria-expanded="false"
@@ -320,190 +673,203 @@ exports[`Storyshots templates|printers Printers 1`] = `
         </div>
       </article>
        
-      <article
-        class="brands"
+      <section
+        class="organism brands2"
       >
-        <section
-          class="container brands__container"
+        <article
+          class="container"
         >
-          <h2
-            class="brands__title"
+          <header
+            class="header-block"
           >
-             Lorem ipsum dolor sit amet
-          </h2>
+            <h2
+              class="header-block__title"
+            >
+              Ultimaker Brands
+            </h2>
+             
+            <p
+              class="header-block__subtitle"
+            >
+              You could be one too!
+            </p>
+          </header>
            
-          <div
-            class="flexgrid flexgrid--gutter brands__grid"
+          <section
+            class="list-unordered-limit"
           >
-            <div
-              class="flexgrid__cell--sm-4 brands__grid-cell"
-            >
-              <div
-                class="brand-card"
-              >
-                <div
-                  class="brand-card__image-wrapper"
+            <main>
+              <ul>
+                <li
+                  class="list__item"
                 >
-                  <picture
-                    alt="Lorem Ipsum"
-                    stylemodifier="brand-card__image"
+                  <article
+                    class="brand"
+                    type="Brand"
                   >
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/240/240"
-                    />
-                     
                     <img
-                      alt=""
-                      class="img--responsive img--lazy"
-                      src=""
+                      alt="zeiss"
+                      class="img--contain brand__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="CImage"
                     />
-                  </picture>
-                </div>
-                 
-                <q
-                  class="brand-card__quote"
+                  </article>
+                </li>
+                <li
+                  class="list__item"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quis vitae, esse sunt libero inventore.
-                </q>
-              </div>
-            </div>
-            <div
-              class="flexgrid__cell--sm-4 brands__grid-cell"
-            >
-              <div
-                class="brand-card"
-              >
-                <div
-                  class="brand-card__image-wrapper"
-                >
-                  <picture
-                    alt="Lorem Ipsum"
-                    stylemodifier="brand-card__image"
+                  <article
+                    class="brand"
+                    type="Brand"
                   >
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/240/240"
-                    />
-                     
                     <img
-                      alt=""
-                      class="img--responsive img--lazy"
-                      src=""
+                      alt="volkswagen"
+                      class="img--contain brand__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="CImage"
                     />
-                  </picture>
-                </div>
-                 
-                <q
-                  class="brand-card__quote"
+                  </article>
+                </li>
+                <li
+                  class="list__item"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ullam eligendi voluptatum iste ducimus illum.
-                </q>
-              </div>
-            </div>
-            <div
-              class="flexgrid__cell--sm-4 brands__grid-cell"
-            >
-              <div
-                class="brand-card"
-              >
-                <div
-                  class="brand-card__image-wrapper"
-                >
-                  <picture
-                    alt="Lorem Ipsum"
-                    stylemodifier="brand-card__image"
+                  <article
+                    class="brand"
+                    type="Brand"
                   >
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <!---->
-                     
-                    <source
-                      media="(max-width: 480px)"
-                      srcset="/generator/svg/240/240"
-                    />
-                     
                     <img
-                      alt=""
-                      class="img--responsive img--lazy"
-                      src=""
+                      alt="add lab decathlon"
+                      class="img--contain brand__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="CImage"
                     />
-                  </picture>
-                </div>
-                 
-                <q
-                  class="brand-card__quote"
+                  </article>
+                </li>
+                <li
+                  class="list__item"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis omnis, in illum aut atque unde.
-                </q>
-              </div>
-            </div>
-          </div>
+                  <article
+                    class="brand"
+                    type="Brand"
+                  >
+                    <img
+                      alt="zeiss"
+                      class="img--contain brand__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="CImage"
+                    />
+                  </article>
+                </li>
+                <li
+                  class="list__item"
+                >
+                  <article
+                    class="brand"
+                    type="Brand"
+                  >
+                    <img
+                      alt="volkswagen"
+                      class="img--contain brand__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="CImage"
+                    />
+                  </article>
+                </li>
+                <li
+                  class="list__item"
+                >
+                  <article
+                    class="brand"
+                    type="Brand"
+                  >
+                    <img
+                      alt="add lab decathlon"
+                      class="img--contain brand__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="CImage"
+                    />
+                  </article>
+                </li>
+                <li
+                  class="list__item"
+                >
+                  <article
+                    class="brand"
+                    type="Brand"
+                  >
+                    <img
+                      alt="zeiss"
+                      class="img--contain brand__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="CImage"
+                    />
+                  </article>
+                </li>
+                <li
+                  class="list__item"
+                >
+                  <article
+                    class="brand"
+                    type="Brand"
+                  >
+                    <img
+                      alt="volkswagen"
+                      class="img--contain brand__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="CImage"
+                    />
+                  </article>
+                </li>
+                <li
+                  class="list__item"
+                >
+                  <article
+                    class="brand"
+                    type="Brand"
+                  >
+                    <img
+                      alt="add lab decathlon"
+                      class="img--contain brand__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="CImage"
+                    />
+                  </article>
+                </li>
+              </ul>
+            </main>
+             
+            <footer
+              style="display: none;"
+            >
+              <button
+                class="button--secondary"
+              >
+                Show all (9)
+              </button>
+            </footer>
+          </section>
            
-          <!---->
-        </section>
-      </article>
-       
-      <article
-        class="slider-reveal"
-        modifier=""
-      >
-        <section
-          class="container slider-reveal__container"
-        >
-          <div
-            class="flexgrid flexgrid--gutter"
+          <footer
+            class="footer-block"
           >
             <div
-              class="flexgrid__cell--xs-6 slider-reveal__grid-cell"
+              block="overview"
+              class="cta-block cta-block--footer"
             >
-              <h2
-                class="slider-reveal__title"
-              >
-                 Lorem ipsum dolor sit amet
-              </h2>
-               
-              <p
-                class="slider-reveal__body"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eius culpa
-              </p>
-              <p
-                class="slider-reveal__body"
-              >
-                asperiores expedita consequatur nostrum quia, doloremque reprehenderit. Sequi, unde ipsa dolores dolorum earum qui obcaecati architecto officiis voluptates vero.
-              </p>
-               
               <a
-                class="link--icon link--large link--icon"
-                href="#"
-                text="Large content-link with icon"
+                class="link--large link--icon link cta-link"
+                href="https://ultimaker.com"
+                rel="noopener"
+                target="_self"
               >
                 <!---->
                  
@@ -511,829 +877,25 @@ exports[`Storyshots templates|printers Printers 1`] = `
                   class="link__underline"
                 >
                   
-        Large content-link with icon
+        Test content link
     
                 </span>
               </a>
             </div>
-             
-            <div
-              class="flexgrid__cell--xs-6 slider-reveal__grid-cell"
-            >
-              <div
-                class="slider-reveal__image-wrapper"
-              >
-                <div
-                  class="slider-reveal__image-aspect"
-                >
-                  <div
-                    class="slider-reveal__mask"
-                  >
-                    <picture>
-                      <!---->
-                       
-                      <!---->
-                       
-                      <source
-                        media="(min-width: 768px)"
-                        srcset=""
-                      />
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <source
-                        media="(max-width: 480px)"
-                        srcset="/generator/svg/400/400/333333/999999"
-                      />
-                       
-                      <img
-                        alt="Lorem Ipsum"
-                        class="img--responsive slider-reveal__image img--lazy"
-                        src=""
-                      />
-                    </picture>
-                  </div>
-                  <div
-                    class="slider-reveal__mask"
-                  >
-                    <picture>
-                      <!---->
-                       
-                      <!---->
-                       
-                      <source
-                        media="(min-width: 768px)"
-                        srcset=""
-                      />
-                       
-                      <!---->
-                       
-                      <!---->
-                       
-                      <source
-                        media="(max-width: 480px)"
-                        srcset="/generator/svg/400/400/999999/333333"
-                      />
-                       
-                      <img
-                        alt="Lorem Ipsum"
-                        class="img--responsive slider-reveal__image img--lazy"
-                        src=""
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-               
-              <!---->
-              <!---->
-               
-              <!---->
-            </div>
-          </div>
-        </section>
-      </article>
+          </footer>
+        </article>
+      </section>
        
-      <article
-        class="examples"
-      >
-        <div
-          class="container examples__container"
-        >
-          <header>
-            <h2
-              class="examples__headline"
-            >
-              Lorem ipsum dolor sit amet
-            </h2>
-          </header>
-           
-          <div
-            class="cards"
-          >
-            <div
-              class="flexgrid flexgrid--gutter"
-            >
-              <div
-                class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
-              >
-                <!---->
-              </div>
-              <div
-                class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
-              >
-                <!---->
-              </div>
-              <div
-                class="flexgrid__cell--sm-4 flexgrid__cell--xs-6"
-              >
-                <!---->
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-       
-      <article
-        class="explore"
-      >
-        <section
-          class="container explore__container"
-        >
-          <div
-            class="flexgrid flexgrid--gutter"
-          >
-            <div
-              class="flexgrid__cell--xs-6"
-            >
-              <h2
-                class="explore__title"
-              >
-                Lorem ipsum dolor sit amet
-              </h2>
-            </div>
-          </div>
-           
-          <div
-            class="explore__image-placeholder"
-          >
-            <picture>
-              <source
-                media="(min-width: 569px)"
-                srcset="/generator/svg/600/600/999999/ffffff, /generator/svg/1200/1200/999999/ffffff 2x"
-              />
-               
-              <img
-                alt="lorem ipsum"
-                class="img--responsive explore__image img--contain"
-                src="/generator/svg/600/360/999999/ffffff"
-              />
-            </picture>
-            <picture
-              style="display: none;"
-            >
-              <source
-                media="(min-width: 569px)"
-                srcset="/generator/svg/600/600/777777/ffffff, /generator/svg/1200/1200/777777/ffffff 2x"
-              />
-               
-              <img
-                alt="lorem ipsum"
-                class="img--responsive explore__image img--contain"
-                src="/generator/svg/600/360/777777/ffffff"
-              />
-            </picture>
-            <picture
-              style="display: none;"
-            >
-              <source
-                media="(min-width: 569px)"
-                srcset="/generator/svg/600/600/555555/ffffff, /generator/svg/1200/1200/555555/ffffff 2x"
-              />
-               
-              <img
-                alt="lorem ipsum"
-                class="img--responsive explore__image img--contain"
-                src="/generator/svg/600/360/555555/ffffff"
-              />
-            </picture>
-            <picture
-              style="display: none;"
-            >
-              <source
-                media="(min-width: 569px)"
-                srcset="/generator/svg/600/600/333333/ffffff, /generator/svg/1200/1200/333333/ffffff 2x"
-              />
-               
-              <img
-                alt="lorem ipsum"
-                class="img--responsive explore__image img--contain"
-                src="/generator/svg/600/360/333333/ffffff"
-              />
-            </picture>
-             
-            <nav
-              aria-label="pagination"
-              class="pager explore__pager"
-              name="explore-pager"
-            >
-              <ul
-                class="pager__list"
-              >
-                <li
-                  aria-hidden="true"
-                  class="pager__active-page"
-                >
-                  <!---->
-                </li>
-                 
-                <li
-                  class="pager__page"
-                >
-                  <a
-                    aria-current="true"
-                    aria-label="\\"current page, page 1"
-                    aria-role="button"
-                    class="pager__page-indicator"
-                  >
-                    <!---->
-                  </a>
-                </li>
-                <li
-                  class="pager__page"
-                >
-                  <a
-                    aria-label="page 2"
-                    aria-role="button"
-                    class="pager__page-indicator"
-                  >
-                    <!---->
-                  </a>
-                </li>
-                <li
-                  class="pager__page"
-                >
-                  <a
-                    aria-label="page 3"
-                    aria-role="button"
-                    class="pager__page-indicator"
-                  >
-                    <!---->
-                  </a>
-                </li>
-                <li
-                  class="pager__page"
-                >
-                  <a
-                    aria-label="page 4"
-                    aria-role="button"
-                    class="pager__page-indicator"
-                  >
-                    <!---->
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-           
-          <div
-            class="flexgrid flexgrid--gutter"
-          >
-            <div
-              class="flexgrid__cell--xs-6"
-            >
-              <div
-                class="explore__description"
-              >
-                <dl
-                  class="tabbable-dl"
-                  style="height: 6px;"
-                >
-                  <dt
-                    class="tabbable-dl__term tabbable-dl__term--vue"
-                    style="height: auto; opacity: 1; visibility: visible;"
-                  >
-                    <a
-                      class="tabbable-dl__link"
-                      role="button"
-                      tabindex="0"
-                    >
-                      <h3
-                        class="tabbable-dl__title"
-                      >
-                        <!---->
-                        
-                    Ligula Consectetur Mollis
-                
-                      </h3>
-                    </a>
-                  </dt>
-                   
-                  <dd
-                    class="tabbable-dl__desc tabbable-dl__desc--vue"
-                    style="margin-bottom: 0px; height: 30px; top: 0px;"
-                  >
-                    Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-                  </dd>
-                  <dt
-                    class="tabbable-dl__term tabbable-dl__term--vue"
-                    style="height: auto; opacity: 1; visibility: visible;"
-                  >
-                    <a
-                      class="tabbable-dl__link"
-                      role="button"
-                      tabindex="0"
-                    >
-                      <h3
-                        class="tabbable-dl__title"
-                      >
-                        <!---->
-                        
-                    Porta Fringilla
-                
-                      </h3>
-                    </a>
-                  </dt>
-                   
-                  <dd
-                    class="tabbable-dl__desc tabbable-dl__desc--vue"
-                    style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
-                  >
-                    Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                  </dd>
-                  <dt
-                    class="tabbable-dl__term tabbable-dl__term--vue"
-                    style="height: auto; opacity: 1; visibility: visible;"
-                  >
-                    <a
-                      class="tabbable-dl__link"
-                      role="button"
-                      tabindex="0"
-                    >
-                      <h3
-                        class="tabbable-dl__title"
-                      >
-                        <!---->
-                        
-                    Elit Inceptos Etiam
-                
-                      </h3>
-                    </a>
-                  </dt>
-                   
-                  <dd
-                    class="tabbable-dl__desc tabbable-dl__desc--vue"
-                    style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
-                  >
-                    Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                  </dd>
-                  <dt
-                    class="tabbable-dl__term tabbable-dl__term--vue"
-                    style="height: auto; opacity: 1; visibility: visible;"
-                  >
-                    <a
-                      class="tabbable-dl__link"
-                      role="button"
-                      tabindex="0"
-                    >
-                      <h3
-                        class="tabbable-dl__title"
-                      >
-                        <!---->
-                        
-                    Etiam Fermentum
-                
-                      </h3>
-                    </a>
-                  </dt>
-                   
-                  <dd
-                    class="tabbable-dl__desc tabbable-dl__desc--vue"
-                    style="margin-bottom: 0px; height: 0px; opacity: 0; visibility: hidden; top: 0px;"
-                  >
-                    Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-                  </dd>
-                </dl>
-              </div>
-               
-              <div
-                class="explore__navigation"
-              >
-                <a
-                  aria-label=""
-                  class="icon-button explore__nav"
-                  role="button"
-                  tabindex="0"
-                >
-                  <!---->
-                   
-                  <span
-                    class="icon-button__label"
-                  >
-                    <span
-                      class="icon-button__label"
-                    >
-                      previous
-                    </span>
-                  </span>
-                </a>
-                 
-                <a
-                  aria-label=""
-                  class="icon-button explore__nav icon-button--reversed"
-                  role="button"
-                  tabindex="0"
-                >
-                  <!---->
-                   
-                  <span
-                    class="icon-button__label"
-                  >
-                    <span
-                      class="icon-button__label"
-                    >
-                      next
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
-       
-      <article
-        class="ecosystem"
-      >
-        <section
-          class="container ecosystem__container"
-        >
-          <h2
-            class="ecosystem__title"
-          >
-            Lorem ipsum dolor sit amet
-          </h2>
-           
-          <div
-            class="ecosystem__items"
-          >
-            <article
-              class="card ecosystem__card"
-              tabindex="0"
-            >
-              <div
-                class="card__visual"
-              >
-                <!---->
-                 
-                <!---->
-              </div>
-               
-              <div
-                class="card__content"
-              >
-                <h3
-                  class="card__headline"
-                >
-                  Lorem ipsum dolor sit amet
-                </h3>
-                 
-                <p
-                  class="card__description"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti, et vel eum quam, commodi reiciendis cumque.
-                </p>
-                 
-                <!---->
-              </div>
-            </article>
-            <article
-              class="card ecosystem__card"
-              tabindex="0"
-            >
-              <div
-                class="card__visual"
-              >
-                <!---->
-                 
-                <!---->
-              </div>
-               
-              <div
-                class="card__content"
-              >
-                <h3
-                  class="card__headline"
-                >
-                  Lorem ipsum dolor sit amet
-                </h3>
-                 
-                <p
-                  class="card__description"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt error, aut velit sequi nemo aspernatur libero perferendis magni
-                </p>
-                 
-                <!---->
-              </div>
-            </article>
-            <article
-              class="card ecosystem__card"
-              tabindex="0"
-            >
-              <div
-                class="card__visual"
-              >
-                <!---->
-                 
-                <!---->
-              </div>
-               
-              <div
-                class="card__content"
-              >
-                <h3
-                  class="card__headline"
-                >
-                  Lorem ipsum dolor sit amet
-                </h3>
-                 
-                <p
-                  class="card__description"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque repellat in fugit eum minus dolorum deleniti,
-                </p>
-                 
-                <!---->
-              </div>
-            </article>
-            <article
-              class="card ecosystem__card"
-              tabindex="0"
-            >
-              <div
-                class="card__visual"
-              >
-                <!---->
-                 
-                <!---->
-              </div>
-               
-              <div
-                class="card__content"
-              >
-                <h3
-                  class="card__headline"
-                >
-                  Lorem ipsum dolor sit amet
-                </h3>
-                 
-                <p
-                  class="card__description"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum aliquid fugit assumenda, sit rem recusandae illum dicta
-                </p>
-                 
-                <!---->
-              </div>
-            </article>
-          </div>
-        </section>
-      </article>
-       
-      <article
-        class="case"
-      >
-        <section
-          class="container case__container"
-        >
-          <figure
-            class="case__media"
-            style="display: none;"
-          >
-            <figcaption
-              class="flex-grid flexgrid__cell--xs-6"
-            >
-              <h2
-                class="case__title"
-              >
-                Lorem ipsum dolor sit amet
-              </h2>
-            </figcaption>
-             
-            <div
-              class="case__media-placeholder"
-            >
-              <figcaption>
-                <a
-                  aria-label=""
-                  class="icon-button case__link icon-button--underline-large"
-                  role="button"
-                  tabindex="0"
-                >
-                  <!---->
-                   
-                  <span
-                    class="icon-button__label"
-                  >
-                    Sit amet
-                  </span>
-                </a>
-              </figcaption>
-               
-              <div
-                class="case__image-overlay"
-              />
-               
-              <picture
-                alt="image landscape full width alt text empty"
-              >
-                <source
-                  media="(min-width: 1201px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(min-width: 1025px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(min-width: 768px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(min-width: 569px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(min-width: 481px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(max-width: 480px)"
-                  srcset="/generator/svg/800/450"
-                />
-                 
-                <img
-                  alt=""
-                  class="img--responsive case__image--full img--lazy"
-                  src=""
-                />
-              </picture>
-            </div>
-             
-            <figcaption
-              class="flex-grid flexgrid__cell--xs-6"
-            >
-              <p
-                class="case__paragraph case__paragraph--last"
-              >
-                Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-              </p>
-            </figcaption>
-          </figure>
-           
-          <figure
-            class="case__media"
-          >
-            <div
-              class="case__media-placeholder"
-            >
-              <figcaption
-                class="flex-grid flexgrid__cell--xs-6 case__flex-grid--center"
-              >
-                <h2
-                  class="case__title"
-                >
-                  Lorem ipsum dolor sit amet
-                </h2>
-                 
-                <p
-                  class="case__paragraph"
-                >
-                  Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                </p>
-                 
-                <a
-                  aria-label=""
-                  class="icon-button case__link icon-button--underline-large"
-                  role="button"
-                  tabindex="0"
-                >
-                  <!---->
-                   
-                  <span
-                    class="icon-button__label"
-                  >
-                    Sit amet
-                  </span>
-                </a>
-              </figcaption>
-               
-              <div
-                class="case__image-overlay"
-              />
-               
-              <picture
-                alt="image landscape full width alt text empty"
-              >
-                <source
-                  media="(min-width: 1201px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(min-width: 1025px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(min-width: 768px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(min-width: 569px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(min-width: 481px)"
-                  srcset=""
-                />
-                 
-                <source
-                  media="(max-width: 480px)"
-                  srcset="/generator/svg/800/450"
-                />
-                 
-                <img
-                  alt=""
-                  class="img--responsive case__image--full img--lazy"
-                  src=""
-                />
-              </picture>
-            </div>
-          </figure>
-        </section>
-         
-        <!---->
-      </article>
-       
-      <article
-        class="general-content"
-      >
-        <section
-          class="container general-content__container"
-        >
-          <div
-            class="flexgrid flexgrid--gutter"
-          >
-            <div
-              class="flexgrid__cell--xs-6 flexgrid__cell--md-4 general-content__grid-cell"
-            >
-              <h2
-                class="general-content__title"
-              >
-                 Lorem ipsum dolor sit amet
-              </h2>
-               
-              <p
-                class="general-content__body"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?
-              </p>
-               
-              <!---->
-            </div>
-             
-            <div
-              class="flexgrid__cell--xs-6 flexgrid__cell--md-8 general-content__grid-cell"
-            >
-              <div
-                class="general-content__image-wrapper"
-              >
-                <picture>
-                  <!---->
-                   
-                  <!---->
-                   
-                  <source
-                    media="(min-width: 768px)"
-                    srcset=""
-                  />
-                   
-                  <!---->
-                   
-                  <!---->
-                   
-                  <source
-                    media="(max-width: 480px)"
-                    srcset="/generator/svg/400/400"
-                  />
-                   
-                  <img
-                    alt=""
-                    class="img--responsive img--lazy"
-                    src=""
-                  />
-                </picture>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
+      <general-content
+        contentlink="[object Object]"
+        image="[object Object]"
+        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, perferendis! Aliquid ullam incidunt, aut iure molestiae magnam sed ad voluptas dolores debitis nostrum quis voluptates dignissimos sapiente asperiores eligendi labore?"
+        title="Lorem ipsum dolor sit amet"
+      />
     </main>
      
     <footer
       class="footer"
-      default="default"
     >
       <div
         class="footer__container"
@@ -1349,7 +911,375 @@ exports[`Storyshots templates|printers Printers 1`] = `
             <!---->
           </a>
            
-          <!---->
+          <nav
+            class="footer__navigation"
+          >
+            <div
+              class="footer-navigation-category__column"
+              type="FooterNavigationCategory"
+            >
+              <h3
+                class="footer-navigation-category__title"
+              >
+                Products
+              </h3>
+               
+              <ul
+                class="footer-navigation-category__list"
+              >
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        3D printers
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Software
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Materials
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="footer-navigation-category__column"
+              type="FooterNavigationCategory"
+            >
+              <h3
+                class="footer-navigation-category__title"
+              >
+                Solution areas
+              </h3>
+               
+              <ul
+                class="footer-navigation-category__list"
+              >
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Product design
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Manufactguring aids
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        End-use parts
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Architecture
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Education
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="footer-navigation-category__column"
+              type="FooterNavigationCategory"
+            >
+              <h3
+                class="footer-navigation-category__title"
+              >
+                Company
+              </h3>
+               
+              <ul
+                class="footer-navigation-category__list footer-navigation-category--columns"
+              >
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        About us
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Careers
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Press
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Contact us
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Find resellers
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Join community
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Visit events
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Subscribe to newsletter
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
          
         <div
@@ -1424,13 +1354,104 @@ exports[`Storyshots templates|printers Printers 1`] = `
             </ul>
           </nav>
            
-          <!---->
+          <div
+            class="locale-selector footer__locale-selector"
+            type="CountryAutoCompleteField"
+          >
+            <a
+              aria-label="Change your country, currently: Afghanistan"
+              class="icon-button icon-button--small locale-selector__edit--buton"
+              role="button"
+              tabindex="0"
+            >
+              <!---->
+               
+              <span
+                class="icon-button__label"
+              >
+                
+        Afghanistan
+    
+              </span>
+            </a>
+             
+            <a
+              aria-label="change your country"
+              class="icon-button icon-button--small locale-selector__edit--buton"
+              role="button"
+              style="display: none;"
+              tabindex="0"
+            >
+              <!---->
+               
+              <!---->
+            </a>
+             
+            <!---->
+          </div>
         </div>
          
         <div
           class="footer__tertiary"
         >
-          <!---->
+          <nav
+            class="footer__legal-navigation"
+          >
+            <div
+              class="footer-navigation-category__column footer__legal-navigation__column"
+            >
+              <h3
+                class="footer-navigation-category__title"
+              >
+                2011- 2999 Ultimaker bv.
+              </h3>
+               
+              <ul
+                class="footer-navigation-category__list"
+              >
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Terms of use
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="footer-navigation-category__item'"
+                >
+                  <a
+                    class="footer-navigation-category__link link link--reversed"
+                    href="http://example.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Privacy and Cookie Policy
+    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
     </footer>
