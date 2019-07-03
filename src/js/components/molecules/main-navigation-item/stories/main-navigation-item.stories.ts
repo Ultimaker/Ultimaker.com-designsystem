@@ -5,21 +5,19 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/main-navigation-item.data';
 import knobsFormat from './main-navigation-item.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                label: { default: knobs.label },
-                url: { default: knobs.url },
-                categories: { default: knobs.categories },
-            },
-            template: require('./main-navigation-item.html'),
-        };
+    return {
+        props: {
+            label: { default: knobs.label },
+            url: { default: knobs.url },
+            categories: { default: knobs.categories },
+        },
+        template: require('./main-navigation-item.html'),
     };
 };
 

@@ -12,5 +12,4 @@ export { default as ArticleContent } from 'organisms/article-content';
 export { default as HeroArticle } from 'organisms/hero-article';
 export { default as ArticleHeader } from 'organisms/article-header';
 export { default as PageFooter } from 'organisms/page-footer';
-export {default as PageHeader} from 'organisms/page-header';
-
+export { default as PageHeader } from 'organisms/page-header';
