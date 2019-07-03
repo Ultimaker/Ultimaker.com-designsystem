@@ -14,7 +14,6 @@ export { default as Subnavigation } from 'organisms-page/subnavigation';
 export { default as Tabbedcontent } from 'organisms-page/tabbed-content';
 export { default as Ubr } from 'organisms-page/ubr';
 export { default as PageDrawer } from 'organisms-page/page-drawer';
-export { default as PageHeader } from 'organisms-page/page-header';
 
 export { default as Overview } from 'organisms-page/overview';
 export { default as OverviewUBR } from 'organisms-page/overview-ubr';

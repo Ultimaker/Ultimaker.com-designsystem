@@ -1,20 +1,19 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
+import { PageHeaderProps } from './page-header.models';
+import WithRender from './page-header.vue.html';
 
 import ViewportUtility from 'utils/viewport';
 import PublicEventService from 'plugins/public-event-service';
 
-import { PageHeader as PageHeaderInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/page-header/PageHeader';
-import WithRender from './page-header.vue.html';
-
 @WithRender
 @Component({
-    name: 'page-header',
+    name: 'PageHeader',
 })
 
-export default class PageHeader extends Vue implements PageHeaderInterface {
-    @Prop({ type: Array, required: false }) navigation!: PageHeaderInterface['navigation'];
-    @Prop({ type: Object, required: false }) cta!: PageHeaderInterface['cta'];
-    @Prop({ type: Object, required: false }) search!: PageHeaderInterface['search'];
+export class PageHeader extends Vue implements PageHeaderProps {
+    @Prop({ type: Array, required: false }) navigation!: PageHeaderProps['navigation'];
+    @Prop({ type: Object, required: false }) cta!: PageHeaderProps['cta'];
+    @Prop({ type: Object, required: false }) search!: PageHeaderProps['search'];
     @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
 
     assistUsed: boolean = false;
