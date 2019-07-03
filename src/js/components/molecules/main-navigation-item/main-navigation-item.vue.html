@@ -1,0 +1,36 @@
+<li class="main-nav__item" role="menuitem" :class="{ 'main-nav__item--active': active }"
+    @mouseleave="delayHideFlyout" @mouseenter="showFlyout">
+
+    <div @keydown.down.prevent=" "
+         @keydown.tab.shift.exact="hideFlyout"
+         @keydown.esc.prevent="hideFlyout">
+        <base-link :url="url"
+                     ref="parent"
+                     class="main-nav__link"
+                     @focus="showFlyout"
+                     @click.native="hideFlyout"
+                     aria-haspopup="true"
+                     :aria-controls="itemId"
+                     :aria-current="isActive"
+                     :label="label"
+                     :aria-expanded="!isCompact && flyoutIsOpen">
+        </base-link>
+    </div>
+
+    <icon-button class="icon-button--small main-nav__toggle disable-focus"
+                 :icon-name="angleDirection"
+                 v-show="toggleIsVisible"
+                 @click="toggleFlyout" tabindex="-1">
+    </icon-button>
+
+    <flyout :id="itemId" v-if="categories" ref="flyout"
+        @keydown.esc.native="selectParent"
+        @open="showFlyout"
+        @close="hideFlyout"
+        @main="selectParent"
+        class="flyout--large"
+        :items="categories"
+        :is-compact="isCompact"
+        :class="{ 'flyout--is-open': flyoutIsOpen }">
+    </flyout>
+</li>
