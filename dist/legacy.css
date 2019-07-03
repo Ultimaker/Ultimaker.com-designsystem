@@ -3594,6 +3594,149 @@ because both families serve another purpose. Therefore the line-heights will be 
       .um-components .footer-block--push-down:not(:empty) {
         margin-top: 60px; } }
 
+.um-components .article-author {
+  display: flex;
+  align-items: center; }
+  .um-components .article-author__meta {
+    display: flex;
+    flex-direction: column; }
+  .um-components .article-author__name {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    margin-bottom: 3px; }
+  .um-components .article-author__published-date {
+    font-size: 14px;
+    line-height: 21px;
+    color: #7f7f7f; }
+  .um-components .article-author__image {
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    margin: 0 12px; }
+
+.um-components .article-ctas {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+  margin-bottom: 28px; }
+  @media (min-width: 768px) {
+    .um-components .article-ctas {
+      margin-top: 36px;
+      margin-bottom: 24px; } }
+
+.um-components .article-image {
+  width: 100%;
+  margin: 0 0 36px 0;
+  padding: 0; }
+  .um-components .article-image__container {
+    height: 233px; }
+    @media (min-width: 768px) {
+      .um-components .article-image__container {
+        height: 540px; } }
+  @media (min-width: 768px) {
+    .um-components .article-image {
+      margin-bottom: 60px; } }
+  .um-components .article-image__caption {
+    margin: 12px auto 0 auto;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000; }
+    @media (min-width: 768px) {
+      .um-components .article-image__caption {
+        width: 66%;
+        margin-top: 24px; } }
+
+.um-components .article-intro {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: -5px;
+  margin-bottom: 29px;
+  margin-bottom: 63px; }
+  @media (min-width: 768px) {
+    .um-components .article-intro {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: -8px;
+      margin-bottom: 38px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      width: 66%; } }
+
+.um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
+  margin-top: -2px;
+  margin-bottom: 23px; }
+  @media (min-width: 768px) {
+    .um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
+      margin-top: -5px;
+      margin-bottom: 29px; } }
+
+.um-components .article-text ul > li, .um-components .article-text .hero--text .content--rich ul > li, .um-components .hero--text .content--rich .article-text ul > li, .um-components .article-text ol > li {
+  margin-bottom: 6px; }
+  .um-components .article-text ul > li p, .um-components .article-text .hero--text .content--rich ul > li p, .um-components .hero--text .content--rich .article-text ul > li p, .um-components .article-text ul > li strong, .um-components .article-text .hero--text .content--rich ul > li strong, .um-components .hero--text .content--rich .article-text ul > li strong, .um-components .article-text ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ol > li p, .um-components .article-text ol > li strong, .um-components .article-text ol > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ol > li .tablist__item, .um-components .article-text ol > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ol > li .tablist__item {
+    margin: 0; }
+
+.um-components .article-text p + h2, .um-components .article-text strong + h2, .um-components .article-text .tablist__section .tablist__item + h2, .um-components .tablist__section .article-text .tablist__item + h2, .um-components .article-text .examples .examples__tabs .tablist__item + h2, .um-components .examples .examples__tabs .article-text .tablist__item + h2 {
+  margin-top: 48px; }
+
+.um-components .article-text blockquote {
+  font-size: 18px;
+  line-height: 24px;
+  color: #7f7f7f;
+  text-align: center;
+  margin: 30px 0; }
+  .um-components .article-text blockquote > p, .um-components .article-text blockquote > strong, .um-components .article-text .tablist__section blockquote > .tablist__item, .um-components .tablist__section .article-text blockquote > .tablist__item, .um-components .article-text .examples .examples__tabs blockquote > .tablist__item, .um-components .examples .examples__tabs .article-text blockquote > .tablist__item {
+    display: inline;
+    margin: 0; }
+  .um-components .article-text blockquote [lang="en"] {
+    quotes: "“" "”"; }
+  .um-components .article-text blockquote::before {
+    content: open-quote; }
+  .um-components .article-text blockquote::after {
+    content: close-quote; }
+  @media (min-width: 768px) {
+    .um-components .article-text blockquote {
+      font-size: 24px;
+      line-height: 30px; } }
+
+@media (min-width: 768px) {
+  .um-components .article-text {
+    margin: 0 auto;
+    width: 66%; } }
+
+.um-components .article-text b {
+  font-weight: 600; }
+
+.um-components .article-video {
+  position: relative;
+  background-color: #e3e3e3;
+  padding-top: 50%;
+  margin-bottom: 48px; }
+  @media (min-width: 768px) {
+    .um-components .article-video {
+      margin-bottom: 60px; } }
+
+.um-components .article-video__overlay--overlay,
+.um-components .article-video__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.um-components .article-video__overlay--overlay {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.um-components .article-video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; }
+  .um-components .article-video__button:hover {
+    color: #fff; }
+
 .um-components .auto-complete {
   position: relative;
   margin-bottom: 23px; }
@@ -4265,149 +4408,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   @media (min-width: 569px) {
     .um-components .wizard-step-confirmation__body {
       text-align: left; } }
-
-.um-components .article-intro {
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: -5px;
-  margin-bottom: 29px;
-  margin-bottom: 63px; }
-  @media (min-width: 768px) {
-    .um-components .article-intro {
-      font-size: 18px;
-      line-height: 30px;
-      margin-top: -8px;
-      margin-bottom: 38px;
-      margin: 0 auto;
-      margin-bottom: 60px;
-      width: 66%; } }
-
-.um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
-  margin-top: -2px;
-  margin-bottom: 23px; }
-  @media (min-width: 768px) {
-    .um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
-      margin-top: -5px;
-      margin-bottom: 29px; } }
-
-.um-components .article-text ul > li, .um-components .article-text .hero--text .content--rich ul > li, .um-components .hero--text .content--rich .article-text ul > li, .um-components .article-text ol > li {
-  margin-bottom: 6px; }
-  .um-components .article-text ul > li p, .um-components .article-text .hero--text .content--rich ul > li p, .um-components .hero--text .content--rich .article-text ul > li p, .um-components .article-text ul > li strong, .um-components .article-text .hero--text .content--rich ul > li strong, .um-components .hero--text .content--rich .article-text ul > li strong, .um-components .article-text ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ol > li p, .um-components .article-text ol > li strong, .um-components .article-text ol > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ol > li .tablist__item, .um-components .article-text ol > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ol > li .tablist__item {
-    margin: 0; }
-
-.um-components .article-text p + h2, .um-components .article-text strong + h2, .um-components .article-text .tablist__section .tablist__item + h2, .um-components .tablist__section .article-text .tablist__item + h2, .um-components .article-text .examples .examples__tabs .tablist__item + h2, .um-components .examples .examples__tabs .article-text .tablist__item + h2 {
-  margin-top: 48px; }
-
-.um-components .article-text blockquote {
-  font-size: 18px;
-  line-height: 24px;
-  color: #7f7f7f;
-  text-align: center;
-  margin: 30px 0; }
-  .um-components .article-text blockquote > p, .um-components .article-text blockquote > strong, .um-components .article-text .tablist__section blockquote > .tablist__item, .um-components .tablist__section .article-text blockquote > .tablist__item, .um-components .article-text .examples .examples__tabs blockquote > .tablist__item, .um-components .examples .examples__tabs .article-text blockquote > .tablist__item {
-    display: inline;
-    margin: 0; }
-  .um-components .article-text blockquote [lang="en"] {
-    quotes: "“" "”"; }
-  .um-components .article-text blockquote::before {
-    content: open-quote; }
-  .um-components .article-text blockquote::after {
-    content: close-quote; }
-  @media (min-width: 768px) {
-    .um-components .article-text blockquote {
-      font-size: 24px;
-      line-height: 30px; } }
-
-@media (min-width: 768px) {
-  .um-components .article-text {
-    margin: 0 auto;
-    width: 66%; } }
-
-.um-components .article-text b {
-  font-weight: 600; }
-
-.um-components .article-image {
-  width: 100%;
-  margin: 0 0 36px 0;
-  padding: 0; }
-  .um-components .article-image__container {
-    height: 233px; }
-    @media (min-width: 768px) {
-      .um-components .article-image__container {
-        height: 540px; } }
-  @media (min-width: 768px) {
-    .um-components .article-image {
-      margin-bottom: 60px; } }
-  .um-components .article-image__caption {
-    margin: 12px auto 0 auto;
-    text-align: center;
-    font-size: 12px;
-    line-height: 18px;
-    color: #000; }
-    @media (min-width: 768px) {
-      .um-components .article-image__caption {
-        width: 66%;
-        margin-top: 24px; } }
-
-.um-components .article-author {
-  display: flex;
-  align-items: center; }
-  .um-components .article-author__meta {
-    display: flex;
-    flex-direction: column; }
-  .um-components .article-author__name {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 500;
-    margin-bottom: 3px; }
-  .um-components .article-author__published-date {
-    font-size: 14px;
-    line-height: 21px;
-    color: #7f7f7f; }
-  .um-components .article-author__image {
-    height: 48px;
-    width: 48px;
-    border-radius: 100%;
-    margin: 0 12px; }
-
-.um-components .article-video {
-  position: relative;
-  background-color: #e3e3e3;
-  padding-top: 50%;
-  margin-bottom: 48px; }
-  @media (min-width: 768px) {
-    .um-components .article-video {
-      margin-bottom: 60px; } }
-
-.um-components .article-video__overlay--overlay,
-.um-components .article-video__overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
-.um-components .article-video__overlay--overlay {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.um-components .article-video__button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; }
-  .um-components .article-video__button:hover {
-    color: #fff; }
-
-.um-components .article-ctas {
-  display: flex;
-  justify-content: center;
-  margin-top: 27px;
-  margin-bottom: 28px; }
-  @media (min-width: 768px) {
-    .um-components .article-ctas {
-      margin-top: 36px;
-      margin-bottom: 24px; } }
 
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
   background-color: #fafafa; }
