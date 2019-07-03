@@ -5,19 +5,17 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/main-navigation.data';
 import knobsFormat from './main-navigation.knobs-format';
 
-const getStory = (type) => {
-    return () => {
-        const knobs = getKnobs(
-            data[type],
-            knobsFormat,
-        );
+const getStory = type => () => {
+    const knobs = getKnobs(
+        data[type],
+        knobsFormat,
+    );
 
-        return {
-            props: {
-                navigation: { default: knobs.navigation },
-            },
-            template: require('./main-navigation.html'),
-        };
+    return {
+        props: {
+            navigation: { default: knobs.navigation },
+        },
+        template: require('./main-navigation.html'),
     };
 };
 

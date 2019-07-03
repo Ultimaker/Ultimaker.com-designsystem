@@ -9,7 +9,7 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 @Component({
     name: 'MainNavigation',
 })
- 
+
 export class MainNavigation extends Vue implements MainNavigationProps {
     @Prop({ type: Array, required: true }) navigation!: MainNavigationProps['navigation'];
     @Prop({ type: Boolean, required: false }) mainNavOpen?: boolean;
