@@ -25,13 +25,22 @@
 @import 'header-block';
 @import 'footer-block';
 
+@import '~molecules/article-author/article-author';
+@import '~molecules/article-ctas/article-ctas';
+@import '~molecules/article-image/article-image';
+@import '~molecules/article-intro/article-intro';
+@import '~molecules/article-text/article-text';
+@import '~molecules/article-video/article-video';
+
 @import '~molecules/auto-complete/auto-complete';
 @import '~molecules/brand/brand';
 @import '~molecules/block-icon/block-icon';
+
 @import '~molecules/cards/__LEGACY__card/card';
 @import '~molecules/cards/brand-card/brand-card';
 @import '~molecules/cards/business-card/business-card';
 @import "~molecules/cards/card-product/card-product";
+
 @import '~molecules/color/color';
 @import '~molecules/content-block/content-block';
 @import '~molecules/content-toggle/content-toggle';
@@ -49,14 +58,3 @@
 @import '~molecules/modal-button/modal-button';
 @import '~molecules/modal-wizard/modal-wizard';
 @import '~molecules/wizard-step-confirmation/wizard-step-confirmation';
-@import '~molecules/article-intro/article-intro';
-@import '~molecules/article-text/article-text';
-@import '~molecules/article-image/article-image';
-@import '~molecules/article-author/article-author';
-
-
-@import '~molecules/article-video/article-video';
-
-
-@import '~molecules/article-ctas/article-ctas';
-
