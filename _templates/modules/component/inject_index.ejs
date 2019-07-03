@@ -4,4 +4,4 @@ inject: true
 skip_if: <%= h.changeCase.paramCase(name) %>
 append: true
 ---
-export {default as <%= h.changeCase.pascal(name) %>} from '<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/<%= h.changeCase.paramCase(name) %>';
+export { default as <%= h.changeCase.pascal(name) %> } from '<%= h.inflection.pluralize(h.changeCase.lower(type)) %>/<%= h.changeCase.paramCase(name) %>';
