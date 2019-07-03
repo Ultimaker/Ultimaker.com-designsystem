@@ -1776,6 +1776,595 @@ exports[`Storyshots Molecules/list-unordered-limit default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/main-navigation default 1`] = `
+<section
+  class="story"
+>
+  <nav
+    aria-label="site"
+    class="main-nav main-nav--small"
+  >
+    <ul
+      class="main-nav__list"
+      role="menu"
+    >
+      <li
+        class="main-nav__item"
+        role="menuitem"
+      >
+        <div>
+          <a
+            aria-controls="nav-0"
+            aria-haspopup="true"
+            class="main-nav__link"
+            href="#/NavigationPageFixture"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Main navigation item
+    
+            </span>
+          </a>
+        </div>
+         
+        <a
+          aria-label=""
+          class="icon-button icon-button--small main-nav__toggle disable-focus"
+          role="button"
+          style="display: none;"
+          tabindex="-1"
+        >
+          <!---->
+           
+          <!---->
+        </a>
+         
+        <ul
+          class="main-nav__flyout flyout--large"
+          id="nav-0"
+        >
+          <li
+            class="flyout__section"
+          >
+            <strong
+              class="flyout__title"
+              id="flyout_title_static_id_0"
+            >
+              Main navigation category 1
+            </strong>
+             
+            <ul
+              aria-labelledby="flyout_title_static_id_0"
+              class="flyout__list"
+            >
+              <li
+                class="flyout__list-item"
+              >
+                <a
+                  class="flyout__link link"
+                  href="#/NavigationPageFixture"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Navigation item with internal link
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="flyout__list-item"
+              >
+                <a
+                  class="flyout__link link"
+                  href="https://external.link"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Navigation item with external link
+    
+                  </span>
+                </a>
+              </li>
+               
+              <li
+                class="flyout__list-item"
+                style="display: none;"
+              >
+                <a
+                  aria-hidden="true"
+                  class="toggle toggle--icon flyout__toggle"
+                  role="button"
+                  tabindex="0"
+                >
+                  <!---->
+                   
+                  <span>
+                    More
+                  </span>
+                </a>
+              </li>
+               
+              <!---->
+              <!---->
+               
+              <li
+                class="flyout__list-item"
+                style="display: none;"
+              >
+                <a
+                  aria-hidden="true"
+                  class="toggle toggle--icon flyout__toggle"
+                  role="button"
+                  tabindex="0"
+                >
+                  <!---->
+                   
+                  <span>
+                    Less
+                  </span>
+                </a>
+              </li>
+            </ul>
+             
+            <a
+              class="link flyout__link--cta-mini"
+              href="#/NavigationPageFixture"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Navigation item with internal link
+    
+              </span>
+            </a>
+          </li>
+          <li
+            class="flyout__section"
+          >
+            <strong
+              class="flyout__title"
+              id="flyout_title_static_id_1"
+            >
+              Main navigation category 2
+            </strong>
+             
+            <ul
+              aria-labelledby="flyout_title_static_id_1"
+              class="flyout__list"
+            >
+              <li
+                class="flyout__list-item"
+              >
+                <a
+                  class="flyout__link link"
+                  href="https://external.link"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Navigation item with external link
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="flyout__list-item"
+              >
+                <a
+                  class="flyout__link link"
+                  href="#/NavigationPageFixture"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Navigation item with internal link
+    
+                  </span>
+                </a>
+              </li>
+               
+              <li
+                class="flyout__list-item"
+                style="display: none;"
+              >
+                <a
+                  aria-hidden="true"
+                  class="toggle toggle--icon flyout__toggle"
+                  role="button"
+                  tabindex="0"
+                >
+                  <!---->
+                   
+                  <span>
+                    More
+                  </span>
+                </a>
+              </li>
+               
+              <!---->
+              <!---->
+               
+              <li
+                class="flyout__list-item"
+                style="display: none;"
+              >
+                <a
+                  aria-hidden="true"
+                  class="toggle toggle--icon flyout__toggle"
+                  role="button"
+                  tabindex="0"
+                >
+                  <!---->
+                   
+                  <span>
+                    Less
+                  </span>
+                </a>
+              </li>
+            </ul>
+             
+            <a
+              class="link flyout__link--cta-mini"
+              href="https://external.link"
+              rel="noopener"
+              target="_blank"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Navigation item with external link
+    
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="main-nav__item"
+        role="menuitem"
+      >
+        <div>
+          <a
+            aria-controls="nav-1"
+            aria-haspopup="true"
+            class="main-nav__link"
+            href="https://external.link"
+            rel="noopener"
+            target="_blank"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Main navigation item (link only)
+    
+            </span>
+          </a>
+        </div>
+         
+        <a
+          aria-label=""
+          class="icon-button icon-button--small main-nav__toggle disable-focus"
+          role="button"
+          style="display: none;"
+          tabindex="-1"
+        >
+          <!---->
+           
+          <!---->
+        </a>
+         
+        <!---->
+      </li>
+    </ul>
+  </nav>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/main-navigation-item default 1`] = `
+<section
+  class="story"
+>
+  <li
+    class="main-nav__item"
+    role="menuitem"
+  >
+    <div>
+      <a
+        aria-haspopup="true"
+        class="main-nav__link"
+        href="#/NavigationPageFixture"
+      >
+        <!---->
+         
+        <span
+          class="link__underline"
+        >
+          
+        Main navigation item
+    
+        </span>
+      </a>
+    </div>
+     
+    <a
+      aria-label=""
+      class="icon-button icon-button--small main-nav__toggle disable-focus"
+      role="button"
+      style="display: none;"
+      tabindex="-1"
+    >
+      <!---->
+       
+      <!---->
+    </a>
+     
+    <ul
+      class="main-nav__flyout flyout--large"
+    >
+      <li
+        class="flyout__section"
+      >
+        <strong
+          class="flyout__title"
+          id="flyout_title_static_id_0"
+        >
+          Main navigation category 1
+        </strong>
+         
+        <ul
+          aria-expanded="true"
+          aria-labelledby="flyout_title_static_id_0"
+          class="flyout__list"
+        >
+          <li
+            class="flyout__list-item"
+          >
+            <a
+              class="flyout__link link"
+              href="#/NavigationPageFixture"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Navigation item with internal link
+    
+              </span>
+            </a>
+          </li>
+          <li
+            class="flyout__list-item"
+          >
+            <a
+              class="flyout__link link"
+              href="https://external.link"
+              rel="noopener"
+              target="_blank"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Navigation item with external link
+    
+              </span>
+            </a>
+          </li>
+           
+          <li
+            class="flyout__list-item"
+            style="display: none;"
+          >
+            <a
+              aria-hidden="true"
+              class="toggle toggle--icon flyout__toggle"
+              role="button"
+              tabindex="0"
+            >
+              <!---->
+               
+              <span>
+                More
+              </span>
+            </a>
+          </li>
+           
+          <!---->
+          <!---->
+           
+          <li
+            class="flyout__list-item"
+            style="display: none;"
+          >
+            <a
+              aria-hidden="true"
+              class="toggle toggle--icon flyout__toggle"
+              role="button"
+              tabindex="0"
+            >
+              <!---->
+               
+              <span>
+                Less
+              </span>
+            </a>
+          </li>
+        </ul>
+         
+        <a
+          class="link flyout__link--cta-mini"
+          href="#/NavigationPageFixture"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Navigation item with internal link
+    
+          </span>
+        </a>
+      </li>
+      <li
+        class="flyout__section"
+      >
+        <strong
+          class="flyout__title"
+          id="flyout_title_static_id_1"
+        >
+          Main navigation category 2
+        </strong>
+         
+        <ul
+          aria-expanded="true"
+          aria-labelledby="flyout_title_static_id_1"
+          class="flyout__list"
+        >
+          <li
+            class="flyout__list-item"
+          >
+            <a
+              class="flyout__link link"
+              href="https://external.link"
+              rel="noopener"
+              target="_blank"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Navigation item with external link
+    
+              </span>
+            </a>
+          </li>
+          <li
+            class="flyout__list-item"
+          >
+            <a
+              class="flyout__link link"
+              href="#/NavigationPageFixture"
+            >
+              <!---->
+               
+              <span
+                class="link__underline"
+              >
+                
+        Navigation item with internal link
+    
+              </span>
+            </a>
+          </li>
+           
+          <li
+            class="flyout__list-item"
+            style="display: none;"
+          >
+            <a
+              aria-hidden="true"
+              class="toggle toggle--icon flyout__toggle"
+              role="button"
+              tabindex="0"
+            >
+              <!---->
+               
+              <span>
+                More
+              </span>
+            </a>
+          </li>
+           
+          <!---->
+          <!---->
+           
+          <li
+            class="flyout__list-item"
+            style="display: none;"
+          >
+            <a
+              aria-hidden="true"
+              class="toggle toggle--icon flyout__toggle"
+              role="button"
+              tabindex="0"
+            >
+              <!---->
+               
+              <span>
+                Less
+              </span>
+            </a>
+          </li>
+        </ul>
+         
+        <a
+          class="link flyout__link--cta-mini"
+          href="https://external.link"
+          rel="noopener"
+          target="_blank"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Navigation item with external link
+    
+          </span>
+        </a>
+      </li>
+    </ul>
+  </li>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/modal-button default 1`] = `
 <section
   class="story"
@@ -7652,6 +8241,447 @@ exports[`Storyshots Organisms/page-footer default 1`] = `
       </div>
     </div>
   </footer>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Organisms/page-header default 1`] = `
+<section
+  class="story"
+>
+  <header
+    class="header header--fixed"
+    role="banner"
+  >
+    <div
+      class="header__top"
+    >
+      <a
+        aria-label="Ultimaker homepage"
+        class="home-link router-link-exact-active router-link-active"
+        href="#/"
+      >
+        <!---->
+      </a>
+       
+      <nav
+        aria-label="site"
+        class="main-nav main-nav--small"
+      >
+        <ul
+          class="main-nav__list"
+          role="menu"
+        >
+          <li
+            class="main-nav__item"
+            role="menuitem"
+          >
+            <div>
+              <a
+                aria-controls="nav-0"
+                aria-haspopup="true"
+                class="main-nav__link"
+                href="#/NavigationPageFixture"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Main navigation item
+    
+                </span>
+              </a>
+            </div>
+             
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
+             
+            <ul
+              class="main-nav__flyout flyout--large"
+              id="nav-0"
+            >
+              <li
+                class="flyout__section"
+              >
+                <strong
+                  class="flyout__title"
+                  id="flyout_title_static_id_0"
+                >
+                  Main navigation category 1
+                </strong>
+                 
+                <ul
+                  aria-labelledby="flyout_title_static_id_0"
+                  class="flyout__list"
+                >
+                  <li
+                    class="flyout__list-item"
+                  >
+                    <a
+                      class="flyout__link link"
+                      href="#/NavigationPageFixture"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+        Navigation item with internal link
+    
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="flyout__list-item"
+                  >
+                    <a
+                      class="flyout__link link"
+                      href="https://external.link"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+        Navigation item with external link
+    
+                      </span>
+                    </a>
+                  </li>
+                   
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        More
+                      </span>
+                    </a>
+                  </li>
+                   
+                  <!---->
+                  <!---->
+                   
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                 
+                <a
+                  class="link flyout__link--cta-mini"
+                  href="#/NavigationPageFixture"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Navigation item with internal link
+    
+                  </span>
+                </a>
+              </li>
+              <li
+                class="flyout__section"
+              >
+                <strong
+                  class="flyout__title"
+                  id="flyout_title_static_id_1"
+                >
+                  Main navigation category 2
+                </strong>
+                 
+                <ul
+                  aria-labelledby="flyout_title_static_id_1"
+                  class="flyout__list"
+                >
+                  <li
+                    class="flyout__list-item"
+                  >
+                    <a
+                      class="flyout__link link"
+                      href="https://external.link"
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+        Navigation item with external link
+    
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="flyout__list-item"
+                  >
+                    <a
+                      class="flyout__link link"
+                      href="#/NavigationPageFixture"
+                    >
+                      <!---->
+                       
+                      <span
+                        class="link__underline"
+                      >
+                        
+        Navigation item with internal link
+    
+                      </span>
+                    </a>
+                  </li>
+                   
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        More
+                      </span>
+                    </a>
+                  </li>
+                   
+                  <!---->
+                  <!---->
+                   
+                  <li
+                    class="flyout__list-item"
+                    style="display: none;"
+                  >
+                    <a
+                      aria-hidden="true"
+                      class="toggle toggle--icon flyout__toggle"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <!---->
+                       
+                      <span>
+                        Less
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                 
+                <a
+                  class="link flyout__link--cta-mini"
+                  href="https://external.link"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <!---->
+                   
+                  <span
+                    class="link__underline"
+                  >
+                    
+        Navigation item with external link
+    
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="main-nav__item"
+            role="menuitem"
+          >
+            <div>
+              <a
+                aria-controls="nav-1"
+                aria-haspopup="true"
+                class="main-nav__link"
+                href="https://external.link"
+                rel="noopener"
+                target="_blank"
+              >
+                <!---->
+                 
+                <span
+                  class="link__underline"
+                >
+                  
+        Main navigation item (link only)
+    
+                </span>
+              </a>
+            </div>
+             
+            <a
+              aria-label=""
+              class="icon-button icon-button--small main-nav__toggle disable-focus"
+              role="button"
+              style="display: none;"
+              tabindex="-1"
+            >
+              <!---->
+               
+              <!---->
+            </a>
+             
+            <!---->
+          </li>
+        </ul>
+      </nav>
+       
+      <nav
+        aria-label="quick access"
+        class="sys-nav"
+      >
+        <ul
+          class="sys-nav__list"
+          role="presentation"
+        >
+          <li
+            class="sys-nav__item"
+          >
+            <a
+              class="sys-nav__link"
+              href="https://link.test"
+              rel="noopener"
+              target="_blank"
+            >
+              <!---->
+               
+              <!---->
+               
+              <span
+                class="sys-nav__label sys-nav__label--hidden-sm"
+              >
+                CTA label
+              </span>
+            </a>
+          </li>
+           
+          <li
+            class="sys-nav__item"
+          >
+            <a
+              class="sys-nav__link"
+              role="button"
+              tabindex="0"
+            >
+              <!---->
+               
+              <span
+                class="sys-nav__label sys-nav__label--hidden-sm"
+              >
+                Search label
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+       
+      <button
+        aria-expanded="false"
+        aria-label="menu"
+        class="nav-assist main-nav__nav-assist nav-assist--initial-state"
+        type="button"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="nav-assist__line nav-assist__line-2"
+            height="2"
+            width="20"
+            x="2"
+            y="11"
+          />
+           
+          <rect
+            class="nav-assist__line nav-assist__line-1"
+            height="2"
+            width="20"
+            x="2"
+            y="4.5"
+          />
+           
+          <rect
+            class="nav-assist__line nav-assist__line-3"
+            height="2"
+            width="20"
+            x="2"
+            y="17.5"
+          />
+           
+          <rect
+            class="nav-assist__line nav-assist__line-4"
+            height="2"
+            transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)"
+            width="26.6"
+            x="-1.3"
+            y="11"
+          />
+           
+          <rect
+            class="nav-assist__line nav-assist__line-5"
+            height="26.6"
+            transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)"
+            width="2"
+            x="11"
+            y="-1.3"
+          />
+        </svg>
+      </button>
+       
+      <!---->
+    </div>
+  </header>
    
   <div
     class="vue-portal-target"

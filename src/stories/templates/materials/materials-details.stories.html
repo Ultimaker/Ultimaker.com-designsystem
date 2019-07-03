@@ -1,10 +1,10 @@
 <section class="story__template">
-    <page-header v-bind="header" :main-nav-open="mainNavOpen" @toggle-nav="mainNavOpen = !mainNavOpen"></page-header>
+    <page-header v-bind="header" @toggle-nav="header.mainNavOpen = !header.mainNavOpen"></page-header>
     <main style="padding-top: 60px">
         <hero-product v-bind="heroProduct"></hero-product>
         <tabbed-content v-bind="tabbedContent"></tabbed-content>
         <examples v-bind="examples"></examples>
         <colors v-bind="colors"></colors>
     </main>
-    <page-footer  v-bind="footer" :country="country" @country-changed="updateCountry"></page-footer>
+    <page-footer  v-bind="footer"></page-footer>
 </section>

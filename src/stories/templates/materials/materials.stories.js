@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs } from '@storybook/addon-knobs';
-import headerKnobs from 'src/stories/organisms/page-header/page-header.knobs.stories';
-import footerKnobs from 'src/stories/organisms/page-footer/page-footer.knobs.stories';
+import { data as header } from 'src/js/components/organisms/page-header/data/page-header.data';
+import { data as footer } from 'src/js/components/organisms/page-footer/data/page-footer.data';
 import subNavigationKnobs from '../../organisms/subnavigation/subnavigation.stories.knobs';
 import heroCoverKnobs from '../../organisms/hero-cover/hero-cover.knobs.stories';
 import tabbedContentKnobs from '../../organisms/tabbed-content/tabbed-content.knobs.stories';
@@ -14,11 +14,9 @@ storiesOf('templates|materials', module)
     .addDecorator(withKnobs)
     .add('Materials overview',
         () => ({
-            data: () => ({
-                ...headerKnobs(),
-                ...footerKnobs(),
-            }),
             props: {
+                header: { default: header.default },
+                footer: { default: footer.default },
                 subNavigationKnobs: { default: subNavigationKnobs().subnavigation },
                 heroCover: { default: heroCoverKnobs().heroCover },
                 overview: { default: overviewData },

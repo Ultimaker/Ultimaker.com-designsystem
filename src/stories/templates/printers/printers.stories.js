@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import { withKnobs } from '@storybook/addon-knobs';
-import headerKnobs from 'src/stories/organisms/page-header/page-header.knobs.stories';
-import footerKnobs from 'src/stories/organisms/page-footer/page-footer.knobs.stories';
+import { data as header } from 'src/js/components/organisms/page-header/data/page-header.data';
+import { data as footer } from 'src/js/components/organisms/page-footer/data/page-footer.data';
 import heroProductsApplicationKnobs
     from 'src/stories/organisms/hero-products-application/hero-products-application.knobs.stories';
 import brandsKnobs from 'src/stories/organisms/__LEGACY__brands/legacy-brands.knobs.stories';
@@ -15,11 +15,9 @@ import generalContentKnobs from 'src/stories/organisms/general-content/general-c
 storiesOf('templates|printers', module)
     .addDecorator(withKnobs)
     .add('Printers', () => ({
-        data: () => ({
-            ...headerKnobs(),
-            ...footerKnobs(),
-        }),
         props: {
+            header: { default: header },
+            footer: { default: footer },
             heroProductsApplication: { default: heroProductsApplicationKnobs().heroProductsApplication },
             brands: { default: brandsKnobs().brands },
             slider: { default: sliderRevealKnobs().slider },
