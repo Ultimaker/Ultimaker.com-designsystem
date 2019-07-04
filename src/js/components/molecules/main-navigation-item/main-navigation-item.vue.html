@@ -1,7 +1,7 @@
 <li class="main-nav__item" role="menuitem" :class="{ 'main-nav__item--active': active }"
     @mouseleave="delayHideFlyout" @mouseenter="showFlyout">
 
-    <div @keydown.down.prevent=" "
+    <div @keydown.down.prevent="selectFlyoutFirstLink"
          @keydown.tab.shift.exact="hideFlyout"
          @keydown.esc.prevent="hideFlyout">
         <base-link :url="url"

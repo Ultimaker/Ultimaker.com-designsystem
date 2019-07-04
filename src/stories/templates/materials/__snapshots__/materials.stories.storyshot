@@ -287,6 +287,442 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                     </span>
                   </a>
                 </li>
+                <li
+                  class="flyout__section"
+                >
+                  <strong
+                    class="flyout__title"
+                    id="flyout_title_static_id_2"
+                  >
+                    Main navigation category 1
+                  </strong>
+                   
+                  <ul
+                    aria-labelledby="flyout_title_static_id_2"
+                    class="flyout__list"
+                  >
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="#/NavigationPageFixture"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with internal link
+    
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="https://external.link"
+                        rel="noopener"
+                        target="_blank"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with external link
+    
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          More
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <!---->
+                    <!---->
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          Less
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                   
+                  <a
+                    class="link flyout__link--cta-mini"
+                    href="#/NavigationPageFixture"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Navigation item with internal link
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="flyout__section"
+                >
+                  <strong
+                    class="flyout__title"
+                    id="flyout_title_static_id_3"
+                  >
+                    Main navigation category 2
+                  </strong>
+                   
+                  <ul
+                    aria-labelledby="flyout_title_static_id_3"
+                    class="flyout__list"
+                  >
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="https://external.link"
+                        rel="noopener"
+                        target="_blank"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with external link
+    
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="#/NavigationPageFixture"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with internal link
+    
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          More
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <!---->
+                    <!---->
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          Less
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                   
+                  <a
+                    class="link flyout__link--cta-mini"
+                    href="https://external.link"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Navigation item with external link
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="flyout__section"
+                >
+                  <strong
+                    class="flyout__title"
+                    id="flyout_title_static_id_4"
+                  >
+                    Main navigation category 1
+                  </strong>
+                   
+                  <ul
+                    aria-labelledby="flyout_title_static_id_4"
+                    class="flyout__list"
+                  >
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="#/NavigationPageFixture"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with internal link
+    
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="https://external.link"
+                        rel="noopener"
+                        target="_blank"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with external link
+    
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          More
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <!---->
+                    <!---->
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          Less
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                   
+                  <a
+                    class="link flyout__link--cta-mini"
+                    href="#/NavigationPageFixture"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Navigation item with internal link
+    
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="flyout__section"
+                >
+                  <strong
+                    class="flyout__title"
+                    id="flyout_title_static_id_5"
+                  >
+                    Main navigation category 2
+                  </strong>
+                   
+                  <ul
+                    aria-labelledby="flyout_title_static_id_5"
+                    class="flyout__list"
+                  >
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="https://external.link"
+                        rel="noopener"
+                        target="_blank"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with external link
+    
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="flyout__list-item"
+                    >
+                      <a
+                        class="flyout__link link"
+                        href="#/NavigationPageFixture"
+                      >
+                        <!---->
+                         
+                        <span
+                          class="link__underline"
+                        >
+                          
+        Navigation item with internal link
+    
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          More
+                        </span>
+                      </a>
+                    </li>
+                     
+                    <!---->
+                    <!---->
+                     
+                    <li
+                      class="flyout__list-item"
+                      style="display: none;"
+                    >
+                      <a
+                        aria-hidden="true"
+                        class="toggle toggle--icon flyout__toggle"
+                        role="button"
+                        tabindex="0"
+                      >
+                        <!---->
+                         
+                        <span>
+                          Less
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                   
+                  <a
+                    class="link flyout__link--cta-mini"
+                    href="https://external.link"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    <!---->
+                     
+                    <span
+                      class="link__underline"
+                    >
+                      
+        Navigation item with external link
+    
+                    </span>
+                  </a>
+                </li>
               </ul>
             </li>
             <li
@@ -2882,7 +3318,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 class="footer-navigation-category__list"
               >
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -2902,7 +3338,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -2922,7 +3358,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -2957,7 +3393,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 class="footer-navigation-category__list"
               >
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -2977,7 +3413,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -2997,7 +3433,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3017,7 +3453,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3037,7 +3473,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3069,10 +3505,10 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
               </h3>
                
               <ul
-                class="footer-navigation-category__list footer-navigation-category--columns"
+                class="footer-navigation-category__list"
               >
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3092,7 +3528,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3112,7 +3548,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3132,7 +3568,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3152,7 +3588,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3172,7 +3608,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3192,7 +3628,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3212,7 +3648,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3364,7 +3800,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 class="footer-navigation-category__list"
               >
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
@@ -3384,7 +3820,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   </a>
                 </li>
                 <li
-                  class="footer-navigation-category__item'"
+                  class="footer-navigation-category__item"
                 >
                   <a
                     class="footer-navigation-category__link link link--reversed"
