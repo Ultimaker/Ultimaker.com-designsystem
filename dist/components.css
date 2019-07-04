@@ -4934,13 +4934,17 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
   flex: 1 0 auto;
 >>>>>>> chore(build): add build
   position: relative;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  margin-right: 6px;
+  padding-right: 6px;
+  width: 50%; }
   @media (min-width: 569px) {
     .footer-navigation-category__column {
       border-right: 1px solid #eaeaea;
       margin-right: 18px;
       padding-right: 18px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      width: auto; }
       .footer-navigation-category__column:last-of-type {
         border-right: none;
         margin-right: 0; } }
@@ -4965,18 +4969,11 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
   font-weight: bold;
   margin-bottom: 8px; }
 
-@media (min-width: 768px) {
-  .footer-navigation-category--columns {
-    column-count: 2;
-    column-gap: 12px; } }
-
 .footer-navigation-category__item {
+  display: flex;
+  align-items: center;
   font-size: 14px;
-  line-height: 21px;
-  position: relative;
-  transform: translateY(2px);
-  margin-bottom: 6px;
-  max-width: 99.996px; }
+  line-height: 21px; }
   .footer-navigation-category__item:last-child {
     margin-bottom: 0; }
 
@@ -4995,7 +4992,8 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: auto; }
   @media (min-width: 569px) {
     .footer__legal-navigation__column {
       justify-content: space-around;
@@ -5010,7 +5008,7 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
   margin: 0 6px 12px 0; }
   @media (min-width: 569px) {
     .footer__legal-navigation__column .footer-navigation-category__title {
-      margin: -6px 12px 0 0; } }
+      margin: 0 12px 0 0; } }
 
 .footer__legal-navigation__column .footer-navigation-category__list {
   display: flex; }
@@ -5020,6 +5018,11 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
 .footer__legal-navigation__column .footer-navigation-category__link:focus,
 .footer__legal-navigation__column .footer-navigation-category__link:active,
 .footer__legal-navigation__column .footer-navigation-category__link:visited {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: -10px;
+  margin-bottom: 18px;
+  margin-top: 0;
   margin-bottom: 0;
   color: #7f7f7f;
   margin-right: 12px; }
@@ -6569,8 +6572,7 @@ svg text {
   .header__top .main-nav--small {
     padding-bottom: 60px; }
     .header__top .main-nav--small .main-nav__list {
-      position: absolute;
-      min-height: 9999px; }
+      position: absolute; }
   .header__top .sys-nav {
     margin-left: auto;
     transform: translateX(-72px);
