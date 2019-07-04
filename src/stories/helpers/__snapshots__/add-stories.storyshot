@@ -1462,6 +1462,115 @@ exports[`Storyshots Molecules/brand default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/cards/card-article introduce 1`] = `
+<section
+  class="story"
+>
+  <article
+    class="card-article"
+  >
+    <a
+      aria-label="How to successfully introduce 3D printing in your business"
+      class="anchor-overlay hit-area"
+      href="https://3d.ultimaker.com/successful-introduction-checklist?utm_source=ultimaker.com&amp;utm_medium=knowledge"
+      title="How to successfully introduce 3D printing in your business"
+    />
+     
+    <div
+      class="card-article__image-container"
+    >
+      <img
+        alt="Ultimaker Breakaway"
+        class="img--contain card-article__image img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+        type="Image"
+      />
+    </div>
+     
+    <h3
+      class="card-article__heading"
+    >
+      How to successfully introduce 3D printing in your business
+    </h3>
+     
+    <p
+      class="card-article__description"
+    >
+      
+        You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
+    
+    </p>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/cards/card-article noDescription 1`] = `
+<section
+  class="story"
+>
+  <article
+    class="card-article"
+  >
+    <!---->
+     
+    <div
+      class="card-article__image-container"
+    >
+      <img
+        alt="Ultimaker PVA"
+        class="img--contain card-article__image img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+        type="Image"
+      />
+    </div>
+     
+    <h3
+      class="card-article__heading"
+    >
+      No Description
+    </h3>
+     
+    <!---->
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/cards/card-article noImageNoDescription 1`] = `
+<section
+  class="story"
+>
+  <article
+    class="card-article"
+  >
+    <!---->
+     
+    <!---->
+     
+    <h3
+      class="card-article__heading"
+    >
+      No Image No Description
+    </h3>
+     
+    <!---->
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/color backend 1`] = `
 <section
   class="story"
