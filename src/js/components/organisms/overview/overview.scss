@@ -1,6 +1,11 @@
+/** @format */
+
+// copied from original /scss/atomic/organisms/_overview.scss
+@import "~scss/settings/_variables.scss";
+
 .overview {
-    @extend .organism;
-    @extend %reset-last-margin;
+    @include organism;
+    @include reset-last-margin;
 }
 
 .overview__tooltip {

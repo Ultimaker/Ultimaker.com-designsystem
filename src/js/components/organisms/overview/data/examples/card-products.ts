@@ -1,22 +1,16 @@
-import { data } from 'molecules/cards/card-product/data/card-product.data';
+import { callMeBack } from 'components/atoms/content-button/data/examples/call-me-back';
+import { scheduleAnAppointment } from 'components/atoms/content-button/data/examples/schedule-an-appointment';
+import { data } from 'components/molecules/cards/card-product/data/card-product.data';
 
-export default {
+export const cardProducts = {
     type: 'overview',
     title: 'Explore the benefits of each material',
     subtitle: 'Or just get a subtitle',
     ctas: {
         type: 'CtaBlock',
         ctas: [
-            {
-                type: 'ContentButton',
-                label: 'Call me back',
-                url: 'https://ultimaker.com',
-            },
-            {
-                type: 'ContentButton',
-                label: 'Call me back',
-                url: 'https://ultimaker.com',
-            },
+            callMeBack,
+            scheduleAnAppointment,
         ],
     },
     sections: [

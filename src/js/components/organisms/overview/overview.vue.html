@@ -1,11 +1,11 @@
+<!-- @format -->
+
 <article class="organism overview">
     <section class="container">
         <HeaderBlock :title="title" :subtitle="subtitle" />
 
         <template v-for="(section, index) in sections">
-            <component :is="section.type"
-                   v-bind="section"
-                   :key="index">
+            <component :is="section.type" v-bind="section" :key="index">
             </component>
         </template>
 

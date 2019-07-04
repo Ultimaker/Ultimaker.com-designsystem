@@ -1,0 +1,7 @@
+@import "~scss/settings/_variables.scss";
+
+@mixin organism() {
+    main &:nth-child(even) {
+        background-color: $colorGraySuperLight;
+    }
+}

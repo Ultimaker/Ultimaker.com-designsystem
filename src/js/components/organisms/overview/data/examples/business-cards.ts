@@ -1,23 +1,17 @@
-import { data as cards } from 'molecules/cards/business-card/data/business-card.data';
-import tooltipDefault from 'atoms/tooltip/data/examples/tooltip-default';
+import { callMeBack } from 'components/atoms/content-button/data/examples/call-me-back';
+import { scheduleAnAppointment } from 'components/atoms/content-button/data/examples/schedule-an-appointment';
+import { data as cards } from 'components/molecules/cards/business-card/data/business-card.data';
+import { mockTooltip } from 'components/atoms/tooltip/data/examples/mock-tooltip';
 
-export default {
+export const businessCards = {
     type: 'Overview',
     title: 'Find your reseller in the Netherlands',
     subtitle: 'Or just get a subtitle',
     ctas: {
         type: 'CtaBlock',
         ctas: [
-            {
-                type: 'ContentButton',
-                label: 'Call me back',
-                url: 'https://ultimaker.com',
-            },
-            {
-                type: 'ContentLink',
-                label: 'Call me back',
-                url: 'https://ultimaker.com',
-            },
+            callMeBack,
+            scheduleAnAppointment,
         ],
     },
     sections: [
@@ -37,7 +31,7 @@ export default {
                 cards.default,
                 cards.default,
             ],
-            tooltip: tooltipDefault,
+            tooltip: mockTooltip,
         },
         {
             type: 'ListSection',

@@ -13,22 +13,19 @@
 @import "general-content";
 @import "content-general";
 @import "list-section";
-@import "overview";
 @import "tabbed-content";
 @import "content-cover";
 @import "~organisms/hero-product/hero-product";
 @import 'preferences-bar';
-@import "~organisms/colors/colors";
-@import '~organisms/table-compare/table-compare';
-@import '~organisms/content-highlight/content-highlight';
-@import '~organisms/tabbed-table/tabbed-table';
-@import '~organisms/brands/brands2';
-@import '~organisms/hero-article/hero-article';
+
 @import '~organisms/article-content/article-content';
 @import '~organisms/article-header/article-header';
-
+@import '~organisms/brands/brands2';
+@import "~organisms/colors/colors";
+@import '~organisms/content-highlight/content-highlight';
+@import '~organisms/hero-article/hero-article';
+@import '~organisms/overview/overview';
 @import '~organisms/page-footer/page-footer';
-
-
 @import '~organisms/page-header/page-header';
-
+@import '~organisms/tabbed-table/tabbed-table';
+@import '~organisms/table-compare/table-compare';

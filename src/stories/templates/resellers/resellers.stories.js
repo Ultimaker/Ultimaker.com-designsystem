@@ -3,7 +3,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { data as header } from 'src/js/components/organisms/page-header/data/page-header.data';
 import { data as footer } from 'src/js/components/organisms/page-footer/data/page-footer.data';
 import heroBasicKnobs from '../../organisms/hero-basic/hero-basic.knobs.stories';
-import businessCardData from 'organisms-page/overview/data/examples/business-cards';
+import businessCardData from 'organisms/overview/data/examples/business-cards';
 
 storiesOf('templates|resellers', module)
     .addDecorator(withKnobs)

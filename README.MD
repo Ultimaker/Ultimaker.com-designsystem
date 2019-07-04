@@ -46,3 +46,11 @@ npx hygen modules component --name my-component --type atom
 * `atom`
 * `molecule`
 * `organism`
+
+
+## Prettier
+To add and run prettier against a component use the following command adjusting the component directory path as necessary
+
+```sh
+npx prettier --write --insert-pragma --require-pragma=false src/js/components/molecules/cards/card-article/**/*.{ts,scss,html}
+```
