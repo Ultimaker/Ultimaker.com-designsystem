@@ -4507,6 +4507,42 @@ table tfoot {
 .business-card__link {
   margin: 0; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.card-article {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #eaeaea; }
+
+.card-article__heading {
+  margin-bottom: 19px;
+  padding-left: 13px;
+  padding-right: 13px; }
+
+.card-article__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.card-article__image-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 50%;
+  margin-bottom: 24px; }
+
+.card-article__description {
+  padding-left: 12px;
+  padding-right: 12px; }
+
 .card-product {
   position: relative;
   background-color: #fff;

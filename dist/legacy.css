@@ -3930,6 +3930,42 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .business-card__link {
   margin: 0; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.um-components .card-article {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #eaeaea; }
+
+.um-components .card-article__heading {
+  margin-bottom: 19px;
+  padding-left: 13px;
+  padding-right: 13px; }
+
+.um-components .card-article__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.um-components .card-article__image-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 50%;
+  margin-bottom: 24px; }
+
+.um-components .card-article__description {
+  padding-left: 12px;
+  padding-right: 12px; }
+
 .um-components .card-product {
   position: relative;
   background-color: #fff;
