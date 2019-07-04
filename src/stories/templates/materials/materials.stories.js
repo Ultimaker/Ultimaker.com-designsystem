@@ -8,7 +8,7 @@ import tabbedContentKnobs from '../../organisms/tabbed-content/tabbed-content.kn
 import tabbedSequenceKnobs from '../../organisms/tabbed-sequence/tabbed-sequence.knobs.stories';
 import ubrOverview from 'src/js/components/organisms-page/overview-ubr/data/overview-ubr.data';
 
-import overviewData from 'organisms-page/overview/data/examples/card-product';
+import overviewData from 'organisms/overview/data/examples/card-products';
 
 storiesOf('templates|materials', module)
     .addDecorator(withKnobs)

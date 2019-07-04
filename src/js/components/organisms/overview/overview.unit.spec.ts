@@ -1,4 +1,6 @@
-import Overview from './overview';
+/** @format */
+
+import { Overview } from './overview';
 import { build } from 'vuenit';
 
 describe('components', () => {

@@ -1,4 +1,4 @@
-export default {
+export const mockTooltip = {
     type: 'Tooltip',
     label: 'More info',
     icon: 'info',
