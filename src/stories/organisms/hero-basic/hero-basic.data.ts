@@ -15,6 +15,7 @@ const props = Object.assign(new HeroBasic(), {
         resizeBehavior: 'fill',
         focusArea: 'center',
         backgroundColor: null,
+        mimeType: 'image/png',
     },
     ctas: [
         Object.assign(new ContentButton(), {

@@ -8,7 +8,7 @@ import tabbedContentKnobs from '../../organisms/tabbed-content/tabbed-content.kn
 import tabbedSequenceKnobs from '../../organisms/tabbed-sequence/tabbed-sequence.knobs.stories';
 import ubrOverview from 'src/js/components/organisms-page/overview-ubr/data/overview-ubr.data';
 
-import overviewData from 'organisms/overview/data/examples/card-products';
+import { cardProducts } from 'organisms/overview/data/examples/card-products';
 
 storiesOf('templates|materials', module)
     .addDecorator(withKnobs)
@@ -19,7 +19,7 @@ storiesOf('templates|materials', module)
                 footer: { default: footer.default },
                 subNavigationKnobs: { default: subNavigationKnobs().subnavigation },
                 heroCover: { default: heroCoverKnobs().heroCover },
-                overview: { default: overviewData },
+                overview: { default: cardProducts },
                 tabbedContent: { default: tabbedContentKnobs().TabbedContent },
                 tabbedSequence: { default: tabbedSequenceKnobs().TabbedSequence },
                 ubrOverview: { default: ubrOverview(4) },
@@ -27,5 +27,5 @@ storiesOf('templates|materials', module)
             template: require('./materials.stories.html'),
         }),
         {
-            notes: { markdown: require('./materials.stories.md') },
+            notes: require('./materials.stories.md'),
         });
