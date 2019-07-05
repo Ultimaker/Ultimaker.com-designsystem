@@ -12,6 +12,7 @@ export const data = {
             resizeBehavior: 'fill',
             focusArea: 'center',
             backgroundColor: null,
+            mimeType: 'image/png',
         },
         products: [
             {

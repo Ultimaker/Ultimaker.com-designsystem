@@ -20,5 +20,5 @@ storiesOf('templates|printers', module)
         template: require('./printers.stories.html'),
     }),
     {
-        notes: { markdown: require('./printers.stories.md') },
+        notes: require('./printers.stories.md'),
     });

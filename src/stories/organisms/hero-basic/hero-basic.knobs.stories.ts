@@ -10,7 +10,8 @@ export default () => ({
         description: text('Hero - description', data.description),
         image: {
             url: text('Hero - image', data.image.url),
-            alt: text('Hero - image', data.image.alt)
+            alt: text('Hero - image', data.image.alt),
+            mimeType: text('Hero - image', data.image.mimeType)
         },
         ctas: ctaBlockKnobs(),
     },

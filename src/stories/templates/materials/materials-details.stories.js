@@ -22,5 +22,5 @@ storiesOf('templates|materials', module)
             template: require('./materials-details.stories.html'),
         }),
         {
-            notes: { markdown: require('./materials-details.stories.md') },
+            notes: require('./materials-details.stories.md'),
         });
