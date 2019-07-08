@@ -13,15 +13,13 @@
                      :aria-controls="itemId"
                      :aria-current="isActive"
                      :label="label"
-                     :aria-expanded="!isCompact && flyoutIsOpen">
-        </base-link>
+                     :aria-expanded="!isCompact && flyoutIsOpen" />
     </div>
 
     <icon-button class="icon-button--small main-nav__toggle disable-focus"
                  :icon-name="angleDirection"
                  v-show="toggleIsVisible"
-                 @click="toggleFlyout" tabindex="-1">
-    </icon-button>
+                 @click="toggleFlyout" tabindex="-1" />
 
     <flyout :id="itemId" v-if="categories" ref="flyout"
         @keydown.esc.native="selectParent"
@@ -31,6 +29,5 @@
         class="flyout--large"
         :items="categories"
         :is-compact="isCompact"
-        :class="{ 'flyout--is-open': flyoutIsOpen }">
-    </flyout>
+        :class="{ 'flyout--is-open': flyoutIsOpen }" />
 </li>

@@ -10,17 +10,16 @@
         </div>
 
         <div class="footer__secondary">
-            <social-nav></social-nav>
+            <social-nav />
             <locale-selector class="footer__locale-selector"
                             v-bind="localeSelector"
                             :country="country"
-                            v-on="$listeners">
-            </locale-selector>
+                            v-on="$listeners" />
         </div>
 
         <div class="footer__tertiary">
-            <nav class="footer__legal-navigation" v-if="legalNavigation && legalNavigation.length">
-                <footer-navigation-category class="footer__legal-navigation__column" :label="copyrightLabel" :items="legalNavigation" />       
+            <nav class="footer__legal" v-if="legalNavigation && legalNavigation.length">
+                <footer-navigation-category class="footer__legal__column" :label="copyrightLabel" :items="legalNavigation" />       
             </nav>
        </div>
     </div>

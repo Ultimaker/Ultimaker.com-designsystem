@@ -22,8 +22,6 @@ export { default as IconButton } from 'molecules/icon-button';
 export { default as ListSection } from 'molecules/list-section';
 export { default as ListUnordered } from 'molecules/list-unordered';
 export { default as ListUnorderedLimit } from 'molecules/list-unordered-limit';
-export { default as MainNav } from 'molecules/main-nav';
-export { default as MainNavItem } from 'molecules/main-nav-item';
 export { default as Modal } from 'molecules/modal';
 export { default as Pager } from 'molecules/pager';
 export { default as Product } from 'molecules/product';

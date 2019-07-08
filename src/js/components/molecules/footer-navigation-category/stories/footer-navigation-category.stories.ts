@@ -13,6 +13,8 @@ const getStory = type => () => {
 
     return {
         props: {
+            label: { default: knobs.label },
+            items: { default: knobs.items },
         },
         template: require('./footer-navigation-category.html'),
     };
