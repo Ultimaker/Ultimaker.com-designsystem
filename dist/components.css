@@ -4781,12 +4781,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .wizard-step-confirmation__body {
       text-align: left; } }
 
-<<<<<<< HEAD
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .hero--article:nth-child(even) {
-  background-color: #fafafa; }
-
-.hero__image {
-=======
 .article-intro {
   font-size: 16px;
   line-height: 24px;
@@ -4932,7 +4926,6 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
 
 .footer-navigation-category__column {
   flex: 1 0 auto;
->>>>>>> chore(build): add build
   position: relative;
   margin-bottom: 12px;
   margin-right: 6px;
@@ -4988,18 +4981,18 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
   margin-bottom: 6px;
   color: #000; }
 
-.footer__legal-navigation__column {
+.footer__legal__column {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   width: auto; }
   @media (min-width: 569px) {
-    .footer__legal-navigation__column {
+    .footer__legal__column {
       justify-content: space-around;
       flex-direction: row; } }
 
-.footer__legal-navigation__column .footer-navigation-category__title {
+.footer__legal__column .footer-navigation-category__title {
   font-size: 12px;
   line-height: 18px;
   margin-top: -10px;
@@ -5007,17 +5000,17 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
   font-weight: normal;
   margin: 0 6px 12px 0; }
   @media (min-width: 569px) {
-    .footer__legal-navigation__column .footer-navigation-category__title {
+    .footer__legal__column .footer-navigation-category__title {
       margin: 0 12px 0 0; } }
 
-.footer__legal-navigation__column .footer-navigation-category__list {
+.footer__legal__column .footer-navigation-category__list {
   display: flex; }
 
-.footer__legal-navigation__column .footer-navigation-category__link,
-.footer__legal-navigation__column .footer-navigation-category__link:hover,
-.footer__legal-navigation__column .footer-navigation-category__link:focus,
-.footer__legal-navigation__column .footer-navigation-category__link:active,
-.footer__legal-navigation__column .footer-navigation-category__link:visited {
+.footer__legal__column .footer-navigation-category__link,
+.footer__legal__column .footer-navigation-category__link:hover,
+.footer__legal__column .footer-navigation-category__link:focus,
+.footer__legal__column .footer-navigation-category__link:active,
+.footer__legal__column .footer-navigation-category__link:visited {
   font-size: 12px;
   line-height: 18px;
   margin-top: -10px;
@@ -6529,11 +6522,11 @@ svg text {
     .footer__tertiary {
       justify-content: flex-start; } }
 
-.footer__legal-navigation {
+.footer__legal {
   text-align: center;
   color: #7f7f7f; }
   @media (min-width: 569px) {
-    .footer__legal-navigation {
+    .footer__legal {
       text-align: left; } }
 
 .header {

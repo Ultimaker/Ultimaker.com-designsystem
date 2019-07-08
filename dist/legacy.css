@@ -4200,12 +4200,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .wizard-step-confirmation__body {
       text-align: left; } }
 
-<<<<<<< HEAD
-.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .overview:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
-  background-color: #fafafa; }
-
-.um-components .hero__image {
-=======
 .um-components .article-intro {
   font-size: 16px;
   line-height: 24px;
@@ -4351,7 +4345,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .footer-navigation-category__column {
   flex: 1 0 auto;
->>>>>>> chore(build): add build
   position: relative;
   margin-bottom: 12px;
   margin-right: 6px;
@@ -4407,18 +4400,18 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-bottom: 6px;
   color: #000; }
 
-.um-components .footer__legal-navigation__column {
+.um-components .footer__legal__column {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   width: auto; }
   @media (min-width: 569px) {
-    .um-components .footer__legal-navigation__column {
+    .um-components .footer__legal__column {
       justify-content: space-around;
       flex-direction: row; } }
 
-.um-components .footer__legal-navigation__column .footer-navigation-category__title {
+.um-components .footer__legal__column .footer-navigation-category__title {
   font-size: 12px;
   line-height: 18px;
   margin-top: -10px;
@@ -4426,17 +4419,17 @@ because both families serve another purpose. Therefore the line-heights will be 
   font-weight: normal;
   margin: 0 6px 12px 0; }
   @media (min-width: 569px) {
-    .um-components .footer__legal-navigation__column .footer-navigation-category__title {
+    .um-components .footer__legal__column .footer-navigation-category__title {
       margin: 0 12px 0 0; } }
 
-.um-components .footer__legal-navigation__column .footer-navigation-category__list {
+.um-components .footer__legal__column .footer-navigation-category__list {
   display: flex; }
 
-.um-components .footer__legal-navigation__column .footer-navigation-category__link,
-.um-components .footer__legal-navigation__column .footer-navigation-category__link:hover,
-.um-components .footer__legal-navigation__column .footer-navigation-category__link:focus,
-.um-components .footer__legal-navigation__column .footer-navigation-category__link:active,
-.um-components .footer__legal-navigation__column .footer-navigation-category__link:visited {
+.um-components .footer__legal__column .footer-navigation-category__link,
+.um-components .footer__legal__column .footer-navigation-category__link:hover,
+.um-components .footer__legal__column .footer-navigation-category__link:focus,
+.um-components .footer__legal__column .footer-navigation-category__link:active,
+.um-components .footer__legal__column .footer-navigation-category__link:visited {
   font-size: 12px;
   line-height: 18px;
   margin-top: -10px;
@@ -5943,11 +5936,11 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
     .um-components .footer__tertiary {
       justify-content: flex-start; } }
 
-.um-components .footer__legal-navigation {
+.um-components .footer__legal {
   text-align: center;
   color: #7f7f7f; }
   @media (min-width: 569px) {
-    .um-components .footer__legal-navigation {
+    .um-components .footer__legal {
       text-align: left; } }
 
 .um-components .header {
