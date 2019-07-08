@@ -1,6 +1,6 @@
 export const data = {
     default: {
-        itemId: 1,
+        itemId: '1',
         active: false,
         label: 'Main navigation item',
         url: '/NavigationPageFixture',
