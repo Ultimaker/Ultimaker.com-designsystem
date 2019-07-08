@@ -2,7 +2,7 @@
     <h3 class="footer-navigation-category__title">{{ label }}</h3>
     <ul class="footer-navigation-category__list" v-if="items && items.length">
         <li v-for="link in items" class="footer-navigation-category__item">
-            <content-link class="footer-navigation-category__link link link--reversed" v-bind="link"></content-link>
-        </li>
+            <content-link class="footer-navigation-category__link link link--reversed" v-bind="link" />
+        <li>
     </ul>
 </div>
