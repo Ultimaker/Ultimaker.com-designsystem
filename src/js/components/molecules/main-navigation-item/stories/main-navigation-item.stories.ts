@@ -13,9 +13,11 @@ const getStory = type => () => {
 
     return {
         props: {
+            active: { default: knobs.active },
+            categories: { default: knobs.categories },
+            itemId: { default: knobs.itemId },
             label: { default: knobs.label },
             url: { default: knobs.url },
-            categories: { default: knobs.categories },
         },
         template: require('./main-navigation-item.html'),
     };
