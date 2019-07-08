@@ -1,0 +1,28 @@
+/** @format */
+
+.social-sharing {
+    display: flex;
+    justify-content: center;
+}
+
+.social-sharing__link {
+    color: $colorBlack;
+
+    &:hover {
+        color: $um-blue;
+    }
+
+    & + & {
+        margin-left: 2 * $buildingUnit;
+    }
+}
+
+.social-sharing__text {
+    @include visually-hidden;
+}
+
+.social-sharing__icon {
+    height: 3 * $buildingUnit;
+    width: 3 * $buildingUnit;
+}
+
