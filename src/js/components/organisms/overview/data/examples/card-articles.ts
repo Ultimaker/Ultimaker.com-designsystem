@@ -19,11 +19,11 @@ export const cardArticles = {
         {
             type: 'list-section',
             limit: {
+                expand: {
+                    label: 'Show all',
+                },
                 largeScreen: 3,
                 smallScreen: 3,
-            },
-            expand: {
-                label: 'Show all',
             },
             cards: [
                 introduce,
