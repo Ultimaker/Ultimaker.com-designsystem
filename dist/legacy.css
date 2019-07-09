@@ -5901,8 +5901,8 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
   @media (min-width: 569px) {
     .um-components .footer__navigation {
       flex-direction: row;
-      flex-wrap: no-wrap;
-      max-height: auto; } }
+      flex-wrap: nowrap;
+      max-height: initial; } }
 
 .um-components .footer__secondary {
   display: flex;

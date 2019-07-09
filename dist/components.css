@@ -6487,8 +6487,8 @@ svg text {
   @media (min-width: 569px) {
     .footer__navigation {
       flex-direction: row;
-      flex-wrap: no-wrap;
-      max-height: auto; } }
+      flex-wrap: nowrap;
+      max-height: initial; } }
 
 .footer__secondary {
   display: flex;
