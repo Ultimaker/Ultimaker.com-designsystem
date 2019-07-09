@@ -1805,7 +1805,80 @@ exports[`Storyshots Molecules/footer-navigation-category default 1`] = `
 <section
   class="story"
 >
-  <div />
+  <div
+    class="footer-navigation-category__column"
+  >
+    <h3
+      class="footer-navigation-category__title"
+    >
+      Products
+    </h3>
+     
+    <ul
+      class="footer-navigation-category__list"
+    >
+      <li
+        class="footer-navigation-category__item"
+      >
+        <a
+          class="footer-navigation-category__link link link--reversed"
+          href="https://ultimaker.com/3d-printers"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        3D printers
+    
+          </span>
+        </a>
+      </li>
+      <li
+        class="footer-navigation-category__item"
+      >
+        <a
+          class="footer-navigation-category__link link link--reversed"
+          href="https://ultimaker.com/software"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Software
+    
+          </span>
+        </a>
+      </li>
+      <li
+        class="footer-navigation-category__item"
+      >
+        <a
+          class="footer-navigation-category__link link link--reversed"
+          href="https://ultimaker.com/materials"
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           
+          <span
+            class="link__underline"
+          >
+            
+        Materials
+    
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
    
   <div
     class="vue-portal-target"
