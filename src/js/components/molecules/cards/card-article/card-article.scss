@@ -9,7 +9,7 @@
 }
 
 .card-article__heading {
-    margin-bottom: 19px;
+    margin-bottom: $buildingUnit;
     padding-left: 13px;
     padding-right: 13px;
 }
@@ -30,6 +30,8 @@
 }
 
 .card-article__description {
+    font-size: 14px;
+    margin-bottom: $buildingUnit;
     padding-left: $buildingUnit;
     padding-right: $buildingUnit;
 }
