@@ -19,11 +19,11 @@ export const businessCards = {
             type: 'ListSection',
             title: 'Preferred Resellers',
             limit: {
+                expand: {
+                    label: 'Show all',
+                },
                 largeScreen: 3,
                 smallScreen: 3,
-            },
-            expand: {
-                label: 'Show all',
             },
             cards: [
                 cards.makerPoint,
@@ -37,11 +37,11 @@ export const businessCards = {
             type: 'ListSection',
             title: 'Authorized Resellers',
             limit: {
+                expand: {
+                    label: 'Show all',
+                },
                 largeScreen: 3,
                 smallScreen: 3,
-            },
-            expand: {
-                label: 'Show all',
             },
             cards: [
                 cards.makerPoint,

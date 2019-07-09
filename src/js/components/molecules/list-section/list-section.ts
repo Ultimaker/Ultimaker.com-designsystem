@@ -80,10 +80,13 @@ export default class ListSection extends Vue implements IListSection {
     }
 
     showCount(): string {
+        const { label } = this.limit && this.limit.expand ? this.limit.expand : { label: '' };
+
         if (!this.showHiddenItems) {
-            return `${this.expand && this.expand.label ? this.expand.label : ''} (${this.cards.length})`;
+            return `${label} (${this.cards.length})`;
         }
-        return (this.expand && this.expand.label) || '';
+
+        return label;
     }
 
     triggerEventClick(): void {

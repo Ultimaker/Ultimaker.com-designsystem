@@ -19,11 +19,11 @@ export const contentBlocks = {
             type: 'ListSection',
             title: 'Title',
             limit: {
+                expand: {
+                    label: 'Show all',
+                },
                 largeScreen: 6,
                 smallScreen: 3,
-            },
-            expand: {
-                label: 'Show all',
             },
             cards: [
                 mockContentBlock,
@@ -41,11 +41,11 @@ export const contentBlocks = {
             type: 'ListSection',
             title: 'Title',
             limit: {
+                expand: {
+                    label: 'Show all',
+                },
                 largeScreen: 6,
                 smallScreen: 3,
-            },
-            expand: {
-                label: 'Show all',
             },
             cards: [
                 mockContentBlock,
