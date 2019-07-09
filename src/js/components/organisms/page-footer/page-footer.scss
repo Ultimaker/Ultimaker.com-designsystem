@@ -47,8 +47,8 @@
 
     @include min-mobile-xl {
         flex-direction: row;
-        flex-wrap: no-wrap;
-        max-height: auto;
+        flex-wrap: nowrap;
+        max-height: initial;
     }
 }
 
