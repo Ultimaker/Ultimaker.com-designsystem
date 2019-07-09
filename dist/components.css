@@ -175,9 +175,49 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @returns {string} - Returns a cubic-bezier function with the easing values.
  */
 /*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+/*
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
  */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 /**
  * Position X,Y,Z (Fallback Top, Left IE)
  * @param {number} $x - X Position
@@ -211,38 +251,6 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {number} $height ($width) - Height of the element
  */
 /**
- * CSS Background
- * @param {string} $name ($spriteDefault) - Background image, without the image path
- * @param {string} $repeat (no-repeat) - Background repeat
- * @param {position} $left (0) - Background position X
- * @param {position} $top (0) - Background position Y
- * @param {color} $color (transparent) - Background color
- * @param {string} $attachment (scorll) - Background attachment
- */
-/**
- * Creates an arrow
- * @param {string} $direction (up) - Arrow direction: up, down, left or right
- * @param {color} $color (#000) - Arrow color
- * @param {size} $size (10px) - Size of the opposite side of the arrow
- * @param {number} $stretch (1) - Amount of the stretch of the arrow
- * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
- */
-/**
- * Outputs a ratio holder
- * @param {number} $width - the width of the desired (original) size
- * @param {number} $height - the height of the desired (original) size
- * @param {string} $type (before) - type of psuedo element
- * @param {boolean} $firstDescendant (true) - same element or first descendant
- */
-/**
- * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
- * @param {string} $fit - Type of fit cover/contain etc.
- * @param {string} $position - almost the same as background-position
- */
-/*
- * @param {string} $animateProp - Name of the animated property or multiple properties
- */
-/**
  * Z-Index function
  * @param {string} $list (Array) - The list to find the current z-index in
  * @param {string} $element (String) - The name of the current element, must be in the $list
@@ -261,7 +269,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .overview > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child {
   margin-bottom: 0; }
 
 .hero--products .hero__link--large, .hero--products-application .hero__link--large, .examples .examples__link--large {
@@ -4235,7 +4243,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   border: 1px solid #eaeaea; }
 
 .card-article__heading {
-  margin-bottom: 19px;
+  margin-bottom: 12px;
   padding-left: 13px;
   padding-right: 13px; }
 
@@ -4253,6 +4261,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-bottom: 24px; }
 
 .card-article__description {
+  font-size: 14px;
+  margin-bottom: 12px;
   padding-left: 12px;
   padding-right: 12px; }
 
@@ -5181,7 +5191,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .main-nav--large .main-nav__toggle {
     display: initial; }
 
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .overview:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .hero--article:nth-child(even) {
+main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .hero--article:nth-child(even) {
   background-color: #fafafa; }
 
 .hero__image {
@@ -5909,18 +5919,6 @@ svg text {
     .list-section__info-link {
       margin-left: 24px; } }
 
-.overview__tooltip {
-  font-size: 14px;
-  line-height: 21px;
-  max-width: 296px;
-  position: absolute;
-  opacity: 1;
-  transform: translateY(calc(-100% - 36px)); }
-  .overview__tooltip:after {
-    left: 12px; }
-  .overview__tooltip .cta__block .link--large {
-    padding-left: 0; }
-
 @media (min-width: 768px) {
   .tabbed-content__header {
     margin: 0 auto; } }
@@ -6123,6 +6121,61 @@ svg text {
     .selector-group {
       margin-left: auto; } }
 
+.article > .container, .article > .footer__container {
+  padding-top: 24px; }
+  @media (min-width: 768px) {
+    .article > .container, .article > .footer__container {
+      padding-top: 48px; } }
+
+.article .article-ctas + .article-image,
+.article .article-text + .article-ctas,
+.article .article-ctas + .article-text,
+.article .article-text + .article-video,
+.article .article-text + .article-image {
+  margin-top: 36px; }
+  @media (min-width: 768px) {
+    .article .article-ctas + .article-image,
+    .article .article-text + .article-ctas,
+    .article .article-ctas + .article-text,
+    .article .article-text + .article-video,
+    .article .article-text + .article-image {
+      margin-top: 60px; } }
+
+.article:last-of-type {
+  margin-bottom: 0; }
+
+.article-header {
+  padding-top: 24px;
+  padding-bottom: 24px; }
+
+.brands2 {
+  padding-top: 48px; }
+  .brands2 .list-unordered-limit ul, .brands2 .list-unordered-limit .hero--text .content--rich ul, .hero--text .content--rich .brands2 .list-unordered-limit ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-top: -12px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    max-width: 804px; }
+  .brands2 .list-unordered-limit li {
+    padding-left: 0;
+    line-height: 0;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 0; }
+  .brands2 .list-unordered-limit footer {
+    margin-top: 36px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .brands2 .list-unordered-limit footer {
+        margin-top: 48px; } }
+  .brands2 .footer-block {
+    margin-top: 60px; }
+
 .colors .colors__list {
   display: flex;
   flex-wrap: wrap;
@@ -6145,157 +6198,6 @@ svg text {
       margin-bottom: 30px; } }
   .colors .colors__image--loading {
     opacity: 0; }
-
-.table-compare {
-  position: relative;
-  margin-bottom: 24px; }
-
-.table-compare__scroll-container {
-  overflow: auto;
-  overflow-y: visible;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory; }
-
-.table-compare__table {
-  border: initial;
-  border-bottom: 2px solid #e3e3e3;
-  border-collapse: collapse;
-  position: relative;
-  table-layout: fixed;
-  width: calc(var(--number-of-columns) * 100%); }
-  @media (min-width: 1025px) {
-    .table-compare__table {
-      width: 100%; } }
-
-.table-compare__table col {
-  width: auto; }
-  @media (min-width: 1025px) {
-    .table-compare__table col {
-      width: 204px; } }
-  @media (min-width: 1440px) {
-    .table-compare__table col {
-      width: 228px; } }
-
-.table-compare__table col:first-of-type {
-  width: 0; }
-  @media (min-width: 1025px) {
-    .table-compare__table col:first-of-type {
-      width: auto; } }
-
-.table-compare__table th,
-.table-compare__table td {
-  padding: 0; }
-
-.table-compare__table thead th[scope="col"] {
-  border-bottom: 2px solid #e3e3e3;
-  font-weight: normal;
-  font-size: 18px;
-  padding: 0 12px 24px;
-  text-align: center;
-  width: initial;
-  white-space: nowrap; }
-  @media (min-width: 1025px) {
-    .table-compare__table thead th[scope="col"] {
-      font-size: 20.0004px;
-      line-height: 1.2; } }
-  @media (min-width: 1440px) {
-    .table-compare__table thead th[scope="col"] {
-      padding-left: 24px;
-      padding-right: 24px; } }
-
-.table-compare__table tbody th[scope="row"] {
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
-  margin-bottom: 23px;
-  border-top: 1px solid #e3e3e3;
-  left: 0;
-  position: -webkit-sticky;
-  position: sticky;
-  text-align: left;
-  white-space: nowrap; }
-  @media (min-width: 1025px) {
-    .table-compare__table tbody th[scope="row"] {
-      position: static; } }
-
-.table-compare__table tbody td {
-  border-top: 1px solid #e3e3e3;
-  color: #196ef0;
-  height: 48px;
-  padding: 0 6px;
-  scroll-snap-align: start end;
-  vertical-align: middle; }
-
-.table-compare__table tfoot th,
-.table-compare__table tfoot td {
-  border-top: 1px solid #e3e3e3;
-  padding: 18px;
-  text-align: center; }
-
-.table-compare__table tfoot td {
-  vertical-align: middle; }
-  .table-compare__table tfoot td > .link, .table-compare__table tfoot td > .toggle, .table-compare__table tfoot td > .overflow-container__link:hover, .table-compare__table tfoot td > .overflow-container__link.exact-active {
-    margin: 0; }
-
-.table-compare__image {
-  display: block;
-  margin: 0 auto 24px;
-  height: 180px;
-  width: 180px; }
-
-.table-compare__row-header {
-  position: relative;
-  display: block; }
-
-.table-compare__feature,
-.table-compare__feature--no-tooltip {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px);
-  min-width: 125px;
-  max-width: 70vw; }
-  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .hero--products:nth-child(even) .table-compare__feature, main .hero--products-application:nth-child(even) .table-compare__feature, main .hero--text:nth-child(even) .table-compare__feature, main .hero--cover:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .overview:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .hero--article:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .hero--products:nth-child(even) .table-compare__feature--no-tooltip, main .hero--products-application:nth-child(even) .table-compare__feature--no-tooltip, main .hero--text:nth-child(even) .table-compare__feature--no-tooltip, main .hero--cover:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .general-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip, main .overview:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, main .hero--article:nth-child(even) .table-compare__feature--no-tooltip {
-    background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
-
-.table-compare__feature--no-tooltip {
-  padding: 15px 50px 11px 18px;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
-.table-compare__cell {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
-
-.table-compare__checkmark {
-  display: block;
-  margin: 0 0 0 auto;
-  height: 24px;
-  width: 24px; }
-  @media (min-width: 1025px) {
-    .table-compare__checkmark {
-      margin: 0 auto; } }
-
-.table-compare__scroll-buttons {
-  position: absolute;
-  top: 0;
-  width: 100%; }
-
-.table-compare__scroll-button {
-  position: absolute;
-  transform: translateY(-50%);
-  top: 90px;
-  background-color: transparent; }
-  @media (min-width: 1025px) {
-    .table-compare__scroll-button {
-      display: none; } }
-  .table-compare__scroll-button--left {
-    left: 0; }
-  .table-compare__scroll-button--right {
-    right: 0; }
 
 @media (min-width: 569px) {
   .content-highlight__container {
@@ -6345,34 +6247,6 @@ svg text {
     .content-highlight__body {
       text-align: left; } }
 
-.brands2 {
-  padding-top: 48px; }
-  .brands2 .list-unordered-limit ul, .brands2 .list-unordered-limit .hero--text .content--rich ul, .hero--text .content--rich .brands2 .list-unordered-limit ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin-top: -12px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12px;
-    max-width: 804px; }
-  .brands2 .list-unordered-limit li {
-    padding-left: 0;
-    line-height: 0;
-    margin-top: 12px;
-    margin-right: 12px;
-    margin-bottom: 0; }
-  .brands2 .list-unordered-limit footer {
-    margin-top: 36px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .brands2 .list-unordered-limit footer {
-        margin-top: 48px; } }
-  .brands2 .footer-block {
-    margin-top: 60px; }
-
 .hero--article {
   position: relative; }
   .hero--article-reset {
@@ -6419,32 +6293,32 @@ svg text {
   width: 100%;
   height: 100%; }
 
-.article > .container, .article > .footer__container {
-  padding-top: 24px; }
-  @media (min-width: 768px) {
-    .article > .container, .article > .footer__container {
-      padding-top: 48px; } }
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+main .overview:nth-child(even) {
+  background-color: #fafafa; }
 
-.article .article-ctas + .article-image,
-.article .article-text + .article-ctas,
-.article .article-ctas + .article-text,
-.article .article-text + .article-video,
-.article .article-text + .article-image {
-  margin-top: 36px; }
-  @media (min-width: 768px) {
-    .article .article-ctas + .article-image,
-    .article .article-text + .article-ctas,
-    .article .article-ctas + .article-text,
-    .article .article-text + .article-video,
-    .article .article-text + .article-image {
-      margin-top: 60px; } }
-
-.article:last-of-type {
+.overview > :last-child {
   margin-bottom: 0; }
 
-.article-header {
-  padding-top: 24px;
-  padding-bottom: 24px; }
+.overview__tooltip {
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 296px;
+  position: absolute;
+  opacity: 1;
+  transform: translateY(calc(-100% - 36px)); }
+  .overview__tooltip:after {
+    left: 12px; }
+  .overview__tooltip .cta__block .link--large {
+    padding-left: 0; }
 
 .footer {
   border-top: 1px solid #f5f5f5;
@@ -6622,6 +6496,157 @@ svg text {
 .sys-nav-slide-enter-active, .sys-nav-slide-leave-active {
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
 
+.table-compare {
+  position: relative;
+  margin-bottom: 24px; }
+
+.table-compare__scroll-container {
+  overflow: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; }
+
+.table-compare__table {
+  border: initial;
+  border-bottom: 2px solid #e3e3e3;
+  border-collapse: collapse;
+  position: relative;
+  table-layout: fixed;
+  width: calc(var(--number-of-columns) * 100%); }
+  @media (min-width: 1025px) {
+    .table-compare__table {
+      width: 100%; } }
+
+.table-compare__table col {
+  width: auto; }
+  @media (min-width: 1025px) {
+    .table-compare__table col {
+      width: 204px; } }
+  @media (min-width: 1440px) {
+    .table-compare__table col {
+      width: 228px; } }
+
+.table-compare__table col:first-of-type {
+  width: 0; }
+  @media (min-width: 1025px) {
+    .table-compare__table col:first-of-type {
+      width: auto; } }
+
+.table-compare__table th,
+.table-compare__table td {
+  padding: 0; }
+
+.table-compare__table thead th[scope="col"] {
+  border-bottom: 2px solid #e3e3e3;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 0 12px 24px;
+  text-align: center;
+  width: initial;
+  white-space: nowrap; }
+  @media (min-width: 1025px) {
+    .table-compare__table thead th[scope="col"] {
+      font-size: 20.0004px;
+      line-height: 1.2; } }
+  @media (min-width: 1440px) {
+    .table-compare__table thead th[scope="col"] {
+      padding-left: 24px;
+      padding-right: 24px; } }
+
+.table-compare__table tbody th[scope="row"] {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -2px;
+  margin-bottom: 23px;
+  border-top: 1px solid #e3e3e3;
+  left: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: left;
+  white-space: nowrap; }
+  @media (min-width: 1025px) {
+    .table-compare__table tbody th[scope="row"] {
+      position: static; } }
+
+.table-compare__table tbody td {
+  border-top: 1px solid #e3e3e3;
+  color: #196ef0;
+  height: 48px;
+  padding: 0 6px;
+  scroll-snap-align: start end;
+  vertical-align: middle; }
+
+.table-compare__table tfoot th,
+.table-compare__table tfoot td {
+  border-top: 1px solid #e3e3e3;
+  padding: 18px;
+  text-align: center; }
+
+.table-compare__table tfoot td {
+  vertical-align: middle; }
+  .table-compare__table tfoot td > .link, .table-compare__table tfoot td > .toggle, .table-compare__table tfoot td > .overflow-container__link:hover, .table-compare__table tfoot td > .overflow-container__link.exact-active {
+    margin: 0; }
+
+.table-compare__image {
+  display: block;
+  margin: 0 auto 24px;
+  height: 180px;
+  width: 180px; }
+
+.table-compare__row-header {
+  position: relative;
+  display: block; }
+
+.table-compare__feature,
+.table-compare__feature--no-tooltip {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px);
+  min-width: 125px;
+  max-width: 70vw; }
+  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .hero--products:nth-child(even) .table-compare__feature, main .hero--products-application:nth-child(even) .table-compare__feature, main .hero--text:nth-child(even) .table-compare__feature, main .hero--cover:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .hero--article:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .hero--products:nth-child(even) .table-compare__feature--no-tooltip, main .hero--products-application:nth-child(even) .table-compare__feature--no-tooltip, main .hero--text:nth-child(even) .table-compare__feature--no-tooltip, main .hero--cover:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .general-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, main .hero--article:nth-child(even) .table-compare__feature--no-tooltip {
+    background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
+
+.table-compare__feature--no-tooltip {
+  padding: 15px 50px 11px 18px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.table-compare__cell {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.table-compare__checkmark {
+  display: block;
+  margin: 0 0 0 auto;
+  height: 24px;
+  width: 24px; }
+  @media (min-width: 1025px) {
+    .table-compare__checkmark {
+      margin: 0 auto; } }
+
+.table-compare__scroll-buttons {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.table-compare__scroll-button {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 90px;
+  background-color: transparent; }
+  @media (min-width: 1025px) {
+    .table-compare__scroll-button {
+      display: none; } }
+  .table-compare__scroll-button--left {
+    left: 0; }
+  .table-compare__scroll-button--right {
+    right: 0; }
+
 /** @format */
 /** @format */
 /*
@@ -6797,40 +6822,7 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @returns {string} - Returns a cubic-bezier function with the easing values.
  */
 /*
- *  Mixins to support media queries
- *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
- */
-/**
- * Position X,Y,Z (Fallback Top, Left IE)
- * @param {number} $x - X Position
- * @param {number} $y - Y Position
- * @param {number} $z - Z Position
- */
-/**
- * Position
- * @param {number} $top (0) - Top Position
- * @param {number} $right (auto) - Right Position
- * @param {number} $bottom (auto) - Bottom Position
- * @param {number} $left (0) - Left Position
- */
-/**
- * Offset
- * @param {number} $top (0) - Top Offset
- * @param {number} $left (0) - Left Offset
- */
-/**
- * Positioning an element absolute in the center
- */
-/**
- * Places an element absolute on top of the entire wrapper
- */
-/**
- * Set an element to display block and center margin
- */
-/**
- * Size an Element
- * @param {number} $width (1em) - Width of the element
- * @param {number} $height ($width) - Height of the element
+ * @param {string} $animateProp - Name of the animated property or multiple properties
  */
 /**
  * CSS Background
@@ -6862,7 +6854,48 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $position - almost the same as background-position
  */
 /*
- * @param {string} $animateProp - Name of the animated property or multiple properties
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/**
+ * Position X,Y,Z (Fallback Top, Left IE)
+ * @param {number} $x - X Position
+ * @param {number} $y - Y Position
+ * @param {number} $z - Z Position
+ */
+/**
+ * Position
+ * @param {number} $top (0) - Top Position
+ * @param {number} $right (auto) - Right Position
+ * @param {number} $bottom (auto) - Bottom Position
+ * @param {number} $left (0) - Left Position
+ */
+/**
+ * Offset
+ * @param {number} $top (0) - Top Offset
+ * @param {number} $left (0) - Left Offset
+ */
+/**
+ * Positioning an element absolute in the center
+ */
+/**
+ * Places an element absolute on top of the entire wrapper
+ */
+/**
+ * Set an element to display block and center margin
+ */
+/**
+ * Size an Element
+ * @param {number} $width (1em) - Width of the element
+ * @param {number} $height ($width) - Height of the element
  */
 /**
  * Z-Index function
