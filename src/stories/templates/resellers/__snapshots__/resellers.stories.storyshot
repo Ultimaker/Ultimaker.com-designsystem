@@ -2064,7 +2064,7 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                 </span>
               </a>
               <a
-                class="link--large link cta-link"
+                class="link--primary button cta-link"
                 href="https://ultimaker.com"
                 rel="noopener"
                 target="_self"
@@ -2075,7 +2075,7 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   class="link__underline"
                 >
                   
-        Call me back
+        Schedule an appointment
     
                 </span>
               </a>
