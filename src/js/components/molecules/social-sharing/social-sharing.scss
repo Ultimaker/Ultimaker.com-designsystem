@@ -7,13 +7,15 @@
 
 .social-sharing__link {
     color: $colorBlack;
+    padding: 0.5 * $buildingUnit;
 
     &:hover {
-        color: $um-blue;
+        background-color: $colorGrayLight;
+        color: $colorBlack;
     }
 
     & + & {
-        margin-left: 2 * $buildingUnit;
+        margin-left: $buildingUnit;
     }
 }
 
