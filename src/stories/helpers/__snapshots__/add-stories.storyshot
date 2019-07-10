@@ -814,47 +814,6 @@ exports[`Storyshots Molecules/article-ctas default 1`] = `
 </section>
 `;
 
-exports[`Storyshots Molecules/article-header default 1`] = `
-<section
-  class="story"
->
-  <header
-    class="article-header container"
-  >
-    <div
-      class="article-author"
-    >
-      <img
-        alt="bla bla"
-        class="img--contain article-author__image img--loading"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
-      />
-       
-      <div
-        class="article-author__meta"
-      >
-        <span
-          class="article-author__name"
-        >
-          Jan de Groot
-        </span>
-         
-        <span
-          class="article-author__published-date"
-        >
-          May 31, 2019
-        </span>
-      </div>
-    </div>
-  </header>
-   
-  <div
-    class="vue-portal-target"
-  />
-</section>
-`;
-
 exports[`Storyshots Molecules/article-image default 1`] = `
 <section
   class="story"
@@ -1501,6 +1460,31 @@ exports[`Storyshots Molecules/cards/card-article introduce 1`] = `
         You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
     
     </p>
+     
+    <ul
+      class="list card-article__labels-list"
+    >
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          product development
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          architecture
+        </span>
+      </li>
+    </ul>
   </article>
    
   <div
@@ -1537,6 +1521,10 @@ exports[`Storyshots Molecules/cards/card-article noDescription 1`] = `
     </h3>
      
     <!---->
+     
+    <ul
+      class="list card-article__labels-list"
+    />
   </article>
    
   <div
@@ -1563,6 +1551,61 @@ exports[`Storyshots Molecules/cards/card-article noImageNoDescription 1`] = `
     </h3>
      
     <!---->
+     
+    <ul
+      class="list card-article__labels-list"
+    />
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/cards/card-article noLabels 1`] = `
+<section
+  class="story"
+>
+  <article
+    class="card-article"
+  >
+    <a
+      aria-label="How to successfully introduce 3D printing in your business"
+      class="anchor-overlay hit-area"
+      href="https://3d.ultimaker.com/successful-introduction-checklist?utm_source=ultimaker.com&amp;utm_medium=knowledge"
+      title="How to successfully introduce 3D printing in your business"
+    />
+     
+    <div
+      class="card-article__image-container"
+    >
+      <img
+        alt="Ultimaker Tough PLA print"
+        class="img--contain card-article__image img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+        type="Image"
+      />
+    </div>
+     
+    <h3
+      class="card-article__heading"
+    >
+      How to successfully introduce 3D printing in your business
+    </h3>
+     
+    <p
+      class="card-article__description"
+    >
+      
+        You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
+    
+    </p>
+     
+    <ul
+      class="list card-article__labels-list"
+    />
   </article>
    
   <div
@@ -4250,7 +4293,7 @@ exports[`Storyshots Molecules|cards/card-product noImage 1`] = `
     </h3>
      
     <ul
-      class="list card-product__list"
+      class="list card-product__labels-list"
     >
       <li
         class="list__item list__item--inline"
@@ -4335,7 +4378,7 @@ exports[`Storyshots Molecules|cards/card-product noImageNoProperties 1`] = `
     </h3>
      
     <ul
-      class="list card-product__list"
+      class="list card-product__labels-list"
     />
   </article>
    
@@ -4381,7 +4424,7 @@ exports[`Storyshots Molecules|cards/card-product noProperties 1`] = `
     </h3>
      
     <ul
-      class="list card-product__list"
+      class="list card-product__labels-list"
     />
   </article>
    
@@ -4427,7 +4470,7 @@ exports[`Storyshots Molecules|cards/card-product nylon 1`] = `
     </h3>
      
     <ul
-      class="list card-product__list"
+      class="list card-product__labels-list"
     >
       <li
         class="list__item list__item--inline"
@@ -4514,7 +4557,7 @@ exports[`Storyshots Molecules|cards/card-product pla 1`] = `
     </h3>
      
     <ul
-      class="list card-product__list"
+      class="list card-product__labels-list"
     >
       <li
         class="list__item list__item--inline"
@@ -6300,6 +6343,253 @@ exports[`Storyshots Organisms/article noIntro 1`] = `
       </div>
     </div>
   </section>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Organisms/article-header janDeGroot 1`] = `
+<section
+  class="story"
+>
+  <header
+    class="article-header container"
+  >
+    <div
+      class="article-author"
+    >
+      <img
+        alt="Jan De Groot"
+        class="img--contain article-author__image img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+      />
+       
+      <div
+        class="article-author__meta"
+      >
+        <span
+          class="article-author__name"
+        >
+          Jan de Groot
+        </span>
+         
+        <span
+          class="article-author__published-date"
+        >
+          May 31, 2019
+        </span>
+      </div>
+    </div>
+     
+    <ul
+      class="list article-header__list"
+    >
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          baker
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          loves chocolate!
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          baker
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          loves chocolate!
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          baker
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          loves chocolate!
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          baker
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          loves chocolate!
+        </span>
+      </li>
+    </ul>
+  </header>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Organisms/article-header markRutte 1`] = `
+<section
+  class="story"
+>
+  <header
+    class="article-header container"
+  >
+    <div
+      class="article-author"
+    >
+      <img
+        alt="bla bla"
+        class="img--contain article-author__image img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+      />
+       
+      <div
+        class="article-author__meta"
+      >
+        <span
+          class="article-author__name"
+        >
+          Mark Rutte
+        </span>
+         
+        <span
+          class="article-author__published-date"
+        >
+          May 31, 2019
+        </span>
+      </div>
+    </div>
+     
+    <ul
+      class="list article-header__list"
+    >
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          government
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          politics
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          prime minister
+        </span>
+      </li>
+    </ul>
+  </header>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Organisms/article-header noLabels 1`] = `
+<section
+  class="story"
+>
+  <header
+    class="article-header container"
+  >
+    <div
+      class="article-author"
+    >
+      <img
+        alt="bla bla"
+        class="img--contain article-author__image img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+      />
+       
+      <div
+        class="article-author__meta"
+      >
+        <span
+          class="article-author__name"
+        >
+          Mark Rutte
+        </span>
+         
+        <span
+          class="article-author__published-date"
+        >
+          May 31, 2019
+        </span>
+      </div>
+    </div>
+     
+    <ul
+      class="list article-header__list"
+    />
+  </header>
    
   <div
     class="vue-portal-target"
@@ -11932,6 +12222,80 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
         You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
     
                   </p>
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  >
+                    <li
+                      class="list__item list__item--inline"
+                      type="LiInline"
+                    >
+                      <span
+                        class="label"
+                      >
+                        product development
+                      </span>
+                    </li>
+                    <li
+                      class="list__item list__item--inline"
+                      type="LiInline"
+                    >
+                      <span
+                        class="label"
+                      >
+                        architecture
+                      </span>
+                    </li>
+                  </ul>
+                </article>
+              </li>
+            </div>
+            <div
+              class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+            >
+              <li
+                class="list-section-list__item"
+              >
+                <article
+                  class="card-article"
+                  type="CardArticle"
+                >
+                  <a
+                    aria-label="How to successfully introduce 3D printing in your business"
+                    class="anchor-overlay hit-area"
+                    href="https://3d.ultimaker.com/successful-introduction-checklist?utm_source=ultimaker.com&amp;utm_medium=knowledge"
+                    title="How to successfully introduce 3D printing in your business"
+                  />
+                   
+                  <div
+                    class="card-article__image-container"
+                  >
+                    <img
+                      alt="Ultimaker Tough PLA print"
+                      class="img--contain card-article__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="Image"
+                    />
+                  </div>
+                   
+                  <h3
+                    class="card-article__heading"
+                  >
+                    How to successfully introduce 3D printing in your business
+                  </h3>
+                   
+                  <p
+                    class="card-article__description"
+                  >
+                    
+        You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
+    
+                  </p>
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  />
                 </article>
               </li>
             </div>
@@ -11966,6 +12330,10 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
                   </h3>
                    
                   <!---->
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  />
                 </article>
               </li>
             </div>
@@ -11990,6 +12358,10 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
                   </h3>
                    
                   <!---->
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  />
                 </article>
               </li>
             </div>
@@ -12035,6 +12407,80 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
         You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
     
                   </p>
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  >
+                    <li
+                      class="list__item list__item--inline"
+                      type="LiInline"
+                    >
+                      <span
+                        class="label"
+                      >
+                        product development
+                      </span>
+                    </li>
+                    <li
+                      class="list__item list__item--inline"
+                      type="LiInline"
+                    >
+                      <span
+                        class="label"
+                      >
+                        architecture
+                      </span>
+                    </li>
+                  </ul>
+                </article>
+              </li>
+            </div>
+            <div
+              class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+            >
+              <li
+                class="list-section-list__item"
+              >
+                <article
+                  class="card-article"
+                  type="CardArticle"
+                >
+                  <a
+                    aria-label="How to successfully introduce 3D printing in your business"
+                    class="anchor-overlay hit-area"
+                    href="https://3d.ultimaker.com/successful-introduction-checklist?utm_source=ultimaker.com&amp;utm_medium=knowledge"
+                    title="How to successfully introduce 3D printing in your business"
+                  />
+                   
+                  <div
+                    class="card-article__image-container"
+                  >
+                    <img
+                      alt="Ultimaker Tough PLA print"
+                      class="img--contain card-article__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="Image"
+                    />
+                  </div>
+                   
+                  <h3
+                    class="card-article__heading"
+                  >
+                    How to successfully introduce 3D printing in your business
+                  </h3>
+                   
+                  <p
+                    class="card-article__description"
+                  >
+                    
+        You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
+    
+                  </p>
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  />
                 </article>
               </li>
             </div>
@@ -12069,6 +12515,10 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
                   </h3>
                    
                   <!---->
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  />
                 </article>
               </li>
             </div>
@@ -12114,6 +12564,80 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
         You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
     
                   </p>
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  >
+                    <li
+                      class="list__item list__item--inline"
+                      type="LiInline"
+                    >
+                      <span
+                        class="label"
+                      >
+                        product development
+                      </span>
+                    </li>
+                    <li
+                      class="list__item list__item--inline"
+                      type="LiInline"
+                    >
+                      <span
+                        class="label"
+                      >
+                        architecture
+                      </span>
+                    </li>
+                  </ul>
+                </article>
+              </li>
+            </div>
+            <div
+              class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
+            >
+              <li
+                class="list-section-list__item"
+              >
+                <article
+                  class="card-article"
+                  type="CardArticle"
+                >
+                  <a
+                    aria-label="How to successfully introduce 3D printing in your business"
+                    class="anchor-overlay hit-area"
+                    href="https://3d.ultimaker.com/successful-introduction-checklist?utm_source=ultimaker.com&amp;utm_medium=knowledge"
+                    title="How to successfully introduce 3D printing in your business"
+                  />
+                   
+                  <div
+                    class="card-article__image-container"
+                  >
+                    <img
+                      alt="Ultimaker Tough PLA print"
+                      class="img--contain card-article__image img--loading"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      type="Image"
+                    />
+                  </div>
+                   
+                  <h3
+                    class="card-article__heading"
+                  >
+                    How to successfully introduce 3D printing in your business
+                  </h3>
+                   
+                  <p
+                    class="card-article__description"
+                  >
+                    
+        You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
+    
+                  </p>
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  />
                 </article>
               </li>
             </div>
@@ -12148,6 +12672,10 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
                   </h3>
                    
                   <!---->
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  />
                 </article>
               </li>
             </div>
@@ -12172,6 +12700,10 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
                   </h3>
                    
                   <!---->
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  />
                 </article>
               </li>
             </div>
@@ -12217,6 +12749,31 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
         You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
     
                   </p>
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  >
+                    <li
+                      class="list__item list__item--inline"
+                      type="LiInline"
+                    >
+                      <span
+                        class="label"
+                      >
+                        product development
+                      </span>
+                    </li>
+                    <li
+                      class="list__item list__item--inline"
+                      type="LiInline"
+                    >
+                      <span
+                        class="label"
+                      >
+                        architecture
+                      </span>
+                    </li>
+                  </ul>
                 </article>
               </li>
             </div>
@@ -12251,6 +12808,10 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
                   </h3>
                    
                   <!---->
+                   
+                  <ul
+                    class="list card-article__labels-list"
+                  />
                 </article>
               </li>
             </div>
@@ -12388,7 +12949,7 @@ exports[`Storyshots organisms/overview cardProducts 1`] = `
                   </h3>
                    
                   <ul
-                    class="list card-product__list"
+                    class="list card-product__labels-list"
                   >
                     <li
                       class="list__item list__item--inline"
@@ -12472,7 +13033,7 @@ exports[`Storyshots organisms/overview cardProducts 1`] = `
                   </h3>
                    
                   <ul
-                    class="list card-product__list"
+                    class="list card-product__labels-list"
                   >
                     <li
                       class="list__item list__item--inline"
@@ -12596,7 +13157,7 @@ exports[`Storyshots organisms/overview cardProducts 1`] = `
                   </h3>
                    
                   <ul
-                    class="list card-product__list"
+                    class="list card-product__labels-list"
                   >
                     <li
                       class="list__item list__item--inline"
@@ -12680,7 +13241,7 @@ exports[`Storyshots organisms/overview cardProducts 1`] = `
                   </h3>
                    
                   <ul
-                    class="list card-product__list"
+                    class="list card-product__labels-list"
                   >
                     <li
                       class="list__item list__item--inline"
@@ -12802,7 +13363,7 @@ exports[`Storyshots organisms/overview cardProducts 1`] = `
                   </h3>
                    
                   <ul
-                    class="list card-product__list"
+                    class="list card-product__labels-list"
                   >
                     <li
                       class="list__item list__item--inline"
@@ -12886,7 +13447,7 @@ exports[`Storyshots organisms/overview cardProducts 1`] = `
                   </h3>
                    
                   <ul
-                    class="list card-product__list"
+                    class="list card-product__labels-list"
                   />
                 </article>
               </li>
@@ -12927,7 +13488,7 @@ exports[`Storyshots organisms/overview cardProducts 1`] = `
                   </h3>
                    
                   <ul
-                    class="list card-product__list"
+                    class="list card-product__labels-list"
                   />
                 </article>
               </li>
@@ -14183,7 +14744,7 @@ exports[`Storyshots templates/article default 1`] = `
             <span
               class="article-author__name"
             >
-              Jan de Groot
+              Mark Rutte
             </span>
              
             <span
@@ -14193,6 +14754,41 @@ exports[`Storyshots templates/article default 1`] = `
             </span>
           </div>
         </div>
+         
+        <ul
+          class="list article-header__list"
+        >
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              government
+            </span>
+          </li>
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              politics
+            </span>
+          </li>
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              prime minister
+            </span>
+          </li>
+        </ul>
       </header>
        
       <section
@@ -15500,7 +16096,7 @@ exports[`Storyshots templates/article noIntro 1`] = `
           class="article-author"
         >
           <img
-            alt="bla bla"
+            alt="Jan De Groot"
             class="img--contain article-author__image img--loading"
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
@@ -15522,6 +16118,91 @@ exports[`Storyshots templates/article noIntro 1`] = `
             </span>
           </div>
         </div>
+         
+        <ul
+          class="list article-header__list"
+        >
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              baker
+            </span>
+          </li>
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              loves chocolate!
+            </span>
+          </li>
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              baker
+            </span>
+          </li>
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              loves chocolate!
+            </span>
+          </li>
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              baker
+            </span>
+          </li>
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              loves chocolate!
+            </span>
+          </li>
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              baker
+            </span>
+          </li>
+          <li
+            class="list__item list__item--inline"
+            type="LiInline"
+          >
+            <span
+              class="label"
+            >
+              loves chocolate!
+            </span>
+          </li>
+        </ul>
       </header>
        
       <section
