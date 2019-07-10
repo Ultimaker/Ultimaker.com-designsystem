@@ -7,7 +7,7 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/overview.data';
 import { knobsFormat } from './overview.knobs-format';
 
-const getStory = type => () => {
+const getStory = (type) => () => {
     const knobs = getKnobs(data[type], knobsFormat);
 
     return {

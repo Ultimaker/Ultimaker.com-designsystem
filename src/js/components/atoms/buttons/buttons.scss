@@ -80,8 +80,7 @@ input[type="submit"] {
     &:hover,
     &:focus {
         &:before {
-            border-color: transparent transparent
-                lighten($um-blue, $tintHoverFocus) transparent; // #3f86f2
+            border-color: transparent transparent lighten($um-blue, $tintHoverFocus) transparent; // #3f86f2
         }
     }
 }

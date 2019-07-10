@@ -17,7 +17,7 @@ export class ArticleHeader extends Vue implements ArticleHeaderProps {
         let properties: any = [];
 
         if (this.labels) {
-            properties = this.labels.map(property => ({
+            properties = this.labels.map((property) => ({
                 item: {
                     item: {
                         item: property,
