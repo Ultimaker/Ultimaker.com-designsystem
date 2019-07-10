@@ -36,7 +36,7 @@
     margin-bottom: $buildingUnit * 2;
 }
 
-.card-article__list {
+.card-article__labels-list {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -50,9 +50,9 @@
 
     // offset margin-right on the list items in the last column of the flexbox
     margin-left: -$buildingUnit / 2;
+}
 
-    .list__item {
-        line-height: 15px;
-        margin-right: $buildingUnit / 2;
-    }
+.card-article__labels-list .list__item {
+    line-height: 15px;
+    margin-right: $buildingUnit / 2;
 }
