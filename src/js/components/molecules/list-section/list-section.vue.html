@@ -1,4 +1,4 @@
-<section class="list-section" :class="defineCardTypesClass()">
+<section class="list-section">
     <template v-if="title">
         <header class="list-section__header">
             <h3 class="list-section__title">{{ title }}
@@ -26,39 +26,23 @@
             </template>
         </header>
     </template>
-    <ul class="list-section-list" v-if="cards && cards.length > 0" :aria-label="title">
-        <div class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row">
-            <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                 v-for="(card, index) in cards"
-                 :key="index"
-                 v-if="index < showMax">
-                <li ref="visible" class="list-section-list__item">
-                    <component :is="card.type" v-bind="card"/>
-                </li>
-            </div>
-        </div>
-        <transition-group @before-enter="beforeEnter"
-                          @enter="enter"
-                          tag="div"
-                          :css="false"
-                          v-if="cards.length > showMax"
-                          class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row list-section--hidden">
-            <div class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
-                 v-for="(card, index) in cards"
-                 v-if="index >= showMax"
-                 v-show="showHiddenItems"
-                 :key="card.title + index"
-                 :data-index="index">
-                <li class="list-section-list__item">
-                    <component :is="card.type" v-bind="card"/>
-                </li>
-            </div>
-        </transition-group>
-    </ul>
-    <footer class="list-section__footer"
-            v-if="cards.length > showMax && showMax && !showHiddenItems">
-        <button @click="showHidden"
-                class="button--secondary list-section__footer__button">{{ showCount() }}
+
+    <transition-group class="list-section__container" tag="ul" @before-enter="beforeEnter"  @enter="enter">
+        <li  v-for="(chunk, index) in chunks" :key="index" class="list-section__row" v-show="index < visibleChunks">
+            <component v-if="chunk && chunk.length"
+                    class="list-section__item"
+                    :is="card.type"
+                    :key="i"
+                    v-bind="card"
+                    v-for="(card, i) in chunk" />
+        </li>
+    </transition-group>
+
+    <footer class="list-section__footer">
+        <button @click="limit && limit.expandAmount ? showChunk() : showAll()"
+                v-show="showButton()"
+                class="button--secondary list-section__footer__button">
+            {{ showLabel() }}
         </button>
     </footer>
 </section>
