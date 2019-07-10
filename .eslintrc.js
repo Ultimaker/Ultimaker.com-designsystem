@@ -27,6 +27,7 @@ module.exports = {
         exports: true,
     },
     rules: {
+        'arrow-parens': ['off'],
         'class-methods-use-this': 'off',
         'global-require': 'off',
         indent: ['error', 4, { SwitchCase: 1 }],
