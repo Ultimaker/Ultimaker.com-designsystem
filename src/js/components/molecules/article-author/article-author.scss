@@ -21,6 +21,11 @@
         height: $buildingUnit * 4;
         width: $buildingUnit * 4;
         border-radius: 100%;
-        margin: 0  $buildingUnit;
+
+        @include min-tablet {
+            margin-left: $buildingUnit;
+        }
+
+        margin-right: $buildingUnit;
     }
 }
