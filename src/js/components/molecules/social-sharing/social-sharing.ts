@@ -3,7 +3,8 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import WithRender from './social-sharing.vue.html';
 import { generateSocialSharingUrl } from '../../../utils/generate-social-sharing-url';
-import BrowserCapabilities from '../../../utils/browser-capabilities';
+
+const protocolAndHost = 'https://www.ultimaker.com';
 
 @WithRender
 @Component({
@@ -11,6 +12,8 @@ import BrowserCapabilities from '../../../utils/browser-capabilities';
 })
 
 export class SocialSharing extends Vue {
+    $route;
+
     get items() {
         return [
             {
@@ -32,9 +35,7 @@ export class SocialSharing extends Vue {
     }
 
     url({ type }) {
-        const url = BrowserCapabilities.isBrowser
-            ? window.location.href
-            : '#';
+        const url = `${protocolAndHost}${this.$route.fullPath}`;
 
         return generateSocialSharingUrl(url, type);
     }
