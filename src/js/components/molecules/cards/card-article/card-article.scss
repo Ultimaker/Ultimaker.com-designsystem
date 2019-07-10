@@ -8,6 +8,13 @@
     border: 1px solid $colorGrayLight;
 }
 
+.card-article__description {
+    font-size: 14px;
+    margin-bottom: $buildingUnit;
+    padding-left: $buildingUnit;
+    padding-right: $buildingUnit;
+}
+
 .card-article__heading {
     margin-bottom: $buildingUnit;
     padding-left: 13px;
@@ -29,9 +36,23 @@
     margin-bottom: $buildingUnit * 2;
 }
 
-.card-article__description {
-    font-size: 14px;
-    margin-bottom: $buildingUnit;
-    padding-left: $buildingUnit;
-    padding-right: $buildingUnit;
+.card-article__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    padding-right: 4px;
+    margin-bottom: $buildingUnit / 2;
+
+    // offset margin-bottom on the list items in the last row of the flexbox
+    margin-top: -$buildingUnit / 2;
+
+    // offset margin-right on the list items in the last column of the flexbox
+    margin-left: -$buildingUnit / 2;
+
+    .list__item {
+        line-height: 15px;
+        margin-right: $buildingUnit / 2;
+    }
 }

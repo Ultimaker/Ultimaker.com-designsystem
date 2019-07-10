@@ -11,6 +11,30 @@ import WithRender from './card-article.vue.html';
 })
 
 export class CardArticle extends CardBase implements CardArticleProps {
-    @Prop({ type: String }) description?: CardArticleProps['description'];
-    @Prop({ type: String }) url?: CardArticleProps['url'];
+    @Prop({ type: String }) description!: CardArticleProps['description'];
+    @Prop({ type: Array }) labels?: CardArticleProps['labels'];
+    @Prop({ type: String }) url!: CardArticleProps['url'];
+
+    get listItems(): object {
+        let properties:any = [];
+
+        if (this.labels) {
+            properties = this.labels.map(
+                property => ({
+                    item: {
+                        item: {
+                            item: property,
+                        },
+                        type: 'SpanLabel',
+                    },
+                    type: 'LiInline',
+                }),
+            );
+        }
+
+        return {
+            items: properties,
+            type: 'LiInline',
+        };
+    }
 }
