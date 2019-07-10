@@ -1,4 +1,7 @@
-export default {
+/** @format */
+
+export const knobsFormat = {
     author: {},
+    labels: [],
     publishedDate: '',
 };

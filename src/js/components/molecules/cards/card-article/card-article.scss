@@ -42,7 +42,7 @@
     flex-wrap: wrap;
     align-content: space-between;
 
-    padding-right: 4px;
+    padding-right: $buildingUnit / 3;
     margin-bottom: $buildingUnit / 2;
 
     // offset margin-bottom on the list items in the last row of the flexbox

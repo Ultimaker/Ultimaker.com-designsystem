@@ -1,14 +1,11 @@
+/** @format */
+
+import { janDeGroot } from 'components/organisms/article-header/data/examples/jan-de-groot';
+import { markRutte } from 'components/organisms/article-header/data/examples/mark-rutte';
+import { noLabels } from 'components/organisms/article-header/data/examples/no-labels';
+
 export const data = {
-    default: {
-        author: {
-            image: {
-                alt: 'bla bla',
-                url: '/generator/svg/1500/400/000022/FFFFFF',
-                mimeType: 'image/svg+xml',
-                focusArea: 'center',
-            },
-            name: 'Jan de Groot',
-        },
-        publishedDate: 'May 31, 2019',
-    },
+    janDeGroot,
+    markRutte,
+    noLabels,
 };

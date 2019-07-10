@@ -1,3 +1,5 @@
+/** @format */
+
 import 'babel-polyfill';
 import { build } from 'vuenit';
 
