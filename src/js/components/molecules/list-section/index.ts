@@ -1,2 +1,3 @@
-import ListSection from './list-section';
-export default ListSection;
+/** @format */
+
+export { ListSection as default } from './list-section';

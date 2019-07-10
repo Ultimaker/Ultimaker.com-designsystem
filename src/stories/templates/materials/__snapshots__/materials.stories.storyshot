@@ -1413,17 +1413,22 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
           </header>
            
           <section
-            class="list-section list-section--cards"
+            class="list-section"
             type="list-section"
           >
             <!---->
              
             <ul
-              class="list-section-list"
+              class="list-section__container"
+            />
+             
+            <footer
+              class="list-section__footer"
             >
-              <div
-                class="flexgrid flexgrid--gutter flexgrid--mobile-xl-row"
+              <button
+                class="button--secondary list-section__footer__button"
               >
+<<<<<<< HEAD
                 <div
                   class="flexgrid__cell--md-4 flexgrid__cell--xs-6"
                 >
@@ -2012,6 +2017,13 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             </ul>
              
             <!---->
+=======
+                
+            Show all (7)
+        
+              </button>
+            </footer>
+>>>>>>> feat(list-section): add show more functionality
           </section>
            
           <footer
