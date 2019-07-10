@@ -1,10 +1,9 @@
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import { Power3, TweenLite } from 'gsap';
-import Defaults from 'constants/defaults';
+import { Component, Prop, Mixins } from 'vue-property-decorator';
 
 import ViewportUtil from 'utils/viewport';
-import { unique } from 'utils/functions';
 import BrowserCapabilities from 'utils/browser-capabilities';
+
+import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
 
 import { ListSection as IListSection } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/sections/ListSection';
 import Events from 'constants/events';
@@ -15,37 +14,133 @@ import WithRender from './list-section.vue.html';
     name: 'ListSection',
 })
 
-export default class ListSection extends Vue implements IListSection {
+export class ListSection extends Mixins(StepRowAnimation) implements IListSection {
     @Prop({ type: String, required: false }) title?: IListSection['title'];
     @Prop({ type: Array, required: true }) cards!: IListSection['cards'];
     @Prop({ type: Object, required: false }) tooltip?: IListSection['tooltip'];
     @Prop({ type: Object, required: false }) limit?: IListSection['limit'];
-    @Prop({ type: Object, required: false }) expand?: IListSection['expand'];
 
-    cardTransitionDuration: number = Defaults.defaultDuration;
-    cardOffset: number = Defaults.buildingUnit * 5;
-
-    showHiddenItems: boolean = false;
+    viewportUtil: ViewportUtil = new ViewportUtil();
     visibleTooltip: boolean = false;
 
-    showMax: number = Number.MAX_SAFE_INTEGER;
-
-    lastTopValue: number = 0;
-    delayIncrement: number = 0.1;
-    rowIndex: number = 0;
-    increment: number = 1;
-
-    $emitPublic;
     $route;
-    viewportUtil: ViewportUtil = new ViewportUtil();
+    $emitPublic;
 
-    defineCardTypesClass() {
-        if (this.cards && this.cards.length) {
-            // @ts-ignore
-            const values = unique(this.cards.map((card:any) => card.type.toLowerCase()));
-            return values.map(val => (val.match('card') ? 'list-section--cards' : 'list-section--blocks'));
+    showMax: number = 6;
+    expanded: boolean = false;
+
+    chunks: object[] = [];
+    chunkSize: number = 3;
+    chunkIndex: number = 0;
+    visibleChunks: number = 0;
+
+    createChunks() {
+        this.chunkIndex = 0;
+        this.chunks = [];
+
+        while (this.chunkIndex < this.cards.length) {
+            this.chunks.push(this.cards.slice(this.chunkIndex, this.chunkSize + this.chunkIndex));
+            this.chunkIndex += this.chunkSize;
         }
+    }
+
+    handleResize(): void {
+        const oldChunkSize = this.chunkSize;
+
+        if (this.viewportUtil.isMobile) {
+            this.showMax = (
+                this.limit && typeof this.limit.smallScreen === 'number' ? this.limit.smallScreen : Number.MAX_SAFE_INTEGER
+            );
+            this.chunkSize = 1;
+        } else if (this.viewportUtil.isMobileXl) {
+            this.showMax = (
+                this.limit && typeof this.limit.smallScreen === 'number' ? this.limit.smallScreen : Number.MAX_SAFE_INTEGER
+            );
+            this.chunkSize = 2;
+        } else {
+            this.showMax = (
+                this.limit && typeof this.limit.largeScreen === 'number' ? this.limit.largeScreen : Number.MAX_SAFE_INTEGER
+            );
+            this.chunkSize = 3;
+        }
+
+        if (oldChunkSize !== this.chunkSize) {
+            this.createChunks();
+        }
+
+        if (!this.expanded) {
+            this.visibleChunks = Math.ceil(this.showMax / this.chunkSize);
+        }
+    }
+
+    async mounted() {
+        if (!BrowserCapabilities.isBrowser) {
+            return;
+        }
+
+        await this.viewportUtil.addResizeHandler(this.handleResize);
+        await this.viewportUtil.triggerResize();
+        await this.handleResize();
+        this.createChunks();
+    }
+
+    showButton(): boolean {
+        if (this.limit &&
+            !this.limit.expandAmount &&
+            this.expanded) {
+            return false;
+        }
+
+        if (this.expanded &&
+            this.chunks.length === this.visibleChunks) {
+            return false;
+        }
+
+        return true;
+    }
+
+    showAll(): void {
+        this.expanded = true;
+        this.visibleChunks = Number.MAX_SAFE_INTEGER;
+    }
+
+    showChunk(): void {
+        this.expanded = true;
+        if (this.limit && this.limit.expandAmount) {
+            this.visibleChunks = this.visibleChunks + Math.ceil(this.limit.expandAmount / this.chunkSize);
+        }
+    }
+
+    showLabel(): string {
+        if (this.limit &&
+            this.limit.expand &&
+            this.limit.expandAmount) {
+            const { label } = this.limit.expand;
+
+            return label;
+        }
+
+        if (this.limit &&
+            this.limit.expand &&
+            !this.limit.expandAmount) {
+            const { label } = this.limit.expand;
+
+            return `${label} (${this.cards.length})`;
+        }
+
         return '';
+    }
+
+    tooltipVisible(): boolean {
+        return this.visibleTooltip;
+    }
+
+    hideTooltip(): void {
+        this.visibleTooltip = false;
+    }
+
+    toggleTooltip(): void {
+        this.visibleTooltip = !this.visibleTooltip;
     }
 
     get clickEventType() {
@@ -53,8 +148,10 @@ export default class ListSection extends Vue implements IListSection {
     }
 
     get clickEventData() {
-        if (this.expand && this.expand.clickEvent) {
-            const { clickEvent } = this.expand;
+        if (this.limit &&
+            this.limit.expand &&
+            this.limit.expand.clickEvent) {
+            const { clickEvent } = this.limit.expand;
 
             return {
                 dataType: clickEvent.name,
@@ -67,98 +164,16 @@ export default class ListSection extends Vue implements IListSection {
         return null;
     }
 
-    tooltipVisible() {
-        return this.visibleTooltip;
-    }
-
-    hideTooltip() {
-        this.visibleTooltip = false;
-    }
-
-    toggleTooltip() {
-        this.visibleTooltip = !this.visibleTooltip;
-    }
-
-    showCount(): string {
-        const { label } = this.limit && this.limit.expand ? this.limit.expand : { label: '' };
-
-        if (!this.showHiddenItems) {
-            return `${label} (${this.cards.length})`;
-        }
-
-        return label;
-    }
-
     triggerEventClick(): void {
-        if (this.expand && this.expand.clickEvent) {
+        if (this.limit &&
+            this.limit.expand &&
+            this.limit.expand.clickEvent) {
             try {
                 this.$emitPublic(this.clickEventType, this.clickEventData);
-                // eslint-disable-next-line no-empty
-            } catch (e) {}
+            } catch (e) {
+                console.warn(e);
+            }
         }
-    }
-
-    showHidden(): void {
-        this.triggerEventClick();
-        this.showHiddenItems = true;
-    }
-
-    isNewRow(topValue: number): boolean {
-        return this.lastTopValue !== topValue;
-    }
-
-    addRow(topValue: number): void {
-        this.rowIndex = this.rowIndex + this.increment;
-        this.lastTopValue = topValue;
-    }
-
-    beforeEnter(el: HTMLElement): void {
-        TweenLite.set(el, { opacity: 0, y: this.cardOffset });
-    }
-
-    enter(el: HTMLElement, done: boolean): void {
-        const elTopValue: number = el.getBoundingClientRect().top;
-
-        if (this.isNewRow(elTopValue)) {
-            this.addRow(elTopValue);
-        }
-
-        TweenLite.fromTo(el, this.cardTransitionDuration, {
-            opacity: 0,
-            y: this.cardOffset,
-        }, {
-            opacity: 1,
-            y: 0,
-            ease: Power3.easeOut,
-            onComplete: done,
-            delay: this.rowIndex * this.delayIncrement,
-        });
-    }
-
-    handleResize(): void {
-        if (!this.showHiddenItems && this.viewportUtil.isMobile) {
-            this.showMax = (
-                this.limit && typeof this.limit.smallScreen === 'number' ? this.limit.smallScreen : Number.MAX_SAFE_INTEGER
-            );
-        } else {
-            this.showMax = (
-                this.limit && typeof this.limit.largeScreen === 'number' ? this.limit.largeScreen : Number.MAX_SAFE_INTEGER
-            );
-        }
-    }
-
-    mounted(): void {
-        if (!BrowserCapabilities.isBrowser) {
-            return;
-        }
-
-        this.viewportUtil.addResizeHandler(this.handleResize);
-        this.handleResize();
-        this.viewportUtil.triggerResize();
-
-        setTimeout(() => {
-            this.handleResize();
-        }, 100);
     }
 
     beforeDestroy(): void {

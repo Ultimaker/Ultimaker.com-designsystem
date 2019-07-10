@@ -1,3 +1,5 @@
+import v5 from 'uuid';
+
 export class UniqId {
     static install(vue) {
         Object.defineProperty(vue.prototype, 'uniqId', {
@@ -7,7 +9,7 @@ export class UniqId {
                     return 'static_id';
                 }
 
-                return this._uid;
+                return v5();
             },
         });
     }
