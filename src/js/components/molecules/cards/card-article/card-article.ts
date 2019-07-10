@@ -9,27 +9,24 @@ import WithRender from './card-article.vue.html';
 @Component({
     name: 'CardArticle',
 })
-
 export class CardArticle extends CardBase implements CardArticleProps {
     @Prop({ type: String }) description!: CardArticleProps['description'];
     @Prop({ type: Array }) labels?: CardArticleProps['labels'];
     @Prop({ type: String }) url!: CardArticleProps['url'];
 
     get listItems(): object {
-        let properties:any = [];
+        let properties: any = [];
 
         if (this.labels) {
-            properties = this.labels.map(
-                property => ({
+            properties = this.labels.map((property) => ({
+                item: {
                     item: {
-                        item: {
-                            item: property,
-                        },
-                        type: 'SpanLabel',
+                        item: property,
                     },
-                    type: 'LiInline',
-                }),
-            );
+                    type: 'SpanLabel',
+                },
+                type: 'LiInline',
+            }));
         }
 
         return {

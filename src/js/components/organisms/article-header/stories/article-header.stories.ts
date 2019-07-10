@@ -7,7 +7,7 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/article-header.data';
 import { knobsFormat } from './article-header.knobs-format';
 
-const getStory = type => () => {
+const getStory = (type) => () => {
     const knobs = getKnobs(data[type], knobsFormat);
 
     return {

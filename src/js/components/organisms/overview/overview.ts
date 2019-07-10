@@ -8,7 +8,6 @@ import WithRender from './overview.vue.html';
 @Component({
     name: 'Overview',
 })
-
 export class Overview extends Vue implements OverviewProps {
     @Prop({ type: Object, required: false }) ctas?: OverviewProps['ctas'];
     @Prop({ type: Array, required: true }) sections!: OverviewProps['sections'];
