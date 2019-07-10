@@ -3,6 +3,7 @@ import { scheduleAnAppointment } from 'components/atoms/content-button/data/exam
 import { introduce } from 'components/molecules/cards/card-article/data/examples/introduce';
 import { noDescription } from 'components/molecules/cards/card-article/data/examples/no-description';
 import { noImageNoDescription } from 'components/molecules/cards/card-article/data/examples/no-image-no-description';
+import { noLabels } from 'components/molecules/cards/card-article/data/examples/no-labels';
 
 export const cardArticles = {
     type: 'overview',
@@ -27,11 +28,14 @@ export const cardArticles = {
             },
             cards: [
                 introduce,
+                noLabels,
                 noDescription,
                 noImageNoDescription,
                 introduce,
+                noLabels,
                 noDescription,
                 introduce,
+                noLabels,
                 noDescription,
                 noImageNoDescription,
                 introduce,

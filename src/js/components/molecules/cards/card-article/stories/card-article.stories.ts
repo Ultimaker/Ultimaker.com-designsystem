@@ -15,6 +15,7 @@ const getStory = type => () => {
             clickEvent: { default: knobs.clickEvent },
             description: { default: knobs.description },
             image: { default: knobs.image },
+            labels: { default: knobs.labels },
             title: { default: knobs.title },
             url: { default: knobs.url },
         },
