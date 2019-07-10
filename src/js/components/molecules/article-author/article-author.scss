@@ -1,6 +1,7 @@
 .article-author {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 
     &__meta{
         display: flex;

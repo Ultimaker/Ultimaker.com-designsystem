@@ -1,4 +1,21 @@
+/** @format */
+
+@import "~scss/settings/_variables.scss";
+
 .article-header {
+    display: flex;
     padding-top: ($buildingUnit * 2);
     padding-bottom: ($buildingUnit * 2);
+}
+
+.article-header__list {
+    flex-grow: 1;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.article-header__list .list__item {
+    padding-top: $buildingUnit / 3;
+    margin-left: $buildingUnit / 2;
+    margin-bottom: 0;
 }
