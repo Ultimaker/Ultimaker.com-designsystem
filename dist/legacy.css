@@ -4610,6 +4610,34 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .main-nav--large .main-nav__toggle {
     display: initial; }
 
+/** @format */
+.um-components .social-sharing {
+  display: flex;
+  justify-content: center;
+  margin: 54px 0; }
+
+.um-components .social-sharing__link {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 6px; }
+  .um-components .social-sharing__link:hover {
+    background-color: #eaeaea;
+    color: #000; }
+  .um-components .social-sharing__link + .social-sharing__link {
+    margin-left: 12px; }
+
+.um-components .social-sharing__text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.um-components .social-sharing__icon {
+  height: 36px;
+  width: 36px; }
+
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
   background-color: #fafafa; }
 

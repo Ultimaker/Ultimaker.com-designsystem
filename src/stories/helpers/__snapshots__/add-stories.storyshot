@@ -2986,6 +2986,61 @@ exports[`Storyshots Molecules/product printer 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/social-sharing default 1`] = `
+<section
+  class="story"
+>
+  <div
+    class="social-sharing"
+    items="[object Object],[object Object],[object Object]"
+  >
+    <a
+      class="social-sharing__link"
+      href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ultimaker.com%2F&source=LinkedIn"
+      target="_blank"
+    >
+      <span
+        class="social-sharing__text"
+      >
+        Share on Linkedin
+      </span>
+       
+      <!---->
+    </a>
+    <a
+      class="social-sharing__link"
+      href="https://www.facebook.com/dialog/share?app_id=620273961411218&display=popup&href=https%3A%2F%2Fwww.ultimaker.com%2F&redirect_uri=https%3A%2F%2Fwww.ultimaker.com%2F"
+      target="_blank"
+    >
+      <span
+        class="social-sharing__text"
+      >
+        Share on Facebook
+      </span>
+       
+      <!---->
+    </a>
+    <a
+      class="social-sharing__link"
+      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.ultimaker.com%2F"
+      target="_blank"
+    >
+      <span
+        class="social-sharing__text"
+      >
+        Share on Twitter
+      </span>
+       
+      <!---->
+    </a>
+  </div>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/tab-table default 1`] = `
 <section
   class="story"
@@ -5748,6 +5803,50 @@ exports[`Storyshots Organisms/article default 1`] = `
             
         </div>
       </section>
+       
+      <div
+        class="social-sharing"
+      >
+        <a
+          class="social-sharing__link"
+          href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ultimaker.com%2F&source=LinkedIn"
+          target="_blank"
+        >
+          <span
+            class="social-sharing__text"
+          >
+            Share on Linkedin
+          </span>
+           
+          <!---->
+        </a>
+        <a
+          class="social-sharing__link"
+          href="https://www.facebook.com/dialog/share?app_id=620273961411218&display=popup&href=https%3A%2F%2Fwww.ultimaker.com%2F&redirect_uri=https%3A%2F%2Fwww.ultimaker.com%2F"
+          target="_blank"
+        >
+          <span
+            class="social-sharing__text"
+          >
+            Share on Facebook
+          </span>
+           
+          <!---->
+        </a>
+        <a
+          class="social-sharing__link"
+          href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.ultimaker.com%2F"
+          target="_blank"
+        >
+          <span
+            class="social-sharing__text"
+          >
+            Share on Twitter
+          </span>
+           
+          <!---->
+        </a>
+      </div>
     </div>
   </section>
    
@@ -6155,6 +6254,50 @@ exports[`Storyshots Organisms/article noIntro 1`] = `
             
         </div>
       </section>
+       
+      <div
+        class="social-sharing"
+      >
+        <a
+          class="social-sharing__link"
+          href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ultimaker.com%2F&source=LinkedIn"
+          target="_blank"
+        >
+          <span
+            class="social-sharing__text"
+          >
+            Share on Linkedin
+          </span>
+           
+          <!---->
+        </a>
+        <a
+          class="social-sharing__link"
+          href="https://www.facebook.com/dialog/share?app_id=620273961411218&display=popup&href=https%3A%2F%2Fwww.ultimaker.com%2F&redirect_uri=https%3A%2F%2Fwww.ultimaker.com%2F"
+          target="_blank"
+        >
+          <span
+            class="social-sharing__text"
+          >
+            Share on Facebook
+          </span>
+           
+          <!---->
+        </a>
+        <a
+          class="social-sharing__link"
+          href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.ultimaker.com%2F"
+          target="_blank"
+        >
+          <span
+            class="social-sharing__text"
+          >
+            Share on Twitter
+          </span>
+           
+          <!---->
+        </a>
+      </div>
     </div>
   </section>
    
@@ -15246,6 +15389,50 @@ exports[`Storyshots templates/article default 1`] = `
             
             </div>
           </section>
+           
+          <div
+            class="social-sharing"
+          >
+            <a
+              class="social-sharing__link"
+              href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ultimaker.com%2F&source=LinkedIn"
+              target="_blank"
+            >
+              <span
+                class="social-sharing__text"
+              >
+                Share on Linkedin
+              </span>
+               
+              <!---->
+            </a>
+            <a
+              class="social-sharing__link"
+              href="https://www.facebook.com/dialog/share?app_id=620273961411218&display=popup&href=https%3A%2F%2Fwww.ultimaker.com%2F&redirect_uri=https%3A%2F%2Fwww.ultimaker.com%2F"
+              target="_blank"
+            >
+              <span
+                class="social-sharing__text"
+              >
+                Share on Facebook
+              </span>
+               
+              <!---->
+            </a>
+            <a
+              class="social-sharing__link"
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.ultimaker.com%2F"
+              target="_blank"
+            >
+              <span
+                class="social-sharing__text"
+              >
+                Share on Twitter
+              </span>
+               
+              <!---->
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -15731,6 +15918,50 @@ exports[`Storyshots templates/article noIntro 1`] = `
             
             </div>
           </section>
+           
+          <div
+            class="social-sharing"
+          >
+            <a
+              class="social-sharing__link"
+              href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ultimaker.com%2F&source=LinkedIn"
+              target="_blank"
+            >
+              <span
+                class="social-sharing__text"
+              >
+                Share on Linkedin
+              </span>
+               
+              <!---->
+            </a>
+            <a
+              class="social-sharing__link"
+              href="https://www.facebook.com/dialog/share?app_id=620273961411218&display=popup&href=https%3A%2F%2Fwww.ultimaker.com%2F&redirect_uri=https%3A%2F%2Fwww.ultimaker.com%2F"
+              target="_blank"
+            >
+              <span
+                class="social-sharing__text"
+              >
+                Share on Facebook
+              </span>
+               
+              <!---->
+            </a>
+            <a
+              class="social-sharing__link"
+              href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.ultimaker.com%2F"
+              target="_blank"
+            >
+              <span
+                class="social-sharing__text"
+              >
+                Share on Twitter
+              </span>
+               
+              <!---->
+            </a>
+          </div>
         </div>
       </section>
     </main>
