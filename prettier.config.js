@@ -1,8 +1,6 @@
 /** @format */
 module.exports = {
-    requirePragma: true,
-    singleQuote: true,
-    trailingComma: 'es5',
+    arrowParens: 'always',
     overrides: [
         {
             files: '*.scss',
@@ -11,4 +9,8 @@ module.exports = {
             },
         },
     ],
+    printWidth: 120,
+    requirePragma: true,
+    singleQuote: true,
+    trailingComma: 'es5',
 };
