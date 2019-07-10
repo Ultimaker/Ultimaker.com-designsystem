@@ -3359,7 +3359,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .article-author {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  flex-shrink: 0; }
   .um-components .article-author__meta {
     display: flex;
     flex-direction: column; }
@@ -3376,7 +3377,10 @@ because both families serve another purpose. Therefore the line-heights will be 
     height: 48px;
     width: 48px;
     border-radius: 100%;
-    margin: 0 12px; }
+    margin-right: 12px; }
+    @media (min-width: 768px) {
+      .um-components .article-author__image {
+        margin-left: 12px; } }
 
 .um-components .article-ctas {
   display: flex;
@@ -3707,6 +3711,12 @@ because both families serve another purpose. Therefore the line-heights will be 
   background-color: #fff;
   border: 1px solid #eaeaea; }
 
+.um-components .card-article__description {
+  font-size: 14px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px; }
+
 .um-components .card-article__heading {
   margin-bottom: 12px;
   padding-left: 13px;
@@ -3725,11 +3735,19 @@ because both families serve another purpose. Therefore the line-heights will be 
   padding-top: 50%;
   margin-bottom: 24px; }
 
-.um-components .card-article__description {
-  font-size: 14px;
-  margin-bottom: 12px;
-  padding-left: 12px;
-  padding-right: 12px; }
+.um-components .card-article__labels-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-right: 4px;
+  margin-bottom: 6px;
+  margin-top: -6px;
+  margin-left: -6px; }
+
+.um-components .card-article__labels-list .list__item, .um-components .card-article__labels-list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .card-article__labels-list li {
+  line-height: 15px;
+  margin-right: 6px; }
 
 .um-components .card-product {
   position: relative;
@@ -3753,7 +3771,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .card-product__image.gray-background {
       background-color: transparent;
       padding: 12px; }
-  .um-components .card-product__list {
+  .um-components .card-product__labels-list {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -3762,7 +3780,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-bottom: 6px;
     margin-top: -6px;
     margin-left: -6px; }
-    .um-components .card-product__list .list__item, .um-components .card-product__list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .card-product__list li {
+    .um-components .card-product__labels-list .list__item, .um-components .card-product__labels-list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .card-product__labels-list li {
       line-height: 15px;
       margin-right: 6px; }
 
@@ -4295,7 +4313,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .article-author {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  flex-shrink: 0; }
   .um-components .article-author__meta {
     display: flex;
     flex-direction: column; }
@@ -4312,7 +4331,10 @@ because both families serve another purpose. Therefore the line-heights will be 
     height: 48px;
     width: 48px;
     border-radius: 100%;
-    margin: 0 12px; }
+    margin-right: 12px; }
+    @media (min-width: 768px) {
+      .um-components .article-author__image {
+        margin-left: 12px; } }
 
 .um-components .article-video {
   position: relative;
@@ -5586,9 +5608,44 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
 .um-components .article:last-of-type {
   margin-bottom: 0; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
 .um-components .article-header {
   padding-top: 24px;
   padding-bottom: 24px; }
+  @media (min-width: 768px) {
+    .um-components .article-header {
+      display: flex; } }
+
+.um-components .article-header__list {
+  margin-top: 6px;
+  margin-left: 36px;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .um-components .article-header__list {
+      flex-grow: 1;
+      text-align: right;
+      margin-top: 0; } }
+
+.um-components .article-header__list .list__item, .um-components .article-header__list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .article-header__list li {
+  padding-top: 4px;
+  margin-left: 6px;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .um-components .article-header__list .list__item, .um-components .article-header__list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .article-header__list li {
+      padding-top: 0;
+      padding-bottom: 4px; } }
 
 .um-components .brands2 {
   padding-top: 48px; }

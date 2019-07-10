@@ -1482,7 +1482,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       </h3>
                        
                       <ul
-                        class="list card-product__list"
+                        class="list card-product__labels-list"
                       >
                         <li
                           class="list__item list__item--inline"
@@ -1566,7 +1566,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       </h3>
                        
                       <ul
-                        class="list card-product__list"
+                        class="list card-product__labels-list"
                       >
                         <li
                           class="list__item list__item--inline"
@@ -1690,7 +1690,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       </h3>
                        
                       <ul
-                        class="list card-product__list"
+                        class="list card-product__labels-list"
                       >
                         <li
                           class="list__item list__item--inline"
@@ -1774,7 +1774,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       </h3>
                        
                       <ul
-                        class="list card-product__list"
+                        class="list card-product__labels-list"
                       >
                         <li
                           class="list__item list__item--inline"
@@ -1896,7 +1896,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       </h3>
                        
                       <ul
-                        class="list card-product__list"
+                        class="list card-product__labels-list"
                       >
                         <li
                           class="list__item list__item--inline"
@@ -1980,7 +1980,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       </h3>
                        
                       <ul
-                        class="list card-product__list"
+                        class="list card-product__labels-list"
                       />
                     </article>
                   </li>
@@ -2021,7 +2021,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                       </h3>
                        
                       <ul
-                        class="list card-product__list"
+                        class="list card-product__labels-list"
                       />
                     </article>
                   </li>
