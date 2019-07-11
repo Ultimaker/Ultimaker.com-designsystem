@@ -795,24 +795,6 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 </span>
               </a>
             </li>
-             
-            <li
-              class="sys-nav__item"
-            >
-              <a
-                class="sys-nav__link"
-                role="button"
-                tabindex="0"
-              >
-                <!---->
-                 
-                <span
-                  class="sys-nav__label sys-nav__label--hidden-sm"
-                >
-                  Search label
-                </span>
-              </a>
-            </li>
           </ul>
         </nav>
          
@@ -869,8 +851,6 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             />
           </svg>
         </button>
-         
-        <!---->
       </div>
     </header>
      
