@@ -12,7 +12,6 @@ import { <%= h.changeCase.pascal(name) %> } from './<%= h.changeCase.paramCase(n
 describe('components', () => {
     describe('<%= h.inflection.pluralize(h.changeCase.lower(type)) %>', () => {
         describe('<%= h.changeCase.paramCase(name) %>', () => {
-
             const mount = build(<%= h.changeCase.pascal(name) %>, { props: {} });
 
             it('should render an <%= h.changeCase.pascal(name) %> component', () => {
@@ -23,9 +22,7 @@ describe('components', () => {
         });
 
         Object.keys(data).forEach((key) => {
-
             describe(`<%= h.changeCase.paramCase(name) %> ${key} props`, () => {
-
                 const props = data[key];
                 const mount = build(<%= h.changeCase.pascal(name) %>, { props });
 
@@ -36,6 +33,5 @@ describe('components', () => {
                 });
             });
         });
-
     });
 });

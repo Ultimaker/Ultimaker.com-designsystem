@@ -10,11 +10,8 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/<%= h.changeCase.paramCase(name) %>.data';
 import knobsFormat from './<%= h.changeCase.paramCase(name) %>.knobs-format';
 
-const getStory = type => () => {
-    const knobs = getKnobs(
-        data[type],
-        knobsFormat,
-    );
+const getStory = (type) => () => {
+    const knobs = getKnobs(data[type], knobsFormat);
 
     return {
         props: {},
