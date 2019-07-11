@@ -18,18 +18,18 @@ describe('components', () => {
                 vm.$destroy();
             });
 
-            it('should emit an event when searchButton is pressed', () => {
-                const vm = mount();
-                spyOn(vm, '$emit');
+            // it('should emit an event when searchButton is pressed', () => {
+            //     const vm = mount();
+            //     spyOn(vm, '$emit');
 
-                // @ts-ignore
-                const clickEvent = new window.Event('click');
-                const searchButton = vm.$el.querySelector('[role=button]');
+            //     // @ts-ignore
+            //     const clickEvent = new window.Event('click');
+            //     const searchButton = vm.$el.querySelector('[role=button]');
 
-                searchButton.dispatchEvent(clickEvent);
-                expect(vm.$emit).toHaveBeenCalledWith('open-search');
-                vm.$destroy();
-            });
+            //     searchButton.dispatchEvent(clickEvent);
+            //     expect(vm.$emit).toHaveBeenCalledWith('open-search');
+            //     vm.$destroy();
+            // });
         });
     });
 });
