@@ -89,8 +89,6 @@ export class ListSection extends Mixins(StepRowAnimation) implements IListSectio
     }
 
     showButton(): boolean {
-        console.log(this.chunks.length, this.visibleChunks);
-
         if (this.limit && !this.limit.expandAmount && this.expanded ) {
             return false;
         }

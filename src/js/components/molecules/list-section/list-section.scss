@@ -67,7 +67,7 @@
 }
 
 .list-section__row--even{
-    @include min-mobile-xl() {
+    @include min-tablet() {
         justify-content: flex-start;
     }
 }
@@ -77,19 +77,27 @@
     flex-basis: calc(100% - #{$buildingUnit / 2});
     min-width: calc(100% - #{$buildingUnit / 2});
 
+    .list-section__row--even & {
+        margin-right:  0;
+    }
+
     @include min-mobile-xl() {
         flex-basis: calc(50% - #{$buildingUnit / 2});
         min-width: calc(50% - #{$buildingUnit / 2});
+
+        .list-section__row--even & {
+            margin-right:  0;
+        }
     }
 
     @include min-tablet() {
         margin-bottom: $buildingUnit * 2;
         flex-basis: calc(33% - #{$buildingUnit});
         min-width: calc(33% - #{$buildingUnit});
-    }
 
-    .list-section__row--even & {
-        margin-right:  $buildingUnit * 2;
+        .list-section__row--even & {
+            margin-right:  $buildingUnit * 2;
+        }
     }
 }
 
