@@ -2,6 +2,7 @@ import { callMeBack } from 'components/atoms/content-button/data/examples/call-m
 import { scheduleAnAppointment } from 'components/atoms/content-button/data/examples/schedule-an-appointment';
 import { data as cards } from 'components/molecules/cards/business-card/data/business-card.data';
 import { mockTooltip } from 'components/atoms/tooltip/data/examples/mock-tooltip';
+import { businessCards as businessCardsExample } from 'components/molecules/list-section/data/examples/business-cards';
 
 export const businessCards = {
     type: 'Overview',
@@ -33,62 +34,6 @@ export const businessCards = {
             ],
             tooltip: mockTooltip,
         },
-        {
-            type: 'ListSection',
-            title: 'Authorized Resellers',
-            limit: {
-                expand: {
-                    label: 'Show',
-                },
-                expandAmount: 6,
-                largeScreen: 6,
-                smallScreen: 3,
-
-            },
-            cards: [
-                cards.makerPoint,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.makerPoint,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.makerPoint,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.makerPoint,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.makerPoint,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.makerPoint,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-                cards.default,
-            ],
-        },
+        businessCardsExample,
     ],
 };
