@@ -4632,7 +4632,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .main-nav--large .main-nav__toggle {
     display: initial; }
 
-<<<<<<< HEAD
 /** @format */
 .um-components .social-sharing {
   display: flex;
@@ -4660,7 +4659,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .social-sharing__icon {
   height: 36px;
   width: 36px; }
-=======
+
 .um-components .list-section + .list-section {
   margin-top: -12px; }
 
@@ -4736,7 +4735,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   display: flex;
   margin-top: 24px;
   margin-bottom: 24px; }
->>>>>>> feat(list-section): add show more functionality
 
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
   background-color: #fafafa; }
