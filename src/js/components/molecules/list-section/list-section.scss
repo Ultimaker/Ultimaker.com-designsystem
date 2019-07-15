@@ -53,6 +53,7 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     @include min-mobile-xl() {
         flex-direction: row;
@@ -62,6 +63,12 @@
     @include min-tablet() {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+.list-section__row--even{
+    @include min-mobile-xl() {
+        justify-content: flex-start;
     }
 }
 
@@ -79,6 +86,10 @@
         margin-bottom: $buildingUnit * 2;
         flex-basis: calc(33% - #{$buildingUnit});
         min-width: calc(33% - #{$buildingUnit});
+    }
+
+    .list-section__row--even & {
+        margin-right:  $buildingUnit * 2;
     }
 }
 

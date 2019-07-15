@@ -30,7 +30,6 @@ export const businessCards = {
                 cards.makerPoint,
                 cards.default,
                 cards.default,
-                cards.default,
             ],
             tooltip: mockTooltip,
         },

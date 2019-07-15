@@ -55,6 +55,5 @@ export const businessCards = {
         cards.default,
         cards.default,
         cards.default,
-        cards.default,
     ],
 };
