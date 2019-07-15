@@ -7,7 +7,7 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/social-sharing.data';
 import knobsFormat from './social-sharing.knobs-format';
 
-const getStory = type => () => {
+const getStory = (type) => () => {
     const knobs = getKnobs(data[type], knobsFormat);
 
     return {

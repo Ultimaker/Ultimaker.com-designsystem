@@ -1,3 +1,8 @@
 /** @format */
 
-export default {};
+export default {
+    cards: [],
+    limit: {},
+    title: '',
+    tooltip: {},
+};

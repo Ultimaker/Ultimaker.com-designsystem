@@ -1,5 +1,7 @@
-.list-section +  .list-section {
-    margin-top: - $buildingUnit;
+/** @format */
+
+.list-section + .list-section {
+    margin-top: -$buildingUnit;
 }
 
 .list-section__header {
@@ -16,7 +18,7 @@
 
 .list-section__count {
     color: $colorGrayDark;
-    font-size: .75em;
+    font-size: 0.75em;
 }
 
 .list-section__info-link {
@@ -43,17 +45,16 @@
         left: $buildingUnit;
     }
 }
-.list-section__container{
+.list-section__container {
     padding: 0;
 }
-.list-section__row{
-   
+.list-section__row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    
-    @include min-mobile-xl() {   
+
+    @include min-mobile-xl() {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -62,8 +63,6 @@
         flex-direction: row;
         justify-content: space-between;
     }
-
-
 }
 
 .list-section__item {
@@ -71,7 +70,7 @@
     flex-basis: calc(100% - #{$buildingUnit / 2});
     min-width: calc(100% - #{$buildingUnit / 2});
 
-    @include min-mobile-xl() {    
+    @include min-mobile-xl() {
         flex-basis: calc(50% - #{$buildingUnit / 2});
         min-width: calc(50% - #{$buildingUnit / 2});
     }
@@ -87,7 +86,7 @@
     margin-top: $buildingUnit * 5;
 }
 
-.list-section__footer{
+.list-section__footer {
     justify-content: center;
     align-items: center;
     display: flex;
