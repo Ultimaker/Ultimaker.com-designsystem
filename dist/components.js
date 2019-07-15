@@ -10908,7 +10908,6 @@ var ListSection = function (_Mixins) {
     }, {
         key: "showButton",
         value: function showButton() {
-            console.log(this.chunks.length, this.visibleChunks);
             if (this.limit && !this.limit.expandAmount && this.expanded) {
                 return false;
             }
