@@ -4703,7 +4703,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: flex-start; }
   @media (min-width: 569px) {
     .um-components .list-section__row {
       flex-direction: row;
@@ -4712,6 +4713,10 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .list-section__row {
       flex-direction: row;
       justify-content: space-between; } }
+
+@media (min-width: 569px) {
+  .um-components .list-section__row--even {
+    justify-content: flex-start; } }
 
 .um-components .list-section__item {
   margin-bottom: 12px;
@@ -4726,6 +4731,8 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-bottom: 24px;
       flex-basis: calc(33% - 12px);
       min-width: calc(33% - 12px); } }
+  .um-components .list-section__row--even .list-section__item {
+    margin-right: 24px; }
 
 .um-components .list-section + .footer-block {
   margin-top: 60px; }
