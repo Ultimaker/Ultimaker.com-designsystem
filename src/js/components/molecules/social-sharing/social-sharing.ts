@@ -10,7 +10,6 @@ const protocolAndHost = 'https://www.ultimaker.com';
 @Component({
     name: 'SocialSharing',
 })
-
 export class SocialSharing extends Vue {
     $route;
 

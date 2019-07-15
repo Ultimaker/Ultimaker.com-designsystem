@@ -2,10 +2,7 @@
 
 const facebookAppId = '620273961411218';
 
-export function generateSocialSharingUrl(
-    url: string,
-    socialNetwork = '',
-): string {
+export function generateSocialSharingUrl(url: string, socialNetwork = ''): string {
     const encodedUrl = encodeURIComponent(url);
 
     switch (socialNetwork) {
