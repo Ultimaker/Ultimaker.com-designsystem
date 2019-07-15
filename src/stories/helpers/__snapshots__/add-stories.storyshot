@@ -1977,7 +1977,57 @@ exports[`Storyshots Molecules/hero-heading title 1`] = `
 </section>
 `;
 
-exports[`Storyshots Molecules/list-section default 1`] = `
+exports[`Storyshots Molecules/list-section businessCards 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="list-section"
+  >
+    <header
+      class="list-section__header"
+    >
+      <h3
+        class="list-section__title"
+      >
+        Authorized Resellers
+                
+        <span
+          class="list-section__count"
+        >
+          (42)
+        </span>
+         
+        <!---->
+      </h3>
+       
+      <!---->
+    </header>
+     
+    <ul
+      class="list-section__container"
+    />
+     
+    <footer
+      class="list-section__footer"
+    >
+      <button
+        class="button--secondary list-section__footer__button"
+      >
+        
+            Show
+        
+      </button>
+    </footer>
+  </section>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/list-section cardProducts 1`] = `
 <section
   class="story"
 >
@@ -1997,7 +2047,7 @@ exports[`Storyshots Molecules/list-section default 1`] = `
         class="button--secondary list-section__footer__button"
       >
         
-            
+            Show all (7)
         
       </button>
     </footer>

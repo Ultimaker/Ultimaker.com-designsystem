@@ -5241,6 +5241,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   height: 36px;
   width: 36px; }
 
+/** @format */
 .list-section + .list-section {
   margin-top: -12px; }
 
@@ -5255,7 +5256,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .list-section__count {
   color: #7f7f7f;
-  font-size: .75em; }
+  font-size: 0.75em; }
 
 .list-section__info-link {
   margin-bottom: 0; }
