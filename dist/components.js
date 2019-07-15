@@ -11000,10 +11000,10 @@ var ListSection = function (_Mixins) {
 
     return ListSection;
 }((0, _vuePropertyDecorator.Mixins)(_stepRowAnimation.StepRowAnimation));
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], ListSection.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], ListSection.prototype, "cards", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ListSection.prototype, "tooltip", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ListSection.prototype, "limit", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ListSection.prototype, "limit", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], ListSection.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ListSection.prototype, "tooltip", void 0);
 exports.ListSection = ListSection = __decorate([_listSectionVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'ListSection'
 })], ListSection);
