@@ -1995,7 +1995,7 @@ exports[`Storyshots Molecules/list-section businessCards 1`] = `
         <span
           class="list-section__count"
         >
-          (42)
+          (41)
         </span>
          
         <!---->
@@ -2013,6 +2013,7 @@ exports[`Storyshots Molecules/list-section businessCards 1`] = `
     >
       <button
         class="button--secondary list-section__footer__button"
+        style="display: none;"
       >
         
             Show
@@ -2045,6 +2046,7 @@ exports[`Storyshots Molecules/list-section cardProducts 1`] = `
     >
       <button
         class="button--secondary list-section__footer__button"
+        style="display: none;"
       >
         
             Show all (7)
@@ -11144,7 +11146,7 @@ exports[`Storyshots organisms/overview businessCards 1`] = `
             <span
               class="list-section__count"
             >
-              (4)
+              (3)
             </span>
              
             <div
@@ -11184,9 +11186,10 @@ exports[`Storyshots organisms/overview businessCards 1`] = `
         >
           <button
             class="button--secondary list-section__footer__button"
+            style="display: none;"
           >
             
-            Show all (4)
+            Show all (3)
         
           </button>
         </footer>
@@ -11206,7 +11209,7 @@ exports[`Storyshots organisms/overview businessCards 1`] = `
             <span
               class="list-section__count"
             >
-              (42)
+              (41)
             </span>
              
             <!---->
@@ -11224,6 +11227,7 @@ exports[`Storyshots organisms/overview businessCards 1`] = `
         >
           <button
             class="button--secondary list-section__footer__button"
+            style="display: none;"
           >
             
             Show
@@ -11323,6 +11327,7 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
         >
           <button
             class="button--secondary list-section__footer__button"
+            style="display: none;"
           >
             
             Show all (13)
@@ -11422,6 +11427,7 @@ exports[`Storyshots organisms/overview cardProducts 1`] = `
         >
           <button
             class="button--secondary list-section__footer__button"
+            style="display: none;"
           >
             
             Show all (7)
@@ -11561,6 +11567,7 @@ exports[`Storyshots organisms/overview contentBlocks 1`] = `
         >
           <button
             class="button--secondary list-section__footer__button"
+            style="display: none;"
           >
             
             Show all (8)
@@ -11623,6 +11630,7 @@ exports[`Storyshots organisms/overview contentBlocks 1`] = `
         >
           <button
             class="button--secondary list-section__footer__button"
+            style="display: none;"
           >
             
             Show all (8)

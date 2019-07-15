@@ -1447,6 +1447,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             >
               <button
                 class="button--secondary list-section__footer__button"
+                style="display: none;"
               >
                 
             Show all (7)

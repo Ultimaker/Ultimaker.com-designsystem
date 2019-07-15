@@ -63,6 +63,7 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
       >
         <button
           class="button--secondary list-section__footer__button"
+          style="display: none;"
         >
           
             

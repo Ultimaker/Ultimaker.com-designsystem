@@ -1010,7 +1010,7 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                 <span
                   class="list-section__count"
                 >
-                  (4)
+                  (3)
                 </span>
                  
                 <div
@@ -1050,9 +1050,10 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
             >
               <button
                 class="button--secondary list-section__footer__button"
+                style="display: none;"
               >
                 
-            Show all (4)
+            Show all (3)
         
               </button>
             </footer>
@@ -1072,7 +1073,7 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                 <span
                   class="list-section__count"
                 >
-                  (42)
+                  (41)
                 </span>
                  
                 <!---->
@@ -1090,6 +1091,7 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
             >
               <button
                 class="button--secondary list-section__footer__button"
+                style="display: none;"
               >
                 
             Show

@@ -30,7 +30,10 @@
     </template>
 
     <transition-group class="list-section__container" tag="ul" @before-enter="beforeEnter"  @enter="enter">
-        <li  v-for="(chunk, index) in chunks" :key="index" class="list-section__row" v-show="index < visibleChunks">
+        <li v-for="(chunk, index) in chunks"
+            :key="index" class="list-section__row"
+            :class="chunk.length % 2 === 0 && 'list-section__row--even'"
+            v-show="index < visibleChunks">
             <component v-if="chunk && chunk.length"
                     class="list-section__item"
                     :is="card.type"
