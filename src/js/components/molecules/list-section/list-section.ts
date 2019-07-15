@@ -89,7 +89,7 @@ export class ListSection extends Mixins(StepRowAnimation) implements IListSectio
     }
 
     showButton(): boolean {
-        if (this.limit && !this.limit.expandAmount && this.expanded ) {
+        if (this.limit && !this.limit.expandAmount && this.expanded) {
             return false;
         }
 
@@ -97,7 +97,7 @@ export class ListSection extends Mixins(StepRowAnimation) implements IListSectio
             return false;
         }
 
-        if(this.chunks.length <= this.visibleChunks) {
+        if (this.chunks.length <= this.visibleChunks) {
             return false;
         }
 
