@@ -11,9 +11,6 @@
 }
 
 .table-compare__table {
-    border: initial; // override table atom
-    border-bottom: 2px solid $colorGray;
-	border-collapse: collapse;
 	position: relative;
 	table-layout: fixed;
     // --number-of-columns is set in the template
@@ -51,12 +48,10 @@
 
 // Column header cells
 .table-compare__table thead th[scope="col"] {
-    border-bottom: 2px solid $colorGray;
     font-weight: normal;
     font-size: 1.5 * $buildingUnit;
     padding: 0 $buildingUnit 2 * $buildingUnit;
     text-align: center;
-    width: initial; // override table atom
     white-space: nowrap;
 
     @include min-desktop {
@@ -73,7 +68,6 @@
 // Row header cells
 .table-compare__table tbody th[scope="row"] {
     @include font-ratio-rhythm(prim-s);
-    border-top: 1px solid $colorGray;
     left: 0;
     position: -webkit-sticky;
     position: sticky;
@@ -87,7 +81,6 @@
 
 // Table body cells
 .table-compare__table tbody td {
-    border-top: 1px solid $colorGray;
     color: $um-blue;
     height: 4 * $buildingUnit;
     padding: 0 0.5 * $buildingUnit;
@@ -98,7 +91,6 @@
 // Table footer cells
 .table-compare__table tfoot th,
 .table-compare__table tfoot td {
-    border-top: 1px solid $colorGray;
     padding: 1.5 * $buildingUnit;
     text-align: center;
 }
