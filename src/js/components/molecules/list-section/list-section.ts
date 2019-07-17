@@ -1,6 +1,6 @@
 /** @format */
 
-import { Component, Prop, Mixins } from 'vue-property-decorator';
+import { Component, Prop, Mixins, Watch } from 'vue-property-decorator';
 
 import ViewportUtil from 'utils/viewport';
 import BrowserCapabilities from 'utils/browser-capabilities';
@@ -35,6 +35,7 @@ export class ListSection extends Mixins(StepRowAnimation) implements IListSectio
     chunkIndex: number = 0;
     visibleChunks: number = 0;
 
+    @Watch('cards')
     createChunks() {
         this.chunkIndex = 0;
         this.chunks = [];
@@ -97,11 +98,7 @@ export class ListSection extends Mixins(StepRowAnimation) implements IListSectio
             return false;
         }
 
-        if (this.chunks.length <= this.visibleChunks) {
-            return false;
-        }
-
-        return true;
+        return !(this.chunks.length <= this.visibleChunks);
     }
 
     showAll(): void {
