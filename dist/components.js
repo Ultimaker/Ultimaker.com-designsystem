@@ -10914,10 +10914,7 @@ var ListSection = function (_Mixins) {
             if (this.expanded && this.chunks.length <= this.visibleChunks) {
                 return false;
             }
-            if (this.chunks.length <= this.visibleChunks) {
-                return false;
-            }
-            return true;
+            return !(this.chunks.length <= this.visibleChunks);
         }
     }, {
         key: "showAll",
@@ -11007,6 +11004,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ListSection.prototype, "limit", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], ListSection.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ListSection.prototype, "tooltip", void 0);
+__decorate([(0, _vuePropertyDecorator.Watch)('cards'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], ListSection.prototype, "createChunks", null);
 exports.ListSection = ListSection = __decorate([_listSectionVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'ListSection'
 })], ListSection);
