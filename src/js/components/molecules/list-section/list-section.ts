@@ -1,49 +1,100 @@
 /** @format */
 
 import { Component, Prop, Mixins, Watch } from 'vue-property-decorator';
-
-import ViewportUtil from 'utils/viewport';
-import BrowserCapabilities from 'utils/browser-capabilities';
-
-import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
-
-import { ListSection as IListSection } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/sections/ListSection';
 import Events from 'constants/events';
+import BrowserCapabilities from 'utils/browser-capabilities';
+import ViewportUtil from 'utils/viewport';
 import WithRender from './list-section.vue.html';
+
+import { ListSectionProps } from 'components/molecules/list-section/list-section.models';
+import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
 
 @WithRender
 @Component({
     name: 'ListSection',
 })
-export class ListSection extends Mixins(StepRowAnimation) implements IListSection {
-    @Prop({ type: Array, required: true }) cards!: IListSection['cards'];
-    @Prop({ type: Object }) limit?: IListSection['limit'];
-    @Prop({ type: String }) title?: IListSection['title'];
-    @Prop({ type: Object }) tooltip?: IListSection['tooltip'];
+export class ListSection extends Mixins(StepRowAnimation) implements ListSectionProps {
+    @Prop({ type: Array, required: true }) cards!: ListSectionProps['cards'];
+    @Prop({ type: Array }) filterCategories?: ListSectionProps['filter'];
+    @Prop({ type: Object }) limit?: ListSectionProps['limit'];
+    @Prop({ type: String }) title?: ListSectionProps['title'];
+    @Prop({ type: Object }) tooltip?: ListSectionProps['tooltip'];
 
-    viewportUtil: ViewportUtil = new ViewportUtil();
-    visibleTooltip: boolean = false;
-
-    $route;
+    /**
+     * @type PublicEventService.emit
+     */
     $emitPublic;
 
-    showMax: number = 6;
-    expanded: boolean = false;
+    /**
+     * @type PublicEventService.off
+     */
+    $offPublic;
+
+    /**
+     * @type PublicEventService.on
+     */
+    $onPublic;
+
+    $route;
 
     chunks: object[] = [];
     chunkSize: number = 3;
     chunkIndex: number = 0;
+    expanded: boolean = false;
+    filters: object = {};
+    filtersAll: any = [];
+    showMax: number = 6;
+    viewportUtil: ViewportUtil = new ViewportUtil();
     visibleChunks: number = 0;
+    visibleTooltip: boolean = false;
+
+    beforeDestroy(): void {
+        this.$offPublic('filterChange', this.handleFilterChange);
+        this.viewportUtil.removeResizeHandler(this.handleResize);
+    }
+
+    async mounted() {
+        if (!BrowserCapabilities.isBrowser) {
+            return;
+        }
+
+        await this.viewportUtil.addResizeHandler(this.handleResize);
+        await this.viewportUtil.triggerResize();
+        await this.handleResize();
+
+        this.$onPublic('filterChange', this.handleFilterChange);
+        this.createChunks();
+    }
+
+    get filteredCards() {
+        if (this.filtersAll.length) {
+            // @ts-ignore
+            return this.cards.filter((card) => card.labels.some((label) => this.filtersAll.includes(label)));
+        }
+
+        return this.cards;
+    }
 
     @Watch('cards')
     createChunks() {
         this.chunkIndex = 0;
         this.chunks = [];
 
-        while (this.chunkIndex < this.cards.length) {
-            this.chunks.push(this.cards.slice(this.chunkIndex, this.chunkSize + this.chunkIndex));
+        while (this.chunkIndex < this.filteredCards.length) {
+            this.chunks.push(this.filteredCards.slice(this.chunkIndex, this.chunkSize + this.chunkIndex));
             this.chunkIndex += this.chunkSize;
         }
+    }
+
+    handleFilterChange(payload): void {
+        this.filters[payload.category] = payload.filters;
+        this.filtersAll = [];
+
+        Object.keys(this.filters).forEach((category) => {
+            this.filters[category].forEach((value) => this.filtersAll.push(value));
+        });
+
+        this.createChunks();
     }
 
     handleResize(): void {
@@ -76,17 +127,6 @@ export class ListSection extends Mixins(StepRowAnimation) implements IListSectio
         if (!this.expanded) {
             this.visibleChunks = Math.ceil(this.showMax / this.chunkSize);
         }
-    }
-
-    async mounted() {
-        if (!BrowserCapabilities.isBrowser) {
-            return;
-        }
-
-        await this.viewportUtil.addResizeHandler(this.handleResize);
-        await this.viewportUtil.triggerResize();
-        await this.handleResize();
-        this.createChunks();
     }
 
     showButton(): boolean {
@@ -123,7 +163,7 @@ export class ListSection extends Mixins(StepRowAnimation) implements IListSectio
         if (this.limit && this.limit.expand && !this.limit.expandAmount) {
             const { label } = this.limit.expand;
 
-            return `${label} (${this.cards.length})`;
+            return `${label} (${this.filteredCards.length})`;
         }
 
         return '';
@@ -168,9 +208,5 @@ export class ListSection extends Mixins(StepRowAnimation) implements IListSectio
                 console.warn(e);
             }
         }
-    }
-
-    beforeDestroy(): void {
-        this.viewportUtil.removeResizeHandler(this.handleResize);
     }
 }

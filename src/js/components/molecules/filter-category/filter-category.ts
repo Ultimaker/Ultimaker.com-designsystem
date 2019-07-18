@@ -42,16 +42,21 @@ export class FilterCategory extends Vue implements FilterCategoryProps {
         return this.title.toLowerCase().replace(/\s+/g, '-');
     }
 
+    get payload() {
+        return {
+            category: this.category,
+            filters: this.filters,
+        };
+    }
+
     handleFilterChange(payload) {
         if (payload.checked) {
             this.filters.push(payload.value);
         } else {
-            this.filters = this.filters.filter(
-                (filter) => filter !== payload.value,
-            );
+            this.filters = this.filters.filter((filter) => filter !== payload.value);
         }
 
-        this.$emitPublic('filterChange', this.filters);
+        this.$emitPublic('filterChange', this.payload);
     }
 
     resetActive() {
@@ -60,6 +65,6 @@ export class FilterCategory extends Vue implements FilterCategoryProps {
 
     resetFilters() {
         this.filters = [];
-        this.$emitPublic('filterChange', this.filters);
+        this.$emitPublic('filterChange', this.payload);
     }
 }

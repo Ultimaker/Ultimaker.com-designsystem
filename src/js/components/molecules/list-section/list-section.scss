@@ -1,5 +1,7 @@
 /** @format */
 
+@import "~scss/settings/_variables.scss";
+
 .list-section + .list-section {
     margin-top: -$buildingUnit;
 }
@@ -66,7 +68,7 @@
     }
 }
 
-.list-section__row--even{
+.list-section__row--even {
     @include min-tablet() {
         justify-content: flex-start;
     }
@@ -78,7 +80,7 @@
     min-width: calc(100% - #{$buildingUnit / 2});
 
     .list-section__row--even & {
-        margin-right:  0;
+        margin-right: 0;
     }
 
     @include min-mobile-xl() {
@@ -86,7 +88,7 @@
         min-width: calc(50% - #{$buildingUnit / 2});
 
         .list-section__row--even & {
-            margin-right:  0;
+            margin-right: 0;
         }
     }
 
@@ -96,7 +98,7 @@
         min-width: calc(33% - #{$buildingUnit});
 
         .list-section__row--even & {
-            margin-right:  $buildingUnit * 2;
+            margin-right: $buildingUnit * 2;
         }
     }
 }
