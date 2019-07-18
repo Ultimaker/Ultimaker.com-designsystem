@@ -2,6 +2,7 @@ table {
     border: 0;
     border-bottom: 2px solid $colorGray;
     border-collapse: collapse;
+    margin: 0 0 2 * $buildingUnit;
     text-align: left;
     width: 100%;
 }
