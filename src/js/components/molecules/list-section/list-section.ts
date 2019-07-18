@@ -15,7 +15,7 @@ import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animatio
 })
 export class ListSection extends Mixins(StepRowAnimation) implements ListSectionProps {
     @Prop({ type: Array, required: true }) cards!: ListSectionProps['cards'];
-    @Prop({ type: Array }) filterCategories?: ListSectionProps['filter'];
+    @Prop({ type: Array }) filterCategories?: ListSectionProps['filterCategories'];
     @Prop({ type: Object }) limit?: ListSectionProps['limit'];
     @Prop({ type: String }) title?: ListSectionProps['title'];
     @Prop({ type: Object }) tooltip?: ListSectionProps['tooltip'];
