@@ -26,11 +26,12 @@
 @import '~molecules/article-ctas/article-ctas';
 @import '~molecules/article-image/article-image';
 @import '~molecules/article-intro/article-intro';
+@import '~molecules/article-table/article-table';
 @import '~molecules/article-text/article-text';
 @import '~molecules/article-video/article-video';
-@import '~molecules/article-table/article-table';
 
 @import '~molecules/auto-complete/auto-complete';
+
 @import '~molecules/brand/brand';
 @import '~molecules/block-icon/block-icon';
 
@@ -38,36 +39,33 @@
 @import '~molecules/cards/brand-card/brand-card';
 @import '~molecules/cards/business-card/business-card';
 @import "~molecules/cards/card-article/card-article";
+@import '~molecules/cards/card-download/card-download';
 @import "~molecules/cards/card-product/card-product";
-
 @import '~molecules/color/color';
 @import '~molecules/content-block/content-block';
 @import '~molecules/content-toggle/content-toggle';
 @import '~molecules/cta-block/cta-block';
-@import '~molecules/icon-button/icon-button';
-@import '~molecules/list-unordered-limit/list-unordered-limit';
-@import '~molecules/product/product';
-@import '~molecules/tooltip-toggle/tooltip-toggle';
-@import 'content-manageble';
 
-@import '~molecules/tab-table/tab-table';
-@import '~molecules/tab-table-row/tab-table-row';
-@import '~molecules/cards/card-download/card-download';
-@import '~molecules/wizard-step-download-list/wizard-step-download-list';
-@import '~molecules/modal-button/modal-button';
-@import '~molecules/modal-wizard/modal-wizard';
-@import '~molecules/wizard-step-confirmation/wizard-step-confirmation';
-@import '~molecules/article-intro/article-intro';
-@import '~molecules/article-text/article-text';
-@import '~molecules/article-image/article-image';
-@import '~molecules/article-author/article-author';
-@import '~molecules/article-video/article-video';
-@import '~molecules/article-ctas/article-ctas';
+@import '~molecules/filter-category/filter-category';
 @import '~molecules/footer-navigation-category/footer-navigation-category';
-@import '~molecules/main-navigation/main-navigation';
-@import '~molecules/main-navigation-item/main-navigation-item';
-@import '~molecules/social-sharing/social-sharing';
+@import '~molecules/icon-button/icon-button';
 
-
+@import '~molecules/list-unordered-limit/list-unordered-limit';
 @import '~molecules/list-section/list-section';
 
+@import '~molecules/main-navigation/main-navigation';
+@import '~molecules/main-navigation-item/main-navigation-item';
+@import '~molecules/modal-button/modal-button';
+@import '~molecules/modal-wizard/modal-wizard';
+
+@import '~molecules/product/product';
+
+@import '~molecules/social-sharing/social-sharing';
+@import '~molecules/tab-table/tab-table';
+@import '~molecules/tab-table-row/tab-table-row';
+@import '~molecules/tooltip-toggle/tooltip-toggle';
+
+@import '~molecules/wizard-step-confirmation/wizard-step-confirmation';
+@import '~molecules/wizard-step-download-list/wizard-step-download-list';
+
+@import 'content-manageble';
