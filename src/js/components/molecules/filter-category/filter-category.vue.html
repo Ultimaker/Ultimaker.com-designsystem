@@ -1,0 +1,15 @@
+<!-- @format -->
+
+<section class="filter-category">
+    <h4>{{ title }}</h4>
+    <form>
+        <ul class="filter-category__filter-list" ref="filters" @checkboxChange="handleFilterChange">
+            <li><input class="filter-category__reset" :class="resetActive()" type="reset" :value="showAllLabel" @click="resetFilters" /></li>
+            <template v-for="label in labels">
+                <li>
+                    <label-filter :category="category" :label="label" :name="showAllLabel" :value="label" />
+                </li>
+            </template>
+        </ul>
+    </form>
+</section>

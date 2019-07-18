@@ -1,0 +1,42 @@
+/** @format */
+
+@import "~scss/settings/_variables.scss";
+
+.filter-category {
+    text-align: center;
+}
+
+.filter-category__filter-list li {
+    display: inline-block;
+    list-style: none;
+    padding-left: $buildingUnit/2;
+}
+
+.filter-category__filter-list li:first-child {
+    padding-left: 0;
+}
+
+.filter-category__reset {
+    border: none;
+
+    padding-left: $buildingUnit / 2;
+    padding-right: $buildingUnit / 2;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    color: $colorGrayDark;
+    background-color: $colorGrayExtraLight;
+
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.filter-category__reset:focus {
+    //outline: none;
+}
+
+.filter-category__reset--active {
+    color: $colorWhite;
+    background-color: $um-blue;
+}
