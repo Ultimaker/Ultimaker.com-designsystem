@@ -1145,40 +1145,24 @@ because both families serve another purpose. Therefore the line-heights will be 
   border: 2px solid #196ef0; }
 
 .um-components table {
-  margin-top: -2px;
-  margin-bottom: 23px;
-  height: auto;
-  width: 100%;
-  text-align: left;
+  border: 0;
+  border-bottom: 2px solid #e3e3e3;
   border-collapse: collapse;
-  border: 1px solid #000; }
-  @media (min-width: 768px) {
-    .um-components table {
-      margin-top: -5px;
-      margin-bottom: 29px; } }
+  margin: 0 0 24px;
+  text-align: left;
+  width: 100%; }
 
-.um-components table tbody tr,
-.um-components table thead tr {
-  border-bottom: 1px solid #000; }
+.um-components tbody {
+  border-top: 2px solid #e3e3e3; }
 
-.um-components table tbody tr:last-child {
-  border-bottom: none; }
-
-.um-components table td,
-.um-components table th {
-  height: auto;
-  width: 25%;
-  padding: 12px;
-  padding-top: 11px;
+.um-components th,
+.um-components td {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 18px;
   vertical-align: top; }
 
-.um-components table td small, .um-components table td .caption-list__headline, .um-components table td .caption-list__list-item, .um-components table td .link.link--small, .um-components table td .link--small.toggle, .um-components table td .link--small.overflow-container__link:hover, .um-components table td .link--small.overflow-container__link.exact-active, .um-components table td .price-table__tagline, .um-components table td .price-table__disclaimer, .um-components table td .tag, .um-components table td .tablist__section .tablist, .um-components .tablist__section table td .tablist, .um-components table td .examples .examples__tabs .tablist, .um-components .examples .examples__tabs table td .tablist, .um-components table td .tablist__section .tablist__headline, .um-components .tablist__section table td .tablist__headline, .um-components table td .examples .examples__tabs .tablist__headline, .um-components .examples .examples__tabs table td .tablist__headline, .um-components table td .auto-complete__label, .um-components table td .hero--products-application .usp--icon .usp__label, .um-components .hero--products-application .usp--icon table td .usp__label, .um-components table td .overflow-container__label, .um-components table td .settings-selector__label, .um-components table th small, .um-components table th .caption-list__headline, .um-components table th .caption-list__list-item, .um-components table th .link.link--small, .um-components table th .link--small.toggle, .um-components table th .link--small.overflow-container__link:hover, .um-components table th .link--small.overflow-container__link.exact-active, .um-components table th .price-table__tagline, .um-components table th .price-table__disclaimer, .um-components table th .tag, .um-components table th .tablist__section .tablist, .um-components .tablist__section table th .tablist, .um-components table th .examples .examples__tabs .tablist, .um-components .examples .examples__tabs table th .tablist, .um-components table th .tablist__section .tablist__headline, .um-components .tablist__section table th .tablist__headline, .um-components table th .examples .examples__tabs .tablist__headline, .um-components .examples .examples__tabs table th .tablist__headline, .um-components table th .auto-complete__label, .um-components table th .hero--products-application .usp--icon .usp__label, .um-components .hero--products-application .usp--icon table th .usp__label, .um-components table th .overflow-container__label, .um-components table th .settings-selector__label {
-  display: block;
-  color: #7f7f7f; }
-
-.um-components table tfoot {
-  font-size: 12px;
-  line-height: 18px; }
+.um-components th {
+  font-weight: 600; }
 
 .um-components .youtube-video {
   position: relative; }
@@ -3503,6 +3487,9 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #fff; }
   .um-components .article-video__button:hover {
     color: #fff; }
+
+.um-components .article-table {
+  overflow-x: auto; }
 
 .um-components .auto-complete {
   position: relative;
@@ -6019,9 +6006,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   scroll-snap-type: x mandatory; }
 
 .um-components .table-compare__table {
-  border: initial;
-  border-bottom: 2px solid #e3e3e3;
-  border-collapse: collapse;
   position: relative;
   table-layout: fixed;
   width: calc(var(--number-of-columns) * 100%); }
@@ -6049,12 +6033,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   padding: 0; }
 
 .um-components .table-compare__table thead th[scope="col"] {
-  border-bottom: 2px solid #e3e3e3;
   font-weight: normal;
   font-size: 18px;
   padding: 0 12px 24px;
   text-align: center;
-  width: initial;
   white-space: nowrap; }
   @media (min-width: 1025px) {
     .um-components .table-compare__table thead th[scope="col"] {
@@ -6070,7 +6052,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   line-height: 21px;
   margin-top: -2px;
   margin-bottom: 23px;
-  border-top: 1px solid #e3e3e3;
   left: 0;
   position: -webkit-sticky;
   position: sticky;
@@ -6081,7 +6062,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       position: static; } }
 
 .um-components .table-compare__table tbody td {
-  border-top: 1px solid #e3e3e3;
   color: #196ef0;
   height: 48px;
   padding: 0 6px;
@@ -6090,7 +6070,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .table-compare__table tfoot th,
 .um-components .table-compare__table tfoot td {
-  border-top: 1px solid #e3e3e3;
   padding: 18px;
   text-align: center; }
 

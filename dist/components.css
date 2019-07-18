@@ -1650,64 +1650,24 @@ label + [type="checkbox"] {
   border: 2px solid #196ef0; }
 
 table {
-  margin-top: -2px;
-  margin-bottom: 23px;
-  height: auto;
-  width: 100%;
-  text-align: left;
+  border: 0;
+  border-bottom: 2px solid #e3e3e3;
   border-collapse: collapse;
-  border: 1px solid #000; }
-  @media (min-width: 768px) {
-    table {
-      margin-top: -5px;
-      margin-bottom: 29px; } }
+  margin: 0 0 24px;
+  text-align: left;
+  width: 100%; }
 
-table tbody tr,
-table thead tr {
-  border-bottom: 1px solid #000; }
+tbody {
+  border-top: 2px solid #e3e3e3; }
 
-table tbody tr:last-child {
-  border-bottom: none; }
-
-table td,
-table th {
-  height: auto;
-  width: 25%;
-  padding: 12px;
-  padding-top: 11px;
+th,
+td {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 18px;
   vertical-align: top; }
 
-table td small, table td .caption-list__headline, table td .caption-list__list-item, table td .link.link--small, table td .link--small.toggle, table td .link--small.overflow-container__link:hover, table td .link--small.overflow-container__link.exact-active, table td .price-table__tagline,
-table td .price-table__disclaimer, table td .tag, table td .tablist__section .tablist, .tablist__section table td .tablist, table td .examples .examples__tabs .tablist, .examples .examples__tabs table td .tablist, table td .tablist__section .tablist__headline, .tablist__section table td .tablist__headline, table td .examples .examples__tabs .tablist__headline, .examples .examples__tabs table td .tablist__headline, table td .auto-complete__label, table td .hero--products-application .usp--icon .usp__label, .hero--products-application .usp--icon table td .usp__label, table td .overflow-container__label, table td .settings-selector__label,
-table th small,
-table th .caption-list__headline,
-table th .caption-list__list-item,
-table th .link.link--small,
-table th .link--small.toggle,
-table th .link--small.overflow-container__link:hover,
-table th .link--small.overflow-container__link.exact-active,
-table th .price-table__tagline,
-table th .price-table__disclaimer,
-table th .tag,
-table th .tablist__section .tablist,
-.tablist__section table th .tablist,
-table th .examples .examples__tabs .tablist,
-.examples .examples__tabs table th .tablist,
-table th .tablist__section .tablist__headline,
-.tablist__section table th .tablist__headline,
-table th .examples .examples__tabs .tablist__headline,
-.examples .examples__tabs table th .tablist__headline,
-table th .auto-complete__label,
-table th .hero--products-application .usp--icon .usp__label,
-.hero--products-application .usp--icon table th .usp__label,
-table th .overflow-container__label,
-table th .settings-selector__label {
-  display: block;
-  color: #7f7f7f; }
-
-table tfoot {
-  font-size: 12px;
-  line-height: 18px; }
+th {
+  font-weight: 600; }
 
 .youtube-video {
   position: relative; }
@@ -4038,6 +3998,9 @@ table tfoot {
   color: #fff; }
   .article-video__button:hover {
     color: #fff; }
+
+.article-table {
+  overflow-x: auto; }
 
 .auto-complete {
   position: relative;
@@ -6605,9 +6568,6 @@ main .overview:nth-child(even) {
   scroll-snap-type: x mandatory; }
 
 .table-compare__table {
-  border: initial;
-  border-bottom: 2px solid #e3e3e3;
-  border-collapse: collapse;
   position: relative;
   table-layout: fixed;
   width: calc(var(--number-of-columns) * 100%); }
@@ -6635,12 +6595,10 @@ main .overview:nth-child(even) {
   padding: 0; }
 
 .table-compare__table thead th[scope="col"] {
-  border-bottom: 2px solid #e3e3e3;
   font-weight: normal;
   font-size: 18px;
   padding: 0 12px 24px;
   text-align: center;
-  width: initial;
   white-space: nowrap; }
   @media (min-width: 1025px) {
     .table-compare__table thead th[scope="col"] {
@@ -6656,7 +6614,6 @@ main .overview:nth-child(even) {
   line-height: 21px;
   margin-top: -2px;
   margin-bottom: 23px;
-  border-top: 1px solid #e3e3e3;
   left: 0;
   position: -webkit-sticky;
   position: sticky;
@@ -6667,7 +6624,6 @@ main .overview:nth-child(even) {
       position: static; } }
 
 .table-compare__table tbody td {
-  border-top: 1px solid #e3e3e3;
   color: #196ef0;
   height: 48px;
   padding: 0 6px;
@@ -6676,7 +6632,6 @@ main .overview:nth-child(even) {
 
 .table-compare__table tfoot th,
 .table-compare__table tfoot td {
-  border-top: 1px solid #e3e3e3;
   padding: 18px;
   text-align: center; }
 
