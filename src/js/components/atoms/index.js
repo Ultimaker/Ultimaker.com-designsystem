@@ -9,6 +9,7 @@ export { default as HitArea } from 'atoms/hit-area';
 export { default as HorizontalList } from 'atoms/horizontal-list';
 export { default as Icon } from 'atoms/icon';
 export { default as Image } from 'atoms/c-image';
+export { default as LabelFilter } from 'atoms/label-filter';
 export { default as LiInline } from 'atoms/li-inline';
 export { default as LiItem } from 'atoms/li-item';
 export { default as NavAssist } from 'atoms/nav-assist';
