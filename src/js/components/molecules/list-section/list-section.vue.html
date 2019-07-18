@@ -29,6 +29,10 @@
         </header>
     </template>
 
+    <template v-if="filterCategories" v-for="filterCategory in filterCategories">
+        <filter-category v-bind="filterCategory" />
+    </template>
+
     <transition-group class="list-section__container" tag="ul" @before-enter="beforeEnter"  @enter="enter">
         <li v-for="(chunk, index) in chunks"
             :key="index" class="list-section__row"

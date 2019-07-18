@@ -13,6 +13,7 @@ const getStory = (type) => () => {
     return {
         props: {
             cards: { default: knobs.cards },
+            filterCategories: { default: knobs.filterCategories },
             limit: { default: knobs.limit },
             title: { default: knobs.title },
             tooltip: { default: knobs.tooltip },
