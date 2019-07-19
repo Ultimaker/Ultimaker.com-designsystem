@@ -40,7 +40,6 @@ export { default as TabTableRow } from 'molecules/tab-table-row';
 export { default as CardDownload } from 'molecules/cards/card-download';
 export { default as WizardStepDownloadList } from 'molecules/wizard-step-download-list';
 export { default as ModalButton } from 'molecules/modal-button';
-
 export { default as ModalWizard } from 'molecules/modal-wizard';
 export { default as WizardStepConfirmation } from 'molecules/wizard-step-confirmation';
 export { default as ArticleIntro } from 'molecules/article-intro';
@@ -54,3 +53,5 @@ export { default as FooterNavigationCategory } from 'molecules/footer-navigation
 export { default as MainNavigation } from 'molecules/main-navigation';
 export { default as MainNavigationItem } from 'molecules/main-navigation-item';
 export { default as SocialSharing } from 'molecules/social-sharing';
+export { default as SearchResult } from 'molecules/search-result';
+
