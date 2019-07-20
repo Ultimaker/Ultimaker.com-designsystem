@@ -6,13 +6,19 @@
     text-align: center;
 }
 
-.filter-category__filter-list li {
+.filter-category__list {
+    margin-top: $buildingUnit;
+    padding-left: 0;
+}
+
+.filter-category__list-item {
     display: inline-block;
     list-style: none;
     padding-left: $buildingUnit/2;
+    margin-bottom: $buildingUnit/2;
 }
 
-.filter-category__filter-list li:first-child {
+.filter-category__list-item:first-of-type {
     padding-left: 0;
 }
 
@@ -32,11 +38,11 @@
     cursor: pointer;
 }
 
-.filter-category__reset:focus {
-    //outline: none;
-}
-
 .filter-category__reset--active {
     color: $colorWhite;
     background-color: $um-blue;
+}
+
+.filter-category__title {
+    margin-bottom: 0;
 }

@@ -1,5 +1,5 @@
 export const industries = {
-    labels: ['Aerospace', 'Architecture', 'Automotive', 'Fashion', 'Humanitarian', 'Medicine', 'Research'],
+    labels: ['Aerospace', 'Architecture', 'Automotive', 'Education', 'Manufacturing', 'Research'],
     showAllLabel: 'All industries',
     title: 'Industry',
 };
