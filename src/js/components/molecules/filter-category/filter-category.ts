@@ -28,7 +28,7 @@ export class FilterCategory extends Vue implements FilterCategoryProps {
      */
     $onPublic;
 
-    filters: any = [];
+    filters: string[] = [];
 
     beforeDestroy() {
         this.$offPublic(`checkboxChange-${this.category}`, this.handleFilterChange);
@@ -49,6 +49,10 @@ export class FilterCategory extends Vue implements FilterCategoryProps {
         };
     }
 
+    get toggleActive() {
+        return this.filters.length ? '' : 'filter-category__reset--active';
+    }
+
     handleFilterChange(payload) {
         if (payload.checked) {
             this.filters.push(payload.value);
@@ -57,10 +61,6 @@ export class FilterCategory extends Vue implements FilterCategoryProps {
         }
 
         this.$emitPublic('filterChange', this.payload);
-    }
-
-    resetActive() {
-        return this.filters.length ? '' : 'filter-category__reset--active';
     }
 
     resetFilters() {
