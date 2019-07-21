@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.filter-category:last-of-type {
+    margin-bottom: $buildingUnit * 4;
+}
+
 .filter-category__list {
     margin-top: $buildingUnit;
     padding-left: 0;
