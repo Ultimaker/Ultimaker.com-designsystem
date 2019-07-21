@@ -1,8 +1,9 @@
 /** @format */
 
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { FilterCategoryProps } from './filter-category.models';
 import WithRender from './filter-category.vue.html';
+
+import { FilterCategoryProps } from './filter-category.models';
 
 @WithRender
 @Component({
@@ -13,30 +14,7 @@ export class FilterCategory extends Vue implements FilterCategoryProps {
     @Prop({ type: String, required: true }) showAllLabel!: FilterCategoryProps['showAllLabel'];
     @Prop({ type: String, required: true }) title!: FilterCategoryProps['title'];
 
-    /**
-     * @type PublicEventService.emit
-     */
-    $emitPublic;
-
-    /**
-     * @type PublicEventService.off
-     */
-    $offPublic;
-
-    /**
-     * @type PublicEventService.on
-     */
-    $onPublic;
-
     filters: string[] = [];
-
-    beforeDestroy() {
-        this.$offPublic(`checkboxChange-${this.category}`, this.handleFilterChange);
-    }
-
-    mounted() {
-        this.$onPublic(`checkboxChange-${this.category}`, this.handleFilterChange);
-    }
 
     get category() {
         return this.title.toLowerCase().replace(/\s+/g, '-');
@@ -53,18 +31,18 @@ export class FilterCategory extends Vue implements FilterCategoryProps {
         return this.filters.length ? '' : 'filter-category__reset--active';
     }
 
-    handleFilterChange(payload) {
+    handleLabelFilterChange(payload) {
         if (payload.checked) {
             this.filters.push(payload.value);
         } else {
             this.filters = this.filters.filter((filter) => filter !== payload.value);
         }
 
-        this.$emitPublic('filterChange', this.payload);
+        this.$emit('filter-category-change', this.payload);
     }
 
     resetFilters() {
         this.filters = [];
-        this.$emitPublic('filterChange', this.payload);
+        this.$emit('filter-category-change', this.payload);
     }
 }
