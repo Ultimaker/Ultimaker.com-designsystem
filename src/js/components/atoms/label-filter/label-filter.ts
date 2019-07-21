@@ -10,21 +10,14 @@ import { LabelFilterProps } from './label-filter.models';
     name: 'LabelFilter',
 })
 export class LabelFilter extends Vue implements LabelFilterProps {
-    @Prop({ type: String, required: true }) category!: LabelFilterProps['category'];
     @Prop({ type: Boolean, default: false }) checked?: LabelFilterProps['checked'];
     @Prop({ type: Boolean, default: false }) disabled?: LabelFilterProps['disabled'];
     @Prop({ type: String, required: true }) label!: LabelFilterProps['label'];
     @Prop({ type: String, required: true }) name!: LabelFilterProps['name'];
     @Prop({ type: String, required: true }) value!: LabelFilterProps['value'];
 
-    /**
-     * @type PublicEventService.emit
-     */
-    $emitPublic;
-
     get payload() {
         return {
-            category: this.category,
             checked: this.checked,
             value: this.value,
         };
@@ -36,6 +29,6 @@ export class LabelFilter extends Vue implements LabelFilterProps {
             checked: $event.target.checked,
         };
 
-        this.$emitPublic(`checkboxChange-${this.category}`, payload);
+        this.$emit('label-filter-change', payload);
     }
 }

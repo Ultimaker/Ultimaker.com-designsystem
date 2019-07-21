@@ -1,10 +1,11 @@
 /** @format */
 
 import { Component, Prop, Mixins, Watch } from 'vue-property-decorator';
+import WithRender from './list-section.vue.html';
+
 import Events from 'constants/events';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
-import WithRender from './list-section.vue.html';
 
 import { ListSectionProps } from 'components/molecules/list-section/list-section.models';
 import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
@@ -25,16 +26,6 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
      */
     $emitPublic;
 
-    /**
-     * @type PublicEventService.off
-     */
-    $offPublic;
-
-    /**
-     * @type PublicEventService.on
-     */
-    $onPublic;
-
     $route;
 
     chunks: object[] = [];
@@ -49,7 +40,6 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
     visibleTooltip: boolean = false;
 
     beforeDestroy(): void {
-        this.$offPublic('filterChange', this.handleFilterChange);
         this.viewportUtil.removeResizeHandler(this.handleResize);
     }
 
@@ -62,7 +52,6 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         await this.viewportUtil.triggerResize();
         await this.handleResize();
 
-        this.$onPublic('filterChange', this.handleFilterChange);
         this.createChunks();
     }
 
@@ -86,7 +75,7 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         }
     }
 
-    handleFilterChange(payload): void {
+    handleFilterCategoryChange(payload): void {
         this.filters[payload.category] = payload.filters;
         this.filtersAll = [];
 
