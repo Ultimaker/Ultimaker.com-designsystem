@@ -1,13 +1,15 @@
 /** @format */
 
+import { businessCards } from 'components/organisms/overview/data/examples/business-cards';
 import { cardArticles } from 'components/organisms/overview/data/examples/card-articles';
-import { contentBlocks } from './examples/content-block';
-import { businessCards } from './examples/business-cards';
-import { cardProducts } from './examples/card-products';
+import { cardProducts } from 'components/organisms/overview/data/examples/card-products';
+import { contentBlocks } from 'components/organisms/overview/data/examples/content-block';
+import { filterCategory } from 'components/organisms/overview/data/examples/filter-category';
 
 export const data = {
     businessCards,
     cardProducts,
     contentBlocks,
     cardArticles,
+    filterCategory,
 };
