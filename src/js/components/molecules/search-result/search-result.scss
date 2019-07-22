@@ -1,13 +1,21 @@
 /** @format */
 
 .search-result {
+    background-color: $colorWhite;
+    padding: 1.5 * $buildingUnit;
     position: relative;
+
+    &:hover {
+        background-color: $colorGrayLight;
+    }
 }
 
 .search-result__title {
+    margin: 0 0 0.5 * $buildingUnit;
 }
 
 .search-result__link {
+    color: $colorBlack;
 
     // Make the link cover the entire search result
     &::after {
@@ -18,9 +26,21 @@
         right: 0;
         top: 0;
     }
+
+    &:hover {
+        color: inherit;
+    }
 }
 
-// highlight
-.search-result b {
+.search-result__snippet {
+    margin: 0 0 1.5 * $buildingUnit;
+}
 
+.search-result__url {
+    margin: 0;
+}
+
+.search-result mark {
+    background-color: inherit;
+    font-weight: bold;
 }
