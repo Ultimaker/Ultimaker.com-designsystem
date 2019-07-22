@@ -3,6 +3,7 @@
 @import "~scss/settings/_variables.scss";
 
 .filter-category {
+    margin-bottom: $buildingUnit * 2 - $buildingUnit / 2; // filter-category__list-item
     text-align: center;
 }
 
@@ -11,15 +12,17 @@
 }
 
 .filter-category__list {
-    margin-top: $buildingUnit;
+    display: inline;
+    margin-bottom: 0;
+    margin-top: 0;
     padding-left: 0;
 }
 
 .filter-category__list-item {
     display: inline-block;
     list-style: none;
-    padding-left: $buildingUnit/2;
-    margin-bottom: $buildingUnit/2;
+    margin-bottom: $buildingUnit / 2;
+    padding-left: $buildingUnit / 2;
 }
 
 .filter-category__list-item:first-of-type {
@@ -27,26 +30,34 @@
 }
 
 .filter-category__reset {
-    border: none;
-
-    padding-left: $buildingUnit / 2;
-    padding-right: $buildingUnit / 2;
-
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: $colorGrayExtraLight;
+    border: 1px solid $colorGray;
+    border-radius: 2px;
+    color: $colorGrayDark;
     font-size: 12px;
     font-weight: 500;
+    margin-bottom: $buildingUnit / 2;
+    margin-right: $buildingUnit / 3;
+    padding-top: 1px;
+    padding-right: $buildingUnit / 2;
+    padding-left: $buildingUnit / 2;
+    padding-bottom: 2px;
+}
 
-    color: $colorGrayDark;
-    background-color: $colorGrayExtraLight;
-
-    border-radius: 2px;
-    cursor: pointer;
+.filter-category__reset:focus {
+    outline-offset: 1px;
+    outline: 2px solid $um-blue;
 }
 
 .filter-category__reset--active {
-    color: $colorWhite;
     background-color: $um-blue;
+    border: 1px solid $um-blue;
+    color: $colorWhite;
 }
 
 .filter-category__title {
-    margin-bottom: 0;
+    margin-bottom: $buildingUnit;
 }
