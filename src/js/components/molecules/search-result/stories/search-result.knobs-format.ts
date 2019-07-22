@@ -1,3 +1,9 @@
 /** @format */
 
-export default {};
+export default {
+    terms: '',
+    title: '',
+    link: '',
+    snippet: '',
+    formattedUrl: '',
+};

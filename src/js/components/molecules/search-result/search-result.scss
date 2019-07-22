@@ -1,4 +1,26 @@
 /** @format */
 
 .search-result {
+    position: relative;
+}
+
+.search-result__title {
+}
+
+.search-result__link {
+
+    // Make the link cover the entire search result
+    &::after {
+        bottom: 0;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+}
+
+// highlight
+.search-result b {
+
 }

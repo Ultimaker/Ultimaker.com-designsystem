@@ -11,7 +11,13 @@ const getStory = (type) => () => {
     const knobs = getKnobs(data[type], knobsFormat);
 
     return {
-        props: {},
+        props: {
+            terms: { default: knobs.terms },
+            title: { default: knobs.title },
+            link: { default: knobs.link },
+            snippet: { default: knobs.snippet },
+            formattedUrl: { default: knobs.formattedUrl },
+        },
         template: require('./search-result.html'),
     };
 };
@@ -22,4 +28,5 @@ addStories({
     decorators: ['withKnobs'],
     kind: 'Molecules/search-result',
     notes: addNotes(require('./search-result.md')),
+    knobs: { escapeHTML: false },
 });
