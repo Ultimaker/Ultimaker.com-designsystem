@@ -53,7 +53,7 @@ exports[`Storyshots Molecules|layout/lists List section 1`] = `
                 
         </a>
       </header>
-       
+        
       <ul
         class="list-section__container"
       />

@@ -1437,7 +1437,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
             type="list-section"
           >
             <!---->
-             
+              
             <ul
               class="list-section__container"
             />

@@ -1,5 +1,140 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Atoms/label-filter architecture 1`] = `
+<section
+  class="story"
+>
+  <label
+    category="Architecture"
+    class="label-filter"
+  >
+    <input
+      name="Industry"
+      type="checkbox"
+      value="Architecture"
+    />
+     
+    <span
+      class="label-filter__label"
+    >
+      Architecture
+    </span>
+  </label>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Atoms/label-filter endUserParts 1`] = `
+<section
+  class="story"
+>
+  <label
+    category="End-user parts"
+    class="label-filter"
+  >
+    <input
+      name="Application"
+      type="checkbox"
+      value="End-user parts"
+    />
+     
+    <span
+      class="label-filter__label"
+    >
+      End-user parts
+    </span>
+  </label>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Atoms/label-filter manufacturingAids 1`] = `
+<section
+  class="story"
+>
+  <label
+    category="Manufacturing aids"
+    class="label-filter"
+  >
+    <input
+      name="Application"
+      type="checkbox"
+      value="Manufacturing aids"
+    />
+     
+    <span
+      class="label-filter__label"
+    >
+      Manufacturing aids
+    </span>
+  </label>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Atoms/label-filter medicine 1`] = `
+<section
+  class="story"
+>
+  <label
+    category="Medicine"
+    class="label-filter"
+  >
+    <input
+      name="Industry"
+      type="checkbox"
+      value="Medicine"
+    />
+     
+    <span
+      class="label-filter__label"
+    >
+      Medicine
+    </span>
+  </label>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Atoms/label-filter productDevelopment 1`] = `
+<section
+  class="story"
+>
+  <label
+    category="Product development"
+    class="label-filter"
+  >
+    <input
+      name="Application"
+      type="checkbox"
+      value="Product development"
+    />
+     
+    <span
+      class="label-filter__label"
+    >
+      Product development
+    </span>
+  </label>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Atoms|buttons//input/button default 1`] = `
 <section
   class="story"
@@ -1683,7 +1818,7 @@ exports[`Storyshots Molecules/cards/card-article introduce 1`] = `
     <a
       aria-label="How to successfully introduce 3D printing in your business"
       class="anchor-overlay hit-area"
-      href="https://3d.ultimaker.com/successful-introduction-checklist?utm_source=ultimaker.com&amp;utm_medium=knowledge"
+      href="https://ultimaker.com/en/stories/52698-new-lab-innovators-print-their-way-to-faster-iterations-and-design-freedom"
       title="How to successfully introduce 3D printing in your business"
     />
      
@@ -1691,7 +1826,7 @@ exports[`Storyshots Molecules/cards/card-article introduce 1`] = `
       class="card-article__image-container"
     >
       <img
-        alt="Ultimaker Breakaway"
+        alt="Nylon 3D printed gears"
         class="img--contain card-article__image img--loading"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
@@ -1723,7 +1858,7 @@ exports[`Storyshots Molecules/cards/card-article introduce 1`] = `
         <span
           class="label"
         >
-          product development
+          Product development
         </span>
       </li>
       <li
@@ -1733,7 +1868,79 @@ exports[`Storyshots Molecules/cards/card-article introduce 1`] = `
         <span
           class="label"
         >
-          architecture
+          Education
+        </span>
+      </li>
+    </ul>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/cards/card-article newLab 1`] = `
+<section
+  class="story"
+>
+  <article
+    class="card-article"
+  >
+    <a
+      aria-label="New Lab innovators print their way to faster iterations and design freedom"
+      class="anchor-overlay hit-area"
+      href="https://3d.ultimaker.com/successful-introduction-checklist"
+      title="New Lab innovators print their way to faster iterations and design freedom"
+    />
+     
+    <div
+      class="card-article__image-container"
+    >
+      <img
+        alt="Ultimaker Breakaway"
+        class="img--contain card-article__image img--loading"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+        type="Image"
+      />
+    </div>
+     
+    <h3
+      class="card-article__heading"
+    >
+      New Lab innovators print their way to faster iterations and design freedom
+    </h3>
+     
+    <p
+      class="card-article__description"
+    >
+      
+        In an era when startup incubators and co-working spaces spin up as a matter of course in densely populated urban centers, New Lab offers a fresh take on what it means to bring people and companies together to work under one large roof. Extending over 84,000 square feet in the historic Brooklyn Navy Yard, New Lab is home to over 100 member companies, including more than 500 designers, engineers, entrepreneurs, executives, and product realization specialists.
+    
+    </p>
+     
+    <ul
+      class="list card-article__labels-list"
+    >
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          Architecture
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          Manufacturing
         </span>
       </li>
     </ul>
@@ -2096,6 +2303,262 @@ exports[`Storyshots Molecules/cta-block default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/filter-category applications 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="filter-category"
+  >
+    <h4
+      class="filter-category__title"
+    >
+      Application
+    </h4>
+     
+    <form>
+      <input
+        class="filter-category__reset filter-category__reset--active"
+        type="reset"
+        value="All applications"
+      />
+       
+      <ul
+        class="filter-category__list"
+      >
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All applications"
+              type="checkbox"
+              value="End-user parts"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              End-user parts
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All applications"
+              type="checkbox"
+              value="Manufacturing aids"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Manufacturing aids
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All applications"
+              type="checkbox"
+              value="Product development"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Product development
+            </span>
+          </label>
+        </li>
+      </ul>
+    </form>
+  </section>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/filter-category industries 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="filter-category"
+  >
+    <h4
+      class="filter-category__title"
+    >
+      Industry
+    </h4>
+     
+    <form>
+      <input
+        class="filter-category__reset filter-category__reset--active"
+        type="reset"
+        value="All industries"
+      />
+       
+      <ul
+        class="filter-category__list"
+      >
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All industries"
+              type="checkbox"
+              value="Aerospace"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Aerospace
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All industries"
+              type="checkbox"
+              value="Architecture"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Architecture
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All industries"
+              type="checkbox"
+              value="Automotive"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Automotive
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All industries"
+              type="checkbox"
+              value="Fashion"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Fashion
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All industries"
+              type="checkbox"
+              value="Humanitarian"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Humanitarian
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All industries"
+              type="checkbox"
+              value="Research"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Research
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              name="All industries"
+              type="checkbox"
+              value="Medicine"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Medicine
+            </span>
+          </label>
+        </li>
+      </ul>
+    </form>
+  </section>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/footer-navigation-category default 1`] = `
 <section
   class="story"
@@ -2255,7 +2718,7 @@ exports[`Storyshots Molecules/list-section businessCards 1`] = `
        
       <!---->
     </header>
-     
+      
     <ul
       class="list-section__container"
     />
@@ -2288,7 +2751,7 @@ exports[`Storyshots Molecules/list-section cardProducts 1`] = `
     class="list-section"
   >
     <!---->
-     
+      
     <ul
       class="list-section__container"
     />
@@ -2302,6 +2765,274 @@ exports[`Storyshots Molecules/list-section cardProducts 1`] = `
       >
         
             Show all (7)
+        
+      </button>
+    </footer>
+  </section>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/list-section filterCategories 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="list-section"
+  >
+    <!---->
+     
+    <section
+      class="filter-category"
+    >
+      <h4
+        class="filter-category__title"
+      >
+        Application
+      </h4>
+       
+      <form>
+        <input
+          class="filter-category__reset filter-category__reset--active"
+          type="reset"
+          value="All applications"
+        />
+         
+        <ul
+          class="filter-category__list"
+        >
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All applications"
+                type="checkbox"
+                value="End-user parts"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                End-user parts
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All applications"
+                type="checkbox"
+                value="Manufacturing aids"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Manufacturing aids
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All applications"
+                type="checkbox"
+                value="Product development"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Product development
+              </span>
+            </label>
+          </li>
+        </ul>
+      </form>
+    </section>
+    <section
+      class="filter-category"
+    >
+      <h4
+        class="filter-category__title"
+      >
+        Industry
+      </h4>
+       
+      <form>
+        <input
+          class="filter-category__reset filter-category__reset--active"
+          type="reset"
+          value="All industries"
+        />
+         
+        <ul
+          class="filter-category__list"
+        >
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All industries"
+                type="checkbox"
+                value="Aerospace"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Aerospace
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All industries"
+                type="checkbox"
+                value="Architecture"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Architecture
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All industries"
+                type="checkbox"
+                value="Automotive"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Automotive
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All industries"
+                type="checkbox"
+                value="Fashion"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Fashion
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All industries"
+                type="checkbox"
+                value="Humanitarian"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Humanitarian
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All industries"
+                type="checkbox"
+                value="Research"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Research
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All industries"
+                type="checkbox"
+                value="Medicine"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Medicine
+              </span>
+            </label>
+          </li>
+        </ul>
+      </form>
+    </section>
+     
+    <ul
+      class="list-section__container"
+    />
+     
+    <footer
+      class="list-section__footer"
+    >
+      <button
+        class="button--secondary list-section__footer__button"
+        style="display: none;"
+      >
+        
+            Show all (8)
         
       </button>
     </footer>
@@ -11428,7 +12159,7 @@ exports[`Storyshots organisms/overview businessCards 1`] = `
                 
           </a>
         </header>
-         
+          
         <ul
           class="list-section__container"
         />
@@ -11469,7 +12200,7 @@ exports[`Storyshots organisms/overview businessCards 1`] = `
            
           <!---->
         </header>
-         
+          
         <ul
           class="list-section__container"
         />
@@ -11569,7 +12300,7 @@ exports[`Storyshots organisms/overview cardArticles 1`] = `
         type="list-section"
       >
         <!---->
-         
+          
         <ul
           class="list-section__container"
         />
@@ -11669,7 +12400,7 @@ exports[`Storyshots organisms/overview cardProducts 1`] = `
         type="list-section"
       >
         <!---->
-         
+          
         <ul
           class="list-section__container"
         />
@@ -11809,7 +12540,7 @@ exports[`Storyshots organisms/overview contentBlocks 1`] = `
                 
           </a>
         </header>
-         
+          
         <ul
           class="list-section__container"
         />
@@ -11872,6 +12603,341 @@ exports[`Storyshots organisms/overview contentBlocks 1`] = `
                 
           </a>
         </header>
+          
+        <ul
+          class="list-section__container"
+        />
+         
+        <footer
+          class="list-section__footer"
+        >
+          <button
+            class="button--secondary list-section__footer__button"
+            style="display: none;"
+          >
+            
+            Show all (8)
+        
+          </button>
+        </footer>
+      </section>
+       
+      <footer
+        class="footer-block"
+      >
+        <div
+          block="overview"
+          class="cta-block cta-block--footer"
+        >
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Call me back
+    
+            </span>
+          </a>
+          <a
+            class="link--primary button cta-link"
+            href="https://ultimaker.com"
+            rel="noopener"
+            target="_self"
+          >
+            <!---->
+             
+            <span
+              class="link__underline"
+            >
+              
+        Schedule an appointment
+    
+            </span>
+          </a>
+        </div>
+      </footer>
+    </section>
+  </article>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots organisms/overview filterCategory 1`] = `
+<section
+  class="story"
+>
+  <article
+    class="organism overview"
+  >
+    <section
+      class="container"
+    >
+      <header
+        class="header-block"
+      >
+        <h2
+          class="header-block__title"
+        >
+          Explore the benefits filtering
+        </h2>
+         
+        <p
+          class="header-block__subtitle"
+        >
+          to filter and beyond ...
+        </p>
+      </header>
+       
+      <section
+        class="list-section"
+        type="list-section"
+      >
+        <!---->
+         
+        <section
+          class="filter-category"
+        >
+          <h4
+            class="filter-category__title"
+          >
+            Application
+          </h4>
+           
+          <form>
+            <input
+              class="filter-category__reset filter-category__reset--active"
+              type="reset"
+              value="All applications"
+            />
+             
+            <ul
+              class="filter-category__list"
+            >
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All applications"
+                    type="checkbox"
+                    value="End-user parts"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    End-user parts
+                  </span>
+                </label>
+              </li>
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All applications"
+                    type="checkbox"
+                    value="Manufacturing aids"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    Manufacturing aids
+                  </span>
+                </label>
+              </li>
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All applications"
+                    type="checkbox"
+                    value="Product development"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    Product development
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </form>
+        </section>
+        <section
+          class="filter-category"
+        >
+          <h4
+            class="filter-category__title"
+          >
+            Industry
+          </h4>
+           
+          <form>
+            <input
+              class="filter-category__reset filter-category__reset--active"
+              type="reset"
+              value="All industries"
+            />
+             
+            <ul
+              class="filter-category__list"
+            >
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All industries"
+                    type="checkbox"
+                    value="Aerospace"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    Aerospace
+                  </span>
+                </label>
+              </li>
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All industries"
+                    type="checkbox"
+                    value="Architecture"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    Architecture
+                  </span>
+                </label>
+              </li>
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All industries"
+                    type="checkbox"
+                    value="Automotive"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    Automotive
+                  </span>
+                </label>
+              </li>
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All industries"
+                    type="checkbox"
+                    value="Fashion"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    Fashion
+                  </span>
+                </label>
+              </li>
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All industries"
+                    type="checkbox"
+                    value="Humanitarian"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    Humanitarian
+                  </span>
+                </label>
+              </li>
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All industries"
+                    type="checkbox"
+                    value="Research"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    Research
+                  </span>
+                </label>
+              </li>
+              <li
+                class="filter-category__list-item"
+              >
+                <label
+                  class="label-filter"
+                >
+                  <input
+                    name="All industries"
+                    type="checkbox"
+                    value="Medicine"
+                  />
+                   
+                  <span
+                    class="label-filter__label"
+                  >
+                    Medicine
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </form>
+        </section>
          
         <ul
           class="list-section__container"
