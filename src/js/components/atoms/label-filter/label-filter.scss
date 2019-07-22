@@ -2,18 +2,17 @@
 
 @import "~scss/settings/_variables.scss";
 
-.label-filter {
-    cursor: pointer;
-}
-
+// http://rikschennink.nl/thoughts/implicit-content-and-screen-readers/
 .label-filter input[type="checkbox"] {
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
     position: absolute;
+    overflow: hidden;
+    height: 1px;
     width: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 .label-filter input[type="checkbox"]:checked + .label-filter__label {
@@ -22,7 +21,7 @@
 }
 
 .label-filter input[type="checkbox"]:focus + .label-filter__label {
-    outline: $um-blue auto 5px;
+    outline: $um-blue solid 2px;
 }
 
 .label-filter__label {
@@ -38,4 +37,5 @@
     background-color: $colorGrayExtraLight;
 
     border-radius: 2px;
+    border: 1px solid $colorGray;
 }
