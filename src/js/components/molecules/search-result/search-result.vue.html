@@ -4,10 +4,8 @@
     <h3 class="search-result__title">
         <a :href="link" class="search-result__link" v-html="computedTitle" />
     </h3>
-    <p v-html="computedSnippet" />
-    <p>
-        <span class="search-result__url">
-            {{ formattedUrl }}
-        </span>
+    <p class="search-result__snippet" v-html="computedSnippet" />
+    <p class="search-result__url">
+        {{ formattedUrl }}
     </p>
 </div>
