@@ -256,12 +256,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .main-nav__list, .um-components .overflow-container__list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .overflow-container__list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .main-nav__list, .um-components .overflow-container__list, .um-components .hero--product .hero__linklist {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .overflow-container__list, .um-components .hero--product .hero__linklist {
   list-style: none; }
 
 .um-components .list__item, .um-components .hero--text .content--rich ul li, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
@@ -405,6 +405,44 @@ because both families serve another purpose. Therefore the line-heights will be 
   top: 0;
   right: 0; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.um-components .label-filter input[type="checkbox"] {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  white-space: nowrap; }
+
+.um-components .label-filter input[type="checkbox"]:checked + .label-filter__label {
+  color: #fff;
+  background-color: #196ef0; }
+
+.um-components .label-filter input[type="checkbox"]:focus + .label-filter__label {
+  outline: #196ef0 solid 2px; }
+
+.um-components .label-filter__label {
+  display: inline-block;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #7f7f7f;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  border: 1px solid #e3e3e3; }
+
 .um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
   margin-top: -2px;
   margin-bottom: 23px; }
@@ -441,7 +479,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-top: -8px;
       margin-bottom: 38px; } }
 
-.um-components .copy--small, .um-components .link, .um-components .toggle, .um-components .overflow-container__link:hover, .um-components .overflow-container__link.exact-active, .um-components [type="checkbox"] + label, .um-components .notification__title, .um-components .notification__copy, .um-components .auto-complete__list-item, .um-components .business-card__property {
+.um-components .copy--small, .um-components .link, .um-components .toggle, .um-components .overflow-container__link:hover, .um-components .overflow-container__link.exact-active, .um-components .notification__title, .um-components .notification__copy, .um-components .auto-complete__list-item, .um-components .business-card__property {
   font-size: 14px;
   line-height: 21px;
   margin-top: -2px;
@@ -1074,75 +1112,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components ::placeholder {
   color: #7f7f7f; }
-
-.um-components [type="checkbox"] + label {
-  display: inline-block;
-  text-align: left;
-  margin: 0 0 12px 0; }
-
-.um-components label + [type="checkbox"] {
-  margin: 0 12px 12px 0; }
-
-/* Base for label styling */
-.um-components [type="checkbox"]:not(:checked),
-.um-components [type="checkbox"]:checked {
-  position: absolute;
-  left: -9999px; }
-
-.um-components [type="checkbox"]:not(:checked) + label,
-.um-components [type="checkbox"]:checked + label {
-  position: relative;
-  padding-left: 30px;
-  user-select: none;
-  cursor: pointer; }
-
-/* checkbox aspect */
-.um-components [type="checkbox"]:not(:checked) + label:before,
-.um-components [type="checkbox"]:checked + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -3px;
-  width: 24px;
-  height: 24px;
-  border: 1px solid #e3e3e3;
-  background: #fff; }
-
-/* checked mark aspect */
-.um-components [type="checkbox"]:not(:checked) + label:after,
-.um-components [type="checkbox"]:checked + label:after {
-  content: url("data:image/svg+xml, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%3E%3Cpolygon%20points=%22113%2029.1%20104.2%2020.2%2042.3%2082.1%2015.8%2055.6%207%2064.4%2033.5%2091%2033.5%2091%2042.3%2099.8%2042.3%2099.8%2042.3%2099.8%2051.1%2091%2051.1%2091%20%22%20fill=%22rgb(12,169,227)%22/%3E%3C/svg%3E");
-  position: absolute;
-  top: 0px;
-  left: 3px;
-  width: 18px;
-  height: 18px; }
-
-/* checked mark aspect changes */
-.um-components [type="checkbox"]:not(:checked) + label:after {
-  opacity: 0;
-  transform: scale(0); }
-
-.um-components [type="checkbox"]:checked + label:after {
-  opacity: 1;
-  transform: scale(1); }
-
-/* disabled checkbox */
-.um-components [type="checkbox"]:disabled:not(:checked) + label:before,
-.um-components [type="checkbox"]:disabled:checked + label:before {
-  background-color: #f5f5f5; }
-
-.um-components [type="checkbox"]:disabled:checked + label:after {
-  content: url("data:image/svg+xml, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%3E%3Cpolygon%20points=%22113%2029.1%20104.2%2020.2%2042.3%2082.1%2015.8%2055.6%207%2064.4%2033.5%2091%2033.5%2091%2042.3%2099.8%2042.3%2099.8%2042.3%2099.8%2051.1%2091%2051.1%2091%20%22%20fill=%22rgb(178,178,178)%22/%3E%3C/svg%3E"); }
-
-.um-components [type="checkbox"]:disabled + label {
-  color: #7f7f7f;
-  cursor: default; }
-
-/* accessibility */
-.um-components [type="checkbox"]:checked:focus:not(:hover) + label:before,
-.um-components [type="checkbox"]:not(:checked):focus:not(:hover) + label:before {
-  border: 2px solid #196ef0; }
 
 .um-components table {
   border: 0;
@@ -3415,6 +3384,9 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-bottom: 60px;
       width: 66%; } }
 
+.um-components .article-table {
+  overflow-x: auto; }
+
 .um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
   margin-top: -2px;
   margin-bottom: 23px; }
@@ -3487,9 +3459,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #fff; }
   .um-components .article-video__button:hover {
     color: #fff; }
-
-.um-components .article-table {
-  overflow-x: auto; }
 
 .um-components .auto-complete {
   position: relative;
@@ -3736,6 +3705,51 @@ because both families serve another purpose. Therefore the line-heights will be 
   line-height: 15px;
   margin-right: 6px; }
 
+.um-components .card-download {
+  width: 100%; }
+
+.um-components .card-download__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.um-components .card-download__label {
+  border: 2px solid #eaeaea;
+  cursor: pointer;
+  display: flex;
+  padding: 12px; }
+  @media (min-width: 768px) {
+    .um-components .card-download__label {
+      padding: 18px; } }
+  .um-components :checked + .card-download__label {
+    border-color: #196ef0; }
+
+.um-components .card-download__image-wrapper {
+  width: 45px;
+  height: 45px;
+  margin-right: 18px; }
+  @media (min-width: 768px) {
+    .um-components .card-download__image-wrapper {
+      width: 60px;
+      height: 60px; } }
+
+.um-components .card-download__title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal; }
+  @media (min-width: 768px) {
+    .um-components .card-download__title {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.um-components .card-download__desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #7F7F7F;
+  margin-bottom: 0; }
+
 .um-components .card-product {
   position: relative;
   background-color: #fff;
@@ -3870,6 +3884,162 @@ because both families serve another purpose. Therefore the line-heights will be 
       .um-components .cta-block--footer .cta-link:last-child {
         margin-right: 0; } }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.um-components .filter-category {
+  margin-bottom: 18px;
+  text-align: center; }
+
+.um-components .filter-category:last-of-type {
+  margin-bottom: 48px; }
+
+.um-components .filter-category__list {
+  display: inline;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0; }
+
+.um-components .filter-category__list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 6px;
+  padding-left: 6px; }
+
+.um-components .filter-category__list-item:first-of-type {
+  padding-left: 0; }
+
+.um-components .filter-category__reset {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 2px;
+  color: #7f7f7f;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  margin-right: 4px;
+  padding-top: 1px;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-bottom: 2px; }
+
+.um-components .filter-category__reset:focus {
+  outline-offset: 1px;
+  outline: 2px solid #196ef0; }
+
+.um-components .filter-category__reset--active {
+  background-color: #196ef0;
+  border: 1px solid #196ef0;
+  color: #fff; }
+
+.um-components .filter-category__title {
+  margin-bottom: 12px; }
+
+.um-components .footer-navigation-category__column {
+  flex: 1 0 auto;
+  position: relative;
+  margin-bottom: 12px;
+  margin-right: 6px;
+  padding-right: 6px;
+  width: 50%; }
+  @media (min-width: 569px) {
+    .um-components .footer-navigation-category__column {
+      border-right: 1px solid #eaeaea;
+      margin-right: 18px;
+      padding-right: 18px;
+      margin-bottom: 0;
+      width: auto; }
+      .um-components .footer-navigation-category__column:last-of-type {
+        border-right: none;
+        margin-right: 0; } }
+  @media (min-width: 1025px) {
+    .um-components .footer-navigation-category__column {
+      margin-right: 24px;
+      padding-right: 24px; }
+      .um-components .footer-navigation-category__column:last-of-type {
+        border-right: none;
+        padding-right: 0; } }
+
+.um-components .footer-navigation-category__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.um-components .footer-navigation-category__title {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -2px;
+  margin-bottom: 23px;
+  font-weight: bold;
+  margin-bottom: 8px; }
+
+.um-components .footer-navigation-category__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px; }
+  .um-components .footer-navigation-category__item:last-child {
+    margin-bottom: 0; }
+
+.um-components .footer-navigation-category__link {
+  margin-right: 0; }
+
+.um-components .footer-navigation-category__link,
+.um-components .footer-navigation-category__link:hover,
+.um-components .footer-navigation-category__link:focus,
+.um-components .footer-navigation-category__link:active,
+.um-components .footer-navigation-category__link:visited {
+  margin-bottom: 6px;
+  color: #000; }
+
+.um-components .footer__legal__column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: auto; }
+  @media (min-width: 569px) {
+    .um-components .footer__legal__column {
+      justify-content: space-around;
+      flex-direction: row; } }
+
+.um-components .footer__legal__column .footer-navigation-category__title {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: -10px;
+  margin-bottom: 18px;
+  font-weight: normal;
+  margin: 0 6px 12px 0; }
+  @media (min-width: 569px) {
+    .um-components .footer__legal__column .footer-navigation-category__title {
+      margin: 0 12px 0 0; } }
+
+.um-components .footer__legal__column .footer-navigation-category__list {
+  display: flex; }
+
+.um-components .footer__legal__column .footer-navigation-category__link,
+.um-components .footer__legal__column .footer-navigation-category__link:hover,
+.um-components .footer__legal__column .footer-navigation-category__link:focus,
+.um-components .footer__legal__column .footer-navigation-category__link:active,
+.um-components .footer__legal__column .footer-navigation-category__link:visited {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: -10px;
+  margin-bottom: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #7f7f7f;
+  margin-right: 12px; }
+
 .um-components .icon-button, .um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button {
   transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   font-size: 14px;
@@ -3975,488 +4145,101 @@ because both families serve another purpose. Therefore the line-heights will be 
   font-size: 18px;
   margin: 3px; }
 
-.um-components .product {
-  display: flex;
-  margin-right: 24px; }
-  @media (min-width: 1025px) {
-    .um-components .product {
-      padding-right: 12px;
-      margin-right: 12px; } }
-  .um-components .product__icon-container {
-    height: 36px;
-    width: 36px;
-    margin-right: 12px; }
-  .um-components .product__icon {
-    height: 36px;
-    width: 36px;
-    margin-right: 12px; }
-  .um-components .product__information {
-    display: flex;
-    flex-direction: column; }
-  .um-components .product__name {
-    font-size: 12px;
-    line-height: 18px;
-    color: #7f7f7f;
-    margin-bottom: 3px; }
-    @media (min-width: 768px) {
-      .um-components .product__name {
-        margin-bottom: 8px; } }
-  .um-components .product__pricing {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
-    margin-bottom: 0; }
-    @media (min-width: 768px) {
-      .um-components .product__pricing {
-        font-size: 20px;
-        line-height: 24px; } }
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.um-components .list-section + .list-section {
+  margin-top: -12px; }
 
-.um-components .tooltip-toggle {
-  position: relative;
-  display: inline-block; }
-
-.um-components .tooltip-toggle__tooltip {
-  font-size: 14px;
-  line-height: 21px;
-  bottom: 60px; }
-
-.um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
-  padding-left: 1em;
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
-  margin-bottom: 23px; }
-  @media (min-width: 768px) {
-    .um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: -5px;
-      margin-bottom: 29px; } }
-  .um-components .content-manageble ul li, .um-components .content-manageble .hero--text .content--rich ul li, .um-components .hero--text .content--rich .content-manageble ul li, .um-components .content-manageble ol li {
-    padding-left: 10px; }
-    @media (min-width: 768px) {
-      .um-components .content-manageble ul li, .um-components .content-manageble .hero--text .content--rich ul li, .um-components .hero--text .content--rich .content-manageble ul li, .um-components .content-manageble ol li {
-        padding-left: 8px; } }
-    .um-components .content-manageble ul li p, .um-components .content-manageble .hero--text .content--rich ul li p, .um-components .hero--text .content--rich .content-manageble ul li p, .um-components .content-manageble ul li strong, .um-components .content-manageble .hero--text .content--rich ul li strong, .um-components .hero--text .content--rich .content-manageble ul li strong, .um-components .content-manageble ul li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ul li .tablist__item, .um-components .content-manageble ul li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ul li .tablist__item, .um-components .content-manageble ol li p, .um-components .content-manageble ol li strong, .um-components .content-manageble ol li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ol li .tablist__item, .um-components .content-manageble ol li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ol li .tablist__item {
-      margin: 0;
-      word-wrap: break-word; }
-
-.um-components .content-manageble--copy-small p, .um-components .content-manageble--copy-small strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item, .um-components .content-manageble--copy-small ul, .um-components .content-manageble--copy-small .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble--copy-small ul {
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 21px;
-  word-wrap: break-word; }
-
-.um-components .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + ul, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small .hero--text .content--rich p + ul, .um-components .hero--text .content--rich .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small .hero--text .content--rich strong + ul, .um-components .hero--text .content--rich .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .hero--text .content--rich .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .um-components .content-manageble--copy-small .examples .examples__tabs .hero--text .content--rich .tablist__item + ul, .um-components .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .um-components .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small .hero--text .content--rich ul + p, .um-components .hero--text .content--rich .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .hero--text .content--rich ul + strong, .um-components .hero--text .content--rich .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .tablist__section ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs ul + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small ul + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item, .um-components .content-manageble--copy-small p + p, .um-components .content-manageble--copy-small strong + p, .um-components .content-manageble--copy-small .tablist__section .tablist__item + p, .um-components .tablist__section .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + p, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small p + strong, .um-components .content-manageble--copy-small strong + strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item + strong, .um-components .tablist__section .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + strong, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .tablist__section p + .tablist__item, .um-components .tablist__section .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .tablist__section strong + .tablist__item, .um-components .tablist__section .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .tablist__section .tablist__item + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs p + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs strong + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + .tablist__item {
-  margin-top: 21px; }
-
-.um-components .tab-table__content {
-  margin: 60px auto 0 auto; }
-
-.um-components .tab-table-row {
-  padding: 12px 0;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  flex-direction: column; }
-  @media (min-width: 768px) {
-    .um-components .tab-table-row {
+.um-components .list-section__header {
+  margin-bottom: 26px; }
+  @media (min-width: 569px) {
+    .um-components .list-section__header {
       flex-direction: row;
-      padding: 18px 0; } }
-  .um-components .tab-table-row:first-of-type {
-    border-top: 2px solid #eaeaea; }
-  .um-components .tab-table-row:last-of-type {
-    border-bottom: 2px solid #eaeaea; }
-  .um-components .tab-table-row__label, .um-components .tab-table-row__label--tooltip {
-    flex: 1;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px; }
-    .um-components .tab-table-row__label-text, .um-components .tab-table-row__label--tooltip-text {
-      margin: 0 18px 11px; }
-  .um-components .tab-table-row__label--tooltip {
-    margin-top: -12px; }
-    @media (min-width: 768px) {
-      .um-components .tab-table-row__label--tooltip {
-        margin-top: -16px; } }
-  .um-components .tab-table-row__value {
-    margin: 0 18px;
-    font-size: 14px;
-    line-height: 21px; }
-    @media (min-width: 768px) {
-      .um-components .tab-table-row__value {
-        margin: 0; } }
-  .um-components .tab-table-row__content {
-    flex: 1; }
-  .um-components .tab-table-row__linklist {
-    margin: 21px 18px 0; }
-    @media (min-width: 768px) {
-      .um-components .tab-table-row__linklist {
-        margin-right: 0;
-        margin-left: 0; } }
-    .um-components .tab-table-row__linklist .tab-table-row__linklist-item .tab-table-row__linklist-link {
-      margin-bottom: 6px; }
-    .um-components .tab-table-row__linklist .tab-table-row__linklist-item:last-child .tab-table-row__linklist-link {
-      margin-bottom: 0; }
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 17px; } }
 
-.um-components .card-download {
-  width: 100%; }
+.um-components .list-section__count {
+  color: #7f7f7f;
+  font-size: 0.75em; }
 
-.um-components .card-download__radio {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
-
-.um-components .card-download__label {
-  border: 2px solid #eaeaea;
-  cursor: pointer;
-  display: flex;
-  padding: 12px; }
-  @media (min-width: 768px) {
-    .um-components .card-download__label {
-      padding: 18px; } }
-  .um-components :checked + .card-download__label {
-    border-color: #196ef0; }
-
-.um-components .card-download__image-wrapper {
-  width: 45px;
-  height: 45px;
-  margin-right: 18px; }
-  @media (min-width: 768px) {
-    .um-components .card-download__image-wrapper {
-      width: 60px;
-      height: 60px; } }
-
-.um-components .card-download__title {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal; }
-  @media (min-width: 768px) {
-    .um-components .card-download__title {
-      font-size: 16px;
-      line-height: 24px; } }
-
-.um-components .card-download__desc {
-  font-size: 14px;
-  line-height: 21px;
-  color: #7F7F7F;
+.um-components .list-section__info-link {
   margin-bottom: 0; }
+  @media (min-width: 569px) {
+    .um-components .list-section__info-link {
+      margin-left: 24px; } }
 
-.um-components .wizard-step-download-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .um-components .wizard-step-download-list__description {
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-bottom: 24px;
-    flex-basis: 100%;
-    max-width: 100%;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .um-components .wizard-step-download-list__description {
-        flex-basis: 50%;
-        max-width: 50%;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 36px; } }
-  .um-components .wizard-step-download-list__item {
-    display: flex;
-    margin-bottom: 12px; }
-    .um-components .wizard-step-download-list__item:last-of-type {
-      margin-bottom: 0; }
-    @media (min-width: 768px) {
-      .um-components .wizard-step-download-list__item {
-        flex-direction: row;
-        margin-bottom: 0; }
-        .um-components .wizard-step-download-list__item:last-of-type {
-          margin-bottom: 0; } }
-  .um-components .wizard-step-download-list__button {
-    margin-top: 60px;
-    margin-bottom: 0; }
+.um-components .list-section__title {
+  margin-bottom: 12px; }
 
-.um-components .wizard-step-confirmation__container {
+.um-components .list-section__tooltip {
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 296px;
+  position: absolute;
+  opacity: 1;
+  transform: translateY(calc(-100% - 36px)); }
+  .um-components .list-section__tooltip:after {
+    left: 12px; }
+
+.um-components .list-section__container {
   padding: 0; }
 
-.um-components .wizard-step-confirmation__image-wrapper {
+.um-components .list-section__row {
   display: flex;
-  width: 75%;
-  margin: 0 auto 30px auto; }
-
-.um-components .wizard-step-confirmation__content {
-  display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start; }
   @media (min-width: 569px) {
-    .um-components .wizard-step-confirmation__content {
-      justify-content: flex-start;
-      align-items: flex-start;
-      padding-left: 24px; }
-      .um-components .flexgrid--row-reversed .wizard-step-confirmation__content {
-        padding-right: 24px;
-        padding-left: 0; } }
-
-.um-components .wizard-step-confirmation-header .header-block__title,
-.um-components .wizard-step-confirmation-header .header-block__subtitle {
-  text-align: center; }
-  @media (min-width: 569px) {
-    .um-components .wizard-step-confirmation-header .header-block__title,
-    .um-components .wizard-step-confirmation-header .header-block__subtitle {
-      text-align: left; } }
-
-.um-components .wizard-step-confirmation-footer.footer-block:not(:empty) {
-  padding-bottom: 0; }
-
-.um-components .wizard-step-confirmation__body {
-  margin-bottom: 24px; }
-  .um-components .wizard-step-confirmation__body > * {
-    margin: 0; }
-  @media (min-width: 569px) {
-    .um-components .wizard-step-confirmation__body {
-      text-align: left; } }
-
-.um-components .article-intro {
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: -5px;
-  margin-bottom: 29px;
-  margin-bottom: 63px; }
+    .um-components .list-section__row {
+      flex-direction: row;
+      justify-content: space-between; } }
   @media (min-width: 768px) {
-    .um-components .article-intro {
-      font-size: 18px;
-      line-height: 30px;
-      margin-top: -8px;
-      margin-bottom: 38px;
-      margin: 0 auto;
-      margin-bottom: 60px;
-      width: 66%; } }
-
-.um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
-  margin-top: -2px;
-  margin-bottom: 23px; }
-  @media (min-width: 768px) {
-    .um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
-      margin-top: -5px;
-      margin-bottom: 29px; } }
-
-.um-components .article-text ul > li, .um-components .article-text .hero--text .content--rich ul > li, .um-components .hero--text .content--rich .article-text ul > li, .um-components .article-text ol > li {
-  margin-bottom: 6px; }
-  .um-components .article-text ul > li p, .um-components .article-text .hero--text .content--rich ul > li p, .um-components .hero--text .content--rich .article-text ul > li p, .um-components .article-text ul > li strong, .um-components .article-text .hero--text .content--rich ul > li strong, .um-components .hero--text .content--rich .article-text ul > li strong, .um-components .article-text ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ol > li p, .um-components .article-text ol > li strong, .um-components .article-text ol > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ol > li .tablist__item, .um-components .article-text ol > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ol > li .tablist__item {
-    margin: 0; }
-
-.um-components .article-text p + h2, .um-components .article-text strong + h2, .um-components .article-text .tablist__section .tablist__item + h2, .um-components .tablist__section .article-text .tablist__item + h2, .um-components .article-text .examples .examples__tabs .tablist__item + h2, .um-components .examples .examples__tabs .article-text .tablist__item + h2 {
-  margin-top: 48px; }
-
-.um-components .article-text blockquote {
-  font-size: 18px;
-  line-height: 24px;
-  color: #7f7f7f;
-  text-align: center;
-  margin: 30px 0; }
-  .um-components .article-text blockquote > p, .um-components .article-text blockquote > strong, .um-components .article-text .tablist__section blockquote > .tablist__item, .um-components .tablist__section .article-text blockquote > .tablist__item, .um-components .article-text .examples .examples__tabs blockquote > .tablist__item, .um-components .examples .examples__tabs .article-text blockquote > .tablist__item {
-    display: inline;
-    margin: 0; }
-  .um-components .article-text blockquote [lang="en"] {
-    quotes: "“" "”"; }
-  .um-components .article-text blockquote::before {
-    content: open-quote; }
-  .um-components .article-text blockquote::after {
-    content: close-quote; }
-  @media (min-width: 768px) {
-    .um-components .article-text blockquote {
-      font-size: 24px;
-      line-height: 30px; } }
+    .um-components .list-section__row {
+      flex-direction: row;
+      justify-content: space-between; } }
 
 @media (min-width: 768px) {
-  .um-components .article-text {
-    margin: 0 auto;
-    width: 66%; } }
+  .um-components .list-section__row--even {
+    justify-content: flex-start; } }
 
-.um-components .article-text b {
-  font-weight: 600; }
-
-.um-components .article-image {
-  width: 100%;
-  margin: 0 0 36px 0;
-  padding: 0; }
-  .um-components .article-image__container {
-    height: 233px; }
-    @media (min-width: 768px) {
-      .um-components .article-image__container {
-        height: 540px; } }
-  @media (min-width: 768px) {
-    .um-components .article-image {
-      margin-bottom: 60px; } }
-  .um-components .article-image__caption {
-    margin: 12px auto 0 auto;
-    text-align: center;
-    font-size: 12px;
-    line-height: 18px;
-    color: #000; }
-    @media (min-width: 768px) {
-      .um-components .article-image__caption {
-        width: 66%;
-        margin-top: 24px; } }
-
-.um-components .article-author {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0; }
-  .um-components .article-author__meta {
-    display: flex;
-    flex-direction: column; }
-  .um-components .article-author__name {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 500;
-    margin-bottom: 3px; }
-  .um-components .article-author__published-date {
-    font-size: 14px;
-    line-height: 21px;
-    color: #7f7f7f; }
-  .um-components .article-author__image {
-    height: 48px;
-    width: 48px;
-    border-radius: 100%;
-    margin-right: 12px; }
-    @media (min-width: 768px) {
-      .um-components .article-author__image {
-        margin-left: 12px; } }
-
-.um-components .article-video {
-  position: relative;
-  background-color: #e3e3e3;
-  padding-top: 50%;
-  margin-bottom: 48px; }
-  @media (min-width: 768px) {
-    .um-components .article-video {
-      margin-bottom: 60px; } }
-
-.um-components .article-video__overlay--overlay,
-.um-components .article-video__overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
-.um-components .article-video__overlay--overlay {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.um-components .article-video__button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; }
-  .um-components .article-video__button:hover {
-    color: #fff; }
-
-.um-components .article-ctas {
-  display: flex;
-  justify-content: center;
-  margin-top: 27px;
-  margin-bottom: 28px; }
-  @media (min-width: 768px) {
-    .um-components .article-ctas {
-      margin-top: 36px;
-      margin-bottom: 24px; } }
-
-.um-components .footer-navigation-category__column {
-  flex: 1 0 auto;
-  position: relative;
+.um-components .list-section__item {
   margin-bottom: 12px;
-  margin-right: 6px;
-  padding-right: 6px;
-  width: 50%; }
+  flex-basis: calc(100% - 6px);
+  min-width: calc(100% - 6px); }
+  .um-components .list-section__row--even .list-section__item {
+    margin-right: 0; }
   @media (min-width: 569px) {
-    .um-components .footer-navigation-category__column {
-      border-right: 1px solid #eaeaea;
-      margin-right: 18px;
-      padding-right: 18px;
-      margin-bottom: 0;
-      width: auto; }
-      .um-components .footer-navigation-category__column:last-of-type {
-        border-right: none;
+    .um-components .list-section__item {
+      flex-basis: calc(50% - 6px);
+      min-width: calc(50% - 6px); }
+      .um-components .list-section__row--even .list-section__item {
         margin-right: 0; } }
-  @media (min-width: 1025px) {
-    .um-components .footer-navigation-category__column {
-      margin-right: 24px;
-      padding-right: 24px; }
-      .um-components .footer-navigation-category__column:last-of-type {
-        border-right: none;
-        padding-right: 0; } }
+  @media (min-width: 768px) {
+    .um-components .list-section__item {
+      margin-bottom: 24px;
+      flex-basis: calc(33% - 12px);
+      min-width: calc(33% - 12px); }
+      .um-components .list-section__row--even .list-section__item {
+        margin-right: 24px; } }
 
-.um-components .footer-navigation-category__list {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+.um-components .list-section + .footer-block {
+  margin-top: 60px; }
 
-.um-components .footer-navigation-category__title {
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
-  margin-bottom: 23px;
-  font-weight: bold;
-  margin-bottom: 8px; }
-
-.um-components .footer-navigation-category__item {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  line-height: 21px; }
-  .um-components .footer-navigation-category__item:last-child {
-    margin-bottom: 0; }
-
-.um-components .footer-navigation-category__link {
-  margin-right: 0; }
-
-.um-components .footer-navigation-category__link,
-.um-components .footer-navigation-category__link:hover,
-.um-components .footer-navigation-category__link:focus,
-.um-components .footer-navigation-category__link:active,
-.um-components .footer-navigation-category__link:visited {
-  margin-bottom: 6px;
-  color: #000; }
-
-.um-components .footer__legal__column {
-  display: flex;
+.um-components .list-section__footer {
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  width: auto; }
-  @media (min-width: 569px) {
-    .um-components .footer__legal__column {
-      justify-content: space-around;
-      flex-direction: row; } }
-
-.um-components .footer__legal__column .footer-navigation-category__title {
-  font-size: 12px;
-  line-height: 18px;
-  margin-top: -10px;
-  margin-bottom: 18px;
-  font-weight: normal;
-  margin: 0 6px 12px 0; }
-  @media (min-width: 569px) {
-    .um-components .footer__legal__column .footer-navigation-category__title {
-      margin: 0 12px 0 0; } }
-
-.um-components .footer__legal__column .footer-navigation-category__list {
-  display: flex; }
-
-.um-components .footer__legal__column .footer-navigation-category__link,
-.um-components .footer__legal__column .footer-navigation-category__link:hover,
-.um-components .footer__legal__column .footer-navigation-category__link:focus,
-.um-components .footer__legal__column .footer-navigation-category__link:active,
-.um-components .footer__legal__column .footer-navigation-category__link:visited {
-  font-size: 12px;
-  line-height: 18px;
-  margin-top: -10px;
-  margin-bottom: 18px;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #7f7f7f;
-  margin-right: 12px; }
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px; }
 
 .um-components .main-nav {
   position: relative; }
@@ -4619,6 +4402,42 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .main-nav--large .main-nav__toggle {
     display: initial; }
 
+.um-components .product {
+  display: flex;
+  margin-right: 24px; }
+  @media (min-width: 1025px) {
+    .um-components .product {
+      padding-right: 12px;
+      margin-right: 12px; } }
+  .um-components .product__icon-container {
+    height: 36px;
+    width: 36px;
+    margin-right: 12px; }
+  .um-components .product__icon {
+    height: 36px;
+    width: 36px;
+    margin-right: 12px; }
+  .um-components .product__information {
+    display: flex;
+    flex-direction: column; }
+  .um-components .product__name {
+    font-size: 12px;
+    line-height: 18px;
+    color: #7f7f7f;
+    margin-bottom: 3px; }
+    @media (min-width: 768px) {
+      .um-components .product__name {
+        margin-bottom: 8px; } }
+  .um-components .product__pricing {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .um-components .product__pricing {
+        font-size: 20px;
+        line-height: 24px; } }
+
 /** @format */
 .um-components .social-sharing {
   display: flex;
@@ -4647,93 +4466,164 @@ because both families serve another purpose. Therefore the line-heights will be 
   height: 36px;
   width: 36px; }
 
-/** @format */
-.um-components .list-section + .list-section {
-  margin-top: -12px; }
+.um-components .tab-table__content {
+  margin: 60px auto 0 auto; }
 
-.um-components .list-section__header {
-  margin-bottom: 26px; }
-  @media (min-width: 569px) {
-    .um-components .list-section__header {
+.um-components .tab-table-row {
+  padding: 12px 0;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .um-components .tab-table-row {
       flex-direction: row;
-      display: flex;
-      align-items: baseline;
-      margin-bottom: 17px; } }
+      padding: 18px 0; } }
+  .um-components .tab-table-row:first-of-type {
+    border-top: 2px solid #eaeaea; }
+  .um-components .tab-table-row:last-of-type {
+    border-bottom: 2px solid #eaeaea; }
+  .um-components .tab-table-row__label, .um-components .tab-table-row__label--tooltip {
+    flex: 1;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px; }
+    .um-components .tab-table-row__label-text, .um-components .tab-table-row__label--tooltip-text {
+      margin: 0 18px 11px; }
+  .um-components .tab-table-row__label--tooltip {
+    margin-top: -12px; }
+    @media (min-width: 768px) {
+      .um-components .tab-table-row__label--tooltip {
+        margin-top: -16px; } }
+  .um-components .tab-table-row__value {
+    margin: 0 18px;
+    font-size: 14px;
+    line-height: 21px; }
+    @media (min-width: 768px) {
+      .um-components .tab-table-row__value {
+        margin: 0; } }
+  .um-components .tab-table-row__content {
+    flex: 1; }
+  .um-components .tab-table-row__linklist {
+    margin: 21px 18px 0; }
+    @media (min-width: 768px) {
+      .um-components .tab-table-row__linklist {
+        margin-right: 0;
+        margin-left: 0; } }
+    .um-components .tab-table-row__linklist .tab-table-row__linklist-item .tab-table-row__linklist-link {
+      margin-bottom: 6px; }
+    .um-components .tab-table-row__linklist .tab-table-row__linklist-item:last-child .tab-table-row__linklist-link {
+      margin-bottom: 0; }
 
-.um-components .list-section__count {
-  color: #7f7f7f;
-  font-size: 0.75em; }
+.um-components .tooltip-toggle {
+  position: relative;
+  display: inline-block; }
 
-.um-components .list-section__info-link {
-  margin-bottom: 0; }
-  @media (min-width: 569px) {
-    .um-components .list-section__info-link {
-      margin-left: 24px; } }
-
-.um-components .list-section__title {
-  margin-bottom: 12px; }
-
-.um-components .list-section__tooltip {
+.um-components .tooltip-toggle__tooltip {
   font-size: 14px;
   line-height: 21px;
-  max-width: 296px;
-  position: absolute;
-  opacity: 1;
-  transform: translateY(calc(-100% - 36px)); }
-  .um-components .list-section__tooltip:after {
-    left: 12px; }
+  bottom: 60px; }
 
-.um-components .list-section__container {
+.um-components .wizard-step-confirmation__container {
   padding: 0; }
 
-.um-components .list-section__row {
+.um-components .wizard-step-confirmation__image-wrapper {
+  display: flex;
+  width: 75%;
+  margin: 0 auto 30px auto; }
+
+.um-components .wizard-step-confirmation__content {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 569px) {
+    .um-components .wizard-step-confirmation__content {
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 24px; }
+      .um-components .flexgrid--row-reversed .wizard-step-confirmation__content {
+        padding-right: 24px;
+        padding-left: 0; } }
+
+.um-components .wizard-step-confirmation-header .header-block__title,
+.um-components .wizard-step-confirmation-header .header-block__subtitle {
+  text-align: center; }
+  @media (min-width: 569px) {
+    .um-components .wizard-step-confirmation-header .header-block__title,
+    .um-components .wizard-step-confirmation-header .header-block__subtitle {
+      text-align: left; } }
+
+.um-components .wizard-step-confirmation-footer.footer-block:not(:empty) {
+  padding-bottom: 0; }
+
+.um-components .wizard-step-confirmation__body {
+  margin-bottom: 24px; }
+  .um-components .wizard-step-confirmation__body > * {
+    margin: 0; }
+  @media (min-width: 569px) {
+    .um-components .wizard-step-confirmation__body {
+      text-align: left; } }
+
+.um-components .wizard-step-download-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-start; }
-  @media (min-width: 569px) {
-    .um-components .list-section__row {
-      flex-direction: row;
-      justify-content: space-between; } }
+  align-items: center; }
+  .um-components .wizard-step-download-list__description {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .um-components .wizard-step-download-list__description {
+        flex-basis: 50%;
+        max-width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 36px; } }
+  .um-components .wizard-step-download-list__item {
+    display: flex;
+    margin-bottom: 12px; }
+    .um-components .wizard-step-download-list__item:last-of-type {
+      margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .um-components .wizard-step-download-list__item {
+        flex-direction: row;
+        margin-bottom: 0; }
+        .um-components .wizard-step-download-list__item:last-of-type {
+          margin-bottom: 0; } }
+  .um-components .wizard-step-download-list__button {
+    margin-top: 60px;
+    margin-bottom: 0; }
+
+.um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
+  padding-left: 1em;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -2px;
+  margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .um-components .list-section__row {
-      flex-direction: row;
-      justify-content: space-between; } }
+    .um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: -5px;
+      margin-bottom: 29px; } }
+  .um-components .content-manageble ul li, .um-components .content-manageble .hero--text .content--rich ul li, .um-components .hero--text .content--rich .content-manageble ul li, .um-components .content-manageble ol li {
+    padding-left: 10px; }
+    @media (min-width: 768px) {
+      .um-components .content-manageble ul li, .um-components .content-manageble .hero--text .content--rich ul li, .um-components .hero--text .content--rich .content-manageble ul li, .um-components .content-manageble ol li {
+        padding-left: 8px; } }
+    .um-components .content-manageble ul li p, .um-components .content-manageble .hero--text .content--rich ul li p, .um-components .hero--text .content--rich .content-manageble ul li p, .um-components .content-manageble ul li strong, .um-components .content-manageble .hero--text .content--rich ul li strong, .um-components .hero--text .content--rich .content-manageble ul li strong, .um-components .content-manageble ul li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ul li .tablist__item, .um-components .content-manageble ul li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ul li .tablist__item, .um-components .content-manageble ol li p, .um-components .content-manageble ol li strong, .um-components .content-manageble ol li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ol li .tablist__item, .um-components .content-manageble ol li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ol li .tablist__item {
+      margin: 0;
+      word-wrap: break-word; }
 
-@media (min-width: 768px) {
-  .um-components .list-section__row--even {
-    justify-content: flex-start; } }
+.um-components .content-manageble--copy-small p, .um-components .content-manageble--copy-small strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item, .um-components .content-manageble--copy-small ul, .um-components .content-manageble--copy-small .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble--copy-small ul {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 21px;
+  word-wrap: break-word; }
 
-.um-components .list-section__item {
-  margin-bottom: 12px;
-  flex-basis: calc(100% - 6px);
-  min-width: calc(100% - 6px); }
-  .um-components .list-section__row--even .list-section__item {
-    margin-right: 0; }
-  @media (min-width: 569px) {
-    .um-components .list-section__item {
-      flex-basis: calc(50% - 6px);
-      min-width: calc(50% - 6px); }
-      .um-components .list-section__row--even .list-section__item {
-        margin-right: 0; } }
-  @media (min-width: 768px) {
-    .um-components .list-section__item {
-      margin-bottom: 24px;
-      flex-basis: calc(33% - 12px);
-      min-width: calc(33% - 12px); }
-      .um-components .list-section__row--even .list-section__item {
-        margin-right: 24px; } }
-
-.um-components .list-section + .footer-block {
-  margin-top: 60px; }
-
-.um-components .list-section__footer {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: 24px;
-  margin-bottom: 24px; }
+.um-components .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + ul, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small .hero--text .content--rich p + ul, .um-components .hero--text .content--rich .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small .hero--text .content--rich strong + ul, .um-components .hero--text .content--rich .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .hero--text .content--rich .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .um-components .content-manageble--copy-small .examples .examples__tabs .hero--text .content--rich .tablist__item + ul, .um-components .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .um-components .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small .hero--text .content--rich ul + p, .um-components .hero--text .content--rich .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .hero--text .content--rich ul + strong, .um-components .hero--text .content--rich .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .tablist__section ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs ul + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small ul + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item, .um-components .content-manageble--copy-small p + p, .um-components .content-manageble--copy-small strong + p, .um-components .content-manageble--copy-small .tablist__section .tablist__item + p, .um-components .tablist__section .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + p, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small p + strong, .um-components .content-manageble--copy-small strong + strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item + strong, .um-components .tablist__section .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + strong, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .tablist__section p + .tablist__item, .um-components .tablist__section .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .tablist__section strong + .tablist__item, .um-components .tablist__section .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .tablist__section .tablist__item + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs p + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs strong + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + .tablist__item {
+  margin-top: 21px; }
 
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
   background-color: #fafafa; }

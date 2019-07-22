@@ -1040,7 +1040,7 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                 
               </a>
             </header>
-             
+              
             <ul
               class="list-section__container"
             />
@@ -1081,7 +1081,7 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                
               <!---->
             </header>
-             
+              
             <ul
               class="list-section__container"
             />
