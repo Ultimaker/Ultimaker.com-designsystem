@@ -4,9 +4,10 @@ import { applications } from 'components/molecules/filter-category/data/examples
 import { industries } from 'components/molecules/filter-category/data/examples/industries';
 import { introduce } from 'components/molecules/cards/card-article/data/examples/introduce';
 import { newLab } from 'components/molecules/cards/card-article/data/examples/new-lab';
+import { noLabels } from 'components/molecules/cards/card-article/data/examples/no-labels';
 
 export const filterCategories = {
-    cards: [introduce, newLab, introduce, newLab, introduce, newLab, introduce, newLab],
+    cards: [introduce, newLab, noLabels, introduce, newLab, introduce, newLab, introduce, newLab],
     filterCategories: [applications, industries],
     limit: {
         expand: {
