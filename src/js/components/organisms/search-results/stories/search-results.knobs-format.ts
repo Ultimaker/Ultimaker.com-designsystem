@@ -1,3 +1,5 @@
 /** @format */
 
-export default {};
+export default {
+    searchResults: []
+};

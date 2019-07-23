@@ -11,7 +11,9 @@ const getStory = (type) => () => {
     const knobs = getKnobs(data[type], knobsFormat);
 
     return {
-        props: {},
+        props: {
+            searchResults: { default: knobs.searchResults },
+        },
         template: require('./search-results.html'),
     };
 };

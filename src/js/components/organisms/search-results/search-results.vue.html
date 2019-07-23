@@ -1,5 +1,9 @@
 <!-- @format -->
 
-<div>
-    <h2>Generated SearchResults component</h2>
-</div>
+<section class="search-results">
+    <ul class="search-results__list">
+        <li class="search-results__list-item" v-for="searchResult in searchResults">
+            <search-result v-bind="searchResult" />
+        </li>
+    </ul>
+</section>
