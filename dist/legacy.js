@@ -11284,9 +11284,12 @@ var ListSection = function (_Mixins) {
 
             if (this.filtersAll.length) {
                 return this.cards.filter(function (card) {
-                    return card.labels.some(function (label) {
-                        return _this3.filtersAll.includes(label);
-                    });
+                    if (card.labels) {
+                        return card.labels.some(function (label) {
+                            return _this3.filtersAll.includes(label);
+                        });
+                    }
+                    return false;
                 });
             }
             return this.cards;
