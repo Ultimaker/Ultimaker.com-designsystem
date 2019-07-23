@@ -3032,7 +3032,7 @@ exports[`Storyshots Molecules/list-section filterCategories 1`] = `
         style="display: none;"
       >
         
-            Show all (8)
+            Show all (9)
         
       </button>
     </footer>
@@ -12951,7 +12951,7 @@ exports[`Storyshots organisms/overview filterCategory 1`] = `
             style="display: none;"
           >
             
-            Show all (8)
+            Show all (9)
         
           </button>
         </footer>
