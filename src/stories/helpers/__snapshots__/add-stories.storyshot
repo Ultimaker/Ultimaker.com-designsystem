@@ -4096,6 +4096,65 @@ exports[`Storyshots Molecules/product printer 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/search-result default 1`] = `
+<section
+  class="story"
+>
+  <div
+    class="search-result"
+  >
+    <h3
+      class="search-result__title"
+    >
+      <a
+        class="search-result__link"
+        href="https://ultimaker.com/en/resources/52601-update-the-firmware"
+      >
+        Update the 
+        <mark>
+          S5
+        </mark>
+         firmware
+      </a>
+    </h3>
+     
+    <p
+      class="search-result__snippet"
+    >
+      Periodically, a new version of the 
+      <mark>
+        Ultimaker
+      </mark>
+       
+      <mark>
+        S5
+      </mark>
+       firmware is released. To ensure that your 
+      <mark>
+        Ultimaker
+      </mark>
+       
+      <mark>
+        S5
+      </mark>
+       has the latest features, we recommend keeping the …
+    </p>
+     
+    <p
+      class="search-result__url"
+    >
+      
+        https://ultimaker.com/en/resources/52601-update-the-firmware
+    
+    </p>
+  </div>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/social-sharing default 1`] = `
 <section
   class="story"

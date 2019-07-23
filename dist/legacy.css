@@ -4439,6 +4439,39 @@ because both families serve another purpose. Therefore the line-heights will be 
         line-height: 24px; } }
 
 /** @format */
+.um-components .search-result {
+  background-color: #fff;
+  padding: 18px;
+  position: relative; }
+  .um-components .search-result:hover {
+    background-color: #eaeaea; }
+
+.um-components .search-result__title {
+  margin: 0 0 6px; }
+
+.um-components .search-result__link {
+  color: #000; }
+  .um-components .search-result__link::after {
+    bottom: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; }
+  .um-components .search-result__link:hover {
+    color: inherit; }
+
+.um-components .search-result__snippet {
+  margin: 0 0 18px; }
+
+.um-components .search-result__url {
+  margin: 0; }
+
+.um-components .search-result mark {
+  background-color: inherit;
+  font-weight: bold; }
+
+/** @format */
 .um-components .social-sharing {
   display: flex;
   justify-content: center;
