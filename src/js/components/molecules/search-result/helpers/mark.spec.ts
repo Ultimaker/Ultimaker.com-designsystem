@@ -16,7 +16,7 @@ describe('search result helpers', () => {
             const terms = 'lorem';
 
             expect(mark(text, terms)).toEqual(
-                '<mark>lorem</mark> ipsum dolor sit amet <mark>lorem</mark> ipsum dolor sit amet'
+                '<mark>lorem</mark> ipsum dolor sit amet <mark>lorem</mark> ipsum dolor sit amet',
             );
         });
     });
