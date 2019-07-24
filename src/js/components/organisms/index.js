@@ -10,6 +10,6 @@ export { default as LocaleSelector } from 'organisms/locale-selector';
 export { default as Overview } from 'organisms/overview';
 export { default as PageFooter } from 'organisms/page-footer';
 export { default as PageHeader } from 'organisms/page-header';
+export { default as SearchResults } from 'organisms/search-results';
 export { default as TableCompare } from 'organisms/table-compare';
 export { default as TabbedTable } from 'organisms/tabbed-table';
-export { default as SearchResults } from 'organisms/search-results';
