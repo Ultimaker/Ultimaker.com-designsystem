@@ -19,4 +19,10 @@ export class SearchResults extends Vue implements SearchResultsProps {
     loadMore() {
         this.$emit(this.eventName);
     }
+
+    get computedTitle() {
+        return this.searchResults.length
+            ? `Search results for: “${this.terms}”`
+            : `No results for “${this.terms}”`;
+    }
 }
