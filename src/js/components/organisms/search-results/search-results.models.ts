@@ -6,4 +6,5 @@ export interface SearchResultsProps {
     eventName: string;
     isLoading: boolean;
     searchResults: SearchResultProps[];
+    showLoadMore: boolean;
 }
