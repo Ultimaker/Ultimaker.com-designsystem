@@ -9,7 +9,7 @@
             <search-result v-bind="searchResult" :terms="terms" :key="key" />
         </li>
     </ul>
-    <footer class="search-results__footer">
+    <footer class="search-results__footer" v-if="showLoadMore">
         <button class="button button--secondary" :disabled="isLoading" @click="loadMore">Load more</button>
     </footer>
 </section>

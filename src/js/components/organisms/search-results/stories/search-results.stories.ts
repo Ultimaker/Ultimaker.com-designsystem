@@ -15,6 +15,7 @@ const getStory = (type) => () => {
             eventName: { default: knobs.eventName },
             isLoading: { default: knobs.isLoading },
             searchResults: { default: knobs.searchResults },
+            showLoadMore: { default: knobs.showLoadMore },
             terms: { default: knobs.terms },
         },
         template: require('./search-results.html'),
