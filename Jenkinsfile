@@ -135,7 +135,7 @@ podTemplate(
       currentBuild.result = 'FAILURE'
 
       office365ConnectorSend color: '#ff0000',
-        message: 'Failure while building *designsystem* branch \"${env.BRANCH_NAME}\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).',
+        message: "Failure while building *designsystem* branch \"${env.BRANCH_NAME}\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).",
         status: 'FAILURE',
         webhookUrl: 'https://outlook.office.com/webhook/4829f4a1-35aa-4dca-9ad7-89ac07833f0a@aecc8a99-f9b2-4dad-9cf1-038b83a3ff5f/JenkinsCI/2bf17d3039414d0eacbb2dcb387c4991/cdfdcb89-4370-47bb-95e6-921ab334adb2'
 
