@@ -134,9 +134,10 @@ podTemplate(
 
       currentBuild.result = 'FAILURE'
 
-      slackSend color: 'danger',
-        channel: '#ci-builds',
-        message: "Failure while building *designsystem* branch \"${env.BRANCH_NAME}\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> )."
+      office365ConnectorSend color: '#ff0000',
+        message: 'Failure while building *designsystem* branch \"${env.BRANCH_NAME}\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).',
+        status: 'FAILURE',
+        webhookUrl: 'https://outlook.office.com/webhook/4829f4a1-35aa-4dca-9ad7-89ac07833f0a@aecc8a99-f9b2-4dad-9cf1-038b83a3ff5f/JenkinsCI/2bf17d3039414d0eacbb2dcb387c4991/cdfdcb89-4370-47bb-95e6-921ab334adb2'
 
       throw e
 
@@ -159,9 +160,11 @@ podTemplate(
 
       currentBuild.result = 'FAILURE'
 
-      slackSend color: 'danger',
-        channel: '#ci-deployments',
-        message: "Failure while deploying *storybook* to \"development\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> )."
+      office365ConnectorSend color: '#ff0000',
+        message: "Failure while deploying *storybook* to \"development\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).",
+        status: 'FAILURE',
+        // ci-build channel
+        webhookUrl: 'https://outlook.office.com/webhook/4829f4a1-35aa-4dca-9ad7-89ac07833f0a@aecc8a99-f9b2-4dad-9cf1-038b83a3ff5f/JenkinsCI/2bf17d3039414d0eacbb2dcb387c4991/cdfdcb89-4370-47bb-95e6-921ab334adb2'
 
       throw e
 
@@ -170,15 +173,10 @@ podTemplate(
 }
 
 def deploymentUpdated(name, url, branch, commit) {
-  slackSend channel: '#ci-deployments',
-    attachments: [[
-      color: "good",
-      fallback: "Deployment \"${name}\" was updated.",
-      pretext: "Deployment \"<${url}|${name}>\" was updated ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).",
-      fields: [
-        [ title: "Component", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem|Designsystem>" ],
-        [ title: "Branch", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem/tree/${branch}|${branch}>" ],
-        [ title: "Commit", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem/commit/${commit}|${commit}>" ],
-      ]
-    ]]
+
+  office365ConnectorSend color: '#00ff3c',
+    message: "Deployment \"<${url}|${name}>\" was updated ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).",
+    status: 'SUCCESS',
+    // ci-deployment channel
+    webhookUrl: 'https://outlook.office.com/webhook/4829f4a1-35aa-4dca-9ad7-89ac07833f0a@aecc8a99-f9b2-4dad-9cf1-038b83a3ff5f/JenkinsCI/2bf17d3039414d0eacbb2dcb387c4991/cdfdcb89-4370-47bb-95e6-921ab334adb2'
 }
