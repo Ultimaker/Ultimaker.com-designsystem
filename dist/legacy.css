@@ -1113,11 +1113,19 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components ::placeholder {
   color: #7f7f7f; }
 
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 .um-components table {
   border: 0;
   border-bottom: 2px solid #e3e3e3;
   border-collapse: collapse;
-  margin: 0 0 24px;
+  margin: 0 0 36px;
   text-align: left;
   width: 100%; }
 
