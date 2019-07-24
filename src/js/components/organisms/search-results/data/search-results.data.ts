@@ -1,7 +1,7 @@
 /** @format */
 
 export const data = {
-    default: {
+    'with search results': {
         eventName: 'search-load-more',
         isLoading: false,
         searchResults: [
@@ -47,6 +47,13 @@ export const data = {
             },
         ],
         showLoadMore: true,
+        terms: 'Ultimaker S5',
+    },
+    'no search results': {
+        eventName: 'search-load-more',
+        isLoading: false,
+        searchResults: [],
+        showLoadMore: false,
         terms: 'Ultimaker S5',
     },
 };

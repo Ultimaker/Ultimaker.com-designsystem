@@ -2,9 +2,9 @@
 
 <section class="search-results">
     <h1 class="search-results__title">
-        Search results for: “{{ terms }}”
+        {{ computedTitle }}
     </h1>
-    <ul class="search-results__list">
+    <ul class="search-results__list" v-if="searchResults.length">
         <li class="search-results__list-item" v-for="(searchResult, key) in searchResults">
             <search-result v-bind="searchResult" :terms="terms" :key="key" />
         </li>
