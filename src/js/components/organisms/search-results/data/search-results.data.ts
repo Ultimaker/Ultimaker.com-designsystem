@@ -2,6 +2,8 @@
 
 export const data = {
     default: {
+        eventName: 'search-load-more',
+        isLoading: false,
         searchResults: [
             {
                 terms: 'Ultimaker S5',
@@ -44,5 +46,6 @@ export const data = {
                 formattedUrl: 'https://ultimaker.com/.../52820-firmware-52-beta-available-for-the-ultimaker -s5',
             },
         ],
+        terms: 'Ultimaker S5',
     },
 };

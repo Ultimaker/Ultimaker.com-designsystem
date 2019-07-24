@@ -3,8 +3,22 @@
 .search-results {
 }
 
+.search-results__title {
+    font-size: 32px;
+    text-align: center;
+}
+
 .search-results__list {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.search-results__list-item {
+    margin: 0 0 $buildingUnit;
+}
+
+.search-results__footer {
+    padding: 2 * $buildingUnit 0;
+    text-align: center;
 }

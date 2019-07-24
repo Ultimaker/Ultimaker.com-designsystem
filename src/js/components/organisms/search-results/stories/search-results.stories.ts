@@ -12,7 +12,10 @@ const getStory = (type) => () => {
 
     return {
         props: {
+            eventName: { default: knobs.eventName },
+            isLoading: { default: knobs.isLoading },
             searchResults: { default: knobs.searchResults },
+            terms: { default: knobs.terms },
         },
         template: require('./search-results.html'),
     };

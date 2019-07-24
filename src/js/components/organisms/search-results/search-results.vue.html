@@ -1,9 +1,15 @@
 <!-- @format -->
 
 <section class="search-results">
+    <h1 class="search-results__title">
+        Search results for: “{{ terms }}”
+    </h1>
     <ul class="search-results__list">
-        <li class="search-results__list-item" v-for="searchResult in searchResults">
-            <search-result v-bind="searchResult" />
+        <li class="search-results__list-item" v-for="(searchResult, key) in searchResults">
+            <search-result v-bind="searchResult" :terms="terms" :key="key" />
         </li>
     </ul>
+    <footer class="search-results__footer">
+        <button class="button button--secondary" :disabled="isLoading" @click="loadMore">Load more</button>
+    </footer>
 </section>

@@ -1,5 +1,8 @@
 /** @format */
 
 export default {
-    searchResults: []
+    eventName: '',
+    isLoading: false,
+    searchResults: [],
+    terms: '',
 };
