@@ -4,30 +4,16 @@
     <h1 class="search-results__title">
         {{ computedTitle }}
     </h1>
-    <ul
-        class="search-results__list"
-        v-if="searchResults.length"
-    >
-        <li
-            class="search-results__list-item"
-            v-for="(searchResult, key) in searchResults"
-            :key="key"
-        >
-            <search-result
-                v-bind="searchResult"
-                :terms="terms"
-            />
-        </li>
-    </ul>
-    <footer
-        class="search-results__footer"
-        v-if="showLoadMore"
-    >
-        <button
-            class="button button--secondary"
-            :disabled="isLoading"
-            @click="loadMore"
-        >
+    <transition-group tag="ul" class="search-results__list" v-if="searchResults.length" @before-enter="beforeEnter"
+                      @enter="enter">
+        <template v-for="(searchResult, key) in searchResults">
+            <li class="search-results__list-item" :key="key">
+                <search-result v-bind="searchResult" :terms="terms"/>
+            </li>
+        </template>
+    </transition-group>
+    <footer class="search-results__footer" v-if="showLoadMore">
+        <button class="button button--secondary" :disabled="isLoading" @click="loadMore">
             Load more
         </button>
     </footer>
