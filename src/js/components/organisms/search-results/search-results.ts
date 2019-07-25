@@ -1,6 +1,7 @@
 /** @format */
 
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
+import { Component, Mixins, Prop } from 'vue-property-decorator';
 import { SearchResultProps } from '../../molecules/search-result/search-result.models';
 import { SearchResultsProps } from './search-results.models';
 import WithRender from './search-results.vue.html';
@@ -9,7 +10,7 @@ import WithRender from './search-results.vue.html';
 @Component({
     name: 'SearchResults',
 })
-export class SearchResults extends Vue implements SearchResultsProps {
+export class SearchResults extends Mixins(StepRowAnimation) implements SearchResultsProps {
     @Prop({ type: String, required: true }) eventName!: SearchResultsProps['eventName'];
     @Prop({ type: Boolean, required: true }) isLoading!: SearchResultsProps['isLoading'];
     @Prop({ type: Array, required: true }) searchResults!: SearchResultProps[];
