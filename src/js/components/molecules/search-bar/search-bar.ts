@@ -1,16 +1,17 @@
 /** @format */
 
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { Search } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/search/Search';
 import WithRender from './search-bar.vue.html';
+
+import { SearchBarProps } from 'components/molecules/search-bar/search-bar.models';
 
 @WithRender
 @Component({
     name: 'search-bar',
 })
-export class SearchBar extends Vue implements Search {
-    @Prop({ type: String, required: true }) label!: Search['label'];
-    @Prop({ type: String, required: true }) placeholder!: Search['placeholder'];
+export class SearchBar extends Vue implements SearchBarProps {
+    @Prop({ type: String, required: true }) label!: SearchBarProps['label'];
+    @Prop({ type: String, required: true }) placeholder!: SearchBarProps['placeholder'];
     @Prop({ type: Boolean, required: false, default: false }) openState!: boolean;
 
     searchValue = '';
