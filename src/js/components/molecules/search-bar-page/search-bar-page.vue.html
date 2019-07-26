@@ -1,0 +1,29 @@
+<!-- @format -->
+
+<form
+    @submit.prevent="handleSubmit"
+    accept-charset="utf-8"
+    action="/search"
+    class="search-bar-page"
+    method="get"
+>
+    <label>
+        <span class="search-bar-page__label">{{ label }}</span>
+        <button class="search-bar-page__button" :disabled="isLoading">
+            <icon :icon-name="'search'"/>
+        </button
+        ><input
+            :disabled="isLoading"
+            :placeholder="placeholder"
+            v-model="q"
+            autocapitalize="off"
+            autocomplete="off"
+            autocorrect="off"
+            class="search-bar-page__input"
+            maxlength="512"
+            name="q"
+            spellcheck="false"
+            type="text"
+        >
+    </label>
+</form>

@@ -1,0 +1,32 @@
+/** @format */
+
+@import "~scss/tools/mixins/helpers";
+@import "~scss/settings/_variables.scss";
+
+.search-bar-page {
+    text-space: discard;
+}
+
+.search-bar-page__button {
+    height: 60px;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 60px;
+}
+
+.search-bar-page__label {
+    @include visually-hidden;
+}
+
+.search-bar-page__input {
+    height: 60px;
+    font-size: 24px;
+    vertical-align: top;
+    width: calc(50%);
+}
+
+.search-bar-page__input:disabled {
+    background-color: $colorGray;
+}
