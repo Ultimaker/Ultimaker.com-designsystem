@@ -21,8 +21,6 @@ export class SearchResults extends Mixins(StepRowAnimation) implements SearchRes
     }
 
     get computedTitle() {
-        return this.searchResults.length
-            ? `Search results for: “${this.terms}”`
-            : `No results for “${this.terms}”`;
+        return this.searchResults.length ? `Search results for: “${this.terms}”` : `No results for “${this.terms}”`;
     }
 }
