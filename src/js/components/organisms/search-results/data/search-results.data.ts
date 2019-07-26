@@ -6,7 +6,6 @@ export const data = {
         isLoading: false,
         searchResults: [
             {
-                terms: 'Ultimaker S5',
                 title: 'Reliability at scale - Ultimaker S5',
                 link: 'https://ultimaker.com/3d-printers/ultimaker-s5',
                 snippet:
@@ -14,7 +13,6 @@ export const data = {
                 formattedUrl: 'https://ultimaker.com/3d-printers/ultimaker-s5',
             },
             {
-                terms: 'Ultimaker S5',
                 title: 'Update the firmware',
                 link: 'https://ultimaker.com/en/resources/52601-update-the-firmware',
                 snippet:
@@ -22,7 +20,6 @@ export const data = {
                 formattedUrl: 'https://ultimaker.com/en/resources/52601-update-the-firmware',
             },
             {
-                terms: 'Ultimaker S5',
                 title: 'Ultimaker 3D printers: Reliable and easy to use',
                 link: 'https://ultimaker.com/3d-printers',
                 snippet:
@@ -30,7 +27,6 @@ export const data = {
                 formattedUrl: 'https://ultimaker.com/3d-printers',
             },
             {
-                terms: 'Ultimaker S5',
                 title: 'Update your Ultimaker firmware | Professional 3D printing made ...',
                 link: 'https://ultimaker.com/en/update-your-ultimaker-firmware',
                 snippet:
@@ -38,7 +34,6 @@ export const data = {
                 formattedUrl: 'https://ultimaker.com/en/update-your-ultimaker-firmware',
             },
             {
-                terms: 'Ultimaker S5',
                 title: 'Firmware 5.2 beta available for the Ultimaker S5 | Professional 3D ...',
                 link: 'https://ultimaker.com/en/blog/52820-firmware-52-beta-available-for-the-ultimaker-s5',
                 snippet:

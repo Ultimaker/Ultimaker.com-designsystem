@@ -7,4 +7,5 @@ export interface SearchResultsProps {
     isLoading: boolean;
     searchResults: SearchResultProps[];
     showLoadMore: boolean;
+    terms: SearchResultProps['terms'];
 }
