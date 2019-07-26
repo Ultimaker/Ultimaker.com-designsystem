@@ -1,7 +1,8 @@
-/* eslint-disable max-nested-callbacks */
+/** @format */
+
 import Vue from 'vue';
 import { build } from 'vuenit';
-import SearchBar from './search-bar';
+import { SearchBar } from './search-bar';
 import IconButton from '../icon-button';
 
 describe('components', () => {
