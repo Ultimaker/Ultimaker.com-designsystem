@@ -120,13 +120,19 @@
 }
 
 // Hide only visually, but have it available for screenreaders: h5bp.com/v
+// http://rikschennink.nl/thoughts/implicit-content-and-screen-readers/
 @mixin visually-hidden {
-    position: absolute;
-    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    border: 0;
     height: 1px;
     overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
+
 @mixin reset-visually-hidden {
     position: relative;
     width: auto;

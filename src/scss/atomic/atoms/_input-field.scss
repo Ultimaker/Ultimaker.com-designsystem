@@ -19,11 +19,6 @@ input[type="text"] {
     appearance: none;
 }
 
-input[type="text"]:not(.search__input) {
-    background: $colorGrayExtraLight;
-    @include font-line-ratio(prim-s);
-}
-
 .required:after {
     @include font-line-ratio(prim-s);
     content: "*";
