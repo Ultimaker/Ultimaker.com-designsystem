@@ -1,6 +1,6 @@
 /** @format */
 
-@import "~scss/tools/mixins/helpers";
+@import "~scss/tools/mixins/_animation.scss";
 @import "~scss/settings/_variables.scss";
 
 .search-bar-page {
@@ -8,12 +8,21 @@
 }
 
 .search-bar-page__button {
+    background-color: $colorGrayLight;
+    color: $colorBlack;
+    font-size: 24px;
     height: 60px;
     margin-bottom: 0;
     margin-right: 0;
     padding-left: 0;
     padding-right: 0;
     width: 60px;
+
+    @include micro-animate(background-color);
+}
+
+.search-bar-page__button:hover {
+    background-color: darken($colorGrayLight, $tintHoverFocus);
 }
 
 .search-bar-page__label {

@@ -1,11 +1,14 @@
 /** @format */
 
+@import "~scss/tools/mixins/_animation.scss";
 @import "~scss/settings/_variables.scss";
 
 .search-result {
     background-color: $colorWhite;
     padding: 1.5 * $buildingUnit;
     position: relative;
+
+    @include micro-animate(background-color);
 
     &:hover {
         background-color: $colorGrayLight;

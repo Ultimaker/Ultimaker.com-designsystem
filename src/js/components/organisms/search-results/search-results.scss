@@ -1,6 +1,10 @@
 /** @format */
-
 @import "~scss/settings/_variables.scss";
+@import "~scss/tools/mixins/_media.scss";
+
+.search-results {
+    margin-bottom: $buildingUnit * 5;
+}
 
 .search-results__title {
     font-size: 32px;
@@ -18,16 +22,20 @@
 }
 
 .search-results__footer {
-    padding: 2 * $buildingUnit 0;
+    padding-top: 2 * $buildingUnit;
     text-align: center;
 }
 
 .search-results .search-bar-page {
-    margin-top: $buildingUnit * 2;
-    margin-bottom: $buildingUnit * 2;
+    margin-top: $buildingUnit * 7;
+    margin-bottom: $buildingUnit * 7;
     text-align: center;
 }
 
 .search-results .search-bar-page__input {
-    width: calc(50%);
+    width: calc(100% - 70px);
+
+    @include min-tablet {
+        width: calc(50%);
+    }
 }
