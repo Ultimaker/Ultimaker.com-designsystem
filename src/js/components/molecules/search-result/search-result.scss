@@ -1,5 +1,7 @@
 /** @format */
 
+@import "~scss/settings/_variables.scss";
+
 .search-result {
     background-color: $colorWhite;
     padding: 1.5 * $buildingUnit;
