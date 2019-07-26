@@ -14,6 +14,7 @@ export class SearchBarPage extends Vue implements SearchBarPageProps {
     @Prop({ type: Boolean, required: true }) isLoading!: SearchBarPageProps['isLoading'];
     @Prop({ type: String, required: true }) label!: SearchBarPageProps['label'];
     @Prop({ type: String, required: true }) placeholder!: SearchBarPageProps['placeholder'];
+    @Prop({ type: String, default: 'search' }) searchFieldName?: SearchBarPageProps['searchFieldName'];
     @Prop({ type: String, required: true }) terms!: SearchBarPageProps['terms'];
 
     q: string = '';
