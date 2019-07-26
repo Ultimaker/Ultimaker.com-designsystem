@@ -1,8 +1,11 @@
 /** @format */
 
 export default {
-    eventName: '',
+    eventLoadMore: '',
+    eventSubmitSearch: '',
     isLoading: false,
+    label: '',
+    placeholder: '',
     searchResults: [],
     showLoadMore: false,
     terms: '',

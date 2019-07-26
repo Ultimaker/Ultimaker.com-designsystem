@@ -21,3 +21,13 @@
     padding: 2 * $buildingUnit 0;
     text-align: center;
 }
+
+.search-results .search-bar-page {
+    margin-top: $buildingUnit * 2;
+    margin-bottom: $buildingUnit * 2;
+    text-align: center;
+}
+
+.search-results .search-bar-page__input {
+    width: calc(50%);
+}

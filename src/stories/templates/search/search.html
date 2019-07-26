@@ -1,0 +1,9 @@
+<!-- format -->
+
+<section class="story__template">
+    <page-header v-bind="header" @toggle-nav="header.mainNavOpen = !header.mainNavOpen"></page-header>
+    <main class="container">
+        <search-results v-bind="searchResults" />
+    </main>
+    <page-footer  v-bind="footer"></page-footer>
+</section>
