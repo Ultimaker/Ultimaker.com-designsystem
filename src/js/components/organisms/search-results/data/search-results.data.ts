@@ -2,8 +2,11 @@
 
 export const data = {
     'with search results': {
-        eventName: 'search-load-more',
+        eventLoadMore: 'event-load-more',
+        eventSubmitSearch: 'event-submit-search',
         isLoading: false,
+        label: 'Search',
+        placeholder: 'How can we help?',
         searchResults: [
             {
                 title: 'Reliability at scale - Ultimaker S5',

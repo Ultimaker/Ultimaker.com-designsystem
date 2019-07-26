@@ -12,8 +12,11 @@ const getStory = (type) => () => {
 
     return {
         props: {
-            eventName: { default: knobs.eventName },
+            eventLoadMore: { default: knobs.eventLoadMore },
+            eventSubmitSearch: { default: knobs.eventSubmitSearch },
             isLoading: { default: knobs.isLoading },
+            label: { default: knobs.label },
+            placeholder: { default: knobs.placeholder },
             searchResults: { default: knobs.searchResults },
             showLoadMore: { default: knobs.showLoadMore },
             terms: { default: knobs.terms },
