@@ -28,46 +28,47 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
 
     $route;
 
+    activeCategories: object = {};
+    activeCategoryCount = 0;
+    activeCategoryFilters: string[] = [];
     chunks: object[] = [];
     chunkSize: number = 3;
     chunkIndex: number = 0;
     expanded: boolean = false;
-    filters: object = {};
-    filtersAll: any = [];
     showMax: number = 6;
     viewportUtil: ViewportUtil = new ViewportUtil();
     visibleChunks: number = 0;
     visibleTooltip: boolean = false;
 
-    beforeDestroy(): void {
-        this.viewportUtil.removeResizeHandler(this.handleResize);
+    get clickEventData() {
+        if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
+            const { clickEvent } = this.limit.expand;
+
+            return {
+                dataType: clickEvent.name,
+                data: {
+                    ...clickEvent.data,
+                    pageSlug: this.$route.fullPath,
+                },
+            };
+        }
+        return null;
     }
 
-    async mounted() {
-        if (!BrowserCapabilities.isBrowser) {
-            return;
-        }
-
-        await this.viewportUtil.addResizeHandler(this.handleResize);
-        await this.viewportUtil.triggerResize();
-        await this.handleResize();
-
-        this.createChunks();
+    get clickEventType() {
+        return Events.click;
     }
 
     get filteredCards() {
-        if (this.filtersAll.length) {
-            // @ts-ignore
-            return this.cards.filter((card) => {
-                if (card.labels) {
-                    return card.labels.some((label) => this.filtersAll.includes(label));
-                }
-
-                return false;
-            });
+        if (!this.activeCategoryFilters.length) {
+            return this.cards;
         }
 
-        return this.cards;
+        if (this.activeCategoryCount === 1) {
+            return this.getAllCardsThatMatchAllFilters();
+        }
+
+        return this.getAllCardsThatMatchAllFiltersAcrossCategories();
     }
 
     @Watch('cards')
@@ -81,13 +82,55 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         }
     }
 
-    handleFilterCategoryChange(payload): void {
-        this.filters[payload.category] = payload.filters;
-        this.filtersAll = [];
+    getAllCardsThatMatchAllFilters() {
+        // @ts-ignore
+        return this.cards.filter((card) => {
+            if (card.labels) {
+                return card.labels.some((label) => this.activeCategoryFilters.includes(label));
+            }
 
-        Object.keys(this.filters).forEach((category) => {
-            this.filters[category].forEach((value) => this.filtersAll.push(value));
+            return false;
         });
+    }
+
+    getAllCardsThatMatchAllFiltersAcrossCategories() {
+        // @ts-ignore
+        return this.cards.filter((card) => {
+            if (card.labels) {
+                let isLabelInAllCategories = true;
+
+                Object.keys(this.activeCategories).forEach(
+                    (category) => {
+                        if (this.activeCategories[category].length) {
+                            if (!card.labels.some((label) => this.activeCategories[category].includes(label))) {
+                                isLabelInAllCategories = false;
+                            }
+                        }
+                    },
+                );
+
+                return isLabelInAllCategories;
+            }
+
+            return false;
+        });
+    }
+
+    getActiveCategoryFilters() {
+        const result: string[] = [];
+
+        Object.keys(this.activeCategories).forEach((category) => {
+            this.activeCategoryCount += 1;
+            this.activeCategories[category].forEach((filter: string) => result.push(filter));
+        });
+
+        return result;
+    }
+
+    handleFilterCategoryChange(payload): void {
+        this.activeCategoryCount = 0;
+        this.activeCategories[payload.category] = payload.filters;
+        this.activeCategoryFilters = this.getActiveCategoryFilters();
 
         this.createChunks();
     }
@@ -124,6 +167,15 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         }
     }
 
+    hideTooltip(): void {
+        this.visibleTooltip = false;
+    }
+
+    showAll(): void {
+        this.expanded = true;
+        this.visibleChunks = Number.MAX_SAFE_INTEGER;
+    }
+
     showButton(): boolean {
         if (this.limit && !this.limit.expandAmount && this.expanded) {
             return false;
@@ -134,11 +186,6 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         }
 
         return !(this.chunks.length <= this.visibleChunks);
-    }
-
-    showAll(): void {
-        this.expanded = true;
-        this.visibleChunks = Number.MAX_SAFE_INTEGER;
     }
 
     showChunk(): void {
@@ -164,35 +211,12 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         return '';
     }
 
-    tooltipVisible(): boolean {
-        return this.visibleTooltip;
-    }
-
-    hideTooltip(): void {
-        this.visibleTooltip = false;
-    }
-
     toggleTooltip(): void {
         this.visibleTooltip = !this.visibleTooltip;
     }
 
-    get clickEventType() {
-        return Events.click;
-    }
-
-    get clickEventData() {
-        if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
-            const { clickEvent } = this.limit.expand;
-
-            return {
-                dataType: clickEvent.name,
-                data: {
-                    ...clickEvent.data,
-                    pageSlug: this.$route.fullPath,
-                },
-            };
-        }
-        return null;
+    tooltipVisible(): boolean {
+        return this.visibleTooltip;
     }
 
     triggerEventClick(): void {
@@ -203,5 +227,16 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
                 console.warn(e);
             }
         }
+    }
+
+    beforeDestroy(): void {
+        this.viewportUtil.removeResizeHandler(this.handleResize);
+    }
+
+    mounted() {
+        this.viewportUtil.addResizeHandler(this.handleResize);
+        this.viewportUtil.triggerResize();
+        this.handleResize();
+        this.createChunks();
     }
 }
