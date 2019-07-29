@@ -1,0 +1,13 @@
+@import "~scss/settings/_variables.scss";
+
+$focusBorderSize: 2px;
+$um-blueAccessible: #007faa; // http://colorsafe.co/
+
+@mixin focus {
+    color: $colorWhite;
+    background-color: lighten($um-blue, $tintHoverFocus); // #3f86f2
+}
+
+@mixin focus-outline {
+    outline: $focusBorderSize solid lighten($um-blue, $tintHoverFocus); // #3f86f2
+}

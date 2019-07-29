@@ -22,13 +22,13 @@ export class SearchBar extends Vue implements SearchBarProps {
         }
     }
 
-    doSearch() {
-        if (this.searchValue !== '') {
-            // temporary solution until search is implemented
-            // @ts-ignore
-            window.location = `/search?search=${encodeURIComponent(this.searchValue)}`;
-            this.close();
+    handleSubmit() {
+        if (!this.searchValue.length) {
+            return;
         }
+
+        this.close();
+        (this.$refs['search-form'] as HTMLFormElement).submit();
     }
 
     onBlur() {
@@ -38,7 +38,6 @@ export class SearchBar extends Vue implements SearchBarProps {
     }
 
     focusInput() {
-        // @ts-ignore
-        this.$refs.search__input.focus();
+        (this.$refs['search-bar__input'] as HTMLInputElement).focus();
     }
 }

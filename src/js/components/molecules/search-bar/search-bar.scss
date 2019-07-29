@@ -1,15 +1,25 @@
-.search {
+/** @format */
+
+@import "~scss/settings/_nav.scss";
+@import "~scss/settings/_variables.scss";
+@import "~scss/tools/mixins/_a11y.scss";
+@import "~scss/tools/mixins/_helpers.scss";
+@import "~scss/tools/mixins/_media.scss";
+@import "~scss/tools/mixins/_typography.scss";
+
+.search-bar {
     position: relative;
     height: $navHeight;
     z-index: 1010;
     border-bottom: 1px solid $colorGrayLight;
 }
 
-.search__label {
+.search-bar__label {
     @include visually-hidden();
 }
 
-.search__button, .um-components .search__button {
+.search-bar__button,
+.um-components .search-bar__button {
     @extend .sys-nav__link;
     position: absolute;
     display: block;
@@ -30,14 +40,15 @@
     }
 }
 
-.search__inputholder {
+.search-bar__inputholder {
     position: absolute;
-    left: $navHeight; right: $navHeight;
+    left: $navHeight;
+    right: $navHeight;
     display: block;
     height: $navHeight;
 }
 
-.search__input {
+.search-bar__input {
     width: 100%;
     height: $navHeight;
     margin: 0;
@@ -57,11 +68,12 @@
     outline: none;
 
     &:focus {
-        @extend %focus-outline;
+        @include focus-outline;
     }
 }
 
-.search__close-button {
+.search-bar__close-button {
     position: absolute;
-    top: 0; right: 0;
+    top: 0;
+    right: 0;
 }
