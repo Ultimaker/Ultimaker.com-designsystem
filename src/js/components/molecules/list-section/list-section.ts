@@ -40,6 +40,25 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
     visibleChunks: number = 0;
     visibleTooltip: boolean = false;
 
+    get activeFilters() {
+        return this.filteredCards.reduce(
+            (acc, card) => {
+                if (card.labels) {
+                    card.labels.forEach(
+                        (label) => {
+                            if (!acc.includes(label)) {
+                                acc.push(label);
+                            }
+                        },
+                    );
+                }
+
+                return acc;
+            },
+            [],
+        );
+    }
+
     get clickEventData() {
         if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
             const { clickEvent } = this.limit.expand;

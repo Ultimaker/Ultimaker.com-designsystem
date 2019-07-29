@@ -5,6 +5,7 @@ import { manufacturingAids } from 'components/atoms/label-filter/data/examples/m
 import { productDevelopment } from 'components/atoms/label-filter/data/examples/product-development';
 
 export const applications = {
+    activeFilters: ['End-user parts', 'Manufacturing aids', 'Product development'],
     labels: [
         endUserParts.label,
         manufacturingAids.label,

@@ -10,6 +10,7 @@ import { FilterCategoryProps } from './filter-category.models';
     name: 'FilterCategory',
 })
 export class FilterCategory extends Vue implements FilterCategoryProps {
+    @Prop({ type: Array }) activeFilters?: FilterCategoryProps['activeFilters'];
     @Prop({ type: Array, required: true }) labels!: FilterCategoryProps['labels'];
     @Prop({ type: String, required: true }) showAllLabel!: FilterCategoryProps['showAllLabel'];
     @Prop({ type: String, required: true }) title!: FilterCategoryProps['title'];
