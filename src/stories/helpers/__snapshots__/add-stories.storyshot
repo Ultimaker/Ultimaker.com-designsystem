@@ -4096,6 +4096,69 @@ exports[`Storyshots Molecules/product printer 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/search-bar default 1`] = `
+<section
+  class="story"
+>
+  <form
+    action="/search"
+    class="search-bar"
+    method="get"
+  >
+    <div
+      role="search"
+    >
+      <div
+        class="search-bar__inputholder"
+      >
+        <label
+          class="search-bar__label"
+          for="search-bar__input"
+        >
+          Search
+        </label>
+         
+        <input
+          autocapitalize="off"
+          autocomplete="off"
+          autocorrect="off"
+          class="search-bar__input"
+          id="search-bar__input"
+          name="search"
+          placeholder="A person often meets his destiny on the road he took to avoid it."
+        />
+      </div>
+       
+      <a
+        aria-label="Search"
+        class="icon-button icon-button icon-button--large search-bar__button"
+        role="button"
+        tabindex="0"
+      >
+        <!---->
+         
+        <!---->
+      </a>
+       
+      <a
+        aria-label="Close search"
+        class="icon-button icon-button icon-button--large search-bar__close-button"
+        role="button"
+        tabindex="0"
+      >
+        <!---->
+         
+        <!---->
+      </a>
+    </div>
+  </form>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/search-result default 1`] = `
 <section
   class="story"

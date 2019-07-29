@@ -318,7 +318,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #fff;
   background-color: #3f86f2; }
 
-.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .search__input:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
+.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components .examples .examples__tabs .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.overflow-container__link:hover a:focus:not(:hover), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .examples .examples__tabs .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:hover), .um-components .overflow-container__label a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.overflow-container__link:hover a:focus:not(:active), .um-components .link--small.overflow-container__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .examples .examples__tabs .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .examples .examples__tabs .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .hero--products-application .usp--icon .usp__label a:focus:not(:active), .um-components .overflow-container__label a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .overflow-container__link:focus:not(:hover), .um-components .overflow-container__link:focus:not(:active) {
   outline: 2px solid #3f86f2; }
 
 /** @format */
@@ -2932,7 +2932,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .sys-nav__item:last-child {
     margin-right: 0; }
 
-.um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button {
+.um-components .sys-nav__link, .um-components .search-bar__button, .um-components .um-components .search-bar__button {
   background: transparent; }
 
 .um-components .sys-nav__label {
@@ -2954,61 +2954,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     height: auto;
     overflow: initial;
     clip: initial; } }
-
-.um-components .search {
-  position: relative;
-  height: 60px;
-  z-index: 1010;
-  border-bottom: 1px solid #eaeaea; }
-
-.um-components .search__label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
-
-.um-components .search__button, .um-components .um-components .search__button {
-  position: absolute;
-  display: block;
-  font-size: 24px;
-  padding: 18px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  margin: 0;
-  background-color: #eaeaea;
-  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  .um-components .search__button:hover, .um-components .um-components .search__button:hover {
-    background-color: #d6d6d6; }
-
-.um-components .search__inputholder {
-  position: absolute;
-  left: 60px;
-  right: 60px;
-  display: block;
-  height: 60px; }
-
-.um-components .search__input {
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  background-color: #eaeaea;
-  padding: 0 12px;
-  border-radius: 0;
-  font-size: 20px;
-  line-height: 24px;
-  border: none;
-  outline: none; }
-  @media (min-width: 569px) {
-    .um-components .search__input {
-      font-size: 24px;
-      line-height: 30px; } }
-
-.um-components .search__close-button {
-  position: absolute;
-  top: 0;
-  right: 0; }
 
 .um-components .social-nav__item {
   display: inline-block;
@@ -4048,7 +3993,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #7f7f7f;
   margin-right: 12px; }
 
-.um-components .icon-button, .um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button {
+.um-components .icon-button, .um-components .sys-nav__link, .um-components .search-bar__button, .um-components .um-components .search-bar__button {
   transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   font-size: 14px;
   line-height: 21px;
@@ -4059,10 +4004,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #000;
   background-color: #fff;
   cursor: pointer; }
-  .um-components .icon-button:hover, .um-components .sys-nav__link:hover, .um-components .search__button:hover {
+  .um-components .icon-button:hover, .um-components .sys-nav__link:hover, .um-components .search-bar__button:hover {
     color: #000;
     background-color: #eaeaea; }
-  .um-components .icon-button[aria-disabled], .um-components .sys-nav__link[aria-disabled], .um-components .search__button[aria-disabled] {
+  .um-components .icon-button[aria-disabled], .um-components .sys-nav__link[aria-disabled], .um-components .search-bar__button[aria-disabled] {
     color: #7f7f7f;
     pointer-events: none; }
   .um-components .icon-button--light, .um-components .modal__close, .um-components .icon-button--light:hover, .um-components .modal__close:hover {
@@ -4077,7 +4022,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   white-space: nowrap;
   user-select: none; }
 
-.um-components .icon-button--small, .um-components .sys-nav__link, .um-components .search__button, .um-components .um-components .search__button, .um-components .social-nav__link {
+.um-components .icon-button--small, .um-components .sys-nav__link, .um-components .search-bar__button, .um-components .um-components .search-bar__button, .um-components .social-nav__link {
   padding: 6px;
   height: 36px; }
 
@@ -4445,6 +4390,116 @@ because both families serve another purpose. Therefore the line-heights will be 
       .um-components .product__pricing {
         font-size: 20px;
         line-height: 24px; } }
+
+/** @format */
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+.um-components .search-bar {
+  position: relative;
+  height: 60px;
+  z-index: 1010;
+  border-bottom: 1px solid #eaeaea; }
+
+.um-components .search-bar__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.um-components .search-bar__button,
+.um-components .um-components .search-bar__button {
+  position: absolute;
+  display: block;
+  font-size: 24px;
+  padding: 18px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  background-color: #eaeaea;
+  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+  .um-components .search-bar__button:hover,
+  .um-components .um-components .search-bar__button:hover {
+    background-color: #d6d6d6; }
+
+.um-components .search-bar__inputholder {
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  display: block;
+  height: 60px; }
+
+.um-components .search-bar__input {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  background-color: #eaeaea;
+  padding: 0 12px;
+  border-radius: 0;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  outline: none; }
+  @media (min-width: 569px) {
+    .um-components .search-bar__input {
+      font-size: 24px;
+      line-height: 30px; } }
+  .um-components .search-bar__input:focus {
+    outline: 2px solid #3f86f2; }
+
+.um-components .search-bar__close-button {
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 /** @format */
 .um-components .search-result {
