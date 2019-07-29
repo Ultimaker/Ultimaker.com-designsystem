@@ -28,7 +28,7 @@ export class SearchBar extends Vue implements SearchBarProps {
         }
 
         this.close();
-        (this.$refs['search-form'] as HTMLFormElement).submit();
+        window.location.href = `/search?search=${encodeURIComponent(this.searchValue)}`;
     }
 
     onBlur() {
