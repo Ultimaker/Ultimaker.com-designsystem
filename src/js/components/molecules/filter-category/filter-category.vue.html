@@ -5,8 +5,13 @@
     <form>
         <input class="filter-category__reset" :class="toggleActive" type="reset" :value="showAllLabel" @click="resetFilters"/>
         <ul class="filter-category__list">
-            <li class="filter-category__list-item" v-for="label in labels">
-                <label-filter @label-filter-change="handleLabelFilterChange" :label="label" :name="showAllLabel" :value="label"/>
+            <li class="filter-category__list-item" v-for="(label, key) in labels" v-show="activeFilters && activeFilters.includes(label)">
+                <label-filter
+                    :key="key"
+                    :label="label"
+                    :name="showAllLabel"
+                    :value="label"
+                    @label-filter-change="handleLabelFilterChange" />
             </li>
         </ul>
     </form>

@@ -9,6 +9,7 @@ import { medicine } from 'components/atoms/label-filter/data/examples/medicine';
 import { research } from 'components/atoms/label-filter/data/examples/research';
 
 export const industries = {
+    activeFilters: ['Aerospace', 'Architecture', 'Automotive', 'Fashion', 'Humanitarian', 'Research', 'Medicine'],
     labels: [
         aerospace.label,
         architecture.label,
