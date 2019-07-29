@@ -7128,12 +7128,12 @@ Object.defineProperty(exports, 'Product', {
   }
 });
 
-var _search = __webpack_require__(278);
+var _searchBar = __webpack_require__(278);
 
-Object.defineProperty(exports, 'Search', {
+Object.defineProperty(exports, 'SearchBar', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_search).default;
+    return _interopRequireDefault(_searchBar).default;
   }
 });
 
@@ -12005,11 +12005,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _searchBar = __webpack_require__(279);
 
-var _searchBar2 = _interopRequireDefault(_searchBar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _searchBar2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _searchBar.SearchBar;
+  }
+});
 
 /***/ }),
 /* 279 */
@@ -12021,6 +12022,7 @@ exports.default = _searchBar2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.SearchBar = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -12072,12 +12074,13 @@ var SearchBar = function (_Vue) {
             }
         }
     }, {
-        key: "doSearch",
-        value: function doSearch() {
-            if (this.searchValue !== '') {
-                window.location = "/search?search=" + encodeURIComponent(this.searchValue);
-                this.close();
+        key: "handleSubmit",
+        value: function handleSubmit() {
+            if (!this.searchValue.length) {
+                return;
             }
+            this.close();
+            window.location.href = "/search?search=" + encodeURIComponent(this.searchValue);
         }
     }, {
         key: "onBlur",
@@ -12089,7 +12092,7 @@ var SearchBar = function (_Vue) {
     }, {
         key: "focusInput",
         value: function focusInput() {
-            this.$refs.search__input.focus();
+            this.$refs['search-bar__input'].focus();
         }
     }]);
 
@@ -12098,16 +12101,16 @@ var SearchBar = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchBar.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchBar.prototype, "placeholder", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], SearchBar.prototype, "openState", void 0);
-SearchBar = __decorate([_searchBarVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.SearchBar = SearchBar = __decorate([_searchBarVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'search-bar'
 })], SearchBar);
-exports.default = SearchBar;
+exports.SearchBar = SearchBar;
 
 /***/ }),
 /* 280 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"search",attrs:{"action":"","id":"search"},on:{"submit":function($event){$event.preventDefault();return _vm.doSearch($event)}}},[_c('div',{attrs:{"role":"search"}},[_c('div',{staticClass:"search__inputholder"},[_c('label',{staticClass:"search__label",attrs:{"for":"search__input"}},[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.searchValue),expression:"searchValue"}],ref:"search__input",staticClass:"search__input",attrs:{"id":"search__input","type":"text","name":"search","placeholder":_vm.placeholder},domProps:{"value":(_vm.searchValue)},on:{"blur":_vm.onBlur,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.close($event)},"input":function($event){if($event.target.composing){ return; }_vm.searchValue=$event.target.value}}})]),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search__button","button-aria-label":"Search","icon-name":"search"},on:{"click":_vm.doSearch}}),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search__close-button","button-aria-label":"Close search","icon-name":"close"},on:{"click":_vm.close}})],1)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{ref:"search-form",staticClass:"search-bar",attrs:{"action":"/search","method":"get"},on:{"submit":function($event){$event.preventDefault();return _vm.handleSubmit($event)}}},[_c('div',{attrs:{"role":"search"}},[_c('div',{staticClass:"search-bar__inputholder"},[_c('label',{staticClass:"search-bar__label",attrs:{"for":"search-bar__input"}},[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.searchValue),expression:"searchValue"}],ref:"search-bar__input",staticClass:"search-bar__input",attrs:{"placeholder":_vm.placeholder,"autocapitalize":"off","autocomplete":"off","autocorrect":"off","id":"search-bar__input","name":"search"},domProps:{"value":(_vm.searchValue)},on:{"blur":_vm.onBlur,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.close($event)},"input":function($event){if($event.target.composing){ return; }_vm.searchValue=$event.target.value}}})]),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search-bar__button","button-aria-label":"Search","icon-name":"search"},on:{"click":_vm.handleSubmit}}),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search-bar__close-button","button-aria-label":"Close search","icon-name":"close"},on:{"click":_vm.close}})],1)])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
