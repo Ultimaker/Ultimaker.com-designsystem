@@ -1,17 +1,34 @@
 <!-- @format -->
 
-<form action="" id="search" class="search" @submit.prevent="doSearch">
+<form action="/search" class="search-bar" ref="search-form" method="get" @submit.prevent="handleSubmit">
     <div role="search">
-        <div class="search__inputholder">
-            <label for="search__input" class="search__label">{{label}}</label>
-            <input id="search__input" type="text" name="search" :placeholder="placeholder" class="search__input"
-                   @blur="onBlur" @keyup.esc="close"
-                   v-model="searchValue"
-                   ref="search__input">
+        <div class="search-bar__inputholder">
+            <label for="search-bar__input" class="search-bar__label">{{label}}</label>
+            <input
+                :placeholder="placeholder"
+                @blur="onBlur" @keyup.esc="close"
+                v-model="searchValue"
+                autocapitalize="off"
+                autocomplete="off"
+                autocorrect="off"
+                class="search-bar__input"
+                id="search-bar__input"
+                name="search"
+                ref="search-bar__input"
+                type="text"
+            >
         </div>
-        <icon-button button-class="icon-button icon-button--large search__button" button-aria-label="Search"
-                     icon-name="search" @click="doSearch"></icon-button>
-        <icon-button button-class="icon-button icon-button--large search__close-button" button-aria-label="Close search"
-                     icon-name="close" @click="close"></icon-button>
+        <icon-button
+            @click="handleSubmit"
+            button-class="icon-button icon-button--large search-bar__button"
+            button-aria-label="Search"
+            icon-name="search"
+        />
+        <icon-button
+            @click="close"
+            button-class="icon-button icon-button--large search-bar__close-button"
+            button-aria-label="Close search"
+            icon-name="close"
+        />
     </div>
 </form>
