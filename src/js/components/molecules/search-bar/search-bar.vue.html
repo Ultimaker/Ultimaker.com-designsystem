@@ -6,7 +6,8 @@
             <label for="search-bar__input" class="search-bar__label">{{label}}</label>
             <input
                 :placeholder="placeholder"
-                @blur="onBlur" @keyup.esc="close"
+                @blur="onBlur"
+                @keyup.esc="close"
                 v-model="searchValue"
                 autocapitalize="off"
                 autocomplete="off"
@@ -15,7 +16,6 @@
                 id="search-bar__input"
                 name="search"
                 ref="search-bar__input"
-                type="text"
             >
         </div>
         <icon-button
