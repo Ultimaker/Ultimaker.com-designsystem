@@ -1,4 +1,7 @@
+<!-- @format -->
+
 <li class="list__item list__item--inline">
     <template v-if="!item.item">{{ item }}</template>
+    <template v-else-if="item.item.item.label"><component :is="item.type" :item="item.item.item.label" /></template>
     <template v-else><component :is="item.type" v-bind="item.item"/></template>
 </li>

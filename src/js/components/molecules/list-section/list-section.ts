@@ -1,14 +1,19 @@
 /** @format */
 
+import { CardArticle } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cards/CardArticle';
 import { Component, Prop, Mixins, Watch } from 'vue-property-decorator';
 import WithRender from './list-section.vue.html';
 
 import Events from 'constants/events';
-import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
 
-import { ListSectionProps } from 'components/molecules/list-section/list-section.models';
+import { FilterCategoryInterface } from '../filter-category/filter-category.interface';
+import { ListSectionProps } from './list-section.models';
 import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
+
+import { getFiltersInCardCollection } from './helpers/get-filters-in-card-collection';
+import { getFilteredCardsFromActiveFilterCategories } from './helpers/get-filtered-cards-from-active-filter-categories';
+import { updateActiveFilterCategories } from 'components/molecules/list-section/helpers/update-active-filter-categories';
 
 @WithRender
 @Component({
@@ -28,35 +33,30 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
 
     $route;
 
-    activeCategories: object = {};
-    activeCategoryCount = 0;
-    activeCategoryFilters: string[] = [];
+    activeFilterCategories: FilterCategoryInterface[] = [];
     chunks: object[] = [];
     chunkSize: number = 3;
     chunkIndex: number = 0;
     expanded: boolean = false;
+    eventFilterCategoryChange: string = 'filter-category-change';
     showMax: number = 6;
     viewportUtil: ViewportUtil = new ViewportUtil();
     visibleChunks: number = 0;
     visibleTooltip: boolean = false;
 
-    get activeFilters() {
-        return this.filteredCards.reduce(
-            (acc, card) => {
-                if (card.labels) {
-                    card.labels.forEach(
-                        (label) => {
-                            if (!acc.includes(label)) {
-                                acc.push(label);
-                            }
-                        },
-                    );
-                }
+    beforeDestroy(): void {
+        this.viewportUtil.removeResizeHandler(this.handleResize);
+    }
 
-                return acc;
-            },
-            [],
-        );
+    mounted() {
+        this.viewportUtil.addResizeHandler(this.handleResize);
+        this.viewportUtil.triggerResize();
+        this.handleResize();
+        this.createChunks();
+    }
+
+    get activeFilters() {
+        return getFiltersInCardCollection(<CardArticle[]> this.filteredCards);
     }
 
     get clickEventData() {
@@ -74,20 +74,12 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         return null;
     }
 
-    get clickEventType() {
-        return Events.click;
-    }
-
-    get filteredCards() {
-        if (!this.activeCategoryFilters.length) {
-            return this.cards;
+    get filteredCards(): CardArticle[] {
+        if (!this.activeFilterCategories.length) {
+            return <CardArticle[]> this.cards;
         }
 
-        if (this.activeCategoryCount === 1) {
-            return this.getAllCardsThatMatchAllFilters();
-        }
-
-        return this.getAllCardsThatMatchAllFiltersAcrossCategories();
+        return getFilteredCardsFromActiveFilterCategories(<CardArticle[]> this.cards, this.activeFilterCategories);
     }
 
     @Watch('cards')
@@ -101,56 +93,8 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         }
     }
 
-    getAllCardsThatMatchAllFilters() {
-        // @ts-ignore
-        return this.cards.filter((card) => {
-            if (card.labels) {
-                return card.labels.some((label) => this.activeCategoryFilters.includes(label));
-            }
-
-            return false;
-        });
-    }
-
-    getAllCardsThatMatchAllFiltersAcrossCategories() {
-        // @ts-ignore
-        return this.cards.filter((card) => {
-            if (card.labels) {
-                let isLabelInAllCategories = true;
-
-                Object.keys(this.activeCategories).forEach(
-                    (category) => {
-                        if (this.activeCategories[category].length) {
-                            if (!card.labels.some((label) => this.activeCategories[category].includes(label))) {
-                                isLabelInAllCategories = false;
-                            }
-                        }
-                    },
-                );
-
-                return isLabelInAllCategories;
-            }
-
-            return false;
-        });
-    }
-
-    getActiveCategoryFilters() {
-        const result: string[] = [];
-
-        Object.keys(this.activeCategories).forEach((category) => {
-            this.activeCategoryCount += 1;
-            this.activeCategories[category].forEach((filter: string) => result.push(filter));
-        });
-
-        return result;
-    }
-
-    handleFilterCategoryChange(payload): void {
-        this.activeCategoryCount = 0;
-        this.activeCategories[payload.category] = payload.filters;
-        this.activeCategoryFilters = this.getActiveCategoryFilters();
-
+    handleFilterCategoryChange(changedFilterCategory) {
+        this.activeFilterCategories = updateActiveFilterCategories(this.activeFilterCategories, changedFilterCategory);
         this.createChunks();
     }
 
@@ -241,21 +185,10 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
     triggerEventClick(): void {
         if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
             try {
-                this.$emitPublic(this.clickEventType, this.clickEventData);
+                this.$emitPublic(Events.click, this.clickEventData);
             } catch (e) {
                 console.warn(e);
             }
         }
-    }
-
-    beforeDestroy(): void {
-        this.viewportUtil.removeResizeHandler(this.handleResize);
-    }
-
-    mounted() {
-        this.viewportUtil.addResizeHandler(this.handleResize);
-        this.viewportUtil.triggerResize();
-        this.handleResize();
-        this.createChunks();
     }
 }

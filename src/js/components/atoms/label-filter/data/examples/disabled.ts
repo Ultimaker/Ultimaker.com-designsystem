@@ -1,9 +1,9 @@
-/** format */
+/** @format */
 
 export const disabled = {
-    checked: false,
     disabled: true,
+    eventChange: 'label-filter-change',
     label: 'Disabled',
-    name: 'Foo',
+    name: 'disabled',
     value: 'Disabled',
 };

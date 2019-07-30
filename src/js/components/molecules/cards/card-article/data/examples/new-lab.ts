@@ -14,7 +14,7 @@ export const newLab = {
     description:
         'In an era when startup incubators and co-working spaces spin up as a matter of course in densely populated urban centers, New Lab offers a fresh take on what it means to bring people and companies together to work under one large roof. Extending over 84,000 square feet in the historic Brooklyn Navy Yard, New Lab is home to over 100 member companies, including more than 500 designers, engineers, entrepreneurs, executives, and product realization specialists.',
     image: breakaway,
-    labels: ['Architecture', 'Product development'],
+    labels: [{ label: 'Architecture' }, { label: 'End-user parts' }, { label: 'Product development' }],
     title: 'New Lab innovators print their way to faster iterations and design freedom',
     type: 'CardArticle',
     url:

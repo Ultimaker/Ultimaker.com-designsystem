@@ -14,7 +14,7 @@ export const introduce = {
     description:
         'You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.',
     image: nylon,
-    labels: ['Aerospace', 'Manufacturing aids', 'Product development'],
+    labels: [{ label: 'Aerospace' }, { label: 'End-user parts' }, { label: 'Manufacturing aids' }, { label: 'Product development' }],
     title: 'How to successfully introduce 3D printing in your business',
     type: 'CardArticle',
     url:
