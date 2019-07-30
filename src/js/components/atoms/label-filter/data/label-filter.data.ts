@@ -1,10 +1,11 @@
 /** @format */
 
-import { architecture } from 'components/atoms/label-filter/data/examples/architecture';
-import { endUserParts } from 'components/atoms/label-filter/data/examples/end-user-parts';
-import { manufacturingAids } from 'components/atoms/label-filter/data/examples/manufacuturing-aids';
-import { medicine } from 'components/atoms/label-filter/data/examples/medicine';
-import { productDevelopment } from 'components/atoms/label-filter/data/examples/product-development';
+import { architecture } from './examples/architecture';
+import { endUserParts } from './examples/end-user-parts';
+import { manufacturingAids } from './examples/manufacuturing-aids';
+import { medicine } from './examples/medicine';
+import { productDevelopment } from './examples/product-development';
+import { disabled } from './examples/disabled';
 
 export const data = {
     architecture,
@@ -12,4 +13,5 @@ export const data = {
     manufacturingAids,
     medicine,
     productDevelopment,
+    disabled,
 };
