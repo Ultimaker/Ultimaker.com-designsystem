@@ -1,17 +1,13 @@
 /** @format */
 
-import { architecture } from './examples/architecture';
-import { endUserParts } from './examples/end-user-parts';
-import { manufacturingAids } from './examples/manufacuturing-aids';
-import { medicine } from './examples/medicine';
-import { productDevelopment } from './examples/product-development';
+import { checked } from './examples/checked';
+import { checkedDisabled } from './examples/checked-disabled';
 import { disabled } from './examples/disabled';
+import { unchecked } from './examples/unchecked';
 
 export const data = {
-    architecture,
-    endUserParts,
-    manufacturingAids,
-    medicine,
-    productDevelopment,
+    checked,
+    checkedDisabled,
     disabled,
+    unchecked,
 };

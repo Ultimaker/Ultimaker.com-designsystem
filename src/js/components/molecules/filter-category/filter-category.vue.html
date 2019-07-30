@@ -5,7 +5,7 @@
     <form>
         <input
             class="filter-category__reset"
-            :class="toggleActive"
+            :class="checkResetFiltersState"
             type="reset"
             :value="showAllLabel"
             @click="resetFilters"
@@ -13,15 +13,17 @@
         <ul class="filter-category__list">
             <li
                 class="filter-category__list-item"
-                v-for="(label, index) in labels"
-                :key="index"
+                v-for="(label, key) in labels"
+                :key="key"
             >
                 <label-filter
-                    :disabled="activeFilters && !activeFilters.includes(label)"
-                    :label="label"
+                    :disabled="isFilterDisabled(label.label)"
+                    :eventChange="eventLabelFilterChange"
+                    :label="label.label"
                     :name="showAllLabel"
-                    :value="label"
-                    @label-filter-change="handleLabelFilterChange" />
+                    :value="label.label"
+                    @[eventLabelFilterChange]="handleLabelFilterChange"
+                />
             </li>
         </ul>
     </form>

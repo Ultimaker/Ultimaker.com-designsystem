@@ -33,7 +33,8 @@
         <filter-category
             v-bind="filterCategory"
             :activeFilters="activeFilters"
-            @filter-category-change="handleFilterCategoryChange" />
+            :eventChange="eventFilterCategoryChange"
+            @[eventFilterCategoryChange]="handleFilterCategoryChange" />
     </template>
 
     <transition-group class="list-section__container" tag="ul" @before-enter="beforeEnter"  @enter="enter">

@@ -12,9 +12,9 @@ const getStory = (type) => () => {
 
     return {
         props: {
-            category: { default: knobs.label },
             checked: { default: knobs.checked },
             disabled: { default: knobs.disabled },
+            eventChange: { default: knobs.eventChange },
             label: { default: knobs.label },
             name: { default: knobs.name },
             value: { default: knobs.value },

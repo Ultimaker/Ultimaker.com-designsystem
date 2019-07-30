@@ -1,2 +1,3 @@
-import LiInline from './component';
-export default LiInline;
+/** @format */
+
+export { LiInline as default } from './li-inline';
