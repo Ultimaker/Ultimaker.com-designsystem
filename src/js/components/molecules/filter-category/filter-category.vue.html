@@ -3,11 +3,21 @@
 <section class="filter-category">
     <h4 class="filter-category__title">{{ title }}</h4>
     <form>
-        <input class="filter-category__reset" :class="toggleActive" type="reset" :value="showAllLabel" @click="resetFilters"/>
+        <input
+            class="filter-category__reset"
+            :class="toggleActive"
+            type="reset"
+            :value="showAllLabel"
+            @click="resetFilters"
+        />
         <ul class="filter-category__list">
-            <li class="filter-category__list-item" v-for="(label, key) in labels" v-show="activeFilters && activeFilters.includes(label)">
+            <li
+                class="filter-category__list-item"
+                v-for="(label, index) in labels"
+                :key="index"
+            >
                 <label-filter
-                    :key="key"
+                    :disabled="activeFilters && !activeFilters.includes(label)"
                     :label="label"
                     :name="showAllLabel"
                     :value="label"
