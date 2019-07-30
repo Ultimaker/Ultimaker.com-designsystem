@@ -1,0 +1,91 @@
+/** @format */
+// restored original file _input-checkbox from 2018-05-15 Plas
+// modified it so it only applies to preferences-bar
+@import "~scss/settings/_input.scss";
+@import "~scss/settings/_variables.scss";
+@import "~scss/tools/mixins/_helpers.scss";
+
+$checkboxSize: $buildingUnit * 2;
+$checkmarkSize: $buildingUnit * 1.5;
+
+.preferences-bar [type="checkbox"] + label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 $buildingUnit 0;
+    text-align: left;
+}
+
+.preferences-bar label + [type="checkbox"] {
+    margin: 0 $buildingUnit $buildingUnit 0;
+}
+
+/* Base for label styling */
+.preferences-bar [type="checkbox"]:not(:checked),
+.preferences-bar [type="checkbox"]:checked {
+    @include visually-hidden;
+}
+
+.preferences-bar [type="checkbox"]:not(:checked) + label,
+.preferences-bar [type="checkbox"]:checked + label {
+    cursor: pointer;
+    padding-left: $buildingUnit * 2.5;
+    position: relative;
+    user-select: none;
+}
+
+/* checkbox aspect */
+.preferences-bar [type="checkbox"]:not(:checked) + label:before,
+.preferences-bar [type="checkbox"]:checked + label:before {
+    background: $colorWhite;
+    border: $inputBorder;
+    content: "";
+    height: $checkboxSize;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    width: $checkboxSize;
+}
+
+/* checked mark aspect */
+.preferences-bar [type="checkbox"]:not(:checked) + label:after,
+.preferences-bar [type="checkbox"]:checked + label:after {
+    content: url("data:image/svg+xml, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%3E%3Cpolygon%20points=%22113%2029.1%20104.2%2020.2%2042.3%2082.1%2015.8%2055.6%207%2064.4%2033.5%2091%2033.5%2091%2042.3%2099.8%2042.3%2099.8%2042.3%2099.8%2051.1%2091%2051.1%2091%20%22%20fill=%22rgb(12,169,227)%22/%3E%3C/svg%3E");
+    position: absolute;
+    height: $checkmarkSize;
+    left: 4px;
+    top: 1px;
+    width: $checkmarkSize;
+}
+
+/* checked mark aspect changes */
+.preferences-bar [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.preferences-bar [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* disabled checkbox */
+.preferences-bar [type="checkbox"]:disabled:not(:checked) + label:before,
+.preferences-bar [type="checkbox"]:disabled:checked + label:before {
+    background-color: $colorGrayExtraLight;
+}
+
+.preferences-bar [type="checkbox"]:disabled:checked + label:after {
+    content: url("data:image/svg+xml, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%3E%3Cpolygon%20points=%22113%2029.1%20104.2%2020.2%2042.3%2082.1%2015.8%2055.6%207%2064.4%2033.5%2091%2033.5%2091%2042.3%2099.8%2042.3%2099.8%2042.3%2099.8%2051.1%2091%2051.1%2091%20%22%20fill=%22rgb(178,178,178)%22/%3E%3C/svg%3E");
+}
+
+.preferences-bar [type="checkbox"]:disabled + label {
+    color: $colorGrayDark;
+    cursor: default;
+}
+
+/* accessibility */
+.preferences-bar [type="checkbox"]:checked:focus:not(:hover) + label:before,
+.preferences-bar [type="checkbox"]:not(:checked):focus:not(:hover) + label:before {
+    border: 2px solid $um-blue;
+}
