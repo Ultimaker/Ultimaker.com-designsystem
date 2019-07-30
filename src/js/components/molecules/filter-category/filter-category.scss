@@ -33,23 +33,24 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-color: $colorGrayExtraLight;
-    border: 1px solid $colorGray;
+    background-color: $colorWhite;
+    border: 1px solid $colorGrayDark;
     border-radius: 2px;
-    color: $colorGrayDark;
+    color: $colorBlack;
     font-size: 12px;
     font-weight: 500;
     margin-bottom: $buildingUnit / 2;
     margin-right: $buildingUnit / 3;
+    /* outline-offset: 1px; */
     padding-top: 1px;
     padding-right: $buildingUnit / 2;
     padding-left: $buildingUnit / 2;
     padding-bottom: 2px;
-}
 
-.filter-category__reset:focus {
-    outline-offset: 1px;
-    outline: 2px solid $um-blue;
+    &:focus {
+        border-color: $colorWhite;
+        outline: 2px solid $um-blue;
+    }
 }
 
 .filter-category__reset--active {
