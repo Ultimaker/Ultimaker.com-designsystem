@@ -1,5 +1,4 @@
 .hero--article {
-    @extend .organism;
     @extend %reset-last-margin;
     position: relative;
 
