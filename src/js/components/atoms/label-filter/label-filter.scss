@@ -19,7 +19,7 @@
     padding: 0 $buildingUnit / 2;
 }
 
-.label-filter > :checked + .label-filter__label {
+.label-filter > :checked:not(:disabled) + .label-filter__label {
     background-color: $um-blue;
     border-color: $um-blue;
     color: $colorWhite;
@@ -30,8 +30,16 @@
     outline: $um-blue solid 2px;
 }
 
-.label-filter > :disabled + .label-filter__label {
+.label-filter > :disabled:not(:checked) + .label-filter__label {
+    background-color: $colorWhite;
     border-color: $colorGrayLight;
+    color: $colorGrayDark;
+    cursor: not-allowed;
+}
+
+.label-filter > :disabled:checked + .label-filter__label {
+    background-color: $colorGrayLight;
+    border-color: $colorGrayDark;
     color: $colorGrayDark;
     cursor: not-allowed;
 }
