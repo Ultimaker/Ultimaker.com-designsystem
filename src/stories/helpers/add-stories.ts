@@ -26,10 +26,10 @@ export default (providedOptions) => {
 
     options.decorators.forEach((decorator) => stories.addDecorator(availableDecorators[decorator]));
 
-    Object.keys(options.data).forEach((type) =>
+    Object.keys(options.data).forEach((type) => {
         stories.add(type, options.getStory(type), {
             ...options.notes,
             knobs: options.knobs,
-        })
-    );
+        });
+    });
 };
