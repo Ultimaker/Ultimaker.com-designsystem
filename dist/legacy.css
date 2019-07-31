@@ -1114,6 +1114,119 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #7f7f7f; }
 
 /** @format */
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+.um-components .preferences-bar [type="checkbox"] + label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+  text-align: left; }
+
+.um-components .preferences-bar label + [type="checkbox"] {
+  margin: 0 12px 12px 0; }
+
+/* Base for label styling */
+.um-components .preferences-bar [type="checkbox"]:not(:checked),
+.um-components .preferences-bar [type="checkbox"]:checked {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.um-components .preferences-bar [type="checkbox"]:not(:checked) + label,
+.um-components .preferences-bar [type="checkbox"]:checked + label {
+  cursor: pointer;
+  padding-left: 30px;
+  position: relative;
+  user-select: none; }
+
+/* checkbox aspect */
+.um-components .preferences-bar [type="checkbox"]:not(:checked) + label:before,
+.um-components .preferences-bar [type="checkbox"]:checked + label:before {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  content: "";
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 24px; }
+
+/* checked mark aspect */
+.um-components .preferences-bar [type="checkbox"]:not(:checked) + label:after,
+.um-components .preferences-bar [type="checkbox"]:checked + label:after {
+  content: url("data:image/svg+xml, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%3E%3Cpolygon%20points=%22113%2029.1%20104.2%2020.2%2042.3%2082.1%2015.8%2055.6%207%2064.4%2033.5%2091%2033.5%2091%2042.3%2099.8%2042.3%2099.8%2042.3%2099.8%2051.1%2091%2051.1%2091%20%22%20fill=%22rgb(12,169,227)%22/%3E%3C/svg%3E");
+  position: absolute;
+  height: 18px;
+  left: 4px;
+  top: 1px;
+  width: 18px; }
+
+/* checked mark aspect changes */
+.um-components .preferences-bar [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0); }
+
+.um-components .preferences-bar [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1); }
+
+/* disabled checkbox */
+.um-components .preferences-bar [type="checkbox"]:disabled:not(:checked) + label:before,
+.um-components .preferences-bar [type="checkbox"]:disabled:checked + label:before {
+  background-color: #f5f5f5; }
+
+.um-components .preferences-bar [type="checkbox"]:disabled:checked + label:after {
+  content: url("data:image/svg+xml, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%3E%3Cpolygon%20points=%22113%2029.1%20104.2%2020.2%2042.3%2082.1%2015.8%2055.6%207%2064.4%2033.5%2091%2033.5%2091%2042.3%2099.8%2042.3%2099.8%2042.3%2099.8%2051.1%2091%2051.1%2091%20%22%20fill=%22rgb(178,178,178)%22/%3E%3C/svg%3E"); }
+
+.um-components .preferences-bar [type="checkbox"]:disabled + label {
+  color: #7f7f7f;
+  cursor: default; }
+
+/* accessibility */
+.um-components .preferences-bar [type="checkbox"]:checked:focus:not(:hover) + label:before,
+.um-components .preferences-bar [type="checkbox"]:not(:checked):focus:not(:hover) + label:before {
+  border: 2px solid #196ef0; }
+
+/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
