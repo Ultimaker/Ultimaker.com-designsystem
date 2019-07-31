@@ -1,54 +1,45 @@
 /** @format */
+
 @import "~scss/tools/mixins/_media.scss";
 @import "~scss/settings/_variables.scss";
 
-.article-description-list {
-    dl {
-        border-top: 2px solid $colorGray;
-        border-bottom: 2px solid $colorGray;
-    }
+dl {
+    border-top: 2px solid $colorGray;
+    border-bottom: 2px solid $colorGray;
+}
 
-    dt {
-        border-top: 1px solid $colorGray;
-        font-weight: bold;
-        padding: $buildingUnit;
-    }
+dt,
+dd {
+    margin: 0;
+}
 
-    dt:first-of-type {
+dt {
+    border-top: 1px solid $colorGray;
+    font-weight: bold;
+    padding: $buildingUnit;
+
+    &:first-of-type {
         border-top: 0;
     }
+}
 
+dd {
+    padding: 0 $buildingUnit $buildingUnit;
+}
+
+@include min-tablet() {
+    dl {
+        display: grid;
+        grid-template-columns: max-content auto;
+    }
+
+    dt,
     dd {
-        padding: 0 $buildingUnit 0 $buildingUnit;
-    }
+        border-top: 1px solid $colorGray;
+        padding: 1.5 * $buildingUnit;
 
-    dd:last-of-type {
-        padding-bottom: $buildingUnit;
-    }
-
-    @include min-tablet() {
-        dl {
-            display: grid;
-            grid-template-columns: max-content auto;
-        }
-
-        dt {
-            grid-column-start: 1;
-        }
-
-        dt,
-        dd {
-            padding: 1.5 * $buildingUnit;
-        }
-
-        dd {
-            grid-column-start: 2;
-            margin-bottom: 0;
-        }
-
-        dd ~ dt,
-        dd ~ dd {
-            border-top: 1px solid $colorGray;
+        &:first-of-type {
+            border-top: 0;
         }
     }
 }
