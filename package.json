@@ -36,11 +36,9 @@
         "prettier:ts": "prettier --write '**/*.ts'"
     },
     "dependencies": {
-        "core-js": "^2.5.7",
         "express": "^4.16.3",
         "gsap": "^2.0.2",
         "portal-vue": "^2.1.5",
-        "unicode-loader": "^1.0.7",
         "uuid": "^3.3.2",
         "vue": "^2.6.10",
         "vue-class-component": "^6.3.2",
@@ -102,7 +100,6 @@
         "karma-spec-reporter": "^0.0.32",
         "karma-webpack": "^2.0.13",
         "markdown-loader-jest": "^0.1.1",
-        "marked": "^0.6.1",
         "mini-css-extract-plugin": "^0.4.5",
         "moment": "^2.24.0",
         "node-sass": "^4.11.0",
