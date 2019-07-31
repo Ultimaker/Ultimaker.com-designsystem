@@ -4834,6 +4834,49 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + ul, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small .hero--text .content--rich p + ul, .um-components .hero--text .content--rich .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small .hero--text .content--rich strong + ul, .um-components .hero--text .content--rich .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .hero--text .content--rich .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .um-components .content-manageble--copy-small .examples .examples__tabs .hero--text .content--rich .tablist__item + ul, .um-components .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .um-components .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small .hero--text .content--rich ul + p, .um-components .hero--text .content--rich .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .hero--text .content--rich ul + strong, .um-components .hero--text .content--rich .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .tablist__section ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs ul + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small ul + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item, .um-components .content-manageble--copy-small p + p, .um-components .content-manageble--copy-small strong + p, .um-components .content-manageble--copy-small .tablist__section .tablist__item + p, .um-components .tablist__section .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + p, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small p + strong, .um-components .content-manageble--copy-small strong + strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item + strong, .um-components .tablist__section .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + strong, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .tablist__section p + .tablist__item, .um-components .tablist__section .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .tablist__section strong + .tablist__item, .um-components .tablist__section .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .tablist__section .tablist__item + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs p + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs strong + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + .tablist__item {
   margin-top: 21px; }
 
+/** @format */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.um-components dl {
+  border-top: 2px solid #e3e3e3;
+  border-bottom: 2px solid #e3e3e3; }
+
+.um-components dt,
+.um-components dd {
+  margin: 0; }
+
+.um-components dt {
+  border-top: 1px solid #e3e3e3;
+  font-weight: bold;
+  padding: 12px; }
+  .um-components dt:first-of-type {
+    border-top: 0; }
+
+.um-components dd {
+  padding: 0 12px 12px; }
+
+@media (min-width: 768px) {
+  .um-components dl {
+    display: grid;
+    grid-template-columns: max-content auto; }
+  .um-components dt,
+  .um-components dd {
+    border-top: 1px solid #e3e3e3;
+    padding: 18px; }
+    .um-components dt:first-of-type,
+    .um-components dd:first-of-type {
+      border-top: 0; } }
+
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .hero--products:nth-child(even), .um-components main .hero--products-application:nth-child(even), .um-components main .hero--text:nth-child(even), .um-components main .hero--cover:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .hero--article:nth-child(even) {
   background-color: #fafafa; }
 
