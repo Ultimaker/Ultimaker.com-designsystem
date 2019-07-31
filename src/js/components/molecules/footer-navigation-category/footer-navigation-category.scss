@@ -13,7 +13,7 @@
         padding-right: $buildingUnit * 1.5;
         margin-bottom: 0;
         width: auto;
-        
+
         &:last-of-type{
             border-right: none;
             margin-right: 0;
@@ -38,7 +38,9 @@
 }
 
 .footer-navigation-category__title {
-    @include font-ratio-rhythm(prim-s);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -2px;
     font-weight: bold;
     margin-bottom: 8px;
 }

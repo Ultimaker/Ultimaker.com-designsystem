@@ -74,7 +74,10 @@ $businessLinkCorrection: 2px;
 }
 
 .business-card__property {
-    @extend .copy--small;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -2px;
+    margin-bottom: 23px;
     color: $colorGrayDark;
 }
 

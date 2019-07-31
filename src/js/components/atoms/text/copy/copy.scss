@@ -33,7 +33,3 @@ small {
         @include font-ratio-rhythm(prim-l);
     }
 }
-
-.copy--small {
-    @include font-ratio-rhythm(prim-s);
-}

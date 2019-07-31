@@ -3,7 +3,10 @@
     ol {
         padding-left: 1em;
 
-        @include font-ratio-rhythm(prim-s);
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: -2px;
+        margin-bottom: 23px;
 
         @include min-tablet() {
             @include font-ratio-rhythm(prim-m);
