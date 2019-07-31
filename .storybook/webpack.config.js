@@ -5,13 +5,6 @@ const projectConfig = require('../webpack.config');
 const SvgStore = require('webpack-svgstore-plugin');
 
 module.exports = ({config, mode}) => {
-    // defaultConfig.module.rules.push({
-    //     test: [/\.stories\.js$/],
-    //     loaders: [require.resolve('@storybook/addon-storysource/loader')],
-    //     include: [path.resolve(__dirname, '../src/js')],
-    //     enforce: 'pre',
-    // });
-
     config.plugins.push(
         new webpack.DefinePlugin({
             'process.env': {

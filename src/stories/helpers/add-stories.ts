@@ -1,3 +1,5 @@
+/** @format */
+
 import { storiesOf } from '@storybook/vue';
 import { withKnobs } from '@storybook/addon-knobs';
 
@@ -9,7 +11,7 @@ export default (providedOptions) => {
     const defaultOptions = {
         data: {},
         decorators: [],
-        getStory: type => type,
+        getStory: (type) => type,
         kind: '',
         notes: {},
         knobs: {},
@@ -22,18 +24,12 @@ export default (providedOptions) => {
 
     const stories = storiesOf(options.kind, module);
 
-    options.decorators.forEach(
-        decorator => stories.addDecorator(availableDecorators[decorator]),
-    );
+    options.decorators.forEach((decorator) => stories.addDecorator(availableDecorators[decorator]));
 
-    Object.keys(options.data).forEach(
-        type => stories.add(
-            type,
-            options.getStory(type),
-            {
-                ...options.notes,
-                knobs: options.knobs,
-            },
-        ),
+    Object.keys(options.data).forEach((type) =>
+        stories.add(type, options.getStory(type), {
+            ...options.notes,
+            knobs: options.knobs,
+        })
     );
 };

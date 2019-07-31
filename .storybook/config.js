@@ -1,5 +1,6 @@
-import {configure, addDecorator, addParameters} from '@storybook/vue';
-import {withNotes} from '@storybook/addon-notes';
+/** @format */
+
+import { configure, addDecorator, addParameters } from '@storybook/vue';
 import storyRouter from 'storybook-vue-router';
 
 import Vue from 'vue';
@@ -8,13 +9,13 @@ import 'babel-core/register';
 import 'babel-polyfill';
 import 'whatwg-fetch';
 
-import {registry} from 'src/js';
-import {PublicEventService} from 'src/js';
+import { registry } from 'src/js';
+import { PublicEventService } from 'src/js';
 import 'src/scss/storybook.scss';
 import storyRoot from 'src/stories/story.root.js';
-import viewPort from "utils/viewport";
+import viewPort from 'utils/viewport';
 
-if(process.env.BABEL_ENV === 'jest') {
+if (process.env.BABEL_ENV === 'jest') {
     const registerRequireContextHook = require('babel-plugin-require-context-hook/register');
     registerRequireContextHook();
 }
@@ -24,8 +25,8 @@ addParameters({
         hierarchyRootSeparator: /\|/,
         hierarchySeparator: /\//,
         showSearchBox: false,
-        sortStoriesByKind: false
-    }
+        sortStoriesByKind: false,
+    },
 });
 
 Vue.use(registry);
@@ -33,16 +34,15 @@ Vue.use(PublicEventService);
 Vue.use(Vuex);
 
 window.$u = {
-    events: PublicEventService
+    events: PublicEventService,
 };
 
-addDecorator(withNotes);
 addDecorator(storyRouter());
 
 addDecorator((story) => ({
     components: {
         wrappedStory: story(),
-        storyRoot: storyRoot
+        storyRoot: storyRoot,
     },
     template: `
         <story-root>
@@ -51,7 +51,7 @@ addDecorator((story) => ({
         </story-root>
     `,
     data: () => ({
-        viewPort: new viewPort()
+        viewPort: new viewPort(),
     }),
     mounted() {
         // This is a workaround to handle the creation of the storybook, the viewport doesn't have the proper dimensions
@@ -61,7 +61,7 @@ addDecorator((story) => ({
                 this.viewPort.triggerResize();
             }, 500);
         });
-    }
+    },
 }));
 
 function loadStories() {
@@ -74,12 +74,12 @@ function loadStories() {
 
     require('../src/stories/welcome.stories');
 
-    atoms.keys().forEach(filename => atoms(filename));
-    components.keys().forEach(filename => components(filename));
-    globals.keys().forEach(filename => globals(filename));
-    molecules.keys().forEach(filename => molecules(filename));
-    organisms.keys().forEach(filename => organisms(filename));
-    templates.keys().forEach(filename => templates(filename));
+    atoms.keys().forEach((filename) => atoms(filename));
+    components.keys().forEach((filename) => components(filename));
+    globals.keys().forEach((filename) => globals(filename));
+    molecules.keys().forEach((filename) => molecules(filename));
+    organisms.keys().forEach((filename) => organisms(filename));
+    templates.keys().forEach((filename) => templates(filename));
 }
 
 configure(loadStories, module);

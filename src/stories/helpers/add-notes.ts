@@ -1,3 +1,5 @@
-export default notes => ({
+/** @format */
+
+export default (notes) => ({
     notes,
 });
