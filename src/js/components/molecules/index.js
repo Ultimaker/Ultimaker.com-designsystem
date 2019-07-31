@@ -55,4 +55,3 @@ export { default as MainNavigationItem } from 'molecules/main-navigation-item';
 export { default as SocialSharing } from 'molecules/social-sharing';
 export { default as SearchResult } from 'molecules/search-result';
 export { default as ArticleDescriptionList } from 'molecules/article-description-list';
-
