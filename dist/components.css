@@ -5389,6 +5389,49 @@ because both families serve another purpose. Therefore the line-heights will be 
 .examples .examples__tabs .content-manageble--copy-small .tablist__item + .tablist__item {
   margin-top: 21px; }
 
+/** @format */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+dl {
+  border-top: 2px solid #e3e3e3;
+  border-bottom: 2px solid #e3e3e3; }
+
+dt,
+dd {
+  margin: 0; }
+
+dt {
+  border-top: 1px solid #e3e3e3;
+  font-weight: bold;
+  padding: 12px; }
+  dt:first-of-type {
+    border-top: 0; }
+
+dd {
+  padding: 0 12px 12px; }
+
+@media (min-width: 768px) {
+  dl {
+    display: grid;
+    grid-template-columns: max-content auto; }
+  dt,
+  dd {
+    border-top: 1px solid #e3e3e3;
+    padding: 18px; }
+    dt:first-of-type,
+    dd:first-of-type {
+      border-top: 0; } }
+
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .hero--article:nth-child(even) {
   background-color: #fafafa; }
 
