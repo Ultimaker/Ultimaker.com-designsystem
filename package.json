@@ -1,6 +1,6 @@
 {
     "name": "@ultimaker/ultimaker.com-designsystem",
-    "version": "4.13.0",
+    "version": "4.13.1",
     "description": "Ultimaker.com design system for vue components",
     "repository": "github:Ultimaker/Ultimaker.com-designsystem",
     "license": "UNLICENSED",
@@ -70,7 +70,7 @@
         "@types/requirejs": "^2.1.31",
         "@typescript-eslint/eslint-plugin": "^1.9.0",
         "@typescript-eslint/parser": "^1.9.0",
-        "@ultimaker/ultimaker.com-model-definitions": "github:Ultimaker/Ultimaker.com-model-definitions#feature/UWEB-6153",
+        "@ultimaker/ultimaker.com-model-definitions": "1.26.0",
         "babel-core": "^6.26.3",
         "babel-jest": "^23.6.0",
         "babel-loader": "^7.1.4",
