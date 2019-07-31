@@ -949,6 +949,40 @@ exports[`Storyshots Molecules/article-ctas default 1`] = `
 </section>
 `;
 
+exports[`Storyshots Molecules/article-description-list default 1`] = `
+<section
+  class="story"
+>
+  <dl>
+    <dt>
+      DoubleClick 
+    </dt>
+     
+    <dd>
+      This enables targeting ads based on what is relevant to a user, improving reporting on campaign performance, and avoiding showing ads already seen by a visitor. As an advertiser, Ultimaker can set how long and how often the ad will be shown in the browser.
+    </dd>
+    <dt>
+      Facebook Custom Audience 
+    </dt>
+     
+    <dd>
+      This enables Ultimaker to find its existing audiences among people who are on Facebook (by importing our email lists) and create &quot;lookalikes&quot; (a set of people who are similar to the people currently engaging with our business).
+    </dd>
+    <dt>
+      Google Optimize 
+    </dt>
+     
+    <dd>
+      Ultimaker uses Google Optimize for testing alternate versions of content on the website. Google Optimize uses analytical cookies to target content variants to a user and a content experiment cookie to determine how a user interacts with the content being tested.
+    </dd>
+  </dl>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
 exports[`Storyshots Molecules/article-image default 1`] = `
 <section
   class="story"
