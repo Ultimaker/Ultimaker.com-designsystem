@@ -3932,7 +3932,10 @@ th {
       width: 66%; } }
 
 .article-table {
-  overflow-x: auto; }
+  overflow-x: auto;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .article-text p, .article-text strong, .article-text .tablist__section .tablist__item, .tablist__section .article-text .tablist__item, .article-text .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text .tablist__item, .article-text ul, .article-text .hero--text .content--rich ul, .hero--text .content--rich .article-text ul, .article-text ol {
   margin-top: -2px;
@@ -5377,6 +5380,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
 dl {
+  margin-bottom: 36px;
   border-top: 2px solid #e3e3e3;
   border-bottom: 2px solid #e3e3e3; }
 
@@ -5397,7 +5401,10 @@ dd {
 @media (min-width: 768px) {
   dl {
     display: grid;
-    grid-template-columns: max-content auto; }
+    grid-template-columns: max-content auto;
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto; }
   dt,
   dd {
     border-top: 1px solid #e3e3e3;
