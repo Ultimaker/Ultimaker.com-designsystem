@@ -3,6 +3,14 @@
 @import "~scss/tools/mixins/_media.scss";
 @import "~scss/settings/_variables.scss";
 
+.article-description-list {
+    margin-left: auto;
+    margin-right: auto;
+    @include min-tablet() {
+        width: 66%;
+    }
+}
+
 dl {
     margin-bottom: $buildingUnit * 3;
     border-top: 2px solid $colorGray;
@@ -33,9 +41,6 @@ dd {
     dl {
         display: grid;
         grid-template-columns: max-content auto;
-        width: 66%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     dt,
