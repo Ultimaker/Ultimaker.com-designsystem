@@ -14516,7 +14516,7 @@ exports.ArticleTable = ArticleTable;
 /* 348 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"article-table",domProps:{"innerHTML":_vm._s(_vm.table)}})}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"article-table",domProps:{"innerHTML":_vm._s(_vm.table)}})}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -15457,10 +15457,10 @@ exports.ArticleDescriptionList = ArticleDescriptionList;
 /* 368 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('dl',[_vm._l((_vm.descriptions),function(ref){
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"article-description-list"},[_c('dl',[_vm._l((_vm.descriptions),function(ref){
 var term = ref.term;
 var description = ref.description;
-return [_c('dt',[_vm._v(_vm._s(term)+" ")]),_vm._v(" "),_c('dd',[_vm._v(_vm._s(description))])]})],2)}
+return [_c('dt',[_vm._v(_vm._s(term))]),_vm._v(" "),_c('dd',[_vm._v(_vm._s(description))])]})],2)])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {

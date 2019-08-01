@@ -1,8 +1,9 @@
 <!-- @format -->
-
-<dl>
-    <template v-for="{ term, description } in descriptions">
-        <dt>{{ term }} </dt>
-        <dd>{{ description }}</dd>
-    </template>
-</dl>
+<section class="article-description-list">
+    <dl>
+        <template v-for="{ term, description } in descriptions">
+            <dt>{{ term }}</dt>
+            <dd>{{ description }}</dd>
+        </template>
+    </dl>
+</section>
