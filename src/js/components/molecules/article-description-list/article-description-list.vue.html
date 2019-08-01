@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <dl>
-    <template v-for="{ term, description } in descriptions">
+    <template v-for="{ object: { term, description }} in descriptions">
         <dt>{{ term }} </dt>
         <dd>{{ description }}</dd>
     </template>
