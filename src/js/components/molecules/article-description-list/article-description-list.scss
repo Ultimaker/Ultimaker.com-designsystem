@@ -4,6 +4,7 @@
 @import "~scss/settings/_variables.scss";
 
 dl {
+    margin-bottom: $buildingUnit * 3;
     border-top: 2px solid $colorGray;
     border-bottom: 2px solid $colorGray;
 }
@@ -28,9 +29,13 @@ dd {
 }
 
 @include min-tablet() {
+
     dl {
         display: grid;
         grid-template-columns: max-content auto;
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     dt,
