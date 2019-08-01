@@ -2,30 +2,40 @@
 
 <section class="search-results">
     <search-bar-page
-        v-on:[eventSubmitSearch]="submitSearch"
+        @[eventSubmitSearch]="submitSearch"
         :eventSubmitSearch="eventSubmitSearch"
         :isLoading="isLoading"
         :label="label"
         :placeholder="placeholder"
-        :terms="terms" />
+        :terms="terms"
+    />
     <h1 class="search-results__title">
         {{ computedTitle }}
     </h1>
-    <transition-group
-        tag="ul"
+    <ul
         class="search-results__list"
         v-if="searchResults.length"
-        @before-enter="beforeEnter"
-        @enter="enter"
     >
-        <template v-for="(searchResult, key) in searchResults">
-            <li class="search-results__list-item" :key="key">
-                <search-result v-bind="searchResult" :terms="terms" />
-            </li>
-        </template>
-    </transition-group>
-    <footer class="search-results__footer" v-if="showLoadMore">
-        <button class="button button--secondary" :disabled="isLoading" @click="loadMore">
+        <li
+            v-for="(searchResult, key) in searchResults"
+            :key="key"
+            class="search-results__list-item"
+        >
+            <search-result
+                v-bind="searchResult"
+                :terms="terms"
+            />
+        </li>
+    </ul>
+    <footer
+        v-if="showLoadMore"
+        class="search-results__footer"
+    >
+        <button
+            @click="loadMore"
+            :disabled="isLoading"
+            class="button button--secondary"
+        >
             Load more
         </button>
     </footer>

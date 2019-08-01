@@ -9,11 +9,15 @@
 >
     <label>
         <span class="search-bar-page__label">{{ label }}</span>
-        <button class="search-bar-page__button" :disabled="isLoading">
-            <icon :icon-name="'search'"/>
+        <button
+            :disabled="isLoading"
+            class="search-bar-page__button"
+        >
+            <icon :icon-name="'search'" />
         </button
         ><input
             :disabled="isLoading"
+            :name="searchFieldName"
             :placeholder="placeholder"
             v-model="q"
             autocapitalize="off"
@@ -21,7 +25,6 @@
             autocorrect="off"
             class="search-bar-page__input"
             maxlength="512"
-            :name="searchFieldName"
             spellcheck="false"
             type="text"
         >
