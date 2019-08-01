@@ -1,7 +1,8 @@
 /** @format */
 
-@import "~scss/tools/mixins/_animation.scss";
 @import "~scss/settings/_variables.scss";
+@import "~scss/tools/mixins/_animation.scss";
+@import "~scss/tools/mixins/_helpers.scss";
 
 .search-bar-page {
     text-space: discard;

@@ -20,11 +20,7 @@ export class SearchBarPage extends Vue implements SearchBarPageProps {
     q: string = '';
 
     handleSubmit() {
-        if (!this.q.length) {
-            return;
-        }
-
-        if (this.q === this.terms) {
+        if (!this.q.length || this.q === this.terms) {
             return;
         }
 

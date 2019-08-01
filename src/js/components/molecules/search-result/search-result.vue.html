@@ -2,9 +2,16 @@
 
 <div class="search-result">
     <h3 class="search-result__title">
-        <a :href="link" class="search-result__link" v-html="computedTitle" />
+        <a
+            :href="link"
+            v-html="computedTitle"
+            class="search-result__link"
+        />
     </h3>
-    <p class="search-result__snippet" v-html="computedSnippet" />
+    <p
+        v-html="computedSnippet"
+        class="search-result__snippet"
+    />
     <p class="search-result__url">
         {{ formattedUrl }}
     </p>
