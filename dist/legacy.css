@@ -3428,7 +3428,10 @@ because both families serve another purpose. Therefore the line-heights will be 
       width: 66%; } }
 
 .um-components .article-table {
-  overflow-x: auto; }
+  overflow-x: auto;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
   margin-top: -2px;
@@ -4825,6 +4828,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
 .um-components dl {
+  margin-bottom: 36px;
   border-top: 2px solid #e3e3e3;
   border-bottom: 2px solid #e3e3e3; }
 
@@ -4845,7 +4849,10 @@ because both families serve another purpose. Therefore the line-heights will be 
 @media (min-width: 768px) {
   .um-components dl {
     display: grid;
-    grid-template-columns: max-content auto; }
+    grid-template-columns: max-content auto;
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto; }
   .um-components dt,
   .um-components dd {
     border-top: 1px solid #e3e3e3;
