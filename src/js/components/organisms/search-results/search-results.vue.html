@@ -9,7 +9,7 @@
         :placeholder="placeholder"
         :terms="terms"
     />
-    <h1 class="search-results__title">
+    <h1 class="search-results__title" v-if="terms.length && !isLoading">
         {{ computedTitle }}
     </h1>
     <ul

@@ -14,7 +14,7 @@
 .search-results__list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 $buildingUnit;
 }
 
 .search-results__list-item {
@@ -29,11 +29,13 @@
 .search-results .search-bar-page {
     margin-top: $buildingUnit * 7;
     margin-bottom: $buildingUnit * 7;
+    padding-left: $buildingUnit;
+    padding-right: $buildingUnit;
     text-align: center;
 }
 
 .search-results .search-bar-page__input {
-    width: calc(100% - 70px);
+    width: calc(100% - 60px);
 
     @include min-tablet {
         width: calc(50%);

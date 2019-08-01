@@ -1,5 +1,4 @@
 /** @format */
-
 @import "~scss/tools/mixins/_animation.scss";
 @import "~scss/settings/_variables.scss";
 
@@ -9,10 +8,28 @@
     position: relative;
 
     @include micro-animate(background-color);
+}
 
-    &:hover {
-        background-color: $colorGrayLight;
+.search-result:hover {
+    background-color: $colorGrayLight;
+
+    a:not(.hit-area) {
+        background-color: transparent;
+        color: inherit;
     }
+}
+
+.search-result--focus:not(:hover) {
+    background-color: $um-blue;
+    color: $colorWhite;
+
+    a:not(.hit-area) {
+        background-color: transparent;
+    }
+}
+
+.search-result--focus:not(:hover) mark {
+    color: $colorWhite;
 }
 
 .search-result__title {
@@ -43,6 +60,7 @@
 
 .search-result__url {
     margin: 0;
+    word-break: break-all;
 }
 
 .search-result mark {

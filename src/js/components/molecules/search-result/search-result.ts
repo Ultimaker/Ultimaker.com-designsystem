@@ -16,6 +16,8 @@ export class SearchResult extends Vue implements SearchResultProps {
     @Prop({ type: String, required: true }) snippet!: SearchResultProps['snippet'];
     @Prop({ type: String, required: true }) formattedUrl!: SearchResultProps['formattedUrl'];
 
+    focused: boolean = false;
+
     get computedTitle(): string {
         return mark(this.title, this.terms);
     }

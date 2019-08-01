@@ -1,10 +1,12 @@
 <!-- @format -->
 
-<div class="search-result">
+<div class="search-result" :class="{ 'search-result--focus': focused }">
     <h3 class="search-result__title">
         <a
             :href="link"
             v-html="computedTitle"
+            @focus="focused = !focused"
+            @blur="focused = !focused"
             class="search-result__link"
         />
     </h3>
