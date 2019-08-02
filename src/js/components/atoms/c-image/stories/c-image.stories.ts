@@ -14,12 +14,9 @@ const getStory = type => () => {
     return {
         props: {
             alt: { default: knobs.alt },
-            backgroundColor: { default: knobs.backgroundColor },
             focusArea: { default: knobs.focusArea },
-            imageFormat: { default: knobs.imageFormat },
             mimeType: { default: knobs.mimeType },
             quality: { default: knobs.quality },
-            radius: { default: knobs.radius },
             resizeBehavior: { default: knobs.resizeBehavior },
             url: { default: knobs.url },
         },

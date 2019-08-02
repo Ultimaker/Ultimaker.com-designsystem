@@ -1146,8 +1146,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     <img
                       alt="zeiss"
                       class="img--contain brand__image img--loading"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png?w=20"
                       type="CImage"
                     />
                   </article>
@@ -1162,8 +1161,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     <img
                       alt="volkswagen"
                       class="img--contain brand__image img--loading"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png?w=20"
                       type="CImage"
                     />
                   </article>
@@ -1178,8 +1176,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     <img
                       alt="add lab decathlon"
                       class="img--contain brand__image img--loading"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png?w=20"
                       type="CImage"
                     />
                   </article>
@@ -1194,8 +1191,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     <img
                       alt="zeiss"
                       class="img--contain brand__image img--loading"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png?w=20"
                       type="CImage"
                     />
                   </article>
@@ -1210,8 +1206,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     <img
                       alt="volkswagen"
                       class="img--contain brand__image img--loading"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png?w=20"
                       type="CImage"
                     />
                   </article>
@@ -1226,8 +1221,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     <img
                       alt="add lab decathlon"
                       class="img--contain brand__image img--loading"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png?w=20"
                       type="CImage"
                     />
                   </article>
@@ -1242,8 +1236,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     <img
                       alt="zeiss"
                       class="img--contain brand__image img--loading"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      src="https://images.ctfassets.net/28il11nk9jw2/6rMUtMgs9azvQ8DrfBGXIL/98918fdb927541686507f665b30a445d/brand-logo__zeiss--grey.png?w=20"
                       type="CImage"
                     />
                   </article>
@@ -1258,8 +1251,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     <img
                       alt="volkswagen"
                       class="img--contain brand__image img--loading"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      src="https://images.ctfassets.net/28il11nk9jw2/7Fg9F1mH3Bb8x7305z7FjT/a2d8fb885b87b67c0d3c6a5d2e416d3c/brand-logo__volkswagen--grey.png?w=20"
                       type="CImage"
                     />
                   </article>
@@ -1274,8 +1266,7 @@ exports[`Storyshots templates|printers Printers 1`] = `
                     <img
                       alt="add lab decathlon"
                       class="img--contain brand__image img--loading"
-                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                      srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                      src="https://images.ctfassets.net/28il11nk9jw2/3b63oaUOqNVFrHfgH86iOE/f6468511415a6b3ab974beb8653469de/brand-logo__add-lab-decathlon--grey.png?w=20"
                       type="CImage"
                     />
                   </article>

@@ -207,8 +207,9 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         <img
                           alt="An example image"
                           class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          imageformat="png"
+                          radius="0"
+                          src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                         />
                       </div>
                     </div>
@@ -282,8 +283,9 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         <img
                           alt="An example image"
                           class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          imageformat="png"
+                          radius="0"
+                          src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                         />
                       </div>
                     </div>
@@ -357,8 +359,9 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         <img
                           alt="An example image"
                           class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          imageformat="png"
+                          radius="0"
+                          src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                         />
                       </div>
                     </div>
@@ -432,8 +435,9 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         <img
                           alt="An example image"
                           class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          imageformat="png"
+                          radius="0"
+                          src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                         />
                       </div>
                     </div>
@@ -507,8 +511,9 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         <img
                           alt="An example image"
                           class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          imageformat="png"
+                          radius="0"
+                          src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                         />
                       </div>
                     </div>
@@ -582,8 +587,9 @@ exports[`Storyshots organisms|Tabbed Content Tabbed Content 1`] = `
                         <img
                           alt="An example image"
                           class="img--contain img--loading"
-                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                          srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                          imageformat="png"
+                          radius="0"
+                          src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                         />
                       </div>
                     </div>
