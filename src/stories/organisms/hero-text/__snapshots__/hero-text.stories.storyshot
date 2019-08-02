@@ -8,7 +8,7 @@ exports[`Storyshots organisms|hero Hero text 1`] = `
     class="story__organism"
   >
     <article
-      class="hero hero--text"
+      class="hero hero--text organism"
     >
       <div
         class="container"
