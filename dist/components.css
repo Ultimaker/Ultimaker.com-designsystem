@@ -1537,14 +1537,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   object-fit: cover;
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  will-change: filter;
-  transition: filter 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  transform: translateZ(0);
-  filter: blur(0.01px); }
-
-.img--contain.img--loading {
-  filter: blur(50px); }
+  height: 100%; }
 
 .img--responsive {
   max-width: 100%;
@@ -1559,9 +1552,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   height: 100%;
   background-color: #e3e3e3;
   padding: 12px; }
-
-.img--lazy {
-  transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
 
 .img--lazy.img--loading {
   opacity: 0; }
