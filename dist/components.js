@@ -5158,27 +5158,7 @@ var CImage = function (_Mixins) {
         value: function getParams(options) {
             var elementWidth = this.width || _cImage2.imageConstants.initialSize;
             var elementHeight = this.height;
-            var paramMap = new Map([['w', options && options.width ? options.width : elementWidth], ['h', options && options.height ? options.height : elementHeight], ['fit', this.resizeBehavior], ['f', this.focusArea], ['r', this.radius]]);
-            if (this.imageFormat === _cImage.ImageFormat.jpg || this.imageFormat === _cImage.ImageFormat.pjpg) {
-                paramMap.set('q', this.quality);
-            }
-            if (this.backgroundColor) {
-                paramMap.set('bg', "rgb:" + this.backgroundColor);
-            }
-            switch (this.imageFormat) {
-                case _cImage.ImageFormat.pjpg:
-                    paramMap.set('fm', _cImage.ImageFormat.jpg);
-                    paramMap.set('fl', 'progressive');
-                    break;
-                case _cImage.ImageFormat.png8:
-                    paramMap.set('fm', _cImage.ImageFormat.png);
-                    paramMap.set('fl', 'png8');
-                    break;
-                default:
-                    if (this.imageFormat !== _cImage.ImageFormat.default) {
-                        paramMap.set('fm', this.imageFormat);
-                    }
-            }
+            var paramMap = new Map([['w', options && options.width ? options.width : elementWidth], ['h', options && options.height ? options.height : elementHeight], ['fit', this.resizeBehavior], ['f', this.focusArea]]);
             return Array.from(paramMap.keys()).reduce(function (accumulator, current) {
                 var value = paramMap.get(current);
                 if (!value) return accumulator;
@@ -5232,7 +5212,7 @@ var CImage = function (_Mixins) {
                             case 4:
                                 imageToLoad = document.createElement('img');
 
-                                imageToLoad.src = this.imageUrl;
+                                imageToLoad.src = this.src;
                                 imageToLoad.addEventListener('load', this.imageLoadHandler);
 
                             case 7:
@@ -5269,46 +5249,19 @@ var CImage = function (_Mixins) {
     }, {
         key: "src",
         get: function get() {
-            if (_browserCapabilities2.default.isBrowser) {
-                return _cImage2.imageConstants.tinyGif;
+            if (!this.imageLoaded) {
+                return "" + this.url + this.getParams({ width: _cImage2.imageConstants.initialSize });
             }
-            return this.url;
-        }
-    }, {
-        key: "srcset",
-        get: function get() {
-            if (!this.ready) {
-                return _cImage2.imageConstants.tinyGif + " 1w";
-            }
-            return (this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl) + " " + (this.width || _cImage2.imageConstants.initialSize) + "w";
-        }
-    }, {
-        key: "imageUrl",
-        get: function get() {
             return "" + this.url + this.getParams({});
-        }
-    }, {
-        key: "thumbUrl",
-        get: function get() {
-            if (this.resizeBehavior !== _cImage.ResizeBehavior.default) {
-                var cropFactor = this.width > this.height ? this.width / _cImage2.imageConstants.initialSize : this.height / _cImage2.imageConstants.initialSize;
-                var height = Math.round(this.height / cropFactor);
-                var width = Math.round(this.width / cropFactor);
-                return "" + this.url + this.getParams({ width: width, height: height });
-            }
-            return "" + this.url + this.getParams({ width: _cImage2.imageConstants.initialSize });
         }
     }]);
 
     return CImage;
 }((0, _vuePropertyDecorator.Mixins)(_inView.InView));
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __metadata("design:type", String)], CImage.prototype, "alt", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: null }), __metadata("design:type", Object)], CImage.prototype, "backgroundColor", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), __metadata("design:type", Boolean)], CImage.prototype, "crop", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: _cImage.FocusArea.center }), __metadata("design:type", String)], CImage.prototype, "focusArea", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: _cImage.ImageFormat.default }), __metadata("design:type", String)], CImage.prototype, "imageFormat", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], CImage.prototype, "mimeType", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Number)], CImage.prototype, "radius", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: _cImage.ResizeBehavior.default }), __metadata("design:type", String)], CImage.prototype, "resizeBehavior", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 65 }), __metadata("design:type", Number)], CImage.prototype, "quality", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], CImage.prototype, "url", void 0);
@@ -5528,7 +5481,7 @@ var imageConstants = exports.imageConstants = {
 /* 159 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('img',{staticClass:"img--contain",class:_vm.classList,attrs:{"alt":_vm.alt,"src":_vm.src,"srcset":_vm.srcset},on:{"error":_vm.setError}})}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('img',{staticClass:"img--contain",class:_vm.classList,attrs:{"alt":_vm.alt,"src":_vm.src},on:{"error":_vm.setError}})}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
