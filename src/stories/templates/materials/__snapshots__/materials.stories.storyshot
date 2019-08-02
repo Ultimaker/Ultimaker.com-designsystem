@@ -904,8 +904,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -942,8 +943,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -980,8 +982,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1018,8 +1021,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1056,8 +1060,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1094,8 +1099,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1132,8 +1138,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1170,8 +1177,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1208,8 +1216,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1246,8 +1255,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1284,8 +1294,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1322,8 +1333,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                 <img
                   alt="An example image"
                   class="img--contain img--loading"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                  imageformat="png"
+                  radius="0"
+                  src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                   type="Cimage"
                 />
               </div>
@@ -1354,8 +1366,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
           <img
             alt="bla bla"
             class="img--contain img--loading"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+            src="/generator/svg/1500/400/000022/FFFFFF?w=20&fit=fill&f=center"
           />
         </div>
          
@@ -1700,8 +1711,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           <img
                             alt="An example image"
                             class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            imageformat="png"
+                            radius="0"
+                            src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                           />
                         </div>
                       </div>
@@ -1775,8 +1787,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           <img
                             alt="An example image"
                             class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            imageformat="png"
+                            radius="0"
+                            src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                           />
                         </div>
                       </div>
@@ -1850,8 +1863,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           <img
                             alt="An example image"
                             class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            imageformat="png"
+                            radius="0"
+                            src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                           />
                         </div>
                       </div>
@@ -1925,8 +1939,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           <img
                             alt="An example image"
                             class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            imageformat="png"
+                            radius="0"
+                            src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                           />
                         </div>
                       </div>
@@ -2000,8 +2015,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           <img
                             alt="An example image"
                             class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            imageformat="png"
+                            radius="0"
+                            src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                           />
                         </div>
                       </div>
@@ -2075,8 +2091,9 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                           <img
                             alt="An example image"
                             class="img--contain img--loading"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                            imageformat="png"
+                            radius="0"
+                            src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
                           />
                         </div>
                       </div>
@@ -2243,8 +2260,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   <img
                     alt="bla bla"
                     class="img--contain img--loading"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    src="/generator/svg/1000/500?w=20&f=center"
                   />
                    
                   <div
@@ -2297,8 +2313,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   <img
                     alt="bla bla"
                     class="img--contain img--loading"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    src="/generator/svg/1000/500?w=20&f=center"
                   />
                    
                   <div
@@ -2366,8 +2381,7 @@ exports[`Storyshots templates|materials Materials overview 1`] = `
                   <img
                     alt="bla bla"
                     class="img--contain img--loading"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                    srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                    src="/generator/svg/1000/500?w=20&f=center"
                   />
                    
                   <div

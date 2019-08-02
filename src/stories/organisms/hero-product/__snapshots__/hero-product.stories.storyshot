@@ -66,8 +66,7 @@ exports[`Storyshots organisms|hero Hero product 1`] = `
                 class="img--contain img--loading"
                 links="[object Object]"
                 mime_type="image/png"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w"
+                src="undefined?w=20"
                 title="Some title"
               />
             </div>
