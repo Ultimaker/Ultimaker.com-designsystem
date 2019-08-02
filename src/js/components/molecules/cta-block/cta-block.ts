@@ -1,12 +1,13 @@
+/** @format */
+
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { CtaBlockProps } from './cta-block.models';
 import WithRender from './cta-block.vue.html';
 
 @WithRender
 @Component({
-    name: 'CtaBlock',
+    name: 'cta-block',
 })
-
 export default class CtaBlock extends Vue implements CtaBlockProps {
     @Prop({ type: Array, required: true }) ctas!: CtaBlockProps['ctas'];
     @Prop({ type: String }) mod?: CtaBlockProps['mod'];
