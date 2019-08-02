@@ -20,15 +20,6 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
-
-    will-change: filter;
-    transition: filter ($defaultDuration * 2) $defaultEasing;
-    transform: translateZ(0);
-    filter: blur(0.01px);
-}
-
-.img--contain.img--loading {
-    filter: blur(50px);
 }
 
 .img--responsive {
@@ -45,10 +36,6 @@
     height: 100%;
     background-color: $colorGray;
     padding: $buildingUnit;
-}
-
-.img--lazy {
-    transition: opacity 0.5s $defaultEasing;
 }
 
 .img--lazy.img--loading {

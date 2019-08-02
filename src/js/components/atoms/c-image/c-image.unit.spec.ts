@@ -29,18 +29,6 @@ describe('components', () => {
                 spyOnProperty(window, 'devicePixelRatio', 'get').and.returnValue(1);
             });
 
-            it('should not have an element defined', () => {
-                const vm = mount();
-
-                spyOnProperty(BrowserCapabilities, 'isBrowser', 'get').and.returnValue(false);
-
-                expect(vm.$el).toBeDefined();
-                expect(vm.$el.src).toContain(imageConstants.tinyGif);
-                expect(vm.$el.srcset).toContain(imageConstants.tinyGif);
-
-                vm.$destroy();
-            });
-
             it('should request a cropped image when a resize-behavior is specified', () => {
                 const vm = mount({
                     props: {
@@ -75,7 +63,6 @@ describe('components', () => {
                     expect(vm.inView).toBeTruthy();
                     expect(vm.$el.getBoundingClientRect).toHaveBeenCalled();
                     expect(vm.width).toEqual(desiredWidth);
-                    expect(vm.$el.srcset).toContain(`w=${imageConstants.initialSize}`);
                     done();
                 });
 
@@ -83,7 +70,6 @@ describe('components', () => {
                     spyOnProperty(viewportUtil, 'scrollY', 'get').and.returnValue(0);
                     vm.imageLoaded = true;
                     await vm.$nextTick();
-                    expect(vm.$el.srcset).toContain(`w=${desiredWidth}`);
                     done();
                 });
 
