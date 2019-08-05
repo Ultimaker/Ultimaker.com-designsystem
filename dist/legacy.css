@@ -414,34 +414,73 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
 .um-components .label-filter input[type="checkbox"] {
   position: absolute;
-  overflow: hidden;
-  height: 1px;
   width: 1px;
-  padding: 0;
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  white-space: nowrap; }
-
-.um-components .label-filter input[type="checkbox"]:checked + .label-filter__label {
-  color: #fff;
-  background-color: #196ef0; }
-
-.um-components .label-filter input[type="checkbox"]:focus + .label-filter__label {
-  outline: #196ef0 solid 2px; }
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
 
 .um-components .label-filter__label {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #7f7f7f;
+  color: #000;
+  cursor: pointer;
   display: inline-block;
-  padding-left: 6px;
-  padding-right: 6px;
   font-size: 12px;
   font-weight: 500;
+  padding: 0 6px; }
+
+.um-components .label-filter > :checked:not(:disabled) + .label-filter__label {
+  background-color: #196ef0;
+  border-color: #196ef0;
+  color: #fff; }
+
+.um-components .label-filter > :focus + .label-filter__label {
+  border-color: #fff;
+  outline: #196ef0 solid 2px; }
+
+.um-components .label-filter > :disabled:not(:checked) + .label-filter__label {
+  background-color: #fff;
+  border-color: #eaeaea;
   color: #7f7f7f;
-  background-color: #f5f5f5;
-  border-radius: 2px;
-  border: 1px solid #e3e3e3; }
+  cursor: not-allowed; }
+
+.um-components .label-filter > :disabled:checked + .label-filter__label {
+  background-color: #eaeaea;
+  border-color: #7f7f7f;
+  color: #7f7f7f;
+  cursor: not-allowed; }
 
 .um-components p, .um-components strong, .um-components .tablist__section .tablist__item, .um-components .examples .examples__tabs .tablist__item {
   margin-top: -2px;
@@ -3967,10 +4006,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
+  background-color: #fff;
+  border: 1px solid #7f7f7f;
   border-radius: 2px;
-  color: #7f7f7f;
+  color: #000;
   font-size: 12px;
   font-weight: 500;
   margin-bottom: 6px;
@@ -3979,10 +4018,9 @@ because both families serve another purpose. Therefore the line-heights will be 
   padding-right: 6px;
   padding-left: 6px;
   padding-bottom: 2px; }
-
-.um-components .filter-category__reset:focus {
-  outline-offset: 1px;
-  outline: 2px solid #196ef0; }
+  .um-components .filter-category__reset:focus {
+    border-color: #fff;
+    outline: 2px solid #196ef0; }
 
 .um-components .filter-category__reset--active {
   background-color: #196ef0;
