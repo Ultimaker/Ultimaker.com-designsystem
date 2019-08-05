@@ -14,7 +14,7 @@ export const stopWasting = {
     description:
         'FFF 3D printing is revolutionizing production processes. In this guide, find out how adopting 3D printing has streamlined processes and cut costs across a range of industries, from automotive engineering to the beauty industry.',
     image: toughPLA,
-    labels: [{ label: 'Aerospace' }, { label: 'Automotive' }, { label: 'Fashion' }, { label: 'Humanitarian' }, { label: 'Manufacturing aids' }, { label: 'Product development' }],
+    labels: ['Aerospace', 'Automotive', 'Fashion', 'Humanitarian', 'Manufacturing aids', 'Product development'],
     title: '5 ways to stop wasting money on production processes',
     type: 'CardArticle',
     url:

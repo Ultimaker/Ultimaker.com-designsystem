@@ -14,7 +14,7 @@ export const printingGuide = {
     description:
         '3D printer manufacturers don’t always communicate the full cost of owning their products. Discover 3D printing’s full cost breakdown, so you can avoid any hidden costs.',
     image: pva,
-    labels: [{ label: 'Aerospace' }, { label: 'Humanitarian' }, { label: 'Research' }, { label: 'Medicine' }, { label: 'Manufacturing aids' }, { label: 'Product development' }],
+    labels: ['Aerospace', 'Architecture', 'Humanitarian', 'Research', 'Medicine', 'Manufacturing aids', 'Product development'],
     title: '3D printing: The total cost of ownership',
     type: 'CardArticle',
     url:
