@@ -269,10 +269,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child {
   margin-bottom: 0; }
 
-.hero--products .hero__link--large, .hero--products-application .hero__link--large, .examples .examples__link--large {
+.examples .examples__link--large {
   margin-bottom: 0; }
 
 .clear {
@@ -319,7 +319,6 @@ small a:focus:not(:hover),
 .tablist__section .tablist__headline a:focus:not(:hover),
 .examples .examples__tabs .tablist__headline a:focus:not(:hover),
 .auto-complete__label a:focus:not(:hover),
-.hero--products-application .usp--icon .usp__label a:focus:not(:hover),
 .overflow-container__label a:focus:not(:hover),
 .settings-selector__label a:focus:not(:hover),
 small a:focus:not(:active),
@@ -337,7 +336,6 @@ small a:focus:not(:active),
 .tablist__section .tablist__headline a:focus:not(:active),
 .examples .examples__tabs .tablist__headline a:focus:not(:active),
 .auto-complete__label a:focus:not(:active),
-.hero--products-application .usp--icon .usp__label a:focus:not(:active),
 .overflow-container__label a:focus:not(:active),
 .settings-selector__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
@@ -905,7 +903,7 @@ q {
   color: #7f7f7f; }
 
 small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.overflow-container__link:hover, .link--small.overflow-container__link.exact-active, .price-table__tagline,
-.price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
+.price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .overflow-container__label, .settings-selector__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
@@ -913,7 +911,7 @@ small, .caption-list__headline, .caption-list__list-item, .link.link--small, .li
   color: inherit; }
   @media (min-width: 768px) {
     small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.overflow-container__link:hover, .link--small.overflow-container__link.exact-active, .price-table__tagline,
-    .price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
+    .price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .overflow-container__label, .settings-selector__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -938,8 +936,7 @@ small, .caption-list__headline, .caption-list__list-item, .link.link--small, .li
 h1,
 h2,
 h3,
-q,
-.hero--products-application .hero__subtitle {
+q {
   font-weight: normal; }
 
 h1,
@@ -973,7 +970,6 @@ h2,
 
 h3,
 q,
-.hero--products-application .hero__subtitle,
 .headline--tertiary {
   font-size: 18px;
   line-height: 24px;
@@ -983,7 +979,6 @@ q,
     
     h3,
     q,
-    .hero--products-application .hero__subtitle,
     .headline--tertiary {
       font-size: 20px;
       line-height: 24px;
@@ -1137,7 +1132,6 @@ a {
   .tablist__section .tablist__headline a,
   .examples .examples__tabs .tablist__headline a,
   .auto-complete__label a,
-  .hero--products-application .usp--icon .usp__label a,
   .overflow-container__label a,
   .settings-selector__label a,
   .content--rich li a {
@@ -3403,16 +3397,6 @@ th {
     .container.brands__container, .brands__container.footer__container, .container.examples__container, .examples__container.footer__container, .container.ecosystem__container, .ecosystem__container.footer__container, .container.explore__container, .explore__container.footer__container, .container.case__container, .case__container.footer__container, .container.general-content__container, .general-content__container.footer__container, .container.slider-reveal__container, .slider-reveal__container.footer__container {
       padding: 60px; } }
 
-.hero--products-application .container, .hero--products-application .footer__container {
-  margin: 0 auto;
-  padding: 60px 12px 60px 12px; }
-  @media (min-width: 768px) {
-    .hero--products-application .container, .hero--products-application .footer__container {
-      padding: 60px 24px 60px 24px; } }
-  @media (min-width: 1025px) {
-    .hero--products-application .container, .hero--products-application .footer__container {
-      padding: 60px; } }
-
 .flyout, .main-nav__flyout {
   display: flex;
   flex-direction: column;
@@ -5422,7 +5406,7 @@ dd {
     dd:first-of-type {
       border-top: 0; } }
 
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .hero--article:nth-child(even) {
+main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
 .hero__image {
@@ -5433,221 +5417,6 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
     .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
-
-@media (max-width: 568px) {
-  .hero--products .hero__container, .hero--products-application .hero__container {
-    padding-top: 12px; } }
-
-.hero--products .hero__image--basic, .hero--products-application .hero__image--basic,
-.hero--products .hero__image--product,
-.hero--products-application .hero__image--product {
-  position: relative;
-  width: 75%;
-  margin: 0 auto 30px; }
-  @media (min-width: 569px) {
-    .hero--products .hero__image--basic, .hero--products-application .hero__image--basic,
-    .hero--products .hero__image--product,
-    .hero--products-application .hero__image--product {
-      width: 100%;
-      margin: 0 auto 0 30px; } }
-
-.hero--products .hero__image-link, .hero--products-application .hero__image-link {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  margin: 12px;
-  width: 84px;
-  height: 84px;
-  color: #000;
-  transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  .hero--products .hero__image-link:hover, .hero--products-application .hero__image-link:hover, .hero--products .hero__image-link:focus, .hero--products-application .hero__image-link:focus {
-    color: #939393; }
-  @media (min-width: 1025px) {
-    .hero--products .hero__image-link, .hero--products-application .hero__image-link {
-      width: 120px;
-      height: 120px; } }
-
-.hero--products .hero__image-link--3d-kit, .hero--products-application .hero__image-link--3d-kit {
-  width: 100%;
-  height: 100%; }
-
-.hero--products .hero__button, .hero--products-application .hero__button {
-  display: table; }
-  @media (min-width: 768px) {
-    .hero--products .hero__button, .hero--products-application .hero__button {
-      display: inline-block;
-      margin-bottom: 0; } }
-
-.hero--products .hero__link-list, .hero--products-application .hero__link-list {
-  margin-top: 33px;
-  margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .hero--products .hero__link-list, .hero--products-application .hero__link-list {
-      margin-top: 46px; } }
-
-/*
-
-
-
-$imageLinkSizeMobile: $buildingUnit * 7;
-$imageLinkSizeDesktop: $buildingUnit * 10;
-
-.cta-block--hero {
-    align-items: flex-start;
-    @include min-tablet() {
-        align-items: center;
-    }
-}
-
-
-    @extend %reset-last-margin;
-
-    .hero__container {
-        padding-top: $buildingUnit * 5;
-    }
-
-    .hero__image--basic,
-    .hero__image--product{
-        position: relative;
-        width: 75%;
-
-        margin: 0 auto ($buildingUnit * 2.5);
-
-        @include min-mobile-xl {
-            width: 100%;
-            margin: 0 auto 0 ($buildingUnit * 2.5);
-        }
-    }
-
-    .hero__image-link {
-        position: absolute;
-        z-index: 1;
-        bottom: 0;
-        right: 0;
-
-        cursor: pointer;
-
-        margin: $buildingUnit;
-
-        width: $imageLinkSizeMobile;
-        height: $imageLinkSizeMobile;
-
-        color: $colorBlack;
-        @include micro-animate(color);
-
-        &:hover,
-        &:focus {
-            color: lighten($colorGrayDark, $tintHoverFocus); // #939393
-        }
-
-        @include min-desktop {
-            width: $imageLinkSizeDesktop;
-            height: $imageLinkSizeDesktop;
-        }
-    }
-
-    .hero__description {
-        @extend %reset-last-margin;
-    }
-
-    .hero__button {
-        display: table;
-
-        @include min-tablet {
-            display: inline-block;
-            margin-bottom: 0;
-        }
-    }
-
-    .hero__link--large {
-        @extend %reset-last-link-large-margin;
-    }
-
-    */
-.hero--products-application .hero__container--top {
-  position: relative;
-  color: #fff; }
-  .hero--products-application .hero__container--top .container, .hero--products-application .hero__container--top .footer__container {
-    position: relative; }
-    @media (max-width: 568px) {
-      .hero--products-application .hero__container--top .container, .hero--products-application .hero__container--top .footer__container {
-        padding-bottom: 0; } }
-
-.hero--products-application .hero__headline h1 {
-  margin-bottom: 5px; }
-  @media (min-width: 768px) {
-    .hero--products-application .hero__headline h1 {
-      margin-bottom: 28px; } }
-
-.hero--products-application .hero__subtitle {
-  color: #fff; }
-  @media (min-width: 768px) {
-    .hero--products-application .hero__subtitle {
-      font-size: 30px;
-      line-height: 36px;
-      margin-top: -5px;
-      margin-bottom: 59px; } }
-
-.hero--products-application .hero__usp-container {
-  display: flex;
-  align-items: flex-start;
-  width: calc(100% - (12px * 3));
-  margin: 0 auto; }
-  @media (min-width: 569px) {
-    .hero--products-application .hero__usp-container {
-      width: unset;
-      margin-top: 30px; } }
-  @media (min-width: 768px) {
-    .hero--products-application .hero__usp-container {
-      margin-top: -6px; } }
-  @media (max-width: 568px) {
-    .hero--products-application .hero__usp-container {
-      justify-content: center;
-      color: #7f7f7f; } }
-
-.hero--products-application .hero__usp {
-  width: calc((100% - (12px * 3)) / 3);
-  max-width: 120px; }
-  .hero--products-application .hero__usp:not(:last-child) {
-    margin-right: 18px; }
-
-.hero--products-application .usp--icon {
-  display: inline-block;
-  text-align: center; }
-  .hero--products-application .usp--icon .usp__icon {
-    font-size: 48px;
-    margin-bottom: 5px; }
-  .hero--products-application .usp--icon .usp__label {
-    margin-bottom: -5px; }
-
-@media (min-width: 569px) {
-  .hero--products-application .hero__subtitle,
-  .hero--products-application .hero__image--product {
-    width: calc(50% - 12px); } }
-
-@media (min-width: 569px) {
-  .hero--products-application .hero__image--product {
-    position: absolute;
-    top: 0;
-    right: 0; } }
-
-.hero--products-application .hero__image--full {
-  object-fit: cover; }
-
-.hero--products-application .hero__image-overlay {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.hero--products-application .hero__image--full, .hero--products-application .hero__image-overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 320px; }
-  @media (min-width: 569px) {
-    .hero--products-application .hero__image--full, .hero--products-application .hero__image-overlay {
-      height: 100%; } }
 
 .hero--text .content--rich p, .hero--text .content--rich strong, .hero--text .content--rich .tablist__section .tablist__item, .tablist__section .hero--text .content--rich .tablist__item, .hero--text .content--rich .examples .examples__tabs .tablist__item, .examples .examples__tabs .hero--text .content--rich .tablist__item, .hero--text .content--rich ul, .hero--text .content--rich li {
   max-width: 768px; }
@@ -5660,10 +5429,10 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
       margin-top: 36px;
       margin-bottom: 29px; } }
 
-.hero--text .content--rich * + h3, .hero--text .content--rich * + q, .hero--text .content--rich .hero--products-application * + .hero__subtitle, .hero--products-application .hero--text .content--rich * + .hero__subtitle {
+.hero--text .content--rich * + h3, .hero--text .content--rich * + q {
   margin-top: 30px; }
   @media (min-width: 768px) {
-    .hero--text .content--rich * + h3, .hero--text .content--rich * + q, .hero--text .content--rich .hero--products-application * + .hero__subtitle, .hero--products-application .hero--text .content--rich * + .hero__subtitle {
+    .hero--text .content--rich * + h3, .hero--text .content--rich * + q {
       margin-top: 35px; } }
 
 .hero--cover {
@@ -6788,7 +6557,7 @@ main .overview:nth-child(even) {
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px);
   min-width: 125px;
   max-width: 70vw; }
-  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .hero--products:nth-child(even) .table-compare__feature, main .hero--products-application:nth-child(even) .table-compare__feature, main .hero--text:nth-child(even) .table-compare__feature, main .hero--cover:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .hero--article:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .hero--products:nth-child(even) .table-compare__feature--no-tooltip, main .hero--products-application:nth-child(even) .table-compare__feature--no-tooltip, main .hero--text:nth-child(even) .table-compare__feature--no-tooltip, main .hero--cover:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .general-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, main .hero--article:nth-child(even) .table-compare__feature--no-tooltip {
+  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .general-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .table-compare__feature--no-tooltip {
