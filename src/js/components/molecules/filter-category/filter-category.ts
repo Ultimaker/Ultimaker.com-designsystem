@@ -9,7 +9,7 @@ import { LabelFilterInterface } from 'components/atoms/label-filter/label-filter
 @WithRender
 @Component({ name: 'FilterCategory' })
 export class FilterCategory extends Vue implements FilterCategoryProps {
-    @Prop({ type: Array }) activeFilters?: FilterCategoryProps['activeFilters'];
+    @Prop({ type: Array, default: () => [] }) activeFilters!: FilterCategoryProps['activeFilters'];
     @Prop({ type: Array, required: true }) labels!: FilterCategoryProps['labels'];
     @Prop({ type: String, required: true }) eventChange!: FilterCategoryProps['eventChange'];
     @Prop({ type: String, required: true }) showAllLabel!: FilterCategoryProps['showAllLabel'];
@@ -53,10 +53,6 @@ export class FilterCategory extends Vue implements FilterCategoryProps {
     }
 
     isFilterDisabled(label: string): boolean {
-        if (!this.activeFilters || this.activeFilters.length === 0) {
-            return false;
-        }
-
         return !this.activeFilters.includes(label);
     }
 
