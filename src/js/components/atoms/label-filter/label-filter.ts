@@ -1,7 +1,6 @@
 /** @format */
 
-import { LabelFilterInterface } from 'components/atoms/label-filter/label-filter.interface';
-import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 import WithRender from './label-filter.vue.html';
 
 import { LabelFilterProps } from './label-filter.models';
@@ -20,15 +19,11 @@ export class LabelFilter extends Vue implements LabelFilterProps {
 
     checkedState: boolean = this.checked || false;
 
-    emitEvent(eventName) {
-        this.$emit(eventName, {
+    onChange($event) {
+        this.$emit(this.eventChange, {
             checked: this.checkedState,
             disabled: this.disabled,
             value: this.value,
         });
-    }
-
-    onChange($event) {
-        this.emitEvent(this.eventChange);
     }
 }
