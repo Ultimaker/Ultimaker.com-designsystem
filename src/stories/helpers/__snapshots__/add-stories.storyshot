@@ -1,23 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Atoms/label-filter architecture 1`] = `
+exports[`Storyshots Atoms/label-filter checked 1`] = `
 <section
   class="story"
 >
   <label
-    category="Architecture"
     class="label-filter"
   >
     <input
-      name="Industry"
+      name="checked"
       type="checkbox"
-      value="Architecture"
+      value="Checked"
     />
      
     <span
       class="label-filter__label"
     >
-      Architecture
+      Checked
     </span>
   </label>
    
@@ -27,24 +26,24 @@ exports[`Storyshots Atoms/label-filter architecture 1`] = `
 </section>
 `;
 
-exports[`Storyshots Atoms/label-filter endUserParts 1`] = `
+exports[`Storyshots Atoms/label-filter checkedDisabled 1`] = `
 <section
   class="story"
 >
   <label
-    category="End-user parts"
     class="label-filter"
   >
     <input
-      name="Application"
+      disabled="disabled"
+      name="checked-disabled"
       type="checkbox"
-      value="End-user parts"
+      value="CheckedDisabled"
     />
      
     <span
       class="label-filter__label"
     >
-      End-user parts
+      CheckedDisabled
     </span>
   </label>
    
@@ -54,24 +53,24 @@ exports[`Storyshots Atoms/label-filter endUserParts 1`] = `
 </section>
 `;
 
-exports[`Storyshots Atoms/label-filter manufacturingAids 1`] = `
+exports[`Storyshots Atoms/label-filter disabled 1`] = `
 <section
   class="story"
 >
   <label
-    category="Manufacturing aids"
     class="label-filter"
   >
     <input
-      name="Application"
+      disabled="disabled"
+      name="disabled"
       type="checkbox"
-      value="Manufacturing aids"
+      value="Disabled"
     />
      
     <span
       class="label-filter__label"
     >
-      Manufacturing aids
+      Disabled
     </span>
   </label>
    
@@ -81,51 +80,23 @@ exports[`Storyshots Atoms/label-filter manufacturingAids 1`] = `
 </section>
 `;
 
-exports[`Storyshots Atoms/label-filter medicine 1`] = `
+exports[`Storyshots Atoms/label-filter unchecked 1`] = `
 <section
   class="story"
 >
   <label
-    category="Medicine"
     class="label-filter"
   >
     <input
-      name="Industry"
+      name="unchecked"
       type="checkbox"
-      value="Medicine"
+      value="Unchecked"
     />
      
     <span
       class="label-filter__label"
     >
-      Medicine
-    </span>
-  </label>
-   
-  <div
-    class="vue-portal-target"
-  />
-</section>
-`;
-
-exports[`Storyshots Atoms/label-filter productDevelopment 1`] = `
-<section
-  class="story"
->
-  <label
-    category="Product development"
-    class="label-filter"
-  >
-    <input
-      name="Application"
-      type="checkbox"
-      value="Product development"
-    />
-     
-    <span
-      class="label-filter__label"
-    >
-      Product development
+      Unchecked
     </span>
   </label>
    
@@ -320,6 +291,38 @@ exports[`Storyshots Atoms|buttons/button secondary 1`] = `
   >
     button secondary
   </button>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Atoms|list items/li-inline itemAsObject 1`] = `
+<section
+  class="story"
+>
+  <li
+    class="list__item list__item--inline"
+  >
+    High strength-to-weight ratio (object with type)
+  </li>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Atoms|list items/li-inline itemAsString 1`] = `
+<section
+  class="story"
+>
+  <li
+    class="list__item list__item--inline"
+  >
+    High strength-to-weight ratio (string)
+  </li>
    
   <div
     class="vue-portal-target"
@@ -1884,7 +1887,7 @@ exports[`Storyshots Molecules/cards/card-article introduce 1`] = `
         <span
           class="label"
         >
-          Product development
+          Aerospace
         </span>
       </li>
       <li
@@ -1894,7 +1897,27 @@ exports[`Storyshots Molecules/cards/card-article introduce 1`] = `
         <span
           class="label"
         >
-          Education
+          End-user parts
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          Manufacturing aids
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          Product development
         </span>
       </li>
     </ul>
@@ -1965,7 +1988,27 @@ exports[`Storyshots Molecules/cards/card-article newLab 1`] = `
         <span
           class="label"
         >
-          Manufacturing
+          End-user parts
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          Manufacturing aids
+        </span>
+      </li>
+      <li
+        class="list__item list__item--inline"
+        type="LiInline"
+      >
+        <span
+          class="label"
+        >
+          Product development
         </span>
       </li>
     </ul>
@@ -2054,19 +2097,21 @@ exports[`Storyshots Molecules/cards/card-article noLabels 1`] = `
     class="card-article"
   >
     <a
-      aria-label="How to successfully introduce 3D printing in your business"
+      aria-label="Reducing costs and improving efficiency with the Ultimaker S5"
       class="anchor-overlay hit-area"
       href="https://3d.ultimaker.com/successful-introduction-checklist?utm_source=ultimaker.com&amp;utm_medium=knowledge"
-      title="How to successfully introduce 3D printing in your business"
+      title="Reducing costs and improving efficiency with the Ultimaker S5"
     />
      
     <div
       class="card-article__image-container"
     >
       <img
-        alt="Ultimaker Tough PLA print"
+        alt="An example image"
         class="img--contain card-article__image img--loading"
-        src="https://ultimaker.com/img/materials/overview/Ultimaker-Tough-PLA-print.jpg?w=20"
+        imageformat="jpg"
+        radius="0"
+        src="https://images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg?w=20&fit=fill&f=center"
         type="Image"
       />
     </div>
@@ -2074,14 +2119,14 @@ exports[`Storyshots Molecules/cards/card-article noLabels 1`] = `
     <h3
       class="card-article__heading"
     >
-      How to successfully introduce 3D printing in your business
+      Reducing costs and improving efficiency with the Ultimaker S5
     </h3>
      
     <p
       class="card-article__description"
     >
       
-        You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.
+        IMI Precision Engineering, a world leader in motion and fluid control technologies, is a company dedicated to creating solutions that provide speed and precision for customer machinery. Using the Ultimaker S5 for in-house additive manufacturing, their team was able to save time and money on low-volume pieces, while also reducing energy consumption and enhancing production line performance.
     
     </p>
      
@@ -2325,7 +2370,7 @@ exports[`Storyshots Molecules/cta-block default 1`] = `
 </section>
 `;
 
-exports[`Storyshots Molecules/filter-category applications 1`] = `
+exports[`Storyshots Molecules/filter-category initialState 1`] = `
 <section
   class="story"
 >
@@ -2342,7 +2387,7 @@ exports[`Storyshots Molecules/filter-category applications 1`] = `
       <input
         class="filter-category__reset filter-category__reset--active"
         type="reset"
-        value="All applications"
+        value="All industries"
       />
        
       <ul
@@ -2355,15 +2400,16 @@ exports[`Storyshots Molecules/filter-category applications 1`] = `
             class="label-filter"
           >
             <input
-              name="All applications"
+              disabled="disabled"
+              name="All industries"
               type="checkbox"
-              value="End-user parts"
+              value="Aerospace"
             />
              
             <span
               class="label-filter__label"
             >
-              End-user parts
+              Aerospace
             </span>
           </label>
         </li>
@@ -2374,15 +2420,16 @@ exports[`Storyshots Molecules/filter-category applications 1`] = `
             class="label-filter"
           >
             <input
-              name="All applications"
+              disabled="disabled"
+              name="All industries"
               type="checkbox"
-              value="Manufacturing aids"
+              value="Architecture"
             />
              
             <span
               class="label-filter__label"
             >
-              Manufacturing aids
+              Architecture
             </span>
           </label>
         </li>
@@ -2393,15 +2440,96 @@ exports[`Storyshots Molecules/filter-category applications 1`] = `
             class="label-filter"
           >
             <input
-              name="All applications"
+              disabled="disabled"
+              name="All industries"
               type="checkbox"
-              value="Product development"
+              value="Automotive"
             />
              
             <span
               class="label-filter__label"
             >
-              Product development
+              Automotive
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Fashion"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Fashion
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Humanitarian"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Humanitarian
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Medicine"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Medicine
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Research"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Research
             </span>
           </label>
         </li>
@@ -2415,7 +2543,180 @@ exports[`Storyshots Molecules/filter-category applications 1`] = `
 </section>
 `;
 
-exports[`Storyshots Molecules/filter-category industries 1`] = `
+exports[`Storyshots Molecules/filter-category noFiltersActive 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="filter-category"
+  >
+    <h4
+      class="filter-category__title"
+    >
+      Industry
+    </h4>
+     
+    <form>
+      <input
+        class="filter-category__reset filter-category__reset--active"
+        type="reset"
+        value="All industries"
+      />
+       
+      <ul
+        class="filter-category__list"
+      >
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Aerospace"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Aerospace
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Architecture"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Architecture
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Automotive"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Automotive
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Fashion"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Fashion
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Humanitarian"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Humanitarian
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Medicine"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Medicine
+            </span>
+          </label>
+        </li>
+        <li
+          class="filter-category__list-item"
+        >
+          <label
+            class="label-filter"
+          >
+            <input
+              disabled="disabled"
+              name="All industries"
+              type="checkbox"
+              value="Research"
+            />
+             
+            <span
+              class="label-filter__label"
+            >
+              Research
+            </span>
+          </label>
+        </li>
+      </ul>
+    </form>
+  </section>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/filter-category someFiltersActive 1`] = `
 <section
   class="story"
 >
@@ -2464,6 +2765,7 @@ exports[`Storyshots Molecules/filter-category industries 1`] = `
             class="label-filter"
           >
             <input
+              disabled="disabled"
               name="All industries"
               type="checkbox"
               value="Architecture"
@@ -2483,6 +2785,7 @@ exports[`Storyshots Molecules/filter-category industries 1`] = `
             class="label-filter"
           >
             <input
+              disabled="disabled"
               name="All industries"
               type="checkbox"
               value="Automotive"
@@ -2502,6 +2805,7 @@ exports[`Storyshots Molecules/filter-category industries 1`] = `
             class="label-filter"
           >
             <input
+              disabled="disabled"
               name="All industries"
               type="checkbox"
               value="Fashion"
@@ -2542,13 +2846,13 @@ exports[`Storyshots Molecules/filter-category industries 1`] = `
             <input
               name="All industries"
               type="checkbox"
-              value="Research"
+              value="Medicine"
             />
              
             <span
               class="label-filter__label"
             >
-              Research
+              Medicine
             </span>
           </label>
         </li>
@@ -2561,13 +2865,13 @@ exports[`Storyshots Molecules/filter-category industries 1`] = `
             <input
               name="All industries"
               type="checkbox"
-              value="Medicine"
+              value="Research"
             />
              
             <span
               class="label-filter__label"
             >
-              Medicine
+              Research
             </span>
           </label>
         </li>
@@ -2798,7 +3102,120 @@ exports[`Storyshots Molecules/list-section cardProducts 1`] = `
 </section>
 `;
 
-exports[`Storyshots Molecules/list-section filterCategories 1`] = `
+exports[`Storyshots Molecules/list-section filterCategoriesOne 1`] = `
+<section
+  class="story"
+>
+  <section
+    class="list-section"
+  >
+    <!---->
+     
+    <section
+      class="filter-category"
+    >
+      <h4
+        class="filter-category__title"
+      >
+        Application
+      </h4>
+       
+      <form>
+        <input
+          class="filter-category__reset filter-category__reset--active"
+          type="reset"
+          value="All applications"
+        />
+         
+        <ul
+          class="filter-category__list"
+        >
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All applications"
+                type="checkbox"
+                value="End-user parts"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                End-user parts
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All applications"
+                type="checkbox"
+                value="Manufacturing aids"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Manufacturing aids
+              </span>
+            </label>
+          </li>
+          <li
+            class="filter-category__list-item"
+          >
+            <label
+              class="label-filter"
+            >
+              <input
+                name="All applications"
+                type="checkbox"
+                value="Product development"
+              />
+               
+              <span
+                class="label-filter__label"
+              >
+                Product development
+              </span>
+            </label>
+          </li>
+        </ul>
+      </form>
+    </section>
+     
+    <ul
+      class="list-section__container"
+    />
+     
+    <footer
+      class="list-section__footer"
+    >
+      <button
+        class="button--secondary list-section__footer__button"
+        style="display: none;"
+      >
+        
+            Show all (5)
+        
+      </button>
+    </footer>
+  </section>
+   
+  <div
+    class="vue-portal-target"
+  />
+</section>
+`;
+
+exports[`Storyshots Molecules/list-section filterCategoriesTwo 1`] = `
 <section
   class="story"
 >
@@ -3009,13 +3426,13 @@ exports[`Storyshots Molecules/list-section filterCategories 1`] = `
               <input
                 name="All industries"
                 type="checkbox"
-                value="Research"
+                value="Medicine"
               />
                
               <span
                 class="label-filter__label"
               >
-                Research
+                Medicine
               </span>
             </label>
           </li>
@@ -3028,13 +3445,13 @@ exports[`Storyshots Molecules/list-section filterCategories 1`] = `
               <input
                 name="All industries"
                 type="checkbox"
-                value="Medicine"
+                value="Research"
               />
                
               <span
                 class="label-filter__label"
               >
-                Medicine
+                Research
               </span>
             </label>
           </li>
@@ -3054,7 +3471,7 @@ exports[`Storyshots Molecules/list-section filterCategories 1`] = `
         style="display: none;"
       >
         
-            Show all (9)
+            Show all (5)
         
       </button>
     </footer>
@@ -12976,13 +13393,13 @@ exports[`Storyshots organisms/overview filterCategory 1`] = `
                   <input
                     name="All industries"
                     type="checkbox"
-                    value="Research"
+                    value="Medicine"
                   />
                    
                   <span
                     class="label-filter__label"
                   >
-                    Research
+                    Medicine
                   </span>
                 </label>
               </li>
@@ -12995,13 +13412,13 @@ exports[`Storyshots organisms/overview filterCategory 1`] = `
                   <input
                     name="All industries"
                     type="checkbox"
-                    value="Medicine"
+                    value="Research"
                   />
                    
                   <span
                     class="label-filter__label"
                   >
-                    Medicine
+                    Research
                   </span>
                 </label>
               </li>
@@ -13021,7 +13438,7 @@ exports[`Storyshots organisms/overview filterCategory 1`] = `
             style="display: none;"
           >
             
-            Show all (9)
+            Show all (5)
         
           </button>
         </footer>
