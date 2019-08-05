@@ -82,7 +82,6 @@
         "cross-env": "^5.1.6",
         "eslint": "^5.16.0",
         "eslint-config-airbnb-base": "^13.1.0",
-        "eslint-friendly-formatter": "^4.0.1",
         "eslint-loader": "^2.1.2",
         "eslint-plugin-import": "^2.17.2",
         "file-loader": "^1.1.11",
