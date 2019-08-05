@@ -2,15 +2,7 @@
 
 export const initialState = {
     eventChange: 'filter-category-change',
-    labels: [
-        { label: 'Aerospace' },
-        { label: 'Architecture' },
-        { label: 'Automotive' },
-        { label: 'Fashion' },
-        { label: 'Humanitarian' },
-        { label: 'Medicine' },
-        { label: 'Research' },
-    ],
+    labels: ['Aerospace', 'Architecture', 'Automotive', 'Fashion', 'Humanitarian', 'Medicine', 'Research'],
     showAllLabel: 'All industries',
     title: 'Application',
 };

@@ -17,11 +17,11 @@
                 :key="key"
             >
                 <label-filter
-                    :disabled="isFilterDisabled(label.label)"
+                    :disabled="isFilterDisabled(label)"
                     :eventChange="eventLabelFilterChange"
-                    :label="label.label"
+                    :label="label"
                     :name="showAllLabel"
-                    :value="label.label"
+                    :value="label"
                     @[eventLabelFilterChange]="handleLabelFilterChange"
                 />
             </li>

@@ -11,21 +11,13 @@ export const filterCategoriesTwo = {
     filterCategories: [
         {
             eventChange: 'filter-category-change',
-            labels: [{ label: 'End-user parts' }, { label: 'Manufacturing aids' }, { label: 'Product development' }],
+            labels: ['End-user parts', 'Manufacturing aids', 'Product development'],
             showAllLabel: 'All applications',
             title: 'Application',
         },
         {
             eventChange: 'filter-category-change',
-            labels: [
-                { label: 'Aerospace' },
-                { label: 'Architecture' },
-                { label: 'Automotive' },
-                { label: 'Fashion' },
-                { label: 'Humanitarian' },
-                { label: 'Medicine' },
-                { label: 'Research' },
-            ],
+            labels: ['Aerospace', 'Architecture', 'Automotive', 'Fashion', 'Humanitarian', 'Medicine', 'Research'],
             showAllLabel: 'All industries',
             title: 'Industry',
         },

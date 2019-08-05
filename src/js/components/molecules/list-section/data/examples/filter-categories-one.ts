@@ -11,7 +11,7 @@ export const filterCategoriesOne = {
     filterCategories: [
         {
             eventChange: 'filter-category-change',
-            labels: [{ label: 'End-user parts' }, { label: 'Manufacturing aids' }, { label: 'Product development' }],
+            labels: ['End-user parts', 'Manufacturing aids', 'Product development'],
             showAllLabel: 'All applications',
             title: 'Application',
         },

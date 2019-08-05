@@ -2,7 +2,6 @@
 
 import { CardArticle } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cards/CardArticle';
 import { FilterCategoryInterface } from 'components/molecules/filter-category/filter-category.interface';
-import { Label } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/label/Label';
 import { getActiveFiltersForCategory } from './get-active-filters-for-category';
 
 function getFilteredCardsFromCategory(
@@ -14,7 +13,7 @@ function getFilteredCardsFromCategory(
         .filter((card: CardArticle) => card.labels)
         .reduce((acc: CardArticle[], card: CardArticle) => {
             // @ts-ignore
-            if (card.labels.some((label: Label) => filters.includes(label.label))) {
+            if (card.labels.some((label) => filters.includes(label))) {
                 acc.push(card);
             }
 

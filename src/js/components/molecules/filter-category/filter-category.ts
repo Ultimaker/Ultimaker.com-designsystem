@@ -19,8 +19,8 @@ export class FilterCategory extends Vue implements FilterCategoryProps {
 
     filters: any = this.labels.map((label) => ({
         checked: false,
-        disabled: this.isFilterDisabled(label.label),
-        value: label.label,
+        disabled: this.isFilterDisabled(label),
+        value: label,
     }));
 
     get category(): string {

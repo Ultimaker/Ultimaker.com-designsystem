@@ -10,12 +10,7 @@ describe('list-section helpers', () => {
                 {
                     description:
                         'You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.',
-                    labels: [
-                        { label: 'Aerospace' },
-                        { label: 'End-user parts' },
-                        { label: 'Manufacturing aids' },
-                        { label: 'Product development' },
-                    ],
+                    labels: ['Aerospace', 'End-user parts', 'Manufacturing aids', 'Product development'],
                     title: 'How to successfully introduce 3D printing in your business',
                     url:
                         'https://ultimaker.com/en/stories/52698-new-lab-innovators-print-their-way-to-faster-iterations-and-design-freedom',
@@ -24,12 +19,12 @@ describe('list-section helpers', () => {
                     description:
                         'You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.',
                     labels: [
-                        { label: 'Aerospace' },
-                        { label: 'Humanitarian' },
-                        { label: 'Research' },
-                        { label: 'Medicine' },
-                        { label: 'Manufacturing aids' },
-                        { label: 'Product development' },
+                        'Aerospace',
+                        'Humanitarian',
+                        'Research',
+                        'Medicine',
+                        'Manufacturing aids',
+                        'Product development',
                     ],
                     title: 'How to successfully introduce 3D printing in your business',
                     url:
