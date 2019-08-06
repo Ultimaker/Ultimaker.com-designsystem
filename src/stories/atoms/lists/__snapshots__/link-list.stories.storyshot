@@ -13,17 +13,38 @@ exports[`Storyshots Atoms|lists Link list 1`] = `
       <li
         class="link-list__item"
       >
-        <!---->
+        <a
+          class=""
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           Content-link
+        </a>
       </li>
       <li
         class="link-list__item"
       >
-        <!---->
+        <a
+          class=""
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           Content-link
+        </a>
       </li>
       <li
         class="link-list__item"
       >
-        <!---->
+        <a
+          class=""
+          rel="noopener"
+          target="_self"
+        >
+          <!---->
+           Content-link
+        </a>
       </li>
     </ul>
   </section>

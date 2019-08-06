@@ -17,7 +17,9 @@ exports[`Storyshots Molecules|sys-nav SysNav 1`] = `
       >
         <a
           class="sys-nav__link"
-          href="#/take-my-money"
+          href="/take-my-money"
+          rel="noopener"
+          target="_self"
         >
           <!---->
            

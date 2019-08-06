@@ -3647,7 +3647,9 @@ exports[`Storyshots Molecules/main-navigation default 1`] = `
             aria-controls="nav-0"
             aria-haspopup="true"
             class="main-nav__link"
-            href="#/NavigationPageFixture"
+            href="/NavigationPageFixture"
+            rel="noopener"
+            target="_self"
           >
             <!---->
              
@@ -3696,7 +3698,9 @@ exports[`Storyshots Molecules/main-navigation default 1`] = `
               >
                 <a
                   class="flyout__link link"
-                  href="#/NavigationPageFixture"
+                  href="/NavigationPageFixture"
+                  rel="noopener"
+                  target="_self"
                 >
                   <!---->
                    
@@ -3772,7 +3776,9 @@ exports[`Storyshots Molecules/main-navigation default 1`] = `
              
             <a
               class="link flyout__link--cta-mini"
-              href="#/NavigationPageFixture"
+              href="/NavigationPageFixture"
+              rel="noopener"
+              target="_self"
             >
               <!---->
                
@@ -3824,7 +3830,9 @@ exports[`Storyshots Molecules/main-navigation default 1`] = `
               >
                 <a
                   class="flyout__link link"
-                  href="#/NavigationPageFixture"
+                  href="/NavigationPageFixture"
+                  rel="noopener"
+                  target="_self"
                 >
                   <!---->
                    
@@ -3958,7 +3966,9 @@ exports[`Storyshots Molecules/main-navigation-item default 1`] = `
         aria-controls="1"
         aria-haspopup="true"
         class="main-nav__link"
-        href="#/NavigationPageFixture"
+        href="/NavigationPageFixture"
+        rel="noopener"
+        target="_self"
       >
         <!---->
          
@@ -4008,7 +4018,9 @@ exports[`Storyshots Molecules/main-navigation-item default 1`] = `
           >
             <a
               class="flyout__link link"
-              href="#/NavigationPageFixture"
+              href="/NavigationPageFixture"
+              rel="noopener"
+              target="_self"
             >
               <!---->
                
@@ -4084,7 +4096,9 @@ exports[`Storyshots Molecules/main-navigation-item default 1`] = `
          
         <a
           class="link flyout__link--cta-mini"
-          href="#/NavigationPageFixture"
+          href="/NavigationPageFixture"
+          rel="noopener"
+          target="_self"
         >
           <!---->
            
@@ -4137,7 +4151,9 @@ exports[`Storyshots Molecules/main-navigation-item default 1`] = `
           >
             <a
               class="flyout__link link"
-              href="#/NavigationPageFixture"
+              href="/NavigationPageFixture"
+              rel="noopener"
+              target="_self"
             >
               <!---->
                
@@ -4793,7 +4809,9 @@ exports[`Storyshots Molecules/tab-table-row default 1`] = `
         >
           <a
             class="link tab-table-row__linklist-link link--icon"
-            href="#/#"
+            href="#"
+            rel="noopener"
+            target="_self"
           >
             <!---->
              
@@ -9612,7 +9630,9 @@ exports[`Storyshots Organisms/colors default 1`] = `
             >
               <a
                 class="link--primary button cta-link"
-                href="#/en/quote"
+                href="/en/quote"
+                rel="noopener"
+                target="_self"
               >
                 <!---->
                  
@@ -9649,7 +9669,9 @@ exports[`Storyshots Organisms/colors default 1`] = `
         >
           <a
             class="link--large link cta-link"
-            href="#/en/quote"
+            href="/en/quote"
+            rel="noopener"
+            target="_self"
           >
             <!---->
              
@@ -9983,8 +10005,8 @@ exports[`Storyshots Organisms/page-footer default 1`] = `
       >
         <a
           aria-label="Ultimaker homepage"
-          class="branded-logo footer__branded-logo router-link-exact-active router-link-active"
-          href="#/"
+          class="branded-logo footer__branded-logo"
+          href="/"
         >
           <!---->
         </a>
@@ -10553,8 +10575,8 @@ exports[`Storyshots Organisms/page-header default 1`] = `
     >
       <a
         aria-label="Ultimaker homepage"
-        class="home-link router-link-exact-active router-link-active"
-        href="#/"
+        class="home-link"
+        href="/"
       >
         <!---->
       </a>
@@ -10576,7 +10598,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                 aria-controls="nav-0"
                 aria-haspopup="true"
                 class="main-nav__link"
-                href="#/NavigationPageFixture"
+                href="/NavigationPageFixture"
+                rel="noopener"
+                target="_self"
               >
                 <!---->
                  
@@ -10625,7 +10649,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                   >
                     <a
                       class="flyout__link link"
-                      href="#/NavigationPageFixture"
+                      href="/NavigationPageFixture"
+                      rel="noopener"
+                      target="_self"
                     >
                       <!---->
                        
@@ -10701,7 +10727,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                  
                 <a
                   class="link flyout__link--cta-mini"
-                  href="#/NavigationPageFixture"
+                  href="/NavigationPageFixture"
+                  rel="noopener"
+                  target="_self"
                 >
                   <!---->
                    
@@ -10753,7 +10781,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                   >
                     <a
                       class="flyout__link link"
-                      href="#/NavigationPageFixture"
+                      href="/NavigationPageFixture"
+                      rel="noopener"
+                      target="_self"
                     >
                       <!---->
                        
@@ -10843,7 +10873,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                   >
                     <a
                       class="flyout__link link"
-                      href="#/NavigationPageFixture"
+                      href="/NavigationPageFixture"
+                      rel="noopener"
+                      target="_self"
                     >
                       <!---->
                        
@@ -10919,7 +10951,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                  
                 <a
                   class="link flyout__link--cta-mini"
-                  href="#/NavigationPageFixture"
+                  href="/NavigationPageFixture"
+                  rel="noopener"
+                  target="_self"
                 >
                   <!---->
                    
@@ -10971,7 +11005,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                   >
                     <a
                       class="flyout__link link"
-                      href="#/NavigationPageFixture"
+                      href="/NavigationPageFixture"
+                      rel="noopener"
+                      target="_self"
                     >
                       <!---->
                        
@@ -11061,7 +11097,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                   >
                     <a
                       class="flyout__link link"
-                      href="#/NavigationPageFixture"
+                      href="/NavigationPageFixture"
+                      rel="noopener"
+                      target="_self"
                     >
                       <!---->
                        
@@ -11137,7 +11175,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                  
                 <a
                   class="link flyout__link--cta-mini"
-                  href="#/NavigationPageFixture"
+                  href="/NavigationPageFixture"
+                  rel="noopener"
+                  target="_self"
                 >
                   <!---->
                    
@@ -11189,7 +11229,9 @@ exports[`Storyshots Organisms/page-header default 1`] = `
                   >
                     <a
                       class="flyout__link link"
-                      href="#/NavigationPageFixture"
+                      href="/NavigationPageFixture"
+                      rel="noopener"
+                      target="_self"
                     >
                       <!---->
                        
@@ -11565,7 +11607,9 @@ exports[`Storyshots Organisms/tabbed-table default 1`] = `
                     >
                       <a
                         class="link tab-table-row__linklist-link link--icon"
-                        href="#/#"
+                        href="#"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -11583,7 +11627,9 @@ exports[`Storyshots Organisms/tabbed-table default 1`] = `
                     >
                       <a
                         class="link tab-table-row__linklist-link link--icon"
-                        href="#/#"
+                        href="#"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -11601,7 +11647,9 @@ exports[`Storyshots Organisms/tabbed-table default 1`] = `
                     >
                       <a
                         class="link tab-table-row__linklist-link link--icon"
-                        href="#/#"
+                        href="#"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -11746,7 +11794,9 @@ exports[`Storyshots Organisms/tabbed-table default 1`] = `
                     >
                       <a
                         class="link tab-table-row__linklist-link link--icon"
-                        href="#/#"
+                        href="#"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -11764,7 +11814,9 @@ exports[`Storyshots Organisms/tabbed-table default 1`] = `
                     >
                       <a
                         class="link tab-table-row__linklist-link link--icon"
-                        href="#/#"
+                        href="#"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -11782,7 +11834,9 @@ exports[`Storyshots Organisms/tabbed-table default 1`] = `
                     >
                       <a
                         class="link tab-table-row__linklist-link link--icon"
-                        href="#/#"
+                        href="#"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -11838,7 +11892,9 @@ exports[`Storyshots Organisms/tabbed-table default 1`] = `
         >
           <a
             class="link--primary button cta-link"
-            href="#/#"
+            href="#"
+            rel="noopener"
+            target="_self"
           >
             <!---->
              
@@ -12256,7 +12312,9 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                 <td>
                   <a
                     class="button"
-                    href="#/en/quote"
+                    href="/en/quote"
+                    rel="noopener"
+                    target="_self"
                   >
                     <!---->
                      
@@ -12272,7 +12330,9 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                 <td>
                   <a
                     class="link link--medium"
-                    href="#/en/quote"
+                    href="/en/quote"
+                    rel="noopener"
+                    target="_self"
                   >
                     <!---->
                      
@@ -12288,7 +12348,9 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
                 <td>
                   <a
                     class="button"
-                    href="#/en/quote"
+                    href="/en/quote"
+                    rel="noopener"
+                    target="_self"
                   >
                     <!---->
                      
@@ -12342,7 +12404,9 @@ exports[`Storyshots Organisms/table-compare default 1`] = `
         >
           <a
             class="link--large link cta-link"
-            href="#/en/quote"
+            href="/en/quote"
+            rel="noopener"
+            target="_self"
           >
             <!---->
              
@@ -12479,7 +12543,9 @@ exports[`Storyshots Organisms|hero/Hero product default 1`] = `
             >
               <a
                 class="link--primary button button--primary cta-link"
-                href="#/en/quote"
+                href="/en/quote"
+                rel="noopener"
+                target="_self"
               >
                 <!---->
                  
@@ -12493,7 +12559,9 @@ exports[`Storyshots Organisms|hero/Hero product default 1`] = `
               </a>
               <a
                 class="link--large link cta-link"
-                href="#/en/link"
+                href="/en/link"
+                rel="noopener"
+                target="_self"
               >
                 <!---->
                  
@@ -12515,7 +12583,9 @@ exports[`Storyshots Organisms|hero/Hero product default 1`] = `
               >
                 <a
                   class="link hero__linklist-link link--icon"
-                  href="#/en/link"
+                  href="/en/link"
+                  rel="noopener"
+                  target="_self"
                 >
                   <!---->
                    
@@ -12533,7 +12603,9 @@ exports[`Storyshots Organisms|hero/Hero product default 1`] = `
               >
                 <a
                   class="link hero__linklist-link link--icon"
-                  href="#/en/link"
+                  href="/en/link"
+                  rel="noopener"
+                  target="_self"
                 >
                   <!---->
                    

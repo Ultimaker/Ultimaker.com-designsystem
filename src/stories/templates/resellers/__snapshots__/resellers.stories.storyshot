@@ -16,8 +16,8 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
       >
         <a
           aria-label="Ultimaker homepage"
-          class="home-link router-link-exact-active router-link-active"
-          href="#/"
+          class="home-link"
+          href="/"
         >
           <!---->
         </a>
@@ -39,7 +39,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                   aria-controls="nav-0"
                   aria-haspopup="true"
                   class="main-nav__link"
-                  href="#/NavigationPageFixture"
+                  href="/NavigationPageFixture"
+                  rel="noopener"
+                  target="_self"
                 >
                   <!---->
                    
@@ -88,7 +90,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                     >
                       <a
                         class="flyout__link link"
-                        href="#/NavigationPageFixture"
+                        href="/NavigationPageFixture"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -164,7 +168,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                    
                   <a
                     class="link flyout__link--cta-mini"
-                    href="#/NavigationPageFixture"
+                    href="/NavigationPageFixture"
+                    rel="noopener"
+                    target="_self"
                   >
                     <!---->
                      
@@ -216,7 +222,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                     >
                       <a
                         class="flyout__link link"
-                        href="#/NavigationPageFixture"
+                        href="/NavigationPageFixture"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -306,7 +314,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                     >
                       <a
                         class="flyout__link link"
-                        href="#/NavigationPageFixture"
+                        href="/NavigationPageFixture"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -382,7 +392,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                    
                   <a
                     class="link flyout__link--cta-mini"
-                    href="#/NavigationPageFixture"
+                    href="/NavigationPageFixture"
+                    rel="noopener"
+                    target="_self"
                   >
                     <!---->
                      
@@ -434,7 +446,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                     >
                       <a
                         class="flyout__link link"
-                        href="#/NavigationPageFixture"
+                        href="/NavigationPageFixture"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -524,7 +538,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                     >
                       <a
                         class="flyout__link link"
-                        href="#/NavigationPageFixture"
+                        href="/NavigationPageFixture"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -600,7 +616,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                    
                   <a
                     class="link flyout__link--cta-mini"
-                    href="#/NavigationPageFixture"
+                    href="/NavigationPageFixture"
+                    rel="noopener"
+                    target="_self"
                   >
                     <!---->
                      
@@ -652,7 +670,9 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
                     >
                       <a
                         class="flyout__link link"
-                        href="#/NavigationPageFixture"
+                        href="/NavigationPageFixture"
+                        rel="noopener"
+                        target="_self"
                       >
                         <!---->
                          
@@ -1155,8 +1175,8 @@ exports[`Storyshots templates|resellers Resellers overview 1`] = `
         >
           <a
             aria-label="Ultimaker homepage"
-            class="branded-logo footer__branded-logo router-link-exact-active router-link-active"
-            href="#/"
+            class="branded-logo footer__branded-logo"
+            href="/"
           >
             <!---->
           </a>
