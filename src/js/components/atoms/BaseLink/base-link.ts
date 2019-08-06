@@ -61,10 +61,12 @@ export default class BaseLink extends Vue {
                 rel: 'noopener',
             };
         }
+
         return {
-            is: 'router-link',
-            to: this.url,
-            ref: 'link',
+            is: 'a',
+            href: this.url,
+            target: '_self',
+            rel: 'noopener',
         };
     }
 
