@@ -809,6 +809,18 @@ input[type="submit"] {
       line-height: 24px;
       padding-top: 12px;
       padding-bottom: 12px; } }
+  button[disabled],
+  .button[disabled],
+  input[type="button"][disabled],
+  input[type="submit"][disabled] {
+    background-color: #b2b2b2;
+    color: #fff; }
+    button[disabled]:hover,
+    .button[disabled]:hover,
+    input[type="button"][disabled]:hover,
+    input[type="submit"][disabled]:hover {
+      background-color: #b2b2b2;
+      color: #fff; }
 
 .button--primary {
   margin-right: 25px;
@@ -836,6 +848,7 @@ input[type="submit"] {
 .button--secondary {
   background: transparent;
   border: 2px solid #196ef0;
+  font-weight: 600;
   padding-top: 7px;
   padding-bottom: 7px;
   color: #196ef0; }
@@ -845,6 +858,13 @@ input[type="submit"] {
       padding-bottom: 10px; } }
   .button--secondary:hover, .button--secondary:focus {
     border: 2px solid transparent; }
+  .button--secondary[disabled] {
+    background-color: transparent;
+    border-color: currentColor;
+    color: #b2b2b2; }
+    .button--secondary[disabled]:hover {
+      background-color: transparent;
+      color: #b2b2b2; }
 
 .button--close {
   position: absolute;
@@ -890,11 +910,15 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $position - almost the same as background-position
  */
 .label-filter input[type="checkbox"] {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .label-filter__label {
   background-color: #fff;
@@ -1619,11 +1643,6 @@ input[type="text"] {
   -moz-appearance: none;
   appearance: none; }
 
-input[type="text"]:not(.search__input) {
-  background: #f5f5f5;
-  font-size: 14px;
-  line-height: 21px; }
-
 .required:after {
   font-size: 14px;
   line-height: 21px;
@@ -1688,11 +1707,15 @@ because both families serve another purpose. Therefore the line-heights will be 
 /* Base for label styling */
 .preferences-bar [type="checkbox"]:not(:checked),
 .preferences-bar [type="checkbox"]:checked {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .preferences-bar [type="checkbox"]:not(:checked) + label,
 .preferences-bar [type="checkbox"]:checked + label {
@@ -3497,23 +3520,35 @@ th {
 .flyout__list-item {
   background: transparent; }
   .flyout__list-item--collapsed-sm {
-    position: absolute;
-    width: 1px;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px); }
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; }
     .main-nav--large .flyout__list-item--collapsed-sm {
-      position: relative;
-      width: auto;
+      border: initial;
+      clip: initial;
+      clip-path: initial;
       height: auto;
       overflow: initial;
-      clip: initial; }
+      padding: initial;
+      position: relative;
+      white-space: initial;
+      width: auto; }
   .flyout__list-item--expanded {
-    position: relative;
-    width: auto;
+    border: initial;
+    clip: initial;
+    clip-path: initial;
     height: auto;
     overflow: initial;
-    clip: initial; }
+    padding: initial;
+    position: relative;
+    white-space: initial;
+    width: auto; }
 
 .flyout__link {
   color: initial;
@@ -3524,11 +3559,15 @@ th {
     display: table; }
 
 .main-nav--large .flyout__toggle {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .sys-nav {
   order: 20;
@@ -3568,19 +3607,27 @@ th {
   user-select: none; }
 
 .sys-nav__label--hidden-sm {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 @media (min-width: 1201px) {
   .sys-nav__label--hidden-sm {
-    position: relative;
-    width: auto;
+    border: initial;
+    clip: initial;
+    clip-path: initial;
     height: auto;
     overflow: initial;
-    clip: initial; } }
+    padding: initial;
+    position: relative;
+    white-space: initial;
+    width: auto; } }
 
 .social-nav__item {
   display: inline-block;
@@ -4300,11 +4347,15 @@ because both families serve another purpose. Therefore the line-heights will be 
   width: 100%; }
 
 .card-download__radio {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .card-download__label {
   border: 2px solid #eaeaea;
@@ -4722,11 +4773,15 @@ because both families serve another purpose. Therefore the line-heights will be 
     background-size: 0 100%; }
 
 .icon-button--visually-hidden-label .icon-button__label {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .icon-button--transparent {
   background-color: transparent; }
@@ -5088,11 +5143,15 @@ because both families serve another purpose. Therefore the line-heights will be 
   border-bottom: 1px solid #eaeaea; }
 
 .search-bar__label {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .search-bar__button,
 .um-components .search-bar__button {
@@ -5141,12 +5200,115 @@ because both families serve another purpose. Therefore the line-heights will be 
   right: 0; }
 
 /** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+.search-bar-page {
+  text-space: discard; }
+
+.search-bar-page__button {
+  background-color: #eaeaea;
+  color: #000;
+  font-size: 24px;
+  height: 60px;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 60px;
+  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.search-bar-page__button:hover {
+  background-color: #d6d6d6; }
+
+.search-bar-page__label {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.search-bar-page__input {
+  height: 60px;
+  font-size: 24px;
+  vertical-align: top; }
+
+.search-bar-page__input:disabled {
+  background-color: #e3e3e3; }
+
+/** @format */
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 .search-result {
   background-color: #fff;
   padding: 18px;
-  position: relative; }
-  .search-result:hover {
-    background-color: #eaeaea; }
+  position: relative;
+  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.search-result:hover {
+  background-color: #eaeaea; }
+  .search-result:hover a:not(.hit-area) {
+    background-color: transparent;
+    color: inherit; }
+
+.search-result--focus:not(:hover) {
+  background-color: #196ef0;
+  color: #fff; }
+  .search-result--focus:not(:hover) a:not(.hit-area) {
+    background-color: transparent; }
+
+.search-result--focus:not(:hover) mark {
+  color: #fff; }
 
 .search-result__title {
   margin: 0 0 6px; }
@@ -5167,7 +5329,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 18px; }
 
 .search-result__url {
-  margin: 0; }
+  margin: 0;
+  word-break: break-all; }
 
 .search-result mark {
   background-color: inherit;
@@ -5191,11 +5354,15 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-left: 12px; }
 
 .social-sharing__text {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .social-sharing__icon {
   height: 36px;
@@ -6617,11 +6784,15 @@ main .overview:nth-child(even) {
   text-overflow: ellipsis; }
 
 .table-compare__cell {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .table-compare__checkmark {
   display: block;
@@ -6649,6 +6820,51 @@ main .overview:nth-child(even) {
     left: 0; }
   .table-compare__scroll-button--right {
     right: 0; }
+
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+.search-results {
+  margin-bottom: 60px; }
+
+.search-results__title {
+  font-size: 32px;
+  text-align: center; }
+
+.search-results__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 12px; }
+
+.search-results__list-item {
+  margin: 0 0 12px; }
+
+.search-results__footer {
+  padding-top: 24px;
+  text-align: center; }
+
+.search-results .search-bar-page {
+  margin-top: 84px;
+  margin-bottom: 84px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center; }
+
+.search-results .search-bar-page__input {
+  width: calc(100% - 60px); }
+  @media (min-width: 768px) {
+    .search-results .search-bar-page__input {
+      width: calc(50%); } }
 
 /** @format */
 /** @format */
