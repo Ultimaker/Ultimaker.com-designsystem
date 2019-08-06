@@ -363,6 +363,18 @@ because both families serve another purpose. Therefore the line-heights will be 
       line-height: 24px;
       padding-top: 12px;
       padding-bottom: 12px; } }
+  .um-components button[disabled],
+  .um-components .button[disabled],
+  .um-components input[type="button"][disabled],
+  .um-components input[type="submit"][disabled] {
+    background-color: #b2b2b2;
+    color: #fff; }
+    .um-components button[disabled]:hover,
+    .um-components .button[disabled]:hover,
+    .um-components input[type="button"][disabled]:hover,
+    .um-components input[type="submit"][disabled]:hover {
+      background-color: #b2b2b2;
+      color: #fff; }
 
 .um-components .button--primary {
   margin-right: 25px;
@@ -390,6 +402,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .button--secondary {
   background: transparent;
   border: 2px solid #196ef0;
+  font-weight: 600;
   padding-top: 7px;
   padding-bottom: 7px;
   color: #196ef0; }
@@ -399,6 +412,13 @@ because both families serve another purpose. Therefore the line-heights will be 
       padding-bottom: 10px; } }
   .um-components .button--secondary:hover, .um-components .button--secondary:focus {
     border: 2px solid transparent; }
+  .um-components .button--secondary[disabled] {
+    background-color: transparent;
+    border-color: currentColor;
+    color: #b2b2b2; }
+    .um-components .button--secondary[disabled]:hover {
+      background-color: transparent;
+      color: #b2b2b2; }
 
 .um-components .button--close {
   position: absolute;
@@ -444,11 +464,15 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $position - almost the same as background-position
  */
 .um-components .label-filter input[type="checkbox"] {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .um-components .label-filter__label {
   background-color: #fff;
@@ -1122,11 +1146,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   -moz-appearance: none;
   appearance: none; }
 
-.um-components input[type="text"]:not(.search__input) {
-  background: #f5f5f5;
-  font-size: 14px;
-  line-height: 21px; }
-
 .um-components .required:after {
   font-size: 14px;
   line-height: 21px;
@@ -1191,11 +1210,15 @@ because both families serve another purpose. Therefore the line-heights will be 
 /* Base for label styling */
 .um-components .preferences-bar [type="checkbox"]:not(:checked),
 .um-components .preferences-bar [type="checkbox"]:checked {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .um-components .preferences-bar [type="checkbox"]:not(:checked) + label,
 .um-components .preferences-bar [type="checkbox"]:checked + label {
@@ -3000,23 +3023,35 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .flyout__list-item {
   background: transparent; }
   .um-components .flyout__list-item--collapsed-sm {
-    position: absolute;
-    width: 1px;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px); }
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; }
     .um-components .main-nav--large .flyout__list-item--collapsed-sm {
-      position: relative;
-      width: auto;
+      border: initial;
+      clip: initial;
+      clip-path: initial;
       height: auto;
       overflow: initial;
-      clip: initial; }
+      padding: initial;
+      position: relative;
+      white-space: initial;
+      width: auto; }
   .um-components .flyout__list-item--expanded {
-    position: relative;
-    width: auto;
+    border: initial;
+    clip: initial;
+    clip-path: initial;
     height: auto;
     overflow: initial;
-    clip: initial; }
+    padding: initial;
+    position: relative;
+    white-space: initial;
+    width: auto; }
 
 .um-components .flyout__link {
   color: initial;
@@ -3027,11 +3062,15 @@ because both families serve another purpose. Therefore the line-heights will be 
     display: table; }
 
 .um-components .main-nav--large .flyout__toggle {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .um-components .sys-nav {
   order: 20;
@@ -3070,19 +3109,27 @@ because both families serve another purpose. Therefore the line-heights will be 
   user-select: none; }
 
 .um-components .sys-nav__label--hidden-sm {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 @media (min-width: 1201px) {
   .um-components .sys-nav__label--hidden-sm {
-    position: relative;
-    width: auto;
+    border: initial;
+    clip: initial;
+    clip-path: initial;
     height: auto;
     overflow: initial;
-    clip: initial; } }
+    padding: initial;
+    position: relative;
+    white-space: initial;
+    width: auto; } }
 
 .um-components .social-nav__item {
   display: inline-block;
@@ -3796,11 +3843,15 @@ because both families serve another purpose. Therefore the line-heights will be 
   width: 100%; }
 
 .um-components .card-download__radio {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .um-components .card-download__label {
   border: 2px solid #eaeaea;
@@ -4216,11 +4267,15 @@ because both families serve another purpose. Therefore the line-heights will be 
     background-size: 0 100%; }
 
 .um-components .icon-button--visually-hidden-label .icon-button__label {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .um-components .icon-button--transparent {
   background-color: transparent; }
@@ -4582,11 +4637,15 @@ because both families serve another purpose. Therefore the line-heights will be 
   border-bottom: 1px solid #eaeaea; }
 
 .um-components .search-bar__label {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .um-components .search-bar__button,
 .um-components .um-components .search-bar__button {
@@ -4635,12 +4694,115 @@ because both families serve another purpose. Therefore the line-heights will be 
   right: 0; }
 
 /** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+.um-components .search-bar-page {
+  text-space: discard; }
+
+.um-components .search-bar-page__button {
+  background-color: #eaeaea;
+  color: #000;
+  font-size: 24px;
+  height: 60px;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 60px;
+  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.um-components .search-bar-page__button:hover {
+  background-color: #d6d6d6; }
+
+.um-components .search-bar-page__label {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.um-components .search-bar-page__input {
+  height: 60px;
+  font-size: 24px;
+  vertical-align: top; }
+
+.um-components .search-bar-page__input:disabled {
+  background-color: #e3e3e3; }
+
+/** @format */
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 .um-components .search-result {
   background-color: #fff;
   padding: 18px;
-  position: relative; }
-  .um-components .search-result:hover {
-    background-color: #eaeaea; }
+  position: relative;
+  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.um-components .search-result:hover {
+  background-color: #eaeaea; }
+  .um-components .search-result:hover a:not(.hit-area) {
+    background-color: transparent;
+    color: inherit; }
+
+.um-components .search-result--focus:not(:hover) {
+  background-color: #196ef0;
+  color: #fff; }
+  .um-components .search-result--focus:not(:hover) a:not(.hit-area) {
+    background-color: transparent; }
+
+.um-components .search-result--focus:not(:hover) mark {
+  color: #fff; }
 
 .um-components .search-result__title {
   margin: 0 0 6px; }
@@ -4661,7 +4823,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 18px; }
 
 .um-components .search-result__url {
-  margin: 0; }
+  margin: 0;
+  word-break: break-all; }
 
 .um-components .search-result mark {
   background-color: inherit;
@@ -4685,11 +4848,15 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-left: 12px; }
 
 .um-components .social-sharing__text {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .um-components .social-sharing__icon {
   height: 36px;
@@ -6064,11 +6231,15 @@ because both families serve another purpose. Therefore the line-heights will be 
   text-overflow: ellipsis; }
 
 .um-components .table-compare__cell {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .um-components .table-compare__checkmark {
   display: block;
@@ -6096,6 +6267,51 @@ because both families serve another purpose. Therefore the line-heights will be 
     left: 0; }
   .um-components .table-compare__scroll-button--right {
     right: 0; }
+
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+.um-components .search-results {
+  margin-bottom: 60px; }
+
+.um-components .search-results__title {
+  font-size: 32px;
+  text-align: center; }
+
+.um-components .search-results__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 12px; }
+
+.um-components .search-results__list-item {
+  margin: 0 0 12px; }
+
+.um-components .search-results__footer {
+  padding-top: 24px;
+  text-align: center; }
+
+.um-components .search-results .search-bar-page {
+  margin-top: 84px;
+  margin-bottom: 84px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center; }
+
+.um-components .search-results .search-bar-page__input {
+  width: calc(100% - 60px); }
+  @media (min-width: 768px) {
+    .um-components .search-results .search-bar-page__input {
+      width: calc(50%); } }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
