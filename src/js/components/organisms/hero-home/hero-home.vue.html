@@ -1,13 +1,14 @@
 <div class="hero-home">
-    <div class="hero-home__container">
-        <h1>
+    <div class="hero-home__content">
+        <h1 class="hero-home__title">
             {{ title }}
         </h1>
-        <p>{{ description }}</p>
+        <picture role="presentation">
+            <source :srcset="srcSetWebP" type="image/webp" />
+            <source :srcset="srcSet" />
+            <img :src="imageUrl" alt="" class="hero-home__image" />
+        </picture>
+        <p class="hero-home__description">{{ description }}</p>
+        <button class="button button--primary">Meet the Ultimaker S5</button>
     </div>
-    <picture>
-        <source srcset="" type="image/webp" />
-        <source srcset="" />
-        <img src="" />
-    </picture>
 </div>
