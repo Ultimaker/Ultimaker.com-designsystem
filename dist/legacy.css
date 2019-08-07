@@ -542,12 +542,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-top: -8px;
       margin-bottom: 38px; } }
 
-.um-components .copy--small, .um-components .link, .um-components .toggle, .um-components .overflow-container__link:hover, .um-components .overflow-container__link.exact-active, .um-components .notification__title, .um-components .notification__copy, .um-components .auto-complete__list-item, .um-components .business-card__property {
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
-  margin-bottom: 23px; }
-
 .um-components h1,
 .um-components h2,
 .um-components h3,
@@ -865,7 +859,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .list {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
@@ -908,6 +902,10 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-bottom: 0; }
 
 .um-components .link, .um-components .toggle, .um-components .overflow-container__link:hover, .um-components .overflow-container__link.exact-active {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -2px;
+  margin-bottom: 23px;
   display: inline-block;
   margin-right: 12px;
   vertical-align: top;
@@ -979,9 +977,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .link-list__headline, .um-components .flyout__title {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
-  margin-bottom: 23px;
   font-weight: bold;
   margin-bottom: 8px; }
 
@@ -3139,6 +3136,11 @@ because both families serve another purpose. Therefore the line-heights will be 
   position: relative;
   background: #f0f6fe;
   /* disabled checkbox */ }
+  .um-components .notification__title, .um-components .notification__copy {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -2px;
+    margin-bottom: 23px; }
   .um-components .notification [type="checkbox"]:not(:checked) + label:before, .um-components .preferences-bar [type="checkbox"]:not(:checked) + label:before, .um-components .notification [type="checkbox"]:checked + label:before, .um-components .preferences-bar [type="checkbox"]:checked + label:before {
     border: 1px solid #dde2e9; }
   .um-components .notification [type="checkbox"]:disabled:not(:checked) + label:before, .um-components .preferences-bar [type="checkbox"]:disabled:not(:checked) + label:before, .um-components .notification [type="checkbox"]:disabled:checked + label:before, .um-components .preferences-bar [type="checkbox"]:disabled:checked + label:before {
@@ -3612,6 +3614,10 @@ because both families serve another purpose. Therefore the line-heights will be 
     padding-left: 12px;
     padding-right: 12px; }
   .um-components .auto-complete__list-item {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -2px;
+    margin-bottom: 23px;
     padding-top: 12px;
     padding-bottom: 12px;
     cursor: pointer;
@@ -3775,6 +3781,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   overflow: hidden; }
 
 .um-components .business-card__property {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -2px;
+  margin-bottom: 23px;
   color: #7f7f7f; }
 
 .um-components .business-card__footer {
@@ -4113,9 +4123,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .footer-navigation-category__title {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
-  margin-bottom: 23px;
   font-weight: bold;
   margin-bottom: 8px; }
 
@@ -4994,7 +5003,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
   padding-left: 1em;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
@@ -5619,13 +5628,13 @@ because both families serve another purpose. Therefore the line-heights will be 
     background-color: transparent; }
   .um-components .preferences-bar__content-manageble p, .um-components .preferences-bar__content-manageble strong, .um-components .preferences-bar__content-manageble .tablist__section .tablist__item, .um-components .tablist__section .preferences-bar__content-manageble .tablist__item, .um-components .preferences-bar__content-manageble .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .preferences-bar__content-manageble .tablist__item {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5;
     margin-top: -2px;
     margin-bottom: 23px; }
   @media (min-width: 768px) {
     .um-components .preferences-bar__content-manageble ul, .um-components .preferences-bar__content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .preferences-bar__content-manageble ul, .um-components .preferences-bar__content-manageble ol {
       font-size: 14px;
-      line-height: 21px;
+      line-height: 1.5;
       margin-top: -2px;
       margin-bottom: 23px; } }
   .um-components .preferences-bar .auto-complete.auto-complete--small {
@@ -5697,8 +5706,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .setting__description {
   font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
+  line-height: 1.5;
   margin-bottom: 23px;
   padding-left: 30px;
   margin-top: -6px;
@@ -6175,7 +6183,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .table-compare__table tbody th[scope="row"] {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px;
   left: 0;

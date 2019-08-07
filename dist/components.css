@@ -990,12 +990,6 @@ small, .caption-list__headline, .caption-list__list-item, .link.link--small, .li
       margin-top: -8px;
       margin-bottom: 38px; } }
 
-.copy--small, .link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active, .notification__title, .notification__copy, .auto-complete__list-item, .business-card__property {
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
-  margin-bottom: 23px; }
-
 h1,
 h2,
 h3,
@@ -1331,7 +1325,7 @@ html {
 
 .list {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
@@ -1374,6 +1368,10 @@ dd {
     margin-bottom: 0; }
 
 .link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -2px;
+  margin-bottom: 23px;
   display: inline-block;
   margin-right: 12px;
   vertical-align: top;
@@ -1460,9 +1458,8 @@ dd {
 
 .link-list__headline, .flyout__title {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
-  margin-bottom: 23px;
   font-weight: bold;
   margin-bottom: 8px; }
 
@@ -3637,6 +3634,11 @@ th {
   position: relative;
   background: #f0f6fe;
   /* disabled checkbox */ }
+  .notification__title, .notification__copy {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -2px;
+    margin-bottom: 23px; }
   .notification [type="checkbox"]:not(:checked) + label:before, .preferences-bar [type="checkbox"]:not(:checked) + label:before,
   .notification [type="checkbox"]:checked + label:before,
   .preferences-bar [type="checkbox"]:checked + label:before {
@@ -4116,6 +4118,10 @@ th {
     padding-left: 12px;
     padding-right: 12px; }
   .auto-complete__list-item {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -2px;
+    margin-bottom: 23px;
     padding-top: 12px;
     padding-bottom: 12px;
     cursor: pointer;
@@ -4279,6 +4285,10 @@ th {
   overflow: hidden; }
 
 .business-card__property {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -2px;
+  margin-bottom: 23px;
   color: #7f7f7f; }
 
 .business-card__footer {
@@ -4617,9 +4627,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .footer-navigation-category__title {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
-  margin-bottom: 23px;
   font-weight: bold;
   margin-bottom: 8px; }
 
@@ -5501,7 +5510,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .content-manageble ol {
   padding-left: 1em;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
@@ -6171,14 +6180,14 @@ svg text {
     background-color: transparent; }
   .preferences-bar__content-manageble p, .preferences-bar__content-manageble strong, .preferences-bar__content-manageble .tablist__section .tablist__item, .tablist__section .preferences-bar__content-manageble .tablist__item, .preferences-bar__content-manageble .examples .examples__tabs .tablist__item, .examples .examples__tabs .preferences-bar__content-manageble .tablist__item {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5;
     margin-top: -2px;
     margin-bottom: 23px; }
   @media (min-width: 768px) {
     .preferences-bar__content-manageble ul, .preferences-bar__content-manageble .hero--text .content--rich ul, .hero--text .content--rich .preferences-bar__content-manageble ul,
     .preferences-bar__content-manageble ol {
       font-size: 14px;
-      line-height: 21px;
+      line-height: 1.5;
       margin-top: -2px;
       margin-bottom: 23px; } }
   .preferences-bar .auto-complete.auto-complete--small {
@@ -6250,8 +6259,7 @@ svg text {
 
 .setting__description {
   font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
+  line-height: 1.5;
   margin-bottom: 23px;
   padding-left: 30px;
   margin-top: -6px;
@@ -6728,7 +6736,7 @@ main .overview:nth-child(even) {
 
 .table-compare__table tbody th[scope="row"] {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px;
   left: 0;
