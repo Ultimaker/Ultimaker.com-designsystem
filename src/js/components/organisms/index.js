@@ -11,6 +11,7 @@ export { default as CountrySelector } from 'organisms/country-selector';
 export { default as HeroArticle } from 'organisms/hero-article';
 export { default as HeroBasic } from 'organisms/hero-basic';
 export { default as HeroCover } from 'organisms/hero-cover';
+export { default as HeroHome } from 'organisms/hero-home';
 export { default as HeroProduct } from 'organisms/hero-product';
 export { default as LocaleSelector } from 'organisms/locale-selector';
 export { default as Overview } from 'organisms/overview';
