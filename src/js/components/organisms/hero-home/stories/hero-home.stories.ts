@@ -14,7 +14,7 @@ const getStory = type => () => {
         props: {
             title: { default: knobs.title },
             description: { default: knobs.description },
-            image: { default: knobs.image },
+            imageUrl: { default: knobs.imageUrl },
         },
         template: require('./hero-home.html'),
     };

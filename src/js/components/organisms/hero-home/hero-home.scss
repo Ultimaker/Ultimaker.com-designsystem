@@ -1,12 +1,58 @@
 /** @format */
 
-@import "../hero-base/hero-base";
+$headerHeight: 60px;
 
 .hero-home {
-    background-color: deeppink;
+    position: relative;
+
+    // semi transparent backdrop in front of the image.
+    &::after {
+        background-color: rgba($colorBlack, 0.65);
+        bottom: 0;
+        content: " ";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
 }
 
-.hero-home__container {
+.hero-home__content {
+    align-items: center;
+    color: $colorWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
+    min-height: calc(100vh - #{$headerHeight});
+    padding: 5 * $buildingUnit 2 * $buildingUnit;
+    text-align: center;
+}
+
+.hero-home__title {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 1.1111;
+    margin: 0 0 6 * $buildingUnit;
+    max-width: 678px;
+}
+
+.hero-home__description {
+    font-size: 2 * $buildingUnit;
+    line-height: 1.25;
+    margin: 0 0 4 * $buildingUnit;
+    max-width: 852px;
+}
+
+.hero-home__image {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    // pull the image behind the backdrop
+    z-index: -1;
 }

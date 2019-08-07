@@ -3,5 +3,5 @@
 export default {
     title: '',
     description: '',
-    image: {},
+    imageUrl: '',
 };
