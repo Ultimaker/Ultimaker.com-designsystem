@@ -31,8 +31,6 @@ run:
 unit:
 	$(call docker-node-run,npm run unit)
 
-snapshots:
-	$(call docker-node-run,npm run snapshots)
 
 shell:
 	docker run --rm \
