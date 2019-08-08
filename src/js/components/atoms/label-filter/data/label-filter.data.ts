@@ -1,15 +1,13 @@
 /** @format */
 
-import { architecture } from 'components/atoms/label-filter/data/examples/architecture';
-import { endUserParts } from 'components/atoms/label-filter/data/examples/end-user-parts';
-import { manufacturingAids } from 'components/atoms/label-filter/data/examples/manufacuturing-aids';
-import { medicine } from 'components/atoms/label-filter/data/examples/medicine';
-import { productDevelopment } from 'components/atoms/label-filter/data/examples/product-development';
+import { checked } from './examples/checked';
+import { checkedDisabled } from './examples/checked-disabled';
+import { disabled } from './examples/disabled';
+import { unchecked } from './examples/unchecked';
 
 export const data = {
-    architecture,
-    endUserParts,
-    manufacturingAids,
-    medicine,
-    productDevelopment,
+    checked,
+    checkedDisabled,
+    disabled,
+    unchecked,
 };

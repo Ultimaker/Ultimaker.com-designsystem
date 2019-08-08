@@ -30,7 +30,10 @@
     }
 
     &__list-item {
-        @extend .copy--small;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: -2px;
+        margin-bottom: 23px;
 
         padding-top: $buildingUnit;
         padding-bottom: $buildingUnit;

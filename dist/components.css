@@ -269,10 +269,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--products > :last-child, .hero--products-application > :last-child, .hero--products .hero__description > :last-child, .hero--products-application .hero__description > :last-child, .hero--products .hero__tab-panel > :last-child, .hero--products-application .hero__tab-panel > :last-child, .hero--products .hero__link-list > :last-child, .hero--products-application .hero__link-list > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child {
   margin-bottom: 0; }
 
-.hero--products .hero__link--large, .hero--products-application .hero__link--large, .examples .examples__link--large {
+.examples .examples__link--large {
   margin-bottom: 0; }
 
 .clear {
@@ -319,7 +319,6 @@ small a:focus:not(:hover),
 .tablist__section .tablist__headline a:focus:not(:hover),
 .examples .examples__tabs .tablist__headline a:focus:not(:hover),
 .auto-complete__label a:focus:not(:hover),
-.hero--products-application .usp--icon .usp__label a:focus:not(:hover),
 .overflow-container__label a:focus:not(:hover),
 .settings-selector__label a:focus:not(:hover),
 small a:focus:not(:active),
@@ -337,11 +336,10 @@ small a:focus:not(:active),
 .tablist__section .tablist__headline a:focus:not(:active),
 .examples .examples__tabs .tablist__headline a:focus:not(:active),
 .auto-complete__label a:focus:not(:active),
-.hero--products-application .usp--icon .usp__label a:focus:not(:active),
 .overflow-container__label a:focus:not(:active),
 .settings-selector__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
-.content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .search__input:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .overflow-container__link:focus:not(:hover), .overflow-container__link:focus:not(:active) {
+.content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .overflow-container__link:focus:not(:hover), .overflow-container__link:focus:not(:active) {
   outline: 2px solid #3f86f2; }
 
 /******************************************************************************
@@ -811,6 +809,18 @@ input[type="submit"] {
       line-height: 24px;
       padding-top: 12px;
       padding-bottom: 12px; } }
+  button[disabled],
+  .button[disabled],
+  input[type="button"][disabled],
+  input[type="submit"][disabled] {
+    background-color: #b2b2b2;
+    color: #fff; }
+    button[disabled]:hover,
+    .button[disabled]:hover,
+    input[type="button"][disabled]:hover,
+    input[type="submit"][disabled]:hover {
+      background-color: #b2b2b2;
+      color: #fff; }
 
 .button--primary {
   margin-right: 25px;
@@ -838,6 +848,7 @@ input[type="submit"] {
 .button--secondary {
   background: transparent;
   border: 2px solid #196ef0;
+  font-weight: 600;
   padding-top: 7px;
   padding-bottom: 7px;
   color: #196ef0; }
@@ -847,6 +858,13 @@ input[type="submit"] {
       padding-bottom: 10px; } }
   .button--secondary:hover, .button--secondary:focus {
     border: 2px solid transparent; }
+  .button--secondary[disabled] {
+    background-color: transparent;
+    border-color: currentColor;
+    color: #b2b2b2; }
+    .button--secondary[disabled]:hover {
+      background-color: transparent;
+      color: #b2b2b2; }
 
 .button--close {
   position: absolute;
@@ -862,34 +880,77 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
 .label-filter input[type="checkbox"] {
-  position: absolute;
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  padding: 0;
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
-  white-space: nowrap; }
-
-.label-filter input[type="checkbox"]:checked + .label-filter__label {
-  color: #fff;
-  background-color: #196ef0; }
-
-.label-filter input[type="checkbox"]:focus + .label-filter__label {
-  outline: #196ef0 solid 2px; }
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .label-filter__label {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #7f7f7f;
+  color: #000;
+  cursor: pointer;
   display: inline-block;
-  padding-left: 6px;
-  padding-right: 6px;
   font-size: 12px;
   font-weight: 500;
+  padding: 0 6px; }
+
+.label-filter > :checked:not(:disabled) + .label-filter__label {
+  background-color: #196ef0;
+  border-color: #196ef0;
+  color: #fff; }
+
+.label-filter > :focus + .label-filter__label {
+  border-color: #fff;
+  outline: #196ef0 solid 2px; }
+
+.label-filter > :disabled:not(:checked) + .label-filter__label {
+  background-color: #fff;
+  border-color: #eaeaea;
   color: #7f7f7f;
-  background-color: #f5f5f5;
-  border-radius: 2px;
-  border: 1px solid #e3e3e3; }
+  cursor: not-allowed; }
+
+.label-filter > :disabled:checked + .label-filter__label {
+  background-color: #eaeaea;
+  border-color: #7f7f7f;
+  color: #7f7f7f;
+  cursor: not-allowed; }
 
 p, strong, .tablist__section .tablist__item, .examples .examples__tabs .tablist__item {
   margin-top: -2px;
@@ -905,7 +966,7 @@ q {
   color: #7f7f7f; }
 
 small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.overflow-container__link:hover, .link--small.overflow-container__link.exact-active, .price-table__tagline,
-.price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
+.price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .overflow-container__label, .settings-selector__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
@@ -913,7 +974,7 @@ small, .caption-list__headline, .caption-list__list-item, .link.link--small, .li
   color: inherit; }
   @media (min-width: 768px) {
     small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.overflow-container__link:hover, .link--small.overflow-container__link.exact-active, .price-table__tagline,
-    .price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .hero--products-application .usp--icon .usp__label, .overflow-container__label, .settings-selector__label {
+    .price-table__disclaimer, .tag, .tablist__section .tablist, .examples .examples__tabs .tablist, .tablist__section .tablist__headline, .examples .examples__tabs .tablist__headline, .auto-complete__label, .overflow-container__label, .settings-selector__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -929,17 +990,10 @@ small, .caption-list__headline, .caption-list__list-item, .link.link--small, .li
       margin-top: -8px;
       margin-bottom: 38px; } }
 
-.copy--small, .link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active, .notification__title, .notification__copy, .auto-complete__list-item, .business-card__property {
-  font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
-  margin-bottom: 23px; }
-
 h1,
 h2,
 h3,
-q,
-.hero--products-application .hero__subtitle {
+q {
   font-weight: normal; }
 
 h1,
@@ -973,7 +1027,6 @@ h2,
 
 h3,
 q,
-.hero--products-application .hero__subtitle,
 .headline--tertiary {
   font-size: 18px;
   line-height: 24px;
@@ -983,7 +1036,6 @@ q,
     
     h3,
     q,
-    .hero--products-application .hero__subtitle,
     .headline--tertiary {
       font-size: 20px;
       line-height: 24px;
@@ -1137,7 +1189,6 @@ a {
   .tablist__section .tablist__headline a,
   .examples .examples__tabs .tablist__headline a,
   .auto-complete__label a,
-  .hero--products-application .usp--icon .usp__label a,
   .overflow-container__label a,
   .settings-selector__label a,
   .content--rich li a {
@@ -1274,7 +1325,7 @@ html {
 
 .list {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
@@ -1317,6 +1368,10 @@ dd {
     margin-bottom: 0; }
 
 .link, .toggle, .overflow-container__link:hover, .overflow-container__link.exact-active {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -2px;
+  margin-bottom: 23px;
   display: inline-block;
   margin-right: 12px;
   vertical-align: top;
@@ -1403,9 +1458,8 @@ dd {
 
 .link-list__headline, .flyout__title {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
-  margin-bottom: 23px;
   font-weight: bold;
   margin-bottom: 8px; }
 
@@ -1537,14 +1591,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   object-fit: cover;
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  will-change: filter;
-  transition: filter 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  transform: translateZ(0);
-  filter: blur(0.01px); }
-
-.img--contain.img--loading {
-  filter: blur(50px); }
+  height: 100%; }
 
 .img--responsive {
   max-width: 100%;
@@ -1559,9 +1606,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   height: 100%;
   background-color: #e3e3e3;
   padding: 12px; }
-
-.img--lazy {
-  transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
 
 .img--lazy.img--loading {
   opacity: 0; }
@@ -1596,11 +1640,6 @@ input[type="text"] {
   -moz-appearance: none;
   appearance: none; }
 
-input[type="text"]:not(.search__input) {
-  background: #f5f5f5;
-  font-size: 14px;
-  line-height: 21px; }
-
 .required:after {
   font-size: 14px;
   line-height: 21px;
@@ -1613,11 +1652,136 @@ input[type="text"]:not(.search__input) {
 ::placeholder {
   color: #7f7f7f; }
 
+/** @format */
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+.preferences-bar [type="checkbox"] + label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+  text-align: left; }
+
+.preferences-bar label + [type="checkbox"] {
+  margin: 0 12px 12px 0; }
+
+/* Base for label styling */
+.preferences-bar [type="checkbox"]:not(:checked),
+.preferences-bar [type="checkbox"]:checked {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.preferences-bar [type="checkbox"]:not(:checked) + label,
+.preferences-bar [type="checkbox"]:checked + label {
+  cursor: pointer;
+  padding-left: 30px;
+  position: relative;
+  user-select: none; }
+
+/* checkbox aspect */
+.preferences-bar [type="checkbox"]:not(:checked) + label:before,
+.preferences-bar [type="checkbox"]:checked + label:before {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  content: "";
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  width: 24px; }
+
+/* checked mark aspect */
+.preferences-bar [type="checkbox"]:not(:checked) + label:after,
+.preferences-bar [type="checkbox"]:checked + label:after {
+  content: url("data:image/svg+xml, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%3E%3Cpolygon%20points=%22113%2029.1%20104.2%2020.2%2042.3%2082.1%2015.8%2055.6%207%2064.4%2033.5%2091%2033.5%2091%2042.3%2099.8%2042.3%2099.8%2042.3%2099.8%2051.1%2091%2051.1%2091%20%22%20fill=%22rgb(12,169,227)%22/%3E%3C/svg%3E");
+  position: absolute;
+  height: 18px;
+  left: 4px;
+  top: 1px;
+  width: 18px; }
+
+/* checked mark aspect changes */
+.preferences-bar [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0); }
+
+.preferences-bar [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1); }
+
+/* disabled checkbox */
+.preferences-bar [type="checkbox"]:disabled:not(:checked) + label:before,
+.preferences-bar [type="checkbox"]:disabled:checked + label:before {
+  background-color: #f5f5f5; }
+
+.preferences-bar [type="checkbox"]:disabled:checked + label:after {
+  content: url("data:image/svg+xml, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%3E%3Cpolygon%20points=%22113%2029.1%20104.2%2020.2%2042.3%2082.1%2015.8%2055.6%207%2064.4%2033.5%2091%2033.5%2091%2042.3%2099.8%2042.3%2099.8%2042.3%2099.8%2051.1%2091%2051.1%2091%20%22%20fill=%22rgb(178,178,178)%22/%3E%3C/svg%3E"); }
+
+.preferences-bar [type="checkbox"]:disabled + label {
+  color: #7f7f7f;
+  cursor: default; }
+
+/* accessibility */
+.preferences-bar [type="checkbox"]:checked:focus:not(:hover) + label:before,
+.preferences-bar [type="checkbox"]:not(:checked):focus:not(:hover) + label:before {
+  border: 2px solid #196ef0; }
+
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 table {
   border: 0;
   border-bottom: 2px solid #e3e3e3;
   border-collapse: collapse;
-  margin: 0 0 24px;
+  margin: 0 0 36px;
   text-align: left;
   width: 100%; }
 
@@ -3292,16 +3456,6 @@ th {
     .container.brands__container, .brands__container.footer__container, .container.examples__container, .examples__container.footer__container, .container.ecosystem__container, .ecosystem__container.footer__container, .container.explore__container, .explore__container.footer__container, .container.case__container, .case__container.footer__container, .container.general-content__container, .general-content__container.footer__container, .container.slider-reveal__container, .slider-reveal__container.footer__container {
       padding: 60px; } }
 
-.hero--products-application .container, .hero--products-application .footer__container {
-  margin: 0 auto;
-  padding: 60px 12px 60px 12px; }
-  @media (min-width: 768px) {
-    .hero--products-application .container, .hero--products-application .footer__container {
-      padding: 60px 24px 60px 24px; } }
-  @media (min-width: 1025px) {
-    .hero--products-application .container, .hero--products-application .footer__container {
-      padding: 60px; } }
-
 .flyout, .main-nav__flyout {
   display: flex;
   flex-direction: column;
@@ -3363,23 +3517,35 @@ th {
 .flyout__list-item {
   background: transparent; }
   .flyout__list-item--collapsed-sm {
-    position: absolute;
-    width: 1px;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px); }
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; }
     .main-nav--large .flyout__list-item--collapsed-sm {
-      position: relative;
-      width: auto;
+      border: initial;
+      clip: initial;
+      clip-path: initial;
       height: auto;
       overflow: initial;
-      clip: initial; }
+      padding: initial;
+      position: relative;
+      white-space: initial;
+      width: auto; }
   .flyout__list-item--expanded {
-    position: relative;
-    width: auto;
+    border: initial;
+    clip: initial;
+    clip-path: initial;
     height: auto;
     overflow: initial;
-    clip: initial; }
+    padding: initial;
+    position: relative;
+    white-space: initial;
+    width: auto; }
 
 .flyout__link {
   color: initial;
@@ -3390,11 +3556,15 @@ th {
     display: table; }
 
 .main-nav--large .flyout__toggle {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .sys-nav {
   order: 20;
@@ -3424,7 +3594,8 @@ th {
   .sys-nav__item:last-child {
     margin-right: 0; }
 
-.sys-nav__link, .search__button, .um-components .search__button {
+.sys-nav__link, .search-bar__button,
+.um-components .search-bar__button {
   background: transparent; }
 
 .sys-nav__label {
@@ -3433,74 +3604,27 @@ th {
   user-select: none; }
 
 .sys-nav__label--hidden-sm {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 @media (min-width: 1201px) {
   .sys-nav__label--hidden-sm {
-    position: relative;
-    width: auto;
+    border: initial;
+    clip: initial;
+    clip-path: initial;
     height: auto;
     overflow: initial;
-    clip: initial; } }
-
-.search {
-  position: relative;
-  height: 60px;
-  z-index: 1010;
-  border-bottom: 1px solid #eaeaea; }
-
-.search__label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
-
-.search__button, .um-components .search__button {
-  position: absolute;
-  display: block;
-  font-size: 24px;
-  padding: 18px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  margin: 0;
-  background-color: #eaeaea;
-  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  .search__button:hover, .um-components .search__button:hover {
-    background-color: #d6d6d6; }
-
-.search__inputholder {
-  position: absolute;
-  left: 60px;
-  right: 60px;
-  display: block;
-  height: 60px; }
-
-.search__input {
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  background-color: #eaeaea;
-  padding: 0 12px;
-  border-radius: 0;
-  font-size: 20px;
-  line-height: 24px;
-  border: none;
-  outline: none; }
-  @media (min-width: 569px) {
-    .search__input {
-      font-size: 24px;
-      line-height: 30px; } }
-
-.search__close-button {
-  position: absolute;
-  top: 0;
-  right: 0; }
+    padding: initial;
+    position: relative;
+    white-space: initial;
+    width: auto; } }
 
 .social-nav__item {
   display: inline-block;
@@ -3510,6 +3634,11 @@ th {
   position: relative;
   background: #f0f6fe;
   /* disabled checkbox */ }
+  .notification__title, .notification__copy {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -2px;
+    margin-bottom: 23px; }
   .notification [type="checkbox"]:not(:checked) + label:before, .preferences-bar [type="checkbox"]:not(:checked) + label:before,
   .notification [type="checkbox"]:checked + label:before,
   .preferences-bar [type="checkbox"]:checked + label:before {
@@ -3891,7 +4020,12 @@ th {
       width: 66%; } }
 
 .article-table {
-  overflow-x: auto; }
+  overflow-x: auto;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 768px) {
+    .article-table {
+      width: 66%; } }
 
 .article-text p, .article-text strong, .article-text .tablist__section .tablist__item, .tablist__section .article-text .tablist__item, .article-text .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text .tablist__item, .article-text ul, .article-text .hero--text .content--rich ul, .hero--text .content--rich .article-text ul, .article-text ol {
   margin-top: -2px;
@@ -3984,6 +4118,10 @@ th {
     padding-left: 12px;
     padding-right: 12px; }
   .auto-complete__list-item {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -2px;
+    margin-bottom: 23px;
     padding-top: 12px;
     padding-bottom: 12px;
     cursor: pointer;
@@ -4147,6 +4285,10 @@ th {
   overflow: hidden; }
 
 .business-card__property {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -2px;
+  margin-bottom: 23px;
   color: #7f7f7f; }
 
 .business-card__footer {
@@ -4215,11 +4357,15 @@ because both families serve another purpose. Therefore the line-heights will be 
   width: 100%; }
 
 .card-download__radio {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .card-download__label {
   border: 2px solid #eaeaea;
@@ -4425,10 +4571,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
+  background-color: #fff;
+  border: 1px solid #7f7f7f;
   border-radius: 2px;
-  color: #7f7f7f;
+  color: #000;
   font-size: 12px;
   font-weight: 500;
   margin-bottom: 6px;
@@ -4437,10 +4583,9 @@ because both families serve another purpose. Therefore the line-heights will be 
   padding-right: 6px;
   padding-left: 6px;
   padding-bottom: 2px; }
-
-.filter-category__reset:focus {
-  outline-offset: 1px;
-  outline: 2px solid #196ef0; }
+  .filter-category__reset:focus {
+    border-color: #fff;
+    outline: 2px solid #196ef0; }
 
 .filter-category__reset--active {
   background-color: #196ef0;
@@ -4482,9 +4627,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .footer-navigation-category__title {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
-  margin-bottom: 23px;
   font-weight: bold;
   margin-bottom: 8px; }
 
@@ -4546,7 +4690,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #7f7f7f;
   margin-right: 12px; }
 
-.icon-button, .sys-nav__link, .search__button, .um-components .search__button {
+.icon-button, .sys-nav__link, .search-bar__button,
+.um-components .search-bar__button {
   transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   font-size: 14px;
   line-height: 21px;
@@ -4557,10 +4702,10 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #000;
   background-color: #fff;
   cursor: pointer; }
-  .icon-button:hover, .sys-nav__link:hover, .search__button:hover {
+  .icon-button:hover, .sys-nav__link:hover, .search-bar__button:hover {
     color: #000;
     background-color: #eaeaea; }
-  .icon-button[aria-disabled], .sys-nav__link[aria-disabled], .search__button[aria-disabled] {
+  .icon-button[aria-disabled], .sys-nav__link[aria-disabled], .search-bar__button[aria-disabled] {
     color: #7f7f7f;
     pointer-events: none; }
   .icon-button--light, .modal__close, .icon-button--light:hover, .modal__close:hover {
@@ -4575,7 +4720,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   white-space: nowrap;
   user-select: none; }
 
-.icon-button--small, .sys-nav__link, .search__button, .um-components .search__button, .social-nav__link {
+.icon-button--small, .sys-nav__link, .search-bar__button,
+.um-components .search-bar__button, .social-nav__link {
   padding: 6px;
   height: 36px; }
 
@@ -4636,11 +4782,15 @@ because both families serve another purpose. Therefore the line-heights will be 
     background-size: 0 100%; }
 
 .icon-button--visually-hidden-label .icon-button__label {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .icon-button--transparent {
   background-color: transparent; }
@@ -4945,6 +5095,257 @@ because both families serve another purpose. Therefore the line-heights will be 
         line-height: 24px; } }
 
 /** @format */
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+.search-bar {
+  position: relative;
+  height: 60px;
+  z-index: 1010;
+  border-bottom: 1px solid #eaeaea; }
+
+.search-bar__label {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.search-bar__button,
+.um-components .search-bar__button {
+  position: absolute;
+  display: block;
+  font-size: 24px;
+  padding: 18px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  background-color: #eaeaea;
+  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+  .search-bar__button:hover,
+  .um-components .search-bar__button:hover {
+    background-color: #d6d6d6; }
+
+.search-bar__inputholder {
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  display: block;
+  height: 60px; }
+
+.search-bar__input {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  background-color: #eaeaea;
+  padding: 0 12px;
+  border-radius: 0;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  outline: none; }
+  @media (min-width: 569px) {
+    .search-bar__input {
+      font-size: 24px;
+      line-height: 30px; } }
+  .search-bar__input:focus {
+    outline: 2px solid #3f86f2; }
+
+.search-bar__close-button {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/**
+ * CSS Background
+ * @param {string} $name ($spriteDefault) - Background image, without the image path
+ * @param {string} $repeat (no-repeat) - Background repeat
+ * @param {position} $left (0) - Background position X
+ * @param {position} $top (0) - Background position Y
+ * @param {color} $color (transparent) - Background color
+ * @param {string} $attachment (scorll) - Background attachment
+ */
+/**
+ * Creates an arrow
+ * @param {string} $direction (up) - Arrow direction: up, down, left or right
+ * @param {color} $color (#000) - Arrow color
+ * @param {size} $size (10px) - Size of the opposite side of the arrow
+ * @param {number} $stretch (1) - Amount of the stretch of the arrow
+ * @param {boolean} $exclude-base (false) - Remove the default arrow styling (usefull if you want to modify the direction of the arrow on rollover
+ */
+/**
+ * Outputs a ratio holder
+ * @param {number} $width - the width of the desired (original) size
+ * @param {number} $height - the height of the desired (original) size
+ * @param {string} $type (before) - type of psuedo element
+ * @param {boolean} $firstDescendant (true) - same element or first descendant
+ */
+/**
+ * Object fit for images (can be used in combination with https://github.com/bfred-it/object-fit-images
+ * @param {string} $fit - Type of fit cover/contain etc.
+ * @param {string} $position - almost the same as background-position
+ */
+.search-bar-page {
+  text-space: discard; }
+
+.search-bar-page__button {
+  background-color: #eaeaea;
+  color: #000;
+  font-size: 24px;
+  height: 60px;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 60px;
+  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.search-bar-page__button:hover {
+  background-color: #d6d6d6; }
+
+.search-bar-page__label {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+.search-bar-page__input {
+  height: 60px;
+  font-size: 24px;
+  vertical-align: top; }
+
+.search-bar-page__input:disabled {
+  background-color: #e3e3e3; }
+
+/** @format */
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.search-result {
+  background-color: #fff;
+  padding: 18px;
+  position: relative;
+  transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.search-result:hover {
+  background-color: #eaeaea; }
+  .search-result:hover a:not(.hit-area) {
+    background-color: transparent;
+    color: inherit; }
+
+.search-result--focus:not(:hover) {
+  background-color: #196ef0;
+  color: #fff; }
+  .search-result--focus:not(:hover) a:not(.hit-area) {
+    background-color: transparent; }
+
+.search-result--focus:not(:hover) mark {
+  color: #fff; }
+
+.search-result__title {
+  margin: 0 0 6px; }
+
+.search-result__link {
+  color: #000; }
+  .search-result__link::after {
+    bottom: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; }
+  .search-result__link:hover {
+    color: inherit; }
+
+.search-result__snippet {
+  margin: 0 0 18px; }
+
+.search-result__url {
+  margin: 0;
+  word-break: break-all; }
+
+.search-result mark {
+  background-color: inherit;
+  font-weight: bold; }
+
+/** @format */
 .social-sharing {
   display: flex;
   justify-content: center;
@@ -4962,11 +5363,15 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-left: 12px; }
 
 .social-sharing__text {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .social-sharing__icon {
   height: 36px;
@@ -5105,7 +5510,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .content-manageble ol {
   padding-left: 1em;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
@@ -5177,7 +5582,58 @@ because both families serve another purpose. Therefore the line-heights will be 
 .examples .examples__tabs .content-manageble--copy-small .tablist__item + .tablist__item {
   margin-top: 21px; }
 
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero--products:nth-child(even), main .hero--products-application:nth-child(even), main .hero--text:nth-child(even), main .hero--cover:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .hero--article:nth-child(even) {
+/** @format */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.article-description-list {
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 768px) {
+    .article-description-list {
+      width: 66%; } }
+
+dl {
+  margin-bottom: 36px;
+  border-top: 2px solid #e3e3e3;
+  border-bottom: 2px solid #e3e3e3; }
+
+dt,
+dd {
+  margin: 0; }
+
+dt {
+  border-top: 1px solid #e3e3e3;
+  font-weight: bold;
+  padding: 12px; }
+  dt:first-of-type {
+    border-top: 0; }
+
+dd {
+  padding: 0 12px 12px; }
+
+@media (min-width: 768px) {
+  dl {
+    display: grid;
+    grid-template-columns: max-content auto; }
+  dt,
+  dd {
+    border-top: 1px solid #e3e3e3;
+    padding: 18px; }
+    dt:first-of-type,
+    dd:first-of-type {
+      border-top: 0; } }
+
+main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
 .hero__image {
@@ -5188,221 +5644,6 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .hero-
     .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
-
-@media (max-width: 568px) {
-  .hero--products .hero__container, .hero--products-application .hero__container {
-    padding-top: 12px; } }
-
-.hero--products .hero__image--basic, .hero--products-application .hero__image--basic,
-.hero--products .hero__image--product,
-.hero--products-application .hero__image--product {
-  position: relative;
-  width: 75%;
-  margin: 0 auto 30px; }
-  @media (min-width: 569px) {
-    .hero--products .hero__image--basic, .hero--products-application .hero__image--basic,
-    .hero--products .hero__image--product,
-    .hero--products-application .hero__image--product {
-      width: 100%;
-      margin: 0 auto 0 30px; } }
-
-.hero--products .hero__image-link, .hero--products-application .hero__image-link {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  margin: 12px;
-  width: 84px;
-  height: 84px;
-  color: #000;
-  transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
-  .hero--products .hero__image-link:hover, .hero--products-application .hero__image-link:hover, .hero--products .hero__image-link:focus, .hero--products-application .hero__image-link:focus {
-    color: #939393; }
-  @media (min-width: 1025px) {
-    .hero--products .hero__image-link, .hero--products-application .hero__image-link {
-      width: 120px;
-      height: 120px; } }
-
-.hero--products .hero__image-link--3d-kit, .hero--products-application .hero__image-link--3d-kit {
-  width: 100%;
-  height: 100%; }
-
-.hero--products .hero__button, .hero--products-application .hero__button {
-  display: table; }
-  @media (min-width: 768px) {
-    .hero--products .hero__button, .hero--products-application .hero__button {
-      display: inline-block;
-      margin-bottom: 0; } }
-
-.hero--products .hero__link-list, .hero--products-application .hero__link-list {
-  margin-top: 33px;
-  margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .hero--products .hero__link-list, .hero--products-application .hero__link-list {
-      margin-top: 46px; } }
-
-/*
-
-
-
-$imageLinkSizeMobile: $buildingUnit * 7;
-$imageLinkSizeDesktop: $buildingUnit * 10;
-
-.cta-block--hero {
-    align-items: flex-start;
-    @include min-tablet() {
-        align-items: center;
-    }
-}
-
-
-    @extend %reset-last-margin;
-
-    .hero__container {
-        padding-top: $buildingUnit * 5;
-    }
-
-    .hero__image--basic,
-    .hero__image--product{
-        position: relative;
-        width: 75%;
-
-        margin: 0 auto ($buildingUnit * 2.5);
-
-        @include min-mobile-xl {
-            width: 100%;
-            margin: 0 auto 0 ($buildingUnit * 2.5);
-        }
-    }
-
-    .hero__image-link {
-        position: absolute;
-        z-index: 1;
-        bottom: 0;
-        right: 0;
-
-        cursor: pointer;
-
-        margin: $buildingUnit;
-
-        width: $imageLinkSizeMobile;
-        height: $imageLinkSizeMobile;
-
-        color: $colorBlack;
-        @include micro-animate(color);
-
-        &:hover,
-        &:focus {
-            color: lighten($colorGrayDark, $tintHoverFocus); // #939393
-        }
-
-        @include min-desktop {
-            width: $imageLinkSizeDesktop;
-            height: $imageLinkSizeDesktop;
-        }
-    }
-
-    .hero__description {
-        @extend %reset-last-margin;
-    }
-
-    .hero__button {
-        display: table;
-
-        @include min-tablet {
-            display: inline-block;
-            margin-bottom: 0;
-        }
-    }
-
-    .hero__link--large {
-        @extend %reset-last-link-large-margin;
-    }
-
-    */
-.hero--products-application .hero__container--top {
-  position: relative;
-  color: #fff; }
-  .hero--products-application .hero__container--top .container, .hero--products-application .hero__container--top .footer__container {
-    position: relative; }
-    @media (max-width: 568px) {
-      .hero--products-application .hero__container--top .container, .hero--products-application .hero__container--top .footer__container {
-        padding-bottom: 0; } }
-
-.hero--products-application .hero__headline h1 {
-  margin-bottom: 5px; }
-  @media (min-width: 768px) {
-    .hero--products-application .hero__headline h1 {
-      margin-bottom: 28px; } }
-
-.hero--products-application .hero__subtitle {
-  color: #fff; }
-  @media (min-width: 768px) {
-    .hero--products-application .hero__subtitle {
-      font-size: 30px;
-      line-height: 36px;
-      margin-top: -5px;
-      margin-bottom: 59px; } }
-
-.hero--products-application .hero__usp-container {
-  display: flex;
-  align-items: flex-start;
-  width: calc(100% - (12px * 3));
-  margin: 0 auto; }
-  @media (min-width: 569px) {
-    .hero--products-application .hero__usp-container {
-      width: unset;
-      margin-top: 30px; } }
-  @media (min-width: 768px) {
-    .hero--products-application .hero__usp-container {
-      margin-top: -6px; } }
-  @media (max-width: 568px) {
-    .hero--products-application .hero__usp-container {
-      justify-content: center;
-      color: #7f7f7f; } }
-
-.hero--products-application .hero__usp {
-  width: calc((100% - (12px * 3)) / 3);
-  max-width: 120px; }
-  .hero--products-application .hero__usp:not(:last-child) {
-    margin-right: 18px; }
-
-.hero--products-application .usp--icon {
-  display: inline-block;
-  text-align: center; }
-  .hero--products-application .usp--icon .usp__icon {
-    font-size: 48px;
-    margin-bottom: 5px; }
-  .hero--products-application .usp--icon .usp__label {
-    margin-bottom: -5px; }
-
-@media (min-width: 569px) {
-  .hero--products-application .hero__subtitle,
-  .hero--products-application .hero__image--product {
-    width: calc(50% - 12px); } }
-
-@media (min-width: 569px) {
-  .hero--products-application .hero__image--product {
-    position: absolute;
-    top: 0;
-    right: 0; } }
-
-.hero--products-application .hero__image--full {
-  object-fit: cover; }
-
-.hero--products-application .hero__image-overlay {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.hero--products-application .hero__image--full, .hero--products-application .hero__image-overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 320px; }
-  @media (min-width: 569px) {
-    .hero--products-application .hero__image--full, .hero--products-application .hero__image-overlay {
-      height: 100%; } }
 
 .hero--text .content--rich p, .hero--text .content--rich strong, .hero--text .content--rich .tablist__section .tablist__item, .tablist__section .hero--text .content--rich .tablist__item, .hero--text .content--rich .examples .examples__tabs .tablist__item, .examples .examples__tabs .hero--text .content--rich .tablist__item, .hero--text .content--rich ul, .hero--text .content--rich li {
   max-width: 768px; }
@@ -5415,10 +5656,10 @@ $imageLinkSizeDesktop: $buildingUnit * 10;
       margin-top: 36px;
       margin-bottom: 29px; } }
 
-.hero--text .content--rich * + h3, .hero--text .content--rich * + q, .hero--text .content--rich .hero--products-application * + .hero__subtitle, .hero--products-application .hero--text .content--rich * + .hero__subtitle {
+.hero--text .content--rich * + h3, .hero--text .content--rich * + q {
   margin-top: 30px; }
   @media (min-width: 768px) {
-    .hero--text .content--rich * + h3, .hero--text .content--rich * + q, .hero--text .content--rich .hero--products-application * + .hero__subtitle, .hero--products-application .hero--text .content--rich * + .hero__subtitle {
+    .hero--text .content--rich * + h3, .hero--text .content--rich * + q {
       margin-top: 35px; } }
 
 .hero--cover {
@@ -5939,14 +6180,14 @@ svg text {
     background-color: transparent; }
   .preferences-bar__content-manageble p, .preferences-bar__content-manageble strong, .preferences-bar__content-manageble .tablist__section .tablist__item, .tablist__section .preferences-bar__content-manageble .tablist__item, .preferences-bar__content-manageble .examples .examples__tabs .tablist__item, .examples .examples__tabs .preferences-bar__content-manageble .tablist__item {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5;
     margin-top: -2px;
     margin-bottom: 23px; }
   @media (min-width: 768px) {
     .preferences-bar__content-manageble ul, .preferences-bar__content-manageble .hero--text .content--rich ul, .hero--text .content--rich .preferences-bar__content-manageble ul,
     .preferences-bar__content-manageble ol {
       font-size: 14px;
-      line-height: 21px;
+      line-height: 1.5;
       margin-top: -2px;
       margin-bottom: 23px; } }
   .preferences-bar .auto-complete.auto-complete--small {
@@ -6018,8 +6259,7 @@ svg text {
 
 .setting__description {
   font-size: 14px;
-  line-height: 21px;
-  margin-top: -2px;
+  line-height: 1.5;
   margin-bottom: 23px;
   padding-left: 30px;
   margin-top: -6px;
@@ -6496,7 +6736,7 @@ main .overview:nth-child(even) {
 
 .table-compare__table tbody th[scope="row"] {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px;
   left: 0;
@@ -6543,7 +6783,7 @@ main .overview:nth-child(even) {
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px);
   min-width: 125px;
   max-width: 70vw; }
-  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .hero--products:nth-child(even) .table-compare__feature, main .hero--products-application:nth-child(even) .table-compare__feature, main .hero--text:nth-child(even) .table-compare__feature, main .hero--cover:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .hero--article:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .hero--products:nth-child(even) .table-compare__feature--no-tooltip, main .hero--products-application:nth-child(even) .table-compare__feature--no-tooltip, main .hero--text:nth-child(even) .table-compare__feature--no-tooltip, main .hero--cover:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .general-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, main .hero--article:nth-child(even) .table-compare__feature--no-tooltip {
+  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .general-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .table-compare__feature--no-tooltip {
@@ -6552,11 +6792,15 @@ main .overview:nth-child(even) {
   text-overflow: ellipsis; }
 
 .table-compare__cell {
-  position: absolute;
-  width: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px); }
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
 
 .table-compare__checkmark {
   display: block;
@@ -6584,6 +6828,51 @@ main .overview:nth-child(even) {
     left: 0; }
   .table-compare__scroll-button--right {
     right: 0; }
+
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+.search-results {
+  margin-bottom: 60px; }
+
+.search-results__title {
+  font-size: 32px;
+  text-align: center; }
+
+.search-results__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 12px; }
+
+.search-results__list-item {
+  margin: 0 0 12px; }
+
+.search-results__footer {
+  padding-top: 24px;
+  text-align: center; }
+
+.search-results .search-bar-page {
+  margin-top: 84px;
+  margin-bottom: 84px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center; }
+
+.search-results .search-bar-page__input {
+  width: calc(100% - 60px); }
+  @media (min-width: 768px) {
+    .search-results .search-bar-page__input {
+      width: calc(50%); } }
 
 /** @format */
 /** @format */

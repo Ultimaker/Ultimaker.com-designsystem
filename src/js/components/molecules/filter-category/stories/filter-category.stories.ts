@@ -12,6 +12,8 @@ const getStory = (type) => () => {
 
     return {
         props: {
+            activeFilters: { default: knobs.activeFilters },
+            eventChange: { default: knobs.eventChange },
             labels: { default: knobs.labels },
             showAllLabel: { default: knobs.showAllLabel },
             title: { default: knobs.title },

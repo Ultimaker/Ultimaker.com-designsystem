@@ -13,12 +13,9 @@ import WithRender from './c-image.vue.html';
 
 export default class CImage extends Mixins(InView) implements ICImageProps {
     @Prop({ type: String, default: '' }) alt!: string;
-    @Prop({ type: String, default: null }) backgroundColor!: string | null;
     @Prop({ type: Boolean, default: false }) crop!: boolean;
     @Prop({ type: String, default: FocusArea.center }) focusArea!: FocusArea;
-    @Prop({ type: String, default: ImageFormat.default }) imageFormat!: ImageFormat;
     @Prop({ type: String, required: true }) mimeType!: string;
-    @Prop({ type: Number, default: 0 }) radius!: number;
     @Prop({ type: String, default: ResizeBehavior.default })resizeBehavior!: ResizeBehavior;
     @Prop({ type: Number, default: 65 }) quality!: number;
     @Prop({ type: String, required: true }) url!: string;
@@ -75,36 +72,12 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
         };
     }
 
-    get src() {
-        if (BrowserCapabilities.isBrowser) {
-            return imageConstants.tinyGif;
+    get src(): string {
+        if (!this.imageLoaded) {
+            return `${this.url}${this.getParams({ width: imageConstants.initialSize })}`;
         }
 
-        return this.url;
-    }
-
-    get srcset() {
-        if (!this.ready) {
-            return `${imageConstants.tinyGif} 1w`;
-        }
-
-        return `${this.imageLoaded && this.inView ? this.imageUrl : this.thumbUrl} ${this.width || imageConstants.initialSize}w`;
-    }
-
-    get imageUrl() {
         return `${this.url}${this.getParams({})}`;
-    }
-
-    get thumbUrl() {
-        if (this.resizeBehavior !== ResizeBehavior.default) {
-            const cropFactor = this.width > this.height ? this.width / imageConstants.initialSize : this.height / imageConstants.initialSize;
-            const height = Math.round(this.height / cropFactor);
-            const width = Math.round(this.width / cropFactor);
-
-            return `${this.url}${this.getParams({ width, height })}`;
-        }
-
-        return `${this.url}${this.getParams({ width: imageConstants.initialSize })}`;
     }
 
     getParams(options?: {width?: number, height?: number}) {
@@ -115,31 +88,7 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
             ['h', options && options.height ? options.height : elementHeight],
             ['fit', this.resizeBehavior],
             ['f', this.focusArea],
-            ['r', this.radius],
         ]);
-
-        if (this.imageFormat === ImageFormat.jpg || this.imageFormat === ImageFormat.pjpg) {
-            paramMap.set('q', this.quality);
-        }
-
-        if (this.backgroundColor) {
-            paramMap.set('bg', `rgb:${this.backgroundColor}`);
-        }
-
-        switch (this.imageFormat) {
-            case ImageFormat.pjpg:
-                paramMap.set('fm', ImageFormat.jpg);
-                paramMap.set('fl', 'progressive');
-                break;
-            case ImageFormat.png8:
-                paramMap.set('fm', ImageFormat.png);
-                paramMap.set('fl', 'png8');
-                break;
-            default:
-                if (this.imageFormat !== ImageFormat.default) {
-                    paramMap.set('fm', this.imageFormat);
-                }
-        }
 
         return Array.from(paramMap.keys()).reduce(
             (accumulator, current) => {
@@ -182,7 +131,7 @@ export default class CImage extends Mixins(InView) implements ICImageProps {
         await this.calculateDimensions();
 
         const imageToLoad = document.createElement('img');
-        imageToLoad.src = this.imageUrl;
+        imageToLoad.src = this.src;
         imageToLoad.addEventListener('load', this.imageLoadHandler);
     }
 

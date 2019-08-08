@@ -1,14 +1,19 @@
 /** @format */
 
+import { CardArticle } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cards/CardArticle';
 import { Component, Prop, Mixins, Watch } from 'vue-property-decorator';
 import WithRender from './list-section.vue.html';
 
 import Events from 'constants/events';
-import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
 
-import { ListSectionProps } from 'components/molecules/list-section/list-section.models';
+import { FilterCategoryInterface } from '../filter-category/filter-category.interface';
+import { ListSectionProps } from './list-section.models';
 import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
+
+import { getFiltersInCardCollection } from './helpers/get-filters-in-card-collection';
+import { getFilteredCardsFromActiveFilterCategories } from './helpers/get-filtered-cards-from-active-filter-categories';
+import { updateActiveFilterCategories } from 'components/molecules/list-section/helpers/update-active-filter-categories';
 
 @WithRender
 @Component({
@@ -28,12 +33,12 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
 
     $route;
 
+    activeFilterCategories: FilterCategoryInterface[] = [];
     chunks: object[] = [];
     chunkSize: number = 3;
     chunkIndex: number = 0;
     expanded: boolean = false;
-    filters: object = {};
-    filtersAll: any = [];
+    eventFilterCategoryChange: string = 'filter-category-change';
     showMax: number = 6;
     viewportUtil: ViewportUtil = new ViewportUtil();
     visibleChunks: number = 0;
@@ -43,31 +48,38 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         this.viewportUtil.removeResizeHandler(this.handleResize);
     }
 
-    async mounted() {
-        if (!BrowserCapabilities.isBrowser) {
-            return;
-        }
-
-        await this.viewportUtil.addResizeHandler(this.handleResize);
-        await this.viewportUtil.triggerResize();
-        await this.handleResize();
-
+    mounted() {
+        this.viewportUtil.addResizeHandler(this.handleResize);
+        this.viewportUtil.triggerResize();
+        this.handleResize();
         this.createChunks();
     }
 
-    get filteredCards() {
-        if (this.filtersAll.length) {
-            // @ts-ignore
-            return this.cards.filter((card) => {
-                if (card.labels) {
-                    return card.labels.some((label) => this.filtersAll.includes(label));
-                }
+    get activeFilters() {
+        return getFiltersInCardCollection(<CardArticle[]> this.filteredCards);
+    }
 
-                return false;
-            });
+    get clickEventData() {
+        if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
+            const { clickEvent } = this.limit.expand;
+
+            return {
+                dataType: clickEvent.name,
+                data: {
+                    ...clickEvent.data,
+                    pageSlug: this.$route.fullPath,
+                },
+            };
+        }
+        return null;
+    }
+
+    get filteredCards(): CardArticle[] {
+        if (!this.activeFilterCategories.length) {
+            return <CardArticle[]> this.cards;
         }
 
-        return this.cards;
+        return getFilteredCardsFromActiveFilterCategories(<CardArticle[]> this.cards, this.activeFilterCategories);
     }
 
     @Watch('cards')
@@ -81,14 +93,8 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         }
     }
 
-    handleFilterCategoryChange(payload): void {
-        this.filters[payload.category] = payload.filters;
-        this.filtersAll = [];
-
-        Object.keys(this.filters).forEach((category) => {
-            this.filters[category].forEach((value) => this.filtersAll.push(value));
-        });
-
+    handleFilterCategoryChange(changedFilterCategory) {
+        this.activeFilterCategories = updateActiveFilterCategories(this.activeFilterCategories, changedFilterCategory);
         this.createChunks();
     }
 
@@ -124,6 +130,15 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         }
     }
 
+    hideTooltip(): void {
+        this.visibleTooltip = false;
+    }
+
+    showAll(): void {
+        this.expanded = true;
+        this.visibleChunks = Number.MAX_SAFE_INTEGER;
+    }
+
     showButton(): boolean {
         if (this.limit && !this.limit.expandAmount && this.expanded) {
             return false;
@@ -134,11 +149,6 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         }
 
         return !(this.chunks.length <= this.visibleChunks);
-    }
-
-    showAll(): void {
-        this.expanded = true;
-        this.visibleChunks = Number.MAX_SAFE_INTEGER;
     }
 
     showChunk(): void {
@@ -164,41 +174,18 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
         return '';
     }
 
-    tooltipVisible(): boolean {
-        return this.visibleTooltip;
-    }
-
-    hideTooltip(): void {
-        this.visibleTooltip = false;
-    }
-
     toggleTooltip(): void {
         this.visibleTooltip = !this.visibleTooltip;
     }
 
-    get clickEventType() {
-        return Events.click;
-    }
-
-    get clickEventData() {
-        if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
-            const { clickEvent } = this.limit.expand;
-
-            return {
-                dataType: clickEvent.name,
-                data: {
-                    ...clickEvent.data,
-                    pageSlug: this.$route.fullPath,
-                },
-            };
-        }
-        return null;
+    tooltipVisible(): boolean {
+        return this.visibleTooltip;
     }
 
     triggerEventClick(): void {
         if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
             try {
-                this.$emitPublic(this.clickEventType, this.clickEventData);
+                this.$emitPublic(Events.click, this.clickEventData);
             } catch (e) {
                 console.warn(e);
             }

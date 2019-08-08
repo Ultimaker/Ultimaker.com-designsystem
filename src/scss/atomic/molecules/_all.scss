@@ -11,7 +11,6 @@
 @import 'container';
 @import "flyout";
 @import 'sys-nav';
-@import 'search';
 @import 'social-nav';
 @import 'notification';
 @import 'country-selector';
@@ -60,7 +59,11 @@
 
 @import '~molecules/product/product';
 
+@import '~molecules/search-bar/search-bar';
+@import '~molecules/search-bar-page/search-bar-page';
+@import '~molecules/search-result/search-result';
 @import '~molecules/social-sharing/social-sharing';
+
 @import '~molecules/tab-table/tab-table';
 @import '~molecules/tab-table-row/tab-table-row';
 @import '~molecules/tooltip-toggle/tooltip-toggle';
@@ -69,3 +72,6 @@
 @import '~molecules/wizard-step-download-list/wizard-step-download-list';
 
 @import 'content-manageble';
+
+@import '~molecules/article-description-list/article-description-list';
+

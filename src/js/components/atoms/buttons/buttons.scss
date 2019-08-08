@@ -48,6 +48,16 @@ input[type="submit"] {
         padding-top: $buildingUnit;
         padding-bottom: $buildingUnit;
     }
+
+    &[disabled] {
+        background-color: $colorGrayMedium;
+        color: $colorWhite;
+
+        &:hover {
+            background-color: $colorGrayMedium;
+            color: $colorWhite;
+        }
+    }
 }
 
 .button--primary {
@@ -88,6 +98,7 @@ input[type="submit"] {
 .button--secondary {
     background: transparent;
     border: 2px solid $um-blue;
+    font-weight: 600;
     padding-top: ($buildingUnit * 0.75) - 2;
     padding-bottom: ($buildingUnit * 0.75) - 2;
     color: $um-blue;
@@ -99,6 +110,17 @@ input[type="submit"] {
     &:hover,
     &:focus {
         border: 2px solid transparent;
+    }
+
+    &[disabled] {
+        background-color: transparent;
+        border-color: currentColor;
+        color: $colorGrayMedium;
+
+        &:hover {
+            background-color: transparent;
+            color: $colorGrayMedium;
+        }
     }
 }
 

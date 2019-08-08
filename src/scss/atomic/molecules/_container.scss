@@ -45,16 +45,3 @@
         }
     }
 }
-
-.hero--products-application {
-    .container{
-        margin: 0 auto;
-        padding: ($buildingUnit * 5) ($buildingUnit * 1) ($buildingUnit * 5) ($buildingUnit * 1);
-        @include min-tablet() {
-            padding: ($buildingUnit * 5) ($buildingUnit * 2) ($buildingUnit * 5) ($buildingUnit * 2);
-        }
-        @include min-desktop() {
-            padding: $buildingUnit * 5;
-        }
-    }
-}

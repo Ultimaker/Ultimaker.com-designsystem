@@ -1,4 +1,4 @@
-import { toughPLA } from 'components/atoms/c-image/data/examples/c-image-tough-pla';
+import { tinyCar } from 'components/atoms/c-image/data/examples/c-image-tiny-car';
 
 export const noLabels = {
     clickEvent: {
@@ -12,9 +12,9 @@ export const noLabels = {
         type: 'AnalyticalEvent',
     },
     description:
-        'You know that 3D printing will save money and accelerate development. But introducing a new pilot can be a daunting process – especially if stakeholders are skeptical. Thankfully this free checklist does the heavy lifting.',
-    image: toughPLA,
-    title: 'How to successfully introduce 3D printing in your business',
+        'IMI Precision Engineering, a world leader in motion and fluid control technologies, is a company dedicated to creating solutions that provide speed and precision for customer machinery. Using the Ultimaker S5 for in-house additive manufacturing, their team was able to save time and money on low-volume pieces, while also reducing energy consumption and enhancing production line performance.',
+    image: tinyCar,
+    title: 'Reducing costs and improving efficiency with the Ultimaker S5',
     type: 'CardArticle',
     url:
         'https://3d.ultimaker.com/successful-introduction-checklist?utm_source=ultimaker.com&utm_medium=knowledge',

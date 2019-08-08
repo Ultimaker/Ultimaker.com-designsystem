@@ -30,7 +30,11 @@
     </template>
 
     <template v-for="filterCategory in filterCategories">
-        <filter-category v-bind="filterCategory" @filter-category-change="handleFilterCategoryChange" />
+        <filter-category
+            v-bind="filterCategory"
+            :activeFilters="activeFilters"
+            :eventChange="eventFilterCategoryChange"
+            @[eventFilterCategoryChange]="handleFilterCategoryChange" />
     </template>
 
     <transition-group class="list-section__container" tag="ul" @before-enter="beforeEnter"  @enter="enter">
