@@ -14,9 +14,6 @@ module.exports = {
     transformIgnorePatterns: [
         '/node_modules/(?!(@storybook/.*\\.vue$))'
     ],
-    testMatch: [
-        '**/test/?(*.)+(snapshots.spec).(ts|js)?(x)'
-    ],
     moduleFileExtensions: ['vue', 'ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     moduleDirectories: [
         'src',
