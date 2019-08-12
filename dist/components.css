@@ -5628,7 +5628,7 @@ dd {
       border-top: 0; } }
 
 /** @format */
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
+main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even) {
   background-color: #fafafa; }
 
 .overflow-container {
@@ -5959,55 +5959,6 @@ svg text {
 @media (min-width: 768px) {
   .brands__grid-cell {
     margin: 0; } }
-
-.general-content__image-wrapper {
-  max-width: 400px;
-  margin: 36px auto -60px auto; }
-
-.general-content__image {
-  width: 75%;
-  margin: 0 auto; }
-
-@media (min-width: 569px) {
-  .general-content__image-wrapper {
-    position: absolute;
-    left: 6px;
-    right: 12px;
-    bottom: -60px;
-    margin: auto;
-    padding: 0 6px; }
-  .general-content__image {
-    width: 100%;
-    margin: auto; } }
-
-.content-general {
-  margin-top: 60px; }
-  .content-general .flexgrid--gutter {
-    margin: 0; }
-
-.content-general__image {
-  order: 1;
-  margin: 0 auto 30px auto;
-  position: relative;
-  padding: 0 6px; }
-  @media (min-width: 768px) {
-    .content-general__image {
-      order: inherit;
-      margin: auto; } }
-
-.content-general__image-wrapper {
-  width: 75%;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .content-general__image-wrapper {
-      width: 100%; } }
-
-.content-general__content {
-  order: 2;
-  margin-bottom: -12px; }
-  @media (min-width: 768px) {
-    .content-general__content {
-      order: inherit; } }
 
 @media (min-width: 768px) {
   .tabbed-content__header {
@@ -6676,7 +6627,7 @@ main .overview:nth-child(even) {
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px);
   min-width: 125px;
   max-width: 70vw; }
-  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .general-content:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .general-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip {
+  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .table-compare__feature--no-tooltip {
@@ -6821,6 +6772,35 @@ because both families serve another purpose. Therefore the line-heights will be 
     .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
+
+.content-general {
+  margin-top: 60px; }
+  .content-general .flexgrid--gutter {
+    margin: 0; }
+
+.content-general__image {
+  order: 1;
+  margin: 0 auto 30px auto;
+  position: relative;
+  padding: 0 6px; }
+  @media (min-width: 768px) {
+    .content-general__image {
+      order: inherit;
+      margin: auto; } }
+
+.content-general__image-wrapper {
+  width: 75%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .content-general__image-wrapper {
+      width: 100%; } }
+
+.content-general__content {
+  order: 2;
+  margin-bottom: -12px; }
+  @media (min-width: 768px) {
+    .content-general__content {
+      order: inherit; } }
 
 /** @format */
 /** @format */

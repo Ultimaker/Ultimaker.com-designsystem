@@ -5086,7 +5086,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       border-top: 0; } }
 
 /** @format */
-.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
+.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .content-general:nth-child(even) {
   background-color: #fafafa; }
 
 .um-components .overflow-container {
@@ -5417,55 +5417,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 @media (min-width: 768px) {
   .um-components .brands__grid-cell {
     margin: 0; } }
-
-.um-components .general-content__image-wrapper {
-  max-width: 400px;
-  margin: 36px auto -60px auto; }
-
-.um-components .general-content__image {
-  width: 75%;
-  margin: 0 auto; }
-
-@media (min-width: 569px) {
-  .um-components .general-content__image-wrapper {
-    position: absolute;
-    left: 6px;
-    right: 12px;
-    bottom: -60px;
-    margin: auto;
-    padding: 0 6px; }
-  .um-components .general-content__image {
-    width: 100%;
-    margin: auto; } }
-
-.um-components .content-general {
-  margin-top: 60px; }
-  .um-components .content-general .flexgrid--gutter {
-    margin: 0; }
-
-.um-components .content-general__image {
-  order: 1;
-  margin: 0 auto 30px auto;
-  position: relative;
-  padding: 0 6px; }
-  @media (min-width: 768px) {
-    .um-components .content-general__image {
-      order: inherit;
-      margin: auto; } }
-
-.um-components .content-general__image-wrapper {
-  width: 75%;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .um-components .content-general__image-wrapper {
-      width: 100%; } }
-
-.um-components .content-general__content {
-  order: 2;
-  margin-bottom: -12px; }
-  @media (min-width: 768px) {
-    .um-components .content-general__content {
-      order: inherit; } }
 
 @media (min-width: 768px) {
   .um-components .tabbed-content__header {
@@ -6134,7 +6085,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px);
   min-width: 125px;
   max-width: 70vw; }
-  .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .general-content:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature, .um-components main .organism:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .ubr:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .examples:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .explore:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .case:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .brands:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .general-content:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .content-general:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip {
+  .um-components main .organism:nth-child(even) .table-compare__feature, .um-components main .slider-reveal:nth-child(even) .table-compare__feature, .um-components main .ubr:nth-child(even) .table-compare__feature, .um-components main .examples:nth-child(even) .table-compare__feature, .um-components main .explore:nth-child(even) .table-compare__feature, .um-components main .ecosystem:nth-child(even) .table-compare__feature, .um-components main .case:nth-child(even) .table-compare__feature, .um-components main .brands:nth-child(even) .table-compare__feature, .um-components main .tabbed-content:nth-child(even) .table-compare__feature, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature, .um-components main .content-general:nth-child(even) .table-compare__feature, .um-components main .organism:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .ubr:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .examples:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .explore:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .case:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .brands:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, .um-components main .content-general:nth-child(even) .table-compare__feature--no-tooltip {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .um-components .table-compare__feature--no-tooltip {
@@ -6279,6 +6230,35 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
+
+.um-components .content-general {
+  margin-top: 60px; }
+  .um-components .content-general .flexgrid--gutter {
+    margin: 0; }
+
+.um-components .content-general__image {
+  order: 1;
+  margin: 0 auto 30px auto;
+  position: relative;
+  padding: 0 6px; }
+  @media (min-width: 768px) {
+    .um-components .content-general__image {
+      order: inherit;
+      margin: auto; } }
+
+.um-components .content-general__image-wrapper {
+  width: 75%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .um-components .content-general__image-wrapper {
+      width: 100%; } }
+
+.um-components .content-general__content {
+  order: 2;
+  margin-bottom: -12px; }
+  @media (min-width: 768px) {
+    .um-components .content-general__content {
+      order: inherit; } }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;

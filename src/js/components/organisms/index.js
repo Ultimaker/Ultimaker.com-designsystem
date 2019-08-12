@@ -5,6 +5,7 @@ export { default as ArticleHeader } from 'organisms/article-header';
 export { default as Brands } from 'organisms/brands';
 export { default as Colors } from 'organisms/colors';
 export { default as ContentCover } from 'organisms/content-cover';
+export { default as ContentGeneral } from 'organisms/content-general';
 export { default as ContentHighlight } from 'organisms/content-highlight';
 export { default as CountrySelector } from 'organisms/country-selector';
 export { default as HeroArticle } from 'organisms/hero-article';
