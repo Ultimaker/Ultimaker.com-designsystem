@@ -4,7 +4,7 @@ import WithRender from './content-cover.vue.html';
 
 @WithRender
 @Component({
-    name: 'ContentCover'
+    name: 'ContentCover',
 })
 
 export class ContentCover extends Vue implements ContentCoverProps {
