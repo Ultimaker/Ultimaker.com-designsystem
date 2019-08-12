@@ -8,7 +8,7 @@ import WithRender from './tabbed-content.vue.html';
     name: 'TabbedContent',
 })
 
-export default class TabbedContent extends Vue implements TabbedContentInterface {
+export class TabbedContent extends Vue implements TabbedContentInterface {
     @Prop({ type: String, required: true }) title!: TabbedContentInterface['title'];
     @Prop({ type: Array, required: true }) tabs!: TabbedContentInterface['tabs'];
     @Prop({ type: Object }) ctas?: TabbedContentInterface['ctas'] | undefined;

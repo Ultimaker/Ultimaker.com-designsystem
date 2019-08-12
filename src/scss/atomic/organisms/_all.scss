@@ -1,6 +1,5 @@
 /** @format */
 
-
 @import 'organism';
 @import "overflow-container";
 @import "ubr";
@@ -9,9 +8,7 @@
 @import "ecosystem";
 @import "case";
 @import "brands";
-@import "tabbed-content";
 
-@import "~organisms/hero-product/hero-product";
 @import "preferences-bar";
 
 @import "~organisms/article-content/article-content";
@@ -21,6 +18,7 @@
 
 @import '~organisms/content-highlight/content-highlight';
 @import '~organisms/hero-article/hero-article';
+@import "~organisms/hero-product/hero-product";
 @import '~organisms/overview/overview';
 @import '~organisms/page-footer/page-footer';
 @import '~organisms/page-header/page-header';
@@ -31,3 +29,4 @@
 @import '~organisms/hero-basic/hero-basic';
 @import "~organisms/content-general/content-general";
 @import "~organisms/overview-ubr/overview-ubr";
+@import "~organisms/tabbed-content/tabbed-content";
