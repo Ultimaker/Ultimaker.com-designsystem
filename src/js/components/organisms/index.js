@@ -15,3 +15,5 @@ export { default as PageHeader } from 'organisms/page-header';
 export { default as SearchResults } from 'organisms/search-results';
 export { default as TableCompare } from 'organisms/table-compare';
 export { default as TabbedTable } from 'organisms/tabbed-table';
+export { default as ContentCover } from 'organisms/content-cover';
+
