@@ -1,4 +1,3 @@
-export { default as BrandsLarge } from 'organisms-page/brands-large';
 export { default as Colors } from 'organisms-page/../organisms/colors';
 export { default as HeroBasic } from 'organisms-page/hero-basic';
 export { default as HeroCover } from 'organisms-page/hero-cover';
