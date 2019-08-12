@@ -1,16 +1,10 @@
 import blockIconMock from '../../../molecules/block-icon/data/block-icon.data';
 
-export default (amountOfItems: number) => {
-    const blockIconMocks: any[] = [];
-
-    for (let i = 0; i < amountOfItems; i += 1) {
-        blockIconMocks.push(blockIconMock);
-    }
-
-    return {
+export const data = {
+    default: {
         title: 'Lorem ipsum dolor sit amet',
         subtitle: 'Architecto deleniti, et vel eum quam.',
-        items: blockIconMocks,
+        items: [blockIconMock, blockIconMock, blockIconMock],
         ctas: {
             type: 'CtaBlock',
             ctas: [
@@ -27,5 +21,5 @@ export default (amountOfItems: number) => {
             ],
         },
         type: 'overview-ubr',
-    };
+    },
 };

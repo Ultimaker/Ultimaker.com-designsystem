@@ -6,7 +6,7 @@ import subNavigationKnobs from '../../organisms/subnavigation/subnavigation.stor
 import heroCoverKnobs from '../../organisms/hero-cover/hero-cover.knobs.stories';
 import tabbedContentKnobs from '../../organisms/tabbed-content/tabbed-content.knobs.stories';
 import tabbedSequenceKnobs from '../../organisms/tabbed-sequence/tabbed-sequence.knobs.stories';
-import ubrOverview from 'src/js/components/organisms-page/overview-ubr/data/overview-ubr.data';
+import ubrOverview from 'src/js/components/organisms/overview-ubr/data/overview-ubr.data';
 
 import { cardProducts } from 'organisms/overview/data/examples/card-products';
 
