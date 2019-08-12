@@ -19,3 +19,4 @@ export { default as SearchResults } from 'organisms/search-results';
 export { default as TabbedTable } from 'organisms/tabbed-table';
 export { default as TableCompare } from 'organisms/table-compare';
 export { default as OverviewUbr } from 'organisms/overview-ubr';
+export { default as TabbedContent } from 'organisms/tabbed-content';
