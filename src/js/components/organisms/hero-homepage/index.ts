@@ -1,5 +1,5 @@
 /** @format */
 
-import HeroHome from './hero-home';
+import HeroHomepage from './hero-homepage';
 
-export default HeroHome;
+export default HeroHomepage;
