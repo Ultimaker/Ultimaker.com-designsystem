@@ -14,6 +14,6 @@ export const data = {
             type: 'ContentButton',
             url: '/',
             label: 'Watch video',
-        }
+        },
     },
 };

@@ -12,10 +12,10 @@ const getStory = (type) => () => {
 
     return {
         props: {
-            title: { default: knobs.title},
+            title: { default: knobs.title },
             description: { default: knobs.description },
             image: { default: knobs.image },
-            cta: { default: knobs.cta },     
+            cta: { default: knobs.cta },
         },
         template: require('./content-cover.html'),
     };
