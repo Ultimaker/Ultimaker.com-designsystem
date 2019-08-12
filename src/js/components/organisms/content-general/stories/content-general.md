@@ -1,4 +1,5 @@
-# General content
+<!-- @format -->
+# Content General
 
 Used to display short copy and an image to highlight a specific topic.
 It's possible to flip the layout on larger screens.
@@ -7,7 +8,7 @@ Should contain at least a headline, some short copy and an image. Displays best 
 
 ## Photography guidelines
 
-Photography of the general content image should be in the highest dimensions per breakpoint.
+Photography of the condtent general image should be in the highest dimensions per breakpoint.
 
 ### Sizes full width image:
 - 400 px × 400 px *(small screens)*
