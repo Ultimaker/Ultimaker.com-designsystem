@@ -7,7 +7,7 @@ import WithRender from './hero-cover.vue.html';
     name: 'hero-cover',
 })
 
-export default class HeroCover extends Vue implements IHeroCover {
+export class HeroCover extends Vue implements IHeroCover {
     @Prop({ type: String, required: true }) title!: IHeroCover['title'];
     @Prop({ type: String, required: true }) description!: IHeroCover['description'];
     @Prop({ type: Object }) ctas?: IHeroCover['ctas'] | undefined;

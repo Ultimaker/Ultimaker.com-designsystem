@@ -1,0 +1,43 @@
+/** @format */
+
+.hero--cover {
+    @extend %reset-last-margin;
+    position: relative;
+    padding-bottom: $buildingUnit * 5;
+
+    &-reset p:last-child {
+        margin-bottom: 0;
+    }
+
+    .copy--intro,
+    .link--large {
+        color: $colorWhite;
+    }
+}
+
+.hero-cover__headline {
+    color: $colorWhite;
+}
+
+.hero-cover__image--full {
+    @include object-fit(cover);
+}
+
+.hero-cover__image--overlay {
+    background-color: rgba($colorBlack, 0.3);
+}
+
+.hero-cover__image--full,
+.hero-cover__image--overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-cover__image--full,
+.hero-cover__image--overlay,
+.hero--cover__container {
+    min-height: 320px;
+}
