@@ -1,8 +1,6 @@
 /** @format */
 
-$headerHeight: 60px;
-
-.hero-home {
+.hero-homepage {
     position: relative;
 
     // semi transparent backdrop in front of the image.
@@ -18,7 +16,7 @@ $headerHeight: 60px;
     }
 }
 
-.hero-home__content {
+.hero-homepage__content {
     align-items: center;
     color: $colorWhite;
     display: flex;
@@ -26,27 +24,38 @@ $headerHeight: 60px;
     justify-content: center;
     margin: 0 auto;
     max-width: 1000px;
-    min-height: calc(100vh - #{$headerHeight});
+    min-height: calc(100vh - 60px); // viewport height - height of the header
     padding: 5 * $buildingUnit 2 * $buildingUnit;
     text-align: center;
 }
 
-.hero-home__title {
-    font-size: 54px;
+.hero-homepage__title {
+    font-size: 32px;
     font-weight: 500;
-    line-height: 1.1111;
-    margin: 0 0 6 * $buildingUnit;
-    max-width: 678px;
-}
-
-.hero-home__description {
-    font-size: 2 * $buildingUnit;
-    line-height: 1.25;
+    line-height: 1.125;
     margin: 0 0 4 * $buildingUnit;
-    max-width: 852px;
+
+    @include min-desktop {
+        font-size: 54px;
+        line-height: 1.1111;
+        margin: 0 0 6 * $buildingUnit;
+        max-width: 678px;
+    }
 }
 
-.hero-home__image {
+.hero-homepage__description {
+    font-size: 16px;
+    margin: 0 0 3 * $buildingUnit;
+
+    @include min-desktop {
+        font-size: 24px;
+        line-height: 1.25;
+        margin: 0 0 4 * $buildingUnit;
+        max-width: 852px;
+    }
+}
+
+.hero-homepage__image {
     height: 100%;
     left: 0;
     object-fit: cover;

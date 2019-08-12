@@ -3,5 +3,6 @@
 export default {
     title: '',
     description: '',
-    imageUrl: '',
+    image: {},
+    ctas: {},
 };

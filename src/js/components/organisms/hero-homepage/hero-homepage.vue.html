@@ -1,14 +1,16 @@
-<div class="hero-home">
-    <div class="hero-home__content">
-        <h1 class="hero-home__title">
+<div class="hero-homepage">
+    <div class="hero-homepage__content">
+        <h1 class="hero-homepage__title">
             {{ title }}
         </h1>
-        <picture role="presentation">
+        <picture role="presentation" v-if="image">
             <source :srcset="srcSetWebP" type="image/webp" />
             <source :srcset="srcSet" />
-            <img :src="imageUrl" alt="" class="hero-home__image" />
+            <img :src="image.url" alt="" class="hero-homepage__image" />
         </picture>
-        <p class="hero-home__description">{{ description }}</p>
-        <button class="button button--primary">Meet the Ultimaker S5</button>
+        <p class="hero-homepage__description" v-if="description">
+            {{ description }}
+        </p>
+        <cta-block :ctas="ctas.ctas" v-if="ctas" />
     </div>
 </div>
