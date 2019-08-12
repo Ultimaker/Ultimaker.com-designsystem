@@ -1,4 +1,4 @@
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 import { PageHeaderProps } from './page-header.models';
 import WithRender from './page-header.vue.html';
 
@@ -15,6 +15,7 @@ export class PageHeader extends Vue implements PageHeaderProps {
     @Prop({ type: Object, required: false }) cta!: PageHeaderProps['cta'];
     @Prop({ type: Object, required: false }) search!: PageHeaderProps['search'];
     @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
+    @Prop({ type: String, required: false }) language?: PageHeaderProps['language'];
 
     assistUsed: boolean = false;
     viewportUtil: any = new ViewportUtility();

@@ -1,4 +1,4 @@
-import { Vue, Component, Prop } from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 import { PageFooterProps } from './page-footer.models';
 import WithRender from './page-footer.vue.html';
 
@@ -13,4 +13,5 @@ export class PageFooter extends Vue implements PageFooterProps {
     @Prop({ type: Array, required: true }) legalNavigation!: PageFooterProps['legalNavigation'];
     @Prop({ type: String, required: true }) copyrightLabel!: PageFooterProps['copyrightLabel'];
     @Prop({ type: Object, required: true }) country!: object;
+    @Prop({ type: String, required: false }) language?: PageFooterProps['language'];
 }
