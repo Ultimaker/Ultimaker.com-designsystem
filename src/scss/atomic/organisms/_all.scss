@@ -13,7 +13,7 @@
 @import "general-content";
 @import "content-general";
 @import "tabbed-content";
-@import "content-cover";
+
 @import "~organisms/hero-product/hero-product";
 @import "preferences-bar";
 
@@ -21,11 +21,13 @@
 @import "~organisms/article-header/article-header";
 @import "~organisms/brands/brands2";
 @import "~organisms/colors/colors";
-@import "~organisms/content-highlight/content-highlight";
-@import "~organisms/hero-article/hero-article";
-@import "~organisms/overview/overview";
-@import "~organisms/page-footer/page-footer";
-@import "~organisms/page-header/page-header";
-@import "~organisms/search-results/search-results";
-@import "~organisms/tabbed-table/tabbed-table";
-@import "~organisms/table-compare/table-compare";
+
+@import '~organisms/content-highlight/content-highlight';
+@import '~organisms/hero-article/hero-article';
+@import '~organisms/overview/overview';
+@import '~organisms/page-footer/page-footer';
+@import '~organisms/page-header/page-header';
+@import '~organisms/tabbed-table/tabbed-table';
+@import '~organisms/table-compare/table-compare';
+@import '~organisms/search-results/search-results';
+@import '~organisms/content-cover/content-cover';

@@ -6,4 +6,3 @@ export { default as Tabbedcontent } from 'organisms-page/tabbed-content';
 
 export { default as OverviewUBR } from 'organisms-page/overview-ubr';
 export { default as ContentGeneral } from 'organisms-page/content-general';
-export { default as ContentCover } from 'organisms-page/content-cover';
