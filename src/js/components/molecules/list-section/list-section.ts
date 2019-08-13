@@ -76,10 +76,10 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
 
     get filteredCards(): CardArticle[] {
         if (!this.activeFilterCategories.length) {
-            return <CardArticle[]>this.cards;
+            return <CardArticle[]> this.cards;
         }
 
-        return getFilteredCardsFromActiveFilterCategories(<CardArticle[]>this.cards, this.activeFilterCategories);
+        return getFilteredCardsFromActiveFilterCategories(<CardArticle[]> this.cards, this.activeFilterCategories);
     }
 
     @Watch('cards')
