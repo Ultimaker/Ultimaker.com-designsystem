@@ -5089,6 +5089,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
+<<<<<<< HEAD
 .um-components .hero__image {
   position: relative;
   width: 75%;
@@ -5097,6 +5098,24 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
+=======
+.um-components .hero--text .content--rich p, .um-components .hero--text .content--rich strong, .um-components .hero--text .content--rich .tablist__section .tablist__item, .um-components .tablist__section .hero--text .content--rich .tablist__item, .um-components .hero--text .content--rich .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .hero--text .content--rich .tablist__item, .um-components .hero--text .content--rich ul, .um-components .hero--text .content--rich li {
+  max-width: 768px; }
+
+.um-components .hero--text .content--rich * + h2 {
+  margin-top: 30px;
+  margin-bottom: 23px; }
+  @media (min-width: 768px) {
+    .um-components .hero--text .content--rich * + h2 {
+      margin-top: 36px;
+      margin-bottom: 29px; } }
+
+.um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q {
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q {
+      margin-top: 35px; } }
+>>>>>>> chore(build): add build
 
 .um-components .hero--cover {
   position: relative;
@@ -6265,6 +6284,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .search-results .search-bar-page__input {
       width: calc(50%); } }
 
+<<<<<<< HEAD
 .um-components .content-cover--cover {
   position: relative;
   overflow: hidden;
@@ -6309,6 +6329,17 @@ because both families serve another purpose. Therefore the line-heights will be 
 @media (min-width: 768px) {
   .um-components .content-cover__link.link, .um-components .content-cover__link.toggle, .um-components .content-cover__link.overflow-container__link:hover, .um-components .content-cover__link.overflow-container__link.exact-active {
     color: #fff; } }
+=======
+/** @format */
+.um-components .hero__image {
+  position: relative;
+  width: 75%;
+  margin: 0 auto 30px; }
+  @media (min-width: 569px) {
+    .um-components .hero__image {
+      width: 100%;
+      margin: 0 auto 0 30px; } }
+>>>>>>> chore(build): add build
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
