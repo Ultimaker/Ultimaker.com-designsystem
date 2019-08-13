@@ -1,6 +1,6 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
-import { TabbedContent as TabbedContentInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/tabbedContent/TabbedContent';
+import { TabbedContentProps } from './tabbed-content.models';
 import WithRender from './tabbed-content.vue.html';
 
 @WithRender
@@ -8,10 +8,10 @@ import WithRender from './tabbed-content.vue.html';
     name: 'TabbedContent',
 })
 
-export class TabbedContent extends Vue implements TabbedContentInterface {
-    @Prop({ type: String, required: true }) title!: TabbedContentInterface['title'];
-    @Prop({ type: Array, required: true }) tabs!: TabbedContentInterface['tabs'];
-    @Prop({ type: Object }) ctas?: TabbedContentInterface['ctas'] | undefined;
-    @Prop({ type: String }) subtitle?: TabbedContentInterface['subtitle'] | undefined;
-    @Prop({ type: Boolean, required: false, default: false }) sequenced?: TabbedContentInterface['sequenced'];
+export class TabbedContent extends Vue implements TabbedContentProps {
+    @Prop({ type: String, required: true }) title!: TabbedContentProps['title'];
+    @Prop({ type: Array, required: true }) tabs!: TabbedContentProps['tabs'];
+    @Prop({ type: Object }) ctas?: TabbedContentProps['ctas'];
+    @Prop({ type: String }) subtitle?: TabbedContentProps['subtitle'];
+    @Prop({ type: Boolean, required: false, default: false }) sequenced?: TabbedContentProps['sequenced'];
 }

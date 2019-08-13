@@ -269,7 +269,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child, .content-cover--cover > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child, .hero--product .hero__link-list > :last-child, .content-cover--cover > :last-child, .tabbed-content > :last-child {
   margin-bottom: 0; }
 
 .examples .examples__link--large {
@@ -5628,7 +5628,7 @@ dd {
       border-top: 0; } }
 
 /** @format */
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even) {
+main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
   background-color: #fafafa; }
 
 .overflow-container {
@@ -5960,64 +5960,6 @@ svg text {
   .brands__grid-cell {
     margin: 0; } }
 
-@media (min-width: 768px) {
-  .tabbed-content__header {
-    margin: 0 auto; } }
-
-.tabbed-content__title {
-  position: relative;
-  margin-bottom: 24px;
-  text-align: center; }
-
-.tabbed-content__title + .tabbed-content__subtitle {
-  margin-top: 0;
-  margin-bottom: 24px; }
-
-.tabbed-content__subtitle {
-  position: relative;
-  text-align: center; }
-
-.hero--product .hero__products {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 18px; }
-  @media (min-width: 1025px) {
-    .hero--product .hero__products {
-      flex-direction: row; } }
-
-.hero--product .hero__products-item {
-  margin-bottom: 18px; }
-  .hero--product .hero__products-item:last-child {
-    margin-bottom: 0; }
-  @media (min-width: 1025px) {
-    .hero--product .hero__products-item {
-      margin-bottom: 0; }
-      .hero--product .hero__products-item--multiple:not(:last-child):after {
-        content: '';
-        width: 1px;
-        height: 36px;
-        border-right: 1px solid #e3e3e3;
-        margin-left: 12px;
-        margin-right: -12px; } }
-
-.hero--product .hero__link-list {
-  margin-top: 33px;
-  margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .hero--product .hero__link-list {
-      margin-top: 46px; } }
-
-.hero--product .hero__linklist {
-  margin-top: 42px; }
-  @media (min-width: 768px) {
-    .hero--product .hero__linklist {
-      margin-top: 48px; } }
-  .hero--product .hero__linklist .hero__linklist-item:last-child .hero__linklist-link {
-    margin-bottom: 0; }
-
-.hero--product .hero__linklist-link {
-  margin-bottom: 6px; }
-
 .preferences-bar {
   transform: translateY(0); }
   .preferences-bar__button, .preferences-bar .settings-selector__edit-button {
@@ -6323,6 +6265,47 @@ because both families serve another purpose. Therefore the line-heights will be 
   width: 100%;
   height: 100%; }
 
+.hero--product .hero__products {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px; }
+  @media (min-width: 1025px) {
+    .hero--product .hero__products {
+      flex-direction: row; } }
+
+.hero--product .hero__products-item {
+  margin-bottom: 18px; }
+  .hero--product .hero__products-item:last-child {
+    margin-bottom: 0; }
+  @media (min-width: 1025px) {
+    .hero--product .hero__products-item {
+      margin-bottom: 0; }
+      .hero--product .hero__products-item--multiple:not(:last-child):after {
+        content: '';
+        width: 1px;
+        height: 36px;
+        border-right: 1px solid #e3e3e3;
+        margin-left: 12px;
+        margin-right: -12px; } }
+
+.hero--product .hero__link-list {
+  margin-top: 33px;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .hero--product .hero__link-list {
+      margin-top: 46px; } }
+
+.hero--product .hero__linklist {
+  margin-top: 42px; }
+  @media (min-width: 768px) {
+    .hero--product .hero__linklist {
+      margin-top: 48px; } }
+  .hero--product .hero__linklist .hero__linklist-item:last-child .hero__linklist-link {
+    margin-bottom: 0; }
+
+.hero--product .hero__linklist-link {
+  margin-bottom: 6px; }
+
 /** @format */
 /** @format */
 /*
@@ -6627,7 +6610,7 @@ main .overview:nth-child(even) {
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px);
   min-width: 125px;
   max-width: 70vw; }
-  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip {
+  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .ubr:nth-child(even) .table-compare__feature, main .examples:nth-child(even) .table-compare__feature, main .explore:nth-child(even) .table-compare__feature, main .ecosystem:nth-child(even) .table-compare__feature, main .case:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .ubr:nth-child(even) .table-compare__feature--no-tooltip, main .examples:nth-child(even) .table-compare__feature--no-tooltip, main .explore:nth-child(even) .table-compare__feature--no-tooltip, main .ecosystem:nth-child(even) .table-compare__feature--no-tooltip, main .case:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip {
     background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
 
 .table-compare__feature--no-tooltip {
@@ -6804,6 +6787,23 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 /** @format */
 /* no unique css required as of yet */
+/** @format */
+@media (min-width: 768px) {
+  .tabbed-content__header {
+    margin: 0 auto; } }
+
+.tabbed-content__title {
+  position: relative;
+  margin-bottom: 24px;
+  text-align: center; }
+
+.tabbed-content__title + .tabbed-content__subtitle {
+  margin-top: 0;
+  margin-bottom: 24px; }
+
+.tabbed-content__subtitle {
+  position: relative;
+  text-align: center; }
 
 /** @format */
 /** @format */
