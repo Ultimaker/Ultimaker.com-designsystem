@@ -268,7 +268,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .tabbed-content > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .hero--article > :last-child, .um-components .content-cover--cover > :last-child {
+.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .tabbed-content > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .hero--article > :last-child, .um-components .content-cover--cover > :last-child {
   margin-bottom: 0; }
 
 .um-components .examples .examples__link--large {
@@ -5089,65 +5089,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
-<<<<<<< HEAD
-.um-components .hero__image {
-  position: relative;
-  width: 75%;
-  margin: 0 auto 30px; }
-  @media (min-width: 569px) {
-    .um-components .hero__image {
-      width: 100%;
-      margin: 0 auto 0 30px; } }
-=======
-.um-components .hero--text .content--rich p, .um-components .hero--text .content--rich strong, .um-components .hero--text .content--rich .tablist__section .tablist__item, .um-components .tablist__section .hero--text .content--rich .tablist__item, .um-components .hero--text .content--rich .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .hero--text .content--rich .tablist__item, .um-components .hero--text .content--rich ul, .um-components .hero--text .content--rich li {
-  max-width: 768px; }
-
-.um-components .hero--text .content--rich * + h2 {
-  margin-top: 30px;
-  margin-bottom: 23px; }
-  @media (min-width: 768px) {
-    .um-components .hero--text .content--rich * + h2 {
-      margin-top: 36px;
-      margin-bottom: 29px; } }
-
-.um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q {
-  margin-top: 30px; }
-  @media (min-width: 768px) {
-    .um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q {
-      margin-top: 35px; } }
->>>>>>> chore(build): add build
-
-.um-components .hero--cover {
-  position: relative;
-  padding-bottom: 60px; }
-  .um-components .hero--cover-reset p:last-child, .um-components .hero--cover-reset strong:last-child, .um-components .hero--cover-reset .tablist__section .tablist__item:last-child, .um-components .tablist__section .hero--cover-reset .tablist__item:last-child, .um-components .hero--cover-reset .examples .examples__tabs .tablist__item:last-child, .um-components .examples .examples__tabs .hero--cover-reset .tablist__item:last-child {
-    margin-bottom: 0; }
-  .um-components .hero--cover .copy--intro,
-  .um-components .hero--cover .link--large {
-    color: #fff; }
-
-.um-components .hero-cover__headline {
-  color: #fff; }
-
-.um-components .hero-cover__image--full {
-  object-fit: cover; }
-
-.um-components .hero-cover__image--overlay {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.um-components .hero-cover__image--full,
-.um-components .hero-cover__image--overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%; }
-
-.um-components .hero-cover__image--full,
-.um-components .hero-cover__image--overlay,
-.um-components .hero--cover__container {
-  min-height: 320px; }
-
 .um-components .overflow-container {
   position: relative;
   display: flex;
@@ -6284,7 +6225,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .search-results .search-bar-page__input {
       width: calc(50%); } }
 
-<<<<<<< HEAD
 .um-components .content-cover--cover {
   position: relative;
   overflow: hidden;
@@ -6329,7 +6269,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 @media (min-width: 768px) {
   .um-components .content-cover__link.link, .um-components .content-cover__link.toggle, .um-components .content-cover__link.overflow-container__link:hover, .um-components .content-cover__link.overflow-container__link.exact-active {
     color: #fff; } }
-=======
+
 /** @format */
 .um-components .hero__image {
   position: relative;
@@ -6339,7 +6279,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
->>>>>>> chore(build): add build
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
