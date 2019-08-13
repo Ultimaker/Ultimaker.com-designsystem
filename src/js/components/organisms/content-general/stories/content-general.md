@@ -8,7 +8,7 @@ Should contain at least a headline, some short copy and an image. Displays best 
 
 ## Photography guidelines
 
-Photography of the condtent general image should be in the highest dimensions per breakpoint.
+Photography of the content general image should be in the highest dimensions per breakpoint.
 
 ### Sizes full width image:
 - 400 px × 400 px *(small screens)*
