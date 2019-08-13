@@ -13,7 +13,7 @@ export class ContentCover extends Vue implements ContentCoverProps {
     @Prop({ type: Object }) cta?: ContentCoverProps['cta'] | undefined;
     @Prop({ type: Object }) image?: ContentCoverProps['image'] | undefined;
 
-    getClassNames(type): string {
+    getClassNames(type: string): string {
         return {
             ContentButton: 'content-cover__button button',
             ContentLink: 'content-cover__link link link--medium',
