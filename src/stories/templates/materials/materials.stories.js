@@ -4,7 +4,7 @@ import { data as header } from 'src/js/components/organisms/page-header/data/pag
 import { data as footer } from 'src/js/components/organisms/page-footer/data/page-footer.data';
 import subNavigationKnobs from '../../organisms/subnavigation/subnavigation.stories.knobs';
 import heroCoverKnobs from '../../organisms/hero-cover/hero-cover.knobs.stories';
-import tabbedContentKnobs from '../../organisms/tabbed-content/tabbed-content.knobs.stories';
+import { data as tabbedContent } from 'src/js/components/organisms/tabbed-content/data/tabbed-content.data';
 import tabbedSequenceKnobs from '../../organisms/tabbed-sequence/tabbed-sequence.knobs.stories';
 import ubrOverview from 'src/js/components/organisms/overview-ubr/data/overview-ubr.data';
 
@@ -20,7 +20,7 @@ storiesOf('templates|materials', module)
                 subNavigationKnobs: { default: subNavigationKnobs().subnavigation },
                 heroCover: { default: heroCoverKnobs().heroCover },
                 overview: { default: cardProducts },
-                tabbedContent: { default: tabbedContentKnobs().TabbedContent },
+                tabbedContent: { default: tabbedContent.default },
                 tabbedSequence: { default: tabbedSequenceKnobs().TabbedSequence },
                 ubrOverview: { default: ubrOverview(4) },
             },

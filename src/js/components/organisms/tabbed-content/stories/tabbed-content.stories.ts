@@ -15,7 +15,7 @@ const getStory = (type) => () => {
             title: { default: knobs.title },
             subtitle: { default: knobs.subtitle },
             sequenced: { default: knobs.sequenced },
-            tabs: { default: knobs.tabs }, 
+            tabs: { default: knobs.tabs },
         },
         template: require('./tabbed-content.html'),
     };

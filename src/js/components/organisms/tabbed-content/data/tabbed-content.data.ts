@@ -22,16 +22,16 @@ export const data = {
                     resizeBehavior: 'fill',
                     focusArea: 'center',
                     backgroundColor: null,
-                    mimeType: 'png'
+                    mimeType: 'png',
                 },
                 cta: {
                     type: 'YoutubeLink',
                     label: 'Watch video',
-                    youtubeId: 'MAovMMKq_ak'
+                    youtubeId: 'MAovMMKq_ak',
                 },
-                reversed: false
+                reversed: false,
             },
-        },{
+        }, {
             type: 'Tab',
             label: 'Label one',
             content: {
@@ -47,14 +47,14 @@ export const data = {
                     resizeBehavior: 'fill',
                     focusArea: 'center',
                     backgroundColor: null,
-                    mimeType: 'png'
+                    mimeType: 'png',
                 },
                 cta: {
                     type: 'YoutubeLink',
                     label: 'Watch video',
-                    youtubeId: 'MAovMMKq_ak'
+                    youtubeId: 'MAovMMKq_ak',
                 },
-                reversed: false
+                reversed: false,
             },
         }],
     },
@@ -79,16 +79,16 @@ export const data = {
                     resizeBehavior: 'fill',
                     focusArea: 'center',
                     backgroundColor: null,
-                    mimeType: 'png'
+                    mimeType: 'png',
                 },
                 cta: {
                     type: 'YoutubeLink',
                     label: 'Watch video',
-                    youtubeId: 'MAovMMKq_ak'
+                    youtubeId: 'MAovMMKq_ak',
                 },
-                reversed: false
+                reversed: false,
             },
-        },{
+        }, {
             type: 'Tab',
             label: 'Label one',
             content: {
@@ -104,15 +104,15 @@ export const data = {
                     resizeBehavior: 'fill',
                     focusArea: 'center',
                     backgroundColor: null,
-                    mimeType: 'png'
+                    mimeType: 'png',
                 },
                 cta: {
                     type: 'YoutubeLink',
                     label: 'Watch video',
-                    youtubeId: 'MAovMMKq_ak'
+                    youtubeId: 'MAovMMKq_ak',
                 },
-                reversed: false
+                reversed: false,
             },
         }],
-    }
+    },
 };
