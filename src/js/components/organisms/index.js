@@ -1,5 +1,5 @@
-/** @format */
 
+/** @format */
 export { default as ArticleContent } from 'organisms/article-content';
 export { default as ArticleHeader } from 'organisms/article-header';
 export { default as Brands } from 'organisms/brands';
