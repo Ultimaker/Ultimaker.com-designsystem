@@ -17864,8 +17864,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-=======
 var _contentCover = __webpack_require__(424);
 
 Object.defineProperty(exports, 'default', {
@@ -17976,16 +17974,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _brandsLarge = __webpack_require__(427);
-
-Object.defineProperty(exports, 'BrandsLarge', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_brandsLarge).default;
-  }
-});
-
->>>>>>> chore(build): add build and fix linting
 var _colors = __webpack_require__(18);
 
 Object.defineProperty(exports, 'Colors', {
@@ -17995,11 +17983,7 @@ Object.defineProperty(exports, 'Colors', {
   }
 });
 
-<<<<<<< HEAD
-var _heroBasic = __webpack_require__(424);
-=======
-var _heroBasic = __webpack_require__(430);
->>>>>>> chore(build): add build and fix linting
+var _heroBasic = __webpack_require__(427);
 
 Object.defineProperty(exports, 'HeroBasic', {
   enumerable: true,
@@ -18008,20 +17992,7 @@ Object.defineProperty(exports, 'HeroBasic', {
   }
 });
 
-<<<<<<< HEAD
-var _heroCover = __webpack_require__(427);
-=======
-var _heroText = __webpack_require__(433);
-
-Object.defineProperty(exports, 'HeroText', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_heroText).default;
-  }
-});
-
-var _heroCover = __webpack_require__(436);
->>>>>>> chore(build): add build and fix linting
+var _heroCover = __webpack_require__(430);
 
 Object.defineProperty(exports, 'HeroCover', {
   enumerable: true,
@@ -18030,11 +18001,7 @@ Object.defineProperty(exports, 'HeroCover', {
   }
 });
 
-<<<<<<< HEAD
-var _subnavigation = __webpack_require__(430);
-=======
-var _subnavigation = __webpack_require__(439);
->>>>>>> chore(build): add build and fix linting
+var _subnavigation = __webpack_require__(433);
 
 Object.defineProperty(exports, 'Subnavigation', {
   enumerable: true,
@@ -18043,11 +18010,7 @@ Object.defineProperty(exports, 'Subnavigation', {
   }
 });
 
-<<<<<<< HEAD
-var _tabbedContent = __webpack_require__(435);
-=======
-var _tabbedContent = __webpack_require__(444);
->>>>>>> chore(build): add build and fix linting
+var _tabbedContent = __webpack_require__(438);
 
 Object.defineProperty(exports, 'Tabbedcontent', {
   enumerable: true,
@@ -18056,20 +18019,7 @@ Object.defineProperty(exports, 'Tabbedcontent', {
   }
 });
 
-<<<<<<< HEAD
-var _overviewUbr = __webpack_require__(438);
-=======
-var _pageDrawer = __webpack_require__(447);
-
-Object.defineProperty(exports, 'PageDrawer', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_pageDrawer).default;
-  }
-});
-
-var _overviewUbr = __webpack_require__(449);
->>>>>>> chore(build): add build and fix linting
+var _overviewUbr = __webpack_require__(441);
 
 Object.defineProperty(exports, 'OverviewUBR', {
   enumerable: true,
@@ -18078,11 +18028,7 @@ Object.defineProperty(exports, 'OverviewUBR', {
   }
 });
 
-<<<<<<< HEAD
-var _contentGeneral = __webpack_require__(441);
-=======
-var _contentGeneral = __webpack_require__(452);
->>>>>>> chore(build): add build and fix linting
+var _contentGeneral = __webpack_require__(444);
 
 Object.defineProperty(exports, 'ContentGeneral', {
   enumerable: true,
@@ -18091,18 +18037,6 @@ Object.defineProperty(exports, 'ContentGeneral', {
   }
 });
 
-<<<<<<< HEAD
-var _contentCover = __webpack_require__(444);
-
-Object.defineProperty(exports, 'ContentCover', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentCover).default;
-  }
-});
-
-=======
->>>>>>> chore(build): add build and fix linting
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
@@ -18116,67 +18050,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-var _heroBasic = __webpack_require__(425);
-=======
-var _brandsLarge = __webpack_require__(428);
-
-var _brandsLarge2 = _interopRequireDefault(_brandsLarge);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _brandsLarge2.default;
-
-/***/ }),
-/* 428 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    name: 'brands-large',
-    template: __webpack_require__(429),
-    props: {
-        title: {
-            type: String,
-            required: true
-        },
-        text: {
-            type: String
-        },
-        brands: {
-            type: Array,
-            required: true
-        },
-        contentLink: {
-            type: Object
-        }
-    }
-};
-
-/***/ }),
-/* 429 */
-/***/ (function(module, exports) {
-
-module.exports = "<article class=\"brands brands--large\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\">{{ title }}</h2>\n        <p class=\"brands__body\" v-if=\"text\">{{ text }}</p>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :url=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>\n";
-
-/***/ }),
-/* 430 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _heroBasic = __webpack_require__(431);
->>>>>>> chore(build): add build and fix linting
+var _heroBasic = __webpack_require__(428);
 
 var _heroBasic2 = _interopRequireDefault(_heroBasic);
 
@@ -18185,11 +18059,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroBasic2.default;
 
 /***/ }),
-<<<<<<< HEAD
-/* 425 */
-=======
-/* 431 */
->>>>>>> chore(build): add build and fix linting
+/* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18203,11 +18073,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _heroBasicVue = __webpack_require__(426);
-=======
-var _heroBasicVue = __webpack_require__(432);
->>>>>>> chore(build): add build and fix linting
+var _heroBasicVue = __webpack_require__(429);
 
 var _heroBasicVue2 = _interopRequireDefault(_heroBasicVue);
 
@@ -18253,11 +18119,7 @@ HeroBasic = __decorate([_heroBasicVue2.default, (0, _vuePropertyDecorator.Compon
 exports.default = HeroBasic;
 
 /***/ }),
-<<<<<<< HEAD
-/* 426 */
-=======
-/* 432 */
->>>>>>> chore(build): add build and fix linting
+/* 429 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--basic organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('h1',{staticClass:"hero__title header-block__title--hero"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.subtitle)?_c('h2',{staticClass:"hero__subtitle header-block__subtitle--hero"},[_vm._v(_vm._s(_vm.subtitle))]):_vm._e()]),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
@@ -18274,10 +18136,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 427 */
-=======
-/* 433 */
+/* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18287,62 +18146,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroText = __webpack_require__(434);
-
-var _heroText2 = _interopRequireDefault(_heroText);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _heroText2.default;
-
-/***/ }),
-/* 434 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    name: 'hero-text',
-    template: __webpack_require__(435),
-    props: {
-        title: {
-            type: String,
-            required: false
-        },
-        contents: {
-            type: String,
-            required: true
-        }
-    }
-};
-
-/***/ }),
-/* 435 */
-/***/ (function(module, exports) {
-
-module.exports = "<article class=\"hero hero--text organism\" v-if=\"this.contents && contents.length\" >\n    <div class=\"container\">\n        <h1 v-if=\"title && title.length\">{{ title }}</h1>\n        <div class=\"hero__content content--rich\" v-html=\"contents\" />\n    </div>\n</article>\n\n";
-
-/***/ }),
-/* 436 */
->>>>>>> chore(build): add build and fix linting
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-var _heroCover = __webpack_require__(428);
-=======
-var _heroCover = __webpack_require__(437);
->>>>>>> chore(build): add build and fix linting
+var _heroCover = __webpack_require__(431);
 
 var _heroCover2 = _interopRequireDefault(_heroCover);
 
@@ -18351,11 +18155,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroCover2.default;
 
 /***/ }),
-<<<<<<< HEAD
-/* 428 */
-=======
-/* 437 */
->>>>>>> chore(build): add build and fix linting
+/* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18371,11 +18171,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _heroCoverVue = __webpack_require__(429);
-=======
-var _heroCoverVue = __webpack_require__(438);
->>>>>>> chore(build): add build and fix linting
+var _heroCoverVue = __webpack_require__(432);
 
 var _heroCoverVue2 = _interopRequireDefault(_heroCoverVue);
 
@@ -18430,11 +18226,7 @@ HeroCover = __decorate([_heroCoverVue2.default, (0, _vuePropertyDecorator.Compon
 exports.default = HeroCover;
 
 /***/ }),
-<<<<<<< HEAD
-/* 429 */
-=======
-/* 438 */
->>>>>>> chore(build): add build and fix linting
+/* 432 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--cover organism"},[_c('div',{staticClass:"hero-cover__image--full"},[(this.image)?_c('c-image',_vm._b({attrs:{"resize-behavior":"fill"}},'c-image',this.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"hero-cover__image--overlay"}),_vm._v(" "),_c('section',{staticClass:"hero-cover__container container"},[_c('div',{staticClass:"flexgrid__cell--xs-6 hero--cover-reset"},[_c('h1',{staticClass:"hero-cover__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"copy--intro"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary"}}):_vm._e()],1)])])}
@@ -18451,11 +18243,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 430 */
-=======
-/* 439 */
->>>>>>> chore(build): add build and fix linting
+/* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18465,11 +18253,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-var _subnavigation = __webpack_require__(431);
-=======
-var _subnavigation = __webpack_require__(440);
->>>>>>> chore(build): add build and fix linting
+var _subnavigation = __webpack_require__(434);
 
 var _subnavigation2 = _interopRequireDefault(_subnavigation);
 
@@ -18478,11 +18262,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _subnavigation2.default;
 
 /***/ }),
-<<<<<<< HEAD
-/* 431 */
-=======
-/* 440 */
->>>>>>> chore(build): add build and fix linting
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18496,11 +18276,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _overflowContainer = __webpack_require__(432);
-=======
-var _overflowContainer = __webpack_require__(441);
->>>>>>> chore(build): add build and fix linting
+var _overflowContainer = __webpack_require__(435);
 
 var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
 
@@ -18542,11 +18318,7 @@ Subnavigation = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = Subnavigation;
 
 /***/ }),
-<<<<<<< HEAD
-/* 432 */
-=======
-/* 441 */
->>>>>>> chore(build): add build and fix linting
+/* 435 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18556,11 +18328,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-var _overflowContainer = __webpack_require__(433);
-=======
-var _overflowContainer = __webpack_require__(442);
->>>>>>> chore(build): add build and fix linting
+var _overflowContainer = __webpack_require__(436);
 
 var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
 
@@ -18569,11 +18337,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _overflowContainer2.default;
 
 /***/ }),
-<<<<<<< HEAD
-/* 433 */
-=======
-/* 442 */
->>>>>>> chore(build): add build and fix linting
+/* 436 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18593,11 +18357,7 @@ var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
-<<<<<<< HEAD
-var _overflowContainerVue = __webpack_require__(434);
-=======
-var _overflowContainerVue = __webpack_require__(443);
->>>>>>> chore(build): add build and fix linting
+var _overflowContainerVue = __webpack_require__(437);
 
 var _overflowContainerVue2 = _interopRequireDefault(_overflowContainerVue);
 
@@ -18660,11 +18420,7 @@ OverflowContainer = __decorate([_overflowContainerVue2.default, (0, _vueProperty
 exports.default = OverflowContainer;
 
 /***/ }),
-<<<<<<< HEAD
-/* 434 */
-=======
-/* 443 */
->>>>>>> chore(build): add build and fix linting
+/* 437 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.items)?_c('nav',{ref:"subNav",staticClass:"overflow-container overflow-container--fixed",attrs:{"aria-label":"sub items"}},[(_vm.items)?_c('ul',{staticClass:"overflow-container__list",class:_vm.isTouch ? 'touch' : '',attrs:{"role":"presentation"}},_vm._l((_vm.items),function(item,index){return _c('li',{ref:"listItems",refInFor:true,staticClass:"overflow-container__item"},[_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false))],1)}),0):_vm._e()]):_vm._e()}
@@ -18681,11 +18437,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 435 */
-=======
-/* 444 */
->>>>>>> chore(build): add build and fix linting
+/* 438 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18695,11 +18447,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-var _tabbedContent = __webpack_require__(436);
-=======
-var _tabbedContent = __webpack_require__(445);
->>>>>>> chore(build): add build and fix linting
+var _tabbedContent = __webpack_require__(439);
 
 var _tabbedContent2 = _interopRequireDefault(_tabbedContent);
 
@@ -18708,11 +18456,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tabbedContent2.default;
 
 /***/ }),
-<<<<<<< HEAD
-/* 436 */
-=======
-/* 445 */
->>>>>>> chore(build): add build and fix linting
+/* 439 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18726,11 +18470,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _tabbedContentVue = __webpack_require__(437);
-=======
-var _tabbedContentVue = __webpack_require__(446);
->>>>>>> chore(build): add build and fix linting
+var _tabbedContentVue = __webpack_require__(440);
 
 var _tabbedContentVue2 = _interopRequireDefault(_tabbedContentVue);
 
@@ -18776,11 +18516,7 @@ TabbedContent = __decorate([_tabbedContentVue2.default, (0, _vuePropertyDecorato
 exports.default = TabbedContent;
 
 /***/ }),
-<<<<<<< HEAD
-/* 437 */
-=======
-/* 446 */
->>>>>>> chore(build): add build and fix linting
+/* 440 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism tabbed-content"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),(_vm.tabs && _vm.tabs.length)?_c('Tabs',{attrs:{"tabs":_vm.tabs,"sequenced":_vm.sequenced}}):_vm._e(),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],1)])}
@@ -18797,10 +18533,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 438 */
-=======
-/* 447 */
+/* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18810,78 +18543,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pageDrawer = __webpack_require__(448);
-
-var _pageDrawer2 = _interopRequireDefault(_pageDrawer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _pageDrawer2.default;
-
-/***/ }),
-/* 448 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var PageDrawer = function (_Vue) {
-    _inherits(PageDrawer, _Vue);
-
-    function PageDrawer() {
-        _classCallCheck(this, PageDrawer);
-
-        return _possibleConstructorReturn(this, (PageDrawer.__proto__ || Object.getPrototypeOf(PageDrawer)).apply(this, arguments));
-    }
-
-    return PageDrawer;
-}(_vuePropertyDecorator.Vue);
-PageDrawer = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'page-drawer',
-    template: '<section class="drawer" v-size-emitter="\'drawer\'"><slot></slot></section>'
-})], PageDrawer);
-exports.default = PageDrawer;
-
-/***/ }),
-/* 449 */
->>>>>>> chore(build): add build and fix linting
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-var _overviewUbr = __webpack_require__(439);
-=======
-var _overviewUbr = __webpack_require__(450);
->>>>>>> chore(build): add build and fix linting
+var _overviewUbr = __webpack_require__(442);
 
 var _overviewUbr2 = _interopRequireDefault(_overviewUbr);
 
@@ -18890,11 +18552,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _overviewUbr2.default;
 
 /***/ }),
-<<<<<<< HEAD
-/* 439 */
-=======
-/* 450 */
->>>>>>> chore(build): add build and fix linting
+/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18908,11 +18566,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _overviewUbrVue = __webpack_require__(440);
-=======
-var _overviewUbrVue = __webpack_require__(451);
->>>>>>> chore(build): add build and fix linting
+var _overviewUbrVue = __webpack_require__(443);
 
 var _overviewUbrVue2 = _interopRequireDefault(_overviewUbrVue);
 
@@ -18957,11 +18611,7 @@ OverviewUBR = __decorate([_overviewUbrVue2.default, (0, _vuePropertyDecorator.Co
 exports.default = OverviewUBR;
 
 /***/ }),
-<<<<<<< HEAD
-/* 440 */
-=======
-/* 451 */
->>>>>>> chore(build): add build and fix linting
+/* 443 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism overview-ubr"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"},_vm._l((_vm.items),function(blockIcon,index){return _c('BlockIcon',_vm._b({key:index,staticClass:"flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"},'BlockIcon',blockIcon,false))}),1),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],1)])}
@@ -18978,11 +18628,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 441 */
-=======
-/* 452 */
->>>>>>> chore(build): add build and fix linting
+/* 444 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18992,11 +18638,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-var _contentGeneral = __webpack_require__(442);
-=======
-var _contentGeneral = __webpack_require__(453);
->>>>>>> chore(build): add build and fix linting
+var _contentGeneral = __webpack_require__(445);
 
 var _contentGeneral2 = _interopRequireDefault(_contentGeneral);
 
@@ -19005,11 +18647,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentGeneral2.default;
 
 /***/ }),
-<<<<<<< HEAD
-/* 442 */
-=======
-/* 453 */
->>>>>>> chore(build): add build and fix linting
+/* 445 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19025,11 +18663,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _contentGeneralVue = __webpack_require__(443);
-=======
-var _contentGeneralVue = __webpack_require__(454);
->>>>>>> chore(build): add build and fix linting
+var _contentGeneralVue = __webpack_require__(446);
 
 var _contentGeneralVue2 = _interopRequireDefault(_contentGeneralVue);
 
@@ -19086,11 +18720,7 @@ GeneralContent = __decorate([_contentGeneralVue2.default, (0, _vuePropertyDecora
 exports.default = GeneralContent;
 
 /***/ }),
-<<<<<<< HEAD
-/* 443 */
-=======
-/* 454 */
->>>>>>> chore(build): add build and fix linting
+/* 446 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-general"},[_c('section',{staticClass:"content-general__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter",class:{'flexgrid--row-reversed': _vm.reversed}},[_c('div',{staticClass:"flexgrid__cell--xs-6 content-general__grid-cell content-general__content"},[_c('h3',{staticClass:"content-general__title"},[_vm._v(" "+_vm._s(_vm.title))]),_vm._v(" "),_c('div',{staticClass:"content-manageble content-general__body",domProps:{"innerHTML":_vm._s(_vm.description)}}),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6 content-general__grid-cell content-general__image"},[_c('div',{staticClass:"content-general__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1)])])])])}
@@ -19107,103 +18737,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 444 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _contentCover = __webpack_require__(445);
-
-var _contentCover2 = _interopRequireDefault(_contentCover);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _contentCover2.default;
-
-/***/ }),
-/* 445 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var GeneralContent = function (_Vue) {
-    _inherits(GeneralContent, _Vue);
-
-    function GeneralContent() {
-        _classCallCheck(this, GeneralContent);
-
-        return _possibleConstructorReturn(this, (GeneralContent.__proto__ || Object.getPrototypeOf(GeneralContent)).apply(this, arguments));
-    }
-
-    _createClass(GeneralContent, [{
-        key: "getClassNames",
-        value: function getClassNames(type) {
-            return {
-                ContentButton: 'content-cover__button button',
-                ContentLink: 'content-cover__link link link--medium',
-                YoutubeLink: 'content-cover__link link link--medium'
-            }[type] || '';
-        }
-    }]);
-
-    return GeneralContent;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], GeneralContent.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "cta", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], GeneralContent.prototype, "image", void 0);
-GeneralContent = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'ContentCover',
-    template: __webpack_require__(446)
-})], GeneralContent);
-exports.default = GeneralContent;
-
-/***/ }),
-/* 446 */
-/***/ (function(module, exports) {
-
-module.exports = "<article class=\"content-cover content-cover--cover\">\n    <c-image v-if=\"this.image\" v-bind=\"this.image\"/>\n\n    <div class=\"content-cover__image--overlay\"></div>\n\n    <section class=\"content-cover__container\">\n        <div class=\"flexgrid__cell--xs-6 content-cover-content content-cover--cover-reset\">\n            <h3 class=\"content-cover__title\">{{ title }}</h3>\n            <p class=\"content-cover__description\">{{ description }}</p>\n            <div>\n                <component v-if=\"cta\" v-bind=\"cta\" :is=\"cta.type\" :class=\"getClassNames(cta.type)\"/>\n            </div>\n        </div>\n    </section>\n</article>\n";
-
-/***/ }),
 /* 447 */
-=======
-/* 455 */
->>>>>>> chore(build): add build and fix linting
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

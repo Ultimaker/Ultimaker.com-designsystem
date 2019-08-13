@@ -10,7 +10,7 @@ import WithRender from './content-cover.vue.html';
 export class ContentCover extends Vue implements ContentCoverProps {
     @Prop({ type: String, required: true }) title!: ContentCoverProps['title'];
     @Prop({ type: String, required: true }) description!: ContentCoverProps['description'];
-    @Prop({ type: Object }) cta?: ContentCoverProps['cta'] | undefined;
+    @Prop({ type: Object }) cta?: ContentCoverProps['cta'];
     @Prop({ type: Object }) image?: ContentCoverProps['image'] | undefined;
 
     getClassNames(type: string): string {
