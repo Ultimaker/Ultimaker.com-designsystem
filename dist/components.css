@@ -269,7 +269,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child, .content-cover--cover > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child, .content-cover--cover > :last-child {
   margin-bottom: 0; }
 
 .examples .examples__link--large {
@@ -5630,65 +5630,6 @@ dd {
 /** @format */
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
-
-<<<<<<< HEAD
-.hero__image {
-  position: relative;
-  width: 75%;
-  margin: 0 auto 30px; }
-  @media (min-width: 569px) {
-    .hero__image {
-      width: 100%;
-      margin: 0 auto 0 30px; } }
-=======
-.hero--text .content--rich p, .hero--text .content--rich strong, .hero--text .content--rich .tablist__section .tablist__item, .tablist__section .hero--text .content--rich .tablist__item, .hero--text .content--rich .examples .examples__tabs .tablist__item, .examples .examples__tabs .hero--text .content--rich .tablist__item, .hero--text .content--rich ul, .hero--text .content--rich li {
-  max-width: 768px; }
-
-.hero--text .content--rich * + h2 {
-  margin-top: 30px;
-  margin-bottom: 23px; }
-  @media (min-width: 768px) {
-    .hero--text .content--rich * + h2 {
-      margin-top: 36px;
-      margin-bottom: 29px; } }
-
-.hero--text .content--rich * + h3, .hero--text .content--rich * + q {
-  margin-top: 30px; }
-  @media (min-width: 768px) {
-    .hero--text .content--rich * + h3, .hero--text .content--rich * + q {
-      margin-top: 35px; } }
->>>>>>> chore(build): add build
-
-.hero--cover {
-  position: relative;
-  padding-bottom: 60px; }
-  .hero--cover-reset p:last-child, .hero--cover-reset strong:last-child, .hero--cover-reset .tablist__section .tablist__item:last-child, .tablist__section .hero--cover-reset .tablist__item:last-child, .hero--cover-reset .examples .examples__tabs .tablist__item:last-child, .examples .examples__tabs .hero--cover-reset .tablist__item:last-child {
-    margin-bottom: 0; }
-  .hero--cover .copy--intro,
-  .hero--cover .link--large {
-    color: #fff; }
-
-.hero-cover__headline {
-  color: #fff; }
-
-.hero-cover__image--full {
-  object-fit: cover; }
-
-.hero-cover__image--overlay {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.hero-cover__image--full,
-.hero-cover__image--overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%; }
-
-.hero-cover__image--full,
-.hero-cover__image--overlay,
-.hero--cover__container {
-  min-height: 320px; }
 
 .overflow-container {
   position: relative;
