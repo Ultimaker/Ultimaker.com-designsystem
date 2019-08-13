@@ -56,7 +56,7 @@ export class ListSection extends Mixins(StepRowAnimation) implements ListSection
     }
 
     get activeFilters() {
-        return getFiltersInCardCollection(<CardArticle[]>this.filteredCards);
+        return getFiltersInCardCollection(this.filteredCards as CardArticle[]);
     }
 
     get clickEventData() {
