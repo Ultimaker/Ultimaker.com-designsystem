@@ -5631,6 +5631,7 @@ dd {
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
+<<<<<<< HEAD
 .hero__image {
   position: relative;
   width: 75%;
@@ -5639,6 +5640,24 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:n
     .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
+=======
+.hero--text .content--rich p, .hero--text .content--rich strong, .hero--text .content--rich .tablist__section .tablist__item, .tablist__section .hero--text .content--rich .tablist__item, .hero--text .content--rich .examples .examples__tabs .tablist__item, .examples .examples__tabs .hero--text .content--rich .tablist__item, .hero--text .content--rich ul, .hero--text .content--rich li {
+  max-width: 768px; }
+
+.hero--text .content--rich * + h2 {
+  margin-top: 30px;
+  margin-bottom: 23px; }
+  @media (min-width: 768px) {
+    .hero--text .content--rich * + h2 {
+      margin-top: 36px;
+      margin-bottom: 29px; } }
+
+.hero--text .content--rich * + h3, .hero--text .content--rich * + q {
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .hero--text .content--rich * + h3, .hero--text .content--rich * + q {
+      margin-top: 35px; } }
+>>>>>>> chore(build): add build
 
 .hero--cover {
   position: relative;
@@ -6851,6 +6870,16 @@ because both families serve another purpose. Therefore the line-heights will be 
 @media (min-width: 768px) {
   .content-cover__link.link, .content-cover__link.toggle, .content-cover__link.overflow-container__link:hover, .content-cover__link.overflow-container__link.exact-active {
     color: #fff; } }
+
+/** @format */
+.hero__image {
+  position: relative;
+  width: 75%;
+  margin: 0 auto 30px; }
+  @media (min-width: 569px) {
+    .hero__image {
+      width: 100%;
+      margin: 0 auto 0 30px; } }
 
 /** @format */
 /** @format */

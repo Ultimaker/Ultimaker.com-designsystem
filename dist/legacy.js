@@ -15897,12 +15897,21 @@ Object.defineProperty(exports, 'TabbedTable', {
   }
 });
 
+<<<<<<< HEAD
 var _contentCover = __webpack_require__(423);
 
 Object.defineProperty(exports, 'ContentCover', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_contentCover).default;
+=======
+var _heroBasic = __webpack_require__(423);
+
+Object.defineProperty(exports, 'HeroBasic', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_heroBasic).default;
+>>>>>>> chore(build): add build
   }
 });
 
@@ -17863,18 +17872,27 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+<<<<<<< HEAD
 var _contentCover = __webpack_require__(424);
+=======
+var _heroBasic = __webpack_require__(424);
+>>>>>>> chore(build): add build
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
+<<<<<<< HEAD
     return _contentCover.ContentCover;
+=======
+    return _heroBasic.HeroBasic;
+>>>>>>> chore(build): add build
   }
 });
 
 /***/ }),
 /* 424 */
 /***/ (function(module, exports, __webpack_require__) {
+<<<<<<< HEAD
 
 "use strict";
 
@@ -17974,20 +17992,109 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var _colors = __webpack_require__(18);
+=======
+>>>>>>> chore(build): add build
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.HeroBasic = undefined;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+var _heroBasicVue = __webpack_require__(425);
+
+var _heroBasicVue2 = _interopRequireDefault(_heroBasicVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = undefined && undefined.__metadata || function (k, v) {
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var HeroBasic = function (_Vue) {
+    _inherits(HeroBasic, _Vue);
+
+    function HeroBasic() {
+        _classCallCheck(this, HeroBasic);
+
+        return _possibleConstructorReturn(this, (HeroBasic.__proto__ || Object.getPrototypeOf(HeroBasic)).apply(this, arguments));
+    }
+
+    return HeroBasic;
+}(_vuePropertyDecorator.Vue);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroBasic.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "subtitle", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroBasic.prototype, "description", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "image", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "ctas", void 0);
+exports.HeroBasic = HeroBasic = __decorate([_heroBasicVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'hero-basic'
+})], HeroBasic);
+exports.HeroBasic = HeroBasic;
+
+/***/ }),
+/* 425 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--basic organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('h1',{staticClass:"hero__title header-block__title--hero"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.subtitle)?_c('h2',{staticClass:"hero__subtitle header-block__subtitle--hero"},[_vm._v(_vm._s(_vm.subtitle))]):_vm._e()]),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 426 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _brandsLarge = __webpack_require__(427);
+
+Object.defineProperty(exports, 'BrandsLarge', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_brandsLarge).default;
+  }
+});
+
+var _colors = __webpack_require__(18);
 
 Object.defineProperty(exports, 'Colors', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_colors).default;
-  }
-});
-
-var _heroBasic = __webpack_require__(427);
-
-Object.defineProperty(exports, 'HeroBasic', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_heroBasic).default;
   }
 });
 
@@ -18036,6 +18143,7 @@ Object.defineProperty(exports, 'ContentGeneral', {
   }
 });
 
+<<<<<<< HEAD
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
@@ -18056,6 +18164,37 @@ var _heroBasic2 = _interopRequireDefault(_heroBasic);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _heroBasic2.default;
+=======
+var _contentCover = __webpack_require__(452);
+
+Object.defineProperty(exports, 'ContentCover', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_contentCover).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+/* 427 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _brandsLarge = __webpack_require__(428);
+
+var _brandsLarge2 = _interopRequireDefault(_brandsLarge);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _brandsLarge2.default;
+>>>>>>> chore(build): add build
 
 /***/ }),
 /* 428 */
@@ -18067,6 +18206,7 @@ exports.default = _heroBasic2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+<<<<<<< HEAD
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -18116,23 +18256,34 @@ HeroBasic = __decorate([_heroBasicVue2.default, (0, _vuePropertyDecorator.Compon
     name: 'hero-basic'
 })], HeroBasic);
 exports.default = HeroBasic;
+=======
+exports.default = {
+    name: 'brands-large',
+    template: __webpack_require__(429),
+    props: {
+        title: {
+            type: String,
+            required: true
+        },
+        text: {
+            type: String
+        },
+        brands: {
+            type: Array,
+            required: true
+        },
+        contentLink: {
+            type: Object
+        }
+    }
+};
+>>>>>>> chore(build): add build
 
 /***/ }),
 /* 429 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--basic organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('h1',{staticClass:"hero__title header-block__title--hero"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.subtitle)?_c('h2',{staticClass:"hero__subtitle header-block__subtitle--hero"},[_vm._v(_vm._s(_vm.subtitle))]):_vm._e()]),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
+module.exports = "<article class=\"brands brands--large\">\n    <section class=\"container brands__container\">\n        <h2 class=\"brands__title\">{{ title }}</h2>\n        <p class=\"brands__body\" v-if=\"text\">{{ text }}</p>\n        <div class=\"flexgrid flexgrid--gutter brands__grid\">\n            <template v-for=\"brand in brands\">\n            <div class=\"flexgrid__cell--sm-4 brands__grid-cell\">\n                <brand-card v-bind=\"brand\"></brand-card>\n            </div>\n            </template>\n        </div>\n        <content-link v-if=\"contentLink\" :block=\"'brands'\" :mod=\"'large'\" :url=\"contentLink.href\">{{ contentLink.text }}</content-link>\n    </section>\n</article>\n";
 
 /***/ }),
 /* 430 */
