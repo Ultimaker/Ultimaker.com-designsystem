@@ -264,12 +264,12 @@ because both families serve another purpose. Therefore the line-heights will be 
 .caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .overflow-container__list, .hero--product .hero__linklist {
   list-style: none; }
 
-.list__item, .hero--text .content--rich ul li, .link-list__item, .flyout__list-item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
+.list__item, .link-list__item, .flyout__list-item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
 .content-manageble ol li {
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--text .content--rich > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .hero--cover > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .tabbed-content > :last-child, .content-cover--cover > :last-child, .hero--product .hero__link-list > :last-child, .colors .colors__swatches > :last-child, .hero--article > :last-child {
   margin-bottom: 0; }
 
 .examples .examples__link--large {
@@ -763,7 +763,7 @@ html {
   .hidden--lg {
     display: none; } }
 
-ul, .hero--text .content--rich ul,
+ul,
 ol {
   padding-left: 1em; }
 
@@ -1335,10 +1335,10 @@ html {
       margin-top: -5px;
       margin-bottom: 29px; } }
 
-.list__item, .hero--text .content--rich ul li {
+.list__item {
   padding-left: 10px; }
   @media (min-width: 768px) {
-    .list__item, .hero--text .content--rich ul li {
+    .list__item {
       padding-left: 8px; } }
 
 .caption-list {
@@ -4027,17 +4027,17 @@ th {
     .article-table {
       width: 66%; } }
 
-.article-text p, .article-text strong, .article-text .tablist__section .tablist__item, .tablist__section .article-text .tablist__item, .article-text .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text .tablist__item, .article-text ul, .article-text .hero--text .content--rich ul, .hero--text .content--rich .article-text ul, .article-text ol {
+.article-text p, .article-text strong, .article-text .tablist__section .tablist__item, .tablist__section .article-text .tablist__item, .article-text .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text .tablist__item, .article-text ul, .article-text ol {
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .article-text p, .article-text strong, .article-text .tablist__section .tablist__item, .tablist__section .article-text .tablist__item, .article-text .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text .tablist__item, .article-text ul, .article-text .hero--text .content--rich ul, .hero--text .content--rich .article-text ul, .article-text ol {
+    .article-text p, .article-text strong, .article-text .tablist__section .tablist__item, .tablist__section .article-text .tablist__item, .article-text .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text .tablist__item, .article-text ul, .article-text ol {
       margin-top: -5px;
       margin-bottom: 29px; } }
 
-.article-text ul > li, .article-text .hero--text .content--rich ul > li, .hero--text .content--rich .article-text ul > li, .article-text ol > li {
+.article-text ul > li, .article-text ol > li {
   margin-bottom: 6px; }
-  .article-text ul > li p, .article-text .hero--text .content--rich ul > li p, .hero--text .content--rich .article-text ul > li p, .article-text ul > li strong, .article-text .hero--text .content--rich ul > li strong, .hero--text .content--rich .article-text ul > li strong, .article-text ul > li .tablist__section .tablist__item, .tablist__section .article-text ul > li .tablist__item, .article-text .hero--text .content--rich ul > li .tablist__section .tablist__item, .tablist__section .article-text .hero--text .content--rich ul > li .tablist__item, .article-text ul > li .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text ul > li .tablist__item, .article-text .hero--text .content--rich ul > li .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text .hero--text .content--rich ul > li .tablist__item, .article-text ol > li p, .article-text ol > li strong, .article-text ol > li .tablist__section .tablist__item, .tablist__section .article-text ol > li .tablist__item, .article-text ol > li .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text ol > li .tablist__item {
+  .article-text ul > li p, .article-text ul > li strong, .article-text ul > li .tablist__section .tablist__item, .tablist__section .article-text ul > li .tablist__item, .article-text ul > li .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text ul > li .tablist__item, .article-text ol > li p, .article-text ol > li strong, .article-text ol > li .tablist__section .tablist__item, .tablist__section .article-text ol > li .tablist__item, .article-text ol > li .examples .examples__tabs .tablist__item, .examples .examples__tabs .article-text ol > li .tablist__item {
     margin: 0; }
 
 .article-text p + h2, .article-text strong + h2, .article-text .tablist__section .tablist__item + h2, .tablist__section .article-text .tablist__item + h2, .article-text .examples .examples__tabs .tablist__item + h2, .examples .examples__tabs .article-text .tablist__item + h2 {
@@ -4349,7 +4349,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-top: -6px;
   margin-left: -6px; }
 
-.card-article__labels-list .list__item, .card-article__labels-list .hero--text .content--rich ul li, .hero--text .content--rich ul .card-article__labels-list li {
+.card-article__labels-list .list__item {
   line-height: 15px;
   margin-right: 6px; }
 
@@ -4433,11 +4433,11 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-bottom: 6px;
     margin-top: -6px;
     margin-left: -6px; }
-    .card-product__labels-list .list__item, .card-product__labels-list .hero--text .content--rich ul li, .hero--text .content--rich ul .card-product__labels-list li {
+    .card-product__labels-list .list__item {
       line-height: 15px;
       margin-right: 6px; }
 
-.list-show-all__list .list__item, .list-show-all__list .hero--text .content--rich ul li, .hero--text .content--rich ul .list-show-all__list li {
+.list-show-all__list .list__item {
   list-style: none; }
 
 .list-show-all__list .card-product {
@@ -5506,7 +5506,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-top: 60px;
     margin-bottom: 0; }
 
-.content-manageble ul, .content-manageble .hero--text .content--rich ul, .hero--text .content--rich .content-manageble ul,
+.content-manageble ul,
 .content-manageble ol {
   padding-left: 1em;
   font-size: 14px;
@@ -5514,20 +5514,20 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .content-manageble ul, .content-manageble .hero--text .content--rich ul, .hero--text .content--rich .content-manageble ul,
+    .content-manageble ul,
     .content-manageble ol {
       font-size: 16px;
       line-height: 24px;
       margin-top: -5px;
       margin-bottom: 29px; } }
-  .content-manageble ul li, .content-manageble .hero--text .content--rich ul li, .hero--text .content--rich .content-manageble ul li,
+  .content-manageble ul li,
   .content-manageble ol li {
     padding-left: 10px; }
     @media (min-width: 768px) {
-      .content-manageble ul li, .content-manageble .hero--text .content--rich ul li, .hero--text .content--rich .content-manageble ul li,
+      .content-manageble ul li,
       .content-manageble ol li {
         padding-left: 8px; } }
-    .content-manageble ul li p, .content-manageble .hero--text .content--rich ul li p, .hero--text .content--rich .content-manageble ul li p, .content-manageble ul li strong, .content-manageble .hero--text .content--rich ul li strong, .hero--text .content--rich .content-manageble ul li strong, .content-manageble ul li .tablist__section .tablist__item, .tablist__section .content-manageble ul li .tablist__item, .content-manageble ul li .examples .examples__tabs .tablist__item, .examples .examples__tabs .content-manageble ul li .tablist__item,
+    .content-manageble ul li p, .content-manageble ul li strong, .content-manageble ul li .tablist__section .tablist__item, .tablist__section .content-manageble ul li .tablist__item, .content-manageble ul li .examples .examples__tabs .tablist__item, .examples .examples__tabs .content-manageble ul li .tablist__item,
     .content-manageble ol li p,
     .content-manageble ol li strong,
     .content-manageble ol li .tablist__section .tablist__item,
@@ -5537,25 +5537,19 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin: 0;
       word-wrap: break-word; }
 
-.content-manageble--copy-small p, .content-manageble--copy-small strong, .content-manageble--copy-small .tablist__section .tablist__item, .tablist__section .content-manageble--copy-small .tablist__item, .content-manageble--copy-small .examples .examples__tabs .tablist__item, .examples .examples__tabs .content-manageble--copy-small .tablist__item, .content-manageble--copy-small ul, .content-manageble--copy-small .hero--text .content--rich ul, .hero--text .content--rich .content-manageble--copy-small ul {
+.content-manageble--copy-small p, .content-manageble--copy-small strong, .content-manageble--copy-small .tablist__section .tablist__item, .tablist__section .content-manageble--copy-small .tablist__item, .content-manageble--copy-small .examples .examples__tabs .tablist__item, .examples .examples__tabs .content-manageble--copy-small .tablist__item, .content-manageble--copy-small ul {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 21px;
   word-wrap: break-word; }
 
-.content-manageble--copy-small p + ul, .content-manageble--copy-small strong + ul, .content-manageble--copy-small .tablist__section .tablist__item + ul, .tablist__section .content-manageble--copy-small .tablist__item + ul, .content-manageble--copy-small .examples .examples__tabs .tablist__item + ul, .examples .examples__tabs .content-manageble--copy-small .tablist__item + ul, .content-manageble--copy-small .hero--text .content--rich p + ul, .hero--text .content--rich .content-manageble--copy-small p + ul, .content-manageble--copy-small .hero--text .content--rich strong + ul, .hero--text .content--rich .content-manageble--copy-small strong + ul, .content-manageble--copy-small .tablist__section .hero--text .content--rich .tablist__item + ul, .tablist__section .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .content-manageble--copy-small .examples .examples__tabs .hero--text .content--rich .tablist__item + ul, .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul,
+.content-manageble--copy-small p + ul, .content-manageble--copy-small strong + ul, .content-manageble--copy-small .tablist__section .tablist__item + ul, .tablist__section .content-manageble--copy-small .tablist__item + ul, .content-manageble--copy-small .examples .examples__tabs .tablist__item + ul, .examples .examples__tabs .content-manageble--copy-small .tablist__item + ul,
 .content-manageble--copy-small ul + p,
-.content-manageble--copy-small .hero--text .content--rich ul + p,
-.hero--text .content--rich .content-manageble--copy-small ul + p,
 .content-manageble--copy-small ul + strong,
-.content-manageble--copy-small .hero--text .content--rich ul + strong,
-.hero--text .content--rich .content-manageble--copy-small ul + strong,
 .content-manageble--copy-small .tablist__section ul + .tablist__item,
 .tablist__section .content-manageble--copy-small ul + .tablist__item,
-.tablist__section .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item,
 .content-manageble--copy-small .examples .examples__tabs ul + .tablist__item,
 .examples .examples__tabs .content-manageble--copy-small ul + .tablist__item,
-.examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item,
 .content-manageble--copy-small p + p,
 .content-manageble--copy-small strong + p,
 .content-manageble--copy-small .tablist__section .tablist__item + p,
@@ -5633,6 +5627,7 @@ dd {
     dd:first-of-type {
       border-top: 0; } }
 
+/** @format */
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .general-content:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even), main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
@@ -5644,23 +5639,6 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:n
     .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
-
-.hero--text .content--rich p, .hero--text .content--rich strong, .hero--text .content--rich .tablist__section .tablist__item, .tablist__section .hero--text .content--rich .tablist__item, .hero--text .content--rich .examples .examples__tabs .tablist__item, .examples .examples__tabs .hero--text .content--rich .tablist__item, .hero--text .content--rich ul, .hero--text .content--rich li {
-  max-width: 768px; }
-
-.hero--text .content--rich * + h2 {
-  margin-top: 30px;
-  margin-bottom: 23px; }
-  @media (min-width: 768px) {
-    .hero--text .content--rich * + h2 {
-      margin-top: 36px;
-      margin-bottom: 29px; } }
-
-.hero--text .content--rich * + h3, .hero--text .content--rich * + q {
-  margin-top: 30px; }
-  @media (min-width: 768px) {
-    .hero--text .content--rich * + h3, .hero--text .content--rich * + q {
-      margin-top: 35px; } }
 
 .hero--cover {
   position: relative;
@@ -6184,7 +6162,7 @@ svg text {
     margin-top: -2px;
     margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .preferences-bar__content-manageble ul, .preferences-bar__content-manageble .hero--text .content--rich ul, .hero--text .content--rich .preferences-bar__content-manageble ul,
+    .preferences-bar__content-manageble ul,
     .preferences-bar__content-manageble ol {
       font-size: 14px;
       line-height: 1.5;
@@ -6325,18 +6303,18 @@ because both families serve another purpose. Therefore the line-heights will be 
       text-align: right;
       margin-top: 0; } }
 
-.article-header__list .list__item, .article-header__list .hero--text .content--rich ul li, .hero--text .content--rich ul .article-header__list li {
+.article-header__list .list__item {
   padding-top: 4px;
   margin-left: 6px;
   margin-bottom: 0; }
   @media (min-width: 768px) {
-    .article-header__list .list__item, .article-header__list .hero--text .content--rich ul li, .hero--text .content--rich ul .article-header__list li {
+    .article-header__list .list__item {
       padding-top: 0;
       padding-bottom: 4px; } }
 
 .brands2 {
   padding-top: 48px; }
-  .brands2 .list-unordered-limit ul, .brands2 .list-unordered-limit .hero--text .content--rich ul, .hero--text .content--rich .brands2 .list-unordered-limit ul {
+  .brands2 .list-unordered-limit ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6682,6 +6660,51 @@ main .overview:nth-child(even) {
 .sys-nav-slide-enter-active, .sys-nav-slide-leave-active {
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+.search-results {
+  margin-bottom: 60px; }
+
+.search-results__title {
+  font-size: 32px;
+  text-align: center; }
+
+.search-results__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 12px; }
+
+.search-results__list-item {
+  margin: 0 0 12px; }
+
+.search-results__footer {
+  padding-top: 24px;
+  text-align: center; }
+
+.search-results .search-bar-page {
+  margin-top: 84px;
+  margin-bottom: 84px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center; }
+
+.search-results .search-bar-page__input {
+  width: calc(100% - 60px); }
+  @media (min-width: 768px) {
+    .search-results .search-bar-page__input {
+      width: calc(50%); } }
+
 .table-compare {
   position: relative;
   margin-bottom: 24px; }
@@ -6828,51 +6851,6 @@ main .overview:nth-child(even) {
     left: 0; }
   .table-compare__scroll-button--right {
     right: 0; }
-
-/** @format */
-/** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-/*
- *  Mixins to support media queries
- *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
- */
-.search-results {
-  margin-bottom: 60px; }
-
-.search-results__title {
-  font-size: 32px;
-  text-align: center; }
-
-.search-results__list {
-  list-style: none;
-  margin: 0;
-  padding: 0 12px; }
-
-.search-results__list-item {
-  margin: 0 0 12px; }
-
-.search-results__footer {
-  padding-top: 24px;
-  text-align: center; }
-
-.search-results .search-bar-page {
-  margin-top: 84px;
-  margin-bottom: 84px;
-  padding-left: 12px;
-  padding-right: 12px;
-  text-align: center; }
-
-.search-results .search-bar-page__input {
-  width: calc(100% - 60px); }
-  @media (min-width: 768px) {
-    .search-results .search-bar-page__input {
-      width: calc(50%); } }
 
 /** @format */
 /** @format */
