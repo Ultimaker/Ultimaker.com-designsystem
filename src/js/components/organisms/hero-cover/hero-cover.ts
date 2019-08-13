@@ -1,5 +1,5 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { HeroCover as IHeroCover } from '@ultimaker/ultimaker.com-model-definitions/dist/organisms/hero/HeroCover';
+import { HeroCoverProps } from './hero-cover.models';
 import WithRender from './hero-cover.vue.html';
 
 @WithRender
@@ -7,11 +7,11 @@ import WithRender from './hero-cover.vue.html';
     name: 'hero-cover',
 })
 
-export class HeroCover extends Vue implements IHeroCover {
-    @Prop({ type: String, required: true }) title!: IHeroCover['title'];
-    @Prop({ type: String, required: true }) description!: IHeroCover['description'];
-    @Prop({ type: Object }) ctas?: IHeroCover['ctas'] | undefined;
-    @Prop({ type: Object }) image?: IHeroCover['image'] | undefined;
+export class HeroCover extends Vue implements HeroCoverProps {
+    @Prop({ type: String, required: true }) title!: HeroCoverProps['title'];
+    @Prop({ type: String, required: true }) description!: HeroCoverProps['description'];
+    @Prop({ type: Object, required: false }) ctas?: HeroCoverProps['ctas'];
+    @Prop({ type: Object, required: false }) image?: HeroCoverProps['image'];
 
     showVideo: boolean = false;
 
