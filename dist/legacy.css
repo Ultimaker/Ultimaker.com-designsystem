@@ -264,11 +264,11 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .overflow-container__list, .um-components .hero--product .hero__linklist {
   list-style: none; }
 
-.um-components .list__item, .um-components .hero--text .content--rich ul li, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
+.um-components .list__item, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--text .content--rich > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .hero--article > :last-child {
+.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .hero--cover > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .tabbed-content > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .hero--article > :last-child {
   margin-bottom: 0; }
 
 .um-components .examples .examples__link--large {
@@ -869,10 +869,10 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-top: -5px;
       margin-bottom: 29px; } }
 
-.um-components .list__item, .um-components .hero--text .content--rich ul li {
+.um-components .list__item {
   padding-left: 10px; }
   @media (min-width: 768px) {
-    .um-components .list__item, .um-components .hero--text .content--rich ul li {
+    .um-components .list__item {
       padding-left: 8px; } }
 
 .um-components .caption-list {
@@ -3523,17 +3523,17 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .article-table {
       width: 66%; } }
 
-.um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
+.um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text ol {
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text .hero--text .content--rich ul, .um-components .hero--text .content--rich .article-text ul, .um-components .article-text ol {
+    .um-components .article-text p, .um-components .article-text strong, .um-components .article-text .tablist__section .tablist__item, .um-components .tablist__section .article-text .tablist__item, .um-components .article-text .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .tablist__item, .um-components .article-text ul, .um-components .article-text ol {
       margin-top: -5px;
       margin-bottom: 29px; } }
 
-.um-components .article-text ul > li, .um-components .article-text .hero--text .content--rich ul > li, .um-components .hero--text .content--rich .article-text ul > li, .um-components .article-text ol > li {
+.um-components .article-text ul > li, .um-components .article-text ol > li {
   margin-bottom: 6px; }
-  .um-components .article-text ul > li p, .um-components .article-text .hero--text .content--rich ul > li p, .um-components .hero--text .content--rich .article-text ul > li p, .um-components .article-text ul > li strong, .um-components .article-text .hero--text .content--rich ul > li strong, .um-components .hero--text .content--rich .article-text ul > li strong, .um-components .article-text ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ul > li .tablist__item, .um-components .article-text .hero--text .content--rich ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text .hero--text .content--rich ul > li .tablist__item, .um-components .article-text ol > li p, .um-components .article-text ol > li strong, .um-components .article-text ol > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ol > li .tablist__item, .um-components .article-text ol > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ol > li .tablist__item {
+  .um-components .article-text ul > li p, .um-components .article-text ul > li strong, .um-components .article-text ul > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ul > li .tablist__item, .um-components .article-text ul > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ul > li .tablist__item, .um-components .article-text ol > li p, .um-components .article-text ol > li strong, .um-components .article-text ol > li .tablist__section .tablist__item, .um-components .tablist__section .article-text ol > li .tablist__item, .um-components .article-text ol > li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .article-text ol > li .tablist__item {
     margin: 0; }
 
 .um-components .article-text p + h2, .um-components .article-text strong + h2, .um-components .article-text .tablist__section .tablist__item + h2, .um-components .tablist__section .article-text .tablist__item + h2, .um-components .article-text .examples .examples__tabs .tablist__item + h2, .um-components .examples .examples__tabs .article-text .tablist__item + h2 {
@@ -3845,7 +3845,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-top: -6px;
   margin-left: -6px; }
 
-.um-components .card-article__labels-list .list__item, .um-components .card-article__labels-list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .card-article__labels-list li {
+.um-components .card-article__labels-list .list__item {
   line-height: 15px;
   margin-right: 6px; }
 
@@ -3929,11 +3929,11 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-bottom: 6px;
     margin-top: -6px;
     margin-left: -6px; }
-    .um-components .card-product__labels-list .list__item, .um-components .card-product__labels-list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .card-product__labels-list li {
+    .um-components .card-product__labels-list .list__item {
       line-height: 15px;
       margin-right: 6px; }
 
-.um-components .list-show-all__list .list__item, .um-components .list-show-all__list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .list-show-all__list li {
+.um-components .list-show-all__list .list__item {
   list-style: none; }
 
 .um-components .list-show-all__list .card-product {
@@ -5000,34 +5000,38 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-top: 60px;
     margin-bottom: 0; }
 
-.um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
+.um-components .content-manageble ul,
+.um-components .content-manageble ol {
   padding-left: 1em;
   font-size: 14px;
   line-height: 1.5;
   margin-top: -2px;
   margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .um-components .content-manageble ul, .um-components .content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble ul, .um-components .content-manageble ol {
+    .um-components .content-manageble ul,
+    .um-components .content-manageble ol {
       font-size: 16px;
       line-height: 24px;
       margin-top: -5px;
       margin-bottom: 29px; } }
-  .um-components .content-manageble ul li, .um-components .content-manageble .hero--text .content--rich ul li, .um-components .hero--text .content--rich .content-manageble ul li, .um-components .content-manageble ol li {
+  .um-components .content-manageble ul li,
+  .um-components .content-manageble ol li {
     padding-left: 10px; }
     @media (min-width: 768px) {
-      .um-components .content-manageble ul li, .um-components .content-manageble .hero--text .content--rich ul li, .um-components .hero--text .content--rich .content-manageble ul li, .um-components .content-manageble ol li {
+      .um-components .content-manageble ul li,
+      .um-components .content-manageble ol li {
         padding-left: 8px; } }
-    .um-components .content-manageble ul li p, .um-components .content-manageble .hero--text .content--rich ul li p, .um-components .hero--text .content--rich .content-manageble ul li p, .um-components .content-manageble ul li strong, .um-components .content-manageble .hero--text .content--rich ul li strong, .um-components .hero--text .content--rich .content-manageble ul li strong, .um-components .content-manageble ul li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ul li .tablist__item, .um-components .content-manageble ul li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ul li .tablist__item, .um-components .content-manageble ol li p, .um-components .content-manageble ol li strong, .um-components .content-manageble ol li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ol li .tablist__item, .um-components .content-manageble ol li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ol li .tablist__item {
+    .um-components .content-manageble ul li p, .um-components .content-manageble ul li strong, .um-components .content-manageble ul li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ul li .tablist__item, .um-components .content-manageble ul li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ul li .tablist__item, .um-components .content-manageble ol li p, .um-components .content-manageble ol li strong, .um-components .content-manageble ol li .tablist__section .tablist__item, .um-components .tablist__section .content-manageble ol li .tablist__item, .um-components .content-manageble ol li .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble ol li .tablist__item {
       margin: 0;
       word-wrap: break-word; }
 
-.um-components .content-manageble--copy-small p, .um-components .content-manageble--copy-small strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item, .um-components .content-manageble--copy-small ul, .um-components .content-manageble--copy-small .hero--text .content--rich ul, .um-components .hero--text .content--rich .content-manageble--copy-small ul {
+.um-components .content-manageble--copy-small p, .um-components .content-manageble--copy-small strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item, .um-components .content-manageble--copy-small ul {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 21px;
   word-wrap: break-word; }
 
-.um-components .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + ul, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small .hero--text .content--rich p + ul, .um-components .hero--text .content--rich .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small .hero--text .content--rich strong + ul, .um-components .hero--text .content--rich .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .hero--text .content--rich .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .um-components .content-manageble--copy-small .examples .examples__tabs .hero--text .content--rich .tablist__item + ul, .um-components .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich .tablist__item + ul, .um-components .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small .hero--text .content--rich ul + p, .um-components .hero--text .content--rich .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .hero--text .content--rich ul + strong, .um-components .hero--text .content--rich .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .tablist__section ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs ul + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small ul + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .hero--text .content--rich ul + .tablist__item, .um-components .content-manageble--copy-small p + p, .um-components .content-manageble--copy-small strong + p, .um-components .content-manageble--copy-small .tablist__section .tablist__item + p, .um-components .tablist__section .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + p, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small p + strong, .um-components .content-manageble--copy-small strong + strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item + strong, .um-components .tablist__section .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + strong, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .tablist__section p + .tablist__item, .um-components .tablist__section .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .tablist__section strong + .tablist__item, .um-components .tablist__section .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .tablist__section .tablist__item + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs p + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs strong + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + .tablist__item {
+.um-components .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + ul, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .tablist__section ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small ul + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs ul + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small ul + .tablist__item, .um-components .content-manageble--copy-small p + p, .um-components .content-manageble--copy-small strong + p, .um-components .content-manageble--copy-small .tablist__section .tablist__item + p, .um-components .tablist__section .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + p, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small p + strong, .um-components .content-manageble--copy-small strong + strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item + strong, .um-components .tablist__section .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + strong, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .tablist__section p + .tablist__item, .um-components .tablist__section .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .tablist__section strong + .tablist__item, .um-components .tablist__section .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .tablist__section .tablist__item + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs p + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs strong + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .examples .examples__tabs .tablist__item + .tablist__item, .um-components .examples .examples__tabs .content-manageble--copy-small .tablist__item + .tablist__item {
   margin-top: 21px; }
 
 /** @format */
@@ -5081,6 +5085,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components dd:first-of-type {
       border-top: 0; } }
 
+/** @format */
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .general-content:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even), .um-components main .content-cover--cover:nth-child(even) {
   background-color: #fafafa; }
 
@@ -5092,23 +5097,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .hero__image {
       width: 100%;
       margin: 0 auto 0 30px; } }
-
-.um-components .hero--text .content--rich p, .um-components .hero--text .content--rich strong, .um-components .hero--text .content--rich .tablist__section .tablist__item, .um-components .tablist__section .hero--text .content--rich .tablist__item, .um-components .hero--text .content--rich .examples .examples__tabs .tablist__item, .um-components .examples .examples__tabs .hero--text .content--rich .tablist__item, .um-components .hero--text .content--rich ul, .um-components .hero--text .content--rich li {
-  max-width: 768px; }
-
-.um-components .hero--text .content--rich * + h2 {
-  margin-top: 30px;
-  margin-bottom: 23px; }
-  @media (min-width: 768px) {
-    .um-components .hero--text .content--rich * + h2 {
-      margin-top: 36px;
-      margin-bottom: 29px; } }
-
-.um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q {
-  margin-top: 30px; }
-  @media (min-width: 768px) {
-    .um-components .hero--text .content--rich * + h3, .um-components .hero--text .content--rich * + q {
-      margin-top: 35px; } }
 
 .um-components .hero--cover {
   position: relative;
@@ -5632,7 +5620,8 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-top: -2px;
     margin-bottom: 23px; }
   @media (min-width: 768px) {
-    .um-components .preferences-bar__content-manageble ul, .um-components .preferences-bar__content-manageble .hero--text .content--rich ul, .um-components .hero--text .content--rich .preferences-bar__content-manageble ul, .um-components .preferences-bar__content-manageble ol {
+    .um-components .preferences-bar__content-manageble ul,
+    .um-components .preferences-bar__content-manageble ol {
       font-size: 14px;
       line-height: 1.5;
       margin-top: -2px;
@@ -5772,18 +5761,18 @@ because both families serve another purpose. Therefore the line-heights will be 
       text-align: right;
       margin-top: 0; } }
 
-.um-components .article-header__list .list__item, .um-components .article-header__list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .article-header__list li {
+.um-components .article-header__list .list__item {
   padding-top: 4px;
   margin-left: 6px;
   margin-bottom: 0; }
   @media (min-width: 768px) {
-    .um-components .article-header__list .list__item, .um-components .article-header__list .hero--text .content--rich ul li, .um-components .hero--text .content--rich ul .article-header__list li {
+    .um-components .article-header__list .list__item {
       padding-top: 0;
       padding-bottom: 4px; } }
 
 .um-components .brands2 {
   padding-top: 48px; }
-  .um-components .brands2 .list-unordered-limit ul, .um-components .brands2 .list-unordered-limit .hero--text .content--rich ul, .um-components .hero--text .content--rich .brands2 .list-unordered-limit ul {
+  .um-components .brands2 .list-unordered-limit ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6129,6 +6118,51 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .sys-nav-slide-enter-active, .um-components .sys-nav-slide-leave-active {
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+.um-components .search-results {
+  margin-bottom: 60px; }
+
+.um-components .search-results__title {
+  font-size: 32px;
+  text-align: center; }
+
+.um-components .search-results__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 12px; }
+
+.um-components .search-results__list-item {
+  margin: 0 0 12px; }
+
+.um-components .search-results__footer {
+  padding-top: 24px;
+  text-align: center; }
+
+.um-components .search-results .search-bar-page {
+  margin-top: 84px;
+  margin-bottom: 84px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center; }
+
+.um-components .search-results .search-bar-page__input {
+  width: calc(100% - 60px); }
+  @media (min-width: 768px) {
+    .um-components .search-results .search-bar-page__input {
+      width: calc(50%); } }
+
 .um-components .table-compare {
   position: relative;
   margin-bottom: 24px; }
@@ -6275,51 +6309,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     left: 0; }
   .um-components .table-compare__scroll-button--right {
     right: 0; }
-
-/** @format */
-/** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-/*
- *  Mixins to support media queries
- *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
- */
-.um-components .search-results {
-  margin-bottom: 60px; }
-
-.um-components .search-results__title {
-  font-size: 32px;
-  text-align: center; }
-
-.um-components .search-results__list {
-  list-style: none;
-  margin: 0;
-  padding: 0 12px; }
-
-.um-components .search-results__list-item {
-  margin: 0 0 12px; }
-
-.um-components .search-results__footer {
-  padding-top: 24px;
-  text-align: center; }
-
-.um-components .search-results .search-bar-page {
-  margin-top: 84px;
-  margin-bottom: 84px;
-  padding-left: 12px;
-  padding-right: 12px;
-  text-align: center; }
-
-.um-components .search-results .search-bar-page__input {
-  width: calc(100% - 60px); }
-  @media (min-width: 768px) {
-    .um-components .search-results .search-bar-page__input {
-      width: calc(50%); } }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
