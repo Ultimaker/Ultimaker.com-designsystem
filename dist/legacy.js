@@ -476,11 +476,7 @@ exports.default = {
     },
     country: {
         name: 'United States of America',
-        code: 'US',
-        currency: {
-            code: 'USD',
-            symbol: '$'
-        }
+        code: 'US'
     },
     language: 'en',
     breakpoints: {
@@ -17461,9 +17457,6 @@ var LocaleSelector = function (_Vue) {
     }, {
         key: "currentCountryLabel",
         get: function get() {
-            if (this.country && this.country.currency && this.country.currency.symbol) {
-                return this.country.name + " - " + this.country.currency.symbol;
-            }
             if (this.country) {
                 return "" + this.country.name;
             }
