@@ -5,11 +5,7 @@
         },
         "country": {
             "name": "Netherlands",
-            "code": "NL",
-            "currency": {
-                "code": "EUR",
-                "symbol": "€"
-            }
+            "code": "NL"
         },
         "countryInputPlaceholderLabel": "countryInputPlaceholder",
         "countryDetectedLabel": "countryDetected",

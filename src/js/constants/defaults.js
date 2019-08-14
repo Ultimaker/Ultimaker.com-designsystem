@@ -12,10 +12,6 @@ export default {
     country: {
         name: 'United States of America',
         code: 'US',
-        currency: {
-            code: 'USD',
-            symbol: '$',
-        },
     },
     language: 'en',
     breakpoints: {

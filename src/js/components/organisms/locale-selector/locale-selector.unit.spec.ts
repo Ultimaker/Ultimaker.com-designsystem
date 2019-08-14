@@ -18,7 +18,7 @@ describe('components', () => {
             it('should display the current selected country', () => {
                 const vm = mount(buildOptions);
 
-                expect(vm.currentCountryLabel).toEqual('Netherlands - €');
+                expect(vm.currentCountryLabel).toEqual('Netherlands');
                 expect(vm.currentCountryAriaLabel).toEqual('Change your country, currently: Netherlands');
                 vm.$destroy();
             });
