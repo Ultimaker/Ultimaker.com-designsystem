@@ -269,7 +269,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .card > :last-child, .card__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .content-cover--cover > :last-child, .hero--article > :last-child, .hero--cover > :last-child, .hero--product .hero__link-list > :last-child, .tabbed-content > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .ubr > :last-child, .ubr .ubr__description > :last-child, .ubr .ubr__list > :last-child, .colors .colors__swatches > :last-child, .content-cover--cover > :last-child, .hero--article > :last-child, .hero--cover > :last-child, .hero--product .hero__link-list > :last-child, .tabbed-content > :last-child {
   margin-bottom: 0; }
 
 .examples .examples__link--large {
@@ -4190,33 +4190,6 @@ th {
 
 .block-icon__link {
   margin-bottom: 0; }
-
-.card {
-  max-width: 600px;
-  margin-bottom: 12px; }
-  @media (max-width: 1024px) {
-    .card {
-      margin-bottom: 48px; } }
-  @media (min-width: 768px) {
-    .card {
-      margin-bottom: 24px; } }
-
-.card__visual {
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 569px) {
-    .card__visual {
-      margin: 0 auto 24px; } }
-
-.card__icon,
-.card__image {
-  width: 100%; }
-
-.card__icon {
-  height: 100%; }
-
-.card__content {
-  width: 100%; }
 
 .brand-card__image-wrapper {
   width: 120px;

@@ -268,7 +268,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--article > :last-child, .um-components .hero--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .tabbed-content > :last-child {
+.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--article > :last-child, .um-components .hero--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .tabbed-content > :last-child {
   margin-bottom: 0; }
 
 .um-components .examples .examples__link--large {
@@ -3686,33 +3686,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .block-icon__link {
   margin-bottom: 0; }
-
-.um-components .card {
-  max-width: 600px;
-  margin-bottom: 12px; }
-  @media (max-width: 1024px) {
-    .um-components .card {
-      margin-bottom: 48px; } }
-  @media (min-width: 768px) {
-    .um-components .card {
-      margin-bottom: 24px; } }
-
-.um-components .card__visual {
-  margin: 0 auto 18px;
-  overflow: hidden; }
-  @media (min-width: 569px) {
-    .um-components .card__visual {
-      margin: 0 auto 24px; } }
-
-.um-components .card__icon,
-.um-components .card__image {
-  width: 100%; }
-
-.um-components .card__icon {
-  height: 100%; }
-
-.um-components .card__content {
-  width: 100%; }
 
 .um-components .brand-card__image-wrapper {
   width: 120px;
