@@ -14,7 +14,6 @@ export { default as HeroCover } from 'organisms/hero-cover';
 export { default as HeroHomepage } from 'organisms/hero-homepage';
 export { default as HeroProduct } from 'organisms/hero-product';
 export { default as LocaleSelector } from 'organisms/locale-selector';
-export { default as OverflowContainer } from 'organisms/overflow-container';
 export { default as Overview } from 'organisms/overview';
 export { default as OverviewUbr } from 'organisms/overview-ubr';
 export { default as PageFooter } from 'organisms/page-footer';

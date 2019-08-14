@@ -69,7 +69,6 @@ function loadStories() {
     const components = require.context('../src/js/components', true, /\.stories\.[jt]s$/);
     const globals = require.context('../src/stories/global', true, /\.stories\.[jt]s$/);
     const molecules = require.context('../src/stories/molecules', true, /\.stories\.[jt]s$/);
-    const organisms = require.context('../src/stories/organisms', true, /\.stories\.[jt]s$/);
     const templates = require.context('../src/stories/templates', true, /\.stories\.[jt]s$/);
 
     require('../src/stories/welcome.stories');
@@ -78,7 +77,6 @@ function loadStories() {
     components.keys().forEach(filename => components(filename));
     globals.keys().forEach(filename => globals(filename));
     molecules.keys().forEach(filename => molecules(filename));
-    organisms.keys().forEach(filename => organisms(filename));
     templates.keys().forEach(filename => templates(filename));
 }
 
