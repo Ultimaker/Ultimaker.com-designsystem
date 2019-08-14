@@ -27,10 +27,6 @@ export default class LocaleSelector extends Vue implements CountrySelectorInterf
     };
 
     get currentCountryLabel() {
-        if (this.country && this.country.currency && this.country.currency.symbol) {
-            return `${this.country.name} - ${this.country.currency.symbol}`;
-        }
-
         if (this.country) {
             return `${this.country.name}`;
         }
