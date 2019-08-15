@@ -1,3 +1,3 @@
-import SysNav from './sys-nav';
+/** @format */
 
-export default SysNav;
+export { SysNav as default } from './sys-nav';

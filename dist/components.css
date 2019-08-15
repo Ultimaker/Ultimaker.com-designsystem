@@ -256,12 +256,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .hero--product .hero__linklist, .subnavigation__list, dl, dt, dd {
+.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .sys-nav__list, .sys-nav__item, .hero--product .hero__linklist, .subnavigation__list, dl, dt, dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .hero--product .hero__linklist, .subnavigation__list {
+.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .sys-nav__list, .sys-nav__item, .hero--product .hero__linklist, .subnavigation__list {
   list-style: none; }
 
 .list__item, .link-list__item, .flyout__list-item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
@@ -3557,66 +3557,6 @@ th {
   white-space: nowrap;
   width: 1px; }
 
-.sys-nav {
-  order: 20;
-  opacity: 1;
-  transition: opacity 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000), transform 0s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
-  .main-nav--open + .sys-nav {
-    opacity: 0;
-    transition: opacity 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000), transform 0s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000);
-    transform: scale(0); }
-  @media (min-width: 1025px) {
-    .sys-nav {
-      flex: 0 1 auto;
-      order: 30; } }
-
-.sys-nav__list {
-  display: flex;
-  height: 24px;
-  text-align: right;
-  vertical-align: middle; }
-
-.sys-nav__item {
-  margin-top: -6px;
-  flex: 0 1 auto;
-  z-index: 1;
-  margin-right: 12px;
-  cursor: pointer; }
-  .sys-nav__item:last-child {
-    margin-right: 0; }
-
-.sys-nav__link, .search-bar__button,
-.um-components .search-bar__button {
-  background: transparent; }
-
-.sys-nav__label {
-  margin: 0 6px 0 12px;
-  white-space: nowrap;
-  user-select: none; }
-
-.sys-nav__label--hidden-sm {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px; }
-
-@media (min-width: 1201px) {
-  .sys-nav__label--hidden-sm {
-    border: initial;
-    clip: initial;
-    clip-path: initial;
-    height: auto;
-    overflow: initial;
-    padding: initial;
-    position: relative;
-    white-space: initial;
-    width: auto; } }
-
 .social-nav__item {
   display: inline-block;
   margin-bottom: 0; }
@@ -4615,7 +4555,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     color: #fff;
     background: rgba(255, 255, 255, 0.08); }
 
-.icon-button__icon, .sys-nav__icon, .social-nav__icon {
+.icon-button__icon, .social-nav__icon, .sys-nav__icon {
   font-size: 24px; }
 
 .icon-button__label {
@@ -4623,8 +4563,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   white-space: nowrap;
   user-select: none; }
 
-.icon-button--small, .sys-nav__link, .search-bar__button,
-.um-components .search-bar__button, .social-nav__link {
+.icon-button--small, .social-nav__link, .sys-nav__link, .search-bar__button,
+.um-components .search-bar__button {
   padding: 6px;
   height: 36px; }
 
@@ -4647,7 +4587,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .icon-button--reversed .icon-button__label {
     margin-left: 6px;
     margin-right: 12px; }
-  .icon-button--reversed .icon-button__icon, .icon-button--reversed .sys-nav__icon, .icon-button--reversed .social-nav__icon {
+  .icon-button--reversed .icon-button__icon, .icon-button--reversed .social-nav__icon, .icon-button--reversed .sys-nav__icon {
     margin-left: auto; }
 
 .icon-button--underline-large {
@@ -4668,7 +4608,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-bottom: 31px; } }
   .icon-button--underline-large, .icon-button--underline-large:hover {
     background-color: transparent; }
-  .icon-button--underline-large .icon-button__icon, .icon-button--underline-large .sys-nav__icon, .icon-button--underline-large .social-nav__icon {
+  .icon-button--underline-large .icon-button__icon, .icon-button--underline-large .social-nav__icon, .icon-button--underline-large .sys-nav__icon {
     position: absolute;
     top: 12px;
     left: 8px;
@@ -5577,6 +5517,67 @@ dd {
     background-color: #000; }
   .tabs__contents .container, .tabs__contents .footer__container {
     padding-bottom: 0; }
+
+/** @format */
+.sys-nav {
+  order: 20;
+  opacity: 1;
+  transition: opacity 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000), transform 0s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
+  .main-nav--open + .sys-nav {
+    opacity: 0;
+    transition: opacity 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000), transform 0s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    transform: scale(0); }
+  @media (min-width: 1025px) {
+    .sys-nav {
+      flex: 0 1 auto;
+      order: 30; } }
+
+.sys-nav__list {
+  display: flex;
+  height: 24px;
+  text-align: right;
+  vertical-align: middle; }
+
+.sys-nav__item {
+  margin-top: -6px;
+  flex: 0 1 auto;
+  z-index: 1;
+  margin-right: 12px;
+  cursor: pointer; }
+  .sys-nav__item:last-child {
+    margin-right: 0; }
+
+.sys-nav__link, .search-bar__button,
+.um-components .search-bar__button {
+  background: transparent; }
+
+.sys-nav__label {
+  margin: 0 6px 0 12px;
+  white-space: nowrap;
+  user-select: none; }
+
+.sys-nav__label--hidden-sm {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+@media (min-width: 1201px) {
+  .sys-nav__label--hidden-sm {
+    border: initial;
+    clip: initial;
+    clip-path: initial;
+    height: auto;
+    overflow: initial;
+    padding: initial;
+    position: relative;
+    white-space: initial;
+    width: auto; } }
 
 /** @format */
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brands:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
