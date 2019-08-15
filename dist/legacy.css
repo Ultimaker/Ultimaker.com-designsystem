@@ -5055,6 +5055,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     width: auto; } }
 
 /** @format */
+/** @format */
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even) {
   background-color: #fafafa; }
 

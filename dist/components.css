@@ -5580,6 +5580,7 @@ dd {
     width: auto; } }
 
 /** @format */
+/** @format */
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brands:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
   background-color: #fafafa; }
 
