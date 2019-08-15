@@ -256,12 +256,20 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
+<<<<<<< HEAD
 .caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .hero--product .hero__linklist, .subnavigation__list, dl, dt, dd {
+=======
+.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .overflow-container__list, .hero--product .hero__linklist, dl, dt, dd {
+>>>>>>> chore(refactor): refactor tabs
   border: 0;
   padding: 0;
   margin: 0; }
 
+<<<<<<< HEAD
 .caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .hero--product .hero__linklist, .subnavigation__list {
+=======
+.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .overflow-container__list, .hero--product .hero__linklist {
+>>>>>>> chore(refactor): refactor tabs
   list-style: none; }
 
 .list__item, .link-list__item, .flyout__list-item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
@@ -3739,67 +3747,6 @@ th {
       .tablist__section .tablist__scroll-hint {
         display: none; } }
 
-.tabs {
-  margin-top: -36px;
-  margin-bottom: 60px; }
-  @media (min-width: 768px) {
-    .tabs {
-      margin-bottom: 54px;
-      margin-top: -37.2px; } }
-  .tabs__nav {
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    overflow: hidden;
-    user-select: none;
-    will-change: transform; }
-  .tabs__list {
-    display: flex;
-    padding: 0;
-    border-bottom: 2px solid #eaeaea;
-    overflow-x: scroll; }
-    .tabs__list::-webkit-scrollbar-track {
-      background-color: transparent; }
-    .tabs__list::-webkit-scrollbar {
-      height: 0px;
-      background-color: transparent; }
-    .tabs__list::-webkit-scrollbar-thumb {
-      background-color: transparent; }
-  .tabs__list_item {
-    flex: 0 1 auto;
-    text-align: center; }
-  .tabs__list_link {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    min-width: 60px;
-    margin-bottom: 0;
-    color: #000;
-    font-size: 14px;
-    line-height: 21px;
-    padding: 9.5px 12px;
-    white-space: nowrap; }
-    .tabs__list_link:hover, .tabs__list_link--active {
-      color: #000; }
-      .tabs__list_link:hover .sub-nav__label:after, .tabs__list_link--active .sub-nav__label:after {
-        width: 100%; }
-    .tabs__list_link > span {
-      margin-right: 6px; }
-  .tabs__indicator {
-    position: absolute;
-    z-index: 1;
-    display: block;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #000; }
-  .tabs__contents .container, .tabs__contents .footer__container {
-    padding-bottom: 0; }
-
 .pager {
   position: relative;
   white-space: nowrap;
@@ -5578,7 +5525,73 @@ dd {
       border-top: 0; } }
 
 /** @format */
+<<<<<<< HEAD
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brands:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
+=======
+.tabs {
+  margin-top: -36px;
+  margin-bottom: 60px; }
+  @media (min-width: 768px) {
+    .tabs {
+      margin-bottom: 54px;
+      margin-top: -37.2px; } }
+  .tabs__nav {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    user-select: none;
+    will-change: transform; }
+  .tabs__list {
+    display: flex;
+    padding: 0;
+    border-bottom: 2px solid #eaeaea;
+    overflow-x: scroll; }
+    .tabs__list::-webkit-scrollbar-track {
+      background-color: transparent; }
+    .tabs__list::-webkit-scrollbar {
+      height: 0px;
+      background-color: transparent; }
+    .tabs__list::-webkit-scrollbar-thumb {
+      background-color: transparent; }
+  .tabs__list_item {
+    flex: 0 1 auto;
+    text-align: center; }
+  .tabs__list_link {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    min-width: 60px;
+    margin-bottom: 0;
+    color: #000;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 9.5px 12px;
+    white-space: nowrap; }
+    .tabs__list_link:hover, .tabs__list_link--active {
+      color: #000; }
+      .tabs__list_link:hover .sub-nav__label:after, .tabs__list_link--active .sub-nav__label:after {
+        width: 100%; }
+    .tabs__list_link > span {
+      margin-right: 6px; }
+  .tabs__indicator {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #000; }
+  .tabs__contents .container, .tabs__contents .footer__container {
+    padding-bottom: 0; }
+
+/** @format */
+main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
+>>>>>>> chore(refactor): refactor tabs
   background-color: #fafafa; }
 
 .preferences-bar {

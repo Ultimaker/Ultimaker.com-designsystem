@@ -1,3 +1,3 @@
-import Tabs from './tabs';
+/** @format */
 
-export default Tabs;
+export { Tabs as default } from './tabs';
