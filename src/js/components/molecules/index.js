@@ -44,7 +44,7 @@ export { default as SearchBarPage } from 'molecules/search-bar-page';
 export { default as SocialNav } from 'molecules/social-nav';
 export { default as SearchResult } from 'molecules/search-result';
 export { default as SocialSharing } from 'molecules/social-sharing';
-export { default as SubNavigationItem } from 'molecules/subnavigation-item';
+export { default as SubNavigationItem } from 'molecules/sub-navigation-item';
 export { default as SysNav } from 'molecules/sys-nav';
 export { default as Tab } from 'molecules/tab';
 export { default as Tabs } from 'molecules/tabs';
