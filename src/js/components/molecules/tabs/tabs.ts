@@ -5,7 +5,7 @@ import ViewportUtil from 'utils/viewport';
 import { TweenLite, Power3, Power2 } from 'gsap';
 import Defaults from 'constants/defaults';
 
-import { Tab as TabInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/tab/Tab';
+import { TabsProps } from './tabs.models';
 import WithRender from './tabs.vue.html';
 
 @WithRender
@@ -13,10 +13,10 @@ import WithRender from './tabs.vue.html';
     name: 'Tabs',
 })
 
-export default class Tabs extends Vue {
-    @Prop({ type: Array, required: true }) tabs!: TabInterface[];
-    @Prop({ type: Number, default: 0 }) defaultTab!: number;
-    @Prop({ type: Boolean, required: true }) sequenced!: boolean;
+export class Tabs extends Vue implements TabsProps {
+    @Prop({ type: Array, required: true }) tabs!: TabsProps['tabs'];
+    @Prop({ type: Number, default: 0 }) defaultTab!: TabsProps['defaultTab'];
+    @Prop({ type: Boolean, required: true }) sequenced!: TabsProps['sequenced'];
 
     private activeTab: number = 0;
     private viewportUtil = new ViewportUtil();
