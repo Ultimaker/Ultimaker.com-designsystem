@@ -1,7 +1,0 @@
-<div :id="id" class="tabs__content" v-show="active" role="tabpanel" :aria-hidden="!active" :aria-label="label">
-    <template v-show="content">
-        <component :is="content.type"
-                   v-bind="content">
-        </component>
-    </template>
-</div>

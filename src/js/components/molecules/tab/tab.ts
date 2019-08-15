@@ -1,20 +1,15 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
-import { Tab as TabInterface } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/tab/Tab';
-
-interface TabImplementationInterface extends TabInterface {
-    id: any;
-    active: boolean;
-}
-
+import { TabProps } from './tab.models';
+import WithRender from './tab.vue.html';
+@WithRender
 @Component({
     name: 'Tab',
-    template: require('./tab.html'),
 })
 
-export default class Tab extends Vue implements TabImplementationInterface {
-    @Prop({ type: String, required: true }) public id!:TabImplementationInterface['id'];
-    @Prop({ type: String, required: true }) label!: TabImplementationInterface['label'];
-    @Prop({ type: Object, required: true }) content!: TabImplementationInterface['content'];
-    @Prop({ type: Boolean, required: true }) active!: TabImplementationInterface['active'];
+export class Tab extends Vue implements TabProps {
+    @Prop({ type: String, required: true }) public id!:TabProps['id'];
+    @Prop({ type: String, required: true }) label!: TabProps['label'];
+    @Prop({ type: Object, required: true }) content!: TabProps['content'];
+    @Prop({ type: Boolean, required: true }) active!: TabProps['active'];
 }

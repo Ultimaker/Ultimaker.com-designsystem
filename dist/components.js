@@ -14541,11 +14541,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _tab = __webpack_require__(348);
 
-var _tab2 = _interopRequireDefault(_tab);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _tab2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _tab.Tab;
+  }
+});
 
 /***/ }),
 /* 348 */
@@ -14557,6 +14558,7 @@ exports.default = _tab2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Tab = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -14595,17 +14597,28 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Tab.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Tab.prototype, "content", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tab.prototype, "active", void 0);
-Tab = __decorate([(0, _vuePropertyDecorator.Component)({
+exports.Tab = Tab = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'Tab',
     template: __webpack_require__(349)
 })], Tab);
-exports.default = Tab;
+exports.Tab = Tab;
 
 /***/ }),
 /* 349 */
 /***/ (function(module, exports) {
 
-module.exports = "<div :id=\"id\" class=\"tabs__content\" v-show=\"active\" role=\"tabpanel\" :aria-hidden=\"!active\" :aria-label=\"label\">\n    <template v-show=\"content\">\n        <component :is=\"content.type\"\n                   v-bind=\"content\">\n        </component>\n    </template>\n</div>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.active),expression:"active"}],staticClass:"tabs__content",attrs:{"id":_vm.id,"role":"tabpanel","aria-hidden":!_vm.active,"aria-label":_vm.label}},[[_c(_vm.content.type,_vm._b({tag:"component"},'component',_vm.content,false))]],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 350 */
