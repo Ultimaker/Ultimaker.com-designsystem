@@ -14620,11 +14620,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _tabs = __webpack_require__(351);
 
-var _tabs2 = _interopRequireDefault(_tabs);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _tabs2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _tabs.Tabs;
+  }
+});
 
 /***/ }),
 /* 351 */
@@ -14636,6 +14637,7 @@ exports.default = _tabs2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Tabs = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -14799,14 +14801,14 @@ var Tabs = function (_Vue) {
 
     return Tabs;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], Tabs.prototype, "tabs", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Number)], Tabs.prototype, "defaultTab", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], Tabs.prototype, "sequenced", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Tabs.prototype, "tabs", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Object)], Tabs.prototype, "defaultTab", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tabs.prototype, "sequenced", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('activeTab'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], Tabs.prototype, "setActiveTab", null);
-Tabs = __decorate([_tabsVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.Tabs = Tabs = __decorate([_tabsVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'Tabs'
 })], Tabs);
-exports.default = Tabs;
+exports.Tabs = Tabs;
 
 /***/ }),
 /* 352 */
