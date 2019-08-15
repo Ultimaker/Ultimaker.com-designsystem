@@ -7212,12 +7212,12 @@ Object.defineProperty(exports, 'SocialSharing', {
   }
 });
 
-var _subnavigationItem = __webpack_require__(341);
+var _subNavigationItem = __webpack_require__(341);
 
 Object.defineProperty(exports, 'SubNavigationItem', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_subnavigationItem).default;
+    return _interopRequireDefault(_subNavigationItem).default;
   }
 });
 
@@ -14340,13 +14340,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _subnavigationItem = __webpack_require__(342);
+var _subNavigationItem = __webpack_require__(342);
 
-var _subnavigationItem2 = _interopRequireDefault(_subnavigationItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _subnavigationItem2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _subNavigationItem.SubNavigationItem;
+  }
+});
 
 /***/ }),
 /* 342 */
@@ -14358,14 +14359,15 @@ exports.default = _subnavigationItem2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.SubNavigationItem = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _subnavigationItemVue = __webpack_require__(343);
+var _subNavigationItemVue = __webpack_require__(343);
 
-var _subnavigationItemVue2 = _interopRequireDefault(_subnavigationItemVue);
+var _subNavigationItemVue2 = _interopRequireDefault(_subNavigationItemVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14401,10 +14403,10 @@ var SubNavigationItem = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SubNavigationItem.prototype, "url", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], SubNavigationItem.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SubNavigationItem.prototype, "label", void 0);
-SubNavigationItem = __decorate([_subnavigationItemVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.SubNavigationItem = SubNavigationItem = __decorate([_subNavigationItemVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'SubNavigationItem'
 })], SubNavigationItem);
-exports.default = SubNavigationItem;
+exports.SubNavigationItem = SubNavigationItem;
 
 /***/ }),
 /* 343 */
