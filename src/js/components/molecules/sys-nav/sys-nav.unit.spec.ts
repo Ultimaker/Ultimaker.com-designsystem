@@ -1,34 +1,33 @@
+/** @format */
+
+import 'babel-polyfill';
 import { build } from 'vuenit';
-import SysNav from './sys-nav';
+
+import { data } from './data/sys-nav.data';
+import { SysNav } from './sys-nav';
 
 describe('components', () => {
     describe('molecules', () => {
         describe('sys-nav', () => {
-            const mount = build(SysNav, {
-                props: {
-                    searchLabel: 'Search',
-                    orderNowLabel: 'Order now',
-                },
-            });
+            const mount = build(SysNav, { props: {} });
 
-            it('should render a system navigation', () => {
+            it('should render an SysNav component', () => {
                 const vm = mount();
-
                 expect(vm.$el).toBeDefined();
                 vm.$destroy();
             });
+        });
 
-            it('should emit an event when searchButton is pressed', () => {
-                const vm = mount();
-                spyOn(vm, '$emit');
+        Object.keys(data).forEach((key) => {
+            describe(`sys-nav ${key} props`, () => {
+                const props = data[key];
+                const mount = build(SysNav, { props });
 
-                // @ts-ignore
-                const clickEvent = new window.Event('click');
-                const searchButton = vm.$el.querySelector('[role=button]');
-
-                searchButton.dispatchEvent(clickEvent);
-                expect(vm.$emit).toHaveBeenCalledWith('open-search');
-                vm.$destroy();
+                it(`should render an SysNav component with ${key} props`, () => {
+                    const vm = mount();
+                    expect(vm.$el).toBeDefined();
+                    vm.$destroy();
+                });
             });
         });
     });
