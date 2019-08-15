@@ -14435,11 +14435,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _sysNav = __webpack_require__(345);
 
-var _sysNav2 = _interopRequireDefault(_sysNav);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _sysNav2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _sysNav.SysNav;
+  }
+});
 
 /***/ }),
 /* 345 */
@@ -14451,6 +14452,7 @@ exports.default = _sysNav2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.SysNav = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -14500,15 +14502,15 @@ var SysNav = function (_Vue) {
 
     return SysNav;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'store' }), __metadata("design:type", String)], SysNav.prototype, "orderNowIcon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SysNav.prototype, "orderNowLink", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SysNav.prototype, "orderNowLabel", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'search' }), __metadata("design:type", String)], SysNav.prototype, "searchIcon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SysNav.prototype, "searchLabel", void 0);
-SysNav = __decorate([_sysNavVue2.default, (0, _vuePropertyDecorator.Component)({
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'store' }), __metadata("design:type", Object)], SysNav.prototype, "orderNowIcon", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "orderNowLink", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "orderNowLabel", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'search' }), __metadata("design:type", Object)], SysNav.prototype, "searchIcon", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "searchLabel", void 0);
+exports.SysNav = SysNav = __decorate([_sysNavVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'sys-nav'
 })], SysNav);
-exports.default = SysNav;
+exports.SysNav = SysNav;
 
 /***/ }),
 /* 346 */
@@ -14563,6 +14565,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _tabVue = __webpack_require__(349);
+
+var _tabVue2 = _interopRequireDefault(_tabVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -14596,9 +14604,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Tab.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Tab.prototype, "content", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tab.prototype, "active", void 0);
-exports.Tab = Tab = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'Tab',
-    template: __webpack_require__(349)
+exports.Tab = Tab = __decorate([_tabVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Tab'
 })], Tab);
 exports.Tab = Tab;
 

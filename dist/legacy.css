@@ -256,12 +256,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list, .um-components dl, .um-components dt, .um-components dd {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list, .um-components dl, .um-components dt, .um-components dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list {
   list-style: none; }
 
 .um-components .list__item, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
@@ -3063,65 +3063,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   white-space: nowrap;
   width: 1px; }
 
-.um-components .sys-nav {
-  order: 20;
-  opacity: 1;
-  transition: opacity 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000), transform 0s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
-  .um-components .main-nav--open + .sys-nav {
-    opacity: 0;
-    transition: opacity 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000), transform 0s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000);
-    transform: scale(0); }
-  @media (min-width: 1025px) {
-    .um-components .sys-nav {
-      flex: 0 1 auto;
-      order: 30; } }
-
-.um-components .sys-nav__list {
-  display: flex;
-  height: 24px;
-  text-align: right;
-  vertical-align: middle; }
-
-.um-components .sys-nav__item {
-  margin-top: -6px;
-  flex: 0 1 auto;
-  z-index: 1;
-  margin-right: 12px;
-  cursor: pointer; }
-  .um-components .sys-nav__item:last-child {
-    margin-right: 0; }
-
-.um-components .sys-nav__link, .um-components .search-bar__button, .um-components .um-components .search-bar__button {
-  background: transparent; }
-
-.um-components .sys-nav__label {
-  margin: 0 6px 0 12px;
-  white-space: nowrap;
-  user-select: none; }
-
-.um-components .sys-nav__label--hidden-sm {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px; }
-
-@media (min-width: 1201px) {
-  .um-components .sys-nav__label--hidden-sm {
-    border: initial;
-    clip: initial;
-    clip-path: initial;
-    height: auto;
-    overflow: initial;
-    padding: initial;
-    position: relative;
-    white-space: initial;
-    width: auto; } }
-
 .um-components .social-nav__item {
   display: inline-block;
   margin-bottom: 0; }
@@ -4113,7 +4054,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     color: #fff;
     background: rgba(255, 255, 255, 0.08); }
 
-.um-components .icon-button__icon, .um-components .sys-nav__icon, .um-components .social-nav__icon {
+.um-components .icon-button__icon, .um-components .social-nav__icon, .um-components .sys-nav__icon {
   font-size: 24px; }
 
 .um-components .icon-button__label {
@@ -4121,7 +4062,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   white-space: nowrap;
   user-select: none; }
 
-.um-components .icon-button--small, .um-components .sys-nav__link, .um-components .search-bar__button, .um-components .um-components .search-bar__button, .um-components .social-nav__link {
+.um-components .icon-button--small, .um-components .social-nav__link, .um-components .sys-nav__link, .um-components .search-bar__button, .um-components .um-components .search-bar__button {
   padding: 6px;
   height: 36px; }
 
@@ -4144,7 +4085,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .icon-button--reversed .icon-button__label {
     margin-left: 6px;
     margin-right: 12px; }
-  .um-components .icon-button--reversed .icon-button__icon, .um-components .icon-button--reversed .sys-nav__icon, .um-components .icon-button--reversed .social-nav__icon {
+  .um-components .icon-button--reversed .icon-button__icon, .um-components .icon-button--reversed .social-nav__icon, .um-components .icon-button--reversed .sys-nav__icon {
     margin-left: auto; }
 
 .um-components .icon-button--underline-large {
@@ -4165,7 +4106,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-bottom: 31px; } }
   .um-components .icon-button--underline-large, .um-components .icon-button--underline-large:hover {
     background-color: transparent; }
-  .um-components .icon-button--underline-large .icon-button__icon, .um-components .icon-button--underline-large .sys-nav__icon, .um-components .icon-button--underline-large .social-nav__icon {
+  .um-components .icon-button--underline-large .icon-button__icon, .um-components .icon-button--underline-large .social-nav__icon, .um-components .icon-button--underline-large .sys-nav__icon {
     position: absolute;
     top: 12px;
     left: 8px;
@@ -5052,6 +4993,66 @@ because both families serve another purpose. Therefore the line-heights will be 
     background-color: #000; }
   .um-components .tabs__contents .container, .um-components .tabs__contents .footer__container {
     padding-bottom: 0; }
+
+/** @format */
+.um-components .sys-nav {
+  order: 20;
+  opacity: 1;
+  transition: opacity 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000), transform 0s 0s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
+  .um-components .main-nav--open + .sys-nav {
+    opacity: 0;
+    transition: opacity 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000), transform 0s 0.2s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    transform: scale(0); }
+  @media (min-width: 1025px) {
+    .um-components .sys-nav {
+      flex: 0 1 auto;
+      order: 30; } }
+
+.um-components .sys-nav__list {
+  display: flex;
+  height: 24px;
+  text-align: right;
+  vertical-align: middle; }
+
+.um-components .sys-nav__item {
+  margin-top: -6px;
+  flex: 0 1 auto;
+  z-index: 1;
+  margin-right: 12px;
+  cursor: pointer; }
+  .um-components .sys-nav__item:last-child {
+    margin-right: 0; }
+
+.um-components .sys-nav__link, .um-components .search-bar__button, .um-components .um-components .search-bar__button {
+  background: transparent; }
+
+.um-components .sys-nav__label {
+  margin: 0 6px 0 12px;
+  white-space: nowrap;
+  user-select: none; }
+
+.um-components .sys-nav__label--hidden-sm {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
+@media (min-width: 1201px) {
+  .um-components .sys-nav__label--hidden-sm {
+    border: initial;
+    clip: initial;
+    clip-path: initial;
+    height: auto;
+    overflow: initial;
+    padding: initial;
+    position: relative;
+    white-space: initial;
+    width: auto; } }
 
 /** @format */
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even) {

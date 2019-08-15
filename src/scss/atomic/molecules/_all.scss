@@ -10,7 +10,6 @@
 @import 'tag';
 @import 'container';
 @import "flyout";
-@import 'sys-nav';
 @import 'social-nav';
 @import 'notification';
 @import 'country-selector';
@@ -73,3 +72,5 @@
 
 @import '~molecules/article-description-list/article-description-list';
 @import '~molecules/tabs/tabs';
+@import '~molecules/sys-nav/sys-nav';
+

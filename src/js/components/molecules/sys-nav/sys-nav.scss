@@ -1,0 +1,69 @@
+/** @format */
+
+.sys-nav {
+    order: 20;
+    opacity: 1;
+    transition: opacity 0.2s ease(easeOutQuint),
+                transform 0s 0s ease(easeOutQuint);
+
+    .main-nav--open + & {
+        opacity: 0;
+        transition: opacity 0.2s ease(easeOutQuint),
+                    transform 0s 0.2s ease(easeOutQuint);
+        transform: scale(0);
+    }
+
+    @include min-desktop {
+        flex: 0 1 auto;
+        order: 30;
+    }
+}
+
+.sys-nav__list {
+    @extend %reset-list;
+    display: flex;
+    height: $navIconHeight;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.sys-nav__item {
+    @extend %reset-list;
+    margin-top: -6px;
+    flex: 0 1 auto;
+    z-index: 1;
+    margin-right: $buildingUnit;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.sys-nav__link {
+    @extend .icon-button;
+    @extend .icon-button--small;
+
+    background: transparent;
+}
+
+.sys-nav__icon {
+    @extend .icon-button__icon;
+}
+
+.sys-nav__label {
+    margin: 0 $buildingUnit / 2 0 $buildingUnit;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.sys-nav__label--hidden-sm  {
+    @include visually-hidden;
+}
+
+.sys-nav__label--hidden-sm {
+    @include min-desktop-hd {
+        @include reset-visually-hidden;
+    }
+}
+
