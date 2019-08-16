@@ -1,12 +1,16 @@
+<!-- @format -->
+
 <div class="hero-homepage">
     <div class="hero-homepage__content">
         <h1 class="hero-homepage__title">
             {{ title }}
         </h1>
         <picture role="presentation" v-if="image">
-            <source :srcset="srcSetWebP" type="image/webp" />
-            <source :srcset="srcSet" />
-            <img :src="image.url" alt="" class="hero-homepage__image" />
+            <source :srcset="srcSetWebpPortrait" type="image/webp" media="(orientation: portrait)" />
+            <source :srcset="srcSetWebp" type="image/webp" media="(orientation: landscape)" />
+            <source :srcset="srcSetPortrait" media="(orientation: portrait)" />
+            <source :srcset="srcSet" media="(orientation: landscape)" />
+            <img :src="`${image.url}?w=1920&h=1080&fit=fill`" alt="" class="hero-homepage__image" />
         </picture>
         <p class="hero-homepage__description" v-if="description">
             {{ description }}

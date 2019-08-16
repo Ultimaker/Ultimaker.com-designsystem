@@ -18,14 +18,28 @@ export default class HeroHomepage extends Vue implements HeroHomepageProps {
     get srcSet(): string {
         if (!this.image) return '';
 
-        const { url } = this.image;
-        return buildSrcSet({ url });
+        const { url, focusArea } = this.image;
+        return buildSrcSet({ url, focusArea });
     }
 
-    get srcSetWebP(): string {
+    get srcSetPortrait(): string {
         if (!this.image) return '';
 
-        const { url } = this.image;
-        return buildSrcSet({ url, webP: true });
+        const { url, focusArea } = this.image;
+        return buildSrcSet({ url, focusArea, portrait: true });
+    }
+
+    get srcSetWebp(): string {
+        if (!this.image) return '';
+
+        const { url, focusArea } = this.image;
+        return buildSrcSet({ url, focusArea, webp: true });
+    }
+
+    get srcSetWebpPortrait(): string {
+        if (!this.image) return '';
+
+        const { url, focusArea } = this.image;
+        return buildSrcSet({ url, focusArea, webp: true, portrait: true });
     }
 }
