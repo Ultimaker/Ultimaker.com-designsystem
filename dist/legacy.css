@@ -268,7 +268,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .hero--article > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .content-cover--cover > :last-child, .um-components .tabbed-content > :last-child, .um-components .hero--cover > :last-child {
+.um-components .block > :last-child, .um-components .flyout__section > :last-child, .um-components .flyout__list-item > :last-child, .um-components .notification--small .notification__content > :last-child, .um-components .notification--small .preferences-bar__content > :last-child, .um-components .notification__content > :last-child, .um-components .preferences-bar__content > :last-child, .um-components .card > :last-child, .um-components .card__content > :last-child, .um-components .business-card__description > :last-child, .um-components .content-block > :last-child, .um-components .content-block__content > :last-child, .um-components .ubr > :last-child, .um-components .ubr .ubr__description > :last-child, .um-components .ubr .ubr__list > :last-child, .um-components .colors .colors__swatches > :last-child, .um-components .content-cover--cover > :last-child, .um-components .hero--article > :last-child, .um-components .hero--cover > :last-child, .um-components .hero--product .hero__link-list > :last-child, .um-components .tabbed-content > :last-child {
   margin-bottom: 0; }
 
 .um-components .examples .examples__link--large {
@@ -5629,6 +5629,80 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .colors .colors__image--loading {
     opacity: 0; }
 
+.um-components .content-cover--cover {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px; }
+  .um-components .content-cover--cover-reset p:last-child, .um-components .content-cover--cover-reset strong:last-child, .um-components .content-cover--cover-reset .tablist__section .tablist__item:last-child, .um-components .tablist__section .content-cover--cover-reset .tablist__item:last-child, .um-components .content-cover--cover-reset .examples .examples__tabs .tablist__item:last-child, .um-components .examples .examples__tabs .content-cover--cover-reset .tablist__item:last-child {
+    margin-bottom: 0; }
+
+.um-components .content-cover__image--overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: -6px; }
+  @media (min-width: 768px) {
+    .um-components .content-cover__image--overlay {
+      display: block; } }
+
+.um-components .content-cover-content {
+  margin-top: 24px; }
+  @media (min-width: 768px) {
+    .um-components .content-cover-content {
+      margin-top: 0;
+      z-index: 40;
+      display: flex;
+      justify-content: center;
+      padding-left: 48px;
+      flex-direction: column;
+      height: 100%;
+      top: 0;
+      position: absolute; } }
+
+@media (min-width: 768px) {
+  .um-components .content-cover__title {
+    color: #fff; } }
+
+@media (min-width: 768px) {
+  .um-components .content-cover__description {
+    color: #fff; } }
+
+@media (min-width: 768px) {
+  .um-components .content-cover__link.link, .um-components .content-cover__link.toggle, .um-components .content-cover__link.overflow-container__link:hover, .um-components .content-cover__link.overflow-container__link.exact-active {
+    color: #fff; } }
+
+.um-components .content-general {
+  margin-top: 60px; }
+  .um-components .content-general .flexgrid--gutter {
+    margin: 0; }
+
+.um-components .content-general__image {
+  order: 1;
+  margin: 0 auto 30px auto;
+  position: relative;
+  padding: 0 6px; }
+  @media (min-width: 768px) {
+    .um-components .content-general__image {
+      order: inherit;
+      margin: auto; } }
+
+.um-components .content-general__image-wrapper {
+  width: 75%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .um-components .content-general__image-wrapper {
+      width: 100%; } }
+
+.um-components .content-general__content {
+  order: 2;
+  margin-bottom: -12px; }
+  @media (min-width: 768px) {
+    .um-components .content-general__content {
+      order: inherit; } }
+
 @media (min-width: 569px) {
   .um-components .content-highlight__container {
     padding-bottom: 60px; } }
@@ -5723,6 +5797,104 @@ because both families serve another purpose. Therefore the line-heights will be 
   width: 100%;
   height: 100%; }
 
+/** @format */
+.um-components .hero__image {
+  position: relative;
+  width: 75%;
+  margin: 0 auto 30px; }
+  @media (min-width: 569px) {
+    .um-components .hero__image {
+      width: 100%;
+      margin: 0 auto 0 30px; } }
+
+/** @format */
+.um-components .hero--cover {
+  position: relative;
+  padding-bottom: 60px; }
+  .um-components .hero--cover-reset p:last-child, .um-components .hero--cover-reset strong:last-child, .um-components .hero--cover-reset .tablist__section .tablist__item:last-child, .um-components .tablist__section .hero--cover-reset .tablist__item:last-child, .um-components .hero--cover-reset .examples .examples__tabs .tablist__item:last-child, .um-components .examples .examples__tabs .hero--cover-reset .tablist__item:last-child {
+    margin-bottom: 0; }
+  .um-components .hero--cover .copy--intro,
+  .um-components .hero--cover .link--large {
+    color: #fff; }
+
+.um-components .hero-cover__headline {
+  color: #fff; }
+
+.um-components .hero-cover__image--full {
+  object-fit: cover; }
+
+.um-components .hero-cover__image--overlay {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.um-components .hero-cover__image--full,
+.um-components .hero-cover__image--overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.um-components .hero-cover__image--full,
+.um-components .hero-cover__image--overlay,
+.um-components .hero--cover__container {
+  min-height: 320px; }
+
+/** @format */
+.um-components .hero-homepage {
+  position: relative; }
+  .um-components .hero-homepage::after {
+    background-color: rgba(0, 0, 0, 0.65);
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1; }
+
+.um-components .hero-homepage__content {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: calc(100vh - 60px);
+  padding: 60px 24px;
+  text-align: center; }
+
+.um-components .hero-homepage__title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.125;
+  margin: 0 0 48px; }
+  @media (min-width: 1025px) {
+    .um-components .hero-homepage__title {
+      font-size: 54px;
+      line-height: 1.1111;
+      margin: 0 0 72px;
+      max-width: 678px; } }
+
+.um-components .hero-homepage__description {
+  font-size: 16px;
+  margin: 0 0 36px; }
+  @media (min-width: 1025px) {
+    .um-components .hero-homepage__description {
+      font-size: 24px;
+      line-height: 1.25;
+      margin: 0 0 48px;
+      max-width: 852px; } }
+
+.um-components .hero-homepage__image {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1; }
+
 .um-components .hero--product .hero__products {
   display: flex;
   flex-direction: column;
@@ -5764,6 +5936,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .hero--product .hero__linklist-link {
   margin-bottom: 6px; }
 
+/** @format */
+/* no unique css required as of yet */
 /** @format */
 /** @format */
 /*
@@ -5967,6 +6141,69 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .sys-nav-slide-enter-active, .um-components .sys-nav-slide-leave-active {
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+.um-components .search-results {
+  margin-bottom: 60px; }
+
+.um-components .search-results__title {
+  font-size: 32px;
+  text-align: center; }
+
+.um-components .search-results__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 12px; }
+
+.um-components .search-results__list-item {
+  margin: 0 0 12px; }
+
+.um-components .search-results__footer {
+  padding-top: 24px;
+  text-align: center; }
+
+.um-components .search-results .search-bar-page {
+  margin-top: 84px;
+  margin-bottom: 84px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center; }
+
+.um-components .search-results .search-bar-page__input {
+  width: calc(100% - 60px); }
+  @media (min-width: 768px) {
+    .um-components .search-results .search-bar-page__input {
+      width: calc(50%); } }
+
+/** @format */
+@media (min-width: 768px) {
+  .um-components .tabbed-content__header {
+    margin: 0 auto; } }
+
+.um-components .tabbed-content__title {
+  position: relative;
+  margin-bottom: 24px;
+  text-align: center; }
+
+.um-components .tabbed-content__title + .tabbed-content__subtitle {
+  margin-top: 0;
+  margin-bottom: 24px; }
+
+.um-components .tabbed-content__subtitle {
+  position: relative;
+  text-align: center; }
+
 .um-components .table-compare {
   position: relative;
   margin-bottom: 24px; }
@@ -6113,187 +6350,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     left: 0; }
   .um-components .table-compare__scroll-button--right {
     right: 0; }
-
-/** @format */
-/** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-/*
- *  Mixins to support media queries
- *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
- */
-.um-components .search-results {
-  margin-bottom: 60px; }
-
-.um-components .search-results__title {
-  font-size: 32px;
-  text-align: center; }
-
-.um-components .search-results__list {
-  list-style: none;
-  margin: 0;
-  padding: 0 12px; }
-
-.um-components .search-results__list-item {
-  margin: 0 0 12px; }
-
-.um-components .search-results__footer {
-  padding-top: 24px;
-  text-align: center; }
-
-.um-components .search-results .search-bar-page {
-  margin-top: 84px;
-  margin-bottom: 84px;
-  padding-left: 12px;
-  padding-right: 12px;
-  text-align: center; }
-
-.um-components .search-results .search-bar-page__input {
-  width: calc(100% - 60px); }
-  @media (min-width: 768px) {
-    .um-components .search-results .search-bar-page__input {
-      width: calc(50%); } }
-
-.um-components .content-cover--cover {
-  position: relative;
-  overflow: hidden;
-  margin-top: 60px; }
-  .um-components .content-cover--cover-reset p:last-child, .um-components .content-cover--cover-reset strong:last-child, .um-components .content-cover--cover-reset .tablist__section .tablist__item:last-child, .um-components .tablist__section .content-cover--cover-reset .tablist__item:last-child, .um-components .content-cover--cover-reset .examples .examples__tabs .tablist__item:last-child, .um-components .examples .examples__tabs .content-cover--cover-reset .tablist__item:last-child {
-    margin-bottom: 0; }
-
-.um-components .content-cover__image--overlay {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  margin-top: -6px; }
-  @media (min-width: 768px) {
-    .um-components .content-cover__image--overlay {
-      display: block; } }
-
-.um-components .content-cover-content {
-  margin-top: 24px; }
-  @media (min-width: 768px) {
-    .um-components .content-cover-content {
-      margin-top: 0;
-      z-index: 40;
-      display: flex;
-      justify-content: center;
-      padding-left: 48px;
-      flex-direction: column;
-      height: 100%;
-      top: 0;
-      position: absolute; } }
-
-@media (min-width: 768px) {
-  .um-components .content-cover__title {
-    color: #fff; } }
-
-@media (min-width: 768px) {
-  .um-components .content-cover__description {
-    color: #fff; } }
-
-@media (min-width: 768px) {
-  .um-components .content-cover__link.link, .um-components .content-cover__link.toggle, .um-components .content-cover__link.overflow-container__link:hover, .um-components .content-cover__link.overflow-container__link.exact-active {
-    color: #fff; } }
-
-/** @format */
-.um-components .hero__image {
-  position: relative;
-  width: 75%;
-  margin: 0 auto 30px; }
-  @media (min-width: 569px) {
-    .um-components .hero__image {
-      width: 100%;
-      margin: 0 auto 0 30px; } }
-
-.um-components .content-general {
-  margin-top: 60px; }
-  .um-components .content-general .flexgrid--gutter {
-    margin: 0; }
-
-.um-components .content-general__image {
-  order: 1;
-  margin: 0 auto 30px auto;
-  position: relative;
-  padding: 0 6px; }
-  @media (min-width: 768px) {
-    .um-components .content-general__image {
-      order: inherit;
-      margin: auto; } }
-
-.um-components .content-general__image-wrapper {
-  width: 75%;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .um-components .content-general__image-wrapper {
-      width: 100%; } }
-
-.um-components .content-general__content {
-  order: 2;
-  margin-bottom: -12px; }
-  @media (min-width: 768px) {
-    .um-components .content-general__content {
-      order: inherit; } }
-
-/** @format */
-/* no unique css required as of yet */
-/** @format */
-@media (min-width: 768px) {
-  .um-components .tabbed-content__header {
-    margin: 0 auto; } }
-
-.um-components .tabbed-content__title {
-  position: relative;
-  margin-bottom: 24px;
-  text-align: center; }
-
-.um-components .tabbed-content__title + .tabbed-content__subtitle {
-  margin-top: 0;
-  margin-bottom: 24px; }
-
-.um-components .tabbed-content__subtitle {
-  position: relative;
-  text-align: center; }
-
-/** @format */
-.um-components .hero--cover {
-  position: relative;
-  padding-bottom: 60px; }
-  .um-components .hero--cover-reset p:last-child, .um-components .hero--cover-reset strong:last-child, .um-components .hero--cover-reset .tablist__section .tablist__item:last-child, .um-components .tablist__section .hero--cover-reset .tablist__item:last-child, .um-components .hero--cover-reset .examples .examples__tabs .tablist__item:last-child, .um-components .examples .examples__tabs .hero--cover-reset .tablist__item:last-child {
-    margin-bottom: 0; }
-  .um-components .hero--cover .copy--intro,
-  .um-components .hero--cover .link--large {
-    color: #fff; }
-
-.um-components .hero-cover__headline {
-  color: #fff; }
-
-.um-components .hero-cover__image--full {
-  object-fit: cover; }
-
-.um-components .hero-cover__image--overlay {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.um-components .hero-cover__image--full,
-.um-components .hero-cover__image--overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%; }
-
-.um-components .hero-cover__image--full,
-.um-components .hero-cover__image--overlay,
-.um-components .hero--cover__container {
-  min-height: 320px; }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
