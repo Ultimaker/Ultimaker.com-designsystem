@@ -9,15 +9,17 @@ export const data = {
         image: {
             alt: '',
             url:
-                'https://images.ctfassets.net/7cnpidfipnrw/21sqIfCa8RL25yxluUPRcb/56d7db39bdc2d0de366a5fc52b7ddd87/Ultimaker-3D-printers-overview-hero-3.jpg',
+                'https://images.ctfassets.net/7cnpidfipnrw/3R19Shjkfm1RlYNmSWDKvo/fd83a66454ba68723cb2dc6f4371e42e/Spiderman-3-Movie-Wallpaper-HD-Desktop-Mobile-Free-4552672002.jpg',
             mimeType: '',
-            focusArea: '',
+            focusArea: 'top_left',
         },
-        ctas: [{
-            type: 'ContentButton',
-            url: '#',
-            label: 'Meet the Ultimaker S5',
-        }],
+        ctas: {
+            ctas: [{
+                type: 'ContentButton',
+                url: '#',
+                label: 'Meet the Ultimaker S5',
+            }],
+        },
     },
     'Without CTA': {
         title: 'Professional 3D printing made accessible',
@@ -25,9 +27,9 @@ export const data = {
         image: {
             alt: '',
             url:
-                'https://images.ctfassets.net/7cnpidfipnrw/21sqIfCa8RL25yxluUPRcb/56d7db39bdc2d0de366a5fc52b7ddd87/Ultimaker-3D-printers-overview-hero-3.jpg',
+                'https://images.ctfassets.net/7cnpidfipnrw/3R19Shjkfm1RlYNmSWDKvo/fd83a66454ba68723cb2dc6f4371e42e/Spiderman-3-Movie-Wallpaper-HD-Desktop-Mobile-Free-4552672002.jpg',
             mimeType: '',
-            focusArea: '',
+            focusArea: 'bottom_right',
         },
     },
 };
