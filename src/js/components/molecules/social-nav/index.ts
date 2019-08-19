@@ -1,3 +1,3 @@
-import SocialNav from './social-nav';
+/** @format */
 
-export default SocialNav;
+export { SocialNav as default } from './social-nav';

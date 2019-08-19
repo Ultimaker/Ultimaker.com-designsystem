@@ -13966,11 +13966,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _socialNav = __webpack_require__(331);
 
-var _socialNav2 = _interopRequireDefault(_socialNav);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _socialNav2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _socialNav.SocialNav;
+  }
+});
 
 /***/ }),
 /* 331 */
@@ -13982,6 +13983,7 @@ exports.default = _socialNav2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.SocialNav = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -14019,10 +14021,10 @@ var SocialNav = function (_Vue) {
 
     return SocialNav;
 }(_vuePropertyDecorator.Vue);
-SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.SocialNav = SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'social-nav'
 })], SocialNav);
-exports.default = SocialNav;
+exports.SocialNav = SocialNav;
 
 /***/ }),
 /* 332 */
@@ -14411,7 +14413,7 @@ exports.SubNavigationItem = SubNavigationItem;
 /* 343 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('base-link',{staticClass:"overflow-container__link link link--reversed",attrs:{"url":_vm.url}},[_c('div',{staticClass:"overflow-container__image-container"},[(_vm.image)?_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"overflow-container__label",attrs:{"aria-label":_vm.label}},[_c('span',{staticClass:"link__underline"},[_vm._v("\n            "+_vm._s(_vm.label)+"\n        ")])])])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('base-link',{staticClass:"subnavigation__link link link--reversed",attrs:{"url":_vm.url}},[_c('div',{staticClass:"subnavigation__image-container"},[(_vm.image)?_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"subnavigation__label",attrs:{"aria-label":_vm.label}},[_c('span',{staticClass:"link__underline"},[_vm._v("\n            "+_vm._s(_vm.label)+"\n        ")])])])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
