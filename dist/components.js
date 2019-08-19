@@ -13976,11 +13976,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _socialNav = __webpack_require__(331);
 
-var _socialNav2 = _interopRequireDefault(_socialNav);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _socialNav2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _socialNav.SocialNav;
+  }
+});
 
 /***/ }),
 /* 331 */
@@ -13992,6 +13993,7 @@ exports.default = _socialNav2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.SocialNav = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -14029,10 +14031,10 @@ var SocialNav = function (_Vue) {
 
     return SocialNav;
 }(_vuePropertyDecorator.Vue);
-SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.SocialNav = SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'social-nav'
 })], SocialNav);
-exports.default = SocialNav;
+exports.SocialNav = SocialNav;
 
 /***/ }),
 /* 332 */
