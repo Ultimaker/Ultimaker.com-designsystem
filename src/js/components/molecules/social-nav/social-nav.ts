@@ -5,5 +5,4 @@ import WithRender from './social-nav.vue.html';
 @Component({
     name: 'social-nav',
 })
-export default class SocialNav extends Vue {
-}
+export class SocialNav extends Vue {}
