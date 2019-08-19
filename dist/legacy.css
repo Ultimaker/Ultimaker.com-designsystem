@@ -256,20 +256,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-<<<<<<< HEAD
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list, .um-components dl, .um-components dt, .um-components dd {
-=======
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .overflow-container__list, .um-components .hero--product .hero__linklist, .um-components dl, .um-components dt, .um-components dd {
->>>>>>> chore(refactor): refactor tabs
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list, .um-components dl, .um-components dt, .um-components dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-<<<<<<< HEAD
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .tabs__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list {
-=======
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .overflow-container__list, .um-components .hero--product .hero__linklist {
->>>>>>> chore(refactor): refactor tabs
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list {
   list-style: none; }
 
 .um-components .list__item, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
@@ -5000,9 +4992,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       border-top: 0; } }
 
 /** @format */
-<<<<<<< HEAD
-.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even) {
-=======
 .um-components .tabs {
   margin-top: -36px;
   margin-bottom: 60px; }
@@ -5065,8 +5054,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     padding-bottom: 0; }
 
 /** @format */
-.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .ubr:nth-child(even), .um-components main .examples:nth-child(even), .um-components main .explore:nth-child(even), .um-components main .ecosystem:nth-child(even), .um-components main .case:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even) {
->>>>>>> chore(refactor): refactor tabs
+.um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even) {
   background-color: #fafafa; }
 
 .um-components .preferences-bar {
