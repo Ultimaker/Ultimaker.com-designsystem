@@ -256,20 +256,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-<<<<<<< HEAD
-.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .hero--product .hero__linklist, .subnavigation__list, dl, dt, dd {
-=======
-.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .overflow-container__list, .hero--product .hero__linklist, dl, dt, dd {
->>>>>>> chore(refactor): refactor tabs
+.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .hero--product .hero__linklist, .subnavigation__list, dl, dt, dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-<<<<<<< HEAD
-.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .tabs__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .hero--product .hero__linklist, .subnavigation__list {
-=======
-.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .overflow-container__list, .hero--product .hero__linklist {
->>>>>>> chore(refactor): refactor tabs
+.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .sys-nav__list, .sys-nav__item, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .hero--product .hero__linklist, .subnavigation__list {
   list-style: none; }
 
 .list__item, .link-list__item, .flyout__list-item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
@@ -5525,9 +5517,6 @@ dd {
       border-top: 0; } }
 
 /** @format */
-<<<<<<< HEAD
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brands:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
-=======
 .tabs {
   margin-top: -36px;
   margin-bottom: 60px; }
@@ -5590,8 +5579,7 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brand
     padding-bottom: 0; }
 
 /** @format */
-main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .ubr:nth-child(even), main .examples:nth-child(even), main .explore:nth-child(even), main .ecosystem:nth-child(even), main .case:nth-child(even), main .brands:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
->>>>>>> chore(refactor): refactor tabs
+main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brands:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
   background-color: #fafafa; }
 
 .preferences-bar {
