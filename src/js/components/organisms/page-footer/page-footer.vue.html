@@ -2,25 +2,57 @@
     <div class="footer__container">
         <div class="footer__primary">
             <router-link to="/" class="branded-logo footer__branded-logo" aria-label="Ultimaker homepage">
-                <icon class="branded-logo__u" icon-name="ultimaker-u" />
+                <icon class="branded-logo__u" icon-name="ultimaker-u"/>
             </router-link>
             <nav class="footer__navigation" v-if="navigation && navigation.length">
-                <footer-navigation-category :key="index" v-for="(navigationItem, index) in navigation" v-bind="navigationItem" />       
+                <footer-navigation-category
+                    :key="index"
+                    v-bind="navigationItem"
+                    v-for="(navigationItem, index) in navigation"
+                />
             </nav>
         </div>
 
         <div class="footer__secondary">
-            <social-nav />
-            <locale-selector class="footer__locale-selector"
-                            v-bind="localeSelector"
-                            :country="country"
-                            v-on="$listeners" />
+            <social-nav/>
+            <div class="footer__locales">
+                <icon
+                    icon-name="geo"
+                    class="footer__locales-icon"
+                />
+                <locale-selector
+                    class="footer__country-selector"
+                    type="countrySelector"
+                    :eventLocaleChanged="eventCountryChanged"
+                    :initialIsoCode="countryCode"
+                    v-bind="countrySelector"
+                    v-if="showCountrySelector"
+                    @is-editing="toggleSelector"
+                    @[eventCountryChanged]="countryChangedHandler"
+                />
+                <span class="footer__dash" v-if="!currentlyEditing && showLanguageSelector">–</span>
+                <locale-selector
+                    class="footer__language-selector"
+                    type="languageSelector"
+                    showSuggestions
+                    :eventLocaleChanged="eventLanguageChanged"
+                    :initialIsoCode="languageCode"
+                    v-bind="localeSelector"
+                    v-if="showLanguageSelector"
+                    @is-editing="toggleSelector"
+                    @[eventLanguageChanged]="languageChangedHandler"
+                />
+            </div>
         </div>
 
         <div class="footer__tertiary">
             <nav class="footer__legal" v-if="legalNavigation && legalNavigation.length">
-                <footer-navigation-category class="footer__legal__column" :label="copyrightLabel" :items="legalNavigation" />       
+                <footer-navigation-category
+                    :items="legalNavigation"
+                    :label="copyrightLabel"
+                    class="footer__legal__column"
+                />
             </nav>
-       </div>
+        </div>
     </div>
 </footer>

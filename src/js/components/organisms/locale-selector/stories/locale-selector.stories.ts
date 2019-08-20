@@ -1,10 +1,10 @@
 /** @format */
-import { action } from '@storybook/addon-actions';
-import { data } from '../data/auto-complete.data';
 import addNotes from 'src/stories/helpers/add-notes';
 import addStories from 'src/stories/helpers/add-stories';
 import getKnobs from 'src/stories/helpers/get-knobs';
-import knobsFormat from './auto-complete.knobs-format';
+
+import { data } from '../data/locale-selector.data';
+import knobsFormat from './locale-selector.knobs-format';
 
 const getStory = (type) => () => {
     const knobs = getKnobs(data[type], knobsFormat);
@@ -12,20 +12,17 @@ const getStory = (type) => () => {
     return {
         props: {
             datasource: { default: knobs.datasource },
-            highlightedKeys: { default: knobs.highlightedKeys },
+            eventLocaleChanged: { default: knobs.eventLocaleChanged },
             highlightedLabel: { default: knobs.highlightedLabel },
+            iconName: { default: knobs.iconName },
+            initialIsoCode: { default: knobs.initialIsoCode },
             label: { default: knobs.label },
-            minChar: { default: knobs.minChar },
             placeholder: { default: knobs.placeholder },
             showSuggestions: { default: knobs.showSuggestions },
             suggestionsLabel: { default: knobs.suggestionsLabel },
+            type: { default: knobs.type },
         },
-        methods: {
-            input: action('input'),
-            close: action('close'),
-            changeFocus: action('changeFocus'),
-        },
-        template: require('./auto-complete.html'),
+        template: require('./locale-selector.html'),
     };
 };
 
@@ -33,6 +30,6 @@ addStories({
     data,
     getStory,
     decorators: ['withKnobs'],
-    kind: 'Molecules|auto-complete',
-    notes: addNotes(require('./auto-complete.md')),
+    kind: 'Organisms/locale-selector',
+    notes: addNotes(require('./locale-selector.md')),
 });

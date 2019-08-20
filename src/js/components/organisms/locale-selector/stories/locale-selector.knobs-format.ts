@@ -1,11 +1,13 @@
 /** @format */
 export default {
     datasource: {},
-    highlightedKeys: [],
+    eventLocaleChanged: '',
     highlightedLabel: '',
+    iconName: '',
+    initialIsoCode: '',
     label: '',
-    minChar: 1,
     placeholder: '',
-    showSuggestions: true,
+    showSuggestions: false,
     suggestionsLabel: '',
+    type: '',
 };

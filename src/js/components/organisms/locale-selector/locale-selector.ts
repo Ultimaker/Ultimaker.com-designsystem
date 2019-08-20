@@ -1,64 +1,74 @@
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import CountrySelector from 'components/organisms/country-selector';
-import IconButton from 'components/molecules/icon-button';
-import { CountrySelectorInterface } from 'components/organisms/country-selector/country-selector-models';
-import { CountryAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/CountryAutoCompleteField';
+/** @format */
+import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
+import { LocaleSelectorProps } from './locale-selector.models';
 import WithRender from './locale-selector.vue.html';
 
 @WithRender
 @Component({
     name: 'locale-selector',
 })
-export default class LocaleSelector extends Vue implements CountrySelectorInterface {
-    @Prop({ type: String, default: null }) label!: CountryAutoCompleteField['label'];
-    @Prop({ type: String, default: '' }) placeholder!: CountryAutoCompleteField['placeholder'];
-    @Prop({ type: String, default: null }) highlightedLabel!: CountryAutoCompleteField['highlightedLabel'];
-    @Prop({ type: String, default: '' }) suggestionsLabel!: CountryAutoCompleteField['suggestionsLabel'];
-    @Prop({ required: true }) datasource!: CountryAutoCompleteField['datasource'];
-    @Prop({ type: Object, default: null }) country!: any;
+export class LocaleSelector extends Vue implements LocaleSelectorProps {
+    @Prop({ type: Object, required: true }) datasource!: LocaleSelectorProps['datasource'];
+    @Prop({ type: String, required: true }) eventLocaleChanged!: string;
+    @Prop({ type: String, default: null }) highlightedLabel!: LocaleSelectorProps['highlightedLabel'];
+    @Prop({ type: String, default: '' }) iconName!: string;
+    @Prop({ type: String, required: true }) initialIsoCode!: string;
+    @Prop({ type: String, default: null }) label!: LocaleSelectorProps['label'];
+    @Prop({ type: String, default: '' }) placeholder!: LocaleSelectorProps['placeholder'];
+    @Prop({ type: Boolean, required: false }) showSuggestions?: boolean;
+    @Prop({ type: String, default: '' }) suggestionsLabel!: LocaleSelectorProps['suggestionsLabel'];
+    @Prop({ type: String, required: true }) type!: string;
 
-    ready:boolean = false;
-    countrySelectorOpen: boolean = false;
-    countryInput:any = null;
+    localeSelectorOpen: boolean = false;
+    currentIsoCode = this.initialIsoCode;
 
-    $refs!: {
-        countrySelector: CountrySelector,
-        countrySelectorToggle: IconButton,
-    };
+    get ariaLabel(): string {
+        return `Change your locale, currently: ${this.datasource[this.currentIsoCode]}`;
+    }
 
-    get currentCountryLabel() {
-        if (this.country) {
-            return `${this.country.name}`;
+    get buttonText(): string {
+        return this.currentIsoCode.toUpperCase();
+    }
+
+    get iconButtonText(): string {
+        return this.datasource[this.currentIsoCode];
+    }
+
+    handleLocaleChange(code): void {
+        if (!code) {
+            this.toggleLocaleSelector();
+            return;
         }
 
-        return 'Please select your country';
-    }
-    get currentCountryAriaLabel() {
-        return `Change your country, currently: ${this.country.name}`;
+        if (this.currentIsoCode !== code) {
+            this.currentIsoCode = code;
+            this.$emit(this.eventLocaleChanged, code);
+        }
+
+        this.toggleLocaleSelector();
     }
 
-    beforeMount() {
-        this.countryInput = this.country;
+    toggleLocaleSelector(): void {
+        this.localeSelectorOpen = !this.localeSelectorOpen;
+
+        if (this.localeSelectorOpen) {
+            this.$emit('is-editing', this.type);
+            return;
+        }
+
+        this.$emit('is-editing', null);
     }
 
-    mounted() {
-        // Remark: $ref doesn't work with v-if, but we don't want this component
-        //         to render on the server. This prevents SSR and enables the $ref.
-        this.ready = true;
-    }
+    localeSelectorClickOutsideHandler(event): void {
+        if (this.localeSelectorOpen) {
+            this.localeSelectorOpen = false;
 
-    async toggleCountrySelector() {
-        this.countrySelectorOpen = !this.countrySelectorOpen;
-        if (this.countrySelectorOpen && this.$refs.countrySelector) {
-            await this.$refs.countrySelector.focus();
-        } else if (!this.countrySelectorOpen && this.$refs.countrySelectorToggle) {
-            await this.$nextTick();
-            this.$refs.countrySelectorToggle.focus();
+            this.$emit('is-editing', null);
         }
     }
 
-    async setCountry() {
-        this.$emit('country-changed', { country: this.countryInput });
-        await this.toggleCountrySelector();
+    @Watch('initialIsoCode')
+    onInitialIsoCodeChange() {
+        this.currentIsoCode = this.initialIsoCode;
     }
 }

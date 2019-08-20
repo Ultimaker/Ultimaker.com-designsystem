@@ -1,4 +1,8 @@
 /** @format */
+@import "~scss/settings/_variables.scss";
+@import "~scss/tools/mixins/_animation.scss";
+@import "~scss/tools/mixins/_media.scss";
+@import "~scss/tools/mixins/_typography.scss";
 
 // moved original scss from src/scss/atomic/atoms/_buttons.scss to here
 $triangleWidth: 25px;
@@ -40,7 +44,8 @@ input[type="submit"] {
         outline: 0;
     }
     &:focus {
-        @extend %focus;
+        color: $colorWhite;
+        background-color: lighten($um-blue, $tintHoverFocus);
     }
 
     @include min-tablet() {
@@ -128,4 +133,20 @@ input[type="submit"] {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.button--small {
+    padding: 11px 6px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.button--transparent {
+    background-color: transparent;
+    color: $colorBlack;
+
+    &:hover {
+        background-color: $colorGrayLight;
+        color: $colorBlack;
+    }
 }

@@ -1,5 +1,4 @@
-/** format */
-
+/** @format */
 import { data as searchResults } from 'components/organisms/search-results/data/search-results.data';
 
 export const data = {

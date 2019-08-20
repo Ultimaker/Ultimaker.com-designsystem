@@ -1,6 +1,7 @@
 .preferences-bar {
     @extend .notification;
     transform: translateY(0);
+
     &__content {
         @extend .notification__content;
     }
@@ -28,35 +29,58 @@
         }
     }
 
-    .auto-complete.auto-complete--small {
-        text-align: left;
-        margin-top: 5px;
-        margin-bottom: 0;
-        width: $mobileWidth - ($buildingUnit * 5);
+    .locale-selector,
+    .selector-group,
+    .auto-complete {
 
-        .auto-complete__input {
-            border-color: $colorGrayLinesNotification;
+        @media (max-width: $mobileLMaxWidth) {
+            width: 100%;
         }
     }
 
-    .settings-selector__edit-button {
-        @extend .preferences-bar__button;
-        color: $um-blue;
-        margin-top: 5px;
+    .locale-selector {
 
-        &:hover,
-        &:focus,
-        &:active {
-            color: $um-blue;
+        @media (max-width: $mobileLMaxWidth) {
+            margin-top: $buildingUnit;
         }
+    }
+
+    .auto-complete input {
+        padding-left: $buildingUnit;
+    }
+}
+
+.preferences-bar__locale-selector .icon-button {
+    @include font-line-ratio(prim-m);
+    color: $um-blue;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        background-color: $colorNoteHover;
+    }
+
+    &:not(.locale-selector__icon-button) {
+
+        @media (max-width: $mobileLMaxWidth) {
+            margin-left: 6px;
+        }
+    }
+}
+
+.settings-selector__edit-button,
+.preferences-bar__locale-selector {
+
+    .icon-button__label {
+        margin-top: 0;
+        margin-left: 0;
     }
 }
 
 .settings {
     width: 100%;
     margin-bottom: $buildingUnit * 2.5;
-
-    border: 2px solid $colorGrayLinesNotification;
+    border-top: 2px solid $colorGrayLinesNotification;
     border-left: none;
     border-right: none;
 
@@ -73,9 +97,7 @@
 .settings-selector {
     display: flex;
     flex-direction: column;
-
     padding: $buildingUnit 0;
-
     border-bottom: 1px solid $colorGrayLinesNotification;
 
     .form-group {
@@ -94,23 +116,34 @@
         margin-bottom: 0;
         margin-left: $buildingUnit;
         margin-right: $buildingUnit;
-
         color: $colorGrayTextNotification;
 
         @media (min-width: $mobileLWidth) {
             flex-direction: row;
             align-items: center;
-
-            margin-top: 5px;
         }
     }
 
     &__edit-button {
-        font-weight: normal;
-        margin-top: 5px;
+        @include font-line-ratio(prim-m);
+        @extend .preferences-bar__button;
+        margin-top: 0;
+        color: $um-blue;
 
-        @media (min-width: $mobileLWidth) {
-            margin-top: 0;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $um-blue;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $colorNoteHover;
+        }
+
+        @media (max-width: $mobileLMaxWidth) {
+            margin-top: $buildingUnit;
+            margin-left: $buildingUnit * .5;
         }
     }
 
@@ -120,7 +153,6 @@
     }
 }
 
-
 .settings-panel {
     text-align: left;
 
@@ -129,7 +161,8 @@
 }
 
 .setting {
-    &:not(:last-child){
+
+    &:not(:last-child) {
         margin-bottom: $buildingUnit * 1.5;
     }
 
@@ -147,6 +180,7 @@
 .selector-group {
     display: flex;
     flex-direction: row;
+
     @media (min-width: $mobileLWidth) {
         margin-left: auto;
     }

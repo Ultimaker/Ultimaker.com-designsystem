@@ -5,12 +5,4 @@ export interface AutoCompleteItem {
     value: string;
 }
 
-export interface AutoCompleteProps extends AutoCompleteField {
-    inputId: string;
-    defaultOpen: boolean;
-    minChar: number;
-    value: AutoCompleteItem;
-    storedItems: AutoCompleteItem[];
-    storedLabel: string;
-    required: boolean;
-}
+export interface AutoCompleteProps extends AutoCompleteField {}

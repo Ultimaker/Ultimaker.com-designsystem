@@ -1,8 +1,12 @@
 export default {
-    navigation: [],
-    localeSelector: {},
-    legalNavigation: [],
     copyrightLabel: '',
-    country: {},
     language: '',
+    countryCode: '',
+    countrySelector: {},
+    eventCountryChanged: '',
+    eventLanguageChanged: '',
+    languageCode: '',
+    legalNavigation: [],
+    localeSelector: {},
+    navigation: [],
 };

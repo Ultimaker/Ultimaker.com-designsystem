@@ -1,22 +1,43 @@
-<div class="locale-selector">
-    <icon-button @click="toggleCountrySelector" v-show="!countrySelectorOpen"
-                 ref="countrySelectorToggle"
-                 icon-name="geo"
-                 class="icon-button--small locale-selector__edit--buton"
-                 :aria-label="currentCountryAriaLabel">
-        {{ currentCountryLabel }}
-    </icon-button>
+<!-- @format -->
 
-    <icon-button v-show="countrySelectorOpen"
-                 icon-name="geo"
-                 class="icon-button--small locale-selector__edit--buton"
-                 aria-label="change your country">
+<div
+    class="locale-selector"
+    v-click-outside="localeSelectorClickOutsideHandler"
+>
+    <button
+        class="button--transparent button--small"
+        :aria-label="ariaLabel"
+        v-show="!localeSelectorOpen && !iconName"
+        @click="toggleLocaleSelector"
+    >
+        {{ buttonText }}
+    </button>
+    <icon-button
+        button-class="icon-button--small icon-button--reversed"
+        :icon-name="iconName"
+        :button-aria-label="ariaLabel"
+        v-show="!localeSelectorOpen && iconName"
+        @click="toggleLocaleSelector"
+    >
+        {{ iconButtonText }}
     </icon-button>
-
-    <country-selector class="footer__country-selector" ref="countrySelector" v-if="ready" v-show="countrySelectorOpen"
-                      v-bind="$props"
-                      @close="toggleCountrySelector"
-                      @input="setCountry"
-                      v-model="countryInput">
-    </country-selector>
+    <template v-if="localeSelectorOpen">
+        <auto-complete
+            :datasource="datasource"
+            :highlightedKeys="[this.currentIsoCode]"
+            :highlightedLabel="highlightedLabel"
+            :label="label"
+            :placeholder="placeholder"
+            :showSuggestions="showSuggestions"
+            :suggestionsLabel="suggestionsLabel"
+            @auto-complete-input="handleLocaleChange"
+        />
+        <icon-button
+            buttonAriaLabel="Cancel"
+            buttonClass="locale-selector__icon-button"
+            iconName="close"
+            ref="closeCountryPanel"
+            @click="toggleLocaleSelector"
+        />
+    </template>
 </div>

@@ -1,6 +1,5 @@
-/** format */
-
-import { data as footer } from 'components/organisms/page-footer/data/page-footer.data';
+/** @format */
+import { languageAndCountry as footer } from 'components/organisms/page-footer/data/examples/language-and-country';
 import { data as header } from 'components/organisms/page-header/data/page-header.data';
 import addNotes from 'src/stories/helpers/add-notes';
 import addStories from 'src/stories/helpers/add-stories';
@@ -10,11 +9,8 @@ import { data } from './data/search.data';
 
 import knobsFormat from './search.knobs-format';
 
-const getStory = type => () => {
-    const knobs = getKnobs(
-        data[type],
-        knobsFormat,
-    );
+const getStory = (type) => () => {
+    const knobs = getKnobs(data[type], knobsFormat);
 
     return {
         props: {

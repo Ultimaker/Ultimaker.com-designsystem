@@ -1,4 +1,4 @@
-/** format */
+/** @format */
 
 export const withSearchResults = {
     eventLoadMore: 'event-load-more',
@@ -39,14 +39,15 @@ export const withSearchResults = {
             title: 'Firmware 5.2 beta available for the Ultimaker S5 | Professional 3D ...',
             link: 'https://ultimaker.com/en/blog/52820-firmware-52-beta-available-for-the-ultimaker-s5',
             snippet:
-                'Feb 28, 2019 ... We\'re beta testing a new firmware update for the Ultimaker S5. This new beta \noffers a better user experience, with model-based active leveling, ...',
+                "Feb 28, 2019 ... We're beta testing a new firmware update for the Ultimaker S5. This new beta \noffers a better user experience, with model-based active leveling, ...",
             formattedUrl: 'https://ultimaker.com/.../52820-firmware-52-beta-available-for-the-ultimaker -s5',
         },
         {
             title: 'Technisch informatieblad CPE',
             link: 'https://ultimaker.com/download/67679/TDS%20CPE%20v3.010-dut-NL.pdf',
             formattedUrl: 'https://ultimaker.com/.../67679/TDS%20CPE%20v3.010-dut-NL.pdf',
-            snippet: '16 mei 2017 ... ter bescherming van het milieu en voor de gezondheid en veiligheid van uw werknemers en kopers van uw producten zelf te bepalen. Er wordt ...',
+            snippet:
+                '16 mei 2017 ... ter bescherming van het milieu en voor de gezondheid en veiligheid van uw werknemers en kopers van uw producten zelf te bepalen. Er wordt ...',
         },
     ],
     showLoadMore: true,

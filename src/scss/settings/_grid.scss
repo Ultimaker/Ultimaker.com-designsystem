@@ -31,6 +31,7 @@ $gridGutterSize: $buildingUnit * 2;
 
 $mobileWidth: map-get(map-get($gridBreakpoints, mobile), minWidth);
 $mobileLWidth: 480px;
+$mobileLMaxWidth: $mobileLWidth - 1px;
 $mobileXlWidth: map-get(map-get($gridBreakpoints, mobile-xl), minWidth);
 $tabletWidth: map-get(map-get($gridBreakpoints, tablet), minWidth);
 $desktopWidth: map-get(map-get($gridBreakpoints, desktop), minWidth);
