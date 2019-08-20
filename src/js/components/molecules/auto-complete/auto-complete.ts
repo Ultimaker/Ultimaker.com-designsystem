@@ -1,148 +1,141 @@
-import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
+/** @format */
+import { Component, Prop, Vue } from 'vue-property-decorator';
 import ViewportUtil from 'utils/viewport';
-
 import { AutoCompleteItem, AutoCompleteProps } from './auto-complete.models';
 import WithRender from './auto-complete.vue.html';
+import escapeStringRegexp from 'escape-string-regexp';
 
 @WithRender
 @Component({
     name: 'auto-complete',
 })
-
 export default class AutoComplete extends Vue implements AutoCompleteProps {
-    @Prop({ type: String, default: () => `autocomplete${Math.floor(Math.random() * 10000)}` }) inputId!: string;
-    @Prop({ type: Object, default: null }) value!: AutoCompleteItem;
-    @Prop({ type: Boolean, default: null }) defaultOpen!: boolean;
-    @Prop({ type: Number, default: 3 }) minChar!: number;
-    @Prop({ type: Array, default: () => [] }) storedItems!: AutoCompleteItem[];
-    @Prop({ type: String, default: '' }) storedLabel!: string;
-    @Prop({ type: Boolean, default: false }) required!: boolean;
-
-    // Model Definitions
-    @Prop({ type: String, default: null }) label!: AutoCompleteProps['label'];
-    @Prop({ type: String, default: null }) placeholder!: AutoCompleteProps['placeholder'];
-    @Prop({ type: String, default: null }) highlightedLabel!: AutoCompleteProps['highlightedLabel'];
-    @Prop({ type: String, default: '' }) suggestionsLabel!: AutoCompleteProps['suggestionsLabel'];
-    @Prop({ required: true }) datasource!: AutoCompleteProps['datasource'];
+    @Prop({ type: Object, required: true }) datasource!: AutoCompleteProps['datasource'];
+    @Prop({ type: Array, default: () => [] }) highlightedKeys!: any[];
+    @Prop({ type: String, required: true }) highlightedLabel!: AutoCompleteProps['highlightedLabel'];
+    @Prop({ type: String, required: true }) label!: AutoCompleteProps['label'];
+    @Prop({ type: Number, default: 1 }) minChar!: number;
+    @Prop({ type: String, required: true }) placeholder!: AutoCompleteProps['placeholder'];
+    @Prop({ type: Boolean }) showSuggestions?: boolean;
+    @Prop({ type: String, required: true }) suggestionsLabel!: AutoCompleteProps['suggestionsLabel'];
 
     input: string = '';
-    selectedItem: AutoCompleteItem | null = null;
-    selectedIndex: number = 0;
     reversed: boolean = false;
-    forceOpen: boolean = false;
+    // selectedItem: AutoCompleteItem | null = null;
+    selectedIndex: number = -1;
     viewportUtil = new ViewportUtil();
 
-    $refs!: {
-        autoComplete: AutoComplete,
-    };
-
-    get items():AutoCompleteItem[] {
-        const items: AutoCompleteItem[] = [];
-
-        if (!this.datasource) {
-            return items;
-        }
-
-        Object.keys(this.datasource)
-            .forEach((key) => {
-                items.push({
-                    title: this.datasource[key],
-                    value: key,
-                });
-            });
-
-        return items;
-    }
     get classObject(): object {
         return {
-            required: this.required,
             'auto-complete--reversed': this.reversed,
         };
     }
 
-    get listId(): string {
-        return `${this.inputId}__dropdown`;
-    }
     get hasInput(): boolean {
         return this.input.length > 0;
     }
-    get matchTitle(): boolean {
-        return this.hasInput && this.input.length >= this.minChar;
+
+    get autoCompleteItems(): AutoCompleteItem[] {
+        const items: AutoCompleteItem[] = [];
+
+        Object.keys(this.datasource).forEach((key) => {
+            if (key !== 'type') {
+                items.push({
+                    title: `${this.datasource[key]} - ${key}`,
+                    value: key,
+                });
+            }
+        });
+
+        return items;
     }
-    get matchValue(): boolean {
-        return this.hasInput && this.input.length === this.minChar - 1;
+
+    get autoCompleteId() {
+        return `autocomplete-${Math.floor(Math.random() * 10000)}`;
     }
-    get hasItems(): boolean {
-        return Array.isArray(this.items) && this.items.length > 0;
+
+    get listItems() {
+        return this.$refs.listItems as HTMLElement[];
     }
-    get isValid(): boolean {
-        return !(this.selectedItem === null || this.input !== this.selectedItem.title);
-    }
-    get isOpen(): boolean {
-        if (!(this.storedItems && this.storedItems.length) && !(this.suggestedItems && this.suggestedItems.length)) {
-            return false;
+
+    get highlightedItems(): AutoCompleteItem[] {
+        const highlightedItems: AutoCompleteItem[] = [];
+
+        if (!this.highlightedKeys.length) {
+            return highlightedItems;
         }
 
-        if (this.forceOpen) {
-            return true;
-        }
-
-        if (this.hasInput && !this.isValid) {
-            return true;
-        }
-
-        return this.hasInput && this.hasItems && !this.isValid;
+        return this.autoCompleteItems.filter((autoCompleteItem) => this.highlightedKeys.includes(autoCompleteItem.value));
     }
 
     get suggestedItems(): AutoCompleteItem[] {
-        const filterMatch = new RegExp(this.input, 'i');
-        let filteredItems:AutoCompleteItem[] = [];
+        const suggestedItems: AutoCompleteItem[] = this.filterOutHighlightedItems(this.highlightedKeys);
 
-        if (this.storedItems) {
-            filteredItems = this.items.filter(item => !this.storedItems.find(i => i.value === item.value));
-        }
-        const allSuggestedTitles = filteredItems.filter(item => filterMatch.test(item.title));
-        const allSuggestedValues = filteredItems.filter(item => filterMatch.test(item.value));
+        if (!this.hasInput) {
+            if (this.showSuggestions) {
+                return suggestedItems;
+            }
 
-        if (this.matchValue) {
-            return allSuggestedValues;
+            return [];
         }
 
-        if (this.matchTitle) {
-            return allSuggestedTitles;
-        }
-
-        return [];
+        return this.filterAutoCompleteItemsTitleByString(suggestedItems, this.input);
     }
 
-    init(): void {
-        this.forceOpen = this.defaultOpen;
-        this.viewportUtil.addScrollHandler(this.calculateDirection);
-        this.viewportUtil.addResizeHandler(this.calculateDirection);
-        if (this.value && this.value.title) {
-            this.input = this.value.title;
-        }
-
-        Vue.nextTick(this.calculateDirection);
-    }
-
-    @Watch('isOpen')
-    calculateDirection():void {
-        if (!this.$refs.autoComplete) {
+    calculateDirection(): void {
+        if (!this.$refs.autoCompleteInput) {
             return;
         }
+
         const windowTop = this.viewportUtil.scrollY;
-        const windowBottom = windowTop + (this.viewportUtil.screenHeight * (2 / 3));
-        // @ts-ignore, exist  by default on html elements
-        const inputBounds = this.$refs.autoComplete.getBoundingClientRect();
+        const windowBottom = windowTop + this.viewportUtil.screenHeight * (2 / 3);
+        const inputBounds = (this.$refs.autoCompleteInput as HTMLElement).getBoundingClientRect();
         const inputTop = this.viewportUtil.scrollY + inputBounds.top;
         const inputBottom = inputTop + inputBounds.height;
 
         this.reversed = windowBottom < inputBottom;
     }
 
+    clearSelection(): void {
+        this.input = '';
+    }
+
+    filterAutoCompleteItemsTitleByString(list, string): AutoCompleteItem[] {
+        return list.filter((autoCompleteItem) => new RegExp(escapeStringRegexp(string), 'i').test(autoCompleteItem.title));
+    }
+
+    filterOutHighlightedItems(filterKeys): AutoCompleteItem[] {
+        if (!filterKeys.length) {
+            return this.autoCompleteItems;
+        }
+
+        return this.autoCompleteItems.filter((autoCompleteItem) => !filterKeys.includes(autoCompleteItem.value));
+    }
+
+    focus(): void {
+        if (!this.$refs.autoCompleteInput) {
+            return;
+        }
+
+        (this.$refs.autoCompleteInput as HTMLInputElement).focus();
+    }
+
+    highlightItem(direction) {
+        this.selectedIndex = this.selectedIndex + direction;
+
+        if (this.selectedIndex > this.listItems.length - 1) {
+            this.selectedIndex = 0;
+        }
+
+        if (this.selectedIndex < 0) {
+            this.selectedIndex = this.listItems.length - 1;
+        }
+
+        this.listItems[this.selectedIndex].focus();
+    }
+
     highlightString(data): string {
-        const stringToReplace = new RegExp(this.input, 'i');
+        const stringToReplace = new RegExp(escapeStringRegexp(this.input), 'i');
         const matches = data.match(stringToReplace);
 
         if (!matches) {
@@ -152,115 +145,30 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         return data.replace(stringToReplace, `<span class="auto-complete__value">${matches[0]}</span>`);
     }
 
-    resetInput(): void {
-        this.selectedIndex = 0;
-        if (this.input === '') {
-            this.$emit('close');
-        }
-        this.input = '';
+    keyEscapeHandler() {
+        this.clearSelection();
+        this.reportSelectionMade(null);
     }
 
-    resetIndex(): void {
-        this.selectedIndex = 0;
-    }
+    reportSelectionMade(item:AutoCompleteItem|null): void {
+        let code: string | null = null;
 
-    focus(): void {
-        if (this.hasItems) {
-            this.$refs.autoComplete.focus();
+        if (item) {
+            code = item.value;
         }
+
+        this.$emit('auto-complete-input', code);
     }
 
     selectItem(item): void {
-        this.input = item.title || '';
-        this.selectedItem = item;
-        this.forceOpen = false;
-        this.resetIndex();
+        this.reportSelectionMade(item);
+        this.clearSelection();
+    }
+
+    mounted() {
         this.focus();
-        this.$emit('input', item);
-    }
-
-    selectItemByInput(): void {
-        const matcher = new RegExp(`^${this.input}$`, 'i');
-        let item:AutoCompleteItem | undefined;
-
-        if (this.input.length >= this.minChar) {
-            item = this.items.find(i => matcher.test(i.title));
-        } else if (this.input.length === this.minChar - 1) {
-            item = this.items.find(i => matcher.test(i.value));
-        }
-
-        if (item) {
-            this.selectItem(item);
-        }
-    }
-
-    selectCurrent(): void | any {
-        const listItems = this.$el.querySelectorAll('.auto-complete__list-item') as NodeListOf<HTMLElement>;
-
-        if (!listItems.length) {
-            if (!this.input.length) {
-                this.$emit('changeFocus');
-            }
-
-            return;
-        }
-
-        if (listItems.length > this.selectedIndex) {
-            listItems[this.selectedIndex].focus();
-        }
-    }
-
-    selectNext(): void {
-        if (!this.hasInput) { return; }
-        this.selectedIndex = this.selectedIndex + 1;
-    }
-
-    selectPrevious(): void {
-        if (!this.hasInput) { return; }
-        this.selectedIndex = this.selectedIndex - 1;
-    }
-
-    closeList(): void {
-        this.selectedIndex = 0;
-        Vue.nextTick(this.focus);
-    }
-
-    @Watch('value')
-    onValue(newValue): void {
-        if (newValue !== null) {
-            this.input = newValue.title;
-        }
-        this.selectedItem = newValue;
-    }
-
-    @Watch('input')
-    onInput(newValue): void {
-        if (this.selectedItem !== null && newValue !== this.selectedItem.title) {
-            this.selectedItem = null;
-        }
-        this.resetIndex();
-    }
-
-    @Watch('selectedIndex')
-    onSelectedIndex(): void {
-        const listItems = this.$el.querySelectorAll('.auto-complete__list-item') as NodeListOf<HTMLElement>;
-
-        if (!listItems) { return; }
-
-        const lastIndex = listItems.length - 1;
-
-        if (this.selectedIndex > lastIndex) {
-            this.selectedIndex = 0;
-        } else if (this.selectedIndex < 0) {
-            this.selectedIndex = lastIndex;
-        }
-
-        if (listItems.length > this.selectedIndex) {
-            listItems[this.selectedIndex].focus();
-        }
-    }
-
-    beforeMount(): void {
-        this.init();
+        this.viewportUtil.addScrollHandler(this.calculateDirection);
+        this.viewportUtil.addResizeHandler(this.calculateDirection);
+        Vue.nextTick(this.calculateDirection);
     }
 }

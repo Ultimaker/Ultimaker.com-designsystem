@@ -1,3 +1,3 @@
-import LegalSelector from './locale-selector';
+/** @format */
 
-export default LegalSelector;
+export { LocaleSelector as default } from './locale-selector';

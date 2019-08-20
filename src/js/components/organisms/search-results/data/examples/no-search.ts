@@ -1,4 +1,4 @@
-/** format */
+/** @format */
 
 export const noSearch = {
     eventLoadMore: 'event-load-more',

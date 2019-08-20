@@ -1,5 +1,4 @@
-/** format */
-
+/** @format */
 export default {
     searchResults: {},
 };

@@ -13,12 +13,16 @@ const getStory = type => () => {
 
     return {
         props: {
-            navigation: { default: knobs.navigation },
-            localeSelector: { default: knobs.localeSelector },
-            legalNavigation: { default: knobs.legalNavigation },
-            country: { default: knobs.country },
             copyrightLabel: { default: knobs.copyrightLabel },
             language: { default: knobs.language },
+            countryCode: { default: knobs.countryCode },
+            countrySelector: { default: knobs.countrySelector },
+            eventCountryChanged: { default: knobs.eventCountryChanged },
+            eventLanguageChanged: { default: knobs.eventLanguageChanged },
+            languageCode: { default: knobs.languageCode },
+            legalNavigation: { default: knobs.legalNavigation },
+            localeSelector: { default: knobs.localeSelector },
+            navigation: { default: knobs.navigation },
         },
         template: require('./page-footer.html'),
     };

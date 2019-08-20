@@ -5,7 +5,8 @@ import { Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/med
 export const data = {
     'With CTA': {
         title: 'Professional 3D printing made accessible',
-        description: 'Accurate, consistent results —tailored to your business. Highly complex 3D prints, industrial-grade materials, maximum performance, and future-ready 3D printing experience. With ultimate accessibility.',
+        description:
+            'Accurate, consistent results —tailored to your business. Highly complex 3D prints, industrial-grade materials, maximum performance, and future-ready 3D printing experience. With ultimate accessibility.',
         image: {
             alt: '',
             url:
@@ -14,16 +15,19 @@ export const data = {
             focusArea: 'top_left',
         },
         ctas: {
-            ctas: [{
-                type: 'ContentButton',
-                url: '#',
-                label: 'Meet the Ultimaker S5',
-            }],
+            ctas: [
+                {
+                    type: 'ContentButton',
+                    url: '#',
+                    label: 'Meet the Ultimaker S5',
+                },
+            ],
         },
     },
     'Without CTA': {
         title: 'Professional 3D printing made accessible',
-        description: 'Accurate, consistent results —tailored to your business. Highly complex 3D prints, industrial-grade materials, maximum performance, and future-ready 3D printing experience. With ultimate accessibility.',
+        description:
+            'Accurate, consistent results —tailored to your business. Highly complex 3D prints, industrial-grade materials, maximum performance, and future-ready 3D printing experience. With ultimate accessibility.',
         image: {
             alt: '',
             url:

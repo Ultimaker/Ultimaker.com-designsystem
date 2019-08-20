@@ -7,7 +7,6 @@ export { default as Colors } from 'organisms/colors';
 export { default as ContentCover } from 'organisms/content-cover';
 export { default as ContentGeneral } from 'organisms/content-general';
 export { default as ContentHighlight } from 'organisms/content-highlight';
-export { default as CountrySelector } from 'organisms/country-selector';
 export { default as HeroArticle } from 'organisms/hero-article';
 export { default as HeroBasic } from 'organisms/hero-basic';
 export { default as HeroCover } from 'organisms/hero-cover';

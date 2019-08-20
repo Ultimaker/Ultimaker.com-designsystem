@@ -15,7 +15,6 @@ export class PageHeader extends Vue implements PageHeaderProps {
     @Prop({ type: Object, required: false }) cta!: PageHeaderProps['cta'];
     @Prop({ type: Object, required: false }) search!: PageHeaderProps['search'];
     @Prop({ type: String, required: false }) language?: PageHeaderProps['language'];
-    @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
 
     assistUsed: boolean = false;
     viewportUtil: any = new ViewportUtility();
@@ -24,6 +23,7 @@ export class PageHeader extends Vue implements PageHeaderProps {
     showCompactMenu: boolean = true;
     maxMobileRes: number = 1025;
     resize: boolean = false;
+    mainNavOpen: boolean = false;
     $refs!: {
         search: HTMLFormElement,
     };

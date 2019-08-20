@@ -1,0 +1,18 @@
+/** @format */
+@import "~scss/settings/_variables.scss";
+
+.locale-selector {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.locale-selector__icon-button {
+    align-self: center;
+    height: auto;
+    padding: $buildingUnit / 2;
+}
+
+.locale-selector__icon-button svg {
+    font-size: 24px;
+}

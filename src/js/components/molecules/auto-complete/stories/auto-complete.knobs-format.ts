@@ -1,7 +1,11 @@
+/** @format */
 export default {
-    defaultOpen: true,
-    storedLabel: '',
-    storedItems: [],
-    suggestionsLabel: '',
     datasource: {},
+    highlightedKeys: [],
+    highlightedLabel: '',
+    label: '',
+    minChar: 1,
+    placeholder: '',
+    showSuggestions: true,
+    suggestionsLabel: '',
 };
