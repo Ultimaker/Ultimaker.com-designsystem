@@ -10,19 +10,10 @@ import WithRender from './business-card.vue.html';
 
 export default class BusinessCard extends Vue implements IBusinessCard {
     @Prop({ type: String, required: true }) title!: IBusinessCard['title'];
-    @Prop({ type: Object, required: false }) image?: IBusinessCard['image'] | undefined;
+    @Prop({ type: Object, required: false }) image?: IBusinessCard['image'];
     @Prop({ type: Object, required: true }) contentLink!: IBusinessCard['contentLink'];
     @Prop({ type: Array, required: false }) properties?: IBusinessCard['properties'];
     @Prop({ type: Object, required: false }) clickEvent?: IBusinessCard['clickEvent'];
-
-    mapImage(image) {
-        const img = {
-            mobileWidth: image.mobileUrl,
-            desktopWidth: image.desktopUrl,
-        };
-
-        return img;
-    }
 
     get clickEventType() {
         return Events.click;
