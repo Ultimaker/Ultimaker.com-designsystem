@@ -18386,6 +18386,8 @@ var _tableCompareVue2 = _interopRequireDefault(_tableCompareVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -18415,6 +18417,8 @@ var TableCompare = function (_Vue) {
         _this.disableLeft = false;
         _this.disableRight = false;
         _this.viewportUtility = new _viewport2.default();
+        _this.visibilityClass = 'invisible';
+        _this.initiallyVisible = 3;
         return _this;
     }
 
@@ -18423,6 +18427,9 @@ var TableCompare = function (_Vue) {
         value: function mounted() {
             this.resizeHandler = (0, _debounce2.default)(this.resetScrollPosition, 100);
             this.viewportUtility.addResizeHandler(this.resizeHandler);
+            if (!this.viewportUtility.isMobile) {
+                this.$refs.scrollContainer.addEventListener('scroll', this.scrollHandler);
+            }
             var options = {
                 root: this.$refs.scrollWidthContainer,
                 threshold: 0.99
@@ -18433,11 +18440,27 @@ var TableCompare = function (_Vue) {
             }
         }
     }, {
+        key: "scrollHandler",
+        value: function scrollHandler() {
+            if (!this.viewportUtility.isMobile) {
+                if (this.$refs.scrollContainer.scrollLeft <= this.visibilityOffset) {
+                    this.toggleVisibility(this.$refs.footers, this.columnLength - this.initiallyVisible, true);
+                    this.toggleVisibility(this.$refs.columns, this.columnLength - this.initiallyVisible, true);
+                } else {
+                    this.toggleVisibility(this.$refs.footers, this.columnLength - this.initiallyVisible, false);
+                    this.toggleVisibility(this.$refs.columns, this.columnLength - this.initiallyVisible, false);
+                }
+            }
+        }
+    }, {
         key: "beforeDestroy",
         value: function beforeDestroy() {
             this.resizeHandler.cancel();
             this.viewportUtility.removeResizeHandler(this.resizeHandler);
             this.observer.unobserve(this.$refs.scrollContainer);
+            if (!this.viewportUtility.isMobile) {
+                this.$refs.scrollContainer.removeEventListener('scroll', this.scrollHandler);
+            }
         }
     }, {
         key: "observeColumns",
@@ -18472,18 +18495,52 @@ var TableCompare = function (_Vue) {
             });
         }
     }, {
-        key: "scroll",
-        value: function scroll() {
-            var reverse = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+        key: "toggleVisibility",
+        value: function toggleVisibility(items, amount, show) {
+            var _this3 = this;
 
-            var scrollWidth = this.$refs.scrollWidthContainer.clientWidth;
-            var scrollLeft = this.$refs.scrollContainer.scrollLeft;
-
-            this.$refs.scrollContainer.scrollTo({
-                left: scrollLeft + (reverse ? -1 : 1) * scrollWidth,
-                behavior: 'smooth'
+            items.forEach(function (item, index) {
+                if (index < amount && item) {
+                    if (show) {
+                        item.classList.remove(_this3.visibilityClass);
+                    } else {
+                        item.classList.add(_this3.visibilityClass);
+                    }
+                }
             });
         }
+    }, {
+        key: "scroll",
+        value: function () {
+            var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
+                var reverse = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+                var scrollWidth, scrollLeft;
+                return regeneratorRuntime.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                scrollWidth = this.$refs.scrollWidthContainer.clientWidth;
+                                scrollLeft = this.$refs.scrollContainer.scrollLeft;
+                                _context.next = 4;
+                                return this.$refs.scrollContainer.scrollTo({
+                                    left: scrollLeft + (reverse ? -1 : 1) * scrollWidth,
+                                    behavior: 'smooth'
+                                });
+
+                            case 4:
+                            case "end":
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function scroll() {
+                return _ref.apply(this, arguments);
+            }
+
+            return scroll;
+        }()
     }, {
         key: "resetScrollPosition",
         value: function resetScrollPosition() {
@@ -18497,6 +18554,22 @@ var TableCompare = function (_Vue) {
                 ContentLink: 'link link--medium',
                 YoutubeLink: ''
             }[type] || '';
+        }
+    }, {
+        key: "columnLength",
+        get: function get() {
+            return this.content.columns.length;
+        }
+    }, {
+        key: "visibilityOffset",
+        get: function get() {
+            var offSet = this.$refs.scrollContainer.offsetWidth;
+            return offSet / this.columnLength * (this.columnLength - this.initiallyVisible);
+        }
+    }, {
+        key: "showScrollButtons",
+        get: function get() {
+            return this.columnLength - this.initiallyVisible > 0 && !this.viewportUtility.isMobile || (this.viewportUtility.isMobile || this.viewportUtility.isTablet) && this.columnLength > 1;
         }
     }]);
 
@@ -18516,7 +18589,7 @@ exports.default = TableCompare;
 /* 438 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"organism"},[_c('div',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{ref:"scrollWidthContainer",staticClass:"table-compare"},[_c('div',{ref:"scrollContainer",staticClass:"table-compare__scroll-container"},[(_vm.content)?_c('table',{staticClass:"table-compare__table",style:(("--number-of-columns: " + (_vm.content.columns.length) + ";"))},[_c('colgroup',[_c('col'),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('col')})],2),_vm._v(" "),_c('thead',[_c('tr',[_c('th',{attrs:{"scope":"col"}}),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('th',{ref:"columns",refInFor:true,attrs:{"scope":"col"}},[(col.image && col.image.url)?_c('c-image',_vm._b({staticClass:"table-compare__image",attrs:{"alt":"col.alt"}},'c-image',col.image,false)):_vm._e(),_vm._v("\n                            "+_vm._s(col.title)+"\n                        ")],1)})],2)]),_vm._v(" "),_c('tbody',_vm._l((_vm.content.rows),function(row){return _c('tr',[_c('th',{attrs:{"scope":"row"}},[(row.tooltip)?_c('div',{staticClass:"table-compare__feature"},[_c('tooltip-toggle',_vm._b({attrs:{"label":row.label}},'tooltip-toggle',row.tooltip,false))],1):_c('div',{staticClass:"table-compare__feature--no-tooltip"},[_vm._v("\n                                    "+_vm._s(row.label)+"\n                            ")])]),_vm._v(" "),_vm._l((row.cells),function(cell){return _c('td',[_c('span',{staticClass:"table-compare__cell"},[_vm._v(_vm._s(cell.label))]),_vm._v(" "),(cell.checked)?_c('icon',{staticClass:"table-compare__checkmark",attrs:{"icon-name":"checkmark"}}):_vm._e()],1)})],2)}),0),_vm._v(" "),_c('tfoot',[_c('tr',[_c('th',{attrs:{"scope":"row"}}),_vm._v(" "),_vm._l((_vm.content.columns),function(cell){return _c('td',[(cell.cta)?_c(cell.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(cell.cta.type)},'component',cell.cta,false)):_vm._e()],1)})],2)])]):_vm._e()]),_vm._v(" "),(_vm.content.columns.length > 1)?_c('div',{staticClass:"table-compare__scroll-buttons"},[_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--left",attrs:{"icon-name":"angle-left","disabled":_vm.disableLeft},on:{"click":function($event){return _vm.scroll(true)}}}),_vm._v(" "),_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--right",attrs:{"icon-name":"angle-right","disabled":_vm.disableRight},on:{"click":function($event){return _vm.scroll(false)}}})],1):_vm._e()]),_vm._v(" "),_c('footer-block',{attrs:{"ctas":_vm.ctas}})],1)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"organism"},[_c('div',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{ref:"scrollWidthContainer",staticClass:"table-compare"},[_c('div',{ref:"scrollContainer",staticClass:"table-compare__scroll-container"},[(_vm.content)?_c('table',{staticClass:"table-compare__table",style:(("--number-of-columns: " + (_vm.content.columns.length) + ";"))},[_c('colgroup',[_c('col'),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('col')})],2),_vm._v(" "),_c('thead',[_c('tr',[_c('th',{style:(("--number-of-columns: " + (_vm.content.columns.length) + ";")),attrs:{"scope":"col"}}),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('th',{ref:"columns",refInFor:true,attrs:{"scope":"col"}},[(col.image && col.image.url)?_c('c-image',_vm._b({staticClass:"table-compare__image",attrs:{"alt":"col.alt"}},'c-image',col.image,false)):_vm._e(),_vm._v(" "),_c('span',[_vm._v(_vm._s(col.title))])],1)})],2)]),_vm._v(" "),_c('tbody',_vm._l((_vm.content.rows),function(row){return _c('tr',[_c('th',{attrs:{"scope":"row"}},[(row.tooltip)?_c('div',{staticClass:"table-compare__feature"},[_c('tooltip-toggle',_vm._b({attrs:{"label":row.label}},'tooltip-toggle',row.tooltip,false))],1):_c('div',{staticClass:"table-compare__feature--no-tooltip"},[_vm._v("\n                                    "+_vm._s(row.label)+"\n                            ")])]),_vm._v(" "),_vm._l((row.cells),function(cell){return _c('td',[_c('span',{staticClass:"table-compare__cell"},[_vm._v(_vm._s(cell.label))]),_vm._v(" "),(cell.checked)?_c('icon',{staticClass:"table-compare__checkmark",attrs:{"icon-name":"checkmark"}}):_vm._e()],1)})],2)}),0),_vm._v(" "),_c('tfoot',[_c('tr',[_c('th',{attrs:{"scope":"row"}}),_vm._v(" "),_vm._l((_vm.content.columns),function(cell){return _c('td',{ref:"footers",refInFor:true},[(cell.cta)?_c(cell.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(cell.cta.type)},'component',cell.cta,false)):_vm._e()],1)})],2)])]):_vm._e()]),_vm._v(" "),(_vm.showScrollButtons)?_c('div',{staticClass:"table-compare__scroll-buttons"},[_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--left",attrs:{"icon-name":"angle-left","disabled":_vm.disableLeft},on:{"click":function($event){return _vm.scroll(true)}}}),_vm._v(" "),_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--right",attrs:{"icon-name":"angle-right","disabled":_vm.disableRight},on:{"click":function($event){return _vm.scroll(false)}}})],1):_vm._e()]),_vm._v(" "),_c('footer-block',{attrs:{"ctas":_vm.ctas}})],1)])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
