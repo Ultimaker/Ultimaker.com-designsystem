@@ -6624,19 +6624,16 @@ svg text {
   width: calc(var(--number-of-columns) * 100%); }
   @media (min-width: 1025px) {
     .table-compare__table {
-      width: calc(var(--number-of-columns) * (100% / 3)); } }
+      width: calc(var(--number-of-columns) * (100% / 3.175)); } }
 
 .table-compare__table col {
-  width: auto; }
-  @media (min-width: 1025px) {
-    .table-compare__table col {
-      width: 204px; } }
+  width: 240px; }
 
 .table-compare__table col:first-of-type {
   width: 0; }
   @media (min-width: 1025px) {
     .table-compare__table col:first-of-type {
-      width: 108px; } }
+      width: calc(25% / var(--number-of-columns)); } }
 
 .table-compare__table th,
 .table-compare__table td {
@@ -6651,7 +6648,15 @@ svg text {
   @media (min-width: 1025px) {
     .table-compare__table thead th[scope="col"] {
       font-size: 20.0004px;
-      line-height: 1.2; } }
+      line-height: 1.2; }
+      .table-compare__table thead th[scope="col"] > * {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0.3s linear,opacity 0.3s linear; }
+      .table-compare__table thead th[scope="col"].invisible > * {
+        visibility: hidden;
+        opacity: 0.4;
+        transition: visibility 0.3s linear,opacity 0.3s linear; } }
   @media (min-width: 1440px) {
     .table-compare__table thead th[scope="col"] {
       padding-left: 24px;
@@ -6679,6 +6684,17 @@ svg text {
 .table-compare__table tfoot td {
   padding: 18px;
   text-align: center; }
+  @media (min-width: 1025px) {
+    .table-compare__table tfoot th > *,
+    .table-compare__table tfoot td > * {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0.3s linear,opacity 0.3s linear; }
+    .table-compare__table tfoot th.invisible > *,
+    .table-compare__table tfoot td.invisible > * {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.3s linear,opacity 0.3s linear; } }
 
 .table-compare__table tfoot td {
   vertical-align: middle; }
