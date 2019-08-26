@@ -6624,22 +6624,19 @@ svg text {
   width: calc(var(--number-of-columns) * 100%); }
   @media (min-width: 1025px) {
     .table-compare__table {
-      width: 100%; } }
+      width: calc(var(--number-of-columns) * (100% / 3)); } }
 
 .table-compare__table col {
   width: auto; }
   @media (min-width: 1025px) {
     .table-compare__table col {
       width: 204px; } }
-  @media (min-width: 1440px) {
-    .table-compare__table col {
-      width: 228px; } }
 
 .table-compare__table col:first-of-type {
   width: 0; }
   @media (min-width: 1025px) {
     .table-compare__table col:first-of-type {
-      width: auto; } }
+      width: 108px; } }
 
 .table-compare__table th,
 .table-compare__table td {
@@ -6670,9 +6667,6 @@ svg text {
   position: sticky;
   text-align: left;
   white-space: nowrap; }
-  @media (min-width: 1025px) {
-    .table-compare__table tbody th[scope="row"] {
-      position: static; } }
 
 .table-compare__table tbody td {
   color: #196ef0;
@@ -6747,9 +6741,6 @@ svg text {
   transform: translateY(-50%);
   top: 90px;
   background-color: transparent; }
-  @media (min-width: 1025px) {
-    .table-compare__scroll-button {
-      display: none; } }
   .table-compare__scroll-button--left {
     left: 0; }
   .table-compare__scroll-button--right {

@@ -10,10 +10,10 @@
                     </colgroup>
                     <thead>
                     <tr>
-                        <th scope="col"></th>
+                        <th scope="col" :style="`--number-of-columns: ${content.columns.length};`"></th>
                         <th scope="col" v-for="col in content.columns" ref="columns">
                             <c-image v-bind="col.image" alt="col.alt" class="table-compare__image" v-if="col.image && col.image.url" />
-                            {{ col.title }}
+                            <span>{{ col.title }}</span>
                         </th>
                     </tr>
                     </thead>
@@ -36,14 +36,14 @@
                     <tfoot>
                     <tr>
                         <th scope="row"></th>
-                        <td v-for="cell in content.columns">
+                        <td v-for="cell in content.columns" ref="footers">
                             <component v-if="cell.cta" v-bind="cell.cta" :is="cell.cta.type" :class="getClassNames(cell.cta.type)"/>
                         </td>
                     </tr>
                     </tfoot>
                 </table>
             </div>
-            <div class="table-compare__scroll-buttons" v-if="content.columns.length > 1">
+            <div class="table-compare__scroll-buttons" v-if="showScrollButtons">
                 <icon-button icon-name="angle-left" class="table-compare__scroll-button table-compare__scroll-button--left" @click="scroll(true)" :disabled="disableLeft" />
                 <icon-button icon-name="angle-right" class="table-compare__scroll-button table-compare__scroll-button--right" @click="scroll(false)" :disabled="disableRight" />
             </div>

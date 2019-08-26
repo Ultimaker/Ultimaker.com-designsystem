@@ -15,29 +15,21 @@
 	table-layout: fixed;
     // --number-of-columns is set in the template
     width: calc(var(--number-of-columns) * 100%);
-
+    
     @include min-desktop {
-        width: 100%;
+        width: calc(var(--number-of-columns) * (100% / 3.175));
     }
 }
 
 .table-compare__table col {
-    width: auto;
-
-    @include min-desktop {
-        width: 17 * $buildingUnit;
-    }
-
-    @media (min-width: 1440px) {
-        width: 19 * $buildingUnit;
-    }
+    width: 20 * $buildingUnit;
 }
 
 .table-compare__table col:first-of-type {
     width: 0;
 
     @include min-desktop {
-        width: auto;
+        width: calc(25% / var(--number-of-columns));;
     }
 }
 
@@ -57,6 +49,18 @@
     @include min-desktop {
         font-size: 1.6667 * $buildingUnit;
         line-height: 1.2;
+
+        > * {
+            visibility: visible;
+            opacity: 1;
+            transition:visibility 0.3s linear,opacity 0.3s linear;
+        }
+        
+        &.invisible > * {
+            visibility: hidden;
+            opacity: 0.4;
+            transition:visibility 0.3s linear,opacity 0.3s linear;
+        }
     }
 
     @media (min-width: 1440px) {
@@ -76,10 +80,6 @@
     position: sticky;
     text-align: left;
     white-space: nowrap;
-
-    @include min-desktop {
-        position: static;
-    }
 }
 
 // Table body cells
@@ -96,6 +96,21 @@
 .table-compare__table tfoot td {
     padding: 1.5 * $buildingUnit;
     text-align: center;
+
+    @include min-desktop {
+
+        > * {
+            visibility: visible;
+            opacity: 1;
+            transition:visibility 0.3s linear,opacity 0.3s linear;
+        }
+
+        &.invisible > *{
+            visibility: hidden;
+            opacity: 0;
+            transition:visibility 0.3s linear,opacity 0.3s linear;
+        }
+    }
 }
 
 .table-compare__table tfoot td {
@@ -165,9 +180,6 @@
     transform: translateY(-50%);
     top: 7.5 * $buildingUnit; // half the height of .table-compare__image
     background-color: transparent;
-    @include min-desktop {
-        display: none;
-    }
 
     &--left {
         left: 0;
