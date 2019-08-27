@@ -6616,24 +6616,33 @@ svg text {
   overflow: auto;
   overflow-y: visible;
   -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory; }
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth; }
 
 .table-compare__table {
   position: relative;
   table-layout: fixed;
-  width: calc(var(--number-of-columns) * 100%); }
+  width: calc(var(--number-of-columns ) * 100%); }
   @media (min-width: 1025px) {
     .table-compare__table {
-      width: calc(var(--number-of-columns) * (100% / 3.175)); } }
+      width: calc(var(--number-of-columns) * 25%); } }
 
 .table-compare__table col {
-  width: 240px; }
+  width: auto; }
 
 .table-compare__table col:first-of-type {
-  width: 0; }
+  display: none; }
   @media (min-width: 1025px) {
     .table-compare__table col:first-of-type {
-      width: calc(25% / var(--number-of-columns)); } }
+      display: table-column; } }
+
+.table-compare__table col:last-of-type {
+  width: 0;
+  display: none; }
+  @media (min-width: 1025px) {
+    .table-compare__table col:last-of-type {
+      display: table-column;
+      width: 12px; } }
 
 .table-compare__table th,
 .table-compare__table td {
@@ -6648,15 +6657,7 @@ svg text {
   @media (min-width: 1025px) {
     .table-compare__table thead th[scope="col"] {
       font-size: 20.0004px;
-      line-height: 1.2; }
-      .table-compare__table thead th[scope="col"] > * {
-        visibility: visible;
-        opacity: 1;
-        transition: visibility 0.3s linear,opacity 0.3s linear; }
-      .table-compare__table thead th[scope="col"].invisible > * {
-        visibility: hidden;
-        opacity: 0.4;
-        transition: visibility 0.3s linear,opacity 0.3s linear; } }
+      line-height: 1.2; } }
   @media (min-width: 1440px) {
     .table-compare__table thead th[scope="col"] {
       padding-left: 24px;
@@ -6684,17 +6685,6 @@ svg text {
 .table-compare__table tfoot td {
   padding: 18px;
   text-align: center; }
-  @media (min-width: 1025px) {
-    .table-compare__table tfoot th > *,
-    .table-compare__table tfoot td > * {
-      visibility: visible;
-      opacity: 1;
-      transition: visibility 0.3s linear,opacity 0.3s linear; }
-    .table-compare__table tfoot th.invisible > *,
-    .table-compare__table tfoot td.invisible > * {
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0.3s linear,opacity 0.3s linear; } }
 
 .table-compare__table tfoot td {
   vertical-align: middle; }
@@ -6716,16 +6706,15 @@ svg text {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px);
-  min-width: 125px;
-  max-width: 70vw; }
-  main .organism:nth-child(even) .table-compare__feature, main .slider-reveal:nth-child(even) .table-compare__feature, main .brands:nth-child(even) .table-compare__feature, main .content-cover--cover:nth-child(even) .table-compare__feature, main .content-general:nth-child(even) .table-compare__feature, main .tabbed-content:nth-child(even) .table-compare__feature, main .organism:nth-child(even) .table-compare__feature--no-tooltip, main .slider-reveal:nth-child(even) .table-compare__feature--no-tooltip, main .brands:nth-child(even) .table-compare__feature--no-tooltip, main .content-cover--cover:nth-child(even) .table-compare__feature--no-tooltip, main .content-general:nth-child(even) .table-compare__feature--no-tooltip, main .tabbed-content:nth-child(even) .table-compare__feature--no-tooltip {
-    background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); }
+  width: 100%;
+  height: 46.8px; }
 
 .table-compare__feature--no-tooltip {
-  padding: 15px 50px 11px 18px;
+  padding: 11px 50px 11px 18px;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 21px; }
 
 .table-compare__cell {
   border: 0;
@@ -6750,7 +6739,8 @@ svg text {
 .table-compare__scroll-buttons {
   position: absolute;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
 
 .table-compare__scroll-button {
   position: absolute;
@@ -6761,6 +6751,42 @@ svg text {
     left: 0; }
   .table-compare__scroll-button--right {
     right: 0; }
+
+.table-compare-features {
+  position: absolute;
+  z-index: 5;
+  width: 80%;
+  top: 0;
+  left: 0; }
+  @media (min-width: 1025px) {
+    .table-compare-features {
+      width: 25%; } }
+
+.table-compare-features--header {
+  height: 257px; }
+  @media (min-width: 1025px) {
+    .table-compare-features--header {
+      height: 254px;
+      border-bottom: 2px solid #e3e3e3;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px); }
+      main .organism:nth-child(even) .table-compare-features--header, main .slider-reveal:nth-child(even) .table-compare-features--header, main .brands:nth-child(even) .table-compare-features--header, main .content-cover--cover:nth-child(even) .table-compare-features--header, main .content-general:nth-child(even) .table-compare-features--header, main .tabbed-content:nth-child(even) .table-compare-features--header {
+        background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); } }
+
+.table-compare-features--body {
+  border-bottom: 1px solid #e3e3e3;
+  background-color: white; }
+  main .organism:nth-child(even) .table-compare-features--body, main .slider-reveal:nth-child(even) .table-compare-features--body, main .brands:nth-child(even) .table-compare-features--body, main .content-cover--cover:nth-child(even) .table-compare-features--body, main .content-general:nth-child(even) .table-compare-features--body, main .tabbed-content:nth-child(even) .table-compare-features--body {
+    background: #fafafa; }
+  .table-compare-features--body:first-of-type {
+    border-top: 2px solid #e3e3e3; }
+
+.table-compare-features--footer {
+  height: 83px; }
+  @media (min-width: 1025px) {
+    .table-compare-features--footer {
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px); }
+      main .organism:nth-child(even) .table-compare-features--footer, main .slider-reveal:nth-child(even) .table-compare-features--footer, main .brands:nth-child(even) .table-compare-features--footer, main .content-cover--cover:nth-child(even) .table-compare-features--footer, main .content-general:nth-child(even) .table-compare-features--footer, main .tabbed-content:nth-child(even) .table-compare-features--footer {
+        background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); } }
 
 /** @format */
 /** @format */
