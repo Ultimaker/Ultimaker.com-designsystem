@@ -33,14 +33,12 @@ export default class TableCompare extends Vue implements TableCompareProps {
 
     visibilityClass: string = 'invisible';
     initiallyVisible: number = 3;
+    scrollingColumns: number = 0;
+    showScrollingColumns: boolean = false;
 
     mounted() {
         this.resizeHandler = debounce(this.resetScrollPosition, 100);
         this.viewportUtility.addResizeHandler(this.resizeHandler);
-
-        if (!this.viewportUtility.isMobile) {
-            this.$refs.scrollContainer.addEventListener('scroll', this.scrollHandler);
-        }
 
         const options = {
             root: this.$refs.scrollWidthContainer,
@@ -51,15 +49,12 @@ export default class TableCompare extends Vue implements TableCompareProps {
             this.observer = new IntersectionObserver(this.intersectionObserver, options);
             this.observeColumns();
         }
+
+        this.resetScrollPosition();
     }
 
-    get columnLength() {
+    get columnLength(): number {
         return this.content.columns.length;
-    }
-
-    get visibilityOffset() {
-        const offSet = this.$refs.scrollContainer.offsetWidth;
-        return (offSet / this.columnLength) * (this.columnLength - this.initiallyVisible);
     }
 
     get showScrollButtons() {
@@ -67,26 +62,10 @@ export default class TableCompare extends Vue implements TableCompareProps {
             ((this.viewportUtility.isMobile || this.viewportUtility.isTablet) && this.columnLength > 1);
     }
 
-    scrollHandler(): void {
-        if (!this.viewportUtility.isMobile) {
-            if (this.$refs.scrollContainer.scrollLeft <= this.visibilityOffset) {
-                this.toggleVisibility(this.$refs.footers, (this.columnLength - this.initiallyVisible), true);
-                this.toggleVisibility(this.$refs.columns, (this.columnLength - this.initiallyVisible), true);
-            } else {
-                this.toggleVisibility(this.$refs.footers, (this.columnLength - this.initiallyVisible), false);
-                this.toggleVisibility(this.$refs.columns, (this.columnLength - this.initiallyVisible), false);
-            }
-        }
-    }
-
     beforeDestroy() {
         this.resizeHandler.cancel();
         this.viewportUtility.removeResizeHandler(this.resizeHandler);
         this.observer.unobserve(this.$refs.scrollContainer);
-
-        if (!this.viewportUtility.isMobile) {
-            this.$refs.scrollContainer.removeEventListener('scroll', this.scrollHandler);
-        }
     }
 
     @Watch('content.columns')
@@ -97,6 +76,12 @@ export default class TableCompare extends Vue implements TableCompareProps {
             this.observer.observe(this.$refs.columns[0]);
             this.observer.observe(this.$refs.columns.slice(-1)[0]);
         }
+    }
+
+    @Watch('scrollingColumns')
+    resetScrollingColumns() {
+        this.showScrollingColumns = !this.viewportUtility.isMobile && !this.viewportUtility.isTablet;
+        this.scrollingColumns = !this.viewportUtility.isMobile && !this.viewportUtility.isTablet ? this.columnLength + 1 : this.columnLength;
     }
 
     intersectionObserver(entries) {
@@ -123,29 +108,24 @@ export default class TableCompare extends Vue implements TableCompareProps {
         });
     }
 
-    toggleVisibility(items: HTMLElement[], amount: number, show: boolean) {
-        items.forEach((item: HTMLElement, index :number) => {
-            if (index < amount && item) {
-                if (show) {
-                    item.classList.remove(this.visibilityClass);
-                } else {
-                    item.classList.add(this.visibilityClass);
-                }
-            }
-        });
-    }
-
     async scroll(reverse: boolean = false): Promise<void> {
         const scrollWidth = this.$refs.scrollWidthContainer.clientWidth;
         const { scrollLeft } = this.$refs.scrollContainer;
+        const { scrollContainer } = this.$refs;
 
-        await this.$refs.scrollContainer.scrollTo({
-            left: scrollLeft + (reverse ? -1 : 1) * scrollWidth,
-            behavior: 'smooth',
-        });
+        const xCord = (scrollLeft + (reverse ? -1 : 1) * scrollWidth);
+        if (this.$refs.scrollContainer.scrollTo || this.viewportUtility.isMobile) {
+            await this.$refs.scrollContainer.scrollTo({
+                left: xCord,
+                behavior: 'smooth',
+            });
+        } else {
+            scrollContainer.scrollLeft = reverse ? 0 : (this.initiallyVisible * (scrollWidth / this.columnLength));
+        }
     }
 
     resetScrollPosition() {
+        this.resetScrollingColumns();
         this.$refs.scrollContainer.scrollLeft = 0;
     }
 

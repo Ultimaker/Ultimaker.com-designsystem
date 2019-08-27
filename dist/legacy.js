@@ -18419,6 +18419,8 @@ var TableCompare = function (_Vue) {
         _this.viewportUtility = new _viewport2.default();
         _this.visibilityClass = 'invisible';
         _this.initiallyVisible = 3;
+        _this.scrollingColumns = 0;
+        _this.showScrollingColumns = false;
         return _this;
     }
 
@@ -18427,9 +18429,6 @@ var TableCompare = function (_Vue) {
         value: function mounted() {
             this.resizeHandler = (0, _debounce2.default)(this.resetScrollPosition, 100);
             this.viewportUtility.addResizeHandler(this.resizeHandler);
-            if (!this.viewportUtility.isMobile) {
-                this.$refs.scrollContainer.addEventListener('scroll', this.scrollHandler);
-            }
             var options = {
                 root: this.$refs.scrollWidthContainer,
                 threshold: 0.99
@@ -18438,19 +18437,7 @@ var TableCompare = function (_Vue) {
                 this.observer = new IntersectionObserver(this.intersectionObserver, options);
                 this.observeColumns();
             }
-        }
-    }, {
-        key: "scrollHandler",
-        value: function scrollHandler() {
-            if (!this.viewportUtility.isMobile) {
-                if (this.$refs.scrollContainer.scrollLeft <= this.visibilityOffset) {
-                    this.toggleVisibility(this.$refs.footers, this.columnLength - this.initiallyVisible, true);
-                    this.toggleVisibility(this.$refs.columns, this.columnLength - this.initiallyVisible, true);
-                } else {
-                    this.toggleVisibility(this.$refs.footers, this.columnLength - this.initiallyVisible, false);
-                    this.toggleVisibility(this.$refs.columns, this.columnLength - this.initiallyVisible, false);
-                }
-            }
+            this.resetScrollPosition();
         }
     }, {
         key: "beforeDestroy",
@@ -18458,9 +18445,6 @@ var TableCompare = function (_Vue) {
             this.resizeHandler.cancel();
             this.viewportUtility.removeResizeHandler(this.resizeHandler);
             this.observer.unobserve(this.$refs.scrollContainer);
-            if (!this.viewportUtility.isMobile) {
-                this.$refs.scrollContainer.removeEventListener('scroll', this.scrollHandler);
-            }
         }
     }, {
         key: "observeColumns",
@@ -18470,6 +18454,12 @@ var TableCompare = function (_Vue) {
                 this.observer.observe(this.$refs.columns[0]);
                 this.observer.observe(this.$refs.columns.slice(-1)[0]);
             }
+        }
+    }, {
+        key: "resetScrollingColumns",
+        value: function resetScrollingColumns() {
+            this.showScrollingColumns = !this.viewportUtility.isMobile && !this.viewportUtility.isTablet;
+            this.scrollingColumns = !this.viewportUtility.isMobile && !this.viewportUtility.isTablet ? this.columnLength + 1 : this.columnLength;
         }
     }, {
         key: "intersectionObserver",
@@ -18495,39 +18485,39 @@ var TableCompare = function (_Vue) {
             });
         }
     }, {
-        key: "toggleVisibility",
-        value: function toggleVisibility(items, amount, show) {
-            var _this3 = this;
-
-            items.forEach(function (item, index) {
-                if (index < amount && item) {
-                    if (show) {
-                        item.classList.remove(_this3.visibilityClass);
-                    } else {
-                        item.classList.add(_this3.visibilityClass);
-                    }
-                }
-            });
-        }
-    }, {
         key: "scroll",
         value: function () {
             var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
                 var reverse = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-                var scrollWidth, scrollLeft;
+                var scrollWidth, scrollLeft, scrollContainer, xCord;
                 return regeneratorRuntime.wrap(function _callee$(_context) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
                                 scrollWidth = this.$refs.scrollWidthContainer.clientWidth;
                                 scrollLeft = this.$refs.scrollContainer.scrollLeft;
-                                _context.next = 4;
+                                scrollContainer = this.$refs.scrollContainer;
+                                xCord = scrollLeft + (reverse ? -1 : 1) * scrollWidth;
+
+                                if (!(this.$refs.scrollContainer.scrollTo || this.viewportUtility.isMobile)) {
+                                    _context.next = 9;
+                                    break;
+                                }
+
+                                _context.next = 7;
                                 return this.$refs.scrollContainer.scrollTo({
-                                    left: scrollLeft + (reverse ? -1 : 1) * scrollWidth,
+                                    left: xCord,
                                     behavior: 'smooth'
                                 });
 
-                            case 4:
+                            case 7:
+                                _context.next = 10;
+                                break;
+
+                            case 9:
+                                scrollContainer.scrollLeft = reverse ? 0 : this.initiallyVisible * (scrollWidth / this.columnLength);
+
+                            case 10:
                             case "end":
                                 return _context.stop();
                         }
@@ -18544,6 +18534,7 @@ var TableCompare = function (_Vue) {
     }, {
         key: "resetScrollPosition",
         value: function resetScrollPosition() {
+            this.resetScrollingColumns();
             this.$refs.scrollContainer.scrollLeft = 0;
         }
     }, {
@@ -18561,12 +18552,6 @@ var TableCompare = function (_Vue) {
             return this.content.columns.length;
         }
     }, {
-        key: "visibilityOffset",
-        get: function get() {
-            var offSet = this.$refs.scrollContainer.offsetWidth;
-            return offSet / this.columnLength * (this.columnLength - this.initiallyVisible);
-        }
-    }, {
         key: "showScrollButtons",
         get: function get() {
             return this.columnLength - this.initiallyVisible > 0 && !this.viewportUtility.isMobile || (this.viewportUtility.isMobile || this.viewportUtility.isTablet) && this.columnLength > 1;
@@ -18580,6 +18565,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], TableCompare.prototype, "content", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], TableCompare.prototype, "ctas", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('content.columns'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], TableCompare.prototype, "observeColumns", null);
+__decorate([(0, _vuePropertyDecorator.Watch)('scrollingColumns'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], TableCompare.prototype, "resetScrollingColumns", null);
 TableCompare = __decorate([_tableCompareVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'TableCompare'
 })], TableCompare);
@@ -18589,7 +18575,7 @@ exports.default = TableCompare;
 /* 438 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"organism"},[_c('div',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{ref:"scrollWidthContainer",staticClass:"table-compare"},[_c('div',{ref:"scrollContainer",staticClass:"table-compare__scroll-container"},[(_vm.content)?_c('table',{staticClass:"table-compare__table",style:(("--number-of-columns: " + (_vm.content.columns.length) + ";"))},[_c('colgroup',[_c('col'),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('col')})],2),_vm._v(" "),_c('thead',[_c('tr',[_c('th',{style:(("--number-of-columns: " + (_vm.content.columns.length) + ";")),attrs:{"scope":"col"}}),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('th',{ref:"columns",refInFor:true,attrs:{"scope":"col"}},[(col.image && col.image.url)?_c('c-image',_vm._b({staticClass:"table-compare__image",attrs:{"alt":"col.alt"}},'c-image',col.image,false)):_vm._e(),_vm._v(" "),_c('span',[_vm._v(_vm._s(col.title))])],1)})],2)]),_vm._v(" "),_c('tbody',_vm._l((_vm.content.rows),function(row){return _c('tr',[_c('th',{attrs:{"scope":"row"}},[(row.tooltip)?_c('div',{staticClass:"table-compare__feature"},[_c('tooltip-toggle',_vm._b({attrs:{"label":row.label}},'tooltip-toggle',row.tooltip,false))],1):_c('div',{staticClass:"table-compare__feature--no-tooltip"},[_vm._v("\n                                    "+_vm._s(row.label)+"\n                            ")])]),_vm._v(" "),_vm._l((row.cells),function(cell){return _c('td',[_c('span',{staticClass:"table-compare__cell"},[_vm._v(_vm._s(cell.label))]),_vm._v(" "),(cell.checked)?_c('icon',{staticClass:"table-compare__checkmark",attrs:{"icon-name":"checkmark"}}):_vm._e()],1)})],2)}),0),_vm._v(" "),_c('tfoot',[_c('tr',[_c('th',{attrs:{"scope":"row"}}),_vm._v(" "),_vm._l((_vm.content.columns),function(cell){return _c('td',{ref:"footers",refInFor:true},[(cell.cta)?_c(cell.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(cell.cta.type)},'component',cell.cta,false)):_vm._e()],1)})],2)])]):_vm._e()]),_vm._v(" "),(_vm.showScrollButtons)?_c('div',{staticClass:"table-compare__scroll-buttons"},[_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--left",attrs:{"icon-name":"angle-left","disabled":_vm.disableLeft},on:{"click":function($event){return _vm.scroll(true)}}}),_vm._v(" "),_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--right",attrs:{"icon-name":"angle-right","disabled":_vm.disableRight},on:{"click":function($event){return _vm.scroll(false)}}})],1):_vm._e()]),_vm._v(" "),_c('footer-block',{attrs:{"ctas":_vm.ctas}})],1)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"organism"},[_c('div',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{ref:"scrollWidthContainer",staticClass:"table-compare"},[_c('div',{ref:"scrollContainer",staticClass:"table-compare__scroll-container"},[(_vm.content)?_c('table',{staticClass:"table-compare__table",style:(("--number-of-columns: " + _vm.scrollingColumns + ";"))},[_c('colgroup',[(_vm.showScrollingColumns)?_c('col'):_vm._e(),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('col')}),_vm._v(" "),(_vm.showScrollingColumns)?_c('col'):_vm._e()],2),_vm._v(" "),_c('thead',[_c('tr',[(_vm.showScrollingColumns)?_c('th',{attrs:{"scope":"col"}}):_vm._e(),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('th',{ref:"columns",refInFor:true,attrs:{"scope":"col"}},[(col.image && col.image.url)?_c('c-image',_vm._b({staticClass:"table-compare__image",attrs:{"alt":"col.alt"}},'c-image',col.image,false)):_vm._e(),_vm._v(" "),_c('span',[_vm._v(_vm._s(col.title))])],1)}),_vm._v(" "),(_vm.showScrollingColumns)?_c('th',{attrs:{"scope":"col"}}):_vm._e()],2)]),_vm._v(" "),_c('tbody',_vm._l((_vm.content.rows),function(row){return _c('tr',[(_vm.showScrollingColumns)?_c('td'):_vm._e(),_vm._v(" "),_vm._l((row.cells),function(cell){return _c('td',[_c('span',{staticClass:"table-compare__cell"},[_vm._v(_vm._s(cell.label))]),_vm._v(" "),(cell.checked)?_c('icon',{staticClass:"table-compare__checkmark",attrs:{"icon-name":"checkmark"}}):_vm._e()],1)}),_vm._v(" "),(_vm.showScrollingColumns)?_c('td'):_vm._e()],2)}),0),_vm._v(" "),_c('tfoot',[_c('tr',[(_vm.showScrollingColumns)?_c('th',{attrs:{"scope":"row"}}):_vm._e(),_vm._v(" "),_vm._l((_vm.content.columns),function(cell){return _c('td',{ref:"footers",refInFor:true},[(cell.cta)?_c(cell.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(cell.cta.type)},'component',cell.cta,false)):_vm._e()],1)}),_vm._v(" "),(_vm.showScrollingColumns)?_c('td',{attrs:{"scope":"row"}}):_vm._e()],2)])]):_vm._e()]),_vm._v(" "),(_vm.showScrollButtons)?_c('div',{staticClass:"table-compare__scroll-buttons"},[_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--left",attrs:{"icon-name":"angle-left","disabled":_vm.disableLeft},on:{"click":function($event){return _vm.scroll(true)}}}),_vm._v(" "),_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--right",attrs:{"icon-name":"angle-right","disabled":_vm.disableRight},on:{"click":function($event){return _vm.scroll(false)}}})],1):_vm._e(),_vm._v(" "),_c('div',{staticClass:"table-compare-features"},[_c('div',{staticClass:"table-compare-features--header"}),_vm._v(" "),_vm._l((_vm.content.rows),function(row){return _c('div',{staticClass:"table-compare-features--body"},[(row.tooltip)?_c('div',{staticClass:"table-compare__feature"},[_c('tooltip-toggle',_vm._b({attrs:{"label":row.label}},'tooltip-toggle',row.tooltip,false))],1):_c('div',{staticClass:"table-compare__feature--no-tooltip"},[_c('span',[_vm._v(_vm._s(row.label))])])])}),_vm._v(" "),_c('div',{staticClass:"table-compare-features--footer"})],2)]),_vm._v(" "),_c('footer-block',{attrs:{"ctas":_vm.ctas}})],1)])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {

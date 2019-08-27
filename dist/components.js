@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","gsap/Draggable","gsap/TweenLite.js"], function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__7__, __WEBPACK_EXTERNAL_MODULE__11__, __WEBPACK_EXTERNAL_MODULE__20__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__110__, __WEBPACK_EXTERNAL_MODULE__111__, __WEBPACK_EXTERNAL_MODULE__112__, __WEBPACK_EXTERNAL_MODULE__113__, __WEBPACK_EXTERNAL_MODULE__114__, __WEBPACK_EXTERNAL_MODULE__115__, __WEBPACK_EXTERNAL_MODULE__260__, __WEBPACK_EXTERNAL_MODULE__262__) { return /******/ (function(modules) { // webpackBootstrap
-=======
-define("components", ["core-js/modules/es6.array.copy-within","core-js/modules/es6.array.fill","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.from","core-js/modules/es6.array.iterator","core-js/modules/es6.array.of","core-js/modules/es6.function.name","core-js/modules/es6.map","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log10","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.object.assign","core-js/modules/es6.object.freeze","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.is","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.keys","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.seal","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.search","core-js/modules/es6.regexp.split","core-js/modules/es6.set","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.includes","core-js/modules/es6.string.raw","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.symbol","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es7.array.includes","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.object.values","core-js/modules/es7.string.pad-end","core-js/modules/es7.string.pad-start","core-js/modules/web.dom.iterable","core-js/modules/web.immediate","core-js/modules/web.timers","lodash/debounce","vue","gsap","gsap/Draggable","gsap/TweenLite.js","vue-property-decorator"], function(__WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_copy_within__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_fill__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_find__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_find_index__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_from__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_iterator__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_of__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_function_name__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_map__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_acosh__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_asinh__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_atanh__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_cbrt__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_clz32__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_cosh__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_expm1__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_fround__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_hypot__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_imul__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_log10__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_log1p__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_log2__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_sign__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_sinh__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_tanh__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_trunc__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_number_epsilon__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_number_is_finite__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_number_is_integer__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_number_is_nan__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_number_is_safe_integer__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_number_max_safe_integer__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_number_min_safe_integer__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_assign__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_freeze__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_get_own_property_descriptor__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_get_own_property_names__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_get_prototype_of__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_is__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_is_extensible__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_is_frozen__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_is_sealed__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_keys__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_prevent_extensions__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_seal__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_set_prototype_of__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_promise__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_apply__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_construct__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_define_property__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_delete_property__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_get__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_get_own_property_descriptor__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_get_prototype_of__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_has__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_is_extensible__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_own_keys__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_prevent_extensions__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_set__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_reflect_set_prototype_of__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_flags__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_match__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_replace__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_search__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_regexp_split__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_set__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_code_point_at__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_ends_with__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_from_code_point__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_includes__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_raw__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_repeat__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_starts_with__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_symbol__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_array_buffer__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_data_view__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_float32_array__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_float64_array__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_int16_array__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_int32_array__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_int8_array__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_uint16_array__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_uint32_array__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_uint8_array__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_typed_uint8_clamped_array__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_weak_map__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_weak_set__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es7_array_includes__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es7_object_entries__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es7_object_get_own_property_descriptors__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es7_object_values__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es7_string_pad_end__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_es7_string_pad_start__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_web_dom_iterable__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_web_immediate__, __WEBPACK_EXTERNAL_MODULE_core_js_modules_web_timers__, __WEBPACK_EXTERNAL_MODULE_lodash_debounce__, __WEBPACK_EXTERNAL_MODULE_vue__, __WEBPACK_EXTERNAL_MODULE_gsap__, __WEBPACK_EXTERNAL_MODULE_gsap_Draggable__, __WEBPACK_EXTERNAL_MODULE_gsap_TweenLite_js__, __WEBPACK_EXTERNAL_MODULE_vue_property_decorator__) { return /******/ (function(modules) { // webpackBootstrap
->>>>>>> feat(table-compare): allow 5 columns
-=======
-define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","core-js/modules/es6.typed.array-buffer","core-js/modules/es6.typed.data-view","core-js/modules/es6.typed.int8-array","core-js/modules/es6.typed.uint8-array","core-js/modules/es6.typed.uint8-clamped-array","core-js/modules/es6.typed.int16-array","core-js/modules/es6.typed.uint16-array","core-js/modules/es6.typed.int32-array","core-js/modules/es6.typed.uint32-array","core-js/modules/es6.typed.float32-array","core-js/modules/es6.typed.float64-array","core-js/modules/es6.map","core-js/modules/es6.set","core-js/modules/es6.weak-map","core-js/modules/es6.weak-set","core-js/modules/es6.reflect.apply","core-js/modules/es6.reflect.construct","core-js/modules/es6.reflect.define-property","core-js/modules/es6.reflect.delete-property","core-js/modules/es6.reflect.get","core-js/modules/es6.reflect.get-own-property-descriptor","core-js/modules/es6.reflect.get-prototype-of","core-js/modules/es6.reflect.has","core-js/modules/es6.reflect.is-extensible","core-js/modules/es6.reflect.own-keys","core-js/modules/es6.reflect.prevent-extensions","core-js/modules/es6.reflect.set","core-js/modules/es6.reflect.set-prototype-of","core-js/modules/es6.promise","core-js/modules/es6.symbol","core-js/modules/es6.object.freeze","core-js/modules/es6.object.seal","core-js/modules/es6.object.prevent-extensions","core-js/modules/es6.object.is-frozen","core-js/modules/es6.object.is-sealed","core-js/modules/es6.object.is-extensible","core-js/modules/es6.object.get-own-property-descriptor","core-js/modules/es6.object.get-prototype-of","core-js/modules/es6.object.keys","core-js/modules/es6.object.get-own-property-names","core-js/modules/es6.object.assign","core-js/modules/es6.object.is","core-js/modules/es6.object.set-prototype-of","core-js/modules/es6.function.name","core-js/modules/es6.string.raw","core-js/modules/es6.string.from-code-point","core-js/modules/es6.string.code-point-at","core-js/modules/es6.string.repeat","core-js/modules/es6.string.starts-with","core-js/modules/es6.string.ends-with","core-js/modules/es6.string.includes","core-js/modules/es6.regexp.flags","core-js/modules/es6.regexp.match","core-js/modules/es6.regexp.replace","core-js/modules/es6.regexp.split","core-js/modules/es6.regexp.search","core-js/modules/es6.array.from","core-js/modules/es6.array.of","core-js/modules/es6.array.copy-within","core-js/modules/es6.array.find","core-js/modules/es6.array.find-index","core-js/modules/es6.array.fill","core-js/modules/es6.array.iterator","core-js/modules/es6.number.is-finite","core-js/modules/es6.number.is-integer","core-js/modules/es6.number.is-safe-integer","core-js/modules/es6.number.is-nan","core-js/modules/es6.number.epsilon","core-js/modules/es6.number.min-safe-integer","core-js/modules/es6.number.max-safe-integer","core-js/modules/es6.math.acosh","core-js/modules/es6.math.asinh","core-js/modules/es6.math.atanh","core-js/modules/es6.math.cbrt","core-js/modules/es6.math.clz32","core-js/modules/es6.math.cosh","core-js/modules/es6.math.expm1","core-js/modules/es6.math.fround","core-js/modules/es6.math.hypot","core-js/modules/es6.math.imul","core-js/modules/es6.math.log1p","core-js/modules/es6.math.log10","core-js/modules/es6.math.log2","core-js/modules/es6.math.sign","core-js/modules/es6.math.sinh","core-js/modules/es6.math.tanh","core-js/modules/es6.math.trunc","core-js/modules/es7.array.includes","core-js/modules/es7.object.values","core-js/modules/es7.object.entries","core-js/modules/es7.object.get-own-property-descriptors","core-js/modules/es7.string.pad-start","core-js/modules/es7.string.pad-end","core-js/modules/web.timers","core-js/modules/web.immediate","core-js/modules/web.dom.iterable","gsap/Draggable","gsap/TweenLite.js"], function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__7__, __WEBPACK_EXTERNAL_MODULE__11__, __WEBPACK_EXTERNAL_MODULE__21__, __WEBPACK_EXTERNAL_MODULE__22__, __WEBPACK_EXTERNAL_MODULE__23__, __WEBPACK_EXTERNAL_MODULE__24__, __WEBPACK_EXTERNAL_MODULE__25__, __WEBPACK_EXTERNAL_MODULE__26__, __WEBPACK_EXTERNAL_MODULE__27__, __WEBPACK_EXTERNAL_MODULE__28__, __WEBPACK_EXTERNAL_MODULE__29__, __WEBPACK_EXTERNAL_MODULE__30__, __WEBPACK_EXTERNAL_MODULE__31__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__33__, __WEBPACK_EXTERNAL_MODULE__34__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__36__, __WEBPACK_EXTERNAL_MODULE__37__, __WEBPACK_EXTERNAL_MODULE__38__, __WEBPACK_EXTERNAL_MODULE__39__, __WEBPACK_EXTERNAL_MODULE__40__, __WEBPACK_EXTERNAL_MODULE__41__, __WEBPACK_EXTERNAL_MODULE__42__, __WEBPACK_EXTERNAL_MODULE__43__, __WEBPACK_EXTERNAL_MODULE__44__, __WEBPACK_EXTERNAL_MODULE__45__, __WEBPACK_EXTERNAL_MODULE__46__, __WEBPACK_EXTERNAL_MODULE__47__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__49__, __WEBPACK_EXTERNAL_MODULE__50__, __WEBPACK_EXTERNAL_MODULE__51__, __WEBPACK_EXTERNAL_MODULE__52__, __WEBPACK_EXTERNAL_MODULE__53__, __WEBPACK_EXTERNAL_MODULE__54__, __WEBPACK_EXTERNAL_MODULE__55__, __WEBPACK_EXTERNAL_MODULE__56__, __WEBPACK_EXTERNAL_MODULE__57__, __WEBPACK_EXTERNAL_MODULE__58__, __WEBPACK_EXTERNAL_MODULE__59__, __WEBPACK_EXTERNAL_MODULE__60__, __WEBPACK_EXTERNAL_MODULE__61__, __WEBPACK_EXTERNAL_MODULE__62__, __WEBPACK_EXTERNAL_MODULE__63__, __WEBPACK_EXTERNAL_MODULE__64__, __WEBPACK_EXTERNAL_MODULE__65__, __WEBPACK_EXTERNAL_MODULE__66__, __WEBPACK_EXTERNAL_MODULE__67__, __WEBPACK_EXTERNAL_MODULE__68__, __WEBPACK_EXTERNAL_MODULE__69__, __WEBPACK_EXTERNAL_MODULE__70__, __WEBPACK_EXTERNAL_MODULE__71__, __WEBPACK_EXTERNAL_MODULE__72__, __WEBPACK_EXTERNAL_MODULE__73__, __WEBPACK_EXTERNAL_MODULE__74__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__76__, __WEBPACK_EXTERNAL_MODULE__77__, __WEBPACK_EXTERNAL_MODULE__78__, __WEBPACK_EXTERNAL_MODULE__79__, __WEBPACK_EXTERNAL_MODULE__80__, __WEBPACK_EXTERNAL_MODULE__81__, __WEBPACK_EXTERNAL_MODULE__82__, __WEBPACK_EXTERNAL_MODULE__83__, __WEBPACK_EXTERNAL_MODULE__84__, __WEBPACK_EXTERNAL_MODULE__85__, __WEBPACK_EXTERNAL_MODULE__86__, __WEBPACK_EXTERNAL_MODULE__87__, __WEBPACK_EXTERNAL_MODULE__88__, __WEBPACK_EXTERNAL_MODULE__89__, __WEBPACK_EXTERNAL_MODULE__90__, __WEBPACK_EXTERNAL_MODULE__91__, __WEBPACK_EXTERNAL_MODULE__92__, __WEBPACK_EXTERNAL_MODULE__93__, __WEBPACK_EXTERNAL_MODULE__94__, __WEBPACK_EXTERNAL_MODULE__95__, __WEBPACK_EXTERNAL_MODULE__96__, __WEBPACK_EXTERNAL_MODULE__97__, __WEBPACK_EXTERNAL_MODULE__98__, __WEBPACK_EXTERNAL_MODULE__99__, __WEBPACK_EXTERNAL_MODULE__100__, __WEBPACK_EXTERNAL_MODULE__101__, __WEBPACK_EXTERNAL_MODULE__102__, __WEBPACK_EXTERNAL_MODULE__103__, __WEBPACK_EXTERNAL_MODULE__104__, __WEBPACK_EXTERNAL_MODULE__105__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__107__, __WEBPACK_EXTERNAL_MODULE__108__, __WEBPACK_EXTERNAL_MODULE__109__, __WEBPACK_EXTERNAL_MODULE__110__, __WEBPACK_EXTERNAL_MODULE__111__, __WEBPACK_EXTERNAL_MODULE__112__, __WEBPACK_EXTERNAL_MODULE__113__, __WEBPACK_EXTERNAL_MODULE__114__, __WEBPACK_EXTERNAL_MODULE__115__, __WEBPACK_EXTERNAL_MODULE__116__, __WEBPACK_EXTERNAL_MODULE__264__, __WEBPACK_EXTERNAL_MODULE__266__) { return /******/ (function(modules) { // webpackBootstrap
->>>>>>> chore(build): add build
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -89,15 +81,7 @@ define("components", ["vue-property-decorator","gsap","lodash/debounce","vue","c
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-<<<<<<< HEAD
-<<<<<<< HEAD
 /******/ 	return __webpack_require__(__webpack_require__.s = 18);
-=======
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
->>>>>>> chore(build): add build
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -467,57 +451,7 @@ var BrowserCapabilities = function () {
     return BrowserCapabilities;
 }();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _baseLink = __webpack_require__(134);
-
-var _baseLink2 = _interopRequireDefault(_baseLink);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _id = 1;
-var Portal = Vue.extend({
-  name: 'portal',
-  props: {
-    disabled: {
-      type: Boolean
-    },
-    name: {
-      type: String,
-      default: function _default() {
-        return String(_id++);
-      }
-    },
-    order: {
-      type: Number,
-      default: 0
-    },
-    slim: {
-      type: Boolean
-    },
-    slotProps: {
-      type: Object,
-      default: function _default() {
-        return {};
-      }
-    },
-    tag: {
-      type: String,
-      default: 'DIV'
-    },
-    to: {
-      type: String,
-      default: function _default() {
-        return String(Math.round(Math.random() * 10000000));
-      }
-    }
-  },
-  created: function created() {
-    var _this = this;
->>>>>>> feat(table-compare): allow 5 columns
-=======
 exports.default = BrowserCapabilities;
->>>>>>> chore(build): add build
 
 /***/ }),
 /* 3 */
@@ -603,7 +537,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _baseLink = __webpack_require__(135);
+var _baseLink = __webpack_require__(134);
 
 var _baseLink2 = _interopRequireDefault(_baseLink);
 
@@ -845,21 +779,8 @@ var Arithmetic = function () {
     }
   }]);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var v1 = __webpack_require__(120);
-var v4 = __webpack_require__(121);
-=======
-        } else if (context.method === "throw") {
-          if (state === GenStateSuspendedStart) {
-            state = GenStateCompleted;
-            throw context.arg;
-          }
->>>>>>> feat(table-compare): allow 5 columns
-=======
   return Arithmetic;
 }();
->>>>>>> chore(build): add build
 
 exports.default = Arithmetic;
 
@@ -1063,8 +984,8 @@ process.umask = function() { return 0; };
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var v1 = __webpack_require__(121);
-var v4 = __webpack_require__(122);
+var v1 = __webpack_require__(120);
+var v4 = __webpack_require__(121);
 
 var uuid = v4;
 uuid.v1 = v1;
@@ -1113,20 +1034,9 @@ if (getRandomValues) {
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.registry = exports.PublicEventService = exports.ViewportUtility = exports.TextUtils = exports.BrowserCapabilities = exports.Arithmetic = exports.Defaults = undefined;
-=======
-          next.value = undefined;
-          next.done = true;
-=======
 /***/ }),
 /* 15 */
 /***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 /**
  * Convert array of 16 byte values to UUID string format of the form:
@@ -1158,19 +1068,7 @@ module.exports = bytesToUuid;
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-    reset: function(skipTempReset) {
-      this.prev = 0;
-      this.next = 0;
-      // Resetting context._sent for legacy support of Babel's
-      // function.sent implementation.
-      this.sent = this._sent = undefined;
-      this.done = false;
-      this.delegate = null;
->>>>>>> feat(table-compare): allow 5 columns
-=======
 "use strict";
->>>>>>> chore(build): add build
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -1185,16 +1083,7 @@ exports.default = {
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _textUtils = __webpack_require__(19);
-=======
-    stop: function() {
-      this.done = true;
->>>>>>> feat(table-compare): allow 5 columns
-=======
 "use strict";
->>>>>>> chore(build): add build
 
 
 Object.defineProperty(exports, "__esModule", {
@@ -1208,18 +1097,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-__webpack_require__(20);
-
-__webpack_require__(21);
-=======
-        return !! caught;
-      }
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _events = __webpack_require__(5);
->>>>>>> chore(build): add build
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -1295,26 +1173,6 @@ exports.CardBase = CardBase;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _colors = __webpack_require__(388);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _colors.Colors;
-  }
-});
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.registry = exports.PublicEventService = exports.ViewportUtility = exports.TextUtils = exports.BrowserCapabilities = exports.Arithmetic = exports.Defaults = undefined;
@@ -1346,7 +1204,7 @@ Object.defineProperty(exports, 'BrowserCapabilities', {
     }
 });
 
-var _textUtils = __webpack_require__(20);
+var _textUtils = __webpack_require__(19);
 
 Object.defineProperty(exports, 'TextUtils', {
     enumerable: true,
@@ -1372,6 +1230,8 @@ Object.defineProperty(exports, 'PublicEventService', {
         return _interopRequireDefault(_publicEventService).default;
     }
 });
+
+__webpack_require__(20);
 
 __webpack_require__(21);
 
@@ -1455,66 +1315,21 @@ __webpack_require__(60);
 
 __webpack_require__(61);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _componentRegistry = __webpack_require__(118);
-=======
-/***/ }),
-
-/***/ "./node_modules/uuid/v4.js":
-/*!*********************************!*\
-  !*** ./node_modules/uuid/v4.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
 __webpack_require__(62);
 
 __webpack_require__(63);
->>>>>>> chore(build): add build
 
 __webpack_require__(64);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _components = __webpack_require__(123);
-=======
-function v4(options, buf, offset) {
-  var i = buf && offset || 0;
->>>>>>> feat(table-compare): allow 5 columns
-=======
 __webpack_require__(65);
->>>>>>> chore(build): add build
 
 __webpack_require__(66);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _directives = __webpack_require__(439);
-=======
-  var rnds = options.random || (options.rng || rng)();
->>>>>>> feat(table-compare): allow 5 columns
-=======
 __webpack_require__(67);
->>>>>>> chore(build): add build
 
 __webpack_require__(68);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-__webpack_require__(441);
-=======
-  // Copy bytes to buffer, if provided
-  if (buf) {
-    for (var ii = 0; ii < 16; ++ii) {
-      buf[i + ii] = rnds[ii];
-    }
-  }
->>>>>>> feat(table-compare): allow 5 columns
-=======
 __webpack_require__(69);
->>>>>>> chore(build): add build
 
 __webpack_require__(70);
 
@@ -1522,24 +1337,9 @@ __webpack_require__(71);
 
 __webpack_require__(72);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 19 */
-=======
-
-/***/ "./src/js/components/atoms/BaseLink/base-link.ts":
-/*!*******************************************************!*\
-  !*** ./src/js/components/atoms/BaseLink/base-link.ts ***!
-  \*******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
 __webpack_require__(73);
 
 __webpack_require__(74);
->>>>>>> chore(build): add build
 
 __webpack_require__(75);
 
@@ -1547,74 +1347,7 @@ __webpack_require__(76);
 
 __webpack_require__(77);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var TextUtils = function () {
-    function TextUtils() {
-        _classCallCheck(this, TextUtils);
-    }
-
-    _createClass(TextUtils, null, [{
-        key: 'htmlDecode',
-        value: function htmlDecode(input) {
-            var e = document.createElement('div');
-
-            e.innerHTML = input;
-
-            return e.childNodes.length === 0 ? '' : e.childNodes[0].nodeValue;
-        }
-    }]);
-
-    return TextUtils;
-}();
-
-exports.default = TextUtils;
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__20__;
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__21__;
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__22__;
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__23__;
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__24__;
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__25__;
-=======
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
->>>>>>> feat(table-compare): allow 5 columns
-=======
 __webpack_require__(78);
->>>>>>> chore(build): add build
 
 __webpack_require__(79);
 
@@ -1694,21 +1427,19 @@ __webpack_require__(116);
 
 __webpack_require__(117);
 
-__webpack_require__(118);
-
-var _componentRegistry = __webpack_require__(119);
+var _componentRegistry = __webpack_require__(118);
 
 var _componentRegistry2 = _interopRequireDefault(_componentRegistry);
 
-var _components = __webpack_require__(124);
+var _components = __webpack_require__(123);
 
 var _components2 = _interopRequireDefault(_components);
 
-var _directives = __webpack_require__(451);
+var _directives = __webpack_require__(439);
 
 var Directives = _interopRequireWildcard(_directives);
 
-__webpack_require__(453);
+__webpack_require__(441);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -1725,7 +1456,7 @@ Object.keys(Directives).forEach(function (d) {
 exports.registry = registry;
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1759,6 +1490,12 @@ var TextUtils = function () {
 }();
 
 exports.default = TextUtils;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__20__;
 
 /***/ }),
 /* 21 */
@@ -2076,57 +1813,13 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__72__;
 /* 73 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-module.exports = __WEBPACK_EXTERNAL_MODULE__115__;
-
-/***/ }),
-/* 116 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-    _createClass(CImage, [{
-        key: "beforeMount",
-        value: function beforeMount() {
-            if (_browserCapabilities2.default.isBrowser) {
-                var height = this.viewportUtil.screenHeight * 1.5;
-                this.setInViewOptions({ rootMargin: height + "px 0px " + height + "px 0px" });
-            }
-        }
-    }, {
-        key: "setError",
-        value: function setError() {
-            this.$emit('error');
-            this.imageError = true;
-        }
-    }, {
-        key: "mounted",
-        value: function () {
-            var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
-                return regeneratorRuntime.wrap(function _callee$(_context) {
-                    while (1) {
-                        switch (_context.prev = _context.next) {
-                            case 0:
-                                if (_browserCapabilities2.default.isBrowser) {
-                                    _context.next = 2;
-                                    break;
-                                }
-=======
 module.exports = __WEBPACK_EXTERNAL_MODULE__73__;
->>>>>>> chore(build): add build
 
 /***/ }),
 /* 74 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-                            case 2:
-                                this.viewportUtil.addResizeHandler(this.resizeHandler);
-                                _context.next = 5;
-                                return this.calculateDimensions(true);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 module.exports = __WEBPACK_EXTERNAL_MODULE__74__;
->>>>>>> chore(build): add build
 
 /***/ }),
 /* 75 */
@@ -2376,12 +2069,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__115__;
 
 /***/ }),
 /* 116 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__116__;
-
-/***/ }),
-/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -2578,19 +2265,10 @@ var runtime = (function (exports) {
         ) : callInvokeWithMethodAndArg();
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 117 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
     // Define the unified helper method that is used to implement .next,
     // .throw, and .return (see defineIteratorMethods).
     this._invoke = enqueue;
   }
->>>>>>> chore(build): add build
 
   defineIteratorMethods(AsyncIterator.prototype);
   AsyncIterator.prototype[asyncIteratorSymbol] = function () {
@@ -2621,20 +2299,6 @@ var runtime = (function (exports) {
         throw new Error("Generator is already running");
       }
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 118 */
-=======
-
-/***/ "./src/js/components/atoms/hit-area/hit-area.ts":
-/*!******************************************************!*\
-  !*** ./src/js/components/atoms/hit-area/hit-area.ts ***!
-  \******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
       if (state === GenStateCompleted) {
         if (method === "throw") {
           throw arg;
@@ -2644,7 +2308,6 @@ var runtime = (function (exports) {
         // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
         return doneResult();
       }
->>>>>>> chore(build): add build
 
       context.method = method;
       context.arg = arg;
@@ -2670,23 +2333,11 @@ var runtime = (function (exports) {
             throw context.arg;
           }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _uniqId = __webpack_require__(119);
-
-var _portalVue = __webpack_require__(122);
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-var _hitAreaVue = __webpack_require__(/*! ./hit-area.vue.html */ "./src/js/components/atoms/hit-area/hit-area.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
           context.dispatchException(context.arg);
 
         } else if (context.method === "return") {
           context.abrupt("return", context.arg);
         }
->>>>>>> chore(build): add build
 
         state = GenStateExecuting;
 
@@ -2776,20 +2427,6 @@ var _hitAreaVue = __webpack_require__(/*! ./hit-area.vue.html */ "./src/js/compo
       // variable specified by delegate.resultName (see delegateYield).
       context[delegate.resultName] = info.value;
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 119 */
-=======
-
-/***/ "./src/js/components/atoms/hit-area/index.ts":
-/*!***************************************************!*\
-  !*** ./src/js/components/atoms/hit-area/index.ts ***!
-  \***************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
       // Resume execution at the desired location (see delegateYield).
       context.next = delegate.nextLoc;
 
@@ -2803,7 +2440,6 @@ var _hitAreaVue = __webpack_require__(/*! ./hit-area.vue.html */ "./src/js/compo
         context.method = "next";
         context.arg = undefined;
       }
->>>>>>> chore(build): add build
 
     } else {
       // Re-yield the result returned by the delegate method.
@@ -2838,21 +2474,9 @@ var _hitAreaVue = __webpack_require__(/*! ./hit-area.vue.html */ "./src/js/compo
   function pushTryEntry(locs) {
     var entry = { tryLoc: locs[0] };
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 120 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var rng = __webpack_require__(14);
-var bytesToUuid = __webpack_require__(15);
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
     if (1 in locs) {
       entry.catchLoc = locs[1];
     }
->>>>>>> chore(build): add build
 
     if (2 in locs) {
       entry.finallyLoc = locs[2];
@@ -2983,20 +2607,6 @@ var bytesToUuid = __webpack_require__(15);
         throw rootRecord.arg;
       }
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 121 */
-=======
-
-/***/ "./src/js/components/atoms/horizontal-list/index.ts":
-/*!**********************************************************!*\
-  !*** ./src/js/components/atoms/horizontal-list/index.ts ***!
-  \**********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
       return this.rval;
     },
 
@@ -3004,7 +2614,6 @@ var bytesToUuid = __webpack_require__(15);
       if (this.done) {
         throw exception;
       }
->>>>>>> chore(build): add build
 
       var context = this;
       function handle(loc, caught) {
@@ -3044,20 +2653,6 @@ var bytesToUuid = __webpack_require__(15);
               return handle(entry.finallyLoc);
             }
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 122 */
-=======
-
-/***/ "./src/js/components/atoms/icon/icon.ts":
-/*!**********************************************!*\
-  !*** ./src/js/components/atoms/icon/icon.ts ***!
-  \**********************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
           } else if (hasCatch) {
             if (this.prev < entry.catchLoc) {
               return handle(entry.catchLoc, true);
@@ -3067,7 +2662,6 @@ var bytesToUuid = __webpack_require__(15);
             if (this.prev < entry.finallyLoc) {
               return handle(entry.finallyLoc);
             }
->>>>>>> chore(build): add build
 
           } else {
             throw new Error("try statement without catch or finally");
@@ -3206,13 +2800,13 @@ try {
 
 
 /***/ }),
-/* 118 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
-/* 119 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3224,9 +2818,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _uniqId = __webpack_require__(120);
+var _uniqId = __webpack_require__(119);
 
-var _portalVue = __webpack_require__(123);
+var _portalVue = __webpack_require__(122);
 
 var _portalVue2 = _interopRequireDefault(_portalVue);
 
@@ -3264,36 +2858,6 @@ var ComponentRegistry = function () {
                 return vue.directive(d.name, d);
             });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    this.$nextTick(function () {
-      wormhole.registerTarget(_this.name, _this);
-    });
-  },
-  watch: {
-    ownTransports: function ownTransports() {
-      this.$emit('change', this.children().length > 0);
-    },
-    name: function name(newVal, oldVal) {
-      /**
-       * TODO
-       * This should warn as well ...
-       */
-      wormhole.unregisterTarget(oldVal);
-      wormhole.registerTarget(newVal, this);
-    }
-  },
-  mounted: function mounted() {
-    var _this2 = this;
-=======
-Object.defineProperty(exports, 'AnchorOverlay', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_anchorOverlay).default;
-  }
-});
->>>>>>> feat(table-compare): allow 5 columns
-=======
             this.components.filter(function (c) {
                 return typeof c.name === 'string' || c.extendOptions && typeof c.extendOptions.name === 'string';
             }).forEach(function (c) {
@@ -3315,7 +2879,6 @@ Object.defineProperty(exports, 'AnchorOverlay', {
             });
         }
     }]);
->>>>>>> chore(build): add build
 
     return ComponentRegistry;
 }();
@@ -3323,7 +2886,7 @@ Object.defineProperty(exports, 'AnchorOverlay', {
 exports.default = ComponentRegistry;
 
 /***/ }),
-/* 120 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3338,8 +2901,630 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _uuid = __webpack_require__(13);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+var _uuid2 = _interopRequireDefault(_uuid);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var UniqId = exports.UniqId = function () {
+    function UniqId() {
+        _classCallCheck(this, UniqId);
+    }
+
+    _createClass(UniqId, null, [{
+        key: 'install',
+        value: function install(vue) {
+            Object.defineProperty(vue.prototype, 'uniqId', {
+                configurable: true,
+                get: function uniqId() {
+                    if (process.env.BABEL_ENV) {
+                        return 'static_id';
+                    }
+                    return (0, _uuid2.default)();
+                }
+            });
+        }
+    }]);
+
+    return UniqId;
+}();
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(12)))
+
+/***/ }),
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var rng = __webpack_require__(14);
+var bytesToUuid = __webpack_require__(15);
+
+// **`v1()` - Generate time-based UUID**
+//
+// Inspired by https://github.com/LiosK/UUID.js
+// and http://docs.python.org/library/uuid.html
+
+var _nodeId;
+var _clockseq;
+
+// Previous uuid creation time
+var _lastMSecs = 0;
+var _lastNSecs = 0;
+
+// See https://github.com/broofa/node-uuid for API details
+function v1(options, buf, offset) {
+  var i = buf && offset || 0;
+  var b = buf || [];
+
+  options = options || {};
+  var node = options.node || _nodeId;
+  var clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq;
+
+  // node and clockseq need to be initialized to random values if they're not
+  // specified.  We do this lazily to minimize issues related to insufficient
+  // system entropy.  See #189
+  if (node == null || clockseq == null) {
+    var seedBytes = rng();
+    if (node == null) {
+      // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
+      node = _nodeId = [
+        seedBytes[0] | 0x01,
+        seedBytes[1], seedBytes[2], seedBytes[3], seedBytes[4], seedBytes[5]
+      ];
+    }
+    if (clockseq == null) {
+      // Per 4.2.2, randomize (14 bit) clockseq
+      clockseq = _clockseq = (seedBytes[6] << 8 | seedBytes[7]) & 0x3fff;
+    }
+  }
+
+  // UUID timestamps are 100 nano-second units since the Gregorian epoch,
+  // (1582-10-15 00:00).  JSNumbers aren't precise enough for this, so
+  // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
+  // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
+  var msecs = options.msecs !== undefined ? options.msecs : new Date().getTime();
+
+  // Per 4.2.1.2, use count of uuid's generated during the current clock
+  // cycle to simulate higher resolution clock
+  var nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1;
+
+  // Time since last uuid creation (in msecs)
+  var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs)/10000;
+
+  // Per 4.2.1.2, Bump clockseq on clock regression
+  if (dt < 0 && options.clockseq === undefined) {
+    clockseq = clockseq + 1 & 0x3fff;
+  }
+
+  // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
+  // time interval
+  if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) {
+    nsecs = 0;
+  }
+
+  // Per 4.2.1.2 Throw error if too many uuids are requested
+  if (nsecs >= 10000) {
+    throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
+  }
+
+  _lastMSecs = msecs;
+  _lastNSecs = nsecs;
+  _clockseq = clockseq;
+
+  // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
+  msecs += 12219292800000;
+
+  // `time_low`
+  var tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
+  b[i++] = tl >>> 24 & 0xff;
+  b[i++] = tl >>> 16 & 0xff;
+  b[i++] = tl >>> 8 & 0xff;
+  b[i++] = tl & 0xff;
+
+  // `time_mid`
+  var tmh = (msecs / 0x100000000 * 10000) & 0xfffffff;
+  b[i++] = tmh >>> 8 & 0xff;
+  b[i++] = tmh & 0xff;
+
+  // `time_high_and_version`
+  b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
+  b[i++] = tmh >>> 16 & 0xff;
+
+  // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
+  b[i++] = clockseq >>> 8 | 0x80;
+
+  // `clock_seq_low`
+  b[i++] = clockseq & 0xff;
+
+  // `node`
+  for (var n = 0; n < 6; ++n) {
+    b[i + n] = node[n];
+  }
+
+  return buf ? buf : bytesToUuid(b);
+}
+
+module.exports = v1;
+
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var rng = __webpack_require__(14);
+var bytesToUuid = __webpack_require__(15);
+
+function v4(options, buf, offset) {
+  var i = buf && offset || 0;
+
+  if (typeof(options) == 'string') {
+    buf = options === 'binary' ? new Array(16) : null;
+    options = null;
+  }
+  options = options || {};
+
+  var rnds = options.random || (options.rng || rng)();
+
+  // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+  rnds[6] = (rnds[6] & 0x0f) | 0x40;
+  rnds[8] = (rnds[8] & 0x3f) | 0x80;
+
+  // Copy bytes to buffer, if provided
+  if (buf) {
+    for (var ii = 0; ii < 16; ++ii) {
+      buf[i + ii] = rnds[ii];
+    }
+  }
+
+  return buf || bytesToUuid(rnds);
+}
+
+module.exports = v4;
+
+
+/***/ }),
+/* 122 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+ /*! 
+  * portal-vue © Thorsten Lünborg, 2019 
+  * 
+  * Version: 2.1.5
+  * 
+  * LICENCE: MIT 
+  * 
+  * https://github.com/linusborg/portal-vue
+  * 
+ */
+
+
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var Vue = _interopDefault(__webpack_require__(11));
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function (obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function (obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+}
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+var inBrowser = typeof window !== 'undefined';
+function freeze(item) {
+  if (Array.isArray(item) || _typeof(item) === 'object') {
+    return Object.freeze(item);
+  }
+
+  return item;
+}
+function combinePassengers(transports) {
+  var slotProps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  return transports.reduce(function (passengers, transport) {
+    var temp = transport.passengers[0];
+    var newPassengers = typeof temp === 'function' ? temp(slotProps) : transport.passengers;
+    return passengers.concat(newPassengers);
+  }, []);
+}
+function stableSort(array, compareFn) {
+  return array.map(function (v, idx) {
+    return [idx, v];
+  }).sort(function (a, b) {
+    return compareFn(a[1], b[1]) || a[0] - b[0];
+  }).map(function (c) {
+    return c[1];
+  });
+}
+function pick(obj, keys) {
+  return keys.reduce(function (acc, key) {
+    if (obj.hasOwnProperty(key)) {
+      acc[key] = obj[key];
+    }
+
+    return acc;
+  }, {});
+}
+
+var transports = {};
+var targets = {};
+var sources = {};
+var Wormhole = Vue.extend({
+  data: function data() {
+    return {
+      transports: transports,
+      targets: targets,
+      sources: sources,
+      trackInstances: inBrowser
+    };
+  },
+  methods: {
+    open: function open(transport) {
+      if (!inBrowser) return;
+      var to = transport.to,
+          from = transport.from,
+          passengers = transport.passengers,
+          _transport$order = transport.order,
+          order = _transport$order === void 0 ? Infinity : _transport$order;
+      if (!to || !from || !passengers) return;
+      var newTransport = {
+        to: to,
+        from: from,
+        passengers: freeze(passengers),
+        order: order
+      };
+      var keys = Object.keys(this.transports);
+
+      if (keys.indexOf(to) === -1) {
+        Vue.set(this.transports, to, []);
+      }
+
+      var currentIndex = this.$_getTransportIndex(newTransport); // Copying the array here so that the PortalTarget change event will actually contain two distinct arrays
+
+      var newTransports = this.transports[to].slice(0);
+
+      if (currentIndex === -1) {
+        newTransports.push(newTransport);
+      } else {
+        newTransports[currentIndex] = newTransport;
+      }
+
+      this.transports[to] = stableSort(newTransports, function (a, b) {
+        return a.order - b.order;
+      });
+    },
+    close: function close(transport) {
+      var force = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+      var to = transport.to,
+          from = transport.from;
+      if (!to || !from) return;
+
+      if (!this.transports[to]) {
+        return;
+      }
+
+      if (force) {
+        this.transports[to] = [];
+      } else {
+        var index = this.$_getTransportIndex(transport);
+
+        if (index >= 0) {
+          // Copying the array here so that the PortalTarget change event will actually contain two distinct arrays
+          var newTransports = this.transports[to].slice(0);
+          newTransports.splice(index, 1);
+          this.transports[to] = newTransports;
+        }
+      }
+    },
+    registerTarget: function registerTarget(target, vm, force) {
+      if (!inBrowser) return;
+
+      if (this.trackInstances && !force && this.targets[target]) {
+        console.warn("[portal-vue]: Target ".concat(target, " already exists"));
+      }
+
+      this.$set(this.targets, target, Object.freeze([vm]));
+    },
+    unregisterTarget: function unregisterTarget(target) {
+      this.$delete(this.targets, target);
+    },
+    registerSource: function registerSource(source, vm, force) {
+      if (!inBrowser) return;
+
+      if (this.trackInstances && !force && this.sources[source]) {
+        console.warn("[portal-vue]: source ".concat(source, " already exists"));
+      }
+
+      this.$set(this.sources, source, Object.freeze([vm]));
+    },
+    unregisterSource: function unregisterSource(source) {
+      this.$delete(this.sources, source);
+    },
+    hasTarget: function hasTarget(to) {
+      return !!(this.targets[to] && this.targets[to][0]);
+    },
+    hasSource: function hasSource(to) {
+      return !!(this.sources[to] && this.sources[to][0]);
+    },
+    hasContentFor: function hasContentFor(to) {
+      return !!this.transports[to] && !!this.transports[to].length;
+    },
+    // Internal
+    $_getTransportIndex: function $_getTransportIndex(_ref) {
+      var to = _ref.to,
+          from = _ref.from;
+
+      for (var i in this.transports[to]) {
+        if (this.transports[to][i].from === from) {
+          return +i;
+        }
+      }
+
+      return -1;
+    }
+  }
+});
+var wormhole = new Wormhole(transports);
+
+var _id = 1;
+var Portal = Vue.extend({
+  name: 'portal',
+  props: {
+    disabled: {
+      type: Boolean
+    },
+    name: {
+      type: String,
+      default: function _default() {
+        return String(_id++);
+      }
+    },
+    order: {
+      type: Number,
+      default: 0
+    },
+    slim: {
+      type: Boolean
+    },
+    slotProps: {
+      type: Object,
+      default: function _default() {
+        return {};
+      }
+    },
+    tag: {
+      type: String,
+      default: 'DIV'
+    },
+    to: {
+      type: String,
+      default: function _default() {
+        return String(Math.round(Math.random() * 10000000));
+      }
+    }
+  },
+  created: function created() {
+    var _this = this;
+
+    this.$nextTick(function () {
+      wormhole.registerSource(_this.name, _this);
+    });
+  },
+  mounted: function mounted() {
+    if (!this.disabled) {
+      this.sendUpdate();
+    }
+  },
+  updated: function updated() {
+    if (this.disabled) {
+      this.clear();
+    } else {
+      this.sendUpdate();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    wormhole.unregisterSource(this.name);
+    this.clear();
+  },
+  watch: {
+    to: function to(newValue, oldValue) {
+      oldValue && oldValue !== newValue && this.clear(oldValue);
+      this.sendUpdate();
+    }
+  },
+  methods: {
+    clear: function clear(target) {
+      var closer = {
+        from: this.name,
+        to: target || this.to
+      };
+      wormhole.close(closer);
+    },
+    normalizeSlots: function normalizeSlots() {
+      return this.$scopedSlots.default ? [this.$scopedSlots.default] : this.$slots.default;
+    },
+    normalizeOwnChildren: function normalizeOwnChildren(children) {
+      return typeof children === 'function' ? children(this.slotProps) : children;
+    },
+    sendUpdate: function sendUpdate() {
+      var slotContent = this.normalizeSlots();
+
+      if (slotContent) {
+        var transport = {
+          from: this.name,
+          to: this.to,
+          passengers: _toConsumableArray(slotContent),
+          order: this.order
+        };
+        wormhole.open(transport);
+      } else {
+        this.clear();
+      }
+    }
+  },
+  render: function render(h) {
+    var children = this.$slots.default || this.$scopedSlots.default || [];
+    var Tag = this.tag;
+
+    if (children && this.disabled) {
+      return children.length <= 1 && this.slim ? this.normalizeOwnChildren(children)[0] : h(Tag, [this.normalizeOwnChildren(children)]);
+    } else {
+      return this.slim ? h() : h(Tag, {
+        class: {
+          'v-portal': true
+        },
+        style: {
+          display: 'none'
+        },
+        key: 'v-portal-placeholder'
+      });
+    }
+  }
+});
+
+var PortalTarget = Vue.extend({
+  name: 'portalTarget',
+  props: {
+    multiple: {
+      type: Boolean,
+      default: false
+    },
+    name: {
+      type: String,
+      required: true
+    },
+    slim: {
+      type: Boolean,
+      default: false
+    },
+    slotProps: {
+      type: Object,
+      default: function _default() {
+        return {};
+      }
+    },
+    tag: {
+      type: String,
+      default: 'div'
+    },
+    transition: {
+      type: [String, Object, Function]
+    }
+  },
+  data: function data() {
+    return {
+      transports: wormhole.transports,
+      firstRender: true
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    this.$nextTick(function () {
+      wormhole.registerTarget(_this.name, _this);
+    });
+  },
+  watch: {
+    ownTransports: function ownTransports() {
+      this.$emit('change', this.children().length > 0);
+    },
+    name: function name(newVal, oldVal) {
+      /**
+       * TODO
+       * This should warn as well ...
+       */
+      wormhole.unregisterTarget(oldVal);
+      wormhole.registerTarget(newVal, this);
+    }
+  },
+  mounted: function mounted() {
+    var _this2 = this;
+
+    if (this.transition) {
+      this.$nextTick(function () {
+        // only when we have a transition, because it causes a re-render
+        _this2.firstRender = false;
+      });
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    wormhole.unregisterTarget(this.name);
+  },
+  computed: {
+    ownTransports: function ownTransports() {
+      var transports = this.transports[this.name] || [];
+
+      if (this.multiple) {
+        return transports;
+      }
+
+      return transports.length === 0 ? [] : [transports[transports.length - 1]];
+    },
+    passengers: function passengers() {
+      return combinePassengers(this.ownTransports, this.slotProps);
+    }
+  },
+  methods: {
+    // can't be a computed prop because it has to "react" to $slot changes.
+    children: function children() {
+      return this.passengers.length !== 0 ? this.passengers : this.$scopedSlots.default ? this.$scopedSlots.default(this.slotProps) : this.$slots.default || [];
+    },
+    // can't be a computed prop because it has to "react" to this.children().
+    noWrapper: function noWrapper() {
+      var noWrapper = this.slim && !this.transition;
+
+      if (noWrapper && this.children().length > 1) {
+        console.warn('[portal-vue]: PortalTarget with `slim` option received more than one child element.');
+      }
+
+      return noWrapper;
+    }
+  },
+  render: function render(h) {
+    var noWrapper = this.noWrapper();
+    var children = this.children();
+    var Tag = this.transition || this.tag;
+    return noWrapper ? children[0] : this.slim && !Tag ? h() : h(Tag, {
+      props: {
+        // if we have a transition component, pass the tag if it exists
+        tag: this.transition && this.tag ? this.tag : undefined
+      },
+      class: {
+        'vue-portal-target': true
+      }
+    }, children);
+  }
+});
+
 var _id$1 = 0;
 var portalProps = ['disabled', 'name', 'order', 'slim', 'slotProps', 'tag', 'to'];
 var targetProps = ['multiple', 'transition'];
@@ -3596,9 +3781,6 @@ Object.defineProperty(exports, 'BaseLink', {
 });
 
 var _contentLink = __webpack_require__(136);
-=======
-var _contentLink = __webpack_require__(/*! atoms/content-link */ "./src/js/components/atoms/content-link/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
 
 Object.defineProperty(exports, 'ContentLink', {
   enumerable: true,
@@ -3607,11 +3789,7 @@ Object.defineProperty(exports, 'ContentLink', {
   }
 });
 
-<<<<<<< HEAD
 var _contentButton = __webpack_require__(138);
-=======
-var _contentButton = __webpack_require__(/*! atoms/content-button */ "./src/js/components/atoms/content-button/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
 
 Object.defineProperty(exports, 'ContentButton', {
   enumerable: true,
@@ -3620,11 +3798,7 @@ Object.defineProperty(exports, 'ContentButton', {
   }
 });
 
-<<<<<<< HEAD
 var _contentLinkList = __webpack_require__(140);
-=======
-var _contentLinkList = __webpack_require__(/*! atoms/content-link-list */ "./src/js/components/atoms/content-link-list/index.js");
->>>>>>> feat(table-compare): allow 5 columns
 
 Object.defineProperty(exports, 'ContentLinkList', {
   enumerable: true,
@@ -3633,11 +3807,7 @@ Object.defineProperty(exports, 'ContentLinkList', {
   }
 });
 
-<<<<<<< HEAD
 var _hitArea = __webpack_require__(143);
-=======
-var _hitArea = __webpack_require__(/*! atoms/hit-area */ "./src/js/components/atoms/hit-area/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
 
 Object.defineProperty(exports, 'HitArea', {
   enumerable: true,
@@ -3646,11 +3816,7 @@ Object.defineProperty(exports, 'HitArea', {
   }
 });
 
-<<<<<<< HEAD
 var _horizontalList = __webpack_require__(146);
-=======
-var _horizontalList = __webpack_require__(/*! atoms/horizontal-list */ "./src/js/components/atoms/horizontal-list/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
 
 Object.defineProperty(exports, 'HorizontalList', {
   enumerable: true,
@@ -3659,11 +3825,7 @@ Object.defineProperty(exports, 'HorizontalList', {
   }
 });
 
-<<<<<<< HEAD
 var _icon = __webpack_require__(149);
-=======
-var _icon = __webpack_require__(/*! atoms/icon */ "./src/js/components/atoms/icon/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
 
 Object.defineProperty(exports, 'Icon', {
   enumerable: true,
@@ -3672,11 +3834,7 @@ Object.defineProperty(exports, 'Icon', {
   }
 });
 
-<<<<<<< HEAD
 var _cImage = __webpack_require__(152);
-=======
-var _cImage = __webpack_require__(/*! atoms/c-image */ "./src/js/components/atoms/c-image/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
 
 Object.defineProperty(exports, 'Image', {
   enumerable: true,
@@ -3685,1446 +3843,16 @@ Object.defineProperty(exports, 'Image', {
   }
 });
 
-<<<<<<< HEAD
 var _labelFilter = __webpack_require__(159);
-=======
-var _labelFilter = __webpack_require__(/*! atoms/label-filter */ "./src/js/components/atoms/label-filter/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
 
 Object.defineProperty(exports, 'LabelFilter', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_labelFilter).default;
-=======
-var _uuid2 = _interopRequireDefault(_uuid);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var UniqId = exports.UniqId = function () {
-    function UniqId() {
-        _classCallCheck(this, UniqId);
-    }
-
-    _createClass(UniqId, null, [{
-        key: 'install',
-        value: function install(vue) {
-            Object.defineProperty(vue.prototype, 'uniqId', {
-                configurable: true,
-                get: function uniqId() {
-                    if (process.env.BABEL_ENV) {
-                        return 'static_id';
-                    }
-                    return (0, _uuid2.default)();
-                }
-            });
-        }
-    }]);
-
-    return UniqId;
-}();
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(12)))
-
-/***/ }),
-/* 121 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var rng = __webpack_require__(14);
-var bytesToUuid = __webpack_require__(15);
-
-// **`v1()` - Generate time-based UUID**
-//
-// Inspired by https://github.com/LiosK/UUID.js
-// and http://docs.python.org/library/uuid.html
-
-var _nodeId;
-var _clockseq;
-
-// Previous uuid creation time
-var _lastMSecs = 0;
-var _lastNSecs = 0;
-
-// See https://github.com/broofa/node-uuid for API details
-function v1(options, buf, offset) {
-  var i = buf && offset || 0;
-  var b = buf || [];
-
-  options = options || {};
-  var node = options.node || _nodeId;
-  var clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq;
-
-  // node and clockseq need to be initialized to random values if they're not
-  // specified.  We do this lazily to minimize issues related to insufficient
-  // system entropy.  See #189
-  if (node == null || clockseq == null) {
-    var seedBytes = rng();
-    if (node == null) {
-      // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
-      node = _nodeId = [
-        seedBytes[0] | 0x01,
-        seedBytes[1], seedBytes[2], seedBytes[3], seedBytes[4], seedBytes[5]
-      ];
-    }
-    if (clockseq == null) {
-      // Per 4.2.2, randomize (14 bit) clockseq
-      clockseq = _clockseq = (seedBytes[6] << 8 | seedBytes[7]) & 0x3fff;
-    }
->>>>>>> chore(build): add build
   }
+});
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _liInline = __webpack_require__(162);
-=======
-var _liInline = __webpack_require__(/*! atoms/li-inline */ "./src/js/components/atoms/li-inline/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-  // UUID timestamps are 100 nano-second units since the Gregorian epoch,
-  // (1582-10-15 00:00).  JSNumbers aren't precise enough for this, so
-  // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
-  // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
-  var msecs = options.msecs !== undefined ? options.msecs : new Date().getTime();
->>>>>>> chore(build): add build
-
-  // Per 4.2.1.2, use count of uuid's generated during the current clock
-  // cycle to simulate higher resolution clock
-  var nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _liItem = __webpack_require__(165);
-=======
-var _liItem = __webpack_require__(/*! atoms/li-item */ "./src/js/components/atoms/li-item/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-  // Time since last uuid creation (in msecs)
-  var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs)/10000;
->>>>>>> chore(build): add build
-
-  // Per 4.2.1.2, Bump clockseq on clock regression
-  if (dt < 0 && options.clockseq === undefined) {
-    clockseq = clockseq + 1 & 0x3fff;
-  }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _navAssist = __webpack_require__(168);
-=======
-var _navAssist = __webpack_require__(/*! atoms/nav-assist */ "./src/js/components/atoms/nav-assist/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'NavAssist', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_navAssist).default;
-=======
-  // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
-  // time interval
-  if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) {
-    nsecs = 0;
->>>>>>> chore(build): add build
-  }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _responsivePicture = __webpack_require__(171);
-=======
-var _responsivePicture = __webpack_require__(/*! atoms/responsive-picture */ "./src/js/components/atoms/responsive-picture/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'ResponsivePicture', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_responsivePicture).default;
-=======
-  // Per 4.2.1.2 Throw error if too many uuids are requested
-  if (nsecs >= 10000) {
-    throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
->>>>>>> chore(build): add build
-  }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _spanLabel = __webpack_require__(175);
-=======
-var _spanLabel = __webpack_require__(/*! atoms/span-label */ "./src/js/components/atoms/span-label/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-  _lastMSecs = msecs;
-  _lastNSecs = nsecs;
-  _clockseq = clockseq;
->>>>>>> chore(build): add build
-
-  // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
-  msecs += 12219292800000;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabbableDefinitionList = __webpack_require__(178);
-=======
-var _tabbableDefinitionList = __webpack_require__(/*! atoms/tabbable-definition-list */ "./src/js/components/atoms/tabbable-definition-list/index.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-  // `time_low`
-  var tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
-  b[i++] = tl >>> 24 & 0xff;
-  b[i++] = tl >>> 16 & 0xff;
-  b[i++] = tl >>> 8 & 0xff;
-  b[i++] = tl & 0xff;
->>>>>>> chore(build): add build
-
-  // `time_mid`
-  var tmh = (msecs / 0x100000000 * 10000) & 0xfffffff;
-  b[i++] = tmh >>> 8 & 0xff;
-  b[i++] = tmh & 0xff;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tooltip = __webpack_require__(181);
-=======
-var _tooltip = __webpack_require__(/*! atoms/tooltip */ "./src/js/components/atoms/tooltip/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-  // `time_high_and_version`
-  b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
-  b[i++] = tmh >>> 16 & 0xff;
->>>>>>> chore(build): add build
-
-  // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
-  b[i++] = clockseq >>> 8 | 0x80;
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _youtubeLink = __webpack_require__(184);
-=======
-var _youtubeLink = __webpack_require__(/*! atoms/youtube-link */ "./src/js/components/atoms/youtube-link/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-  // `clock_seq_low`
-  b[i++] = clockseq & 0xff;
->>>>>>> chore(build): add build
-
-  // `node`
-  for (var n = 0; n < 6; ++n) {
-    b[i + n] = node[n];
-  }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _youtubeVideo = __webpack_require__(187);
-=======
-var _youtubeVideo = __webpack_require__(/*! atoms/youtube-video */ "./src/js/components/atoms/youtube-video/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-  return buf ? buf : bytesToUuid(b);
-}
->>>>>>> chore(build): add build
-
-module.exports = v1;
-
-
-/***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 125 */
-=======
-
-/***/ "./src/js/components/atoms/label-filter/index.ts":
-/*!*******************************************************!*\
-  !*** ./src/js/components/atoms/label-filter/index.ts ***!
-  \*******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 122 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-var rng = __webpack_require__(14);
-var bytesToUuid = __webpack_require__(15);
-
-function v4(options, buf, offset) {
-  var i = buf && offset || 0;
-
-  if (typeof(options) == 'string') {
-    buf = options === 'binary' ? new Array(16) : null;
-    options = null;
-  }
-  options = options || {};
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _component = __webpack_require__(126);
-
-var _component2 = _interopRequireDefault(_component);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _component2.default;
-
-/***/ }),
-/* 126 */
-=======
-var _labelFilter = __webpack_require__(/*! ./label-filter */ "./src/js/components/atoms/label-filter/label-filter.ts");
-=======
-  var rnds = options.random || (options.rng || rng)();
->>>>>>> chore(build): add build
-
-  // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
-  rnds[6] = (rnds[6] & 0x0f) | 0x40;
-  rnds[8] = (rnds[8] & 0x3f) | 0x80;
-
-  // Copy bytes to buffer, if provided
-  if (buf) {
-    for (var ii = 0; ii < 16; ++ii) {
-      buf[i + ii] = rnds[ii];
-    }
-  }
-
-  return buf || bytesToUuid(rnds);
-}
-
-<<<<<<< HEAD
-/***/ "./src/js/components/atoms/label-filter/label-filter.ts":
-/*!**************************************************************!*\
-  !*** ./src/js/components/atoms/label-filter/label-filter.ts ***!
-  \**************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
-module.exports = v4;
->>>>>>> chore(build): add build
-
-
-/***/ }),
-/* 123 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
- /*! 
-  * portal-vue © Thorsten Lünborg, 2019 
-  * 
-  * Version: 2.1.5
-  * 
-  * LICENCE: MIT 
-  * 
-  * https://github.com/linusborg/portal-vue
-  * 
- */
-
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _templateVue = __webpack_require__(127);
-=======
-var _labelFilterVue = __webpack_require__(/*! ./label-filter.vue.html */ "./src/js/components/atoms/label-filter/label-filter.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-Object.defineProperty(exports, '__esModule', { value: true });
->>>>>>> chore(build): add build
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var Vue = _interopDefault(__webpack_require__(11));
-
-function _typeof(obj) {
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function (obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function (obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-function _toConsumableArray(arr) {
-  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
-}
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
-
-    return arr2;
-  }
-}
-
-function _iterableToArray(iter) {
-  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
-}
-
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance");
-}
-
-var inBrowser = typeof window !== 'undefined';
-function freeze(item) {
-  if (Array.isArray(item) || _typeof(item) === 'object') {
-    return Object.freeze(item);
-  }
-
-<<<<<<< HEAD
-    _createClass(LabelFilter, [{
-        key: "onChange",
-        value: function onChange($event) {
-            this.$emit(this.eventChange, {
-                checked: this.checkedState,
-                disabled: this.disabled,
-                value: this.value
-            });
-        }
-    }]);
-
-    return LabelFilter;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), __metadata("design:type", Object)], LabelFilter.prototype, "checked", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), __metadata("design:type", Object)], LabelFilter.prototype, "disabled", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], LabelFilter.prototype, "eventChange", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], LabelFilter.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], LabelFilter.prototype, "name", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], LabelFilter.prototype, "value", void 0);
-exports.LabelFilter = LabelFilter = __decorate([_labelFilterVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'LabelFilter'
-})], LabelFilter);
-exports.LabelFilter = LabelFilter;
-
-/***/ }),
-<<<<<<< HEAD
-/* 127 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/atoms/label-filter/label-filter.vue.html":
-/*!********************************************************************!*\
-  !*** ./src/js/components/atoms/label-filter/label-filter.vue.html ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("label", { staticClass: "label-filter" }, [
-    _c("input", {
-      directives: [
-        {
-          name: "model",
-          rawName: "v-model",
-          value: _vm.checkedState,
-          expression: "checkedState"
-        }
-      ],
-      ref: "checkbox",
-      attrs: { disabled: _vm.disabled, name: _vm.name, type: "checkbox" },
-      domProps: {
-        checked: _vm.checked,
-        value: _vm.value,
-        checked: Array.isArray(_vm.checkedState)
-          ? _vm._i(_vm.checkedState, _vm.value) > -1
-          : _vm.checkedState
-      },
-      on: {
-        change: [
-          function($event) {
-            var $$a = _vm.checkedState,
-              $$el = $event.target,
-              $$c = $$el.checked ? true : false
-            if (Array.isArray($$a)) {
-              var $$v = _vm.value,
-                $$i = _vm._i($$a, $$v)
-              if ($$el.checked) {
-                $$i < 0 && (_vm.checkedState = $$a.concat([$$v]))
-              } else {
-                $$i > -1 &&
-                  (_vm.checkedState = $$a
-                    .slice(0, $$i)
-                    .concat($$a.slice($$i + 1)))
-              }
-            } else {
-              _vm.checkedState = $$c
-            }
-          },
-          _vm.onChange
-        ]
-      }
-    }),
-    _vm._v(" "),
-    _c("span", { staticClass: "label-filter__label" }, [
-      _vm._v(_vm._s(_vm.label))
-    ])
-  ])
-=======
-  return item;
->>>>>>> chore(build): add build
-}
-function combinePassengers(transports) {
-  var slotProps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  return transports.reduce(function (passengers, transport) {
-    var temp = transport.passengers[0];
-    var newPassengers = typeof temp === 'function' ? temp(slotProps) : transport.passengers;
-    return passengers.concat(newPassengers);
-  }, []);
-}
-<<<<<<< HEAD
-var api = null
-if (false) {}
-
-
-/***/ }),
-<<<<<<< HEAD
-/* 128 */
-=======
-
-/***/ "./src/js/components/atoms/li-inline/index.ts":
-/*!****************************************************!*\
-  !*** ./src/js/components/atoms/li-inline/index.ts ***!
-  \****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-var _actionButton = __webpack_require__(129);
-=======
-var _liInline = __webpack_require__(/*! ./li-inline */ "./src/js/components/atoms/li-inline/li-inline.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _liInline.LiInline;
-  }
-});
-
-/***/ }),
-<<<<<<< HEAD
-/* 129 */
-=======
-
-/***/ "./src/js/components/atoms/li-inline/li-inline.ts":
-/*!********************************************************!*\
-  !*** ./src/js/components/atoms/li-inline/li-inline.ts ***!
-  \********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
-function stableSort(array, compareFn) {
-  return array.map(function (v, idx) {
-    return [idx, v];
-  }).sort(function (a, b) {
-    return compareFn(a[1], b[1]) || a[0] - b[0];
-  }).map(function (c) {
-    return c[1];
-  });
-}
-function pick(obj, keys) {
-  return keys.reduce(function (acc, key) {
-    if (obj.hasOwnProperty(key)) {
-      acc[key] = obj[key];
-    }
-
-    return acc;
-  }, {});
-}
->>>>>>> chore(build): add build
-
-var transports = {};
-var targets = {};
-var sources = {};
-var Wormhole = Vue.extend({
-  data: function data() {
-    return {
-      transports: transports,
-      targets: targets,
-      sources: sources,
-      trackInstances: inBrowser
-    };
-  },
-  methods: {
-    open: function open(transport) {
-      if (!inBrowser) return;
-      var to = transport.to,
-          from = transport.from,
-          passengers = transport.passengers,
-          _transport$order = transport.order,
-          order = _transport$order === void 0 ? Infinity : _transport$order;
-      if (!to || !from || !passengers) return;
-      var newTransport = {
-        to: to,
-        from: from,
-        passengers: freeze(passengers),
-        order: order
-      };
-      var keys = Object.keys(this.transports);
-
-      if (keys.indexOf(to) === -1) {
-        Vue.set(this.transports, to, []);
-      }
-
-      var currentIndex = this.$_getTransportIndex(newTransport); // Copying the array here so that the PortalTarget change event will actually contain two distinct arrays
-
-      var newTransports = this.transports[to].slice(0);
-
-      if (currentIndex === -1) {
-        newTransports.push(newTransport);
-      } else {
-        newTransports[currentIndex] = newTransport;
-      }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _actionButtonVue = __webpack_require__(130);
-=======
-var _liInlineVue = __webpack_require__(/*! ./li-inline.vue.html */ "./src/js/components/atoms/li-inline/li-inline.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-      this.transports[to] = stableSort(newTransports, function (a, b) {
-        return a.order - b.order;
-      });
-    },
-    close: function close(transport) {
-      var force = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-      var to = transport.to,
-          from = transport.from;
-      if (!to || !from) return;
->>>>>>> chore(build): add build
-
-      if (!this.transports[to]) {
-        return;
-      }
-
-      if (force) {
-        this.transports[to] = [];
-      } else {
-        var index = this.$_getTransportIndex(transport);
-
-        if (index >= 0) {
-          // Copying the array here so that the PortalTarget change event will actually contain two distinct arrays
-          var newTransports = this.transports[to].slice(0);
-          newTransports.splice(index, 1);
-          this.transports[to] = newTransports;
-        }
-      }
-    },
-    registerTarget: function registerTarget(target, vm, force) {
-      if (!inBrowser) return;
-
-      if (this.trackInstances && !force && this.targets[target]) {
-        console.warn("[portal-vue]: Target ".concat(target, " already exists"));
-      }
-
-      this.$set(this.targets, target, Object.freeze([vm]));
-    },
-    unregisterTarget: function unregisterTarget(target) {
-      this.$delete(this.targets, target);
-    },
-    registerSource: function registerSource(source, vm, force) {
-      if (!inBrowser) return;
-
-      if (this.trackInstances && !force && this.sources[source]) {
-        console.warn("[portal-vue]: source ".concat(source, " already exists"));
-      }
-
-      this.$set(this.sources, source, Object.freeze([vm]));
-    },
-    unregisterSource: function unregisterSource(source) {
-      this.$delete(this.sources, source);
-    },
-    hasTarget: function hasTarget(to) {
-      return !!(this.targets[to] && this.targets[to][0]);
-    },
-    hasSource: function hasSource(to) {
-      return !!(this.sources[to] && this.sources[to][0]);
-    },
-    hasContentFor: function hasContentFor(to) {
-      return !!this.transports[to] && !!this.transports[to].length;
-    },
-    // Internal
-    $_getTransportIndex: function $_getTransportIndex(_ref) {
-      var to = _ref.to,
-          from = _ref.from;
-
-      for (var i in this.transports[to]) {
-        if (this.transports[to][i].from === from) {
-          return +i;
-        }
-      }
-
-      return -1;
-    }
-<<<<<<< HEAD
-
-    return LiInline;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: true }), __metadata("design:type", Object)], LiInline.prototype, "item", void 0);
-exports.LiInline = LiInline = __decorate([_liInlineVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'LiInline'
-})], LiInline);
-exports.LiInline = LiInline;
-
-/***/ }),
-<<<<<<< HEAD
-/* 130 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/atoms/li-inline/li-inline.vue.html":
-/*!**************************************************************!*\
-  !*** ./src/js/components/atoms/li-inline/li-inline.vue.html ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "li",
-    { staticClass: "list__item list__item--inline" },
-    [
-      !_vm.item.item
-        ? [_vm._v(_vm._s(_vm.item))]
-        : [
-            _c(
-              _vm.item.type,
-              _vm._b({ tag: "component" }, "component", _vm.item.item, false)
-            )
-          ]
-    ],
-    2
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  if (false) {}
-  return _exports
-}
-var api = null
-if (false) {}
-
-
-/***/ }),
-<<<<<<< HEAD
-/* 131 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _animatedArrow = __webpack_require__(132);
-
-var _animatedArrow2 = _interopRequireDefault(_animatedArrow);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _animatedArrow2.default;
-
-/***/ }),
-/* 132 */
-=======
-
-/***/ "./src/js/components/atoms/li-item/component.ts":
-/*!******************************************************!*\
-  !*** ./src/js/components/atoms/li-item/component.ts ***!
-  \******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-=======
-  }
->>>>>>> chore(build): add build
-});
-var wormhole = new Wormhole(transports);
-
-var _id = 1;
-var Portal = Vue.extend({
-  name: 'portal',
-  props: {
-    disabled: {
-      type: Boolean
-    },
-    name: {
-      type: String,
-      default: function _default() {
-        return String(_id++);
-      }
-    },
-    order: {
-      type: Number,
-      default: 0
-    },
-    slim: {
-      type: Boolean
-    },
-    slotProps: {
-      type: Object,
-      default: function _default() {
-        return {};
-      }
-    },
-    tag: {
-      type: String,
-      default: 'DIV'
-    },
-    to: {
-      type: String,
-      default: function _default() {
-        return String(Math.round(Math.random() * 10000000));
-      }
-    }
-  },
-  created: function created() {
-    var _this = this;
-
-    this.$nextTick(function () {
-      wormhole.registerSource(_this.name, _this);
-    });
-  },
-  mounted: function mounted() {
-    if (!this.disabled) {
-      this.sendUpdate();
-    }
-  },
-  updated: function updated() {
-    if (this.disabled) {
-      this.clear();
-    } else {
-      this.sendUpdate();
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    wormhole.unregisterSource(this.name);
-    this.clear();
-  },
-  watch: {
-    to: function to(newValue, oldValue) {
-      oldValue && oldValue !== newValue && this.clear(oldValue);
-      this.sendUpdate();
-    }
-  },
-  methods: {
-    clear: function clear(target) {
-      var closer = {
-        from: this.name,
-        to: target || this.to
-      };
-      wormhole.close(closer);
-    },
-    normalizeSlots: function normalizeSlots() {
-      return this.$scopedSlots.default ? [this.$scopedSlots.default] : this.$slots.default;
-    },
-    normalizeOwnChildren: function normalizeOwnChildren(children) {
-      return typeof children === 'function' ? children(this.slotProps) : children;
-    },
-    sendUpdate: function sendUpdate() {
-      var slotContent = this.normalizeSlots();
-
-      if (slotContent) {
-        var transport = {
-          from: this.name,
-          to: this.to,
-          passengers: _toConsumableArray(slotContent),
-          order: this.order
-        };
-        wormhole.open(transport);
-      } else {
-        this.clear();
-      }
-    }
-  },
-  render: function render(h) {
-    var children = this.$slots.default || this.$scopedSlots.default || [];
-    var Tag = this.tag;
-
-    if (children && this.disabled) {
-      return children.length <= 1 && this.slim ? this.normalizeOwnChildren(children)[0] : h(Tag, [this.normalizeOwnChildren(children)]);
-    } else {
-      return this.slim ? h() : h(Tag, {
-        class: {
-          'v-portal': true
-        },
-        style: {
-          display: 'none'
-        },
-        key: 'v-portal-placeholder'
-      });
-    }
-  }
-});
-
-var PortalTarget = Vue.extend({
-  name: 'portalTarget',
-  props: {
-    multiple: {
-      type: Boolean,
-      default: false
-    },
-    name: {
-      type: String,
-      required: true
-    },
-    slim: {
-      type: Boolean,
-      default: false
-    },
-    slotProps: {
-      type: Object,
-      default: function _default() {
-        return {};
-      }
-    },
-    tag: {
-      type: String,
-      default: 'div'
-    },
-    transition: {
-      type: [String, Object, Function]
-    }
-  },
-  data: function data() {
-    return {
-      transports: wormhole.transports,
-      firstRender: true
-    };
-  },
-  created: function created() {
-    var _this = this;
-
-<<<<<<< HEAD
-    return LiItem;
-}(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-AnimatedArrow = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'animated-arrow',
-    template: __webpack_require__(133)
-})], AnimatedArrow);
-exports.default = AnimatedArrow;
-
-/***/ }),
-/* 133 */
-/***/ (function(module, exports) {
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: true }), __metadata("design:type", Object)], LiItem.prototype, "item", void 0);
-LiItem = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'LiItem'
-})], LiItem);
-exports.default = LiItem;
-
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
-    this.$nextTick(function () {
-      wormhole.registerTarget(_this.name, _this);
-    });
-  },
-  watch: {
-    ownTransports: function ownTransports() {
-      this.$emit('change', this.children().length > 0);
-    },
-    name: function name(newVal, oldVal) {
-      /**
-       * TODO
-       * This should warn as well ...
-       */
-      wormhole.unregisterTarget(oldVal);
-      wormhole.registerTarget(newVal, this);
-    }
-  },
-  mounted: function mounted() {
-    var _this2 = this;
-
-    if (this.transition) {
-      this.$nextTick(function () {
-        // only when we have a transition, because it causes a re-render
-        _this2.firstRender = false;
-      });
-    }
-  },
-  beforeDestroy: function beforeDestroy() {
-    wormhole.unregisterTarget(this.name);
-  },
-  computed: {
-    ownTransports: function ownTransports() {
-      var transports = this.transports[this.name] || [];
->>>>>>> chore(build): add build
-
-      if (this.multiple) {
-        return transports;
-      }
-
-      return transports.length === 0 ? [] : [transports[transports.length - 1]];
-    },
-    passengers: function passengers() {
-      return combinePassengers(this.ownTransports, this.slotProps);
-    }
-  },
-  methods: {
-    // can't be a computed prop because it has to "react" to $slot changes.
-    children: function children() {
-      return this.passengers.length !== 0 ? this.passengers : this.$scopedSlots.default ? this.$scopedSlots.default(this.slotProps) : this.$slots.default || [];
-    },
-    // can't be a computed prop because it has to "react" to this.children().
-    noWrapper: function noWrapper() {
-      var noWrapper = this.slim && !this.transition;
-
-      if (noWrapper && this.children().length > 1) {
-        console.warn('[portal-vue]: PortalTarget with `slim` option received more than one child element.');
-      }
-
-      return noWrapper;
-    }
-  },
-  render: function render(h) {
-    var noWrapper = this.noWrapper();
-    var children = this.children();
-    var Tag = this.transition || this.tag;
-    return noWrapper ? children[0] : this.slim && !Tag ? h() : h(Tag, {
-      props: {
-        // if we have a transition component, pass the tag if it exists
-        tag: this.transition && this.tag ? this.tag : undefined
-      },
-      class: {
-        'vue-portal-target': true
-      }
-    }, children);
-  }
-});
-
-var _id$1 = 0;
-var portalProps = ['disabled', 'name', 'order', 'slim', 'slotProps', 'tag', 'to'];
-var targetProps = ['multiple', 'transition'];
-var MountingPortal = Vue.extend({
-  name: 'MountingPortal',
-  inheritAttrs: false,
-  props: {
-    append: {
-      type: [Boolean, String]
-    },
-    bail: {
-      type: Boolean
-    },
-    mountTo: {
-      type: String,
-      required: true
-    },
-    // Portal
-    disabled: {
-      type: Boolean
-    },
-    // name for the portal
-    name: {
-      type: String,
-      default: function _default() {
-        return 'mounted_' + String(_id$1++);
-      }
-    },
-    order: {
-      type: Number,
-      default: 0
-    },
-    slim: {
-      type: Boolean
-    },
-    slotProps: {
-      type: Object,
-      default: function _default() {
-        return {};
-      }
-    },
-    tag: {
-      type: String,
-      default: 'DIV'
-    },
-    // name for the target
-    to: {
-      type: String,
-      default: function _default() {
-        return String(Math.round(Math.random() * 10000000));
-      }
-    },
-    // Target
-    multiple: {
-      type: Boolean,
-      default: false
-    },
-    targetSlim: {
-      type: Boolean
-    },
-    targetSlotProps: {
-      type: Object,
-      default: function _default() {
-        return {};
-      }
-    },
-    targetTag: {
-      type: String,
-      default: 'div'
-    },
-    transition: {
-      type: [String, Object, Function]
-    }
-  },
-  created: function created() {
-    if (typeof document === 'undefined') return;
-    var el = document.querySelector(this.mountTo);
-
-    if (!el) {
-      console.error("[portal-vue]: Mount Point '".concat(this.mountTo, "' not found in document"));
-      return;
-    }
-
-    var props = this.$props; // Target already exists
-
-    if (wormhole.targets[props.name]) {
-      if (props.bail) {
-        console.warn("[portal-vue]: Target ".concat(props.name, " is already mounted.\n        Aborting because 'bail: true' is set"));
-      } else {
-        this.portalTarget = wormhole.targets[props.name];
-      }
-
-      return;
-    }
-
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 134 */
-=======
-
-/***/ "./src/js/components/atoms/nav-assist/index.ts":
-/*!*****************************************************!*\
-  !*** ./src/js/components/atoms/nav-assist/index.ts ***!
-  \*****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
-    var append = props.append;
-
-    if (append) {
-      var type = typeof append === 'string' ? append : 'DIV';
-      var mountEl = document.createElement(type);
-      el.appendChild(mountEl);
-      el = mountEl;
-    } // get props for target from $props
-    // we have to rename a few of them
->>>>>>> chore(build): add build
-
-
-    var _props = pick(this.$props, targetProps);
-
-    _props.slim = this.targetSlim;
-    _props.tag = this.targetTag;
-    _props.slotProps = this.targetSlotProps;
-    _props.name = this.to;
-    this.portalTarget = new PortalTarget({
-      el: el,
-      parent: this.$parent || this,
-      propsData: _props
-    });
-  },
-  beforeDestroy: function beforeDestroy() {
-    var target = this.portalTarget;
-
-    if (this.append) {
-      var el = target.$el;
-      el.parentNode.removeChild(el);
-    }
-
-    target.$destroy();
-  },
-  render: function render(h) {
-    if (!this.portalTarget) {
-      console.warn("[portal-vue] Target wasn't mounted");
-      return h();
-    } // if there's no "manual" scoped slot, so we create a <Portal> ourselves
-
-
-    if (!this.$scopedSlots.manual) {
-      var props = pick(this.$props, portalProps);
-      return h(Portal, {
-        props: props,
-        attrs: this.$attrs,
-        on: this.$listeners,
-        scopedSlots: this.$scopedSlots
-      }, this.$slots.default);
-    } // else, we render the scoped slot
-
-
-    var content = this.$scopedSlots.manual({
-      to: this.to
-    }); // if user used <template> for the scoped slot
-    // content will be an array
-
-    if (Array.isArray(content)) {
-      content = content[0];
-    }
-
-    if (!content) return h();
-    return content;
-  }
-});
-
-function install(Vue$$1) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  Vue$$1.component(options.portalName || 'Portal', Portal);
-  Vue$$1.component(options.portalTargetName || 'PortalTarget', PortalTarget);
-  Vue$$1.component(options.MountingPortalName || 'MountingPortal', MountingPortal);
-}
-
-var index = {
-  install: install
-};
-
-exports.default = index;
-exports.Portal = Portal;
-exports.PortalTarget = PortalTarget;
-exports.MountingPortal = MountingPortal;
-exports.Wormhole = wormhole;
-//# sourceMappingURL=portal-vue.common.js.map
-
-
-/***/ }),
-/* 124 */
-/***/ (function(module, exports, __webpack_require__) {
-
-<<<<<<< HEAD
-var _baseLinkVue = __webpack_require__(135);
-=======
-"use strict";
->>>>>>> feat(table-compare): allow 5 columns
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _atoms = __webpack_require__(125);
-
-var Atoms = _interopRequireWildcard(_atoms);
-
-var _molecules = __webpack_require__(191);
-
-var Molecules = _interopRequireWildcard(_molecules);
-
-var _organisms = __webpack_require__(378);
-
-var Organisms = _interopRequireWildcard(_organisms);
-
-var _organismsPage = __webpack_require__(445);
-
-var OrganismsPage = _interopRequireWildcard(_organismsPage);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-exports.default = _extends({}, Atoms, Molecules, Organisms, OrganismsPage);
-
-/***/ }),
-/* 125 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 135 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
->>>>>>> chore(build): add build
-
-var _anchorOverlay = __webpack_require__(126);
-
-Object.defineProperty(exports, 'AnchorOverlay', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_anchorOverlay).default;
-  }
-});
-
-var _actionButton = __webpack_require__(129);
-
-Object.defineProperty(exports, 'ActionButton', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_actionButton).default;
-  }
-});
-
-var _animatedArrow = __webpack_require__(132);
-
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 136 */
-=======
-
-/***/ "./src/js/components/atoms/responsive-picture/index.ts":
-/*!*************************************************************!*\
-  !*** ./src/js/components/atoms/responsive-picture/index.ts ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
-Object.defineProperty(exports, 'AnimatedArrow', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_animatedArrow).default;
-  }
-});
-
-var _BaseLink = __webpack_require__(6);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'BaseLink', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_BaseLink).default;
-  }
-});
-
-var _contentLink = __webpack_require__(137);
-
-Object.defineProperty(exports, 'ContentLink', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentLink).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentLink = __webpack_require__(137);
-=======
-var _responsivePicture = __webpack_require__(/*! ./responsive-picture */ "./src/js/components/atoms/responsive-picture/responsive-picture.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _contentButton = __webpack_require__(139);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'ContentButton', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentButton).default;
-  }
-});
-
-var _contentLinkList = __webpack_require__(141);
-
-Object.defineProperty(exports, 'ContentLinkList', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentLinkList).default;
-  }
-});
-
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 137 */
-=======
-
-/***/ "./src/js/components/atoms/responsive-picture/responsive-picture-source.ts":
-/*!*********************************************************************************!*\
-  !*** ./src/js/components/atoms/responsive-picture/responsive-picture-source.ts ***!
-  \*********************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _hitArea = __webpack_require__(144);
-
-Object.defineProperty(exports, 'HitArea', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_hitArea).default;
-  }
-});
->>>>>>> chore(build): add build
-
-var _horizontalList = __webpack_require__(147);
-
-Object.defineProperty(exports, 'HorizontalList', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_horizontalList).default;
-  }
-});
-
-var _icon = __webpack_require__(150);
-
-Object.defineProperty(exports, 'Icon', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_icon).default;
-  }
-});
-
-var _cImage = __webpack_require__(153);
-
-Object.defineProperty(exports, 'Image', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_cImage).default;
-  }
-});
-
-var _labelFilter = __webpack_require__(160);
-
-Object.defineProperty(exports, 'LabelFilter', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_labelFilter).default;
-  }
-});
-
-var _liInline = __webpack_require__(163);
 
 Object.defineProperty(exports, 'LiInline', {
   enumerable: true,
@@ -5133,7 +3861,7 @@ Object.defineProperty(exports, 'LiInline', {
   }
 });
 
-var _liItem = __webpack_require__(166);
+var _liItem = __webpack_require__(165);
 
 Object.defineProperty(exports, 'LiItem', {
   enumerable: true,
@@ -5142,7 +3870,7 @@ Object.defineProperty(exports, 'LiItem', {
   }
 });
 
-var _navAssist = __webpack_require__(169);
+var _navAssist = __webpack_require__(168);
 
 Object.defineProperty(exports, 'NavAssist', {
   enumerable: true,
@@ -5151,54 +3879,7 @@ Object.defineProperty(exports, 'NavAssist', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return ContentLink;
-}(_BaseLink3.default);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], ContentLink.prototype, "icon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentLink.prototype, "url", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentLink.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ContentLink.prototype, "clickEvent", void 0);
-ContentLink = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'ContentLink'
-})], ContentLink);
-exports.default = ContentLink;
-
-/***/ }),
-/* 138 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _contentButton = __webpack_require__(139);
-=======
-    _createClass(ResponsivePictureSource, [{
-        key: "srcset",
-        get: function get() {
-            if (typeof this.image === 'string') {
-                return this.image;
-            }
-            return this.image.retinaUrl ? this.image.url + ", " + this.image.retinaUrl + " 2x" : this.image.url;
-        }
-    }]);
-
-    return ResponsivePictureSource;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: true }), __metadata("design:type", Object)], ResponsivePictureSource.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], ResponsivePictureSource.prototype, "media", void 0);
-ResponsivePictureSource = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'responsive-picture-source',
-    template: '<source :media="media" :srcset="srcset">'
-})], ResponsivePictureSource);
-exports.default = ResponsivePictureSource;
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _responsivePicture = __webpack_require__(172);
+var _responsivePicture = __webpack_require__(171);
 
 Object.defineProperty(exports, 'ResponsivePicture', {
   enumerable: true,
@@ -5206,9 +3887,8 @@ Object.defineProperty(exports, 'ResponsivePicture', {
     return _interopRequireDefault(_responsivePicture).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _spanLabel = __webpack_require__(176);
+var _spanLabel = __webpack_require__(175);
 
 Object.defineProperty(exports, 'SpanLabel', {
   enumerable: true,
@@ -5217,21 +3897,8 @@ Object.defineProperty(exports, 'SpanLabel', {
   }
 });
 
-var _tabbableDefinitionList = __webpack_require__(179);
+var _tabbableDefinitionList = __webpack_require__(178);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 139 */
-=======
-
-/***/ "./src/js/components/atoms/responsive-picture/responsive-picture.ts":
-/*!**************************************************************************!*\
-  !*** ./src/js/components/atoms/responsive-picture/responsive-picture.ts ***!
-  \**************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'TabbableDefinitionList', {
   enumerable: true,
   get: function get() {
@@ -5239,7 +3906,7 @@ Object.defineProperty(exports, 'TabbableDefinitionList', {
   }
 });
 
-var _tooltip = __webpack_require__(182);
+var _tooltip = __webpack_require__(181);
 
 Object.defineProperty(exports, 'Tooltip', {
   enumerable: true,
@@ -5248,7 +3915,7 @@ Object.defineProperty(exports, 'Tooltip', {
   }
 });
 
-var _youtubeLink = __webpack_require__(185);
+var _youtubeLink = __webpack_require__(184);
 
 Object.defineProperty(exports, 'YoutubeLink', {
   enumerable: true,
@@ -5257,7 +3924,7 @@ Object.defineProperty(exports, 'YoutubeLink', {
   }
 });
 
-var _youtubeVideo = __webpack_require__(188);
+var _youtubeVideo = __webpack_require__(187);
 
 Object.defineProperty(exports, 'YoutubeVideo', {
   enumerable: true,
@@ -5269,8 +3936,7 @@ Object.defineProperty(exports, 'YoutubeVideo', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 126 */
->>>>>>> chore(build): add build
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5280,49 +3946,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _component = __webpack_require__(127);
+var _component = __webpack_require__(126);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 140 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _component2 = _interopRequireDefault(_component);
->>>>>>> chore(build): add build
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _component2.default;
 
 /***/ }),
-/* 127 */
-/***/ (function(module, exports, __webpack_require__) {
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentLinkList = __webpack_require__(141);
-=======
-var _responsivePictureSource = __webpack_require__(/*! ./responsive-picture-source */ "./src/js/components/atoms/responsive-picture/responsive-picture-source.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-"use strict";
->>>>>>> chore(build): add build
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.default = _contentLinkList2.default;
-
-/***/ }),
-/* 141 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5332,28 +3965,15 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-=======
->>>>>>> chore(build): add build
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _contentLinkListVue = __webpack_require__(142);
-
-var _contentLinkListVue2 = _interopRequireDefault(_contentLinkListVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _templateVue = __webpack_require__(128);
+var _templateVue = __webpack_require__(127);
 
 var _templateVue2 = _interopRequireDefault(_templateVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
->>>>>>> chore(build): add build
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -5382,30 +4002,6 @@ var AnchorOverlay = function (_Vue) {
         return _possibleConstructorReturn(this, (AnchorOverlay.__proto__ || Object.getPrototypeOf(AnchorOverlay)).apply(this, arguments));
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 142 */
-/***/ (function(module, exports) {
-=======
-    _createClass(ResponsivePicture, [{
-        key: "calculateInView",
-        value: function calculateInView() {
-            if (this.inView) {
-                return;
-            }
-            var windowBottom = this.viewportUtil.scrollY + this.viewportUtil.screenHeight;
-            var pictureBounds = this.$el.getBoundingClientRect();
-            var pictureTop = this.viewportUtil.scrollY + pictureBounds.top;
-            var pictureBottom = pictureTop + pictureBounds.height;
-            this.inView = this.viewportUtil.scrollY <= pictureBottom && windowBottom >= pictureTop;
-        }
-    }, {
-        key: "mounted",
-        value: function mounted() {
-            var _this2 = this;
->>>>>>> feat(table-compare): allow 5 columns
-=======
     return AnchorOverlay;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], AnchorOverlay.prototype, "title", void 0);
@@ -5414,10 +4010,9 @@ AnchorOverlay = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Com
     name: 'AnchorOverlay'
 })], AnchorOverlay);
 exports.default = AnchorOverlay;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 128 */
+/* 127 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"anchor-overlay hit-area",attrs:{"href":_vm.url,"title":_vm.title,"aria-label":_vm.title}})}
@@ -5434,12 +4029,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 143 */
-=======
-/* 129 */
->>>>>>> chore(build): add build
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5449,27 +4039,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-var _hitArea = __webpack_require__(144);
-
-var _hitArea2 = _interopRequireDefault(_hitArea);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _hitArea2.default;
-
-/***/ }),
-/* 144 */
-=======
-
-/***/ "./src/js/components/atoms/span-label/component.ts":
-/*!*********************************************************!*\
-  !*** ./src/js/components/atoms/span-label/component.ts ***!
-  \*********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _actionButton = __webpack_require__(130);
+var _actionButton = __webpack_require__(129);
 
 var _actionButton2 = _interopRequireDefault(_actionButton);
 
@@ -5478,8 +4048,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _actionButton2.default;
 
 /***/ }),
-/* 130 */
->>>>>>> chore(build): add build
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5495,15 +4064,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _hitAreaVue = __webpack_require__(145);
-=======
-var _templateVue = __webpack_require__(/*! ./template.vue.html */ "./src/js/components/atoms/span-label/template.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _actionButtonVue = __webpack_require__(131);
->>>>>>> chore(build): add build
+var _actionButtonVue = __webpack_require__(130);
 
 var _actionButtonVue2 = _interopRequireDefault(_actionButtonVue);
 
@@ -5567,18 +4128,10 @@ ActionButton = __decorate([_actionButtonVue2.default, (0, _vuePropertyDecorator.
 exports.default = ActionButton;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 145 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"hit-area",attrs:{"role":"button","tabindex":"0"}},[_vm._t("default")],2)}
-=======
-/* 131 */
+/* 130 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{class:_vm.classObject,attrs:{"href":"#"}},[(this.icon)?_c('icon',{attrs:{"icon-name":_vm.icon}}):_vm._e(),_vm._v(" "),_vm._t("default")],2)}
->>>>>>> chore(build): add build
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -5590,23 +4143,9 @@ module.exports = function (_exports) {
   return _exports
 }
 
-<<<<<<< HEAD
 
 /***/ }),
-/* 146 */
-=======
-
-/***/ "./src/js/components/atoms/span-label/index.ts":
-/*!*****************************************************!*\
-  !*** ./src/js/components/atoms/span-label/index.ts ***!
-  \*****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-
-/***/ }),
-/* 132 */
->>>>>>> chore(build): add build
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5616,15 +4155,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _horizontalList = __webpack_require__(147);
-=======
-var _component = __webpack_require__(/*! ./component */ "./src/js/components/atoms/span-label/component.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _animatedArrow = __webpack_require__(133);
->>>>>>> chore(build): add build
+var _animatedArrow = __webpack_require__(132);
 
 var _animatedArrow2 = _interopRequireDefault(_animatedArrow);
 
@@ -5633,9 +4164,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _animatedArrow2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 147 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5648,12 +4177,6 @@ Object.defineProperty(exports, "__esModule", {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
-
-var _horizontalListVue = __webpack_require__(148);
-
-var _horizontalListVue2 = _interopRequireDefault(_horizontalListVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -5669,96 +4192,9 @@ var __decorate = undefined && undefined.__decorate || function (decorators, targ
         if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     }return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
-var HorizontalList = function (_Vue) {
-    _inherits(HorizontalList, _Vue);
-
-    function HorizontalList() {
-        _classCallCheck(this, HorizontalList);
-
-        return _possibleConstructorReturn(this, (HorizontalList.__proto__ || Object.getPrototypeOf(HorizontalList)).apply(this, arguments));
-    }
-
-    return HorizontalList;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], HorizontalList.prototype, "styleModifier", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], HorizontalList.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], HorizontalList.prototype, "listItems", void 0);
-HorizontalList = __decorate([_horizontalListVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'horizontal-list'
-})], HorizontalList);
-exports.default = HorizontalList;
-
-/***/ }),
-/* 148 */
-/***/ (function(module, exports) {
-=======
-
-/***/ "./src/js/components/atoms/span-label/template.vue.html":
-/*!**************************************************************!*\
-  !*** ./src/js/components/atoms/span-label/template.vue.html ***!
-  \**************************************************************/
-/*! no static exports found */
-=======
-/* 133 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> feat(table-compare): allow 5 columns
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 149 */
-=======
-
-/***/ "./src/js/components/atoms/tabbable-definition-list/index.js":
-/*!*******************************************************************!*\
-  !*** ./src/js/components/atoms/tabbable-definition-list/index.js ***!
-  \*******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _vuePropertyDecorator = __webpack_require__(0);
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
->>>>>>> chore(build): add build
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _icon = __webpack_require__(150);
-=======
-var _tabbableDefinitionList = __webpack_require__(/*! ./tabbable-definition-list */ "./src/js/components/atoms/tabbable-definition-list/tabbable-definition-list.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var AnimatedArrow = function (_Vue) {
     _inherits(AnimatedArrow, _Vue);
->>>>>>> chore(build): add build
 
     function AnimatedArrow() {
         _classCallCheck(this, AnimatedArrow);
@@ -5770,31 +4206,18 @@ var AnimatedArrow = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 AnimatedArrow = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'animated-arrow',
-    template: __webpack_require__(134)
+    template: __webpack_require__(133)
 })], AnimatedArrow);
 exports.default = AnimatedArrow;
 
 /***/ }),
-/* 134 */
+/* 133 */
 /***/ (function(module, exports) {
 
 module.exports = "<svg class=\"arrow--animated\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\">\n    <defs>\n        <clipPath id=\"mask\" class=\"arrow__mask\">\n            <rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" rotate=\"45deg\"/>\n        </clipPath>\n    </defs>\n    <g clip-path=\"url(#mask)\">\n        <path class=\"arrow__line arrow__line-1\" d=\"M15.3 55h94.8v10.1H15.3z\" clip-path=\"url(#mask)\" />\n        <path class=\"arrow__line arrow__line-2\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n        <path class=\"arrow__line arrow__line-3\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n    </g>\n</svg>\n";
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 150 */
-=======
-
-/***/ "./src/js/components/atoms/tabbable-definition-list/tabbable-definition-list.js":
-/*!**************************************************************************************!*\
-  !*** ./src/js/components/atoms/tabbable-definition-list/tabbable-definition-list.js ***!
-  \**************************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 135 */
->>>>>>> chore(build): add build
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5806,15 +4229,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _iconVue = __webpack_require__(151);
-=======
-var _viewport = __webpack_require__(/*! utils/viewport */ "./src/js/utils/viewport.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> chore(build): add build
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -5824,295 +4239,12 @@ var _events = __webpack_require__(5);
 
 var _events2 = _interopRequireDefault(_events);
 
-var _baseLinkVue = __webpack_require__(136);
+var _baseLinkVue = __webpack_require__(135);
 
 var _baseLinkVue2 = _interopRequireDefault(_baseLinkVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-<<<<<<< HEAD
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-exports.default = {
-    name: 'tabbable-definition-list',
-    template: __webpack_require__(/*! ./tabbable-definition-list.html */ "./src/js/components/atoms/tabbable-definition-list/tabbable-definition-list.html"),
-    data: function data() {
-        return {
-            viewport: new _viewport2.default(),
-            heights: []
-        };
-    },
-    props: {
-        items: {
-            type: Array,
-            default: function _default() {
-                return [];
-            }
-        },
-        activeIndex: {
-            type: Number,
-            default: 0
-        }
-    },
-    watch: {
-        items: function items() {
-            this.updateElementPositions();
-        },
-        activeIndex: function activeIndex(newValue, oldValue) {
-            this.killTweensAndCompleteOf(this.$refs.terms);
-            this.killTweensAndCompleteOf(this.$refs.descriptions);
-
-            var duration = 0.4;
-            var direction = this.getDirection(oldValue, newValue);
-            var height = this.heights[newValue];
-            var delay = this.viewport.isMobile ? duration * 0.6 : 0;
-            var descriptionHeight = (this.viewport.isMobile ? height.dt : 0) + height.dd + _defaults2.default.buildingUnit * 2.5;
-            var elementsToHide = !this.viewport.isMobile ? this.$refs.descriptions[oldValue] : [this.$refs.terms[oldValue], this.$refs.descriptions[oldValue]];
-
-            _gsap.TweenLite.to(elementsToHide, duration, { height: 0, y: 20 * direction, ease: _gsap.Power3.easeOut });
-            _gsap.TweenLite.fromTo(elementsToHide, duration * 0.3, { autoAlpha: 1 }, { autoAlpha: 0, ease: _gsap.Power0.easeNone });
-
-            _gsap.TweenLite.fromTo(this.$refs.descriptions[newValue], duration, { height: 0, y: -20 * direction }, { height: descriptionHeight, y: 0, ease: _gsap.Power3.easeOut, delay: delay });
-            _gsap.TweenLite.fromTo(this.$refs.descriptions[newValue], duration * 0.3, { autoAlpha: 0 }, { autoAlpha: 1, ease: _gsap.Power0.easeNone, delay: delay });
-            if (this.viewport.isMobile) {
-                _gsap.TweenLite.fromTo(this.$refs.terms[newValue], duration, { height: 0, y: -20 * direction }, { height: height.dt, y: 0, ease: _gsap.Power3.easeOut, delay: delay });
-                _gsap.TweenLite.fromTo(this.$refs.terms[newValue], duration * 0.3, { autoAlpha: 0 }, { autoAlpha: 1, ease: _gsap.Power0.easeNone, delay: delay });
-            }
-        }
-    },
-    methods: {
-        changeIndex: function changeIndex(index) {
-            this.$emit('index-changed', { index: index });
-        },
-        getDirection: function getDirection(oldValue, newValue) {
-            if (this.viewport.isMobile) {
-                if (oldValue < newValue) {
-                    return newValue - (this.$refs.terms.length - 1) === oldValue ? 1 : -1;
-                }
-
-                return oldValue - (this.$refs.terms.length - 1) === newValue ? -1 : 1;
-            }
-
-<<<<<<< HEAD
-/***/ }),
-/* 151 */
-/***/ (function(module, exports) {
-=======
-            return oldValue < newValue ? -1 : 1;
-        },
-        killTweensAndCompleteOf: function killTweensAndCompleteOf(elements) {
-            var tweens = _gsap.TweenLite.getTweensOf(elements);
->>>>>>> feat(table-compare): allow 5 columns
-
-            if (tweens) {
-                for (var i = 0, leni = tweens.length; i < leni; i += 1) {
-                    tweens[i].seek(tweens[i].duration());
-                }
-                _gsap.TweenLite.killTweensOf(tweens);
-            }
-        },
-        renderItemOffscreen: function renderItemOffscreen(item) {
-            item.style.display = 'block';
-            item.style.position = 'relative';
-            item.style.left = '-9999px';
-            item.style.height = 'auto';
-            item.style.transform = '';
-        },
-        resetItemPosition: function resetItemPosition(item) {
-            item.style.position = '';
-            item.style.display = '';
-            item.style.left = '';
-        },
-        calculateDimensions: function calculateDimensions() {
-            var _this = this;
-
-            this.heights = [];
-
-            if (!this.$refs.descriptions || !this.$refs.descriptions.length) {
-                return;
-            }
-
-            this.$refs.terms.forEach(function (element) {
-                _this.renderItemOffscreen(element);
-            });
-            this.$refs.descriptions.forEach(function (element) {
-                element.style.marginBottom = '0';
-                _this.renderItemOffscreen(element);
-            });
-
-            this.$refs.descriptions.forEach(function (element) {
-                var currentHeight = {
-                    dt: element.previousElementSibling.getBoundingClientRect().height,
-                    dd: element.getBoundingClientRect().height
-                };
-
-                _this.heights.push(currentHeight);
-            });
-
-            this.$refs.terms.forEach(function (element, index) {
-                _this.resetItemPosition(element);
-
-                if (_this.viewport.isMobile) {
-                    element.style.opacity = index === _this.activeIndex ? '1' : '0';
-                    element.style.visibility = index === _this.activeIndex ? 'visible' : 'hidden';
-                } else {
-                    element.style.opacity = '1';
-                    element.style.visibility = 'visible';
-                }
-            });
-
-            this.$refs.descriptions.forEach(function (element, index) {
-                _this.resetItemPosition(element, index);
-
-                if (index !== _this.activeIndex) {
-                    element.style.height = '0';
-                    element.style.opacity = '0';
-                    element.style.visibility = 'hidden';
-                }
-            });
-        },
-        updateElementPositions: function updateElementPositions() {
-            var _this2 = this;
-
-            var currentElement = this.$refs.descriptions[this.activeIndex];
-
-            currentElement.style.height = '';
-
-            var currentElementHeight = currentElement.getBoundingClientRect().height;
-            var isMobile = this.viewport.isMobile;
-
-
-            this.$el.style.height = 'auto';
-            this.calculateDimensions();
-
-            var maxElementHeight = isMobile ? this.maxHeight : this.$el.getBoundingClientRect().height + this.maxHeight - currentElementHeight;
-            var height = this.heights[this.activeIndex];
-
-            this.$refs.descriptions.forEach(function (element, index) {
-                element.style.top = isMobile ? _this2.heights[index].dt + _defaults2.default.buildingUnit * 2.5 + 'px' : 0;
-            });
-
-            if (isMobile) {
-                currentElement.style.height = height.dt + height.dd + _defaults2.default.buildingUnit * 2.5 + 'px';
-            } else {
-                currentElement.style.height = height.dd + _defaults2.default.buildingUnit * 2.5 + 'px';
-            }
-            this.$el.style.height = maxElementHeight + _defaults2.default.buildingUnit * 0.5 + 'px';
-        }
-    },
-    computed: {
-        maxHeight: function maxHeight() {
-            if (!this.heights.length) {
-                return 0;
-            }
-            if (this.viewport.isMobile) {
-                return Math.max.apply(Math, _toConsumableArray(this.heights.map(function (i) {
-                    return i.dt + _defaults2.default.buildingUnit * 2.5 + i.dd;
-                })));
-            }
-
-            return Math.max.apply(Math, _toConsumableArray(this.heights.map(function (i) {
-                return i.dd;
-            })));
-        }
-    },
-    mounted: function mounted() {
-        this.updateElementPositions();
-        this.viewport.addResizeHandler(this.updateElementPositions);
-    },
-    beforeDestroy: function beforeDestroy() {
-        this.viewport.removeResizeHandler(this.updateElementPositions);
-    }
-};
-
-/***/ }),
-<<<<<<< HEAD
-/* 152 */
-=======
-
-/***/ "./src/js/components/atoms/tooltip/index.ts":
-/*!**************************************************!*\
-  !*** ./src/js/components/atoms/tooltip/index.ts ***!
-  \**************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-var _cImage = __webpack_require__(153);
-=======
-var _tooltip = __webpack_require__(/*! ./tooltip */ "./src/js/components/atoms/tooltip/tooltip.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _tooltip2 = _interopRequireDefault(_tooltip);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _tooltip2.default;
-
-/***/ }),
-<<<<<<< HEAD
-/* 153 */
-=======
-
-/***/ "./src/js/components/atoms/tooltip/tooltip.ts":
-/*!****************************************************!*\
-  !*** ./src/js/components/atoms/tooltip/tooltip.ts ***!
-  \****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-<<<<<<< HEAD
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _cImage = __webpack_require__(154);
-
-var _inView = __webpack_require__(156);
-
-var _browserCapabilities = __webpack_require__(2);
-
-var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
-
-var _viewport = __webpack_require__(1);
-
-var _viewport2 = _interopRequireDefault(_viewport);
-
-var _cImage2 = __webpack_require__(157);
-
-var _cImageVue = __webpack_require__(158);
-
-var _cImageVue2 = _interopRequireDefault(_cImageVue);
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-var _tooltipVue = __webpack_require__(/*! ./tooltip.vue.html */ "./src/js/components/atoms/tooltip/tooltip.vue.html");
-
-var _tooltipVue2 = _interopRequireDefault(_tooltipVue);
->>>>>>> feat(table-compare): allow 5 columns
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-=======
->>>>>>> chore(build): add build
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -6229,7 +4361,7 @@ BaseLink = __decorate([_baseLinkVue2.default, (0, _vuePropertyDecorator.Componen
 exports.default = BaseLink;
 
 /***/ }),
-/* 136 */
+/* 135 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('component',_vm._b({class:_vm.classObject,on:{"click":_vm.triggerEventClick}},'component',_vm.linkProps,false),[(this.icon)?_c('icon',{attrs:{"icon-name":_vm.icon}}):_vm._e(),_vm._v(" "),(!_vm.slots)?_c('span',{staticClass:"link__underline"},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")]):_vm._t("default")],2)}
@@ -6246,13 +4378,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-
-/***/ "./src/js/components/atoms/youtube-link/index.ts":
-/*!*******************************************************!*\
-  !*** ./src/js/components/atoms/youtube-link/index.ts ***!
-  \*******************************************************/
-/*! no static exports found */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6262,129 +4388,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _youtubeLink = __webpack_require__(/*! ./youtube-link */ "./src/js/components/atoms/youtube-link/youtube-link.ts");
+var _contentLink = __webpack_require__(137);
 
-var _youtubeLink2 = _interopRequireDefault(_youtubeLink);
+var _contentLink2 = _interopRequireDefault(_contentLink);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = _youtubeLink2.default;
-
-/***/ }),
-
-/***/ "./src/js/components/atoms/youtube-link/youtube-link.ts":
-/*!**************************************************************!*\
-  !*** ./src/js/components/atoms/youtube-link/youtube-link.ts ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-<<<<<<< HEAD
-/***/ }),
-/* 154 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _BaseLink2 = __webpack_require__(/*! ../BaseLink */ "./src/js/components/atoms/BaseLink/index.ts");
-
-var _BaseLink3 = _interopRequireDefault(_BaseLink2);
-
-var _youtube = __webpack_require__(/*! constants/youtube */ "./src/js/constants/youtube.ts");
-
-<<<<<<< HEAD
-var _Image = __webpack_require__(155);
-
-Object.defineProperty(exports, "FocusArea", {
-    enumerable: true,
-    get: function get() {
-        return _Image.FocusArea;
-    }
-});
-var ImageFormat = exports.ImageFormat = undefined;
-(function (ImageFormat) {
-    ImageFormat["default"] = "";
-    ImageFormat["jpg"] = "jpg";
-    ImageFormat["pjpg"] = "pjpg";
-    ImageFormat["png"] = "png";
-    ImageFormat["png8"] = "png8";
-    ImageFormat["webp"] = "webp";
-})(ImageFormat || (exports.ImageFormat = ImageFormat = {}));
-var ResizeBehavior = exports.ResizeBehavior = undefined;
-(function (ResizeBehavior) {
-    ResizeBehavior["default"] = "";
-    ResizeBehavior["pad"] = "pad";
-    ResizeBehavior["fill"] = "fill";
-    ResizeBehavior["scale"] = "scale";
-    ResizeBehavior["crop"] = "crop";
-    ResizeBehavior["thumb"] = "thumb";
-})(ResizeBehavior || (exports.ResizeBehavior = ResizeBehavior = {}));
-
-/***/ }),
-/* 155 */
-=======
-/* 137 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-<<<<<<< HEAD
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var FocusArea;
-(function (FocusArea) {
-    FocusArea["center"] = "";
-    FocusArea["top"] = "top";
-    FocusArea["right"] = "right";
-    FocusArea["bottom"] = "bottom";
-    FocusArea["left"] = "left";
-    FocusArea["topRight"] = "top_right";
-    FocusArea["topLeft"] = "top_left";
-    FocusArea["bottomRight"] = "bottom_right";
-    FocusArea["bottomLeft"] = "bottom_left";
-    FocusArea["faceLargest"] = "face";
-    FocusArea["faces"] = "faces";
-})(FocusArea = exports.FocusArea || (exports.FocusArea = {}));
-=======
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _contentLink = __webpack_require__(138);
-
-var _contentLink2 = _interopRequireDefault(_contentLink);
->>>>>>> chore(build): add build
-
-var Image = function Image() {
-    _classCallCheck(this, Image);
-};
-
-<<<<<<< HEAD
-exports.Image = Image;
-
-/***/ }),
-/* 156 */
-=======
 exports.default = _contentLink2.default;
 
 /***/ }),
-/* 138 */
->>>>>>> chore(build): add build
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6393,33 +4406,15 @@ exports.default = _contentLink2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.InView = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
-<<<<<<< HEAD
-=======
 
 var _BaseLink2 = __webpack_require__(6);
->>>>>>> chore(build): add build
 
-var _browserCapabilities = __webpack_require__(2);
+var _BaseLink3 = _interopRequireDefault(_BaseLink2);
 
-<<<<<<< HEAD
-var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
-
-var _viewport = __webpack_require__(1);
-=======
-var _youtube2 = _interopRequireDefault(_youtube);
-
-var _youtubeLinkVue = __webpack_require__(/*! ./youtube-link.vue.html */ "./src/js/components/atoms/youtube-link/youtube-link.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _youtubeLinkVue2 = _interopRequireDefault(_youtubeLinkVue);
-
-=======
->>>>>>> chore(build): add build
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -6451,120 +4446,6 @@ var ContentLink = function (_BaseLink) {
 
     return ContentLink;
 }(_BaseLink3.default);
-<<<<<<< HEAD
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'play-video' }), __metadata("design:type", Object)], YoutubeLink.prototype, "icon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], YoutubeLink.prototype, "youtubeId", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], YoutubeLink.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], YoutubeLink.prototype, "clickEvent", void 0);
-YoutubeLink = __decorate([_youtubeLinkVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'YoutubeLink'
-})], YoutubeLink);
-exports.default = YoutubeLink;
-
-/***/ }),
-<<<<<<< HEAD
-/* 157 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var imageConstants = exports.imageConstants = {
-    maxWidth: 4000,
-    maxHeight: 4000,
-    initialSize: 20,
-    tinyGif: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
-};
-
-/***/ }),
-/* 158 */
-/***/ (function(module, exports) {
-=======
-
-/***/ "./src/js/components/atoms/youtube-link/youtube-link.vue.html":
-/*!********************************************************************!*\
-  !*** ./src/js/components/atoms/youtube-link/youtube-link.vue.html ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> feat(table-compare): allow 5 columns
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "a",
-    {
-      staticClass: "link link--icon link--large",
-      attrs: { href: _vm.youtubeUrl, target: "_blank" },
-      on: {
-        click: function($event) {
-          $event.preventDefault()
-          return _vm.triggerClick($event)
-        }
-      }
-    },
-    [
-      _c("icon", { attrs: { "icon-name": _vm.icon } }),
-      _vm._v(" "),
-      _c("span", { staticClass: "link__underline" }, [
-        _vm._v("\n        " + _vm._s(_vm.label) + "\n    ")
-      ]),
-      _vm._v(" "),
-      _c(
-        "portal",
-        { attrs: { to: "modals" } },
-        [
-          _vm.videoVisible
-            ? _c(
-                "modal",
-                {
-                  staticClass: "modal--video",
-                  on: { close: _vm.toggleVideoVisible }
-                },
-                [_c("youtube-video", { attrs: { "video-id": _vm.youtubeId } })],
-                1
-              )
-            : _vm._e()
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  if (false) {}
-  return _exports
-}
-var api = null
-if (false) {}
-
-
-/***/ }),
-<<<<<<< HEAD
-/* 159 */
-=======
-
-/***/ "./src/js/components/atoms/youtube-video/index.ts":
-/*!********************************************************!*\
-  !*** ./src/js/components/atoms/youtube-video/index.ts ***!
-  \********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], ContentLink.prototype, "icon", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentLink.prototype, "url", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentLink.prototype, "label", void 0);
@@ -6575,8 +4456,7 @@ ContentLink = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ContentLink;
 
 /***/ }),
-/* 139 */
->>>>>>> chore(build): add build
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6586,15 +4466,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _labelFilter = __webpack_require__(160);
-=======
-var _youtubeVideo = __webpack_require__(/*! ./youtube-video */ "./src/js/components/atoms/youtube-video/youtube-video.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _contentButton = __webpack_require__(140);
->>>>>>> chore(build): add build
+var _contentButton = __webpack_require__(139);
 
 var _contentButton2 = _interopRequireDefault(_contentButton);
 
@@ -6603,20 +4475,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentButton2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 160 */
-=======
-
-/***/ "./src/js/components/atoms/youtube-video/youtube-video.ts":
-/*!****************************************************************!*\
-  !*** ./src/js/components/atoms/youtube-video/youtube-video.ts ***!
-  \****************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 140 */
->>>>>>> chore(build): add build
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6630,15 +4489,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _labelFilterVue = __webpack_require__(161);
-=======
-var _youtube = __webpack_require__(/*! constants/youtube */ "./src/js/constants/youtube.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _BaseLink2 = __webpack_require__(6);
->>>>>>> chore(build): add build
 
 var _BaseLink3 = _interopRequireDefault(_BaseLink2);
 
@@ -6671,86 +4522,6 @@ var ContentButton = function (_BaseLink) {
         return _possibleConstructorReturn(this, (ContentButton.__proto__ || Object.getPrototypeOf(ContentButton)).apply(this, arguments));
     }
 
-<<<<<<< HEAD
-    _createClass(YoutubeVideo, [{
-        key: "mounted",
-        value: function mounted() {
-            this.loadVideo = true;
-        }
-    }, {
-        key: "videoUrl",
-        get: function get() {
-            return "" + _youtube2.default.embedUrl + this.videoId + "?" + this.videoQuery;
-        }
-    }]);
-
-    return YoutubeVideo;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], YoutubeVideo.prototype, "videoId", void 0);
-YoutubeVideo = __decorate([_youtubeVideoVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'youtube-video'
-})], YoutubeVideo);
-exports.default = YoutubeVideo;
-
-/***/ }),
-<<<<<<< HEAD
-/* 161 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/atoms/youtube-video/youtube-video.vue.html":
-/*!**********************************************************************!*\
-  !*** ./src/js/components/atoms/youtube-video/youtube-video.vue.html ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "youtube-video" }, [
-    _vm.loadVideo
-      ? _c("iframe", {
-          staticClass: "youtube-video__frame",
-          attrs: {
-            src: _vm.videoUrl,
-            frameborder: "0",
-            allowfullscreen: "allowfullscreen"
-          }
-        })
-      : _vm._e()
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  if (false) {}
-  return _exports
-}
-var api = null
-if (false) {}
-
-
-/***/ }),
-<<<<<<< HEAD
-/* 162 */
-=======
-
-/***/ "./src/js/components/index.js":
-/*!************************************!*\
-  !*** ./src/js/components/index.js ***!
-  \************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
     return ContentButton;
 }(_BaseLink3.default);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], ContentButton.prototype, "icon", void 0);
@@ -6763,8 +4534,7 @@ ContentButton = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ContentButton;
 
 /***/ }),
-/* 141 */
->>>>>>> chore(build): add build
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6774,29 +4544,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _liInline = __webpack_require__(163);
-=======
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
->>>>>>> feat(table-compare): allow 5 columns
-
-var _atoms = __webpack_require__(/*! ./atoms */ "./src/js/components/atoms/index.js");
-
-var Atoms = _interopRequireWildcard(_atoms);
-
-var _molecules = __webpack_require__(/*! ./molecules */ "./src/js/components/molecules/index.js");
-
-var Molecules = _interopRequireWildcard(_molecules);
-
-var _organisms = __webpack_require__(/*! ./organisms */ "./src/js/components/organisms/index.js");
-
-var Organisms = _interopRequireWildcard(_organisms);
-
-var _organismsPage = __webpack_require__(/*! ./organisms-page */ "./src/js/components/organisms-page/index.js");
-=======
-var _contentLinkList = __webpack_require__(142);
->>>>>>> chore(build): add build
+var _contentLinkList = __webpack_require__(141);
 
 var _contentLinkList2 = _interopRequireDefault(_contentLinkList);
 
@@ -6805,20 +4553,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentLinkList2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 163 */
-=======
-
-/***/ "./src/js/components/molecules/article-author/article-author.ts":
-/*!**********************************************************************!*\
-  !*** ./src/js/components/molecules/article-author/article-author.ts ***!
-  \**********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 142 */
->>>>>>> chore(build): add build
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6832,17 +4567,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _liInlineVue = __webpack_require__(164);
-=======
-var _articleAuthorVue = __webpack_require__(/*! ./article-author.vue.html */ "./src/js/components/molecules/article-author/article-author.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _articleAuthorVue2 = _interopRequireDefault(_articleAuthorVue);
-=======
-var _contentLinkListVue = __webpack_require__(143);
->>>>>>> chore(build): add build
+var _contentLinkListVue = __webpack_require__(142);
 
 var _contentLinkListVue2 = _interopRequireDefault(_contentLinkListVue);
 
@@ -6885,16 +4610,8 @@ ContentLinkList = __decorate([_contentLinkListVue2.default, (0, _vuePropertyDeco
 exports.default = ContentLinkList;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 164 */
+/* 142 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 143 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{class:_vm.block + '__list'},_vm._l((_vm.links),function(link){return _c('li',{class:_vm.block + '__item'},[_c('content-link',{class:link.class,attrs:{"block":_vm.block,"icon":link.icon,"url":link.url,"label":link.label}})],1)}),0)}
 var staticRenderFns = []
@@ -6910,20 +4627,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 165 */
-=======
-
-/***/ "./src/js/components/molecules/article-author/index.ts":
-/*!*************************************************************!*\
-  !*** ./src/js/components/molecules/article-author/index.ts ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 144 */
->>>>>>> chore(build): add build
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6933,42 +4637,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _component = __webpack_require__(166);
-
-var _component2 = _interopRequireDefault(_component);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _articleAuthor = __webpack_require__(/*! ./article-author */ "./src/js/components/molecules/article-author/article-author.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _hitArea = __webpack_require__(145);
->>>>>>> chore(build): add build
+var _hitArea = __webpack_require__(144);
 
 var _hitArea2 = _interopRequireDefault(_hitArea);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 166 */
-=======
-
-/***/ "./src/js/components/molecules/article-ctas/article-ctas.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/molecules/article-ctas/article-ctas.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _hitArea2.default;
 
 /***/ }),
-/* 145 */
->>>>>>> chore(build): add build
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6982,15 +4660,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _templateVue = __webpack_require__(167);
-=======
-var _articleCtasVue = __webpack_require__(/*! ./article-ctas.vue.html */ "./src/js/components/molecules/article-ctas/article-ctas.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _hitAreaVue = __webpack_require__(146);
->>>>>>> chore(build): add build
+var _hitAreaVue = __webpack_require__(145);
 
 var _hitAreaVue2 = _interopRequireDefault(_hitAreaVue);
 
@@ -7028,16 +4698,8 @@ HitArea = __decorate([_hitAreaVue2.default, (0, _vuePropertyDecorator.Component)
 exports.default = HitArea;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 167 */
+/* 145 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 146 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"hit-area",attrs:{"role":"button","tabindex":"0"}},[_vm._t("default")],2)}
 var staticRenderFns = []
@@ -7053,20 +4715,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 168 */
-=======
-
-/***/ "./src/js/components/molecules/article-ctas/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/molecules/article-ctas/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 147 */
->>>>>>> chore(build): add build
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7076,42 +4725,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _navAssist = __webpack_require__(169);
-
-var _navAssist2 = _interopRequireDefault(_navAssist);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _articleCtas = __webpack_require__(/*! ./article-ctas */ "./src/js/components/molecules/article-ctas/article-ctas.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _horizontalList = __webpack_require__(148);
->>>>>>> chore(build): add build
+var _horizontalList = __webpack_require__(147);
 
 var _horizontalList2 = _interopRequireDefault(_horizontalList);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 169 */
-=======
-
-/***/ "./src/js/components/molecules/article-description-list/article-description-list.ts":
-/*!******************************************************************************************!*\
-  !*** ./src/js/components/molecules/article-description-list/article-description-list.ts ***!
-  \******************************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _horizontalList2.default;
 
 /***/ }),
-/* 148 */
->>>>>>> chore(build): add build
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7125,15 +4748,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _navAssistVue = __webpack_require__(170);
-=======
-var _articleDescriptionListVue = __webpack_require__(/*! ./article-description-list.vue.html */ "./src/js/components/molecules/article-description-list/article-description-list.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _horizontalListVue = __webpack_require__(149);
->>>>>>> chore(build): add build
+var _horizontalListVue = __webpack_require__(148);
 
 var _horizontalListVue2 = _interopRequireDefault(_horizontalListVue);
 
@@ -7177,16 +4792,8 @@ HorizontalList = __decorate([_horizontalListVue2.default, (0, _vuePropertyDecora
 exports.default = HorizontalList;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 170 */
+/* 148 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 149 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{class:_vm.styleModifier},[_c('strong',{staticClass:"caption-list__headline"},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")]),_vm._v(" "),_c('ul',{staticClass:"caption-list"},_vm._l((_vm.listItems),function(item){return _c('li',{staticClass:"caption-list__list-item"},[_vm._v("\n            "+_vm._s(item.additionalContent)+"\n            "),_c('a',{attrs:{"href":item.url}},[_vm._v(_vm._s(item.text))])])}),0)])}
 var staticRenderFns = []
@@ -7202,20 +4809,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 171 */
-=======
-
-/***/ "./src/js/components/molecules/article-description-list/index.ts":
-/*!***********************************************************************!*\
-  !*** ./src/js/components/molecules/article-description-list/index.ts ***!
-  \***********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 150 */
->>>>>>> chore(build): add build
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7225,42 +4819,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _responsivePicture = __webpack_require__(172);
-
-var _responsivePicture2 = _interopRequireDefault(_responsivePicture);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _articleDescriptionList = __webpack_require__(/*! ./article-description-list */ "./src/js/components/molecules/article-description-list/article-description-list.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _icon = __webpack_require__(151);
->>>>>>> chore(build): add build
+var _icon = __webpack_require__(150);
 
 var _icon2 = _interopRequireDefault(_icon);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 172 */
-=======
-
-/***/ "./src/js/components/molecules/article-image/article-image.ts":
-/*!********************************************************************!*\
-  !*** ./src/js/components/molecules/article-image/article-image.ts ***!
-  \********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _icon2.default;
 
 /***/ }),
-/* 151 */
->>>>>>> chore(build): add build
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7276,15 +4844,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _responsivePictureSource = __webpack_require__(173);
-=======
-var _articleImageVue = __webpack_require__(/*! ./article-image.vue.html */ "./src/js/components/molecules/article-image/article-image.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _iconVue = __webpack_require__(152);
->>>>>>> chore(build): add build
+var _iconVue = __webpack_require__(151);
 
 var _iconVue2 = _interopRequireDefault(_iconVue);
 
@@ -7359,7 +4919,7 @@ Icon = __decorate([_iconVue2.default, (0, _vuePropertyDecorator.Component)({
 exports.default = Icon;
 
 /***/ }),
-/* 152 */
+/* 151 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.ready)?_c('svg',{staticClass:"icon",class:_vm.iconClass,attrs:{"viewBox":_vm.viewBox}},[(!_vm.symbolData)?_c('use',{attrs:{"xlink:href":_vm.iconRef}}):_vm._e()]):_vm._e()}
@@ -7374,43 +4934,9 @@ module.exports = function (_exports) {
   return _exports
 }
 
-<<<<<<< HEAD
-    return ResponsivePicture;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: false }), __metadata("design:type", Object)], ResponsivePicture.prototype, "desktopHdWidth", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: false }), __metadata("design:type", Object)], ResponsivePicture.prototype, "desktopWidth", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: false }), __metadata("design:type", Object)], ResponsivePicture.prototype, "tabletWidth", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: false }), __metadata("design:type", Object)], ResponsivePicture.prototype, "mobileXlWidth", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: false }), __metadata("design:type", Object)], ResponsivePicture.prototype, "mobileLWidth", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: true }), __metadata("design:type", Object)], ResponsivePicture.prototype, "mobileWidth", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: true }), __metadata("design:type", Boolean)], ResponsivePicture.prototype, "lazy", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], ResponsivePicture.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], ResponsivePicture.prototype, "imgClass", void 0);
-ResponsivePicture = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'responsive-picture',
-    template: __webpack_require__(174),
-    components: {
-        ResponsivePictureSource: _responsivePictureSource2.default
-    }
-})], ResponsivePicture);
-exports.default = ResponsivePicture;
 
 /***/ }),
-/* 173 */
-=======
-
-/***/ }),
-<<<<<<< HEAD
-
-/***/ "./src/js/components/molecules/article-image/index.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/molecules/article-image/index.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 153 */
->>>>>>> chore(build): add build
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7420,7 +4946,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _cImage = __webpack_require__(154);
+var _cImage = __webpack_require__(153);
 
 var _cImage2 = _interopRequireDefault(_cImage);
 
@@ -7429,7 +4955,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _cImage2.default;
 
 /***/ }),
-/* 154 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7445,9 +4971,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _cImage = __webpack_require__(155);
+var _cImage = __webpack_require__(154);
 
-var _inView = __webpack_require__(157);
+var _inView = __webpack_require__(156);
 
 var _browserCapabilities = __webpack_require__(2);
 
@@ -7457,9 +4983,9 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _cImage2 = __webpack_require__(158);
+var _cImage2 = __webpack_require__(157);
 
-var _cImageVue = __webpack_require__(159);
+var _cImageVue = __webpack_require__(158);
 
 var _cImageVue2 = _interopRequireDefault(_cImageVue);
 
@@ -7485,41 +5011,8 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-<<<<<<< HEAD
-var ArticleIntro = function (_Vue) {
-    _inherits(ArticleIntro, _Vue);
-
-    function ArticleIntro() {
-        _classCallCheck(this, ArticleIntro);
-
-        return _possibleConstructorReturn(this, (ArticleIntro.__proto__ || Object.getPrototypeOf(ArticleIntro)).apply(this, arguments));
-    }
-
-    return ArticleIntro;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ArticleIntro.prototype, "intro", void 0);
-exports.ArticleIntro = ArticleIntro = __decorate([_articleIntroVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'ArticleIntro'
-})], ArticleIntro);
-exports.ArticleIntro = ArticleIntro;
-
-/***/ }),
-<<<<<<< HEAD
-/* 174 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/article-intro/article-intro.vue.html":
-/*!**************************************************************************!*\
-  !*** ./src/js/components/molecules/article-intro/article-intro.vue.html ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-=======
 var CImage = function (_Mixins) {
     _inherits(CImage, _Mixins);
->>>>>>> chore(build): add build
 
     function CImage() {
         _classCallCheck(this, CImage);
@@ -7535,22 +5028,6 @@ var CImage = function (_Mixins) {
         return _this;
     }
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 175 */
-=======
-
-/***/ "./src/js/components/molecules/article-intro/index.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/molecules/article-intro/index.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-=======
     _createClass(CImage, [{
         key: "beforeMount",
         value: function beforeMount() {
@@ -7577,7 +5054,6 @@ var CImage = function (_Mixins) {
                                     _context.next = 2;
                                     break;
                                 }
->>>>>>> chore(build): add build
 
                                 return _context.abrupt("return");
 
@@ -7586,20 +5062,8 @@ var CImage = function (_Mixins) {
                                 _context.next = 5;
                                 return this.calculateDimensions(true);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _component = __webpack_require__(176);
-
-var _component2 = _interopRequireDefault(_component);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _articleIntro = __webpack_require__(/*! ./article-intro */ "./src/js/components/molecules/article-intro/article-intro.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
                             case 5:
                                 this.ready = true;
->>>>>>> chore(build): add build
 
                             case 6:
                             case "end":
@@ -7609,20 +5073,6 @@ var _articleIntro = __webpack_require__(/*! ./article-intro */ "./src/js/compone
                 }, _callee, this);
             }));
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 176 */
-=======
-
-/***/ "./src/js/components/molecules/article-table/article-table.ts":
-/*!********************************************************************!*\
-  !*** ./src/js/components/molecules/article-table/article-table.ts ***!
-  \********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
             function mounted() {
                 return _ref.apply(this, arguments);
             }
@@ -7640,7 +5090,6 @@ var _articleIntro = __webpack_require__(/*! ./article-intro */ "./src/js/compone
         value: function () {
             var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2() {
                 var _this2 = this;
->>>>>>> chore(build): add build
 
                 return regeneratorRuntime.wrap(function _callee2$(_context2) {
                     while (1) {
@@ -7674,13 +5123,6 @@ var _articleIntro = __webpack_require__(/*! ./article-intro */ "./src/js/compone
                 return _ref2.apply(this, arguments);
             }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _templateVue = __webpack_require__(177);
-=======
-var _articleTableVue = __webpack_require__(/*! ./article-table.vue.html */ "./src/js/components/molecules/article-table/article-table.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
             return reset;
         }()
     }, {
@@ -7699,7 +5141,6 @@ var _articleTableVue = __webpack_require__(/*! ./article-table.vue.html */ "./sr
         key: "calculateDimensions",
         value: function calculateDimensions() {
             var _this3 = this;
->>>>>>> chore(build): add build
 
             var forceUpdate = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
 
@@ -7804,44 +5245,17 @@ CImage = __decorate([_cImageVue2.default, (0, _vuePropertyDecorator.Component)({
 exports.default = CImage;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 177 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/article-table/article-table.vue.html":
-/*!**************************************************************************!*\
-  !*** ./src/js/components/molecules/article-table/article-table.vue.html ***!
-  \**************************************************************************/
-/*! no static exports found */
-=======
-/* 155 */
->>>>>>> chore(build): add build
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 178 */
-=======
-
-/***/ "./src/js/components/molecules/article-table/index.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/molecules/article-table/index.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Image = __webpack_require__(156);
+var _Image = __webpack_require__(155);
 
 Object.defineProperty(exports, "FocusArea", {
     enumerable: true,
@@ -7869,8 +5283,7 @@ var ResizeBehavior = exports.ResizeBehavior = undefined;
 })(ResizeBehavior || (exports.ResizeBehavior = ResizeBehavior = {}));
 
 /***/ }),
-/* 156 */
->>>>>>> chore(build): add build
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7894,39 +5307,14 @@ var FocusArea;
     FocusArea["faces"] = "faces";
 })(FocusArea = exports.FocusArea || (exports.FocusArea = {}));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabbableDefinitionList = __webpack_require__(179);
-
-var _tabbableDefinitionList2 = _interopRequireDefault(_tabbableDefinitionList);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _articleTable = __webpack_require__(/*! ./article-table */ "./src/js/components/molecules/article-table/article-table.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var Image = function Image() {
     _classCallCheck(this, Image);
 };
->>>>>>> chore(build): add build
 
 exports.Image = Image;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 179 */
-=======
-
-/***/ "./src/js/components/molecules/article-text/article-text.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/molecules/article-text/article-text.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 157 */
->>>>>>> chore(build): add build
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7955,38 +5343,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-<<<<<<< HEAD
-exports.default = {
-    name: 'tabbable-definition-list',
-    template: __webpack_require__(180),
-    data: function data() {
-        return {
-            viewport: new _viewport2.default(),
-            heights: []
-        };
-    },
-    props: {
-        items: {
-            type: Array,
-            default: function _default() {
-                return [];
-            }
-        },
-        activeIndex: {
-            type: Number,
-            default: 0
-        }
-    },
-    watch: {
-        items: function items() {
-            this.updateElementPositions();
-        },
-        activeIndex: function activeIndex(newValue, oldValue) {
-            this.killTweensAndCompleteOf(this.$refs.terms);
-            this.killTweensAndCompleteOf(this.$refs.descriptions);
-=======
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
->>>>>>> feat(table-compare): allow 5 columns
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
@@ -8076,7 +5433,7 @@ exports.InView = InView = __decorate([_vuePropertyDecorator.Component], InView);
 exports.InView = InView;
 
 /***/ }),
-/* 158 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8093,7 +5450,7 @@ var imageConstants = exports.imageConstants = {
 };
 
 /***/ }),
-/* 159 */
+/* 158 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('img',{staticClass:"img--contain",class:_vm.classList,attrs:{"alt":_vm.alt,"src":_vm.src},on:{"error":_vm.setError}})}
@@ -8110,26 +5467,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 180 */
-/***/ (function(module, exports) {
-
-module.exports = "<dl class=\"tabbable-dl\">\n    <template v-for=\"(item, index) in items\">\n        <dt class=\"tabbable-dl__term tabbable-dl__term--vue\" ref=\"terms\">\n            <a class=\"tabbable-dl__link\" @click.prevent=\"changeIndex(index)\" @keyup.enter=\"changeIndex(index)\" role=\"button\" tabindex=\"0\">\n                <h3 class=\"tabbable-dl__title\">\n                    <icon class=\"tabbable-dl__icon\" icon-name=\"angle-right\"></icon>\n                    {{ item.title }}\n                </h3>\n            </a>\n        </dt>\n        <dd class=\"tabbable-dl__desc tabbable-dl__desc--vue\" ref=\"descriptions\">{{ item.description }}</dd>\n    </template>\n</dl>\n";
-
-/***/ }),
-/* 181 */
-=======
-
-/***/ "./src/js/components/molecules/article-text/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/molecules/article-text/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 160 */
->>>>>>> chore(build): add build
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8139,19 +5477,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tooltip = __webpack_require__(182);
-
-var _tooltip2 = _interopRequireDefault(_tooltip);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _articleText = __webpack_require__(/*! ./article-text */ "./src/js/components/molecules/article-text/article-text.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _labelFilter = __webpack_require__(161);
->>>>>>> chore(build): add build
+var _labelFilter = __webpack_require__(160);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -8161,20 +5487,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 182 */
-=======
-
-/***/ "./src/js/components/molecules/article-video/article-video.ts":
-/*!********************************************************************!*\
-  !*** ./src/js/components/molecules/article-video/article-video.ts ***!
-  \********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 161 */
->>>>>>> chore(build): add build
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8191,15 +5504,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tooltipVue = __webpack_require__(183);
-=======
-var _articleVideoVue = __webpack_require__(/*! ./article-video.vue.html */ "./src/js/components/molecules/article-video/article-video.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _labelFilterVue = __webpack_require__(162);
->>>>>>> chore(build): add build
+var _labelFilterVue = __webpack_require__(161);
 
 var _labelFilterVue2 = _interopRequireDefault(_labelFilterVue);
 
@@ -8260,16 +5565,8 @@ exports.LabelFilter = LabelFilter = __decorate([_labelFilterVue2.default, (0, _v
 exports.LabelFilter = LabelFilter;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 183 */
+/* 161 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 162 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('label',{staticClass:"label-filter"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.checkedState),expression:"checkedState"}],ref:"checkbox",attrs:{"disabled":_vm.disabled,"name":_vm.name,"type":"checkbox"},domProps:{"checked":_vm.checked,"value":_vm.value,"checked":Array.isArray(_vm.checkedState)?_vm._i(_vm.checkedState,_vm.value)>-1:(_vm.checkedState)},on:{"change":[function($event){var $$a=_vm.checkedState,$$el=$event.target,$$c=$$el.checked?(true):(false);if(Array.isArray($$a)){var $$v=_vm.value,$$i=_vm._i($$a,$$v);if($$el.checked){$$i<0&&(_vm.checkedState=$$a.concat([$$v]))}else{$$i>-1&&(_vm.checkedState=$$a.slice(0,$$i).concat($$a.slice($$i+1)))}}else{_vm.checkedState=$$c}},_vm.onChange]}}),_vm._v(" "),_c('span',{staticClass:"label-filter__label"},[_vm._v(_vm._s(_vm.label))])])}
 var staticRenderFns = []
@@ -8285,20 +5582,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 184 */
-=======
-
-/***/ "./src/js/components/molecules/article-video/index.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/molecules/article-video/index.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 163 */
->>>>>>> chore(build): add build
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8308,19 +5592,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _youtubeLink = __webpack_require__(185);
-
-var _youtubeLink2 = _interopRequireDefault(_youtubeLink);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _articleVideo = __webpack_require__(/*! ./article-video */ "./src/js/components/molecules/article-video/article-video.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _liInline = __webpack_require__(164);
->>>>>>> chore(build): add build
+var _liInline = __webpack_require__(163);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -8330,20 +5602,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 185 */
-=======
-
-/***/ "./src/js/components/molecules/auto-complete/auto-complete.ts":
-/*!********************************************************************!*\
-  !*** ./src/js/components/molecules/auto-complete/auto-complete.ts ***!
-  \********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 164 */
->>>>>>> chore(build): add build
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8358,15 +5617,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _youtubeLinkVue = __webpack_require__(186);
-=======
-var _autoCompleteVue = __webpack_require__(/*! ./auto-complete.vue.html */ "./src/js/components/molecules/auto-complete/auto-complete.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _liInlineVue = __webpack_require__(165);
->>>>>>> chore(build): add build
+var _liInlineVue = __webpack_require__(164);
 
 var _liInlineVue2 = _interopRequireDefault(_liInlineVue);
 
@@ -8408,7 +5659,7 @@ exports.LiInline = LiInline = __decorate([_liInlineVue2.default, (0, _vuePropert
 exports.LiInline = LiInline;
 
 /***/ }),
-/* 165 */
+/* 164 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"list__item list__item--inline"},[(!_vm.item.item)?[_vm._v(_vm._s(_vm.item))]:[_c(_vm.item.type,_vm._b({tag:"component"},'component',_vm.item.item,false))]],2)}
@@ -8425,7 +5676,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 166 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8435,7 +5686,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _component = __webpack_require__(167);
+var _component = __webpack_require__(166);
 
 var _component2 = _interopRequireDefault(_component);
 
@@ -8444,7 +5695,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _component2.default;
 
 /***/ }),
-/* 167 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8458,7 +5709,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _templateVue = __webpack_require__(168);
+var _templateVue = __webpack_require__(167);
 
 var _templateVue2 = _interopRequireDefault(_templateVue);
 
@@ -8500,7 +5751,7 @@ LiItem = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)
 exports.default = LiItem;
 
 /***/ }),
-/* 168 */
+/* 167 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"list__item"},[(_vm.item.item)?[_c(_vm.item.type,_vm._b({tag:"component"},'component',_vm.item.item,false))]:(_vm.item.type)?[_c(_vm.item.type,_vm._b({tag:"component"},'component',_vm.item,false))]:[_vm._v(_vm._s(_vm.item))]],2)}
@@ -8517,7 +5768,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 169 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8527,7 +5778,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _navAssist = __webpack_require__(170);
+var _navAssist = __webpack_require__(169);
 
 var _navAssist2 = _interopRequireDefault(_navAssist);
 
@@ -8536,7 +5787,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _navAssist2.default;
 
 /***/ }),
-/* 170 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8552,7 +5803,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _navAssistVue = __webpack_require__(171);
+var _navAssistVue = __webpack_require__(170);
 
 var _navAssistVue2 = _interopRequireDefault(_navAssistVue);
 
@@ -8619,7 +5870,7 @@ NavAssist = __decorate([_navAssistVue2.default, (0, _vuePropertyDecorator.Compon
 exports.default = NavAssist;
 
 /***/ }),
-/* 171 */
+/* 170 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"nav-assist",class:{'nav-assist--close': this.openState, 'nav-assist--initial-state': !this.used},attrs:{"type":"button","aria-label":"menu","aria-expanded":this.openState.toString()},on:{"click":function($event){return _vm.toggleState()},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.close($event)}}},[_c('svg',{attrs:{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24"}},[_c('rect',{staticClass:"nav-assist__line nav-assist__line-2",attrs:{"x":"2","y":"11","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-1",attrs:{"x":"2","y":"4.5","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-3",attrs:{"x":"2","y":"17.5","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-4",attrs:{"x":"-1.3","y":"11","transform":"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)","width":"26.6","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-5",attrs:{"x":"11","y":"-1.3","transform":"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)","width":"2","height":"26.6"}})])])}
@@ -8636,7 +5887,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 172 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8646,7 +5897,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _responsivePicture = __webpack_require__(173);
+var _responsivePicture = __webpack_require__(172);
 
 var _responsivePicture2 = _interopRequireDefault(_responsivePicture);
 
@@ -8655,7 +5906,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _responsivePicture2.default;
 
 /***/ }),
-/* 173 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8675,7 +5926,7 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _responsivePictureSource = __webpack_require__(174);
+var _responsivePictureSource = __webpack_require__(173);
 
 var _responsivePictureSource2 = _interopRequireDefault(_responsivePictureSource);
 
@@ -8787,7 +6038,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, def
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], ResponsivePicture.prototype, "imgClass", void 0);
 ResponsivePicture = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'responsive-picture',
-    template: __webpack_require__(175),
+    template: __webpack_require__(174),
     components: {
         ResponsivePictureSource: _responsivePictureSource2.default
     }
@@ -8795,7 +6046,7 @@ ResponsivePicture = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ResponsivePicture;
 
 /***/ }),
-/* 174 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8859,13 +6110,13 @@ ResponsivePictureSource = __decorate([(0, _vuePropertyDecorator.Component)({
 exports.default = ResponsivePictureSource;
 
 /***/ }),
-/* 175 */
+/* 174 */
 /***/ (function(module, exports) {
 
 module.exports = "<picture>\n    <template>\n        <responsive-picture-source v-if=\"desktopHdWidth\" media=\"(min-width: 1201px)\" :image=\"lazyLoading ? '' : desktopHdWidth\" />\n        <responsive-picture-source v-if=\"desktopWidth\" media=\"(min-width: 1025px)\" :image=\"lazyLoading ? '' : desktopWidth\" />\n        <responsive-picture-source v-if=\"tabletWidth\" media=\"(min-width: 768px)\" :image=\"lazyLoading ? '' : tabletWidth\" />\n        <responsive-picture-source v-if=\"mobileXlWidth\" media=\"(min-width: 569px)\" :image=\"lazyLoading ? '' : mobileXlWidth\" />\n        <responsive-picture-source v-if=\"mobileLWidth\" media=\"(min-width: 481px)\" :image=\" lazyLoading ? '' : mobileLWidth\" />\n        <responsive-picture-source media=\"(max-width: 480px)\" :image=\"mobileWidth\" />\n    </template>\n\n    <img :src=\"lazyLoading ? '' : mobileWidth.url ? mobileWidth.url : mobileWidth\" :alt=\"description\" class=\"img--responsive\" :class=\"classes\"/>\n</picture>\n";
 
 /***/ }),
-/* 176 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8875,7 +6126,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _component = __webpack_require__(177);
+var _component = __webpack_require__(176);
 
 var _component2 = _interopRequireDefault(_component);
 
@@ -8884,7 +6135,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _component2.default;
 
 /***/ }),
-/* 177 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8898,7 +6149,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _templateVue = __webpack_require__(178);
+var _templateVue = __webpack_require__(177);
 
 var _templateVue2 = _interopRequireDefault(_templateVue);
 
@@ -8940,7 +6191,7 @@ SpanLabel = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Compone
 exports.default = SpanLabel;
 
 /***/ }),
-/* 178 */
+/* 177 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',{staticClass:"label"},[_vm._v(_vm._s(_vm.item))])}
@@ -8957,7 +6208,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 179 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8967,7 +6218,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tabbableDefinitionList = __webpack_require__(180);
+var _tabbableDefinitionList = __webpack_require__(179);
 
 var _tabbableDefinitionList2 = _interopRequireDefault(_tabbableDefinitionList);
 
@@ -8976,7 +6227,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tabbableDefinitionList2.default;
 
 /***/ }),
-/* 180 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9002,7 +6253,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 exports.default = {
     name: 'tabbable-definition-list',
-    template: __webpack_require__(181),
+    template: __webpack_require__(180),
     data: function data() {
         return {
             viewport: new _viewport2.default(),
@@ -9187,13 +6438,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 181 */
+/* 180 */
 /***/ (function(module, exports) {
 
 module.exports = "<dl class=\"tabbable-dl\">\n    <template v-for=\"(item, index) in items\">\n        <dt class=\"tabbable-dl__term tabbable-dl__term--vue\" ref=\"terms\">\n            <a class=\"tabbable-dl__link\" @click.prevent=\"changeIndex(index)\" @keyup.enter=\"changeIndex(index)\" role=\"button\" tabindex=\"0\">\n                <h3 class=\"tabbable-dl__title\">\n                    <icon class=\"tabbable-dl__icon\" icon-name=\"angle-right\"></icon>\n                    {{ item.title }}\n                </h3>\n            </a>\n        </dt>\n        <dd class=\"tabbable-dl__desc tabbable-dl__desc--vue\" ref=\"descriptions\">{{ item.description }}</dd>\n    </template>\n</dl>\n";
 
 /***/ }),
-/* 182 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9203,7 +6454,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tooltip = __webpack_require__(183);
+var _tooltip = __webpack_require__(182);
 
 var _tooltip2 = _interopRequireDefault(_tooltip);
 
@@ -9212,7 +6463,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tooltip2.default;
 
 /***/ }),
-/* 183 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9228,7 +6479,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _tooltipVue = __webpack_require__(184);
+var _tooltipVue = __webpack_require__(183);
 
 var _tooltipVue2 = _interopRequireDefault(_tooltipVue);
 
@@ -9281,7 +6532,7 @@ Tooltip = __decorate([_tooltipVue2.default, (0, _vuePropertyDecorator.Component)
 exports.default = Tooltip;
 
 /***/ }),
-/* 184 */
+/* 183 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip",class:_vm.classObject()},[_vm._t("default")],2)}
@@ -9298,7 +6549,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 185 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9308,7 +6559,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _youtubeLink = __webpack_require__(186);
+var _youtubeLink = __webpack_require__(185);
 
 var _youtubeLink2 = _interopRequireDefault(_youtubeLink);
 
@@ -9317,7 +6568,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _youtubeLink2.default;
 
 /***/ }),
-/* 186 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9341,7 +6592,7 @@ var _youtube = __webpack_require__(16);
 
 var _youtube2 = _interopRequireDefault(_youtube);
 
-var _youtubeLinkVue = __webpack_require__(187);
+var _youtubeLinkVue = __webpack_require__(186);
 
 var _youtubeLinkVue2 = _interopRequireDefault(_youtubeLinkVue);
 
@@ -9406,12 +6657,7 @@ YoutubeLink = __decorate([_youtubeLinkVue2.default, (0, _vuePropertyDecorator.Co
 exports.default = YoutubeLink;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 186 */
-=======
-/* 187 */
->>>>>>> chore(build): add build
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"link link--icon link--large",attrs:{"href":_vm.youtubeUrl,"target":"_blank"},on:{"click":function($event){$event.preventDefault();return _vm.triggerClick($event)}}},[_c('icon',{attrs:{"icon-name":_vm.icon}}),_vm._v(" "),_c('span',{staticClass:"link__underline"},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")]),_vm._v(" "),_c('portal',{attrs:{"to":"modals"}},[(_vm.videoVisible)?_c('modal',{staticClass:"modal--video",on:{"close":_vm.toggleVideoVisible}},[_c('youtube-video',{attrs:{"video-id":_vm.youtubeId}})],1):_vm._e()],1)],1)}
@@ -9425,25 +6671,10 @@ module.exports = function (_exports) {
   options.staticRenderFns = staticRenderFns
   return _exports
 }
-<<<<<<< HEAD
 
 
 /***/ }),
 /* 187 */
-=======
-
-/***/ "./src/js/components/molecules/content-toggle/index.js":
-/*!*************************************************************!*\
-  !*** ./src/js/components/molecules/content-toggle/index.js ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-
-
-/***/ }),
-/* 188 */
->>>>>>> chore(build): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9453,15 +6684,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _youtubeVideo = __webpack_require__(188);
-=======
-var _contentToggle = __webpack_require__(/*! ./content-toggle */ "./src/js/components/molecules/content-toggle/content-toggle.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _youtubeVideo = __webpack_require__(189);
->>>>>>> chore(build): add build
 
 var _youtubeVideo2 = _interopRequireDefault(_youtubeVideo);
 
@@ -9470,20 +6693,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _youtubeVideo2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 188 */
-=======
-
-/***/ "./src/js/components/molecules/cta-block/cta-block.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/molecules/cta-block/cta-block.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 189 */
->>>>>>> chore(build): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9499,19 +6709,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _youtubeVideoVue = __webpack_require__(189);
-=======
-var _ctaBlockVue = __webpack_require__(/*! ./cta-block.vue.html */ "./src/js/components/molecules/cta-block/cta-block.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _youtube = __webpack_require__(16);
->>>>>>> chore(build): add build
 
 var _youtube2 = _interopRequireDefault(_youtube);
 
-var _youtubeVideoVue = __webpack_require__(190);
+var _youtubeVideoVue = __webpack_require__(189);
 
 var _youtubeVideoVue2 = _interopRequireDefault(_youtubeVideoVue);
 
@@ -9569,16 +6771,8 @@ YoutubeVideo = __decorate([_youtubeVideoVue2.default, (0, _vuePropertyDecorator.
 exports.default = YoutubeVideo;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 189 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 190 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"youtube-video"},[(_vm.loadVideo)?_c('iframe',{staticClass:"youtube-video__frame",attrs:{"src":_vm.videoUrl,"frameborder":"0","allowfullscreen":"allowfullscreen"}}):_vm._e()])}
 var staticRenderFns = []
@@ -9589,25 +6783,12 @@ module.exports = function (_exports) {
     : _exports
   options.render = render
   options.staticRenderFns = staticRenderFns
-<<<<<<< HEAD
-  if (false) {}
   return _exports
 }
-var api = null
-if (false) {}
 
 
 /***/ }),
-<<<<<<< HEAD
 /* 190 */
-=======
-
-/***/ "./src/js/components/molecules/cta-block/index.ts":
-/*!********************************************************!*\
-  !*** ./src/js/components/molecules/cta-block/index.ts ***!
-  \********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9617,7 +6798,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
 var _autoComplete = __webpack_require__(191);
 
 Object.defineProperty(exports, 'AutoComplete', {
@@ -9664,10 +6844,6 @@ Object.defineProperty(exports, 'ArticleImage', {
 });
 
 var _articleIntro = __webpack_require__(207);
-=======
-  return _exports
-}
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, 'ArticleIntro', {
   enumerable: true,
@@ -9676,7 +6852,6 @@ Object.defineProperty(exports, 'ArticleIntro', {
   }
 });
 
-<<<<<<< HEAD
 var _articleTable = __webpack_require__(210);
 
 Object.defineProperty(exports, 'ArticleTable', {
@@ -9685,11 +6860,6 @@ Object.defineProperty(exports, 'ArticleTable', {
     return _interopRequireDefault(_articleTable).default;
   }
 });
-=======
-/***/ }),
-/* 191 */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> chore(build): add build
 
 var _articleText = __webpack_require__(213);
 
@@ -9709,7 +6879,6 @@ Object.defineProperty(exports, 'ArticleVideo', {
   }
 });
 
-<<<<<<< HEAD
 var _blockIcon = __webpack_require__(219);
 
 Object.defineProperty(exports, 'BlockIcon', {
@@ -9720,103 +6889,41 @@ Object.defineProperty(exports, 'BlockIcon', {
 });
 
 var _brand = __webpack_require__(222);
-=======
-var _ctaBlock = __webpack_require__(/*! ./cta-block */ "./src/js/components/molecules/cta-block/cta-block.ts");
-=======
-var _autoComplete = __webpack_require__(192);
->>>>>>> chore(build): add build
 
-Object.defineProperty(exports, 'AutoComplete', {
+Object.defineProperty(exports, 'Brand', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_autoComplete).default;
+    return _interopRequireDefault(_brand).default;
   }
 });
 
-<<<<<<< HEAD
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleAuthor = __webpack_require__(195);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'ArticleAuthor', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleAuthor).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _brandCard = __webpack_require__(225);
-=======
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleCtas = __webpack_require__(199);
->>>>>>> chore(build): add build
 
-Object.defineProperty(exports, 'ArticleCtas', {
+Object.defineProperty(exports, 'BrandCard', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_articleCtas).default;
+    return _interopRequireDefault(_brandCard).default;
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _businessCard = __webpack_require__(228);
-=======
-module.exports = "<span class=\"currency\">\n    <span class=\"currency__type\">{{ currencyType }}</span>\n    {{ formattedAmount }}\n</span>\n";
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleDescriptionList = __webpack_require__(202);
->>>>>>> chore(build): add build
 
-Object.defineProperty(exports, 'ArticleDescriptionList', {
+Object.defineProperty(exports, 'BusinessCard', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_articleDescriptionList).default;
+    return _interopRequireDefault(_businessCard).default;
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _cardArticle = __webpack_require__(231);
-=======
-/***/ "./src/js/components/molecules/currency/currency.js":
-/*!**********************************************************!*\
-  !*** ./src/js/components/molecules/currency/currency.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _articleImage = __webpack_require__(205);
->>>>>>> chore(build): add build
 
-Object.defineProperty(exports, 'ArticleImage', {
+Object.defineProperty(exports, 'CardArticle', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_articleImage).default;
+    return _interopRequireDefault(_cardArticle).default;
   }
 });
 
-<<<<<<< HEAD
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleIntro = __webpack_require__(208);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'ArticleIntro', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleIntro).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _cardBase = __webpack_require__(234);
 
 Object.defineProperty(exports, 'CardBase', {
@@ -9827,385 +6934,105 @@ Object.defineProperty(exports, 'CardBase', {
 });
 
 var _cardDownload = __webpack_require__(235);
-=======
-var _arithmetic = __webpack_require__(/*! utils/arithmetic */ "./src/js/utils/arithmetic.js");
 
-var _arithmetic2 = _interopRequireDefault(_arithmetic);
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleTable = __webpack_require__(211);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'ArticleTable', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleTable).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _cardProduct = __webpack_require__(239);
-=======
-exports.default = {
-    name: 'currency',
-    template: __webpack_require__(/*! ./currency.html */ "./src/js/components/molecules/currency/currency.html"),
-    props: {
-        amount: {
-            type: Number,
-            required: true
-        },
-        currencyType: {
-            type: String
-        },
-        decimals: {
-            type: Number,
-            default: 2
-        }
-    },
-    computed: {
-        formattedAmount: function formattedAmount() {
-            return _arithmetic2.default.fixedNumber(this.amount, this.decimals);
-        }
-    }
-};
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleText = __webpack_require__(214);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'ArticleText', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleText).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _color = __webpack_require__(242);
-=======
-/***/ "./src/js/components/molecules/currency/index.js":
-/*!*******************************************************!*\
-  !*** ./src/js/components/molecules/currency/index.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleVideo = __webpack_require__(217);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'ArticleVideo', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleVideo).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentBlock = __webpack_require__(246);
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _blockIcon = __webpack_require__(220);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'BlockIcon', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_blockIcon).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentToggle = __webpack_require__(249);
-=======
-var _currency = __webpack_require__(/*! ./currency */ "./src/js/components/molecules/currency/currency.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _brand = __webpack_require__(223);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'Brand', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_brand).default;
-  }
-});
-
-var _brandCard = __webpack_require__(226);
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _ctaBlock = __webpack_require__(252);
-=======
-exports.default = _currency2.default;
->>>>>>> feat(table-compare): allow 5 columns
-=======
-Object.defineProperty(exports, 'BrandCard', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_brandCard).default;
-  }
-});
->>>>>>> chore(build): add build
-
-var _businessCard = __webpack_require__(229);
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _currency = __webpack_require__(255);
-=======
-/***/ "./src/js/components/molecules/faux-vertical-scroll/faux-vertical-scroll.ts":
-/*!**********************************************************************************!*\
-  !*** ./src/js/components/molecules/faux-vertical-scroll/faux-vertical-scroll.ts ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
-Object.defineProperty(exports, 'BusinessCard', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_businessCard).default;
-  }
-});
->>>>>>> chore(build): add build
-
-var _LEGACY__card = __webpack_require__(232);
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _fauxVerticalScroll = __webpack_require__(258);
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-Object.defineProperty(exports, 'Card', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_LEGACY__card).default;
-  }
-});
->>>>>>> chore(build): add build
-
-var _cardArticle = __webpack_require__(235);
-
-Object.defineProperty(exports, 'CardArticle', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_cardArticle).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _filterCategory = __webpack_require__(264);
-=======
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _cardBase = __webpack_require__(238);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'CardBase', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_cardBase).default;
-  }
-});
-
-var _cardDownload = __webpack_require__(239);
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _flyout = __webpack_require__(267);
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'CardDownload', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_cardDownload).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _cardProduct = __webpack_require__(243);
+var _cardProduct = __webpack_require__(239);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _flyoutSection = __webpack_require__(270);
-=======
-var _Draggable = __webpack_require__(/*! gsap/Draggable */ "gsap/Draggable");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'CardProduct', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_cardProduct).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _color = __webpack_require__(246);
+var _color = __webpack_require__(242);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _footerBlock = __webpack_require__(273);
-=======
-__webpack_require__(/*! utils/throw-props-plugin */ "./src/js/utils/throw-props-plugin.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'Color', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_color).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _contentBlock = __webpack_require__(250);
+var _contentBlock = __webpack_require__(246);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _footerNavigationCategory = __webpack_require__(276);
-=======
-var _defaults2 = _interopRequireDefault(_defaults);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'ContentBlock', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_contentBlock).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _contentToggle = __webpack_require__(253);
+var _contentToggle = __webpack_require__(249);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _headerBlock = __webpack_require__(279);
-=======
-var _viewport2 = _interopRequireDefault(_viewport);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'ContentToggle', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_contentToggle).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _ctaBlock = __webpack_require__(256);
+var _ctaBlock = __webpack_require__(252);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroHeading = __webpack_require__(282);
-=======
-var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'CtaBlock', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_ctaBlock).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _currency = __webpack_require__(259);
+var _currency = __webpack_require__(255);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _iconButton = __webpack_require__(285);
-=======
-var _fauxVerticalScrollVue2 = _interopRequireDefault(_fauxVerticalScrollVue);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'Currency', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_currency).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _fauxVerticalScroll = __webpack_require__(262);
+var _fauxVerticalScroll = __webpack_require__(258);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _listSection = __webpack_require__(288);
-=======
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'FauxVerticalScroll', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_fauxVerticalScroll).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _filterCategory = __webpack_require__(268);
+var _filterCategory = __webpack_require__(264);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _listUnordered = __webpack_require__(297);
-=======
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'FilterCategory', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_filterCategory).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _flyout = __webpack_require__(271);
+var _flyout = __webpack_require__(267);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _listUnorderedLimit = __webpack_require__(300);
-=======
-var FauxVerticalScroll = function (_Vue) {
-    _inherits(FauxVerticalScroll, _Vue);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'Flyout', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_flyout).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _flyoutSection = __webpack_require__(274);
+var _flyoutSection = __webpack_require__(270);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _mainNavigation = __webpack_require__(303);
-=======
-        var _this = _possibleConstructorReturn(this, (FauxVerticalScroll.__proto__ || Object.getPrototypeOf(FauxVerticalScroll)).apply(this, arguments));
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'FlyoutSection', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_flyoutSection).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _footerBlock = __webpack_require__(277);
+var _footerBlock = __webpack_require__(273);
 
 Object.defineProperty(exports, 'FooterBlock', {
   enumerable: true,
@@ -10214,15 +7041,7 @@ Object.defineProperty(exports, 'FooterBlock', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _mainNavigationItem = __webpack_require__(306);
-=======
-            var content = this.$refs.content;
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _footerNavigationCategory = __webpack_require__(280);
->>>>>>> chore(build): add build
+var _footerNavigationCategory = __webpack_require__(276);
 
 Object.defineProperty(exports, 'FooterNavigationCategory', {
   enumerable: true,
@@ -10231,30 +7050,7 @@ Object.defineProperty(exports, 'FooterNavigationCategory', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _modal = __webpack_require__(309);
-=======
-            this.viewportUtil.addResizeHandler(this.handleResize);
-            if (_browserCapabilities2.default.isBrowser) {
-                this.handleResize();
-            }
-            this.viewportUtil.triggerResize();
-            setTimeout(function () {
-                _this3.handleResize();
-            }, 100);
-        }
-    }, {
-        key: "beforeDestroy",
-        value: function beforeDestroy() {
-            this.draggableElement[0].kill();
-            this.viewportUtil.removeResizeHandler(this.handleResize);
-        }
-    }]);
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _headerBlock = __webpack_require__(283);
->>>>>>> chore(build): add build
+var _headerBlock = __webpack_require__(279);
 
 Object.defineProperty(exports, 'HeaderBlock', {
   enumerable: true,
@@ -10263,15 +7059,7 @@ Object.defineProperty(exports, 'HeaderBlock', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _modalButton = __webpack_require__(312);
-=======
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _heroHeading = __webpack_require__(286);
->>>>>>> chore(build): add build
+var _heroHeading = __webpack_require__(282);
 
 Object.defineProperty(exports, 'HeroHeading', {
   enumerable: true,
@@ -10280,35 +7068,7 @@ Object.defineProperty(exports, 'HeroHeading', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _modalWizard = __webpack_require__(315);
-=======
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { ref: "container", staticClass: "faux-vertical-scroll" }, [
-    _c(
-      "div",
-      { ref: "content", staticClass: "faux-vertical-scroll__content" },
-      [_vm._t("default")],
-      2
-    ),
-    _vm._v(" "),
-    _c("div", {
-      ref: "bar",
-      staticClass: "faux-vertical-scroll__bar",
-      style: _vm.barStyle()
-    })
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _iconButton = __webpack_require__(289);
->>>>>>> chore(build): add build
+var _iconButton = __webpack_require__(285);
 
 Object.defineProperty(exports, 'IconButton', {
   enumerable: true,
@@ -10317,14 +7077,7 @@ Object.defineProperty(exports, 'IconButton', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _pager = __webpack_require__(318);
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _listSection = __webpack_require__(292);
->>>>>>> chore(build): add build
+var _listSection = __webpack_require__(288);
 
 Object.defineProperty(exports, 'ListSection', {
   enumerable: true,
@@ -10333,20 +7086,7 @@ Object.defineProperty(exports, 'ListSection', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _product = __webpack_require__(321);
-=======
-/***/ "./src/js/components/molecules/faux-vertical-scroll/index.ts":
-/*!*******************************************************************!*\
-  !*** ./src/js/components/molecules/faux-vertical-scroll/index.ts ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _listUnordered = __webpack_require__(301);
->>>>>>> chore(build): add build
+var _listUnordered = __webpack_require__(297);
 
 Object.defineProperty(exports, 'ListUnordered', {
   enumerable: true,
@@ -10355,14 +7095,7 @@ Object.defineProperty(exports, 'ListUnordered', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchBar = __webpack_require__(324);
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _listUnorderedLimit = __webpack_require__(304);
->>>>>>> chore(build): add build
+var _listUnorderedLimit = __webpack_require__(300);
 
 Object.defineProperty(exports, 'ListUnorderedLimit', {
   enumerable: true,
@@ -10371,22 +7104,7 @@ Object.defineProperty(exports, 'ListUnorderedLimit', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchBarPage = __webpack_require__(327);
-=======
-var _fauxVerticalScroll = __webpack_require__(/*! ./faux-vertical-scroll */ "./src/js/components/molecules/faux-vertical-scroll/faux-vertical-scroll.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _fauxVerticalScroll2 = _interopRequireDefault(_fauxVerticalScroll);
-
-<<<<<<< HEAD
-var _socialNav = __webpack_require__(330);
-=======
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _mainNavigation = __webpack_require__(307);
+var _mainNavigation = __webpack_require__(303);
 
 Object.defineProperty(exports, 'MainNavigation', {
   enumerable: true,
@@ -10394,43 +7112,26 @@ Object.defineProperty(exports, 'MainNavigation', {
     return _interopRequireDefault(_mainNavigation).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _mainNavigationItem = __webpack_require__(310);
+var _mainNavigationItem = __webpack_require__(306);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchResult = __webpack_require__(333);
-=======
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'MainNavigationItem', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_mainNavigationItem).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _modal = __webpack_require__(313);
+var _modal = __webpack_require__(309);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _socialSharing = __webpack_require__(337);
-=======
-"use strict";
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'Modal', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_modal).default;
   }
 });
->>>>>>> chore(build): add build
 
-var _modalButton = __webpack_require__(316);
+var _modalButton = __webpack_require__(312);
 
 Object.defineProperty(exports, 'ModalButton', {
   enumerable: true,
@@ -10439,8 +7140,78 @@ Object.defineProperty(exports, 'ModalButton', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+var _modalWizard = __webpack_require__(315);
+
+Object.defineProperty(exports, 'ModalWizard', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_modalWizard).default;
+  }
+});
+
+var _pager = __webpack_require__(318);
+
+Object.defineProperty(exports, 'Pager', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_pager).default;
+  }
+});
+
+var _product = __webpack_require__(321);
+
+Object.defineProperty(exports, 'Product', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_product).default;
+  }
+});
+
+var _searchBar = __webpack_require__(324);
+
+Object.defineProperty(exports, 'SearchBar', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_searchBar).default;
+  }
+});
+
+var _searchBarPage = __webpack_require__(327);
+
+Object.defineProperty(exports, 'SearchBarPage', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_searchBarPage).default;
+  }
+});
+
+var _socialNav = __webpack_require__(330);
+
+Object.defineProperty(exports, 'SocialNav', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_socialNav).default;
+  }
+});
+
+var _searchResult = __webpack_require__(333);
+
+Object.defineProperty(exports, 'SearchResult', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_searchResult).default;
+  }
+});
+
+var _socialSharing = __webpack_require__(337);
+
+Object.defineProperty(exports, 'SocialSharing', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_socialSharing).default;
+  }
+});
+
 var _subNavigationItem = __webpack_require__(341);
 
 Object.defineProperty(exports, 'SubNavigationItem', {
@@ -10451,220 +7222,6 @@ Object.defineProperty(exports, 'SubNavigationItem', {
 });
 
 var _sysNav = __webpack_require__(344);
-=======
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-=======
-var _modalWizard = __webpack_require__(319);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'ModalWizard', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_modalWizard).default;
-  }
-});
-
-<<<<<<< HEAD
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _pager = __webpack_require__(322);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'Pager', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_pager).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tab = __webpack_require__(347);
-=======
-var _filterCategoryVue = __webpack_require__(/*! ./filter-category.vue.html */ "./src/js/components/molecules/filter-category/filter-category.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _product = __webpack_require__(325);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'Product', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_product).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabs = __webpack_require__(350);
-=======
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _searchBar = __webpack_require__(328);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'SearchBar', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_searchBar).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tooltipToggle = __webpack_require__(353);
-=======
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-=======
-var _searchBarPage = __webpack_require__(331);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'SearchBarPage', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_searchBarPage).default;
-  }
-});
-
-var _socialNav = __webpack_require__(334);
-
-Object.defineProperty(exports, 'SocialNav', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_socialNav).default;
-  }
-});
-
-<<<<<<< HEAD
-    function FilterCategory() {
-        _classCallCheck(this, FilterCategory);
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _searchResult = __webpack_require__(337);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'SearchResult', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_searchResult).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabTable = __webpack_require__(356);
-=======
-        _this.eventLabelFilterChange = 'label-filter-change';
-        _this.filters = _this.labels.map(function (label) {
-            return {
-                checked: false,
-                disabled: _this.isFilterDisabled(label),
-                value: label
-            };
-        });
-        return _this;
-    }
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _socialSharing = __webpack_require__(341);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'SocialSharing', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_socialSharing).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabTableRow = __webpack_require__(359);
-=======
-            this.filters = this.filters.map(function (filter) {
-                return _extends({}, filter, {
-                    disabled: _this2.isFilterDisabled(filter.value)
-                });
-            });
-        }
-    }, {
-        key: "emitEvent",
-        value: function emitEvent(eventName) {
-            this.$emit(eventName, {
-                category: this.category,
-                filters: this.filters
-            });
-        }
-    }, {
-        key: "handleLabelFilterChange",
-        value: function handleLabelFilterChange(filter) {
-            this.updateFilter(filter);
-            this.emitEvent(this.eventChange);
-        }
-    }, {
-        key: "isFilterDisabled",
-        value: function isFilterDisabled(label) {
-            return !this.activeFilters.includes(label);
-        }
-    }, {
-        key: "updateFilter",
-        value: function updateFilter(labelFilter) {
-            var foundIndex = this.filters.findIndex(function (filter) {
-                return filter.value === labelFilter.value;
-            });
-            this.filters.splice(foundIndex, 1, labelFilter);
-        }
-    }, {
-        key: "resetFilters",
-        value: function resetFilters() {
-            if (!this.filters.find(function (filter) {
-                return filter.checked;
-            })) {
-                return;
-            }
-            this.filters = this.filters.map(function (filter) {
-                return _extends({}, filter, {
-                    checked: false
-                });
-            });
-            this.emitEvent(this.eventChange);
-        }
-    }, {
-        key: "category",
-        get: function get() {
-            return this.title.toLowerCase().replace(/\s+/g, '-');
-        }
-    }, {
-        key: "checkResetFiltersState",
-        get: function get() {
-            var activeFilter = this.filters.find(function (filter) {
-                return filter.checked;
-            });
-            return activeFilter ? '' : 'filter-category__reset--active';
-        }
-    }]);
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _subnavigationItem = __webpack_require__(345);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'SubNavigationItem', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_subnavigationItem).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _wizardStepDownloadList = __webpack_require__(362);
-=======
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _sysNav = __webpack_require__(348);
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, 'SysNav', {
   enumerable: true,
@@ -10673,64 +7230,7 @@ Object.defineProperty(exports, 'SysNav', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _wizardStepConfirmation = __webpack_require__(365);
-=======
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "filter-category" }, [
-    _c("h4", { staticClass: "filter-category__title" }, [
-      _vm._v(_vm._s(_vm.title))
-    ]),
-    _vm._v(" "),
-    _c("form", [
-      _c("input", {
-        staticClass: "filter-category__reset",
-        class: _vm.checkResetFiltersState,
-        attrs: { type: "reset" },
-        domProps: { value: _vm.showAllLabel },
-        on: { click: _vm.resetFilters }
-      }),
-      _vm._v(" "),
-      _c(
-        "ul",
-        { staticClass: "filter-category__list" },
-        _vm._l(_vm.labels, function(label, key) {
-          return _c(
-            "li",
-            { key: key, staticClass: "filter-category__list-item" },
-            [
-              _c("label-filter", {
-                attrs: {
-                  disabled: _vm.isFilterDisabled(label),
-                  eventChange: _vm.eventLabelFilterChange,
-                  label: label,
-                  name: _vm.showAllLabel,
-                  value: label
-                },
-                on: _vm._d({}, [
-                  _vm.eventLabelFilterChange,
-                  _vm.handleLabelFilterChange
-                ])
-              })
-            ],
-            1
-          )
-        }),
-        0
-      )
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tab = __webpack_require__(351);
->>>>>>> chore(build): add build
+var _tab = __webpack_require__(347);
 
 Object.defineProperty(exports, 'Tab', {
   enumerable: true,
@@ -10739,22 +7239,8 @@ Object.defineProperty(exports, 'Tab', {
   }
 });
 
-var _tabs = __webpack_require__(354);
+var _tabs = __webpack_require__(350);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 191 */
-=======
-
-/***/ "./src/js/components/molecules/filter-category/index.ts":
-/*!**************************************************************!*\
-  !*** ./src/js/components/molecules/filter-category/index.ts ***!
-  \**************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
 Object.defineProperty(exports, 'Tabs', {
   enumerable: true,
   get: function get() {
@@ -10762,34 +7248,7 @@ Object.defineProperty(exports, 'Tabs', {
   }
 });
 
-var _tag = __webpack_require__(357);
->>>>>>> chore(build): add build
-
-Object.defineProperty(exports, 'Tag', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_tag).default;
-  }
-});
-
-var _tagList = __webpack_require__(360);
-
-Object.defineProperty(exports, 'TagList', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_tagList).default;
-  }
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _autoComplete = __webpack_require__(192);
-=======
-var _filterCategory = __webpack_require__(/*! ./filter-category */ "./src/js/components/molecules/filter-category/filter-category.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tooltipToggle = __webpack_require__(363);
->>>>>>> chore(build): add build
+var _tooltipToggle = __webpack_require__(353);
 
 Object.defineProperty(exports, 'TooltipToggle', {
   enumerable: true,
@@ -10798,22 +7257,7 @@ Object.defineProperty(exports, 'TooltipToggle', {
   }
 });
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 192 */
-=======
-
-/***/ "./src/js/components/molecules/flyout-section/flyout-section.ts":
-/*!**********************************************************************!*\
-  !*** ./src/js/components/molecules/flyout-section/flyout-section.ts ***!
-  \**********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _tabTable = __webpack_require__(366);
->>>>>>> chore(build): add build
+var _tabTable = __webpack_require__(356);
 
 Object.defineProperty(exports, 'TabTable', {
   enumerable: true,
@@ -10822,7 +7266,7 @@ Object.defineProperty(exports, 'TabTable', {
   }
 });
 
-var _tabTableRow = __webpack_require__(369);
+var _tabTableRow = __webpack_require__(359);
 
 Object.defineProperty(exports, 'TabTableRow', {
   enumerable: true,
@@ -10831,7 +7275,7 @@ Object.defineProperty(exports, 'TabTableRow', {
   }
 });
 
-var _wizardStepDownloadList = __webpack_require__(372);
+var _wizardStepDownloadList = __webpack_require__(362);
 
 Object.defineProperty(exports, 'WizardStepDownloadList', {
   enumerable: true,
@@ -10840,393 +7284,8 @@ Object.defineProperty(exports, 'WizardStepDownloadList', {
   }
 });
 
-var _wizardStepConfirmation = __webpack_require__(375);
+var _wizardStepConfirmation = __webpack_require__(365);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _viewport2 = _interopRequireDefault(_viewport);
-
-var _autoCompleteVue = __webpack_require__(193);
-
-var _autoCompleteVue2 = _interopRequireDefault(_autoCompleteVue);
-=======
-var _flyoutSectionVue2 = _interopRequireDefault(_flyoutSectionVue);
->>>>>>> feat(table-compare): allow 5 columns
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var Flyout = function (_Vue) {
-    _inherits(Flyout, _Vue);
-
-    function Flyout() {
-        _classCallCheck(this, Flyout);
-
-        var _this = _possibleConstructorReturn(this, (Flyout.__proto__ || Object.getPrototypeOf(Flyout)).apply(this, arguments));
-
-        _this.isExpanded = false;
-        _this.focusIndex = null;
-        _this.columnClassDouble = 'flyout__section--2-columns';
-        _this.columnClassTriple = 'flyout__section--3-columns';
-        return _this;
-    }
-
-    _createClass(Flyout, [{
-        key: "toggleExpanded",
-        value: function toggleExpanded() {
-            this.isExpanded = !this.isExpanded;
-        }
-    }, {
-        key: "selectFirstLink",
-        value: function selectFirstLink() {
-            this.focusIndex = 0;
-        }
-    }, {
-        key: "selectLastLink",
-        value: function selectLastLink() {
-            this.focusIndex = this.focusIndex === null ? this.focusableItems.length - 1 : this.focusIndex - 1;
-        }
-    }, {
-        key: "selectNextLink",
-        value: function selectNextLink() {
-            if (this.focusIndex === null) return false;
-            if (this.focusIndex >= this.focusableItems.length - 1) {
-                return false;
-            }
-            this.focusIndex = this.focusIndex + 1;
-            return true;
-        }
-    }, {
-        key: "selectPrevLink",
-        value: function selectPrevLink() {
-            if (this.focusIndex === null) return false;
-            if (this.focusIndex <= 0) {
-                return false;
-            }
-            this.focusIndex = this.focusIndex - 1;
-            return true;
-        }
-    }, {
-        key: "setFocusIndex",
-        value: function setFocusIndex(index) {
-            if (index <= 0) {
-                this.focusIndex = 0;
-            } else if (index >= this.focusableItems.length) {
-                this.focusIndex = this.focusableItems.length - 1;
-            } else {
-                this.focusIndex = index;
-            }
-        }
-    }, {
-        key: "reset",
-        value: function reset() {
-            this.focusIndex = null;
-        }
-    }, {
-        key: "onFocusIndex",
-        value: function onFocusIndex(newVal) {
-            var focusComponent = this.focusableItems[newVal];
-            if (typeof focusComponent === 'undefined') {
-                return;
-            }
-
-            var focusElement = focusComponent.$el || focusComponent;
-            if (focusElement.focus) {
-                focusElement.focus();
-            }
-        }
-    }, {
-        key: "hasItems",
-        get: function get() {
-            return this.items;
-        }
-    }, {
-        key: "focusableItems",
-        get: function get() {
-            var links = Array.isArray(this.$refs.firstFocusableLinks) ? this.$refs.firstFocusableLinks : [this.$refs.firstFocusableLinks];
-            var otherFocusable = this.$refs.focusable;
-            if (otherFocusable) {
-                if (Array.isArray(otherFocusable)) {
-                    links.push.apply(links, _toConsumableArray(otherFocusable));
-                } else {
-                    links.push(otherFocusable);
-                }
-            }
-            if (this.$refs.bottomLink) {
-                links.push(this.$refs.bottomLink);
-            }
-            return links;
-        }
-    }, {
-        key: "moreThanMaxItems",
-        get: function get() {
-            if (!this.items || !this.maxItemsCol) return false;
-            return this.items.length > this.maxItemsCol;
-        }
-    }, {
-        key: "lessThanDoubleMaxItems",
-        get: function get() {
-            if (!this.items || !this.maxItemsCol) return false;
-            return this.items.length <= this.maxItemsCol * 2;
-        }
-    }, {
-        key: "moreThanDoubleMaxItems",
-        get: function get() {
-            if (!this.items || !this.maxItemsCol) return false;
-            return this.items.length > this.maxItemsCol * 2;
-        }
-    }, {
-        key: "sectionClass",
-        get: function get() {
-            if (this.hasItems && this.moreThanMaxItems && this.lessThanDoubleMaxItems) {
-                return this.columnClassDouble;
-            }
-            if (this.hasItems && this.moreThanDoubleMaxItems) {
-                return this.columnClassTriple;
-            }
-            return '';
-        }
-    }, {
-        key: "flyoutToggleIsVisible",
-        get: function get() {
-            if (!this.items || !this.maxVisible) return false;
-            return this.isCompact && this.items.length > this.maxVisible;
-        }
-    }]);
-
-    return Flyout;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], Flyout.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Array)], Flyout.prototype, "items", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], Flyout.prototype, "bottomItem", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], Flyout.prototype, "isCompact", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, required: false, default: 3 }), __metadata("design:type", Number)], Flyout.prototype, "maxVisible", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, required: false, default: 6 }), __metadata("design:type", Number)], Flyout.prototype, "maxItemsCol", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: function _default() {
-        return "flyout_title_" + Math.floor(Math.random() * 10000);
-    } }), __metadata("design:type", String)], Flyout.prototype, "itemId", void 0);
-__decorate([(0, _vuePropertyDecorator.Watch)('focusIndex'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", void 0)], Flyout.prototype, "onFocusIndex", null);
-Flyout = __decorate([_flyoutSectionVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'flyout-section'
-})], Flyout);
-exports.default = Flyout;
-
-/***/ }),
-<<<<<<< HEAD
-/* 193 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/flyout-section/flyout-section.vue.html":
-/*!****************************************************************************!*\
-  !*** ./src/js/components/molecules/flyout-section/flyout-section.vue.html ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "li",
-    { staticClass: "flyout__section", class: _vm.sectionClass },
-    [
-      _vm.label
-        ? _c(
-            "strong",
-            { staticClass: "flyout__title", attrs: { id: _vm.itemId } },
-            [_vm._v(_vm._s(_vm.label))]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _c(
-        "ul",
-        {
-          staticClass: "flyout__list",
-          attrs: {
-            "aria-labelledby": _vm.itemId,
-            "aria-haspopup": _vm.items.length > _vm.maxVisible,
-            "aria-expanded": !_vm.isCompact || _vm.isExpanded
-          }
-        },
-        [
-          _vm._l(_vm.items, function(item, index) {
-            return index < _vm.maxVisible
-              ? _c(
-                  "li",
-                  { staticClass: "flyout__list-item" },
-                  [
-                    _c("content-link", {
-                      ref: "firstFocusableLinks",
-                      refInFor: true,
-                      staticClass: "flyout__link link",
-                      attrs: { url: item.url, label: item.label },
-                      nativeOn: {
-                        click: function($event) {
-                          return _vm.$emit("close")
-                        }
-                      }
-                    })
-                  ],
-                  1
-                )
-              : _vm._e()
-          }),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.flyoutToggleIsVisible && !_vm.isExpanded,
-                  expression: "flyoutToggleIsVisible && ! isExpanded"
-                }
-              ],
-              staticClass: "flyout__list-item"
-            },
-            [
-              _c("content-toggle", {
-                ref:
-                  _vm.flyoutToggleIsVisible && !_vm.isExpanded
-                    ? "focusable"
-                    : "",
-                staticClass: "flyout__toggle",
-                attrs: { "toggle-state": false, "aria-hidden": "true" },
-                on: { toggle: _vm.toggleExpanded }
-              })
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _vm._l(_vm.items, function(item, index) {
-            return index >= _vm.maxVisible
-              ? _c(
-                  "li",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: !_vm.isCompact || _vm.isExpanded,
-                        expression: "!isCompact || isExpanded"
-                      }
-                    ],
-                    staticClass: "flyout__list-item"
-                  },
-                  [
-                    _c("content-link", {
-                      ref: "focusable",
-                      refInFor: true,
-                      staticClass: "flyout__link link",
-                      attrs: { url: item.url, label: item.label },
-                      nativeOn: {
-                        click: function($event) {
-                          return _vm.$emit("close")
-                        }
-                      }
-                    })
-                  ],
-                  1
-                )
-              : _vm._e()
-          }),
-          _vm._v(" "),
-          _c(
-            "li",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.flyoutToggleIsVisible && _vm.isExpanded,
-                  expression: "flyoutToggleIsVisible && isExpanded"
-                }
-              ],
-              staticClass: "flyout__list-item"
-            },
-            [
-              _c("content-toggle", {
-                ref: "flyoutToggleIsVisible && isExpanded ? 'focusable' : ''",
-                staticClass: "flyout__toggle",
-                attrs: { "toggle-state": true, "aria-hidden": "true" },
-                on: { toggle: _vm.toggleExpanded }
-              })
-            ],
-            1
-          )
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _vm.bottomItem
-        ? [
-            _c("content-link", {
-              ref: "bottomLink",
-              staticClass: "link flyout__link--cta-mini",
-              attrs: { url: _vm.bottomItem.url, label: _vm.bottomItem.label },
-              nativeOn: {
-                click: function($event) {
-                  return _vm.$emit("close")
-                }
-              }
-            })
-          ]
-        : _vm._e()
-    ],
-    2
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  if (false) {}
-  return _exports
-}
-var api = null
-if (false) {}
-
-
-/***/ }),
-<<<<<<< HEAD
-/* 194 */
-=======
-
-/***/ "./src/js/components/molecules/flyout-section/index.js":
-/*!*************************************************************!*\
-  !*** ./src/js/components/molecules/flyout-section/index.js ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'WizardStepConfirmation', {
   enumerable: true,
   get: function get() {
@@ -11237,8 +7296,7 @@ Object.defineProperty(exports, 'WizardStepConfirmation', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 192 */
->>>>>>> chore(build): add build
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11248,15 +7306,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleAuthor = __webpack_require__(195);
-=======
-var _flyoutSection = __webpack_require__(/*! ./flyout-section */ "./src/js/components/molecules/flyout-section/flyout-section.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _autoComplete = __webpack_require__(193);
->>>>>>> chore(build): add build
+var _autoComplete = __webpack_require__(192);
 
 var _autoComplete2 = _interopRequireDefault(_autoComplete);
 
@@ -11265,20 +7315,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _autoComplete2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 195 */
-=======
-
-/***/ "./src/js/components/molecules/flyout/flyout.ts":
-/*!******************************************************!*\
-  !*** ./src/js/components/molecules/flyout/flyout.ts ***!
-  \******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 193 */
->>>>>>> chore(build): add build
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11298,7 +7335,7 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _autoCompleteVue = __webpack_require__(194);
+var _autoCompleteVue = __webpack_require__(193);
 
 var _autoCompleteVue2 = _interopRequireDefault(_autoCompleteVue);
 
@@ -11339,15 +7376,6 @@ var AutoComplete = function (_Vue) {
         return _this;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleAuthorVue = __webpack_require__(196);
-=======
-    _createClass(Flyout, [{
-        key: "open",
-        value: function open() {
-            this.$emit('open');
-=======
     _createClass(AutoComplete, [{
         key: "init",
         value: function init() {
@@ -11358,7 +7386,6 @@ var _articleAuthorVue = __webpack_require__(196);
                 this.input = this.value.title;
             }
             _vuePropertyDecorator.Vue.nextTick(this.calculateDirection);
->>>>>>> chore(build): add build
         }
     }, {
         key: "calculateDirection",
@@ -11385,46 +7412,6 @@ var _articleAuthorVue = __webpack_require__(196);
             return data.replace(stringToReplace, "<span class=\"auto-complete__value\">" + matches[0] + "</span>");
         }
     }, {
-<<<<<<< HEAD
-        key: "reset",
-        value: function reset() {
-            this.sectionIndex = 0;
->>>>>>> feat(table-compare): allow 5 columns
-
-            this.flyoutSections.forEach(function (s) {
-                return s && s.reset && s.reset();
-            });
-        }
-    }, {
-        key: "selectFirstLink",
-        value: function () {
-            var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
-                return regeneratorRuntime.wrap(function _callee$(_context) {
-                    while (1) {
-                        switch (_context.prev = _context.next) {
-                            case 0:
-                                this.reset();
-                                _context.next = 3;
-                                return this.$nextTick();
-
-<<<<<<< HEAD
-var _format = __webpack_require__(197);
-=======
-                            case 3:
-                                this.flyoutSections[this.sectionIndex].selectFirstLink();
->>>>>>> feat(table-compare): allow 5 columns
-
-                            case 4:
-                            case "end":
-                                return _context.stop();
-                        }
-                    }
-                }, _callee, this);
-            }));
-
-            function selectFirstLink() {
-                return _ref.apply(this, arguments);
-=======
         key: "resetInput",
         value: function resetInput() {
             this.selectedIndex = 0;
@@ -11443,7 +7430,6 @@ var _format = __webpack_require__(197);
         value: function focus() {
             if (this.hasItems) {
                 this.$refs.autoComplete.focus();
->>>>>>> chore(build): add build
             }
         }
     }, {
@@ -11593,48 +7579,6 @@ var _format = __webpack_require__(197);
         get: function get() {
             return this.hasInput && this.input.length === this.minChar - 1;
         }
-<<<<<<< HEAD
-    }]);
-
-    return Flyout;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], Flyout.prototype, "items", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], Flyout.prototype, "isCompact", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], Flyout.prototype, "disableKeyboardEvents", void 0);
-Flyout = __decorate([_flyoutVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'flyout'
-})], Flyout);
-exports.default = Flyout;
-
-/***/ }),
-<<<<<<< HEAD
-/* 196 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/flyout/flyout.vue.html":
-/*!************************************************************!*\
-  !*** ./src/js/components/molecules/flyout/flyout.vue.html ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm.items && _vm.items.length > 0
-    ? _c(
-        "ul",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.isCompact || !_vm.viewportUtil.isResizing,
-              expression: "isCompact || !viewportUtil.isResizing"
-=======
     }, {
         key: "hasItems",
         get: function get() {
@@ -11650,326 +7594,10 @@ var render = function() {
         get: function get() {
             if (!(this.storedItems && this.storedItems.length) && !(this.suggestedItems && this.suggestedItems.length)) {
                 return false;
->>>>>>> chore(build): add build
             }
             if (this.forceOpen) {
                 return true;
             }
-<<<<<<< HEAD
-          }
-        },
-        _vm._l(_vm.items, function(item, key) {
-          return item.items && item.items.length
-            ? _c(
-                "flyout-section",
-                _vm._b(
-                  {
-                    key: key,
-                    ref: "items",
-                    refInFor: true,
-                    attrs: {
-                      "is-compact": _vm.isCompact,
-                      itemId: "flyout_title_" + _vm.uniqId + "_" + key
-                    },
-                    on: {
-                      close: function($event) {
-                        return _vm.$emit("close")
-                      }
-                    }
-                  },
-                  "flyout-section",
-                  item,
-                  false
-                )
-              )
-            : _vm._e()
-        }),
-        1
-      )
-    : _vm._e()
-}
-var staticRenderFns = []
-render._withStripped = true
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  if (false) {}
-  return _exports
-}
-var api = null
-if (false) {}
-
-
-/***/ }),
-<<<<<<< HEAD
-/* 197 */
-=======
-
-/***/ "./src/js/components/molecules/flyout/index.js":
-/*!*****************************************************!*\
-  !*** ./src/js/components/molecules/flyout/index.js ***!
-  \*****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _flyout = __webpack_require__(/*! ./flyout */ "./src/js/components/molecules/flyout/flyout.ts");
-
-var _flyout2 = _interopRequireDefault(_flyout);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _flyout2.default;
-
-/***/ }),
-<<<<<<< HEAD
-/* 198 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _articleCtas = __webpack_require__(199);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _articleCtas.ArticleCtas;
-  }
-});
-
-/***/ }),
-/* 199 */
-=======
-
-/***/ "./src/js/components/molecules/footer-block/footer-block.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/molecules/footer-block/footer-block.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-<<<<<<< HEAD
-var _articleCtasVue = __webpack_require__(200);
-=======
-var _footerBlockVue = __webpack_require__(/*! ./footer-block.vue.html */ "./src/js/components/molecules/footer-block/footer-block.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _footerBlockVue2 = _interopRequireDefault(_footerBlockVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var FooterBlock = function (_Vue) {
-    _inherits(FooterBlock, _Vue);
-
-    function FooterBlock() {
-        _classCallCheck(this, FooterBlock);
-
-        return _possibleConstructorReturn(this, (FooterBlock.__proto__ || Object.getPrototypeOf(FooterBlock)).apply(this, arguments));
-    }
-
-    return FooterBlock;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], FooterBlock.prototype, "ctas", void 0);
-FooterBlock = __decorate([_footerBlockVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'FooterBlock'
-})], FooterBlock);
-exports.default = FooterBlock;
-
-/***/ }),
-<<<<<<< HEAD
-/* 200 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/footer-block/footer-block.vue.html":
-/*!************************************************************************!*\
-  !*** ./src/js/components/molecules/footer-block/footer-block.vue.html ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "footer",
-    { staticClass: "footer-block" },
-    [
-      _vm.ctas
-        ? _c("cta-block", {
-            attrs: {
-              ctas: _vm.ctas.ctas,
-              styleContentButton: "button",
-              mod: "footer",
-              block: "overview"
-            }
-          })
-        : _vm._e()
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  if (false) {}
-  return _exports
-}
-var api = null
-if (false) {}
-
-
-/***/ }),
-<<<<<<< HEAD
-/* 201 */
-=======
-
-/***/ "./src/js/components/molecules/footer-block/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/molecules/footer-block/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-var _articleDescriptionList = __webpack_require__(202);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _articleDescriptionList.ArticleDescriptionList;
-  }
-});
-
-/***/ }),
-/* 202 */
-=======
-var _footerBlock = __webpack_require__(/*! ./footer-block */ "./src/js/components/molecules/footer-block/footer-block.ts");
-
-var _footerBlock2 = _interopRequireDefault(_footerBlock);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _footerBlock2.default;
-
-/***/ }),
-
-/***/ "./src/js/components/molecules/footer-navigation-category/footer-navigation-category.ts":
-/*!**********************************************************************************************!*\
-  !*** ./src/js/components/molecules/footer-navigation-category/footer-navigation-category.ts ***!
-  \**********************************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.FooterNavigationCategory = undefined;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-<<<<<<< HEAD
-var _articleDescriptionListVue = __webpack_require__(203);
-=======
-var _footerNavigationCategoryVue = __webpack_require__(/*! ./footer-navigation-category.vue.html */ "./src/js/components/molecules/footer-navigation-category/footer-navigation-category.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _footerNavigationCategoryVue2 = _interopRequireDefault(_footerNavigationCategoryVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var FooterNavigationCategory = function (_Vue) {
-    _inherits(FooterNavigationCategory, _Vue);
-
-    function FooterNavigationCategory() {
-        _classCallCheck(this, FooterNavigationCategory);
-=======
             if (this.hasInput && !this.isValid) {
                 return true;
             }
@@ -11979,7 +7607,6 @@ var FooterNavigationCategory = function (_Vue) {
         key: "suggestedItems",
         get: function get() {
             var _this3 = this;
->>>>>>> chore(build): add build
 
             var filterMatch = new RegExp(this.input, 'i');
             var filteredItems = [];
@@ -12034,16 +7661,8 @@ AutoComplete = __decorate([_autoCompleteVue2.default, (0, _vuePropertyDecorator.
 exports.default = AutoComplete;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 203 */
+/* 193 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 194 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.hasItems)?_c('div',{staticClass:"auto-complete",class:_vm.classObject,attrs:{"role":"combobox","aria-haspopup":"listbox","aria-owns":_vm.listId,"aria-expanded":_vm.isOpen},on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"up",38,$event.key,["Up","ArrowUp"])){ return null; }$event.preventDefault();return _vm.selectPrevious($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }$event.preventDefault();return _vm.selectPrevious($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }$event.preventDefault();return _vm.selectCurrent($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if($event.ctrlKey||$event.shiftKey||$event.altKey||$event.metaKey){ return null; }$event.preventDefault();return _vm.selectCurrent($event)}]}},[_c('input',{directives:[{name:"model",rawName:"v-model.trim",value:(_vm.input),expression:"input",modifiers:{"trim":true}}],ref:"autoComplete",staticClass:"auto-complete__input",attrs:{"type":"text","autofocus":"true","autocomplete":"off","aria-autocomplete":"list","id":_vm.inputId,"aria-controls":_vm.listId,"placeholder":_vm.placeholder,"required":_vm.required},domProps:{"value":(_vm.input)},on:{"input":[function($event){if($event.target.composing){ return; }_vm.input=$event.target.value.trim()},function($event){_vm.input = $event.target.value}],"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.resetInput($event)},"keydown":[function($event){_vm.forceOpen = true},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();return _vm.selectItemByInput($event)}],"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),(_vm.isOpen)?_c('div',{staticClass:"auto-complete__dropdown",attrs:{"id":_vm.listId,"role":"listbox"},on:{"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.closeList($event)},"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"backspace",undefined,$event.key,undefined)){ return null; }$event.preventDefault();},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }$event.preventDefault();return _vm.selectNext($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if($event.ctrlKey||$event.shiftKey||$event.altKey||$event.metaKey){ return null; }$event.preventDefault();return _vm.selectNext($event)}]}},[(_vm.storedItems && _vm.storedItems.length)?[_c('h4',{staticClass:"auto-complete__label",attrs:{"id":"storedLabel"}},[_vm._v("\n                "+_vm._s(_vm.storedLabel)+"\n            ")]),_vm._v(" "),_c('ul',{staticClass:"auto-complete__list",attrs:{"aria-labelledby":"storedLabel"}},_vm._l((_vm.storedItems),function(item){return _c('li',{staticClass:"auto-complete__list-item",attrs:{"role":"option","tabindex":"0"},on:{"click":function($event){return _vm.selectItem(item)},"keyup":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();return _vm.selectItem(item)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.closeList($event)}]}},[_vm._v("\n                    "+_vm._s(item.title)+"\n                ")])}),0)]:_vm._e(),_vm._v(" "),(_vm.suggestedItems && _vm.suggestedItems.length)?[_c('h4',{staticClass:"auto-complete__label",attrs:{"id":"suggestedLabel"}},[_vm._v("\n                "+_vm._s(_vm.suggestionsLabel)+"\n            ")]),_vm._v(" "),_c('ul',{staticClass:"auto-complete__list",attrs:{"aria-labelledby":"suggestedLabel"}},[(_vm.matchValue)?_vm._l((_vm.suggestedItems),function(item){return _c('li',{staticClass:"auto-complete__list-item",attrs:{"role":"option","tabindex":"0"},on:{"click":function($event){return _vm.selectItem(item)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();return _vm.selectItem(item)}}},[_vm._v("\n                        "+_vm._s(item.title)+"\n                    ")])}):_vm._l((_vm.suggestedItems),function(item){return _c('li',{staticClass:"auto-complete__list-item",attrs:{"role":"option","tabindex":"0"},domProps:{"innerHTML":_vm._s(_vm.highlightString(item.title))},on:{"click":function($event){return _vm.selectItem(item)},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }$event.preventDefault();return _vm.selectItem(item)}}})})],2)]:_vm._e()],2):_vm._e()]):_vm._e()}
 var staticRenderFns = []
@@ -12059,20 +7678,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 204 */
-=======
-
-/***/ "./src/js/components/molecules/footer-navigation-category/index.ts":
-/*!*************************************************************************!*\
-  !*** ./src/js/components/molecules/footer-navigation-category/index.ts ***!
-  \*************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 195 */
->>>>>>> chore(build): add build
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12082,15 +7688,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleImage = __webpack_require__(205);
-=======
-var _footerNavigationCategory = __webpack_require__(/*! ./footer-navigation-category */ "./src/js/components/molecules/footer-navigation-category/footer-navigation-category.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleAuthor = __webpack_require__(196);
->>>>>>> chore(build): add build
+var _articleAuthor = __webpack_require__(195);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -12100,31 +7698,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 205 */
-=======
-
-/***/ "./src/js/components/molecules/header-block/header-block.html":
-/*!********************************************************************!*\
-  !*** ./src/js/components/molecules/header-block/header-block.html ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<header class=\"header-block\">\n    <slot>\n        <h2 class=\"header-block__title\" v-if=\"title\">{{ title }}</h2>\n        <p class=\"header-block__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n    </slot>\n</header>\n";
-
-/***/ }),
-
-/***/ "./src/js/components/molecules/header-block/header-block.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/molecules/header-block/header-block.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 196 */
->>>>>>> chore(build): add build
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12139,29 +7713,15 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _articleImageVue = __webpack_require__(206);
-
-var _articleImageVue2 = _interopRequireDefault(_articleImageVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _articleAuthorVue = __webpack_require__(197);
+var _articleAuthorVue = __webpack_require__(196);
 
 var _articleAuthorVue2 = _interopRequireDefault(_articleAuthorVue);
 
-var _format = __webpack_require__(198);
+var _format = __webpack_require__(197);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
->>>>>>> chore(build): add build
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -12208,66 +7768,11 @@ exports.ArticleAuthor = ArticleAuthor = __decorate([_articleAuthorVue2.default, 
 exports.ArticleAuthor = ArticleAuthor;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 206 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('figure',{staticClass:"article-image"},[_c('div',{staticClass:"article-image__container"},[(_vm.image)?_c('c-image',_vm._b({staticClass:"article-image__image",attrs:{"resize-behaviour":"crop"}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),(_vm.caption)?_c('figcaption',{staticClass:"article-image__caption"},[_vm._v(_vm._s(_vm.caption))]):_vm._e()])}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 207 */
-=======
-
-/***/ "./src/js/components/molecules/header-block/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/molecules/header-block/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-var _articleIntro = __webpack_require__(208);
-=======
-var _headerBlock = __webpack_require__(/*! ./header-block */ "./src/js/components/molecules/header-block/header-block.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _headerBlock2 = _interopRequireDefault(_headerBlock);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _headerBlock2.default;
-
-/***/ }),
-<<<<<<< HEAD
-/* 208 */
-=======
-=======
-/* 197 */
+/* 196 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"article-author"},[(_vm.image)?_c('c-image',_vm._b({staticClass:"article-author__image"},'c-image',_vm.image,false)):_vm._e(),_vm._v(" "),_c('div',{staticClass:"article-author__meta"},[_c('span',{staticClass:"article-author__name"},[_vm._v(_vm._s(_vm.name))]),_vm._v(" "),_c('span',{staticClass:"article-author__published-date"},[_vm._v(_vm._s(_vm.formatedDate))])])],1)}
 var staticRenderFns = []
->>>>>>> chore(build): add build
 
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
@@ -12280,17 +7785,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-
-/***/ "./src/js/components/molecules/hero-heading/hero-heading.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/molecules/hero-heading/hero-heading.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 198 */
->>>>>>> chore(build): add build
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12303,21 +7798,7 @@ exports.Format = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _articleIntroVue = __webpack_require__(209);
-
-var _articleIntroVue2 = _interopRequireDefault(_articleIntroVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _defaults = __webpack_require__(3);
->>>>>>> chore(build): add build
 
 var _defaults2 = _interopRequireDefault(_defaults);
 
@@ -12352,37 +7833,7 @@ Format.options = {
 Format.locale = _defaults2.default.language + '-' + _defaults2.default.country.code;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 209 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"article-intro",domProps:{"innerHTML":_vm._s(_vm.intro)}})}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 210 */
-=======
-
-/***/ "./src/js/components/molecules/hero-heading/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/molecules/hero-heading/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 199 */
->>>>>>> chore(build): add build
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12392,15 +7843,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleTable = __webpack_require__(211);
-=======
-var _heroHeading = __webpack_require__(/*! ./hero-heading */ "./src/js/components/molecules/hero-heading/hero-heading.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleCtas = __webpack_require__(200);
->>>>>>> chore(build): add build
+var _articleCtas = __webpack_require__(199);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -12410,20 +7853,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 211 */
-=======
-
-/***/ "./src/js/components/molecules/icon-button/icon-button.ts":
-/*!****************************************************************!*\
-  !*** ./src/js/components/molecules/icon-button/icon-button.ts ***!
-  \****************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 200 */
->>>>>>> chore(build): add build
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12438,15 +7868,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleTableVue = __webpack_require__(212);
-=======
-var _iconButtonVue = __webpack_require__(/*! ./icon-button.vue.html */ "./src/js/components/molecules/icon-button/icon-button.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleCtasVue = __webpack_require__(201);
->>>>>>> chore(build): add build
+var _articleCtasVue = __webpack_require__(200);
 
 var _articleCtasVue2 = _interopRequireDefault(_articleCtasVue);
 
@@ -12488,16 +7910,8 @@ exports.ArticleCtas = ArticleCtas = __decorate([_articleCtasVue2.default, (0, _v
 exports.ArticleCtas = ArticleCtas;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 212 */
+/* 200 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 201 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('cta-block',{staticClass:"article-ctas",attrs:{"ctas":_vm.ctas.ctas}})}
 var staticRenderFns = []
@@ -12513,7 +7927,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 202 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12523,7 +7937,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _articleDescriptionList = __webpack_require__(203);
+var _articleDescriptionList = __webpack_require__(202);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -12533,77 +7947,24 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 213 */
-=======
-
-/***/ "./src/js/components/molecules/index.js":
-/*!**********************************************!*\
-  !*** ./src/js/components/molecules/index.js ***!
-  \**********************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 203 */
->>>>>>> chore(build): add build
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-<<<<<<< HEAD
-  value: true
-});
-
-<<<<<<< HEAD
-var _articleText = __webpack_require__(214);
-=======
-var _autoComplete = __webpack_require__(/*! molecules/auto-complete */ "./src/js/components/molecules/auto-complete/index.ts");
-
-Object.defineProperty(exports, 'AutoComplete', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_autoComplete).default;
-  }
-});
-
-var _articleAuthor = __webpack_require__(/*! molecules/article-author */ "./src/js/components/molecules/article-author/index.ts");
-
-Object.defineProperty(exports, 'ArticleAuthor', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleAuthor).default;
-  }
-=======
     value: true
->>>>>>> chore(build): add build
 });
 exports.ArticleDescriptionList = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-var _articleDescriptionList = __webpack_require__(/*! molecules/article-description-list */ "./src/js/components/molecules/article-description-list/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _articleDescriptionListVue = __webpack_require__(204);
+var _articleDescriptionListVue = __webpack_require__(203);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 214 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _articleImage = __webpack_require__(/*! molecules/article-image */ "./src/js/components/molecules/article-image/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _articleDescriptionListVue2 = _interopRequireDefault(_articleDescriptionListVue);
->>>>>>> chore(build): add build
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12613,18 +7974,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleTextVue = __webpack_require__(215);
-=======
-Object.defineProperty(exports, 'ArticleTable', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleTable).default;
-  }
-});
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
     var c = arguments.length,
         r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -12636,7 +7985,6 @@ var __decorate = undefined && undefined.__decorate || function (decorators, targ
 var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
->>>>>>> chore(build): add build
 
 var ArticleDescriptionList = function (_Vue) {
     _inherits(ArticleDescriptionList, _Vue);
@@ -12656,7 +8004,7 @@ exports.ArticleDescriptionList = ArticleDescriptionList = __decorate([_articleDe
 exports.ArticleDescriptionList = ArticleDescriptionList;
 
 /***/ }),
-/* 204 */
+/* 203 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"article-description-list"},[_c('dl',[_vm._l((_vm.descriptions),function(ref){
@@ -12676,27 +8024,17 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 205 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 215 */
-/***/ (function(module, exports) {
-=======
-var _businessCard = __webpack_require__(/*! molecules/cards/business-card */ "./src/js/components/molecules/cards/business-card/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _articleImage = __webpack_require__(206);
+var _articleImage = __webpack_require__(205);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -12705,19 +8043,9 @@ Object.defineProperty(exports, 'default', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /***/ }),
-/* 216 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
-=======
-var _cardArticle = __webpack_require__(/*! molecules/cards/card-article */ "./src/js/components/molecules/cards/card-article/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/***/ }),
-/* 206 */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> chore(build): add build
 
 "use strict";
 
@@ -12727,34 +8055,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ArticleImage = undefined;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleVideo = __webpack_require__(217);
-=======
-var _cardDownload = __webpack_require__(/*! molecules/cards/card-download */ "./src/js/components/molecules/cards/card-download/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'CardDownload', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_cardDownload).default;
-  }
-});
-
-<<<<<<< HEAD
-/***/ }),
-/* 217 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _cardProduct = __webpack_require__(/*! molecules/cards/card-product */ "./src/js/components/molecules/cards/card-product/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _articleImageVue = __webpack_require__(207);
+var _articleImageVue = __webpack_require__(206);
 
 var _articleImageVue2 = _interopRequireDefault(_articleImageVue);
 
@@ -12762,20 +8067,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleVideoVue = __webpack_require__(218);
-=======
-Object.defineProperty(exports, 'ContentBlock', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentBlock).default;
-  }
-});
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
->>>>>>> chore(build): add build
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
@@ -12810,7 +8102,7 @@ exports.ArticleImage = ArticleImage = __decorate([_articleImageVue2.default, (0,
 exports.ArticleImage = ArticleImage;
 
 /***/ }),
-/* 207 */
+/* 206 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('figure',{staticClass:"article-image"},[_c('div',{staticClass:"article-image__container"},[(_vm.image)?_c('c-image',_vm._b({staticClass:"article-image__image",attrs:{"resize-behaviour":"crop"}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),(_vm.caption)?_c('figcaption',{staticClass:"article-image__caption"},[_vm._v(_vm._s(_vm.caption))]):_vm._e()])}
@@ -12826,19 +8118,9 @@ module.exports = function (_exports) {
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /***/ }),
-/* 218 */
-/***/ (function(module, exports) {
-=======
-var _flyout = __webpack_require__(/*! molecules/flyout */ "./src/js/components/molecules/flyout/index.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/***/ }),
-/* 208 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
->>>>>>> chore(build): add build
 
 "use strict";
 
@@ -12847,17 +8129,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 219 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _footerBlock = __webpack_require__(/*! molecules/footer-block */ "./src/js/components/molecules/footer-block/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleIntro = __webpack_require__(209);
->>>>>>> chore(build): add build
+var _articleIntro = __webpack_require__(208);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -12867,19 +8139,11 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 209 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _blockIcon = __webpack_require__(220);
-=======
-var _headerBlock = __webpack_require__(/*! molecules/header-block */ "./src/js/components/molecules/header-block/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -12890,17 +8154,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 220 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _iconButton = __webpack_require__(/*! molecules/icon-button */ "./src/js/components/molecules/icon-button/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleIntroVue = __webpack_require__(210);
->>>>>>> chore(build): add build
+var _articleIntroVue = __webpack_require__(209);
 
 var _articleIntroVue2 = _interopRequireDefault(_articleIntroVue);
 
@@ -12912,13 +8166,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _blockIconVue = __webpack_require__(221);
-=======
-var _listUnorderedLimit = __webpack_require__(/*! molecules/list-unordered-limit */ "./src/js/components/molecules/list-unordered-limit/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
     var c = arguments.length,
         r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
@@ -12930,7 +8177,6 @@ var __decorate = undefined && undefined.__decorate || function (decorators, targ
 var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
->>>>>>> chore(build): add build
 
 var ArticleIntro = function (_Vue) {
     _inherits(ArticleIntro, _Vue);
@@ -12950,7 +8196,7 @@ exports.ArticleIntro = ArticleIntro = __decorate([_articleIntroVue2.default, (0,
 exports.ArticleIntro = ArticleIntro;
 
 /***/ }),
-/* 210 */
+/* 209 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"article-intro",domProps:{"innerHTML":_vm._s(_vm.intro)}})}
@@ -12967,7 +8213,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 211 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12977,17 +8223,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 221 */
-/***/ (function(module, exports) {
-=======
-var _pager = __webpack_require__(/*! molecules/pager */ "./src/js/components/molecules/pager/index.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleTable = __webpack_require__(212);
->>>>>>> chore(build): add build
+var _articleTable = __webpack_require__(211);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -12997,21 +8233,11 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 212 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 222 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _searchBar = __webpack_require__(/*! molecules/search-bar */ "./src/js/components/molecules/search-bar/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -13022,29 +8248,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _brand = __webpack_require__(223);
-=======
-var _socialNav = __webpack_require__(/*! molecules/social-nav */ "./src/js/components/molecules/social-nav/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleTableVue = __webpack_require__(213);
->>>>>>> chore(build): add build
+var _articleTableVue = __webpack_require__(212);
 
 var _articleTableVue2 = _interopRequireDefault(_articleTableVue);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 223 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _searchResult = __webpack_require__(/*! molecules/search-result */ "./src/js/components/molecules/search-result/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
->>>>>>> chore(build): add build
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -13064,21 +8272,8 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _brandVue = __webpack_require__(224);
-=======
-Object.defineProperty(exports, 'SubNavigationItem', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_subnavigationItem).default;
-  }
-});
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var ArticleTable = function (_Vue) {
     _inherits(ArticleTable, _Vue);
->>>>>>> chore(build): add build
 
     function ArticleTable() {
         _classCallCheck(this, ArticleTable);
@@ -13095,7 +8290,7 @@ exports.ArticleTable = ArticleTable = __decorate([_articleTableVue2.default, (0,
 exports.ArticleTable = ArticleTable;
 
 /***/ }),
-/* 213 */
+/* 212 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"article-table",domProps:{"innerHTML":_vm._s(_vm.table)}})}
@@ -13112,7 +8307,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 214 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13122,17 +8317,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 224 */
-/***/ (function(module, exports) {
-=======
-var _tooltipToggle = __webpack_require__(/*! molecules/tooltip-toggle */ "./src/js/components/molecules/tooltip-toggle/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleText = __webpack_require__(215);
->>>>>>> chore(build): add build
+var _articleText = __webpack_require__(214);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -13142,21 +8327,11 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 215 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 225 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _tabTableRow = __webpack_require__(/*! molecules/tab-table-row */ "./src/js/components/molecules/tab-table-row/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -13167,38 +8342,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _brandCard = __webpack_require__(226);
-=======
-var _wizardStepConfirmation = __webpack_require__(/*! molecules/wizard-step-confirmation */ "./src/js/components/molecules/wizard-step-confirmation/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleTextVue = __webpack_require__(216);
->>>>>>> chore(build): add build
+var _articleTextVue = __webpack_require__(215);
 
 var _articleTextVue2 = _interopRequireDefault(_articleTextVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 226 */
-=======
-
-/***/ "./src/js/components/molecules/list-section/helpers/find-index-in-active-filter-categories.ts":
-/*!****************************************************************************************************!*\
-  !*** ./src/js/components/molecules/list-section/helpers/find-index-in-active-filter-categories.ts ***!
-  \****************************************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
->>>>>>> chore(build): add build
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
@@ -13217,64 +8369,12 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 var ArticleText = function (_Vue) {
     _inherits(ArticleText, _Vue);
 
-<<<<<<< HEAD
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-<<<<<<< HEAD
-exports.default = {
-    name: 'brand-card',
-    template: __webpack_require__(227),
-    props: {
-        body: {
-            type: String,
-            default: ''
-        },
-        type: {
-            type: String,
-            default: 'quote'
-        },
-        image: {
-            type: Object,
-            default: function _default() {
-                return {};
-            }
-        }
-    }
-};
-
-/***/ }),
-/* 227 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"brand-card\">\n    <div class=\"brand-card__image-wrapper\">\n        <responsive-picture v-bind=\"image\"></responsive-picture>\n    </div>\n    <template v-if=\"body && type === 'text'\">\n        <p class=\"brand-card__quote\">{{body}}</p>\n    </template>\n    <template v-else-if=\"body\">\n        <q class=\"brand-card__quote\">{{body}}</q>\n    </template>\n</div>";
-
-/***/ }),
-/* 228 */
-=======
-exports.findIndexInActiveFilterCategories = findIndexInActiveFilterCategories;
-function findIndexInActiveFilterCategories(activeFilterCategories, changedFilterCategory) {
-    return activeFilterCategories.findIndex(function (activeFilterCategory) {
-        return activeFilterCategory.category === changedFilterCategory.category;
-    });
-}
-=======
     function ArticleText() {
         _classCallCheck(this, ArticleText);
->>>>>>> chore(build): add build
 
         return _possibleConstructorReturn(this, (ArticleText.__proto__ || Object.getPrototypeOf(ArticleText)).apply(this, arguments));
     }
 
-<<<<<<< HEAD
-/***/ "./src/js/components/molecules/list-section/helpers/get-active-filters-for-category.ts":
-/*!*********************************************************************************************!*\
-  !*** ./src/js/components/molecules/list-section/helpers/get-active-filters-for-category.ts ***!
-  \*********************************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
     return ArticleText;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ArticleText.prototype, "text", void 0);
@@ -13282,41 +8382,14 @@ exports.ArticleText = ArticleText = __decorate([_articleTextVue2.default, (0, _v
     name: 'ArticleText'
 })], ArticleText);
 exports.ArticleText = ArticleText;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 216 */
+/* 215 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"article-text",domProps:{"innerHTML":_vm._s(_vm.text)}})}
 var staticRenderFns = []
 
-<<<<<<< HEAD
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-<<<<<<< HEAD
-
-var _businessCard = __webpack_require__(229);
-
-var _businessCard2 = _interopRequireDefault(_businessCard);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _businessCard2.default;
-
-/***/ }),
-/* 229 */
-=======
-exports.getActiveFiltersForCategory = getActiveFiltersForCategory;
-function getActiveFiltersForCategory(filterCategory) {
-    return filterCategory.filters.reduce(function (acc, filter) {
-        if (filter.checked && !filter.disabled) {
-            acc.push(filter.value);
-        }
-        return acc;
-    }, []);
-=======
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
     ? _exports.options
@@ -13324,21 +8397,11 @@ module.exports = function (_exports) {
   options.render = render
   options.staticRenderFns = staticRenderFns
   return _exports
->>>>>>> chore(build): add build
 }
 
 
-<<<<<<< HEAD
-/***/ "./src/js/components/molecules/list-section/helpers/get-filtered-cards-from-active-filter-categories.ts":
-/*!**************************************************************************************************************!*\
-  !*** ./src/js/components/molecules/list-section/helpers/get-filtered-cards-from-active-filter-categories.ts ***!
-  \**************************************************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 /***/ }),
-/* 217 */
->>>>>>> chore(build): add build
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13348,127 +8411,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _events = __webpack_require__(5);
-
-var _events2 = _interopRequireDefault(_events);
-
-var _businessCardVue = __webpack_require__(230);
-
-var _businessCardVue2 = _interopRequireDefault(_businessCardVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var BusinessCard = function (_Vue) {
-    _inherits(BusinessCard, _Vue);
-
-    function BusinessCard() {
-        _classCallCheck(this, BusinessCard);
-
-        return _possibleConstructorReturn(this, (BusinessCard.__proto__ || Object.getPrototypeOf(BusinessCard)).apply(this, arguments));
-    }
-=======
-var _getActiveFiltersForCategory = __webpack_require__(/*! ./get-active-filters-for-category */ "./src/js/components/molecules/list-section/helpers/get-active-filters-for-category.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-function getFilteredCardsFromCategory(cards, activeCategory, filters) {
-    return cards.filter(function (card) {
-        return card.labels;
-    }).reduce(function (acc, card) {
-        if (card.labels.some(function (label) {
-            return filters.includes(label);
-        })) {
-            acc.push(card);
-        }
-        return acc;
-    }, []);
-}
-function getFilteredCardsFromActiveFilterCategories(cards, activeFilterCategories) {
-    var allCards = [];
-    var filters = [];
-    var activeFilters = [];
-    activeFilterCategories.forEach(function (activeCategory) {
-        if (allCards.length === 0) {
-            filters = (0, _getActiveFiltersForCategory.getActiveFiltersForCategory)(activeCategory);
-            allCards = getFilteredCardsFromCategory(cards, activeCategory, filters);
-        } else {
-            activeFilters = (0, _getActiveFiltersForCategory.getActiveFiltersForCategory)(activeCategory);
-            allCards = getFilteredCardsFromCategory(allCards, activeCategory, activeFilters);
-        }
-<<<<<<< HEAD
-    }]);
-
-    return BusinessCard;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], BusinessCard.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], BusinessCard.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], BusinessCard.prototype, "contentLink", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Object)], BusinessCard.prototype, "properties", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], BusinessCard.prototype, "clickEvent", void 0);
-BusinessCard = __decorate([_businessCardVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'BusinessCard'
-})], BusinessCard);
-exports.default = BusinessCard;
-
-/***/ }),
-/* 230 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"business-card",attrs:{"href":_vm.contentLink.url,"rel":"noopener","target":"_blank","tabindex":"0"},on:{"click":function($event){_vm.clickEvent ? _vm.$emitPublic(_vm.clickEventType, _vm.clickEventData) : ''}}},[_c('div',{staticClass:"business-card__header"},[_c('div',{staticClass:"business-card__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({staticClass:"business-card__image",attrs:{"resizeBehavior":"pad"}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"business-card__description"},[_c('h4',{staticClass:"business-card__title"},[_vm._v("\n                "+_vm._s(_vm.title)+"\n            ")]),_vm._v(" "),_vm._l((_vm.properties),function(property){return (_vm.properties)?_c('p',{staticClass:"business-card__property"},[_vm._v("\n                "+_vm._s(property.value)+" "+_vm._s(property.label)+"\n            ")]):_vm._e()})],2)]),_vm._v(" "),_c('div',{staticClass:"business-card__footer"},[_c('span',{staticClass:"link faux-content-link business-card__link"},[_c('span',{staticClass:"link__underline"},[_vm._v("\n                "+_vm._s(_vm.contentLink.label)+"\n            ")])])])])}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-=======
-    });
-    return allCards.filter(function (card, index) {
-        return allCards.indexOf(card) === index;
-    });
->>>>>>> feat(table-compare): allow 5 columns
-}
-
-/***/ }),
-<<<<<<< HEAD
-/* 231 */
-=======
-
-/***/ "./src/js/components/molecules/list-section/helpers/get-filters-in-card-collection.ts":
-/*!********************************************************************************************!*\
-  !*** ./src/js/components/molecules/list-section/helpers/get-filters-in-card-collection.ts ***!
-  \********************************************************************************************/
-/*! no static exports found */
-=======
-var _articleVideo = __webpack_require__(218);
+var _articleVideo = __webpack_require__(217);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -13478,8 +8421,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 218 */
->>>>>>> chore(build): add build
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13494,7 +8436,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _articleVideoVue = __webpack_require__(219);
+var _articleVideoVue = __webpack_require__(218);
 
 var _articleVideoVue2 = _interopRequireDefault(_articleVideoVue);
 
@@ -13537,7 +8479,7 @@ exports.ArticleVideo = ArticleVideo = __decorate([_articleVideoVue2.default, (0,
 exports.ArticleVideo = ArticleVideo;
 
 /***/ }),
-/* 219 */
+/* 218 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"article-video"},[(_vm.overlay)?_c('c-image',_vm._b({staticClass:"article-video__overlay",attrs:{"resize-behaviour":"crop"}},'c-image',_vm.overlay,false)):_vm._e(),_vm._v(" "),_c('div',{staticClass:"article-video__overlay--overlay"}),_vm._v(" "),_c('youtube-link',_vm._b({staticClass:"article-video__button"},'youtube-link',_vm.cta,false))],1)}
@@ -13553,17 +8495,8 @@ module.exports = function (_exports) {
 }
 
 
-<<<<<<< HEAD
-/***/ "./src/js/components/molecules/list-section/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/molecules/list-section/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 /***/ }),
-/* 220 */
->>>>>>> chore(build): add build
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13573,38 +8506,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _cardArticle = __webpack_require__(232);
-=======
-var _listSection = __webpack_require__(/*! ./list-section */ "./src/js/components/molecules/list-section/list-section.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _blockIcon = __webpack_require__(221);
->>>>>>> chore(build): add build
+var _blockIcon = __webpack_require__(220);
 
 var _blockIcon2 = _interopRequireDefault(_blockIcon);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 232 */
-=======
-
-/***/ "./src/js/components/molecules/list-section/list-section.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/molecules/list-section/list-section.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _blockIcon2.default;
 
 /***/ }),
-/* 221 */
->>>>>>> chore(build): add build
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13618,23 +8529,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-var _listSectionVue = __webpack_require__(/*! ./list-section.vue.html */ "./src/js/components/molecules/list-section/list-section.vue.html");
-
-<<<<<<< HEAD
-var _cardArticleVue = __webpack_require__(233);
-=======
-var _listSectionVue2 = _interopRequireDefault(_listSectionVue);
->>>>>>> feat(table-compare): allow 5 columns
-
-var _events = __webpack_require__(/*! constants/events */ "./src/js/constants/events.js");
-=======
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _blockIconVue = __webpack_require__(222);
+var _blockIconVue = __webpack_require__(221);
 
 var _blockIconVue2 = _interopRequireDefault(_blockIconVue);
 
@@ -13690,16 +8587,8 @@ BlockIcon = __decorate([_blockIconVue2.default, (0, _vuePropertyDecorator.Compon
 exports.default = BlockIcon;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 233 */
+/* 221 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 222 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"block-icon flexgrid"},[_c('div',{staticClass:"block-icon__visual flexgrid__cell flexgrid__cell--xxs-4 flexgrid__cell--xs-12"},[(_vm.icon)?_c('icon',{staticClass:"block-icon__icon",attrs:{"icon-name":_vm.icon}}):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"block-icon__content flexgrid__cell flexgrid__cell--xxs-8 flexgrid__cell--xs-12"},[_c('h3',{staticClass:"block-icon__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"block-icon__description"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",staticClass:"block-icon__link",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])}
 var staticRenderFns = []
@@ -13715,9 +8604,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 234 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13727,46 +8614,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _cardBase = __webpack_require__(17);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _cardBase.CardBase;
-  }
-});
-
-/***/ }),
-/* 235 */
-=======
-
-/***/ "./src/js/components/molecules/list-unordered-limit/index.ts":
-/*!*******************************************************************!*\
-  !*** ./src/js/components/molecules/list-unordered-limit/index.ts ***!
-  \*******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 223 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _cardDownload = __webpack_require__(236);
-=======
-var _listUnorderedLimit = __webpack_require__(/*! ./list-unordered-limit */ "./src/js/components/molecules/list-unordered-limit/list-unordered-limit.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _brand = __webpack_require__(224);
->>>>>>> chore(build): add build
+var _brand = __webpack_require__(223);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -13776,66 +8624,22 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 236 */
-=======
-
-/***/ "./src/js/components/molecules/list-unordered-limit/list-unordered-limit.ts":
-/*!**********************************************************************************!*\
-  !*** ./src/js/components/molecules/list-unordered-limit/list-unordered-limit.ts ***!
-  \**********************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.ListUnorderedLimit = undefined;
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-<<<<<<< HEAD
-var _cardDownloadVue = __webpack_require__(237);
-=======
-var _events = __webpack_require__(/*! constants/events */ "./src/js/constants/events.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 224 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
->>>>>>> chore(build): add build
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _uuid = __webpack_require__(238);
-=======
-var _stepRowAnimation = __webpack_require__(/*! js/mixins/step-row-animation/step-row-animation */ "./src/js/mixins/step-row-animation/step-row-animation.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.Brand = undefined;
->>>>>>> chore(build): add build
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _brandVue = __webpack_require__(225);
+var _brandVue = __webpack_require__(224);
 
 var _brandVue2 = _interopRequireDefault(_brandVue);
 
@@ -13877,16 +8681,8 @@ exports.Brand = Brand = __decorate([_brandVue2.default, (0, _vuePropertyDecorato
 exports.Brand = Brand;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 237 */
+/* 224 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 225 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"brand"},[_c('c-image',_vm._b({staticClass:"brand__image"},'c-image',_vm.image,false))],1)}
 var staticRenderFns = []
@@ -13902,19 +8698,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 238 */
-=======
-
-/***/ "./src/js/components/molecules/list-unordered/component.ts":
-/*!*****************************************************************!*\
-  !*** ./src/js/components/molecules/list-unordered/component.ts ***!
-  \*****************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 226 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13924,7 +8708,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _brandCard = __webpack_require__(227);
+var _brandCard = __webpack_require__(226);
 
 var _brandCard2 = _interopRequireDefault(_brandCard);
 
@@ -13933,7 +8717,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _brandCard2.default;
 
 /***/ }),
-/* 227 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13944,7 +8728,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
     name: 'brand-card',
-    template: __webpack_require__(228),
+    template: __webpack_require__(227),
     props: {
         body: {
             type: String,
@@ -13964,13 +8748,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 228 */
+/* 227 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"brand-card\">\n    <div class=\"brand-card__image-wrapper\">\n        <responsive-picture v-bind=\"image\"></responsive-picture>\n    </div>\n    <template v-if=\"body && type === 'text'\">\n        <p class=\"brand-card__quote\">{{body}}</p>\n    </template>\n    <template v-else-if=\"body\">\n        <q class=\"brand-card__quote\">{{body}}</q>\n    </template>\n</div>";
 
 /***/ }),
-/* 229 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13980,7 +8764,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _businessCard = __webpack_require__(230);
+var _businessCard = __webpack_require__(229);
 
 var _businessCard2 = _interopRequireDefault(_businessCard);
 
@@ -13989,8 +8773,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _businessCard2.default;
 
 /***/ }),
-/* 230 */
->>>>>>> chore(build): add build
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14010,7 +8793,7 @@ var _events = __webpack_require__(5);
 
 var _events2 = _interopRequireDefault(_events);
 
-var _businessCardVue = __webpack_require__(231);
+var _businessCardVue = __webpack_require__(230);
 
 var _businessCardVue2 = _interopRequireDefault(_businessCardVue);
 
@@ -14043,45 +8826,6 @@ var BusinessCard = function (_Vue) {
         return _possibleConstructorReturn(this, (BusinessCard.__proto__ || Object.getPrototypeOf(BusinessCard)).apply(this, arguments));
     }
 
-<<<<<<< HEAD
-    return ListUnordered;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], ListUnordered.prototype, "listItems", void 0);
-ListUnordered = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'ListUnordered'
-})], ListUnordered);
-exports.default = ListUnordered;
-
-/***/ }),
-<<<<<<< HEAD
-/* 239 */
-=======
-
-/***/ "./src/js/components/molecules/list-unordered/index.ts":
-/*!*************************************************************!*\
-  !*** ./src/js/components/molecules/list-unordered/index.ts ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-var _cardProduct = __webpack_require__(240);
-=======
-var _component = __webpack_require__(/*! ./component */ "./src/js/components/molecules/list-unordered/component.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _component2 = _interopRequireDefault(_component);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
     _createClass(BusinessCard, [{
         key: "clickEventType",
         get: function get() {
@@ -14099,7 +8843,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             return null;
         }
     }]);
->>>>>>> chore(build): add build
 
     return BusinessCard;
 }(_vuePropertyDecorator.Vue);
@@ -14114,7 +8857,7 @@ BusinessCard = __decorate([_businessCardVue2.default, (0, _vuePropertyDecorator.
 exports.default = BusinessCard;
 
 /***/ }),
-/* 231 */
+/* 230 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"business-card",attrs:{"href":_vm.contentLink.url,"rel":"noopener","target":"_blank","tabindex":"0"},on:{"click":function($event){_vm.clickEvent ? _vm.$emitPublic(_vm.clickEventType, _vm.clickEventData) : ''}}},[_c('div',{staticClass:"business-card__header"},[_c('div',{staticClass:"business-card__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({staticClass:"business-card__image",attrs:{"resizeBehavior":"pad"}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"business-card__description"},[_c('h4',{staticClass:"business-card__title"},[_vm._v("\n                "+_vm._s(_vm.title)+"\n            ")]),_vm._v(" "),_vm._l((_vm.properties),function(property){return (_vm.properties)?_c('p',{staticClass:"business-card__property"},[_vm._v("\n                "+_vm._s(property.value)+" "+_vm._s(property.label)+"\n            ")]):_vm._e()})],2)]),_vm._v(" "),_c('div',{staticClass:"business-card__footer"},[_c('span',{staticClass:"link faux-content-link business-card__link"},[_c('span',{staticClass:"link__underline"},[_vm._v("\n                "+_vm._s(_vm.contentLink.label)+"\n            ")])])])])}
@@ -14131,7 +8874,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 232 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14141,140 +8884,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-var _mainNavigationItem = __webpack_require__(/*! ./main-navigation-item */ "./src/js/components/molecules/main-navigation-item/main-navigation-item.ts");
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _mainNavigationItem.MainNavigationItem;
-  }
-});
-
-/***/ }),
-<<<<<<< HEAD
-/* 240 */
-=======
-
-/***/ "./src/js/components/molecules/main-navigation-item/main-navigation-item.ts":
-/*!**********************************************************************************!*\
-  !*** ./src/js/components/molecules/main-navigation-item/main-navigation-item.ts ***!
-  \**********************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _card = __webpack_require__(233);
-
-var _card2 = _interopRequireDefault(_card);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _card2.default;
-
-/***/ }),
-/* 233 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-<<<<<<< HEAD
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-<<<<<<< HEAD
-var _cardProductVue = __webpack_require__(241);
-=======
-var _mainNavigationItemVue = __webpack_require__(/*! ./main-navigation-item.vue.html */ "./src/js/components/molecules/main-navigation-item/main-navigation-item.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _mainNavigationItemVue2 = _interopRequireDefault(_mainNavigationItemVue);
-
-var _browserCapabilities = __webpack_require__(/*! utils/browser-capabilities */ "./src/js/utils/browser-capabilities.js");
-
-var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-=======
-var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var Card = function (_Vue) {
-    _inherits(Card, _Vue);
-
-    function Card() {
-        _classCallCheck(this, Card);
-
-        return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).apply(this, arguments));
-    }
-
-    _createClass(Card, [{
-        key: "classObject",
-        get: function get() {
-            var classes = {};
-            if (this.block !== '') {
-                classes[this.block + "__card"] = true;
-            }
-            return classes;
-        }
-    }]);
-
-    return Card;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], Card.prototype, "block", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Card.prototype, "card", void 0);
-Card = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'card',
-    template: __webpack_require__(234)
-})], Card);
-exports.default = Card;
-
-/***/ }),
-/* 234 */
-/***/ (function(module, exports) {
-
-module.exports = "<article class=\"card\" :class=\"classObject\" tabindex=\"0\">\n    <div class=\"card__visual\">\n        <div class=\"card__image\" v-if=\"card.image\">\n            <responsive-picture class=\"img--responsive\" v-if=\"card.image.mobileWidth\" v-bind=\"card.image\" ></responsive-picture>\n            <cms-image class=\"img--responsive\" v-else :image=\"card.image[0]\" :orientation=\"'square'\"></cms-image>\n        </div>\n        <icon v-if=\"card.icon\" :icon-name=\"card.icon.iconName\" class=\"card__icon\"></icon>\n    </div>\n    <div class=\"card__content\">\n        <h3 class=\"card__headline\">{{ card.title }}</h3>\n        <p class=\"card__description\" v-if=\"card.description\">{{ card.description }}</p>\n        <content-link class=\"link\" v-if=\"card.contentLink && card.contentLink.href\" :block=\"'card'\" :url=\"card.contentLink.href\" :label=\"card.contentLink.text\">\n        </content-link>\n    </div>\n</article>\n\n";
-
-/***/ }),
-/* 235 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _cardArticle = __webpack_require__(236);
+var _cardArticle = __webpack_require__(232);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -14284,7 +8894,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 236 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14303,7 +8913,7 @@ var _cardBase = __webpack_require__(17);
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _cardArticleVue = __webpack_require__(237);
+var _cardArticleVue = __webpack_require__(233);
 
 var _cardArticleVue2 = _interopRequireDefault(_cardArticleVue);
 
@@ -14371,16 +8981,8 @@ exports.CardArticle = CardArticle = __decorate([_cardArticleVue2.default, (0, _v
 exports.CardArticle = CardArticle;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 241 */
+/* 233 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 237 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"card-article",on:{"click":_vm.triggerEventClick}},[(_vm.url)?_c('anchor-overlay',{attrs:{"url":_vm.url,"title":_vm.title}}):_vm._e(),_vm._v(" "),(_vm.image)?_c('div',{staticClass:"card-article__image-container"},[_c('c-image',_vm._b({staticClass:"card-article__image"},'c-image',_vm.image,false))],1):_vm._e(),_vm._v(" "),_c('h3',{staticClass:"card-article__heading"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"card-article__description"},[_vm._v("\n        "+_vm._s(_vm.description)+"\n    ")]):_vm._e(),_vm._v(" "),_c('list-unordered',{staticClass:"card-article__labels-list",attrs:{"listItems":_vm.listItems}})],1)}
 var staticRenderFns = []
@@ -14396,20 +8998,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 242 */
-=======
-
-/***/ "./src/js/components/molecules/main-navigation/index.ts":
-/*!**************************************************************!*\
-  !*** ./src/js/components/molecules/main-navigation/index.ts ***!
-  \**************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 238 */
->>>>>>> chore(build): add build
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14419,19 +9008,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _color = __webpack_require__(243);
-
-var _color2 = _interopRequireDefault(_color);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _mainNavigation = __webpack_require__(/*! ./main-navigation */ "./src/js/components/molecules/main-navigation/main-navigation.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _cardBase = __webpack_require__(17);
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -14441,19 +9018,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 243 */
-=======
-
-/***/ "./src/js/components/molecules/main-navigation/main-navigation.ts":
-/*!************************************************************************!*\
-  !*** ./src/js/components/molecules/main-navigation/main-navigation.ts ***!
-  \************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 239 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14463,7 +9028,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _cardDownload = __webpack_require__(240);
+var _cardDownload = __webpack_require__(236);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -14473,8 +9038,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 240 */
->>>>>>> chore(build): add build
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14489,27 +9053,13 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-<<<<<<< HEAD
-var _color = __webpack_require__(244);
-
-var _colorVue = __webpack_require__(245);
-=======
-var _mainNavigationVue = __webpack_require__(/*! ./main-navigation.vue.html */ "./src/js/components/molecules/main-navigation/main-navigation.vue.html");
-
-var _mainNavigationVue2 = _interopRequireDefault(_mainNavigationVue);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _cardDownloadVue = __webpack_require__(241);
+var _cardDownloadVue = __webpack_require__(237);
 
 var _cardDownloadVue2 = _interopRequireDefault(_cardDownloadVue);
 
-var _uuid = __webpack_require__(242);
+var _uuid = __webpack_require__(238);
 
 var _uuid2 = _interopRequireDefault(_uuid);
 
@@ -14570,112 +9120,10 @@ exports.CardDownload = CardDownload = __decorate([_cardDownloadVue2.default, (0,
 exports.CardDownload = CardDownload;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 244 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Color = exports.Color = function () {
-    function Color() {
-        _classCallCheck(this, Color);
-    }
-
-    _createClass(Color, null, [{
-        key: "lightness",
-        value: function lightness(color) {
-            var white = 765;
-            var expression = /^#([A-Fa-f0-9]{2})([A-Fa-f0-9]{2})([A-Fa-f0-9]{2})/;
-            var matches = color && color.match ? color.match(expression) : false;
-            if (!matches || matches.length !== 4) {
-                return 0;
-            }
-            return Math.round((parseInt(matches[1], 16) + parseInt(matches[2], 16) + parseInt(matches[3], 16)) / white * 100) / 100;
-        }
-    }]);
-
-    return Color;
-}();
-
-/***/ }),
-/* 245 */
-/***/ (function(module, exports) {
-=======
-
-/***/ "./src/js/components/molecules/main-navigation/main-navigation.vue.html":
-/*!******************************************************************************!*\
-  !*** ./src/js/components/molecules/main-navigation/main-navigation.vue.html ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> feat(table-compare): allow 5 columns
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "nav",
-    {
-      key: "large-menu",
-      staticClass: "main-nav",
-      class: _vm.classList,
-      attrs: { "aria-label": "site" }
-    },
-    [
-      _c(
-        "ul",
-        {
-          staticClass: "main-nav__list",
-          class: {
-            "main-nav__list-visible": _vm.mainNavOpen && _vm.showCompactMenu
-          },
-          attrs: { role: "menu" }
-        },
-        _vm._l(_vm.navigation, function(mainNavigationItem, index) {
-          return _vm.navigation
-            ? _c(
-                "main-navigation-item",
-                _vm._b(
-                  {
-                    key: index,
-                    ref: "navItem",
-                    refInFor: true,
-                    attrs: {
-                      "is-compact": _vm.showCompactMenu,
-                      "main-nav-open": _vm.mainNavOpen,
-                      active: false,
-                      itemId: "nav-" + index
-                    }
-                  },
-                  "main-navigation-item",
-                  mainNavigationItem,
-                  false
-                )
-              )
-            : _vm._e()
-        }),
-        1
-      )
-    ]
-  )
-}
-=======
-/* 241 */
+/* 237 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-download"},[_c('input',{staticClass:"card-download__radio",attrs:{"type":"radio","id":_vm.id,"name":_vm.name},domProps:{"checked":_vm.selected,"value":_vm.file},on:{"change":_vm.handleSelect}}),_vm._v(" "),_c('label',{staticClass:"card-download__label",attrs:{"for":_vm.id}},[_c('div',{staticClass:"card-download__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"card-download__content"},[_c('h4',{staticClass:"card-download__title"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"card-download__desc"},[_vm._v(_vm._s(_vm.description))]):_vm._e()])])])}
->>>>>>> chore(build): add build
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -14689,19 +9137,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 246 */
-=======
-
-/***/ "./src/js/components/molecules/modal-button/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/molecules/modal-button/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 242 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14726,8 +9162,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(12)))
 
 /***/ }),
-/* 243 */
->>>>>>> chore(build): add build
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14737,42 +9172,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentBlock = __webpack_require__(247);
-
-var _contentBlock2 = _interopRequireDefault(_contentBlock);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _modalButton = __webpack_require__(/*! ./modal-button */ "./src/js/components/molecules/modal-button/modal-button.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _cardProduct = __webpack_require__(244);
->>>>>>> chore(build): add build
+var _cardProduct = __webpack_require__(240);
 
 var _cardProduct2 = _interopRequireDefault(_cardProduct);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 247 */
-=======
-
-/***/ "./src/js/components/molecules/modal-button/modal-button.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/molecules/modal-button/modal-button.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _cardProduct2.default;
 
 /***/ }),
-/* 244 */
->>>>>>> chore(build): add build
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14788,15 +9197,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentBlockVue = __webpack_require__(248);
-=======
-var _modalButtonVue = __webpack_require__(/*! ./modal-button.vue.html */ "./src/js/components/molecules/modal-button/modal-button.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _cardProductVue = __webpack_require__(245);
->>>>>>> chore(build): add build
+var _cardProductVue = __webpack_require__(241);
 
 var _cardProductVue2 = _interopRequireDefault(_cardProductVue);
 
@@ -14858,157 +9259,6 @@ var CardProduct = function (_Vue) {
 
     return CardProduct;
 }(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-<<<<<<< HEAD
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentBlock.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentBlock.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentBlock.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentBlock.prototype, "cta", void 0);
-ContentBlock = __decorate([_contentBlockVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'ContentBlock'
-})], ContentBlock);
-exports.default = ContentBlock;
-
-/***/ }),
-/* 248 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-block disable-focus",attrs:{"tabIndex":"-1"}},[_c('div',{staticClass:"content-block-container__image"},[(_vm.image)?_c('c-image',_vm._b({staticClass:"content-block__image",attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"content-block__content"},[_c('h3',{staticClass:"content-block__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('p',{staticClass:"content-block__description"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 249 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _contentToggle = __webpack_require__(250);
-
-var _contentToggle2 = _interopRequireDefault(_contentToggle);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _contentToggle2.default;
-
-/***/ }),
-/* 250 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ModalButton.prototype, "clickEvent", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ModalButton.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], ModalButton.prototype, "modal", void 0);
-exports.ModalButton = ModalButton = __decorate([_modalButtonVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'ModalButton'
-})], ModalButton);
-exports.ModalButton = ModalButton;
-
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/modal-button/modal-button.vue.html":
-/*!************************************************************************!*\
-  !*** ./src/js/components/molecules/modal-button/modal-button.vue.html ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-<<<<<<< HEAD
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    name: 'content-toggle',
-    template: __webpack_require__(251),
-    props: {
-        toggleState: {
-            type: Boolean,
-            default: false
-        },
-        expandedText: {
-            type: String,
-            default: 'Less'
-        },
-        collapsedText: {
-            type: String,
-            default: 'More'
-        },
-        expandedIcon: {
-            type: String,
-            default: 'angle-up'
-        },
-        collapsedIcon: {
-            type: String,
-            default: 'angle-down'
-        }
-    },
-    computed: {
-        toggleText: function toggleText() {
-            return this.toggleState ? this.expandedText : this.collapsedText;
-=======
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "modal-button__container" },
-    [
-      _c(
-        "button",
-        {
-          staticClass: "button",
-          attrs: { type: "button" },
-          on: { click: _vm.triggerClick }
->>>>>>> feat(table-compare): allow 5 columns
-        },
-        [_vm._v("\n        " + _vm._s(_vm.label) + "\n    ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "portal",
-        { attrs: { to: "modals" } },
-        [
-          _vm.modalVisible
-            ? _c(
-                "modal",
-                {
-                  staticClass: "modal--wizard",
-                  on: { close: _vm.toggleModalVisible }
-                },
-                [
-                  _c(
-                    _vm.modal.type,
-                    _vm._b({ tag: "component" }, "component", _vm.modal, false)
-                  )
-                ],
-                1
-              )
-            : _vm._e()
-        ],
-        1
-      )
-    ],
-    1
-  )
-}
-=======
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], CardProduct.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array }), __metadata("design:type", Object)], CardProduct.prototype, "properties", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], CardProduct.prototype, "title", void 0);
@@ -15019,18 +9269,12 @@ CardProduct = __decorate([_cardProductVue2.default, (0, _vuePropertyDecorator.Co
 exports.default = CardProduct;
 
 /***/ }),
-/* 245 */
+/* 241 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"card-product"},[_c('anchor-overlay',{attrs:{"url":_vm.url,"title":_vm.title}}),_vm._v(" "),_c('div',{staticClass:"card-product__image-container"},[(_vm.image && !_vm.imageError)?_c('c-image',_vm._b({staticClass:"card-product__image",on:{"error":function($event){_vm.imageError = true}}},'c-image',_vm.image,false)):_vm._e(),_vm._v(" "),(!_vm.image || _vm.imageError)?_c('div',{staticClass:"img--contain card-product__image gray-background"},[_vm._v(_vm._s(_vm.title))]):_vm._e()],1),_vm._v(" "),_c('h3',{staticClass:"card-product__heading"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('list-unordered',{staticClass:"card-product__labels-list",attrs:{"listItems":_vm.listItems}})],1)}
->>>>>>> chore(build): add build
 var staticRenderFns = []
 
-<<<<<<< HEAD
-/***/ }),
-/* 251 */
-/***/ (function(module, exports) {
-=======
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
     ? _exports.options
@@ -15039,29 +9283,10 @@ module.exports = function (_exports) {
   options.staticRenderFns = staticRenderFns
   return _exports
 }
-<<<<<<< HEAD
-var api = null
-if (false) {}
->>>>>>> feat(table-compare): allow 5 columns
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 252 */
-=======
-
-/***/ "./src/js/components/molecules/modal-wizard/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/molecules/modal-wizard/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-
-
-/***/ }),
-/* 246 */
->>>>>>> chore(build): add build
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15071,38 +9296,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _ctaBlock = __webpack_require__(253);
-=======
-var _modalWizard = __webpack_require__(/*! ./modal-wizard */ "./src/js/components/molecules/modal-wizard/modal-wizard.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _color = __webpack_require__(247);
->>>>>>> chore(build): add build
+var _color = __webpack_require__(243);
 
 var _color2 = _interopRequireDefault(_color);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 253 */
-=======
-
-/***/ "./src/js/components/molecules/modal-wizard/modal-wizard.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/molecules/modal-wizard/modal-wizard.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _color2.default;
 
 /***/ }),
-/* 247 */
->>>>>>> chore(build): add build
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15118,17 +9321,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _ctaBlockVue = __webpack_require__(254);
-=======
-var _modalWizardVue = __webpack_require__(/*! ./modal-wizard.vue.html */ "./src/js/components/molecules/modal-wizard/modal-wizard.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _color = __webpack_require__(248);
->>>>>>> chore(build): add build
+var _color = __webpack_require__(244);
 
-var _colorVue = __webpack_require__(249);
+var _colorVue = __webpack_require__(245);
 
 var _colorVue2 = _interopRequireDefault(_colorVue);
 
@@ -15199,21 +9394,7 @@ Color = __decorate([_colorVue2.default, (0, _vuePropertyDecorator.Component)({
 exports.default = Color;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 254 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/modal-wizard/modal-wizard.vue.html":
-/*!************************************************************************!*\
-  !*** ./src/js/components/molecules/modal-wizard/modal-wizard.vue.html ***!
-  \************************************************************************/
-/*! no static exports found */
-=======
-/* 248 */
->>>>>>> chore(build): add build
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15249,7 +9430,7 @@ var Color = exports.Color = function () {
 }();
 
 /***/ }),
-/* 249 */
+/* 245 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"color",attrs:{"tabindex":"0"}},[_c('div',{staticClass:"color__spec color__spec--show"},[_c('icon',{staticClass:"color__icon",style:(_vm.styleIcon),attrs:{"icon-name":"show"}})],1),_vm._v(" "),_c('div',{staticClass:"color__spec color__spec--swatch",style:(_vm.styleBackground)})])}
@@ -15266,20 +9447,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 255 */
-=======
-
-/***/ "./src/js/components/molecules/modal/index.ts":
-/*!****************************************************!*\
-  !*** ./src/js/components/molecules/modal/index.ts ***!
-  \****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 250 */
->>>>>>> chore(build): add build
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15289,15 +9457,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _currency = __webpack_require__(256);
-=======
-var _modal = __webpack_require__(/*! ./modal */ "./src/js/components/molecules/modal/modal.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _contentBlock = __webpack_require__(251);
->>>>>>> chore(build): add build
+var _contentBlock = __webpack_require__(247);
 
 var _contentBlock2 = _interopRequireDefault(_contentBlock);
 
@@ -15306,20 +9466,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentBlock2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 256 */
-=======
-
-/***/ "./src/js/components/molecules/modal/modal.ts":
-/*!****************************************************!*\
-  !*** ./src/js/components/molecules/modal/modal.ts ***!
-  \****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 251 */
->>>>>>> chore(build): add build
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15335,7 +9482,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _contentBlockVue = __webpack_require__(252);
+var _contentBlockVue = __webpack_require__(248);
 
 var _contentBlockVue2 = _interopRequireDefault(_contentBlockVue);
 
@@ -15391,98 +9538,12 @@ ContentBlock = __decorate([_contentBlockVue2.default, (0, _vuePropertyDecorator.
 exports.default = ContentBlock;
 
 /***/ }),
-/* 252 */
+/* 248 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-/***/ "./src/js/components/molecules/modal/modal.vue.html":
-/*!**********************************************************!*\
-  !*** ./src/js/components/molecules/modal/modal.vue.html ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-<<<<<<< HEAD
-exports.default = {
-    name: 'currency',
-    template: __webpack_require__(257),
-    props: {
-        amount: {
-            type: Number,
-            required: true
-        },
-        currencyType: {
-            type: String
-=======
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "transition",
-    { attrs: { name: "modal" }, on: { enter: _vm.enter, leave: _vm.leave } },
-    [
-      _c(
-        "div",
-        {
-          staticClass: "modal",
-          on: {
-            click: function($event) {
-              $event.preventDefault()
-              $event.stopPropagation()
-              return _vm.closeModal($event)
-            }
-          }
->>>>>>> feat(table-compare): allow 5 columns
-        },
-        [
-          _c("div", { ref: "overlay", staticClass: "modal__overlay" }),
-          _vm._v(" "),
-          _c("icon-button", {
-            ref: "close",
-            staticClass: "modal__close",
-            attrs: { "icon-name": "close" }
-          }),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              ref: "modal",
-              staticClass: "modal__content",
-              on: {
-                click: function($event) {
-                  $event.stopPropagation()
-                }
-              }
-            },
-            [
-              _c(
-                "div",
-                { staticClass: "modal__header" },
-                [_vm._t("header")],
-                2
-              ),
-              _vm._v(" "),
-              _vm._t("default")
-            ],
-            2
-          )
-        ],
-        1
-      )
-    ]
-  )
-}
-=======
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-block disable-focus",attrs:{"tabIndex":"-1"}},[_c('div',{staticClass:"content-block-container__image"},[(_vm.image)?_c('c-image',_vm._b({staticClass:"content-block__image",attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"content-block__content"},[_c('h3',{staticClass:"content-block__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('p',{staticClass:"content-block__description"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])}
->>>>>>> chore(build): add build
 var staticRenderFns = []
 
-<<<<<<< HEAD
-/***/ }),
-/* 257 */
-/***/ (function(module, exports) {
-=======
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
     ? _exports.options
@@ -15491,29 +9552,10 @@ module.exports = function (_exports) {
   options.staticRenderFns = staticRenderFns
   return _exports
 }
-<<<<<<< HEAD
-var api = null
-if (false) {}
->>>>>>> feat(table-compare): allow 5 columns
 
 
 /***/ }),
-<<<<<<< HEAD
-/* 258 */
-=======
-
-/***/ "./src/js/components/molecules/pager/index.js":
-/*!****************************************************!*\
-  !*** ./src/js/components/molecules/pager/index.js ***!
-  \****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-
-
-/***/ }),
-/* 253 */
->>>>>>> chore(build): add build
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15523,15 +9565,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _fauxVerticalScroll = __webpack_require__(259);
-=======
-var _pager = __webpack_require__(/*! ./pager */ "./src/js/components/molecules/pager/pager.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _contentToggle = __webpack_require__(254);
->>>>>>> chore(build): add build
+var _contentToggle = __webpack_require__(250);
 
 var _contentToggle2 = _interopRequireDefault(_contentToggle);
 
@@ -15540,20 +9574,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _contentToggle2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 259 */
-=======
-
-/***/ "./src/js/components/molecules/pager/pager.js":
-/*!****************************************************!*\
-  !*** ./src/js/components/molecules/pager/pager.js ***!
-  \****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 254 */
->>>>>>> chore(build): add build
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15562,50 +9583,9 @@ exports.default = _contentToggle2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _gsap = __webpack_require__(4);
-
-var _Draggable = __webpack_require__(260);
-
-var _Draggable2 = _interopRequireDefault(_Draggable);
-
-__webpack_require__(261);
-
-var _defaults = __webpack_require__(3);
-=======
-var _gsap = __webpack_require__(/*! gsap */ "gsap");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _viewport = __webpack_require__(/*! utils/viewport */ "./src/js/utils/viewport.js");
-
-var _viewport2 = _interopRequireDefault(_viewport);
-
-<<<<<<< HEAD
-var _browserCapabilities = __webpack_require__(2);
-
-var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
-
-var _fauxVerticalScrollVue = __webpack_require__(263);
-
-var _fauxVerticalScrollVue2 = _interopRequireDefault(_fauxVerticalScrollVue);
-
-=======
->>>>>>> feat(table-compare): allow 5 columns
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-=======
->>>>>>> chore(build): add build
 exports.default = {
     name: 'content-toggle',
-    template: __webpack_require__(255),
+    template: __webpack_require__(251),
     props: {
         toggleState: {
             type: Boolean,
@@ -15644,25 +9624,13 @@ exports.default = {
 };
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 260 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__260__;
-
-/***/ }),
-/* 261 */
-=======
-=======
-/* 255 */
+/* 251 */
 /***/ (function(module, exports) {
 
 module.exports = "<a class=\"toggle toggle--icon\" role=\"button\" tabindex=\"0\" @click=\"toggle\"\n       @keyup.enter=\"toggle\">\n    <icon :icon-name=\"toggleIcon\"></icon>\n    <span>{{ toggleText }}</span>\n</a>\n";
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 256 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15672,7 +9640,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ctaBlock = __webpack_require__(257);
+var _ctaBlock = __webpack_require__(253);
 
 var _ctaBlock2 = _interopRequireDefault(_ctaBlock);
 
@@ -15681,17 +9649,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _ctaBlock2.default;
 
 /***/ }),
-<<<<<<< HEAD
-
-/***/ "./src/js/components/molecules/product/product.ts":
-/*!********************************************************!*\
-  !*** ./src/js/components/molecules/product/product.ts ***!
-  \********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 257 */
->>>>>>> chore(build): add build
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15707,15 +9665,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _TweenLite = __webpack_require__(262);
-=======
-var _productVue = __webpack_require__(/*! ./product.vue.html */ "./src/js/components/molecules/product/product.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _ctaBlockVue = __webpack_require__(258);
->>>>>>> chore(build): add build
+var _ctaBlockVue = __webpack_require__(254);
 
 var _ctaBlockVue2 = _interopRequireDefault(_ctaBlockVue);
 
@@ -15795,7 +9745,7 @@ CtaBlock = __decorate([_ctaBlockVue2.default, (0, _vuePropertyDecorator.Componen
 exports.default = CtaBlock;
 
 /***/ }),
-/* 258 */
+/* 254 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.ctas.length > 0)?_c('div',{staticClass:"cta-block",class:_vm.classMod},[_vm._l((_vm.ctas),function(cta,index){return [_c(cta.type,_vm._b({key:index,tag:"component",class:_vm.classObject(cta.type),attrs:{"label":cta.label,"mod":_vm.modifier(cta.type)}},'component',cta,false))]})],2):_vm._e()}
@@ -15812,7 +9762,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 259 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15822,7 +9772,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _currency = __webpack_require__(260);
+var _currency = __webpack_require__(256);
 
 var _currency2 = _interopRequireDefault(_currency);
 
@@ -15831,7 +9781,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _currency2.default;
 
 /***/ }),
-/* 260 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15849,7 +9799,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'currency',
-    template: __webpack_require__(261),
+    template: __webpack_require__(257),
     props: {
         amount: {
             type: Number,
@@ -15871,13 +9821,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 261 */
+/* 257 */
 /***/ (function(module, exports) {
 
 module.exports = "<span class=\"currency\">\n    <span class=\"currency__type\">{{ currencyType }}</span>\n    {{ formattedAmount }}\n</span>\n";
 
 /***/ }),
-/* 262 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15887,7 +9837,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _fauxVerticalScroll = __webpack_require__(263);
+var _fauxVerticalScroll = __webpack_require__(259);
 
 var _fauxVerticalScroll2 = _interopRequireDefault(_fauxVerticalScroll);
 
@@ -15896,7 +9846,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _fauxVerticalScroll2.default;
 
 /***/ }),
-/* 263 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15914,11 +9864,11 @@ var _vuePropertyDecorator = __webpack_require__(0);
 
 var _gsap = __webpack_require__(4);
 
-var _Draggable = __webpack_require__(264);
+var _Draggable = __webpack_require__(260);
 
 var _Draggable2 = _interopRequireDefault(_Draggable);
 
-__webpack_require__(265);
+__webpack_require__(261);
 
 var _defaults = __webpack_require__(3);
 
@@ -15932,7 +9882,7 @@ var _browserCapabilities = __webpack_require__(2);
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
-var _fauxVerticalScrollVue = __webpack_require__(267);
+var _fauxVerticalScrollVue = __webpack_require__(263);
 
 var _fauxVerticalScrollVue2 = _interopRequireDefault(_fauxVerticalScrollVue);
 
@@ -16091,13 +10041,13 @@ FauxVerticalScroll = __decorate([_fauxVerticalScrollVue2.default, (0, _vueProper
 exports.default = FauxVerticalScroll;
 
 /***/ }),
-/* 264 */
+/* 260 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__264__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__260__;
 
 /***/ }),
-/* 265 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16123,7 +10073,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
  * @author: Jack Doyle, jack@greensock.com
  */
 
-var _TweenLite = __webpack_require__(266);
+var _TweenLite = __webpack_require__(262);
 
 _TweenLite._gsScope._gsDefine("plugins.ThrowPropsPlugin", ["utils.VelocityTracker", "plugins.TweenPlugin", "TweenLite", "easing.Ease"], function (VelocityTracker) {
 
@@ -16821,20 +10771,6 @@ _TweenLite._gsScope._gsDefine("utils.VelocityTracker", ["TweenLite"], function (
 		return vt;
 	};
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 262 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__262__;
-
-/***/ }),
-/* 263 */
-/***/ (function(module, exports) {
-=======
-        var _this = _possibleConstructorReturn(this, (SearchBar.__proto__ || Object.getPrototypeOf(SearchBar)).apply(this, arguments));
-=======
 	VelocityTracker.untrack = function (target, props) {
 		var vt = getByTarget(target),
 		    a = (props || "").split(","),
@@ -16856,7 +10792,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__262__;
 			}
 		}
 	};
->>>>>>> chore(build): add build
 
 	VelocityTracker.isTracking = function (target, prop) {
 		var vt = getByTarget(target);
@@ -16871,17 +10806,13 @@ exports.default = ThrowPropsPlugin;
 var VelocityTracker = exports.VelocityTracker = _TweenLite.globals.com.greensock.utils.VelocityTracker;
 
 /***/ }),
-<<<<<<< HEAD
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 266 */
+/* 262 */
 /***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__266__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__262__;
 
 /***/ }),
-/* 267 */
+/* 263 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"container",staticClass:"faux-vertical-scroll"},[_c('div',{ref:"content",staticClass:"faux-vertical-scroll__content"},[_vm._t("default")],2),_vm._v(" "),_c('div',{ref:"bar",staticClass:"faux-vertical-scroll__bar",style:(_vm.barStyle())})])}
@@ -16898,20 +10829,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 264 */
-=======
-
-/***/ "./src/js/components/molecules/search-result/index.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/molecules/search-result/index.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 268 */
->>>>>>> chore(build): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16921,15 +10839,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _filterCategory = __webpack_require__(265);
-=======
-var _searchResult = __webpack_require__(/*! ./search-result */ "./src/js/components/molecules/search-result/search-result.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _filterCategory = __webpack_require__(269);
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -16939,20 +10849,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 265 */
-=======
-
-/***/ "./src/js/components/molecules/search-result/search-result.ts":
-/*!********************************************************************!*\
-  !*** ./src/js/components/molecules/search-result/search-result.ts ***!
-  \********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 269 */
->>>>>>> chore(build): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16969,19 +10866,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-<<<<<<< HEAD
-var _filterCategoryVue = __webpack_require__(266);
-=======
-var _searchResultVue = __webpack_require__(/*! ./search-result.vue.html */ "./src/js/components/molecules/search-result/search-result.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _filterCategoryVue = __webpack_require__(270);
+var _filterCategoryVue = __webpack_require__(266);
 
 var _filterCategoryVue2 = _interopRequireDefault(_filterCategoryVue);
 
@@ -17092,73 +10979,25 @@ var FilterCategory = function (_Vue) {
         }
     }]);
 
-<<<<<<< HEAD
-    return SearchResult;
+    return FilterCategory;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchResult.prototype, "terms", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchResult.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchResult.prototype, "link", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchResult.prototype, "snippet", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchResult.prototype, "formattedUrl", void 0);
-exports.SearchResult = SearchResult = __decorate([_searchResultVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'SearchResult'
-})], SearchResult);
-exports.SearchResult = SearchResult;
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, default: function _default() {
+        return [];
+    } }), __metadata("design:type", Object)], FilterCategory.prototype, "activeFilters", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], FilterCategory.prototype, "labels", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], FilterCategory.prototype, "eventChange", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], FilterCategory.prototype, "showAllLabel", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], FilterCategory.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Watch)('activeFilters'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], FilterCategory.prototype, "watchActiveFilters", null);
+exports.FilterCategory = FilterCategory = __decorate([_filterCategoryVue2.default, (0, _vuePropertyDecorator.Component)({ name: 'FilterCategory' })], FilterCategory);
+exports.FilterCategory = FilterCategory;
 
 /***/ }),
-<<<<<<< HEAD
 /* 266 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
 
-/***/ "./src/js/components/molecules/search-result/search-result.vue.html":
-/*!**************************************************************************!*\
-  !*** ./src/js/components/molecules/search-result/search-result.vue.html ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass: "search-result",
-      class: { "search-result--focus": _vm.focused }
-    },
-    [
-      _c("h3", { staticClass: "search-result__title" }, [
-        _c("a", {
-          staticClass: "search-result__link",
-          attrs: { href: _vm.link },
-          domProps: { innerHTML: _vm._s(_vm.computedTitle) },
-          on: {
-            focus: function($event) {
-              _vm.focused = !_vm.focused
-            },
-            blur: function($event) {
-              _vm.focused = !_vm.focused
-            }
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _c("p", {
-        staticClass: "search-result__snippet",
-        domProps: { innerHTML: _vm._s(_vm.computedSnippet) }
-      }),
-      _vm._v(" "),
-      _c("p", { staticClass: "search-result__url" }, [
-        _vm._v("\n        " + _vm._s(_vm.formattedUrl) + "\n    ")
-      ])
-    ]
-  )
-}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"filter-category"},[_c('h4',{staticClass:"filter-category__title"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('form',[_c('input',{staticClass:"filter-category__reset",class:_vm.checkResetFiltersState,attrs:{"type":"reset"},domProps:{"value":_vm.showAllLabel},on:{"click":_vm.resetFilters}}),_vm._v(" "),_c('ul',{staticClass:"filter-category__list"},_vm._l((_vm.labels),function(label,key){return _c('li',{key:key,staticClass:"filter-category__list-item"},[_c('label-filter',{attrs:{"disabled":_vm.isFilterDisabled(label),"eventChange":_vm.eventLabelFilterChange,"label":label,"name":_vm.showAllLabel,"value":label},on:_vm._d({},[_vm.eventLabelFilterChange,_vm.handleLabelFilterChange])})],1)}),0)])])}
 var staticRenderFns = []
-render._withStripped = true
 
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
@@ -17166,24 +11005,12 @@ module.exports = function (_exports) {
     : _exports
   options.render = render
   options.staticRenderFns = staticRenderFns
-  if (false) {}
   return _exports
 }
-var api = null
-if (false) {}
 
 
 /***/ }),
-<<<<<<< HEAD
 /* 267 */
-=======
-
-/***/ "./src/js/components/molecules/social-nav/index.ts":
-/*!*********************************************************!*\
-  !*** ./src/js/components/molecules/social-nav/index.ts ***!
-  \*********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17193,29 +11020,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
 var _flyout = __webpack_require__(268);
-=======
-var _socialNav = __webpack_require__(/*! ./social-nav */ "./src/js/components/molecules/social-nav/social-nav.ts");
->>>>>>> feat(table-compare): allow 5 columns
 
-var _socialNav2 = _interopRequireDefault(_socialNav);
+var _flyout2 = _interopRequireDefault(_flyout);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = _socialNav2.default;
+exports.default = _flyout2.default;
 
 /***/ }),
-<<<<<<< HEAD
 /* 268 */
-=======
-
-/***/ "./src/js/components/molecules/social-nav/social-nav.ts":
-/*!**************************************************************!*\
-  !*** ./src/js/components/molecules/social-nav/social-nav.ts ***!
-  \**************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17225,9 +11039,10 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
 var _vuePropertyDecorator = __webpack_require__(0);
 
 var _viewport = __webpack_require__(1);
@@ -17313,529 +11128,6 @@ var Flyout = function (_Vue) {
 
                             case 3:
                                 this.flyoutSections[this.sectionIndex].selectFirstLink();
-
-                            case 4:
-                            case "end":
-                                return _context.stop();
-                        }
-                    }
-                }, _callee, this);
-            }));
-
-            function selectFirstLink() {
-                return _ref.apply(this, arguments);
-            }
-
-            return selectFirstLink;
-        }()
-    }, {
-        key: "selectNextLink",
-        value: function selectNextLink(e) {
-            if (this.disableKeyboardEvents) {
-                return;
-            }
-            e.preventDefault();
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _socialNavVue = __webpack_require__(/*! ./social-nav.vue.html */ "./src/js/components/molecules/social-nav/social-nav.vue.html");
-
-var _socialNavVue2 = _interopRequireDefault(_socialNavVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var SocialNav = function (_Vue) {
-    _inherits(SocialNav, _Vue);
-
-    function SocialNav() {
-        _classCallCheck(this, SocialNav);
-
-        return _possibleConstructorReturn(this, (SocialNav.__proto__ || Object.getPrototypeOf(SocialNav)).apply(this, arguments));
-    }
-
-    return SocialNav;
-=======
-    return FilterCategory;
->>>>>>> chore(build): add build
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, default: function _default() {
-        return [];
-    } }), __metadata("design:type", Object)], FilterCategory.prototype, "activeFilters", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], FilterCategory.prototype, "labels", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], FilterCategory.prototype, "eventChange", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], FilterCategory.prototype, "showAllLabel", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], FilterCategory.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Watch)('activeFilters'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], FilterCategory.prototype, "watchActiveFilters", null);
-exports.FilterCategory = FilterCategory = __decorate([_filterCategoryVue2.default, (0, _vuePropertyDecorator.Component)({ name: 'FilterCategory' })], FilterCategory);
-exports.FilterCategory = FilterCategory;
-
-/***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 269 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/social-nav/social-nav.vue.html":
-/*!********************************************************************!*\
-  !*** ./src/js/components/molecules/social-nav/social-nav.vue.html ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("nav", { staticClass: "social-nav footer__social-nav" }, [
-    _c(
-      "ul",
-      {
-        staticClass: "social-nav__list",
-        attrs: { "aria-label": "follow Ultimaker" }
-      },
-      [
-        _c("li", { staticClass: "social-nav__item footer__social-item" }, [
-          _c(
-            "a",
-            {
-              staticClass: "social-nav__link icon-button icon-button--small",
-              attrs: {
-                href: "https://nl.linkedin.com/company/ultimaker",
-                "aria-label": "LinkedIn"
-              }
-            },
-            [
-              _c("icon", {
-                staticClass: "social-nav__icon",
-                attrs: { "icon-name": "linkedin" }
-              })
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "social-nav__item footer__social-item" }, [
-          _c(
-            "a",
-            {
-              staticClass: "social-nav__link icon-button icon-button--small",
-              attrs: {
-                href: "https://twitter.com/Ultimaker",
-                "aria-label": "Twitter"
-              }
-            },
-            [
-              _c("icon", {
-                staticClass: "social-nav__icon",
-                attrs: { "icon-name": "twitter" }
-              })
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "social-nav__item footer__social-item" }, [
-          _c(
-            "a",
-            {
-              staticClass: "social-nav__link icon-button icon-button--small",
-              attrs: {
-                href: "https://www.youtube.com/user/Ultimaker3D",
-                "aria-label": "YouTube"
-              }
-            },
-            [
-              _c("icon", {
-                staticClass: "social-nav__icon",
-                attrs: { "icon-name": "youtube" }
-              })
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "social-nav__item footer__social-item" }, [
-          _c(
-            "a",
-            {
-              staticClass: "social-nav__link icon-button icon-button--small",
-              attrs: {
-                href: "https://www.facebook.com/Ultimaker",
-                "aria-label": "Facebook"
-              }
-            },
-            [
-              _c("icon", {
-                staticClass: "social-nav__icon",
-                attrs: { "icon-name": "facebook" }
-              })
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "social-nav__item footer__social-item" }, [
-          _c(
-            "a",
-            {
-              staticClass: "social-nav__link icon-button icon-button--small",
-              attrs: {
-                href: "http://instagram.com/ultimaker",
-                "aria-label": "Instagram"
-              }
-            },
-            [
-              _c("icon", {
-                staticClass: "social-nav__icon",
-                attrs: { "icon-name": "instagram" }
-              })
-            ],
-            1
-          )
-        ])
-      ]
-    )
-  ])
-}
-=======
-/* 270 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"filter-category"},[_c('h4',{staticClass:"filter-category__title"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('form',[_c('input',{staticClass:"filter-category__reset",class:_vm.checkResetFiltersState,attrs:{"type":"reset"},domProps:{"value":_vm.showAllLabel},on:{"click":_vm.resetFilters}}),_vm._v(" "),_c('ul',{staticClass:"filter-category__list"},_vm._l((_vm.labels),function(label,key){return _c('li',{key:key,staticClass:"filter-category__list-item"},[_c('label-filter',{attrs:{"disabled":_vm.isFilterDisabled(label),"eventChange":_vm.eventLabelFilterChange,"label":label,"name":_vm.showAllLabel,"value":label},on:_vm._d({},[_vm.eventLabelFilterChange,_vm.handleLabelFilterChange])})],1)}),0)])])}
->>>>>>> chore(build): add build
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 270 */
-=======
-
-/***/ "./src/js/components/molecules/social-sharing/index.ts":
-/*!*************************************************************!*\
-  !*** ./src/js/components/molecules/social-sharing/index.ts ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 271 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _flyoutSection = __webpack_require__(271);
-
-var _flyoutSection2 = _interopRequireDefault(_flyoutSection);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _socialSharing = __webpack_require__(/*! ./social-sharing */ "./src/js/components/molecules/social-sharing/social-sharing.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _flyout = __webpack_require__(272);
->>>>>>> chore(build): add build
-
-var _flyout2 = _interopRequireDefault(_flyout);
-
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 271 */
-=======
-
-/***/ "./src/js/components/molecules/social-sharing/social-sharing.ts":
-/*!**********************************************************************!*\
-  !*** ./src/js/components/molecules/social-sharing/social-sharing.ts ***!
-  \**********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _flyout2.default;
-
-/***/ }),
-/* 272 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _flyoutSectionVue = __webpack_require__(272);
-=======
-var _socialSharingVue = __webpack_require__(/*! ./social-sharing.vue.html */ "./src/js/components/molecules/social-sharing/social-sharing.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _viewport = __webpack_require__(1);
->>>>>>> chore(build): add build
-
-var _viewport2 = _interopRequireDefault(_viewport);
-
-var _flyoutVue = __webpack_require__(273);
-
-var _flyoutVue2 = _interopRequireDefault(_flyoutVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var Flyout = function (_Vue) {
-    _inherits(Flyout, _Vue);
-
-    function Flyout() {
-        _classCallCheck(this, Flyout);
-
-        var _this = _possibleConstructorReturn(this, (Flyout.__proto__ || Object.getPrototypeOf(Flyout)).apply(this, arguments));
-
-        _this.sectionIndex = 0;
-        _this.viewportUtil = new _viewport2.default();
-        return _this;
-    }
-
-    _createClass(Flyout, [{
-        key: "open",
-        value: function open() {
-            this.$emit('open');
-        }
-    }, {
-        key: "close",
-        value: function close() {
-            this.reset();
-            this.$emit('close');
-        }
-<<<<<<< HEAD
-    }]);
-
-    return SocialSharing;
-}(_vuePropertyDecorator.Vue);
-exports.SocialSharing = SocialSharing = __decorate([_socialSharingVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'SocialSharing'
-})], SocialSharing);
-exports.SocialSharing = SocialSharing;
-
-/***/ }),
-<<<<<<< HEAD
-/* 272 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/social-sharing/social-sharing.vue.html":
-/*!****************************************************************************!*\
-  !*** ./src/js/components/molecules/social-sharing/social-sharing.vue.html ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "social-sharing" },
-    [
-      _vm._l(_vm.items, function(item) {
-        return [
-          _c(
-            "a",
-            {
-              staticClass: "social-sharing__link",
-              attrs: { href: _vm.url(item), target: "_blank" }
-            },
-            [
-              _c("span", { staticClass: "social-sharing__text" }, [
-                _vm._v(_vm._s(item.label))
-              ]),
-              _vm._v(" "),
-              _c("icon", {
-                staticClass: "social-sharing__icon",
-                attrs: { "icon-name": item.iconName }
-              })
-            ],
-            1
-          )
-        ]
-      })
-    ],
-    2
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  if (false) {}
-  return _exports
-}
-var api = null
-if (false) {}
-
-
-/***/ }),
-<<<<<<< HEAD
-/* 273 */
-=======
-
-/***/ "./src/js/components/molecules/subnavigation-item/index.ts":
-/*!*****************************************************************!*\
-  !*** ./src/js/components/molecules/subnavigation-item/index.ts ***!
-  \*****************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-var _footerBlock = __webpack_require__(274);
-=======
-var _subnavigationItem = __webpack_require__(/*! ./subnavigation-item */ "./src/js/components/molecules/subnavigation-item/subnavigation-item.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _subnavigationItem2 = _interopRequireDefault(_subnavigationItem);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _subnavigationItem2.default;
-
-/***/ }),
-<<<<<<< HEAD
-/* 274 */
-=======
-
-/***/ "./src/js/components/molecules/subnavigation-item/subnavigation-item.ts":
-/*!******************************************************************************!*\
-  !*** ./src/js/components/molecules/subnavigation-item/subnavigation-item.ts ***!
-  \******************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-=======
-    }, {
-        key: "backToParent",
-        value: function backToParent() {
-            this.$emit('main');
-            this.close();
-        }
-    }, {
-        key: "reset",
-        value: function reset() {
-            this.sectionIndex = 0;
->>>>>>> chore(build): add build
-
-            this.flyoutSections.forEach(function (s) {
-                return s && s.reset && s.reset();
-            });
-        }
-    }, {
-        key: "selectFirstLink",
-        value: function () {
-            var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
-                return regeneratorRuntime.wrap(function _callee$(_context) {
-                    while (1) {
-                        switch (_context.prev = _context.next) {
-                            case 0:
-                                this.reset();
-                                _context.next = 3;
-                                return this.$nextTick();
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _footerBlockVue = __webpack_require__(275);
-=======
-var _subnavigationItemVue = __webpack_require__(/*! ./subnavigation-item.vue.html */ "./src/js/components/molecules/subnavigation-item/subnavigation-item.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-                            case 3:
-                                this.flyoutSections[this.sectionIndex].selectFirstLink();
->>>>>>> chore(build): add build
 
                             case 4:
                             case "end":
@@ -17947,16 +11239,8 @@ Flyout = __decorate([_flyoutVue2.default, (0, _vuePropertyDecorator.Component)({
 exports.default = Flyout;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 275 */
+/* 269 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 273 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.items && _vm.items.length > 0)?_c('ul',{directives:[{name:"show",rawName:"v-show",value:(_vm.isCompact || !_vm.viewportUtil.isResizing),expression:"isCompact || !viewportUtil.isResizing"}],staticClass:"main-nav__flyout",on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }return _vm.selectNextLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if($event.ctrlKey||$event.shiftKey||$event.altKey||$event.metaKey){ return null; }return _vm.selectNextLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"up",38,$event.key,["Up","ArrowUp"])){ return null; }return _vm.selectPrevLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }if($event.ctrlKey||$event.altKey||$event.metaKey){ return null; }return _vm.selectPrevLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"right",39,$event.key,["Right","ArrowRight"])){ return null; }if('button' in $event && $event.button !== 2){ return null; }return _vm.selectNextSection($event, true)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"left",37,$event.key,["Left","ArrowLeft"])){ return null; }if('button' in $event && $event.button !== 0){ return null; }return _vm.selectPrevSection($event, true)}],"mouseenter":function($event){$event.stopPropagation();return _vm.open($event)}}},_vm._l((_vm.items),function(item,key){return (item.items && item.items.length)?_c('flyout-section',_vm._b({key:key,ref:"items",refInFor:true,attrs:{"is-compact":_vm.isCompact,"itemId":("flyout_title_" + _vm.uniqId + "_" + key)},on:{"close":function($event){return _vm.$emit('close')}}},'flyout-section',item,false)):_vm._e()}),1):_vm._e()}
 var staticRenderFns = []
@@ -17972,20 +11256,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 276 */
-=======
-
-/***/ "./src/js/components/molecules/sys-nav/index.ts":
-/*!******************************************************!*\
-  !*** ./src/js/components/molecules/sys-nav/index.ts ***!
-  \******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 274 */
->>>>>>> chore(build): add build
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17995,15 +11266,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _footerNavigationCategory = __webpack_require__(277);
-=======
-var _sysNav = __webpack_require__(/*! ./sys-nav */ "./src/js/components/molecules/sys-nav/sys-nav.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _flyoutSection = __webpack_require__(275);
->>>>>>> chore(build): add build
+var _flyoutSection = __webpack_require__(271);
 
 var _flyoutSection2 = _interopRequireDefault(_flyoutSection);
 
@@ -18012,20 +11275,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _flyoutSection2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 277 */
-=======
-
-/***/ "./src/js/components/molecules/sys-nav/sys-nav.ts":
-/*!********************************************************!*\
-  !*** ./src/js/components/molecules/sys-nav/sys-nav.ts ***!
-  \********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 275 */
->>>>>>> chore(build): add build
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18041,15 +11291,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _footerNavigationCategoryVue = __webpack_require__(278);
-=======
-var _sysNavVue = __webpack_require__(/*! ./sys-nav.vue.html */ "./src/js/components/molecules/sys-nav/sys-nav.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _flyoutSectionVue = __webpack_require__(276);
->>>>>>> chore(build): add build
+var _flyoutSectionVue = __webpack_require__(272);
 
 var _flyoutSectionVue2 = _interopRequireDefault(_flyoutSectionVue);
 
@@ -18231,16 +11473,8 @@ Flyout = __decorate([_flyoutSectionVue2.default, (0, _vuePropertyDecorator.Compo
 exports.default = Flyout;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 278 */
+/* 272 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 276 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"flyout__section",class:_vm.sectionClass},[(_vm.label)?_c('strong',{staticClass:"flyout__title",attrs:{"id":_vm.itemId}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"flyout__list",attrs:{"aria-labelledby":_vm.itemId,"aria-haspopup":_vm.items.length > _vm.maxVisible,"aria-expanded":!_vm.isCompact || _vm.isExpanded}},[_vm._l((_vm.items),function(item,index){return (index < _vm.maxVisible)?_c('li',{staticClass:"flyout__list-item"},[_c('content-link',{ref:"firstFocusableLinks",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && ! _vm.isExpanded),expression:"flyoutToggleIsVisible && ! isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:_vm.flyoutToggleIsVisible && ! _vm.isExpanded ? 'focusable' : '',staticClass:"flyout__toggle",attrs:{"toggle-state":false,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1),_vm._v(" "),_vm._l((_vm.items),function(item,index){return (index >= _vm.maxVisible)?_c('li',{directives:[{name:"show",rawName:"v-show",value:(!_vm.isCompact || _vm.isExpanded),expression:"!isCompact || isExpanded"}],staticClass:"flyout__list-item"},[_c('content-link',{ref:"focusable",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && _vm.isExpanded),expression:"flyoutToggleIsVisible && isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:"flyoutToggleIsVisible && isExpanded ? 'focusable' : ''",staticClass:"flyout__toggle",attrs:{"toggle-state":true,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1)],2),_vm._v(" "),(_vm.bottomItem)?[_c('content-link',{ref:"bottomLink",staticClass:"link flyout__link--cta-mini",attrs:{"url":_vm.bottomItem.url,"label":_vm.bottomItem.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})]:_vm._e()],2)}
 var staticRenderFns = []
@@ -18256,20 +11490,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 279 */
-=======
-
-/***/ "./src/js/components/molecules/tab-table-row/index.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/molecules/tab-table-row/index.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 277 */
->>>>>>> chore(build): add build
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18279,42 +11500,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _headerBlock = __webpack_require__(280);
-
-var _headerBlock2 = _interopRequireDefault(_headerBlock);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _tabTableRow = __webpack_require__(/*! ./tab-table-row */ "./src/js/components/molecules/tab-table-row/tab-table-row.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _footerBlock = __webpack_require__(278);
->>>>>>> chore(build): add build
+var _footerBlock = __webpack_require__(274);
 
 var _footerBlock2 = _interopRequireDefault(_footerBlock);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 280 */
-=======
-
-/***/ "./src/js/components/molecules/tab-table-row/tab-table-row.ts":
-/*!********************************************************************!*\
-  !*** ./src/js/components/molecules/tab-table-row/tab-table-row.ts ***!
-  \********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _footerBlock2.default;
 
 /***/ }),
-/* 278 */
->>>>>>> chore(build): add build
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18328,7 +11523,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _footerBlockVue = __webpack_require__(279);
+var _footerBlockVue = __webpack_require__(275);
 
 var _footerBlockVue2 = _interopRequireDefault(_footerBlockVue);
 
@@ -18363,32 +11558,6 @@ var FooterBlock = function (_Vue) {
 
     return FooterBlock;
 }(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-<<<<<<< HEAD
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeaderBlock.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeaderBlock.prototype, "subtitle", void 0);
-HeaderBlock = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'HeaderBlock',
-    template: __webpack_require__(281)
-})], HeaderBlock);
-exports.default = HeaderBlock;
-
-/***/ }),
-/* 281 */
-/***/ (function(module, exports) {
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], TabTableRow.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], TabTableRow.prototype, "value", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Object)], TabTableRow.prototype, "linkList", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], TabTableRow.prototype, "tooltip", void 0);
-exports.TabTableRow = TabTableRow = __decorate([_tabTableRowVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'TabTableRow'
-})], TabTableRow);
-exports.TabTableRow = TabTableRow;
-
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], FooterBlock.prototype, "ctas", void 0);
 FooterBlock = __decorate([_footerBlockVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'FooterBlock'
@@ -18396,9 +11565,8 @@ FooterBlock = __decorate([_footerBlockVue2.default, (0, _vuePropertyDecorator.Co
 exports.default = FooterBlock;
 
 /***/ }),
-/* 279 */
+/* 275 */
 /***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer-block"},[(_vm.ctas)?_c('cta-block',{attrs:{"ctas":_vm.ctas.ctas,"styleContentButton":"button","mod":"footer","block":"overview"}}):_vm._e()],1)}
 var staticRenderFns = []
@@ -18414,20 +11582,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 282 */
-=======
-
-/***/ "./src/js/components/molecules/tab-table/index.ts":
-/*!********************************************************!*\
-  !*** ./src/js/components/molecules/tab-table/index.ts ***!
-  \********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 280 */
->>>>>>> chore(build): add build
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18437,19 +11592,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroHeading = __webpack_require__(283);
-
-var _heroHeading2 = _interopRequireDefault(_heroHeading);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _tabTable = __webpack_require__(/*! ./tab-table */ "./src/js/components/molecules/tab-table/tab-table.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _footerNavigationCategory = __webpack_require__(281);
->>>>>>> chore(build): add build
+var _footerNavigationCategory = __webpack_require__(277);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -18459,20 +11602,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 283 */
-=======
-
-/***/ "./src/js/components/molecules/tab-table/tab-table.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/molecules/tab-table/tab-table.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 281 */
->>>>>>> chore(build): add build
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18487,7 +11617,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _footerNavigationCategoryVue = __webpack_require__(282);
+var _footerNavigationCategoryVue = __webpack_require__(278);
 
 var _footerNavigationCategoryVue2 = _interopRequireDefault(_footerNavigationCategoryVue);
 
@@ -18522,32 +11652,6 @@ var FooterNavigationCategory = function (_Vue) {
 
     return FooterNavigationCategory;
 }(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-<<<<<<< HEAD
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], HeroHeading.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeroHeading.prototype, "subtitle", void 0);
-HeroHeading = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'HeroHeading',
-    template: __webpack_require__(284)
-})], HeroHeading);
-exports.default = HeroHeading;
-
-/***/ }),
-/* 284 */
-/***/ (function(module, exports) {
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], TabTable.prototype, "id", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], TabTable.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], TabTable.prototype, "rows", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], TabTable.prototype, "active", void 0);
-exports.TabTable = TabTable = __decorate([_tabTableVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'TabTable'
-})], TabTable);
-exports.TabTable = TabTable;
-
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], FooterNavigationCategory.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Object)], FooterNavigationCategory.prototype, "items", void 0);
 exports.FooterNavigationCategory = FooterNavigationCategory = __decorate([_footerNavigationCategoryVue2.default, (0, _vuePropertyDecorator.Component)({
@@ -18556,9 +11660,8 @@ exports.FooterNavigationCategory = FooterNavigationCategory = __decorate([_foote
 exports.FooterNavigationCategory = FooterNavigationCategory;
 
 /***/ }),
-/* 282 */
+/* 278 */
 /***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.items.length)?_c('div',{staticClass:"footer-navigation-category__column"},[_c('h3',{staticClass:"footer-navigation-category__title"},[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),(_vm.items && _vm.items.length)?_c('ul',{staticClass:"footer-navigation-category__list"},_vm._l((_vm.items),function(link){return _c('li',{staticClass:"footer-navigation-category__item"},[_c('content-link',_vm._b({staticClass:"footer-navigation-category__link link link--reversed"},'content-link',link,false))],1)}),0):_vm._e()]):_vm._e()}
 var staticRenderFns = []
@@ -18574,20 +11677,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 285 */
-=======
-
-/***/ "./src/js/components/molecules/tab/index.ts":
-/*!**************************************************!*\
-  !*** ./src/js/components/molecules/tab/index.ts ***!
-  \**************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 283 */
->>>>>>> chore(build): add build
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18597,15 +11687,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _iconButton = __webpack_require__(286);
-=======
-var _tab = __webpack_require__(/*! ./tab */ "./src/js/components/molecules/tab/tab.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _headerBlock = __webpack_require__(284);
->>>>>>> chore(build): add build
+var _headerBlock = __webpack_require__(280);
 
 var _headerBlock2 = _interopRequireDefault(_headerBlock);
 
@@ -18614,20 +11696,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _headerBlock2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 286 */
-=======
-
-/***/ "./src/js/components/molecules/tab/tab.ts":
-/*!************************************************!*\
-  !*** ./src/js/components/molecules/tab/tab.ts ***!
-  \************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 284 */
->>>>>>> chore(build): add build
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18639,21 +11708,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _vuePropertyDecorator = __webpack_require__(0);
-
-var _iconButtonVue = __webpack_require__(287);
-
-var _iconButtonVue2 = _interopRequireDefault(_iconButtonVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -18688,48 +11743,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeaderBlock.prototype, "subtitle", void 0);
 HeaderBlock = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'HeaderBlock',
-    template: __webpack_require__(285)
+    template: __webpack_require__(281)
 })], HeaderBlock);
 exports.default = HeaderBlock;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 287 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"icon-button",class:_vm.buttonClass,attrs:{"aria-label":_vm.buttonAriaLabel,"aria-disabled":_vm.disabled,"role":"button","tabindex":"0"},on:{"click":function($event){return _vm.$emit('click')},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.$emit('click')}}},[_c('icon',{staticClass:"icon-button__icon",attrs:{"icon-name":_vm.iconName}}),_vm._v(" "),(_vm.hasDefaultSlot)?_c('span',{staticClass:"icon-button__label"},[_vm._t("default")],2):_vm._e()],1)}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 288 */
-=======
-
-/***/ "./src/js/components/molecules/tabs/index.ts":
-/*!***************************************************!*\
-  !*** ./src/js/components/molecules/tabs/index.ts ***!
-  \***************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 285 */
+/* 281 */
 /***/ (function(module, exports) {
 
 module.exports = "<header class=\"header-block\">\n    <slot>\n        <h2 class=\"header-block__title\" v-if=\"title\">{{ title }}</h2>\n        <p class=\"header-block__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n    </slot>\n</header>\n";
 
 /***/ }),
-/* 286 */
->>>>>>> chore(build): add build
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18739,15 +11764,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _listSection = __webpack_require__(289);
-=======
-var _tabs = __webpack_require__(/*! ./tabs */ "./src/js/components/molecules/tabs/tabs.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _heroHeading = __webpack_require__(287);
->>>>>>> chore(build): add build
+var _heroHeading = __webpack_require__(283);
 
 var _heroHeading2 = _interopRequireDefault(_heroHeading);
 
@@ -18756,20 +11773,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroHeading2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 289 */
-=======
-
-/***/ "./src/js/components/molecules/tabs/tabs.ts":
-/*!**************************************************!*\
-  !*** ./src/js/components/molecules/tabs/tabs.ts ***!
-  \**************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 287 */
->>>>>>> chore(build): add build
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18781,49 +11785,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _vuePropertyDecorator = __webpack_require__(0);
-
-var _listSectionVue = __webpack_require__(290);
-
-var _listSectionVue2 = _interopRequireDefault(_listSectionVue);
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _browserCapabilities = __webpack_require__(/*! utils/browser-capabilities */ "./src/js/utils/browser-capabilities.js");
-
-var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
-
-var _viewport = __webpack_require__(/*! utils/viewport */ "./src/js/utils/viewport.js");
-
-var _viewport2 = _interopRequireDefault(_viewport);
-
-var _gsap = __webpack_require__(/*! gsap */ "gsap");
-
-var _defaults = __webpack_require__(/*! constants/defaults */ "./src/js/constants/defaults.js");
-
-<<<<<<< HEAD
-var _getFiltersInCardCollection = __webpack_require__(291);
-
-var _getFilteredCardsFromActiveFilterCategories = __webpack_require__(292);
-
-var _updateActiveFilterCategories = __webpack_require__(294);
-=======
-var _defaults2 = _interopRequireDefault(_defaults);
-
-var _tabsVue = __webpack_require__(/*! ./tabs.vue.html */ "./src/js/components/molecules/tabs/tabs.vue.html");
-
-var _tabsVue2 = _interopRequireDefault(_tabsVue);
->>>>>>> feat(table-compare): allow 5 columns
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-=======
-var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -18843,255 +11805,8 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-<<<<<<< HEAD
-var Tabs = function (_Vue) {
-    _inherits(Tabs, _Vue);
-
-    function Tabs() {
-        _classCallCheck(this, Tabs);
-
-        var _this = _possibleConstructorReturn(this, (Tabs.__proto__ || Object.getPrototypeOf(Tabs)).apply(this, arguments));
-
-        _this.activeTab = 0;
-        _this.viewportUtil = new _viewport2.default();
-        _this.correction = 0;
-        return _this;
-    }
-
-    _createClass(Tabs, [{
-        key: "setActiveTab",
-        value: function setActiveTab() {
-            var _this2 = this;
-
-            var tabs = this.$refs.tab;
-            if (!tabs) {
-                return;
-            }
-            tabs[this.activeTab].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-            setTimeout(function () {
-                return _this2.positionIndicator();
-            }, 50);
-        }
-    }, {
-        key: "getLinkClassList",
-        value: function getLinkClassList(index) {
-            return {
-                'tabs__list_link--active': index === this.activeTab
-            };
-        }
-    }, {
-        key: "positionIndicator",
-        value: function () {
-            var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
-                var tabs, _tabs$activeTab, offsetLeft, offsetWidth;
-
-                return regeneratorRuntime.wrap(function _callee$(_context) {
-                    while (1) {
-                        switch (_context.prev = _context.next) {
-                            case 0:
-                                tabs = this.$refs.tab;
-
-                                if (tabs) {
-                                    _context.next = 3;
-                                    break;
-                                }
-
-                                return _context.abrupt("return");
-
-                            case 3:
-                                _tabs$activeTab = tabs[this.activeTab], offsetLeft = _tabs$activeTab.offsetLeft, offsetWidth = _tabs$activeTab.offsetWidth;
-
-                                _gsap.TweenLite.to(this.$refs.indicator, _defaults2.default.defaultDuration, {
-                                    x: offsetLeft - this.correction,
-                                    width: offsetWidth,
-                                    ease: _gsap.Power3.easeOut
-                                });
-
-                            case 5:
-                            case "end":
-                                return _context.stop();
-                        }
-                    }
-                }, _callee, this);
-            }));
-
-            function positionIndicator() {
-                return _ref.apply(this, arguments);
-            }
-
-            return positionIndicator;
-        }()
-    }, {
-        key: "scrollCorrection",
-        value: function scrollCorrection() {
-            var tabList = this.$refs.tabList;
-
-            var tabs = this.$refs.tab;
-            this.correction = tabList.scrollLeft;
-            if (!tabs) {
-                return;
-            }
-            var _tabs$activeTab2 = tabs[this.activeTab],
-                offsetLeft = _tabs$activeTab2.offsetLeft,
-                offsetWidth = _tabs$activeTab2.offsetWidth;
-
-            _gsap.TweenLite.to(this.$refs.indicator, 0, {
-                x: offsetLeft - this.correction,
-                width: offsetWidth,
-                ease: _gsap.Power2.easeOut
-            });
-        }
-    }, {
-        key: "mounted",
-        value: function mounted() {
-            this.activeTab = this.defaultTab;
-            this.viewportUtil.addResizeHandler(this.positionIndicator);
-            this.$refs.tabList.addEventListener('scroll', this.scrollCorrection);
-            if (_browserCapabilities2.default.supportsTouch) {
-                this.$refs.tabList.addEventListener('touchmove', this.scrollCorrection);
-            }
-        }
-    }, {
-        key: "beforeDestroy",
-        value: function beforeDestroy() {
-            this.viewportUtil.removeResizeHandler(this.positionIndicator);
-        }
-    }]);
-
-    return Tabs;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], Tabs.prototype, "tabs", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Number)], Tabs.prototype, "defaultTab", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], Tabs.prototype, "sequenced", void 0);
-__decorate([(0, _vuePropertyDecorator.Watch)('activeTab'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], Tabs.prototype, "setActiveTab", null);
-Tabs = __decorate([_tabsVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'Tabs'
-})], Tabs);
-exports.default = Tabs;
-
-/***/ }),
-<<<<<<< HEAD
-/* 290 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/tabs/tabs.vue.html":
-/*!********************************************************!*\
-  !*** ./src/js/components/molecules/tabs/tabs.vue.html ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm.tabs
-    ? _c(
-        "div",
-        { staticClass: "tabs" },
-        [
-          _c("div", { staticClass: "tabs__nav" }, [
-            _c(
-              "ul",
-              {
-                ref: "tabList",
-                staticClass: "tabs__list",
-                attrs: { role: "tablist" }
-              },
-              [
-                _vm._l(_vm.tabs, function(tab, index) {
-                  return _c(
-                    "li",
-                    {
-                      ref: "tab",
-                      refInFor: true,
-                      staticClass: "tabs__list_item",
-                      attrs: { role: "presentation" }
-                    },
-                    [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "tabs__list_link",
-                          class: _vm.getLinkClassList(index),
-                          attrs: {
-                            href: "#" + tab.id,
-                            role: "tab",
-                            "aria-controls": tab.id,
-                            "aria-selected": _vm.activeTab === index
-                          },
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              _vm.activeTab = index
-                            }
-                          }
-                        },
-                        [
-                          _vm.sequenced
-                            ? _c("span", [_vm._v(_vm._s(index + 1 + ". "))])
-                            : _vm._e(),
-                          _vm._v(
-                            "\n                    " +
-                              _vm._s(tab.label) +
-                              "\n                "
-                          )
-                        ]
-                      )
-                    ]
-                  )
-                }),
-                _vm._v(" "),
-                _c("li", {
-                  ref: "indicator",
-                  staticClass: "tabs__indicator",
-                  attrs: { "aria-hidden": "true", role: "none" }
-                })
-              ],
-              2
-            )
-          ]),
-          _vm._v(" "),
-          _vm._l(_vm.tabs, function(tab, index) {
-            return _c(
-              "div",
-              { staticClass: "tabs__contents" },
-              [
-                [
-                  _c(
-                    tab.type,
-                    _vm._b(
-                      {
-                        key: index,
-                        tag: "component",
-                        attrs: {
-                          id: tab.label + index,
-                          active: _vm.activeTab === index
-                        }
-                      },
-                      "component",
-                      tab,
-                      false
-                    )
-                  )
-                ]
-              ],
-              2
-            )
-          })
-        ],
-        2
-      )
-    : _vm._e()
-}
-var staticRenderFns = []
-render._withStripped = true
-=======
 var HeroHeading = function (_Vue) {
     _inherits(HeroHeading, _Vue);
->>>>>>> chore(build): add build
 
     function HeroHeading() {
         _classCallCheck(this, HeroHeading);
@@ -19105,31 +11820,18 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeroHeading.prototype, "subtitle", void 0);
 HeroHeading = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'HeroHeading',
-    template: __webpack_require__(288)
+    template: __webpack_require__(284)
 })], HeroHeading);
 exports.default = HeroHeading;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 291 */
-=======
-
-/***/ "./src/js/components/molecules/tag-list/index.ts":
-/*!*******************************************************!*\
-  !*** ./src/js/components/molecules/tag-list/index.ts ***!
-  \*******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 288 */
+/* 284 */
 /***/ (function(module, exports) {
 
 module.exports = "<div>\n    <h1 class='hero__title header-block__title--hero'>{{ title }}</h1>\n    <h2 class=\"hero__subtitle header-block__subtitle--hero\" v-if=\"subtitle\">{{ subtitle }}</h2>\n</div>\n";
 
 /***/ }),
-/* 289 */
->>>>>>> chore(build): add build
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19139,50 +11841,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 292 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-=======
-var _tagList = __webpack_require__(/*! ./tag-list */ "./src/js/components/molecules/tag-list/tag-list.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _iconButton = __webpack_require__(290);
->>>>>>> chore(build): add build
+var _iconButton = __webpack_require__(286);
 
 var _iconButton2 = _interopRequireDefault(_iconButton);
 
-<<<<<<< HEAD
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.getFilteredCardsFromActiveFilterCategories = getFilteredCardsFromActiveFilterCategories;
-
-var _getActiveFiltersForCategory = __webpack_require__(293);
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
->>>>>>> feat(table-compare): allow 5 columns
 
 exports.default = _iconButton2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 293 */
-=======
-
-/***/ "./src/js/components/molecules/tag-list/tag-list.ts":
-/*!**********************************************************!*\
-  !*** ./src/js/components/molecules/tag-list/tag-list.ts ***!
-  \**********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 290 */
->>>>>>> chore(build): add build
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19192,44 +11860,23 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 294 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-=======
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
->>>>>>> chore(build): add build
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
->>>>>>> feat(table-compare): allow 5 columns
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _iconButtonVue = __webpack_require__(291);
+var _iconButtonVue = __webpack_require__(287);
 
 var _iconButtonVue2 = _interopRequireDefault(_iconButtonVue);
 
-<<<<<<< HEAD
-var _findIndexInActiveFilterCategories = __webpack_require__(295);
-
-var _isFilterCategoryActive = __webpack_require__(296);
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
->>>>>>> feat(table-compare): allow 5 columns
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-<<<<<<< HEAD
-/***/ }),
-/* 295 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
->>>>>>> feat(table-compare): allow 5 columns
 
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
     var c = arguments.length,
@@ -19276,16 +11923,8 @@ IconButton = __decorate([_iconButtonVue2.default, (0, _vuePropertyDecorator.Comp
 exports.default = IconButton;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 296 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 291 */
+/* 287 */
 /***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"icon-button",class:_vm.buttonClass,attrs:{"aria-label":_vm.buttonAriaLabel,"aria-disabled":_vm.disabled,"role":"button","tabindex":"0"},on:{"click":function($event){return _vm.$emit('click')},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.$emit('click')}}},[_c('icon',{staticClass:"icon-button__icon",attrs:{"icon-name":_vm.iconName}}),_vm._v(" "),(_vm.hasDefaultSlot)?_c('span',{staticClass:"icon-button__label"},[_vm._t("default")],2):_vm._e()],1)}
 var staticRenderFns = []
@@ -19301,20 +11940,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 297 */
-=======
-
-/***/ "./src/js/components/molecules/tag/index.ts":
-/*!**************************************************!*\
-  !*** ./src/js/components/molecules/tag/index.ts ***!
-  \**************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 292 */
->>>>>>> chore(build): add build
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19324,19 +11950,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _component = __webpack_require__(298);
-=======
-var _tag = __webpack_require__(/*! ./tag */ "./src/js/components/molecules/tag/tag.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _tag2 = _interopRequireDefault(_tag);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _listSection = __webpack_require__(293);
->>>>>>> chore(build): add build
+var _listSection = __webpack_require__(289);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -19346,20 +11960,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 298 */
-=======
-
-/***/ "./src/js/components/molecules/tag/tag.ts":
-/*!************************************************!*\
-  !*** ./src/js/components/molecules/tag/tag.ts ***!
-  \************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 293 */
->>>>>>> chore(build): add build
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19378,15 +11979,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _templateVue = __webpack_require__(299);
-=======
-var _tagVue = __webpack_require__(/*! ./tag.vue.html */ "./src/js/components/molecules/tag/tag.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _listSectionVue = __webpack_require__(294);
->>>>>>> chore(build): add build
+var _listSectionVue = __webpack_require__(290);
 
 var _listSectionVue2 = _interopRequireDefault(_listSectionVue);
 
@@ -19400,11 +11993,11 @@ var _viewport2 = _interopRequireDefault(_viewport);
 
 var _stepRowAnimation = __webpack_require__(9);
 
-var _getFiltersInCardCollection = __webpack_require__(295);
+var _getFiltersInCardCollection = __webpack_require__(291);
 
-var _getFilteredCardsFromActiveFilterCategories = __webpack_require__(296);
+var _getFilteredCardsFromActiveFilterCategories = __webpack_require__(292);
 
-var _updateActiveFilterCategories = __webpack_require__(298);
+var _updateActiveFilterCategories = __webpack_require__(294);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19607,16 +12200,8 @@ exports.ListSection = ListSection = __decorate([_listSectionVue2.default, (0, _v
 exports.ListSection = ListSection;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 299 */
+/* 290 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 294 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"list-section"},[(_vm.title)?[_c('header',{staticClass:"list-section__header"},[_c('h3',{staticClass:"list-section__title"},[_vm._v(_vm._s(_vm.title)+"\n                "),_c('span',{staticClass:"list-section__count"},[_vm._v("("+_vm._s(_vm.cards.length)+")")]),_vm._v(" "),(_vm.tooltip)?[_c('transition',{attrs:{"name":"tooltip"}},[_c('tooltip',_vm._b({directives:[{name:"show",rawName:"v-show",value:(_vm.visibleTooltip),expression:"visibleTooltip"}],staticClass:"section-tooltip",attrs:{"block":"list-section","id":("tooltip_" + _vm.uniqId)}},'tooltip',_vm.tooltip,false),[_vm._v("\n                            "+_vm._s(_vm.tooltip.description)+"\n                        ")])],1)]:_vm._e()],2),_vm._v(" "),(_vm.tooltip)?[(_vm.tooltip)?_c('action-button',{staticClass:"link list-section__info-link",attrs:{"icon":_vm.tooltip.icon,"mod":"reversed","role":"button","aria-describedby":("tooltip_" + _vm.uniqId)},nativeOn:{"click":function($event){$event.preventDefault();return _vm.toggleTooltip($event)},"blur":function($event){$event.preventDefault();return _vm.hideTooltip($event)}}},[_vm._v("\n                    "+_vm._s(_vm.tooltip.label)+"\n                ")]):_vm._e()]:_vm._e()],2)]:_vm._e(),_vm._v(" "),_vm._l((_vm.filterCategories),function(filterCategory){return [_c('filter-category',_vm._b({attrs:{"activeFilters":_vm.activeFilters,"eventChange":_vm.eventFilterCategoryChange},on:_vm._d({},[_vm.eventFilterCategoryChange,_vm.handleFilterCategoryChange])},'filter-category',filterCategory,false))]}),_vm._v(" "),_c('transition-group',{staticClass:"list-section__container",attrs:{"tag":"ul"},on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter}},_vm._l((_vm.chunks),function(chunk,index){return _c('li',{directives:[{name:"show",rawName:"v-show",value:(index < _vm.visibleChunks),expression:"index < visibleChunks"}],key:index,staticClass:"list-section__row",class:chunk.length % 2 === 0 && 'list-section__row--even'},_vm._l((chunk),function(card,i){return (chunk && chunk.length)?_c(card.type,_vm._b({key:i,tag:"component",staticClass:"list-section__item"},'component',card,false)):_vm._e()}),1)}),0),_vm._v(" "),_c('footer',{staticClass:"list-section__footer"},[_c('button',{directives:[{name:"show",rawName:"v-show",value:(_vm.showButton()),expression:"showButton()"}],staticClass:"button--secondary list-section__footer__button",on:{"click":function($event){_vm.limit && _vm.limit.expandAmount ? _vm.showChunk() : _vm.showAll()}}},[_vm._v("\n            "+_vm._s(_vm.showLabel())+"\n        ")])])],2)}
 var staticRenderFns = []
@@ -19632,44 +12217,14 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 300 */
-=======
-
-/***/ "./src/js/components/molecules/tooltip-toggle/index.ts":
-/*!*************************************************************!*\
-  !*** ./src/js/components/molecules/tooltip-toggle/index.ts ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 295 */
->>>>>>> chore(build): add build
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-<<<<<<< HEAD
-  value: true
-});
-
-<<<<<<< HEAD
-var _listUnorderedLimit = __webpack_require__(301);
-=======
-var _tooltipToggle = __webpack_require__(/*! ./tooltip-toggle */ "./src/js/components/molecules/tooltip-toggle/tooltip-toggle.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _tooltipToggle.TooltipToggle;
-  }
-=======
     value: true
->>>>>>> chore(build): add build
 });
 exports.getFiltersInCardCollection = getFiltersInCardCollection;
 function getFiltersInCardCollection(cards) {
@@ -19686,20 +12241,7 @@ function getFiltersInCardCollection(cards) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 301 */
-=======
-
-/***/ "./src/js/components/molecules/tooltip-toggle/tooltip-toggle.ts":
-/*!**********************************************************************!*\
-  !*** ./src/js/components/molecules/tooltip-toggle/tooltip-toggle.ts ***!
-  \**********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 296 */
->>>>>>> chore(build): add build
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19710,7 +12252,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getFilteredCardsFromActiveFilterCategories = getFilteredCardsFromActiveFilterCategories;
 
-var _getActiveFiltersForCategory = __webpack_require__(297);
+var _getActiveFiltersForCategory = __webpack_require__(293);
 
 function getFilteredCardsFromCategory(cards, activeCategory, filters) {
     return cards.filter(function (card) {
@@ -19743,19 +12285,11 @@ function getFilteredCardsFromActiveFilterCategories(cards, activeFilterCategorie
 }
 
 /***/ }),
-/* 297 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _listUnorderedLimitVue = __webpack_require__(302);
-=======
-var _tooltipToggleVue = __webpack_require__(/*! ./tooltip-toggle.vue.html */ "./src/js/components/molecules/tooltip-toggle/tooltip-toggle.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -19771,7 +12305,7 @@ function getActiveFiltersForCategory(filterCategory) {
 }
 
 /***/ }),
-/* 298 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19782,9 +12316,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.updateActiveFilterCategories = updateActiveFilterCategories;
 
-var _findIndexInActiveFilterCategories = __webpack_require__(299);
+var _findIndexInActiveFilterCategories = __webpack_require__(295);
 
-var _isFilterCategoryActive = __webpack_require__(300);
+var _isFilterCategoryActive = __webpack_require__(296);
 
 function addActiveFilterCategory(activeFilterCategories, changedFilterCategory) {
     activeFilterCategories.push(changedFilterCategory);
@@ -19811,7 +12345,7 @@ function updateActiveFilterCategories(activeFilterCategories, changedFilterCateg
 }
 
 /***/ }),
-/* 299 */
+/* 295 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19828,21 +12362,7 @@ function findIndexInActiveFilterCategories(activeFilterCategories, changedFilter
 }
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 302 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/molecules/tooltip-toggle/tooltip-toggle.vue.html":
-/*!****************************************************************************!*\
-  !*** ./src/js/components/molecules/tooltip-toggle/tooltip-toggle.vue.html ***!
-  \****************************************************************************/
-/*! no static exports found */
-=======
-/* 300 */
->>>>>>> chore(build): add build
+/* 296 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19859,20 +12379,7 @@ function isFilterCategoryActive(filterCategory) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 303 */
-=======
-
-/***/ "./src/js/components/molecules/wizard-step-confirmation/index.ts":
-/*!***********************************************************************!*\
-  !*** ./src/js/components/molecules/wizard-step-confirmation/index.ts ***!
-  \***********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 301 */
->>>>>>> chore(build): add build
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19882,38 +12389,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _mainNavigation = __webpack_require__(304);
-=======
-var _wizardStepConfirmation = __webpack_require__(/*! ./wizard-step-confirmation */ "./src/js/components/molecules/wizard-step-confirmation/wizard-step-confirmation.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _component = __webpack_require__(302);
->>>>>>> chore(build): add build
+var _component = __webpack_require__(298);
 
 var _component2 = _interopRequireDefault(_component);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 304 */
-=======
-
-/***/ "./src/js/components/molecules/wizard-step-confirmation/wizard-step-confirmation.ts":
-/*!******************************************************************************************!*\
-  !*** ./src/js/components/molecules/wizard-step-confirmation/wizard-step-confirmation.ts ***!
-  \******************************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 exports.default = _component2.default;
 
 /***/ }),
-/* 302 */
->>>>>>> chore(build): add build
+/* 298 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19925,25 +12410,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _mainNavigationVue = __webpack_require__(305);
-
-var _mainNavigationVue2 = _interopRequireDefault(_mainNavigationVue);
-
-var _viewport = __webpack_require__(1);
-
-var _viewport2 = _interopRequireDefault(_viewport);
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
-
-var _templateVue = __webpack_require__(303);
+var _templateVue = __webpack_require__(299);
 
 var _templateVue2 = _interopRequireDefault(_templateVue);
 
@@ -19985,16 +12454,8 @@ ListUnordered = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Com
 exports.default = ListUnordered;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 305 */
+/* 299 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 303 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{staticClass:"list"},[_vm._l((_vm.listItems.items),function(item,index){return [(!item.item)?[_c(_vm.listItems.type,{key:index,tag:"component",attrs:{"item":item}})]:(_vm.listItems.type)?[_c(_vm.listItems.type,_vm._b({key:index,tag:"component"},'component',item,false))]:(item.type)?[_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false))]:_vm._e()]})],2)}
 var staticRenderFns = []
@@ -20010,20 +12471,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 306 */
-=======
-
-/***/ "./src/js/components/molecules/wizard-step-download-list/index.ts":
-/*!************************************************************************!*\
-  !*** ./src/js/components/molecules/wizard-step-download-list/index.ts ***!
-  \************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 304 */
->>>>>>> chore(build): add build
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20033,15 +12481,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _mainNavigationItem = __webpack_require__(307);
-=======
-var _wizardStepDownloadList = __webpack_require__(/*! ./wizard-step-download-list */ "./src/js/components/molecules/wizard-step-download-list/wizard-step-download-list.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _listUnorderedLimit = __webpack_require__(305);
->>>>>>> chore(build): add build
+var _listUnorderedLimit = __webpack_require__(301);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -20051,20 +12491,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 307 */
-=======
-
-/***/ "./src/js/components/molecules/wizard-step-download-list/wizard-step-download-list.ts":
-/*!********************************************************************************************!*\
-  !*** ./src/js/components/molecules/wizard-step-download-list/wizard-step-download-list.ts ***!
-  \********************************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 305 */
->>>>>>> chore(build): add build
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20081,17 +12508,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _vuePropertyDecorator = __webpack_require__(0);
-
-var _mainNavigationItemVue = __webpack_require__(308);
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
 var _events = __webpack_require__(5);
 
@@ -20103,7 +12520,7 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _listUnorderedLimitVue = __webpack_require__(306);
+var _listUnorderedLimitVue = __webpack_require__(302);
 
 var _listUnorderedLimitVue2 = _interopRequireDefault(_listUnorderedLimitVue);
 
@@ -20209,16 +12626,8 @@ exports.ListUnorderedLimit = ListUnorderedLimit = __decorate([_listUnorderedLimi
 exports.ListUnorderedLimit = ListUnorderedLimit;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 308 */
+/* 302 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 306 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"list-unordered-limit"},[_c('main',[_c('transition-group',{attrs:{"tag":"ul"},on:{"before-enter":_vm.beforeEnter,"enter":_vm.enter}},[_vm._l((_vm.listItems),function(item,index){return [_c('li-item',{directives:[{name:"show",rawName:"v-show",value:(_vm.showLimit() === -1 || index < _vm.showLimit() || _vm.showAll),expression:"showLimit() === -1 || index < showLimit() || showAll"}],key:index,attrs:{"item":item}})]})],2)],1),_vm._v(" "),_c('footer',{directives:[{name:"show",rawName:"v-show",value:(_vm.showLimit() !== -1 && !_vm.showAll),expression:"showLimit() !== -1 && !showAll"}]},[_c('button',{staticClass:"button--secondary",on:{"click":_vm.showHidden}},[_vm._v(_vm._s(_vm.showButtonLabel()))])])])}
 var staticRenderFns = []
@@ -20234,20 +12643,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 309 */
-=======
-
-/***/ "./src/js/components/organisms-page/index.js":
-/*!***************************************************!*\
-  !*** ./src/js/components/organisms-page/index.js ***!
-  \***************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 307 */
->>>>>>> chore(build): add build
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20257,24 +12653,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _modal = __webpack_require__(310);
-=======
-var _colors = __webpack_require__(/*! organisms-page/../organisms/colors */ "./src/js/components/organisms/colors/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'Colors', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_colors).default;
-  }
-});
-
-var _subnavigation = __webpack_require__(/*! organisms-page/subnavigation */ "./src/js/components/organisms-page/subnavigation/index.js");
-=======
-var _mainNavigation = __webpack_require__(308);
->>>>>>> chore(build): add build
+var _mainNavigation = __webpack_require__(304);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -20284,20 +12663,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 310 */
-=======
-
-/***/ "./src/js/components/organisms-page/subnavigation/subnavigation.ts":
-/*!*************************************************************************!*\
-  !*** ./src/js/components/organisms-page/subnavigation/subnavigation.ts ***!
-  \*************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 308 */
->>>>>>> chore(build): add build
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20308,66 +12674,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.MainNavigation = undefined;
 
-<<<<<<< HEAD
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-<<<<<<< HEAD
-var _modalVue = __webpack_require__(311);
-=======
-var _overflowContainer = __webpack_require__(/*! ../../organisms/overflow-container */ "./src/js/components/organisms/overflow-container/index.js");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var Subnavigation = function (_OverflowContainer) {
-    _inherits(Subnavigation, _OverflowContainer);
-
-    function Subnavigation() {
-        _classCallCheck(this, Subnavigation);
-
-        return _possibleConstructorReturn(this, (Subnavigation.__proto__ || Object.getPrototypeOf(Subnavigation)).apply(this, arguments));
-    }
-
-    return Subnavigation;
-}(_overflowContainer2.default);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Subnavigation.prototype, "items", void 0);
-Subnavigation = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'Subnavigation'
-})], Subnavigation);
-exports.default = Subnavigation;
-
-/***/ }),
-=======
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> chore(build): add build
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _mainNavigationVue = __webpack_require__(309);
+var _mainNavigationVue = __webpack_require__(305);
 
 var _mainNavigationVue2 = _interopRequireDefault(_mainNavigationVue);
 
@@ -20451,16 +12764,8 @@ exports.MainNavigation = MainNavigation = __decorate([_mainNavigationVue2.defaul
 exports.MainNavigation = MainNavigation;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 311 */
+/* 305 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 309 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{key:"large-menu",staticClass:"main-nav",class:_vm.classList,attrs:{"aria-label":"site"}},[_c('ul',{staticClass:"main-nav__list",class:{'main-nav__list-visible': _vm.mainNavOpen && _vm.showCompactMenu},attrs:{"role":"menu"}},_vm._l((_vm.navigation),function(mainNavigationItem,index){return (_vm.navigation)?_c('main-navigation-item',_vm._b({key:index,ref:"navItem",refInFor:true,attrs:{"is-compact":_vm.showCompactMenu,"main-nav-open":_vm.mainNavOpen,"active":false,"itemId":'nav-' + index}},'main-navigation-item',mainNavigationItem,false)):_vm._e()}),1)])}
 var staticRenderFns = []
@@ -20476,20 +12781,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 312 */
-=======
-
-/***/ "./src/js/components/organisms/article-content/index.ts":
-/*!**************************************************************!*\
-  !*** ./src/js/components/organisms/article-content/index.ts ***!
-  \**************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 310 */
->>>>>>> chore(build): add build
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20499,15 +12791,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _modalButton = __webpack_require__(313);
-=======
-var _articleContent = __webpack_require__(/*! ./article-content */ "./src/js/components/organisms/article-content/article-content.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _mainNavigationItem = __webpack_require__(311);
->>>>>>> chore(build): add build
+var _mainNavigationItem = __webpack_require__(307);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -20517,20 +12801,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 313 */
-=======
-
-/***/ "./src/js/components/organisms/article-header/article-header.ts":
-/*!**********************************************************************!*\
-  !*** ./src/js/components/organisms/article-header/article-header.ts ***!
-  \**********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 311 */
->>>>>>> chore(build): add build
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20547,15 +12818,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _modalButtonVue = __webpack_require__(314);
-=======
-var _articleHeaderVue = __webpack_require__(/*! ./article-header.vue.html */ "./src/js/components/organisms/article-header/article-header.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _mainNavigationItemVue = __webpack_require__(312);
->>>>>>> chore(build): add build
+var _mainNavigationItemVue = __webpack_require__(308);
 
 var _mainNavigationItemVue2 = _interopRequireDefault(_mainNavigationItemVue);
 
@@ -20588,17 +12851,8 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 var MainNavigationItem = function (_Vue) {
     _inherits(MainNavigationItem, _Vue);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 314 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
     function MainNavigationItem() {
         _classCallCheck(this, MainNavigationItem);
->>>>>>> chore(build): add build
 
         var _this = _possibleConstructorReturn(this, (MainNavigationItem.__proto__ || Object.getPrototypeOf(MainNavigationItem)).apply(this, arguments));
 
@@ -20626,20 +12880,6 @@ var MainNavigationItem = function (_Vue) {
                                     return setTimeout(resolve, 10);
                                 });
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 315 */
-=======
-
-/***/ "./src/js/components/organisms/article-header/index.ts":
-/*!*************************************************************!*\
-  !*** ./src/js/components/organisms/article-header/index.ts ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
                             case 4:
                                 this.angleDirection = newVal ? 'angle-up' : 'angle-down';
 
@@ -20650,7 +12890,6 @@ var MainNavigationItem = function (_Vue) {
                     }
                 }, _callee, this);
             }));
->>>>>>> chore(build): add build
 
             function _function(_x) {
                 return _ref.apply(this, arguments);
@@ -20683,20 +12922,12 @@ var MainNavigationItem = function (_Vue) {
                                     return setTimeout(resolve, 10);
                                 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _modalWizard = __webpack_require__(316);
-=======
-var _articleHeader = __webpack_require__(/*! ./article-header */ "./src/js/components/organisms/article-header/article-header.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
                             case 4:
                                 if (this.hideTimeout) {
                                     clearTimeout(this.hideTimeout);
                                     this.hideTimeout = null;
                                 }
                                 this.flyoutIsOpen = true;
->>>>>>> chore(build): add build
 
                             case 6:
                             case "end":
@@ -20706,20 +12937,6 @@ var _articleHeader = __webpack_require__(/*! ./article-header */ "./src/js/compo
                 }, _callee2, this);
             }));
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 316 */
-=======
-
-/***/ "./src/js/components/organisms/brands/brands.ts":
-/*!******************************************************!*\
-  !*** ./src/js/components/organisms/brands/brands.ts ***!
-  \******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
             function showFlyout() {
                 return _ref2.apply(this, arguments);
             }
@@ -20741,7 +12958,6 @@ var _articleHeader = __webpack_require__(/*! ./article-header */ "./src/js/compo
         key: "delayHideFlyout",
         value: function delayHideFlyout() {
             var _this2 = this;
->>>>>>> chore(build): add build
 
             return new Promise(function (resolve) {
                 if (_this2.hideTimeout === null) {
@@ -20780,13 +12996,6 @@ var _articleHeader = __webpack_require__(/*! ./article-header */ "./src/js/compo
                                 _context3.next = 8;
                                 return refs.flyout.selectFirstLink();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _modalWizardVue = __webpack_require__(317);
-=======
-var _brandsVue = __webpack_require__(/*! ./brands.vue.html */ "./src/js/components/organisms/brands/brands.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
                             case 8:
                             case "end":
                                 return _context3.stop();
@@ -20794,7 +13003,6 @@ var _brandsVue = __webpack_require__(/*! ./brands.vue.html */ "./src/js/componen
                     }
                 }, _callee3, this);
             }));
->>>>>>> chore(build): add build
 
             function selectFlyoutFirstLink() {
                 return _ref3.apply(this, arguments);
@@ -20886,16 +13094,8 @@ exports.MainNavigationItem = MainNavigationItem = __decorate([_mainNavigationIte
 exports.MainNavigationItem = MainNavigationItem;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 317 */
+/* 308 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 312 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"main-nav__item",class:{ 'main-nav__item--active': _vm.active },attrs:{"role":"menuitem"},on:{"mouseleave":_vm.delayHideFlyout,"mouseenter":_vm.showFlyout}},[_c('div',{on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }$event.preventDefault();return _vm.selectFlyoutFirstLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }if($event.ctrlKey||$event.altKey||$event.metaKey){ return null; }return _vm.hideFlyout($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }$event.preventDefault();return _vm.hideFlyout($event)}]}},[_c('base-link',{ref:"parent",staticClass:"main-nav__link",attrs:{"url":_vm.url,"aria-haspopup":"true","aria-controls":_vm.itemId,"aria-current":_vm.isActive,"label":_vm.label,"aria-expanded":!_vm.isCompact && _vm.flyoutIsOpen},on:{"focus":_vm.showFlyout},nativeOn:{"click":function($event){return _vm.hideFlyout($event)}}})],1),_vm._v(" "),_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(_vm.toggleIsVisible),expression:"toggleIsVisible"}],staticClass:"icon-button--small main-nav__toggle disable-focus",attrs:{"icon-name":_vm.angleDirection,"tabindex":"-1"},on:{"click":_vm.toggleFlyout}}),_vm._v(" "),(_vm.categories)?_c('flyout',{ref:"flyout",staticClass:"flyout--large",class:{ 'flyout--is-open': _vm.flyoutIsOpen },attrs:{"id":_vm.itemId,"items":_vm.categories,"is-compact":_vm.isCompact},on:{"open":_vm.showFlyout,"close":_vm.hideFlyout,"main":_vm.selectParent},nativeOn:{"keydown":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.selectParent($event)}}}):_vm._e()],1)}
 var staticRenderFns = []
@@ -20911,17 +13111,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 318 */
-=======
-
-/***/ "./src/js/components/organisms/brands/index.ts":
-/*!*****************************************************!*\
-  !*** ./src/js/components/organisms/brands/index.ts ***!
-  \*****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20931,159 +13121,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-var _pager = __webpack_require__(319);
-
-var _pager2 = _interopRequireDefault(_pager);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _pager2.default;
-
-/***/ }),
-/* 319 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-=======
-var _brands = __webpack_require__(/*! ./brands */ "./src/js/components/organisms/brands/brands.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _brands.Brands;
-  }
-});
-
-<<<<<<< HEAD
-var _gsap = __webpack_require__(4);
-
-var _viewport = __webpack_require__(1);
-
-var _viewport2 = _interopRequireDefault(_viewport);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = {
-    name: 'pager',
-    template: __webpack_require__(320),
-    data: function data() {
-        return {
-            indicatorActive: false,
-            viewport: new _viewport2.default()
-        };
-    },
-    props: {
-        pages: {
-            type: Number,
-            required: true
-        },
-        activeIndex: {
-            type: Number,
-            default: 0
-        }
-    },
-    methods: {
-        resizeHandler: function resizeHandler() {
-            this.moveToCurrentPosition();
-        },
-        getChangeOffset: function getChangeOffset() {
-            var indicatorRect = this.$refs.indicator.getBoundingClientRect();
-            var indicatorOffsetRect = this.$refs.indicator.offsetParent.getBoundingClientRect();
-            var currentPageRect = this.$refs.page[this.activeIndex].getBoundingClientRect();
-
-            return {
-                x: currentPageRect.left - indicatorOffsetRect.left,
-                y: currentPageRect.top - indicatorOffsetRect.top,
-                changeX: currentPageRect.left - indicatorRect.left,
-                changeY: currentPageRect.top - indicatorRect.top
-            };
-        },
-        moveToCurrentPosition: function moveToCurrentPosition() {
-            var _getChangeOffset = this.getChangeOffset(),
-                x = _getChangeOffset.x,
-                y = _getChangeOffset.y;
-
-            _gsap.TweenLite.to(this.$refs.indicator, 0, { x: x, y: y });
-        },
-        changeIndex: function changeIndex(index) {
-            this.$emit('index-changed', { index: index });
-        },
-        getAriaLabel: function getAriaLabel(index) {
-            var label = '';
-
-            if (index === this.activeIndex) {
-                label += '"current page, ';
-            }
-
-            label += 'page ' + (index + 1);
-
-            return label;
-        }
-    },
-    watch: {
-        activeIndex: function activeIndex() {
-            var tl = new _gsap.TimelineLite();
-            var offsets = this.getChangeOffset();
-
-            tl.to(this.$refs.indicator, 0.2, { x: offsets.x - offsets.changeX * 0.2, y: offsets.y - offsets.changeY * 0.2, scaleX: 0.7, scaleY: 1.5 }).to(this.$refs.indicator, 0.2, { x: offsets.x, y: offsets.y, scaleX: 1, scaleY: 1 });
-            _gsap.TweenLite.to(tl, tl.duration, { ease: _gsap.Power3.easeOut });
-        }
-    },
-    mounted: function mounted() {
-        this.indicatorActive = true;
-        this.moveToCurrentPosition();
-        this.viewport.addResizeHandler(this.resizeHandler);
-    },
-    beforeDestroy: function beforeDestroy() {
-        this.viewport.removeResizeHandler(this.resizeHandler);
-    }
-};
-
-/***/ }),
-/* 320 */
-/***/ (function(module, exports) {
-
-module.exports = "<nav class=\"pager\" aria-label=\"pagination\">\n    <ul class=\"pager__list\">\n        <li ref=\"indicator\" class=\"pager__active-page\" aria-hidden=\"true\">\n            <icon class=\"pager__active-page-indicator\" icon-name=\"hexagon-fill\"></icon>\n        </li>\n        <li ref=\"page\" v-for=\"(page, index) in pages\" \n            class=\"pager__page\" >\n            <a class=\"pager__page-indicator\" @click=\"changeIndex(index)\"\n                aria-role=\"button\" \n                :aria-label=\"getAriaLabel(index)\" \n                :aria-current='index === activeIndex'>\n                <icon icon-name=\"hexagon\"></icon>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
-
-/***/ }),
-/* 321 */
-=======
-/* 313 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-var _product = __webpack_require__(322);
-
-var _product2 = _interopRequireDefault(_product);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _product2.default;
-
-/***/ }),
-/* 322 */
-=======
-/***/ }),
-
-/***/ "./src/js/components/organisms/colors/colors.ts":
-/*!******************************************************!*\
-  !*** ./src/js/components/organisms/colors/colors.ts ***!
-  \******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _modal = __webpack_require__(314);
+var _modal = __webpack_require__(310);
 
 var _modal2 = _interopRequireDefault(_modal);
 
@@ -21092,8 +13130,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _modal2.default;
 
 /***/ }),
-/* 314 */
->>>>>>> chore(build): add build
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21109,17 +13146,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _productVue = __webpack_require__(323);
-=======
-var _colorsVue = __webpack_require__(/*! ./colors.vue.html */ "./src/js/components/organisms/colors/colors.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _gsap = __webpack_require__(4);
->>>>>>> chore(build): add build
 
-var _modalVue = __webpack_require__(315);
+var _modalVue = __webpack_require__(311);
 
 var _modalVue2 = _interopRequireDefault(_modalVue);
 
@@ -21215,24 +13244,15 @@ var Modal = function (_Vue) {
         }
     }]);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 323 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
     return Modal;
 }(_vuePropertyDecorator.Vue);
 Modal = __decorate([_modalVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'modal'
 })], Modal);
 exports.default = Modal;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 315 */
+/* 311 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('transition',{attrs:{"name":"modal"},on:{"enter":_vm.enter,"leave":_vm.leave}},[_c('div',{staticClass:"modal",on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.closeModal($event)}}},[_c('div',{ref:"overlay",staticClass:"modal__overlay"}),_vm._v(" "),_c('icon-button',{ref:"close",staticClass:"modal__close",attrs:{"icon-name":"close"}}),_vm._v(" "),_c('div',{ref:"modal",staticClass:"modal__content",on:{"click":function($event){$event.stopPropagation();}}},[_c('div',{staticClass:"modal__header"},[_vm._t("header")],2),_vm._v(" "),_vm._t("default")],2)],1)])}
@@ -21249,20 +13269,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 324 */
-=======
-
-/***/ "./src/js/components/organisms/colors/index.ts":
-/*!*****************************************************!*\
-  !*** ./src/js/components/organisms/colors/index.ts ***!
-  \*****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 316 */
->>>>>>> chore(build): add build
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21272,15 +13279,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchBar = __webpack_require__(325);
-=======
-var _colors = __webpack_require__(/*! ./colors */ "./src/js/components/organisms/colors/colors.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _modalButton = __webpack_require__(317);
->>>>>>> chore(build): add build
+var _modalButton = __webpack_require__(313);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -21290,20 +13289,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 325 */
-=======
-
-/***/ "./src/js/components/organisms/content-cover/content-cover.ts":
-/*!********************************************************************!*\
-  !*** ./src/js/components/organisms/content-cover/content-cover.ts ***!
-  \********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 317 */
->>>>>>> chore(build): add build
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21320,15 +13306,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchBarVue = __webpack_require__(326);
-=======
-var _contentCoverVue = __webpack_require__(/*! ./content-cover.vue.html */ "./src/js/components/organisms/content-cover/content-cover.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _modalButtonVue = __webpack_require__(318);
->>>>>>> chore(build): add build
+var _modalButtonVue = __webpack_require__(314);
 
 var _modalButtonVue2 = _interopRequireDefault(_modalButtonVue);
 
@@ -21387,16 +13365,8 @@ exports.ModalButton = ModalButton = __decorate([_modalButtonVue2.default, (0, _v
 exports.ModalButton = ModalButton;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 326 */
+/* 314 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 318 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"modal-button__container"},[_c('button',{staticClass:"button",attrs:{"type":"button"},on:{"click":_vm.triggerClick}},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")]),_vm._v(" "),_c('portal',{attrs:{"to":"modals"}},[(_vm.modalVisible)?_c('modal',{staticClass:"modal--wizard",on:{"close":_vm.toggleModalVisible}},[_c(_vm.modal.type,_vm._b({tag:"component"},'component',_vm.modal,false))],1):_vm._e()],1)],1)}
 var staticRenderFns = []
@@ -21412,20 +13382,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 327 */
-=======
-
-/***/ "./src/js/components/organisms/content-cover/index.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/organisms/content-cover/index.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 319 */
->>>>>>> chore(build): add build
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21435,15 +13392,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchBarPage = __webpack_require__(328);
-=======
-var _contentCover = __webpack_require__(/*! ./content-cover */ "./src/js/components/organisms/content-cover/content-cover.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _modalWizard = __webpack_require__(320);
->>>>>>> chore(build): add build
+var _modalWizard = __webpack_require__(316);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -21453,20 +13402,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 328 */
-=======
-
-/***/ "./src/js/components/organisms/content-general/content-general.ts":
-/*!************************************************************************!*\
-  !*** ./src/js/components/organisms/content-general/content-general.ts ***!
-  \************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 320 */
->>>>>>> chore(build): add build
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21483,15 +13419,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchBarPageVue = __webpack_require__(329);
-=======
-var _contentGeneralVue = __webpack_require__(/*! ./content-general.vue.html */ "./src/js/components/organisms/content-general/content-general.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _modalWizardVue = __webpack_require__(321);
->>>>>>> chore(build): add build
+var _modalWizardVue = __webpack_require__(317);
 
 var _modalWizardVue2 = _interopRequireDefault(_modalWizardVue);
 
@@ -21546,16 +13474,8 @@ exports.ModalWizard = ModalWizard = __decorate([_modalWizardVue2.default, (0, _v
 exports.ModalWizard = ModalWizard;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 329 */
+/* 317 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 321 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"modal-wizard"},[(_vm.steps)?_vm._l((_vm.steps),function(step,index){return _c('div',{staticClass:"modal-wizard__step"},[(index === _vm.activeStep)?_c(step.type,_vm._b({tag:"component",on:{"step-complete":_vm.showNextStep}},'component',step,false)):_vm._e()],1)}):_vm._e()],2)}
 var staticRenderFns = []
@@ -21571,20 +13491,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 330 */
-=======
-
-/***/ "./src/js/components/organisms/content-general/index.ts":
-/*!**************************************************************!*\
-  !*** ./src/js/components/organisms/content-general/index.ts ***!
-  \**************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 322 */
->>>>>>> chore(build): add build
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21594,37 +13501,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _socialNav = __webpack_require__(331);
-=======
-var _contentGeneral = __webpack_require__(/*! ./content-general */ "./src/js/components/organisms/content-general/content-general.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-<<<<<<< HEAD
-    return _socialNav.SocialNav;
-=======
-    return _contentGeneral.ContentGeneral;
->>>>>>> feat(table-compare): allow 5 columns
-  }
-});
-
-/***/ }),
-<<<<<<< HEAD
-/* 331 */
-=======
-
-/***/ "./src/js/components/organisms/content-highlight/content-highlight.ts":
-/*!****************************************************************************!*\
-  !*** ./src/js/components/organisms/content-highlight/content-highlight.ts ***!
-  \****************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _pager = __webpack_require__(323);
+var _pager = __webpack_require__(319);
 
 var _pager2 = _interopRequireDefault(_pager);
 
@@ -21633,8 +13510,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _pager2.default;
 
 /***/ }),
-/* 323 */
->>>>>>> chore(build): add build
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21643,28 +13519,10 @@ exports.default = _pager2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.SocialNav = undefined;
-=======
-exports.ContentHighlight = undefined;
->>>>>>> feat(table-compare): allow 5 columns
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-=======
->>>>>>> chore(build): add build
 
 var _gsap = __webpack_require__(4);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _socialNavVue = __webpack_require__(332);
-=======
-var _contentHighlightVue = __webpack_require__(/*! ./content-highlight.vue.html */ "./src/js/components/organisms/content-highlight/content-highlight.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _viewport = __webpack_require__(1);
->>>>>>> chore(build): add build
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
@@ -21672,7 +13530,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
     name: 'pager',
-    template: __webpack_require__(324),
+    template: __webpack_require__(320),
     data: function data() {
         return {
             indicatorActive: false,
@@ -21718,39 +13576,11 @@ exports.default = {
         getAriaLabel: function getAriaLabel(index) {
             var label = '';
 
-<<<<<<< HEAD
-    return ContentHighlight;
-}(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-exports.SocialNav = SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'social-nav'
-})], SocialNav);
-exports.SocialNav = SocialNav;
-
-/***/ }),
-/* 332 */
-/***/ (function(module, exports) {
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentHighlight.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], ContentHighlight.prototype, "subtitle", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], ContentHighlight.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentHighlight.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentHighlight.prototype, "ctas", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], ContentHighlight.prototype, "reversed", void 0);
-exports.ContentHighlight = ContentHighlight = __decorate([_contentHighlightVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'ContentHighlight'
-})], ContentHighlight);
-exports.ContentHighlight = ContentHighlight;
-
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
             if (index === this.activeIndex) {
                 label += '"current page, ';
             }
 
             label += 'page ' + (index + 1);
->>>>>>> chore(build): add build
 
             return label;
         }
@@ -21775,26 +13605,13 @@ exports.ContentHighlight = ContentHighlight;
 };
 
 /***/ }),
-/* 324 */
+/* 320 */
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"pager\" aria-label=\"pagination\">\n    <ul class=\"pager__list\">\n        <li ref=\"indicator\" class=\"pager__active-page\" aria-hidden=\"true\">\n            <icon class=\"pager__active-page-indicator\" icon-name=\"hexagon-fill\"></icon>\n        </li>\n        <li ref=\"page\" v-for=\"(page, index) in pages\" \n            class=\"pager__page\" >\n            <a class=\"pager__page-indicator\" @click=\"changeIndex(index)\"\n                aria-role=\"button\" \n                :aria-label=\"getAriaLabel(index)\" \n                :aria-current='index === activeIndex'>\n                <icon icon-name=\"hexagon\"></icon>\n            </a>\n        </li>\n    </ul>\n</nav>\n";
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 333 */
-=======
-
-/***/ "./src/js/components/organisms/content-highlight/index.ts":
-/*!****************************************************************!*\
-  !*** ./src/js/components/organisms/content-highlight/index.ts ***!
-  \****************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 325 */
->>>>>>> chore(build): add build
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21804,38 +13621,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchResult = __webpack_require__(334);
-=======
-var _contentHighlight = __webpack_require__(/*! ./content-highlight */ "./src/js/components/organisms/content-highlight/content-highlight.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _product = __webpack_require__(326);
->>>>>>> chore(build): add build
+var _product = __webpack_require__(322);
 
 var _product2 = _interopRequireDefault(_product);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 334 */
-=======
-
-/***/ "./src/js/components/organisms/country-selector/country-selector.ts":
-/*!**************************************************************************!*\
-  !*** ./src/js/components/organisms/country-selector/country-selector.ts ***!
-  \**************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = _product2.default;
 
 /***/ }),
-/* 326 */
->>>>>>> chore(build): add build
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21847,25 +13642,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _searchResultVue = __webpack_require__(335);
-
-var _searchResultVue2 = _interopRequireDefault(_searchResultVue);
-
-var _mark = __webpack_require__(336);
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
-
-var _countrySelectorVue = __webpack_require__(/*! ./country-selector.vue.html */ "./src/js/components/organisms/country-selector/country-selector.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _productVue = __webpack_require__(327);
->>>>>>> chore(build): add build
+var _productVue = __webpack_require__(323);
 
 var _productVue2 = _interopRequireDefault(_productVue);
 
@@ -21909,16 +13688,8 @@ Product = __decorate([_productVue2.default, (0, _vuePropertyDecorator.Component)
 exports.default = Product;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 335 */
+/* 323 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 327 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"product"},[_c('div',{staticClass:"product__icon-container"},[_c('icon',{staticClass:"product__icon",attrs:{"icon-name":_vm.icon}})],1),_vm._v(" "),_c('div',{staticClass:"product__information"},[_c('p',{staticClass:"product__name"},[_vm._v("\n            "+_vm._s(_vm.name)+"\n        ")]),_vm._v(" "),_c('p',{staticClass:"product__pricing"},[_vm._v("\n            "+_vm._s(_vm.pricing.label)+"\n        ")])])])}
 var staticRenderFns = []
@@ -21934,37 +13705,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 336 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = mark;
-function mark(text, terms) {
-    var termsRE = new RegExp('(' + terms.split(/\s/).join('|') + ')', 'gi');
-
-    return text.replace(termsRE, '<mark>$1</mark>');
-}
-
-/***/ }),
-/* 337 */
-=======
-
-/***/ "./src/js/components/organisms/country-selector/index.js":
-/*!***************************************************************!*\
-  !*** ./src/js/components/organisms/country-selector/index.js ***!
-  \***************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 328 */
->>>>>>> chore(build): add build
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21974,19 +13715,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _socialSharing = __webpack_require__(338);
-=======
-var _countrySelector = __webpack_require__(/*! ./country-selector */ "./src/js/components/organisms/country-selector/country-selector.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _countrySelector2 = _interopRequireDefault(_countrySelector);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
-var _searchBar = __webpack_require__(329);
->>>>>>> chore(build): add build
+var _searchBar = __webpack_require__(325);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -21996,20 +13725,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 338 */
-=======
-
-/***/ "./src/js/components/organisms/hero-article/hero-article.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/organisms/hero-article/hero-article.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 329 */
->>>>>>> chore(build): add build
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22026,23 +13742,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _socialSharingVue = __webpack_require__(339);
-
-var _socialSharingVue2 = _interopRequireDefault(_socialSharingVue);
-
-var _generateSocialSharingUrl = __webpack_require__(340);
-=======
-var _heroArticleVue = __webpack_require__(/*! ./hero-article.vue.html */ "./src/js/components/organisms/hero-article/hero-article.vue.html");
-
-var _heroArticleVue2 = _interopRequireDefault(_heroArticleVue);
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _searchBarVue = __webpack_require__(330);
+var _searchBarVue = __webpack_require__(326);
 
 var _searchBarVue2 = _interopRequireDefault(_searchBarVue);
->>>>>>> chore(build): add build
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22108,48 +13810,6 @@ var SearchBar = function (_Vue) {
 
     return SearchBar;
 }(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.SocialSharing = SocialSharing = __decorate([_socialSharingVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'SocialSharing'
-})], SocialSharing);
-exports.SocialSharing = SocialSharing;
-
-/***/ }),
-/* 339 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"social-sharing"},[_vm._l((_vm.items),function(item){return [_c('a',{staticClass:"social-sharing__link",attrs:{"href":_vm.url(item),"target":"_blank"}},[_c('span',{staticClass:"social-sharing__text"},[_vm._v(_vm._s(item.label))]),_vm._v(" "),_c('icon',{staticClass:"social-sharing__icon",attrs:{"icon-name":item.iconName}})],1)]})],2)}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 340 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroArticle.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], HeroArticle.prototype, "subtitle", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], HeroArticle.prototype, "image", void 0);
-exports.HeroArticle = HeroArticle = __decorate([_heroArticleVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'HeroArticle'
-})], HeroArticle);
-exports.HeroArticle = HeroArticle;
-
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchBar.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchBar.prototype, "placeholder", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], SearchBar.prototype, "openState", void 0);
@@ -22159,9 +13819,8 @@ exports.SearchBar = SearchBar = __decorate([_searchBarVue2.default, (0, _vueProp
 exports.SearchBar = SearchBar;
 
 /***/ }),
-/* 330 */
+/* 326 */
 /***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{ref:"search-form",staticClass:"search-bar",attrs:{"action":"/search","method":"get"},on:{"submit":function($event){$event.preventDefault();return _vm.handleSubmit($event)}}},[_c('div',{attrs:{"role":"search"}},[_c('div',{staticClass:"search-bar__inputholder"},[_c('label',{staticClass:"search-bar__label",attrs:{"for":"search-bar__input"}},[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.searchValue),expression:"searchValue"}],ref:"search-bar__input",staticClass:"search-bar__input",attrs:{"placeholder":_vm.placeholder,"autocapitalize":"off","autocomplete":"off","autocorrect":"off","id":"search-bar__input","name":"search"},domProps:{"value":(_vm.searchValue)},on:{"blur":_vm.onBlur,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.close($event)},"input":function($event){if($event.target.composing){ return; }_vm.searchValue=$event.target.value}}})]),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search-bar__button","button-aria-label":"Search","icon-name":"search"},on:{"click":_vm.handleSubmit}}),_vm._v(" "),_c('icon-button',{attrs:{"button-class":"icon-button icon-button--large search-bar__close-button","button-aria-label":"Close search","icon-name":"close"},on:{"click":_vm.close}})],1)])}
 var staticRenderFns = []
@@ -22177,20 +13836,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 341 */
-=======
-
-/***/ "./src/js/components/organisms/hero-article/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/organisms/hero-article/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 331 */
->>>>>>> chore(build): add build
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22200,46 +13846,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _subNavigationItem = __webpack_require__(342);
-=======
-var _heroArticle = __webpack_require__(/*! ./hero-article */ "./src/js/components/organisms/hero-article/hero-article.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _searchBarPage = __webpack_require__(332);
->>>>>>> chore(build): add build
+var _searchBarPage = __webpack_require__(328);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return _subNavigationItem.SubNavigationItem;
-=======
-    return _heroArticle.HeroArticle;
->>>>>>> feat(table-compare): allow 5 columns
-=======
     return _searchBarPage.SearchBarPage;
->>>>>>> chore(build): add build
   }
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 342 */
-=======
-
-/***/ "./src/js/components/organisms/hero-basic/hero-basic.ts":
-/*!**************************************************************!*\
-  !*** ./src/js/components/organisms/hero-basic/hero-basic.ts ***!
-  \**************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 332 */
->>>>>>> chore(build): add build
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22248,37 +13865,17 @@ Object.defineProperty(exports, 'default', {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.SubNavigationItem = undefined;
-=======
-exports.HeroBasic = undefined;
->>>>>>> feat(table-compare): allow 5 columns
-=======
 exports.SearchBarPage = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> chore(build): add build
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _subNavigationItemVue = __webpack_require__(343);
-
-var _subNavigationItemVue2 = _interopRequireDefault(_subNavigationItemVue);
-=======
-var _heroBasicVue = __webpack_require__(/*! ./hero-basic.vue.html */ "./src/js/components/organisms/hero-basic/hero-basic.vue.html");
-
-var _heroBasicVue2 = _interopRequireDefault(_heroBasicVue);
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _searchBarPageVue = __webpack_require__(333);
+var _searchBarPageVue = __webpack_require__(329);
 
 var _searchBarPageVue2 = _interopRequireDefault(_searchBarPageVue);
->>>>>>> chore(build): add build
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22329,32 +13926,6 @@ var SearchBarPage = function (_Vue) {
 
     return SearchBarPage;
 }(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-<<<<<<< HEAD
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SubNavigationItem.prototype, "url", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], SubNavigationItem.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SubNavigationItem.prototype, "label", void 0);
-exports.SubNavigationItem = SubNavigationItem = __decorate([_subNavigationItemVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'SubNavigationItem'
-})], SubNavigationItem);
-exports.SubNavigationItem = SubNavigationItem;
-
-/***/ }),
-/* 343 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('base-link',{staticClass:"subnavigation__link link link--reversed",attrs:{"url":_vm.url}},[_c('div',{staticClass:"subnavigation__image-container"},[(_vm.image)?_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"subnavigation__label",attrs:{"aria-label":_vm.label}},[_c('span',{staticClass:"link__underline"},[_vm._v("\n            "+_vm._s(_vm.label)+"\n        ")])])])}
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroBasic.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "subtitle", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroBasic.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "ctas", void 0);
-exports.HeroBasic = HeroBasic = __decorate([_heroBasicVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'hero-basic'
-})], HeroBasic);
-exports.HeroBasic = HeroBasic;
-=======
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchBarPage.prototype, "eventSubmitSearch", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], SearchBarPage.prototype, "isLoading", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchBarPage.prototype, "label", void 0);
@@ -22365,111 +13936,12 @@ exports.SearchBarPage = SearchBarPage = __decorate([_searchBarPageVue2.default, 
     name: 'SearchBarPage'
 })], SearchBarPage);
 exports.SearchBarPage = SearchBarPage;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 333 */
+/* 329 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-/***/ "./src/js/components/organisms/hero-basic/hero-basic.vue.html":
-/*!********************************************************************!*\
-  !*** ./src/js/components/organisms/hero-basic/hero-basic.vue.html ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("article", { staticClass: "hero hero--basic organism" }, [
-    _c("section", { staticClass: "container hero__container" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"
-        },
-        [
-          _c("div", { staticClass: "flexgrid__cell--xs-6" }, [
-            _c(
-              "div",
-              { staticClass: "hero__description" },
-              [
-                _c(
-                  "HeaderBlock",
-                  { staticClass: "hero__header header-block--hero" },
-                  [
-                    _c(
-                      "h1",
-                      { staticClass: "hero__title header-block__title--hero" },
-                      [_vm._v(_vm._s(_vm.title))]
-                    ),
-                    _vm._v(" "),
-                    _vm.subtitle
-                      ? _c(
-                          "h2",
-                          {
-                            staticClass:
-                              "hero__subtitle header-block__subtitle--hero"
-                          },
-                          [_vm._v(_vm._s(_vm.subtitle))]
-                        )
-                      : _vm._e()
-                  ]
-                ),
-                _vm._v(" "),
-                _c("p", { staticClass: "hero__intro copy--intro" }, [
-                  _vm._v(_vm._s(_vm.description))
-                ]),
-                _vm._v(" "),
-                _vm.ctas
-                  ? _c("cta-block", {
-                      attrs: {
-                        mod: "hero",
-                        ctas: _vm.ctas.ctas,
-                        styleContentButton: "button button--primary",
-                        block: "hero"
-                      }
-                    })
-                  : _vm._e()
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "flexgrid__cell--xs-6" }, [
-            _c(
-              "div",
-              { staticClass: "hero__image" },
-              [
-                _vm.image
-                  ? [
-                      _c(
-                        "c-image",
-                        _vm._b(
-                          { attrs: { "keep-in-view": "" } },
-                          "c-image",
-                          _vm.image,
-                          false
-                        )
-                      )
-                    ]
-                  : _vm._e()
-              ],
-              2
-            )
-          ])
-        ]
-      )
-    ])
-  ])
-}
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"search-bar-page",attrs:{"accept-charset":"utf-8","action":"/search","method":"get"},on:{"submit":function($event){$event.preventDefault();return _vm.handleSubmit($event)}}},[_c('label',[_c('span',{staticClass:"search-bar-page__label"},[_vm._v(_vm._s(_vm.label))]),_vm._v(" "),_c('button',{staticClass:"search-bar-page__button",attrs:{"disabled":_vm.isLoading}},[_c('icon',{attrs:{"icon-name":'search'}})],1),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.q),expression:"q"}],staticClass:"search-bar-page__input",attrs:{"disabled":_vm.isLoading,"name":_vm.searchFieldName,"placeholder":_vm.placeholder,"autocapitalize":"off","autocomplete":"off","autocorrect":"off","maxlength":"512","spellcheck":"false","type":"text"},domProps:{"value":(_vm.q)},on:{"input":function($event){if($event.target.composing){ return; }_vm.q=$event.target.value}}})])])}
->>>>>>> chore(build): add build
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -22483,20 +13955,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 344 */
-=======
-
-/***/ "./src/js/components/organisms/hero-basic/index.ts":
-/*!*********************************************************!*\
-  !*** ./src/js/components/organisms/hero-basic/index.ts ***!
-  \*********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 334 */
->>>>>>> chore(build): add build
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22506,47 +13965,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _sysNav = __webpack_require__(345);
-=======
-var _heroBasic = __webpack_require__(/*! ./hero-basic */ "./src/js/components/organisms/hero-basic/hero-basic.ts");
->>>>>>> feat(table-compare): allow 5 columns
+var _socialNav = __webpack_require__(331);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
-<<<<<<< HEAD
-    return _sysNav.SysNav;
-=======
-    return _heroBasic.HeroBasic;
->>>>>>> feat(table-compare): allow 5 columns
+    return _socialNav.SocialNav;
   }
 });
 
 /***/ }),
-<<<<<<< HEAD
-/* 345 */
-=======
-
-/***/ "./src/js/components/organisms/hero-cover/hero-cover.ts":
-/*!**************************************************************!*\
-  !*** ./src/js/components/organisms/hero-cover/hero-cover.ts ***!
-  \**************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _socialNav = __webpack_require__(335);
-
-var _socialNav2 = _interopRequireDefault(_socialNav);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _socialNav2.default;
-
-/***/ }),
-/* 335 */
->>>>>>> chore(build): add build
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22555,30 +13984,13 @@ exports.default = _socialNav2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-<<<<<<< HEAD
-<<<<<<< HEAD
-exports.SysNav = undefined;
-=======
-exports.HeroCover = undefined;
->>>>>>> feat(table-compare): allow 5 columns
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-=======
->>>>>>> chore(build): add build
+exports.SocialNav = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _sysNavVue = __webpack_require__(346);
-=======
-var _heroCoverVue = __webpack_require__(/*! ./hero-cover.vue.html */ "./src/js/components/organisms/hero-cover/hero-cover.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _socialNavVue = __webpack_require__(336);
->>>>>>> chore(build): add build
+var _socialNavVue = __webpack_require__(332);
 
 var _socialNavVue2 = _interopRequireDefault(_socialNavVue);
 
@@ -22610,43 +14022,14 @@ var SocialNav = function (_Vue) {
 
     return SocialNav;
 }(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-<<<<<<< HEAD
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'store' }), __metadata("design:type", Object)], SysNav.prototype, "orderNowIcon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "orderNowLink", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "orderNowLabel", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'search' }), __metadata("design:type", Object)], SysNav.prototype, "searchIcon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "searchLabel", void 0);
-exports.SysNav = SysNav = __decorate([_sysNavVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'sys-nav'
-})], SysNav);
-exports.SysNav = SysNav;
-
-/***/ }),
-/* 346 */
-/***/ (function(module, exports) {
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroCover.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroCover.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroCover.prototype, "ctas", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroCover.prototype, "image", void 0);
-exports.HeroCover = HeroCover = __decorate([_heroCoverVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'hero-cover'
-})], HeroCover);
-exports.HeroCover = HeroCover;
-
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
-SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.SocialNav = SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'social-nav'
 })], SocialNav);
-exports.default = SocialNav;
+exports.SocialNav = SocialNav;
 
 /***/ }),
-/* 336 */
+/* 332 */
 /***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"social-nav footer__social-nav"},[_c('ul',{staticClass:"social-nav__list",attrs:{"aria-label":"follow Ultimaker"}},[_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://nl.linkedin.com/company/ultimaker","aria-label":"LinkedIn"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"linkedin"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://twitter.com/Ultimaker","aria-label":"Twitter"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"twitter"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://www.youtube.com/user/Ultimaker3D","aria-label":"YouTube"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"youtube"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"https://www.facebook.com/Ultimaker","aria-label":"Facebook"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"facebook"}})],1)]),_vm._v(" "),_c('li',{staticClass:"social-nav__item footer__social-item"},[_c('a',{staticClass:"social-nav__link icon-button icon-button--small",attrs:{"href":"http://instagram.com/ultimaker","aria-label":"Instagram"}},[_c('icon',{staticClass:"social-nav__icon",attrs:{"icon-name":"instagram"}})],1)])])])}
 var staticRenderFns = []
@@ -22662,20 +14045,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 347 */
-=======
-
-/***/ "./src/js/components/organisms/hero-cover/index.ts":
-/*!*********************************************************!*\
-  !*** ./src/js/components/organisms/hero-cover/index.ts ***!
-  \*********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 337 */
->>>>>>> chore(build): add build
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22685,24 +14055,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tab = __webpack_require__(348);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _tab.Tab;
-  }
-});
-
-/***/ }),
-/* 348 */
-=======
-var _heroCover = __webpack_require__(/*! ./hero-cover */ "./src/js/components/organisms/hero-cover/hero-cover.ts");
-=======
-var _searchResult = __webpack_require__(338);
->>>>>>> chore(build): add build
+var _searchResult = __webpack_require__(334);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -22712,13 +14065,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-
-/***/ "./src/js/components/organisms/hero-homepage/helpers/build-srcset.ts":
-/*!***************************************************************************!*\
-  !*** ./src/js/components/organisms/hero-homepage/helpers/build-srcset.ts ***!
-  \***************************************************************************/
-/*! no static exports found */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22727,46 +14074,7 @@ Object.defineProperty(exports, 'default', {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var LANDSCAPE_SCREEN_WIDTHS = [1280, 1920, 2048, 2880];
-var PORTRAIT_SCREEN_WIDTHS = [750, 1125, 1536];
-var buildSrcSet = exports.buildSrcSet = function buildSrcSet(_ref) {
-    var url = _ref.url,
-        _ref$focusArea = _ref.focusArea,
-        focusArea = _ref$focusArea === undefined ? '' : _ref$focusArea,
-        _ref$webp = _ref.webp,
-        webp = _ref$webp === undefined ? false : _ref$webp,
-        _ref$portrait = _ref.portrait,
-        portrait = _ref$portrait === undefined ? false : _ref$portrait;
-    return (portrait ? PORTRAIT_SCREEN_WIDTHS : LANDSCAPE_SCREEN_WIDTHS).map(function (width) {
-        var height = Math.ceil(portrait ? width / 9 * 16 : width / 16 * 9);
-        return url + '?w=' + width + '&h=' + height + '&fit=fill&f=' + focusArea + (webp ? '&fm=webp' : '') + ' ' + width + 'w';
-    }).join(', ');
-};
-
-/***/ }),
-
-/***/ "./src/js/components/organisms/hero-homepage/hero-homepage.ts":
-/*!********************************************************************!*\
-  !*** ./src/js/components/organisms/hero-homepage/hero-homepage.ts ***!
-  \********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 338 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-<<<<<<< HEAD
-exports.Tab = undefined;
-=======
 exports.SearchResult = undefined;
->>>>>>> chore(build): add build
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -22774,19 +14082,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _searchResultVue = __webpack_require__(339);
+var _searchResultVue = __webpack_require__(335);
 
 var _searchResultVue2 = _interopRequireDefault(_searchResultVue);
 
-var _mark = __webpack_require__(340);
+var _mark = __webpack_require__(336);
 
 var _mark2 = _interopRequireDefault(_mark);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var _tabVue = __webpack_require__(349);
-
-var _tabVue2 = _interopRequireDefault(_tabVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22834,46 +14136,6 @@ var SearchResult = function (_Vue) {
 
     return SearchResult;
 }(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-<<<<<<< HEAD
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Tab.prototype, "id", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Tab.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Tab.prototype, "content", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tab.prototype, "active", void 0);
-exports.Tab = Tab = __decorate([_tabVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'Tab'
-})], Tab);
-exports.Tab = Tab;
-
-/***/ }),
-/* 349 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.active),expression:"active"}],staticClass:"tabs__content",attrs:{"id":_vm.id,"role":"tabpanel","aria-hidden":!_vm.active,"aria-label":_vm.label}},[[_c(_vm.content.type,_vm._b({tag:"component"},'component',_vm.content,false))]],2)}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 350 */
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroHomepage.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], HeroHomepage.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroHomepage.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroHomepage.prototype, "ctas", void 0);
-HeroHomepage = __decorate([_heroHomepageVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'hero-homepage'
-})], HeroHomepage);
-exports.default = HeroHomepage;
-=======
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchResult.prototype, "terms", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchResult.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchResult.prototype, "link", void 0);
@@ -22883,10 +14145,9 @@ exports.SearchResult = SearchResult = __decorate([_searchResultVue2.default, (0,
     name: 'SearchResult'
 })], SearchResult);
 exports.SearchResult = SearchResult;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 339 */
+/* 335 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"search-result",class:{ 'search-result--focus': _vm.focused }},[_c('h3',{staticClass:"search-result__title"},[_c('a',{staticClass:"search-result__link",attrs:{"href":_vm.link},domProps:{"innerHTML":_vm._s(_vm.computedTitle)},on:{"focus":function($event){_vm.focused = !_vm.focused},"blur":function($event){_vm.focused = !_vm.focused}}})]),_vm._v(" "),_c('p',{staticClass:"search-result__snippet",domProps:{"innerHTML":_vm._s(_vm.computedSnippet)}}),_vm._v(" "),_c('p',{staticClass:"search-result__url"},[_vm._v("\n        "+_vm._s(_vm.formattedUrl)+"\n    ")])])}
@@ -22903,17 +14164,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-
-/***/ "./src/js/components/organisms/hero-homepage/index.ts":
-/*!************************************************************!*\
-  !*** ./src/js/components/organisms/hero-homepage/index.ts ***!
-  \************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 340 */
->>>>>>> chore(build): add build
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22929,26 +14180,9 @@ function mark(text, terms) {
     return text.replace(termsRE, '<mark>$1</mark>');
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabs = __webpack_require__(351);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _tabs.Tabs;
-  }
-});
-
 /***/ }),
-/* 351 */
-=======
-var _heroHomepage = __webpack_require__(/*! ./hero-homepage */ "./src/js/components/organisms/hero-homepage/hero-homepage.ts");
-=======
-/***/ }),
-/* 341 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
->>>>>>> chore(build): add build
 
 "use strict";
 
@@ -22957,7 +14191,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _socialSharing = __webpack_require__(342);
+var _socialSharing = __webpack_require__(338);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -22967,17 +14201,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-
-/***/ "./src/js/components/organisms/hero-product/hero-product.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/organisms/hero-product/hero-product.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 342 */
->>>>>>> chore(build): add build
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22986,11 +14210,7 @@ Object.defineProperty(exports, 'default', {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-<<<<<<< HEAD
-exports.Tabs = undefined;
-=======
 exports.SocialSharing = undefined;
->>>>>>> chore(build): add build
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -22998,23 +14218,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _socialSharingVue = __webpack_require__(343);
+var _socialSharingVue = __webpack_require__(339);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _defaults2 = _interopRequireDefault(_defaults);
-
-var _tabsVue = __webpack_require__(352);
-
-var _tabsVue2 = _interopRequireDefault(_tabsVue);
-=======
-var _heroProductVue2 = _interopRequireDefault(_heroProductVue);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _socialSharingVue2 = _interopRequireDefault(_socialSharingVue);
 
-var _generateSocialSharingUrl = __webpack_require__(344);
->>>>>>> chore(build): add build
+var _generateSocialSharingUrl = __webpack_require__(340);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23072,45 +14280,14 @@ var SocialSharing = function (_Vue) {
 
     return SocialSharing;
 }(_vuePropertyDecorator.Vue);
-<<<<<<< HEAD
-<<<<<<< HEAD
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Tabs.prototype, "tabs", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Object)], Tabs.prototype, "defaultTab", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tabs.prototype, "sequenced", void 0);
-__decorate([(0, _vuePropertyDecorator.Watch)('activeTab'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], Tabs.prototype, "setActiveTab", null);
-exports.Tabs = Tabs = __decorate([_tabsVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'Tabs'
-})], Tabs);
-exports.Tabs = Tabs;
-
-/***/ }),
-/* 352 */
-/***/ (function(module, exports) {
-=======
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "subtitle", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "ctas", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "products", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "linkList", void 0);
-HeroProduct = __decorate([_heroProductVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'HeroProduct'
-})], HeroProduct);
-exports.default = HeroProduct;
-
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
 exports.SocialSharing = SocialSharing = __decorate([_socialSharingVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'SocialSharing'
 })], SocialSharing);
 exports.SocialSharing = SocialSharing;
 
 /***/ }),
-/* 343 */
+/* 339 */
 /***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"social-sharing"},[_vm._l((_vm.items),function(item){return [_c('a',{staticClass:"social-sharing__link",attrs:{"href":_vm.url(item),"target":"_blank"}},[_c('span',{staticClass:"social-sharing__text"},[_vm._v(_vm._s(item.label))]),_vm._v(" "),_c('icon',{staticClass:"social-sharing__icon",attrs:{"icon-name":item.iconName}})],1)]})],2)}
 var staticRenderFns = []
@@ -23126,20 +14303,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 353 */
-=======
-
-/***/ "./src/js/components/organisms/hero-product/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/organisms/hero-product/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 344 */
->>>>>>> chore(build): add build
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23150,30 +14314,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.generateSocialSharingUrl = generateSocialSharingUrl;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tooltipToggle = __webpack_require__(354);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _tooltipToggle.TooltipToggle;
-  }
-});
-
-/***/ }),
-/* 354 */
-=======
-var _heroProduct = __webpack_require__(/*! ./hero-product */ "./src/js/components/organisms/hero-product/hero-product.ts");
-
-var _heroProduct2 = _interopRequireDefault(_heroProduct);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-=======
 var facebookAppId = '620273961411218';
 function generateSocialSharingUrl(url) {
     var socialNetwork = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
->>>>>>> chore(build): add build
 
     var encodedUrl = encodeURIComponent(url);
     switch (socialNetwork) {
@@ -23189,17 +14332,7 @@ function generateSocialSharingUrl(url) {
 }
 
 /***/ }),
-<<<<<<< HEAD
-
-/***/ "./src/js/components/organisms/index.js":
-/*!**********************************************!*\
-  !*** ./src/js/components/organisms/index.js ***!
-  \**********************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 345 */
->>>>>>> chore(build): add build
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23208,151 +14341,18 @@ function generateSocialSharingUrl(url) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.TooltipToggle = undefined;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var _subNavigationItem = __webpack_require__(342);
 
-<<<<<<< HEAD
-var _articleContent = __webpack_require__(/*! organisms/article-content */ "./src/js/components/organisms/article-content/index.ts");
-
-<<<<<<< HEAD
-var _gsap = __webpack_require__(4);
-
-var _defaults = __webpack_require__(3);
-
-var _defaults2 = _interopRequireDefault(_defaults);
-
-var _tooltipToggleVue = __webpack_require__(355);
-
-var _tooltipToggleVue2 = _interopRequireDefault(_tooltipToggleVue);
-=======
-Object.defineProperty(exports, 'ArticleContent', {
+Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_articleContent).default;
+    return _subNavigationItem.SubNavigationItem;
   }
 });
-
-var _articleHeader = __webpack_require__(/*! organisms/article-header */ "./src/js/components/organisms/article-header/index.ts");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'ArticleHeader', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleHeader).default;
-  }
-});
-
-var _brands = __webpack_require__(/*! organisms/brands */ "./src/js/components/organisms/brands/index.ts");
-
-Object.defineProperty(exports, 'Brands', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_brands).default;
-  }
-});
-
-var _colors = __webpack_require__(/*! organisms/colors */ "./src/js/components/organisms/colors/index.ts");
-
-Object.defineProperty(exports, 'Colors', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_colors).default;
-  }
-});
-
-<<<<<<< HEAD
-var TooltipToggle = function (_Vue) {
-    _inherits(TooltipToggle, _Vue);
-
-    function TooltipToggle() {
-        _classCallCheck(this, TooltipToggle);
-
-        var _this = _possibleConstructorReturn(this, (TooltipToggle.__proto__ || Object.getPrototypeOf(TooltipToggle)).apply(this, arguments));
-
-        _this.buildingUnit = _defaults2.default.buildingUnit;
-        _this.duration = _defaults2.default.defaultDuration;
-        _this.ease = _defaults2.default.defaultEase;
-        _this.visible = false;
-        _this.tooltipLeft = true;
-        _this.yAxisCorrection = 0;
-        return _this;
-    }
-=======
-var _contentCover = __webpack_require__(/*! organisms/content-cover */ "./src/js/components/organisms/content-cover/index.ts");
-
-Object.defineProperty(exports, 'ContentCover', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentCover).default;
-  }
-});
-
-var _contentGeneral = __webpack_require__(/*! organisms/content-general */ "./src/js/components/organisms/content-general/index.ts");
-
-Object.defineProperty(exports, 'ContentGeneral', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentGeneral).default;
-  }
-});
-
-var _contentHighlight = __webpack_require__(/*! organisms/content-highlight */ "./src/js/components/organisms/content-highlight/index.ts");
-
-Object.defineProperty(exports, 'ContentHighlight', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentHighlight).default;
-  }
-});
-
-var _countrySelector = __webpack_require__(/*! organisms/country-selector */ "./src/js/components/organisms/country-selector/index.js");
-
-Object.defineProperty(exports, 'CountrySelector', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_countrySelector).default;
-  }
-});
-
-var _heroArticle = __webpack_require__(/*! organisms/hero-article */ "./src/js/components/organisms/hero-article/index.ts");
-
-Object.defineProperty(exports, 'HeroArticle', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_heroArticle).default;
-  }
-});
-
-var _heroBasic = __webpack_require__(/*! organisms/hero-basic */ "./src/js/components/organisms/hero-basic/index.ts");
-
-Object.defineProperty(exports, 'HeroBasic', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_heroBasic).default;
-  }
-});
-
-var _heroCover = __webpack_require__(/*! organisms/hero-cover */ "./src/js/components/organisms/hero-cover/index.ts");
-
-Object.defineProperty(exports, 'HeroCover', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_heroCover).default;
-  }
-});
-=======
-var _subnavigationItem = __webpack_require__(346);
-
-var _subnavigationItem2 = _interopRequireDefault(_subnavigationItem);
->>>>>>> chore(build): add build
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _subnavigationItem2.default;
 
 /***/ }),
-/* 346 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23361,14 +14361,15 @@ exports.default = _subnavigationItem2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.SubNavigationItem = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _subnavigationItemVue = __webpack_require__(347);
+var _subNavigationItemVue = __webpack_require__(343);
 
-var _subnavigationItemVue2 = _interopRequireDefault(_subnavigationItemVue);
+var _subNavigationItemVue2 = _interopRequireDefault(_subNavigationItemVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23404,16 +14405,16 @@ var SubNavigationItem = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SubNavigationItem.prototype, "url", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], SubNavigationItem.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SubNavigationItem.prototype, "label", void 0);
-SubNavigationItem = __decorate([_subnavigationItemVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.SubNavigationItem = SubNavigationItem = __decorate([_subNavigationItemVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'SubNavigationItem'
 })], SubNavigationItem);
-exports.default = SubNavigationItem;
+exports.SubNavigationItem = SubNavigationItem;
 
 /***/ }),
-/* 347 */
+/* 343 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('base-link',{staticClass:"overflow-container__link link link--reversed",attrs:{"url":_vm.url}},[_c('div',{staticClass:"overflow-container__image-container"},[(_vm.image)?_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"overflow-container__label",attrs:{"aria-label":_vm.label}},[_c('span',{staticClass:"link__underline"},[_vm._v("\n            "+_vm._s(_vm.label)+"\n        ")])])])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('base-link',{staticClass:"subnavigation__link link link--reversed",attrs:{"url":_vm.url}},[_c('div',{staticClass:"subnavigation__image-container"},[(_vm.image)?_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"subnavigation__label",attrs:{"aria-label":_vm.label}},[_c('span',{staticClass:"link__underline"},[_vm._v("\n            "+_vm._s(_vm.label)+"\n        ")])])])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -23427,7 +14428,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 348 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23437,16 +14438,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _sysNav = __webpack_require__(349);
+var _sysNav = __webpack_require__(345);
 
-var _sysNav2 = _interopRequireDefault(_sysNav);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _sysNav2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _sysNav.SysNav;
+  }
+});
 
 /***/ }),
-/* 349 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23455,6 +14457,7 @@ exports.default = _sysNav2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.SysNav = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -23462,7 +14465,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _sysNavVue = __webpack_require__(350);
+var _sysNavVue = __webpack_require__(346);
 
 var _sysNavVue2 = _interopRequireDefault(_sysNavVue);
 
@@ -23504,18 +14507,18 @@ var SysNav = function (_Vue) {
 
     return SysNav;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'store' }), __metadata("design:type", String)], SysNav.prototype, "orderNowIcon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SysNav.prototype, "orderNowLink", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SysNav.prototype, "orderNowLabel", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'search' }), __metadata("design:type", String)], SysNav.prototype, "searchIcon", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SysNav.prototype, "searchLabel", void 0);
-SysNav = __decorate([_sysNavVue2.default, (0, _vuePropertyDecorator.Component)({
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'store' }), __metadata("design:type", Object)], SysNav.prototype, "orderNowIcon", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "orderNowLink", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "orderNowLabel", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'search' }), __metadata("design:type", Object)], SysNav.prototype, "searchIcon", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "searchLabel", void 0);
+exports.SysNav = SysNav = __decorate([_sysNavVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'sys-nav'
 })], SysNav);
-exports.default = SysNav;
+exports.SysNav = SysNav;
 
 /***/ }),
-/* 350 */
+/* 346 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"sys-nav",attrs:{"aria-label":"quick access"}},[_c('ul',{staticClass:"sys-nav__list",attrs:{"role":"presentation"}},[_c('li',{staticClass:"sys-nav__item"},[(_vm.orderNowLink)?_c('base-link',{staticClass:"sys-nav__link",attrs:{"url":_vm.orderNowLink}},[_c('icon',{staticClass:"sys-nav__icon",attrs:{"icon-name":_vm.orderNowIcon}}),_vm._v(" "),_c('span',{staticClass:"sys-nav__label sys-nav__label--hidden-sm"},[_vm._v(_vm._s(_vm.orderNowLabel))])],1):_vm._e()],1),_vm._v(" "),_c('li',{staticClass:"sys-nav__item"},[_c('a',{staticClass:"sys-nav__link",attrs:{"role":"button","tabindex":"0"},on:{"click":_vm.openSearch,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.openSearch($event)}}},[_c('icon',{staticClass:"sys-nav__icon",attrs:{"icon-name":_vm.searchIcon}}),_vm._v(" "),_c('span',{staticClass:"sys-nav__label sys-nav__label--hidden-sm"},[_vm._v(_vm._s(_vm.searchLabel))])],1)])])])}
@@ -23532,7 +14535,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 351 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23542,37 +14545,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tab = __webpack_require__(352);
+var _tab = __webpack_require__(348);
 
-<<<<<<< HEAD
-            function setCountry() {
-                return _ref2.apply(this, arguments);
-            }
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tab2 = _interopRequireDefault(_tab);
->>>>>>> chore(build): add build
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _tab2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _tab.Tab;
+  }
+});
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 355 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/organisms/locale-selector/locale-selector.vue.html":
-/*!******************************************************************************!*\
-  !*** ./src/js/components/organisms/locale-selector/locale-selector.vue.html ***!
-  \******************************************************************************/
-/*! no static exports found */
-=======
-/* 352 */
->>>>>>> chore(build): add build
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23581,10 +14564,17 @@ exports.default = _tab2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Tab = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
+
+var _tabVue = __webpack_require__(349);
+
+var _tabVue2 = _interopRequireDefault(_tabVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -23619,33 +14609,30 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Tab.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Tab.prototype, "content", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tab.prototype, "active", void 0);
-Tab = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'Tab',
-    template: __webpack_require__(353)
+exports.Tab = Tab = __decorate([_tabVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Tab'
 })], Tab);
-exports.default = Tab;
+exports.Tab = Tab;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 356 */
-=======
-
-/***/ "./src/js/components/organisms/overflow-container/index.js":
-/*!*****************************************************************!*\
-  !*** ./src/js/components/organisms/overflow-container/index.js ***!
-  \*****************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 353 */
+/* 349 */
 /***/ (function(module, exports) {
 
-module.exports = "<div :id=\"id\" class=\"tabs__content\" v-show=\"active\" role=\"tabpanel\" :aria-hidden=\"!active\" :aria-label=\"label\">\n    <template v-show=\"content\">\n        <component :is=\"content.type\"\n                   v-bind=\"content\">\n        </component>\n    </template>\n</div>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.active),expression:"active"}],staticClass:"tabs__content",attrs:{"id":_vm.id,"role":"tabpanel","aria-hidden":!_vm.active,"aria-label":_vm.label}},[[_c(_vm.content.type,_vm._b({tag:"component"},'component',_vm.content,false))]],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-/* 354 */
->>>>>>> chore(build): add build
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23655,37 +14642,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabTable = __webpack_require__(357);
-=======
-var _overflowContainer = __webpack_require__(/*! ./overflow-container */ "./src/js/components/organisms/overflow-container/overflow-container.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tabs = __webpack_require__(355);
->>>>>>> chore(build): add build
+var _tabs = __webpack_require__(351);
 
-var _tabs2 = _interopRequireDefault(_tabs);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _tabs2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _tabs.Tabs;
+  }
+});
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 357 */
-=======
-
-/***/ "./src/js/components/organisms/overflow-container/overflow-container.ts":
-/*!******************************************************************************!*\
-  !*** ./src/js/components/organisms/overflow-container/overflow-container.ts ***!
-  \******************************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 355 */
->>>>>>> chore(build): add build
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23694,6 +14661,7 @@ exports.default = _tabs2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Tabs = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -23701,15 +14669,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabTableVue = __webpack_require__(358);
-=======
-var _browserCapabilities = __webpack_require__(/*! utils/browser-capabilities */ "./src/js/utils/browser-capabilities.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _browserCapabilities = __webpack_require__(2);
->>>>>>> chore(build): add build
 
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
 
@@ -23723,7 +14683,7 @@ var _defaults = __webpack_require__(3);
 
 var _defaults2 = _interopRequireDefault(_defaults);
 
-var _tabsVue = __webpack_require__(356);
+var _tabsVue = __webpack_require__(352);
 
 var _tabsVue2 = _interopRequireDefault(_tabsVue);
 
@@ -23865,26 +14825,18 @@ var Tabs = function (_Vue) {
 
     return Tabs;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], Tabs.prototype, "tabs", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Number)], Tabs.prototype, "defaultTab", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], Tabs.prototype, "sequenced", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Tabs.prototype, "tabs", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 0 }), __metadata("design:type", Object)], Tabs.prototype, "defaultTab", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Object)], Tabs.prototype, "sequenced", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('activeTab'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], Tabs.prototype, "setActiveTab", null);
-Tabs = __decorate([_tabsVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.Tabs = Tabs = __decorate([_tabsVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'Tabs'
 })], Tabs);
-exports.default = Tabs;
+exports.Tabs = Tabs;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 358 */
+/* 352 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 356 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.tabs)?_c('div',{staticClass:"tabs"},[_c('div',{staticClass:"tabs__nav"},[_c('ul',{ref:"tabList",staticClass:"tabs__list",attrs:{"role":"tablist"}},[_vm._l((_vm.tabs),function(tab,index){return _c('li',{ref:"tab",refInFor:true,staticClass:"tabs__list_item",attrs:{"role":"presentation"}},[_c('a',{staticClass:"tabs__list_link",class:_vm.getLinkClassList(index),attrs:{"href":'#' + tab.id,"role":"tab","aria-controls":tab.id,"aria-selected":_vm.activeTab === index},on:{"click":function($event){$event.preventDefault();_vm.activeTab = index}}},[(_vm.sequenced)?_c('span',[_vm._v(_vm._s(((index+1) + ". ")))]):_vm._e(),_vm._v("\n                    "+_vm._s(tab.label)+"\n                ")])])}),_vm._v(" "),_c('li',{ref:"indicator",staticClass:"tabs__indicator",attrs:{"aria-hidden":"true","role":"none"}})],2)]),_vm._v(" "),_vm._l((_vm.tabs),function(tab,index){return _c('div',{staticClass:"tabs__contents"},[[_c(tab.type,_vm._b({key:index,tag:"component",attrs:{"id":tab.label+index,"active":_vm.activeTab === index}},'component',tab,false))]],2)})],2):_vm._e()}
 var staticRenderFns = []
@@ -23900,20 +14852,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 359 */
-=======
-
-/***/ "./src/js/components/organisms/overview-ubr/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/organisms/overview-ubr/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 357 */
->>>>>>> chore(build): add build
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23923,300 +14862,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabTableRow = __webpack_require__(360);
-=======
-var _overviewUbr = __webpack_require__(/*! ./overview-ubr */ "./src/js/components/organisms/overview-ubr/overview-ubr.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tag = __webpack_require__(358);
->>>>>>> chore(build): add build
-
-var _tag2 = _interopRequireDefault(_tag);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _tag2.default;
-
-/***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 360 */
-=======
-
-/***/ "./src/js/components/organisms/overview-ubr/overview-ubr.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/organisms/overview-ubr/overview-ubr.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 358 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabTableRowVue = __webpack_require__(361);
-=======
-var _overviewUbrVue = __webpack_require__(/*! ./overview-ubr.vue.html */ "./src/js/components/organisms/overview-ubr/overview-ubr.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tagVue = __webpack_require__(359);
->>>>>>> chore(build): add build
-
-var _tagVue2 = _interopRequireDefault(_tagVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var Tag = function (_Vue) {
-    _inherits(Tag, _Vue);
-
-    function Tag() {
-        _classCallCheck(this, Tag);
-
-        return _possibleConstructorReturn(this, (Tag.__proto__ || Object.getPrototypeOf(Tag)).apply(this, arguments));
-    }
-
-    return Tag;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Tag.prototype, "tag", void 0);
-Tag = __decorate([_tagVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'tag'
-})], Tag);
-exports.default = Tag;
-
-/***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 361 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 359 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('label',{staticClass:"tag"},[_vm._v(_vm._s(_vm.tag.title))])}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 362 */
-=======
-
-/***/ "./src/js/components/organisms/overview/index.ts":
-/*!*******************************************************!*\
-  !*** ./src/js/components/organisms/overview/index.ts ***!
-  \*******************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 360 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _wizardStepDownloadList = __webpack_require__(363);
-=======
-var _overview = __webpack_require__(/*! ./overview */ "./src/js/components/organisms/overview/overview.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tagList = __webpack_require__(361);
->>>>>>> chore(build): add build
-
-var _tagList2 = _interopRequireDefault(_tagList);
-
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 363 */
-=======
-
-/***/ "./src/js/components/organisms/overview/overview.ts":
-/*!**********************************************************!*\
-  !*** ./src/js/components/organisms/overview/overview.ts ***!
-  \**********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _tagList2.default;
-
-/***/ }),
-/* 361 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _wizardStepDownloadListVue = __webpack_require__(364);
-=======
-var _overviewVue = __webpack_require__(/*! ./overview.vue.html */ "./src/js/components/organisms/overview/overview.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tagListVue = __webpack_require__(362);
->>>>>>> chore(build): add build
-
-var _tagListVue2 = _interopRequireDefault(_tagListVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var TagList = function (_Vue) {
-    _inherits(TagList, _Vue);
-
-    function TagList() {
-        _classCallCheck(this, TagList);
-
-        return _possibleConstructorReturn(this, (TagList.__proto__ || Object.getPrototypeOf(TagList)).apply(this, arguments));
-    }
-
-    return TagList;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], TagList.prototype, "tags", void 0);
-TagList = __decorate([_tagListVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'tag-list'
-})], TagList);
-exports.default = TagList;
-
-/***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 364 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 362 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',{staticClass:"tag-list__list list"},_vm._l((_vm.tags),function(tag){return _c('li',{staticClass:"tag-list__item list_item"},[_c('tag',{attrs:{"tag":tag}})],1)}),0)}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 365 */
-=======
-
-/***/ "./src/js/components/organisms/page-footer/index.ts":
-/*!**********************************************************!*\
-  !*** ./src/js/components/organisms/page-footer/index.ts ***!
-  \**********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 363 */
->>>>>>> chore(build): add build
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _wizardStepConfirmation = __webpack_require__(366);
-=======
-var _pageFooter = __webpack_require__(/*! ./page-footer */ "./src/js/components/organisms/page-footer/page-footer.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tooltipToggle = __webpack_require__(364);
->>>>>>> chore(build): add build
+var _tooltipToggle = __webpack_require__(354);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -24226,20 +14872,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 366 */
-=======
-
-/***/ "./src/js/components/organisms/page-footer/page-footer.ts":
-/*!****************************************************************!*\
-  !*** ./src/js/components/organisms/page-footer/page-footer.ts ***!
-  \****************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 364 */
->>>>>>> chore(build): add build
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24256,21 +14889,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _wizardStepConfirmationVue = __webpack_require__(367);
-=======
-var _pageFooterVue = __webpack_require__(/*! ./page-footer.vue.html */ "./src/js/components/organisms/page-footer/page-footer.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _gsap = __webpack_require__(4);
->>>>>>> chore(build): add build
 
 var _defaults = __webpack_require__(3);
 
 var _defaults2 = _interopRequireDefault(_defaults);
 
-var _tooltipToggleVue = __webpack_require__(365);
+var _tooltipToggleVue = __webpack_require__(355);
 
 var _tooltipToggleVue2 = _interopRequireDefault(_tooltipToggleVue);
 
@@ -24366,16 +14991,8 @@ exports.TooltipToggle = TooltipToggle = __decorate([_tooltipToggleVue2.default, 
 exports.TooltipToggle = TooltipToggle;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 367 */
+/* 355 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 365 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip-toggle"},[_c('transition',{on:{"enter":_vm.tooltipEnter,"leave":_vm.tooltipLeave}},[_c('tooltip',{directives:[{name:"show",rawName:"v-show",value:(_vm.visible),expression:"visible"}],ref:"tooltip",class:_vm.tooltipClass,attrs:{"block":"tooltip-toggle","id":_vm.uniqId + '_tooltip'}},[_vm._v("\n            "+_vm._s(_vm.description)+"\n        ")])],1),_vm._v(" "),_c('icon-button',{ref:"button",attrs:{"aria-expanded":_vm.visible.toString(),"aria-describedby":_vm.uniqId + '_tooltip',"icon-name":_vm.icon,"button-class":"icon-button--transparent icon-button--reversed icon-button--small-icon"},nativeOn:{"click":function($event){$event.preventDefault();return _vm.toggleTooltip($event)},"keyup":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"enter",13,$event.key,"Enter")){ return null; }return _vm.toggleTooltip($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"space",32,$event.key,[" ","Spacebar"])){ return null; }return _vm.toggleTooltip($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.hideTooltip($event)}],"blur":function($event){$event.preventDefault();return _vm.hideTooltip($event)}}},[_vm._v("\n        "+_vm._s(_vm.label)+"\n    ")])],1)}
 var staticRenderFns = []
@@ -24391,20 +15008,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 368 */
-=======
-
-/***/ "./src/js/components/organisms/page-header/index.ts":
-/*!**********************************************************!*\
-  !*** ./src/js/components/organisms/page-header/index.ts ***!
-  \**********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 366 */
->>>>>>> chore(build): add build
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24414,60 +15018,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleContent = __webpack_require__(369);
-
-Object.defineProperty(exports, 'ArticleContent', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleContent).default;
-  }
-});
-
-var _articleHeader = __webpack_require__(372);
-
-Object.defineProperty(exports, 'ArticleHeader', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_articleHeader).default;
-  }
-});
-
-var _brands = __webpack_require__(375);
-
-Object.defineProperty(exports, 'Brands', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_brands).default;
-  }
-});
-
-var _colors = __webpack_require__(378);
-
-Object.defineProperty(exports, 'Colors', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_colors).default;
-  }
-});
-
-var _contentCover = __webpack_require__(381);
-
-Object.defineProperty(exports, 'ContentCover', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentCover).default;
-  }
-});
-
-var _contentGeneral = __webpack_require__(384);
-=======
-var _pageHeader = __webpack_require__(/*! ./page-header */ "./src/js/components/organisms/page-header/page-header.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tabTable = __webpack_require__(367);
->>>>>>> chore(build): add build
+var _tabTable = __webpack_require__(357);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -24476,100 +15027,33 @@ Object.defineProperty(exports, 'default', {
   }
 });
 
-<<<<<<< HEAD
-var _contentHighlight = __webpack_require__(387);
-
-Object.defineProperty(exports, 'ContentHighlight', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_contentHighlight).default;
-  }
-});
-
-var _countrySelector = __webpack_require__(390);
-=======
 /***/ }),
-/* 367 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
->>>>>>> feat(table-compare): allow 5 columns
 
 "use strict";
 
-<<<<<<< HEAD
-var _heroArticle = __webpack_require__(393);
-=======
->>>>>>> feat(table-compare): allow 5 columns
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-<<<<<<< HEAD
-exports.PageHeader = undefined;
-
-<<<<<<< HEAD
-var _heroBasic = __webpack_require__(396);
-=======
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> feat(table-compare): allow 5 columns
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-<<<<<<< HEAD
-var _heroCover = __webpack_require__(399);
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-
-var _pageHeaderVue = __webpack_require__(/*! ./page-header.vue.html */ "./src/js/components/organisms/page-header/page-header.vue.html");
-
-<<<<<<< HEAD
-var _heroHomepage = __webpack_require__(402);
-=======
-var _pageHeaderVue2 = _interopRequireDefault(_pageHeaderVue);
->>>>>>> feat(table-compare): allow 5 columns
-
-var _viewport = __webpack_require__(/*! utils/viewport */ "./src/js/utils/viewport.js");
-
-<<<<<<< HEAD
-var _heroProduct = __webpack_require__(406);
-=======
-var _viewport2 = _interopRequireDefault(_viewport);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 exports.TabTable = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _tabTableVue = __webpack_require__(368);
+var _tabTableVue = __webpack_require__(358);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _localeSelector = __webpack_require__(409);
-=======
-var _publicEventService2 = _interopRequireDefault(_publicEventService);
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _tabTableVue2 = _interopRequireDefault(_tabTableVue);
->>>>>>> chore(build): add build
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-<<<<<<< HEAD
-var _overview = __webpack_require__(412);
-=======
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
->>>>>>> feat(table-compare): allow 5 columns
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-<<<<<<< HEAD
-var _overviewUbr = __webpack_require__(415);
-=======
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
->>>>>>> feat(table-compare): allow 5 columns
 
 var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
     var c = arguments.length,
@@ -24583,278 +15067,15 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _pageFooter = __webpack_require__(418);
-=======
-var PageHeader = function (_Vue) {
-    _inherits(PageHeader, _Vue);
->>>>>>> feat(table-compare): allow 5 columns
-
-    function PageHeader() {
-        _classCallCheck(this, PageHeader);
-
-<<<<<<< HEAD
-var _pageHeader = __webpack_require__(421);
-=======
-        var _this = _possibleConstructorReturn(this, (PageHeader.__proto__ || Object.getPrototypeOf(PageHeader)).apply(this, arguments));
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var TabTable = function (_Vue) {
     _inherits(TabTable, _Vue);
 
     function TabTable() {
         _classCallCheck(this, TabTable);
->>>>>>> chore(build): add build
 
         return _possibleConstructorReturn(this, (TabTable.__proto__ || Object.getPrototypeOf(TabTable)).apply(this, arguments));
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchResults = __webpack_require__(424);
-=======
-    _createClass(PageHeader, [{
-        key: "navAssistToggle",
-        value: function navAssistToggle() {
-            if (this.searchOpen || this.mainNavOpen) {
-                this.searchOpen = false;
-                this.$emit('toggle-nav', false);
-            } else {
-                this.$emit('toggle-nav', true);
-                this.searchOpen = false;
-            }
-        }
-    }, {
-        key: "openSearch",
-        value: function openSearch() {
-            this.searchOpen = true;
-        }
-    }, {
-        key: "closeSearch",
-        value: function closeSearch() {
-            this.searchOpen = false;
-        }
-    }, {
-        key: "handleFocus",
-        value: function handleFocus() {
-            if (!this.$refs.search || !this.$refs.search.focusInput) {
-                return;
-            }
-            this.$refs.search.focusInput();
-        }
-    }, {
-        key: "focusFirstSysNavItem",
-        value: function focusFirstSysNavItem() {
-            var firstNavItem = this.$el.querySelector('.sys-nav__link');
-            if (firstNavItem) {
-                firstNavItem.focus();
-            }
-        }
-    }, {
-        key: "focusHomeNavItem",
-        value: function focusHomeNavItem() {
-            var homeLink = this.$el.querySelector('.home-link');
-            if (homeLink) {
-                homeLink.focus();
-            }
-        }
-    }, {
-        key: "handleResize",
-        value: function handleResize() {
-            this.showCompactMenu = this.viewportUtil.screenWidth < this.maxMobileRes;
-        }
-    }, {
-        key: "beforeMount",
-        value: function beforeMount() {
-            var _this2 = this;
->>>>>>> feat(table-compare): allow 5 columns
-
-            _publicEventService2.default.on('size', function (_ref) {
-                var element = _ref.element,
-                    size = _ref.size;
-
-<<<<<<< HEAD
-var _subnavigation = __webpack_require__(427);
-
-Object.defineProperty(exports, 'Subnavigation', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_subnavigation).default;
-  }
-});
-
-var _tabbedContent = __webpack_require__(430);
-=======
-                if (element === 'drawer') {
-                    _this2.offsetTopHeader = size;
-                }
-            });
-        }
-    }, {
-        key: "mounted",
-        value: function mounted() {
-            this.handleResize();
-            this.viewportUtil.addResizeHandler(this.handleResize);
-        }
-    }, {
-        key: "beforeDestroy",
-        value: function beforeDestroy() {
-            this.viewportUtil.removeResizeHandler(this.handleResize);
-        }
-    }, {
-        key: "assistState",
-        get: function get() {
-            return this.mainNavOpen || this.searchOpen;
-        }
-    }, {
-        key: "headerClasses",
-        get: function get() {
-            var scrollY = this.viewportUtil.scrollY < 0 ? 0 : this.viewportUtil.scrollY;
-            var isFixed = scrollY >= this.offsetTopHeader;
-            return {
-                'header--absolute': !isFixed,
-                'header--fixed': isFixed
-            };
-        }
-    }]);
->>>>>>> feat(table-compare): allow 5 columns
-
-    return PageHeader;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Object)], PageHeader.prototype, "navigation", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], PageHeader.prototype, "cta", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], PageHeader.prototype, "search", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: true }), __metadata("design:type", Boolean)], PageHeader.prototype, "mainNavOpen", void 0);
-exports.PageHeader = PageHeader = __decorate([_pageHeaderVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'PageHeader'
-})], PageHeader);
-exports.PageHeader = PageHeader;
-
-<<<<<<< HEAD
-var _tabbedTable = __webpack_require__(433);
-=======
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-
-/***/ "./src/js/components/organisms/page-header/page-header.vue.html":
-/*!**********************************************************************!*\
-  !*** ./src/js/components/organisms/page-header/page-header.vue.html ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-<<<<<<< HEAD
-var _tableCompare = __webpack_require__(436);
-=======
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "header",
-    {
-      directives: [
-        {
-          name: "size-emitter",
-          rawName: "v-size-emitter",
-          value: "header",
-          expression: "'header'"
-        }
-      ],
-      staticClass: "header",
-      class: _vm.headerClasses,
-      attrs: { role: "banner" }
-    },
-    [
-      _c(
-        "div",
-        {
-          staticClass: "header__top",
-          class: { "header--mobile-inverted": _vm.mainNavOpen }
-        },
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "home-link",
-              attrs: { to: "/", "aria-label": "Ultimaker homepage" }
-            },
-            [
-              _c("icon", {
-                staticClass: "home-link__logo",
-                attrs: { "icon-name": "logo-ultimaker" }
-              })
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _vm.navigation
-            ? _c(
-                "main-navigation",
-                _vm._g(
-                  {
-                    attrs: {
-                      navigation: _vm.navigation,
-                      "main-nav-open": _vm.mainNavOpen
-                    }
-                  },
-                  _vm.$listeners
-                )
-              )
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.cta && _vm.search
-            ? _c("sys-nav", {
-                attrs: {
-                  "order-now-icon": _vm.cta.icon,
-                  "order-now-label": _vm.cta.label,
-                  "order-now-link": _vm.cta.url,
-                  "search-icon": _vm.search.icon,
-                  "search-label": _vm.search.label
-                },
-                on: { "open-search": _vm.openSearch }
-              })
-            : _vm._e(),
-          _vm._v(" "),
-          _c("nav-assist", {
-            staticClass: "main-nav__nav-assist",
-            attrs: { "open-state": _vm.mainNavOpen },
-            on: { toggle: _vm.navAssistToggle }
-          }),
-          _vm._v(" "),
-          _c(
-            "transition",
-            {
-              attrs: { name: "search" },
-              on: { "after-enter": _vm.handleFocus, leave: _vm.handleFocus }
-            },
-            [
-              _vm.searchOpen
-                ? _c("search-bar", {
-                    ref: "search",
-                    staticClass: "header__search",
-                    attrs: {
-                      label: _vm.search.label,
-                      placeholder: _vm.search.placeholder,
-                      "open-state": _vm.searchOpen
-                    },
-                    on: { close: _vm.closeSearch }
-                  })
-                : _vm._e()
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
->>>>>>> feat(table-compare): allow 5 columns
-=======
     return TabTable;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], TabTable.prototype, "id", void 0);
@@ -24867,12 +15088,11 @@ exports.TabTable = TabTable = __decorate([_tabTableVue2.default, (0, _vuePropert
 exports.TabTable = TabTable;
 
 /***/ }),
-/* 368 */
+/* 358 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"flexgrid flexgrid--mobile-xl-row"},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.active),expression:"active"}],staticClass:"tab-table__content flexgrid__cell--sm-8",attrs:{"id":_vm.id,"role":"tabpanel","aria-hidden":!_vm.active,"aria-label":_vm.label}},_vm._l((_vm.rows),function(row){return _c(row.type,_vm._b({tag:"component"},'component',row,false))}),1)])}
 var staticRenderFns = []
->>>>>>> chore(build): add build
 
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
@@ -24885,20 +15105,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 369 */
-=======
-
-/***/ "./src/js/components/organisms/search-results/index.ts":
-/*!*************************************************************!*\
-  !*** ./src/js/components/organisms/search-results/index.ts ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 369 */
->>>>>>> chore(build): add build
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24908,15 +15115,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleContent = __webpack_require__(370);
-=======
-var _searchResults = __webpack_require__(/*! ./search-results */ "./src/js/components/organisms/search-results/search-results.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tabTableRow = __webpack_require__(370);
->>>>>>> chore(build): add build
+var _tabTableRow = __webpack_require__(360);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -24926,20 +15125,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 370 */
-=======
-
-/***/ "./src/js/components/organisms/search-results/search-results.ts":
-/*!**********************************************************************!*\
-  !*** ./src/js/components/organisms/search-results/search-results.ts ***!
-  \**********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 370 */
->>>>>>> chore(build): add build
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24954,15 +15140,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleContentVue = __webpack_require__(371);
-=======
-var _vuePropertyDecorator = __webpack_require__(/*! vue-property-decorator */ "vue-property-decorator");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _tabTableRowVue = __webpack_require__(371);
->>>>>>> chore(build): add build
+var _tabTableRowVue = __webpack_require__(361);
 
 var _tabTableRowVue2 = _interopRequireDefault(_tabTableRowVue);
 
@@ -25007,16 +15185,8 @@ exports.TabTableRow = TabTableRow = __decorate([_tabTableRowVue2.default, (0, _v
 exports.TabTableRow = TabTableRow;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 371 */
+/* 361 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 371 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"tab-table-row"},[(_vm.tooltip)?[_c('div',{staticClass:"tab-table-row__label--tooltip"},[_c('tooltip-toggle',_vm._b({attrs:{"label":_vm.label}},'tooltip-toggle',_vm.tooltip,false))],1)]:[_c('div',{staticClass:"tab-table-row__label"},[_c('p',{staticClass:"tab-table-row__label-text"},[_vm._v(_vm._s(_vm.label))])])],_vm._v(" "),_c('div',{staticClass:"tab-table-row__content"},[_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.value),expression:"value"}],staticClass:"content-manageble content-manageble--copy-small tab-table-row__value",domProps:{"innerHTML":_vm._s(_vm.value)}}),_vm._v(" "),(_vm.linkList)?_c('ul',{staticClass:"tab-table-row__linklist"},[_vm._l((_vm.linkList),function(link){return [_c('li',{staticClass:"tab-table-row__linklist-item"},[_c('content-link',_vm._b({staticClass:"link tab-table-row__linklist-link",attrs:{"label":link.label}},'content-link',link,false))],1)]})],2):_vm._e()])],2)}
 var staticRenderFns = []
@@ -25032,20 +15202,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 372 */
-=======
-
-/***/ "./src/js/components/organisms/tabbed-content/index.ts":
-/*!*************************************************************!*\
-  !*** ./src/js/components/organisms/tabbed-content/index.ts ***!
-  \*************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 372 */
->>>>>>> chore(build): add build
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25055,15 +15212,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleHeader = __webpack_require__(373);
-=======
-var _tabbedContent = __webpack_require__(/*! ./tabbed-content */ "./src/js/components/organisms/tabbed-content/tabbed-content.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _wizardStepDownloadList = __webpack_require__(373);
->>>>>>> chore(build): add build
+var _wizardStepDownloadList = __webpack_require__(363);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -25073,20 +15222,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 373 */
-=======
-
-/***/ "./src/js/components/organisms/tabbed-content/tabbed-content.ts":
-/*!**********************************************************************!*\
-  !*** ./src/js/components/organisms/tabbed-content/tabbed-content.ts ***!
-  \**********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 373 */
->>>>>>> chore(build): add build
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25103,15 +15239,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _articleHeaderVue = __webpack_require__(374);
-=======
-var _tabbedContentVue = __webpack_require__(/*! ./tabbed-content.vue.html */ "./src/js/components/organisms/tabbed-content/tabbed-content.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _wizardStepDownloadListVue = __webpack_require__(374);
->>>>>>> chore(build): add build
+var _wizardStepDownloadListVue = __webpack_require__(364);
 
 var _wizardStepDownloadListVue2 = _interopRequireDefault(_wizardStepDownloadListVue);
 
@@ -25196,16 +15324,8 @@ exports.WizardStepDownloadList = WizardStepDownloadList = __decorate([_wizardSte
 exports.WizardStepDownloadList = WizardStepDownloadList;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 374 */
+/* 364 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 374 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('form',{staticClass:"wizard-step-download-list",attrs:{"target":"_blank","method":"get","action":_vm.file},on:{"submit":_vm.handleSubmit}},[_c('header-block',{staticClass:"header-block--wizard",attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"wizard-step-download-list__description"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),(_vm.items)?_c('ul',{staticClass:"wizard-step-download-list__items flexgrid flexgrid--justify-space-between flexgrid--mobile-xl-row"},_vm._l((_vm.items),function(item,index){return _c('li',{staticClass:"wizard-step-download-list__item flexgrid__cell--sm-4"},[_c('card-download',_vm._b({key:"index",attrs:{"index":index,"selected":_vm.selectedItem === index,"name":_vm.name,"setSelectedItem":_vm.setSelectedItem}},'card-download',item,false))],1)}),0):_vm._e(),_vm._v(" "),(_vm.submitButton)?_c('button',{staticClass:"wizard-step-download-list__button button"},[_vm._v("\n        "+_vm._s(_vm.submitButton.label)+"\n    ")]):_vm._e()],1)}
 var staticRenderFns = []
@@ -25221,20 +15341,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 375 */
-=======
-
-/***/ "./src/js/components/organisms/tabbed-table/index.ts":
-/*!***********************************************************!*\
-  !*** ./src/js/components/organisms/tabbed-table/index.ts ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 375 */
->>>>>>> chore(build): add build
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25244,15 +15351,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _brands = __webpack_require__(376);
-=======
-var _tabbedTable = __webpack_require__(/*! ./tabbed-table */ "./src/js/components/organisms/tabbed-table/tabbed-table.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _wizardStepConfirmation = __webpack_require__(376);
->>>>>>> chore(build): add build
+var _wizardStepConfirmation = __webpack_require__(366);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -25261,24 +15360,10 @@ Object.defineProperty(exports, 'default', {
   }
 });
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 376 */
-=======
-
-/***/ "./src/js/components/organisms/tabbed-table/tabbed-table.ts":
-/*!******************************************************************!*\
-  !*** ./src/js/components/organisms/tabbed-table/tabbed-table.ts ***!
-  \******************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 376 */
->>>>>>> chore(build): add build
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25292,15 +15377,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _brandsVue = __webpack_require__(377);
-=======
-var _tabbedTableVue = __webpack_require__(/*! ./tabbed-table.vue.html */ "./src/js/components/organisms/tabbed-table/tabbed-table.vue.html");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _wizardStepConfirmationVue = __webpack_require__(377);
->>>>>>> chore(build): add build
+var _wizardStepConfirmationVue = __webpack_require__(367);
 
 var _wizardStepConfirmationVue2 = _interopRequireDefault(_wizardStepConfirmationVue);
 
@@ -25347,16 +15424,8 @@ WizardStepConfirmation = __decorate([_wizardStepConfirmationVue2.default, (0, _v
 exports.default = WizardStepConfirmation;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 377 */
+/* 367 */
 /***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 377 */
-/***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism wizard-step-confirmation"},[_c('section',{staticClass:"container wizard-step-confirmation__container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid"},[_c('div',{staticClass:"flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__image"},[_c('div',{staticClass:"wizard-step-confirmation__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6 wizard-step-confirmation__grid-cell wizard-step-confirmation__content"},[_c('h3',[_vm._v(_vm._s(_vm.contentTitle))]),_vm._v(" "),_c('div',{staticClass:"content-manageble wizard-step-confirmation__body",domProps:{"innerHTML":_vm._s(_vm.content)}}),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod-content-link":"wizard-step-confirmation","ctas":_vm.ctas.ctas}}):_vm._e()],1)])],1)])}
 var staticRenderFns = []
@@ -25372,7 +15441,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 378 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25382,7 +15451,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _articleContent = __webpack_require__(379);
+var _articleContent = __webpack_require__(369);
 
 Object.defineProperty(exports, 'ArticleContent', {
   enumerable: true,
@@ -25391,42 +15460,8 @@ Object.defineProperty(exports, 'ArticleContent', {
   }
 });
 
-var _articleHeader = __webpack_require__(382);
+var _articleHeader = __webpack_require__(372);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 378 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _colors = __webpack_require__(379);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _colors.Colors;
-  }
-});
-
-/***/ }),
-/* 379 */
-=======
-
-/***/ "./src/js/components/organisms/table-compare/table-compare.ts":
-/*!********************************************************************!*\
-  !*** ./src/js/components/organisms/table-compare/table-compare.ts ***!
-  \********************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
 Object.defineProperty(exports, 'ArticleHeader', {
   enumerable: true,
   get: function get() {
@@ -25434,8 +15469,7 @@ Object.defineProperty(exports, 'ArticleHeader', {
   }
 });
 
-var _brands = __webpack_require__(385);
->>>>>>> chore(build): add build
+var _brands = __webpack_require__(375);
 
 Object.defineProperty(exports, 'Brands', {
   enumerable: true,
@@ -25444,7 +15478,7 @@ Object.defineProperty(exports, 'Brands', {
   }
 });
 
-var _colors = __webpack_require__(18);
+var _colors = __webpack_require__(378);
 
 Object.defineProperty(exports, 'Colors', {
   enumerable: true,
@@ -25453,7 +15487,7 @@ Object.defineProperty(exports, 'Colors', {
   }
 });
 
-var _contentCover = __webpack_require__(390);
+var _contentCover = __webpack_require__(381);
 
 Object.defineProperty(exports, 'ContentCover', {
   enumerable: true,
@@ -25462,7 +15496,7 @@ Object.defineProperty(exports, 'ContentCover', {
   }
 });
 
-var _contentGeneral = __webpack_require__(393);
+var _contentGeneral = __webpack_require__(384);
 
 Object.defineProperty(exports, 'ContentGeneral', {
   enumerable: true,
@@ -25471,15 +15505,7 @@ Object.defineProperty(exports, 'ContentGeneral', {
   }
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _colorsVue = __webpack_require__(380);
-=======
-var _debounce = __webpack_require__(/*! lodash/debounce */ "lodash/debounce");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _contentHighlight = __webpack_require__(396);
->>>>>>> chore(build): add build
+var _contentHighlight = __webpack_require__(387);
 
 Object.defineProperty(exports, 'ContentHighlight', {
   enumerable: true,
@@ -25488,7 +15514,7 @@ Object.defineProperty(exports, 'ContentHighlight', {
   }
 });
 
-var _countrySelector = __webpack_require__(399);
+var _countrySelector = __webpack_require__(390);
 
 Object.defineProperty(exports, 'CountrySelector', {
   enumerable: true,
@@ -25497,7 +15523,7 @@ Object.defineProperty(exports, 'CountrySelector', {
   }
 });
 
-var _heroArticle = __webpack_require__(402);
+var _heroArticle = __webpack_require__(393);
 
 Object.defineProperty(exports, 'HeroArticle', {
   enumerable: true,
@@ -25506,7 +15532,7 @@ Object.defineProperty(exports, 'HeroArticle', {
   }
 });
 
-var _heroBasic = __webpack_require__(405);
+var _heroBasic = __webpack_require__(396);
 
 Object.defineProperty(exports, 'HeroBasic', {
   enumerable: true,
@@ -25515,7 +15541,7 @@ Object.defineProperty(exports, 'HeroBasic', {
   }
 });
 
-var _heroCover = __webpack_require__(408);
+var _heroCover = __webpack_require__(399);
 
 Object.defineProperty(exports, 'HeroCover', {
   enumerable: true,
@@ -25524,7 +15550,7 @@ Object.defineProperty(exports, 'HeroCover', {
   }
 });
 
-var _heroHomepage = __webpack_require__(411);
+var _heroHomepage = __webpack_require__(402);
 
 Object.defineProperty(exports, 'HeroHomepage', {
   enumerable: true,
@@ -25533,7 +15559,7 @@ Object.defineProperty(exports, 'HeroHomepage', {
   }
 });
 
-var _heroProduct = __webpack_require__(415);
+var _heroProduct = __webpack_require__(406);
 
 Object.defineProperty(exports, 'HeroProduct', {
   enumerable: true,
@@ -25542,7 +15568,7 @@ Object.defineProperty(exports, 'HeroProduct', {
   }
 });
 
-var _localeSelector = __webpack_require__(418);
+var _localeSelector = __webpack_require__(409);
 
 Object.defineProperty(exports, 'LocaleSelector', {
   enumerable: true,
@@ -25551,7 +15577,7 @@ Object.defineProperty(exports, 'LocaleSelector', {
   }
 });
 
-var _overview = __webpack_require__(421);
+var _overview = __webpack_require__(412);
 
 Object.defineProperty(exports, 'Overview', {
   enumerable: true,
@@ -25560,7 +15586,7 @@ Object.defineProperty(exports, 'Overview', {
   }
 });
 
-var _overviewUbr = __webpack_require__(424);
+var _overviewUbr = __webpack_require__(415);
 
 Object.defineProperty(exports, 'OverviewUbr', {
   enumerable: true,
@@ -25569,7 +15595,7 @@ Object.defineProperty(exports, 'OverviewUbr', {
   }
 });
 
-var _pageFooter = __webpack_require__(427);
+var _pageFooter = __webpack_require__(418);
 
 Object.defineProperty(exports, 'PageFooter', {
   enumerable: true,
@@ -25578,7 +15604,7 @@ Object.defineProperty(exports, 'PageFooter', {
   }
 });
 
-var _pageHeader = __webpack_require__(430);
+var _pageHeader = __webpack_require__(421);
 
 Object.defineProperty(exports, 'PageHeader', {
   enumerable: true,
@@ -25587,7 +15613,7 @@ Object.defineProperty(exports, 'PageHeader', {
   }
 });
 
-var _searchResults = __webpack_require__(433);
+var _searchResults = __webpack_require__(424);
 
 Object.defineProperty(exports, 'SearchResults', {
   enumerable: true,
@@ -25596,7 +15622,16 @@ Object.defineProperty(exports, 'SearchResults', {
   }
 });
 
-var _tabbedContent = __webpack_require__(436);
+var _subnavigation = __webpack_require__(427);
+
+Object.defineProperty(exports, 'Subnavigation', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_subnavigation).default;
+  }
+});
+
+var _tabbedContent = __webpack_require__(430);
 
 Object.defineProperty(exports, 'TabbedContent', {
   enumerable: true,
@@ -25605,7 +15640,7 @@ Object.defineProperty(exports, 'TabbedContent', {
   }
 });
 
-var _tabbedTable = __webpack_require__(439);
+var _tabbedTable = __webpack_require__(433);
 
 Object.defineProperty(exports, 'TabbedTable', {
   enumerable: true,
@@ -25614,7 +15649,7 @@ Object.defineProperty(exports, 'TabbedTable', {
   }
 });
 
-var _tableCompare = __webpack_require__(442);
+var _tableCompare = __webpack_require__(436);
 
 Object.defineProperty(exports, 'TableCompare', {
   enumerable: true,
@@ -25626,7 +15661,7 @@ Object.defineProperty(exports, 'TableCompare', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 379 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25636,15 +15671,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 380 */
-/***/ (function(module, exports) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleContent = __webpack_require__(380);
+var _articleContent = __webpack_require__(370);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -25652,10 +15679,9 @@ Object.defineProperty(exports, 'default', {
     return _articleContent.ArticleContent;
   }
 });
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 380 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25670,7 +15696,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _articleContentVue = __webpack_require__(381);
+var _articleContentVue = __webpack_require__(371);
 
 var _articleContentVue2 = _interopRequireDefault(_articleContentVue);
 
@@ -25712,19 +15738,7 @@ exports.ArticleContent = ArticleContent = __decorate([_articleContentVue2.defaul
 exports.ArticleContent = ArticleContent;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 381 */
-=======
-
-/***/ "./src/js/directives/index.ts":
-/*!************************************!*\
-  !*** ./src/js/directives/index.ts ***!
-  \************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 381 */
+/* 371 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"organism article"},[_c('div',{staticClass:"container"},[_vm._l((_vm.molecules),function(articleMolecule){return _c(articleMolecule.type,_vm._b({tag:"component"},'component',articleMolecule,false))}),_vm._v(" "),_c('SocialSharing')],2)])}
@@ -25741,8 +15755,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 382 */
->>>>>>> chore(build): add build
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25752,15 +15765,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentCover = __webpack_require__(382);
-=======
-var _sizeEmitter = __webpack_require__(/*! ./size-emitter */ "./src/js/directives/size-emitter.ts");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _articleHeader = __webpack_require__(383);
->>>>>>> chore(build): add build
+var _articleHeader = __webpack_require__(373);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -25770,20 +15775,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 382 */
-=======
-
-/***/ "./src/js/directives/size-emitter.ts":
-/*!*******************************************!*\
-  !*** ./src/js/directives/size-emitter.ts ***!
-  \*******************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 383 */
->>>>>>> chore(build): add build
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25796,23 +15788,11 @@ exports.ArticleHeader = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-<<<<<<< HEAD
-var _debounce = __webpack_require__(/*! lodash/debounce */ "lodash/debounce");
-
-var _debounce2 = _interopRequireDefault(_debounce);
-
-<<<<<<< HEAD
-var _contentCoverVue = __webpack_require__(383);
-=======
-var _viewport = __webpack_require__(/*! utils/viewport */ "./src/js/utils/viewport.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
->>>>>>> chore(build): add build
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _articleHeaderVue = __webpack_require__(384);
+var _articleHeaderVue = __webpack_require__(374);
 
 var _articleHeaderVue2 = _interopRequireDefault(_articleHeaderVue);
 
@@ -25880,78 +15860,11 @@ exports.ArticleHeader = ArticleHeader = __decorate([_articleHeaderVue2.default, 
 exports.ArticleHeader = ArticleHeader;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 383 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-cover content-cover--cover"},[(this.image)?_c('c-image',_vm._b({},'c-image',this.image,false)):_vm._e(),_vm._v(" "),_c('div',{staticClass:"content-cover__image--overlay"}),_vm._v(" "),_c('section',{staticClass:"content-cover__container"},[_c('div',{staticClass:"flexgrid__cell--xs-6 content-cover-content content-cover--cover-reset"},[_c('h3',{staticClass:"content-cover__title"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('p',{staticClass:"content-cover__description"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),_c('div',[(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])])],1)}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 384 */
-=======
-
-/***/ "./src/js/index.ts":
-/*!*************************!*\
-  !*** ./src/js/index.ts ***!
-  \*************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.registry = exports.PublicEventService = exports.ViewportUtility = exports.TextUtils = exports.BrowserCapabilities = exports.Arithmetic = exports.Defaults = undefined;
-
-<<<<<<< HEAD
-var _contentGeneral = __webpack_require__(385);
-=======
-var _defaults = __webpack_require__(/*! constants/defaults */ "./src/js/constants/defaults.js");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'Defaults', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_defaults).default;
-    }
-});
-
-<<<<<<< HEAD
-/***/ }),
-/* 385 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _arithmetic = __webpack_require__(/*! utils/arithmetic */ "./src/js/utils/arithmetic.js");
->>>>>>> feat(table-compare): allow 5 columns
-
-Object.defineProperty(exports, 'Arithmetic', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_arithmetic).default;
-    }
-});
-=======
-/* 384 */
+/* 374 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{staticClass:"article-header container"},[_c('ArticleAuthor',_vm._b({attrs:{"publishedDate":_vm.publishedDate}},'ArticleAuthor',_vm.author,false)),_vm._v(" "),_c('list-unordered',{staticClass:"article-header__list",attrs:{"listItems":_vm.listItems}})],1)}
 var staticRenderFns = []
->>>>>>> chore(build): add build
 
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
@@ -25964,25 +15877,17 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 385 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentGeneralVue = __webpack_require__(386);
-=======
-var _viewport = __webpack_require__(/*! utils/viewport */ "./src/js/utils/viewport.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _brands = __webpack_require__(386);
+var _brands = __webpack_require__(376);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -25992,7 +15897,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 386 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26007,23 +15912,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _brandsVue = __webpack_require__(387);
+var _brandsVue = __webpack_require__(377);
 
 var _brandsVue2 = _interopRequireDefault(_brandsVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 386 */
-/***/ (function(module, exports) {
-=======
-__webpack_require__(/*! core-js/modules/es6.typed.uint32-array */ "core-js/modules/es6.typed.uint32-array");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
->>>>>>> chore(build): add build
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
@@ -26041,18 +15936,8 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 387 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-__webpack_require__(/*! core-js/modules/es6.set */ "core-js/modules/es6.set");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var Brands = function (_Vue) {
     _inherits(Brands, _Vue);
->>>>>>> chore(build): add build
 
     function Brands() {
         _classCallCheck(this, Brands);
@@ -26073,30 +15958,13 @@ exports.Brands = Brands = __decorate([_brandsVue2.default, (0, _vuePropertyDecor
 })], Brands);
 exports.Brands = Brands;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentHighlight = __webpack_require__(388);
-=======
-__webpack_require__(/*! core-js/modules/es6.reflect.construct */ "core-js/modules/es6.reflect.construct");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 /***/ }),
-/* 387 */
+/* 377 */
 /***/ (function(module, exports) {
->>>>>>> chore(build): add build
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"organism brands2"},[_c('article',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('list-unordered-limit',{attrs:{"limit":_vm.limit,"listItems":_vm.items}}),_vm._v(" "),_c('footer-block',{attrs:{"ctas":_vm.ctas}})],1)])}
 var staticRenderFns = []
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 388 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-__webpack_require__(/*! core-js/modules/es6.reflect.delete-property */ "core-js/modules/es6.reflect.delete-property");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
     ? _exports.options
@@ -26105,11 +15973,30 @@ module.exports = function (_exports) {
   options.staticRenderFns = staticRenderFns
   return _exports
 }
->>>>>>> chore(build): add build
 
 
 /***/ }),
-/* 388 */
+/* 378 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _colors = __webpack_require__(379);
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _colors.Colors;
+  }
+});
+
+/***/ }),
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26120,21 +16007,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Colors = undefined;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _contentHighlightVue = __webpack_require__(389);
-=======
-__webpack_require__(/*! core-js/modules/es6.reflect.own-keys */ "core-js/modules/es6.reflect.own-keys");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> chore(build): add build
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _colorsVue = __webpack_require__(389);
+var _colorsVue = __webpack_require__(380);
 
 var _colorsVue2 = _interopRequireDefault(_colorsVue);
 
@@ -26161,18 +16040,8 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 var Colors = function (_Vue) {
     _inherits(Colors, _Vue);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 389 */
-/***/ (function(module, exports) {
-=======
-__webpack_require__(/*! core-js/modules/es6.object.is-extensible */ "core-js/modules/es6.object.is-extensible");
->>>>>>> feat(table-compare): allow 5 columns
-=======
     function Colors() {
         _classCallCheck(this, Colors);
->>>>>>> chore(build): add build
 
         var _this = _possibleConstructorReturn(this, (Colors.__proto__ || Object.getPrototypeOf(Colors)).apply(this, arguments));
 
@@ -26192,15 +16061,6 @@ __webpack_require__(/*! core-js/modules/es6.object.is-extensible */ "core-js/mod
         }
     }]);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 390 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-__webpack_require__(/*! core-js/modules/es6.object.get-own-property-names */ "core-js/modules/es6.object.get-own-property-names");
->>>>>>> feat(table-compare): allow 5 columns
-=======
     return Colors;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Colors.prototype, "title", void 0);
@@ -26212,10 +16072,9 @@ exports.Colors = Colors = __decorate([_colorsVue2.default, (0, _vuePropertyDecor
     name: 'colors'
 })], Colors);
 exports.Colors = Colors;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 389 */
+/* 380 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism colors"},[_c('div',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6 flexgrid__cell--sm-4"},[_c('div',{staticClass:"colors__swatches"},[_c('ul',{staticClass:"colors__list"},_vm._l((_vm.colorList),function(color,index){return _c('li',{staticClass:"colors__list-item",on:{"click":function($event){return _vm.setActiveColor(index)},"keydown":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"space",32,$event.key,[" ","Spacebar"])){ return null; }$event.preventDefault();return _vm.setActiveColor(index)}}},[_c('color',{class:{'color--selected': color === _vm.activeColor },attrs:{"rgb-hex":color.rgbHex,"opacity":color.opacity}})],1)}),0),_vm._v(" "),(_vm.colorCtas.ctas)?_c('cta-block',{attrs:{"ctas":_vm.colorCtas.ctas,"mod":"baseline"}}):_vm._e()],1)]),_vm._v(" "),(_vm.activeColor.exampleImage)?_c('div',{staticClass:"flexgrid__cell--sm-8 flexgrid__cell--xs-6"},[_c('c-image',_vm._b({staticClass:"colors__image"},'c-image',_vm.activeColor.exampleImage,false))],1):_vm._e()]),_vm._v(" "),_c('footer-block',{staticClass:"footer-block--push-down",attrs:{"ctas":_vm.ctas}})],1)])}
@@ -26230,37 +16089,19 @@ module.exports = function (_exports) {
   return _exports
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _countrySelector = __webpack_require__(391);
-=======
-__webpack_require__(/*! core-js/modules/es6.function.name */ "core-js/modules/es6.function.name");
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 390 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 391 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-__webpack_require__(/*! core-js/modules/es6.string.repeat */ "core-js/modules/es6.string.repeat");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
->>>>>>> chore(build): add build
 
-var _contentCover = __webpack_require__(391);
+var _contentCover = __webpack_require__(382);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -26270,7 +16111,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 391 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26281,21 +16122,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ContentCover = undefined;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _countrySelectorVue = __webpack_require__(392);
-=======
-__webpack_require__(/*! core-js/modules/es6.regexp.split */ "core-js/modules/es6.regexp.split");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> chore(build): add build
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _contentCoverVue = __webpack_require__(392);
+var _contentCoverVue = __webpack_require__(383);
 
 var _contentCoverVue2 = _interopRequireDefault(_contentCoverVue);
 
@@ -26351,7 +16184,7 @@ exports.ContentCover = ContentCover = __decorate([_contentCoverVue2.default, (0,
 exports.ContentCover = ContentCover;
 
 /***/ }),
-/* 392 */
+/* 383 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-cover content-cover--cover"},[(this.image)?_c('c-image',_vm._b({},'c-image',this.image,false)):_vm._e(),_vm._v(" "),_c('div',{staticClass:"content-cover__image--overlay"}),_vm._v(" "),_c('section',{staticClass:"content-cover__container"},[_c('div',{staticClass:"flexgrid__cell--xs-6 content-cover-content content-cover--cover-reset"},[_c('h3',{staticClass:"content-cover__title"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),_c('p',{staticClass:"content-cover__description"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),_c('div',[(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1)])])],1)}
@@ -26368,7 +16201,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 393 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26378,46 +16211,26 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentGeneral = __webpack_require__(394);
+var _contentGeneral = __webpack_require__(385);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 392 */
-/***/ (function(module, exports) {
-=======
-__webpack_require__(/*! core-js/modules/es6.math.hypot */ "core-js/modules/es6.math.hypot");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
     return _contentGeneral.ContentGeneral;
   }
 });
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 394 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 393 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-__webpack_require__(/*! core-js/modules/es6.math.log2 */ "core-js/modules/es6.math.log2");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.ContentGeneral = undefined;
->>>>>>> chore(build): add build
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -26425,15 +16238,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroArticle = __webpack_require__(394);
-=======
-__webpack_require__(/*! core-js/modules/es6.math.trunc */ "core-js/modules/es6.math.trunc");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _contentGeneralVue = __webpack_require__(395);
->>>>>>> chore(build): add build
+var _contentGeneralVue = __webpack_require__(386);
 
 var _contentGeneralVue2 = _interopRequireDefault(_contentGeneralVue);
 
@@ -26490,7 +16295,7 @@ exports.ContentGeneral = ContentGeneral = __decorate([_contentGeneralVue2.defaul
 exports.ContentGeneral = ContentGeneral;
 
 /***/ }),
-/* 395 */
+/* 386 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"content-general"},[_c('section',{staticClass:"content-general__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter",class:{'flexgrid--row-reversed': _vm.reversed}},[_c('div',{staticClass:"flexgrid__cell--xs-6 content-general__grid-cell content-general__content"},[_c('h3',{staticClass:"content-general__title"},[_vm._v(" "+_vm._s(_vm.title))]),_vm._v(" "),_c('div',{staticClass:"content-manageble content-general__body",domProps:{"innerHTML":_vm._s(_vm.description)}}),_vm._v(" "),(_vm.cta)?_c(_vm.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(_vm.cta.type)},'component',_vm.cta,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6 content-general__grid-cell content-general__image"},[_c('div',{staticClass:"content-general__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1)])])])])}
@@ -26507,7 +16312,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 396 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26517,7 +16322,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _contentHighlight = __webpack_require__(397);
+var _contentHighlight = __webpack_require__(388);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -26527,20 +16332,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 394 */
-=======
-
-/***/ "./src/js/mixins/in-view.ts":
-/*!**********************************!*\
-  !*** ./src/js/mixins/in-view.ts ***!
-  \**********************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 397 */
->>>>>>> chore(build): add build
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26555,15 +16347,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroArticleVue = __webpack_require__(395);
-=======
-var _browserCapabilities = __webpack_require__(/*! utils/browser-capabilities */ "./src/js/utils/browser-capabilities.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _contentHighlightVue = __webpack_require__(398);
->>>>>>> chore(build): add build
+var _contentHighlightVue = __webpack_require__(389);
 
 var _contentHighlightVue2 = _interopRequireDefault(_contentHighlightVue);
 
@@ -26610,7 +16394,7 @@ exports.ContentHighlight = ContentHighlight = __decorate([_contentHighlightVue2.
 exports.ContentHighlight = ContentHighlight;
 
 /***/ }),
-/* 398 */
+/* 389 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism content-highlight"},[_c('section',{staticClass:"container content-highlight__container"},[_c('div',{staticClass:"flexgrid",class:{'flexgrid--row-reversed': _vm.reversed}},[_c('div',{staticClass:"flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__image"},[_c('div',{staticClass:"content-highlight__image-wrapper"},[(_vm.image)?_c('c-image',_vm._b({},'c-image',_vm.image,false)):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6 content-highlight__grid-cell content-highlight__content"},[_c('HeaderBlock',{staticClass:"content-highlight-header",attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"content-manageble content-highlight__body",domProps:{"innerHTML":_vm._s(_vm.description)}}),_vm._v(" "),_c('FooterBlock',{staticClass:"content-highlight-footer",attrs:{"ctas":_vm.ctas}})],1)])])])}
@@ -26627,36 +16411,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 395 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--article organism"},[_c('div',{staticClass:"hero-article__image--full"},[(this.image)?_c('c-image',_vm._b({attrs:{"resize-behavior":"fill"}},'c-image',this.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"hero-article__image--overlay"}),_vm._v(" "),_c('section',{staticClass:"hero-article__container container"},[_c('div',{staticClass:"flexgrid__cell--xs-12 hero--article-reset"},[_c('HeaderBlock',{staticClass:"hero__article-header header-block--hero"},[_c('HeroHeading',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}})],1)],1)])])}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 396 */
-=======
-
-/***/ "./src/js/mixins/step-row-animation/step-row-animation.ts":
-/*!****************************************************************!*\
-  !*** ./src/js/mixins/step-row-animation/step-row-animation.ts ***!
-  \****************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 399 */
+/* 390 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26666,7 +16421,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _countrySelector = __webpack_require__(400);
+var _countrySelector = __webpack_require__(391);
 
 var _countrySelector2 = _interopRequireDefault(_countrySelector);
 
@@ -26675,8 +16430,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _countrySelector2.default;
 
 /***/ }),
-/* 400 */
->>>>>>> chore(build): add build
+/* 391 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26686,17 +16440,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-<<<<<<< HEAD
-var _heroBasic = __webpack_require__(397);
-=======
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> feat(table-compare): allow 5 columns
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _countrySelectorVue = __webpack_require__(401);
+var _countrySelectorVue = __webpack_require__(392);
 
 var _countrySelectorVue2 = _interopRequireDefault(_countrySelectorVue);
 
@@ -26722,26 +16472,11 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 397 */
-=======
-
-/***/ "./src/js/plugins/component-registry.js":
-/*!**********************************************!*\
-  !*** ./src/js/plugins/component-registry.js ***!
-  \**********************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
 var CountrySelector = function (_Vue) {
     _inherits(CountrySelector, _Vue);
 
     function CountrySelector() {
         _classCallCheck(this, CountrySelector);
->>>>>>> chore(build): add build
 
         var _this = _possibleConstructorReturn(this, (CountrySelector.__proto__ || Object.getPrototypeOf(CountrySelector)).apply(this, arguments));
 
@@ -26774,18 +16509,10 @@ var CountrySelector = function (_Vue) {
                             case 4:
                                 this.$refs.autocomplete.focus();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroBasicVue = __webpack_require__(398);
-=======
-var _portalVue = __webpack_require__(/*! portal-vue */ "./node_modules/portal-vue/dist/portal-vue.common.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
                                 if (!this.$refs.autocomplete.input) {
                                     _context.next = 9;
                                     break;
                                 }
->>>>>>> chore(build): add build
 
                                 _context.next = 8;
                                 return this.$refs.autocomplete.init();
@@ -26816,34 +16543,9 @@ var _portalVue = __webpack_require__(/*! portal-vue */ "./node_modules/portal-vu
             this.$refs.closeCountryPanel.focus();
         }
     }, {
-<<<<<<< HEAD
-        key: 'install',
-        value: function install(vue) {
-            vue.use(_uniqId.UniqId);
-            vue.use(_portalVue2.default);
-
-<<<<<<< HEAD
-/***/ }),
-/* 398 */
-/***/ (function(module, exports) {
-=======
-            this.directives.filter(function (d) {
-                return typeof d.name === 'string';
-            }).forEach(function (d) {
-                return vue.directive(d.name, d);
-            });
->>>>>>> feat(table-compare): allow 5 columns
-
-            this.components.filter(function (c) {
-                return typeof c.name === 'string' || c.extendOptions && typeof c.extendOptions.name === 'string';
-            }).forEach(function (c) {
-                return vue.component(c.extendOptions ? c.extendOptions.name : c.name, c);
-            });
-=======
         key: "close",
         value: function close() {
             this.$emit('close');
->>>>>>> chore(build): add build
         }
     }, {
         key: "countryChanged",
@@ -26897,7 +16599,7 @@ CountrySelector = __decorate([_countrySelectorVue2.default, (0, _vuePropertyDeco
 exports.default = CountrySelector;
 
 /***/ }),
-/* 401 */
+/* 392 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"country-selector"},[_c('auto-complete',{ref:"autocomplete",staticClass:"country-selector__auto-complete auto-complete--small",attrs:{"placeholder":_vm.placeholder,"title-field":"name","value-field":"code","datasource":_vm.datasource,"storedLabel":_vm.highlightedLabel,"stored-items":_vm.detectedCountries,"suggestionsLabel":_vm.suggestionsLabel,"default-open":""},on:{"input":_vm.countryChanged,"close":_vm.close,"changeFocus":_vm.focusClose},model:{value:(_vm.countryInput),callback:function ($$v) {_vm.countryInput=$$v},expression:"countryInput"}}),_vm._v(" "),_c('icon-button',{ref:"closeCountryPanel",attrs:{"icon-name":"close","button-aria-label":"Cancel","button-class":"country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed"},on:{"click":_vm.close}})],1)}
@@ -26914,19 +16616,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 399 */
-=======
-
-/***/ "./src/js/plugins/public-event-service.js":
-/*!************************************************!*\
-  !*** ./src/js/plugins/public-event-service.js ***!
-  \************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 402 */
+/* 393 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26936,7 +16626,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroArticle = __webpack_require__(403);
+var _heroArticle = __webpack_require__(394);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -26946,8 +16636,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 403 */
->>>>>>> chore(build): add build
+/* 394 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26958,32 +16647,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.HeroArticle = undefined;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroCover = __webpack_require__(400);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _heroCover.HeroCover;
-  }
-});
-
-/***/ }),
-/* 400 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _vue = __webpack_require__(/*! vue */ "vue");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _heroArticleVue = __webpack_require__(404);
+var _heroArticleVue = __webpack_require__(395);
 
 var _heroArticleVue2 = _interopRequireDefault(_heroArticleVue);
 
@@ -27007,31 +16675,11 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroCoverVue = __webpack_require__(401);
-=======
-            return EventLog.filter(function (e) {
-                return e.event === event && e.at > after;
-            });
-        }
-    }, {
-        key: 'install',
-        value: function install(Vue) {
-            Object.defineProperty(Vue.prototype, '$emitPublic', {
-                configurable: true,
-                get: function get() {
-                    return PublicEventService.emit;
-                }
-            });
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var HeroArticle = function (_Vue) {
     _inherits(HeroArticle, _Vue);
 
     function HeroArticle() {
         _classCallCheck(this, HeroArticle);
->>>>>>> chore(build): add build
 
         return _possibleConstructorReturn(this, (HeroArticle.__proto__ || Object.getPrototypeOf(HeroArticle)).apply(this, arguments));
     }
@@ -27047,7 +16695,7 @@ exports.HeroArticle = HeroArticle = __decorate([_heroArticleVue2.default, (0, _v
 exports.HeroArticle = HeroArticle;
 
 /***/ }),
-/* 404 */
+/* 395 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--article organism"},[_c('div',{staticClass:"hero-article__image--full"},[(this.image)?_c('c-image',_vm._b({attrs:{"resize-behavior":"fill"}},'c-image',this.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"hero-article__image--overlay"}),_vm._v(" "),_c('section',{staticClass:"hero-article__container container"},[_c('div',{staticClass:"flexgrid__cell--xs-12 hero--article-reset"},[_c('HeaderBlock',{staticClass:"hero__article-header header-block--hero"},[_c('HeroHeading',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}})],1)],1)])])}
@@ -27064,7 +16712,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 405 */
+/* 396 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27074,7 +16722,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroBasic = __webpack_require__(406);
+var _heroBasic = __webpack_require__(397);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -27084,7 +16732,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 406 */
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27099,19 +16747,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _heroBasicVue = __webpack_require__(407);
+var _heroBasicVue = __webpack_require__(398);
 
 var _heroBasicVue2 = _interopRequireDefault(_heroBasicVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-<<<<<<< HEAD
-/***/ }),
-/* 401 */
-/***/ (function(module, exports) {
-=======
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
->>>>>>> feat(table-compare): allow 5 columns
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
@@ -27151,19 +16793,7 @@ exports.HeroBasic = HeroBasic = __decorate([_heroBasicVue2.default, (0, _vueProp
 exports.HeroBasic = HeroBasic;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 402 */
-=======
-
-/***/ "./src/js/utils/arithmetic.js":
-/*!************************************!*\
-  !*** ./src/js/utils/arithmetic.js ***!
-  \************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 407 */
+/* 398 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--basic organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('h1',{staticClass:"hero__title header-block__title--hero"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.subtitle)?_c('h2',{staticClass:"hero__subtitle header-block__subtitle--hero"},[_vm._v(_vm._s(_vm.subtitle))]):_vm._e()]),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
@@ -27180,8 +16810,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 408 */
->>>>>>> chore(build): add build
+/* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27191,17 +16820,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroHomepage = __webpack_require__(403);
-=======
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> feat(table-compare): allow 5 columns
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-=======
-var _heroCover = __webpack_require__(409);
->>>>>>> chore(build): add build
+var _heroCover = __webpack_require__(400);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -27211,20 +16830,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 403 */
-=======
-
-/***/ "./src/js/utils/browser-capabilities.js":
-/*!**********************************************!*\
-  !*** ./src/js/utils/browser-capabilities.js ***!
-  \**********************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 409 */
->>>>>>> chore(build): add build
+/* 400 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27237,33 +16843,16 @@ exports.HeroCover = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> chore(build): add build
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-<<<<<<< HEAD
-var _heroHomepageVue = __webpack_require__(404);
-
-var _heroHomepageVue2 = _interopRequireDefault(_heroHomepageVue);
-
-var _buildSrcset = __webpack_require__(405);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _heroCoverVue = __webpack_require__(410);
+var _heroCoverVue = __webpack_require__(401);
 
 var _heroCoverVue2 = _interopRequireDefault(_heroCoverVue);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
->>>>>>> chore(build): add build
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -27290,21 +16879,9 @@ var HeroCover = function (_Vue) {
 
         var _this = _possibleConstructorReturn(this, (HeroCover.__proto__ || Object.getPrototypeOf(HeroCover)).apply(this, arguments));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 404 */
-/***/ (function(module, exports) {
-=======
-            if (edgePartialSupport) {
-                return false;
-            }
->>>>>>> feat(table-compare): allow 5 columns
-=======
         _this.showVideo = false;
         return _this;
     }
->>>>>>> chore(build): add build
 
     _createClass(HeroCover, [{
         key: "toggleVideo",
@@ -27325,19 +16902,7 @@ exports.HeroCover = HeroCover = __decorate([_heroCoverVue2.default, (0, _vueProp
 exports.HeroCover = HeroCover;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 405 */
-=======
-
-/***/ "./src/js/utils/color.ts":
-/*!*******************************!*\
-  !*** ./src/js/utils/color.ts ***!
-  \*******************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 410 */
+/* 401 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--cover organism"},[_c('div',{staticClass:"hero-cover__image--full"},[(this.image)?_c('c-image',_vm._b({attrs:{"resize-behavior":"fill"}},'c-image',this.image,false)):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"hero-cover__image--overlay"}),_vm._v(" "),_c('section',{staticClass:"hero-cover__container container"},[_c('div',{staticClass:"flexgrid__cell--xs-6 hero--cover-reset"},[_c('h1',{staticClass:"hero-cover__headline"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"copy--intro"},[_vm._v(_vm._s(_vm.description))]):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary"}}):_vm._e()],1)])])}
@@ -27354,8 +16919,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 411 */
->>>>>>> chore(build): add build
+/* 402 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27365,7 +16929,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _heroHomepage = __webpack_require__(412);
+var _heroHomepage = __webpack_require__(403);
 
 var _heroHomepage2 = _interopRequireDefault(_heroHomepage);
 
@@ -27374,20 +16938,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroHomepage2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 406 */
-=======
-
-/***/ "./src/js/utils/format.ts":
-/*!********************************!*\
-  !*** ./src/js/utils/format.ts ***!
-  \********************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 412 */
->>>>>>> chore(build): add build
+/* 403 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27399,23 +16950,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroProduct = __webpack_require__(407);
-=======
-var _defaults = __webpack_require__(/*! ../constants/defaults */ "./src/js/constants/defaults.js");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
->>>>>>> chore(build): add build
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _heroHomepageVue = __webpack_require__(413);
+var _heroHomepageVue = __webpack_require__(404);
 
 var _heroHomepageVue2 = _interopRequireDefault(_heroHomepageVue);
 
-var _buildSrcset = __webpack_require__(414);
+var _buildSrcset = __webpack_require__(405);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27443,20 +16986,6 @@ var HeroHomepage = function (_Vue) {
     function HeroHomepage() {
         _classCallCheck(this, HeroHomepage);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 407 */
-=======
-
-/***/ "./src/js/utils/generate-social-sharing-url.ts":
-/*!*****************************************************!*\
-  !*** ./src/js/utils/generate-social-sharing-url.ts ***!
-  \*****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
         return _possibleConstructorReturn(this, (HeroHomepage.__proto__ || Object.getPrototypeOf(HeroHomepage)).apply(this, arguments));
     }
 
@@ -27467,7 +16996,6 @@ var HeroHomepage = function (_Vue) {
             var _image = this.image,
                 url = _image.url,
                 focusArea = _image.focusArea;
->>>>>>> chore(build): add build
 
             return (0, _buildSrcset.buildSrcSet)({ url: url, focusArea: focusArea });
         }
@@ -27515,7 +17043,7 @@ HeroHomepage = __decorate([_heroHomepageVue2.default, (0, _vuePropertyDecorator.
 exports.default = HeroHomepage;
 
 /***/ }),
-/* 413 */
+/* 404 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"hero-homepage"},[_c('div',{staticClass:"hero-homepage__content"},[_c('h1',{staticClass:"hero-homepage__title"},[_vm._v("\n            "+_vm._s(_vm.title)+"\n        ")]),_vm._v(" "),(_vm.image)?_c('picture',{attrs:{"role":"presentation"}},[_c('source',{attrs:{"srcset":_vm.srcSetWebpPortrait,"type":"image/webp","media":"(orientation: portrait)"}}),_vm._v(" "),_c('source',{attrs:{"srcset":_vm.srcSetWebp,"type":"image/webp","media":"(orientation: landscape)"}}),_vm._v(" "),_c('source',{attrs:{"srcset":_vm.srcSetPortrait,"media":"(orientation: portrait)"}}),_vm._v(" "),_c('source',{attrs:{"srcset":_vm.srcSet,"media":"(orientation: landscape)"}}),_vm._v(" "),_c('img',{staticClass:"hero-homepage__image",attrs:{"src":((_vm.image.url) + "?w=1920&h=1080&fit=fill"),"alt":""}})]):_vm._e(),_vm._v(" "),(_vm.description)?_c('p',{staticClass:"hero-homepage__description"},[_vm._v("\n            "+_vm._s(_vm.description)+"\n        ")]):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"ctas":_vm.ctas.ctas}}):_vm._e()],1)])}
@@ -27530,17 +17058,9 @@ module.exports = function (_exports) {
   return _exports
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _heroProductVue = __webpack_require__(408);
-=======
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 414 */
+/* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27549,77 +17069,6 @@ var _heroProductVue = __webpack_require__(408);
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-<<<<<<< HEAD
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var TextUtils = function () {
-    function TextUtils() {
-        _classCallCheck(this, TextUtils);
-    }
-
-    _createClass(TextUtils, null, [{
-        key: 'htmlDecode',
-        value: function htmlDecode(input) {
-            var e = document.createElement('div');
-
-            e.innerHTML = input;
-
-            return e.childNodes.length === 0 ? '' : e.childNodes[0].nodeValue;
-        }
-    }]);
-
-<<<<<<< HEAD
-    return HeroProduct;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "subtitle", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "description", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "image", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "ctas", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "products", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "linkList", void 0);
-HeroProduct = __decorate([_heroProductVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'HeroProduct'
-})], HeroProduct);
-exports.default = HeroProduct;
-
-/***/ }),
-/* 408 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--product organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('HeroHeading',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}})],1),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.products)?_c('div',{staticClass:"hero__products"},[_vm._l((_vm.products),function(product){return [_c('product',_vm._b({class:_vm.productsClass},'product',product,false))]})],2):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e(),_vm._v(" "),(_vm.linkList)?_c('ul',{staticClass:"hero__linklist"},[_vm._l((_vm.linkList),function(link){return [_c('li',{staticClass:"hero__linklist-item"},[_c('ContentLink',_vm._b({staticClass:"link hero__linklist-link",attrs:{"label":link.label}},'ContentLink',link,false))],1)]})],2):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-=======
-    return TextUtils;
-}();
->>>>>>> feat(table-compare): allow 5 columns
-
-exports.default = TextUtils;
-
-/***/ }),
-<<<<<<< HEAD
-/* 409 */
-=======
-
-/***/ "./src/js/utils/throw-props-plugin.js":
-/*!********************************************!*\
-  !*** ./src/js/utils/throw-props-plugin.js ***!
-  \********************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var LANDSCAPE_SCREEN_WIDTHS = [1280, 1920, 2048, 2880];
 var PORTRAIT_SCREEN_WIDTHS = [750, 1125, 1536];
 var buildSrcSet = exports.buildSrcSet = function buildSrcSet(_ref) {
@@ -27637,8 +17086,7 @@ var buildSrcSet = exports.buildSrcSet = function buildSrcSet(_ref) {
 };
 
 /***/ }),
-/* 415 */
->>>>>>> chore(build): add build
+/* 406 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27648,15 +17096,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _localeSelector = __webpack_require__(410);
-=======
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _heroProduct = __webpack_require__(416);
->>>>>>> chore(build): add build
+var _heroProduct = __webpack_require__(407);
 
 var _heroProduct2 = _interopRequireDefault(_heroProduct);
 
@@ -27665,7 +17105,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _heroProduct2.default;
 
 /***/ }),
-/* 416 */
+/* 407 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27679,30 +17119,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 410 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-			if (p !== "resistance" && p !== "checkpoint" && p !== "preventOvershoot" && p !== "linkedProps" && p !== "radius") {
-				curProp = throwPropsVars[p];
-				if ((typeof curProp === "undefined" ? "undefined" : _typeof(curProp)) !== "object") {
-					tracker = tracker || VelocityTracker.getByTarget(target);
-					if (tracker && tracker.isTrackingProp(p)) {
-						curProp = typeof curProp === "number" ? { velocity: curProp } : { velocity: tracker.getVelocity(p) };
-					} else {
-						curVelocity = Number(curProp) || 0;
-						curDuration = curVelocity * resistance > 0 ? curVelocity / resistance : curVelocity / -resistance;
-					}
-				}
-				if ((typeof curProp === "undefined" ? "undefined" : _typeof(curProp)) === "object") {
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _heroProductVue = __webpack_require__(417);
+var _heroProductVue = __webpack_require__(408);
 
 var _heroProductVue2 = _interopRequireDefault(_heroProductVue);
 
@@ -27742,15 +17161,6 @@ var HeroProduct = function (_Vue) {
         }
     }]);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _localeSelectorVue = __webpack_require__(411);
-=======
-	ThrowPropsPlugin.isTracking = function (target, prop) {
-		return VelocityTracker.isTracking(target, prop);
-	};
->>>>>>> feat(table-compare): allow 5 columns
-=======
     return HeroProduct;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "title", void 0);
@@ -27764,10 +17174,9 @@ HeroProduct = __decorate([_heroProductVue2.default, (0, _vuePropertyDecorator.Co
     name: 'HeroProduct'
 })], HeroProduct);
 exports.default = HeroProduct;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 417 */
+/* 408 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"hero hero--product organism"},[_c('section',{staticClass:"container hero__container"},[_c('div',{staticClass:"flexgrid flexgrid--gutter flexgrid--column-reversed flexgrid--mobile-xl-row"},[_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__description"},[_c('HeaderBlock',{staticClass:"hero__header header-block--hero"},[_c('HeroHeading',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}})],1),_vm._v(" "),_c('p',{staticClass:"hero__intro copy--intro"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),(_vm.products)?_c('div',{staticClass:"hero__products"},[_vm._l((_vm.products),function(product){return [_c('product',_vm._b({class:_vm.productsClass},'product',product,false))]})],2):_vm._e(),_vm._v(" "),(_vm.ctas)?_c('cta-block',{attrs:{"mod":"hero","ctas":_vm.ctas.ctas,"styleContentButton":"button button--primary","block":"hero"}}):_vm._e(),_vm._v(" "),(_vm.linkList)?_c('ul',{staticClass:"hero__linklist"},[_vm._l((_vm.linkList),function(link){return [_c('li',{staticClass:"hero__linklist-item"},[_c('ContentLink',_vm._b({staticClass:"link hero__linklist-link",attrs:{"label":link.label}},'ContentLink',link,false))],1)]})],2):_vm._e()],1)]),_vm._v(" "),_c('div',{staticClass:"flexgrid__cell--xs-6"},[_c('div',{staticClass:"hero__image"},[(_vm.image)?[_c('c-image',_vm._b({attrs:{"keep-in-view":""}},'c-image',_vm.image,false))]:_vm._e()],2)])])])])}
@@ -27784,7 +17193,7 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 418 */
+/* 409 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27794,7 +17203,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _localeSelector = __webpack_require__(419);
+var _localeSelector = __webpack_require__(410);
 
 var _localeSelector2 = _interopRequireDefault(_localeSelector);
 
@@ -27803,7 +17212,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _localeSelector2.default;
 
 /***/ }),
-/* 419 */
+/* 410 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27819,7 +17228,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _localeSelectorVue = __webpack_require__(420);
+var _localeSelectorVue = __webpack_require__(411);
 
 var _localeSelectorVue2 = _interopRequireDefault(_localeSelectorVue);
 
@@ -27972,12 +17381,7 @@ LocaleSelector = __decorate([_localeSelectorVue2.default, (0, _vuePropertyDecora
 exports.default = LocaleSelector;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 411 */
-=======
-/* 420 */
->>>>>>> chore(build): add build
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"locale-selector"},[_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(!_vm.countrySelectorOpen),expression:"!countrySelectorOpen"}],ref:"countrySelectorToggle",staticClass:"icon-button--small locale-selector__edit--buton",attrs:{"icon-name":"geo","aria-label":_vm.currentCountryAriaLabel},on:{"click":_vm.toggleCountrySelector}},[_vm._v("\n        "+_vm._s(_vm.currentCountryLabel)+"\n    ")]),_vm._v(" "),_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(_vm.countrySelectorOpen),expression:"countrySelectorOpen"}],staticClass:"icon-button--small locale-selector__edit--buton",attrs:{"icon-name":"geo","aria-label":"change your country"}}),_vm._v(" "),(_vm.ready)?_c('country-selector',_vm._b({directives:[{name:"show",rawName:"v-show",value:(_vm.countrySelectorOpen),expression:"countrySelectorOpen"}],ref:"countrySelector",staticClass:"footer__country-selector",on:{"close":_vm.toggleCountrySelector,"input":_vm.setCountry},model:{value:(_vm.countryInput),callback:function ($$v) {_vm.countryInput=$$v},expression:"countryInput"}},'country-selector',_vm.$props,false)):_vm._e()],1)}
@@ -27991,25 +17395,10 @@ module.exports = function (_exports) {
   options.staticRenderFns = staticRenderFns
   return _exports
 }
-<<<<<<< HEAD
 
 
 /***/ }),
 /* 412 */
-=======
-
-/***/ "./src/js/utils/uuid.ts":
-/*!******************************!*\
-  !*** ./src/js/utils/uuid.ts ***!
-  \******************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-
-
-/***/ }),
-/* 421 */
->>>>>>> chore(build): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28019,24 +17408,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _overview = __webpack_require__(413);
-=======
-exports.default = function () {
-    if (process.env.BABEL_ENV) {
-        return 'static';
-    }
-    return (0, _uuid2.default)();
-};
->>>>>>> feat(table-compare): allow 5 columns
-
-var _uuid = __webpack_require__(/*! uuid */ "./node_modules/uuid/index.js");
-
-var _uuid2 = _interopRequireDefault(_uuid);
-=======
-var _overview = __webpack_require__(422);
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -28046,20 +17418,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 413 */
-=======
-
-/***/ "./src/js/utils/viewport.js":
-/*!**********************************!*\
-  !*** ./src/js/utils/viewport.js ***!
-  \**********************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 422 */
->>>>>>> chore(build): add build
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28072,19 +17431,9 @@ exports.Overview = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-<<<<<<< HEAD
-var _overviewVue = __webpack_require__(414);
-=======
-var _debounce = __webpack_require__(/*! lodash/debounce */ "lodash/debounce");
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _overviewVue = __webpack_require__(423);
+var _overviewVue = __webpack_require__(414);
 
 var _overviewVue2 = _interopRequireDefault(_overviewVue);
 
@@ -28117,16 +17466,6 @@ var Overview = function (_Vue) {
         return _possibleConstructorReturn(this, (Overview.__proto__ || Object.getPrototypeOf(Overview)).apply(this, arguments));
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 414 */
-/***/ (function(module, exports) {
-=======
-function resizeHandler() {
-    var _this2 = this;
->>>>>>> feat(table-compare): allow 5 columns
-=======
     return Overview;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], Overview.prototype, "ctas", void 0);
@@ -28137,10 +17476,9 @@ exports.Overview = Overview = __decorate([_overviewVue2.default, (0, _vuePropert
     name: 'Overview'
 })], Overview);
 exports.Overview = Overview;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 423 */
+/* 414 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism overview"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_vm._l((_vm.sections),function(section,index){return [_c(section.type,_vm._b({key:index,tag:"component"},'component',section,false))]}),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],2)])}
@@ -28155,61 +17493,28 @@ module.exports = function (_exports) {
   return _exports
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 415 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-var ViewportUtility = function () {
-    function ViewportUtility() {
-        _classCallCheck(this, ViewportUtility);
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 424 */
+/* 415 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _overviewUbr = __webpack_require__(416);
-=======
-        this.screenWidth = 0;
-        this.screenHeight = 0;
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
->>>>>>> chore(build): add build
 
-var _overviewUbr = __webpack_require__(425);
+var _overviewUbr = __webpack_require__(416);
 
 var _overviewUbr2 = _interopRequireDefault(_overviewUbr);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 416 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
-        this._attachEventListeners();
-        this.updateScrollState();
-        this.updateScreenDimensions();
->>>>>>> feat(table-compare): allow 5 columns
-=======
 exports.default = _overviewUbr2.default;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 425 */
+/* 416 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28221,19 +17526,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _overviewUbrVue = __webpack_require__(417);
-=======
-            document.addEventListener('DOMContentLoaded', function () {
-                documentLoadedHandler.apply(_this3);
-            });
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _vuePropertyDecorator = __webpack_require__(0);
->>>>>>> chore(build): add build
 
-var _overviewUbrVue = __webpack_require__(426);
+var _overviewUbrVue = __webpack_require__(417);
 
 var _overviewUbrVue2 = _interopRequireDefault(_overviewUbrVue);
 
@@ -28266,35 +17561,6 @@ var OverviewUBR = function (_Vue) {
         return _possibleConstructorReturn(this, (OverviewUBR.__proto__ || Object.getPrototypeOf(OverviewUBR)).apply(this, arguments));
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/***/ }),
-/* 417 */
-/***/ (function(module, exports) {
-=======
-            if (index < 0) {
-                return;
-            }
-            _orientationChangeHandlers.splice(index, 1);
-        }
-    }, {
-        key: 'isResizing',
-        get: function get() {
-            return this.resizing;
-        }
-    }, {
-        key: 'top',
-        get: function get() {
-            return this.scrollY <= 0;
-        }
-    }, {
-        key: 'documentHeight',
-        get: function get() {
-            if (typeof window !== 'undefined') {
-                return Math.max(document.body.scrollHeight, document.body.offsetHeight);
-            }
->>>>>>> feat(table-compare): allow 5 columns
-=======
     return OverviewUBR;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], OverviewUBR.prototype, "title", void 0);
@@ -28305,10 +17571,9 @@ OverviewUBR = __decorate([_overviewUbrVue2.default, (0, _vuePropertyDecorator.Co
     name: 'overview-ubr'
 })], OverviewUBR);
 exports.default = OverviewUBR;
->>>>>>> chore(build): add build
 
 /***/ }),
-/* 426 */
+/* 417 */
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism overview-ubr"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{staticClass:"flexgrid flexgrid--justify-center flexgrid--gutter flexgrid--mobile-xl-row"},_vm._l((_vm.items),function(blockIcon,index){return _c('BlockIcon',_vm._b({key:index,staticClass:"flexgrid__cell flexgrid__cell--xs-6 flexgrid__cell--sm-4 flexgrid__cell--lg-3"},'BlockIcon',blockIcon,false))}),1),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],1)])}
@@ -28323,9 +17588,8 @@ module.exports = function (_exports) {
   return _exports
 }
 
-<<<<<<< HEAD
+
 /***/ }),
-<<<<<<< HEAD
 /* 418 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28337,38 +17601,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var _pageFooter = __webpack_require__(419);
-=======
-=======
->>>>>>> chore(build): add build
-
-/***/ }),
-/* 427 */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> feat(table-compare): allow 5 columns
-
-"use strict";
-
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 419 */
-=======
-
-/***/ "./src/scss/utilities/_all.scss":
-/*!**************************************!*\
-  !*** ./src/scss/utilities/_all.scss ***!
-  \**************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports, __webpack_require__) {
-=======
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _pageFooter = __webpack_require__(428);
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -28378,35 +17610,22 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 428 */
+/* 419 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _pageFooterVue = __webpack_require__(420);
-=======
-/***/ "core-js/modules/es6.array.fill":
-/*!*************************************************!*\
-  !*** external "core-js/modules/es6.array.fill" ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.PageFooter = undefined;
->>>>>>> chore(build): add build
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _pageFooterVue = __webpack_require__(429);
+var _pageFooterVue = __webpack_require__(420);
 
 var _pageFooterVue2 = _interopRequireDefault(_pageFooterVue);
 
@@ -28433,26 +17652,11 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 var PageFooter = function (_Vue) {
     _inherits(PageFooter, _Vue);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 420 */
-=======
-
-/***/ "core-js/modules/es6.array.iterator":
-/*!*****************************************************!*\
-  !*** external "core-js/modules/es6.array.iterator" ***!
-  \*****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports) {
-=======
     function PageFooter() {
         _classCallCheck(this, PageFooter);
 
         return _possibleConstructorReturn(this, (PageFooter.__proto__ || Object.getPrototypeOf(PageFooter)).apply(this, arguments));
     }
->>>>>>> chore(build): add build
 
     return PageFooter;
 }(_vuePropertyDecorator.Vue);
@@ -28467,22 +17671,11 @@ exports.PageFooter = PageFooter = __decorate([_pageFooterVue2.default, (0, _vueP
 exports.PageFooter = PageFooter;
 
 /***/ }),
-/* 429 */
+/* 420 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_array_of__;
-
-/***/ }),
-<<<<<<< HEAD
-/* 421 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer"},[_c('div',{staticClass:"footer__container"},[_c('div',{staticClass:"footer__primary"},[_c('router-link',{staticClass:"branded-logo footer__branded-logo",attrs:{"to":"/","aria-label":"Ultimaker homepage"}},[_c('icon',{staticClass:"branded-logo__u",attrs:{"icon-name":"ultimaker-u"}})],1),_vm._v(" "),(_vm.navigation && _vm.navigation.length)?_c('nav',{staticClass:"footer__navigation"},_vm._l((_vm.navigation),function(navigationItem,index){return _c('footer-navigation-category',_vm._b({key:index},'footer-navigation-category',navigationItem,false))}),1):_vm._e()],1),_vm._v(" "),_c('div',{staticClass:"footer__secondary"},[_c('social-nav'),_vm._v(" "),_c('locale-selector',_vm._g(_vm._b({staticClass:"footer__locale-selector",attrs:{"country":_vm.country}},'locale-selector',_vm.localeSelector,false),_vm.$listeners))],1),_vm._v(" "),_c('div',{staticClass:"footer__tertiary"},[(_vm.legalNavigation && _vm.legalNavigation.length)?_c('nav',{staticClass:"footer__legal"},[_c('footer-navigation-category',{staticClass:"footer__legal__column",attrs:{"label":_vm.copyrightLabel,"items":_vm.legalNavigation}})],1):_vm._e()])])])}
 var staticRenderFns = []
->>>>>>> chore(build): add build
 
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
@@ -28495,41 +17688,17 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 430 */
-/***/ (function(module, exports, __webpack_require__) {
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _pageHeader = __webpack_require__(422);
-=======
-/***/ "core-js/modules/es6.map":
-/*!******************************************!*\
-  !*** external "core-js/modules/es6.map" ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
-"use strict";
->>>>>>> chore(build): add build
-
-
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 422 */
+/* 421 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
->>>>>>> chore(build): add build
 
-var _pageHeader = __webpack_require__(431);
+var _pageHeader = __webpack_require__(422);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -28539,19 +17708,11 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 431 */
+/* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _pageHeaderVue = __webpack_require__(423);
-=======
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -28564,7 +17725,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _pageHeaderVue = __webpack_require__(432);
+var _pageHeaderVue = __webpack_require__(423);
 
 var _pageHeaderVue2 = _interopRequireDefault(_pageHeaderVue);
 
@@ -28669,20 +17830,6 @@ var PageHeader = function (_Vue) {
         value: function beforeMount() {
             var _this2 = this;
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 423 */
-=======
-
-/***/ "core-js/modules/es6.math.imul":
-/*!************************************************!*\
-  !*** external "core-js/modules/es6.math.imul" ***!
-  \************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports) {
-=======
             _publicEventService2.default.on('size', function (_ref) {
                 var element = _ref.element,
                     size = _ref.size;
@@ -28719,7 +17866,6 @@ var PageHeader = function (_Vue) {
             };
         }
     }]);
->>>>>>> chore(build): add build
 
     return PageHeader;
 }(_vuePropertyDecorator.Vue);
@@ -28733,22 +17879,11 @@ exports.PageHeader = PageHeader = __decorate([_pageHeaderVue2.default, (0, _vueP
 exports.PageHeader = PageHeader;
 
 /***/ }),
-/* 432 */
+/* 423 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_log10__;
-
-/***/ }),
-<<<<<<< HEAD
-/* 424 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{directives:[{name:"size-emitter",rawName:"v-size-emitter",value:('header'),expression:"'header'"}],staticClass:"header",class:_vm.headerClasses,attrs:{"role":"banner"}},[_c('div',{staticClass:"header__top",class:{'header--mobile-inverted': _vm.mainNavOpen}},[_c('router-link',{staticClass:"home-link",attrs:{"to":"/","aria-label":"Ultimaker homepage"}},[_c('icon',{staticClass:"home-link__logo",attrs:{"icon-name":"logo-ultimaker"}})],1),_vm._v(" "),(_vm.navigation)?_c('main-navigation',_vm._g({attrs:{"navigation":_vm.navigation,"main-nav-open":_vm.mainNavOpen}},_vm.$listeners)):_vm._e(),_vm._v(" "),(_vm.cta && _vm.search)?_c('sys-nav',{attrs:{"order-now-icon":_vm.cta.icon,"order-now-label":_vm.cta.label,"order-now-link":_vm.cta.url,"search-icon":_vm.search.icon,"search-label":_vm.search.label},on:{"open-search":_vm.openSearch}}):_vm._e(),_vm._v(" "),_c('nav-assist',{staticClass:"main-nav__nav-assist",attrs:{"open-state":_vm.mainNavOpen},on:{"toggle":_vm.navAssistToggle}}),_vm._v(" "),_c('transition',{attrs:{"name":"search"},on:{"after-enter":_vm.handleFocus,"leave":_vm.handleFocus}},[(_vm.searchOpen)?_c('search-bar',{ref:"search",staticClass:"header__search",attrs:{"label":_vm.search.label,"placeholder":_vm.search.placeholder,"open-state":_vm.searchOpen},on:{"close":_vm.closeSearch}}):_vm._e()],1)],1)])}
 var staticRenderFns = []
->>>>>>> chore(build): add build
 
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
@@ -28761,39 +17896,17 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 433 */
+/* 424 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchResults = __webpack_require__(425);
-=======
-/***/ "core-js/modules/es6.math.log2":
-/*!************************************************!*\
-  !*** external "core-js/modules/es6.math.log2" ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
 "use strict";
->>>>>>> chore(build): add build
 
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 425 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
->>>>>>> chore(build): add build
 
-var _searchResults = __webpack_require__(434);
+var _searchResults = __webpack_require__(425);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -28803,7 +17916,7 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 434 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28814,15 +17927,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SearchResults = undefined;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _searchResultsVue = __webpack_require__(426);
-=======
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_math_tanh__;
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
->>>>>>> chore(build): add build
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -28830,7 +17935,7 @@ var _stepRowAnimation = __webpack_require__(9);
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _searchResultsVue = __webpack_require__(435);
+var _searchResultsVue = __webpack_require__(426);
 
 var _searchResultsVue2 = _interopRequireDefault(_searchResultsVue);
 
@@ -28860,20 +17965,6 @@ var SearchResults = function (_Mixins) {
     function SearchResults() {
         _classCallCheck(this, SearchResults);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 426 */
-=======
-
-/***/ "core-js/modules/es6.number.is-nan":
-/*!****************************************************!*\
-  !*** external "core-js/modules/es6.number.is-nan" ***!
-  \****************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports) {
-=======
         return _possibleConstructorReturn(this, (SearchResults.__proto__ || Object.getPrototypeOf(SearchResults)).apply(this, arguments));
     }
 
@@ -28893,7 +17984,6 @@ var SearchResults = function (_Mixins) {
             return this.searchResults.length ? "Search results for: \u201C" + this.terms + "\u201D" : "No results for \u201C" + this.terms + "\u201D";
         }
     }]);
->>>>>>> chore(build): add build
 
     return SearchResults;
 }((0, _vuePropertyDecorator.Mixins)(_stepRowAnimation.StepRowAnimation));
@@ -28911,14 +18001,23 @@ exports.SearchResults = SearchResults = __decorate([_searchResultsVue2.default, 
 exports.SearchResults = SearchResults;
 
 /***/ }),
-/* 435 */
+/* 426 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_number_is_safe_integer__;
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"search-results"},[_c('search-bar-page',{attrs:{"eventSubmitSearch":_vm.eventSubmitSearch,"isLoading":_vm.isLoading,"label":_vm.label,"placeholder":_vm.placeholder,"terms":_vm.terms},on:_vm._d({},[_vm.eventSubmitSearch,_vm.submitSearch])}),_vm._v(" "),(_vm.terms.length && !_vm.isLoading)?_c('h1',{staticClass:"search-results__title"},[_vm._v("\n        "+_vm._s(_vm.computedTitle)+"\n    ")]):_vm._e(),_vm._v(" "),(_vm.searchResults.length)?_c('ul',{staticClass:"search-results__list"},_vm._l((_vm.searchResults),function(searchResult,key){return _c('li',{key:key,staticClass:"search-results__list-item"},[_c('search-result',_vm._b({attrs:{"terms":_vm.terms}},'search-result',searchResult,false))],1)}),0):_vm._e(),_vm._v(" "),(_vm.showLoadMore)?_c('footer',{staticClass:"search-results__footer"},[_c('button',{staticClass:"button button--secondary",attrs:{"disabled":_vm.isLoading},on:{"click":_vm.loadMore}},[_vm._v("\n            Load more\n        ")])]):_vm._e()],1)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-<<<<<<< HEAD
 /* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29042,57 +18141,15 @@ module.exports = function (_exports) {
 /***/ }),
 /* 430 */
 /***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"search-results"},[_c('search-bar-page',{attrs:{"eventSubmitSearch":_vm.eventSubmitSearch,"isLoading":_vm.isLoading,"label":_vm.label,"placeholder":_vm.placeholder,"terms":_vm.terms},on:_vm._d({},[_vm.eventSubmitSearch,_vm.submitSearch])}),_vm._v(" "),(_vm.terms.length && !_vm.isLoading)?_c('h1',{staticClass:"search-results__title"},[_vm._v("\n        "+_vm._s(_vm.computedTitle)+"\n    ")]):_vm._e(),_vm._v(" "),(_vm.searchResults.length)?_c('ul',{staticClass:"search-results__list"},_vm._l((_vm.searchResults),function(searchResult,key){return _c('li',{key:key,staticClass:"search-results__list-item"},[_c('search-result',_vm._b({attrs:{"terms":_vm.terms}},'search-result',searchResult,false))],1)}),0):_vm._e(),_vm._v(" "),(_vm.showLoadMore)?_c('footer',{staticClass:"search-results__footer"},[_c('button',{staticClass:"button button--secondary",attrs:{"disabled":_vm.isLoading},on:{"click":_vm.loadMore}},[_vm._v("\n            Load more\n        ")])]):_vm._e()],1)}
-var staticRenderFns = []
->>>>>>> chore(build): add build
 
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 436 */
-/***/ (function(module, exports, __webpack_require__) {
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabbedContent = __webpack_require__(431);
-=======
-/***/ "core-js/modules/es6.number.min-safe-integer":
-/*!**************************************************************!*\
-  !*** external "core-js/modules/es6.number.min-safe-integer" ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
 "use strict";
->>>>>>> chore(build): add build
 
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 431 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
->>>>>>> chore(build): add build
 
-var _tabbedContent = __webpack_require__(437);
+var _tabbedContent = __webpack_require__(431);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -29102,19 +18159,11 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 437 */
+/* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabbedContentVue = __webpack_require__(432);
-=======
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -29125,7 +18174,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _tabbedContentVue = __webpack_require__(438);
+var _tabbedContentVue = __webpack_require__(432);
 
 var _tabbedContentVue2 = _interopRequireDefault(_tabbedContentVue);
 
@@ -29152,26 +18201,11 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
 var TabbedContent = function (_Vue) {
     _inherits(TabbedContent, _Vue);
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 432 */
-=======
-
-/***/ "core-js/modules/es6.object.is-extensible":
-/*!***********************************************************!*\
-  !*** external "core-js/modules/es6.object.is-extensible" ***!
-  \***********************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports) {
-=======
     function TabbedContent() {
         _classCallCheck(this, TabbedContent);
 
         return _possibleConstructorReturn(this, (TabbedContent.__proto__ || Object.getPrototypeOf(TabbedContent)).apply(this, arguments));
     }
->>>>>>> chore(build): add build
 
     return TabbedContent;
 }(_vuePropertyDecorator.Vue);
@@ -29186,22 +18220,11 @@ exports.TabbedContent = TabbedContent = __decorate([_tabbedContentVue2.default, 
 exports.TabbedContent = TabbedContent;
 
 /***/ }),
-/* 438 */
+/* 432 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_object_is_frozen__;
-
-/***/ }),
-<<<<<<< HEAD
-/* 433 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism tabbed-content"},[_c('section',{staticClass:"container"},[_c('HeaderBlock',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),(_vm.tabs && _vm.tabs.length)?_c('Tabs',{attrs:{"tabs":_vm.tabs,"sequenced":_vm.sequenced}}):_vm._e(),_vm._v(" "),_c('FooterBlock',{attrs:{"ctas":_vm.ctas}})],1)])}
 var staticRenderFns = []
->>>>>>> chore(build): add build
 
 module.exports = function (_exports) {
   var options = typeof _exports === 'function'
@@ -29214,39 +18237,17 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-/* 439 */
+/* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabbedTable = __webpack_require__(434);
-=======
-/***/ "core-js/modules/es6.object.keys":
-/*!**************************************************!*\
-  !*** external "core-js/modules/es6.object.keys" ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
 "use strict";
->>>>>>> chore(build): add build
 
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 434 */
-/***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
->>>>>>> chore(build): add build
 
-var _tabbedTable = __webpack_require__(440);
+var _tabbedTable = __webpack_require__(434);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -29256,19 +18257,11 @@ Object.defineProperty(exports, 'default', {
 });
 
 /***/ }),
-/* 440 */
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tabbedTableVue = __webpack_require__(435);
-=======
-/***/ }),
->>>>>>> feat(table-compare): allow 5 columns
-=======
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -29279,7 +18272,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
-var _tabbedTableVue = __webpack_require__(441);
+var _tabbedTableVue = __webpack_require__(435);
 
 var _tabbedTableVue2 = _interopRequireDefault(_tabbedTableVue);
 
@@ -29324,20 +18317,7 @@ exports.TabbedTable = TabbedTable = __decorate([_tabbedTableVue2.default, (0, _v
 exports.TabbedTable = TabbedTable;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 435 */
-=======
-
-/***/ "core-js/modules/es6.reflect.delete-property":
-/*!**************************************************************!*\
-  !*** external "core-js/modules/es6.reflect.delete-property" ***!
-  \**************************************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 441 */
->>>>>>> chore(build): add build
 /***/ (function(module, exports) {
 
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('article',{staticClass:"organism tabbed-table"},[_c('section',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),(_vm.tabs && _vm.tabs.length)?_c('tabs',{attrs:{"tabs":_vm.tabs,"sequenced":false}}):_vm._e(),_vm._v(" "),_c('footer-block',{attrs:{"ctas":_vm.ctas}})],1)])}
@@ -29354,38 +18334,17 @@ module.exports = function (_exports) {
 
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 436 */
 /***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 442 */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> chore(build): add build
 
 "use strict";
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tableCompare = __webpack_require__(437);
-=======
-/***/ "core-js/modules/es6.reflect.get-prototype-of":
-/*!***************************************************************!*\
-  !*** external "core-js/modules/es6.reflect.get-prototype-of" ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
->>>>>>> chore(build): add build
 
-var _tableCompare = __webpack_require__(443);
+var _tableCompare = __webpack_require__(437);
 
 var _tableCompare2 = _interopRequireDefault(_tableCompare);
 
@@ -29394,16 +18353,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _tableCompare2.default;
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 437 */
 /***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 443 */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> chore(build): add build
 
 "use strict";
 
@@ -29428,22 +18379,9 @@ var _viewport2 = _interopRequireDefault(_viewport);
 
 var _browserCapabilities = __webpack_require__(2);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var _tableCompareVue = __webpack_require__(438);
-=======
-/***/ "core-js/modules/es6.reflect.set-prototype-of":
-/*!***************************************************************!*\
-  !*** external "core-js/modules/es6.reflect.set-prototype-of" ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
 var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
->>>>>>> chore(build): add build
 
-var _tableCompareVue = __webpack_require__(444);
+var _tableCompareVue = __webpack_require__(438);
 
 var _tableCompareVue2 = _interopRequireDefault(_tableCompareVue);
 
@@ -29482,6 +18420,8 @@ var TableCompare = function (_Vue) {
         _this.viewportUtility = new _viewport2.default();
         _this.visibilityClass = 'invisible';
         _this.initiallyVisible = 3;
+        _this.scrollingColumns = 0;
+        _this.showScrollingColumns = false;
         return _this;
     }
 
@@ -29490,9 +18430,6 @@ var TableCompare = function (_Vue) {
         value: function mounted() {
             this.resizeHandler = (0, _debounce2.default)(this.resetScrollPosition, 100);
             this.viewportUtility.addResizeHandler(this.resizeHandler);
-            if (!this.viewportUtility.isMobile) {
-                this.$refs.scrollContainer.addEventListener('scroll', this.scrollHandler);
-            }
             var options = {
                 root: this.$refs.scrollWidthContainer,
                 threshold: 0.99
@@ -29501,19 +18438,7 @@ var TableCompare = function (_Vue) {
                 this.observer = new IntersectionObserver(this.intersectionObserver, options);
                 this.observeColumns();
             }
-        }
-    }, {
-        key: "scrollHandler",
-        value: function scrollHandler() {
-            if (!this.viewportUtility.isMobile) {
-                if (this.$refs.scrollContainer.scrollLeft <= this.visibilityOffset) {
-                    this.toggleVisibility(this.$refs.footers, this.columnLength - this.initiallyVisible, true);
-                    this.toggleVisibility(this.$refs.columns, this.columnLength - this.initiallyVisible, true);
-                } else {
-                    this.toggleVisibility(this.$refs.footers, this.columnLength - this.initiallyVisible, false);
-                    this.toggleVisibility(this.$refs.columns, this.columnLength - this.initiallyVisible, false);
-                }
-            }
+            this.resetScrollPosition();
         }
     }, {
         key: "beforeDestroy",
@@ -29521,9 +18446,6 @@ var TableCompare = function (_Vue) {
             this.resizeHandler.cancel();
             this.viewportUtility.removeResizeHandler(this.resizeHandler);
             this.observer.unobserve(this.$refs.scrollContainer);
-            if (!this.viewportUtility.isMobile) {
-                this.$refs.scrollContainer.removeEventListener('scroll', this.scrollHandler);
-            }
         }
     }, {
         key: "observeColumns",
@@ -29533,6 +18455,12 @@ var TableCompare = function (_Vue) {
                 this.observer.observe(this.$refs.columns[0]);
                 this.observer.observe(this.$refs.columns.slice(-1)[0]);
             }
+        }
+    }, {
+        key: "resetScrollingColumns",
+        value: function resetScrollingColumns() {
+            this.showScrollingColumns = !this.viewportUtility.isMobile && !this.viewportUtility.isTablet;
+            this.scrollingColumns = !this.viewportUtility.isMobile && !this.viewportUtility.isTablet ? this.columnLength + 1 : this.columnLength;
         }
     }, {
         key: "intersectionObserver",
@@ -29558,39 +18486,39 @@ var TableCompare = function (_Vue) {
             });
         }
     }, {
-        key: "toggleVisibility",
-        value: function toggleVisibility(items, amount, show) {
-            var _this3 = this;
-
-            items.forEach(function (item, index) {
-                if (index < amount && item) {
-                    if (show) {
-                        item.classList.remove(_this3.visibilityClass);
-                    } else {
-                        item.classList.add(_this3.visibilityClass);
-                    }
-                }
-            });
-        }
-    }, {
         key: "scroll",
         value: function () {
             var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee() {
                 var reverse = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-                var scrollWidth, scrollLeft;
+                var scrollWidth, scrollLeft, scrollContainer, xCord;
                 return regeneratorRuntime.wrap(function _callee$(_context) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
                                 scrollWidth = this.$refs.scrollWidthContainer.clientWidth;
                                 scrollLeft = this.$refs.scrollContainer.scrollLeft;
-                                _context.next = 4;
+                                scrollContainer = this.$refs.scrollContainer;
+                                xCord = scrollLeft + (reverse ? -1 : 1) * scrollWidth;
+
+                                if (!(this.$refs.scrollContainer.scrollTo || this.viewportUtility.isMobile)) {
+                                    _context.next = 9;
+                                    break;
+                                }
+
+                                _context.next = 7;
                                 return this.$refs.scrollContainer.scrollTo({
-                                    left: scrollLeft + (reverse ? -1 : 1) * scrollWidth,
+                                    left: xCord,
                                     behavior: 'smooth'
                                 });
 
-                            case 4:
+                            case 7:
+                                _context.next = 10;
+                                break;
+
+                            case 9:
+                                scrollContainer.scrollLeft = reverse ? 0 : this.initiallyVisible * (scrollWidth / this.columnLength);
+
+                            case 10:
                             case "end":
                                 return _context.stop();
                         }
@@ -29598,20 +18526,6 @@ var TableCompare = function (_Vue) {
                 }, _callee, this);
             }));
 
-<<<<<<< HEAD
-/***/ }),
-<<<<<<< HEAD
-/* 438 */
-=======
-
-/***/ "core-js/modules/es6.set":
-/*!******************************************!*\
-  !*** external "core-js/modules/es6.set" ***!
-  \******************************************/
-/*! no static exports found */
->>>>>>> feat(table-compare): allow 5 columns
-/***/ (function(module, exports) {
-=======
             function scroll() {
                 return _ref.apply(this, arguments);
             }
@@ -29621,6 +18535,7 @@ var TableCompare = function (_Vue) {
     }, {
         key: "resetScrollPosition",
         value: function resetScrollPosition() {
+            this.resetScrollingColumns();
             this.$refs.scrollContainer.scrollLeft = 0;
         }
     }, {
@@ -29638,18 +18553,11 @@ var TableCompare = function (_Vue) {
             return this.content.columns.length;
         }
     }, {
-        key: "visibilityOffset",
-        get: function get() {
-            var offSet = this.$refs.scrollContainer.offsetWidth;
-            return offSet / this.columnLength * (this.columnLength - this.initiallyVisible);
-        }
-    }, {
         key: "showScrollButtons",
         get: function get() {
             return this.columnLength - this.initiallyVisible > 0 && !this.viewportUtility.isMobile || (this.viewportUtility.isMobile || this.viewportUtility.isTablet) && this.columnLength > 1;
         }
     }]);
->>>>>>> chore(build): add build
 
     return TableCompare;
 }(_vuePropertyDecorator.Vue);
@@ -29658,41 +18566,32 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], TableCompare.prototype, "content", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], TableCompare.prototype, "ctas", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('content.columns'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], TableCompare.prototype, "observeColumns", null);
+__decorate([(0, _vuePropertyDecorator.Watch)('scrollingColumns'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], TableCompare.prototype, "resetScrollingColumns", null);
 TableCompare = __decorate([_tableCompareVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'TableCompare'
 })], TableCompare);
 exports.default = TableCompare;
 
 /***/ }),
-/* 444 */
+/* 438 */
 /***/ (function(module, exports) {
 
-<<<<<<< HEAD
-module.exports = __WEBPACK_EXTERNAL_MODULE_core_js_modules_es6_string_code_point_at__;
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"organism"},[_c('div',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{ref:"scrollWidthContainer",staticClass:"table-compare"},[_c('div',{ref:"scrollContainer",staticClass:"table-compare__scroll-container"},[(_vm.content)?_c('table',{staticClass:"table-compare__table",style:(("--number-of-columns: " + _vm.scrollingColumns + ";"))},[_c('colgroup',[(_vm.showScrollingColumns)?_c('col'):_vm._e(),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('col')}),_vm._v(" "),(_vm.showScrollingColumns)?_c('col'):_vm._e()],2),_vm._v(" "),_c('thead',[_c('tr',[(_vm.showScrollingColumns)?_c('th',{attrs:{"scope":"col"}}):_vm._e(),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('th',{ref:"columns",refInFor:true,attrs:{"scope":"col"}},[(col.image && col.image.url)?_c('c-image',_vm._b({staticClass:"table-compare__image",attrs:{"alt":"col.alt"}},'c-image',col.image,false)):_vm._e(),_vm._v(" "),_c('span',[_vm._v(_vm._s(col.title))])],1)}),_vm._v(" "),(_vm.showScrollingColumns)?_c('th',{attrs:{"scope":"col"}}):_vm._e()],2)]),_vm._v(" "),_c('tbody',_vm._l((_vm.content.rows),function(row){return _c('tr',[(_vm.showScrollingColumns)?_c('td'):_vm._e(),_vm._v(" "),_vm._l((row.cells),function(cell){return _c('td',[_c('span',{staticClass:"table-compare__cell"},[_vm._v(_vm._s(cell.label))]),_vm._v(" "),(cell.checked)?_c('icon',{staticClass:"table-compare__checkmark",attrs:{"icon-name":"checkmark"}}):_vm._e()],1)}),_vm._v(" "),(_vm.showScrollingColumns)?_c('td'):_vm._e()],2)}),0),_vm._v(" "),_c('tfoot',[_c('tr',[(_vm.showScrollingColumns)?_c('th',{attrs:{"scope":"row"}}):_vm._e(),_vm._v(" "),_vm._l((_vm.content.columns),function(cell){return _c('td',{ref:"footers",refInFor:true},[(cell.cta)?_c(cell.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(cell.cta.type)},'component',cell.cta,false)):_vm._e()],1)}),_vm._v(" "),(_vm.showScrollingColumns)?_c('td',{attrs:{"scope":"row"}}):_vm._e()],2)])]):_vm._e()]),_vm._v(" "),(_vm.showScrollButtons)?_c('div',{staticClass:"table-compare__scroll-buttons"},[_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--left",attrs:{"icon-name":"angle-left","disabled":_vm.disableLeft},on:{"click":function($event){return _vm.scroll(true)}}}),_vm._v(" "),_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--right",attrs:{"icon-name":"angle-right","disabled":_vm.disableRight},on:{"click":function($event){return _vm.scroll(false)}}})],1):_vm._e(),_vm._v(" "),_c('div',{staticClass:"table-compare-features"},[_c('div',{staticClass:"table-compare-features--header"}),_vm._v(" "),_vm._l((_vm.content.rows),function(row){return _c('div',{staticClass:"table-compare-features--body"},[(row.tooltip)?_c('div',{staticClass:"table-compare__feature"},[_c('tooltip-toggle',_vm._b({attrs:{"label":row.label}},'tooltip-toggle',row.tooltip,false))],1):_c('div',{staticClass:"table-compare__feature--no-tooltip"},[_c('span',[_vm._v(_vm._s(row.label))])])])}),_vm._v(" "),_c('div',{staticClass:"table-compare-features--footer"})],2)]),_vm._v(" "),_c('footer-block',{attrs:{"ctas":_vm.ctas}})],1)])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
-<<<<<<< HEAD
 /* 439 */
 /***/ (function(module, exports, __webpack_require__) {
-=======
-=======
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"organism"},[_c('div',{staticClass:"container"},[_c('header-block',{attrs:{"title":_vm.title,"subtitle":_vm.subtitle}}),_vm._v(" "),_c('div',{ref:"scrollWidthContainer",staticClass:"table-compare"},[_c('div',{ref:"scrollContainer",staticClass:"table-compare__scroll-container"},[(_vm.content)?_c('table',{staticClass:"table-compare__table",style:(("--number-of-columns: " + (_vm.content.columns.length) + ";"))},[_c('colgroup',[_c('col'),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('col')})],2),_vm._v(" "),_c('thead',[_c('tr',[_c('th',{style:(("--number-of-columns: " + (_vm.content.columns.length) + ";")),attrs:{"scope":"col"}}),_vm._v(" "),_vm._l((_vm.content.columns),function(col){return _c('th',{ref:"columns",refInFor:true,attrs:{"scope":"col"}},[(col.image && col.image.url)?_c('c-image',_vm._b({staticClass:"table-compare__image",attrs:{"alt":"col.alt"}},'c-image',col.image,false)):_vm._e(),_vm._v(" "),_c('span',[_vm._v(_vm._s(col.title))])],1)})],2)]),_vm._v(" "),_c('tbody',_vm._l((_vm.content.rows),function(row){return _c('tr',[_c('th',{attrs:{"scope":"row"}},[(row.tooltip)?_c('div',{staticClass:"table-compare__feature"},[_c('tooltip-toggle',_vm._b({attrs:{"label":row.label}},'tooltip-toggle',row.tooltip,false))],1):_c('div',{staticClass:"table-compare__feature--no-tooltip"},[_vm._v("\n                                    "+_vm._s(row.label)+"\n                            ")])]),_vm._v(" "),_vm._l((row.cells),function(cell){return _c('td',[_c('span',{staticClass:"table-compare__cell"},[_vm._v(_vm._s(cell.label))]),_vm._v(" "),(cell.checked)?_c('icon',{staticClass:"table-compare__checkmark",attrs:{"icon-name":"checkmark"}}):_vm._e()],1)})],2)}),0),_vm._v(" "),_c('tfoot',[_c('tr',[_c('th',{attrs:{"scope":"row"}}),_vm._v(" "),_vm._l((_vm.content.columns),function(cell){return _c('td',{ref:"footers",refInFor:true},[(cell.cta)?_c(cell.cta.type,_vm._b({tag:"component",class:_vm.getClassNames(cell.cta.type)},'component',cell.cta,false)):_vm._e()],1)})],2)])]):_vm._e()]),_vm._v(" "),(_vm.showScrollButtons)?_c('div',{staticClass:"table-compare__scroll-buttons"},[_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--left",attrs:{"icon-name":"angle-left","disabled":_vm.disableLeft},on:{"click":function($event){return _vm.scroll(true)}}}),_vm._v(" "),_c('icon-button',{staticClass:"table-compare__scroll-button table-compare__scroll-button--right",attrs:{"icon-name":"angle-right","disabled":_vm.disableRight},on:{"click":function($event){return _vm.scroll(false)}}})],1):_vm._e()]),_vm._v(" "),_c('footer-block',{attrs:{"ctas":_vm.ctas}})],1)])}
-var staticRenderFns = []
->>>>>>> chore(build): add build
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-/* 445 */
-/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
@@ -29701,249 +18600,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _colors = __webpack_require__(18);
-
-Object.defineProperty(exports, 'Colors', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_colors).default;
-  }
-});
-
-var _subnavigation = __webpack_require__(446);
-
-Object.defineProperty(exports, 'Subnavigation', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_subnavigation).default;
-  }
-});
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ }),
-/* 446 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _subnavigation = __webpack_require__(447);
-
-var _subnavigation2 = _interopRequireDefault(_subnavigation);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _subnavigation2.default;
-
-/***/ }),
-/* 447 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _overflowContainer = __webpack_require__(448);
-
-var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var Subnavigation = function (_OverflowContainer) {
-    _inherits(Subnavigation, _OverflowContainer);
-
-    function Subnavigation() {
-        _classCallCheck(this, Subnavigation);
-
-        return _possibleConstructorReturn(this, (Subnavigation.__proto__ || Object.getPrototypeOf(Subnavigation)).apply(this, arguments));
-    }
-
-    return Subnavigation;
-}(_overflowContainer2.default);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Subnavigation.prototype, "items", void 0);
-Subnavigation = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'Subnavigation'
-})], Subnavigation);
-exports.default = Subnavigation;
-
-/***/ }),
-/* 448 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _overflowContainer = __webpack_require__(449);
-
-var _overflowContainer2 = _interopRequireDefault(_overflowContainer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _overflowContainer2.default;
-
-/***/ }),
-/* 449 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _vuePropertyDecorator = __webpack_require__(0);
-
-var _browserCapabilities = __webpack_require__(2);
-
-var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
-
-var _overflowContainerVue = __webpack_require__(450);
-
-var _overflowContainerVue2 = _interopRequireDefault(_overflowContainerVue);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
-    var c = arguments.length,
-        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-        d;
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
-        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    }return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = undefined && undefined.__metadata || function (k, v) {
-    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var OverflowContainer = function (_Vue) {
-    _inherits(OverflowContainer, _Vue);
-
-    function OverflowContainer() {
-        _classCallCheck(this, OverflowContainer);
-
-        var _this = _possibleConstructorReturn(this, (OverflowContainer.__proto__ || Object.getPrototypeOf(OverflowContainer)).apply(this, arguments));
-
-        _this.activeSelector = '.exact-active';
-        _this.scrollTimeout = 300;
-        _this.isTouch = false;
-        return _this;
-    }
-
-    _createClass(OverflowContainer, [{
-        key: "mounted",
-        value: function mounted() {
-            var subnav = this.$refs.subNav;
-            this.isTouch = _browserCapabilities2.default.supportsTouch;
-            if (subnav) {
-                var activeItem = subnav.querySelector(this.activeSelector);
-                if (activeItem && this.isTouch) {
-                    setTimeout(function () {
-                        return activeItem.scrollIntoView({ inline: 'center' });
-                    }, this.scrollTimeout);
-                }
-            }
-        }
-    }]);
-
-    return OverflowContainer;
-}(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], OverflowContainer.prototype, "items", void 0);
-OverflowContainer = __decorate([_overflowContainerVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'OverflowContainer'
-})], OverflowContainer);
-exports.default = OverflowContainer;
-
-/***/ }),
-/* 450 */
-/***/ (function(module, exports) {
-
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.items)?_c('nav',{ref:"subNav",staticClass:"overflow-container overflow-container--fixed",attrs:{"aria-label":"sub items"}},[(_vm.items)?_c('ul',{staticClass:"overflow-container__list",class:_vm.isTouch ? 'touch' : '',attrs:{"role":"presentation"}},_vm._l((_vm.items),function(item,index){return _c('li',{ref:"listItems",refInFor:true,staticClass:"overflow-container__item"},[_c(item.type,_vm._b({key:index,tag:"component"},'component',item,false))],1)}),0):_vm._e()]):_vm._e()}
-var staticRenderFns = []
-
-module.exports = function (_exports) {
-  var options = typeof _exports === 'function'
-    ? _exports.options
-    : _exports
-  options.render = render
-  options.staticRenderFns = staticRenderFns
-  return _exports
-}
-
-
-/***/ }),
-<<<<<<< HEAD
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 451 */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> chore(build): add build
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 var _sizeEmitter = __webpack_require__(440);
-=======
-/***/ "core-js/modules/web.dom.iterable":
-/*!***************************************************!*\
-  !*** external "core-js/modules/web.dom.iterable" ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
->>>>>>> feat(table-compare): allow 5 columns
-=======
-var _sizeEmitter = __webpack_require__(452);
->>>>>>> chore(build): add build
 
 Object.defineProperty(exports, 'SizeEmitter', {
   enumerable: true,
@@ -29953,16 +18610,8 @@ Object.defineProperty(exports, 'SizeEmitter', {
 });
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 440 */
 /***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 452 */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> chore(build): add build
 
 "use strict";
 
@@ -30073,16 +18722,8 @@ var SizeEmitter = exports.SizeEmitter = function () {
 }();
 
 /***/ }),
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* 441 */
 /***/ (function(module, exports, __webpack_require__) {
-=======
->>>>>>> feat(table-compare): allow 5 columns
-=======
-/* 453 */
-/***/ (function(module, exports, __webpack_require__) {
->>>>>>> chore(build): add build
 
 // extracted by mini-css-extract-plugin
 

@@ -8,28 +8,38 @@
     overflow-y: visible;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .table-compare__table {
 	position: relative;
 	table-layout: fixed;
     // --number-of-columns is set in the template
-    width: calc(var(--number-of-columns) * 100%);
+    width: calc(var(--number-of-columns ) * 100%);
     
     @include min-desktop {
-        width: calc(var(--number-of-columns) * (100% / 3.175));
+        width: calc(var(--number-of-columns) * 25%);
     }
 }
 
 .table-compare__table col {
-    width: 20 * $buildingUnit;
+    width: auto;   
 }
 
-.table-compare__table col:first-of-type {
-    width: 0;
-
+.table-compare__table col:first-of-type {   
+    display: none;
     @include min-desktop {
-        width: calc(25% / var(--number-of-columns));;
+        display: table-column;
+    }
+}
+
+.table-compare__table col:last-of-type {
+    width: 0;
+    display: none;
+    @include min-desktop {
+        display: table-column;
+    // add some extra padding for the last-child -1 
+        width:$buildingUnit ; 
     }
 }
 
@@ -49,18 +59,6 @@
     @include min-desktop {
         font-size: 1.6667 * $buildingUnit;
         line-height: 1.2;
-
-        > * {
-            visibility: visible;
-            opacity: 1;
-            transition:visibility 0.3s linear,opacity 0.3s linear;
-        }
-        
-        &.invisible > * {
-            visibility: hidden;
-            opacity: 0.4;
-            transition:visibility 0.3s linear,opacity 0.3s linear;
-        }
     }
 
     @media (min-width: 1440px) {
@@ -89,6 +87,7 @@
     padding: 0 0.5 * $buildingUnit;
     scroll-snap-align: start end;
     vertical-align: middle;
+
 }
 
 // Table footer cells
@@ -96,21 +95,6 @@
 .table-compare__table tfoot td {
     padding: 1.5 * $buildingUnit;
     text-align: center;
-
-    @include min-desktop {
-
-        > * {
-            visibility: visible;
-            opacity: 1;
-            transition:visibility 0.3s linear,opacity 0.3s linear;
-        }
-
-        &.invisible > *{
-            visibility: hidden;
-            opacity: 0;
-            transition:visibility 0.3s linear,opacity 0.3s linear;
-        }
-    }
 }
 
 .table-compare__table tfoot td {
@@ -119,7 +103,6 @@
         margin: 0;
     }
 }
-
 
 .table-compare__image {
     display: block;
@@ -138,20 +121,16 @@
     display: inline-block;
     position: relative;
     vertical-align: top;
-    background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
-
-    main .organism:nth-child(even) & {
-        background: linear-gradient(to left, transparentize($colorGraySuperLight, 1), $colorGraySuperLight $buildingUnit);
-    }
-
-    min-width: 125px;
-    max-width: 70vw;
+    width: 100%;
+    height: $buildingUnit * 3.9;
 }
 
 .table-compare__feature--no-tooltip {
-    padding: 15px 50px 11px ($buildingUnit * 1.5);
+    padding: 11px 50px 11px ($buildingUnit * 1.5);
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .table-compare__cell {
@@ -173,6 +152,7 @@
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .table-compare__scroll-button {
@@ -187,5 +167,55 @@
 
     &--right {
         right: 0;
+    }
+}
+
+.table-compare-features {
+    position: absolute;
+    z-index: 5;
+    width: 80%;
+    top: 0;
+    left: 0;
+
+    @include min-desktop {
+        width: 25%;
+    }
+}
+
+.table-compare-features--header {
+    height: 257px;
+
+    @include min-desktop {
+        height: 254px;
+        border-bottom: 2px solid #e3e3e3;
+        background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
+
+        main .organism:nth-child(even) & {
+            background: linear-gradient(to left, transparentize($colorGraySuperLight, 1), $colorGraySuperLight $buildingUnit);
+        }
+    }
+}
+
+.table-compare-features--body {
+    border-bottom: 1px solid #e3e3e3;
+    background-color: white;
+   
+    main .organism:nth-child(even) & {
+        background: $colorGraySuperLight;
+    }
+
+    &:first-of-type{
+        border-top: 2px solid #e3e3e3;
+    }
+}
+
+.table-compare-features--footer {
+    height: 83px;
+    @include min-desktop {
+        background: linear-gradient(to left, transparentize($colorWhite, 1), $colorWhite $buildingUnit);
+
+        main .organism:nth-child(even) & {
+            background: linear-gradient(to left, transparentize($colorGraySuperLight, 1), $colorGraySuperLight $buildingUnit);
+        }
     }
 }
