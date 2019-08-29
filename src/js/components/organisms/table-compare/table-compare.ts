@@ -28,10 +28,8 @@ export default class TableCompare extends Vue implements TableCompareProps {
         scrollWidthContainer: HTMLElement;
         scrollContainer: HTMLElement;
         columns: HTMLElement[];
-        footers: HTMLElement[];
     };
 
-    visibilityClass: string = 'invisible';
     initiallyVisible: number = 3;
     scrollingColumns: number = 0;
     showScrollingColumns: boolean = false;

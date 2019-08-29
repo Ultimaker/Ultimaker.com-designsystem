@@ -8,7 +8,6 @@
                         <col v-if="showScrollingColumns">
                         <col v-for="col in content.columns">
                         <col v-if="showScrollingColumns">
-
                     </colgroup>
                     <thead >
                     <tr>
@@ -34,7 +33,7 @@
                     <tfoot>
                     <tr>
                         <th scope="row" v-if="showScrollingColumns"></th>
-                        <td v-for="cell in content.columns" ref="footers">
+                        <td v-for="cell in content.columns">
                             <component v-if="cell.cta" v-bind="cell.cta" :is="cell.cta.type" :class="getClassNames(cell.cta.type)"/>
                         </td>
                         <td scope="row" v-if="showScrollingColumns"></td>
