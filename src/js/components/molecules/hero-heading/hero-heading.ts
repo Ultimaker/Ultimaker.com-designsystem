@@ -1,10 +1,10 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
-
 import { HeroHeadingProps } from './hero-heading.models';
+import WithRender from './hero-heading.vue.html';
 
+@WithRender
 @Component({
     name: 'HeroHeading',
-    template: require('./hero-heading.html'),
 })
 
 export default class HeroHeading extends Vue implements HeroHeadingProps {

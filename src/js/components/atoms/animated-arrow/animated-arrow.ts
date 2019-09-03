@@ -1,7 +1,8 @@
 import { Vue, Component } from 'vue-property-decorator';
+import WithRender from './animated-arrow.vue.html';
 
+@WithRender
 @Component({
     name: 'animated-arrow',
-    template: require('./animated-arrow.html'),
 })
 export default class AnimatedArrow extends Vue {}
