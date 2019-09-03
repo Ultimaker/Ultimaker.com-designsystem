@@ -1,10 +1,11 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import ViewportUtil from 'utils/viewport';
 import ResponsivePictureSource from './responsive-picture-source';
+import WithRender from './responsive-picture.vue.html';
 
+@WithRender
 @Component({
     name: 'responsive-picture',
-    template: require('./responsive-picture.html'),
     components: {
         ResponsivePictureSource,
     },

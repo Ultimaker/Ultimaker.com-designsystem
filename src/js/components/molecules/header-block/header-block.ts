@@ -1,8 +1,9 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import WithRender from './header-block.vue.html';
 
+@WithRender
 @Component({
     name: 'HeaderBlock',
-    template: require('./header-block.html'),
 })
 
 export default class HeaderBlock extends Vue {
