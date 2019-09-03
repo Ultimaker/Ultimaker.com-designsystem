@@ -2,10 +2,7 @@
 
 @Library('k8s-jenkins-tools') _
 
-import com.ultimaker.Slug
-
-// max length is 64 characters, UUID is 36
-String label = "designsystem-${UUID.randomUUID().toString()}"
+String label = generateLabel('designsystem')
 
 podTemplate(
   label: label,
@@ -31,8 +28,7 @@ podTemplate(
   node(label) {
 
     Object scmVariables = checkout scm
-    Slug slugify = new Slug()
-    String branch = slugify.slug(env.BRANCH_NAME)
+    String branch = slugify(env.BRANCH_NAME)
     String commit = scmVariables.GIT_COMMIT
     String nginxContainer = 'eu.gcr.io/um-website-193311/storybook/nginx'
     String nodeContainer = 'eu.gcr.io/um-website-193311/storybook/node'
@@ -40,12 +36,16 @@ podTemplate(
     try {
 
       stage('install dependencies') {
+        STAGE_NAME = env.STAGE_NAME
+
         container('node') {
           sh 'npm ci'
         }
       }
 
       stage('validate code') {
+        STAGE_NAME = env.STAGE_NAME
+
         parallel(
           'linting': {
             container('node') {
@@ -61,6 +61,8 @@ podTemplate(
       }
 
       stage('compile code') {
+        STAGE_NAME = env.STAGE_NAME
+
         parallel(
           'components': {
             container('node') {
@@ -82,6 +84,8 @@ podTemplate(
       }
 
       stage('authenticate gcloud') {
+        STAGE_NAME = env.STAGE_NAME
+
         withCredentials([file(credentialsId: 'gcloud-jenkins-service-account', variable: 'GCLOUD_KEY_FILE')]) {
           sh """
           gcloud --quiet auth configure-docker
@@ -93,6 +97,8 @@ podTemplate(
       }
 
       stage('build containers') {
+        STAGE_NAME = env.STAGE_NAME
+
         parallel(
           'nginx': {
             sh "docker build --file docker/nginx/Dockerfile --tag ${nginxContainer}:${branch} --tag ${nginxContainer}:${commit} ."
@@ -107,6 +113,8 @@ podTemplate(
       }
 
       stage('push containers') {
+        STAGE_NAME = env.STAGE_NAME
+
         parallel(
           'nginx': {
             sh "docker push ${nginxContainer}:${branch}"
@@ -129,9 +137,13 @@ podTemplate(
 
       currentBuild.result = 'FAILURE'
 
-      slackSend color: 'danger',
-        channel: '#ci-builds',
-        message: "Failure while building *designsystem* branch \"${env.BRANCH_NAME}\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> )."
+      buildFailure(
+        env.BUILD_URL,
+        'Storybook',
+        'Ultimaker.com-designsystem',
+        env.BRANCH_NAME,
+        STAGE_NAME
+      )
 
       throw e
 
@@ -148,32 +160,24 @@ podTemplate(
           """.stripIndent()
       }
 
-      deploymentUpdated('storybook', 'https://storybook.k8s-dev.ultimaker.works', env.BRANCH_NAME, commit)
+      updateDeploymentSuccess(
+        'development',
+        env.BUILD_URL,
+        'https://storybook.k8s-dev.ultimaker.works',
+        'Storybook',
+        'Ultimaker.com-designsystem',
+        env.BRANCH_NAME,
+        commit
+      )
 
     } catch (e) {
 
       currentBuild.result = 'FAILURE'
 
-      slackSend color: 'danger',
-        channel: '#ci-deployments',
-        message: "Failure while deploying *storybook* to \"development\" ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> )."
+      updateDeploymentFailure('development', env.BUILD_URL, 'Storybook')
 
       throw e
 
     }
   }
-}
-
-def deploymentUpdated(name, url, branch, commit) {
-  slackSend channel: '#ci-deployments',
-    attachments: [[
-      color: "good",
-      fallback: "Deployment \"${name}\" was updated.",
-      pretext: "Deployment \"<${url}|${name}>\" was updated ( <${env.BUILD_URL}|job> / <${env.BUILD_URL}console|console> ).",
-      fields: [
-        [ title: "Component", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem|Designsystem>" ],
-        [ title: "Branch", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem/tree/${branch}|${branch}>" ],
-        [ title: "Commit", value: "<https://github.com/Ultimaker/Ultimaker.com-designsystem/commit/${commit}|${commit}>" ],
-      ]
-    ]]
 }
