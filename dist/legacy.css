@@ -5875,6 +5875,10 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .header__search .search__close-button {
   border-bottom: 1px solid #eaeaea; }
 
+.um-components .header__search .search-bar__button {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea; }
+
 .um-components .header--mobile-inverted {
   color: #fff; }
   .um-components .header--mobile-inverted:before {

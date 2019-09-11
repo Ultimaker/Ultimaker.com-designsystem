@@ -6400,6 +6400,10 @@ main .overview:nth-child(even) {
 .header__search .search__close-button {
   border-bottom: 1px solid #eaeaea; }
 
+.header__search .search-bar__button {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea; }
+
 .header--mobile-inverted {
   color: #fff; }
   .header--mobile-inverted:before {
