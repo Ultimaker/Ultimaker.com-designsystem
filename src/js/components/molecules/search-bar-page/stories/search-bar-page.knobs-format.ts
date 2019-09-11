@@ -6,4 +6,5 @@ export default {
     label: '',
     placeholder: '',
     searchFieldName: '',
+    terms: '',
 };

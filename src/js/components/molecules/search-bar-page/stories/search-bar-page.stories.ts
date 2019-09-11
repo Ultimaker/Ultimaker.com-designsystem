@@ -17,6 +17,7 @@ const getStory = (type) => () => {
             label: { default: knobs.label },
             placeholder: { default: knobs.placeholder },
             searchFieldName: { default: knobs.searchFieldName },
+            terms: { default: knobs.terms },
         },
         template: require('./search-bar-page.html'),
     };
