@@ -1,4 +1,6 @@
 $headerHeight: $buildingUnit * 5;
+$homeLinkWidth: 120px;
+$homeLinkDesktopHdWidth: 162px;
 
 .header {
     position: relative;
@@ -80,6 +82,11 @@ $headerHeight: $buildingUnit * 5;
 
 .header__top,
 .header__search .search__close-button {
+    border-bottom: 1px solid $colorGrayLight;
+}
+
+.header__search .search-bar__button {
+    background-color: $colorWhite;
     border-bottom: 1px solid $colorGrayLight;
 }
 
