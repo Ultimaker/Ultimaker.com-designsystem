@@ -53,3 +53,4 @@ export { default as TabTable } from 'molecules/tab-table';
 export { default as TabTableRow } from 'molecules/tab-table-row';
 export { default as WizardStepDownloadList } from 'molecules/wizard-step-download-list';
 export { default as WizardStepConfirmation } from 'molecules/wizard-step-confirmation';
+export { default as InPageNotification } from 'molecules/in-page-notification';
