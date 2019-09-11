@@ -4,4 +4,5 @@ export default {
     legalNavigation: [],
     copyrightLabel: '',
     country: {},
+    language: '',
 };

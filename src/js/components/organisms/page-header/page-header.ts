@@ -14,6 +14,7 @@ export class PageHeader extends Vue implements PageHeaderProps {
     @Prop({ type: Array, required: false }) navigation!: PageHeaderProps['navigation'];
     @Prop({ type: Object, required: false }) cta!: PageHeaderProps['cta'];
     @Prop({ type: Object, required: false }) search!: PageHeaderProps['search'];
+    @Prop({ type: String, required: false }) language?: PageHeaderProps['language'];
     @Prop({ type: Boolean, required: true }) mainNavOpen!: boolean;
 
     assistUsed: boolean = false;

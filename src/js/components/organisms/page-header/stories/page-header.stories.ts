@@ -17,6 +17,7 @@ const getStory = type => () => {
             cta: { default: knobs.cta },
             search: { default: knobs.search },
             navigation: { default: knobs.navigation },
+            language: { default: knobs.language },
         },
         template: require('./page-header.html'),
     };
