@@ -122,7 +122,7 @@
     position: relative;
     vertical-align: top;
     width: 100%;
-    height: $buildingUnit * 3.9;
+    height:47px; // not able to divide 47 by 12 building units. 
 }
 
 .table-compare__feature--no-tooltip {
