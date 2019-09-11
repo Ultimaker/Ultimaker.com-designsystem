@@ -108,5 +108,6 @@ export const data = {
             label: 'Privacy and Cookie Policy',
             url: 'http://example.com',
         }],
+        language: 'nl',
     },
 };

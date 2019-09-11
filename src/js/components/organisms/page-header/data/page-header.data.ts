@@ -1,5 +1,6 @@
 export const data = {
     default: {
+        language: 'nl',
         mainNavOpen: false,
         cta: {
             icon: 'dual-extrusion',

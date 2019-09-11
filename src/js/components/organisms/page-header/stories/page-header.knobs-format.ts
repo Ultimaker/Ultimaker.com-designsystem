@@ -3,4 +3,5 @@ export default {
     cta: {},
     search: {},
     navigation: [],
+    language: '',
 };

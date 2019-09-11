@@ -12,5 +12,6 @@ export class PageFooter extends Vue implements PageFooterProps {
     @Prop({ type: Object, required: true }) localeSelector!: PageFooterProps['localeSelector'];
     @Prop({ type: Array, required: true }) legalNavigation!: PageFooterProps['legalNavigation'];
     @Prop({ type: String, required: true }) copyrightLabel!: PageFooterProps['copyrightLabel'];
+    @Prop({ type: String, required: false }) language?: PageFooterProps['language'];
     @Prop({ type: Object, required: true }) country!: object;
 }
