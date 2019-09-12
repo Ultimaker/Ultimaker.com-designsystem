@@ -21,7 +21,6 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
 
     input: string = '';
     reversed: boolean = false;
-    // selectedItem: AutoCompleteItem | null = null;
     selectedIndex: number = -1;
     viewportUtil = new ViewportUtil();
 
@@ -50,11 +49,11 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         return items;
     }
 
-    get autoCompleteId() {
+    get autoCompleteId(): string {
         return `autocomplete-${Math.floor(Math.random() * 10000)}`;
     }
 
-    get listItems() {
+    get listItems(): HTMLElement[] {
         return this.$refs.listItems as HTMLElement[];
     }
 
@@ -100,11 +99,11 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         this.input = '';
     }
 
-    filterAutoCompleteItemsTitleByString(list, string): AutoCompleteItem[] {
+    filterAutoCompleteItemsTitleByString(list: AutoCompleteItem[], string: string): AutoCompleteItem[] {
         return list.filter((autoCompleteItem) => new RegExp(escapeStringRegexp(string), 'i').test(autoCompleteItem.title));
     }
 
-    filterOutHighlightedItems(filterKeys): AutoCompleteItem[] {
+    filterOutHighlightedItems(filterKeys: any[]): AutoCompleteItem[] {
         if (!filterKeys.length) {
             return this.autoCompleteItems;
         }
@@ -120,7 +119,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         (this.$refs.autoCompleteInput as HTMLInputElement).focus();
     }
 
-    highlightItem(direction) {
+    highlightItem(direction: number): void {
         this.selectedIndex = this.selectedIndex + direction;
 
         if (this.selectedIndex > this.listItems.length - 1) {
@@ -134,7 +133,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         this.listItems[this.selectedIndex].focus();
     }
 
-    highlightString(data): string {
+    highlightString(data: string): string {
         const stringToReplace = new RegExp(escapeStringRegexp(this.input), 'i');
         const matches = data.match(stringToReplace);
 
@@ -145,12 +144,12 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         return data.replace(stringToReplace, `<span class="auto-complete__value">${matches[0]}</span>`);
     }
 
-    keyEscapeHandler() {
+    keyEscapeHandler(): void {
         this.clearSelection();
         this.reportSelectionMade(null);
     }
 
-    reportSelectionMade(item:AutoCompleteItem|null): void {
+    reportSelectionMade(item: AutoCompleteItem | null): void {
         let code: string | null = null;
 
         if (item) {
@@ -160,7 +159,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         this.$emit('auto-complete-input', code);
     }
 
-    selectItem(item): void {
+    selectItem(item: AutoCompleteItem): void {
         this.reportSelectionMade(item);
         this.clearSelection();
     }
