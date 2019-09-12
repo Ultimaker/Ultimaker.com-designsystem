@@ -3969,6 +3969,8 @@ th {
   color: #fff; }
   .article-video__button:hover {
     color: #fff; }
+  .article-video__button:visited {
+    color: #fff; }
 
 .auto-complete {
   position: relative;
