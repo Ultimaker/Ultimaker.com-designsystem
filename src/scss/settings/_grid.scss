@@ -3,8 +3,14 @@
 $gridNumberOfCols: 12;
 $gridBreakpoints: (
     "mobile": (
-        selector: "xxs",
+        selector: "xxxs",
         minWidth: 320px,
+        maxWidth: 479px,
+    ),
+    "mobile-l": (
+        selector: "xxs",
+        minWidth: 480px,
+        maxWidth: 568px,
     ),
     "mobile-xl": (
         selector: "xs",
@@ -30,8 +36,8 @@ $gridGutterSizeMobile: $buildingUnit;
 $gridGutterSize: $buildingUnit * 2;
 
 $mobileWidth: map-get(map-get($gridBreakpoints, mobile), minWidth);
-$mobileLWidth: 480px;
-$mobileLMaxWidth: $mobileLWidth - 1px;
+$mobileLWidth: map-get(map-get($gridBreakpoints, mobile-l), minWidth);
+$mobileLMaxWidth: map-get(map-get($gridBreakpoints, mobile-l), maxWidth);
 $mobileXlWidth: map-get(map-get($gridBreakpoints, mobile-xl), minWidth);
 $tabletWidth: map-get(map-get($gridBreakpoints, tablet), minWidth);
 $desktopWidth: map-get(map-get($gridBreakpoints, desktop), minWidth);
