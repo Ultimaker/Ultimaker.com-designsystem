@@ -6400,6 +6400,10 @@ main .overview:nth-child(even) {
 .header__search .search__close-button {
   border-bottom: 1px solid #eaeaea; }
 
+.header__search .search-bar__button {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea; }
+
 .header--mobile-inverted {
   color: #fff; }
   .header--mobile-inverted:before {
@@ -6707,7 +6711,7 @@ svg text {
   position: relative;
   vertical-align: top;
   width: 100%;
-  height: 46.8px; }
+  height: 47px; }
 
 .table-compare__feature--no-tooltip {
   padding: 11px 50px 11px 18px;
