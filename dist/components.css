@@ -5478,7 +5478,8 @@ dd {
     display: flex;
     padding: 0;
     border-bottom: 2px solid #eaeaea;
-    overflow-x: scroll; }
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
     .tabs__list::-webkit-scrollbar-track {
       background-color: transparent; }
     .tabs__list::-webkit-scrollbar {

@@ -4954,7 +4954,8 @@ because both families serve another purpose. Therefore the line-heights will be 
     display: flex;
     padding: 0;
     border-bottom: 2px solid #eaeaea;
-    overflow-x: scroll; }
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
     .um-components .tabs__list::-webkit-scrollbar-track {
       background-color: transparent; }
     .um-components .tabs__list::-webkit-scrollbar {
