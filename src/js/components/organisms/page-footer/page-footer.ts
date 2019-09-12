@@ -21,11 +21,11 @@ export class PageFooter extends Vue implements PageFooterProps {
 
     currentlyEditing: string | null = null;
 
-    get showCountrySelector() {
+    get showCountrySelector(): boolean {
         return !this.currentlyEditing || this.currentlyEditing === 'countrySelector';
     }
 
-    get showLanguageSelector() {
+    get showLanguageSelector(): boolean {
         // hacky solution
         // datasource will have the type, the default language, plus any other languages available
         if (Object.keys(this.localeSelector.datasource).length < 3) {
@@ -35,15 +35,15 @@ export class PageFooter extends Vue implements PageFooterProps {
         return !this.currentlyEditing || this.currentlyEditing === 'languageSelector';
     }
 
-    toggleSelector(type) {
+    toggleSelector(type: string): void {
         this.currentlyEditing = type;
     }
 
-    countryChangedHandler(code: string) {
+    countryChangedHandler(code: string): void {
         this.$emit(this.eventCountryChanged, code);
     }
 
-    languageChangedHandler(code: string) {
+    languageChangedHandler(code: string): void {
         this.$emit(this.eventLanguageChanged, code);
     }
 }
