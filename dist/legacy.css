@@ -3469,6 +3469,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #fff; }
   .um-components .article-video__button:hover {
     color: #fff; }
+  .um-components .article-video__button:visited {
+    color: #fff; }
 
 .um-components .auto-complete {
   position: relative;
