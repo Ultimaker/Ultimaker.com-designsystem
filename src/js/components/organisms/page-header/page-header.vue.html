@@ -4,14 +4,14 @@
             <icon class="home-link__logo" icon-name="logo-ultimaker"></icon>
         </router-link>
 
-        <main-navigation v-if="navigation" :navigation="navigation" :main-nav-open="mainNavOpen" v-on="$listeners"></main-navigation>
+        <main-navigation v-if="navigation" :navigation="navigation" :main-nav-open="mainNavOpen" @nav-assist-click="handleNavAssistClick" @show-compact-menu="handleShowCompactMenu"></main-navigation>
 
         <sys-nav v-if="cta && search" @open-search="openSearch"
                     :order-now-icon="cta.icon":order-now-label="cta.label" :order-now-link="cta.url"
                     :search-icon="search.icon" :search-label="search.label">
         </sys-nav>
 
-        <nav-assist class="main-nav__nav-assist" :open-state="mainNavOpen" @toggle="navAssistToggle"></nav-assist>
+        <nav-assist class="main-nav__nav-assist" :open-state="mainNavOpen" @nav-assist-click="handleNavAssistClick"></nav-assist>
 
         <transition name="search" @after-enter="handleFocus" @leave="handleFocus">
             <search-bar class="header__search"

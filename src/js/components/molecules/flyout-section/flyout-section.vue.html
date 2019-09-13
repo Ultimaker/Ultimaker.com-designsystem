@@ -6,7 +6,7 @@
         :aria-expanded="!isCompact || isExpanded">
 
         <li class="flyout__list-item"  v-for="(item, index) in items" v-if="index < maxVisible">
-            <content-link ref="firstFocusableLinks" @click.native="$emit('close')" :url="item.url" class="flyout__link link" :label="item.label"></content-link>
+            <content-link ref="firstFocusableLinks" @click.native="$emit('content-link-click')" :url="item.url" class="flyout__link link" :label="item.label"></content-link>
         </li>
 
         <li class="flyout__list-item" v-show="flyoutToggleIsVisible && ! isExpanded">
@@ -20,7 +20,7 @@
 
         <!-- items using v-show so spiders can index the entire menu -->
         <li class="flyout__list-item" v-for="(item, index) in items" v-if="index >= maxVisible" v-show="!isCompact || isExpanded">
-            <content-link ref="focusable"  @click.native="$emit('close')" :url="item.url" class="flyout__link link" :label="item.label"></content-link>
+            <content-link ref="focusable"  @click.native="$emit('content-link-click')" :url="item.url" class="flyout__link link" :label="item.label"></content-link>
         </li>
 
         <li class="flyout__list-item" v-show="flyoutToggleIsVisible && isExpanded">
@@ -34,6 +34,6 @@
     </ul>
 
     <template v-if="bottomItem">
-        <content-link ref="bottomLink" @click.native="$emit('close')" :url="bottomItem.url" class="link flyout__link--cta-mini" :label="bottomItem.label"></content-link>
+        <content-link ref="bottomLink" @click.native="$emit('content-link-click')" :url="bottomItem.url" class="link flyout__link--cta-mini" :label="bottomItem.label"></content-link>
     </template>
 </li>

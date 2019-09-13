@@ -6,7 +6,8 @@
                 :main-nav-open="mainNavOpen"
                 :active="false"
                 :itemId="'nav-' + index"
-                v-bind="mainNavigationItem" />
+                v-bind="mainNavigationItem"
+                @nav-assist-click="handleNavAssistClick"
+            />
         </ul>
     </nav>
-    

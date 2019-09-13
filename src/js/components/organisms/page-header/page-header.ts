@@ -19,7 +19,7 @@ export class PageHeader extends Vue implements PageHeaderProps {
 
     assistUsed: boolean = false;
     viewportUtil: any = new ViewportUtility();
-    offsetTopHeader: number = 0;
+    drawerHeight: number = 0;
     searchOpen: boolean = false;
     showCompactMenu: boolean = true;
     maxMobileRes: number = 1025;
@@ -28,28 +28,13 @@ export class PageHeader extends Vue implements PageHeaderProps {
         search: HTMLFormElement,
     };
 
-    get assistState() {
-        return this.mainNavOpen || this.searchOpen;
-    }
-
     get headerClasses() {
-        const scrollY = this.viewportUtil.scrollY < 0 ? 0 : this.viewportUtil.scrollY;
-        const isFixed = scrollY >= this.offsetTopHeader;
+        const isFixed = this.viewportUtil.scrollY >= this.drawerHeight;
 
         return {
             'header--absolute': !isFixed,
             'header--fixed': isFixed,
         };
-    }
-
-    navAssistToggle() {
-        if (this.searchOpen || this.mainNavOpen) {
-            this.searchOpen = false;
-            this.$emit('toggle-nav', false);
-        } else {
-            this.$emit('toggle-nav', true);
-            this.searchOpen = false;
-        }
     }
 
     openSearch() {
@@ -60,11 +45,29 @@ export class PageHeader extends Vue implements PageHeaderProps {
         this.searchOpen = false;
     }
 
+    handleShowCompactMenu(show): void {
+        if (!show) {
+            this.closeMainNav();
+        }
+    }
+
     handleFocus() {
         if (!this.$refs.search || !this.$refs.search.focusInput) {
             return;
         }
         this.$refs.search.focusInput();
+    }
+
+    handleNavAssistClick(stateChange): void {
+        if (stateChange === 'open-mobile-nav') {
+            this.closeSearch();
+            this.openMainNav();
+        }
+
+        if (stateChange === 'close-mobile-nav') {
+            this.closeSearch();
+            this.closeMainNav();
+        }
     }
 
     focusFirstSysNavItem() {
@@ -87,17 +90,24 @@ export class PageHeader extends Vue implements PageHeaderProps {
         this.showCompactMenu = this.viewportUtil.screenWidth < this.maxMobileRes;
     }
 
-    beforeMount() {
-        PublicEventService.on('size', ({ element, size }) => {
-            if (element === 'drawer') {
-                this.offsetTopHeader = size;
-            }
-        });
+    handleSizeEvent({ element, size }): void {
+        if (element === 'drawer') {
+            this.drawerHeight = size;
+        }
+    }
+
+    openMainNav(): void {
+        this.mainNavOpen = true;
+    }
+
+    closeMainNav(): void {
+        this.mainNavOpen = false;
     }
 
     mounted() {
-        this.handleResize();
+        PublicEventService.on('size', this.handleSizeEvent);
         this.viewportUtil.addResizeHandler(this.handleResize);
+        this.handleResize();
     }
 
     beforeDestroy() {

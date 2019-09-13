@@ -15,7 +15,7 @@
         :is-compact="isCompact"
         :key="key"
         :itemId="`flyout_title_${ uniqId }_${ key }`"
-        @close="$emit('close')"
-        >
+        @content-link-click="$emit('content-link-click')"
+    >
     </flyout-section>
 </ul>

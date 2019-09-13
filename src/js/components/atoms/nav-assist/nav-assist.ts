@@ -1,4 +1,4 @@
-import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 import WithRender from './nav-assist.vue.html';
 
 @WithRender
@@ -6,24 +6,27 @@ import WithRender from './nav-assist.vue.html';
     name: 'nav-assist',
 })
 export default class NavAssist extends Vue {
-    used:boolean = false;
-
     @Prop({ type: Boolean, default: false }) openState!:boolean;
 
-    toggleState() {
-        this.used = true;
-        this.$emit('toggle');
+    inInitialState: boolean = true;
+
+    get ariaExpanded(): string {
+        return this.openState.toString();
     }
 
-    close() {
+    toggleState(): any {
+        this.inInitialState = false;
+
         if (this.openState) {
-            this.$emit('toggle');
+            return this.$emit('nav-assist-click', 'close-mobile-nav');
         }
+
+        return this.$emit('nav-assist-click', 'open-mobile-nav');
     }
 
-    @Watch('openState')
-    onOpenStateChange() {
-        this.used = true;
-        this.$emit('used');
+    close(): void {
+        if (this.openState) {
+            this.$emit('nav-assist-click', 'close-mobile-nav');
+        }
     }
 }
