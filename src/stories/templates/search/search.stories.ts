@@ -18,7 +18,7 @@ const getStory = type => () => {
 
     return {
         props: {
-            footer: { default: footer.default },
+            footer: { default: footer },
             header: { default: header.default },
             searchResults: { default: knobs.searchResults },
         },
