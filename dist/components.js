@@ -5835,35 +5835,36 @@ var NavAssist = function (_Vue) {
 
         var _this = _possibleConstructorReturn(this, (NavAssist.__proto__ || Object.getPrototypeOf(NavAssist)).apply(this, arguments));
 
-        _this.used = false;
+        _this.inInitialState = true;
         return _this;
     }
 
     _createClass(NavAssist, [{
         key: "toggleState",
         value: function toggleState() {
-            this.used = true;
-            this.$emit('toggle');
+            this.inInitialState = false;
+            if (this.openState) {
+                return this.$emit('nav-assist-click', 'close-mobile-nav');
+            }
+            return this.$emit('nav-assist-click', 'open-mobile-nav');
         }
     }, {
         key: "close",
         value: function close() {
             if (this.openState) {
-                this.$emit('toggle');
+                this.$emit('nav-assist-click', 'close-mobile-nav');
             }
         }
     }, {
-        key: "onOpenStateChange",
-        value: function onOpenStateChange() {
-            this.used = true;
-            this.$emit('used');
+        key: "ariaExpanded",
+        get: function get() {
+            return this.openState.toString();
         }
     }]);
 
     return NavAssist;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), __metadata("design:type", Boolean)], NavAssist.prototype, "openState", void 0);
-__decorate([(0, _vuePropertyDecorator.Watch)('openState'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], NavAssist.prototype, "onOpenStateChange", null);
 NavAssist = __decorate([_navAssistVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'nav-assist'
 })], NavAssist);
@@ -5873,7 +5874,7 @@ exports.default = NavAssist;
 /* 170 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"nav-assist",class:{'nav-assist--close': this.openState, 'nav-assist--initial-state': !this.used},attrs:{"type":"button","aria-label":"menu","aria-expanded":this.openState.toString()},on:{"click":function($event){return _vm.toggleState()},"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.close($event)}}},[_c('svg',{attrs:{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24"}},[_c('rect',{staticClass:"nav-assist__line nav-assist__line-2",attrs:{"x":"2","y":"11","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-1",attrs:{"x":"2","y":"4.5","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-3",attrs:{"x":"2","y":"17.5","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-4",attrs:{"x":"-1.3","y":"11","transform":"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)","width":"26.6","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-5",attrs:{"x":"11","y":"-1.3","transform":"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)","width":"2","height":"26.6"}})])])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',{staticClass:"nav-assist",class:{'nav-assist--close': this.openState, 'nav-assist--initial-state': this.inInitialState},attrs:{"type":"button","aria-label":"menu","aria-expanded":_vm.ariaExpanded},on:{"click":_vm.toggleState,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.close($event)}}},[_c('svg',{attrs:{"xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 24 24"}},[_c('rect',{staticClass:"nav-assist__line nav-assist__line-2",attrs:{"x":"2","y":"11","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-1",attrs:{"x":"2","y":"4.5","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-3",attrs:{"x":"2","y":"17.5","width":"20","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-4",attrs:{"x":"-1.3","y":"11","transform":"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)","width":"26.6","height":"2"}}),_vm._v(" "),_c('rect',{staticClass:"nav-assist__line nav-assist__line-5",attrs:{"x":"11","y":"-1.3","transform":"matrix(0.7071 -0.7071 0.7071 0.7071 -4.9706 12)","width":"2","height":"26.6"}})])])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -11242,7 +11243,7 @@ exports.default = Flyout;
 /* 269 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.items && _vm.items.length > 0)?_c('ul',{directives:[{name:"show",rawName:"v-show",value:(_vm.isCompact || !_vm.viewportUtil.isResizing),expression:"isCompact || !viewportUtil.isResizing"}],staticClass:"main-nav__flyout",on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }return _vm.selectNextLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if($event.ctrlKey||$event.shiftKey||$event.altKey||$event.metaKey){ return null; }return _vm.selectNextLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"up",38,$event.key,["Up","ArrowUp"])){ return null; }return _vm.selectPrevLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }if($event.ctrlKey||$event.altKey||$event.metaKey){ return null; }return _vm.selectPrevLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"right",39,$event.key,["Right","ArrowRight"])){ return null; }if('button' in $event && $event.button !== 2){ return null; }return _vm.selectNextSection($event, true)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"left",37,$event.key,["Left","ArrowLeft"])){ return null; }if('button' in $event && $event.button !== 0){ return null; }return _vm.selectPrevSection($event, true)}],"mouseenter":function($event){$event.stopPropagation();return _vm.open($event)}}},_vm._l((_vm.items),function(item,key){return (item.items && item.items.length)?_c('flyout-section',_vm._b({key:key,ref:"items",refInFor:true,attrs:{"is-compact":_vm.isCompact,"itemId":("flyout_title_" + _vm.uniqId + "_" + key)},on:{"close":function($event){return _vm.$emit('close')}}},'flyout-section',item,false)):_vm._e()}),1):_vm._e()}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.items && _vm.items.length > 0)?_c('ul',{directives:[{name:"show",rawName:"v-show",value:(_vm.isCompact || !_vm.viewportUtil.isResizing),expression:"isCompact || !viewportUtil.isResizing"}],staticClass:"main-nav__flyout",on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }return _vm.selectNextLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if($event.ctrlKey||$event.shiftKey||$event.altKey||$event.metaKey){ return null; }return _vm.selectNextLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"up",38,$event.key,["Up","ArrowUp"])){ return null; }return _vm.selectPrevLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }if($event.ctrlKey||$event.altKey||$event.metaKey){ return null; }return _vm.selectPrevLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"right",39,$event.key,["Right","ArrowRight"])){ return null; }if('button' in $event && $event.button !== 2){ return null; }return _vm.selectNextSection($event, true)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"left",37,$event.key,["Left","ArrowLeft"])){ return null; }if('button' in $event && $event.button !== 0){ return null; }return _vm.selectPrevSection($event, true)}],"mouseenter":function($event){$event.stopPropagation();return _vm.open($event)}}},_vm._l((_vm.items),function(item,key){return (item.items && item.items.length)?_c('flyout-section',_vm._b({key:key,ref:"items",refInFor:true,attrs:{"is-compact":_vm.isCompact,"itemId":("flyout_title_" + _vm.uniqId + "_" + key)},on:{"content-link-click":function($event){return _vm.$emit('content-link-click')}}},'flyout-section',item,false)):_vm._e()}),1):_vm._e()}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -11476,7 +11477,7 @@ exports.default = Flyout;
 /* 272 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"flyout__section",class:_vm.sectionClass},[(_vm.label)?_c('strong',{staticClass:"flyout__title",attrs:{"id":_vm.itemId}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"flyout__list",attrs:{"aria-labelledby":_vm.itemId,"aria-haspopup":_vm.items.length > _vm.maxVisible,"aria-expanded":!_vm.isCompact || _vm.isExpanded}},[_vm._l((_vm.items),function(item,index){return (index < _vm.maxVisible)?_c('li',{staticClass:"flyout__list-item"},[_c('content-link',{ref:"firstFocusableLinks",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && ! _vm.isExpanded),expression:"flyoutToggleIsVisible && ! isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:_vm.flyoutToggleIsVisible && ! _vm.isExpanded ? 'focusable' : '',staticClass:"flyout__toggle",attrs:{"toggle-state":false,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1),_vm._v(" "),_vm._l((_vm.items),function(item,index){return (index >= _vm.maxVisible)?_c('li',{directives:[{name:"show",rawName:"v-show",value:(!_vm.isCompact || _vm.isExpanded),expression:"!isCompact || isExpanded"}],staticClass:"flyout__list-item"},[_c('content-link',{ref:"focusable",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && _vm.isExpanded),expression:"flyoutToggleIsVisible && isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:"flyoutToggleIsVisible && isExpanded ? 'focusable' : ''",staticClass:"flyout__toggle",attrs:{"toggle-state":true,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1)],2),_vm._v(" "),(_vm.bottomItem)?[_c('content-link',{ref:"bottomLink",staticClass:"link flyout__link--cta-mini",attrs:{"url":_vm.bottomItem.url,"label":_vm.bottomItem.label},nativeOn:{"click":function($event){return _vm.$emit('close')}}})]:_vm._e()],2)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"flyout__section",class:_vm.sectionClass},[(_vm.label)?_c('strong',{staticClass:"flyout__title",attrs:{"id":_vm.itemId}},[_vm._v(_vm._s(_vm.label))]):_vm._e(),_vm._v(" "),_c('ul',{staticClass:"flyout__list",attrs:{"aria-labelledby":_vm.itemId,"aria-haspopup":_vm.items.length > _vm.maxVisible,"aria-expanded":!_vm.isCompact || _vm.isExpanded}},[_vm._l((_vm.items),function(item,index){return (index < _vm.maxVisible)?_c('li',{staticClass:"flyout__list-item"},[_c('content-link',{ref:"firstFocusableLinks",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('content-link-click')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && ! _vm.isExpanded),expression:"flyoutToggleIsVisible && ! isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:_vm.flyoutToggleIsVisible && ! _vm.isExpanded ? 'focusable' : '',staticClass:"flyout__toggle",attrs:{"toggle-state":false,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1),_vm._v(" "),_vm._l((_vm.items),function(item,index){return (index >= _vm.maxVisible)?_c('li',{directives:[{name:"show",rawName:"v-show",value:(!_vm.isCompact || _vm.isExpanded),expression:"!isCompact || isExpanded"}],staticClass:"flyout__list-item"},[_c('content-link',{ref:"focusable",refInFor:true,staticClass:"flyout__link link",attrs:{"url":item.url,"label":item.label},nativeOn:{"click":function($event){return _vm.$emit('content-link-click')}}})],1):_vm._e()}),_vm._v(" "),_c('li',{directives:[{name:"show",rawName:"v-show",value:(_vm.flyoutToggleIsVisible && _vm.isExpanded),expression:"flyoutToggleIsVisible && isExpanded"}],staticClass:"flyout__list-item"},[_c('content-toggle',{ref:"flyoutToggleIsVisible && isExpanded ? 'focusable' : ''",staticClass:"flyout__toggle",attrs:{"toggle-state":true,"aria-hidden":"true"},on:{"toggle":_vm.toggleExpanded}})],1)],2),_vm._v(" "),(_vm.bottomItem)?[_c('content-link',{ref:"bottomLink",staticClass:"link flyout__link--cta-mini",attrs:{"url":_vm.bottomItem.url,"label":_vm.bottomItem.label},nativeOn:{"click":function($event){return _vm.$emit('content-link-click')}}})]:_vm._e()],2)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -12688,10 +12689,6 @@ var _viewport = __webpack_require__(1);
 
 var _viewport2 = _interopRequireDefault(_viewport);
 
-var _browserCapabilities = __webpack_require__(2);
-
-var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12726,17 +12723,23 @@ var MainNavigation = function (_Vue) {
     }
 
     _createClass(MainNavigation, [{
+        key: "handleNavAssistClick",
+        value: function handleNavAssistClick(stateChange) {
+            this.$emit('nav-assist-click', stateChange);
+        }
+    }, {
         key: "handleResize",
         value: function handleResize() {
             this.showCompactMenu = this.viewportUtil.isTablet;
+            if (!this.showCompactMenu) {
+                this.$emit('show-compact-menu', false);
+            }
         }
     }, {
         key: "mounted",
         value: function mounted() {
             this.viewportUtil.addResizeHandler(this.handleResize);
-            if (_browserCapabilities2.default.isBrowser) {
-                this.showCompactMenu = this.viewportUtil.isTablet;
-            }
+            this.showCompactMenu = this.viewportUtil.isTablet;
         }
     }, {
         key: "beforeDestroy",
@@ -12767,7 +12770,7 @@ exports.MainNavigation = MainNavigation;
 /* 305 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{key:"large-menu",staticClass:"main-nav",class:_vm.classList,attrs:{"aria-label":"site"}},[_c('ul',{staticClass:"main-nav__list",class:{'main-nav__list-visible': _vm.mainNavOpen && _vm.showCompactMenu},attrs:{"role":"menu"}},_vm._l((_vm.navigation),function(mainNavigationItem,index){return (_vm.navigation)?_c('main-navigation-item',_vm._b({key:index,ref:"navItem",refInFor:true,attrs:{"is-compact":_vm.showCompactMenu,"main-nav-open":_vm.mainNavOpen,"active":false,"itemId":'nav-' + index}},'main-navigation-item',mainNavigationItem,false)):_vm._e()}),1)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{key:"large-menu",staticClass:"main-nav",class:_vm.classList,attrs:{"aria-label":"site"}},[_c('ul',{staticClass:"main-nav__list",class:{'main-nav__list-visible': _vm.mainNavOpen && _vm.showCompactMenu},attrs:{"role":"menu"}},_vm._l((_vm.navigation),function(mainNavigationItem,index){return (_vm.navigation)?_c('main-navigation-item',_vm._b({key:index,ref:"navItem",refInFor:true,attrs:{"is-compact":_vm.showCompactMenu,"main-nav-open":_vm.mainNavOpen,"active":false,"itemId":'nav-' + index},on:{"nav-assist-click":_vm.handleNavAssistClick}},'main-navigation-item',mainNavigationItem,false)):_vm._e()}),1)])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -12898,6 +12901,12 @@ var MainNavigationItem = function (_Vue) {
             return _function;
         }()
     }, {
+        key: "closeMobileNav",
+        value: function closeMobileNav() {
+            this.$emit('nav-assist-click', 'close-mobile-nav');
+            this.closeFlyout();
+        }
+    }, {
         key: "focus",
         value: function focus() {
             var navLink = this.$refs.parent;
@@ -12906,7 +12915,7 @@ var MainNavigationItem = function (_Vue) {
             }
         }
     }, {
-        key: "showFlyout",
+        key: "openFlyout",
         value: function () {
             var _ref2 = _asyncToGenerator(regeneratorRuntime.mark(function _callee2() {
                 return regeneratorRuntime.wrap(function _callee2$(_context2) {
@@ -12937,22 +12946,25 @@ var MainNavigationItem = function (_Vue) {
                 }, _callee2, this);
             }));
 
-            function showFlyout() {
+            function openFlyout() {
                 return _ref2.apply(this, arguments);
             }
 
-            return showFlyout;
+            return openFlyout;
         }()
     }, {
-        key: "hideFlyout",
-        value: function hideFlyout() {
-            this.$emit('closeMainNav');
+        key: "closeFlyout",
+        value: function closeFlyout() {
             this.flyoutIsOpen = false;
         }
     }, {
         key: "toggleFlyout",
         value: function toggleFlyout() {
-            this.flyoutIsOpen = !this.flyoutIsOpen;
+            if (this.flyoutIsOpen) {
+                this.closeFlyout();
+                return;
+            }
+            this.openFlyout().then();
         }
     }, {
         key: "delayHideFlyout",
@@ -12963,7 +12975,7 @@ var MainNavigationItem = function (_Vue) {
                 if (_this2.hideTimeout === null) {
                     _this2.hideTimeout = setTimeout(function () {
                         _this2.hideTimeout = null;
-                        _this2.hideFlyout();
+                        _this2.closeFlyout();
                         resolve();
                     }, 100);
                 }
@@ -12979,7 +12991,7 @@ var MainNavigationItem = function (_Vue) {
                         switch (_context3.prev = _context3.next) {
                             case 0:
                                 _context3.next = 2;
-                                return this.showFlyout();
+                                return this.openFlyout();
 
                             case 2:
                                 _context3.next = 4;
@@ -13013,13 +13025,13 @@ var MainNavigationItem = function (_Vue) {
     }, {
         key: "selectNextNavItem",
         value: function selectNextNavItem() {
-            this.hideFlyout();
+            this.closeFlyout();
             this.$emit('tab');
         }
     }, {
         key: "selectPrevNavItem",
         value: function selectPrevNavItem() {
-            this.hideFlyout();
+            this.closeFlyout();
             this.$emit('shifttab');
         }
     }, {
@@ -13050,7 +13062,7 @@ var MainNavigationItem = function (_Vue) {
                                 return this.$nextTick();
 
                             case 6:
-                                this.hideFlyout();
+                                this.closeFlyout();
 
                             case 7:
                             case "end":
@@ -13097,7 +13109,7 @@ exports.MainNavigationItem = MainNavigationItem;
 /* 308 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"main-nav__item",class:{ 'main-nav__item--active': _vm.active },attrs:{"role":"menuitem"},on:{"mouseleave":_vm.delayHideFlyout,"mouseenter":_vm.showFlyout}},[_c('div',{on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }$event.preventDefault();return _vm.selectFlyoutFirstLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }if($event.ctrlKey||$event.altKey||$event.metaKey){ return null; }return _vm.hideFlyout($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }$event.preventDefault();return _vm.hideFlyout($event)}]}},[_c('base-link',{ref:"parent",staticClass:"main-nav__link",attrs:{"url":_vm.url,"aria-haspopup":"true","aria-controls":_vm.itemId,"aria-current":_vm.isActive,"label":_vm.label,"aria-expanded":!_vm.isCompact && _vm.flyoutIsOpen},on:{"focus":_vm.showFlyout},nativeOn:{"click":function($event){return _vm.hideFlyout($event)}}})],1),_vm._v(" "),_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(_vm.toggleIsVisible),expression:"toggleIsVisible"}],staticClass:"icon-button--small main-nav__toggle disable-focus",attrs:{"icon-name":_vm.angleDirection,"tabindex":"-1"},on:{"click":_vm.toggleFlyout}}),_vm._v(" "),(_vm.categories)?_c('flyout',{ref:"flyout",staticClass:"flyout--large",class:{ 'flyout--is-open': _vm.flyoutIsOpen },attrs:{"id":_vm.itemId,"items":_vm.categories,"is-compact":_vm.isCompact},on:{"open":_vm.showFlyout,"close":_vm.hideFlyout,"main":_vm.selectParent},nativeOn:{"keydown":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.selectParent($event)}}}):_vm._e()],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"main-nav__item",class:{ 'main-nav__item--active': _vm.active },attrs:{"role":"menuitem"},on:{"mouseleave":_vm.delayHideFlyout,"mouseenter":_vm.openFlyout}},[_c('div',{on:{"keydown":[function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"down",40,$event.key,["Down","ArrowDown"])){ return null; }$event.preventDefault();return _vm.selectFlyoutFirstLink($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"tab",9,$event.key,"Tab")){ return null; }if(!$event.shiftKey){ return null; }if($event.ctrlKey||$event.altKey||$event.metaKey){ return null; }return _vm.closeMobileNav($event)},function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }$event.preventDefault();return _vm.closeMobileNav($event)}]}},[_c('base-link',{ref:"parent",staticClass:"main-nav__link",attrs:{"url":_vm.url,"aria-haspopup":"true","aria-controls":_vm.itemId,"aria-current":_vm.isActive,"label":_vm.label,"aria-expanded":!_vm.isCompact && _vm.flyoutIsOpen},on:{"focus":_vm.openFlyout},nativeOn:{"click":function($event){return _vm.closeMobileNav($event)}}})],1),_vm._v(" "),_c('icon-button',{directives:[{name:"show",rawName:"v-show",value:(_vm.toggleIsVisible),expression:"toggleIsVisible"}],staticClass:"icon-button--small main-nav__toggle disable-focus",attrs:{"icon-name":_vm.angleDirection,"tabindex":"-1"},on:{"click":_vm.toggleFlyout}}),_vm._v(" "),(_vm.categories)?_c('flyout',{ref:"flyout",staticClass:"flyout--large",class:{ 'flyout--is-open': _vm.flyoutIsOpen },attrs:{"id":_vm.itemId,"items":_vm.categories,"is-compact":_vm.isCompact},on:{"content-link-click":_vm.closeMobileNav,"open":_vm.openFlyout,"close":_vm.closeFlyout,"main":_vm.selectParent},nativeOn:{"keydown":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.selectParent($event)}}}):_vm._e()],1)}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
@@ -17768,7 +17780,7 @@ var PageHeader = function (_Vue) {
 
         _this.assistUsed = false;
         _this.viewportUtil = new _viewport2.default();
-        _this.offsetTopHeader = 0;
+        _this.drawerHeight = 0;
         _this.searchOpen = false;
         _this.showCompactMenu = true;
         _this.maxMobileRes = 1025;
@@ -17777,17 +17789,6 @@ var PageHeader = function (_Vue) {
     }
 
     _createClass(PageHeader, [{
-        key: "navAssistToggle",
-        value: function navAssistToggle() {
-            if (this.searchOpen || this.mainNavOpen) {
-                this.searchOpen = false;
-                this.$emit('toggle-nav', false);
-            } else {
-                this.$emit('toggle-nav', true);
-                this.searchOpen = false;
-            }
-        }
-    }, {
         key: "openSearch",
         value: function openSearch() {
             this.searchOpen = true;
@@ -17798,12 +17799,31 @@ var PageHeader = function (_Vue) {
             this.searchOpen = false;
         }
     }, {
+        key: "handleShowCompactMenu",
+        value: function handleShowCompactMenu(show) {
+            if (!show) {
+                this.closeMainNav();
+            }
+        }
+    }, {
         key: "handleFocus",
         value: function handleFocus() {
             if (!this.$refs.search || !this.$refs.search.focusInput) {
                 return;
             }
             this.$refs.search.focusInput();
+        }
+    }, {
+        key: "handleNavAssistClick",
+        value: function handleNavAssistClick(stateChange) {
+            if (stateChange === 'open-mobile-nav') {
+                this.closeSearch();
+                this.openMainNav();
+            }
+            if (stateChange === 'close-mobile-nav') {
+                this.closeSearch();
+                this.closeMainNav();
+            }
         }
     }, {
         key: "focusFirstSysNavItem",
@@ -17827,24 +17847,31 @@ var PageHeader = function (_Vue) {
             this.showCompactMenu = this.viewportUtil.screenWidth < this.maxMobileRes;
         }
     }, {
-        key: "beforeMount",
-        value: function beforeMount() {
-            var _this2 = this;
+        key: "handleSizeEvent",
+        value: function handleSizeEvent(_ref) {
+            var element = _ref.element,
+                size = _ref.size;
 
-            _publicEventService2.default.on('size', function (_ref) {
-                var element = _ref.element,
-                    size = _ref.size;
-
-                if (element === 'drawer') {
-                    _this2.offsetTopHeader = size;
-                }
-            });
+            if (element === 'drawer') {
+                this.drawerHeight = size;
+            }
+        }
+    }, {
+        key: "openMainNav",
+        value: function openMainNav() {
+            this.mainNavOpen = true;
+        }
+    }, {
+        key: "closeMainNav",
+        value: function closeMainNav() {
+            this.mainNavOpen = false;
         }
     }, {
         key: "mounted",
         value: function mounted() {
-            this.handleResize();
+            _publicEventService2.default.on('size', this.handleSizeEvent);
             this.viewportUtil.addResizeHandler(this.handleResize);
+            this.handleResize();
         }
     }, {
         key: "beforeDestroy",
@@ -17852,15 +17879,9 @@ var PageHeader = function (_Vue) {
             this.viewportUtil.removeResizeHandler(this.handleResize);
         }
     }, {
-        key: "assistState",
-        get: function get() {
-            return this.mainNavOpen || this.searchOpen;
-        }
-    }, {
         key: "headerClasses",
         get: function get() {
-            var scrollY = this.viewportUtil.scrollY < 0 ? 0 : this.viewportUtil.scrollY;
-            var isFixed = scrollY >= this.offsetTopHeader;
+            var isFixed = this.viewportUtil.scrollY >= this.drawerHeight;
             return {
                 'header--absolute': !isFixed,
                 'header--fixed': isFixed
@@ -17884,7 +17905,7 @@ exports.PageHeader = PageHeader;
 /* 423 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{directives:[{name:"size-emitter",rawName:"v-size-emitter",value:('header'),expression:"'header'"}],staticClass:"header",class:_vm.headerClasses,attrs:{"lang":_vm.language,"role":"banner"}},[_c('div',{staticClass:"header__top",class:{'header--mobile-inverted': _vm.mainNavOpen}},[_c('router-link',{staticClass:"home-link",attrs:{"to":"/","aria-label":"Ultimaker homepage"}},[_c('icon',{staticClass:"home-link__logo",attrs:{"icon-name":"logo-ultimaker"}})],1),_vm._v(" "),(_vm.navigation)?_c('main-navigation',_vm._g({attrs:{"navigation":_vm.navigation,"main-nav-open":_vm.mainNavOpen}},_vm.$listeners)):_vm._e(),_vm._v(" "),(_vm.cta && _vm.search)?_c('sys-nav',{attrs:{"order-now-icon":_vm.cta.icon,"order-now-label":_vm.cta.label,"order-now-link":_vm.cta.url,"search-icon":_vm.search.icon,"search-label":_vm.search.label},on:{"open-search":_vm.openSearch}}):_vm._e(),_vm._v(" "),_c('nav-assist',{staticClass:"main-nav__nav-assist",attrs:{"open-state":_vm.mainNavOpen},on:{"toggle":_vm.navAssistToggle}}),_vm._v(" "),_c('transition',{attrs:{"name":"search"},on:{"after-enter":_vm.handleFocus,"leave":_vm.handleFocus}},[(_vm.searchOpen)?_c('search-bar',{ref:"search",staticClass:"header__search",attrs:{"label":_vm.search.label,"placeholder":_vm.search.placeholder,"open-state":_vm.searchOpen},on:{"close":_vm.closeSearch}}):_vm._e()],1)],1)])}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{directives:[{name:"size-emitter",rawName:"v-size-emitter",value:('header'),expression:"'header'"}],staticClass:"header",class:_vm.headerClasses,attrs:{"lang":_vm.language,"role":"banner"}},[_c('div',{staticClass:"header__top",class:{'header--mobile-inverted': _vm.mainNavOpen}},[_c('router-link',{staticClass:"home-link",attrs:{"to":"/","aria-label":"Ultimaker homepage"}},[_c('icon',{staticClass:"home-link__logo",attrs:{"icon-name":"logo-ultimaker"}})],1),_vm._v(" "),(_vm.navigation)?_c('main-navigation',{attrs:{"navigation":_vm.navigation,"main-nav-open":_vm.mainNavOpen},on:{"nav-assist-click":_vm.handleNavAssistClick,"show-compact-menu":_vm.handleShowCompactMenu}}):_vm._e(),_vm._v(" "),(_vm.cta && _vm.search)?_c('sys-nav',{attrs:{"order-now-icon":_vm.cta.icon,"order-now-label":_vm.cta.label,"order-now-link":_vm.cta.url,"search-icon":_vm.search.icon,"search-label":_vm.search.label},on:{"open-search":_vm.openSearch}}):_vm._e(),_vm._v(" "),_c('nav-assist',{staticClass:"main-nav__nav-assist",attrs:{"open-state":_vm.mainNavOpen},on:{"nav-assist-click":_vm.handleNavAssistClick}}),_vm._v(" "),_c('transition',{attrs:{"name":"search"},on:{"after-enter":_vm.handleFocus,"leave":_vm.handleFocus}},[(_vm.searchOpen)?_c('search-bar',{ref:"search",staticClass:"header__search",attrs:{"label":_vm.search.label,"placeholder":_vm.search.placeholder,"open-state":_vm.searchOpen},on:{"close":_vm.closeSearch}}):_vm._e()],1)],1)])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
