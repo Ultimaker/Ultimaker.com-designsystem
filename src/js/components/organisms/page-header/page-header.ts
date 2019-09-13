@@ -45,7 +45,7 @@ export class PageHeader extends Vue implements PageHeaderProps {
         this.searchOpen = false;
     }
 
-    handleShowCompactMenu(show): void {
+    handleOpenCompactMenu(show): void {
         if (!show) {
             this.closeMainNav();
         }
