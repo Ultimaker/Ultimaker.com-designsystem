@@ -3,7 +3,6 @@ import { MainNavigationProps } from './main-navigation.models';
 import WithRender from './main-navigation.vue.html';
 
 import ViewportUtility from 'utils/viewport';
-import BrowserCapabilities from 'utils/browser-capabilities';
 
 @WithRender
 @Component({
@@ -17,7 +16,7 @@ export class MainNavigation extends Vue implements MainNavigationProps {
     viewportUtil: any = new ViewportUtility();
     showCompactMenu: any = true;
 
-    get classList() {
+    get classList(): object {
         return {
             'main-nav--small': this.showCompactMenu,
             'main-nav--large': !this.showCompactMenu,
@@ -25,19 +24,24 @@ export class MainNavigation extends Vue implements MainNavigationProps {
         };
     }
 
-    handleResize() {
-        this.showCompactMenu = this.viewportUtil.isTablet;
+    handleNavAssistClick(stateChange): void {
+        this.$emit('nav-assist-click', stateChange);
     }
 
-    mounted() {
-        this.viewportUtil.addResizeHandler(this.handleResize);
+    handleResize(): void {
+        this.showCompactMenu = this.viewportUtil.isTablet;
 
-        if (BrowserCapabilities.isBrowser) {
-            this.showCompactMenu = this.viewportUtil.isTablet;
+        if (!this.showCompactMenu) {
+            this.$emit('show-compact-menu', false);
         }
     }
 
-    beforeDestroy() {
+    mounted(): void {
+        this.viewportUtil.addResizeHandler(this.handleResize);
+        this.showCompactMenu = this.viewportUtil.isTablet;
+    }
+
+    beforeDestroy(): void {
         this.viewportUtil.removeResizeHandler(this.handleResize);
     }
 }

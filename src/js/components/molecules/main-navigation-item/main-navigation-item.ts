@@ -30,10 +30,15 @@ export class MainNavigationItem extends Vue implements MainNavigationItemProps {
     }
 
     @Watch('flyoutIsOpen')
-    async function(newVal) {
+    async function(newVal): Promise<void> {
         await this.$nextTick();
         await new Promise(resolve => setTimeout(resolve, 10));
         this.angleDirection = newVal ? 'angle-up' : 'angle-down';
+    }
+
+    closeMobileNav(): void {
+        this.$emit('nav-assist-click', 'close-mobile-nav');
+        this.closeFlyout();
     }
 
     get toggleIsVisible(): boolean {
@@ -47,7 +52,7 @@ export class MainNavigationItem extends Vue implements MainNavigationItemProps {
         }
     }
 
-    async showFlyout(): Promise<any> {
+    async openFlyout(): Promise<any> {
         await this.$nextTick();
         await new Promise(resolve => setTimeout(resolve, 10));
 
@@ -59,13 +64,17 @@ export class MainNavigationItem extends Vue implements MainNavigationItemProps {
         this.flyoutIsOpen = true;
     }
 
-    hideFlyout(): void {
-        this.$emit('closeMainNav');
+    closeFlyout(): void {
         this.flyoutIsOpen = false;
     }
 
     toggleFlyout(): void {
-        this.flyoutIsOpen = !this.flyoutIsOpen;
+        if (this.flyoutIsOpen) {
+            this.closeFlyout();
+            return;
+        }
+
+        this.openFlyout().then();
     }
 
     delayHideFlyout(): Promise<any> {
@@ -73,7 +82,7 @@ export class MainNavigationItem extends Vue implements MainNavigationItemProps {
             if (this.hideTimeout === null) {
                 this.hideTimeout = setTimeout(() => {
                     this.hideTimeout = null;
-                    this.hideFlyout();
+                    this.closeFlyout();
                     resolve();
                 }, 100);
             }
@@ -81,7 +90,7 @@ export class MainNavigationItem extends Vue implements MainNavigationItemProps {
     }
 
     async selectFlyoutFirstLink(): Promise<any> {
-        await this.showFlyout();
+        await this.openFlyout();
         await this.$nextTick();
 
         const refs: any = this.$refs;
@@ -91,19 +100,22 @@ export class MainNavigationItem extends Vue implements MainNavigationItemProps {
     }
 
     selectNextNavItem(): void {
-        this.hideFlyout();
+        this.closeFlyout();
         this.$emit('tab');
     }
 
     selectPrevNavItem(): void {
-        this.hideFlyout();
+        this.closeFlyout();
         this.$emit('shifttab');
     }
 
     async selectParent(): Promise<any> {
-        if (this.isCompact) { return; }
+        if (this.isCompact) {
+            return;
+        }
 
         const { parent } = this.$refs;
+
         // @ts-ignore
         if (parent.$el) {
             // @ts-ignore
@@ -115,7 +127,6 @@ export class MainNavigationItem extends Vue implements MainNavigationItemProps {
         }
 
         await this.$nextTick();
-
-        this.hideFlyout();
+        this.closeFlyout();
     }
 }
