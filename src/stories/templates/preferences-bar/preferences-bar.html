@@ -1,0 +1,58 @@
+<!-- @format -->
+<section class="story__template">
+    <section class="drawer" v-size-emitter="'drawer'">
+        <article role="dialog" lang="en" class="preferences-bar">
+            <a aria-label="close" role="button" tabindex="0" class="icon-button icon-button preferences-bar__button button--close"><!----></a>
+            <div class="container">
+                <div class="preferences-bar__content notification__content--centered">
+                    <form>
+                        <h3>Your preferences</h3>
+                        <div><p>Ultimaker.com wants to deliver the best experience to you. We detected your browser preferences and want to place tracking cookies. By clicking 'I agree' you agree to the&nbsp;<a href="/legal/terms-of-use">terms of use</a>&nbsp;and settings below. Ultimaker processes your personal data in accordance with the&nbsp;<a href="/legal/privacy-and-cookie-policy">Privacy and Cookie Policy</a>.</p></div>
+                        <div class="settings">
+                            <div class="settings-selector settings-selector--country">
+                                <div class="form-group">
+                                    <label for="country-selector-01" class="settings-selector__label">Your country</label>
+                                    <div class="selector-group">
+                                        <a aria-label="Netherlands" role="button" tabindex="0" class="icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed"><span class="icon-button__label">Netherlands</span></a>
+                                    </div>
+                                    <div aria-hidden="!countryPanelOpen" class="selector-group" style="display: none;">
+                                        <div class="country-selector">
+                                            <div role="combobox" aria-haspopup="listbox" aria-owns="autocomplete5448__dropdown" aria-expanded="true" class="auto-complete country-selector__auto-complete auto-complete--small" title-field="name" value-field="code">
+                                                <input type="text" autofocus="autofocus" autocomplete="off" aria-autocomplete="list" id="autocomplete5448" aria-controls="autocomplete5448__dropdown" placeholder="Type country code or name" class="auto-complete__input">
+                                                <div id="autocomplete5448__dropdown" role="listbox" class="auto-complete__dropdown">
+                                                    <h4 id="storedLabel" class="auto-complete__label">Selected</h4>
+                                                    <ul aria-labelledby="storedLabel" class="auto-complete__list">
+                                                        <li role="option" tabindex="0" class="auto-complete__list-item">
+                                                            Netherlands
+                                                        </li>
+                                                    </ul> <!---->
+                                                </div>
+                                            </div>
+                                            <a aria-label="Cancel" role="button" tabindex="0" class="icon-button country-selector__icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed"><!----></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings-selector settings-selector--cookies">
+                                <div class="form-group"><label class="settings-selector__label">
+                                    Your privacy and cookie settings
+                                </label>
+                                    <div class="selector-group">
+                                        <a aria-label="Change your privacy settings, currently: Edit" role="button" tabindex="0" class="icon-button icon-button settings-selector__edit-button icon-button--small icon-button--reversed">
+                                        <span class="icon-button__label">Edit</span></a>
+                                    </div> <!---->
+                                </div> <!---->
+                            </div>
+                        </div>
+                        <button type="submit" class="button">I agree, continue</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </section>
+    <page-header v-bind="header" @toggle-nav="header.mainNavOpen = !header.mainNavOpen"></page-header>
+    <main class="container">
+        <search-results v-bind="searchResults"/>
+    </main>
+    <page-footer v-bind="footer"></page-footer>
+</section>
