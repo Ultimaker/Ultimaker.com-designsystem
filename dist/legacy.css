@@ -256,12 +256,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list, .um-components dl, .um-components dt, .um-components dd {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .social-nav__list, .um-components .pager__list, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list, .um-components dl, .um-components dt, .um-components dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .social-nav__list, .um-components .pager__list, .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list {
+.um-components .caption-list__list-item, .um-components .link-list, .um-components .flyout__list, .um-components .tabbable-dl, .um-components .price-table__list, .um-components .tag-list__list, .um-components .flyout, .um-components .main-nav__flyout, .um-components .social-nav__list, .um-components .pager__list, .um-components .main-nav__list, .um-components .tab-table-row__linklist, .um-components .wizard-step-download-list__items, .um-components .tabs__list, .um-components .sys-nav__list, .um-components .sys-nav__item, .um-components .hero--product .hero__linklist, .um-components .subnavigation__list {
   list-style: none; }
 
 .um-components .list__item, .um-components .link-list__item, .um-components .flyout__list-item, .um-components .tag-list__item, .um-components .flyout__section, .um-components .social-nav__item, .um-components .pager__page, .um-components .pager__active-page, .um-components .content-manageble ul li, .um-components .content-manageble ol li {
@@ -291,10 +291,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   border: 0; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
-.um-components button:focus,
-.um-components .button:focus,
-.um-components input[type="button"]:focus,
-.um-components input[type="submit"]:focus,
 .um-components .nav-assist:focus:not(:hover),
 .um-components .nav-assist--close:focus:not(:hover),
 .um-components a:not(.hit-area):focus:not(:hover),
@@ -304,18 +300,31 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .price-table--tabs .tablist__section .tablist__item:focus:not(:active),
 .um-components .tablist__section .price-table--tabs .tablist__item:focus:not(:active),
 .um-components .tablist__section .tablist__item:focus:not(:hover),
-.um-components .auto-complete__list-item:focus:not(:hover),
-.um-components .auto-complete__list-item:focus:not(:active),
 .um-components .business-card:focus,
 .um-components .business-card:hover:focus,
 .um-components .business-card:focus:active {
   color: #fff;
   background-color: #3f86f2; }
 
-.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.subnavigation__link:hover a:focus:not(:hover), .um-components .link--small.subnavigation__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .auto-complete__label a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components .subnavigation__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.subnavigation__link:hover a:focus:not(:active), .um-components .link--small.subnavigation__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .auto-complete__label a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .subnavigation__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .subnavigation__link:focus:not(:hover), .um-components .subnavigation__link:focus:not(:active) {
+.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.subnavigation__link:hover a:focus:not(:hover), .um-components .link--small.subnavigation__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .settings-selector__label a:focus:not(:hover), .um-components .subnavigation__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.subnavigation__link:hover a:focus:not(:active), .um-components .link--small.subnavigation__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .settings-selector__label a:focus:not(:active), .um-components .subnavigation__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .subnavigation__link:focus:not(:hover), .um-components .subnavigation__link:focus:not(:active) {
   outline: 2px solid #3f86f2; }
 
 /** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
 .um-components button,
 .um-components .button,
 .um-components input[type="button"],
@@ -348,6 +357,12 @@ because both families serve another purpose. Therefore the line-heights will be 
     color: #fff;
     background-color: #3f86f2;
     outline: 0; }
+  .um-components button:focus,
+  .um-components .button:focus,
+  .um-components input[type="button"]:focus,
+  .um-components input[type="submit"]:focus {
+    color: #fff;
+    background-color: #3f86f2; }
   @media (min-width: 768px) {
     .um-components button,
     .um-components .button,
@@ -418,6 +433,18 @@ because both families serve another purpose. Therefore the line-heights will be 
   position: absolute;
   top: 0;
   right: 0; }
+
+.um-components .button--small {
+  padding: 11px 6px;
+  font-size: 14px;
+  line-height: 1; }
+
+.um-components .button--transparent {
+  background-color: transparent;
+  color: #000; }
+  .um-components .button--transparent:hover {
+    background-color: #eaeaea;
+    color: #000; }
 
 /** @format */
 /** @format */
@@ -513,14 +540,14 @@ because both families serve another purpose. Therefore the line-heights will be 
   text-align: center;
   color: #7f7f7f; }
 
-.um-components small, .um-components .caption-list__headline, .um-components .caption-list__list-item, .um-components .link.link--small, .um-components .link--small.toggle, .um-components .link--small.subnavigation__link:hover, .um-components .link--small.subnavigation__link.exact-active, .um-components .price-table__tagline, .um-components .price-table__disclaimer, .um-components .tag, .um-components .tablist__section .tablist, .um-components .tablist__section .tablist__headline, .um-components .auto-complete__label, .um-components .settings-selector__label, .um-components .subnavigation__label {
+.um-components small, .um-components .caption-list__headline, .um-components .caption-list__list-item, .um-components .link.link--small, .um-components .link--small.toggle, .um-components .link--small.subnavigation__link:hover, .um-components .link--small.subnavigation__link.exact-active, .um-components .price-table__tagline, .um-components .price-table__disclaimer, .um-components .tag, .um-components .tablist__section .tablist, .um-components .tablist__section .tablist__headline, .um-components .settings-selector__label, .um-components .subnavigation__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
   font-weight: 500;
   color: inherit; }
   @media (min-width: 768px) {
-    .um-components small, .um-components .caption-list__headline, .um-components .caption-list__list-item, .um-components .link.link--small, .um-components .link--small.toggle, .um-components .link--small.subnavigation__link:hover, .um-components .link--small.subnavigation__link.exact-active, .um-components .price-table__tagline, .um-components .price-table__disclaimer, .um-components .tag, .um-components .tablist__section .tablist, .um-components .tablist__section .tablist__headline, .um-components .auto-complete__label, .um-components .settings-selector__label, .um-components .subnavigation__label {
+    .um-components small, .um-components .caption-list__headline, .um-components .caption-list__list-item, .um-components .link.link--small, .um-components .link--small.toggle, .um-components .link--small.subnavigation__link:hover, .um-components .link--small.subnavigation__link.exact-active, .um-components .price-table__tagline, .um-components .price-table__disclaimer, .um-components .tag, .um-components .tablist__section .tablist, .um-components .tablist__section .tablist__headline, .um-components .settings-selector__label, .um-components .subnavigation__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -719,7 +746,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
   .um-components a:hover {
     color: #669ef5; }
-  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components small a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .link--small.toggle a, .um-components .link--small.subnavigation__link:hover a, .um-components .link--small.subnavigation__link.exact-active a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tag a, .um-components .tablist__section .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .auto-complete__label a, .um-components .settings-selector__label a, .um-components .subnavigation__label a, .um-components .content--rich li a {
+  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components small a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .link--small.toggle a, .um-components .link--small.subnavigation__link:hover a, .um-components .link--small.subnavigation__link.exact-active a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tag a, .um-components .tablist__section .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .settings-selector__label a, .um-components .subnavigation__label a, .um-components .content--rich li a {
     font-weight: normal; }
 
 .um-components strong, .um-components .tablist__section .tablist__item {
@@ -1517,6 +1544,262 @@ because both families serve another purpose. Therefore the line-heights will be 
  *  Generate columns for each of the defined breakpoints
  */
 @media (min-width: 320px) {
+  .um-components [class*="flexgrid__cell--xxxs"] {
+    flex-basis: auto;
+    max-width: 100%;
+    flex-grow: 1; }
+  .um-components .flexgrid__cell--xxxs-1 {
+    flex-basis: 8.33333%;
+    max-width: 8.33333%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-1 {
+      flex-basis: calc(8.33333% - 2px);
+      max-width: calc(8.33333% - 2px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-1 {
+        flex-basis: calc(8.33333% - 4px);
+        max-width: calc(8.33333% - 4px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-1 {
+      flex-basis: calc(8.33333% - 12px);
+      max-width: calc(8.33333% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-1 {
+        flex-basis: calc(8.33333% - 24px);
+        max-width: calc(8.33333% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-2 {
+    flex-basis: 16.66667%;
+    max-width: 16.66667%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-2 {
+      flex-basis: calc(16.66667% - 4px);
+      max-width: calc(16.66667% - 4px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-2 {
+        flex-basis: calc(16.66667% - 8px);
+        max-width: calc(16.66667% - 8px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-2 {
+      flex-basis: calc(16.66667% - 12px);
+      max-width: calc(16.66667% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-2 {
+        flex-basis: calc(16.66667% - 24px);
+        max-width: calc(16.66667% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-3 {
+    flex-basis: 25%;
+    max-width: 25%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-3 {
+      flex-basis: calc(25% - 6px);
+      max-width: calc(25% - 6px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-3 {
+        flex-basis: calc(25% - 12px);
+        max-width: calc(25% - 12px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-3 {
+      flex-basis: calc(25% - 12px);
+      max-width: calc(25% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-3 {
+        flex-basis: calc(25% - 24px);
+        max-width: calc(25% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-4 {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-4 {
+      flex-basis: calc(33.33333% - 8px);
+      max-width: calc(33.33333% - 8px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-4 {
+        flex-basis: calc(33.33333% - 16px);
+        max-width: calc(33.33333% - 16px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-4 {
+      flex-basis: calc(33.33333% - 12px);
+      max-width: calc(33.33333% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-4 {
+        flex-basis: calc(33.33333% - 24px);
+        max-width: calc(33.33333% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-5 {
+      flex-basis: calc(41.66667% - 10px);
+      max-width: calc(41.66667% - 10px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-5 {
+        flex-basis: calc(41.66667% - 20px);
+        max-width: calc(41.66667% - 20px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-5 {
+      flex-basis: calc(41.66667% - 12px);
+      max-width: calc(41.66667% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-5 {
+        flex-basis: calc(41.66667% - 24px);
+        max-width: calc(41.66667% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-6 {
+    flex-basis: 50%;
+    max-width: 50%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-6 {
+      flex-basis: calc(50% - 12px);
+      max-width: calc(50% - 12px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-6 {
+        flex-basis: calc(50% - 24px);
+        max-width: calc(50% - 24px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-6 {
+      flex-basis: calc(50% - 12px);
+      max-width: calc(50% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-6 {
+        flex-basis: calc(50% - 24px);
+        max-width: calc(50% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-7 {
+      flex-basis: calc(58.33333% - 14px);
+      max-width: calc(58.33333% - 14px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-7 {
+        flex-basis: calc(58.33333% - 28px);
+        max-width: calc(58.33333% - 28px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-7 {
+      flex-basis: calc(58.33333% - 12px);
+      max-width: calc(58.33333% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-7 {
+        flex-basis: calc(58.33333% - 24px);
+        max-width: calc(58.33333% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-8 {
+    flex-basis: 66.66667%;
+    max-width: 66.66667%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-8 {
+      flex-basis: calc(66.66667% - 16px);
+      max-width: calc(66.66667% - 16px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-8 {
+        flex-basis: calc(66.66667% - 32px);
+        max-width: calc(66.66667% - 32px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-8 {
+      flex-basis: calc(66.66667% - 12px);
+      max-width: calc(66.66667% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-8 {
+        flex-basis: calc(66.66667% - 24px);
+        max-width: calc(66.66667% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-9 {
+    flex-basis: 75%;
+    max-width: 75%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-9 {
+      flex-basis: calc(75% - 18px);
+      max-width: calc(75% - 18px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-9 {
+        flex-basis: calc(75% - 36px);
+        max-width: calc(75% - 36px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-9 {
+      flex-basis: calc(75% - 12px);
+      max-width: calc(75% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-9 {
+        flex-basis: calc(75% - 24px);
+        max-width: calc(75% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-10 {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-10 {
+      flex-basis: calc(83.33333% - 20px);
+      max-width: calc(83.33333% - 20px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-10 {
+        flex-basis: calc(83.33333% - 40px);
+        max-width: calc(83.33333% - 40px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-10 {
+      flex-basis: calc(83.33333% - 12px);
+      max-width: calc(83.33333% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-10 {
+        flex-basis: calc(83.33333% - 24px);
+        max-width: calc(83.33333% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-11 {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-11 {
+      flex-basis: calc(91.66667% - 22px);
+      max-width: calc(91.66667% - 22px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-11 {
+        flex-basis: calc(91.66667% - 44px);
+        max-width: calc(91.66667% - 44px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-11 {
+      flex-basis: calc(91.66667% - 12px);
+      max-width: calc(91.66667% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-11 {
+        flex-basis: calc(91.66667% - 24px);
+        max-width: calc(91.66667% - 24px); } }
+
+@media (min-width: 320px) {
+  .um-components .flexgrid__cell--xxxs-12 {
+    flex-basis: 100%;
+    max-width: 100%; }
+    .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-12 {
+      flex-basis: calc(100% - 24px);
+      max-width: calc(100% - 24px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .um-components .flexgrid--justify-space-between .flexgrid__cell--xxxs-12 {
+        flex-basis: calc(100% - 48px);
+        max-width: calc(100% - 48px); } }
+
+@media (min-width: 320px) {
+    .um-components .flexgrid--gutter .flexgrid__cell--xxxs-12 {
+      flex-basis: calc(100% - 12px);
+      max-width: calc(100% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .um-components .flexgrid--gutter .flexgrid__cell--xxxs-12 {
+        flex-basis: calc(100% - 24px);
+        max-width: calc(100% - 24px); } }
+
+@media (min-width: 480px) {
   .um-components [class*="flexgrid__cell--xxs"] {
     flex-basis: auto;
     max-width: 100%;
@@ -1527,247 +1810,247 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-1 {
       flex-basis: calc(8.33333% - 2px);
       max-width: calc(8.33333% - 2px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-1 {
         flex-basis: calc(8.33333% - 4px);
         max-width: calc(8.33333% - 4px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-1 {
       flex-basis: calc(8.33333% - 12px);
       max-width: calc(8.33333% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-1 {
         flex-basis: calc(8.33333% - 24px);
         max-width: calc(8.33333% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-2 {
     flex-basis: 16.66667%;
     max-width: 16.66667%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-2 {
       flex-basis: calc(16.66667% - 4px);
       max-width: calc(16.66667% - 4px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-2 {
         flex-basis: calc(16.66667% - 8px);
         max-width: calc(16.66667% - 8px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-2 {
       flex-basis: calc(16.66667% - 12px);
       max-width: calc(16.66667% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-2 {
         flex-basis: calc(16.66667% - 24px);
         max-width: calc(16.66667% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-3 {
     flex-basis: 25%;
     max-width: 25%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-3 {
       flex-basis: calc(25% - 6px);
       max-width: calc(25% - 6px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-3 {
         flex-basis: calc(25% - 12px);
         max-width: calc(25% - 12px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-3 {
       flex-basis: calc(25% - 12px);
       max-width: calc(25% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-3 {
         flex-basis: calc(25% - 24px);
         max-width: calc(25% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-4 {
     flex-basis: 33.33333%;
     max-width: 33.33333%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-4 {
       flex-basis: calc(33.33333% - 8px);
       max-width: calc(33.33333% - 8px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-4 {
         flex-basis: calc(33.33333% - 16px);
         max-width: calc(33.33333% - 16px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-4 {
       flex-basis: calc(33.33333% - 12px);
       max-width: calc(33.33333% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-4 {
         flex-basis: calc(33.33333% - 24px);
         max-width: calc(33.33333% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-5 {
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-5 {
       flex-basis: calc(41.66667% - 10px);
       max-width: calc(41.66667% - 10px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-5 {
         flex-basis: calc(41.66667% - 20px);
         max-width: calc(41.66667% - 20px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-5 {
       flex-basis: calc(41.66667% - 12px);
       max-width: calc(41.66667% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-5 {
         flex-basis: calc(41.66667% - 24px);
         max-width: calc(41.66667% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-6 {
     flex-basis: 50%;
     max-width: 50%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-6 {
       flex-basis: calc(50% - 12px);
       max-width: calc(50% - 12px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-6 {
         flex-basis: calc(50% - 24px);
         max-width: calc(50% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-6 {
       flex-basis: calc(50% - 12px);
       max-width: calc(50% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-6 {
         flex-basis: calc(50% - 24px);
         max-width: calc(50% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-7 {
     flex-basis: 58.33333%;
     max-width: 58.33333%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-7 {
       flex-basis: calc(58.33333% - 14px);
       max-width: calc(58.33333% - 14px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-7 {
         flex-basis: calc(58.33333% - 28px);
         max-width: calc(58.33333% - 28px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-7 {
       flex-basis: calc(58.33333% - 12px);
       max-width: calc(58.33333% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-7 {
         flex-basis: calc(58.33333% - 24px);
         max-width: calc(58.33333% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-8 {
     flex-basis: 66.66667%;
     max-width: 66.66667%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-8 {
       flex-basis: calc(66.66667% - 16px);
       max-width: calc(66.66667% - 16px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-8 {
         flex-basis: calc(66.66667% - 32px);
         max-width: calc(66.66667% - 32px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-8 {
       flex-basis: calc(66.66667% - 12px);
       max-width: calc(66.66667% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-8 {
         flex-basis: calc(66.66667% - 24px);
         max-width: calc(66.66667% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-9 {
     flex-basis: 75%;
     max-width: 75%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-9 {
       flex-basis: calc(75% - 18px);
       max-width: calc(75% - 18px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-9 {
         flex-basis: calc(75% - 36px);
         max-width: calc(75% - 36px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-9 {
       flex-basis: calc(75% - 12px);
       max-width: calc(75% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-9 {
         flex-basis: calc(75% - 24px);
         max-width: calc(75% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-10 {
     flex-basis: 83.33333%;
     max-width: 83.33333%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-10 {
       flex-basis: calc(83.33333% - 20px);
       max-width: calc(83.33333% - 20px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-10 {
         flex-basis: calc(83.33333% - 40px);
         max-width: calc(83.33333% - 40px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-10 {
       flex-basis: calc(83.33333% - 12px);
       max-width: calc(83.33333% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-10 {
         flex-basis: calc(83.33333% - 24px);
         max-width: calc(83.33333% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-11 {
     flex-basis: 91.66667%;
     max-width: 91.66667%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-11 {
       flex-basis: calc(91.66667% - 22px);
       max-width: calc(91.66667% - 22px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-11 {
         flex-basis: calc(91.66667% - 44px);
         max-width: calc(91.66667% - 44px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-11 {
       flex-basis: calc(91.66667% - 12px);
       max-width: calc(91.66667% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-11 {
         flex-basis: calc(91.66667% - 24px);
         max-width: calc(91.66667% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .um-components .flexgrid__cell--xxs-12 {
     flex-basis: 100%;
     max-width: 100%; }
     .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-12 {
       flex-basis: calc(100% - 24px);
       max-width: calc(100% - 24px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .um-components .flexgrid--justify-space-between .flexgrid__cell--xxs-12 {
         flex-basis: calc(100% - 48px);
         max-width: calc(100% - 48px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .um-components .flexgrid--gutter .flexgrid__cell--xxs-12 {
       flex-basis: calc(100% - 12px);
       max-width: calc(100% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .um-components .flexgrid--gutter .flexgrid__cell--xxs-12 {
         flex-basis: calc(100% - 24px);
         max-width: calc(100% - 24px); } }
@@ -3116,9 +3399,9 @@ because both families serve another purpose. Therefore the line-heights will be 
       .um-components .notification__content--columns .notification__copy {
         column-count: 2; } }
 
-.um-components .notification__button, .um-components .preferences-bar__button, .um-components .preferences-bar .settings-selector__edit-button {
+.um-components .notification__button, .um-components .preferences-bar__button, .um-components .settings-selector__edit-button {
   background: #f0f6fe; }
-  .um-components .notification__button:hover, .um-components .preferences-bar__button:hover, .um-components .preferences-bar .settings-selector__edit-button:hover, .um-components .notification__button:focus, .um-components .preferences-bar__button:focus, .um-components .preferences-bar .settings-selector__edit-button:focus {
+  .um-components .notification__button:hover, .um-components .preferences-bar__button:hover, .um-components .settings-selector__edit-button:hover, .um-components .notification__button:focus, .um-components .preferences-bar__button:focus, .um-components .settings-selector__edit-button:focus {
     color: #000;
     background-color: #d9e7fc; }
 
@@ -3129,17 +3412,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   @media (min-width: 480px) {
     .um-components .notification__content--centered .button {
       margin-bottom: 0; } }
-
-.um-components .country-selector {
-  display: flex;
-  flex: 1 1 auto;
-  flex-flow: row nowrap; }
-
-.um-components .country-selector__auto-complete {
-  flex-grow: 1; }
-
-.um-components .country-selector__icon-button {
-  margin-top: 0; }
 
 .um-components .tablist__section .tablist {
   display: inline-block;
@@ -3472,49 +3744,91 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .article-video__button:visited {
     color: #fff; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 .um-components .auto-complete {
-  position: relative;
-  margin-bottom: 23px; }
-  .um-components .auto-complete * {
-    margin: 0; }
-  .um-components .auto-complete__dropdown {
-    position: absolute;
-    background: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-    width: 100%;
-    border: 1px solid #e3e3e3;
-    z-index: 1000; }
-  .um-components .auto-complete__dropdown, .um-components .auto-complete__list, .um-components .auto-complete__list-item, .um-components .auto-complete___label {
-    user-select: none; }
-  .um-components .auto-complete__list-item, .um-components .auto-complete__label {
-    padding-left: 12px;
-    padding-right: 12px; }
-  .um-components .auto-complete__list-item {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-top: -2px;
-    margin-bottom: 23px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    cursor: pointer;
-    outline: none;
-    color: #000; }
-    .um-components .auto-complete__list-item:hover, .um-components .auto-complete__list-item:active {
-      background-color: #eaeaea; }
-    .um-components .auto-complete__list-item .auto-complete__value {
-      font-weight: 600; }
-  .um-components .auto-complete__label {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    color: #7f7f7f;
-    background-color: #f5f5f5; }
-  .um-components .auto-complete__input {
-    width: 100%; }
-    .um-components .auto-complete--small .auto-complete__input {
-      padding-top: 6.5px;
-      padding-bottom: 6.5px; }
-  .um-components .auto-complete--reversed .auto-complete__dropdown {
-    bottom: 100%; }
+  position: relative; }
+  .um-components .auto-complete input[type="text"] {
+    padding: 8px 9px 9px 9px; }
+
+.um-components .auto-complete__dropdown {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  z-index: 1000;
+  list-style: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+.um-components .auto-complete__input {
+  width: 100%;
+  font-size: 14px; }
+  .um-components .auto-complete--small .auto-complete__input {
+    height: 100%;
+    padding: 0 0 0 6px; }
+
+.um-components .auto-complete__input-label {
+  display: none; }
+
+.um-components .auto-complete__label {
+  list-style: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #7f7f7f;
+  background-color: #f5f5f5; }
+
+.um-components .auto-complete__list {
+  list-style: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+.um-components .auto-complete__list-item {
+  list-style: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -2px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  outline: none;
+  color: #000; }
+  .um-components .auto-complete__list-item:hover, .um-components .auto-complete__list-item:active {
+    background-color: #eaeaea; }
+  .um-components .auto-complete__list-item:focus:not(:hover), .um-components .auto-complete__list-item:focus:not(:active) {
+    color: #fff;
+    background-color: #3f86f2; }
+  .um-components .auto-complete__list-item .auto-complete__value {
+    font-weight: 600; }
+
+.um-components .auto-complete--reversed .auto-complete__dropdown {
+  bottom: 100%; }
 
 .um-components .brand__image {
   width: 120px; }
@@ -5064,7 +5378,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .preferences-bar {
   transform: translateY(0); }
-  .um-components .preferences-bar__button, .um-components .preferences-bar .settings-selector__edit-button {
+  .um-components .preferences-bar__button, .um-components .settings-selector__edit-button {
     background-color: transparent; }
   .um-components .preferences-bar__content-manageble p, .um-components .preferences-bar__content-manageble strong, .um-components .preferences-bar__content-manageble .tablist__section .tablist__item, .um-components .tablist__section .preferences-bar__content-manageble .tablist__item {
     font-size: 14px;
@@ -5078,23 +5392,37 @@ because both families serve another purpose. Therefore the line-heights will be 
       line-height: 1.5;
       margin-top: -2px;
       margin-bottom: 23px; } }
-  .um-components .preferences-bar .auto-complete.auto-complete--small {
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: 0;
-    width: 260px; }
-    .um-components .preferences-bar .auto-complete.auto-complete--small .auto-complete__input {
-      border-color: #dde2e9; }
-  .um-components .preferences-bar .settings-selector__edit-button {
-    color: #196ef0;
-    margin-top: 5px; }
-    .um-components .preferences-bar .settings-selector__edit-button:hover, .um-components .preferences-bar .settings-selector__edit-button:focus, .um-components .preferences-bar .settings-selector__edit-button:active {
-      color: #196ef0; }
+  @media (max-width: 568px) {
+    .um-components .preferences-bar .locale-selector,
+    .um-components .preferences-bar .selector-group,
+    .um-components .preferences-bar .auto-complete {
+      width: 100%; } }
+  @media (max-width: 568px) {
+    .um-components .preferences-bar .locale-selector {
+      margin-top: 12px; } }
+  .um-components .preferences-bar .auto-complete input {
+    padding-left: 12px; }
+
+.um-components .preferences-bar__locale-selector .icon-button, .um-components .preferences-bar__locale-selector .sys-nav__link, .um-components .preferences-bar__locale-selector .search-bar__button {
+  font-size: 16px;
+  line-height: 24px;
+  color: #196ef0;
+  background-color: transparent; }
+  .um-components .preferences-bar__locale-selector .icon-button:hover, .um-components .preferences-bar__locale-selector .sys-nav__link:hover, .um-components .preferences-bar__locale-selector .search-bar__button:hover, .um-components .preferences-bar__locale-selector .icon-button:focus, .um-components .preferences-bar__locale-selector .sys-nav__link:focus, .um-components .preferences-bar__locale-selector .search-bar__button:focus {
+    background-color: #d9e7fc; }
+  @media (max-width: 568px) {
+    .um-components .preferences-bar__locale-selector .icon-button:not(.locale-selector__icon-button), .um-components .preferences-bar__locale-selector .sys-nav__link:not(.locale-selector__icon-button), .um-components .preferences-bar__locale-selector .search-bar__button:not(.locale-selector__icon-button) {
+      margin-left: 6px; } }
+
+.um-components .settings-selector__edit-button .icon-button__label,
+.um-components .preferences-bar__locale-selector .icon-button__label {
+  margin-top: 0;
+  margin-left: 0; }
 
 .um-components .settings {
   width: 100%;
   margin-bottom: 30px;
-  border: 2px solid #dde2e9;
+  border-top: 2px solid #dde2e9;
   border-left: none;
   border-right: none; }
   @media (min-width: 480px) {
@@ -5125,14 +5453,20 @@ because both families serve another purpose. Therefore the line-heights will be 
     @media (min-width: 480px) {
       .um-components .settings-selector__label {
         flex-direction: row;
-        align-items: center;
-        margin-top: 5px; } }
+        align-items: center; } }
   .um-components .settings-selector__edit-button {
-    font-weight: normal;
-    margin-top: 5px; }
-    @media (min-width: 480px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    color: #196ef0; }
+    .um-components .settings-selector__edit-button:hover, .um-components .settings-selector__edit-button:focus, .um-components .settings-selector__edit-button:active {
+      color: #196ef0; }
+    .um-components .settings-selector__edit-button:hover, .um-components .settings-selector__edit-button:focus {
+      background-color: #d9e7fc; }
+    @media (max-width: 568px) {
       .um-components .settings-selector__edit-button {
-        margin-top: 0; } }
+        margin-top: 12px;
+        margin-left: 6px; } }
   .um-components .settings-selector:last-child {
     margin-bottom: 0;
     border: none; }
@@ -5733,23 +6067,22 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .overview__tooltip .cta__block .link--large {
     padding-left: 0; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
 .um-components .footer {
   border-top: 1px solid #f5f5f5;
   width: 100%; }
-
-.um-components .footer__container {
-  padding-bottom: 30px; }
-
-.um-components .footer__primary {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-bottom: 60px; }
-  @media (min-width: 569px) {
-    .um-components .footer__primary {
-      margin-bottom: 51px;
-      justify-content: space-between;
-      flex-direction: row; } }
 
 .um-components .footer__branded-logo {
   order: 2; }
@@ -5764,6 +6097,26 @@ because both families serve another purpose. Therefore the line-heights will be 
       align-self: flex-start;
       align-items: center; } }
 
+.um-components .footer__container {
+  padding-bottom: 30px; }
+
+.um-components .footer__dash {
+  align-self: center;
+  margin: -4px 6px 0 6px; }
+
+.um-components .footer__locales {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row; }
+
+.um-components .footer__locales-icon {
+  align-self: center;
+  font-size: 24px;
+  margin-right: 6px; }
+
+.um-components .footer__locales .auto-complete {
+  margin-left: 6px; }
+
 .um-components .footer__navigation {
   order: 1;
   display: flex;
@@ -5776,6 +6129,17 @@ because both families serve another purpose. Therefore the line-heights will be 
       flex-direction: row;
       flex-wrap: nowrap;
       max-height: initial; } }
+
+.um-components .footer__primary {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 60px; }
+  @media (min-width: 569px) {
+    .um-components .footer__primary {
+      margin-bottom: 51px;
+      justify-content: space-between;
+      flex-direction: row; } }
 
 .um-components .footer__secondary {
   display: flex;
@@ -5790,14 +6154,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       align-items: flex-start;
       justify-content: space-between;
       height: 36px; } }
-
-.um-components .footer__locale-selector {
-  display: flex;
-  flex-direction: row; }
-
-.um-components .footer__country-selector {
-  width: 320px;
-  max-width: 100%; }
 
 .um-components .footer__social-nav {
   margin-bottom: 18px; }
@@ -6269,6 +6625,28 @@ because both families serve another purpose. Therefore the line-heights will be 
       background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px); }
       .um-components main .organism:nth-child(even) .table-compare-features--footer, .um-components main .slider-reveal:nth-child(even) .table-compare-features--footer, .um-components main .brands:nth-child(even) .table-compare-features--footer, .um-components main .content-cover--cover:nth-child(even) .table-compare-features--footer, .um-components main .content-general:nth-child(even) .table-compare-features--footer, .um-components main .tabbed-content:nth-child(even) .table-compare-features--footer {
         background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); } }
+
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.um-components .locale-selector {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%; }
+
+.um-components .locale-selector__icon-button {
+  align-self: center;
+  height: auto;
+  padding: 6px; }
+
+.um-components .locale-selector__icon-button svg {
+  font-size: 24px; }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
