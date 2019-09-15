@@ -1,9 +1,10 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import { PageHeaderProps } from './page-header.models';
 import WithRender from './page-header.vue.html';
+import { Getter } from 'vuex-class';
 
 import ViewportUtility from 'utils/viewport';
-import PublicEventService from 'plugins/public-event-service';
+const namespace = { namespace: 'sizeEmitter' };
 
 @WithRender
 @Component({
@@ -16,9 +17,10 @@ export class PageHeader extends Vue implements PageHeaderProps {
     @Prop({ type: Object, required: false }) search!: PageHeaderProps['search'];
     @Prop({ type: String, required: false }) language?: PageHeaderProps['language'];
 
+    @Getter('storedHeights', namespace) storedHeights;
+
     assistUsed: boolean = false;
     viewportUtil: any = new ViewportUtility();
-    drawerHeight: number = 0;
     searchOpen: boolean = false;
     showCompactMenu: boolean = true;
     maxMobileRes: number = 1025;
@@ -29,7 +31,11 @@ export class PageHeader extends Vue implements PageHeaderProps {
     };
 
     get headerClasses() {
-        const isFixed = this.viewportUtil.scrollY >= this.drawerHeight;
+        let isFixed = true;
+
+        if (this.storedHeights.drawer !== null) {
+            isFixed = this.viewportUtil.scrollY > this.storedHeights.drawer;
+        }
 
         return {
             'header--absolute': !isFixed,
@@ -90,12 +96,6 @@ export class PageHeader extends Vue implements PageHeaderProps {
         this.showCompactMenu = this.viewportUtil.screenWidth < this.maxMobileRes;
     }
 
-    handleSizeEvent({ element, size }): void {
-        if (element === 'drawer') {
-            this.drawerHeight = size;
-        }
-    }
-
     openMainNav(): void {
         this.mainNavOpen = true;
     }
@@ -104,13 +104,15 @@ export class PageHeader extends Vue implements PageHeaderProps {
         this.mainNavOpen = false;
     }
 
-    mounted() {
-        PublicEventService.on('size', this.handleSizeEvent);
-        this.viewportUtil.addResizeHandler(this.handleResize);
-        this.handleResize();
-    }
-
     beforeDestroy() {
         this.viewportUtil.removeResizeHandler(this.handleResize);
+    }
+
+    beforeMount() {
+        this.viewportUtil.addResizeHandler(this.handleResize);
+    }
+
+    mounted() {
+        this.handleResize();
     }
 }
