@@ -256,12 +256,12 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $element (String) - The name of the current element, must be in the $list
  * @returns {number}
  */
-.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .sys-nav__list, .sys-nav__item, .hero--product .hero__linklist, .subnavigation__list, dl, dt, dd {
+.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .social-nav__list, .pager__list, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .sys-nav__list, .sys-nav__item, .hero--product .hero__linklist, .subnavigation__list, dl, dt, dd {
   border: 0;
   padding: 0;
   margin: 0; }
 
-.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .social-nav__list, .pager__list, .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .sys-nav__list, .sys-nav__item, .hero--product .hero__linklist, .subnavigation__list {
+.caption-list__list-item, .link-list, .flyout__list, .tabbable-dl, .price-table__list, .tag-list__list, .flyout, .main-nav__flyout, .social-nav__list, .pager__list, .main-nav__list, .tab-table-row__linklist, .wizard-step-download-list__items, .tabs__list, .sys-nav__list, .sys-nav__item, .hero--product .hero__linklist, .subnavigation__list {
   list-style: none; }
 
 .list__item, .link-list__item, .flyout__list-item, .tag-list__item, .flyout__section, .social-nav__item, .pager__page, .pager__active-page, .content-manageble ul li,
@@ -292,11 +292,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   border: 0; }
 
 /* Picked an accessible color from colorsafe.co to try out some time */
-button:focus,
-.button:focus,
-input[type="button"]:focus,
-input[type="submit"]:focus, .nav-assist:focus:not(:hover),
-.nav-assist--close:focus:not(:hover), a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active), .business-card:focus, .business-card:hover:focus, .business-card:focus:active {
+.nav-assist:focus:not(:hover),
+.nav-assist--close:focus:not(:hover), a:not(.hit-area):focus:not(:hover), a:not(.hit-area):focus:not(:active), .price-table--tabs .price-table__item:focus:not(:hover), .price-table--tabs .price-table__item:focus:not(:active), .price-table--tabs .tablist__section .tablist__item:focus:not(:active), .tablist__section .price-table--tabs .tablist__item:focus:not(:active), .tablist__section .tablist__item:focus:not(:hover), .business-card:focus, .business-card:hover:focus, .business-card:focus:active {
   color: #fff;
   background-color: #3f86f2; }
 
@@ -313,7 +310,6 @@ small a:focus:not(:hover),
 .tag a:focus:not(:hover),
 .tablist__section .tablist a:focus:not(:hover),
 .tablist__section .tablist__headline a:focus:not(:hover),
-.auto-complete__label a:focus:not(:hover),
 .settings-selector__label a:focus:not(:hover),
 .subnavigation__label a:focus:not(:hover),
 small a:focus:not(:active),
@@ -328,7 +324,6 @@ small a:focus:not(:active),
 .tag a:focus:not(:active),
 .tablist__section .tablist a:focus:not(:active),
 .tablist__section .tablist__headline a:focus:not(:active),
-.auto-complete__label a:focus:not(:active),
 .settings-selector__label a:focus:not(:active),
 .subnavigation__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
@@ -736,7 +731,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-@media (min-width: 320px) and (max-width: ) {
+@media (min-width: 320px) and (max-width: 479px) {
+  .hidden--xxxs {
+    display: none; } }
+
+@media (min-width: 480px) and (max-width: 568px) {
   .hidden--xxs {
     display: none; } }
 
@@ -761,6 +760,21 @@ ol {
   padding-left: 1em; }
 
 /** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ * @param {string} $animateProp - Name of the animated property or multiple properties
+ */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
 button,
 .button,
 input[type="button"],
@@ -793,6 +807,12 @@ input[type="submit"] {
     color: #fff;
     background-color: #3f86f2;
     outline: 0; }
+  button:focus,
+  .button:focus,
+  input[type="button"]:focus,
+  input[type="submit"]:focus {
+    color: #fff;
+    background-color: #3f86f2; }
   @media (min-width: 768px) {
     button,
     .button,
@@ -863,6 +883,18 @@ input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0; }
+
+.button--small {
+  padding: 11px 6px;
+  font-size: 14px;
+  line-height: 1; }
+
+.button--transparent {
+  background-color: transparent;
+  color: #000; }
+  .button--transparent:hover {
+    background-color: #eaeaea;
+    color: #000; }
 
 /** @format */
 /** @format */
@@ -959,7 +991,7 @@ q {
   color: #7f7f7f; }
 
 small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.subnavigation__link:hover, .link--small.subnavigation__link.exact-active, .price-table__tagline,
-.price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .auto-complete__label, .settings-selector__label, .subnavigation__label {
+.price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .settings-selector__label, .subnavigation__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
@@ -967,7 +999,7 @@ small, .caption-list__headline, .caption-list__list-item, .link.link--small, .li
   color: inherit; }
   @media (min-width: 768px) {
     small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.subnavigation__link:hover, .link--small.subnavigation__link.exact-active, .price-table__tagline,
-    .price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .auto-complete__label, .settings-selector__label, .subnavigation__label {
+    .price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .settings-selector__label, .subnavigation__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -1179,7 +1211,6 @@ a {
   .tag a,
   .tablist__section .tablist a,
   .tablist__section .tablist__headline a,
-  .auto-complete__label a,
   .settings-selector__label a,
   .subnavigation__label a,
   .content--rich li a {
@@ -2011,6 +2042,262 @@ th {
  *  Generate columns for each of the defined breakpoints
  */
 @media (min-width: 320px) {
+  [class*="flexgrid__cell--xxxs"] {
+    flex-basis: auto;
+    max-width: 100%;
+    flex-grow: 1; }
+  .flexgrid__cell--xxxs-1 {
+    flex-basis: 8.33333%;
+    max-width: 8.33333%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-1 {
+      flex-basis: calc(8.33333% - 2px);
+      max-width: calc(8.33333% - 2px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-1 {
+        flex-basis: calc(8.33333% - 4px);
+        max-width: calc(8.33333% - 4px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-1 {
+      flex-basis: calc(8.33333% - 12px);
+      max-width: calc(8.33333% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-1 {
+        flex-basis: calc(8.33333% - 24px);
+        max-width: calc(8.33333% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-2 {
+    flex-basis: 16.66667%;
+    max-width: 16.66667%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-2 {
+      flex-basis: calc(16.66667% - 4px);
+      max-width: calc(16.66667% - 4px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-2 {
+        flex-basis: calc(16.66667% - 8px);
+        max-width: calc(16.66667% - 8px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-2 {
+      flex-basis: calc(16.66667% - 12px);
+      max-width: calc(16.66667% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-2 {
+        flex-basis: calc(16.66667% - 24px);
+        max-width: calc(16.66667% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-3 {
+    flex-basis: 25%;
+    max-width: 25%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-3 {
+      flex-basis: calc(25% - 6px);
+      max-width: calc(25% - 6px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-3 {
+        flex-basis: calc(25% - 12px);
+        max-width: calc(25% - 12px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-3 {
+      flex-basis: calc(25% - 12px);
+      max-width: calc(25% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-3 {
+        flex-basis: calc(25% - 24px);
+        max-width: calc(25% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-4 {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-4 {
+      flex-basis: calc(33.33333% - 8px);
+      max-width: calc(33.33333% - 8px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-4 {
+        flex-basis: calc(33.33333% - 16px);
+        max-width: calc(33.33333% - 16px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-4 {
+      flex-basis: calc(33.33333% - 12px);
+      max-width: calc(33.33333% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-4 {
+        flex-basis: calc(33.33333% - 24px);
+        max-width: calc(33.33333% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-5 {
+      flex-basis: calc(41.66667% - 10px);
+      max-width: calc(41.66667% - 10px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-5 {
+        flex-basis: calc(41.66667% - 20px);
+        max-width: calc(41.66667% - 20px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-5 {
+      flex-basis: calc(41.66667% - 12px);
+      max-width: calc(41.66667% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-5 {
+        flex-basis: calc(41.66667% - 24px);
+        max-width: calc(41.66667% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-6 {
+    flex-basis: 50%;
+    max-width: 50%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-6 {
+      flex-basis: calc(50% - 12px);
+      max-width: calc(50% - 12px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-6 {
+        flex-basis: calc(50% - 24px);
+        max-width: calc(50% - 24px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-6 {
+      flex-basis: calc(50% - 12px);
+      max-width: calc(50% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-6 {
+        flex-basis: calc(50% - 24px);
+        max-width: calc(50% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-7 {
+      flex-basis: calc(58.33333% - 14px);
+      max-width: calc(58.33333% - 14px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-7 {
+        flex-basis: calc(58.33333% - 28px);
+        max-width: calc(58.33333% - 28px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-7 {
+      flex-basis: calc(58.33333% - 12px);
+      max-width: calc(58.33333% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-7 {
+        flex-basis: calc(58.33333% - 24px);
+        max-width: calc(58.33333% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-8 {
+    flex-basis: 66.66667%;
+    max-width: 66.66667%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-8 {
+      flex-basis: calc(66.66667% - 16px);
+      max-width: calc(66.66667% - 16px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-8 {
+        flex-basis: calc(66.66667% - 32px);
+        max-width: calc(66.66667% - 32px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-8 {
+      flex-basis: calc(66.66667% - 12px);
+      max-width: calc(66.66667% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-8 {
+        flex-basis: calc(66.66667% - 24px);
+        max-width: calc(66.66667% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-9 {
+    flex-basis: 75%;
+    max-width: 75%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-9 {
+      flex-basis: calc(75% - 18px);
+      max-width: calc(75% - 18px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-9 {
+        flex-basis: calc(75% - 36px);
+        max-width: calc(75% - 36px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-9 {
+      flex-basis: calc(75% - 12px);
+      max-width: calc(75% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-9 {
+        flex-basis: calc(75% - 24px);
+        max-width: calc(75% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-10 {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-10 {
+      flex-basis: calc(83.33333% - 20px);
+      max-width: calc(83.33333% - 20px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-10 {
+        flex-basis: calc(83.33333% - 40px);
+        max-width: calc(83.33333% - 40px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-10 {
+      flex-basis: calc(83.33333% - 12px);
+      max-width: calc(83.33333% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-10 {
+        flex-basis: calc(83.33333% - 24px);
+        max-width: calc(83.33333% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-11 {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-11 {
+      flex-basis: calc(91.66667% - 22px);
+      max-width: calc(91.66667% - 22px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-11 {
+        flex-basis: calc(91.66667% - 44px);
+        max-width: calc(91.66667% - 44px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-11 {
+      flex-basis: calc(91.66667% - 12px);
+      max-width: calc(91.66667% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-11 {
+        flex-basis: calc(91.66667% - 24px);
+        max-width: calc(91.66667% - 24px); } }
+
+@media (min-width: 320px) {
+  .flexgrid__cell--xxxs-12 {
+    flex-basis: 100%;
+    max-width: 100%; }
+    .flexgrid--justify-space-between .flexgrid__cell--xxxs-12 {
+      flex-basis: calc(100% - 24px);
+      max-width: calc(100% - 24px); } }
+    @media (min-width: 320px) and (min-width: 1025px) {
+      .flexgrid--justify-space-between .flexgrid__cell--xxxs-12 {
+        flex-basis: calc(100% - 48px);
+        max-width: calc(100% - 48px); } }
+
+@media (min-width: 320px) {
+    .flexgrid--gutter .flexgrid__cell--xxxs-12 {
+      flex-basis: calc(100% - 12px);
+      max-width: calc(100% - 12px); } }
+    @media (min-width: 320px) and (min-width: 768px) {
+      .flexgrid--gutter .flexgrid__cell--xxxs-12 {
+        flex-basis: calc(100% - 24px);
+        max-width: calc(100% - 24px); } }
+
+@media (min-width: 480px) {
   [class*="flexgrid__cell--xxs"] {
     flex-basis: auto;
     max-width: 100%;
@@ -2021,247 +2308,247 @@ th {
     .flexgrid--justify-space-between .flexgrid__cell--xxs-1 {
       flex-basis: calc(8.33333% - 2px);
       max-width: calc(8.33333% - 2px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-1 {
         flex-basis: calc(8.33333% - 4px);
         max-width: calc(8.33333% - 4px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-1 {
       flex-basis: calc(8.33333% - 12px);
       max-width: calc(8.33333% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-1 {
         flex-basis: calc(8.33333% - 24px);
         max-width: calc(8.33333% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-2 {
     flex-basis: 16.66667%;
     max-width: 16.66667%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-2 {
       flex-basis: calc(16.66667% - 4px);
       max-width: calc(16.66667% - 4px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-2 {
         flex-basis: calc(16.66667% - 8px);
         max-width: calc(16.66667% - 8px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-2 {
       flex-basis: calc(16.66667% - 12px);
       max-width: calc(16.66667% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-2 {
         flex-basis: calc(16.66667% - 24px);
         max-width: calc(16.66667% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-3 {
     flex-basis: 25%;
     max-width: 25%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-3 {
       flex-basis: calc(25% - 6px);
       max-width: calc(25% - 6px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-3 {
         flex-basis: calc(25% - 12px);
         max-width: calc(25% - 12px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-3 {
       flex-basis: calc(25% - 12px);
       max-width: calc(25% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-3 {
         flex-basis: calc(25% - 24px);
         max-width: calc(25% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-4 {
     flex-basis: 33.33333%;
     max-width: 33.33333%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-4 {
       flex-basis: calc(33.33333% - 8px);
       max-width: calc(33.33333% - 8px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-4 {
         flex-basis: calc(33.33333% - 16px);
         max-width: calc(33.33333% - 16px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-4 {
       flex-basis: calc(33.33333% - 12px);
       max-width: calc(33.33333% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-4 {
         flex-basis: calc(33.33333% - 24px);
         max-width: calc(33.33333% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-5 {
     flex-basis: 41.66667%;
     max-width: 41.66667%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-5 {
       flex-basis: calc(41.66667% - 10px);
       max-width: calc(41.66667% - 10px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-5 {
         flex-basis: calc(41.66667% - 20px);
         max-width: calc(41.66667% - 20px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-5 {
       flex-basis: calc(41.66667% - 12px);
       max-width: calc(41.66667% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-5 {
         flex-basis: calc(41.66667% - 24px);
         max-width: calc(41.66667% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-6 {
     flex-basis: 50%;
     max-width: 50%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-6 {
       flex-basis: calc(50% - 12px);
       max-width: calc(50% - 12px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-6 {
         flex-basis: calc(50% - 24px);
         max-width: calc(50% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-6 {
       flex-basis: calc(50% - 12px);
       max-width: calc(50% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-6 {
         flex-basis: calc(50% - 24px);
         max-width: calc(50% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-7 {
     flex-basis: 58.33333%;
     max-width: 58.33333%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-7 {
       flex-basis: calc(58.33333% - 14px);
       max-width: calc(58.33333% - 14px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-7 {
         flex-basis: calc(58.33333% - 28px);
         max-width: calc(58.33333% - 28px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-7 {
       flex-basis: calc(58.33333% - 12px);
       max-width: calc(58.33333% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-7 {
         flex-basis: calc(58.33333% - 24px);
         max-width: calc(58.33333% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-8 {
     flex-basis: 66.66667%;
     max-width: 66.66667%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-8 {
       flex-basis: calc(66.66667% - 16px);
       max-width: calc(66.66667% - 16px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-8 {
         flex-basis: calc(66.66667% - 32px);
         max-width: calc(66.66667% - 32px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-8 {
       flex-basis: calc(66.66667% - 12px);
       max-width: calc(66.66667% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-8 {
         flex-basis: calc(66.66667% - 24px);
         max-width: calc(66.66667% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-9 {
     flex-basis: 75%;
     max-width: 75%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-9 {
       flex-basis: calc(75% - 18px);
       max-width: calc(75% - 18px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-9 {
         flex-basis: calc(75% - 36px);
         max-width: calc(75% - 36px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-9 {
       flex-basis: calc(75% - 12px);
       max-width: calc(75% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-9 {
         flex-basis: calc(75% - 24px);
         max-width: calc(75% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-10 {
     flex-basis: 83.33333%;
     max-width: 83.33333%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-10 {
       flex-basis: calc(83.33333% - 20px);
       max-width: calc(83.33333% - 20px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-10 {
         flex-basis: calc(83.33333% - 40px);
         max-width: calc(83.33333% - 40px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-10 {
       flex-basis: calc(83.33333% - 12px);
       max-width: calc(83.33333% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-10 {
         flex-basis: calc(83.33333% - 24px);
         max-width: calc(83.33333% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-11 {
     flex-basis: 91.66667%;
     max-width: 91.66667%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-11 {
       flex-basis: calc(91.66667% - 22px);
       max-width: calc(91.66667% - 22px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-11 {
         flex-basis: calc(91.66667% - 44px);
         max-width: calc(91.66667% - 44px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-11 {
       flex-basis: calc(91.66667% - 12px);
       max-width: calc(91.66667% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-11 {
         flex-basis: calc(91.66667% - 24px);
         max-width: calc(91.66667% - 24px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
   .flexgrid__cell--xxs-12 {
     flex-basis: 100%;
     max-width: 100%; }
     .flexgrid--justify-space-between .flexgrid__cell--xxs-12 {
       flex-basis: calc(100% - 24px);
       max-width: calc(100% - 24px); } }
-    @media (min-width: 320px) and (min-width: 1025px) {
+    @media (min-width: 480px) and (min-width: 1025px) {
       .flexgrid--justify-space-between .flexgrid__cell--xxs-12 {
         flex-basis: calc(100% - 48px);
         max-width: calc(100% - 48px); } }
 
-@media (min-width: 320px) {
+@media (min-width: 480px) {
     .flexgrid--gutter .flexgrid__cell--xxs-12 {
       flex-basis: calc(100% - 12px);
       max-width: calc(100% - 12px); } }
-    @media (min-width: 320px) and (min-width: 768px) {
+    @media (min-width: 480px) and (min-width: 768px) {
       .flexgrid--gutter .flexgrid__cell--xxs-12 {
         flex-basis: calc(100% - 24px);
         max-width: calc(100% - 24px); } }
@@ -3614,9 +3901,9 @@ th {
       .notification__content--columns .notification__copy {
         column-count: 2; } }
 
-.notification__button, .preferences-bar__button, .preferences-bar .settings-selector__edit-button {
+.notification__button, .preferences-bar__button, .settings-selector__edit-button {
   background: #f0f6fe; }
-  .notification__button:hover, .preferences-bar__button:hover, .preferences-bar .settings-selector__edit-button:hover, .notification__button:focus, .preferences-bar__button:focus, .preferences-bar .settings-selector__edit-button:focus {
+  .notification__button:hover, .preferences-bar__button:hover, .settings-selector__edit-button:hover, .notification__button:focus, .preferences-bar__button:focus, .settings-selector__edit-button:focus {
     color: #000;
     background-color: #d9e7fc; }
 
@@ -3627,17 +3914,6 @@ th {
   @media (min-width: 480px) {
     .notification__content--centered .button {
       margin-bottom: 0; } }
-
-.country-selector {
-  display: flex;
-  flex: 1 1 auto;
-  flex-flow: row nowrap; }
-
-.country-selector__auto-complete {
-  flex-grow: 1; }
-
-.country-selector__icon-button {
-  margin-top: 0; }
 
 .tablist__section .tablist {
   display: inline-block;
@@ -3972,49 +4248,91 @@ th {
   .article-video__button:visited {
     color: #fff; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 .auto-complete {
-  position: relative;
-  margin-bottom: 23px; }
-  .auto-complete * {
-    margin: 0; }
-  .auto-complete__dropdown {
-    position: absolute;
-    background: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-    width: 100%;
-    border: 1px solid #e3e3e3;
-    z-index: 1000; }
-  .auto-complete__dropdown, .auto-complete__list, .auto-complete__list-item, .auto-complete___label {
-    user-select: none; }
-  .auto-complete__list-item, .auto-complete__label {
-    padding-left: 12px;
-    padding-right: 12px; }
-  .auto-complete__list-item {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-top: -2px;
-    margin-bottom: 23px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    cursor: pointer;
-    outline: none;
-    color: #000; }
-    .auto-complete__list-item:hover, .auto-complete__list-item:active {
-      background-color: #eaeaea; }
-    .auto-complete__list-item .auto-complete__value {
-      font-weight: 600; }
-  .auto-complete__label {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    color: #7f7f7f;
-    background-color: #f5f5f5; }
-  .auto-complete__input {
-    width: 100%; }
-    .auto-complete--small .auto-complete__input {
-      padding-top: 6.5px;
-      padding-bottom: 6.5px; }
-  .auto-complete--reversed .auto-complete__dropdown {
-    bottom: 100%; }
+  position: relative; }
+  .auto-complete input[type="text"] {
+    padding: 8px 9px 9px 9px; }
+
+.auto-complete__dropdown {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  z-index: 1000;
+  list-style: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+.auto-complete__input {
+  width: 100%;
+  font-size: 14px; }
+  .auto-complete--small .auto-complete__input {
+    height: 100%;
+    padding: 0 0 0 6px; }
+
+.auto-complete__input-label {
+  display: none; }
+
+.auto-complete__label {
+  list-style: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #7f7f7f;
+  background-color: #f5f5f5; }
+
+.auto-complete__list {
+  list-style: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+.auto-complete__list-item {
+  list-style: none;
+  user-select: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: -2px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  outline: none;
+  color: #000; }
+  .auto-complete__list-item:hover, .auto-complete__list-item:active {
+    background-color: #eaeaea; }
+  .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active) {
+    color: #fff;
+    background-color: #3f86f2; }
+  .auto-complete__list-item .auto-complete__value {
+    font-weight: 600; }
+
+.auto-complete--reversed .auto-complete__dropdown {
+  bottom: 100%; }
 
 .brand__image {
   width: 120px; }
@@ -5589,7 +5907,7 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brand
 
 .preferences-bar {
   transform: translateY(0); }
-  .preferences-bar__button, .preferences-bar .settings-selector__edit-button {
+  .preferences-bar__button, .settings-selector__edit-button {
     background-color: transparent; }
   .preferences-bar__content-manageble p, .preferences-bar__content-manageble strong, .preferences-bar__content-manageble .tablist__section .tablist__item, .tablist__section .preferences-bar__content-manageble .tablist__item {
     font-size: 14px;
@@ -5603,23 +5921,37 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brand
       line-height: 1.5;
       margin-top: -2px;
       margin-bottom: 23px; } }
-  .preferences-bar .auto-complete.auto-complete--small {
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: 0;
-    width: 260px; }
-    .preferences-bar .auto-complete.auto-complete--small .auto-complete__input {
-      border-color: #dde2e9; }
-  .preferences-bar .settings-selector__edit-button {
-    color: #196ef0;
-    margin-top: 5px; }
-    .preferences-bar .settings-selector__edit-button:hover, .preferences-bar .settings-selector__edit-button:focus, .preferences-bar .settings-selector__edit-button:active {
-      color: #196ef0; }
+  @media (max-width: 568px) {
+    .preferences-bar .locale-selector,
+    .preferences-bar .selector-group,
+    .preferences-bar .auto-complete {
+      width: 100%; } }
+  @media (max-width: 568px) {
+    .preferences-bar .locale-selector {
+      margin-top: 12px; } }
+  .preferences-bar .auto-complete input {
+    padding-left: 12px; }
+
+.preferences-bar__locale-selector .icon-button, .preferences-bar__locale-selector .sys-nav__link, .preferences-bar__locale-selector .search-bar__button {
+  font-size: 16px;
+  line-height: 24px;
+  color: #196ef0;
+  background-color: transparent; }
+  .preferences-bar__locale-selector .icon-button:hover, .preferences-bar__locale-selector .sys-nav__link:hover, .preferences-bar__locale-selector .search-bar__button:hover, .preferences-bar__locale-selector .icon-button:focus, .preferences-bar__locale-selector .sys-nav__link:focus, .preferences-bar__locale-selector .search-bar__button:focus {
+    background-color: #d9e7fc; }
+  @media (max-width: 568px) {
+    .preferences-bar__locale-selector .icon-button:not(.locale-selector__icon-button), .preferences-bar__locale-selector .sys-nav__link:not(.locale-selector__icon-button), .preferences-bar__locale-selector .search-bar__button:not(.locale-selector__icon-button) {
+      margin-left: 6px; } }
+
+.settings-selector__edit-button .icon-button__label,
+.preferences-bar__locale-selector .icon-button__label {
+  margin-top: 0;
+  margin-left: 0; }
 
 .settings {
   width: 100%;
   margin-bottom: 30px;
-  border: 2px solid #dde2e9;
+  border-top: 2px solid #dde2e9;
   border-left: none;
   border-right: none; }
   @media (min-width: 480px) {
@@ -5650,14 +5982,20 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brand
     @media (min-width: 480px) {
       .settings-selector__label {
         flex-direction: row;
-        align-items: center;
-        margin-top: 5px; } }
+        align-items: center; } }
   .settings-selector__edit-button {
-    font-weight: normal;
-    margin-top: 5px; }
-    @media (min-width: 480px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    color: #196ef0; }
+    .settings-selector__edit-button:hover, .settings-selector__edit-button:focus, .settings-selector__edit-button:active {
+      color: #196ef0; }
+    .settings-selector__edit-button:hover, .settings-selector__edit-button:focus {
+      background-color: #d9e7fc; }
+    @media (max-width: 568px) {
       .settings-selector__edit-button {
-        margin-top: 0; } }
+        margin-top: 12px;
+        margin-left: 6px; } }
   .settings-selector:last-child {
     margin-bottom: 0;
     border: none; }
@@ -6258,23 +6596,22 @@ main .overview:nth-child(even) {
   .overview__tooltip .cta__block .link--large {
     padding-left: 0; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
 .footer {
   border-top: 1px solid #f5f5f5;
   width: 100%; }
-
-.footer__container {
-  padding-bottom: 30px; }
-
-.footer__primary {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-bottom: 60px; }
-  @media (min-width: 569px) {
-    .footer__primary {
-      margin-bottom: 51px;
-      justify-content: space-between;
-      flex-direction: row; } }
 
 .footer__branded-logo {
   order: 2; }
@@ -6289,6 +6626,26 @@ main .overview:nth-child(even) {
       align-self: flex-start;
       align-items: center; } }
 
+.footer__container {
+  padding-bottom: 30px; }
+
+.footer__dash {
+  align-self: center;
+  margin: -4px 6px 0 6px; }
+
+.footer__locales {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row; }
+
+.footer__locales-icon {
+  align-self: center;
+  font-size: 24px;
+  margin-right: 6px; }
+
+.footer__locales .auto-complete {
+  margin-left: 6px; }
+
 .footer__navigation {
   order: 1;
   display: flex;
@@ -6301,6 +6658,17 @@ main .overview:nth-child(even) {
       flex-direction: row;
       flex-wrap: nowrap;
       max-height: initial; } }
+
+.footer__primary {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 60px; }
+  @media (min-width: 569px) {
+    .footer__primary {
+      margin-bottom: 51px;
+      justify-content: space-between;
+      flex-direction: row; } }
 
 .footer__secondary {
   display: flex;
@@ -6315,14 +6683,6 @@ main .overview:nth-child(even) {
       align-items: flex-start;
       justify-content: space-between;
       height: 36px; } }
-
-.footer__locale-selector {
-  display: flex;
-  flex-direction: row; }
-
-.footer__country-selector {
-  width: 320px;
-  max-width: 100%; }
 
 .footer__social-nav {
   margin-bottom: 18px; }
@@ -6794,6 +7154,28 @@ svg text {
       background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px); }
       main .organism:nth-child(even) .table-compare-features--footer, main .slider-reveal:nth-child(even) .table-compare-features--footer, main .brands:nth-child(even) .table-compare-features--footer, main .content-cover--cover:nth-child(even) .table-compare-features--footer, main .content-general:nth-child(even) .table-compare-features--footer, main .tabbed-content:nth-child(even) .table-compare-features--footer {
         background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); } }
+
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.locale-selector {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%; }
+
+.locale-selector__icon-button {
+  align-self: center;
+  height: auto;
+  padding: 6px; }
+
+.locale-selector__icon-button svg {
+  font-size: 24px; }
 
 /** @format */
 /** @format */
