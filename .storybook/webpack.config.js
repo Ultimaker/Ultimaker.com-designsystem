@@ -1,17 +1,20 @@
+// this webpack config is for storybook, not the exported component library
+// @link https://storybook.js.org/docs/configurations/custom-webpack-config/#full-control-mode
 const path = require('path');
 const webpack = require('webpack');
 const merge = require("webpack-merge");
 const projectConfig = require('../webpack.config');
 const SvgStore = require('webpack-svgstore-plugin');
 
-module.exports = ({config, mode}) => {
-    // defaultConfig.module.rules.push({
-    //     test: [/\.stories\.js$/],
-    //     loaders: [require.resolve('@storybook/addon-storysource/loader')],
-    //     include: [path.resolve(__dirname, '../src/js')],
-    //     enforce: 'pre',
-    // });
+// Export a function. Accept the base config as the only param.
+module.exports = async ({ config, mode }) => {
+    config = merge(projectConfig, config);
 
+    // `mode` has a value of 'DEVELOPMENT' or 'PRODUCTION'
+    // You can change the configuration based on that.
+    // 'PRODUCTION' is used when building the static version of storybook.
+
+    // Make whatever fine-grained changes you need
     config.plugins.push(
         new webpack.DefinePlugin({
             'process.env': {
@@ -34,9 +37,24 @@ module.exports = ({config, mode}) => {
         })
     );
 
-    const newConfig = merge(projectConfig, config);
+    config.module.rules.push({
+        test: /\.ts?$/,
+        include: [
+            path.join(__dirname, 'store'),
+        ],
+        use: [
+            {
+                loader: 'babel-loader',
+            },
+            {
+                loader: 'ts-loader',
+                options: {
+                    appendTsSuffixTo: [/\.vue$/],
+                },
+            },
+        ],
+    });
 
-    // console.log(require('util').inspect(config, false, null, true));
-    // process.exit();
-    return newConfig;
+    // Return the altered config
+    return config;
 };

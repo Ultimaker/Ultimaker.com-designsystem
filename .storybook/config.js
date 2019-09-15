@@ -13,6 +13,7 @@ import {PublicEventService} from 'src/js';
 import 'src/scss/storybook.scss';
 import storyRoot from 'src/stories/story.root.js';
 import viewPort from "utils/viewport";
+import { createStore } from './store';
 
 if(process.env.BABEL_ENV === 'jest') {
     const registerRequireContextHook = require('babel-plugin-require-context-hook/register');
@@ -44,6 +45,7 @@ addDecorator((story) => ({
         wrappedStory: story(),
         storyRoot: storyRoot
     },
+    store: createStore(),
     template: `
         <story-root>
             <wrapped-story />

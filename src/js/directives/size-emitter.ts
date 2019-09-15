@@ -1,7 +1,6 @@
 import Vue, { DirectiveOptions } from 'vue';
 import debounce from 'lodash/debounce';
 import ViewportUtility from 'utils/viewport';
-import PublicEventService from 'plugins/public-event-service';
 
 const viewportUtil = new ViewportUtility();
 function SizeHandlerFactory(binding, vnode) {
@@ -10,7 +9,10 @@ function SizeHandlerFactory(binding, vnode) {
         const height = vnode.elm.offsetHeight;
 
         if (vnode.context.__sizeEmitterHeight !== height) {
-            PublicEventService.emit('size', { element: binding.value, size: height });
+            vnode.context.$store.dispatch('sizeEmitter/SET_STORED_HEIGHT', { key: binding.value, value: height })
+                .then()
+                .catch((err) => console.error(err));
+
             // eslint-disable-next-line no-param-reassign
             vnode.context.__sizeEmitterHeight = height;
         }
