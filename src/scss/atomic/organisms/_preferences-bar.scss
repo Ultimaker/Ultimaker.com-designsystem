@@ -108,11 +108,12 @@
     }
 
     &__label {
-        @extend small;
+        align-items: center;
+        color: $colorGrayTextNotification;
+        display: flex;
         margin-bottom: 0;
         margin-left: $buildingUnit;
         margin-right: $buildingUnit;
-        color: $colorGrayTextNotification;
         text-align: left;
     }
 
