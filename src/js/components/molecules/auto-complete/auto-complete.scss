@@ -10,18 +10,16 @@
 }
 
 .auto-complete__dropdown {
-    position: absolute;
     background: $colorWhite;
+    border: none;
     box-shadow: $defaultBoxShadow;
-    width: 100%;
-    border: $inputBorder;
-    z-index: 1000;
-
     list-style: none;
-    user-select: none;
-    border: 0;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    position: absolute;
+    user-select: none;
+    width: 100%;
+    z-index: 1000;
 }
 
 .auto-complete__input {
@@ -39,20 +37,16 @@
 }
 
 .auto-complete__label {
-    list-style: none;
-    user-select: none;
+    background-color: $colorGrayExtraLight;
     border: 0;
-    padding: 0;
-    margin: 0;
-    padding-left: $buildingUnit;
-    padding-right: $buildingUnit;
-    padding-top: $buildingUnit / 2;
-    padding-bottom: $buildingUnit / 2;
+    color: $colorGrayDark;
     font-size: 12px;
     font-weight: normal;
-
-    color: $colorGrayDark;
-    background-color: $colorGrayExtraLight;
+    list-style: none;
+    margin: 0;
+    padding: $buildingUnit/2 $buildingUnit;
+    text-align: left;
+    user-select: none;
 }
 
 .auto-complete__list {
@@ -64,24 +58,17 @@
 }
 
 .auto-complete__list-item {
-    list-style: none;
-    user-select: none;
     border: 0;
-    padding: 0;
-    margin: 0;
-    padding-left: $buildingUnit;
-    padding-right: $buildingUnit;
+    color: $colorBlack;
+    cursor: pointer;
     font-size: 14px;
     line-height: 1.5;
-    margin-top: -2px;
-    // margin-bottom: 23px;
-
-    padding-top: $buildingUnit;
-    padding-bottom: $buildingUnit;
-
-    cursor: pointer;
+    list-style: none;
+    margin: 0;
     outline: none;
-    color: $colorBlack;
+    padding: $buildingUnit;
+    text-align: left;
+    user-select: none;
 
     &:hover,
     &:active {
