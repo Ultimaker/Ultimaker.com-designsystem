@@ -49,7 +49,7 @@ podTemplate(
         parallel(
           'linting': {
             container('node') {
-              sh 'npm run lint'
+              sh 'npm run lint:diff'
             }
           },
           'unit test': {
