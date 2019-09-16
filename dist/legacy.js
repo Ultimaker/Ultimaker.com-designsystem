@@ -17513,10 +17513,12 @@ var PageHeader = function (_Vue) {
     }, {
         key: "handleFocus",
         value: function handleFocus() {
-            if (!this.$refs.search || !this.$refs.search.focusInput) {
+            var search = this.$refs.search;
+
+            if (!this.$refs.search || !search.focusInput) {
                 return;
             }
-            this.$refs.search.focusInput();
+            search.focusInput();
         }
     }, {
         key: "handleNavAssistClick",
