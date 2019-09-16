@@ -20,7 +20,7 @@ export class LocaleSelector extends Vue implements LocaleSelectorProps {
     @Prop({ type: String, required: true }) type!: string;
 
     localeSelectorOpen: boolean = false;
-    currentIsoCode = this.initialIsoCode;
+    currentIsoCode: string = this.initialIsoCode;
 
     get ariaLabel(): string {
         return `Change your locale, currently: ${this.datasource[this.currentIsoCode]}`;
@@ -34,7 +34,7 @@ export class LocaleSelector extends Vue implements LocaleSelectorProps {
         return this.datasource[this.currentIsoCode];
     }
 
-    handleLocaleChange(code): void {
+    handleLocaleChange(code: string | null): void {
         if (!code) {
             this.toggleLocaleSelector();
             return;
@@ -59,10 +59,9 @@ export class LocaleSelector extends Vue implements LocaleSelectorProps {
         this.$emit('is-editing', null);
     }
 
-    localeSelectorClickOutsideHandler(event): void {
+    localeSelectorClickOutsideHandler(): void {
         if (this.localeSelectorOpen) {
             this.localeSelectorOpen = false;
-
             this.$emit('is-editing', null);
         }
     }
