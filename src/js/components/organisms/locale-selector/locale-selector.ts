@@ -1,40 +1,40 @@
 /** @format */
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
-import { LocaleSelectorProps } from './locale-selector.models';
+import { LocaleAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/LocaleAutoCompleteField';
 import WithRender from './locale-selector.vue.html';
 
 @WithRender
 @Component({
     name: 'locale-selector',
 })
-export class LocaleSelector extends Vue implements LocaleSelectorProps {
-    @Prop({ type: Object, required: true }) datasource!: LocaleSelectorProps['datasource'];
-    @Prop({ type: String, required: true }) eventLocaleChanged!: string;
-    @Prop({ type: String, default: null }) highlightedLabel!: LocaleSelectorProps['highlightedLabel'];
-    @Prop({ type: String, default: '' }) iconName!: string;
-    @Prop({ type: String, required: true }) initialIsoCode!: string;
-    @Prop({ type: String, default: null }) label!: LocaleSelectorProps['label'];
-    @Prop({ type: String, default: '' }) placeholder!: LocaleSelectorProps['placeholder'];
-    @Prop({ type: Boolean, required: false }) showSuggestions?: boolean;
-    @Prop({ type: String, default: '' }) suggestionsLabel!: LocaleSelectorProps['suggestionsLabel'];
-    @Prop({ type: String, required: true }) type!: string;
+export class LocaleSelector extends Vue {
+    @Prop({ type: Object, required: true }) public datasource!: LocaleAutoCompleteField['datasource'];
+    @Prop({ type: String, required: true }) public eventLocaleChanged!: string;
+    @Prop({ type: String, default: null }) public highlightedLabel!: LocaleAutoCompleteField['highlightedLabel'];
+    @Prop({ type: String, default: '' }) public iconName!: string;
+    @Prop({ type: String, required: true }) public initialIsoCode!: string;
+    @Prop({ type: String, default: null }) public label!: LocaleAutoCompleteField['label'];
+    @Prop({ type: String, default: '' }) public placeholder!: LocaleAutoCompleteField['placeholder'];
+    @Prop({ type: Boolean, required: false }) public showSuggestions?: boolean;
+    @Prop({ type: String, default: '' }) public suggestionsLabel!: LocaleAutoCompleteField['suggestionsLabel'];
+    @Prop({ type: String, required: true }) public type!: string;
 
-    localeSelectorOpen: boolean = false;
-    currentIsoCode: string = this.initialIsoCode;
+    private localeSelectorOpen: boolean = false;
+    private currentIsoCode: string = this.initialIsoCode;
 
-    get ariaLabel(): string {
+    private get ariaLabel(): string {
         return `Change your locale, currently: ${this.datasource[this.currentIsoCode]}`;
     }
 
-    get buttonText(): string {
+    private get buttonText(): string {
         return this.currentIsoCode.toUpperCase();
     }
 
-    get iconButtonText(): string {
+    private get iconButtonText(): string {
         return this.datasource[this.currentIsoCode];
     }
 
-    handleLocaleChange(code: string | null): void {
+    private handleLocaleChange(code: string | null): void {
         if (!code) {
             this.toggleLocaleSelector();
             return;
@@ -48,7 +48,7 @@ export class LocaleSelector extends Vue implements LocaleSelectorProps {
         this.toggleLocaleSelector();
     }
 
-    toggleLocaleSelector(): void {
+    private toggleLocaleSelector(): void {
         this.localeSelectorOpen = !this.localeSelectorOpen;
 
         if (this.localeSelectorOpen) {
@@ -59,7 +59,7 @@ export class LocaleSelector extends Vue implements LocaleSelectorProps {
         this.$emit('is-editing', null);
     }
 
-    localeSelectorClickOutsideHandler(): void {
+    private localeSelectorClickOutsideHandler(): void {
         if (this.localeSelectorOpen) {
             this.localeSelectorOpen = false;
             this.$emit('is-editing', null);
@@ -67,7 +67,7 @@ export class LocaleSelector extends Vue implements LocaleSelectorProps {
     }
 
     @Watch('initialIsoCode')
-    onInitialIsoCodeChange() {
+    private onInitialIsoCodeChange(): void {
         this.currentIsoCode = this.initialIsoCode;
     }
 }

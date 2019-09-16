@@ -1,11 +1,11 @@
-import Vue, { DirectiveOptions } from 'vue';
+import { DirectiveOptions } from 'vue';
 
 export class ClickOutside implements DirectiveOptions {
-    name: string = 'ClickOutside';
+    public name: string = 'ClickOutside';
 
-    bind(el: any, binding, vnode) {
+    public bind(el: HTMLElement | any, binding, vnode): void {
         // eslint-disable-next-line no-param-reassign
-        el.clickOutsideEvent = event => {
+        el.clickOutsideEvent = (event: Event): void => {
             // check that the click event was outside the element and its children
             if (!(el === event.target || el.contains(event.target))) {
                 // and if it did, call method provided in the attribute value
@@ -18,7 +18,7 @@ export class ClickOutside implements DirectiveOptions {
         document.body.addEventListener('click', el.clickOutsideEvent);
     }
 
-    unbind(el: any) {
+    public unbind(el: HTMLElement | any): void {
         document.body.removeEventListener('click', el.clickOutsideEvent);
     }
 }

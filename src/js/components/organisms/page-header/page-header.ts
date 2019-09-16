@@ -4,6 +4,7 @@ import WithRender from './page-header.vue.html';
 import { Getter } from 'vuex-class';
 
 import ViewportUtility from 'utils/viewport';
+
 const namespace = { namespace: 'sizeEmitter' };
 
 @WithRender
@@ -12,25 +13,22 @@ const namespace = { namespace: 'sizeEmitter' };
 })
 
 export class PageHeader extends Vue implements PageHeaderProps {
-    @Prop({ type: Array, required: false }) navigation!: PageHeaderProps['navigation'];
-    @Prop({ type: Object, required: false }) cta!: PageHeaderProps['cta'];
-    @Prop({ type: Object, required: false }) search!: PageHeaderProps['search'];
-    @Prop({ type: String, required: false }) language?: PageHeaderProps['language'];
+    @Prop({ type: Array, required: false }) public navigation!: PageHeaderProps['navigation'];
+    @Prop({ type: Object, required: false }) public cta!: PageHeaderProps['cta'];
+    @Prop({ type: Object, required: false }) public search!: PageHeaderProps['search'];
+    @Prop({ type: String, required: false }) public language?: PageHeaderProps['language'];
 
-    @Getter('storedHeights', namespace) storedHeights;
+    @Getter('storedHeights', namespace) public storedHeights;
 
-    assistUsed: boolean = false;
-    viewportUtil: any = new ViewportUtility();
-    searchOpen: boolean = false;
-    showCompactMenu: boolean = true;
-    maxMobileRes: number = 1025;
-    resize: boolean = false;
-    mainNavOpen: boolean = false;
-    $refs!: {
-        search: HTMLFormElement,
-    };
+    private assistUsed: boolean = false;
+    private viewportUtil: ViewportUtility = new ViewportUtility();
+    private searchOpen: boolean = false;
+    private showCompactMenu: boolean = true;
+    private maxMobileRes: number = 1025;
+    private resize: boolean = false;
+    private mainNavOpen: boolean = false;
 
-    get headerClasses() {
+    private get headerClasses(): object {
         let isFixed = true;
 
         if (this.storedHeights.drawer !== null) {
@@ -43,28 +41,31 @@ export class PageHeader extends Vue implements PageHeaderProps {
         };
     }
 
-    openSearch() {
+    private openSearch(): void {
         this.searchOpen = true;
     }
 
-    closeSearch() {
+    private closeSearch(): void {
         this.searchOpen = false;
     }
 
-    handleOpenCompactMenu(show): void {
+    private handleOpenCompactMenu(show): void {
         if (!show) {
             this.closeMainNav();
         }
     }
 
-    handleFocus() {
-        if (!this.$refs.search || !this.$refs.search.focusInput) {
+    private handleFocus(): void {
+        const { search }: HTMLFormElement = (this.$refs as HTMLFormElement);
+
+        if (!this.$refs.search || !search.focusInput) {
             return;
         }
-        this.$refs.search.focusInput();
+
+        search.focusInput();
     }
 
-    handleNavAssistClick(stateChange): void {
+    private handleNavAssistClick(stateChange): void {
         if (stateChange === 'open-mobile-nav') {
             this.closeSearch();
             this.openMainNav();
@@ -76,7 +77,7 @@ export class PageHeader extends Vue implements PageHeaderProps {
         }
     }
 
-    focusFirstSysNavItem() {
+    private focusFirstSysNavItem(): void {
         const firstNavItem: HTMLElement | null = this.$el.querySelector('.sys-nav__link');
 
         if (firstNavItem) {
@@ -84,7 +85,7 @@ export class PageHeader extends Vue implements PageHeaderProps {
         }
     }
 
-    focusHomeNavItem() {
+    private focusHomeNavItem(): void {
         const homeLink: HTMLElement | null = this.$el.querySelector('.home-link');
 
         if (homeLink) {
@@ -92,27 +93,27 @@ export class PageHeader extends Vue implements PageHeaderProps {
         }
     }
 
-    handleResize() {
+    private handleResize(): void {
         this.showCompactMenu = this.viewportUtil.screenWidth < this.maxMobileRes;
     }
 
-    openMainNav(): void {
+    private openMainNav(): void {
         this.mainNavOpen = true;
     }
 
-    closeMainNav(): void {
+    private closeMainNav(): void {
         this.mainNavOpen = false;
     }
 
-    beforeDestroy() {
+    private beforeDestroy(): void {
         this.viewportUtil.removeResizeHandler(this.handleResize);
     }
 
-    beforeMount() {
+    private beforeMount(): void {
         this.viewportUtil.addResizeHandler(this.handleResize);
     }
 
-    mounted() {
+    private mounted(): void {
         this.handleResize();
     }
 }

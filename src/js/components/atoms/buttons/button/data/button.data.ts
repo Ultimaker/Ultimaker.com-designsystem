@@ -21,4 +21,4 @@ export const data = {
     },
 };
 
-export default type => data[type];
+export default (type): object => data[type];

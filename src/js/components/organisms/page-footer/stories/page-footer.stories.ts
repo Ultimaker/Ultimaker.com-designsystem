@@ -5,7 +5,7 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/page-footer.data';
 import knobsFormat from './page-footer.knobs-format';
 
-const getStory = type => () => {
+const getStory = (type: string): Function => (): object => {
     const knobs = getKnobs(
         data[type],
         knobsFormat,

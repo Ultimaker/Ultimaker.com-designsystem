@@ -1,7 +1,8 @@
 /** @format */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import ViewportUtil from 'utils/viewport';
-import { AutoCompleteItem, AutoCompleteProps } from './auto-complete.models';
+import { AutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/AutoCompleteField';
+import { AutoCompleteItem } from './auto-complete-item.interface';
 import WithRender from './auto-complete.vue.html';
 import escapeStringRegexp from 'escape-string-regexp';
 
@@ -9,35 +10,35 @@ import escapeStringRegexp from 'escape-string-regexp';
 @Component({
     name: 'auto-complete',
 })
-export default class AutoComplete extends Vue implements AutoCompleteProps {
-    @Prop({ type: Object, required: true }) datasource!: AutoCompleteProps['datasource'];
-    @Prop({ type: Array, default: () => [] }) highlightedKeys!: any[];
-    @Prop({ type: String, required: true }) highlightedLabel!: AutoCompleteProps['highlightedLabel'];
-    @Prop({ type: String, required: true }) label!: AutoCompleteProps['label'];
-    @Prop({ type: Number, default: 1 }) minChar!: number;
-    @Prop({ type: String, required: true }) placeholder!: AutoCompleteProps['placeholder'];
-    @Prop({ type: Boolean }) showSuggestions?: boolean;
-    @Prop({ type: String, required: true }) suggestionsLabel!: AutoCompleteProps['suggestionsLabel'];
+export default class AutoComplete extends Vue implements AutoCompleteField {
+    @Prop({ type: Object, required: true }) public datasource!: AutoCompleteField['datasource'];
+    @Prop({ type: Array, default: (): string[] => [] }) public highlightedKeys!: string[];
+    @Prop({ type: String, required: true }) public highlightedLabel!: AutoCompleteField['highlightedLabel'];
+    @Prop({ type: String, required: true }) public label!: AutoCompleteField['label'];
+    @Prop({ type: Number, default: 1 }) public minChar!: number;
+    @Prop({ type: String, required: true }) public placeholder!: AutoCompleteField['placeholder'];
+    @Prop({ type: Boolean }) public showSuggestions?: boolean;
+    @Prop({ type: String, required: true }) public suggestionsLabel!: AutoCompleteField['suggestionsLabel'];
 
-    input: string = '';
-    reversed: boolean = false;
-    selectedIndex: number = -1;
-    viewportUtil = new ViewportUtil();
+    private input: string = '';
+    private reversed: boolean = false;
+    private selectedIndex: number = -1;
+    private viewportUtil = new ViewportUtil();
 
-    get classObject(): object {
+    private get classObject(): object {
         return {
             'auto-complete--reversed': this.reversed,
         };
     }
 
-    get hasInput(): boolean {
+    private get hasInput(): boolean {
         return this.input.length > 0;
     }
 
-    get autoCompleteItems(): AutoCompleteItem[] {
+    private get autoCompleteItems(): AutoCompleteItem[] {
         const items: AutoCompleteItem[] = [];
 
-        Object.keys(this.datasource).forEach((key) => {
+        Object.keys(this.datasource).forEach((key: string): void => {
             if (key !== 'type') {
                 items.push({
                     title: `${this.datasource[key]} - ${key}`,
@@ -49,25 +50,25 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         return items;
     }
 
-    get autoCompleteId(): string {
+    private get autoCompleteId(): string {
         return `autocomplete-${Math.floor(Math.random() * 10000)}`;
     }
 
-    get listItems(): HTMLElement[] {
+    private get listItems(): HTMLElement[] {
         return this.$refs.listItems as HTMLElement[];
     }
 
-    get highlightedItems(): AutoCompleteItem[] {
+    private get highlightedItems(): AutoCompleteItem[] {
         const highlightedItems: AutoCompleteItem[] = [];
 
         if (!this.highlightedKeys.length) {
             return highlightedItems;
         }
 
-        return this.autoCompleteItems.filter((autoCompleteItem) => this.highlightedKeys.includes(autoCompleteItem.value));
+        return this.autoCompleteItems.filter((autoCompleteItem): boolean => this.highlightedKeys.includes(autoCompleteItem.value));
     }
 
-    get suggestedItems(): AutoCompleteItem[] {
+    private get suggestedItems(): AutoCompleteItem[] {
         const suggestedItems: AutoCompleteItem[] = this.filterOutHighlightedItems(this.highlightedKeys);
 
         if (!this.hasInput) {
@@ -81,7 +82,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         return this.filterAutoCompleteItemsTitleByString(suggestedItems, this.input);
     }
 
-    calculateDirection(): void {
+    private calculateDirection(): void {
         if (!this.$refs.autoCompleteInput) {
             return;
         }
@@ -95,23 +96,23 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         this.reversed = windowBottom < inputBottom;
     }
 
-    clearSelection(): void {
+    private clearSelection(): void {
         this.input = '';
     }
 
-    filterAutoCompleteItemsTitleByString(list: AutoCompleteItem[], string: string): AutoCompleteItem[] {
-        return list.filter((autoCompleteItem) => new RegExp(escapeStringRegexp(string), 'i').test(autoCompleteItem.title));
+    private filterAutoCompleteItemsTitleByString(list: AutoCompleteItem[], string: string): AutoCompleteItem[] {
+        return list.filter((autoCompleteItem): boolean => new RegExp(escapeStringRegexp(string), 'i').test(autoCompleteItem.title));
     }
 
-    filterOutHighlightedItems(filterKeys: any[]): AutoCompleteItem[] {
+    private filterOutHighlightedItems(filterKeys: string[]): AutoCompleteItem[] {
         if (!filterKeys.length) {
             return this.autoCompleteItems;
         }
 
-        return this.autoCompleteItems.filter((autoCompleteItem) => !filterKeys.includes(autoCompleteItem.value));
+        return this.autoCompleteItems.filter((autoCompleteItem): boolean => !filterKeys.includes(autoCompleteItem.value));
     }
 
-    focus(): void {
+    private focus(): void {
         if (!this.$refs.autoCompleteInput) {
             return;
         }
@@ -119,7 +120,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         (this.$refs.autoCompleteInput as HTMLInputElement).focus();
     }
 
-    highlightItem(direction: number): void {
+    private highlightItem(direction: number): void {
         this.selectedIndex = this.selectedIndex + direction;
 
         if (this.selectedIndex > this.listItems.length - 1) {
@@ -133,7 +134,7 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         this.listItems[this.selectedIndex].focus();
     }
 
-    highlightString(data: string): string {
+    private highlightString(data: string): string {
         const stringToReplace = new RegExp(escapeStringRegexp(this.input), 'i');
         const matches = data.match(stringToReplace);
 
@@ -144,12 +145,12 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         return data.replace(stringToReplace, `<span class="auto-complete__value">${matches[0]}</span>`);
     }
 
-    keyEscapeHandler(): void {
+    private keyEscapeHandler(): void {
         this.clearSelection();
         this.reportSelectionMade(null);
     }
 
-    reportSelectionMade(item: AutoCompleteItem | null): void {
+    private reportSelectionMade(item: AutoCompleteItem | null): void {
         let code: string | null = null;
 
         if (item) {
@@ -159,12 +160,12 @@ export default class AutoComplete extends Vue implements AutoCompleteProps {
         this.$emit('auto-complete-input', code);
     }
 
-    selectItem(item: AutoCompleteItem): void {
+    private selectItem(item: AutoCompleteItem): void {
         this.reportSelectionMade(item);
         this.clearSelection();
     }
 
-    mounted() {
+    private mounted(): void {
         this.focus();
         this.viewportUtil.addScrollHandler(this.calculateDirection);
         this.viewportUtil.addResizeHandler(this.calculateDirection);

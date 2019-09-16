@@ -6,7 +6,7 @@ import addStories from 'src/stories/helpers/add-stories';
 import getKnobs from 'src/stories/helpers/get-knobs';
 import knobsFormat from './auto-complete.knobs-format';
 
-const getStory = (type) => () => {
+const getStory = (type: string): object => (): object => {
     const knobs = getKnobs(data[type], knobsFormat);
 
     return {
