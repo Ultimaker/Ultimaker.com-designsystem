@@ -81,8 +81,9 @@
     width: 100%;
     margin-bottom: $buildingUnit * 2.5;
     border-top: 2px solid $colorGrayLinesNotification;
-    border-left: none;
     border-right: none;
+    border-bottom: 2px solid $colorGrayLinesNotification;
+    border-left: none;
 
     @media (min-width: $mobileLWidth) {
         margin-bottom: $buildingUnit * 3;
