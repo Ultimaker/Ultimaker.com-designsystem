@@ -15,7 +15,7 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
     @Prop({ type: Array, default: (): string[] => [] }) public highlightedKeys!: string[];
     @Prop({ type: String, required: true }) public highlightedLabel!: AutoCompleteField['highlightedLabel'];
     @Prop({ type: String, required: true }) public label!: AutoCompleteField['label'];
-    @Prop({ type: Number, default: 1 }) public minChar!: number;
+    @Prop({ type: Number, default: 3 }) public minChar!: number;
     @Prop({ type: String, required: true }) public placeholder!: AutoCompleteField['placeholder'];
     @Prop({ type: Boolean }) public showSuggestions?: boolean;
     @Prop({ type: String, required: true }) public suggestionsLabel!: AutoCompleteField['suggestionsLabel'];
@@ -32,7 +32,7 @@ export default class AutoComplete extends Vue implements AutoCompleteField {
     }
 
     private get hasInput(): boolean {
-        return this.input.length > 0;
+        return this.input.length >= this.minChar;
     }
 
     private get autoCompleteItems(): AutoCompleteItem[] {

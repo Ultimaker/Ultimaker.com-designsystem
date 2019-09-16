@@ -14,6 +14,7 @@ export class LocaleSelector extends Vue {
     @Prop({ type: String, default: '' }) public iconName!: string;
     @Prop({ type: String, required: true }) public initialIsoCode!: string;
     @Prop({ type: String, default: null }) public label!: LocaleAutoCompleteField['label'];
+    @Prop({ type: Number, default: 3 }) public minChar!: number;
     @Prop({ type: String, default: '' }) public placeholder!: LocaleAutoCompleteField['placeholder'];
     @Prop({ type: Boolean, required: false }) public showSuggestions?: boolean;
     @Prop({ type: String, default: '' }) public suggestionsLabel!: LocaleAutoCompleteField['suggestionsLabel'];
