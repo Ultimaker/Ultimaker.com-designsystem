@@ -310,7 +310,6 @@ small a:focus:not(:hover),
 .tag a:focus:not(:hover),
 .tablist__section .tablist a:focus:not(:hover),
 .tablist__section .tablist__headline a:focus:not(:hover),
-.settings-selector__label a:focus:not(:hover),
 .subnavigation__label a:focus:not(:hover),
 small a:focus:not(:active),
 .caption-list__headline a:focus:not(:active),
@@ -324,7 +323,6 @@ small a:focus:not(:active),
 .tag a:focus:not(:active),
 .tablist__section .tablist a:focus:not(:active),
 .tablist__section .tablist__headline a:focus:not(:active),
-.settings-selector__label a:focus:not(:active),
 .subnavigation__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
 .content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .subnavigation__link:focus:not(:hover), .subnavigation__link:focus:not(:active) {
@@ -991,7 +989,7 @@ q {
   color: #7f7f7f; }
 
 small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.subnavigation__link:hover, .link--small.subnavigation__link.exact-active, .price-table__tagline,
-.price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .settings-selector__label, .subnavigation__label {
+.price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .subnavigation__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
@@ -999,7 +997,7 @@ small, .caption-list__headline, .caption-list__list-item, .link.link--small, .li
   color: inherit; }
   @media (min-width: 768px) {
     small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.subnavigation__link:hover, .link--small.subnavigation__link.exact-active, .price-table__tagline,
-    .price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .settings-selector__label, .subnavigation__label {
+    .price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .subnavigation__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -1211,7 +1209,6 @@ a {
   .tag a,
   .tablist__section .tablist a,
   .tablist__section .tablist__headline a,
-  .settings-selector__label a,
   .subnavigation__label a,
   .content--rich li a {
     font-weight: normal; }
@@ -5971,10 +5968,12 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brand
     .settings-selector .form-group {
       display: flex; } }
   .settings-selector__label {
+    align-items: center;
+    color: #787a7f;
+    display: flex;
     margin-bottom: 0;
     margin-left: 12px;
     margin-right: 12px;
-    color: #787a7f;
     text-align: left; }
   .settings-selector__edit-button {
     font-size: 16px;
