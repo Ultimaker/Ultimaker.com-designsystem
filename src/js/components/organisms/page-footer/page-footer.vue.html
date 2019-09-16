@@ -37,6 +37,7 @@
                     showSuggestions
                     :eventLocaleChanged="eventLanguageChanged"
                     :initialIsoCode="languageCode"
+                    :minChar="1"
                     v-bind="localeSelector"
                     v-if="showLanguageSelector"
                     @is-editing="toggleSelector"
