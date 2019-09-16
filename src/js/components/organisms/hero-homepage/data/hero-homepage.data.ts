@@ -1,7 +1,4 @@
 /** @format */
-
-import { Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
-
 export const data = {
     'With CTA': {
         title: 'Professional 3D printing made accessible',

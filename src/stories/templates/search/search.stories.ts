@@ -9,7 +9,7 @@ import { data } from './data/search.data';
 
 import knobsFormat from './search.knobs-format';
 
-const getStory = (type) => () => {
+const getStory = (type: string): object => (): object => {
     const knobs = getKnobs(data[type], knobsFormat);
 
     return {
