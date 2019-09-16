@@ -17014,7 +17014,7 @@ var LocaleSelector = function (_Vue) {
         }
     }, {
         key: "localeSelectorClickOutsideHandler",
-        value: function localeSelectorClickOutsideHandler(event) {
+        value: function localeSelectorClickOutsideHandler() {
             if (this.localeSelectorOpen) {
                 this.localeSelectorOpen = false;
                 this.$emit('is-editing', null);
