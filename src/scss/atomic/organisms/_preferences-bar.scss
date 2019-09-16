@@ -102,13 +102,8 @@
     border-bottom: 1px solid $colorGrayLinesNotification;
 
     .form-group {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        @media (min-width: $mobileLWidth) {
-            flex-direction: row;
-            align-items: center;
+        @media (min-width: $mobileXlWidth) {
+            display: flex;
         }
     }
 
@@ -118,11 +113,7 @@
         margin-left: $buildingUnit;
         margin-right: $buildingUnit;
         color: $colorGrayTextNotification;
-
-        @media (min-width: $mobileLWidth) {
-            flex-direction: row;
-            align-items: center;
-        }
+        text-align: left;
     }
 
     &__edit-button {
