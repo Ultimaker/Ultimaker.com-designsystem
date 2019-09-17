@@ -51,3 +51,7 @@ To add and run prettier against a component use the following command adjusting 
 ```sh
 npx prettier --write --insert-pragma --require-pragma=false src/js/components/molecules/cards/card-article/**/*.{ts,scss,html}
 ```
+
+## Git Hooks
+git hook management has been setup using using [husky](https://www.npmjs.com/package/husky). current hooks:
+* `pre-push` 
