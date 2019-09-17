@@ -1,7 +1,5 @@
-/** @format */
-
 // http://eslint.org/docs/user-guide/configuring
-
+/** @format */
 module.exports = {
     root: true,
     parser: '@typescript-eslint/parser',
@@ -16,7 +14,9 @@ module.exports = {
         jasmine: true,
         node: true,
     },
-    plugins: ['@typescript-eslint'],
+    plugins: [
+        '@typescript-eslint',
+    ],
     extends: [
         'plugin:@typescript-eslint/recommended',
         'eslint-config-airbnb-base',
@@ -30,7 +30,7 @@ module.exports = {
         'arrow-parens': ['off'],
         'class-methods-use-this': 'off',
         'global-require': 'off',
-        indent: ['error', 4, { SwitchCase: 1 }],
+        'indent': ['error', 4, { 'SwitchCase': 1 }],
         'import/newline-after-import': 'off',
         'import/no-extraneous-dependencies': 'off',
         'import/no-unresolved': 'off',
@@ -40,11 +40,28 @@ module.exports = {
         'max-len': 'off',
         'max-line-length': 'off',
         'new-parens': 'off',
-        'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
+        'no-console': ["error", { allow: ["info", "warn", "error"] }],
         'no-underscore-dangle': 'off',
         'no-unused-vars': 'off',
         'object-curly-newline': 'off',
         'operator-linebreak': 'off',
         'prefer-default-export': 'off',
+
+        // recommended typescript-eslint rules: non-auto-fixable marked as warn
+        '@typescript-eslint/adjacent-overload-signatures': ['warn'],
+        '@typescript-eslint/camelcase': ['warn'],
+        '@typescript-eslint/class-name-casing': ['warn'],
+        '@typescript-eslint/explicit-function-return-type': ['warn'],
+        '@typescript-eslint/explicit-member-accessibility': ['warn'],
+        '@typescript-eslint/interface-name-prefix': ['warn'],
+        '@typescript-eslint/no-empty-interface': ['warn'],
+        '@typescript-eslint/no-explicit-any': ['warn'],
+        '@typescript-eslint/no-misused-new': ['warn'],
+        '@typescript-eslint/no-namespace': ['warn'],
+        '@typescript-eslint/no-non-null-assertion': ['warn'],
+        '@typescript-eslint/no-parameter-properties': ['warn'],
+        '@typescript-eslint/no-unused-vars': ['warn'],
+        '@typescript-eslint/no-use-before-define': ['warn'],
+        '@typescript-eslint/no-var-requires': ['warn'],
     },
 };
