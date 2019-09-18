@@ -14,6 +14,7 @@ const namespace = { namespace: 'sizeEmitter' };
 
 export class PageHeader extends Vue implements PageHeaderProps {
     @Prop({ type: Array, required: false }) public navigation!: PageHeaderProps['navigation'];
+    @Prop({ type: String, required: false, default: '/' }) public homepageUrl!: string;
     @Prop({ type: Object, required: false }) public cta!: PageHeaderProps['cta'];
     @Prop({ type: Object, required: false }) public search!: PageHeaderProps['search'];
     @Prop({ type: String, required: false }) public language?: PageHeaderProps['language'];

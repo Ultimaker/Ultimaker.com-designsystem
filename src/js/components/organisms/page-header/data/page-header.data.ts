@@ -1,5 +1,6 @@
 export const data = {
     default: {
+        homepageUrl: '/',
         language: 'nl',
         mainNavOpen: false,
         cta: {
