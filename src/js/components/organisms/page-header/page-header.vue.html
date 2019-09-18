@@ -1,8 +1,8 @@
 <header class="header" :lang="language" :class="headerClasses" role="banner" v-size-emitter="'header'">
     <div class="header__top" :class="{'header--mobile-inverted': mainNavOpen}">
-        <router-link to="/" class="home-link" aria-label="Ultimaker homepage">
+        <a :href="homepageUrl" class="home-link" aria-label="Ultimaker homepage">
             <icon class="home-link__logo" icon-name="logo-ultimaker"></icon>
-        </router-link>
+        </a>
 
         <main-navigation v-if="navigation" :navigation="navigation" :main-nav-open="mainNavOpen" @nav-assist-click="handleNavAssistClick" @show-compact-menu="handleOpenCompactMenu"></main-navigation>
 

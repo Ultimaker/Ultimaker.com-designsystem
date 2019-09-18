@@ -14,6 +14,7 @@ const getStory = type => () => {
     return {
         props: {
             mainNavOpen: { default: knobs.mainNavOpen },
+            homepageUrl: { default: knobs.homepageUrl },
             cta: { default: knobs.cta },
             search: { default: knobs.search },
             navigation: { default: knobs.navigation },
