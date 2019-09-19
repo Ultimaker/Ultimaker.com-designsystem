@@ -1,12 +1,17 @@
 .in-page-notification {
-    text-align:center;
+    text-align: center;
     background-color: #E8F0FD;
     padding: 2*$buildingUnit 0;
     font-size: 16px;
     color: #000e1a;
     margin: 0;
+
     &__button {
         background-color: transparent;
         @extend .notification__button;
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding: 4*$buildingUnit 0;
     }
 }
