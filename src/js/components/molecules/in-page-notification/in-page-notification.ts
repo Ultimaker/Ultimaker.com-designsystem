@@ -14,4 +14,3 @@ export class InPageNotification extends Vue {
         this.display = false;
     }
 }
-
