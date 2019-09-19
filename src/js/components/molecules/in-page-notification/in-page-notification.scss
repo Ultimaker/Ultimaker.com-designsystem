@@ -8,10 +8,15 @@
 
     &__button {
         background-color: transparent;
-        @extend .notification__button;
+
+        &:hover,
+        &:focus {
+            color: $colorBlack;
+            background-color: $colorNoteHover;
+        }
     }
 
-    @media only screen and (max-width: 600px) {
+    @include max-tablet {
         padding: 4*$buildingUnit 0;
     }
 }
