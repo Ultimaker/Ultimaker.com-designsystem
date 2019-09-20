@@ -1,20 +1,32 @@
 import { Action, Module, Mutation, VuexModule } from 'vuex-module-decorators';
 
-export function sizeEmitter(store) {
+export function sizeEmitter(store): {} {
     @Module({ store, dynamic: true, namespaced: true, name: 'sizeEmitter' })
     class SizeEmitter extends VuexModule {
-        public _storedHeights: any = {
+        public _storedHeights: { drawer: null | number; header: null | number } = {
             drawer: null,
             header: null,
         };
 
         @Mutation
-        private setStoredHeight(payload: { key: string, value: number }): void {
+        private setStoredHeight(payload: { key: string; value: number }): void {
             const { key, value } = payload;
 
             const mutation = {
-                drawer: (): void => { this._storedHeights.drawer = value; },
-                header: (): void => { this._storedHeights.header = value; },
+                drawer: (): void => {
+                    if (this._storedHeights.drawer === value) {
+                        return;
+                    }
+
+                    this._storedHeights.drawer = value;
+                },
+                header: (): void => {
+                    if (this._storedHeights.drawer === value) {
+                        return;
+                    }
+
+                    this._storedHeights.header = value;
+                },
             }[key];
 
             if (typeof mutation === 'function') {
@@ -23,7 +35,7 @@ export function sizeEmitter(store) {
         }
 
         @Action
-        public async SET_STORED_HEIGHT(payload: { key: string, value: number }): Promise<void> {
+        public async SET_STORED_HEIGHT(payload: { key: string; value: number }): Promise<void> {
             this.setStoredHeight(payload);
         }
 
