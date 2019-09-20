@@ -1,39 +1,40 @@
-import { Vue, Component, Prop } from 'vue-property-decorator';
-import { PageHeaderProps } from './page-header.models';
-import WithRender from './page-header.vue.html';
-import { Getter } from 'vuex-class';
-
 import ViewportUtility from 'utils/viewport';
-
-const namespace = { namespace: 'sizeEmitter' };
+import WithRender from './page-header.vue.html';
+import { PageHeaderProps } from './page-header.models';
+import { Vue, Component, Prop } from 'vue-property-decorator';
 
 @WithRender
 @Component({
     name: 'PageHeader',
 })
-
 export class PageHeader extends Vue implements PageHeaderProps {
-    @Prop({ type: Array, required: false }) public navigation!: PageHeaderProps['navigation'];
-    @Prop({ type: String, required: false, default: '/' }) public homepageUrl!: string;
     @Prop({ type: Object, required: false }) public cta!: PageHeaderProps['cta'];
-    @Prop({ type: Object, required: false }) public search!: PageHeaderProps['search'];
+    @Prop({ type: String, required: false, default: '/' }) public homepageUrl!: string;
     @Prop({ type: String, required: false }) public language?: PageHeaderProps['language'];
+    @Prop({ type: Array, required: false }) public navigation!: PageHeaderProps['navigation'];
+    @Prop({ type: Object, required: false }) public search!: PageHeaderProps['search'];
 
-    @Getter('storedHeights', namespace) public storedHeights;
-
+    private $onPublic;
+    private $offPublic;
     private assistUsed: boolean = false;
-    private viewportUtil: ViewportUtility = new ViewportUtility();
+    private mainNavOpen: boolean = false;
+    private maxMobileRes: number = 1025;
+    private preferencesBarStatus: string = 'open';
+    private resize: boolean = false;
     private searchOpen: boolean = false;
     private showCompactMenu: boolean = true;
-    private maxMobileRes: number = 1025;
-    private resize: boolean = false;
-    private mainNavOpen: boolean = false;
+    private viewportUtil: ViewportUtility = new ViewportUtility();
+
+    private get storedHeights(): { drawer: number; header: number } {
+        // @ts-ignore
+        return this.$parent.$store.getters['sizeEmitter/storedHeights'];
+    }
 
     private get headerClasses(): object {
         let isFixed = true;
 
-        if (this.storedHeights.drawer !== null) {
-            isFixed = this.viewportUtil.scrollY > this.storedHeights.drawer;
+        if (this.storedHeights.drawer !== null && this.preferencesBarStatus !== 'closed') {
+            isFixed = this.viewportUtil.scrollY >= this.storedHeights.drawer;
         }
 
         return {
@@ -108,6 +109,7 @@ export class PageHeader extends Vue implements PageHeaderProps {
 
     private beforeDestroy(): void {
         this.viewportUtil.removeResizeHandler(this.handleResize);
+        this.$offPublic('preferences-bar');
     }
 
     private beforeMount(): void {
@@ -116,5 +118,6 @@ export class PageHeader extends Vue implements PageHeaderProps {
 
     private mounted(): void {
         this.handleResize();
+        this.$onPublic('preferences-bar', (payload): void => { this.preferencesBarStatus = payload; });
     }
 }
