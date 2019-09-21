@@ -12,16 +12,16 @@ describe('components', (): void => {
             const desiredWidth = 300;
             const desiredHeight = 200;
             const mount = build(CImage, { props: {
-                    url: '/media/images/does/not/exist',
-                    alt: 'Non existant image',
-                    mimeType: '',
-                    quality: 65,
-                    radius: 0,
-                    imageFormat: 'png',
-                    resizeBehavior: 'fill',
-                    focusArea: 'center',
-                    backgroundColor: null,
-                } });
+                url: '/media/images/does/not/exist',
+                alt: 'Non existant image',
+                mimeType: '',
+                quality: 65,
+                radius: 0,
+                imageFormat: 'png',
+                resizeBehavior: 'fill',
+                focusArea: 'center',
+                backgroundColor: null,
+            } });
 
             beforeEach((): void => {
                 viewportUtil = new ViewportUtil();
