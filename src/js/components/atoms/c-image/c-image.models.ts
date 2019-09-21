@@ -1,5 +1,4 @@
-import { FocusArea, Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
-export { FocusArea } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
+import { Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
 
 export enum ImageFormat {
     default = '',
@@ -19,9 +18,5 @@ export enum ResizeBehavior {
     thumb = 'thumb',
 }
 
-export interface ICImageProps extends Image {
-    keepInView: boolean;
-    quality: number;
-    resizeBehavior: ResizeBehavior;
-    focusArea: FocusArea;
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface CImageInterface extends Image {}

@@ -1,88 +1,70 @@
-import { Component, Prop, Watch, Mixins } from 'vue-property-decorator';
-import { FocusArea, ICImageProps, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
-import BrowserCapabilities from 'utils/browser-capabilities';
-import ViewportUtil from 'utils/viewport';
+/** @format */
+import { Component, Prop, Mixins } from 'vue-property-decorator';
+import { CImageInterface, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
+import { FocusArea } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
+import { InView } from 'js/mixins/in-view';
 import { imageConstants } from './c-image.constants';
 import WithRender from './c-image.vue.html';
-import InView from 'js/mixins/in-view';
 
 @WithRender
 @Component({
-    name: 'CImage',
+    name: 'c-image',
 })
+export default class CImage extends Mixins(InView) implements CImageInterface {
+    @Prop({ type: String, required: true, default: '' }) public alt!: CImageInterface['alt'];
+    @Prop({ type: String, required: false, default: FocusArea.center }) public focusArea?: CImageInterface['focusArea'];
+    @Prop({ type: String, required: true }) public mimeType!: CImageInterface['mimeType'];
+    @Prop({ type: String, required: false, default: ResizeBehavior.default }) public resizeBehavior!: ResizeBehavior;
+    @Prop({ type: Number, required: false, default: 65 }) public quality!: number;
+    @Prop({ type: String, required: true }) public url!: CImageInterface['url'];
 
-export class CImage extends Mixins(InView) implements ICImageProps {
-    @Prop({ type: String, default: '' }) alt!: string;
-    @Prop({ type: Boolean, default: false }) crop!: boolean;
-    @Prop({ type: String, default: FocusArea.center }) focusArea!: FocusArea;
-    @Prop({ type: String, required: true }) mimeType!: string;
-    @Prop({ type: String, default: ResizeBehavior.default })resizeBehavior!: ResizeBehavior;
-    @Prop({ type: Number, default: 65 }) quality!: number;
-    @Prop({ type: String, required: true }) url!: string;
+    public height: number = 0;
+    public imageError: boolean = false;
+    public imageLoaded: boolean = false;
+    public width: number = 0;
 
-    height: number = 0;
-    imageError: boolean = false;
-    imageLoaded: boolean = false;
-    ready:boolean = false;
-    viewportUtil = new ViewportUtil();
-    width: number = 0;
-
-    beforeMount() {
-        if (BrowserCapabilities.isBrowser) {
-            const height = this.viewportUtil.screenHeight * 1.5;
-            this.setInViewOptions({ rootMargin: `${height}px 0px ${height}px 0px` });
-        }
+    public beforeMount(): void {
+        this.setInViewOptions({ rootMargin: '-20px 0px 20px 0px' });
     }
 
-    setError() {
+    public mounted(): void {
+        this.$el.addEventListener('load', this.imageLoadHandler);
+    }
+
+    public setError(): void {
         this.$emit('error');
         this.imageError = true;
     }
 
-    async mounted() {
-        if (!BrowserCapabilities.isBrowser) return;
-
-        this.viewportUtil.addResizeHandler(this.resizeHandler);
-
-        await this.calculateDimensions(true);
-        this.ready = true;
-    }
-
-    beforeDestroy() {
-        this.viewportUtil.removeResizeHandler(this.resizeHandler);
-        this.viewportUtil.removeScrollHandler(this.resizeHandler);
-    }
-
-    @Watch('url')
-    async reset() {
-        this.ready = false;
-        this.imageLoaded = false;
-        this.width = 0;
-        this.height = 0;
-        this.$nextTick(() => { this.ready = true; });
-
-        if (this.inView) {
-            await this.inViewWatcher(true);
-        }
-    }
-
-    get classList() {
+    public get classList(): {} {
         return {
             'img--loading': !this.inView || !this.imageLoaded,
         };
     }
 
-    get src(): string {
-        if (!this.imageLoaded) {
-            return `${this.url}${this.getParams({ width: imageConstants.initialSize })}`;
-        }
-
-        return `${this.url}${this.getParams({})}`;
+    public get src(): string {
+        return `${this.url}${this.getParams({ width: imageConstants.initialSize })}`;
     }
 
-    getParams(options?: {width?: number, height?: number}) {
+    public get srcset(): string {
+        if (!this.inView) {
+            return '';
+        }
+
+        return `
+            ${this.url}${this.getParams({ width: 320 })} 320w,
+            ${this.url}${this.getParams({ width: 480 })} 480w,
+            ${this.url}${this.getParams({ width: 768 })} 768w,
+            ${this.url}${this.getParams({ width: 1024 })} 1024w,
+            ${this.url}${this.getParams({ width: 2048 })} 2048w
+        `;
+    }
+
+    public getParams(options?: { width?: number; height?: number }): string {
         const elementWidth = this.width || imageConstants.initialSize;
         const elementHeight = this.height;
+
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const paramMap = new Map<string, any>([
             ['w', options && options.width ? options.width : elementWidth],
             ['h', options && options.height ? options.height : elementHeight],
@@ -91,7 +73,7 @@ export class CImage extends Mixins(InView) implements ICImageProps {
         ]);
 
         return Array.from(paramMap.keys()).reduce(
-            (accumulator, current) => {
+            (accumulator, current): string => {
                 const value = paramMap.get(current);
 
                 if (!value) return accumulator;
@@ -102,44 +84,7 @@ export class CImage extends Mixins(InView) implements ICImageProps {
         );
     }
 
-    calculateDimensions(forceUpdate = false) {
-        if (!BrowserCapabilities.isBrowser) return Promise.resolve();
-        if (!this.inView && !forceUpdate) return Promise.resolve();
-
-        return new Promise((resolve) => {
-            window.requestAnimationFrame(() => {
-                const rect = this.$el.getBoundingClientRect();
-                const desiredWidth = Math.floor(rect.width * (window.devicePixelRatio || 1));
-                const desiredHeight = Math.floor(rect.height * (window.devicePixelRatio || 1));
-
-                if (this.resizeBehavior !== ResizeBehavior.default) {
-                    this.width = desiredWidth > imageConstants.maxWidth ? imageConstants.maxWidth : desiredWidth;
-                    this.height = desiredHeight > imageConstants.maxHeight ? imageConstants.maxHeight : desiredHeight;
-                } else {
-                    this.width = desiredWidth > imageConstants.maxWidth ? imageConstants.maxWidth : desiredWidth;
-                }
-
-                resolve();
-            });
-        });
-    }
-
-    @Watch('inView')
-    async inViewWatcher(val:boolean) {
-        if (!val || this.imageLoaded) { return; }
-
-        await this.calculateDimensions();
-
-        const imageToLoad = document.createElement('img');
-        imageToLoad.src = this.src;
-        imageToLoad.addEventListener('load', this.imageLoadHandler);
-    }
-
-    resizeHandler() {
-        this.calculateDimensions();
-    }
-
-    imageLoadHandler() {
+    public imageLoadHandler(): void {
         this.imageLoaded = true;
     }
 }

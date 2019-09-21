@@ -1,7 +1,6 @@
 export default {
     alt: '',
     backgroundColor: '',
-    crop: false,
     focusArea: false,
     imageFormat: '',
     mimeType: '',
