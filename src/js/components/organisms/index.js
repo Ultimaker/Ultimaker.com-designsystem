@@ -22,3 +22,4 @@ export { default as Subnavigation } from 'organisms/subnavigation';
 export { default as TabbedContent } from 'organisms/tabbed-content';
 export { default as TabbedTable } from 'organisms/tabbed-table';
 export { default as TableCompare } from 'organisms/table-compare';
+export { default as JobBoardFrame } from 'organisms/job-board-frame';
