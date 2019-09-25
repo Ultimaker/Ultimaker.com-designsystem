@@ -5364,6 +5364,22 @@ because both families serve another purpose. Therefore the line-heights will be 
     width: auto; } }
 
 /** @format */
+.um-components .in-page-notification {
+  text-align: center;
+  background-color: #E8F0FD;
+  padding: 24px 0;
+  font-size: 16px;
+  color: #000e1a;
+  margin: 0; }
+  .um-components .in-page-notification__button {
+    background-color: transparent; }
+    .um-components .in-page-notification__button:hover, .um-components .in-page-notification__button:focus {
+      color: #000;
+      background-color: #d9e7fc; }
+  @media (max-width: 1024px) {
+    .um-components .in-page-notification {
+      padding: 48px 0; } }
+
 /** @format */
 .um-components main .organism:nth-child(even), .um-components main .slider-reveal:nth-child(even), .um-components main .brands:nth-child(even), .um-components main .content-cover--cover:nth-child(even), .um-components main .content-general:nth-child(even), .um-components main .tabbed-content:nth-child(even) {
   background-color: #fafafa; }

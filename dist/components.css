@@ -5890,6 +5890,22 @@ dd {
     width: auto; } }
 
 /** @format */
+.in-page-notification {
+  text-align: center;
+  background-color: #E8F0FD;
+  padding: 24px 0;
+  font-size: 16px;
+  color: #000e1a;
+  margin: 0; }
+  .in-page-notification__button {
+    background-color: transparent; }
+    .in-page-notification__button:hover, .in-page-notification__button:focus {
+      color: #000;
+      background-color: #d9e7fc; }
+  @media (max-width: 1024px) {
+    .in-page-notification {
+      padding: 48px 0; } }
+
 /** @format */
 main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .brands:nth-child(even), main .content-cover--cover:nth-child(even), main .content-general:nth-child(even), main .tabbed-content:nth-child(even) {
   background-color: #fafafa; }
