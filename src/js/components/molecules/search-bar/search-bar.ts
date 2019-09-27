@@ -10,34 +10,45 @@ import { SearchBarProps } from 'components/molecules/search-bar/search-bar.model
     name: 'search-bar',
 })
 export class SearchBar extends Vue implements SearchBarProps {
-    @Prop({ type: String, required: true }) label!: SearchBarProps['label'];
-    @Prop({ type: String, required: true }) placeholder!: SearchBarProps['placeholder'];
-    @Prop({ type: Boolean, required: false, default: false }) openState!: boolean;
+    @Prop({ type: String, required: true }) public label!: SearchBarProps['label'];
+    @Prop({ type: String, required: false, default: null }) public languageCode!: string;
+    @Prop({ type: String, required: true }) public placeholder!: SearchBarProps['placeholder'];
+    @Prop({ type: Boolean, required: false, default: false }) public openState!: boolean;
 
-    searchValue = '';
+    public searchValue = '';
 
-    close() {
+    public get action(): string {
+        let prefix = '';
+
+        if (this.languageCode && this.languageCode !== 'en') {
+            prefix = `/${this.languageCode}`;
+        }
+
+        return `${prefix}/search`;
+    }
+
+    public close(): void {
         if (this.openState) {
             this.$emit('close');
         }
     }
 
-    handleSubmit() {
+    public handleSubmit(): void {
         if (!this.searchValue.length) {
             return;
         }
 
         this.close();
-        window.location.href = `/search?search=${encodeURIComponent(this.searchValue)}`;
+        window.location.href = `${this.action}?search=${encodeURIComponent(this.searchValue)}`;
     }
 
-    onBlur() {
+    public onBlur(): void {
         if (this.searchValue === '') {
             this.close();
         }
     }
 
-    focusInput() {
+    public focusInput(): void {
         (this.$refs['search-bar__input'] as HTMLInputElement).focus();
     }
 }

@@ -1,9 +1,9 @@
 <!-- @format -->
 
-<form action="/search" class="search-bar" ref="search-form" method="get" @submit.prevent="handleSubmit">
+<form :action="action" class="search-bar" ref="search-form" method="get" @submit.prevent="handleSubmit">
     <div role="search">
         <div class="search-bar__inputholder">
-            <label for="search-bar__input" class="search-bar__label">{{label}}</label>
+            <label for="search-bar__input" class="search-bar__label">{{ label }}</label>
             <input
                 :placeholder="placeholder"
                 @blur="onBlur"
@@ -23,12 +23,12 @@
             button-class="icon-button icon-button--large search-bar__button"
             button-aria-label="Search"
             icon-name="search"
-        />
+        ></icon-button>
         <icon-button
             @click="close"
             button-class="icon-button icon-button--large search-bar__close-button"
             button-aria-label="Close search"
             icon-name="close"
-        />
+        ></icon-button>
     </div>
 </form>

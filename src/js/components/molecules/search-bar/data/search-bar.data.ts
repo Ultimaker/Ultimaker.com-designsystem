@@ -1,8 +1,10 @@
 /** @format */
+import { enLanguageCode } from './examples/en-language-code';
+import { koLanguageCode } from './examples/ko-language-code';
+import { noLanguageCode } from './examples/no-language-code';
 
 export const data = {
-    default: {
-        label: 'Search',
-        placeholder: 'A person often meets his destiny on the road he took to avoid it.',
-    },
+    enLanguageCode,
+    koLanguageCode,
+    noLanguageCode,
 };
