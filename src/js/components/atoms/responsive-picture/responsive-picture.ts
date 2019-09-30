@@ -17,14 +17,14 @@ export default class ResponsivePicture extends Vue {
     @Prop({ type: [String, Object], required: false }) mobileXlWidth!: string|object;
     @Prop({ type: [String, Object], required: false }) mobileLWidth!: string|object;
     @Prop({ type: [String, Object], required: true }) mobileWidth!: string|object;
-    @Prop({ type: Boolean, required: false, default: true }) lazy!:boolean;
-    @Prop({ type: String, required: false, default: '' }) description!:string;
-    @Prop({ type: String, required: false, default: '' }) imgClass!:string;
+    @Prop({ type: Boolean, required: false, default: true }) lazy!: boolean;
+    @Prop({ type: String, required: false, default: '' }) description!: string;
+    @Prop({ type: String, required: false, default: '' }) imgClass!: string;
 
     viewportUtil = new ViewportUtil();
-    ready:boolean = false;
-    inView:boolean = false;
-    loaded:boolean = false;
+    ready: boolean = false;
+    inView: boolean = false;
+    loaded: boolean = false;
 
     get lazyLoading() {
         return (this.lazy && !this.inView) || (!this.lazy && this.ready) || (!this.lazy);
