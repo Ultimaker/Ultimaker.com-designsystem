@@ -4177,6 +4177,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _animatedArrowVue = __webpack_require__(133);
+
+var _animatedArrowVue2 = _interopRequireDefault(_animatedArrowVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -4203,9 +4209,8 @@ var AnimatedArrow = function (_Vue) {
 
     return AnimatedArrow;
 }(_vuePropertyDecorator.Vue);
-AnimatedArrow = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'animated-arrow',
-    template: __webpack_require__(133)
+AnimatedArrow = __decorate([_animatedArrowVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'animated-arrow'
 })], AnimatedArrow);
 exports.default = AnimatedArrow;
 
@@ -4213,7 +4218,18 @@ exports.default = AnimatedArrow;
 /* 133 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg class=\"arrow--animated\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 120 120\">\n    <defs>\n        <clipPath id=\"mask\" class=\"arrow__mask\">\n            <rect x=\"40\" y=\"40\" width=\"40\" height=\"40\" rotate=\"45deg\"/>\n        </clipPath>\n    </defs>\n    <g clip-path=\"url(#mask)\">\n        <path class=\"arrow__line arrow__line-1\" d=\"M15.3 55h94.8v10.1H15.3z\" clip-path=\"url(#mask)\" />\n        <path class=\"arrow__line arrow__line-2\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n        <path class=\"arrow__line arrow__line-3\" d=\"M15.3 55h94.8v10.1H15.3z\"/>\n    </g>\n</svg>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"arrow--animated",attrs:{"fill":"currentColor","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 120 120"}},[_c('defs',[_c('clipPath',{staticClass:"arrow__mask",attrs:{"id":"mask"}},[_c('rect',{attrs:{"x":"40","y":"40","width":"40","height":"40","rotate":"45deg"}})])]),_vm._v(" "),_c('g',{attrs:{"clip-path":"url(#mask)"}},[_c('path',{staticClass:"arrow__line arrow__line-1",attrs:{"d":"M15.3 55h94.8v10.1H15.3z","clip-path":"url(#mask)"}}),_vm._v(" "),_c('path',{staticClass:"arrow__line arrow__line-2",attrs:{"d":"M15.3 55h94.8v10.1H15.3z"}}),_vm._v(" "),_c('path',{staticClass:"arrow__line arrow__line-3",attrs:{"d":"M15.3 55h94.8v10.1H15.3z"}})])])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 134 */
@@ -5930,6 +5946,10 @@ var _responsivePictureSource = __webpack_require__(173);
 
 var _responsivePictureSource2 = _interopRequireDefault(_responsivePictureSource);
 
+var _responsivePictureVue = __webpack_require__(174);
+
+var _responsivePictureVue2 = _interopRequireDefault(_responsivePictureVue);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -6036,9 +6056,8 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: true }), __metadata("design:type", Boolean)], ResponsivePicture.prototype, "lazy", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], ResponsivePicture.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], ResponsivePicture.prototype, "imgClass", void 0);
-ResponsivePicture = __decorate([(0, _vuePropertyDecorator.Component)({
+ResponsivePicture = __decorate([_responsivePictureVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'responsive-picture',
-    template: __webpack_require__(174),
     components: {
         ResponsivePictureSource: _responsivePictureSource2.default
     }
@@ -6113,7 +6132,18 @@ exports.default = ResponsivePictureSource;
 /* 174 */
 /***/ (function(module, exports) {
 
-module.exports = "<picture>\n    <template>\n        <responsive-picture-source v-if=\"desktopHdWidth\" media=\"(min-width: 1201px)\" :image=\"lazyLoading ? '' : desktopHdWidth\" />\n        <responsive-picture-source v-if=\"desktopWidth\" media=\"(min-width: 1025px)\" :image=\"lazyLoading ? '' : desktopWidth\" />\n        <responsive-picture-source v-if=\"tabletWidth\" media=\"(min-width: 768px)\" :image=\"lazyLoading ? '' : tabletWidth\" />\n        <responsive-picture-source v-if=\"mobileXlWidth\" media=\"(min-width: 569px)\" :image=\"lazyLoading ? '' : mobileXlWidth\" />\n        <responsive-picture-source v-if=\"mobileLWidth\" media=\"(min-width: 481px)\" :image=\" lazyLoading ? '' : mobileLWidth\" />\n        <responsive-picture-source media=\"(max-width: 480px)\" :image=\"mobileWidth\" />\n    </template>\n\n    <img :src=\"lazyLoading ? '' : mobileWidth.url ? mobileWidth.url : mobileWidth\" :alt=\"description\" class=\"img--responsive\" :class=\"classes\"/>\n</picture>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('picture',[[(_vm.desktopHdWidth)?_c('responsive-picture-source',{attrs:{"media":"(min-width: 1201px)","image":_vm.lazyLoading ? '' : _vm.desktopHdWidth}}):_vm._e(),_vm._v(" "),(_vm.desktopWidth)?_c('responsive-picture-source',{attrs:{"media":"(min-width: 1025px)","image":_vm.lazyLoading ? '' : _vm.desktopWidth}}):_vm._e(),_vm._v(" "),(_vm.tabletWidth)?_c('responsive-picture-source',{attrs:{"media":"(min-width: 768px)","image":_vm.lazyLoading ? '' : _vm.tabletWidth}}):_vm._e(),_vm._v(" "),(_vm.mobileXlWidth)?_c('responsive-picture-source',{attrs:{"media":"(min-width: 569px)","image":_vm.lazyLoading ? '' : _vm.mobileXlWidth}}):_vm._e(),_vm._v(" "),(_vm.mobileLWidth)?_c('responsive-picture-source',{attrs:{"media":"(min-width: 481px)","image":_vm.lazyLoading ? '' : _vm.mobileLWidth}}):_vm._e(),_vm._v(" "),_c('responsive-picture-source',{attrs:{"media":"(max-width: 480px)","image":_vm.mobileWidth}})],_vm._v(" "),_c('img',{staticClass:"img--responsive",class:_vm.classes,attrs:{"src":_vm.lazyLoading ? '' : _vm.mobileWidth.url ? _vm.mobileWidth.url : _vm.mobileWidth,"alt":_vm.description}})],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 175 */
@@ -11631,6 +11661,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _headerBlockVue = __webpack_require__(282);
+
+var _headerBlockVue2 = _interopRequireDefault(_headerBlockVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -11662,9 +11698,8 @@ var HeaderBlock = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeaderBlock.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeaderBlock.prototype, "subtitle", void 0);
-HeaderBlock = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'HeaderBlock',
-    template: __webpack_require__(282)
+HeaderBlock = __decorate([_headerBlockVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'HeaderBlock'
 })], HeaderBlock);
 exports.default = HeaderBlock;
 
@@ -11672,7 +11707,18 @@ exports.default = HeaderBlock;
 /* 282 */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"header-block\">\n    <slot>\n        <h2 class=\"header-block__title\" v-if=\"title\">{{ title }}</h2>\n        <p class=\"header-block__subtitle\" v-if=\"subtitle\">{{ subtitle }}</p>\n    </slot>\n</header>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{staticClass:"header-block"},[_vm._t("default",[(_vm.title)?_c('h2',{staticClass:"header-block__title"},[_vm._v(_vm._s(_vm.title))]):_vm._e(),_vm._v(" "),(_vm.subtitle)?_c('p',{staticClass:"header-block__subtitle"},[_vm._v(_vm._s(_vm.subtitle))]):_vm._e()])],2)}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 283 */
@@ -11708,6 +11754,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _vuePropertyDecorator = __webpack_require__(0);
 
+var _heroHeadingVue = __webpack_require__(285);
+
+var _heroHeadingVue2 = _interopRequireDefault(_heroHeadingVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -11739,9 +11791,8 @@ var HeroHeading = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], HeroHeading.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeroHeading.prototype, "subtitle", void 0);
-HeroHeading = __decorate([(0, _vuePropertyDecorator.Component)({
-    name: 'HeroHeading',
-    template: __webpack_require__(285)
+HeroHeading = __decorate([_heroHeadingVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'HeroHeading'
 })], HeroHeading);
 exports.default = HeroHeading;
 
@@ -11749,7 +11800,18 @@ exports.default = HeroHeading;
 /* 285 */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n    <h1 class='hero__title header-block__title--hero'>{{ title }}</h1>\n    <h2 class=\"hero__subtitle header-block__subtitle--hero\" v-if=\"subtitle\">{{ subtitle }}</h2>\n</div>\n";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('h1',{staticClass:"hero__title header-block__title--hero"},[_vm._v(_vm._s(_vm.title))]),_vm._v(" "),(_vm.subtitle)?_c('h2',{staticClass:"hero__subtitle header-block__subtitle--hero"},[_vm._v(_vm._s(_vm.subtitle))]):_vm._e()])}
+var staticRenderFns = []
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
 
 /***/ }),
 /* 286 */
