@@ -106,10 +106,6 @@ $homeLinkDesktopHdWidth: 162px;
     }
 }
 
-.header--absolute {
-    position: absolute;
-}
-
 .header--fixed {
     will-change: transform;
     transform: translateY(0);
