@@ -1,4 +1,5 @@
-// moved original scss from src/scss/atomic/atoms/_icon-button.scss to here
+@import "~src/scss/settings/_variables.scss";
+
 .icon-button {
     @include micro-animate(background-color);
     @include font-line-ratio(prim-s);

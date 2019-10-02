@@ -1,6 +1,9 @@
+/** @format */
 export default {
     buttonAriaLabel: '',
     buttonClass: '',
+    disabled: false,
     iconName: '',
-    slot: '',
+    preventDefault: true,
+    slotText: '',
 };

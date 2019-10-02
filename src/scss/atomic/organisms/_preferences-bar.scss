@@ -121,6 +121,7 @@
         @include font-line-ratio(prim-m);
         @extend .preferences-bar__button;
         margin-top: 0;
+        margin-right: $buildingUnit;
         color: $um-blue;
 
         &:hover,
