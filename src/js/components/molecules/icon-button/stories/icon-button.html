@@ -1,1 +1,4 @@
-<icon-button :buttonClass="buttonClass" :icon-name="iconName" :aria-label="buttonAriaLabel"><template v-if="slot">{{ slot }}</template></icon-button>
+<!-- #format -->
+<form action="/test-submit">
+    <icon-button v-bind="$props"><template v-if="slotText">{{ slotText }}</template></icon-button>
+</form>

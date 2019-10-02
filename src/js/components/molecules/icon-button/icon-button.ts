@@ -5,23 +5,19 @@ import WithRender from './icon-button.vue.html';
 @Component({
     name: 'icon-button',
 })
-export default class IconButton extends Vue {
-    @Prop({ type: String })
-    buttonClass!: string;
-    @Prop({ type: String, default: '' })
-    buttonAriaLabel!: string;
-    @Prop({ type: String })
-    iconName!: string;
-    @Prop({ type: Boolean, default: false })
-    disabled!: boolean;
+export class IconButton extends Vue {
+    @Prop({ type: String, default: null }) public buttonAriaLabel!: string;
+    @Prop({ type: String, default: null }) public buttonClass!: string;
+    @Prop({ type: Boolean, default: false }) public disabled!: boolean;
+    @Prop({ type: String, default: null }) public iconName!: string;
+    @Prop({ type: Boolean, default: true }) public preventDefault!: boolean;
 
-    $el!:HTMLElement;
+    public clickHandler(evt: Event): void {
+        if (this.preventDefault) {
+            evt.preventDefault();
+        }
 
-    get hasDefaultSlot() {
-        return !!this.$slots.default;
-    }
-
-    focus() {
-        this.$el.focus();
+        this.$emit('click'); // @todo: phase out use of this emit
+        this.$emit('icon-button-click');
     }
 }

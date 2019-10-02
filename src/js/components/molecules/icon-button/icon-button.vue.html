@@ -1,16 +1,11 @@
 <!-- @format -->
-
-<a class="icon-button"
-   :class="buttonClass"
-   :aria-label="buttonAriaLabel"
-   :aria-disabled="disabled"
-   role="button"
-   tabindex="0"
-   @click="$emit('click')"
-   @keyup.enter="$emit('click')"
+<button
+    class="icon-button"
+    :class="buttonClass"
+    :aria-label="buttonAriaLabel"
+    :aria-disabled="disabled"
+    @click="clickHandler"
 >
-    <icon class="icon-button__icon" :iconName="iconName"/>
-    <span class="icon-button__label" v-if="hasDefaultSlot">
-        <slot></slot>
-    </span>
-</a>
+    <icon class="icon-button__icon" :iconName="iconName"></icon>
+    <span class="icon-button__label" v-if="!!this.$slots.default"><slot/></span>
+</button>

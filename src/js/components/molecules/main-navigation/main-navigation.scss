@@ -238,6 +238,8 @@ $mainNavBorder: 1px solid $colorGray;
     z-index: 10;
     display: none;
     margin-left: 3px;
+    margin-right: 0;
+    margin-bottom: 0;
     background-color: transparent;
 
     .main-nav--large & {
