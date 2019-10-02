@@ -1,4 +1,4 @@
-# http://editorconfig.org
+# https://editorconfig.org/
 root = true
 
 [*]
@@ -9,18 +9,15 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[Makefile]
-indent_style = tab
-indent_size = 2
-
-[Jenkinsfile]
-indent_size = 2
-
 [*.conf]
 indent_size = 2
 
-[*.y{,a}ml]
-indent_size = 2
+[*.js]
+ij_javascript_enforce_trailing_comma = whenmultiline
+ij_javascript_force_semicolon_style = true
+ij_javascript_spaces_within_brackets = true
+ij_javascript_spaces_within_imports = true
+ij_javascript_spaces_within_object_literal_braces = true
 
 [*.json]
 indent_size = 2
@@ -28,3 +25,20 @@ indent_size = 2
 [*.md]
 # 2 trailing spaces in Markdown are a newline
 trim_trailing_whitespace = false
+
+[*.ts]
+ij_typescript_enforce_trailing_comma = whenmultiline
+ij_typescript_force_semicolon_style = true
+ij_typescript_spaces_within_brackets = true
+ij_typescript_spaces_within_imports = true
+ij_typescript_spaces_within_object_literal_braces = true
+
+[*.{yaml,yml}]
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+indent_size = 2
+
+[Jenkinsfile]
+indent_size = 2
