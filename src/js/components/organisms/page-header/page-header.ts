@@ -14,8 +14,6 @@ export class PageHeader extends Vue implements PageHeaderProps {
     @Prop({ type: Array, required: false }) public navigation!: PageHeaderProps['navigation'];
     @Prop({ type: Object, required: false }) public search!: PageHeaderProps['search'];
 
-    private $onPublic;
-    private $offPublic;
     private assistUsed: boolean = false;
     private mainNavOpen: boolean = false;
     private maxMobileRes: number = 1025;
@@ -24,24 +22,6 @@ export class PageHeader extends Vue implements PageHeaderProps {
     private searchOpen: boolean = false;
     private showCompactMenu: boolean = true;
     private viewportUtil: ViewportUtility = new ViewportUtility();
-
-    private get storedHeights(): { drawer: number; header: number } {
-        // @ts-ignore
-        return this.$parent.$store.getters['sizeEmitter/storedHeights'];
-    }
-
-    private get headerClasses(): object {
-        let isFixed = true;
-
-        if (this.storedHeights.drawer !== null && this.preferencesBarStatus !== 'closed') {
-            isFixed = this.viewportUtil.scrollY >= this.storedHeights.drawer;
-        }
-
-        return {
-            'header--absolute': !isFixed,
-            'header--fixed': isFixed,
-        };
-    }
 
     private openSearch(): void {
         this.searchOpen = true;
@@ -109,7 +89,6 @@ export class PageHeader extends Vue implements PageHeaderProps {
 
     private beforeDestroy(): void {
         this.viewportUtil.removeResizeHandler(this.handleResize);
-        this.$offPublic('preferences-bar');
     }
 
     private beforeMount(): void {
@@ -118,6 +97,5 @@ export class PageHeader extends Vue implements PageHeaderProps {
 
     private mounted(): void {
         this.handleResize();
-        this.$onPublic('preferences-bar', (payload): void => { this.preferencesBarStatus = payload; });
     }
 }
