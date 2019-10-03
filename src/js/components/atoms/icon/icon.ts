@@ -1,37 +1,18 @@
-import { Vue, Component, Prop } from 'vue-property-decorator';
 import WithRender from './icon.vue.html';
-import BrowserCapabilities from 'utils/browser-capabilities';
-
-const defaultIconUrl = '/static/icons/iconset.svg';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @WithRender
 @Component({
     name: 'icon',
 })
-export default class Icon extends Vue {
-    @Prop({ type: String, required: true }) iconName!: string;
+export class Icon extends Vue {
+    @Prop({ type: String, required: true }) public iconName!: string;
 
-    /* eslint-disable dot-notation */
-    readonly iconUrl:string = BrowserCapabilities.isBrowser && window['svgIconMap'] ? window['svgIconMap'] : defaultIconUrl;
-    ready:boolean = false;
-    symbolData?:string|null = null;
-
-    viewBox?:string|null = null;
-
-    get iconId() {
-        return `icon-${this.iconName}`;
-    }
-
-    get iconClass() {
+    public get iconClass(): string {
         return `icon--${this.iconName}`;
     }
 
-    get iconRef() {
-        return `${this.iconUrl}#icon-${this.iconName}`;
-    }
-
-    mounted() {
-        // Only render in browser
-        this.ready = true;
+    public get iconHref(): string {
+        return `#icon-${this.iconName}`;
     }
 }
