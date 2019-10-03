@@ -1,2 +1,2 @@
-import Icon from './icon';
-export default Icon;
+/** @format */
+export { Icon as default } from './icon';

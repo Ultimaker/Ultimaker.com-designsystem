@@ -37,6 +37,9 @@ window.$u = {
     events: PublicEventService
 };
 
+// @see icon component
+window.svgIconMap = 'static/icons/iconset.svg';
+
 addDecorator(withNotes);
 addDecorator(storyRouter());
 
