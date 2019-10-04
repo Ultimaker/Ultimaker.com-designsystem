@@ -55,7 +55,7 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
 
     @include min-mobile-xl() {
         flex-direction: row;
