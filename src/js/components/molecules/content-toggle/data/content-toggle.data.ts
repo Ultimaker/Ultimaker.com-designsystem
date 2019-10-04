@@ -1,11 +1,10 @@
-export const data = {
-    default: {
-        collapsedIcon: 'angle-down',
-        collapsedText: 'More',
-        expandedIcon: 'angle-up',
-        expandedText: 'Less',
-        toggleState: false,
-    },
-};
+/** @format */
+import { initiallyExpandedFalse } from './examples/initially-expanded-false';
+import { initiallyExpandedTrue } from './examples/initially-expanded-true';
+import { submit } from './examples/submit';
 
-export default type => data[type];
+export const data = {
+    initiallyExpandedFalse,
+    initiallyExpandedTrue,
+    submit,
+};

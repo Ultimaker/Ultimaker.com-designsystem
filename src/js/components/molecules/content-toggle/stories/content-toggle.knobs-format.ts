@@ -1,7 +1,9 @@
+/** @format */
 export default {
     collapsedIcon: '',
     collapsedText: '',
     expandedIcon: '',
     expandedText: '',
-    toggleState: false,
+    initiallyExpanded: false,
+    preventDefault: true,
 };

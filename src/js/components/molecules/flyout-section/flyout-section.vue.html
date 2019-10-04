@@ -9,27 +9,17 @@
             <content-link ref="firstFocusableLinks" @click.native="$emit('content-link-click')" :url="item.url" class="flyout__link link" :label="item.label"></content-link>
         </li>
 
-        <li class="flyout__list-item" v-show="flyoutToggleIsVisible && ! isExpanded">
-            <content-toggle class="flyout__toggle"
-                            :ref="flyoutToggleIsVisible && ! isExpanded ? 'focusable' : ''"
-                            :toggle-state="false"
-                            aria-hidden="true"
-                            @toggle="toggleExpanded">
-            </content-toggle>
-        </li>
-
         <!-- items using v-show so spiders can index the entire menu -->
         <li class="flyout__list-item" v-for="(item, index) in items" v-if="index >= maxVisible" v-show="!isCompact || isExpanded">
             <content-link ref="focusable"  @click.native="$emit('content-link-click')" :url="item.url" class="flyout__link link" :label="item.label"></content-link>
         </li>
 
-        <li class="flyout__list-item" v-show="flyoutToggleIsVisible && isExpanded">
-            <content-toggle class="flyout__toggle"
-                            ref="flyoutToggleIsVisible && isExpanded ? 'focusable' : ''"
-                            :toggle-state="true"
-                            aria-hidden="true"
-                            @toggle="toggleExpanded">
-            </content-toggle>
+        <li class="flyout__list-item" v-if="flyoutToggleIsVisible">
+            <content-toggle
+                aria-hidden="true"
+                class="flyout__toggle"
+                @content-toggle="toggleExpanded"
+            ></content-toggle>
         </li>
     </ul>
 
