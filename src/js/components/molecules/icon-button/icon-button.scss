@@ -6,6 +6,7 @@
 
     display: inline-flex;
     justify-content: flex-end;
+    align-items: center;
 
     padding: $buildingUnit;
     height: $buildingUnit * 4;
@@ -39,7 +40,7 @@
 }
 
 .icon-button__label {
-    margin: 4px ($buildingUnit / 2) 0 $buildingUnit;
+    margin: 0 ($buildingUnit / 2) 0 $buildingUnit;
     white-space: nowrap;
     user-select: none;
 }
