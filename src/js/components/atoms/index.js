@@ -15,7 +15,6 @@ export { default as LiItem } from 'atoms/li-item';
 export { default as NavAssist } from 'atoms/nav-assist';
 export { default as ResponsivePicture } from 'atoms/responsive-picture';
 export { default as SpanLabel } from 'atoms/span-label';
-export { default as TabbableDefinitionList } from 'atoms/tabbable-definition-list';
 export { default as Tooltip } from 'atoms/tooltip';
 export { default as YoutubeLink } from 'atoms/youtube-link';
 export { default as YoutubeVideo } from 'atoms/youtube-video';
