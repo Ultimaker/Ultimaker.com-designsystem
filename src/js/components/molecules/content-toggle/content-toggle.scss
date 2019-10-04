@@ -1,15 +1,23 @@
-// moved original scss from src/scss/atomic/atoms/_toggle.scss to here
+/** @format */
+@import "~src/scss/settings/_variables.scss";
+
 .toggle {
-    @extend .link;
-
     color: $um-blue;
+    background-color: inherit;
+    font-size: 14px;
     font-weight: normal;
+    padding: 0;
 
-    &:hover {
+    &:active, &:focus, &:hover {
+        background-color: inherit;
         color: $um-blue;
     }
+}
 
-    &--icon {
-        @extend .link--icon;
-    }
+.toggle__icon {
+    font-size: 18px;
+}
+
+.toggle__icon-text {
+    vertical-align: text-bottom;
 }

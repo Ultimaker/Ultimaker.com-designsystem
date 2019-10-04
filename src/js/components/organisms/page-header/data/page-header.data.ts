@@ -28,6 +28,22 @@ export const data = {
                                 label: 'Navigation item with external link',
                                 url: 'https://external.link',
                             },
+                            {
+                                label: 'Navigation item with internal link',
+                                url: '/NavigationPageFixture',
+                            },
+                            {
+                                label: 'Navigation item with external link',
+                                url: 'https://external.link',
+                            },
+                            {
+                                label: 'Navigation item with internal link',
+                                url: '/NavigationPageFixture',
+                            },
+                            {
+                                label: 'Navigation item with external link',
+                                url: 'https://external.link',
+                            },
                         ],
                         bottomItem: {
                             label: 'Navigation item with internal link',
