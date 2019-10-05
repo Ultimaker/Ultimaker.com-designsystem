@@ -9,7 +9,6 @@ export { default as ArticleVideo } from 'molecules/article-video';
 export { default as AutoComplete } from 'molecules/auto-complete';
 export { default as BlockIcon } from 'molecules/block-icon';
 export { default as Brand } from 'molecules/brand';
-export { default as BrandCard } from 'molecules/cards/brand-card';
 export { default as BusinessCard } from 'molecules/cards/business-card';
 export { default as CardArticle } from 'molecules/cards/card-article';
 export { default as CardBase } from 'molecules/cards/card-base';
