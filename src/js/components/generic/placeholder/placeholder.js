@@ -1,4 +1,3 @@
-import Arithmetic from 'utils/arithmetic';
 import Vue from 'vue';
 
 export default Vue.component('placeholder', {
@@ -12,15 +11,6 @@ export default Vue.component('placeholder', {
         height: {
             type: Number,
             required: true,
-        },
-    },
-    computed: {
-        ratio() {
-            const divisor = Arithmetic.greatestCommonDivisor(this.width, this.height);
-            const ratioWidth = this.width / divisor;
-            const ratioHeight = this.height / divisor;
-
-            return `${ratioWidth}:${ratioHeight}`;
         },
     },
 });
