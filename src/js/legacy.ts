@@ -19,7 +19,6 @@ Object.keys(Directives).forEach((d) => {
 });
 
 export { default as Defaults } from 'constants/defaults';
-export { default as Arithmetic } from 'utils/arithmetic';
 export { default as BrowserCapabilities } from 'utils/browser-capabilities';
 export { default as TextUtils } from 'utils/text-utils';
 export { default as ViewportUtility } from 'utils/viewport';

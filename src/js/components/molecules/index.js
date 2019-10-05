@@ -18,7 +18,6 @@ export { default as Color } from 'molecules/color';
 export { default as ContentBlock } from 'molecules/content-block';
 export { default as ContentToggle } from 'molecules/content-toggle';
 export { default as CtaBlock } from 'molecules/cta-block';
-export { default as Currency } from 'molecules/currency';
 export { default as FilterCategory } from 'molecules/filter-category';
 export { default as Flyout } from 'molecules/flyout';
 export { default as FlyoutSection } from 'molecules/flyout-section';
