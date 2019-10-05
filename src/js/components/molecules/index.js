@@ -37,7 +37,6 @@ export { default as MainNavigationItem } from 'molecules/main-navigation-item';
 export { default as Modal } from 'molecules/modal';
 export { default as ModalButton } from 'molecules/modal-button';
 export { default as ModalWizard } from 'molecules/modal-wizard';
-export { default as Pager } from 'molecules/pager';
 export { default as Product } from 'molecules/product';
 export { default as SearchBar } from 'molecules/search-bar';
 export { default as SearchBarPage } from 'molecules/search-bar-page';
