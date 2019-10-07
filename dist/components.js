@@ -4773,11 +4773,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _icon = __webpack_require__(149);
 
-var _icon2 = _interopRequireDefault(_icon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _icon2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _icon.Icon;
+  }
+});
 
 /***/ }),
 /* 149 */
@@ -4789,20 +4790,17 @@ exports.default = _icon2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Icon = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _vuePropertyDecorator = __webpack_require__(0);
-
 var _iconVue = __webpack_require__(150);
 
 var _iconVue2 = _interopRequireDefault(_iconVue);
 
-var _browserCapabilities = __webpack_require__(2);
-
-var _browserCapabilities2 = _interopRequireDefault(_browserCapabilities);
+var _vuePropertyDecorator = __webpack_require__(0);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4824,57 +4822,40 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var defaultIconUrl = '/static/icons/iconset.svg';
 var Icon = function (_Vue) {
     _inherits(Icon, _Vue);
 
     function Icon() {
         _classCallCheck(this, Icon);
 
-        var _this = _possibleConstructorReturn(this, (Icon.__proto__ || Object.getPrototypeOf(Icon)).apply(this, arguments));
-
-        _this.iconUrl = _browserCapabilities2.default.isBrowser && window['svgIconMap'] ? window['svgIconMap'] : defaultIconUrl;
-        _this.ready = false;
-        _this.symbolData = null;
-        _this.viewBox = null;
-        return _this;
+        return _possibleConstructorReturn(this, (Icon.__proto__ || Object.getPrototypeOf(Icon)).apply(this, arguments));
     }
 
     _createClass(Icon, [{
-        key: "mounted",
-        value: function mounted() {
-            this.ready = true;
-        }
-    }, {
-        key: "iconId",
-        get: function get() {
-            return "icon-" + this.iconName;
-        }
-    }, {
         key: "iconClass",
         get: function get() {
             return "icon--" + this.iconName;
         }
     }, {
-        key: "iconRef",
+        key: "iconHref",
         get: function get() {
-            return this.iconUrl + "#icon-" + this.iconName;
+            return "#icon-" + this.iconName;
         }
     }]);
 
     return Icon;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], Icon.prototype, "iconName", void 0);
-Icon = __decorate([_iconVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.Icon = Icon = __decorate([_iconVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'icon'
 })], Icon);
-exports.default = Icon;
+exports.Icon = Icon;
 
 /***/ }),
 /* 150 */
 /***/ (function(module, exports) {
 
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.ready)?_c('svg',{staticClass:"icon",class:_vm.iconClass,attrs:{"viewBox":_vm.viewBox}},[(!_vm.symbolData)?_c('use',{attrs:{"xlink:href":_vm.iconRef}}):_vm._e()]):_vm._e()}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"icon",class:_vm.iconClass},[_c('use',{attrs:{"xlink:href":_vm.iconHref}})])}
 var staticRenderFns = []
 
 module.exports = function (_exports) {
