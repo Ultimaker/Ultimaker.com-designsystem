@@ -5718,38 +5718,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   min-height: 320px; }
 
 /** @format */
-.um-components .hero--cover {
-  position: relative;
-  padding-bottom: 60px; }
-  .um-components .hero--cover-reset p:last-child, .um-components .hero--cover-reset strong:last-child, .um-components .hero--cover-reset .tablist__section .tablist__item:last-child, .um-components .tablist__section .hero--cover-reset .tablist__item:last-child {
-    margin-bottom: 0; }
-  .um-components .hero--cover .copy--intro,
-  .um-components .hero--cover .link--large {
-    color: #fff; }
-
-.um-components .hero-cover__headline {
-  color: #fff; }
-
-.um-components .hero-cover__image--full {
-  object-fit: cover; }
-
-.um-components .hero-cover__image--overlay {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.um-components .hero-cover__image--full,
-.um-components .hero-cover__image--overlay {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%; }
-
-.um-components .hero-cover__image--full,
-.um-components .hero-cover__image--overlay,
-.um-components .hero--cover__container {
-  min-height: 320px; }
-
-/** @format */
 .um-components .hero-homepage {
   position: relative; }
   .um-components .hero-homepage::after {
@@ -5846,46 +5814,30 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .hero--product .hero__linklist-link {
   margin-bottom: 6px; }
 
-.um-components .hero--product .hero__products {
+.um-components .job-board-frame {
+  background-color: #FFF; }
+
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.um-components .locale-selector {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 18px; }
-  @media (min-width: 1025px) {
-    .um-components .hero--product .hero__products {
-      flex-direction: row; } }
+  flex-direction: row;
+  max-width: 100%; }
 
-.um-components .hero--product .hero__products-item {
-  margin-bottom: 18px; }
-  .um-components .hero--product .hero__products-item:last-child {
-    margin-bottom: 0; }
-  @media (min-width: 1025px) {
-    .um-components .hero--product .hero__products-item {
-      margin-bottom: 0; }
-      .um-components .hero--product .hero__products-item--multiple:not(:last-child):after {
-        content: '';
-        width: 1px;
-        height: 36px;
-        border-right: 1px solid #e3e3e3;
-        margin-left: 12px;
-        margin-right: -12px; } }
+.um-components .locale-selector__icon-button {
+  align-self: center;
+  height: auto;
+  padding: 6px; }
 
-.um-components .hero--product .hero__link-list {
-  margin-top: 33px;
-  margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .um-components .hero--product .hero__link-list {
-      margin-top: 46px; } }
-
-.um-components .hero--product .hero__linklist {
-  margin-top: 42px; }
-  @media (min-width: 768px) {
-    .um-components .hero--product .hero__linklist {
-      margin-top: 48px; } }
-  .um-components .hero--product .hero__linklist .hero__linklist-item:last-child .hero__linklist-link {
-    margin-bottom: 0; }
-
-.um-components .hero--product .hero__linklist-link {
-  margin-bottom: 6px; }
+.um-components .locale-selector__icon-button svg {
+  font-size: 24px; }
 
 /** @format */
 /* no unique css required as of yet */
@@ -6476,28 +6428,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff 12px); }
       .um-components main .organism:nth-child(even) .table-compare-features--footer, .um-components main .slider-reveal:nth-child(even) .table-compare-features--footer, .um-components main .content-cover--cover:nth-child(even) .table-compare-features--footer, .um-components main .content-general:nth-child(even) .table-compare-features--footer, .um-components main .tabbed-content:nth-child(even) .table-compare-features--footer {
         background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); } }
-
-/** @format */
-/** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-.um-components .locale-selector {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%; }
-
-.um-components .locale-selector__icon-button {
-  align-self: center;
-  height: auto;
-  padding: 6px; }
-
-.um-components .locale-selector__icon-button svg {
-  font-size: 24px; }
 
 .um-components .disable-focus:focus, .um-components .disable-focus:active {
   color: inherit !important;
