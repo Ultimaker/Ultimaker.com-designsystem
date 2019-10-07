@@ -1292,11 +1292,11 @@ var _components = __webpack_require__(122);
 
 var _components2 = _interopRequireDefault(_components);
 
-var _directives = __webpack_require__(421);
+var _directives = __webpack_require__(424);
 
 var Directives = _interopRequireWildcard(_directives);
 
-__webpack_require__(424);
+__webpack_require__(427);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -14181,6 +14181,15 @@ Object.defineProperty(exports, 'TableCompare', {
   }
 });
 
+var _jobBoardFrame = __webpack_require__(421);
+
+Object.defineProperty(exports, 'JobBoardFrame', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_jobBoardFrame).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
@@ -16932,7 +16941,116 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _sizeEmitter = __webpack_require__(422);
+var _jobBoardFrame = __webpack_require__(422);
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _jobBoardFrame.JobBoardFrame;
+  }
+});
+
+/***/ }),
+/* 422 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.JobBoardFrame = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _vuePropertyDecorator = __webpack_require__(0);
+
+var _jobBoardFrameVue = __webpack_require__(423);
+
+var _jobBoardFrameVue2 = _interopRequireDefault(_jobBoardFrameVue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+    var c = arguments.length,
+        r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+        d;
+    if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) {
+        if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    }return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var JobBoardFrame = function (_Vue) {
+    _inherits(JobBoardFrame, _Vue);
+
+    function JobBoardFrame() {
+        _classCallCheck(this, JobBoardFrame);
+
+        var _this = _possibleConstructorReturn(this, (JobBoardFrame.__proto__ || Object.getPrototypeOf(JobBoardFrame)).apply(this, arguments));
+
+        _this.url = 'https://boards.greenhouse.io/embed/job_board/js?for=ultimaker';
+        return _this;
+    }
+
+    _createClass(JobBoardFrame, [{
+        key: "beforeMount",
+        value: function beforeMount() {
+            var script = document.createElement('script');
+            script.src = this.url;
+            script.onload = function () {
+                if (window.Grnhse) {
+                    window.Grnhse.Iframe.load();
+                }
+            };
+            document.body.appendChild(script);
+        }
+    }]);
+
+    return JobBoardFrame;
+}(_vuePropertyDecorator.Vue);
+exports.JobBoardFrame = JobBoardFrame = __decorate([_jobBoardFrameVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'JobBoardFrame'
+})], JobBoardFrame);
+exports.JobBoardFrame = JobBoardFrame;
+
+/***/ }),
+/* 423 */
+/***/ (function(module, exports) {
+
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"job-board-frame organism"},[_c('div',{staticClass:"container"},[_c('div',{attrs:{"id":"grnhse_app"}})])])}]
+
+module.exports = function (_exports) {
+  var options = typeof _exports === 'function'
+    ? _exports.options
+    : _exports
+  options.render = render
+  options.staticRenderFns = staticRenderFns
+  return _exports
+}
+
+
+/***/ }),
+/* 424 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _sizeEmitter = __webpack_require__(425);
 
 Object.defineProperty(exports, 'SizeEmitter', {
   enumerable: true,
@@ -16941,7 +17059,7 @@ Object.defineProperty(exports, 'SizeEmitter', {
   }
 });
 
-var _clickOutside = __webpack_require__(423);
+var _clickOutside = __webpack_require__(426);
 
 Object.defineProperty(exports, 'ClickOutside', {
   enumerable: true,
@@ -16951,7 +17069,7 @@ Object.defineProperty(exports, 'ClickOutside', {
 });
 
 /***/ }),
-/* 422 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17070,7 +17188,7 @@ var SizeEmitter = exports.SizeEmitter = function () {
 }();
 
 /***/ }),
-/* 423 */
+/* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17114,7 +17232,7 @@ var ClickOutside = exports.ClickOutside = function () {
 }();
 
 /***/ }),
-/* 424 */
+/* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
