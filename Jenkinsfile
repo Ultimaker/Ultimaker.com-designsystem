@@ -83,6 +83,12 @@ podTemplate(
         return
       }
 
+      if (env.BRANCH_NAME != 'master') {
+        currentBuild.result = 'SUCCESS'
+
+        return
+      }
+
       stage('authenticate gcloud') {
         STAGE_NAME = env.STAGE_NAME
 
@@ -125,12 +131,6 @@ podTemplate(
             sh "docker push ${nodeContainer}:${commit}"
           }
         )
-      }
-
-      if ('master' != env.BRANCH_NAME) {
-        currentBuild.result = 'SUCCESS'
-
-        return
       }
 
     } catch (e) {
