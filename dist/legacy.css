@@ -306,7 +306,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #fff;
   background-color: #3f86f2; }
 
-.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .link--small.toggle a:focus:not(:hover), .um-components .link--small.subnavigation__link:hover a:focus:not(:hover), .um-components .link--small.subnavigation__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .subnavigation__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .link--small.toggle a:focus:not(:active), .um-components .link--small.subnavigation__link:hover a:focus:not(:active), .um-components .link--small.subnavigation__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .subnavigation__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .toggle:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .toggle:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .subnavigation__link:focus:not(:hover), .um-components .subnavigation__link:focus:not(:active) {
+.um-components p a:focus:not(:hover), .um-components strong a:focus:not(:hover), .um-components .tablist__section .tablist__item a:focus:not(:hover), .um-components p a:focus:not(:active), .um-components strong a:focus:not(:active), .um-components .tablist__section .tablist__item a:focus:not(:active), .um-components small a:focus:not(:hover), .um-components .caption-list__headline a:focus:not(:hover), .um-components .caption-list__list-item a:focus:not(:hover), .um-components .link.link--small a:focus:not(:hover), .um-components .link--small.subnavigation__link:hover a:focus:not(:hover), .um-components .link--small.subnavigation__link.exact-active a:focus:not(:hover), .um-components .price-table__tagline a:focus:not(:hover), .um-components .price-table__disclaimer a:focus:not(:hover), .um-components .tag a:focus:not(:hover), .um-components .tablist__section .tablist a:focus:not(:hover), .um-components .tablist__section .tablist__headline a:focus:not(:hover), .um-components .subnavigation__label a:focus:not(:hover), .um-components small a:focus:not(:active), .um-components .caption-list__headline a:focus:not(:active), .um-components .caption-list__list-item a:focus:not(:active), .um-components .link.link--small a:focus:not(:active), .um-components .link--small.subnavigation__link:hover a:focus:not(:active), .um-components .link--small.subnavigation__link.exact-active a:focus:not(:active), .um-components .price-table__tagline a:focus:not(:active), .um-components .price-table__disclaimer a:focus:not(:active), .um-components .tag a:focus:not(:active), .um-components .tablist__section .tablist a:focus:not(:active), .um-components .tablist__section .tablist__headline a:focus:not(:active), .um-components .subnavigation__label a:focus:not(:active), .um-components .content--rich li a:focus:not(:hover), .um-components .content--rich li a:focus:not(:active), .um-components .link:focus:not(:hover), .um-components .link:focus:not(:active), .um-components .home-link:focus:not(:hover), .um-components .home-link:focus:not(:active), .um-components input[type="text"]:focus:not(:hover), .um-components input[type="text"]:focus:not(:active), .um-components .branded-logo:focus, .um-components .main-nav__link:focus:not(:hover), .um-components .main-nav__link:focus:not(:active), .um-components .subnavigation__link:focus:not(:hover), .um-components .subnavigation__link:focus:not(:active) {
   outline: 2px solid #3f86f2; }
 
 /** @format */
@@ -540,14 +540,14 @@ because both families serve another purpose. Therefore the line-heights will be 
   text-align: center;
   color: #7f7f7f; }
 
-.um-components small, .um-components .caption-list__headline, .um-components .caption-list__list-item, .um-components .link.link--small, .um-components .link--small.toggle, .um-components .link--small.subnavigation__link:hover, .um-components .link--small.subnavigation__link.exact-active, .um-components .price-table__tagline, .um-components .price-table__disclaimer, .um-components .tag, .um-components .tablist__section .tablist, .um-components .tablist__section .tablist__headline, .um-components .subnavigation__label {
+.um-components small, .um-components .caption-list__headline, .um-components .caption-list__list-item, .um-components .link.link--small, .um-components .link--small.subnavigation__link:hover, .um-components .link--small.subnavigation__link.exact-active, .um-components .price-table__tagline, .um-components .price-table__disclaimer, .um-components .tag, .um-components .tablist__section .tablist, .um-components .tablist__section .tablist__headline, .um-components .subnavigation__label {
   font-size: 12px;
   line-height: 18px;
   display: block;
   font-weight: 500;
   color: inherit; }
   @media (min-width: 768px) {
-    .um-components small, .um-components .caption-list__headline, .um-components .caption-list__list-item, .um-components .link.link--small, .um-components .link--small.toggle, .um-components .link--small.subnavigation__link:hover, .um-components .link--small.subnavigation__link.exact-active, .um-components .price-table__tagline, .um-components .price-table__disclaimer, .um-components .tag, .um-components .tablist__section .tablist, .um-components .tablist__section .tablist__headline, .um-components .subnavigation__label {
+    .um-components small, .um-components .caption-list__headline, .um-components .caption-list__list-item, .um-components .link.link--small, .um-components .link--small.subnavigation__link:hover, .um-components .link--small.subnavigation__link.exact-active, .um-components .price-table__tagline, .um-components .price-table__disclaimer, .um-components .tag, .um-components .tablist__section .tablist, .um-components .tablist__section .tablist__headline, .um-components .subnavigation__label {
       font-size: 12px;
       line-height: 18px; } }
 
@@ -746,7 +746,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   transition:  color 0.3s cubic-bezier(0.23, 1, 0.32, 1),  background 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
   .um-components a:hover {
     color: #669ef5; }
-  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components small a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .link--small.toggle a, .um-components .link--small.subnavigation__link:hover a, .um-components .link--small.subnavigation__link.exact-active a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tag a, .um-components .tablist__section .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .subnavigation__label a, .um-components .content--rich li a {
+  .um-components p a, .um-components strong a, .um-components .tablist__section .tablist__item a, .um-components small a, .um-components .caption-list__headline a, .um-components .caption-list__list-item a, .um-components .link.link--small a, .um-components .link--small.subnavigation__link:hover a, .um-components .link--small.subnavigation__link.exact-active a, .um-components .price-table__tagline a, .um-components .price-table__disclaimer a, .um-components .tag a, .um-components .tablist__section .tablist a, .um-components .tablist__section .tablist__headline a, .um-components .subnavigation__label a, .um-components .content--rich li a {
     font-weight: normal; }
 
 .um-components strong, .um-components .tablist__section .tablist__item {
@@ -904,7 +904,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components dd:last-of-type {
     margin-bottom: 0; }
 
-.um-components .link, .um-components .toggle, .um-components .subnavigation__link:hover, .um-components .subnavigation__link.exact-active {
+.um-components .link, .um-components .subnavigation__link:hover, .um-components .subnavigation__link.exact-active {
   font-size: 14px;
   line-height: 1.5;
   margin-top: -2px;
@@ -915,7 +915,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   user-select: none;
   cursor: pointer;
   color: #000; }
-  .um-components .link:hover, .um-components .toggle:hover, .um-components .subnavigation__link:hover, .um-components .link:active, .um-components .toggle:active, .um-components .subnavigation__link:active:hover, .um-components .subnavigation__link.exact-active:active, .um-components .link:visited, .um-components .toggle:visited, .um-components .subnavigation__link:visited:hover, .um-components .subnavigation__link.exact-active:visited {
+  .um-components .link:hover, .um-components .subnavigation__link:hover, .um-components .link:active, .um-components .subnavigation__link:active:hover, .um-components .subnavigation__link.exact-active:active, .um-components .link:visited, .um-components .subnavigation__link:visited:hover, .um-components .subnavigation__link.exact-active:visited {
     color: #000; }
 
 .um-components .link--large {
@@ -927,7 +927,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       font-size: 20px;
       line-height: 24px; } }
 
-.um-components .link .link__underline, .um-components .toggle .link__underline, .um-components .subnavigation__link:hover .link__underline, .um-components .subnavigation__link.exact-active .link__underline, .um-components .link--large .link__underline {
+.um-components .link .link__underline, .um-components .subnavigation__link:hover .link__underline, .um-components .subnavigation__link.exact-active .link__underline, .um-components .link--large .link__underline {
   width: calc(100% - 0.1px);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -937,19 +937,19 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .link--reversed .link__underline, .um-components .flyout__link .link__underline {
   background-size: 0% 100%; }
 
-.um-components .link .link__underline, .um-components .toggle .link__underline, .um-components .subnavigation__link:hover .link__underline, .um-components .subnavigation__link.exact-active .link__underline {
+.um-components .link .link__underline, .um-components .subnavigation__link:hover .link__underline, .um-components .subnavigation__link.exact-active .link__underline {
   background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px); }
 
 .um-components .link--large .link__underline {
   background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
 
-.um-components .link:hover .link__underline, .um-components .toggle:hover .link__underline, .um-components .subnavigation__link:hover .link__underline, .um-components .link:active .link__underline, .um-components .toggle:active .link__underline, .um-components .subnavigation__link:active:hover .link__underline, .um-components .subnavigation__link.exact-active:active .link__underline, .um-components .link:visited .link__underline, .um-components .toggle:visited .link__underline, .um-components .subnavigation__link:visited:hover .link__underline, .um-components .subnavigation__link.exact-active:visited .link__underline {
+.um-components .link:hover .link__underline, .um-components .subnavigation__link:hover .link__underline, .um-components .link:active .link__underline, .um-components .subnavigation__link:active:hover .link__underline, .um-components .subnavigation__link.exact-active:active .link__underline, .um-components .link:visited .link__underline, .um-components .subnavigation__link:visited:hover .link__underline, .um-components .subnavigation__link.exact-active:visited .link__underline {
   background-size: 0% 100%; }
 
 .um-components .link--reversed:hover .link__underline, .um-components .flyout__link:hover .link__underline, .um-components .link--reversed:active .link__underline, .um-components .flyout__link:active .link__underline, .um-components .link--reversed:visited .link__underline, .um-components .flyout__link:visited .link__underline {
   background-size: 100% 100%; }
 
-.um-components .link:focus .link__underline, .um-components .toggle:focus .link__underline, .um-components .subnavigation__link:focus:hover .link__underline, .um-components .subnavigation__link.exact-active:focus .link__underline, .um-components .link--reversed:focus .link__underline, .um-components .flyout__link:focus .link__underline {
+.um-components .link:focus .link__underline, .um-components .subnavigation__link:focus:hover .link__underline, .um-components .subnavigation__link.exact-active:focus .link__underline, .um-components .link--reversed:focus .link__underline, .um-components .flyout__link:focus .link__underline {
   background-size: 0% 0%; }
 
 .um-components .link-list, .um-components .flyout__list {
@@ -993,20 +993,28 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .link-list__item > *, .um-components .flyout__list-item > *, .um-components .link-list__item:last-child, .um-components .flyout__list-item:last-child {
     margin-bottom: 0; }
 
-.um-components .link--icon, .um-components .toggle--icon, .um-components .link--icon .link--reversed, .um-components .toggle--icon .link--reversed, .um-components .link--icon .flyout__link, .um-components .toggle--icon .flyout__link {
+.um-components .link--icon,
+.um-components .link--icon .link--reversed,
+.um-components .link--icon .flyout__link {
   padding-left: 23.99999px;
   display: inline-block; }
-  .um-components .link--icon .icon, .um-components .toggle--icon .icon, .um-components .link--icon .link--reversed .icon, .um-components .toggle--icon .link--reversed .icon, .um-components .link--icon .flyout__link .icon, .um-components .toggle--icon .flyout__link .icon {
+  .um-components .link--icon .icon,
+  .um-components .link--icon .link--reversed .icon,
+  .um-components .link--icon .flyout__link .icon {
     font-size: 18px;
     position: absolute;
     transform: translateX(-24px); }
-  .um-components .link--icon.link--large, .um-components .link--large.toggle--icon, .um-components .link--icon .link--reversed.link--large, .um-components .toggle--icon .link--reversed.link--large, .um-components .link--icon .link--large.flyout__link, .um-components .toggle--icon .link--large.flyout__link {
+  .um-components .link--icon.link--large,
+  .um-components .link--icon .link--reversed.link--large,
+  .um-components .link--icon .link--large.flyout__link {
     padding-left: 31.99999px; }
-    .um-components .link--icon.link--large .icon, .um-components .link--large.toggle--icon .icon, .um-components .link--icon .link--reversed.link--large .icon, .um-components .toggle--icon .link--reversed.link--large .icon, .um-components .link--icon .link--large.flyout__link .icon, .um-components .toggle--icon .link--large.flyout__link .icon {
+    .um-components .link--icon.link--large .icon,
+    .um-components .link--icon .link--reversed.link--large .icon,
+    .um-components .link--icon .link--large.flyout__link .icon {
       font-size: 24px;
       transform: translateX(-33px); }
 
-.um-components .link--icon:focus, .um-components .toggle--icon:focus {
+.um-components .link--icon:focus {
   fill: currentColor; }
 
 .um-components .link-list .list--icon, .um-components .flyout__list .list--icon {
@@ -4012,11 +4020,30 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .content-block__content {
   width: 100%; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 .um-components .toggle {
   color: #196ef0;
-  font-weight: normal; }
-  .um-components .toggle:hover {
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0; }
+  .um-components .toggle:active, .um-components .toggle:focus, .um-components .toggle:hover {
+    background-color: inherit;
     color: #196ef0; }
+
+.um-components .toggle__icon {
+  font-size: 18px; }
+
+.um-components .toggle__icon-text {
+  vertical-align: text-bottom; }
 
 .um-components .cta-block {
   display: flex;
@@ -5520,7 +5547,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     color: #fff; } }
 
 @media (min-width: 768px) {
-  .um-components .content-cover__link.link, .um-components .content-cover__link.toggle, .um-components .content-cover__link.subnavigation__link:hover, .um-components .content-cover__link.subnavigation__link.exact-active {
+  .um-components .content-cover__link.link, .um-components .content-cover__link.subnavigation__link:hover, .um-components .content-cover__link.subnavigation__link.exact-active {
     color: #fff; } }
 
 .um-components .content-general {
@@ -6329,7 +6356,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .um-components .table-compare__table tfoot td {
   vertical-align: middle; }
-  .um-components .table-compare__table tfoot td > .link, .um-components .table-compare__table tfoot td > .toggle, .um-components .table-compare__table tfoot td > .subnavigation__link:hover, .um-components .table-compare__table tfoot td > .subnavigation__link.exact-active {
+  .um-components .table-compare__table tfoot td > .link, .um-components .table-compare__table tfoot td > .subnavigation__link:hover, .um-components .table-compare__table tfoot td > .subnavigation__link.exact-active {
     margin: 0; }
 
 .um-components .table-compare__image {

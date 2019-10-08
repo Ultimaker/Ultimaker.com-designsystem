@@ -302,7 +302,6 @@ small a:focus:not(:hover),
 .caption-list__headline a:focus:not(:hover),
 .caption-list__list-item a:focus:not(:hover),
 .link.link--small a:focus:not(:hover),
-.link--small.toggle a:focus:not(:hover),
 .link--small.subnavigation__link:hover a:focus:not(:hover),
 .link--small.subnavigation__link.exact-active a:focus:not(:hover),
 .price-table__tagline a:focus:not(:hover),
@@ -315,7 +314,6 @@ small a:focus:not(:active),
 .caption-list__headline a:focus:not(:active),
 .caption-list__list-item a:focus:not(:active),
 .link.link--small a:focus:not(:active),
-.link--small.toggle a:focus:not(:active),
 .link--small.subnavigation__link:hover a:focus:not(:active),
 .link--small.subnavigation__link.exact-active a:focus:not(:active),
 .price-table__tagline a:focus:not(:active),
@@ -325,7 +323,7 @@ small a:focus:not(:active),
 .tablist__section .tablist__headline a:focus:not(:active),
 .subnavigation__label a:focus:not(:active),
 .content--rich li a:focus:not(:hover),
-.content--rich li a:focus:not(:active), .link:focus:not(:hover), .toggle:focus:not(:hover), .link:focus:not(:active), .toggle:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .subnavigation__link:focus:not(:hover), .subnavigation__link:focus:not(:active) {
+.content--rich li a:focus:not(:active), .link:focus:not(:hover), .link:focus:not(:active), .home-link:focus:not(:hover), .home-link:focus:not(:active), input[type="text"]:focus:not(:hover), input[type="text"]:focus:not(:active), .branded-logo:focus, .main-nav__link:focus:not(:hover), .main-nav__link:focus:not(:active), .subnavigation__link:focus:not(:hover), .subnavigation__link:focus:not(:active) {
   outline: 2px solid #3f86f2; }
 
 /******************************************************************************
@@ -988,7 +986,7 @@ q {
   text-align: center;
   color: #7f7f7f; }
 
-small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.subnavigation__link:hover, .link--small.subnavigation__link.exact-active, .price-table__tagline,
+small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.subnavigation__link:hover, .link--small.subnavigation__link.exact-active, .price-table__tagline,
 .price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .subnavigation__label {
   font-size: 12px;
   line-height: 18px;
@@ -996,7 +994,7 @@ small, .caption-list__headline, .caption-list__list-item, .link.link--small, .li
   font-weight: 500;
   color: inherit; }
   @media (min-width: 768px) {
-    small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.toggle, .link--small.subnavigation__link:hover, .link--small.subnavigation__link.exact-active, .price-table__tagline,
+    small, .caption-list__headline, .caption-list__list-item, .link.link--small, .link--small.subnavigation__link:hover, .link--small.subnavigation__link.exact-active, .price-table__tagline,
     .price-table__disclaimer, .tag, .tablist__section .tablist, .tablist__section .tablist__headline, .subnavigation__label {
       font-size: 12px;
       line-height: 18px; } }
@@ -1201,7 +1199,6 @@ a {
   .caption-list__headline a,
   .caption-list__list-item a,
   .link.link--small a,
-  .link--small.toggle a,
   .link--small.subnavigation__link:hover a,
   .link--small.subnavigation__link.exact-active a,
   .price-table__tagline a,
@@ -1368,7 +1365,7 @@ dd {
   dd:last-of-type {
     margin-bottom: 0; }
 
-.link, .toggle, .subnavigation__link:hover, .subnavigation__link.exact-active {
+.link, .subnavigation__link:hover, .subnavigation__link.exact-active {
   font-size: 14px;
   line-height: 1.5;
   margin-top: -2px;
@@ -1379,7 +1376,7 @@ dd {
   user-select: none;
   cursor: pointer;
   color: #000; }
-  .link:hover, .toggle:hover, .subnavigation__link:hover, .link:active, .toggle:active, .subnavigation__link:active:hover, .subnavigation__link.exact-active:active, .link:visited, .toggle:visited, .subnavigation__link:visited:hover, .subnavigation__link.exact-active:visited {
+  .link:hover, .subnavigation__link:hover, .link:active, .subnavigation__link:active:hover, .subnavigation__link.exact-active:active, .link:visited, .subnavigation__link:visited:hover, .subnavigation__link.exact-active:visited {
     color: #000; }
 
 .link--large {
@@ -1391,7 +1388,7 @@ dd {
       font-size: 20px;
       line-height: 24px; } }
 
-.link .link__underline, .toggle .link__underline, .subnavigation__link:hover .link__underline, .subnavigation__link.exact-active .link__underline,
+.link .link__underline, .subnavigation__link:hover .link__underline, .subnavigation__link.exact-active .link__underline,
 .link--large .link__underline {
   width: calc(100% - 0.1px);
   background-size: 100% 100%;
@@ -1402,19 +1399,17 @@ dd {
 .link--reversed .link__underline, .flyout__link .link__underline {
   background-size: 0% 100%; }
 
-.link .link__underline, .toggle .link__underline, .subnavigation__link:hover .link__underline, .subnavigation__link.exact-active .link__underline {
+.link .link__underline, .subnavigation__link:hover .link__underline, .subnavigation__link.exact-active .link__underline {
   background-image: linear-gradient(transparent calc(100% - 1px), currentColor 10px); }
 
 .link--large .link__underline {
   background-image: linear-gradient(transparent calc(100% - 2px), currentColor 10px); }
 
-.link:hover .link__underline, .toggle:hover .link__underline, .subnavigation__link:hover .link__underline,
+.link:hover .link__underline, .subnavigation__link:hover .link__underline,
 .link:active .link__underline,
-.toggle:active .link__underline,
 .subnavigation__link:active:hover .link__underline,
 .subnavigation__link.exact-active:active .link__underline,
 .link:visited .link__underline,
-.toggle:visited .link__underline,
 .subnavigation__link:visited:hover .link__underline,
 .subnavigation__link.exact-active:visited .link__underline {
   background-size: 0% 100%; }
@@ -1426,7 +1421,7 @@ dd {
 .flyout__link:visited .link__underline {
   background-size: 100% 100%; }
 
-.link:focus .link__underline, .toggle:focus .link__underline, .subnavigation__link:focus:hover .link__underline, .subnavigation__link.exact-active:focus .link__underline,
+.link:focus .link__underline, .subnavigation__link:focus:hover .link__underline, .subnavigation__link.exact-active:focus .link__underline,
 .link--reversed:focus .link__underline,
 .flyout__link:focus .link__underline {
   background-size: 0% 0%; }
@@ -1472,36 +1467,28 @@ dd {
   .link-list__item > *, .flyout__list-item > *, .link-list__item:last-child, .flyout__list-item:last-child {
     margin-bottom: 0; }
 
-.link--icon, .toggle--icon,
+.link--icon,
 .link--icon .link--reversed,
-.toggle--icon .link--reversed,
-.link--icon .flyout__link,
-.toggle--icon .flyout__link {
+.link--icon .flyout__link {
   padding-left: 23.99999px;
   display: inline-block; }
-  .link--icon .icon, .toggle--icon .icon,
+  .link--icon .icon,
   .link--icon .link--reversed .icon,
-  .toggle--icon .link--reversed .icon,
-  .link--icon .flyout__link .icon,
-  .toggle--icon .flyout__link .icon {
+  .link--icon .flyout__link .icon {
     font-size: 18px;
     position: absolute;
     transform: translateX(-24px); }
-  .link--icon.link--large, .link--large.toggle--icon,
+  .link--icon.link--large,
   .link--icon .link--reversed.link--large,
-  .toggle--icon .link--reversed.link--large,
-  .link--icon .link--large.flyout__link,
-  .toggle--icon .link--large.flyout__link {
+  .link--icon .link--large.flyout__link {
     padding-left: 31.99999px; }
-    .link--icon.link--large .icon, .link--large.toggle--icon .icon,
+    .link--icon.link--large .icon,
     .link--icon .link--reversed.link--large .icon,
-    .toggle--icon .link--reversed.link--large .icon,
-    .link--icon .link--large.flyout__link .icon,
-    .toggle--icon .link--large.flyout__link .icon {
+    .link--icon .link--large.flyout__link .icon {
       font-size: 24px;
       transform: translateX(-33px); }
 
-.link--icon:focus, .toggle--icon:focus {
+.link--icon:focus {
   fill: currentColor; }
 
 .link-list .list--icon, .flyout__list .list--icon {
@@ -4511,11 +4498,30 @@ because both families serve another purpose. Therefore the line-heights will be 
 .content-block__content {
   width: 100%; }
 
+/** @format */
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 .toggle {
   color: #196ef0;
-  font-weight: normal; }
-  .toggle:hover {
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0; }
+  .toggle:active, .toggle:focus, .toggle:hover {
+    background-color: inherit;
     color: #196ef0; }
+
+.toggle__icon {
+  font-size: 18px; }
+
+.toggle__icon-text {
+  vertical-align: text-bottom; }
 
 .cta-block {
   display: flex;
@@ -6044,7 +6050,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     color: #fff; } }
 
 @media (min-width: 768px) {
-  .content-cover__link.link, .content-cover__link.toggle, .content-cover__link.subnavigation__link:hover, .content-cover__link.subnavigation__link.exact-active {
+  .content-cover__link.link, .content-cover__link.subnavigation__link:hover, .content-cover__link.subnavigation__link.exact-active {
     color: #fff; } }
 
 .content-general {
@@ -6853,7 +6859,7 @@ svg text {
 
 .table-compare__table tfoot td {
   vertical-align: middle; }
-  .table-compare__table tfoot td > .link, .table-compare__table tfoot td > .toggle, .table-compare__table tfoot td > .subnavigation__link:hover, .table-compare__table tfoot td > .subnavigation__link.exact-active {
+  .table-compare__table tfoot td > .link, .table-compare__table tfoot td > .subnavigation__link:hover, .table-compare__table tfoot td > .subnavigation__link.exact-active {
     margin: 0; }
 
 .table-compare__image {
