@@ -4236,6 +4236,14 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #7f7f7f;
   margin-right: 12px; }
 
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 .um-components .icon-button, .um-components .sys-nav__link, .um-components .search-bar__button, .um-components .um-components .search-bar__button {
   transition:  background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   font-size: 14px;
@@ -4598,6 +4606,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   z-index: 10;
   display: none;
   margin-left: 3px;
+  margin-right: 0;
+  margin-bottom: 0;
   background-color: transparent; }
   .um-components .main-nav--large .main-nav__toggle {
     display: initial; }
@@ -5356,6 +5366,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     font-size: 16px;
     line-height: 24px;
     margin-top: 0;
+    margin-right: 12px;
     color: #196ef0; }
     .um-components .settings-selector__edit-button:hover, .um-components .settings-selector__edit-button:focus, .um-components .settings-selector__edit-button:active {
       color: #196ef0; }
