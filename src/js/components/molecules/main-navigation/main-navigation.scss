@@ -152,7 +152,7 @@ $mainNavBorder: 1px solid $colorGray;
     }
 
     .main-nav--large & {
-        padding: 0;
+        padding: 0 12px 0;
 
         &:after {
             content: '';
