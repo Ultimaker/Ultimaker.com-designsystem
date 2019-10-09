@@ -23,26 +23,12 @@
     &__information {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     &__name{
         @include font-line-ratio(prim-xs);
         color: $colorGrayDark;
-        margin-bottom: $buildingUnit  / 4;
-
-        @include min-tablet() {
-            margin-bottom: $buildingUnit  / 1.5;
-        }
-    }
-
-    &__pricing {
-        @include font-line-ratio(sec-xs);
-        font-weight: 500;
         margin-bottom: 0;
-
-        @include min-tablet() {
-            @include font-line-ratio(sec-s);
-        }
-
     }
 }
