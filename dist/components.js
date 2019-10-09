@@ -517,7 +517,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = {
-    click: 'gtm-click'
+    click: 'gtm-click',
+    close: 'gtm-close'
 };
 
 /***/ }),
@@ -10529,6 +10530,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.InPageNotification = undefined;
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -10538,6 +10541,10 @@ var _vuePropertyDecorator = __webpack_require__(0);
 var _inPageNotificationVue = __webpack_require__(275);
 
 var _inPageNotificationVue2 = _interopRequireDefault(_inPageNotificationVue);
+
+var _events = __webpack_require__(4);
+
+var _events2 = _interopRequireDefault(_events);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10575,12 +10582,39 @@ var InPageNotification = function (_Vue) {
         key: "close",
         value: function close() {
             this.display = false;
+            this.triggerEventClick();
+        }
+    }, {
+        key: "clickEventData",
+        value: function clickEventData() {
+            if (!this.clickEvent) {
+                return null;
+            }
+            var _clickEvent = this.clickEvent,
+                name = _clickEvent.name,
+                data = _clickEvent.data;
+
+            return {
+                dataType: name,
+                data: _extends({}, data, {
+                    pageSlug: this.$route.fullPath
+                })
+            };
+        }
+    }, {
+        key: "triggerEventClick",
+        value: function triggerEventClick() {
+            if (!this.clickEvent) {
+                return;
+            }
+            this.$emitPublic(_events2.default.close, this.clickEventData());
         }
     }]);
 
     return InPageNotification;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], InPageNotification.prototype, "message", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], InPageNotification.prototype, "clickEvent", void 0);
 exports.InPageNotification = InPageNotification = __decorate([_inPageNotificationVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'InPageNotification'
 })], InPageNotification);
