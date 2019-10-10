@@ -28,9 +28,6 @@ describe('components', () => {
                 const nameElement = vm.$el.querySelector('.product__name');
                 expect(nameElement.innerText.trim()).toBe(defaultProps.name);
 
-                const pricingELement = vm.$el.querySelector('.product__pricing');
-                expect(pricingELement.innerText.trim()).toBe(defaultProps.pricing.label);
-
                 vm.$destroy();
             });
         });
