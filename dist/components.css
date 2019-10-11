@@ -1390,7 +1390,7 @@ dd {
 
 .link .link__underline, .subnavigation__link:hover .link__underline, .subnavigation__link.exact-active .link__underline,
 .link--large .link__underline {
-  width: calc(100% - 0.1px);
+  width: 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -1471,7 +1471,7 @@ dd {
 .link--icon .link--reversed,
 .link--icon .flyout__link {
   padding-left: 23.99999px;
-  display: flex;
+  display: inline-flex;
   align-items: center; }
   .link--icon .icon,
   .link--icon .link--reversed .icon,

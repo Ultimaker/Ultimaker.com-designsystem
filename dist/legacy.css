@@ -928,7 +928,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       line-height: 24px; } }
 
 .um-components .link .link__underline, .um-components .subnavigation__link:hover .link__underline, .um-components .subnavigation__link.exact-active .link__underline, .um-components .link--large .link__underline {
-  width: calc(100% - 0.1px);
+  width: 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -997,7 +997,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .link--icon .link--reversed,
 .um-components .link--icon .flyout__link {
   padding-left: 23.99999px;
-  display: flex;
+  display: inline-flex;
   align-items: center; }
   .um-components .link--icon .icon,
   .um-components .link--icon .link--reversed .icon,
