@@ -42,7 +42,7 @@
 .link__underline {
     .link &,
     .link--large & {
-        width: calc(100% - 0.1px); // solves IE11 issue
+        width: 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -118,7 +118,8 @@
 .link--icon,
 .link--icon .link--reversed {
     padding-left: $iconSize * 1.333333;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
 
     .icon {
         font-size: $iconSize;

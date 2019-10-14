@@ -55,7 +55,7 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
 
     @include min-mobile-xl() {
         flex-direction: row;
@@ -75,7 +75,7 @@
 }
 
 .list-section__item {
-    margin-bottom: $buildingUnit;
+    margin-bottom:  $buildingUnit * 2.667; // 32px as discussed with UX
     flex-basis: calc(100% - #{$buildingUnit / 2});
     min-width: calc(100% - #{$buildingUnit / 2});
 
@@ -93,7 +93,7 @@
     }
 
     @include min-tablet() {
-        margin-bottom: $buildingUnit * 2;
+        margin-bottom: $buildingUnit * 4;
         flex-basis: calc(33% - #{$buildingUnit});
         min-width: calc(33% - #{$buildingUnit});
 

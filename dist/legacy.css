@@ -928,7 +928,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       line-height: 24px; } }
 
 .um-components .link .link__underline, .um-components .subnavigation__link:hover .link__underline, .um-components .subnavigation__link.exact-active .link__underline, .um-components .link--large .link__underline {
-  width: calc(100% - 0.1px);
+  width: 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -997,7 +997,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .link--icon .link--reversed,
 .um-components .link--icon .flyout__link {
   padding-left: 23.99999px;
-  display: inline-block; }
+  display: inline-flex;
+  align-items: center; }
   .um-components .link--icon .icon,
   .um-components .link--icon .link--reversed .icon,
   .um-components .link--icon .flyout__link .icon {
@@ -3313,7 +3314,9 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-left: 24px; } }
 
 .um-components .notification__content, .um-components .preferences-bar__content {
-  max-width: 568px; }
+  max-width: 568px;
+  padding-left: 24px;
+  padding-right: 24px; }
   .um-components .notification__content--centered {
     text-align: center;
     margin: 0 auto; }
@@ -3932,7 +3935,8 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .card-product {
   position: relative;
   background-color: #fff;
-  border: 1px solid #eaeaea; }
+  border: 1px solid #eaeaea;
+  transition: box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
   .um-components .card-product__heading {
     margin-bottom: 19px;
     padding-left: 13px;
@@ -3963,6 +3967,8 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .card-product__labels-list .list__item {
       line-height: 15px;
       margin-right: 6px; }
+  .um-components .card-product:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23); }
 
 .um-components .list-show-all__list .list__item {
   list-style: none; }
@@ -4006,6 +4012,9 @@ because both families serve another purpose. Therefore the line-heights will be 
   outline: 2px solid #000; }
   .um-components .color--selected .color__spec--show {
     opacity: 0; }
+
+.um-components .content-block__description {
+  margin-bottom: 24px; }
 
 .um-components .content-block-container__image {
   width: 75%;
@@ -4066,7 +4075,7 @@ because both families serve another purpose. Therefore the line-heights will be 
       align-items: baseline; } }
 
 .um-components .cta-link {
-  text-align: center;
+  text-align: left;
   margin-right: 0;
   margin-bottom: 18px; }
   .um-components .cta-link:last-of-type {
@@ -4250,6 +4259,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   line-height: 21px;
   display: inline-flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 12px;
   height: 48px;
   color: #000;
@@ -4269,7 +4279,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   font-size: 24px; }
 
 .um-components .icon-button__label {
-  margin: 4px 6px 0 12px;
+  margin: 0 6px 0 12px;
   white-space: nowrap;
   user-select: none; }
 
@@ -4405,7 +4415,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-start; }
+  align-items: stretch; }
   @media (min-width: 569px) {
     .um-components .list-section__row {
       flex-direction: row;
@@ -4420,7 +4430,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     justify-content: flex-start; } }
 
 .um-components .list-section__item {
-  margin-bottom: 12px;
+  margin-bottom: 32.004px;
   flex-basis: calc(100% - 6px);
   min-width: calc(100% - 6px); }
   .um-components .list-section__row--even .list-section__item {
@@ -4433,7 +4443,7 @@ because both families serve another purpose. Therefore the line-heights will be 
         margin-right: 0; } }
   @media (min-width: 768px) {
     .um-components .list-section__item {
-      margin-bottom: 24px;
+      margin-bottom: 48px;
       flex-basis: calc(33% - 12px);
       min-width: calc(33% - 12px); }
       .um-components .list-section__row--even .list-section__item {
@@ -4548,7 +4558,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .main-nav__link:hover {
     color: #000; }
   .um-components .main-nav--large .main-nav__link {
-    padding: 0; }
+    padding: 0 12px 0; }
     .um-components .main-nav--large .main-nav__link:after {
       content: '';
       display: inline;
@@ -4629,24 +4639,13 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-right: 12px; }
   .um-components .product__information {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
   .um-components .product__name {
     font-size: 12px;
     line-height: 18px;
     color: #7f7f7f;
-    margin-bottom: 3px; }
-    @media (min-width: 768px) {
-      .um-components .product__name {
-        margin-bottom: 8px; } }
-  .um-components .product__pricing {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
     margin-bottom: 0; }
-    @media (min-width: 768px) {
-      .um-components .product__pricing {
-        font-size: 20px;
-        line-height: 24px; } }
 
 /** @format */
 /** @format */
@@ -5092,7 +5091,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   word-wrap: break-word; }
 
 .um-components .content-manageble--copy-small p + ul, .um-components .content-manageble--copy-small strong + ul, .um-components .content-manageble--copy-small .tablist__section .tablist__item + ul, .um-components .tablist__section .content-manageble--copy-small .tablist__item + ul, .um-components .content-manageble--copy-small ul + p, .um-components .content-manageble--copy-small ul + strong, .um-components .content-manageble--copy-small .tablist__section ul + .tablist__item, .um-components .tablist__section .content-manageble--copy-small ul + .tablist__item, .um-components .content-manageble--copy-small p + p, .um-components .content-manageble--copy-small strong + p, .um-components .content-manageble--copy-small .tablist__section .tablist__item + p, .um-components .tablist__section .content-manageble--copy-small .tablist__item + p, .um-components .content-manageble--copy-small p + strong, .um-components .content-manageble--copy-small strong + strong, .um-components .content-manageble--copy-small .tablist__section .tablist__item + strong, .um-components .tablist__section .content-manageble--copy-small .tablist__item + strong, .um-components .content-manageble--copy-small .tablist__section p + .tablist__item, .um-components .tablist__section .content-manageble--copy-small p + .tablist__item, .um-components .content-manageble--copy-small .tablist__section strong + .tablist__item, .um-components .tablist__section .content-manageble--copy-small strong + .tablist__item, .um-components .content-manageble--copy-small .tablist__section .tablist__item + .tablist__item, .um-components .tablist__section .content-manageble--copy-small .tablist__item + .tablist__item {
-  margin-top: 21px; }
+  margin-top: 12px; }
 
 /** @format */
 /*
@@ -5203,7 +5202,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     right: 0;
     bottom: 0;
     height: 2px;
-    width: 100%;
+    width: 0;
     background-color: #000; }
   .um-components .tabs__contents .container, .um-components .tabs__contents .footer__container {
     padding-bottom: 0; }
@@ -6169,7 +6168,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     display: block;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     height: 1px;
     background-color: #eaeaea; }

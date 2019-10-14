@@ -75,6 +75,8 @@ $sizeCloseButton: $buildingUnit * 4;
 .notification__content {
     @extend %reset-last-margin;
     max-width: 568px;
+    padding-left: $buildingUnit * 2;
+    padding-right: $buildingUnit * 2;
 
     &--centered {
         text-align: center;
