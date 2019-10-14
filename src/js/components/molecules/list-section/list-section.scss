@@ -75,7 +75,7 @@
 }
 
 .list-section__item {
-    margin-bottom: 32px;
+    margin-bottom:  $buildingUnit * 2.667; // 32px as discussed with UX
     flex-basis: calc(100% - #{$buildingUnit / 2});
     min-width: calc(100% - #{$buildingUnit / 2});
 

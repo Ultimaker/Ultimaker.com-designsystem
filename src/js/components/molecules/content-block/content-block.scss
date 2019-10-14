@@ -2,7 +2,7 @@
     @extend %reset-last-margin;
 
     &__description {
-        margin-bottom: 24px;
+        margin-bottom: $buildingUnit * 2;
     }
 }
 
