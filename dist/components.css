@@ -4910,7 +4910,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     justify-content: flex-start; } }
 
 .list-section__item {
-  margin-bottom: 32px;
+  margin-bottom: 32.004px;
   flex-basis: calc(100% - 6px);
   min-width: calc(100% - 6px); }
   .list-section__row--even .list-section__item {
