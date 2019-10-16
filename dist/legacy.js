@@ -15734,6 +15734,22 @@ var LocaleSelector = function (_Vue) {
         get: function get() {
             return this.datasource[this.currentIsoCode];
         }
+    }, {
+        key: "acceptLanguage",
+        get: function get() {
+            var serverContext = this.$parent.$store.getters('globals/serverContext');
+            if (serverContext === undefined) {
+                return 'no-accept-language';
+            }
+            if (!serverContext.headers) {
+                return 'no-accept-language';
+            }
+            if (!serverContext.headers['accept-language']) {
+                return 'no-accept-language';
+            }
+            console.log(serverContext.headers);
+            return serverContext.headers['accept-language'];
+        }
     }]);
 
     return LocaleSelector;
