@@ -23,7 +23,6 @@ export class LocaleSelector extends Vue {
     @Prop({ type: String, required: true }) public type!: string;
 
     public $emitPublic;
-    public $store;
 
     private localeSelectorOpen: boolean = false;
     private currentIsoCode: string = this.initialIsoCode;
@@ -40,7 +39,7 @@ export class LocaleSelector extends Vue {
         return this.datasource[this.currentIsoCode];
     }
 
-    private acceptLanguage(): string {
+    private get acceptLanguage(): string {
         // @ts-ignore
         const serverContext = this.$parent.$store.getters('globals/serverContext');
 
@@ -71,7 +70,7 @@ export class LocaleSelector extends Vue {
                 data: {
                     fromLanguage: this.currentIsoCode,
                     toLanguage: code,
-                    acceptLanguage: this.acceptLanguage(),
+                    acceptLanguage: this.acceptLanguage,
                 },
             });
             this.currentIsoCode = code;
