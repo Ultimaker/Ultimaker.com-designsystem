@@ -57,7 +57,7 @@ export class LocaleSelector extends Vue {
                 },
             });
             this.currentIsoCode = code;
-            this.$emit(this.eventLocaleChanged, code);
+            // this.$emit(this.eventLocaleChanged, code);
         }
 
         this.toggleLocaleSelector();
