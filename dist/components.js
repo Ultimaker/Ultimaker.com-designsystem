@@ -9842,13 +9842,13 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var Flyout = function (_Vue) {
-    _inherits(Flyout, _Vue);
+var FlyoutSection = function (_Vue) {
+    _inherits(FlyoutSection, _Vue);
 
-    function Flyout() {
-        _classCallCheck(this, Flyout);
+    function FlyoutSection() {
+        _classCallCheck(this, FlyoutSection);
 
-        var _this = _possibleConstructorReturn(this, (Flyout.__proto__ || Object.getPrototypeOf(Flyout)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (FlyoutSection.__proto__ || Object.getPrototypeOf(FlyoutSection)).apply(this, arguments));
 
         _this.isExpanded = false;
         _this.focusIndex = null;
@@ -9857,7 +9857,7 @@ var Flyout = function (_Vue) {
         return _this;
     }
 
-    _createClass(Flyout, [{
+    _createClass(FlyoutSection, [{
         key: "toggleExpanded",
         value: function toggleExpanded() {
             this.isExpanded = !this.isExpanded;
@@ -9980,22 +9980,22 @@ var Flyout = function (_Vue) {
         }
     }]);
 
-    return Flyout;
+    return FlyoutSection;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], Flyout.prototype, "label", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Array)], Flyout.prototype, "items", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], Flyout.prototype, "bottomItem", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], Flyout.prototype, "isCompact", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, required: false, default: 3 }), __metadata("design:type", Number)], Flyout.prototype, "maxVisible", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, required: false, default: 6 }), __metadata("design:type", Number)], Flyout.prototype, "maxItemsCol", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], FlyoutSection.prototype, "label", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Array)], FlyoutSection.prototype, "items", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], FlyoutSection.prototype, "bottomItem", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], FlyoutSection.prototype, "isCompact", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, required: false, default: 3 }), __metadata("design:type", Number)], FlyoutSection.prototype, "maxVisible", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, required: false, default: 6 }), __metadata("design:type", Number)], FlyoutSection.prototype, "maxItemsCol", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: function _default() {
         return "flyout_title_" + Math.floor(Math.random() * 10000);
-    } }), __metadata("design:type", String)], Flyout.prototype, "itemId", void 0);
-__decorate([(0, _vuePropertyDecorator.Watch)('focusIndex'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", void 0)], Flyout.prototype, "onFocusIndex", null);
-Flyout = __decorate([_flyoutSectionVue2.default, (0, _vuePropertyDecorator.Component)({
+    } }), __metadata("design:type", String)], FlyoutSection.prototype, "itemId", void 0);
+__decorate([(0, _vuePropertyDecorator.Watch)('focusIndex'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", void 0)], FlyoutSection.prototype, "onFocusIndex", null);
+FlyoutSection = __decorate([_flyoutSectionVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'flyout-section'
-})], Flyout);
-exports.default = Flyout;
+})], FlyoutSection);
+exports.default = FlyoutSection;
 
 /***/ }),
 /* 257 */
