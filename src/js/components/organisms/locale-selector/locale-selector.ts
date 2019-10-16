@@ -41,7 +41,8 @@ export class LocaleSelector extends Vue {
     }
 
     private acceptLanguage(): string {
-        const serverContext = this.$store.getters('globals/serverContext');
+        // @ts-ignore
+        const serverContext = this.$parent.$store.getters('globals/serverContext');
 
         if (serverContext === undefined) {
             return 'no-accept-language';
