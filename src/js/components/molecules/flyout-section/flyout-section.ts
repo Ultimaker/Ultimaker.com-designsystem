@@ -7,7 +7,7 @@ import WithRender from './flyout-section.vue.html';
     name: 'flyout-section',
 })
 
-export default class Flyout extends Vue {
+export default class FlyoutSection extends Vue {
     @Prop({ type: String, required: true }) label!: string;
     @Prop({ type: Array, required: false }) items?: NavigationItem[];
 
