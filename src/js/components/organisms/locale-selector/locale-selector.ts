@@ -54,7 +54,7 @@ export class LocaleSelector extends Vue {
         if (!serverContext.headers['accept-language']) {
             return 'no-accept-language';
         }
-        console.log(serverContext.headers);
+
         return serverContext.headers['accept-language'];
     }
 
@@ -74,7 +74,7 @@ export class LocaleSelector extends Vue {
                 },
             });
             this.currentIsoCode = code;
-            // this.$emit(this.eventLocaleChanged, code);
+            this.$emit(this.eventLocaleChanged, code);
         }
 
         this.toggleLocaleSelector();
