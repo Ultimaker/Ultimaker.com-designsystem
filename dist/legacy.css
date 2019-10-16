@@ -6088,9 +6088,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       .um-components .header--mobile-inverted:before {
         opacity: 0; } }
 
-.um-components .header--absolute {
-  position: absolute; }
-
 .um-components .header--fixed {
   will-change: transform;
   transform: translateY(0);
