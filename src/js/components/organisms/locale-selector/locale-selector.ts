@@ -1,5 +1,5 @@
 /** @format */
-import {Component, Inject, Prop, Vue, Watch} from 'vue-property-decorator';
+import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 import { LocaleAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/LocaleAutoCompleteField';
 import WithRender from './locale-selector.vue.html';
 import Events from 'constants/events';
@@ -21,7 +21,6 @@ export class LocaleSelector extends Vue {
     @Prop({ type: Boolean, required: false }) public showSuggestions?: boolean;
     @Prop({ type: String, default: '' }) public suggestionsLabel!: LocaleAutoCompleteField['suggestionsLabel'];
     @Prop({ type: String, required: true }) public type!: string;
-    @Inject('acceptLanguage') private acceptLanguage!: string;
 
     public $emitPublic;
     public $store;
@@ -39,6 +38,24 @@ export class LocaleSelector extends Vue {
 
     private get iconButtonText(): string {
         return this.datasource[this.currentIsoCode];
+    }
+
+    private get acceptLanguage(): string {
+        const serverContext = this.$store.getters('globals/serverContext');
+
+        if (!serverContext) {
+            return 'no-accept-language';
+        }
+
+        if (!serverContext.headers) {
+            return 'no-accept-language';
+        }
+
+        if (!serverContext.headers['accept-language']) {
+            return 'no-accept-language';
+        }
+
+        return serverContext.headers['accept-language'];
     }
 
     private handleLocaleChange(code: string | null): void {
