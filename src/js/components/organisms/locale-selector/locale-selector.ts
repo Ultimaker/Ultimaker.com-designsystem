@@ -40,7 +40,7 @@ export class LocaleSelector extends Vue {
         return this.datasource[this.currentIsoCode];
     }
 
-    private get acceptLanguage(): string {
+    private acceptLanguage(): string {
         const serverContext = this.$store.getters('globals/serverContext');
 
         if (!serverContext) {
@@ -70,7 +70,7 @@ export class LocaleSelector extends Vue {
                 data: {
                     fromLanguage: this.currentIsoCode,
                     toLanguage: code,
-                    acceptLanguage: this.acceptLanguage,
+                    acceptLanguage: this.acceptLanguage(),
                 },
             });
             this.currentIsoCode = code;
