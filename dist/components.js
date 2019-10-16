@@ -15694,6 +15694,7 @@ var LocaleSelector = function (_Vue) {
                     }
                 });
                 this.currentIsoCode = code;
+                this.$emit(this.eventLocaleChanged, code);
             }
             this.toggleLocaleSelector();
         }
@@ -15748,7 +15749,6 @@ var LocaleSelector = function (_Vue) {
             if (!serverContext.headers['accept-language']) {
                 return 'no-accept-language';
             }
-            console.log(serverContext.headers);
             return serverContext.headers['accept-language'];
         }
     }]);
@@ -15766,7 +15766,6 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __me
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], LocaleSelector.prototype, "showSuggestions", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __metadata("design:type", Object)], LocaleSelector.prototype, "suggestionsLabel", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], LocaleSelector.prototype, "type", void 0);
-__decorate([(0, _vuePropertyDecorator.Inject)('acceptLanguage'), __metadata("design:type", String)], LocaleSelector.prototype, "acceptLanguage", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('initialIsoCode'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], LocaleSelector.prototype, "onInitialIsoCodeChange", null);
 exports.LocaleSelector = LocaleSelector = __decorate([_localeSelectorVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'locale-selector'
