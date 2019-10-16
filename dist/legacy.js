@@ -13417,6 +13417,7 @@ var Tabs = function (_Vue) {
             this.activeTab = this.defaultTab;
             this.viewportUtil.addResizeHandler(this.positionIndicator);
             this.$refs.tabList.addEventListener('scroll', this.scrollCorrection);
+            this.setActiveTab();
             if (_browserCapabilities2.default.supportsTouch) {
                 this.$refs.tabList.addEventListener('touchmove', this.scrollCorrection);
             }
