@@ -15737,7 +15737,7 @@ var LocaleSelector = function (_Vue) {
     }, {
         key: "acceptLanguage",
         get: function get() {
-            var serverContext = this.$parent.$store.getters('globals/serverContext');
+            var serverContext = this.$parent.$store.getters['globals/serverContext'];
             if (serverContext === undefined) {
                 return 'no-accept-language';
             }
