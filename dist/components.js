@@ -13338,7 +13338,6 @@ var Tabs = function (_Vue) {
             if (!tabs) {
                 return;
             }
-            tabs[this.activeTab].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
             setTimeout(function () {
                 return _this2.positionIndicator();
             }, 50);
