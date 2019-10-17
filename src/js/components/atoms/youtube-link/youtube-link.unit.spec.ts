@@ -1,5 +1,5 @@
 /* eslint-disable max-nested-callbacks */
-import YoutubeLink from './youtube-link';
+import { YoutubeLink } from './youtube-link';
 import { build } from 'vuenit';
 
 describe('components', () => {

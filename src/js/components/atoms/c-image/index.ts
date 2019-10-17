@@ -1,2 +1,1 @@
-import CImage from './c-image';
-export default CImage;
+export { CImage as default } from './c-image';

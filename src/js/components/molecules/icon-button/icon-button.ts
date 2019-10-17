@@ -3,7 +3,7 @@ import WithRender from './icon-button.vue.html';
 
 @WithRender
 @Component({
-    name: 'icon-button',
+    name: 'IconButton',
 })
 export class IconButton extends Vue {
     @Prop({ type: String, default: null }) public buttonAriaLabel!: string;

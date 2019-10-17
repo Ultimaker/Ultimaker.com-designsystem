@@ -8,7 +8,7 @@ import WithRender from './youtube-link.vue.html';
 @Component({
     name: 'YoutubeLink',
 })
-export default class YoutubeLink extends BaseLink implements YoutubeLinkInterface {
+export class YoutubeLink extends BaseLink implements YoutubeLinkInterface {
     @Prop({ type: String, default: 'play-video' }) icon!: YoutubeLinkInterface['icon'];
     @Prop({ type: String, required: true }) youtubeId!: YoutubeLinkInterface['youtubeId'];
     @Prop({ type: String, required: true }) label!: YoutubeLinkInterface['label'];

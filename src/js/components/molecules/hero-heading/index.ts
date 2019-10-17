@@ -1,3 +1,1 @@
-import HeroHeading from './hero-heading';
-
-export default HeroHeading;
+export { HeroHeading as default } from './hero-heading';

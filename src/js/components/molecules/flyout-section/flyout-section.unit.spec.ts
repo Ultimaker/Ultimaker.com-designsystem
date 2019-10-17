@@ -1,5 +1,5 @@
 /* eslint-disable max-nested-callbacks */
-import FlyoutSection from './flyout-section';
+import { FlyoutSection } from './flyout-section';
 import { build } from 'vuenit';
 
 describe('components', () => {

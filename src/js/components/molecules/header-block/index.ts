@@ -1,3 +1,1 @@
-import HeaderBlock from './header-block';
-
-export default HeaderBlock;
+export { HeaderBlock as default } from './header-block';

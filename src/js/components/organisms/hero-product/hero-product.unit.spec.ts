@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import { build } from 'vuenit';
 
-import HeroProduct from './hero-product';
+import { HeroProduct } from './hero-product';
 
 import data from './data/hero-product.data';
 

@@ -1,3 +1,3 @@
 /** @format */
 
-export { Subnavigation as default } from './subnavigation';
+export { SubNavigation as default } from './subnavigation';

@@ -4,10 +4,10 @@ import WithRender from './content-link-list.vue.html';
 
 @WithRender
 @Component({
-    name: 'content-link-list',
+    name: 'ContentLinkList',
 })
 
-export default class ContentLinkList extends Vue implements IContentLinkListProps {
+export class ContentLinkList extends Vue implements IContentLinkListProps {
     @Prop({ type: String, required: true }) block!: string;
     @Prop({ type: Array, default: [] }) links!: [];
 }

@@ -1,2 +1,1 @@
-import AnchorOverlay from './component';
-export default AnchorOverlay;
+export { AnchorOverlay as default } from './component';

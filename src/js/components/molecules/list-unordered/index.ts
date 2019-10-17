@@ -1,2 +1,1 @@
-import ListUnordered from './component';
-export default ListUnordered;
+export { ListUnordered as default } from './component';

@@ -6,9 +6,9 @@ import WithRender from './cta-block.vue.html';
 
 @WithRender
 @Component({
-    name: 'cta-block',
+    name: 'CtaBlock',
 })
-export default class CtaBlock extends Vue implements CtaBlockProps {
+export class CtaBlock extends Vue implements CtaBlockProps {
     @Prop({ type: Array, required: true }) ctas!: CtaBlockProps['ctas'];
     @Prop({ type: String }) mod?: CtaBlockProps['mod'];
     @Prop({ type: String }) styleContentButton?: CtaBlockProps['styleContentButton'];

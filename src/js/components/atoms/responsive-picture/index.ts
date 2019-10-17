@@ -1,2 +1,1 @@
-import ResponsivePicture from './responsive-picture';
-export default ResponsivePicture;
+export { ResponsivePicture as default } from './responsive-picture';

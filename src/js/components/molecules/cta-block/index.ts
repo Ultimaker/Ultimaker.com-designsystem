@@ -1,2 +1,1 @@
-import CtaBlock from './cta-block';
-export default CtaBlock;
+export { CtaBlock as default } from './cta-block';

@@ -6,6 +6,6 @@ import WithRender from './template.vue.html';
     name: 'SpanLabel',
 })
 
-export default class SpanLabel extends Vue {
+export class SpanLabel extends Vue {
     @Prop({ type: String, required: true }) item!: string;
 }

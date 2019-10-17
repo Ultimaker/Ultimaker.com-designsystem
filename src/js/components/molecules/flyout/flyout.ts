@@ -5,10 +5,10 @@ import WithRender from './flyout.vue.html';
 
 @WithRender
 @Component({
-    name: 'flyout',
+    name: 'Flyout',
 })
 
-export default class Flyout extends Vue {
+export class Flyout extends Vue {
     @Prop({ type: Array, required: true }) items!: NavigationItem[];
     @Prop({ type: Boolean, required: false }) isCompact?: boolean;
     @Prop({ type: Boolean, required: false, default: false }) disableKeyboardEvents?: boolean;

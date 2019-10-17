@@ -1,4 +1,4 @@
-import YoutubeVideo from './youtube-video';
+import { YoutubeVideo } from './youtube-video';
 import { build } from 'vuenit';
 
 describe('components', () => {

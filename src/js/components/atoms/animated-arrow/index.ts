@@ -1,2 +1,1 @@
-import AnimatedArrow from './animated-arrow';
-export default AnimatedArrow;
+export { AnimatedArrow as default } from './animated-arrow';

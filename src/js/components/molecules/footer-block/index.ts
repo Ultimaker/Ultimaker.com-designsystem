@@ -1,3 +1,1 @@
-import FooterBlock from './footer-block';
-
-export default FooterBlock;
+export { FooterBlock as default } from './footer-block';

@@ -3,9 +3,9 @@ import WithRender from './nav-assist.vue.html';
 
 @WithRender
 @Component({
-    name: 'nav-assist',
+    name: 'NavAssist',
 })
-export default class NavAssist extends Vue {
+export class NavAssist extends Vue {
     @Prop({ type: Boolean, default: false }) openState!:boolean;
 
     inInitialState: boolean = true;

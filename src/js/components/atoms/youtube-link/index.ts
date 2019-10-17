@@ -1,2 +1,1 @@
-import YoutubeLink from './youtube-link';
-export default YoutubeLink;
+export { YoutubeLink as default } from './youtube-link';

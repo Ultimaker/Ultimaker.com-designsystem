@@ -4,9 +4,8 @@ import WithRender from './hero-cover.vue.html';
 
 @WithRender
 @Component({
-    name: 'hero-cover',
+    name: 'HeroCover',
 })
-
 export class HeroCover extends Vue implements HeroCoverProps {
     @Prop({ type: String, required: true }) title!: HeroCoverProps['title'];
     @Prop({ type: String, required: true }) description!: HeroCoverProps['description'];

@@ -1,2 +1,1 @@
-import NavAssist from './nav-assist';
-export default NavAssist;
+export { NavAssist as default } from './nav-assist';

@@ -1,1 +1,1 @@
-export { default } from './wizard-step-confirmation';
+export { WizardStepConfirmation as default } from './wizard-step-confirmation';

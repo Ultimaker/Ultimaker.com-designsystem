@@ -1,5 +1,2 @@
 /** @format */
-
-import HeroHomepage from './hero-homepage';
-
-export default HeroHomepage;
+export { HeroHomepage as default } from './hero-homepage';

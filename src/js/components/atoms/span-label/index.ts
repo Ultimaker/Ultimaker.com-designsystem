@@ -1,2 +1,1 @@
-import Label from './component';
-export default Label;
+export { SpanLabel as default } from './component';

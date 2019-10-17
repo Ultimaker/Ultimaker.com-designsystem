@@ -1,3 +1,1 @@
-import TableCompare from './table-compare';
-
-export default TableCompare;
+export { TableCompare as default } from './table-compare';

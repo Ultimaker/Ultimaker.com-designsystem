@@ -4,12 +4,12 @@ import 'babel-polyfill';
 import { build } from 'vuenit';
 
 import { data } from './data/subnavigation.data';
-import { Subnavigation } from './subnavigation';
+import { SubNavigation } from './subnavigation';
 
 describe('components', () => {
     describe('organisms', () => {
         describe('subnavigation', () => {
-            const mount = build(Subnavigation, { props: {} });
+            const mount = build(SubNavigation, { props: {} });
 
             it('should render an Subnavigation component', () => {
                 const vm = mount();
@@ -40,7 +40,7 @@ describe('components', () => {
                 }],
             };
 
-            const mount = build(Subnavigation, { props });
+            const mount = build(SubNavigation, { props });
 
             it('it should mount', () => {
                 const vm = mount();
@@ -69,7 +69,7 @@ describe('components', () => {
         Object.keys(data).forEach((key) => {
             describe(`subnavigation ${key} props`, () => {
                 const props = data[key];
-                const mount = build(Subnavigation, { props });
+                const mount = build(SubNavigation, { props });
 
                 it(`should render an Subnavigation component with ${key} props`, () => {
                     const vm = mount();

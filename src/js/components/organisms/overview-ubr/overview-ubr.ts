@@ -5,10 +5,10 @@ import WithRender from './overview-ubr.vue.html';
 
 @WithRender
 @Component({
-    name: 'overview-ubr',
+    name: 'OverviewUBR',
 })
 
-export default class OverviewUBR extends Vue implements OverviewUbrProps {
+export class OverviewUBR extends Vue implements OverviewUbrProps {
     @Prop({ type: String, required: true }) title!: OverviewUbrProps['title'];
     @Prop({ type: String, required: false }) subtitle?: OverviewUbrProps['subtitle'];
     @Prop({ type: Array, required: true }) items!: OverviewUbrProps['items'];

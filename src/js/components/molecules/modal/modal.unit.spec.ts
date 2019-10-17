@@ -1,7 +1,7 @@
 /* eslint-disable max-nested-callbacks */
 import Vue from 'vue';
 import { build } from 'vuenit';
-import Modal from './modal';
+import { Modal } from './modal';
 
 describe('components', () => {
     describe('molecules', () => {

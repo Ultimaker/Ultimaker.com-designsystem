@@ -3,7 +3,7 @@ import { build } from 'vuenit';
 
 import { data } from './data/table-compare.data';
 
-import TableCompare from './table-compare';
+import { TableCompare } from './table-compare';
 
 describe('components', () => {
     describe('organisms', () => {

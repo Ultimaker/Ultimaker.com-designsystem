@@ -1,5 +1,5 @@
 /* eslint-disable max-nested-callbacks */
-import ContentLinkList from './content-link-list';
+import { ContentLinkList } from './content-link-list';
 import { build } from 'vuenit';
 
 describe('components', () => {

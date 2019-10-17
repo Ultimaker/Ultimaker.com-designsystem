@@ -1,2 +1,1 @@
-import YoutubeVideo from './youtube-video';
-export default YoutubeVideo;
+export { YoutubeVideo as default } from './youtube-video';

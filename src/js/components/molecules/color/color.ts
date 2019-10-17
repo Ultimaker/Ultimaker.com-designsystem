@@ -5,9 +5,9 @@ import WithRender from './color.vue.html';
 
 @WithRender
 @Component({
-    name: 'color',
+    name: 'Color',
 })
-export default class Color extends Vue implements ColorProps {
+export class Color extends Vue implements ColorProps {
     @Prop({ type: String, required: true })
     rgbHex!: ColorProps['rgbHex'];
 

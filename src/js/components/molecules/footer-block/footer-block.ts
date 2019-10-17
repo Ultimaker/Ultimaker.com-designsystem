@@ -6,6 +6,6 @@ import WithRender from './footer-block.vue.html';
     name: 'FooterBlock',
 })
 
-export default class FooterBlock extends Vue {
+export class FooterBlock extends Vue {
     @Prop({ type: Object, required: false }) ctas?: object;
 }

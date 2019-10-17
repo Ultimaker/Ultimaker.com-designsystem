@@ -1,2 +1,1 @@
-import ContentLinkList from './content-link-list';
-export default ContentLinkList;
+export { ContentLinkList as default } from './content-link-list';

@@ -4,10 +4,10 @@ import WithRender from './modal.vue.html';
 
 @WithRender
 @Component({
-    name: 'modal',
+    name: 'Modal',
 })
 
-export default class Modal extends Vue {
+export class Modal extends Vue {
     iframeLoaded: boolean = false;
     $refs!: {
         modal: HTMLElement,

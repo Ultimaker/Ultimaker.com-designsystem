@@ -3,7 +3,7 @@ import WithRender from './hit-area.vue.html';
 
 @WithRender
 @Component({
-    name: 'hit-area',
+    name: 'HitArea',
 })
 
-export default class HitArea extends Vue {}
+export class HitArea extends Vue {}

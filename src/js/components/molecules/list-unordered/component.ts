@@ -6,6 +6,6 @@ import WithRender from './template.vue.html';
     name: 'ListUnordered',
 })
 
-export default class ListUnordered extends Vue {
+export class ListUnordered extends Vue {
     @Prop({ type: Object, required: true }) listItems!: { items: [string[] | object[]], type: string };
 }
