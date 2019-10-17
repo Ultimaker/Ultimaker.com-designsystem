@@ -13338,7 +13338,6 @@ var Tabs = function (_Vue) {
             if (!tabs) {
                 return;
             }
-            tabs[this.activeTab].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
             setTimeout(function () {
                 return _this2.positionIndicator();
             }, 50);
@@ -13418,6 +13417,7 @@ var Tabs = function (_Vue) {
             this.activeTab = this.defaultTab;
             this.viewportUtil.addResizeHandler(this.positionIndicator);
             this.$refs.tabList.addEventListener('scroll', this.scrollCorrection);
+            this.setActiveTab();
             if (_browserCapabilities2.default.supportsTouch) {
                 this.$refs.tabList.addEventListener('touchmove', this.scrollCorrection);
             }

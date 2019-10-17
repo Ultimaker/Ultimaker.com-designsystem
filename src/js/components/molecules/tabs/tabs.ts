@@ -31,8 +31,6 @@ export class Tabs extends Vue implements TabsProps {
 
         if (!tabs) { return; }
 
-        tabs[this.activeTab].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-
         setTimeout(() => this.positionIndicator(), 50);
     }
 
@@ -76,6 +74,7 @@ export class Tabs extends Vue implements TabsProps {
         this.viewportUtil.addResizeHandler(this.positionIndicator);
 
         this.$refs.tabList.addEventListener('scroll', this.scrollCorrection);
+        this.setActiveTab();
 
         if (BrowserCapabilities.supportsTouch) {
             this.$refs.tabList.addEventListener('touchmove', this.scrollCorrection);
