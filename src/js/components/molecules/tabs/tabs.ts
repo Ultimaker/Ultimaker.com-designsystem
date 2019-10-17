@@ -31,8 +31,6 @@ export class Tabs extends Vue implements TabsProps {
 
         if (!tabs) { return; }
 
-        tabs[this.activeTab].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-
         setTimeout(() => this.positionIndicator(), 50);
     }
 
