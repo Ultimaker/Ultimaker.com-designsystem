@@ -6591,9 +6591,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       .header--mobile-inverted:before {
         opacity: 0; } }
 
-.header--absolute {
-  position: absolute; }
-
 .header--fixed {
   will-change: transform;
   transform: translateY(0);
