@@ -6,7 +6,7 @@ import WithRender from './template.vue.html';
     name: 'AnchorOverlay',
 })
 
-export default class AnchorOverlay extends Vue {
+export class AnchorOverlay extends Vue {
     @Prop({ type: String, required: true }) title!: string;
     @Prop({ type: String, required: true }) url!: string;
 }

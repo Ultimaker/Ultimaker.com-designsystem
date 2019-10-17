@@ -1,2 +1,1 @@
-import OverviewUBR from './overview-ubr';
-export default OverviewUBR;
+export { OverviewUBR as default } from './overview-ubr';

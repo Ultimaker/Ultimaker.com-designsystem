@@ -1,3 +1,1 @@
-import HeroProduct from './hero-product';
-
-export default HeroProduct;
+export { HeroProduct as default } from './hero-product';

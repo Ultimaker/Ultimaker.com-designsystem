@@ -4,7 +4,7 @@ import WithRender from './hero-basic.vue.html';
 
 @WithRender
 @Component({
-    name: 'hero-basic',
+    name: 'HeroBasic',
 })
 
 export class HeroBasic extends Vue implements IHeroBasic {

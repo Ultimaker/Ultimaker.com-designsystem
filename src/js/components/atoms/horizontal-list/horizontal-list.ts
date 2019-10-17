@@ -4,10 +4,10 @@ import WithRender from './horizontal-list.vue.html';
 
 @WithRender
 @Component({
-    name: 'horizontal-list',
+    name: 'HorizontalList',
 })
 
-export default class HorizontalList extends Vue implements IHorizontalListProps {
+export class HorizontalList extends Vue implements IHorizontalListProps {
     @Prop({ type: String }) styleModifier!: string;
     @Prop({ type: String, required: true }) label!: string;
     @Prop({ type: Array, required: true }) listItems!: IHorizontalListItem[];

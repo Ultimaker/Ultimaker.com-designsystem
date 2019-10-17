@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import { build } from 'vuenit';
 
 import data from './data/hero-heading.data';
-import HeroHeading from './hero-heading';
+import { HeroHeading } from './hero-heading';
 
 describe('components', () => {
     describe('molecules', () => {

@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import { build } from 'vuenit';
 
-import Product from './product';
+import { Product } from './product';
 
 import data from './data/product.data';
 

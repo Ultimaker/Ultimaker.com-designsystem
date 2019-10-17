@@ -1,3 +1,1 @@
-import ContentButton from './content-button';
-
-export default ContentButton;
+export { ContentButton as default } from './content-button';

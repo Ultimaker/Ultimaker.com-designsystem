@@ -1,5 +1,5 @@
 /* eslint-disable max-nested-callbacks */
-import CtaBlock from './cta-block';
+import { CtaBlock } from './cta-block';
 import { build } from 'vuenit';
 
 describe('components', () => {

@@ -1,5 +1,5 @@
 /* eslint-disable max-nested-callbacks */
-import BaseLink from './base-link';
+import { BaseLink } from './base-link';
 import { build } from 'vuenit';
 
 describe('components', () => {

@@ -1,2 +1,1 @@
-import HitArea from './hit-area';
-export default HitArea;
+export { HitArea as default } from './hit-area';

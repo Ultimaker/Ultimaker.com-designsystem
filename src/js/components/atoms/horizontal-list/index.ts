@@ -1,2 +1,1 @@
-import HorizontalList from './horizontal-list';
-export default HorizontalList;
+export { HorizontalList as default } from './horizontal-list';

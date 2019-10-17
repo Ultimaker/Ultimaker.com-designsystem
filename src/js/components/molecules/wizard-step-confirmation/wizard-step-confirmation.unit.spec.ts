@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import { build } from 'vuenit';
 
 import { data } from './data/wizard-step-confirmation.data';
-import WizardStepConfirmation from './wizard-step-confirmation';
+import { WizardStepConfirmation } from './wizard-step-confirmation';
 
 describe('components', () => {
     describe('molecules', () => {

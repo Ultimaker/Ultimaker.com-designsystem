@@ -10,7 +10,7 @@ import WithRender from './table-compare.vue.html';
     name: 'TableCompare',
 })
 
-export default class TableCompare extends Vue implements TableCompareProps {
+export class TableCompare extends Vue implements TableCompareProps {
     @Prop({ type: String, required: true }) title!: TableCompareProps['title'];
     @Prop({ type: String }) subtitle?: TableCompareProps['subtitle'];
     @Prop({ type: Object, required: true }) content!: TableCompareProps['content'];

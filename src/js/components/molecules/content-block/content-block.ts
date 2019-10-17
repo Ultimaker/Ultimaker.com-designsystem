@@ -7,7 +7,7 @@ import WithRender from './content-block.vue.html';
     name: 'ContentBlock',
 })
 
-export default class ContentBlock extends Vue implements ContentBlockProps {
+export class ContentBlock extends Vue implements ContentBlockProps {
     @Prop({ type: String, required: true }) title!: ContentBlockProps['title'];
     @Prop({ type: String, required: true }) description!: ContentBlockProps['description'];
     @Prop({ type: Object }) image?: ContentBlockProps['image'];

@@ -8,10 +8,10 @@ import WithRender from './c-image.vue.html';
 
 @WithRender
 @Component({
-    name: 'c-image',
+    name: 'CImage',
 })
 
-export default class CImage extends Mixins(InView) implements ICImageProps {
+export class CImage extends Mixins(InView) implements ICImageProps {
     @Prop({ type: String, default: '' }) alt!: string;
     @Prop({ type: Boolean, default: false }) crop!: boolean;
     @Prop({ type: String, default: FocusArea.center }) focusArea!: FocusArea;

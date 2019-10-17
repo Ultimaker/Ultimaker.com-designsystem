@@ -1,2 +1,1 @@
-import Flyout from './flyout';
-export default Flyout;
+export { Flyout as default } from './flyout';

@@ -1,3 +1,1 @@
-import ContentLink from './content-link';
-
-export default ContentLink;
+export { ContentLink as default } from './content-link';

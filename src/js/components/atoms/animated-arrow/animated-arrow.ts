@@ -3,6 +3,6 @@ import WithRender from './animated-arrow.vue.html';
 
 @WithRender
 @Component({
-    name: 'animated-arrow',
+    name: 'AnimatedArrow',
 })
-export default class AnimatedArrow extends Vue {}
+export class AnimatedArrow extends Vue {}

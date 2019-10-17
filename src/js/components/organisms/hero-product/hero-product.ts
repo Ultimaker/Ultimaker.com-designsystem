@@ -8,7 +8,7 @@ import WithRender from './hero-product.vue.html';
     name: 'HeroProduct',
 })
 
-export default class HeroProduct extends Vue implements HeroProductProps {
+export class HeroProduct extends Vue implements HeroProductProps {
     @Prop({ type: String, required: true }) title!: HeroProductProps['title'];
     @Prop({ type: String, required: false }) subtitle?: HeroProductProps['subtitle'];
     @Prop({ type: String, required: true }) description!: HeroProductProps['description'];

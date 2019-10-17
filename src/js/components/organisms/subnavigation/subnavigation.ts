@@ -7,10 +7,10 @@ import { SubnavigationProps } from './subnavigation.models';
 
 @WithRender
 @Component({
-    name: 'Subnavigation',
+    name: 'SubNavigation',
 })
 
-export class Subnavigation extends Vue implements SubnavigationProps {
+export class SubNavigation extends Vue implements SubnavigationProps {
     @Prop({ type: Array, required: true }) items!: SubnavigationProps['items'];
 
     $nextTick;

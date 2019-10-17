@@ -1,7 +1,7 @@
 <section class="story__template">
     <page-header v-bind="header" @toggle-nav="header.mainNavOpen = !header.mainNavOpen"></page-header>
     <main style="padding-top: 60px">
-        <subnavigation v-bind="subNavigationKnobs"></subnavigation>
+        <sub-navigation v-bind="subNavigationKnobs"></sub-navigation>
         <hero-cover v-bind="heroCover"></hero-cover>
         <overview v-bind="overview"/>
         <tabbed-content v-bind="tabbedContent"></tabbed-content>

@@ -7,7 +7,7 @@ import { SearchBarProps } from 'components/molecules/search-bar/search-bar.model
 
 @WithRender
 @Component({
-    name: 'search-bar',
+    name: 'SearchBar',
 })
 export class SearchBar extends Vue implements SearchBarProps {
     @Prop({ type: String, required: true }) public label!: SearchBarProps['label'];

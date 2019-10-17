@@ -1,2 +1,1 @@
-import LiItem from './component';
-export default LiItem;
+export { LiItem as default } from './component';

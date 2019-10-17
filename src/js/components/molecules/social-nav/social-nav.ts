@@ -3,6 +3,6 @@ import WithRender from './social-nav.vue.html';
 
 @WithRender
 @Component({
-    name: 'social-nav',
+    name: 'SocialNav',
 })
 export class SocialNav extends Vue {}

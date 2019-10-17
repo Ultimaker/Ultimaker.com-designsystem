@@ -7,9 +7,9 @@ import { buildSrcSet } from './helpers/build-srcset';
 
 @WithRender
 @Component({
-    name: 'hero-homepage',
+    name: 'HeroHomepage',
 })
-export default class HeroHomepage extends Vue implements HeroHomepageProps {
+export class HeroHomepage extends Vue implements HeroHomepageProps {
     @Prop({ type: String, required: true }) title!: HeroHomepageProps['title'];
     @Prop({ type: String, required: false }) description?: HeroHomepageProps['description'];
     @Prop({ type: Object, required: false }) image?: HeroHomepageProps['image'];

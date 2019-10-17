@@ -4,7 +4,7 @@ import WithRender from './sys-nav.vue.html';
 import { SysNavProps } from './sys-nav.models';
 @WithRender
 @Component({
-    name: 'sys-nav',
+    name: 'SysNav',
 })
 export class SysNav extends Vue implements SysNavProps {
     @Prop({ type: String, default: 'store' }) orderNowIcon!: SysNavProps['orderNowIcon'];

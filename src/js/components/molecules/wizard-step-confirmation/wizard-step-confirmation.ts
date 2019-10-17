@@ -7,7 +7,7 @@ import WithRender from './wizard-step-confirmation.vue.html';
     name: 'WizardStepConfirmation',
 })
 
-export default class WizardStepConfirmation extends Vue implements WizardStepConfirmationProps {
+export class WizardStepConfirmation extends Vue implements WizardStepConfirmationProps {
     @Prop({ type: String, required: true }) title!: WizardStepConfirmationProps['title'];
     @Prop({ type: String, required: false }) subtitle?: WizardStepConfirmationProps['subtitle'];
     @Prop({ type: String, required: true }) contentTitle!: WizardStepConfirmationProps['contentTitle'];

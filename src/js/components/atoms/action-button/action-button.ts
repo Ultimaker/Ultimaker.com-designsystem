@@ -6,7 +6,7 @@ import WithRender from './action-button.vue.html';
     name: 'ActionButton',
 })
 
-export default class ActionButton extends Vue {
+export class ActionButton extends Vue {
     @Prop({ type: String, required: false }) block?: string;
     @Prop({ type: String, required: false }) mod?: string;
     @Prop({ type: String, required: false }) icon?: string;

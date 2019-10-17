@@ -4,10 +4,10 @@ import WithRender from './base-link.vue.html';
 
 @WithRender
 @Component({
-    name: 'base-link',
+    name: 'BaseLink',
 })
 
-export default class BaseLink extends Vue {
+export class BaseLink extends Vue {
     @Prop({ type: String }) type?: string;
     @Prop({ type: String }) block?: string;
     @Prop({ type: String }) mod?: string;

@@ -1,2 +1,1 @@
-import FlyoutSection from './flyout-section';
-export default FlyoutSection;
+export { FlyoutSection as default } from './flyout-section';

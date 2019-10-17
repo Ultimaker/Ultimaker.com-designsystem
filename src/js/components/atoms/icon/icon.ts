@@ -3,7 +3,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @WithRender
 @Component({
-    name: 'icon',
+    name: 'Icon',
 })
 export class Icon extends Vue {
     @Prop({ type: String, required: true }) public iconName!: string;

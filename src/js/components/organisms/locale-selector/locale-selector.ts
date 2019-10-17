@@ -7,7 +7,7 @@ import EventNames from 'constants/event-names';
 
 @WithRender
 @Component({
-    name: 'locale-selector',
+    name: 'LocaleSelector',
 })
 export class LocaleSelector extends Vue {
     @Prop({ type: Object, required: true }) public datasource!: LocaleAutoCompleteField['datasource'];

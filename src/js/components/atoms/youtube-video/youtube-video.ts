@@ -4,10 +4,10 @@ import WithRender from './youtube-video.vue.html';
 
 @WithRender
 @Component({
-    name: 'youtube-video',
+    name: 'YoutubeVideo',
 })
 
-export default class YoutubeVideo extends Vue {
+export class YoutubeVideo extends Vue {
     @Prop({ type: String, required: true }) videoId!:string;
 
     loadVideo: boolean = false;

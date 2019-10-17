@@ -4,7 +4,7 @@ import WithRender from './colors.vue.html';
 
 @WithRender
 @Component({
-    name: 'colors',
+    name: 'Colors',
 })
 export class Colors extends Vue implements ColorsProps {
     @Prop({ type: String, required: true }) title!: ColorsProps['title'];

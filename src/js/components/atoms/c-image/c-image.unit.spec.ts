@@ -1,6 +1,6 @@
 import 'babel-polyfill';
 import { build } from 'vuenit';
-import CImage from './c-image';
+import { CImage } from './c-image';
 import { imageConstants } from './c-image.constants';
 import ViewportUtil from 'utils/viewport';
 import { FocusArea, ResizeBehavior } from 'components/atoms/c-image/c-image.models';

@@ -5,12 +5,12 @@ import WithRender from './responsive-picture.vue.html';
 
 @WithRender
 @Component({
-    name: 'responsive-picture',
+    name: 'ResponsivePicture',
     components: {
         ResponsivePictureSource,
     },
 })
-export default class ResponsivePicture extends Vue {
+export class ResponsivePicture extends Vue {
     @Prop({ type: [String, Object], required: false }) desktopHdWidth!: string|object;
     @Prop({ type: [String, Object], required: false }) desktopWidth!: string|object;
     @Prop({ type: [String, Object], required: false }) tabletWidth!: string|object;
