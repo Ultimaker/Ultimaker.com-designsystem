@@ -4,12 +4,12 @@ import 'babel-polyfill';
 import { build } from 'vuenit';
 
 import { data } from './data/overview-ubr.data';
-import { OverviewUBR } from './overview-ubr';
+import { OverviewUbr } from './overview-ubr';
 
 describe('components', () => {
     describe('organisms', () => {
         describe('overview-ubr', () => {
-            const mount = build(OverviewUBR, { props: {} });
+            const mount = build(OverviewUbr, { props: {} });
 
             it('should render an OverviewUbr component', () => {
                 const vm = mount();
@@ -21,7 +21,7 @@ describe('components', () => {
         Object.keys(data).forEach((key) => {
             describe(`overview-ubr ${key} props`, () => {
                 const props = data[key];
-                const mount = build(OverviewUBR, { props });
+                const mount = build(OverviewUbr, { props });
 
                 it(`should render an OverviewUbr component with ${key} props`, () => {
                     const vm = mount();
