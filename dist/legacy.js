@@ -535,11 +535,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _baseLink = __webpack_require__(134);
 
-var _baseLink2 = _interopRequireDefault(_baseLink);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _baseLink2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _baseLink.BaseLink;
+  }
+});
 
 /***/ }),
 /* 6 */
@@ -3903,11 +3904,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _component = __webpack_require__(126);
 
-var _component2 = _interopRequireDefault(_component);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _component2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _component.AnchorOverlay;
+  }
+});
 
 /***/ }),
 /* 126 */
@@ -3919,6 +3921,7 @@ exports.default = _component2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.AnchorOverlay = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -3961,10 +3964,10 @@ var AnchorOverlay = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], AnchorOverlay.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], AnchorOverlay.prototype, "url", void 0);
-AnchorOverlay = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.AnchorOverlay = AnchorOverlay = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'AnchorOverlay'
 })], AnchorOverlay);
-exports.default = AnchorOverlay;
+exports.AnchorOverlay = AnchorOverlay;
 
 /***/ }),
 /* 127 */
@@ -3996,11 +3999,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _actionButton = __webpack_require__(129);
 
-var _actionButton2 = _interopRequireDefault(_actionButton);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _actionButton2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _actionButton.ActionButton;
+  }
+});
 
 /***/ }),
 /* 129 */
@@ -4012,6 +4016,7 @@ exports.default = _actionButton2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.ActionButton = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -4077,10 +4082,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], ActionButton.prototype, "mod", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], ActionButton.prototype, "icon", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], ActionButton.prototype, "label", void 0);
-ActionButton = __decorate([_actionButtonVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.ActionButton = ActionButton = __decorate([_actionButtonVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'ActionButton'
 })], ActionButton);
-exports.default = ActionButton;
+exports.ActionButton = ActionButton;
 
 /***/ }),
 /* 130 */
@@ -4112,11 +4117,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _animatedArrow = __webpack_require__(132);
 
-var _animatedArrow2 = _interopRequireDefault(_animatedArrow);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _animatedArrow2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _animatedArrow.AnimatedArrow;
+  }
+});
 
 /***/ }),
 /* 132 */
@@ -4128,6 +4134,7 @@ exports.default = _animatedArrow2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.AnimatedArrow = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -4165,10 +4172,10 @@ var AnimatedArrow = function (_Vue) {
 
     return AnimatedArrow;
 }(_vuePropertyDecorator.Vue);
-AnimatedArrow = __decorate([_animatedArrowVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'animated-arrow'
+exports.AnimatedArrow = AnimatedArrow = __decorate([_animatedArrowVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'AnimatedArrow'
 })], AnimatedArrow);
-exports.default = AnimatedArrow;
+exports.AnimatedArrow = AnimatedArrow;
 
 /***/ }),
 /* 133 */
@@ -4197,6 +4204,7 @@ module.exports = function (_exports) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.BaseLink = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -4326,10 +4334,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "url", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], BaseLink.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], BaseLink.prototype, "clickEvent", void 0);
-BaseLink = __decorate([_baseLinkVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'base-link'
+exports.BaseLink = BaseLink = __decorate([_baseLinkVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'BaseLink'
 })], BaseLink);
-exports.default = BaseLink;
+exports.BaseLink = BaseLink;
 
 /***/ }),
 /* 135 */
@@ -4361,11 +4369,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _contentLink = __webpack_require__(137);
 
-var _contentLink2 = _interopRequireDefault(_contentLink);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _contentLink2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _contentLink.ContentLink;
+  }
+});
 
 /***/ }),
 /* 137 */
@@ -4377,6 +4386,7 @@ exports.default = _contentLink2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.ContentLink = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -4421,10 +4431,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentLink.prototype, "url", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentLink.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ContentLink.prototype, "clickEvent", void 0);
-ContentLink = __decorate([(0, _vuePropertyDecorator.Component)({
+exports.ContentLink = ContentLink = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'ContentLink'
 })], ContentLink);
-exports.default = ContentLink;
+exports.ContentLink = ContentLink;
 
 /***/ }),
 /* 138 */
@@ -4439,11 +4449,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _contentButton = __webpack_require__(139);
 
-var _contentButton2 = _interopRequireDefault(_contentButton);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _contentButton2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _contentButton.ContentButton;
+  }
+});
 
 /***/ }),
 /* 139 */
@@ -4455,6 +4466,7 @@ exports.default = _contentButton2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.ContentButton = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -4499,10 +4511,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], ContentButton.prototype, "url", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentButton.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], ContentButton.prototype, "clickEvent", void 0);
-ContentButton = __decorate([(0, _vuePropertyDecorator.Component)({
+exports.ContentButton = ContentButton = __decorate([(0, _vuePropertyDecorator.Component)({
     name: 'ContentButton'
 })], ContentButton);
-exports.default = ContentButton;
+exports.ContentButton = ContentButton;
 
 /***/ }),
 /* 140 */
@@ -4517,11 +4529,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _contentLinkList = __webpack_require__(141);
 
-var _contentLinkList2 = _interopRequireDefault(_contentLinkList);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _contentLinkList2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _contentLinkList.ContentLinkList;
+  }
+});
 
 /***/ }),
 /* 141 */
@@ -4533,6 +4546,7 @@ exports.default = _contentLinkList2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.ContentLinkList = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -4575,10 +4589,10 @@ var ContentLinkList = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], ContentLinkList.prototype, "block", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, default: [] }), __metadata("design:type", Array)], ContentLinkList.prototype, "links", void 0);
-ContentLinkList = __decorate([_contentLinkListVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'content-link-list'
+exports.ContentLinkList = ContentLinkList = __decorate([_contentLinkListVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'ContentLinkList'
 })], ContentLinkList);
-exports.default = ContentLinkList;
+exports.ContentLinkList = ContentLinkList;
 
 /***/ }),
 /* 142 */
@@ -4610,11 +4624,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _hitArea = __webpack_require__(144);
 
-var _hitArea2 = _interopRequireDefault(_hitArea);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _hitArea2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _hitArea.HitArea;
+  }
+});
 
 /***/ }),
 /* 144 */
@@ -4626,6 +4641,7 @@ exports.default = _hitArea2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.HitArea = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -4663,10 +4679,10 @@ var HitArea = function (_Vue) {
 
     return HitArea;
 }(_vuePropertyDecorator.Vue);
-HitArea = __decorate([_hitAreaVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'hit-area'
+exports.HitArea = HitArea = __decorate([_hitAreaVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'HitArea'
 })], HitArea);
-exports.default = HitArea;
+exports.HitArea = HitArea;
 
 /***/ }),
 /* 145 */
@@ -4698,11 +4714,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _horizontalList = __webpack_require__(147);
 
-var _horizontalList2 = _interopRequireDefault(_horizontalList);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _horizontalList2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _horizontalList.HorizontalList;
+  }
+});
 
 /***/ }),
 /* 147 */
@@ -4714,6 +4731,7 @@ exports.default = _horizontalList2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.HorizontalList = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -4757,10 +4775,10 @@ var HorizontalList = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", String)], HorizontalList.prototype, "styleModifier", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], HorizontalList.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], HorizontalList.prototype, "listItems", void 0);
-HorizontalList = __decorate([_horizontalListVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'horizontal-list'
+exports.HorizontalList = HorizontalList = __decorate([_horizontalListVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'HorizontalList'
 })], HorizontalList);
-exports.default = HorizontalList;
+exports.HorizontalList = HorizontalList;
 
 /***/ }),
 /* 148 */
@@ -4866,7 +4884,7 @@ var Icon = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], Icon.prototype, "iconName", void 0);
 exports.Icon = Icon = __decorate([_iconVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'icon'
+    name: 'Icon'
 })], Icon);
 exports.Icon = Icon;
 
@@ -4900,11 +4918,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _cImage = __webpack_require__(153);
 
-var _cImage2 = _interopRequireDefault(_cImage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _cImage2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _cImage.CImage;
+  }
+});
 
 /***/ }),
 /* 153 */
@@ -4916,6 +4935,7 @@ exports.default = _cImage2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.CImage = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -5191,10 +5211,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, default: 65 }), __me
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], CImage.prototype, "url", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('url'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", Promise)], CImage.prototype, "reset", null);
 __decorate([(0, _vuePropertyDecorator.Watch)('inView'), __metadata("design:type", Function), __metadata("design:paramtypes", [Boolean]), __metadata("design:returntype", Promise)], CImage.prototype, "inViewWatcher", null);
-CImage = __decorate([_cImageVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'c-image'
+exports.CImage = CImage = __decorate([_cImageVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'CImage'
 })], CImage);
-exports.default = CImage;
+exports.CImage = CImage;
 
 /***/ }),
 /* 154 */
@@ -5640,11 +5660,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _component = __webpack_require__(166);
 
-var _component2 = _interopRequireDefault(_component);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _component2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _component.LiItem;
+  }
+});
 
 /***/ }),
 /* 166 */
@@ -5656,6 +5677,7 @@ exports.default = _component2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.LiItem = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -5697,10 +5719,10 @@ var LiItem = function (_Vue) {
     return LiItem;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: true }), __metadata("design:type", Object)], LiItem.prototype, "item", void 0);
-LiItem = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.LiItem = LiItem = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'LiItem'
 })], LiItem);
-exports.default = LiItem;
+exports.LiItem = LiItem;
 
 /***/ }),
 /* 167 */
@@ -5732,11 +5754,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _navAssist = __webpack_require__(169);
 
-var _navAssist2 = _interopRequireDefault(_navAssist);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _navAssist2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _navAssist.NavAssist;
+  }
+});
 
 /***/ }),
 /* 169 */
@@ -5748,6 +5771,7 @@ exports.default = _navAssist2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.NavAssist = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -5817,10 +5841,10 @@ var NavAssist = function (_Vue) {
     return NavAssist;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), __metadata("design:type", Boolean)], NavAssist.prototype, "openState", void 0);
-NavAssist = __decorate([_navAssistVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'nav-assist'
+exports.NavAssist = NavAssist = __decorate([_navAssistVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'NavAssist'
 })], NavAssist);
-exports.default = NavAssist;
+exports.NavAssist = NavAssist;
 
 /***/ }),
 /* 170 */
@@ -5852,11 +5876,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _responsivePicture = __webpack_require__(172);
 
-var _responsivePicture2 = _interopRequireDefault(_responsivePicture);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _responsivePicture2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _responsivePicture.ResponsivePicture;
+  }
+});
 
 /***/ }),
 /* 172 */
@@ -5868,6 +5893,7 @@ exports.default = _responsivePicture2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.ResponsivePicture = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -5993,13 +6019,13 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: [String, Object], required: 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: true }), __metadata("design:type", Boolean)], ResponsivePicture.prototype, "lazy", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], ResponsivePicture.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, default: '' }), __metadata("design:type", String)], ResponsivePicture.prototype, "imgClass", void 0);
-ResponsivePicture = __decorate([_responsivePictureVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'responsive-picture',
+exports.ResponsivePicture = ResponsivePicture = __decorate([_responsivePictureVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'ResponsivePicture',
     components: {
         ResponsivePictureSource: _responsivePictureSource2.default
     }
 })], ResponsivePicture);
-exports.default = ResponsivePicture;
+exports.ResponsivePicture = ResponsivePicture;
 
 /***/ }),
 /* 173 */
@@ -6095,11 +6121,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _component = __webpack_require__(176);
 
-var _component2 = _interopRequireDefault(_component);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _component2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _component.SpanLabel;
+  }
+});
 
 /***/ }),
 /* 176 */
@@ -6111,6 +6138,7 @@ exports.default = _component2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.SpanLabel = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -6152,10 +6180,10 @@ var SpanLabel = function (_Vue) {
     return SpanLabel;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], SpanLabel.prototype, "item", void 0);
-SpanLabel = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.SpanLabel = SpanLabel = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'SpanLabel'
 })], SpanLabel);
-exports.default = SpanLabel;
+exports.SpanLabel = SpanLabel;
 
 /***/ }),
 /* 177 */
@@ -6292,11 +6320,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _youtubeLink = __webpack_require__(182);
 
-var _youtubeLink2 = _interopRequireDefault(_youtubeLink);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _youtubeLink2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _youtubeLink.YoutubeLink;
+  }
+});
 
 /***/ }),
 /* 182 */
@@ -6308,6 +6337,7 @@ exports.default = _youtubeLink2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.YoutubeLink = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -6382,10 +6412,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'play-video
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], YoutubeLink.prototype, "youtubeId", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], YoutubeLink.prototype, "label", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], YoutubeLink.prototype, "clickEvent", void 0);
-YoutubeLink = __decorate([_youtubeLinkVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.YoutubeLink = YoutubeLink = __decorate([_youtubeLinkVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'YoutubeLink'
 })], YoutubeLink);
-exports.default = YoutubeLink;
+exports.YoutubeLink = YoutubeLink;
 
 /***/ }),
 /* 183 */
@@ -6417,11 +6447,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _youtubeVideo = __webpack_require__(185);
 
-var _youtubeVideo2 = _interopRequireDefault(_youtubeVideo);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _youtubeVideo2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _youtubeVideo.YoutubeVideo;
+  }
+});
 
 /***/ }),
 /* 185 */
@@ -6433,6 +6464,7 @@ exports.default = _youtubeVideo2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.YoutubeVideo = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -6496,10 +6528,10 @@ var YoutubeVideo = function (_Vue) {
     return YoutubeVideo;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], YoutubeVideo.prototype, "videoId", void 0);
-YoutubeVideo = __decorate([_youtubeVideoVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'youtube-video'
+exports.YoutubeVideo = YoutubeVideo = __decorate([_youtubeVideoVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'YoutubeVideo'
 })], YoutubeVideo);
-exports.default = YoutubeVideo;
+exports.YoutubeVideo = YoutubeVideo;
 
 /***/ }),
 /* 186 */
@@ -8840,11 +8872,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _color = __webpack_require__(237);
 
-var _color2 = _interopRequireDefault(_color);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _color2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _color.Color;
+  }
+});
 
 /***/ }),
 /* 237 */
@@ -8856,6 +8889,7 @@ exports.default = _color2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Color = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -8930,10 +8964,10 @@ var Color = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Color.prototype, "rgbHex", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Number, required: true }), __metadata("design:type", Object)], Color.prototype, "opacity", void 0);
-Color = __decorate([_colorVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'color'
+exports.Color = Color = __decorate([_colorVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Color'
 })], Color);
-exports.default = Color;
+exports.Color = Color;
 
 /***/ }),
 /* 238 */
@@ -9001,11 +9035,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _contentBlock = __webpack_require__(241);
 
-var _contentBlock2 = _interopRequireDefault(_contentBlock);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _contentBlock2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _contentBlock.ContentBlock;
+  }
+});
 
 /***/ }),
 /* 241 */
@@ -9017,6 +9052,7 @@ exports.default = _contentBlock2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.ContentBlock = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -9074,10 +9110,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], ContentBlock.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentBlock.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], ContentBlock.prototype, "cta", void 0);
-ContentBlock = __decorate([_contentBlockVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.ContentBlock = ContentBlock = __decorate([_contentBlockVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'ContentBlock'
 })], ContentBlock);
-exports.default = ContentBlock;
+exports.ContentBlock = ContentBlock;
 
 /***/ }),
 /* 242 */
@@ -9234,11 +9270,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _ctaBlock = __webpack_require__(247);
 
-var _ctaBlock2 = _interopRequireDefault(_ctaBlock);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _ctaBlock2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _ctaBlock.CtaBlock;
+  }
+});
 
 /***/ }),
 /* 247 */
@@ -9250,6 +9287,7 @@ exports.default = _ctaBlock2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.CtaBlock = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -9331,10 +9369,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("desig
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], CtaBlock.prototype, "styleContentLink", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], CtaBlock.prototype, "modContentLink", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String }), __metadata("design:type", Object)], CtaBlock.prototype, "modContentButton", void 0);
-CtaBlock = __decorate([_ctaBlockVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'cta-block'
+exports.CtaBlock = CtaBlock = __decorate([_ctaBlockVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'CtaBlock'
 })], CtaBlock);
-exports.default = CtaBlock;
+exports.CtaBlock = CtaBlock;
 
 /***/ }),
 /* 248 */
@@ -9547,11 +9585,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _flyout = __webpack_require__(253);
 
-var _flyout2 = _interopRequireDefault(_flyout);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _flyout2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _flyout.Flyout;
+  }
+});
 
 /***/ }),
 /* 253 */
@@ -9563,6 +9602,7 @@ exports.default = _flyout2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Flyout = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -9758,10 +9798,10 @@ var Flyout = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Array)], Flyout.prototype, "items", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false }), __metadata("design:type", Boolean)], Flyout.prototype, "isCompact", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], Flyout.prototype, "disableKeyboardEvents", void 0);
-Flyout = __decorate([_flyoutVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'flyout'
+exports.Flyout = Flyout = __decorate([_flyoutVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Flyout'
 })], Flyout);
-exports.default = Flyout;
+exports.Flyout = Flyout;
 
 /***/ }),
 /* 254 */
@@ -9793,11 +9833,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _flyoutSection = __webpack_require__(256);
 
-var _flyoutSection2 = _interopRequireDefault(_flyoutSection);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _flyoutSection2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _flyoutSection.FlyoutSection;
+  }
+});
 
 /***/ }),
 /* 256 */
@@ -9809,6 +9850,7 @@ exports.default = _flyoutSection2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.FlyoutSection = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -9992,10 +10034,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, def
         return "flyout_title_" + Math.floor(Math.random() * 10000);
     } }), __metadata("design:type", String)], FlyoutSection.prototype, "itemId", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('focusIndex'), __metadata("design:type", Function), __metadata("design:paramtypes", [Object]), __metadata("design:returntype", void 0)], FlyoutSection.prototype, "onFocusIndex", null);
-FlyoutSection = __decorate([_flyoutSectionVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'flyout-section'
+exports.FlyoutSection = FlyoutSection = __decorate([_flyoutSectionVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'FlyoutSection'
 })], FlyoutSection);
-exports.default = FlyoutSection;
+exports.FlyoutSection = FlyoutSection;
 
 /***/ }),
 /* 257 */
@@ -10027,11 +10069,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _footerBlock = __webpack_require__(259);
 
-var _footerBlock2 = _interopRequireDefault(_footerBlock);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _footerBlock2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _footerBlock.FooterBlock;
+  }
+});
 
 /***/ }),
 /* 259 */
@@ -10043,6 +10086,7 @@ exports.default = _footerBlock2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.FooterBlock = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -10084,10 +10128,10 @@ var FooterBlock = function (_Vue) {
     return FooterBlock;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], FooterBlock.prototype, "ctas", void 0);
-FooterBlock = __decorate([_footerBlockVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.FooterBlock = FooterBlock = __decorate([_footerBlockVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'FooterBlock'
 })], FooterBlock);
-exports.default = FooterBlock;
+exports.FooterBlock = FooterBlock;
 
 /***/ }),
 /* 260 */
@@ -10214,11 +10258,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _headerBlock = __webpack_require__(265);
 
-var _headerBlock2 = _interopRequireDefault(_headerBlock);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _headerBlock2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _headerBlock.HeaderBlock;
+  }
+});
 
 /***/ }),
 /* 265 */
@@ -10230,6 +10275,7 @@ exports.default = _headerBlock2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.HeaderBlock = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -10272,10 +10318,10 @@ var HeaderBlock = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeaderBlock.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeaderBlock.prototype, "subtitle", void 0);
-HeaderBlock = __decorate([_headerBlockVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.HeaderBlock = HeaderBlock = __decorate([_headerBlockVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'HeaderBlock'
 })], HeaderBlock);
-exports.default = HeaderBlock;
+exports.HeaderBlock = HeaderBlock;
 
 /***/ }),
 /* 266 */
@@ -10307,11 +10353,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _heroHeading = __webpack_require__(268);
 
-var _heroHeading2 = _interopRequireDefault(_heroHeading);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _heroHeading2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _heroHeading.HeroHeading;
+  }
+});
 
 /***/ }),
 /* 268 */
@@ -10323,6 +10370,7 @@ exports.default = _heroHeading2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.HeroHeading = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -10365,10 +10413,10 @@ var HeroHeading = function (_Vue) {
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], HeroHeading.prototype, "title", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", String)], HeroHeading.prototype, "subtitle", void 0);
-HeroHeading = __decorate([_heroHeadingVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.HeroHeading = HeroHeading = __decorate([_heroHeadingVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'HeroHeading'
 })], HeroHeading);
-exports.default = HeroHeading;
+exports.HeroHeading = HeroHeading;
 
 /***/ }),
 /* 269 */
@@ -10477,7 +10525,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: null }), __metadata("design:type", String)], IconButton.prototype, "iconName", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, default: true }), __metadata("design:type", Boolean)], IconButton.prototype, "preventDefault", void 0);
 exports.IconButton = IconButton = __decorate([_iconButtonVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'icon-button'
+    name: 'IconButton'
 })], IconButton);
 exports.IconButton = IconButton;
 
@@ -11089,11 +11137,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _component = __webpack_require__(286);
 
-var _component2 = _interopRequireDefault(_component);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _component2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _component.ListUnordered;
+  }
+});
 
 /***/ }),
 /* 286 */
@@ -11105,6 +11154,7 @@ exports.default = _component2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.ListUnordered = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -11146,10 +11196,10 @@ var ListUnordered = function (_Vue) {
     return ListUnordered;
 }(_vuePropertyDecorator.Vue);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], ListUnordered.prototype, "listItems", void 0);
-ListUnordered = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.ListUnordered = ListUnordered = __decorate([_templateVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'ListUnordered'
 })], ListUnordered);
-exports.default = ListUnordered;
+exports.ListUnordered = ListUnordered;
 
 /***/ }),
 /* 287 */
@@ -11832,11 +11882,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _modal = __webpack_require__(298);
 
-var _modal2 = _interopRequireDefault(_modal);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _modal2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _modal.Modal;
+  }
+});
 
 /***/ }),
 /* 298 */
@@ -11848,6 +11899,7 @@ exports.default = _modal2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Modal = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -11955,10 +12007,10 @@ var Modal = function (_Vue) {
 
     return Modal;
 }(_vuePropertyDecorator.Vue);
-Modal = __decorate([_modalVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'modal'
+exports.Modal = Modal = __decorate([_modalVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'Modal'
 })], Modal);
-exports.default = Modal;
+exports.Modal = Modal;
 
 /***/ }),
 /* 299 */
@@ -12212,11 +12264,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _product = __webpack_require__(307);
 
-var _product2 = _interopRequireDefault(_product);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _product2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _product.Product;
+  }
+});
 
 /***/ }),
 /* 307 */
@@ -12228,6 +12281,7 @@ exports.default = _product2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.Product = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -12271,10 +12325,10 @@ var Product = function (_Vue) {
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Product.prototype, "icon", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], Product.prototype, "name", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], Product.prototype, "pricing", void 0);
-Product = __decorate([_productVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.Product = Product = __decorate([_productVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'Product'
 })], Product);
-exports.default = Product;
+exports.Product = Product;
 
 /***/ }),
 /* 308 */
@@ -12413,7 +12467,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false, def
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SearchBar.prototype, "placeholder", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Boolean, required: false, default: false }), __metadata("design:type", Boolean)], SearchBar.prototype, "openState", void 0);
 exports.SearchBar = SearchBar = __decorate([_searchBarVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'search-bar'
+    name: 'SearchBar'
 })], SearchBar);
 exports.SearchBar = SearchBar;
 
@@ -12765,7 +12819,7 @@ var SocialNav = function (_Vue) {
     return SocialNav;
 }(_vuePropertyDecorator.Vue);
 exports.SocialNav = SocialNav = __decorate([_socialNavVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'social-nav'
+    name: 'SocialNav'
 })], SocialNav);
 exports.SocialNav = SocialNav;
 
@@ -13119,7 +13173,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: 'search' }), __metadata("design:type", Object)], SysNav.prototype, "searchIcon", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], SysNav.prototype, "searchLabel", void 0);
 exports.SysNav = SysNav = __decorate([_sysNavVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'sys-nav'
+    name: 'SysNav'
 })], SysNav);
 exports.SysNav = SysNav;
 
@@ -13823,11 +13877,9 @@ var _wizardStepConfirmation = __webpack_require__(348);
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_wizardStepConfirmation).default;
+    return _wizardStepConfirmation.WizardStepConfirmation;
   }
 });
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
 /* 348 */
@@ -13839,6 +13891,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.WizardStepConfirmation = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -13885,10 +13938,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], WizardStepConfirmation.prototype, "content", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), __metadata("design:type", Object)], WizardStepConfirmation.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], WizardStepConfirmation.prototype, "ctas", void 0);
-WizardStepConfirmation = __decorate([_wizardStepConfirmationVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.WizardStepConfirmation = WizardStepConfirmation = __decorate([_wizardStepConfirmationVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'WizardStepConfirmation'
 })], WizardStepConfirmation);
-exports.default = WizardStepConfirmation;
+exports.WizardStepConfirmation = WizardStepConfirmation;
 
 /***/ }),
 /* 349 */
@@ -14185,7 +14238,7 @@ Object.defineProperty(exports, 'Overview', {
 
 var _overviewUbr = __webpack_require__(398);
 
-Object.defineProperty(exports, 'OverviewUbr', {
+Object.defineProperty(exports, 'OverviewUBR', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_overviewUbr).default;
@@ -14221,7 +14274,7 @@ Object.defineProperty(exports, 'SearchResults', {
 
 var _subnavigation = __webpack_require__(410);
 
-Object.defineProperty(exports, 'Subnavigation', {
+Object.defineProperty(exports, 'SubNavigation', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_subnavigation).default;
@@ -14675,7 +14728,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Colors.prototype, "colorList", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], Colors.prototype, "ctas", void 0);
 exports.Colors = Colors = __decorate([_colorsVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'colors'
+    name: 'Colors'
 })], Colors);
 exports.Colors = Colors;
 
@@ -15189,7 +15242,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroBasic.prototype, "ctas", void 0);
 exports.HeroBasic = HeroBasic = __decorate([_heroBasicVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'hero-basic'
+    name: 'HeroBasic'
 })], HeroBasic);
 exports.HeroBasic = HeroBasic;
 
@@ -15298,7 +15351,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroCover.prototype, "ctas", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroCover.prototype, "image", void 0);
 exports.HeroCover = HeroCover = __decorate([_heroCoverVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'hero-cover'
+    name: 'HeroCover'
 })], HeroCover);
 exports.HeroCover = HeroCover;
 
@@ -15332,11 +15385,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _heroHomepage = __webpack_require__(385);
 
-var _heroHomepage2 = _interopRequireDefault(_heroHomepage);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _heroHomepage2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _heroHomepage.HeroHomepage;
+  }
+});
 
 /***/ }),
 /* 385 */
@@ -15348,6 +15402,7 @@ exports.default = _heroHomepage2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.HeroHomepage = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -15438,10 +15493,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], HeroHomepage.prototype, "description", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroHomepage.prototype, "image", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroHomepage.prototype, "ctas", void 0);
-HeroHomepage = __decorate([_heroHomepageVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'hero-homepage'
+exports.HeroHomepage = HeroHomepage = __decorate([_heroHomepageVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'HeroHomepage'
 })], HeroHomepage);
-exports.default = HeroHomepage;
+exports.HeroHomepage = HeroHomepage;
 
 /***/ }),
 /* 386 */
@@ -15499,11 +15554,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _heroProduct = __webpack_require__(389);
 
-var _heroProduct2 = _interopRequireDefault(_heroProduct);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _heroProduct2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _heroProduct.HeroProduct;
+  }
+});
 
 /***/ }),
 /* 389 */
@@ -15515,6 +15571,7 @@ exports.default = _heroProduct2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.HeroProduct = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -15571,10 +15628,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), 
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "ctas", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], HeroProduct.prototype, "products", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: false }), __metadata("design:type", Object)], HeroProduct.prototype, "linkList", void 0);
-HeroProduct = __decorate([_heroProductVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.HeroProduct = HeroProduct = __decorate([_heroProductVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'HeroProduct'
 })], HeroProduct);
-exports.default = HeroProduct;
+exports.HeroProduct = HeroProduct;
 
 /***/ }),
 /* 390 */
@@ -15767,7 +15824,7 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, default: '' }), __me
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", String)], LocaleSelector.prototype, "type", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('initialIsoCode'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], LocaleSelector.prototype, "onInitialIsoCodeChange", null);
 exports.LocaleSelector = LocaleSelector = __decorate([_localeSelectorVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'locale-selector'
+    name: 'LocaleSelector'
 })], LocaleSelector);
 exports.LocaleSelector = LocaleSelector;
 
@@ -15912,11 +15969,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _overviewUbr = __webpack_require__(399);
 
-var _overviewUbr2 = _interopRequireDefault(_overviewUbr);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _overviewUbr2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _overviewUbr.OverviewUBR;
+  }
+});
 
 /***/ }),
 /* 399 */
@@ -15928,6 +15986,7 @@ exports.default = _overviewUbr2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.OverviewUBR = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -15972,10 +16031,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], OverviewUBR.prototype, "subtitle", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], OverviewUBR.prototype, "items", void 0);
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], OverviewUBR.prototype, "ctas", void 0);
-OverviewUBR = __decorate([_overviewUbrVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'overview-ubr'
+exports.OverviewUBR = OverviewUBR = __decorate([_overviewUbrVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'OverviewUBR'
 })], OverviewUBR);
-exports.default = OverviewUBR;
+exports.OverviewUBR = OverviewUBR;
 
 /***/ }),
 /* 400 */
@@ -16494,7 +16553,7 @@ var _subnavigation = __webpack_require__(411);
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
-    return _subnavigation.Subnavigation;
+    return _subnavigation.SubNavigation;
   }
 });
 
@@ -16508,7 +16567,7 @@ Object.defineProperty(exports, 'default', {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Subnavigation = undefined;
+exports.SubNavigation = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -16544,13 +16603,13 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var Subnavigation = function (_Vue) {
-    _inherits(Subnavigation, _Vue);
+var SubNavigation = function (_Vue) {
+    _inherits(SubNavigation, _Vue);
 
-    function Subnavigation() {
-        _classCallCheck(this, Subnavigation);
+    function SubNavigation() {
+        _classCallCheck(this, SubNavigation);
 
-        var _this = _possibleConstructorReturn(this, (Subnavigation.__proto__ || Object.getPrototypeOf(Subnavigation)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (SubNavigation.__proto__ || Object.getPrototypeOf(SubNavigation)).apply(this, arguments));
 
         _this.activeSelector = '.exact-active';
         _this.scrollTimeout = 300;
@@ -16558,7 +16617,7 @@ var Subnavigation = function (_Vue) {
         return _this;
     }
 
-    _createClass(Subnavigation, [{
+    _createClass(SubNavigation, [{
         key: "mounted",
         value: function mounted() {
             var subnav = this.$refs.subNav;
@@ -16574,13 +16633,13 @@ var Subnavigation = function (_Vue) {
         }
     }]);
 
-    return Subnavigation;
+    return SubNavigation;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], Subnavigation.prototype, "items", void 0);
-exports.Subnavigation = Subnavigation = __decorate([_subnavigationVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'Subnavigation'
-})], Subnavigation);
-exports.Subnavigation = Subnavigation;
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], SubNavigation.prototype, "items", void 0);
+exports.SubNavigation = SubNavigation = __decorate([_subnavigationVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'SubNavigation'
+})], SubNavigation);
+exports.SubNavigation = SubNavigation;
 
 /***/ }),
 /* 412 */
@@ -16807,11 +16866,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _tableCompare = __webpack_require__(420);
 
-var _tableCompare2 = _interopRequireDefault(_tableCompare);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _tableCompare2.default;
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _tableCompare.TableCompare;
+  }
+});
 
 /***/ }),
 /* 420 */
@@ -16823,6 +16883,7 @@ exports.default = _tableCompare2.default;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.TableCompare = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -17027,10 +17088,10 @@ __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: true }), _
 __decorate([(0, _vuePropertyDecorator.Prop)({ type: Object }), __metadata("design:type", Object)], TableCompare.prototype, "ctas", void 0);
 __decorate([(0, _vuePropertyDecorator.Watch)('content.columns'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], TableCompare.prototype, "observeColumns", null);
 __decorate([(0, _vuePropertyDecorator.Watch)('scrollingColumns'), __metadata("design:type", Function), __metadata("design:paramtypes", []), __metadata("design:returntype", void 0)], TableCompare.prototype, "resetScrollingColumns", null);
-TableCompare = __decorate([_tableCompareVue2.default, (0, _vuePropertyDecorator.Component)({
+exports.TableCompare = TableCompare = __decorate([_tableCompareVue2.default, (0, _vuePropertyDecorator.Component)({
     name: 'TableCompare'
 })], TableCompare);
-exports.default = TableCompare;
+exports.TableCompare = TableCompare;
 
 /***/ }),
 /* 421 */
