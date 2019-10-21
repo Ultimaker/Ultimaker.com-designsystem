@@ -14239,7 +14239,7 @@ Object.defineProperty(exports, 'Overview', {
 
 var _overviewUbr = __webpack_require__(398);
 
-Object.defineProperty(exports, 'OverviewUBR', {
+Object.defineProperty(exports, 'OverviewUbr', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_overviewUbr).default;
@@ -15973,7 +15973,7 @@ var _overviewUbr = __webpack_require__(399);
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
-    return _overviewUbr.OverviewUBR;
+    return _overviewUbr.OverviewUbr;
   }
 });
 
@@ -15987,7 +15987,7 @@ Object.defineProperty(exports, 'default', {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.OverviewUBR = undefined;
+exports.OverviewUbr = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -16017,25 +16017,25 @@ var __metadata = undefined && undefined.__metadata || function (k, v) {
     if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-var OverviewUBR = function (_Vue) {
-    _inherits(OverviewUBR, _Vue);
+var OverviewUbr = function (_Vue) {
+    _inherits(OverviewUbr, _Vue);
 
-    function OverviewUBR() {
-        _classCallCheck(this, OverviewUBR);
+    function OverviewUbr() {
+        _classCallCheck(this, OverviewUbr);
 
-        return _possibleConstructorReturn(this, (OverviewUBR.__proto__ || Object.getPrototypeOf(OverviewUBR)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (OverviewUbr.__proto__ || Object.getPrototypeOf(OverviewUbr)).apply(this, arguments));
     }
 
-    return OverviewUBR;
+    return OverviewUbr;
 }(_vuePropertyDecorator.Vue);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], OverviewUBR.prototype, "title", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], OverviewUBR.prototype, "subtitle", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], OverviewUBR.prototype, "items", void 0);
-__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], OverviewUBR.prototype, "ctas", void 0);
-exports.OverviewUBR = OverviewUBR = __decorate([_overviewUbrVue2.default, (0, _vuePropertyDecorator.Component)({
-    name: 'OverviewUBR'
-})], OverviewUBR);
-exports.OverviewUBR = OverviewUBR;
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: true }), __metadata("design:type", Object)], OverviewUbr.prototype, "title", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: String, required: false }), __metadata("design:type", Object)], OverviewUbr.prototype, "subtitle", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Array, required: true }), __metadata("design:type", Object)], OverviewUbr.prototype, "items", void 0);
+__decorate([(0, _vuePropertyDecorator.Prop)({ type: Object, required: false }), __metadata("design:type", Object)], OverviewUbr.prototype, "ctas", void 0);
+exports.OverviewUbr = OverviewUbr = __decorate([_overviewUbrVue2.default, (0, _vuePropertyDecorator.Component)({
+    name: 'OverviewUbr'
+})], OverviewUbr);
+exports.OverviewUbr = OverviewUbr;
 
 /***/ }),
 /* 400 */
