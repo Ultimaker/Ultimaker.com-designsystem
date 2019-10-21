@@ -36,6 +36,11 @@
         "unit:chrome": "cross-env BABEL_ENV=test karma start test/karma.conf.js --chrome",
         "unit:debug": "cross-env BABEL_ENV=test karma start test/karma.conf.js --debug"
     },
+    "husky": {
+        "hooks": {
+            "pre-push": "echo 'pre-push checks ...' && npm run lint:diff"
+        }
+    },
     "dependencies": {
         "core-js": "^2.5.7",
         "escape-string-regexp": "^2.0.0",
@@ -88,6 +93,7 @@
         "file-loader": "^1.1.11",
         "html-loader": "^0.5.5",
         "html-loader-jest": "^0.2.1",
+        "husky": "^3.0.9",
         "jasmine": "^2.8.0",
         "jasmine-ajax": "^3.3.1",
         "jasmine-core": "^2.8.0",
