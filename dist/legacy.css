@@ -804,59 +804,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   width: 1em;
   height: 1em; }
 
-/* ------------------ Animations ------------------ */
-@keyframes arrowLineAnimate {
-  0% {
-    transform: translate(0, 0) scaleX(0); }
-  12.5% {
-    transform: translate(0, 0) scaleX(1.075); }
-  37.5% {
-    transform: translate(0, 0) scaleX(1.075); }
-  50% {
-    transform: translate(-100%, 0) scaleX(1.075); }
-  50.1% {
-    transform: translate(0, 0) scaleX(0); } }
-
-@keyframes arrowLineAnimateRotated-2 {
-  10% {
-    transform: rotate(45deg) scaleX(0) translate(-5.65px, -5.15px); }
-  15% {
-    transform: rotate(45deg) scaleX(0.425) translate(-5.65px, -5.15px); }
-  45% {
-    transform: rotate(45deg) scaleX(0.425) translate(-5.65px, -5.15px); }
-  60% {
-    transform: rotate(45deg) scaleX(0) translate(-5.65px, -5.15px); } }
-
-@keyframes arrowLineAnimateRotated-3 {
-  10% {
-    transform: rotate(-45deg) scaleX(0) translate(-5px, 4.75px); }
-  15% {
-    transform: rotate(-45deg) scaleX(0.425) translate(-5px, 4.75px); }
-  45% {
-    transform: rotate(-45deg) scaleX(0.425) translate(-5px, 4.75px); }
-  60% {
-    transform: rotate(-45deg) scaleX(0) translate(-5px, 4.75px); } }
-
-/* ------------------ Presentation ------------------ */
-.um-components .arrow__mask {
-  transform-origin: center center;
-  transform: scale(2) translateX(3.35px) rotate(45deg); }
-
-.um-components .arrow__line-1 {
-  transform: scaleX(0);
-  transform-origin: 110px 0%;
-  animation: arrowLineAnimate 1.2s ease-in-out infinite; }
-
-.um-components .arrow__line-2 {
-  transform: scaleX(0);
-  transform-origin: 10px 50%;
-  animation: arrowLineAnimateRotated-2 1.2s ease-in-out infinite; }
-
-.um-components .arrow__line-3 {
-  transform: scaleX(0);
-  transform-origin: 10px 50%;
-  animation: arrowLineAnimateRotated-3 1.2s ease-in-out infinite; }
-
 .um-components .list {
   padding-left: 1em; }
 
