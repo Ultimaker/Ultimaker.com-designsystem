@@ -1,15 +1,15 @@
 /** @format */
 
-import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
-import { Component, Mixins, Prop } from 'vue-property-decorator';
+import { Component, Prop } from 'vue-property-decorator';
 import { SearchResultsProps } from './search-results.models';
 import WithRender from './search-results.vue.html';
+import Vue from 'vue';
 
 @WithRender
 @Component({
     name: 'SearchResults',
 })
-export class SearchResults extends Mixins(StepRowAnimation) implements SearchResultsProps {
+export class SearchResults extends Vue implements SearchResultsProps {
     @Prop({ type: String, required: true }) eventLoadMore!: SearchResultsProps['eventLoadMore'];
     @Prop({ type: String, required: true }) eventSubmitSearch!: SearchResultsProps['eventSubmitSearch'];
     @Prop({ type: Boolean, required: true }) isLoading!: SearchResultsProps['isLoading'];

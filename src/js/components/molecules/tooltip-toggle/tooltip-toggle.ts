@@ -1,5 +1,4 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import { TweenLite, Power2 } from 'gsap';
 
 import defaults from 'constants/defaults';
 import { TooltipToggleProps } from './tooltip-toggle.models';
@@ -54,21 +53,5 @@ export class TooltipToggle extends Vue implements TooltipToggleProps {
 
     hide() {
         this.visible = false;
-    }
-
-    tooltipEnter(el, done) {
-        const tooltipElement = <HTMLElement> el;
-
-        TweenLite
-            .fromTo(tooltipElement, this.duration,
-                { autoAlpha: 0, x: 0, y: this.buildingUnit * -1 },
-                { autoAlpha: 1, x: 0, y: 0, ease: this.ease })
-            .eventCallback('onComplete', done);
-    }
-
-    tooltipLeave(el, done) {
-        TweenLite
-            .to(el, this.duration, { autoAlpha: 0, y: this.buildingUnit * -1, ease: this.ease })
-            .eventCallback('onComplete', done);
     }
 }

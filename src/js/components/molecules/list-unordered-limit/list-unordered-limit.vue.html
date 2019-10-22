@@ -1,10 +1,10 @@
 <section class="list-unordered-limit">
     <main>
-        <transition-group tag="ul" @before-enter="beforeEnter" @enter="enter">
+        <ul>
             <template v-for="(item, index) in listItems">
                 <li-item :item="item" :key="index" v-show="showLimit() === -1 || index < showLimit() || showAll"/>
             </template>
-        </transition-group>
+        </ul>
     </main>
     <footer v-show="showLimit() !== -1 && !showAll">
         <button @click="showHidden" class="button--secondary">{{ showButtonLabel() }}</button>

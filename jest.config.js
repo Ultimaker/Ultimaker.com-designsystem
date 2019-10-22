@@ -22,8 +22,6 @@ module.exports = {
     moduleNameMapper: {
         '^src/scss/storybook.scss$': '<rootDir>/test/mock/jest.styleMock.js',
         '\.(css|less|sass|scss)$': '<rootDir>/test/mock/jest.styleMock.js',
-        '^gsap/(.*)$': '<rootDir>/test/mock/jest.moduleMock.js',
-        '^utils/throw-props-plugin.*$': '<rootDir>/test/mock/jest.moduleMock.js',
         '^@root$': '<rootDir>',
         '^src/(.*)$': '<rootDir>/src/$1',
         '^adapters/(.*)$': '<rootDir>/src/js/adapters/$1',
