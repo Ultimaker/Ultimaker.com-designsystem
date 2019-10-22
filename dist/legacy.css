@@ -4543,7 +4543,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     margin-right: 0; }
   @media (min-width: 1201px) {
     .um-components .main-nav--large .main-nav__item {
-      padding: 0 15px; } }
+      padding: 0; } }
 
 .um-components .main-nav__link {
   display: block;
