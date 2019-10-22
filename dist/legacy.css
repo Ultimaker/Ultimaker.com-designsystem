@@ -5110,7 +5110,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .tabs__list {
     display: flex;
     padding: 0;
-    border-bottom: 2px solid #eaeaea;
     overflow-x: scroll;
     -ms-overflow-style: -ms-autohiding-scrollbar; }
     .um-components .tabs__list::-webkit-scrollbar-track {
@@ -5134,23 +5133,15 @@ because both families serve another purpose. Therefore the line-heights will be 
     font-size: 14px;
     line-height: 21px;
     padding: 9.5px 12px;
-    white-space: nowrap; }
+    white-space: nowrap;
+    border-bottom: 2px solid #eaeaea; }
     .um-components .tabs__list_link:hover, .um-components .tabs__list_link--active {
-      color: #000; }
+      color: #000;
+      border-bottom: 2px solid #000; }
       .um-components .tabs__list_link:hover .sub-nav__label:after, .um-components .tabs__list_link--active .sub-nav__label:after {
         width: 100%; }
     .um-components .tabs__list_link > span {
       margin-right: 6px; }
-  .um-components .tabs__indicator {
-    position: absolute;
-    z-index: 1;
-    display: block;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: #000; }
   .um-components .tabs__contents .container, .um-components .tabs__contents .footer__container {
     padding-bottom: 0; }
 
