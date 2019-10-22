@@ -1,7 +1,7 @@
 /** @format */
 
 import { CardArticle } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cards/CardArticle';
-import { Component, Prop, Mixins, Watch } from 'vue-property-decorator';
+import { Component, Prop, Watch } from 'vue-property-decorator';
 import WithRender from './list-section.vue.html';
 
 import Events from 'constants/events';
@@ -9,17 +9,17 @@ import ViewportUtil from 'utils/viewport';
 
 import { FilterCategoryInterface } from '../filter-category/filter-category.interface';
 import { ListSectionProps } from './list-section.models';
-import { StepRowAnimation } from 'js/mixins/step-row-animation/step-row-animation';
 
 import { getFiltersInCardCollection } from './helpers/get-filters-in-card-collection';
 import { getFilteredCardsFromActiveFilterCategories } from './helpers/get-filtered-cards-from-active-filter-categories';
 import { updateActiveFilterCategories } from 'components/molecules/list-section/helpers/update-active-filter-categories';
+import Vue from 'vue';
 
 @WithRender
 @Component({
     name: 'ListSection',
 })
-export class ListSection extends Mixins(StepRowAnimation) implements ListSectionProps {
+export class ListSection extends Vue implements ListSectionProps {
     @Prop({ type: Array, required: true }) cards!: ListSectionProps['cards'];
     @Prop({ type: Array }) filterCategories?: ListSectionProps['filterCategories'];
     @Prop({ type: Object }) limit?: ListSectionProps['limit'];

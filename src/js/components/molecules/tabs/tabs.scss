@@ -26,7 +26,6 @@
 
         display: flex;
         padding: 0;
-        border-bottom: 2px solid $colorGrayLight;
 
         overflow-x: scroll;
         -ms-overflow-style: -ms-autohiding-scrollbar; // hide the scrollbar on ie11 and edge
@@ -65,9 +64,12 @@
 
         white-space: nowrap;
 
+        border-bottom: 2px solid $colorGrayLight;
+
         &:hover,
         &--active {
             color: $colorBlack;
+            border-bottom: 2px solid $colorBlack;
 
             .sub-nav__label:after {
                 width: 100%;
@@ -77,19 +79,6 @@
         > span {
             margin-right: $buildingUnit / 2;
         }
-    }
-
-    &__indicator {
-        position: absolute;
-        z-index: 1;
-        display: block;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-        height: 2px;
-        width: 0; // this is the default width for the indicator which will be overwritten with inline styles
-        background-color: $colorBlack;
     }
 
     &__contents {

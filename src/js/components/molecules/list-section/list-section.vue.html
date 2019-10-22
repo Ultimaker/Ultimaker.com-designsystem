@@ -37,7 +37,7 @@
             @[eventFilterCategoryChange]="handleFilterCategoryChange" />
     </template>
 
-    <transition-group class="list-section__container" tag="ul" @before-enter="beforeEnter"  @enter="enter">
+    <ul class="list-section__container">
         <li v-for="(chunk, index) in chunks"
             :key="index" class="list-section__row"
             :class="chunk.length % 2 === 0 && 'list-section__row--even'"
@@ -49,7 +49,7 @@
                     v-bind="card"
                     v-for="(card, i) in chunk" />
         </li>
-    </transition-group>
+    </ul>
 
     <footer class="list-section__footer">
         <button @click="limit && limit.expandAmount ? showChunk() : showAll()"

@@ -40,7 +40,6 @@
         "core-js": "^2.5.7",
         "escape-string-regexp": "^2.0.0",
         "express": "^4.16.3",
-        "gsap": "^2.0.2",
         "portal-vue": "^2.1.5",
         "unicode-loader": "^1.0.7",
         "uuid": "^3.3.2",

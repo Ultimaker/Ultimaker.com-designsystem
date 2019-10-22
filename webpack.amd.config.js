@@ -29,8 +29,6 @@ const webpackConfig = {
         minimize: false
     },
     externals: [
-        'gsap',
-        /^gsap\/.+$/,
         'vue',
         'vuex',
         'lodash',
