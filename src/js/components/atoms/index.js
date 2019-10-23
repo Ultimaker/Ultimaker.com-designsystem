@@ -1,5 +1,5 @@
 export { default as AnchorOverlay } from 'atoms/anchor-overlay';
-export { default as ActionButton } from 'atoms/action-button';
+import ActionButton from 'atoms/action-button/ActionButton';
 export { default as BaseLink } from 'atoms/BaseLink';
 export { default as ContentLink } from 'atoms/content-link';
 export { default as ContentButton } from 'atoms/content-button';
