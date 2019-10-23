@@ -13,8 +13,8 @@ export class InPageNotification extends Vue implements NotificationInterface {
     @Prop({ type: Object, required: false }) public clickEvent?: NotificationInterface['clickEvent'];
 
     public display: boolean = true;
-    private $emitPublic;
-    private $route;
+    public $emitPublic;
+    public $route;
 
     public close(): void {
         this.display = false;
