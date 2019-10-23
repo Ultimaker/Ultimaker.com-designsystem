@@ -1,0 +1,20 @@
+<template>
+    <li class="list__item">
+        <template v-if="item.item"><component :is="item.type" v-bind="item.item"/></template>
+        <template v-else-if="item.type"><component :is="item.type" v-bind="item"/></template>
+        <template v-else>{{ item }}</template>
+    </li>
+</template>
+
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.component('LiItem', {
+    props: {
+        item: {
+            type: [String, Object],
+            required: true,
+        },
+    },
+});
+</script>
