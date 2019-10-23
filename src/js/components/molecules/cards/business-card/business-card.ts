@@ -16,7 +16,7 @@ export default class BusinessCard extends Vue implements IBusinessCard {
     @Prop({ type: Object, required: false }) clickEvent?: IBusinessCard['clickEvent'];
 
     get clickEventType() {
-        return Events.click;
+        return Events.gtm.click;
     }
 
     get clickEventData() {

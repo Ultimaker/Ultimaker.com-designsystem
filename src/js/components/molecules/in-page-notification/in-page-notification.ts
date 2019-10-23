@@ -41,6 +41,6 @@ export class InPageNotification extends Vue implements NotificationInterface {
             return;
         }
 
-        this.$emitPublic(Events.close, this.clickEventData());
+        this.$emitPublic(Events.gtm.close, this.clickEventData());
     }
 }

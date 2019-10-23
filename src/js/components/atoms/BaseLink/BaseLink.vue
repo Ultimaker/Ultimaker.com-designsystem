@@ -111,7 +111,7 @@ export default Vue.component('BaseLink', {
     methods: {
         triggerEventClick: function(): void {
             if (this.clickEvent) {
-                this.$emitPublic(Events.click, this.clickEventData);
+                this.$emitPublic(Events.gtm.click, this.clickEventData);
             }
         }
     }

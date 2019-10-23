@@ -66,7 +66,7 @@ export class ListUnorderedLimit extends Vue implements ListUnorderedLimitProps {
 
     showHidden() {
         this.showAll = true;
-        this.$emitPublic(Events.click, this.getClickEventData());
+        this.$emitPublic(Events.gtm.click, this.getClickEventData());
     }
 
     /**

@@ -3,7 +3,6 @@ import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 import { LocaleAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/LocaleAutoCompleteField';
 import WithRender from './locale-selector.vue.html';
 import Events from 'constants/events';
-import EventNames from 'constants/event-names';
 
 @WithRender
 @Component({
@@ -22,8 +21,6 @@ export class LocaleSelector extends Vue {
     @Prop({ type: String, default: '' }) public suggestionsLabel!: LocaleAutoCompleteField['suggestionsLabel'];
     @Prop({ type: String, required: true }) public type!: string;
 
-    public $emitPublic;
-
     private localeSelectorOpen: boolean = false;
     private currentIsoCode: string = this.initialIsoCode;
 
@@ -41,21 +38,17 @@ export class LocaleSelector extends Vue {
 
     private get acceptLanguage(): string {
         // @ts-ignore
-        const serverContext = this.$parent.$store.getters['globals/serverContext'];
+        const { headers } = this.$store.state.request;
 
-        if (serverContext === undefined) {
+        if (headers === undefined) {
             return 'no-accept-language';
         }
 
-        if (!serverContext.headers) {
+        if (!headers['accept-language']) {
             return 'no-accept-language';
         }
 
-        if (!serverContext.headers['accept-language']) {
-            return 'no-accept-language';
-        }
-
-        return serverContext.headers['accept-language'];
+        return headers['accept-language'];
     }
 
     private handleLocaleChange(code: string | null): void {
@@ -65,14 +58,28 @@ export class LocaleSelector extends Vue {
         }
 
         if (this.currentIsoCode !== code) {
-            this.$emitPublic(Events.change, {
-                dataType: EventNames.languageChange,
+            let dataType: string = Events.gtm.dataType.languageChange;
+
+            if (this.type.includes('country')) {
+                // @todo: setup gtm to use 'country-change'
+                dataType = Events.gtm.dataType.countryChange;
+            }
+
+            // @ts-ignore
+            this.$emitPublic(Events.gtm.change, {
+                dataType,
                 data: {
-                    fromLanguage: this.currentIsoCode,
-                    toLanguage: code,
                     acceptLanguage: this.acceptLanguage,
+                    fromIsoCode: this.currentIsoCode,
+                    // @todo: here for backward compatibility; alter gtm to use fromIsoCode instead
+                    fromLanguage: this.currentIsoCode,
+                    pathname: window.location.pathname,
+                    toIsoCode: code,
+                    // @todo: here for backward compatibility; alter gtm to use toIsoCode instead
+                    toLanguage: code,
                 },
             });
+
             this.currentIsoCode = code;
             this.$emit(this.eventLocaleChanged, code);
         }

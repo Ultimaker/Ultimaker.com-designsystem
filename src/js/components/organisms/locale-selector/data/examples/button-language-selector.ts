@@ -18,5 +18,5 @@ export const buttonLanguageSelector = {
     placeholder: 'Type your language',
     showSuggestions: true,
     suggestionsLabel: 'Suggestions',
-    type: 'CountryAutoCompleteField',
+    type: 'languageSelector',
 };
