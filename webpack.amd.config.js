@@ -6,6 +6,7 @@ const Visualizer = require('webpack-visualizer-plugin');
 const production = process.env.NODE_ENV === 'production';
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const base = require('./webpack.config');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 function resolve(dir) {
     return path.join(__dirname, dir);
@@ -44,6 +45,10 @@ const webpackConfig = {
     module: {
         rules: [
             {
+                test: /\.vue$/,
+                loader: 'vue-loader',
+            },
+            {
                 test: /\.(png|jpg|gif|ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
                 loader: 'file-loader?name=[path][name].[ext]'
             }
@@ -63,7 +68,8 @@ const webpackConfig = {
         }),
         new Visualizer({
             filename: 'statistics.html'
-        })
+        }),
+        new VueLoaderPlugin(),
     ])
 };
 
