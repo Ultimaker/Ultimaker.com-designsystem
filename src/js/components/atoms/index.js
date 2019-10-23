@@ -14,6 +14,6 @@ import NavAssist from 'atoms/nav-assist/NavAssist';
 import SpanLabel from 'atoms/span-label/SpanLabel';
 import ToolTip from 'atoms/tooltip/ToolTip';
 import YoutubeVideo from 'atoms/youtube-video/YoutubeVideo';
+import LabelFilter from 'atoms/label-filter/LabelFilter';
 export { default as Image } from 'atoms/c-image';
 export { default as ResponsivePicture } from 'atoms/responsive-picture';
-export { default as LabelFilter } from 'atoms/label-filter';
