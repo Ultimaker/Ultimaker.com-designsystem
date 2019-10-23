@@ -1,8 +1,9 @@
 import ActionButton from 'atoms/action-button/ActionButton';
 import AnchorOverlay from 'atoms/anchor-overlay/AnchorOverlay';
 import BaseLink from 'atoms/BaseLink/BaseLink';
-export { default as ContentLink } from 'atoms/content-link';
-export { default as ContentButton } from 'atoms/content-button';
+import ContentLink from 'atoms/content-link/ContentLink';
+import ContentButton from 'atoms/content-button/ContentButton';
+import YoutubeLink from 'atoms/youtube-link/YoutubeLink';
 export { default as ContentLinkList } from 'atoms/content-link-list';
 export { default as HitArea } from 'atoms/hit-area';
 export { default as HorizontalList } from 'atoms/horizontal-list';
@@ -15,5 +16,4 @@ export { default as NavAssist } from 'atoms/nav-assist';
 export { default as ResponsivePicture } from 'atoms/responsive-picture';
 export { default as SpanLabel } from 'atoms/span-label';
 export { default as Tooltip } from 'atoms/tooltip';
-export { default as YoutubeLink } from 'atoms/youtube-link';
 export { default as YoutubeVideo } from 'atoms/youtube-video';
