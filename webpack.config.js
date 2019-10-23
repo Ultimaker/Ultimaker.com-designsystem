@@ -54,10 +54,6 @@ const webpackConfig = {
     module: {
         rules: [
             {
-                test: /\.vue$/,
-                loader: 'vue-loader'
-            },
-            {
                 test: /\.vue\.html$/,
                 loader: 'vue-template-loader'
             },
