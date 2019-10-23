@@ -1,6 +1,6 @@
 /* eslint-disable max-nested-callbacks */
-import { BaseLink } from './base-link';
 import { build } from 'vuenit';
+import BaseLink from 'components/atoms/BaseLink/BaseLink';
 
 describe('components', () => {
     describe('atoms', () => {

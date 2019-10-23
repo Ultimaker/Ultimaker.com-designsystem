@@ -1,9 +1,0 @@
-<component :class="classObject"
-           @click="triggerEventClick"
-           v-bind="linkProps">
-    <icon v-if="this.icon" :icon-name="icon" />
-    <span v-if="!slots" class="link__underline">
-        {{label}}
-    </span>
-    <slot v-else ></slot>
-</component>
