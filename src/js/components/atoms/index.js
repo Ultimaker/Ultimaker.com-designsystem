@@ -1,6 +1,6 @@
 import ActionButton from 'atoms/action-button/ActionButton';
 import AnchorOverlay from 'atoms/anchor-overlay/AnchorOverlay';
-export { default as BaseLink } from 'atoms/BaseLink';
+import BaseLink from 'atoms/BaseLink/BaseLink';
 export { default as ContentLink } from 'atoms/content-link';
 export { default as ContentButton } from 'atoms/content-button';
 export { default as ContentLinkList } from 'atoms/content-link-list';
