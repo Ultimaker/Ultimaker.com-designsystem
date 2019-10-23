@@ -13,7 +13,7 @@ import LiItem from 'atoms/li-item/LiItem';
 import NavAssist from 'atoms/nav-assist/NavAssist';
 import SpanLabel from 'atoms/span-label/SpanLabel';
 import ToolTip from 'atoms/tooltip/ToolTip';
+import YoutubeVideo from 'atoms/youtube-video/YoutubeVideo';
 export { default as Image } from 'atoms/c-image';
 export { default as ResponsivePicture } from 'atoms/responsive-picture';
-export { default as YoutubeVideo } from 'atoms/youtube-video';
 export { default as LabelFilter } from 'atoms/label-filter';
