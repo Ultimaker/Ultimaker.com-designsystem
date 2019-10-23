@@ -4,7 +4,7 @@ import BaseLink from 'atoms/BaseLink/BaseLink';
 import ContentLink from 'atoms/content-link/ContentLink';
 import ContentButton from 'atoms/content-button/ContentButton';
 import YoutubeLink from 'atoms/youtube-link/YoutubeLink';
-export { default as ContentLinkList } from 'atoms/content-link-list';
+import ContentLinkList from 'atoms/content-link-list/ContentLinkList';
 export { default as HitArea } from 'atoms/hit-area';
 export { default as HorizontalList } from 'atoms/horizontal-list';
 export { default as Icon } from 'atoms/icon';
