@@ -18,5 +18,5 @@ export const buttonCountrySelector = {
     placeholder: 'Type your country',
     showSuggestions: false,
     suggestionsLabel: 'Suggestions',
-    type: 'CountryAutoCompleteField',
+    type: 'countrySelector',
 };

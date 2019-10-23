@@ -52,7 +52,7 @@ module.exports = {
         '@typescript-eslint/camelcase': ['warn'],
         '@typescript-eslint/class-name-casing': ['warn'],
         '@typescript-eslint/explicit-function-return-type': ['warn'],
-        '@typescript-eslint/explicit-member-accessibility': ['warn'],
+        '@typescript-eslint/explicit-member-accessibility': ['off'],
         '@typescript-eslint/interface-name-prefix': ['warn'],
         '@typescript-eslint/no-empty-interface': ['warn'],
         '@typescript-eslint/no-explicit-any': ['warn'],

@@ -41,6 +41,6 @@ export class CardBase extends Vue implements CardBaseProps {
             return;
         }
 
-        this.$emitPublic(Events.click, this.clickEventData);
+        this.$emitPublic(Events.gtm.click, this.clickEventData);
     }
 }

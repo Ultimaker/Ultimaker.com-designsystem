@@ -76,10 +76,10 @@ export class ListSection extends Vue implements ListSectionProps {
 
     get filteredCards(): CardArticle[] {
         if (!this.activeFilterCategories.length) {
-            return <CardArticle[]> this.cards;
+            return (this.cards as CardArticle[]);
         }
 
-        return getFilteredCardsFromActiveFilterCategories(<CardArticle[]> this.cards, this.activeFilterCategories);
+        return getFilteredCardsFromActiveFilterCategories((this.cards as CardArticle[]), this.activeFilterCategories);
     }
 
     @Watch('cards')
@@ -185,7 +185,7 @@ export class ListSection extends Vue implements ListSectionProps {
     triggerEventClick(): void {
         if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
             try {
-                this.$emitPublic(Events.click, this.clickEventData);
+                this.$emitPublic(Events.gtm.click, this.clickEventData);
             } catch (e) {
                 console.warn(e);
             }
