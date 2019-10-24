@@ -1,5 +1,5 @@
 import ArticleAuthor from 'molecules/article-author/ArticleAuthor';
-export { default as ArticleCtas } from 'molecules/article-ctas';
+import ArticleCtas from 'molecules/article-ctas/ArticleCtas';
 export { default as ArticleDescriptionList } from 'molecules/article-description-list';
 export { default as ArticleImage } from 'molecules/article-image';
 export { default as ArticleIntro } from 'molecules/article-intro';
