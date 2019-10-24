@@ -1,10 +1,10 @@
 import { Component, Prop, Watch, Mixins } from 'vue-property-decorator';
-import { FocusArea, ICImageProps, ImageFormat, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
-import { InView } from 'js/mixins/in-view';
+import { FocusArea, ICImageProps, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
 import { imageConstants } from './c-image.constants';
 import WithRender from './c-image.vue.html';
+import InView from 'js/mixins/in-view';
 
 @WithRender
 @Component({
