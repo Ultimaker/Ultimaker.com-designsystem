@@ -3,7 +3,7 @@ import ArticleCtas from 'molecules/article-ctas/ArticleCtas';
 import ArticleDescriptionList from 'molecules/article-description-list/ArticleDescriptionList';
 import ArticleImage from 'molecules/article-image/ArticleImage';
 import ArticleIntro from 'molecules/article-intro/ArticleIntro';
-export { default as ArticleTable } from 'molecules/article-table';
+import ArticleTable from 'molecules/article-table/ActicleTable';
 export { default as ArticleText } from 'molecules/article-text';
 export { default as ArticleVideo } from 'molecules/article-video';
 export { default as AutoComplete } from 'molecules/auto-complete';
