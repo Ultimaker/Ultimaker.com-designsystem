@@ -1,6 +1,4 @@
-
-/** @format */
-export { default as ArticleContent } from 'organisms/article-content';
+import ArticleContent from 'organisms/article-content/ArticleContent';
 export { default as ArticleHeader } from 'organisms/article-header';
 export { default as Brands } from 'organisms/brands';
 export { default as Colors } from 'organisms/colors';
