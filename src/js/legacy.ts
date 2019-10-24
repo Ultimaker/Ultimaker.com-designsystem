@@ -4,8 +4,8 @@ import 'babel-polyfill';
 import '../scss/component-library.scss';
 import ComponentRegistry from 'plugins/component-registry';
 import Components from './components';
-import * as Directives from './directives';
 import '../scss/utilities/_all.scss';
+import ClickOutside from './directives/click-outside';
 // <<< ordering of these imports matters
 
 const registry = new ComponentRegistry();
@@ -14,9 +14,7 @@ Object.keys(Components).forEach((c) => {
     registry.registerComponent(Components[c]);
 });
 
-Object.keys(Directives).forEach((d) => {
-    registry.registerDirective(new Directives[d]);
-});
+registry.registerDirective(ClickOutside);
 
 export { default as Defaults } from 'constants/defaults';
 export { default as BrowserCapabilities } from 'utils/browser-capabilities';

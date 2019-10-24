@@ -4,8 +4,8 @@ import 'babel-polyfill';
 import '../scss/ultimaker.scss';
 import ComponentRegistry from 'plugins/component-registry';
 import Components from './components';
-import * as Directives from './directives';
 import '../scss/utilities/_all.scss';
+import ClickOutside from './directives/click-outside';
 // <<< ordering of this import matters
 
 // import all icons from src/icons/.. as svg sprite
@@ -21,9 +21,7 @@ Object.keys(Components).forEach((c) => {
     registry.registerComponent(Components[c]);
 });
 
-Object.keys(Directives).forEach((d) => {
-    registry.registerDirective(new Directives[d]);
-});
+registry.registerDirective(ClickOutside);
 
 export { default as Defaults } from 'constants/defaults';
 export { default as BrowserCapabilities } from 'utils/browser-capabilities';
