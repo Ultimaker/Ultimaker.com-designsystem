@@ -5,7 +5,7 @@ import ArticleImage from 'molecules/article-image/ArticleImage';
 import ArticleIntro from 'molecules/article-intro/ArticleIntro';
 import ArticleTable from 'molecules/article-table/ActicleTable';
 import ArticleVideo from 'molecules/article-video/ArticleVideo';
-export { default as ArticleText } from 'molecules/article-text';
+import ArticleText from 'molecules/article-text/ArticleText';
 export { default as AutoComplete } from 'molecules/auto-complete';
 export { default as BlockIcon } from 'molecules/block-icon';
 export { default as Brand } from 'molecules/brand';
