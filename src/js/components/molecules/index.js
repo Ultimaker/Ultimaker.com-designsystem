@@ -1,7 +1,7 @@
 import ArticleAuthor from 'molecules/article-author/ArticleAuthor';
 import ArticleCtas from 'molecules/article-ctas/ArticleCtas';
 import ArticleDescriptionList from 'molecules/article-description-list/ArticleDescriptionList';
-export { default as ArticleImage } from 'molecules/article-image';
+import ArticleImage from 'molecules/article-image/ArticleImage';
 export { default as ArticleIntro } from 'molecules/article-intro';
 export { default as ArticleTable } from 'molecules/article-table';
 export { default as ArticleText } from 'molecules/article-text';
