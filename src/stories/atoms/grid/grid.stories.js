@@ -24,16 +24,4 @@ storiesOf('Atoms|grid', module)
         {
             notes: { markdown: require('./grid.stories.md') },
         },
-    )
-    .add(
-        'Justification',
-        () => ({
-            data: () => ({
-                justifications: data.justifications,
-            }),
-            template: require('./grid.justification.stories.html'),
-        }),
-        {
-            notes: { markdown: require('./grid.justification.stories.md') },
-        },
     );
