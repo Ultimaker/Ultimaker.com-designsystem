@@ -14,6 +14,9 @@
 import Vue from 'vue';
 import Events from '../../../constants/events';
 
+const absoluteUrlRegex = /^(http(s)?):\/\//;
+const domainRegex = /(http(s)?):\/\/(www.)?ultimaker\.com/;
+
 export default Vue.component('BaseLink', {
     props: {
         type: {
@@ -45,24 +48,19 @@ export default Vue.component('BaseLink', {
             required: false,
         },
     },
-    // @TODO: Convert to method
-    data: {
-        absoluteUrlRegex: /^(http(s)?):\/\//,
-        domainRegex: /(http(s)?):\/\/(www.)?ultimaker\.com/,
-    },
     computed: {
-        urlTarget: function() {
+        urlTarget: function(): string {
             if (this.url) {
-                return this.url.match(this.domainRegex) ? '_self' : '_blank';
+                return this.url.match(domainRegex) ? '_self' : '_blank';
             }
             return '';
         },
-        slots: function() {
+        slots: function(): any {
             return this.$slots &&
                 this.$slots.default &&
                 this.$slots.default.length;
         },
-        classObject: function() {
+        classObject: function(): object {
             const classes = {};
 
             if (this.block !== '' && typeof this.block === 'string') {
@@ -80,7 +78,7 @@ export default Vue.component('BaseLink', {
             return classes;
         },
         linkProps: function(): object {
-            if (this.url && this.url.match(this.absoluteUrlRegex)) {
+            if (this.url && this.url.match(absoluteUrlRegex)) {
                 return {
                     is: 'a',
                     href: this.url,
