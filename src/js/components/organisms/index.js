@@ -1,7 +1,7 @@
 import ArticleContent from 'organisms/article-content/ArticleContent';
 import ArticleHeader from 'organisms/article-header/ArticleHeader';
 import Brands from 'organisms/brands/Brands';
-export { default as Colors } from 'organisms/colors';
+import Colors from 'organisms/colors/Colors';
 export { default as ContentCover } from 'organisms/content-cover';
 export { default as ContentGeneral } from 'organisms/content-general';
 export { default as ContentHighlight } from 'organisms/content-highlight';
