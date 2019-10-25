@@ -8,7 +8,7 @@ import ContentHighlight from 'organisms/content-highlight/ContentHighlight';
 import HeroArticle from 'organisms/hero-article/HeroArticle';
 import HeroBasic from 'organisms/hero-basic/HeroBasic';
 import HeroCover from 'organisms/hero-cover/HeroCover';
-export { default as HeroHomepage } from 'organisms/hero-homepage';
+import HeroHomepage from 'organisms/hero-homepage/HeroHomepage';
 export { default as HeroProduct } from 'organisms/hero-product';
 export { default as LocaleSelector } from 'organisms/locale-selector';
 export { default as Overview } from 'organisms/overview';
