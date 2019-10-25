@@ -9,7 +9,7 @@ import HeroArticle from 'organisms/hero-article/HeroArticle';
 import HeroBasic from 'organisms/hero-basic/HeroBasic';
 import HeroCover from 'organisms/hero-cover/HeroCover';
 import HeroHomepage from 'organisms/hero-homepage/HeroHomepage';
-export { default as HeroProduct } from 'organisms/hero-product';
+import HeroProduct from 'organisms/hero-product/HeroProduct';
 export { default as LocaleSelector } from 'organisms/locale-selector';
 export { default as Overview } from 'organisms/overview';
 export { default as OverviewUbr } from 'organisms/overview-ubr';
