@@ -45,7 +45,7 @@
                 required: true,
             },
             colorList: {
-                type: [Object],
+                type: Array,
                 required: true,
             },
             ctas: {
@@ -59,6 +59,7 @@
         },
         computed: {
             activeColor(): number {
+                // @ts-ignore
                 return this.colorList[this.activeColorIndex];
             }
         },
