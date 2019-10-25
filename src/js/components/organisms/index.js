@@ -4,7 +4,7 @@ import Brands from 'organisms/brands/Brands';
 import Colors from 'organisms/colors/Colors';
 import ContentCover from 'organisms/content-cover/ContentCover';
 import ContentGeneral from 'organisms/content-general/ContentGeneral';
-export { default as ContentHighlight } from 'organisms/content-highlight';
+import ContentHighlight from 'organisms/content-highlight/ContentHighlight';
 export { default as HeroArticle } from 'organisms/hero-article';
 export { default as HeroBasic } from 'organisms/hero-basic';
 export { default as HeroCover } from 'organisms/hero-cover';
