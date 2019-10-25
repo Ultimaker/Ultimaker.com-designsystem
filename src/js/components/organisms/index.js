@@ -18,6 +18,6 @@ import PageHeader from 'organisms/page-header/PageHeader';
 import SearchResults from 'organisms/search-results/SearchResults';
 import SubNavigation from 'organisms/subnavigation/SubNavigation';
 import TabbedContent from 'organisms/tabbed-content/TabbedContent';
+import TabbedTable from 'organisms/tabbed-table/TabbedTable';
 export { default as LocaleSelector } from 'organisms/locale-selector';
-export { default as TabbedTable } from 'organisms/tabbed-table';
 export { default as TableCompare } from 'organisms/table-compare';
