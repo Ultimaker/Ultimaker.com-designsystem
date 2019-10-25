@@ -2,7 +2,7 @@ import ArticleContent from 'organisms/article-content/ArticleContent';
 import ArticleHeader from 'organisms/article-header/ArticleHeader';
 import Brands from 'organisms/brands/Brands';
 import Colors from 'organisms/colors/Colors';
-export { default as ContentCover } from 'organisms/content-cover';
+import ContentCover from 'organisms/content-cover/ContentCover';
 export { default as ContentGeneral } from 'organisms/content-general';
 export { default as ContentHighlight } from 'organisms/content-highlight';
 export { default as HeroArticle } from 'organisms/hero-article';
