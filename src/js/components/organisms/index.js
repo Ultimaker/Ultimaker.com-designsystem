@@ -1,6 +1,6 @@
 import ArticleContent from 'organisms/article-content/ArticleContent';
 import ArticleHeader from 'organisms/article-header/ArticleHeader';
-export { default as Brands } from 'organisms/brands';
+import Brands from 'organisms/brands/Brands';
 export { default as Colors } from 'organisms/colors';
 export { default as ContentCover } from 'organisms/content-cover';
 export { default as ContentGeneral } from 'organisms/content-general';
