@@ -5,7 +5,7 @@ import Colors from 'organisms/colors/Colors';
 import ContentCover from 'organisms/content-cover/ContentCover';
 import ContentGeneral from 'organisms/content-general/ContentGeneral';
 import ContentHighlight from 'organisms/content-highlight/ContentHighlight';
-export { default as HeroArticle } from 'organisms/hero-article';
+import HeroArticle from 'organisms/hero-article/HeroArticle';
 export { default as HeroBasic } from 'organisms/hero-basic';
 export { default as HeroCover } from 'organisms/hero-cover';
 export { default as HeroHomepage } from 'organisms/hero-homepage';
