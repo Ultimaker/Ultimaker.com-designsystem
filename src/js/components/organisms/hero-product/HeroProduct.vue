@@ -62,7 +62,7 @@
                 required: false,
             },
             ctas: {
-                type: Array,
+                type: Object,
                 required: false,
             },
             products: {
@@ -71,7 +71,7 @@
             },
             linkList: {
                 type: Array,
-                required: true,
+                required: false,
             }
         },
         computed: {
