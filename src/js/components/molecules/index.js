@@ -21,8 +21,8 @@ import WizardStepConfirmation from 'molecules/wizard-step-confirmation/WizardSte
 import BusinessCard from 'molecules/cards/business-card/BusinessCard';
 import CardArticle from 'molecules/cards/card-article/CardArticle';
 import CardBase from 'molecules/cards/card-base/CardBase';
+import CardDownload from 'molecules/cards/card-download/CardDownload';
 export { default as AutoComplete } from 'molecules/auto-complete';
-export { default as CardDownload } from 'molecules/cards/card-download';
 export { default as CardProduct } from 'molecules/cards/card-product';
 export { default as FilterCategory } from 'molecules/filter-category';
 export { default as Flyout } from 'molecules/flyout';
