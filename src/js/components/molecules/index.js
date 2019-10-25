@@ -19,9 +19,9 @@ import ListUnorderedLimit from 'molecules/list-unordered-limit/ListUnorderedLimi
 import WizardStepDownloadList from 'molecules/wizard-step-download-list/WizardStepDownloadList';
 import WizardStepConfirmation from 'molecules/wizard-step-confirmation/WizardStepConfirmation';
 import BusinessCard from 'molecules/cards/business-card/BusinessCard';
+import CardArticle from 'molecules/cards/card-article/CardArticle';
+import CardBase from 'molecules/cards/card-base/CardBase';
 export { default as AutoComplete } from 'molecules/auto-complete';
-export { default as CardArticle } from 'molecules/cards/card-article';
-export { default as CardBase } from 'molecules/cards/card-base';
 export { default as CardDownload } from 'molecules/cards/card-download';
 export { default as CardProduct } from 'molecules/cards/card-product';
 export { default as FilterCategory } from 'molecules/filter-category';
