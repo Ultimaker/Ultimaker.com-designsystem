@@ -6,7 +6,7 @@ import ContentCover from 'organisms/content-cover/ContentCover';
 import ContentGeneral from 'organisms/content-general/ContentGeneral';
 import ContentHighlight from 'organisms/content-highlight/ContentHighlight';
 import HeroArticle from 'organisms/hero-article/HeroArticle';
-export { default as HeroBasic } from 'organisms/hero-basic';
+import HeroBasic from 'organisms/hero-basic/HeroBasic';
 export { default as HeroCover } from 'organisms/hero-cover';
 export { default as HeroHomepage } from 'organisms/hero-homepage';
 export { default as HeroProduct } from 'organisms/hero-product';
