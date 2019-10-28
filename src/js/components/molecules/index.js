@@ -46,7 +46,7 @@ import TabTableRow from 'molecules/tab-table-row/TabTableRow';
 import Tabs from 'molecules/tabs/Tabs';
 import TooltipToggle from 'molecules/tooltip-toggle/TooltipToggle';
 import FlyoutSection from 'molecules/flyout-section/FlyoutSection';
+import ListSection from 'molecules/list-section/ListSection';
 export { default as AutoComplete } from 'molecules/auto-complete';
 export { default as FilterCategory } from 'molecules/filter-category';
-export { default as ListSection } from 'molecules/list-section';
 export { default as MainNavigationItem } from 'molecules/main-navigation-item';
