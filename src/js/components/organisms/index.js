@@ -19,5 +19,5 @@ import SearchResults from 'organisms/search-results/SearchResults';
 import SubNavigation from 'organisms/subnavigation/SubNavigation';
 import TabbedContent from 'organisms/tabbed-content/TabbedContent';
 import TabbedTable from 'organisms/tabbed-table/TabbedTable';
+import TableCompare from 'organisms/table-compare/TableCompare';
 export { default as LocaleSelector } from 'organisms/locale-selector';
-export { default as TableCompare } from 'organisms/table-compare';
