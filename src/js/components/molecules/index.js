@@ -28,11 +28,11 @@ import FooterNavigationCategory from 'molecules/footer-navigation-category/Foote
 import HeroHeading from 'molecules/hero-heading/HeroHeading';
 import IconButton from 'molecules/icon-button/IconButton';
 import InPageNotification from 'molecules/in-page-notification/InPageNotification';
+import MainNavigation from 'molecules/main-navigation/MainNavigation';
 export { default as AutoComplete } from 'molecules/auto-complete';
 export { default as FilterCategory } from 'molecules/filter-category';
 export { default as FlyoutSection } from 'molecules/flyout-section';
 export { default as ListSection } from 'molecules/list-section';
-export { default as MainNavigation } from 'molecules/main-navigation';
 export { default as MainNavigationItem } from 'molecules/main-navigation-item';
 export { default as Modal } from 'molecules/modal';
 export { default as ModalButton } from 'molecules/modal-button';
