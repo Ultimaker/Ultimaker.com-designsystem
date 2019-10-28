@@ -1,5 +1,3 @@
-/** @format */
-
 import { FilterCategoryInterface } from 'components/molecules/filter-category/filter-category.interface';
 import { findIndexInActiveFilterCategories } from 'components/molecules/list-section/helpers/find-index-in-active-filter-categories';
 import { isFilterCategoryActive } from 'components/molecules/list-section/helpers/is-filter-category-active';

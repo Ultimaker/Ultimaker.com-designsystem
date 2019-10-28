@@ -48,5 +48,5 @@ import TooltipToggle from 'molecules/tooltip-toggle/TooltipToggle';
 import FlyoutSection from 'molecules/flyout-section/FlyoutSection';
 import ListSection from 'molecules/list-section/ListSection';
 import MainNavigationItem from 'molecules/main-navigation-item/MainNavigationItem';
+import FilterCategory from 'molecules/filter-category/FilterCategory';
 export { default as AutoComplete } from 'molecules/auto-complete';
-export { default as FilterCategory } from 'molecules/filter-category';
