@@ -35,7 +35,7 @@
             image: {
                 type: Object,
             },
-            cta: {
+            ctas: {
                 type: Object,
             },
             reversed: {
