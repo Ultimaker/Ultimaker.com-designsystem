@@ -1,0 +1,27 @@
+<template>
+    <div class="footer-navigation-category__column" v-if="items.length">
+        <h3 class="footer-navigation-category__title">{{ label }}</h3>
+        <ul class="footer-navigation-category__list" v-if="items && items.length">
+            <li v-for="link in items" class="footer-navigation-category__item">
+                <content-link class="footer-navigation-category__link link link--reversed" v-bind="link" />
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script lang="ts">
+    import Vue from 'vue';
+
+    export default Vue.component('FooterNavigationCategory', {
+        props: {
+            label: {
+                type: String,
+                required: true,
+            },
+            items: {
+                type: Array,
+                required: false,
+            },
+        },
+    });
+</script>
