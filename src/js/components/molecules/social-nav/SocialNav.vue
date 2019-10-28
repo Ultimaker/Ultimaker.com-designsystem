@@ -1,0 +1,42 @@
+<template>
+    <nav class="social-nav footer__social-nav">
+        <ul class="social-nav__list" aria-label="follow Ultimaker">
+            <li class="social-nav__item footer__social-item">
+                <a class="social-nav__link icon-button icon-button--small"
+                   href="https://nl.linkedin.com/company/ultimaker" aria-label="LinkedIn">
+                    <icon class="social-nav__icon" icon-name="linkedin"></icon>
+                </a>
+            </li>
+            <li class="social-nav__item footer__social-item">
+                <a class="social-nav__link icon-button icon-button--small"
+                   href="https://twitter.com/Ultimaker" aria-label="Twitter">
+                    <icon class="social-nav__icon" icon-name="twitter"></icon>
+                </a>
+            </li>
+            <li class="social-nav__item footer__social-item">
+                <a class="social-nav__link icon-button icon-button--small"
+                   href="https://www.youtube.com/user/Ultimaker3D" aria-label="YouTube">
+                    <icon class="social-nav__icon" icon-name="youtube"></icon>
+                </a>
+            </li>
+            <li class="social-nav__item footer__social-item">
+                <a class="social-nav__link icon-button icon-button--small"
+                   href="https://www.facebook.com/Ultimaker" aria-label="Facebook">
+                    <icon class="social-nav__icon" icon-name="facebook"></icon>
+                </a>
+            </li>
+            <li class="social-nav__item footer__social-item">
+                <a class="social-nav__link icon-button icon-button--small"
+                   href="http://instagram.com/ultimaker" aria-label="Instagram">
+                    <icon class="social-nav__icon" icon-name="instagram"></icon>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</template>
+
+<script lang="ts">
+    import Vue from 'vue';
+
+    export default Vue.component('SocialNav', {});
+</script>
