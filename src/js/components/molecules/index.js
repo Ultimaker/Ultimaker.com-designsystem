@@ -31,12 +31,12 @@ import InPageNotification from 'molecules/in-page-notification/InPageNotificatio
 import MainNavigation from 'molecules/main-navigation/MainNavigation';
 import Modal from 'molecules/modal/Modal';
 import ModalButton from 'molecules/modal-button/ModalButton';
+import ModalWizard from 'molecules/modal-wizard/ModalWizard';
 export { default as AutoComplete } from 'molecules/auto-complete';
 export { default as FilterCategory } from 'molecules/filter-category';
 export { default as FlyoutSection } from 'molecules/flyout-section';
 export { default as ListSection } from 'molecules/list-section';
 export { default as MainNavigationItem } from 'molecules/main-navigation-item';
-export { default as ModalWizard } from 'molecules/modal-wizard';
 export { default as Product } from 'molecules/product';
 export { default as SearchBar } from 'molecules/search-bar';
 export { default as SearchBarPage } from 'molecules/search-bar-page';
