@@ -11,6 +11,7 @@ import ListUnorderedLimit from 'molecules/list-unordered-limit/ListUnorderedLimi
 import MainNavigation from 'molecules/main-navigation/MainNavigation';
 import MainNavigationItem from 'molecules/main-navigation-item/MainNavigationItem';
 import SearchBar from 'molecules/search-bar/SearchBar';
+import SelectBox from 'molecules/select-box/SelectBox';
 import SysNav from 'molecules/sys-nav/SysNav';
 import TooltipToggle from 'molecules/tooltip-toggle/TooltipToggle';
 export { default as AutoComplete } from 'molecules/auto-complete';

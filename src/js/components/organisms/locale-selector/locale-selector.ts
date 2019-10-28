@@ -1,6 +1,6 @@
 /** @format */
 import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
-import { LocaleAutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/LocaleAutoCompleteField';
+import { ComboBoxField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/ComboBoxField';
 import WithRender from './locale-selector.vue.html';
 import Events from 'constants/events';
 
@@ -9,16 +9,14 @@ import Events from 'constants/events';
     name: 'LocaleSelector',
 })
 export class LocaleSelector extends Vue {
-    @Prop({ type: Object, required: true }) public datasource!: LocaleAutoCompleteField['datasource'];
+    @Prop({ type: Object, required: true }) public datasource!: ComboBoxField['datasource'];
     @Prop({ type: String, required: true }) public eventLocaleChanged!: string;
-    @Prop({ type: String, default: null }) public highlightedLabel!: LocaleAutoCompleteField['highlightedLabel'];
     @Prop({ type: String, default: '' }) public iconName!: string;
     @Prop({ type: String, required: true }) public initialIsoCode!: string;
-    @Prop({ type: String, default: null }) public label!: LocaleAutoCompleteField['label'];
+    @Prop({ type: String, default: null }) public label!: ComboBoxField['label'];
     @Prop({ type: Number, default: 3 }) public minChar!: number;
-    @Prop({ type: String, default: '' }) public placeholder!: LocaleAutoCompleteField['placeholder'];
+    @Prop({ type: String, default: '' }) public placeholder!: ComboBoxField['placeholder'];
     @Prop({ type: Boolean, required: false }) public showSuggestions?: boolean;
-    @Prop({ type: String, default: '' }) public suggestionsLabel!: LocaleAutoCompleteField['suggestionsLabel'];
     @Prop({ type: String, required: true }) public type!: string;
 
     private localeSelectorOpen: boolean = false;

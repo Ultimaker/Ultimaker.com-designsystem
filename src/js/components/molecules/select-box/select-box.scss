@@ -1,0 +1,82 @@
+/** @format */
+@import "~scss/settings/_variables.scss";
+
+.select-box {
+    .preferences-bar & .select-selected {
+        border: 0;
+    }
+
+    .footer__language-selector & .select-selected {
+        height: 36px;
+    }
+
+    & .select,
+    & .select-selected {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        border-radius: 0;
+        border: 1px solid $colorGray;
+        cursor: pointer;
+        font-family: inherit;
+        padding: $buildingUnit;
+        transition: all .2s ease-in-out;
+        width: auto;
+
+        &:hover {
+            background-color: $um-gray-200;
+            border-color: transparent;
+        }
+
+        &-tag {
+            @include min-desktop {
+                display: none;
+            }
+        }
+
+        &-custom {
+            position: relative;
+
+            & .select-items {
+                background-color: #fff;
+                box-shadow: $defaultBoxShadow;
+                height: 0;
+                left: 0;
+                margin: 0;
+                min-width: 150px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                right: 0;
+                transition: all $defaultDuration $defaultEasing;
+                z-index: 1;
+
+                & .select-item {
+                    cursor: pointer;
+                    font-family: inherit;
+                    list-style-type: none; 
+                    overflow: hidden;
+                    padding: $buildingUnit;
+                    text-align: left;
+                    text-overflow: ellipsis;
+                    transition: all $defaultDuration $defaultEasing;
+                    white-space: nowrap;
+                    
+                    &:hover {
+                        background-color: $colorGrayLight;
+                    }
+
+                    &--selected {
+                        background-color: $colorGrayExtraLight;
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+            @include max-tablet {
+                display: none;
+            }
+        }
+    }
+}

@@ -13,10 +13,12 @@ const ClickOutside = Vue.directive('ClickOutside', {
             }
         };
 
-        document.body.addEventListener('click', el.clickOutsideEvent);
+        document.body.addEventListener('mouseup', el.clickOutsideEvent);
+        document.body.addEventListener('touchend', el.clickOutsideEvent);
     },
     unbind(el: HTMLElement | any): void {
-        document.body.removeEventListener('click', el.clickOutsideEvent);
+        document.body.removeEventListener('mouseup', el.clickOutsideEvent);
+        document.body.removeEventListener('touchend', el.clickOutsideEvent);
     },
 });
 

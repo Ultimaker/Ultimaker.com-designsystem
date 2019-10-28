@@ -1,0 +1,17 @@
+<div class="select-box" ref="selectBoxInput" v-click-outside="closeAllCustomSelects">
+    <div class="select-custom">
+        <div class="select-selected" ref="customSelectTrigger" @click="toggleCustomSelectVisibility(!showCustomSelect)">
+            {{ datasource[selectedItem] || label }}
+        </div>
+        <ul class="select-items" ref="customSelectItems"
+            :style="`${showCustomSelect ? `height: ${calculatedCustomSelectHeight}px;` : ''} ${reversed ? 'bottom: 0;' : 'top: 0;'}`">
+            <li v-for="(value, key) in datasource" :key="uniqId + '_select-box'" :value="key"
+                @click="updateSelectedItem(key)">{{ value }}</li>
+        </ul>
+    </div>
+
+    <select class="select select-tag" :value="selectedItem" ref="selectBox">
+        <option v-for="(value, key) in datasource" :key="uniqId + '_select-box'" :value="key"
+            @click="updateSelectedItem(key)" :selected="selectedItem === key">{{ value }}</option>
+    </select>
+</div>

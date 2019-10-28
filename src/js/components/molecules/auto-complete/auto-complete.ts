@@ -1,7 +1,7 @@
 /** @format */
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import ViewportUtil from 'utils/viewport';
-import { AutoCompleteField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/AutoCompleteField';
+import { ComboBoxField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/ComboBoxField';
 import { AutoCompleteItem } from './auto-complete-item.interface';
 import WithRender from './auto-complete.vue.html';
 import escapeStringRegexp from 'escape-string-regexp';
@@ -10,15 +10,14 @@ import escapeStringRegexp from 'escape-string-regexp';
 @Component({
     name: 'auto-complete',
 })
-export default class AutoComplete extends Vue implements AutoCompleteField {
-    @Prop({ type: Object, required: true }) public datasource!: AutoCompleteField['datasource'];
+export default class AutoComplete extends Vue implements ComboBoxField {
+    @Prop({ type: Object, required: true }) public datasource!: ComboBoxField['datasource'];
     @Prop({ type: Array, default: (): string[] => [] }) public highlightedKeys!: string[];
-    @Prop({ type: String, required: true }) public highlightedLabel!: AutoCompleteField['highlightedLabel'];
-    @Prop({ type: String, required: true }) public label!: AutoCompleteField['label'];
+    @Prop({ type: String, required: true }) public label!: ComboBoxField['label'];
     @Prop({ type: Number, default: 3 }) public minChar!: number;
-    @Prop({ type: String, required: true }) public placeholder!: AutoCompleteField['placeholder'];
+    @Prop({ type: String, required: true }) public placeholder!: ComboBoxField['placeholder'];
+    @Prop({ type: String, required: true }) public notFoundLabel!: ComboBoxField['notFoundLabel'];
     @Prop({ type: Boolean }) public showSuggestions?: boolean;
-    @Prop({ type: String, required: true }) public suggestionsLabel!: AutoCompleteField['suggestionsLabel'];
 
     private input: string = '';
     private reversed: boolean = false;
