@@ -1,5 +1,3 @@
-/** @format */
-
 import { LabelFilterInterface } from 'components/atoms/label-filter/label-filter.interface';
 
 export interface FilterCategoryInterface {
