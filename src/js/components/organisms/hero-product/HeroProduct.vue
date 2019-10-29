@@ -67,7 +67,7 @@
             },
             products: {
                 type: Array,
-                required: true,
+                required: false,
             },
             linkList: {
                 type: Array,
