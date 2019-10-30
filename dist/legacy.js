@@ -641,7 +641,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__6__;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _BaseLink_vue_vue_type_template_id_51adaed5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(198);
+/* harmony import */ var _BaseLink_vue_vue_type_template_id_5ad00e2c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(198);
 /* harmony import */ var _BaseLink_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _BaseLink_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _BaseLink_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
@@ -654,8 +654,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(
   _BaseLink_vue_vue_type_script_lang_ts___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _BaseLink_vue_vue_type_template_id_51adaed5___WEBPACK_IMPORTED_MODULE_0__[/* render */ "a"],
-  _BaseLink_vue_vue_type_template_id_51adaed5___WEBPACK_IMPORTED_MODULE_0__[/* staticRenderFns */ "b"],
+  _BaseLink_vue_vue_type_template_id_5ad00e2c___WEBPACK_IMPORTED_MODULE_0__[/* render */ "a"],
+  _BaseLink_vue_vue_type_template_id_5ad00e2c___WEBPACK_IMPORTED_MODULE_0__[/* staticRenderFns */ "b"],
   false,
   null,
   null,
@@ -865,18 +865,11 @@ exports.default = _vue2.default.component('BaseLink', {
             return classes;
         },
         linkProps: function linkProps() {
-            if (this.url && this.url.match(absoluteUrlRegex)) {
-                return {
-                    is: 'a',
-                    href: this.url,
-                    target: this.urlTarget,
-                    rel: 'noopener'
-                };
-            }
             return {
-                is: 'router-link',
-                to: this.url,
-                ref: 'link'
+                is: 'a',
+                href: this.url,
+                target: this.urlTarget,
+                rel: 'noopener'
             };
         },
         clickEventData: function clickEventData() {
