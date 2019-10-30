@@ -123,3 +123,9 @@ $defaultIconSize: 1em;
 $headerHeight: $buildingUnit * 5;
 
 $defaultBoxShadow: 0 10px 20px rgba($colorBlack, 0.19), 0 3px 3px rgba($colorBlack, 0.23);
+
+$z-index: (
+  modal: 1500,
+  navigation: 1010,
+  default: 1,
+);
