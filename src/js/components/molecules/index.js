@@ -9,6 +9,7 @@ import ArticleText from 'molecules/article-text/ArticleText';
 import BlockIcon from 'molecules/block-icon/BlockIcon';
 import Brand from 'molecules/brand/Brand';
 import Color from 'molecules/color/Color';
+import ComboBox from 'molecules/combo-box/ComboBox';
 import ContentBlock from 'molecules/content-block/ContentBlock';
 import ContentToggle from 'molecules/content-toggle/ContentToggle';
 import CtaBlock from 'molecules/cta-block/CtaBlock';

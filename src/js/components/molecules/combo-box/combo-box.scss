@@ -1,0 +1,63 @@
+/** @format */
+
+@import "~scss/settings/_variables.scss";
+
+.combo-box {
+    position: relative;
+    width: 100%;
+
+    &__input {
+        width: 100%;
+        padding: 8px 9px 9px 9px;
+        font-size: 14px;
+    }
+
+    .list-box {
+        position: absolute;
+        z-index: 1090;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        background-color: $colorWhite;
+        list-style: none;
+        box-shadow: $defaultBoxShadow;
+        overflow: auto;
+        scroll-snap-type: both mandatory;
+
+        .combo-box--reversed & {
+            position: absolute;
+        }
+    }
+
+    .list-box__item {
+        padding: $buildingUnit * 1.25 $buildingUnit;
+        font-size: 14px;
+        line-height: 1;
+        outline: none;
+        scroll-snap-align: end;
+
+        &:focus:not(:hover),
+        &:focus:not(:active) {
+            font-weight: 600;
+            background-color: $colorGrayExtraLight;
+        }
+
+        &:hover:not(.list-box__item--disabled),
+        &--selected {
+            background-color: $colorGray;
+        }
+
+        &:not(.list-box__item--disabled) {
+            cursor: pointer;
+        }
+
+        &--selected {
+            font-weight: 600;
+        }
+
+        .hightlighted {
+            font-weight: 600;
+        }
+    }
+}
