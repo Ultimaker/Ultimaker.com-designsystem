@@ -78,18 +78,11 @@ export default Vue.component('BaseLink', {
             return classes;
         },
         linkProps: function(): object {
-            if (this.url && this.url.match(absoluteUrlRegex)) {
-                return {
-                    is: 'a',
-                    href: this.url,
-                    target: this.urlTarget,
-                    rel: 'noopener',
-                };
-            }
             return {
-                is: 'router-link',
-                to: this.url,
-                ref: 'link',
+                is: 'a',
+                href: this.url,
+                target: this.urlTarget,
+                rel: 'noopener',
             };
         },
         clickEventData: function(): object | null {
