@@ -98,7 +98,7 @@
                 eventFilterCategoryChange: 'filter-category-change',
                 showMax: 6,
                 viewportUtil: new ViewportUtility(),
-                visibleChunks: 0,
+                visibleChunks: 12,
                 visibleTooltip: false,
             }
         },
@@ -242,6 +242,8 @@
             this.viewportUtil.addResizeHandler(this.handleResize);
             this.viewportUtil.triggerResize();
             this.handleResize();
+        },
+        created(): void {
             this.createChunks();
         }
     });
