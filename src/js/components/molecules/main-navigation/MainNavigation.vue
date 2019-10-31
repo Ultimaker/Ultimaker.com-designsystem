@@ -32,7 +32,7 @@
         data() {
             return {
                 viewportUtil: new ViewportUtility(),
-                showCompactMenu: true,
+                showCompactMenu: false,
             }
         },
         computed: {

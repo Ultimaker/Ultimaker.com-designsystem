@@ -64,6 +64,7 @@
             isCompact: {
                 type: Boolean,
                 required: false,
+                default: false,
             },
             active: {
                 type: Boolean,
