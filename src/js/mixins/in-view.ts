@@ -3,17 +3,12 @@ import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
 
 const InView = Vue.extend({
-    props: {
-        keepInView: {
-            type: Boolean,
-            default: true,
-        },
-    },
-    data(): { inView: boolean; inViewObserver?: IntersectionObserver; inViewOptions: IntersectionObserverInit; viewportUtil: ViewportUtil } {
+    data(): { inView: boolean; inViewObserver?: IntersectionObserver; inViewOptions: IntersectionObserverInit; removeObserverWhenInView: boolean, viewportUtil: ViewportUtil } {
         return {
             inView: false,
             inViewObserver: undefined,
             inViewOptions: {},
+            removeObserverWhenInView: true,
             viewportUtil: new ViewportUtil(),
         };
     },
@@ -32,8 +27,19 @@ const InView = Vue.extend({
 
             this.setInView(this.viewportUtil.scrollY <= pictureBottom && windowBottom >= pictureTop);
         },
+        removeObservers(): void {
+            if (this.inViewObserver) {
+                this.inViewObserver.unobserve(this.$el);
+            } else {
+                this.viewportUtil.removeResizeHandler(this.intersectionPolyHandler);
+                this.viewportUtil.removeScrollHandler(this.intersectionPolyHandler);
+            }
+        },
         setInView(inView): void {
-            if (this.inView && this.keepInView) { return; }
+            if (this.inView && this.removeObserverWhenInView) {
+                this.removeObservers();
+                return;
+            }
             this.inView = inView;
         },
         setInViewOptions(options: IntersectionObserverInit): void {
@@ -52,12 +58,7 @@ const InView = Vue.extend({
         this.inViewObserver.observe(this.$el);
     },
     beforeDestroy(): void {
-        if (this.inViewObserver) {
-            this.inViewObserver.unobserve(this.$el);
-        } else {
-            this.viewportUtil.removeResizeHandler(this.intersectionPolyHandler);
-            this.viewportUtil.removeScrollHandler(this.intersectionPolyHandler);
-        }
+        this.removeObservers();
     },
 });
 
