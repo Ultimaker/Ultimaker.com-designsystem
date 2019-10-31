@@ -1,4 +1,4 @@
-import { breakaway } from 'components/atoms/c-image/data/examples/c-image-breakaway';
+import { breakaway } from 'components/atoms/c-image/data/examples/breakaway';
 
 export const newLab = {
     clickEvent: {

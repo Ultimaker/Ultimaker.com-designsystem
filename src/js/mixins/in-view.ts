@@ -1,4 +1,4 @@
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import ViewportUtil from 'utils/viewport';
 
@@ -6,8 +6,6 @@ import ViewportUtil from 'utils/viewport';
     name: 'in-view',
 })
 export class InView extends Vue {
-    @Prop({ type: Boolean, default: true }) public keepInView!: boolean;
-
     public inView: boolean = false;
     public inViewObserver?: IntersectionObserver;
     public inViewOptions: IntersectionObserverInit = {};

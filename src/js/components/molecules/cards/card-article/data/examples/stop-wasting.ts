@@ -1,4 +1,4 @@
-import { toughPLA } from 'components/atoms/c-image/data/examples/c-image-tough-pla';
+import { toughPLA } from 'components/atoms/c-image/data/examples/tough-pla';
 
 export const stopWasting = {
     clickEvent: {

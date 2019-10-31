@@ -1,4 +1,4 @@
-import { nylon } from 'components/atoms/c-image/data/examples/c-image-nylon';
+import { nylon } from 'components/atoms/c-image/data/examples/nylon';
 
 export const data = {
     default: {

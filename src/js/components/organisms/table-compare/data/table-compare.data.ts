@@ -1,4 +1,4 @@
-import { svg } from 'components/atoms/c-image/data/examples/c-image-svg';
+import { nylon } from 'components/atoms/c-image/data/examples/nylon';
 
 const columnCtaButton = {
     type: 'ContentButton',
@@ -20,17 +20,17 @@ export const data = {
             columns: [
                 {
                     title: 'Product title 1',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaButton,
                 },
                 {
                     title: 'Product title 2',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaLink,
                 },
                 {
                     title: 'Product title 3',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaButton,
                 },
             ],
@@ -155,22 +155,22 @@ export const data = {
             columns: [
                 {
                     title: 'Product title 1',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaButton,
                 },
                 {
                     title: 'Product title 2',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaLink,
                 },
                 {
                     title: 'Product title 3',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaButton,
                 },
                 {
                     title: 'Product title 4',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaButton,
                 },
             ],
@@ -315,27 +315,27 @@ export const data = {
             columns: [
                 {
                     title: 'Product title 1',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaButton,
                 },
                 {
                     title: 'Product title 2',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaLink,
                 },
                 {
                     title: 'Product title 3',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaButton,
                 },
                 {
                     title: 'Product title 4',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaButton,
                 },
                 {
                     title: 'Product title 5',
-                    image: svg,
+                    image: nylon,
                     cta: columnCtaButton,
                 },
             ],

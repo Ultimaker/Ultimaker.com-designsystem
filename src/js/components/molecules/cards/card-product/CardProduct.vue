@@ -2,7 +2,12 @@
     <article class="card-product">
         <anchor-overlay :url="url" :title="title"/>
         <div class="card-product__image-container">
-            <c-image class="card-product__image" v-bind="image" v-if="image && !imageError" @error="imageError = true" />
+            <c-image
+                @error="imageError = true"
+                class="card-product__image"
+                v-bind="image" v-if="image && !imageError"
+                :sizes="'(max-width: 569px) 100vw, (min-width: 570px, max-width: 768px) 50vw, 400px'"
+            />
             <div class="img--contain card-product__image gray-background" v-if="!image || imageError">{{ title }}</div>
         </div>
         <h3 class="card-product__heading">{{ title }}</h3>

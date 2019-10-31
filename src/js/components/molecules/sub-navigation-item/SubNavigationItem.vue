@@ -1,7 +1,11 @@
 <template>
     <base-link :url="url" class="subnavigation__link link link--reversed">
         <div class="subnavigation__image-container">
-            <c-image v-if="image" v-bind="image" keep-in-view></c-image>
+            <c-image
+                v-if="image"
+                v-bind="image"
+                :sizes="'60px'"
+            />
         </div>
         <div class="subnavigation__label" :aria-label="label" >
             <span class="link__underline">

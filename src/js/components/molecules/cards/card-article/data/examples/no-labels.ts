@@ -1,4 +1,4 @@
-import { tinyCar } from 'components/atoms/c-image/data/examples/c-image-tiny-car';
+import { tinyCar } from 'components/atoms/c-image/data/examples/tiny-car';
 
 export const noLabels = {
     clickEvent: {

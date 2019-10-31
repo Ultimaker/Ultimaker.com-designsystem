@@ -5,11 +5,8 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 import { data } from '../data/c-image.data';
 import knobsFormat from './c-image.knobs-format';
 
-const getStory = type => () => {
-    const knobs = getKnobs(
-        data[type],
-        knobsFormat,
-    );
+const getStory = (type: string): Function => (): object => {
+    const knobs = getKnobs(data[type], knobsFormat);
 
     return {
         props: {

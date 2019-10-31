@@ -1,6 +1,7 @@
 import ActionButton from 'atoms/action-button/ActionButton';
 import AnchorOverlay from 'atoms/anchor-overlay/AnchorOverlay';
 import BaseLink from 'atoms/BaseLink/BaseLink';
+import CImage from 'atoms/c-image/CImage';
 import ContentLink from 'atoms/content-link/ContentLink';
 import ContentButton from 'atoms/content-button/ContentButton';
 import YoutubeLink from 'atoms/youtube-link/YoutubeLink';
@@ -15,4 +16,3 @@ import SpanLabel from 'atoms/span-label/SpanLabel';
 import ToolTip from 'atoms/tooltip/ToolTip';
 import YoutubeVideo from 'atoms/youtube-video/YoutubeVideo';
 import LabelFilter from 'atoms/label-filter/LabelFilter';
-export { default as Image } from 'atoms/c-image';

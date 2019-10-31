@@ -1,5 +1,3 @@
-import { Image } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
-
 export enum ImageFormat {
     default = '',
     jpg = 'jpg',
@@ -17,6 +15,3 @@ export enum ResizeBehavior {
     crop = 'crop',
     thumb = 'thumb',
 }
-
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface CImageInterface extends Image {}

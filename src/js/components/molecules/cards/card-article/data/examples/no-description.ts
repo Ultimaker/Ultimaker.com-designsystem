@@ -1,4 +1,4 @@
-import { pva } from 'components/atoms/c-image/data/examples/c-image-pva';
+import { pva } from 'components/atoms/c-image/data/examples/pva';
 
 export const noDescription = {
     image: pva,

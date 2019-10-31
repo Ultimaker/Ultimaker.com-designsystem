@@ -1,7 +1,7 @@
 import properties from 'components/molecules/list-unordered/data/examples/properties-basic';
 import { items as propertiesExtended } from 'components/molecules/list-unordered/data/examples/properties-extended';
-import { nylon } from 'components/atoms/c-image/data/examples/c-image-nylon';
-import { toughPLA } from 'components/atoms/c-image/data/examples/c-image-tough-pla';
+import { nylon } from 'components/atoms/c-image/data/examples/nylon';
+import { toughPLA } from 'components/atoms/c-image/data/examples/tough-pla';
 
 export const data = {
     noImageNoProperties: {
