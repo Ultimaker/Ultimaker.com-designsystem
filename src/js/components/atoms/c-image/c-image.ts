@@ -1,145 +1,141 @@
-import { Component, Prop, Watch, Mixins } from 'vue-property-decorator';
-import { FocusArea, ICImageProps, ResizeBehavior } from 'components/atoms/c-image/c-image.models';
-import BrowserCapabilities from 'utils/browser-capabilities';
-import ViewportUtil from 'utils/viewport';
-import { imageConstants } from './c-image.constants';
-import WithRender from './c-image.vue.html';
-import InView from 'js/mixins/in-view';
+import Vue from 'vue';
+import { FocusArea } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
+import { CImageDataInterface } from './c-image-data-interface';
+import { ParamsOptionsInterface } from './params-options-interface';
+import { ResizeBehavior } from './resize-behaviour-enum';
 
-@WithRender
-@Component({
-    name: 'CImage',
-})
+/**
+ * this component uses the Contentful Images API, https://www.contentful.com/developers/docs/references/images-api/
+ * to retrieve an image from contentful. it wraps the image in an `<intersect-observer>` component,
+ * which “lazy loads” the component based a rootMargin of `100px 0px 100px 0px`. the `<intersect-observer>`
+ * component disconnects the `intersectionobserver`, once the image has been intersected.
+ */
+export default Vue.component('CImage', {
+    props: {
+        alt: {
+            default: '',
+            required: true,
+            type: String,
+        },
 
-export class CImage extends Mixins(InView) implements ICImageProps {
-    @Prop({ type: String, default: '' }) alt!: string;
-    @Prop({ type: Boolean, default: false }) crop!: boolean;
-    @Prop({ type: String, default: FocusArea.center }) focusArea!: FocusArea;
-    @Prop({ type: String, required: true }) mimeType!: string;
-    @Prop({ type: String, default: ResizeBehavior.default })resizeBehavior!: ResizeBehavior;
-    @Prop({ type: Number, default: 65 }) quality!: number;
-    @Prop({ type: String, required: true }) url!: string;
-
-    height: number = 0;
-    imageError: boolean = false;
-    imageLoaded: boolean = false;
-    ready:boolean = false;
-    viewportUtil = new ViewportUtil();
-    width: number = 0;
-
-    beforeMount() {
-        if (BrowserCapabilities.isBrowser) {
-            const height = this.viewportUtil.screenHeight * 1.5;
-            this.setInViewOptions({ rootMargin: `${height}px 0px ${height}px 0px` });
-        }
-    }
-
-    setError() {
-        this.$emit('error');
-        this.imageError = true;
-    }
-
-    async mounted() {
-        if (!BrowserCapabilities.isBrowser) return;
-
-        this.viewportUtil.addResizeHandler(this.resizeHandler);
-
-        await this.calculateDimensions(true);
-        this.ready = true;
-    }
-
-    beforeDestroy() {
-        this.viewportUtil.removeResizeHandler(this.resizeHandler);
-        this.viewportUtil.removeScrollHandler(this.resizeHandler);
-    }
-
-    @Watch('url')
-    async reset() {
-        this.ready = false;
-        this.imageLoaded = false;
-        this.width = 0;
-        this.height = 0;
-        this.$nextTick(() => { this.ready = true; });
-
-        if (this.inView) {
-            await this.inViewWatcher(true);
-        }
-    }
-
-    get classList() {
-        return {
-            'img--loading': !this.inView || !this.imageLoaded,
-        };
-    }
-
-    get src(): string {
-        if (!this.imageLoaded) {
-            return `${this.url}${this.getParams({ width: imageConstants.initialSize })}`;
-        }
-
-        return `${this.url}${this.getParams({})}`;
-    }
-
-    getParams(options?: {width?: number, height?: number}) {
-        const elementWidth = this.width || imageConstants.initialSize;
-        const elementHeight = this.height;
-        const paramMap = new Map<string, any>([
-            ['w', options && options.width ? options.width : elementWidth],
-            ['h', options && options.height ? options.height : elementHeight],
-            ['fit', this.resizeBehavior],
-            ['f', this.focusArea],
-        ]);
-
-        return Array.from(paramMap.keys()).reduce(
-            (accumulator, current) => {
-                const value = paramMap.get(current);
-
-                if (!value) return accumulator;
-
-                return `${accumulator}${accumulator === '' ? '?' : '&'}${current}=${value}`;
-            },
-            '',
-        );
-    }
-
-    calculateDimensions(forceUpdate = false) {
-        if (!BrowserCapabilities.isBrowser) return Promise.resolve();
-        if (!this.inView && !forceUpdate) return Promise.resolve();
-
-        return new Promise((resolve) => {
-            window.requestAnimationFrame(() => {
-                const rect = this.$el.getBoundingClientRect();
-                const desiredWidth = Math.floor(rect.width * (window.devicePixelRatio || 1));
-                const desiredHeight = Math.floor(rect.height * (window.devicePixelRatio || 1));
-
-                if (this.resizeBehavior !== ResizeBehavior.default) {
-                    this.width = desiredWidth > imageConstants.maxWidth ? imageConstants.maxWidth : desiredWidth;
-                    this.height = desiredHeight > imageConstants.maxHeight ? imageConstants.maxHeight : desiredHeight;
-                } else {
-                    this.width = desiredWidth > imageConstants.maxWidth ? imageConstants.maxWidth : desiredWidth;
+        focusArea: {
+            default: '',
+            required: false,
+            type: String,
+            validator(value): boolean {
+                if (value === '') {
+                    return true;
                 }
 
-                resolve();
-            });
-        });
-    }
+                return Object.keys(FocusArea).includes(value);
+            },
+        },
 
-    @Watch('inView')
-    async inViewWatcher(val:boolean) {
-        if (!val || this.imageLoaded) { return; }
+        resizeBehavior: {
+            default: '',
+            required: false,
+            type: String,
+            validator(value): boolean {
+                if (value === '') {
+                    return true;
+                }
 
-        await this.calculateDimensions();
+                return Object.values(ResizeBehavior).includes(value);
+            },
+        },
 
-        const imageToLoad = document.createElement('img');
-        imageToLoad.src = this.src;
-        imageToLoad.addEventListener('load', this.imageLoadHandler);
-    }
+        sizes: {
+            default: '100vw',
+            required: false,
+            type: String,
+        },
 
-    resizeHandler() {
-        this.calculateDimensions();
-    }
+        srcsetWidths: {
+            default: (): number[] => [],
+            required: false,
+            type: Array,
+        },
 
-    imageLoadHandler() {
-        this.imageLoaded = true;
-    }
-}
+        url: {
+            required: true,
+            type: String,
+        },
+    },
+
+    data(): CImageDataInterface {
+        return {
+            imageError: false,
+            imageLoaded: false,
+            placeholderImage: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+        };
+    },
+
+    computed: {
+        getSrcset(): string {
+            let result = `
+                ${this.url}${this.getParams({ width: 320 })} 320w,
+                ${this.url}${this.getParams({ width: 480 })} 480w,
+                ${this.url}${this.getParams({ width: 640 })} 640w,
+                ${this.url}${this.getParams({ width: 768 })} 768w,
+                ${this.url}${this.getParams({ width: 960 })} 960w,
+                ${this.url}${this.getParams({ width: 1024 })} 1024w,
+                ${this.url}${this.getParams({ width: 2048 })} 2048w
+            `;
+
+            if (this.srcsetWidths.length > 0) {
+                result = this.srcsetWidths.reduce(
+                    // @ts-ignore
+                    (acc: string, width: number): string => {
+                        let srcset = acc;
+
+                        srcset += `${this.url}${this.getParams({ width })} ${width}w,`;
+
+                        return srcset;
+                    },
+                    '',
+                ).slice(0, -1);
+            }
+
+            return result;
+        },
+    },
+
+    methods: {
+        errorHandler(): void {
+            this.$emit('error', { $el: this.$el });
+            this.imageError = true;
+        },
+
+        // @link https://www.contentful.com/developers/docs/references/images-api/
+        getParams(options?: ParamsOptionsInterface): string {
+            const paramMap = new Map<string, any>([
+                ['f', this.focusArea],
+                ['fit', this.resizeBehavior],
+                ['fm', options && options.fm ? options.fm : undefined],
+                ['h', options && options.height ? options.height : 0],
+                ['w', options && options.width ? options.width : 0],
+            ]);
+
+            return Array.from(paramMap.keys()).reduce(
+                (accumulator, current): string => {
+                    const value = paramMap.get(current);
+
+                    if (!value) {
+                        return accumulator;
+                    }
+
+                    return `${accumulator}${accumulator === '' ? '?' : '&'}${current}=${value}`;
+                },
+                '',
+            );
+        },
+
+        getSrc(): string {
+            return this.placeholderImage;
+        },
+
+        loadHandler(): void {
+            this.imageLoaded = true;
+        },
+    },
+});
