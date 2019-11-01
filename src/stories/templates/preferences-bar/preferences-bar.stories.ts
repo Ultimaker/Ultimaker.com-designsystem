@@ -16,7 +16,6 @@ const getStory = (type) => () => {
         props: {
             footer: { default: footer },
             header: { default: header.default },
-            searchResults: { default: knobs.searchResults },
         },
         template: require('./preferences-bar.html'),
     };
