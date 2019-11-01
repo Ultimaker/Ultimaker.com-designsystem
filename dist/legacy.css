@@ -5205,7 +5205,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     white-space: initial;
     width: auto; } }
 
-/** @format */
 .um-components .in-page-notification {
   text-align: center;
   background-color: #E8F0FD;
@@ -5527,35 +5526,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .content-general__content {
       order: inherit; } }
 
-.um-components .content-general {
-  margin-top: 60px; }
-  .um-components .content-general .flexgrid--gutter {
-    margin: 0; }
-
-.um-components .content-general__image {
-  order: 1;
-  margin: 0 auto 30px auto;
-  position: relative;
-  padding: 0 6px; }
-  @media (min-width: 768px) {
-    .um-components .content-general__image {
-      order: inherit;
-      margin: auto; } }
-
-.um-components .content-general__image-wrapper {
-  width: 75%;
-  margin: 0 auto; }
-  @media (min-width: 768px) {
-    .um-components .content-general__image-wrapper {
-      width: 100%; } }
-
-.um-components .content-general__content {
-  order: 2;
-  margin-bottom: -12px; }
-  @media (min-width: 768px) {
-    .um-components .content-general__content {
-      order: inherit; } }
-
 @media (min-width: 569px) {
   .um-components .content-highlight__container {
     padding-bottom: 60px; } }
@@ -5814,8 +5784,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .locale-selector__icon-button svg {
   font-size: 24px; }
 
-/** @format */
-/* no unique css required as of yet */
 /** @format */
 /* no unique css required as of yet */
 /** @format */
@@ -6184,24 +6152,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components svg text {
   font-size: 16px;
   line-height: 24px; }
-
-/** @format */
-@media (min-width: 768px) {
-  .um-components .tabbed-content__header {
-    margin: 0 auto; } }
-
-.um-components .tabbed-content__title {
-  position: relative;
-  margin-bottom: 24px;
-  text-align: center; }
-
-.um-components .tabbed-content__title + .tabbed-content__subtitle {
-  margin-top: 0;
-  margin-bottom: 24px; }
-
-.um-components .tabbed-content__subtitle {
-  position: relative;
-  text-align: center; }
 
 /** @format */
 @media (min-width: 768px) {
