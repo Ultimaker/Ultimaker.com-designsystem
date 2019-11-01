@@ -12,7 +12,6 @@ import LiInline from 'atoms/li-inline/LiInline';
 import LiItem from 'atoms/li-item/LiItem';
 import NavAssist from 'atoms/nav-assist/NavAssist';
 import SpanLabel from 'atoms/span-label/SpanLabel';
-import ToolTip from 'atoms/tooltip/ToolTip';
 import YoutubeVideo from 'atoms/youtube-video/YoutubeVideo';
 import LabelFilter from 'atoms/label-filter/LabelFilter';
 export { default as Image } from 'atoms/c-image';

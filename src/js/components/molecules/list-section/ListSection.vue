@@ -63,11 +63,11 @@
 <script lang="ts">
     import Vue from 'vue';
     import ViewportUtility from '../../../utils/viewport';
-    import { getFiltersInCardCollection } from 'components/molecules/list-section/helpers/get-filters-in-card-collection';
+    import { getFiltersInCardCollection } from './helpers/get-filters-in-card-collection';
     import { CardArticle } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cards/CardArticle';
-    import { getFilteredCardsFromActiveFilterCategories } from 'components/molecules/list-section/helpers/get-filtered-cards-from-active-filter-categories';
+    import { getFilteredCardsFromActiveFilterCategories } from './helpers/get-filtered-cards-from-active-filter-categories';
     import Events from '../../../constants/events';
-    import { updateActiveFilterCategories } from 'components/molecules/list-section/helpers/update-active-filter-categories';
+    import { updateActiveFilterCategories } from './helpers/update-active-filter-categories';
 
     export default Vue.component('ListSection', {
         props: {
