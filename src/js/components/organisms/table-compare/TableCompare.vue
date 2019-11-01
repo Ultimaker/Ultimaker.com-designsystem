@@ -14,7 +14,14 @@
                         <tr>
                             <th scope="col" v-if="showScrollingColumns"></th>
                             <th scope="col" v-for="col in content.columns" ref="columns">
-                                <c-image v-bind="col.image" alt="col.alt" class="table-compare__image" v-if="col.image && col.image.url" />
+                                <c-image
+                                    :sizes="'180px'"
+                                    :srcset-widths="[180, 360]"
+                                    alt="col.alt"
+                                    class="table-compare__image"
+                                    v-bind="col.image"
+                                    v-if="col.image && col.image.url"
+                                />
                                 <span>{{ col.title }}</span>
                             </th>
                             <th scope="col" v-if="showScrollingColumns"></th>
