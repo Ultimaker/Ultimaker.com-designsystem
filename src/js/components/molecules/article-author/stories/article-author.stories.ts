@@ -4,7 +4,6 @@ import getKnobs from 'src/stories/helpers/get-knobs';
 
 import { data } from '../data/article-author.data';
 import knobsFormat from './article-author.knobs-format';
-import { imageConstants } from 'src/js/components/atoms/c-image/c-image.constants';
 
 const getStory = type => () => {
     const knobs = getKnobs(
