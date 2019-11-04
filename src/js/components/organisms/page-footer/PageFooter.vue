@@ -22,18 +22,13 @@
                 <social-nav />
                 <div class="footer__locales">
                     <icon icon-name="geo" class="footer__locales-icon" />
-                    <locale-selector
-                        class="footer__country-selector"
-                        type="countrySelector"
-                        :eventLocaleChanged="eventCountryChanged"
-                        :initialIsoCode="countryCode"
-                        v-bind="countrySelector"
-                        v-if="showCountrySelector"
-                        @is-editing="toggleSelector"
-                        @[eventCountryChanged]="countryChangedHandler"
+                    <select-box
+                        :disable-select-box="disableLanguageSelector"
+                        :initialItemValue="languageCode"
+                        :openDirectionUp="true"
+                        v-bind="localeSelector"
+                        name="language-selector"
                     />
-                    <span class="footer__dash" v-if="!currentlyEditing && showLanguageSelector">–</span>
-                    <select-box v-bind="localeSelector" :initialItem="languageCode" name="language-selector" />
                 </div>
             </div>
 
@@ -52,7 +47,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { SelectBoxEventPayloadInterface } from '../../molecules/select-box/SelectBox.vue';
+import { SelectBoxEventPayloadInterface } from 'components/molecules/select-box/select-box-event-payload-interface';
 
 export default Vue.component('PageFooter', {
     props: {
@@ -60,46 +55,48 @@ export default Vue.component('PageFooter', {
             type: String,
             required: true
         },
-        countryCode: {
-            type: String,
+
+        disableLanguageSelector: {
+            default: false,
             required: false,
+            type: Boolean,
         },
-        countrySelector: {
-            type: Object,
-            required: true,
-        },
-        eventCountryChanged: {
-            type: String,
-            required: true,
-        },
+
         eventLanguageChanged: {
             type: String,
             required: true
         },
+
         languageCode: {
             type: String,
             required: true,
         },
+
         localeSelector: {
             type: Object,
             required: true,
         },
+
         legalNavigation: {
             type: Array,
             required: true,
         },
+
         language: {
             type: String,
             required: false,
         },
+
         navigation: {
             type: Array,
             required: true,
         },
     },
+
     beforeDestroy() {
         this.$offPublic('select-box-input');
     },
+
     mounted() {
         this.$onPublic('select-box-input', (payload: SelectBoxEventPayloadInterface): void => {
             if(payload.name !== 'language-selector') {
@@ -109,32 +106,8 @@ export default Vue.component('PageFooter', {
             this.languageChangedHandler(payload.value);
         })
     },
-    data(): { currentlyEditing: string | null; } {
-        return {
-            currentlyEditing: null,
-        };
-    },
-    computed: {
-        showCountrySelector(): boolean {
-            return !this.currentlyEditing || this.currentlyEditing === 'countrySelector';
-        },
-        showLanguageSelector(): boolean {
-            // hacky solution
-            // datasource will have the type, the default language, plus any other languages available
-            if (Object.keys(this.localeSelector.datasource).length < 3) {
-                return false;
-            }
 
-            return !this.currentlyEditing || this.currentlyEditing === 'languageSelector';
-        }
-    },
     methods: {
-        toggleSelector(type: string): void {
-            this.currentlyEditing = type;
-        },
-        countryChangedHandler(code: string): void {
-            this.$emit(this.eventCountryChanged, code);
-        },
         languageChangedHandler(code: string): void {
             this.$emit(this.eventLanguageChanged, code);
         }

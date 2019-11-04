@@ -1,82 +1,72 @@
-/** @format */
 @import "~scss/settings/_variables.scss";
 
 .select-box {
-    .preferences-bar & .select-selected {
-        border: 0;
+    margin-left: $buildingUnit / 2;
+
+    &__custom {
+        position: relative;
+        z-index: 1;
     }
 
-    .footer__language-selector & .select-selected {
-        height: 36px;
+    &__custom-item {
+        list-style-type: none;
+        padding: $buildingUnit / 2 $buildingUnit;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+            background-color: $colorGrayLight;
+        }
+
+        &--selected {
+            background-color: $colorGrayExtraLight;
+            font-weight: bold;
+        }
     }
 
-    & .select,
-    & .select-selected {
+    &__custom-items {
+        background-color: $colorWhite;
+        border: 1px solid $colorGray;
+        left: 0; // bottom or top is determined programmatically
+        margin-bottom: 0;
+        margin-top: 0;
+        min-width: 175px;
+        overflow: hidden;
+        padding-left: 0;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__custom-trigger {
+        border: 1px solid $colorGray;
+        min-width: 175px;
+        padding: $buildingUnit / 2 $buildingUnit;
+
+        &:hover {
+            background-color: $um-gray-200;
+        }
+
+        &--disabled {
+            background-color: $um-gray-200;
+            cursor: not-allowed;
+        }
+    }
+
+    &__select {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        background-color: transparent;
+        background-color: $colorWhite;
         border-radius: 0;
         border: 1px solid $colorGray;
         cursor: pointer;
         font-family: inherit;
-        padding: $buildingUnit;
-        transition: all .2s ease-in-out;
+        padding: $buildingUnit / 2 $buildingUnit;
         width: auto;
 
         &:hover {
             background-color: $um-gray-200;
             border-color: transparent;
-        }
-
-        &-tag {
-            @include min-desktop {
-                display: none;
-            }
-        }
-
-        &-custom {
-            position: relative;
-
-            & .select-items {
-                background-color: #fff;
-                box-shadow: $defaultBoxShadow;
-                height: 0;
-                left: 0;
-                margin: 0;
-                min-width: 150px;
-                overflow: hidden;
-                padding: 0;
-                position: absolute;
-                right: 0;
-                transition: all $defaultDuration $defaultEasing;
-                z-index: 1;
-
-                & .select-item {
-                    cursor: pointer;
-                    font-family: inherit;
-                    list-style-type: none; 
-                    overflow: hidden;
-                    padding: $buildingUnit;
-                    text-align: left;
-                    text-overflow: ellipsis;
-                    transition: all $defaultDuration $defaultEasing;
-                    white-space: nowrap;
-                    
-                    &:hover {
-                        background-color: $colorGrayLight;
-                    }
-
-                    &--selected {
-                        background-color: $colorGrayExtraLight;
-                        font-weight: bold;
-                    }
-                }
-            }
-            
-            @include max-tablet {
-                display: none;
-            }
         }
     }
 }

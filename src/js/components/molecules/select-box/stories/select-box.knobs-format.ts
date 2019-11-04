@@ -1,7 +1,8 @@
 /** @format */
 export default {
     datasource: {},
-    initialItem: '',
+    disableSelectBox: false,
+    initialItemValue: '',
     label: '',
     name: '',
     placeholder: '',

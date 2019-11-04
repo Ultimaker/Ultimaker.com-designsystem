@@ -1,6 +1,10 @@
 /** @format */
-import { basic } from './examples/basic';
+import { disableSelectBox } from './examples/disable-select-box';
+import { englishSelected } from './examples/english-selected';
+import { nothingSelected } from './examples/nothing-selected';
 
 export const data = {
-    basic,
+    disableSelectBox,
+    englishSelected,
+    nothingSelected,
 };

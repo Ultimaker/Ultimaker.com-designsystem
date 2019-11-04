@@ -3,6 +3,7 @@ export default {
     language: '',
     countryCode: '',
     countrySelector: {},
+    disableLanguageSelector: false,
     eventCountryChanged: '',
     eventLanguageChanged: '',
     languageCode: '',

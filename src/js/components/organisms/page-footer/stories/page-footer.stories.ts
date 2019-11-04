@@ -17,6 +17,7 @@ const getStory = (type: string): Function => (): object => {
             language: { default: knobs.language },
             countryCode: { default: knobs.countryCode },
             countrySelector: { default: knobs.countrySelector },
+            disableLanguageSelector: { default: knobs.disableLanguageSelector },
             eventCountryChanged: { default: knobs.eventCountryChanged },
             eventLanguageChanged: { default: knobs.eventLanguageChanged },
             languageCode: { default: knobs.languageCode },

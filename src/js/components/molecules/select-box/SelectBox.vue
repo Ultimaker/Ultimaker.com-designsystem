@@ -1,151 +1,63 @@
 <template>
-    <div class="select-box" ref="selectBoxInput" v-click-outside="closeAllCustomSelects">
-        <div class="select-custom">
+    <div class="select-box">
+        <div
+            v-if="!showHtmlSelect"
+            :aria-label="label"
+            class="select-box__custom"
+        >
             <div
-                @click="toggleCustomSelectVisibility(!showCustomSelect)"
-                class="select-selected"
-                ref="customSelectTrigger"
-            >{{ datasource[selectedItem] }}</div>
+                :class="disableSelectBox && 'select-box__custom-trigger--disabled'"
+                class="select-box__custom-trigger"
+                ref="selectBoxCustomTrigger"
+                tabindex="0"
+                @click="openSelectBoxCustom()"
+                @keydown.enter.space="openSelectBoxCustom()"
+            >
+                {{ items[selectedIndex].title }}
+            </div>
             <ul
-                :style="`${showCustomSelect ? `height: ${calculatedCustomSelectHeight}px;` : ''} ${reversed ? 'bottom: 0;' : 'top: 0;'}`"
-                class="select-items"
-                ref="customSelectItems"
+                v-if="selectBoxCustomOpen"
+                :style="openDirectionUp ? 'bottom: 0;' : 'top: 0;'"
+                class="select-box__custom-items"
+                ref="selectBoxCustomItems"
+                role="listbox"
+                tabindex="0"
+                @blur="closeSelectBoxCustom()"
+                @keydown.esc="closeSelectBoxCustom()"
+                @keydown.up.prevent="updateHighlightItem(-1)"
+                @keydown.down.prevent="updateHighlightItem(1)"
+                @keydown.enter.space="updateSelectedItemValue()"
             >
                 <li
-                    :class="key === selectedItem && 'select-item--selected'"
-                    :key="uniqId + key + '_select-box'"
-                    :value="key"
-                    @click="updateSelectedItem(key)"
-                    class="select-item"
-                    v-for="(value, key) in datasource"
-                >{{ value }}</li>
+                    v-for="({title, value}, index) in items"
+                    :class="highlightedItemValue === value && 'select-box__custom-item--selected'"
+                    :key="`select-box-custom-${index}`"
+                    class="select-box__custom-item"
+                    role="option"
+                    @blur="closeSelectBoxCustom()"
+                    @click="updateSelectedItemValue(value)"
+                >
+                    {{ title }}
+                </li>
             </ul>
         </div>
-        <select :name="name" :value="selectedItem" class="select select-tag" ref="selectBox">
+        <select
+            v-if="showHtmlSelect"
+            :aria-label="label"
+            :name="name"
+            class="select-box__select"
+        >
             <option
-                :key="uniqId + key + '_select-box'"
-                :selected="selectedItem === key"
-                :value="key"
-                @click="updateSelectedItem(key)"
-                v-for="(value, key) in datasource"
-            >{{ value }}</option>
+                v-for="({title, value}, index) in items"
+                :key="`select-box-${index}`"
+                :selected="selectedItemValue === value"
+                :value="value"
+                @click="updateSelectedItemValue(value)"
+            >
+                {{ title }}
+            </option>
         </select>
     </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
-import ViewportUtil from 'utils/viewport';
-import { SelectBoxField } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/fields/SelectBoxField';
-import { SelectBoxItem } from './select-box-item.interface';
-
-interface SelectBoxDataInterface {
-    calculatedCustomSelectHeight: number;
-    reversed: boolean;
-    selectedItem: string;
-    showCustomSelect: boolean;
-}
-
-export interface SelectBoxEventPayloadInterface {
-    name: string;
-    value: string;
-}
-
-export default Vue.component('SelectBox', {
-    props: {
-        datasource: {
-            type: Object,
-            required: true,
-        },
-        initialItem: {
-            type: String,
-            required: true,
-        },
-        label: {
-            type: String,
-            required: true,
-        },
-        name: {
-            type: String,
-            required: true,
-        },
-        placeholder: {
-            type: String,
-            required: true,
-        },
-    },
-    data(): SelectBoxDataInterface {
-        return {
-            calculatedCustomSelectHeight: 0,
-            reversed: false,
-            selectedItem: this.initialItem,
-            showCustomSelect: false,
-        }
-    },
-    computed: {
-        viewportUtil: (): ViewportUtil => new ViewportUtil(),
-    },
-    mounted() {
-        delete this.datasource.type;
-
-        this.viewportUtil.addScrollHandler(this.calculateDirection);
-        this.viewportUtil.addResizeHandler(this.calculateDirection);
-        this.calculateDirection();
-        Vue.nextTick(this.calculateCustomSelectHeight);
-    },
-    watch: {
-        selectedItem(): void {
-            this.$emitPublic('select-box-input', {
-                value: this.selectedItem,
-                name: this.name,
-            });
-            this.closeAllCustomSelects();
-        }
-    },
-    methods: {
-        calculateCustomSelectHeight(): void {
-            const customSelectList = this.$refs.customSelectItems as HTMLElement;
-            const customSelectListItems = customSelectList.querySelectorAll('li');
-            const singleItemHeight = (12 * 2) + 24; //2 x 12px padding + 24px lineheight
-
-            this.calculatedCustomSelectHeight = customSelectListItems.length * singleItemHeight;
-        },
-        calculateDirection(): void {
-            if (!this.$refs.customSelectItems) {
-                return;
-            }
-
-            const inputHeight = 50;
-            const windowTop = this.viewportUtil.scrollY;
-            const windowBottom = windowTop + this.viewportUtil.screenHeight * (2 / 3);
-            const inputBounds = (this.$refs.customSelectItems as HTMLElement).getBoundingClientRect();
-            const inputBottom = this.viewportUtil.scrollY + inputBounds.top - inputHeight;
-            const inputDropdownBottom = inputBottom + this.calculatedCustomSelectHeight;
-
-            this.reversed = windowBottom < inputDropdownBottom;
-        },
-        closeAllCustomSelects(): void {
-            this.toggleCustomSelectVisibility(false);
-        },
-        focus(): void {
-            if (!this.$refs.selectBox) {
-                return;
-            }
-
-            if (this.viewportUtil.isTablet) {
-                const selectBoxElement = (this.$refs.selectBox as HTMLInputElement);
-                selectBoxElement.focus();
-                Vue.nextTick(() => selectBoxElement.click());
-            } else {
-                this.toggleCustomSelectVisibility(true);
-            }
-        },
-        toggleCustomSelectVisibility(newValue): void {
-            this.showCustomSelect = newValue;
-        },
-        updateSelectedItem(key): void {
-            this.selectedItem = key;
-        },
-    }
-})
-</script>
+<script src="./select-box" lang="ts"></script>

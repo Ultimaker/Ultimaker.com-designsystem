@@ -10,7 +10,8 @@ const getStory = (type: string): object => (): object => {
     return {
         props: {
             datasource: { default: knobs.datasource },
-            initialItem: { default: knobs.initialItem },
+            disableSelectBox: { default: knobs.disableSelectBox },
+            initialItemValue: { default: knobs.initialItemValue },
             label: { default: knobs.label },
             name: { default: knobs.name },
             placeholder: { default: knobs.placeholder },

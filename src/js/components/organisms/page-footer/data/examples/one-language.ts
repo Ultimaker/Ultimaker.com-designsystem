@@ -1,5 +1,4 @@
 import { buttonCountrySelector } from 'components/organisms/locale-selector/data/examples/button-country-selector';
-import { buttonLanguageSelector } from 'components/organisms/locale-selector/data/examples/button-language-selector';
 
 export const oneLanguage = {
     language: 'nl',
