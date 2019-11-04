@@ -67,11 +67,16 @@ export default Vue.component('CImage', {
             imageError: false,
             imageLoaded: false,
             placeholderImage: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+            intersected: false,
         };
     },
 
     computed: {
         getSrcset(): string {
+            if (!this.intersected) {
+                return '';
+            }
+
             let result = `
                 ${this.url}${this.getParams({ width: 320 })} 320w,
                 ${this.url}${this.getParams({ width: 480 })} 480w,
@@ -132,6 +137,10 @@ export default Vue.component('CImage', {
 
         getSrc(): string {
             return this.placeholderImage;
+        },
+
+        intersectingHandler(): void{
+            this.intersected = true;
         },
 
         loadHandler(): void {
