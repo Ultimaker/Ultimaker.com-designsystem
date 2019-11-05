@@ -4438,6 +4438,52 @@ because both families serve another purpose. Therefore the line-heights will be 
   .color--selected .color__spec--show {
     opacity: 0; }
 
+/** @format */
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
+.combo-box {
+  position: relative;
+  width: 100%; }
+  .combo-box--list-box-hidden .combo-box__input:not(:focus):hover {
+    background-color: #e3e3e3; }
+  .combo-box__input {
+    width: 100%;
+    padding: 9px;
+    font-size: 14px; }
+  .combo-box .list-box {
+    position: absolute;
+    z-index: 1010;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    list-style: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+    overflow: auto;
+    scroll-snap-type: both mandatory; }
+  .combo-box .list-box__item {
+    padding: 15px 12px;
+    font-size: 14px;
+    line-height: 1;
+    outline: none;
+    scroll-snap-align: end; }
+    .combo-box .list-box__item:focus:not(:hover), .combo-box .list-box__item:focus:not(:active), .combo-box .list-box__item:hover:not(.list-box__item--disabled) {
+      font-weight: 600; }
+    .combo-box .list-box__item:focus:not(:hover), .combo-box .list-box__item:focus:not(:active) {
+      background-color: #f5f5f5; }
+    .combo-box .list-box__item:hover:not(.list-box__item--disabled) {
+      background-color: #e3e3e3; }
+    .combo-box .list-box__item:not(.list-box__item--disabled) {
+      cursor: pointer; }
+    .combo-box .list-box__item .hightlighted {
+      font-weight: 600; }
+
 .content-block__description {
   margin-bottom: 24px; }
 
