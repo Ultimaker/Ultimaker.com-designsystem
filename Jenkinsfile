@@ -52,11 +52,6 @@ podTemplate(
               sh 'npm run lint:diff'
             }
           },
-          'unit test': {
-            container('node-chromium') {
-              sh 'npm run unit'
-            }
-          }
         )
       }
 
