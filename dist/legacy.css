@@ -1012,9 +1012,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   background-color: #e3e3e3;
   padding: 12px; }
 
-.um-components .img--lazy.img--loading {
-  opacity: 0; }
-
 .um-components .home-link {
   display: flex;
   flex: 0 1 auto;
