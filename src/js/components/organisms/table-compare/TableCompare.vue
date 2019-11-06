@@ -77,7 +77,7 @@
 <script lang="ts">
     import Vue from 'vue';
     import ViewportUtility from '../../../utils/viewport';
-    import BrowserCapabilities from '../../../utils/browser-capabilities';
+    import BrowserCapabilities from 'utils/browser-capabilities';
     import debounce from 'lodash/debounce';
 
     export default Vue.component('TableCompare', {
