@@ -5658,7 +5658,7 @@ dd {
   .tabs__list {
     display: flex;
     padding: 0;
-    overflow-x: scroll;
+    overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar; }
     .tabs__list::-webkit-scrollbar-track {
       background-color: transparent; }
@@ -6725,8 +6725,8 @@ svg text {
   margin-bottom: 24px; }
 
 .table-compare__scroll-container {
-  overflow: auto;
   overflow-y: visible;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth; }
