@@ -13,7 +13,7 @@
 
 <script lang="ts">
     import Vue from 'vue';
-    import BrowserCapabilities from '../../../utils/browser-capabilities';
+    import BrowserCapabilities from 'utils/browser-capabilities';
 
     export default Vue.component('SubNavigation', {
         props: {

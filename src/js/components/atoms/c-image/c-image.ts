@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import { FocusArea } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
+import BrowserCapabilities from 'utils/browser-capabilities';
 import { CImageDataInterface } from './c-image-data-interface';
 import { ParamsOptionsInterface } from './params-options-interface';
 import { ResizeBehavior } from './resize-behaviour-enum';
@@ -136,6 +137,14 @@ export default Vue.component('CImage', {
         },
 
         getSrc(): string {
+            if (!BrowserCapabilities.hasWindow) {
+                return this.placeholderImage;
+            }
+
+            if (BrowserCapabilities.isIE11 || BrowserCapabilities.isOldIE) {
+                return this.url;
+            }
+
             return this.placeholderImage;
         },
 

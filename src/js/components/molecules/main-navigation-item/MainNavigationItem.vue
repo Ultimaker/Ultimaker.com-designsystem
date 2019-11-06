@@ -37,7 +37,7 @@
 
 <script lang="ts">
     import { Vue } from 'vue-property-decorator';
-    import BrowserCapabilities from '../../../utils/browser-capabilities';
+    import BrowserCapabilities from 'utils/browser-capabilities';
 
     export default Vue.component('MainNavigationItem', {
         props: {
