@@ -5156,7 +5156,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .tabs__list {
     display: flex;
     padding: 0;
-    overflow-x: scroll;
+    overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar; }
     .um-components .tabs__list::-webkit-scrollbar-track {
       background-color: transparent; }
@@ -6222,8 +6222,8 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-bottom: 24px; }
 
 .um-components .table-compare__scroll-container {
-  overflow: auto;
   overflow-y: visible;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth; }
