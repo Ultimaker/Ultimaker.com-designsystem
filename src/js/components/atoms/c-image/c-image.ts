@@ -78,19 +78,41 @@ export default Vue.component('CImage', {
                 return '';
             }
 
-            let result = `
-                ${this.url}${this.getParams({ width: 320 })} 320w,
-                ${this.url}${this.getParams({ width: 480 })} 480w,
-                ${this.url}${this.getParams({ width: 640 })} 640w,
-                ${this.url}${this.getParams({ width: 768 })} 768w,
-                ${this.url}${this.getParams({ width: 960 })} 960w,
-                ${this.url}${this.getParams({ width: 1024 })} 1024w,
-                ${this.url}${this.getParams({ width: 2048 })} 2048w
-            `;
+            if (this.srcsetWidths.length === 0) {
+                return this.getSrcsetForWidths();
+            }
 
-            if (this.srcsetWidths.length > 0) {
-                result = this.srcsetWidths.reduce(
-                    // @ts-ignore
+            return this.getSrcsetForWidths(this.srcsetWidths as number[]);
+        },
+    },
+
+    methods: {
+        errorHandler(): void {
+            this.$emit('error', { $el: this.$el });
+            this.imageError = true;
+        },
+
+        getSrcsetForWidths(providedWidths?: number[]): string {
+            if (!BrowserCapabilities.hasWindow) {
+                return '';
+            }
+
+            let widths = [
+                320,
+                480,
+                640,
+                760,
+                960,
+                1024,
+                2048,
+            ];
+
+            if (providedWidths) {
+                widths = providedWidths;
+            }
+
+            if (BrowserCapabilities.isSafari) {
+                return widths.reduce(
                     (acc: string, width: number): string => {
                         let srcset = acc;
 
@@ -102,14 +124,16 @@ export default Vue.component('CImage', {
                 ).slice(0, -1);
             }
 
-            return result;
-        },
-    },
+            return widths.reduce(
+                (acc: string, width: number): string => {
+                    let srcset = acc;
 
-    methods: {
-        errorHandler(): void {
-            this.$emit('error', { $el: this.$el });
-            this.imageError = true;
+                    srcset += `${this.url}${this.getParams({ fm: 'webp', width })} ${width}w,`;
+
+                    return srcset;
+                },
+                '',
+            ).slice(0, -1);
         },
 
         // @link https://www.contentful.com/developers/docs/references/images-api/
@@ -148,7 +172,7 @@ export default Vue.component('CImage', {
             return this.placeholderImage;
         },
 
-        intersectingHandler(): void{
+        intersectingHandler(): void {
             this.intersected = true;
         },
 
