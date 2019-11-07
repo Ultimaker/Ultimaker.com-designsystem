@@ -994,7 +994,7 @@ exports.default = _vue2.default.component('CImage', {
         return {
             imageError: false,
             imageLoaded: false,
-            placeholderImage: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+            placeholderImage: 'data:image/gif;base64,R0lGODdhAQABAJEAAAAAAOrq6v///wAAACH5BAkAAAMALAAAAAABAAEAAAICTAEAOw==',
             intersected: false
         };
     },
