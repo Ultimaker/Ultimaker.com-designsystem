@@ -1,0 +1,22 @@
+.consent-bar {
+    @extend .notification;
+    width: 100%;
+
+    @media (min-width: $desktopWidth) {
+        position: sticky;
+        top:60px;
+    }
+
+    &__content {
+        @extend .notification__content;
+    }
+
+    &__button {
+        background-color: transparent;
+        @extend .notification__button;
+    }
+}
+
+.consent-link {
+    margin: $buildingUnit;
+}
