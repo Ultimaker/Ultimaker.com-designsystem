@@ -269,7 +269,7 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0 0 6px 0;
   padding: 0; }
 
-.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .colors .colors__swatches > :last-child, .content-cover--cover > :last-child, .hero--article > :last-child, .hero--cover > :last-child, .hero--product .hero__link-list > :last-child, .tabbed-content > :last-child {
+.block > :last-child, .flyout__section > :last-child, .flyout__list-item > :last-child, .notification--small .notification__content > :last-child, .notification--small .preferences-bar__content > :last-child, .notification--small .consent-bar__content > :last-child, .notification__content > :last-child, .preferences-bar__content > :last-child, .consent-bar__content > :last-child, .business-card__description > :last-child, .content-block > :last-child, .content-block__content > :last-child, .colors .colors__swatches > :last-child, .content-cover--cover > :last-child, .hero--article > :last-child, .hero--cover > :last-child, .hero--product .hero__link-list > :last-child, .tabbed-content > :last-child {
   margin-bottom: 0; }
 
 .clear {
@@ -3696,7 +3696,7 @@ th {
   display: inline-block;
   margin-bottom: 0; }
 
-.notification, .preferences-bar {
+.notification, .preferences-bar, .consent-bar {
   position: relative;
   background: #f0f6fe;
   /* disabled checkbox */ }
@@ -3705,23 +3705,25 @@ th {
     line-height: 1.5;
     margin-top: -2px;
     margin-bottom: 23px; }
-  .notification [type="checkbox"]:not(:checked) + label:before, .preferences-bar [type="checkbox"]:not(:checked) + label:before,
+  .notification [type="checkbox"]:not(:checked) + label:before, .preferences-bar [type="checkbox"]:not(:checked) + label:before, .consent-bar [type="checkbox"]:not(:checked) + label:before,
   .notification [type="checkbox"]:checked + label:before,
-  .preferences-bar [type="checkbox"]:checked + label:before {
+  .preferences-bar [type="checkbox"]:checked + label:before,
+  .consent-bar [type="checkbox"]:checked + label:before {
     border: 1px solid #dde2e9; }
-  .notification [type="checkbox"]:disabled:not(:checked) + label:before, .preferences-bar [type="checkbox"]:disabled:not(:checked) + label:before,
+  .notification [type="checkbox"]:disabled:not(:checked) + label:before, .preferences-bar [type="checkbox"]:disabled:not(:checked) + label:before, .consent-bar [type="checkbox"]:disabled:not(:checked) + label:before,
   .notification [type="checkbox"]:disabled:checked + label:before,
-  .preferences-bar [type="checkbox"]:disabled:checked + label:before {
+  .preferences-bar [type="checkbox"]:disabled:checked + label:before,
+  .consent-bar [type="checkbox"]:disabled:checked + label:before {
     background-color: #e7ecf4; }
-  .notification [type="checkbox"]:disabled:checked + label:after, .preferences-bar [type="checkbox"]:disabled:checked + label:after {
+  .notification [type="checkbox"]:disabled:checked + label:after, .preferences-bar [type="checkbox"]:disabled:checked + label:after, .consent-bar [type="checkbox"]:disabled:checked + label:after {
     content: url("data:image/svg+xml, %3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20120%20120%22%3E%3Cpolygon%20points=%22113%2029.1%20104.2%2020.2%2042.3%2082.1%2015.8%2055.6%207%2064.4%2033.5%2091%2033.5%2091%2042.3%2099.8%2042.3%2099.8%2042.3%2099.8%2051.1%2091%2051.1%2091%20%22%20fill=%22rgb(150,170,177)%22/%3E%3C/svg%3E"); }
-  .notification [type="checkbox"]:disabled + label, .preferences-bar [type="checkbox"]:disabled + label {
+  .notification [type="checkbox"]:disabled + label, .preferences-bar [type="checkbox"]:disabled + label, .consent-bar [type="checkbox"]:disabled + label {
     color: #787a7f; }
 
 .notification--small .container, .notification--small .footer__container {
   padding-top: 30px;
   padding-bottom: 30px; }
-  .notification--small .container .notification__content, .notification--small .footer__container .notification__content, .notification--small .container .preferences-bar__content, .notification--small .footer__container .preferences-bar__content {
+  .notification--small .container .notification__content, .notification--small .footer__container .notification__content, .notification--small .container .preferences-bar__content, .notification--small .footer__container .preferences-bar__content, .notification--small .container .consent-bar__content, .notification--small .footer__container .consent-bar__content {
     padding-right: 48px; }
   .notification--small .container .notification__content--centered, .notification--small .footer__container .notification__content--centered {
     padding: 0 48px; }
@@ -3729,16 +3731,16 @@ th {
     .notification--small .container, .notification--small .footer__container {
       padding: 12px 60px; } }
 
-.notification--small .notification__content, .notification--small .preferences-bar__content {
+.notification--small .notification__content, .notification--small .preferences-bar__content, .notification--small .consent-bar__content {
   max-width: 1200px; }
   @media (min-width: 1025px) {
-    .notification--small .notification__content *, .notification--small .preferences-bar__content * {
+    .notification--small .notification__content *, .notification--small .preferences-bar__content *, .notification--small .consent-bar__content * {
       display: inline-block;
       margin-bottom: 0; }
-    .notification--small .notification__content [type="checkbox"] + label, .notification--small .preferences-bar__content [type="checkbox"] + label {
+    .notification--small .notification__content [type="checkbox"] + label, .notification--small .preferences-bar__content [type="checkbox"] + label, .notification--small .consent-bar__content [type="checkbox"] + label {
       margin-left: 24px; } }
 
-.notification__content, .preferences-bar__content {
+.notification__content, .preferences-bar__content, .consent-bar__content {
   max-width: 568px;
   padding-left: 24px;
   padding-right: 24px; }
@@ -3751,9 +3753,9 @@ th {
       .notification__content--columns .notification__copy {
         column-count: 2; } }
 
-.notification__button, .preferences-bar__button, .settings-selector__edit-button {
+.notification__button, .preferences-bar__button, .settings-selector__edit-button, .consent-bar__button {
   background: #f0f6fe; }
-  .notification__button:hover, .preferences-bar__button:hover, .settings-selector__edit-button:hover, .notification__button:focus, .preferences-bar__button:focus, .settings-selector__edit-button:focus {
+  .notification__button:hover, .preferences-bar__button:hover, .settings-selector__edit-button:hover, .consent-bar__button:hover, .notification__button:focus, .preferences-bar__button:focus, .settings-selector__edit-button:focus, .consent-bar__button:focus {
     color: #000;
     background-color: #d9e7fc; }
 
@@ -5887,6 +5889,18 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .conte
   @media (min-width: 480px) {
     .selector-group {
       margin-left: auto; } }
+
+.consent-bar {
+  width: 100%; }
+  @media (min-width: 1025px) {
+    .consent-bar {
+      position: sticky;
+      top: 60px; } }
+  .consent-bar__button {
+    background-color: transparent; }
+
+.consent-link {
+  margin: 12px; }
 
 .article > .container, .article > .footer__container {
   padding-top: 24px; }
