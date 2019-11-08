@@ -1,6 +1,12 @@
 <template>
     <div class="article-author">
-        <c-image class="article-author__image" v-if="image" v-bind="image" />
+        <c-image
+            v-if="image"
+            v-bind="image"
+            class="article-author__image"
+            :sizes="'96px'"
+            :srcset-widths="[48, 96]"
+        />
         <div  class="article-author__meta">
             <span class="article-author__name">{{name}}</span>
             <span class="article-author__published-date">{{formatedDate}}</span>
