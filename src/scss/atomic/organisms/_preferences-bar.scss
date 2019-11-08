@@ -30,8 +30,7 @@
     }
 
     .locale-selector,
-    .selector-group,
-    .auto-complete {
+    .selector-group {
 
         @media (max-width: $mobileLMaxWidth) {
             width: 100%;
@@ -43,10 +42,6 @@
         @media (max-width: $mobileLMaxWidth) {
             margin-top: $buildingUnit;
         }
-    }
-
-    .auto-complete input {
-        padding-left: $buildingUnit;
     }
 }
 

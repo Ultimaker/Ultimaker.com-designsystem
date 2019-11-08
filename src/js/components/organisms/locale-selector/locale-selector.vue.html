@@ -22,17 +22,6 @@
         {{ iconButtonText }}
     </icon-button>
     <template v-if="localeSelectorOpen">
-        <auto-complete
-            :datasource="datasource"
-            :highlightedKeys="[this.currentIsoCode]"
-            :highlightedLabel="highlightedLabel"
-            :label="label"
-            :minChar="minChar"
-            :placeholder="placeholder"
-            :showSuggestions="showSuggestions"
-            :suggestionsLabel="suggestionsLabel"
-            @auto-complete-input="handleLocaleChange"
-        />
         <icon-button
             buttonAriaLabel="Cancel"
             buttonClass="locale-selector__icon-button"
