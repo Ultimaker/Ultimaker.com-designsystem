@@ -4,7 +4,7 @@ class BrowserCapabilities {
     // eslint-disable-next-line no-useless-constructor,no-empty-function
     private constructor() {}
 
-    static get hasWindow(): boolean {
+    static get isBrowser(): boolean {
         return typeof window !== 'undefined';
     }
 
@@ -25,28 +25,28 @@ class BrowserCapabilities {
     }
 
     static get supportsTouch(): boolean {
-        return !this.hasWindow || 'ontouchstart' in document.documentElement;
+        return !this.isBrowser || 'ontouchstart' in document.documentElement;
     }
 
     static get supportsFontLoadingApi(): boolean {
-        return !this.hasWindow || 'fonts' in document;
+        return !this.isBrowser || 'fonts' in document;
     }
 
     static get supportsIntl(): boolean {
-        return !this.hasWindow || 'Intl' in window;
+        return !this.isBrowser || 'Intl' in window;
     }
 
     static get supportsPictureElement(): boolean {
-        return !this.hasWindow || 'HTMLPictureElement' in window;
+        return !this.isBrowser || 'HTMLPictureElement' in window;
     }
 
     // @todo remove this and rely on https://www.npmjs.com/package/intersection-observer
     static get supportsIntersectionObserver(): boolean {
-        return !this.hasWindow || 'IntersectionObserver' in window;
+        return !this.isBrowser || 'IntersectionObserver' in window;
     }
 
     static get supportsObjectFit(): boolean {
-        if (!this.hasWindow) { return true; }
+        if (!this.isBrowser) { return true; }
 
         const edgeVersion = window.navigator.userAgent.match(/Edge\/(\d{2})\./);
         const edgePartialSupport = (edgeVersion) ? (parseInt(edgeVersion[1], 10) >= 16) : false;

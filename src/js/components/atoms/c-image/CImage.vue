@@ -7,7 +7,7 @@
         <img
             :alt="alt"
             :sizes="sizes"
-            :src="getSrc()"
+            :src="src"
             :srcset="getSrcset"
             @error="errorHandler"
             @load="loadHandler"

@@ -2,5 +2,9 @@ export interface CImageDataInterface {
     imageError: boolean;
     imageLoaded: boolean;
     intersected: boolean;
-    placeholderImage: string;
+    placeholderImages: {
+        gray: string;
+        transparent: string;
+    };
+    src: string;
 }

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import { FocusArea } from '@ultimaker/ultimaker.com-model-definitions/dist/atoms/media/Image';
 import BrowserCapabilities from 'utils/browser-capabilities';
 import { CImageDataInterface } from './c-image-data-interface';
+import { InitialSrcEnum } from './initial-src-enum';
 import { ParamsOptionsInterface } from './params-options-interface';
 import { ResizeBehavior } from './resize-behaviour-enum';
 
@@ -20,27 +21,34 @@ export default Vue.component('CImage', {
         },
 
         focusArea: {
-            default: '',
+            default: 'center',
             required: false,
             type: String,
             validator(value): boolean {
-                if (value === '') {
-                    return true;
-                }
-
                 return Object.keys(FocusArea).includes(value);
             },
         },
 
-        resizeBehavior: {
-            default: '',
+        initialSrc: {
+            default: InitialSrcEnum.default,
             required: false,
             type: String,
             validator(value): boolean {
-                if (value === '') {
-                    return true;
-                }
+                return Object.values(InitialSrcEnum).includes(value);
+            },
+        },
 
+        initialSrcWidth: {
+            default: 640,
+            required: false,
+            type: Number,
+        },
+
+        resizeBehavior: {
+            default: ResizeBehavior.default,
+            required: false,
+            type: String,
+            validator(value): boolean {
                 return Object.values(ResizeBehavior).includes(value);
             },
         },
@@ -67,12 +75,20 @@ export default Vue.component('CImage', {
         return {
             imageError: false,
             imageLoaded: false,
-            placeholderImage: 'data:image/gif;base64,R0lGODdhAQABAJEAAAAAAOrq6v///wAAACH5BAkAAAMALAAAAAABAAEAAAICTAEAOw==',
             intersected: false,
+            placeholderImages: {
+                gray: 'data:image/gif;base64,R0lGODdhAQABAJEAAAAAAOrq6v///wAAACH5BAkAAAMALAAAAAABAAEAAAICTAEAOw==',
+                transparent: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+            },
+            src: '',
         };
     },
 
     computed: {
+        getSrc(): string {
+            return this.getPlaceholderImage(this.initialSrc, this.initialSrcWidth);
+        },
+
         getSrcset(): string {
             if (!this.intersected) {
                 return '';
@@ -86,6 +102,22 @@ export default Vue.component('CImage', {
         },
     },
 
+    created(): void {
+        this.src = this.getSrc;
+    },
+
+    beforeMount(): void {
+        // re-calculate because ie <= 11 has no srcset or webp support: https://caniuse.com/#feat=srcset, https://caniuse.com/#search=webp
+        if (BrowserCapabilities.isIE11 || BrowserCapabilities.isOldIE) {
+            this.src = this.getPlaceholderImage(InitialSrcEnum.url, this.initialSrcWidth, true);
+        }
+
+        // re-calculate because safari has no webp support: https://caniuse.com/#search=webp
+        if (this.initialSrc === InitialSrcEnum.url && BrowserCapabilities.isSafari) {
+            this.src = this.getPlaceholderImage(InitialSrcEnum.url, this.initialSrcWidth, true);
+        }
+    },
+
     methods: {
         errorHandler(): void {
             this.$emit('error', { $el: this.$el });
@@ -93,7 +125,7 @@ export default Vue.component('CImage', {
         },
 
         getSrcsetForWidths(providedWidths?: number[]): string {
-            if (!BrowserCapabilities.hasWindow) {
+            if (!BrowserCapabilities.isBrowser) {
                 return '';
             }
 
@@ -160,16 +192,16 @@ export default Vue.component('CImage', {
             );
         },
 
-        getSrc(): string {
-            if (!BrowserCapabilities.hasWindow) {
-                return this.placeholderImage;
+        getPlaceholderImage(initialSrc: string, width: number, jpg?: boolean): string {
+            if (initialSrc === InitialSrcEnum.url) {
+                if (jpg) {
+                    return `${this.url}${this.getParams({ width })}`;
+                }
+
+                return `${this.url}${this.getParams({ fm: 'webp', width })}`;
             }
 
-            if (BrowserCapabilities.isIE11 || BrowserCapabilities.isOldIE) {
-                return this.url;
-            }
-
-            return this.placeholderImage;
+            return this.placeholderImages[initialSrc];
         },
 
         intersectingHandler(): void {
