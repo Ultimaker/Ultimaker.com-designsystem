@@ -13,4 +13,3 @@ import MainNavigationItem from 'molecules/main-navigation-item/MainNavigationIte
 import SearchBar from 'molecules/search-bar/SearchBar';
 import SysNav from 'molecules/sys-nav/SysNav';
 import TooltipToggle from 'molecules/tooltip-toggle/TooltipToggle';
-export { default as AutoComplete } from 'molecules/auto-complete';
