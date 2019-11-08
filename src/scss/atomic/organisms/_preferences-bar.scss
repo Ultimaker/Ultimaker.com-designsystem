@@ -29,43 +29,15 @@
         }
     }
 
-    .locale-selector,
     .selector-group {
 
         @media (max-width: $mobileLMaxWidth) {
             width: 100%;
         }
     }
-
-    .locale-selector {
-
-        @media (max-width: $mobileLMaxWidth) {
-            margin-top: $buildingUnit;
-        }
-    }
 }
 
-.preferences-bar__locale-selector .icon-button {
-    @include font-line-ratio(prim-m);
-    color: $um-blue;
-    background-color: transparent;
-
-    &:hover,
-    &:focus {
-        background-color: $colorNoteHover;
-    }
-
-    &:not(.locale-selector__icon-button) {
-
-        @media (max-width: $mobileLMaxWidth) {
-            margin-left: 6px;
-        }
-    }
-}
-
-.settings-selector__edit-button,
-.preferences-bar__locale-selector {
-
+.settings-selector__edit-button {
     .icon-button__label {
         margin-top: 0;
         margin-left: 0;
