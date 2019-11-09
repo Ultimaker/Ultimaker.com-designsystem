@@ -62,12 +62,17 @@ export default Vue.component('IntersectObserver', {
 
         intersectionHandler(entries: IntersectionObserverEntry[]): void {
             if (entries[0].isIntersecting) {
-                this.$emit('intersecting');
+                this.$emit('intersecting', { target: entries[0].target });
 
                 if (this.disconnectAfterIntersect) {
                     this.disconnect();
+                    this.$emit('disconnect', { target: entries[0].target });
                 }
+
+                return;
             }
+
+            this.$emit('not-intersecting', { target: entries[0].target });
         },
     },
 
@@ -111,9 +116,9 @@ export default Vue.component('IntersectObserver', {
         this.observer = new IntersectionObserver(
             this.intersectionHandler,
             {
-                threshold: this.threshold as number | number[],
                 root: this.root,
                 rootMargin: this.rootMargin,
+                threshold: this.threshold as number | number[],
             },
         );
 
