@@ -46,7 +46,12 @@
         }
     }
 
-    &-footer{
+    &-footer {
+        @include max-mobile-xl {
+            // temporary fix for mobile margins
+            margin-bottom: 60px;
+        }
+
         &.footer-block:not(:empty) {
             padding-bottom: 0;
         }
