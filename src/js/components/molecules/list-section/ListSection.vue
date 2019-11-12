@@ -6,7 +6,8 @@
                     <span class="list-section__count">({{cards.length}})</span>
                     <template v-if="tooltip">
                         <transition name="tooltip">
-                            <tooltip class="section-tooltip" block="list-section" v-show="visibleTooltip" v-bind="tooltip" :id="`tooltip_${ uniqId }`">
+                            <tooltip class="section-tooltip" block="list-section" v-show="visibleTooltip"
+                                     v-bind="tooltip" :id="`tooltip_${ uniqId }`">
                                 {{ tooltip.description }}
                             </tooltip>
                         </transition>
@@ -28,12 +29,38 @@
             </header>
         </template>
 
-        <template v-for="filterCategory in filterCategories">
-            <filter-category
-                v-bind="filterCategory"
-                :activeFilters="activeFilters"
-                :eventChange="eventFilterCategoryChange"
-                @[eventFilterCategoryChange]="handleFilterCategoryChange" />
+        <template v-for="filterCategory in filterCategories()">
+            <section class="filter-category">
+                <h4 class="filter-category__title">{{ filterCategory.title }}</h4>
+                <form>
+                    <input
+                        class="filter-category__reset"
+                        :class="!isAnyLabelSelected(filterCategory.labels) ? 'filter-category__reset--active' : ''"
+                        type="reset"
+                        :value="filterCategory.showAllLabel"
+                        @click="removeCategoryLabels(filterCategory.labels)"
+                    />
+                    <ul class="filter-category__list">
+                        <li
+                            class="filter-category__list-item"
+                            v-for="(label, key) in filterCategory.labels"
+                            :key="key"
+                        >
+                            <label class="label-filter">
+                                <input
+                                    :name="label"
+                                    ref="checkbox"
+                                    type="checkbox"
+                                    :checked="valueFilter.activeFilters().includes(label)"
+                                    :disabled="!valueFilter.possibleFilters().includes(label)"
+                                    @click="toggleFilterLabel(label)"
+                                />
+                                <span class="label-filter__label">{{ label }}</span>
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+            </section>
         </template>
 
         <ul class="list-section__container">
@@ -46,7 +73,7 @@
                            :is="card.type"
                            :key="i"
                            v-bind="card"
-                           v-for="(card, i) in chunk" />
+                           v-for="(card, i) in chunk"/>
             </li>
         </ul>
 
@@ -60,191 +87,4 @@
     </section>
 </template>
 
-<script lang="ts">
-    import Vue from 'vue';
-    import ViewportUtility from '../../../utils/viewport';
-    import { getFiltersInCardCollection } from './helpers/get-filters-in-card-collection';
-    import { CardArticle } from '@ultimaker/ultimaker.com-model-definitions/dist/molecules/cards/CardArticle';
-    import { getFilteredCardsFromActiveFilterCategories } from './helpers/get-filtered-cards-from-active-filter-categories';
-    import Events from '../../../constants/events';
-    import { updateActiveFilterCategories } from './helpers/update-active-filter-categories';
-
-    export default Vue.component('ListSection', {
-        props: {
-            cards: {
-                type: Array,
-                required: true,
-            },
-            filterCategories: {
-                type: Array,
-            },
-            limit: {
-                type: Object,
-            },
-            title: {
-                type: String,
-            },
-            tooltip: {
-                type: Object,
-            },
-        },
-        data() {
-            return {
-                activeFilterCategories: [],
-                chunks: [],
-                chunkSize: 3,
-                chunkIndex: 0,
-                expanded: false,
-                eventFilterCategoryChange: 'filter-category-change',
-                showMax: 6,
-                viewportUtil: new ViewportUtility(),
-                visibleChunks: 12,
-                visibleTooltip: false,
-            }
-        },
-        watch: {
-            cards(): void {
-                this.createChunks();
-            }
-        },
-        computed: {
-            activeFilters(): any {
-                return getFiltersInCardCollection(this.filteredCards as CardArticle[]);
-            },
-            clickEventData(): object | null {
-                if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
-                    const { clickEvent } = this.limit.expand;
-
-                    return {
-                        dataType: clickEvent.name,
-                        data: {
-                            ...clickEvent.data,
-                            pageSlug: this.$route.fullPath,
-                        },
-                    };
-                }
-                return null;
-            },
-            filteredCards(): CardArticle[] {
-                if (!this.activeFilterCategories.length) {
-                    return (this.cards as CardArticle[]);
-                }
-
-                return getFilteredCardsFromActiveFilterCategories((this.cards as CardArticle[]), this.activeFilterCategories);
-            },
-        },
-        methods: {
-            createChunks(): any {
-                this.chunkIndex = 0;
-                this.chunks = [];
-
-                while (this.chunkIndex < this.filteredCards.length) {
-                    // @ts-ignore
-                    this.chunks.push(this.filteredCards.slice(this.chunkIndex, this.chunkSize + this.chunkIndex));
-                    this.chunkIndex += this.chunkSize;
-                }
-            },
-            handleFilterCategoryChange(changedFilterCategory): void {
-                // @ts-ignore
-                this.activeFilterCategories = updateActiveFilterCategories(this.activeFilterCategories, changedFilterCategory);
-                this.createChunks();
-            },
-            handleResize(): void {
-                const oldChunkSize = this.chunkSize;
-
-                if (this.viewportUtil.isMobile) {
-                    this.showMax =
-                        this.limit && typeof this.limit.smallScreen === 'number'
-                            ? this.limit.smallScreen
-                            : Number.MAX_SAFE_INTEGER;
-                    this.chunkSize = 1;
-                } else if (this.viewportUtil.isMobileXl) {
-                    this.showMax =
-                        this.limit && typeof this.limit.smallScreen === 'number'
-                            ? this.limit.smallScreen
-                            : Number.MAX_SAFE_INTEGER;
-                    this.chunkSize = 2;
-                } else {
-                    this.showMax =
-                        this.limit && typeof this.limit.largeScreen === 'number'
-                            ? this.limit.largeScreen
-                            : Number.MAX_SAFE_INTEGER;
-                    this.chunkSize = 3;
-                }
-
-                if (oldChunkSize !== this.chunkSize) {
-                    this.createChunks();
-                }
-
-                if (!this.expanded) {
-                    this.visibleChunks = Math.ceil(this.showMax / this.chunkSize);
-                }
-            },
-            hideTooltip(): void {
-                this.visibleTooltip = false;
-            },
-            showAll(): void {
-                this.expanded = true;
-                this.visibleChunks = Number.MAX_SAFE_INTEGER;
-            },
-            showButton(): boolean {
-                if (this.limit && !this.limit.expandAmount && this.expanded) {
-                    return false;
-                }
-
-                if (this.expanded && this.chunks.length <= this.visibleChunks) {
-                    return false;
-                }
-
-                return !(this.chunks.length <= this.visibleChunks);
-            },
-            showChunk(): void {
-                this.expanded = true;
-                if (this.limit && this.limit.expandAmount) {
-                    this.visibleChunks = this.visibleChunks + Math.ceil(this.limit.expandAmount / this.chunkSize);
-                }
-            },
-            showLabel(): string {
-                if (this.limit && this.limit.expand && this.limit.expandAmount) {
-                    const { label } = this.limit.expand;
-
-                    return label;
-                }
-
-                if (this.limit && this.limit.expand && !this.limit.expandAmount) {
-                    const { label } = this.limit.expand;
-
-                    return `${label} (${this.filteredCards.length})`;
-                }
-
-                return '';
-            },
-            toggleTooltip(): void {
-                this.visibleTooltip = !this.visibleTooltip;
-            },
-            tooltipVisible(): boolean {
-                return this.visibleTooltip;
-            },
-            triggerEventClick(): void {
-                if (this.limit && this.limit.expand && this.limit.expand.clickEvent) {
-                    try {
-                        this.$emitPublic(Events.gtm.click, this.clickEventData);
-                    } catch (e) {
-                        console.warn(e);
-                    }
-                }
-            }
-        },
-        beforeDestroy(): void {
-            this.viewportUtil.removeResizeHandler(this.handleResize);
-        },
-        mounted(): void {
-            this.viewportUtil.addResizeHandler(this.handleResize);
-            this.viewportUtil.triggerResize();
-            this.handleResize();
-        },
-        created(): void {
-            this.createChunks();
-        }
-    });
-</script>
+<script src="./list-section.ts" lang="ts" />
