@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /** @format */
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -206,11 +205,11 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $fit - Type of fit cover/contain etc.
  * @param {string} $position - almost the same as background-position
  */
+/** @format */
 /*
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
  */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -756,7 +755,6 @@ ol {
   padding-left: 1em; }
 
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -767,6 +765,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
  * @param {string} $animateProp - Name of the animated property or multiple properties
  */
+/** @format */
 /*
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
@@ -892,8 +891,6 @@ input[type="submit"] {
     background-color: #eaeaea;
     color: #000; }
 
-/** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -943,34 +940,37 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 .label-filter__label {
   background-color: #fff;
-  border-radius: 2px;
-  border: 1px solid #7f7f7f;
-  color: #000;
+  border-radius: 4px;
+  border: 1px solid #B4B4B4;
+  color: #000E1A;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
   font-weight: 500;
-  padding: 0 6px; }
+  padding: 3px 6px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.label-filter > :not(:disabled) + .label-filter__label:hover, .label-filter > :not(:disabled) + .label-filter__label:active {
+  border-color: #196ef0;
+  box-shadow: 0px 0px 3px 3px rgba(0, 14, 26, 0.1);
+  color: #196ef0; }
+
+.label-filter > :focus + .label-filter__label {
+  border-color: #196ef0;
+  color: #196ef0;
+  box-shadow: 0px 0px 3px 3px rgba(0, 14, 26, 0.1); }
 
 .label-filter > :checked:not(:disabled) + .label-filter__label {
   background-color: #196ef0;
   border-color: #196ef0;
   color: #fff; }
+  .label-filter > :checked:not(:disabled) + .label-filter__label:hover {
+    box-shadow: none; }
 
-.label-filter > :focus + .label-filter__label {
-  border-color: #fff;
-  outline: #196ef0 solid 2px; }
-
-.label-filter > :disabled:not(:checked) + .label-filter__label {
+.label-filter > :disabled + .label-filter__label {
   background-color: #fff;
-  border-color: #eaeaea;
-  color: #7f7f7f;
-  cursor: not-allowed; }
-
-.label-filter > :disabled:checked + .label-filter__label {
-  background-color: #eaeaea;
-  border-color: #7f7f7f;
-  color: #7f7f7f;
+  border-color: #B4B4B4;
+  color: #B4B4B4;
   cursor: not-allowed; }
 
 p, strong, .tablist__section .tablist__item {
@@ -1445,7 +1445,6 @@ dd {
 .link--wizard-step-confirmation {
   align-self: flex-start; }
 
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -1528,7 +1527,6 @@ input[type="text"] {
 ::placeholder {
   color: #7f7f7f; }
 
-/** @format */
 /** @format */
 /** @format */
 /*
@@ -1645,7 +1643,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .preferences-bar [type="checkbox"]:not(:checked):focus:not(:hover) + label:before {
   border: 2px solid #196ef0; }
 
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -4065,7 +4062,6 @@ th {
     color: #fff; }
 
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -4254,7 +4250,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin: 0; }
 
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -4435,7 +4430,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   .color--selected .color__spec--show {
     opacity: 0; }
 
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -4498,7 +4492,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   width: 100%; }
 
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -4559,8 +4552,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       .cta-block--footer .cta-link:last-child {
         margin-right: 0; } }
 
-/** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -4571,49 +4562,62 @@ because both families serve another purpose. Therefore the line-heights will be 
 .filter-category {
   margin-bottom: 18px;
   text-align: center; }
+  @media (min-width: 1025px) {
+    .filter-category {
+      padding: 0 10%; } }
 
 .filter-category:last-of-type {
   margin-bottom: 48px; }
 
 .filter-category__list {
   display: inline;
-  margin-bottom: 0;
-  margin-top: 0;
   padding-left: 0; }
 
 .filter-category__list-item {
   display: inline-block;
   list-style: none;
   margin-bottom: 6px;
+  outline: 0;
   padding-left: 6px; }
 
 .filter-category__list-item:first-of-type {
   padding-left: 0; }
 
 .filter-category__reset {
-  appearance: none;
-  -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
   background-color: #fff;
-  border: 1px solid #7f7f7f;
-  border-radius: 2px;
-  color: #000;
+  border-radius: 4px;
+  border: 1px solid #B4B4B4;
+  color: #000E1A;
+  cursor: pointer;
   font-size: 12px;
   font-weight: 500;
-  margin-bottom: 6px;
+  line-height: 18px;
   margin-right: 4px;
-  padding-top: 1px;
-  padding-right: 6px;
+  margin-bottom: 6px;
+  outline: none;
+  padding-bottom: 3px;
   padding-left: 6px;
-  padding-bottom: 2px; }
+  padding-right: 6px;
+  padding-top: 3px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+  .filter-category__reset:hover, .filter-category__reset:focus {
+    border-color: #196ef0; }
+    .filter-category__reset:hover:not(.filter-category__reset--active), .filter-category__reset:focus:not(.filter-category__reset--active) {
+      color: #196ef0; }
+  .filter-category__reset:not(.filter-category__reset--active):hover {
+    box-shadow: 0px 0px 3px 3px rgba(0, 14, 26, 0.1); }
   .filter-category__reset:focus {
-    border-color: #fff;
-    outline: 2px solid #196ef0; }
+    box-shadow: 0px 0px 3px 3px rgba(0, 14, 26, 0.1); }
 
 .filter-category__reset--active {
   background-color: #196ef0;
   border: 1px solid #196ef0;
   color: #fff; }
+  .filter-category__reset--active:hover {
+    color: #fff; }
 
 .filter-category__title {
   margin-bottom: 12px; }
@@ -4713,7 +4717,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   color: #7f7f7f;
   margin-right: 12px; }
 
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -4832,102 +4835,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .icon-button--small-icon .icon {
   font-size: 18px;
   margin: 3px; }
-
-/** @format */
-/** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-.list-section + .list-section {
-  margin-top: -12px; }
-
-.list-section__header {
-  margin-bottom: 26px; }
-  @media (min-width: 569px) {
-    .list-section__header {
-      flex-direction: row;
-      display: flex;
-      align-items: baseline;
-      margin-bottom: 17px; } }
-
-.list-section__count {
-  color: #7f7f7f;
-  font-size: 0.75em; }
-
-.list-section__info-link {
-  margin-bottom: 0; }
-  @media (min-width: 569px) {
-    .list-section__info-link {
-      margin-left: 24px; } }
-
-.list-section__title {
-  margin-bottom: 12px; }
-
-.list-section__tooltip {
-  font-size: 14px;
-  line-height: 21px;
-  max-width: 296px;
-  position: absolute;
-  opacity: 1;
-  transform: translateY(calc(-100% - 36px)); }
-  .list-section__tooltip:after {
-    left: 12px; }
-
-.list-section__container {
-  padding: 0; }
-
-.list-section__row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: stretch; }
-  @media (min-width: 569px) {
-    .list-section__row {
-      flex-direction: row;
-      justify-content: space-between; } }
-  @media (min-width: 768px) {
-    .list-section__row {
-      flex-direction: row;
-      justify-content: space-between; } }
-
-@media (min-width: 768px) {
-  .list-section__row--even {
-    justify-content: flex-start; } }
-
-.list-section__item {
-  margin-bottom: 32.004px;
-  flex-basis: calc(100% - 6px);
-  min-width: calc(100% - 6px); }
-  .list-section__row--even .list-section__item {
-    margin-right: 0; }
-  @media (min-width: 569px) {
-    .list-section__item {
-      flex-basis: calc(50% - 6px);
-      min-width: calc(50% - 6px); }
-      .list-section__row--even .list-section__item {
-        margin-right: 0; } }
-  @media (min-width: 768px) {
-    .list-section__item {
-      margin-bottom: 48px;
-      flex-basis: calc(33% - 12px);
-      min-width: calc(33% - 12px); }
-      .list-section__row--even .list-section__item {
-        margin-right: 24px; } }
-
-.list-section + .footer-block {
-  margin-top: 60px; }
-
-.list-section__footer {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: 24px;
-  margin-bottom: 24px; }
 
 .main-nav {
   position: relative; }
@@ -5119,7 +5026,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 /** @format */
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -5127,7 +5033,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -5164,6 +5069,7 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $fit - Type of fit cover/contain etc.
  * @param {string} $position - almost the same as background-position
  */
+/** @format */
 /*
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
@@ -5231,7 +5137,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   top: 0;
   right: 0; }
 
-/** @format */
 /** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
@@ -5313,7 +5218,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
  * @param {string} $animateProp - Name of the animated property or multiple properties
  */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -5586,11 +5490,11 @@ because both families serve another purpose. Therefore the line-heights will be 
   margin-top: 12px; }
 
 /** @format */
+/** @format */
 /*
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
  */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -5909,7 +5813,6 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .conte
   margin-bottom: 0; }
 
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -5917,6 +5820,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
+/** @format */
 /*
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
@@ -6309,7 +6213,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   background-color: #FFF; }
 
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -6332,7 +6235,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 
 /** @format */
 /* no unique css required as of yet */
-/** @format */
 /** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
@@ -6360,7 +6262,6 @@ main .overview:nth-child(even) {
     padding-left: 0; }
 
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -6368,6 +6269,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
+/** @format */
 /*
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
@@ -6559,7 +6461,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
 
 /** @format */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
@@ -6567,6 +6468,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 /*
 * Offset typography to fit on baseline, this will create the vertical rhythm
 */
+/** @format */
 /*
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
@@ -6897,7 +6799,123 @@ svg text {
       main .organism:nth-child(even) .table-compare-features--footer, main .slider-reveal:nth-child(even) .table-compare-features--footer, main .content-cover--cover:nth-child(even) .table-compare-features--footer, main .content-general:nth-child(even) .table-compare-features--footer, main .tabbed-content:nth-child(even) .table-compare-features--footer {
         background: linear-gradient(to left, rgba(250, 250, 250, 0), #fafafa 12px); } }
 
+/*
+* Because we have a primary and secondary font family, we need to define both
+because both families serve another purpose. Therefore the line-heights will be different for both families.
+*/
+/*
+* Offset typography to fit on baseline, this will create the vertical rhythm
+*/
 /** @format */
+/*
+ *  Mixins to support media queries
+ *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
+ */
+.list-section + .list-section[data-v-aa3f4b96] {
+  margin-top: -12px;
+}
+.list-section__header[data-v-aa3f4b96] {
+  margin-bottom: 26px;
+}
+@media (min-width: 569px) {
+.list-section__header[data-v-aa3f4b96] {
+      flex-direction: row;
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 17px;
+}
+}
+.list-section__count[data-v-aa3f4b96] {
+  color: #7f7f7f;
+  font-size: 0.75em;
+}
+.list-section__info-link[data-v-aa3f4b96] {
+  margin-bottom: 0;
+}
+@media (min-width: 569px) {
+.list-section__info-link[data-v-aa3f4b96] {
+      margin-left: 24px;
+}
+}
+.list-section__title[data-v-aa3f4b96] {
+  margin-bottom: 12px;
+}
+.list-section__tooltip[data-v-aa3f4b96] {
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 296px;
+  position: absolute;
+  opacity: 1;
+  transform: translateY(calc(-100% - 36px));
+}
+.list-section__tooltip[data-v-aa3f4b96]:after {
+    left: 12px;
+}
+.list-section__container[data-v-aa3f4b96] {
+  padding: 0;
+}
+.list-section__row[data-v-aa3f4b96] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+@media (min-width: 569px) {
+.list-section__row[data-v-aa3f4b96] {
+      flex-direction: row;
+      justify-content: space-between;
+}
+}
+@media (min-width: 768px) {
+.list-section__row[data-v-aa3f4b96] {
+      flex-direction: row;
+      justify-content: space-between;
+}
+}
+@media (min-width: 768px) {
+.list-section__row--even[data-v-aa3f4b96] {
+    justify-content: flex-start;
+}
+}
+.list-section__item[data-v-aa3f4b96] {
+  margin-bottom: 32.004px;
+  flex-basis: calc(100% - 6px);
+  min-width: calc(100% - 6px);
+}
+.list-section__row--even .list-section__item[data-v-aa3f4b96] {
+    margin-right: 0;
+}
+@media (min-width: 569px) {
+.list-section__item[data-v-aa3f4b96] {
+      flex-basis: calc(50% - 6px);
+      min-width: calc(50% - 6px);
+}
+.list-section__row--even .list-section__item[data-v-aa3f4b96] {
+        margin-right: 0;
+}
+}
+@media (min-width: 768px) {
+.list-section__item[data-v-aa3f4b96] {
+      margin-bottom: 48px;
+      flex-basis: calc(33% - 12px);
+      min-width: calc(33% - 12px);
+}
+.list-section__row--even .list-section__item[data-v-aa3f4b96] {
+        margin-right: 24px;
+}
+}
+.list-section + .footer-block[data-v-aa3f4b96] {
+  margin-top: 60px;
+}
+.list-section__footer[data-v-aa3f4b96] {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 /** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
@@ -7103,11 +7121,11 @@ because both families serve another purpose. Therefore the line-heights will be 
  * @param {string} $fit - Type of fit cover/contain etc.
  * @param {string} $position - almost the same as background-position
  */
+/** @format */
 /*
  *  Mixins to support media queries
  *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
  */
-/** @format */
 /*
 * Because we have a primary and secondary font family, we need to define both
 because both families serve another purpose. Therefore the line-heights will be different for both families.
