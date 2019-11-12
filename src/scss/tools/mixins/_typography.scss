@@ -1,3 +1,5 @@
+@import "../../../scss/tools/functions/typography";
+
 // @todo: step-by-step eliminate this insanity
 // Get the 'font-size/line-height' ratio according to demanded font-size
 @mixin font-line-ratio($sizeName) {

@@ -88,3 +88,4 @@
 </template>
 
 <script src="./list-section.ts" lang="ts" />
+<style src="./list-section.scss" lang="scss" scoped />
