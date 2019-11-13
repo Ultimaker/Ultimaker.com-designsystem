@@ -49,7 +49,7 @@
     &-footer {
         @include max-mobile-xl {
             // temporary fix for mobile margins
-            margin-bottom: 60px;
+            margin-bottom: $buildingUnit * 5;
         }
 
         &.footer-block:not(:empty) {
