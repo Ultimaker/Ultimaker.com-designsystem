@@ -48,6 +48,7 @@
     }
 }
 .list-section__container {
+    margin: 0; // temporary fix for mobile margins
     padding: 0;
 }
 .list-section__row {
@@ -79,6 +80,11 @@
     flex-basis: calc(100% - #{$buildingUnit / 2});
     min-width: calc(100% - #{$buildingUnit / 2});
 
+    .list-section__row:last-child & {
+        // temporary fix for mobile margins
+        margin-bottom: 0;
+    }
+
     .list-section__row--even & {
         margin-right: 0;
     }
@@ -101,10 +107,6 @@
             margin-right: $buildingUnit * 2;
         }
     }
-}
-
-.list-section + .footer-block {
-    margin-top: $buildingUnit * 5;
 }
 
 .list-section__footer {

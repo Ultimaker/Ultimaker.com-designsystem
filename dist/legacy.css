@@ -5041,7 +5041,7 @@ because both families serve another purpose. Therefore the line-heights will be 
 /** @format */
 .um-components .tabs {
   margin-top: -36px;
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
   @media (min-width: 768px) {
     .um-components .tabs {
       margin-bottom: 54px;
@@ -5348,33 +5348,37 @@ because both families serve another purpose. Therefore the line-heights will be 
       padding-top: 0;
       padding-bottom: 4px; } }
 
-.um-components .brands2 {
-  padding-top: 48px; }
-  .um-components .brands2 .list-unordered-limit ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin-top: -12px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12px;
-    max-width: 804px; }
-  .um-components .brands2 .list-unordered-limit li {
-    padding-left: 0;
-    line-height: 0;
-    margin-top: 12px;
-    margin-right: 12px;
-    margin-bottom: 0; }
-  .um-components .brands2 .list-unordered-limit footer {
-    margin-top: 36px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .um-components .brands2 .list-unordered-limit footer {
-        margin-top: 48px; } }
-  .um-components .brands2 .footer-block {
-    margin-top: 60px; }
+.um-components .brands2 .list-unordered-limit ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: -12px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  max-width: 804px; }
+
+.um-components .brands2 .list-unordered-limit li {
+  padding-left: 0;
+  line-height: 0;
+  margin-top: 12px;
+  margin-right: 12px;
+  margin-bottom: 0; }
+
+.um-components .brands2 .list-unordered-limit footer {
+  margin-top: 36px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .um-components .brands2 .list-unordered-limit footer {
+      margin-top: 48px; } }
+
+.um-components .brands2 .footer-block {
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .um-components .brands2 .footer-block {
+      margin-top: 60px; } }
 
 .um-components .colors .colors__list {
   display: flex;
@@ -5508,6 +5512,10 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .content-highlight-header .header-block__title,
     .um-components .content-highlight-header .header-block__subtitle {
       text-align: left; } }
+
+@media (max-width: 767px) {
+  .um-components .content-highlight-footer {
+    margin-bottom: 60px; } }
 
 .um-components .content-highlight-footer.footer-block:not(:empty) {
   padding-bottom: 0; }
@@ -6358,6 +6366,7 @@ because both families serve another purpose. Therefore the line-heights will be 
     left: 12px;
 }
 .um-components .list-section__container[data-v-aa3f4b96] {
+  margin: 0;
   padding: 0;
 }
 .um-components .list-section__row[data-v-aa3f4b96] {
@@ -6389,6 +6398,9 @@ because both families serve another purpose. Therefore the line-heights will be 
   flex-basis: calc(100% - 6px);
   min-width: calc(100% - 6px);
 }
+.um-components .list-section__row:last-child .list-section__item[data-v-aa3f4b96] {
+    margin-bottom: 0;
+}
 .um-components .list-section__row--even .list-section__item[data-v-aa3f4b96] {
     margin-right: 0;
 }
@@ -6410,9 +6422,6 @@ because both families serve another purpose. Therefore the line-heights will be 
 .um-components .list-section__row--even .list-section__item[data-v-aa3f4b96] {
         margin-right: 24px;
 }
-}
-.um-components .list-section + .footer-block[data-v-aa3f4b96] {
-  margin-top: 60px;
 }
 .um-components .list-section__footer[data-v-aa3f4b96] {
   justify-content: center;

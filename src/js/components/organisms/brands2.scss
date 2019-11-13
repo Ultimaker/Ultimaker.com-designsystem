@@ -1,5 +1,4 @@
 .brands2 {
-    padding-top: $buildingUnit * 4;
 
     .list-unordered-limit {
         ul {
@@ -39,6 +38,9 @@
     }
 
     .footer-block {
-        margin-top: $buildingUnit * 5;
+        margin-top: $buildingUnit * 2.5;
+        @include min-tablet() {
+            margin-top: $buildingUnit * 5;
+        }
     }
 }
