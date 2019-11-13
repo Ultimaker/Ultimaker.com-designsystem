@@ -1,36 +1,44 @@
-// Fonts
+// https://developers.google.com/web/updates/2016/02/font-display
+// https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+// https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization
 
 @font-face {
+    font-display: optional;
     font-family: 'Noto Sans Init';
     src: url("#{$fontPath}/noto-sans/NotoSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
+    font-display: optional;
     font-family: 'Noto Sans';
     src: url("#{$fontPath}/noto-sans/NotoSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
+    font-display: optional;
     font-family: 'Noto Sans';
+    font-style: italic;
     src: url("#{$fontPath}/noto-sans/NotoSans-Italic.woff2") format("woff2");
-    font-style: italic;
 }
 
 @font-face {
+    font-display: optional;
     font-family: 'Noto Sans';
+    font-weight: 500;
     src: url("#{$fontPath}/noto-sans/NotoSans-Medium.woff2") format("woff2");
-    font-weight: 500;
 }
 
 @font-face {
+    font-display: optional;
     font-family: 'Noto Sans';
-    src: url("#{$fontPath}/noto-sans/NotoSans-MediumItalic.woff2") format("woff2");
-    font-weight: 500;
     font-style: italic;
+    font-weight: 500;
+    src: url("#{$fontPath}/noto-sans/NotoSans-MediumItalic.woff2") format("woff2");
 }
 
 @font-face {
+    font-display: optional;
     font-family: 'Noto Sans';
-    src: url("#{$fontPath}/noto-sans/NotoSans-SemiBold.woff2") format("woff2");
     font-weight: 600;
+    src: url("#{$fontPath}/noto-sans/NotoSans-SemiBold.woff2") format("woff2");
 }
