@@ -1,4 +1,3 @@
-import ArticleAuthor from 'molecules/article-author/ArticleAuthor';
 import FilterCategory from 'molecules/filter-category/FilterCategory';
 import Flyout from 'molecules/flyout/Flyout';
 import FlyoutSection from 'molecules/flyout-section/FlyoutSection';
