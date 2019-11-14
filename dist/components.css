@@ -3904,31 +3904,6 @@ th {
       .footer-block--push-down:not(:empty) {
         margin-top: 60px; } }
 
-.article-author {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0; }
-  .article-author__meta {
-    display: flex;
-    flex-direction: column; }
-  .article-author__name {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 500;
-    margin-bottom: 3px; }
-  .article-author__published-date {
-    font-size: 14px;
-    line-height: 21px;
-    color: #7f7f7f; }
-  .article-author__image {
-    height: 48px;
-    width: 48px;
-    border-radius: 100%;
-    margin-right: 12px; }
-    @media (min-width: 768px) {
-      .article-author__image {
-        margin-left: 12px; } }
-
 .article-ctas {
   display: flex;
   justify-content: center;
