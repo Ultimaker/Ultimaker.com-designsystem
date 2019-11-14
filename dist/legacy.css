@@ -3426,31 +3426,6 @@ because both families serve another purpose. Therefore the line-heights will be 
       .um-components .footer-block--push-down:not(:empty) {
         margin-top: 60px; } }
 
-.um-components .article-author {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0; }
-  .um-components .article-author__meta {
-    display: flex;
-    flex-direction: column; }
-  .um-components .article-author__name {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 500;
-    margin-bottom: 3px; }
-  .um-components .article-author__published-date {
-    font-size: 14px;
-    line-height: 21px;
-    color: #7f7f7f; }
-  .um-components .article-author__image {
-    height: 48px;
-    width: 48px;
-    border-radius: 100%;
-    margin-right: 12px; }
-    @media (min-width: 768px) {
-      .um-components .article-author__image {
-        margin-left: 12px; } }
-
 .um-components .article-ctas {
   display: flex;
   justify-content: center;
