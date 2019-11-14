@@ -3548,32 +3548,32 @@ th {
   .tag-list__item .tag {
     margin-left: 0; }
 
-.container, .footer__container {
+.container {
   max-width: 1201px;
   margin: 0 auto;
   padding: 60px 12px 0 12px; }
   @media (min-width: 768px) {
-    .container, .footer__container {
+    .container {
       padding: 60px 24px 0 24px; } }
   @media (min-width: 1025px) {
-    .container, .footer__container {
+    .container {
       padding: 60px 60px 0 60px; } }
-  .preferences-bar .container, .preferences-bar .footer__container {
+  .preferences-bar .container {
     margin: 0 auto;
     padding-bottom: 60px; }
-  .container.hero__container, .hero__container.footer__container {
+  .container.hero__container {
     padding-bottom: 60px; }
-  .footer .container, .footer .footer__container {
+  .footer .container {
     margin-bottom: 0; }
 
-.container.examples__container, .examples__container.footer__container, .container.ecosystem__container, .ecosystem__container.footer__container, .container.explore__container, .explore__container.footer__container, .container.case__container, .case__container.footer__container, .container.general-content__container, .general-content__container.footer__container, .container.slider-reveal__container, .slider-reveal__container.footer__container {
+.container.examples__container, .container.ecosystem__container, .container.explore__container, .container.case__container, .container.general-content__container, .container.slider-reveal__container {
   margin: 0 auto;
   padding: 60px 12px 60px 12px; }
   @media (min-width: 768px) {
-    .container.examples__container, .examples__container.footer__container, .container.ecosystem__container, .ecosystem__container.footer__container, .container.explore__container, .explore__container.footer__container, .container.case__container, .case__container.footer__container, .container.general-content__container, .general-content__container.footer__container, .container.slider-reveal__container, .slider-reveal__container.footer__container {
+    .container.examples__container, .container.ecosystem__container, .container.explore__container, .container.case__container, .container.general-content__container, .container.slider-reveal__container {
       padding: 60px 24px 60px 24px; } }
   @media (min-width: 1025px) {
-    .container.examples__container, .examples__container.footer__container, .container.ecosystem__container, .ecosystem__container.footer__container, .container.explore__container, .explore__container.footer__container, .container.case__container, .case__container.footer__container, .container.general-content__container, .general-content__container.footer__container, .container.slider-reveal__container, .slider-reveal__container.footer__container {
+    .container.examples__container, .container.ecosystem__container, .container.explore__container, .container.case__container, .container.general-content__container, .container.slider-reveal__container {
       padding: 60px; } }
 
 .flyout, .main-nav__flyout {
@@ -3712,15 +3712,15 @@ th {
   .notification [type="checkbox"]:disabled + label, .preferences-bar [type="checkbox"]:disabled + label {
     color: #787a7f; }
 
-.notification--small .container, .notification--small .footer__container {
+.notification--small .container {
   padding-top: 30px;
   padding-bottom: 30px; }
-  .notification--small .container .notification__content, .notification--small .footer__container .notification__content, .notification--small .container .preferences-bar__content, .notification--small .footer__container .preferences-bar__content {
+  .notification--small .container .notification__content, .notification--small .container .preferences-bar__content {
     padding-right: 48px; }
-  .notification--small .container .notification__content--centered, .notification--small .footer__container .notification__content--centered {
+  .notification--small .container .notification__content--centered {
     padding: 0 48px; }
   @media (min-width: 1025px) {
-    .notification--small .container, .notification--small .footer__container {
+    .notification--small .container {
       padding: 12px 60px; } }
 
 .notification--small .notification__content, .notification--small .preferences-bar__content {
@@ -4061,83 +4061,6 @@ th {
   .article-video__button:visited {
     color: #fff; }
 
-/** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-.auto-complete {
-  position: relative; }
-  .auto-complete input[type="text"] {
-    padding: 8px 9px 9px 9px; }
-
-.auto-complete__dropdown {
-  background: #fff;
-  border: none;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  user-select: none;
-  width: 100%;
-  z-index: 1000; }
-
-.auto-complete__input {
-  width: 100%;
-  font-size: 14px; }
-  .auto-complete--small .auto-complete__input {
-    height: 100%;
-    padding: 0 0 0 6px; }
-
-.auto-complete__input-label {
-  display: none; }
-
-.auto-complete__label {
-  background-color: #f5f5f5;
-  border: 0;
-  color: #7f7f7f;
-  font-size: 12px;
-  font-weight: normal;
-  list-style: none;
-  margin: 0;
-  padding: 6px 12px;
-  text-align: left;
-  user-select: none; }
-
-.auto-complete__list {
-  list-style: none;
-  user-select: none;
-  border: 0;
-  padding: 0;
-  margin: 0; }
-
-.auto-complete__list-item {
-  border: 0;
-  color: #000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 1.5;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 12px;
-  text-align: left;
-  user-select: none; }
-  .auto-complete__list-item:hover, .auto-complete__list-item:active {
-    background-color: #eaeaea; }
-  .auto-complete__list-item:focus:not(:hover), .auto-complete__list-item:focus:not(:active) {
-    color: #fff;
-    background-color: #3f86f2; }
-  .auto-complete__list-item .auto-complete__value {
-    font-weight: 600; }
-
-.auto-complete--reversed .auto-complete__dropdown {
-  bottom: 100%; }
-
 .brand__image {
   width: 120px; }
 
@@ -4429,51 +4352,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   outline: 2px solid #000; }
   .color--selected .color__spec--show {
     opacity: 0; }
-
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-.combo-box {
-  position: relative;
-  width: 100%; }
-  .combo-box--list-box-hidden .combo-box__input:not(:focus):hover {
-    background-color: #e3e3e3; }
-  .combo-box__input {
-    width: 100%;
-    padding: 9px;
-    font-size: 14px; }
-  .combo-box .list-box {
-    position: absolute;
-    z-index: 1010;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    list-style: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-    overflow: auto;
-    scroll-snap-type: both mandatory; }
-  .combo-box .list-box__item {
-    padding: 15px 12px;
-    font-size: 14px;
-    line-height: 1;
-    outline: none;
-    scroll-snap-align: end; }
-    .combo-box .list-box__item:focus:not(:hover), .combo-box .list-box__item:focus:not(:active), .combo-box .list-box__item:hover:not(.list-box__item--disabled) {
-      font-weight: 600; }
-    .combo-box .list-box__item:focus:not(:hover), .combo-box .list-box__item:focus:not(:active) {
-      background-color: #f5f5f5; }
-    .combo-box .list-box__item:hover:not(.list-box__item--disabled) {
-      background-color: #e3e3e3; }
-    .combo-box .list-box__item:not(.list-box__item--disabled) {
-      cursor: pointer; }
-    .combo-box .list-box__item .hightlighted {
-      font-weight: 600; }
 
 .content-block__description {
   margin-bottom: 24px; }
@@ -5591,7 +5469,7 @@ dd {
         width: 100%; }
     .tabs__list_link > span {
       margin-right: 6px; }
-  .tabs__contents .container, .tabs__contents .footer__container {
+  .tabs__contents .container {
     padding-bottom: 0; }
 
 /** @format */
@@ -5692,29 +5570,10 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .conte
       margin-top: -2px;
       margin-bottom: 23px; } }
   @media (max-width: 568px) {
-    .preferences-bar .locale-selector,
-    .preferences-bar .selector-group,
-    .preferences-bar .auto-complete {
+    .preferences-bar .selector-group {
       width: 100%; } }
-  @media (max-width: 568px) {
-    .preferences-bar .locale-selector {
-      margin-top: 12px; } }
-  .preferences-bar .auto-complete input {
-    padding-left: 12px; }
 
-.preferences-bar__locale-selector .icon-button, .preferences-bar__locale-selector .sys-nav__link, .preferences-bar__locale-selector .search-bar__button {
-  font-size: 16px;
-  line-height: 24px;
-  color: #196ef0;
-  background-color: transparent; }
-  .preferences-bar__locale-selector .icon-button:hover, .preferences-bar__locale-selector .sys-nav__link:hover, .preferences-bar__locale-selector .search-bar__button:hover, .preferences-bar__locale-selector .icon-button:focus, .preferences-bar__locale-selector .sys-nav__link:focus, .preferences-bar__locale-selector .search-bar__button:focus {
-    background-color: #d9e7fc; }
-  @media (max-width: 568px) {
-    .preferences-bar__locale-selector .icon-button:not(.locale-selector__icon-button), .preferences-bar__locale-selector .sys-nav__link:not(.locale-selector__icon-button), .preferences-bar__locale-selector .search-bar__button:not(.locale-selector__icon-button) {
-      margin-left: 6px; } }
-
-.settings-selector__edit-button .icon-button__label,
-.preferences-bar__locale-selector .icon-button__label {
+.settings-selector__edit-button .icon-button__label {
   margin-top: 0;
   margin-left: 0; }
 
@@ -5789,10 +5648,10 @@ main .organism:nth-child(even), main .slider-reveal:nth-child(even), main .conte
     .selector-group {
       margin-left: auto; } }
 
-.article > .container, .article > .footer__container {
+.article > .container {
   padding-top: 24px; }
   @media (min-width: 768px) {
-    .article > .container, .article > .footer__container {
+    .article > .container {
       padding-top: 48px; } }
 
 .article .article-ctas + .article-image,
@@ -6221,27 +6080,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   background-color: #FFF; }
 
 /** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-.locale-selector {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%; }
-
-.locale-selector__icon-button {
-  align-self: center;
-  height: auto;
-  padding: 6px; }
-
-.locale-selector__icon-button svg {
-  font-size: 24px; }
-
-/** @format */
 /* no unique css required as of yet */
 /** @format */
 /*
@@ -6268,111 +6106,6 @@ main .overview:nth-child(even) {
     left: 12px; }
   .overview__tooltip .cta__block .link--large {
     padding-left: 0; }
-
-/** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-/** @format */
-/*
- *  Mixins to support media queries
- *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
- */
-.footer {
-  border-top: 1px solid #f5f5f5;
-  width: 100%; }
-
-.footer__branded-logo {
-  order: 2; }
-  @media (min-width: 569px) {
-    .footer__branded-logo {
-      align-self: flex-start;
-      align-items: flex-start;
-      order: 1; } }
-  @media (min-width: 1025px) {
-    .footer__branded-logo {
-      flex-flow: row wrap;
-      align-self: flex-start;
-      align-items: center; } }
-
-.footer__container {
-  padding-bottom: 30px; }
-
-.footer__dash {
-  align-self: center;
-  margin: -4px 6px 0 6px; }
-
-.footer__locales {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row; }
-
-.footer__locales-icon {
-  align-self: center;
-  font-size: 24px;
-  margin-right: 6px; }
-
-.footer__locales .auto-complete {
-  margin-left: 6px; }
-
-.footer__navigation {
-  order: 1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  max-height: 400px; }
-  @media (min-width: 569px) {
-    .footer__navigation {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      max-height: initial; } }
-
-.footer__primary {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-bottom: 60px; }
-  @media (min-width: 569px) {
-    .footer__primary {
-      margin-bottom: 51px;
-      justify-content: space-between;
-      flex-direction: row; } }
-
-.footer__secondary {
-  display: flex;
-  flex: 1 0 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 30px; }
-  @media (min-width: 569px) {
-    .footer__secondary {
-      flex-direction: row-reverse;
-      align-items: flex-start;
-      justify-content: space-between;
-      height: 36px; } }
-
-.footer__social-nav {
-  margin-bottom: 18px; }
-
-.footer__tertiary {
-  display: flex;
-  justify-content: center; }
-  @media (min-width: 569px) {
-    .footer__tertiary {
-      justify-content: flex-start; } }
-
-.footer__legal {
-  text-align: center;
-  color: #7f7f7f; }
-  @media (min-width: 569px) {
-    .footer__legal {
-      text-align: left; } }
 
 .header {
   position: relative;

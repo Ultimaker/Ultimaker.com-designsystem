@@ -3074,32 +3074,32 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .tag-list__item .tag {
     margin-left: 0; }
 
-.um-components .container, .um-components .footer__container {
+.um-components .container {
   max-width: 1201px;
   margin: 0 auto;
   padding: 60px 12px 0 12px; }
   @media (min-width: 768px) {
-    .um-components .container, .um-components .footer__container {
+    .um-components .container {
       padding: 60px 24px 0 24px; } }
   @media (min-width: 1025px) {
-    .um-components .container, .um-components .footer__container {
+    .um-components .container {
       padding: 60px 60px 0 60px; } }
-  .um-components .preferences-bar .container, .um-components .preferences-bar .footer__container {
+  .um-components .preferences-bar .container {
     margin: 0 auto;
     padding-bottom: 60px; }
-  .um-components .container.hero__container, .um-components .hero__container.footer__container {
+  .um-components .container.hero__container {
     padding-bottom: 60px; }
-  .um-components .footer .container, .um-components .footer .footer__container {
+  .um-components .footer .container {
     margin-bottom: 0; }
 
-.um-components .container.examples__container, .um-components .examples__container.footer__container, .um-components .container.ecosystem__container, .um-components .ecosystem__container.footer__container, .um-components .container.explore__container, .um-components .explore__container.footer__container, .um-components .container.case__container, .um-components .case__container.footer__container, .um-components .container.general-content__container, .um-components .general-content__container.footer__container, .um-components .container.slider-reveal__container, .um-components .slider-reveal__container.footer__container {
+.um-components .container.examples__container, .um-components .container.ecosystem__container, .um-components .container.explore__container, .um-components .container.case__container, .um-components .container.general-content__container, .um-components .container.slider-reveal__container {
   margin: 0 auto;
   padding: 60px 12px 60px 12px; }
   @media (min-width: 768px) {
-    .um-components .container.examples__container, .um-components .examples__container.footer__container, .um-components .container.ecosystem__container, .um-components .ecosystem__container.footer__container, .um-components .container.explore__container, .um-components .explore__container.footer__container, .um-components .container.case__container, .um-components .case__container.footer__container, .um-components .container.general-content__container, .um-components .general-content__container.footer__container, .um-components .container.slider-reveal__container, .um-components .slider-reveal__container.footer__container {
+    .um-components .container.examples__container, .um-components .container.ecosystem__container, .um-components .container.explore__container, .um-components .container.case__container, .um-components .container.general-content__container, .um-components .container.slider-reveal__container {
       padding: 60px 24px 60px 24px; } }
   @media (min-width: 1025px) {
-    .um-components .container.examples__container, .um-components .examples__container.footer__container, .um-components .container.ecosystem__container, .um-components .ecosystem__container.footer__container, .um-components .container.explore__container, .um-components .explore__container.footer__container, .um-components .container.case__container, .um-components .case__container.footer__container, .um-components .container.general-content__container, .um-components .general-content__container.footer__container, .um-components .container.slider-reveal__container, .um-components .slider-reveal__container.footer__container {
+    .um-components .container.examples__container, .um-components .container.ecosystem__container, .um-components .container.explore__container, .um-components .container.case__container, .um-components .container.general-content__container, .um-components .container.slider-reveal__container {
       padding: 60px; } }
 
 .um-components .flyout, .um-components .main-nav__flyout {
@@ -3234,15 +3234,15 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .notification [type="checkbox"]:disabled + label, .um-components .preferences-bar [type="checkbox"]:disabled + label {
     color: #787a7f; }
 
-.um-components .notification--small .container, .um-components .notification--small .footer__container {
+.um-components .notification--small .container {
   padding-top: 30px;
   padding-bottom: 30px; }
-  .um-components .notification--small .container .notification__content, .um-components .notification--small .footer__container .notification__content, .um-components .notification--small .container .preferences-bar__content, .um-components .notification--small .footer__container .preferences-bar__content {
+  .um-components .notification--small .container .notification__content, .um-components .notification--small .container .preferences-bar__content {
     padding-right: 48px; }
-  .um-components .notification--small .container .notification__content--centered, .um-components .notification--small .footer__container .notification__content--centered {
+  .um-components .notification--small .container .notification__content--centered {
     padding: 0 48px; }
   @media (min-width: 1025px) {
-    .um-components .notification--small .container, .um-components .notification--small .footer__container {
+    .um-components .notification--small .container {
       padding: 12px 60px; } }
 
 .um-components .notification--small .notification__content, .um-components .notification--small .preferences-bar__content {
@@ -3583,83 +3583,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   .um-components .article-video__button:visited {
     color: #fff; }
 
-/** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-.um-components .auto-complete {
-  position: relative; }
-  .um-components .auto-complete input[type="text"] {
-    padding: 8px 9px 9px 9px; }
-
-.um-components .auto-complete__dropdown {
-  background: #fff;
-  border: none;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  user-select: none;
-  width: 100%;
-  z-index: 1000; }
-
-.um-components .auto-complete__input {
-  width: 100%;
-  font-size: 14px; }
-  .um-components .auto-complete--small .auto-complete__input {
-    height: 100%;
-    padding: 0 0 0 6px; }
-
-.um-components .auto-complete__input-label {
-  display: none; }
-
-.um-components .auto-complete__label {
-  background-color: #f5f5f5;
-  border: 0;
-  color: #7f7f7f;
-  font-size: 12px;
-  font-weight: normal;
-  list-style: none;
-  margin: 0;
-  padding: 6px 12px;
-  text-align: left;
-  user-select: none; }
-
-.um-components .auto-complete__list {
-  list-style: none;
-  user-select: none;
-  border: 0;
-  padding: 0;
-  margin: 0; }
-
-.um-components .auto-complete__list-item {
-  border: 0;
-  color: #000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 1.5;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 12px;
-  text-align: left;
-  user-select: none; }
-  .um-components .auto-complete__list-item:hover, .um-components .auto-complete__list-item:active {
-    background-color: #eaeaea; }
-  .um-components .auto-complete__list-item:focus:not(:hover), .um-components .auto-complete__list-item:focus:not(:active) {
-    color: #fff;
-    background-color: #3f86f2; }
-  .um-components .auto-complete__list-item .auto-complete__value {
-    font-weight: 600; }
-
-.um-components .auto-complete--reversed .auto-complete__dropdown {
-  bottom: 100%; }
-
 .um-components .brand__image {
   width: 120px; }
 
@@ -3951,51 +3874,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   outline: 2px solid #000; }
   .um-components .color--selected .color__spec--show {
     opacity: 0; }
-
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-.um-components .combo-box {
-  position: relative;
-  width: 100%; }
-  .um-components .combo-box--list-box-hidden .combo-box__input:not(:focus):hover {
-    background-color: #e3e3e3; }
-  .um-components .combo-box__input {
-    width: 100%;
-    padding: 9px;
-    font-size: 14px; }
-  .um-components .combo-box .list-box {
-    position: absolute;
-    z-index: 1010;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    list-style: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-    overflow: auto;
-    scroll-snap-type: both mandatory; }
-  .um-components .combo-box .list-box__item {
-    padding: 15px 12px;
-    font-size: 14px;
-    line-height: 1;
-    outline: none;
-    scroll-snap-align: end; }
-    .um-components .combo-box .list-box__item:focus:not(:hover), .um-components .combo-box .list-box__item:focus:not(:active), .um-components .combo-box .list-box__item:hover:not(.list-box__item--disabled) {
-      font-weight: 600; }
-    .um-components .combo-box .list-box__item:focus:not(:hover), .um-components .combo-box .list-box__item:focus:not(:active) {
-      background-color: #f5f5f5; }
-    .um-components .combo-box .list-box__item:hover:not(.list-box__item--disabled) {
-      background-color: #e3e3e3; }
-    .um-components .combo-box .list-box__item:not(.list-box__item--disabled) {
-      cursor: pointer; }
-    .um-components .combo-box .list-box__item .hightlighted {
-      font-weight: 600; }
 
 .um-components .content-block__description {
   margin-bottom: 24px; }
@@ -5089,7 +4967,7 @@ because both families serve another purpose. Therefore the line-heights will be 
         width: 100%; }
     .um-components .tabs__list_link > span {
       margin-right: 6px; }
-  .um-components .tabs__contents .container, .um-components .tabs__contents .footer__container {
+  .um-components .tabs__contents .container {
     padding-bottom: 0; }
 
 /** @format */
@@ -5189,29 +5067,10 @@ because both families serve another purpose. Therefore the line-heights will be 
       margin-top: -2px;
       margin-bottom: 23px; } }
   @media (max-width: 568px) {
-    .um-components .preferences-bar .locale-selector,
-    .um-components .preferences-bar .selector-group,
-    .um-components .preferences-bar .auto-complete {
+    .um-components .preferences-bar .selector-group {
       width: 100%; } }
-  @media (max-width: 568px) {
-    .um-components .preferences-bar .locale-selector {
-      margin-top: 12px; } }
-  .um-components .preferences-bar .auto-complete input {
-    padding-left: 12px; }
 
-.um-components .preferences-bar__locale-selector .icon-button, .um-components .preferences-bar__locale-selector .sys-nav__link, .um-components .preferences-bar__locale-selector .search-bar__button {
-  font-size: 16px;
-  line-height: 24px;
-  color: #196ef0;
-  background-color: transparent; }
-  .um-components .preferences-bar__locale-selector .icon-button:hover, .um-components .preferences-bar__locale-selector .sys-nav__link:hover, .um-components .preferences-bar__locale-selector .search-bar__button:hover, .um-components .preferences-bar__locale-selector .icon-button:focus, .um-components .preferences-bar__locale-selector .sys-nav__link:focus, .um-components .preferences-bar__locale-selector .search-bar__button:focus {
-    background-color: #d9e7fc; }
-  @media (max-width: 568px) {
-    .um-components .preferences-bar__locale-selector .icon-button:not(.locale-selector__icon-button), .um-components .preferences-bar__locale-selector .sys-nav__link:not(.locale-selector__icon-button), .um-components .preferences-bar__locale-selector .search-bar__button:not(.locale-selector__icon-button) {
-      margin-left: 6px; } }
-
-.um-components .settings-selector__edit-button .icon-button__label,
-.um-components .preferences-bar__locale-selector .icon-button__label {
+.um-components .settings-selector__edit-button .icon-button__label {
   margin-top: 0;
   margin-left: 0; }
 
@@ -5286,10 +5145,10 @@ because both families serve another purpose. Therefore the line-heights will be 
     .um-components .selector-group {
       margin-left: auto; } }
 
-.um-components .article > .container, .um-components .article > .footer__container {
+.um-components .article > .container {
   padding-top: 24px; }
   @media (min-width: 768px) {
-    .um-components .article > .container, .um-components .article > .footer__container {
+    .um-components .article > .container {
       padding-top: 48px; } }
 
 .um-components .article .article-ctas + .article-image,
@@ -5718,27 +5577,6 @@ because both families serve another purpose. Therefore the line-heights will be 
   background-color: #FFF; }
 
 /** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-.um-components .locale-selector {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%; }
-
-.um-components .locale-selector__icon-button {
-  align-self: center;
-  height: auto;
-  padding: 6px; }
-
-.um-components .locale-selector__icon-button svg {
-  font-size: 24px; }
-
-/** @format */
 /* no unique css required as of yet */
 /** @format */
 /*
@@ -5765,111 +5603,6 @@ because both families serve another purpose. Therefore the line-heights will be 
     left: 12px; }
   .um-components .overview__tooltip .cta__block .link--large {
     padding-left: 0; }
-
-/** @format */
-/*
-* Because we have a primary and secondary font family, we need to define both
-because both families serve another purpose. Therefore the line-heights will be different for both families.
-*/
-/*
-* Offset typography to fit on baseline, this will create the vertical rhythm
-*/
-/** @format */
-/*
- *  Mixins to support media queries
- *  Remark: they are not generated but written out to support autocomplete in your favourite editor.
- */
-.um-components .footer {
-  border-top: 1px solid #f5f5f5;
-  width: 100%; }
-
-.um-components .footer__branded-logo {
-  order: 2; }
-  @media (min-width: 569px) {
-    .um-components .footer__branded-logo {
-      align-self: flex-start;
-      align-items: flex-start;
-      order: 1; } }
-  @media (min-width: 1025px) {
-    .um-components .footer__branded-logo {
-      flex-flow: row wrap;
-      align-self: flex-start;
-      align-items: center; } }
-
-.um-components .footer__container {
-  padding-bottom: 30px; }
-
-.um-components .footer__dash {
-  align-self: center;
-  margin: -4px 6px 0 6px; }
-
-.um-components .footer__locales {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row; }
-
-.um-components .footer__locales-icon {
-  align-self: center;
-  font-size: 24px;
-  margin-right: 6px; }
-
-.um-components .footer__locales .auto-complete {
-  margin-left: 6px; }
-
-.um-components .footer__navigation {
-  order: 1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  max-height: 400px; }
-  @media (min-width: 569px) {
-    .um-components .footer__navigation {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      max-height: initial; } }
-
-.um-components .footer__primary {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-bottom: 60px; }
-  @media (min-width: 569px) {
-    .um-components .footer__primary {
-      margin-bottom: 51px;
-      justify-content: space-between;
-      flex-direction: row; } }
-
-.um-components .footer__secondary {
-  display: flex;
-  flex: 1 0 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 30px; }
-  @media (min-width: 569px) {
-    .um-components .footer__secondary {
-      flex-direction: row-reverse;
-      align-items: flex-start;
-      justify-content: space-between;
-      height: 36px; } }
-
-.um-components .footer__social-nav {
-  margin-bottom: 18px; }
-
-.um-components .footer__tertiary {
-  display: flex;
-  justify-content: center; }
-  @media (min-width: 569px) {
-    .um-components .footer__tertiary {
-      justify-content: flex-start; } }
-
-.um-components .footer__legal {
-  text-align: center;
-  color: #7f7f7f; }
-  @media (min-width: 569px) {
-    .um-components .footer__legal {
-      text-align: left; } }
 
 .um-components .header {
   position: relative;
