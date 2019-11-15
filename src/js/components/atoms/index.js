@@ -1,7 +1,6 @@
 import ActionButton from 'atoms/action-button/ActionButton';
 import AnchorOverlay from 'atoms/anchor-overlay/AnchorOverlay';
 import BaseLink from 'atoms/BaseLink/BaseLink';
-import CImage from 'atoms/c-image/CImage';
 import ContentButton from 'atoms/content-button/ContentButton';
 import ContentLink from 'atoms/content-link/ContentLink';
 import ContentLinkList from 'atoms/content-link-list/ContentLinkList';
