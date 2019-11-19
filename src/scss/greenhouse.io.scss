@@ -26,7 +26,9 @@ h1, h2, h3, h4, h5, h6 {
     max-width: none;
 }
 
-a {
+a,
+.link-default {
+    display: inline-block;
     position: relative;
     color: $um-black;
 
@@ -270,8 +272,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: $buildingUnit * 4;
+    margin-bottom: $buildingUnit * 3;
     text-align: center;
+
+    @include min-mobile-xl {
+        margin-bottom: $buildingUnit * 4;
+    }
 
     a {
         order: 3;
@@ -393,8 +399,7 @@ a {
                 text-align: left;
             }
 
-            a.locate-me,
-            .select2-choice {
+            a.locate-me {
 
                 &::before {
                     display: none;
@@ -512,29 +517,6 @@ a {
         }
     }
 
-    .select2-choice {
-        height: auto;
-        padding: ($buildingUnit / 2) ($buildingUnit / 2) ($buildingUnit / 2) $buildingUnit;
-        font-size: 16px;
-        line-height: 24px;
-        background-color: $um-white;
-        border: 2px solid $um-gray-200;
-        border-radius: 0;
-        box-sizing: border-box;
-
-        .select2-chosen {
-            color: $um-gray-400;
-        }
-    }
-
-    .select2-dropdown-open {
-
-        .select2-choice {
-            border-color: lighten($um-blue, $tintHoverFocus);
-            border-bottom-width: 1px;
-        }
-    }
-
     // default error message
     .field-error-msg {
         margin-top: $buildingUnit / 2;
@@ -611,6 +593,11 @@ a {
     }
 }
 
+[data-messages="uploaders"] {
+    padding-top: 6px;
+    font-size: 12px;
+}
+
 // selectbox
 .select2-drop {
     margin-top: 0;
@@ -619,11 +606,14 @@ a {
 }
 
 .select2-drop-active {
+    padding-top: 2px;
     border-width: 2px;
-    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 2px;
     border-color: lighten($um-blue, $tintHoverFocus);
 
     .select2-search input {
+        margin-top: 2px;
         background-image: none !important;
     }
 }
@@ -633,6 +623,36 @@ a {
 
     .select2-result-label {
         color: $um-white;
+    }
+}
+
+.accessible .select2-container .select2-choice,
+.select2-container .select2-choice {
+    height: auto;
+    padding: ($buildingUnit / 2) ($buildingUnit / 2) ($buildingUnit / 2) $buildingUnit;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $um-white;
+    border-width: 2px;
+    border-color: $um-gray-200;
+    border-radius: 0;
+    box-sizing: border-box;
+
+    &::before {
+        display: none;
+    }
+
+    .select2-chosen {
+        color: $um-gray-400;
+    }
+}
+
+.select2-container.select2-active,
+.select2-container.select2-dropdown-open {
+
+    .select2-choice {
+        border-color: lighten($um-blue, $tintHoverFocus);
+        border-bottom-width: 1px;
     }
 }
 
@@ -710,7 +730,7 @@ a {
     #submit_app,
     #apply_button {
         padding: $buildingUnit ($buildingUnit * 2);
-        font-family: "Noto Sans";
+        font-family: 'Noto Sans', sans-serif;
         font-size: 20px;
         font-weight: 600;
         letter-spacing: -0.1px;
