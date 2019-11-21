@@ -54,12 +54,13 @@ $homeLinkDesktopHdWidth: 162px;
     }
 
     & .sys-nav {
-        margin-left: auto;
-        transform: translateX(($navHeight + $buildingUnit) * -1);
-        @include micro-animate(transform);
+        position: absolute;
+        @include max-tablet {
+            right: $buildingUnit * 6;
+        }
 
         @include min-desktop {
-            transform: translateX(0);
+            right: $buildingUnit * 2;
         }
     }
 }
@@ -115,15 +116,6 @@ $homeLinkDesktopHdWidth: 162px;
 
 // Used by VUE transition
 .search {
-    &-enter, &-leave-to {
-        transform: translateX(100vw);
-    }
-    &-enter-active, &-leave-active {
-        transition: transform $defaultDuration $defaultEasing;
-    }
-}
-
-.sys-nav-slide {
     &-enter, &-leave-to {
         transform: translateX(100vw);
     }
