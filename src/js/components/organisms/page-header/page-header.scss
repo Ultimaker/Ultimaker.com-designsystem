@@ -43,6 +43,14 @@ $homeLinkDesktopHdWidth: 162px;
 
     & .main-nav {
         position: unset;
+        @include min-desktop {
+            position: static;
+            margin-left: $buildingUnit * 11.5;
+        }
+
+        @include min-desktop-hd {
+            margin-left: $buildingUnit * 14.5;
+        }
     }
 
     & .main-nav--small {
@@ -50,17 +58,6 @@ $homeLinkDesktopHdWidth: 162px;
 
         .main-nav__list {
             position: absolute;
-        }
-    }
-
-    & .sys-nav {
-        position: absolute;
-        @include max-tablet {
-            right: $buildingUnit * 6;
-        }
-
-        @include min-desktop {
-            right: $buildingUnit * 2;
         }
     }
 }
