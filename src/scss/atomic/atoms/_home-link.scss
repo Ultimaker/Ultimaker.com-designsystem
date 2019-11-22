@@ -1,11 +1,11 @@
 .home-link {
-    display: flex;
-    flex: 0 1 auto;
-    z-index: 1;
-    align-items: stretch;
-    margin: 0 $buildingUnit 4px 0;
-
+    position: absolute;
+    height: $buildingUnit * 1.5;
     color: currentColor;
+
+    @include min-desktop-hd {
+        height: $buildingUnit * 2;
+    }
 
     &:hover {
         color: currentColor;
@@ -22,7 +22,7 @@
     width: $homeLinkWidth;
 
     @include min-desktop-hd {
-            height: $buildingUnit * 2;
-            width: $homeLinkDesktopHdWidth;
+        height: $buildingUnit * 2;
+        width: $homeLinkDesktopHdWidth;
     }
 }
