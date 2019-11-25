@@ -42,7 +42,6 @@ $mainNavBorder: 1px solid $colorGray;
 .main-nav .main-nav__item {
     @include min-desktop {
         display: flex;
-        height: 100%;
         align-items: center;
     }
 }

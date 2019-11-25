@@ -16,7 +16,6 @@
 
 <script lang="ts">
     import Vue from 'vue';
-    import ViewportUtility from '../../../utils/viewport';
 
     export default Vue.component('MainNavigation', {
         props: {
@@ -31,7 +30,6 @@
         },
         data() {
             return {
-                viewportUtil: new ViewportUtility(),
                 showCompactMenu: false,
             }
         },
@@ -45,19 +43,8 @@
         methods: {
             handleNavAssistClick(stateChange): void {
                 this.$emit('nav-assist-click', stateChange);
-            },
-            handleResize(): void {
-                if (!this.showCompactMenu) {
-                    this.$emit('show-compact-menu', false);
-                }
             }
         },
-        mounted(): void {
-            this.viewportUtil.addResizeHandler(this.handleResize);
-        },
-        beforeDestroy(): void {
-            this.viewportUtil.removeResizeHandler(this.handleResize);
-        }
     });
 </script>
 

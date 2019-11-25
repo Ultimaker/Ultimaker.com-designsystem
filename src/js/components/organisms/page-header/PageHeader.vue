@@ -6,8 +6,7 @@
             </a>
 
             <main-navigation v-if="navigation" :navigation="navigation" :main-nav-open="mainNavOpen"
-                             @nav-assist-click="handleNavAssistClick"
-                             @show-compact-menu="handleOpenCompactMenu"></main-navigation>
+                             @nav-assist-click="handleNavAssistClick"></main-navigation>
 
             <sys-nav v-if="cta && search" @open-search="openSearch"
                      :order-now-icon="cta.icon" :order-now-label="cta.label" :order-now-link="cta.url"
