@@ -7,8 +7,7 @@
         @keydown.tab.shift.exact="selectPrevLink"
         @keydown.right="selectNextSection($event, true)"
         @keydown.left="selectPrevSection($event, true)"
-        @mouseenter.stop="open"
-        v-show="isCompact || !viewportUtil.isResizing">
+        @mouseenter.stop="open">
         <flyout-section ref="items"
                         v-for="(item, key) in items"
                         v-if="item.items && item.items.length"
