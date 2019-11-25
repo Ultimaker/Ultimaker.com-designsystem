@@ -4,7 +4,7 @@ $mainNavBorder: 1px solid $colorGray;
 .main-nav {
     position: relative;
 
-    &--small {
+    @include max-tablet {
         flex: 0 1 auto;
         order: 30;
         z-index: 0;
@@ -26,7 +26,7 @@ $mainNavBorder: 1px solid $colorGray;
         }
     }
 
-    &--large {
+    @include min-desktop {
         order: 20;
         flex: 1 1 auto;
 
@@ -37,12 +37,14 @@ $mainNavBorder: 1px solid $colorGray;
     }
 }
 
-.main-nav--large,
-.main-nav--large .main-nav__list,
-.main-nav--large .main-nav__item {
-    display: flex;
-    height: 100%;
-    align-items: center;
+.main-nav,
+.main-nav .main-nav__list,
+.main-nav .main-nav__item {
+    @include min-desktop {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
 }
 
 .main-nav__nav-assist {
@@ -62,7 +64,7 @@ $mainNavBorder: 1px solid $colorGray;
 .main-nav__list {
     @extend %reset-list;
 
-    .main-nav--small & {
+    @include max-tablet {
         position: relative;
         top: 100%;
         left: -100%;
@@ -78,7 +80,7 @@ $mainNavBorder: 1px solid $colorGray;
         transition: all $defaultDuration;
     }
 
-    .main-nav--large & {
+    @include min-desktop {
         position: static;
         margin-top: ($buildingUnit / 2) +1;
         border-right: 0;
@@ -96,7 +98,7 @@ $mainNavBorder: 1px solid $colorGray;
 }
 
 .main-nav__item {
-    .main-nav--small & {
+    @include max-tablet {
         padding: 0;
         margin-bottom: 0;
 
@@ -107,7 +109,7 @@ $mainNavBorder: 1px solid $colorGray;
         }
     }
 
-    .main-nav--large & {
+    @include min-desktop {
         display: flex;
         flex-direction: row;
 
@@ -151,7 +153,7 @@ $mainNavBorder: 1px solid $colorGray;
         @extend %focus-outline;
     }
 
-    .main-nav--large & {
+    @include min-desktop {
         padding: 0 $buildingUnit 0;
 
         &:after {
@@ -183,7 +185,7 @@ $mainNavBorder: 1px solid $colorGray;
 .main-nav__item--active {
     background-color: $colorNavItemActive;
 
-    .main-nav--large & {
+    @include min-desktop {
         background-color: transparent;
 
         .main-nav__link:after {
@@ -206,7 +208,7 @@ $mainNavBorder: 1px solid $colorGray;
     .main-nav__item {
         display: block;
 
-        .main-nav--large & {
+        @include min-desktop {
             display: inline-block;
         }
     }
@@ -242,7 +244,7 @@ $mainNavBorder: 1px solid $colorGray;
     margin-bottom: 0;
     background-color: transparent;
 
-    .main-nav--large & {
+    @include min-desktop {
         display: initial;
     }
 }

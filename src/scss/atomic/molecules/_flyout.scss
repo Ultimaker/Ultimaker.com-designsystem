@@ -28,8 +28,7 @@ $pad: $gridGutterSize;
         flex-direction: row;
     }
 
-    //@include min-desktop {
-    .main-nav--large & {
+    @include min-desktop {
         position: absolute;
         left: 0;
         right: 0;
@@ -66,8 +65,7 @@ $pad: $gridGutterSize;
         }
     }
 
-    //@include min-desktop {
-    .main-nav--large & {
+    @include min-desktop {
         width: calc((20% - #{$gutter / $maxColCount}));
         padding-right: $pad;
 
@@ -78,24 +76,14 @@ $pad: $gridGutterSize;
 }
 
 .flyout__section--2-columns {
-    //@include min-desktop {
-    .main-nav--large & {
+    @include min-desktop {
         width: calc(((20% - #{$gutter / $maxColCount}) * 2) + #{$pad});
-
-        & > .flyout__list {
-            @extend .link-list--2-columns;
-        }
     }
 }
 
 .flyout__section--3-columns {
-    //@include min-desktop {
-    .main-nav--large & {
+    @include min-desktop {
         width: calc(((20% - #{$gutter / $maxColCount}) * 3) + #{$pad * 2});
-
-        & > .flyout__list {
-            @extend .link-list--3-columns;
-        }
     }
 }
 
@@ -107,14 +95,12 @@ $pad: $gridGutterSize;
 .flyout__list {
     @extend .link-list;
 
-    //@include min-desktop {
-    .main-nav--large & {
+    @include min-desktop {
         margin-bottom: 0;
     }
 
     & + .flyout__link--cta-mini {
-        //@include min-desktop {
-        .main-nav--large & {
+        @include min-desktop {
             margin-top: 21px;
         }
     }
@@ -128,8 +114,7 @@ $pad: $gridGutterSize;
     &--collapsed-sm {
         @include visually-hidden;
 
-        //@include min-tablet() {
-        .main-nav--large & {
+        @include min-tablet {
             @include reset-visually-hidden;
         }
     }
@@ -152,8 +137,7 @@ $pad: $gridGutterSize;
 }
 
 .flyout__toggle {
-    //@include min-desktop() {
-    .main-nav--large & {
+    @include min-desktop{
         @include visually-hidden;
     }
 }
