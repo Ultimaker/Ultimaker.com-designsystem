@@ -53,11 +53,13 @@ $homeLinkDesktopHdWidth: 162px;
         }
     }
 
-    & .main-nav--small {
-        padding-bottom: $navHeight;
+    & .main-nav {
+        @include max-tablet {
+            padding-bottom: $navHeight;
 
-        .main-nav__list {
-            position: absolute;
+            .main-nav__list {
+                position: absolute;
+            }
         }
     }
 }

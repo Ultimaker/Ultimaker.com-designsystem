@@ -1,6 +1,6 @@
 <template>
     <nav key="large-menu" class="main-nav" :class="classList" aria-label="site">
-        <ul class="main-nav__list" role="menu" :class="{'main-nav__list-visible': mainNavOpen && showCompactMenu}">
+        <ul class="main-nav__list" role="menu" :class="{'main-nav__list-visible': mainNavOpen}">
             <main-navigation-item v-if="navigation" ref="navItem"
                                   v-for="(mainNavigationItem, index) in navigation" :key="index"
                                   :is-compact="showCompactMenu"
@@ -38,9 +38,7 @@
         computed: {
             classList(): object {
                 return {
-                    'main-nav--small': this.showCompactMenu,
-                    'main-nav--large': !this.showCompactMenu,
-                    'main-nav--open': this.mainNavOpen && this.showCompactMenu,
+                    'main-nav--open': this.mainNavOpen,
                 };
             }
         },
@@ -49,8 +47,6 @@
                 this.$emit('nav-assist-click', stateChange);
             },
             handleResize(): void {
-                this.showCompactMenu = this.viewportUtil.isTablet;
-
                 if (!this.showCompactMenu) {
                     this.$emit('show-compact-menu', false);
                 }
@@ -58,10 +54,10 @@
         },
         mounted(): void {
             this.viewportUtil.addResizeHandler(this.handleResize);
-            this.showCompactMenu = this.viewportUtil.isTablet;
         },
         beforeDestroy(): void {
             this.viewportUtil.removeResizeHandler(this.handleResize);
         }
     });
 </script>
+
