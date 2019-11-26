@@ -11,11 +11,6 @@
         padding: ($buildingUnit * 5) ($buildingUnit * 5) 0 ($buildingUnit * 5);
     }
 
-    .preferences-bar & {
-        margin: 0 auto;
-        padding-bottom: $buildingUnit * 5;
-    }
-
     &.hero__container {
         padding-bottom: $buildingUnit * 5;
     }
