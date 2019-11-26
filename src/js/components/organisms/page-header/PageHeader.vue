@@ -64,7 +64,6 @@
                 assistUsed: false,
                 mainNavOpen: false,
                 maxMobileRes: 1025,
-                preferencesBarStatus: 'open',
                 resize: false,
                 searchOpen: false,
                 showCompactMenu: true,
