@@ -1,20 +1,19 @@
 @import '~atoms/buttons/buttons';
 @import '~atoms/label-filter/label-filter';
+@import "~atoms/nav-assist/nav-assist";
 @import "~atoms/text/copy/copy";
 @import "~atoms/text/headings/headings";
-@import "~atoms/nav-assist/nav-assist";
 @import "~atoms/text/inline/inline";
 
-@import 'drawer';
-@import 'type';
-@import 'icons';
-@import 'lists';
-@import 'links';
-@import 'images';
 @import 'home-link';
+@import 'icons';
+@import 'images';
 @import 'input-field';
+@import 'links';
+@import 'lists';
 @import "preferences-checkbox";
 @import 'table';
+@import 'type';
 @import 'youtube-video';
 
 @import "anchor-overlay.scss";
