@@ -1,8 +1,0 @@
-.article-table {
-  overflow-x: auto;
-  margin-left: auto;
-  margin-right: auto;
-  @include min-tablet() {
-    width: 66%;
-  }
-}

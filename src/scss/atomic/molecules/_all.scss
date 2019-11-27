@@ -1,69 +1,31 @@
-@import "block";
-@import 'modal';
-@import "price-table";
-@import 'grid';
-@import 'tooltip';
-@import 'hit-area';
-@import 'branded-logo';
-@import 'scroll-hint';
-@import 'tag';
+@import 'block';
 @import 'container';
-@import "flyout";
-@import 'social-nav';
-@import 'notification';
-@import 'tablist';
-@import 'slider-reveal';
+@import 'content-manageble';
+@import 'flyout';
+@import 'grid';
 @import 'header-block';
-@import 'footer-block';
+@import 'hit-area';
+@import 'notification';
+@import 'social-nav';
 
-@import '~molecules/article-ctas';
 @import '~molecules/article-image';
 @import '~molecules/article-intro';
-@import '~molecules/article-table';
 @import '~molecules/article-text';
-@import '~molecules/article-video';
-
-@import '~molecules/brand';
-@import '~molecules/block-icon';
-
 @import '~molecules/business-card';
-@import "~molecules/card-article";
 @import '~molecules/card-download';
-@import "~molecules/card-product";
-@import '~molecules/color';
 @import '~molecules/content-block';
-@import '~molecules/content-toggle';
 @import '~molecules/cta-block';
-
 @import '~molecules/filter-category/filter-category';
 @import '~molecules/footer-navigation-category/footer-navigation-category';
 @import '~molecules/icon-button/icon-button';
-
+@import '~molecules/in-page-notification/in-page-notification';
 @import '~molecules/list-unordered-limit/list-unordered-limit';
-
-@import '~molecules/main-navigation/main-navigation';
 @import '~molecules/main-navigation-item/main-navigation-item';
-@import '~molecules/modal-button';
-@import '~molecules/modal-wizard';
-
+@import '~molecules/main-navigation/main-navigation';
 @import '~molecules/product';
-
 @import '~molecules/search-bar/search-bar';
-@import '~molecules/search-bar-page';
-@import '~molecules/search-result';
-@import '~molecules/social-sharing';
-
-@import '~molecules/tab-table';
-@import '~molecules/tab-table-row';
-@import '~molecules/tooltip-toggle/tooltip-toggle';
-
-@import '~molecules/wizard-step-confirmation';
-@import '~molecules/wizard-step-download-list';
-
-@import 'content-manageble';
-
-@import '~molecules/article-description-list';
-@import '~molecules/tabs';
 @import '~molecules/sys-nav/sys-nav';
-
-@import "~molecules/in-page-notification/in-page-notification";
+@import '~molecules/tab-table-row';
+@import '~molecules/tabs';
+@import '~molecules/tooltip-toggle/tooltip-toggle';
+@import '~molecules/wizard-step-download-list';
