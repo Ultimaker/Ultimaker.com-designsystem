@@ -1,9 +1,0 @@
-.tooltip-toggle {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip-toggle__tooltip {
-    @include font-line-ratio(prim-s);
-    bottom: $buildingUnit * 5;
-}
