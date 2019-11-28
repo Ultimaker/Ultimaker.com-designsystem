@@ -7,7 +7,6 @@ import ContentLinkList from 'atoms/content-link-list/ContentLinkList';
 import HitArea from 'atoms/hit-area/HitArea';
 import HorizontalList from 'atoms/horizontal-list/HorizontalList';
 import Icon from 'atoms/icon/Icon';
-import IntersectObserver from 'atoms/intersect-observer/IntersectObserver';
 import LabelFilter from 'atoms/label-filter/LabelFilter';
 import LiInline from 'atoms/li-inline/LiInline';
 import LiItem from 'atoms/li-item/LiItem';
