@@ -88,12 +88,54 @@ $pad: $gridGutterSize;
 }
 
 .flyout__title {
-    @extend .link-list__headline;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    margin-top: -2px;
     color: initial;
 }
 
 .flyout__list {
-    @extend .link-list;
+    border: 0;
+    font-size: 14px;
+    hyphens: auto;
+    line-height: 1.5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+
+    &--2-columns {
+        @include min-desktop() {
+            column-count: 2;
+            column-gap: $buildingUnit * 2;
+
+            @include min-tablet{
+                column-gap: ($buildingUnit * 2) * 2;
+            }
+
+            & > li {
+                // As it shifts off at 0px we use 2px to correct this
+                transform: translate3d(0, 2px, 0);
+            }
+        }
+    }
+    &--3-columns {
+        @include min-desktop() {
+            column-count: 3;
+            column-gap: $buildingUnit * 2;
+
+            @include min-tablet{
+                column-gap: ($buildingUnit * 2) * 2;
+            }
+
+            & > li {
+                // As it shifts off at 0px we use 2px to correct this
+                transform: translate3d(0, 2px, 0);
+            }
+        }
+    }
 
     @include min-desktop {
         margin-bottom: 0;
@@ -108,7 +150,18 @@ $pad: $gridGutterSize;
 
 .flyout__list-item {
     background: transparent;
-    @extend .link-list__item;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 ($buildingUnit * 0.5) 0;
+    padding: 0;
+    position: relative;
+    transform: translateY(2px);
+
+    & > *,
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     @extend %reset-last-margin;
 
     &--collapsed-sm {
@@ -124,7 +177,6 @@ $pad: $gridGutterSize;
 }
 
 .flyout__link {
-    @extend .link--reversed;
     color: initial;
     &:hover {
         color: initial;
