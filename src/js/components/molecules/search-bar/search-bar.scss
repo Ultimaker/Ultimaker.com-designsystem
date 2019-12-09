@@ -20,20 +20,39 @@
 
 .search-bar__button,
 .um-components .search-bar__button {
-    @extend .sys-nav__link;
-    position: absolute;
-    display: block;
-
-    font-size: $buildingUnit * 2;
-    padding: $buildingUnit * 1.5;
-
-    left: 0;
-    width: $navHeight;
-    height: $navHeight;
-    margin: 0;
-
+    align-items: center;
     background-color: $colorGrayLight;
-    @include micro-animate(background-color);
+    color: $colorBlack;
+    cursor: pointer;
+    display: block;
+    font-size: $buildingUnit * 2;
+    height: $navHeight;
+    justify-content: flex-end;
+    left: 0;
+    line-height: 1.5;
+    margin: 0;
+    padding: $buildingUnit * 1.5;
+    position: absolute;
+    transition: background-color $defaultDuration $defaultEasing;
+    width: $navHeight;
+
+    &:hover {
+        background-color: $colorGrayLight;
+        color: $colorBlack;
+    }
+
+    &[aria-disabled] {
+        color: $colorGrayDark;
+        pointer-events: none;
+    }
+
+    &--light {
+        &,
+        &:hover {
+            background: rgba($colorWhite, 0.08);
+            color: $colorWhite;
+        }
+    }
 
     &:hover {
         background-color: darken($colorGrayLight, $tintHoverFocus); // #d6d6d6
