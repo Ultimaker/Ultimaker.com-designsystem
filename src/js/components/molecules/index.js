@@ -8,4 +8,3 @@ import ListSection from 'molecules/list-section/ListSection';
 import ListUnorderedLimit from 'molecules/list-unordered-limit/ListUnorderedLimit';
 import MainNavigation from 'molecules/main-navigation/MainNavigation';
 import MainNavigationItem from 'molecules/main-navigation-item/MainNavigationItem';
-import SearchBar from 'molecules/search-bar/SearchBar';
