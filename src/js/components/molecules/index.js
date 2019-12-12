@@ -6,4 +6,3 @@ import IconButton from 'molecules/icon-button/IconButton';
 import InPageNotification from 'molecules/in-page-notification/InPageNotification';
 import ListSection from 'molecules/list-section/ListSection';
 import ListUnorderedLimit from 'molecules/list-unordered-limit/ListUnorderedLimit';
-import MainNavigation from 'molecules/main-navigation/MainNavigation';
