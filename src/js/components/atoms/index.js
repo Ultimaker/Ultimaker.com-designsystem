@@ -1,4 +1,3 @@
-import AnchorOverlay from 'atoms/anchor-overlay/AnchorOverlay';
 import BaseLink from 'atoms/BaseLink/BaseLink';
 import ContentButton from 'atoms/content-button/ContentButton';
 import ContentLink from 'atoms/content-link/ContentLink';
