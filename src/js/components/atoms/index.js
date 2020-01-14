@@ -1,6 +1,3 @@
-import BaseLink from 'atoms/BaseLink/BaseLink';
-import ContentButton from 'atoms/content-button/ContentButton';
-import ContentLink from 'atoms/content-link/ContentLink';
 import ContentLinkList from 'atoms/content-link-list/ContentLinkList';
 import HitArea from 'atoms/hit-area/HitArea';
 import HorizontalList from 'atoms/horizontal-list/HorizontalList';
@@ -10,5 +7,4 @@ import LiInline from 'atoms/li-inline/LiInline';
 import LiItem from 'atoms/li-item/LiItem';
 import NavAssist from 'atoms/nav-assist/NavAssist';
 import SpanLabel from 'atoms/span-label/SpanLabel';
-import YoutubeLink from 'atoms/youtube-link/YoutubeLink';
 import YoutubeVideo from 'atoms/youtube-video/YoutubeVideo';
