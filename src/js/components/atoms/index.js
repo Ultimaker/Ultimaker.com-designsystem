@@ -1,4 +1,3 @@
-import HitArea from 'atoms/hit-area/HitArea';
 import HorizontalList from 'atoms/horizontal-list/HorizontalList';
 import Icon from 'atoms/icon/Icon';
 import LabelFilter from 'atoms/label-filter/LabelFilter';
