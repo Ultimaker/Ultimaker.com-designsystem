@@ -1,4 +1,3 @@
-import Icon from 'atoms/icon/Icon';
 import LabelFilter from 'atoms/label-filter/LabelFilter';
 import LiInline from 'atoms/li-inline/LiInline';
 import LiItem from 'atoms/li-item/LiItem';
