@@ -1,4 +1,0 @@
-/** @format */
-export default {
-    iconName: '',
-};
