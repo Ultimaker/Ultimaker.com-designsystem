@@ -3,7 +3,6 @@ import 'babel-polyfill';
 // >>> ordering of this import matters
 import '../scss/ultimaker.scss';
 import ComponentRegistry from 'plugins/component-registry';
-import Components from './components';
 import '../scss/utilities/_all.scss';
 import ClickOutside from './directives/click-outside';
 // <<< ordering of this import matters
@@ -16,10 +15,6 @@ const __svg__ = {
 };
 
 const registry = new ComponentRegistry();
-
-Object.keys(Components).forEach((c) => {
-    registry.registerComponent(Components[c]);
-});
 
 registry.registerDirective(ClickOutside);
 
