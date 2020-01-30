@@ -7,13 +7,6 @@ import '../scss/utilities/_all.scss';
 import ClickOutside from './directives/click-outside';
 // <<< ordering of this import matters
 
-// import all icons from src/icons/.. as svg sprite
-// tslint:disable-next-line
-const __svg__ = {
-    path: '../assets/icons/**/*.svg',
-    name: 'static/icons/iconset.svg',
-};
-
 const registry = new ComponentRegistry();
 
 registry.registerDirective(ClickOutside);
