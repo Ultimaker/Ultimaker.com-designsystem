@@ -31,11 +31,3 @@ REMARK: Do not to output any CSS in the first 2 layers  (TOOLS/SETTINGS). This
 // Specific UI components. UI components are often composed
 // of Objects and Components
 @import "atomic/organisms/all";
-
-//  All others are imported by index/legacy.ts (because atomic components (ts/js) also import scss)
-
-// UTILITIES
-// Utilities and helper classes with ability to override anything which goes
-// before in the triangle, eg. states like hidden
-//
-// @import 'utilities/all';
