@@ -46,13 +46,9 @@ podTemplate(
       stage('validate code') {
         STAGE_NAME = env.STAGE_NAME
 
-        parallel(
-          'linting': {
-            container('node') {
-              sh 'npm run lint:diff'
-            }
-          },
-        )
+        container('node') {
+          sh 'npm run lint:diff'
+        }
       }
 
       stage('compile code') {
