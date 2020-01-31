@@ -1,8 +1,0 @@
-.demo-panel--grid {
-    @extend .demo-panel;
-    flex: 1 1 auto;
-}
-
-[class^=flexgrid__cell]:nth-child(even) .demo-panel--grid{
-    background-color: $colorGrayLight;
-}
