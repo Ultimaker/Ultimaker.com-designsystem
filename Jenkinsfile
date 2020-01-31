@@ -58,18 +58,9 @@ podTemplate(
       stage('compile code') {
         STAGE_NAME = env.STAGE_NAME
 
-        parallel(
-          'components': {
-            container('node') {
-              sh 'npm run build'
-            }
-          },
-          'storybook': {
-            container('node') {
-              sh 'npm run build-storybook'
-            }
-          }
-        )
+        container('node') {
+          sh 'npm run build'
+        }
       }
 
       if (env.BRANCH_NAME.startsWith('PR-')) {
