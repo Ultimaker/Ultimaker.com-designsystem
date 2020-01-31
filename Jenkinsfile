@@ -123,36 +123,5 @@ podTemplate(
       throw e
 
     }
-
-    try {
-
-      stage('update storybook') {
-        sh """
-          cat <<EOF | parallel --verbose --jobs 2 --colsep ' ' /update-deployment.sh acceptance {1} {2} {3} {4}
-          deployment/storybook--nginx nginx ${nginxContainer} ${commit}
-          deployment/storybook--node node ${nodeContainer} ${commit}
-          EOF
-          """.stripIndent()
-      }
-
-      updateDeploymentSuccess(
-        'development',
-        env.BUILD_URL,
-        'https://storybook.k8s-dev.ultimaker.works',
-        'Storybook',
-        'Ultimaker.com-designsystem',
-        env.BRANCH_NAME,
-        commit
-      )
-
-    } catch (e) {
-
-      currentBuild.result = 'FAILURE'
-
-      updateDeploymentFailure('development', env.BUILD_URL, 'Storybook')
-
-      throw e
-
-    }
   }
 }
