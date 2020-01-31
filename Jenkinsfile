@@ -49,17 +49,7 @@ podTemplate(
         }
       }
 
-      if (env.BRANCH_NAME.startsWith('PR-')) {
-        currentBuild.result = 'SUCCESS'
-
-        return
-      }
-
-      if (env.BRANCH_NAME != 'master') {
-        currentBuild.result = 'SUCCESS'
-
-        return
-      }
+      currentBuild.result = 'SUCCESS'
 
     } catch (e) {
 
