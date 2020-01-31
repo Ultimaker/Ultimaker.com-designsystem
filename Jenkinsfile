@@ -14,13 +14,6 @@ podTemplate(
       command: 'cat',
       alwaysPullImage: true,
       ttyEnabled: true
-    ),
-    containerTemplate(
-      name: 'node-chromium',
-      image: 'eu.gcr.io/um-website-193311/ultimaker.com/node-chromium:latest',
-      command: 'cat',
-      alwaysPullImage: true,
-      ttyEnabled: true
     )
   ]
 ) {
