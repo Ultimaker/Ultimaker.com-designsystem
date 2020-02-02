@@ -308,53 +308,53 @@ module.exports = bytesToUuid;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.registry = exports.PublicEventService = exports.ViewportUtility = exports.TextUtils = exports.BrowserCapabilities = exports.Defaults = undefined;
 
 var _defaults = __webpack_require__(1);
 
 Object.defineProperty(exports, 'Defaults', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_defaults).default;
-    }
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_defaults).default;
+  }
 });
 
 var _browserCapabilities = __webpack_require__(2);
 
 Object.defineProperty(exports, 'BrowserCapabilities', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_browserCapabilities).default;
-    }
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_browserCapabilities).default;
+  }
 });
 
 var _textUtils = __webpack_require__(6);
 
 Object.defineProperty(exports, 'TextUtils', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_textUtils).default;
-    }
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_textUtils).default;
+  }
 });
 
 var _viewport = __webpack_require__(7);
 
 Object.defineProperty(exports, 'ViewportUtility', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_viewport).default;
-    }
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_viewport).default;
+  }
 });
 
 var _publicEventService = __webpack_require__(9);
 
 Object.defineProperty(exports, 'PublicEventService', {
-    enumerable: true,
-    get: function get() {
-        return _interopRequireDefault(_publicEventService).default;
-    }
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_publicEventService).default;
+  }
 });
 
 __webpack_require__(10);
@@ -565,7 +565,6 @@ var _clickOutside2 = _interopRequireDefault(_clickOutside);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var __svg__ = { filename: __webpack_require__.p +"static/icons/iconset.svg" };
 var registry = new _componentRegistry2.default();
 registry.registerDirective(_clickOutside2.default);
 exports.registry = registry;
