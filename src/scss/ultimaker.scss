@@ -23,10 +23,6 @@ REMARK: Do not to output any CSS in the first 2 layers  (TOOLS/SETTINGS). This
 // styling from the browser so we can redefine them here.
 @import "atomic/atoms/all";
 
-// OBJECTS (MOLECULES)
-// Class-based selectors which define undecorated design patterns
-@import "atomic/molecules/all";
-
 // COMPONENTS (ORGANISMS)
 // Specific UI components. UI components are often composed
 // of Objects and Components
