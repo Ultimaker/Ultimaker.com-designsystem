@@ -18,11 +18,6 @@ REMARK: Do not to output any CSS in the first 2 layers  (TOOLS/SETTINGS). This
 // Reset and/or normalize styles, box-sizing definition, etc.
 @import "generic/all";
 
-// ELEMENTS (ATOMS)
-// styling for bare HTML elements (like H1, A, etc.). These come with default
-// styling from the browser so we can redefine them here.
-@import "atomic/atoms/all";
-
 // COMPONENTS (ORGANISMS)
 // Specific UI components. UI components are often composed
 // of Objects and Components
