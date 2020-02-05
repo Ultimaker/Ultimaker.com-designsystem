@@ -21,8 +21,6 @@
     "clean": "rimraf dist/**",
     "eslint": "eslint './src/**/*.{t,j}s'",
     "eslint:debug": "eslint './src/**/*.{t,j}s' --debug",
-    "greenhouse:build": "node-sass ./src/scss/greenhouse.io.scss -o ./dist --output-style compressed",
-    "greenhouse:watch": "node-sass -w ./src/scss/greenhouse.io.scss greenhouse.css -o ./dist --output-style compressed",
     "lint": "npm run eslint",
     "lint:debug": "eslint './src/**/*.{t,j}s' --debug",
     "lint:diff": "eslint server.js $(git diff origin/master --name-only --diff-filter=rd | egrep '(.js|.ts)$')",
